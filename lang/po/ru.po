@@ -64,8 +64,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cataclysm-DDA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-27 20:14+0800\n"
-"PO-Revision-Date: 2017-04-28 15:04+0000\n"
+"POT-Creation-Date: 2017-05-05 22:55+0800\n"
+"PO-Revision-Date: 2017-05-06 15:10+0000\n"
 "Last-Translator: Vlasov Vitaly <vnigtha@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -4432,7 +4432,7 @@ msgstr "Бронебойные патроны калибра 5,45x39 мм с 57-
 
 #: lang/json/AMMO_from_json.py
 msgid "reloaded 5.45x39mm"
-msgstr "5.45x39мм(самодельный)"
+msgstr "переснаряжённый патрон 5.45x39 мм"
 
 #. ~ Description for reloaded 5.45x39mm
 #: lang/json/AMMO_from_json.py
@@ -4444,7 +4444,7 @@ msgstr "С 1974 года патрон 5,45x39 мм является станда
 
 #: lang/json/AMMO_from_json.py
 msgid "reloaded 5.45x39mm AP"
-msgstr "5.45x39мм(бронебойный)(самодельный)"
+msgstr "переснаряжённый патрон 5.45x39 мм AP"
 
 #. ~ Description for reloaded 5.45x39mm AP
 #: lang/json/AMMO_from_json.py
@@ -4601,7 +4601,7 @@ msgstr "Дозвуковой патрон, основанный на патро�
 
 #: lang/json/AMMO_from_json.py
 msgid "reloaded 7.62x25"
-msgstr "7.62х25(самодельный)"
+msgstr "переснаряжённый патрон 7.62х25 мм"
 
 #: lang/json/AMMO_from_json.py
 msgid "bootleg 8x40mm JHP"
@@ -61345,7 +61345,7 @@ msgid "bulletin board"
 msgstr "доска объявлений"
 
 #: lang/json/furniture_from_json.py lang/json/terrain_from_json.py
-#: src/iuse.cpp
+#: lang/json/terrain_from_json.py src/iuse.cpp
 msgid "crunch!"
 msgstr "треск!"
 
@@ -70337,6 +70337,14 @@ msgstr "Установить режимы стрельбы турелей"
 #: lang/json/keybinding_from_json.py src/vehicle.cpp
 msgid "Aim turrets manually"
 msgstr "Целиться турелями вручную"
+
+#: lang/json/keybinding_from_json.py src/vehicle.cpp
+msgid "Aim automatic turrets"
+msgstr ""
+
+#: lang/json/keybinding_from_json.py src/vehicle.cpp
+msgid "Aim individual turret"
+msgstr ""
 
 #: lang/json/keybinding_from_json.py src/vehicle.cpp
 msgid "Set turret targeting modes"
@@ -98969,7 +98977,7 @@ msgstr "Назад"
 #: src/debug_menu.cpp src/editmap.cpp src/game.cpp src/game.cpp src/game.cpp
 #: src/iexamine.cpp src/iexamine.cpp src/inventory_ui.cpp src/iuse.cpp
 #: src/iuse.cpp src/iuse_actor.cpp src/mission_companion.cpp src/pickup.cpp
-#: src/player.cpp src/vehicle.cpp
+#: src/player.cpp src/turret.cpp src/vehicle.cpp
 msgid "Cancel"
 msgstr "Отмена"
 
@@ -101795,6 +101803,16 @@ msgstr "ошибка записи файла"
 #, c-format
 msgid "Failed to read from \"%1$s\": %2$s"
 msgstr "Перестал читать с \"%1$s\": %2$s"
+
+#. ~ translators: place some random 1-width characters here in your language
+#. if possible, or leave it as is
+#: src/cata_utility.cpp
+msgid "abcdefghijklmnopqrstuvwxyz"
+msgstr ""
+
+#: src/cata_utility.cpp
+msgid "に坂索トし荷測のンおク妙免イロコヤ梅棋厚れ表幌"
+msgstr ""
 
 #: src/catalua.cpp src/player.cpp
 #, c-format
@@ -131419,6 +131437,14 @@ msgid "Can't aim turrets: all turrets are offline"
 msgstr "Нельзя целиться турелями: все турели вне сети"
 
 #: src/turret.cpp
+msgid "Aim which turret?"
+msgstr ""
+
+#: src/turret.cpp
+msgid "None of the turrets are available to fire."
+msgstr ""
+
+#: src/turret.cpp
 #, c-format
 msgctxt "vehicle turret"
 msgid "The %s"
@@ -132034,8 +132060,9 @@ msgid "Could not find base part in requirements for %s."
 msgstr "Невозможно найти основную часть в условиях для %s."
 
 #: src/veh_interact.cpp
-msgid "Choose a facing direction for the new headlight."
-msgstr "Выберете направление для новой фары."
+msgid ""
+"Choose a facing direction for the new headlight.  Press space to continue."
+msgstr "Выберете направление для новой фары. Нажмите пробел, чтобы продолжить."
 
 #: src/veh_interact.cpp
 #, c-format

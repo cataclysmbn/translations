@@ -21,8 +21,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cataclysm-DDA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-27 20:14+0800\n"
-"PO-Revision-Date: 2017-04-30 14:28+0000\n"
+"POT-Creation-Date: 2017-05-05 22:55+0800\n"
+"PO-Revision-Date: 2017-05-07 11:42+0000\n"
 "Last-Translator: Pigmentblue15\n"
 "Language-Team: Japanese (http://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -53463,7 +53463,7 @@ msgid "bulletin board"
 msgstr "掲示板"
 
 #: lang/json/furniture_from_json.py lang/json/terrain_from_json.py
-#: src/iuse.cpp
+#: lang/json/terrain_from_json.py src/iuse.cpp
 msgid "crunch!"
 msgstr "バリバリッ！"
 
@@ -61141,6 +61141,14 @@ msgstr "タレットの射撃モードを設定"
 #: lang/json/keybinding_from_json.py src/vehicle.cpp
 msgid "Aim turrets manually"
 msgstr "手動でタレットの照準を付ける"
+
+#: lang/json/keybinding_from_json.py src/vehicle.cpp
+msgid "Aim automatic turrets"
+msgstr "照準を合わせる/自動タレット"
+
+#: lang/json/keybinding_from_json.py src/vehicle.cpp
+msgid "Aim individual turret"
+msgstr "照準を合わせる/個別タレット"
 
 #: lang/json/keybinding_from_json.py src/vehicle.cpp
 msgid "Set turret targeting modes"
@@ -89773,7 +89781,7 @@ msgstr "戻る"
 #: src/debug_menu.cpp src/editmap.cpp src/game.cpp src/game.cpp src/game.cpp
 #: src/iexamine.cpp src/iexamine.cpp src/inventory_ui.cpp src/iuse.cpp
 #: src/iuse.cpp src/iuse_actor.cpp src/mission_companion.cpp src/pickup.cpp
-#: src/player.cpp src/vehicle.cpp
+#: src/player.cpp src/turret.cpp src/vehicle.cpp
 msgid "Cancel"
 msgstr "取消"
 
@@ -92554,6 +92562,16 @@ msgstr "ファイルへの書き込みに失敗しました"
 #, c-format
 msgid "Failed to read from \"%1$s\": %2$s"
 msgstr "\"%1$s\": %2$sからの読み込みに失敗しました"
+
+#. ~ translators: place some random 1-width characters here in your language
+#. if possible, or leave it as is
+#: src/cata_utility.cpp
+msgid "abcdefghijklmnopqrstuvwxyz"
+msgstr "ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊ"
+
+#: src/cata_utility.cpp
+msgid "に坂索トし荷測のンおク妙免イロコヤ梅棋厚れ表幌"
+msgstr "に坂索トし荷測のンおク妙免イロコヤ梅棋厚れ表幌"
 
 #: src/catalua.cpp src/player.cpp
 #, c-format
@@ -112770,7 +112788,7 @@ msgstr "%sはライフルを構えました！"
 #. ~Potential grenading detected.
 #: src/monattack.cpp
 msgid "Those laser dots don't seem very friendly..."
-msgstr "レーザーが当たっている赤い点の動きは、どうやら友好的ではないようです..."
+msgstr "レーザーの光が当たっています。嫌な予感がします..."
 
 #: src/monattack.cpp
 msgid "Targeting."
@@ -121971,6 +121989,14 @@ msgid "Can't aim turrets: all turrets are offline"
 msgstr "タレットの照準を付けられない: 全てのタレットがオフラインです。"
 
 #: src/turret.cpp
+msgid "Aim which turret?"
+msgstr "照準を合わせるタレットを選択"
+
+#: src/turret.cpp
+msgid "None of the turrets are available to fire."
+msgstr "射撃できるタレットがない。"
+
+#: src/turret.cpp
 #, c-format
 msgctxt "vehicle turret"
 msgid "The %s"
@@ -122583,8 +122609,9 @@ msgid "Could not find base part in requirements for %s."
 msgstr "%sに必要な基礎部品が見つかりません。"
 
 #: src/veh_interact.cpp
-msgid "Choose a facing direction for the new headlight."
-msgstr "ヘッドライトの向きを指定して下さい: "
+msgid ""
+"Choose a facing direction for the new headlight.  Press space to continue."
+msgstr "ヘッドライトの向きを選択します。スペースキーを押してください。"
 
 #: src/veh_interact.cpp
 #, c-format
@@ -123678,4 +123705,4 @@ msgstr "%sは既に使われている名前です!"
 #: src/worldfactory.cpp
 #, c-format
 msgid "A world named %s already exists!"
-msgstr "%sという名の世界は既に存在しています！"
+msgstr "%sという名前の世界は既に存在しています！"
