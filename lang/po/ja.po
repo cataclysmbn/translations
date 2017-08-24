@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cataclysm-DDA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-11 22:14+0800\n"
-"PO-Revision-Date: 2017-08-13 03:56+0000\n"
+"POT-Creation-Date: 2017-08-18 19:40+0800\n"
+"PO-Revision-Date: 2017-08-18 16:17+0000\n"
 "Last-Translator: Pigmentblue15\n"
 "Language-Team: Japanese (http://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -289,7 +289,7 @@ msgid ""
 msgstr "Trueにすると距離の計算方法が変わります。\n・照明が円形に描画されます。\n・斜め移動のコストが増加します。"
 
 #: lang/extra/android/options.cpp src/craft_command.cpp src/options.cpp
-#: src/veh_interact.cpp
+#: src/options.cpp src/veh_interact.cpp
 msgid "No"
 msgstr "No"
 
@@ -446,7 +446,7 @@ msgstr "qt"
 msgid "Volume units"
 msgstr "体積単位"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid "Switch between the Cup (c), Liter (L) or Quart (qt)."
 msgstr "体積(c[カップ]・L[リットル]・qt[クォート])の表示を設定します。"
 
@@ -529,7 +529,7 @@ msgstr "trueにするとアイテムをすべて移動コマンド実行後に�
 msgid "Display actions in Use Item menu"
 msgstr "アイテム使用メニュー/行動表示"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid ""
 "If true, actions (like \"Read\", \"Smoke\", \"Wrap tighter\") will be "
 "displayed next to the corresponding items."
@@ -555,7 +555,7 @@ msgstr "trueにすると運転中は自動で前方に視点が移動します�
 msgid "Draw vehicle facing indicator"
 msgstr "車両/前方に方向指示器を描画"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid ""
 "If true, when controlling a vehicle, a white 'X' (in curses version) or a "
 "crosshair (in tiles version) at distance 10 from the center will display its"
@@ -897,7 +897,7 @@ msgstr "リニアフィルタ"
 msgid "Scaling mode"
 msgstr "拡大縮小モード"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid ""
 "Sets the scaling mode, 'none' (default) displays at the game's native "
 "resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
@@ -1147,7 +1147,7 @@ msgstr "モンスターの防御力を決定します。値が高いほど打た
 msgid "Default region type"
 msgstr "初期設定/地域"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid "(WIP feature) Determines terrain, shops, plants, and more."
 msgstr "地形や店、植物などを設定します(開発途上の機能)。"
 
@@ -1324,7 +1324,7 @@ msgstr "無効/食物の栄養設定"
 msgid "If true, disables vitamin tracking and vitamin disorders."
 msgstr "trueにすると、栄養の設定と栄養不足の効果が無効化されます。"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid "Disables tracking food, thirst and (partially) fatigue for NPCs."
 msgstr "NPCの飲食に関する欲求と(一部の)疲労を無効化します。"
 
@@ -2655,53 +2655,6 @@ msgid ""
 msgstr "矢の先端に燃える布きれが巻きつけてあります。弓に燃え移る前に矢を放つ必要があります。"
 
 #: lang/json/AMMO_from_json.py
-msgid "wooden crossbow bolt"
-msgstr "ボルト(木)"
-
-#. ~ Description for wooden crossbow bolt
-#: lang/json/AMMO_from_json.py
-msgid ""
-"A sharpened bolt carved from wood.  It's very light, but doesn't do much "
-"damage and isn't particularly accurate.  Stands a below average chance of "
-"remaining intact once fired."
-msgstr "鋭利な木製のボルトです。非常に軽量ですが、威力と命中精度は期待出来ません。放った矢が低確率で地面に残ります。"
-
-#: lang/json/AMMO_from_json.py
-msgid "metal crossbow bolt"
-msgstr "ボルト(金属)"
-
-#. ~ Description for metal crossbow bolt
-#: lang/json/AMMO_from_json.py
-msgid ""
-"A sharpened bolt made from metal of some kind.  It's heavy and unwieldy, "
-"providing moderate damage and accuracy.  Stands a very good chance of "
-"remaining intact once fired."
-msgstr "鋭利な金属製のボルトです。重さに見合った威力と命中精度があります。放った矢が高確率で地面に残ります。"
-
-#: lang/json/AMMO_from_json.py
-msgid "steel crossbow bolt"
-msgstr "ボルト(鋼)"
-
-#. ~ Description for steel crossbow bolt
-#: lang/json/AMMO_from_json.py
-msgid ""
-"A sharp bolt made from steel.  Deadly in skilled hands.  Stands an excellent"
-" chance of remaining intact once fired."
-msgstr "鋭利な鋼製のボルトです。熟練者が用いれば驚異的な威力を発揮します。放った矢が極高確率で地面に残ります。"
-
-#: lang/json/AMMO_from_json.py
-msgid "explosive crossbow bolt"
-msgstr "ボルト(金属/炸裂)"
-
-#. ~ Description for explosive crossbow bolt
-#: lang/json/AMMO_from_json.py
-msgid ""
-"A lightweight, sharpened bolt made from some kind of metal.  It is fairly "
-"unwieldy and only provides moderate accuracy, due to being filled with "
-"explosives and fitted with an impact trigger."
-msgstr "何かの金属から作られた軽く鋭いボルトです。酷く不格好で並みの命中率だけが取り柄です。撃発装置や爆薬を詰め込んで括り付けているのが原因ですが..."
-
-#: lang/json/AMMO_from_json.py
 msgid "plastic shaft"
 msgstr "矢柄(プラスチック)"
 
@@ -3154,6 +3107,53 @@ msgstr "真菌の菌糸です。"
 #: lang/json/furniture_from_json.py
 msgid "fungal flower"
 msgstr "真菌の花"
+
+#: lang/json/AMMO_from_json.py
+msgid "wooden crossbow bolt"
+msgstr "ボルト(木)"
+
+#. ~ Description for wooden crossbow bolt
+#: lang/json/AMMO_from_json.py
+msgid ""
+"A sharpened bolt carved from wood.  It's very light, but doesn't do much "
+"damage and isn't particularly accurate.  Stands a below average chance of "
+"remaining intact once fired."
+msgstr "鋭利な木製のボルトです。非常に軽量ですが、威力と命中精度は期待出来ません。放った矢が低確率で地面に残ります。"
+
+#: lang/json/AMMO_from_json.py
+msgid "metal crossbow bolt"
+msgstr "ボルト(金属)"
+
+#. ~ Description for metal crossbow bolt
+#: lang/json/AMMO_from_json.py
+msgid ""
+"A sharpened bolt made from metal of some kind.  It's heavy and unwieldy, "
+"providing moderate damage and accuracy.  Stands a very good chance of "
+"remaining intact once fired."
+msgstr "鋭利な金属製のボルトです。重さに見合った威力と命中精度があります。放った矢が高確率で地面に残ります。"
+
+#: lang/json/AMMO_from_json.py
+msgid "steel crossbow bolt"
+msgstr "ボルト(鋼)"
+
+#. ~ Description for steel crossbow bolt
+#: lang/json/AMMO_from_json.py
+msgid ""
+"A sharp bolt made from steel.  Deadly in skilled hands.  Stands an excellent"
+" chance of remaining intact once fired."
+msgstr "鋭利な鋼製のボルトです。熟練者が用いれば驚異的な威力を発揮します。放った矢が極高確率で地面に残ります。"
+
+#: lang/json/AMMO_from_json.py
+msgid "explosive crossbow bolt"
+msgstr "ボルト(金属/炸裂)"
+
+#. ~ Description for explosive crossbow bolt
+#: lang/json/AMMO_from_json.py
+msgid ""
+"A lightweight, sharpened bolt made from some kind of metal.  It is fairly "
+"unwieldy and only provides moderate accuracy, due to being filled with "
+"explosives and fitted with an impact trigger."
+msgstr "何かの金属から作られた軽く鋭いボルトです。酷く不格好で並みの命中率だけが取り柄です。撃発装置や爆薬を詰め込んで括り付けているのが原因ですが..."
 
 #: lang/json/AMMO_from_json.py
 msgid "ethanol"
@@ -40070,7 +40070,7 @@ msgid ""
 "person that can travel the length and breadth of the apocalypse, rough it, "
 "slum it, struggle against terrible odds, win through and still know where "
 "their towel is, is clearly a force to be reckoned with."
-msgstr "ふわふわの大きなタオルです。使う事で濡れた体を拭いて乾せます。このタオルがどのような経緯を辿って来たものなのかは定かではないですが、侮れない力を秘めている事だけは確かです。"
+msgstr "ふわふわの大きなタオルです。使う事で濡れた体を拭いて乾せます。大変動ヒッチハイカーにとってタオルとは、持ち歩いてこれほどとてつもなく役に立つものはほかにないというほどお役立ちなものです。"
 
 #. ~ Description for towel
 #: lang/json/TOOL_ARMOR_from_json.py
@@ -44463,7 +44463,7 @@ msgstr[0] "つるはし"
 msgid ""
 "This is a large steel pickaxe, suitable for breaking up hard things or (with"
 " enough skill) hard targets.  Strike the earth!"
-msgstr "鋼製の大きなつるはしです。硬い壁などの破壊に適しています(スキル次第では堅い敵も)。力一杯、大地に叩きつけろ！"
+msgstr "鋼製の大きなつるはしです。硬い壁などの破壊に適しています(スキル次第では堅い敵も)。大地を削れ！"
 
 #: lang/json/TOOL_from_json.py
 msgid "locksmith kit"
@@ -49101,6 +49101,10 @@ msgid "Stop modifying gun?"
 msgstr "改造を中断しますか？"
 
 #: lang/json/activity_type_from_json.py
+msgid "Stop modifying tool?"
+msgstr ""
+
+#: lang/json/activity_type_from_json.py
 msgid "Stop interacting with the NPC?"
 msgstr "NPCとの会話を中断しますか？"
 
@@ -52374,6 +52378,7 @@ msgstr "感染症が治ってきています。"
 msgid "Spore dusted"
 msgstr "胞子まみれ(小)"
 
+#. ~ Speed name of effect(s) 'Spore dusted, Spore covered, Spore coated'.
 #: lang/json/effects_from_json.py
 msgid "Spore covered"
 msgstr "胞子まみれ(中)"
@@ -52389,6 +52394,10 @@ msgstr "小さな胞子が身体の中に沈み込んでいく感じがします
 #: lang/json/effects_from_json.py
 msgid "You feel sick inside."
 msgstr "気分が悪くなりました。"
+
+#: lang/json/effects_from_json.py
+msgid "Fungal infection"
+msgstr ""
 
 #: lang/json/effects_from_json.py
 msgctxt "memorial_male"
@@ -52499,6 +52508,7 @@ msgstr "低体温(軽)"
 msgid "Your %s is exposed to the cold."
 msgstr "%sが冷気に晒されています。"
 
+#. ~ Speed name of effect(s) 'Chilly, Cold, Freezing'.
 #: lang/json/effects_from_json.py lang/json/morale_type_from_json.py
 msgid "Cold"
 msgstr "低体温(中)"
@@ -52529,6 +52539,7 @@ msgstr "高体温(軽)"
 msgid "Your %s feels warm."
 msgstr "%sが熱気を帯びています。"
 
+#. ~ Speed name of effect(s) 'Warm, Hot, Scorching'.
 #: lang/json/effects_from_json.py lang/json/morale_type_from_json.py
 msgid "Hot"
 msgstr "高体温(中)"
@@ -52559,6 +52570,7 @@ msgstr "凍傷(軽)"
 msgid "Your %s is frostnipped and has gone numb."
 msgstr "%sが霜焼けになり、痺れてきました。"
 
+#. ~ Speed name of effect(s) 'Frostnip, Frostbite'.
 #: lang/json/effects_from_json.py
 msgid "Frostbite"
 msgstr "凍傷(重)"
@@ -63846,7 +63858,7 @@ msgid ""
 "use someone to position these around the region."
 msgstr "ありがとう、あとはこれをインストールするだけだ。少し時間はかかるが、各地区への導入も誰かに手伝ってもらうかな。"
 
-#: lang/json/mission_def_from_json.py src/mapgen_functions.cpp
+#: lang/json/mission_def_from_json.py
 msgid "Disable External Power"
 msgstr "外部電力を無効化する"
 
@@ -70627,12 +70639,24 @@ msgid "No class"
 msgstr "無職"
 
 #: lang/json/npc_class_from_json.py
+msgid "I'm just wandering."
+msgstr "当て所もなく彷徨っているところさ。"
+
+#: lang/json/npc_class_from_json.py
 msgid "Debug Dude"
 msgstr "デバッガー"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm helping you test the game."
+msgstr ""
 
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Merchant"
 msgstr "商人"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm a local shopkeeper."
+msgstr "私は地元の店主だよ。"
 
 #: lang/json/npc_class_from_json.py
 msgid "Shopkeep"
@@ -70642,41 +70666,85 @@ msgstr "店主"
 msgid "Hacker"
 msgstr "ハッカー"
 
+#: lang/json/npc_class_from_json.py
+msgid "I'm looking for some choice systems to hack."
+msgstr "ハッキング出来そうなシステムを探してるんだよ。"
+
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Doctor"
 msgstr "医者"
 
 #: lang/json/npc_class_from_json.py
+msgid "I'm looking for wounded to help."
+msgstr "負傷者を探しているんだ。助けが必要だろうからね。"
+
+#: lang/json/npc_class_from_json.py
 msgid "Trader"
 msgstr "貿易商"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm collecting gear and selling it."
+msgstr "衣服などを収集して売買しているんだ。"
 
 #: lang/json/npc_class_from_json.py src/faction.cpp
 msgid "Ninja"
 msgstr "忍者"
 
 #: lang/json/npc_class_from_json.py
+msgid "I'm a wandering master of martial arts."
+msgstr ""
+
+#: lang/json/npc_class_from_json.py
 msgid "Cowboy"
 msgstr "カウボーイ"
+
+#: lang/json/npc_class_from_json.py
+msgid "Just looking for some wrongs to right."
+msgstr "正義の為に悪を探しているところさ。"
 
 #: lang/json/npc_class_from_json.py
 msgid "Scientist"
 msgstr "科学者"
 
 #: lang/json/npc_class_from_json.py
+msgid "I'm looking for clues concerning these monsters' origins..."
+msgstr "あの怪物共の起源は何なのか手掛かりを探しているんだ..."
+
+#: lang/json/npc_class_from_json.py
 msgid "Bounty Hunter"
 msgstr "賞金稼ぎ"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm a killer for hire."
+msgstr "金の為に人を殺す...殺し屋って奴さ。"
 
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Thug"
 msgstr "ちんぴら"
 
 #: lang/json/npc_class_from_json.py
+msgid "I'm just here for the paycheck."
+msgstr "ここには金の為に来たんだよ。"
+
+#: lang/json/npc_class_from_json.py
 msgid "Scavenger"
 msgstr "スカベンジャー"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm just trying to survive."
+msgstr "生き残ろうと必死に頑張ってるところさ。"
 
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Arsonist"
 msgstr "放火屋"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm just watching the world burn."
+msgstr "世界が負った傷跡がどんな物か見て回っているのさ。"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm tracking game."
+msgstr "足跡を追って狩りをしているんだ。"
 
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Soldier"
@@ -70686,9 +70754,17 @@ msgstr "兵士"
 msgid "Bartender"
 msgstr "バーテンダー"
 
+#: lang/json/npc_class_from_json.py
+msgid "I'm looking for new drink recipes."
+msgstr "新しい酒のレシピを考えてるところだよ。"
+
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Apis"
 msgstr "ｱﾋﾟｽ"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm bugged - I shouldn't talk to you."
+msgstr ""
 
 #: lang/json/npc_from_json.py
 msgid "Representative"
@@ -77709,7 +77785,7 @@ msgstr "起きると喉に痛みを感じました。"
 
 #: lang/json/snippet_from_json.py
 msgid "You stretch, but your muscles don't seem to be doing so good today."
-msgstr "伸びをして、筋肉の不調に気付きました。今日はいつも通りの働きはできないかもしれません。"
+msgstr "ストレッチしてみましたが、筋肉の調子が普段より悪い気がします。"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -82639,7 +82715,7 @@ msgstr "ビッグブラザーはあなたを見ている..."
 
 #: lang/json/speech_from_json.py
 msgid "Die for me!"
-msgstr "死んでね！"
+msgstr "死んじゃえ！"
 
 #: lang/json/speech_from_json.py
 msgid "Why won't you die?"
@@ -91515,6 +91591,10 @@ msgstr "移動先には%d個しか置けません！いくつ移動させます�
 msgid "The destination is already full!"
 msgstr "移動先にはこれ以上入りません！"
 
+#: src/animation.cpp
+msgid "Hang on a bit..."
+msgstr ""
+
 #: src/armor_layers.cpp
 msgid "This is worn next to the skin."
 msgstr "肌に密着しています。"
@@ -95026,7 +95106,7 @@ msgstr[0] "%s(%d)が必要です。"
 
 #: src/crafting.cpp src/game.cpp src/game.cpp src/iexamine.cpp src/iuse.cpp
 #: src/iuse_actor.cpp src/npctalk.cpp src/npctalk.cpp src/pickup.cpp
-#: src/player.cpp src/player.cpp src/veh_interact.cpp
+#: src/player.cpp src/player.cpp src/player.cpp src/veh_interact.cpp
 msgid "Never mind."
 msgstr "何でもない。"
 
@@ -98850,6 +98930,10 @@ msgstr "世界のセーブデータを削除しますか？"
 #, c-format
 msgid "World retained. Characters remaining:%s"
 msgstr "世界が保存されました。残っているキャラクター:%s"
+
+#: src/game.cpp
+msgid "Wait till you wake up..."
+msgstr ""
 
 #: src/game.cpp
 msgid "Your heart races as you recall your most recent hunt."
@@ -108065,11 +108149,9 @@ msgstr "MODを取り付ける工具を選択"
 msgid "You don't have compatible tools."
 msgstr "適合するツールを持っていません。"
 
-#. ~ $1 - toolmod, $2 - base item
 #: src/iuse.cpp
-#, c-format
-msgid "You attach the %1$s to the %2$s"
-msgstr "%1$sを%2$sに取り付けました。"
+msgid "You cancel unloading the tool."
+msgstr ""
 
 #: src/iuse.cpp
 msgid "You can't see to repair!"
@@ -111402,18 +111484,6 @@ msgid "Funeral Toll"
 msgstr "葬儀の鐘を鳴らす"
 
 #: src/mapgen_functions.cpp
-msgid "Evac shelter computer"
-msgstr "EVACシェルターのコンピュータ"
-
-#: src/mapgen_functions.cpp
-msgid "Emergency Message"
-msgstr "緊急メッセージ"
-
-#: src/mapgen_functions.cpp
-msgid "Contact Us"
-msgstr "お問い合わせ"
-
-#: src/mapgen_functions.cpp
 msgid "PolCom OS v1.47"
 msgstr "PolCom OS v1.47"
 
@@ -112111,7 +112181,7 @@ msgid ""
 "Time: 1 hour minimum\n"
 " \n"
 "Assigning one of your allies to menial labor is a safe way to teach them basic skills and build reputation with the outpost.  Don't expect much of a reward though."
-msgstr "利益：1時間につき$8\n危険：最小\n時間：1時間～\n\n仲間を単純作業労働に割り当てます。基礎的なスキルを安全に身に付けさせ、拠点における評判を築きます。"
+msgstr "利益：$8/1時間\n危険：最小\n時間：1時間～\n\n仲間を単純作業労働に割り当てます。基礎的なスキルを安全に身に付けさせ、拠点における評判を築きます。"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112120,7 +112190,7 @@ msgid ""
 "Time: 1 hour minimum\n"
 " \n"
 "Labor Roster:\n"
-msgstr "利益：1時間につき$8\n危険：最小\n時間：1時間～\n\n単純労働者名簿：\n"
+msgstr "利益：$8/1時間\n危険：最小\n時間：1時間～\n\n単純労働者名簿：\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112129,7 +112199,7 @@ msgid ""
 "Time: 1 hour minimum\n"
 " \n"
 "Carpentry work requires more skill than menial labor while offering modestly improved pay.  It is unlikely that your companions will face combat but there are hazards working on makeshift buildings."
-msgstr "利益：1時間につき$12\n危険：最小\n時間：1時間～\n\n単純労働よりは高いスキルを要求され、やや給料の良い大工仕事です。戦闘に参加するようなことはありませんが間に合わせの建物に登って仕事をする以上、事故が起こることもあります。"
+msgstr "利益：$12/1時間\n危険：最小\n時間：1時間～\n\n単純労働よりは高いスキルを要求され、やや給料の良い大工仕事です。戦闘に参加するようなことはありませんが間に合わせの建物に登って仕事をする以上、事故が起こることもあります。"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112138,7 +112208,7 @@ msgid ""
 "Time: 1 hour minimum\n"
 " \n"
 "Labor Roster:\n"
-msgstr "利益：1時間につき$12\n危険：最小\n時間：1時間～\n\n建設労働者名簿：\n"
+msgstr "利益：$12/1時間\n危険：最小\n時間：1時間～\n\n建設労働者名簿：\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112219,7 +112289,7 @@ msgid ""
 "Time: 4 hour minimum\n"
 " \n"
 "Foraging for food involves dispatching a companion to search the surrounding wilderness for wild edibles.  Combat will be avoided but encounters with wild animals are to be expected.  The low pay is supplemented with the odd item as a reward for particularly large hauls."
-msgstr "利益：1時間あたり$10\n危険：低い\n時間：4時間～\n\n周辺の森や原野に食料調達部隊として派遣します。戦闘は可能な限り避けますが、野生動物と不意に遭遇することはあるでしょう。利益は少額ですが、大物を仕留められた場合その報酬としてアイテムを持ち帰ることがあります。"
+msgstr "利益：$10/1時間\n危険：低い\n時間：4時間～\n\n周辺の森や原野に食料調達部隊として派遣します。戦闘は可能な限り避けますが、野生動物と不意に遭遇することはあるでしょう。利益は少額ですが、大物を仕留められた場合その報酬としてアイテムを持ち帰ることがあります。"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112228,7 +112298,7 @@ msgid ""
 "Time: 4 hour minimum\n"
 " \n"
 "Labor Roster:\n"
-msgstr "利益：1時間あたり$10\n危険：低い\n時間：4時間～\n\n食料調達部隊名簿：\n"
+msgstr "利益：$10/1時間\n危険：低い\n時間：4時間～\n\n食料調達部隊名簿：\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112239,7 +112309,7 @@ msgid ""
 "Adding companions to the caravan team increases the likelihood of success.  By nature, caravans are extremely tempting targets for raiders or hostile groups so only a strong party is recommended.  The rewards are significant for those participating but are even more important for the factions that profit.\n"
 " \n"
 "The commune is sending food to the Free Merchants in the Refugee Center as part of a tax and in exchange for skilled labor."
-msgstr "利益：1時間あたり$18\n危険：高い\n時間：不明\n\n交易の成功率を高めるため、隊商に参加させます。当然のことながら我々の隊商は敵対する略奪集団にとって格好の獲物であり、命と荷を守るための強力な部隊編成が求められます。仲間を派遣することで相応の利益が出ますが、それによって得られる信頼と評価も重要なものです。\n\n我が共同体は税の一部として難民センターの自由商人に食料を送っています。それと引き換えに有能な労働者が派遣されるのです。"
+msgstr "利益：$18/1時間\n危険：高い\n時間：不明\n\n交易の成功率を高めるため、隊商に参加させます。当然のことながら我々の隊商は敵対する略奪集団にとって格好の獲物であり、命と荷を守るための強力な部隊編成が求められます。仲間を派遣することで相応の利益が出ますが、それによって得られる信頼と評価も重要なものです。\n\n我が共同体は税の一部として難民センターの自由商人に食料を送っています。それと引き換えに有能な労働者が派遣されるのです。"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112249,7 +112319,7 @@ msgid ""
 " \n"
 " \n"
 "Roster:\n"
-msgstr "利益：1時間あたり$18\n危険：高い\n時間：不明\n\n隊商護衛名簿：\n"
+msgstr "利益：$18/1時間\n危険：高い\n時間：不明\n\n隊商護衛者名簿：\n"
 
 #: src/mission_companion.cpp
 msgid " [READY] \n"
@@ -112447,8 +112517,8 @@ msgstr "%s が多少の経験値を獲得して巡回任務から帰還した。
 #: src/mission_companion.cpp
 #, c-format
 msgid ""
-"%s was impressed with %s's performance and gave you a small bonus ($100)"
-msgstr "%s は %s の働きを高く評価してあなたに追加報酬を与えた。($100)"
+"%s was impressed with %s's performance and gave you a small bonus ( $100 )"
+msgstr ""
 
 #: src/mission_companion.cpp
 #, c-format
@@ -114475,11 +114545,6 @@ msgstr "%s(%s)"
 #, c-format
 msgid "<stat>It is %s.</stat>"
 msgstr "<stat>%s</stat>"
-
-#: src/monster.cpp
-#, c-format
-msgid "<dark>%s</dark>"
-msgstr "<dark>%s</dark>"
 
 #: src/monster.cpp
 #, c-format
@@ -118355,12 +118420,29 @@ msgid "Select a follower"
 msgstr "同行者を選択"
 
 #: src/options.cpp
+msgid "Switch between the Cup ( c ), Liter ( L ) or Quart ( qt )."
+msgstr ""
+
+#: src/options.cpp
 msgid "Open default advanced inventory layout"
 msgstr "アイテム整理メニュー/デフォルト配置"
 
 #: src/options.cpp
 msgid "Open default advanced inventory layout instead of last opened layout"
 msgstr "最後に開いた配置ではなく、登録したデフォルト配置でアイテム整理メニューを開きます。"
+
+#: src/options.cpp
+msgid ""
+"If true, actions ( like \"Read\", \"Smoke\", \"Wrap tighter\" ) will be "
+"displayed next to the corresponding items."
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"If true, when controlling a vehicle, a white 'X' ( in curses version ) or a "
+"crosshair ( in tiles version ) at distance 10 from the center will display "
+"its current facing."
+msgstr ""
 
 #: src/options.cpp
 msgid "Message log flow"
@@ -118387,12 +118469,15 @@ msgid ""
 msgstr "ソフトウェアレンダリングを使用する場合、フレームバッファにハードウェアアクセラレーションを使用します。再起動が必要です。"
 
 #: src/options.cpp
-msgid "Multi-pool only"
-msgstr "ポイント分離のみ"
+msgid ""
+"Sets the scaling mode, 'none' ( default ) displays at the game's native "
+"resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
+"provides high-quality scaling."
+msgstr ""
 
 #: src/options.cpp
-msgid "No freeform"
-msgstr "フリー禁止"
+msgid "( WIP feature ) Determines terrain, shops, plants, and more."
+msgstr ""
 
 #: src/options.cpp
 msgid "Character point pools"
@@ -118401,6 +118486,18 @@ msgstr "ポイント割り振り"
 #: src/options.cpp
 msgid "Allowed point pools for character generation."
 msgstr "キャラクター作成時のポイント割り振りを設定します。"
+
+#: src/options.cpp
+msgid "Multi-pool only"
+msgstr "ポイント分離のみ"
+
+#: src/options.cpp
+msgid "No freeform"
+msgstr "フリー禁止"
+
+#: src/options.cpp
+msgid "Disables tracking food, thirst and ( partially ) fatigue for NPCs."
+msgstr ""
 
 #: src/output.cpp
 msgid "Press any key for more..."
