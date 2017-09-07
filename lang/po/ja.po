@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cataclysm-DDA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-11 22:14+0800\n"
-"PO-Revision-Date: 2017-08-13 03:56+0000\n"
+"POT-Creation-Date: 2017-08-25 17:05+0800\n"
+"PO-Revision-Date: 2017-09-01 12:44+0000\n"
 "Last-Translator: Pigmentblue15\n"
 "Language-Team: Japanese (http://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -289,7 +289,7 @@ msgid ""
 msgstr "Trueにすると距離の計算方法が変わります。\n・照明が円形に描画されます。\n・斜め移動のコストが増加します。"
 
 #: lang/extra/android/options.cpp src/craft_command.cpp src/options.cpp
-#: src/veh_interact.cpp
+#: src/options.cpp src/veh_interact.cpp
 msgid "No"
 msgstr "No"
 
@@ -446,7 +446,7 @@ msgstr "qt"
 msgid "Volume units"
 msgstr "体積単位"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid "Switch between the Cup (c), Liter (L) or Quart (qt)."
 msgstr "体積(c[カップ]・L[リットル]・qt[クォート])の表示を設定します。"
 
@@ -529,7 +529,7 @@ msgstr "trueにするとアイテムをすべて移動コマンド実行後に�
 msgid "Display actions in Use Item menu"
 msgstr "アイテム使用メニュー/行動表示"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid ""
 "If true, actions (like \"Read\", \"Smoke\", \"Wrap tighter\") will be "
 "displayed next to the corresponding items."
@@ -555,7 +555,7 @@ msgstr "trueにすると運転中は自動で前方に視点が移動します�
 msgid "Draw vehicle facing indicator"
 msgstr "車両/前方に方向指示器を描画"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid ""
 "If true, when controlling a vehicle, a white 'X' (in curses version) or a "
 "crosshair (in tiles version) at distance 10 from the center will display its"
@@ -897,7 +897,7 @@ msgstr "リニアフィルタ"
 msgid "Scaling mode"
 msgstr "拡大縮小モード"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid ""
 "Sets the scaling mode, 'none' (default) displays at the game's native "
 "resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
@@ -1147,7 +1147,7 @@ msgstr "モンスターの防御力を決定します。値が高いほど打た
 msgid "Default region type"
 msgstr "初期設定/地域"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid "(WIP feature) Determines terrain, shops, plants, and more."
 msgstr "地形や店、植物などを設定します(開発途上の機能)。"
 
@@ -1324,7 +1324,7 @@ msgstr "無効/食物の栄養設定"
 msgid "If true, disables vitamin tracking and vitamin disorders."
 msgstr "trueにすると、栄養の設定と栄養不足の効果が無効化されます。"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid "Disables tracking food, thirst and (partially) fatigue for NPCs."
 msgstr "NPCの飲食に関する欲求と(一部の)疲労を無効化します。"
 
@@ -2655,53 +2655,6 @@ msgid ""
 msgstr "矢の先端に燃える布きれが巻きつけてあります。弓に燃え移る前に矢を放つ必要があります。"
 
 #: lang/json/AMMO_from_json.py
-msgid "wooden crossbow bolt"
-msgstr "ボルト(木)"
-
-#. ~ Description for wooden crossbow bolt
-#: lang/json/AMMO_from_json.py
-msgid ""
-"A sharpened bolt carved from wood.  It's very light, but doesn't do much "
-"damage and isn't particularly accurate.  Stands a below average chance of "
-"remaining intact once fired."
-msgstr "鋭利な木製のボルトです。非常に軽量ですが、威力と命中精度は期待出来ません。放った矢が低確率で地面に残ります。"
-
-#: lang/json/AMMO_from_json.py
-msgid "metal crossbow bolt"
-msgstr "ボルト(金属)"
-
-#. ~ Description for metal crossbow bolt
-#: lang/json/AMMO_from_json.py
-msgid ""
-"A sharpened bolt made from metal of some kind.  It's heavy and unwieldy, "
-"providing moderate damage and accuracy.  Stands a very good chance of "
-"remaining intact once fired."
-msgstr "鋭利な金属製のボルトです。重さに見合った威力と命中精度があります。放った矢が高確率で地面に残ります。"
-
-#: lang/json/AMMO_from_json.py
-msgid "steel crossbow bolt"
-msgstr "ボルト(鋼)"
-
-#. ~ Description for steel crossbow bolt
-#: lang/json/AMMO_from_json.py
-msgid ""
-"A sharp bolt made from steel.  Deadly in skilled hands.  Stands an excellent"
-" chance of remaining intact once fired."
-msgstr "鋭利な鋼製のボルトです。熟練者が用いれば驚異的な威力を発揮します。放った矢が極高確率で地面に残ります。"
-
-#: lang/json/AMMO_from_json.py
-msgid "explosive crossbow bolt"
-msgstr "ボルト(金属/炸裂)"
-
-#. ~ Description for explosive crossbow bolt
-#: lang/json/AMMO_from_json.py
-msgid ""
-"A lightweight, sharpened bolt made from some kind of metal.  It is fairly "
-"unwieldy and only provides moderate accuracy, due to being filled with "
-"explosives and fitted with an impact trigger."
-msgstr "何かの金属から作られた軽く鋭いボルトです。酷く不格好で並みの命中率だけが取り柄です。撃発装置や爆薬を詰め込んで括り付けているのが原因ですが..."
-
-#: lang/json/AMMO_from_json.py
 msgid "plastic shaft"
 msgstr "矢柄(プラスチック)"
 
@@ -3154,6 +3107,53 @@ msgstr "真菌の菌糸です。"
 #: lang/json/furniture_from_json.py
 msgid "fungal flower"
 msgstr "真菌の花"
+
+#: lang/json/AMMO_from_json.py
+msgid "wooden crossbow bolt"
+msgstr "ボルト(木)"
+
+#. ~ Description for wooden crossbow bolt
+#: lang/json/AMMO_from_json.py
+msgid ""
+"A sharpened bolt carved from wood.  It's very light, but doesn't do much "
+"damage and isn't particularly accurate.  Stands a below average chance of "
+"remaining intact once fired."
+msgstr "鋭利な木製のボルトです。非常に軽量ですが、威力と命中精度は期待出来ません。放った矢が低確率で地面に残ります。"
+
+#: lang/json/AMMO_from_json.py
+msgid "metal crossbow bolt"
+msgstr "ボルト(金属)"
+
+#. ~ Description for metal crossbow bolt
+#: lang/json/AMMO_from_json.py
+msgid ""
+"A sharpened bolt made from metal of some kind.  It's heavy and unwieldy, "
+"providing moderate damage and accuracy.  Stands a very good chance of "
+"remaining intact once fired."
+msgstr "鋭利な金属製のボルトです。重さに見合った威力と命中精度があります。放った矢が高確率で地面に残ります。"
+
+#: lang/json/AMMO_from_json.py
+msgid "steel crossbow bolt"
+msgstr "ボルト(鋼)"
+
+#. ~ Description for steel crossbow bolt
+#: lang/json/AMMO_from_json.py
+msgid ""
+"A sharp bolt made from steel.  Deadly in skilled hands.  Stands an excellent"
+" chance of remaining intact once fired."
+msgstr "鋭利な鋼製のボルトです。熟練者が用いれば驚異的な威力を発揮します。放った矢が極高確率で地面に残ります。"
+
+#: lang/json/AMMO_from_json.py
+msgid "explosive crossbow bolt"
+msgstr "ボルト(金属/炸裂)"
+
+#. ~ Description for explosive crossbow bolt
+#: lang/json/AMMO_from_json.py
+msgid ""
+"A lightweight, sharpened bolt made from some kind of metal.  It is fairly "
+"unwieldy and only provides moderate accuracy, due to being filled with "
+"explosives and fitted with an impact trigger."
+msgstr "何かの金属から作られた軽く鋭いボルトです。酷く不格好で並みの命中率だけが取り柄です。撃発装置や爆薬を詰め込んで括り付けているのが原因ですが..."
 
 #: lang/json/AMMO_from_json.py
 msgid "ethanol"
@@ -5018,7 +5018,7 @@ msgstr "怪しく光る湿り気を帯びた破片です。ほのかに暖かく
 #: lang/json/AMMO_from_json.py lang/json/ammunition_type_from_json.py
 msgid "blood essence"
 msgid_plural "blood essence"
-msgstr[0] "エッセンス(血液)"
+msgstr[0] "エッセンス(血)"
 
 #. ~ Description for blood essence
 #: lang/json/AMMO_from_json.py
@@ -5028,7 +5028,7 @@ msgstr "化け物から排出された、怪しく光る湿り気を帯びた破
 #: lang/json/AMMO_from_json.py lang/json/ammunition_type_from_json.py
 msgid "dull essence"
 msgid_plural "dull essence"
-msgstr[0] "エッセンス(濁色)"
+msgstr[0] "エッセンス(濁)"
 
 #. ~ Description for dull essence
 #: lang/json/AMMO_from_json.py
@@ -8056,6 +8056,19 @@ msgid ""
 "Modern tactical eyewear that protects from small projectiles and fragments."
 "  Excellent protection from environmental dangers."
 msgstr "弾丸や小さな破片から目を保護する現代の戦術的な保護メガネです。危険な環境から目を保護する能力に優れています。"
+
+#: lang/json/ARMOR_from_json.py
+msgid "pair of eclipse glasses"
+msgid_plural "pairs of eclipse glasses"
+msgstr[0] "日食グラス"
+
+#. ~ Description for pair of eclipse glasses
+#: lang/json/ARMOR_from_json.py
+msgid ""
+"A pair of cardboard-framed glasses with UV and IR-filtered lenses topped "
+"with a layer of aluminium coating. They allow safely staring at extremely "
+"bright and harmful sources of light like the sun during a solar eclipse."
+msgstr "アルミでコーティングされた厚紙のフレームに、紫外線と赤外線をカットするレンズが入ったサングラスです。日食などの際に、太陽のような非常に強く有害な光を安全に観察できます。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "pair of bifocal glasses"
@@ -13316,8 +13329,8 @@ msgid "Adrenaline Pump CBM"
 msgid_plural "Adrenaline Pump CBMs"
 msgstr[0] "CBM: アドレナリン刺激装置"
 
-#. ~ Description for Adrenaline Pump
 #. ~ Description for Adrenaline Pump CBM
+#. ~ Description for Adrenaline Pump
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "A stimulator system has been implanted alongside your adrenal glands, "
@@ -13330,8 +13343,8 @@ msgid "Active Defense System CBM"
 msgid_plural "Active Defense System CBMs"
 msgstr[0] "CBM: 積極防御システム"
 
-#. ~ Description for Active Defense System
 #. ~ Description for Active Defense System CBM
+#. ~ Description for Active Defense System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "A thin forcefield surrounds your body, continually draining power.  Anything"
@@ -13357,8 +13370,8 @@ msgid "Alarm System CBM"
 msgid_plural "Alarm System CBMs"
 msgstr[0] "CBM: 警報システム"
 
-#. ~ Description for Alarm System
 #. ~ Description for Alarm System CBM
+#. ~ Description for Alarm System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "A motion-detecting alarm system will notice almost all movement within a "
@@ -13371,8 +13384,8 @@ msgid "Arms Alloy Plating CBM"
 msgid_plural "Arms Alloy Plating CBMs"
 msgstr[0] "CBM: 合金メッキ - 腕"
 
-#. ~ Description for Alloy Plating - Arms
 #. ~ Description for Arms Alloy Plating CBM
+#. ~ Description for Alloy Plating - Arms
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "The flesh on your arms has been replaced by a strong armor, protecting you "
@@ -13384,8 +13397,8 @@ msgid "Protective Lenses CBM"
 msgid_plural "Protective Lenses CBMs"
 msgstr[0] "CBM: 保護レンズ"
 
-#. ~ Description for Protective Lenses
 #. ~ Description for Protective Lenses CBM
+#. ~ Description for Protective Lenses
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your eye sockets have been sealed with highly protective mirrored lenses and"
@@ -13398,8 +13411,8 @@ msgid "Head Alloy Plating CBM"
 msgid_plural "Head Alloy Plating CBMs"
 msgstr[0] "CBM: 合金メッキ - 頭部"
 
-#. ~ Description for Alloy Plating - Head
 #. ~ Description for Head Alloy Plating CBM
+#. ~ Description for Alloy Plating - Head
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "The flesh on your head has been replaced by a strong armor, protecting both "
@@ -13411,8 +13424,8 @@ msgid "Legs Alloy Plating CBM"
 msgid_plural "Legs Alloy Plating CBMs"
 msgstr[0] "CBM: 合金メッキ - 脚"
 
-#. ~ Description for Alloy Plating - Legs
 #. ~ Description for Legs Alloy Plating CBM
+#. ~ Description for Alloy Plating - Legs
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "The flesh on your legs has been replaced by a strong armor, protecting you "
@@ -13424,8 +13437,8 @@ msgid "Torso Alloy Plating CBM"
 msgid_plural "Torso Alloy Plating CBMs"
 msgstr[0] "CBM: 合金メッキ - 胴体"
 
-#. ~ Description for Alloy Plating - Torso
 #. ~ Description for Torso Alloy Plating CBM
+#. ~ Description for Alloy Plating - Torso
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "The flesh on your torso has been replaced by a strong armor, protecting you "
@@ -13437,8 +13450,8 @@ msgid "Battery System CBM"
 msgid_plural "Battery System CBMs"
 msgstr[0] "CBM: バッテリーシステム"
 
-#. ~ Description for Battery System
 #. ~ Description for Battery System CBM
+#. ~ Description for Battery System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "You have a battery draining attachment, and thus can make use of the energy "
@@ -13451,8 +13464,8 @@ msgid "Monomolecular Blade CBM"
 msgid_plural "Monomolecular Blade CBMs"
 msgstr[0] "CBM: 単分子ブレード"
 
-#. ~ Description for Monomolecular Blade
 #. ~ Description for Monomolecular Blade CBM
+#. ~ Description for Monomolecular Blade
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "A deadly foot-long blade made of advanced material now resides inside your "
@@ -13479,8 +13492,8 @@ msgid "Blood Analysis CBM"
 msgid_plural "Blood Analysis CBMs"
 msgstr[0] "CBM: 血液分析センサー"
 
-#. ~ Description for Blood Analysis
 #. ~ Description for Blood Analysis CBM
+#. ~ Description for Blood Analysis
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Small sensors have been implanted in your heart, allowing you to analyze "
@@ -13492,8 +13505,8 @@ msgid "Blood Filter CBM"
 msgid_plural "Blood Filter CBMs"
 msgstr[0] "CBM: 血液ろ過システム"
 
-#. ~ Description for Blood Filter
 #. ~ Description for Blood Filter CBM
+#. ~ Description for Blood Filter
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "A filtration system in your heart allows you to actively filter out chemical"
@@ -13507,8 +13520,8 @@ msgid "Cable Charger System CBM"
 msgid_plural "Cable Charger System CBMs"
 msgstr[0] "CBM: ケーブル充電システム"
 
-#. ~ Description for Cable Charger System
 #. ~ Description for Cable Charger System CBM
+#. ~ Description for Cable Charger System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "You have a complex port mounted above your hip.  While active, it will drain"
@@ -13520,8 +13533,8 @@ msgid "Subdermal Carbon Filament CBM"
 msgid_plural "Subdermal Carbon Filament CBMs"
 msgstr[0] "CBM: 皮下カーボンフィラメント"
 
-#. ~ Description for Subdermal Carbon Filament
 #. ~ Description for Subdermal Carbon Filament CBM
+#. ~ Description for Subdermal Carbon Filament
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Lying just beneath your skin is a thin armor made of carbon nanotubes.  This"
@@ -13533,8 +13546,8 @@ msgid "Chain Lightning CBM"
 msgid_plural "Chain Lightning CBMs"
 msgstr[0] "CBM: チェインライトニング"
 
-#. ~ Description for Chain Lightning
 #. ~ Description for Chain Lightning CBM
+#. ~ Description for Chain Lightning
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your body is equipped with a chain lightning generator, allowing you to emit"
@@ -13547,8 +13560,8 @@ msgid "Bionic Claws CBM"
 msgid_plural "Bionic Claws CBMs"
 msgstr[0] "CBM: アダマンチウム･クロー"
 
-#. ~ Description for Bionic Claws
 #. ~ Description for Bionic Claws CBM
+#. ~ Description for Bionic Claws
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Vicious claws have been installed inside your fingers, allowing you to "
@@ -13562,8 +13575,8 @@ msgid "Internal Climate Control CBM"
 msgid_plural "Internal Climate Control CBMs"
 msgstr[0] "CBM: 体内環境制御装置"
 
-#. ~ Description for Internal Climate Control
 #. ~ Description for Internal Climate Control CBM
+#. ~ Description for Internal Climate Control
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Throughout your body lies a network of thermal piping which eases the "
@@ -13575,8 +13588,8 @@ msgid "Cloaking System CBM"
 msgid_plural "Cloaking System CBMs"
 msgstr[0] "CBM: 擬装システム"
 
-#. ~ Description for Cloaking System
 #. ~ Description for Cloaking System CBM
+#. ~ Description for Cloaking System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "This high-power system uses a set of cameras and LEDs to make you blend into"
@@ -13606,8 +13619,8 @@ msgid "Wired Reflexes CBM"
 msgid_plural "Wired Reflexes CBMs"
 msgstr[0] "CBM: 反射神経活性化"
 
-#. ~ Description for Wired Reflexes
 #. ~ Description for Wired Reflexes CBM
+#. ~ Description for Wired Reflexes
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your reaction time has been greatly enhanced with bionic nerve stimulators, "
@@ -13619,8 +13632,8 @@ msgid "Expanded Digestive System CBM"
 msgid_plural "Expanded Digestive System CBMs"
 msgstr[0] "CBM: 消化器官拡張"
 
-#. ~ Description for Expanded Digestive System
 #. ~ Description for Expanded Digestive System CBM
+#. ~ Description for Expanded Digestive System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "You have been outfitted with three synthetic stomachs and industrial-grade "
@@ -13663,8 +13676,8 @@ msgid "Ethanol Burner CBM"
 msgid_plural "Ethanol Burner CBMs"
 msgstr[0] "CBM: エタノール燃焼装置"
 
-#. ~ Description for Ethanol Burner
 #. ~ Description for Ethanol Burner CBM
+#. ~ Description for Ethanol Burner
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "You burn alcohol as fuel in an extremely efficient reaction.  However, you "
@@ -13676,8 +13689,8 @@ msgid "Aero-Evaporator CBM"
 msgid_plural "Aero-Evaporator CBMs"
 msgstr[0] "CBM: 水蒸気液化装置"
 
-#. ~ Description for Aero-Evaporator
 #. ~ Description for Aero-Evaporator CBM
+#. ~ Description for Aero-Evaporator
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "This unit draws moisture from the surrounding air, which then is poured from"
@@ -13689,8 +13702,8 @@ msgid "Diamond Cornea CBM"
 msgid_plural "Diamond Cornea CBMs"
 msgstr[0] "CBM: ダイヤモンド角膜"
 
-#. ~ Description for Diamond Cornea
 #. ~ Description for Diamond Cornea CBM
+#. ~ Description for Diamond Cornea
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid "Your vision is greatly enhanced, giving you a +2 bonus to perception."
 msgstr "視力を大幅に強化します。 感覚に+2のボーナスを得ます。"
@@ -13700,8 +13713,8 @@ msgid "Telescopic Eyes CBM"
 msgid_plural "Telescopic Eyes CBMs"
 msgstr[0] "CBM: 人工望遠眼球"
 
-#. ~ Description for Telescopic Eyes
 #. ~ Description for Telescopic Eyes CBM
+#. ~ Description for Telescopic Eyes
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Much of the material in your inner eye has been removed and replaced with an"
@@ -13715,8 +13728,8 @@ msgid "Facial Distortion CBM"
 msgid_plural "Facial Distortion CBMs"
 msgstr[0] "CBM: 表情調整装置"
 
-#. ~ Description for Facial Distortion
 #. ~ Description for Facial Distortion CBM
+#. ~ Description for Facial Distortion
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Through controlled application of electrochemical impulses, you are capable "
@@ -13729,8 +13742,8 @@ msgid "Dielectric Capacitance System CBM"
 msgid_plural "Dielectric Capacitance System CBMs"
 msgstr[0] "CBM: 誘電装置"
 
-#. ~ Description for Dielectric Capacitance System
 #. ~ Description for Dielectric Capacitance System CBM
+#. ~ Description for Dielectric Capacitance System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Throughout your body lies a network of miniature piezoelectric capacitors "
@@ -13743,8 +13756,8 @@ msgid "Fingerhack CBM"
 msgid_plural "Fingerhack CBMs"
 msgstr[0] "CBM: 指内蔵式ハッキングツール"
 
-#. ~ Description for Fingerhack
 #. ~ Description for Fingerhack CBM
+#. ~ Description for Fingerhack
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "One of your fingers has an electrohack embedded in it; an all-purpose "
@@ -13758,8 +13771,8 @@ msgid "Flashbang Generator CBM"
 msgid_plural "Flashbang Generator CBMs"
 msgstr[0] "CBM: 閃光発生装置"
 
-#. ~ Description for Flashbang Generator
 #. ~ Description for Flashbang Generator CBM
+#. ~ Description for Flashbang Generator
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Light emitting diodes integrated into your skin can release a flash "
@@ -13772,8 +13785,8 @@ msgid "Cranial Flashlight CBM"
 msgid_plural "Cranial Flashlight CBMs"
 msgstr[0] "CBM: 頭部LEDライト"
 
-#. ~ Description for Cranial Flashlight
 #. ~ Description for Cranial Flashlight CBM
+#. ~ Description for Cranial Flashlight
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid "Mounted between your eyes is a small but powerful LED flashlight."
 msgstr "眉間に取り付けた強力な小型のLEDライトです。"
@@ -13796,8 +13809,8 @@ msgid "Integrated Dosimeter CBM"
 msgid_plural "Integrated Dosimeter CBMs"
 msgstr[0] "CBM: 統合放射線量計"
 
-#. ~ Description for Integrated Dosimeter
 #. ~ Description for Integrated Dosimeter CBM
+#. ~ Description for Integrated Dosimeter
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Small radiation sensors have been implanted throughout your body, allowing "
@@ -13810,8 +13823,8 @@ msgid "Oxygenator CBM"
 msgid_plural "Oxygenator CBMs"
 msgstr[0] "CBM: 酸素供給装置"
 
-#. ~ Description for Oxygenator
 #. ~ Description for Oxygenator CBM
+#. ~ Description for Oxygenator
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "A complex oxygen delivery system.  Improves the ability to extract oxygen "
@@ -13824,8 +13837,8 @@ msgid "Terranian Sonar CBM"
 msgid_plural "Terranian Sonar CBMs"
 msgstr[0] "CBM: 地中音波探知装置"
 
-#. ~ Description for Terranian Sonar
 #. ~ Description for Terranian Sonar CBM
+#. ~ Description for Terranian Sonar
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your feet are equipped with precision sonar equipment, allowing you to "
@@ -13837,8 +13850,8 @@ msgid "Heat Drain CBM"
 msgid_plural "Heat Drain CBMs"
 msgstr[0] "CBM: 体温吸収装置"
 
-#. ~ Description for Heat Drain
 #. ~ Description for Heat Drain CBM
+#. ~ Description for Heat Drain
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "While fighting unarmed against a warm-blooded opponent, there is a chance "
@@ -13851,8 +13864,8 @@ msgid "Thermal Dissipation CBM"
 msgid_plural "Thermal Dissipation CBMs"
 msgstr[0] "CBM: 熱消散システム"
 
-#. ~ Description for Thermal Dissipation
 #. ~ Description for Thermal Dissipation CBM
+#. ~ Description for Thermal Dissipation
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Powerful heatsinks and supermaterials are woven into your flesh.  While "
@@ -13865,8 +13878,8 @@ msgid "Hydraulic Muscles CBM"
 msgid_plural "Hydraulic Muscles CBMs"
 msgstr[0] "CBM: 油圧式筋肉"
 
-#. ~ Description for Hydraulic Muscles
 #. ~ Description for Hydraulic Muscles CBM
+#. ~ Description for Hydraulic Muscles
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "While activated, your muscles will be greatly enhanced, increasing your "
@@ -13890,8 +13903,8 @@ msgid "Cerebral Booster CBM"
 msgid_plural "Cerebral Booster CBMs"
 msgstr[0] "CBM: 大脳ブースター"
 
-#. ~ Description for Cerebral Booster
 #. ~ Description for Cerebral Booster CBM
+#. ~ Description for Cerebral Booster
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your brain has been enhanced with bionic coprocessors, giving you a +2 bonus"
@@ -13903,8 +13916,8 @@ msgid "Finger-Mounted Laser CBM"
 msgid_plural "Finger-Mounted Laser CBMs"
 msgstr[0] "CBM: 指内蔵式レーザー"
 
-#. ~ Description for Finger-Mounted Laser
 #. ~ Description for Finger-Mounted Laser CBM
+#. ~ Description for Finger-Mounted Laser
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "One of your fingers has a small high-powered laser embedded in it.  This "
@@ -13917,8 +13930,8 @@ msgid "Leukocyte Breeder System CBM"
 msgid_plural "Leukocyte Breeder System CBMs"
 msgstr[0] "CBM: 白血球増殖システム"
 
-#. ~ Description for Leukocyte Breeder System
 #. ~ Description for Leukocyte Breeder System CBM
+#. ~ Description for Leukocyte Breeder System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "You are equipped with bionic stimulators which augment your haematopoiesis "
@@ -13932,8 +13945,8 @@ msgid "Mini-Flamethrower CBM"
 msgid_plural "Mini-Flamethrower CBMs"
 msgstr[0] "CBM: 小型火炎放射器"
 
-#. ~ Description for Mini-Flamethrower
 #. ~ Description for Mini-Flamethrower CBM
+#. ~ Description for Mini-Flamethrower
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "The index fingers of both hands have powerful fire starters which extend "
@@ -13945,8 +13958,8 @@ msgid "Fingerpick CBM"
 msgid_plural "Fingerpick CBMs"
 msgstr[0] "CBM: 指内蔵式ピッキングツール"
 
-#. ~ Description for Fingerpick
 #. ~ Description for Fingerpick CBM
+#. ~ Description for Fingerpick
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "One of your fingers has an electronic lockpick embedded in it.  This "
@@ -13959,8 +13972,8 @@ msgid "Electromagnetic Unit CBM"
 msgid_plural "Electromagnetic Unit CBMs"
 msgstr[0] "CBM: 電磁ユニット"
 
-#. ~ Description for Electromagnetic Unit
 #. ~ Description for Electromagnetic Unit CBM
+#. ~ Description for Electromagnetic Unit
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Embedded in your hand is a powerful electromagnet, allowing you to pull "
@@ -13972,8 +13985,8 @@ msgid "Nictating Membrane CBM"
 msgid_plural "Nictating Membrane CBMs"
 msgstr[0] "CBM: 人工透明瞬膜"
 
-#. ~ Description for Nictating Membrane
 #. ~ Description for Nictating Membrane CBM
+#. ~ Description for Nictating Membrane
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your eyes have a thin membrane that closes over your eyes while underwater, "
@@ -13985,8 +13998,8 @@ msgid "Enhanced Memory Banks CBM"
 msgid_plural "Enhanced Memory Banks CBMs"
 msgstr[0] "CBM: 記憶強化装置"
 
-#. ~ Description for Enhanced Memory Banks
 #. ~ Description for Enhanced Memory Banks CBM
+#. ~ Description for Enhanced Memory Banks
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your memory has been enhanced with small quantum storage drives.  Any time "
@@ -13999,8 +14012,8 @@ msgid "Metabolic Interchange CBM"
 msgid_plural "Metabolic Interchange CBMs"
 msgstr[0] "CBM: 新陳代謝相互変換装置"
 
-#. ~ Description for Metabolic Interchange
 #. ~ Description for Metabolic Interchange CBM
+#. ~ Description for Metabolic Interchange
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your digestive system and power supply are interconnected.  Energy drains "
@@ -14013,8 +14026,8 @@ msgid "Weather Reader CBM"
 msgid_plural "Weather Reader CBMs"
 msgstr[0] "CBM: 気象表示装置"
 
-#. ~ Description for Weather Reader
 #. ~ Description for Weather Reader CBM
+#. ~ Description for Weather Reader
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "A multitude of scientific instruments and sensors collect environmental "
@@ -14040,8 +14053,8 @@ msgid "Artificial Night Generator CBM"
 msgid_plural "Artificial Night Generator CBMs"
 msgstr[0] "CBM: 人工暗闇発生装置"
 
-#. ~ Description for Artificial Night Generator
 #. ~ Description for Artificial Night Generator CBM
+#. ~ Description for Artificial Night Generator
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid "Destructive interference eliminates all light within a 15 tile radius."
 msgstr "光を阻害する物質を散布する装置です。破壊的な干渉によって半径15タイル以内への光は届かなくなります。"
@@ -14051,8 +14064,8 @@ msgid "Implanted Night Vision CBM"
 msgid_plural "Implanted Night Vision CBMs"
 msgstr[0] "CBM: 内蔵暗視装置"
 
-#. ~ Description for Implanted Night Vision
 #. ~ Description for Implanted Night Vision CBM
+#. ~ Description for Implanted Night Vision
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your eyes have been modified to amplify existing light, allowing you to see "
@@ -14064,8 +14077,8 @@ msgid "Offensive Defense System CBM"
 msgid_plural "Offensive Defense System CBMs"
 msgstr[0] "CBM: 攻勢防衛システム"
 
-#. ~ Description for Offensive Defense System
 #. ~ Description for Offensive Defense System CBM
+#. ~ Description for Offensive Defense System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "A thin forcefield surrounds your body, continually draining power.  This "
@@ -14078,8 +14091,8 @@ msgid "Sensory Dulling CBM"
 msgid_plural "Sensory Dulling CBMs"
 msgstr[0] "CBM: 知覚鈍化"
 
-#. ~ Description for Sensory Dulling
 #. ~ Description for Sensory Dulling CBM
+#. ~ Description for Sensory Dulling
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your nervous system is wired to allow you to inhibit the signals of pain, "
@@ -14104,8 +14117,8 @@ msgid "Power Armor Interface CBM"
 msgid_plural "Power Armor Interface CBMs"
 msgstr[0] "CBM: パワーアーマーインターフェイス"
 
-#. ~ Description for Power Armor Interface
 #. ~ Description for Power Armor Interface CBM
+#. ~ Description for Power Armor Interface
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Interfaces your power system with the internal charging port on suits of "
@@ -14117,8 +14130,8 @@ msgid "Power Armor Mk. II Interface CBM"
 msgid_plural "Power Armor Mk. II Interface CBMs"
 msgstr[0] "CBM: パワーアーマーインターフェイス MK. II"
 
-#. ~ Description for Power Armor Interface Mk. II
 #. ~ Description for Power Armor Mk. II Interface CBM
+#. ~ Description for Power Armor Interface Mk. II
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Interfaces your power system with the internal charging port on suits of "
@@ -14131,8 +14144,8 @@ msgid "Power Storage CBM"
 msgid_plural "Power Storage CBMs"
 msgstr[0] "CBM: 蓄電装置"
 
-#. ~ Description for Power Storage
 #. ~ Description for Power Storage CBM
+#. ~ Description for Power Storage
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Compact Bionics Module that upgrades your power capacity by 100 units.  "
@@ -14145,8 +14158,8 @@ msgid "Power Storage CBM Mk. II"
 msgid_plural "Power Storage CBMs Mk. II"
 msgstr[0] "CBM: 蓄電装置 Mk. II"
 
-#. ~ Description for Power Storage Mk. II
 #. ~ Description for Power Storage CBM Mk. II
+#. ~ Description for Power Storage Mk. II
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Compact Bionics Module developed at DoubleTech Industries as a replacement "
@@ -14159,8 +14172,8 @@ msgid "Probability Travel CBM"
 msgid_plural "Probability Travel CBMs"
 msgstr[0] "CBM: 確率的透過"
 
-#. ~ Description for Probability Travel
 #. ~ Description for Probability Travel CBM
+#. ~ Description for Probability Travel
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Increases your body's wavelength, allowing you to quantum tunnel through "
@@ -14185,8 +14198,8 @@ msgid "Radiation Scrubber System CBM"
 msgid_plural "Radiation Scrubber System CBMs"
 msgstr[0] "CBM: 放射線洗浄システム"
 
-#. ~ Description for Radiation Scrubber System
 #. ~ Description for Radiation Scrubber System CBM
+#. ~ Description for Radiation Scrubber System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "A system of advanced piezomechanical blood filters have been implanted "
@@ -14199,8 +14212,8 @@ msgid "Railgun CBM"
 msgid_plural "Railgun CBMs"
 msgstr[0] "CBM: レールガン"
 
-#. ~ Description for Railgun
 #. ~ Description for Railgun CBM
+#. ~ Description for Railgun
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "EM field generators in your arms double the range and damage of thrown iron "
@@ -14213,8 +14226,8 @@ msgid "Fingertip Razors CBM"
 msgid_plural "Fingertip Razors CBMs"
 msgstr[0] "CBM: 指先剃刀"
 
-#. ~ Description for Fingertip Razors
 #. ~ Description for Fingertip Razors CBM
+#. ~ Description for Fingertip Razors
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "You possess razor-sharp retractable claws underneath your fingernails, ten "
@@ -14252,8 +14265,8 @@ msgid "Recycler Unit CBM"
 msgid_plural "Recycler Unit CBMs"
 msgstr[0] "CBM: 再利用ユニット"
 
-#. ~ Description for Recycler Unit
 #. ~ Description for Recycler Unit CBM
+#. ~ Description for Recycler Unit
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your digestive system has been outfitted with a series of filters and "
@@ -14266,8 +14279,8 @@ msgid "Remote Controller CBM"
 msgid_plural "Remote Controller CBMs"
 msgstr[0] "CBM: 遠隔制御装置"
 
-#. ~ Description for Remote Controller
 #. ~ Description for Remote Controller CBM
+#. ~ Description for Remote Controller
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "A small module connected to your brain allows you to interface with nearby "
@@ -14292,8 +14305,8 @@ msgid "Olfactory Mask CBM"
 msgid_plural "Olfactory Mask CBMs"
 msgstr[0] "CBM: 嗅覚偽装"
 
-#. ~ Description for Olfactory Mask
 #. ~ Description for Olfactory Mask CBM
+#. ~ Description for Olfactory Mask
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "While this system is powered, your body will produce very little odor, "
@@ -14305,8 +14318,8 @@ msgid "Scent Vision CBM"
 msgid_plural "Scent Vision CBMs"
 msgstr[0] "CBM: 臭跡視"
 
-#. ~ Description for Scent Vision
 #. ~ Description for Scent Vision CBM
+#. ~ Description for Scent Vision
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "While this system is powered, you're able to visually sense your own scent, "
@@ -14319,8 +14332,8 @@ msgid "Electroshock Unit CBM"
 msgid_plural "Electroshock Unit CBMs"
 msgstr[0] "CBM: 電撃ユニット"
 
-#. ~ Description for Electroshock Unit
 #. ~ Description for Electroshock Unit CBM
+#. ~ Description for Electroshock Unit
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "While fighting unarmed, or with a weapon that conducts electricity, there is"
@@ -14333,8 +14346,8 @@ msgid "Shockwave Generator CBM"
 msgid_plural "Shockwave Generator CBMs"
 msgstr[0] "CBM: 衝撃波発生装置"
 
-#. ~ Description for Shockwave Generator
 #. ~ Description for Shockwave Generator CBM
+#. ~ Description for Shockwave Generator
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "You generate a powerful shockwave, knocking back all nearby creatures.  "
@@ -14347,8 +14360,8 @@ msgid "Solar Panels CBM"
 msgid_plural "Solar Panels CBMs"
 msgstr[0] "CBM: ソーラーパネル"
 
-#. ~ Description for Solar Panels
 #. ~ Description for Solar Panels CBM
+#. ~ Description for Solar Panels
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "You have a few solar panels installed.  While in direct sunlight, your power"
@@ -14360,8 +14373,8 @@ msgid "Synaptic Accelerator CBM"
 msgid_plural "Synaptic Accelerator CBMs"
 msgstr[0] "CBM: シナプス加速装置"
 
-#. ~ Description for Synaptic Accelerator
 #. ~ Description for Synaptic Accelerator CBM
+#. ~ Description for Synaptic Accelerator
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 #, no-python-format
 msgid ""
@@ -14374,8 +14387,8 @@ msgid "Internal Storage CBM"
 msgid_plural "Internal Storage CBMs"
 msgstr[0] "CBM: 体内格納庫"
 
-#. ~ Description for Internal Storage
 #. ~ Description for Internal Storage CBM
+#. ~ Description for Internal Storage
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Space inside your chest cavity has been converted into a storage area.  You "
@@ -14387,8 +14400,8 @@ msgid "Muscle Augmentation CBM"
 msgid_plural "Muscle Augmentation CBMs"
 msgstr[0] "CBM: 筋肉増強"
 
-#. ~ Description for Muscle Augmentation
 #. ~ Description for Muscle Augmentation CBM
+#. ~ Description for Muscle Augmentation
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your muscular system has been enhanced with myomer fibers, giving you a +2 "
@@ -14414,8 +14427,8 @@ msgid "Targeting System CBM"
 msgid_plural "Targeting System CBMs"
 msgstr[0] "CBM: 照準システム"
 
-#. ~ Description for Targeting System
 #. ~ Description for Targeting System CBM
+#. ~ Description for Targeting System
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your eyes are equipped with range finders, and their movement is synced with"
@@ -14428,8 +14441,8 @@ msgid "Teleportation Unit CBM"
 msgid_plural "Teleportation Unit CBMs"
 msgstr[0] "CBM: 瞬間移動装置"
 
-#. ~ Description for Teleportation Unit
 #. ~ Description for Teleportation Unit CBM
+#. ~ Description for Teleportation Unit
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "This highly experimental unit folds space over short distances, instantly "
@@ -14455,8 +14468,8 @@ msgid "Integrated Toolset CBM"
 msgid_plural "Integrated Toolset CBMs"
 msgstr[0] "CBM: 内蔵工具セット"
 
-#. ~ Description for Integrated Toolset
 #. ~ Description for Integrated Toolset CBM
+#. ~ Description for Integrated Toolset
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Implanted in your hands and fingers is a complete tool set - screwdriver, "
@@ -14469,8 +14482,8 @@ msgid "Joint Torsion Ratchet CBM"
 msgid_plural "Joint Torsion Ratchet CBMs"
 msgstr[0] "CBM: 関節内蔵式捻れラチェット"
 
-#. ~ Description for Joint Torsion Ratchet
 #. ~ Description for Joint Torsion Ratchet CBM
+#. ~ Description for Joint Torsion Ratchet
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your joints have been equipped with torsion ratchets that generate power "
@@ -14482,8 +14495,8 @@ msgid "Uncanny Dodge CBM"
 msgid_plural "Uncanny Dodge CBMs"
 msgstr[0] "CBM: 超回避システム"
 
-#. ~ Description for Uncanny Dodge
 #. ~ Description for Uncanny Dodge CBM
+#. ~ Description for Uncanny Dodge
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Your nervous system has been augmented with bionic processors, allowing you "
@@ -14520,8 +14533,8 @@ msgid "Water Extraction Unit CBM"
 msgid_plural "Water Extraction Unit CBMs"
 msgstr[0] "CBM: 水抽出ユニット"
 
-#. ~ Description for Water Extraction Unit
 #. ~ Description for Water Extraction Unit CBM
+#. ~ Description for Water Extraction Unit
 #: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
 msgid ""
 "Nanotubes embedded in the palm of your hand will pump any available fluid "
@@ -14539,7 +14552,7 @@ msgstr[0] "本(学習/狩人初心者に贈る教訓)"
 msgid ""
 "This hefty paperback book contains all the information needed for novice "
 "archers to get started hunting with a variety of bows and crossbows."
-msgstr "狩人初心者が必要な弓とクロスボウを使った様々な狩りの方法や情報が網羅された文庫本です。"
+msgstr "この分厚いペーパーバックの本には、弓やクロスボウの初心者が狩りを行うのに必要な情報が網羅されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Archery for Kids"
@@ -14576,7 +14589,7 @@ msgstr[0] "本(学習/カーバイヤーズガイド)"
 msgid ""
 "Normally this glossy, ad-filled magazine about cars would be pointless, but "
 "it has a series of articles on haggling techniques."
-msgstr "普通ならば、体裁の良い乗用車の広告が満載の雑誌など無価値ですが、この雑誌には交渉に関する一連の記事が掲載されています。"
+msgstr "普通なら体裁の良い乗用車の広告が満載の雑誌など無価値ですが、この雑誌には交渉技術に関する一連の記事が掲載されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "How to Succeed in Business"
@@ -14609,7 +14622,7 @@ msgid ""
 "A baseball magazine that focuses on batting tips.  There are lots of "
 "colorful, full-page photos of skilled athletes demonstrating proper form and"
 " technique."
-msgstr "バッティングのヒントになる記事を中心に書かれた野球雑誌です。ページ一杯に引き伸ばされた、適切な姿勢と技術を実証する熟練のプロ選手の写真が、沢山載っています。"
+msgstr "バッティングのヒントが特集されている野球雑誌です。熟練のプロ選手による、適切なフォームと技術の実演が大きなカラー写真でたくさん載っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "tactical baton defense manual"
@@ -14622,7 +14635,7 @@ msgid ""
 "An informative guide to self-defense using clubs and batons.  Aimed at the "
 "law enforcement and military market, it is packed with time tested, no-"
 "nonsense information and written to be understandable for beginners."
-msgstr "棍棒や警棒を使った自己防衛について書かれた有益なガイドブックです。法執行機関や軍事市場を睨み、十分な時間を掛けて検証された現実的な情報で溢れており、初心者でも理解し易いように書かれています。"
+msgstr "棍棒や警棒を使った自己防衛について書かれた有益なガイドブックです。法執行機関や軍事市場向けの十分な時間を掛けて検証された現実的な情報が豊富に載っており、初心者でも理解しやすいように書かれています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "SICP"
@@ -14634,7 +14647,7 @@ msgstr[0] "本(学習/計算機プログラムの構造と解釈)"
 msgid ""
 "A classic text, \"The Structure and Interpretation of Computer Programs.\" "
 "Written with examples in LISP, but applicable to any language."
-msgstr "定評のある学習書です。LISPについて書かれていますが、他のコンピュータ言語にも応用出来ます。"
+msgstr "定評のある学習書です。LISPについて書かれていますが、他のコンピュータ言語にも応用できます。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Computer Science 301"
@@ -14649,12 +14662,12 @@ msgstr "大学で扱うコンピュータ科学についての教科書です。
 #: lang/json/BOOK_from_json.py
 msgid "How to Browse the Web"
 msgid_plural "How to Browse the Web"
-msgstr[0] "本(学習/ネットサーフィン入門)"
+msgstr[0] "本(学習/インターネット入門)"
 
 #. ~ Description for How to Browse the Web
 #: lang/json/BOOK_from_json.py
 msgid "Very beginner-level information about computers."
-msgstr "コンピュータについて常識レベルの情報が書かれた本です。"
+msgstr "コンピュータについての常識レベルの情報が書かれた本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Computer World"
@@ -14711,7 +14724,7 @@ msgstr[0] "本(学習/自家醸造辞典)"
 msgid ""
 "A book full of easy-to-follow recipes and useful advice on homebrewing, "
 "malting, and fermenting.  It even smells faintly of booze."
-msgstr "自家醸造したい人のための本です。麦芽の製造、発酵についての知識などと、簡単なレシピが記されています。ほのかな酒の匂いが染み付いています。"
+msgstr "自家醸造の分かりやすいレシピや、発酵や蒸留に関する役立つアドバイスがたくさん載った本です。ほのかな酒の匂いが染み付いています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Cooking on a Budget"
@@ -14722,7 +14735,7 @@ msgstr[0] "本(学習/低予算クッキング)"
 #: lang/json/BOOK_from_json.py
 msgid ""
 "A nice cook book that goes beyond recipes and into the chemistry of food."
-msgstr "レシピだけではなく、食品化学についても記述されている素敵な料理本です。"
+msgstr "レシピだけではなく食品化学についても載っている、素敵な料理本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "To Serve Man"
@@ -14744,7 +14757,7 @@ msgstr[0] "本(学習/クッチーナイタリア)"
 msgid ""
 "This cookbook is written in Italian, but handily illustrated with step by "
 "step photo instructions."
-msgstr "この料理本はイタリア語で書かれていますが、手順が写真によって分かり易く解説されています。"
+msgstr "この料理本はイタリア語で書かれていますが、手順が写真によって分かりやすく解説されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Sushi Made Easy"
@@ -14757,7 +14770,7 @@ msgid ""
 "A simple text for the aspiring sushi lover, this easy to read guide is "
 "filled with lots of helpful illustrations for everything from basic rice "
 "preparation to setting a proper Japanese table."
-msgstr "寿司を切望する愛好家の為の基本的な教本です。米の炊き方から日本式のテーブルマナーまで色々な事が網羅されています。豊富な図解で説明されており、読み易いガイドブックです。"
+msgstr "向上心のある寿司愛好家のための基本的なガイドブックです。米の炊き方から日本式のテーブルマナーに至るまで、豊富なイラストによって分かりやすく解説されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "family cookbook"
@@ -14771,7 +14784,7 @@ msgid ""
 "creased corners speak volumes of the culinary knowledge contained within.  "
 "You could probably learn a lot about cooking from studying this domestic "
 "artifact."
-msgstr "どこかの家の自家製レシピを満載した大きなバインダーです。その何度も捲られたページや皺のよった角が、込められた台所知識の厚みを物語っています。この家庭的な一大著作からは料理に関する多くの知識を得られるでしょう。"
+msgstr "どこかの家の自家製レシピを満載した大きなバインダーです。その何度も捲られたページや皺のよった角が、込められた料理知識の厚みを物語っています。この家庭的な一大著作からは料理に関する多くの知識を得られるでしょう。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Bon Appetit"
@@ -14782,7 +14795,7 @@ msgstr[0] "本(学習/ボナペティ)"
 #: lang/json/BOOK_from_json.py
 msgid ""
 "Exciting recipes and restaurant reviews.  Full of handy tips about cooking."
-msgstr "各レストランの評論やレシピが載っている刺激的な本です。料理の有益なヒントが色々と載っています。"
+msgstr "美味しそうなレシピやレストランのレビューが書かれた本です。料理の有益なヒントがたくさん載っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Glamopolitan"
@@ -14795,7 +14808,7 @@ msgid ""
 "This is a full-size glossy women's magazine.  There are a few unoriginal "
 "recipes and some simple cooking tips somewhere in between the fashion photos"
 " and the sex advice columns."
-msgstr "規格判の紙質の良い女性誌です。独創性に欠けるレシピと簡単な料理のヒントが、ファッション写真やセックス講座などの記事に紛れています。"
+msgstr "紙質の良い規格判の女性誌です。独創性に欠けるレシピと簡単な料理のヒントが、ファッション写真やセックス講座などの記事に紛れて載っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Modern Tanner"
@@ -14807,7 +14820,7 @@ msgstr[0] "本(学習/現代のなめし皮職人)"
 msgid ""
 "A in-depth and easy to read guide that details a very modern take on the "
 "ancient art of leather tanning."
-msgstr "専門的だけど読みやすい、皮なめしの技法について書かれた本です。古代から変わらない伝統的な方法と、化学薬品を使った現代的な方法とがそれぞれ詳細に解説されています。"
+msgstr "古代から伝わる皮なめしの技法を、現代的な視点から詳細に分かりやすく解説したガイドブックです。"
 
 #: lang/json/BOOK_from_json.py
 msgid "PE050 \"Alpha\": Preliminary Report"
@@ -14820,7 +14833,7 @@ msgid ""
 "This sheaf of papers-dated two weeks before all this started-describes some "
 "new chemical formula, and its effects on human subjects.  It's stamped "
 "\"APPROVED\"..."
-msgstr "この紙束に記された日付は、大変動が始まる2週間前のものです。複数の新しい化学式や、その人体に対する影響が記されています。\"承認\"のスタンプが押されています。"
+msgstr "この紙束に記された日付は、大変動が始まる2週間前のものです。複数の新しい化学式や、それが人体に与える影響が記されています。\"承認\"のスタンプが押されています..."
 
 #: lang/json/BOOK_from_json.py
 msgid "lab journal-Dionne"
@@ -14872,7 +14885,7 @@ msgid ""
 "This binder details the scheduled maintenance for several plumbing systems "
 "throughout the facility.  However, some of the log sheets seem to be filled "
 "with...a chemical formula?"
-msgstr "このバインダーには、施設の配管システムの定期検査記録の詳細が書かれています。しかし、一部の記録は何かで埋め尽くされて...化学式？"
+msgstr "このバインダーには、施設の配管システムの定期検査記録が詳細に書かれています。しかし、一部の記録は何かで埋め尽くされて...化学式？"
 
 #: lang/json/BOOK_from_json.py
 msgid "chemical reference-CLASSIFIED"
@@ -14887,7 +14900,7 @@ msgid ""
 "life\".  It contains useful information on \"basic\" chemical projects like "
 "methamphetamine and heroin, along with briefing on things called \"XE037\" "
 "and \"PE012\"."
-msgstr "この少し専門的なバインダーの表紙には、機密に関する威圧的な警告が書かれています。特に「無断で読んだ場合は終身雇用を保証します。」という一文が目につきます。中身は「XE037」「PE012」と呼ばれる物の説明や、覚醒剤やヘロインなどの「基本的」な化学式について書かれています。"
+msgstr "この少し専門的なバインダーの表紙には、機密に関する威圧的な警告が書かれています。特に「無断で読んだ者には永続雇用を保証する」という一文が目につきます。中身は「XE037」「PE012」と呼ばれる物質の説明や、覚醒剤やヘロインなどの「基本的」な化学式について書かれています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "lab journal-x-|xp"
@@ -14900,7 +14913,7 @@ msgid ""
 "This damaged team logbook lacks (deliberately?) any identifying information,"
 " but still contains useful information on several types of mutagen and their"
 " development."
-msgstr "この破損した研究日誌はかなりの情報が(意図的に？)失われていますが、幾つかの変異原物質及びその開発に役立つ情報が残っています。"
+msgstr "この破損した研究日誌はかなりの情報が(意図的に？)失われていますが、いくつかの変異原物質及びその開発に役立つ情報が残っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "PE023 \"Medical\": Application and Findings"
@@ -14912,7 +14925,7 @@ msgstr[0] "本(学習/PE023 \"医療\": 応用と調査結果)"
 msgid ""
 "This binder of highly technical papers describes some new chemical formula, "
 "and its effects on human subjects.  It's stamped \"APPROVED\"...."
-msgstr "バインダーの中の紙束には、複数の新しい化学式や、その人体に対する影響が記されています。\"承認\"のスタンプが押されています。"
+msgstr "バインダーの中の紙束には、複数の新しい化学式や、その人体に対する影響が記されています。\"承認\"のスタンプが押されています..."
 
 #: lang/json/BOOK_from_json.py
 msgid "PE070 \"Raptor\": Proposal"
@@ -14940,12 +14953,12 @@ msgid ""
 "results.  The authors recommend that researchers ensure that their subjects "
 "are well-fed and in good health, as the concentrated serums draw heavily on "
 "subjects' bodies."
-msgstr "この内部マニュアルには、変異実験の手順、ならびに迅速に結果を得るために行う変異原物質の濃縮プロトコルを詳しく解説しています。研究員が濃縮された血清を投与する際、被験者が栄養の良い健康体であるかどうかをよく確認するように、と書かれています。"
+msgstr "この内部マニュアルには、変異実験の手順、ならびに迅速に結果を得るために行う変異原物質の濃縮プロトコルを詳しく解説しています。研究員が濃縮された血清を投与する際、被験者が栄養状態の良い健康体であるかどうかをよく確認するように、と書かれています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Ye Scots Beuk o Cuikery"
 msgid_plural "copies of Ye Scots Beuk o Cuikery"
-msgstr[0] "本(学習/伝統的なスコットランドの料理)"
+msgstr[0] "本(学習/伝統的なスコットランド料理)"
 
 #. ~ Description for Ye Scots Beuk o Cuikery
 #: lang/json/BOOK_from_json.py
@@ -14955,7 +14968,7 @@ msgid ""
 "people stabbing each other mixed amongst the recipes, it provides insights "
 "into medieval Scottish culture and fashion as well as new uses for oatmeal, "
 "fish, and sheep liver."
-msgstr "13世紀のスコットランドの料理本です。一部は当時の言語で書かれています。血みどろの殺し合いをする人々のイラストがレシピに混じって掲載されており、少々読むのは大変です。しかし、オートミール、魚、羊の肝臓の新しい利用法に混じって、中世のスコットランドの文化と服装についても学習できます。"
+msgstr "13世紀のスコットランドの料理書の一部を現代語に翻訳した本です。血みどろの殺し合いをする人々のイラストがレシピに混じって掲載されているため少々読み辛いですが、オートミール、魚、羊の肝臓の新しい利用法に加えて、中世スコットランドの文化や服飾についても考察できそうです。"
 
 #: lang/json/BOOK_from_json.py
 msgid "chemistry textbook"
@@ -14977,7 +14990,7 @@ msgstr[0] "本(学習/剣の全て)"
 msgid ""
 "An interesting magazine that contains information about swords and sword "
 "fighting techniques from all across the world."
-msgstr "世界中から剣を使った戦闘技術に関する情報を集めた、興味深い雑誌です。"
+msgstr "剣を使った戦闘技術に関する情報を世界中から集めた、興味深い雑誌です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "knife fighter's notes"
@@ -14990,7 +15003,7 @@ msgid ""
 "It seems to be a guide to edged weapon combat, poorly photocopied and "
 "released on spiral- bound paper.  Still, there are lots of useful tips for "
 "beginners."
-msgstr "刃物での戦闘に関するガイドブックです。説明に必要な写真が揃わない状態で螺旋綴じされた紙に印刷され、出版された本のようです。しかし、そのような状態でも、初心者に必要な有益なヒントが色々と載っています。"
+msgstr "刃物での戦闘に関するガイドブックです。粗悪なコピー紙をリングで綴じただけの代物ですが、初心者とって有益なヒントがたくさん載っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Spetsnaz Knife Techniques"
@@ -15010,7 +15023,7 @@ msgstr[0] "本(学習/ダンスダンスダンス！)"
 #. ~ Description for Dance Dance Dance!
 #: lang/json/BOOK_from_json.py
 msgid "Learn the moves of the trendiest dances right now."
-msgstr "今もっとも流行しているダンスの踊り方を学べる雑誌です。"
+msgstr "流行しているダンスの踊り方を今すぐに学べる本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Book of Dances"
@@ -15036,7 +15049,7 @@ msgid ""
 "A tourist-centric guide to points of interest throughout the country.  "
 "Though it focuses on the north-central US, the driving sections contain some"
 " practical tips on proper driving techniques."
-msgstr "地域の名所を記した観光用のガイドです。主にアメリカの中北部に焦点を当てて紹介されていますが、ドライブについての記事には、運転技術における中々実用的なヒントが記されています。"
+msgstr "地域の名所を記した観光用のガイドです。主にアメリカの中北部に焦点を当てて紹介されていますが、ドライブについての記事には、運転技術における実用的なヒントがいくつか記されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Top Gear magazine"
@@ -15046,7 +15059,7 @@ msgstr[0] "本(学習/トップギアマガジン)"
 #. ~ Description for Top Gear magazine
 #: lang/json/BOOK_from_json.py
 msgid "Lots of articles about cars and driving techniques."
-msgstr "車や運転技術に関する記事が大量に載っている本です。"
+msgstr "車や運転技術に関する記事が大量に載っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Rules of the Road"
@@ -15058,7 +15071,7 @@ msgstr[0] "本(学習/道路交通法)"
 msgid ""
 "A thick textbook for beginning drivers.  It contains chapters on laws, safe "
 "vehicle operation, and defensive driving concepts."
-msgstr "運転免許の取得に際して、用いられる教科書です。法律や安全な運転技術、駆動概念など章ごとに学ぶべき項目が分かれています。"
+msgstr "運転免許の取得に際して用いられる教科書です。法律や安全な運転技術、駆動概念など章ごとに学ぶべき項目が分かれています。"
 
 #. ~ Description for AAA Guide 2040
 #: lang/json/BOOK_from_json.py
@@ -15067,7 +15080,7 @@ msgid ""
 "particular copy is apparently the Anonymous Anarchist's Annual: the cover "
 "conceals a wealth of ways to help stick it to The Man, along with plenty of "
 "advice for avoiding police."
-msgstr "地域の名所を記した観光用のガイド...に偽装した書物です。どうやら匿名のアナーキストの年鑑であり、警察を避ける方法や対処する際の道具についての豊富な知識とアドバイスが記されています。"
+msgstr "地域の名所を記した観光用のガイド...とよく似た書物です。アノニマス・アナーキスト・アニュアルと書かれた表紙をめくると、警察沙汰を避けるためのアドバイスや権力者に歯向かう様々な方法が大量に記されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Advanced Electronics"
@@ -15089,7 +15102,7 @@ msgstr[0] "本(学習/図解アマチュア無線)"
 msgid ""
 "An amusing magazine about ham radio, with lots of diagrams and illustrations"
 " for making your own electronic devices."
-msgstr "独自の電子機器を作り上げる為に、図解やイラストをふんだんに使用した、アマチュア無線に関する興味深い雑誌です。"
+msgstr "自力で電子機器を作れるように図解やイラストをふんだんに使用した、アマチュア無線に関する興味深い雑誌です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "What's a Transistor?"
@@ -15137,7 +15150,7 @@ msgid ""
 "technology to improve their bodies.  There are a few in-depth and thoroughly"
 " illustrated articles on bionic systems, though they tend to use too much "
 "jargon."
-msgstr "毎年出版されているこの本には、人体を改良するための技術が掲載されています。生物工学系の非常に詳細な記事が多数書かれていますが、文章のほとんどが専門用語だらけです。"
+msgstr "毎年出版されているこの本には、人体を改良するための技術が掲載されています。文章のほとんどは専門用語ですが、生体部品に関する非常に詳細な記事が多数書かれています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "lab journal-Herrera"
@@ -15150,7 +15163,7 @@ msgid ""
 "This hefty binder contains a multitude of diagrams and technical "
 "specifications for various electronic materials.  Some of the diagrams use "
 "symbols you've not seen before..."
-msgstr "この分厚いバインダーには、いくつかの各種電子材料の図面と技術仕様が記載されています。あなたがいままでに見たこともないような記号が使用されている図面もあるようです...。"
+msgstr "この分厚いバインダーには、いくつかの各種電子材料の図面と技術仕様が記載されています。今までに見たこともないような記号が使用されている図面もあるようです..."
 
 #: lang/json/BOOK_from_json.py
 msgid "2XI design binder-CLASSIFIED"
@@ -15176,7 +15189,7 @@ msgstr[0] "本(一般/無線中継モジュール図面)"
 msgid ""
 "Instructions on how to create a mod for a radio station terminal which "
 "converts the entire system into a repeater."
-msgstr "ラジオ放送端末用の中継モジュールの製作方法について書かれた図面です。無線中継モジュールはシステム全体を中継器に変換します。"
+msgstr "ラジオ放送端末用の中継モジュールの製作方法が書かれた図面です。無線中継モジュールはシステム全体を中継器に変換します。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Electronic Circuit Theory"
@@ -15211,7 +15224,7 @@ msgstr[0] "本(学習/硝子吹き製法)"
 msgid ""
 "A textbook that illustrates the science and technique of the ancient art of "
 "glassblowing."
-msgstr "硝子吹きについて記された教科書です。古代文明が発明した技術が記されています。"
+msgstr "古代から伝わる硝子吹きの技法を科学的・技術的な面から解説した教科書です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Crafty Crafter's Quarterly"
@@ -15223,19 +15236,19 @@ msgstr[0] "本(学習/季刊・ベテランクラフター)"
 msgid ""
 "A fun quarterly magazine all about macaroni art and things you can make by "
 "supergluing found objects together."
-msgstr "マカロニアートの作り方と接着剤の使い方が書かれている季刊誌です。"
+msgstr "マカロニアートの作り方や接着剤を使った誰でもできる日用品アートについて書かれた、たのしい季刊雑誌です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "101 Crafts for Beginners"
 msgid_plural "101 Crafts for Beginners"
-msgstr[0] "本(学習/初級製作技法・101の方法)"
+msgstr[0] "本(学習/初級製作101)"
 
 #. ~ Description for 101 Crafts for Beginners
 #: lang/json/BOOK_from_json.py
 msgid ""
 "A large, paperback book detailing a hundred and one beginner's projects in "
 "fabrication."
-msgstr "分厚い文庫本です。初心者でも分かり易い製作技法が解説されています。"
+msgstr "101種の初心者向け製作課題が掲載された分厚いペーパーバック本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Fletcher's Friend"
@@ -15275,7 +15288,7 @@ msgid ""
 "Everything you could ever want to know about handloading ammunition, sealed "
 "with a ...childproof cover.  Apparently a liability thing, because the "
 "chapter on explosive rounds covers them in excellent detail too."
-msgstr "子供が触っても安全な手詰め弾薬について知りたいことすべてが載っています。爆弾に関する章にはあまりに詳細な説明が載っているので、この本自体が子供にとって安全ではなさそうです。"
+msgstr "手詰め弾薬について知りたいことが全て載った書籍です。子供の安全のために弾薬にはチャイルドロックを掛ける...とのことですが、爆弾に関する章にはあまりに詳細な解説が載っているので、この本自体が子供にとって安全ではなさそうです。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Rivtech design binder"
@@ -15288,7 +15301,7 @@ msgid ""
 "This Rivtech binder warns that \"Unauthorized readers are our best test "
 "subjects.\" With good reason: it contains complete design specs and "
 "technical drawings for their entire line of products."
-msgstr "見るからに秘密めいたRivtech社のバインダーです。表紙には\"正当な権限なくこれを読むものは我が社の製品の被験体になるだろう\"と警告が書かれています。もちろん、バインダーの中にはRivtech社製品の完璧な設計図や企画図が詰まっています。"
+msgstr "見るからに秘密めいたRivtech社のバインダーです。表紙には「正当な権限なくこれを読んだ者は弊社製品の被験体に選任する」と警告が書かれており、その物騒さが示す通り、バインダーの中にはRivtech社製品の完全な設計図や企画図が詰まっています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "lab journal-Gustav"
@@ -15380,12 +15393,12 @@ msgstr[0] "本(学習/日曜大工全書)"
 msgid ""
 "A thick, hardbound book detailing countless projects for inventions that "
 "claim to improve all aspects of life."
-msgstr "DIYという言葉の範疇に含まれる無数の製作技法が詳細に解説された、分厚いハードカバー本です。人生のあらゆる場面に改良を加える勢いです。"
+msgstr "人生のあらゆる側面をより豊かにすると豪語されている無数の発明品について、製作技法が詳細に載った分厚いハードカバー本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "A History of Firefighting"
 msgid_plural "A History of Firefighting"
-msgstr[0] "本(学習/消火活動の歴史)"
+msgstr[0] "本(学習/消防活動の歴史)"
 
 #. ~ Description for A History of Firefighting
 #: lang/json/BOOK_from_json.py
@@ -15393,7 +15406,7 @@ msgid ""
 "This in-depth and technical text details the history of firefighting from "
 "ancient times into the modern era, with a focus on the technology used to "
 "save lives."
-msgstr "古代から現代までの消防活動の歴史が詳しく記された技術書です。命を救う為に発展した技術に焦点が当てられています。"
+msgstr "人命救助の技術に焦点を当て、古代から近代にかけての消防隊の歴史を詳しく記した技術書です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Art and Science of Chemical Warfare"
@@ -15407,7 +15420,7 @@ msgid ""
 "dissemination of, and defenses against various chemical weapons throughout "
 "the centuries.  The photographs the author chose make it a difficult read at"
 " times, though the information is top-notch."
-msgstr "ここ1世紀における種々の化学兵器の設計、開発、普及と運用、そして防御について徹底的に解説した技術書です。著者が選んだ写真の中に見るに堪えないものが何枚か混じっていますが、得られる情報は一級品です。"
+msgstr "ここ1世紀における種々の化学兵器の設計、開発、普及と運用、そして防衛について徹底的に解説した技術書です。著者が選んだ写真の中には見るに堪えないものが何枚か混じっていますが、得られる情報は一級品です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Swords of the Samurai"
@@ -15450,13 +15463,13 @@ msgstr "科学と溶接技術の発展を文章とたくさんのイラストで
 #: lang/json/BOOK_from_json.py
 msgid "101 Home Repairs"
 msgid_plural "101 Home Repairs"
-msgstr[0] "本(学習/家の修理・101の方法)"
+msgstr[0] "本(学習/自宅修理101)"
 
 #. ~ Description for 101 Home Repairs
 #: lang/json/BOOK_from_json.py
 msgid ""
 "A paperback book detailing 101 home repair projects the novice carpenter."
-msgstr "家の修理について101の方法が書かれた、初心者向けの文庫本です。"
+msgstr "家の修理について101の方法が書かれた、初心者向けのペーパーバック本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Complete Home Repair Guide"
@@ -15468,7 +15481,7 @@ msgstr[0] "本(学習/自宅修理完全ガイド)"
 msgid ""
 "A massive book that details virtually every aspect of remodeling and "
 "repairing a home, with concise terminology aimed at experienced carpenters."
-msgstr "住宅の改築、改装、修理の技術を完璧に網羅した非常に分厚い本です。あらゆる情報が大工仕事の経験者に向けて専門用語で簡潔に説明されています。"
+msgstr "住宅の改築、改装、修理の技術を完璧に網羅した非常に分厚い本です。大工仕事の経験者向けにあらゆる情報が専門用語で簡潔に説明されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Birdhouse Monthly"
@@ -15478,7 +15491,7 @@ msgstr[0] "本(学習/月刊・鳥籠)"
 #. ~ Description for Birdhouse Monthly
 #: lang/json/BOOK_from_json.py
 msgid "A riveting periodical all about birdhouses and their construction."
-msgstr "巣箱の作り方が記述された定期刊行雑誌です。"
+msgstr "様々な巣箱の作り方が記述された魅惑的な定期刊行雑誌です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Building for Beginners"
@@ -15490,7 +15503,7 @@ msgstr[0] "本(学習/初級建築術)"
 msgid ""
 "A large, paperback book detailing several beginner's projects in "
 "construction."
-msgstr "分厚い文庫本です。初心者でも分かり易い設計と建築法が解説されています。"
+msgstr "初心者でも分かりやすい設計と建築法が解説された、分厚いペーパーバック本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Engineering 301"
@@ -15500,7 +15513,7 @@ msgstr[0] "本(学習/機械工作301)"
 #. ~ Description for Engineering 301
 #: lang/json/BOOK_from_json.py
 msgid "A textbook on civil engineering and construction."
-msgstr "一般家庭における機械工作と小規模建築について書かれたテキストブックです。"
+msgstr "一般家庭における機械工作と小規模建築について書かれた教科書です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Guide to Advanced Emergency Care"
@@ -15512,7 +15525,7 @@ msgstr[0] "本(学習/高等緊急医療ガイド)"
 msgid ""
 "A thick textbook for paramedics describing advanced lifesaving procedures "
 "and field-expedient care methods."
-msgstr "救急救命士の為の分厚い教科書です。応急処置の手順や野外での応用法など、高度な情報が記されています。"
+msgstr "救急救命士向けの分厚い教科書です。応急処置の手順や現場での応用法など、高度な情報が記されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Paramedics"
@@ -15545,7 +15558,7 @@ msgid ""
 "This pocket-sized leather-bound guide to first aid combines a wealth of "
 "concise information with simple to follow instructions and easy to read "
 "illustrations."
-msgstr "ポケットサイズの応急手当について記された革表紙のガイドブックです。手順がイラスト付きで簡潔に分かりやすく解説されているので、記述通りにするだけで処置が可能です。"
+msgstr "ポケットサイズの、応急手当について記された革表紙のガイドブックです。手順がイラスト付きで簡潔に分かりやすく解説されているので、記述通りにするだけで処置が可能です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "First Responder Handbook"
@@ -15557,7 +15570,7 @@ msgstr[0] "本(学習/応急処置ハンドブック)"
 msgid ""
 "A hardbound book detailing advanced first aid techniques and field-expedient"
 " medical care."
-msgstr "高度な応急処置技術と、野外での応用医療について詳述しています。"
+msgstr "高度な応急処置技術と現場での応用について詳しく書かれたハードカバー本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Guns n Ammo"
@@ -15567,7 +15580,7 @@ msgstr[0] "本(学習/月刊・銃と弾薬)"
 #. ~ Description for Guns n Ammo
 #: lang/json/BOOK_from_json.py
 msgid "Reviews of firearms, and various useful tips about their use."
-msgstr "銃火器の評価レビューや使用方法など様々なヒントが書かれた月刊誌です。"
+msgstr "銃火器のレビューや使用方法に関する様々なヒントが書かれた月刊誌です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Gun Owner's Handbook"
@@ -15579,7 +15592,7 @@ msgstr[0] "本(学習/ガンオーナーズハンドブック)"
 msgid ""
 "A thick soft-cover book that claims to be a complete guide to safely "
 "operating, maintaining, and repairing firearms."
-msgstr "銃火器を安全に使用する手順に始まり、手入れや修復法なども網羅した完全なガイドブックだと主張している薄表紙の本です。"
+msgstr "銃火器を安全に使用する手順に始まり、手入れや修復法なども網羅した完全なガイドブックだと主張している分厚いソフトカバー本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Pocket Guide to Firearm Safety"
@@ -15605,7 +15618,7 @@ msgid ""
 "An interesting quarterly report about rocket launchers and recoilless "
 "rifles.  There are lots of large, exciting photos of explosions and "
 "weaponry."
-msgstr "ロケットランチャーや無反動ライフルについて書かれた興味深い季刊誌です。兵器や爆発シーンなど多くの刺激的な写真が載っています"
+msgstr "ロケットランチャーや無反動ライフルについて書かれた興味深い季刊誌です。兵器や爆発シーンなど多くの刺激的な写真が大きく載っています"
 
 #: lang/json/BOOK_from_json.py
 msgid "Jane's Mortars and Rocket Launchers"
@@ -15654,7 +15667,7 @@ msgstr[0] "本(学習/ポピュラーメカニックス)"
 msgid ""
 "A magazine about mechanical innovations.  Full of entertaining articles and "
 "advertisements for esoteric gadgets."
-msgstr "革新的な機械に関するマガジンです。最高に面白い記事と難解なガジェットの広告が掲載されています。"
+msgstr "革新的な機械に関するマガジンです。難解なガジェットに関す興味深い記事と広告が掲載されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Under the Hood"
@@ -15664,7 +15677,7 @@ msgstr[0] "本(学習/ボンネットの内部)"
 #. ~ Description for Under the Hood
 #: lang/json/BOOK_from_json.py
 msgid "An advanced mechanics manual, covering all sorts of topics."
-msgstr "色々な話題を取り扱っている、機械整備に関する先進的な解説書です。"
+msgstr "機械整備に関するあらゆる話題を取り扱った、高度な解説書です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Biodiesel: Renewable Fuel Resource"
@@ -15686,7 +15699,7 @@ msgstr[0] "本(学習/専門的機械工学)"
 msgid ""
 "An advanced guide on mechanics and welding, covering topics like \"Grinding "
 "off rust\" and \"Making cursive E's\"."
-msgstr "機械工学と溶接技術に関するやや高等な教本です。表紙を見ると\"グラインダーで錆びを落とそう\"、\"溶接のコツは筆記体のE\"と内容の一部が紹介されています。"
+msgstr "機械工学と溶接技術に関するやや高等な教本です。「錆の研削」「溶接のコツは筆記体のE」と言った内容が掲載されているようです。"
 
 #: lang/json/BOOK_from_json.py
 msgid "CQB Monthly"
@@ -15710,7 +15723,7 @@ msgstr[0] "本(学習/近接格闘マニュアル)"
 msgid ""
 "A well-thumbed hardbound book which illustrates simple strategies and "
 "techniques for close quarters combat encounters."
-msgstr "基本的な戦略と接近戦を行う時の手法について書かれた年季の入った上製本です。"
+msgstr "近接戦闘を行う際の簡単な戦略と技術について解説された、年季の入ったハードカバー本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Zombie Survival Guide"
@@ -15722,7 +15735,7 @@ msgstr[0] "本(一般/ゾンビサバイバルガイド)"
 msgid ""
 "While this seems like it would be very useful in this situation, the sheer "
 "amount of misinformation present makes it practically useless."
-msgstr "現在のような状況にこそ必要な本に思えますが...その内容のほとんどが役に立たない情報ばかりなので使い物になりません。"
+msgstr "現在のような状況にこそ必要な本に思えますが...内容のほとんどが誤った情報なので実際は役に立ちません。"
 
 #: lang/json/BOOK_from_json.py
 msgid "black box transcript"
@@ -15746,7 +15759,7 @@ msgid ""
 "A little book for little readers.  The colorful cartoon characters and sweet"
 " stories contained herein belong to a different time, before the dead walked"
 " and the world moved on."
-msgstr "子供が読む事を想定した小さな本です。色鮮やかな漫画のキャラクターや優しい物語は、死者が歩き回る今の世界とは別次元の物語でしょう。"
+msgstr "子供が読む事を想定した小さな本です。色鮮やかな漫画のキャラクターや優しい物語は、死者が歩き回る今の世界とは別次元のものに思えます。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Ranch Prospectus"
@@ -15801,7 +15814,7 @@ msgstr[0] "本(一般/大変動ヒッチハイクガイド)"
 msgid ""
 "Inscribed on the cover in large, friendly letters, is the message \"Don't "
 "Panic\"."
-msgstr "表紙には親しみやすい大きな文字で \"あわてるな\" と書いてあります。"
+msgstr "表紙には親しみやすい大きな文字で「あわてるな」と書いてあります。"
 
 #: lang/json/BOOK_from_json.py
 msgid "King James Bible"
@@ -15857,7 +15870,7 @@ msgstr[0] "本(一般/ハディース)"
 msgid ""
 "A Muslim religious text containing an account of the sayings and actions of "
 "the prophet Muhammad."
-msgstr "語録や預言者ムハンマドの行動指針などが書かれた、イスラム教徒の教本です。"
+msgstr "預言者ムハンマドの語録や行動指針などが書かれた、イスラム教徒の教本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Principia Discordia"
@@ -15907,7 +15920,7 @@ msgid ""
 "A book that embodies the main beliefs of the Church of the Flying Spaghetti "
 "Monster.  It seems to involve a lot of pirates and some sort of invisible "
 "drunken monster made of pasta."
-msgstr "空飛ぶスパゲッティモンスター教の主な信条を具体的に綴った福音書です。たくさんの海賊たち、パスタでできた大酒呑みの透明な怪物について書いてあります。"
+msgstr "空飛ぶスパゲッティモンスター教の主な信条を具体的に綴った福音書です。たくさんの海賊達や、パスタでできた大酒呑みの透明な怪物について書いてあります。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Quran"
@@ -15919,7 +15932,7 @@ msgstr[0] "本(一般/コーラン)"
 msgid ""
 "An English translation of the Muslim book of holy scriptures, with "
 "explanatory notes and commentaries to aid in understanding."
-msgstr "理解し易いように英訳で注記と解説が付いたイスラム教の聖書です。"
+msgstr "英訳されたイスラム教の聖書です。理解を助けるための注記と解説が付いています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Dianetics"
@@ -15955,7 +15968,7 @@ msgstr[0] "本(一般/仏典)"
 #: lang/json/BOOK_from_json.py
 msgid ""
 "A collection of discourses attributed to the Buddha and his close disciples."
-msgstr "ブッダとその親しい弟子についての談話集です。"
+msgstr "ブッダやその弟子達の談話集です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Talmud"
@@ -16014,7 +16027,7 @@ msgstr[0] "本(一般/ヴェーダ)"
 msgid ""
 "A single volume containing all four Vedas, which are the oldest scriptures "
 "of Hinduism."
-msgstr "4部のヴェーダが書かれた、ヒンドゥー教の最古の分厚い経典です。"
+msgstr "4部のヴェーダが書かれた、ヒンドゥー教最古の分厚い経典です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "comic book"
@@ -16035,7 +16048,7 @@ msgstr[0] "本(一般/ゲーム情報誌)"
 #: lang/json/BOOK_from_json.py
 msgid ""
 "Reviews of recently released computer games and previews of upcoming titles."
-msgstr "最近発売したゲームの記事、発売予定のタイトルやゲームレビューが載っている雑誌です。"
+msgstr "最近発売したゲームの評価や発売予定タイトルのプレビューが載っている雑誌です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "TIME magazine"
@@ -16102,7 +16115,7 @@ msgstr[0] "本(一般/友情物語)"
 msgid ""
 "A gripping tale of two friends struggling to survive on the streets of New "
 "York City."
-msgstr "ニューヨーク市の路上で、苦労しながら生活する2人の友情を描いた、興味をそそる物語です。"
+msgstr "ニューヨーク市の路上で苦労しながら生活する2人の友情を描いた、興味をそそる物語です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "coming of age novel"
@@ -16114,7 +16127,7 @@ msgstr[0] "本(一般/青春小説)"
 msgid ""
 "A classic tale about growing up, portraying one young man's funny and "
 "poignant experiences with life, love, and sex."
-msgstr "若い男が人生と愛、セックスなどを通じて、感動を体験し、成長を遂げていく古典的な物語です。"
+msgstr "若者が日常生活や愛、セックスなどを通じて感動を体験し、成長を遂げていく古典的な物語です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "crime novel"
@@ -16146,7 +16159,7 @@ msgstr[0] "本(一般/官能小説)"
 #. ~ Description for erotic novel
 #: lang/json/BOOK_from_json.py
 msgid "Hackneyed narrative concealing low-grade literary smut."
-msgstr "エロスを含んだ低俗な文章が織り成す良くある物語です。"
+msgstr "エロスを含んだ低俗な文章が織り成すありがちな物語です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "experimental novel"
@@ -16158,7 +16171,7 @@ msgstr[0] "本(一般/前衛小説)"
 msgid ""
 "A bizarre play about the philosophy of existential absurdity.  Or maybe it's"
 " about two guys waiting for their friend to show up.  It's confusing."
-msgstr "存在に関する不条理な哲学を題材にした不思議な話です。多分...友人が現れるのを待つ2人が...えー、あー、複雑過ぎて説明出来る内容じゃないですね。"
+msgstr "存在に関する不条理な哲学を題材にした不思議な話です。あるいは友人が現れるのを待っている2人の男の話かもしれません。難解です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "fantasy novel"
@@ -16221,7 +16234,7 @@ msgstr[0] "本(一般/恋愛小説)"
 #. ~ Description for romance novel
 #: lang/json/BOOK_from_json.py
 msgid "Drama and mild smut."
-msgstr "複雑な人間模様と少しのエロスが混在した小説です。"
+msgstr "複雑な人間模様と少々のエロスが混在した小説です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "samurai novel"
@@ -16234,7 +16247,7 @@ msgid ""
 "The classic tale of a wandering swordsman who comes to a small settlement "
 "and is hired to help the townsfolk defend themselves from a band of "
 "marauding outlaws."
-msgstr "無法者から村を守る為に、村人が主人公の浪人を用心棒として雇う...という古典的な物語です。"
+msgstr "寒村に訪れた主人公の浪人を、住人たちが村を無法者達から守る用心棒として雇う...という古典的な物語です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "satire novel"
@@ -16269,7 +16282,7 @@ msgid ""
 "The dramatic tale of a small-time boxer who gets a rare chance to fight the "
 "heavy-weight champion, and seize his one chance to make a better life for "
 "himself while impressing the cute girl who works in the pet store."
-msgstr "3流ボクサーの激動の物語です。現ヘビー級チャンピオンと戦い、人生を変えるチャンスを物にしようとする彼の姿が、ペットショップで働くある美少女の心を捉えます。"
+msgstr "3流ボクサーの激動の物語です。現ヘビー級チャンピオンと戦い、人生を変えるチャンスを物にしようとする男の姿が、ペットショップで働くある美少女の心を捉えます。"
 
 #: lang/json/BOOK_from_json.py
 msgid "spy novel"
@@ -16280,7 +16293,7 @@ msgstr[0] "本(一般/スパイ小説)"
 #: lang/json/BOOK_from_json.py
 msgid ""
 "A tale of intrigue and espionage amongst Nazis, no, Commies, no, Iraqis!"
-msgstr "ナチス？共産主義者？イラク人？陰謀の渦中で活躍するスパイが主人公の物語です。"
+msgstr "ナチスをめぐる陰謀とスパイの物語です。共産主義者やイラク人は登場しません！"
 
 #: lang/json/BOOK_from_json.py
 msgid "swashbuckling novel"
@@ -16293,7 +16306,7 @@ msgid ""
 "An exciting seventeenth century tale of how an enslaved Irish doctor and his"
 " comrades-in-chains escape and become heroic pirates of the Robin Hood "
 "variety."
-msgstr "17世紀を舞台に奴隷に落とされたアイルランド人医師と鎖で繋がれた戦友達が逃げ出して海賊となり、やがてはロビンフッドのように英雄的に活躍するまでを描いた物語です。"
+msgstr "舞台は17世紀、奴隷にされたアイルランド人医師と鎖で繋がれた仲間達が脱走して海賊となり、やがてはロビンフッドのように英雄的に活躍するまでを描いた物語です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "thriller novel"
@@ -16341,7 +16354,7 @@ msgid ""
 "The classic tale of a gunfighting stranger who comes to a small settlement "
 "and is hired to help the townsfolk defend themselves from a band of "
 "marauding outlaws."
-msgstr "小さな集落は無法者の略奪に怯える日々を過ごしていた...そこに1人のガンマンが立ち寄り、村人は無法者から集落を守る為に彼を雇って戦う決意をするという古典的な西部劇の物語です。"
+msgstr "寒村に訪れた主人公のガンマンを、住人たちが村を無法者達から守る用心棒として雇う...という古典的な物語です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "book of philosophy"
@@ -16365,12 +16378,12 @@ msgid ""
 "This hefty volume contains the telephone numbers of individuals, businesses,"
 " and utilities in the nearby area, pretty useless during the apocalypse and "
 "all."
-msgstr "この分厚い電話帳には、周辺地域の個人や企業、公共施設の電話番号が載っています。世紀末が訪れた今、これが役に立つ事はありません。"
+msgstr "この分厚い電話帳には、周辺地域の個人や企業、公共施設の電話番号が載っています。大変動が訪れた今、これが役に立つ事はありません。"
 
 #: lang/json/BOOK_from_json.py
 msgid "photo album"
 msgid_plural "photo albums"
-msgstr[0] "本(一般/写真アルバム)"
+msgstr[0] "本(一般/フォトアルバム)"
 
 #. ~ Description for photo album
 #: lang/json/BOOK_from_json.py
@@ -16378,7 +16391,7 @@ msgid ""
 "A leather album full of photos of somebody's family.  You don't know any of "
 "the people in them, but seeing these pictures still makes you think of "
 "happier times."
-msgstr "見知らぬ家族の写真で一杯の革張りのアルバムです。この写真に写っている人々に知っている人はいませんが...幸せな写真を眺めていると平和だった時を思い出します。"
+msgstr "見知らぬ家族の写真で一杯の革張りのアルバムです。この写真に写っている人々に知っている人はいませんが...幸せな写真を眺めていると平和だった頃を思い出します。"
 
 #: lang/json/BOOK_from_json.py
 msgid "book of plays"
@@ -16390,7 +16403,7 @@ msgstr[0] "本(一般/脚本集)"
 msgid ""
 "A collection of plays by various authors from around the world, including "
 "scripts by Wilde, Beckett, Checkov, and Shakespeare."
-msgstr "ワイルド、ベケット、チェーホフやシェークスピアなどの脚本を含む、世界中の様々な著者の脚本を集めた資料集です。"
+msgstr "ワイルド、ベケット、チェーホフやシェークスピアなどを含む、世界中の様々な著者の脚本を集めた資料集です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "book of poetry"
@@ -16488,7 +16501,7 @@ msgstr[0] "本(学習/タクティカルハンドガンダイジェスト)"
 msgid ""
 "A glossy magazine all about handguns and shooting.  There is a good article "
 "about proper sighting near the middle."
-msgstr "拳銃と射撃全般について書かれた紙質の良い雑誌です。中央付近に照準を合わせる方法について良い記事が書かれています。"
+msgstr "拳銃と射撃全般について書かれた紙質の良い雑誌です。中央付近に照準を合わせる方法に関する優れた記事が書かれています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Tao of the Handgun"
@@ -16500,7 +16513,7 @@ msgstr[0] "本(学習/ハンドガンの道)"
 msgid ""
 "This introspective volume covers proper usage of handguns, from safety and "
 "stance, to maintenance and proper sighting technique."
-msgstr "ハンドガンについて書かれた本です。少ないページ数ながら、安全性と射撃姿勢についてや整備や照準の技術などがしっかりと収められています。"
+msgstr "ハンドガンについて書かれた本です。少ないページ数ながら、安全性と射撃姿勢についてや整備や照準の技術などがしっかりと載っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Modern Rifleman"
@@ -16548,7 +16561,7 @@ msgstr[0] "本(学習/ショットガン:技術と知識)"
 msgid ""
 "This book claims to address every problem the shotgunner is likely to face, "
 "and offers solutions to ensure that shooters can make every shot count."
-msgstr "この本はショットガンナーが遭遇する全ての問題に対処が出来ると主張しています。射手が発砲する全弾を目標に必中させる為の解決策が載っています。"
+msgstr "ショットガンナーが遭遇する全ての問題に対処ができると銘打たれた本です。射手が発砲する全弾を目標に必中させる方法が載っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Submachine Gun Enthusiast"
@@ -16560,7 +16573,7 @@ msgstr[0] "本(学習/サブマシンガンファン)"
 msgid ""
 "An in-depth magazine about submachine guns and shooting.  There is an "
 "exhaustive article about close quarter combat techniques in the front."
-msgstr "現存する全てのサブマシンガンと射撃について書かれた情報誌です。第１面には近距離砲戦に関する詳細な記事が載っています。"
+msgstr "現存する全てのサブマシンガンと射撃について書かれた情報誌です。第一面にはここ四半世紀の戦闘技術を網羅的にまとめた記事が載っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Submachine Gun Handbook"
@@ -16615,7 +16628,7 @@ msgstr[0] "本(学習/年刊・デュエリスト)"
 msgid ""
 "An annual publication about fencing and dueling.  There are many good "
 "illustrations which describe proper technique and form."
-msgstr "フェンシングと決闘について書かれた年刊誌です。適切な姿勢と技術を分かり易く図解で説明しています。"
+msgstr "フェンシングと決闘について書かれた年刊誌です。適切な姿勢と技術を分かりやすく図解で説明しています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "FM 23-25 Army bayonet manual"
@@ -16639,7 +16652,7 @@ msgid ""
 " scenario.  While filled with loads of useful information, the madman who "
 "wrote this was a terrible writer, and gleaning knowledge from the rants is a"
 " chore."
-msgstr "最悪のシナリオが起こった場合の、荒野や都市での生存方法について書かれた、冗長で複雑なガイドブックです。これを書いた狂人はかなり下手な作家だったようで、もったいぶった文章の中から有用な知識を探し出す手間がかかります。"
+msgstr "最悪のシナリオが起こった場合の、荒野や都市での生存方法について書かれた、冗長で複雑なガイドブックです。これを書いた狂人はかなり下手な作家だったようで、もったいぶった文章の中から有用な知識を探し出すには手間がかかります。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Through the Lens"
@@ -16665,7 +16678,7 @@ msgid ""
 "This is a full-size glossy men's magazine.  There's a brief article about "
 "hiking and a list of simple wilderness survival tips somewhere in between "
 "the photos of bikini-clad women and the gadget advertisements."
-msgstr "規格判の紙質の良い男性誌です。荒野での基本的な生存術に関する短い記事が、ビキニ女性の写真やガジェット広告、ハイキングなどの記事に紛れています。"
+msgstr "紙質の良い規格判の男性誌です。荒野での基本的な生存術に関する短い記事が、ビキニ女性の写真やガジェット広告、ハイキングなどの記事に紛れて載っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Outdoor Adventures"
@@ -16677,7 +16690,7 @@ msgstr[0] "本(学習/アウトドアアドベンチャー)"
 msgid ""
 "A glossy magazine about surviving and hunting in the wilderness.  There's an"
 " exciting article about a bear attack in the back pages."
-msgstr "荒野で生き残る手段である狩猟について書かれた紙質の良い雑誌です。熊の襲撃に関する刺激的な場面が裏表紙を飾っています。"
+msgstr "荒野で生き残る手段である狩猟について書かれた紙質の良い雑誌です。後ろの方のページには熊の襲撃に関する刺激的な記事が載っています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Pitching a Tent"
@@ -16725,7 +16738,7 @@ msgstr[0] "本(学習/アウトドアサバイバルガイド)"
 msgid ""
 "A thick soft-cover book filled with vital information about surviving in the"
 " wild, aimed at the experienced backpacker."
-msgstr "分厚いソフトカバーの本です。経験豊富なバックパッカーの為に野外生活に必須の情報が満載されています。"
+msgstr "分厚いソフトカバーの本です。経験豊富なバックパッカー向けの、野外生活に必要な情報が満載されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Swim Planet"
@@ -16773,7 +16786,7 @@ msgid ""
 "This is a full-size glossy women's magazine.  There are a few simple "
 "patterns and basic sewing tips somewhere in between the fashion photos and "
 "the makeup advertisements."
-msgstr "規格判の紙質の良い女性誌です。簡単なパターンと基本的な裁縫技術のヒントが、ファッション写真や化粧品広告などに紛れています。"
+msgstr "紙質の良い規格判の女性誌です。簡単なパターンと基本的な裁縫技術のヒントが、ファッション写真や化粧品広告などに紛れています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Sew Awesome Monthly"
@@ -16785,7 +16798,7 @@ msgstr[0] "本(学習/月刊・素晴らしき裁縫の世界)"
 msgid ""
 "A well presented monthly magazine all about knitting, crocheting, and "
 "needlepoint.  Filled with ideas and project patterns."
-msgstr "月刊の手芸情報誌です。かぎ針編み、レース編みなどが扱われています。アイデアや型紙が沢山掲載されています。"
+msgstr "かぎ針編み、レース編みなどを扱う、月刊の手芸情報誌です。アイデアや型紙が沢山掲載されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Sew What?  Clothing!"
@@ -16875,7 +16888,7 @@ msgstr[0] "本(学習/現代の罠猟師)"
 #. ~ Description for The Modern Trapper
 #: lang/json/BOOK_from_json.py
 msgid "An extensive volume that details numerous methods of trapping game."
-msgstr "思いつく限りの獲物を罠で捕らえる方法が書かれている分厚い本です。"
+msgstr "罠猟の方法が数多く書かれた分厚い本です。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Compleat Trapper"
@@ -16887,7 +16900,7 @@ msgstr[0] "本(学習/罠猟師百科事典)"
 msgid ""
 "An in-depth book about trapping game animals, covering methods both modern "
 "and ancient."
-msgstr "狩猟動物を捕らえる罠について書かれた本です。古今東西の手法が詳細に記されています。"
+msgstr "動物を捕らえる罠について書かれた本です。古今東西の手法が詳細に記されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "The Trapper's Companion"
@@ -16900,7 +16913,7 @@ msgid ""
 "A folksy guide to trapping wild game using time-tested methods.  A bit in-"
 "depth for the beginner, it can provide a wealth of information to a "
 "knowledgeable trapper."
-msgstr "昔から受け継がれた技を使って、ジビエを罠に掛ける方法について書かれた庶民的なガイドブックです。初心者でも分かり易いようにかなり詳しく書かれており、罠猟師に必要な情報と知識を存分に学べます。"
+msgstr "昔から受け継がれた技を使ってジビエを罠に掛ける方法が書かれた素朴なガイドブックです。初心者でも分かり易いようにかなり詳しく書かれており、罠猟師に必要な情報と知識を存分に学べます。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Boxing Monthly"
@@ -16925,7 +16938,7 @@ msgid ""
 "It seems to be a wrestling manual, poorly photocopied and released on "
 "spiral- bound paper.  Still, there are lots of useful tips for unarmed "
 "combat."
-msgstr "螺旋綴じのレスリングに関するマニュアルです。安っぽい紙にコピー機で印刷されているようです。しかし、素手格闘に関する有用な知識が多数掲載されています。"
+msgstr "レスリングに関するリング綴じのマニュアルです。安っぽい紙にコピー機で印刷されているようですが、素手格闘に関する有用な知識が多数掲載されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Readable magazine"
@@ -26209,8 +26222,8 @@ msgstr "火の傍"
 #. ~ Description for nearby fire
 #. ~ Description for muscle
 #. ~ Description for a smoking device and a source of flame
-#. ~ Description for weapon
 #. ~ Description for seeing this is a bug
+#. ~ Description for weapon
 #: lang/json/GENERIC_from_json.py lang/json/GENERIC_from_json.py
 #: lang/json/TOOL_from_json.py lang/json/TOOL_from_json.py
 #: lang/json/skill_from_json.py
@@ -32594,7 +32607,7 @@ msgstr "Leadworks LLC製.223口径銃器に対応する樹脂製56発弾倉で�
 
 #: lang/json/MAGAZINE_from_json.py
 msgid "LW-32 magazine"
-msgstr "弾倉(.233mm/LW-32)"
+msgstr "弾倉(.223口径/LW-32)"
 
 #. ~ Description for LW-32 magazine
 #: lang/json/MAGAZINE_from_json.py
@@ -34191,6 +34204,15 @@ msgid "Doubles zombie health."
 msgstr "ゾンビのHPが2倍になります。"
 
 #: lang/json/MOD_INFO_from_json.py
+msgid "Urban Development"
+msgstr "追加 - 市街地"
+
+#. ~ Description for Urban Development
+#: lang/json/MOD_INFO_from_json.py
+msgid "Holder for suburban and urban buildings."
+msgstr "郊外や都市の建物を追加します。"
+
+#: lang/json/MOD_INFO_from_json.py
 msgid "Tall Buildings"
 msgstr "追加 - 高層ビル"
 
@@ -34653,7 +34675,7 @@ msgid ""
 "A domesticated descendant of junglefowl, it may still be the most numerous "
 "bird in the world.  Before the Cataclysm, it was raised by humans as a "
 "source of meat, eggs, and early morning wakeup calls."
-msgstr "飼い慣らされた養鶏で恐らく世界で最も数の多い鳥でしょう。大変動前は、人間に飼育されており、肉や卵、朝の目覚ましなどに利用していました。"
+msgstr "飼い慣らされたニワトリは恐らく世界で最も数の多い鳥でしょう。大変動前は人間に飼育されており、肉や卵、朝の目覚ましなどに利用されていました。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "chicken walker"
@@ -37702,7 +37724,7 @@ msgstr "エオラプトル"
 msgid ""
 "A bipedal dinosaur about the size of a chicken.  It roots around the "
 "undergrowth, scavenging on small animals and plants."
-msgstr "鶏ほどの大きさの二足歩行恐竜です。藪の中を漁ってまわり、小動物や植物を食べます。"
+msgstr "ニワトリほどの大きさの二足歩行恐竜です。藪の中を漁ってまわり、小動物や植物を食べます。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "Velociraptor"
@@ -40070,7 +40092,7 @@ msgid ""
 "person that can travel the length and breadth of the apocalypse, rough it, "
 "slum it, struggle against terrible odds, win through and still know where "
 "their towel is, is clearly a force to be reckoned with."
-msgstr "ふわふわの大きなタオルです。使う事で濡れた体を拭いて乾せます。このタオルがどのような経緯を辿って来たものなのかは定かではないですが、侮れない力を秘めている事だけは確かです。"
+msgstr "ふわふわの大きなタオルです。使う事で濡れた体を拭いて乾せます。大変動ヒッチハイカーにとってタオルとは、持ち歩いてこれほどとてつもなく役に立つものはほかにないというほどお役立ちなものです。"
 
 #. ~ Description for towel
 #: lang/json/TOOL_ARMOR_from_json.py
@@ -40613,7 +40635,7 @@ msgid ""
 "A simple leather cloak, richly decorated with scales of gold and several "
 "feathers.  It resembles the hide of a golden dragon or serpent.  Using it "
 "will heal minor injuries, in exchange for inflicting pain."
-msgstr "金の鱗や羽根などを使って絢爛に飾られた、ゆったりとした革のマントです。黄金の竜か海蛇の皮に似ています。使用することで苦痛と引き換えに軽い傷を治すことができます。イージスとは、元々は山羊の皮を使った防具全般を指す言葉でした。"
+msgstr "金の鱗や羽根などを使って絢爛に飾られた、ゆったりとした革のマントです。黄金の竜か海蛇の皮に似た外見をしています。使用することで苦痛と引き換えに軽い傷を治します。"
 
 #: lang/json/TOOL_ARMOR_from_json.py
 msgid "mask of insight"
@@ -40989,7 +41011,7 @@ msgstr "古代中国で使われた両刃の直剣です。鍔には優美な装
 msgid ""
 "This is an ancient Chinese doubled-edged straight sword.  The sword is quite"
 " worn, and bent at an odd angle."
-msgstr "美麗な飾り鍔を持つ、古代中国で使われた両刃の直剣です。刃は丹念に鍛えられており、つまんで曲げると180度近くまで簡単に曲がります。"
+msgstr "美麗な飾り鍔を持つ、古代中国で使われた両刃の直剣です。刃は摩耗しており、奇妙な角度に傾いています。"
 
 #. ~ Description for scimitar
 #: lang/json/TOOL_from_json.py
@@ -44463,7 +44485,7 @@ msgstr[0] "つるはし"
 msgid ""
 "This is a large steel pickaxe, suitable for breaking up hard things or (with"
 " enough skill) hard targets.  Strike the earth!"
-msgstr "鋼製の大きなつるはしです。硬い壁などの破壊に適しています(スキル次第では堅い敵も)。力一杯、大地に叩きつけろ！"
+msgstr "鋼製の大きなつるはしです。硬い壁などの破壊に適しています(スキル次第では堅い敵も)。大地を削れ！"
 
 #: lang/json/TOOL_from_json.py
 msgid "locksmith kit"
@@ -44867,7 +44889,7 @@ msgstr[0] "金庫"
 msgid ""
 "This is a secure combination lock box.  Sadly, you don't know the "
 "combination.  Breaking inside it would destroy anything of value."
-msgstr "ダイヤル式金庫です。残念な事に暗証番号を知らない。無理に開けようとすると中身まで壊してしまうかもしれない。"
+msgstr "ダイヤル式金庫です。残念な事に暗証番号は分かりません。無理に開けようとすると中身まで壊してしまう可能性があります。"
 
 #: lang/json/TOOL_from_json.py
 msgid "sarcophagus access code"
@@ -47214,7 +47236,7 @@ msgid ""
 "A hatchet with its axehead stained the dull color of dried blood, making it "
 "appear rusted despite being in usable condition.  Using it will channel "
 "blood essence into a nasty explosion."
-msgstr "乾いた血液で真っ黒に汚れた手斧です。鋭さは保たれていますが血のせいでぼろぼろに錆びているように見えます。血のエッセンスを糧として汚らわしい爆発を起こします。"
+msgstr "乾いた血液で真っ黒に汚れた手斧です。鋭さは保たれていますが血のせいでぼろぼろに錆びているように見えます。血のエッセンスを糧として荒々しい爆発を起こします。"
 
 #: lang/json/TOOL_from_json.py
 msgid "glowing veinreaver"
@@ -49098,7 +49120,11 @@ msgstr "修理を中断しますか？"
 
 #: lang/json/activity_type_from_json.py
 msgid "Stop modifying gun?"
-msgstr "改造を中断しますか？"
+msgstr "銃器の改造を中断しますか？"
+
+#: lang/json/activity_type_from_json.py
+msgid "Stop modifying tool?"
+msgstr "工具の改造を中断しますか？"
 
 #: lang/json/activity_type_from_json.py
 msgid "Stop interacting with the NPC?"
@@ -51924,7 +51950,7 @@ msgstr "ダメージ: 全身\n衣服や防具は燃えて消失する可能性�
 #. ~ Apply message for effect(s) 'On Fire'.
 #: lang/json/effects_from_json.py
 msgid "You're on fire!  Wait in place to attempt to put out the fire."
-msgstr "燃えています！無謀にもここに留まって消火を試みるなら、どうぞご自由に。"
+msgstr "燃えています！その場に留まることで消化を試みます。"
 
 #. ~ Male memorial apply log for effect(s) 'On Fire'.
 #: lang/json/effects_from_json.py
@@ -52374,6 +52400,7 @@ msgstr "感染症が治ってきています。"
 msgid "Spore dusted"
 msgstr "胞子まみれ(小)"
 
+#. ~ Speed name of effect(s) 'Spore dusted, Spore covered, Spore coated'.
 #: lang/json/effects_from_json.py
 msgid "Spore covered"
 msgstr "胞子まみれ(中)"
@@ -52389,6 +52416,10 @@ msgstr "小さな胞子が身体の中に沈み込んでいく感じがします
 #: lang/json/effects_from_json.py
 msgid "You feel sick inside."
 msgstr "気分が悪くなりました。"
+
+#: lang/json/effects_from_json.py
+msgid "Fungal infection"
+msgstr "真菌感染症"
 
 #: lang/json/effects_from_json.py
 msgctxt "memorial_male"
@@ -52499,6 +52530,7 @@ msgstr "低体温(軽)"
 msgid "Your %s is exposed to the cold."
 msgstr "%sが冷気に晒されています。"
 
+#. ~ Speed name of effect(s) 'Chilly, Cold, Freezing'.
 #: lang/json/effects_from_json.py lang/json/morale_type_from_json.py
 msgid "Cold"
 msgstr "低体温(中)"
@@ -52529,6 +52561,7 @@ msgstr "高体温(軽)"
 msgid "Your %s feels warm."
 msgstr "%sが熱気を帯びています。"
 
+#. ~ Speed name of effect(s) 'Warm, Hot, Scorching'.
 #: lang/json/effects_from_json.py lang/json/morale_type_from_json.py
 msgid "Hot"
 msgstr "高体温(中)"
@@ -52559,6 +52592,7 @@ msgstr "凍傷(軽)"
 msgid "Your %s is frostnipped and has gone numb."
 msgstr "%sが霜焼けになり、痺れてきました。"
 
+#. ~ Speed name of effect(s) 'Frostnip, Frostbite'.
 #: lang/json/effects_from_json.py
 msgid "Frostbite"
 msgstr "凍傷(重)"
@@ -63846,7 +63880,7 @@ msgid ""
 "use someone to position these around the region."
 msgstr "ありがとう、あとはこれをインストールするだけだ。少し時間はかかるが、各地区への導入も誰かに手伝ってもらうかな。"
 
-#: lang/json/mission_def_from_json.py src/mapgen_functions.cpp
+#: lang/json/mission_def_from_json.py
 msgid "Disable External Power"
 msgstr "外部電力を無効化する"
 
@@ -67329,6 +67363,16 @@ msgid "Your big teeth have grown in.  Folks had best show some more respect."
 msgstr "上の前歯が大きく発達しています。これを見た人々は多少なりとも敬意を表するよう最大限の力を尽くすでしょう。"
 
 #: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You bite into %s with your ratlike incisors"
+msgstr "ネズミの前歯で%sに噛みついて"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s bites %2$s with their ratlike incisors"
+msgstr "%1$sはネズミの前歯で%2$sに噛みついて"
+
+#: lang/json/mutation_from_json.py
 msgid "Nictitating Membrane"
 msgstr "瞬膜"
 
@@ -68050,6 +68094,16 @@ msgid ""
 msgstr "両足の親指に、巨大で、禍々しく弧を描く猛禽類の爪が発達しました。幸運にも移動の妨げにはならないようですが、残念ながら足に何も着用できません。"
 
 #: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You slash %s with a talon"
+msgstr "爪で%sを切り裂いて"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s slashes %2$s with a talon"
+msgstr "%1$sは爪で%2$sを切り裂いて"
+
+#: lang/json/mutation_from_json.py
 msgid "Hooves"
 msgstr "蹄"
 
@@ -68060,6 +68114,16 @@ msgid ""
 "more damage, provides natural armor, and removes the need to wear shoes; "
 "however, you can not wear shoes of any kind.  Reduces wet effects."
 msgstr "両足が蹄に変化しました。キックのダメージが増加し、天然の鎧として働き、靴を履く必要が無くなります；履ける靴なんてありませんけどね。水濡れの影響を軽減します。"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You kick %s with your hooves"
+msgstr "蹄で%sを蹴り飛ばして"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s kicks %2$s with their hooves"
+msgstr "%1$sは蹄で%2$sを蹴り飛ばして"
 
 #: lang/json/mutation_from_json.py
 msgid "Alcohol Metabolism"
@@ -68206,6 +68270,16 @@ msgid ""
 msgstr "牙が信じられないほど大きく鋭く成長しました。口にアイテムを着用できず、食べるのも困難になりますが、噛みつき攻撃によって敵にダメージを与えられます。"
 
 #: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You tear into %s with your saber teeth"
+msgstr "長い剣歯で%sを引き裂いて"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s tears into %2$s with their saber teeth"
+msgstr "%1$sは長い剣歯で%2$sを引き裂いて"
+
+#: lang/json/mutation_from_json.py
 msgid "Hyper-Metabolism"
 msgstr "超代謝"
 
@@ -68229,6 +68303,16 @@ msgid ""
 msgstr "頭に小さな角を持っています。攻撃時、稀に弱い貫通属性の頭突きを繰り出します。"
 
 #: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You headbutt %s with your horns"
+msgstr "角で%sを突いて"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s headbutts %2$s with their horns"
+msgstr "%1$sは角で%2$sを突いて"
+
+#: lang/json/mutation_from_json.py
 msgid "Curled Horns"
 msgstr "渦巻いた角"
 
@@ -68239,6 +68323,16 @@ msgid ""
 "to make a strong bashing headbutt attack, but prevent you from wearing any "
 "headwear."
 msgstr "牡羊のように大きく渦巻いた角を持っています。攻撃時、稀に強力な打撃属性の頭突きを繰り出しますが、頭にアイテムを着用できなくなります。"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You headbutt %s with your curled horns"
+msgstr "渦巻いた角で%sを突いて"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s headbutts %2$s with their curled horns"
+msgstr "%1$sは渦巻いた角で%2$sを突いて"
 
 #: lang/json/mutation_from_json.py
 msgid "Pointed Horns"
@@ -68253,6 +68347,16 @@ msgid ""
 msgstr "アンテロープのように長く鋭い角を持っています。攻撃時、稀に強力な貫通属性の頭突きを繰り出します。しかし、頭に布製以外のアイテムを着用することが出来なくなります。"
 
 #: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You stab %s with your pointed horns"
+msgstr "鋭い角で%sを突き刺して"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s stabs %2$s with their pointed horns"
+msgstr "%1$sは鋭い角で%2$sを突き刺して"
+
+#: lang/json/mutation_from_json.py
 msgid "Antlers"
 msgstr "枝角"
 
@@ -68263,6 +68367,16 @@ msgid ""
 "from hearing headwear that is not made of fabric, but provide a weak "
 "headbutt attack."
 msgstr "ヘラジカのように大きな枝角を持っています。攻撃時、稀に弱い頭突きを繰り出します。しかし、頭に布製以外のアイテムを着用することが出来なくなります。"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You butt %s with your antlers"
+msgstr "枝角で%sを突いて"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s butts %2$s with their antlers"
+msgstr "%1$sは枝角で%2$sを突いて"
 
 #: lang/json/mutation_from_json.py
 msgid "Antennae"
@@ -68355,6 +68469,16 @@ msgid ""
 msgstr "トカゲのような長くて太い尻尾が生えています。身体のバランスを多少は補助してくれますし、便利な鞭としても使えます。通常の脚用防具は着用できません。"
 
 #: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You whap %s with your tail"
+msgstr "尾で%sを強打して"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s whaps %2$s with their tail"
+msgstr "%1$sは尾で%2$sを強打して"
+
+#: lang/json/mutation_from_json.py
 msgid "Raptor Tail"
 msgstr "ラプトルの尻尾"
 
@@ -68391,6 +68515,16 @@ msgid ""
 msgstr "先端に禍々しい針が付いた、サソリのような長い尻尾が生えています。身体のバランスを向上させる効果はほとんどありませんが、力強い刺突攻撃を繰り出すことができます。通常の脚用防具は着用できません。"
 
 #: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You sting %s with your tail"
+msgstr "尾で%sを刺して"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s stings %2$s with their tail"
+msgstr "%1$sは尾で%2$sを刺して"
+
+#: lang/json/mutation_from_json.py
 msgid "Club Tail"
 msgstr "棍棒状の尻尾"
 
@@ -68401,6 +68535,16 @@ msgid ""
 "your balance at all, but allows for a powerful bashing attack.  Prevents "
 "wearing non-fabric pants."
 msgstr "先端に重厚な骨の棍棒が付いた長い尾が生えています。身体のバランスを向上させる効果はほとんどありませんが、力強い打撃を繰り出すことができます。通常の脚用防具は着用できません。"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You club %s with your tail"
+msgstr "尾で%sを殴打して"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s clubs %2$s with their tail"
+msgstr "%1$sは尾で%2$sを殴打して"
 
 #: lang/json/mutation_from_json.py
 msgid "Hibernation"
@@ -68626,6 +68770,16 @@ msgid ""
 msgstr "口の周りが変形し、昆虫のような鋭い大顎を持つ口器になっています。素早くものを食べることができ、必要に応じて武器を用いない斬撃を繰り出せますが、口に何も着用できません。水濡れの影響を多少軽減します。"
 
 #: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You bite %s with your fangs"
+msgstr "%sに牙を突き立てて"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s bites %2$s with their fangs"
+msgstr "%1$sは%2$sに牙を突き立てて"
+
+#: lang/json/mutation_from_json.py
 msgid "Folding Fangs"
 msgstr "伸縮自在の牙"
 
@@ -68746,6 +68900,10 @@ msgstr "ロープ糸"
 msgid ""
 "With spinnerets like THESE, who needs rope?!  Activate to produce rope."
 msgstr "糸の排出口がガバガバだ、誰かロープは要らないか！？ロープを生成する能力をもっています。"
+
+#: lang/json/mutation_from_json.py
+msgid "You spin a rope from your silk."
+msgstr "糸からロープを紡ぎました。"
 
 #: lang/json/mutation_from_json.py
 msgid "Whiskers"
@@ -69271,6 +69429,16 @@ msgid ""
 msgstr "顎と鼻が前方に伸びて狼のようになっています。咬み付き攻撃が可能で、強い外見的印象を与えます。口に何も着用できません。"
 
 #: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You nip at %s"
+msgstr "%sを噛んで"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s nips and harries %2$s"
+msgstr "%1$sは%2$sに強く噛みついて"
+
+#: lang/json/mutation_from_json.py
 msgid "Ursine Muzzle"
 msgstr "クマの鼻面"
 
@@ -69280,6 +69448,16 @@ msgid ""
 "Your jaw and nose have extended into a bearish muzzle.  You could bite with "
 "it, and it looks impressive, but it prevents you from wearing mouthgear."
 msgstr "顎と鼻が前方に伸びて熊のようになっています。咬み付き攻撃が可能で、強い外見的印象を与えます。口に何も着用できません。"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You bite %s"
+msgstr "%sに噛みついて"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s bites %2$s"
+msgstr "%1$sは%2$sに噛みついて"
 
 #: lang/json/mutation_from_json.py
 msgid "Ratlike Muzzle"
@@ -69303,6 +69481,16 @@ msgid ""
 " look NASTY-as do the bite wounds they can inflict-but prevent you from "
 "wearing mouthgear."
 msgstr "顎を含む顔全体が、鰐の頭部を短くしたような形になっています。目の前に人間を置けばたちまち咬み付いて大怪我を負わせそうな、いかにも凶悪な外見です。口に何も着用できません。"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You bite a chunk out of %s"
+msgstr "%sを噛みちぎって"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s bites a chunk out of %2$s"
+msgstr "%1$sは%2$sを噛みちぎって"
 
 #: lang/json/mutation_from_json.py
 msgid "Proboscis"
@@ -69571,6 +69759,16 @@ msgid ""
 msgstr "口に嘴が生えています。もしかしたら、つつかれて痛がる敵もいるかもしれません。口に何も着用できません。水濡れの影響を多少軽減します。"
 
 #: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You peck %s"
+msgstr "%sをつついて"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s pecks %2$s"
+msgstr "%1$sは%2$sをつついて"
+
+#: lang/json/mutation_from_json.py
 msgid "Woodpecker Beak"
 msgstr "嘴(キツツキ)"
 
@@ -69788,6 +69986,10 @@ msgid ""
 "You have full control of your vines, and can grow new ones and detach old "
 "ones more or less at will."
 msgstr "蔦の完全な制御を得ました。新しい蔦を生やすのも、古い蔦を切り離すのも、思いのままです。"
+
+#: lang/json/mutation_from_json.py
+msgid "You detach a vine from your body."
+msgstr "体から蔦を切り離しました。"
 
 #: lang/json/mutation_from_json.py
 msgid "Toe Roots"
@@ -70627,12 +70829,24 @@ msgid "No class"
 msgstr "無職"
 
 #: lang/json/npc_class_from_json.py
+msgid "I'm just wandering."
+msgstr "当て所もなく彷徨っているところさ。"
+
+#: lang/json/npc_class_from_json.py
 msgid "Debug Dude"
 msgstr "デバッガー"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm helping you test the game."
+msgstr "ゲームのデバッグを手伝います。"
 
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Merchant"
 msgstr "商人"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm a local shopkeeper."
+msgstr "私は地元の店主だよ。"
 
 #: lang/json/npc_class_from_json.py
 msgid "Shopkeep"
@@ -70642,41 +70856,85 @@ msgstr "店主"
 msgid "Hacker"
 msgstr "ハッカー"
 
+#: lang/json/npc_class_from_json.py
+msgid "I'm looking for some choice systems to hack."
+msgstr "ハッキング出来そうなシステムを探してるんだよ。"
+
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Doctor"
 msgstr "医者"
 
 #: lang/json/npc_class_from_json.py
+msgid "I'm looking for wounded to help."
+msgstr "負傷者を探しているんだ。助けが必要だろうからね。"
+
+#: lang/json/npc_class_from_json.py
 msgid "Trader"
 msgstr "貿易商"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm collecting gear and selling it."
+msgstr "衣服などを収集して売買しているんだ。"
 
 #: lang/json/npc_class_from_json.py src/faction.cpp
 msgid "Ninja"
 msgstr "忍者"
 
 #: lang/json/npc_class_from_json.py
+msgid "I'm a wandering master of martial arts."
+msgstr "武道を極めるために放浪しています。"
+
+#: lang/json/npc_class_from_json.py
 msgid "Cowboy"
 msgstr "カウボーイ"
+
+#: lang/json/npc_class_from_json.py
+msgid "Just looking for some wrongs to right."
+msgstr "正義の為に悪を探しているところさ。"
 
 #: lang/json/npc_class_from_json.py
 msgid "Scientist"
 msgstr "科学者"
 
 #: lang/json/npc_class_from_json.py
+msgid "I'm looking for clues concerning these monsters' origins..."
+msgstr "あの怪物共の起源は何なのか手掛かりを探しているんだ..."
+
+#: lang/json/npc_class_from_json.py
 msgid "Bounty Hunter"
 msgstr "賞金稼ぎ"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm a killer for hire."
+msgstr "金の為に人を殺す...殺し屋って奴さ。"
 
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Thug"
 msgstr "ちんぴら"
 
 #: lang/json/npc_class_from_json.py
+msgid "I'm just here for the paycheck."
+msgstr "ここには金の為に来たんだよ。"
+
+#: lang/json/npc_class_from_json.py
 msgid "Scavenger"
 msgstr "スカベンジャー"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm just trying to survive."
+msgstr "生き残ろうと必死に頑張ってるところさ。"
 
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Arsonist"
 msgstr "放火屋"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm just watching the world burn."
+msgstr "世界が負った傷跡がどんな物か見て回っているのさ。"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm tracking game."
+msgstr "足跡を追って狩りをしているんだ。"
 
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Soldier"
@@ -70686,9 +70944,17 @@ msgstr "兵士"
 msgid "Bartender"
 msgstr "バーテンダー"
 
+#: lang/json/npc_class_from_json.py
+msgid "I'm looking for new drink recipes."
+msgstr "新しい酒のレシピを考えてるところだよ。"
+
 #: lang/json/npc_class_from_json.py lang/json/npc_from_json.py
 msgid "Apis"
 msgstr "ｱﾋﾟｽ"
+
+#: lang/json/npc_class_from_json.py
+msgid "I'm bugged - I shouldn't talk to you."
+msgstr "昆虫です。会話できません。"
 
 #: lang/json/npc_from_json.py
 msgid "Representative"
@@ -72374,7 +72640,7 @@ msgid ""
 "Cocaine.  It is, indeed, a helluva drug.  You blew your money on some dust, "
 "and before you knew it you were turning tricks behind the local CVS just to "
 "score one more line."
-msgstr "コカイン、それは実にヤバい薬だ。その粉にかなりのお金を注ぎ込んできました。薬屋チェーンの裏顧客になる前の話ですが。コカイン依存症を患っています。"
+msgstr "コカイン、それは実にヤバい薬です。白い粉にかなりのお金を注ぎ込んでいる内に、いつの間にか地元の薬屋チェーン店裏で取引する程になってしまいました。コカイン依存症を患っています。"
 
 #: lang/json/professions_from_json.py
 msgctxt "profession_female"
@@ -72388,7 +72654,7 @@ msgid ""
 "Cocaine.  It is, indeed, a helluva drug.  You blew your money on some dust, "
 "and before you knew it you were turning tricks behind the local CVS just to "
 "score one more line."
-msgstr "コカイン、それは実にヤバい薬だ。その粉にかなりのお金を注ぎ込んできました。薬屋チェーンの裏顧客になる前の話ですが。コカイン依存症を患っています。"
+msgstr "コカイン、それは実にヤバい薬です。白い粉にかなりのお金を注ぎ込んでいる内に、いつの間にか地元の薬屋チェーン店裏で取引までする程になってしまいました。コカイン依存症を患っています。"
 
 #: lang/json/professions_from_json.py
 msgctxt "profession_male"
@@ -74625,7 +74891,7 @@ msgstr "人類が生き残るためには、どんな手を使ってでも直面
 #: lang/json/professions_from_json.py
 msgctxt "profession_male"
 msgid "Veteran Bandit"
-msgstr "熟練した盗賊"
+msgstr "熟練の盗賊"
 
 #. ~ Profession (male Veteran Bandit) description
 #: lang/json/professions_from_json.py
@@ -74640,7 +74906,7 @@ msgstr "都市が崩壊した後に、恐ろしい略奪の嵐が巻き起こり
 #: lang/json/professions_from_json.py
 msgctxt "profession_female"
 msgid "Veteran Bandit"
-msgstr "熟練した盗賊"
+msgstr "熟練の盗賊"
 
 #. ~ Profession (female Veteran Bandit) description
 #: lang/json/professions_from_json.py
@@ -77709,7 +77975,7 @@ msgstr "起きると喉に痛みを感じました。"
 
 #: lang/json/snippet_from_json.py
 msgid "You stretch, but your muscles don't seem to be doing so good today."
-msgstr "伸びをして、筋肉の不調に気付きました。今日はいつも通りの働きはできないかもしれません。"
+msgstr "ストレッチしてみましたが、筋肉の調子が普段より悪い気がします。"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -81249,7 +81515,7 @@ msgstr "断固断る"
 
 #: lang/json/snippet_from_json.py
 msgid "no way"
-msgstr "分からない"
+msgstr "絶対嫌だ"
 
 #: lang/json/snippet_from_json.py
 msgid "not a chance"
@@ -82639,7 +82905,7 @@ msgstr "ビッグブラザーはあなたを見ている..."
 
 #: lang/json/speech_from_json.py
 msgid "Die for me!"
-msgstr "死んでね！"
+msgstr "死んじゃえ！"
 
 #: lang/json/speech_from_json.py
 msgid "Why won't you die?"
@@ -88670,8 +88936,8 @@ msgid "wooden armor"
 msgstr "装甲(木)"
 
 #: lang/json/vehicle_part_from_json.py
-msgid "military composite armor"
-msgstr "装甲(軍用複合)"
+msgid "military composite armor plating"
+msgstr "装甲板(軍用複合)"
 
 #: lang/json/vehicle_part_from_json.py
 msgid "reinforced windshield"
@@ -90375,12 +90641,10 @@ msgid "Back"
 msgstr "戻る"
 
 #: src/action.cpp src/color.cpp src/crafting.cpp src/crafting.cpp
-#: src/debug_menu.cpp src/editmap.cpp src/game.cpp src/game.cpp
-#: src/iexamine.cpp src/iexamine.cpp src/inventory_ui.cpp src/iuse.cpp
-#: src/iuse.cpp src/iuse_actor.cpp src/iuse_actor.cpp
-#: src/mission_companion.cpp src/mission_companion.cpp
-#: src/mission_companion.cpp src/pickup.cpp src/player.cpp src/turret.cpp
-#: src/vehicle.cpp
+#: src/debug_menu.cpp src/editmap.cpp src/game.cpp src/game.cpp src/game.cpp
+#: src/iexamine.cpp src/iexamine.cpp src/iexamine.cpp src/inventory_ui.cpp
+#: src/iuse.cpp src/iuse.cpp src/iuse_actor.cpp src/mission_companion.cpp
+#: src/pickup.cpp src/player.cpp src/turret.cpp src/vehicle.cpp
 msgid "Cancel"
 msgstr "取消"
 
@@ -91514,6 +91778,10 @@ msgstr "移動先には%d個しか置けません！いくつ移動させます�
 #: src/advanced_inv.cpp
 msgid "The destination is already full!"
 msgstr "移動先にはこれ以上入りません！"
+
+#: src/animation.cpp
+msgid "Hang on a bit..."
+msgstr "少々お待ちください..."
 
 #: src/armor_layers.cpp
 msgid "This is worn next to the skin."
@@ -93395,6 +93663,11 @@ msgstr "拘束を解きました！"
 msgid "<npcname> breaks out of the grab!"
 msgstr "<npcname>は拘束を解きました！"
 
+#: src/character.cpp
+#, c-format
+msgid "You put the %s in your %s."
+msgstr "%sを%sに入れました。"
+
 #. ~ %1$s - list of unmet requirements, %2$s - item name.
 #: src/character.cpp
 #, c-format
@@ -93621,10 +93894,6 @@ msgstr "%sの色設定: "
 #: src/color.cpp
 msgid "custom colors"
 msgstr "色設定"
-
-#: src/color_loader.h
-msgid "base colors"
-msgstr "ベース色"
 
 #: src/computer.cpp
 #, c-format
@@ -95026,7 +95295,7 @@ msgstr[0] "%s(%d)が必要です。"
 
 #: src/crafting.cpp src/game.cpp src/game.cpp src/iexamine.cpp src/iuse.cpp
 #: src/iuse_actor.cpp src/npctalk.cpp src/npctalk.cpp src/pickup.cpp
-#: src/player.cpp src/player.cpp src/veh_interact.cpp
+#: src/player.cpp src/player.cpp src/player.cpp src/veh_interact.cpp
 msgid "Never mind."
 msgstr "何でもない。"
 
@@ -98852,6 +99121,10 @@ msgid "World retained. Characters remaining:%s"
 msgstr "世界が保存されました。残っているキャラクター:%s"
 
 #: src/game.cpp
+msgid "Wait till you wake up..."
+msgstr "睡眠中..."
+
+#: src/game.cpp
 msgid "Your heart races as you recall your most recent hunt."
 msgstr "鼓動が速まり、最後にした狩りの様子を思い出しました。"
 
@@ -100783,12 +101056,25 @@ msgid "You have nothing to wield."
 msgstr "装備するアイテムを持っていません。"
 
 #: src/game.cpp
-msgid "Who do you want to talk to?"
+msgid "Who do you want to talk to or yell at?"
 msgstr "誰と話しますか？"
 
 #: src/game.cpp
 msgid "Yell"
 msgstr "叫ぶ"
+
+#: src/game.cpp
+msgid "Yell a sentence"
+msgstr "言葉を叫ぶ"
+
+#: src/game.cpp
+msgid "Enter a sentence to yell"
+msgstr "叫ぶ言葉"
+
+#: src/game.cpp
+#, c-format
+msgid "You yell %s"
+msgstr "「%s」と叫びました。"
 
 #: src/game.cpp
 msgid "You can't drive the vehicle from here. You need controls!"
@@ -101743,7 +102029,7 @@ msgstr "完全に充電されています"
 
 #: src/game_inventory.cpp
 msgid "Consume item"
-msgstr "摂取するアイテムを選択"
+msgstr "消費するアイテムを選択"
 
 #: src/game_inventory.cpp
 msgid "You have nothing to consume."
@@ -104053,7 +104339,7 @@ msgstr "カーテンから覗く"
 
 #: src/iexamine.cpp
 msgid "Tear down the curtains."
-msgstr "カーテンを取り壊す"
+msgstr "カーテンを分解する"
 
 #: src/iexamine.cpp
 msgid "You carefully peek through the curtains."
@@ -104564,7 +104850,7 @@ msgstr "* 精密検査によると、これには<neutral>幻覚発現性</neutr
 msgid ""
 "* This food is <neutral>perishable</neutral>, and takes <info>%s</info> to "
 "rot from full freshness, at room temperature."
-msgstr "* この食べ物は<neutral>腐敗しやすい</neutral>性質があり、完全に新鮮な状態から室温で<info>%s</info>経過すると腐敗します。"
+msgstr "* この食べ物は<neutral>腐敗する</neutral>性質があり、完全に新鮮な状態から室温で<info>%s</info>経過すると腐敗します。"
 
 #: src/item.cpp
 msgid ""
@@ -104612,7 +104898,7 @@ msgstr "弾薬: "
 
 #: src/item.cpp
 msgid "<bold>Damage</bold>: "
-msgstr "<bold>ダメージ</bold>: "
+msgstr "<bold>威力</bold>: "
 
 #: src/item.cpp
 msgid "Armor-pierce: "
@@ -108065,11 +108351,9 @@ msgstr "MODを取り付ける工具を選択"
 msgid "You don't have compatible tools."
 msgstr "適合するツールを持っていません。"
 
-#. ~ $1 - toolmod, $2 - base item
 #: src/iuse.cpp
-#, c-format
-msgid "You attach the %1$s to the %2$s"
-msgstr "%1$sを%2$sに取り付けました。"
+msgid "You cancel unloading the tool."
+msgstr "工具の抜き取りを中断しました。"
 
 #: src/iuse.cpp
 msgid "You can't see to repair!"
@@ -111402,18 +111686,6 @@ msgid "Funeral Toll"
 msgstr "葬儀の鐘を鳴らす"
 
 #: src/mapgen_functions.cpp
-msgid "Evac shelter computer"
-msgstr "EVACシェルターのコンピュータ"
-
-#: src/mapgen_functions.cpp
-msgid "Emergency Message"
-msgstr "緊急メッセージ"
-
-#: src/mapgen_functions.cpp
-msgid "Contact Us"
-msgstr "お問い合わせ"
-
-#: src/mapgen_functions.cpp
 msgid "PolCom OS v1.47"
 msgstr "PolCom OS v1.47"
 
@@ -112111,7 +112383,7 @@ msgid ""
 "Time: 1 hour minimum\n"
 " \n"
 "Assigning one of your allies to menial labor is a safe way to teach them basic skills and build reputation with the outpost.  Don't expect much of a reward though."
-msgstr "利益：1時間につき$8\n危険：最小\n時間：1時間～\n\n仲間を単純作業労働に割り当てます。基礎的なスキルを安全に身に付けさせ、拠点における評判を築きます。"
+msgstr "利益：$8/1時間\n危険：最小\n時間：1時間～\n\n仲間を単純作業労働に割り当てます。基礎的なスキルを安全に身に付けさせ、拠点における評判を築きます。"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112120,7 +112392,7 @@ msgid ""
 "Time: 1 hour minimum\n"
 " \n"
 "Labor Roster:\n"
-msgstr "利益：1時間につき$8\n危険：最小\n時間：1時間～\n\n単純労働者名簿：\n"
+msgstr "利益：$8/1時間\n危険：最小\n時間：1時間～\n\n単純労働者名簿：\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112129,7 +112401,7 @@ msgid ""
 "Time: 1 hour minimum\n"
 " \n"
 "Carpentry work requires more skill than menial labor while offering modestly improved pay.  It is unlikely that your companions will face combat but there are hazards working on makeshift buildings."
-msgstr "利益：1時間につき$12\n危険：最小\n時間：1時間～\n\n単純労働よりは高いスキルを要求され、やや給料の良い大工仕事です。戦闘に参加するようなことはありませんが間に合わせの建物に登って仕事をする以上、事故が起こることもあります。"
+msgstr "利益：$12/1時間\n危険：最小\n時間：1時間～\n\n単純労働よりは高いスキルを要求され、やや給料の良い大工仕事です。戦闘に参加するようなことはありませんが間に合わせの建物に登って仕事をする以上、事故が起こることもあります。"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112138,7 +112410,7 @@ msgid ""
 "Time: 1 hour minimum\n"
 " \n"
 "Labor Roster:\n"
-msgstr "利益：1時間につき$12\n危険：最小\n時間：1時間～\n\n建設労働者名簿：\n"
+msgstr "利益：$12/1時間\n危険：最小\n時間：1時間～\n\n建設労働者名簿：\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112219,7 +112491,7 @@ msgid ""
 "Time: 4 hour minimum\n"
 " \n"
 "Foraging for food involves dispatching a companion to search the surrounding wilderness for wild edibles.  Combat will be avoided but encounters with wild animals are to be expected.  The low pay is supplemented with the odd item as a reward for particularly large hauls."
-msgstr "利益：1時間あたり$10\n危険：低い\n時間：4時間～\n\n周辺の森や原野に食料調達部隊として派遣します。戦闘は可能な限り避けますが、野生動物と不意に遭遇することはあるでしょう。利益は少額ですが、大物を仕留められた場合その報酬としてアイテムを持ち帰ることがあります。"
+msgstr "利益：$10/1時間\n危険：低い\n時間：4時間～\n\n周辺の森や原野に食料調達部隊として派遣します。戦闘は可能な限り避けますが、野生動物と不意に遭遇することはあるでしょう。利益は少額ですが、大物を仕留められた場合その報酬としてアイテムを持ち帰ることがあります。"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112228,7 +112500,7 @@ msgid ""
 "Time: 4 hour minimum\n"
 " \n"
 "Labor Roster:\n"
-msgstr "利益：1時間あたり$10\n危険：低い\n時間：4時間～\n\n食料調達部隊名簿：\n"
+msgstr "利益：$10/1時間\n危険：低い\n時間：4時間～\n\n食料調達部隊名簿：\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112239,7 +112511,7 @@ msgid ""
 "Adding companions to the caravan team increases the likelihood of success.  By nature, caravans are extremely tempting targets for raiders or hostile groups so only a strong party is recommended.  The rewards are significant for those participating but are even more important for the factions that profit.\n"
 " \n"
 "The commune is sending food to the Free Merchants in the Refugee Center as part of a tax and in exchange for skilled labor."
-msgstr "利益：1時間あたり$18\n危険：高い\n時間：不明\n\n交易の成功率を高めるため、隊商に参加させます。当然のことながら我々の隊商は敵対する略奪集団にとって格好の獲物であり、命と荷を守るための強力な部隊編成が求められます。仲間を派遣することで相応の利益が出ますが、それによって得られる信頼と評価も重要なものです。\n\n我が共同体は税の一部として難民センターの自由商人に食料を送っています。それと引き換えに有能な労働者が派遣されるのです。"
+msgstr "利益：$18/1時間\n危険：高い\n時間：不明\n\n交易の成功率を高めるため、隊商に参加させます。当然のことながら我々の隊商は敵対する略奪集団にとって格好の獲物であり、命と荷を守るための強力な部隊編成が求められます。仲間を派遣することで相応の利益が出ますが、それによって得られる信頼と評価も重要なものです。\n\n我が共同体は税の一部として難民センターの自由商人に食料を送っています。それと引き換えに有能な労働者が派遣されるのです。"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -112249,7 +112521,7 @@ msgid ""
 " \n"
 " \n"
 "Roster:\n"
-msgstr "利益：1時間あたり$18\n危険：高い\n時間：不明\n\n隊商護衛名簿：\n"
+msgstr "利益：$18/1時間\n危険：高い\n時間：不明\n\n隊商護衛者名簿：\n"
 
 #: src/mission_companion.cpp
 msgid " [READY] \n"
@@ -112447,8 +112719,8 @@ msgstr "%s が多少の経験値を獲得して巡回任務から帰還した。
 #: src/mission_companion.cpp
 #, c-format
 msgid ""
-"%s was impressed with %s's performance and gave you a small bonus ($100)"
-msgstr "%s は %s の働きを高く評価してあなたに追加報酬を与えた。($100)"
+"%s was impressed with %s's performance and gave you a small bonus ( $100 )"
+msgstr "%s は %s の働きを高く評価して$100の追加報酬を与えました。"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -112667,13 +112939,13 @@ msgstr "%sから採血キットを受け取りました。"
 
 #: src/mission_start.cpp
 #, c-format
-msgid "%s marks as well the road that leads to it..."
-msgstr "%sが目的地への道順を示してくれました..."
+msgid "%s also marks the road that leads to it..."
+msgstr "%sが目的地への経路を示してくれました..."
 
 #: src/mission_start.cpp
 #, c-format
-msgid "%s have marked the only %s known to them on your map."
-msgstr "%sは知っている%sを地図に書きこみました。"
+msgid "%s has marked the only %s known to them on your map."
+msgstr "%sは%sの場所を地図に印しました。"
 
 #: src/mission_start.cpp
 msgid "You don't know where the address could be..."
@@ -114478,11 +114750,6 @@ msgstr "<stat>%s</stat>"
 
 #: src/monster.cpp
 #, c-format
-msgid "<dark>%s</dark>"
-msgstr "<dark>%s</dark>"
-
-#: src/monster.cpp
-#, c-format
 msgid "It is %s in size."
 msgstr "%s"
 
@@ -114552,7 +114819,7 @@ msgstr "登攀"
 #: src/monster.cpp
 #, c-format
 msgid "<bad>In fight it can %s.</bad>"
-msgstr "<bad>%s攻撃可能</bad>"
+msgstr "<bad>%s攻撃能力をもつ</bad>"
 
 #: src/monster.cpp
 msgid "poison"
@@ -114568,7 +114835,7 @@ msgstr "出血"
 
 #: src/monster.cpp
 msgid "It has head."
-msgstr "頭部をもつ"
+msgstr "頭部がある"
 
 #: src/monster.cpp
 #, c-format
@@ -114785,10 +115052,6 @@ msgid "You start spinning web with your spinnerets!"
 msgstr "糸穴から糸を出して網を紡ぎ始めました！"
 
 #: src/mutation.cpp
-msgid "You spin a rope from your silk."
-msgstr "糸からロープを紡ぎました。"
-
-#: src/mutation.cpp
 msgid "Burrow where?"
 msgstr "どこに穴を掘りますか？"
 
@@ -114832,14 +115095,6 @@ msgstr "こいよ、でっかい私、行こう！"
 #: src/mutation.cpp
 msgid "we're a team, we've got this!"
 msgstr "我々はチームだ！やるぞーっ！"
-
-#: src/mutation.cpp
-msgid "You detach a vine but don't have room to carry it, so you drop it."
-msgstr "蔦を外しました。しかし持つ余裕がないので、その場に置きました。"
-
-#: src/mutation.cpp
-msgid "Your freshly-detached vine is too heavy to carry, so you drop it."
-msgstr "新鮮な蔦を外しました。しかし重すぎて運べないので、その場に置きました。"
 
 #: src/mutation.cpp
 msgid "MUTATIONS -"
@@ -118355,12 +118610,29 @@ msgid "Select a follower"
 msgstr "同行者を選択"
 
 #: src/options.cpp
+msgid "Switch between the Cup ( c ), Liter ( L ) or Quart ( qt )."
+msgstr "体積(c[カップ]・L[リットル]・qt[クォート])の表示を設定します。"
+
+#: src/options.cpp
 msgid "Open default advanced inventory layout"
 msgstr "アイテム整理メニュー/デフォルト配置"
 
 #: src/options.cpp
 msgid "Open default advanced inventory layout instead of last opened layout"
 msgstr "最後に開いた配置ではなく、登録したデフォルト配置でアイテム整理メニューを開きます。"
+
+#: src/options.cpp
+msgid ""
+"If true, actions ( like \"Read\", \"Smoke\", \"Wrap tighter\" ) will be "
+"displayed next to the corresponding items."
+msgstr "trueにすると対応するアイテムの横に行動(例:読む、喫煙する、しっかり結ぶ)を表示します。"
+
+#: src/options.cpp
+msgid ""
+"If true, when controlling a vehicle, a white 'X' ( in curses version ) or a "
+"crosshair ( in tiles version ) at distance 10 from the center will display "
+"its current facing."
+msgstr "trueにすると運転中は前方(中心点から10マス先)に目印が表示されます。\n・カーソルモード時、白色で'X'を表示します。\n・タイルモード時、十字線を表示します。"
 
 #: src/options.cpp
 msgid "Message log flow"
@@ -118387,12 +118659,15 @@ msgid ""
 msgstr "ソフトウェアレンダリングを使用する場合、フレームバッファにハードウェアアクセラレーションを使用します。再起動が必要です。"
 
 #: src/options.cpp
-msgid "Multi-pool only"
-msgstr "ポイント分離のみ"
+msgid ""
+"Sets the scaling mode, 'none' ( default ) displays at the game's native "
+"resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
+"provides high-quality scaling."
+msgstr "拡大縮小モードを設定します。'無効' (初期設定) でゲームのネイティブ解像度で表示、'最近傍法' で低品質かつ高速な拡大縮小表示、'リニアフィルタ' で高品質な拡大縮小表示になります。"
 
 #: src/options.cpp
-msgid "No freeform"
-msgstr "フリー禁止"
+msgid "( WIP feature ) Determines terrain, shops, plants, and more."
+msgstr "地形や店、植物などを設定します(開発途上の機能)。"
 
 #: src/options.cpp
 msgid "Character point pools"
@@ -118401,6 +118676,18 @@ msgstr "ポイント割り振り"
 #: src/options.cpp
 msgid "Allowed point pools for character generation."
 msgstr "キャラクター作成時のポイント割り振りを設定します。"
+
+#: src/options.cpp
+msgid "Multi-pool only"
+msgstr "ポイント分離のみ"
+
+#: src/options.cpp
+msgid "No freeform"
+msgstr "フリー禁止"
+
+#: src/options.cpp
+msgid "Disables tracking food, thirst and ( partially ) fatigue for NPCs."
+msgstr "NPCの飲食に関する欲求と(一部の)疲労を無効化します。"
 
 #: src/output.cpp
 msgid "Press any key for more..."
@@ -121365,52 +121652,52 @@ msgid "Your shivering makes you unsteady."
 msgstr "寒さで不規則にぶるぶると震えています。"
 
 #: src/player_hardcoded_effects.cpp
-msgid "Your left arm trembles from the cold."
-msgstr "左腕が寒さで震えています。"
-
-#: src/player_hardcoded_effects.cpp
 msgid "Your left arm is shivering."
 msgstr "左腕がぶるぶると震えています。"
 
 #: src/player_hardcoded_effects.cpp
-msgid "Your right arm trembles from the cold."
-msgstr "右腕が寒さで震えています。"
+msgid "Your left arm trembles from the cold."
+msgstr "左腕が寒さで震えています。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "Your right arm is shivering."
 msgstr "右腕がぶるぶると震えています。"
 
 #: src/player_hardcoded_effects.cpp
-msgid "Your left hand quivers in the cold."
-msgstr "左手が寒さで小刻みに震えています。"
+msgid "Your right arm trembles from the cold."
+msgstr "右腕が寒さで震えています。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "Your left hand feels like ice."
 msgstr "左手が凍り付いたように感じます。"
 
 #: src/player_hardcoded_effects.cpp
-msgid "Your right hand trembles in the cold."
-msgstr "右手が寒さで小刻みに震えています。"
+msgid "Your left hand quivers in the cold."
+msgstr "左手が寒さで小刻みに震えています。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "Your right hand feels like ice."
 msgstr "右手が凍り付いたように感じます。"
 
 #: src/player_hardcoded_effects.cpp
-msgid "Your legs uncontrollably shake from the cold."
-msgstr "脚が寒さで抑え切れずに震えています。"
+msgid "Your right hand quivers in the cold."
+msgstr "右手が寒さで小刻みに震えています。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "Your left leg trembles against the relentless cold."
 msgstr "左脚が厳しい寒さで意思に反して震えています。"
 
 #: src/player_hardcoded_effects.cpp
-msgid "Your legs unsteadily shiver against the cold."
-msgstr "脚が寒さで意思に反して不規則に震えています。"
+msgid "Your legs uncontrollably shake from the cold."
+msgstr "脚が寒さで抑え切れずに震えています。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "Your right leg trembles against the relentless cold."
 msgstr "右脚が厳しい寒さで意思に反して震えています。"
+
+#: src/player_hardcoded_effects.cpp
+msgid "Your left foot feels frigid."
+msgstr "左足が厳しい寒さを感じています。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "Your left foot is as nimble as a block of ice."
@@ -121421,8 +121708,8 @@ msgid "Your freezing left foot messes up your balance."
 msgstr "左足が凍り付く程の寒さで上手くバランスを保てなくなっています。"
 
 #: src/player_hardcoded_effects.cpp
-msgid "Your left foot feels frigid."
-msgstr "左足が厳しい寒さを感じています。"
+msgid "Your right foot feels frigid."
+msgstr "右足が厳しい寒さを感じています。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "Your right foot is as nimble as a block of ice."
@@ -121433,16 +121720,8 @@ msgid "Your freezing right foot messes up your balance."
 msgstr "右足が凍り付く程の寒さで上手くバランスを保てなくなっています。"
 
 #: src/player_hardcoded_effects.cpp
-msgid "Your right foot feels frigid."
-msgstr "右足が厳しい寒さを感じています。"
-
-#: src/player_hardcoded_effects.cpp
 msgid "Your head is pounding from the heat."
 msgstr "熱で頭がガンガンします。"
-
-#: src/player_hardcoded_effects.cpp
-msgid "The heat is making you see things."
-msgstr "熱で幻覚が見えています。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "You are sweating profusely."
@@ -121471,6 +121750,10 @@ msgstr "左足が暑さで腫れあがっています。"
 #: src/player_hardcoded_effects.cpp
 msgid "Your right foot is swelling in the heat."
 msgstr "右足が暑さで腫れあがっています。"
+
+#: src/player_hardcoded_effects.cpp
+msgid "The heat is making you see things."
+msgstr "熱で幻覚が見えています。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "You have trouble grasping with your numb fingers."
