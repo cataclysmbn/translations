@@ -68,8 +68,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cataclysm-DDA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-20 18:01+0800\n"
-"PO-Revision-Date: 2017-10-25 18:32+0000\n"
+"POT-Creation-Date: 2017-10-27 19:31+0800\n"
+"PO-Revision-Date: 2017-10-29 02:56+0000\n"
 "Last-Translator: Антон Бурмистров <22.valiant@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -1068,8 +1068,10 @@ msgid ""
 "lead to VERY slow generation!"
 msgstr "Максимальное число попыток повторной генерации глобальной карты при невозможности разместить на ней обязательные особые локации. Высокие значения и странные настройки мира приведут к ОЧЕНЬ медленной генерации."
 
+#. ~ Mutation class name
 #. ~ allow invalid (bugged, bad) maps without asking user
-#: lang/extra/android/options.cpp src/creature.cpp src/options.cpp
+#: lang/extra/android/options.cpp lang/json/mutation_category_from_json.py
+#: src/creature.cpp src/options.cpp
 msgid "Any"
 msgstr "Любые"
 
@@ -1118,7 +1120,7 @@ msgstr "Удалять мир после смерти последнего пе�
 msgid "Size of cities"
 msgstr "Размер городов"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid ""
 "A number determining how large cities are.  0 disables cities and roads."
 msgstr "Число определяет, насколько большими будут города. 0 убирает города и дороги."
@@ -70323,6 +70325,31 @@ msgstr "Стошнило"
 msgid "Filthy Gear"
 msgstr "Грязная одежда"
 
+#. ~ Mutation class: Any mutagen_message
+#: lang/json/mutation_category_from_json.py
+msgid "mutagen message here"
+msgstr ""
+
+#. ~ Mutation class: Any iv_message
+#: lang/json/mutation_category_from_json.py
+msgid "You inject yoursel-arRGH!"
+msgstr "Вы делаете себе инъекцию-арРГХ!"
+
+#. ~ Mutation class: Any iv_sleep_message
+#: lang/json/mutation_category_from_json.py
+msgid "You writhe and collapse to the ground."
+msgstr "Вы корчитесь и валитесь на землю."
+
+#. ~ Mutation class: Any iv_sound_message
+#: lang/json/mutation_category_from_json.py
+msgid "You scream in agony!!"
+msgstr "Вы кричите в агонии!!"
+
+#. ~ Mutation class: Any junkie_message
+#: lang/json/mutation_category_from_json.py src/iuse.cpp
+msgid "You quiver with anticipation..."
+msgstr "Вы дрожите от нетерпения…"
+
 #. ~ Mutation class name
 #: lang/json/mutation_category_from_json.py lang/json/mutation_from_json.py
 msgid "Plant"
@@ -75943,6 +75970,18 @@ msgid "open air"
 msgstr "открытое место"
 
 #: lang/json/overmap_terrain_from_json.py
+msgid "city building"
+msgstr "городское здание"
+
+#: lang/json/overmap_terrain_from_json.py
+msgid "mansion"
+msgstr "поместье"
+
+#: lang/json/overmap_terrain_from_json.py
+msgid "mall"
+msgstr "торговый центр"
+
+#: lang/json/overmap_terrain_from_json.py
 msgid "crater"
 msgstr "воронка"
 
@@ -76215,10 +76254,6 @@ msgid "razorclaw nest"
 msgstr "гнездо бритвокогтей"
 
 #: lang/json/overmap_terrain_from_json.py
-msgid "mansion"
-msgstr "поместье"
-
-#: lang/json/overmap_terrain_from_json.py
 msgid "fema camp"
 msgstr "лагерь МЧС"
 
@@ -76381,10 +76416,6 @@ msgstr "ТЦ — подсобка"
 #: lang/json/overmap_terrain_from_json.py
 msgid "lot"
 msgstr "парковка"
-
-#: lang/json/overmap_terrain_from_json.py
-msgid "mall"
-msgstr "торговый центр"
 
 #: lang/json/overmap_terrain_from_json.py
 msgid "mall - entrance"
@@ -84996,7 +85027,7 @@ msgstr ""
 
 #: lang/json/snippet_from_json.py
 msgid "\"FUCK FAUX-MUTANTS, BEING 'EXTREMELY THIRSTY' DOES NOT COUNT\""
-msgstr ""
+msgstr "\"В ЖОПУ НЕДОМУТАНТОВ, ИСПЫТЫВАТЬ 'НЕРЕАЛЬНУЮ ЖАЖДУ' - НЕ СЧИТАЕТСЯ\""
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -95298,7 +95329,7 @@ msgstr "Вы убираете несколько вещей в %2$s (%1$s)."
 #: src/activity_item_handling.cpp
 #, c-format
 msgid "<npcname> puts several items in the %1$s's %2$s."
-msgstr ""
+msgstr "<npcname> убирает несколько вещей в %2$s (%1$s)."
 
 #: src/activity_item_handling.cpp
 #, c-format
@@ -95328,10 +95359,10 @@ msgstr[3] "Вы выкладываете %1$s на %2$s."
 #, c-format
 msgid "<npcname> drops their %1$s on the %2$s."
 msgid_plural "<npcname> drops their %1$s on the %2$s."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "<npcname> бросает предмет (%1$s) в %2$s."
+msgstr[1] "<npcname> бросает предметы (%1$s) в %2$s."
+msgstr[2] "<npcname> бросает предметы (%1$s) в %2$s."
+msgstr[3] "<npcname> бросает предмет (%1$s) в %2$s."
 
 #: src/activity_item_handling.cpp
 #, c-format
@@ -99379,7 +99410,7 @@ msgstr " (поблизости)"
 
 #: src/craft_command.cpp
 msgid " (person & nearby)"
-msgstr ""
+msgstr "(на персонаже и на полу)"
 
 #: src/craft_command.cpp
 msgid "Some components used previously are missing. Continue?"
@@ -100616,7 +100647,7 @@ msgstr "Вы не можете увидеть, какая здесь местн�
 msgid ""
 "\n"
 "Sign: %s"
-msgstr ""
+msgstr "\nЗнак: %s"
 
 #: src/descriptions.cpp src/iexamine.cpp
 #, c-format
@@ -103950,10 +103981,10 @@ msgstr "Ход: %d; След. зарождение: %d.\n%s\n"
 #, c-format
 msgid "%d creature exists.\n"
 msgid_plural "%d creatures exist.\n"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "%d существо присутствует.\n"
+msgstr[1] "%d существа присутствует.\n"
+msgstr[2] "%d существ присутствует.\n"
+msgstr[3] "%d существо присутствует.\n"
 
 #: src/game.cpp
 #, c-format
@@ -104584,7 +104615,7 @@ msgstr ""
 #: src/game.cpp
 #, c-format
 msgid "You mount the %1$s on your %2$s, ready to store gear."
-msgstr ""
+msgstr "Вы прикрепили предмет (%1$s) на %2$s."
 
 #: src/game.cpp
 #, c-format
@@ -105192,7 +105223,7 @@ msgstr "Вы едите траву."
 #: src/game.cpp
 #, c-format
 msgid "You leave the empty %s."
-msgstr "Вы оставляете пустой %s."
+msgstr "Вы оставляете пустой предмет (%s)."
 
 #: src/game.cpp
 msgid "Change side for item"
@@ -105362,7 +105393,7 @@ msgstr " или %s, чтобы внести монстра в белый спи�
 #, c-format
 msgid ""
 "Spotted %s--safe mode is on! (%s to turn it off, %s to ignore monster%s)"
-msgstr "Замечен %s - безопасный режим включен! Чтобы отключить, нажмите %s. Нажмите%s, чтобы проигнорировать монстра %s."
+msgstr "Замечен %s - безопасный режим включен! Чтобы отключить, нажмите %s. Нажмите %s, чтобы проигнорировать монстра %s."
 
 #: src/game.cpp
 #, c-format
@@ -108987,6 +109018,10 @@ msgid "Mutations"
 msgstr "Мутации"
 
 #: src/init.cpp
+msgid "Mutation Categories"
+msgstr "Категории мутаций"
+
+#: src/init.cpp
 msgid "Overmap locations"
 msgstr "Локации глобальной карты"
 
@@ -110824,39 +110859,20 @@ msgstr "Как ни странно, это неплохое на вкус."
 msgid "You chew your %s."
 msgstr "Вы пожевали %s."
 
+#. ~"Uh-uh" is a sound used for "nope", "no", etc.
 #: src/iuse.cpp
-#, c-format
-msgid "The %s sears your insides white-hot, and you collapse to the ground!"
-msgstr "%s опаляет ваши внутренности, и вы валитесь на землю!"
-
-#: src/iuse.cpp
-msgid "<npcname> writhes in agony and collapses to the ground!"
-msgstr "<npcname> корчится в агонии и валится на землю!"
-
-#: src/iuse.cpp
-#, c-format
 msgid ""
-"That was some toxic %s!  Let's stick with Marloss next time, that's safe."
-msgstr "Этот предмет (%s) оказался ядовитым! Лучше продолжать употреблять марло, так безопаснее."
-
-#: src/iuse.cpp
-msgctxt "memorial_male"
-msgid "Suffered a toxic marloss/mutagen reaction."
-msgstr "Испытал отравление марло/мутагеном."
-
-#: src/iuse.cpp
-msgctxt "memorial_female"
-msgid "Suffered a toxic marloss/mutagen reaction."
-msgstr "Испытала отравление марло/мутагеном."
+"After what happened that last time?  uh-uh.  You're not drinking that "
+"chemical stuff."
+msgstr "После того, что произошло в прошлый раз? Неа. Вы отказываетесь пить эту химическую штуку."
 
 #: src/iuse.cpp
 msgid "This is a contaminant.  We reject it from the Mycus."
 msgstr "Это - загрязнитель. Мы отвергаем его от Микус."
 
 #: src/iuse.cpp
-#, c-format
-msgid "We empty the %s and reflexively dispense spores onto the mess."
-msgstr "Мы опустошаем %s и рефлексивно выбрасываем споры в эту грязь."
+msgid "We decontaminate it with spores."
+msgstr "Мы выпустили споры для обеззараживания."
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
@@ -110872,11 +110888,14 @@ msgstr "Уничтожила опасного захватчика."
 msgid "We must eliminate this contaminant at the earliest opportunity."
 msgstr "Мы должны уничтожить этот загрязнитель как можно скорее."
 
-#. ~ Recall that Marloss mutations made you feel warmth spreading throughout
-#. your body.  That's gone.
 #: src/iuse.cpp
-msgid "You feel a cold burn inside, as though everything warm has left you."
-msgstr "Вы чувствуете внутри холодный ожог, как будто вас покинуло всё тепло."
+#, c-format
+msgid "The %s sears your insides white-hot, and you collapse to the ground!"
+msgstr "%s опаляет ваши внутренности, и вы валитесь на землю!"
+
+#: src/iuse.cpp
+msgid "<npcname> writhes in agony and collapses to the ground!"
+msgstr "<npcname> корчится в агонии и валится на землю!"
 
 #: src/iuse.cpp
 msgid ""
@@ -110898,17 +110917,21 @@ msgctxt "memorial_female"
 msgid "Burned out a particularly nasty fungal infestation."
 msgstr "Перенесла особенно неприятное грибковое заражение."
 
-#. ~"Uh-uh" is a sound used for "nope", "no", etc.
 #: src/iuse.cpp
+#, c-format
 msgid ""
-"After what happened that last time?  uh-uh.  You're not drinking that "
-"chemical stuff."
-msgstr "После того, что произошло в прошлый раз? Неа. Вы отказываетесь пить эту химическую штуку."
+"That was some toxic %s!  Let's stick with Marloss next time, that's safe."
+msgstr "Этот предмет (%s) оказался ядовитым! Лучше продолжать употреблять марло, так безопаснее."
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
-msgid "Consumed mutagen."
-msgstr "Употребил мутаген."
+msgid "Suffered a toxic marloss/mutagen reaction."
+msgstr "Испытал отравление марло/мутагеном."
+
+#: src/iuse.cpp
+msgctxt "memorial_female"
+msgid "Suffered a toxic marloss/mutagen reaction."
+msgstr "Испытала отравление марло/мутагеном."
 
 #: src/iuse.cpp
 msgctxt "memorial_female"
@@ -110916,16 +110939,9 @@ msgid "Consumed mutagen."
 msgstr "Употребила мутаген."
 
 #: src/iuse.cpp
-msgid "You quiver with anticipation..."
-msgstr "Вы дрожите от нетерпения…"
-
-#: src/iuse.cpp
-msgid "Oops.  You must've blacked out for a minute there."
-msgstr "Упс. Вы, должно быть, отключились на мгновение."
-
-#: src/iuse.cpp
-msgid "<npcname> suddenly collapses!"
-msgstr "<npcname> внезапно падает!"
+msgctxt "memorial_male"
+msgid "Consumed mutagen."
+msgstr "Употребил мутаген."
 
 #: src/iuse.cpp
 msgid "You suddenly feel dizzy, and collapse to the ground."
@@ -110943,6 +110959,8 @@ msgstr "Что-то сильно напряглось на мгновение...
 msgid "Your appetite for blood fades."
 msgstr "Ваша жажда крови уменьшается."
 
+#. ~NOPAIN is a post-Threshold trait, so you shouldn't
+#. ~legitimately have it and get here!
 #: src/iuse.cpp
 msgid "You feel extremely Bugged."
 msgstr "У вас паранойя."
@@ -110952,32 +110970,12 @@ msgid "You stagger with a piercing headache!"
 msgstr "Вас зашатало из-за пронзительной головной боли!"
 
 #: src/iuse.cpp
-msgid "You feel very Bugged."
-msgstr "У вас сильное ощущение слежки за вами."
-
-#: src/iuse.cpp
 msgid "Your head throbs with memories of your life, before all this..."
 msgstr "Ваша голова раскалывается от воспоминаний из вашей жизни, до всего этого…"
 
 #: src/iuse.cpp
-msgid "You feel Bugged."
-msgstr "Вам кажется, что за вами следят."
-
-#: src/iuse.cpp
 msgid "Images of your past life flash before you."
 msgstr "Картины из вашей прошлой жизни проносятся перед вами."
-
-#. ~"Uh-uh" is a sound used for "nope", "no", etc.
-#: src/iuse.cpp
-msgid ""
-"After what happened that last time?  uh-uh.  You're not injecting that "
-"chemical stuff."
-msgstr "После того, что произошло в прошлый раз? Неа. Вы отказываетесь делать инъекцию этой химической штуки."
-
-#: src/iuse.cpp
-msgctxt "memorial_male"
-msgid "Injected mutagen."
-msgstr "Сделал инъекцию мутагена."
 
 #: src/iuse.cpp
 msgctxt "memorial_female"
@@ -110985,44 +110983,9 @@ msgid "Injected mutagen."
 msgstr "Сделала инъекцию мутагена."
 
 #: src/iuse.cpp
-msgid "Oh, yeah! That's the stuff!"
-msgstr "О, да! Это то, что было нужно!"
-
-#: src/iuse.cpp
-msgid "YES!  YES!  YESSS!!!"
-msgstr "ДА! ДА! ДААА!!!"
-
-#: src/iuse.cpp
-msgid "You inject yourself."
-msgstr "Вы делаете себе укол."
-
-#: src/iuse.cpp
-msgid "You inject yoursel-arRGH!"
-msgstr "Вы делаете себе инъекцию-арРГХ!"
-
-#: src/iuse.cpp
-msgid "You scream in agony!!"
-msgstr "Вы кричите в агонии!!"
-
-#: src/iuse.cpp
-msgid "an agonized scream!"
-msgstr "мучительный крик!"
-
-#: src/iuse.cpp
-msgid "You writhe and collapse to the ground."
-msgstr "Вы корчитесь и валитесь на землю."
-
-#: src/iuse.cpp
-msgid "<npcname> writhes and collapses to the ground."
-msgstr "<npcname> корчится и валится на землю."
-
-#: src/iuse.cpp
-msgid "It all goes dark..."
-msgstr "Всё темнеет…"
-
-#: src/iuse.cpp
-msgid "<npcname> suddenly falls over!"
-msgstr "<npcname> внезапно падает!"
+msgctxt "memorial_male"
+msgid "Injected mutagen."
+msgstr "Сделал инъекцию мутагена."
 
 #: src/iuse.cpp
 msgid "You feel cleansed."
@@ -111033,24 +110996,24 @@ msgid "You feel a slight itching inside, but it passes."
 msgstr "Вы чувствуете лёгкий зуд внутри себя, но это проходит."
 
 #: src/iuse.cpp
-msgctxt "memorial_male"
-msgid "Consumed purifier."
-msgstr "Употребил пурификатор."
-
-#: src/iuse.cpp
 msgctxt "memorial_female"
 msgid "Consumed purifier."
 msgstr "Употребила пурификатор."
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
-msgid "Injected purifier."
-msgstr "Сделал инъекцию пурификатора."
+msgid "Consumed purifier."
+msgstr "Употребил пурификатор."
 
 #: src/iuse.cpp
 msgctxt "memorial_female"
 msgid "Injected purifier."
 msgstr "Сделала инъекцию пурификатора."
+
+#: src/iuse.cpp
+msgctxt "memorial_male"
+msgid "Injected purifier."
+msgstr "Сделал инъекцию пурификатора."
 
 #: src/iuse.cpp
 msgid "You feel a distinct burning inside, but it passes."
@@ -117322,7 +117285,7 @@ msgstr ""
 
 #: src/mission_companion.cpp
 msgid "Everyone who was trapped under the collapsing roof died..."
-msgstr ""
+msgstr "Все, кто попали под обрушившуюся крышу, погибли..."
 
 #: src/mission_companion.cpp
 msgid "I'm sorry, there is nothing we could do."
@@ -120285,6 +120248,11 @@ msgstr[0] "Сценарий «%1$s» стоит %2$d очко"
 msgstr[1] "Сценарий «%1$s» стоит %2$d очка"
 msgstr[2] "Сценарий «%1$s» стоит %2$d очков"
 msgstr[3] "Сценарий «%1$s» стоит %2$d очко"
+
+#: src/newcharacter.cpp
+msgid ""
+"This scenario is not available in this world due to city size settings. "
+msgstr "Этот сценарий недоступен в этом мире из-за выбранных настроек размеров городов."
 
 #: src/newcharacter.cpp
 msgid "Professions:"
@@ -123289,6 +123257,12 @@ msgid ""
 "resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
 "provides high-quality scaling."
 msgstr "Устанавливает режим масштабирования: \"нет\" (по умолчанию) выводит игру в нативном разрешении, \"ближайший\" - низкокачественное, но быстрое масштабирование, \"линейное\" - высококачественное масштабирование."
+
+#: src/options.cpp
+msgid ""
+"A number determining how large cities are.  0 disables cities, roads and any"
+" scenario requiring a city start."
+msgstr "Число определяет, насколько большими будут города. 0 убирает города, дороги и блокирует все сценарии с городскими стартовыми локациями."
 
 #: src/options.cpp
 msgid "( WIP feature ) Determines terrain, shops, plants, and more."
@@ -126792,7 +126766,7 @@ msgstr "Отдача"
 #: src/ranged.cpp
 #, c-format
 msgid "Firing %s %s"
-msgstr ""
+msgstr "Стрельба из %s. %s"
 
 #: src/ranged.cpp
 #, c-format
