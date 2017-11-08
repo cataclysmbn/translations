@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cataclysm-DDA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-20 18:01+0800\n"
-"PO-Revision-Date: 2017-10-21 18:28+0000\n"
+"POT-Creation-Date: 2017-10-27 19:31+0800\n"
+"PO-Revision-Date: 2017-10-28 02:50+0000\n"
 "Last-Translator: Noctivagante <noctivagante@yahoo.com>\n"
 "Language-Team: Spanish (Argentina) (http://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/es_AR/)\n"
 "MIME-Version: 1.0\n"
@@ -1006,8 +1006,10 @@ msgid ""
 "lead to VERY slow generation!"
 msgstr "Número máximo de intentos in la generación del mapa general debido a la imposibilidad de ubicar los lugares especiales. ¡Los números altos y las configuraciones raras de mundo harán que la generación sea MUY lenta!"
 
+#. ~ Mutation class name
 #. ~ allow invalid (bugged, bad) maps without asking user
-#: lang/extra/android/options.cpp src/creature.cpp src/options.cpp
+#: lang/extra/android/options.cpp lang/json/mutation_category_from_json.py
+#: src/creature.cpp src/options.cpp
 msgid "Any"
 msgstr "Cualquiera"
 
@@ -1056,7 +1058,7 @@ msgstr "Borra el mundo cuando el último personaje activo se muere."
 msgid "Size of cities"
 msgstr "Tamaño de las ciudades"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid ""
 "A number determining how large cities are.  0 disables cities and roads."
 msgstr "Este número determina qué tan grandes son las ciudades. 0 desactiva ciudades y rutas."
@@ -36331,7 +36333,7 @@ msgstr "capullo fúngico"
 msgid ""
 "A broad fungus, looking much like a glowing blue sunflower.  It appears to "
 "emit finer spores than the typical fungal emission."
-msgstr "Un hongo ancho, muy parecido a un brillante girasol azul. Parece emitir esporas más finas que las que emiten típicamente los hongos."
+msgstr "Es un hongo ancho, muy parecido a un brillante girasol azul. Parece emitir esporas más finas que las que emiten típicamente los hongos."
 
 #: lang/json/MONSTER_from_json.py
 msgid "fungal fighter"
@@ -36409,7 +36411,7 @@ msgstr "capullo fúngico gigante"
 msgid ""
 "An immense fungal blossom, towering over its surroundings.  It pulses with a"
 " soft blue glow, continuously pumping its spores into the air."
-msgstr "Un inmenso capullo fúngico, que sobresale en el paisaje. Palpita con un brillo azul suave, y está continuamente tirando esporas en el aire."
+msgstr "Es un inmenso capullo fúngico, que sobresale en el paisaje. Palpita con un brillo azul suave, y está continuamente tirando esporas en el aire."
 
 #: lang/json/MONSTER_from_json.py lang/json/overmap_terrain_from_json.py
 msgid "fungal tower"
@@ -37244,7 +37246,7 @@ msgid ""
 "A ponderous and particularly arborescent triffid.  It has enormous red "
 "petals surrounded by a haze of spores, and two thick barbed vines stick out "
 "from the stems like wary harpoons."
-msgstr "Un trífido muy pesado y particularmente arborescente. Tiene unos enormes pétalos rojos y una nube de esporas lo rodea. Dos ramas enredaderas con púas le salen del tallo como si fueran arpones."
+msgstr "Es un trífido muy pesado y particularmente arborescente. Tiene unos enormes pétalos rojos y una nube de esporas lo rodea. Dos ramas enredaderas con púas le salen del tallo como si fueran arpones."
 
 #: lang/json/MONSTER_from_json.py
 msgid "triffid sprout"
@@ -64375,6 +64377,31 @@ msgstr "Vomitado"
 msgid "Filthy Gear"
 msgstr "Equipo Sucio"
 
+#. ~ Mutation class: Any mutagen_message
+#: lang/json/mutation_category_from_json.py
+msgid "mutagen message here"
+msgstr "acá va mensaje de mutágeno"
+
+#. ~ Mutation class: Any iv_message
+#: lang/json/mutation_category_from_json.py
+msgid "You inject yoursel-arRGH!"
+msgstr "Te inyectáAAAYYY!"
+
+#. ~ Mutation class: Any iv_sleep_message
+#: lang/json/mutation_category_from_json.py
+msgid "You writhe and collapse to the ground."
+msgstr "Te retorcés del dolor y caés al suelo."
+
+#. ~ Mutation class: Any iv_sound_message
+#: lang/json/mutation_category_from_json.py
+msgid "You scream in agony!!"
+msgstr "¡¡Gritás agónicamente!!"
+
+#. ~ Mutation class: Any junkie_message
+#: lang/json/mutation_category_from_json.py src/iuse.cpp
+msgid "You quiver with anticipation..."
+msgstr "Temblás de ansiedad..."
+
 #. ~ Mutation class name
 #: lang/json/mutation_category_from_json.py lang/json/mutation_from_json.py
 msgid "Plant"
@@ -69995,6 +70022,18 @@ msgid "open air"
 msgstr "aire libre"
 
 #: lang/json/overmap_terrain_from_json.py
+msgid "city building"
+msgstr "construcción de ciudad"
+
+#: lang/json/overmap_terrain_from_json.py
+msgid "mansion"
+msgstr "mansión"
+
+#: lang/json/overmap_terrain_from_json.py
+msgid "mall"
+msgstr "shopping"
+
+#: lang/json/overmap_terrain_from_json.py
 msgid "crater"
 msgstr "cráter"
 
@@ -70267,10 +70306,6 @@ msgid "razorclaw nest"
 msgstr "nido de garrafilada"
 
 #: lang/json/overmap_terrain_from_json.py
-msgid "mansion"
-msgstr "mansión"
-
-#: lang/json/overmap_terrain_from_json.py
 msgid "fema camp"
 msgstr "campamento FEMA"
 
@@ -70433,10 +70468,6 @@ msgstr "shopping - instalaciones"
 #: lang/json/overmap_terrain_from_json.py
 msgid "lot"
 msgstr "terreno"
-
-#: lang/json/overmap_terrain_from_json.py
-msgid "mall"
-msgstr "shopping"
 
 #: lang/json/overmap_terrain_from_json.py
 msgid "mall - entrance"
@@ -102965,6 +102996,10 @@ msgid "Mutations"
 msgstr "Mutaciones"
 
 #: src/init.cpp
+msgid "Mutation Categories"
+msgstr "Categorías de Mutaciones"
+
+#: src/init.cpp
 msgid "Overmap locations"
 msgstr "Lugares del mapa"
 
@@ -104774,39 +104809,20 @@ msgstr "Aunque parezca mentira, esto no tiene mal gusto."
 msgid "You chew your %s."
 msgstr "Masticás tu %s."
 
+#. ~"Uh-uh" is a sound used for "nope", "no", etc.
 #: src/iuse.cpp
-#, c-format
-msgid "The %s sears your insides white-hot, and you collapse to the ground!"
-msgstr "¡El %s te chamusca tu parte interior, y caés al suelo!"
-
-#: src/iuse.cpp
-msgid "<npcname> writhes in agony and collapses to the ground!"
-msgstr "¡<npcname> se retuerce agónicamente y colapsa al suelo!"
-
-#: src/iuse.cpp
-#, c-format
 msgid ""
-"That was some toxic %s!  Let's stick with Marloss next time, that's safe."
-msgstr "¡Ese %s era tóxico! Vamos a seguir con el Marloss la próxima vez, eso es seguro de comer."
-
-#: src/iuse.cpp
-msgctxt "memorial_male"
-msgid "Suffered a toxic marloss/mutagen reaction."
-msgstr "Sufrió una reacción tóxica al marloss/mutágeno."
-
-#: src/iuse.cpp
-msgctxt "memorial_female"
-msgid "Suffered a toxic marloss/mutagen reaction."
-msgstr "Sufrió una reacción tóxica al marloss/mutágeno."
+"After what happened that last time?  uh-uh.  You're not drinking that "
+"chemical stuff."
+msgstr "¿Después de lo que pasó la última vez? Nop. No te vas a tomar esa cosa química."
 
 #: src/iuse.cpp
 msgid "This is a contaminant.  We reject it from the Mycus."
 msgstr "Esto es un contaminante. Nosotros lo rechazamos del Mycus."
 
 #: src/iuse.cpp
-#, c-format
-msgid "We empty the %s and reflexively dispense spores onto the mess."
-msgstr "Nosotros hemos vaciado el %s y dispensado reflexivamente las esporas en el desorden."
+msgid "We decontaminate it with spores."
+msgstr "Nosotros lo descontaminamos con esporas."
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
@@ -104822,11 +104838,14 @@ msgstr "Destruyó un invasor dañino."
 msgid "We must eliminate this contaminant at the earliest opportunity."
 msgstr "Nosotros debemos eliminar este contaminante lo antes posible."
 
-#. ~ Recall that Marloss mutations made you feel warmth spreading throughout
-#. your body.  That's gone.
 #: src/iuse.cpp
-msgid "You feel a cold burn inside, as though everything warm has left you."
-msgstr "Sentís un ardor frío adentro tuyo, a medida que todo el calor te va abandonando."
+#, c-format
+msgid "The %s sears your insides white-hot, and you collapse to the ground!"
+msgstr "¡El %s te chamusca tu parte interior, y caés al suelo!"
+
+#: src/iuse.cpp
+msgid "<npcname> writhes in agony and collapses to the ground!"
+msgstr "¡<npcname> se retuerce agónicamente y colapsa al suelo!"
 
 #: src/iuse.cpp
 msgid ""
@@ -104848,17 +104867,21 @@ msgctxt "memorial_female"
 msgid "Burned out a particularly nasty fungal infestation."
 msgstr "Quemó una infestación fúngica particularmente desagradable."
 
-#. ~"Uh-uh" is a sound used for "nope", "no", etc.
 #: src/iuse.cpp
+#, c-format
 msgid ""
-"After what happened that last time?  uh-uh.  You're not drinking that "
-"chemical stuff."
-msgstr "¿Después de lo que pasó la última vez? Nop. No te vas a tomar esa cosa química."
+"That was some toxic %s!  Let's stick with Marloss next time, that's safe."
+msgstr "¡Ese %s era tóxico! Vamos a seguir con el Marloss la próxima vez, eso es seguro de comer."
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
-msgid "Consumed mutagen."
-msgstr "Consumió mutágeno."
+msgid "Suffered a toxic marloss/mutagen reaction."
+msgstr "Sufrió una reacción tóxica al marloss/mutágeno."
+
+#: src/iuse.cpp
+msgctxt "memorial_female"
+msgid "Suffered a toxic marloss/mutagen reaction."
+msgstr "Sufrió una reacción tóxica al marloss/mutágeno."
 
 #: src/iuse.cpp
 msgctxt "memorial_female"
@@ -104866,16 +104889,9 @@ msgid "Consumed mutagen."
 msgstr "Consumió mutágeno."
 
 #: src/iuse.cpp
-msgid "You quiver with anticipation..."
-msgstr "Temblás de ansiedad..."
-
-#: src/iuse.cpp
-msgid "Oops.  You must've blacked out for a minute there."
-msgstr "Huy. Debés haberte desmayado por unos minutos."
-
-#: src/iuse.cpp
-msgid "<npcname> suddenly collapses!"
-msgstr "¡<npcname> colapsa súbitamente!"
+msgctxt "memorial_male"
+msgid "Consumed mutagen."
+msgstr "Consumió mutágeno."
 
 #: src/iuse.cpp
 msgid "You suddenly feel dizzy, and collapse to the ground."
@@ -104893,6 +104909,8 @@ msgstr "Algo se tensa fuertemente por un instante... y luego... estás... ¡LIBE
 msgid "Your appetite for blood fades."
 msgstr "Tu apetito por la sangre se va."
 
+#. ~NOPAIN is a post-Threshold trait, so you shouldn't
+#. ~legitimately have it and get here!
 #: src/iuse.cpp
 msgid "You feel extremely Bugged."
 msgstr "Te sentís extremadamente Fastidiado."
@@ -104902,32 +104920,12 @@ msgid "You stagger with a piercing headache!"
 msgstr "¡Te tambaleás por un dolor agudo de cabeza!"
 
 #: src/iuse.cpp
-msgid "You feel very Bugged."
-msgstr "Te sentís muy Fastidiado."
-
-#: src/iuse.cpp
 msgid "Your head throbs with memories of your life, before all this..."
 msgstr "Tu cabeza late con los recuerdos de tu vida, antes de todo esto..."
 
 #: src/iuse.cpp
-msgid "You feel Bugged."
-msgstr "Te sentís Fastidiado."
-
-#: src/iuse.cpp
 msgid "Images of your past life flash before you."
 msgstr "Imágenes de tu vida pasan rápidamente delante tuyo."
-
-#. ~"Uh-uh" is a sound used for "nope", "no", etc.
-#: src/iuse.cpp
-msgid ""
-"After what happened that last time?  uh-uh.  You're not injecting that "
-"chemical stuff."
-msgstr "¿Después de lo que pasó la última vez? Nop. No te vas a inyectar esa cosa química."
-
-#: src/iuse.cpp
-msgctxt "memorial_male"
-msgid "Injected mutagen."
-msgstr "Mutágeno inyectado."
 
 #: src/iuse.cpp
 msgctxt "memorial_female"
@@ -104935,44 +104933,9 @@ msgid "Injected mutagen."
 msgstr "Mutágeno inyectado."
 
 #: src/iuse.cpp
-msgid "Oh, yeah! That's the stuff!"
-msgstr "¡Uh, sí! ¡Eso está bueno!"
-
-#: src/iuse.cpp
-msgid "YES!  YES!  YESSS!!!"
-msgstr "¡SÍ! ¡SÍ! ¡¡¡SÍÍÍÍ!!!"
-
-#: src/iuse.cpp
-msgid "You inject yourself."
-msgstr "Te inyectás."
-
-#: src/iuse.cpp
-msgid "You inject yoursel-arRGH!"
-msgstr "Te inyectáAAAYYY!"
-
-#: src/iuse.cpp
-msgid "You scream in agony!!"
-msgstr "¡¡Gritás agónicamente!!"
-
-#: src/iuse.cpp
-msgid "an agonized scream!"
-msgstr "¡un grito agonizante!"
-
-#: src/iuse.cpp
-msgid "You writhe and collapse to the ground."
-msgstr "Te retorcés del dolor y caés al suelo."
-
-#: src/iuse.cpp
-msgid "<npcname> writhes and collapses to the ground."
-msgstr "<npcname> se retuerce y colapas al suelo."
-
-#: src/iuse.cpp
-msgid "It all goes dark..."
-msgstr "Todo se pone negro..."
-
-#: src/iuse.cpp
-msgid "<npcname> suddenly falls over!"
-msgstr "¡<npcname> se cae súbitamente!"
+msgctxt "memorial_male"
+msgid "Injected mutagen."
+msgstr "Mutágeno inyectado."
 
 #: src/iuse.cpp
 msgid "You feel cleansed."
@@ -104983,22 +104946,22 @@ msgid "You feel a slight itching inside, but it passes."
 msgstr "Sentís una pequeña picazón por adentro, pero se te pasa."
 
 #: src/iuse.cpp
-msgctxt "memorial_male"
-msgid "Consumed purifier."
-msgstr "Consumió purificante."
-
-#: src/iuse.cpp
 msgctxt "memorial_female"
 msgid "Consumed purifier."
 msgstr "Consumió purificante."
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
+msgid "Consumed purifier."
+msgstr "Consumió purificante."
+
+#: src/iuse.cpp
+msgctxt "memorial_female"
 msgid "Injected purifier."
 msgstr "Se inyectó purificante."
 
 #: src/iuse.cpp
-msgctxt "memorial_female"
+msgctxt "memorial_male"
 msgid "Injected purifier."
 msgstr "Se inyectó purificante."
 
@@ -114201,6 +114164,11 @@ msgstr[0] "%1$s cuesta %2$d punto"
 msgstr[1] "%1$s cuesta %2$d puntos"
 
 #: src/newcharacter.cpp
+msgid ""
+"This scenario is not available in this world due to city size settings. "
+msgstr "Este escenario no está disponible para este mundo debido a la configuración del tamaño de ciudad."
+
+#: src/newcharacter.cpp
 msgid "Professions:"
 msgstr "Profesiones:"
 
@@ -117199,6 +117167,12 @@ msgid ""
 "resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
 "provides high-quality scaling."
 msgstr "Establece el modo de escalamiento, 'nada' (predeterminado) se muestra en la resolución del juego, 'cercano' usa baja calidad pero escalamiento rápido, y 'lineal' brinda escalamiento de alta calidad."
+
+#: src/options.cpp
+msgid ""
+"A number determining how large cities are.  0 disables cities, roads and any"
+" scenario requiring a city start."
+msgstr "Este número determina qué tan grandes son las ciudades. 0 desactiva ciudades, rutas y los escenarios que necesitan comenzar en la ciudad."
 
 #: src/options.cpp
 msgid "( WIP feature ) Determines terrain, shops, plants, and more."

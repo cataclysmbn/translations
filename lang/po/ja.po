@@ -23,8 +23,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cataclysm-DDA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-20 18:01+0800\n"
-"PO-Revision-Date: 2017-10-20 12:57+0000\n"
+"POT-Creation-Date: 2017-10-27 19:31+0800\n"
+"PO-Revision-Date: 2017-10-27 14:45+0000\n"
 "Last-Translator: Pigmentblue15\n"
 "Language-Team: Japanese (http://www.transifex.com/cataclysm-dda-translators/cataclysm-dda/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1023,8 +1023,10 @@ msgid ""
 "lead to VERY slow generation!"
 msgstr "特定の重要な地形を生成できなかった際に、全体マップを再生成する回数を設定します。数値を高くし、通常と大きく異なる世界設定にしている場合、生成速度が非常に遅くなります。"
 
+#. ~ Mutation class name
 #. ~ allow invalid (bugged, bad) maps without asking user
-#: lang/extra/android/options.cpp src/creature.cpp src/options.cpp
+#: lang/extra/android/options.cpp lang/json/mutation_category_from_json.py
+#: src/creature.cpp src/options.cpp
 msgid "Any"
 msgstr "全て"
 
@@ -1073,7 +1075,7 @@ msgstr "キャラクター死亡時に世界を削除します。"
 msgid "Size of cities"
 msgstr "街の大きさ"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp
 msgid ""
 "A number determining how large cities are.  0 disables cities and roads."
 msgstr "街の大きさを設定する数値です。0にすると街や道路を無効化します。"
@@ -61449,6 +61451,31 @@ msgstr "嘔吐"
 msgid "Filthy Gear"
 msgstr "不潔なアイテム"
 
+#. ~ Mutation class: Any mutagen_message
+#: lang/json/mutation_category_from_json.py
+msgid "mutagen message here"
+msgstr "ここに変異メッセージを表示"
+
+#. ~ Mutation class: Any iv_message
+#: lang/json/mutation_category_from_json.py
+msgid "You inject yoursel-arRGH!"
+msgstr "自分に注射を打ちま...グエーッ！"
+
+#. ~ Mutation class: Any iv_sleep_message
+#: lang/json/mutation_category_from_json.py
+msgid "You writhe and collapse to the ground."
+msgstr "のた打ち回りながら地面に倒れました。"
+
+#. ~ Mutation class: Any iv_sound_message
+#: lang/json/mutation_category_from_json.py
+msgid "You scream in agony!!"
+msgstr "苦悶の叫び声を上げました！！"
+
+#. ~ Mutation class: Any junkie_message
+#: lang/json/mutation_category_from_json.py src/iuse.cpp
+msgid "You quiver with anticipation..."
+msgstr "これから起こる何かを予期して小刻みに震えています..."
+
 #. ~ Mutation class name
 #: lang/json/mutation_category_from_json.py lang/json/mutation_from_json.py
 msgid "Plant"
@@ -67069,6 +67096,18 @@ msgid "open air"
 msgstr "屋外"
 
 #: lang/json/overmap_terrain_from_json.py
+msgid "city building"
+msgstr "都市の建物"
+
+#: lang/json/overmap_terrain_from_json.py
+msgid "mansion"
+msgstr "大邸宅"
+
+#: lang/json/overmap_terrain_from_json.py
+msgid "mall"
+msgstr "ショッピングモール"
+
+#: lang/json/overmap_terrain_from_json.py
 msgid "crater"
 msgstr "クレーター"
 
@@ -67341,10 +67380,6 @@ msgid "razorclaw nest"
 msgstr "レイザークロウの巣"
 
 #: lang/json/overmap_terrain_from_json.py
-msgid "mansion"
-msgstr "大邸宅"
-
-#: lang/json/overmap_terrain_from_json.py
 msgid "fema camp"
 msgstr "FEMAキャンプ"
 
@@ -67507,10 +67542,6 @@ msgstr "モール - バックヤード"
 #: lang/json/overmap_terrain_from_json.py
 msgid "lot"
 msgstr "駐車場"
-
-#: lang/json/overmap_terrain_from_json.py
-msgid "mall"
-msgstr "ショッピングモール"
 
 #: lang/json/overmap_terrain_from_json.py
 msgid "mall - entrance"
@@ -100002,6 +100033,10 @@ msgid "Mutations"
 msgstr "変異"
 
 #: src/init.cpp
+msgid "Mutation Categories"
+msgstr "変異カテゴリー"
+
+#: src/init.cpp
 msgid "Overmap locations"
 msgstr "全体マップ位置"
 
@@ -101797,39 +101832,20 @@ msgstr "不思議なことに、なかなかいける味です。"
 msgid "You chew your %s."
 msgstr "%sを噛みました。"
 
+#. ~"Uh-uh" is a sound used for "nope", "no", etc.
 #: src/iuse.cpp
-#, c-format
-msgid "The %s sears your insides white-hot, and you collapse to the ground!"
-msgstr "%sが体内を白熱させるように焼いています！たまらず地面に崩れ落ちました！"
-
-#: src/iuse.cpp
-msgid "<npcname> writhes in agony and collapses to the ground!"
-msgstr "<npcname>は苦痛に悶えながら地面に倒れました！"
-
-#: src/iuse.cpp
-#, c-format
 msgid ""
-"That was some toxic %s!  Let's stick with Marloss next time, that's safe."
-msgstr "%sには毒があったようです！次こそはマーロスに従いましょう、安全のために。"
-
-#: src/iuse.cpp
-msgctxt "memorial_male"
-msgid "Suffered a toxic marloss/mutagen reaction."
-msgstr "有毒なマーロス/変異原の反応に苦しんでいます。"
-
-#: src/iuse.cpp
-msgctxt "memorial_female"
-msgid "Suffered a toxic marloss/mutagen reaction."
-msgstr "有毒なマーロス/変異原の反応に苦しんでいます。"
+"After what happened that last time?  uh-uh.  You're not drinking that "
+"chemical stuff."
+msgstr "それをやって前回はどうなりましたか？おっと。その化学物質は飲まないでおきましょう。"
 
 #: src/iuse.cpp
 msgid "This is a contaminant.  We reject it from the Mycus."
 msgstr "汚染物質だ。我々はこれをミカズより排除する。"
 
 #: src/iuse.cpp
-#, c-format
-msgid "We empty the %s and reflexively dispense spores onto the mess."
-msgstr "我々は%sを排除した。反射的に、そこへ胞子を散布しておいた。"
+msgid "We decontaminate it with spores."
+msgstr "我々は胞子によって浄化する。"
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
@@ -101845,11 +101861,14 @@ msgstr "有害な侵略者を撃破しました。"
 msgid "We must eliminate this contaminant at the earliest opportunity."
 msgstr "我々はこの汚染物質を抹殺せねばならない。再優先目標である。"
 
-#. ~ Recall that Marloss mutations made you feel warmth spreading throughout
-#. your body.  That's gone.
 #: src/iuse.cpp
-msgid "You feel a cold burn inside, as though everything warm has left you."
-msgstr "一切の体温が奪われ、体内が凍り付くのを感じました。"
+#, c-format
+msgid "The %s sears your insides white-hot, and you collapse to the ground!"
+msgstr "%sが体内を白熱させるように焼いています！たまらず地面に崩れ落ちました！"
+
+#: src/iuse.cpp
+msgid "<npcname> writhes in agony and collapses to the ground!"
+msgstr "<npcname>は苦痛に悶えながら地面に倒れました！"
 
 #: src/iuse.cpp
 msgid ""
@@ -101871,17 +101890,21 @@ msgctxt "memorial_female"
 msgid "Burned out a particularly nasty fungal infestation."
 msgstr "不快な真菌の蔓延を焼き尽くしました。"
 
-#. ~"Uh-uh" is a sound used for "nope", "no", etc.
 #: src/iuse.cpp
+#, c-format
 msgid ""
-"After what happened that last time?  uh-uh.  You're not drinking that "
-"chemical stuff."
-msgstr "それをやって前回はどうなりましたか？おっと。その化学物質は飲まないでおきましょう。"
+"That was some toxic %s!  Let's stick with Marloss next time, that's safe."
+msgstr "%sには毒があったようです！次こそはマーロスに従いましょう、安全のために。"
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
-msgid "Consumed mutagen."
-msgstr "変異源物質を摂取しました。"
+msgid "Suffered a toxic marloss/mutagen reaction."
+msgstr "有毒なマーロス/変異原の反応に苦しんでいます。"
+
+#: src/iuse.cpp
+msgctxt "memorial_female"
+msgid "Suffered a toxic marloss/mutagen reaction."
+msgstr "有毒なマーロス/変異原の反応に苦しんでいます。"
 
 #: src/iuse.cpp
 msgctxt "memorial_female"
@@ -101889,16 +101912,9 @@ msgid "Consumed mutagen."
 msgstr "変異源物質を摂取しました。"
 
 #: src/iuse.cpp
-msgid "You quiver with anticipation..."
-msgstr "これから起こる何かを予期して小刻みに震えています..."
-
-#: src/iuse.cpp
-msgid "Oops.  You must've blacked out for a minute there."
-msgstr "おおっと。ここで数分間ほど気絶していたようです。"
-
-#: src/iuse.cpp
-msgid "<npcname> suddenly collapses!"
-msgstr "<npcname>が突然倒れました！"
+msgctxt "memorial_male"
+msgid "Consumed mutagen."
+msgstr "変異源物質を摂取しました。"
 
 #: src/iuse.cpp
 msgid "You suddenly feel dizzy, and collapse to the ground."
@@ -101916,6 +101932,8 @@ msgstr "一瞬、何かが力強く、ぴんと張り詰めて...そうして..�
 msgid "Your appetite for blood fades."
 msgstr "血を求める欲望が薄れていきます。"
 
+#. ~NOPAIN is a post-Threshold trait, so you shouldn't
+#. ~legitimately have it and get here!
 #: src/iuse.cpp
 msgid "You feel extremely Bugged."
 msgstr "とんでもなくバグっています。"
@@ -101925,32 +101943,12 @@ msgid "You stagger with a piercing headache!"
 msgstr "刺し貫かれたような酷い頭痛で身体がよろめきました！"
 
 #: src/iuse.cpp
-msgid "You feel very Bugged."
-msgstr "とてもバグっています。"
-
-#: src/iuse.cpp
 msgid "Your head throbs with memories of your life, before all this..."
 msgstr "昔の想い出が頭を満たしています..."
 
 #: src/iuse.cpp
-msgid "You feel Bugged."
-msgstr "バグっている気がします。"
-
-#: src/iuse.cpp
 msgid "Images of your past life flash before you."
 msgstr "過去の記憶が映像となって、瞬間的に頭を過ぎります。"
-
-#. ~"Uh-uh" is a sound used for "nope", "no", etc.
-#: src/iuse.cpp
-msgid ""
-"After what happened that last time?  uh-uh.  You're not injecting that "
-"chemical stuff."
-msgstr "それをやって前回はどうなりましたか？おっと。その化学物質は注射しないでおきましょう。"
-
-#: src/iuse.cpp
-msgctxt "memorial_male"
-msgid "Injected mutagen."
-msgstr "変異原物質を注射しました。"
 
 #: src/iuse.cpp
 msgctxt "memorial_female"
@@ -101958,44 +101956,9 @@ msgid "Injected mutagen."
 msgstr "変異原物質を注射しました。"
 
 #: src/iuse.cpp
-msgid "Oh, yeah! That's the stuff!"
-msgstr "おお、きたきた！これだよこれ！"
-
-#: src/iuse.cpp
-msgid "YES!  YES!  YESSS!!!"
-msgstr "よし！よしっ！よっしゃぁ！！！"
-
-#: src/iuse.cpp
-msgid "You inject yourself."
-msgstr "自分に注射を打ちました。"
-
-#: src/iuse.cpp
-msgid "You inject yoursel-arRGH!"
-msgstr "自分に注射を打ちま...グエーッ！"
-
-#: src/iuse.cpp
-msgid "You scream in agony!!"
-msgstr "苦悶の叫び声を上げました！！"
-
-#: src/iuse.cpp
-msgid "an agonized scream!"
-msgstr "[苦悶に満ちた叫び声]"
-
-#: src/iuse.cpp
-msgid "You writhe and collapse to the ground."
-msgstr "のた打ち回りながら地面に倒れました。"
-
-#: src/iuse.cpp
-msgid "<npcname> writhes and collapses to the ground."
-msgstr "<npcname>はのた打ち回りながら地面に倒れました。"
-
-#: src/iuse.cpp
-msgid "It all goes dark..."
-msgstr "全てが暗闇に包まれました..."
-
-#: src/iuse.cpp
-msgid "<npcname> suddenly falls over!"
-msgstr "<npcname>は突然落ちていきました！"
+msgctxt "memorial_male"
+msgid "Injected mutagen."
+msgstr "変異原物質を注射しました。"
 
 #: src/iuse.cpp
 msgid "You feel cleansed."
@@ -102006,22 +101969,22 @@ msgid "You feel a slight itching inside, but it passes."
 msgstr "体内にかすかな痒みを感じましたが、すぐに治まりました。"
 
 #: src/iuse.cpp
-msgctxt "memorial_male"
-msgid "Consumed purifier."
-msgstr "変異治療薬を摂取しました。"
-
-#: src/iuse.cpp
 msgctxt "memorial_female"
 msgid "Consumed purifier."
 msgstr "変異治療薬を摂取しました。"
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
+msgid "Consumed purifier."
+msgstr "変異治療薬を摂取しました。"
+
+#: src/iuse.cpp
+msgctxt "memorial_female"
 msgid "Injected purifier."
 msgstr "変異治療薬を注射しました。"
 
 #: src/iuse.cpp
-msgctxt "memorial_female"
+msgctxt "memorial_male"
 msgid "Injected purifier."
 msgstr "変異治療薬を注射しました。"
 
@@ -111206,6 +111169,11 @@ msgid_plural "Scenario %1$s cost %2$d points"
 msgstr[0] "ｼﾅﾘｵ: %1$s 消費: %2$d ﾎﾟｲﾝﾄ"
 
 #: src/newcharacter.cpp
+msgid ""
+"This scenario is not available in this world due to city size settings. "
+msgstr "現在の街の大きさの設定ではこのシナリオを利用できません。"
+
+#: src/newcharacter.cpp
 msgid "Professions:"
 msgstr "職業: "
 
@@ -114202,6 +114170,12 @@ msgid ""
 "resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
 "provides high-quality scaling."
 msgstr "拡大縮小モードを設定します。'無効' (初期設定) でゲームのネイティブ解像度で表示、'最近傍法' で低品質かつ高速な拡大縮小表示、'リニアフィルタ' で高品質な拡大縮小表示になります。"
+
+#: src/options.cpp
+msgid ""
+"A number determining how large cities are.  0 disables cities, roads and any"
+" scenario requiring a city start."
+msgstr "街の大きさを設定する数値です。0にすると街や道路および開始地点が街にあるシナリオを無効化します。"
 
 #: src/options.cpp
 msgid "( WIP feature ) Determines terrain, shops, plants, and more."
