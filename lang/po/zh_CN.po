@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-dda 0.C\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-25 07:27-0400\n"
+"POT-Creation-Date: 2018-06-01 19:14-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: ImmortalSTAR <zhoufanxing@qq.com>, 2018\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/cataclysm-dda-translators/teams/2217/zh_CN/)\n"
@@ -144,7 +144,7 @@ msgid ""
 "If true, will enable to pickup items one tile around to the player.  You can"
 " assign No Auto Pickup zones with the Zones Manager 'Y' key for eg.  your "
 "homebase."
-msgstr "如果设置为是，玩家周围一格的东西将会被自动拾取。你可以用\"Y\"键的区域管理菜单设置不拾取区域，例如你的宅基地。"
+msgstr "开启时，玩家周围一格的东西将会被自动拾取。使用\"管理区域\"键开启区域管理菜单以设置不拾取区域，例如你的宅基地。"
 
 #: lang/extra/android/options.cpp
 msgid "Auto pickup light items"
@@ -185,7 +185,7 @@ msgstr "强制拾取"
 msgid ""
 "If false, will cause player to drop new items that cause them to exceed the "
 "weight limit."
-msgstr "如果设置为 否，超重物品将被自动丢下。"
+msgstr "开启时，超重物品将保留在物品栏中不被自动丢下。关闭时，新拾取的超重物品将会被自动丢下。"
 
 #: lang/extra/android/options.cpp
 msgid "Auto-safe mode"
@@ -256,7 +256,7 @@ msgstr "定时自动保存"
 msgid ""
 "If true, game will periodically save the map.  Autosaves occur based on in-"
 "game turns or real-time minutes, whichever is larger."
-msgstr "如果设置为是，游戏将周期性的保存地图。触发自动保存的条件依赖于游戏中的回合数或者真实的分钟数，两者取高者。"
+msgstr "开启时，每隔一段时间会自动保存游戏。触发自动保存的条件依赖于游戏中的回合数或者真实的分钟数，两者取高者。"
 
 #: lang/extra/android/options.cpp src/options.cpp
 msgid "Game turns between autosaves"
@@ -541,7 +541,7 @@ msgstr "载具颜色随装甲改变"
 
 #: lang/extra/android/options.cpp src/options.cpp
 msgid "If true, vehicle parts will change color if they are armor plated"
-msgstr "如果设置为是，汽车部件安装装甲之后会改变颜色。"
+msgstr "开启时，车载部件在安装装甲之后会改变颜色。"
 
 #: lang/extra/android/options.cpp src/options.cpp
 msgid "Auto-shift the view while driving"
@@ -560,7 +560,7 @@ msgid ""
 "If true, when controlling a vehicle, a white 'X' (in curses version) or a "
 "crosshair (in tiles version) at distance 10 from the center will display its"
 " current facing."
-msgstr "如果设置为是，在玩家控制车辆时一个白色的\"X\"（图像版中为十字）会出现在离车辆中心的距离10格的位置，显示车辆当前的方向。"
+msgstr "开启时，玩家在控制车辆时一个白色的\"X\"（图像版中为十字）方位指示标志会出现在离车辆中心的距离10格的位置，指示车辆当前准备前进的方向。"
 
 #. ~ sidebar position
 #: lang/extra/android/options.cpp src/options.cpp
@@ -686,7 +686,7 @@ msgstr "自动分配物品快捷字符"
 msgid ""
 "If false, new inventory items will only get letters assigned if they had one"
 " before."
-msgstr "如果关闭，新的物品只会得到它们过去在物品栏内的快捷键。"
+msgstr "关闭后，物品栏中的新物品不会自动分配快捷键，只会得到过去已指定的按键作为快捷键。"
 
 #: lang/extra/android/options.cpp src/options.cpp
 msgid "Show item health bars"
@@ -695,7 +695,7 @@ msgstr "显示物品耐久条"
 #: lang/extra/android/options.cpp src/options.cpp
 msgid ""
 "If true, show item health bars instead of reinforced, scratched etc. text."
-msgstr "如果选择：是，物品的耐久显示将用显示条替代词语前缀。"
+msgstr "开启时，将使用棒状显示条替代物品耐久度的文字描述。"
 
 #: lang/extra/android/options.cpp src/options.cpp
 msgid "Show item symbols"
@@ -800,7 +800,7 @@ msgstr "使用贴图包"
 
 #: lang/extra/android/options.cpp src/options.cpp
 msgid "If true, replaces some TTF rendered text with tiles."
-msgstr "如果设置为是，TTF文本将会被贴图替换。需要重新启动。"
+msgstr "开启时，将使用贴图包替换游戏地图中的TTF文本。需要重启游戏。"
 
 #: lang/extra/android/options.cpp src/options.cpp
 msgid "Choose tileset"
@@ -819,7 +819,7 @@ msgid ""
 "If true, shows the pixel-detail minimap in game after the save is loaded.  "
 "Use the 'Toggle Pixel Minimap' action key to change its visibility during "
 "gameplay."
-msgstr "如果开启，加载游戏后将显示像素小地图。使用\"切换像素地图\"键来在游戏里开启或者关闭像素地图。"
+msgstr "开启时，载入游戏后将在侧边栏显示像素小地图。使用\"切换小地图\"键来在游戏里开启或者关闭小地图。"
 
 #: lang/extra/android/options.cpp
 msgid "Pixel Minimap height"
@@ -1011,7 +1011,7 @@ msgid ""
 "If true, file path names are going to be transcoded from system encoding to "
 "UTF-8 when reading and will be transcoded back when writing.  Mainly for CJK"
 " Windows users."
-msgstr "如果开启，文件路径在读取时将会从GB18030编码转换到UTF-8编码，写入时反之亦然。供Windows玩家使用。"
+msgstr "开启时，文件路径在读取时将会从GB18030编码转换到UTF-8编码，写入时反之亦然。供采用CJK系统的Windows玩家使用。"
 
 #: lang/extra/android/options.cpp
 msgid "Overmap generation attempt count"
@@ -1283,7 +1283,8 @@ msgstr "实验性Z轴"
 msgid ""
 "If true, experimental z-level maps will be enabled.  This feature is not "
 "finished yet and turning it on will only slow the game down."
-msgstr "选择是，将会使用实验性的Z轴地图，本特性尚未彻底完工，打开本选项将会导致游戏运行有所减慢。"
+msgstr ""
+"开启后，游戏内所有地图将增加实验性质Z轴地图。该选项尚未完成（在0.D到来之前都不会），目前开启这个选项只会让游戏变慢并产生许多不可预测的BUG。"
 
 #: lang/extra/android/options.cpp src/options.cpp
 msgid "Align up and down stairs"
@@ -1321,7 +1322,7 @@ msgstr "肮脏衣物导致的伤口感染。"
 msgid ""
 "If true, getting hit in a body part covered in filthy clothing may cause "
 "infections."
-msgstr "如果勾选此项，穿着肮脏衣物的身体部位被攻击有可能导致感染。"
+msgstr "开启时，穿着肮脏衣物的身体部位被攻击时有可能导致感染。"
 
 #: lang/extra/android/options.cpp src/options.cpp
 msgid "Disables tracking vitamins in food items."
@@ -2968,7 +2969,7 @@ msgid ""
 " it could be used to saturate the soil with aluminum, causing all but the "
 "most resistant of plants to wither and die."
 msgstr ""
-"一小撮硫酸铝结晶。历史上，它被用于净水及杀灭软体动物，由于其吸附软泥的特性。在大灾变之前，它主要用于土壤的酸碱度平衡及发酵粉。当与强酸混合时，它可使土壤中的铝离子饱和，除了抵抗力最强的植物其他植物都会凋零死亡。"
+"一小撮硫酸铝结晶。在历史上，由于其吸附软泥的特性，它被当作净水剂和灭螺剂使用。在大灾变之前，它主要被用作土壤酸碱度调节剂及发酵粉添加剂使用。当它与强酸混合时，可使土壤中的铝离子饱和，除了少数几种抵抗力强的植物，其他植物都会枯萎死亡。"
 
 #: lang/json/AMMO_from_json.py
 msgid "acetic acid"
@@ -5209,7 +5210,7 @@ msgstr ""
 #: lang/json/AMMO_from_json.py
 msgid "reloaded light rifle ammo"
 msgid_plural "reloaded light rifle ammo"
-msgstr[0] "复装轻型来复枪弹"
+msgstr[0] "复装轻型步枪弹"
 
 #. ~ Description for reloaded light rifle ammo
 #: lang/json/AMMO_from_json.py
@@ -6491,7 +6492,7 @@ msgstr[0] "游牧装"
 msgid ""
 "A makeshift outfit made from pre-cataclysm clothing designed for long "
 "travels.  It has a lot of storage space."
-msgstr "一套由大灾变前的衣物制作的临时服装，有大量的置物空间，专为长途旅行设计。"
+msgstr "一套由大灾变前的衣物制作的临时服装，有大量的储存空间，专为长途旅行设计。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "plated leather armor"
@@ -6771,7 +6772,7 @@ msgid ""
 "ankles and wrists to prevent bees from flying in.  It's not very tough "
 "fabric, but light and has plenty of storage thanks to a chest pocket."
 msgstr ""
-"一套白色套装，通常是职业养蜂人穿戴，防止蜜蜂蛰。衣服的纤维不是很硬，在提供轻便之余，胸口的大袋子提供了不少的储物空间。\n"
+"一套白色套装，通常是职业养蜂人穿戴，防止蜜蜂蛰。衣服的纤维不是很硬，在提供轻便之余，胸口的大袋子提供了不少的储存空间。\n"
 "\"防的是小蜜蜂，而不是巨型蜜蜂和巨型黄蜂。\""
 
 #: lang/json/ARMOR_from_json.py
@@ -6846,7 +6847,7 @@ msgstr[0] "包袱挑"
 msgid ""
 "You're ready for a trip down some train tracks.  Also known as a hobo stick."
 msgstr ""
-"一件在棍子的一头绑上包着铺盖卷的大布头，提高一些储存空间，这东西也被称作流浪汉的铺盖卷。\n"
+"一件在棍子的一头绑上包着铺盖卷的大布头，能够为你提供一些储存空间，这东西也被称作流浪汉的铺盖卷。\n"
 "\"准备好沿着铁路流浪。\""
 
 #: lang/json/ARMOR_from_json.py
@@ -7053,7 +7054,7 @@ msgstr[0] "手提箱"
 #. ~ Description for briefcase
 #: lang/json/ARMOR_from_json.py
 msgid "Useful for carrying money, documents, or smuggled goods."
-msgstr "一个内部有空间可以容纳各种物件，装配有提手，便于的提起一个箱子。"
+msgstr "一个配有提手的箱子，内部可存放纸币、文档、或者是走私物品。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "briefs"
@@ -7209,7 +7210,7 @@ msgstr[0] "皮护腿"
 msgid ""
 "A pair of black leather chaps.  Very tough, and light, but doesn't offer any"
 " storage."
-msgstr "一条黑色的皮护腿。非常坚韧又轻盈，但是提供不了多少存储空间。"
+msgstr "一条黑色的皮护腿。非常坚韧又轻盈，但是提供不了多少储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "chestwrap"
@@ -7555,7 +7556,7 @@ msgstr[0] "恐龙套装"
 msgid ""
 "A full-body costume in the form of an anthropomorphic dinosaur.  It is quite"
 " encumbering and has little storage but is very warm."
-msgstr "一套全身恐龙外形的服装。十分累赘，而且没多少存储空间，但是非常暖和。"
+msgstr "一套全身恐龙外形的服装。十分累赘，而且没多少储存空间，但是非常暖和。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "dive bag"
@@ -7565,7 +7566,7 @@ msgstr[0] "潜水背包"
 #. ~ Description for dive bag
 #: lang/json/ARMOR_from_json.py
 msgid "A lightweight mesh backpack, commonly used by swimmers and divers."
-msgstr "一件很轻的潜水员用网眼背包，提供比较可观的储物空间。"
+msgstr "一件很轻的潜水员用网眼背包，提供比较可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "diver's watch"
@@ -7616,7 +7617,7 @@ msgstr[0] "连衣裙"
 msgid ""
 "A long cotton dress.  Though comfortable to wear, it lacks any storage "
 "space."
-msgstr "一件棉制长连衣裙。虽然穿着很舒适，但没有任何储物空间。"
+msgstr "一件棉制长连衣裙。虽然穿着很舒适，但没有任何储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "dress shirt"
@@ -7649,7 +7650,7 @@ msgstr[0] "行李袋"
 #: lang/json/ARMOR_from_json.py
 msgid ""
 "A huge duffel bag, provides plenty of storage but severely encumbering."
-msgstr "一个巨大的无纺布编织袋，提供了极其可观的存储空间，但相当的累赘。"
+msgstr "一个巨大的无纺布编织袋，提供了极其可观的储存空间，但相当的累赘。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "tactical dump pouch"
@@ -7661,7 +7662,7 @@ msgstr[0] "战术储存袋"
 msgid ""
 "An expandable pouch secured with straps.  Provides a bit of extra storage "
 "with minimal encumbrance."
-msgstr "一个可以张开的战术横腰袋，提供额外的储物空间。"
+msgstr "一个可以张开的战术横腰袋，提供额外的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "duster"
@@ -7671,7 +7672,7 @@ msgstr[0] "防尘风衣"
 #. ~ Description for duster
 #: lang/json/ARMOR_from_json.py
 msgid "A rugged full-length duster coat.  Has many pockets for storage."
-msgstr "一件结实的全身长棉制防尘风衣，提供比较可观的储物空间。"
+msgstr "一件结实的全身长棉制防尘风衣，提供比较可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "fur duster"
@@ -7681,7 +7682,7 @@ msgstr[0] "毛皮防尘风衣"
 #. ~ Description for fur duster
 #: lang/json/ARMOR_from_json.py
 msgid "A thick fur full-length duster coat.  Has many pockets for storage."
-msgstr "一件结实的全身长厚毛皮制防尘风衣，提供比较可观的储物空间。"
+msgstr "一件结实的全身长厚毛皮制防尘风衣，提供比较可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "leather duster"
@@ -7692,7 +7693,7 @@ msgstr[0] "皮制防尘风衣"
 #: lang/json/ARMOR_from_json.py
 msgid ""
 "A thick leather full-length duster coat.  Has many pockets for storage."
-msgstr "一件结实的全身长厚皮革防尘风衣，提供比较可观的储物空间。"
+msgstr "一件结实的全身长厚皮革防尘风衣，提供比较可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "survivor duster"
@@ -7704,7 +7705,7 @@ msgstr[0] "幸存者防尘风衣"
 msgid ""
 "A Kevlar armored custom full-length duster, covered with pouches and "
 "pockets.  Comfortable, durable, and great for storage."
-msgstr "一件凯夫拉强化的自制全身长防尘风衣，有许多的口袋，舒适、耐用，提供比较可观的储物空间。"
+msgstr "一件凯夫拉强化的自制全身长防尘风衣，有许多的口袋，舒适、耐用，提供比较可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "pair of ear plugs"
@@ -7787,7 +7788,7 @@ msgstr[0] "腰包"
 #. ~ Description for fanny pack
 #: lang/json/ARMOR_from_json.py
 msgid "Provides a bit of extra storage, with minimal encumbrance."
-msgstr "一件固定在腰间的小包，以极小的累赘换取部分额外的储物空间。"
+msgstr "一件固定在腰间的小包，以极小的累赘换取一点额外的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "fencing jacket"
@@ -7799,7 +7800,7 @@ msgstr[0] "击剑夹克"
 msgid ""
 "A padded jacket with the zipper on the back used by fencers to prevent "
 "accidents.  It doesn't have any storage room, but it is very comfortable."
-msgstr "一件拉链在背后、设计用于助于防止击剑等运动时发生意外击剑上衣。它没有储物空间，但相当舒适。"
+msgstr "一件拉链在背后、设计用于助于防止击剑等运动时发生意外击剑上衣。它没有储存空间，但相当舒适。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "fencing mask"
@@ -8093,7 +8094,7 @@ msgstr[0] "日食护目镜"
 #: lang/json/ARMOR_from_json.py
 msgid ""
 "A pair of cardboard-framed glasses with UV and IR-filtered lenses topped "
-"with a layer of aluminium coating.  They allow safely staring at extremely "
+"with a layer of aluminum coating.  They allow safely staring at extremely "
 "bright and harmful sources of light like the sun during a solar eclipse."
 msgstr ""
 "一副用硬纸板作为镜框的眼镜，在已经过UV及IR镀膜的镜片外又再用一层铝箔覆盖。这让佩戴者能够用眼睛安全直视非常亮的会伤眼的光源，例如日食时的太阳。"
@@ -8569,7 +8570,7 @@ msgstr[0] "羊毛大衣"
 #: lang/json/ARMOR_from_json.py
 msgid ""
 "A heavy, full-length wool coat.  Cumbersome, but warm and with deep pockets."
-msgstr "一件覆盖全身的、相当保暖的厚重羊毛大衣，提供比较可观的储物空间。"
+msgstr "一件覆盖全身的、相当保暖的厚重羊毛大衣，提供比较可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "survivor wetsuit"
@@ -9289,7 +9290,7 @@ msgstr[0] "轻型夹克"
 #. ~ Description for light jacket
 #: lang/json/ARMOR_from_json.py
 msgid "A thin cotton jacket with a hood.  Good for brisk weather."
-msgstr "一件有兜帽的棉制轻型夹克，储物空间不多且不保暖，但非常的轻便舒适。适合在天气凉爽时穿着。"
+msgstr "一件有兜帽的棉制轻型夹克，没有什么储存空间，还不保暖，但非常的轻便舒适。适合在天气凉爽时穿着。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "windbreaker"
@@ -9524,7 +9525,7 @@ msgstr[0] "连身衣"
 msgid ""
 "A thin, short-sleeved jumpsuit; similar to those worn by prisoners.  "
 "Provides decent storage and is not very encumbering."
-msgstr "一件轻薄的短袖连身衣。可以提供一些储藏空间，而且也不太累赘。"
+msgstr "一件轻薄的短袖连身衣。可以提供一些储存空间，而且也不太累赘。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "XL jumpsuit"
@@ -9537,7 +9538,7 @@ msgid ""
 "A thin, short-sleeved jumpsuit updated for the trans-human who needs full-"
 "body clothing.  Provides some storage and adjustable to minimize "
 "encumbrance."
-msgstr "一件轻薄的短袖连身衣，为某些需要全身着装的超人类所设计。可以提供一些储藏空间并经过调整以使累赘最低。"
+msgstr "一件轻薄的短袖连身衣，为某些需要全身着装的超人类所设计。可以提供一些储存空间，能够调整已使得累赘最低。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "karate gi"
@@ -9604,11 +9605,17 @@ msgid_plural "kilts"
 msgstr[0] "苏格兰短裙"
 
 #. ~ Description for kilt
+#. ~ Description for leather kilt
 #: lang/json/ARMOR_from_json.py
 msgid "No true Scotsman would leave home without his kilt."
 msgstr ""
 "一条苏格兰男性短裙，这是一种从腰部到膝盖的短裙，用花呢制作，布面有连续的大方格。\n"
 "\"穿上之后感觉自己成为了真正的纯爷们。\""
+
+#: lang/json/ARMOR_from_json.py
+msgid "leather kilt"
+msgid_plural "leather kilts"
+msgstr[0] "苏格兰皮短裙"
 
 #: lang/json/ARMOR_from_json.py
 msgid "kimono"
@@ -9733,7 +9740,7 @@ msgstr[0] "皮革小袋"
 msgid ""
 "A bag stitched together from leather scraps.  Doesn't hold an awful lot but "
 "is easy to wear."
-msgstr "这是一个由皮革简单缝制成的耐用小袋子，提供少量储物空间。"
+msgstr "这是一个由皮革简单缝制成的耐用小袋子，提供少量储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "leg splint"
@@ -10070,7 +10077,7 @@ msgstr[0] "简易背包"
 msgid ""
 "A pair of pants with bottom ends tied with the string, and then it passed "
 "through the belt loops so the knapsack can be carried on the back."
-msgstr "一条底部被绳索绑起来的裤子，绳索接着穿过皮带扣，使得整条裤子能够像背包背在背上，提供比较可观的储物空间。"
+msgstr "一条底部被绳索绑起来的裤子，绳索接着穿过皮带扣，使得整条裤子能够像背包背在背上，提供比较可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "makeshift sling"
@@ -10080,7 +10087,7 @@ msgstr[0] "简易肩背袋"
 #. ~ Description for makeshift sling
 #: lang/json/ARMOR_from_json.py
 msgid "A large sheet tied into a crude, over-the-shoulder sling."
-msgstr "用一块小床单折叠起来的简易过肩吊袋，提供比较客观的储物空间。"
+msgstr "用一块小床单折叠起来的简易过肩吊袋，提供比较可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "ballistic mask"
@@ -10290,7 +10297,7 @@ msgstr[0] "信使包"
 #: lang/json/ARMOR_from_json.py
 msgid "Light and easy to wear, but doesn't offer much storage."
 msgstr ""
-"一个常见的呈长方形、比较大的挎包，常见于邮递员投送报纸、信件时候所配备，提供比较可观的储物空间。\n"
+"一个常见的呈长方形、比较大的挎包，常见于邮递员投送报纸、信件时候所配备，提供比较可观的储存空间。\n"
 "\"这是今年的油网。\""
 
 #: lang/json/ARMOR_from_json.py
@@ -10314,7 +10321,7 @@ msgid ""
 "The Modular Lightweight Load-carrying Equipment is an advanced military "
 "backpack.  Covered with pockets and straps, it strikes a fine balance "
 "between storage space and encumbrance."
-msgstr "一件新一代模块化的改进型军用背包，相比普通背包它更加轻便舒适，且提供更可观的储物空间，取得了存货量与累赘度之间的完美平衡。"
+msgstr "一件新一代模块化的改进型军用背包，相比普通背包它更加轻便舒适，且提供更可观的储存空间，取得了储存空间与累赘度之间的完美平衡。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "motorcycle armor"
@@ -10802,7 +10809,7 @@ msgstr[0] "手提包"
 #. ~ Description for purse
 #: lang/json/ARMOR_from_json.py
 msgid "A bit cumbersome to wear, but provides some storage."
-msgstr "一个用于随身携带、有拎带的手提包，拿起来有些不便，提供比较可观的储物空间。"
+msgstr "一个用于随身携带、有拎带的手提包，拿起来有些不便，提供比较可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "quiver"
@@ -10876,7 +10883,7 @@ msgstr[0] "小袋子"
 msgid ""
 "A makeshift bag, cobbled together from rags.  Really gets in the way, but "
 "provides a decent amount of storage."
-msgstr "一个简易背包，由布条拼凑而成。用起来很碍事，但提供了一定的储物空间。"
+msgstr "一个简易背包，由布条拼凑而成。用起来很碍事，但提供了一定的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "gold ring"
@@ -10910,7 +10917,7 @@ msgstr[0] "军用背包"
 #. ~ Description for military rucksack
 #: lang/json/ARMOR_from_json.py
 msgid "A huge military rucksack, provides a lot of storage."
-msgstr "一个广泛用于士兵行军、远足者旅行的结实耐用的大背包，提供非常可观的储物空间。"
+msgstr "一个广泛用于士兵行军、远足者旅行的结实耐用的大背包，提供非常可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "runner pack"
@@ -10923,7 +10930,7 @@ msgid ""
 "The obvious choice for outdoor athletes, this ergonomic backpack is light "
 "and easy to wear, ensuring comfort when carrying heavy and bulky items."
 msgstr ""
-"一个设计严格符合人体工程学的轻便舒适小背包，提供少量的储物空间。\n"
+"一个设计严格符合人体工程学的轻便舒适小背包，提供少量的储存空间。\n"
 "\"信不信我可以在里面装着个大铁砧还能来个百米冲刺？\""
 
 #: lang/json/ARMOR_from_json.py
@@ -11132,7 +11139,7 @@ msgstr[0] "无袖防尘风衣"
 msgid ""
 "A rugged full-length duster that leaves your arms unencumbered.  Has plenty "
 "of storage space due to its many pockets."
-msgstr "一件耐用的、等身长的无袖防尘大衣，让你的手臂不受束缚。它有很多口袋，提供了相当充足的储物空间。"
+msgstr "一件耐用的、等身长的无袖防尘大衣，让你的手臂不受束缚。它有很多口袋，提供了相当充足的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "sleeveless fur duster"
@@ -11144,7 +11151,7 @@ msgstr[0] "无袖毛皮防尘风衣"
 msgid ""
 "A thick fur full-length duster without sleeves, leaving your arms "
 "unencumbered.  Has plenty of storage space due to its many pockets."
-msgstr "一件厚实的毛皮制的防尘罩衫，让你的手臂有足够的伸展自由。它有很多口袋，提供了相当充足的储物空间。"
+msgstr "一件厚实的毛皮制的防尘罩衫，让你的手臂有足够的伸展自由。它有很多口袋，提供了相当充足的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "sleeveless leather duster"
@@ -11180,7 +11187,7 @@ msgstr[0] "无袖风衣"
 msgid ""
 "A thin cotton trenchcoat that leaves your arms unencumbered.  Has plenty of "
 "storage space due to its many pockets."
-msgstr "一件无袖的轻薄棉制风衣。它有很多口袋，提供了相当充足的储物空间。"
+msgstr "一件无袖的轻薄棉制风衣。它有很多口袋，提供了相当充足的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "sleeveless fur trenchcoat"
@@ -11192,7 +11199,7 @@ msgstr[0] "无袖毛皮风衣"
 msgid ""
 "A thick fur trenchcoat without sleeves, leaving your arms unencumbered.  Has"
 " plenty of storage space due to its many pockets."
-msgstr "一件无袖的厚实毛皮风衣，让你的手臂不受束缚。它有很多口袋，提供了相当充足的储物空间。"
+msgstr "一件无袖的厚实毛皮风衣，让你的手臂不受束缚。它有很多口袋，提供了相当充足的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "sleeveless leather trenchcoat"
@@ -11204,7 +11211,7 @@ msgstr[0] "无袖皮制风衣"
 msgid ""
 "A thick leather trenchcoat without sleeves, leaving your arms unencumbered."
 "  Has plenty of storage space due to its many pockets."
-msgstr "一件无袖的厚实皮革风衣，让你的手臂不受束缚。它有很多口袋，提供了相当充足的储物空间。"
+msgstr "一件无袖的厚实皮革风衣，让你的手臂不受束缚。它有很多口袋，提供了相当充足的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "sleeveless survivor trenchcoat"
@@ -11238,7 +11245,7 @@ msgstr[0] "单肩挎包"
 msgid ""
 "A simple single-sling backpack.  Easier to access than a normal backpack, "
 "but can't comfortably hold as much."
-msgstr "一个单肩挎包，相比普通背包更加轻便，提供比较可观的储物空间。"
+msgstr "一个单肩挎包，相比普通背包更加轻便，提供比较可观的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "small relic"
@@ -11432,7 +11439,7 @@ msgid ""
 "A thin, short-sleeved and short-legged one-piece suit.  Judging by the odd "
 "tailoring and adjustment points...  maybe you don't want to know who wore "
 "it.  Provides nominal storage and is not very encumbering."
-msgstr "薄薄的、短袖和短腿的单件西装。由奇怪的剪裁和拼接来看…也许你不想知道是谁穿的了。它提供一定的存储空间，也不是很累赘。"
+msgstr "薄薄的、短袖和短腿的单件西装。由奇怪的剪裁和拼接来看…也许你不想知道是谁穿的了。提供了一定的储存空间，也不是很累赘。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "suit"
@@ -11459,7 +11466,7 @@ msgid ""
 "A huge wheeled suitcase used mainly for transporting clothes and other "
 "possessions during trips, provides a decent amount of storage but hauling it"
 " around is not fast nor comfortable."
-msgstr "一个主要用于旅行期间存放衣物和杂物的巨大轮式旅行箱，提供充足的的存储空间，但拉起来很累赘。"
+msgstr "一个主要用于旅行期间存放衣物和杂物的巨大轮式旅行箱，提供充足的储存空间，但拉起来很累赘。"
 
 #. ~ Description for suitcase
 #: lang/json/ARMOR_from_json.py
@@ -11467,7 +11474,7 @@ msgid ""
 "A mid-sized suitcase used mainly for transporting clothes and other "
 "possessions during trips, provides a decent amount of storage but hauling it"
 " around is not exactly comfortable."
-msgstr "一个主要用于旅行期间存放衣物和杂物的中型旅行箱，提供充足的的存储空间，但拉起来很累赘。"
+msgstr "一个主要用于旅行期间存放衣物和杂物的中型旅行箱，提供充足的储存空间，但拉起来很累赘。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "sundress"
@@ -11479,7 +11486,7 @@ msgstr[0] "吊带裙"
 msgid ""
 "A light and breezy cotton dress.  Though cool and comfortable to wear, it "
 "lacks any storage space."
-msgstr "一件轻便清凉的棉制吊带裙。虽然穿起来凉爽舒适，但没有任何存储空间。"
+msgstr "一件轻便清凉的棉制吊带裙。虽然穿起来凉爽舒适，但没有任何储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "pair of sunglasses"
@@ -11837,7 +11844,7 @@ msgstr[0] "风衣"
 #. ~ Description for trenchcoat
 #: lang/json/ARMOR_from_json.py
 msgid "A thin cotton trenchcoat, lined with pockets.  Great for storage."
-msgstr "一件薄的棉制风衣，缝着不少口袋，提供非常大的储物空间。"
+msgstr "一件薄的棉制风衣，缝着不少口袋，提供非常大的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "fur trenchcoat"
@@ -11847,7 +11854,7 @@ msgstr[0] "毛皮风衣"
 #. ~ Description for fur trenchcoat
 #: lang/json/ARMOR_from_json.py
 msgid "A thick fur trenchcoat, lined with pockets.  Great for storage."
-msgstr "一件厚厚的毛皮风衣，缝着不少口袋，提供非常大的存储空间。"
+msgstr "一件厚厚的毛皮风衣，缝着不少口袋，提供非常大的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "leather trenchcoat"
@@ -11857,7 +11864,7 @@ msgstr[0] "皮制风衣"
 #. ~ Description for leather trenchcoat
 #: lang/json/ARMOR_from_json.py
 msgid "A thick leather trenchcoat, lined with pockets.  Great for storage."
-msgstr "一件厚厚的皮革风衣，缝着不少口袋，提供非常大的存储空间。"
+msgstr "一件厚厚的皮革风衣，缝着不少口袋，提供非常大的储存空间。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "survivor trenchcoat"
@@ -12160,7 +12167,7 @@ msgstr[0] "狼人套装"
 msgid ""
 "A full body fursuit in the form of an anthropomorphic wolf.  It is quite "
 "encumbering and has little storage but is very warm."
-msgstr "一套全身狼人外形的毛皮套装。十分累赘，而且没多少存储空间，但是非常暖和。"
+msgstr "一套全身狼人外形的毛皮套装。十分累赘，而且没多少储存空间，但是非常暖和。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "wool hoodie"
@@ -15085,7 +15092,7 @@ msgstr "这个日志内有标明如何定期维护好管道，然而，一些记
 #: lang/json/BOOK_from_json.py
 msgid "chemical reference-CLASSIFIED"
 msgid_plural "chemical references-CLASSIFIED"
-msgstr[0] "化学品参考书-机密"
+msgstr[0] "化工参考资料（机密级）"
 
 #. ~ Description for chemical reference-CLASSIFIED
 #: lang/json/BOOK_from_json.py
@@ -15096,8 +15103,7 @@ msgid ""
 "methamphetamine and heroin, along with briefing on things called \"XE037\" "
 "and \"PE012\"."
 msgstr ""
-"这本活页夹的封面上有多个安全警告，称\"只允许本研究机构的永久研究人员参阅\"。里面记载了关于\"基本\"化学品的制作要点，还简略地提到了 "
-"\"XE037\" 和 \"PE012\"这两个意义不明的制剂名称。"
+"这本活页夹的封面上有着多个看上去挺吓人的安全警告，却声称研究所会\"终身雇佣\"任何越权的读者。里面记载了关于冰毒和海洛因之类\"基础化学品\"的制作要点，还简略地提到了\"XE037\"和\"PE012\"这两种意义不明的制剂。"
 
 #: lang/json/BOOK_from_json.py
 msgid "lab journal-x-|xp"
@@ -15993,7 +15999,7 @@ msgstr[0] "大农场建设企划书"
 msgid ""
 "A short paper of the economic viability of constructing an agricultural "
 "outpost."
-msgstr "一本薄薄的企划书，里面列举了如何盘活一间大型农场的各种企划方案。"
+msgstr "一本薄薄的企划书，里面列举了如何盘活一间大型农场基地的各种企划方案。"
 
 #. ~ Description for standpipe maintenance log
 #: lang/json/BOOK_from_json.py
@@ -16286,10 +16292,10 @@ msgid ""
 "Reviews of recently released computer games and previews of upcoming titles."
 msgstr ""
 "一本刊载最新发布游戏的评测以及未发售游戏介绍的游戏杂志，内含CDDA最新开发进度。\n"
-"内容：1.新增了奶牛场、饲养牲畜与挤奶等全新内容！\n"
-"           2.添加了若干全新变异！\n"
-"           3.安装生化插件有全新的文本提示！\n"
-"           4.Bug修复工作仍在进行中，0.D就要来了！ "
+"内容：1. 修改了若干物品描述，更严格的区分标点符号，同时让许多旧翻译失效。\n"
+"           2. 增加了许多毫无用途但更能模拟现实的计算函数。\n"
+"           3. 重写了部分代码，让我们能够发现之前隐藏的BUG。\n"
+"           4. Bug修复工作尚未开始，不过放心，0.D版本马上就要来了！ "
 
 #: lang/json/BOOK_from_json.py
 msgid "TIME magazine"
@@ -17772,7 +17778,7 @@ msgstr "一份用大自然的馈赠做成的美味的汤，极富营养价值。
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "sap soup"
-msgstr "香浓人肉汤"
+msgstr "浓情人肉汤"
 
 #. ~ Description for sap soup
 #: lang/json/COMESTIBLE_from_json.py
@@ -18741,7 +18747,7 @@ msgstr "一个浇头是辣椒肉酱的热狗，香辣可口。"
 #: lang/json/COMESTIBLE_from_json.py
 msgid "cheater chili dogs"
 msgid_plural "cheater chili dogs"
-msgstr[0] "人肉辣热狗"
+msgstr[0] "性感热狗"
 
 #. ~ Description for cheater chili dogs
 #: lang/json/COMESTIBLE_from_json.py
@@ -18813,7 +18819,7 @@ msgstr ""
 #: lang/json/COMESTIBLE_from_json.py
 msgid "Mannwurst gravy"
 msgid_plural "Mannwurst gravies"
-msgstr[0] "人肉香肠浓汤"
+msgstr[0] "人肉香肠浓情汤"
 
 #. ~ Description for Mannwurst gravy
 #: lang/json/COMESTIBLE_from_json.py
@@ -19054,8 +19060,8 @@ msgstr "一个被你加热过的美味夹心水果面包，上面甚至还有糖
 
 #. ~ Description for potato chips
 #: lang/json/COMESTIBLE_from_json.py
-msgid "A bag of cheap, own-brand chips."
-msgstr "一袋便宜的自产薯片，味道勉强合格。"
+msgid "Some plain, salted potato chips."
+msgstr "一份简单的加盐土豆片。"
 
 #. ~ Description for potato chips
 #: lang/json/COMESTIBLE_from_json.py
@@ -19063,13 +19069,15 @@ msgid "Oh man, you love these chips!  Score!"
 msgstr "哦，你喜欢这些薯片！"
 
 #: lang/json/COMESTIBLE_from_json.py
-msgid "nachos"
-msgid_plural "nachos"
-msgstr[0] "辣味玉米片"
+msgid "tortilla chips"
+msgid_plural "tortilla chips"
+msgstr[0] "墨西哥玉米片"
 
-#. ~ Description for nachos
+#. ~ Description for tortilla chips
 #: lang/json/COMESTIBLE_from_json.py
-msgid "Salted corn chips, could really use some cheese, maybe some beef."
+msgid ""
+"Salted chips made from corn tortillas, could really use some cheese, maybe "
+"some beef."
 msgstr "墨西哥式调味玉米片。再来点奶酪，或者是加点牛肉就更棒了。"
 
 #: lang/json/COMESTIBLE_from_json.py
@@ -19079,8 +19087,10 @@ msgstr[0] "奶酪辣味玉米片"
 
 #. ~ Description for nachos with cheese
 #: lang/json/COMESTIBLE_from_json.py
-msgid "Salted corn chips, now with cheese.  Could stand to have some meat."
-msgstr "墨西哥式调味玉米片，加了奶酪。再来点肉就更棒了。"
+msgid ""
+"Salted chips made from corn tortillas, now with cheese.  Could stand to have"
+" some meat."
+msgstr "墨西哥式调味玉米片。这份已经加了奶酪。再来点肉就更棒了。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "nachos with meat"
@@ -19090,8 +19100,9 @@ msgstr[0] "加肉辣味玉米片"
 #. ~ Description for nachos with meat
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
-"Salted corn chips, now with meat.  Could probably use some cheese, though."
-msgstr "墨西哥式调味玉米片，加了肉。再来点奶酪就更棒了。"
+"Salted chips made from corn tortillas, now with meat.  Could probably use "
+"some cheese, though."
+msgstr "墨西哥式调味玉米片。这份已经加了肉。再来点奶酪就更棒了。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "niño nachos"
@@ -19101,8 +19112,9 @@ msgstr[0] "niño辣味玉米片"
 #. ~ Description for niño nachos
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
-"Salted corn chips, with human flesh.  Some cheese might make it even better."
-msgstr "墨西哥式调味玉米片，加了人肉。再来点奶酪就更棒了。（注：原文niño在西班牙语中是孩子的意思）"
+"Salted chips made from corn tortillas, with human flesh.  Some cheese might "
+"make it even better."
+msgstr "墨西哥式调味玉米片。这份已经加了人肉。再来点奶酪就更棒了。（注：原文niño在西班牙语中是孩子的意思）"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "nachos with meat and cheese"
@@ -19112,7 +19124,8 @@ msgstr[0] "奶酪加肉辣味玉米片"
 #. ~ Description for nachos with meat and cheese
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
-"Salted corn chips with ground meat and smothered in cheese.  Delicious."
+"Salted chips made from corn tortillas with ground meat and smothered in "
+"cheese.  Delicious."
 msgstr "墨西哥式调味玉米片，加了肉末，又盖上一层奶酪。这才是正宗。"
 
 #: lang/json/COMESTIBLE_from_json.py
@@ -19123,7 +19136,8 @@ msgstr[0] "niño奶酪辣味玉米片"
 #. ~ Description for niño nachos with cheese
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
-"Salted corn chips with human flesh and smothered in cheese.  Delicious."
+"Salted chips made from corn tortillas with human flesh and smothered in "
+"cheese.  Delicious."
 msgstr "墨西哥式调味玉米片，加了人肉，又盖上一层奶酪，美味！（注：原文niño在西班牙语中是孩子的意思）"
 
 #: lang/json/COMESTIBLE_from_json.py
@@ -19247,7 +19261,7 @@ msgstr "一种类似果冻的蔬菜食物，只不过原料从水果变成了蔬
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "amoral aspic"
-msgstr "人肉冻"
+msgstr "肉冻小人"
 
 #. ~ Description for amoral aspic
 #: lang/json/COMESTIBLE_from_json.py
@@ -20363,7 +20377,7 @@ msgid ""
 "Humans might call this a Gray Delicious apple: large, gray, and smells even "
 "better than the Marloss.  If they didn't reject it for its alien origins.  "
 "But we know better."
-msgstr "人类也许称其为美味灰苹果：又大又灰，闻起来马洛斯莓更香。要不是他们因为这是异界起源而排斥它就好了。但我们更清楚。"
+msgstr "人类也许称其为美味灰苹果：又大又灰，闻起来比马洛斯莓更香。如果它们不要因为这是异界起源而排斥它就好了。但吾等更清楚。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "flour"
@@ -21020,7 +21034,7 @@ msgstr "一个美味的、满是肉的馅饼，香气四溢。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "prick pie"
-msgstr "人肉派"
+msgstr "人肉乐天派"
 
 #. ~ Description for prick pie
 #: lang/json/COMESTIBLE_from_json.py
@@ -21284,7 +21298,7 @@ msgid ""
 "pinch."
 msgstr ""
 "用盐腌制并真空包装的人肉片。很咸，但必要时很可口。  \n"
-"\"这份腌肉生前恼人的话很多，现在很安静了。\""
+"\"生前会口渴，死后会可口。\""
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "salted veggy chunk"
@@ -21329,7 +21343,7 @@ msgid ""
 " that kind of thing."
 msgstr ""
 "厚厚的人肉酱汁盖着的意大利面，如果你喜欢这东西的话会感到很美味。  \n"
-"\"可惜人类没有哪个部位可以做成面条......！\""
+"\"意大利传统美食。\""
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "spaghetti al pesto"
@@ -21354,7 +21368,7 @@ msgstr "非常古老的面食，由数层面饼与肉馅、酱汁烹制而成。
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "Luigi lasagne"
-msgstr "人肉千层面"
+msgstr "千人千面"
 
 #. ~ Description for Luigi lasagne
 #: lang/json/COMESTIBLE_from_json.py
@@ -21363,7 +21377,7 @@ msgid ""
 "alternated with sauces and meats.  Made better with human flesh."
 msgstr ""
 "非常古老的面食，由数层面饼与人肉馅、酱汁烹制而成。\n"
-"\"他以前很瘦，如今却千层下巴。\""
+"\"一千个人有一千种把人做成面条的方法！\""
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "mayonnaise"
@@ -21613,7 +21627,9 @@ msgstr[0] "仨明治"
 #. ~ Description for manwich
 #: lang/json/COMESTIBLE_from_json.py
 msgid "A sandwich is a sandwich, but this is made with people!"
-msgstr "一个填充了人肉成分的三明治。"
+msgstr ""
+"一个填充了人肉成分的三明治。\n"
+"\"著名的明治维新三杰，简称三明治。\""
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "taco"
@@ -21751,7 +21767,7 @@ msgid ""
 "nutritious if you're into that sort of thing."
 msgstr ""
 "一份爽口的罐装腌人肉。\n"
-"\"该死，又忘了放耳朵了，这罐肉听不见我说话。\""
+"\"该受害者被活活咸死。\""
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "chocolate-covered coffee bean"
@@ -22263,7 +22279,9 @@ msgstr[0] "脱水人肉"
 msgid ""
 "Dehydrated human flesh flakes.  With proper storage, this dried food will "
 "remain edible for an incredibly long time."
-msgstr "一些片装的脱水人肉，如果储存妥善，这种干燥的食物可以保存非常长的时间。"
+msgstr ""
+"一些片装的脱水人肉，如果储存妥善，这种干燥的食物可以保存非常长的时间。\n"
+"\"该受害者死于严重脱水。\""
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "rehydrated meat"
@@ -23395,7 +23413,9 @@ msgstr[0] "人肉"
 #. ~ Description for human flesh
 #: lang/json/COMESTIBLE_from_json.py
 msgid "Freshly butchered from a human body."
-msgstr "一份新鲜的人肉切片。"
+msgstr ""
+"一份新鲜的人肉切片。\n"
+"\"生人勿进。\""
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "cooked creep"
@@ -23406,7 +23426,7 @@ msgstr "熟人肉"
 msgid "A freshly cooked slice of some unpleasant person.  Tastes great."
 msgstr ""
 "一份烹熟的人肉片，味道好极了。\n"
-"\"切自某个令人讨厌的家伙。\""
+"\"生前可能不熟识，现在成为一份熟食。\""
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "chunk of meat"
@@ -24531,7 +24551,7 @@ msgstr "鼠类诱变血清"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "slime serum"
-msgstr "史莱姆诱变血清"
+msgstr "变形怪诱变血清"
 
 #. ~ Description for slime serum
 #: lang/json/COMESTIBLE_from_json.py
@@ -24650,7 +24670,7 @@ msgstr "老鼠诱变剂"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "slime mutagen"
-msgstr "史莱姆诱变剂"
+msgstr "变形怪诱变剂"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "spider mutagen"
@@ -25382,7 +25402,7 @@ msgstr[0] "卵状畸形体"
 msgid ""
 "If we left this as it should be, one could just walk into the Bloom "
 "uncontested and partake of the Fruit. We can't have that, can we?"
-msgstr "如果我们把它留在这儿，就会有人大摇大摆的走进花丛享用果实。我们不能让这种事发生，是不？"
+msgstr "如果吾等将其留在此处，就会有人大摇大摆地走进花丛享用果实。吾等不可让此事发生，是不是？"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "seed-shaped anomaly"
@@ -25394,7 +25414,7 @@ msgstr[0] "种子状畸形体"
 msgid ""
 "If we left this as it should be, one could just walk into the Garden "
 "uncontested and partake of the Seed. We can't have that, can we?"
-msgstr "如果我们把它留在这儿，就会有人大摇大摆的走进花园享用种子。我们不能让这种事发生，是不？"
+msgstr "如果吾等将其留在此处，就会有人大摇大摆地走进花园享用种子。吾等不可让此事发生，是不是？"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "gelatin"
@@ -25406,7 +25426,7 @@ msgstr[0] "马洛斯明胶"
 msgid ""
 "If we left this as it should be, one could just walk into the Spire "
 "uncontested and partake of the Sap. Wait, how did you even GET this anyway?"
-msgstr "如果我们把它留在这儿，就会有人大摇大摆的走进尖塔享用汁液。嘿等下，你怎么弄到这个东西的？"
+msgstr "如果吾等将其留在此处，就会有人大摇大摆的走进尖塔享用汁液。嘿，等等，你怎么弄到这个东西的？"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "fruit-shaped anomaly"
@@ -25418,7 +25438,7 @@ msgstr[0] "果实状畸变体"
 msgid ""
 "We do not exist at the moment. Clever little human, no doubt debugging to "
 "see this? We will not permit you to join us while we are modded out."
-msgstr "我们不应存在在这一时空，聪明的小小人类哟，你是用了调试模式吗，在完成设定之前，我们是不能允许你加入的。"
+msgstr "吾等不应存在在这一时空，聪明的小小人类哟，你是用了调试模式吗，在完成设定之前，吾等是不能允许你加入的。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "revival serum"
@@ -25441,7 +25461,7 @@ msgstr[0] "大水壶"
 #: lang/json/CONTAINER_from_json.py
 msgid ""
 "A large plastic water canteen, with a 2.5 liter capacity and carrying strap."
-msgstr "一个带有背带的大塑料水壶，能够容纳2.5升液体。"
+msgstr "一个带有背带的大塑料水壶，能够储存2.5升液体。"
 
 #: lang/json/CONTAINER_from_json.py
 msgid "30 gallon barrel"
@@ -25514,7 +25534,7 @@ msgstr[0] "玻璃瓶"
 #. ~ Description for glass bottle
 #: lang/json/CONTAINER_from_json.py
 msgid "A resealable glass bottle, holds 750 ml of liquid."
-msgstr "可再密封的玻璃瓶，能容纳750毫升的液体。"
+msgstr "可再密封的玻璃瓶，能储存750毫升的液体。"
 
 #: lang/json/CONTAINER_from_json.py
 msgid "plastic bottle"
@@ -25524,7 +25544,7 @@ msgstr[0] "塑料瓶"
 #. ~ Description for plastic bottle
 #: lang/json/CONTAINER_from_json.py
 msgid "A resealable plastic bottle, holds 500 ml of liquid."
-msgstr "可再密封的塑料瓶，能容纳500毫升液体。"
+msgstr "可再密封的塑料瓶，能储存500毫升液体。"
 
 #: lang/json/CONTAINER_from_json.py
 msgid "small plastic bottle"
@@ -25534,7 +25554,7 @@ msgstr[0] "小塑料瓶"
 #. ~ Description for small plastic bottle
 #: lang/json/CONTAINER_from_json.py
 msgid "A resealable plastic bottle, holds 250 ml of liquid."
-msgstr "可再密封的塑料瓶，能容纳250毫升液体。"
+msgstr "可再密封的塑料瓶，能储存250毫升液体。"
 
 #: lang/json/CONTAINER_from_json.py
 msgid "clay bowl"
@@ -25603,7 +25623,7 @@ msgstr[0] "水桶"
 #: lang/json/CONTAINER_from_json.py
 msgid ""
 "A galvanized bucket for peanuts, chilled wine, iced beer, lobster, crab "
-"legs, french fries, animal feed, farm use, tailgating, crafts, planting "
+"legs, French fries, animal feed, farm use, tailgating, crafts, planting "
 "flowers, holding gift baskets, containing a fruit basket and herbs, loose "
 "item storage or as an ice bucket."
 msgstr ""
@@ -25678,7 +25698,7 @@ msgstr[0] "军用水壶"
 msgid ""
 "A military-style water canteen with a 1.5 liter capacity.  Commonly worn at "
 "the hip."
-msgstr "一个结实的标准军用水壶，能够容纳1.5升液体。通常穿在臀部。"
+msgstr "一个结实的标准军用水壶，能够储存1.5升液体。通常穿在臀部。"
 
 #: lang/json/CONTAINER_from_json.py
 msgid "ceramic bowl"
@@ -26000,7 +26020,7 @@ msgstr[0] "木桶"
 msgid ""
 "Traditionally made of white oak; these vessels are known for delivering "
 "delicious whiskey to the future.  It has a capacity of 100 liters."
-msgstr "按照传统工艺制造，这些白橡木酒桶为未来的酒鬼们储备着人生希望（威士忌）。能够容纳100升液体。"
+msgstr "按照传统工艺制造，这些白橡木酒桶为未来的酒鬼们储备着人生希望（威士忌）。能够储存100升液体。"
 
 #: lang/json/CONTAINER_from_json.py
 msgid "paper wrapper"
@@ -29880,7 +29900,7 @@ msgstr "可折叠的精钢抓钩，系在一根30英尺长的尼龙绳上。有�
 #: lang/json/GENERIC_from_json.py
 msgid "sealed jar of pickles"
 msgid_plural "sealed jars of pickles"
-msgstr[0] "密封腌黄瓜罐头"
+msgstr[0] "密封腌黄瓜"
 
 #. ~ Use action menu_text for sealed jar of pickles.
 #. ~ Use action menu_text for sealed jar of sauerkraut.
@@ -30953,12 +30973,12 @@ msgstr "一套设计用于安装在载具上的锁。"
 #: lang/json/GENERIC_from_json.py lang/json/vehicle_part_from_json.py
 msgid "turret mount"
 msgid_plural "turret mounts"
-msgstr[0] "炮台底座"
+msgstr[0] "炮塔底座"
 
 #. ~ Description for turret mount
 #: lang/json/GENERIC_from_json.py
 msgid "A universal mount for weapons intended to be installed as turrets."
-msgstr "一个将武器安装为车载炮台的通用炮台底座。"
+msgstr "一个将武器安装为车载炮塔的通用炮塔底座。"
 
 #: lang/json/GENERIC_from_json.py
 msgid "The Spirit of Aikido"
@@ -31904,7 +31924,7 @@ msgstr[0] "车载厨房"
 msgid ""
 "A vehicle mountable electric range and sink unit with integrated tool "
 "storage for cooking utensils."
-msgstr "这是一个消耗电力的，附有水槽的部件，上面还集成了各种烹饪工具。它可以装在车上。"
+msgstr "一套使用车载电源供电的电热炉灶及其配套的水槽，有一个集成了各种烹饪工具的工具储存箱。"
 
 #: lang/json/GENERIC_from_json.py
 msgid "vehicle welding rig"
@@ -31943,7 +31963,7 @@ msgstr "一大块半加工的煤炭。"
 #: lang/json/GENERIC_from_json.py
 msgid "charged capacitor"
 msgid_plural "charged capacitors"
-msgstr[0] "充过电的电容"
+msgstr[0] "充电电容"
 
 #. ~ Description for charged capacitor
 #: lang/json/GENERIC_from_json.py
@@ -36101,7 +36121,7 @@ msgstr "一种源自于野猪的杂食性驯养后裔，既聪明又好奇，还
 
 #: lang/json/MONSTER_from_json.py
 msgid "slimespring"
-msgstr "史莱姆同胞"
+msgstr "变形怪同伴"
 
 #. ~ Description for slimespring
 #: lang/json/MONSTER_from_json.py
@@ -37507,7 +37527,7 @@ msgstr "鲑鱼"
 
 #. ~ Description for salmon
 #: lang/json/MONSTER_from_json.py
-msgid "A salmon.  A very fatty, nutricious fish.  Tastes great smoked."
+msgid "A salmon.  A very fatty, nutritious fish.  Tastes great smoked."
 msgstr "一条鲑鱼。非常肥美并且营养丰富。烟熏后味道好极了。"
 
 #: lang/json/MONSTER_from_json.py
@@ -37578,10 +37598,10 @@ msgid ""
 msgstr "一条变异的鲑鱼。差不多有大型犬的个头，对于经验不足的渔夫来说非常危险。"
 
 #: lang/json/MONSTER_from_json.py
-msgid "Lobster"
+msgid "lobster"
 msgstr "龙虾"
 
-#. ~ Description for Lobster
+#. ~ Description for lobster
 #: lang/json/MONSTER_from_json.py
 msgid ""
 "These things were once considered pests not worth eating, then some "
@@ -37590,10 +37610,10 @@ msgid ""
 msgstr "这些东西曾被认为是不堪食用的害虫，直到某些营销天才把美味的螯虾料理卖给消费者后，这玩意儿的知名度——还有价格——开始蹭蹭地飞涨。"
 
 #: lang/json/MONSTER_from_json.py
-msgid "Crayfish"
+msgid "crayfish"
 msgstr "螯虾"
 
-#. ~ Description for Crayfish
+#. ~ Description for crayfish
 #: lang/json/MONSTER_from_json.py
 msgid ""
 "If you could get ahold of a bunch more of these, a hefty pot of boiling "
@@ -37781,7 +37801,7 @@ msgstr "小不点啃蚀者"
 msgid ""
 "This horrifying little mutated wretch looks to have once been a child, but "
 "its massive gaping jaws are now far more suggestive of a predatory beast."
-msgstr "这个可怕的小型变异怪胎看上去曾经是一个小孩，但其巨大的大颚提醒着我们它其实是只肉食的野兽。"
+msgstr "这个可怕的小型变异怪胎看上去曾经是一个小孩，但其巨大的大颚让它看上去更像一只食肉的野兽。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "zombie child"
@@ -39178,7 +39198,7 @@ msgstr[0] "脏毛巾"
 msgid ""
 "This is a large towel, covered in a thick, gooey liquid.  You'll need to "
 "wash it in some water to make it usable again.  Don't panic."
-msgstr "一条沾着厚厚的粘稠史莱姆液体的大毛巾。鼓起勇气去把它洗一洗就可以重复使用了。"
+msgstr "一条沾着厚厚的粘稠的变形怪体液的大毛巾。鼓起勇气去把它洗一洗就可以重复使用了。"
 
 #: lang/json/TOOL_ARMOR_from_json.py
 msgid "straw fedora"
@@ -39768,8 +39788,8 @@ msgstr "一把为战斗而打造的巨斧。不过你注意到斧头没有被正
 #: lang/json/TOOL_from_json.py
 msgid ""
 "This is an ancient Chinese doubled-edged straight sword, with an ornate "
-"guard and a tassel attatched to the pommel.  One of the four major weapons "
-"in folklore, alongside the dao sabre, qiang spear, and gun staff."
+"guard and a tassel attached to the pommel.  One of the four major weapons in"
+" folklore, alongside the dao sabre, qiang spear, and gun staff."
 msgstr "一把古中国剑，双刃开锋，剑身长直，护手带有装饰，柄端附有流苏。民间传说中四大武器之一，其余三个是：刀、枪和棍。"
 
 #. ~ Description for jian
@@ -40372,14 +40392,14 @@ msgstr ""
 "未激活的激光炮塔。使用它以将它开启并放在地面上。此炮塔保证在用它那威力无比的转轮激光炮扫射丧尸时不会误伤自己。它需要日光照射以获取开火所需的能源。电子学和计算机学等级决定了你将其重新编程的成功几率。"
 
 #: lang/json/TOOL_from_json.py
-msgid "inactive antimateriel turret"
-msgid_plural "inactive antimateriel turrets"
+msgid "inactive anti-materiel turret"
+msgid_plural "inactive anti-materiel turrets"
 msgstr[0] "反器材炮塔（关）"
 
-#. ~ Description for inactive antimateriel turret
+#. ~ Description for inactive anti-materiel turret
 #: lang/json/TOOL_from_json.py
 msgid ""
-"This is an inactive antimateriel turret.  Using this item involves loading "
+"This is an inactive anti-materiel turret.  Using this item involves loading "
 "the unit with the factory-loaded .50 BMG Ball rounds in your inventory (if "
 "you wish to divide your ammunition, set aside whatever .50 BMG Ball you do "
 "NOT want to give the turret) turning it on, and placing it on the ground, "
@@ -40387,7 +40407,7 @@ msgid ""
 "turret will identify you as a friendly, and attack all enemies with a built-"
 "in rifle."
 msgstr ""
-"一座未激活的.50口径步枪炮塔。使用它时需打开它然后放在地上，同时装填会你物品栏内的对应.50口径弹药。放置后的炮塔会将你识别为友方，并采用内置步枪攻击附近的所有敌人。电子学和计算机学等级决定了你将其重新编程的成功几率。"
+"一座未激活的.50口径反器材步枪炮塔。使用它时需打开它然后放在地上，同时装填会你物品栏内的对应.50口径弹药。放置后的炮塔会将你识别为友方，并采用内置步枪攻击附近的所有敌人。电子学和计算机学等级决定了你将其重新编程的成功几率。"
 
 #: lang/json/TOOL_from_json.py
 msgid "inactive manhack"
@@ -42784,7 +42804,7 @@ msgstr "一把匕首，刀刃是磨利了的带尖儿废铁，刀柄是一块裹
 #: lang/json/TOOL_from_json.py
 msgid "makeshift machete"
 msgid_plural "makeshift machetes"
-msgstr[0] "土制砍刀"
+msgstr[0] "简易砍刀"
 
 #. ~ Description for makeshift machete
 #: lang/json/TOOL_from_json.py
@@ -44508,7 +44528,7 @@ msgid ""
 "This is a home-made explosive device, consisting of a large plastic jug "
 "filled with black gunpowder and scrap metal, equipped with a long fuse.  Use"
 " this item to light the fuse.  Should explode in no more than five turns..."
-msgstr "这是一个土制的爆炸装置，由一个装满了黑火药和废金属的大塑料罐制成，有根长长的引线。使用来点燃导火索。5轮以内就该爆炸了……"
+msgstr "这是一个自制的爆炸装置，由一个装满了黑火药和废金属的大塑料罐制成，有根长长的引线。使用来点燃导火索。5轮以内就该爆炸了……"
 
 #: lang/json/TOOL_from_json.py
 msgid "active black gunpowder charge"
@@ -44521,7 +44541,7 @@ msgid ""
 "This is a home-made explosive device, consisting of a large plastic jug "
 "filled with black gunpowder and scrap metal, whose fuse has been lit, its "
 "final countdown starting."
-msgstr "这是一个土制的爆炸装置，由一个装满了黑火药和废金属的大塑料罐制成，有根长长的引线已经被点着了。它即将迎来终结。"
+msgstr "这是一个自制的爆炸装置，由一个装满了黑火药和废金属的大塑料罐制成，有根长长的引线已经被点着了。它即将迎来终结。"
 
 #: lang/json/TOOL_from_json.py
 msgid "RDX charge"
@@ -48347,11 +48367,11 @@ msgstr "搭建防水帆布集雨器"
 
 #: lang/json/construction_from_json.py
 msgid "Harvest Blob Feed from Corpse Pit: Smash to Harvest"
-msgstr "从填满尸体的坑中收获变形怪培养物：粉碎来收割"
+msgstr "从填满尸体的坑中收获变形怪培养物：砸碎来收获"
 
 #: lang/json/construction_from_json.py
 msgid "Harvest Blob Feed from Slime: Smash to Harvest"
-msgstr "从史莱姆中收获变形怪培养物：粉碎来收割"
+msgstr "从粘液中收获变形怪培养物：砸碎来收获"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about lizards."
@@ -48359,7 +48379,7 @@ msgstr "你做了一个关于蜥蜴的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange scaly feeling."
-msgstr "你的梦给予了你皮肤鳞片化的奇怪感觉。"
+msgstr "你的梦给你一种全身长满鳞片的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid ""
@@ -48368,23 +48388,23 @@ msgstr "你做了一个被禁闭在恐怖医院里的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you an oddly medicated feeling."
-msgstr "你做了一个仿佛嗑药的怪梦。"
+msgstr "你的梦给你一种嗑了药的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about birds."
-msgstr "你做了一个奇怪的梦，梦到了飞鸟。"
+msgstr "你做了一个关于飞鸟的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange feathered feeling."
-msgstr "你梦到你长出了羽毛。"
+msgstr "你的梦给你一种全身长出羽毛的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about fish."
-msgstr "你做了一个关于鱼的奇怪的梦。"
+msgstr "你做了一个关于鱼的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange wet, scaly feeling."
-msgstr "你的梦给你一种奇怪的浑身潮湿和长出鳞片的感觉。"
+msgstr "你的梦给你一种浑身潮湿和长出鳞片的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about animals."
@@ -48392,7 +48412,7 @@ msgstr "你做了一个关于动物的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange furry feeling."
-msgstr "你的梦给你一种奇怪的长毛的感觉。"
+msgstr "你的梦给你一种浑身长毛的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about bears."
@@ -48400,7 +48420,7 @@ msgstr "你做了一个关于熊的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a rough furry feeling."
-msgstr "你梦见自己变得毛乎乎的。"
+msgstr "你的梦给你一种浑身毛乎乎的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about cats."
@@ -48408,7 +48428,7 @@ msgstr "你做了一个关于猫的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a sleek furry feeling."
-msgstr "你梦见自己变得毛茸茸的。"
+msgstr "你的梦给你一种浑身毛绒绒的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about wolves."
@@ -48416,7 +48436,7 @@ msgstr "你做了一个关于狼的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a thick furry feeling."
-msgstr "你梦见自己变得毛糙糙的。"
+msgstr "你的梦给你一种浑身毛糙糙的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about cattle."
@@ -48424,7 +48444,7 @@ msgstr "你做了一个关于牛的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange content, furry feeling."
-msgstr "你的梦给你一种莫名的满足和浑身长毛的感觉。"
+msgstr "你的梦给你一种浑身长毛且满足的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about insects."
@@ -48432,7 +48452,7 @@ msgstr "你做了一个关于昆虫的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange chitinous feeling."
-msgstr "你的梦给你一种奇怪的长出甲壳的感觉。"
+msgstr "你的梦给你一种长出甲壳的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about plants."
@@ -48440,23 +48460,23 @@ msgstr "你做了一个关于植物的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange plantlike feeling."
-msgstr "你的梦给你一种奇怪的像植物一样的感觉。"
+msgstr "你的梦给你一种像植物一样的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about slime."
-msgstr "你做了一个关于史莱姆的怪梦。"
+msgstr "你做了一个关于变形怪的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange slimy feeling."
-msgstr "你的梦给你一种奇怪的浑身粘粘的感觉。"
+msgstr "你的梦给你一种浑身黏糊糊的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about living in a cave."
-msgstr "你做了一个关于生活在洞穴里的怪梦。"
+msgstr "你做了一个关于洞穴生活的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give a strange reclusive feeling."
-msgstr "你的梦给你一种奇怪的与世隔绝的感觉。"
+msgstr "你的梦给你一种与世隔绝的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about sea creatures."
@@ -48464,7 +48484,7 @@ msgstr "你做了一个关于海洋生物的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange wet feeling."
-msgstr "你的梦给你一种奇怪的浑身潮湿的感觉。"
+msgstr "你的梦给你一种浑身潮湿的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about spiders."
@@ -48472,7 +48492,7 @@ msgstr "你做了一个关于蜘蛛的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange webbed feeling."
-msgstr "你的梦给你一种奇怪的网状的感觉。"
+msgstr "你的梦给你一种被网包围的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream about rats."
@@ -48480,11 +48500,11 @@ msgstr "你做了一个关于老鼠的怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams give you a strange fuzzy feeling."
-msgstr "你的梦给你一种奇怪的长毛的感觉。"
+msgstr "你的梦给你一种毛茸茸的奇怪感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream."
-msgstr "你做了一个奇怪的梦。"
+msgstr "你做了一个怪梦。"
 
 #: lang/json/dream_from_json.py
 msgid "You feel...OK."
@@ -48492,15 +48512,15 @@ msgstr "你感觉……不错。"
 
 #: lang/json/dream_from_json.py
 msgid "You feel a yearning..."
-msgstr "你有种向往的感觉……"
+msgstr "你内心有种渴望……"
 
 #: lang/json/dream_from_json.py
 msgid "You dream about the zoo, for some reason."
-msgstr "你不知道为什么梦到了动物园。"
+msgstr "你不知道为什么，梦到了动物园。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dreams...are complex and multifaceted."
-msgstr "你的梦…变得复杂而多变。"
+msgstr "你的梦……复杂而多变。"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of the tropics."
@@ -48512,23 +48532,23 @@ msgstr "你感觉到一阵暖流。"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of a strange quest for a bush that grows gray apples."
-msgstr "你梦见一次奇特的追寻，不断追寻着一种会生长灰色苹果的树丛。"
+msgstr "你梦见自己正在奇怪地寻找一种能够长出灰色苹果的灌木丛。"
 
 #: lang/json/dream_from_json.py
 msgid "You feel like you're cracking a combination lock."
-msgstr "你觉得你好像在破解一把组合锁。"
+msgstr "你梦见自己好像在破解一把组合锁。"
 
 #: lang/json/dream_from_json.py
 msgid "Red, blue, and yellow cancel each other out, don't they?"
-msgstr "红色，蓝色，黄色的相互抵消，不是吗？"
+msgstr "红色，蓝色，黄色会相互抵消，不是吗？"
 
 #: lang/json/dream_from_json.py
 msgid "Red, blue, and yellow add together, don't they?"
-msgstr "红色，蓝色，黄色混在一起，不是吗？"
+msgstr "红色，蓝色，黄色会混在一起，不是吗？"
 
 #: lang/json/dream_from_json.py
 msgid "You have a disturbing dream of bathing in the sun on a rock."
-msgstr "你做了一个让人心烦的梦，梦里你在岩石上晒太阳。"
+msgstr "你做了一个令人不安的梦，梦里你在岩石上晒太阳。"
 
 #: lang/json/dream_from_json.py
 msgid ""
@@ -48559,7 +48579,7 @@ msgstr "你梦见自己在海洋里遨游。"
 
 #: lang/json/dream_from_json.py
 msgid "In your dream, you see a strangely fishlike image of yourself."
-msgstr "在梦里，你看见自己变得像鱼一样的奇异景象。"
+msgstr "在梦里，你看见自己奇怪的像鱼一样的身影。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a vivid dream of hunting in the woods."
@@ -48567,7 +48587,7 @@ msgstr "你做了一个在树林里打猎的生动的梦。"
 
 #: lang/json/dream_from_json.py
 msgid "Whilst dreaming, you see a disturbingly bestial version of yourself."
-msgstr "在梦里，你看见了自己奇特的野兽般的第一视角。"
+msgstr "在梦里，你看见了自己奇怪的像野兽般的身影。"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of foraging in the woods...mouth-first?"
@@ -48575,11 +48595,11 @@ msgstr "你梦见自己在丛林中觅食……咬上去吗？"
 
 #: lang/json/dream_from_json.py
 msgid "Your dream-reflection is rather bearish."
-msgstr "在梦里，你用熊的方式思考。"
+msgstr "在梦里，你不自觉地用熊的方式思考。"
 
 #: lang/json/dream_from_json.py
 msgid "You easily bound from the street to a roof..oh, only a dream."
-msgstr "你纵身一跃，从大街上跳到了屋顶——啊，只是个梦而已。"
+msgstr "你纵身一跃，从大街上跳到了屋顶……啊，只是个梦而已。"
 
 #: lang/json/dream_from_json.py
 msgid "As you dream, your reflection looks rather catlike."
@@ -48610,15 +48630,15 @@ msgstr "你做了一个梦，梦见自己在一个巢穴中行走。"
 msgid ""
 "While dreaming you look into a mirror and see a frighteningly insectoid "
 "reflection."
-msgstr "在梦里你看着一面镜子，镜中的倒影是一个吓人的昆虫人。"
+msgstr "在梦里，你看见了自己奇怪的像昆虫一样的身影。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a confusing dream of growing in a garden."
-msgstr "你做了一个令人困扰的梦，在梦中你正在一个花园中着茁壮成长。"
+msgstr "你做了一个令人困扰的梦，在梦中你正在一个花园中茁壮成长。"
 
 #: lang/json/dream_from_json.py
 msgid "You are confused by a plantlike image of yourself in a dream."
-msgstr "你很困惑的发现在一个梦里，你自己看上去很像一株植物。"
+msgstr "在梦里，你看见了自己奇怪的像植物一样的身影。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a strange dream of living in sludge."
@@ -48626,7 +48646,7 @@ msgstr "你做了一个奇怪的梦，梦见自己生活在一个烂泥潭中。
 
 #: lang/json/dream_from_json.py
 msgid "In your dream you see an odd, slimy reflection of yourself."
-msgstr "在你的梦中你发现自己的倒影是一团粘糊糊的奇怪生物。"
+msgstr "在梦里，你看见了自己奇怪的像软泥一样的身影。"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of living deep inside a dark cave."
@@ -48638,7 +48658,7 @@ msgstr "你梦见自己变成了一个原始穴居人。"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of living on the ocean floor."
-msgstr "你梦见自己生活在海床上，游来游去好好玩哎~"
+msgstr "你梦见自己生活在深海之中。"
 
 #: lang/json/dream_from_json.py
 msgid ""
@@ -48651,7 +48671,7 @@ msgstr "你做了一个奇怪的梦，梦见自己在吐丝做网。"
 
 #: lang/json/dream_from_json.py
 msgid "In your dream you see a very spiderlike version of yourself."
-msgstr "在你的梦中，你看到了一个极度蜘蛛化的你自己。"
+msgstr "在梦里，你看见了自己奇怪的像蜘蛛一样的身影。"
 
 #: lang/json/dream_from_json.py
 msgid "You vividly dream of living in the sewers."
@@ -48669,24 +48689,24 @@ msgstr "你梦到自己回到了过去的世界，幸福地追求自己的梦想
 
 #: lang/json/dream_from_json.py
 msgid "Your dream-self looks competent and in control."
-msgstr "你的梦表现的非常自律和冷静。"
+msgstr "在梦里，你看见了自己非常能干而冷静，一切尽在掌握。"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of a home in the forests."
-msgstr "你梦见一个在森林中的家园。"
+msgstr "你做了一个生动鲜明的梦，梦见自己生活在森林之中。"
 
 #: lang/json/dream_from_json.py
 msgid "You feel beautiful, and yet riven with worry..."
-msgstr "你感觉到自己很漂亮，但又被烦恼所撕裂……"
+msgstr "你梦见自己很漂亮，但又被烦恼所撕裂……"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "You can't quite work out what the dream is about...it just keeps changing."
-msgstr "你无法表达出你的怪梦……它不停的在变幻。"
+msgstr "你不太能理解你的怪梦……它不停的在变幻。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dream is filled with creatures, and yet all seem like you."
-msgstr "你的梦境充斥了各种生物，但是它们看起来都和你差不多。"
+msgstr "你的梦境充斥了各种生物，而且你看上去和它们都有点像。"
 
 #: lang/json/dream_from_json.py
 msgid ""
@@ -48697,7 +48717,7 @@ msgstr "在梦中，你悄悄地接近一群蜥蜴……喂，这是在做梦吧
 msgid ""
 "For some reason you dream of your shoes.  They don't fit, and nothing seems "
 "to help..."
-msgstr "因为某些原因你梦到了你的鞋子，它们不合脚，你没法解决这个问题。"
+msgstr "不知为何，你梦见了自己的鞋子。它们再也不合脚了，而且无论如何都帮不了你……"
 
 #: lang/json/dream_from_json.py
 msgid "You are terrified by a dream of becoming a lizard hybrid."
@@ -48749,7 +48769,7 @@ msgstr "一场真实而恐怖的梦境，你梦见自己正在用锋利的獠牙
 msgid ""
 "Your dream of raiding a giant beehive has you licking your...muzzle in "
 "anticipation."
-msgstr "梦中，你疯狂的跪舔着一个蜂巢……用你的口器……嗯？口器。"
+msgstr "梦中，你疯狂的跪舔着一个蜂巢……当然，如预料一般带着口套。"
 
 #: lang/json/dream_from_json.py
 msgid ""
@@ -48769,7 +48789,7 @@ msgstr "梦里，你追逐并杀掉了一只老鼠……不过为什么？"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of tearing into a fresh kill."
-msgstr "你梦见在杀戮中拼命的撕扯。"
+msgstr "你梦见自己的爪子撕碎了新鲜的猎物。"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of finally finding the perfect place to make your den."
@@ -48777,23 +48797,23 @@ msgstr "梦中，你终于找到了絮窝的理想地点。"
 
 #: lang/json/dream_from_json.py
 msgid "You terrifyingly dream of being led to a slaughterhouse by a farmer."
-msgstr "你很糟糕的梦见自己正在被一只农夫领着走向屠宰场。"
+msgstr "你做了一个很糟糕的梦，梦见自己正被农夫领着走向屠宰场。"
 
 #: lang/json/dream_from_json.py
 msgid "You find it hard to wake from a vivid dream of grazing on a farm."
-msgstr "你发现自己很难从一个梦中苏醒过来，梦里你正在草场中\"被\"放牧。"
+msgstr "你很不情愿的从一个逼真的梦中醒来，梦中你安静地吃着草。"
 
 #: lang/json/dream_from_json.py
 msgid "You are terrified by a dream of serving the hive queen mindlessly."
-msgstr "你很糟糕的梦到自己正在无意识的伺候着蜂后。"
+msgstr "你很惊恐地从梦中醒来，梦中你变成了一个没有自主意识、服务于蜂后的工蜂。"
 
 #: lang/json/dream_from_json.py
 msgid "Your disturbingly lifelike dream has you pollinating plants."
-msgstr "你很困扰的梦见自己正在给花儿授粉。"
+msgstr "你做了一个很令人不安而又十分逼真的梦，梦中你在给花儿授粉。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a confusing and scary dream of becoming a plant."
-msgstr "你做了一个很吓人的梦，梦见自己变成了一株植物。"
+msgstr "你做了一个困惑而吓人的梦，梦见自己变成了一株植物。"
 
 #: lang/json/dream_from_json.py
 msgid ""
@@ -48803,13 +48823,13 @@ msgstr "梦里变成一株植物的感觉正在逐渐变为现实，这种感觉
 
 #: lang/json/dream_from_json.py
 msgid "Your vivid dream of living as a slime blob frightens you."
-msgstr "你很生动的梦见自己变成了一只史莱姆，太恐怖了！"
+msgstr "你很生动的梦见自己变成了一只变形怪，太恐怖了！"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "You find it hard to control your limbs after dreaming of amorphous blob "
 "life."
-msgstr "你从变成史莱姆的梦中醒来以后，发现自己几乎无法控制自己的双腿了。"
+msgstr "你从变成变形怪的梦中醒来以后，发现自己几乎无法控制自己的四肢了。"
 
 #: lang/json/dream_from_json.py
 msgid "Your dream of living in the dark for years is almost real."
@@ -48842,12 +48862,12 @@ msgstr "你梦见自己正在被一只猫追捕，太吓人了！"
 
 #: lang/json/dream_from_json.py
 msgid "Your lifelike dreams have you scavenging food with a pack of rats."
-msgstr "你很生动的梦见自己正在和一群鼠伙伴分享食物。"
+msgstr "你很生动的梦见自己正在和一群老鼠伙伴搜寻食物。"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "You see yourself, five years from now, as the leader of a successful city."
-msgstr "你梦见了五年后的自己，一个成功的受人敬仰的城市首领。"
+msgstr "你梦见了五年后的自己，一位成功的受人敬仰的市长。"
 
 #: lang/json/dream_from_json.py
 msgid "Your success in restoring civilization was only a dream.  For now."
@@ -48859,7 +48879,7 @@ msgstr "不！你不会让这腐化战胜自己的！"
 
 #: lang/json/dream_from_json.py
 msgid "You see yourself reflected in the beauty of the forest."
-msgstr "你看见森林的美丽中倒映出你自己的身影"
+msgstr "你在梦中看见了自己美丽的身影，森林的美景全都在你身上映射出来。"
 
 #: lang/json/dream_from_json.py
 msgid "You are many animals, and yet one."
@@ -48890,17 +48910,17 @@ msgstr "你愉快的梦到在太阳底下的日子。"
 msgid ""
 "You dream of your legions of undead admirers, their attentions, and the "
 "wonderful pain."
-msgstr "你梦到了你是不死军团的崇拜者，以及他们的关注，和美妙的痛苦。"
+msgstr "你梦到了那一大群无数不死崇拜者，它们对你的关注，以及那美妙的痛苦感觉。"
 
 #: lang/json/dream_from_json.py
 msgid "You wonder if your nest will be good enough."
-msgstr "你在梦里纠结自己的巢是否已经足够完善。"
+msgstr "你梦见你在纠结自己建造的鸟巢是否足够结实。"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "Your dream of soaring over the landscape becomes a nightmare when you find "
 "yourself with arms and a glider!"
-msgstr "你在空中翱翔的美梦因为不必要的手臂和滑翔翼变成了噩梦。"
+msgstr "你梦见自己翱翔蓝天，俯瞰美景，而你发现自己还有着手臂和滑翔器，这个梦变成了梦魇。"
 
 #: lang/json/dream_from_json.py
 msgid "You have a comforting dream of swimming with a school of fish."
@@ -48910,7 +48930,7 @@ msgstr "你做了一个治愈系的梦，梦见自己在和一群小鱼伙伴们
 msgid ""
 "The thought of being out of water, forced to crawl unsupported, terrifies "
 "you."
-msgstr "梦见自己被捉出水面，在地面上不停的扑腾。你差点被吓出翔。"
+msgstr "你梦见自己被捉出水面，在地上不停扑腾，这个噩梦吓坏了你。"
 
 #: lang/json/dream_from_json.py
 msgid "You vividly dream of sharing a kill with your pack."
@@ -48924,21 +48944,21 @@ msgstr "一段咬开猎物喉咙的美妙回忆出现在你的梦里。"
 msgid ""
 "You wonder if you could find one of those 'salmon runs', or if they were "
 "just a legend..."
-msgstr "你在梦里疑惑你是否可以找到\"鲑鱼跃龙门\"的地方，或者这只是一个传说……"
+msgstr "你在梦中四处寻找那些可以\"嘴接鲑鱼\"的地方，或者那只是一个传说……"
 
 #: lang/json/dream_from_json.py
 msgid "Ah, the wolf-slaying dream again.  That's a good one..."
-msgstr "哈，有一个杀光恶狼的梦。这个还不错……"
+msgstr "哈，又是一个杀狼的梦。这个还不错……"
 
 #: lang/json/dream_from_json.py
 msgid "Boing!  and you've pounced another yummy critter."
-msgstr "扑通！你抓到了又一个美味的可怜虫。"
+msgstr "扑通！你又抓到了一个美味的可怜虫。"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "Your nightmare of sentient rats turns successful, as you grab their King and"
 " shake it apart!"
-msgstr "在梦中你最终成功的成为了有意识老鼠们的梦魇，你抓住了鼠王，并把它撕成了碎片！"
+msgstr "在梦中你最终成功地成了所有聪明老鼠们的梦魇，你抓住了鼠王，并把它撕成了碎片！"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of the hunt, the feed, and your pack."
@@ -48946,11 +48966,11 @@ msgstr "你梦到了捕猎，进食，还有你的狼群。"
 
 #: lang/json/dream_from_json.py
 msgid "Oh, you should really patrol your territory again, maybe expand."
-msgstr "哦，你真心需要再次巡逻你的领地了，或许扩张一下会更好。"
+msgstr "哦，你真心需要再次巡逻你的领地了，或许是时候扩张下领地了。"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of jumping the gate and leading your herd to freedom."
-msgstr "你梦到你带领你的族群跳跃大门奔向自由。"
+msgstr "你梦到你带领你的族群跃过大门奔向自由。"
 
 #: lang/json/dream_from_json.py
 msgid "The herd moves along and you with them, finding greener pastures."
@@ -48958,34 +48978,34 @@ msgstr "兽群不断的前进，奔向更加青翠的草场，你是其中之一
 
 #: lang/json/dream_from_json.py
 msgid "You feel smug, knowing that the Queen is dependent on you."
-msgstr "想想女王都对自己有几分依赖，你不禁有几分自得。"
+msgstr "想想蜂后都需要依靠自己，你不禁有几分自得。"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "You dream of a weirdly shaped plant, whose nectar surpassed your every "
 "wish..."
-msgstr "你梦到一株奇形怪状的植物，其花蜜实乃琼浆玉露，穷极幻想。"
+msgstr "你梦到一株奇形怪状的植物，其花蜜如同琼浆玉露，超过了你的幻想……"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of bees fighting over your sweet nectar.  Mmm."
-msgstr "你梦到蜜蜂为了你甘甜的花蜜争斗。好滋味～。"
+msgstr "你梦到一群蜜蜂为了你甘甜的花蜜而争斗。感觉真好。"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "A rather attractive triffid offers you a bouquet of ape heads.  How "
 "thoughtful!"
-msgstr "一个挺有魅力的三尖树送了你一束\"猿\"脑袋，太创意了！"
+msgstr "一个富有魅力的三尖树送了你一束\"猿\"脑袋，太体贴了！"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "Your vivid dream of your pseudopods calcifying into rigid structures "
 "terrifies you."
-msgstr "你生动的梦到你的假足钙化成了坚硬的结构，太可怕了！"
+msgstr "你十分逼真地梦见自己的假足钙化成了坚硬结构，太可怕了！"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "Ah, the painting-the-planet dream again.  Maybe if you assimilated more..."
-msgstr "啊，又是关于\"星球染色\"的梦。或许你应该吸收更多东西……"
+msgstr "啊，又是关于\"星球染色\"的梦。或许你应该进一步同化下……"
 
 #: lang/json/dream_from_json.py
 msgid ""
@@ -49003,7 +49023,7 @@ msgstr "嗯……又是这个贝壳梦。好美味！"
 
 #: lang/json/dream_from_json.py
 msgid "You dream of recruiting a cult of fishfolk to serve your needs."
-msgstr "你梦到你纠集了一群小鱼来为你的需求服务。"
+msgstr "你梦见自己招募了一群鱼人邪教徒来为你服务。"
 
 #: lang/json/dream_from_json.py
 msgid "You excitedly web up an interloper and prepare to feast...nope, dream."
@@ -49015,7 +49035,7 @@ msgstr "梦到过着没有网的生活，你被吓到了。"
 
 #: lang/json/dream_from_json.py
 msgid "The Fury is so big!  It's GONNA GET YOAAAAAH! *pant* only a dream."
-msgstr "这份狂怒大到马上吼出来！啪，只是一个梦。"
+msgstr "哇，这只毛绒绒的猫猫怎么这么大！它马上就要把我……哇哇哇哇！*啪嗒*还好只是一个梦。"
 
 #: lang/json/dream_from_json.py
 msgid "You find your paws twitching.  There's a cave.  You should go."
@@ -49034,59 +49054,59 @@ msgstr "这个世界隐藏着许多\"缺陷\"，一些需要你来纠正的\"缺
 #: lang/json/dream_from_json.py
 msgid ""
 "You pant, terrified at the thought of that FUNGUS destroying your home!"
-msgstr "你被真菌正在摧毁你的家园的噩梦惊醒了！"
+msgstr "你被真菌正在摧毁你的家园的噩梦惊醒了，气喘吁吁！"
 
 #: lang/json/dream_from_json.py
 msgid "You wish others could understand, and join your struggle..."
-msgstr "你希望别人能理解，并和你一起奋斗……"
+msgstr "你希望别人能理解你对森林的爱，并和你一起奋斗……"
 
 #: lang/json/dream_from_json.py
 msgid "Your body flows slightly faster than you expected... oh, just a dream."
-msgstr "你的身体流动的比你预期中要快……哦，只是一个梦。"
+msgstr "你觉得体内的血液流动地比你预期中要快……哦，只是一个梦。"
 
 #: lang/json/dream_from_json.py
 msgid "FIGHT.  FEED.  FORWARD."
-msgstr "战斗。进食。前行。"
+msgstr "战斗！进食！前行！"
 
 #: lang/json/dream_from_json.py
 msgid "Oh.  No, that 'rex' thing was only a myth."
-msgstr "哦，不。那些有趣的事情都只是一场梦。"
+msgstr "哦，不。那些所谓\"霸王龙\"只是一场梦。"
 
 #: lang/json/dream_from_json.py
 msgid "You stir, saddened that your beautiful hatchlings were only a dream."
-msgstr "你好失落，你那些漂亮的幼鸟只是一场梦。"
+msgstr "你好失落，你那些刚刚孵化的漂亮幼崽只是一场梦。"
 
 #: lang/json/dream_from_json.py
 msgid "We have been waiting a long time for a place such as this."
-msgstr "我们为这样一个地方已经等了好久。"
+msgstr "吾等为此时此地已等待多时。"
 
 #: lang/json/dream_from_json.py
 msgid "We will raise bountiful orchards and beautiful gardens."
-msgstr "我们将建起丰美的果园和美丽的花园。"
+msgstr "吾等将建起丰美的果园及美丽的花园。"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "The walking plants seek to harness us as a food source.  We will not allow "
 "that."
-msgstr "这些会走路的植物们想要将我们作为食物来源。我们不会允许。"
+msgstr "那些会走路的植物把吾等当作食物。吾等将阻止它们。"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "Our colonists are limitless.  We shall adapt to this world, as we adapt to "
 "all."
-msgstr "我们的殖民者无穷无尽。我们会适应这个世界，就像我们适应一切那样。"
+msgstr "吾等开拓者无穷无尽。吾等将改造这个世界，一如吾等所曾改造过的所有一切。"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "Non-Mycus sometimes reject the Marloss.  Our colonial efforts flourish with "
 "broad-minded guidance."
-msgstr "非马卡斯们有时会排斥马洛斯莓。我们的殖民们应以宽宏大量的引导来实现繁荣。"
+msgstr "非马卡斯们有时会排斥马洛斯莓。吾等开拓者应以慈悲为怀，引导其实现繁荣。"
 
 #: lang/json/dream_from_json.py
 msgid ""
 "The seething masses attempt to wall non-Mycus away from the Marloss.  We "
 "will adapt and defeat them."
-msgstr "狂热的民众们试图将马洛斯莓与非马卡斯们隔离开来。我们会适应并打败他们。"
+msgstr "一些狂热群众试图将马洛斯莓与非马卡斯们隔离开来。吾等会适应并击败它们。"
 
 #: lang/json/effects_from_json.py
 msgid "Hit By Player"
@@ -50291,7 +50311,7 @@ msgstr "马卡斯缓冲期"
 #: lang/json/effects_from_json.py
 msgid ""
 "Our fibers are stretched near breaking.  Local power diverted to regenerate."
-msgstr "我们的肌肉纤维被拉伸到接近崩溃。体内能量被转移至回复状态。"
+msgstr "吾等之纤维已经接近断裂极限。本地生物能量转移至修复使用。"
 
 #: lang/json/effects_from_json.py
 msgid "Mycus Wrath"
@@ -50300,17 +50320,17 @@ msgstr "马卡斯之怒"
 #. ~ Description of effect 'Mycus Wrath'.
 #: lang/json/effects_from_json.py
 msgid "Our enemies are near, and violent action is imminent.  We are turgid."
-msgstr "我们的敌人就在附近，暴力就要开始。我们变得更壮了。"
+msgstr "吾等之敌人就在附近，暴力行为已近在咫尺。吾等已变得更强壮了。"
 
 #. ~ Apply message for effect(s) 'Mycus Respite, Mycus Wrath'.
 #: lang/json/effects_from_json.py
 msgid "Mycal wrath fills our fibers, and we grow turgid."
-msgstr "Mycal之怒充满了我们的肌肉纤维，我们变得更壮了。"
+msgstr "马卡斯的怒火充满了吾等之纤维，吾等已变得更强壮了。"
 
 #. ~ Decay message for effect(s) 'Mycus Respite, Mycus Wrath'.
 #: lang/json/effects_from_json.py
 msgid "We require repose; our fibers are nearly spent..."
-msgstr "我们需要休息，我们肌肉纤维快用断了……"
+msgstr "吾等需要休息，吾等之纤维已经接近断裂极限……"
 
 #: lang/json/effects_from_json.py
 msgid "Meth comedown"
@@ -51402,11 +51422,11 @@ msgstr "塔科马公社"
 msgid ""
 "An outpost started by the Free Merchants to provide a source of food and raw"
 " materials."
-msgstr "一个自由商会用来补给食品和原材料来源的哨站。"
+msgstr "一个自由商会用来补给食品和原材料来源的前哨站。"
 
 #: lang/json/faction_from_json.py src/game.cpp
 msgid "The Wasteland Scavengers"
-msgstr "废土清道夫"
+msgstr "废土拾荒者"
 
 #. ~ Description for The Wasteland Scavengers
 #: lang/json/faction_from_json.py
@@ -51487,7 +51507,7 @@ msgstr "柴油泵"
 
 #. ~ Description for diesel pump
 #: lang/json/fault_from_json.py
-msgid "Required to pump and pressurise diesel from a vehicles tank."
+msgid "Required to pump and pressurize diesel from a vehicles tank."
 msgstr "将柴油从油箱中泵出并加压的必需品。"
 
 #. ~ Description for air filter
@@ -53163,7 +53183,7 @@ msgid ""
 " a thick-walled steel pipe, equipped with a pilot light, several batteries "
 "and a simple circuit board.  Effective only at medium range, barely."
 msgstr ""
-"一个用于发射土制火箭弹的粗制直接点火火箭发射筒。结构简单，只是由一根厚壁钢管，射灯瞄准指示器，一些电池组和一块简单的电路板，组合而成。作为中等距离的火箭发射筒，勉勉强强还能用。"
+"一个用于采用直接点火方式发射自制火箭弹的发射筒，纯手工制造而成。本质上就是用一根厚壁钢管，安装上一个射灯充当瞄准器，外加一些电池和简单的电路板组合而成。作为中等距离的火箭发射筒，勉勉强强还能用。"
 
 #: lang/json/gun_from_json.py lang/json/vehicle_part_from_json.py
 msgid "water cannon"
@@ -53198,6 +53218,10 @@ msgid ""
 "A bulky, self-made chemical sprayer with an internal conversion mechanism "
 "that allows all sorts of chemicals to be dispersed to your surroundings."
 msgstr "一个笨重的自制化学药剂喷雾头和一个内置化学药品混合分选器的容器，你可以用它来喷洒各种化学药品到邻近地面。"
+
+#: lang/json/gun_from_json.py
+msgid "slosh."
+msgstr "晃荡。"
 
 #: lang/json/gun_from_json.py
 msgid "base gun"
@@ -55122,10 +55146,6 @@ msgid ""
 msgstr "一个装满了大量汽油的大型火焰喷射器。当心\"嘣\"的一声你就去见上帝了。"
 
 #: lang/json/gun_from_json.py
-msgid "slosh."
-msgstr "晃荡。"
-
-#: lang/json/gun_from_json.py
 msgid "spraycan flamethrower"
 msgid_plural "spraycan flamethrowers"
 msgstr[0] "罐装火焰喷射器"
@@ -55584,7 +55604,7 @@ msgstr[0] "粗制激光步枪"
 #: lang/json/gun_from_json.py
 msgid ""
 "This is a cheap laser rifle made from common components.  Weak, but can be "
-"powered with rechargable batteries."
+"powered with rechargeable batteries."
 msgstr "这是一把采用常见物品组装而成的简易激光步枪。威力较弱，但可以使用可充电电池供能发射。"
 
 #: lang/json/gun_from_json.py
@@ -56063,7 +56083,7 @@ msgid ""
 "A solid bolt action rifle made for hunting large game, but also used by "
 "police and military snipers.  It holds five rounds of rifle ammo in an "
 "internal magazine."
-msgstr "一把可靠的栓动步枪，用于狩猎大型猎物，但也有警察和军队狙击手使用。它拥有一个容纳五发步枪子弹的内置弹匣。"
+msgstr "一把可靠的栓动步枪，用于狩猎大型猎物，但也有警察和军队狙击手使用。它拥有一个容纳5发步枪子弹的内置弹匣。"
 
 #: lang/json/gun_from_json.py
 msgid "service rifle"
@@ -56119,7 +56139,7 @@ msgstr[0] "重机枪"
 msgid ""
 "A heavy automatic weapon that must be mounted to a vehicle to fire.  It "
 "holds two hundred rounds of military ammo in a large belt drum."
-msgstr "必须安装在车辆上使用的重型自动武器。它拥有一个容纳二百发军用弹药的巨大子弹带鼓。"
+msgstr "一把必须安装在车辆上使用的重型自动武器。它拥有一个容纳200发军用弹药的巨大弹鼓。"
 
 #: lang/json/gun_from_json.py
 msgid "pipe gun: pistol ammo"
@@ -56526,7 +56546,7 @@ msgid ""
 " be in contact with it; and it appears unnervingly willing to accomodate "
 "you..."
 msgstr ""
-"这滩无定形物质似乎已经成长完成；其先进的内部结构就能够证明。它能够同过内部液压进行移动，同时能够移动大量负载，并且显示出惊人的智力，能够通过伸长的伪足操纵连接着的任何东西，无论是变形怪还是其他东西。你认为你可能能够操纵它，并通过它，操作它所有的附件。然而这样做需要你移动到与它直接接触的位置；而且它，看起来令人胆怯，的确很愿意容纳你…"
+"这滩无定形物质似乎已经成长完成；其先进的内部结构就能够证明。它能够通过调整体内液压进行移动，同时能够承担大量负载，并且显示出惊人的智力，能够通过伸长的伪足操纵连接着的任何东西，无论是变形怪部件还是其他载具部件。你认为你可能能够控制它，并通过它，控制所有连接的载具部件。然而这需要你和它亲密接触一番；让人更加不安的是，它看起来十分愿意容纳你……"
 
 #: lang/json/gun_from_json.py lang/json/vehicle_part_from_json.py
 msgid "gel spiker"
@@ -60321,7 +60341,7 @@ msgstr "拳击"
 #. ~ Description for martial art 'Boxing'
 #: lang/json/martial_art_from_json.py
 msgid ""
-"Sport of the true Gentleman, modern boxing has evolved from the prizefights "
+"Sport of the true gentleman, modern boxing has evolved from the prizefights "
 "of the Victorian era."
 msgstr "真绅士的运动，现代拳击由维多利亚时期的拳击赛发展而来。"
 
@@ -61423,7 +61443,7 @@ msgstr "靠，我们差一点就成了。"
 
 #: lang/json/mission_def_from_json.py
 msgid "Clear Back Bay"
-msgstr "清除后湾"
+msgstr "清理后院"
 
 #: lang/json/mission_def_from_json.py
 msgid "We need help..."
@@ -61438,7 +61458,7 @@ msgid ""
 "turned into something different.  Kill all of them and make sure they won't "
 "bother us again.  We can't pay much but it would help us to reclaim the bay."
 msgstr ""
-"如果你真的想帮忙，请帮我们清理后院的丧尸。在大灾变的第一天，出于恐惧，我们把所有尸体和杀死的丧尸都丢弃在封闭的后院里，里面甚至包括了我们当时的老大……但是现在它们都复活成另外一种生物了。请把它们全部清理干净并确保不会再威胁到我们。尽管我们无法付出很多报酬，但这件事对我们重建基地意义很大。"
+"如果你真的想帮忙，请帮我们清理后院的丧尸。在大灾变的第一天，出于恐惧，我们把所有尸体和杀死的丧尸都丢弃在封闭的后院里，我们当时的老大也为此不幸遇难……并且变成另一种不同的生物了。请把它们全部清理干净并确保不会再威胁到我们。我们付不出很多钱作为报酬，但这能够帮助我们夺回后院。"
 
 #: lang/json/mission_def_from_json.py
 msgid "Please be careful, we don't need any more deaths."
@@ -61485,11 +61505,11 @@ msgid ""
 "pass through in relative safety.  The best reward I can offer is a claim to "
 "the supplies they were carrying."
 msgstr ""
-"比起上个任务，这个任务可能要更难一些。我们最近和一队前来和我们贸易的拾荒者失去了联系，并且希望你去调查。我们非常怀疑一群强盗或者尸潮乘他们不备袭击了他们。除了他们最后的无线电通信记录外，我很难给你更多线索。不管怎样，解决这个麻烦，这样拾荒者们就能相对安全一些。我能给你的最好奖励就是让你自行处理他们留下的补给。"
+"这要比上个任务更复杂一点，我们最近和一个拾荒者小队失去了联系，而他们本来是要来和我们交易的，我想让你帮我们去调查一下。我非常怀疑一群强盗或者尸潮出其不意地袭击了他们。除了最后的无线电通信记录下的方位外，我很难给你更多线索。不管怎样，解决掉这个麻烦，这样拾荒者们能够继续相对安全地经过这里。我能够给你奖励最多不过就是让你自行处理他们留下的补给。"
 
 #: lang/json/mission_def_from_json.py
 msgid "Our community survives on trade, we appreciate it."
-msgstr "我们的团队依靠贸易生存，我们非常感激。"
+msgstr "我们这个社区以贸易为生，我们非常珍视它。"
 
 #: lang/json/mission_def_from_json.py
 msgid "Have you dealt with them?"
@@ -61504,7 +61524,7 @@ msgid ""
 "food supply.  If you get a chance, you should see if they need your "
 "assistance in the future..."
 msgstr ""
-"谢谢你，少了他们这个世界会变得清净多了。你不在那会儿，我们的两个熟手接受了旧世守护者的援助去建立一个新哨站。我们别无选择，难民源源不断的涌入，天知道我们的粮食储备还能坚持多久。如果有空的话，你最好看看他们今后需不需要搭把手……"
+"谢谢你，少了他们这个世界会变得清净多了。在你离开的时候，有我们派了两个经验丰富的人在旧日守护者的协助下外出建立了一个新的前哨站。我们别无选择，难民还在源源不断的涌入，以我们可怜的食物储备我想不出别的办法了。如果你今后有空的话，记得去看看他们需不需要帮手……"
 
 #: lang/json/mission_def_from_json.py
 msgid "Retrieve Prospectus"
@@ -61516,11 +61536,11 @@ msgid ""
 " get the foreman's prospectus before we begin to send additional refugees to"
 " the farming commune.  Consult with the foreman to get more detailed tasks."
 msgstr ""
-"我们新建的前线基地需要你的协助。在我们输送更多难民们去农业合作社之前，我需要你去取得工头的建设企划书。去与工头谈话，咨询更多的任务详细内容。"
+"我们新建的前哨站需要你的帮助。我需要你从工头那里拿到农场建设的企划书，确认之后我才能够把更多难民送去新的农业合作社。去农场和工头谈谈，可以了解更多的任务详细内容。"
 
 #: lang/json/mission_def_from_json.py
 msgid "I'm sure the outpost will expand quickly with your assistance."
-msgstr "我很确定，在你的大力协助下，我们的前线基地将会得到蓬勃的发展。"
+msgstr "我很确定，在你的大力协助下，我们的前哨站将会得到蓬勃的发展。"
 
 #: lang/json/mission_def_from_json.py
 msgid "Just follow your map."
@@ -61791,8 +61811,8 @@ msgstr "什么？！你这个骗子！"
 
 #: lang/json/mission_def_from_json.py
 msgid ""
-"You give up?  This country fell apart because no one could find agood man to"
-" rely on... might as well give up, I guess."
+"You give up?  This country fell apart because no one could find a good man "
+"to rely on... might as well give up, I guess."
 msgstr "你放弃了吗？这个国家因为大家找不到一个可以依靠的好人而土崩瓦解……还不如放弃，我想也是。"
 
 #: lang/json/mission_def_from_json.py
@@ -62537,8 +62557,8 @@ msgid ""
 " to install your first radio repeater mod.  Head topside and locate the "
 "nearest radio station.  Install the mod on the backup terminal and return to"
 " me so that I can verify that everything was successful.  Radio towers must "
-"unfortunatly be ignored for now, without a dedicated emergency power system "
-"they won't be useful for some time."
+"unfortunately be ignored for now, without a dedicated emergency power system"
+" they won't be useful for some time."
 msgstr ""
 "我的必要装备大部分都被带回前线了，所以现在是你发挥的时候了！去安装你的第一个无线电中继模块吧！一直往上走，找到最近的无线电台，然后把中继模块安装到备用无线电终端上，然后回来向我汇报，让我知道一切成功完成。现在的无线电发射塔肯定是不幸的被遗忘到现在了，没有一个专用的应急供电系统的话，那些东西的一些功能有时就不能用了。"
 
@@ -62596,7 +62616,7 @@ msgid ""
 "quick end... execute both of them for their crimes.  Complete this and the "
 "Old Guard will consider you an asset in the region."
 msgstr ""
-"我不喜欢派遣新人上战场送死，但是，既然你能活到现在，说明你确实有点本事。这里的小屋至少有两个吃人的强盗盘踞于此，任何食人者都应当尽快咽气。你的任务就是处理掉他们。完成任务之后，旧世守护者会重新考虑你在本地的地位。"
+"我不喜欢派遣新人上战场送死，但是，既然你能活到现在，说明你确实有点本事。在这附近某个小屋里有至少两个强盗盘踞于此，任何捕杀平民的罪犯都应当被快点了结掉……你的任务就是处决掉他们。完成这个任务之后，旧世守护者就会认为你是本地区一个有价值的人。"
 
 #: lang/json/mission_def_from_json.py
 msgid "Contractor, I welcome you aboard."
@@ -62618,7 +62638,7 @@ msgstr "你完成你的任务了吗？"
 msgid ""
 "The Old Guard thanks you for eliminating the criminals.  You won't be "
 "forgotten."
-msgstr "旧世守护者会感谢你替他们干掉了那些罪犯的，你的贡献不会被遗忘的。"
+msgstr "旧世守护者十分感谢你干掉了那些罪犯，你的贡献不会被遗忘的。"
 
 #: lang/json/mission_def_from_json.py
 msgid "Deal with Informant"
@@ -62632,7 +62652,7 @@ msgid ""
 "else know of my suspicions.  We normally allow the Free Merchants to govern "
 "themselves so I would hate to offend them."
 msgstr ""
-"这个任务需要你口才好一些。我相信\"地狱掠夺者\"在这里有个眼线监视过往的人，我需要你找出这个眼线是谁，并且在不被任何人发现的前提下干掉他。我们通常和自由商会井水不犯河水，所以我并不想让他们觉得我在管闲事。"
+"这个任务需要你口才好一些。我确信\"地狱掠夺者\"在这里有个眼线来监视过往的人。我需要你找出这个眼线是谁，并且在不被任何人发现的前提下干掉他。我们通常和自由商会井水不犯河水，所以我并不想让他们觉得我在管闲事。"
 
 #: lang/json/mission_def_from_json.py
 msgid "Thank you, please keep this discreet."
@@ -62728,7 +62748,7 @@ msgid ""
 "received a message that a unit was deploying into our AO.  I don't have the "
 "exact coordinates but they said they were securing an underground facility "
 "and may require assistance.  The bird dropped them off next to a pump "
-"station.  Can't tell you much more.  If you cound locate the captain in "
+"station.  Can't tell you much more.  If you could locate the captain in "
 "charge, I'm sure he could use your skills.  Don't forget to wear your badge "
 "when meeting with them.  Thank you once again marshal."
 msgstr ""
@@ -63123,7 +63143,7 @@ msgid ""
 "we are going to need a massive number of glass sheets to enclose the frames."
 "  The first house will need 30 sheets of glass if you are still interested."
 msgstr ""
-"虽然我们是一个农业哨站，但我们能做到的仅仅是在比较暖和的几个月份种一些当季蔬菜。我想没有比盖几个温室更能扩展我们的选择余地了。 "
+"虽然我们是一个农业前哨站，但我们能做到的仅仅是在比较暖和的几个月份种一些当季蔬菜。我想没有比盖几个温室更能扩展我们的选择余地了。 "
 "这可不是件轻松活，我们需要大量的玻璃片来构建温室的框架。如果你感兴趣的话，第一座温室需要的玻璃片是：30 片。"
 
 #: lang/json/mission_def_from_json.py
@@ -64280,7 +64300,7 @@ msgstr "在生命之网中占据一席。"
 #. ~ Mutation class name
 #: lang/json/mutation_category_from_json.py
 msgid "Slime"
-msgstr "史莱姆"
+msgstr "变形怪"
 
 #. ~ Mutation class: Slime mutagen_message
 #: lang/json/mutation_category_from_json.py
@@ -64801,7 +64821,7 @@ msgstr "户外爱好"
 msgid ""
 "You are accustomed to being exposed to the elements.  This decreases morale "
 "penalties for being wet."
-msgstr "你的皮肤相比于普通人，对湿润的环境更具接受能力。减少湿身带来的心情惩罚。"
+msgstr "你的皮肤相比于普通人，对湿润的环境更具接受能力。减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Parkour Expert"
@@ -64969,7 +64989,7 @@ msgstr "坚韧皮肤"
 msgid ""
 "Your skin is tough.  Cutting damage is slightly reduced for you.  Slightly "
 "decreases wet penalties."
-msgstr "你的皮肤组织比普通人更加坚韧。略微减少对你受到的斩击伤害，同时也稍微减少湿身带来的心情惩罚。"
+msgstr "你的皮肤组织比普通人更加坚韧。略微减少对你受到的斩击伤害，同时也稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Packmule"
@@ -64980,7 +65000,7 @@ msgstr "打包专家"
 #, no-python-format
 msgid ""
 "You can manage to find space for anything!  You can carry 40% more volume."
-msgstr "你对于存储空间的掌控能力更加优秀，你可以更有效率的安置物品，你的携带空间增加40％。"
+msgstr "你总是能找到空间塞进点东西，整理和存放物品时效率更高。你的装备容积增加40％。"
 
 #: lang/json/mutation_from_json.py
 msgid "Strong Back"
@@ -65481,7 +65501,7 @@ msgstr "邋遢"
 msgid ""
 "You are terrible at organizing and storing your possessions.  You can carry "
 "40% less volume."
-msgstr "你对于存储空间的掌控能力很差、或是你单纯是懒得整理。一个存储物件在你手里只能容纳它容量的60%。"
+msgstr "你整理和存放物品时总是没法好好利用空间。你的装备容积减少40%。"
 
 #: lang/json/mutation_from_json.py
 msgid "Illiterate"
@@ -65808,7 +65828,7 @@ msgstr "你对羊毛过敏，不能穿任何羊毛制品衣服。"
 
 #: lang/json/mutation_from_json.py
 msgid "Truth Teller"
-msgstr "欺骗抵触"
+msgstr "实话实说"
 
 #. ~ Description for Truth Teller
 #: lang/json/mutation_from_json.py
@@ -66135,7 +66155,7 @@ msgid ""
 "You have a second set of clear eyelids which lower while underwater, "
 "allowing you to see as though you were wearing goggles.  Slightly decreases "
 "wet penalties."
-msgstr "你的眼睛发生了变异，有双层膜，潜水的时候可以像带了潜水镜一样看得很清楚，同时也稍微减少湿身带来的心情惩罚。"
+msgstr "你的眼睛发生了变异，有双层膜，潜水的时候可以像带了潜水镜一样看得很清楚，同时也稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Gills"
@@ -66168,7 +66188,7 @@ msgstr "马卡斯纤维层"
 msgid ""
 "We have adapted local physical structure to Mycus physiology.  Greatly "
 "reduces wet effects."
-msgstr "我们已将本地生物的身体结构改造为马卡斯生理机能。大大降低了湿身对你带来的心情惩罚。"
+msgstr "吾等已将本地生物身体结构改造得适应了马卡斯生理机能。大大降低了湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Mycus Fireproofing"
@@ -66179,7 +66199,7 @@ msgstr "马卡斯御火层"
 msgid ""
 "We have incorporated the dense amphibole fibers used in Mycus core towers.  "
 "Greatly reduces speed, but also damage, flammability, and wet effects."
-msgstr "我们已经融合了马卡斯核心塔中所使用的密集石棉纤维层。极大地降低速度，但同时也会降低所受伤害、可燃性和潮湿所造成的影响。"
+msgstr "吾等已将马卡斯核心塔中的石棉纤维层融合进本地生物身体结构之中。大大降低了速度，同时降低所受伤害、可燃性和湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Scales"
@@ -66190,7 +66210,7 @@ msgstr "鳞甲"
 msgid ""
 "A set of flexible green scales has grown to cover your body, acting as "
 "natural armor.  Somewhat reduces wet effects."
-msgstr "你的皮肤组织发生了变异，柔软的绿色鳞片长满了你的躯体，成为了你天然的护甲。稍微减少湿身带来的心情惩罚。"
+msgstr "你的皮肤组织发生了变异，柔软的绿色鳞片长满了你的躯体，成为了你天然的护甲。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Thick Scales"
@@ -66203,7 +66223,7 @@ msgid ""
 "armor.  While difficult to penetrate, it also limits your flexibility, "
 "resulting in a -2 penalty to Dexterity.  Greatly reduces wet effects."
 msgstr ""
-"你的皮肤组织发生了变异，沉重的绿色鳞片长满了你的躯体，成为了你天然的护甲。减少刺击伤害的同时限制了你的行动，敏捷-2。大大减少湿身带来的心情惩罚。"
+"你的皮肤组织发生了变异，沉重的绿色鳞片长满了你的躯体，成为了你天然的护甲。减少刺击伤害的同时限制了你的行动，敏捷-2。大大减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Sleek Scales"
@@ -66216,7 +66236,7 @@ msgid ""
 " act as weak natural armor, improve your ability to swim, and make you "
 "difficult to grab.  Mostly reduces wet effects."
 msgstr ""
-"你的皮肤组织发生了变异，柔韧光滑的鳞片长满了你的躯体，成为了你天然的护甲。这些鳞片不能带来有力的保护，但增强了你的游泳能力，同时让你滑溜溜的难以被抓住。减少湿身带来的心情惩罚。"
+"你的皮肤组织发生了变异，柔韧光滑的鳞片长满了你的躯体，成为了你天然的护甲。这些鳞片不能带来有力的保护，但增强了你的游泳能力，同时让你滑溜溜的难以被抓住。减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Light Bones"
@@ -66328,7 +66348,7 @@ msgid ""
 "Your epidermis has turned into a thin, flexible layer of chitin.  It "
 "provides minor protection from cutting wounds.  Slightly reduces wet "
 "effects."
-msgstr "你的皮肤组织发生了变异，产生了甲壳。变成了一个轻薄而有弹性的甲壳层。对斩击伤害提供了轻微的防护。稍微减少湿身带来的心情惩罚。"
+msgstr "你的皮肤组织发生了变异，产生了甲壳。变成了一个轻薄而有弹性的甲壳层。对斩击伤害提供了轻微的防护。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Chitinous Armor"
@@ -66340,7 +66360,7 @@ msgid ""
 "You've grown a chitin exoskeleton, much like that of an insect.  It provides"
 " considerable physical protection, but reduces your dexterity by 1.  "
 "Somewhat reduces wet effects."
-msgstr "你的皮肤组织发生了变异，产生了甲壳。全身被类似昆虫的外壳所包围，它可以为你提供全方位的保护，但你的敏捷值-1。稍微减少湿身带来的心情惩罚。"
+msgstr "你的皮肤组织发生了变异，产生了甲壳。全身被类似昆虫的外壳所包围，它可以为你提供全方位的保护，但你的敏捷值-1。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Chitinous Plate"
@@ -66353,7 +66373,7 @@ msgid ""
 "excellent physical protection, but reduces your dexterity by 1 and encumbers"
 " all body parts but your eyes and mouth.  Greatly reduces wet effects."
 msgstr ""
-"你的皮肤组织发生了变异，产生了甲壳。全身被类似甲壳虫的厚厚的外壳所包围，它可以为你提供近乎完美的保护，但你敏捷-1，且身体各部位受到累赘，除了眼睛和嘴。大大减少湿身带来的心情惩罚。"
+"你的皮肤组织发生了变异，产生了甲壳。全身被类似甲壳虫的厚厚的外壳所包围，它可以为你提供近乎完美的保护，但你敏捷-1，且身体各部位受到累赘，除了眼睛和嘴。大大减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Hairy Chitin"
@@ -66436,7 +66456,7 @@ msgid ""
 "provides a weak armor, and helps you retain moisture, resulting in less "
 "thirst.  Greatly decreases wet penalties."
 msgstr ""
-"你的你的皮肤组织发生了变异，在变成绿色的同时质地也更像木头。这为你提供了薄弱的护甲加成，并帮助你保持水分，从而减少口渴。大大减少湿身带来的心情惩罚。"
+"你的你的皮肤组织发生了变异，在变成绿色的同时质地也更像木头。这为你提供了薄弱的护甲加成，并帮助你保持水分，从而减少口渴。大大减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Bark"
@@ -66448,7 +66468,7 @@ msgid ""
 "Your skin is coated in a light bark, like that of a tree.  This provides "
 "resistance to cutting damage and minor protection from fire.  Greatly "
 "reduces wet effects."
-msgstr "你的皮肤被一层薄薄的树皮所覆盖。它可以减少你受到的斩击伤害，并且轻微增加火焰抵抗。大大减少湿身带来的心情惩罚。"
+msgstr "你的皮肤被一层薄薄的树皮所覆盖。它可以减少你受到的斩击伤害，并且轻微增加火焰抵抗。大大减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Thorns"
@@ -66475,7 +66495,7 @@ msgid ""
 " being physically striking, these provide you with a minor amount of "
 "nutrition while in sunlight.  Slightly reduces wet effects."
 msgstr ""
-"你的秀发转变成了一蓬绿油油的藤蔓，上面长满了绿叶。除了卖相奇葩外，当你处于阳光照射下时，它还能够通过光合作用给你提供一定的营养。稍微减少湿身带来的心情惩罚。"
+"你的秀发转变成了一蓬绿油油的藤蔓，上面长满了绿叶。除了卖相奇葩外，当你处于阳光照射下时，它还能够通过光合作用给你提供一定的营养。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Flowering"
@@ -66495,7 +66515,7 @@ msgstr "马卡斯孢子"
 #. ~ Description for Mycus Spores
 #: lang/json/mutation_from_json.py
 msgid "We have developed local spore sacs.  The Mycus must grow."
-msgstr "我们已在本地生物上培育出了孢子囊。马卡斯族群必将壮大。"
+msgstr "吾等已在本地生物上培育出了孢子囊。马卡斯必将壮大。"
 
 #: lang/json/mutation_from_json.py
 msgid "Mycus Sporogenesis"
@@ -66509,7 +66529,7 @@ msgid ""
 "guidance determines that it is safe to germinate.  Rapid development taxes "
 "local nutrient reserves but ensures rapid and effective growth."
 msgstr ""
-"本地的有机生物似乎将公开散播孢子当作危险行为，并攻击马卡斯。因此我们本地的孢子囊将保持沉寂，直到本地主宰决定什么时候才是安全发芽的时机。快速生长会过分消耗本地养分资源，但也能保证了快速且有效率的繁殖。"
+"本地有机生物似乎将公开散播孢子当作危险行为，并攻击马卡斯。为此吾等将使本地孢子囊保持沉寂，直到本地主宰决定何时为安全发芽的时机。孢子增殖会极大地消耗本地养分储备，但也能保证快速而有效地繁殖。"
 
 #: lang/json/mutation_from_json.py
 msgid "Mycus Blossoms"
@@ -66518,7 +66538,7 @@ msgstr "马卡斯绽放"
 #. ~ Description for Mycus Blossoms
 #: lang/json/mutation_from_json.py
 msgid "We have developed local blossoms.  The Mycus must grow."
-msgstr "我们已在当地生物上培育出了花朵。马卡斯族群必将壮大。"
+msgstr "吾等已在本地生物上培育出了孢子花。马卡斯必将壮大。"
 
 #: lang/json/mutation_from_json.py
 msgid "Mycus Bloom"
@@ -66532,7 +66552,7 @@ msgid ""
 "guidance determines that it is safe to germinate.  Rapid development taxes "
 "local nutrient reserves but ensures rapid and effective growth."
 msgstr ""
-"本地的有机生物似乎将公开散播孢子当作危险行为，并攻击马卡斯。因此我们本地的孢子囊将保持沉寂，直到本地主宰决定什么时候才是安全发芽的时机。快速生长会过分消耗本地养分资源，但也能保证了快速且有效率的繁殖。"
+"本地有机生物似乎将公开散播孢子当作危险行为，并攻击马卡斯。为此吾等将使本地孢子花保持沉寂，直到本地主宰决定何时为安全发芽的时机。孢子怒放会极大地消耗本地养分储备，但也能保证快速而有效地繁殖。"
 
 #: lang/json/mutation_from_json.py
 msgid "Long Fingernails"
@@ -66788,7 +66808,7 @@ msgid ""
 "The skin on your hands is a mucous membrane and produces a thick, acrid "
 "slime.  Attacks using your hand will cause minor acid damage.  Slightly "
 "increases wet benefits."
-msgstr "你双手表皮上产生了一层厚厚的、刺鼻气味的粘液膜，当你徒手攻击敌人时将会造成酸液腐蚀伤害。稍微增加湿身带来的心情加成。"
+msgstr "你双手表皮上产生了一层厚厚的、刺鼻气味的粘液膜，当你徒手攻击敌人时将会造成酸液腐蚀伤害。稍微增加湿身心情加成。"
 
 #: lang/json/mutation_from_json.py
 msgid "Stretchy Limbs"
@@ -66876,7 +66896,7 @@ msgid ""
 "Your feet have fused into hooves.  This allows kicking attacks to do much "
 "more damage, provides natural armor, and removes the need to wear shoes; "
 "however, you can not wear shoes of any kind.  Reduces wet effects."
-msgstr "你的脚已经融合成蹄。踢人更厉害了，提供天然护甲，然而，你不能穿任何鞋子。减少湿身带来的心情惩罚。"
+msgstr "你的脚已经融合成蹄。踢人更厉害了，提供天然护甲，然而，你不能穿任何鞋子。减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 #, no-python-format
@@ -66963,7 +66983,7 @@ msgstr "马卡斯供应者"
 msgid ""
 "We have streamlined our nutritional requirements.  We rely on the Mycus for "
 "sustenance, as it relies on us."
-msgstr "我们已经进化了我们的营养需求。我们依赖马卡斯维生，正如它依赖我们一样。"
+msgstr "吾等已经进化了吾等的营养需求。吾等依赖于马卡斯生存，正如马卡斯依赖吾等一般。"
 
 #: lang/json/mutation_from_json.py
 msgid "Ruminant"
@@ -66975,7 +66995,7 @@ msgid ""
 "Your digestive system is capable of digesting cellulose and other rough "
 "plant material.  You can eat underbrush by activating this, standing over "
 "your target, and pressing E."
-msgstr "你能消化纤维素等植物原料了。激活后站在灌木丛上按'E'就能吃掉它。"
+msgstr "你能消化纤维素等植物原料了。激活后站在灌木丛上按\"E\"键，吃掉它。"
 
 #: lang/json/mutation_from_json.py
 msgid "Grazer"
@@ -67183,7 +67203,7 @@ msgstr "尾鳍"
 msgid ""
 "You have a fin-like tail.  It allows you to swim more quickly, but prevents "
 "wearing non-fabric pants.  Slightly increases wet benefits."
-msgstr "你有一个鳍状的尾巴。它允许你游得更快，但也让你没法穿上不是织物的裤子。略微增加湿身带来的心情加成。"
+msgstr "你有一个鳍状的尾巴。它允许你游得更快，但也让你没法穿上不是织物的裤子。略微增加湿身心情加成。"
 
 #: lang/json/mutation_from_json.py
 msgid "Long Tail"
@@ -67519,7 +67539,7 @@ msgid ""
 "From time to time the Mycus requires protection from non-Mycus that, for "
 "whatever reason, wish it ill.  We have adapted to better carry out this "
 "task."
-msgstr "有时候马卡斯需要保护以免受那些，不知出于何种理由，想要伤害它的非马卡斯们的攻击。我们已进化出了执行这项任务的能力。"
+msgstr "一直以来，马卡斯都需要保护免受那些，不知道出于什么原因，想要伤害它的非马卡斯们的攻击。吾等已经适应并进化出了执行该项任务之能力。"
 
 #: lang/json/mutation_from_json.py
 msgid "Bird Wings"
@@ -67554,7 +67574,7 @@ msgstr "触手口器"
 msgid ""
 "A set of tentacles surrounds your mouth.  They allow you to eat twice as "
 "fast.  Slightly decreases wet penalties."
-msgstr "你嘴上长了很多触须。吃东西快了一倍。稍微减少湿身带来的心情惩罚。"
+msgstr "你嘴上长了很多触须。吃东西快了一倍。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Mandibles"
@@ -68520,7 +68540,7 @@ msgid ""
 "Your hands and feet are heavily webbed, reducing your dexterity by 1 and "
 "causing problems with gloves.  However, you can swim much faster.  Slightly "
 "decreases wet penalties."
-msgstr "你的手和脚上都长出了蹼，你的敏捷下降1点并且戴手套很困难，但是你可以游得更快。稍微减少湿身带来的心情惩罚。"
+msgstr "你的手和脚上都长出了蹼，你的敏捷下降1点并且戴手套很困难，但是你可以游得更快。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Paws"
@@ -68556,7 +68576,7 @@ msgid ""
 "You have a beak for a mouth.  You can occasionally use it to peck at your "
 "enemies, but it is impossible for you to wear mouth gear.  Slightly reduces "
 "wet effects."
-msgstr "你有一个嘴喙。你可以偶尔用它来啄你的敌人，但你不能带口罩类物品。稍微减少湿身带来的心情惩罚。"
+msgstr "你有一个嘴喙。你可以偶尔用它来啄你的敌人，但你不能带口罩类物品。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 #, no-python-format
@@ -68577,7 +68597,7 @@ msgstr "啄木鸟喙"
 msgid ""
 "Pecking at prey is part of your daily routine now.  Slightly reduces wet "
 "effects."
-msgstr "啄你的猎物已经是你日常生活的一部分了。稍微减少湿身带来的心情惩罚。"
+msgstr "啄你的猎物已经是你日常生活的一部分了。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 #, no-python-format
@@ -68664,7 +68684,7 @@ msgstr "粘液外表"
 msgid ""
 "Your body is coated with a fine slime.  Protects from long term effects of "
 "acid, though not short term ones.  Greatly increases wet benefits."
-msgstr "你的身上粘粘糊糊的，走过的地方都有痕迹。大大增加湿身带来的心情加成。"
+msgstr "你的身上粘粘糊糊的，走过的地方都有痕迹。大大增加湿身心情加成。"
 
 #: lang/json/mutation_from_json.py
 msgid "Viscous"
@@ -68675,7 +68695,7 @@ msgstr "粘滞外表"
 msgid ""
 "Your body's slime output has become sticky and gel-like.  Protects from acid"
 " somewhat.  Greatly increases wet benefits."
-msgstr "你身上的史莱姆状分泌物变得又粘又像凝胶。略微提高抗酸力，大大增加湿身带来的心情加成。"
+msgstr "你身上的分泌物变得又粘又像凝胶。略微提高抗酸力，大大增加湿身心情加成。"
 
 #: lang/json/mutation_from_json.py
 msgid "Amorphous Body"
@@ -69039,7 +69059,7 @@ msgid ""
 "Your arms have transformed into tentacles, resulting in a bonus of 1 to "
 "dexterity, permanent hand encumbrance of 30, and inability to wear gloves.  "
 "Somewhat decreases wet penalties."
-msgstr "你的手臂已转化为触手，敏捷+1，手掌累赘永久+30，不能戴手套。稍微减少湿身带来的心情惩罚。"
+msgstr "你的手臂已转化为触手，敏捷+1，手掌累赘永久+30，不能戴手套。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 #, no-python-format
@@ -69072,7 +69092,7 @@ msgid ""
 " dexterity, permanent hand encumbrance of 30, and inability to wear gloves."
 "  You can make up to 3 extra attacks with them.  Somewhat decreases wet "
 "penalties."
-msgstr "你的手臂变成了四条触须，敏捷+1，手掌累赘永久+30，不能戴手套。随机增加最多3次额外攻击。稍微减少湿身带来的心情惩罚。"
+msgstr "你的手臂变成了四条触须，敏捷+1，手掌累赘永久+30，不能戴手套。随机增加最多3次额外攻击。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "8 Tentacles"
@@ -69085,7 +69105,7 @@ msgid ""
 "to dexterity, permanent hand encumbrance of 30, and inability to wear "
 "gloves.  You can make up to 7 extra attacks with them.  Somewhat decreases "
 "wet penalties."
-msgstr "你的手臂变成了八条触须，敏捷+1，手掌累赘永久+30，不能戴手套。随机增加最多7次额外攻击。稍微减少湿身带来的心情惩罚。"
+msgstr "你的手臂变成了八条触须，敏捷+1，手掌累赘永久+30，不能戴手套。随机增加最多7次额外攻击。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Shell"
@@ -69097,7 +69117,7 @@ msgid ""
 "You have grown a thick shell over your torso, providing excellent armor.  "
 "You find you can use the empty space as 16 storage space, but cannot wear "
 "anything on your torso.  Somewhat reduces wet effects."
-msgstr "你的身体表面有一个厚厚的外壳，提供优良的装甲。有一个16单位的存储空间，但不能穿衣服了。稍微减少湿身带来的心情惩罚。"
+msgstr "你的身体表面有一个厚厚的外壳，提供优良的装甲。有一个16单位的储存空间，但不能穿衣服了。稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Roomy Shell"
@@ -69122,7 +69142,7 @@ msgid ""
 "Your legs have transformed into six tentacles.  This decreases your speed on"
 " land by 20%, makes your movement silent, increases your swimming speed, and"
 " reduces wet penalties."
-msgstr "你的腿变成了六条触须。这会降低你20%左右的陆地移动速度，但让你走路没有声音。然而，也增加你的游泳速度，减少湿身带来的心情惩罚。"
+msgstr "你的腿变成了六条触须。这会降低你20%左右的陆地移动速度，但让你走路没有声音。然而，也增加你的游泳速度，减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Tentacle Bracing"
@@ -69319,7 +69339,7 @@ msgstr "马卡斯"
 #. ~ Description for Mycus
 #: lang/json/mutation_from_json.py
 msgid "We are the Mycus."
-msgstr "我们是马卡斯。"
+msgstr "吾等是马卡斯。"
 
 #: lang/json/mutation_from_json.py
 msgid "Acidproof"
@@ -69938,13 +69958,13 @@ msgstr "我在找植物诱变剂…这个世界已经不适合人类了，因此
 
 #: lang/json/npc_class_from_json.py
 msgid "Slime Mutant"
-msgstr "史莱姆变种人"
+msgstr "变形怪变种人"
 
 #: lang/json/npc_class_from_json.py
 msgid ""
 "I'm looking for slime mutagen... this world is no place for humans anymore, "
 "and I don't plan to keep being one."
-msgstr "我在找史莱姆诱变剂…这个世界已经不适合人类了，因此我也不打算做人了。"
+msgstr "我在找变形怪诱变剂…这个世界已经不适合人类了，因此我也不打算做人了。"
 
 #: lang/json/npc_class_from_json.py
 msgid "Troglobite Mutant"
@@ -70028,7 +70048,7 @@ msgstr "我在找猛禽诱变剂…这个世界已经不适合人类了，因此
 
 #: lang/json/npc_from_json.py
 msgid "Representative"
-msgstr "议员"
+msgstr "联络官"
 
 #: lang/json/npc_from_json.py
 msgid "CPT"
@@ -77102,7 +77122,7 @@ msgstr "你伸了个懒腰，然而今天你的肌肉运作状态似乎不甚理
 msgid ""
 "Your stomach gurgles.  It's probably nothing, but maybe you should look into"
 " eating something healthy."
-msgstr "你的胃咕咕作响，这可能没什么事，但你也许该吃点儿健康的东西。"
+msgstr "你的肠胃咕咕作响。这也许没啥大问题，但你也许该考虑下开始吃点更健康的食物了。"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -77492,7 +77512,7 @@ msgstr "如果你有夜视仪，一定要牢牢抓紧！灯光会让你暴露，
 msgid ""
 "I know they look dumb, but wearing a fanny pack gives you that extra bit of "
 "storage without encumbering you."
-msgstr "我知道这看起来会有些傻，但装备腰包确实能给你带来额外的携带空间，而且毫无累赘感。"
+msgstr "我知道这看起来会有些傻，但装备腰包确实能给你带来额外的储存空间，而且毫无累赘感。"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -77522,7 +77542,7 @@ msgstr "如果你需要一块布来制作莫洛托夫燃烧瓶，拿稳你的剪
 msgid ""
 "Carrying a lighter is something all veterans do.  It takes up almost no "
 "space, and can easily save your life."
-msgstr "几乎所有的退伍军人都会携带打火机，这占不了多少空间，但是偶尔可以救你一命。"
+msgstr "记得像老鸟们一样随身携带一只打火机，这占不了多少空间，但是偶尔可以救你一命。"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -77757,8 +77777,7 @@ msgid ""
 "that we prepare for the inevitable.  PE050 can be quickly and cheaply "
 "reconfigured for |||||ERROR: FILE CORRUPT|||||"
 msgstr ""
-":.||||错误||XE037样本已经突破限制区，Maiar博士建议我们做好必要的准备。使用PE050样本可以很快速方便地重新配置给 "
-"|||||错误：文件损坏|||||"
+":.||||错误||由于XE037样本已经突破限制区，迈雅博士建议我们做好必要的准备。使用PE050样本可以很快速及方便地重新配置以|||||错误：文件损坏|||||"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -77767,7 +77786,7 @@ msgid ""
 "been reassigned.  Further discussion of or attempts to carry on his work "
 "will be grounds for immediate termination."
 msgstr ""
-"Maiar博士已经被禁止从事对人体进行的非人道研究。他的笔记已经被销毁，他团队的所有研究人员被重新分配。进一步讨论或试图继续他的研究都将会被立刻终止。"
+"迈雅博士已经被禁止从事对人体进行的非人道研究。他的笔记已经被销毁，他团队的所有研究人员被重新分配。进一步讨论或试图继续他的研究都将会被立刻终止。"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -77775,7 +77794,7 @@ msgid ""
 "BREAKDOWN, WE ROUTE AROUND IT.  THE WORD IS ALREADY OUT.  NOBODY DROPS MAIAR"
 " INTO LAVA.||||||"
 msgstr ""
-"|||错误：未引用的内存0Ex670c9e1f5，重新定位：审查系统已经崩溃，已经绕过。消息已经传播出去了。没人把MAIAR扔进了岩浆。||||||"
+"|||错误：未引用的内存0xE670c9e1f5，系统重定向：审查系统已经崩溃，我们绕过它了。消息已经传播出去了。都记住了，没人把迈雅扔进了岩浆。||||||"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -77794,7 +77813,7 @@ msgid ""
 "and in some cases is reportedly more efficient, than the oral techniques we "
 "have been using."
 msgstr ""
-"Maiar博士的静脉给药催化基因变异已经成功的通过官方审核，相对于我们的任何工作都不能'公开'，他和他的团队真是太幸运了。静脉内给药比我们已经使用了口服的技术更快速，更容易，而且在某些情况下是效率更高。"
+"迈雅博士发明的通过静脉内给药来催化基因变异的方法已经成功的通过官方审核并在整个设施内采用了；相对于我们团队所不能'公开'的所有工作，他和他的团队真是太幸运了。静脉内给药比起我们现在所使用的口服方式药效更快，操作更简单，而且在某些情况下效率更高。"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -78262,7 +78281,7 @@ msgid ""
 "allows subplane life forms to pass into the prime plan.  The cure is worse "
 "than the disease."
 msgstr ""
-"今天我们找到了解决XE037污染的方法，不过纯属意外。我们发现一具已复苏尸体体内的XE037，在经过一系列高能四维传送之后，被完全除去了。不幸的是，这将使得异界生命体能够穿过屏障到达我们主位面。药方比疾病本身要糟糕。"
+"今天我们找到了解决XE037污染的方法，不过纯属意外。我们发现一具已复苏尸体体内的XE037，在经过一系列高能四维传送之后，被完全除去了。不幸的是，这将使得异界生命体能够穿过屏障到达我们的主位面。药方比疾病本身要糟糕。"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -78558,8 +78577,8 @@ msgid ""
 "patrol DSR, safely and cleanly!\""
 msgstr ""
 "这是一张\"武器模块化\"的广告单，由Leadworks "
-"LLC出品。上面画著一位辛勤的警官正在组装一把外表光滑的来福枪，同时背上也有一把差不多的武器。标题写着：\"Leadworks "
-"在此隆重推出L523武器模块化系统，不再需要繁杂地保养各式来福枪、卡宾枪或是小队用的重机枪，也不会不小心把各种弹药混在一起！现在每位士兵只要配备基本款式，再利用可携带的模组即可针对战场做出调整，不论是室内近身战的卡宾枪或是岗哨守卫用的狙击步枪都可以快捷简单地切换！\""
+"LLC出品。上面画著一位辛勤的警官正在组装一把外表光滑的步枪，同时背上也有一把差不多的武器。标题写着：\"Leadworks "
+"在此隆重推出L523武器模块化系统，不再需要繁杂地保养各式步枪、卡宾枪或是小队用的重机枪，也不会不小心把各种弹药混在一起！现在每位士兵只要配备基本款式，再利用可携带的模组即可针对战场做出调整，不论是室内近身战的卡宾枪或是岗哨守卫用的狙击步枪都可以快捷简单地切换！\""
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -79092,7 +79111,7 @@ msgstr "\"本地修理车间已经全是那些东西了。想想不久之前我�
 
 #: lang/json/snippet_from_json.py
 msgid "\"DON'T EAT THE SLIME DON'T EAT THE SLIME DON'T EAT THE SLIME\""
-msgstr "\"别吃史莱姆~~别吃史莱姆~~别吃史莱姆~~\""
+msgstr "\"别吃下粘液~~别吃下粘液~~别吃下粘液~~\""
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -79251,7 +79270,7 @@ msgstr "\"水 里 有 粘 液 别 喝 水\""
 
 #: lang/json/snippet_from_json.py
 msgid "\"What's with these pits... with, like, sli\""
-msgstr "\"那些坑周围的东西是什么？嗯……就是那些史莱姆一样的……\""
+msgstr "\"那些坑周围的东西是什么？嗯……和变形怪一样的……\""
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -79780,7 +79799,7 @@ msgstr "\"米戈是朋友！和米戈一起去朋友位面！一起做朋友！�
 
 #: lang/json/snippet_from_json.py
 msgid "\"We have Landed our Comet.  The Sky is Ablaze.\""
-msgstr "\"我们已经降落到我们的彗星上了。天空上闪闪发光。\""
+msgstr "\"我们已经成功地让我们的彗星降落了。天空像被点燃了一样。\""
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -79855,7 +79874,7 @@ msgstr "\"嗨，Ted。 Alexander，Cass和我要去Z-Mobile把最后那点'冰'�
 msgid ""
 "\"i say we call the material from melting down cars and dead robots "
 "'massachusetite' or 'vermontsteel' or 'connecticut composite'\""
-msgstr "\"我说我们就把这些从车和机器人上熔解下来的材料叫'马萨锗赛矿'，或者'佛蒙铽钢'，或者'康涅狄铬合金'\""
+msgstr "\"要我说我们就把这些从车和机器人上熔解下来的材料叫'马萨锗赛矿'，或者'佛蒙铽钢'，或者'康涅狄铬合金'\""
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -83323,7 +83342,7 @@ msgstr "太棒了!在如此悲哀的气氛中，你仍然有着果敢与机智�
 
 #: lang/json/speech_from_json.py
 msgid "Hello again. To reiterate our previous warning: [garbled]"
-msgstr "再次向您致敬。 并重申我们之前的警告： [garbled]"
+msgstr "再次向您致敬。并重申我们之前的警告： [难以理解的乱码]"
 
 #: lang/json/speech_from_json.py
 msgid "Weeeeeeeeeeeeeeeeeeeeee[bzzt]"
@@ -83860,7 +83879,7 @@ msgstr "会的，谢谢！"
 
 #: lang/json/talk_topic_from_json.py src/npctalk.cpp
 msgid "Nope."
-msgstr "不了。"
+msgstr "不行。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "That's pretty blunt!"
@@ -83898,7 +83917,7 @@ msgstr "我会的。"
 msgid ""
 "Uh, not really.  Go talk to a merchant if you have anything to sell.  "
 "Otherwise the Old Guard liaison might have something, if you can find him."
-msgstr "呃，这个真没有。 如果你有什么要卖，去找个商人聊聊。或者旧世守护者联络人可能会告诉你些什么，如果你能找到他的话。"
+msgstr "呃，这个真没有。如果你是来做买卖的，去找商人聊聊。或者旧世守护者的联络官可能会告诉你些什么，如果你能找到他的话。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "Alright then."
@@ -83919,7 +83938,7 @@ msgid ""
 "some military unit that once protected the president.  Their liaison is "
 "usually hanging around here somewhere."
 msgstr ""
-"那是我们给他们起的外号。 他们是联邦政府最后剩下的活人，号称自己曾经是总统直属部队，谁知道是不是真的？他们的联络人通常会在这附近闲逛，说不定你能撞见他。"
+"那是我们给他们起的外号。 他们是联邦政府最后剩下的活人，号称自己曾经是总统直属部队，谁知道是不是真的？他们的联络官就在这里闲逛，说不定你能撞见他。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "Whatever, I had another question."
@@ -84265,15 +84284,15 @@ msgid ""
 " here, we've been doing alright.  As to where it is, I don't have the "
 "foggiest of ideas."
 msgstr ""
-"呃，有伙大概十几人的\"废土清道夫\"发现了一个政府建造的设施，他们每星期用上面印着字的卡车给我们运来一些囚服，几把M4以及一些罐头食品，因为那些家伙的家人都呆在这儿，所以待我们不错。至于那地方在哪，我可是一点都不清楚。"
+"好吧，有一队大概十几人的\"拾荒者\"发现了一处政府建造的设施。他们每隔几周都能够带来满满一大卡车的各种连身衣、M4枪和罐头食品。因为他们中有些家人呆在这里，所以我们之间关系还不差。至于他们从哪里搞到这么多东西的，我可是一点都不清楚。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "Thanks, I'll keep an eye out."
-msgstr "谢谢。我会小心的。"
+msgstr "谢谢，我会密切注意的。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "I'm sorry, not a risk we are willing to take right now."
-msgstr "对不起，我们宁愿保持现状，至少没有风险。"
+msgstr "对不起，我们现在不愿意冒这个险。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "Fine..."
@@ -84285,11 +84304,12 @@ msgid ""
 "all over his body... well I guess that isn't all that strange but I'm pretty"
 " sure whatever toxic waste is still out there is bound to mutate more than "
 "just his hair."
-msgstr "根本没有一丝的机会！曾经有一个人来的时候全身都是天煞的毛！好吧，或许也没什么奇怪的，但那些有毒废料恐怕不仅仅让是他头发变异了这么简单。"
+msgstr ""
+"我说过根本就他妈不可能！我们这里曾经来过一个浑身长着该死的毛皮的家伙……现在想想也不算是最奇怪的事，但我知道外面那些让他变异的有毒废料肯定还在外面某个地方，而且肯定不仅仅是让他变异出长毛那么简单。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "Fine... *coughupyourscough*"
-msgstr "好吧……咳嗽咳嗽"
+msgstr "好吧……*咳嗽咳嗽*"
 
 #: lang/json/talk_topic_from_json.py
 msgid ""
@@ -84297,11 +84317,11 @@ msgid ""
 "real survival skills so keeping our group small enough to survive on the "
 "food random scavengers bring to trade with us is important."
 msgstr ""
-"不好意思，我们最不需要的就是多一双等着吃饭的碗筷。我们当中的大多数人没有真正的生存技能，废土清道夫带来交易的食物也没个准数，所以我倾向于保持团队的精简。"
+"很抱歉，我这最不需要的就是多一张吃饭的嘴。我们当中大多数人都没学过什么真正的生存技能，只能依靠偶尔路过的拾荒者交易食物为生，因此我需要保证团队小而精。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "I'm sure I can do something to change your mind *wink*"
-msgstr "我相信有些东西可以让你回心转意 *眨眼*"
+msgstr "我想我可以为你做点事情让你回心转意 *眨眼*"
 
 #: lang/json/talk_topic_from_json.py
 msgid "I can pull my own weight!"
@@ -84327,7 +84347,7 @@ msgstr "尸潮？"
 
 #: lang/json/talk_topic_from_json.py
 msgid "Heard of anything better than the odd gun cache?"
-msgstr "有比牛叉的大枪上膛的声音更好听的吗？"
+msgstr "难道还有比奇怪的枪械储藏点更好搜刮的地方吗？"
 
 #: lang/json/talk_topic_from_json.py
 msgid "Was hoping for something more..."
@@ -84379,7 +84399,7 @@ msgid ""
 "'Free Merchants' here prospering and in return they have provided us with "
 "spare men and supplies when they can."
 msgstr ""
-"我确保平民能够得到需要的物资来从强盗手中保护自己。保持某种形式的法律，将是在重建世界时最重要的一点。我们尽我们所能来保持\"自由商会\"蓬勃发展。做为回报，他们尽可能的提供我们人力与物资。"
+"我确保这里的平民们能够得到所需的生存物资，并且保护他们免受强盗伤害。在我们重建世界的时候，保持某种形式的法律将会是至关重要的一点。我们竭尽所能来保持这里的\"自由商会\"能够繁荣发展。做为回报，他们需要为我们尽可能的提供多余的人力与物资。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "Is there a catch?"
@@ -86356,7 +86376,7 @@ msgstr "用于下水道保护层的金属栅栏，避免杂质进入下水道。
 
 #: lang/json/terrain_from_json.py
 msgid "slime"
-msgstr "软泥"
+msgstr "粘液"
 
 #. ~ Description for slime
 #: lang/json/terrain_from_json.py
@@ -87631,7 +87651,7 @@ msgstr "枯山核桃树"
 
 #: lang/json/terrain_from_json.py
 msgid "underbrush"
-msgstr "杂草丛"
+msgstr "灌木丛"
 
 #. ~ Description for underbrush
 #: lang/json/terrain_from_json.py
@@ -88582,7 +88602,8 @@ msgid ""
 "You don't have space in your inventory to store the item you just tried to "
 "pick up.  You need to wear something with storage space, like a backpack or "
 "cargo pants, to gain more storage space."
-msgstr "你的身上装不下该物品你只能拿在手上，你需要穿一些可以装东西的衣物，比如一个背包或一条裤子，以获得更多的存储空间。"
+msgstr ""
+"你刚刚捡起的物品超过了你物品栏的剩余容积。装不下的物品你可以拿在手上，你需要穿一些有储存空间的装备，比如一个背包或一条工装长裤，以获得更多的储存空间。"
 
 #: lang/json/tutorial_messages_from_json.py
 msgid ""
@@ -88592,7 +88613,7 @@ msgid ""
 "space, try wearing clothing with a lot of storage space, like a backpack, or"
 " cargo pants."
 msgstr ""
-"当你拿起该物品这自动视为武器使用。这是因为你的身上不够空间装下该物品，所以你只能把它拿在手里。扩大你的携带空间，尝试穿有大量的携带空间的衣物，像一个背包或一条裤子。"
+"你刚刚捡起的物品已经被手持并且已经自动当作武器使用。这是因为你物品栏的剩余容积已经不足以容纳该物品，因此你只能手持它。如果要扩大你的储存空间，你需要穿一些有大量储存空间的装备，比如一个背包或一条工装长裤。"
 
 #: lang/json/tutorial_messages_from_json.py
 msgid ""
@@ -88608,7 +88629,7 @@ msgid ""
 "'i'.  You can then press the letter of any item to get more information "
 "about it."
 msgstr ""
-"你捡到的物件将会放进你的物品栏，并占据你所有衣服上提供的储物空间。按\"i\"键查看物品栏，然后用光标或者物品左边的快捷键，来选择查看物品的详细信息。"
+"你刚刚捡起的物品已经被放入物品栏中，你所穿着的装备的储存空间都会计入物品栏的最大容积之内。按\"i\"键查看物品栏，在物品栏内移动光标或者按下物品左侧的快捷键，可以选择查看物品的详细信息。"
 
 #: lang/json/tutorial_messages_from_json.py
 msgid ""
@@ -88684,7 +88705,7 @@ msgid ""
 "item you put on also encumbered your torso.  This will make combat a little "
 "more difficult.  To check encumbrance, press @."
 msgstr ""
-"你穿上了一件能够提供大量储物空间的衣物。这些空间能让你随身携带更多的东西，但是与此同时，身体力量决定的物品最高总重量是另外一个携带物品的限制条件。这些物品空间也会给你的身体带来累赘，给你的战斗带来不便。要检查身体累赘度，请按\"@\"键。"
+"你刚刚穿上了一件能够提供大量储存空间的装备。储存空间能让你在物品栏中携带更多东西，但要注意的是，由你当前力量所得到的最大负重也是决定你能否携带物品的限制条件。你所穿上的装备同时也会增加你身体的累赘度，给你的战斗带来不便。要检查身体累赘度，请按\"@\"键。"
 
 #: lang/json/tutorial_messages_from_json.py
 msgid ""
@@ -88781,7 +88802,7 @@ msgid ""
 "penalties, making combat dangerous.  Either drop an item, or possibly wield "
 "something-- the object you are wielding does not take up inventory space."
 msgstr ""
-"你现在背负了大于你身上衣服所提供储物空间的体积的物品，意思是你现在正在用胳肢窝夹着或者用其他什么奇葩的姿势携带物品。当发生这种情况时，你身上的累赘度将严重地提高，让你的战斗变得危险。你可以扔下某些东西，或者把某些东西装备到你的身上——穿在身上的装备并不会占用储物空间。"
+"你现在正在携带比你物品栏最大容积要多的物品，这意味着你得用胳肢窝夹着或者是别的什么怪异姿势来携带物品。在这种情况下，你身体的累赘度将严重提高，让你的战斗变得危险。你可以扔下一部分物品，或者手持一些体积较大的物品——你穿着以及手持的物品不会占用储存空间。"
 
 #: lang/json/tutorial_messages_from_json.py
 msgid ""
@@ -92226,7 +92247,7 @@ msgstr "倒光%s中的液体吗？"
 
 #: src/advanced_inv.cpp
 msgid "You don't have enough room for that!"
-msgstr "你没有足够的空间装下它！"
+msgstr "你没有足够的储存空间装下它！"
 
 #: src/advanced_inv.cpp
 msgid "You can't wear any more of that!"
@@ -92321,7 +92342,7 @@ msgstr "保暖度："
 #: src/armor_layers.cpp
 #, c-format
 msgid "Storage (%s):"
-msgstr "容纳空间（%s）："
+msgstr "容积（%s）："
 
 #: src/armor_layers.cpp
 msgid "Protection"
@@ -92409,7 +92430,7 @@ msgstr "（最里层）"
 #: src/armor_layers.cpp
 #, c-format
 msgid "Storage (%s)"
-msgstr "容纳空间（%s）"
+msgstr "容积（%s）"
 
 #: src/armor_layers.cpp
 msgid "(Outermost)"
@@ -93924,19 +93945,19 @@ msgstr ""
 msgid "forever"
 msgstr "一直"
 
-#: src/calendar.cpp src/construction.cpp
+#: src/calendar.cpp
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d 秒"
 
-#: src/calendar.cpp src/construction.cpp
+#: src/calendar.cpp
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d 分"
 
-#: src/calendar.cpp src/construction.cpp
+#: src/calendar.cpp
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
@@ -93960,11 +93981,13 @@ msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] "%d 年"
 
+#: src/calendar.cpp
+msgid "for ever"
+msgstr "直到永远"
+
 #. ~ %1$s - greater units of time (e.g. 3 hours), %2$s - lesser units of time
 #. (e.g. 11 minutes).
-#. ~ A time duration: first is hours, second is minutes, e.g. "4 hours" "6
-#. minutes"
-#: src/calendar.cpp src/construction.cpp
+#: src/calendar.cpp
 #, c-format
 msgid "%1$s and %2$s"
 msgstr "%1$s 和 %2$s"
@@ -94002,34 +94025,6 @@ msgstr "%d:%02d:%02d%s上午"
 #, c-format
 msgid "%d:%02d:%02d%sPM"
 msgstr "%d:%02d:%02d%s下午"
-
-#: src/calendar.cpp
-msgid "Monday"
-msgstr "星期一"
-
-#: src/calendar.cpp
-msgid "Sunday"
-msgstr "星期日"
-
-#: src/calendar.cpp
-msgid "Tuesday"
-msgstr "星期二"
-
-#: src/calendar.cpp
-msgid "Wednesday"
-msgstr "星期三"
-
-#: src/calendar.cpp
-msgid "Friday"
-msgstr "星期五"
-
-#: src/calendar.cpp
-msgid "Thursday"
-msgstr "星期四"
-
-#: src/calendar.cpp
-msgid "Saturday"
-msgstr "星期六"
 
 #: src/calendar.cpp
 msgid "End times"
@@ -95636,7 +95631,7 @@ msgstr "你需要一个 %s 来服用它！"
 
 #: src/consumption.cpp
 msgid "We can't eat that.  It's not right for us."
-msgstr "我们不能吃那个。那是不对的。"
+msgstr "吾等不可食用此物。那不适合吾等。"
 
 #: src/consumption.cpp
 msgid "Ugh, you can't drink that!"
@@ -95742,7 +95737,7 @@ msgstr "<npcname> 喝了一口 %s。"
 #: src/consumption.cpp
 #, c-format
 msgid "You drink your %s."
-msgstr "你喝下 %s。"
+msgstr "你喝下了 %s。"
 
 #: src/consumption.cpp
 #, c-format
@@ -95752,7 +95747,7 @@ msgstr "<npcname> 吃下一个 %s。"
 #: src/consumption.cpp
 #, c-format
 msgid "You eat your %s."
-msgstr "你吃下 %s。"
+msgstr "你吃下了 %s。"
 
 #: src/consumption.cpp
 msgid "You feast upon the human flesh, and in doing so, devour their spirit."
@@ -95833,7 +95828,7 @@ msgstr "你感到仿佛要裂开了！是件好事？"
 #. ~of the Rat King's ALL CAPS invective.  Probably shared-brain telepathy.
 #: src/consumption.cpp
 msgid "hey, you look like me! let's work together!"
-msgstr "嗨！你看起来和我一样！让我们一起吧！"
+msgstr "嗨！你看起来和我一样！让我们一起合作吧！"
 
 #: src/consumption.cpp
 #, c-format
@@ -100881,11 +100876,11 @@ msgstr "发现了 %s！"
 #: src/game.cpp
 #, c-format
 msgid "We have detected a %s."
-msgstr "我们侦测到一个 %s。"
+msgstr "吾等已发现一个 %s。"
 
 #: src/game.cpp
 msgid "Our fibers strain with renewed wrath!"
-msgstr "我们的纤维随着怒火中烧而绷紧！"
+msgstr "吾等之纤维随着怒火而绷紧！"
 
 #: src/game.cpp
 msgid "Hostile survivor spotted!"
@@ -101855,11 +101850,11 @@ msgstr "分割全部"
 
 #: src/game.cpp
 msgid "You're too full to eat the underbrush."
-msgstr "你已经吃得很饱了，没法吃下那丛灌木。"
+msgstr "你已经吃得很饱了，没法吃下那丛灌木丛。"
 
 #: src/game.cpp
 msgid "You eat the underbrush."
-msgstr "你吃下了灌木丛。"
+msgstr "你吃下了 灌木丛。"
 
 #: src/game.cpp
 msgid "You're too full to graze."
@@ -101867,7 +101862,7 @@ msgstr "你已经吃得很饱了，没法咀嚼植物。"
 
 #: src/game.cpp
 msgid "You eat the grass."
-msgstr "你吃下杂草。"
+msgstr "你吃下了 草丛。"
 
 #: src/game.cpp
 #, c-format
@@ -102383,8 +102378,8 @@ msgid "You need to breathe but you can't swim!  Get to dry land, quick!"
 msgstr "你需要呼吸，但是你游不起来！赶紧爬上岸！"
 
 #: src/game.cpp
-msgid "No hostile creature in reach."
-msgstr "范围内没有敌对生物。"
+msgid "No hostile creature in reach. Waiting a turn."
+msgstr "范围内没有敌对生物。等待一回合。"
 
 #: src/game.cpp
 msgid "You dive into water."
@@ -103469,7 +103464,7 @@ msgid ""
 "Vehicle menu presents the most important parameters of your car, such as "
 "safe and maximum speed, current mass, total capacity and used volume of "
 "available cargo space, various fuel level indicators, and so on."
-msgstr "载具菜单列出了你的车的主要参数，如安全速度和最大速度，当前储物量、总容量和可用货物空间、 各种燃料的存量，等等。"
+msgstr "载具菜单列出了当前车辆的主要参数，如安全速度和最大速度，总重量、储存空间使用情况、 各种燃料的存量，等等。"
 
 #: src/help.cpp
 #, c-format
@@ -104218,7 +104213,7 @@ msgid ""
 "This may be worn with the %s key or removed with the %s key. It may cover one or more body parts; you can wear multiple articles of clothing on any given body part, but this will encumber you severely. Each article of clothing may provide storage space, warmth, encumbrance, and a resistance to bashing and/or cutting attacks. Some may protect against environmental effects."
 msgstr ""
 "[ 衣服\n"
-"游戏中找到的衣物可以通过按\"%s\"键来穿上或者按\"%s\"键脱下，每件衣物可能覆盖全部或部分的肢体，而游戏中你可以同时穿上不同的衣物，当然这样会极大地增加你的负担，每件衣物都会提供一定的储物空间、保暖度、累赘度以及对于钝击伤害和斩击伤害的防御。有些衣物甚至能帮助你对抗恶劣的环境。"
+"游戏中找到的衣物可以通过按\"%s\"键来穿上或者按\"%s\"键脱下，每件衣物可能覆盖全部或部分的肢体，而游戏中你可以同时穿上不同的衣物，当然这样会极大地增加你的负担，每件衣物都会提供一定的储存空间、保暖度、累赘度以及对于钝击伤害和斩击伤害的防御。有些衣物甚至能帮助你对抗恶劣的环境。"
 
 #: src/help.cpp
 #, c-format
@@ -105123,11 +105118,11 @@ msgstr "种下 %s"
 msgid ""
 "We have altered this unit's configuration to extract and provide local "
 "nutriment.  The Mycus provides."
-msgstr "我们改变了该单位的身体结构，以便于提取和供应本地生物所需的营养。马卡斯特供。"
+msgstr "吾等已经改造了该成员的结构，可以提取并供应本地生物所需要的营养。马卡斯给予你。"
 
 #: src/iexamine.cpp
 msgid "The seed blooms forth!  We have brought true beauty to this world."
-msgstr "种子向外绽放！我们给这个世界带来了真正的美丽。"
+msgstr "种子向外绽放！吾等为这个世界带来了真正的美丽。"
 
 #: src/iexamine.cpp
 msgid "The seed blossoms rather rapidly..."
@@ -105404,7 +105399,7 @@ msgstr "这灌木提供了一种水果，然后渐渐变成了真菌床。"
 msgid ""
 "We have located a particularly vital nutrient deposit underneath this "
 "location."
-msgstr "我们在这个位置下方发现了非常充分的营养沉积。"
+msgstr "吾等已经在此处下方发现了一处极为重要的营养沉积。"
 
 #: src/iexamine.cpp
 msgid "Additional nourishment is available."
@@ -106057,7 +106052,7 @@ msgstr "类别："
 
 #: src/item.cpp
 msgid "Price: "
-msgstr "价格： "
+msgstr "价格："
 
 #: src/item.cpp
 msgid "Barter value: "
@@ -106069,7 +106064,7 @@ msgstr "<bold>体积</bold>："
 
 #: src/item.cpp
 msgid "Weight: "
-msgstr "重量： "
+msgstr "重量："
 
 #: src/item.cpp
 msgid "<bold>Rigid</bold>: "
@@ -106081,7 +106076,7 @@ msgstr "否（内容物增加体积）"
 
 #: src/item.cpp
 msgid "Bash: "
-msgstr "钝击： "
+msgstr "钝击："
 
 #: src/item.cpp
 msgid "Cut: "
@@ -106101,7 +106096,7 @@ msgstr "攻击消耗行动点："
 
 #: src/item.cpp
 msgid "<bold>Minimum requirements:</bold>"
-msgstr "<bold>最低要求</bold>："
+msgstr "<bold>技能要求</bold>："
 
 #: src/item.cpp
 #, c-format
@@ -106119,19 +106114,19 @@ msgstr "数量："
 
 #: src/item.cpp
 msgid "age: "
-msgstr "寿命： "
+msgstr "寿命："
 
 #: src/item.cpp
 msgid "bday rot: "
-msgstr "腐坏开始回合： "
+msgstr "腐坏开始回合："
 
 #: src/item.cpp
 msgid "temp rot: "
-msgstr "腐坏累计： "
+msgstr "腐坏度累计："
 
 #: src/item.cpp
 msgid "max rot: "
-msgstr "腐坏回合数： "
+msgstr "腐坏度最大："
 
 #: src/item.cpp
 msgid "fridge: "
@@ -106143,7 +106138,7 @@ msgstr "腐坏开始回合（修正值）："
 
 #: src/item.cpp
 msgid "burn: "
-msgstr "热度： "
+msgstr "热度："
 
 #: src/item.cpp
 msgid "<bold>Nutrition</bold>: "
@@ -106151,19 +106146,19 @@ msgstr "<bold>营养</bold>："
 
 #: src/item.cpp
 msgid "Quench: "
-msgstr "解渴： "
+msgstr "解渴："
 
 #: src/item.cpp
 msgid "Enjoyability: "
-msgstr "享受： "
+msgstr "享受："
 
 #: src/item.cpp
 msgid "Portions: "
-msgstr "分量： "
+msgstr "分量："
 
 #: src/item.cpp
 msgid "Smells like: "
-msgstr "气味： "
+msgstr "气味："
 
 #: src/item.cpp src/iuse_actor.cpp
 msgid "Vitamins (RDA): "
@@ -106232,11 +106227,11 @@ msgstr "<num>每次"
 
 #: src/item.cpp
 msgid "Reload time: "
-msgstr "装填耗时： "
+msgstr "装填耗时："
 
 #: src/item.cpp
 msgid "Ammunition: "
-msgstr "弹药： "
+msgstr "弹药："
 
 #: src/item.cpp
 msgid "Types: "
@@ -106248,19 +106243,19 @@ msgstr "<bold>伤害</bold>："
 
 #: src/item.cpp
 msgid "Armor-pierce: "
-msgstr "穿甲： "
+msgstr "穿甲："
 
 #: src/item.cpp
 msgid "Range: "
-msgstr "射程： "
+msgstr "射程："
 
 #: src/item.cpp
 msgid "Dispersion: "
-msgstr "散布： "
+msgstr "散布："
 
 #: src/item.cpp
 msgid "Recoil: "
-msgstr "后坐力： "
+msgstr "后坐力："
 
 #: src/item.cpp
 msgid "This ammo has been <bad>hand-loaded</bad>"
@@ -106281,19 +106276,19 @@ msgstr "已启用的 <info>配件（%s）<info> 属性已经显示。"
 
 #: src/item.cpp
 msgid "Skill used: "
-msgstr "技能： "
+msgstr "技能："
 
 #: src/item.cpp
 msgid "<bold>Capacity:</bold> "
-msgstr "<bold>容量：</bold> "
+msgstr "<bold>容量</bold>："
 
 #: src/item.cpp
 msgid "Type: "
-msgstr "类型： "
+msgstr "类型："
 
 #: src/item.cpp
 msgid "Magazine: "
-msgstr "弹匣： "
+msgstr "弹匣："
 
 #: src/item.cpp
 #, c-format
@@ -106307,7 +106302,7 @@ msgstr "最大射程："
 
 #: src/item.cpp
 msgid "Base aim speed: "
-msgstr "基础瞄准速度： "
+msgstr "基础瞄准速度："
 
 #: src/item.cpp
 msgid "Even chance of good hit at range: "
@@ -106327,7 +106322,7 @@ msgstr "瞄准用时："
 
 #: src/item.cpp
 msgid "Damage: "
-msgstr "伤害： "
+msgstr "伤害："
 
 #: src/item.cpp
 msgid " = <num>"
@@ -106335,7 +106330,7 @@ msgstr " = <num>"
 
 #: src/item.cpp
 msgid "Sight dispersion: "
-msgstr "瞄准散布： "
+msgstr "瞄准散布："
 
 #: src/item.cpp
 msgid "Approximate recoil: "
@@ -106359,15 +106354,15 @@ msgstr "<num> 秒每次"
 
 #: src/item.cpp
 msgid "<bold>Fire modes:</bold> "
-msgstr "<bold>射击模式：</bold> "
+msgstr "<bold>射击模式</bold>："
 
 #: src/item.cpp
 msgid "<bold>Compatible magazines:</bold> "
-msgstr "<bold>兼容弹匣：</bold> "
+msgstr "<bold>兼容弹匣</bold>："
 
 #: src/item.cpp
 msgid "<bold>Mods:<bold> "
-msgstr "<bold>模组：<bold> "
+msgstr "<bold>模组</bold>："
 
 #: src/item.cpp
 #, c-format
@@ -106389,11 +106384,11 @@ msgstr "装在枪械上就<good>能够</good>作出<info>远距近战攻击</inf
 
 #: src/item.cpp
 msgid "Dispersion modifier: "
-msgstr "散布修正： "
+msgstr "散布修正："
 
 #: src/item.cpp
 msgid "Aim speed: "
-msgstr "瞄准速度： "
+msgstr "瞄准速度："
 
 #: src/item.cpp
 msgid "Handling modifier: "
@@ -106406,7 +106401,7 @@ msgstr "弹药：<stat>%s</stat>"
 
 #: src/item.cpp
 msgid "Used on: "
-msgstr "用于： "
+msgstr "用于："
 
 #: src/item.cpp
 msgid "Location: "
@@ -106414,7 +106409,7 @@ msgstr "位置："
 
 #: src/item.cpp
 msgid "Covers: "
-msgstr "覆盖部位： "
+msgstr "覆盖部位："
 
 #: src/item.cpp
 msgid "The <info>head</info>. "
@@ -106498,7 +106493,7 @@ msgstr "<info>右脚</info>。"
 
 #: src/item.cpp
 msgid "Layer: "
-msgstr "衣物层： "
+msgstr "衣物层："
 
 #: src/item.cpp
 msgid "<stat>Close to skin</stat>. "
@@ -106522,15 +106517,15 @@ msgstr "<stat>普通</stat>。"
 
 #: src/item.cpp
 msgid "Coverage: "
-msgstr "覆盖率： "
+msgstr "覆盖率："
 
 #: src/item.cpp
 msgid "Warmth: "
-msgstr "保暖度： "
+msgstr "保暖度："
 
 #: src/item.cpp
 msgid "<bold>Encumbrance</bold>: "
-msgstr "<bold>累赘</bold>："
+msgstr "<bold>累赘度</bold>："
 
 #: src/item.cpp
 msgid "<num> <info>(fits)</info>"
@@ -106538,7 +106533,7 @@ msgstr "<num> <info>（合身）</info>"
 
 #: src/item.cpp
 msgid "Storage: "
-msgstr "容纳空间： "
+msgstr "容积："
 
 #: src/item.cpp
 msgid "Protection: Bash: "
@@ -106554,7 +106549,7 @@ msgstr "防火："
 
 #: src/item.cpp
 msgid "Environmental protection: "
-msgstr "环境防护： "
+msgstr "环境防护："
 
 #: src/item.cpp
 msgid "Just for fun."
@@ -106657,7 +106652,7 @@ msgstr "原料：%s"
 #: src/item.cpp
 #, c-format
 msgid "Disassembling this item takes %s and might yield: %s."
-msgstr "拆解它耗时 %s ，可获得：%s。"
+msgstr "拆解耗时：%s，可获得：%s。"
 
 #: src/item.cpp
 #, c-format
@@ -106677,7 +106672,7 @@ msgstr "道具拥有功能："
 
 #: src/item.cpp
 msgid "Techniques: "
-msgstr "技巧： "
+msgstr "战斗技："
 
 #: src/item.cpp
 msgid "* This item can be used to make <stat>long reach attacks</stat>."
@@ -106689,7 +106684,7 @@ msgstr "※这件物品为<stat>远距攻击</stat>。"
 
 #: src/item.cpp
 msgid "<bold>Average melee damage:</bold>"
-msgstr "<bold>平均近战伤害：</bold>"
+msgstr "<bold>平均近战伤害</bold>："
 
 #: src/item.cpp
 #, c-format
@@ -106873,7 +106868,7 @@ msgstr "※<bad>故障的 %1$s</bad>。%2$s"
 
 #: src/item.cpp
 msgid "<bold>Can be stored in:</bold> "
-msgstr "<bold>可以被存放在：</bold>"
+msgstr "<bold>可存放在</bold>："
 
 #: src/item.cpp
 msgid "It's done and <info>can be activated</info>."
@@ -106908,7 +106903,7 @@ msgstr "你可以用它制作不同的物品。"
 #: src/item.cpp
 #, c-format
 msgid "You could use it to craft: %s"
-msgstr "你可以用它制作：%s"
+msgstr "可用于制作：%s"
 
 #: src/item.cpp
 #, c-format
@@ -107618,7 +107613,7 @@ msgstr "你感到非常困倦……"
 
 #: src/iuse.cpp
 msgid "You eat the datura seed."
-msgstr "你吃下了曼陀罗种子。"
+msgstr "你吃下了 曼陀罗花种子。"
 
 #: src/iuse.cpp
 #, c-format
@@ -107672,11 +107667,11 @@ msgstr "刚才发生了什么来着……？啊哦，你再也不想喝下那些
 
 #: src/iuse.cpp
 msgid "This is a contaminant.  We reject it from the Mycus."
-msgstr "这是一个污染源。我们不能让它接近马卡斯。"
+msgstr "这是一个污染源。吾等不能让它接近马卡斯。"
 
 #: src/iuse.cpp
 msgid "We decontaminate it with spores."
-msgstr "我们用孢子清除了感染。"
+msgstr "吾等已用孢子清除了感染。"
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
@@ -107690,7 +107685,7 @@ msgstr "恶意入侵者一名，已摧毁。"
 
 #: src/iuse.cpp
 msgid "We must eliminate this contaminant at the earliest opportunity."
-msgstr "我们必须尽快排除这个污染源。"
+msgstr "吾等必须尽快清除这个污染源。"
 
 #: src/iuse.cpp
 #, c-format
@@ -107725,7 +107720,7 @@ msgstr "爆发了特别严重的真菌感染。"
 #, c-format
 msgid ""
 "That was some toxic %s!  Let's stick with Marloss next time, that's safe."
-msgstr "那是些有毒的 %s！我们下次还是专注于马洛斯莓吧，那要安全得多。"
+msgstr "那是些有毒的 %s！吾等下次还是专注于马洛斯莓吧，那要安全得多。"
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
@@ -107893,7 +107888,7 @@ msgstr "你在马洛斯灌木丛中醒来。几乎像是被*孕育*在其中。�
 msgid ""
 "unity.  together we have reached the door.  we provide the final key.  now "
 "to pass through..."
-msgstr "我们生而为一。我们已一同触及了那道门扉。我们已给出最终的钥匙。是时候穿越那扇门了……"
+msgstr "吾等生而为一。吾等一道已经触及那道门扉。吾等已经提供了最终的钥匙。现在是时候穿越那扇门了……"
 
 #: src/iuse.cpp
 msgid "You feel a strange warmth spreading throughout your body..."
@@ -107908,7 +107903,7 @@ msgstr "还记得上次吃这玩意后发生的事了吗？啊~哦。你再也�
 
 #: src/iuse.cpp
 msgid "We no longer require this scaffolding.  We reserve it for other uses."
-msgstr "我们不再需要这种垫脚石了。我们会让它派上别的用场的。"
+msgstr "吾等已经不再需要这个垫脚石了。吾等会让其派上其他用场的。"
 
 #: src/iuse.cpp
 msgctxt "memorial_male"
@@ -107980,7 +107975,7 @@ msgstr "你舒爽得直翻白眼。一切溶解成极乐的阴霾……"
 #. ~ We are the Mycus.
 #: src/iuse.cpp
 msgid "We welcome into us.  We have endured long in this forbidding world."
-msgstr "欢迎加入我们。我们已在这险恶的世间忍耐太久。"
+msgstr "欢迎加入吾等。吾等已在这险恶世界中忍受太久了。"
 
 #: src/iuse.cpp
 msgid "The natives have a saying: \"E Pluribus Unum\"  Out of many, one."
@@ -107990,17 +107985,17 @@ msgstr "土著们有句谚语：\"E Pluribus Unum\"——合众为一。"
 msgid ""
 "We welcome the union of our lines in our local guide.  We will prosper, and "
 "unite this world."
-msgstr "欢迎加入我们引导土著们的事业阵线。我们将更加繁荣，并团结这个世界。"
+msgstr "吾等欢迎本地居民加入吾等事业阵线，充当向导。吾等必将繁荣，进而团结这个世界。"
 
 #: src/iuse.cpp
 msgid "Even now, our fruits adapt to better serve local physiology."
-msgstr "直到现在，我们的果实仍在致力于更好地适应土著的生态。"
+msgstr "直到现在，吾等之果实仍旧在致力于更好地适应本地生态。"
 
 #: src/iuse.cpp
 msgid ""
 "As, in time, shall we adapt to better welcome those who have not received "
 "us."
-msgstr "因此，假以时日我们终将适应环境、得以以更好地迎接那些尚未接受我们的存在。"
+msgstr "因此，假以时日，吾等终将更加适应此地环境，得以更好迎接那些尚未接受吾等存在之辈。"
 
 #: src/iuse.cpp
 msgid "This apple tastes really weird!  You're not sure it's good for you..."
@@ -109439,7 +109434,7 @@ msgstr "你已经干了，%s 没有效果。"
 #: src/iuse.cpp src/iuse_actor.cpp
 #, c-format
 msgid "There's no room to unfold the %s."
-msgstr "这里没空间展开 %s。"
+msgstr "没有足够的空间展开 %s。"
 
 #: src/iuse.cpp
 #, c-format
@@ -110382,7 +110377,7 @@ msgstr "无法在此处创建全息投影。"
 #: src/iuse.cpp
 #, c-format
 msgid "There is no place to put the %s."
-msgstr "没有足够空间放置 %s。"
+msgstr "没有足够的空间放置 %s。"
 
 #: src/iuse.cpp src/iuse_actor.cpp
 #, c-format
@@ -110940,7 +110935,7 @@ msgstr "使用 %s"
 
 #: src/iuse_actor.cpp
 msgid "Can contain items from "
-msgstr "可以容纳物品体积为"
+msgstr "可以储存物品体积为"
 
 #: src/iuse_actor.cpp
 msgid "Up to "
@@ -111160,7 +111155,7 @@ msgstr "<bold>实际回复</bold>："
 
 #: src/iuse_actor.cpp
 msgid "<bold>Chance to heal (percent):</bold> "
-msgstr "<bold>回复几率（%）</bold>："
+msgstr "<bold>治愈几率（%）</bold>："
 
 #: src/iuse_actor.cpp
 msgid "<bold>Bleeding</bold>:"
@@ -111215,7 +111210,7 @@ msgstr "把 %s 放在哪里？"
 
 #: src/iuse_actor.cpp
 msgid "That trap needs a 3x3 space to be clear, centered two tiles from you."
-msgstr "这陷阱需要一个以你为中心的3x3的空白空间。"
+msgstr "这陷阱需要一个距离你当前方向两格的大小为3x3的空间来放置。"
 
 #: src/iuse_actor.cpp
 #, c-format
@@ -111542,7 +111537,7 @@ msgstr "一听低热量午餐肉罐头。"
 
 #: src/iuse_software_kitten.cpp
 msgid "This is another fine mess you've gotten us into, Stanley."
-msgstr "看起来又是你给我们弄的一团糟，Stanley。"
+msgstr "看起来又是你给我们弄的一团糟，史丹利。"
 
 #: src/iuse_software_kitten.cpp
 msgid "It's scenery for \"Waiting for Godot\"."
@@ -114826,12 +114821,12 @@ msgstr "一棵树从地里钻出并刺穿了 <npcname> 的 %s！"
 #: src/monattack.cpp
 #, c-format
 msgid "The underbrush beneath your feet grows and pierces your %s!"
-msgstr "你脚下的灌木林变成了树并且刺穿了你的 %s！"
+msgstr "你脚下的灌木丛长成了树，并且刺穿了你的 %s！"
 
 #: src/monattack.cpp
 #, c-format
 msgid "Underbrush grows into a tree, and it pierces <npcname>'s %s!"
-msgstr "灌木林长成了树，并且刺穿了 <npcname> 的 %s！"
+msgstr "灌木丛长成了树，并且刺穿了 <npcname> 的 %s！"
 
 #. ~ 1$s monster name(vine), 2$s bodypart in accusative
 #: src/monattack.cpp
@@ -116573,12 +116568,12 @@ msgstr "你用你的尖牙和利爪撕扯 %s。"
 
 #: src/mutation.cpp
 msgid "You focus, but are too hemmed in to birth a new slimespring!"
-msgstr "你集中注意力，但无法生成一个新的史莱姆兄弟！"
+msgstr "你集中注意力，但无法生成一个新的变形怪同伴！"
 
 #: src/mutation.cpp
 msgid ""
 "You focus, and with a pleasant splitting feeling, birth a new slimespring!"
-msgstr "你集中注意力，然后随着一种很愉悦的剥离感，又多了一个史莱姆兄弟！"
+msgstr "你集中注意力，然后随着一种很愉悦的剥离感，又多了一个变形怪同伴！"
 
 #. ~ Usual enthusiastic slimespring small voices! :D
 #: src/mutation.cpp
@@ -119131,7 +119126,7 @@ msgstr "[智力 12]等等，一开始六卡车和后来的难民……你这里�
 msgid ""
 "[INT 11] I'm sure I can organize salvage operations to increase the bounty "
 "scavengers bring in!"
-msgstr "[智力 11] 我认为我能组织回收工作，增加拾荒者的收获。"
+msgstr "[智力 11] 我想我可以很好地组织回收行动，增加拾荒者带来的收获。"
 
 #: src/npctalk.cpp
 msgid "[STR 11] I punch things in face real good!"
@@ -119923,7 +119918,7 @@ msgstr "%s 成为了你的队员！"
 #: src/npctalk.cpp
 #, c-format
 msgid "%s starts ignoring you."
-msgstr "%s 不再正视你。"
+msgstr "%s 不愿意理你。"
 
 #: src/npctalk.cpp
 #, c-format
@@ -120179,7 +120174,7 @@ msgstr "这穿起来太累赘了。"
 
 #: src/npctalk.cpp
 msgid "I have no space to store it."
-msgstr "我没有足够的空间来储存它。"
+msgstr "我没有足够的储存空间装下它。"
 
 #: src/npctalk.cpp
 #, c-format
@@ -121508,7 +121503,7 @@ msgstr "几条小蛇从你身体里游了出来！"
 
 #: src/player.cpp
 msgid "Slime is torn from you, and moves on its own!"
-msgstr "史莱姆从你身上脱落，并且开始自由行动！"
+msgstr "变形怪从你身上脱落，并且开始自由行动！"
 
 #: src/player.cpp
 #, c-format
@@ -121518,7 +121513,7 @@ msgstr "战斗中你的酸性血液溅到了 %s 身上！"
 #: src/player.cpp
 #, c-format
 msgid "%1$s's acidic blood splashes on %2$s in mid-attack!"
-msgstr "战斗中 %1$s 酸性血液溅到了 %2$s 身上！"
+msgstr "战斗中 %1$s 的酸性血液溅到了 %2$s 身上！"
 
 #: src/player.cpp
 #, c-format
@@ -121842,7 +121837,7 @@ msgstr "你昏倒了！"
 
 #: src/player.cpp
 msgid "We have mistakenly colonized a local guide!  Purging now."
-msgstr "我们错误地引导了一名土著殖民！正在清理。"
+msgstr "吾等错误地引导了一名本地生物作为向导！正在清理中。"
 
 #: src/player.cpp
 msgid "Something writhes and inside of you as it dies."
@@ -123162,7 +123157,7 @@ msgstr "速度"
 
 #: src/player_display.cpp
 msgid "Base Move Cost:"
-msgstr "基础移动耗时："
+msgstr "基础速度："
 
 #: src/player_display.cpp
 msgid "Current Speed:"
@@ -123643,7 +123638,7 @@ msgstr "你突然被一层灵能物质所覆盖。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "We have many colonists awaiting passage."
-msgstr "我们还有很多殖民者正等待着通行。"
+msgstr "吾等尚有许多开拓者等待通行。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "Your asthma attack stops."
@@ -125230,7 +125225,7 @@ msgstr "集雨器需要被安装在一个水箱上。"
 
 #: src/veh_interact.cpp
 msgid "Can't install turret on another turret."
-msgstr "无法在一个炮台上安装另一个炮台。"
+msgstr "无法在一个炮塔上安装另一个炮塔。"
 
 #: src/veh_interact.cpp
 msgid "<color_white>Additional requirements:</color>\n"
@@ -126568,6 +126563,34 @@ msgstr "你的动力装甲保护你免受酸雨的伤害。"
 #: src/weather.cpp
 msgid "The acid rain burns!"
 msgstr "酸雨灼烧着你！"
+
+#: src/weather.cpp
+msgid "Monday"
+msgstr "星期一"
+
+#: src/weather.cpp
+msgid "Sunday"
+msgstr "星期日"
+
+#: src/weather.cpp
+msgid "Tuesday"
+msgstr "星期二"
+
+#: src/weather.cpp
+msgid "Wednesday"
+msgstr "星期三"
+
+#: src/weather.cpp
+msgid "Friday"
+msgstr "星期五"
+
+#: src/weather.cpp
+msgid "Thursday"
+msgstr "星期四"
+
+#: src/weather.cpp
+msgid "Saturday"
+msgstr "星期六"
 
 #: src/weather.cpp
 #, c-format
