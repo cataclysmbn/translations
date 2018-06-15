@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-dda 0.C\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 19:14-0400\n"
+"POT-Creation-Date: 2018-06-09 21:55+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Букин Иван <my.cat.likes.milk.in.bottle@gmail.com>, 2018\n"
 "Language-Team: Russian (https://www.transifex.com/cataclysm-dda-translators/teams/2217/ru/)\n"
@@ -73207,7 +73207,7 @@ msgid "barrel extension"
 msgid_plural "barrel extensions"
 msgstr[0] "удлинённый ствол"
 msgstr[1] "удлинённых ствола"
-msgstr[2] "удлинённых  стволов"
+msgstr[2] "удлинённых стволов"
 msgstr[3] "удлинённых ствола"
 
 #: lang/json/gunmod_from_json.py
@@ -126530,8 +126530,21 @@ msgstr "Это углевыжигательная печь."
 
 #: src/iexamine.cpp
 #, c-format
-msgid "It should take %d minutes to finish burning."
-msgstr "До конца горения осталось %d минут."
+msgid "It will finish burning in about %d hour."
+msgid_plural "It will finish burning in about %d hours."
+msgstr[0] "Горение закончится через %d час."
+msgstr[1] "Горение закончится через %d часа."
+msgstr[2] "Горение закончится через %d часов."
+msgstr[3] "Горение закончится через %d час."
+
+#: src/iexamine.cpp
+msgid "It will finish burning in less than an hour."
+msgstr "Горение закончится менее, чем через час."
+
+#: src/iexamine.cpp
+#, c-format
+msgid "It should take about %d minutes to finish burning."
+msgstr "До конца горения осталось примерно %d минут."
 
 #: src/iexamine.cpp
 msgid "You have no brew to ferment."
@@ -127741,8 +127754,8 @@ msgid "<bold>Compatible magazines:</bold> "
 msgstr "<bold>Совместимые магазины:</bold> "
 
 #: src/item.cpp
-msgid "<bold>Mods:<bold> "
-msgstr "<bold>Модификации</bold>: "
+msgid "<bold>Mods:</bold> "
+msgstr "<bold>Модификации:</bold> "
 
 #: src/item.cpp
 #, c-format
@@ -128076,8 +128089,8 @@ msgid "Contains items with qualities:"
 msgstr "Содержит предметы со следующими качествами:"
 
 #: src/item.cpp
-msgid "Techniques: "
-msgstr "Техники: "
+msgid "<bold>Techniques when wielded</bold>: "
+msgstr "<bold>Техники при взятии в руки</bold>: "
 
 #: src/item.cpp
 msgid "* This item can be used to make <stat>long reach attacks</stat>."
@@ -128589,6 +128602,10 @@ msgstr "Нельзя присоединить %s"
 #: src/item.cpp
 msgid "isn't big enough to use that mod"
 msgstr "недостаточно велик, чтобы было возможно использовать эту модификацию."
+
+#: src/item.cpp
+msgid "can only accept small mods on that slot"
+msgstr "на этот слот можно устанавливать только небольшие модификации"
 
 #. ~ %1$s - name of the gunmod, %2$s - name of the ammo
 #: src/item.cpp
