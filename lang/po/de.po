@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-dda 0.C\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-01 19:14-0400\n"
+"POT-Creation-Date: 2018-06-09 21:55+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Nico Brandt <nicobaustandere@web.de>, 2018\n"
 "Language-Team: German (https://www.transifex.com/cataclysm-dda-translators/teams/2217/de/)\n"
@@ -123215,8 +123215,19 @@ msgstr "Dort ist ein Holzkohleofen."
 
 #: src/iexamine.cpp
 #, c-format
-msgid "It should take %d minutes to finish burning."
-msgstr "Es sollte %d Minuten brauchen, bis es mit Brennen fertig ist."
+msgid "It will finish burning in about %d hour."
+msgid_plural "It will finish burning in about %d hours."
+msgstr[0] "Es wird mit dem Brennen in ungefähr %d Stunde fertig sein."
+msgstr[1] "Es wird mit dem Brennen in ungefähr %d Stunden fertig sein."
+
+#: src/iexamine.cpp
+msgid "It will finish burning in less than an hour."
+msgstr "Es wird mit dem Brennen in weniger als einer Stunde fertig sein."
+
+#: src/iexamine.cpp
+#, c-format
+msgid "It should take about %d minutes to finish burning."
+msgstr "Es sollte etwa %d Minuten brauchen, bis es mit Brennen fertig ist."
 
 #: src/iexamine.cpp
 msgid "You have no brew to ferment."
@@ -124438,8 +124449,8 @@ msgid "<bold>Compatible magazines:</bold> "
 msgstr "<bold>Kompatible Magazine:</bold> "
 
 #: src/item.cpp
-msgid "<bold>Mods:<bold> "
-msgstr "<bold>Mods:<bold> "
+msgid "<bold>Mods:</bold> "
+msgstr "<bold>Mods:</bold> "
 
 #: src/item.cpp
 #, c-format
@@ -124761,8 +124772,8 @@ msgid "Contains items with qualities:"
 msgstr "Enthält Gegenstände mit Eigenschaften:"
 
 #: src/item.cpp
-msgid "Techniques: "
-msgstr "Techniken: "
+msgid "<bold>Techniques when wielded</bold>: "
+msgstr "<bold>Techniken, wenn getragen</bold>: "
 
 #: src/item.cpp
 msgid "* This item can be used to make <stat>long reach attacks</stat>."
@@ -125277,6 +125288,10 @@ msgstr "kann %s nicht haben"
 #: src/item.cpp
 msgid "isn't big enough to use that mod"
 msgstr "ist nicht groß genug, um diese Modifikation zu verwenden"
+
+#: src/item.cpp
+msgid "can only accept small mods on that slot"
+msgstr "unterstützt nur kleine Mods in diesem Slot"
 
 #. ~ %1$s - name of the gunmod, %2$s - name of the ammo
 #: src/item.cpp
