@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-dda 0.C\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-09 21:55+0800\n"
+"POT-Creation-Date: 2018-06-15 19:51+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Букин Иван <my.cat.likes.milk.in.bottle@gmail.com>, 2018\n"
 "Language-Team: Russian (https://www.transifex.com/cataclysm-dda-translators/teams/2217/ru/)\n"
@@ -26498,10 +26498,10 @@ msgstr[3] "дикие травы"
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
 "A tasty collection of wild herbs including violet, sassafras, mint, clover, "
-"purslane, and burdock."
+"purslane, fireweed, and burdock."
 msgstr ""
 "Вкусный сбор диких трав, включающий в себя фиалку, сассафрас, мяту, клевер, "
-"портулак и лопух."
+"портулак, кипрею и лопух."
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "herbal tea"
@@ -45157,6 +45157,7 @@ msgid "chicken"
 msgstr "курица"
 
 #. ~ Description for chicken
+#. ~ Description for chicken chick
 #: lang/json/MONSTER_from_json.py
 msgid ""
 "A domesticated descendant of junglefowl, it may still be the most numerous "
@@ -45520,6 +45521,23 @@ msgstr ""
 "Беспилотный дрон с термоядерным двигателем, состоящий в основном из камер "
 "высокого разрешения. Этот сферический робот летает по округе, безмолвно "
 "наблюдая за кровавой бойней и разгромом повсюду."
+
+#: lang/json/MONSTER_from_json.py
+msgid "zombie burner"
+msgstr "зомби-поджигатель"
+
+#. ~ Description for zombie burner
+#: lang/json/MONSTER_from_json.py
+msgid ""
+"Realizing that bullets weren't enough, the army dispatched flamethrower "
+"units to burn the walking dead.  Unfortunately, there were too many zombies "
+"and not enough flamers.  It seems that the tank of the undead soldier you "
+"see before you is damaged."
+msgstr ""
+"Когда военные поняли, что одними пулями зомби не остановить, они начали "
+"применять отряды с огнемётами. К несчастью, зомби было слишком много, а "
+"огнемётчиков - слишком мало. Похоже, что у этого некогда живого солдата "
+"повреждён бак со смесью."
 
 #: lang/json/MONSTER_from_json.py
 msgid "flaming eye"
@@ -47626,6 +47644,56 @@ msgid ""
 msgstr ""
 "Более-менее нормально выглядящая пума, за исключением того, что её задние "
 "ноги распухли, а из глаз сочится чёрная слизь."
+
+#: lang/json/MONSTER_from_json.py
+msgid "skittering plague"
+msgstr "бегущая чума"
+
+#. ~ Description for skittering plague
+#: lang/json/MONSTER_from_json.py
+msgid "A giant infected roach, it has been feeding on the undead."
+msgstr "Гигантский заражённый таракан, пожирающий трупы нежити."
+
+#: lang/json/MONSTER_from_json.py
+msgid "plague nymph"
+msgstr "личинка чумы"
+
+#. ~ Description for plague nymph
+#: lang/json/MONSTER_from_json.py
+msgid "An infected mutant cockroach about the size of a rat."
+msgstr "Заражённый таракан-мутант размером с крысу."
+
+#: lang/json/MONSTER_from_json.py
+msgid "plague vector"
+msgstr "переносчик чумы"
+
+#. ~ Description for plague vector
+#: lang/json/MONSTER_from_json.py
+msgid ""
+"This infected roach has been feeding on the undead and started to mutate "
+"chaotically.  Extra limbs and growths sprout from its thorax."
+msgstr ""
+"Этот заражённый таракан питался трупами нежити и из-за этого начал "
+"хаотически мутировать. Из его грудной клетки начали расти дополнительные "
+"конечности."
+
+#: lang/json/MONSTER_from_json.py
+msgid "triffid sprig"
+msgstr "росток триффида"
+
+#. ~ Description for triffid sprig
+#: lang/json/MONSTER_from_json.py
+msgid ""
+"A teeny-tiny triffid that has recently germinated.  Like a house cat, you "
+"know it wants to eat you but it just can't figure out how."
+msgstr ""
+"Малюсенький, недавно проклюнувшийся триффид. Вы знаете, что он хочет съесть "
+"вас, просто не может сообразить, как это лучше сделать - прямо как домашняя "
+"кошка."
+
+#: lang/json/MONSTER_from_json.py
+msgid "chicken chick"
+msgstr "цыплёнок"
 
 #: lang/json/MONSTER_from_json.py
 msgid "security bot"
@@ -64143,6 +64211,10 @@ msgstr "У вас нет энергии драться."
 msgid "You lie down to go to sleep..."
 msgstr "Вы ложитесь спать…"
 
+#: lang/json/effects_from_json.py src/player_hardcoded_effects.cpp
+msgid "You fall asleep."
+msgstr "Вы засыпаете."
+
 #: lang/json/effects_from_json.py
 msgid "You wake up."
 msgstr "Вы просыпаетесь."
@@ -65233,7 +65305,7 @@ msgstr ""
 
 #: lang/json/faction_from_json.py
 msgid "Your Followers"
-msgstr "Ваши последователи"
+msgstr "Ваши союзники"
 
 #. ~ Description for Your Followers
 #: lang/json/faction_from_json.py
@@ -65498,12 +65570,14 @@ msgstr "баррикады"
 msgid "A road barricade.  For barricading roads."
 msgstr "Баррикада. Для перегораживания дорог."
 
-#: lang/json/furniture_from_json.py lang/json/terrain_from_json.py src/map.cpp
-#: src/mapdata.cpp
+#: lang/json/furniture_from_json.py lang/json/furniture_from_json.py
+#: lang/json/terrain_from_json.py lang/json/terrain_from_json.py
+#: lang/json/terrain_from_json.py src/map.cpp src/mapdata.cpp
 msgid "smash!"
 msgstr "грохот!"
 
-#: lang/json/furniture_from_json.py lang/json/terrain_from_json.py
+#: lang/json/furniture_from_json.py lang/json/furniture_from_json.py
+#: lang/json/terrain_from_json.py lang/json/terrain_from_json.py
 msgid "whump."
 msgstr "«бум»."
 
@@ -65538,8 +65612,8 @@ msgstr "доска объявлений"
 msgid "Pin some notes for other survivors to read."
 msgstr "Место, куда можно прикреплять записки для других выживших."
 
-#: lang/json/furniture_from_json.py lang/json/terrain_from_json.py
-#: lang/json/terrain_from_json.py src/iuse.cpp
+#: lang/json/furniture_from_json.py lang/json/furniture_from_json.py
+#: lang/json/terrain_from_json.py lang/json/terrain_from_json.py src/iuse.cpp
 msgid "crunch!"
 msgstr "треск!"
 
@@ -65907,7 +65981,8 @@ msgstr "Отлично выгляжу - эй, это что, кровь?"
 msgid "glass breaking"
 msgstr "звон разбитого стекла"
 
-#: lang/json/furniture_from_json.py lang/json/terrain_from_json.py
+#: lang/json/furniture_from_json.py lang/json/furniture_from_json.py
+#: lang/json/terrain_from_json.py lang/json/terrain_from_json.py
 msgid "whack!"
 msgstr "«хрясь!»"
 
@@ -66428,6 +66503,25 @@ msgid "thunk!"
 msgstr "тыньк!"
 
 #: lang/json/furniture_from_json.py
+msgid "autodoc"
+msgstr "автодок"
+
+#. ~ Description for autodoc
+#: lang/json/furniture_from_json.py
+msgid "A medical apparatus for automated diagnosis and healing."
+msgstr ""
+"Медицинский аппарат для автоматизированных постановки диагноза и лечения."
+
+#: lang/json/furniture_from_json.py
+msgid "autodoc couch"
+msgstr "кушетка автодока"
+
+#. ~ Description for autodoc couch
+#: lang/json/furniture_from_json.py
+msgid "A special medical couch connected with the adjacent autodoc."
+msgstr "Специальная медицинская кушетка, присоединённая к автодоку."
+
+#: lang/json/furniture_from_json.py
 msgid "mutated cactus"
 msgstr "мутировавший кактус"
 
@@ -66905,6 +66999,18 @@ msgstr[3] "кислотное ружьё"
 #: lang/json/gun_from_json.py
 msgid "Fake gun that fires acid globs."
 msgstr "Оружие отладки, стреляет кислотными сгустками."
+
+#: lang/json/gun_from_json.py
+msgid "reach bow"
+msgid_plural "reach bows"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: lang/json/gun_from_json.py
+msgid "A test item that is both a ranged weapon and a reach weapon"
+msgstr ""
 
 #: lang/json/gun_from_json.py
 msgid "BB gun"
@@ -87257,7 +87363,7 @@ msgstr "Теперь у бармена есть виски!"
 
 #: lang/json/mutation_from_json.py
 msgid "Has Level 1 Companion Missions"
-msgstr "Имеет 1 Уровня Миссии Компаньона"
+msgstr "Имеет 1 Уровень Задания Компаньона"
 
 #. ~ Description for Has Level 1 Companion Missions
 #: lang/json/mutation_from_json.py
@@ -95638,12 +95744,12 @@ msgstr "стрельба из лука"
 #: lang/json/skill_from_json.py
 msgid ""
 "Your skill in using bow weapons, from hand-carved self bows to complex "
-"hunting crossbows.  Quiet and effective, they require strength of body and "
-"sight to wield, and are not terribly accurate over a long distance."
+"compound bows.  Quiet and effective, they require strength of body and sight"
+" to wield, and are not terribly accurate over a long distance."
 msgstr ""
-"Навык обращения с луками и арбалетами. Тихие и эффективные, требуют для "
-"использования силу и хорошее зрение, плюс не очень точны на дальних "
-"дистанциях."
+"Навык обращения с луками, начиная от простейших самодельных и заканчивая "
+"сложными блочными. Тихие и эффективные, требуют для использования силу и "
+"хорошее зрение, но не очень точны на дальних дистанциях."
 
 #: lang/json/skill_from_json.py
 msgid "bashing weapons"
@@ -95720,7 +95826,7 @@ msgstr ""
 "разрушительной силой, при этом оно довольно тяжёлое и сложное для "
 "управления."
 
-#: lang/json/skill_from_json.py
+#: lang/json/skill_from_json.py src/item_factory.cpp
 msgid "melee"
 msgstr "рукопашный бой"
 
@@ -116266,9 +116372,9 @@ msgid ""
 "TO WRITE US A LETTER PLEASE SEND IT TO...\n"
 msgstr ""
 "ЕСЛИ У ВАС ЕСТЬ ОТЗЫВ ПО ВАШЕМУ ВИЗИТУ, ПОЖАЛУЙСТА, СВЯЖИТЕСЬ\n"
-"С ОФИСОМ ОБЩЕСТВЕННЫХ ДЕЛ ДЕПАРТАМЕНТА ЧРЕЗВЫЧАЙНЫХ ДЕЛ.\n"
+"С ОФИСОМ ОБЩЕСТВЕННЫХ ДЕЛ ДЕПАРТАМЕНТА ПО ЧРЕЗВЫЧАЙНЫМ СИТУАЦИЯМ.\n"
 "С МЕСТНЫМ ОФИСОМ МОЖНО СВЯЗАТЬСЯ С 9:00 И\n"
-"ДО 16:00 ПО ТЕЛЕФОНУ 1-800-555-0164\n"
+"ДО 16:00 ПО ТЕЛЕФОНУ 1-800-555-0164.\n"
 "\n"
 "ЕСЛИ ВЫ ХОТИТЕ ПОГОВОРИТЬ С КЕМ-ТО ЛИЧНО ИЛИ\n"
 "НАПИСАТЬ НАМ ПИСЬМО, ПОЖАЛУЙСТА ОТПРАВЛЯЙТЕ ЕГО...\n"
@@ -116943,9 +117049,10 @@ msgstr[1] "Понадобится %s с %d зарядами."
 msgstr[2] "Понадобится %s с %d зарядами."
 msgstr[3] "Понадобится %s с %d зарядом."
 
-#: src/crafting.cpp src/game.cpp src/game.cpp src/iexamine.cpp src/iuse.cpp
-#: src/iuse.cpp src/iuse_actor.cpp src/iuse_actor.cpp src/npctalk.cpp
-#: src/npctalk.cpp src/pickup.cpp src/player.cpp src/player.cpp src/player.cpp
+#: src/crafting.cpp src/game.cpp src/game.cpp src/iexamine.cpp
+#: src/iexamine.cpp src/iuse.cpp src/iuse.cpp src/iuse.cpp src/iuse_actor.cpp
+#: src/iuse_actor.cpp src/iuse_actor.cpp src/npctalk.cpp src/npctalk.cpp
+#: src/npctalk.cpp src/pickup.cpp src/player.cpp src/player.cpp
 #: src/veh_interact.cpp
 msgid "Never mind."
 msgstr "Ничего особенного."
@@ -127063,6 +127170,47 @@ msgstr ""
 "Спуститься?"
 
 #: src/iexamine.cpp
+msgid "Autodoc Mk. XI.  Status: Online.  Please choose operation."
+msgstr "Автодок, модель XI. Статус: В работе. Пожалуйста, выберите операцию."
+
+#: src/iexamine.cpp
+msgid "Choose Compact Bionic Module to install."
+msgstr "Выберите Компактный Бионический Модуль для установки."
+
+#: src/iexamine.cpp
+msgid "Do nothing."
+msgstr "Ничего не делать."
+
+#: src/iexamine.cpp
+msgid "No connected couches found.  Operation impossible.  Exiting."
+msgstr ""
+"Не найдены подключенные кушетки. Операция невозможна. Завершение работы."
+
+#: src/iexamine.cpp
+msgid ""
+"No patient found located on the connected couches.  Operation impossible.  "
+"Exiting."
+msgstr ""
+"На подключенных кушетках не найден пациент. Операция невозможна. Завершение "
+"работы."
+
+#: src/iexamine.cpp
+msgid "Choose CBM to install"
+msgstr "Выберите КБМ для установки"
+
+#: src/iexamine.cpp
+msgid "You type data into the console, configuring Autodoc to install a CBM."
+msgstr ""
+"Вы вводите данные в консоль, настраивая автодок для установки бионики."
+
+#: src/iexamine.cpp
+msgid ""
+"Autodoc injected you with anesthesia, and while you were sleeping conducted "
+"a medical operation on you."
+msgstr ""
+"Автодок ввёл вас в наркоз, и, пока вы спали, провёл медицинскую операцию."
+
+#: src/iexamine.cpp
 msgid "Use electrohack?"
 msgstr "Использовать электрохак?"
 
@@ -132924,7 +133072,7 @@ msgstr "Одинокая, забытая запятая. Сидит здесь, 
 
 #: src/iuse_software_kitten.cpp
 msgid "ONE HUNDRED THOUSAND CARPET FIBERS!"
-msgstr "ОДНА СОТНЯ КОВРОВЫХ ВОЛОКОН!"
+msgstr "ОДНА СОТНЯ ТЫСЯЧ КОВРОВЫХ ВОЛОКОН!"
 
 #: src/iuse_software_kitten.cpp
 msgid "It's Richard Nixon's nose!"
@@ -134472,6 +134620,16 @@ msgstr "Вы не смогли обезвредить ловушку."
 msgid "You fail to disarm the trap, and you set it off!"
 msgstr "Вы не смогли обезвредить ловушку, и она сработала!"
 
+#: src/map.cpp
+#, c-format
+msgid "Something has crawled out of the %s plants!"
+msgstr "Что-то вылезло из побегов (%s)!"
+
+#: src/map.cpp
+#, c-format
+msgid "Something has crawled out of the %s!"
+msgstr "Что-то вылезло из %s!"
+
 #: src/map_extras.cpp
 msgid "DANGER! MINEFIELD!"
 msgstr "ОПАСНОСТЬ! МИННОЕ ПОЛЕ!"
@@ -135287,19 +135445,19 @@ msgstr "Какую бионику вы хотели бы удалить?"
 
 #: src/mission_companion.cpp
 msgid "Outpost Missions"
-msgstr "Задания Аванпоста"
+msgstr "Задания аванпоста"
 
 #: src/mission_companion.cpp
 msgid "Junk Shop Missions"
-msgstr ""
+msgstr "Задания ломбарда"
 
 #: src/mission_companion.cpp
 msgid "Agricultural Missions"
-msgstr "Сельскохозяйственные задания"
+msgstr "Задания по сельскому хозяйству"
 
 #: src/mission_companion.cpp
 msgid "Construction Missions"
-msgstr "Задания на строительство"
+msgstr "Задания по строительству"
 
 #: src/mission_companion.cpp
 msgid "Free Merchant Missions"
@@ -135313,6 +135471,11 @@ msgid ""
 " \n"
 "Assigning one of your allies to patrol the surrounding wilderness and isolated buildings presents the opportunity to build survival skills while engaging in relatively safe combat against isolated creatures."
 msgstr ""
+"Прибыль: $25-$500\n"
+"Опасность: низкая\n"
+"Время: 10-часовые задания\n"
+" \n"
+"Назначение одного из ваших союзников патрулировать окружающую дикую местность и отдельные здания, представляет возможность поднять навыки выживания, участвуя в относительно безопасном бою против отдельных созданий."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135322,6 +135485,11 @@ msgid ""
 " \n"
 "Patrol Roster:\n"
 msgstr ""
+"Оплата: $25-$500\n"
+"Опасность: низкая\n"
+"Время: 10-часовые задания\n"
+" \n"
+"Перечень патрулей:\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135341,6 +135509,11 @@ msgid ""
 " \n"
 "Scavenging raids target formerly populated areas to loot as many valuable items as possible before being surrounded by the undead.  Combat is to be expected and assistance from the rest of the party can't be guaranteed.  The rewards are greater and there is a chance of the companion bringing back items."
 msgstr ""
+"Прибыль: $200-$1000\n"
+"Опасность: средняя\n"
+"Время: 10-часовые задания\n"
+" \n"
+"Целью рейдов по добыче являются ранее населённые территории, для добычи как можно больше ценных вещей, прежде чем быть окружёнными зомби. Бой ожидается, помощь со стороны остальной части группы не гарантируется. Вознаграждение больше и есть шанс компаньону вернуть вещи назад."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135350,6 +135523,11 @@ msgid ""
 " \n"
 "Raid Roster:\n"
 msgstr ""
+"Оплата: $200-$1000\n"
+"Опасность: средняя\n"
+"Время: 10-часовые задания\n"
+" \n"
+"Перечень рейдов:\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135359,11 +135537,11 @@ msgid ""
 " \n"
 "Assigning one of your allies to menial labor is a safe way to teach them basic skills and build reputation with the outpost.  Don't expect much of a reward though."
 msgstr ""
-"Плата: $8/час\n"
+"Прибыль: $8/час\n"
 "Опасность: минимальная\n"
 "Время: 1 час минимум\n"
 " \n"
-"Назначение одного из ваших союзников на черновую работу - безопасный способ обучить их базовым навыкам и завоевать для них репутацию в поселении. Награда, впрочем, не очень большая."
+"Назначение одного из ваших союзников на черновую работу - безопасный способ обучить их базовым навыкам и завоевать для них репутацию в аванпосте. Вознаграждение, впрочем, не очень большое."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135387,11 +135565,11 @@ msgid ""
 " \n"
 "Carpentry work requires more skill than menial labor while offering modestly improved pay.  It is unlikely that your companions will face combat but there are hazards working on makeshift buildings."
 msgstr ""
-"Плата: $12/час\n"
+"Прибыль: $12/час\n"
 "Опасность: минимальная\n"
 "Время: 1 час минимум\n"
-"\n"
-"Плотничья работа требует больше навыков, чем черновая работа, оплата немного увеличивается. Маловероятно, что вашим компаньонам придётся вступить в бой, но существует опасность во время работы в самодельных зданиях."
+" \n"
+"Плотничья работа требует больше навыков, чем черновая работа, оплата немного увеличивается. Маловероятно, что вашим компаньонам придётся вступить в бой, но существует опасность во время работы в самодельных строениях."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135425,19 +135603,19 @@ msgid ""
 "We're willing to let you purchase a field at a substantial discount to use for your own agricultural enterprises.  We'll plow it for you so you know exactly what is yours... after you have a field you can hire workers to plant or harvest crops for you.  If the crop is something we have a demand for, we'll be willing to liquidate it."
 msgstr ""
 "Стоимость: $1000\n"
+" \n"
 "\n"
-"\n"
-".........\n"
-".........\n"
-".........\n"
-".........\n"
-".........\n"
-".........\n"
-"..#....**\n"
-"..#Ov..**\n"
-"...O|....\n"
-"\n"
-"Мы готовы, разрешить вам приобрести поле со значительной скидкой, чтобы использовать для своих собственных сельскохозяйственных целей. Мы вспашем его для вас. После покупки, вы можете нанять рабочих, для посадки растений или уборки урожая для вас. Если у нас будет спрос, о мы можем купить ваш урожай. "
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              ..#....**\n"
+"              ..#Ov..**\n"
+"              ...O|....\n"
+" \n"
+"Мы готовы позволить вам приобрести поле со значительной скидкой, чтобы использовать для своих собственных сельскохозяйственных целей. Мы вспашем его для вас. После покупки, вы можете нанять рабочих, для посадки растений или уборки урожая для вас. Если у нас будет спрос, мы готовы купить ваш урожай."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135456,20 +135634,20 @@ msgid ""
 " \n"
 "Protecting your field with a sturdy picket fence will keep most wildlife from nibbling your crops apart.  You can expect yields to increase."
 msgstr ""
-"Цена: $5500\n"
+"Стоимость: $5500\n"
+" \n"
 "\n"
-"\n"
-".........\n"
-".........\n"
-".........\n"
-".........\n"
-".........\n"
-".........\n"
-"..#....**\n"
-"..#Ov..**\n"
-"...O|....\n"
-"\n"
-"Защита вашего поля крепким частоколом остановит большую часть диких животных пожирающих ваши посевы. Вы можете рассчитывать на рост доходов."
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              ..#....**\n"
+"              ..#Ov..**\n"
+"              ...O|....\n"
+" \n"
+"Защита вашего поля крепким частоколом остановит большую часть диких животных поедающих ваши посевы. Вы можете рассчитывать на рост урожая."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135488,6 +135666,20 @@ msgid ""
 " \n"
 "We'll plant the field with your choice of crop if you are willing to finance it.  When the crop is ready to harvest you can have us liquidate it or harvest it for you."
 msgstr ""
+"Стоимость: $3.00/участок\n"
+" \n"
+"\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              ..#....**\n"
+"              ..#Ov..**\n"
+"              ...O|....\n"
+" \n"
+"Мы засеваем поле посевом на ваш выбор, если вы готовы это профинансировать. Когда прийдёт время уборки урожая, вы можете связаться с нами, чтобы продть его или убрать его для вас."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135506,6 +135698,20 @@ msgid ""
 " \n"
 "You can either have us liquidate the crop and give you the cash or pay us to harvest it for you."
 msgstr ""
+"Стоимость: $2.00/участок\n"
+" \n"
+"\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              .........\n"
+"              ..#....**\n"
+"              ..#Ov..**\n"
+"              ...O|....\n"
+" \n"
+"Вы можете связаться с нами, чтобы продать урожай и выплатить вам наличные или заплатить нам, чтобы убрать его для вас."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135516,10 +135722,10 @@ msgid ""
 "Foraging for food involves dispatching a companion to search the surrounding wilderness for wild edibles.  Combat will be avoided but encounters with wild animals are to be expected.  The low pay is supplemented with the odd item as a reward for particularly large hauls."
 msgstr ""
 "Прибыль: $10/час\n"
-"Опасность: Низкая\n"
+"Опасность: низкая\n"
 "Время: 4 часа минимум\n"
 " \n"
-"Поиск пищи для включает в себя отправку спутника на поиски еды в окружающую пустошь. Боя можно избежать, но могут встретиться дикие звери. Низкая заработная плата дополняется редкими предметами в качестве награды за особенно удачные рейсы."
+"Добыча продовольствия включает в себя отправление компаньона на поиски еды в окружающую пустошь. Боя можно избежать, но могут встретиться дикие звери. Низкая оплата дополняется редкими предметами в качестве вознаграждения за особо крупную добычу."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135545,6 +135751,13 @@ msgid ""
 " \n"
 "The commune is sending food to the Free Merchants in the Refugee Center as part of a tax and in exchange for skilled labor."
 msgstr ""
+"Прибыль: $18/час\n"
+"Опасность: высокая\n"
+"Время: неизвестно\n"
+" \\n\n"
+"Добавление компаньонов к каравану увеличивает вероятность успеха. По своей природе, караваны - чрезвычайно привлекательные цели для налётчиков или враждебных групп, поэтому рекомендуется только сильная группа. Вознаграждение значительней для тех, кто в нём участвует, но ещё более важное для фракций их прибыль.\n"
+" \n"
+"Коммуна отправляет продовольствие Свободным торговцам в центр беженцев, как часть налога и в обмен на квалифицированную работу."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -135581,7 +135794,7 @@ msgstr ""
 
 #: src/mission_companion.cpp
 msgid "There are no missions at this colony.  Press Spacebar..."
-msgstr "В этой колонии нет миссий. Нажмите пробел..."
+msgstr "В этой колонии нет заданий. Нажмите пробел..."
 
 #: src/mission_companion.cpp
 msgid "joins the caravan team..."
@@ -137298,7 +137511,7 @@ msgstr ""
 
 #: src/monattack.cpp
 msgid "Please stay in place, citizen, do not make any movements!"
-msgstr "Пожалуйста, стойте на месте, гражданский, не двигайтесь!"
+msgstr "Пожалуйста, стойте на месте, гражданин, не двигайтесь!"
 
 #: src/monattack.cpp
 msgid "The robot carefully scans you."
@@ -137677,6 +137890,15 @@ msgstr ""
 msgid "A cockroach nymph crawls out of the pregnant giant cockroach corpse."
 msgstr ""
 "Личинка гигантского таракана выбирается из трупа гигантского таракана."
+
+#: src/mondeath.cpp
+#, c-format
+msgid "an explosion of tank of the %s's flamethrower!"
+msgstr "взрыв баков огнемёта существа (%s)!"
+
+#: src/mondeath.cpp
+msgid "I love the smell of burning zed in the morning."
+msgstr "Люблю запах горящего зэда по утрам."
 
 #: src/mondefense.cpp
 #, c-format
@@ -140381,7 +140603,7 @@ msgstr "Стой спокойно, пока я орудую своими нож�
 
 #: src/npctalk.cpp
 msgid "Well, I guess it's just us."
-msgstr "Что ж, похоже только ты и я."
+msgstr "Что ж, похоже только ты да я."
 
 #: src/npctalk.cpp
 msgid "At least we've got shelter."
@@ -140417,7 +140639,7 @@ msgid ""
 "useful stuff there."
 msgstr ""
 "Мы возможно должны держаться подальше от этих городов, даже не смотря на то,"
-" что тут много полезных вещей. "
+" что там много полезных вещей."
 
 #: src/npctalk.cpp
 msgid "You just asked me for stuff; ask later."
@@ -140942,7 +141164,7 @@ msgstr ""
 
 #: src/npctalk.cpp
 msgid "[STR 11] I punch things in face real good!"
-msgstr ""
+msgstr "[СИЛ 11] Я сильно ударяю по лицу!"
 
 #: src/npctalk.cpp
 msgid "Get bent, traitor!"
@@ -141147,7 +141369,7 @@ msgstr "Я буду в порядке..."
 
 #: src/npctalk.cpp
 msgid "For the right price could I borrow your services?"
-msgstr ""
+msgstr "За хорошую цену я могу воспользоваться вашими услугами?"
 
 #: src/npctalk.cpp
 msgid "I was wondering if you could install a cybernetic implant..."
@@ -142001,7 +142223,7 @@ msgstr "Я могу взять только %s %s ещё."
 
 #: src/npctalk.cpp
 msgid "...or to store anything else for that matter."
-msgstr ""
+msgstr "... или хранить что-нибудь ещё когда на то пошло."
 
 #: src/npctalk.cpp
 msgid "It is too heavy for me to carry."
@@ -142329,6 +142551,18 @@ msgstr ""
 "и блокирует все сценарии с городскими стартовыми локациями."
 
 #: src/options.cpp
+msgid "Carrion spawn rate scaling factor"
+msgstr "Множитель зарождения падальщиков"
+
+#: src/options.cpp
+msgid ""
+"A scaling factor that determines how often creatures spawn from rotting "
+"material."
+msgstr ""
+"Множитель, определяющий, как часто из гниющих продуктов будут появляться "
+"существа."
+
+#: src/options.cpp
 msgid "( WIP feature ) Determines terrain, shops, plants, and more."
 msgstr "(В разработке) Определяет тип местности, магазинов, растений и т.д."
 
@@ -142573,11 +142807,11 @@ msgstr "q или ESC для возврата."
 
 #: src/overmap.cpp
 msgid "Select terrain to place:"
-msgstr "Разместить на карте местность:"
+msgstr "Выбрать местность:"
 
 #: src/overmap.cpp
 msgid "Select special to place:"
-msgstr "Разместить на карте особенность:"
+msgstr "Выбрать особенность:"
 
 #: src/overmap.cpp
 msgid "Place overmap terrain:"
@@ -142640,7 +142874,7 @@ msgid ""
 "initialize."
 msgstr ""
 "Невозможно разместить все сконфигурированные особые локации, поэтому "
-"некоторые миссии могут не инициализироваться."
+"некоторые задания могут не инициализироваться."
 
 #: src/overmap.cpp
 #, c-format
@@ -145740,10 +145974,6 @@ msgstr "Стал жертвой инфекции."
 msgctxt "memorial_female"
 msgid "Succumbed to the infection."
 msgstr "Стала жертвой инфекции."
-
-#: src/player_hardcoded_effects.cpp
-msgid "You fall asleep."
-msgstr "Вы засыпаете."
 
 #: src/player_hardcoded_effects.cpp
 msgid "You nestle your pile of clothes for warmth."
