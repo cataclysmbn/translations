@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-dda 0.C\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-23 22:54+0800\n"
+"POT-Creation-Date: 2018-06-29 12:30+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: AkAset <kyousuke04@gmail.com>, 2018\n"
 "Language-Team: Japanese (https://www.transifex.com/cataclysm-dda-translators/teams/2217/ja/)\n"
@@ -14020,7 +14020,7 @@ msgid ""
 "Compact Bionics Module that upgrades your power capacity by 100 units.  "
 "Having at least one of these is a prerequisite to using powered bionics.  "
 "You will also need a power supply, found in another CBM."
-msgstr "蓄電容量を100増加させる小型モジュールです。これが無いとCBMは使えません。充電とは別に発電用CBMが必要です。"
+msgstr "蓄電容量を100増加させる小型モジュールです。これが無いとCBMは使えません。蓄電するにはこのCBMとは別に発電用CBMが必要です。"
 
 #: lang/json/BIONIC_ITEM_from_json.py
 msgid "Power Storage CBM Mk. II"
@@ -19178,8 +19178,8 @@ msgstr[0] "スイートソーセージ"
 
 #. ~ Description for sweet sausage
 #: lang/json/COMESTIBLE_from_json.py
-msgid "A sweet and delicious sausage."
-msgstr "甘くて美味しいソーセージです。"
+msgid "A sweet and delicious sausage.  Better eat it fresh."
+msgstr "甘くて美味しいソーセージです。新鮮な内に食べましょう。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "mushroom"
@@ -23121,8 +23121,9 @@ msgstr[0] "ミートジャーキー"
 
 #. ~ Description for meat jerky
 #: lang/json/COMESTIBLE_from_json.py
-msgid "Salty dried meat that never goes bad, but will make you thirsty."
-msgstr "腐る事のない塩味の乾燥肉です。食べると喉が渇きます。"
+msgid ""
+"Salty dried meat that lasts for a long time, but will make you thirsty."
+msgstr "日持ちする塩味の乾燥肉です。食べると喉が渇きます。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "salted fish"
@@ -23131,8 +23132,9 @@ msgstr[0] "魚(塩漬け)"
 
 #. ~ Description for salted fish
 #: lang/json/COMESTIBLE_from_json.py
-msgid "Salty dried fish that never goes bad, but will make you thirsty."
-msgstr "腐る事のない塩味の乾燥魚です。食べると喉が渇きます。"
+msgid ""
+"Salty dried fish that lasts for a long time, but will make you thirsty."
+msgstr "日持ちする塩味の乾燥魚です。食べると喉が渇きます。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "jerk jerky"
@@ -27758,6 +27760,21 @@ msgstr[0] "電球"
 #: lang/json/GENERIC_from_json.py
 msgid "A rather outdated light bulb used in all sorts of light equipment."
 msgstr "かつては全ての光源装置で使用されていた、やや時代遅れな電球です。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "anesthetic kit"
+msgid_plural "anesthetic kits"
+msgstr[0] "麻酔キット"
+
+#. ~ Description for anesthetic kit
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"A kit for inducing anesthesia for surgery, containing specialized canisters "
+"with a variety of powerful hypnotic, analgetic, and stimulative drugs. It's "
+"intended for use in specialized medical equipment, and can't be administered"
+" manually."
+msgstr ""
+"強力な睡眠剤、鎮痛剤、興奮剤といった薬剤入りの特殊な容器を備えた手術用の麻酔キットです。特殊な医療機器で使うものであり、手作業での使用は不可能です。"
 
 #: lang/json/GENERIC_from_json.py
 msgid "canister grenade"
@@ -48298,10 +48315,6 @@ msgid "Build Fence"
 msgstr "柵を設置する"
 
 #: lang/json/construction_from_json.py
-msgid "Realign Fence"
-msgstr "柵を調整する"
-
-#: lang/json/construction_from_json.py
 msgid "Build Fence Gate"
 msgstr "柵門を設置する"
 
@@ -48320,10 +48333,6 @@ msgstr "有刺鉄条網を作る"
 #: lang/json/construction_from_json.py
 msgid "Build Chainlink Fence"
 msgstr "柵(金網)を作る"
-
-#: lang/json/construction_from_json.py
-msgid "Realign Chainlink Fence"
-msgstr "柵(金網)を調整する"
 
 #: lang/json/construction_from_json.py
 msgid "Build Chainlink Gate"
@@ -60284,10 +60293,6 @@ msgstr "一覧/モンスターとアイテム"
 msgid "Reassign invlet"
 msgstr "キー割当"
 
-#: lang/json/keybinding_from_json.py
-msgid "Remove bionic"
-msgstr "生体部品を取り除く"
-
 #: lang/json/keybinding_from_json.py src/construction.cpp src/faction.cpp
 #: src/game.cpp src/mission_companion.cpp
 msgid "Move cursor up"
@@ -65826,26 +65831,26 @@ msgid "You heal a little slower than most; sleeping will heal less lost HP."
 msgstr "傷の治りが遅くなります。睡眠時のHP回復量が減少します。"
 
 #: lang/json/mutation_from_json.py
-msgid "Very Slow Sleep Healing"
-msgstr "睡眠治癒力低下"
+msgid "Poor Healer"
+msgstr "治癒力不足"
 
-#. ~ Description for Very Slow Sleep Healing
+#. ~ Description for Poor Healer
 #: lang/json/mutation_from_json.py
 msgid ""
-"You heal much slower than most; sleeping will heal only one third HP "
-"compared to the average person."
-msgstr "一般的な人間に比べ傷の治りが非常に遅くなります。睡眠時のHP回復量が通常の1/3になります。"
+"Your health recovery through sleeping is severely impaired and causes you to"
+" recover only a third of usual HP over time."
+msgstr "睡眠中の怪我の回復力が大きく損なわれており、時間が経過しても通常HPの1/3までしかHPが自然回復しません。"
 
 #: lang/json/mutation_from_json.py
-msgid "Extremely Slow Sleep Healing"
-msgstr "睡眠治癒力不全"
+msgid "Imperceptive Healer"
+msgstr "治癒力欠乏"
 
-#. ~ Description for Extremely Slow Sleep Healing
+#. ~ Description for Imperceptive Healer
 #: lang/json/mutation_from_json.py
 msgid ""
-"You almost cannot recover lost health by sleeping; sleeping will heal only "
-"one tenth HP compared to the average person."
-msgstr "睡眠中に体力をほとんど回復できません。睡眠時のHP回復量が通常の1/10になります。"
+"You recover barely any health through sleeping - it will heal only one tenth"
+" of usual HP over time."
+msgstr "睡眠中の怪我の回復力が大きく損なわれており、時間が経過しても通常HPの1/10までしかHPが自然回復しません。"
 
 #: lang/json/mutation_from_json.py
 msgid "Far-Sighted"
@@ -94413,11 +94418,6 @@ msgid "You don't have this bionic installed."
 msgstr "このCBMを移植していません。"
 
 #: src/bionics.cpp
-#, c-format
-msgid "Removing bionics requires a tool with %s quality, and a first aid kit."
-msgstr "CBMを除去するには%s性能を持つ工具と救急箱が必要です。"
-
-#: src/bionics.cpp
 msgid "Removing your Fusion Blaster Arm would leave you with a useless stump."
 msgstr "フュージョンブラスターアームを除去すると役に立たない腕の基部が残ります。"
 
@@ -94491,48 +94491,6 @@ msgstr ""
 #, c-format
 msgid "Not enough space for bionic installation!%s"
 msgstr "この生体部品を導入する空間的余裕がありません！%s"
-
-#: src/bionics.cpp
-msgid "You need to take painkillers to make installing bionics tolerable."
-msgstr "CBMを埋め込むには鎮痛剤を摂取する必要があります。"
-
-#: src/bionics.cpp
-msgid ""
-"You need to be a lot more numb to tolerate installing bionics.  Note that "
-"painkillers you've already taken could take up to an hour to achieve full "
-"effect."
-msgstr "CBMを埋め込むには更に強い鎮痛効果が必要です。完全に効果を発揮するまで1時間程度かかる鎮痛剤もあることに留意してください。"
-
-#: src/bionics.cpp
-#, c-format
-msgid ""
-"Intensity of painkillers you've already taken is less than half of the "
-"threshold that will allow you to install bionics.  It will take %i minutes "
-"for painkillers you've already taken to achieve maximum effect."
-msgstr "服用した鎮痛剤の効果は、CBM埋め込みが可能な値の半分以下です。あと%i分で服用済みの鎮痛剤が最大の効果を発揮します。"
-
-#: src/bionics.cpp
-#, c-format
-msgid ""
-"Intensity of painkillers you've already taken is %i percent of the threshold"
-" that will allow you to install bionics.  It will take %i minutes for "
-"painkillers you've already taken to achieve maximum effect."
-msgstr "服用した鎮痛剤の効果は、CBM埋め込みが可能な値の%iパーセントです。あと%i分で服用済みの鎮痛剤が最大の効果を発揮します。"
-
-#: src/bionics.cpp
-msgid ""
-"You aren't quite numb enough to tolerate installing bionics.  Note that "
-"painkillers you've already taken could take up to an hour to achieve full "
-"effect."
-msgstr "CBMを埋め込むには鎮痛効果が弱すぎます。完全に効果を発揮するまで1時間程度かかる鎮痛剤もあることに留意してください。"
-
-#: src/bionics.cpp
-#, c-format
-msgid ""
-"Intensity of painkillers you've already taken is more than half of the "
-"threshold that will allow you to install bionics.  It will take %i minutes "
-"for painkillers you've already taken to achieve maximum effect."
-msgstr "服用した鎮痛剤の効果は、CBM埋め込みが可能な値の半分以上ですが不足しています。あと%i分で服用済みの鎮痛剤が最大の効果を発揮します。"
 
 #: src/bionics.cpp
 #, c-format
@@ -94660,6 +94618,17 @@ msgstr "蓄電容量が%i増加しました。"
 msgid "Your %s fails, and is destroyed!"
 msgstr "%sは機能不全を起こし、破壊されました！"
 
+#: src/bionics.cpp
+msgid ""
+"You type data into the console, configuring Autodoc to uninstall a CBM."
+msgstr "コンソールにデータを入力してオートドクの設定を行い、CBMを摘出しました。"
+
+#: src/bionics.cpp
+msgid ""
+"Autodoc injected you with anesthesia, and while you were sleeping conducted "
+"a medical operation on you."
+msgstr "オートドクに麻酔薬を注入され、眠っている間に医療処置が完了しました。"
+
 #: src/bionics_ui.cpp
 #, c-format
 msgid "Power: %i/%i"
@@ -94676,29 +94645,20 @@ msgstr ""
 #: src/bionics_ui.cpp
 msgid ""
 "<color_green>Activating</color>  <color_yellow>!</color> to examine, "
-"<color_yellow>-</color> to remove, <color_yellow>=</color> to reassign, "
-"<color_yellow>TAB</color> to switch tabs."
+"<color_yellow>=</color> to reassign, <color_yellow>TAB</color> to switch "
+"tabs."
 msgstr ""
 "<color_green>有効</color> <color_yellow>!</color> "
-"説明<color_yellow>-</color>解除<color_yellow>=</color>割当<color_yellow>TAB</color>タブ切替"
-
-#: src/bionics_ui.cpp
-msgid ""
-"<color_red>Removing</color>  <color_yellow>!</color> to activate, "
-"<color_yellow>-</color> to remove, <color_yellow>=</color> to reassign, "
-"<color_yellow>TAB</color> to switch tabs."
-msgstr ""
-"<color_red>解除</color> "
-"<color_yellow>!</color>有効<color_yellow>-</color>解除<color_yellow>=</color>割当<color_yellow>TAB</color>タブ切替"
+"説明<color_yellow>=</color>割当<color_yellow>TAB</color>タブ切替"
 
 #: src/bionics_ui.cpp
 msgid ""
 "<color_light_blue>Examining</color>  <color_yellow>!</color> to activate, "
-"<color_yellow>-</color> to remove, <color_yellow>=</color> to reassign, "
-"<color_yellow>TAB</color> to switch tabs."
+"<color_yellow>=</color> to reassign, <color_yellow>TAB</color> to switch "
+"tabs."
 msgstr ""
 "<color_light_blue>説明</color> <color_yellow>!</color>有効<color_yellow> "
-"-</color>解除<color_yellow> =</color>割当<color_yellow> TAB</color>タブ切替"
+"=</color>割当<color_yellow>TAB</color>タブ切替"
 
 #: src/bionics_ui.cpp
 #, c-format
@@ -94816,7 +94776,7 @@ msgstr[0] "%d日"
 #, c-format
 msgid "%d season"
 msgid_plural "%d seasons"
-msgstr[0] "%d 季節"
+msgstr[0] "%d季節"
 
 #: src/calendar.cpp
 #, c-format
@@ -106613,15 +106573,21 @@ msgstr "移植するCBMを選択"
 msgid "You don't have any CBMs to install."
 msgstr "移植するCBMがありません。"
 
-#: src/iexamine.cpp
-msgid "You type data into the console, configuring Autodoc to install a CBM."
-msgstr "コンソールにデータを入力してオートドクの設定を行い、CBMを移植しました。"
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "You have already installed this bionic."
+msgstr "既にこの生体部品を埋め込んでいます。"
 
 #: src/iexamine.cpp
-msgid ""
-"Autodoc injected you with anesthesia, and while you were sleeping conducted "
-"a medical operation on you."
-msgstr "オートドクに麻酔薬を注入され、眠っている間に医療処置が完了しました。"
+msgid "You have no base version of this bionic to upgrade."
+msgstr "改良できるCBMがありません。"
+
+#: src/iexamine.cpp
+msgid "You have already installed a superior version of this bionic."
+msgstr "既に改良されたCBMを移植しています。"
+
+#: src/iexamine.cpp
+msgid "You need an anesthesia kit for autodoc to perform any operation."
+msgstr "操作を実行するにはオートドク専用麻酔キットが必要です。"
 
 #: src/iexamine.cpp
 msgid "You don't have any bionics installed."
@@ -106630,11 +106596,6 @@ msgstr "CBMが体内に一つもありません。"
 #: src/iexamine.cpp
 msgid "Choose bionic to uninstall"
 msgstr "摘出するCBMを選択"
-
-#: src/iexamine.cpp
-msgid ""
-"You type data into the console, configuring Autodoc to uninstall a CBM."
-msgstr "コンソールにデータを入力してオートドクの設定を行い、CBMを摘出しました。"
 
 #: src/iexamine.cpp
 msgid "Use electrohack?"
@@ -107140,6 +107101,39 @@ msgid ""
 "rot from full freshness, at room temperature."
 msgstr ""
 "* この食べ物は<neutral>腐敗する</neutral>性質があり、完全に新鮮な状態から室温で<info>%s</info>経過すると腐敗します。"
+
+#: src/item.cpp
+msgid "* This food looks as <good>fresh</good> as it can be."
+msgstr "* この食べ物は<good>非常に新鮮</good>なようです。"
+
+#: src/item.cpp
+msgid ""
+"* This food looks <good>still quite fresh</good>. It's far from becoming "
+"old."
+msgstr "* この食べ物は<good>新鮮</good>なようです。腐敗には程遠い状態です。"
+
+#: src/item.cpp
+msgid ""
+"* This food looks like it is reaching its <neutral>midlife</neutral>. It has"
+" some time ahead before spoiling."
+msgstr "* この食べ物は<neutral>まだ新鮮</neutral>なようです。腐敗するまでまだ時間があります。"
+
+#: src/item.cpp
+msgid ""
+"* This food looks like it has <neutral>passed its midlife</neutral>. Edible,"
+" but will go old sooner rather then later."
+msgstr "* この食べ物は<neutral>腐敗していない</neutral>ようです。食べられますが、更に時間が経過すれば腐敗するでしょう。"
+
+#: src/item.cpp
+msgid ""
+"* This food looks like it <bad>will be old soon</bad>. It's now or never, if"
+" you plan to use it."
+msgstr "* この食べ物は<bad>古くなりかけ</bad>に見えます。食べるなら今しかありません。"
+
+#: src/item.cpp
+msgid ""
+"* This food looks <bad>old</bad>. It's on a brink of becoming inedible."
+msgstr "* この食べ物は<bad>古い</bad>ようです。腐敗する瀬戸際です。"
 
 #: src/item.cpp
 msgid ""
@@ -108542,7 +108536,7 @@ msgstr "身体が丈夫になるのを感じました。"
 
 #: src/iuse.cpp
 msgid "You no longer need to fear the flu."
-msgstr "風邪の心配はなくなりました。"
+msgstr "インフルエンザに罹る心配はなくなりました。"
 
 #: src/iuse.cpp
 msgid "Are you sure you want to eat this? It looks poisonous..."
@@ -109988,6 +109982,11 @@ msgstr "*あなた*の電池が切れました。"
 #, c-format
 msgid "You fire up your %s and start getting the tension out."
 msgstr "%sのスイッチを入れました。盛り上がってきたぞ。"
+
+#: src/iuse.cpp
+#, c-format
+msgid "You whip out your %s and start getting the tension out."
+msgstr "%sをさっと取り出しました。盛り上がってきたぞ。"
 
 #: src/iuse.cpp
 msgid "Air swirls around you for a moment."
@@ -112205,10 +112204,6 @@ msgid "Can't saw off modified barrels."
 msgstr "改造された銃身は切り詰められません。"
 
 #: src/iuse_actor.cpp
-msgid "You have already installed this bionic."
-msgstr "既にこの生体部品を埋め込んでいます。"
-
-#: src/iuse_actor.cpp
 msgid "There is nothing to upgrade."
 msgstr "改良するものがない。"
 
@@ -114121,6 +114116,21 @@ msgstr "打ち付けられた衝撃で%sが損傷しました！"
 #, c-format
 msgid "<npcname>'s %s is damaged by the force of the blow!"
 msgstr "打ち付けられた衝撃で<npcname>の%sが損傷しました！"
+
+#: src/melee.cpp
+#, c-format
+msgid "Your %s breaks apart!"
+msgstr "%sがバラバラに壊れました！"
+
+#: src/melee.cpp
+#, c-format
+msgid "<npcname>'s %s breaks apart!"
+msgstr "<npcname>の%sがバラバラに壊れました！"
+
+#: src/melee.cpp
+#, c-format
+msgid "The %s is destroyed!"
+msgstr "%sが破壊されました！"
 
 #: src/melee.cpp
 #, c-format
