@@ -9,15 +9,15 @@
 # Vault3024, 2018
 # shinmuro <shinmuro@gmail.com>, 2018
 # AkAset <kyousuke04@gmail.com>, 2018
-# nishizaki tadahito <undead666angel@gmail.com>, 2018
 # 関 真護, 2018
+# nishizaki tadahito <undead666angel@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-dda 0.C\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-16 20:54+0800\n"
+"POT-Creation-Date: 2018-08-22 21:08+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: 関 真護, 2018\n"
+"Last-Translator: nishizaki tadahito <undead666angel@gmail.com>, 2018\n"
 "Language-Team: Japanese (https://www.transifex.com/cataclysm-dda-translators/teams/2217/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -630,6 +630,17 @@ msgid ""
 "Number of turns after which a message will be removed from the sidebar log."
 "  '0' disables this option."
 msgstr "サイドバーにログが表示されてから何ターンで消えるか設定します。0'で無効。"
+
+#. ~ unbound key error message suppression
+#: lang/extra/android/options.cpp src/options.cpp
+msgid "Suppress \"unknown command\" messages"
+msgstr "「未知のコマンド」メッセージを非表示"
+
+#: lang/extra/android/options.cpp src/options.cpp
+msgid ""
+"If true, pressing a key with no set function will not display a notice in "
+"the chat log."
+msgstr "trueにすると、機能が割り当てられていないキーを押した際、ログに通知が表示されません。"
 
 #. ~ aim bar style - bars or numbers
 #: lang/extra/android/options.cpp src/options.cpp
@@ -15128,7 +15139,7 @@ msgid ""
 "Though it focuses on the north-central US, the driving sections contain some"
 " practical tips on proper driving techniques."
 msgstr ""
-"地域の名所を記した観光用のガイドです。主にアメリカの中北部に焦点を当てて紹介されていますが、ドライブについての記事には、運転技術における実用的なヒントがいくつか記されています。"
+"地域の名所を記した観光ガイドです。主にアメリカの中北部に焦点を当てて紹介されていますが、ドライブについての記事には、運転技術における実用的なヒントがいくつか記されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Top Gear magazine"
@@ -15160,7 +15171,7 @@ msgid ""
 "conceals a wealth of ways to help stick it to The Man, along with plenty of "
 "advice for avoiding police."
 msgstr ""
-"地域の名所を記した観光用のガイド...とよく似た書物です。アノニマス・アナーキスト・アニュアルと書かれた表紙をめくると、警察沙汰を避けるためのアドバイスや権力者に歯向かう様々な方法が大量に記されています。"
+"地域の名所を記した観光ガイド...に偽装した書物です。アノニマス・アナーキスト・アニュアルと書かれた表紙をめくると、警察沙汰を避けるためのアドバイスや権力者に歯向かう様々な方法が大量に記されています。"
 
 #: lang/json/BOOK_from_json.py
 msgid "Advanced Electronics"
@@ -18684,9 +18695,9 @@ msgstr "マンヴォルスト"
 #. ~ Description for Mannwurst
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
-"A hefty long pork sausage that has been cured for long term storage.  Very "
-"tasty, if you're in the market for human flesh."
-msgstr "長期保存用に熟成させた硬い「ロングポーク」ソーセージです。人肉市場で買い物をする人ならおいしく食べられるでしょう。"
+"A hefty long pork sausage that has been cured and smoked for long term "
+"storage.  Very tasty, if you're in the market for human flesh."
+msgstr "長期保存用に熟成・燻製した、硬い「ロングポーク」ソーセージです。人肉市場で買い物をする人ならおいしく食べられるでしょう。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "raw Mannwurst"
@@ -24751,7 +24762,7 @@ msgid ""
 "fruit.  It has been supplemented with extra vitamins and minerals"
 msgstr "純粋なタンパク質と栄養価の高い果実から作られた、栄養価が高くて美味しい飲み物です。ビタミンやミネラルを豊富に含んでいます。"
 
-#: lang/json/COMESTIBLE_from_json.py
+#: lang/json/COMESTIBLE_from_json.py src/mission_companion.cpp
 msgid "seeds"
 msgid_plural "seeds"
 msgstr[0] "種"
@@ -26952,7 +26963,7 @@ msgstr "ダミーアイテムです。これが見えている場合、何かが
 
 #: lang/json/GENERIC_from_json.py
 msgid "smoldering embers"
-msgid_plural "smoldering emberss"
+msgid_plural "smoldering embers"
 msgstr[0] "燻る残り火"
 
 #. ~ Description for smoldering embers
@@ -29041,11 +29052,11 @@ msgid ""
 msgstr "中世の戦争のために作られたハンマーです。奇妙な形状とバランスのお陰で優れた武器として扱えますが、道具としては役に立ちません。"
 
 #: lang/json/GENERIC_from_json.py
-msgid "nail board"
-msgid_plural "nail boards"
+msgid "nailboard"
+msgid_plural "nailboards"
 msgstr[0] "釘板"
 
-#. ~ Description for nail board
+#. ~ Description for nailboard
 #: lang/json/GENERIC_from_json.py
 msgid ""
 "A long piece of wood with several nails through one end; essentially a "
@@ -36342,11 +36353,12 @@ msgstr "痩身犬"
 #. ~ Description for skeletal dog
 #: lang/json/MONSTER_from_json.py
 msgid ""
-"This once-canine has shed all its skin revealing a carapace of fused bones "
-"and ribs.  This bone armor devoid of external flesh seems to be propelled by"
-" a net of sickly black veins and sinews glistening with black goo."
+"This once-canine has shed all of its skin, revealing a carapace of fused "
+"bones and ribs.  Devoid entirely of flesh, this walking suit of bone seems "
+"to be controlled by a net of veins and sinews which pulse with glistening "
+"black goo."
 msgstr ""
-"かつてはイヌの形をしていましたが、全ての皮膚が剥がれ、溶けて甲羅のようになった骨が露出しています。筋肉の代わりに艶やかに光る黒い粘液が骨の鎧の表面を覆い、脈動しています。"
+"かつてイヌだったものは、全ての皮膚が剥がれ、融合した骨の甲殻が露わになっています。肉がすべて失われた動く骨は、血管や筋肉のように全身を覆う艶やかな黒い粘液の脈動によって制御されているようです。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "dog"
@@ -36400,12 +36412,13 @@ msgstr "火炎ゾンビ"
 #. ~ Description for zombie burner
 #: lang/json/MONSTER_from_json.py
 msgid ""
-"Realizing that bullets weren't enough, the army dispatched flamethrower "
-"units to burn the walking dead.  Unfortunately, there were too many zombies "
-"and not enough flamers.  It seems that the tank of the undead soldier you "
-"see before you is damaged."
+"When bullets weren't enough to stop the end of the world, the military tried"
+" fire instead.  Their failure is made manifest in this gas-masked husk, its "
+"black suit torn and ripped.  Its flamethrower, dangling limply at its side, "
+"is attached to a tank of napalm strapped onto its back, which trickles its "
+"contents onto the ground."
 msgstr ""
-"弾薬の不足に伴い、軍はゾンビを燃やすための火炎放射器隊を派遣しましたが、残念ながらさらに大量のゾンビが発生してしまいました。このゾンビが背負っているタンクは破損しているように見えます。"
+"世界の終焉を止めるのに十分な弾丸が無いと分かったとき、軍は代わりに火を使いました。その作戦が失敗だったことは、このガスマスクとボロボロの黒いスーツを身に纏った化け物を見れば明白です。だらりと垂れ下がった火炎放射器は、内容物が漏れ出している背中のナパームタンクに接続されています。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "flaming eye"
@@ -36608,10 +36621,11 @@ msgstr "グラボイド"
 #. ~ Description for graboid
 #: lang/json/MONSTER_from_json.py
 msgid ""
-"A monstrous beast with a tripartite mouth that opens to reveal hundreds of "
-"writhing tongues with razor sharp edges.  It keeps most of its enormous body"
-" hidden underground."
-msgstr "口が三つある巨大な怪物です。口の中には鋭いギザギザの付いた舌が無数にうごめいています。巨体の大部分は地下に隠れています。"
+"A monstrous beast the size of a semi truck with a tripartite mouth that "
+"opens to reveal hundreds of writhing tongues with razor sharp edges.  It "
+"keeps most of its enormous body hidden underground."
+msgstr ""
+"3つの口をもつ、トレーラー程の体長の巨大な怪物です。口の中には鋭いギザギザの付いた舌が無数にうごめいています。巨体の大部分は地下に隠れています。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "gracken"
@@ -36904,9 +36918,10 @@ msgstr "スケルトン"
 msgid ""
 "A monstrous overgrowth of ossified tissue has replaced this zombie's rotting"
 " skin with an organic armor of dense bone.  Large clumps of black goo seep "
-"from its joints, as it makes sickening cracks while it moves unfazed."
+"from its joints as it shambles aimlessly, with sickening crackling sounds "
+"filling the air around it."
 msgstr ""
-"腐った皮膚が剥がれ落ち、代わりに骨が過成長して天然の鎧になったゾンビです。動くたびに関節から黒い粘液が大量に漏れ出し、気味の悪い音を立てています。"
+"腐った皮膚が剥がれ落ち、代わりに骨が過成長して天然の鎧になったゾンビです。身体がパキパキと気味の悪い音を立てて震えるたびに、関節から黒い粘液が大量に漏れ出しています。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "skitterbot"
@@ -37073,9 +37088,9 @@ msgstr "ゾンビ熊"
 #. ~ Description for zombear
 #: lang/json/MONSTER_from_json.py
 msgid ""
-"This black bear's eyes ooze with black fluid, and its flesh is torn and "
-"scarred.  It shuffles as it walks."
-msgstr "この黒熊の目には生気がなく、黒い液体が滲み出ており、身体は引き裂かれボロボロに傷付いています。足を引き摺りながら歩いています。"
+"This black bear's eyes ooze with dark, oily fluid, and its flesh is torn and"
+" scarred.  It shuffles as it walks."
+msgstr "このクロクマの目には生気がなく、身体は引き裂かれボロボロに傷付き、黒い液体が滲み出ています。足を引き摺りながら歩いています。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "zombie"
@@ -37654,11 +37669,12 @@ msgstr "巨体スケルトン"
 #. ~ Description for skeletal juggernaut
 #: lang/json/MONSTER_from_json.py
 msgid ""
-"By growing more and more bone plates over its withered tissues, this monster"
-" tried to achieve the impossible: huge size and slender armored body.  Now "
-"it drags around it's pointy elongated limbs like a heavy burden."
+"This hideous golem of plated bones and misshapen flesh drags its heavy, "
+"pointed limbs behind it like an unwanted burden.  Formerly soft and "
+"vulnerable, bones grew around its form to protect it - only, they kept "
+"growing.  And growing.  And growing."
 msgstr ""
-"しなびた身体を覆うように更に骨を成長させ、巨体と細く丈夫な装甲を実現しようとした怪物です。細長く尖った腕を錘のように引きずって歩いています。"
+"鋭く尖った重そうな腕を引きずって歩く、骨の鎧をまとった見るも恐ろしいゴーレムです。柔らかく折れやすかった骨は成長を重ねて甲冑となり、今この瞬間もどんどん強化され続けています。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "chicken"
@@ -44347,14 +44363,14 @@ msgstr "農作業用の道具です。使用すると地面を耕して、歩き
 #: lang/json/TOOL_from_json.py
 msgid "honey scraper"
 msgid_plural "honey scrapers"
-msgstr[0] "スクレイパー(蜂蜜用)"
+msgstr[0] "ハニースクレーパー"
 
 #. ~ Description for honey scraper
 #: lang/json/TOOL_from_json.py
 msgid ""
 "A sharp, knife-like tool used in harvesting honey from beehives.  Makes a "
 "passable melee weapon."
-msgstr "蜂蜜の収穫に使われる、ナイフに近い形状の鋭利なスクレイパーです。武器にならないこともありません。"
+msgstr "蜂蜜の収穫に使われる、ナイフに近い形状の鋭利なスクレーパーです。武器にならないこともありません。"
 
 #: lang/json/TOOL_from_json.py lang/json/vehicle_part_from_json.py
 msgid "bicycle horn"
@@ -47407,6 +47423,34 @@ msgid ""
 "Metal tourist table for off-road trips.  It is folded for easy "
 "transportation and can be deployed as a furniture."
 msgstr "アウトドア旅行用の、金属製の折り畳みテーブルです。折り畳めば簡単に持ち運べ、家具として設置することもできます。"
+
+#: lang/json/TOOL_from_json.py lang/json/furniture_from_json.py
+msgid "leather tarp"
+msgid_plural "leather tarps"
+msgstr[0] "防水シート(革)"
+
+#. ~ Description for leather tarp
+#: lang/json/TOOL_from_json.py
+msgid ""
+"A large sheet of sewn leather that can be deployed instead of a picnic "
+"blanket, but it's more valuable as a butchery appliance as it does not soak "
+"in blood.  It's rolled and ready for carrying."
+msgstr ""
+"広げればレジャーシートの代わりになる、革を縫い合わせて作った大きなシートです。血液が染みないため、死体を解体する際に真価を発揮します。丸めて持ち運びやすい状態になっています。"
+
+#: lang/json/TOOL_from_json.py lang/json/furniture_from_json.py
+msgid "fiber mat"
+msgid_plural "fiber mats"
+msgstr[0] "繊維マット"
+
+#. ~ Description for fiber mat
+#: lang/json/TOOL_from_json.py
+msgid ""
+"A large mat woven from fibrous material that can be used instead of a picnic"
+" blanket, but it's more valuable as a butchery appliance.  Too thin to be "
+"used as a comfortable sleeping place.  It's rolled and ready for carrying."
+msgstr ""
+"広げればレジャーシートの代わりになる、繊維質を織り合わせて作った大きなシートです。血液が染みないため、死体を解体する際に真価を発揮します。快適な寝具として使うには薄すぎます。丸めて持ち運びやすい状態になっています。"
 
 #: lang/json/TOOL_from_json.py
 msgid "electric lantern (off)"
@@ -51965,7 +52009,7 @@ msgstr "レーザーサイトがこちらに狙いを定めています！"
 #: lang/json/effects_from_json.py lang/json/item_action_from_json.py
 #: lang/json/item_action_from_json.py src/faction.cpp
 msgid "Smoke"
-msgstr "吸煙"
+msgstr "喫煙する"
 
 #. ~ Description of effect 'Smoke'.
 #: lang/json/effects_from_json.py
@@ -52028,6 +52072,26 @@ msgstr "発光する粘液に覆われています！"
 #: lang/json/effects_from_json.py
 msgid "You're covered in a glowing goo!"
 msgstr "発光する粘液まみれだ！"
+
+#: lang/json/effects_from_json.py
+msgid "Took Xanax"
+msgstr "ザナックス摂取"
+
+#. ~ Description of effect 'Took Xanax'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You took Xanax some time ago and you might still be under it's influence."
+msgstr "ザナックスを摂取した影響を受けているようです。"
+
+#: lang/json/effects_from_json.py
+msgid "Took Prozac"
+msgstr "プロザック摂取"
+
+#. ~ Description of effect 'Took Prozac'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You took Prozac some time ago and you might still be under it's influence."
+msgstr "プロザックを摂取した影響を受けているようです。"
 
 #: lang/json/effects_from_json.py
 msgid "Stuck in Pit"
@@ -52809,6 +52873,19 @@ msgid "You receive a pureed bone & enamel injection into your eyeball."
 msgstr "骨成分とエナメル質を混合した液体が眼球に注射されました。"
 
 #: lang/json/effects_from_json.py
+msgid "Took anticonvulsant drugs"
+msgstr "抗けいれん薬摂取"
+
+#. ~ Description of effect 'Took anticonvulsant drugs'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You took anticonvulsant drugs some time ago and you might still be under it's influence.\n"
+"Prescription note says it's effect duration may vary, so your estimate may be inaccurate."
+msgstr ""
+"プロザックを摂取した影響を受けているようです。\n"
+"処方箋によると効果の持続時間は変動するため、数値は不正確かもしれません。"
+
+#: lang/json/effects_from_json.py
 msgid "Relaxation gas"
 msgstr "精神緩和ガス"
 
@@ -53300,6 +53377,45 @@ msgstr "心臓が飛び出しそうで座っていられません。興奮剤を
 #: lang/json/effects_from_json.py
 msgid "You shake with the excess stimulation."
 msgstr "過剰興奮で体が震えています。"
+
+#: lang/json/effects_from_json.py
+msgid "Took weak antibiotic"
+msgstr "弱い抗生物質摂取"
+
+#. ~ Description of effect 'Took weak antibiotic'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You consumed mild antibiotic some time ago to fight off infection.\n"
+"If you don't recover you may want to take another dose, but beware overdosage."
+msgstr ""
+"感染症を克服するために効果の弱い抗生物質を摂取しました。\n"
+"回復が遅い場合は更に摂取する場合もありますが、過剰摂取に気を付けましょう。"
+
+#: lang/json/effects_from_json.py
+msgid "Took antibiotic"
+msgstr "抗生物質摂取"
+
+#. ~ Description of effect 'Took antibiotic'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You consumed antibiotic some time ago to fight off infection.\n"
+"If you don't recover you may want to take another dose, but beware overdosage."
+msgstr ""
+"感染症を克服するために抗生物質を摂取しました。\n"
+"回復が遅い場合は更に摂取する場合もありますが、過剰摂取に気を付けましょう。"
+
+#: lang/json/effects_from_json.py
+msgid "Took strong antibiotic"
+msgstr "強い抗生物質摂取"
+
+#. ~ Description of effect 'Took strong antibiotic'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You consumed perscription-grade antibiotic some time ago to fight off infection.\n"
+"If you don't recover you may want to take another dose, but beware overdosage."
+msgstr ""
+"感染症を克服するために医療機関で処方される抗生物質を摂取しました。\n"
+"回復が遅い場合は更に摂取する場合もありますが、過剰摂取に気を付けましょう。"
 
 #: lang/json/effects_from_json.py
 msgid "Panacea"
@@ -54150,8 +54266,7 @@ msgid "Pin some notes for other survivors to read."
 msgstr "他の生存者に見せるメモを貼り付ける掲示板です。"
 
 #: lang/json/furniture_from_json.py lang/json/furniture_from_json.py
-#: lang/json/terrain_from_json.py lang/json/terrain_from_json.py
-#: lang/json/terrain_from_json.py src/iuse.cpp
+#: lang/json/terrain_from_json.py lang/json/terrain_from_json.py src/iuse.cpp
 msgid "crunch!"
 msgstr "バリバリッ！"
 
@@ -55166,6 +55281,22 @@ msgstr "死体を空中に吊るすように設計されている金属製の食
 #: lang/json/furniture_from_json.py
 msgid "Small metal folding table, ideal for off-road trips into the wild."
 msgstr "アウトドア旅行に最適な、小型の折り畳み式テーブルです。"
+
+#. ~ Description for leather tarp
+#: lang/json/furniture_from_json.py
+msgid ""
+"A large sheet of sewn leather that can be used instead of a picnic blanket, "
+"but it's more valuable as a butchery appliance as it does not soak in blood."
+msgstr "レジャーシートの代わりになる、革を縫い合わせて作った大きなシートです。血液が染みないため、死体を解体する際に真価を発揮します。"
+
+#. ~ Description for fiber mat
+#: lang/json/furniture_from_json.py
+msgid ""
+"A large mat woven from fibrous material that can be used instead of a picnic"
+" blanket, but it's more valuable as a butchery appliance. Too thin to be a "
+"comfortable sleeping place."
+msgstr ""
+"広げればレジャーシートの代わりになる、繊維質を織り合わせて作った大きなシートです。血液が染みないため、死体を解体する際に真価を発揮します。快適な寝具として使うには薄すぎます。"
 
 #: lang/json/furniture_from_json.py
 msgid "mutated cactus"
@@ -63907,6 +64038,11 @@ msgstr "サボテン"
 
 #. ~ Sign
 #: lang/json/mapgen_from_json.py
+msgid "KENTUCKY COFFEE"
+msgstr "ケンタッキーコーヒーノキ"
+
+#. ~ Sign
+#: lang/json/mapgen_from_json.py
 msgid "<city> Community Garden"
 msgstr "<city>市民農園"
 
@@ -64287,36 +64423,6 @@ msgstr "幹細胞治療を行う"
 
 #. ~ Computer name
 #: lang/json/mapgen_from_json.py
-msgid "Barracks Entrance"
-msgstr "兵舎管理端末"
-
-#. ~ Computer option
-#: lang/json/mapgen_from_json.py
-msgid "UNLOCK ENTRANCE"
-msgstr "入口を開錠"
-
-#. ~ Computer name
-#: lang/json/mapgen_from_json.py
-msgid "Magazine Entrance"
-msgstr "武器庫管理端末"
-
-#. ~ Computer name
-#: lang/json/mapgen_from_json.py
-msgid "Prisoner Containment Entrance"
-msgstr "収容室管理端末"
-
-#. ~ Computer name
-#: lang/json/mapgen_from_json.py
-msgid "Containment Control"
-msgstr "収容管理端末"
-
-#. ~ Computer option
-#: lang/json/mapgen_from_json.py
-msgid "EMERGENCY CONTAINMENT RELEASE"
-msgstr "緊急解放"
-
-#. ~ Computer name
-#: lang/json/mapgen_from_json.py
 msgid "Operating Theatre Access Control"
 msgstr "手術室制御端末"
 
@@ -64329,6 +64435,11 @@ msgstr "緊急退避 - 全扉開放"
 #: lang/json/mapgen_from_json.py
 msgid "UNLOCK AUTODOC DOOR"
 msgstr "オートドク開錠"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Containment Control"
+msgstr "収容管理端末"
 
 #. ~ Computer option
 #: lang/json/mapgen_from_json.py
@@ -64364,6 +64475,46 @@ msgstr "メルキオールにデータをアップロード"
 #: lang/json/mapgen_from_json.py
 msgid "Access Melchior"
 msgstr "メルキオールにアクセス"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Library Entrance"
+msgstr "図書室管理端末"
+
+#. ~ Computer option
+#: lang/json/mapgen_from_json.py
+msgid "UNLOCK ENTRANCE"
+msgstr "入口を開錠"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Barracks Entrance"
+msgstr "兵舎管理端末"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Magazine Entrance"
+msgstr "武器庫管理端末"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Prisoner Containment Entrance"
+msgstr "収容室管理端末"
+
+#. ~ Computer option
+#: lang/json/mapgen_from_json.py
+msgid "EMERGENCY CONTAINMENT RELEASE"
+msgstr "緊急解放"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "PE012 Storage"
+msgstr "PE012 保管庫"
+
+#. ~ Computer option
+#: lang/json/mapgen_from_json.py
+msgid "UNLOCK STORAGE"
+msgstr "保管庫を開錠"
 
 #. ~ Computer name
 #: lang/json/mapgen_from_json.py
@@ -65242,7 +65393,7 @@ msgid "marked"
 msgstr "汚れた"
 
 #: lang/json/material_from_json.py
-msgid "budget steel"
+msgid "Budget Steel"
 msgstr "粗鋼"
 
 #: lang/json/material_from_json.py
@@ -73593,7 +73744,7 @@ msgid "Mycus"
 msgstr "ミカズ"
 
 #. ~ Description for Mycus
-#: lang/json/mutation_from_json.py
+#: lang/json/mutation_from_json.py src/iuse.cpp
 msgid "We are the Mycus."
 msgstr "我々はミカズ。"
 
@@ -73620,10 +73771,10 @@ msgstr ""
 "肉体が素晴らしい防衛機構を獲得しました。通常の血液の代わりに強力な酸の溶液が全身を駆け巡っています。あなたを傷付けた愚かな生物は強酸の洗礼を受けるでしょう。"
 
 #: lang/json/mutation_from_json.py
-msgid "Pyromania"
+msgid "Pyromaniac"
 msgstr "放火癖"
 
-#. ~ Description for Pyromania
+#. ~ Description for Pyromaniac
 #: lang/json/mutation_from_json.py
 msgid ""
 "You have an unhealthy obsession with fire, and you get anxious if you don't "
@@ -75318,7 +75469,7 @@ msgstr "調理場"
 
 #: lang/json/overmap_terrain_from_json.py
 msgid "hide site"
-msgstr "隠れ家"
+msgstr "簡易シェルター"
 
 #: lang/json/overmap_terrain_from_json.py
 msgid "trench"
@@ -80636,6 +80787,262 @@ msgstr "拡張"
 #: lang/json/recipe_from_json.py
 msgid "Stuff THE MAN doesn't want you to know"
 msgstr "「あいつ」があなたに教えたくなかった色々な事"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"The first thing we are going to need is a command tent to manage and task "
+"workers from."
+msgstr "まずは、作業者を管理し仕事を割り振る本部テントが必要だ。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"We're going to need a fire pit and a bed if we want to stay here "
+"permanently."
+msgstr "ここに長期滞在するなら、火を起こせる穴とベッドが必要だ。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"To make this outpost functional we are going to need storage containers to "
+"organize our supplies."
+msgstr "この拠点を運営できるようにするには、消耗品を整理して保管する入れ物が必要だ。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Next we should expand the camp to comfortably support two people "
+"indefinitely."
+msgstr "さて、これから快適な生活を無限に続けていくためには、キャンプを拡張する必要がある。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Additional housing and storage will allow our camp to expand into "
+"specialized industries."
+msgstr "住居と倉庫を増やせば、キャンプは更に専門的な生産活動を拡大できる。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Constructing a hard command post will transform our little camp into a true "
+"base."
+msgstr "強固な指令所を構築すれば、この小さなキャンプを真の拠点に変えることができる。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Building additional housing will allow us to send companions out to find "
+"recruits."
+msgstr "住居を追加すれば、仲間を野外に派遣して新たな味方を集められるだろう。"
+
+#: lang/json/recipe_from_json.py
+msgid "We need to expand our base to include basic dining facilities."
+msgstr "基本的な食堂を設置できるように、拠点を拡張する必要があるな。"
+
+#: lang/json/recipe_from_json.py
+msgid "More housing means that we can support additional specialists."
+msgstr "住居が増えれば、更に多くの専門職を養えるだろう。"
+
+#: lang/json/recipe_from_json.py
+msgid "An expanded kitchen is needed to support our growing settlement."
+msgstr "拡大する開拓地を養うために、拡張した土地に調理場を設ける必要があるな。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Finishing the hard structure will give us a more secure place to retreat to "
+"if we come under attack."
+msgstr "施設の強度を高めれば、攻撃を受けた際の退避場所がより安全になる。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"I'm surprised we've made it this long without securing a clean water source,"
+" we need a well."
+msgstr "綺麗な水源を確保しないまま、今まで生きてこられたことに驚いてるよ。井戸が必要だ。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Building a strong wall will keep the base secure even if a small horde "
+"attacks."
+msgstr "強い壁を築けば、小規模な群れから攻撃を受けたとしても、拠点の安全を保てるだろう。"
+
+#: lang/json/recipe_from_json.py
+msgid "We need to finish our half built fortifications."
+msgstr "建設途中の要塞を完成させよう。"
+
+#: lang/json/recipe_from_json.py
+msgid "We're running out of room and need another living quarters."
+msgstr "もう部屋が足りないな。新たな住居が必要だ。"
+
+#: lang/json/recipe_from_json.py
+msgid "Our kitchen isn't able to keep up with demand, we need to expand it."
+msgstr "調理場の性能が需要に追いついていない。拡張が必要だ。"
+
+#: lang/json/recipe_from_json.py
+msgid "We should build stronger doors to secure our compound."
+msgstr "拠点を守るなら、もっと強い扉を付けるべきだ。"
+
+#: lang/json/recipe_from_json.py
+msgid "One final tent is all we have room for now."
+msgstr "テントの空きが後1つしか残ってない。"
+
+#: lang/json/recipe_from_json.py
+msgid "Survey land for a farm shop."
+msgstr "農場として使う土地を調査しよう。"
+
+#: lang/json/recipe_from_json.py
+msgid "Plowing a few plots should get us started."
+msgstr "そろそろ畑を耕した方がいいな。"
+
+#: lang/json/recipe_from_json.py
+msgid "We could use a farming shed to store resources where we'll be working."
+msgstr "農場を利用して、この作業拠点に資源を蓄えよう。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Our farm could be expanded by finishing the shed and adding additional "
+"plots."
+msgstr "倉庫を完成させて耕地を増やせば、農場はもっと良くなるんじゃないかな。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Building a processing shack should allow us to reclaim additional seeds from"
+" our byproducts."
+msgstr "加工場を建てれば、農業の副産物から更に種子が採れるようになるだろう。"
+
+#: lang/json/recipe_from_json.py
+msgid "Survey land for a garage."
+msgstr "車両修理工場として使う土地を調査しよう。"
+
+#: lang/json/recipe_from_json.py
+msgid "Building a tool rack should be the first priority."
+msgstr "何よりもまず、工具を置く棚を作る必要がある。"
+
+#: lang/json/recipe_from_json.py
+msgid "We should start construction of a roof for the garage."
+msgstr "ガレージの屋根を建て始めた方がいいな。"
+
+#: lang/json/recipe_from_json.py
+msgid "Finishing out the roof will let our mechanics work rain or shine."
+msgstr "屋根が完成すれば、機械工も天気に関わらず働けるようになるな。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Our garage isn't big enough to work on larger vehicles.  Let's start "
+"expanding it."
+msgstr "このガレージは大きな車両を扱うには狭すぎる。もっと広げよう。"
+
+#: lang/json/recipe_from_json.py
+msgid "Finishing the roof will let us park RVs and buses in the garage."
+msgstr "屋根を完成させれば、ガレージにキャンピングカーやバスを置いておけるな。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Attaching a quarters will let our mechanics work longer hours when needed."
+msgstr "詰め所を作っておけば、機械工が必要な時に長時間働けるようになるな。"
+
+#: lang/json/recipe_from_json.py
+msgid "Survey land for a kitchen."
+msgstr "調理場として使う土地を調査しよう。"
+
+#: lang/json/recipe_from_json.py
+msgid "Building a cook-shack is our first task."
+msgstr "まずは調理小屋を建てる必要があるな。"
+
+#: lang/json/recipe_from_json.py
+msgid "We need to finish framing the walls for the cook-shack."
+msgstr "調理小屋の壁を仕上げてしまおう。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Expanding the shack by including a smoker will increase our versatility."
+msgstr "小屋を広げて燻製ラックを置けば、作れる料理の種類が増えるだろうな。"
+
+#: lang/json/recipe_from_json.py
+msgid "A pantry will allow our cooks to store more non-perishables."
+msgstr "食料貯蔵室があれば、生鮮食品以外の物をもっと保管できるだろう。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Increasing our number of smoking racks will let us craft larger batches."
+msgstr "燻製ラックの台数を増やせば、一度により多くの料理が作れるな。"
+
+#: lang/json/recipe_from_json.py
+msgid "A well is needed so our cooks don't have to haul in water."
+msgstr "井戸があれば、料理人がわざわざ水を運んでくる必要もなくなるな。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Wood stoves will give us greater control of temperatures and let us craft "
+"more difficult recipes."
+msgstr "薪ストーブを使えばもっと上手く温度調節ができるから、難しいレシピも自分たちで作れるようになる。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Finally, expanding the pantry further will let us store additional "
+"materials."
+msgstr "仕上げに、食料保管庫をもっと広げて、更に素材を保管できるようにしよう。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"A trench that may deter movement but is meant to be the foundation of a "
+"picket or palisade.  Requirements are for 1/2 an over map tile."
+msgstr "塹壕は移動を妨げるが、柵や矢来壁を建てる基礎として利用できる。全体マップの土地の1/2が必要だ。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"A deep trench filled with spikes, requires a trench.  Requirements are for "
+"1/2 an over map tile."
+msgstr "塹壕があれば、穴をさらに深くして中にスパイクを入れられる。全体マップのタイルの1/2の土地が必要だ。"
+
+#: lang/json/recipe_from_json.py
+msgid "Survey land for a blacksmith shop."
+msgstr "鍛冶場として使う土地を調査しよう。"
+
+#: lang/json/recipe_from_json.py
+msgid "Building a forge and kiln is our first task."
+msgstr "最初の仕事は、炉と窯の設置だな。"
+
+#: lang/json/recipe_from_json.py
+msgid "Building a proper roof for the shop is the next step."
+msgstr "次は建物の屋根を作ろうか。"
+
+#: lang/json/recipe_from_json.py
+msgid "Building a working table and placing an anvil are next."
+msgstr "その次は、作業台を作って金床を置こう。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"If we're going to do more than simple metal casting we need a bigger shop."
+msgstr "簡単な鋳造作業以上のことをするなら、より大規模な設備が必要だ。"
+
+#: lang/json/recipe_from_json.py
+msgid "We need some basic tools to make more advanced crafts."
+msgstr "より作業の難しい工芸品を作るなら、基本的な工具を用意する必要がある。"
+
+#: lang/json/recipe_from_json.py
+msgid "An expanded forge will allow us to work on bigger projects."
+msgstr "鋳造施設が拡張されれば、より大きな事業にも取り組めるな。"
+
+#: lang/json/recipe_from_json.py
+msgid "Proper steel work requires a bellows and quenching setup."
+msgstr "鉄鋼製品を適切に作りたいなら、ふいごと焼き入れ装置が必要だ。"
+
+#: lang/json/recipe_from_json.py
+msgid "A separate workshop will allow us to do the most basic of machining."
+msgstr "独立した作業場があれば、基本的な機械加工の作業ができるようになる。"
+
+#: lang/json/recipe_from_json.py
+msgid "Next we need to add some basic tools and vices to the workshop."
+msgstr "次は、作業場に基本的な工具と万力を置きたいな。"
+
+#: lang/json/recipe_from_json.py
+msgid "Advanced forging processes require more room to work."
+msgstr "もっと作業スペースが広ければ、高度な鍛造作業が可能になるはずだ。"
+
+#: lang/json/recipe_from_json.py
+msgid "An on-site well will allow us to fill boilers as needed."
+msgstr "近くに井戸があれば、必要に応じてボイラーを使えるようになるな。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"A steam-powered drop hammer will greatly increase production speed in "
+"exchange for charcoal."
+msgstr "蒸気駆動のドロップハンマーは木炭を消費するが、生産速度は大幅に向上するだろう。"
 
 #: lang/json/recipe_group_from_json.py
 msgid "Farm"
@@ -89915,7 +90322,7 @@ msgstr "「だけど人間を守らなくては！」"
 
 #: lang/json/speech_from_json.py
 msgid "\"We're back!\""
-msgstr "「 戻ったぜ！」"
+msgstr "「戻ったぜ！」"
 
 #: lang/json/speech_from_json.py
 msgid "\"Hi there!\""
@@ -94714,6 +95121,10 @@ msgid "tree trunk"
 msgstr "木の幹"
 
 #: lang/json/terrain_from_json.py
+msgid "tree stump"
+msgstr "切り株"
+
+#: lang/json/terrain_from_json.py
 msgid "root wall"
 msgstr "壁(根)"
 
@@ -96089,12 +96500,11 @@ msgstr "真っ暗だ！幸いな事に懐中電灯を持っています。'a'を
 #: lang/json/tutorial_messages_from_json.py
 msgid ""
 "~ is a terrain symbol that indicates water.  From a water source like this, "
-"you can fill any containers you might have.  Step onto the water, then press"
-" the pickup key (',' or 'g'), then select a watertight container to put the "
-"water into."
+"you can fill any containers you might have. Examine the water ('e') and "
+"press 'c' to fill a container, then select a watertight container to put the"
+" water into."
 msgstr ""
-"~ "
-"は水場であることを示しています。水源からは、入れ物に水を汲むことができます。水場に立ち','か'g'を、もしくは側で'e'を押して入れ物を選択します。"
+"~ は水場を示しています。水場の液体は、所持している容器に汲み入れられます。'e'で水場を調べてから'c'を押し、水密性のある容器を選択しましょう。"
 
 #: lang/json/vehicle_from_json.py
 msgid "Bicycle"
@@ -99629,18 +100039,23 @@ msgid "You dissect the corpse with a trusty scalpel."
 msgstr "信頼できるメスを使って、精密な解体作業を行いました。"
 
 #: src/activity_handlers.cpp
-msgid "You need a butchering rack to perform a full butchery."
+msgid ""
+"For a corpse this big you need a butchering rack to perform a full butchery."
 msgstr "より完璧に解体するには食肉処理ラックが必要です。"
 
 #: src/activity_handlers.cpp
 msgid ""
-"You need a table nearby or something else with a flat surface to perform a "
-"full butchery."
+"For a corpse this big you need a table nearby or something else with a flat "
+"surface to perform a full butchery."
 msgstr "より完璧に解体するには、周囲にテーブルなどの表面が平らな場所が必要です。"
 
 #: src/activity_handlers.cpp
-msgid "You need tools that can cut and saw to perform a full butchery."
-msgstr "より完璧に解体するには、切断する道具とノコギリが必要です。"
+msgid "You need a cutting tool to perform a full butchery."
+msgstr "より完璧に解体するには、切断性能をもった道具が必要です。"
+
+#: src/activity_handlers.cpp
+msgid "For a corpse this big you need a saw to perform a full butchery."
+msgstr "より完璧に解体するにはノコギリが必要です。"
 
 #: src/activity_handlers.cpp
 msgid ""
@@ -100200,8 +100615,8 @@ msgid "You finish chopping down a tree."
 msgstr "木を切り倒しました。"
 
 #: src/activity_handlers.cpp
-msgid "You finish chopping the logs."
-msgstr "丸太を切り終えました。"
+msgid "You finish chopping wood."
+msgstr "木を切り終えました。"
 
 #. ~ Sound of a jackhammer at work!
 #: src/activity_handlers.cpp
@@ -102511,16 +102926,6 @@ msgid "%s body is damaged!"
 msgstr "%sは身体にダメージを受けました！"
 
 #: src/bionics.cpp
-#, c-format
-msgid "All of %s existing bionics are lost!"
-msgstr "%sは全ての生体部品を失いました！"
-
-#: src/bionics.cpp
-#, c-format
-msgid "Some of %s existing bionics are lost!"
-msgstr "%sは一部の生体部品を失いました！"
-
-#: src/bionics.cpp
 msgid "The installation is faulty!"
 msgstr "移植に失敗しました！"
 
@@ -104618,7 +105023,7 @@ msgstr "食人に対する恐怖を感じました。"
 
 #: src/consumption.cpp
 msgid ""
-"You try to ignore it's mushy texture, but it leaves you with an awful "
+"You try to ignore its mushy texture, but it leaves you with an awful "
 "aftertaste."
 msgstr "どろどろした食感を気にしないよう努めましたが、酷い後味が口内に残っています。"
 
@@ -110810,11 +111215,11 @@ msgstr "完全解体"
 #: src/game.cpp
 msgid ""
 "This technique is used to properly butcher a corpse, and requires a "
-"butchering rack, a flat surface (for ex. a table) and good tools, including "
-"those that can saw and cut.  Yields are far better and varied, but it is "
-"time consuming."
+"butchering rack, a flat surface (for ex. a table, a leather tarp, etc.) and "
+"good tools, including those that can saw and cut.  Yields are far better and"
+" varied, but it is time consuming."
 msgstr ""
-"死体を適切に解体する方法です。食肉処理ラック、テーブルのような平らな面、十分な切断性能をもつ道具が必要です。収穫量は非常に多いですが、時間がかかります。"
+"死体を適切に解体する方法です。食肉処理ラック、テーブルや革製レジャーシートのような平らな面、十分な切断性能をもつ道具が必要です。収穫量は非常に多いですが、時間がかかります。"
 
 #: src/game.cpp
 msgid "Field dress corpse"
@@ -110827,7 +111232,7 @@ msgid ""
 "lighter and will stay fresh longer.  Can be combined with other methods for "
 "better effects."
 msgstr ""
-"死体が内部から腐らないように内臓などの器官を除去する方法です。収穫物は内臓です。死体はより軽く、長持ちするようになります。他の解体方法と組み合わせて相乗効果を得られます。"
+"死体が内部から腐らないように内臓などの器官を除去する方法です。収穫物は内臓です。死体はより軽く、長持ちするようになります。他の解体方法と組み合わせるとより効果的です。"
 
 #: src/game.cpp
 msgid ""
@@ -112489,7 +112894,7 @@ msgstr ""
 msgid ""
 "Becoming a skilled mechanic, you may want to tune your car up.  The "
 "coefficients of aerodynamics, friction and mass efficiency play significant "
-"roles it this process.  Named coefficients are measured in the range from "
+"roles in this process.  Named coefficients are measured in the range from "
 "0%% (which means terrible inefficiency) to 100%% (ideal conditions)."
 msgstr ""
 "熟練した整備士になったなら、車両をチューンアップしたくなるでしょう。空気力学係数、摩擦係数、質量係数はこの工程において重要な役割を担います。これらの係数は0%%(非常に非効率)から100%%(理想的)までの範囲があります。"
@@ -114988,8 +115393,8 @@ msgid "There's a smoking rack here."
 msgstr "燻製ラックがあります。"
 
 #: src/iexamine.cpp
-msgid "You inspect it's contents and find: "
-msgstr "ラックの中には以下のものが入っています: "
+msgid "You inspect its contents and find: "
+msgstr "ラックの内容物: "
 
 #: src/iexamine.cpp
 msgid "You see some smoldering embers there."
@@ -115575,12 +115980,16 @@ msgid ""
 msgstr "* この食べ物は<bad>古い</bad>ようです。腐敗する瀬戸際です。"
 
 #: src/item.cpp
-msgid "* Quality of this food suffers when it's <neutral>frozen.</neutral>."
-msgstr "* この食物は<neutral>冷凍</neutral>すると品質が低下します。"
+msgid ""
+"* Quality of this food suffers when it's frozen, and it <neutral>will become"
+" mushy after thawing out.</neutral>."
+msgstr "* この食物は冷凍すると傷み、<neutral>解凍後はドロドロ</neutral>になります。"
 
 #: src/item.cpp
-msgid "* It was frozen once and bacame <bad>mushy and tasteless</bad>."
-msgstr "* この食物は一度凍らせたため<bad>ドロドロで不味い</bad>状態になっています。"
+msgid ""
+"* It was frozen once and after thawing became <bad>mushy and "
+"tasteless</bad>."
+msgstr "* この食物は一度冷凍してから解凍したため<bad>ドロドロで不味い</bad>状態になっています。"
 
 #: src/item.cpp
 msgid "* It seems that deep freezing <good>killed all parasites</good>."
@@ -117279,28 +117688,50 @@ msgid ""
 msgstr "白目を剥いています。何もかもが至福の霧の中へと分解されていきます..."
 
 #: src/iuse.cpp
-msgid "We welcome into us.  We have endured long in this forbidding world."
+msgid "We welcome into us. We have endured long in this forbidding world."
 msgstr "歓迎しよう。我々はこの険しき世界で長き忍従の時を過ごしてきた。"
 
 #: src/iuse.cpp
-msgid "The natives have a saying: \"E Pluribus Unum\"  Out of many, one."
-msgstr "この地の先住は言った。 \"E Pluribus Unum(エ･プルリブス･ウヌム)\" 多数より一つへ、と。"
+msgid ""
+"A sea of white caps, waving gently. A haze of spores wafting silently over a"
+" forest."
+msgstr "白い傘の海の上を、穏やかにたゆたっています。胞子の霧が、森の中を静かに漂っています。"
+
+#: src/iuse.cpp
+msgid "The natives have a saying: \"E Pluribus Unum.\"  Out of many, one."
+msgstr "「エ・プルリブス・ウヌム」という原住生物の格言があると聞きました。「多数から一つへ」という意味です。"
+
+#: src/iuse.cpp
+msgid ""
+"The blazing pink redness of the berry. The juices spreading across your "
+"tongue, the warmth draping over us like a lover's embrace."
+msgstr "果実は鮮やかなピンク染まっています。果汁が舌に広がると、恋人に抱擁されたかのような熱が全身を満たします。"
 
 #: src/iuse.cpp
 msgid ""
 "We welcome the union of our lines in our local guide.  We will prosper, and "
-"unite this world."
-msgstr "我々は、この協同体が地域先導体へ参入することを心より歓迎する。我々は栄え、そして世界を統一するであろう。"
+"unite this world. Even now, our fruits adapt to better serve local "
+"physiology."
+msgstr ""
+"我々は、この世界の案内人として我々に加わることを歓迎する。我々は繁栄し、この世界を一体化する。今現在も我々の果実が、この世界の生理機能への適応を続けている。"
 
 #: src/iuse.cpp
-msgid "Even now, our fruits adapt to better serve local physiology."
-msgstr "今なお我々のフルーツは有効に作用し、この生理機能体を支配下に置いている。"
+msgid ""
+"The sky-blue of the seed. The nutty, creamy flavors intermingling with the "
+"berry, a memory that will never leave us."
+msgstr "空色の種子です。クリーミーな木の実とベリーが混ざり合ったような風味が記憶に刻み込まれ、決して忘れることはないだろうと感じます。"
 
 #: src/iuse.cpp
 msgid ""
 "As, in time, shall we adapt to better welcome those who have not received "
 "us."
 msgstr "今はまだ我々を受け入れていない者共も、いずれ我々を受容し、歓迎するだろう。"
+
+#: src/iuse.cpp
+msgid ""
+"The amber-yellow of the sap. Feel it flowing through our veins, taking the "
+"place of the strange, thin red gruel called \"blood.\""
+msgstr "琥珀色の樹液です。「血」と呼ばれる奇妙な薄く赤いドロドロに替わって、静脈を流れている感覚があります。"
 
 #: src/iuse.cpp
 msgid "This apple tastes really weird!  You're not sure it's good for you..."
@@ -123159,7 +123590,7 @@ msgid ""
 "Assigning one of your allies to patrol the surrounding wilderness and isolated buildings presents the opportunity to build survival skills while engaging in relatively safe combat against isolated creatures."
 msgstr ""
 "利益: $25-$500\n"
-"危険: 低い\n"
+"危険: 低\n"
 "時間: 10時間\n"
 "\n"
 "周辺の原野及び孤立した建造物を巡回する部隊に仲間を派遣します。単独の敵を相手にした比較的安全な戦闘は、基礎的なサバイバルスキルを身に付ける良い機会になります。"
@@ -123177,10 +123608,14 @@ msgid ""
 "Patrol Roster:\n"
 msgstr ""
 "利益: $25-$500\n"
-"危険: 低い\n"
+"危険: 低\n"
 "時間: 10時間\n"
 "\n"
 "巡回部隊名簿: \n"
+
+#: src/mission_companion.cpp
+msgid " hours] \n"
+msgstr " 時間] \n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -123205,7 +123640,7 @@ msgid ""
 "Scavenging raids target formerly populated areas to loot as many valuable items as possible before being surrounded by the undead.  Combat is to be expected and assistance from the rest of the party can't be guaranteed.  The rewards are greater and there is a chance of the companion bringing back items."
 msgstr ""
 "利益: $200-$1000\n"
-"危険: 中程度\n"
+"危険: 中\n"
 "時間: 10時間\n"
 "\n"
 "スカベンジャー部隊による強襲作戦です。かつての人口密集地に突入し、貴重なアイテムを可能な限り掻き集め、敵に包囲される前に素早く離脱します。戦闘は避けられないでしょう。かつ、仲間からの支援があるとは限りません。報酬は高額で、仲間がアイテムを持ち帰る可能性もあります。"
@@ -123223,7 +123658,7 @@ msgid ""
 "Raid Roster:\n"
 msgstr ""
 "利益: $200-$1000\n"
-"危険: 中程度\n"
+"危険: 中\n"
 "時間: 10時間\n"
 "\n"
 "強襲部隊名簿: \n"
@@ -123241,7 +123676,7 @@ msgid ""
 "Assigning one of your allies to menial labor is a safe way to teach them basic skills and build reputation with the outpost.  Don't expect much of a reward though."
 msgstr ""
 "利益: $8/時間\n"
-"危険: 最小\n"
+"危険: 極低\n"
 "時間: 1時間～\n"
 "\n"
 "仲間を単純作業労働に割り当てます。基礎的なスキルを安全に身に付けさせ、拠点における評判を築きます。"
@@ -123259,7 +123694,7 @@ msgid ""
 "Labor Roster:\n"
 msgstr ""
 "利益: $8/時間\n"
-"危険: 最小\n"
+"危険: 極低\n"
 "時間: 1時間～\n"
 "\n"
 "単純労働者名簿: \n"
@@ -123277,7 +123712,7 @@ msgid ""
 "Carpentry work requires more skill than menial labor while offering modestly improved pay.  It is unlikely that your companions will face combat but there are hazards working on makeshift buildings."
 msgstr ""
 "利益: $12/時間\n"
-"危険: 最小\n"
+"危険: 極低\n"
 "時間: 1時間～\n"
 "\n"
 "単純労働よりは高いスキルを要求され、やや給料の良い大工仕事です。戦闘に参加するようなことはありませんが間に合わせの建物に登って仕事をする以上、事故が起こることもあります。"
@@ -123396,7 +123831,7 @@ msgstr ""
 "> 枯れ草\n"
 "> 裂けた木材\n"
 " \n"
-"危険: 非常に低い\n"
+"危険: 超低\n"
 "時間: 3時間、連続作業可能\n"
 "人員: %d/3\n"
 
@@ -123485,6 +123920,19 @@ msgid ""
 "Time: 6 Hour Base + Travel Time + Cutting Time\n"
 "Positions: %d/1\n"
 msgstr ""
+"メモ:\n"
+"近隣の森に仲間を派遣し、丸太を切ってきてもらいます。\n"
+" \n"
+"適用スキル: 製作\n"
+"難易度: 1 \n"
+"効果:\n"
+"> 森林に生えている樹木/木の幹の50%%を伐採します。\n"
+"> 伐採で得た素材の50%% を入手します。\n"
+"> 連続で作業できますが、入手量は減少します。\n"
+" \n"
+"危険: 低 - 中\n"
+"時間: 6時間 + 移動時間 + 作業時間\n"
+"人員: %d/1\n"
 
 #: src/mission_companion.cpp
 msgid "Cut Logs"
@@ -123507,10 +123955,23 @@ msgid ""
 "Time: 6 Hour Construction + Travel\n"
 "Positions: %d/1\n"
 msgstr ""
+"メモ:\n"
+"離れた場所に仲間を派遣し、即席シェルターの建設と、シェルターへの物資の運搬を頼みます。\n"
+" \n"
+"適用スキル: サバイバル\n"
+"難易度: 3\n"
+"効果:\n"
+"> シェルターは移動中や緊急時の物資補給地点に適しています。\n"
+"> シェルターは無人のため、置いた物資が盗まれる可能性があります。\n"
+"> 物資の重量によって作業時間が変動します。\n"
+" \n"
+"危険: 中\n"
+"時間: 6時間(建設作業) + 移動時間\n"
+"人員: %d/1\n"
 
 #: src/mission_companion.cpp
 msgid "Setup Hide Site"
-msgstr "隠れ家の設置"
+msgstr "簡易シェルターの設置"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -123529,10 +123990,23 @@ msgid ""
 "Time: 1 Hour Base + Travel\n"
 "Positions: %d/1\n"
 msgstr ""
+"メモ:\n"
+"簡易シェルター内の物資を他のシェルターに移すか、拠点に持ち帰ります。\n"
+" \n"
+"適用スキル: サバイバル\n"
+"難易度: 1\n"
+"効果:\n"
+"> 簡易シェルターに残した物資を改修するのに便利です。\n"
+"> シェルターは無人のため、置いた荷物が盗まれる可能性があります。\n"
+"> 物資の重量によって作業時間が変動します。\n"
+" \n"
+"危険: 中\n"
+"時間: 1時間 + 移動時間\n"
+"人員: %d/1\n"
 
 #: src/mission_companion.cpp
 msgid "Relay Hide Site"
-msgstr "隠れ家の物資移動"
+msgstr "簡易シェルターの物資移動"
 
 #: src/mission_companion.cpp
 msgid "Construct Map Fortifications"
@@ -123563,6 +124037,19 @@ msgid ""
 "Time: Travel\n"
 "Positions: %d/3\n"
 msgstr ""
+"メモ:\n"
+"大いなる未知の世界に仲間を派遣します。戦闘を避けるには高い生存スキルが必要ですが、ある程度の戦闘発生はやむを得ないと考えておきましょう。\n"
+" \n"
+"適用スキル: サバイバル\n"
+"難易度: 3\n"
+"効果:\n"
+"> 指定した地点までの経路を偵察します。\n"
+"> 経路周辺の地形が全体マップに表示されます。\n"
+"> 簡易シェルターを設置することで探索範囲を拡大できます。\n"
+" \n"
+"危険: 高\n"
+"時間: 移動時間\n"
+"人員: %d/3\n"
 
 #: src/mission_companion.cpp
 msgid "Scout Mission"
@@ -123585,10 +124072,27 @@ msgid ""
 "Time: Travel\n"
 "Positions: %d/3\n"
 msgstr ""
+"メモ:\n"
+"仲間を派遣して荒野の大掃除をしてもらいます。派遣した仲間は敵対的なモンスターを殺し、受けた傷が大きすぎるか戦力差が開きすぎたときに帰還します。\n"
+" \n"
+"適用スキル: サバイバル\n"
+"難易度: 4\n"
+"効果:\n"
+"> モンスターと遭遇した場合、逃げずに戦闘します。\n"
+"> 指定した地点までの経路を偵察します。\n"
+"> 簡易シェルターを設置することで探索範囲を拡大できます。\n"
+" \n"
+"危険: 極高\n"
+"時間: 移動時間\n"
+"人員: %d/3\n"
 
 #: src/mission_companion.cpp
 msgid "Combat Patrol"
 msgstr "戦闘派遣"
+
+#: src/mission_companion.cpp
+msgid " Expansion Upgrade"
+msgstr "拡張施設の改良"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -123745,6 +124249,18 @@ msgid "Working to expand your camp!\n"
 msgstr "キャンプ地拡張のために働いています！\n"
 
 #: src/mission_companion.cpp
+msgid " hours left] \n"
+msgstr " 時間で完了] \n"
+
+#: src/mission_companion.cpp
+msgid " minutes left] \n"
+msgstr " 分で完了] \n"
+
+#: src/mission_companion.cpp
+msgid " [DONE]\n"
+msgstr " [完了]\n"
+
+#: src/mission_companion.cpp
 msgid "Recover Ally from Upgrading"
 msgstr "仲間を改良作業から呼び戻す"
 
@@ -123765,28 +124281,76 @@ msgid "Working at the chop shop...\n"
 msgstr "車両解体の仕事をしています...\n"
 
 #: src/mission_companion.cpp
+msgid "/120 hours] \n"
+msgstr "/120 時間] \n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Chop Shop"
+msgstr "(完了) 車両解体"
+
+#: src/mission_companion.cpp
 msgid "Working in your kitchen!\n"
 msgstr "調理場で働いています！\n"
+
+#: src/mission_companion.cpp
+msgid " [ALMOST DONE]\n"
+msgstr " [ほぼ完了]\n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Cooking"
+msgstr " (完了) 調理"
 
 #: src/mission_companion.cpp
 msgid "Working in your blacksmith shop!\n"
 msgstr "鍛冶場で働いています！\n"
 
 #: src/mission_companion.cpp
+msgid " (Finish) Smithing"
+msgstr " (完了) 鍛冶"
+
+#: src/mission_companion.cpp
 msgid "Working to plow your fields!\n"
 msgstr "土地を耕しています！\n"
+
+#: src/mission_companion.cpp
+msgid "/~48 hours] \n"
+msgstr "/~48 時間] \n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Plow Fields"
+msgstr " (完了) 土地の耕作"
 
 #: src/mission_companion.cpp
 msgid "Working to plant your fields!\n"
 msgstr "土地に作物を植えています！\n"
 
 #: src/mission_companion.cpp
+msgid "/4 hours] \n"
+msgstr "/4 時間] \n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Plant Fields"
+msgstr " (完了) 畑の植え付け"
+
+#: src/mission_companion.cpp
 msgid "Working to harvest your fields!\n"
 msgstr "土地の作物を収穫しています！\n"
 
 #: src/mission_companion.cpp
+msgid "/~10 hours] \n"
+msgstr "/~10 時間] \n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Harvest Fields"
+msgstr "(完了) 畑の収穫"
+
+#: src/mission_companion.cpp
 msgid "Working on your farm!\n"
 msgstr "農場で働いています！\n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Crafting"
+msgstr " (完了) 製作"
 
 #: src/mission_companion.cpp
 msgid "Busy crafting!\n"
@@ -123795,6 +124359,10 @@ msgstr "忙しそうに製作しています！\n"
 #: src/mission_companion.cpp
 msgid "Searching for materials to upgrade the camp.\n"
 msgstr "キャンプ地改良のための資材を探しています。\n"
+
+#: src/mission_companion.cpp
+msgid "/3 hours] \n"
+msgstr "/3 時間] \n"
 
 #: src/mission_companion.cpp
 msgid "Recover Ally from Gathering"
@@ -123844,11 +124412,11 @@ msgstr "丸太の切り出しから呼び戻す"
 
 #: src/mission_companion.cpp
 msgid "Setting up a hide site...\n"
-msgstr "隠れ家を設置しています...\n"
+msgstr "簡易シェルターを設置しています...\n"
 
 #: src/mission_companion.cpp
 msgid "Recover Hide Setup"
-msgstr "隠れ家の設置から呼び戻す"
+msgstr "簡易シェルターの設置から呼び戻す"
 
 #: src/mission_companion.cpp
 msgid "Constructing fortifications...\n"
@@ -124035,7 +124603,7 @@ msgid ""
 "Foraging for food involves dispatching a companion to search the surrounding wilderness for wild edibles.  Combat will be avoided but encounters with wild animals are to be expected.  The low pay is supplemented with the odd item as a reward for particularly large hauls."
 msgstr ""
 "利益: $10/時間\n"
-"危険: 低い\n"
+"危険: 低\n"
 "時間: 4時間～\n"
 "\n"
 "周辺の森や原野に食料調達部隊として派遣します。戦闘は可能な限り避けますが、野生動物と不意に遭遇することはあるでしょう。利益は少額ですが、大物を仕留められた場合その報酬としてアイテムを持ち帰ることがあります。"
@@ -124053,7 +124621,7 @@ msgid ""
 "Labor Roster:\n"
 msgstr ""
 "利益: $10/時間\n"
-"危険: 低い\n"
+"危険: 低\n"
 "時間: 4時間～\n"
 "\n"
 "食料調達部隊名簿: \n"
@@ -124073,7 +124641,7 @@ msgid ""
 "The commune is sending food to the Free Merchants in the Refugee Center as part of a tax and in exchange for skilled labor."
 msgstr ""
 "利益: $18/時間\n"
-"危険: 高い\n"
+"危険: 高\n"
 "時間: 不明\n"
 "\n"
 "交易の成功率を高めるため、隊商に参加させます。当然のことながら我々の隊商は敵対する略奪集団にとって格好の獲物であり、命と荷を守るための強力な部隊編成が求められます。仲間を派遣することで相応の利益が出ますが、それによって得られる信頼と評価も重要なものです。\n"
@@ -124094,7 +124662,7 @@ msgid ""
 "Roster:\n"
 msgstr ""
 "利益: $18/時間\n"
-"危険: 高い\n"
+"危険: 高\n"
 "時間: 不明\n"
 "\n"
 "隊商護衛者名簿: \n"
@@ -124106,6 +124674,10 @@ msgstr "[準備完了]\n"
 #: src/mission_companion.cpp
 msgid " [COMPLETE] \n"
 msgstr "[完了]\n"
+
+#: src/mission_companion.cpp
+msgid " Hours] \n"
+msgstr " 時間] \n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -124242,24 +124814,24 @@ msgstr "%sが木こりの作業を終えて戻ってきました..."
 
 #: src/mission_companion.cpp
 msgid "Forests, swamps, and fields are valid hide site locations."
-msgstr "隠れ家の設置は森林、湿地、平野でのみ可能です。"
+msgstr "簡易シェルターの設置は森林、湿地、平野でのみ可能です。"
 
 #: src/mission_companion.cpp
 msgid "departs to build a hide site..."
-msgstr "は隠れ家の設置作業に向かいました..."
+msgstr "は簡易シェルターの設置作業に向かいました..."
 
 #: src/mission_companion.cpp
 msgid "You need equipment to setup a hide site..."
-msgstr "隠れ家を設置するための装備が必要です..."
+msgstr "簡易シェルターを設置するための装備が必要です..."
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "%s returns from working on the hide site..."
-msgstr "%sが隠れ家での作業を終えて戻ってきました..."
+msgstr "%sが簡易シェルターでの作業を終えて戻ってきました..."
 
 #: src/mission_companion.cpp
 msgid "You must select an existing hide site."
-msgstr "既存の隠れ家を選択してください。"
+msgstr "既存の簡易シェルターを選択してください。"
 
 #: src/mission_companion.cpp
 msgid "Bring gear back?"
@@ -124267,16 +124839,16 @@ msgstr "物資を回収しますか？"
 
 #: src/mission_companion.cpp
 msgid "departs for the hide site..."
-msgstr "は隠れ家に向かいました..."
+msgstr "は簡易シェルターに向かいました..."
 
 #: src/mission_companion.cpp
 msgid "You need equipment to transport between the hide site..."
-msgstr "隠れ家から運んでくるアイテムがありません。"
+msgstr "簡易シェルターから運んでくるアイテムがありません。"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "%s returns from shuttling gear between the hide site..."
-msgstr "%sが隠れ家の物資移動作業から戻ってきました..."
+msgstr "%sが簡易シェルターの物資移動作業から戻ってきました..."
 
 #: src/mission_companion.cpp
 msgid ""
@@ -124585,6 +125157,14 @@ msgid ""
 "Risk: None\n"
 "Time: %s\n"
 msgstr ""
+"メモ:\n"
+"%s\n"
+" \n"
+"適用スキル: %s\n"
+"難易度: %d\n"
+"%s \n"
+"危険: なし\n"
+"時間: %s\n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -124594,6 +125174,10 @@ msgid ""
 "%s\n"
 "Time: %s\n"
 msgstr ""
+"適用スキル: %s\n"
+"難易度: %d\n"
+"%s\n"
+"時間: %s\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -124619,7 +125203,7 @@ msgid ""
 "Positions: "
 msgstr ""
 " \n"
-"危険: 非常に低い\n"
+"危険: 超低\n"
 "時間: 3時間、連続作業可能\n"
 "人員: "
 
@@ -124762,7 +125346,7 @@ msgstr "拡張施設を選択: "
 
 #: src/mission_companion.cpp
 msgid "You choose to wait..."
-msgstr ""
+msgstr "選択を保留しました..."
 
 #: src/mission_companion.cpp
 #, c-format
@@ -124780,47 +125364,47 @@ msgstr "%dkcal分の食料を仲間に配給しました。"
 
 #: src/mission_companion.cpp
 msgid "Harvestable: "
-msgstr ""
+msgstr "収穫できる物: "
 
 #: src/mission_companion.cpp
 msgid "Ready for Planting: "
-msgstr ""
+msgstr "植え付けできる物: "
 
 #: src/mission_companion.cpp
 msgid "Needs Plowing: "
-msgstr ""
+msgstr "耕地が必要: "
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Name:     %25s\n"
-msgstr ""
+msgstr "名前:     %25s\n"
 
 #: src/mission_companion.cpp
 msgid "----          Engines          ----\n"
-msgstr ""
+msgstr "----          エンジン          ----\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Engine:  %25s\n"
-msgstr ""
+msgstr "エンジン:  %25s\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Status:  %24d%%\n"
-msgstr ""
+msgstr ">状態:  %24d%%\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Fuel:    %25s\n"
-msgstr ""
+msgstr ">燃料:    %25s\n"
 
 #: src/mission_companion.cpp
 msgid "----  Fuel Storage & Battery   ----\n"
-msgstr ""
+msgstr "----  燃料タンク・バッテリー   ----\n"
 
 #: src/mission_companion.cpp
 msgid "Estimated Chop Time:         5 Days\n"
-msgstr ""
+msgstr "推定分解時間:         5日\n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -124961,11 +125545,11 @@ msgstr "派遣する仲間を選択                    [ 戦闘 : サバイバ�
 
 #: src/mission_companion.cpp
 msgid "You choose to send no one..."
-msgstr ""
+msgstr "誰も派遣しないことにしました..."
 
 #: src/mission_companion.cpp
 msgid "The companion you selected doesn't have the skills!"
-msgstr ""
+msgstr "選択した仲間にはスキルがありません！"
 
 #: src/mission_companion.cpp
 msgid "You don't have any companions ready to return..."
@@ -125057,52 +125641,52 @@ msgstr "範囲を広げるためにこの地点から外へ出てもよろしい
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Distance:%15.2f (km)\n"
-msgstr ""
+msgstr ">距離:%15.2f (km)\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">One Way: %15d (trips)\n"
-msgstr ""
+msgstr ">片道: %15d (移動時間)\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Covered: %15.2f (km)\n"
-msgstr ""
+msgstr ">舗装路: %15.2f (km)\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Distance:%15d (m)\n"
-msgstr ""
+msgstr ">距離:%15d (m)\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Covered: %15d (m)\n"
-msgstr ""
+msgstr ">舗装路: %15d (m)\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Travel:  %15d (hours)\n"
-msgstr ""
+msgstr ">移動時間:  %15d (時間)\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Working: %15d (hours)\n"
-msgstr ""
+msgstr ">作業時間: %15d (時間)\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Total:    %15d (days)\n"
-msgstr ""
+msgstr "総所要時間:    %15d (日)\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Total:    %15d (hours)\n"
-msgstr ""
+msgstr "総所要時間:    %15d (時間)\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Total:    %15d (minutes)\n"
-msgstr ""
+msgstr "総所要時間:    %15d (分)\n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -125110,11 +125694,57 @@ msgid ""
 "Food:     %15d (kcal)\n"
 " \n"
 msgstr ""
+"食料:     %15d (kcal)\n"
+" \n"
+
+#: src/mission_companion.cpp
+msgid "food for you"
+msgstr "自分用の食料"
+
+#: src/mission_companion.cpp
+msgid "food for companions"
+msgstr "配給食料"
+
+#: src/mission_companion.cpp
+msgid "weapons"
+msgstr "武器"
+
+#: src/mission_companion.cpp
+msgid "clothing"
+msgstr "衣服"
+
+#: src/mission_companion.cpp
+msgid "bionics"
+msgstr "CBM"
+
+#: src/mission_companion.cpp
+msgid "all kinds of tools"
+msgstr "道具類"
+
+#: src/mission_companion.cpp
+msgid "wood of various sorts"
+msgstr "木材など"
+
+#: src/mission_companion.cpp
+msgid "trash and rotting food"
+msgstr "ゴミ、腐敗食物"
+
+#: src/mission_companion.cpp
+msgid "books"
+msgstr "本"
+
+#: src/mission_companion.cpp
+msgid "medication"
+msgstr "薬品"
+
+#: src/mission_companion.cpp
+msgid "ammo"
+msgstr "弾薬"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Reset point: %s?"
-msgstr ""
+msgstr "地点をリセットしますか？: %s"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -125207,7 +125837,7 @@ msgstr "製作に使う資材がありません。"
 #: src/mission_companion.cpp
 #, c-format
 msgid "Batch crafting %s [MAX: %d]: "
-msgstr ""
+msgstr "一括製作 %s [最大: %d]: "
 
 #: src/mission_companion.cpp
 msgid "Your batch is too large!"
@@ -125240,6 +125870,21 @@ msgid ""
 "Time: 4 Days\n"
 "Positions: %d/1\n"
 msgstr ""
+"メモ:\n"
+"新たな仲間を集めるのは非常に危険な仕事で、物資も大量に必要です。成功するかどうかは、派遣する仲間のスキルと拠点の魅力の高さにかかっています。\n"
+" \n"
+"適用スキル: 話術\n"
+"難易度: 2 \n"
+"基礎点:                   +%3d%%\n"
+"> 拡張ボーナス:            +%3d%%\n"
+"> 派閥ボーナス:              +%3d%%\n"
+"> 特殊ボーナス:              +%3d%%\n"
+" \n"
+"合計: スキル                  +%3d%%\n"
+" \n"
+"危険: 高\n"
+"時間: 4日\n"
+"人員: %d/1\n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -125271,6 +125916,8 @@ msgid ""
 "NPC Overview:\n"
 " \n"
 msgstr ""
+"NPC概要:\n"
+" \n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -125278,21 +125925,23 @@ msgid ""
 "Name:  %20s\n"
 " \n"
 msgstr ""
+"名前:  %20s\n"
+" \n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Strength:        %10d\n"
-msgstr ""
+msgstr "筋力:        %10d\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Dexterity:       %10d\n"
-msgstr ""
+msgstr "器用:       %10d\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Intelligence:    %10d\n"
-msgstr ""
+msgstr "知性:    %10d\n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -125300,14 +125949,16 @@ msgid ""
 "Perception:      %10d\n"
 " \n"
 msgstr ""
+"感覚:      %10d\n"
+" \n"
 
 #: src/mission_companion.cpp
 msgid "Top 3 Skills:\n"
-msgstr ""
+msgstr "上位3スキル:\n"
 
 #: src/mission_companion.cpp
 msgid "Asking for:\n"
-msgstr ""
+msgstr "要求:\n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -125315,6 +125966,8 @@ msgid ""
 "> Food:     %10d days\n"
 " \n"
 msgstr ""
+"> 食料:     %10d 日分\n"
+" \n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -125322,6 +125975,8 @@ msgid ""
 "Faction Food:%9d days\n"
 " \n"
 msgstr ""
+"備蓄食料:%9d 日分\n"
+" \n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -125329,6 +125984,8 @@ msgid ""
 "Recruit Chance: %10d%%\n"
 " \n"
 msgstr ""
+"加入確率: %10d%%\n"
+" \n"
 
 #: src/mission_companion.cpp
 msgid "Select an option:"
@@ -125352,7 +126009,7 @@ msgstr "仲間に誘わない"
 
 #: src/mission_companion.cpp
 msgid "You decide you aren't interested..."
-msgstr ""
+msgstr "お引き取り願いました..."
 
 #: src/mission_companion.cpp
 #, c-format
@@ -131094,6 +131751,15 @@ msgid ""
 "There are few fields.  Producing enough food to supply your camp may be "
 "difficult.\n"
 msgstr "周囲に平野がほとんどありません。キャンプ地を運営するのに十分な食料を供給するのが困難になる可能性があります。\n"
+
+#: src/npctalk.cpp
+#, c-format
+msgid ""
+"%s \n"
+"Are you sure you wish to continue? "
+msgstr ""
+"%s \n"
+"続行しますか？ "
 
 #: src/npctalk.cpp
 msgid "You weren't able to survey the camp site."
