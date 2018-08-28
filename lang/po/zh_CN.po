@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-dda 0.C\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-16 20:54+0800\n"
+"POT-Creation-Date: 2018-08-22 21:08+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: 高 励贤 <475964436@qq.com>, 2018\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/cataclysm-dda-translators/teams/2217/zh_CN/)\n"
@@ -147,7 +147,7 @@ msgid ""
 "If true, will enable to pickup items one tile around to the player.  You can"
 " assign No Auto Pickup zones with the Zones Manager 'Y' key for eg.  your "
 "homebase."
-msgstr "开启时，玩家周围一格的东西将会被自动拾取。使用\"管理区域\"键开启区域管理菜单以设置不拾取区域，例如你的宅基地。"
+msgstr "开启时，玩家周围一格的东西将会被自动拾取。使用\"管理区域\"键开启区域管理菜单以设置不拾取区域，例如你的基地和家中。"
 
 #: lang/extra/android/options.cpp
 msgid "Auto pickup light items"
@@ -627,6 +627,17 @@ msgid ""
 "Number of turns after which a message will be removed from the sidebar log."
 "  '0' disables this option."
 msgstr "侧边栏日志信息在删除前保留的回合数。设为\"0\"将禁用该选项。"
+
+#. ~ unbound key error message suppression
+#: lang/extra/android/options.cpp src/options.cpp
+msgid "Suppress \"unknown command\" messages"
+msgstr "阻止“未知命令”消息"
+
+#: lang/extra/android/options.cpp src/options.cpp
+msgid ""
+"If true, pressing a key with no set function will not display a notice in "
+"the chat log."
+msgstr "开启时，按下未绑定功能的按键将不会在消息栏中显示未知命令的通知。"
 
 #. ~ aim bar style - bars or numbers
 #: lang/extra/android/options.cpp src/options.cpp
@@ -2623,7 +2634,7 @@ msgstr "一种有着箭羽与用于贯穿护甲的金属锥形箭头。射击后
 
 #: lang/json/AMMO_from_json.py
 msgid "metal target arrow"
-msgstr "金属赛用箭"
+msgstr "金属竞赛箭"
 
 #. ~ Description for metal target arrow
 #: lang/json/AMMO_from_json.py
@@ -3204,7 +3215,7 @@ msgstr "一种由钢制成、可刺穿护甲的锋利锥头弩矢，在高手手
 
 #: lang/json/AMMO_from_json.py
 msgid "steel target bolt"
-msgstr "钢制赛用弩矢"
+msgstr "钢制竞赛弩矢"
 
 #. ~ Description for steel target bolt
 #: lang/json/AMMO_from_json.py
@@ -18878,8 +18889,8 @@ msgstr "人肉香肠"
 #. ~ Description for Mannwurst
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
-"A hefty long pork sausage that has been cured for long term storage.  Very "
-"tasty, if you're in the market for human flesh."
+"A hefty long pork sausage that has been cured and smoked for long term "
+"storage.  Very tasty, if you're in the market for human flesh."
 msgstr ""
 "一根巨大的人肉香肠，被特别加工以便于长期储存，十分美味。\n"
 "\"有些人和笨猪一样，下场也一样。\""
@@ -25021,7 +25032,7 @@ msgid ""
 "fruit.  It has been supplemented with extra vitamins and minerals"
 msgstr "由蛋白质粉和水果混合而成的营养丰富的美味饮料，口感醇厚。特别添加人体所需的维生素和矿物质，均衡膳食营养。"
 
-#: lang/json/COMESTIBLE_from_json.py
+#: lang/json/COMESTIBLE_from_json.py src/mission_companion.cpp
 msgid "seeds"
 msgid_plural "seeds"
 msgstr[0] "种子"
@@ -27213,7 +27224,7 @@ msgstr "占位物品。"
 
 #: lang/json/GENERIC_from_json.py
 msgid "smoldering embers"
-msgid_plural "smoldering emberss"
+msgid_plural "smoldering embers"
 msgstr[0] "熏烤余烬"
 
 #. ~ Description for smoldering embers
@@ -29320,11 +29331,11 @@ msgstr ""
 "一个与柄垂直相交的柄头上一边是平坦的锤状，另一边则是像钩爪一样尖起来，顶端还有一个与矛类似的尖刃，两边都可以攻击，面对装甲目标，以平坦面打击仍能给予相当大的伤害，但作为工具就没有作为武器那么称手。"
 
 #: lang/json/GENERIC_from_json.py
-msgid "nail board"
-msgid_plural "nail boards"
-msgstr[0] "狼牙棒"
+msgid "nailboard"
+msgid_plural "nailboards"
+msgstr[0] "钉板"
 
-#. ~ Description for nail board
+#. ~ Description for nailboard
 #: lang/json/GENERIC_from_json.py
 msgid ""
 "A long piece of wood with several nails through one end; essentially a "
@@ -36603,11 +36614,12 @@ msgstr "骷髅犬"
 #. ~ Description for skeletal dog
 #: lang/json/MONSTER_from_json.py
 msgid ""
-"This once-canine has shed all its skin revealing a carapace of fused bones "
-"and ribs.  This bone armor devoid of external flesh seems to be propelled by"
-" a net of sickly black veins and sinews glistening with black goo."
+"This once-canine has shed all of its skin, revealing a carapace of fused "
+"bones and ribs.  Devoid entirely of flesh, this walking suit of bone seems "
+"to be controlled by a net of veins and sinews which pulse with glistening "
+"black goo."
 msgstr ""
-"这只曾经的犬科生物的表皮早已全部脱落，露出了内部由骨骼和肋骨融合而成的甲壳。这层缺少血肉覆盖的骨制盔甲似乎被一团病态的黑色血管以及布满了闪闪发光的黑色粘液的肌肉所驱动。"
+"这只曾经的犬科生物的表皮早已全部脱落，露出了内部由骨骼和肋骨融合而成的甲壳。这套缺少血肉覆盖的会行走的骨甲似乎被一团充满了闪闪发光的黑色粘液的血管和肌腱网所驱动。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "dog"
@@ -36662,12 +36674,13 @@ msgstr "喷火丧尸"
 #. ~ Description for zombie burner
 #: lang/json/MONSTER_from_json.py
 msgid ""
-"Realizing that bullets weren't enough, the army dispatched flamethrower "
-"units to burn the walking dead.  Unfortunately, there were too many zombies "
-"and not enough flamers.  It seems that the tank of the undead soldier you "
-"see before you is damaged."
+"When bullets weren't enough to stop the end of the world, the military tried"
+" fire instead.  Their failure is made manifest in this gas-masked husk, its "
+"black suit torn and ripped.  Its flamethrower, dangling limply at its side, "
+"is attached to a tank of napalm strapped onto its back, which trickles its "
+"contents onto the ground."
 msgstr ""
-"当军队意识到子弹已经不足以镇压暴乱时，他们开始派出喷火兵希望能够烧光丧尸群。不幸的是，丧尸太多而喷火兵太少。你眼前这位丧尸士兵身后的喷火器罐子看起来已经有点损伤。"
+"当子弹不足以阻止末日来临之时，军队开始尝试使用火焰。他们的失败造就了这只带着防毒面具的躯壳，焦黑的色军装后背早已被撕裂成碎片。它的喷火器仍然摇摇晃晃地挂在身侧，并连接在身后所背着的汽油罐上，汽油罐中的液体不断滴落在地上。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "flaming eye"
@@ -36868,10 +36881,10 @@ msgstr "地魔虫"
 #. ~ Description for graboid
 #: lang/json/MONSTER_from_json.py
 msgid ""
-"A monstrous beast with a tripartite mouth that opens to reveal hundreds of "
-"writhing tongues with razor sharp edges.  It keeps most of its enormous body"
-" hidden underground."
-msgstr "一只体型巨大的野兽，三瓣嘴，露出骇人的数百利齿与充满尖刺的舌头，他的大部分身体隐藏在地下。"
+"A monstrous beast the size of a semi truck with a tripartite mouth that "
+"opens to reveal hundreds of writhing tongues with razor sharp edges.  It "
+"keeps most of its enormous body hidden underground."
+msgstr "一只体型如半挂卡车一般巨大的野兽，三瓣嘴，露出骇人的数百利齿与充满尖刺的舌头，他的大部分身体隐藏在地下。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "gracken"
@@ -37163,9 +37176,10 @@ msgstr "骷髅"
 msgid ""
 "A monstrous overgrowth of ossified tissue has replaced this zombie's rotting"
 " skin with an organic armor of dense bone.  Large clumps of black goo seep "
-"from its joints, as it makes sickening cracks while it moves unfazed."
+"from its joints as it shambles aimlessly, with sickening crackling sounds "
+"filling the air around it."
 msgstr ""
-"一层巨大的过度生长而成的骨化组织已经形成了致密有机的骨制盔甲并取代了这只丧尸表面原来早已腐烂的皮肤。大块的黑色粘液从其关节不断渗出，全身的关节随着它移动不断发出令人作呕的咔嗒声而它似乎完全不受影响。"
+"一层巨大的过度生长而成的骨化组织已经形成了致密有机的骨制盔甲并取代了这只丧尸表面原来早已腐烂的皮肤。大块的黑色粘液从其关节不断渗出，它毫无目的蹒跚而行，全身的关节随着移动不断发出令人作呕的咔嗒声。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "skitterbot"
@@ -37327,9 +37341,9 @@ msgstr "丧尸熊"
 #. ~ Description for zombear
 #: lang/json/MONSTER_from_json.py
 msgid ""
-"This black bear's eyes ooze with black fluid, and its flesh is torn and "
-"scarred.  It shuffles as it walks."
-msgstr "一只驮着的被撕裂的血肉，边走边剥落下来的丧尸熊。这只伤痕累累的黑熊有着流着黑色液体的眼睛，它用它来寻找你。"
+"This black bear's eyes ooze with dark, oily fluid, and its flesh is torn and"
+" scarred.  It shuffles as it walks."
+msgstr "这只黑熊的眼睛渗出深色油状液体，撕裂的肉体瘢痕累累。它的步伐拖曳蹒跚。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "zombie"
@@ -37907,12 +37921,12 @@ msgstr "骷髅霸主"
 #. ~ Description for skeletal juggernaut
 #: lang/json/MONSTER_from_json.py
 msgid ""
-"By growing more and more bone plates over its withered tissues, this monster"
-" tried to achieve the impossible: huge size and slender armored body.  Now "
-"it drags around it's pointy elongated limbs like a heavy burden."
+"This hideous golem of plated bones and misshapen flesh drags its heavy, "
+"pointed limbs behind it like an unwanted burden.  Formerly soft and "
+"vulnerable, bones grew around its form to protect it - only, they kept "
+"growing.  And growing.  And growing."
 msgstr ""
-"通过在其逐渐萎缩的组织上生长出越来越多的骨板，这只怪物实现了不可能的成就：巨大的体型同时有着纤细且防护完善的身体。 "
-"现在它像背着重负一般拖着尖锐而瘦长的四肢四处游荡。"
+"这只丑陋的巨像浑身布满了骨板，畸形的血肉拖拽着其沉重而尖锐的四肢，如同无用的负担一般。曾经柔软脆弱的躯体长出了许多保护的骨甲。而这骨甲还在增长、增长、不断增长。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "chicken"
@@ -47521,6 +47535,32 @@ msgid ""
 "transportation and can be deployed as a furniture."
 msgstr "一个金属制的旅行餐桌，用于野外旅行使用。可以折叠起来便于携带，也可以设置在地上成为家具使用。"
 
+#: lang/json/TOOL_from_json.py lang/json/furniture_from_json.py
+msgid "leather tarp"
+msgid_plural "leather tarps"
+msgstr[0] "防水皮革"
+
+#. ~ Description for leather tarp
+#: lang/json/TOOL_from_json.py
+msgid ""
+"A large sheet of sewn leather that can be deployed instead of a picnic "
+"blanket, but it's more valuable as a butchery appliance as it does not soak "
+"in blood.  It's rolled and ready for carrying."
+msgstr "一大块缝制的皮革，可以用来代替野餐毯子，但用作屠宰工具更有价值，因为它不会渗血。它已经被卷起以便于携带。"
+
+#: lang/json/TOOL_from_json.py lang/json/furniture_from_json.py
+msgid "fiber mat"
+msgid_plural "fiber mats"
+msgstr[0] "纤维垫"
+
+#. ~ Description for fiber mat
+#: lang/json/TOOL_from_json.py
+msgid ""
+"A large mat woven from fibrous material that can be used instead of a picnic"
+" blanket, but it's more valuable as a butchery appliance.  Too thin to be "
+"used as a comfortable sleeping place.  It's rolled and ready for carrying."
+msgstr "一种由纤维材料编织而成的大垫子，可代替野餐毯，但用作屠宰工具更有价值。因为太薄不能作为舒适的睡眠场所。它已经被卷起以便于携带。"
+
 #: lang/json/TOOL_from_json.py
 msgid "electric lantern (off)"
 msgid_plural "electric lanterns (off)"
@@ -52116,6 +52156,26 @@ msgid "You're covered in a glowing goo!"
 msgstr "你全身沾满了发光的粘液！"
 
 #: lang/json/effects_from_json.py
+msgid "Took Xanax"
+msgstr "服用赞安诺"
+
+#. ~ Description of effect 'Took Xanax'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You took Xanax some time ago and you might still be under it's influence."
+msgstr "不久前你服用了阿普唑仑，你可能仍然受它的影响。"
+
+#: lang/json/effects_from_json.py
+msgid "Took Prozac"
+msgstr "服用百忧解"
+
+#. ~ Description of effect 'Took Prozac'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You took Prozac some time ago and you might still be under it's influence."
+msgstr "不久前你服用了百忧解，你可能仍然受它的影响。"
+
+#: lang/json/effects_from_json.py
 msgid "Stuck in Pit"
 msgstr "陷入深坑"
 
@@ -52895,6 +52955,19 @@ msgid "You receive a pureed bone & enamel injection into your eyeball."
 msgstr "骨头和釉质的混合浆液被注射到了你的眼球中。"
 
 #: lang/json/effects_from_json.py
+msgid "Took anticonvulsant drugs"
+msgstr "服用抗惊厥药物"
+
+#. ~ Description of effect 'Took anticonvulsant drugs'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You took anticonvulsant drugs some time ago and you might still be under it's influence.\n"
+"Prescription note says it's effect duration may vary, so your estimate may be inaccurate."
+msgstr ""
+"不久前你服用了抗惊厥药物，你可能仍然受它的影响。\n"
+"处方说明它的效果持续时间可能会有所差异，因此你的估计可能不准确。"
+
+#: lang/json/effects_from_json.py
 msgid "Relaxation gas"
 msgstr "麻醉气体"
 
@@ -53386,6 +53459,45 @@ msgstr "你坐不稳，心脏狂跳不已。你很可能服用了过量的兴奋
 #: lang/json/effects_from_json.py
 msgid "You shake with the excess stimulation."
 msgstr "过度的刺激使你不由自主地颤抖。"
+
+#: lang/json/effects_from_json.py
+msgid "Took weak antibiotic"
+msgstr "服用弱效抗生素"
+
+#. ~ Description of effect 'Took weak antibiotic'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You consumed mild antibiotic some time ago to fight off infection.\n"
+"If you don't recover you may want to take another dose, but beware overdosage."
+msgstr ""
+"你不久前吃了一些弱效抗生素来抵抗感染。\n"
+"如果你没有康复，你可能需要再服用一次，但要小心服用过量。"
+
+#: lang/json/effects_from_json.py
+msgid "Took antibiotic"
+msgstr "服用抗生素"
+
+#. ~ Description of effect 'Took antibiotic'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You consumed antibiotic some time ago to fight off infection.\n"
+"If you don't recover you may want to take another dose, but beware overdosage."
+msgstr ""
+"你不久前吃了一些抗生素来抵抗感染。\n"
+"如果你没有康复，你可能需要再服用一次，但要小心服用过量。"
+
+#: lang/json/effects_from_json.py
+msgid "Took strong antibiotic"
+msgstr "服用强效抗生素"
+
+#. ~ Description of effect 'Took strong antibiotic'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You consumed perscription-grade antibiotic some time ago to fight off infection.\n"
+"If you don't recover you may want to take another dose, but beware overdosage."
+msgstr ""
+"你不久前吃了一些强效抗生素来抵抗感染。\n"
+"如果你没有康复，你可能需要再服用一次，但要小心服用过量。"
 
 #: lang/json/effects_from_json.py
 msgid "Panacea"
@@ -54188,8 +54300,7 @@ msgid "Pin some notes for other survivors to read."
 msgstr "一块用于给其他幸存者留言的留言板。"
 
 #: lang/json/furniture_from_json.py lang/json/furniture_from_json.py
-#: lang/json/terrain_from_json.py lang/json/terrain_from_json.py
-#: lang/json/terrain_from_json.py src/iuse.cpp
+#: lang/json/terrain_from_json.py lang/json/terrain_from_json.py src/iuse.cpp
 msgid "crunch!"
 msgstr "嘎嚓！"
 
@@ -55204,6 +55315,21 @@ msgstr "一个金属屠宰架子，可以将清理内脏后的胴体悬挂在半
 #: lang/json/furniture_from_json.py
 msgid "Small metal folding table, ideal for off-road trips into the wild."
 msgstr "一个小型金属可折叠餐桌，适合野外郊游时使用。平坦的表面可以用来屠宰你所捕到的猎物。"
+
+#. ~ Description for leather tarp
+#: lang/json/furniture_from_json.py
+msgid ""
+"A large sheet of sewn leather that can be used instead of a picnic blanket, "
+"but it's more valuable as a butchery appliance as it does not soak in blood."
+msgstr "一大块缝制的皮革，可以用来代替野餐毯子，但用作屠宰工具更有价值，因为它不会渗血。"
+
+#. ~ Description for fiber mat
+#: lang/json/furniture_from_json.py
+msgid ""
+"A large mat woven from fibrous material that can be used instead of a picnic"
+" blanket, but it's more valuable as a butchery appliance. Too thin to be a "
+"comfortable sleeping place."
+msgstr "一种由纤维材料编织而成的大垫子，可代替野餐毯，但用作屠宰工具更有价值。因为太薄不能作为舒适的睡眠场所。"
 
 #: lang/json/furniture_from_json.py
 msgid "mutated cactus"
@@ -60026,7 +60152,7 @@ msgstr "稳定器"
 #: lang/json/gunmod_from_json.py
 msgid "bow stabilizer system"
 msgid_plural "bow stabilizer systems"
-msgstr[0] "弓稳定器"
+msgstr[0] "弓稳定器系统"
 
 #: lang/json/gunmod_from_json.py
 msgid ""
@@ -63870,6 +63996,11 @@ msgstr "仙人掌"
 
 #. ~ Sign
 #: lang/json/mapgen_from_json.py
+msgid "KENTUCKY COFFEE"
+msgstr "肯塔基咖啡树"
+
+#. ~ Sign
+#: lang/json/mapgen_from_json.py
 msgid "<city> Community Garden"
 msgstr "<city> 市市民农园"
 
@@ -64250,36 +64381,6 @@ msgstr "干细胞治疗"
 
 #. ~ Computer name
 #: lang/json/mapgen_from_json.py
-msgid "Barracks Entrance"
-msgstr "军营入口"
-
-#. ~ Computer option
-#: lang/json/mapgen_from_json.py
-msgid "UNLOCK ENTRANCE"
-msgstr "开启入口"
-
-#. ~ Computer name
-#: lang/json/mapgen_from_json.py
-msgid "Magazine Entrance"
-msgstr "弹药库入口"
-
-#. ~ Computer name
-#: lang/json/mapgen_from_json.py
-msgid "Prisoner Containment Entrance"
-msgstr "监狱入口"
-
-#. ~ Computer name
-#: lang/json/mapgen_from_json.py
-msgid "Containment Control"
-msgstr "反应堆外壳控制"
-
-#. ~ Computer option
-#: lang/json/mapgen_from_json.py
-msgid "EMERGENCY CONTAINMENT RELEASE"
-msgstr "反应堆外壳紧急释放"
-
-#. ~ Computer name
-#: lang/json/mapgen_from_json.py
 msgid "Operating Theatre Access Control"
 msgstr "手术中心控制台"
 
@@ -64292,6 +64393,11 @@ msgstr "紧急撤离——打开所有门锁"
 #: lang/json/mapgen_from_json.py
 msgid "UNLOCK AUTODOC DOOR"
 msgstr "打开全自动医疗仪门锁"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Containment Control"
+msgstr "反应堆外壳控制"
 
 #. ~ Computer option
 #: lang/json/mapgen_from_json.py
@@ -64327,6 +64433,46 @@ msgstr "上传数据至梅尔基奥尔中心"
 #: lang/json/mapgen_from_json.py
 msgid "Access Melchior"
 msgstr "访问梅尔基奥尔中心"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Library Entrance"
+msgstr "图书馆入口"
+
+#. ~ Computer option
+#: lang/json/mapgen_from_json.py
+msgid "UNLOCK ENTRANCE"
+msgstr "开启入口"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Barracks Entrance"
+msgstr "军营入口"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Magazine Entrance"
+msgstr "弹药库入口"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Prisoner Containment Entrance"
+msgstr "监狱入口"
+
+#. ~ Computer option
+#: lang/json/mapgen_from_json.py
+msgid "EMERGENCY CONTAINMENT RELEASE"
+msgstr "反应堆外壳紧急释放"
+
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "PE012 Storage"
+msgstr "PE012 储藏室"
+
+#. ~ Computer option
+#: lang/json/mapgen_from_json.py
+msgid "UNLOCK STORAGE"
+msgstr "开启储藏室"
 
 #. ~ Computer name
 #: lang/json/mapgen_from_json.py
@@ -65199,7 +65345,7 @@ msgid "marked"
 msgstr "划伤"
 
 #: lang/json/material_from_json.py
-msgid "budget steel"
+msgid "Budget Steel"
 msgstr "粗钢"
 
 #: lang/json/material_from_json.py
@@ -73497,7 +73643,7 @@ msgid "Mycus"
 msgstr "马卡斯"
 
 #. ~ Description for Mycus
-#: lang/json/mutation_from_json.py
+#: lang/json/mutation_from_json.py src/iuse.cpp
 msgid "We are the Mycus."
 msgstr "吾等是马卡斯。"
 
@@ -73523,10 +73669,10 @@ msgid ""
 msgstr "你的身体产生了一种神奇的防御机制。你流出的血含有强酸，会伤害任何蠢到弄破你皮肤的家伙。"
 
 #: lang/json/mutation_from_json.py
-msgid "Pyromania"
+msgid "Pyromaniac"
 msgstr "纵火狂"
 
-#. ~ Description for Pyromania
+#. ~ Description for Pyromaniac
 #: lang/json/mutation_from_json.py
 msgid ""
 "You have an unhealthy obsession with fire, and you get anxious if you don't "
@@ -80389,7 +80535,7 @@ msgstr "建筑"
 #. ~ Crafting recipes subcategory of 'BUILDING' category
 #: lang/json/recipe_category_from_json.py
 msgid "BASES"
-msgstr "基地"
+msgstr "营地"
 
 #. ~ Crafting recipes subcategory of 'BUILDING' category
 #: lang/json/recipe_category_from_json.py
@@ -80399,6 +80545,262 @@ msgstr "扩展区"
 #: lang/json/recipe_from_json.py
 msgid "Stuff THE MAN doesn't want you to know"
 msgstr "人类不想你知道的东西"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"The first thing we are going to need is a command tent to manage and task "
+"workers from."
+msgstr "首先我们需要一顶帐篷充当指挥中心来管理成员和指派任务。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"We're going to need a fire pit and a bed if we want to stay here "
+"permanently."
+msgstr "如果我们想长久呆在这里，我们需要一个火坑和一张床。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"To make this outpost functional we are going to need storage containers to "
+"organize our supplies."
+msgstr "为了使这个前哨站正常运转，我们需要一些存储容器来管理补给。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Next we should expand the camp to comfortably support two people "
+"indefinitely."
+msgstr "下一步我们要扩大营地，以便支持两个成员在此定居。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Additional housing and storage will allow our camp to expand into "
+"specialized industries."
+msgstr "额外的住房和存储容器将使我们的营地拓展专业产业。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Constructing a hard command post will transform our little camp into a true "
+"base."
+msgstr "建设一个坚固的指挥所将把我们的小营地变成一个真正的基地。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Building additional housing will allow us to send companions out to find "
+"recruits."
+msgstr "再建造一些额外住房将允许我们派遣同伴去寻找新同伴。"
+
+#: lang/json/recipe_from_json.py
+msgid "We need to expand our base to include basic dining facilities."
+msgstr "我们需要扩建基地，包括基本的餐饮设施。"
+
+#: lang/json/recipe_from_json.py
+msgid "More housing means that we can support additional specialists."
+msgstr "更多的住房意味着我们可以支持更多的专业人员。"
+
+#: lang/json/recipe_from_json.py
+msgid "An expanded kitchen is needed to support our growing settlement."
+msgstr "我们需要一个更大的厨房来支持我们日益增长的聚落。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Finishing the hard structure will give us a more secure place to retreat to "
+"if we come under attack."
+msgstr "修建坚固的建筑将给我们提供一处安全的后方。如果我们在外面不幸受伤，可以回来修养。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"I'm surprised we've made it this long without securing a clean water source,"
+" we need a well."
+msgstr "我很惊讶我们在没有净水的情况下活了这么久，我们需要一口井。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Building a strong wall will keep the base secure even if a small horde "
+"attacks."
+msgstr "我们需要建造坚固的城墙，即使遇到小规模的尸潮进攻也能保证基地的安全。"
+
+#: lang/json/recipe_from_json.py
+msgid "We need to finish our half built fortifications."
+msgstr "我们需要完成我们已经建造的部分防御工事。"
+
+#: lang/json/recipe_from_json.py
+msgid "We're running out of room and need another living quarters."
+msgstr "我们没有房间了，需要另一个住处。"
+
+#: lang/json/recipe_from_json.py
+msgid "Our kitchen isn't able to keep up with demand, we need to expand it."
+msgstr "我们的厨房不能跟上需求，我们需要扩大它。"
+
+#: lang/json/recipe_from_json.py
+msgid "We should build stronger doors to secure our compound."
+msgstr "我们应该建造更坚固的大门来保护我们的家园。"
+
+#: lang/json/recipe_from_json.py
+msgid "One final tent is all we have room for now."
+msgstr "我们的基地里只能再安下最多一个帐篷了。"
+
+#: lang/json/recipe_from_json.py
+msgid "Survey land for a farm shop."
+msgstr "为修建农场勘测土地。"
+
+#: lang/json/recipe_from_json.py
+msgid "Plowing a few plots should get us started."
+msgstr "让我们从耕种几块地开始。"
+
+#: lang/json/recipe_from_json.py
+msgid "We could use a farming shed to store resources where we'll be working."
+msgstr "我们可以用一个农舍来储存我们耕作所需的资源。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Our farm could be expanded by finishing the shed and adding additional "
+"plots."
+msgstr "我们可以通过修建棚子和增加额外的耕地来扩大农场。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Building a processing shack should allow us to reclaim additional seeds from"
+" our byproducts."
+msgstr "建造一间加工屋应该能让我们从副产品中回收些额外的种子。"
+
+#: lang/json/recipe_from_json.py
+msgid "Survey land for a garage."
+msgstr "为修建车库勘测土地。"
+
+#: lang/json/recipe_from_json.py
+msgid "Building a tool rack should be the first priority."
+msgstr "建造工具架应该是我们的首要任务。"
+
+#: lang/json/recipe_from_json.py
+msgid "We should start construction of a roof for the garage."
+msgstr "我们应该开始为车库建造屋顶。"
+
+#: lang/json/recipe_from_json.py
+msgid "Finishing out the roof will let our mechanics work rain or shine."
+msgstr "完整的屋顶让我们的技师无视风雨。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Our garage isn't big enough to work on larger vehicles.  Let's start "
+"expanding it."
+msgstr "我们的车库不够大，无法处理更大的车辆。让我们开始扩建它。"
+
+#: lang/json/recipe_from_json.py
+msgid "Finishing the roof will let us park RVs and buses in the garage."
+msgstr "完整的屋顶让我们可以在车库里停放房车和大巴。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Attaching a quarters will let our mechanics work longer hours when needed."
+msgstr "修建附属宿舍将使我们的技师在需要的时候可以工作更长的时间。"
+
+#: lang/json/recipe_from_json.py
+msgid "Survey land for a kitchen."
+msgstr "为修建厨房勘测土地。"
+
+#: lang/json/recipe_from_json.py
+msgid "Building a cook-shack is our first task."
+msgstr "建造一个烹饪小屋是我们的首要任务。"
+
+#: lang/json/recipe_from_json.py
+msgid "We need to finish framing the walls for the cook-shack."
+msgstr "我们需要为烹饪小屋建造墙壁。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Expanding the shack by including a smoker will increase our versatility."
+msgstr "扩建小屋并增加一个烟熏架能够为我们提供更多样化的选择。"
+
+#: lang/json/recipe_from_json.py
+msgid "A pantry will allow our cooks to store more non-perishables."
+msgstr "储藏室将允许我们的厨师储存更多不易腐烂的食物。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Increasing our number of smoking racks will let us craft larger batches."
+msgstr "增加烟熏架的数量可以让我们大批量烹饪食物。"
+
+#: lang/json/recipe_from_json.py
+msgid "A well is needed so our cooks don't have to haul in water."
+msgstr "我们需要建造一口井，这样厨师就不必往返提水了。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Wood stoves will give us greater control of temperatures and let us craft "
+"more difficult recipes."
+msgstr "一个火炉能够让我们更好地控制温度，同时可以尝试些更难的食谱。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"Finally, expanding the pantry further will let us store additional "
+"materials."
+msgstr "最后，进一步扩大储藏室将让我们储存更多食材。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"A trench that may deter movement but is meant to be the foundation of a "
+"picket or palisade.  Requirements are for 1/2 an over map tile."
+msgstr "一条可以阻碍移动的壕沟，它是尖桩围栏或篱笆墙的基础。所有需求是按照每1/2个地块计算的。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"A deep trench filled with spikes, requires a trench.  Requirements are for "
+"1/2 an over map tile."
+msgstr "一条满是钉刺的深壕沟，需要壕沟。所有需求是按照每1/2个地块计算的。"
+
+#: lang/json/recipe_from_json.py
+msgid "Survey land for a blacksmith shop."
+msgstr "为建造铁匠铺勘测土地。"
+
+#: lang/json/recipe_from_json.py
+msgid "Building a forge and kiln is our first task."
+msgstr "建造锻铁炉和炭窑是我们的首要任务。"
+
+#: lang/json/recipe_from_json.py
+msgid "Building a proper roof for the shop is the next step."
+msgstr "为铁匠铺搭建一个合适的屋顶将是下一步任务。"
+
+#: lang/json/recipe_from_json.py
+msgid "Building a working table and placing an anvil are next."
+msgstr "其次是建造工作台并放置铁砧。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"If we're going to do more than simple metal casting we need a bigger shop."
+msgstr "如果我们要做的不仅仅是简单的金属铸造的话，那么我们需要一个更大的铁匠铺。"
+
+#: lang/json/recipe_from_json.py
+msgid "We need some basic tools to make more advanced crafts."
+msgstr "我们需要一些基础工具来制造更高级的金属制品。"
+
+#: lang/json/recipe_from_json.py
+msgid "An expanded forge will allow us to work on bigger projects."
+msgstr "一间更大的锻造间将允许我们进行更大的项目。"
+
+#: lang/json/recipe_from_json.py
+msgid "Proper steel work requires a bellows and quenching setup."
+msgstr "像样点的钢铁制品需要我们安装风箱和淬火设备。"
+
+#: lang/json/recipe_from_json.py
+msgid "A separate workshop will allow us to do the most basic of machining."
+msgstr "一个单独的加工车间将允许我们进行最基本的机械加工。"
+
+#: lang/json/recipe_from_json.py
+msgid "Next we need to add some basic tools and vices to the workshop."
+msgstr "接下来，我们需要向车间添加一些基本的工具和台钳。"
+
+#: lang/json/recipe_from_json.py
+msgid "Advanced forging processes require more room to work."
+msgstr "更复杂的锻造工艺需要更多的工作空间。"
+
+#: lang/json/recipe_from_json.py
+msgid "An on-site well will allow us to fill boilers as needed."
+msgstr "一口井将可以让我们根据需要随时为锅炉添水。"
+
+#: lang/json/recipe_from_json.py
+msgid ""
+"A steam-powered drop hammer will greatly increase production speed in "
+"exchange for charcoal."
+msgstr "一台蒸汽动力式落锤机将消耗木炭来大大提高生产速度。"
 
 #: lang/json/recipe_group_from_json.py
 msgid "Farm"
@@ -84510,7 +84912,7 @@ msgid ""
 "riot drug) most of New England's scientific labs were bombed simultaneously "
 "yesterday.  No word yet from the military about who the aggressors are."
 msgstr ""
-"实验室也不安全了：新英格兰地区大量实验室在昨天被入侵者接连炸毁，这么大规模数量的爆炸显然背后有着不寻常的味道。截至发稿前尚无入侵者准确身份的消息。但我们的记者调查到一次不寻常的派对：参加派对的基地与ISIS组织负责人为了争论谁更有资格为爆炸案负责而大打出手。"
+"实验室也不安全了：新英格兰地区大量实验室在昨天被入侵者接连炸毁，这么大规模数量的爆炸显然背后有着不寻常的味道。截至发稿前尚无入侵者准确身份的消息。"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -94300,6 +94702,10 @@ msgid "tree trunk"
 msgstr "树干"
 
 #: lang/json/terrain_from_json.py
+msgid "tree stump"
+msgstr "树桩"
+
+#: lang/json/terrain_from_json.py
 msgid "root wall"
 msgstr "树根墙"
 
@@ -95676,10 +96082,10 @@ msgstr "现在一片黑暗！幸运的是，你有一个手电筒。按\"a\"键�
 #: lang/json/tutorial_messages_from_json.py
 msgid ""
 "~ is a terrain symbol that indicates water.  From a water source like this, "
-"you can fill any containers you might have.  Step onto the water, then press"
-" the pickup key (',' or 'g'), then select a watertight container to put the "
-"water into."
-msgstr "\"~\"是一个表示水的地形符号。通过这样的水源，你能装满任何容器。站在水中，然后按拾取键（\",\"或\"g\"），之后选择一个水密容器把水灌进去。"
+"you can fill any containers you might have. Examine the water ('e') and "
+"press 'c' to fill a container, then select a watertight container to put the"
+" water into."
+msgstr "\"~\"是一个表示水的地形符号。通过这样的水源，你能装满任何容器。按\"e\"查看水源所在地并按\"c\"选择灌入容器，之后选择需要灌水的水密容器。"
 
 #: lang/json/vehicle_from_json.py
 msgid "Bicycle"
@@ -99193,18 +99599,23 @@ msgid "You dissect the corpse with a trusty scalpel."
 msgstr "你使用一把可靠的手术刀解剖了这具尸体。"
 
 #: src/activity_handlers.cpp
-msgid "You need a butchering rack to perform a full butchery."
-msgstr "你需要一个屠宰架才能进行完全屠宰。"
+msgid ""
+"For a corpse this big you need a butchering rack to perform a full butchery."
+msgstr "对于这么大的尸体，你需要一个屠宰架才能进行完全屠宰。"
 
 #: src/activity_handlers.cpp
 msgid ""
-"You need a table nearby or something else with a flat surface to perform a "
-"full butchery."
-msgstr "你需要一张桌子或者一个平台才能进行完全屠宰。"
+"For a corpse this big you need a table nearby or something else with a flat "
+"surface to perform a full butchery."
+msgstr "对于这么大的尸体，你需要一张桌子或者一个平台才能进行完全屠宰。"
 
 #: src/activity_handlers.cpp
-msgid "You need tools that can cut and saw to perform a full butchery."
-msgstr "你需要能够切割和锯开尸体的工具才能进行完全屠宰。"
+msgid "You need a cutting tool to perform a full butchery."
+msgstr "你需要一个切割工具才能进行完全屠宰。"
+
+#: src/activity_handlers.cpp
+msgid "For a corpse this big you need a saw to perform a full butchery."
+msgstr "对于这么大的尸体，你需要一把锯子才能进行完全屠宰。"
 
 #: src/activity_handlers.cpp
 msgid ""
@@ -99764,8 +100175,8 @@ msgid "You finish chopping down a tree."
 msgstr "你砍倒了一棵树。"
 
 #: src/activity_handlers.cpp
-msgid "You finish chopping the logs."
-msgstr "你完成了劈原木。"
+msgid "You finish chopping wood."
+msgstr "你完成了劈木头。"
 
 #. ~ Sound of a jackhammer at work!
 #: src/activity_handlers.cpp
@@ -102067,16 +102478,6 @@ msgid "%s body is damaged!"
 msgstr "%s 的身体被损伤了！"
 
 #: src/bionics.cpp
-#, c-format
-msgid "All of %s existing bionics are lost!"
-msgstr "%s 丢失了所有的已安装的生化插件！"
-
-#: src/bionics.cpp
-#, c-format
-msgid "Some of %s existing bionics are lost!"
-msgstr "%s 丢失了一部分已安装的生化插件！"
-
-#: src/bionics.cpp
 msgid "The installation is faulty!"
 msgstr "你安装的生化插件故障了！"
 
@@ -104154,7 +104555,7 @@ msgstr "你觉得食人实在是恐怖极了！"
 
 #: src/consumption.cpp
 msgid ""
-"You try to ignore it's mushy texture, but it leaves you with an awful "
+"You try to ignore its mushy texture, but it leaves you with an awful "
 "aftertaste."
 msgstr "你尝试着忽略掉那种糊状质感，但它还是给你留下了可怕的回味。"
 
@@ -105990,7 +106391,7 @@ msgstr "将oter_id从'%s'（%s）改为 '%s'（%s）"
 #: src/editmap.cpp
 #, c-format
 msgid "Select a tile up to %d tiles away."
-msgstr "选择一块至少 %d 块远的区块。"
+msgstr "选择一块 %d 块内的区块。"
 
 #: src/editmap.cpp
 #, c-format
@@ -105999,7 +106400,7 @@ msgstr "你必须选择一块距离营地 %d 块内的区块"
 
 #: src/editmap.cpp
 msgid "You must construct expansions in fields."
-msgstr "你只能在旷野上扩建营地。"
+msgstr "你只能在旷野上建设扩展区。"
 
 #: src/editmap.cpp src/mission_companion.cpp
 msgid ""
@@ -110335,11 +110736,11 @@ msgstr "完全屠宰"
 #: src/game.cpp
 msgid ""
 "This technique is used to properly butcher a corpse, and requires a "
-"butchering rack, a flat surface (for ex. a table) and good tools, including "
-"those that can saw and cut.  Yields are far better and varied, but it is "
-"time consuming."
+"butchering rack, a flat surface (for ex. a table, a leather tarp, etc.) and "
+"good tools, including those that can saw and cut.  Yields are far better and"
+" varied, but it is time consuming."
 msgstr ""
-"这种屠宰技术适合用于正确地屠宰一具尸体，并且需要附近有屠宰架或者一个平坦表面（例如桌子），以及良好的工具，包括可以切割和锯开尸体的工具。产量要好得多，而且产出种类也更多了，但是很费时间。"
+"这种屠宰技术适合用于正确地屠宰一具尸体，并且需要附近有屠宰架或者一个平坦表面（例如桌子或防水皮革），以及良好的工具，包括可以切割和锯开尸体的工具。产量要好得多，而且产出种类也更多了，但是很费时间。"
 
 #: src/game.cpp
 msgid "Field dress corpse"
@@ -112011,7 +112412,7 @@ msgstr "载具菜单列出了当前车辆的主要参数，如安全速度和最
 msgid ""
 "Becoming a skilled mechanic, you may want to tune your car up.  The "
 "coefficients of aerodynamics, friction and mass efficiency play significant "
-"roles it this process.  Named coefficients are measured in the range from "
+"roles in this process.  Named coefficients are measured in the range from "
 "0%% (which means terrible inefficiency) to 100%% (ideal conditions)."
 msgstr ""
 "在成为一个熟练的机械师之后，你就能通过调整车辆来获得更高性能了。气动系数、 "
@@ -114506,7 +114907,7 @@ msgid "There's a smoking rack here."
 msgstr "这里有一个烟熏架。"
 
 #: src/iexamine.cpp
-msgid "You inspect it's contents and find: "
+msgid "You inspect its contents and find: "
 msgstr "你查看内部发现了："
 
 #: src/iexamine.cpp
@@ -115092,12 +115493,16 @@ msgid ""
 msgstr "※这份食物看上去已经 <bad>陈旧</bad> 了。很快就会腐烂且不能食用了。"
 
 #: src/item.cpp
-msgid "* Quality of this food suffers when it's <neutral>frozen.</neutral>."
-msgstr "※这份食物的口感会因 <neutral>冷冻</neutral> 而损失。"
+msgid ""
+"* Quality of this food suffers when it's frozen, and it <neutral>will become"
+" mushy after thawing out.</neutral>."
+msgstr "※这份食物的品质会在冰冻时受到损害，解冻后口感会变得 <neutral>粘糊而无味</neutral>。"
 
 #: src/item.cpp
-msgid "* It was frozen once and bacame <bad>mushy and tasteless</bad>."
-msgstr "※这份食物被冷冻过一次，口感变得 <bad>粘糊而无味</bad>。"
+msgid ""
+"* It was frozen once and after thawing became <bad>mushy and "
+"tasteless</bad>."
+msgstr "※这份食物被冷冻过一次，解冻后口感变得 <bad>粘糊而无味</bad>。"
 
 #: src/item.cpp
 msgid "* It seems that deep freezing <good>killed all parasites</good>."
@@ -116788,28 +117193,49 @@ msgid ""
 msgstr "你舒爽得直翻白眼。一切溶解成极乐的阴霾……"
 
 #: src/iuse.cpp
-msgid "We welcome into us.  We have endured long in this forbidding world."
-msgstr "欢迎加入吾等。吾等已在这险恶世界中忍受太久了。"
+msgid "We welcome into us. We have endured long in this forbidding world."
+msgstr "欢迎加入吾等。吾等已在此险恶世界中忍受太久了。"
 
 #: src/iuse.cpp
-msgid "The natives have a saying: \"E Pluribus Unum\"  Out of many, one."
+msgid ""
+"A sea of white caps, waving gently. A haze of spores wafting silently over a"
+" forest."
+msgstr "一片白色菌菇盖组成的海洋，如波浪一般缓缓起伏。一阵孢子组成的白雾，静悄悄地在森林中飘荡。"
+
+#: src/iuse.cpp
+msgid "The natives have a saying: \"E Pluribus Unum.\"  Out of many, one."
 msgstr "土著们有句谚语：\"E Pluribus Unum\"——合众为一。"
 
 #: src/iuse.cpp
 msgid ""
-"We welcome the union of our lines in our local guide.  We will prosper, and "
-"unite this world."
-msgstr "吾等欢迎本地居民加入吾等事业阵线，充当向导。吾等必将繁荣，进而团结这个世界。"
+"The blazing pink redness of the berry. The juices spreading across your "
+"tongue, the warmth draping over us like a lover's embrace."
+msgstr "粉红色的变异莓炽热发红。那汁液洒在你的舌尖上，一阵温暖像爱人的拥抱一般紧紧抱在吾等之身上。"
 
 #: src/iuse.cpp
-msgid "Even now, our fruits adapt to better serve local physiology."
-msgstr "直到现在，吾等之果实仍旧在致力于更好地适应本地生态。"
+msgid ""
+"We welcome the union of our lines in our local guide.  We will prosper, and "
+"unite this world. Even now, our fruits adapt to better serve local "
+"physiology."
+msgstr "吾等欢迎土著加入吾等事业阵线，充当向导。吾等必将繁荣，进而团结这个世界。直到现在，吾等之果实仍旧在致力于更好地适应本地生态。"
+
+#: src/iuse.cpp
+msgid ""
+"The sky-blue of the seed. The nutty, creamy flavors intermingling with the "
+"berry, a memory that will never leave us."
+msgstr "如天一般蓝的种子。如同坚果混合奶油的味道与变异莓交织在一起，一段永远不会被吾等遗忘的记忆。"
 
 #: src/iuse.cpp
 msgid ""
 "As, in time, shall we adapt to better welcome those who have not received "
 "us."
 msgstr "因此，假以时日，吾等终将更加适应此地环境，得以更好迎接那些尚未接受吾等存在之辈。"
+
+#: src/iuse.cpp
+msgid ""
+"The amber-yellow of the sap. Feel it flowing through our veins, taking the "
+"place of the strange, thin red gruel called \"blood.\""
+msgstr "如琥珀一般黄的汁液。感觉它流过吾等之血管，取代了被称为\"血液\"的奇怪而又淡薄的红色稀粥。"
 
 #: src/iuse.cpp
 msgid "This apple tastes really weird!  You're not sure it's good for you..."
@@ -122643,7 +123069,7 @@ msgstr "前哨任务"
 
 #: src/mission_companion.cpp
 msgid "Base Missions"
-msgstr "基地任务"
+msgstr "营地任务"
 
 #: src/mission_companion.cpp
 msgid "Junk Shop Missions"
@@ -122692,6 +123118,10 @@ msgstr ""
 "耗时：10小时\n"
 " \n"
 "名单：\n"
+
+#: src/mission_companion.cpp
+msgid " hours] \n"
+msgstr " 小时]\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -123167,6 +123597,10 @@ msgid "Combat Patrol"
 msgstr "武装巡逻"
 
 #: src/mission_companion.cpp
+msgid " Expansion Upgrade"
+msgstr "升级扩展区"
+
+#: src/mission_companion.cpp
 msgid ""
 "Notes:\n"
 "Have a companion attempt to completely dissemble a vehicle into components.\n"
@@ -123225,7 +123659,7 @@ msgstr ""
 "技能：制造\n"
 "需求等级：无\n"
 "效果：\n"
-"> 仅恢复上次扩建区升级之后创建的农田。\n"
+"> 仅恢复上次扩展区升级之后创建的农田。\n"
 "> 不会损害已有的作物。\n"
 " \n"
 "风险：无\n"
@@ -123268,7 +123702,7 @@ msgstr ""
 "效果：\n"
 "> 选择播种的种子种类或者全部播种。\n"
 "> 当无可用种子或无空余田地时自动停止。\n"
-"> 将在所选扩建区内的所有土堆上播种。\n"
+"> 将在所选扩展区内的所有土堆上播种。\n"
 " \n"
 "风险：无\n"
 "耗时：1分钟/地块\n"
@@ -123285,7 +123719,7 @@ msgid ""
 " \n"
 msgstr ""
 "说明：\n"
-"收获所有已成熟的作物并将收获物带回来。\n"
+"收获所有已成熟的作物并将其带回营地。\n"
 " \n"
 
 #: src/mission_companion.cpp
@@ -123306,7 +123740,7 @@ msgstr ""
 "技能：生存\n"
 "需求等级：无\n"
 "效果：\n"
-"> 将会把所有收获物丢在你的当前位置上。\n"
+"> 将会把所有收获的作物丢在你的当前位置上。\n"
 " \n"
 "风险：无\n"
 "耗时：3分钟/地块\n"
@@ -123318,7 +123752,19 @@ msgstr "收割作物"
 
 #: src/mission_companion.cpp
 msgid "Working to expand your camp!\n"
-msgstr "正在扩建你的基地！\n"
+msgstr "正在升级营地！\n"
+
+#: src/mission_companion.cpp
+msgid " hours left] \n"
+msgstr " 小时后完成]\n"
+
+#: src/mission_companion.cpp
+msgid " minutes left] \n"
+msgstr " 分钟后完成]\n"
+
+#: src/mission_companion.cpp
+msgid " [DONE]\n"
+msgstr "[已完成]\n"
 
 #: src/mission_companion.cpp
 msgid "Recover Ally from Upgrading"
@@ -123326,7 +123772,7 @@ msgstr "召回同伴（升级营地）"
 
 #: src/mission_companion.cpp
 msgid "Working to upgrade your expansions!\n"
-msgstr "正在升级你的基地扩建区！\n"
+msgstr "正在升级营地扩展区！\n"
 
 #: src/mission_companion.cpp
 msgid " Expansion"
@@ -123341,28 +123787,76 @@ msgid "Working at the chop shop...\n"
 msgstr "正在车库中工作……\n"
 
 #: src/mission_companion.cpp
+msgid "/120 hours] \n"
+msgstr "/ 120 小时]\n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Chop Shop"
+msgstr "（完成）拆卸车辆"
+
+#: src/mission_companion.cpp
 msgid "Working in your kitchen!\n"
 msgstr "正在厨房中工作！\n"
+
+#: src/mission_companion.cpp
+msgid " [ALMOST DONE]\n"
+msgstr "[即将完成]\n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Cooking"
+msgstr "（完成）烹饪"
 
 #: src/mission_companion.cpp
 msgid "Working in your blacksmith shop!\n"
 msgstr "正在铁匠铺中工作！\n"
 
 #: src/mission_companion.cpp
+msgid " (Finish) Smithing"
+msgstr "（完成）锻造"
+
+#: src/mission_companion.cpp
 msgid "Working to plow your fields!\n"
 msgstr "正在耕地！\n"
+
+#: src/mission_companion.cpp
+msgid "/~48 hours] \n"
+msgstr "/ 约 48 小时]\n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Plow Fields"
+msgstr "（完成）犁地"
 
 #: src/mission_companion.cpp
 msgid "Working to plant your fields!\n"
 msgstr "正在播种！\n"
 
 #: src/mission_companion.cpp
+msgid "/4 hours] \n"
+msgstr "/ 4 小时]\n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Plant Fields"
+msgstr "（完成）播种"
+
+#: src/mission_companion.cpp
 msgid "Working to harvest your fields!\n"
 msgstr "正在收获！\n"
 
 #: src/mission_companion.cpp
+msgid "/~10 hours] \n"
+msgstr "/ 约 10 小时]\n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Harvest Fields"
+msgstr "（完成）收割作物"
+
+#: src/mission_companion.cpp
 msgid "Working on your farm!\n"
 msgstr "正在农场中工作！\n"
+
+#: src/mission_companion.cpp
+msgid " (Finish) Crafting"
+msgstr "（完成）制造"
 
 #: src/mission_companion.cpp
 msgid "Busy crafting!\n"
@@ -123370,7 +123864,11 @@ msgstr "正在制造物品！\n"
 
 #: src/mission_companion.cpp
 msgid "Searching for materials to upgrade the camp.\n"
-msgstr "正在收集升级基地的材料。\n"
+msgstr "正在收集升级营地的材料。\n"
+
+#: src/mission_companion.cpp
+msgid "/3 hours] \n"
+msgstr "/ 3 小时]\n"
 
 #: src/mission_companion.cpp
 msgid "Recover Ally from Gathering"
@@ -123685,6 +124183,10 @@ msgid " [COMPLETE] \n"
 msgstr " [完成] \n"
 
 #: src/mission_companion.cpp
+msgid " Hours] \n"
+msgstr " 小时]\n"
+
+#: src/mission_companion.cpp
 msgid ""
 "\n"
 " \n"
@@ -123728,15 +124230,15 @@ msgstr "你需要为你的同伴提供更多的食物补给。"
 
 #: src/mission_companion.cpp
 msgid "begins to upgrade the camp..."
-msgstr "开始升级基地……"
+msgstr "开始升级营地……"
 
 #: src/mission_companion.cpp
 msgid "You already have a companion upgrading the camp."
-msgstr "你已经有一位同伴在升级基地了。"
+msgstr "你已经有一位同伴在升级营地了。"
 
 #: src/mission_companion.cpp
 msgid "You don't have the materials for the upgrade."
-msgstr "你需要更多的物资才能够升级基地。"
+msgstr "你需要更多的物资才能够升级营地。"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -123777,7 +124279,7 @@ msgstr "离队去寻找柴火了……"
 
 #: src/mission_companion.cpp
 msgid "departs to dig ditches and scrub toilets..."
-msgstr "离队去干杂活挖水沟通厕所了……"
+msgstr "离队去干杂活了……"
 
 #: src/mission_companion.cpp
 msgid "departs to survey land..."
@@ -123990,7 +124492,7 @@ msgstr "篷车队回来了。你的利润份额是 $%d！"
 
 #: src/mission_companion.cpp
 msgid "The caravan was a disaster and your companions never made it home..."
-msgstr "篷车遭了殃，你的伙伴没法带它回来了……"
+msgstr "商队遇难了，你的同伴再也回不来了……"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -124147,7 +124649,7 @@ msgstr "%s 当完劳工回来，赚了 $%d 元和一些经验……"
 msgid ""
 "%s feels more confident in your companions and is willing to let them "
 "participate in advanced tasks."
-msgstr "%s 对你的伙伴更有信心了，并且愿意让他参与更进一步的任务"
+msgstr "%s 对你的同伴更有信心了，并且愿意让他参与更进一步的任务"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -124193,7 +124695,7 @@ msgid ""
 "Gathering Possibilities:\n"
 msgstr ""
 "说明：\n"
-"选择一名同伴去为基地的下次升级收集物资。\n"
+"选择一名同伴去为营地的下次升级收集物资。\n"
 " \n"
 "技能：生存\n"
 "需求等级：无\n"
@@ -124215,7 +124717,7 @@ msgstr ""
 #, c-format
 msgid ""
 "%s returns from upgrading the camp having earned a bit of experience..."
-msgstr "%s 升级基地归来，并获得了一些经验……"
+msgstr "%s 升级营地归来，并获得了一些经验……"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -124338,7 +124840,7 @@ msgstr "%s 从田里归来……"
 #: src/mission_companion.cpp
 #, c-format
 msgid "%s returns from doing the dirty work to keep the camp running..."
-msgstr "%s 干完维持基地正常运作的各项脏活杂活归来……"
+msgstr "%s 干完维持营地正常运作的各项脏活杂活归来……"
 
 #: src/mission_companion.cpp
 msgid "Sorting points have changed, forcing reset."
@@ -124501,7 +125003,7 @@ msgstr "我们……我们不知道发生了什么，但是我们看到 %s 的�
 
 #: src/mission_companion.cpp
 msgid "I fear your companion won't be returning."
-msgstr "我担心你的伙伴不会回来了。"
+msgstr "恐怕你的同伴再也回不来了。"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -124540,12 +125042,12 @@ msgstr "%d个%s %s的成员和%d个%s %s%s的成员发生交战！"
 
 #: src/mission_companion.cpp
 msgid "You don't have any companions to send out..."
-msgstr "你没有任何伙伴被派遣……"
+msgstr "你没有任何可供派遣的同伴……"
 
 #: src/mission_companion.cpp
 msgid ""
 "Who do you want to send?                    [ COMBAT : SURVIVAL : INDUSTRY ]"
-msgstr "你要派谁执行任务？                    [ 战斗：生存：工业]"
+msgstr "你要派谁执行任务？                    [ 战斗：生存：工业 ]"
 
 #: src/mission_companion.cpp
 msgid "You choose to send no one..."
@@ -124557,11 +125059,11 @@ msgstr "你所选择的同伴并没有所需要的技能！"
 
 #: src/mission_companion.cpp
 msgid "You don't have any companions ready to return..."
-msgstr "你没有任何伙伴准备返回……"
+msgstr "你没有任何可以召回的同伴……"
 
 #: src/mission_companion.cpp
 msgid "Who should return?"
-msgstr "谁应该返回？"
+msgstr "召回哪个同伴？"
 
 #: src/mission_companion.cpp
 msgid "No one returns to your party..."
@@ -124569,7 +125071,7 @@ msgstr "没人返回你的团队……"
 
 #: src/mission_companion.cpp
 msgid "MAIN"
-msgstr "主基地"
+msgstr "主营地"
 
 #: src/mission_companion.cpp
 msgid "  [N] "
@@ -124626,13 +125128,13 @@ msgstr "空扩展区"
 #: src/mission_companion.cpp
 #, c-format
 msgid "Select a location between  %d and  %d tiles away."
-msgstr "选择一块  %d 至  %d 块远的区块。"
+msgstr "选择一块 %d 至 %d 块远的区块。"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ""
 "You must select a target between %d and %d range from the base.  Range: %d"
-msgstr "你必须选择一块距离基地 %d 至 %d 块远的位置。当前距离：%d"
+msgstr "你必须选择一块距离当前营地 %d 至 %d 块远的位置。当前距离：%d"
 
 #: src/mission_companion.cpp
 msgid "You must be able to see the target that you select."
@@ -124645,27 +125147,27 @@ msgstr "选择该藏匿处来增加探索距离吗？"
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Distance:%15.2f (km)\n"
-msgstr "> 距离：%15.2f（公里）\n"
+msgstr "> 距离：    %15.2f（公里）\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">One Way: %15d (trips)\n"
-msgstr "> 单程：%15d（次）\n"
+msgstr "> 单程：      %15d（次）\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Covered: %15.2f (km)\n"
-msgstr "> 总行程：%15.2f（公里）\n"
+msgstr "> 总行程：  %15.2f（公里）\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Distance:%15d (m)\n"
-msgstr "> 距离：%15d（米）\n"
+msgstr "> 距离：      %15d（米）\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid ">Covered: %15d (m)\n"
-msgstr "> 总行程：%15d（米）\n"
+msgstr "> 总行程：    %15d（米）\n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -124680,17 +125182,17 @@ msgstr "> 工作耗时：%15d（小时）\n"
 #: src/mission_companion.cpp
 #, c-format
 msgid "Total:    %15d (days)\n"
-msgstr "共计：%15d（天）\n"
+msgstr "共计：        %15d（天）\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Total:    %15d (hours)\n"
-msgstr "共计：%15d（小时）\n"
+msgstr "共计：      %15d（小时）\n"
 
 #: src/mission_companion.cpp
 #, c-format
 msgid "Total:    %15d (minutes)\n"
-msgstr "共计：%15d（分钟）\n"
+msgstr "共计：      %15d（分钟）\n"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -124698,8 +125200,52 @@ msgid ""
 "Food:     %15d (kcal)\n"
 " \n"
 msgstr ""
-"支付食物：%15d（千卡）\n"
+"支付食物：  %15d（千卡）\n"
 "\n"
+
+#: src/mission_companion.cpp
+msgid "food for you"
+msgstr "食物"
+
+#: src/mission_companion.cpp
+msgid "food for companions"
+msgstr "待分发食物"
+
+#: src/mission_companion.cpp
+msgid "weapons"
+msgstr "武器"
+
+#: src/mission_companion.cpp
+msgid "clothing"
+msgstr "装备"
+
+#: src/mission_companion.cpp
+msgid "bionics"
+msgstr "生化插件"
+
+#: src/mission_companion.cpp
+msgid "all kinds of tools"
+msgstr "各类工具"
+
+#: src/mission_companion.cpp
+msgid "wood of various sorts"
+msgstr "木材"
+
+#: src/mission_companion.cpp
+msgid "trash and rotting food"
+msgstr "垃圾和腐烂食物"
+
+#: src/mission_companion.cpp
+msgid "books"
+msgstr "书籍"
+
+#: src/mission_companion.cpp
+msgid "medication"
+msgstr "药物"
+
+#: src/mission_companion.cpp
+msgid "ammo"
+msgstr "弹药"
 
 #: src/mission_companion.cpp
 #, c-format
@@ -124711,7 +125257,7 @@ msgid ""
 "                    Items       New Point       Old Point\n"
 " \n"
 msgstr ""
-"               物品种类         旧位置         新位置\n"
+"               物品类别         新位置         旧位置\n"
 " \n"
 
 #: src/mission_companion.cpp
@@ -124759,7 +125305,7 @@ msgid ""
 msgstr ""
 "派系营地教程：\n"
 " \n"
-"<color_light_green>选址：</color>当你建立第一个基地时，需要在大地图上选择自身及周边8格均为旷野，且临近森林的区块。森林是你前期建筑材料的主要来源，而旷野可以用于耕种。不过你也可以不用太过挑剔，因为建设的营地数量没有限制，但每建立一个营地都需要一名NPC作为营地主管，以及至少另一名NPC完成各项任务。\n"
+"<color_light_green>选址：</color>当你建立第一个营地时，需要在大地图上选择自身及周边8格均为旷野，且临近森林的区块。森林是你前期建筑材料的主要来源，而旷野可以用于耕种。不过你也可以不用太过挑剔，因为建设的营地数量没有限制，但每建立一个营地都需要一名NPC作为营地主管，以及至少另一名NPC完成各项任务。\n"
 " \n"
 
 #: src/mission_companion.cpp
@@ -124770,7 +125316,7 @@ msgid ""
 msgstr ""
 "派系营地教程：\n"
 " \n"
-"<color_light_green>升级：</color>选址完成后，你需要收集或制作用于升级营地的各种物资。而营地升级后，你将可以解锁更多新任务。一开始解锁的任务主要是NPC收集任务，可以减少你独自搜索物资的压力。在几轮升级之后，你将可以解锁 <color_yellow>[干杂活]</color> 的任务，该任务可以让你指派你的同伴将基地四处的物品按照不同种类存放在各类物品储存点。后期的升级可以让你指派你的同伴们去招募新成员，建设横跨大地图的防御工事、甚至进行武装巡逻与战斗。\n"
+"<color_light_green>升级：</color>选址完成后，你需要收集或制作用于升级营地的各种物资。而营地升级后，你将可以解锁更多新任务。一开始解锁的任务主要是NPC收集任务，可以减少你独自搜索物资的压力。在几轮升级之后，你将可以解锁 <color_yellow>[干杂活]</color> 的任务，该任务可以让你指派你的同伴将营地四处的物品按照不同种类存放在各类物品储存点。后期的升级可以让你指派你的同伴们去招募新成员，建设横跨大地图的防御工事、甚至进行武装巡逻与战斗。\n"
 
 #: src/mission_companion.cpp
 msgid ""
@@ -124781,7 +125327,7 @@ msgid ""
 msgstr ""
 "派系营地教程：\n"
 " \n"
-"<color_light_green>扩展区：</color>当你升级主基地的同时，你也会解锁各种扩展区的建设任务。扩展区能够让你建立的营地专精于你所需要的不同工业设施。<color_light_green>[农场]</color> 是你建立并维持一个庞大派系不可或缺的基础。<color_light_green>[厨房]</color> 可以把你从繁重的烹饪工作中解放出来，让你的同伴替你进行烹饪。<color_light_green>[车库]</color> 可以进行拆解载具的任务，将废弃载具回收成大量的部件和资源。<color_light_green>[铁匠铺]</color> 可以将资源制作成为有价值的装备。在第一个扩展区解锁后，主营地每隔一级就可以新增加一个额外的扩展区，当一个营地扩展区建满之后，你可以新建一个营地以建设更多扩展区。\n"
+"<color_light_green>扩展区：</color>当你升级主营地的同时，你也会解锁各种扩展区的建设任务。扩展区能够让你建立的营地专精于你所需要的不同工业设施。<color_light_green>[农场]</color> 是你建立并维持一个庞大派系不可或缺的基础。<color_light_green>[厨房]</color> 可以把你从繁重的烹饪工作中解放出来，让你的同伴替你进行烹饪。<color_light_green>[车库]</color> 可以进行拆解载具的任务，将废弃载具回收成大量的部件和资源。<color_light_green>[铁匠铺]</color> 可以将资源制作成为有价值的装备。在第一个扩展区解锁后，主营地每隔一级就可以新增加一个额外的扩展区，当一个营地扩展区建满之后，你可以新建一个营地以建设更多扩展区。\n"
 " \n"
 
 #: src/mission_companion.cpp
@@ -124834,7 +125380,7 @@ msgstr ""
 "技能：口才\n"
 "需求等级：2\n"
 "\n"
-"基地等级：  +%3d%%\n"
+"营地等级：  +%3d%%\n"
 "扩展区加成：+%3d%%\n"
 "派系加成：  +%3d%%\n"
 "特殊加成：  +%3d%%\n"
@@ -130051,11 +130597,11 @@ msgstr "提供绷带。"
 
 #: src/npctalk.cpp
 msgid "[$200, 30m] I need you to patch me up..."
-msgstr "[$200，30分钟]我需要你搭把手……"
+msgstr "[$200，30分钟]我需要你帮我治疗一下……"
 
 #: src/npctalk.cpp
 msgid "[$500, 1h] Could you look at me and my companions?"
-msgstr "[$500，1小时]你能照应一下我跟我的同伴吗？"
+msgstr "[$500，1小时]你能帮我跟我的同伴看看吗？"
 
 #: src/npctalk.cpp
 msgid "I should be fine..."
@@ -130353,11 +130899,11 @@ msgstr "[取消]嗯，保重吧，回头见。"
 
 #: src/npctalk.cpp
 msgid "What needs to be done?"
-msgstr "有什么任务需要完成的？"
+msgstr "[营地]营地还需要些什么吗？"
 
 #: src/npctalk.cpp
 msgid "We're abandoning this camp."
-msgstr "我们要废弃这个营地了。"
+msgstr "[营地]我们要废弃这个营地了。"
 
 #: src/npctalk.cpp
 msgid "Combat commands..."
@@ -130630,7 +131176,7 @@ msgstr "对于 %s 的拾取规则。"
 
 #: src/npctalk.cpp
 msgid "OBEY ME!"
-msgstr "服从我！"
+msgstr "[调试]服从我！"
 
 #: src/npctalk.cpp
 msgid "Reward"
@@ -130702,6 +131248,15 @@ msgid ""
 "There are few fields.  Producing enough food to supply your camp may be "
 "difficult.\n"
 msgstr "附近旷野地形过少。生产出足够营地消耗的食物将会很困难。\n"
+
+#: src/npctalk.cpp
+#, c-format
+msgid ""
+"%s \n"
+"Are you sure you wish to continue? "
+msgstr ""
+"%s \n"
+"确定要继续吗？"
 
 #: src/npctalk.cpp
 msgid "You weren't able to survey the camp site."
@@ -131009,7 +131564,7 @@ msgid ""
 "If true, will enable to pickup items one tile around to the player.  You can"
 " assign No Auto Pickup zones with the Zones Manager 'Y' key for e.g.  your "
 "homebase."
-msgstr "开启后，玩家周围一格的东西将会被自动拾取。你可以用\"Y\"键的区域管理菜单设置不拾取区域，例如你的宅基地。"
+msgstr "开启后，玩家周围一格的东西将会被自动拾取。你可以用\"Y\"键的区域管理菜单设置不拾取区域，例如你的基地和家中。"
 
 #: src/options.cpp
 msgid "Auto pickup weight limit"
