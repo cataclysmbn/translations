@@ -27,7 +27,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-dda 0.C\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-28 17:24+0800\n"
+"POT-Creation-Date: 2018-10-05 16:50+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Jianxiang Wang <qrox@sina.com>, 2018\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/cataclysm-dda-translators/teams/2217/zh_CN/)\n"
@@ -1799,7 +1799,7 @@ msgstr "快捷键高度"
 msgid "The height of each on-screen keyboard shortcut in pixels."
 msgstr "调整快捷键的高度，以像素为单位。"
 
-#: lang/extra/android/options.cpp src/options.cpp
+#: lang/extra/android/options.cpp src/game.cpp src/options.cpp
 #, c-format
 msgid "Loading the tileset failed: %s"
 msgstr "载入贴图包失败：%s"
@@ -7591,6 +7591,18 @@ msgid "A fur coat with a couple small pockets.  Extremely warm."
 msgstr "一件相当保暖毛皮大衣，厚实的材料也能提供一些防御能力。"
 
 #: lang/json/ARMOR_from_json.py
+msgid "faux fur coat"
+msgid_plural "faux fur coats"
+msgstr[0] "人造毛皮大衣"
+
+#. ~ Description for faux fur coat
+#: lang/json/ARMOR_from_json.py
+msgid ""
+"A garishly colored faux fur coat with a couple small pockets.  Although not "
+"as warm as the natural fur, it gives you some of that unique flair."
+msgstr "一件华丽的人造毛皮大衣，有两个小口袋。虽然不像天然毛皮那么温暖，但它给你带来一些独特的风情。"
+
+#: lang/json/ARMOR_from_json.py
 msgid "sable coat"
 msgid_plural "sable coats"
 msgstr[0] "貂皮大衣"
@@ -8215,6 +8227,18 @@ msgid ""
 msgstr "一对毛茸茸的褐色猫耳头带，非常可爱，引\"人\"注目。"
 
 #: lang/json/ARMOR_from_json.py
+msgid "pair of faux fur cat ears"
+msgid_plural "pairs of faux fur cat ears"
+msgstr[0] "人造毛皮猫耳"
+
+#. ~ Description for pair of faux fur cat ears
+#: lang/json/ARMOR_from_json.py
+msgid ""
+"A fuzzy pair of garishly colored cat ears on a headband.  It does nothing, "
+"but there's no reason not to look good even if no one's looking."
+msgstr "一对毛绒绒的亮色猫耳头带，非常可爱，引\"人\"注目。"
+
+#: lang/json/ARMOR_from_json.py
 msgid "fuzzy cat tail"
 msgid_plural "fuzzy cat tails"
 msgstr[0] "毛绒尾巴"
@@ -8229,6 +8253,18 @@ msgstr ""
 "\"一件不是用来穿，而是用‘塞’的饰品。\""
 
 #: lang/json/ARMOR_from_json.py
+msgid "faux fur cat tail"
+msgid_plural "faux fur cat tails"
+msgstr[0] "人造毛皮尾巴"
+
+#. ~ Description for faux fur cat tail
+#: lang/json/ARMOR_from_json.py
+msgid ""
+"A fuzzy garishly colored tail weighted down with tiny beads of plastic.  "
+"Sways behind you when you walk."
+msgstr "一个小珠子吊着一条亮色毛绒绒的尾巴，当你走路时会随之摆动！非常可爱，引\"人\"注目。"
+
+#: lang/json/ARMOR_from_json.py
 msgid "fur kitty collar"
 msgid_plural "fur kitty collars"
 msgstr[0] "毛绒项圈"
@@ -8239,6 +8275,18 @@ msgid ""
 "A decorative 'collar' made out of fur, complete with a little bell hanging "
 "from the front.  Don't worry, it's silent."
 msgstr "一个毛皮制作的装饰用的项圈，前面还配了一个不会响的小铃铛，非常可爱，引人注目。"
+
+#: lang/json/ARMOR_from_json.py
+msgid "faux fur kitty collar"
+msgid_plural "faux fur kitty collars"
+msgstr[0] "人造毛皮项圈"
+
+#. ~ Description for faux fur kitty collar
+#: lang/json/ARMOR_from_json.py
+msgid ""
+"A decorative 'collar' made out of faux fur.  Complete with a little bell "
+"hanging from the front.  Don't worry, it's silent."
+msgstr "一个人造毛皮制作的装饰用的项圈，前面还配了一个不会响的小铃铛，非常可爱，引\"人\"注目。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "gambeson"
@@ -14008,6 +14056,20 @@ msgid ""
 msgstr "你的手掌心被嵌入了一只小型电弧EMP发射器。你能够使用生化能量发射短距离的EMP冲击，瘫痪电子装备和机器人。"
 
 #: lang/json/BIONIC_ITEM_from_json.py
+msgid "EMP Projector CBM"
+msgid_plural "EMP Projector CBMs"
+msgstr[0] "EMP发射器CBM"
+
+#. ~ Description for EMP Projector CBM
+#. ~ Description for EMP Projector
+#: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
+msgid ""
+"A ranged EMP generator system is implanted on the palm of your right hand "
+"and arm.  Fires super-concentrated electric pulses for a short distance.  "
+"Extremely effective against electronic targets but mostly useless otherwise."
+msgstr "一组远程 EMP 发生器被植入了你的右臂与右掌，能发射短距离的集束电磁脉冲。对电子目标特别有效，但其他目标大多没什么效果。"
+
+#: lang/json/BIONIC_ITEM_from_json.py
 msgid "Ethanol Burner CBM"
 msgid_plural "Ethanol Burner CBMs"
 msgstr[0] "酒精锅炉CBM"
@@ -14331,13 +14393,12 @@ msgid_plural "Enhanced Memory Banks CBMs"
 msgstr[0] "记忆增强CBM"
 
 #. ~ Description for Enhanced Memory Banks CBM
-#. ~ Description for Enhanced Memory Banks
-#: lang/json/BIONIC_ITEM_from_json.py lang/json/bionic_from_json.py
+#: lang/json/BIONIC_ITEM_from_json.py
 msgid ""
-"Your memory has been enhanced with small quantum storage drives.  Any time "
-"you start to forget a skill, if this bionic is active you will retain all "
-"knowledge, at the cost of a small amount of power."
-msgstr "你的记忆被小型量子存储器增强了。当技能开始遗忘时，只要保持该生化插件开启，你有机会消耗少量生化能量来保留所有知识。"
+"A set of highly-advanced quantum storage drives used to enhance memory.  "
+"While active, they increase the rate that you learn skills, and give you "
+"near-perfect memory of skills and terrain."
+msgstr "一组非常先进的量子存储器被植入你的体内，用于增强记忆。当被激活时，它会提高你学习技能的速度，并且你能近乎完美记住技能和地形。"
 
 #: lang/json/BIONIC_ITEM_from_json.py
 msgid "Metabolic Interchange CBM"
@@ -14731,6 +14792,19 @@ msgid ""
 msgstr "一款强劲的生化纤维，可以植入手臂的肌肉组织，使力量+2。"
 
 #: lang/json/BIONIC_ITEM_from_json.py
+msgid "Autonomous Surgical Scalpels CBM"
+msgid_plural "Autonomous Surgical Scalpels CBMs"
+msgstr[0] "全自动外科手术刀CBM"
+
+#. ~ Description for Autonomous Surgical Scalpels CBM
+#: lang/json/BIONIC_ITEM_from_json.py
+msgid ""
+"A system of surgical grade scalpels is implanted on your fingers.  They "
+"allow you to make automated precise cuts. They can also be used as a high-"
+"quality butchering tool."
+msgstr "一组外科手术刀被植入了你的手指。这让你能够进行全自动的精确切割。它也可以作为高级屠宰工具使用。"
+
+#: lang/json/BIONIC_ITEM_from_json.py
 msgid "Anti-Glare Compensators CBM"
 msgid_plural "Anti-Glare Compensators CBMs"
 msgstr[0] "防眩光补偿器CBM"
@@ -14928,9 +15002,33 @@ msgid ""
 msgstr "你的背上安装了一排可伸缩的太阳能面板。当你站在阳光下时，它们会似懂伸出并缓慢为你充能生化能量。"
 
 #: lang/json/BIONIC_ITEM_from_json.py
-msgid "EMP Projector CBM"
-msgid_plural "EMP Projector CBMs"
-msgstr[0] "EMP发射器CBM"
+msgid "Ionic Overload Generator CBM"
+msgid_plural "Ionic Overload Generator CBMs"
+msgstr[0] "离子过载发生器CBM"
+
+#. ~ Description for Ionic Overload Generator CBM
+#: lang/json/BIONIC_ITEM_from_json.py
+msgid ""
+"A powerful ion energy generator is implanted on your chest.  Fires a "
+"powerful, ever-expanding energy blast.  The resulting blast ignites oxygen "
+"creating fires as it moves and an explosion on impact.  Close range use is "
+"highly discouraged."
+msgstr ""
+"一套强大的离子能量发生器被植入你的胸腔之中。能够发射出一个道威力巨大的，不断扩散并能穿透多个目标的高能冲击波。所产生的冲击波会点燃氧气，使的其经过的地方产生火焰，并在最终撞击目标时爆炸。近距离使用它是非常不明智的选择。"
+
+#: lang/json/BIONIC_ITEM_from_json.py
+msgid "Synaptic Regeneration System CBM"
+msgid_plural "Synaptic Regeneration System CBMs"
+msgstr[0] "神经突触再生器CBM"
+
+#. ~ Description for Synaptic Regeneration System CBM
+#: lang/json/BIONIC_ITEM_from_json.py
+msgid ""
+"An electromagnetic stimulator has been surgically implanted on the back of "
+"your head and along your spine, continually draining power.  As long as it's"
+" active, you won't become sleep deprived; and if you're sleep deprived "
+"already, it will boost the rate of recovery."
+msgstr "一套电磁刺激装置被植入到你的后脑和脊柱上，不断地消耗着生化能量。当被激活时，你就不会睡眠不足；如果你已经睡眠不足了，它将提高其恢复速度。"
 
 #. ~ Description for EMP Projector CBM
 #. ~ Description for EMP Projector
@@ -14942,11 +15040,6 @@ msgid ""
 "distance.  Extremely effective against electronic targets but mostly useless"
 " otherwise."
 msgstr "一组植入使用者右臂与右掌的远程 EMP 发生器，能发射短距离的集束电磁脉冲。对电子目标特别有效，但其他目标大多没什么效果。"
-
-#: lang/json/BIONIC_ITEM_from_json.py
-msgid "Ionic Overload Generator CBM"
-msgid_plural "Ionic Overload Generator CBMs"
-msgstr[0] "离子过载发生器CBM"
 
 #. ~ Description for Ionic Overload Generator CBM
 #. ~ Description for Ionic Overload Generator
@@ -19480,8 +19573,8 @@ msgstr "早餐麦片"
 #. ~ Description for sugary cereal
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
-"A box of sugary breakfast cereal with marshmallows.  It takes you back to "
-"your childhood."
+"Sugary breakfast cereal with marshmallows.  It takes you back to your "
+"childhood."
 msgstr "一盒甜甜的早餐麦片，里面有棉花糖。看着它，童年时光浮现在你眼前。"
 
 #: lang/json/COMESTIBLE_from_json.py
@@ -19491,8 +19584,8 @@ msgstr "早餐燕麦"
 #. ~ Description for wheat cereal
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
-"A box of whole-grain wheat cereal.  It's surprisingly good, and allegedly "
-"good for your heart."
+"Whole-grain wheat cereal.  It's surprisingly good, and allegedly good for "
+"your heart."
 msgstr "一盒小麦与燕麦，保存得非常好，据说对心脏也非常好。"
 
 #: lang/json/COMESTIBLE_from_json.py
@@ -19501,7 +19594,7 @@ msgstr "早餐玉米"
 
 #. ~ Description for corn cereal
 #: lang/json/COMESTIBLE_from_json.py
-msgid "A box of cornflakes.  They're not that good, but it beats nothing."
+msgid "Plain cornflake cereal.  They're not that good, but it beats nothing."
 msgstr "一盒早餐玉米片。尝起来不太好，但总比什么都没有强。"
 
 #: lang/json/COMESTIBLE_from_json.py
@@ -19915,8 +20008,8 @@ msgstr[0] "奶油花生糖"
 
 #. ~ Description for peanut butter candy
 #: lang/json/COMESTIBLE_from_json.py
-msgid "A big bag of peanut butter cups...  your favorite!"
-msgstr "你最喜欢的大包奶油花生糖。"
+msgid "A handful of peanut butter cups...  your favorite!"
+msgstr "一把你最喜欢的奶油花生糖。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "chocolate candy"
@@ -19925,8 +20018,8 @@ msgstr[0] "巧克力糖"
 
 #. ~ Description for chocolate candy
 #: lang/json/COMESTIBLE_from_json.py
-msgid "A big bag of colorful chocolate filled candies."
-msgstr "一大包巧克力夹心糖果。"
+msgid "A handful of colorful chocolate filled candies."
+msgstr "一把巧克力夹心糖果。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "chewy candy"
@@ -19935,8 +20028,8 @@ msgstr[0] "软糖"
 
 #. ~ Description for chewy candy
 #: lang/json/COMESTIBLE_from_json.py
-msgid "A big bag of colorful fruit-flavored chewy candy."
-msgstr "一大包五颜六色的果味软糖。"
+msgid "A handful of colorful fruit-flavored chewy candy."
+msgstr "一把五颜六色的果味软糖。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "powder candy sticks"
@@ -20338,8 +20431,8 @@ msgstr[0] "腰果"
 
 #. ~ Description for cashews
 #: lang/json/COMESTIBLE_from_json.py
-msgid "An imported bag of salty cashews."
-msgstr "一包进口的盐焗腰果。"
+msgid "A handful of salty cashews."
+msgstr "一把盐焗腰果。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "handful of shelled pecans"
@@ -20349,8 +20442,8 @@ msgstr[0] "去壳美洲山核桃"
 #. ~ Description for handful of shelled pecans
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
-"A bag of pecans which are a sub-species of hickory nuts, their shells have "
-"been removed."
+"A handful of pecans which are a sub-species of hickory nuts, their shells "
+"have been removed."
 msgstr "一把美洲山核桃，山核桃的亚种，已经去壳了。"
 
 #: lang/json/COMESTIBLE_from_json.py
@@ -20808,15 +20901,6 @@ msgstr[0] "煮面条"
 #: lang/json/COMESTIBLE_from_json.py
 msgid "Fresh wet noodles.  Fairly bland, but fills you up."
 msgstr "新鲜的煮面条，虽然乏味，但比啃树根好。"
-
-#: lang/json/COMESTIBLE_from_json.py
-msgid "boiled lasagne"
-msgstr "熟千层面"
-
-#. ~ Description for boiled lasagne
-#: lang/json/COMESTIBLE_from_json.py
-msgid "Fresh wet lasagne.  Fairly bland, but fills you up."
-msgstr "新鲜的煮千层面，加菲猫的最爱，没有调料。挺饱肚子的……不过这东西是这么个吃法吗？"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "raw macaroni"
@@ -22164,8 +22248,8 @@ msgstr "千层面"
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
 "A very old type of pasta made with several layers of lasagne sheets "
-"alternated with sauces and meats."
-msgstr "非常古老的面食，由数层面饼与肉馅、酱汁烹制而成。"
+"alternated with cheese, sauces and meats."
+msgstr "非常古老的面食，由数层面饼与奶酪、肉馅、酱汁烹制而成。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "Luigi lasagne"
@@ -22175,10 +22259,8 @@ msgstr "千人千面"
 #: lang/json/COMESTIBLE_from_json.py
 msgid ""
 "A very old type of pasta made with several layers of lasagne sheets "
-"alternated with sauces and meats.  Made better with human flesh."
-msgstr ""
-"非常古老的面食，由数层面饼与人肉馅、酱汁烹制而成。\n"
-"\"一千个人有一千种把人做成面条的方法！\""
+"alternated with cheese, sauces and meats.  Made better with human flesh."
+msgstr "非常古老的面食，由数层面饼与奶酪、人肉馅、酱汁烹制而成。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "mayonnaise"
@@ -22806,8 +22888,8 @@ msgstr[0] "快餐法式炸薯条"
 
 #. ~ Description for fast-food French fries
 #: lang/json/COMESTIBLE_from_json.py
-msgid "A box of fast-food fried potatoes.  Somehow, they're still edible."
-msgstr "一些油炸薯条素食，待薯条炸至金黄色，即可全部捞起供吃，甘香可口，快餐店常见的食物之一。"
+msgid "Fast-food fried potatoes.  Somehow, they're still edible."
+msgstr "一些快餐油炸薯条。不知为何，它们看上去还能够食用。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "French fries"
@@ -22826,9 +22908,8 @@ msgstr[0] "奶酪薯条"
 
 #. ~ Description for cheese fries
 #: lang/json/COMESTIBLE_from_json.py
-msgid ""
-"A box of fast-food fried potatoes with delicious cheese smothered on top."
-msgstr "一盒快餐炸薯条，上面盖了一层奶酪。"
+msgid "Fried potatoes with delicious cheese smothered on top."
+msgstr "一些油炸薯条，上面裹着一层奶酪。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "onion ring"
@@ -22836,8 +22917,8 @@ msgstr "洋葱圈"
 
 #. ~ Description for onion ring
 #: lang/json/COMESTIBLE_from_json.py
-msgid "A box of fast-food fried onions.  Crunchy and delicious."
-msgstr "一盒快餐洋葱圈，香脆可口。"
+msgid "Battered and fried onions.  Crunchy and delicious."
+msgstr "一堆裹着面糊油炸过的洋葱圈。香脆可口。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "lemonade drink mix"
@@ -23030,8 +23111,8 @@ msgstr[0] "薄荷饼"
 
 #. ~ Description for peppermint patty
 #: lang/json/COMESTIBLE_from_json.py
-msgid "A big bag of soft chocolate-covered peppermint patties...  yum!"
-msgstr "一些被软巧克力包裹着的薄荷馅饼，非常美味。"
+msgid "A handful of soft chocolate-covered peppermint patties...  yum!"
+msgstr "一把被软巧克力包裹着的薄荷馅饼，味道好极了！"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "dehydrated meat"
@@ -25561,6 +25642,13 @@ msgstr "猫科诱变血清"
 msgid "fish serum"
 msgstr "鱼类诱变血清"
 
+#. ~ Description for fish serum
+#: lang/json/COMESTIBLE_from_json.py
+msgid ""
+"A super-concentrated mutagen the color of the ocean, with white foam at the "
+"top.  You need a syringe to inject it...  if you really want to?"
+msgstr "超浓缩的诱变剂，有着大海一般深邃的蓝色，顶部浮着些白色泡沫。你需要一个针管来注射……如果你真的想用的话。"
+
 #: lang/json/COMESTIBLE_from_json.py
 msgid "insect serum"
 msgstr "昆虫诱变血清"
@@ -26276,9 +26364,11 @@ msgstr[0] "向日葵种子"
 msgid "Some raw sunflower seeds.  Could be pressed into oil."
 msgstr "一些向日葵种子。可以榨出油。"
 
-#: lang/json/COMESTIBLE_from_json.py
+#: lang/json/COMESTIBLE_from_json.py lang/json/GENERIC_from_json.py
+#: lang/json/furniture_from_json.py
 msgid "sunflower"
-msgstr "向日葵"
+msgid_plural "sunflowers"
+msgstr[0] "向日葵"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "dogbane seeds"
@@ -26647,6 +26737,18 @@ msgstr[0] "蜂蜜"
 #: lang/json/COMESTIBLE_from_json.py
 msgid "Honey, that stuff bees make."
 msgstr "一些蜂蜜，蜜蜂酿制的蜜。"
+
+#: lang/json/COMESTIBLE_from_json.py
+msgid "magnesium tablet"
+msgstr "镁片"
+
+#. ~ Description for magnesium tablet
+#: lang/json/COMESTIBLE_from_json.py
+msgid ""
+"Over-the-counter magnesium supplements, commonly prescribed to treat sleep "
+"deprivation and to mitigate its effects.  One tablet a day combined with a "
+"good night's sleep will help you recover faster."
+msgstr "一些非处方镁补充剂，通常用于治疗睡眠不足并减轻其症状。一天一片，再加上睡个好觉，会让你恢复得更快。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "gluten free fish sandwich"
@@ -27266,6 +27368,18 @@ msgid "A resealable plastic bottle, holds 250 ml of liquid."
 msgstr "可再密封的塑料瓶，能储存250毫升液体。"
 
 #: lang/json/CONTAINER_from_json.py
+msgid "large plastic bottle"
+msgid_plural "large plastic bottles"
+msgstr[0] "大塑料瓶"
+
+#. ~ Description for large plastic bottle
+#: lang/json/CONTAINER_from_json.py
+msgid ""
+"It's a two-liter plastic bottle that can hold a lot of soda, or, nowadays, "
+"boiled water."
+msgstr "一个能够容纳两升的塑料瓶，可以装很多汽水，或者就以后而言，开水。"
+
+#: lang/json/CONTAINER_from_json.py
 msgid "clay bowl"
 msgid_plural "clay bowls"
 msgstr[0] "陶碗"
@@ -27760,8 +27874,8 @@ msgstr[0] "泡沫塑料杯"
 
 #. ~ Description for styrofoam cup
 #: lang/json/CONTAINER_from_json.py
-msgid "A cheap disposable cup with a plastic lid and straw."
-msgstr "廉价的一次性杯子，附有塑料盖子和吸管。"
+msgid "A cheap, disposable cup with a plastic lid and straw."
+msgstr "一个一次性的廉价杯子，附有塑料盖子和吸管。"
 
 #: lang/json/CONTAINER_from_json.py
 msgid "plastic tub"
@@ -28403,6 +28517,16 @@ msgstr[0] "毛皮"
 #: lang/json/GENERIC_from_json.py
 msgid "A small bolt of fur from an animal.  Can be made into warm clothing."
 msgstr "这是由可爱的动物做成的毛皮，可以用来制作保暖的衣物。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "faux fur pelt"
+msgid_plural "faux fur pelts"
+msgstr[0] "人造毛皮"
+
+#. ~ Description for faux fur pelt
+#: lang/json/GENERIC_from_json.py
+msgid "A small bolt of garishly colored faux fur. Can be made into clothing."
+msgstr "一小束颜色华丽的人造毛皮。可以用来制作保暖的衣物。"
 
 #: lang/json/GENERIC_from_json.py
 msgid "leather patch"
@@ -29393,7 +29517,6 @@ msgid ""
 msgstr "一块浸满了血液的破布，可以用开水把它洗干净。"
 
 #: lang/json/GENERIC_from_json.py lang/json/vehicle_part_from_json.py
-#: lang/json/vehicle_part_from_json.py
 msgid "clock"
 msgid_plural "clocks"
 msgstr[0] "时钟"
@@ -29808,6 +29931,98 @@ msgid ""
 "A spurge bud.  Contains some substances commonly produced by a spurge "
 "flower."
 msgstr "锦地草花的花蕾，包含了一些锦地草花特有的成分。"
+
+#: lang/json/GENERIC_from_json.py lang/json/furniture_from_json.py
+msgid "black eyed susan"
+msgid_plural "black eyed susans"
+msgstr[0] "黑眼菊"
+
+#. ~ Description for black eyed susan
+#: lang/json/GENERIC_from_json.py
+msgid "A black eyed susan stalk with some petals."
+msgstr "一朵有几片花瓣的黑眼菊。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "black eyed susan bud"
+msgid_plural "black eyed susan buds"
+msgstr[0] "黑眼菊花蕾"
+
+#. ~ Description for black eyed susan bud
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"A black eyed susan bud.  Contains some substances commonly produced by a "
+"black eyed susan flower."
+msgstr "黑眼菊的花蕾，包含了一些黑眼菊特有的成分。"
+
+#: lang/json/GENERIC_from_json.py lang/json/furniture_from_json.py
+msgid "lily"
+msgid_plural "lilys"
+msgstr[0] "百合花"
+
+#. ~ Description for lily
+#: lang/json/GENERIC_from_json.py
+msgid "A lily stalk with some petals."
+msgstr "一朵有几片花瓣的百合花。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "lily bud"
+msgid_plural "lily buds"
+msgstr[0] "百合花花蕾"
+
+#. ~ Description for lily bud
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"A lily bud.  Contains some substances commonly produced by a lily flower."
+msgstr "百合花的花蕾，包含了一些百合花特有的成分。"
+
+#: lang/json/GENERIC_from_json.py lang/json/furniture_from_json.py
+msgid "lotus"
+msgid_plural "lotuss"
+msgstr[0] "荷花"
+
+#. ~ Description for lotus
+#: lang/json/GENERIC_from_json.py
+msgid "A lotus stalk with some petals."
+msgstr "一朵有几片花瓣的荷花。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "lotus bud"
+msgid_plural "lotus buds"
+msgstr[0] "荷花花蕾"
+
+#. ~ Description for lotus bud
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"A lotus bud.  Contains some substances commonly produced by a lotus flower."
+msgstr "荷花的花蕾，包含了一些荷花特有的成分。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "lilac"
+msgid_plural "lilacs"
+msgstr[0] "丁香花"
+
+#. ~ Description for lilac
+#: lang/json/GENERIC_from_json.py
+msgid "A lilac stalk with some petals."
+msgstr "一朵有几片花瓣的丁香花。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "lilac bud"
+msgid_plural "lilac buds"
+msgstr[0] "丁香花花蕾"
+
+#. ~ Description for lilac bud
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"A lilac bud.  Contains some substances commonly produced by a lilac flower."
+msgstr "丁香花的花蕾，包含了一些丁香花特有的成分。"
+
+#. ~ Description for sunflower
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"The top of a sunflower, with yellow pedals and some seeds that have yet to "
+"be eaten by animals."
+msgstr "一朵向日葵的花蕾，有黄色的花瓣和一些尚未被动物吃掉的种子。"
 
 #: lang/json/GENERIC_from_json.py
 msgid "lump of clay"
@@ -31775,7 +31990,6 @@ msgstr ""
 "绝不为了方便而牺牲品味，只当你能同时拥有Rivtech原子咖啡机的时候！简单而强大的原子时代设计能保证其使用寿命至少有1.6亿年。绝无任何毒副作用。"
 
 #: lang/json/GENERIC_from_json.py lang/json/vehicle_part_from_json.py
-#: lang/json/vehicle_part_from_json.py
 msgid "atomic lamp"
 msgid_plural "atomic lamps"
 msgstr[0] "原子提灯"
@@ -31828,7 +32042,6 @@ msgstr ""
 "请享受来自Rivtech原子台灯宁静的切伦科夫蓝色光辉吧，你很确信你不必担心它的能源供给，因为它能为你提供至少四千万年的忠实服务。灯罩现在是关闭着的。使用它来打开灯罩并放出亮光。"
 
 #: lang/json/GENERIC_from_json.py lang/json/vehicle_part_from_json.py
-#: lang/json/vehicle_part_from_json.py
 msgid "atomic nightlight"
 msgid_plural "atomic nightlights"
 msgstr[0] "原子小夜灯"
@@ -32320,6 +32533,23 @@ msgid ""
 msgstr "一个铜制锅子，烹饪食物的传统厨具，用来烧水煮面条或其他东西，由铜制成，里面镀着一层锡以防止酸性食物侵蚀。"
 
 #: lang/json/GENERIC_from_json.py
+msgid "canning pot"
+msgid_plural "canning pots"
+msgstr[0] "水浴锅"
+
+#. ~ Description for canning pot
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"A very large 25 liter pot, primarily meant for canning food in glass jars "
+"via the water bath method, though it can cook normal foods just as well.  "
+"Canning foods with it will require a lot of water, but you'll end up with "
+"clean water as a byproduct.  If you're only canning a couple of jars at a "
+"time, you'd fill it up with rocks or something to displace the water above "
+"the lids."
+msgstr ""
+"一个容量25升的非常大的锅，主要是用于水浴法让玻璃瓶罐装食物，当然它同样可以当作厨具烹饪普通食物。罐装食品需要大量的水，但最终你会得到净水作为副产品。如果你只是一次装几个罐子的话，你需要先放些石头或什么东西抬升水位没过罐子的盖子。"
+
+#: lang/json/GENERIC_from_json.py
 msgid "restaurant guide"
 msgid_plural "restaurant guides"
 msgstr[0] "餐馆指南"
@@ -32686,6 +32916,16 @@ msgstr[0] "小型电力引擎"
 #: lang/json/GENERIC_from_json.py
 msgid "A small electric motor.  Useful for crafting."
 msgstr "一个小型电动马达。可以用来制作物品。"
+
+#: lang/json/GENERIC_from_json.py lang/json/vehicle_part_from_json.py
+msgid "tiny electric motor"
+msgid_plural "tiny electric motors"
+msgstr[0] "微型电力引擎"
+
+#. ~ Description for tiny electric motor
+#: lang/json/GENERIC_from_json.py
+msgid "A tiny electric motor.  Useful for crafting."
+msgstr "一个微型电动马达。可以用来制作物品。"
 
 #: lang/json/GENERIC_from_json.py
 msgid "foot crank"
@@ -36141,276 +36381,6 @@ msgid ""
 msgstr "一个155mm炮弹发射后的弹壳，可以当成昂贵的镇纸。"
 
 #: lang/json/GENERIC_from_json.py
-msgid "growing blob frame"
-msgid_plural "growing blob frames"
-msgstr[0] "凝胶变形怪车架（生长中）"
-
-#. ~ Use action msg for growing blob frame.
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"You test the frame; It wiggles, and then collapses into an lump of goo."
-msgstr "你试了试车架；它晃了晃，然后碎成一滩粘液。"
-
-#. ~ Use action not_ready_msg for growing blob frame.
-#: lang/json/GENERIC_from_json.py
-msgid "You test the frame; it gives easily, it's still not sturdy enough"
-msgstr "你试了试框架。它容易变形，仍然不够坚固。"
-
-#. ~ Description for growing blob frame
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"A growing vehicle frame made of bone.  It's coated in a thick layer of ooze,"
-" though there's greater amounts on the bindings.  It's not quite tough "
-"enough to use."
-msgstr "骨制成的闪光车架。整个车架上，特别是连接处上，都渗出了一层厚厚的糊状粘稠物在表面。它还不够结实，无法使用。"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing keratinous mass"
-msgid_plural "growing keratinous mass"
-msgstr[0] "角质变形怪（生长中）"
-
-#. ~ Use action msg for growing keratinous mass.
-#. ~ Use action msg for growing beaded mass.
-#. ~ Use action msg for growing icy mass.
-#. ~ Use action msg for growing cold mass.
-#. ~ Use action msg for growing hairy mass.
-#. ~ Use action msg for growing gelatinous mass.
-#. ~ Use action msg for growing glowing mass.
-#. ~ Use action msg for growing gray mass.
-#. ~ Use action msg for growing spike-studded mass.
-#. ~ Use action msg for growing gasoline-laced mass.
-#. ~ Use action msg for growing acidic mass.
-#. ~ Use action msg for growing ooze.
-#. ~ Use action msg for growing mass of tendrils.
-#. ~ Use action msg for growing spiked mass.
-#. ~ Use action msg for growing spiny mass.
-#. ~ Use action msg for growing spiky mass.
-#. ~ Use action msg for growing bright mass.
-#. ~ Use action msg for growing viscous mass.
-#. ~ Use action msg for growing warm mass.
-#. ~ Use action msg for growing electrified mass.
-#: lang/json/GENERIC_from_json.py
-msgid "The blob balloons to full size."
-msgstr "变形怪长大到完整大小。"
-
-#. ~ Use action not_ready_msg for growing keratinous mass.
-#. ~ Use action not_ready_msg for growing beaded mass.
-#. ~ Use action not_ready_msg for growing icy mass.
-#. ~ Use action not_ready_msg for growing cold mass.
-#. ~ Use action not_ready_msg for growing hairy mass.
-#. ~ Use action not_ready_msg for growing gelatinous mass.
-#. ~ Use action not_ready_msg for growing glowing mass.
-#. ~ Use action not_ready_msg for growing gray mass.
-#. ~ Use action not_ready_msg for growing spike-studded mass.
-#. ~ Use action not_ready_msg for growing gasoline-laced mass.
-#. ~ Use action not_ready_msg for growing acidic mass.
-#. ~ Use action not_ready_msg for growing ooze.
-#. ~ Use action not_ready_msg for growing mass of tendrils.
-#. ~ Use action not_ready_msg for growing spiked mass.
-#. ~ Use action not_ready_msg for growing spiny mass.
-#. ~ Use action not_ready_msg for growing spiky mass.
-#. ~ Use action not_ready_msg for growing bright mass.
-#. ~ Use action not_ready_msg for growing viscous mass.
-#. ~ Use action not_ready_msg for growing warm mass.
-#. ~ Use action not_ready_msg for growing electrified mass.
-#: lang/json/GENERIC_from_json.py
-msgid "Whatever it's doing, it's not done yet."
-msgstr "不管它以后能长成什么东西，它现在还没长成。"
-
-#. ~ Description for growing keratinous mass
-#. ~ Description for growing beaded mass
-#. ~ Description for growing icy mass
-#. ~ Description for growing cold mass
-#. ~ Description for growing hairy mass
-#. ~ Description for growing gelatinous mass
-#. ~ Description for growing glowing mass
-#. ~ Description for growing gray mass
-#. ~ Description for growing spike-studded mass
-#. ~ Description for growing gasoline-laced mass
-#. ~ Description for growing acidic mass
-#. ~ Description for growing ooze
-#. ~ Description for growing mass of tendrils
-#. ~ Description for growing spiked mass
-#. ~ Description for growing spiny mass
-#. ~ Description for growing spiky mass
-#. ~ Description for growing bright mass
-#. ~ Description for growing viscous mass
-#. ~ Description for growing warm mass
-#. ~ Description for growing electrified mass
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"Not quite fully grown, this blob requires nourishment to fully develop."
-msgstr "还没有完全长成，这只变形怪需要更多营养成分才能完全成长。"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing beaded mass"
-msgid_plural "growing beaded mass"
-msgstr[0] "珠状变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing icy mass"
-msgid_plural "growing icy mass"
-msgstr[0] "冰冻变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "gelacier"
-msgid_plural "gelaciers"
-msgstr[0] "寒冷变形怪"
-
-#. ~ Description for gelacier
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"A biological mystery, this blob's internal structures exist in within a pool"
-" of low-density fluid that remains liquid despite being in a super-cooled "
-"state; yet possesses all the malleability of its former self.  Fragments of "
-"frost continually flake off it.  It seems pliable enough to pull apart..."
-msgstr ""
-"一件生物学之谜，这只变形怪的内部结构存在着一滩低密度流体，尽管已经处在过冷状态但仍然保留液体形态；但仍然保持着其之前所具有的柔韧性。冰霜形成的碎片不断从它身上剥落。看起来柔韧得似乎可以被直接拉开…"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing cold mass"
-msgid_plural "growing cold mass"
-msgstr[0] "寒冷变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing hairy mass"
-msgid_plural "growing hairy mass"
-msgstr[0] "长毛变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py lang/json/MONSTER_from_json.py
-#: lang/json/MONSTER_from_json.py
-msgid "gelatinous mass"
-msgid_plural "gelatinous mass"
-msgstr[0] "凝胶变形怪"
-
-#. ~ Use action msg for gelatinous mass.
-#. ~ Use action msg for gray mass.
-#. ~ Use action msg for oozing mass.
-#: lang/json/GENERIC_from_json.py
-msgid "You fumble as the blob starts to multiply rapidly!"
-msgstr "变形怪抱住你的手，开始快速繁殖起来，让你变得笨手笨脚。"
-
-#. ~ Description for gelatinous mass
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"An experiment gone horribly right.  While the original intent was to combine"
-" the structure of a bone frame with the impact absorption of the blob; the "
-"blob seems to have completely consumed the bone.  Instead, what remains is "
-"an amorphous mass of goo with what seems to be numerous thin filaments "
-"floating within.  With a bit of effort, you can grasp the fibers and stretch"
-" the mass into a multitude of shapes.  The mass is able to retain the new "
-"shape even under force, though the mass yields at your touch.  With enough "
-"strength, you think you can pull it apart."
-msgstr ""
-"一次成功得令人难以置信的实验。虽然最初的意图是将变形怪冲击吸收能力与骨制车架结构相结合；但似乎变形怪已经吃光了骨头。相反，剩下的是一团无定形胶质粘液，有着无数细丝漂浮其中。稍稍用点力，你可以抓住纤维并将它拉伸成多种形状。即使受外力，变形怪仍然能够保持新的形状，然而它你的触摸下却轻松变形。有了足够的力量，你认为你可以把它直接撕开。"
-
-#: lang/json/GENERIC_from_json.py
-msgid "multiplying gelatinous mass"
-msgid_plural "multiplying gelatinous mass"
-msgstr[0] "凝胶变形怪（分裂中）"
-
-#. ~ Use action friendly_msg for multiplying gelatinous mass.
-#. ~ Use action hostile_msg for multiplying gelatinous mass.
-#. ~ Use action friendly_msg for multiplying gray mass.
-#. ~ Use action hostile_msg for multiplying gray mass.
-#. ~ Use action friendly_msg for multiplying oozing mass.
-#. ~ Use action hostile_msg for multiplying oozing mass.
-#: lang/json/GENERIC_from_json.py
-msgid "A blob splits and bounces away!"
-msgstr "一只变形怪分裂并蹦了出来！"
-
-#. ~ Description for multiplying gelatinous mass
-#. ~ Description for multiplying gray mass
-#. ~ Description for multiplying oozing mass
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"Having been fed, this blob is now rapidly multiplying into other copies of "
-"itself; extremely noisy copies!  And even worse, it's stuck to your hands "
-"until whatever it's doing is done!  Catch those blobs before they bring in "
-"every zombie for miles!"
-msgstr ""
-"在经过喂食后，这只变形怪正在迅速繁殖分裂出自身的克隆体；更加吵闹的克隆体！更糟糕的是，它在繁殖完成将一直粘在你的手上！赶紧在那些变形怪引来方圆几英里的每一只丧尸之前抓住它们！"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing gelatinous mass"
-msgid_plural "growing gelatinous mass"
-msgstr[0] "凝胶变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing glowing mass"
-msgid_plural "growing glowing mass"
-msgstr[0] "发光变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py lang/json/MONSTER_from_json.py
-msgid "gray mass"
-msgid_plural "gray mass"
-msgstr[0] "灰色变形怪"
-
-#. ~ Description for gray mass
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"This internal structures of this creature have developed significantly.  "
-"While retaining the resilience and malleability of its once simpler form, it"
-" has gained the considerable abilities of perception and stimulus response."
-"  When directly threatened, it is able to shift and alter its microfibers, "
-"hardening its membrane to an almost steel-hard shell.  You can still pull it"
-" apart with enough force.  It's also really gray."
-msgstr ""
-"这个生物的内部结构相比原始形态产生了明显的进步。既保留了它原始形态的弹性和延展性，又进一步获得了可观的感知能力和刺激反应。当被直接威胁时，它能转变形态并改变体内的超细纤维、硬化外膜成为几乎如同钢铁一般坚硬的甲壳。你仍然可以用足够的力量把它拉开。而且颜色也变得特别灰。"
-
-#: lang/json/GENERIC_from_json.py
-msgid "multiplying gray mass"
-msgid_plural "multiplying gray mass"
-msgstr[0] "灰色变形怪（分裂中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing gray mass"
-msgid_plural "growing gray mass"
-msgstr[0] "灰色变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing spike-studded mass"
-msgid_plural "growing spike-studded mass"
-msgstr[0] "带刺变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing gasoline-laced mass"
-msgid_plural "growing gasoline-laced mass"
-msgstr[0] "汽油变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing acidic mass"
-msgid_plural "growing acidic mass"
-msgstr[0] "酸液变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "oozing mass"
-msgid_plural "oozing mass"
-msgstr[0] "软泥变形怪"
-
-#. ~ Description for oozing mass
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"An amorphous mass that has undergone a significant growth.  In addition to "
-"the increased amount of goo and sinuous filaments, it seems to have started "
-"developing other internal structures.  Like its smaller counterpart, it can "
-"be shaped into various structures; albeit with significantly greater tensile"
-" strength due to the increased number of supporting filaments.  You believe "
-"you can split it apart with enough force."
-msgstr ""
-"一团增长显著的无定形变形怪。除了粘液量及体内纤维的增加，它还似乎开始长出其他内部结构。尽管由于其体内增加的支持纤维有着显然更大的拉伸强度，但与它较小的同类一样，它依旧可以被你塑造成各种结构形状。你相信你可以用足够的力量把它分开。"
-
-#: lang/json/GENERIC_from_json.py
-msgid "multiplying oozing mass"
-msgid_plural "multiplying oozing mass"
-msgstr[0] "软泥变形怪（分裂中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing ooze"
-msgid_plural "growing ooze"
-msgstr[0] "软泥变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
 msgid "amorphous heart"
 msgid_plural "amorphous hearts"
 msgstr[0] "无定形核心"
@@ -36429,46 +36399,6 @@ msgid ""
 "you..."
 msgstr ""
 "这滩无定形物质似乎已经成长完成；其先进的内部结构就能够证明。它能够通过调整体内液压进行移动，同时能够承担大量负载，并且显示出惊人的智力，能够通过伸长的伪足操纵连接着的任何东西，无论是变形怪部件还是其他载具部件。你认为你可能能够控制它，并通过它，控制所有连接的载具部件。然而这需要你和它亲密接触一番；让人更加不安的是，它看起来十分愿意容纳你……"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing mass of tendrils"
-msgid_plural "growing mass of tendrils"
-msgstr[0] "触须变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing spiked mass"
-msgid_plural "growing spiked mass"
-msgstr[0] "钉刺变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing spiny mass"
-msgid_plural "growing spiny mass"
-msgstr[0] "旋转变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing spiky mass"
-msgid_plural "growing spiky mass"
-msgstr[0] "尖刺变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing bright mass"
-msgid_plural "growing bright mass"
-msgstr[0] "闪亮变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing viscous mass"
-msgid_plural "growing viscous mass"
-msgstr[0] "粘性变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing warm mass"
-msgid_plural "growing warm mass"
-msgstr[0] "温暖变形怪（生长中）"
-
-#: lang/json/GENERIC_from_json.py
-msgid "growing electrified mass"
-msgid_plural "growing electrified mass"
-msgstr[0] "带电变形怪（生长中）"
 
 #: lang/json/GENERIC_from_json.py lang/json/vehicle_part_from_json.py
 msgid "solar array"
@@ -36615,7 +36545,6 @@ msgstr "武器"
 
 #. ~ Crafting recipes subcategory of 'ELECTRONIC' category
 #. ~ Crafting recipes subcategory of 'OTHER' category
-#. ~ Crafting recipes subcategory of 'ELECTRONIC' category
 #: lang/json/ITEM_CATEGORY_from_json.py lang/json/recipe_category_from_json.py
 msgid "TOOLS"
 msgstr "工具"
@@ -36663,7 +36592,6 @@ msgstr "载具部件"
 #. ~ Crafting recipes subcategory of 'ARMOR' category
 #. ~ Crafting recipes category name
 #. ~ Crafting recipes subcategory of 'OTHER' category
-#. ~ Crafting recipes subcategory of 'ELECTRONIC' category
 #: lang/json/ITEM_CATEGORY_from_json.py lang/json/recipe_category_from_json.py
 msgid "OTHER"
 msgstr "其他"
@@ -38289,9 +38217,9 @@ msgstr "折叠式车辆部件"
 #. ~ Description for Folding Parts pack
 #: lang/json/MOD_INFO_from_json.py
 msgid ""
-"Makes solar panels, small engines, and several other parts foldable and adds"
-" foldable quarterboards."
-msgstr "使太阳能电池板，小型引擎等几个部件变成可折叠，增加了可折叠的侧板。"
+"Makes solar panels and several other parts foldable, and adds foldable "
+"quarterboards."
+msgstr "使太阳能电池板等载具部件变成可折叠，增加了可折叠的侧板。"
 
 #: lang/json/MOD_INFO_from_json.py
 msgid "DinoMod"
@@ -38653,6 +38581,16 @@ msgid ""
 "into functioning companions."
 msgstr "增加了许多类型的机器人，并允许玩家将损坏的机器人改装成功能各异的同伴。"
 
+#: lang/json/MOD_INFO_from_json.py src/debug_menu.cpp
+msgid "Sleep Deprivation"
+msgstr "睡眠不足"
+
+#. ~ Description for Sleep Deprivation
+#: lang/json/MOD_INFO_from_json.py
+msgid ""
+"Enables sleep deprivation mechanics independently of a player's fatigue."
+msgstr "增加了独立于玩家的身体疲劳的睡眠不足的机制。"
+
 #: lang/json/MOD_INFO_from_json.py
 msgid "Slow Zombies"
 msgstr "慢速丧尸"
@@ -38779,6 +38717,15 @@ msgstr "自制简易物品"
 #: lang/json/MOD_INFO_from_json.py
 msgid "Adds more improvised item variants and rebalances existing ones."
 msgstr "添加更多自制物品种类并重新平衡已有的自制物品。"
+
+#: lang/json/MOD_INFO_from_json.py
+msgid "Mapgen Demo"
+msgstr "地图生成DEMO"
+
+#. ~ Description for Mapgen Demo
+#: lang/json/MOD_INFO_from_json.py
+msgid "Demo for JSONized mapgens (FEMA, megastore, missile silo)."
+msgstr "采用测试版的地图生成（FEMA营地，购物广场，导弹发射井）"
 
 #: lang/json/MOD_INFO_from_json.py
 msgid "Classes and Scenarios Mod"
@@ -44091,6 +44038,11 @@ msgid ""
 msgstr ""
 "一台改装的坦克机器人，装有一台烧得通红的食人粉碎机。虽然缺少远程武器，但它的装甲和力量使其能够与最为巨大的怪物匹敌。多个内置核聚变核心为这台机器人提供了充足的能源，但也泄漏出放射性气体。只有疯子才会敢于建造这样的猛兽。"
 
+#: lang/json/MONSTER_from_json.py lang/json/TOOL_from_json.py
+msgid "gelatinous mass"
+msgid_plural "gelatinous mass"
+msgstr[0] "凝胶变形怪"
+
 #. ~ Description for gelatinous mass
 #. ~ Description for gray mass
 #. ~ Description for gelatinous mass
@@ -44098,6 +44050,11 @@ msgstr ""
 msgid ""
 "An escaping noisy blob, catch it before it brings in every zombie for miles!"
 msgstr "一个正在逃跑的吵闹的变形怪，在它引过来附近一英里内的每一个丧尸之前赶紧抓住它！"
+
+#: lang/json/MONSTER_from_json.py lang/json/TOOL_from_json.py
+msgid "gray mass"
+msgid_plural "gray mass"
+msgstr[0] "灰色变形怪"
 
 #: lang/json/TOOLMOD_from_json.py
 msgid "base toolmod"
@@ -44213,7 +44170,7 @@ msgstr[0] "采矿头盔（开）"
 #. ~ Use action menu_text for XL survivor divemask (on).
 #. ~ Use action menu_text for thermal electric outfit (on).
 #. ~ Use action menu_text for shooter's earmuffs.
-#. ~ Use action menu_text for cell phone - Flashlight.
+#. ~ Use action menu_text for cellphone - Flashlight.
 #. ~ Use action menu_text for gasoline lantern (on).
 #. ~ Use action menu_text for L-stick (on).
 #. ~ Use action menu_text for oil lamp.
@@ -45502,6 +45459,11 @@ msgid_plural "bionic goggles"
 msgstr[0] "生化护目镜"
 
 #: lang/json/TOOL_from_json.py
+msgid "autonomous surgical scalpels"
+msgid_plural "autonomous surgical scalpelss"
+msgstr[0] "全自动外科手术刀"
+
+#: lang/json/TOOL_from_json.py
 msgid "bionic razor"
 msgid_plural "bionic razors"
 msgstr[0] "生化剃刀"
@@ -46631,34 +46593,78 @@ msgid ""
 msgstr "一把骑兵用弯刀，从近代起就成为骑兵的近战武器。轻便，但同时又是致命的斩击武器。"
 
 #: lang/json/TOOL_from_json.py
-msgid "cell phone"
-msgid_plural "cell phones"
+msgid "cellphone"
+msgid_plural "cellphones"
 msgstr[0] "手机"
 
-#. ~ Use action msg for cell phone.
+#. ~ Use action msg for cellphone.
+#: lang/json/TOOL_from_json.py
+msgid "You light up the screen."
+msgstr "你点亮了手机手电筒。"
+
+#. ~ Use action need_charges_msg for cellphone.
+#: lang/json/TOOL_from_json.py
+msgid "The cellphone's batteries need more charge."
+msgstr "手机没电了。"
+
+#. ~ Description for cellphone
+#: lang/json/TOOL_from_json.py
+msgid ""
+"This is a cellphone, an older cousin of a smartphone but still popular in "
+"certain circles due to its reliability, sturdiness and the ability to run on"
+" common batteries. Using this cellphone will turn it on and provide light, "
+"assuming it is sufficiently charged.  It also has a clock app that includes "
+"an alarm."
+msgstr ""
+"这是一款手机，是现在智能手机的堂兄，但由于它的可靠性、坚固性和使用普通电池的特点，它仍然在某些圈子里很受欢迎。当电量足够时，使用它就能开启并提供照明。它也有一个时钟应用程序，其中包括闹钟功能。"
+
+#: lang/json/TOOL_from_json.py
+msgid "cellphone - Flashlight"
+msgid_plural "cellphones - Flashlight"
+msgstr[0] "手机 - 手电筒"
+
+#. ~ Use action msg for cellphone - Flashlight.
+#: lang/json/TOOL_from_json.py
+msgid "You stop lighting up the screen."
+msgstr "你关闭了手机手电筒。"
+
+#: lang/json/TOOL_from_json.py
+msgid "smartphone"
+msgid_plural "smartphones"
+msgstr[0] "智能手机"
+
+#. ~ Use action msg for smartphone.
 #: lang/json/TOOL_from_json.py
 msgid "You activate the flashlight app."
 msgstr "你启动了手电筒应用。"
 
-#. ~ Use action need_charges_msg for cell phone.
+#. ~ Use action need_charges_msg for smartphone.
 #: lang/json/TOOL_from_json.py
-msgid "The cellphone's batteries are dead."
-msgstr "手机没电了。"
+msgid "The smartphone's charge is too low."
+msgstr "智能手机没电了。"
 
-#. ~ Description for cell phone
+#. ~ Description for smartphone
 #: lang/json/TOOL_from_json.py
 msgid ""
-"This is a typical cellphone that features an LED for use as a flash.  Using "
-"this cellphone will turn it on and provide light, assuming it is charged "
-"with batteries.  Also it has a clock app that includes an alarm."
-msgstr "这是一台一般的智能手机，里面有LED灯可以当手电来用。使用手机会打开LED灯，前提是有电池。同时自带闹钟和时钟程序。"
+"A popular, fancy smartphone. Capable of making photos due to integrated "
+"camera and illuminating an area as per flashlight app, assuming it has "
+"enough charge.  The smartphone also has a clock app that includes an alarm. "
+"Runs on a small, rechargeable power cell compatible with Unified Power "
+"Supply."
+msgstr ""
+"一款广受欢迎的时尚智能手机。当电量足够是，能够使用内置摄像头拍摄照片，或者激活手电筒应用照明一个区域。智能手机还有一个时钟应用程序，其中包括闹钟功能。它使用一个能够兼容UPS的小型可充电能量单元供电。"
 
 #: lang/json/TOOL_from_json.py
-msgid "cell phone - Flashlight"
-msgid_plural "cell phones - Flashlight"
-msgstr[0] "手机 - 手电筒"
+msgid "smartphone - Flashlight"
+msgid_plural "smartphones - Flashlight"
+msgstr[0] "智能手机 - 手电筒"
 
-#. ~ Use action msg for cell phone - Flashlight.
+#. ~ Use action menu_text for smartphone - Flashlight.
+#: lang/json/TOOL_from_json.py
+msgid "Turn off flashlight"
+msgstr "开启手电筒"
+
+#. ~ Use action msg for smartphone - Flashlight.
 #: lang/json/TOOL_from_json.py
 msgid "You deactivate the flashlight app."
 msgstr "你关闭了手电筒应用。"
@@ -52732,6 +52738,305 @@ msgid_plural "autonomous surgical razors"
 msgstr[0] "全自动外科手术刀"
 
 #: lang/json/TOOL_from_json.py
+msgid "growing blob frame"
+msgid_plural "growing blob frames"
+msgstr[0] "凝胶变形怪车架（生长中）"
+
+#. ~ Use action msg for growing blob frame.
+#: lang/json/TOOL_from_json.py
+msgid ""
+"You test the frame; It wiggles, and then collapses into an lump of goo."
+msgstr "你试了试车架；它晃了晃，然后碎成一滩粘液。"
+
+#. ~ Use action not_ready_msg for growing blob frame.
+#: lang/json/TOOL_from_json.py
+msgid "You test the frame; it gives easily, it's still not sturdy enough"
+msgstr "你试了试框架。它容易变形，仍然不够坚固。"
+
+#. ~ Description for growing blob frame
+#: lang/json/TOOL_from_json.py
+msgid ""
+"A growing vehicle frame made of bone.  It's coated in a thick layer of ooze,"
+" though there's greater amounts on the bindings.  It's not quite tough "
+"enough to use."
+msgstr "骨制成的闪光车架。整个车架上，特别是连接处上，都渗出了一层厚厚的糊状粘稠物在表面。它还不够结实，无法使用。"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing keratinous mass"
+msgid_plural "growing keratinous mass"
+msgstr[0] "角质变形怪（生长中）"
+
+#. ~ Use action msg for growing keratinous mass.
+#. ~ Use action msg for growing beaded mass.
+#. ~ Use action msg for growing icy mass.
+#. ~ Use action msg for growing cold mass.
+#. ~ Use action msg for growing hairy mass.
+#. ~ Use action msg for growing gelatinous mass.
+#. ~ Use action msg for growing glowing mass.
+#. ~ Use action msg for growing gray mass.
+#. ~ Use action msg for growing spike-studded mass.
+#. ~ Use action msg for growing gasoline-laced mass.
+#. ~ Use action msg for growing acidic mass.
+#. ~ Use action msg for growing ooze.
+#. ~ Use action msg for growing mass of tendrils.
+#. ~ Use action msg for growing spiked mass.
+#. ~ Use action msg for growing spiny mass.
+#. ~ Use action msg for growing spiky mass.
+#. ~ Use action msg for growing bright mass.
+#. ~ Use action msg for growing viscous mass.
+#. ~ Use action msg for growing warm mass.
+#. ~ Use action msg for growing electrified mass.
+#: lang/json/TOOL_from_json.py
+msgid "The blob balloons to full size."
+msgstr "变形怪长大到完整大小。"
+
+#. ~ Use action not_ready_msg for growing keratinous mass.
+#. ~ Use action not_ready_msg for growing beaded mass.
+#. ~ Use action not_ready_msg for growing icy mass.
+#. ~ Use action not_ready_msg for growing cold mass.
+#. ~ Use action not_ready_msg for growing hairy mass.
+#. ~ Use action not_ready_msg for growing gelatinous mass.
+#. ~ Use action not_ready_msg for growing glowing mass.
+#. ~ Use action not_ready_msg for growing gray mass.
+#. ~ Use action not_ready_msg for growing spike-studded mass.
+#. ~ Use action not_ready_msg for growing gasoline-laced mass.
+#. ~ Use action not_ready_msg for growing acidic mass.
+#. ~ Use action not_ready_msg for growing ooze.
+#. ~ Use action not_ready_msg for growing mass of tendrils.
+#. ~ Use action not_ready_msg for growing spiked mass.
+#. ~ Use action not_ready_msg for growing spiny mass.
+#. ~ Use action not_ready_msg for growing spiky mass.
+#. ~ Use action not_ready_msg for growing bright mass.
+#. ~ Use action not_ready_msg for growing viscous mass.
+#. ~ Use action not_ready_msg for growing warm mass.
+#. ~ Use action not_ready_msg for growing electrified mass.
+#: lang/json/TOOL_from_json.py
+msgid "Whatever it's doing, it's not done yet."
+msgstr "不管它以后能长成什么东西，它现在还没长成。"
+
+#. ~ Description for growing keratinous mass
+#. ~ Description for growing beaded mass
+#. ~ Description for growing icy mass
+#. ~ Description for growing cold mass
+#. ~ Description for growing hairy mass
+#. ~ Description for growing gelatinous mass
+#. ~ Description for growing glowing mass
+#. ~ Description for growing gray mass
+#. ~ Description for growing spike-studded mass
+#. ~ Description for growing gasoline-laced mass
+#. ~ Description for growing acidic mass
+#. ~ Description for growing ooze
+#. ~ Description for growing mass of tendrils
+#. ~ Description for growing spiked mass
+#. ~ Description for growing spiny mass
+#. ~ Description for growing spiky mass
+#. ~ Description for growing bright mass
+#. ~ Description for growing viscous mass
+#. ~ Description for growing warm mass
+#. ~ Description for growing electrified mass
+#: lang/json/TOOL_from_json.py
+msgid ""
+"Not quite fully grown, this blob requires nourishment to fully develop."
+msgstr "还没有完全长成，这只变形怪需要更多营养成分才能完全成长。"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing beaded mass"
+msgid_plural "growing beaded mass"
+msgstr[0] "珠状变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing icy mass"
+msgid_plural "growing icy mass"
+msgstr[0] "冰冻变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "gelacier"
+msgid_plural "gelaciers"
+msgstr[0] "寒冷变形怪"
+
+#. ~ Description for gelacier
+#: lang/json/TOOL_from_json.py
+msgid ""
+"A biological mystery, this blob's internal structures exist in within a pool"
+" of low-density fluid that remains liquid despite being in a super-cooled "
+"state; yet possesses all the malleability of its former self.  Fragments of "
+"frost continually flake off it.  It seems pliable enough to pull apart..."
+msgstr ""
+"一件生物学之谜，这只变形怪的内部结构存在着一滩低密度流体，尽管已经处在过冷状态但仍然保留液体形态；但仍然保持着其之前所具有的柔韧性。冰霜形成的碎片不断从它身上剥落。看起来柔韧得似乎可以被直接拉开…"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing cold mass"
+msgid_plural "growing cold mass"
+msgstr[0] "寒冷变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing hairy mass"
+msgid_plural "growing hairy mass"
+msgstr[0] "长毛变形怪（生长中）"
+
+#. ~ Use action msg for gelatinous mass.
+#. ~ Use action msg for gray mass.
+#. ~ Use action msg for oozing mass.
+#: lang/json/TOOL_from_json.py
+msgid "You fumble as the blob starts to multiply rapidly!"
+msgstr "变形怪抱住你的手，开始快速繁殖起来，让你变得笨手笨脚。"
+
+#. ~ Description for gelatinous mass
+#: lang/json/TOOL_from_json.py
+msgid ""
+"An experiment gone horribly right.  While the original intent was to combine"
+" the structure of a bone frame with the impact absorption of the blob; the "
+"blob seems to have completely consumed the bone.  Instead, what remains is "
+"an amorphous mass of goo with what seems to be numerous thin filaments "
+"floating within.  With a bit of effort, you can grasp the fibers and stretch"
+" the mass into a multitude of shapes.  The mass is able to retain the new "
+"shape even under force, though the mass yields at your touch.  With enough "
+"strength, you think you can pull it apart."
+msgstr ""
+"一次成功得令人难以置信的实验。虽然最初的意图是将变形怪冲击吸收能力与骨制车架结构相结合；但似乎变形怪已经吃光了骨头。相反，剩下的是一团无定形胶质粘液，有着无数细丝漂浮其中。稍稍用点力，你可以抓住纤维并将它拉伸成多种形状。即使受外力，变形怪仍然能够保持新的形状，然而它你的触摸下却轻松变形。有了足够的力量，你认为你可以把它直接撕开。"
+
+#: lang/json/TOOL_from_json.py
+msgid "multiplying gelatinous mass"
+msgid_plural "multiplying gelatinous mass"
+msgstr[0] "凝胶变形怪（分裂中）"
+
+#. ~ Use action friendly_msg for multiplying gelatinous mass.
+#. ~ Use action hostile_msg for multiplying gelatinous mass.
+#. ~ Use action friendly_msg for multiplying gray mass.
+#. ~ Use action hostile_msg for multiplying gray mass.
+#. ~ Use action friendly_msg for multiplying oozing mass.
+#. ~ Use action hostile_msg for multiplying oozing mass.
+#: lang/json/TOOL_from_json.py
+msgid "A blob splits and bounces away!"
+msgstr "一只变形怪分裂并蹦了出来！"
+
+#. ~ Description for multiplying gelatinous mass
+#. ~ Description for multiplying gray mass
+#. ~ Description for multiplying oozing mass
+#: lang/json/TOOL_from_json.py
+msgid ""
+"Having been fed, this blob is now rapidly multiplying into other copies of "
+"itself; extremely noisy copies!  And even worse, it's stuck to your hands "
+"until whatever it's doing is done!  Catch those blobs before they bring in "
+"every zombie for miles!"
+msgstr ""
+"在经过喂食后，这只变形怪正在迅速繁殖分裂出自身的克隆体；更加吵闹的克隆体！更糟糕的是，它在繁殖完成将一直粘在你的手上！赶紧在那些变形怪引来方圆几英里的每一只丧尸之前抓住它们！"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing gelatinous mass"
+msgid_plural "growing gelatinous mass"
+msgstr[0] "凝胶变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing glowing mass"
+msgid_plural "growing glowing mass"
+msgstr[0] "发光变形怪（生长中）"
+
+#. ~ Description for gray mass
+#: lang/json/TOOL_from_json.py
+msgid ""
+"This internal structures of this creature have developed significantly.  "
+"While retaining the resilience and malleability of its once simpler form, it"
+" has gained the considerable abilities of perception and stimulus response."
+"  When directly threatened, it is able to shift and alter its microfibers, "
+"hardening its membrane to an almost steel-hard shell.  You can still pull it"
+" apart with enough force.  It's also really gray."
+msgstr ""
+"这个生物的内部结构相比原始形态产生了明显的进步。既保留了它原始形态的弹性和延展性，又进一步获得了可观的感知能力和刺激反应。当被直接威胁时，它能转变形态并改变体内的超细纤维、硬化外膜成为几乎如同钢铁一般坚硬的甲壳。你仍然可以用足够的力量把它拉开。而且颜色也变得特别灰。"
+
+#: lang/json/TOOL_from_json.py
+msgid "multiplying gray mass"
+msgid_plural "multiplying gray mass"
+msgstr[0] "灰色变形怪（分裂中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing gray mass"
+msgid_plural "growing gray mass"
+msgstr[0] "灰色变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing spike-studded mass"
+msgid_plural "growing spike-studded mass"
+msgstr[0] "带刺变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing gasoline-laced mass"
+msgid_plural "growing gasoline-laced mass"
+msgstr[0] "汽油变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing acidic mass"
+msgid_plural "growing acidic mass"
+msgstr[0] "酸液变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "oozing mass"
+msgid_plural "oozing mass"
+msgstr[0] "软泥变形怪"
+
+#. ~ Description for oozing mass
+#: lang/json/TOOL_from_json.py
+msgid ""
+"An amorphous mass that has undergone a significant growth.  In addition to "
+"the increased amount of goo and sinuous filaments, it seems to have started "
+"developing other internal structures.  Like its smaller counterpart, it can "
+"be shaped into various structures; albeit with significantly greater tensile"
+" strength due to the increased number of supporting filaments.  You believe "
+"you can split it apart with enough force."
+msgstr ""
+"一团增长显著的无定形变形怪。除了粘液量及体内纤维的增加，它还似乎开始长出其他内部结构。尽管由于其体内增加的支持纤维有着显然更大的拉伸强度，但与它较小的同类一样，它依旧可以被你塑造成各种结构形状。你相信你可以用足够的力量把它分开。"
+
+#: lang/json/TOOL_from_json.py
+msgid "multiplying oozing mass"
+msgid_plural "multiplying oozing mass"
+msgstr[0] "软泥变形怪（分裂中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing ooze"
+msgid_plural "growing ooze"
+msgstr[0] "软泥变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing mass of tendrils"
+msgid_plural "growing mass of tendrils"
+msgstr[0] "触须变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing spiked mass"
+msgid_plural "growing spiked mass"
+msgstr[0] "钉刺变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing spiny mass"
+msgid_plural "growing spiny mass"
+msgstr[0] "旋转变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing spiky mass"
+msgid_plural "growing spiky mass"
+msgstr[0] "尖刺变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing bright mass"
+msgid_plural "growing bright mass"
+msgstr[0] "闪亮变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing viscous mass"
+msgid_plural "growing viscous mass"
+msgstr[0] "粘性变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing warm mass"
+msgid_plural "growing warm mass"
+msgstr[0] "温暖变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
+msgid "growing electrified mass"
+msgid_plural "growing electrified mass"
+msgstr[0] "带电变形怪（生长中）"
+
+#: lang/json/TOOL_from_json.py
 msgid "diamond cluster"
 msgid_plural "diamond clusters"
 msgstr[0] "钻石晶簇"
@@ -53942,6 +54247,11 @@ msgid ""
 "disable electronics and robots."
 msgstr "你的掌心经过手术被嵌入了一只小型电弧EMP发射器。你能够使用生化能量发射短距离的EMP冲击，瘫痪电子装备和机器人。"
 
+#: lang/json/bionic_from_json.py lang/json/gun_from_json.py
+msgid "EMP Projector"
+msgid_plural "EMP Projectors"
+msgstr[0] "EMP发射器"
+
 #: lang/json/bionic_from_json.py
 msgid "Ethanol Burner"
 msgstr "酒精锅炉"
@@ -54148,6 +54458,17 @@ msgstr "人工瞬膜"
 #: lang/json/bionic_from_json.py
 msgid "Enhanced Memory Banks"
 msgstr "记忆增强"
+
+#. ~ Description for Enhanced Memory Banks
+#: lang/json/bionic_from_json.py
+msgid ""
+"Your memory has been enhanced with small quantum storage drives.  While "
+"active, you learn - both through reading and practice - more quickly.  "
+"Additionally, you can't forget skills you've already learned, and the layout"
+" of terrain you've explored will remain in your memory for an incredibly "
+"long time."
+msgstr ""
+"一组小型量子存储器增强了你的记忆。当开启时，你通过阅读和实践训练技能的速度都变快了。此外，你不会忘记所学到的技能，你探索过的地形将会在记忆中保留非常久。"
 
 #: lang/json/bionic_from_json.py
 msgid "Metabolic Interchange"
@@ -54421,6 +54742,18 @@ msgid ""
 msgstr "你的肌肉组织经过手术被替换成为更为强劲的生化纤维，力量+2。"
 
 #: lang/json/bionic_from_json.py
+msgid "Autonomous Surgical Scalpels"
+msgstr "全自动外科手术刀"
+
+#. ~ Description for Autonomous Surgical Scalpels
+#: lang/json/bionic_from_json.py
+msgid ""
+"A system of surgical grade scalpels is implanted on your fingers.  They "
+"allow you to make automated precise cuts.  They can also be used as a high-"
+"quality butchering tool."
+msgstr "一组外科手术刀被植入了你的手指。这让你能够进行全自动的精确切割。它也可以作为高级屠宰工具使用。"
+
+#: lang/json/bionic_from_json.py
 msgid "Anti-Glare Compensators"
 msgstr "防眩光补偿器"
 
@@ -54578,11 +54911,18 @@ msgid ""
 msgstr ""
 "你四肢和上半身的大部分肉体被工业级强度的弹簧和保护垫替代了。握紧拳头就能折叠或展开衬垫；开启时，液压减震器可防止因严重冲击对身体所造成的伤害，但代价是移动能力受损。"
 
-#: lang/json/bionic_from_json.py lang/json/gun_from_json.py
-#: lang/json/gun_from_json.py
-msgid "EMP Projector"
-msgid_plural "EMP Projectors"
-msgstr[0] "EMP发射器"
+#: lang/json/bionic_from_json.py
+msgid "Synaptic Regeneration System"
+msgstr "神经突触再生器"
+
+#. ~ Description for Synaptic Regeneration System
+#: lang/json/bionic_from_json.py
+msgid ""
+"An electromagnetic stimulator has been surgically implanted on the back of "
+"your head and along your spine, continually draining power.  As long as it's"
+" active, you won't become sleep deprived; and if you're sleep deprived "
+"already, it will boost the rate of recovery while you sleep."
+msgstr "一套电磁刺激装置被植入到你的后脑和脊柱上，不断地消耗着生化能量。当被激活时，你就不会睡眠不足；如果你已经睡眠不足了，它将提高其恢复速度。"
 
 #: lang/json/bionic_from_json.py lang/json/gun_from_json.py
 #: lang/json/gun_from_json.py
@@ -57610,7 +57950,7 @@ msgstr "你有段时间没睡觉了，而且影响也体现出来了。"
 
 #. ~ Apply message for effect(s) 'Lacking Sleep'.
 #: lang/json/effects_from_json.py
-msgid "You are too tired to function well."
+msgid "You are too physically tired to function well."
 msgstr "你太累了，无法集中精力。"
 
 #. ~ Miss message for effect(s) 'Lacking Sleep'.
@@ -58126,6 +58466,40 @@ msgstr "你被捕猎陷阱套住了！"
 #: lang/json/effects_from_json.py
 msgid "Stuck in a heavy snare"
 msgstr "陷入大型捕猎陷阱"
+
+#: lang/json/effects_from_json.py
+msgid "Sleep Deprived"
+msgstr "睡眠不足"
+
+#. ~ Description of effect 'Sleep Deprived'.
+#: lang/json/effects_from_json.py
+msgid ""
+"Your sleep debt has been steadily increasing for a while. You should get "
+"some rest."
+msgstr "你这一阵子一直缺乏足够的睡眠。你该歇会了。"
+
+#. ~ Apply message for effect(s) 'Sleep Deprived'.
+#: lang/json/effects_from_json.py
+msgid "You feel weary, your body tired from lack of quality sleep."
+msgstr "你感到疲倦，你的身体因缺乏足够睡眠而疲惫不堪。"
+
+#. ~ Remove message for effect(s) 'Sleep Deprived'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You have finally catched up with your lost sleep, and you feel refreshingly "
+"awake for a change."
+msgstr "你终于补足了缺乏的睡眠，你感到自己变得精神饱满并且十分清醒。"
+
+#: lang/json/effects_from_json.py
+msgid "Magnesium Supplements"
+msgstr "镁补充剂"
+
+#. ~ Description of effect 'Magnesium Supplements'.
+#: lang/json/effects_from_json.py
+msgid ""
+"You took some magnesium supplements.  These will help with sleep "
+"deprivation."
+msgstr "你服用了一些镁补充剂。这将帮助你改善睡眠不足的症状。"
 
 #: lang/json/epilogue_from_json.py
 msgid ""
@@ -59443,8 +59817,7 @@ msgstr "兽皮地板"
 msgid "mutated poppy flower"
 msgstr "变异罂粟花"
 
-#: lang/json/furniture_from_json.py lang/json/furniture_from_json.py
-#: lang/json/terrain_from_json.py lang/json/terrain_from_json.py
+#: lang/json/furniture_from_json.py lang/json/terrain_from_json.py
 msgid "crunch."
 msgstr "嘎吱。"
 
@@ -59599,6 +59972,10 @@ msgstr "锦地草花"
 #: lang/json/furniture_from_json.py
 msgid "cattails"
 msgstr "香蒲草"
+
+#: lang/json/furniture_from_json.py
+msgid "lilypad"
+msgstr "百合花"
 
 #: lang/json/furniture_from_json.py
 msgid "forge"
@@ -61063,7 +61440,8 @@ msgstr ""
 msgid "semi-auto"
 msgstr "半自动"
 
-#: lang/json/gun_from_json.py lang/json/gunmod_from_json.py
+#: lang/json/gun_from_json.py lang/json/gun_from_json.py
+#: lang/json/gunmod_from_json.py lang/json/gunmod_from_json.py
 #: src/item_factory.cpp src/turret.cpp
 msgid "auto"
 msgstr "自动"
@@ -63233,6 +63611,15 @@ msgid_plural "pipe SMGs: .45"
 msgstr[0] "自制钢管冲锋枪（.45口径）"
 
 #: lang/json/gun_from_json.py
+msgid ""
+"A powerful ion energy generator is implanted on your chest.  Fires a "
+"powerful, ever-expanding energy blast that goes through various targets.  "
+"The energy shot ignites oxygen creating fires as it moves and an explosion "
+"on impact."
+msgstr ""
+"一套强大的离子能量发生器被植入你的胸腔之中。能够发射出一个道威力巨大的，不断扩散并能穿透多个目标的高能冲击波。所产生的冲击波会点燃氧气，使的其经过的地方产生火焰，并在最终撞击目标时爆炸。近距离使用它是非常不明智的选择。"
+
+#: lang/json/gun_from_json.py
 msgid "SVS-24"
 msgid_plural "SVS-24"
 msgstr[0] "SVS-24 突击步枪"
@@ -64187,7 +64574,7 @@ msgid ""
 msgstr ""
 "一只活的变形怪变成的自主武器。能够在体内同时钙化生成大量牙齿状的碎片。它把这些碎片连同自身的一部分一起抛射出去。当炮弹到达目的地时，分离出的变形怪将这些碎片四处发射出去，并在此过程中断气。变形怪无定形的形体可以在你手中被重塑和连接，但武器本身由于没有控制而呈现惰性。"
 
-#: lang/json/gun_from_json.py
+#: lang/json/gun_from_json.py lang/json/vehicle_part_from_json.py
 msgid "gel spouter"
 msgid_plural "gel spouters"
 msgstr[0] "变形怪喷水炮"
@@ -66180,6 +66567,10 @@ msgid "Consume"
 msgstr "消耗"
 
 #: lang/json/item_action_from_json.py
+msgid "Use camera"
+msgstr "使用摄像头"
+
+#: lang/json/item_action_from_json.py
 msgid "Pour out"
 msgstr "倒出"
 
@@ -66422,6 +66813,10 @@ msgstr "折断木棍"
 #: lang/json/item_action_from_json.py
 msgid "Get content"
 msgstr "获得内容物"
+
+#: lang/json/item_action_from_json.py
+msgid "Take a magnesium tablet"
+msgstr "服用镁片"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: lang/json/json_flag_from_json.py
@@ -67374,6 +67769,10 @@ msgid "Save mods as default"
 msgstr "保存为默认模组"
 
 #: lang/json/keybinding_from_json.py
+msgid "View full mod description"
+msgstr "显示完整MOD说明"
+
+#: lang/json/keybinding_from_json.py
 msgid "Move selected mod up"
 msgstr "上移选中模组"
 
@@ -67794,6 +68193,10 @@ msgid "Grab something nearby"
 msgstr "抓住附近某物"
 
 #: lang/json/keybinding_from_json.py
+msgid "Haul items along the ground"
+msgstr "搬运物品"
+
+#: lang/json/keybinding_from_json.py
 msgid "Zone activities"
 msgstr "区域活动"
 
@@ -68009,6 +68412,10 @@ msgstr "打开全屏模式"
 #: lang/json/keybinding_from_json.py
 msgid "Toggle Pixel Minimap"
 msgstr "切换小地图"
+
+#: lang/json/keybinding_from_json.py
+msgid "Reload Tileset"
+msgstr "重新加载贴图包"
 
 #: lang/json/keybinding_from_json.py
 msgid "Toggle Auto pulp or butcher"
@@ -69349,6 +69756,21 @@ msgstr "申请地铁列车"
 msgid "View Subway Routes"
 msgstr "查看地铁线路图"
 
+#. ~ Computer name
+#: lang/json/mapgen_from_json.py
+msgid "Missile Control"
+msgstr "导弹控制台"
+
+#. ~ Computer option
+#: lang/json/mapgen_from_json.py src/mapgen.cpp
+msgid "Launch Missile"
+msgstr "发射导弹"
+
+#. ~ Computer option
+#: lang/json/mapgen_from_json.py src/mapgen.cpp
+msgid "Disarm Missile"
+msgstr "解除导弹"
+
 #: lang/json/martial_art_from_json.py
 msgid "No style"
 msgstr "无流派"
@@ -70303,6 +70725,10 @@ msgstr "水果"
 #: lang/json/material_from_json.py
 msgid "Fur"
 msgstr "毛皮"
+
+#: lang/json/material_from_json.py
+msgid "Faux Fur"
+msgstr "人造毛皮"
 
 #: lang/json/material_from_json.py
 msgid "Glass"
@@ -75592,10 +76018,10 @@ msgstr "瞬膜"
 #. ~ Description for Nictitating Membrane
 #: lang/json/mutation_from_json.py
 msgid ""
-"You have a second set of clear eyelids which lower while underwater, "
+"You have a set of clear lenses which lower over your eyes while underwater, "
 "allowing you to see as though you were wearing goggles.  Slightly decreases "
 "wet penalties."
-msgstr "你的眼睛发生了变异，有双层膜，潜水的时候可以像带了潜水镜一样看得很清楚，同时也稍微减少湿身心情惩罚。"
+msgstr "你的眼睛长出了透明的薄膜，在水下时能够覆盖眼球，让你像戴了潜水镜一样看得很清楚，同时也稍微减少湿身心情惩罚。"
 
 #: lang/json/mutation_from_json.py
 msgid "Gills"
@@ -78934,6 +79360,104 @@ msgid ""
 msgstr "你对火焰有种病态的渴望，每当你不点燃火焰或靠近火焰，你就感到自己无比焦虑。反之，你的心情会得到很大提升。"
 
 #: lang/json/mutation_from_json.py
+msgid "Amphibious"
+msgstr "水陆两栖"
+
+#. ~ Description for Amphibious
+#: lang/json/mutation_from_json.py
+msgid ""
+"You're as comfortable in water as on land, and your body has adapated around"
+" that fact.  Your base swimming speed is greatly increased, and weight will "
+"hinder you much less while swimming."
+msgstr "你感到自己在水里和在陆地上一样舒服，你的身体已经据此进化了。你的基础游泳速度大大提高，游泳时负重对你的阻碍会更少。"
+
+#: lang/json/mutation_from_json.py
+msgid "Lidless Eyes"
+msgstr "无睑之眼"
+
+#. ~ Description for Lidless Eyes
+#: lang/json/mutation_from_json.py
+msgid ""
+"Like a true fish, your eyes lack eyelids, and are are instead covered by a "
+"translucent, protective membrane that blocks irritants and water, and "
+"provides minor armor.  It also allows you to sleep with your eyes open!  "
+"Activate to cause the approach of hostile creatures to wake you up."
+msgstr ""
+"就像一条真正的鱼一样，你的眼睛缺少眼睑，而是被一层半透明的保护膜所覆盖，它能够阻挡刺激物和水，并提供少量护甲。它也让你能够睁着眼睛睡觉！激活后，敌对生物的接近会将你唤醒。"
+
+#: lang/json/mutation_from_json.py
+msgid "Aqueous Repose"
+msgstr "水中睡眠"
+
+#. ~ Description for Aqueous Repose
+#: lang/json/mutation_from_json.py
+msgid ""
+"Falling asleep underwater is easy for you, and you spend less time asleep "
+"when you rest there.  You can also eat underwater, though you can't drink."
+msgstr "在水下入睡对你来说很容易，当你在水下睡眠时，你花费的时间会更少。你也可以在水下吃东西，然而你还是不能喝水。"
+
+#: lang/json/mutation_from_json.py
+msgid "Toxic Flesh"
+msgstr "含毒血肉"
+
+#. ~ Description for Toxic Flesh
+#: lang/json/mutation_from_json.py
+msgid ""
+"Your flesh is highly poisonous, and creatures that bite you will receive a "
+"nasty surprise."
+msgstr "你的肉含有剧毒，任何咬你的生物会得到一个麻烦的惊喜。"
+
+#: lang/json/mutation_from_json.py
+msgid "Freshwater Osmosis"
+msgstr "淡水渗透"
+
+#. ~ Description for Freshwater Osmosis
+#: lang/json/mutation_from_json.py
+msgid ""
+"Your gills and skin are highly permeable to moisture, and you can hydrate "
+"your body through osmosis.  While submerged in fresh water, any thirst you "
+"might have will be slaked."
+msgstr "你的鳃和皮肤能够渗透并吸收水汽，你可以通过渗透补充你的身体的水分。当你被淡水淹没时，你所有的任何口渴度将得到满足。"
+
+#: lang/json/mutation_from_json.py
+msgid "Electroreceptors"
+msgstr "电感受器"
+
+#. ~ Description for Electroreceptors
+#: lang/json/mutation_from_json.py
+msgid ""
+"A network of jelly-filled electroreceptors, like that of a shark, have grown"
+" throughout your face and nose.  They are very sensitive to magnetic fields,"
+" allowing you to see robots and creatures charged with electricity through "
+"walls, but being shocked will seriously mess you up."
+msgstr ""
+"你的脸部和鼻子内长出了一个像鲨鱼一样的充满胶质的电感受器网络。它们对磁场非常敏感，可以让你透过墙壁看到带电的机器人和生物，但是一旦被电击你会更惨。"
+
+#: lang/json/mutation_from_json.py
+msgid "Shark Teeth"
+msgstr "鲨齿"
+
+#. ~ Description for Shark Teeth
+#: lang/json/mutation_from_json.py
+msgid ""
+"Your teeth have grown incredibly sharp and are formed of very dense calcium "
+"material.  In addition to making you eat much faster, you can use them as a "
+"lethal natural weapon, as long as your anatomy favors it.  They also grow "
+"very fast, and you harmlessly shed them more or less at random."
+msgstr ""
+"你的牙齿变得非常锋利，并且由非常致密的钙质构成。除了让你更快进食，你还可以将它们作为一种致命的天然武器使用，只要你的身体允许。它们也生长得非常快，会时不时随机地脱落。"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "You tear into %s with your teeth"
+msgstr "你用你的尖牙撕裂了 %s"
+
+#: lang/json/mutation_from_json.py
+#, no-python-format
+msgid "%1$s tears into %2$s with their teeth"
+msgstr "%1$s 用尖牙撕裂了 %2$s"
+
+#: lang/json/mutation_from_json.py
 msgid "Police Officer"
 msgstr "警官"
 
@@ -81252,6 +81776,14 @@ msgstr "废弃小屋（汽车角）"
 #: lang/json/overmap_terrain_from_json.py
 msgid "ruined cabin - dirt plaza"
 msgstr "废弃小屋（露天广场）"
+
+#: lang/json/overmap_terrain_from_json.py
+msgid "FEMA refugee camp"
+msgstr "联邦应急管理局营地"
+
+#: lang/json/overmap_terrain_from_json.py
+msgid "megastore roof"
+msgstr "购物广场（屋顶）"
 
 #: lang/json/professions_from_json.py
 msgctxt "profession_male"
@@ -84960,6 +85492,36 @@ msgstr "你决定独自离家休息一天，去打一场高尔夫球。"
 
 #: lang/json/professions_from_json.py
 msgctxt "profession_male"
+msgid "Bionic Surgeon"
+msgstr "生化外科医生"
+
+#. ~ Profession (male Bionic Surgeon) description
+#: lang/json/professions_from_json.py
+msgctxt "prof_desc_male"
+msgid ""
+"As one of the top surgeons in the country, you were chosen for an "
+"augmentation program to expand the medical field.  With your expertise and "
+"augmentations, you can perform precise surgery with little assitance."
+msgstr ""
+"作为国内最顶尖的外科医生之一，你被选中参加生化强化项目以增强你在医学方面的造诣。现在依靠自身专长和生化插件协助，你可以毫不费力地完成精细的外科手术。"
+
+#: lang/json/professions_from_json.py
+msgctxt "profession_female"
+msgid "Bionic Surgeon"
+msgstr "生化外科医生"
+
+#. ~ Profession (female Bionic Surgeon) description
+#: lang/json/professions_from_json.py
+msgctxt "prof_desc_female"
+msgid ""
+"As one of the top surgeons in the country, you were chosen for an "
+"augmentation program to expand the medical field.  With your expertise and "
+"augmentations, you can perform precise surgery with little assitance."
+msgstr ""
+"作为国内最顶尖的外科医生之一，你被选中参加生化强化项目以增强你在医学方面的造诣。现在依靠自身专长和生化插件协助，你可以毫不费力地完成精细的外科手术。"
+
+#: lang/json/professions_from_json.py
+msgctxt "profession_male"
 msgid "Rookie"
 msgstr "新手"
 
@@ -85492,11 +86054,6 @@ msgid ""
 "commercial robots, but you never thought your survival might depend on it."
 msgstr "在末日来临之前，你的业余爱好是非法将民用机器人重新编程并改装，但你从来没有想过你的生存可能依赖于你的这项爱好。"
 
-#: lang/json/professions_from_json.py
-msgctxt "profession_male"
-msgid "Bionic Surgeon"
-msgstr "生化外科医生"
-
 #. ~ Profession (male Bionic Surgeon) description
 #: lang/json/professions_from_json.py
 msgctxt "prof_desc_male"
@@ -85506,11 +86063,6 @@ msgid ""
 "augmentations, you can preform precise surgery with little assitance."
 msgstr ""
 "作为国内最顶尖的外科医生之一，你被选中参加生化强化项目以增强你在医学方面的造诣。现在依靠自身专长和生化插件协助，你可以毫不费力地完成精细的外科手术。"
-
-#: lang/json/professions_from_json.py
-msgctxt "profession_female"
-msgid "Bionic Surgeon"
-msgstr "生化外科医生"
 
 #. ~ Profession (female Bionic Surgeon) description
 #: lang/json/professions_from_json.py
@@ -86035,7 +86587,6 @@ msgstr "生化插件"
 
 #. ~ Crafting recipes subcategory of 'ELECTRONIC' category
 #. ~ Crafting recipes subcategory of 'OTHER' category
-#. ~ Crafting recipes subcategory of 'ELECTRONIC' category
 #: lang/json/recipe_category_from_json.py
 msgid "PARTS"
 msgstr "部件"
@@ -86114,11 +86665,6 @@ msgstr "营地"
 #: lang/json/recipe_category_from_json.py
 msgid "EXPANSIONS"
 msgstr "扩展区"
-
-#. ~ Crafting recipes subcategory of 'ELECTRONIC' category
-#: lang/json/recipe_category_from_json.py
-msgid "ROBOTS"
-msgstr "机器人"
 
 #: lang/json/recipe_from_json.py
 msgid "Stuff THE MAN doesn't want you to know"
@@ -88533,6 +89079,12 @@ msgid ""
 "Broken limb pinned you down?  Hospital might have next gen tech to get you "
 "going."
 msgstr "四肢断掉，行动困难？医院里面可能有下一代科技，能让你重获新生。"
+
+#: lang/json/snippet_from_json.py
+msgid ""
+"Don't be afraid to make the game easier on yourself.  Worlds can be made to "
+"spawn with more resources."
+msgstr "不要害怕让游戏变得更容易。调整世界设置能让游戏生成更多物品。"
 
 #: lang/json/snippet_from_json.py
 msgid ""
@@ -101154,6 +101706,28 @@ msgid ""
 msgstr "一棵体型巨大的落叶树，分类学上属于栎属，在新英格兰地区四处可见。你可以用合适的工具砍倒它。"
 
 #: lang/json/terrain_from_json.py
+msgid "cottonwood tree"
+msgstr "棉白杨树"
+
+#. ~ Description for cottonwood tree
+#: lang/json/terrain_from_json.py
+msgid ""
+"A large tree belonging to the 'Populus' genus, commonly found throughout New"
+" England region.  You could cut it down with the right tools."
+msgstr "一棵体型巨大的树，分类学上属于杨属，在新英格兰地区四处可见。你可以用合适的工具砍倒它。"
+
+#: lang/json/terrain_from_json.py
+msgid "elm tree"
+msgstr "榆树"
+
+#. ~ Description for elm tree
+#: lang/json/terrain_from_json.py
+msgid ""
+"A large tree belonging to the 'Ulmus' genus, commonly found throughout New "
+"England region.  You could cut it down with the right tools."
+msgstr "一棵体型巨大的树，分类学上属于榆属，在新英格兰地区四处可见。你可以用合适的工具砍倒它。"
+
+#: lang/json/terrain_from_json.py
 msgid "dead tree"
 msgstr "枯树"
 
@@ -101602,6 +102176,20 @@ msgstr "一小丛长着芳香的蓝色绣球花的灌木丛。"
 #: lang/json/terrain_from_json.py
 msgid "A fat hydrangea bush that currently has no blooms."
 msgstr "一小丛还没开绣球花的灌木丛。"
+
+#: lang/json/terrain_from_json.py
+msgid "lilac bush"
+msgstr "丁香花丛"
+
+#. ~ Description for lilac bush
+#: lang/json/terrain_from_json.py
+msgid "A wide, bush of bright pinkish purple lilacs."
+msgstr "一小丛长着鲜亮粉紫色丁香花的灌木丛。"
+
+#. ~ Description for lilac bush
+#: lang/json/terrain_from_json.py
+msgid "A wide lilac bush that currently has no blooms."
+msgstr "一小丛还没开丁香花的灌木丛。"
 
 #: lang/json/terrain_from_json.py
 msgid "tree trunk"
@@ -103210,6 +103798,22 @@ msgid "Military Cargo Truck"
 msgstr "军用卡车"
 
 #: lang/json/vehicle_from_json.py
+msgid "Engine Test"
+msgstr "引擎测试"
+
+#: lang/json/vehicle_from_json.py
+msgid "Rapid Destruction"
+msgstr "破坏测试"
+
+#: lang/json/vehicle_from_json.py
+msgid "Cross Split"
+msgstr "十字分离测试"
+
+#: lang/json/vehicle_from_json.py
+msgid "Circle Split"
+msgstr "圆形分离测试"
+
+#: lang/json/vehicle_from_json.py
 msgid "Flatbed Truck"
 msgstr "平板卡车"
 
@@ -104594,8 +105198,7 @@ msgid ""
 " it can be attached to other frames to increase the vehicle's size."
 msgstr "一个轻型金属车辆框架。其他载具部件能够安装在它上面，在它四周增加新的车辆框架，就可以增加车辆大小。"
 
-#: lang/json/vehicle_part_from_json.py lang/json/vehicle_part_from_json.py
-#: src/vehicle_use.cpp
+#: lang/json/vehicle_part_from_json.py src/vehicle_use.cpp
 msgid "aisle lights"
 msgstr "过道灯"
 
@@ -106133,6 +106736,19 @@ msgstr "无定形核心"
 msgid "An amorphous mass, the living heart and brain of a blob vehicle."
 msgstr "一坨形状不定的物质，变形怪载具的活着的心脏和大脑。"
 
+#: lang/json/vehicle_part_from_json.py
+msgid "inert core"
+msgstr "无活性核心"
+
+#. ~ Description for inert core
+#: lang/json/vehicle_part_from_json.py
+msgid ""
+"A sleeping amorphous core, acting as a rotating, universal mount for a "
+"weapon.  If your hands are empty, you can stand next to a tentacle and "
+"'f'ire the weapon by selecting the tile."
+msgstr "一个休眠中的变形怪无定形核心，能够作为自由旋转的通用武器炮塔底座使用。你空着双手紧挨着核心时能够按\"f\"操作它上面所安装的武器开火。"
+
+#. ~ Description for gel spouter
 #. ~ Description for gel spiker
 #. ~ Description for gel lancer
 #. ~ Description for gel razor
@@ -109699,47 +110315,94 @@ msgid "forever"
 msgstr "一直"
 
 #: src/calendar.cpp
-msgctxt "time unit"
-msgid "second"
-msgid_plural "seconds"
-msgstr[0] "秒"
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d 秒"
 
-#: src/calendar.cpp
-msgctxt "time unit"
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "分"
-
-#: src/calendar.cpp
-msgctxt "time unit"
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "小时"
-
-#: src/calendar.cpp
-msgctxt "time unit"
-msgid "day"
-msgid_plural "days"
-msgstr[0] "天"
-
-#: src/calendar.cpp
-msgctxt "time units"
-msgid "season"
-msgid_plural "seasons"
-msgstr[0] "季"
-
-#: src/calendar.cpp
-msgctxt "time unit"
-msgid "year"
-msgid_plural "years"
-msgstr[0] "年"
-
-#. ~ %d is time number, %s is time unit
 #: src/calendar.cpp
 #, c-format
-msgctxt "time duration"
-msgid "%d %s"
-msgstr "%d %s"
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d 分钟"
+
+#: src/calendar.cpp
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d 小时"
+
+#: src/calendar.cpp
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d 天"
+
+#: src/calendar.cpp
+#, c-format
+msgid "%d season"
+msgid_plural "%d seasons"
+msgstr[0] "%d 季"
+
+#: src/calendar.cpp
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d 年"
+
+#. ~ Right-aligned time string. should right-align with other strings with
+#. this same comment
+#: src/calendar.cpp
+msgid "    forever"
+msgstr "    一直"
+
+#. ~ Right-aligned time string. should right-align with other strings with
+#. this same comment
+#: src/calendar.cpp
+#, c-format
+msgid "%3d  second"
+msgid_plural "%3d seconds"
+msgstr[0] "%3d   秒"
+
+#. ~ Right-aligned time string. should right-align with other strings with
+#. this same comment
+#: src/calendar.cpp
+#, c-format
+msgid "%3d  minute"
+msgid_plural "%3d minutes"
+msgstr[0] "%3d 分钟"
+
+#. ~ Right-aligned time string. should right-align with other strings with
+#. this same comment
+#: src/calendar.cpp
+#, c-format
+msgid "%3d    hour"
+msgid_plural "%3d   hours"
+msgstr[0] "%3d 小时"
+
+#. ~ Right-aligned time string. should right-align with other strings with
+#. this same comment
+#: src/calendar.cpp
+#, c-format
+msgid "%3d     day"
+msgid_plural "%3d    days"
+msgstr[0] "%3d   天"
+
+#. ~ Right-aligned time string. should right-align with other strings with
+#. this same comment
+#: src/calendar.cpp
+#, c-format
+msgid "%3d  season"
+msgid_plural "%3d seasons"
+msgstr[0] "%3d   季"
+
+#. ~ Right-aligned time string. should right-align with other strings with
+#. this same comment
+#: src/calendar.cpp
+#, c-format
+msgid "%3d    year"
+msgid_plural "%3d   years"
+msgstr[0] "%3d   年"
 
 #. ~ %1$s - greater units of time (e.g. 3 hours), %2$s - lesser units of time
 #. (e.g. 11 minutes).
@@ -110007,6 +110670,10 @@ msgid "<npcname> needs at least %1$s to use this %2$s with their %3$s."
 msgstr "<npcname> 需要 %1$s 才能用 %3$s 来使用 %2$s。"
 
 #: src/character.cpp
+msgid "Liquid from your inventory has leaked onto the ground."
+msgstr "你物品栏中的液体漏到了地上。"
+
+#: src/character.cpp
 msgid "Some items tumble to the ground."
 msgstr "一些物品滚落在地。"
 
@@ -110043,24 +110710,27 @@ msgid "Right Leg"
 msgstr "右腿"
 
 #: src/character.cpp
-#, c-format
-msgid "(bandaged [%s] & disinfected [%s])"
-msgstr "（已包扎 [%s] &已消毒[%s]）"
+msgid "Select a body part:"
+msgstr "选择身体部位："
 
 #: src/character.cpp
 #, c-format
-msgid "(bandaged [%s])"
-msgstr "（已包扎 [%s] ）"
+msgid "(bandaged [%d] & disinfected [%d])"
+msgstr "（已包扎 [%d] &已消毒[%d]）"
 
 #: src/character.cpp
 #, c-format
-msgid "(disinfected [%s])"
-msgstr "（已消毒[%s]）"
+msgid "(bandaged [%d])"
+msgstr "（已包扎 [%d] ）"
 
 #: src/character.cpp
 #, c-format
-msgid "%d: Exit"
-msgstr "%d：退出"
+msgid "(disinfected [%d])"
+msgstr "（已消毒[%d]）"
+
+#: src/character.cpp
+msgid "No healable part"
+msgstr "没有可治疗的部位"
 
 #: src/character.cpp src/iexamine.cpp
 #, c-format
@@ -110109,16 +110779,36 @@ msgid "No Auto Pickup"
 msgstr "禁用自动拾取"
 
 #: src/clzones.cpp
+msgid "You won't auto-pickup items inside the zone."
+msgstr "你不会自动拾取该区域内的物品。"
+
+#: src/clzones.cpp
 msgid "No NPC Pickup"
 msgstr "禁止 NPC 拾取"
+
+#: src/clzones.cpp
+msgid "Friendly NPCs don't pickup items inside the zone."
+msgstr "友好的NPC不会拾取该区域内的物品。"
 
 #: src/clzones.cpp
 msgid "Loot: Unsorted"
 msgstr "战利品：待整理"
 
 #: src/clzones.cpp
+msgid ""
+"Place to drop unsorted loot. You can use \"sort out loot\" zone-action to "
+"sort items inside. It can overlap with Loot zones of different types."
+msgstr "待整理的战利品所在区域。你可以使用\"整理战利品\"指令自动将该区域内的物品分类。可以与其他战利品区域叠加。"
+
+#: src/clzones.cpp
 msgid "Loot: Food"
 msgstr "战利品：食物"
+
+#: src/clzones.cpp
+msgid ""
+"Destination for comestibles. If more specific food zone is not defined, all "
+"food is moved here."
+msgstr "所有消耗品的分类放置区域。如果未定义专用食品区，则食品也会被分类至该区域。"
 
 #: src/clzones.cpp
 msgctxt "perishable food"
@@ -110126,8 +110816,20 @@ msgid "Loot: P.Food"
 msgstr "战利品：易腐食物"
 
 #: src/clzones.cpp
+msgid ""
+"Destination for perishable comestibles. Does include perishable drinks if "
+"such zone is not specified."
+msgstr "所有易腐消耗品的分类放置区域。如果未定义专用易腐饮料区，则易腐饮料也会被分类至该区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Drink"
 msgstr "战利品：饮料"
+
+#: src/clzones.cpp
+msgid ""
+"Destination for drinks. Does include perishable drinks if such zone is not "
+"specified."
+msgstr "所有饮料的分类放置区域。如果未定义专用易腐饮料区，则易腐饮料也会被分类至该区域。"
 
 #: src/clzones.cpp
 msgctxt "perishable drink"
@@ -110135,8 +110837,16 @@ msgid "Loot: P.Drink"
 msgstr "战利品：易腐饮料"
 
 #: src/clzones.cpp
+msgid "Destination for perishable drinks."
+msgstr "所有易腐饮料的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Guns"
 msgstr "战利品：枪械"
+
+#: src/clzones.cpp
+msgid "Destination for guns, bows and similar weapons."
+msgstr "所有枪械弓弩和远程武器的分类放置区域。"
 
 #: src/clzones.cpp
 msgctxt "gun magazines"
@@ -110144,20 +110854,42 @@ msgid "Loot: Magazines"
 msgstr "战利品：弹匣"
 
 #: src/clzones.cpp
+msgid "Destination for gun magazines."
+msgstr "所有弹匣的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Ammo"
 msgstr "战利品：弹药"
+
+#: src/clzones.cpp
+msgid "Destination for ammo."
+msgstr "所有弹药的分类放置区域。"
 
 #: src/clzones.cpp
 msgid "Loot: Weapons"
 msgstr "战利品：武器"
 
 #: src/clzones.cpp
+msgid "Destination for melee weapons."
+msgstr "所有近战武器的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Tools"
 msgstr "战利品：工具"
 
 #: src/clzones.cpp
+msgid "Destination for tools."
+msgstr "所有工具的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Clothing"
 msgstr "战利品：服装"
+
+#: src/clzones.cpp
+msgid ""
+"Destination for clothing. Does include filthy clothing if such zone is not "
+"specified."
+msgstr "所有衣物的分类放置区域。如果未定义专用肮脏衣物区，则肮脏衣物也会被分类至该区域。"
 
 #: src/clzones.cpp
 msgctxt "filthy clothing"
@@ -110165,24 +110897,48 @@ msgid "Loot: F.Clothing"
 msgstr "战利品：肮脏服装"
 
 #: src/clzones.cpp
+msgid "Destination for filthy clothing."
+msgstr "所有肮脏衣物的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Drugs"
 msgstr "战利品：药品"
+
+#: src/clzones.cpp
+msgid "Destination for drugs and other medical items."
+msgstr "所有药品和其他医疗用品的分类放置区域。"
 
 #: src/clzones.cpp
 msgid "Loot: Books"
 msgstr "战利品：书籍"
 
 #: src/clzones.cpp
+msgid "Destination for books and magazines."
+msgstr "所有书籍杂志的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Mods"
 msgstr "战利品：模组"
+
+#: src/clzones.cpp
+msgid "Destination for firearm modifications and similar items."
+msgstr "所有枪械模组和类似物品的分类放置区域。"
 
 #: src/clzones.cpp
 msgid "Loot: Mutagens"
 msgstr "战利品：诱变剂"
 
 #: src/clzones.cpp
+msgid "Destination for mutagens, serums, and purifiers."
+msgstr "所有诱变剂、血清、净化剂的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Bionics"
 msgstr "战利品：生化插件"
+
+#: src/clzones.cpp
+msgid "Destination for Compact Bionics Modules aka CBMs."
+msgstr "所有生化插件CBM的分类放置区域。"
 
 #: src/clzones.cpp
 msgctxt "vehicle parts"
@@ -110190,20 +110946,42 @@ msgid "Loot: V.Parts"
 msgstr "战利品：载具部件"
 
 #: src/clzones.cpp
+msgid "Destination for vehicle parts."
+msgstr "所有载具部件的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Other"
 msgstr "战利品：其他"
+
+#: src/clzones.cpp
+msgid "Destination for other miscellaneous items."
+msgstr "所有其他物品的分类放置区域。"
 
 #: src/clzones.cpp
 msgid "Loot: Fuel"
 msgstr "战利品：燃料"
 
 #: src/clzones.cpp
+msgid ""
+"Destination for gasoline, diesel, lamp oil and other substances used as a "
+"fuel."
+msgstr "所有汽油、柴油、灯油和其他燃料的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Seeds"
 msgstr "战利品：种子"
 
 #: src/clzones.cpp
+msgid "Destination for seeds, stems and similar items."
+msgstr "所有种子、块茎及类似物品的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Chemical"
 msgstr "战利品：化学品"
+
+#: src/clzones.cpp
+msgid "Destination for chemicals."
+msgstr "所有化学制品的分类放置区域。"
 
 #: src/clzones.cpp
 msgctxt "spare parts"
@@ -110211,12 +110989,26 @@ msgid "Loot: S.Parts"
 msgstr "战利品：零件"
 
 #: src/clzones.cpp
+msgid "Destination for spare parts."
+msgstr "所有零件的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Artifacts"
 msgstr "战利品：神器"
 
 #: src/clzones.cpp
+msgid "Destination for artifacts"
+msgstr "所有神器的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Armor"
 msgstr "战利品：装备"
+
+#: src/clzones.cpp
+msgid ""
+"Destination for armor. Does include filthy armor if such zone is not "
+"specified."
+msgstr "所有装备的分类放置区域。如果未定义专用肮脏装备区，则肮脏装备也会被分类至该区域。"
 
 #: src/clzones.cpp
 msgctxt "filthy armor"
@@ -110224,17 +111016,33 @@ msgid "Loot: F.Armor"
 msgstr "战利品：肮脏装备"
 
 #: src/clzones.cpp
+msgid "Destination for filthy armor."
+msgstr "所有肮脏装备的分类放置区域。"
+
+#: src/clzones.cpp
 msgid "Loot: Wood"
 msgstr "战利品：木材"
+
+#: src/clzones.cpp
+msgid "Destination for firewood and items that can be used as such."
+msgstr "所有柴火和类似物品的分类放置区域。"
 
 #: src/clzones.cpp
 msgid "Loot: Ignore"
 msgstr "战利品：已忽略区"
 
 #: src/clzones.cpp
+msgid "Items inside of this zone are ignored by \"sort out loot\" zone-action."
+msgstr "使用\"整理战利品\"指令将不会整理该区域内的物品。"
+
+#: src/clzones.cpp
 msgctxt "plot of land"
 msgid "Farm: Plot"
 msgstr "农场：耕作区"
+
+#: src/clzones.cpp
+msgid "Designate a farm plot for tilling and planting."
+msgstr "指定一块用于耕作种植的区域。"
 
 #: src/clzones.cpp
 msgid "No seed"
@@ -111527,15 +112335,19 @@ msgstr "你无法拆除它！"
 msgid "Time to complete: "
 msgstr "耗时："
 
+#: src/consumption.cpp
+msgid "That doesn't look edible."
+msgstr "这看起来不能吃。"
+
+#: src/consumption.cpp
+msgid "This is full of dirt after being on the ground."
+msgstr "它太脏了，沾满了泥土，不能食用。"
+
 #: src/consumption.cpp src/iuse.cpp src/iuse.cpp src/iuse.cpp
 #: src/iuse_actor.cpp src/iuse_actor.cpp src/iuse_actor.cpp src/mutation.cpp
 #: src/player.cpp
 msgid "You can't do that while underwater."
 msgstr "你在水下时无法这样做。"
-
-#: src/consumption.cpp
-msgid "That doesn't look edible."
-msgstr "这看起来不能吃。"
 
 #: src/consumption.cpp
 msgid "That doesn't look edible in its current form."
@@ -112728,6 +113540,11 @@ msgstr "设置疲劳值？当前：%d"
 
 #: src/debug_menu.cpp
 #, c-format
+msgid "Set sleep deprivation to? Currently: %d"
+msgstr "设置睡眠不足值？当前：%d"
+
+#: src/debug_menu.cpp
+#, c-format
 msgid "Set %s to? Currently: %d"
 msgstr "设置%s？当前：%d"
 
@@ -113641,10 +114458,10 @@ msgstr "程序尚无法合并两块大地图上的载具，需要先将所有载
 msgid "Your mechanic could not find a vehicle at the garage."
 msgstr "你的机械师未能在车库中找到任何载具。"
 
-#: src/editmap.cpp src/game.cpp src/game.cpp src/handle_action.cpp
-#: src/iexamine.cpp src/iexamine.cpp src/inventory_ui.cpp src/iuse.cpp
-#: src/iuse.cpp src/iuse_actor.cpp src/mission_companion.cpp
-#: src/mission_companion.cpp src/pickup.cpp src/turret.cpp src/vehicle_use.cpp
+#: src/editmap.cpp src/game.cpp src/game.cpp src/iexamine.cpp
+#: src/inventory_ui.cpp src/iuse.cpp src/iuse_actor.cpp
+#: src/mission_companion.cpp src/mission_companion.cpp src/pickup.cpp
+#: src/turret.cpp src/vehicle_use.cpp
 msgid "Cancel"
 msgstr "取消"
 
@@ -116127,6 +116944,10 @@ msgid "Those flames do not burn <npcname>."
 msgstr "<npcname> 没有被火烧到。"
 
 #: src/field.cpp
+msgid "You're painfully electrocuted!"
+msgstr "你痛苦地触电了！"
+
+#: src/field.cpp
 msgid "<npcname> is shocked!"
 msgstr "<npcname> 被电击了！"
 
@@ -116322,7 +117143,7 @@ msgstr "（Y）是，（N）否，（I）忽略类似干扰直到完成。"
 msgid "The weather changed to %s!"
 msgstr "天气转为 %s ！"
 
-#: src/game.cpp
+#: src/game.cpp src/player_hardcoded_effects.cpp
 #, c-format
 msgid "You see %s approaching!"
 msgstr "你看到 %s 正在逼近！"
@@ -116965,7 +117786,7 @@ msgstr "光照："
 #: src/game.cpp
 #, c-format
 msgid "%s, day %d"
-msgstr "%s%d日"
+msgstr "%s，%d日"
 
 #: src/game.cpp
 #, c-format
@@ -117785,6 +118606,11 @@ msgstr "这和你拿走它的地方一样！"
 msgid "You can't pour there!"
 msgstr "你无法倾倒在那里！"
 
+#: src/game.cpp src/item.cpp
+#, c-format
+msgid "The %s froze solid before you could finish."
+msgstr "%s 在你能喝完前就被冻住了。"
+
 #: src/game.cpp
 msgid "Drop where?"
 msgstr "丢在哪里？"
@@ -118097,6 +118923,10 @@ msgstr "你将 %s 放进包裹。"
 #, c-format
 msgid "The %s is already empty!"
 msgstr "%s 已经空了！"
+
+#: src/game.cpp
+msgid "The liquid can't be unloaded in its current state!"
+msgstr "液体无法在当前状态下被倒出！"
 
 #: src/game.cpp
 msgid "Unload what?"
@@ -119482,6 +120312,22 @@ msgid "There's nothing to grab there!"
 msgstr "这里没有可以抓取的东西！"
 
 #: src/handle_action.cpp
+msgid "You cannot haul inside vehicles."
+msgstr "你不能在载具内搬运物品。"
+
+#: src/handle_action.cpp
+msgid "You cannot haul while in deep water."
+msgstr "你不能在深水处搬运物品。"
+
+#: src/handle_action.cpp
+msgid "You cannot haul items here."
+msgstr "你不能在这里搬运物品。"
+
+#: src/handle_action.cpp
+msgid "There are no items to haul here."
+msgstr "没有可以搬运的物品。"
+
+#: src/handle_action.cpp
 msgid "Smash where?"
 msgstr "砸碎哪里？"
 
@@ -119530,10 +120376,6 @@ msgstr "等到午夜"
 #: src/handle_action.cpp
 msgid "Wait till weather changes"
 msgstr "等待直到天气改变"
-
-#: src/handle_action.cpp
-msgid "Exit"
-msgstr "退出"
 
 #: src/handle_action.cpp
 #, c-format
@@ -119701,6 +120543,10 @@ msgstr "你缩在龟壳里无法移动。"
 #: src/handle_action.cpp
 msgid "You can't grab things while you're in your shell."
 msgstr "你缩在龟壳里无法抓住物品。"
+
+#: src/handle_action.cpp
+msgid "You can't haul things while you're in your shell."
+msgstr "你缩在龟壳里无法搬运物品。"
 
 #: src/handle_action.cpp
 msgid "You can't butcher while you're in your shell."
@@ -121200,6 +122046,10 @@ msgid "This toilet is empty."
 msgstr "这个马桶没水了。"
 
 #: src/iexamine.cpp
+msgid "The toilet water is frozen solid!"
+msgstr "厕所水箱内的水已经被冻住了！"
+
+#: src/iexamine.cpp
 msgid "Swipe your ID card?"
 msgstr "刷一下你的ID卡？"
 
@@ -121461,12 +122311,12 @@ msgid "Do what with the door?"
 msgstr "对门做什么？"
 
 #: src/iexamine.cpp
-msgid "Open door."
-msgstr "开门。"
-
-#: src/iexamine.cpp
 msgid "Peek through peephole."
 msgstr "透过猫眼窥视。"
+
+#: src/iexamine.cpp
+msgid "Open door."
+msgstr "开门。"
 
 #: src/iexamine.cpp
 msgid "You peek through the peephole."
@@ -122234,10 +123084,6 @@ msgstr "选择安装生化插件。"
 #: src/iexamine.cpp
 msgid "Choose installed bionic to uninstall."
 msgstr "选择卸载生化插件。"
-
-#: src/iexamine.cpp
-msgid "Do nothing."
-msgstr "什么都不做。"
 
 #: src/iexamine.cpp
 msgid "Choose CBM to install"
@@ -123460,6 +124306,10 @@ msgid "<num> <info>(fits)</info>"
 msgstr "<num> <info>（合身）</info>"
 
 #: src/item.cpp
+msgid "Encumbrance when full: "
+msgstr "装满时累赘度："
+
+#: src/item.cpp
 msgid "Storage: "
 msgstr "容积："
 
@@ -123961,6 +124811,10 @@ msgid " (hallucinogenic)"
 msgstr "（迷幻）"
 
 #: src/item.cpp
+msgid " (dirty)"
+msgstr "（肮脏）"
+
+#: src/item.cpp src/veh_interact.cpp
 msgid " (rotten)"
 msgstr "（腐坏）"
 
@@ -123984,7 +124838,7 @@ msgstr "（热腾腾）"
 msgid " (cold)"
 msgstr "（冰凉）"
 
-#: src/item.cpp
+#: src/item.cpp src/veh_interact.cpp
 msgid " (frozen)"
 msgstr "（冷冻）"
 
@@ -124952,6 +125806,11 @@ msgstr "好吧，但请再也不要给我喂这玩意。我不想在大灾变时
 #, c-format
 msgid "%s knocks it out from your hand!"
 msgstr "%s 一把将它从你手中拍落了！"
+
+#: src/iuse.cpp
+#, c-format
+msgid "You try to feed the %s some %s, but it vanishes!"
+msgstr "你想喂 %s 一些 %s，但它消失了！"
 
 #: src/iuse.cpp
 msgid "You want to feed it the dog food, but it bites your fingers!"
@@ -127009,6 +127868,13 @@ msgstr "你拍了一张 %1$s 的照片，看上去挺 %2$s 的。"
 msgid "%s got in the way of your photo."
 msgstr "%s 挡住了你的拍摄角度。"
 
+#. ~ 1s - name of the photographed NPC, 2s - timestamp of the photo, for
+#. example Year 1, Spring, day 0 08:01:54.
+#: src/iuse.cpp
+#, c-format
+msgid "This is a photo of %1$s. It was taken on %2$s."
+msgstr "这是一张 %1$s 的照片，摄于 %2$s。"
+
 #: src/iuse.cpp
 msgid "You can't see the camera screen, you're blind."
 msgstr "你瞎了，看不见相机屏幕。"
@@ -127546,6 +128412,17 @@ msgstr "你感觉自己好多了，感染几乎就要不存在了。"
 #: src/iuse.cpp
 msgid "You feel AMAZING!"
 msgstr "你感觉棒～极～了！"
+
+#: src/iuse.cpp
+#, c-format
+msgid "You pop a %s."
+msgstr "你服用了一些 %s。"
+
+#: src/iuse.cpp
+msgid ""
+"Simply taking more magnesium won't help. You have to go to sleep for it to "
+"work."
+msgstr "服用更多的镁片没有任何作用。你得睡觉才能让它起效。"
 
 #: src/iuse_actor.cpp
 #, c-format
@@ -129773,10 +130650,6 @@ msgid "<C|c>olors"
 msgstr "<C>色彩设置"
 
 #: src/main_menu.cpp
-msgid " CREDITS "
-msgstr "贡献者"
-
-#: src/main_menu.cpp
 msgid "Unable to make config directory. Check permissions."
 msgstr "无法创建设置文件夹。请检查权限。"
 
@@ -130035,14 +130908,6 @@ msgstr "打开禁闭室"
 #: src/mapgen.cpp
 msgid "Missile Controls"
 msgstr "导弹控制器"
-
-#: src/mapgen.cpp
-msgid "Launch Missile"
-msgstr "发射导弹"
-
-#: src/mapgen.cpp
-msgid "Disarm Missile"
-msgstr "解除导弹"
 
 #: src/mapgen.cpp
 msgid "EnviroCom OS v2.03"
@@ -130753,22 +131618,6 @@ msgstr "中立"
 msgctxt "message type"
 msgid "debug"
 msgstr "调试"
-
-#. ~ Change '7' in %7s to the maximum display width of all time units in the
-#. target language.
-#: src/messages.cpp
-#, c-format
-msgctxt "message log"
-msgid "%7s"
-msgstr "%7s"
-
-#. ~ Time format in the message log window, %3d is the time number, %s is the
-#. (already aligned) time unit.
-#: src/messages.cpp
-#, c-format
-msgctxt "message log"
-msgid "%3d %s "
-msgstr "%3d %s "
 
 #: src/messages.cpp
 #, c-format
@@ -135781,6 +136630,12 @@ msgid "Images of your past life flash before you."
 msgstr "你过往的生活片段在你眼前闪过。"
 
 #: src/mutation_data.cpp
+msgctxt "memorial_male"
+msgid "Crossed a threshold"
+msgstr "超越极限"
+
+#: src/mutation_data.cpp
+msgctxt "memorial_female"
 msgid "Crossed a threshold"
 msgstr "超越极限"
 
@@ -140944,7 +141799,7 @@ msgid "You feel like you haven't slept in days."
 msgstr "你觉得你好像好几天没有睡过觉了。"
 
 #: src/player.cpp
-msgid "You're too tired to stop yawning."
+msgid "You're too physically tired to stop yawning."
 msgstr "你太疲劳了，不停的打哈欠。"
 
 #: src/player.cpp
@@ -140954,6 +141809,35 @@ msgstr "还有多久才能睡觉？"
 #: src/player.cpp
 msgid "*yawn* You should really get some sleep."
 msgstr "*哈欠* 你真的该睡觉了。"
+
+#: src/player.cpp
+msgid "Your mind feels tired. It's been a while since you've slept well."
+msgstr "你的头脑感到疲倦。你已经很久没睡好觉了。"
+
+#: src/player.cpp
+msgid ""
+"Your mind feels foggy from lack of good sleep, and your eyes keep trying to "
+"close against your will."
+msgstr "你的头脑会因为睡眠不足而感到有些迷糊，你的眼睛总是试图违背你的意愿闭上。"
+
+#: src/player.cpp
+msgid ""
+"Your mind feels weary, and you dread every wakeful minute that passes. You "
+"crave sleep, and feel like you're about to collapse."
+msgstr "你的头脑感到疲倦，每醒一分钟都让你十分恐惧。你渴望睡觉，感觉自己快要崩溃了。"
+
+#: src/player.cpp
+msgid ""
+"You haven't slept decently for so long that your whole body is screaming for"
+" mercy. It's a miracle that you're still awake, but it just feels like a "
+"curse now."
+msgstr "你已经很久没睡过一个好觉了，全身上下都在发出求饶的呐喊。你现在还醒着简直是个奇迹，但现在感觉就像是个诅咒。"
+
+#: src/player.cpp
+msgid ""
+"Your body collapses to sleep deprivation, your neglected fatigue rushing "
+"back all at once, and you pass out on the spot."
+msgstr "你的身体因为睡眠不足而倒下了，之前被你所忽视的疲劳一下子又卷土重来，你当场就晕了过去。"
 
 #: src/player.cpp
 #, c-format
@@ -141627,6 +142511,68 @@ msgstr "你失足跌倒！"
 #: src/player.cpp
 msgid "You feel tired..."
 msgstr "你感到浑身乏力……"
+
+#: src/player.cpp
+msgid "You tiredly rub your eyes."
+msgstr "你累得揉了揉眼睛。"
+
+#: src/player.cpp
+msgid "You let out a small yawn."
+msgstr "你打了个小哈欠。"
+
+#: src/player.cpp
+msgid "You stretch your back."
+msgstr "你伸了伸懒腰。"
+
+#: src/player.cpp
+msgid "You feel mentally tired."
+msgstr "你觉得精神很疲倦。"
+
+#: src/player.cpp
+msgid "You feel lightheaded for a moment."
+msgstr "你觉得一阵头昏眼花。"
+
+#: src/player.cpp
+msgid "Your muscles spasm uncomfortably."
+msgstr "你的肌肉难受地痉挛。"
+
+#: src/player.cpp
+msgid "Your vision blurs a little."
+msgstr "你的视野一阵阵模糊。"
+
+#: src/player.cpp
+msgid "Your mind lapses into unawareness briefly."
+msgstr "你的头脑会短暂地陷入无意识。"
+
+#: src/player.cpp
+msgid "Your muscles ache in stressfully unpredictable ways."
+msgstr "你的肌肉反复无常地剧烈疼痛。"
+
+#: src/player.cpp
+msgid "You have a distractingly painful headache."
+msgstr "你感到一阵让人分心的头痛。"
+
+#: src/player.cpp
+msgid "You feel heartburn and an acid taste in your mouth."
+msgstr "你感到腹部灼热，嘴中反酸。"
+
+#: src/player.cpp
+msgid "Your mind is so tired that you feel you can't trust your eyes anymore."
+msgstr "你的头脑太累了，以至于你觉得你再也不能相信你的眼睛了。"
+
+#: src/player.cpp
+msgid ""
+"Your muscles spasm uncontrollably, and you have trouble keeping your "
+"balance."
+msgstr "你的肌肉无法控制地痉挛，你艰难地保持着自身平衡。"
+
+#: src/player.cpp
+msgid "Your shaking legs make you stumble."
+msgstr "你不停颤抖的腿把自己绊倒了。"
+
+#: src/player.cpp
+msgid "You fall over!"
+msgstr "你摔倒了！"
 
 #. ~ %s is bodypart
 #: src/player.cpp
@@ -142442,6 +143388,15 @@ msgid "Maybe a nice thick web would help you sleep."
 msgstr "也许一张网可以帮助你睡眠。"
 
 #: src/player.cpp
+msgid ""
+"You lay beneath the waves' embrace, gazing up through the water's surface..."
+msgstr "你躺在波涛的怀抱之下，抬头凝视着水面上方……"
+
+#: src/player.cpp
+msgid "You settle into the water and begin to drowse..."
+msgstr "你沉入水中，开始陷入沉睡……"
+
+#: src/player.cpp
 msgid "This is a comfortable place to sleep."
 msgstr "这是个睡觉的好地方。"
 
@@ -142574,6 +143529,18 @@ msgid "%s tries to dodge but there's no room!"
 msgstr "%s 想要躲闪，但却没有腾挪的空间！"
 
 #: src/player.cpp
+msgid "You start hauling items along the ground."
+msgstr "你开始搬运地面上的物品。"
+
+#: src/player.cpp
+msgid "Your hands are not free, which makes hauling slower."
+msgstr "你的手上拿有其它物品，这将使搬运物品更慢。"
+
+#: src/player.cpp
+msgid "You stop hauling items."
+msgstr "你停止搬运地面上的物品。"
+
+#: src/player.cpp
 msgid "Your body strains under the weight!"
 msgstr "你的身体由于负重过高而感到疼痛！"
 
@@ -142595,6 +143562,11 @@ msgstr "任务 \"%s\" 成功。"
 #: src/player.cpp
 msgid "Your heart races as you recall your most recent hunt."
 msgstr "你想到最近的狩猎就心跳加速。"
+
+#: src/player.cpp
+#, c-format
+msgid "Your knowledge of %s begins to fade, but your memory banks retain it!"
+msgstr "你的 %s 技能等级开始衰退，但你的量子存储器保留了它！"
 
 #: src/player.cpp
 #, c-format
@@ -143416,6 +144388,12 @@ msgstr "死于严重感染。"
 #: src/player_hardcoded_effects.cpp
 msgid "You feel well rested."
 msgstr "你觉得精神焕发。"
+
+#: src/player_hardcoded_effects.cpp
+msgid ""
+"You feel physically rested, but you haven't been able to catch up on your "
+"missed sleep yet."
+msgstr "你感觉身体已经得到了休息，但还没有补足之前所缺乏的睡眠。"
 
 #: src/player_hardcoded_effects.cpp
 msgid "It's too bright to sleep."
@@ -146757,6 +147735,11 @@ msgstr "模组列表"
 #: src/worldfactory.cpp
 msgid "Mod Load Order"
 msgstr "模组载入顺序"
+
+#: src/worldfactory.cpp
+#, c-format
+msgid "... %s = View full description "
+msgstr "... %s = 显示完整说明"
 
 #: src/worldfactory.cpp
 msgid "--NO AVAILABLE MODS--"
