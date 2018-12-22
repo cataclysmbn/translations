@@ -4,7 +4,6 @@
 # shinmuro <shinmuro@gmail.com>, 2018
 # Vault3024, 2018
 # Alvein, 2018
-# YueKaburagi, 2018
 # Brett Dong <brett.browning.dong@gmail.com>, 2018
 # 02a55f6b0b75a11ad1dedf9f8b4d9b4f, 2018
 # 1 1, 2018
@@ -13,13 +12,14 @@
 # 山田太郎, 2018
 # TEATIME <teatime@r7.dion.ne.jp>, 2018
 # zojirushi, 2018
+# YueKaburagi, 2018
 # Pigmentblue15, 2018
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-dda 0.C\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-08 22:12+0800\n"
+"POT-Creation-Date: 2018-12-14 18:37+0800\n"
 "PO-Revision-Date: 2018-04-26 14:47+0000\n"
 "Last-Translator: Pigmentblue15, 2018\n"
 "Language-Team: Japanese (https://www.transifex.com/cataclysm-dda-translators/teams/2217/ja/)\n"
@@ -6472,8 +6472,9 @@ msgstr[0] "片眼鏡"
 #: lang/json/ARMOR_from_json.py
 msgid ""
 "An essential article of the gentleman's apparel.  Also corrects near-"
-"sightedness.  You can use this to focus sunlight."
-msgstr "紳士の基本装備です。近視を補正してくれます。使用すると太陽光を一点に集中させます。"
+"sightedness.  The concave lenses diffuse the sunlight, rendering them "
+"useless for starting fires."
+msgstr "紳士服に不可欠な近視用の片眼鏡です。凹レンズは太陽光を拡散させるので、これで火をつけることはできません。"
 
 #: lang/json/ARMOR_from_json.py
 msgid "pair of reading glasses"
@@ -16194,6 +16195,20 @@ msgid ""
 "This is a liquid form of sodium hydroxide.  It is highly corrosive, handle "
 "with care."
 msgstr "苛性ソーダの液体です。非常に腐食性が高いため、取り扱いには注意が必要です。"
+
+#: lang/json/COMESTIBLE_from_json.py
+msgid "ether"
+msgid_plural "ether"
+msgstr[0] "ジエチルエーテル"
+
+#. ~ Description for ether
+#: lang/json/COMESTIBLE_from_json.py
+msgid ""
+"Diethyl ether largely supplanted the use of chloroform as a general "
+"anesthetic due to ether's more favorable therapeutic index, that is, a "
+"greater difference between an effective dose and a potentially toxic dose."
+msgstr ""
+"ジエチルエーテルは効果が表れる投与量と身体に悪影響をもたらす投与量の差が大きいため、一般的な麻酔としてのクロロホルムのシェアを大きく奪いました。"
 
 #: lang/json/COMESTIBLE_from_json.py
 msgid "diet pill"
@@ -26394,6 +26409,16 @@ msgid "A big, square plastic bucket usually used for carrying ice cream."
 msgstr "一般的にはアイスクリームを保管するために使う、プラスチック製の正方形の箱です。"
 
 #: lang/json/CONTAINER_from_json.py
+msgid "test tube"
+msgid_plural "test tubes"
+msgstr[0] "試験管(50ml)"
+
+#. ~ Description for test tube
+#: lang/json/CONTAINER_from_json.py
+msgid "A 50ml laboratory cylindrical test tube, with a rubber stopper."
+msgstr "ゴム栓が付属した実験用の50ml試験管です。"
+
+#: lang/json/CONTAINER_from_json.py
 msgid "blood draw kit"
 msgid_plural "blood draw kits"
 msgstr[0] "採血キット(250ml)"
@@ -26954,10 +26979,10 @@ msgstr "火の傍"
 #. ~ Description for nearby fire
 #. ~ Description for muscle
 #. ~ Description for a smoking device and a source of flame
+#. ~ Description for abstract map
 #. ~ Description for seeing this is a bug
 #. ~ Description for weapon
-#: lang/json/GENERIC_from_json.py lang/json/GENERIC_from_json.py
-#: lang/json/TOOL_from_json.py lang/json/TOOL_from_json.py
+#: lang/json/GENERIC_from_json.py lang/json/TOOL_from_json.py
 #: lang/json/skill_from_json.py
 msgid "seeing this is a bug"
 msgid_plural "seeing this is a bugs"
@@ -30819,25 +30844,6 @@ msgid ""
 msgstr "長い棒に大型の刃を取り付けた武器です。かなりの攻撃力があります。"
 
 #: lang/json/GENERIC_from_json.py
-msgid "military operations map"
-msgid_plural "military operations maps"
-msgstr[0] "軍事作戦地図"
-
-#. ~ Use action message for military operations map.
-#: lang/json/GENERIC_from_json.py
-msgid "You add roads and facilities to your map."
-msgstr "マップに道路や軍事施設を記入しました。"
-
-#. ~ Description for military operations map
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"This is a printed topographical map of the local area.  Originally of "
-"military origin, it details the locations of evacuation centers and military"
-" facilities.  Using it will add points of interest to your map."
-msgstr ""
-"周辺地域の地形図を印刷したものです。元は軍事用データのようで、避難所や軍事施設の位置が詳細に記録されています。使用するとマップに内容を書き写せます。"
-
-#: lang/json/GENERIC_from_json.py
 msgid "frying pan"
 msgid_plural "frying pans"
 msgstr[0] "フライパン"
@@ -30930,44 +30936,6 @@ msgstr ""
 "25Lの容量を持つ非常に大きな鍋です。食料入りの瓶をたっぷりの水で煮沸して瓶詰めを作るのが主な用途ですが、一般的な調理も可能です。瓶詰め加工には大量の水が必要ですが、加工後の水は煮沸されて綺麗な水になります。一度に数個しか煮沸しない場合は、石などを鍋に入れて水位を上げ、瓶の蓋まで水に浸かるようにしましょう。"
 
 #: lang/json/GENERIC_from_json.py
-msgid "restaurant guide"
-msgid_plural "restaurant guides"
-msgstr[0] "レストランガイドマップ"
-
-#. ~ Use action message for restaurant guide.
-#: lang/json/GENERIC_from_json.py
-msgid "You add roads and restaurants to your map."
-msgstr "マップに道路や飲食施設を記入しました。"
-
-#. ~ Description for restaurant guide
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"This is glossy printed pamphlet that details dining establishments in the "
-"local area.  Printed by the Chamber of Commerce, it lists the addresses of "
-"all the best diners and bars.  Using it will add points of interest to your "
-"map."
-msgstr ""
-"商工会議所が発行した周辺地域のガイドマップです。レストランや酒場など、飲食施設のリストが掲載されています。使用するとマップに内容を書き写せます。"
-
-#: lang/json/GENERIC_from_json.py
-msgid "road map"
-msgid_plural "road maps"
-msgstr[0] "道路地図"
-
-#. ~ Use action message for road map.
-#: lang/json/GENERIC_from_json.py
-msgid "You add roads and points of interest to your map."
-msgstr "マップに道路や気になる地点を記入しました。"
-
-#. ~ Description for road map
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"This is a road map for the local area.  Listing information on civic sites "
-"like hospitals and police stations, it can be used to add points of interest"
-" to your map."
-msgstr "周辺地域の道路地図です。病院や警察署などが記されています。使用すると内容をマップに書き写せます。"
-
-#: lang/json/GENERIC_from_json.py
 msgid "stone pot"
 msgid_plural "stone pots"
 msgstr[0] "石鍋"
@@ -30995,24 +30963,6 @@ msgid ""
 msgstr "この瓶には発酵中のザワークラウトが入っています。発酵が終わったら密封して保存できます。"
 
 #: lang/json/GENERIC_from_json.py
-msgid "survivor's map"
-msgid_plural "survivor's maps"
-msgstr[0] "生存者の地図"
-
-#. ~ Use action message for survivor's map.
-#: lang/json/GENERIC_from_json.py
-msgid "You add roads and possible supply points to your map."
-msgstr "マップに道路や物資調達地点を記入しました。"
-
-#. ~ Description for survivor's map
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"This is a hand-drawn map of the local area.  Whomever created it has marked "
-"down the locations of nearby supply sources including gun stores and gas "
-"stations.  Using it will add points of interest to your map."
-msgstr "周辺地域の手書き地図です。銃砲店やガソリンスタンドなど、物資があると思しき箇所が記されています。使用すると内容をマップ上に写します。"
-
-#: lang/json/GENERIC_from_json.py
 msgid "teapot"
 msgid_plural "teapots"
 msgstr[0] "ティーポット"
@@ -31033,24 +30983,6 @@ msgid ""
 "A telescoping umbrella which collapses down for easy storage, useful for "
 "keeping dry when wielded."
 msgstr "折り畳み傘です。手に持つと濡れずに済みます。"
-
-#: lang/json/GENERIC_from_json.py
-msgid "tourist guide"
-msgid_plural "tourist guides"
-msgstr[0] "観光ガイドマップ"
-
-#. ~ Use action message for tourist guide.
-#: lang/json/GENERIC_from_json.py
-msgid "You add roads and tourist attractions to your map."
-msgstr "マップに道路や観光名所を記入しました。"
-
-#. ~ Description for tourist guide
-#: lang/json/GENERIC_from_json.py
-msgid ""
-"This is glossy printed pamphlet for tourists that details local hotels and "
-"attractions."
-msgstr ""
-"観光客の為に発行された周辺地域のガイドマップです。観光名所やホテルの場所など、旅の指針となる情報が記されています。使用すると内容をマップに書き写せます。"
 
 #: lang/json/GENERIC_from_json.py
 msgid "umbrella"
@@ -31703,12 +31635,12 @@ msgstr[0] "UPS互換充電ステーション"
 #: lang/json/GENERIC_from_json.py
 msgid ""
 "A Unified Power System recharging station designed to operate on vehicle "
-"power.  Once installed in a vehicle storage space and turned on from vehicle"
-" controls, it will slowly charge all tools with rechargeable batteries in "
-"that space.  The system can only be installed in existing storage "
-"compartments."
+"power.  Once installed in a vehicle storage space and turned on from a "
+"dashboard or electronics control unit, it will slowly charge all tools with "
+"rechargeable batteries in that space.  The system can only be installed in "
+"existing storage compartments."
 msgstr ""
-"車両電源から給電できるよう設計された、UPS用の充電ステーションです。車両の積載空間に取り付けた後に制御装置から起動し、対応する工具を置けばゆっくりと充電されます。なお、このステーションは積載空間が無い場所には取り付けられません。"
+"車両電源から給電できるよう設計された、UPS用の充電ステーションです。車両の積載スペースに取り付けてからダッシュボードや電子制御ユニットを操作して電源を入れると、積載スペース内の充電可能な工具がゆっくりと充電されます。なお、このステーションは積載スペースが無い場所には取り付けられません。"
 
 #: lang/json/GENERIC_from_json.py lang/json/vehicle_part_from_json.py
 #: lang/json/vehicle_part_from_json.py
@@ -31921,6 +31853,120 @@ msgstr[0] "タレット台"
 #: lang/json/GENERIC_from_json.py
 msgid "A universal mount for weapons intended to be installed as turrets."
 msgstr "銃器のタレットとして設置することを想定した汎用的な台座です。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "abstract map"
+msgid_plural "abstract maps"
+msgstr[0] "地図ベース"
+
+#: lang/json/GENERIC_from_json.py
+msgid "military operations map"
+msgid_plural "military operations maps"
+msgstr[0] "軍事作戦地図"
+
+#. ~ Use action message for military operations map.
+#. ~ Use action message for restaurant guide.
+#: lang/json/GENERIC_from_json.py
+msgid "You add roads and restaurants to your map."
+msgstr "マップに道路や飲食施設を記入しました。"
+
+#. ~ Description for military operations map
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"This is a printed topographical map of the local area.  Originally of "
+"military origin, it details the locations of evacuation centers and military"
+" facilities.  Using it will add points of interest to your map."
+msgstr ""
+"周辺地域の地形図を印刷したものです。元は軍事用データのようで、避難所や軍事施設の位置が詳細に記録されています。使用するとマップに内容を書き写せます。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "survivor's map"
+msgid_plural "survivor's maps"
+msgstr[0] "生存者の地図"
+
+#. ~ Use action message for survivor's map.
+#: lang/json/GENERIC_from_json.py
+msgid "You add roads and possible supply points to your map."
+msgstr "マップに道路や物資調達地点を記入しました。"
+
+#. ~ Description for survivor's map
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"This is a hand-drawn map of the local area.  Whomever created it has marked "
+"down the locations of nearby supply sources including gun stores and gas "
+"stations.  Using it will add points of interest to your map."
+msgstr "周辺地域の手書き地図です。銃砲店やガソリンスタンドなど、物資があると思しき箇所が記されています。使用すると内容をマップ上に写します。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "road map"
+msgid_plural "road maps"
+msgstr[0] "道路地図"
+
+#. ~ Use action message for road map.
+#: lang/json/GENERIC_from_json.py
+msgid "You add roads and points of interest to your map."
+msgstr "マップに道路や気になる地点を記入しました。"
+
+#. ~ Description for road map
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"This is a road map for the local area.  Listing information on civic sites "
+"like hospitals and police stations, it can be used to add points of interest"
+" to your map."
+msgstr "周辺地域の道路地図です。病院や警察署などが記されています。使用すると内容をマップに書き写せます。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "trail guide"
+msgid_plural "trail guides"
+msgstr[0] "自然歩道ガイド"
+
+#. ~ Use action message for trail guide.
+#: lang/json/GENERIC_from_json.py
+msgid "You add trails and trailheads to your map."
+msgstr "地図に自然歩道やその入口を記入しました。"
+
+#. ~ Description for trail guide
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"This is a printed guide to the best local trails.  It has general details "
+"about the trails, trailhead amenities, suggestions for the best thru-hikes, "
+"and advice on interacting with local wildlife in a responsible and "
+"respectful manner."
+msgstr ""
+"地域の自然歩道を詳しく記したガイドマップです。自然歩道やその入口にある施設の紹介、お勧めのスルーハイキングコース、責任と敬意をもって野生動物と関わるためのマナーなどが書かれています。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "tourist guide"
+msgid_plural "tourist guides"
+msgstr[0] "観光ガイドマップ"
+
+#. ~ Use action message for tourist guide.
+#: lang/json/GENERIC_from_json.py
+msgid "You add roads and tourist attractions to your map."
+msgstr "マップに道路や観光名所を記入しました。"
+
+#. ~ Description for tourist guide
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"This is glossy printed pamphlet for tourists that details local hotels and "
+"attractions."
+msgstr ""
+"観光客の為に発行された周辺地域のガイドマップです。観光名所やホテルの場所など、旅の指針となる情報が記されています。使用すると内容をマップに書き写せます。"
+
+#: lang/json/GENERIC_from_json.py
+msgid "restaurant guide"
+msgid_plural "restaurant guides"
+msgstr[0] "レストランガイドマップ"
+
+#. ~ Description for restaurant guide
+#: lang/json/GENERIC_from_json.py
+msgid ""
+"This is glossy printed pamphlet that details dining establishments in the "
+"local area.  Printed by the Chamber of Commerce, it lists the addresses of "
+"all the best diners and bars.  Using it will add points of interest to your "
+"map."
+msgstr ""
+"商工会議所が発行した周辺地域のガイドマップです。レストランや酒場など、飲食施設のリストが掲載されています。使用するとマップに内容を書き写せます。"
 
 #: lang/json/GENERIC_from_json.py
 msgid "The Spirit of Aikido"
@@ -33244,6 +33290,16 @@ msgid ""
 "A compact lightweight alternator used to power small vehicle electrical "
 "systems."
 msgstr "小型で軽いオルタネータです。小型車両の電気系統に電力を供給する為に使用します。"
+
+#: lang/json/GENERIC_from_json.py lang/json/vehicle_part_from_json.py
+msgid "bicycle alternator"
+msgid_plural "bicycle alternators"
+msgstr[0] "自転車用オルタネーター"
+
+#. ~ Description for bicycle alternator
+#: lang/json/GENERIC_from_json.py
+msgid "A very lightweight alternator used to power a bicycle's headlights."
+msgstr "自転車のライトに電力を供給する非常に軽いオルタネーターです。"
 
 #: lang/json/GENERIC_from_json.py lang/json/vehicle_part_from_json.py
 msgid "truck alternator"
@@ -35445,6 +35501,10 @@ msgstr "薬品"
 #: lang/json/ITEM_CATEGORY_from_json.py
 msgid "BOOKS"
 msgstr "本"
+
+#: lang/json/ITEM_CATEGORY_from_json.py
+msgid "MAPS"
+msgstr "地図"
 
 #. ~ Crafting recipes subcategory of 'WEAPON' category
 #: lang/json/ITEM_CATEGORY_from_json.py lang/json/recipe_category_from_json.py
@@ -38737,7 +38797,7 @@ msgid ""
 " scarred.  It shuffles as it walks."
 msgstr "このクマの目には生気がなく、身体は引き裂かれボロボロに傷付き、黒い液体が滲み出ています。足を引き摺りながら歩いています。"
 
-#: lang/json/MONSTER_from_json.py
+#: lang/json/MONSTER_from_json.py lang/json/snippet_from_json.py
 msgid "zombie"
 msgstr "ゾンビ"
 
@@ -39226,7 +39286,7 @@ msgstr "煙幕ゾンビ"
 msgid ""
 "A blackened and twisted naked human body, strips of flesh hang from its "
 "body, and it emits a constant haze of thick black smoke."
-msgstr "黒く変色し、捩れた裸の人体から肉帯が垂れ下がっており、その身体からは濃い黒煙が一定間隔で放出されています。"
+msgstr "黒く変色し、捩れた裸の人体から肉帯が垂れ下がっており、その身体からは濃い黒煙が絶え間なく放出されています。"
 
 #: lang/json/MONSTER_from_json.py
 msgid "zombie soldier"
@@ -48552,7 +48612,7 @@ msgstr "ライターの火を着けました。"
 #: lang/json/TOOL_from_json.py src/game.cpp src/gates.cpp src/gates.cpp
 #: src/iexamine.cpp src/iexamine.cpp
 msgid "Nothing happens."
-msgstr "何も起きなかった。"
+msgstr "何も起きませんでした。"
 
 #. ~ Description for refillable lighter
 #: lang/json/TOOL_from_json.py
@@ -57605,6 +57665,30 @@ msgstr "過充電"
 #: lang/json/effects_from_json.py
 msgid "You've been struck by lightning, and feel... different."
 msgstr "電撃に打たれ、何か...今までと違う気分になっています。"
+
+#: lang/json/effects_from_json.py
+msgid "Story Denied"
+msgstr "説明拒否"
+
+#. ~ Description of effect 'Story Denied'.
+#: lang/json/effects_from_json.py
+msgid ""
+"AI tag used when you already asked an NPC for a detail in their survival "
+"story and they don't want to tell you again right now.  This is a bug if you"
+" have it."
+msgstr ""
+"詳細なサバイバルストーリーを訪ねられたNPCが今は語りたくない場合のAIタグです。プレイヤーにこのタグが付いている時はバグが発生しています。"
+
+#: lang/json/effects_from_json.py
+msgid "Religious Offence"
+msgstr "信仰上の怒り"
+
+#. ~ Description of effect 'Religious Offence'.
+#: lang/json/effects_from_json.py
+msgid ""
+"AI tag used when you offended an NPC with a specific conversation option.  "
+"This is a bug if you have it."
+msgstr "特定の会話でNPCが怒った時のAIタグです。プレイヤーにこのタグが付いている時はバグが発生しています。"
 
 #: lang/json/effects_from_json.py
 msgid "Stuck in a light snare"
@@ -67243,7 +67327,7 @@ msgstr "放射線を測定する"
 
 #: lang/json/item_action_from_json.py lang/json/item_action_from_json.py
 #: lang/json/talk_topic_from_json.py lang/json/talk_topic_from_json.py
-#: src/game_inventory.cpp
+#: lang/json/talk_topic_from_json.py src/game_inventory.cpp
 msgid "..."
 msgstr "..."
 
@@ -68831,6 +68915,10 @@ msgid "Throw Item"
 msgstr "アイテムを投げる"
 
 #: lang/json/keybinding_from_json.py
+msgid "Blind Throw Item"
+msgstr "アイテムを投げ込む"
+
+#: lang/json/keybinding_from_json.py
 msgid "Fire Wielded Item"
 msgstr "射撃する(装備中)"
 
@@ -68969,7 +69057,7 @@ msgstr "切替/全画面モード"
 
 #: lang/json/keybinding_from_json.py
 msgid "Toggle Pixel Minimap"
-msgstr "切替/ピクセルミニマップ"
+msgstr "切替/ミニマップ表示"
 
 #: lang/json/keybinding_from_json.py
 msgid "Reload Tileset"
@@ -69093,11 +69181,11 @@ msgstr "変更/整列順序"
 
 #: lang/json/keybinding_from_json.py
 msgid "Add to safemode blacklist"
-msgstr "セーフモードのブラックリストに登録"
+msgstr "セーフモード/ブラックリスト登録"
 
 #: lang/json/keybinding_from_json.py
 msgid "Remove from safemode blacklist"
-msgstr "セーフモードのブラックリストから削除"
+msgstr "セーフモード/ブラックリスト削除"
 
 #: lang/json/keybinding_from_json.py
 msgid "look around"
@@ -69968,6 +70056,11 @@ msgstr "ドアロック解除"
 #: lang/json/mapgen_from_json.py
 msgid "Lock Door"
 msgstr "ドアの鍵を閉める"
+
+#. ~ Sign
+#: lang/json/mapgen_from_json.py
+msgid "Get Apples n Ciders!"
+msgstr "アップルサイダーあります！"
 
 #. ~ Sign
 #: lang/json/mapgen_from_json.py
@@ -80520,6 +80613,15 @@ msgid ""
 " it."
 msgstr "NPCが何も喋ることができない時のAIタグです。プレイヤーにこのタグが付いている時はバグが発生しています。"
 
+#. ~ Description for Survivor
+#: lang/json/mutation_from_json.py
+msgid "This NPC could tell you about how they survived the cataclysm"
+msgstr "このNPCはどうやって大変動から生き残ったのか語ります。"
+
+#: lang/json/mutation_from_json.py
+msgid "Survival Story:  Left_for_Dead_1"
+msgstr "サバイバルストーリー: Left_for_Dead_1"
+
 #. ~ Description for Martial Arts Training
 #: lang/json/mutation_from_json.py
 msgid ""
@@ -81107,7 +81209,7 @@ msgstr "立体駐車場"
 
 #: lang/json/overmap_terrain_from_json.py
 msgid "office courtyard"
-msgstr "オフィス中庭"
+msgstr "オフィス(広場)"
 
 #: lang/json/overmap_terrain_from_json.py
 msgid "church"
@@ -94832,7 +94934,7 @@ msgstr "妙に大きなベリーが野外に生えているそうだ。でも、
 
 #: lang/json/snippet_from_json.py
 msgid "<swear> <name_b>"
-msgstr "<swear><name_b>"
+msgstr "<swear>、<name_b>"
 
 #: lang/json/snippet_from_json.py
 msgid "asshat"
@@ -95032,7 +95134,7 @@ msgstr "<name_g>、何か飲み物はないの？"
 
 #: lang/json/snippet_from_json.py
 msgid "I need some <swear> water!"
-msgstr "<swear>水が欲しい！"
+msgstr "<swear>、水が欲しい！"
 
 #: lang/json/snippet_from_json.py
 msgid "My mouth is dry."
@@ -95060,7 +95162,7 @@ msgstr "<very>喉がカラカラだ。"
 
 #: lang/json/snippet_from_json.py
 msgid "I'm <swear> thirsty."
-msgstr "<swear>喉がカラカラだ。"
+msgstr "<swear>、喉がカラカラだ。"
 
 #: lang/json/snippet_from_json.py
 msgid "Can you give me something to drink, <name_g>?"
@@ -95088,7 +95190,7 @@ msgstr "チクショウ"
 
 #: lang/json/snippet_from_json.py
 msgid "fuck"
-msgstr "ふざけてる"
+msgstr "ファック"
 
 #: lang/json/snippet_from_json.py
 msgid "goddamn"
@@ -95100,7 +95202,7 @@ msgstr "くそっ"
 
 #: lang/json/snippet_from_json.py
 msgid "damn"
-msgstr "アホ"
+msgstr "こんちくしょう"
 
 #: lang/json/snippet_from_json.py
 msgid "damnit"
@@ -95108,11 +95210,11 @@ msgstr "ちくしょう"
 
 #: lang/json/snippet_from_json.py
 msgid "shit"
-msgstr "マヌケ"
+msgstr "ああクソ"
 
 #: lang/json/snippet_from_json.py
 msgid "fuckit"
-msgstr "ゴミカス"
+msgstr "クソが"
 
 #: lang/json/snippet_from_json.py
 msgid "crap"
@@ -95128,11 +95230,11 @@ msgstr "<very><swear!>"
 
 #: lang/json/snippet_from_json.py
 msgid "son of an ass"
-msgstr "このクソ野郎"
+msgstr "このクソが"
 
 #: lang/json/snippet_from_json.py
 msgid "Oh sugar!"
-msgstr "ああ畜生！"
+msgstr "ああ畜生"
 
 #: lang/json/snippet_from_json.py
 msgid "sad"
@@ -95188,7 +95290,7 @@ msgstr "<name_g><punc>話をしないか？"
 
 #: lang/json/snippet_from_json.py
 msgid "Well hey there."
-msgstr "やあ、君か。"
+msgstr "やあどうも。"
 
 #: lang/json/snippet_from_json.py
 msgid "<name_g><punc>  Hello."
@@ -95352,7 +95454,7 @@ msgstr "私の<mywp>を味わいな"
 
 #: lang/json/snippet_from_json.py
 msgid "you're <swear> dead"
-msgstr "あんた、<swear>死んだな"
+msgstr "<swear>、もうおしまいだな"
 
 #: lang/json/snippet_from_json.py
 msgid "<name_b>, <ill_kill_you>"
@@ -95372,7 +95474,7 @@ msgstr "死んでしまう"
 
 #: lang/json/snippet_from_json.py
 msgid "I'm dead, <name_g>,"
-msgstr "<name_g>、死が迫ってるんだ"
+msgstr "<name_g>、死にそうなんだ"
 
 #: lang/json/snippet_from_json.py
 msgid "I'm dead meat"
@@ -95432,7 +95534,7 @@ msgstr "<really>待ってくれよ！"
 
 #: lang/json/snippet_from_json.py
 msgid "You <swear> need to wait!"
-msgstr "<swear>待って！"
+msgstr "<swear>、待って！"
 
 #: lang/json/snippet_from_json.py
 msgid "<name_g>, where are you?"
@@ -95664,7 +95766,7 @@ msgstr "<very>疲れたよ。"
 
 #: lang/json/snippet_from_json.py
 msgid "I'm <swear> tired."
-msgstr "<swear>疲れたよ。"
+msgstr "<swear>、もう疲れたよ。"
 
 #: lang/json/snippet_from_json.py
 msgid "Can we rest for a while, <name_g>?"
@@ -95712,7 +95814,7 @@ msgstr "おやすみ！何かあったら起こしてくれ。"
 
 #: lang/json/snippet_from_json.py
 msgid "extremely"
-msgstr "とても"
+msgstr "ヤバいくらい"
 
 #: lang/json/snippet_from_json.py
 msgid "greatly"
@@ -95724,7 +95826,7 @@ msgstr "非常に"
 
 #: lang/json/snippet_from_json.py
 msgid "incredibly"
-msgstr "信じられないほど"
+msgstr "信じられないくらい"
 
 #: lang/json/snippet_from_json.py
 msgid "quite"
@@ -95748,7 +95850,7 @@ msgstr "すごく"
 
 #: lang/json/snippet_from_json.py
 msgid "wicked"
-msgstr "チョー"
+msgstr "めちゃくちゃ"
 
 #: lang/json/snippet_from_json.py
 msgid "very"
@@ -95760,11 +95862,11 @@ msgstr "超"
 
 #: lang/json/snippet_from_json.py
 msgid "uber"
-msgstr "すっげえ"
+msgstr "すっごく"
 
 #: lang/json/snippet_from_json.py
 msgid "ultra"
-msgstr "ウルトラ"
+msgstr "ものすごく"
 
 #: lang/json/snippet_from_json.py
 msgid "so <very>"
@@ -95776,7 +95878,7 @@ msgstr "<very><very>"
 
 #: lang/json/snippet_from_json.py src/iuse.cpp
 msgid "fine"
-msgstr "極上"
+msgstr "分かってる"
 
 #: lang/json/snippet_from_json.py
 msgid "okay"
@@ -95784,23 +95886,23 @@ msgstr "オーケー"
 
 #: lang/json/snippet_from_json.py
 msgid "get it"
-msgstr "分かりました"
-
-#: lang/json/snippet_from_json.py
-msgid "you dig"
-msgstr "ああ"
-
-#: lang/json/snippet_from_json.py src/monster.cpp
-msgid "dig"
-msgstr "うん"
-
-#: lang/json/snippet_from_json.py
-msgid "got it"
 msgstr "分かった"
 
 #: lang/json/snippet_from_json.py
+msgid "you dig"
+msgstr "ねえ"
+
+#: lang/json/snippet_from_json.py
+msgid "dig"
+msgstr "おい"
+
+#: lang/json/snippet_from_json.py
+msgid "got it"
+msgstr "聞こえてる"
+
+#: lang/json/snippet_from_json.py
 msgid "you see"
-msgstr "ほら"
+msgstr "いいか"
 
 #: lang/json/snippet_from_json.py
 msgid "see, <name_g>"
@@ -95812,7 +95914,7 @@ msgstr "いいね"
 
 #: lang/json/snippet_from_json.py
 msgid "that clear"
-msgstr "聞こえるか、"
+msgstr "分かっているのか"
 
 #: lang/json/snippet_from_json.py
 msgid "seriously"
@@ -95820,7 +95922,7 @@ msgstr "冗談抜きに"
 
 #: lang/json/snippet_from_json.py
 msgid "absolutely"
-msgstr "確実に"
+msgstr "本当に"
 
 #: lang/json/snippet_from_json.py
 msgid "definitely"
@@ -95840,7 +95942,7 @@ msgstr "<really><really>"
 
 #: lang/json/snippet_from_json.py
 msgid "most <really>"
-msgstr "ものすごく<really>"
+msgstr "マジ<really>"
 
 #: lang/json/snippet_from_json.py
 msgid "urgently"
@@ -95848,7 +95950,7 @@ msgstr "本気で"
 
 #: lang/json/snippet_from_json.py
 msgid "REALLY"
-msgstr "実のところ"
+msgstr "本当に本当に"
 
 #: lang/json/snippet_from_json.py
 msgid "Excuse me, let me pass."
@@ -95868,7 +95970,7 @@ msgstr "そこ通らせてよ、<okay>？"
 
 #: lang/json/snippet_from_json.py
 msgid "Step aside, <name_g>!"
-msgstr "ちょっとどいて、<name_g>！"
+msgstr "ちょっとどいて、<name_g>？"
 
 #: lang/json/snippet_from_json.py
 msgid "Can I get past you, <name_g>?"
@@ -95880,7 +95982,7 @@ msgstr "そこを通る必要があるんだ、<name_g>。"
 
 #: lang/json/snippet_from_json.py
 msgid "Move your <swear> ass, <name_b>!"
-msgstr "<name_b>、<swear>ケツを動かしやがれ！"
+msgstr "<name_b>、<swear>、ケツを動かしやがれ！"
 
 #: lang/json/snippet_from_json.py
 msgid "Out of my way, <name_b>!"
@@ -95940,7 +96042,7 @@ msgstr "ハッピーだ"
 
 #: lang/json/snippet_from_json.py
 msgid "pleased"
-msgstr "嬉しい"
+msgstr "喜ばしい"
 
 #: lang/json/snippet_from_json.py
 msgid "ecstatic"
@@ -95968,11 +96070,11 @@ msgstr "大喜びだ"
 
 #: lang/json/snippet_from_json.py
 msgid "pumped"
-msgstr "ワクワクする"
+msgstr "気分が良い"
 
 #: lang/json/snippet_from_json.py
 msgid "Drop your <swear> weapon!"
-msgstr "てめえの<swear>武器を捨てな！"
+msgstr "お前、<swear>、武器を捨てな！"
 
 #: lang/json/snippet_from_json.py
 msgid "Okay <name_b>, drop your weapon!"
@@ -95980,15 +96082,15 @@ msgstr "よし<name_b>、武器を捨てるんだ！"
 
 #: lang/json/snippet_from_json.py
 msgid "Put your <swear> weapon down!"
-msgstr "<swear>武器を下ろせ！"
+msgstr "<swear>、武器を下ろせ！"
 
 #: lang/json/snippet_from_json.py
 msgid "Drop the <yrwp>, <name_b>!"
-msgstr "その<yrwp>を捨てなさい、<name_b>！"
+msgstr "その<yrwp>を捨てろ、<name_b>！"
 
 #: lang/json/snippet_from_json.py
 msgid "Drop the <swear> <yrwp>!"
-msgstr "その<swear><yrwp>を捨てやがれ！"
+msgstr "<swear>、<yrwp>を捨てやがれ！"
 
 #: lang/json/snippet_from_json.py
 msgid "Drop your <yrwp>!"
@@ -96000,7 +96102,7 @@ msgstr "その<yrwp>を下ろせ！"
 
 #: lang/json/snippet_from_json.py
 msgid "Drop your <swear> weapon, <name_b>!"
-msgstr "<name_b>、その<swear>を捨てるんだ！"
+msgstr "その<swear>を捨てるんだ、<name_b>！"
 
 #: lang/json/snippet_from_json.py
 msgid "Put down your <yrwp>!"
@@ -96012,11 +96114,11 @@ msgstr "よし、その<yrwp>を捨てるんだ！"
 
 #: lang/json/snippet_from_json.py
 msgid "motherfucking"
-msgstr "腐りきった"
+msgstr "クソ"
 
 #: lang/json/snippet_from_json.py
 msgid "freaking"
-msgstr "忌々しい"
+msgstr "ふざけた"
 
 #: lang/json/snippet_from_json.py
 msgid "<swear> <swear>"
@@ -96032,7 +96134,7 @@ msgstr "クソ忌々しい"
 
 #: lang/json/snippet_from_json.py
 msgid "mafuckin'"
-msgstr "やばい"
+msgstr "イカれた"
 
 #: lang/json/snippet_from_json.py
 msgid "Wait up, let's talk!"
@@ -96048,15 +96150,15 @@ msgstr "こっちに来て、話し合おう！"
 
 #: lang/json/snippet_from_json.py
 msgid "Hey <name_g>, let's talk!"
-msgstr "やあ<name_g>。何か話そうじゃないか！"
+msgstr "やあ<name_g>。何か話そう！"
 
 #: lang/json/snippet_from_json.py
 msgid "<name_g>, we <really> need to talk!"
-msgstr "<name_g>、私達は<really>話し合う必要があるんだ！"
+msgstr "<name_g>、私達は<really>話し合うべきだ！"
 
 #: lang/json/snippet_from_json.py
 msgid "Hey, we should talk, <okay>?"
-msgstr "やあ、私達は話をしないといけない、<okay>？"
+msgstr "やあ、話をしようよ、<okay>？"
 
 #: lang/json/snippet_from_json.py
 msgid "<name_g>!  Wait up!"
@@ -96076,7 +96178,7 @@ msgstr "なあ、<name_g><punc>話があるんだ！"
 
 #: lang/json/snippet_from_json.py
 msgid "Put your <swear> hands up!"
-msgstr "<swear>両手を挙げやがれ！"
+msgstr "<swear>、両手を挙げやがれ！"
 
 #: lang/json/snippet_from_json.py
 msgid "Put your hands up, <name_b>!"
@@ -96084,7 +96186,7 @@ msgstr "両手を挙げるんだ、<name_b>！"
 
 #: lang/json/snippet_from_json.py
 msgid "Reach for the sky!"
-msgstr "空に向かって両手を挙げろ！"
+msgstr "両手を高く挙げろ！"
 
 #: lang/json/snippet_from_json.py
 msgid "Hands up!"
@@ -96108,7 +96210,7 @@ msgstr "よし<name_b>、手を挙げろ！"
 
 #: lang/json/snippet_from_json.py
 msgid "Okay <name_b><punc> hands up!"
-msgstr "よし<name_b><punc>...手を挙げなさい！"
+msgstr "よし<name_b><punc>手を挙げなさい！"
 
 #: lang/json/snippet_from_json.py
 msgid "Hands in the air, <name_b>!"
@@ -96136,11 +96238,11 @@ msgstr "おい<name_g>、どいてくれ"
 
 #: lang/json/snippet_from_json.py
 msgid "<swear> move it"
-msgstr "<swear>どきやがれ"
+msgstr "<swear>、どきやがれ"
 
 #: lang/json/snippet_from_json.py
 msgid "Move your <swear> ass"
-msgstr "てめえの<swear>ケツをどけろ"
+msgstr "<swear>、そのケツをどけろ"
 
 #: lang/json/snippet_from_json.py
 msgid "Get out of my way, <name_b>,"
@@ -96180,7 +96282,7 @@ msgstr "<very>腹が減った。"
 
 #: lang/json/snippet_from_json.py
 msgid "I'm <swear> hungry."
-msgstr "<swear>腹が減った。"
+msgstr "<swear>、腹が減った。"
 
 #: lang/json/snippet_from_json.py
 msgid "So, <name_g>, when we eatin'?"
@@ -96196,7 +96298,7 @@ msgstr "このまま何も食べずにいたら<ill_die>。"
 
 #: lang/json/snippet_from_json.py
 msgid "Consider this idea: you give me food and I eat it."
-msgstr "こういうのはどうだろう。君が食べ物をくれる。俺(私)がそれを食べる。"
+msgstr "いいアイデアがあるんだ。君が食べ物を渡す。私がそれを食べる。"
 
 #: lang/json/snippet_from_json.py
 msgid "Did you know that lack of food kills faster than chain smoking?"
@@ -96208,7 +96310,7 @@ msgstr "糞ったれ"
 
 #: lang/json/snippet_from_json.py
 msgid "fuck off"
-msgstr "くそったれ"
+msgstr "クソ"
 
 #: lang/json/snippet_from_json.py
 msgid "go fuck yourself"
@@ -96220,7 +96322,7 @@ msgstr "<fuck_you>、<name_b>"
 
 #: lang/json/snippet_from_json.py
 msgid "<fuck_you>, <swear> <name_b>"
-msgstr "<fuck_you>、<swear><name_b>"
+msgstr "<fuck_you>、<swear>、<name_b>"
 
 #: lang/json/snippet_from_json.py
 msgid "<name_b>"
@@ -96248,7 +96350,7 @@ msgstr "<swear>、爆発しそうだ！"
 
 #: lang/json/snippet_from_json.py
 msgid "I'm standing way too close to this <swear> firecracker."
-msgstr "<swear>花火がすぐ傍にあるな。"
+msgstr "<swear>、花火がすぐ傍にあるな。"
 
 #: lang/json/snippet_from_json.py
 msgid "I <really> need to get some distance."
@@ -96256,7 +96358,7 @@ msgstr "<really>距離を取る必要がある。"
 
 #: lang/json/snippet_from_json.py
 msgid "I'm getting my ass out of here!  You'd better do the same, <name_g>!"
-msgstr "今すぐここから逃げるよ！君も早くしな、<name_g>！"
+msgstr "今すぐここから逃げるよ！早くしな、<name_g>！"
 
 #: lang/json/snippet_from_json.py
 msgid "Fire in the hole, motherfuckers!"
@@ -96276,15 +96378,15 @@ msgstr "気を付けろ！あれは"
 
 #: lang/json/snippet_from_json.py
 msgid "<swear!>, a"
-msgstr "<swear!>、"
+msgstr "<swear>、"
 
 #: lang/json/snippet_from_json.py
 msgid "<swear!>, I'm doomed!  There's a <swear> <swear>"
-msgstr "<swear>！、絶望的だ！<swear><swear>"
+msgstr "<swear>！、絶望的だ！<swear>、<swear>"
 
 #: lang/json/snippet_from_json.py
 msgid "<swear!>, here comes a <swear>"
-msgstr "<swear!>、<swear>が来てる、"
+msgstr "<swear>、<swear>、こっちに来てる、"
 
 #: lang/json/snippet_from_json.py
 msgid "Look out for that"
@@ -96292,7 +96394,7 @@ msgstr "見ろ、あれは"
 
 #: lang/json/snippet_from_json.py
 msgid "Hey!  Over there!  I see a"
-msgstr "おい！あっちだ！あれは"
+msgstr "おい！あそこ！あれは"
 
 #: lang/json/snippet_from_json.py
 msgid "Incoming"
@@ -96309,6 +96411,219 @@ msgstr "なあ、<name_g>！<monster_warning>"
 #: lang/json/snippet_from_json.py
 msgid "Look out!  A"
 msgstr "見ろ！"
+
+#: lang/json/snippet_from_json.py
+msgid "Tell me about how you survived the cataclysm."
+msgstr "どうやって大変動を生き延びたのか教えてくれ。"
+
+#: lang/json/snippet_from_json.py
+msgid "How did you survive the cataclysm?"
+msgstr "どうやって大変動を生き延びたんだ？"
+
+#: lang/json/snippet_from_json.py
+msgid "What was the cataclysm like for you?"
+msgstr "あなたにとって大変動とは何だ？"
+
+#: lang/json/snippet_from_json.py
+msgid "Let's talk about something else."
+msgstr "他の話をしよう。"
+
+#: lang/json/snippet_from_json.py
+msgid "Let's change the subject."
+msgstr "話題を変えよう。"
+
+#: lang/json/snippet_from_json.py
+msgid "I'd like to ask you about something else."
+msgstr "他に聞きたいことがあるんだ。"
+
+#: lang/json/snippet_from_json.py
+msgid "We should probably get going."
+msgstr "そろそろ行こうか。"
+
+#: lang/json/snippet_from_json.py
+msgid "We'd better get moving."
+msgstr "もう出発した方がいい。"
+
+#: lang/json/snippet_from_json.py
+msgid "Let's head out."
+msgstr "さあ行こう。"
+
+#: lang/json/snippet_from_json.py
+msgid "shitty"
+msgstr "嫌だ"
+
+#: lang/json/snippet_from_json.py
+msgid "lame"
+msgstr "マズい"
+
+#: lang/json/snippet_from_json.py
+msgid "crappy"
+msgstr "くだらない"
+
+#: lang/json/snippet_from_json.py
+msgid "unpleasant"
+msgstr "不快だ"
+
+#: lang/json/snippet_from_json.py
+msgid "<swear> <shitty>"
+msgstr "<swear>、<shitty>"
+
+#: lang/json/snippet_from_json.py
+msgid "<very> <shitty>"
+msgstr "<very><shitty>"
+
+#. ~ photo quality adjective
+#: lang/json/snippet_from_json.py src/iuse.cpp
+msgid "awful"
+msgstr "最悪"
+
+#: lang/json/snippet_from_json.py
+msgid "terrible"
+msgstr "ぞっとする"
+
+#: lang/json/snippet_from_json.py
+msgid "horrible"
+msgstr "最低だ"
+
+#: lang/json/snippet_from_json.py
+msgid "miserable"
+msgstr "みじめだ"
+
+#: lang/json/snippet_from_json.py
+msgid "fucked-up"
+msgstr "滅茶苦茶だ"
+
+#: lang/json/snippet_from_json.py
+msgid "stupid"
+msgstr "馬鹿な"
+
+#: lang/json/snippet_from_json.py
+msgid "idiotic"
+msgstr "トンマな"
+
+#: lang/json/snippet_from_json.py
+msgid "dumb"
+msgstr "馬鹿"
+
+#: lang/json/snippet_from_json.py
+msgid "dumb-ass"
+msgstr "アホの"
+
+#: lang/json/snippet_from_json.py
+msgid "moronic"
+msgstr "マヌケな"
+
+#: lang/json/snippet_from_json.py
+msgid "mickey mouse"
+msgstr "つまらん"
+
+#: lang/json/snippet_from_json.py
+msgid "shit-for-brains"
+msgstr "頭にクソが詰まってる"
+
+#: lang/json/snippet_from_json.py
+msgid "Z"
+msgstr "ゾンビ"
+
+#: lang/json/snippet_from_json.py
+msgid "shambler"
+msgstr "徘徊者"
+
+#: lang/json/snippet_from_json.py
+msgid "goo-puker"
+msgstr "ゲロ吐き"
+
+#: lang/json/snippet_from_json.py
+msgid "walker"
+msgstr "うろついてる奴"
+
+#: lang/json/snippet_from_json.py
+msgid "walking corpse"
+msgstr "歩く死体"
+
+#: lang/json/snippet_from_json.py
+msgid "<swear> <zombie>"
+msgstr "<swear>、<zombie>"
+
+#: lang/json/snippet_from_json.py
+msgid "living dead"
+msgstr "生ける屍"
+
+#: lang/json/snippet_from_json.py
+msgid "zombies"
+msgstr "ゾンビ"
+
+#: lang/json/snippet_from_json.py
+msgid "Z's"
+msgstr "ゾンビ共"
+
+#: lang/json/snippet_from_json.py src/artifact.cpp
+msgid "dead"
+msgstr "死んだ"
+
+#: lang/json/snippet_from_json.py
+msgid "<swear> <zombies>"
+msgstr "<swear>、<zombies>"
+
+#: lang/json/snippet_from_json.py
+msgid "monster"
+msgstr "化け物"
+
+#: lang/json/snippet_from_json.py
+msgid "demon"
+msgstr "悪魔"
+
+#: lang/json/snippet_from_json.py
+msgid "horror"
+msgstr "怪物"
+
+#: lang/json/snippet_from_json.py
+msgid "indescribable beast"
+msgstr "名状しがたい獣"
+
+#: lang/json/snippet_from_json.py
+msgid "creature made of nightmares"
+msgstr "悪夢の産物"
+
+#: lang/json/snippet_from_json.py
+msgid "critter"
+msgstr "獣"
+
+#: lang/json/snippet_from_json.py
+msgid "<swear> <monster>"
+msgstr "<swear>、<monster>"
+
+#: lang/json/snippet_from_json.py
+msgid "unbelievable <swear> thing"
+msgstr "<swear>、信じがたい化け物"
+
+#: lang/json/snippet_from_json.py
+msgid "walking nightmare"
+msgstr "悪夢の権化"
+
+#: lang/json/snippet_from_json.py
+msgid "thing right out of a scary movie"
+msgstr "ホラー映画に出てくる奴"
+
+#: lang/json/snippet_from_json.py
+msgid "the cataclysm"
+msgstr "大変動"
+
+#: lang/json/snippet_from_json.py
+msgid "the apocalypse"
+msgstr "黙示録の日"
+
+#: lang/json/snippet_from_json.py
+msgid "the end of the world"
+msgstr "世界の終わり"
+
+#: lang/json/snippet_from_json.py
+msgid "Armageddon"
+msgstr "アルマゲドン"
+
+#: lang/json/snippet_from_json.py
+msgid "the end of days"
+msgstr "この世の終わり"
 
 #: lang/json/snippet_from_json.py
 msgid "This is not the world I have chosen. They even took my CDs!.."
@@ -99315,6 +99630,1096 @@ msgid "Clothing Store"
 msgstr "衣料品店"
 
 #: lang/json/talk_topic_from_json.py
+msgid "<BGSS_intro_question>"
+msgstr "<BGSS_intro_question>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I don't even <swear> know anymore.  I have no <swear> idea what is going on."
+"  I'm just doing what I can to stay alive.  The world ended and I bungled "
+"along not dying, until I met you."
+msgstr ""
+"<swear>、何も分からない。<swear>、見当もつかないよ。生き延びるためにできることをやってるだけさ。世界は滅んだが、少なくとも今までは生きてこられた。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Huh."
+msgstr "ふぅん。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Before <the_cataclysm>? Who cares about that? This is a new world, and yeah,"
+" it's pretty <shitty>.  It's the one we've got though, so let's not dwell in"
+" the past when we should be making the best of what little we have left."
+msgstr ""
+"<the_cataclysm>の前だって？どうでもいいだろう？まあ、新たな世界はかなり<shitty>けど。でも、過去にこだわるのは止めよう。残されたものを最大限に生かすべきだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "I can respect that."
+msgstr "もっともな意見だ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"To be honest...  I don't really remember.  I remember vague details of my "
+"life before the world was like this, but <the_cataclysm> itself?  It's all a"
+" blur.  I don't know how I got where I am now, or how any of this happened."
+"  I think something pretty bad must have happened to me.  Or maybe I was "
+"just hit in the head really hard.  Or both.  Both seems likely."
+msgstr ""
+"実は...まったく覚えていないんだ。世界がこんなことになる前の人生は、ぼんやりと思い出せる。でも、<the_cataclysm>が訪れた時の事は？もやが掛かっているみたいだ。今いる場所も、何が起きたのかも分からない。どうやらかなりひどい目に遭ったみたいだ。それとも頭を強く打ったのかな。いや、その両方かも。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"My story.  Huh.  It's nothing special.  I had people, but they've risen to "
+"be with the Lord.  I don't understand why He didn't take me too, but I "
+"suppose it'll all be clear in time."
+msgstr ""
+"私の話か。はぁ...特別面白いものではない。かつての仲間たちは、みな主の御許に旅立った。何故主が私の手を取って下さらなかったのかは分からないが、時が経てば分かるのだろうな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Do you mean in a religious sense, or...?"
+msgstr "それは何か宗教的な話...？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "<done_conversation_section>"
+msgstr "<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "<end_talking>"
+msgstr "<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Of course.  It's clear enough, isn't it?  That...  that end, was the "
+"Rapture.  I'm still here, and I still don't understand why, but I will keep "
+"Jesus in my heart through the Tribulations to come.  When they're past, I'm "
+"sure He will welcome me into the Kingdom of Heaven.  Or...  or something "
+"along those lines.  It's not going exactly like I thought it would, but "
+"that's prophecy for you."
+msgstr ""
+"もちろんだ。明白じゃないか？あれは...携挙だ。私がまだここにいる、その理由は分からないが、私はどんな患難の中にあろうとイエスキリストを信じている。患難が過ぎ去れば、きっと私を天国に迎え入てくださるのだろう。まぁ...大筋はこんなところだと思っている。私が考えているとおりに事が運ぶとは限らないが、これは予言と言ってもいい。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What if you're wrong?"
+msgstr "もしあなたの意見が間違っていたとしたら？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What will you do then?"
+msgstr "これからどうするんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"What?  How could you say something like that?  I can't believe you'd look at"
+" all this and think it could be anything but the end-times.  The dead are "
+"walking, the gates of Hell itself have opened, the Beasts of the Devil walk "
+"the Earth, and the Righteous have all be drawn up into the Lord's Kingdom.  "
+"What more proof could you possibly ask for?"
+msgstr ""
+"何だって？どうしてそんなことを言うんだ？この有様を見ても終末を信じないとはな。死者が蘇り、地獄の門が開き、悪魔の獣が地上を闊歩し、そして正しき者は皆神の王国へと導かれる。これ以上の証拠を出せって言うのか？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What will you do, then?"
+msgstr "それで、これからどうするんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I will keep the faith, and keep praying, and strike down the agents of Hell "
+"where I see them.  That's all we few can do, isn't it?  I suppose perhaps "
+"we're the meek that shall inherit the Earth.  Although I don't love our "
+"odds."
+msgstr ""
+"信仰を守り、祈り、地獄からの使いを見かけたら打ち倒す。私たちにできることなんて、それぐらいしか無いだろう？もしかしたら、地球を素直に明け渡してしまった方が楽なのかもしれない。でも、そんなのは癪だからな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Same as anyone.  I turned away from God, and now I'm paying the price.  The "
+"Rapture has come, and I was left behind.  So now, I guess I wander through "
+"Hell on Earth.  I wish I'd paid more attention in Sunday School."
+msgstr ""
+"他のみんなと同じさ。神様から目を背けて、その代償を支払ってるところだよ。携挙が訪れたけど、私は取り残された。そして今、地上の地獄を彷徨っているんだ。もっと真面目に日曜学校へ行っておけばよかったな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I made it to one of those <swear> evac shelters, but it was almost worse "
+"than what I left behind.  Escaped from there, been on the run since."
+msgstr "避難所にたどり着いたけど、元いた場所の方がマシってぐらい、<swear>、ひどい所だった。それでまた逃げ出して、逃げ続けているんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "How did you survive on the run?"
+msgstr "どうやって生き延びたんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I spent a lot of time rummaging for rhubarb and bits of vegetables in the "
+"forest before I found the courage to start picking off some of those dead "
+"monsters.  I guess I was getting desperate."
+msgstr ""
+"最初は、森の中でルバーブや野草を探して過ごしていたよ。でも勇気を出して、死んだ動物の解体もやり始めたんだ。きっとヤケクソな気分だったんだろうな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Same as most people who didn't get killed straight up during the riots.  I "
+"went to one of those <dumb> <swear> evacuation death traps.  I actually "
+"lived there for a while with three others.  One guy who I guess had watched "
+"a lot of movies kinda ran the show, because he seemed to really know what "
+"was going on.  Spoiler alert: he <swear> didn't."
+msgstr ""
+"暴動で殺されなかった人たちと似たようなものだ。私は<dumb>避難所で死にかけたんだ、<swear>。最初はそこで他にいた3人としばらく過ごしていた。その中の一人は、今起きている事についても詳しく知っていて、まるでよくある映画に出てくる主人公みたいな男だった。だが実際は、映画の主人公ではなかった。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What happened to your original crew?"
+msgstr "君の仲間に何があったんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Things went south when our fearless leader decided we had to put down one of"
+" the other survivors that had been bitten.  Her husband felt a bit strongly "
+"against that, and I wasn't too keen on it either; by this point, he'd "
+"already been wrong about a lot.  Well, he took matters into his own hands "
+"and killed her.  Then her husband decided one good turn deserves another, "
+"and killed the idiot.  And then she got back up and I killed her again, and "
+"pulped our former leader.  Unfortunately she'd given her husband a hell of a"
+" nip during the struggle, when he couldn't get his shit together enough to "
+"fight back.  Not that I fucking blame him.  We made it out of there "
+"together, but it was too much for him, he clearly wasn't in it anymore...  "
+"The bite got infected, but it was another <zombie> that finally killed him."
+"  And then I was alone."
+msgstr ""
+"我らの勇敢なリーダーが、噛まれてしまった他のメンバーを殺そうと決めたのが、ケチのつき始めだった。もう一人のメンバーは噛まれた奴の夫で、かなり反対していた。私もあまり乗り気じゃなかった。この時点で対応を誤っていたんだ。それで、リーダーは自ら女を殺した。すると夫が、やられたらやり返せとばかりにバカなリーダーを殺した。その後女が生き返ったので私が殺し、リーダーの死体も念のため潰した。その騒動の最中に、運悪く夫が噛まれた。混乱して上手く反撃できなかったんだろう、仕方のないことさ。一緒に逃げ出したが、彼はもうダメだった。明らかに手遅れだった...傷口から感染症にかかり、最終的に<zombie>に襲われて殺された。そういう訳で、私は一人になった。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What do you think happened? You see them around anywhere?"
+msgstr "一体何が起きたんだろう？他の場所でも奴らを見かけた？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"There's nothing too special about me, I'm not sure why I survived.  I got "
+"evacuated with a handful of others, but we were too late to make the second "
+"trip to a FEMA center.  We got attacked by the dead...  I was the only one "
+"to make it out.  I never looked back."
+msgstr ""
+"何も特別なことはしていないし、どうして生き残れたのか分からないよ。何人かで一緒に避難したが、FEMAキャンプへ着いた時には手遅れだった。死人に襲われ...私だけが生還した。一度も振り返らず逃げた。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"They were shipping me with a bunch of evacuees over to a refugee center, "
+"when the bus got smashed in by the biggest zombie you ever saw.  It was busy"
+" with the other passengers, so I did what anyone would do and fucked right "
+"out of there."
+msgstr ""
+"たくさんの避難民と一緒に避難センター行きのバスに乗っていたら、途中で今までに見たこともないような巨大なゾンビと衝突したんだ。何も特別なことはしていないが、化け物は他の乗客を狙っていたから、何とか逃げ出せたよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"My Evac shelter got swarmed by some of those bees, the ones the size of "
+"dogs.  I took out a few with a two-by-four, but pretty quick I realized it "
+"was either head for the hills or get stuck like a pig.  The rest is history."
+msgstr ""
+"自宅のシェルターがイヌと同じくらい大きなハチの群れに襲われたんだ。木材で殴って数匹倒したけど、あまりに素早くて、これはすぐに逃げ出さないと手遅れになると思ったんだ。そこから先はご存知の通りさ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Giant bees? Tell me more."
+msgstr "大きなハチ？詳しく教えてくれ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "But bees aren't usually aggressive..."
+msgstr "ハチは普通そんなに攻撃的じゃないような..."
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Yeah, I'm sure you've seen them, they're everywhere.  Like something out of "
+"an old sci-fi movie.  Some of the others in the evac shelter got stung, it "
+"was no joke.  I didn't stick around to see what the lasting effect was "
+"though.  I'm not ashamed to admit I ran like a <swear> chicken."
+msgstr ""
+"ああ、君も見たことあるんじゃないか、あのハチはどこにでもいるからな。古いSF映画に出てくるようなヤツだ。シェルターにいた仲間が刺されたんだ、本当の話さ。ハチの毒が永久に残るかどうかはちゃんと見ていないから分からない。<swear>、ビビって逃げ出して来たんだから仕方ないだろう。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "But bees aren't usually aggressive...  Do you mean wasps?"
+msgstr "ハチは普通そんなに攻撃的じゃない...もしかしてスズメバチ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Well, excuse me if I didn't stop to <swear> ask what kind of killer bugs "
+"they were."
+msgstr "ええと、<swear>、悪いけど立ち止まって殺人バチをのんびり観察する暇はなかったよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Sorry.  Could you tell me more about them?"
+msgstr "悪かった。ハチについて詳しく教えてもらえないかな？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Right.  Sorry."
+msgstr "それもそうだな。悪かったよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Well, I was at home when the cell phone alert went off and told me to get to"
+" an evac shelter.  So I went to an evac shelter.  And then the shelter got "
+"too crowded, and people were waiting to get taken to the refugee center, but"
+" the buses never came.  You must already know about all that.  It turned "
+"into panic, and then fighting.  I didn't stick around to see what happened "
+"next; I headed into the woods with what tools I could snatch from the "
+"lockers.  I went back a few days later, but the place was totally abandoned."
+"  No idea what happened to all those people."
+msgstr ""
+"ええと、携帯電話の警報が鳴りやんで、避難シェルターへ行けってメッセージが流れたから、その通りにしたんだ。避難シェルターはものすごく混雑していたから、皆は避難センターへ向かうバスを待っていたけど、いくら待ってもバスはこなかった。その後はもう分かるだろう。パニック状態になって、喧嘩が起きた。それからどうなったのかはよく分からない。私はシェルターのロッカーから荷物を持てるだけ持って森へ逃げたんだ。数日後に戻ったら、もぬけの殻だったよ。他の人がどうなったかなんて、想像もつかないな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"That's a tall order.  I guess the short version is that I got evacuated to a"
+" FEMA camp for my so-called safety, but luckily I made it out."
+msgstr "難しい質問だな。簡単に言うと、世間一般で言う安全って奴を求めてFEMAキャンプへ行ったんだ。それで、命からがら逃げだして来たってわけ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Tell me more about that FEMA camp."
+msgstr "FEMAキャンプについて詳しく教えてくれ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "How did you get out?"
+msgstr "どうやって逃げ出したんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"It was terrifying.  We were shipped there on a repurposed school bus, about "
+"thirty of us.  You can probably see the issues right away.  A few of the "
+"folks on board the bus had injuries, and some schmuck who had seen too many "
+"B-movies tried to insist that anyone who 'had been bitten' was going to "
+"'turn'.  Fucking idiot, right? I've been bitten a dozen times now and the "
+"worst I got was a gross infection."
+msgstr ""
+"恐ろしかったよ。私たちは元々はスクールバスだった車に乗せられて避難した。30人くらいだったかな。バス内ですぐに問題が発生した。乗客の何人かは怪我をしていたんだが、B級映画中毒の奴らが「噛まれた」人は「ゾンビ化する」なんて言い出したんだ。馬鹿げた話だろ？私も今まで何十回と噛まれたけど、最悪でも重い感染症にかかったことしかない。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What happened after that?"
+msgstr "その後どうなったんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"That guy started a frenzy.  People were already panicked.  There was an "
+"armed guy overseeing the transport, acting like a cop but really he was just"
+" some <dumb> kid they'd handed a rifle to.  He tried to calm things down, "
+"and I guess it actually worked for a bit, although the 'kill the infected' "
+"bunch were pretty <swear> freaked out and were clearly ready to jump the "
+"moment the granny with the cut on her arm started frothing at the mouth.  "
+"They started acting up again when we got to the camp.  That didn't go well "
+"for them.  A few heavily armed soldiers dragged them away, and I never saw "
+"them again."
+msgstr ""
+"そいつが騒ぎ始めた。皆はもうパニック状態さ。武装した警官みたいな奴が避難バスをまとめていたが、あんなのはライフルを持っただけの<dumb>ガキさ。そのガキが事態を収拾しようとしたが、ほとんど役に立ってなかった。「感染者を殺す」派の奴は、<swear>、発狂しかけていて、腕を失くした婆ちゃんが口から泡を吹き始めたらすかさず飛び掛かれるよう身構えていた。キャンプに到着した時点で、過激派がまた騒ぎ始めた。でもそう上手くは行かなかった。重武装した何人かの兵士に引きずられてどこかへ連行され、それ以降見かけることはなかった。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"That place was chaos.  I only stayed a few hours.  They had a big backhoe "
+"running, digging a huge pit in a cordoned section they wouldn't let us near."
+"  Well, I managed to sneak over that way, and saw them dumping load after "
+"load of the dead in the pit, pouring dirt back over them even as they "
+"revived and tried to climb out.  Even with all the shit I've seen since, it "
+"haunts me.  I knew then I had to get out.  Luckily for me, we were attacked "
+"the next morning by some giant horror, a kind I haven't really seen since "
+"then.  While the guards were busy with that, I grabbed some supplies I'd "
+"stocked up over the night and I fucked right out of there.  A few others "
+"tried to fuck out with me, but as far as I know I was the only lucky one."
+msgstr ""
+"混沌とした所だよ。数時間しか滞在していないけどな。近づけないよう隔離された区画があって、そこで大きな掘削機が大きな穴を掘っているんだ。それで、こっそり近寄って穴を覗いてみた。穴の中には死体が山積みになってた。死体の中には動き出して穴から抜け出そうとするものもあったけど、上からは土がどんどん注がれる。あのクソみたいな光景は、今も目に焼き付いて離れない。それで、こんな場所は出て行くべきだって思った。運の良いことに、その翌朝、キャンプは今まで見たことも無いような巨大な化け物に襲われたんだ。警備隊は忙しそうにしていたけど、私は一晩で集めた物資をもって、すぐに逃げ出したよ。何人かは私に続いて逃げようとしたけど、おそらく私が唯一の生き残りだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"That's a story for another day.  I don't really like thinking about it."
+msgstr "その話はまた今度な。あまり思い出したくないんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Sorry.  Tell me more about that FEMA camp."
+msgstr "悪かった。FEMAキャンプについて詳しく教えてくれ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Sorry for asking.  <done_conversation_section>"
+msgstr "悪いことを聞いてしまったな。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Sorry for asking.  <end_talking>"
+msgstr "悪いことを聞いてしまったな。<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I was late to evacuate when the shit hit the fan.  Got stuck in town for a "
+"few days, survived by hiding in basements eating girl scout cookies and "
+"drinking warm root beer.  Eventually I managed to weasel my way out without "
+"getting caught by the <zombies>.  I spent a few days holed up in an "
+"abandoned mall, but I needed food so I headed out to fend for myself in the "
+"woods.  I wasn't doing a great job of it, so I'm kinda glad you showed up."
+msgstr ""
+"大変な大騒ぎの中で、避難がずいぶん遅れてしまったんだ。街から出られなかったから、地下室でガールスカウトクッキーとか温いルートビアを飲んで数日間生き延びたよ。結局、<zombies>に見つかることもなく逃げ出して、その後は放棄されたショッピングモールにしばらく立て籠もった。でも、食べ物が必要になったから、野外で暮らそうと森へ向かっていたんだ。野外生活は今一うまく行かなかったから、君に会えてほっとしているよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I was home with the flu when the world went to shit, and when I recovered "
+"enough to make a run to the store for groceries...  Well, I've been running "
+"ever since."
+msgstr ""
+"世界が大変なことになってる時は、インフルエンザに罹って家にいたんだ。食料雑貨店へ出かけられる程度に回復したころには...まぁ色々あって、それ以来逃げ回ってばかりさ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Come on, don't leave me hanging."
+msgstr "おいおい、ちゃんと話してくれよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Okay, well, I was kinda out of it those first few days.  I knew there were "
+"storms, but I was having crazy fever dreams and stuff.  Honestly I probably "
+"should have gone to the hospital, except then I guess I'd be dead now.  I "
+"don't know what was a dream and what was the world ending.  I remember "
+"heading to the fridge for a drink and noticing the light was out and the "
+"water was warm, I think that was a bit before my fever broke.  I was still "
+"pretty groggy when I ran out of chicken soup, so it took me a while to "
+"really process how dark and dead my building was when I headed out."
+msgstr ""
+"ああ、そうだな、最初の数日は寝込んでいたんだ。外で騒ぎがあった事は把握していたが、酷い熱にうなされていたからな。正直、病院へ行くべきだったと思ったが、もし行っていれば今頃死んでいただろう。何が夢で何が世界が崩壊する現実だったのかも曖昧だ。飲み物を取ろうと冷蔵庫を開けたら、ライトが付かなくて中が温くなっていたのは覚えている。その頃には熱が下がってきたんだ。家にあるチキンスープを飲み尽くしたが、まだ足下がふらついていた。電気も明かりも無い家から出かけるのにかなり時間がかかったよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What happened when you went out?"
+msgstr "出掛けてからは何があったんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"You probably remember what the cities were like.  I think it was about day "
+"four.  Once I stepped outside I realized what was going on, or realized I "
+"didn't know what was going on at least.  I saw a bunch of rioters smashing a"
+" car, and then I noticed one of them was bashing a woman's head in.  I "
+"cancelled my grocery trip, ran back to my apartment before they saw me, and "
+"holed up there for as long as I could.  Things got comparatively quiet as "
+"the dead started to outnumber the living, so I started looting what I could "
+"from my neighbors, re-killing them when I had to.  Eventually the <zombies> "
+"overran my building and I had to climb out and head for the hills on an old "
+"bike."
+msgstr ""
+"市街地がどんな状態だったか、君も覚えているだろう。多分事が起きてから4日目の事だ。外へ出た瞬間、何が起きたのか、そして自分が事態を何も把握できていなかったことに気づいた。たくさんの暴徒が車を破壊するのを見かけたが、そいつの一人は女性の頭を殴りつけていた。そこで食料雑貨店へ向かうのは諦めて、奴らに見つかる前にアパートに引き返したんだ。そしてできる限り長く隠れていることにした。死人が生存者より多くなってからは外もだいぶ静かになったから、隣人たちの部屋からできる限りの物資を拝借して、必要があれば死んでいた隣人をもう一度殺した。最終的には建物が<zombies>で溢れ返ってしまったから、古い自転車で近所の丘まで逃げる羽目になったけどね。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Thanks for telling me all that.  <done_conversation_section>"
+msgstr "詳しく教えてくれてありがとう。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Thanks for telling me all that.  <end_talking>"
+msgstr "詳しく教えてくれてありがとう。<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Nothin' special before <the_cataclysm>.  When the dead started walking, I "
+"geared up and started puttin' them back down."
+msgstr "<the_cataclysm>以前と何も変わらない。死者が歩き始めてからも準備を整え、死者を土に還しているよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "How did that go?"
+msgstr "上手くいったのか？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Cool.  <done_conversation_section>"
+msgstr "すごいな。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Cool.  <end_talking>"
+msgstr "すごいな。<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Almost got killed.  One <zombie> is easy pickins, but ten is a lot, and a "
+"hundred is a death trap.  I got myself in too deep, an' barely slipped out "
+"with my guts still inside me.  Holed up in an old motel for a while lickin' "
+"my wounds and thinkin' about what I wanted to do next.  That's when I "
+"figured it out."
+msgstr ""
+"大体は殺した。<zombie>が1匹いても簡単に排除できるが、10匹は多すぎるし、100匹いれば死の危険もある。窮地に陥って、危うく身体から内臓が飛び出しかけたこともあった。古びたモーテルに潜伏して傷を癒しながら、次にどうすべきかを考えていた。そして答えを見つけたんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Figured what out?"
+msgstr "答えとは？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Never mind.  <done_conversation_section>"
+msgstr "ふぅん。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Never mind.  <end_talking>"
+msgstr "ふぅん。<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"This is it.  This is what I was made for.  There in the street, smashin' "
+"monster heads and prayin' I'd make it out? I've never felt like that.  "
+"Alive.  Important.  So after I got myself all stuck back together, I nutted "
+"up and went back to it.  Probly killed a thousand Z since then, and I'm "
+"still not tired of it."
+msgstr ""
+"答えはこれだ。ゾンビを殺すことこそ、私が生まれてきた理由なんだ。通りで化け物の頭を潰しながら、無事に事が運ぶよう祈ったことは？私は一度もない。生存。それが重要だ。だから、立ち直ってからは覚悟を決めてゾンビ殺しを再開した。もう1000匹近く殺しているが、一向に飽きないよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "It's good you found your calling.  <done_conversation_section>"
+msgstr "天職が見つかって良かったな。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "It's good you found your calling.  <end_talking>"
+msgstr "天職が見つかって良かったな。<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Oh, you know.  Blah blah blah, had a job and a life, everyone died.  Boo "
+"hoo.  I gotta be straight with you though: I honestly think I like this "
+"better.  Fighting for survival every day? I've never felt so alive.  I've "
+"killed hundreds of those bastards.  Sooner or later one of them will take me"
+" out, but I'll go down knowing I did something actually important."
+msgstr ""
+"ああ、分かりきった事だろう。皆なんやかんやあって、仕事や生活をして、最後には死ぬ。やれやれ。君には率直な意見を話しておこう。私はこれまでの世界より今の世界が好きだ。生きるために毎日戦うんだろう？これほど生きているって実感できたことはないね。化け物どもを何百体も殺したよ。遅かれ早かれそいつらに殺されることになるだろうけど、何か本当に大事なことを理解して死ねるんだろうな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Well y'see, I'm not from these parts at all.  I was driving up from the "
+"South to visit my son when it all happened.  I was staying at a motel when a"
+" military convoy passed through and told us to evacuate to a FEMA shelter."
+msgstr ""
+"ええと、全部は話さないからな。事が起こった時、私は南部から車に乗って息子のもとを訪ねるところだった。モーテルで過ごしていると、通りがかった軍用車からFEMAの避難所へ向かうよう指示されたんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Tell me about your son."
+msgstr "息子さんの事を聞きたい。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "So, you went to one of the FEMA camps?"
+msgstr "それで、FEMAキャンプへ向かったのか？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"He lives up in Northern Canada, way in the middle of nowhere, with his crazy"
+" wife and my three grandkids.  He's an environmental engineer for some oil "
+"and gas company out there.  She's a bit of a hippy-dippy headcase.  I love "
+"em both though, and as far as I'm concerned they all made it out of this "
+"fucked up mess safe, out there in the boondocks.  I guess they think I'm "
+"dead, so they'll steer clear of this hellhole, and that's the best as could "
+"be."
+msgstr ""
+"息子は嫁さんと3人の子どもと一緒に、カナダ北部の田舎に住んでいるんだ。石油会社の環境工学者として働いているんだけど、嫁さんの方はヒッピー気質というか、まぁ私は二人とも愛しているよ。私としては、息子たちはこの大混乱から程遠い森の中で安全に過ごしていると思いたい。向こうは私が死んだと思っているかもしれないが、それなら私に会うために危険な目に遭うこともないだろうし、ありがたいことだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What was it you said before?"
+msgstr "大変動が起きた時、あなたはどうしていたんだっけ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Lord no.  I'll be fucked if I let a kid in a too-big uniform tell me what "
+"the hell to do.  I had my Hummer loaded out and ready to go offroading, I "
+"had a ton of gas, and I even had as many rifles as the border was gonna let "
+"me bring over.  I didn't know what I was supposed to be running from, but I "
+"sure as shit didn't run.  "
+msgstr ""
+"まさか。ぶかぶかの軍服を着たひよっ子に従っていたら、命がいくつあっても足りないよ。乗っていたのはハマーの改造車だからオフロードも走れるし、ガソリンもたっぷりあった。国境を越えるからライフルもたくさん持っていた。何から逃げればいいのかも分からなかったが、逃げなかったのはバカな奴だよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Where did you go then?"
+msgstr "それからどこへ向かったんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"At first, I just kept going North, but I ran into a huge military blockade."
+"  They even had those giant walking robots like on TV.  I started going up "
+"to check it out, and before I knew it they were opening fire! I coulda died,"
+" but I still have pretty good reactions.  I turned tail and rolled out of "
+"there.  My Hummer had taken some bad hits though, and I found out the hard "
+"way I was leaking gas all down the freeway.  Made it a few miles before I "
+"wound up stuck in the ass-end of nowhere.  I settled in to wander.  I guess "
+"I'm still kinda heading North, just by a pretty round-about way, you know?"
+msgstr ""
+"最初は北へ向かったが、軍の大規模な道路封鎖に出くわした。TVで見るような巨大なロボットが歩いていたんだが、よく見るために近づこうとしたら、すぐさまロボットが発砲してきたんだ！危うく死ぬところだったが、まだ反射神経もしっかりしていたから尻尾を巻いて逃げ出した。ハマーもかなりボロボロになってしまって、燃料を漏らしながら高速道路を進む羽目になったよ。何マイルか進んで、見知らぬ土地で立ち往生さ。放浪生活も板についてきた。恐らく今も北へ向かってるとは思うんだ。かなりの回り道になるけどな？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "That's quite a story.  <done_conversation_section>"
+msgstr "大変な話だな。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "That's quite a story.  <end_talking>"
+msgstr "大変な話だな。<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Ooooh, boy.  I was ready for this.  The winds were blowing this way for "
+"years.  I had a full last man on earth shelter set up just out of town.  So,"
+" of course, just my luck: I was miles out of town for a work conference when"
+" China attacked and the world ended."
+msgstr ""
+"おいおいおい。準備はとうにできていたさ。何年も前からそんな傾向はあったからな。郊外にLMOEシェルターを建てておいたんだ。もちろん、運が良かったことも大きい。中国が攻撃を開始して世界が崩壊した時、私は仕事の会議の関係で街から何マイルも離れた場所にいたんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What happened to you?"
+msgstr "それからどうなったんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What about your shelter?"
+msgstr "シェルターは今どうなっているんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Our conference was at a retreat by a lake.  We all got the emergency "
+"broadcast on our cells, but I was the only one to read between the lines and"
+" see it for what it was: large scale bio-terrorism.  I wasn't about to stay "
+"and find out who of my coworkers was a sleeper agent.  Although I'd bet "
+"fifty bucks it was Lee.  Anyway, I stole the co-ordinator's pickup and "
+"headed straight for my shelter."
+msgstr ""
+"その時は湖畔の建物で会議をしていたんだ。参加者の携帯電話から緊急放送が流れだしたが、放送の真意を理解していたのは私だけだろうな。そう、大規模バイオテロだ。その場に留まるつもりは全くなかったし、同僚の中にスパイが紛れている事も把握していた。リーという奴だ、50ドル賭けてもいい。ともかく、私は幹事が乗っていたピックアップトラックを盗んで、まっすぐシェルターへと向かったんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Did you get there?"
+msgstr "シェルターには着いたのか？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"No, I barely got two miles.  I crashed into some kind of hell-spawn chink "
+"bio-weapon, a crazy screeching <monster> made of arms and legs and heads "
+"from all sorts of creatures, humans too.  I think I killed it, but I know "
+"for sure I killed the truck.  Grabbed my duffel bag and ran, after putting a"
+" couple bullets into it for good measure.  I hope I never see something like"
+" that again."
+msgstr ""
+"いいや、あと5マイルの所まで行ったんだけどね。中国人共が作った恐ろしい生体兵器と衝突してしまったんだ。人間や色んな生物の手足や頭が混ざりあった、狂った金切り声をあげる<monster>さ。ひき殺せたとは思うが、こっちのトラックが壊れたのは間違いない。ダッフルバッグを掴んで逃げ出したよ。またあんな怪物に出くわすのはごめんだね。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I still haven't made it there.  Every time I've tried I've been headed off "
+"by the <zombies>.  Who knows, maybe someday."
+msgstr "まだたどり着けていないんだ。行こうとするといつも<zombies>に邪魔される。いつか分からないけど、行けるといいな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Could you tell me that story again?"
+msgstr "その話をもう一度聞かせてくれないか？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Oh, man.  I thought I was ready.  I had it all planned out.  Bug out bags.  "
+"Loaded guns.  Maps of escape routes.  Bunker in the back yard."
+msgstr "いやいや。しっかり準備していたよ。計画もばっちりさ。非常持ち出し袋。装填済みの銃。避難場所への地図。裏庭には地下壕もある。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Sounds like it didn't work out."
+msgstr "計画は失敗に終わったようだな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Hey, I'd really be interested in seeing those maps."
+msgstr "ねぇ、その地図を見せてもらってもいいかな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Depends on your definition.  I'm alive, aren't I? When Hell itself came down"
+" from the skies and monsters started attacking the cities, I grabbed my "
+"stuff and crammed into the bunker.  My surface cameras stayed online for "
+"days; I could see everything happening up there.  I watched those things "
+"stride past.  I still have nightmares about the way their bodies moved, like"
+" they broke the world just to be here.  I had nothing better to do.  I "
+"watched them rip up the cops and the military, watched the dead rise back up"
+" and start fighting the living.  I watched the nice old lady down the street"
+" rip the head off my neighbor's dog.  I saw a soldier's body twitch and grow"
+" into some kind of electrified hulk beast.  I watched it all happen."
+msgstr ""
+"それは失敗の定義によるな。私は生きている、そうだろ？地獄が空から降ってきて、怪物が街を攻撃していた時、私は物資を持って地下壕に逃げ込んだんだ。地表を映すカメラは数日間オンラインだったから、そこで起きたあらゆる出来事を見られたよ。化け物が過去の栄光を踏みつぶす様を見たんだ。死体が動き出す悪夢は今もよく見るな。何もできなかった。警官や兵士が引き裂かれ、蘇った死体が生存者と戦うんだ。上品な老婦人が近所のイヌの首をむしり取って街をふらついているのを見た。兵士の死体が引きつり始めて、電気を帯びたハルクみたいな怪物に変身するのも見た。私は全部見たんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Why did you leave your bunker?"
+msgstr "どうして地下壕から出てきたんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Honestly? I was planning to die.  After what I'd seen, I went a little "
+"crazy.  I thought it was over for sure, I figured there was no point in "
+"fighting it.  I thought I wouldn't last a minute out here, but I couldn't "
+"bring myself to end it down there.  I headed out, planning to let the "
+"<zombies> finish me off, but what can I say? Survival instinct is a funny "
+"thing, and I killed the ones outside the bunker.  I guess the adrenaline was"
+" what I needed.  It's kept me going since then."
+msgstr ""
+"実はな？死ぬつもりだったんだ。色んなものを見て、少し気が狂ったのかな。もうおしまいだ、奮闘しても意味がない、って思ったんだ。地下壕には居たくなかったけど、自殺することもできなかった。外に出て<zombies>に殺してもらおうと思っていたんだけど、なんて言うんだろう？生存本能って奴か、そいつらを倒してしまったんだ。必要なのはアドレナリンだったんだって理解したよ。それのお陰で今まで生き延びてこられたんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Thanks for telling me that.  <done_conversation_section>"
+msgstr "話してくれてありがとう。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Thanks for telling me that.  <end_talking>"
+msgstr "話してくれてありがとう。<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Yeah, I do.  I'd be willing to part with them for, say, $1000.  Straight "
+"from your ATM account, no cash cards."
+msgstr "ああ、いいとも。一部だけなら見せてあげよう、そうだな、1000ドルでいい。キャッシュカードじゃなくて、ATM経由で振り込んでくれ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "[$2000] You have a deal."
+msgstr "[$1000] 取引成立だ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Whatever's in that map benefits both of us."
+msgstr "その地図はそんなに価値があるのか。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "How 'bout you <swear> hand it over and I don't get <swear> pissed off?"
+msgstr "<swear>、君がそれを譲ってくれたら、<swear>、私もキレずに済むんだけどな？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Sorry for changing the subject.  What was it you were saying?"
+msgstr "話題を変えて申し訳ないけど、さっきの話をもう一度聞かせてもらえないかな？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "All right.  Here they are."
+msgstr "よし。さあどうぞ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Thanks!  What was it you were saying before?"
+msgstr "ありがとう！ところで、さっきの話をもう一度聞かせてもらえないかな？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Nice try.  You want the maps, you pay up."
+msgstr "その手には乗らないよ。地図が欲しいなら、きっちり支払ってもらおう。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Fine.  What was it you were saying before?"
+msgstr "分かった。ところで、さっきの話をもう一度聞かせてもらえないかな？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I didn't even know about <the_cataclysm> right away.  I was way out, away "
+"from the worst of it.  My car broke down out on the highway, and I was "
+"waiting for a tow for hours.  I finally wound up camping in the bushes off "
+"the side of the road; good thing, too, because a semi truck whipped by - "
+"dead driver, you know - and turned my car into a skid mark.  I feel bad for "
+"the bastards that were in the cities when it hit."
+msgstr ""
+"最近まで<the_cataclysm>の事なんて知らなかった。ちょっと大げさかな、とにかく大混乱の現場からは遠く離れていたんだ。高速道路で車が故障して、レッカー車を何時間も待ってる状況だったからね。結局道路脇の原っぱで野宿する羽目になったんだ。でも運が良かった。いわゆる死人の運転手が乗ったトレーラーが、私の車に突っ込んだんだ。こんな時に市街地にいた奴らは本当に気の毒だよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "How did you survive outside?"
+msgstr "どうやって野外で生き延びたんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What did you see in those first few days?"
+msgstr "野外生活を始めてから数日間、何を見かけた？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Ha, I don't fully understand it myself.  Those first few days were a tough "
+"time to be outside, that's for sure.  I got caught in one of those hellish "
+"rainstorms, it started to burn my skin right off.  I managed to take shelter"
+" under a car, lying on top of my tent.  Wrecked the damn thing, but better "
+"it than me.  From what I hear, though, I got lucky.  That was pretty much "
+"the worst I saw.  I didn't run into any of those demon-monsters that I hear "
+"attacked the cities, so I guess I got off lucky."
+msgstr ""
+"ハッ、自分でもよく分からないんだ。最初の数日は、外で過ごしてるだけでも大変だったって事は確かだな。酷い嵐に襲われたと思ったら、皮膚が焼け爛れ始めたんだ。車の下にテントを敷いて潜り込み、何とか凌いだよ。大破してはいるが、私よりずっと頑丈だ。聞いた話では、これでも私は幸運な方だったようだ。想像できない程酷い話だった。街に襲い掛かったという悪魔のような化け物に遭遇しなかっただけ、運が良かったよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Besides the acid rain, I mostly saw people fleeing the cities.  I tried to "
+"stay away from the roads, but I didn't want to get lost in the woods either,"
+" so I stuck to the deep margins.  I saw cars, buses, trucks loaded down with"
+" evacuees.  Plenty went right on, but a lot stalled out of gas and other "
+"stuff.  Some were so full of gear and people there were folks hanging off "
+"them.  Stalling out was a death sentence, because the dead were coming along"
+" the roads picking off the survivors."
+msgstr ""
+"酸性雨以外には、市街地から脱出する人たちを見かけたな。道路からは離れたいけど森で迷子になるのも嫌だったから、森と平地のちょうど境に陣取ったんだ。乗用車やバスやトラックが避難者を乗せて道路を進んでいった。大抵は無事に通り過ぎたけど、ガス欠なんかで立ち往生する車も多かった。車は工具類を満載していたし、乗客たちも縋り付いていたよ。ゾンビ共は生存者が通った道を追いかけてやって来ていたから、一度止まってしまえば死んだも同然さ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I was out on a fishing trip with my friend when it happened.  I don't know "
+"exactly how the days line up...  our first clue that Armageddon had come was"
+" when we got blasted by some kind of poison wind, with a sort of acid mist "
+"in it that burnt our eyes and skin.  We weren't sure what to make of it so "
+"we went inside to rest up, and while we were in there a weird dust settled "
+"over everything."
+msgstr ""
+"事が起きた時は、友人と釣り旅行の最中だったんだ。正確な日時は覚えていないけど...世界の終わりが来たと最初に分かったのは、目と肌を刺すような酸性ガス混じりの風が吹き荒れた時だ。どうすればいいのか分からなかったから、建物の中に入って休んだ。そうこうしてる間にも、妙な塵がそこら中に降り注いでいたな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What happened after the acid mist?"
+msgstr "酸性ガスが漂った後はどうなったんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"By morning, the area around the lake was covered in a pinkish mold, and "
+"there were walking mushrooms around shooting clouds of the dust in the air."
+"  We didn't know what was going on, but neither of us wanted to stay and "
+"find out.  We packed up our shit, scraped off the boat, and took off "
+"upriver."
+msgstr ""
+"朝になったら、湖の周囲がピンク色のカビで覆われていて、キノコが埃みたいなものをまき散らしながら歩いていた。何が起こったのかさっぱり分からなかったけど、そこに留まって調べようなんて思わなかったよ。だから荷物をボートに詰め込んで、上流に向かったんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What happened to your friend?"
+msgstr "あなたの友達はどうしたんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"She took sick a few hours after we left the lake.  Puking, complaining about"
+" her joints hurting.  I took us to a little shop I knew about on the "
+"riverside, hoping they might have something to help or at least know what "
+"was going on."
+msgstr ""
+"彼女は湖を出発してから数時間後に、病気になったんだ。食べた物を吐いて、関節の痛みを訴えていたよ。彼女は知り合いがやってる川岸の店屋に預けてきた。体調が回復するか、せめて何が原因か分かればいいんだけど。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "I guess they didn't know."
+msgstr "原因が分かるものなのか。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"The shop was empty, actually.  She was desperate though, so I broke in.  I "
+"found out more about the chaos in towns from the store radio.  Got my friend"
+" some painkillers and gravol, but when I came out to the boat, well...  it "
+"was too late for her."
+msgstr ""
+"本当は、その店は空き店舗なんだ。友達が自棄になってたから、私が押し入った。店にあったラジオで街の混乱について詳しく聞いた。彼女は鎮痛剤と吐き気止めを飲んだけど、私がボートで出発した時には、その...手遅れだった。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "She was dead?"
+msgstr "友達は亡くなったのか？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I wish.  That would have been a mercy.  She was letting out an awful, "
+"choking scream, and her body was shredding itself apart.  Mushrooms were "
+"busting out of every part of her.  I...  I ran.  Now I wish that I'd put her"
+" out of her misery, but going back there now would be suicide."
+msgstr ""
+"そうだといいね。死は慈悲だと思うよ。彼女は酷く苦しそうな叫び声を上げ、全身の部位がボロボロと崩れていった。身体のあちこちを突き破ってキノコが生えてくるんだ。私は...逃げた。今は彼女を楽にしてやれたらと思っているけど、あそこへ戻るなんて自殺行為だ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "That's awful.  <done_conversation_section>"
+msgstr "恐ろしいな。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "That's awful.  <end_talking>"
+msgstr "恐ろしいな。<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"My wife made it out with me, but got eaten by one of those <swear> plant "
+"monsters a few days before I met you.  This hasn't been a great year for me."
+msgstr ""
+"妻は私と共に避難していたんだけど、君に会う数日前に、<swear>、植物のような化け物に食われたよ。あんなに衝撃を受けたのは生まれて初めてだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"My husband made it out with me, but got eaten by one of those <swear> plant "
+"monsters a few days before I met you.  This hasn't been a great year for me."
+msgstr ""
+"夫は私と共に避難していたんだけど、君に会う数日前に、<swear>、植物のような化け物に食われたよ。あんなに衝撃を受けたのは生まれて初めてだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "I'm sorry to hear it."
+msgstr "それは気の毒に。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Tell me about those plant monsters."
+msgstr "植物のモンスターについて教えてくれ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"That's how it goes, you know?  These are the end times.  I don't really want"
+" to talk about it more than that.  And honestly, I never really felt like I "
+"belonged, in the old world.  In a weird way, I actually feel like I have a "
+"purpose now.  Do you ever get that?"
+msgstr ""
+"どうしようもなかった、そうだろう？この世の終わりだ。その事についてはこれ以上話したくない。それに正直言って、私は自分が旧世界にふさわしいと思った事なんて一度もなかったんだ。妙なものだけど、今は本当の目標が見つかったように感じている。君はそういう経験ない？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "No, that's messed up."
+msgstr "ないよ、気持ち悪い。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Yeah, I get that.  Sometimes I feel like my existence began shortly after "
+"the cataclysm."
+msgstr "ああ、あるね。時々、自分の存在が大変動の時から始まったような気がするんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I guess those of us who made it this far have to have made it for a reason, "
+"or something.  I don't mean like a religious reason, just...  we're "
+"survivors."
+msgstr ""
+"私たちのような、ここまで上手くやってきた人間には、何か理由、のようなものがあると思うんだ。それが宗教的なものだとは思わないけど、ただ...私たちはサバイバーだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Haha, yeah, I can see why you'd think that.  I don't mean it's a good "
+"apocalypse.  I just mean that at least now I know what I'm doing every day."
+"  I'd still kill a hundred zombies for an internet connection and a night "
+"watching crappy movies with...  sorry.  Let's change the subject."
+msgstr ""
+"ハハハ、ああ、君がそう考える理由は分かるよ。別にこれが良い変化だって言いたい訳じゃない。私は、少なくとも今は、自分が毎日何をしているのか理解している。私は今もインターネット接続のために何百ものゾンビを殺し続け、毎晩B級映画を...ごめん。話を変えよう。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Yeah, have you seen them yet? They're these <shitty> walking flowers with a "
+"big <swear> stinger in the middle.  They travel in packs.  They hate the "
+"zombies, and we were using them for cover to clear a horde of the dead.  "
+"Unfortunately, turns out the plants are better trackers than the <zombies>."
+"  They almost seemed intelligent...  I barely made it out, only because they"
+" were, uh, distracted."
+msgstr ""
+"ああ、まだ見たことない？奴らは歩く<shitty>植物で、花の中央からは大きな、<swear>、針が突き出している。奴らは集団で移動する。ゾンビが嫌いなようだったから、ゾンビの大群を一掃するのに利用させてもらったこともある。マズいのは、この化け物が<zombies>よりも追跡が上手いって点だ。奴らには知能がある...私も危うい所だったよ。逃げられた理由は、まぁ、気が散っていたからだろう。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "I'm sorry you lost someone."
+msgstr "人を失くしていたんだったな、すまない。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Just another <shitty> tale of love and loss.  Not something I like to tell."
+msgstr "ありきたりな愛と喪失の<shitty>物語だよ。その話はしたくないんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "It might help to get it off your chest."
+msgstr "話したら胸のつかえが取れるかもしれないよ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Suck it up.  If we're going to work together I need to know you."
+msgstr "そう言わずにさ。一緒に行動するなら、まず君について知らないと。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Never mind.  Sorry I brought it up."
+msgstr "気にしないで。話題に出して悪かった。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "I appreciate the sentiment, but I don't think it would.  Drop it."
+msgstr "その意見は嬉しいけど、話せないよ。もう止めよう。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "OK."
+msgstr "分かった。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Oh, <fuck_you>.  This doesn't have anything to do with you, or with us."
+msgstr "おい、<fuck_you>。この話は君や私たちの協力とは関係ないだろう。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "All right, fine.  I had someone.  I lost her."
+msgstr "分かった、話すよ。大事な女がいた。そいつを失った。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "All right, fine.  I had someone.  I lost him."
+msgstr "分かった、話すよ。大事な男がいた。そいつを失った。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What happened?"
+msgstr "何があったんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"She was at home when the bombs started dropping and the world went to hell."
+"  I was at work.  I tried to make it to our house, but the city was a war "
+"zone.  Things I can't describe lurching through the streets, crushing people"
+" and cars.  Soldiers trying to stop them, but hitting people in the "
+"crossfire as much as anything.  And then the collateral damage would get "
+"right back up and join the enemy.  If it hadn't been for my wife, I would "
+"have just left, but I did what I could and I slipped through.  I actually "
+"<swear> made it alive."
+msgstr ""
+"爆弾が投下されて地表が地獄になった時、彼女は家にいて、私は仕事中だった。家に帰ろうとしたけど、市街地は交戦区域になっていた。得体のしれない怪物が通りをのろのろ進み、車を破壊していた。軍隊はそいつらを止めようとしていたが、十字砲火で市民も被害を受けた。巻き添えの被害者が蘇り、敵の群れに加わった。妻を家に残していなかったら、私もすぐに逃げただろう。できる限りの事はしたが、手遅れだった。結局、<swear>、私は生き残った。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"He was at home when the bombs started dropping and the world went to hell.  "
+"I was at work.  I tried to make it to our house, but the city was a war "
+"zone.  Things I can't describe lurching through the streets, crushing people"
+" and cars.  Soldiers trying to stop them, but hitting people in the "
+"crossfire as much as anything.  And then the collateral damage would get "
+"right back up and join the enemy.  If it hadn't been for my husband, I would"
+" have just left, but I did what I could and I slipped through.  I actually "
+"<swear> made it alive."
+msgstr ""
+"爆弾が投下されて地表が地獄になった時、彼は家にいて、私は仕事中だった。家に帰ろうとしたけど、市街地は交戦区域になっていた。得体のしれない怪物が通りをのろのろ進み、車を破壊していた。軍隊はそいつらを止めようとしていたが、十字砲火で市民も被害を受けた。巻き添えの被害者が蘇り、敵の群れに加わった。夫を家に残していなかったら、私もすぐに逃げただろう。できる限りの事はしたが、手遅れだった。結局、<swear>、私は生き残った。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "You must have seen some shit."
+msgstr "ひどい目に遭ったな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "I take it home was bad."
+msgstr "自宅はダメだったのか。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Yeah.  I really did.  It took me two days to make it across the city on "
+"foot, camping out in dumpsters and places like that.  I started moving more "
+"by night, and I learned right away to avoid the military.  They were a "
+"magnet for the <zombies>, and they were usually stationed where the monsters"
+" were coming.  Some parts of the city were pretty tame at first.  There were"
+" a few chunks where people had been evacuated or cleared out, and the "
+"<zombies> didn't really go there.  Later on, others like me started moving "
+"into those neighborhoods, so I switched and started running through the "
+"blasted out downtown.  I had to anyway, to get home.  By the time I made the"
+" switch though, the fighting was starting to die off, and I was mostly just "
+"avoiding attention from zombies and other things."
+msgstr ""
+"ああ。まったくだ。仕事場から徒歩で市街地を越えるのに2日もかかったよ。ゴミ置き場か何かの中で野宿しつつ夜中に移動して、軍隊を避ける術をすぐに学んだ。奴らは<zombies>を集める磁石みたいなものだし、大抵は化け物が通る場所に駐屯していたからな。最初の内は、街中でも楽に進める場所は残っていた。市民が完全に避難して無人になった区画もいくつかあって、そこには<zombies>もいなかった。しばらく時間が経つと、他の市民も無事な家へと移動を始めたので、私は跡形もなくなった商業地区を突っ切って動くようにした。とにかく、家へ帰りたかった。その頃には戦闘も治まり始めていたから、ゾンビやほかの化け物の注意を引かないように進んでいった。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"The first warning was that I had to move from the preserved parts of the "
+"city to the burnt out ones to get home.  It only got worse.  There was a "
+"police barricade right outside my house, with a totally useless pair of "
+"automated turrets sitting in front just idly watching the zombies lurch by."
+"  That was before someone switched them to kill everybody, back when it only"
+" killed trespassing humans.  Good times, you can always trust bureaucracy to"
+" fuck things up in the most spectacular way possible.  Anyway, the house "
+"itself was half collapsed, a SWAT van had plowed into it.  I think I knew "
+"what I was going to see in there, but I had made it that far and I wasn't "
+"going to turn back."
+msgstr ""
+"家に帰る道の景色が、原形を留めた家々から焼け落ちた家の残骸へと移り変わって行くのが、最初の嫌な予感だった。景色はどんどん酷くなっていった。自宅の外には警察のバリケードがあって、何の役にも立たない2台の自動タレットが、黙ってゾンビ共に揺さぶられていた。誰かから無差別殺人を教わる前の、侵入者だけを殺してた頃のタレットだ。良い時代だったよ。できる限り壮大なやりかたで物事を台無しにする官僚主義を皆が信頼していた。それはともかく、家屋にはSWATのバンが突っ込み、半壊していた。自宅がどうなっているかなんて内心では分かっていたんだけどな。できることはやったし、もうあそこに帰ることはないだろう。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "You must have seen some shit on the way there."
+msgstr "ここまでの道中も大変だったんだな。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Did you make it into the house?"
+msgstr "家の中には入ったのか？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I did.  Took a few hours to get an opening.  And you wanna know the fucked "
+"up part? Like, out of all this?  My wife was still alive.  She'd been in the"
+" basement the whole time, pinned under a collapsed piece of floor.  And "
+"she'd lost a ton of blood, she was delirius by the time I found her.  I "
+"couldn't get her out, so I gave her food and water and just stayed with her "
+"and held her hand until she passed.  And then...  well, then I did what you "
+"have to do to the dead now.  And then I packed up the last few fragments of "
+"my life, and I try to never look back."
+msgstr ""
+"ああ。入る隙を見つけるのに数時間粘ったよ。どんな酷いことがあったか知りたいか？全部話そうか？妻は生きていた。地下室で、倒壊した床の下敷きになったままでね。酷い失血だった。私が見つけた時には既にもうろうとしていた。救出は無理だったから、彼女に食べ物と水をあげて、ずっと一緒にいた。死ぬときまで手を握っていた。それから...うん、今の状況で、死者に対してやっておかないといけない処置をした。残った部位はしまっておいた。今後も振り返ることは決してないだろう。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I did.  Took a few hours to get an opening.  And you wanna know the fucked "
+"up part? Like, out of all this?  My husband was still alive.  He'd been in "
+"the basement the whole time, pinned under a collapsed piece of floor.  And "
+"he'd lost a ton of blood, he was delirius by the time I found him.  I "
+"couldn't get him out, so I gave him food and water and just stayed with him "
+"and held his hand until he passed.  And then...  well, then I did what you "
+"have to do to the dead now.  And then I packed up the last few fragments of "
+"my life, and I try to never look back."
+msgstr ""
+"ああ。入る隙を見つけるのに数時間粘ったよ。どんな酷いことがあったか知りたいか？全部話そうか？夫は生きていた。地下室で、倒壊した床の下敷きになったままでね。酷い失血だった。私が見つけた時には既にもうろうとしていた。救出は無理だったから、彼に食べ物と水をあげて、ずっと一緒にいた。死ぬときまで手を握っていた。それから...うん、今の状況で、死者に対してやっておかないといけない処置をした。残った部位はしまっておいた。今後も振り返ることは決してないだろう。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I lived alone, on the old family property way out of town.  My wife passed "
+"away a bit over a month before this started... cancer.  If anything good has"
+" come out of all this, it's that I finally see a positive to losing her so "
+"young.  I'd been shut in for a while anyway.  When the news started talking "
+"about Chinese bio weapons and sleeper agents, and showing the rioting in "
+"Boston and such, I curled up with my canned soup and changed the channel."
+msgstr ""
+"私は郊外の古い家に一人で住んでいたんだ。妻は、こんなことが起こる1か月くらい前に死んだ...ガンだった。結果的にそれが最善だったのだとしても、彼女はあまりにも早く旅立ってしまった。そういうことがあって、私はしばらく引きこもっていたんだ。テレビのニュースでは中国の生体兵器や潜伏スパイ、ボストンや各地で起こる暴動の話題が流れていたけど、チャンネルを変えて、缶詰のスープを抱えながら縮こまっていた。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"I lived alone, on the old family property way out of town.  My husband "
+"passed away a bit over a month before this started... cancer.  If anything "
+"good has come out of all this, it's that I finally see a positive to losing "
+"him so young.  I'd been shut in for a while anyway.  When the news started "
+"talking about Chinese bio weapons and sleeper agents, and showing the "
+"rioting in Boston and such, I curled up with my canned soup and changed the "
+"channel."
+msgstr ""
+"私は郊外の古い家に一人で住んでいたんだ。夫は、こんなことが起こる1か月くらい前に死んだ...ガンだった。結果的にそれが最善だったのだとしても、彼はあまりにも早く旅立ってしまった。そういうことがあって、私はしばらく引きこもっていたんだ。テレビのニュースでは中国の生体兵器や潜伏スパイ、ボストンや各地で起こる暴動の話題が流れていたけど、チャンネルを変えて、缶詰のスープを抱えながら縮こまっていた。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "What happened next?"
+msgstr "それからどうなったんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Well, it built up a bit.  There was that acid rain, it burnt up one of my "
+"tractors.  Not that I'd been working the fields since...  well, it'd been a "
+"<shitty> year and I hadn't done much worth doing.  There were explosions and"
+" things, and choppers overhead.  I was scared, kept the curtains drawn, kept"
+" changing the channels.  Then, one day, there were no channels to change to."
+"  Just the emergency broadcast, over and over."
+msgstr ""
+"そうだな、状況は悪化した。酸性雨が降って、家のトラクターの1台が壊れた。まぁ、畑仕事は長らく...ええと、1年はサボっていたんだけどね、収穫も前から少なかったし。爆発事故があって、家の上をヘリが行き来していた。怖くなって、カーテンはずっと閉じて、チャンネルを変え続けた。そしてある日、チャンネルを変えることもできなくなった。どの局も、緊急放送しかやっていないんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"That was the first thing to really shake me out of it.  I didn't really have"
+" any very close friends, but there were people back in town I cared about a "
+"bit.  I had sent some texts, but I hadn't really twigged that they hadn't "
+"replied for days.  I got in my truck and tried to get back to town.  Didn't "
+"get far before I hit a <zombie> infested pileup blocking the highway, and "
+"that's when I started to put it all together.  Never did get to town.  "
+"Unfortunately I led the <zombies> back to my farm, and had to bug out of "
+"there.  Might go back and clear it out, someday."
+msgstr ""
+"そこでようやく目が覚めたんだ。私には親しい友人もそんなにいなかったけど、街には知り合いがいた。何人かにメールを送ったけど、何日待っても返信はこないし、状況は分からなかった。だからトラックで市街地まで行こうとしたんだ。高速道路の事故車両に群がっていた<zombie>にぶつかってようやく、冷静に考えることができた。市街地へ行くことはもうないだろう。運の悪いことに<zombies>が農場までついてきてしまったから、慌てて逃げだして来たんだ。いつか家に帰って奴らを一掃したいね。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Thanks for telling me that. <done_conversation_section>"
+msgstr "話してくれてありがとう。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Well, I lived on the edge of a small town.  Corner store and a gas station "
+"and not much else.  We heard about the shit goin' down in the city, but we "
+"didn't see much of it until the military came blazing through and tried to "
+"set up a camp there.  They wanted to bottle us all up in town, and I wasn't "
+"having with that, so my dog Buck and I, we headed out while they were all "
+"sniffin' their own farts."
+msgstr ""
+"ええと、私は田舎の村はずれに住んでいたんだ。店とガソリンスタンド、他には何もないようなところさ。街が大変なことになっているって話は聞いていたけど、ピリピリした軍隊が近所にキャンプを設置し始めるまでは実感がなかったよ。軍は村を封鎖したがっているようだったけど、村には犬のバックと私しかいなかったから、そのまま抜け出してきたんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"Buck and I slipped out and went East, headin' for my friend's ranch.  Cute "
+"little dope thought we were just goin' for a real long walk.  I couldn't "
+"take the truck without the army boys catchin' wind of it.  We made it out to"
+" the forest, camped out in a lean to.  Packed up and kept heading out.  At "
+"first we walked along the highway a little, but saw too many army trucks and"
+" buses full of evacuees, and that's when we found out about the <zombies>."
+msgstr ""
+"村を抜け出した私とバックは、東にある友達の農場へ向かったんだ。かわいいバックは、私たちがちょっと長い散歩に出かけるだけだと思っていたみたいだけどね。トラックで移動すれば軍の人間に見つかってしまうけど、刺し掛け小屋で野宿しながら森の中を行けば大丈夫だった。場所を転々と変えて進んでいくんだ。最初の頃は高速道路沿いを歩いていたけど、軍用トラックや避難民を満載のバスを山ほど見かけて、そこで初めて<zombies>の事を知ったんだ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "Where's Buck now?"
+msgstr "犬のバックはどうなったんだ？"
+
+#: lang/json/talk_topic_from_json.py
+msgid "I see where this is headed. <done_conversation_section>"
+msgstr "そしてここに着いたのか。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "I see where this is headed. <end_talking>"
+msgstr "そしてここに着いたのか。<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
+msgid ""
+"We got to my buddy's ranch, but the <swear> g-men had been there first.  It "
+"was all boarded up and there was a police barricade out front.  One of those"
+" <swear> turrets...  <swear> shot Buck.  Almost got me too.  I managed to "
+"get my pup...  get him outta there, that...  it wasn't easy, had to use a "
+"police car door as a shield, had to kill a cop-zombie first.  And then, "
+"well, while I was still cryin', Buck came back.  I had to ...  <swear!>.  "
+"I...  I can't say it.  You know."
+msgstr ""
+"友達の農場には着いたんだけど、そこには既に、<swear>、捜査官が来ていたんだ。農場の出入り口は板張りされていて、正面には警察のバリケードもできていた。<swear>、そこにいたタレットが...<swear>、バックを撃った。どうにかして...助けようとしたけど...パトカーのドアを盾にしようにも、まずゾンビになった警官を殺さなきゃいけなかったからね。その後は、うん、しばらく泣いていたら、バックが生き返ったんだ。だから...<swear>！ああ、これ以上は言いたくない。分かってくれ。"
+
+#: lang/json/talk_topic_from_json.py
+msgid "I'm sorry about Buck.  <done_conversation_section>"
+msgstr "バックは気の毒だったな。<done_conversation_section>"
+
+#: lang/json/talk_topic_from_json.py
+msgid "I'm sorry about Buck. <end_talking>"
+msgstr "バックは気の毒だったな。<end_talking>"
+
+#: lang/json/talk_topic_from_json.py
 msgid "That sure is a shiny badge you got there!"
 msgstr "ピカピカのバッジを手に入れたようだな！"
 
@@ -99567,11 +100972,11 @@ msgid "Never mind, I'm not interested."
 msgstr "いいや、興味ないね。"
 
 #: lang/json/talk_topic_from_json.py src/crafting.cpp src/game.cpp
-#: src/game.cpp src/game.cpp src/handle_action.cpp src/handle_action.cpp
-#: src/handle_action.cpp src/iexamine.cpp src/iexamine.cpp src/iexamine.cpp
-#: src/iuse.cpp src/iuse.cpp src/iuse_actor.cpp src/iuse_actor.cpp
-#: src/npctalk.cpp src/npctalk.cpp src/pickup.cpp src/player.cpp
-#: src/player.cpp src/veh_interact.cpp
+#: src/handle_action.cpp src/handle_action.cpp src/iexamine.cpp
+#: src/iexamine.cpp src/iexamine.cpp src/iuse.cpp src/iuse.cpp src/iuse.cpp
+#: src/iuse_actor.cpp src/iuse_actor.cpp src/iuse_actor.cpp src/npctalk.cpp
+#: src/npctalk.cpp src/pickup.cpp src/player.cpp src/player.cpp
+#: src/veh_interact.cpp
 msgid "Never mind."
 msgstr "何でもない。"
 
@@ -101219,10 +102624,6 @@ msgid ""
 msgstr "あんたに何が出来る。出来ることは自分で試したよ。ほっといてくれ..."
 
 #: lang/json/talk_topic_from_json.py
-msgid "OK."
-msgstr "分かった。"
-
-#: lang/json/talk_topic_from_json.py
 msgid ""
 "I keep getting sick!  At first I thought it was something I ate but now it "
 "seems like I can't keep anything down..."
@@ -101502,7 +102903,7 @@ msgstr "出直すよ。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "[$8000] You have a deal."
-msgstr "[$8000] 報酬だ。"
+msgstr "[$8000] 取引成立だ。"
 
 #: lang/json/talk_topic_from_json.py
 msgid "I guess you're the boss."
@@ -102245,8 +103646,7 @@ msgstr "%sの武装を解除しました。"
 msgid "<npcname> disarms %s"
 msgstr "<npcname>は%sの武装を解除しました。"
 
-#: lang/json/technique_from_json.py lang/json/technique_from_json.py
-#: src/monster.cpp
+#: lang/json/technique_from_json.py
 msgid "grab"
 msgstr "掴み倒し"
 
@@ -108264,8 +109664,11 @@ msgid "A combustion engine.  Burns fuel from a tank in the vehicle."
 msgstr "燃焼機関です。車両のタンクに入った燃料を燃焼させます。"
 
 #: lang/json/vehicle_part_from_json.py
-msgid "A combustion engine.  Burns diesel fuel from a tank in the vehicle."
-msgstr "燃焼機関です。車両のタンクに入った軽油を燃焼させます。"
+msgid ""
+"A combustion engine.  Burns diesel fuel from a tank in the vehicle.  Can "
+"also burn methanol, ethanol, or lamp oil, though somewhat less efficiently."
+msgstr ""
+"燃焼機関です。車両のタンクに入ったディーゼル燃料を燃焼させて稼働します。メタノール、エタノール、ランプオイルも多少効率は下がりますが燃料として利用できます。"
 
 #: lang/json/vehicle_part_from_json.py
 msgid "A combustion engine.  Burns gasoline fuel from a tank in the vehicle."
@@ -108273,9 +109676,9 @@ msgstr "燃焼機関です。車両のタンクに入ったガソリンを燃焼
 
 #: lang/json/vehicle_part_from_json.py
 msgid ""
-"A closed cycle, external combustion steam engine.  Burns coal from a bunker "
-"in the vehicle to produce steam."
-msgstr "外燃機関の一種である、密閉サイクルで動作する蒸気機関です。車両の燃料箱に入った石炭を燃料にして蒸気を発生させます。"
+"A closed cycle, external combustion steam engine.  Burns coal or charcoal "
+"from a bunker in the vehicle to produce steam."
+msgstr "外燃機関の一種である、密閉サイクルで動作する蒸気機関です。車両の燃料箱に入った石炭や木炭を燃料にして蒸気を発生させます。"
 
 #: lang/json/vehicle_part_from_json.py
 msgid "boom crane"
@@ -110741,7 +112144,7 @@ msgstr "%sを発見しました！"
 
 #: src/activity_handlers.cpp
 msgid "You didn't find anything."
-msgstr "何も見つからなかった。"
+msgstr "何も見つからりませんでした。"
 
 #: src/activity_handlers.cpp
 #, c-format
@@ -110898,7 +112301,7 @@ msgstr "疲れ過ぎて続けられません。"
 #: src/activity_handlers.cpp src/vehicle_move.cpp src/vehicle_use.cpp
 #, c-format
 msgid "The %s doesn't have an engine!"
-msgstr "%sにはエンジンが付いていない！"
+msgstr "%sにはエンジンが付いていません！"
 
 #: src/activity_handlers.cpp
 #, c-format
@@ -110916,7 +112319,7 @@ msgstr[0] "%sの複数のエンジンが掛かりました。"
 #, c-format
 msgid "The %s's engine fails to start."
 msgid_plural "The %s's engines fail to start."
-msgstr[0] "%sのエンジンが掛からなかった。"
+msgstr[0] "%sのエンジンが掛かりませんでした。"
 
 #: src/activity_handlers.cpp src/vehicle_use.cpp src/vehicle_use.cpp
 msgid "You let go of the controls."
@@ -112334,10 +113737,6 @@ msgstr "息づく"
 #: src/artifact.cpp
 msgid "shrinks and grows very slightly with a regular pulse, as if breathing"
 msgstr "呼吸するかのように規則正しく、わずかに膨らんだり萎んだりしています"
-
-#: src/artifact.cpp
-msgid "dead"
-msgstr "死んだ"
 
 #: src/artifact.cpp
 msgid "is icy cold to the touch"
@@ -115236,8 +116635,8 @@ msgid ""
 "Memory Bank:  Unencrypted\n"
 "Nothing of interest.\n"
 msgstr ""
-"記憶装置: 暗号化されていない\n"
-"大した情報は何もなかった。\n"
+"記憶装置: 非暗号化データ\n"
+"興味深い情報はありませんでした。\n"
 
 #: src/computer.cpp
 msgid ""
@@ -116351,7 +117750,7 @@ msgstr "材料を使い果たしました。"
 #: src/crafting.cpp
 #, c-format
 msgid "You don't have anything to store %s in!"
-msgstr "%sを入れる容器を所持していない！"
+msgstr "%sを入れる容器を所持していません！"
 
 #: src/crafting.cpp
 #, c-format
@@ -116633,8 +118032,9 @@ msgid "Impossible"
 msgstr "不可"
 
 #: src/crafting_gui.cpp
-msgid "v (more)"
-msgstr "v(下へ)"
+#, c-format
+msgid "v (%s for more)"
+msgstr "v (%sで下へ)"
 
 #: src/crafting_gui.cpp
 msgid "You can't do that!"
@@ -116642,7 +118042,7 @@ msgstr "それは作れません！"
 
 #: src/crafting_gui.cpp
 msgid "Nothing selected!"
-msgstr "何も選択していない！"
+msgstr "何も選択していません！"
 
 #: src/crafting_gui.cpp
 msgid "<color_cyan>quality</color> of resulting item"
@@ -120189,6 +121589,17 @@ msgstr " [完了]\n"
 msgid " left]\n"
 msgstr " 後に完了]\n"
 
+#: src/faction_camp.cpp src/faction_camp.cpp src/mission_companion.cpp
+#: src/mission_companion.cpp
+msgid ""
+"\n"
+" \n"
+"Do you wish to bring your allies back into your party?"
+msgstr ""
+"\n"
+"\n"
+"仲間をパーティーに呼び戻しますか？"
+
 #: src/faction_camp.cpp
 #, c-format
 msgid "%s has become a camp manager."
@@ -120205,16 +121616,6 @@ msgstr "キャンプ地の改良"
 #: src/faction_camp.cpp
 msgid "Working to expand your camp!\n"
 msgstr "キャンプ地拡張のために働いています！\n"
-
-#: src/faction_camp.cpp src/mission_companion.cpp
-msgid ""
-"\n"
-" \n"
-"Do you wish to bring your allies back into your party?"
-msgstr ""
-"\n"
-"\n"
-"仲間をパーティーに呼び戻しますか？"
 
 #: src/faction_camp.cpp
 msgid "Recover Ally from Upgrading"
@@ -120244,7 +121645,7 @@ msgstr "仲間を資材の収集から呼び戻す"
 #, c-format
 msgid ""
 "Notes:\n"
-"Distribute food to your follower and fill you larders.  Place the food you wish to distribute opposite the tent door between the manager and wall.\n"
+"Distribute food to your follower and fill you larders.  Place the food you wish to distribute on the companion food sort point.  By default, that is opposite the tent door between the manager and wall.\n"
 " \n"
 "Effects:\n"
 "> Increases your faction's food supply value which in turn is used to pay laborers for their time\n"
@@ -120258,16 +121659,16 @@ msgid ""
 "Total faction food stock: %d kcal or %d day's rations"
 msgstr ""
 "メモ:\n"
-"仲間に配る食料を備蓄します。テント内の一番奥、キャンプ地管理人と壁の間の1タイルに配りたい食料を置いておきましょう。\n"
+"仲間に配給する食料を備蓄します。配給食料の区画に配りたい食料を置いておきましょう。初期設定では、テント内の一番奥、キャンプ地管理人と壁の間の1タイルが指定されています。\n"
 " \n"
 "効果:\n"
 "> 派閥の食料ステータスが増加します\n"
 " \n"
 "満喫-6以上の食料が必要です\n"
-"生鮮食料は、改良の進行と腐敗までの時間によって養分減少のペナルティが課されます:\n"
-"> 腐敗: 養分の0%%\n"
-"> 2日以内に腐敗: 養分の60%%\n"
-"> 5日以内に腐敗: 養分の80%%\n"
+"生鮮食料は、改良の進行と腐敗までの時間によってカロリー減少のペナルティが課されます:\n"
+"> 腐敗: カロリーの0%%\n"
+"> 2日以内に腐敗: カロリーの60%%\n"
+"> 5日以内に腐敗: カロリーの80%%\n"
 " \n"
 "備蓄量: %d kcal (%d日分)"
 
@@ -120351,7 +121752,7 @@ msgid ""
 "Effects:\n"
 "> Material left outside on the ground will be sorted into the four crates in front of the tent.\n"
 "Default, top to bottom:  Clothing, Food, Books/Bionics, and Tools.  Wood will be piled to the south.  Trash to the north.\n"
-" \n"
+"\n"
 "Risk: None\n"
 "Time: 3 Hours\n"
 "Positions: %d/1\n"
@@ -120362,8 +121763,8 @@ msgstr ""
 "適用スキル: 製作\n"
 "難易度: なし \n"
 "効果:\n"
-"> キャンプ地の地面に落ちているアイテムが、種類別に分類され、テント前の4つの箱に置かれます。\n"
-"デフォルト設定で北の箱から順に衣類、食品、本とCBM、道具が入ります。木材はテント脇の南側の地面、ゴミは北側の地面に置かれます。\n"
+"> キャンプ地の地面に落ちているアイテムが、種類毎に分類され、テント前の4つの箱に置かれます。\n"
+"初期設定では北の箱から順に衣類、食品、本とCBM、道具が入ります。木材はテント脇の南側の地面、ゴミは北側の地面に置かれます。\n"
 " \n"
 "危険: なし\n"
 "時間: 3時間\n"
@@ -120378,16 +121779,6 @@ msgid "Performing menial labor...\n"
 msgstr "単純作業をこなしています...\n"
 
 #: src/faction_camp.cpp
-msgid ""
-"\n"
-" \n"
-"Do you wish to bring your allies back into your party?\n"
-msgstr ""
-"\n"
-" \n"
-"仲間をパーティーに呼び戻しますか？\n"
-
-#: src/faction_camp.cpp
 msgid "Recover Menial Laborer"
 msgstr "単純作業から呼び戻す"
 
@@ -120395,7 +121786,7 @@ msgstr "単純作業から呼び戻す"
 #, c-format
 msgid ""
 "Notes:\n"
-"Your base has become large enough to support an expansion.  Expansions open up new opportunities but can be expensive and time consuming.  Pick them carefully, only 8 can be built at each camp.\n"
+"Your base has become large enough to support an expansion.Expansions open up new opportunities but can be expensive and time consuming.  Pick them carefully, only 8 can be built at each camp.\n"
 " \n"
 "Skill used: N/A \n"
 "Effects:\n"
@@ -120442,7 +121833,7 @@ msgid ""
 "> 50%% of trees/trunks at the forest position will be cut down.\n"
 "> 100%% of total material will be brought back.\n"
 "> Repeatable with diminishing returns.\n"
-" \n"
+"> Will eventually turn forests into fields.\n"
 "Risk: None\n"
 "Time: 6 Hour Base + Travel Time + Cutting Time\n"
 "Positions: %d/1\n"
@@ -120484,7 +121875,7 @@ msgid ""
 "Effects:\n"
 "> 95%% of trees/trunks at the forest position will be cut down.\n"
 "> 0%% of total material will be brought back.\n"
-"> Forest will become a field tile.\n"
+"> Forest should become a field tile.\n"
 "> Useful for clearing land for another faction camp.\n"
 " \n"
 "Risk: None\n"
@@ -120608,7 +121999,7 @@ msgstr "簡易シェルターへの物資の移送から呼び戻す"
 #, c-format
 msgid ""
 "Notes:\n"
-"Send a companion to edible plans.\n"
+"Send a companion to forage for edible plants.\n"
 " \n"
 "Skill used: survival\n"
 "Difficulty: N/A \n"
@@ -120865,7 +122256,7 @@ msgid ""
 "> Skill plays a huge role to determine what is salvaged.\n"
 " \n"
 "Risk: None\n"
-"Time: Skill Based \n"
+"Time: 5 days \n"
 msgstr ""
 "メモ:\n"
 "仲間に頼んで、車両を完全に分解して部品にしてもらいます。\n"
@@ -120877,7 +122268,7 @@ msgstr ""
 "> スキルの高さによって回収できるアイテムは大きく異なります。\n"
 " \n"
 "危険: なし\n"
-"時間: スキル依存 \n"
+"時間: 5日 \n"
 
 #: src/faction_camp.cpp
 msgid " Chop Shop"
@@ -121060,10 +122451,6 @@ msgid "departs to search for materials..."
 msgstr "は資材の収集に向かいました..."
 
 #: src/faction_camp.cpp
-msgid "There are too many companions working on this mission!"
-msgstr "この任務に就いている仲間が多すぎます！"
-
-#: src/faction_camp.cpp
 msgid "departs to search for firewood..."
 msgstr "は焚き木の収集に向かいました...."
 
@@ -121111,30 +122498,14 @@ msgid "departs to survey land..."
 msgstr "は周辺調査に向かいました..."
 
 #: src/faction_camp.cpp
-msgid "You have already selected a surveyor!"
-msgstr "既に調査者を選択済みです！"
-
-#: src/faction_camp.cpp
-msgid "begins to upgrade the expansion..."
-msgstr "は拡張した土地の改良作業を開始しました..."
-
-#: src/faction_camp.cpp
-msgid "You don't have the materials for the upgrade."
-msgstr "改良に使う資材がありません。"
-
-#: src/faction_camp.cpp
-msgid "You already have a worker upgrading that expansion!"
-msgstr "既に仲間が拡張した土地を改良しています！"
+#, c-format
+msgid "%s returns to you with something..."
+msgstr "%sが何か持って戻ってきました..."
 
 #: src/faction_camp.cpp
 #, c-format
 msgid "%s returns from your farm with something..."
 msgstr "%sが何かを持って農場から戻ってきました..."
-
-#: src/faction_camp.cpp
-#, c-format
-msgid "%s returns to you with something..."
-msgstr "%sが何か持って戻ってきました..."
 
 #: src/faction_camp.cpp
 #, c-format
@@ -121151,10 +122522,6 @@ msgid "begins plowing the field..."
 msgstr "は土地を耕す作業を開始しました..."
 
 #: src/faction_camp.cpp
-msgid "You already have someone plowing that field."
-msgstr "既にその土地を耕している人がいます。"
-
-#: src/faction_camp.cpp
 msgid "You have no additional seeds to give your companions..."
 msgstr "もう渡せる種がありません..."
 
@@ -121167,20 +122534,8 @@ msgid "Which seeds do you wish to have planted?"
 msgstr "どの種を植える？"
 
 #: src/faction_camp.cpp
-msgid "You already have someone planting that field."
-msgstr "既にその土地で種を植えている人がいます。"
-
-#: src/faction_camp.cpp
 msgid "begins to harvest the field..."
 msgstr "は収穫作業を開始しました..."
-
-#: src/faction_camp.cpp
-msgid "You already have someone harvesting that field."
-msgstr "既にその土地で収穫作業をしている人がいます。"
-
-#: src/faction_camp.cpp
-msgid "You already have someone working in that garage."
-msgstr "既にその車両修理工場で働いている人がいます。"
 
 #: src/faction_camp.cpp
 #, c-format
@@ -121188,12 +122543,12 @@ msgid "%s returns from your garage..."
 msgstr "%sが車両修理工場から戻ってきました..."
 
 #: src/faction_camp.cpp
-msgid "You already have a companion upgrading the camp."
-msgstr "既に仲間がキャンプ地を改良しています。"
-
-#: src/faction_camp.cpp
 msgid "begins to upgrade the camp..."
 msgstr "はキャンプ地の改良作業を開始しました..."
+
+#: src/faction_camp.cpp
+msgid "You don't have the materials for the upgrade."
+msgstr "改良に使う資材がありません。"
 
 #: src/faction_camp.cpp
 msgid "Forests and swamps are the only valid cutting locations."
@@ -121294,10 +122649,6 @@ msgstr "一括製作 %s [最大: %d]: "
 #: src/faction_camp.cpp
 msgid "Your batch is too large!"
 msgstr "量が多すぎます！"
-
-#: src/faction_camp.cpp
-msgid "You already have someone working in that expansion."
-msgstr "既に拡張作業を行っている人がいます。"
 
 #: src/faction_camp.cpp
 msgid "begins to work..."
@@ -122414,11 +123765,11 @@ msgstr "炎が<npcname>に燃え移りました！"
 
 #: src/field.cpp
 msgid "These flames do not burn you."
-msgstr "この炎は身体に燃え移らなかった。"
+msgstr "炎は身体に燃え移りませんでした。"
 
 #: src/field.cpp
 msgid "Those flames do not burn <npcname>."
-msgstr "その炎は<npcname>に燃え移らなかった。"
+msgstr "炎は<npcname>に燃え移りませんでした。"
 
 #: src/field.cpp
 msgid "You're painfully electrocuted!"
@@ -123960,6 +125311,11 @@ msgstr "%sで更に説明を表示"
 msgid "Press %s to list items and monsters"
 msgstr "%sでアイテムとモンスターを一覧表示"
 
+#: src/game.cpp
+#, c-format
+msgid "Press %s to blind throw"
+msgstr "%sでアイテムを投げ込む"
+
 #. ~ "Fast Scroll" mark below the top right corner of the info window
 #: src/game.cpp
 msgid "F"
@@ -124053,11 +125409,11 @@ msgstr "周囲にモンスターは見当たりません！"
 
 #: src/game.cpp
 msgid "<R>emove from safemode Blacklist"
-msgstr "<R>セーフモードのブラックリストから削除"
+msgstr "<R>セーフモード/ブラックリスト削除"
 
 #: src/game.cpp
 msgid "<A>dd to safemode Blacklist"
-msgstr "<A>セーフモードのブラックリストに登録"
+msgstr "<A>セーフモード/ブラックリスト登録"
 
 #: src/game.cpp
 msgid "to look around"
@@ -124235,62 +125591,6 @@ msgid "%s (%d)"
 msgstr "%s(%d)"
 
 #: src/game.cpp
-msgid "You can't butcher while driving!"
-msgstr "運転中には捌けません！"
-
-#: src/game.cpp
-msgid "You don't have a butchering tool."
-msgstr "解体用の道具を持っていません。"
-
-#: src/game.cpp
-msgid "There are no corpses here to butcher."
-msgstr "解体できる死体がありません。"
-
-#: src/game.cpp
-msgid "You can't access the items here."
-msgstr "ここにあるアイテムには干渉できません。"
-
-#: src/game.cpp
-msgid "You don't have the necessary tools to disassemble any items here."
-msgstr "全てのアイテムを分解できる道具を持っていません。"
-
-#: src/game.cpp
-#, c-format
-msgid "You see %s nearby! Start butchering anyway?"
-msgstr "近くに%sがいるのが見えます！それでも解体を行いますか？"
-
-#: src/game.cpp
-msgid "Choose corpse to butcher / item to disassemble"
-msgstr "解体する死体/分解するアイテムを選択"
-
-#: src/game.cpp
-msgid "Quick butcher everything"
-msgstr "まとめて簡易解体"
-
-#: src/game.cpp
-msgid "Disassemble everything once"
-msgstr "一段階づつ分解"
-
-#: src/game.cpp
-msgid "Disassemble everything"
-msgstr "全て分解"
-
-#: src/game.cpp
-msgid "Cut up everything"
-msgstr "まとめて切断"
-
-#: src/game.cpp
-msgid ""
-"You are not in the mood and the prospect of guts and blood on your hands "
-"convinces you to turn away."
-msgstr "気分が落ち込んでおり、臓物や血が手にへばり付くことを考えるとやる気が起きません。"
-
-#: src/game.cpp
-msgid ""
-"You are not in the mood and the prospect of work stops you before you begin."
-msgstr "気分が落ち込んでおり、作業を始めようとする気分にもなりません。"
-
-#: src/game.cpp
 msgid "Choose type of butchery:"
 msgstr "解体方法を選択: "
 
@@ -124327,7 +125627,7 @@ msgstr "内蔵摘出"
 #: src/game.cpp
 msgid ""
 "Technique that involves removing internal organs and viscera to protect the "
-"corpse from rotting from inside.  Yields internal organs.  Carcass will be "
+"corpse from rotting from inside. Yields internal organs. Carcass will be "
 "lighter and will stay fresh longer.  Can be combined with other methods for "
 "better effects."
 msgstr ""
@@ -124339,7 +125639,7 @@ msgstr "部位解体"
 
 #: src/game.cpp
 msgid ""
-"By quartering a previously field dressed corpse you will acquire four parts "
+"By quartering a previously field dressed corpse you will aquire four parts "
 "with reduced weight and volume.  It may help in transporting large game.  "
 "This action destroys skin, hide, pelt, etc., so don't use it if you want to "
 "harvest them later."
@@ -124358,6 +125658,62 @@ msgid ""
 "most useful here."
 msgstr ""
 "死体を注意深く解剖し、使用できそうな生体部品が見つかったら取り出します。作業にはメスと同程度の性能をもつ道具が必要で、非常に時間がかかり、作業後の死体は破壊されてしまいます。医療の知識が非常に有用な作業です。"
+
+#: src/game.cpp
+msgid "You can't butcher while driving!"
+msgstr "運転中には捌けません！"
+
+#: src/game.cpp
+msgid "You don't have a butchering tool."
+msgstr "解体用の道具を持っていません。"
+
+#: src/game.cpp
+msgid "There are no corpses here to butcher."
+msgstr "解体できる死体がありません。"
+
+#: src/game.cpp
+msgid "You can't access the items here."
+msgstr "ここにあるアイテムには干渉できません。"
+
+#: src/game.cpp
+msgid "You don't have the necessary tools to disassemble any items here."
+msgstr "全てのアイテムを分解できる道具を持っていません。"
+
+#: src/game.cpp
+#, c-format
+msgid "You see %s nearby! Start butchering anyway?"
+msgstr "近くに%sがいるのが見えます！それでも解体を行いますか？"
+
+#: src/game.cpp
+msgid "Choose corpse to butcher / item to disassemble"
+msgstr "解体する死体/分解するアイテムを選択"
+
+#: src/game.cpp
+msgid "Butcher everything"
+msgstr "まとめて解体する"
+
+#: src/game.cpp
+msgid "Disassemble everything once"
+msgstr "一段階づつ分解"
+
+#: src/game.cpp
+msgid "Disassemble everything"
+msgstr "全て分解"
+
+#: src/game.cpp
+msgid "Cut up everything"
+msgstr "まとめて切断"
+
+#: src/game.cpp
+msgid ""
+"You are not in the mood and the prospect of guts and blood on your hands "
+"convinces you to turn away."
+msgstr "気分が落ち込んでおり、臓物や血が手にへばり付くことを考えるとやる気が起きません。"
+
+#: src/game.cpp
+msgid ""
+"You are not in the mood and the prospect of work stops you before you begin."
+msgstr "気分が落ち込んでおり、作業を始めようとする気分にもなりません。"
 
 #: src/game.cpp
 msgid "You're too full to eat the underbrush."
@@ -124781,7 +126137,7 @@ msgstr "量子トンネルで%dタイルの障壁を通過しました！"
 
 #: src/game.cpp
 msgid "No furniture at grabbed point."
-msgstr "掴もうとした時には掴む家具が存在しなかった。"
+msgstr "掴む家具が存在しません。"
 
 #: src/game.cpp
 #, c-format
@@ -124800,7 +126156,7 @@ msgstr "邪魔なものがあって移動できません。"
 #: src/game.cpp
 #, c-format
 msgid "The %s is too heavy for you to budge."
-msgstr "重すぎて%sを動かせなかった。"
+msgstr "重すぎて%sを動かせませんでした。"
 
 #: src/game.cpp
 #, c-format
@@ -125312,7 +126668,7 @@ msgstr "所持品がない。"
 #: src/game_inventory.cpp
 #, c-format
 msgid "You don't have a %s."
-msgstr "%sを持っていない。"
+msgstr "%sを持っていません。"
 
 #: src/game_inventory.cpp
 msgid "ENCUMBRANCE"
@@ -125352,7 +126708,7 @@ msgstr "着用するアイテムを選択"
 
 #: src/game_inventory.cpp
 msgid "You have nothing to wear."
-msgstr "着用するアイテムを持っていない。"
+msgstr "着用するアイテムを持っていません。"
 
 #: src/game_inventory.cpp
 msgid "Take off item"
@@ -125360,7 +126716,7 @@ msgstr "脱ぐアイテムを選択"
 
 #: src/game_inventory.cpp
 msgid "You don't wear anything."
-msgstr "何も着用していない。"
+msgstr "何も着用していません。"
 
 #: src/game_inventory.cpp
 #, c-format
@@ -125370,7 +126726,7 @@ msgstr "%sを入れる容器を選択"
 #: src/game_inventory.cpp
 #, c-format
 msgid "You don't have a suitable container for carrying %s."
-msgstr "%sを汲める容器を持っていない。"
+msgstr "%sを汲める容器を持っていません。"
 
 #: src/game_inventory.cpp
 msgid "Can't pick up spilt liquids"
@@ -125495,7 +126851,7 @@ msgstr "消費するアイテムを選択"
 
 #: src/game_inventory.cpp
 msgid "You have nothing to consume."
-msgstr "摂取するアイテムを持っていない。"
+msgstr "摂取するアイテムを持っていません。"
 
 #: src/game_inventory.cpp
 msgid "ACTION"
@@ -125513,7 +126869,7 @@ msgstr "使用するアイテムを選択"
 
 #: src/game_inventory.cpp
 msgid "You don't have any items you can use."
-msgstr "使用できるアイテムを持っていない。"
+msgstr "使用できるアイテムを持っていません。"
 
 #: src/game_inventory.cpp
 msgid "always"
@@ -125542,7 +126898,7 @@ msgstr "改造する銃を選択"
 
 #: src/game_inventory.cpp
 msgid "You don't have any guns to modify."
-msgstr "改造できる銃を持っていない。"
+msgstr "改造できる銃を持っていません。"
 
 #: src/game_inventory.cpp
 msgid "<color_dark_gray>?</color>"
@@ -125575,7 +126931,7 @@ msgstr "1章につき"
 
 #: src/game_inventory.cpp
 msgid "You have nothing to read."
-msgstr "読むアイテムを持っていない。"
+msgstr "読むアイテムを持っていません。"
 
 #: src/game_inventory.cpp
 #, c-format
@@ -125585,7 +126941,7 @@ msgstr "%sから盗む"
 #: src/game_inventory.cpp
 #, c-format
 msgid "%s's inventory is empty."
-msgstr "%sは何も所持していない。"
+msgstr "%sは何も所持していません。"
 
 #: src/game_inventory.cpp
 msgctxt "Shot as damage"
@@ -125610,7 +126966,7 @@ msgstr "装備するアイテムを選択"
 
 #: src/game_inventory.cpp
 msgid "You have nothing to wield."
-msgstr "装備するアイテムを持っていない。"
+msgstr "装備するアイテムを持っていません。"
 
 #: src/game_inventory.cpp
 #, c-format
@@ -125629,7 +126985,7 @@ msgstr "%sに収納する武器を選択"
 #: src/game_inventory.cpp
 #, c-format
 msgid "You have no weapons you could put into your %s."
-msgstr "%sに収納できる武器を持っていない。"
+msgstr "%sに収納できる武器を持っていません。"
 
 #: src/game_inventory.cpp src/iuse.cpp
 msgid "Cut up what?"
@@ -125645,7 +127001,7 @@ msgstr "銃身を切り詰める"
 
 #: src/game_inventory.cpp
 msgid "You don't have any guns."
-msgstr "銃を持っていない。"
+msgstr "銃を持っていません。"
 
 #: src/game_inventory.cpp
 #, c-format
@@ -125662,7 +127018,7 @@ msgstr "特定個数のアイテムを落とすには、数字を入力した後
 
 #: src/game_inventory.cpp
 msgid "You have nothing to drop."
-msgstr "落とすアイテムを持っていない。"
+msgstr "落とすアイテムを持っていません。"
 
 #: src/game_inventory.cpp
 msgid "Select two items to compare them."
@@ -126522,7 +127878,7 @@ msgstr "ジャックポットだ！5000ドルを手に入れました！"
 
 #: src/iexamine.cpp
 msgid "No win."
-msgstr "何も当たらなかった。"
+msgstr "はずれ。"
 
 #: src/iexamine.cpp
 msgid "Play again?"
@@ -126709,7 +128065,7 @@ msgstr "今の季節中はこの植物から何も収穫できません。"
 
 #: src/iexamine.cpp
 msgid "You couldn't harvest anything."
-msgstr "何も収穫できなかった。"
+msgstr "何も収穫できませんでした。"
 
 #: src/iexamine.cpp
 msgid "This flower is still alive, despite the harsh conditions..."
@@ -127226,8 +128582,8 @@ msgid "Do what with the curtains?"
 msgstr "カーテンに何をしますか？"
 
 #: src/iexamine.cpp
-msgid "Peek through the curtains."
-msgstr "カーテンから覗く"
+msgid "Peek through the closed curtains."
+msgstr "カーテンの隙間から覗く"
 
 #: src/iexamine.cpp
 msgid "Tear down the curtains."
@@ -130307,7 +131663,7 @@ msgstr "強化する衣類を選択"
 
 #: src/iuse.cpp src/iuse.cpp src/iuse_actor.cpp
 msgid "You do not have that item!"
-msgstr "そのアイテムを所持していない！"
+msgstr "そのアイテムを所持していません！"
 
 #: src/iuse.cpp
 msgid "This can be used to repair or modify other items, not itself."
@@ -132048,11 +133404,6 @@ msgstr "モンスターコレクションを更新しました。"
 msgid "This memory card does not contain any new data."
 msgstr "メモリーカードに目新しいデータは入っていませんでした。"
 
-#. ~ photo quality adjective
-#: src/iuse.cpp
-msgid "awful"
-msgstr "最悪"
-
 #: src/iuse.cpp
 msgid "bad"
 msgstr "悪い"
@@ -132469,7 +133820,7 @@ msgstr "時間を費やしましたが、保安システムを破れませんで
 
 #: src/iuse.cpp
 msgid "You fail to affect the security system."
-msgstr "保安システムを破れなかった。"
+msgstr "保安システムを突破できませんでした。"
 
 #: src/iuse.cpp
 msgid "You take some time, but manage to bypass the security system!"
@@ -133828,7 +135179,7 @@ msgstr "%1$sを%2$sから取り外した。"
 
 #: src/iuse_actor.cpp
 msgid "Doesn't appear to be modded."
-msgstr "MODが取り付けられていない。"
+msgstr "MODが取り付けられていません。"
 
 #: src/iuse_actor.cpp
 msgid "None of the mods can be removed."
@@ -136626,18 +137977,18 @@ msgstr "仲間を大工仕事から呼び戻す"
 msgid ""
 "Cost: $1000\n"
 " \n"
-"\n"
-"              .........\n"
-"              .........\n"
-"              .........\n"
-"              .........\n"
-"              .........\n"
-"              .........\n"
-"              ..#....**\n"
-"              ..#Ov..**\n"
-"              ...O|....\n"
 " \n"
-"We're willing to let you purchase a field at a substantial discount to use for your own agricultural enterprises.  We'll plow it for you so you know exactly what is yours... after you have a field you can hire workers to plant or harvest crops for you.  If the crop is something we have a demand for, we'll be willing to liquidate it."
+"                .........\n"
+"                .........\n"
+"                .........\n"
+"                .........\n"
+"                .........\n"
+"                .........\n"
+"                ..#....**\n"
+"                ..#Ov..**\n"
+"                ...O|....\n"
+" \n"
+"We're willing to let you purchase a field at a substantial discount to use for your own agricultural enterprises.  We'll plow it for you  so you know exactly what is yours... after you have a field you can hire workers to plant or harvest crops for you.  If the crop is something we have a demand for, we'll be willing to liquidate it."
 msgstr ""
 "費用: $1000\n"
 "\n"
@@ -136958,7 +138309,7 @@ msgstr "金を勘定し終わった %s は農地を柵で囲うよう労働者�
 
 #: src/mission_companion.cpp
 msgid "You have no seeds to plant!"
-msgstr "種を所持していない！"
+msgstr "種を所持していません！"
 
 #: src/mission_companion.cpp
 msgid "You have no room to plant seeds..."
@@ -137367,15 +138718,15 @@ msgstr "目標: (%d, %d)   現在地: (%d, %d)"
 
 #: src/mission_ui.cpp
 msgid "You have no active missions!"
-msgstr "有効な依頼を受けていない！"
+msgstr "有効な依頼を受けていません！"
 
 #: src/mission_ui.cpp
 msgid "You haven't completed any missions!"
-msgstr "依頼を完了していない！"
+msgstr "依頼を完了していません！"
 
 #: src/mission_ui.cpp
 msgid "You haven't failed any missions!"
-msgstr "依頼を失敗していない！"
+msgstr "依頼を失敗していません！"
 
 #. ~ name of a mod that has no name entry, (%s is the mods identifier)
 #: src/mod_manager.cpp
@@ -137619,7 +138970,7 @@ msgstr "近くの%sが蘇りました！"
 
 #: src/monattack.cpp
 msgid "But nothing seems to happen."
-msgstr "しかし、何も起こらなかった。"
+msgstr "しかし、何も起こりませんでした。"
 
 #: src/monattack.cpp
 #, c-format
@@ -139200,14 +140551,17 @@ msgid "It has the following senses: %s."
 msgstr "感覚追跡: %s"
 
 #: src/monster.cpp
+msgctxt "Hearing as sense"
 msgid "hearing"
 msgstr "聴覚"
 
 #: src/monster.cpp
+msgctxt "Sight as sense"
 msgid "sight"
 msgstr "視覚"
 
 #: src/monster.cpp
+msgctxt "Smell as sense"
 msgid "smell"
 msgstr "嗅覚"
 
@@ -139221,14 +140575,22 @@ msgid "It can %s."
 msgstr "%s行動可能"
 
 #: src/monster.cpp
+msgctxt "Swim as an action"
 msgid "swim"
 msgstr "水泳"
 
 #: src/monster.cpp
+msgctxt "Fly as an action"
 msgid "fly"
 msgstr "飛行"
 
 #: src/monster.cpp
+msgctxt "Dig as an action"
+msgid "dig"
+msgstr "穴掘"
+
+#: src/monster.cpp
+msgctxt "Climb as an action"
 msgid "climb"
 msgstr "登攀"
 
@@ -139238,10 +140600,17 @@ msgid "<bad>In fight it can %s.</bad>"
 msgstr "<bad>%s攻撃能力をもつ</bad>"
 
 #: src/monster.cpp
+msgctxt "Grab as an action"
+msgid "grab"
+msgstr "掴み"
+
+#: src/monster.cpp
+msgctxt "Poison as an action"
 msgid "poison"
 msgstr "毒"
 
 #: src/monster.cpp
+msgctxt "Paralyze as an action"
 msgid "paralyze"
 msgstr "麻痺"
 
@@ -141911,7 +143280,7 @@ msgstr "何をくれるんだ？"
 
 #: src/npctalk.cpp
 msgid "You have no items to offer."
-msgstr "渡せるアイテムを所持していない。"
+msgstr "渡せるアイテムを所持していません。"
 
 #: src/npctalk.cpp
 msgid "Changed your mind?"
@@ -142028,7 +143397,7 @@ msgstr "どのCBMを摘出して欲しいんだ？"
 #: src/npctalk_funcs.cpp
 #, c-format
 msgid "%s has nothing to give!"
-msgstr "%s は何も所持していない！"
+msgstr "%s は何も所持していません！"
 
 #: src/npctalk_funcs.cpp
 #, c-format
@@ -143058,7 +144427,7 @@ msgid ""
 "Use the 'Toggle Pixel Minimap' action key to change its visibility during "
 "gameplay."
 msgstr ""
-"trueにするとロード後にピクセルミニマップが表示されます。'切替/ピクセルミニマップ'に割り当てられたキーでゲーム中に表示･非表示を切り替えられます。"
+"trueにするとロード後にピクセルミニマップが表示されます。「切替/ミニマップ表示」に割り当てられたキーでゲーム中に表示･非表示を切り替えられます。"
 
 #: src/options.cpp
 msgid "Pixel minimap drawing mode"
@@ -144489,6 +145858,10 @@ msgid "Wielding - %s"
 msgstr "装備 - %s"
 
 #: src/pickup.cpp
+msgid "Lost track of vehicle."
+msgstr "車両の追跡信号が消失しました。"
+
+#: src/pickup.cpp
 msgid "You can't pick up a liquid!"
 msgstr "液体は拾えない！"
 
@@ -144712,7 +146085,7 @@ msgstr "強風が吹いています。%sを寒さから守る為に、風を防�
 #, c-format
 msgid ""
 "Your clothing is not providing enough protection from the wind for your %s!"
-msgstr "着用中の衣類では%sに当たる風を十分に防げていない！"
+msgstr "着用中の衣類では%sに当たる風を十分に防げていません！"
 
 #: src/player.cpp
 msgid "He"
@@ -144848,7 +146221,7 @@ msgstr "最期の言葉: "
 
 #: src/player.cpp
 msgid "No monsters were killed."
-msgstr "モンスターを何も倒していない。"
+msgstr "モンスターを何も倒していません。"
 
 #: src/player.cpp
 #, c-format
@@ -146447,7 +147820,7 @@ msgstr "<npcname>は既にそれを着用しています。"
 
 #: src/player.cpp
 msgid "<npcname> doesn't have that item."
-msgstr "<npcname>はそのアイテムを所持していない。"
+msgstr "<npcname>はそのアイテムを所持していません。"
 
 #: src/player.cpp
 #, c-format
@@ -148010,6 +149383,11 @@ msgid "Throwing %s"
 msgstr "投擲 %s"
 
 #: src/ranged.cpp
+#, c-format
+msgid "Blind throwing %s"
+msgstr "投擲 %s"
+
+#: src/ranged.cpp
 msgid "Set target"
 msgstr "目標を設定"
 
@@ -148049,7 +149427,7 @@ msgstr "%c 弾薬切替"
 
 #: src/ranged.cpp
 msgid "Mouse: LMB: Target, Wheel: Cycle, RMB: Fire"
-msgstr "マウス左:目標/ホイール:選択/マウス右:発射"
+msgstr "左クリック:目標, ホイール:選択, 右クリック:発射"
 
 #: src/ranged.cpp
 msgid "Steadiness"
@@ -148784,7 +150162,7 @@ msgstr "ボルトが発射され、%sに命中しました！"
 #: src/trapfunc.cpp
 #, c-format
 msgid "A bolt shoots out, but misses the %s."
-msgstr "ボルトが発射されましたが、%sには命中しなかった。"
+msgstr "ボルトが発射されましたが、%sには命中しませんでした。"
 
 #: src/trapfunc.cpp
 msgid "Kerblam!"
@@ -150295,7 +151673,7 @@ msgstr "%sの機構にはロックが掛かっています！"
 #: src/vehicle_move.cpp
 #, c-format
 msgid "The %s's engine isn't on!"
-msgstr "%sのエンジンが動いていない！"
+msgstr "%sのエンジンが動いていません！"
 
 #: src/vehicle_move.cpp
 #, c-format
@@ -150798,7 +152176,7 @@ msgstr "ビィィ！"
 
 #: src/vehicle_use.cpp
 msgid "You honk the horn, but nothing happens."
-msgstr "クラクションを鳴らしましたが、何も起こらなかった。"
+msgstr "クラクションを鳴らしましたが、何も起こりませんでした。"
 
 #: src/vehicle_use.cpp
 msgid "a simple melody blaring from the loudspeakers."
