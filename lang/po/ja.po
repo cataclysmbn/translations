@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2021-12-28 12:04+0000\n"
+"POT-Creation-Date: 2022-01-07 05:17+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2443,11 +2443,8 @@ msgstr "消化器官拡張"
 msgid ""
 "You have been outfitted with three synthetic stomachs and industrial-grade "
 "intestines.  Not only can you extract much more nutrition from food, but you"
-" are highly resistant to foodborne illness, and can sometimes eat rotten "
-"food."
+" are immune to foodborne illness, parasites, and can even eat rotten food."
 msgstr ""
-"3つの人工胃と工業用品質の腸を装着しています。 "
-"食料からより多くの養分を抽出できるだけでなく、食中毒への抵抗力を高め、腐敗した食料の消化すら可能にします。"
 
 #: data/json/bionics.json
 msgid "Acidic Discharge"
@@ -4956,6 +4953,10 @@ msgstr ""
 
 #: data/json/construction.json
 msgid "Install Autodoc couch"
+msgstr ""
+
+#: data/json/construction.json
+msgid "Build floor lamp"
 msgstr ""
 
 #: data/json/construction_category.json src/advanced_inv.cpp
@@ -36499,10 +36500,9 @@ msgstr[0] "CBM: 消化器官拡張"
 msgid ""
 "This module contains three synthetic stomachs and industrial-grade "
 "intestines.  Not only will these extract much more nutrition from food, but "
-"also increase the user's resistance to foodborne illness, and occasionally "
-"allow the digestion of rotten food."
+"also make the user immune to foodborne illness, parasites, and even allow "
+"the digestion of rotten food."
 msgstr ""
-"3つの人工胃と工業用品質の腸を装着します。 食料からより多くの養分を抽出できるだけでなく、食中毒への抵抗力を高め、腐敗した食料の消化すら可能にします。"
 
 #: data/json/items/bionics.json
 msgid "Enhanced Hearing CBM"
@@ -45395,9 +45395,9 @@ msgid_plural ".30-06 Springfield tracer, black powders"
 msgstr[0] "弾薬(.30-06口径/ｽﾌﾟﾘﾝｸﾞﾌｨｰﾙﾄﾞ曳光弾/黒色火薬)"
 
 #: data/json/items/ammo/3006.json
-msgid ".30-06 Springfield M2 AP, black powder"
-msgid_plural ".30-06 Springfield M2 AP, black powders"
-msgstr[0] "弾薬(.30-06口径/ｽﾌﾟﾘﾝｸﾞﾌｨｰﾙﾄﾞM2 AP/黒色火薬)"
+msgid ".30-06 M2 AP, black powder"
+msgid_plural ".30-06 M2 AP, black powders"
+msgstr[0] ""
 
 #: data/json/items/ammo/3006.json
 msgid ".30-06 Springfield, reloaded"
@@ -71291,13 +71291,13 @@ msgstr[0] "MRE"
 msgid "A generic MRE box, you shouldn't see this."
 msgstr "汎用的なMREの容器です。通常は生成されません。"
 
-#: data/json/items/comestibles/mre.json
+#: data/json/items/comestibles/mre.json data/json/obsoletion/items.json
 msgid "MRE small box"
 msgid_plural "MRE small boxes"
 msgstr[0] "MRE小型容器"
 
 #. ~ Description for {'str': 'MRE small box', 'str_pl': 'MRE small boxes'}
-#: data/json/items/comestibles/mre.json
+#: data/json/items/comestibles/mre.json data/json/obsoletion/items.json
 msgid "A generic small MRE box, you shouldn't see this"
 msgstr "汎用的なMREの小型容器です。通常は生成されません。"
 
@@ -207153,42 +207153,6 @@ msgid "You retched, but your stomach is empty."
 msgstr "嘔吐しようとしましたが、胃の中は空っぽです。"
 
 #: src/avatar.cpp
-msgid "Your thick scales get in the way."
-msgstr "厚い鱗が邪魔です。"
-
-#: src/avatar.cpp
-msgid "Your chitin gets in the way."
-msgstr "キチン質の装甲が邪魔です。"
-
-#: src/avatar.cpp
-msgid "Your insect limbs get in the way."
-msgstr "昆虫の手足が邪魔です。"
-
-#: src/avatar.cpp
-msgid "Your clothing restricts your insect arms."
-msgstr "衣服が昆虫の手足の動きを制限しています。"
-
-#: src/avatar.cpp
-msgid "Your webbed hands get in the way."
-msgstr "指の間の水掻きが邪魔です。"
-
-#: src/avatar.cpp
-msgid "Your arachnid limbs get in the way."
-msgstr "クモの手足が邪魔です。"
-
-#: src/avatar.cpp
-msgid "Your clothing constricts your arachnid limbs."
-msgstr "衣服がクモの手足の動きを制限しています。"
-
-#: src/avatar.cpp
-msgid "Your pain distracts you!"
-msgstr "痛みで気が散っています！"
-
-#: src/avatar.cpp
-msgid "You're weak from hunger."
-msgstr "空腹で弱体化しています。"
-
-#: src/avatar.cpp
 msgid "You've already reached maximum level."
 msgstr ""
 
@@ -245652,6 +245616,42 @@ msgstr "回避を試みました...しかし、回避を試みるだけの空間
 #, c-format
 msgid "%s tries to dodge but there's no room!"
 msgstr "%sは回避を試みました...しかし、回避を試みるだけの空間が存在しませんでした！"
+
+#: src/player.cpp
+msgid "Your thick scales get in the way."
+msgstr "厚い鱗が邪魔です。"
+
+#: src/player.cpp
+msgid "Your chitin gets in the way."
+msgstr "キチン質の装甲が邪魔です。"
+
+#: src/player.cpp
+msgid "Your insect limbs get in the way."
+msgstr "昆虫の手足が邪魔です。"
+
+#: src/player.cpp
+msgid "Your clothing restricts your insect arms."
+msgstr "衣服が昆虫の手足の動きを制限しています。"
+
+#: src/player.cpp
+msgid "Your webbed hands get in the way."
+msgstr "指の間の水掻きが邪魔です。"
+
+#: src/player.cpp
+msgid "Your arachnid limbs get in the way."
+msgstr "クモの手足が邪魔です。"
+
+#: src/player.cpp
+msgid "Your clothing constricts your arachnid limbs."
+msgstr "衣服がクモの手足の動きを制限しています。"
+
+#: src/player.cpp
+msgid "Your pain distracts you!"
+msgstr "痛みで気が散っています！"
+
+#: src/player.cpp
+msgid "You're weak from hunger."
+msgstr "空腹で弱体化しています。"
 
 #: src/player_activity.cpp
 #, c-format
