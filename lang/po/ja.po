@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-01-14 18:33+0000\n"
+"POT-Creation-Date: 2022-01-22 08:07+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2021\n"
 "Language-Team: Japanese (https://www.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -29115,6 +29115,15 @@ msgstr "垂れ下がっているロープ"
 msgid "A rope.  You could climb it up."
 msgstr ""
 
+#: data/json/furniture_and_terrain/furniture-tools.json
+msgid "web rope leading up"
+msgstr ""
+
+#. ~ Description for web rope leading up
+#: data/json/furniture_and_terrain/furniture-tools.json
+msgid "A web rope.  You could climb it up."
+msgstr ""
+
 #. ~ Description for -
 #: data/json/furniture_and_terrain/furniture-zztesting.json src/item.cpp
 msgid "-"
@@ -33167,6 +33176,15 @@ msgstr "平らな天然の岩盤です。"
 #: data/json/furniture_and_terrain/terrain-roofs.json
 msgid "A flat surface made of pulpy mass, covered in sticky wasp saliva."
 msgstr "粘着性のあるスズメバチの唾液で覆われた、パルプ状の物質で作られた平面です。"
+
+#: data/json/furniture_and_terrain/terrain-roofs.json
+msgid "web bridge"
+msgstr ""
+
+#. ~ Description for web bridge
+#: data/json/furniture_and_terrain/terrain-roofs.json
+msgid "A hammock like bridge spun from spider silk."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-traps.json
 msgid "empty space"
@@ -97832,10 +97850,10 @@ msgstr[0] "蓄電池ケース"
 #. ~ Description for {'str': 'storage battery case'}
 #: data/json/items/vehicle/battery.json
 msgid ""
-"An empty case that can hold a storage battery.  Complete with charging "
-"controller chip and connecting wires."
+"An empty case that can hold a storage battery, complete with charging "
+"controller chip, connecting wires, and mechanisms to help lift the battery "
+"to be mounted into position."
 msgstr ""
-"内側に蓄電池を設置できるよう作られた空の蓄電池ケースです。制御チップと接続配線が組み込まれており、これを介することで工具を使わずに蓄電池を付け外しできるようになります。"
 
 #: data/json/items/vehicle/battery.json data/json/vehicleparts/battery.json
 msgid "large storage battery"
@@ -111354,8 +111372,9 @@ msgstr "糸潜り"
 #: data/json/mutations/mutations.json
 msgid ""
 "Your webbing is easily strong enough to support your weight.  You'll use it "
-"to descend down any sheer drops you may encounter."
-msgstr "体重を十分支えられるほど強靭な糸を作れるようになりました。垂直な壁を安全に降りることができます。"
+"to descend down any sheer drops you may encounter, and to catch yourself "
+"should you fall."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Rope Webs"
@@ -111364,12 +111383,24 @@ msgstr "ロープ糸"
 #. ~ Description for {'str': 'Rope Webs'}
 #: data/json/mutations/mutations.json
 msgid ""
-"With spinnerets like THESE, who needs rope?!  Activate to produce rope."
-msgstr "こんな立派なロープを排出できるなんて、いったい誰が使うんでしょうか！？有効化するとロープを生成します。"
+"With spinnerets like THESE, who needs rope?!  Activate to sling a web rope "
+"that you can climb, and can be disassembled into rope."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "You spin a rope from your silk."
 msgstr "糸からロープを紡ぎました。"
+
+#: data/json/mutations/mutations.json
+msgid "Arachnitect"
+msgstr ""
+
+#. ~ Description for {'str': 'Arachnitect'}
+#: data/json/mutations/mutations.json
+msgid ""
+"The pinnacle of silk spinning.  Spin suspended walkways between ledges to "
+"span small gaps."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Whiskers"
@@ -158904,10 +158935,9 @@ msgstr "交換式蓄電池 (超大型)"
 msgid ""
 "A battery for storing electrical power, and discharging it to power "
 "electrical devices built into the vehicle.  This one is mounted on a quick "
-"release framework to allow it to be easily swapped, though it still weighs "
-"so much that a lifting tool of some kind is necessary for most people."
+"release framework that assists in loading and unloading the battery, "
+"allowing it to be easily swapped."
 msgstr ""
-"蓄えた電力を車両に内蔵された電子機器に供給する蓄電池です。すぐに取り外せる枠に搭載されていますが、非常に重いため、普通は持ち上げ性能を持った工具を使わなければ交換できません。"
 
 #: data/json/vehicleparts/battery.json
 msgid "swappable storage battery"
@@ -160249,9 +160279,9 @@ msgstr "交換式蓄電池ケース"
 #. ~ Description for {'str': 'swappable storage battery case'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
-"A battery case for storage batteries.  Allows quick removal or addition of a"
-" storage battery, if you can lift the battery."
-msgstr "蓄電池を入れる容器です。バッテリーを吊り上げられるなら、素早い取り外しや付け替えが可能です。"
+"A battery case for storage batteries.  Assists in lifting a storage battery "
+"into position and wiring it up, allowing quick installation or removal."
+msgstr ""
 
 #. ~ Description for {'str': 'military black box'}
 #: data/json/vehicleparts/vehicle_parts.json
@@ -217347,6 +217377,10 @@ msgstr "%sから飛び降りました。"
 msgid "You let go of the reins."
 msgstr "手綱を手放しました。"
 
+#: src/game.cpp
+msgid "You refuse to take control of this vehicle."
+msgstr "車両の運転を始めました。"
+
 #: src/game.cpp src/vehicle_use.cpp
 #, c-format
 msgid "You take control of the %s."
@@ -218389,6 +218423,22 @@ msgstr "水中から浮上できません！"
 #: src/game.cpp
 msgid "You can't climb here - there's a ceiling above your head."
 msgstr "ここからは登れません - 頭上に天井があります。"
+
+#: src/game.cpp
+msgid "There is nothing above you that you can attach a web to."
+msgstr ""
+
+#: src/game.cpp
+msgid "You can't spin a web rope there."
+msgstr ""
+
+#: src/game.cpp src/iuse_actor.cpp
+msgid "There is already furniture at that location."
+msgstr "既に設置物があります。"
+
+#: src/game.cpp
+msgid "You spin a rope of web."
+msgstr ""
 
 #: src/game.cpp
 msgid ""
@@ -220506,10 +220556,6 @@ msgid "You can't operate a vehicle while you're in your shell."
 msgstr "殻の中からは車両を操作できません。"
 
 #: src/handle_action.cpp
-msgid "You refuse to take control of this vehicle."
-msgstr "車両の運転を始めました。"
-
-#: src/handle_action.cpp
 msgid "Auto travel mode OFF!"
 msgstr "オートトラベルモードを無効化します！"
 
@@ -222107,6 +222153,10 @@ msgid "Climb down."
 msgstr "下層へ降りる"
 
 #: src/iexamine.cpp
+msgid "Spin Web Bridge."
+msgstr ""
+
+#: src/iexamine.cpp
 msgid "You are too weak to jump over an obstacle."
 msgstr "飛び越えられる程の筋力がありません。"
 
@@ -222165,6 +222215,10 @@ msgstr ""
 
 #: src/iexamine.cpp
 msgid "You tie the rope around your waist and begin to climb down."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "There is nothing for your to attach your web to!"
 msgstr ""
 
 #: src/iexamine.cpp
@@ -229180,10 +229234,6 @@ msgstr "%sの下部のスペースが狭すぎて%sを配置できません。"
 #, c-format
 msgid "You can't deploy a %s there."
 msgstr "そこには%sを設置できません。"
-
-#: src/iuse_actor.cpp
-msgid "There is already furniture at that location."
-msgstr "既に設置物があります。"
 
 #: src/iuse_actor.cpp
 #, c-format
@@ -238755,11 +238805,6 @@ msgid "<npcname>'s %s is pushed off!"
 msgstr "<npcname>の%sが押し退けられました！"
 
 #: src/mutation.cpp
-#, c-format
-msgid "You feel like using your %s would kill you!"
-msgstr "%sがあなたを殺そうとしているような気がします！"
-
-#: src/mutation.cpp
 msgid "You start spinning web with your spinnerets!"
 msgstr "糸穴から糸を出して網を紡ぎ始めました！"
 
@@ -238962,6 +239007,11 @@ msgstr "昔の想い出が頭を満たしています..."
 msgid "Images of your past life flash before you."
 msgstr "過去の記憶が映像となって、瞬間的に頭を過ぎります。"
 
+#: src/mutation.cpp src/mutation_ui.cpp
+#, c-format
+msgid "You feel like using your %s would kill you!"
+msgstr "%sがあなたを殺そうとしているような気がします！"
+
 #: src/mutation_data.cpp
 msgid "You inject yoursel-arRGH!"
 msgstr "自分に注射を打ちま...グエーッ！"
@@ -239075,11 +239125,6 @@ msgstr ""
 #, c-format
 msgid "You stop using your %s."
 msgstr "%sの使用をやめました。"
-
-#: src/mutation_ui.cpp
-#, c-format
-msgid "You don't have enough in you to activate your %s!"
-msgstr "%sを有効化する条件を満たしていません！"
 
 #: src/mutation_ui.cpp
 #, c-format
@@ -248231,6 +248276,10 @@ msgid "You flap your wings and flutter down gracefully."
 msgstr "翼を羽ばたかせて優雅に着地しました。"
 
 #: src/trapfunc.cpp
+msgid "You quickly spin a line of silk and rappel down."
+msgstr ""
+
+#: src/trapfunc.cpp
 msgid ""
 "You hit the ground hard, but your shock absorbers handle the impact "
 "admirably!"
@@ -248337,6 +248386,10 @@ msgid ""
 msgstr "陥没穴に踏み込みました！ロープを投げて、何かに引っ掛かるか試してみますか？"
 
 #: src/trapfunc.cpp
+msgid "You step into a sinkhole!  Throw a web out to try to catch something?"
+msgstr ""
+
+#: src/trapfunc.cpp
 msgid "The sinkhole collapses!"
 msgstr "陥没穴が崩落しました！"
 
@@ -248374,6 +248427,10 @@ msgstr[0] "%d階層を落下しました！"
 #: src/trapfunc.cpp
 msgid "<npcname> flaps their wings and flutters down gracefully."
 msgstr "<npcname>は翼を羽ばたかせて優雅に着地しました。"
+
+#: src/trapfunc.cpp
+msgid "<npcname> quickly spins a line of silk and rappels down."
+msgstr ""
 
 #: src/trapfunc.cpp
 msgid "You step on a loose tile, and water starts to flood the room!"

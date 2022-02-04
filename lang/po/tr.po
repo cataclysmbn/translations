@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-01-14 18:33+0000\n"
+"POT-Creation-Date: 2022-01-22 08:07+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2020\n"
 "Language-Team: Turkish (https://www.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -28394,6 +28394,15 @@ msgstr ""
 msgid "A rope.  You could climb it up."
 msgstr ""
 
+#: data/json/furniture_and_terrain/furniture-tools.json
+msgid "web rope leading up"
+msgstr ""
+
+#. ~ Description for web rope leading up
+#: data/json/furniture_and_terrain/furniture-tools.json
+msgid "A web rope.  You could climb it up."
+msgstr ""
+
 #. ~ Description for -
 #: data/json/furniture_and_terrain/furniture-zztesting.json src/item.cpp
 msgid "-"
@@ -32387,6 +32396,15 @@ msgstr ""
 #. ~ Description for flat roof
 #: data/json/furniture_and_terrain/terrain-roofs.json
 msgid "A flat surface made of pulpy mass, covered in sticky wasp saliva."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-roofs.json
+msgid "web bridge"
+msgstr ""
+
+#. ~ Description for web bridge
+#: data/json/furniture_and_terrain/terrain-roofs.json
+msgid "A hammock like bridge spun from spider silk."
 msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-traps.json
@@ -100808,8 +100826,9 @@ msgstr[1] ""
 #. ~ Description for {'str': 'storage battery case'}
 #: data/json/items/vehicle/battery.json
 msgid ""
-"An empty case that can hold a storage battery.  Complete with charging "
-"controller chip and connecting wires."
+"An empty case that can hold a storage battery, complete with charging "
+"controller chip, connecting wires, and mechanisms to help lift the battery "
+"to be mounted into position."
 msgstr ""
 
 #: data/json/items/vehicle/battery.json data/json/vehicleparts/battery.json
@@ -114685,7 +114704,8 @@ msgstr ""
 #: data/json/mutations/mutations.json
 msgid ""
 "Your webbing is easily strong enough to support your weight.  You'll use it "
-"to descend down any sheer drops you may encounter."
+"to descend down any sheer drops you may encounter, and to catch yourself "
+"should you fall."
 msgstr ""
 
 #: data/json/mutations/mutations.json
@@ -114695,11 +114715,23 @@ msgstr ""
 #. ~ Description for {'str': 'Rope Webs'}
 #: data/json/mutations/mutations.json
 msgid ""
-"With spinnerets like THESE, who needs rope?!  Activate to produce rope."
+"With spinnerets like THESE, who needs rope?!  Activate to sling a web rope "
+"that you can climb, and can be disassembled into rope."
 msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "You spin a rope from your silk."
+msgstr ""
+
+#: data/json/mutations/mutations.json
+msgid "Arachnitect"
+msgstr ""
+
+#. ~ Description for {'str': 'Arachnitect'}
+#: data/json/mutations/mutations.json
+msgid ""
+"The pinnacle of silk spinning.  Spin suspended walkways between ledges to "
+"span small gaps."
 msgstr ""
 
 #: data/json/mutations/mutations.json
@@ -160930,8 +160962,8 @@ msgstr ""
 msgid ""
 "A battery for storing electrical power, and discharging it to power "
 "electrical devices built into the vehicle.  This one is mounted on a quick "
-"release framework to allow it to be easily swapped, though it still weighs "
-"so much that a lifting tool of some kind is necessary for most people."
+"release framework that assists in loading and unloading the battery, "
+"allowing it to be easily swapped."
 msgstr ""
 
 #: data/json/vehicleparts/battery.json
@@ -162250,8 +162282,8 @@ msgstr ""
 #. ~ Description for {'str': 'swappable storage battery case'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
-"A battery case for storage batteries.  Allows quick removal or addition of a"
-" storage battery, if you can lift the battery."
+"A battery case for storage batteries.  Assists in lifting a storage battery "
+"into position and wiring it up, allowing quick installation or removal."
 msgstr ""
 
 #. ~ Description for {'str': 'military black box'}
@@ -220030,6 +220062,10 @@ msgstr ""
 msgid "You let go of the reins."
 msgstr ""
 
+#: src/game.cpp
+msgid "You refuse to take control of this vehicle."
+msgstr ""
+
 #: src/game.cpp src/vehicle_use.cpp
 #, c-format
 msgid "You take control of the %s."
@@ -221068,6 +221104,22 @@ msgstr ""
 
 #: src/game.cpp
 msgid "You can't climb here - there's a ceiling above your head."
+msgstr ""
+
+#: src/game.cpp
+msgid "There is nothing above you that you can attach a web to."
+msgstr ""
+
+#: src/game.cpp
+msgid "You can't spin a web rope there."
+msgstr ""
+
+#: src/game.cpp src/iuse_actor.cpp
+msgid "There is already furniture at that location."
+msgstr ""
+
+#: src/game.cpp
+msgid "You spin a rope of web."
 msgstr ""
 
 #: src/game.cpp
@@ -223178,10 +223230,6 @@ msgid "You can't operate a vehicle while you're in your shell."
 msgstr ""
 
 #: src/handle_action.cpp
-msgid "You refuse to take control of this vehicle."
-msgstr ""
-
-#: src/handle_action.cpp
 msgid "Auto travel mode OFF!"
 msgstr ""
 
@@ -224774,6 +224822,10 @@ msgid "Climb down."
 msgstr ""
 
 #: src/iexamine.cpp
+msgid "Spin Web Bridge."
+msgstr ""
+
+#: src/iexamine.cpp
 msgid "You are too weak to jump over an obstacle."
 msgstr ""
 
@@ -224833,6 +224885,10 @@ msgstr ""
 
 #: src/iexamine.cpp
 msgid "You tie the rope around your waist and begin to climb down."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "There is nothing for your to attach your web to!"
 msgstr ""
 
 #: src/iexamine.cpp
@@ -231841,10 +231897,6 @@ msgstr ""
 #: src/iuse_actor.cpp
 #, c-format
 msgid "You can't deploy a %s there."
-msgstr ""
-
-#: src/iuse_actor.cpp
-msgid "There is already furniture at that location."
 msgstr ""
 
 #: src/iuse_actor.cpp
@@ -241286,11 +241338,6 @@ msgid "<npcname>'s %s is pushed off!"
 msgstr ""
 
 #: src/mutation.cpp
-#, c-format
-msgid "You feel like using your %s would kill you!"
-msgstr ""
-
-#: src/mutation.cpp
 msgid "You start spinning web with your spinnerets!"
 msgstr ""
 
@@ -241493,6 +241540,11 @@ msgstr ""
 msgid "Images of your past life flash before you."
 msgstr ""
 
+#: src/mutation.cpp src/mutation_ui.cpp
+#, c-format
+msgid "You feel like using your %s would kill you!"
+msgstr ""
+
 #: src/mutation_data.cpp
 msgid "You inject yoursel-arRGH!"
 msgstr ""
@@ -241602,11 +241654,6 @@ msgstr ""
 #: src/mutation_ui.cpp
 #, c-format
 msgid "You stop using your %s."
-msgstr ""
-
-#: src/mutation_ui.cpp
-#, c-format
-msgid "You don't have enough in you to activate your %s!"
 msgstr ""
 
 #: src/mutation_ui.cpp
@@ -250642,6 +250689,10 @@ msgid "You flap your wings and flutter down gracefully."
 msgstr ""
 
 #: src/trapfunc.cpp
+msgid "You quickly spin a line of silk and rappel down."
+msgstr ""
+
+#: src/trapfunc.cpp
 msgid ""
 "You hit the ground hard, but your shock absorbers handle the impact "
 "admirably!"
@@ -250748,6 +250799,10 @@ msgid ""
 msgstr ""
 
 #: src/trapfunc.cpp
+msgid "You step into a sinkhole!  Throw a web out to try to catch something?"
+msgstr ""
+
+#: src/trapfunc.cpp
 msgid "The sinkhole collapses!"
 msgstr ""
 
@@ -250785,6 +250840,10 @@ msgstr[1] ""
 
 #: src/trapfunc.cpp
 msgid "<npcname> flaps their wings and flutters down gracefully."
+msgstr ""
+
+#: src/trapfunc.cpp
+msgid "<npcname> quickly spins a line of silk and rappels down."
 msgstr ""
 
 #: src/trapfunc.cpp
