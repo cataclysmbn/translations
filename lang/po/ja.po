@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-03-15 18:18+0000\n"
+"POT-Creation-Date: 2022-03-23 07:55+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -25830,6 +25830,7 @@ msgstr ""
 #: data/json/furniture_and_terrain/terrain-roofs.json
 #: data/json/furniture_and_terrain/terrain-walls.json
 #: data/json/furniture_and_terrain/terrain-windows.json
+#: data/json/obsoletion/uncategorized.json
 #: data/mods/Aftershock/maps/furniture.json data/mods/Hydroponics/terrain.json
 #: data/mods/Magiclysm/terrain.json data/mods/No_Hope/terrain.json
 msgid "whack!"
@@ -25973,6 +25974,7 @@ msgstr ""
 #: data/json/furniture_and_terrain/terrain-walls.json
 #: data/json/furniture_and_terrain/terrain-windows.json
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+#: data/json/obsoletion/uncategorized.json
 #: data/mods/Aftershock/maps/furniture.json
 #: data/mods/CRT_EXPANSION/constructions/crt_terrain.json
 #: data/mods/Hydroponics/terrain.json data/mods/Magiclysm/terrain.json
@@ -27334,6 +27336,22 @@ msgstr "間仕切りカーテンを開ける"
 #: data/json/furniture_and_terrain/furniture-medical.json
 msgid "Stop peeking!"
 msgstr "覗くのを止めろ！"
+
+#: data/json/furniture_and_terrain/furniture-medical.json
+#: data/json/items/fake.json
+msgid "centrifuge"
+msgid_plural "centrifuges"
+msgstr[0] ""
+
+#. ~ Description for centrifuge
+#: data/json/furniture_and_terrain/furniture-medical.json
+msgid ""
+"This is a centrifuge, a liquid separating device with an automated analyzer "
+"unit.  For some reason, this one has an attached battery pack.  It could be "
+"used to analyze a medical fluid sample, such as blood, if a test tube was "
+"placed in it.    It could also be used for separating and analyzing other "
+"samples, if you have a use for that."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-migo.json
 msgid "glowing tendril"
@@ -32287,18 +32305,6 @@ msgstr "高圧ポンプ"
 msgid ""
 "This unpowered pump previously would have moved fluids around in a hurry."
 msgstr "以前は忙しく働いていたようですが、今は稼働していません。"
-
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "centrifuge"
-msgstr "遠心分離装置"
-
-#. ~ Description for centrifuge
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid ""
-"This is a centrifuge, a liquid separating device with an automated analyzer "
-"unit.  It could be used to analyze a medical fluid sample, such as blood, if"
-" a test tube was placed in it."
-msgstr "遠心分離機と分析装置が一体となった機械です。血液などの液体サンプルが入った試験管を置けば、内容物を分析できます。"
 
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid "CVD machine"
@@ -66410,18 +66416,6 @@ msgid "Milk that's had about 60% of its water removed prior to canning."
 msgstr "水分の約60%を除去して濃縮した牛乳です。"
 
 #: data/json/items/comestibles/dairy.json
-msgid "buttermilk"
-msgid_plural "buttermilk"
-msgstr[0] "バターミルク"
-
-#. ~ Description for {'str_sp': 'buttermilk'}
-#: data/json/items/comestibles/dairy.json
-msgid ""
-"This is cultured milk defatted either due to churning or curdling.  Spoils "
-"quickly."
-msgstr "撹乳もしくは凝乳することで脱脂した、腐りやすい培養バターミルクです。"
-
-#: data/json/items/comestibles/dairy.json
 msgid "yogurt"
 msgid_plural "yogurts"
 msgstr[0] "ヨーグルト"
@@ -66441,17 +66435,6 @@ msgstr[0] "バター"
 msgid ""
 "A yellow stick of milkfat and milk solids, usually made from cow's milk."
 msgstr "牛乳の乳脂肪と乳固形分から作られた黄色い棒状の食品です。"
-
-#: data/json/items/comestibles/dairy.json
-msgid "raw butter"
-msgid_plural "raw butter"
-msgstr[0] "ローバター"
-
-#. ~ Description for {'str_sp': 'raw butter'}
-#: data/json/items/comestibles/dairy.json
-msgid ""
-"A white stick of raw milkfat and milk solids, made directly from cow's milk."
-msgstr "生乳から採れる乳脂肪と乳固形分から作られた、白い棒状の食品です。"
 
 #: data/json/items/comestibles/dairy.json
 msgid "ghee"
@@ -66541,16 +66524,6 @@ msgid ""
 "Cow's milk that has been partly dehydrated to vastly increase its shelf "
 "life, and also sweetened."
 msgstr "消費期限を大幅に延ばすためにある程度脱水し、甘味料を加えた乳製品です。"
-
-#: data/json/items/comestibles/dairy.json
-msgid "heavy cream"
-msgid_plural "heavy cream"
-msgstr[0] "生クリーム"
-
-#. ~ Description for {'str_sp': 'heavy cream'}
-#: data/json/items/comestibles/dairy.json
-msgid " Cream that has been skimmed from the top of raw milk left to sit."
-msgstr "寝かせた生乳から乳脂肪だけを取り出して作ったクリームです。"
 
 #: data/json/items/comestibles/drink.json
 msgid "apple cider"
@@ -90848,7 +90821,7 @@ msgid_plural "pseudo butter churns"
 msgstr[0] "バター撹拌機"
 
 #. ~ Description for {'str': 'pseudo butter churn'}
-#. ~ Description for {'str': 'pseudo atomic butter churn'}
+#. ~ Description for {'str': 'deployed atomic butter churn'}
 #: data/json/items/tool/cooking.json data/mods/Aftershock/items/items.json
 msgid "This is a crafting_pseudo_item if you have it something is wrong."
 msgstr "これはcrafting_pseudo_itemであり、所持している場合はバグが発生しています。"
@@ -91217,42 +91190,6 @@ msgid ""
 " integrated heating elements modern mess kits have."
 msgstr ""
 "収納性に優れた軍用の鍋と器のセットです。火や携帯ストーブがあれば食べ物を加熱調理できます。普通の鍋やフライパンと比べるとより浅く作られており、現代的な調理器具セットと違って加熱機能が組み込まれていません。"
-
-#: data/json/items/tool/cooking.json
-msgid "milk cream jar"
-msgid_plural "milk cream jars"
-msgstr[0] "密封瓶(生クリーム)"
-
-#. ~ Description for {'str': 'milk cream jar'}
-#: data/json/items/tool/cooking.json
-msgid ""
-"This jar contains raw milk separated into cream.  It is sealed until you are"
-" ready to use it."
-msgstr "この瓶には生乳から分離された生クリームが入っています。生クリームが浮いてきたら密封して保存できます。使うまでは密封したままの状態です。"
-
-#: data/json/items/tool/cooking.json
-msgid "rising cream jar"
-msgid_plural "rising cream jars"
-msgstr[0] "瓶(生クリーム/分離中)"
-
-#. ~ Use action msg for {'str': 'rising cream jar'}.
-#: data/json/items/tool/cooking.json
-msgid ""
-"You examine the batch and see that the cream has risen to the top, so you "
-"seal the jar up for storage."
-msgstr "生クリームが浮いてきたことを確認し、保存するために瓶を密封しました。"
-
-#. ~ Use action not_ready_msg for {'str': 'rising cream jar'}.
-#: data/json/items/tool/cooking.json
-msgid "The cream has not risen yet."
-msgstr "生クリームはまだ浮き上がってきません。"
-
-#. ~ Description for {'str': 'rising cream jar'}
-#: data/json/items/tool/cooking.json
-msgid ""
-"This jar contains raw milk separating into cream.  You can seal up the jar "
-"once the process is completed."
-msgstr "この瓶には分離中の生乳が入っています。生クリームが浮いてきたら密封して保存できます。"
 
 #: data/json/items/tool/cooking.json
 msgid "military mess kit"
@@ -142113,6 +142050,64 @@ msgid ""
 "drained of whey."
 msgstr ""
 
+#: data/json/obsoletion/items.json
+msgid "buttermilk"
+msgid_plural "buttermilk"
+msgstr[0] "バターミルク"
+
+#. ~ Description for {'str_sp': 'buttermilk'}
+#: data/json/obsoletion/items.json
+msgid ""
+"This is cultured milk defatted either due to churning or curdling.  Spoils "
+"quickly."
+msgstr "撹乳もしくは凝乳することで脱脂した、腐りやすい培養バターミルクです。"
+
+#: data/json/obsoletion/items.json
+msgid "heavy cream"
+msgid_plural "heavy cream"
+msgstr[0] "生クリーム"
+
+#. ~ Description for {'str_sp': 'heavy cream'}
+#: data/json/obsoletion/items.json
+msgid " Cream that has been skimmed from the top of raw milk left to sit."
+msgstr "寝かせた生乳から乳脂肪だけを取り出して作ったクリームです。"
+
+#: data/json/obsoletion/items.json
+msgid "milk cream jar"
+msgid_plural "milk cream jars"
+msgstr[0] "密封瓶(生クリーム)"
+
+#. ~ Description for {'str': 'milk cream jar'}
+#: data/json/obsoletion/items.json
+msgid ""
+"This jar contains raw milk separated into cream.  It is sealed until you are"
+" ready to use it."
+msgstr "この瓶には生乳から分離された生クリームが入っています。生クリームが浮いてきたら密封して保存できます。使うまでは密封したままの状態です。"
+
+#: data/json/obsoletion/items.json
+msgid "rising cream jar"
+msgid_plural "rising cream jars"
+msgstr[0] "瓶(生クリーム/分離中)"
+
+#. ~ Use action msg for {'str': 'rising cream jar'}.
+#: data/json/obsoletion/items.json
+msgid ""
+"You examine the batch and see that the cream has risen to the top, so you "
+"seal the jar up for storage."
+msgstr "生クリームが浮いてきたことを確認し、保存するために瓶を密封しました。"
+
+#. ~ Use action not_ready_msg for {'str': 'rising cream jar'}.
+#: data/json/obsoletion/items.json
+msgid "The cream has not risen yet."
+msgstr "生クリームはまだ浮き上がってきません。"
+
+#. ~ Description for {'str': 'rising cream jar'}
+#: data/json/obsoletion/items.json
+msgid ""
+"This jar contains raw milk separating into cream.  You can seal up the jar "
+"once the process is completed."
+msgstr "この瓶には分離中の生乳が入っています。生クリームが浮いてきたら密封して保存できます。"
+
 #: data/json/obsoletion/monsters.json
 msgid "centipede"
 msgid_plural "centipedes"
@@ -142834,6 +142829,18 @@ msgstr "車載/小型原子爆弾ランチャー"
 #: data/json/obsoletion/uncategorized.json
 msgid "mounted coilgun"
 msgstr "車載/コイルガン"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "broken centrifuge"
+msgstr ""
+
+#. ~ Description for broken centrifuge
+#: data/json/obsoletion/uncategorized.json
+msgid ""
+"This used to be a centrifuge, a liquid separating device with an automated "
+"analyzer unit.  If it was still functional, it could have been used to "
+"analyze a medical fluid sample."
+msgstr ""
 
 #. ~ Description for quantum solar panel
 #: data/json/obsoletion/vehicle_parts.json
@@ -164367,16 +164374,15 @@ msgstr[0] "アトミックバター撹拌機(折畳)"
 #: data/mods/Aftershock/items/items.json
 msgid ""
 "The Rivtech Churninator 4000, the only churn to be banned by 13 religious "
-"sects.  The legs are currently folded up for travel.  Unlike a standard "
-"churn that requires cream separated from raw milk this churn requires only "
-"raw milk, salt and a healthy respect for glowing objects."
+"sects.  The legs are currently folded up for travel.  This churn requires "
+"nothing but raw milk, salt and a healthy respect for glowing objects, even "
+"able to clarify butter with its awe-inspiring nuclear might."
 msgstr ""
-"Rivtechチャーニネーター4000は13もの宗教団体に使用禁止を言い渡された唯一のバター撹拌機です。持ち運びやすいように足が折り畳まれています。一般的なバターの製造には生乳から分離した生クリームが必要ですが、この撹拌機は生乳、塩、光り輝く物体に対する当然の敬意を揃えさえすれば大丈夫です。"
 
 #: data/mods/Aftershock/items/items.json
-msgid "pseudo atomic butter churn"
-msgid_plural "pseudo atomic butter churns"
-msgstr[0] "アトミックバター撹拌機"
+msgid "deployed atomic butter churn"
+msgid_plural "deployed atomic butter churns"
+msgstr[0] ""
 
 #: data/mods/Aftershock/items/items.json
 msgid "titanium"
