@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-04-26 18:43+0000\n"
+"POT-Creation-Date: 2022-05-03 04:07+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2927,10 +2927,10 @@ msgstr "修復用ナノマシン"
 #: data/json/bionics.json
 msgid ""
 "Inside your body is a fleet of tiny dormant robots.  While activated they "
-"will flit about your body, repairing damage at 1 HP per minute and stopping "
-"bleeding at the cost of extra power and stored calories."
+"will flit about your body, you randomly recover 1 HP every 15s, consuming "
+"power and calories only on a success.  It will also slow and eventually stop"
+" any bleeding on your body."
 msgstr ""
-"体内に極小サイズのロボットを注入します。作動させている間は体内を動き回りながら毎分HPを1回復し、追加電力とカロリーを消費して止血を行います。"
 
 #: data/json/bionics.json
 msgid "Artificial Night Generator"
@@ -9481,7 +9481,8 @@ msgstr "この食料は<info>生</info>であり、調理すると<good>栄養�
 msgid ""
 "This weapon is <bad>too unwieldy</bad> to fire on its own and <info>must be "
 "mounted</info> on a vehicle or furniture (window, table, mound of dirt, "
-"etc.) before use."
+"etc.) before use, <info>Large or Huge</info> mutants can fire from the hip "
+"with <bad>reduced accuracy.</bad>"
 msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
@@ -37067,9 +37068,11 @@ msgstr[0] "CBM: 修復用ナノマシン"
 #. ~ Description for {'str': 'Repair Nanobots CBM'}
 #: data/json/items/bionics.json
 msgid ""
-"A fleet of tiny dormant robots.  While activated they will flit about the "
-"user's body, repairing damage and stopping bleeding at the cost of power."
-msgstr "体内に極小サイズのロボットを注入します。作動させている間は体内を動き回り、電力を消費して出血を止め、ダメージを受けた部位を治療します。"
+"A fleet of tiny dormant robots.  While activated they will flit about your "
+"body, randomly recovering 1 HP every 15s, consuming power and calories only "
+"on a success.  It will also slow and eventually stop any bleeding on your "
+"body."
+msgstr ""
 
 #: data/json/items/bionics.json
 msgid "Artificial Night Generator CBM"
@@ -45143,11 +45146,6 @@ msgid "10mm Auto FMJ, black powder"
 msgid_plural "10mm Auto FMJ, black powders"
 msgstr[0] "弾薬(10mm/ｵｰﾄFMJ/黒色火薬)"
 
-#: data/json/items/ammo/10mm.json
-msgid "10mm Auto FMJ, reloaded"
-msgid_plural "10mm Auto FMJ, reloadeds"
-msgstr[0] "弾薬(10mm/ｵｰﾄFMJ(手詰め))"
-
 #: data/json/items/ammo/12mm.json
 msgid "H&K 12mm"
 msgid_plural "H&K 12mms"
@@ -45356,16 +45354,6 @@ msgid ".22 LR, black powder"
 msgid_plural ".22 LR, black powders"
 msgstr[0] "弾薬(.22口径/LR/黒色火薬)"
 
-#: data/json/items/ammo/22.json
-msgid ".22 LR, reloaded"
-msgid_plural ".22 LR, reloadeds"
-msgstr[0] "弾薬(.22口径/LR(手詰め))"
-
-#: data/json/items/ammo/22.json
-msgid ".22 CPHP, reloaded"
-msgid_plural ".22 CPHP, reloadeds"
-msgstr[0] ""
-
 #: data/json/items/ammo/223.json
 msgid ".223 Remington"
 msgid_plural ".223 Remingtons"
@@ -45423,21 +45411,6 @@ msgid "5.56 NATO tracer, black powder"
 msgid_plural "5.56 NATO tracer, black powders"
 msgstr[0] "弾薬(5.56mm/NATO曳光弾/黒色火薬)"
 
-#: data/json/items/ammo/223.json
-msgid ".223 Remington, reloaded"
-msgid_plural ".223 Remington, reloadeds"
-msgstr[0] "弾薬(.223口径/ﾚﾐﾝﾄﾝ(手詰め))"
-
-#: data/json/items/ammo/223.json
-msgid "5.56 NATO, reloaded"
-msgid_plural "5.56 NATO, reloadeds"
-msgstr[0] "弾薬(5.56mm/NATO(手詰め))"
-
-#: data/json/items/ammo/223.json
-msgid "5.56 NATO tracer, reloaded"
-msgid_plural "5.56 NATO tracer, reloadeds"
-msgstr[0] "弾薬(5.56mm/NATO曳光弾(手詰め))"
-
 #: data/json/items/ammo/270win.json
 msgid ".270 Winchester JSP"
 msgid_plural ".270 Winchester JSPs"
@@ -45458,11 +45431,6 @@ msgid ".270 Winchester JSP, black powder"
 msgid_plural ".270 Winchester JSP, black powders"
 msgstr[0] "弾薬(.270口径/ｳｨﾝﾁｪｽﾀｰJSP/黒色火薬)"
 
-#: data/json/items/ammo/270win.json
-msgid ".270 Winchester JSP, reloaded"
-msgid_plural ".270 Winchester JSP, reloadeds"
-msgstr[0] "弾薬(.270口径/ｳｨﾝﾁｪｽﾀｰJSP(手詰め))"
-
 #: data/json/items/ammo/300.json
 msgid ".300 Winchester Magnum"
 msgid_plural ".300 Winchester Magnums"
@@ -45482,20 +45450,6 @@ msgstr ""
 msgid ".300 Winchester Magnum, black powder"
 msgid_plural ".300 Winchester Magnum, black powders"
 msgstr[0] "弾薬(.300口径/ｳｨﾝﾁｪｽﾀｰﾏｸﾞﾅﾑ/黒色火薬)"
-
-#: data/json/items/ammo/300.json
-msgid ".300 Winchester Magnum, reloaded"
-msgid_plural ".300 Winchester Magnum, reloadeds"
-msgstr[0] "弾薬(.300口径/ｳｨﾝﾁｪｽﾀｰﾏｸﾞﾅﾑ(手詰め))"
-
-#. ~ Description for {'str': '.300 Winchester Magnum, reloaded'}
-#: data/json/items/ammo/300.json
-msgid ""
-"The .300 Winchester Magnum is extremely versatile and has been adopted by "
-"many shooting disciplines.  The cartridge has found use by hunters, military"
-" units, and law enforcement departments.  This one has been hand-reloaded."
-msgstr ""
-"多くの銃の規格に合った極めて用途の広い.300口径ウィンチェスターマグナム弾です。薬莢は警察や軍隊、猟師の使うものが見つかるでしょう。この弾薬は手詰めで製作されています。"
 
 #: data/json/items/ammo/3006.json
 msgid ".30-06 Springfield"
@@ -45554,21 +45508,6 @@ msgid ".30-06 M2 AP, black powder"
 msgid_plural ".30-06 M2 AP, black powders"
 msgstr[0] ""
 
-#: data/json/items/ammo/3006.json
-msgid ".30-06 Springfield, reloaded"
-msgid_plural ".30-06 Springfield, reloadeds"
-msgstr[0] "弾薬(.30-06口径/ｽﾌﾟﾘﾝｸﾞﾌｨｰﾙﾄﾞ(手詰め))"
-
-#: data/json/items/ammo/3006.json
-msgid ".30-06 incendiary, reloaded"
-msgid_plural ".30-06 incendiary, reloadeds"
-msgstr[0] "弾薬(.30-06口径/焼夷(手詰め))"
-
-#: data/json/items/ammo/3006.json
-msgid ".30-06 M2 AP, reloaded"
-msgid_plural ".30-06 M2 AP, reloadeds"
-msgstr[0] "弾薬(.30-06口径/M2 AP(手詰め))"
-
 #. ~ Description for {'str': '.300 AAC Blackout'}
 #: data/json/items/ammo/300blk.json
 msgid ""
@@ -45598,22 +45537,6 @@ msgstr ""
 msgid ".300 AAC Blackout, black powder"
 msgid_plural ".300 AAC Blackout, black powders"
 msgstr[0] "弾薬(.300口径BLK/黒色火薬)"
-
-#: data/json/items/ammo/300blk.json
-msgid ".300 AAC Blackout, reloaded"
-msgid_plural ".300 AAC Blackout, reloadeds"
-msgstr[0] "弾薬(.300口径BLK(手詰め))"
-
-#. ~ Description for {'str': '.300 AAC Blackout, reloaded'}
-#: data/json/items/ammo/300blk.json
-msgid ""
-".300 AAC Blackout is an intermediate cartridge that achieves ballistics "
-"similar to the 7.62x39 but allows use on the AR-15 platform.  The round is "
-"necked-up from the 5.56mm NATO, but feeds from a STANAG magazine.  It "
-"requires a specific barrel, so will not work in a standard M4 or similar "
-"carbine.  This one has been hand-reloaded."
-msgstr ""
-".300口径AACブラックアウト弾は、7.62x39mm弾に似た弾道特性を持ちながらAR-15系ライフルに装填可能な中型の弾薬です。5.56mmNATO弾からネックアップされており、STANAGマガジンから給弾されます。特定の銃身が必要となるため、標準的なM4や類似するカービンには装填できません。この弾薬は手詰めで製作されています。"
 
 #: data/json/items/ammo/308.json
 msgid ".308 Winchester"
@@ -45670,21 +45593,6 @@ msgid "7.62x51mm tracer, black powder"
 msgid_plural "7.62x51mm tracer, black powders"
 msgstr[0] "弾薬(7.62x51mm/曳光弾/黒色火薬)"
 
-#: data/json/items/ammo/308.json
-msgid ".308 Winchester, reloaded"
-msgid_plural ".308 Winchester, reloadeds"
-msgstr[0] "弾薬箱(.308口径/ｳｨﾝﾁｪｽﾀｰ(手詰め))"
-
-#: data/json/items/ammo/308.json
-msgid "7.62x51mm, reloaded"
-msgid_plural "7.62x51mm, reloadeds"
-msgstr[0] "弾薬(7.62x51mm(手詰め))"
-
-#: data/json/items/ammo/308.json
-msgid "7.62x51mm incendiary, reloaded"
-msgid_plural "7.62x51mm incendiary, reloadeds"
-msgstr[0] "弾薬(7.62x51mm/焼夷(手詰め))"
-
 #: data/json/items/ammo/32.json
 msgid ".32 ACP"
 msgid_plural ".32 ACPs"
@@ -45701,11 +45609,6 @@ msgstr ".32口径ACPは20世紀に人気だったハンドガン用弾薬です�
 msgid ".32 ACP, black powder"
 msgid_plural ".32 ACP, black powders"
 msgstr[0] "弾薬(.32口径/ACP/黒色火薬)"
-
-#: data/json/items/ammo/32.json
-msgid ".32 ACP, reloaded"
-msgid_plural ".32 ACP, reloadeds"
-msgstr[0] "弾薬(.32口径/ACP(手詰め))"
 
 #: data/json/items/ammo/357mag.json
 msgid ".357 magnum FMJ"
@@ -45745,16 +45648,6 @@ msgid ".357 Magnum JHP, black powder"
 msgid_plural ".357 Magnum JHP, black powders"
 msgstr[0] "弾薬(.357口径ﾏｸﾞﾅﾑ/JHP/黒色火薬)"
 
-#: data/json/items/ammo/357mag.json
-msgid ".357 Magnum FMJ, reloaded"
-msgid_plural ".357 Magnum FMJ, reloaded"
-msgstr[0] "弾薬(.357口径ﾏｸﾞﾅﾑ/FMJ(手詰め))"
-
-#: data/json/items/ammo/357mag.json
-msgid ".357 Magnum JHP, reloaded"
-msgid_plural ".357 Magnum JHP, reloaded"
-msgstr[0] "弾薬(.357口径ﾏｸﾞﾅﾑ/JHP(手詰め))"
-
 #: data/json/items/ammo/357sig.json
 msgid ".357 SIG FMJ"
 msgid_plural ".357 SIG FMJs"
@@ -45779,16 +45672,6 @@ msgid ""
 "velocity pistol cartridge, giving it a flatter trajectory than many handgun "
 "rounds."
 msgstr ".357口径SIGジャケッテッドホローポイント弾です。弾速の速い銃で使われるため、大抵のハンドガン用弾薬よりも弾道がまっすぐです。"
-
-#: data/json/items/ammo/357sig.json
-msgid ".357 SIG FMJ, reloaded"
-msgid_plural ".357 SIG FMJ, reloadeds"
-msgstr[0] "弾薬(.357口径SIG/FMJ(手詰め))"
-
-#: data/json/items/ammo/357sig.json
-msgid ".357 SIG JHP, reloaded"
-msgid_plural ".357 SIG JHP, reloadeds"
-msgstr[0] "弾薬(.357口径SIG/JHP(手詰め))"
 
 #: data/json/items/ammo/36paper.json
 msgid ".36 paper cartridge"
@@ -45827,16 +45710,6 @@ msgid ""
 "extremely common among US police forces during the 20th century."
 msgstr ""
 "弾頭重量約8gの.38口径スペシャル・フルメタルジャケット弾です。.38口径スペシャル弾は20世紀における警察組織において特に頻繁に用いられました。"
-
-#: data/json/items/ammo/38.json
-msgid ".38 FMJ, reloaded"
-msgid_plural ".38 FMJ, reloadeds"
-msgstr[0] "弾薬(.38口径/FMJ(手詰め))"
-
-#: data/json/items/ammo/38.json
-msgid ".38 Special, reloaded"
-msgid_plural ".38 Special, reloadeds"
-msgstr[0] "弾薬(.38口径ｽﾍﾟｼｬﾙ(手詰め))"
 
 #: data/json/items/ammo/38.json
 msgid ".38 FMJ, black powder"
@@ -45903,21 +45776,6 @@ msgid ".380 ACP JHP, black powder"
 msgid_plural ".380 ACP JHP, black powders"
 msgstr[0] "弾薬(.380口径ACP/JHP/黒色火薬)"
 
-#: data/json/items/ammo/380.json
-msgid ".380 ACP FMJ, reloaded"
-msgid_plural ".380 ACP FMJ, reloadeds"
-msgstr[0] "弾薬(.380口径ACP/FMJ(手詰め))"
-
-#: data/json/items/ammo/380.json
-msgid ".380 ACP JHP, reloaded"
-msgid_plural ".380 ACP JHP, reloadeds"
-msgstr[0] "弾薬(.380口径ACP/JHP(手詰め))"
-
-#: data/json/items/ammo/380.json
-msgid ".380 ACP +P, reloaded"
-msgid_plural ".380 ACP +P, reloadeds"
-msgstr[0] "弾薬(.380口径ACP/+P(手詰め))"
-
 #: data/json/items/ammo/38super.json
 msgid ".38 Super FMJ"
 msgid_plural ".38 Super FMJs"
@@ -45939,16 +45797,6 @@ msgid ""
 " cartridge was designed to penetrate body armor and vehicles."
 msgstr ""
 "弾頭重量約5.83gの.38口径スーパー/ホローポイント弾です。.38口径スーパー弾は1929年に、防護服や車両を貫通する為に設計されました。"
-
-#: data/json/items/ammo/38super.json
-msgid ".38 Super FMJ, reloaded"
-msgid_plural ".38 Super FMJ, reloadeds"
-msgstr[0] "弾薬(.38口径ｽｰﾊﾟｰ/FMJ(手詰め))"
-
-#: data/json/items/ammo/38super.json
-msgid ".38 Super, reloaded"
-msgid_plural ".38 Super, reloadeds"
-msgstr[0] "弾薬(.38口径ｽｰﾊﾟｰ(手詰め))"
 
 #: data/json/items/ammo/40.json
 msgid ".40 S&W FMJ"
@@ -45987,16 +45835,6 @@ msgstr[0] "弾薬(.40口径S&W/FMJ/黒色火薬)"
 msgid ".40 S&W JHP, black powder"
 msgid_plural ".40 S&W JHP, black powders"
 msgstr[0] "弾薬(.40口径S&W/JHP/黒色火薬)"
-
-#: data/json/items/ammo/40.json
-msgid ".40 S&W FMJ, reloaded"
-msgid_plural ".40 S&W FMJ, reloadeds"
-msgstr[0] "弾薬(.40口径S&W/FMJ(手詰め))"
-
-#: data/json/items/ammo/40.json
-msgid ".40 S&W JHP, reloaded"
-msgid_plural ".40 S&W JHP, reloadeds"
-msgstr[0] "弾薬(.40口径S&W/JHP(手詰め))"
 
 #: data/json/items/ammo/40x46mm.json
 msgid "40x46mm M1006"
@@ -46142,11 +45980,6 @@ msgstr[0] "弾薬(.410口径/散弾)"
 msgid "A .410 shell with 5 000 pellets.  Good for a hunting or combat load."
 msgstr "5粒の000弾を備えた.410口径散弾です。狩猟や戦闘に最適の弾薬です。"
 
-#: data/json/items/ammo/410shot.json
-msgid ".410 000 shot, reloaded"
-msgid_plural ".410 000 shot, reloadeds"
-msgstr[0] "弾薬(.410口径/散弾(手詰め))"
-
 #: data/json/items/ammo/44.json
 msgid ".44 Magnum FMJ"
 msgid_plural ".44 Magnum FMJs"
@@ -46172,16 +46005,6 @@ msgid ""
 "stopping power but suffers from extremely high recoil for a handgun round."
 msgstr ""
 "弾頭重量約16gの.44口径マグナム/ホローポイント弾です。.44口径マグナム弾は、入手しやすい拳銃弾の中では最も強力なものの一種です。卓越した制止力を持つ反面、拳銃弾としては恐ろしく反動が強い事が欠点です。"
-
-#: data/json/items/ammo/44.json
-msgid ".44 Magnum FMJ, reloaded"
-msgid_plural ".44 Magnum FMJ, reloadeds"
-msgstr[0] "弾薬(.44口径ﾏｸﾞﾅﾑ/FMJ(手詰め))"
-
-#: data/json/items/ammo/44.json
-msgid ".44 Magnum, reloaded"
-msgid_plural ".44 Magnum, reloadeds"
-msgstr[0] "弾薬(.44口径ﾏｸﾞﾅﾑ(手詰め))"
 
 #: data/json/items/ammo/44.json
 msgid ".44 Magnum, black powder"
@@ -46256,21 +46079,6 @@ msgid ".45 ACP JHP, black powder"
 msgid_plural ".45 ACP JHP, black powders"
 msgstr[0] "弾薬(.45口径ACP/JHP/黒色火薬)"
 
-#: data/json/items/ammo/45.json
-msgid ".45 FMJ, reloaded"
-msgid_plural ".45 FMJ, reloadeds"
-msgstr[0] "弾薬(.45口径/FMJ(手詰め))"
-
-#: data/json/items/ammo/45.json
-msgid ".45 ACP JHP, reloaded"
-msgid_plural ".45 ACP JHP, reloadeds"
-msgstr[0] "弾薬(.45口径ACP/JHP(手詰め))"
-
-#: data/json/items/ammo/45.json
-msgid ".45 ACP +P, reloaded"
-msgid_plural ".45 ACP +P, reloadeds"
-msgstr[0] "弾薬(.45口径ACP/+P(手詰め))"
-
 #: data/json/items/ammo/454.json
 msgid ".454 Casull"
 msgid_plural ".454 Casulls"
@@ -46286,11 +46094,6 @@ msgid ""
 "unsuitable for most purposes."
 msgstr ""
 "弾頭重量約32gの.454口径カスール・ジャケッテッドソフトポイント弾です。薬莢が.45口径ロングコルトより長く強力なものに置き換えられています。この弾薬は他の多くのライフル弾を上回る制止力を持っていますが、反動も激しいのであまり汎用的ではありません。"
-
-#: data/json/items/ammo/454.json
-msgid ".454 Casull, reloaded"
-msgid_plural ".454 Casull, reloadeds"
-msgstr[0] "弾薬(.454口径ｶｽｰﾙ(手詰め))"
 
 #: data/json/items/ammo/454.json
 msgid ".454 Casull, black powder"
@@ -46339,65 +46142,6 @@ msgid ""
 msgstr ""
 "約26.2gの鉛製フラットノーズ弾頭を備えた、アンティーク銃でも安全に使える.45-70口径ガバメント弾です。現代の弾薬よりは劣りますが、それでも十分な威力です。"
 
-#: data/json/items/ammo/4570.json
-msgid ".45-70 SP, reloaded"
-msgid_plural ".45-70 SP, reloadeds"
-msgstr[0] "弾薬(.45-70口径/SP(手詰め))"
-
-#. ~ Description for {'str': '.45-70 SP, reloaded'}
-#: data/json/items/ammo/4570.json
-msgid ""
-".45-70 Government ammunition loaded with a 305 grain soft point round.  One "
-"of the oldest cartridges still in use, it is still a favorite for large game"
-" hunting at short ranges.  This one has been hand-loaded."
-msgstr ""
-"約19.7gのソフトポイント弾頭を備えた、手詰めの.45-70口径ガバメント弾です。現在も使われている中では最も古い弾薬の一つですが、今も大型動物を近距離から狙う目的で愛用されています。"
-
-#: data/json/items/ammo/4570.json
-msgid ".45-70 +P penetrator, reloaded"
-msgid_plural ".45-70 +P penetrator, reloadeds"
-msgstr[0] "弾薬(.45-70口径/+P貫通弾(手詰め))"
-
-#. ~ Description for {'str': '.45-70 +P penetrator, reloaded'}
-#: data/json/items/ammo/4570.json
-msgid ""
-".45-70 Government +P ammunition loaded with a 305 grain solid copper "
-"penetrator projectile.  Designed for maximum penetration through thick hide "
-"and bone while maintaining ideal wounding characteristics.  This one has "
-"been hand-loaded."
-msgstr ""
-"約19.7gの銅芯を備えた、手詰めの.45-70口径ガバメント+P弾です。理想的な威力はそのままに、厚い皮と骨を貫く最大限の貫通性能を実現しています。"
-
-#: data/json/items/ammo/4570.json
-msgid ".45-70 LFN cowboy, reloaded"
-msgid_plural ".45-70 LFN cowboy, reloadeds"
-msgstr[0] "弾薬(.45-70口径/LFNｶｳﾎﾞｰｲ(手詰め))"
-
-#. ~ Description for {'str': '.45-70 LFN cowboy, reloaded'}
-#: data/json/items/ammo/4570.json
-msgid ""
-".45-70 Government ammunition loaded with a 405 grain lead flat nose bullet "
-"to original specifications for safe use in antique firearms.  Quite a bit "
-"less powerful than modern ammo, but still packs a punch.  This one has been "
-"hand-loaded."
-msgstr ""
-"約26.2gの鉛製フラットノーズ弾頭を備えた、アンティーク銃でも安全に使える手詰めの.45-70口径ガバメント弾です。現代の弾薬よりは劣りますが、それでも十分な威力です。"
-
-#: data/json/items/ammo/4570.json
-msgid ".45-70, black powder"
-msgid_plural ".45-70, black powders"
-msgstr[0] "弾薬(.45-70口径/黒色火薬)"
-
-#. ~ Description for {'str': '.45-70, black powder'}
-#: data/json/items/ammo/4570.json
-msgid ""
-".45-70 Government ammunition loaded with a 405 grain lead flat nose bullet "
-"using black powder to original specifications.  Quite a bit less powerful "
-"and a lot dirtier than modern ammo, but still packs a punch.  This one has "
-"been hand-loaded."
-msgstr ""
-"約26.2gの鉛製フラットノーズ弾頭と元来の仕様通りの黒色火薬を備えた、アンティーク銃でも安全に使える手詰めの.45-70口径ガバメント弾です。現代の弾薬よりは劣りますが、それでも十分な威力です。"
-
 #: data/json/items/ammo/45colt.json
 msgid ".45 Colt JHP"
 msgid_plural ".45 Colt JHPs"
@@ -46412,11 +46156,6 @@ msgid ""
 "can make this round competitive in the new era."
 msgstr ""
 "弾頭重量約16.5gの.45口径コルト・ジャケッテッドホローポイント弾です。元々はコルト社のシングル・アクション・アーミーのために設計されましたが、その後も復刻されたリボルバー用に使われています。当初は黒色火薬を使用していましたが、現行の弾薬は現代にも通用する威力をもっています。"
-
-#: data/json/items/ammo/45colt.json
-msgid ".45 Colt JHP, reloaded"
-msgid_plural ".45 Colt JHP, reloadeds"
-msgstr[0] "弾薬(.45口径ｺﾙﾄ/JHP(手詰め))"
 
 #: data/json/items/ammo/45colt.json
 msgid ".45 Colt JHP, black powder"
@@ -46444,7 +46183,7 @@ msgstr[0] "弾薬(4.6x30mm/黒色火薬)"
 
 #. ~ Description for {'str': '4.6x30mm, black powder'}
 #. ~ Description for {'str': '4.6x30mm, reloaded'}
-#: data/json/items/ammo/46.json
+#: data/json/items/ammo/46.json data/json/obsoletion/items.json
 msgid ""
 "4.6x30mm ammunition with 31gr copper plated lead bullets.  The 4.6x30mm "
 "round was developed by H&K to compete with FN Herstal's 5.7x28mm cartridge."
@@ -46452,11 +46191,6 @@ msgid ""
 " bullets rather than proper factory-made penetrator projectiles."
 msgstr ""
 "弾頭重量約2gの4.6x30mm銅メッキ鉛弾です。4.6x30mm弾はH&K社の5.7x28mm弾の競合品として開発されました。低反動ですが、工場生産の貫通弾ではなく作りが単純な鉛弾のため、正規品ほどの装甲貫通力はありません。"
-
-#: data/json/items/ammo/46.json
-msgid "4.6x30mm, reloaded"
-msgid_plural "4.6x30mm, reloadeds"
-msgstr[0] "弾薬(4.6x30mm(手詰め))"
 
 #: data/json/items/ammo/460.json
 msgid ".460 Rowland HCFN"
@@ -46496,23 +46230,6 @@ msgstr[0] "弾薬(.460口径ﾛｰﾗﾝﾄﾞ/FMJ/黒色火薬)"
 msgid ".460 Rowland, black powder"
 msgid_plural ".460 Rowland, black powders"
 msgstr[0] "弾薬(.40口径ﾛｰﾗﾝﾄﾞ/黒色火薬)"
-
-#: data/json/items/ammo/460.json
-msgid ".460 Rowland FMJ, reloaded"
-msgid_plural ".460 Rowland FMJ, reloadeds"
-msgstr[0] "弾薬(.460口径ﾛｰﾗﾝﾄﾞ/FMJ(手詰め))"
-
-#. ~ Description for {'str': '.460 Rowland FMJ, reloaded'}
-#: data/json/items/ammo/460.json
-msgid ""
-"A brass-jacketed variant of the .460 Rowland round.  This increases "
-"penetration slightly at the cost of reduced damage from expansion."
-msgstr ".460口径ローランド・ブラスジャケッテッド弾です。弾薬の開裂による損傷力が低下した代わりに、貫通力が若干増加しています。"
-
-#: data/json/items/ammo/460.json
-msgid ".460 Rowland, reloaded"
-msgid_plural ".460 Rowland, reloadeds"
-msgstr[0] "弾薬(.460口径ﾛｰﾗﾝﾄﾞ(手詰め))"
 
 #: data/json/items/ammo/50.json
 msgid ".50 BMG M17 tracer"
@@ -46586,48 +46303,6 @@ msgid ""
 msgstr ""
 "その爆発力を最大限に活用する、.50口径BMG弾の変種です。先端の焼夷剤が衝撃で発火することによって、内蔵したRDXやペンスリットなどの爆薬を爆発させ、更にはタングステンカーバイドの弾芯を囲むジルコニウム粉末の起爆剤にも引火し、それらを覆う軟鋼製のカップが炸裂します。カップの破片と燃える金属粉は装甲で固めた標的を貫通し、致死性を高めます。非常に貴重かつ構造が複雑で高価な弾薬のため、製造が再開される見込みはありません。賢く使いましょう。"
 
-#: data/json/items/ammo/50.json
-msgid ".50 BMG tracer, reloaded"
-msgid_plural ".50 BMG tracer, reloadeds"
-msgstr[0] "弾薬(.50口径BMG/曳光弾(手詰め))"
-
-#. ~ Description for {'str': '.50 BMG tracer, reloaded'}
-#: data/json/items/ammo/50.json
-msgid ""
-"A tracer variant of the powerful .50 BMG round.  Tracer rounds help to keep "
-"the weapon they are fired from on target at the risk of igniting flammable "
-"substances.  This one has been hand-reloaded."
-msgstr ""
-"曳光弾仕様の強力な.50口径BMG弾です。曳光弾は引火性能を持っており、命中した標的が可燃性であれば燃え上がる可能性があります。この弾薬は手詰めで製作されています。"
-
-#: data/json/items/ammo/50.json
-msgid ".50 BMG Match, reloaded"
-msgid_plural ".50 BMG Match, reloadeds"
-msgstr[0] "弾薬(.50口径BMG/競技用(手詰め))"
-
-#. ~ Description for {'str': '.50 BMG Match, reloaded'}
-#: data/json/items/ammo/50.json
-msgid ""
-".50 BMG ammunition with lead-cored FMJ bullets.  The .50 BMG is a very "
-"powerful rifle round designed for anti-aircraft use, later adapted to anti-"
-"vehicular and anti-personnel roles.  Its stupendous energy and armor "
-"piercing capabilities make it one of the most deadly rounds available, "
-"offset only by its drastic recoil and noise."
-msgstr ""
-"軟鋼弾芯を備えた、手詰めで作られた弾頭重量約42.8gの.50口径BMG・フルメタルジャケット弾です。対空用に設計された非常に強力なライフル弾でしたが、後に対車両、対人用途に改良されました。素晴らしい威力と装甲貫通力のお陰で、現在入手できる最も致命的な弾薬の一つとなっています。強烈な反動と銃声だけがその代償です。"
-
-#: data/json/items/ammo/50.json
-msgid ".50 BMG AP, reloaded"
-msgid_plural ".50 BMG AP, reloadeds"
-msgstr[0] "弾薬(.50口径BMG/AP(手詰め))"
-
-#. ~ Description for {'str': '.50 BMG AP, reloaded'}
-#: data/json/items/ammo/50.json
-msgid ""
-"Variant of the .50 BMG round that uses a core hardened steel.  Penetration "
-"is increased, but damage is reduced.  This one has been hand-reloaded."
-msgstr "鋼鉄弾芯を備えた改良型.50口径BMG弾です。貫通力は増加しましたが、威力が低下しています。この弾薬は手詰めで製作されています。"
-
 #: data/json/items/ammo/500.json
 msgid ".500 S&W Magnum"
 msgid_plural ".500 S&W Magnums"
@@ -46646,11 +46321,6 @@ msgstr ""
 msgid ".500 S&W Magnum, black powder"
 msgid_plural ".500 S&W Magnum, black powders"
 msgstr[0] "弾薬(.50口径S&Wﾏｸﾞﾅﾑ/黒色火薬)"
-
-#: data/json/items/ammo/500.json
-msgid ".500 S&W Magnum, reloaded"
-msgid_plural ".500 S&W Magnum, reloadeds"
-msgstr[0] "弾薬(.50口径S&Wﾏｸﾞﾅﾑ(手詰め))"
 
 #: data/json/items/ammo/545x39.json
 msgid "5.45x39mm 7N10"
@@ -46679,32 +46349,6 @@ msgid ""
 "penetrator.  Developed in 1998 by the Russian military."
 msgstr "鉄芯が内蔵された弾頭重量約3.6gの5.45x39mm AP弾です。1998年にロシア軍で開発されました。"
 
-#: data/json/items/ammo/545x39.json
-msgid "5.45x39mm, reloaded"
-msgid_plural "5.45x39mm, reloadeds"
-msgstr[0] "弾薬(5.45x39mm(手詰め))"
-
-#. ~ Description for {'str': '5.45x39mm, reloaded'}
-#: data/json/items/ammo/545x39.json
-msgid ""
-"The 5.45x39mm was the standard ammunition for the AK series from 1974.  Its "
-"designers were inspired by the 5.56x45mm NATO cartridge.  This one has been "
-"hand-reloaded."
-msgstr ""
-"5.45x39mm弾は、5.56x45mmNATO弾の影響を受けて開発された弾薬で、1274年以降のAKシリーズの標準弾として使用されました。この弾薬は手詰めで製作されています。"
-
-#: data/json/items/ammo/545x39.json
-msgid "5.45x39mm AP, reloaded"
-msgid_plural "5.45x39mm AP, reloadeds"
-msgstr[0] "弾薬(5.45x39mm/AP(手詰め))"
-
-#. ~ Description for {'str': '5.45x39mm AP, reloaded'}
-#: data/json/items/ammo/545x39.json
-msgid ""
-"Armor piercing 5.45x39mm ammunition with hand-reloaded bullets containing a "
-"steel penetrator.  Developed in 1998 by the Russian military."
-msgstr "鉄芯が内蔵された5.45x39mm AP弾です。1998年にロシア軍で開発されました。この弾薬は手詰めで製作されています。"
-
 #: data/json/items/ammo/57.json
 msgid "5.7x28mm SS190"
 msgid_plural "5.7x28mm SS190s"
@@ -46729,7 +46373,7 @@ msgstr[0] "弾薬(5.7x28mm/黒色火薬)"
 
 #. ~ Description for {'str': '5.7x28mm, black powder'}
 #. ~ Description for {'str': '5.7x28mm, reloaded'}
-#: data/json/items/ammo/57.json
+#: data/json/items/ammo/57.json data/json/obsoletion/items.json
 msgid ""
 "5.7x28mm ammunition with 31gr AP FMJ bullets.  The 5.7x28mm cartridge was "
 "designed by FN Herstal to replace the 9x19mm round in NATO use.  Although "
@@ -46740,11 +46384,6 @@ msgid ""
 "projectiles."
 msgstr ""
 "装甲に穴をあけるために設計された、弾頭重量約2gの5.7x28mmフルメタルジャケット徹甲弾です。9x19mmNATO弾の次世代としてFNハースタル社が設計しました。実際には完全に代替わりすることはありませんでしたが、その信頼性から各地の紛争で活躍しました。この銃弾は反動が非常に小く貫通力が高い点が特徴です。低反動ですが、工場生産の貫通弾ではなく作りが単純な鉛弾のため、正規品ほどの装甲貫通力はありません。"
-
-#: data/json/items/ammo/57.json
-msgid "5.7x28mm, reloaded"
-msgid_plural "5.7x28mm, reloadeds"
-msgstr[0] "弾薬(5.7x28mm(手詰め))"
 
 #: data/json/items/ammo/5x50.json
 msgid "RA110 5x50mm flechette"
@@ -46773,20 +46412,6 @@ msgid ""
 msgstr ""
 "現代のボディアーマーを撃ち破る為に設計された、Rivtech社製 5x50mm RA119 "
 "貫通弾です。生分解性素材の装弾筒の中に、安定翼付のタングステン合金徹甲弾が収められています。"
-
-#: data/json/items/ammo/5x50.json
-msgid "5x50mm flechette, reloaded"
-msgid_plural "5x50mm flechette, reloadeds"
-msgstr[0] "弾薬(5x50mm/矢弾(手詰め))"
-
-#. ~ Description for {'str': '5x50mm flechette, reloaded'}
-#: data/json/items/ammo/5x50.json
-msgid ""
-"Designed to defeat modern body armor, the Rivtech 5x50mm flechette round "
-"features a biodegradable sabot and a single, fin-stabilized penetrator.  "
-"This one has been hand-reloaded."
-msgstr ""
-"近代のボディアーマーを倒す為に設計された、Rivtech社製5x50mm矢弾は、生分解性サボとシングルフィンで安定化された貫通体を提供しています。この弾薬は手詰めで製作されています。"
 
 #: data/json/items/ammo/66mm.json
 msgid "M74 rocket"
@@ -46828,11 +46453,6 @@ msgid ""
 msgstr ""
 ".700口径ニトロエクスプレス弾は遠距離での使用のために設計された非常に強力なライフル弾です。その素晴らしい精度と装甲貫通能力は、この弾丸を最も致命的な弾丸の一つとしており、欠点として強烈な反動と騒音があります。"
 
-#: data/json/items/ammo/700nx.json
-msgid ".700 NX, reloaded"
-msgid_plural ".700 NX, reloadeds"
-msgstr[0] "弾薬(.70口径NX(手詰め))"
-
 #: data/json/items/ammo/762.json
 msgid "7.62x39mm 57-N-231"
 msgid_plural "7.62x39mm 57-N-231s"
@@ -46864,27 +46484,6 @@ msgstr ""
 "重量約7.9グラムの7.62x39mm "
 "M67弾です。M43弾の不安定な終端弾道特性がきっかけとなり、1960年代にユーゴスラビアで開発されました。標的へ命中した後のぶれがM43より激しく、更に大きなダメージを与えます。"
 
-#: data/json/items/ammo/762.json
-msgid "7.62x39mm M43, reloaded"
-msgid_plural "7.62x39mm M43, reloadeds"
-msgstr[0] "弾薬(7.62x39mm/M43(手詰め))"
-
-#. ~ Description for {'str': '7.62x39mm M43, reloaded'}
-#: data/json/items/ammo/762.json
-msgid ""
-"7.62x39mm ammunition with 121.9gr bullets.  Developed in WW2 by the Soviet "
-"Union the 7.62x39mm round rapidly became extremely popular all over the "
-"world.  The bullet has poor wounding potential due to its stability, only "
-"beginning to yaw after 26cm."
-msgstr ""
-"鋼鉄製の弾芯をもつ弾頭重量約7.9gの7.62x39mm "
-"57-N-231フルメタルジャケット弾です。第二次世界大戦中に開発され、急速に世界に広がりました。命中した後約26cm進んでからようやく弾道がぶれ始める安定性の高さが災いし、殺傷力はそれほど高くありません。"
-
-#: data/json/items/ammo/762.json
-msgid "7.62x39mm M67, reloaded"
-msgid_plural "7.62x39mm M67, reloadeds"
-msgstr[0] "弾薬(7.62x39mm/M67(手詰め))"
-
 #: data/json/items/ammo/762R.json
 msgid "7.62x54mmR"
 msgid_plural "7.62x54mmRs"
@@ -46900,11 +46499,6 @@ msgid ""
 "capable of killing most targets with one shot."
 msgstr ""
 "弾頭重量約9.7gの7.62x54mmRフルメタルジャケット弾です。モシン・ナガンライフルの根強い人気により未だに普及している古い弾薬の一つです。ただし人気があるのは民間のみで、軍では数十年前から使われていません。標的を一撃で葬る強力な弾薬です。"
-
-#: data/json/items/ammo/762R.json
-msgid "7.62x54mmR, reloaded"
-msgid_plural "7.62x54mmR, reloadeds"
-msgstr[0] "弾薬(7.62x54mmR(手詰め))"
 
 #: data/json/items/ammo/762x25.json
 msgid "7.62x25mm FMJ"
@@ -46950,11 +46544,6 @@ msgstr ""
 msgid "7.62x25mm FMJ, black powder"
 msgid_plural "7.62x25mm FMJ, black powders"
 msgstr[0] "弾薬(7.62x25mm/FMJ/黒色火薬)"
-
-#: data/json/items/ammo/762x25.json
-msgid "7.62x25mm, reloaded"
-msgid_plural "7.62x25mm, reloadeds"
-msgstr[0] "弾薬(7.62x25mm(手詰め))"
 
 #: data/json/items/ammo/84x246mm.json
 msgid "84x246mm HE rocket"
@@ -47144,26 +46733,6 @@ msgid "9x19mm FMJ, black powder"
 msgid_plural "9x19mm FMJ, black powders"
 msgstr[0] "弾薬(9mm/FMJ/黒色火薬)"
 
-#: data/json/items/ammo/9mm.json
-msgid "9x19mm JHP, reloaded"
-msgid_plural "9x19mm JHP, reloadeds"
-msgstr[0] "弾薬(9mm/JHP(手詰め))"
-
-#: data/json/items/ammo/9mm.json
-msgid "9x19mm FMJ, reloaded"
-msgid_plural "9x19mm FMJ, reloadeds"
-msgstr[0] "弾薬(9mm/FMJ(手詰め))"
-
-#: data/json/items/ammo/9mm.json
-msgid "9x19mm +P, reloaded"
-msgid_plural "9x19mm +P, reloadeds"
-msgstr[0] "弾薬(9mm/+P(手詰め))"
-
-#: data/json/items/ammo/9mm.json
-msgid "9x19mm +P+, reloaded"
-msgid_plural "9x19mm +P+, reloadeds"
-msgstr[0] "弾薬(9mm/+P+(手詰め))"
-
 #: data/json/items/ammo/9x18.json
 msgid "9x18mm 57-N-181S"
 msgid_plural "9x18mm 57-N-181Ss"
@@ -47212,48 +46781,6 @@ msgstr[0] "弾薬(9x18mm/黒色火薬)"
 msgid "9x18mm FMJ, black powder"
 msgid_plural "9x18mm FMJ, black powders"
 msgstr[0] "弾薬(9x18mm/FMJ/黒色火薬)"
-
-#: data/json/items/ammo/9x18.json
-msgid "9x18mm, reloaded"
-msgid_plural "9x18mm, reloadeds"
-msgstr[0] "弾薬(9x18mm(手詰め))"
-
-#. ~ Description for {'str': '9x18mm, reloaded'}
-#: data/json/items/ammo/9x18.json
-msgid ""
-"9x18 millimeter Makarov, an old Soviet pistol cartridge used mainly by the "
-"Makarov PM.  As the designation implies, it is a bit shorter in case length "
-"compared to 9mm Parabellum.  This one has been hand-reloaded."
-msgstr ""
-"9x18mmマカロフ弾です。主にマカロフPMに使用された旧ソ連製の拳銃弾で、名前の通り9mmパラベラム弾に比べて全長が少し短くなっています。この弾薬は手詰めで製作されています。"
-
-#: data/json/items/ammo/9x18.json
-msgid "9x18mm +P+, reloaded"
-msgid_plural "9x18mm +P+, reloadeds"
-msgstr[0] "弾薬(9x18mm/+P+(手詰め))"
-
-#. ~ Description for {'str': '9x18mm +P+, reloaded'}
-#: data/json/items/ammo/9x18.json
-msgid ""
-"9x18 millimeter Makarov, an old Soviet pistol cartridge used mainly by the "
-"Makarov PM.  This one has been hand-reloaded to generate higher internal "
-"pressure, boosting flight stability and damage."
-msgstr ""
-"9x18mmマカロフ弾です。主にマカロフPMに使用された旧ソ連製の拳銃弾で、弾道の安定性と破壊力を高めるため、より圧力がかかる手詰め方式で製作されています。"
-
-#: data/json/items/ammo/9x18.json
-msgid "9x18mm FMJ, reloaded"
-msgid_plural "9x18mm FMJ, reloadeds"
-msgstr[0] "弾薬(9x18mm/FMJ(手詰め))"
-
-#. ~ Description for {'str': '9x18mm FMJ, reloaded'}
-#: data/json/items/ammo/9x18.json
-msgid ""
-"9x18 millimeter Makarov, an old Soviet pistol cartridge used mainly by the "
-"Makarov PM.  This brass-jacketed round increases penetration slightly, at "
-"the cost of reduced expansion.  This one has been hand-reloaded."
-msgstr ""
-"9x18mmマカロフ弾です。主にマカロフPMに使用された旧ソ連製の拳銃弾で、ブラスジャケッテッド弾は着弾時に変形しにくいため貫通力が上昇しています。この弾薬は手詰めで製作されています。"
 
 #: data/json/items/ammo/atgm.json
 msgid "152mm ATGM HEAT"
@@ -47431,31 +46958,6 @@ msgstr[0] "弾頭(OG-7V 40mm)"
 msgid ""
 "40mm high-explosive fragmentation antipersonnel ammunition for the RPG-7."
 msgstr "RPG-7用の高性能対人破砕榴弾です。"
-
-#: data/json/items/ammo/shot.json
-msgid "birdshot, reloaded"
-msgid_plural "birdshot, reloadeds"
-msgstr[0] "弾薬(12ga/ﾊﾞｰﾄﾞｼｮｯﾄ(手詰め))"
-
-#: data/json/items/ammo/shot.json
-msgid "dragon's breath shell, reloaded"
-msgid_plural "dragon's breath shell, reloadeds"
-msgstr[0] "弾薬(12ga/ﾄﾞﾗｺﾞﾝﾌﾞﾚｽ弾(手詰め))"
-
-#: data/json/items/ammo/shot.json
-msgid "00 shot, reloaded"
-msgid_plural "00 shot, reloadeds"
-msgstr[0] "弾薬(12ga/散弾(手詰め))"
-
-#: data/json/items/ammo/shot.json
-msgid "flechette shell, reloaded"
-msgid_plural "flechette shell, reloadeds"
-msgstr[0] "弾薬(12ga/矢弾(手詰め))"
-
-#: data/json/items/ammo/shot.json
-msgid "shotgun slug, reloaded"
-msgid_plural "shotgun slug, reloadeds"
-msgstr[0] "弾薬(12ga/単発弾(手詰め))"
 
 #: data/json/items/ammo/shot.json
 msgid "birdshot, black powder"
@@ -92093,10 +91595,10 @@ msgstr[0] "簡易バール"
 #: data/json/items/tool/entry_tools.json
 msgid ""
 "This is a pipe whose ends have been bent and hammered flat to resemble a "
-"crowbar.  Use it to open locked crates without destroying them, or to lift "
-"manhole covers.  You could also wield it to fight with, in a pinch."
+"crowbar.  Use it to open locked crates without destroying them, to lift "
+"manhole covers, or even open doors and windows.  You could also wield it to "
+"fight with, in a pinch."
 msgstr ""
-"パイプの端を曲げてバールのような形にしたものです。箱やマンホールの蓋をこじ開ける用途で使います。もちろん、いざという時に武器として使うことも可能です。"
 
 #: data/json/items/tool/entry_tools.json
 msgid "locksmith kit"
@@ -137688,26 +137190,14 @@ msgstr "ええ、もちろん。"
 msgid "Well I'll have to scavenge the gold myself, thanks for nothing."
 msgstr "何もないじゃないか。自分で金を探すことにするよ。"
 
-#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
-msgid "Head of Security"
-msgstr "警備主任"
-
-#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
-msgid "U. Rourke"
-msgstr "U. ﾙｰｸ"
-
-#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
-msgid "Head of security"
-msgstr "警備主任"
-
-#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
-#: data/json/npcs/robofac/NPC_robofac_generic_security.json
-msgid "I'm part of the Hub security team."
-msgstr "ハブの警備班のリーダーだ。"
-
 #: data/json/npcs/robofac/NPC_robofac_generic_security.json
 msgid "Hub Security"
 msgstr "警備員(ハブ01)"
+
+#: data/json/npcs/robofac/NPC_robofac_generic_security.json
+#: data/json/obsoletion/npc.json
+msgid "I'm part of the Hub security team."
+msgstr "ハブの警備班のリーダーだ。"
 
 #: data/json/npcs/robofac/NPC_robofac_generic_security.json
 msgid "Keep it civil, merc."
@@ -142196,6 +141686,492 @@ msgid ""
 "once the process is completed."
 msgstr "この瓶には分離中の生乳が入っています。生クリームが浮いてきたら密封して保存できます。"
 
+#: data/json/obsoletion/items.json
+msgid "5x50mm flechette, reloaded"
+msgid_plural "5x50mm flechette, reloadeds"
+msgstr[0] "弾薬(5x50mm/矢弾(手詰め))"
+
+#. ~ Description for {'str': '5x50mm flechette, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"Designed to defeat modern body armor, the Rivtech 5x50mm flechette round "
+"features a biodegradable sabot and a single, fin-stabilized penetrator.  "
+"This one has been hand-reloaded."
+msgstr ""
+"近代のボディアーマーを倒す為に設計された、Rivtech社製5x50mm矢弾は、生分解性サボとシングルフィンで安定化された貫通体を提供しています。この弾薬は手詰めで製作されています。"
+
+#: data/json/obsoletion/items.json
+msgid "9x19mm JHP, reloaded"
+msgid_plural "9x19mm JHP, reloadeds"
+msgstr[0] "弾薬(9mm/JHP(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "9x19mm FMJ, reloaded"
+msgid_plural "9x19mm FMJ, reloadeds"
+msgstr[0] "弾薬(9mm/FMJ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "9x19mm +P, reloaded"
+msgid_plural "9x19mm +P, reloadeds"
+msgstr[0] "弾薬(9mm/+P(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "9x19mm +P+, reloaded"
+msgid_plural "9x19mm +P+, reloadeds"
+msgstr[0] "弾薬(9mm/+P+(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "9x18mm, reloaded"
+msgid_plural "9x18mm, reloadeds"
+msgstr[0] "弾薬(9x18mm(手詰め))"
+
+#. ~ Description for {'str': '9x18mm, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"9x18 millimeter Makarov, an old Soviet pistol cartridge used mainly by the "
+"Makarov PM.  As the designation implies, it is a bit shorter in case length "
+"compared to 9mm Parabellum.  This one has been hand-reloaded."
+msgstr ""
+"9x18mmマカロフ弾です。主にマカロフPMに使用された旧ソ連製の拳銃弾で、名前の通り9mmパラベラム弾に比べて全長が少し短くなっています。この弾薬は手詰めで製作されています。"
+
+#: data/json/obsoletion/items.json
+msgid "9x18mm +P+, reloaded"
+msgid_plural "9x18mm +P+, reloadeds"
+msgstr[0] "弾薬(9x18mm/+P+(手詰め))"
+
+#. ~ Description for {'str': '9x18mm +P+, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"9x18 millimeter Makarov, an old Soviet pistol cartridge used mainly by the "
+"Makarov PM.  This one has been hand-reloaded to generate higher internal "
+"pressure, boosting flight stability and damage."
+msgstr ""
+"9x18mmマカロフ弾です。主にマカロフPMに使用された旧ソ連製の拳銃弾で、弾道の安定性と破壊力を高めるため、より圧力がかかる手詰め方式で製作されています。"
+
+#: data/json/obsoletion/items.json
+msgid "9x18mm FMJ, reloaded"
+msgid_plural "9x18mm FMJ, reloadeds"
+msgstr[0] "弾薬(9x18mm/FMJ(手詰め))"
+
+#. ~ Description for {'str': '9x18mm FMJ, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"9x18 millimeter Makarov, an old Soviet pistol cartridge used mainly by the "
+"Makarov PM.  This brass-jacketed round increases penetration slightly, at "
+"the cost of reduced expansion.  This one has been hand-reloaded."
+msgstr ""
+"9x18mmマカロフ弾です。主にマカロフPMに使用された旧ソ連製の拳銃弾で、ブラスジャケッテッド弾は着弾時に変形しにくいため貫通力が上昇しています。この弾薬は手詰めで製作されています。"
+
+#: data/json/obsoletion/items.json
+msgid "10mm Auto FMJ, reloaded"
+msgid_plural "10mm Auto FMJ, reloadeds"
+msgstr[0] "弾薬(10mm/ｵｰﾄFMJ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".22 LR, reloaded"
+msgid_plural ".22 LR, reloadeds"
+msgstr[0] "弾薬(.22口径/LR(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".22 CPHP, reloaded"
+msgid_plural ".22 CPHP, reloadeds"
+msgstr[0] ""
+
+#: data/json/obsoletion/items.json
+msgid ".32 ACP, reloaded"
+msgid_plural ".32 ACP, reloadeds"
+msgstr[0] "弾薬(.32口径/ACP(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".38 FMJ, reloaded"
+msgid_plural ".38 FMJ, reloadeds"
+msgstr[0] "弾薬(.38口径/FMJ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".38 Special, reloaded"
+msgid_plural ".38 Special, reloadeds"
+msgstr[0] "弾薬(.38口径ｽﾍﾟｼｬﾙ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".38 Super FMJ, reloaded"
+msgid_plural ".38 Super FMJ, reloadeds"
+msgstr[0] "弾薬(.38口径ｽｰﾊﾟｰ/FMJ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".38 Super, reloaded"
+msgid_plural ".38 Super, reloadeds"
+msgstr[0] "弾薬(.38口径ｽｰﾊﾟｰ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".40 S&W FMJ, reloaded"
+msgid_plural ".40 S&W FMJ, reloadeds"
+msgstr[0] "弾薬(.40口径S&W/FMJ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".40 S&W JHP, reloaded"
+msgid_plural ".40 S&W JHP, reloadeds"
+msgstr[0] "弾薬(.40口径S&W/JHP(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".44 Magnum FMJ, reloaded"
+msgid_plural ".44 Magnum FMJ, reloadeds"
+msgstr[0] "弾薬(.44口径ﾏｸﾞﾅﾑ/FMJ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".44 Magnum, reloaded"
+msgid_plural ".44 Magnum, reloadeds"
+msgstr[0] "弾薬(.44口径ﾏｸﾞﾅﾑ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".45 FMJ, reloaded"
+msgid_plural ".45 FMJ, reloadeds"
+msgstr[0] "弾薬(.45口径/FMJ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".45 ACP JHP, reloaded"
+msgid_plural ".45 ACP JHP, reloadeds"
+msgstr[0] "弾薬(.45口径ACP/JHP(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".45 ACP +P, reloaded"
+msgid_plural ".45 ACP +P, reloadeds"
+msgstr[0] "弾薬(.45口径ACP/+P(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".45 Colt JHP, reloaded"
+msgid_plural ".45 Colt JHP, reloadeds"
+msgstr[0] "弾薬(.45口径ｺﾙﾄ/JHP(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "4.6x30mm, reloaded"
+msgid_plural "4.6x30mm, reloadeds"
+msgstr[0] "弾薬(4.6x30mm(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".50 BMG tracer, reloaded"
+msgid_plural ".50 BMG tracer, reloadeds"
+msgstr[0] "弾薬(.50口径BMG/曳光弾(手詰め))"
+
+#. ~ Description for {'str': '.50 BMG tracer, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"A tracer variant of the powerful .50 BMG round.  Tracer rounds help to keep "
+"the weapon they are fired from on target at the risk of igniting flammable "
+"substances.  This one has been hand-reloaded."
+msgstr ""
+"曳光弾仕様の強力な.50口径BMG弾です。曳光弾は引火性能を持っており、命中した標的が可燃性であれば燃え上がる可能性があります。この弾薬は手詰めで製作されています。"
+
+#: data/json/obsoletion/items.json
+msgid ".50 BMG Match, reloaded"
+msgid_plural ".50 BMG Match, reloadeds"
+msgstr[0] "弾薬(.50口径BMG/競技用(手詰め))"
+
+#. ~ Description for {'str': '.50 BMG Match, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+".50 BMG ammunition with lead-cored FMJ bullets.  The .50 BMG is a very "
+"powerful rifle round designed for anti-aircraft use, later adapted to anti-"
+"vehicular and anti-personnel roles.  Its stupendous energy and armor "
+"piercing capabilities make it one of the most deadly rounds available, "
+"offset only by its drastic recoil and noise."
+msgstr ""
+"軟鋼弾芯を備えた、手詰めで作られた弾頭重量約42.8gの.50口径BMG・フルメタルジャケット弾です。対空用に設計された非常に強力なライフル弾でしたが、後に対車両、対人用途に改良されました。素晴らしい威力と装甲貫通力のお陰で、現在入手できる最も致命的な弾薬の一つとなっています。強烈な反動と銃声だけがその代償です。"
+
+#: data/json/obsoletion/items.json
+msgid ".50 BMG AP, reloaded"
+msgid_plural ".50 BMG AP, reloadeds"
+msgstr[0] "弾薬(.50口径BMG/AP(手詰め))"
+
+#. ~ Description for {'str': '.50 BMG AP, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"Variant of the .50 BMG round that uses a core hardened steel.  Penetration "
+"is increased, but damage is reduced.  This one has been hand-reloaded."
+msgstr "鋼鉄弾芯を備えた改良型.50口径BMG弾です。貫通力は増加しましたが、威力が低下しています。この弾薬は手詰めで製作されています。"
+
+#: data/json/obsoletion/items.json
+msgid "5.7x28mm, reloaded"
+msgid_plural "5.7x28mm, reloadeds"
+msgstr[0] "弾薬(5.7x28mm(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".223 Remington, reloaded"
+msgid_plural ".223 Remington, reloadeds"
+msgstr[0] "弾薬(.223口径/ﾚﾐﾝﾄﾝ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "5.56 NATO, reloaded"
+msgid_plural "5.56 NATO, reloadeds"
+msgstr[0] "弾薬(5.56mm/NATO(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "5.56 NATO tracer, reloaded"
+msgid_plural "5.56 NATO tracer, reloadeds"
+msgstr[0] "弾薬(5.56mm/NATO曳光弾(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".270 Winchester JSP, reloaded"
+msgid_plural ".270 Winchester JSP, reloadeds"
+msgstr[0] "弾薬(.270口径/ｳｨﾝﾁｪｽﾀｰJSP(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".300 Winchester Magnum, reloaded"
+msgid_plural ".300 Winchester Magnum, reloadeds"
+msgstr[0] "弾薬(.300口径/ｳｨﾝﾁｪｽﾀｰﾏｸﾞﾅﾑ(手詰め))"
+
+#. ~ Description for {'str': '.300 Winchester Magnum, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"The .300 Winchester Magnum is extremely versatile and has been adopted by "
+"many shooting disciplines.  The cartridge has found use by hunters, military"
+" units, and law enforcement departments.  This one has been hand-reloaded."
+msgstr ""
+"多くの銃の規格に合った極めて用途の広い.300口径ウィンチェスターマグナム弾です。薬莢は警察や軍隊、猟師の使うものが見つかるでしょう。この弾薬は手詰めで製作されています。"
+
+#: data/json/obsoletion/items.json
+msgid ".300 AAC Blackout, reloaded"
+msgid_plural ".300 AAC Blackout, reloadeds"
+msgstr[0] "弾薬(.300口径BLK(手詰め))"
+
+#. ~ Description for {'str': '.300 AAC Blackout, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+".300 AAC Blackout is an intermediate cartridge that achieves ballistics "
+"similar to the 7.62x39 but allows use on the AR-15 platform.  The round is "
+"necked-up from the 5.56mm NATO, but feeds from a STANAG magazine.  It "
+"requires a specific barrel, so will not work in a standard M4 or similar "
+"carbine.  This one has been hand-reloaded."
+msgstr ""
+".300口径AACブラックアウト弾は、7.62x39mm弾に似た弾道特性を持ちながらAR-15系ライフルに装填可能な中型の弾薬です。5.56mmNATO弾からネックアップされており、STANAGマガジンから給弾されます。特定の銃身が必要となるため、標準的なM4や類似するカービンには装填できません。この弾薬は手詰めで製作されています。"
+
+#: data/json/obsoletion/items.json
+msgid ".308 Winchester, reloaded"
+msgid_plural ".308 Winchester, reloadeds"
+msgstr[0] "弾薬箱(.308口径/ｳｨﾝﾁｪｽﾀｰ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "7.62x51mm, reloaded"
+msgid_plural "7.62x51mm, reloadeds"
+msgstr[0] "弾薬(7.62x51mm(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "7.62x51mm incendiary, reloaded"
+msgid_plural "7.62x51mm incendiary, reloadeds"
+msgstr[0] "弾薬(7.62x51mm/焼夷(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".357 Magnum FMJ, reloaded"
+msgid_plural ".357 Magnum FMJ, reloaded"
+msgstr[0] "弾薬(.357口径ﾏｸﾞﾅﾑ/FMJ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".357 Magnum JHP, reloaded"
+msgid_plural ".357 Magnum JHP, reloaded"
+msgstr[0] "弾薬(.357口径ﾏｸﾞﾅﾑ/JHP(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".357 SIG FMJ, reloaded"
+msgid_plural ".357 SIG FMJ, reloadeds"
+msgstr[0] "弾薬(.357口径SIG/FMJ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".357 SIG JHP, reloaded"
+msgid_plural ".357 SIG JHP, reloadeds"
+msgstr[0] "弾薬(.357口径SIG/JHP(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".380 ACP FMJ, reloaded"
+msgid_plural ".380 ACP FMJ, reloadeds"
+msgstr[0] "弾薬(.380口径ACP/FMJ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".380 ACP JHP, reloaded"
+msgid_plural ".380 ACP JHP, reloadeds"
+msgstr[0] "弾薬(.380口径ACP/JHP(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".380 ACP +P, reloaded"
+msgid_plural ".380 ACP +P, reloadeds"
+msgstr[0] "弾薬(.380口径ACP/+P(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".410 000 shot, reloaded"
+msgid_plural ".410 000 shot, reloadeds"
+msgstr[0] "弾薬(.410口径/散弾(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".454 Casull, reloaded"
+msgid_plural ".454 Casull, reloadeds"
+msgstr[0] "弾薬(.454口径ｶｽｰﾙ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".460 Rowland FMJ, reloaded"
+msgid_plural ".460 Rowland FMJ, reloadeds"
+msgstr[0] "弾薬(.460口径ﾛｰﾗﾝﾄﾞ/FMJ(手詰め))"
+
+#. ~ Description for {'str': '.460 Rowland FMJ, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"A brass-jacketed variant of the .460 Rowland round.  This increases "
+"penetration slightly at the cost of reduced damage from expansion."
+msgstr ".460口径ローランド・ブラスジャケッテッド弾です。弾薬の開裂による損傷力が低下した代わりに、貫通力が若干増加しています。"
+
+#: data/json/obsoletion/items.json
+msgid ".460 Rowland, reloaded"
+msgid_plural ".460 Rowland, reloadeds"
+msgstr[0] "弾薬(.460口径ﾛｰﾗﾝﾄﾞ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".500 S&W Magnum, reloaded"
+msgid_plural ".500 S&W Magnum, reloadeds"
+msgstr[0] "弾薬(.50口径S&Wﾏｸﾞﾅﾑ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "5.45x39mm, reloaded"
+msgid_plural "5.45x39mm, reloadeds"
+msgstr[0] "弾薬(5.45x39mm(手詰め))"
+
+#. ~ Description for {'str': '5.45x39mm, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"The 5.45x39mm was the standard ammunition for the AK series from 1974.  Its "
+"designers were inspired by the 5.56x45mm NATO cartridge.  This one has been "
+"hand-reloaded."
+msgstr ""
+"5.45x39mm弾は、5.56x45mmNATO弾の影響を受けて開発された弾薬で、1274年以降のAKシリーズの標準弾として使用されました。この弾薬は手詰めで製作されています。"
+
+#: data/json/obsoletion/items.json
+msgid "5.45x39mm AP, reloaded"
+msgid_plural "5.45x39mm AP, reloadeds"
+msgstr[0] "弾薬(5.45x39mm/AP(手詰め))"
+
+#. ~ Description for {'str': '5.45x39mm AP, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"Armor piercing 5.45x39mm ammunition with hand-reloaded bullets containing a "
+"steel penetrator.  Developed in 1998 by the Russian military."
+msgstr "鉄芯が内蔵された5.45x39mm AP弾です。1998年にロシア軍で開発されました。この弾薬は手詰めで製作されています。"
+
+#: data/json/obsoletion/items.json
+msgid ".700 NX, reloaded"
+msgid_plural ".700 NX, reloadeds"
+msgstr[0] "弾薬(.70口径NX(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "7.62x39mm M43, reloaded"
+msgid_plural "7.62x39mm M43, reloadeds"
+msgstr[0] "弾薬(7.62x39mm/M43(手詰め))"
+
+#. ~ Description for {'str': '7.62x39mm M43, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+"7.62x39mm ammunition with 121.9gr bullets.  Developed in WW2 by the Soviet "
+"Union the 7.62x39mm round rapidly became extremely popular all over the "
+"world.  The bullet has poor wounding potential due to its stability, only "
+"beginning to yaw after 26cm."
+msgstr ""
+"鋼鉄製の弾芯をもつ弾頭重量約7.9gの7.62x39mm "
+"57-N-231フルメタルジャケット弾です。第二次世界大戦中に開発され、急速に世界に広がりました。命中した後約26cm進んでからようやく弾道がぶれ始める安定性の高さが災いし、殺傷力はそれほど高くありません。"
+
+#: data/json/obsoletion/items.json
+msgid "7.62x39mm M67, reloaded"
+msgid_plural "7.62x39mm M67, reloadeds"
+msgstr[0] "弾薬(7.62x39mm/M67(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "7.62x54mmR, reloaded"
+msgid_plural "7.62x54mmR, reloadeds"
+msgstr[0] "弾薬(7.62x54mmR(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "7.62x25mm, reloaded"
+msgid_plural "7.62x25mm, reloadeds"
+msgstr[0] "弾薬(7.62x25mm(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".30-06 Springfield, reloaded"
+msgid_plural ".30-06 Springfield, reloadeds"
+msgstr[0] "弾薬(.30-06口径/ｽﾌﾟﾘﾝｸﾞﾌｨｰﾙﾄﾞ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".30-06 incendiary, reloaded"
+msgid_plural ".30-06 incendiary, reloadeds"
+msgstr[0] "弾薬(.30-06口径/焼夷(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".30-06 M2 AP, reloaded"
+msgid_plural ".30-06 M2 AP, reloadeds"
+msgstr[0] "弾薬(.30-06口径/M2 AP(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid ".45-70 SP, reloaded"
+msgid_plural ".45-70 SP, reloadeds"
+msgstr[0] "弾薬(.45-70口径/SP(手詰め))"
+
+#. ~ Description for {'str': '.45-70 SP, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+".45-70 Government ammunition loaded with a 305 grain soft point round.  One "
+"of the oldest cartridges still in use, it is still a favorite for large game"
+" hunting at short ranges.  This one has been hand-loaded."
+msgstr ""
+"約19.7gのソフトポイント弾頭を備えた、手詰めの.45-70口径ガバメント弾です。現在も使われている中では最も古い弾薬の一つですが、今も大型動物を近距離から狙う目的で愛用されています。"
+
+#: data/json/obsoletion/items.json
+msgid ".45-70 +P penetrator, reloaded"
+msgid_plural ".45-70 +P penetrator, reloadeds"
+msgstr[0] "弾薬(.45-70口径/+P貫通弾(手詰め))"
+
+#. ~ Description for {'str': '.45-70 +P penetrator, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+".45-70 Government +P ammunition loaded with a 305 grain solid copper "
+"penetrator projectile.  Designed for maximum penetration through thick hide "
+"and bone while maintaining ideal wounding characteristics.  This one has "
+"been hand-loaded."
+msgstr ""
+"約19.7gの銅芯を備えた、手詰めの.45-70口径ガバメント+P弾です。理想的な威力はそのままに、厚い皮と骨を貫く最大限の貫通性能を実現しています。"
+
+#: data/json/obsoletion/items.json
+msgid ".45-70 LFN cowboy, reloaded"
+msgid_plural ".45-70 LFN cowboy, reloadeds"
+msgstr[0] "弾薬(.45-70口径/LFNｶｳﾎﾞｰｲ(手詰め))"
+
+#. ~ Description for {'str': '.45-70 LFN cowboy, reloaded'}
+#: data/json/obsoletion/items.json
+msgid ""
+".45-70 Government ammunition loaded with a 405 grain lead flat nose bullet "
+"to original specifications for safe use in antique firearms.  Quite a bit "
+"less powerful than modern ammo, but still packs a punch.  This one has been "
+"hand-loaded."
+msgstr ""
+"約26.2gの鉛製フラットノーズ弾頭を備えた、アンティーク銃でも安全に使える手詰めの.45-70口径ガバメント弾です。現代の弾薬よりは劣りますが、それでも十分な威力です。"
+
+#: data/json/obsoletion/items.json
+msgid "birdshot, reloaded"
+msgid_plural "birdshot, reloadeds"
+msgstr[0] "弾薬(12ga/ﾊﾞｰﾄﾞｼｮｯﾄ(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "dragon's breath shell, reloaded"
+msgid_plural "dragon's breath shell, reloadeds"
+msgstr[0] "弾薬(12ga/ﾄﾞﾗｺﾞﾝﾌﾞﾚｽ弾(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "00 shot, reloaded"
+msgid_plural "00 shot, reloadeds"
+msgstr[0] "弾薬(12ga/散弾(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "flechette shell, reloaded"
+msgid_plural "flechette shell, reloadeds"
+msgstr[0] "弾薬(12ga/矢弾(手詰め))"
+
+#: data/json/obsoletion/items.json
+msgid "shotgun slug, reloaded"
+msgid_plural "shotgun slug, reloadeds"
+msgstr[0] "弾薬(12ga/単発弾(手詰め))"
+
 #: data/json/obsoletion/monsters.json
 msgid "centipede"
 msgid_plural "centipedes"
@@ -142700,6 +142676,18 @@ msgid ""
 "toggle NV-visible areas on or off."
 msgstr ""
 "視覚の処理が変化しました。暗闇では視界が向上し、明るい光の下では近視になります。眼鏡で矯正することができるでしょう。有効化して暗視能力を切り替えられます。"
+
+#: data/json/obsoletion/npc.json
+msgid "Head of Security"
+msgstr "警備主任"
+
+#: data/json/obsoletion/npc.json
+msgid "U. Rourke"
+msgstr "U. ﾙｰｸ"
+
+#: data/json/obsoletion/npc.json
+msgid "Head of security"
+msgstr "警備主任"
 
 #: data/json/obsoletion/uncategorized.json
 msgid "Advanced Microreactor System"
@@ -159911,6 +159899,21 @@ msgid ""
 " water into."
 msgstr ""
 "~ は水場を示しています。水場の液体は、所持している容器に汲み入れられます。'e'で水場を調べてから'c'を押し、水密性のある容器を選択しましょう。"
+
+#: data/json/uncraft/ammo/4570.json
+msgid ".45-70, black powder"
+msgid_plural ".45-70, black powders"
+msgstr[0] "弾薬(.45-70口径/黒色火薬)"
+
+#. ~ Description for {'str': '.45-70, black powder'}
+#: data/json/uncraft/ammo/4570.json
+msgid ""
+".45-70 Government ammunition loaded with a 405 grain lead flat nose bullet "
+"using black powder to original specifications.  Quite a bit less powerful "
+"and a lot dirtier than modern ammo, but still packs a punch.  This one has "
+"been hand-loaded."
+msgstr ""
+"約26.2gの鉛製フラットノーズ弾頭と元来の仕様通りの黒色火薬を備えた、アンティーク銃でも安全に使える手詰めの.45-70口径ガバメント弾です。現代の弾薬よりは劣りますが、それでも十分な威力です。"
 
 #: data/json/vehicleparts/armor.json
 msgid "rebar reinforcement"
@@ -239826,6 +239829,11 @@ msgstr "%sの使用をやめました。"
 msgid ""
 "You cannot activate %s!  To read a description of %s, press '!', then '%c'."
 msgstr "%sは有効化できません！%sの説明を表示するには'!'を押した後に'%c'を押してください。"
+
+#: src/mutation_ui.cpp
+#, c-format
+msgid "You don't have enough in you to activate your %s!"
+msgstr "%sを有効化する条件を満たしていません！"
 
 #: src/name.cpp
 msgid "Tom"
