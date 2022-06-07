@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-05-13 17:56+0000\n"
+"POT-Creation-Date: 2022-05-28 15:09+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2020\n"
 "Language-Team: Norwegian Bokmål (https://www.transifex.com/bn-team/teams/113585/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -4401,6 +4401,10 @@ msgid "Extract Clay"
 msgstr ""
 
 #: data/json/construction.json
+msgid "Remove gravel and replace with dirt"
+msgstr ""
+
+#: data/json/construction.json
 msgid "Build Charcoal Kiln"
 msgstr ""
 
@@ -4755,10 +4759,6 @@ msgstr ""
 msgid ""
 "Must be between brick or (reinforced)concrete walls to function, and at "
 "least one wall must have an adjacent mechanical winch."
-msgstr ""
-
-#: data/json/construction.json
-msgid "Remove gravel and replace with dirt"
 msgstr ""
 
 #: data/json/construction.json
@@ -24482,6 +24482,10 @@ msgstr ""
 
 #: data/json/tool_qualities.json
 msgid "self jacking"
+msgstr ""
+
+#: data/json/tool_qualities.json
+msgid "siphoning"
 msgstr ""
 
 #: data/json/tool_qualities.json
@@ -47491,7 +47495,7 @@ msgstr[1] ""
 #: data/json/items/armor/ammo_pouch.json
 msgid ""
 "A fabric ammo pouch that can be strapped to your chest which is capable of "
-"holding a single magazine close at hand."
+"holding a single magazine or speedloader close at hand."
 msgstr ""
 
 #: data/json/items/armor/ammo_pouch.json
@@ -47505,8 +47509,8 @@ msgstr[1] ""
 msgid ""
 "Popularized during the Vietnam War, chest rigs like these are typically "
 "plain, barebones affairs consisting of three or more pouches in a row, with "
-"straps to secure them on your chest.  This one can hold four magazines in "
-"its pouches."
+"straps to secure them on your chest.  This one can hold four magazines or "
+"speedloaders in its pouches."
 msgstr ""
 
 #: data/json/items/armor/ammo_pouch.json
@@ -47540,7 +47544,7 @@ msgstr[1] ""
 #: data/json/items/armor/ammo_pouch.json
 msgid ""
 "A small fabric ammo pouch that can be strapped to your ankle which is "
-"capable of holding a single small magazine close at hand."
+"capable of holding a single small magazine or speedloader close at hand."
 msgstr ""
 
 #: data/json/items/armor/ammo_pouch.json
@@ -66656,20 +66660,6 @@ msgid ""
 msgstr ""
 
 #: data/json/items/comestibles/carnivore.json
-msgid "cooked offal"
-msgid_plural "cooked offal"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str_sp': 'cooked offal'}
-#: data/json/items/comestibles/carnivore.json
-msgid ""
-"This is freshly cooked organ meat and entrails.  It's filled with essential "
-"vitamins, but most people consider it a bit gross unless very carefully "
-"prepared."
-msgstr ""
-
-#: data/json/items/comestibles/carnivore.json
 msgid "pickled offal"
 msgid_plural "pickled offal"
 msgstr[0] ""
@@ -66710,19 +66700,6 @@ msgid ""
 "unmutated organs on the outside, but their placement often clearly implies "
 "different function.  Weirdly colored fluids and the chemical smell make them"
 " unappetizing."
-msgstr ""
-
-#: data/json/items/comestibles/carnivore.json
-msgid "cooked mutant offal"
-msgid_plural "cooked mutant offal"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str_sp': 'cooked mutant offal'}
-#: data/json/items/comestibles/carnivore.json
-msgid ""
-"Cooked mutant organs.  Color and smell are almost normal, but it still looks"
-" weird."
 msgstr ""
 
 #: data/json/items/comestibles/carnivore.json
@@ -74552,6 +74529,36 @@ msgid "homemade hot dog"
 msgid_plural "homemade hot dogs"
 msgstr[0] ""
 msgstr[1] ""
+
+#: data/json/items/comestibles/offal_dishes.json
+msgid "fried offal"
+msgid_plural "fried offal"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Conditional name for {'str_sp': 'fried offal'} when FLAG matches
+#. CANNIBALISM
+#: data/json/items/comestibles/offal_dishes.json
+msgid "fried Frank offal"
+msgid_plural "fried Frank offals"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Conditional name for {'str_sp': 'fried offal'} when COMPONENT_ID matches
+#. mutant
+#: data/json/items/comestibles/offal_dishes.json
+msgid "fried freak offal"
+msgid_plural "fried freak offal"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'fried offal'}
+#: data/json/items/comestibles/offal_dishes.json
+msgid ""
+"This is freshly cooked organ meat and entrails.  Deep-frying it makes it "
+"more palatable, and while it's probably less healthy it's still filled with "
+"essential vitamins."
+msgstr ""
 
 #: data/json/items/comestibles/other.json
 msgid "diet pill"
@@ -84479,7 +84486,7 @@ msgstr ""
 #: data/json/items/gunmod/underbarrel.json
 #: data/mods/Magiclysm/items/enchanted_gunmods.json
 msgctxt "gun_type_type"
-msgid "bow"
+msgid "archery"
 msgstr ""
 
 #: data/json/items/gunmod/accessories.json
@@ -108164,6 +108171,19 @@ msgid "Lightning arcs from the leech stalk!"
 msgstr ""
 
 #: data/json/monsters/power_leech.json
+msgid "signal tree"
+msgid_plural "signal trees"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for signal tree
+#: data/json/monsters/power_leech.json
+msgid ""
+"A trunk reaches tall into the sky, its topmost branches glowing with yellow "
+"light.  A low drum periodically shakes its vicinities."
+msgstr ""
+
+#: data/json/monsters/power_leech.json
 msgid "leech pod cluster"
 msgid_plural "leech pod clusters"
 msgstr[0] ""
@@ -118176,7 +118196,8 @@ msgid "Hold the line: don't move onto obstacles adjacent to me."
 msgstr ""
 
 #: data/json/npcs/TALK_COMMON_ALLY.json
-#: data/json/npcs/TALK_COMMON_MISSION.json src/action.cpp
+#: data/json/npcs/TALK_COMMON_MISSION.json
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json src/action.cpp
 #: src/activity_handlers.cpp src/avatar.cpp src/avatar_action.cpp
 #: src/crafting.cpp src/game.cpp src/handle_action.cpp src/handle_liquid.cpp
 #: src/iexamine.cpp src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp
@@ -118783,6 +118804,7 @@ msgid "Okay, I'm going."
 msgstr ""
 
 #: data/json/npcs/TALK_COMMON_MISSION.json
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "About that job…"
 msgstr ""
 
@@ -139705,6 +139727,7 @@ msgid ""
 msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "Simply useless…"
 msgstr ""
 
@@ -139994,6 +140017,18 @@ msgid "Hub Mercenary"
 msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Better keep our eyes on the road."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Better be careful around here."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Yes?"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "Something to say?"
 msgstr ""
 
@@ -140006,11 +140041,11 @@ msgid "Hey."
 msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
-msgid "Yes?"
+msgid "Good to see you."
 msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
-msgid "Good to see you."
+msgid "About those jobs…"
 msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
@@ -140022,7 +140057,7 @@ msgid "Want help with something else?"
 msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
-msgid "Never mind, I was about to leave."
+msgid "Lets set a combat strategy"
 msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
@@ -140074,6 +140109,10 @@ msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "Anything on your mind?"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Want help with something?"
 msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
@@ -140202,6 +140241,87 @@ msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "Well I'll have to scavenge the gold myself, thanks for nothing."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Active Noise Control"
+msgstr ""
+
+#. ~ Description for mission 'Active Noise Control'
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid ""
+"Investigate Hub 01's radio tower, discover the source of the interference, "
+"and fix the problem."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid ""
+"A few days ago, I installed a radio transmitter in the nearby tower, but it "
+"stopped working recently.  If you are willing to be my back up while I check"
+" it out, I'll owe you a favor."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Alright, lets be off.  You don't mind taking point, right?"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Well thanks for offering, I guess."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid ""
+"I'm sure we'll figure it out once there.  In any case, make sure to shoot "
+"first."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "You think we killed the culprit?"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Sure seems like it.  Lets go back to the hub."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Sure, thanks for nothing."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Return to Hub 01"
+msgstr ""
+
+#. ~ Description for mission 'Return to Hub 01'
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Return to Hub 01."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Lets go back to the Hub"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Well…"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "You keep a map around don't you?  I do, and you probably should too."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "We there yet?"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Thanks for having my back.  As I said, I owe you one."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Are you lost or something?"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Can't believe we got lost…"
 msgstr ""
 
 #: data/json/npcs/robofac/NPC_robofac_generic_security.json
@@ -147130,6 +147250,14 @@ msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_abstract.json
 msgid "generic_transportation"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_abstract.json
+msgid "generic_road"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_abstract.json
+msgid "parking"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_abstract.json
@@ -224261,6 +224389,10 @@ msgid "You can't go down stairs while you're riding."
 msgstr ""
 
 #: src/handle_action.cpp
+msgid "The rotors struggle to generate enough lift!"
+msgstr ""
+
+#: src/handle_action.cpp
 msgid "You can't open things while you're in your shell."
 msgstr ""
 
@@ -234009,6 +234141,12 @@ msgstr ""
 msgid "How do you want to modify it?"
 msgstr ""
 
+#. ~ %1$s: modification desc, %2$s: mod name
+#: src/iuse_actor.cpp
+#, c-format
+msgid "Can't %1$s (incompatible with %2$s)"
+msgstr ""
+
 #. ~ %1$s: modification desc, %2$d: number of thread needed
 #: src/iuse_actor.cpp
 #, c-format
@@ -234019,12 +234157,6 @@ msgstr ""
 #: src/iuse_actor.cpp
 #, c-format
 msgid "Can't %1$s (need %2$d %3$s)"
-msgstr ""
-
-#. ~ %1$s: modification desc, %2$s: mod name
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Can't %1$s (incompatible with %2$s)"
 msgstr ""
 
 #. ~ %1$s: modification desc, %2$d: number of items needed, %3$s: items

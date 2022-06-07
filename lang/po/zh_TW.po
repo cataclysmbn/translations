@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-05-13 17:56+0000\n"
+"POT-Creation-Date: 2022-05-28 15:09+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2022\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -4580,6 +4580,10 @@ msgid "Extract Clay"
 msgstr "挖取黏土"
 
 #: data/json/construction.json
+msgid "Remove gravel and replace with dirt"
+msgstr "在泥土地上清理碎石"
+
+#: data/json/construction.json
 msgid "Build Charcoal Kiln"
 msgstr "建造碳化爐"
 
@@ -4937,10 +4941,6 @@ msgid ""
 "Must be between brick or (reinforced)concrete walls to function, and at "
 "least one wall must have an adjacent mechanical winch."
 msgstr "需要建造在砖墙或（钢筋）混凝土墙之间才能生效，并至少有一面墙存在相邻的机械绞盘。"
-
-#: data/json/construction.json
-msgid "Remove gravel and replace with dirt"
-msgstr "在泥土地上清理碎石"
 
 #: data/json/construction.json
 msgid "Install Autodoc"
@@ -25047,6 +25047,10 @@ msgstr "頂重"
 #: data/json/tool_qualities.json
 msgid "self jacking"
 msgstr "內建頂重"
+
+#: data/json/tool_qualities.json
+msgid "siphoning"
+msgstr ""
 
 #: data/json/tool_qualities.json
 msgid "chiseling"
@@ -47010,8 +47014,8 @@ msgstr[0] "胸部彈藥袋"
 #: data/json/items/armor/ammo_pouch.json
 msgid ""
 "A fabric ammo pouch that can be strapped to your chest which is capable of "
-"holding a single magazine close at hand."
-msgstr "一個綁在胸膛上的纖維彈藥袋, 能存放一個彈匣, 便於存取。"
+"holding a single magazine or speedloader close at hand."
+msgstr ""
 
 #: data/json/items/armor/ammo_pouch.json
 msgid "chest rig"
@@ -47023,10 +47027,9 @@ msgstr[0] "胸掛背心"
 msgid ""
 "Popularized during the Vietnam War, chest rigs like these are typically "
 "plain, barebones affairs consisting of three or more pouches in a row, with "
-"straps to secure them on your chest.  This one can hold four magazines in "
-"its pouches."
+"straps to secure them on your chest.  This one can hold four magazines or "
+"speedloaders in its pouches."
 msgstr ""
-"这是一种在越南战争期间开始流行的携行具。这种携行具都很朴素，通常是由三个或以上的袋子组成的简单装备，用带子固定在你的胸前。这个携行具能容纳四个弹匣。"
 
 #: data/json/items/armor/ammo_pouch.json
 #: data/mods/More_Survival_Tools/armor.json
@@ -47057,8 +47060,8 @@ msgstr[0] "腳踝式彈藥袋"
 #: data/json/items/armor/ammo_pouch.json
 msgid ""
 "A small fabric ammo pouch that can be strapped to your ankle which is "
-"capable of holding a single small magazine close at hand."
-msgstr "一個綁在腳踝上的小型纖維彈藥袋, 能存放一個小彈匣, 便於存取。"
+"capable of holding a single small magazine or speedloader close at hand."
+msgstr ""
 
 #: data/json/items/armor/ammo_pouch.json
 msgid "leg ammo pouch"
@@ -64908,19 +64911,6 @@ msgid ""
 msgstr "內臟是未經烹煮的內部器官和腸子。 它含有必需的維生素，但大多數人認為它有點噁心，除非經過精心的調理。"
 
 #: data/json/items/comestibles/carnivore.json
-msgid "cooked offal"
-msgid_plural "cooked offal"
-msgstr[0] "煮熟的內臟"
-
-#. ~ Description for {'str_sp': 'cooked offal'}
-#: data/json/items/comestibles/carnivore.json
-msgid ""
-"This is freshly cooked organ meat and entrails.  It's filled with essential "
-"vitamins, but most people consider it a bit gross unless very carefully "
-"prepared."
-msgstr "這是經過烹煮的內部器官和腸子。 它含有必需的維生素，但大多數人認為它有點噁心，除非經過精心的調理。"
-
-#: data/json/items/comestibles/carnivore.json
 msgid "pickled offal"
 msgid_plural "pickled offal"
 msgstr[0] "醃內臟"
@@ -64960,18 +64950,6 @@ msgid ""
 " unappetizing."
 msgstr ""
 "一只变异生物的不明器官，不同样本之间有着巨大差异，但在其他部分却相同。许多像是外部的未变异器官，但是它们的位置显然意味着不同的功能。它们有着奇怪颜色的液体和化学气味，令人反胃。"
-
-#: data/json/items/comestibles/carnivore.json
-msgid "cooked mutant offal"
-msgid_plural "cooked mutant offal"
-msgstr[0] ""
-
-#. ~ Description for {'str_sp': 'cooked mutant offal'}
-#: data/json/items/comestibles/carnivore.json
-msgid ""
-"Cooked mutant organs.  Color and smell are almost normal, but it still looks"
-" weird."
-msgstr "煮熟的变异内脏。颜色和味道近乎正常，但看起来还是很怪。"
 
 #: data/json/items/comestibles/carnivore.json
 msgid "stomach"
@@ -72197,6 +72175,33 @@ msgstr "用动物的肠子制成的肠衣，可以用来装香肠。"
 msgid "homemade hot dog"
 msgid_plural "homemade hot dogs"
 msgstr[0] ""
+
+#: data/json/items/comestibles/offal_dishes.json
+msgid "fried offal"
+msgid_plural "fried offal"
+msgstr[0] ""
+
+#. ~ Conditional name for {'str_sp': 'fried offal'} when FLAG matches
+#. CANNIBALISM
+#: data/json/items/comestibles/offal_dishes.json
+msgid "fried Frank offal"
+msgid_plural "fried Frank offals"
+msgstr[0] ""
+
+#. ~ Conditional name for {'str_sp': 'fried offal'} when COMPONENT_ID matches
+#. mutant
+#: data/json/items/comestibles/offal_dishes.json
+msgid "fried freak offal"
+msgid_plural "fried freak offal"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'fried offal'}
+#: data/json/items/comestibles/offal_dishes.json
+msgid ""
+"This is freshly cooked organ meat and entrails.  Deep-frying it makes it "
+"more palatable, and while it's probably less healthy it's still filled with "
+"essential vitamins."
+msgstr ""
 
 #: data/json/items/comestibles/other.json
 msgid "diet pill"
@@ -81630,8 +81635,8 @@ msgstr "配件"
 #: data/json/items/gunmod/underbarrel.json
 #: data/mods/Magiclysm/items/enchanted_gunmods.json
 msgctxt "gun_type_type"
-msgid "bow"
-msgstr "弓"
+msgid "archery"
+msgstr "弓術"
 
 #: data/json/items/gunmod/accessories.json
 msgid "bow stabilizer"
@@ -103881,6 +103886,18 @@ msgid "Lightning arcs from the leech stalk!"
 msgstr "水蛭花茎秆射出了一道电弧！"
 
 #: data/json/monsters/power_leech.json
+msgid "signal tree"
+msgid_plural "signal trees"
+msgstr[0] ""
+
+#. ~ Description for signal tree
+#: data/json/monsters/power_leech.json
+msgid ""
+"A trunk reaches tall into the sky, its topmost branches glowing with yellow "
+"light.  A low drum periodically shakes its vicinities."
+msgstr ""
+
+#: data/json/monsters/power_leech.json
 msgid "leech pod cluster"
 msgid_plural "leech pod clusters"
 msgstr[0] ""
@@ -113871,7 +113888,8 @@ msgid "Hold the line: don't move onto obstacles adjacent to me."
 msgstr "保持戰線：不要移動到與我相鄰的障礙物上。"
 
 #: data/json/npcs/TALK_COMMON_ALLY.json
-#: data/json/npcs/TALK_COMMON_MISSION.json src/action.cpp
+#: data/json/npcs/TALK_COMMON_MISSION.json
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json src/action.cpp
 #: src/activity_handlers.cpp src/avatar.cpp src/avatar_action.cpp
 #: src/crafting.cpp src/game.cpp src/handle_action.cpp src/handle_liquid.cpp
 #: src/iexamine.cpp src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp
@@ -114478,6 +114496,7 @@ msgid "Okay, I'm going."
 msgstr "好吧, 我走了。"
 
 #: data/json/npcs/TALK_COMMON_MISSION.json
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "About that job…"
 msgstr "关于那个任务……"
 
@@ -135957,6 +135976,7 @@ msgid ""
 msgstr "不幸的是，只剩下些数据能被恢复出来，但还是谢谢你把它送回来。"
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "Simply useless…"
 msgstr "真是个废物……"
 
@@ -136258,6 +136278,18 @@ msgid "Hub Mercenary"
 msgstr "基地傭兵"
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Better keep our eyes on the road."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Better be careful around here."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Yes?"
+msgstr "嗯？"
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "Something to say?"
 msgstr "有話要說嗎？"
 
@@ -136270,12 +136302,12 @@ msgid "Hey."
 msgstr "嗨！"
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
-msgid "Yes?"
-msgstr "嗯？"
-
-#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "Good to see you."
 msgstr "很高興見到你。"
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "About those jobs…"
+msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "Good to see you around."
@@ -136286,8 +136318,8 @@ msgid "Want help with something else?"
 msgstr "需要其他幫助嗎？"
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
-msgid "Never mind, I was about to leave."
-msgstr "沒關係，我正要離開。"
+msgid "Lets set a combat strategy"
+msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid ""
@@ -136339,6 +136371,10 @@ msgstr "有什麼有趣的事嗎？"
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "Anything on your mind?"
 msgstr "你有什麼想法嗎？"
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Want help with something?"
+msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "What do you know about our employers?"
@@ -136470,6 +136506,87 @@ msgstr "耶，當然。"
 #: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
 msgid "Well I'll have to scavenge the gold myself, thanks for nothing."
 msgstr "好吧，我必須自己搜刮黃金，不勞您費神。"
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Active Noise Control"
+msgstr ""
+
+#. ~ Description for mission 'Active Noise Control'
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid ""
+"Investigate Hub 01's radio tower, discover the source of the interference, "
+"and fix the problem."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid ""
+"A few days ago, I installed a radio transmitter in the nearby tower, but it "
+"stopped working recently.  If you are willing to be my back up while I check"
+" it out, I'll owe you a favor."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Alright, lets be off.  You don't mind taking point, right?"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Well thanks for offering, I guess."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid ""
+"I'm sure we'll figure it out once there.  In any case, make sure to shoot "
+"first."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "You think we killed the culprit?"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Sure seems like it.  Lets go back to the hub."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Sure, thanks for nothing."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Return to Hub 01"
+msgstr ""
+
+#. ~ Description for mission 'Return to Hub 01'
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Return to Hub 01."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Lets go back to the Hub"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Well…"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "You keep a map around don't you?  I do, and you probably should too."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "We there yet?"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Thanks for having my back.  As I said, I owe you one."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Are you lost or something?"
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_MERC_1.json
+msgid "Can't believe we got lost…"
+msgstr ""
 
 #: data/json/npcs/robofac/NPC_robofac_generic_security.json
 msgid "Hub Security"
@@ -143249,6 +143366,14 @@ msgstr "一般_過渡性用地"
 #: data/json/overmap/overmap_terrain/overmap_terrain_abstract.json
 msgid "generic_transportation"
 msgstr "一般_運輸"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_abstract.json
+msgid "generic_road"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_abstract.json
+msgid "parking"
+msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_abstract.json
 msgid "generic_waste_disposal"
@@ -220201,6 +220326,10 @@ msgid "You can't go down stairs while you're riding."
 msgstr "騎乘時不能下樓梯。"
 
 #: src/handle_action.cpp
+msgid "The rotors struggle to generate enough lift!"
+msgstr ""
+
+#: src/handle_action.cpp
 msgid "You can't open things while you're in your shell."
 msgstr "你在殼中的時候不能打開東西。"
 
@@ -229949,6 +230078,12 @@ msgstr "這東西只能用來修理或修改其他物品, 而非本身。"
 msgid "How do you want to modify it?"
 msgstr "你要怎麼修改它?"
 
+#. ~ %1$s: modification desc, %2$s: mod name
+#: src/iuse_actor.cpp
+#, c-format
+msgid "Can't %1$s (incompatible with %2$s)"
+msgstr "无法%1$s（不兼容%2$s）"
+
 #. ~ %1$s: modification desc, %2$d: number of thread needed
 #: src/iuse_actor.cpp
 #, c-format
@@ -229960,12 +230095,6 @@ msgstr "无法%1$s（需要 %2$d 单位的线）"
 #, c-format
 msgid "Can't %1$s (need %2$d %3$s)"
 msgstr "无法%1$s（需要 %2$d %3$s）"
-
-#. ~ %1$s: modification desc, %2$s: mod name
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Can't %1$s (incompatible with %2$s)"
-msgstr "无法%1$s（不兼容%2$s）"
 
 #. ~ %1$s: modification desc, %2$d: number of items needed, %3$s: items
 #. needed, %4$s: number of thread needed
