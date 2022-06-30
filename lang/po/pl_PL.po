@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-06-10 21:20+0000\n"
+"POT-Creation-Date: 2022-06-21 20:40+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2022\n"
 "Language-Team: Polish (Poland) (https://www.transifex.com/bn-team/teams/113585/pl_PL/)\n"
 "MIME-Version: 1.0\n"
@@ -3212,13 +3212,9 @@ msgstr "Moduł Podróży Probabilistycznej"
 #: data/json/bionics.json
 msgid ""
 "Increases your body's wavelength, allowing you to quantum tunnel through "
-"walls, reappearing on the other side.  Power drain in standby is minimal, "
-"but each tile tunneled through costs 250 bionic power."
+"walls, reappearing on the other side.  Activate and select a direction to "
+"use.  Tunneling costs 100 bionic power per tile traveled through."
 msgstr ""
-"Zwiększa długość fal twojego ciała, umożliwiając tunelowanie kwantowe przez "
-"ściany, skutkiem czego pojawiasz się po drugiej stronie. Pobór energii w "
-"spoczynku jest minimalny, ale tunelowanie przeszkód grubości jednego kroku "
-"zużywa 250 jednostek mocy."
 
 #: data/json/bionics.json
 msgid "Air Filtration System (passive)"
@@ -27050,8 +27046,13 @@ msgid "A electrolysis kit connected to a electrical grid."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/items/fake.json
 msgid "grid soldering iron"
-msgstr ""
+msgid_plural "grid soldering irons"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #. ~ Description for grid soldering iron
 #: data/json/furniture_and_terrain/furniture-appliances.json
@@ -39286,8 +39287,8 @@ msgstr[3] "Moduł Podróży Probabilistycznej CBM"
 #: data/json/items/bionics.json
 msgid ""
 "Increases the body's wavelength, allowing the user to quantum tunnel through"
-" walls, reappearing on the other side.  Power drain in standby is minimal, "
-"but each tile tunneled through costs 250 bionic power."
+" walls, reappearing on the other side.  Power drain in standby is relatively"
+" low, but each tile tunneled through costs 90 bionic power."
 msgstr ""
 
 #: data/json/items/bionics.json
@@ -42549,15 +42550,6 @@ msgid ""
 "Fake gun that fires some sort of solidified organic matter at very high "
 "speed by unknown means of propulsion."
 msgstr ""
-
-#: data/json/items/fake.json data/json/items/tool/workshop.json
-#: src/crafting_gui.cpp
-msgid "soldering iron"
-msgid_plural "soldering irons"
-msgstr[0] "lutownica"
-msgstr[1] "lutownica"
-msgstr[2] "lutownica"
-msgstr[3] "lutownica"
 
 #: data/json/items/fluff.json
 msgid "Magic 8-Ball"
@@ -117005,6 +116997,14 @@ msgstr ""
 "To przenośny zestaw do naprawy uszkodzonych broni palnych. Zasilany "
 "standardowymi bateriami. To witalne narzędzie dla długotrwałego utrzymania i"
 " konserwacji broni palnej. Wymaga 100 ładunków z baterii na każde użycie."
+
+#: data/json/items/tool/workshop.json src/crafting_gui.cpp
+msgid "soldering iron"
+msgid_plural "soldering irons"
+msgstr[0] "lutownica"
+msgstr[1] "lutownica"
+msgstr[2] "lutownica"
+msgstr[3] "lutownica"
 
 #. ~ Description for {'str': 'soldering iron'}
 #: data/json/items/tool/workshop.json
@@ -196584,7 +196584,6 @@ msgid "A sturdy, lightweight frame made from titanium.  Useful for crafting."
 msgstr ""
 
 #: data/mods/Aftershock/vehicles/part_items.json
-#: data/mods/Aftershock/vehicles/vehicle_parts.json
 msgid "ultralight foldable frame"
 msgid_plural "ultralight foldable frames"
 msgstr[0] ""
@@ -196710,7 +196709,11 @@ msgid ""
 "size."
 msgstr ""
 
-#. ~ Description for {'str': 'ultralight foldable frame'}
+#: data/mods/Aftershock/vehicles/vehicle_parts.json
+msgid "foldable ultralight frame"
+msgstr ""
+
+#. ~ Description for {'str': 'foldable ultralight frame'}
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
 msgid ""
 "An ultralight titanium foldable framework.  Other vehicle components can be "
@@ -240381,6 +240384,14 @@ msgid ""
 msgstr ""
 
 #: src/bionics.cpp
+msgid "Tunnel in which direction?"
+msgstr ""
+
+#: src/bionics.cpp
+msgid "There's nothing to phase through there."
+msgstr ""
+
+#: src/bionics.cpp
 #, c-format
 msgid "Your %s is shorting out and can't be deactivated."
 msgstr ""
@@ -250700,18 +250711,26 @@ msgid ""
 msgstr ""
 
 #: src/game.cpp
-msgid "You are repelled by the barrier!"
-msgstr ""
-
-#: src/game.cpp
 msgid ""
-"You try to quantum tunnel through the barrier but are reflected!  Try again "
-"with more energy!"
+"You try to quantum tunnel through the barrier, but something holds you back!"
 msgstr ""
 
 #: src/game.cpp
 msgid "It's too dangerous to tunnel that far!"
 msgstr "Tunelowanie tak daleko jest zbyt niebezpieczne!"
+
+#: src/game.cpp
+msgid ""
+"You try to quantum tunnel through the barrier but bounce off!  You don't "
+"have enough bionic power capacity to travel that far."
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid ""
+"You try to quantum tunnel through the barrier but are reflected!  You need "
+"%i bionic power to travel that thickness of material."
+msgstr ""
 
 #: src/game.cpp
 #, c-format
@@ -282095,6 +282114,11 @@ msgstr ""
 #, c-format
 msgid "Mass: <color_light_blue>%5.0f</color> %s"
 msgstr "Masa: <color_light_blue>%5.0f</color>%s"
+
+#: src/veh_interact.cpp
+#, c-format
+msgid "Maximum Lift: <color_light_blue>%5.0f</color> %s"
+msgstr ""
 
 #: src/veh_interact.cpp
 #, c-format

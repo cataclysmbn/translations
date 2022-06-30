@@ -15,14 +15,14 @@
 # Никита Абрамов, 2022
 # Coolthulhu <Coolthulhu@gmail.com>, 2022
 # Firestorm_01 <firestorm01x2@gmail.com>, 2022
-# CV514 <Codename.dust@gmail.com>, 2022
 # Gamp Forest, 2022
+# CV514 <Codename.dust@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-06-10 21:20+0000\n"
-"Last-Translator: Gamp Forest, 2022\n"
+"POT-Creation-Date: 2022-06-21 20:40+0000\n"
+"Last-Translator: CV514 <Codename.dust@gmail.com>, 2022\n"
 "Language-Team: Russian (Russia) (https://www.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3914,13 +3914,13 @@ msgstr "Вероятностное путешествие"
 #: data/json/bionics.json
 msgid ""
 "Increases your body's wavelength, allowing you to quantum tunnel through "
-"walls, reappearing on the other side.  Power drain in standby is minimal, "
-"but each tile tunneled through costs 250 bionic power."
+"walls, reappearing on the other side.  Activate and select a direction to "
+"use.  Tunneling costs 100 bionic power per tile traveled through."
 msgstr ""
 "Увеличивает длину волны вашего тела и позволяет проходить сквозь стены "
-"посредством квантового туннелирования. Потребление мощности в режиме "
-"ожидания минимально, но преодоление каждого тайла стен стоит 250 единиц "
-"бионической энергии."
+"посредством квантового туннелирования. Активируйте и выберите направление "
+"для использования. Туннелирование потребляет 100 бионической энергии за один"
+" тайл перемещения."
 
 #: data/json/bionics.json
 msgid "Air Filtration System (passive)"
@@ -28723,8 +28723,13 @@ msgid "A electrolysis kit connected to a electrical grid."
 msgstr "Набор для электролиза, подключённый к электросети."
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/items/fake.json
 msgid "grid soldering iron"
-msgstr "подключённый к электросети паяльник"
+msgid_plural "grid soldering irons"
+msgstr[0] "подключённый к электросети паяльник"
+msgstr[1] "подключённых к электросети паяльника"
+msgstr[2] "подключённых к электросети паяльников"
+msgstr[3] "подключённый к электросети паяльник"
 
 #. ~ Description for grid soldering iron
 #: data/json/furniture_and_terrain/furniture-appliances.json
@@ -41912,13 +41917,13 @@ msgstr[3] "КБМ: Вероятностное путешествие"
 #: data/json/items/bionics.json
 msgid ""
 "Increases the body's wavelength, allowing the user to quantum tunnel through"
-" walls, reappearing on the other side.  Power drain in standby is minimal, "
-"but each tile tunneled through costs 250 bionic power."
+" walls, reappearing on the other side.  Power drain in standby is relatively"
+" low, but each tile tunneled through costs 90 bionic power."
 msgstr ""
 "Увеличивает длину волны тела и позволяет проходить сквозь стены посредством "
 "квантового туннелирования, появляясь на другой стороне. Потребление мощности"
-" в режиме ожидания минимально, но проход через каждый тайл стены стоит 250 "
-"бионических зарядов."
+" в режиме ожидания минимально, но проход через каждый тайл стены стоит 90 "
+"бионической энергии."
 
 #: data/json/items/bionics.json
 msgid "Air Filtration System CBM"
@@ -45344,15 +45349,6 @@ msgid ""
 msgstr ""
 "Псевдопушка, неясным образом стреляющая твёрдыми органическими снарядами с "
 "высокой скоростью."
-
-#: data/json/items/fake.json data/json/items/tool/workshop.json
-#: src/crafting_gui.cpp
-msgid "soldering iron"
-msgid_plural "soldering irons"
-msgstr[0] "паяльник"
-msgstr[1] "паяльника"
-msgstr[2] "паяльников"
-msgstr[3] "паяльник"
 
 #: data/json/items/fluff.json
 msgid "Magic 8-Ball"
@@ -123583,6 +123579,14 @@ msgstr ""
 "работоспособности оружия в течение долгого времени. Каждое использование "
 "расходует 100 зарядов батареи."
 
+#: data/json/items/tool/workshop.json src/crafting_gui.cpp
+msgid "soldering iron"
+msgid_plural "soldering irons"
+msgstr[0] "паяльник"
+msgstr[1] "паяльника"
+msgstr[2] "паяльников"
+msgstr[3] "паяльник"
+
 #. ~ Description for {'str': 'soldering iron'}
 #: data/json/items/tool/workshop.json
 msgid ""
@@ -173448,8 +173452,9 @@ msgid ""
 "This module upgrades a pre-installed microreactor with enhanced maximum "
 "yield and limited automatic radiation scrubbing capabilities."
 msgstr ""
-"Модуль для улучшения установленного микрореактора: увеличенный максимальный "
-"выход и ограниченные возможности автоматической радиационной очистки."
+"Модуль для улучшения предустановленного микрореактора: увеличенный "
+"максимальный выход и ограниченные возможности автоматической радиационной "
+"очистки."
 
 #: data/json/obsoletion/items.json
 msgid "Plutonium Filter CBM"
@@ -173490,10 +173495,10 @@ msgstr ""
 #: data/json/obsoletion/items.json
 msgid "Microreactor Upgrade CBM"
 msgid_plural "Microreactor Upgrade CBMs"
-msgstr[0] "КБМ: Улучшение микрореактора"
-msgstr[1] "КБМ: Улучшение микрореактора"
-msgstr[2] "КБМ: Улучшение микрореактора"
-msgstr[3] "КБМ: Улучшение микрореактора"
+msgstr[0] "КБМ: Комплект улучшения микрореактора"
+msgstr[1] "КБМ: Комплект улучшения микрореактора"
+msgstr[2] "КБМ: Комплект улучшения микрореактора"
+msgstr[3] "КБМ: Комплект улучшения микрореактора"
 
 #. ~ Description for {'str': 'Microreactor Upgrade CBM'}
 #: data/json/obsoletion/items.json
@@ -173501,8 +173506,9 @@ msgid ""
 "A kit for upgrading a pre-installed microreactor with enhanced maximum yield"
 " and limited automatic radiation scrubbing capabilities."
 msgstr ""
-"Модуль для улучшения установленного микрореактора: увеличенный максимальный "
-"выход и ограниченные возможности автоматической радиационной очистки."
+"Набор для улучшения предустановленного микрореактора: увеличенный "
+"максимальный выход и ограниченные возможности автоматической радиационной "
+"очистки."
 
 #: data/json/obsoletion/items.json
 msgid "homemade laser pistol"
@@ -210979,7 +210985,6 @@ msgid "A sturdy, lightweight frame made from titanium.  Useful for crafting."
 msgstr "Прочная и лёгкая титановая рама. Полезна для изготовления предметов."
 
 #: data/mods/Aftershock/vehicles/part_items.json
-#: data/mods/Aftershock/vehicles/vehicle_parts.json
 msgid "ultralight foldable frame"
 msgid_plural "ultralight foldable frames"
 msgstr[0] "ультралёгкая складная рама"
@@ -211125,7 +211130,11 @@ msgstr ""
 "можно соединять с другими рамами для увеличения размера транспортного "
 "средства."
 
-#. ~ Description for {'str': 'ultralight foldable frame'}
+#: data/mods/Aftershock/vehicles/vehicle_parts.json
+msgid "foldable ultralight frame"
+msgstr "складная ультралёгкая рама"
+
+#. ~ Description for {'str': 'foldable ultralight frame'}
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
 msgid ""
 "An ultralight titanium foldable framework.  Other vehicle components can be "
@@ -259312,6 +259321,14 @@ msgstr ""
 "подключить."
 
 #: src/bionics.cpp
+msgid "Tunnel in which direction?"
+msgstr "В каком направлении туннелировать?"
+
+#: src/bionics.cpp
+msgid "There's nothing to phase through there."
+msgstr "Здесь нет препятствий, сквозь которые можно переместиться."
+
+#: src/bionics.cpp
 #, c-format
 msgid "Your %s is shorting out and can't be deactivated."
 msgstr "В вашей бионике (%s) короткое замыкание, она не отключается."
@@ -270079,20 +270096,34 @@ msgstr ""
 " нельзя."
 
 #: src/game.cpp
-msgid "You are repelled by the barrier!"
-msgstr "Вы отброшены барьером!"
-
-#: src/game.cpp
 msgid ""
-"You try to quantum tunnel through the barrier but are reflected!  Try again "
-"with more energy!"
+"You try to quantum tunnel through the barrier, but something holds you back!"
 msgstr ""
-"Вы попытались открыть квантовый туннель сквозь препятствие, но вас отразило!"
-" Попробуйте использовать больше энергии!"
+"Вы попытались открыть квантовый туннель сквозь препятствие, но что-то вас "
+"удерживает!"
 
 #: src/game.cpp
 msgid "It's too dangerous to tunnel that far!"
 msgstr "Слишком опасно создавать такой длинный туннель!"
+
+#: src/game.cpp
+msgid ""
+"You try to quantum tunnel through the barrier but bounce off!  You don't "
+"have enough bionic power capacity to travel that far."
+msgstr ""
+"Вы попытались открыть квантовый туннель сквозь препятствие, но вас "
+"отбросило! Ваших запасов бионической энергии недостаточно для перемещения "
+"для такого далёкого перемещения."
+
+#: src/game.cpp
+#, c-format
+msgid ""
+"You try to quantum tunnel through the barrier but are reflected!  You need "
+"%i bionic power to travel that thickness of material."
+msgstr ""
+"Вы попытались открыть квантовый туннель сквозь препятствие, но вас отразило!"
+" Вам нужно %i бионической энергии для перемещения сквозь такой плотный "
+"материал."
 
 #: src/game.cpp
 #, c-format
@@ -302196,6 +302227,11 @@ msgstr "Ускорение на воде: <color_light_blue>%3d</color> %s/cек
 #, c-format
 msgid "Mass: <color_light_blue>%5.0f</color> %s"
 msgstr "Масса: <color_light_blue>%5.0f</color> %s"
+
+#: src/veh_interact.cpp
+#, c-format
+msgid "Maximum Lift: <color_light_blue>%5.0f</color> %s"
+msgstr "Максимальный подъём: <color_light_blue>%5.0f</color> %s"
 
 #: src/veh_interact.cpp
 #, c-format

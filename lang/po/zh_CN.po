@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-06-10 21:20+0000\n"
+"POT-Creation-Date: 2022-06-21 20:40+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -3064,9 +3064,9 @@ msgstr "穿墙术"
 #: data/json/bionics.json
 msgid ""
 "Increases your body's wavelength, allowing you to quantum tunnel through "
-"walls, reappearing on the other side.  Power drain in standby is minimal, "
-"but each tile tunneled through costs 250 bionic power."
-msgstr "让你的身体波长进行改变，使得你可以量子隧穿墙壁，出现在另一边。待机时功耗非常小，但每穿透一格墙壁时消耗250点能量。"
+"walls, reappearing on the other side.  Activate and select a direction to "
+"use.  Tunneling costs 100 bionic power per tile traveled through."
+msgstr ""
 
 #: data/json/bionics.json
 msgid "Air Filtration System (passive)"
@@ -25888,8 +25888,10 @@ msgid "A electrolysis kit connected to a electrical grid."
 msgstr "一个连接到电网的电解工具箱"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/items/fake.json
 msgid "grid soldering iron"
-msgstr "电烙铁（电网）"
+msgid_plural "grid soldering irons"
+msgstr[0] ""
 
 #. ~ Description for grid soldering iron
 #: data/json/furniture_and_terrain/furniture-appliances.json
@@ -36973,9 +36975,9 @@ msgstr[0] "量子移动CBM"
 #: data/json/items/bionics.json
 msgid ""
 "Increases the body's wavelength, allowing the user to quantum tunnel through"
-" walls, reappearing on the other side.  Power drain in standby is minimal, "
-"but each tile tunneled through costs 250 bionic power."
-msgstr "这套生化插件可以改变受体的身体波长，使其能够量子隧穿墙壁，出现在另一边。待机时功耗非常小，但每穿透一格墙壁时消耗250点能量。"
+" walls, reappearing on the other side.  Power drain in standby is relatively"
+" low, but each tile tunneled through costs 90 bionic power."
+msgstr ""
 
 #: data/json/items/bionics.json
 msgid "Air Filtration System CBM"
@@ -39442,12 +39444,6 @@ msgid ""
 "Fake gun that fires some sort of solidified organic matter at very high "
 "speed by unknown means of propulsion."
 msgstr "一把假枪，通过未知的推进方式以极高的速度发射出某种固体有机物。"
-
-#: data/json/items/fake.json data/json/items/tool/workshop.json
-#: src/crafting_gui.cpp
-msgid "soldering iron"
-msgid_plural "soldering irons"
-msgstr[0] "电烙铁"
 
 #: data/json/items/fluff.json
 msgid "Magic 8-Ball"
@@ -96890,6 +96886,11 @@ msgid ""
 "standard batteries, it is a vital tool for long-term firearms maintenance.  "
 "It requires 100 charges of battery power per use."
 msgstr "一个修复受损的枪械的便携式工具包。使用标准电池，它是长期维护枪械的重要工具。每使用一次消耗100单位的电池电量。"
+
+#: data/json/items/tool/workshop.json src/crafting_gui.cpp
+msgid "soldering iron"
+msgid_plural "soldering irons"
+msgstr[0] "电烙铁"
 
 #. ~ Description for {'str': 'soldering iron'}
 #: data/json/items/tool/workshop.json
@@ -169594,7 +169595,6 @@ msgid "A sturdy, lightweight frame made from titanium.  Useful for crafting."
 msgstr "一个由钛制成的坚固、轻便的框架。用于制造载具。"
 
 #: data/mods/Aftershock/vehicles/part_items.json
-#: data/mods/Aftershock/vehicles/vehicle_parts.json
 msgid "ultralight foldable frame"
 msgid_plural "ultralight foldable frames"
 msgstr[0] "折叠超轻车架"
@@ -169709,7 +169709,11 @@ msgid ""
 "size."
 msgstr "一个超轻的钛合金框架。其他载具部件能够安装在它上面，在它四周增加新的车辆框架，就可以增加车辆大小。"
 
-#. ~ Description for {'str': 'ultralight foldable frame'}
+#: data/mods/Aftershock/vehicles/vehicle_parts.json
+msgid "foldable ultralight frame"
+msgstr ""
+
+#. ~ Description for {'str': 'foldable ultralight frame'}
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
 msgid ""
 "An ultralight titanium foldable framework.  Other vehicle components can be "
@@ -207981,6 +207985,14 @@ msgid ""
 msgstr "你的物品栏中至少要有一条未使用的电缆来和你的身体相接。"
 
 #: src/bionics.cpp
+msgid "Tunnel in which direction?"
+msgstr ""
+
+#: src/bionics.cpp
+msgid "There's nothing to phase through there."
+msgstr ""
+
+#: src/bionics.cpp
 #, c-format
 msgid "Your %s is shorting out and can't be deactivated."
 msgstr "你的%s已经短路，无法停用。"
@@ -218394,18 +218406,26 @@ msgid ""
 msgstr "这里有个载具控制器，但你无法在骑乘时使用它。"
 
 #: src/game.cpp
-msgid "You are repelled by the barrier!"
-msgstr "你被障碍弹了回来！"
-
-#: src/game.cpp
 msgid ""
-"You try to quantum tunnel through the barrier but are reflected!  Try again "
-"with more energy!"
-msgstr "你试图使用量子隧穿穿越障碍，但是被弹了回来！等有更多生化能量后再试！"
+"You try to quantum tunnel through the barrier, but something holds you back!"
+msgstr ""
 
 #: src/game.cpp
 msgid "It's too dangerous to tunnel that far!"
 msgstr "穿越那么远实在太危险了！"
+
+#: src/game.cpp
+msgid ""
+"You try to quantum tunnel through the barrier but bounce off!  You don't "
+"have enough bionic power capacity to travel that far."
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid ""
+"You try to quantum tunnel through the barrier but are reflected!  You need "
+"%i bionic power to travel that thickness of material."
+msgstr ""
 
 #: src/game.cpp
 #, c-format
@@ -249224,6 +249244,11 @@ msgstr "水中加速度：<color_light_blue>%3d</color> %s/s"
 #, c-format
 msgid "Mass: <color_light_blue>%5.0f</color> %s"
 msgstr "质量： <color_light_blue>%5.0f</color> %s"
+
+#: src/veh_interact.cpp
+#, c-format
+msgid "Maximum Lift: <color_light_blue>%5.0f</color> %s"
+msgstr ""
 
 #: src/veh_interact.cpp
 #, c-format
