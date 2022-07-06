@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-06-21 20:40+0000\n"
+"POT-Creation-Date: 2022-06-30 19:45+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2170,15 +2170,15 @@ msgid "Active Defense System"
 msgstr "積極防衛システム"
 
 #. ~ Description for {'str': 'Active Defense System'}
-#: data/json/bionics.json
+#. ~ Description for {'str': 'Active Defense System CBM'}
+#: data/json/bionics.json data/json/items/bionics.json
 msgid ""
-"A thin forcefield surrounds your body, continually draining power.  Anything"
-" attempting to penetrate this field has a chance of being deflected at the "
-"cost of energy, reducing their ability to deal damage.  Bullets will be "
-"deflected more than melee weapons and those in turn more than massive "
-"objects."
+"This bionic charges a forcefield around your body that deflects incoming "
+"attacks.  Bullets are heavily deflected, piercing well deflected, slashing "
+"moderately deflected and bashing barely deflected.  This bionic charges at "
+"half speed for 3 turns after being hit, and doesn't consume power when fully"
+" charged."
 msgstr ""
-"起動すると電力を常に消費して膜を発生させ、全身を包みます。物体が膜の内側に侵入しようとすると、追加で電力を消費して軌道を逸らします。剣などよりも弾丸などの小さな物体に対して効果的に働きます。"
 
 #: data/json/bionics.json
 msgid "Alarm System"
@@ -10317,6 +10317,10 @@ msgid "BOOKS"
 msgstr "本"
 
 #: data/json/item_category.json
+msgid "SPELLBOOKS"
+msgstr ""
+
+#: data/json/item_category.json
 msgid "MAPS"
 msgstr "地図"
 
@@ -11018,6 +11022,15 @@ msgstr "分類: 本"
 #: data/json/loot_zones.json
 msgid "Destination for books and magazines."
 msgstr "本や雑誌を置く区域です。"
+
+#: data/json/loot_zones.json
+msgid "Loot: Spellbooks"
+msgstr ""
+
+#. ~ Description for Loot: Spellbooks
+#: data/json/loot_zones.json
+msgid "Destination for spellbooks and scrolls."
+msgstr ""
 
 #: data/json/loot_zones.json
 msgid "Loot: Mods"
@@ -27108,7 +27121,7 @@ msgid "thunk."
 msgstr "ドスン。"
 
 #: data/json/furniture_and_terrain/furniture-medical.json
-#: data/json/items/tool/med.json
+#: data/json/items/tool/med.json data/mods/Aftershock/maps/furniture.json
 msgid "Autodoc Mk. XI"
 msgid_plural "Autodoc Mk. XIs"
 msgstr[0] ""
@@ -35025,6 +35038,42 @@ msgstr "緩やかな階段"
 msgid "low stairs (end section)"
 msgstr "緩やかな階段(終点)"
 
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "railroad track down (high end)"
+msgstr ""
+
+#. ~ Description for railroad track down (high end)
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "The upper end of rail track leading down."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "railroad track down (low end)"
+msgstr ""
+
+#. ~ Description for railroad track down (low end)
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "The lower end of rail track leading down."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "railroad track up (high end)"
+msgstr ""
+
+#. ~ Description for railroad track up (high end)
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "The upper end of rail track leading up."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "railroad track up (low end)"
+msgstr ""
+
+#. ~ Description for railroad track up (low end)
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "The lower end of rail track leading up."
+msgstr ""
+
 #. ~ Message for terrain 'None'
 #: data/json/furniture_and_terrain/terrain-zztesting.json
 msgid "You attempt to use the console, but it's no use."
@@ -36424,16 +36473,6 @@ msgid "Active Defense System CBM"
 msgid_plural "Active Defense System CBMs"
 msgstr[0] "CBM: 積極防御システム"
 
-#. ~ Description for {'str': 'Active Defense System CBM'}
-#: data/json/items/bionics.json
-msgid ""
-"This bionic projects a thin forcefield around the user's body.  Anything "
-"attempting to penetrate this field has a chance of being deflected at the "
-"cost of energy, reducing their ability to deal damage.  Bullets will be "
-"deflected more than swords and those in turn more than massive objects."
-msgstr ""
-"起動すると薄い力場の膜を全身を覆うように展開します。物体が膜の内側に侵入しようとすると、更に電力を消費して軌道を逸らします。剣などの大きな物体よりも、弾丸などの小さな物体に対して効果的に働きます。"
-
 #: data/json/items/bionics.json
 msgid "Alarm System CBM"
 msgid_plural "Alarm System CBMs"
@@ -37202,8 +37241,9 @@ msgstr[0] "CBM: 確率的透過"
 #: data/json/items/bionics.json
 msgid ""
 "Increases the body's wavelength, allowing the user to quantum tunnel through"
-" walls, reappearing on the other side.  Power drain in standby is relatively"
-" low, but each tile tunneled through costs 90 bionic power."
+" walls, reappearing on the other side.  Once installed, activate and select "
+"a direction to use.  Tunneling costs 100 bionic power per tile traveled "
+"through."
 msgstr ""
 
 #: data/json/items/bionics.json
@@ -132586,10 +132626,6 @@ msgid "How did you wind up here at the center?"
 msgstr "どうやってこのセンターにたどり着いたんだ？"
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Fatima_Al_Jadir.json
-msgid "Hey, you free for a bit of teaching?"
-msgstr ""
-
-#: data/json/npcs/refugee_center/surface_refugees/NPC_Fatima_Al_Jadir.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Rhyzaea_Johnny.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Uyen_Tran.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Vanessa_Toby.json
@@ -132672,10 +132708,6 @@ msgstr ""
 "聞いたら驚くと思うよ！金工はイスラム教徒の伝統的な工芸の一つなんだけど、それが理由ではないんだ。私は伝統とは正反対の女子だからね。両親もあまり伝統的じゃないけど、祖父母は本当に古風で厳格なんだ。姉が同性愛者だって告白したんだけど、祖父母のせいで大変だったんだよ。ママとパパは黙っておくべきだっていったけど、姉はそれが嫌だったみたい。私は機械いじりが大好きで、祖父母が両親に嫌味を言ってる頃、私は不道徳だって言われたくなくて素敵な男の人と結婚した。でも、どれだけ嫌な顔をされても良いから、好きな仕事には就こうと思ったんだ。結果的には良い選択だった。祖父母は怒ったけど、私は溶接が好きだからね。一人で自分の作品を眺めたり、金属屑を集めてどんな有用なものに作り替えようか考えたりするのが好きなんだ。作品が完璧に組み立てられた時は最高だよ。それだけで満ち足りた気分になる。\n"
 "\n"
 "私は...祖父母がきっと無事でいると信じてる。二人とも古風で、考え方も私と合わないけど、家族だし、小さい頃の素敵な思い出もある。<the_cataclysm>以来、神について以前より深く考えるようになった。祖父母の考えには決して同意できないけど、そんな考えに至った理由は前より理解できるようになった。方法は滅茶苦茶だったけど、祖父母は神との関係を家族全員で共有したかったんだろうな。"
-
-#: data/json/npcs/refugee_center/surface_refugees/NPC_Fatima_Al_Jadir.json
-msgid "Welding comes up a lot in my life.  Do you think you could teach me?"
-msgstr ""
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Fatima_Al_Jadir.json
 msgid ""
@@ -162711,6 +162743,10 @@ msgid "Rail Motorcycle"
 msgstr "レールバイク"
 
 #: data/json/vehicles/trains.json
+msgid "Three-Railed Motorized Draisine"
+msgstr ""
+
+#: data/json/vehicles/trains.json
 msgid "Miniature Train Locomotive"
 msgstr "ミニ機関車"
 
@@ -165957,11 +165993,7 @@ msgid ""
 "performances blur the lines between medicine and art."
 msgstr ""
 
-#: data/mods/Aftershock/maps/furniture.json
-msgid "Autodoc Mk. XVI"
-msgstr ""
-
-#. ~ Description for Autodoc Mk. XVI
+#. ~ Description for Autodoc Mk. XI
 #: data/mods/Aftershock/maps/furniture.json
 msgid ""
 "A commercial surgical robot often found within licensed clinics and "
@@ -208743,6 +208775,11 @@ msgid "You are properly hydrated.  Your %s chirps happily."
 msgstr "身体は十分に潤っています。%sは喜ばしい通知音を発しました。"
 
 #: src/bionics.cpp
+#, c-format
+msgid "Your %s quietens to a satisfied thrum."
+msgstr ""
+
+#: src/bionics.cpp
 msgid "The removal fails without incident."
 msgstr "除去に失敗しましたが、体は何事もなく無事でした。"
 
@@ -210619,6 +210656,21 @@ msgstr "%sは完全に破壊されました！"
 #, c-format
 msgid "<npcname>'s %s is completely destroyed!"
 msgstr "<npcname>の%sは完全に破壊されました！"
+
+#: src/character.cpp
+#, c-format
+msgid "Your forcefield shatters and the feedback shorts out the %s!"
+msgstr ""
+
+#: src/character.cpp
+#, c-format
+msgid "Your forcefield crackles and the %s powers down."
+msgstr ""
+
+#: src/character.cpp
+#, c-format
+msgid "The %s is interrupted and powers down."
+msgstr ""
 
 #: src/character.cpp
 #, c-format
@@ -214199,6 +214251,10 @@ msgstr ""
 
 #: src/debug_menu.cpp
 msgid "Disabled (tires or engine)"
+msgstr ""
+
+#: src/debug_menu.cpp
+msgid "Vehicle direction (in degrees): "
 msgstr ""
 
 #: src/debug_menu.cpp
@@ -220831,6 +220887,14 @@ msgstr ""
 #, c-format
 msgid "Your %s shatters!"
 msgstr "%sは粉々になりました！"
+
+#: src/handle_action.cpp
+msgid "Floor below destroyed!  Move where?"
+msgstr ""
+
+#: src/handle_action.cpp
+msgid "Fall down?"
+msgstr ""
 
 #: src/handle_action.cpp
 msgid "There's nothing there to smash!"

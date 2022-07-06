@@ -13,15 +13,15 @@
 # Fastro, 2022
 # Александр Шкаликов, 2022
 # Никита Абрамов, 2022
-# Coolthulhu <Coolthulhu@gmail.com>, 2022
 # Firestorm_01 <firestorm01x2@gmail.com>, 2022
+# Coolthulhu <Coolthulhu@gmail.com>, 2022
 # Gamp Forest, 2022
 # CV514 <Codename.dust@gmail.com>, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-06-21 20:40+0000\n"
+"POT-Creation-Date: 2022-06-30 19:45+0000\n"
 "Last-Translator: CV514 <Codename.dust@gmail.com>, 2022\n"
 "Language-Team: Russian (Russia) (https://www.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -2785,18 +2785,15 @@ msgid "Active Defense System"
 msgstr "Активная система обороны"
 
 #. ~ Description for {'str': 'Active Defense System'}
-#: data/json/bionics.json
+#. ~ Description for {'str': 'Active Defense System CBM'}
+#: data/json/bionics.json data/json/items/bionics.json
 msgid ""
-"A thin forcefield surrounds your body, continually draining power.  Anything"
-" attempting to penetrate this field has a chance of being deflected at the "
-"cost of energy, reducing their ability to deal damage.  Bullets will be "
-"deflected more than melee weapons and those in turn more than massive "
-"objects."
+"This bionic charges a forcefield around your body that deflects incoming "
+"attacks.  Bullets are heavily deflected, piercing well deflected, slashing "
+"moderately deflected and bashing barely deflected.  This bionic charges at "
+"half speed for 3 turns after being hit, and doesn't consume power when fully"
+" charged."
 msgstr ""
-"Ваше тело окружено тонким силовым полем, постоянно потребляющим энергию. "
-"Всё, что пытается проникнуть через него, с некоторым шансом отталкивается "
-"ценой дополнительных затрат энергии, снижая потенциальный урон. "
-"Останавливает пули чаще, чем мечи, а мечи чаще, чем тяжёлые предметы."
 
 #: data/json/bionics.json
 msgid "Alarm System"
@@ -11632,6 +11629,10 @@ msgid "BOOKS"
 msgstr "КНИГИ"
 
 #: data/json/item_category.json
+msgid "SPELLBOOKS"
+msgstr "ЗАКЛИНАНИЯ"
+
+#: data/json/item_category.json
 msgid "MAPS"
 msgstr "КАРТЫ"
 
@@ -12346,6 +12347,15 @@ msgstr "Предметы: книги"
 #: data/json/loot_zones.json
 msgid "Destination for books and magazines."
 msgstr "Место для книг и журналов."
+
+#: data/json/loot_zones.json
+msgid "Loot: Spellbooks"
+msgstr "Предметы: заклинания"
+
+#. ~ Description for Loot: Spellbooks
+#: data/json/loot_zones.json
+msgid "Destination for spellbooks and scrolls."
+msgstr "Место для томов и свитков с заклинаниями."
 
 #: data/json/loot_zones.json
 msgid "Loot: Mods"
@@ -29871,7 +29881,7 @@ msgid "thunk."
 msgstr "хлопанье."
 
 #: data/json/furniture_and_terrain/furniture-medical.json
-#: data/json/items/tool/med.json
+#: data/json/items/tool/med.json data/mods/Aftershock/maps/furniture.json
 msgid "Autodoc Mk. XI"
 msgid_plural "Autodoc Mk. XIs"
 msgstr[0] "Автодок Mk. XI"
@@ -38973,6 +38983,42 @@ msgstr "пролёт лестницы (начало)"
 msgid "low stairs (end section)"
 msgstr "пролёт лестницы (конец)"
 
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "railroad track down (high end)"
+msgstr "железная дорога вниз (верхний участок)"
+
+#. ~ Description for railroad track down (high end)
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "The upper end of rail track leading down."
+msgstr "Верхний участок железной дороги, ведущей вниз."
+
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "railroad track down (low end)"
+msgstr "железная дорога вниз (нижний участок)"
+
+#. ~ Description for railroad track down (low end)
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "The lower end of rail track leading down."
+msgstr "Нижний участок железной дороги, ведущей вниз."
+
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "railroad track up (high end)"
+msgstr "железная дорога вверх (верхний участок)"
+
+#. ~ Description for railroad track up (high end)
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "The upper end of rail track leading up."
+msgstr "Верхний участок железной дороги, ведущей вверх."
+
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "railroad track up (low end)"
+msgstr "железная дорога вверх (нижний участок)"
+
+#. ~ Description for railroad track up (low end)
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "The lower end of rail track leading up."
+msgstr "Нижний участок железной дороги, ведущей вверх."
+
 #. ~ Message for terrain 'None'
 #: data/json/furniture_and_terrain/terrain-zztesting.json
 msgid "You attempt to use the console, but it's no use."
@@ -40820,19 +40866,6 @@ msgstr[1] "КБМ: Активная система обороны"
 msgstr[2] "КБМ: Активная система обороны"
 msgstr[3] "КБМ: Активная система обороны"
 
-#. ~ Description for {'str': 'Active Defense System CBM'}
-#: data/json/items/bionics.json
-msgid ""
-"This bionic projects a thin forcefield around the user's body.  Anything "
-"attempting to penetrate this field has a chance of being deflected at the "
-"cost of energy, reducing their ability to deal damage.  Bullets will be "
-"deflected more than swords and those in turn more than massive objects."
-msgstr ""
-"Владельца окружает тонкое силовое поле, постоянно потребляющее энергию. Всё,"
-" что пытается проникнуть через него, с некоторым шансом отталкивается ценой "
-"дополнительных затрат энергии, снижая потенциальный урон. Останавливает пули"
-" чаще, чем мечи, а мечи чаще, чем тяжёлые предметы."
-
 #: data/json/items/bionics.json
 msgid "Alarm System CBM"
 msgid_plural "Alarm System CBMs"
@@ -41917,13 +41950,14 @@ msgstr[3] "КБМ: Вероятностное путешествие"
 #: data/json/items/bionics.json
 msgid ""
 "Increases the body's wavelength, allowing the user to quantum tunnel through"
-" walls, reappearing on the other side.  Power drain in standby is relatively"
-" low, but each tile tunneled through costs 90 bionic power."
+" walls, reappearing on the other side.  Once installed, activate and select "
+"a direction to use.  Tunneling costs 100 bionic power per tile traveled "
+"through."
 msgstr ""
 "Увеличивает длину волны тела и позволяет проходить сквозь стены посредством "
-"квантового туннелирования, появляясь на другой стороне. Потребление мощности"
-" в режиме ожидания минимально, но проход через каждый тайл стены стоит 90 "
-"бионической энергии."
+"квантового туннелирования, позволяя оказаться на другой стороне. После "
+"установки, активируйте и выберите направление для использования. "
+"Туннелирование потребляет 100 бионической энергии за один тайл перемещения."
 
 #: data/json/items/bionics.json
 msgid "Air Filtration System CBM"
@@ -165637,10 +165671,6 @@ msgid "How did you wind up here at the center?"
 msgstr "Как тебе удалось очутиться в центре?"
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Fatima_Al_Jadir.json
-msgid "Hey, you free for a bit of teaching?"
-msgstr "Эй, как у тебя со свободным временем для небольшого обучения?"
-
-#: data/json/npcs/refugee_center/surface_refugees/NPC_Fatima_Al_Jadir.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Rhyzaea_Johnny.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Uyen_Tran.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Vanessa_Toby.json
@@ -165730,12 +165760,6 @@ msgstr ""
 "Ты удивишься! Обработка металла долго была частью мусульманских традиций, хотя я ею занимаюсь не поэтому. Я не слишком следую традициям, да и мои родители тоже, но мои дедушка с бабушкой очень старомодные и строгие. Моя сестра заявила, что она лесбиянка, и они превратили её жизнь в ад; мама с папой советовали ей сохранить свой секрет, но сестра думала иначе. Мне всегда нравилась механика и работа руками, так что когда бабушка с дедушкой принялись тиранить моих родителей выдать меня и сестру замуж за достойных мужчин, чтоб мы бросили свою безнравственность, я решила выбрать любимую работу, чтоб как можно сильнее их уязвить. Выбор был верный, не только потому что они пришли в ярость, но и мне ещё нравится сварка. Мне нравится то ощущение, когда стоишь и смотришь на свою работу, осознавая, что взяла куски металла и сделала из них что-то полезное. Я обожаю, когда всё идеально сходится. Умиротворяет.\n"
 "\n"
 "Я… я всё же надеюсь, что с моими дедушкой и бабушкой всё хорошо. Они старомодные и выбирают то, что мне не по вкусу, но они семья, и у меня остались приятные детские воспоминания. Я намного чаще думаю о Боге с тех пор, как случился <the_cataclysm>, и хотя я никогда не соглашалась с их решениями, я теперь лучше понимаю, почему они так поступали. Они просто хотели, чтобы вся семья разделяла их отношения с Богом в их запутанной манере."
-
-#: data/json/npcs/refugee_center/surface_refugees/NPC_Fatima_Al_Jadir.json
-msgid "Welding comes up a lot in my life.  Do you think you could teach me?"
-msgstr ""
-"Сварочные работы стали требоваться в моей жизни больше обычного. Сможешь "
-"помочь мне с этим навыком?"
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Fatima_Al_Jadir.json
 msgid ""
@@ -201730,6 +201754,10 @@ msgid "Rail Motorcycle"
 msgstr "рельсовый мотоцикл"
 
 #: data/json/vehicles/trains.json
+msgid "Three-Railed Motorized Draisine"
+msgstr "Трёхрельсовая моторизованная дрезина"
+
+#: data/json/vehicles/trains.json
 msgid "Miniature Train Locomotive"
 msgstr "Мини-поезд"
 
@@ -206077,11 +206105,7 @@ msgstr ""
 "управляемые искусственным интеллектом, чьи навыки стирают границы между "
 "медициной и искусством."
 
-#: data/mods/Aftershock/maps/furniture.json
-msgid "Autodoc Mk. XVI"
-msgstr "Автодок Mk. XVI"
-
-#. ~ Description for Autodoc Mk. XVI
+#. ~ Description for Autodoc Mk. XI
 #: data/mods/Aftershock/maps/furniture.json
 msgid ""
 "A commercial surgical robot often found within licensed clinics and "
@@ -259472,6 +259496,11 @@ msgid "You are properly hydrated.  Your %s chirps happily."
 msgstr "Влажность достаточная. Ваш %s счастливо пиликает."
 
 #: src/bionics.cpp
+#, c-format
+msgid "Your %s quietens to a satisfied thrum."
+msgstr ""
+
+#: src/bionics.cpp
 msgid "The removal fails without incident."
 msgstr "Удаление провалилось без последствий."
 
@@ -261458,6 +261487,21 @@ msgstr "Ваше снаряжение (%s) полностью уничтожен
 #, c-format
 msgid "<npcname>'s %s is completely destroyed!"
 msgstr "%s (<npcname>) полностью разрушается!"
+
+#: src/character.cpp
+#, c-format
+msgid "Your forcefield shatters and the feedback shorts out the %s!"
+msgstr ""
+
+#: src/character.cpp
+#, c-format
+msgid "Your forcefield crackles and the %s powers down."
+msgstr ""
+
+#: src/character.cpp
+#, c-format
+msgid "The %s is interrupted and powers down."
+msgstr ""
 
 #: src/character.cpp
 #, c-format
@@ -265163,6 +265207,10 @@ msgstr "Без повреждений"
 #: src/debug_menu.cpp
 msgid "Disabled (tires or engine)"
 msgstr "Нерабочий (шины или двигатель)"
+
+#: src/debug_menu.cpp
+msgid "Vehicle direction (in degrees): "
+msgstr "Направление транспорта (в градусах):"
 
 #: src/debug_menu.cpp
 msgid "Select new weather pattern:"
@@ -270851,7 +270899,7 @@ msgstr "Жажда    :"
 
 #: src/game_inventory.cpp src/panels.cpp
 msgid "Pain :"
-msgstr "Боль     :"
+msgstr "Боль :"
 
 #: src/game_inventory.cpp src/panels.cpp
 msgid "Rest :"
@@ -271957,6 +272005,14 @@ msgstr "Вы уверены, что хотите разбить кислотны
 #, c-format
 msgid "Your %s shatters!"
 msgstr "%s разбивается!"
+
+#: src/handle_action.cpp
+msgid "Floor below destroyed!  Move where?"
+msgstr "Пол ниже уничтожен! Куда переместиться?"
+
+#: src/handle_action.cpp
+msgid "Fall down?"
+msgstr "Упасть вниз?"
 
 #: src/handle_action.cpp
 msgid "There's nothing there to smash!"
