@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-09-18 19:06+0000\n"
+"POT-Creation-Date: 2022-09-29 14:30+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2022\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -31,6 +31,12 @@ msgstr "水, 生命之所需, 最佳解渴靈藥。過濾後飲用會更安全�
 #: data/core/tips.json
 msgid "Fires can spread easily, especially with abundance of fuel."
 msgstr "火勢可以很容易擴散, 特別是有大量燃料的時候。"
+
+#: data/core/tips.json
+msgid ""
+"You can automatically learn every recipe for which you meet skill "
+"requirements for, by reading the book with them."
+msgstr ""
 
 #: data/core/tips.json
 msgid ""
@@ -84135,6 +84141,7 @@ msgid ""
 msgstr "一個適用於白朗寧自動步槍的標準容量彈匣, 能容納 20 發子彈。"
 
 #: data/json/items/magazine/308.json
+#: data/mods/Generic_Guns/ammo/replacefix.json
 #: data/mods/Generic_Guns/vehicles/ammo_redefine_hacks/temp_magazine_json_load_hack.json
 msgid "7.62x51mm ammo belt"
 msgid_plural "7.62x51mm ammo belts"
@@ -89061,8 +89068,8 @@ msgid ""
 msgstr "孩童間受歡迎的玩具槍。命中率雖然不低, 可是BB彈幾乎無法造成傷害。"
 
 #: data/json/items/ranged/pneumatic.json
-msgid "Pneumatic bolt driver"
-msgid_plural "Pneumatic bolt drivers"
+msgid "pneumatic bolt driver"
+msgid_plural "pneumatic bolt drivers"
 msgstr[0] ""
 
 #: data/json/items/ranged/pneumatic.json
@@ -89073,8 +89080,8 @@ msgid ""
 msgstr "废料手制而成的八发转管气动弩矢射枪。装填时要小心，泵入气体需要几秒时间。它安静而致命。"
 
 #: data/json/items/ranged/pneumatic.json
-msgid "Pneumatic assault rifle"
-msgid_plural "Pneumatic assault rifles"
+msgid "pneumatic assault rifle"
+msgid_plural "pneumatic assault rifles"
 msgstr[0] ""
 
 #: data/json/items/ranged/pneumatic.json
@@ -104965,12 +104972,14 @@ msgstr ""
 "这台由\"鹰爪\"型无人车衍生而来的防暴平台在大灾变发生前几年被作为一款新型半自主装置而被广泛宣传，可以发射出比人类精确得多的低致命性子弹，从而确保只对目标四肢进行更无害的打击。它们很快就被监狱和中心城区警察所采纳，在那里他们证明了“低致命性”与“非致命性”是不一样的。在大灾变发生前的几天里，有满满几仓库的这类平台被投入使用。乐观点看，虽然它能够自主射击，但它需要一个人工操作者来更换位置，所以它已经无法再移动了。"
 
 #: data/json/monsters/turrets.json
+#: data/mods/Generic_Guns/robots/gg_bots_migration.json
 msgid "light turret"
 msgid_plural "light turrets"
 msgstr[0] ""
 
 #. ~ Description for {'str': 'light turret'}
 #: data/json/monsters/turrets.json
+#: data/mods/Generic_Guns/robots/gg_bots_migration.json
 msgid ""
 "The General Atomics TX-1 Guardian, an popular automated turret equipped with"
 " a 9mm carbine.  Initially it was designed mainly for corporate property "
@@ -183518,6 +183527,11 @@ msgid ""
 "standard pistol ammunition."
 msgstr ""
 
+#: data/mods/Generic_Guns/firearms/pistol.json
+#: data/mods/Generic_Guns/firearms/sniper.json
+msgid "You shouldn't see this! "
+msgstr ""
+
 #: data/mods/Generic_Guns/firearms/pistol_magnum.json
 msgid "hand cannon"
 msgid_plural "hand cannons"
@@ -183852,10 +183866,6 @@ msgid ""
 "quite capable of eliminating bipedal threats from very safe ranges. "
 msgstr ""
 "狙击步枪可以满足军队、警察和普通平民对精准射击的需求。这把现代出品的范例具有可拆卸的弹匣和各种光学和支架安装接口。通过耐心和练习，所有人都能够从非常安全的范围内消除两足威胁。"
-
-#: data/mods/Generic_Guns/firearms/sniper.json
-msgid "You shouldn't see this! "
-msgstr ""
 
 #: data/mods/Generic_Guns/gunmods/gunmods.json
 msgid "underbarrel launcher"
@@ -211146,8 +211156,8 @@ msgstr "閱讀時間： <color_white>%d %%</color>"
 
 #: src/character_display.cpp
 #, c-format
-msgid "Crafting bonus: <color_white>%d%%</color>"
-msgstr "製作加成： <color_white>%d %%</color>"
+msgid "Crafting bonus: <color_white>+%d%%</color>"
+msgstr ""
 
 #: src/character_display.cpp
 msgid ""
@@ -222318,11 +222328,6 @@ msgstr "你開始破解保險箱。"
 msgid "Attempt to hack this safe?"
 msgstr "尝试破解保险箱？"
 
-#: src/iexamine.cpp
-#, c-format
-msgid "The %s is locked.  If only you had something to pry it with…"
-msgstr "%s上锁了。你要是有把撬棍就好了……"
-
 #. ~ %1$s: terrain/furniture name, %2$s: prying tool name
 #: src/iexamine.cpp
 #, c-format
@@ -222331,13 +222336,24 @@ msgstr "你試圖將 %1$s 以你的 %2$s 撬開..."
 
 #: src/iexamine.cpp
 #, c-format
-msgid "The %s is locked.  If only you had something to pick its lock with…"
-msgstr "%s上锁了。要是有什么东西能开锁就好了……"
+msgid "You attempt to pick lock of %1$s using your %2$s…"
+msgstr "你尝试使用 %2$s 打开 %1$s 的锁……"
 
 #: src/iexamine.cpp
 #, c-format
-msgid "You attempt to pick lock of %1$s using your %2$s…"
-msgstr "你尝试使用 %2$s 打开 %1$s 的锁……"
+msgid ""
+"The %s is locked.  If only you had something to pry it or pick its lock…"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s is locked.  If only you had something to pry it…"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s is locked.  If only you had something to pick its lock…"
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "This bulletin board is not inside a camp"
@@ -240446,8 +240462,8 @@ msgstr "負重: %.1f %s"
 
 #: src/newcharacter.cpp
 #, c-format
-msgid "Melee damage bonus: %.1f"
-msgstr "近戰傷害加成: %.1f"
+msgid "Melee damage bonus: +%.1f"
+msgstr ""
 
 #: src/newcharacter.cpp
 msgid ""
@@ -240498,8 +240514,8 @@ msgstr "技能衰減: %d%%"
 
 #: src/newcharacter.cpp
 #, c-format
-msgid "Crafting bonus: %2d%%"
-msgstr "物品製作加成: %2d%%"
+msgid "Crafting bonus: +%d%%"
+msgstr ""
 
 #: src/newcharacter.cpp
 msgid ""
@@ -240521,7 +240537,7 @@ msgstr "瞄準懲罰: -%d"
 
 #: src/newcharacter.cpp
 #, c-format
-msgid "Night vision bonus: -%.1f"
+msgid "Night vision bonus: +%.1f"
 msgstr ""
 
 #: src/newcharacter.cpp
@@ -241408,6 +241424,11 @@ msgstr "%s 躺下並開始睡覺。"
 #, c-format
 msgid "Hold still %s, I'm coming to help you."
 msgstr "%s 別動，我來幫你。"
+
+#: src/npcmove.cpp
+#, c-format
+msgid "%s takes aim at you!"
+msgstr ""
 
 #: src/npcmove.cpp
 msgid "Don't move a <swear> muscle…"

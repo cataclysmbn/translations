@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-09-18 19:06+0000\n"
+"POT-Creation-Date: 2022-09-29 14:30+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2020\n"
 "Language-Team: Icelandic (https://www.transifex.com/bn-team/teams/113585/is/)\n"
 "MIME-Version: 1.0\n"
@@ -29,6 +29,12 @@ msgstr ""
 
 #: data/core/tips.json
 msgid "Fires can spread easily, especially with abundance of fuel."
+msgstr ""
+
+#: data/core/tips.json
+msgid ""
+"You can automatically learn every recipe for which you meet skill "
+"requirements for, by reading the book with them."
 msgstr ""
 
 #: data/core/tips.json
@@ -86867,6 +86873,7 @@ msgid ""
 msgstr ""
 
 #: data/json/items/magazine/308.json
+#: data/mods/Generic_Guns/ammo/replacefix.json
 #: data/mods/Generic_Guns/vehicles/ammo_redefine_hacks/temp_magazine_json_load_hack.json
 msgid "7.62x51mm ammo belt"
 msgid_plural "7.62x51mm ammo belts"
@@ -92166,8 +92173,8 @@ msgid ""
 msgstr ""
 
 #: data/json/items/ranged/pneumatic.json
-msgid "Pneumatic bolt driver"
-msgid_plural "Pneumatic bolt drivers"
+msgid "pneumatic bolt driver"
+msgid_plural "pneumatic bolt drivers"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -92179,8 +92186,8 @@ msgid ""
 msgstr ""
 
 #: data/json/items/ranged/pneumatic.json
-msgid "Pneumatic assault rifle"
-msgid_plural "Pneumatic assault rifles"
+msgid "pneumatic assault rifle"
+msgid_plural "pneumatic assault rifles"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -108968,6 +108975,7 @@ msgid ""
 msgstr ""
 
 #: data/json/monsters/turrets.json
+#: data/mods/Generic_Guns/robots/gg_bots_migration.json
 msgid "light turret"
 msgid_plural "light turrets"
 msgstr[0] ""
@@ -108975,6 +108983,7 @@ msgstr[1] ""
 
 #. ~ Description for {'str': 'light turret'}
 #: data/json/monsters/turrets.json
+#: data/mods/Generic_Guns/robots/gg_bots_migration.json
 msgid ""
 "The General Atomics TX-1 Guardian, an popular automated turret equipped with"
 " a 9mm carbine.  Initially it was designed mainly for corporate property "
@@ -186909,6 +186918,11 @@ msgid ""
 "standard pistol ammunition."
 msgstr ""
 
+#: data/mods/Generic_Guns/firearms/pistol.json
+#: data/mods/Generic_Guns/firearms/sniper.json
+msgid "You shouldn't see this! "
+msgstr ""
+
 #: data/mods/Generic_Guns/firearms/pistol_magnum.json
 msgid "hand cannon"
 msgid_plural "hand cannons"
@@ -187242,10 +187256,6 @@ msgid ""
 " fire.  Modern examples feature detachable magazines and various mounting "
 "interfaces for optics and supports.  With care and practice, all should be "
 "quite capable of eliminating bipedal threats from very safe ranges. "
-msgstr ""
-
-#: data/mods/Generic_Guns/firearms/sniper.json
-msgid "You shouldn't see this! "
 msgstr ""
 
 #: data/mods/Generic_Guns/gunmods/gunmods.json
@@ -215264,7 +215274,7 @@ msgstr ""
 
 #: src/character_display.cpp
 #, c-format
-msgid "Crafting bonus: <color_white>%d%%</color>"
+msgid "Crafting bonus: <color_white>+%d%%</color>"
 msgstr ""
 
 #: src/character_display.cpp
@@ -226055,11 +226065,6 @@ msgstr ""
 msgid "Attempt to hack this safe?"
 msgstr ""
 
-#: src/iexamine.cpp
-#, c-format
-msgid "The %s is locked.  If only you had something to pry it with…"
-msgstr ""
-
 #. ~ %1$s: terrain/furniture name, %2$s: prying tool name
 #: src/iexamine.cpp
 #, c-format
@@ -226068,12 +226073,23 @@ msgstr ""
 
 #: src/iexamine.cpp
 #, c-format
-msgid "The %s is locked.  If only you had something to pick its lock with…"
+msgid "You attempt to pick lock of %1$s using your %2$s…"
 msgstr ""
 
 #: src/iexamine.cpp
 #, c-format
-msgid "You attempt to pick lock of %1$s using your %2$s…"
+msgid ""
+"The %s is locked.  If only you had something to pry it or pick its lock…"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s is locked.  If only you had something to pry it…"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s is locked.  If only you had something to pick its lock…"
 msgstr ""
 
 #: src/iexamine.cpp
@@ -244021,7 +244037,7 @@ msgstr ""
 
 #: src/newcharacter.cpp
 #, c-format
-msgid "Melee damage bonus: %.1f"
+msgid "Melee damage bonus: +%.1f"
 msgstr ""
 
 #: src/newcharacter.cpp
@@ -244069,7 +244085,7 @@ msgstr ""
 
 #: src/newcharacter.cpp
 #, c-format
-msgid "Crafting bonus: %2d%%"
+msgid "Crafting bonus: +%d%%"
 msgstr ""
 
 #: src/newcharacter.cpp
@@ -244089,7 +244105,7 @@ msgstr ""
 
 #: src/newcharacter.cpp
 #, c-format
-msgid "Night vision bonus: -%.1f"
+msgid "Night vision bonus: +%.1f"
 msgstr ""
 
 #: src/newcharacter.cpp
@@ -244967,6 +244983,11 @@ msgstr ""
 #: src/npcmove.cpp
 #, c-format
 msgid "Hold still %s, I'm coming to help you."
+msgstr ""
+
+#: src/npcmove.cpp
+#, c-format
+msgid "%s takes aim at you!"
 msgstr ""
 
 #: src/npcmove.cpp
