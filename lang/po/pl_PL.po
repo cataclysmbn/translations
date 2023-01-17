@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-12-19 21:56+0000\n"
+"POT-Creation-Date: 2023-01-06 00:39+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2022\n"
 "Language-Team: Polish (Poland) (https://www.transifex.com/bn-team/teams/113585/pl_PL/)\n"
 "MIME-Version: 1.0\n"
@@ -250973,6 +250973,28 @@ msgstr "Czujesz ból %s."
 msgid "Your %s aches."
 msgstr "Czujesz lekki ból %s."
 
+#: src/character_functions.cpp
+msgid "Wield what?"
+msgstr "Trzymać co?"
+
+#: src/character_functions.cpp
+msgid "Time seems to slow down and you instinctively dodge!"
+msgstr "Czas jakby zwalnia a ty instynktownie uchylasz się!"
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s dodges… so fast!"
+msgstr ""
+
+#: src/character_functions.cpp
+msgid "You try to dodge but there's no room!"
+msgstr "Chcesz uskoczyć, ale nie ma gdzie!"
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s tries to dodge but there's no room!"
+msgstr "%s chce uskoczyć, ale nie ma gdzie!"
+
 #: src/character_martial_arts.cpp
 #, c-format
 msgid "You have learned %s from extensive practice with the CQB Bionic."
@@ -252330,11 +252352,11 @@ msgstr "To nie wygląda na jadalne w obecnej postaci."
 msgid "This is full of dirt after being on the ground."
 msgstr "Jest pełny brudu po tym jak był na ziemi."
 
-#: src/consumption.cpp src/iuse.cpp src/iuse_actor.cpp src/player.cpp
+#: src/consumption.cpp src/iuse.cpp src/iuse_actor.cpp
 msgid "You can't do that while underwater."
 msgstr "Nie możesz tego robić pod wodą."
 
-#: src/consumption.cpp src/player.cpp
+#: src/consumption.cpp
 #, c-format
 msgid "You need a %s to consume that!"
 msgstr "Potrzebujesz %s żeby to skonsumować!"
@@ -252663,6 +252685,35 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+#: src/consumption.cpp src/iuse_actor.cpp src/player.cpp
+msgid "You do not have that item."
+msgstr "Nie masz tego przedmiotu."
+
+#: src/consumption.cpp
+#, c-format
+msgid "You can't eat your %s."
+msgstr "Nie możesz zjeść swojego %s."
+
+#: src/consumption.cpp
+#, c-format
+msgid "You are now wielding an empty %s."
+msgstr "Spawasz teraz pusty %s."
+
+#: src/consumption.cpp
+#, c-format
+msgid "You are now wearing an empty %s."
+msgstr "Spawasz teraz pusty %s."
+
+#: src/consumption.cpp
+#, c-format
+msgid "You drop the empty %s."
+msgstr "Upuszczasz pusty %s."
+
+#: src/consumption.cpp
+#, c-format
+msgid "%c - %d empty %s"
+msgstr "%c - %d pusty %s"
 
 #: src/craft_command.cpp src/crafting.cpp
 msgid " (nearby)"
@@ -270540,10 +270591,6 @@ msgstr ""
 msgid "At your skill level, it will take around %d minutes to light a fire."
 msgstr "Z twoimi umiejętnościami, rozpalenie ognia zajmie około %d minut."
 
-#: src/iuse_actor.cpp src/player.cpp
-msgid "You do not have that item."
-msgstr "Nie masz tego przedmiotu."
-
 #: src/iuse_actor.cpp
 #, c-format
 msgid "Can't salvage anything from %s."
@@ -284290,40 +284337,13 @@ msgstr ""
 "rysowanie ASCII. Wymaga restartu."
 
 #: src/options.cpp
-msgid "Scaling mode"
-msgstr "Tryb skalowania"
+msgid "Display scaling factor"
+msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Sets the scaling mode, 'none' ( default ) displays at the game's native "
-"resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
-"provides high-quality scaling."
-msgstr ""
-"Wybiera tryb skalowania. 'Brak skalowania' (domyślny) wyświetla w "
-"rozdzielczości natywnej gry, 'najbliższy' używa szybkiego skalowania niskiej"
-" jakości i 'liniowe' zapewnia skalowanie wysokiej jakości."
-
-#. ~ Do not scale the game image to the window size.
-#: src/options.cpp
-msgid "No scaling"
-msgstr "Brak skalowania"
-
-#. ~ An algorithm for image scaling.
-#: src/options.cpp
-msgid "Nearest neighbor"
-msgstr "Najbliższy sąsiad"
-
-#. ~ An algorithm for image scaling.
-#: src/options.cpp
-msgid "Linear filtering"
-msgstr "Filtrowanie liniowe"
-
-#: src/options.cpp
-msgid "Scaling factor"
-msgstr "Mnożnik skalowania"
-
-#: src/options.cpp
-msgid "Factor by which to scale the display.  Requires restart."
+"Factor by which to scale the game display, 1x means no scaling.  Requires "
+"restart."
 msgstr ""
 
 #: src/options.cpp
@@ -284339,13 +284359,11 @@ msgid "4x"
 msgstr "4x"
 
 #: src/options.cpp
-msgid "Report unused JSON fields"
+msgid "Strict JSON checks"
 msgstr ""
 
 #: src/options.cpp
-msgid ""
-"If false, unused JSON fields are silently ignored.  Enabling this will make "
-"it easier to spot mistakes or typos during modding."
+msgid "If true, will show additional warnings for JSON data correctness."
 msgstr ""
 
 #: src/options.cpp
@@ -286615,36 +286633,6 @@ msgstr "<npcname> odbija się od %s!"
 msgid "You bounce off %s!"
 msgstr "Odbijasz się od %s!"
 
-#: src/player.cpp
-#, c-format
-msgid "Drink %s from your hands?"
-msgstr "Wypić %s prosto z rąk?"
-
-#: src/player.cpp
-#, c-format
-msgid "You can't eat your %s."
-msgstr "Nie możesz zjeść swojego %s."
-
-#: src/player.cpp
-#, c-format
-msgid "You are now wielding an empty %s."
-msgstr "Spawasz teraz pusty %s."
-
-#: src/player.cpp
-#, c-format
-msgid "You are now wearing an empty %s."
-msgstr "Spawasz teraz pusty %s."
-
-#: src/player.cpp
-#, c-format
-msgid "You drop the empty %s."
-msgstr "Upuszczasz pusty %s."
-
-#: src/player.cpp
-#, c-format
-msgid "%c - %d empty %s"
-msgstr "%c - %d pusty %s"
-
 #: src/player.cpp src/veh_interact.cpp
 #, c-format
 msgid "Refill %s"
@@ -287001,28 +286989,6 @@ msgstr "Czujesz że zadania w %s tego poziomu stają się trywialne."
 #, c-format
 msgid "This task is too simple to train your %s beyond %d."
 msgstr "Ta czynności jest zbyt prosta by trenować %s powyżej %d."
-
-#: src/player.cpp
-msgid "Wield what?"
-msgstr "Trzymać co?"
-
-#: src/player.cpp
-msgid "Time seems to slow down and you instinctively dodge!"
-msgstr "Czas jakby zwalnia a ty instynktownie uchylasz się!"
-
-#: src/player.cpp
-#, c-format
-msgid "%s dodges… so fast!"
-msgstr ""
-
-#: src/player.cpp
-msgid "You try to dodge but there's no room!"
-msgstr "Chcesz uskoczyć, ale nie ma gdzie!"
-
-#: src/player.cpp
-#, c-format
-msgid "%s tries to dodge but there's no room!"
-msgstr "%s chce uskoczyć, ale nie ma gdzie!"
 
 #: src/player_activity.cpp
 #, c-format

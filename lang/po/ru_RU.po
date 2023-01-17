@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-12-19 21:56+0000\n"
+"POT-Creation-Date: 2023-01-06 00:39+0000\n"
 "Last-Translator: CV514 <Codename.dust@gmail.com>, 2022\n"
 "Language-Team: Russian (Russia) (https://www.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -270020,6 +270020,28 @@ msgstr "Ваш %s причиняет вам боль!"
 msgid "Your %s aches."
 msgstr "У вас болит %s."
 
+#: src/character_functions.cpp
+msgid "Wield what?"
+msgstr "Что взять в руки?"
+
+#: src/character_functions.cpp
+msgid "Time seems to slow down and you instinctively dodge!"
+msgstr "Время как будто замедлилось и вы инстинктивно увернулись!"
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s dodges… so fast!"
+msgstr "%s уворачивается… Какой быстрый!"
+
+#: src/character_functions.cpp
+msgid "You try to dodge but there's no room!"
+msgstr "Вы пытаетесь увернуться, но не хватает места!"
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s tries to dodge but there's no room!"
+msgstr "%s пытается увернуться, но не хватает места!"
+
 #: src/character_martial_arts.cpp
 #, c-format
 msgid "You have learned %s from extensive practice with the CQB Bionic."
@@ -271394,11 +271416,11 @@ msgstr "Это выглядит несъедобным в текущем вид�
 msgid "This is full of dirt after being on the ground."
 msgstr "Тут полно грязи после падения на землю."
 
-#: src/consumption.cpp src/iuse.cpp src/iuse_actor.cpp src/player.cpp
+#: src/consumption.cpp src/iuse.cpp src/iuse_actor.cpp
 msgid "You can't do that while underwater."
 msgstr "Вы не можете это делать под водой."
 
-#: src/consumption.cpp src/player.cpp
+#: src/consumption.cpp
 #, c-format
 msgid "You need a %s to consume that!"
 msgstr "Вам требуется %s, чтобы употребить это!"
@@ -271732,6 +271754,35 @@ msgstr[0] "<npcname> помещает %1$i заряд %2$s себе в %3$s."
 msgstr[1] "<npcname> помещает%1$i заряда %2$s себе в %3$s."
 msgstr[2] "<npcname> помещает%1$i зарядов %2$s себе в %3$s."
 msgstr[3] "<npcname> помещает%1$i зарядов %2$s себе в %3$s."
+
+#: src/consumption.cpp src/iuse_actor.cpp src/player.cpp
+msgid "You do not have that item."
+msgstr "У вас нет этого предмета."
+
+#: src/consumption.cpp
+#, c-format
+msgid "You can't eat your %s."
+msgstr "Вы не можете съесть %s."
+
+#: src/consumption.cpp
+#, c-format
+msgid "You are now wielding an empty %s."
+msgstr "Теперь у вас в качестве оружия пустая %s."
+
+#: src/consumption.cpp
+#, c-format
+msgid "You are now wearing an empty %s."
+msgstr "Вы теперь носите пустой %s."
+
+#: src/consumption.cpp
+#, c-format
+msgid "You drop the empty %s."
+msgstr "Вы выбрасываете пустой %s."
+
+#: src/consumption.cpp
+#, c-format
+msgid "%c - %d empty %s"
+msgstr "%c - %d %s (пусто)"
 
 #: src/craft_command.cpp src/crafting.cpp
 msgid " (nearby)"
@@ -290195,10 +290246,6 @@ msgstr "Если текущая погода не изменится, то ра�
 msgid "At your skill level, it will take around %d minutes to light a fire."
 msgstr "С вашим уровнем навыка разведение огня займёт %d минут."
 
-#: src/iuse_actor.cpp src/player.cpp
-msgid "You do not have that item."
-msgstr "У вас нет этого предмета."
-
 #: src/iuse_actor.cpp
 #, c-format
 msgid "Can't salvage anything from %s."
@@ -304338,43 +304385,14 @@ msgstr ""
 "ускорения отрисовки в режиме ASCII. Требует перезапуска."
 
 #: src/options.cpp
-msgid "Scaling mode"
-msgstr "Режим масштабирования"
+msgid "Display scaling factor"
+msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Sets the scaling mode, 'none' ( default ) displays at the game's native "
-"resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
-"provides high-quality scaling."
+"Factor by which to scale the game display, 1x means no scaling.  Requires "
+"restart."
 msgstr ""
-"Устанавливает режим масштабирования: «нет» — выводит игру в нативном "
-"разрешении, «ближайший» — низкокачественное, но быстрое масштабирование, "
-"«линейное» — высококачественное масштабирование."
-
-#. ~ Do not scale the game image to the window size.
-#: src/options.cpp
-msgid "No scaling"
-msgstr "нет"
-
-#. ~ An algorithm for image scaling.
-#: src/options.cpp
-msgid "Nearest neighbor"
-msgstr "ближайший"
-
-#. ~ An algorithm for image scaling.
-#: src/options.cpp
-msgid "Linear filtering"
-msgstr "линейное"
-
-#: src/options.cpp
-msgid "Scaling factor"
-msgstr "Коэффициент масштабирования"
-
-#: src/options.cpp
-msgid "Factor by which to scale the display.  Requires restart."
-msgstr ""
-"Указывает, насколько будет увеличено разрешение игры (текст и графика). "
-"Требует перезапуска."
 
 #: src/options.cpp
 msgid "1x"
@@ -304389,17 +304407,12 @@ msgid "4x"
 msgstr "4x"
 
 #: src/options.cpp
-msgid "Report unused JSON fields"
-msgstr "Сообщить о неиспользуемых полях JSON"
+msgid "Strict JSON checks"
+msgstr ""
 
 #: src/options.cpp
-msgid ""
-"If false, unused JSON fields are silently ignored.  Enabling this will make "
-"it easier to spot mistakes or typos during modding."
+msgid "If true, will show additional warnings for JSON data correctness."
 msgstr ""
-"Если выключено, неиспользуемые поля JSON бесшумно игнорируются. Включение "
-"этого параметра упростит обнаружение ошибок или опечаток во время разработки"
-" модификаций.."
 
 #: src/options.cpp
 msgid "Force tileset reload"
@@ -306728,36 +306741,6 @@ msgstr "<npcname> отскакивает от %s!"
 msgid "You bounce off %s!"
 msgstr "Вы отскакиваете от %s!"
 
-#: src/player.cpp
-#, c-format
-msgid "Drink %s from your hands?"
-msgstr "Пить %s прямо из рук?"
-
-#: src/player.cpp
-#, c-format
-msgid "You can't eat your %s."
-msgstr "Вы не можете съесть %s."
-
-#: src/player.cpp
-#, c-format
-msgid "You are now wielding an empty %s."
-msgstr "Теперь у вас в качестве оружия пустая %s."
-
-#: src/player.cpp
-#, c-format
-msgid "You are now wearing an empty %s."
-msgstr "Вы теперь носите пустой %s."
-
-#: src/player.cpp
-#, c-format
-msgid "You drop the empty %s."
-msgstr "Вы выбрасываете пустой %s."
-
-#: src/player.cpp
-#, c-format
-msgid "%c - %d empty %s"
-msgstr "%c - %d %s (пусто)"
-
 #: src/player.cpp src/veh_interact.cpp
 #, c-format
 msgid "Refill %s"
@@ -307121,28 +307104,6 @@ msgstr ""
 #, c-format
 msgid "This task is too simple to train your %s beyond %d."
 msgstr "Эта задача слишком проста для тренировки навыка (%s) выше %d уровня."
-
-#: src/player.cpp
-msgid "Wield what?"
-msgstr "Что взять в руки?"
-
-#: src/player.cpp
-msgid "Time seems to slow down and you instinctively dodge!"
-msgstr "Время как будто замедлилось и вы инстинктивно увернулись!"
-
-#: src/player.cpp
-#, c-format
-msgid "%s dodges… so fast!"
-msgstr "%s уворачивается… Какой быстрый!"
-
-#: src/player.cpp
-msgid "You try to dodge but there's no room!"
-msgstr "Вы пытаетесь увернуться, но не хватает места!"
-
-#: src/player.cpp
-#, c-format
-msgid "%s tries to dodge but there's no room!"
-msgstr "%s пытается увернуться, но не хватает места!"
 
 #: src/player_activity.cpp
 #, c-format

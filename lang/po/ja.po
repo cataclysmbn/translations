@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-12-19 21:56+0000\n"
+"POT-Creation-Date: 2023-01-06 00:39+0000\n"
 "Last-Translator: Pigmentblue15, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -218075,6 +218075,28 @@ msgstr "%sが傷みます！"
 msgid "Your %s aches."
 msgstr "%sが鈍く傷みます。"
 
+#: src/character_functions.cpp
+msgid "Wield what?"
+msgstr "何を装備しますか？"
+
+#: src/character_functions.cpp
+msgid "Time seems to slow down and you instinctively dodge!"
+msgstr "時間の流れが遅くなり、本能的に回避しました！"
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s dodges… so fast!"
+msgstr "%sが回避しました...ものすごい素早さです！"
+
+#: src/character_functions.cpp
+msgid "You try to dodge but there's no room!"
+msgstr "回避を試みました...しかし、回避を試みるだけの空間が存在しませんでした！"
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s tries to dodge but there's no room!"
+msgstr "%sは回避を試みました...しかし、回避を試みるだけの空間が存在しませんでした！"
+
 #: src/character_martial_arts.cpp
 #, c-format
 msgid "You have learned %s from extensive practice with the CQB Bionic."
@@ -219409,11 +219431,11 @@ msgstr "この状態では食べられません。"
 msgid "This is full of dirt after being on the ground."
 msgstr "地面に置いたアイテムが汚れています。"
 
-#: src/consumption.cpp src/iuse.cpp src/iuse_actor.cpp src/player.cpp
+#: src/consumption.cpp src/iuse.cpp src/iuse_actor.cpp
 msgid "You can't do that while underwater."
 msgstr "水中でその行動はできません。"
 
-#: src/consumption.cpp src/player.cpp
+#: src/consumption.cpp
 #, c-format
 msgid "You need a %s to consume that!"
 msgstr "これを摂取するには%sが必要です！"
@@ -219723,6 +219745,35 @@ msgstr[0] "%1$iの%2$sを%3$sに充填しました。"
 msgid "<npcname> load %1$i charge of %2$s in their %3$s."
 msgid_plural "<npcname> load %1$i charges of %2$s in their %3$s."
 msgstr[0] "<npcname>は%1$iの%2$sを%3$sに充填しました。"
+
+#: src/consumption.cpp src/iuse_actor.cpp src/player.cpp
+msgid "You do not have that item."
+msgstr "そのアイテムを所持していません。"
+
+#: src/consumption.cpp
+#, c-format
+msgid "You can't eat your %s."
+msgstr "%sを食べられません。"
+
+#: src/consumption.cpp
+#, c-format
+msgid "You are now wielding an empty %s."
+msgstr "空の%sを装備しています。"
+
+#: src/consumption.cpp
+#, c-format
+msgid "You are now wearing an empty %s."
+msgstr "空の%sを着用しています。"
+
+#: src/consumption.cpp
+#, c-format
+msgid "You drop the empty %s."
+msgstr "空の%sを落としました。"
+
+#: src/consumption.cpp
+#, c-format
+msgid "%c - %d empty %s"
+msgstr "%c - %d 空の%s"
 
 #: src/craft_command.cpp src/crafting.cpp
 msgid " (nearby)"
@@ -237560,10 +237611,6 @@ msgstr "天候が変わらなければ、点火におよそ%d分かかります�
 msgid "At your skill level, it will take around %d minutes to light a fire."
 msgstr "現在のスキルレベルでは点火に約%d分かかります。"
 
-#: src/iuse_actor.cpp src/player.cpp
-msgid "You do not have that item."
-msgstr "そのアイテムを所持していません。"
-
 #: src/iuse_actor.cpp
 #, c-format
 msgid "Can't salvage anything from %s."
@@ -251217,40 +251264,14 @@ msgid ""
 msgstr "trueにすると、色分けされたテクスチャを使用してASCII描写を高速化します。反映には再起動が必要です。"
 
 #: src/options.cpp
-msgid "Scaling mode"
-msgstr "拡大縮小モード"
+msgid "Display scaling factor"
+msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Sets the scaling mode, 'none' ( default ) displays at the game's native "
-"resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
-"provides high-quality scaling."
+"Factor by which to scale the game display, 1x means no scaling.  Requires "
+"restart."
 msgstr ""
-"拡大縮小モードを設定します。「無効」 (初期設定) でゲームのネイティブ解像度で表示、「最近傍補間」 で低品質かつ高速な拡大縮小表示、「リニアフィルタ」"
-" で高品質な拡大縮小表示になります。"
-
-#. ~ Do not scale the game image to the window size.
-#: src/options.cpp
-msgid "No scaling"
-msgstr "無効"
-
-#. ~ An algorithm for image scaling.
-#: src/options.cpp
-msgid "Nearest neighbor"
-msgstr "最近傍補間"
-
-#. ~ An algorithm for image scaling.
-#: src/options.cpp
-msgid "Linear filtering"
-msgstr "リニアフィルタ"
-
-#: src/options.cpp
-msgid "Scaling factor"
-msgstr "基準倍率"
-
-#: src/options.cpp
-msgid "Factor by which to scale the display.  Requires restart."
-msgstr "拡大/縮小表示の倍率を設定します。反映には再起動が必要です。"
 
 #: src/options.cpp
 msgid "1x"
@@ -251265,13 +251286,11 @@ msgid "4x"
 msgstr "4x"
 
 #: src/options.cpp
-msgid "Report unused JSON fields"
+msgid "Strict JSON checks"
 msgstr ""
 
 #: src/options.cpp
-msgid ""
-"If false, unused JSON fields are silently ignored.  Enabling this will make "
-"it easier to spot mistakes or typos during modding."
+msgid "If true, will show additional warnings for JSON data correctness."
 msgstr ""
 
 #: src/options.cpp
@@ -253457,36 +253476,6 @@ msgstr "<npcname>が%sを弾き返しました！"
 msgid "You bounce off %s!"
 msgstr "%sが跳ね返りました！"
 
-#: src/player.cpp
-#, c-format
-msgid "Drink %s from your hands?"
-msgstr "%sを手で掬って飲みますか？"
-
-#: src/player.cpp
-#, c-format
-msgid "You can't eat your %s."
-msgstr "%sを食べられません。"
-
-#: src/player.cpp
-#, c-format
-msgid "You are now wielding an empty %s."
-msgstr "空の%sを装備しています。"
-
-#: src/player.cpp
-#, c-format
-msgid "You are now wearing an empty %s."
-msgstr "空の%sを着用しています。"
-
-#: src/player.cpp
-#, c-format
-msgid "You drop the empty %s."
-msgstr "空の%sを落としました。"
-
-#: src/player.cpp
-#, c-format
-msgid "%c - %d empty %s"
-msgstr "%c - %d 空の%s"
-
 #: src/player.cpp src/veh_interact.cpp
 #, c-format
 msgid "Refill %s"
@@ -253840,28 +253829,6 @@ msgstr "このレベルの%s作業が簡単になってきたと感じていま�
 #, c-format
 msgid "This task is too simple to train your %s beyond %d."
 msgstr "この作業は%sスキルをレベル%d以上に上昇させるには簡単過ぎます。"
-
-#: src/player.cpp
-msgid "Wield what?"
-msgstr "何を装備しますか？"
-
-#: src/player.cpp
-msgid "Time seems to slow down and you instinctively dodge!"
-msgstr "時間の流れが遅くなり、本能的に回避しました！"
-
-#: src/player.cpp
-#, c-format
-msgid "%s dodges… so fast!"
-msgstr "%sが回避しました...ものすごい素早さです！"
-
-#: src/player.cpp
-msgid "You try to dodge but there's no room!"
-msgstr "回避を試みました...しかし、回避を試みるだけの空間が存在しませんでした！"
-
-#: src/player.cpp
-#, c-format
-msgid "%s tries to dodge but there's no room!"
-msgstr "%sは回避を試みました...しかし、回避を試みるだけの空間が存在しませんでした！"
 
 #: src/player_activity.cpp
 #, c-format

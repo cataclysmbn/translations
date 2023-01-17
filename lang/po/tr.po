@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-12-19 21:56+0000\n"
+"POT-Creation-Date: 2023-01-06 00:39+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2020\n"
 "Language-Team: Turkish (https://www.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -221318,6 +221318,28 @@ msgstr ""
 msgid "Your %s aches."
 msgstr ""
 
+#: src/character_functions.cpp
+msgid "Wield what?"
+msgstr ""
+
+#: src/character_functions.cpp
+msgid "Time seems to slow down and you instinctively dodge!"
+msgstr ""
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s dodges… so fast!"
+msgstr ""
+
+#: src/character_functions.cpp
+msgid "You try to dodge but there's no room!"
+msgstr ""
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s tries to dodge but there's no room!"
+msgstr ""
+
 #: src/character_martial_arts.cpp
 #, c-format
 msgid "You have learned %s from extensive practice with the CQB Bionic."
@@ -222601,11 +222623,11 @@ msgstr ""
 msgid "This is full of dirt after being on the ground."
 msgstr ""
 
-#: src/consumption.cpp src/iuse.cpp src/iuse_actor.cpp src/player.cpp
+#: src/consumption.cpp src/iuse.cpp src/iuse_actor.cpp
 msgid "You can't do that while underwater."
 msgstr ""
 
-#: src/consumption.cpp src/player.cpp
+#: src/consumption.cpp
 #, c-format
 msgid "You need a %s to consume that!"
 msgstr ""
@@ -222921,6 +222943,35 @@ msgid "<npcname> load %1$i charge of %2$s in their %3$s."
 msgid_plural "<npcname> load %1$i charges of %2$s in their %3$s."
 msgstr[0] ""
 msgstr[1] ""
+
+#: src/consumption.cpp src/iuse_actor.cpp src/player.cpp
+msgid "You do not have that item."
+msgstr ""
+
+#: src/consumption.cpp
+#, c-format
+msgid "You can't eat your %s."
+msgstr ""
+
+#: src/consumption.cpp
+#, c-format
+msgid "You are now wielding an empty %s."
+msgstr ""
+
+#: src/consumption.cpp
+#, c-format
+msgid "You are now wearing an empty %s."
+msgstr ""
+
+#: src/consumption.cpp
+#, c-format
+msgid "You drop the empty %s."
+msgstr ""
+
+#: src/consumption.cpp
+#, c-format
+msgid "%c - %d empty %s"
+msgstr ""
 
 #: src/craft_command.cpp src/crafting.cpp
 msgid " (nearby)"
@@ -240399,10 +240450,6 @@ msgstr ""
 msgid "At your skill level, it will take around %d minutes to light a fire."
 msgstr ""
 
-#: src/iuse_actor.cpp src/player.cpp
-msgid "You do not have that item."
-msgstr ""
-
 #: src/iuse_actor.cpp
 #, c-format
 msgid "Can't salvage anything from %s."
@@ -253852,37 +253899,13 @@ msgid ""
 msgstr ""
 
 #: src/options.cpp
-msgid "Scaling mode"
+msgid "Display scaling factor"
 msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Sets the scaling mode, 'none' ( default ) displays at the game's native "
-"resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
-"provides high-quality scaling."
-msgstr ""
-
-#. ~ Do not scale the game image to the window size.
-#: src/options.cpp
-msgid "No scaling"
-msgstr ""
-
-#. ~ An algorithm for image scaling.
-#: src/options.cpp
-msgid "Nearest neighbor"
-msgstr ""
-
-#. ~ An algorithm for image scaling.
-#: src/options.cpp
-msgid "Linear filtering"
-msgstr ""
-
-#: src/options.cpp
-msgid "Scaling factor"
-msgstr ""
-
-#: src/options.cpp
-msgid "Factor by which to scale the display.  Requires restart."
+"Factor by which to scale the game display, 1x means no scaling.  Requires "
+"restart."
 msgstr ""
 
 #: src/options.cpp
@@ -253898,13 +253921,11 @@ msgid "4x"
 msgstr ""
 
 #: src/options.cpp
-msgid "Report unused JSON fields"
+msgid "Strict JSON checks"
 msgstr ""
 
 #: src/options.cpp
-msgid ""
-"If false, unused JSON fields are silently ignored.  Enabling this will make "
-"it easier to spot mistakes or typos during modding."
+msgid "If true, will show additional warnings for JSON data correctness."
 msgstr ""
 
 #: src/options.cpp
@@ -256061,36 +256082,6 @@ msgstr ""
 msgid "You bounce off %s!"
 msgstr ""
 
-#: src/player.cpp
-#, c-format
-msgid "Drink %s from your hands?"
-msgstr ""
-
-#: src/player.cpp
-#, c-format
-msgid "You can't eat your %s."
-msgstr ""
-
-#: src/player.cpp
-#, c-format
-msgid "You are now wielding an empty %s."
-msgstr ""
-
-#: src/player.cpp
-#, c-format
-msgid "You are now wearing an empty %s."
-msgstr ""
-
-#: src/player.cpp
-#, c-format
-msgid "You drop the empty %s."
-msgstr ""
-
-#: src/player.cpp
-#, c-format
-msgid "%c - %d empty %s"
-msgstr ""
-
 #: src/player.cpp src/veh_interact.cpp
 #, c-format
 msgid "Refill %s"
@@ -256443,28 +256434,6 @@ msgstr ""
 #: src/player.cpp
 #, c-format
 msgid "This task is too simple to train your %s beyond %d."
-msgstr ""
-
-#: src/player.cpp
-msgid "Wield what?"
-msgstr ""
-
-#: src/player.cpp
-msgid "Time seems to slow down and you instinctively dodge!"
-msgstr ""
-
-#: src/player.cpp
-#, c-format
-msgid "%s dodges… so fast!"
-msgstr ""
-
-#: src/player.cpp
-msgid "You try to dodge but there's no room!"
-msgstr ""
-
-#: src/player.cpp
-#, c-format
-msgid "%s tries to dodge but there's no room!"
 msgstr ""
 
 #: src/player_activity.cpp

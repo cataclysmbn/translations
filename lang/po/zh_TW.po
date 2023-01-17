@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2022-12-19 21:56+0000\n"
+"POT-Creation-Date: 2023-01-06 00:39+0000\n"
 "Last-Translator: 摸鱼哥, 2022\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -216994,6 +216994,28 @@ msgstr "你的 %s 很痛!"
 msgid "Your %s aches."
 msgstr "你的 %s 發疼。"
 
+#: src/character_functions.cpp
+msgid "Wield what?"
+msgstr "手持什麼?"
+
+#: src/character_functions.cpp
+msgid "Time seems to slow down and you instinctively dodge!"
+msgstr "時間好像慢了下來一樣而你本能地躲開了!"
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s dodges… so fast!"
+msgstr "%s 躲開了… 快如閃電！"
+
+#: src/character_functions.cpp
+msgid "You try to dodge but there's no room!"
+msgstr "你試著躲開, 但是這裡沒有空間了!"
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s tries to dodge but there's no room!"
+msgstr "%s 試著躲開, 但是那裡沒有空間了!"
+
 #: src/character_martial_arts.cpp
 #, c-format
 msgid "You have learned %s from extensive practice with the CQB Bionic."
@@ -218325,11 +218347,11 @@ msgstr "它目前的狀態看起來不能食用。"
 msgid "This is full of dirt after being on the ground."
 msgstr "它被放到地上後沾滿了泥土。"
 
-#: src/consumption.cpp src/iuse.cpp src/iuse_actor.cpp src/player.cpp
+#: src/consumption.cpp src/iuse.cpp src/iuse_actor.cpp
 msgid "You can't do that while underwater."
 msgstr "你無法在水下那麼做。"
 
-#: src/consumption.cpp src/player.cpp
+#: src/consumption.cpp
 #, c-format
 msgid "You need a %s to consume that!"
 msgstr "你需要一個 %s 才能食用它! "
@@ -218639,6 +218661,35 @@ msgstr[0] "你將 %1$i 單位的 %2$s 裝入你的 %3$s。"
 msgid "<npcname> load %1$i charge of %2$s in their %3$s."
 msgid_plural "<npcname> load %1$i charges of %2$s in their %3$s."
 msgstr[0] "<npcname> 將 %1$i 單位的 %2$s 裝入你的 %3$s。"
+
+#: src/consumption.cpp src/iuse_actor.cpp src/player.cpp
+msgid "You do not have that item."
+msgstr "你沒有那個物品。"
+
+#: src/consumption.cpp
+#, c-format
+msgid "You can't eat your %s."
+msgstr "你不能吃你的 %s。"
+
+#: src/consumption.cpp
+#, c-format
+msgid "You are now wielding an empty %s."
+msgstr "你現在拿著空的 %s。"
+
+#: src/consumption.cpp
+#, c-format
+msgid "You are now wearing an empty %s."
+msgstr "你現在穿戴著一個空的 %s。"
+
+#: src/consumption.cpp
+#, c-format
+msgid "You drop the empty %s."
+msgstr "你丟棄空的 %s。"
+
+#: src/consumption.cpp
+#, c-format
+msgid "%c - %d empty %s"
+msgstr "%c - %d 空的 %s"
 
 #: src/craft_command.cpp src/crafting.cpp
 msgid " (nearby)"
@@ -236478,10 +236529,6 @@ msgstr "依照目前的天氣情況, 需要大約 %d 分鐘來生火。"
 msgid "At your skill level, it will take around %d minutes to light a fire."
 msgstr "依照你的技能等級, 需要大約 %d 分鐘來生火。"
 
-#: src/iuse_actor.cpp src/player.cpp
-msgid "You do not have that item."
-msgstr "你沒有那個物品。"
-
 #: src/iuse_actor.cpp
 #, c-format
 msgid "Can't salvage anything from %s."
@@ -250133,38 +250180,14 @@ msgid ""
 msgstr "如果為是，則嘗試使用顏色調製紋理來加速ASCII繪圖。 需要重啟遊戲程式。"
 
 #: src/options.cpp
-msgid "Scaling mode"
-msgstr "縮放模式"
+msgid "Display scaling factor"
+msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Sets the scaling mode, 'none' ( default ) displays at the game's native "
-"resolution, 'nearest'  uses low-quality but fast scaling, and 'linear' "
-"provides high-quality scaling."
-msgstr "設定縮放模式。 [停用縮放] 使用遊戲預設解析度。 [近鄰取樣] 使用低品質但快速的縮放。 [線性過濾] 提供高品質縮放。"
-
-#. ~ Do not scale the game image to the window size.
-#: src/options.cpp
-msgid "No scaling"
-msgstr "停用縮放"
-
-#. ~ An algorithm for image scaling.
-#: src/options.cpp
-msgid "Nearest neighbor"
-msgstr "近鄰取樣"
-
-#. ~ An algorithm for image scaling.
-#: src/options.cpp
-msgid "Linear filtering"
-msgstr "線性過濾"
-
-#: src/options.cpp
-msgid "Scaling factor"
-msgstr "縮放比率"
-
-#: src/options.cpp
-msgid "Factor by which to scale the display.  Requires restart."
-msgstr "設定遊戲畫面的縮放比率。需要重新啟動遊戲。"
+"Factor by which to scale the game display, 1x means no scaling.  Requires "
+"restart."
+msgstr ""
 
 #: src/options.cpp
 msgid "1x"
@@ -250179,14 +250202,12 @@ msgid "4x"
 msgstr "4x"
 
 #: src/options.cpp
-msgid "Report unused JSON fields"
-msgstr "报告未使用的JSON字段"
+msgid "Strict JSON checks"
+msgstr ""
 
 #: src/options.cpp
-msgid ""
-"If false, unused JSON fields are silently ignored.  Enabling this will make "
-"it easier to spot mistakes or typos during modding."
-msgstr "如果关闭，未使用的JSON字段会被默默地忽略。 启用这个功能将使我们在修改过程中更容易发现错误或错字。"
+msgid "If true, will show additional warnings for JSON data correctness."
+msgstr ""
 
 #: src/options.cpp
 msgid "Force tileset reload"
@@ -252360,36 +252381,6 @@ msgstr "<npcname> 彈開了 %s!"
 msgid "You bounce off %s!"
 msgstr "你彈開了 %s!"
 
-#: src/player.cpp
-#, c-format
-msgid "Drink %s from your hands?"
-msgstr "用手把 %s 捧起來喝嗎?"
-
-#: src/player.cpp
-#, c-format
-msgid "You can't eat your %s."
-msgstr "你不能吃你的 %s。"
-
-#: src/player.cpp
-#, c-format
-msgid "You are now wielding an empty %s."
-msgstr "你現在拿著空的 %s。"
-
-#: src/player.cpp
-#, c-format
-msgid "You are now wearing an empty %s."
-msgstr "你現在穿戴著一個空的 %s。"
-
-#: src/player.cpp
-#, c-format
-msgid "You drop the empty %s."
-msgstr "你丟棄空的 %s。"
-
-#: src/player.cpp
-#, c-format
-msgid "%c - %d empty %s"
-msgstr "%c - %d 空的 %s"
-
 #: src/player.cpp src/veh_interact.cpp
 #, c-format
 msgid "Refill %s"
@@ -252743,28 +252734,6 @@ msgstr "你覺得在這個等級的 %s 工作變得沒挑戰性了。"
 #, c-format
 msgid "This task is too simple to train your %s beyond %d."
 msgstr "這事情太簡單而無法讓你訓練 %s 超過 %d。"
-
-#: src/player.cpp
-msgid "Wield what?"
-msgstr "手持什麼?"
-
-#: src/player.cpp
-msgid "Time seems to slow down and you instinctively dodge!"
-msgstr "時間好像慢了下來一樣而你本能地躲開了!"
-
-#: src/player.cpp
-#, c-format
-msgid "%s dodges… so fast!"
-msgstr "%s 躲開了… 快如閃電！"
-
-#: src/player.cpp
-msgid "You try to dodge but there's no room!"
-msgstr "你試著躲開, 但是這裡沒有空間了!"
-
-#: src/player.cpp
-#, c-format
-msgid "%s tries to dodge but there's no room!"
-msgstr "%s 試著躲開, 但是那裡沒有空間了!"
 
 #: src/player_activity.cpp
 #, c-format
