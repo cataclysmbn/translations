@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-03-17 05:47+0000\n"
+"POT-Creation-Date: 2023-03-24 09:48+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2022\n"
 "Language-Team: French (https://www.transifex.com/bn-team/teams/113585/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -9758,6 +9758,10 @@ msgstr "Utiliser un holster"
 #: data/json/item_actions.json
 msgid "Saw down barrel"
 msgstr "Scier canon"
+
+#: data/json/item_actions.json
+msgid "Saw down stock"
+msgstr ""
 
 #. ~ Use action menu_text for {'str': 'packed M72 LAW'}.
 #. ~ Use action menu_text for {'str': 'glowstick'}.
@@ -41987,6 +41991,21 @@ msgstr[2] ""
 msgid ""
 "Some type of advanced data storage device.  Useful for storing very large "
 "amounts of information."
+msgstr ""
+
+#: data/json/items/generic.json
+msgid "FEMA data"
+msgid_plural "FEMA data"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str_sp': 'FEMA data'}
+#: data/json/items/generic.json
+msgid ""
+"Evacuation plans, disaster risk projections, personnel lists and last minute"
+" communications from just before the end, all scrubbed from FEMA servers and"
+" stored in an external hdd."
 msgstr ""
 
 #: data/json/items/generic.json
@@ -93769,6 +93788,20 @@ msgid ""
 "A stock accessory for sniper rifles and even DMRs considerably improving eye"
 " relief efficiency, prevents slipping, and reduces recoil to the neck and "
 "cheek."
+msgstr ""
+
+#: data/json/items/gunmod/stock.json
+msgid "shortened stock"
+msgid_plural "shortened stocks"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: data/json/items/gunmod/stock.json
+msgid ""
+"Removing the stock results in markedly reduced accuracy and recoil handling,"
+" but also greatly improves the ease with which the weapon can be carried and"
+" wielded."
 msgstr ""
 
 #: data/json/items/gunmod/underbarrel.json
@@ -158451,10 +158484,10 @@ msgid "This area is covered with a single type of trees."
 msgstr ""
 
 #: data/json/overmap/map_extras.json
-msgid "Shrubberry"
+msgid "Shrubbery"
 msgstr ""
 
-#. ~ Description for Shrubberry
+#. ~ Description for Shrubbery
 #: data/json/overmap/map_extras.json
 msgid "This area is covered with a single type of shrubs."
 msgstr ""
@@ -225338,17 +225371,6 @@ msgid ""
 "disappear."
 msgstr ""
 
-#: data/mods/dda/modinfo.json
-msgid "Bright Nights (wrapper)"
-msgstr ""
-
-#. ~ Description for Bright Nights (wrapper)
-#: data/mods/dda/modinfo.json
-msgid ""
-"Compatibility wrapper for mods and saves that use old core content id "
-"format.  If you're a player, ignore this."
-msgstr ""
-
 #: data/mods/desert_region/desert_insect_spider.json
 msgid "giant scorpion"
 msgid_plural "giant scorpions"
@@ -238360,6 +238382,16 @@ msgstr "Recette pas encore apprise"
 msgid "Written in: %s"
 msgstr "Écrit dans: %s"
 
+#: src/crafting_gui.cpp src/monster.cpp
+#, c-format
+msgid "Origin: %s"
+msgstr ""
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "ID: %s"
+msgstr ""
+
 #: src/crafting_gui.cpp
 #, c-format
 msgid "Primary skill: %s"
@@ -245425,6 +245457,10 @@ msgid "Choose a weapon to use your %s on"
 msgstr ""
 
 #: src/game_inventory.cpp
+msgid "Saw stock"
+msgstr ""
+
+#: src/game_inventory.cpp
 msgid "Multidrop"
 msgstr "Déposer"
 
@@ -251450,6 +251486,10 @@ msgid "sawn-off "
 msgstr "scié "
 
 #: src/item.cpp
+msgid "pistol "
+msgstr ""
+
+#: src/item.cpp
 msgctxt "Adjective, as in diamond katana"
 msgid "diamond"
 msgstr "diamanté"
@@ -256316,6 +256356,31 @@ msgstr ""
 
 #: src/iuse_actor.cpp
 msgid "Can't saw off modified barrels."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "You saw down the stock of your %s."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "The stock is already sawn-off."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "You can't saw anything off this."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Can't cut off modified stocks."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "This doesn't have a stock."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Can't cut off non-wooden stocks."
 msgstr ""
 
 #: src/iuse_actor.cpp
@@ -264574,11 +264639,6 @@ msgstr ""
 #: src/monster.cpp
 msgid " Difficulty "
 msgstr " Difficulté "
-
-#: src/monster.cpp
-#, c-format
-msgid "Origin: %s"
-msgstr ""
 
 #: src/monster.cpp src/npc.cpp
 msgid "Aware of your presence!"

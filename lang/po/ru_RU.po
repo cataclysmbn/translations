@@ -24,7 +24,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-03-17 05:47+0000\n"
+"POT-Creation-Date: 2023-03-24 09:48+0000\n"
 "Last-Translator: Izergaer, 2023\n"
 "Language-Team: Russian (Russia) (https://www.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -10944,6 +10944,10 @@ msgstr "Использовать кобуру"
 #: data/json/item_actions.json
 msgid "Saw down barrel"
 msgstr "Обрезать ствол"
+
+#: data/json/item_actions.json
+msgid "Saw down stock"
+msgstr ""
 
 #. ~ Use action menu_text for {'str': 'packed M72 LAW'}.
 #. ~ Use action menu_text for {'str': 'glowstick'}.
@@ -22935,13 +22939,13 @@ msgstr "Дно шахты"
 #: data/json/scenarios.json
 msgctxt "scenario_male"
 msgid "Last Flight"
-msgstr ""
+msgstr "Последний полёт"
 
 #. ~ Name for scenario 'Last Flight' for a female character
 #: data/json/scenarios.json
 msgctxt "scenario_female"
 msgid "Last Flight"
-msgstr ""
+msgstr "Последний полёт"
 
 #. ~ Description for scenario 'Last Flight' for a male character.
 #: data/json/scenarios.json
@@ -46581,6 +46585,22 @@ msgid ""
 msgstr ""
 "Высокотехнологичное устройство хранения данных. Может содержать огромные "
 "объёмы информации."
+
+#: data/json/items/generic.json
+msgid "FEMA data"
+msgid_plural "FEMA data"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str_sp': 'FEMA data'}
+#: data/json/items/generic.json
+msgid ""
+"Evacuation plans, disaster risk projections, personnel lists and last minute"
+" communications from just before the end, all scrubbed from FEMA servers and"
+" stored in an external hdd."
+msgstr ""
 
 #: data/json/items/generic.json
 msgid "candlestick"
@@ -105488,6 +105508,21 @@ msgstr ""
 "Стандартный аксессуар для снайперских и марксманских винтовок, значительно "
 "улучшающий точность, предотвращающий соскальзывание и снижающий воздействие "
 "отдачи на шею и щёку."
+
+#: data/json/items/gunmod/stock.json
+msgid "shortened stock"
+msgid_plural "shortened stocks"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: data/json/items/gunmod/stock.json
+msgid ""
+"Removing the stock results in markedly reduced accuracy and recoil handling,"
+" but also greatly improves the ease with which the weapon can be carried and"
+" wielded."
+msgstr ""
 
 #: data/json/items/gunmod/underbarrel.json
 msgid "bipod"
@@ -180066,10 +180101,10 @@ msgid "This area is covered with a single type of trees."
 msgstr "Здесь растёт один тип деревьев."
 
 #: data/json/overmap/map_extras.json
-msgid "Shrubberry"
-msgstr "Кусты"
+msgid "Shrubbery"
+msgstr ""
 
-#. ~ Description for Shrubberry
+#. ~ Description for Shrubbery
 #: data/json/overmap/map_extras.json
 msgid "This area is covered with a single type of shrubs."
 msgstr "Здесь растёт один тип кустов."
@@ -259079,20 +259114,6 @@ msgstr ""
 "зомби-муви. Если вы включили этот мод в экспериментальной версии, некоторые "
 "предметы могут исчезнуть."
 
-#: data/mods/dda/modinfo.json
-msgid "Bright Nights (wrapper)"
-msgstr "Bright Nights (обёртка)"
-
-#. ~ Description for Bright Nights (wrapper)
-#: data/mods/dda/modinfo.json
-msgid ""
-"Compatibility wrapper for mods and saves that use old core content id "
-"format.  If you're a player, ignore this."
-msgstr ""
-"Обёртка совместимости для модов и сохранений, которые используют старый "
-"формат идентификатора основного контента игры. Если вы просто игрок, можете "
-"это игнорировать."
-
 #: data/mods/desert_region/desert_insect_spider.json
 msgid "giant scorpion"
 msgid_plural "giant scorpions"
@@ -265328,7 +265349,7 @@ msgstr "Плащ"
 
 #: src/artifact.cpp
 msgid "Mask"
-msgstr "Маскировочный шлем"
+msgstr "Маска"
 
 #: src/artifact.cpp
 msgid "Helm"
@@ -272776,6 +272797,16 @@ msgstr "Рецепт ещё не запомнен"
 #, c-format
 msgid "Written in: %s"
 msgstr "Записан в: %s"
+
+#: src/crafting_gui.cpp src/monster.cpp
+#, c-format
+msgid "Origin: %s"
+msgstr "Источник: %s"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "ID: %s"
+msgstr ""
 
 #: src/crafting_gui.cpp
 #, c-format
@@ -280273,6 +280304,10 @@ msgid "Choose a weapon to use your %s on"
 msgstr "Выберите оружие, на котором ходите использовать %s"
 
 #: src/game_inventory.cpp
+msgid "Saw stock"
+msgstr ""
+
+#: src/game_inventory.cpp
 msgid "Multidrop"
 msgstr "Выбросить несколько"
 
@@ -286542,6 +286577,10 @@ msgid "sawn-off "
 msgstr "обрез "
 
 #: src/item.cpp
+msgid "pistol "
+msgstr ""
+
+#: src/item.cpp
 msgctxt "Adjective, as in diamond katana"
 msgid "diamond"
 msgstr "алмазн."
@@ -291530,6 +291569,31 @@ msgstr "Ствол уже обрезан."
 #: src/iuse_actor.cpp
 msgid "Can't saw off modified barrels."
 msgstr "Невозможно обрезать модифицированные стволы."
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "You saw down the stock of your %s."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "The stock is already sawn-off."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "You can't saw anything off this."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Can't cut off modified stocks."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "This doesn't have a stock."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Can't cut off non-wooden stocks."
+msgstr ""
 
 #: src/iuse_actor.cpp
 msgid "You can't install bionics while mounted."
@@ -300119,11 +300183,6 @@ msgstr "Вроде еле двигается."
 #: src/monster.cpp
 msgid " Difficulty "
 msgstr " Сложность "
-
-#: src/monster.cpp
-#, c-format
-msgid "Origin: %s"
-msgstr "Источник: %s"
 
 #: src/monster.cpp src/npc.cpp
 msgid "Aware of your presence!"
