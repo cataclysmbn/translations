@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-04-07 14:30+0000\n"
+"POT-Creation-Date: 2023-04-21 15:54+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2022\n"
 "Language-Team: Hungarian (https://app.transifex.com/bn-team/teams/113585/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -2799,9 +2799,11 @@ msgstr "Javító nanobotok"
 #: data/json/bionics.json
 msgid ""
 "Inside your body is a fleet of tiny dormant robots.  While activated they "
-"will flit about your body, you randomly recover 1 HP every 15s, consuming "
-"power and calories only on a success.  It will also slow and eventually stop"
-" any bleeding on your body."
+"will reduce the intensity of one bleed effect every 30 seconds, and heal all"
+" injured body parts by 1 HP (or broken limbs by 1%) every minute if you have"
+" 3 kJ bionic power and 5 kcal per body part.  Broken limbs must still be "
+"splinted (unless you have specific mutations) to benefit.  If you don't have"
+" enough, they will prioritize based on the resources you have."
 msgstr ""
 
 #: data/json/bionics.json
@@ -4164,11 +4166,11 @@ msgstr ""
 msgid "Others"
 msgstr "Egyéb"
 
-#: data/json/construction_category.json data/raw/keybindings.json
+#: data/json/construction_category.json data/raw/keybindings/keybindings.json
 msgid "Favorite"
 msgstr ""
 
-#: data/json/construction_category.json data/raw/keybindings.json
+#: data/json/construction_category.json data/raw/keybindings/keybindings.json
 #: src/construction.cpp src/veh_interact.cpp
 msgid "Filter"
 msgstr "Szűrő"
@@ -10340,7 +10342,7 @@ msgstr ""
 #. 'energy sabers (active)'}.
 #: data/json/item_actions.json data/json/items/tool/explosives.json
 #: data/json/items/tool/lighting.json data/mods/Aftershock/items/weapons.json
-#: data/raw/keybindings.json
+#: data/raw/keybindings/keybindings.json
 msgid "Activate"
 msgstr "Aktiválás"
 
@@ -10409,7 +10411,7 @@ msgstr "Megfordít"
 msgid "Apply"
 msgstr "Alkalmazás"
 
-#: data/json/item_actions.json data/raw/keybindings.json
+#: data/json/item_actions.json data/raw/keybindings/keybindings.json
 msgid "Eat"
 msgstr "Megenni"
 
@@ -10434,7 +10436,7 @@ msgctxt "ECIG"
 msgid "Smoke"
 msgstr "Füst"
 
-#: data/json/item_actions.json data/raw/keybindings.json
+#: data/json/item_actions.json data/raw/keybindings/keybindings.json
 msgid "Take off"
 msgstr "Levesz"
 
@@ -10487,7 +10489,7 @@ msgstr "Kérdezzen"
 msgid "Play"
 msgstr "(Le)játszás"
 
-#: data/json/item_actions.json data/raw/keybindings.json
+#: data/json/item_actions.json data/raw/keybindings/keybindings.json
 #: src/game_inventory.cpp
 msgid "Read"
 msgstr "Olvasás"
@@ -10680,7 +10682,7 @@ msgstr "Víztisztítás"
 msgid "Check weather information"
 msgstr "Időjárás előrejelzés"
 
-#: data/json/item_actions.json data/raw/keybindings.json
+#: data/json/item_actions.json data/raw/keybindings/keybindings.json
 msgid "Reload"
 msgstr "Újratöltés"
 
@@ -19366,6 +19368,34 @@ msgstr ""
 
 #: data/json/professions.json
 msgctxt "profession_male"
+msgid "Hardened Survivor"
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_female"
+msgid "Hardened Survivor"
+msgstr ""
+
+#. ~ Profession (male Hardened Survivor) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"One of the lucky few who escaped the cataclysm, you made a life for yourself"
+" living off nature's bounties and what you could get outside the death traps"
+" of the large cities."
+msgstr ""
+
+#. ~ Profession (female Hardened Survivor) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"One of the lucky few who escaped the cataclysm, you made a life for yourself"
+" living off nature's bounties and what you could get outside the death traps"
+" of the large cities."
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_male"
 msgid "Hardened Scavenger"
 msgstr "Edzett guberáló"
 
@@ -19390,6 +19420,90 @@ msgid ""
 "One of the lucky few who escaped the Cataclysm, you made a life for yourself"
 " on the ruins of others.  Whether by force, guile, or luck, you've obtained "
 "the best gear you could find."
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_male"
+msgid "Road Warrior"
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_female"
+msgid "Road Warrior"
+msgstr ""
+
+#. ~ Profession (male Road Warrior) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You lived by your wheels during the first few months of the apocalypse, now "
+"you're running low on ammo and fuel, and your situation is dire.  You've "
+"been reduced to a scavenger, living off the corpse of the old world."
+msgstr ""
+
+#. ~ Profession (female Road Warrior) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You lived by your wheels during the first few months of the apocalypse, now "
+"you're running low on ammo and fuel, and your situation is dire.  You've "
+"been reduced to a scavenger, living off the corpse of the old world."
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_male"
+msgid "Wasteland Ranger"
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_female"
+msgid "Wasteland Ranger"
+msgstr ""
+
+#. ~ Profession (male Wasteland Ranger) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"If the human race is to survive, the threats facing its existence must be "
+"eliminated, no matter the cost.  If it's hostile, you kill it."
+msgstr ""
+
+#. ~ Profession (female Wasteland Ranger) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"If the human race is to survive, the threats facing its existence must be "
+"eliminated, no matter the cost.  If it's hostile, you kill it."
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_male"
+msgid "Veteran Bandit"
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_female"
+msgid "Veteran Bandit"
+msgstr ""
+
+#. ~ Profession (male Veteran Bandit) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"After the cities exploded there was a whirlwind of looting; a firestorm of "
+"fear.  Men began to feed on men.  On the roads it was a white line "
+"nightmare.  Looting, killing, drug-running, one way or another you'll live "
+"and die on your bike."
+msgstr ""
+
+#. ~ Profession (female Veteran Bandit) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"After the cities exploded there was a whirlwind of looting; a firestorm of "
+"fear.  Men began to feed on men.  On the roads it was a white line "
+"nightmare.  Looting, killing, drug-running, one way or another you'll live "
+"and die on your bike."
 msgstr ""
 
 #: data/json/professions.json
@@ -21209,7 +21323,7 @@ msgstr "Óvóhelyen"
 #: data/json/scenarios.json
 msgctxt "scen_desc_male"
 msgid ""
-"When the apocalypse broke out, you were funneled into a nearby shelter.  "
+"When the apocalypse broke out, you were funneled into the nearest shelter.  "
 "Here you have lived, never leaving, lest the unknowns of the outside world "
 "hurt you.  Supplies are running low, and for the first time since the "
 "Cataclysm, you will be forced to face the outside world."
@@ -21219,7 +21333,7 @@ msgstr ""
 #: data/json/scenarios.json
 msgctxt "scen_desc_female"
 msgid ""
-"When the apocalypse broke out, you were funneled into a nearby shelter.  "
+"When the apocalypse broke out, you were funneled into the nearest shelter.  "
 "Here you have lived, never leaving, lest the unknowns of the outside world "
 "hurt you.  Supplies are running low, and for the first time since the "
 "Cataclysm, you will be forced to face the outside world."
@@ -21249,25 +21363,19 @@ msgstr ""
 #: data/json/scenarios.json
 msgctxt "scen_desc_male"
 msgid ""
-"Sickly and frail, you have spent most of your life in the patient's ward of "
-"the hospital.  When yours was evacuated, you were left behind because you "
-"were a lost cause.  You awaken to the sound of movement around the hospital."
+"Sickly and frail, you have spent years in the patient's ward of the "
+"hospital.  When yours was evacuated, you were left behind because you were a"
+" lost cause.  You awaken to the sound of movement around the hospital."
 msgstr ""
-"Beteges és törékeny vagy, az életed nagy részét a kórházi osztályon "
-"töltötted. Amikor a te kórházadat evakuálták, akkor téged hátrahagytak, "
-"mondván kár lenne veled foglalkozni. A kórház körüli hangokra ébredsz."
 
 #. ~ Description for scenario 'Challenge - Abandoned' for a female character.
 #: data/json/scenarios.json
 msgctxt "scen_desc_female"
 msgid ""
-"Sickly and frail, you have spent most of your life in the patient's ward of "
-"the hospital.  When yours was evacuated, you were left behind because you "
-"were a lost cause.  You awaken to the sound of movement around the hospital."
+"Sickly and frail, you have spent years in the patient's ward of the "
+"hospital.  When yours was evacuated, you were left behind because you were a"
+" lost cause.  You awaken to the sound of movement around the hospital."
 msgstr ""
-"Beteges és törékeny vagy, az életed nagy részét a kórházi osztályon "
-"töltötted. Amikor a te kórházadat evakuálták, akkor téged hátrahagytak, "
-"mondván kár lenne veled foglalkozni. A kórház körüli hangokra ébredsz."
 
 #. ~ Starting location for scenario 'Challenge - Abandoned'.
 #: data/json/scenarios.json
@@ -25152,7 +25260,7 @@ msgstr ""
 msgid "<npcname> swings down hard and executes %s"
 msgstr ""
 
-#: data/json/techniques.json data/raw/keybindings.json
+#: data/json/techniques.json data/raw/keybindings/keybindings.json
 msgid "Throw"
 msgstr ""
 
@@ -26718,6 +26826,11 @@ msgstr ""
 #. ~ weapon category name
 #: data/json/weapon_categories.json
 msgid "Crossbows"
+msgstr ""
+
+#. ~ weapon category name
+#: data/json/weapon_categories.json
+msgid "Hand Crossbows"
 msgstr ""
 
 #. ~ weapon category name
@@ -39106,10 +39219,12 @@ msgstr[1] "Javító nanobot KBM"
 #. ~ Description for {'str': 'Repair Nanobots CBM'}
 #: data/json/items/bionics.json
 msgid ""
-"A fleet of tiny dormant robots.  While activated they will flit about your "
-"body, randomly recovering 1 HP every 15s, consuming power and calories only "
-"on a success.  It will also slow and eventually stop any bleeding on your "
-"body."
+"A fleet of tiny dormant robots.  While activated they will reduce the "
+"intensity of one bleed effect every 30 seconds, and heal all injured body "
+"parts by 1 HP (or broken limbs by 1%) every minute if you have 3 kJ bionic "
+"power and 5 kcal per body part.  Broken limbs must still be splinted (unless"
+" you have specific mutations) to benefit.  If you don't have enough, they "
+"will prioritize based on the resources you have."
 msgstr ""
 
 #: data/json/items/bionics.json
@@ -45679,16 +45794,16 @@ msgid ""
 msgstr ""
 
 #: data/json/items/robot_parts.json
-msgid "police bot chassis"
-msgid_plural "police bot chassis"
+msgid "secubot chassis"
+msgid_plural "secubot chassis"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str_sp': 'police bot chassis'}
+#. ~ Description for {'str_sp': 'secubot chassis'}
 #: data/json/items/robot_parts.json
 msgid ""
 "What's left when you remove all moving parts and electronics.  It's the "
-"skeleton and armor of the police bot."
+"skeleton and armor of a police or military bot."
 msgstr ""
 
 #: data/json/items/robot_parts.json
@@ -70533,17 +70648,17 @@ msgid_plural "base pistols"
 msgstr[0] ""
 msgstr[1] ""
 
-#: data/json/items/classes/gun.json data/json/items/gun/20x66mm.json
-#: data/json/items/gun/bio.json data/json/items/gun/monster_gun.json
-#: data/json/items/gun/shot.json data/json/items/gunmod/barrel.json
+#: data/json/items/classes/gun.json data/json/items/classes/range.json
+#: data/json/items/gun/20x66mm.json data/json/items/gun/bio.json
+#: data/json/items/gun/monster_gun.json data/json/items/gun/shot.json
+#: data/json/items/gunmod/barrel.json
 #: data/json/items/gunmod/brass_catcher.json data/json/items/gunmod/grip.json
 #: data/json/items/gunmod/laser_gunmods.json
 #: data/json/items/gunmod/loading_port.json
 #: data/json/items/gunmod/mechanism.json data/json/items/gunmod/mount.json
 #: data/json/items/gunmod/muzzle.json data/json/items/gunmod/rail.json
 #: data/json/items/gunmod/sights.json data/json/items/gunmod/stock.json
-#: data/json/items/gunmod/underbarrel.json
-#: data/json/items/ranged/crossbows.json data/json/obsoletion/items.json
+#: data/json/items/gunmod/underbarrel.json data/json/obsoletion/items.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/CRT_EXPANSION/items/crt_gunmods.json
 #: data/mods/FictonalWeapons/fic_mods.json
@@ -70779,6 +70894,12 @@ msgstr[1] ""
 #: data/json/items/classes/range.json
 msgid "base crossbow"
 msgid_plural "base crossbows"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/json/items/classes/range.json
+msgid "base hand crossbow"
+msgid_plural "base hand crossbows"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -71644,6 +71765,17 @@ msgstr[1] ""
 #: data/json/items/comestibles/bread.json
 msgid "Healthy and filling."
 msgstr "Egészséges és jóllaktató."
+
+#: data/json/items/comestibles/bread.json
+msgid "garlic bread"
+msgid_plural "garlic bread"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'garlic bread'}
+#: data/json/items/comestibles/bread.json
+msgid "Bread cooked with garlic, oil and seasonings."
+msgstr ""
 
 #: data/json/items/comestibles/bread.json
 msgid "cornbread"
@@ -76002,6 +76134,36 @@ msgstr[1] ""
 #: data/json/items/comestibles/meat_dishes.json
 msgid "A hefty sausage that has been cooked."
 msgstr "Szép darab, kisütött kolbász."
+
+#: data/json/items/comestibles/meat_dishes.json
+msgid "potted meat"
+msgid_plural "potted meat"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Conditional name for {'str_sp': 'potted meat'} when FLAG matches
+#. CANNIBALISM
+#: data/json/items/comestibles/meat_dishes.json
+msgid "potted person"
+msgid_plural "potted person"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Conditional name for {'str_sp': 'potted meat'} when COMPONENT_ID matches
+#. mutant
+#: data/json/items/comestibles/meat_dishes.json
+msgid "potted freak"
+msgid_plural "potted freak"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'potted meat'}
+#: data/json/items/comestibles/meat_dishes.json
+msgid ""
+"Salted meat slowly cooked and preserved in butter or melted fat, a form of "
+"food preservation from the days before canning.  Also known as confit.  Rich"
+" and fattening, it will last for a long time."
+msgstr ""
 
 #: data/json/items/comestibles/meat_dishes.json
 msgid "sweet sausage"
@@ -81156,6 +81318,7 @@ msgstr ""
 "lenne megenni."
 
 #: data/json/items/comestibles/other.json
+#: data/mods/DinoMod/items/petfoods.json
 msgid "cattle fodder"
 msgid_plural "cattle fodder"
 msgstr[0] "takarmány"
@@ -81786,6 +81949,19 @@ msgstr[1] ""
 #: data/json/items/comestibles/raw_veggy.json
 msgid "Crisp white cabbage."
 msgstr "Ropogós, fehér káposzta."
+
+#: data/json/items/comestibles/raw_veggy.json
+msgid "grape leaves"
+msgid_plural "grape leaves"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'grape leaves'}
+#: data/json/items/comestibles/raw_veggy.json
+msgid ""
+"Edible leaves of a grape vine.  Typically used in salads or as food "
+"wrapping."
+msgstr ""
 
 #: data/json/items/comestibles/raw_veggy.json
 msgid "spinach"
@@ -83801,6 +83977,33 @@ msgstr ""
 "ha nem készítik el tárolásra."
 
 #: data/json/items/comestibles/veggy_dishes.json
+msgid "roasted garlic"
+msgid_plural "roasted garlic"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'roasted garlic'}
+#: data/json/items/comestibles/veggy_dishes.json
+msgid ""
+"Exposed cloves of garlic that have been coated in oil and then roasted.  "
+"Much better than eating them raw."
+msgstr ""
+
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "roasted chili pepper"
+msgid_plural "roasted chili peppers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'roasted chili pepper'}
+#: data/json/items/comestibles/veggy_dishes.json
+msgid ""
+"Spicy chili pepper that has been roasted on high heat, with skin removed.  "
+"Much better than eating it raw, and could also be used for other cooking "
+"recipes."
+msgstr ""
+
+#: data/json/items/comestibles/veggy_dishes.json
 msgid "cooked dandelion greens"
 msgid_plural "cooked dandelion greens"
 msgstr[0] "főtt pitypang zöldje"
@@ -84398,6 +84601,19 @@ msgstr "Zabpehely műzli. Meglepően jó, és állítólag a szívednek is jót 
 #: data/json/items/comestibles/wheat.json
 msgid "Raw wheat, not very tasty."
 msgstr "Nyers búza, nincs jó íze."
+
+#: data/json/items/comestibles/wheat.json
+msgid "boiled grain"
+msgid_plural "boiled grain"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'boiled grain'}
+#: data/json/items/comestibles/wheat.json
+msgid ""
+"Whole wheat or barley kernels that have been boiled in water.  Very bland on"
+" their own, but will do if you can't prepare them in a different way."
+msgstr ""
 
 #: data/json/items/comestibles/wheat.json
 msgid "raw spaghetti pasta"
@@ -119857,7 +120073,7 @@ msgstr ""
 #. ~ Description for {'str': 'Facial hair: chin strap'}
 #: data/json/mutations/mutation_appearance.json
 msgid ""
-"You have beard along the jaw lines, circling the chin, and no moustache."
+"You have a beard along the jaw lines, circling the chin, and no moustache."
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
@@ -119907,8 +120123,8 @@ msgstr ""
 #. ~ Description for {'str': 'Facial hair: shenandoah'}
 #: data/json/mutations/mutation_appearance.json
 msgid ""
-"Long full beard with no moustache, popular among Amish community, often with"
-" two pointed ends."
+"You have a long full beard with no moustache, popular among Amish community,"
+" often with two pointed ends."
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
@@ -119951,7 +120167,7 @@ msgstr ""
 
 #. ~ Description for {'str': 'Facial hair: Van Dyke'}
 #: data/json/mutations/mutation_appearance.json
-msgid "You have handlebar moustache with a chin strip or a small goatee."
+msgid "You have a handlebar moustache with a chin strip or a small goatee."
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
@@ -119961,8 +120177,8 @@ msgstr ""
 #. ~ Description for {'str': 'Facial hair: walrus'}
 #: data/json/mutations/mutation_appearance.json
 msgid ""
-"You have long thick moustache, overshadowing you lips, that somewhat "
-"resembles facial hair of a walrus."
+"You have a long thick moustache, overshadowing your lips, that somewhat "
+"resembles the facial hair of a walrus."
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
@@ -160153,6 +160369,7 @@ msgid "zoo parking"
 msgstr "állatkert parkoló"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_recreational.json
+#: data/mods/DinoMod/overmap/overmap_terrain_zoo.json
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "zoo pavilion"
 msgstr "állatkert paviloon"
@@ -160648,7 +160865,7 @@ msgid "WEAPON"
 msgstr "FEGYVER"
 
 #. ~ Crafting recipes subcategory all
-#: data/json/recipes/recipes.json data/mods/DinoMod/recipes/pets_elephant.json
+#: data/json/recipes/recipes.json data/mods/DinoMod/recipes/recipes.json
 #: data/mods/Magiclysm/qualities.json src/crafting_gui.cpp
 msgid "ALL"
 msgstr "MIND"
@@ -160843,22 +161060,22 @@ msgid "VEHICLE"
 msgstr "JÁRMŰ"
 
 #. ~ Crafting recipes category name
-#: data/json/recipes/recipes.json data/mods/DinoMod/recipes/pets_elephant.json
+#: data/json/recipes/recipes.json data/mods/DinoMod/recipes/recipes.json
 msgid "ANIMALS"
 msgstr ""
 
 #. ~ Crafting recipes subcategory of 'ANIMALS' category
-#: data/json/recipes/recipes.json data/mods/DinoMod/recipes/pets_elephant.json
+#: data/json/recipes/recipes.json data/mods/DinoMod/recipes/recipes.json
 msgid "CANINE ARMOR"
 msgstr ""
 
 #. ~ Crafting recipes subcategory of 'ANIMALS' category
-#: data/json/recipes/recipes.json data/mods/DinoMod/recipes/pets_elephant.json
+#: data/json/recipes/recipes.json data/mods/DinoMod/recipes/recipes.json
 msgid "EQUINE ARMOR"
 msgstr ""
 
 #. ~ Crafting recipes subcategory of 'ANIMALS' category
-#: data/json/recipes/recipes.json data/mods/DinoMod/recipes/pets_elephant.json
+#: data/json/recipes/recipes.json data/mods/DinoMod/recipes/recipes.json
 msgid "EQUINE STORAGE"
 msgstr ""
 
@@ -166264,13 +166481,22 @@ msgstr ""
 
 #: data/json/snippets/epilogue_factions.json
 msgid ""
+"    Though partially successful in restoring a semblance of order, the "
+"forces of the Old Guard remained stretched thin and faced with threats on "
+"all sides.  Over time the facade of being the last vestige of old America "
+"faded, absorbed into the communities they once watched over.  The idea of "
+"New England being just one part of a nation spanning from coast to coast "
+"would gradually become a faded memory, passed down through oral history…"
+msgstr ""
+
+#: data/json/snippets/epilogue_factions.json
+msgid ""
 "    The steadfastness of individual survivors after the cataclysm impressed "
 "the tattered remains of the once glorious union.  Spurred on by small "
 "successes, a number of operations to re-secure facilities met with limited "
-"success.  Forced to eventually consolidate to large bases, the Old Guard "
-"left these facilities in the hands of the few survivors that remained.  As "
-"the years passed, little materialized from the hopes of rebuilding "
-"civilization…"
+"success.  Though the nation itself was dead and gone, people still carried "
+"on as best as they could, and the soldiers of the Old Guard still struggled "
+"along with them…"
 msgstr ""
 
 #: data/json/snippets/epilogue_factions.json
@@ -166289,17 +166515,13 @@ msgstr ""
 
 #: data/json/snippets/epilogue_factions.json
 msgid ""
-"    The Free Merchants struggled for years to keep themselves fed but their "
-"once profitable trade routes were plundered by bandits and thugs.  In "
-"squalor and filth the first generations born after the cataclysm are told "
-"stories of the old days when food was abundant and the children were allowed"
-" to play in the sun…"
+"    Despite constant threats of banditry, life continued on and the refugee "
+"center slowly grew into a struggling community.  Food and overcrowding "
+"remained a constant worry, the next generation faced with either hard work "
+"in relative safety or a dangerous yet potentially lucrative life as a "
+"scavenger.  They learned to live day by day, hopeful for the future despite "
+"uncertainty…"
 msgstr ""
-"    A Szabadkereskedők éveken át küzdöttek azért, hogy legalább nekik legyen"
-" mit enniük, de az egykoron nyereséges kereskedelmi útvonalaikat banditák és"
-" haramiák fosztogatták. A kataklizma utáni mocsokba és szennybe született "
-"első generáció gyermekeinek hihetetlen meseként idézték fel azokat az "
-"éveket, amikor volt elég étel, és a gyerekek a napsütésben játszhattak..."
 
 #: data/json/snippets/epilogue_factions.json
 msgid ""
@@ -166389,6 +166611,44 @@ msgstr ""
 "mivel a törzsek mind a frakció vezetéséért küzdöttek.  Amikor már csak egy "
 "hadúr maradt legfelül, akkor már nem volt semmi, amiért érdemes lett volna "
 "harcolni... csak a halottakkal teli városok."
+
+#: data/json/snippets/epilogue_factions.json
+msgid ""
+"    Despite all the wonders of science, shortages and crises plagued Hub-01 "
+"from the first day of the Cataclysm.  The researchers and administrators "
+"among the surviving staff lacked the practical skills to survive in the "
+"savage new world.  As Hub-01's systems collapsed from a lack of maintenance,"
+" the few survivors fled the building to be killed by the zombies and "
+"bandits."
+msgstr ""
+
+#: data/json/snippets/epilogue_factions.json
+msgid ""
+"       Though reclusive and often brusque with the few people to reach out "
+"to them, over time the scientists of Hub-01 developed a network of "
+"scavengers and mercenaries, always on the lookout for more materials to keep"
+" them in working order.  There they continued what research they could, "
+"always limited by what little scraps of old-world technology they could get "
+"their hands on.  Their knowledge however remained, closely-guarded yet from "
+"time to time proving useful to the occasional survivor willing to part with "
+"some forgotten scrap of technology."
+msgstr ""
+
+#: data/json/snippets/epilogue_factions.json
+msgid ""
+"    Life on the farm grew tense as new horrors sprung from the world.  The "
+"Isherwoods were plagued by undead hordes and the encroachment of triffids.  "
+"When an otherworldly mold took over the fields, the family was forced to "
+"move.  The farm was later found abandoned, the fields black with ash…"
+msgstr ""
+
+#: data/json/snippets/epilogue_factions.json
+msgid ""
+"    The generational land of the Isherwoods came to flourish following "
+"<the_cataclysm>, helping to feed nearby settlements.  Survivors flocked to "
+"learn botany, animal handling, and backwoods remedies, eventually forming a "
+"small community…"
+msgstr ""
 
 #: data/json/snippets/epilogue_npc.json
 msgid ""
@@ -171512,27 +171772,27 @@ msgstr ""
 
 #: data/json/snippets/radio.json
 msgid ""
-"Hey ladies and gentlemen of the apocalypse, you're listening to Dark Days "
-"Radio, the last radio station on the Eastern Seaboard, I'm DJ Dustbowl here "
-"with our mascot Sam."
+"Hey ladies and gentlemen of the apocalypse, you're listening to Bright "
+"Nights Radio, the last radio station on the Eastern Seaboard, I'm DJ "
+"Dustbowl here with our mascot Sam."
 msgstr ""
 
 #: data/json/snippets/radio.json
 msgid ""
-"DJ Dustbowl back, you're listening to Dark Days Radio.  Quick survivor tip: "
-"remember, killing a zombie isn't enough.  You've gotta smash that thing to a"
-" pulp or chop it into pieces if you don't want it getting back up.  Good "
-"news though, you don't need to worry about headshots!  Any major damage will"
-" lay a shambler out."
+"DJ Dustbowl back, you're listening to Bright Nights Radio.  Quick survivor "
+"tip: remember, killing a zombie isn't enough.  You've gotta smash that thing"
+" to a pulp or chop it into pieces if you don't want it getting back up.  "
+"Good news though, you don't need to worry about headshots!  Any major damage"
+" will lay a shambler out."
 msgstr ""
 
 #: data/json/snippets/radio.json
 msgid ""
-"You're listening to Dark Days Radio, I'm DJ Dustbowl!  In with a quick tip "
-"for any survivors listening: one zombie is bad news, two are worse.  Don't "
-"go Rambo on me.  Tackle threats in small numbers or through bottlenecks.  "
-"You aren't tougher than a zombie but you are smarter, use that to your "
-"advantage… or just run away."
+"You're listening to Bright Nights Radio, I'm DJ Dustbowl!  In with a quick "
+"tip for any survivors listening: one zombie is bad news, two are worse.  "
+"Don't go Rambo on me.  Tackle threats in small numbers or through "
+"bottlenecks.  You aren't tougher than a zombie but you are smarter, use that"
+" to your advantage… or just run away."
 msgstr ""
 
 #: data/json/snippets/radio.json
@@ -176908,6 +177168,14 @@ msgstr "Halottas kocsi"
 #: data/json/vehicles/custom_vehicles.json
 msgid "Technical"
 msgstr "Szerelő pickup"
+
+#: data/json/vehicles/custom_vehicles.json
+msgid "Wasteland Interceptor"
+msgstr ""
+
+#: data/json/vehicles/custom_vehicles.json
+msgid "Meth Bike"
+msgstr ""
 
 #: data/json/vehicles/emergency.json
 msgid "Ambulance"
@@ -191275,67 +191543,6 @@ msgid ""
 "quarterboards."
 msgstr "Napelemek és számos más alkatrész összehajthatóvá válik."
 
-#: data/mods/DinoMod/hints.json
-msgid ""
-"I've seen some big dinosaurs out there.  I know that should be scary, but "
-"all I felt was hungry."
-msgstr ""
-
-#: data/mods/DinoMod/hints.json
-msgid ""
-"I think those little dinosaurs are kind of cute, like a cat kind of.  Do you"
-" think they eat cat food?"
-msgstr ""
-
-#: data/mods/DinoMod/hints.json
-msgid "Dinosaurs are a bow hunter's best friend.  Feathers forever!"
-msgstr ""
-
-#: data/mods/DinoMod/hints.json
-msgid ""
-"A buddy of mine wandered close to the swamps and was eaten by a T-Rex, a big"
-" lizard.  I'd be careful unless you have a gun and plenty of ammo."
-msgstr ""
-
-#: data/mods/DinoMod/hints.json
-msgid ""
-"I hear the zombies have been in the swamps.  Bad news if they bite a "
-"dinosaur before it bites them."
-msgstr ""
-
-#: data/mods/DinoMod/hints.json
-msgid ""
-"I know there aren't alligators in the sewer, but I heard there was some kind"
-" of big lizard down there.  Probably not a good idea to check."
-msgstr ""
-
-#: data/mods/DinoMod/hints.json
-msgid ""
-"Some of those big dinosaurs seem halfway all right.  I bet if you fed them "
-"something nice and gave them a pet you could ride them like a pony.  Or "
-"maybe they'd eat you instead."
-msgstr ""
-
-#: data/mods/DinoMod/hints.json
-msgid ""
-"I saw something with a large fin in the water.  It was the size of a whale "
-"and gave me a menacing feeling.  I'm gonna think twice before going back "
-"there."
-msgstr ""
-
-#: data/mods/DinoMod/hints.json
-msgid ""
-"One time I found a strange egg out in the woods.  It was probably a "
-"dinosaur, but I cooked it and it was pretty good!"
-msgstr ""
-
-#: data/mods/DinoMod/hints.json
-msgid ""
-"I got a bunch of these big lizards to follow me around and it was great and "
-"then they smashed up the place I was staying and then a bunch of other "
-"places I wanted to set up.  Maybe I should have tied them down?"
-msgstr ""
-
 #: data/mods/DinoMod/lab_notes.json
 msgid ""
 "Research on our visitors is proceeding nicely.  The raptor DNA is of special"
@@ -191499,105 +191706,6 @@ msgstr ""
 msgid ""
 "IF YOU CAN HEAR THIS RECORDING, PLEASE EXIT THE FACILITY.  THE TIGER IS "
 "LOOSE."
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid ""
-"This is an advertisement for a local wildlife exhibit, claiming to have new "
-"and exciting animals on display.  Strangely, the only imagery on it is a "
-"stylized silhouette of a T. Rex.  The flier reads \"Witness the rebirth of "
-"the extinct, grand opening this week!\""
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid "\"SWAMPS BAD TEETH HUGE OHGOD\""
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid "\"Why is that place just fucking crawling with lizards?\""
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid ""
-"\"I bet dinosaurs can read and play chess so don't eat us because we can "
-"teach you important things like magnets and ramen\""
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid "\"where's some .700 t-rex medicine when you need it?\""
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid ""
-"\"So is this what happens when you stray off the path and step on a "
-"butterfly?\""
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid ""
-"\"But even a much older gent  Sees itself forced to wander  He goes by the "
-"name Diplodocus  And belongs among the fossils  Mr. Carnegie packs him "
-"joyfully  Into giant arks  And sends him as gift  To several monarchs\""
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid ""
-"\"What the hell is a brown and magenta 4 legged juvenile?!  Fucker took a "
-"dozen or more .308 rounds to put down.  Gives a ton of fucking meat\""
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid "\"I saw the most beautiful dinosaur today.  I must dress her.\""
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid ""
-"MANY MISSING: A wave of missing persons reports have shaken an already "
-"troubled nation, especially among members of the popular Swampers religion "
-"and hotel and casino chain.  Asked to comment, their charismatic CEO Bo "
-"Baronyx refused to explain their whereabouts, saying only 'The great eaters "
-"have returned and they will be sated' and winked and smiled in the most "
-"charming way.  The Swampers are doing their part in this crisis and are "
-"accepting donations of meat and money to feed the hungry."
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid ""
-"CUTEST VISITORS: A mysterious portal of shimmering blue energy and flashing "
-"lights opened above Cretaceous Kindergarten today, showering children with "
-"the cutest tiny fuzzy dinosaurs and dinosaur babies.  Local paleontologist "
-"and exotic dancer Othniel Marsh expressed skepticism that dinosaurs had not "
-"died out millions of years ago but 'at this point why not, at least they're "
-"cute'.  And cute they are!"
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid ""
-"DENIES DINOSAURS: FEMA official Ernst Stromer said late last night that the "
-"cities are not safe and reports of dinosaurs outside the cities are wrong "
-"and 'possibly drug-related' but cautioned refugees to 'get all the guns you "
-"can' because 'it's bad out there'."
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid ""
-"NEVER HUMANS?: Swamper scientists report that in every historical simulation"
-" they have run, humans never evolve, with dinosaurs remaining the dominant "
-"life form to present day in every model unless an artificial disaster event "
-"is introduced.  'Fear not, this world is healing, we will return to normal "
-"soon' reports Swamper CEO Bo Baronyx confidently.  Sounds like good news "
-"ahead!"
-msgstr ""
-
-#: data/mods/DinoMod/snippets.json
-msgid ""
-"\n"
-"IMMERSION LOG: 30D-A\n"
-"\n"
-"PRELIMINARY REPORT:\n"
-"\n"
-"SUMMARY:\n"
-"Exploration into sub-scape 30-D revealed biosphere similar to prime, similar to previous sub-scapes in same frequency.  Expedition team reported visual contact with several reptoids ('dinosaurs') and warm, humid conditions.  Though one reptoid made visual contact with the expedition team and approached, all members were returned with no incident.  Refer to previous sub-scape system 30 reports and meta-comparison report for further information."
 msgstr ""
 
 #: data/mods/DinoMod/startlocations.json
@@ -192452,6 +192560,19 @@ msgstr ""
 msgid "I'm looking for tyrant mutagen… I'm going to be a king."
 msgstr ""
 
+#: data/mods/DinoMod/items/biosignatures.json
+msgid "dinosaur droppings"
+msgid_plural "dinosaur droppings"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str_sp': 'dinosaur droppings'}
+#: data/mods/DinoMod/items/biosignatures.json
+msgid ""
+"Dinosaur fecal matter; this could probably be used to make some great "
+"fertilizer."
+msgstr ""
+
 #: data/mods/DinoMod/items/books.json
 msgid "Kiernan's notes"
 msgid_plural "copies of Kiernan's notes"
@@ -192466,6 +192587,171 @@ msgid ""
 "biologist, and amateur author.  These notes jump from such topics as fossil "
 "digs, science fiction stories, also strangely enough notes on dinosaur "
 "biology and potential hybridization efforts."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "sauropod stomach"
+msgid_plural "sauropod stomachs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'sauropod stomach'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid ""
+"The stomach of an enormous sauropod dinosaur.  It is surprisingly durable "
+"and very roomy."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "boiled sauropod stomach"
+msgid_plural "boiled sauropod stomachs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'boiled sauropod stomach'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid ""
+"A boiled stomach from a sauropod, nothing else.  It looks all but "
+"appetizing."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "smaller dinosaur skull"
+msgid_plural "smaller dinosaur skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'smaller dinosaur skull'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid "The skull of a smaller plant eating dinosaur."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "dinosaur skull"
+msgid_plural "dinosaur skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'dinosaur skull'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid "The skull of a plant eating dinosaur."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "larger dinosaur skull"
+msgid_plural "larger dinosaur skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'larger dinosaur skull'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid "The skull of a larger plant eating dinosaur."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "smaller dinosaur predator skull"
+msgid_plural "smaller dinosaur predator skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'smaller dinosaur predator skull'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid "A smaller dinosaur skull with sharp teeth."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "dinosaur predator skull"
+msgid_plural "dinosaur predator skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'dinosaur predator skull'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid "The skull of a dinosaur with sharp teeth."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "larger dinosaur predator skull"
+msgid_plural "larger dinosaur predator skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'larger dinosaur predator skull'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid "The skull of a larger dinosaur with sharp teeth."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "tyrannosaurus skull"
+msgid_plural "tyrannosaurus skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "allosaurus skull"
+msgid_plural "allosaurus skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "acrocanthosaurus skull"
+msgid_plural "acrocanthosaurus skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "triceratops skull"
+msgid_plural "triceratops skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'triceratops skull'}
+#. ~ Description for {'str': 'torosaurus skull'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid "Large dinosaur skull with three large horns and a large crest."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "torosaurus skull"
+msgid_plural "torosaurus skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "styracosaurus skull"
+msgid_plural "styracosaurus skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'styracosaurus skull'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid ""
+"Large dinosaur skull with a large horn above the nose and a spiked crest."
+msgstr ""
+
+#: data/mods/DinoMod/items/carnivore.json
+msgid "centrosaurus skull"
+msgid_plural "centrosaurus skulls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'centrosaurus skull'}
+#: data/mods/DinoMod/items/carnivore.json
+msgid ""
+"Large dinosaur skull with a large horn above the nose and a bony crest."
+msgstr ""
+
+#: data/mods/DinoMod/items/containers.json
+msgid "sealed sauropod stomach"
+msgid_plural "sealed sauropod stomachs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'sealed sauropod stomach'}
+#: data/mods/DinoMod/items/containers.json
+msgid ""
+"The stomach of a sauropod, cleaned and sealed with strings.  It can hold 6 "
+"liters of water."
 msgstr ""
 
 #: data/mods/DinoMod/items/egg.json
@@ -193094,6 +193380,41 @@ msgid ""
 "disassemble it into two pieces to eat."
 msgstr ""
 
+#: data/mods/DinoMod/items/helmets.json
+msgid "dinosaur skull helmet"
+msgid_plural "dinosaur skull helmets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'dinosaur skull helmet'}
+#. ~ Description for {'str': 'dinosaur predator skull helmet'}
+#: data/mods/DinoMod/items/helmets.json
+msgid ""
+"The top part of a dinosaur skull, equipped with leather straps to secure it "
+"on your head.  Every inch of the skull has been carved with a maze of fine, "
+"intertwined symbols."
+msgstr ""
+
+#: data/mods/DinoMod/items/helmets.json
+msgid "spiky dinosaur skull helmet"
+msgid_plural "spiky dinosaur skull helmets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'spiky dinosaur skull helmet'}
+#: data/mods/DinoMod/items/helmets.json
+msgid ""
+"The top part of a spiky dinosaur skull, equipped with leather straps to "
+"secure it on your head.  Every inch of the skull has been carved with a maze"
+" of fine, intertwined symbols."
+msgstr ""
+
+#: data/mods/DinoMod/items/helmets.json
+msgid "dinosaur predator skull helmet"
+msgid_plural "dinosaur predator skull helmets"
+msgstr[0] ""
+msgstr[1] ""
+
 #: data/mods/DinoMod/items/items.json
 msgid "PRELIMINARY REPORT: IMMERSION-30D"
 msgid_plural "PRELIMINARY REPORT: IMMERSION-30Ds"
@@ -193152,6 +193473,242 @@ msgid_plural "stego mutagens"
 msgstr[0] ""
 msgstr[1] ""
 
+#: data/mods/DinoMod/items/petfoods.json
+msgid "wet dog food"
+msgid_plural "wet dog food"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/mods/DinoMod/items/petfoods.json
+msgid "wet cat food"
+msgid_plural "wet cat food"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/mods/DinoMod/items/pets.json
+msgid "large pet carrier"
+msgid_plural "large pet carriers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'large pet carrier'}
+#: data/mods/DinoMod/items/pets.json
+msgid ""
+"A sturdy reinforced plastic container meant to hold dinosaurs for transport."
+"  Use it on a suitable animal to capture, use it on an empty tile to "
+"release."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets.json
+msgid "large wooden pet carrier"
+msgid_plural "large wooden pet carriers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'large wooden pet carrier'}
+#: data/mods/DinoMod/items/pets.json
+msgid ""
+"A sturdy reinforced wooden container meant to hold dinosaurs for transport."
+"  Use it on a suitable animal to capture, use it on an empty tile to "
+"release."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "bear armor"
+msgid_plural "bear armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "Kevlar-lined bear-sized peto"
+msgid_plural "Kevlar-lined bear-sized petos"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Kevlar-lined bear-sized peto'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A heavy mattress-like armor of cloth, leather, and thick linings of Kevlar, "
+"originally used as horse protection for bullfighting, but adapted for the "
+"noblest of beasts.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "biosilicified chitin bear armor"
+msgid_plural "biosilicified chitin bear armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'biosilicified chitin bear armor'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A makeshift assembly of criniere, peytral, and croupiere made from "
+"biosilicified chitin fitted to a thin mesh.  You could put this on a "
+"friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "chitin bear armor"
+msgid_plural "chitin bear armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'chitin bear armor'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A makeshift assembly of criniere, peytral, and croupiere made from chitin "
+"fitted to a thin mesh.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "chainmail bear armor"
+msgid_plural "chainmail bear armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'chainmail bear armor'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A heavy covering of chainmail, suitably made for bears as protection.  You "
+"could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "boiled leather bear barding with caparison"
+msgid_plural "boiled leather bear bardings with caparison"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'boiled leather bear barding with caparison',
+#. 'str_pl': 'boiled leather bear bardings with caparison'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A full barding for bears, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts four men in heavy metal armor riddled "
+"with bullet marks.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A full barding for bears, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a large brown bear being swarmed by bees"
+" as it devours a honeycomb.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A full barding for bears, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a warrior-woman holding a baby in one "
+"arm and a battleaxe in the other.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A full barding for bears, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a bear dancing with a golden-haired "
+"maiden.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A full barding for bears, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a zombified bear with cold blue eyes "
+"fighting alongside an undead army.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A full barding for bears, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a tall man transforming into a giant "
+"bear and leaping into battle.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A full barding for bears, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a fierce stegosaurus bursting out the "
+"side of a 1970s-era van.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "boiled leather bear barding with bones"
+msgid_plural "boiled leather bear bardings with bones"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'boiled leather bear barding with bones',
+#. 'str_pl': 'boiled leather bear bardings with bones'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"Leather bear barding with decorative bones affixed, meant to invoke fear in "
+"bandits and raiders and traders all!  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "bear rain sheet"
+msgid_plural "bear rain sheets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bear rain sheet'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A thin plastic covering, adapted to protect a bear from acid zombie splashes"
+" and similar caustic substances.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "bear-sized holiday sweater"
+msgid_plural "bear-sized holiday sweaters"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bear-sized holiday sweater'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A very large warm wool sweater with a festive holiday pattern.  You could "
+"put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "iron bear armor"
+msgid_plural "iron bear armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'iron bear armor'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A heavy covering of strategically placed iron plates and leather, suitably "
+"made for bears as protection.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "steel bear armor"
+msgid_plural "steel bear armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'steel bear armor'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A heavy covering of steel plate and leather, suitably made for bears as "
+"protection.  You could put this on a friendly bear."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid "bronze bear armor"
+msgid_plural "bronze bear armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bronze bear armor'}
+#: data/mods/DinoMod/items/pets_bear_armor.json
+msgid ""
+"A heavy covering of strategically placed bronze plates and leather, suitably"
+" made for bears as protection.  You could put this on a friendly bear."
+msgstr ""
+
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid "elephant armor"
 msgid_plural "elephant armors"
@@ -193159,17 +193716,17 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: data/mods/DinoMod/items/pets_elephant_armor.json
-msgid "Kevlar-lined elephant peto"
-msgid_plural "Kevlar-lined elephant petos"
+msgid "Kevlar-lined elephant-sized peto"
+msgid_plural "Kevlar-lined elephant-sized petos"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'Kevlar-lined elephant peto'}
+#. ~ Description for {'str': 'Kevlar-lined elephant-sized peto'}
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A heavy mattress-like armor of cloth, leather and thick linings of Kevlar, "
-"originally used as protection in bullfighting.  You could put this on a "
-"friendly elephant."
+"A heavy mattress-like armor of cloth, leather, and thick linings of Kevlar, "
+"originally used as horse protection for bullfighting.  You could put this on"
+" a friendly elephant."
 msgstr ""
 
 #: data/mods/DinoMod/items/pets_elephant_armor.json
@@ -193181,7 +193738,7 @@ msgstr[1] ""
 #. ~ Description for {'str': 'biosilicified chitin elephant armor'}
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A makeshift assembly of criniere, peytral and croupiere made from "
+"A makeshift assembly of criniere, peytral, and croupiere made from "
 "biosilicified chitin fitted to a thin mesh.  You could put this on a "
 "friendly elephant."
 msgstr ""
@@ -193195,7 +193752,7 @@ msgstr[1] ""
 #. ~ Description for {'str': 'chitin elephant armor'}
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A makeshift assembly of criniere, peytral and croupiere made from chitin "
+"A makeshift assembly of criniere, peytral, and croupiere made from chitin "
 "fitted to a thin mesh.  You could put this on a friendly elephant."
 msgstr ""
 
@@ -193222,55 +193779,55 @@ msgstr[1] ""
 #. 'str_pl': 'boiled leather elephant bardings with caparison'}
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A full barding for elephants consisting of boiled leather and cloth "
-"undercovering.  This caparison is depicting a battle between a monstrous "
-"demon and a regal warrior astride an elephant and wielding an elaborate "
-"vajra.  You could put this on a friendly elephant."
+"A full barding for elephants, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a battle between a monstrous demon and a"
+" regal warrior astride an elephant and wielding an elaborate vajra.  You "
+"could put this on a friendly elephant."
 msgstr ""
 
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A full barding for elephants consisting of boiled leather and cloth "
-"undercovering.  This caparison is depicting a god with many arms bearing "
-"different items with one large uncovered breast on the left side.  You could"
-" put this on a friendly elephant."
+"A full barding for elephants, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a being, a goddess?  with many arms "
+"bearing different items with one large uncovered breast on the left side.  "
+"You could put this on a friendly elephant."
 msgstr ""
 
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A full barding for elephants consisting of boiled leather and cloth "
-"undercovering.  This caparison is depicting several charging elephantry "
-"trampling enemy soldiers.  You could put this on a friendly elephant."
+"A full barding for elephants, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts several charging elephants trampling "
+"enemy soldiers.  You could put this on a friendly elephant."
 msgstr ""
 
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A full barding for elephants consisting of boiled leather and cloth "
-"undercovering.  This caparison is depicting an assortment of diamonds and "
-"gems.  You could put this on a friendly elephant."
+"A full barding for elephants, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts an assortment of diamonds and gems.  You"
+" could put this on a friendly elephant."
 msgstr ""
 
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A full barding for elephants consisting of boiled leather and cloth "
-"undercovering.  This caparison is depicting a man in rich garments with a "
-"full uncovered belly on an elaborate chariot.  You could put this on a "
+"A full barding for elephants, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a man in rich garments and a full "
+"uncovered belly, riding in an elaborate chariot.  You could put this on a "
 "friendly elephant."
 msgstr ""
 
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A full barding for elephants consisting of boiled leather and cloth "
-"undercovering.  This caparison is depicting several identical smiling men in"
-" turbans of various bright colors performing a dance.  You could put this on"
-" a friendly elephant."
+"A full barding for elephants, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts several identical smiling men in turbans"
+" of various bright colors performing a dance.  You could put this on a "
+"friendly elephant."
 msgstr ""
 
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A full barding for elephants consisting of boiled leather and cloth "
-"undercovering.  This caparison is depicting a fierce three horned dinosaur "
-"bursting out the side of a 1970s van.  You could put this on a friendly "
+"A full barding for elephants, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a fierce, three-horned dinosaur bursting"
+" out the side of a 1970s-era van.  You could put this on a friendly "
 "elephant."
 msgstr ""
 
@@ -193284,8 +193841,8 @@ msgstr[1] ""
 #. 'str_pl': 'boiled leather elephant bardings with bones'}
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"Decorative bones affixed to leather elephant barding to invoke fear in "
-"bandits and raiders and traders all!  You could put this on a friendly "
+"Leather elephant barding with decorative bones affixed, meant to invoke fear"
+" in bandits and raiders and traders all!  You could put this on a friendly "
 "elephant."
 msgstr ""
 
@@ -193298,8 +193855,260 @@ msgstr[1] ""
 #. ~ Description for {'str': 'elephant rain sheet'}
 #: data/mods/DinoMod/items/pets_elephant_armor.json
 msgid ""
-"A thin plastic covering adapted for elephant to protect from acid rain and "
-"other caustic sources.  You could put this on a friendly elephant."
+"A thin plastic covering, adapted to protect an elephant from acid zombie "
+"splashes and similar caustic substances.  You could put this on a friendly "
+"elephant."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_elephant_armor.json
+msgid "elephant-sized holiday sweater"
+msgid_plural "elephant-sized holiday sweaters"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'elephant-sized holiday sweater'}
+#: data/mods/DinoMod/items/pets_elephant_armor.json
+msgid ""
+"A very large warm wool sweater with a festive holiday pattern.  You could "
+"put this on a friendly elephant."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_elephant_armor.json
+msgid "iron elephant armor"
+msgid_plural "iron elephant armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'iron elephant armor'}
+#: data/mods/DinoMod/items/pets_elephant_armor.json
+msgid ""
+"A heavy covering of strategically placed iron plates and leather, suitably "
+"made for elephants as protection.  You could put this on a friendly "
+"elephant."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_elephant_armor.json
+msgid "steel elephant armor"
+msgid_plural "steel elephant armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'steel elephant armor'}
+#: data/mods/DinoMod/items/pets_elephant_armor.json
+msgid ""
+"A heavy covering of steel plate and leather, suitably made for elephants as "
+"protection.  You could put this on a friendly elephant."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_elephant_armor.json
+msgid "bronze elephant armor"
+msgid_plural "bronze elephant armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bronze elephant armor'}
+#: data/mods/DinoMod/items/pets_elephant_armor.json
+msgid ""
+"A heavy covering of strategically placed bronze plates and leather, suitably"
+" made for elephants as protection.  You could put this on a friendly "
+"elephant."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "ostrich armor"
+msgid_plural "ostrich armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "Kevlar-lined ostrich-sized peto"
+msgid_plural "Kevlar-lined ostrich-sized petos"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'Kevlar-lined ostrich-sized peto'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A heavy mattress-like armor of cloth, leather, and thick linings of Kevlar, "
+"originally used as horse protection for bullfighting, but adapted for the "
+"noblest of beasts.  You could put this on a friendly ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "biosilicified chitin ostrich armor"
+msgid_plural "biosilicified chitin ostrich armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'biosilicified chitin ostrich armor'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A makeshift assembly of criniere, peytral, and croupiere made from "
+"biosilicified chitin fitted to a thin mesh.  You could put this on a "
+"friendly ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "chitin ostrich armor"
+msgid_plural "chitin ostrich armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'chitin ostrich armor'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A makeshift assembly of criniere, peytral, and croupiere made from chitin "
+"fitted to a thin mesh.  You could put this on a friendly ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "chainmail ostrich armor"
+msgid_plural "chainmail ostrich armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'chainmail ostrich armor'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A heavy covering of chainmail, customized for large two legged birds as "
+"protection.  You could put this on a friendly ostrich.  This caparison "
+"depicts four men in heavy metal armor riddled with bullet marks."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "boiled leather ostrich barding with caparison"
+msgid_plural "boiled leather ostrich bardings with caparison"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'boiled leather ostrich barding with caparison',
+#. 'str_pl': 'boiled leather ostrich bardings with caparison'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A full barding for ostriches, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts four men in heavy metal armor riddled "
+"with bullet marks.  You could put this on a friendly ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A full barding for ostriches, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a crown floating above an armored tank "
+"in profile above the word AUSTRALIA.  You could put this on a friendly "
+"ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A full barding for ostriches, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts several charging emus trampling enemy "
+"machine gunners and a field of wheat.  You could put this on a friendly "
+"ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A full barding for ostriches, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a man wearing a crown of ostrich "
+"feathers and fields with many ostriches.  You could put this on a friendly "
+"ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A full barding for ostriches, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a woman in rich blue velvet garments "
+"with white ostrich feathers flaring dramatically from her pouf hairstyle.  "
+"You could put this on a friendly ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A full barding for ostriches, consisting of boiled leather with cloth "
+"underneath.  This caparison depicts a fierce tyrannosaurus rex bursting out "
+"the side of a 1970s-era van.  You could put this on a friendly ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "boiled leather ostrich barding with bones"
+msgid_plural "boiled leather ostrich bardings with bones"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'boiled leather ostrich barding with bones',
+#. 'str_pl': 'boiled leather ostrich bardings with bones'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"Leather ostrich barding with decorative bones affixed, meant to invoke fear "
+"in bandits and raiders and traders all!  You could put this on a friendly "
+"ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "ostrich rain sheet"
+msgid_plural "ostrich rain sheets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'ostrich rain sheet'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A thin plastic covering, adapted to protect an ostrich from acid zombie "
+"splashes and similar caustic substances.  You could put this on a friendly "
+"ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "ostrich-sized holiday sweater"
+msgid_plural "ostrich-sized holiday sweaters"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'ostrich-sized holiday sweater'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A very large warm wool sweater with a festive holiday pattern.  You could "
+"put this on a friendly ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "iron ostrich armor"
+msgid_plural "iron ostrich armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'iron ostrich armor'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A heavy covering of strategically placed iron plates and leather, suitably "
+"made for ostriches as protection.  You could put this on a friendly ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "steel ostrich armor"
+msgid_plural "steel ostrich armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'steel ostrich armor'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A heavy covering of steel plate and leather, suitably made for ostriches as "
+"protection.  You could put this on a friendly ostrich."
+msgstr ""
+
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid "bronze ostrich armor"
+msgid_plural "bronze ostrich armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bronze ostrich armor'}
+#: data/mods/DinoMod/items/pets_ostrich_armor.json
+msgid ""
+"A heavy covering of strategically placed bronze plates and leather, suitably"
+" made for ostriches as protection.  You could put this on a friendly "
+"ostrich."
 msgstr ""
 
 #. ~ Computer name
@@ -201163,21 +201972,336 @@ msgid ""
 msgstr ""
 
 #: data/mods/DinoMod/overmap/map_extras.json
-msgid "Tyrannosaurus Nest"
+msgid "acrocanthosaurus nest"
 msgstr ""
 
-#. ~ Description for {'str': 'Tyrannosaurus Nest'}
+#. ~ Description for {'str': 'acrocanthosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "An acrocanthosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "albertosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'albertosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "An albertosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "allosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'allosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "An allosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "anchisaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'anchisaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "An anchisaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "ankylosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'ankylosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "An ankylosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "camptosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'camptosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A camptosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "ceratosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'ceratosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A ceratosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "corythosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'corythosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A corythosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "deinonychus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'deinonychus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A deinonychus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "dilophosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'dilophosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A dilophosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "dromaeosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'dromaeosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A dromaeosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "dryosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'dryosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A dryosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "euoplocephalus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'euoplocephalus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "An euoplocephalus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "gallimimus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'gallimimus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A gallimimus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "hadrosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'hadrosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A hadrosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "hesperosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'hesperosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A hesperosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "hypacrosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'hypacrosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A hypacrosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "issi nest"
+msgstr ""
+
+#. ~ Description for {'str': 'issi nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "An issi nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "lambeosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'lambeosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A lambeosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "maiasaura nest"
+msgstr ""
+
+#. ~ Description for {'str': 'maiasaura nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A miasaura nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "nanosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'nanosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A nanosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "ornithomimus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'ornithomimus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "An ornithomimus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "pachycephalosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'pachycephalosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A pachycephalosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "parasaurolophus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'parasaurolophus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A parasaurolophus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "sarahsaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'sarahsaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A sarahsaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "scolosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'scolosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A scolosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "siats nest"
+msgstr ""
+
+#. ~ Description for {'str': 'siats nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A siats nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "stegosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'stegosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A stegosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "stenonychosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'stenonychosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A stenonychosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "struthiomimus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'struthiomimus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A struthiomimus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "tenontosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'tenontosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A tenontosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "thescelosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'thescelosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A thescelosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "torvosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'torvosaurus nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A torvosaurus nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "triceratops nest"
+msgstr ""
+
+#. ~ Description for {'str': 'triceratops nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A triceratops nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "tyrannosaurus nest"
+msgstr ""
+
+#. ~ Description for {'str': 'tyrannosaurus nest'}
 #: data/mods/DinoMod/overmap/map_extras.json
 msgid "A tyrannosaurus nest."
 msgstr ""
 
 #: data/mods/DinoMod/overmap/map_extras.json
-msgid "Maiasaura Nest"
+msgid "utahraptor nest"
 msgstr ""
 
-#. ~ Description for {'str': 'Maiasaura Nest'}
+#. ~ Description for {'str': 'utahraptor nest'}
 #: data/mods/DinoMod/overmap/map_extras.json
-msgid "A miasaura nest."
+msgid "A utahraptor nest."
+msgstr ""
+
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "velociraptor nest"
+msgstr ""
+
+#. ~ Description for {'str': 'velociraptor nest'}
+#: data/mods/DinoMod/overmap/map_extras.json
+msgid "A velociraptor nest."
 msgstr ""
 
 #: data/mods/DinoMod/overmap/overmap_terrain.json
@@ -201188,9 +202312,346 @@ msgstr ""
 msgid "Dinosaur Exhibit roof"
 msgstr ""
 
+#: data/mods/DinoMod/overmap/overmap_terrain_zoo.json
+msgid "DinoZoo parking"
+msgstr ""
+
+#: data/mods/DinoMod/overmap/overmap_terrain_zoo.json
+msgid "DinoZoo"
+msgstr ""
+
+#: data/mods/DinoMod/overmap/overmap_terrain_zoo.json
+msgid "DinoZoo roof"
+msgstr ""
+
 #. ~ Crafting recipes subcategory of 'ANIMALS' category
-#: data/mods/DinoMod/recipes/pets_elephant.json
+#: data/mods/DinoMod/recipes/recipes.json
 msgid "ELEPHANT ARMOR"
+msgstr ""
+
+#. ~ Crafting recipes subcategory of 'ANIMALS' category
+#: data/mods/DinoMod/recipes/recipes.json
+msgid "OSTRICH ARMOR"
+msgstr ""
+
+#. ~ Crafting recipes subcategory of 'ANIMALS' category
+#: data/mods/DinoMod/recipes/recipes.json
+msgid "BEAR ARMOR"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "Rejoice.  The great eaters have returned"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid ""
+"There is a detailed drawing of a predator dinosaur with an arrow pointing at"
+" the mouth and the note 'INSERT HERE'."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "<given_name> is dinosaur lunch"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "<given_name> + troodon"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "Dinos, zombies, it doesn't matter"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "Learn to fly!  Mess with a big dino!"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "T REX ET ME"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "I give up, I'm joining the dinosaurs"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "This is a cartoon rendition of a long necked four legged dinosaur."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "This is a crudely spray painted tag adorned with dinosaur skulls."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "KILL ALL DINOSAURS"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/graffiti.json
+msgid "Don't believe the government, the dinosaurs are real!"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid "Good soldier.  Killed 40 dinos."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid "Bad soldier.  Killed 3 dinos."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid "Fed the great Eaters.  Will be honored for all time."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid "Meh scientist but a good friend."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid "Loved dinosaurs.  Should have run."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid "Died tragically rescuing his family from a burning tyrannosaurus."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid "Died wrestling a mosasaurus.  It was not just a big gator."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid "Built a beautiful farm and filled it with dangerous dinosaurs."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid "Life did not find a way."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid ""
+"The greatest dinosaur expert of our times.  Crushed to death by an "
+"apatosaurus."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid ""
+"Fool hid in a cardboard box from a deinonychus, shouting Dino Dave!  Didn't "
+"work."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid "Here lies a dinosaur, don't know what kind.  Hated shovels."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/grave_labels.json
+msgid ""
+"Alonso did not know her, but she was beautiful and majestic and she deserved"
+" the proper burial.  Alonso will remember this dinosaur for some of the "
+"time."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"I've seen some big dinosaurs out there.  I know that should be scary, but "
+"all I felt was hungry."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"I think those little dinosaurs are kind of cute, like a cat kind of.  Do you"
+" think they eat cat food?"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid "Dinosaurs are a bow hunter's best friend.  Feathers forever!"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"I saw one of those feathered dinosaurs up close and it had these beautiful "
+"soft downy feathers under the big ones.  I bet if you could pluck one you "
+"could make a nice dino feather mattress."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"Those big dinosaurs make a big mess.  If only there was some way to harness "
+"the power of those poops for the uplift of all mankind.  Maybe a renewable "
+"energy source, or a construction material, or super dino fertilizer"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"A buddy of mine wandered close to the swamps and was eaten by a T-Rex, a big"
+" lizard.  I'd be careful unless you have a gun and plenty of ammo."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"I hear the zombies have been in the swamps.  Bad news if they bite a "
+"dinosaur before it bites them."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"I know there aren't alligators in the sewer, but I heard there was some kind"
+" of big lizard down there.  Probably not a good idea to check."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"Some of those big dinosaurs seem halfway all right.  I bet if you fed them "
+"something nice and gave them a pet you could ride them like a pony.  Or "
+"maybe they'd eat you instead."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"I saw something with a large fin in the water.  It was the size of a whale "
+"and gave me a menacing feeling.  I'm gonna think twice before going back "
+"there."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"One time I found a strange egg out in the woods.  It was probably a "
+"dinosaur, but I cooked it and it was pretty good!"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"One time I found a giant egg out in the woods.  I ate it raw all at once and"
+" then got sick all over.  Maybe I should have cooked it and eaten it bit by "
+"bit?"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/hints.json
+msgid ""
+"I got a bunch of these big lizards to follow me around and it was great and "
+"then they smashed up the place I was staying and then a bunch of other "
+"places I wanted to set up camp in.  Maybe I should have tied them down?"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"This is an advertisement for a local wildlife exhibit, claiming to have new "
+"and exciting animals on display.  Strangely, the only imagery on it is a "
+"stylized silhouette of a T. Rex.  The flier reads \"Witness the rebirth of "
+"the extinct, grand opening this week!\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid "\"SWAMPS BAD TEETH HUGE OHGOD\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid "\"Why is that place just fucking crawling with lizards?\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"\"I bet dinosaurs can read and play chess so don't eat us because we can "
+"teach you important things like magnets and ramen\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid "\"where's some .700 t-rex medicine when you need it?\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"\"So is this what happens when you stray off the path and step on a "
+"butterfly?\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"\"But even a much older gent  Sees itself forced to wander  He goes by the "
+"name Diplodocus  And belongs among the fossils  Mr. Carnegie packs him "
+"joyfully  Into giant arks  And sends him as gift  To several monarchs\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"\"What the hell is a brown and magenta 4 legged juvenile?!  Fucker took a "
+"dozen or more .308 rounds to put down.  Gives a ton of fucking meat\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid "\"I saw the most beautiful dinosaur today.  I must dress her.\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"\"I saw this one dinosaur and I was like gorge.  And then I saw this other "
+"dinosaur and I was like gooorge!  And then I saw this other one and I was "
+"like gorgosaurus!  Like for real.\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"\"KILL ALL DINOSAURS.  DO NOT TAKE THEIR DRUGS.  DO NOT LISTEN TO THEIR "
+"LIES.  THEY ARE BEAUTIFUL AND WE WILL KILL THEM UNTIL WE DIE AND THEN WE "
+"WILL RISE AGAIN AND KILL THEM SOME MORE.  ANYONE WHO SAYS DIFFERENT IS THE "
+"ENEMY.\""
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"MANY MISSING: A wave of missing persons reports have shaken an already "
+"troubled nation, especially among members of the popular Swampers religion "
+"and hotel and casino chain.  Asked to comment, their charismatic CEO Bo "
+"Baronyx refused to explain their whereabouts, saying only 'The great eaters "
+"have returned and they will be sated' and winked and smiled in the most "
+"charming way.  The Swampers are doing their part in this crisis and are "
+"accepting donations of meat and money to feed the hungry."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"CUTEST VISITORS: A mysterious portal of shimmering blue energy and flashing "
+"lights opened above Cretaceous Kindergarten today, showering children with "
+"the cutest tiny fuzzy dinosaurs and dinosaur babies.  Local paleontologist "
+"and exotic dancer Othniel Marsh expressed skepticism that dinosaurs had not "
+"died out millions of years ago but 'at this point why not, at least they're "
+"cute'.  And cute they are!"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"DENIES DINOSAURS: FEMA official Ernst Stromer said late last night that the "
+"cities are not safe and reports of dinosaurs outside the cities are wrong "
+"and 'possibly drug-related' but cautioned refugees to 'get all the guns you "
+"can' because 'it's bad out there'."
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"NEVER HUMANS?: Swamper scientists report that in every historical simulation"
+" they have run, humans never evolve, with dinosaurs remaining the dominant "
+"life form to present day in every model unless an artificial disaster event "
+"is introduced.  'Fear not, this world is healing, we will return to normal "
+"soon' reports Swamper CEO Bo Baronyx confidently.  Sounds like good news "
+"ahead!"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"GOD IS A DINOSAUR?:  Colorful FEMA official and slug mutant Ernst Stromer "
+"reported this morning that he has 'seen god and she is a hungry torvosaurus "
+"too beautiful for this world'.  He says that she 'cannot be harmed by "
+"bullets' and that she is 'made of beautiful golden light from above' and she"
+" demands human flesh.  Stromer says that every fighting man and woman must "
+"go to her to be destroyed by her 'atomic majesty'.  Good news America!"
+msgstr ""
+
+#: data/mods/DinoMod/snippets/snippets.json
+msgid ""
+"\n"
+"IMMERSION LOG: 30D-A\n"
+"\n"
+"PRELIMINARY REPORT:\n"
+"\n"
+"SUMMARY:\n"
+"Exploration into sub-scape 30-D revealed biosphere similar to prime, similar to previous sub-scapes in same frequency.  Expedition team reported visual contact with several reptoids ('dinosaurs') and warm, humid conditions.  Though one reptoid made visual contact with the expedition team and approached, all members were returned with no incident.  Refer to previous sub-scape system 30 reports and meta-comparison report for further information."
 msgstr ""
 
 #: data/mods/EW_Pack/ew_ammo.json
@@ -224364,1564 +225825,6 @@ msgstr ""
 msgid "You gain XP from kills that you can spend on increasing your stats."
 msgstr ""
 
-#: data/raw/keybindings.json src/input.cpp src/messages.cpp
-msgid "Scroll up"
-msgstr "Felfele görget"
-
-#: data/raw/keybindings.json src/input.cpp src/messages.cpp
-msgid "Scroll down"
-msgstr "Lefele görget"
-
-#: data/raw/keybindings.json
-msgid "Pan up"
-msgstr "Felfelé görget"
-
-#: data/raw/keybindings.json
-msgid "Pan down"
-msgstr "Lefelé görget"
-
-#: data/raw/keybindings.json
-msgid "Cancel menu"
-msgstr "Menü vissza"
-
-#: data/raw/keybindings.json
-msgid "Show description of melee style"
-msgstr "Kéziharc stílus leírását mutatja"
-
-#: data/raw/keybindings.json
-msgid "Pan left"
-msgstr "Balra görget"
-
-#: data/raw/keybindings.json
-msgid "Pan right"
-msgstr "Jobbra görget"
-
-#: data/raw/keybindings.json
-msgid "Pan up-left"
-msgstr "Balra-fel görget"
-
-#: data/raw/keybindings.json
-msgid "Pan up-right"
-msgstr "Jobbra-fel görget"
-
-#: data/raw/keybindings.json
-msgid "Pan down-left"
-msgstr "Balra-le görget"
-
-#: data/raw/keybindings.json
-msgid "Pan down-right"
-msgstr "Jobbra-le görget"
-
-#: data/raw/keybindings.json src/inventory_ui.cpp
-msgid "Page up"
-msgstr "Előző oldal"
-
-#: data/raw/keybindings.json src/inventory_ui.cpp
-msgid "Page down"
-msgstr "Köv. oldal"
-
-#: data/raw/keybindings.json
-msgid "Select all"
-msgstr "Mind kiválaszt"
-
-#: data/raw/keybindings.json
-msgid "Scroll item info up"
-msgstr "Tárgy infó felfele görget"
-
-#: data/raw/keybindings.json
-msgid "Scroll item info down"
-msgstr "Tárgy infó lefele görget"
-
-#: data/raw/keybindings.json src/game.cpp src/inventory_ui.cpp
-msgid "Previous item"
-msgstr "Előző tárgy"
-
-#: data/raw/keybindings.json src/game.cpp src/inventory_ui.cpp
-msgid "Next item"
-msgstr "Köv. tárgy"
-
-#: data/raw/keybindings.json
-msgid "Unmark selected item"
-msgstr "Kiválasztott elem jelölés törlése"
-
-#: data/raw/keybindings.json
-msgid "Mark selected item"
-msgstr "Kiválaszott elem kijelölése"
-
-#: data/raw/keybindings.json
-msgid "Enable auto note for map extra"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle auto notes option"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Disable auto note for map extra"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Add rule"
-msgstr "Új szabály"
-
-#: data/raw/keybindings.json
-msgid "Remove rule"
-msgstr "Szabály törlése"
-
-#: data/raw/keybindings.json
-msgid "Copy rule"
-msgstr "Szabály másolása"
-
-#: data/raw/keybindings.json
-msgid "Move rule global <-> character"
-msgstr "Szabály mozgatása globális <-> karakterre"
-
-#: data/raw/keybindings.json
-msgid "Enable rule"
-msgstr "Szabály be"
-
-#: data/raw/keybindings.json
-msgid "Disable rule"
-msgstr "Szabály ki"
-
-#: data/raw/keybindings.json
-msgid "Move rule up"
-msgstr "Szabály feljebb"
-
-#: data/raw/keybindings.json
-msgid "Move rule down"
-msgstr "Szabály lejjebb"
-
-#: data/raw/keybindings.json
-msgid "Test rule"
-msgstr "Szabály kipróbálása"
-
-#: data/raw/keybindings.json
-msgid "Enable auto pickup option"
-msgstr "Auto felszed. engedélyezése"
-
-#: data/raw/keybindings.json
-msgid "Add default ruleset"
-msgstr "Alap szabályok hozzáadása"
-
-#: data/raw/keybindings.json
-msgid "Enable safemode option"
-msgstr "Biztonságos mód be"
-
-#: data/raw/keybindings.json
-msgid "Display Usage Help"
-msgstr "Használati súgó"
-
-#: data/raw/keybindings.json
-msgid "Select armor for moving"
-msgstr "Melyik páncélt mozgatod?"
-
-#: data/raw/keybindings.json
-msgid "Select panel for moving"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle panel off"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Change side armor is worn on"
-msgstr "Melyik oldalon legyen a páncél?"
-
-#: data/raw/keybindings.json
-msgid "Assign invlets to armor"
-msgstr "Invlet páncélhoz rendelése"
-
-#: data/raw/keybindings.json
-msgid "Sort armor into natural layer order"
-msgstr "A páncélt a természetes rétegsorrendbe rendezi"
-
-#: data/raw/keybindings.json
-msgid "Equip armor from inventory"
-msgstr "Páncél felvétele leltárból"
-
-#: data/raw/keybindings.json
-msgid "Equip armor from inventory at this position"
-msgstr "Páncél felvétele leltárból ebben a pozícióban"
-
-#: data/raw/keybindings.json
-msgid "Unequip selected armor"
-msgstr "Kiválasztott páncél levétele"
-
-#: data/raw/keybindings.json
-msgid "Display keybindings menu"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Reset filter"
-msgstr "Szűrő törlése"
-
-#: data/raw/keybindings.json
-msgid "Cycle display mode"
-msgstr "Megjelenítési mód váltás"
-
-#: data/raw/keybindings.json
-msgid "Show recipe result"
-msgstr "Megmutatja a recept eredményét"
-
-#: data/raw/keybindings.json
-msgid "Hide/show recipe"
-msgstr "Recept mutatása/elrejtése"
-
-#: data/raw/keybindings.json
-msgid "Batch crafting"
-msgstr "Tömeges készítés"
-
-#: data/raw/keybindings.json
-msgid "Hide/show unavailable"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Related recipes"
-msgstr "Hasonló receptek"
-
-#: data/raw/keybindings.json
-msgid "Toggle recipes to be shown in favorite tab"
-msgstr "Receptek mutatása ki/be a kedvencek fülön"
-
-#: data/raw/keybindings.json
-msgid "Go Up"
-msgstr "Felmenni"
-
-#: data/raw/keybindings.json
-msgid "Go Down"
-msgstr "Lemenni"
-
-#: data/raw/keybindings.json
-msgid "Next level"
-msgstr "Következő szint"
-
-#: data/raw/keybindings.json
-msgid "Previous level"
-msgstr "Előző szint"
-
-#: data/raw/keybindings.json
-msgid "Reset level"
-msgstr "Szint alaphelyzetre állítása"
-
-#: data/raw/keybindings.json
-msgid "Undo move"
-msgstr "Mozgatás visszavonása"
-
-#: data/raw/keybindings.json
-msgid "Create New level"
-msgstr "Új szint"
-
-#: data/raw/keybindings.json
-msgid "Toggle Flag"
-msgstr "Zászló ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle lights"
-msgstr "Fények ki/be"
-
-#: data/raw/keybindings.json
-msgid "Confirm Choice"
-msgstr "Választás megerősítése"
-
-#: data/raw/keybindings.json
-msgid "Save mods as default"
-msgstr "Modok alapértelmezettként mentése"
-
-#: data/raw/keybindings.json
-msgid "View full mod description"
-msgstr "Mod teljes leírása"
-
-#: data/raw/keybindings.json
-msgid "Move selected mod up"
-msgstr "Kiválasztott mod feljebb"
-
-#: data/raw/keybindings.json
-msgid "Move selected mod down"
-msgstr "Kiválasztott mod lejjebb"
-
-#: data/raw/keybindings.json
-msgid "Show obsolete mods"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Move to next category tab"
-msgstr "Ugrás a következő kategória fülre"
-
-#: data/raw/keybindings.json
-msgid "Move to previous category tab"
-msgstr "Ugrás az előző kategória fülre"
-
-#: data/raw/keybindings.json
-msgid "Pick random world name"
-msgstr "Világ neve találomra"
-
-#: data/raw/keybindings.json
-msgid "Exit worldgen screen"
-msgstr "Kilépés a világgenerációból"
-
-#: data/raw/keybindings.json
-msgid "Zoom Out"
-msgstr "Zoom ki"
-
-#: data/raw/keybindings.json
-msgid "Zoom In"
-msgstr "Zoom be"
-
-#: data/raw/keybindings.json
-msgid "Delete Note"
-msgstr "Jegyzet törlése"
-
-#: data/raw/keybindings.json
-msgid "Edit Note"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Mark as Dangerous"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Change sorting mode"
-msgstr "Sorrendmód-váltás"
-
-#: data/raw/keybindings.json
-msgid "Clear filter"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Create/Edit Note"
-msgstr "Új jegyzet/szerk."
-
-#: data/raw/keybindings.json
-msgid "List Notes"
-msgstr "Jegyzetek listázása"
-
-#: data/raw/keybindings.json
-msgid "Toggle Blinking"
-msgstr "Villogás ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle Overlays"
-msgstr "Átfedés ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle Land Use Codes"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle Map Notes"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle City Labels"
-msgstr "Városnevek ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle Hordes"
-msgstr "Hordák ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle Visible Weather"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle Forest Trails"
-msgstr "Erdei ösvények ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle Explored"
-msgstr "Felfedezett ki/be"
-
-#: data/raw/keybindings.json
-msgid "Place Overmap Terrain"
-msgstr "Nagytérkép felszín elhelyezése"
-
-#: data/raw/keybindings.json
-msgid "Place Overmap Special"
-msgstr "Nagytérkép különleges helyszín elhelyezése"
-
-#: data/raw/keybindings.json
-msgid "View Missions"
-msgstr "Küldetések megtekintése"
-
-#: data/raw/keybindings.json
-msgid "Rotate"
-msgstr "Forgat"
-
-#: data/raw/keybindings.json src/construction.cpp
-msgid "Search"
-msgstr "Keres"
-
-#: data/raw/keybindings.json
-msgid "Exit screen"
-msgstr "Kilép"
-
-#: data/raw/keybindings.json
-msgid "Choose destination"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Fire Weapon"
-msgstr "Fegyver elsütése"
-
-#: data/raw/keybindings.json
-msgid "Prev Target"
-msgstr "Előző cél"
-
-#: data/raw/keybindings.json
-msgid "Next Target"
-msgstr "Köv. cél"
-
-#: data/raw/keybindings.json src/ranged.cpp
-msgid "Aim"
-msgstr "Célzás"
-
-#: data/raw/keybindings.json
-msgid "Aimed Shot"
-msgstr "Célzott lövés"
-
-#: data/raw/keybindings.json
-msgid "Careful Shot"
-msgstr "Óvatos lövés"
-
-#: data/raw/keybindings.json
-msgid "Precise Shot"
-msgstr "Pontos lövés"
-
-#: data/raw/keybindings.json
-msgid "Switch ammo"
-msgstr "Lőszer váltása"
-
-#: data/raw/keybindings.json
-msgid "Switch Firing Mode"
-msgstr "Tüzelési mód váltása"
-
-#: data/raw/keybindings.json
-msgid "Toggle turret lines"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle Snap to Target"
-msgstr "Célzárolás ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle moving view / cursor"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Select"
-msgstr "Kiválaszt"
-
-#: data/raw/keybindings.json
-msgid "Secondary Select"
-msgstr "Másodlagos kiválaszt"
-
-#: data/raw/keybindings.json
-msgid "Mouse Move"
-msgstr "Egeres mozgás"
-
-#: data/raw/keybindings.json
-msgid "Go to next tab"
-msgstr "Köv. fül"
-
-#: data/raw/keybindings.json
-msgid "Go to prev tab"
-msgstr "Előző fül"
-
-#: data/raw/keybindings.json
-msgid "Toggle Fast Scroll"
-msgstr "Gyorsgörgetés ki/be"
-
-#: data/raw/keybindings.json
-msgid "Show extended description"
-msgstr "Részletes leírást mutat"
-
-#: data/raw/keybindings.json
-msgid "Travel to destination"
-msgstr "Utazás a célponthoz"
-
-#: data/raw/keybindings.json
-msgid "Center On Character"
-msgstr "Játékos középre állítása"
-
-#: data/raw/keybindings.json
-msgid "Display Help"
-msgstr "Súgót mutat"
-
-#: data/raw/keybindings.json
-msgid "Change gender"
-msgstr "Másik gender"
-
-#: data/raw/keybindings.json
-msgid "Save template"
-msgstr "Sablon mentése"
-
-#: data/raw/keybindings.json
-msgid "Start"
-msgstr "Start"
-
-#: data/raw/keybindings.json
-msgid "Delete template"
-msgstr "Sablon törlése"
-
-#: data/raw/keybindings.json
-msgid "Reroll Random Character"
-msgstr "Új karakter találomra"
-
-#: data/raw/keybindings.json
-msgid "Reroll Random Character With Scenario"
-msgstr "Új karakter és helyzet találomra"
-
-#: data/raw/keybindings.json
-msgid "Pick random character description"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Choose character start location"
-msgstr "Karaktert kezdőhely kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Exit new character screen"
-msgstr "Kilépés az új karakter képernyőről"
-
-#: data/raw/keybindings.json
-msgid "Toggle sorting order"
-msgstr "Sorrend átváltása"
-
-#: data/raw/keybindings.json
-msgid "Scroll description up"
-msgstr "Leírás felfele görgetése"
-
-#: data/raw/keybindings.json
-msgid "Scroll description down"
-msgstr "Leírás lefele görgetése"
-
-#: data/raw/keybindings.json
-msgid "Install part"
-msgstr "Alkatrész beszerelése"
-
-#: data/raw/keybindings.json
-msgid "Repair part"
-msgstr "Alkatrész javítása"
-
-#: data/raw/keybindings.json
-msgid "Mend part"
-msgstr "Alkatrész megszerelése"
-
-#: data/raw/keybindings.json
-msgid "Refill tank/battery"
-msgstr "Tartály/akkumulátor újratöltése"
-
-#: data/raw/keybindings.json
-msgid "Unload fuel bunker"
-msgstr "Tüzelőanyag-kamra kiürítése"
-
-#: data/raw/keybindings.json
-msgid "Remove part"
-msgstr "Alkatrész eltávolítása"
-
-#: data/raw/keybindings.json
-msgid "Rename vehicle"
-msgstr "Jármű átnevezése"
-
-#: data/raw/keybindings.json
-msgid "Siphon from tank"
-msgstr "Tartály leszívása"
-
-#: data/raw/keybindings.json
-msgid "Change tire"
-msgstr "Kerékcsere"
-
-#: data/raw/keybindings.json
-msgid "Change part shape"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Assign crew"
-msgstr "Személyzet kijelölése"
-
-#: data/raw/keybindings.json
-msgid "Relabel a portion of a vehicle"
-msgstr "Jármű részének átnevezése"
-
-#: data/raw/keybindings.json
-msgid "Scroll up through fuel list"
-msgstr "Tüzelőanyag listán felfele görget"
-
-#: data/raw/keybindings.json
-msgid "Scroll down through fuel list"
-msgstr "Tüzelőanyag listán lefele görget"
-
-#: data/raw/keybindings.json
-msgid "Scroll up through vehicle part descriptions"
-msgstr "Átgörget a jármű alkatrészeinek leírásán"
-
-#: data/raw/keybindings.json
-msgid "Scroll down through vehicle part descriptions"
-msgstr "Lefele görget a jármű alkatrészeinek leírásán"
-
-#: data/raw/keybindings.json
-msgid "Scroll up through vehicle overview"
-msgstr "Felfele görget a jármű áttekintésén"
-
-#: data/raw/keybindings.json
-msgid "Scroll down through vehicle overview"
-msgstr "Lefele görget a jármű áttekintésén"
-
-#: data/raw/keybindings.json
-msgid "Toggle unavailable constructions"
-msgstr "El nem elérhető építés ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle construction as favorite"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Scroll to previous stage"
-msgstr "Lapozás az előző részhez"
-
-#: data/raw/keybindings.json
-msgid "Scroll to next stage"
-msgstr "Lapozás a következő részhez"
-
-#: data/raw/keybindings.json
-msgid "Show all"
-msgstr "Mind mutat"
-
-#: data/raw/keybindings.json
-msgid "Confirm & quit"
-msgstr "Megerősítés és kilépés"
-
-#: data/raw/keybindings.json
-msgid "Resize"
-msgstr "Átméretezés"
-
-#: data/raw/keybindings.json
-msgid "To start"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Swap origin and target"
-msgstr "Eredeti és cél felcserélése"
-
-#: data/raw/keybindings.json
-msgid "Move shape"
-msgstr "Alak mozgatása"
-
-#: data/raw/keybindings.json
-msgid "Switch to move point / confirm"
-msgstr "Pont mozgatása / megerősítése"
-
-#: data/raw/keybindings.json
-msgid "Edit traps"
-msgstr "Csapdák szerkesztése"
-
-#: data/raw/keybindings.json
-msgid "Edit fields"
-msgstr "Mezők szerkesztése"
-
-#: data/raw/keybindings.json
-msgid "Edit terrain"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Edit furniture"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Edit overmap / mapgen"
-msgstr "Kis/nagy térkép szerkesztése"
-
-#: data/raw/keybindings.json
-msgid "Edit items"
-msgstr "Tárgyak szerkesztése"
-
-#: data/raw/keybindings.json
-msgid "Edit creatures"
-msgstr "Lények szerkesztése"
-
-#: data/raw/keybindings.json
-msgid "Show whole map"
-msgstr "Egész térkép mutatása"
-
-#: data/raw/keybindings.json
-msgid "Wide move left"
-msgstr "Széles mozgás balra"
-
-#: data/raw/keybindings.json
-msgid "Wide move right"
-msgstr "Széles mozgás jobbra"
-
-#: data/raw/keybindings.json
-msgid "Wide move up"
-msgstr "Széles mozgás fel"
-
-#: data/raw/keybindings.json
-msgid "Wide move down"
-msgstr "Széles mozgás le"
-
-#: data/raw/keybindings.json
-msgid "Toggle category selection mode"
-msgstr "Kategória kiválasztási mód váltása"
-
-#: data/raw/keybindings.json
-msgid "Set item filter"
-msgstr "Tárgy szűrő beállítása"
-
-#: data/raw/keybindings.json
-msgid "Toggle item as favorite"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle activate/examine"
-msgstr "Aktiválás / vizsgálás választása"
-
-#: data/raw/keybindings.json
-msgid "Toggle safe fuel mod"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle auto start mod"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Sort bionics list"
-msgstr ""
-
-#: data/raw/keybindings.json src/martialarts.cpp
-msgid "Pause"
-msgstr "Szünet"
-
-#: data/raw/keybindings.json
-msgid "Toggle Map Memory"
-msgstr "Térképmemória ki/be"
-
-#: data/raw/keybindings.json
-msgid "Center View"
-msgstr "Nézet középre állítása"
-
-#: data/raw/keybindings.json
-msgid "Move View North"
-msgstr "Nézettel menj északra"
-
-#: data/raw/keybindings.json
-msgid "Move View East"
-msgstr "Nézettel menj keletre"
-
-#: data/raw/keybindings.json
-msgid "Move View South"
-msgstr "Nézettel menj délre"
-
-#: data/raw/keybindings.json
-msgid "Move View West"
-msgstr "Nézettel menj nyugatra"
-
-#: data/raw/keybindings.json
-msgid "Open Door"
-msgstr "Ajtónyitás"
-
-#: data/raw/keybindings.json
-msgid "Close Door"
-msgstr "Ajtózárás"
-
-#: data/raw/keybindings.json
-msgid "Smash Nearby Terrain"
-msgstr "Zúzd szét a közeli területet"
-
-#: data/raw/keybindings.json
-msgid "Examine Nearby Terrain"
-msgstr "Vizsgáld át a közeli területet"
-
-#: data/raw/keybindings.json
-msgid "Advanced Inventory management"
-msgstr "Haladó leltár kezelés"
-
-#: data/raw/keybindings.json
-msgid "Pick up Nearby Item(s)"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Pickup Item(s) at Player Feet"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Grab something nearby"
-msgstr "Ragadj meg valamit a közelben"
-
-#: data/raw/keybindings.json
-msgid "Haul items along the ground"
-msgstr "Földön heverő tárgyak vonszolása"
-
-#: data/raw/keybindings.json
-msgid "Zone activities"
-msgstr "Zóna aktivitás"
-
-#: data/raw/keybindings.json src/options.cpp
-msgid "Butcher"
-msgstr "Mészárlás"
-
-#: data/raw/keybindings.json
-msgid "Chat with NPC"
-msgstr "Beszélgess egy NPC-vel"
-
-#: data/raw/keybindings.json
-msgid "Look Around"
-msgstr "Nézz körbe"
-
-#: data/raw/keybindings.json
-msgid "Toggle thief mode"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Peek Around Corners"
-msgstr "Kukucskálj ki a sarok mögül"
-
-#: data/raw/keybindings.json
-msgid "List all items around the player"
-msgstr "Mutasd meg a játékos körüli összes tárgyat"
-
-#: data/raw/keybindings.json
-msgid "Manage zones"
-msgstr "Zónakezelés"
-
-#: data/raw/keybindings.json
-msgid "Open Inventory"
-msgstr "Nyisd ki a leltárt"
-
-#: data/raw/keybindings.json
-msgid "Compare two Items"
-msgstr "Két tárgy összehasonlítása"
-
-#: data/raw/keybindings.json src/game_inventory.cpp
-msgid "Swap Inventory Letters"
-msgstr "Leltár betűk felcserélése"
-
-#: data/raw/keybindings.json
-msgid "Apply or Use Item"
-msgstr "Tárgy használata"
-
-#: data/raw/keybindings.json
-msgid "Apply or Use Wielded Item"
-msgstr "Kézben tartott tárgy használata"
-
-#: data/raw/keybindings.json
-msgid "Wear Item"
-msgstr "Tárgy viselése"
-
-#: data/raw/keybindings.json
-msgid "Take Off Worn Item"
-msgstr "Viselt tárgy levétele"
-
-#: data/raw/keybindings.json
-msgid "Consume Item Menu"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Wield"
-msgstr "Kézbe venni"
-
-#: data/raw/keybindings.json
-msgid "Select Martial Arts Style"
-msgstr "Harcművészeti stílus kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Reload Weapons"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Reload Wielded Item"
-msgstr "Kézben fogott tárgy újratöltése"
-
-#: data/raw/keybindings.json
-msgid "Unload or Empty Wielded Item"
-msgstr "Kézben fogott tárgy kiürítése"
-
-#: data/raw/keybindings.json
-msgid "Throw Item"
-msgstr "Tárgy dobása"
-
-#: data/raw/keybindings.json
-msgid "Blind Throw Item"
-msgstr "Tárgy dobása vakon"
-
-#: data/raw/keybindings.json
-msgid "Fire Wielded Item"
-msgstr "A kézben fogott tárgy elsütése"
-
-#: data/raw/keybindings.json
-msgid "Toggle attack mode of Wielded Item"
-msgstr "Kézben fogott tárgy támadási módjának megváltoztatása"
-
-#: data/raw/keybindings.json
-msgid "Select default ammo for Wielded Item"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Drop Item"
-msgstr "Tárgy leejtése"
-
-#: data/raw/keybindings.json
-msgid "Drop Item to Adjacent Tile"
-msgstr "Tárgy leejtése a szomszédos négyzetre"
-
-#: data/raw/keybindings.json
-msgid "View/Activate Bionics"
-msgstr "Bionikus modulok áttekintése/aktiválása"
-
-#: data/raw/keybindings.json
-msgid "View/Activate Mutations"
-msgstr "Mutációk áttekintése/aktiválása"
-
-#: data/raw/keybindings.json
-msgid "Re-layer armor/clothing"
-msgstr "Páncélzat és ruha újrarétegezése"
-
-#: data/raw/keybindings.json
-msgid "Wait for Several Minutes"
-msgstr "Várakozás több percig"
-
-#: data/raw/keybindings.json
-msgid "Craft Items"
-msgstr "Tárgyak elkészítése"
-
-#: data/raw/keybindings.json
-msgid "Recraft last recipe"
-msgstr "Utolsó recept újbóli elkészítése"
-
-#: data/raw/keybindings.json
-msgid "Construct Terrain"
-msgstr "Terület építése"
-
-#: data/raw/keybindings.json
-msgid "Disassemble items"
-msgstr "Tárgyak szétszerelése"
-
-#: data/raw/keybindings.json src/gamemode_defense.cpp
-msgid "Sleep"
-msgstr "Alvás"
-
-#: data/raw/keybindings.json
-msgid "Control Vehicle"
-msgstr "Jármű vezérlése"
-
-#: data/raw/keybindings.json
-msgid "Toggle Auto Travel Mode"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle Safe Mode"
-msgstr "Biztonságos mód ki/be"
-
-#: data/raw/keybindings.json
-msgid "Ignore Nearby Enemy"
-msgstr "Közeli ellenség figyelmen kívül hagyása"
-
-#: data/raw/keybindings.json
-msgid "Whitelist enemy"
-msgstr "Ellenség fehérlistára"
-
-#: data/raw/keybindings.json
-msgid "Save and Quit"
-msgstr "Mentés és kilépés"
-
-#: data/raw/keybindings.json
-msgid "Commit Suicide"
-msgstr "Öngyilkosság"
-
-#: data/raw/keybindings.json
-msgid "View Player Info"
-msgstr "Játékos infó megtekintése"
-
-#: data/raw/keybindings.json
-msgid "View Map"
-msgstr "Térkép megtekintése"
-
-#: data/raw/keybindings.json
-msgid "Look at the sky"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "View Factions"
-msgstr "Frakciók megtekintése"
-
-#: data/raw/keybindings.json
-msgid "View Achievements, Scores, and Kills"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "View Morale"
-msgstr "Hangulat megtekintése"
-
-#: data/raw/keybindings.json
-msgid "View Message Log"
-msgstr "Üzenetfal megtekintése"
-
-#: data/raw/keybindings.json
-msgid "View Help"
-msgstr "Súgó megtekintése"
-
-#: data/raw/keybindings.json
-msgid "Toggle Debug Mode"
-msgstr "Debug mód ki/be"
-
-#: data/raw/keybindings.json
-msgid "Debug Menu"
-msgstr "Debug menü"
-
-#: data/raw/keybindings.json
-msgid "View Scentmap"
-msgstr "Szagtérkép megtekintése"
-
-#: data/raw/keybindings.json
-msgid "View Scent Type"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "View Temperature Map"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "View Visibility Map"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "View Lighting Map"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "View Radiation Map"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "View Submap Grid"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Switch Sidebar Style"
-msgstr "Oldalsáv stílus váltása"
-
-#: data/raw/keybindings.json
-msgid "Toggle Fullscreen mode"
-msgstr "Teljes képernyős mód ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle Minimap"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Sidebar Options"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Reload Item"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Reload Tileset"
-msgstr "Grafikai készlet újbóli betöltése"
-
-#: data/raw/keybindings.json
-msgid "Toggle Auto Features"
-msgstr "Autom. beállítások ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle Auto Pulp/Butcher"
-msgstr "Autom. pépesítés/mészárlás ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle Auto Mining"
-msgstr "Autom. bányászat ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle Auto Foraging"
-msgstr "Autom. guberálás ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle Auto Pickup"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Action Menu"
-msgstr "Akciómenü"
-
-#: data/raw/keybindings.json
-msgid "Item Action Menu"
-msgstr "Tárgy akciómenüje"
-
-#: data/raw/keybindings.json
-msgid "Quicksave"
-msgstr "Gyorsmentés"
-
-#: data/raw/keybindings.json
-msgid "Quickload"
-msgstr "Gyorstöltés"
-
-#: data/raw/keybindings.json
-msgid "Move View Northeast"
-msgstr "Nézettel menj északkeletre"
-
-#: data/raw/keybindings.json
-msgid "Move View Southeast"
-msgstr "Nézettel menj délkeletre"
-
-#: data/raw/keybindings.json
-msgid "Move View Southwest"
-msgstr "Nézettel menj délnyugatra"
-
-#: data/raw/keybindings.json
-msgid "Move View Northwest"
-msgstr "Nézettel menj északnyugatra"
-
-#: data/raw/keybindings.json
-msgid "Burst-Fire Wielded Item"
-msgstr "A kézben fogott tárgy folyamatos elsütése"
-
-#: data/raw/keybindings.json
-msgid "Craft as long as possible"
-msgstr "Addig gyártsa a tárgyakat, amíg lehet"
-
-#: data/raw/keybindings.json
-msgid "Toggle Auto-Safemode"
-msgstr "Auto biztonságos mód ki/be"
-
-#: data/raw/keybindings.json
-msgid "Autoattack"
-msgstr "Autotámádás"
-
-#: data/raw/keybindings.json
-msgid "Main Menu"
-msgstr "Főmenü"
-
-#: data/raw/keybindings.json src/game.cpp
-msgid "Options"
-msgstr "Opciók"
-
-#: data/raw/keybindings.json
-msgid "Autopickup manager"
-msgstr "Auto felvét kezelése"
-
-#: data/raw/keybindings.json
-msgid "Autonotes manager"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Safe Mode manager"
-msgstr "Biztonságos mód kezelése"
-
-#: data/raw/keybindings.json src/distraction_manager.cpp
-msgid "Distractions manager"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Color manager"
-msgstr "Színbeállítások"
-
-#: data/raw/keybindings.json
-msgid "Active World Mods"
-msgstr "Világban aktivált modok"
-
-#: data/raw/keybindings.json src/handle_action.cpp
-msgid "Cycle move mode (run/walk/crouch)"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Reset Movement to Walk"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle Run"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Toggle Crouch"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Movement Mode Menu"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Spellcasting"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Open Diary"
-msgstr ""
-
-#: data/raw/keybindings.json src/game_inventory.cpp
-msgid "Compare"
-msgstr "Összehasonlítás"
-
-#: data/raw/keybindings.json src/iexamine.cpp
-msgid "Examine"
-msgstr "Megvizsgálás"
-
-#: data/raw/keybindings.json
-msgid "Increase priority"
-msgstr "Magasabb prioritás"
-
-#: data/raw/keybindings.json
-msgid "Decrease priority"
-msgstr "Alacsonyabb prioritás"
-
-#: data/raw/keybindings.json
-msgid "Change sort order"
-msgstr "Sorrendváltás"
-
-#: data/raw/keybindings.json
-msgid "Add to safemode blacklist"
-msgstr "Hozzáad a bizt. mód feketelistához"
-
-#: data/raw/keybindings.json
-msgid "Remove from safemode blacklist"
-msgstr "Eltávolít a bizt. mód feketelistáról"
-
-#: data/raw/keybindings.json
-msgid "look around"
-msgstr "körbenéz"
-
-#: data/raw/keybindings.json
-msgctxt "verb"
-msgid "fire"
-msgstr "tűz"
-
-#: data/raw/keybindings.json
-msgid "List items and monsters"
-msgstr "Tárgyak és szörnyek listázása"
-
-#: data/raw/keybindings.json
-msgid "Reassign invlet"
-msgstr "Invlet átrendelése"
-
-#: data/raw/keybindings.json src/construction.cpp src/game.cpp
-#: src/mission_companion.cpp
-msgid "Move cursor up"
-msgstr "Kurzor mozgatása felfelé"
-
-#: data/raw/keybindings.json src/construction.cpp src/game.cpp
-#: src/mission_companion.cpp
-msgid "Move cursor down"
-msgstr "Kurzor mozgatása lefelé"
-
-#: data/raw/keybindings.json
-msgid "Exit this keybinding screen"
-msgstr "Kilép a bill. kiosztás képernyőből."
-
-#: data/raw/keybindings.json
-msgid "Remove bindings"
-msgstr "Kötések eltávolítása"
-
-#: data/raw/keybindings.json
-msgid "Add local keybinding"
-msgstr "Helyi billentyűkombináció"
-
-#: data/raw/keybindings.json
-msgid "Add global keybinding"
-msgstr "Globális billentyűkombináció"
-
-#: data/raw/keybindings.json
-msgid "Execute action keybinding"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Add zone"
-msgstr "Zóna hozzáadása"
-
-#: data/raw/keybindings.json
-msgid "Remove zone"
-msgstr "Zóna eltávolítása"
-
-#: data/raw/keybindings.json
-msgid "Move zone up"
-msgstr "Zóna feljebb"
-
-#: data/raw/keybindings.json
-msgid "Move zone down"
-msgstr "Zóna lejjebb"
-
-#: data/raw/keybindings.json
-msgid "Show zone on map"
-msgstr "Zóna mutatása a térképen"
-
-#: data/raw/keybindings.json
-msgid "Enable zone"
-msgstr "Zóna bekapcsolása"
-
-#: data/raw/keybindings.json
-msgid "Disable zone"
-msgstr "Zóna kikapcsolása"
-
-#: data/raw/keybindings.json
-msgid "Show all zones / hide distant zones"
-msgstr "Összes zónát mutat / távoli zónát elrejt"
-
-#: data/raw/keybindings.json
-msgid "Select left inventory"
-msgstr "Bal oldali leltár kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select right inventory"
-msgstr "Jobb oldali leltár kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Toggle tab"
-msgstr "Fül ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle vehicle"
-msgstr "Jármű ki/be"
-
-#: data/raw/keybindings.json
-msgid "Toggle auto-pickup for item"
-msgstr "Tárgy auto felszedése ki/be"
-
-#: data/raw/keybindings.json
-msgid "Move a single item"
-msgstr "Egyetlen tárgy mozgatása"
-
-#: data/raw/keybindings.json
-msgid "Move an amount of item"
-msgstr "Adott számú tárgy mozgatása"
-
-#: data/raw/keybindings.json
-msgid "Move item stack"
-msgstr "Tárgy halom mozgatása"
-
-#: data/raw/keybindings.json
-msgid "Move all items"
-msgstr "Összes tárgy mozgatása"
-
-#: data/raw/keybindings.json
-msgid "Mark/unmark non-favorite items in multidrop menu"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Select items @ North-West"
-msgstr "Északnyugati tárgyak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items @ North"
-msgstr "Északi tárgyak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items @ North-East"
-msgstr "Északkeleti tárgyak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items @ West"
-msgstr "Nyugati tárgyak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items @ center"
-msgstr "Középső tárgyak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items @ East"
-msgstr "Keleti tárgyak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items @ South-West"
-msgstr "Délnyugati tárgyak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items @ South"
-msgstr "Déli tárgyak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items @ South-East"
-msgstr "Délkeleti tárgyak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items from above"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Select items from below"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Select items in inventory"
-msgstr "Leltár tárgyainak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items @ all 9 fields"
-msgstr "Összes 9 mező tárgyainak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items in dragged container"
-msgstr "Vonszolt tároló tárgyainak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items in container"
-msgstr "Tároló tárgyainak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Select items currently worn"
-msgstr "Viselt tárgyak kiválasztása"
-
-#: data/raw/keybindings.json
-msgid "Restore default layout"
-msgstr "Alap megjelenítés visszaállítása"
-
-#: data/raw/keybindings.json
-msgid "Save default layout"
-msgstr "Alap megjelenítés elmentése"
-
-#: data/raw/keybindings.json
-msgid "Sew"
-msgstr "Varr"
-
-#: data/raw/keybindings.json
-msgid "Remove custom color"
-msgstr "Egyedi szín eltávolítása"
-
-#: data/raw/keybindings.json
-msgid "Load color template"
-msgstr "Színsablon betöltése"
-
-#. ~ translation should not exceed 3 console cells
-#: data/raw/keybindings.json src/editmap.cpp src/veh_interact.cpp
-msgid "Yes"
-msgstr "Igen"
-
-#: data/raw/keybindings.json src/editmap.cpp src/options.cpp
-#: src/veh_interact.cpp
-msgid "No"
-msgstr "Nem"
-
-#: data/raw/keybindings.json
-msgid "Load"
-msgstr ""
-
-#: data/raw/keybindings.json src/options.cpp
-msgid "Delete"
-msgstr "Törlésre kerüljön"
-
-#: data/raw/keybindings.json src/character.cpp src/inventory_ui.cpp
-#: src/monexamine.cpp src/npctalk_funcs.cpp src/pickup.cpp src/vehicle_use.cpp
-msgid "Cancel"
-msgstr "Mégse"
-
-#: data/raw/keybindings.json
-msgid "Quit"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Ignore further distractions and finish"
-msgstr "Hagyja figyelmen kívül a több zavaró dolgot, és fejezze be"
-
-#: data/raw/keybindings.json
-msgid "Open manager"
-msgstr ""
-
-#: data/raw/keybindings.json src/options.cpp
-msgid "Always"
-msgstr "Mindig"
-
-#: data/raw/keybindings.json src/options.cpp
-msgid "Never"
-msgstr "Soha"
-
-#: data/raw/keybindings.json
-msgid "Cancel popup"
-msgstr "Felugró ablak visszavonása"
-
-#: data/raw/keybindings.json
-msgid "Describe creature"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Describe furniture"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Describe terrain"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Switch lists"
-msgstr ""
-
-#: data/raw/keybindings.json src/action.cpp
-msgid "Back"
-msgstr "Vissza"
-
-#: data/raw/keybindings.json
-msgid "More"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Examine item"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Cancel trading"
-msgstr ""
-
-#: data/raw/keybindings.json src/character_display.cpp
-msgid "Change profession name"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Wear"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Unwield"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Change side"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Drop"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Unload"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Part reload"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Mend"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Disassemble"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Unfavorite"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Reassign"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Autopickup (add)"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Autopickup (remove)"
-msgstr ""
-
-#: data/raw/keybindings.json src/diary_ui.cpp
-msgid "Delete page"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Export diary to .txt"
-msgstr ""
-
-#: data/raw/keybindings.json
-msgid "Add new page"
-msgstr ""
-
 #: data/raw/tips.json
 msgid "Fires can spread easily, especially with abundance of fuel."
 msgstr ""
@@ -226413,6 +226316,1573 @@ msgstr ""
 
 #: data/raw/keybindings/edit_creature_effects.json
 msgid "Toggle force"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json src/input.cpp src/messages.cpp
+msgid "Scroll up"
+msgstr "Felfele görget"
+
+#: data/raw/keybindings/keybindings.json src/input.cpp src/messages.cpp
+msgid "Scroll down"
+msgstr "Lefele görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pan up"
+msgstr "Felfelé görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pan down"
+msgstr "Lefelé görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Cancel menu"
+msgstr "Menü vissza"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Show description of melee style"
+msgstr "Kéziharc stílus leírását mutatja"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pan left"
+msgstr "Balra görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pan right"
+msgstr "Jobbra görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pan up-left"
+msgstr "Balra-fel görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pan up-right"
+msgstr "Jobbra-fel görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pan down-left"
+msgstr "Balra-le görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pan down-right"
+msgstr "Jobbra-le görget"
+
+#: data/raw/keybindings/keybindings.json src/inventory_ui.cpp
+msgid "Page up"
+msgstr "Előző oldal"
+
+#: data/raw/keybindings/keybindings.json src/inventory_ui.cpp
+msgid "Page down"
+msgstr "Köv. oldal"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select all"
+msgstr "Mind kiválaszt"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll item info up"
+msgstr "Tárgy infó felfele görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll item info down"
+msgstr "Tárgy infó lefele görget"
+
+#: data/raw/keybindings/keybindings.json src/game.cpp src/inventory_ui.cpp
+msgid "Previous item"
+msgstr "Előző tárgy"
+
+#: data/raw/keybindings/keybindings.json src/game.cpp src/inventory_ui.cpp
+msgid "Next item"
+msgstr "Köv. tárgy"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Unmark selected item"
+msgstr "Kiválasztott elem jelölés törlése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Mark selected item"
+msgstr "Kiválaszott elem kijelölése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Enable auto note for map extra"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle auto notes option"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Disable auto note for map extra"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Add rule"
+msgstr "Új szabály"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Remove rule"
+msgstr "Szabály törlése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Copy rule"
+msgstr "Szabály másolása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move rule global <-> character"
+msgstr "Szabály mozgatása globális <-> karakterre"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Enable rule"
+msgstr "Szabály be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Disable rule"
+msgstr "Szabály ki"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move rule up"
+msgstr "Szabály feljebb"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move rule down"
+msgstr "Szabály lejjebb"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Test rule"
+msgstr "Szabály kipróbálása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Enable auto pickup option"
+msgstr "Auto felszed. engedélyezése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Add default ruleset"
+msgstr "Alap szabályok hozzáadása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Enable safemode option"
+msgstr "Biztonságos mód be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Display Usage Help"
+msgstr "Használati súgó"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select armor for moving"
+msgstr "Melyik páncélt mozgatod?"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select panel for moving"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle panel off"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Change side armor is worn on"
+msgstr "Melyik oldalon legyen a páncél?"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Assign invlets to armor"
+msgstr "Invlet páncélhoz rendelése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Sort armor into natural layer order"
+msgstr "A páncélt a természetes rétegsorrendbe rendezi"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Equip armor from inventory"
+msgstr "Páncél felvétele leltárból"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Equip armor from inventory at this position"
+msgstr "Páncél felvétele leltárból ebben a pozícióban"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Unequip selected armor"
+msgstr "Kiválasztott páncél levétele"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Display keybindings menu"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reset filter"
+msgstr "Szűrő törlése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Cycle display mode"
+msgstr "Megjelenítési mód váltás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Show recipe result"
+msgstr "Megmutatja a recept eredményét"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Hide/show recipe"
+msgstr "Recept mutatása/elrejtése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Batch crafting"
+msgstr "Tömeges készítés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Hide/show unavailable"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Related recipes"
+msgstr "Hasonló receptek"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle recipes to be shown in favorite tab"
+msgstr "Receptek mutatása ki/be a kedvencek fülön"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Go Up"
+msgstr "Felmenni"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Go Down"
+msgstr "Lemenni"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Next level"
+msgstr "Következő szint"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Previous level"
+msgstr "Előző szint"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reset level"
+msgstr "Szint alaphelyzetre állítása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Undo move"
+msgstr "Mozgatás visszavonása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Create New level"
+msgstr "Új szint"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Flag"
+msgstr "Zászló ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle lights"
+msgstr "Fények ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Confirm Choice"
+msgstr "Választás megerősítése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Save mods as default"
+msgstr "Modok alapértelmezettként mentése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View full mod description"
+msgstr "Mod teljes leírása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move selected mod up"
+msgstr "Kiválasztott mod feljebb"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move selected mod down"
+msgstr "Kiválasztott mod lejjebb"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Show obsolete mods"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move to next category tab"
+msgstr "Ugrás a következő kategória fülre"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move to previous category tab"
+msgstr "Ugrás az előző kategória fülre"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pick random world name"
+msgstr "Világ neve találomra"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Exit worldgen screen"
+msgstr "Kilépés a világgenerációból"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Zoom Out"
+msgstr "Zoom ki"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Zoom In"
+msgstr "Zoom be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Delete Note"
+msgstr "Jegyzet törlése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Edit Note"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Mark as Dangerous"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Change sorting mode"
+msgstr "Sorrendmód-váltás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Clear filter"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Create/Edit Note"
+msgstr "Új jegyzet/szerk."
+
+#: data/raw/keybindings/keybindings.json
+msgid "List Notes"
+msgstr "Jegyzetek listázása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Blinking"
+msgstr "Villogás ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Overlays"
+msgstr "Átfedés ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Land Use Codes"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Map Notes"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle City Labels"
+msgstr "Városnevek ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Hordes"
+msgstr "Hordák ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Visible Weather"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Forest Trails"
+msgstr "Erdei ösvények ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Explored"
+msgstr "Felfedezett ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Place Overmap Terrain"
+msgstr "Nagytérkép felszín elhelyezése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Place Overmap Special"
+msgstr "Nagytérkép különleges helyszín elhelyezése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Missions"
+msgstr "Küldetések megtekintése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Rotate"
+msgstr "Forgat"
+
+#: data/raw/keybindings/keybindings.json src/construction.cpp
+msgid "Search"
+msgstr "Keres"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Exit screen"
+msgstr "Kilép"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Choose destination"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Fire Weapon"
+msgstr "Fegyver elsütése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Prev Target"
+msgstr "Előző cél"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Next Target"
+msgstr "Köv. cél"
+
+#: data/raw/keybindings/keybindings.json src/ranged.cpp
+msgid "Aim"
+msgstr "Célzás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Aimed Shot"
+msgstr "Célzott lövés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Careful Shot"
+msgstr "Óvatos lövés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Precise Shot"
+msgstr "Pontos lövés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Switch ammo"
+msgstr "Lőszer váltása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Switch Firing Mode"
+msgstr "Tüzelési mód váltása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle turret lines"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Snap to Target"
+msgstr "Célzárolás ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle moving view / cursor"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select"
+msgstr "Kiválaszt"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Secondary Select"
+msgstr "Másodlagos kiválaszt"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Mouse Move"
+msgstr "Egeres mozgás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Go to next tab"
+msgstr "Köv. fül"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Go to prev tab"
+msgstr "Előző fül"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Fast Scroll"
+msgstr "Gyorsgörgetés ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Show extended description"
+msgstr "Részletes leírást mutat"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Travel to destination"
+msgstr "Utazás a célponthoz"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Center On Character"
+msgstr "Játékos középre állítása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Display Help"
+msgstr "Súgót mutat"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Change gender"
+msgstr "Másik gender"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Save template"
+msgstr "Sablon mentése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Start"
+msgstr "Start"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Delete template"
+msgstr "Sablon törlése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reroll Random Character"
+msgstr "Új karakter találomra"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reroll Random Character With Scenario"
+msgstr "Új karakter és helyzet találomra"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pick random character description"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Choose character start location"
+msgstr "Karaktert kezdőhely kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Exit new character screen"
+msgstr "Kilépés az új karakter képernyőről"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle sorting order"
+msgstr "Sorrend átváltása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll description up"
+msgstr "Leírás felfele görgetése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll description down"
+msgstr "Leírás lefele görgetése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Install part"
+msgstr "Alkatrész beszerelése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Repair part"
+msgstr "Alkatrész javítása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Mend part"
+msgstr "Alkatrész megszerelése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Refill tank/battery"
+msgstr "Tartály/akkumulátor újratöltése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Unload fuel bunker"
+msgstr "Tüzelőanyag-kamra kiürítése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Remove part"
+msgstr "Alkatrész eltávolítása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Rename vehicle"
+msgstr "Jármű átnevezése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Siphon from tank"
+msgstr "Tartály leszívása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Change tire"
+msgstr "Kerékcsere"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Change part shape"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Assign crew"
+msgstr "Személyzet kijelölése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Relabel a portion of a vehicle"
+msgstr "Jármű részének átnevezése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll up through fuel list"
+msgstr "Tüzelőanyag listán felfele görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll down through fuel list"
+msgstr "Tüzelőanyag listán lefele görget"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll up through vehicle part descriptions"
+msgstr "Átgörget a jármű alkatrészeinek leírásán"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll down through vehicle part descriptions"
+msgstr "Lefele görget a jármű alkatrészeinek leírásán"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll up through vehicle overview"
+msgstr "Felfele görget a jármű áttekintésén"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll down through vehicle overview"
+msgstr "Lefele görget a jármű áttekintésén"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle unavailable constructions"
+msgstr "El nem elérhető építés ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle construction as favorite"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll to previous stage"
+msgstr "Lapozás az előző részhez"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll to next stage"
+msgstr "Lapozás a következő részhez"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Show all"
+msgstr "Mind mutat"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Confirm & quit"
+msgstr "Megerősítés és kilépés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Resize"
+msgstr "Átméretezés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "To start"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Swap origin and target"
+msgstr "Eredeti és cél felcserélése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move shape"
+msgstr "Alak mozgatása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Switch to move point / confirm"
+msgstr "Pont mozgatása / megerősítése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Edit traps"
+msgstr "Csapdák szerkesztése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Edit fields"
+msgstr "Mezők szerkesztése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Edit terrain"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Edit furniture"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Edit overmap / mapgen"
+msgstr "Kis/nagy térkép szerkesztése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Edit items"
+msgstr "Tárgyak szerkesztése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Edit creatures"
+msgstr "Lények szerkesztése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Show whole map"
+msgstr "Egész térkép mutatása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Wide move left"
+msgstr "Széles mozgás balra"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Wide move right"
+msgstr "Széles mozgás jobbra"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Wide move up"
+msgstr "Széles mozgás fel"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Wide move down"
+msgstr "Széles mozgás le"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle category selection mode"
+msgstr "Kategória kiválasztási mód váltása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Set item filter"
+msgstr "Tárgy szűrő beállítása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle item as favorite"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle activate/examine"
+msgstr "Aktiválás / vizsgálás választása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle safe fuel mod"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle auto start mod"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Sort bionics list"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json src/martialarts.cpp
+msgid "Pause"
+msgstr "Szünet"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Map Memory"
+msgstr "Térképmemória ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Center View"
+msgstr "Nézet középre állítása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move View North"
+msgstr "Nézettel menj északra"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move View East"
+msgstr "Nézettel menj keletre"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move View South"
+msgstr "Nézettel menj délre"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move View West"
+msgstr "Nézettel menj nyugatra"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Open Door"
+msgstr "Ajtónyitás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Close Door"
+msgstr "Ajtózárás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Smash Nearby Terrain"
+msgstr "Zúzd szét a közeli területet"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Examine Nearby Terrain"
+msgstr "Vizsgáld át a közeli területet"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Advanced Inventory management"
+msgstr "Haladó leltár kezelés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pick up Nearby Item(s)"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Pickup Item(s) at Player Feet"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Grab something nearby"
+msgstr "Ragadj meg valamit a közelben"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Haul items along the ground"
+msgstr "Földön heverő tárgyak vonszolása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Zone activities"
+msgstr "Zóna aktivitás"
+
+#: data/raw/keybindings/keybindings.json src/options.cpp
+msgid "Butcher"
+msgstr "Mészárlás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Chat with NPC"
+msgstr "Beszélgess egy NPC-vel"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Look Around"
+msgstr "Nézz körbe"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle thief mode"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Peek Around Corners"
+msgstr "Kukucskálj ki a sarok mögül"
+
+#: data/raw/keybindings/keybindings.json
+msgid "List all items around the player"
+msgstr "Mutasd meg a játékos körüli összes tárgyat"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Manage zones"
+msgstr "Zónakezelés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Open Inventory"
+msgstr "Nyisd ki a leltárt"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Compare two Items"
+msgstr "Két tárgy összehasonlítása"
+
+#: data/raw/keybindings/keybindings.json src/game_inventory.cpp
+msgid "Swap Inventory Letters"
+msgstr "Leltár betűk felcserélése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Apply or Use Item"
+msgstr "Tárgy használata"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Apply or Use Wielded Item"
+msgstr "Kézben tartott tárgy használata"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Wear Item"
+msgstr "Tárgy viselése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Take Off Worn Item"
+msgstr "Viselt tárgy levétele"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Consume Item Menu"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Wield"
+msgstr "Kézbe venni"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select Martial Arts Style"
+msgstr "Harcművészeti stílus kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reload Weapons"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reload Wielded Item"
+msgstr "Kézben fogott tárgy újratöltése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Unload or Empty Wielded Item"
+msgstr "Kézben fogott tárgy kiürítése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Throw Item"
+msgstr "Tárgy dobása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Blind Throw Item"
+msgstr "Tárgy dobása vakon"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Fire Wielded Item"
+msgstr "A kézben fogott tárgy elsütése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle attack mode of Wielded Item"
+msgstr "Kézben fogott tárgy támadási módjának megváltoztatása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select default ammo for Wielded Item"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Drop Item"
+msgstr "Tárgy leejtése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Drop Item to Adjacent Tile"
+msgstr "Tárgy leejtése a szomszédos négyzetre"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View/Activate Bionics"
+msgstr "Bionikus modulok áttekintése/aktiválása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View/Activate Mutations"
+msgstr "Mutációk áttekintése/aktiválása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Re-layer armor/clothing"
+msgstr "Páncélzat és ruha újrarétegezése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Wait for Several Minutes"
+msgstr "Várakozás több percig"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Craft Items"
+msgstr "Tárgyak elkészítése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Recraft last recipe"
+msgstr "Utolsó recept újbóli elkészítése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Construct Terrain"
+msgstr "Terület építése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Disassemble items"
+msgstr "Tárgyak szétszerelése"
+
+#: data/raw/keybindings/keybindings.json src/gamemode_defense.cpp
+msgid "Sleep"
+msgstr "Alvás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Control Vehicle"
+msgstr "Jármű vezérlése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Auto Travel Mode"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Safe Mode"
+msgstr "Biztonságos mód ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Ignore Nearby Enemy"
+msgstr "Közeli ellenség figyelmen kívül hagyása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Whitelist enemy"
+msgstr "Ellenség fehérlistára"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Save and Quit"
+msgstr "Mentés és kilépés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Commit Suicide"
+msgstr "Öngyilkosság"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Player Info"
+msgstr "Játékos infó megtekintése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Map"
+msgstr "Térkép megtekintése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Look at the sky"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Factions"
+msgstr "Frakciók megtekintése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Achievements, Scores, and Kills"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Morale"
+msgstr "Hangulat megtekintése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Message Log"
+msgstr "Üzenetfal megtekintése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Help"
+msgstr "Súgó megtekintése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Debug Mode"
+msgstr "Debug mód ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Debug Menu"
+msgstr "Debug menü"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Scentmap"
+msgstr "Szagtérkép megtekintése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Scent Type"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Temperature Map"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Visibility Map"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Lighting Map"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Radiation Map"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "View Submap Grid"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Switch Sidebar Style"
+msgstr "Oldalsáv stílus váltása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Fullscreen mode"
+msgstr "Teljes képernyős mód ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Minimap"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Sidebar Options"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reload Item"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reload Tileset"
+msgstr "Grafikai készlet újbóli betöltése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Auto Features"
+msgstr "Autom. beállítások ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Auto Pulp/Butcher"
+msgstr "Autom. pépesítés/mészárlás ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Auto Mining"
+msgstr "Autom. bányászat ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Auto Foraging"
+msgstr "Autom. guberálás ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Auto Pickup"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Action Menu"
+msgstr "Akciómenü"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Item Action Menu"
+msgstr "Tárgy akciómenüje"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Quicksave"
+msgstr "Gyorsmentés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Quickload"
+msgstr "Gyorstöltés"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move View Northeast"
+msgstr "Nézettel menj északkeletre"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move View Southeast"
+msgstr "Nézettel menj délkeletre"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move View Southwest"
+msgstr "Nézettel menj délnyugatra"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move View Northwest"
+msgstr "Nézettel menj északnyugatra"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Burst-Fire Wielded Item"
+msgstr "A kézben fogott tárgy folyamatos elsütése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Craft as long as possible"
+msgstr "Addig gyártsa a tárgyakat, amíg lehet"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Auto-Safemode"
+msgstr "Auto biztonságos mód ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Autoattack"
+msgstr "Autotámádás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Main Menu"
+msgstr "Főmenü"
+
+#: data/raw/keybindings/keybindings.json src/game.cpp
+msgid "Options"
+msgstr "Opciók"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Autopickup manager"
+msgstr "Auto felvét kezelése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Autonotes manager"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Safe Mode manager"
+msgstr "Biztonságos mód kezelése"
+
+#: data/raw/keybindings/keybindings.json src/distraction_manager.cpp
+msgid "Distractions manager"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Color manager"
+msgstr "Színbeállítások"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Active World Mods"
+msgstr "Világban aktivált modok"
+
+#: data/raw/keybindings/keybindings.json src/handle_action.cpp
+msgid "Cycle move mode (run/walk/crouch)"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reset Movement to Walk"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Run"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Crouch"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Movement Mode Menu"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Spellcasting"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Open Diary"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json src/game_inventory.cpp
+msgid "Compare"
+msgstr "Összehasonlítás"
+
+#: data/raw/keybindings/keybindings.json src/iexamine.cpp
+msgid "Examine"
+msgstr "Megvizsgálás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Increase priority"
+msgstr "Magasabb prioritás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Decrease priority"
+msgstr "Alacsonyabb prioritás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Change sort order"
+msgstr "Sorrendváltás"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Add to safemode blacklist"
+msgstr "Hozzáad a bizt. mód feketelistához"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Remove from safemode blacklist"
+msgstr "Eltávolít a bizt. mód feketelistáról"
+
+#: data/raw/keybindings/keybindings.json
+msgid "look around"
+msgstr "körbenéz"
+
+#: data/raw/keybindings/keybindings.json
+msgctxt "verb"
+msgid "fire"
+msgstr "tűz"
+
+#: data/raw/keybindings/keybindings.json
+msgid "List items and monsters"
+msgstr "Tárgyak és szörnyek listázása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reassign invlet"
+msgstr "Invlet átrendelése"
+
+#: data/raw/keybindings/keybindings.json src/construction.cpp src/game.cpp
+#: src/mission_companion.cpp
+msgid "Move cursor up"
+msgstr "Kurzor mozgatása felfelé"
+
+#: data/raw/keybindings/keybindings.json src/construction.cpp src/game.cpp
+#: src/mission_companion.cpp
+msgid "Move cursor down"
+msgstr "Kurzor mozgatása lefelé"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Exit this keybinding screen"
+msgstr "Kilép a bill. kiosztás képernyőből."
+
+#: data/raw/keybindings/keybindings.json
+msgid "Remove bindings"
+msgstr "Kötések eltávolítása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Add local keybinding"
+msgstr "Helyi billentyűkombináció"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Add global keybinding"
+msgstr "Globális billentyűkombináció"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Execute action keybinding"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Add zone"
+msgstr "Zóna hozzáadása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Remove zone"
+msgstr "Zóna eltávolítása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move zone up"
+msgstr "Zóna feljebb"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move zone down"
+msgstr "Zóna lejjebb"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Show zone on map"
+msgstr "Zóna mutatása a térképen"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Enable zone"
+msgstr "Zóna bekapcsolása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Disable zone"
+msgstr "Zóna kikapcsolása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Show all zones / hide distant zones"
+msgstr "Összes zónát mutat / távoli zónát elrejt"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select left inventory"
+msgstr "Bal oldali leltár kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select right inventory"
+msgstr "Jobb oldali leltár kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle tab"
+msgstr "Fül ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle vehicle"
+msgstr "Jármű ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle auto-pickup for item"
+msgstr "Tárgy auto felszedése ki/be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move a single item"
+msgstr "Egyetlen tárgy mozgatása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move an amount of item"
+msgstr "Adott számú tárgy mozgatása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move item stack"
+msgstr "Tárgy halom mozgatása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Move all items"
+msgstr "Összes tárgy mozgatása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Mark/unmark non-favorite items in multidrop menu"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items @ North-West"
+msgstr "Északnyugati tárgyak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items @ North"
+msgstr "Északi tárgyak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items @ North-East"
+msgstr "Északkeleti tárgyak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items @ West"
+msgstr "Nyugati tárgyak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items @ center"
+msgstr "Középső tárgyak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items @ East"
+msgstr "Keleti tárgyak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items @ South-West"
+msgstr "Délnyugati tárgyak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items @ South"
+msgstr "Déli tárgyak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items @ South-East"
+msgstr "Délkeleti tárgyak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items from above"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items from below"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items in inventory"
+msgstr "Leltár tárgyainak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items @ all 9 fields"
+msgstr "Összes 9 mező tárgyainak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items in dragged container"
+msgstr "Vonszolt tároló tárgyainak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items in container"
+msgstr "Tároló tárgyainak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Select items currently worn"
+msgstr "Viselt tárgyak kiválasztása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Restore default layout"
+msgstr "Alap megjelenítés visszaállítása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Save default layout"
+msgstr "Alap megjelenítés elmentése"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Sew"
+msgstr "Varr"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Remove custom color"
+msgstr "Egyedi szín eltávolítása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Load color template"
+msgstr "Színsablon betöltése"
+
+#. ~ translation should not exceed 3 console cells
+#: data/raw/keybindings/keybindings.json src/editmap.cpp src/veh_interact.cpp
+msgid "Yes"
+msgstr "Igen"
+
+#: data/raw/keybindings/keybindings.json src/editmap.cpp src/options.cpp
+#: src/veh_interact.cpp
+msgid "No"
+msgstr "Nem"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Load"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json src/options.cpp
+msgid "Delete"
+msgstr "Törlésre kerüljön"
+
+#: data/raw/keybindings/keybindings.json src/character.cpp
+#: src/inventory_ui.cpp src/monexamine.cpp src/npctalk_funcs.cpp
+#: src/pickup.cpp src/vehicle_use.cpp
+msgid "Cancel"
+msgstr "Mégse"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Quit"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Ignore further distractions and finish"
+msgstr "Hagyja figyelmen kívül a több zavaró dolgot, és fejezze be"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Open manager"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json src/options.cpp
+msgid "Always"
+msgstr "Mindig"
+
+#: data/raw/keybindings/keybindings.json src/options.cpp
+msgid "Never"
+msgstr "Soha"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Cancel popup"
+msgstr "Felugró ablak visszavonása"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Describe creature"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Describe furniture"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Describe terrain"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Switch lists"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json src/action.cpp
+msgid "Back"
+msgstr "Vissza"
+
+#: data/raw/keybindings/keybindings.json
+msgid "More"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Examine item"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Cancel trading"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json src/character_display.cpp
+msgid "Change profession name"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Wear"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Unwield"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Change side"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Drop"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Unload"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Part reload"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Mend"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Disassemble"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Unfavorite"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Reassign"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Autopickup (add)"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Autopickup (remove)"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json src/diary_ui.cpp
+msgid "Delete page"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Export diary to .txt"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Add new page"
+msgstr ""
+
+#: data/raw/keybindings/messages.json
+msgid "Toggle wide display"
+msgstr ""
+
+#: data/raw/keybindings/messages.json
+msgid "Toggle full height display"
 msgstr ""
 
 #: data/raw/keybindings/vehicle.json src/vehicle_use.cpp
@@ -231391,11 +232861,6 @@ msgstr "A(z) %s elvesztette a kapcsolatos, ezért leáll."
 
 #: src/bionics.cpp
 #, c-format
-msgid "Your %s shut down due to lack of power."
-msgstr ""
-
-#: src/bionics.cpp
-#, c-format
 msgid "Your %s shut down to conserve calories."
 msgstr ""
 
@@ -231838,6 +233303,11 @@ msgstr "%s deakt"
 #: src/bionics_ui.cpp
 #, c-format
 msgid "%s trigger"
+msgstr ""
+
+#: src/bionics_ui.cpp
+#, c-format
+msgid "%i kcal trigger"
 msgstr ""
 
 #: src/bionics_ui.cpp
@@ -233264,17 +234734,19 @@ msgstr "A(z) %1$s %2$s-ába %3$st töltesz."
 msgid "This is you - %s."
 msgstr "Ez te vagy - %s."
 
+#: src/character.cpp src/character_display.cpp src/debug_menu.cpp
+#: src/newcharacter.cpp
+msgid "Female"
+msgstr "Nő"
+
+#: src/character.cpp src/character_display.cpp src/debug_menu.cpp
+#: src/newcharacter.cpp
+msgid "Male"
+msgstr "Férfi"
+
 #: src/character.cpp
 #, c-format
 msgid "This is %s, %s"
-msgstr ""
-
-#: src/character.cpp
-msgid "female"
-msgstr ""
-
-#: src/character.cpp
-msgid "male"
 msgstr ""
 
 #: src/character.cpp
@@ -234040,25 +235512,11 @@ msgstr "Alap mozgási költség:"
 msgid "Current Speed:"
 msgstr "Jelenlegi sebesség:"
 
-#: src/character_display.cpp
-#, c-format
-msgctxt "speed penalty"
-msgid "Overburdened        -%2d%%"
-msgstr ""
-
-#: src/character_display.cpp
-#, c-format
-msgctxt "speed penalty"
-msgid "Pain                -%2d%%"
-msgstr ""
-
-#: src/character_display.cpp
-#, c-format
-msgctxt "speed penalty"
-msgid "Thirst              -%2d%%"
-msgstr ""
-
-#. ~ %s: Starving/Underfed (already left-justified), %2d: speed penalty
+#. ~ %s: Overburdened (already left-justified), %2d%%: speed penalty
+#. ~ %s: Pain (already left-justified), %2d%%: speed penalty
+#. ~ %s: Thirsty/Parched (already left-justified), %2d%%: speed penalty
+#. ~ %s: Starving/Underfed (already left-justified), %2d%%: speed penalty
+#. ~ %s: Out of Sunlight (already left-justified), %2d%%: speed penalty
 #: src/character_display.cpp
 #, c-format
 msgctxt "speed penalty"
@@ -234066,23 +235524,40 @@ msgid "%s-%2d%%"
 msgstr ""
 
 #: src/character_display.cpp
-#, c-format
-msgctxt "speed penalty"
-msgid "Out of Sunlight     -%2d%%"
+msgid "Overburdened"
 msgstr ""
 
-#. ~ %s: sign of bonus/penalty, %2d: speed bonus/penalty
+#: src/character_display.cpp src/debug_menu.cpp
+msgid "Thirst"
+msgstr ""
+
+#: src/character_display.cpp
+msgid "Out of Sunlight"
+msgstr ""
+
+#. ~ %s: Cold-Blooded (already left-justified), %s: sign of bonus/penalty,
+#. %2d%%: speed modifier
 #: src/character_display.cpp
 #, c-format
 msgctxt "speed modifier"
-msgid "Cold-Blooded        %s%2d%%"
+msgid "%s%s%2d%%"
 msgstr ""
 
 #: src/character_display.cpp
+msgid "Cold-Blooded"
+msgstr ""
+
+#. ~ %s: Mutations (already left-justified), %s: sign of bonus/penalty, %2d%%:
+#. speed modifier
+#: src/character_display.cpp
 #, c-format
 msgctxt "speed bonus"
-msgid "Quick               +%2d%%"
+msgid "%s%s%2d%%"
 msgstr ""
+
+#: src/character_display.cpp src/init.cpp
+msgid "Mutations"
+msgstr "Mutációk"
 
 #: src/character_display.cpp
 #, c-format
@@ -234095,14 +235570,6 @@ msgstr ""
 #, c-format
 msgid " %1$s | %2$s | %3$s"
 msgstr ""
-
-#: src/character_display.cpp src/debug_menu.cpp src/newcharacter.cpp
-msgid "Female"
-msgstr "Nő"
-
-#: src/character_display.cpp src/debug_menu.cpp src/newcharacter.cpp
-msgid "Male"
-msgstr "Férfi"
 
 #. ~ player info window: 1s - name, 2s - gender '|' - field separator.
 #: src/character_display.cpp
@@ -237419,7 +238886,7 @@ msgid "[p]ick different character"
 msgstr ""
 
 #: src/debug_menu.cpp
-msgid "Edit [D]escription - Name, Age, Height"
+msgid "Edit [D]escription - Name, Age, Height, Gender"
 msgstr ""
 
 #: src/debug_menu.cpp
@@ -237652,6 +239119,10 @@ msgid "Current height in cm"
 msgstr ""
 
 #: src/debug_menu.cpp
+msgid "Current gender"
+msgstr ""
+
+#: src/debug_menu.cpp
 msgid "Rename save file (WARNING: this will duplicate the save):"
 msgstr ""
 
@@ -237674,10 +239145,6 @@ msgstr ""
 
 #: src/debug_menu.cpp
 msgid "Stored kCal"
-msgstr ""
-
-#: src/debug_menu.cpp
-msgid "Thirst"
 msgstr ""
 
 #: src/debug_menu.cpp
@@ -239611,6 +241078,11 @@ msgid "Attitude to you:           %s"
 msgstr "Vélemény rólad:            %s"
 
 #: src/faction.cpp
+#, c-format
+msgid "Faction strength:       %s"
+msgstr ""
+
+#: src/faction.cpp
 msgid "Press enter to talk to this follower "
 msgstr "Nyomj egy Entert, hogy beszélgess ezzel a követővel"
 
@@ -241463,6 +242935,13 @@ msgstr "Itt nincsen semmi releváns dolog."
 #: src/game.cpp
 msgid "You are not wielding a ranged weapon."
 msgstr "Nincsen a kezedben távolra hordó fegyver."
+
+#: src/game.cpp
+msgid ""
+"Your character is dead, do you accept this?\n"
+"\n"
+"Select Yes to abandon the character to their fate, select No to return to main menu."
+msgstr ""
 
 #: src/game.cpp
 msgid "Watch the last moments of your life…?"
@@ -247557,10 +249036,6 @@ msgstr "Betakarítási listák"
 #: src/init.cpp
 msgid "Anatomies"
 msgstr "Anatómia"
-
-#: src/init.cpp
-msgid "Mutations"
-msgstr "Mutációk"
 
 #: src/init.cpp
 msgid "Achievements"
@@ -259586,7 +261061,7 @@ msgstr ""
 
 #: src/messages.cpp
 #, c-format
-msgid "< Press %s to filter, %s to reset >"
+msgid "< Press %s to filter, %s to reset, %s or %s to adjust size >"
 msgstr ""
 
 #: src/messages.cpp
@@ -266179,6 +267654,17 @@ msgid "Basic"
 msgstr "Alap"
 
 #: src/options.cpp
+msgid "Prompt on character death"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"If enabled, when your character dies, the player is given a prompt that "
+"gives the option to cancel savefile deletion and other death effects, "
+"returning to the main menu without saving instead."
+msgstr ""
+
+#: src/options.cpp
 msgid "Default character name"
 msgstr "Alapértelmezett karakter neve"
 
@@ -266653,8 +268139,8 @@ msgid "Speed units"
 msgstr "Sebesség mértékegysége"
 
 #: src/options.cpp
-msgid "Switch between mph, km/h and tiles/turn."
-msgstr "Km/h, mérföld/óra (mph) és mező/kör között vált."
+msgid "Switch between km/h, mph and tiles/turn."
+msgstr ""
 
 #: src/options.cpp src/units_utility.cpp
 msgid "km/h"
@@ -266689,8 +268175,8 @@ msgid "Volume units"
 msgstr "Térfogati egységek"
 
 #: src/options.cpp
-msgid "Switch between the Cup ( c ), Liter ( L ) or Quart ( qt )."
-msgstr "Váltás bögre (c), liter (L) és quart (qt) között."
+msgid "Switch between the Liter ( L ), Cup ( c ), or Quart ( qt )."
+msgstr ""
 
 #: src/options.cpp
 msgid "Cup"
@@ -273997,6 +275483,14 @@ msgid "Camera system won't turn on"
 msgstr "A kamerarendszer nem kapcsol be"
 
 #: src/vehicle_use.cpp
+msgid "Turn off the engine"
+msgstr "Leállítod a motort"
+
+#: src/vehicle_use.cpp
+msgid "Turn on the engine"
+msgstr "Beindítod a motort"
+
+#: src/vehicle_use.cpp
 msgid "Electronics controls"
 msgstr "Elektronika vezérlése"
 
@@ -274136,14 +275630,6 @@ msgstr "Leállítod a motort és elengeded a kormányt."
 #: src/vehicle_use.cpp
 msgid "the engine go silent"
 msgstr ""
-
-#: src/vehicle_use.cpp
-msgid "Turn off the engine"
-msgstr "Leállítod a motort"
-
-#: src/vehicle_use.cpp
-msgid "Turn on the engine"
-msgstr "Beindítod a motort"
 
 #: src/vehicle_use.cpp
 msgid "Honk horn"
