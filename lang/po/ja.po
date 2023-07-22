@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-07-14 22:57+0000\n"
+"POT-Creation-Date: 2023-07-21 01:04+0000\n"
 "Last-Translator: Pigmentblue15, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -10351,6 +10351,10 @@ msgstr "工具用MODを取り付ける"
 #: data/json/item_actions.json
 msgid "Attach as gunmod"
 msgstr "銃器に取り付ける"
+
+#: data/json/item_actions.json
+msgid "Repair/mend a gun"
+msgstr ""
 
 #: data/json/item_actions.json
 msgid "Repair a gun"
@@ -27946,6 +27950,7 @@ msgstr "建物の電気配線に接続されているソーラーパネルです
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
 #: data/json/furniture_and_terrain/furniture-medical.json
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/furniture_and_terrain/furniture-roof.json
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -29404,7 +29409,9 @@ msgstr ""
 "自動化！科学！工業！より良い労働力！このロボットアームは全てを満たします。電源があればの話ですが。外装を取り外して分解すれば、電子機器を入手できます。"
 
 #: data/json/furniture_and_terrain/furniture-industrial.json
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/furniture_and_terrain/terrain-manufactured.json
+#: data/json/obsoletion/uncategorized.json
 msgid "thunk."
 msgstr "ドスン。"
 
@@ -29909,6 +29916,18 @@ msgid ""
 "An insulated metal tank that holds water, kept to a temperature by a small "
 "gas flame."
 msgstr "断熱性の金属タンクに入った水を、小さなガスの炎で一定の温度に保つ装置です。"
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+#: data/json/obsoletion/uncategorized.json
+msgid "water dispenser"
+msgstr "ウォーターサーバー"
+
+#. ~ Description for water dispenser
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid ""
+"A machine with several taps that dispenses clean water.  Also known as a "
+"water cooler, it's still useful so long as the tank is full."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/items/tool/cooking.json data/json/vehicleparts/vehicle_parts.json
@@ -34759,15 +34778,6 @@ msgid ""
 "Deep well collecting ground water.  Installed water pump allows to draw "
 "water from it."
 msgstr "地下水が溜まった深い井戸です。設置されているポンプを使えば水を汲み上げられます。"
-
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "water dispenser"
-msgstr "ウォーターサーバー"
-
-#. ~ Description for water dispenser
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "A machine with several taps that dispenses clean water."
-msgstr "飲料水を提供する、蛇口が付いた機械です。"
 
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid "plutonium generator"
@@ -44418,6 +44428,30 @@ msgid ""
 "Unusable as a weapon on its own without the necessary parts."
 msgstr ""
 "TX-5LRケルベロスレーザーキャノンから取り外された一本の砲身です。作動に必要な部品がいくつも欠けており、このまま武器として使うことはできません。"
+
+#: data/json/items/generic.json
+msgid "salvaged CMES gatling laser"
+msgid_plural "salvaged CMES gatling lasers"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'salvaged CMES gatling laser'}
+#: data/json/items/generic.json
+msgid ""
+"A rapid-fire weapon system stripped from a wrecked combat exoskeleton.  No "
+"longer usable as a weapon in its current condition."
+msgstr ""
+
+#: data/json/items/generic.json
+msgid "salvaged RMES marksman laser"
+msgid_plural "salvaged RMES marksman lasers"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'salvaged RMES marksman laser'}
+#: data/json/items/generic.json
+msgid ""
+"A long-range weapon system stripped from a wrecked recon exoskeleton.  No "
+"longer usable as a weapon in its current condition."
+msgstr ""
 
 #: data/json/items/generic.json
 msgid "light bulb"
@@ -82191,7 +82225,8 @@ msgstr "アメリカ軍やSWATで使われている、設置が可能なマシ�
 #: data/json/items/gun/223.json data/json/items/gun/308.json
 #: data/json/items/gun/40.json data/json/items/gun/45.json
 #: data/json/items/gun/8x40mm.json data/json/items/gun/9mm.json
-#: data/json/items/gun/misc.json data/mods/CRT_EXPANSION/items/crt_gun.json
+#: data/json/items/gun/misc.json data/json/items/gun/ups.json
+#: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/Generic_Guns/firearms/pistol.json
 #: data/mods/Generic_Guns/firearms/rifle.json
 msgid "burst"
@@ -82524,8 +82559,7 @@ msgstr ""
 msgid "low auto"
 msgstr "低速オート"
 
-#: data/json/items/gun/308.json data/json/items/gun/ups.json
-#: data/mods/No_Hope/Items/guns.json
+#: data/json/items/gun/308.json data/mods/No_Hope/Items/guns.json
 msgid "high auto"
 msgstr "高速オート"
 
@@ -83785,8 +83819,7 @@ msgstr ""
 "5x50mmフレシェット徹甲弾を使用する軽量カービンです。大変動の少し前にRivtech社がアメリカ軍向けに開発した銃で、分類上は特殊用途個人火器(Special"
 " Purpose Individual Weapon)に属します。実戦においては点射が推奨され、接近戦でより有効です。"
 
-#: data/json/items/gun/5x50.json data/json/items/gun/ups.json
-#: data/mods/Modular_Turrets/roboguns.json
+#: data/json/items/gun/5x50.json data/mods/Modular_Turrets/roboguns.json
 msgid "5 rd."
 msgstr "5点バースト"
 
@@ -85252,8 +85285,7 @@ msgid ""
 msgstr ""
 "非常に小さな銃身に特大のリボルバーが付いたおかしな形状のこの銃は、破壊的な威力が知れ渡るまで売れ行きは振るいませんでした。シリンダーはスプリング回転機構で駆動し、手で動かすことはできず、排莢にはエジェクターロッドを操作する必要がありました。そのユニークな設計により装填した全弾を3秒未満で発射できることを、ATFの技術部門が実証しています。"
 
-#: data/json/items/gun/shot.json data/json/items/gun/ups.json
-#: data/mods/CRT_EXPANSION/items/crt_gun.json
+#: data/json/items/gun/shot.json data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/FictonalWeapons/fic_weapons.json
 #: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
 msgid "3 rd."
@@ -85367,6 +85399,19 @@ msgstr ""
 "CMES外骨格メックスーツ用の内蔵型銃器システムです。回転バレルと強制冷却構造を備えたレーザー速射砲は、いともたやすく広範囲に死をばら撒きます。"
 
 #: data/json/items/gun/ups.json
+msgid "rebuilt CMES gatling laser"
+msgid_plural "rebuilt CMES gatling lasers"
+msgstr[0] ""
+
+#: data/json/items/gun/ups.json
+msgid ""
+"A rapid-fire weapon system stripped from a combat mech, modified for "
+"handheld use.  While less efficient and too bulky to fire without proper "
+"support, its rotating-barrel laser system can still spray death downrange "
+"with ease."
+msgstr ""
+
+#: data/json/items/gun/ups.json
 msgid "RMES marksman system"
 msgid_plural "RMES marksman systems"
 msgstr[0] "ライフル(RMES狙撃ｼｽﾃﾑ)"
@@ -85376,6 +85421,18 @@ msgid ""
 "This is the integral weapon system for the RMES exoskeleton mech-suit, a "
 "quiet and accurate marksman laser rifle."
 msgstr "RMES外骨格メックスーツ用の内蔵型銃器システムである、静音性と精密性に優れた狙撃用レーザーライフルです。"
+
+#: data/json/items/gun/ups.json
+msgid "rebuilt RMES marksman laser"
+msgid_plural "rebuilt RMES marksman lasers"
+msgstr[0] ""
+
+#: data/json/items/gun/ups.json
+msgid ""
+"A long-range weapon system stripped from a recon mech, modified for handheld"
+" use.  While less efficient and too bulky to fire without proper support, "
+"it's still a quiet and relatively accurate marksman laser rifle."
+msgstr ""
 
 #: data/json/items/gun/ups.json data/mods/No_Hope/Items/guns.json
 msgid "handheld laser cannon"
@@ -107195,10 +107252,11 @@ msgid ""
 "acquisition by the US military, it was designed to be piloted by an operator"
 " to load and unload heavy material, and for limited combat support roles, it"
 " was not deployed before the Cataclysm hit, though there were a few "
-"prototypes in the field.  You may be able to hack it to accept you as its "
-"pilot.  Like all mech-suits it can act as a UPS from its large battery."
+"prototypes in the field.  It lacks any integral weaponry, but the user can "
+"fire from the open cockpit, even using the frame to support heavier "
+"firearms.  You may be able to hack it to accept you as its pilot.  Like all "
+"mech-suits it can act as a UPS from its large battery."
 msgstr ""
-"近年米軍が買い取ったボーイング大宇社のLMES(運搬用機械外骨格スーツ)は、オペレーターの操縦による重量物の積み下ろし作業と限定的な戦闘支援のために設計されました。大変動が起きた時は実際に運用されてはいませんでしたが、いくつかの試作機が投入されています。ハッキングすることで操縦できる可能性があります。他のメックスーツと同様に、搭乗中は大容量のUPSとしても利用可能です。"
 
 #: data/json/monsters/mi-go.json
 msgid "mi-go"
@@ -147202,6 +147260,11 @@ msgstr ""
 msgid "Lycra"
 msgstr "ライクラ"
 
+#. ~ Description for water dispenser
+#: data/json/obsoletion/uncategorized.json
+msgid "A machine with several taps that dispenses clean water."
+msgstr "飲料水を提供する、蛇口が付いた機械です。"
+
 #. ~ Description for quantum solar panel
 #: data/json/obsoletion/vehicle_parts.json
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -165655,6 +165718,14 @@ msgstr "車載/A7レーザー"
 #: data/json/vehicleparts/turret.json data/mods/No_Hope/vehicle_parts.json
 msgid "mounted Cerberus laser cannon"
 msgstr "車載/ケルベロスレーザー砲"
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted gatling laser"
+msgstr ""
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted marksman laser"
+msgstr ""
 
 #: data/json/vehicleparts/turret.json
 msgid "mounted M249"
@@ -221554,10 +221625,6 @@ msgid "You are too weak to wield %s with only one arm."
 msgstr "%sは片手で装備できません。"
 
 #: src/character.cpp
-msgid "You cannot wield anything while piloting a mech."
-msgstr "メック操縦中は何も装備できません。"
-
-#: src/character.cpp
 #, c-format
 msgid "You cannot unwield your %s."
 msgstr "%sの装備状態を解除できません。"
@@ -225506,6 +225573,11 @@ msgstr "弾丸は%1$sの%2$sに弾かれました！"
 #, c-format
 msgid "You were hit in the %1$s for %2$d damage."
 msgstr "%1$sに命中して%2$dのダメージを受けました。"
+
+#: src/creature.cpp
+#, c-format
+msgid "You were hit for a total of %d damage."
+msgstr ""
 
 #. ~ "hit points", used in scrolling combat text
 #: src/creature.cpp src/melee.cpp
@@ -230936,6 +231008,11 @@ msgstr "焚物を追加しなくても%sから%sは燃え続けそうです。"
 
 #: src/game.cpp
 #, c-format
+msgid "There is a %s.  Battery level: %d%%"
+msgstr ""
+
+#: src/game.cpp
+#, c-format
 msgid "There is a %s."
 msgstr "%sがいます。"
 
@@ -233816,7 +233893,7 @@ msgstr ""
 msgid "You can't open things while you're in your shell."
 msgstr "殻の中で何かを開けることはできません。"
 
-#: src/handle_action.cpp
+#: src/handle_action.cpp src/map.cpp
 msgid "You can't open things while you're riding."
 msgstr "騎乗中は開けません。"
 
@@ -233859,6 +233936,10 @@ msgstr "殻の中で何かを掴むことはできません。"
 #: src/handle_action.cpp
 msgid "You can't grab things while you're riding."
 msgstr "騎乗中は何も掴めません。"
+
+#: src/handle_action.cpp
+msgid "Your mech doesn't have hands to grab with."
+msgstr ""
 
 #: src/handle_action.cpp
 msgid "You can't haul things while you're in your shell."
@@ -240921,12 +241002,16 @@ msgid "You hear \"%s\""
 msgstr "%s"
 
 #: src/iuse.cpp
-msgid "You need a mechanics skill of 2 to use this repair kit."
-msgstr "修復キットを使用するにはレベル2の機械整備スキルが必要です。"
-
-#: src/iuse.cpp
 msgid "That isn't a firearm!"
 msgstr "それは銃火器ではありません！"
+
+#: src/iuse.cpp
+msgid "There's nothing you can clean or mend with this."
+msgstr ""
+
+#: src/iuse.cpp
+msgid "You need a mechanics skill of 2 to use this repair kit."
+msgstr "修復キットを使用するにはレベル2の機械整備スキルが必要です。"
 
 #: src/iuse.cpp
 #, c-format
@@ -251408,8 +251493,8 @@ msgid "Climb into the mech and take control"
 msgstr "メックに搭乗して操縦する"
 
 #: src/monexamine.cpp
-msgid "You cannot pilot the mech whilst wielding something"
-msgstr "アイテム装備中はメックを操縦できません。"
+msgid "You cannot pilot this mech whilst wielding something"
+msgstr ""
 
 #: src/monexamine.cpp
 msgid "This mech has a dead battery and won't turn on"

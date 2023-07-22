@@ -25,7 +25,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-07-14 22:57+0000\n"
+"POT-Creation-Date: 2023-07-21 01:04+0000\n"
 "Last-Translator: Vorpal Void <vorpal.void@gmail.com>, 2023\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -11589,6 +11589,10 @@ msgstr "Прикрепить как мод. инструмента"
 #: data/json/item_actions.json
 msgid "Attach as gunmod"
 msgstr "Прикрепить как мод. оружия"
+
+#: data/json/item_actions.json
+msgid "Repair/mend a gun"
+msgstr ""
 
 #: data/json/item_actions.json
 msgid "Repair a gun"
@@ -30542,6 +30546,7 @@ msgstr "Солнечная панель, подключённая к элект�
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
 #: data/json/furniture_and_terrain/furniture-medical.json
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/furniture_and_terrain/furniture-roof.json
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -32213,7 +32218,9 @@ msgstr ""
 " разборки."
 
 #: data/json/furniture_and_terrain/furniture-industrial.json
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/furniture_and_terrain/terrain-manufactured.json
+#: data/json/obsoletion/uncategorized.json
 msgid "thunk."
 msgstr "хлопанье."
 
@@ -32822,6 +32829,18 @@ msgid ""
 msgstr ""
 "Герметичный металлический бак с водой, подогреваемой до нужной температуры "
 "маленькой газовой горелкой."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+#: data/json/obsoletion/uncategorized.json
+msgid "water dispenser"
+msgstr "рукомойник"
+
+#. ~ Description for water dispenser
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid ""
+"A machine with several taps that dispenses clean water.  Also known as a "
+"water cooler, it's still useful so long as the tank is full."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/items/tool/cooking.json data/json/vehicleparts/vehicle_parts.json
@@ -38394,15 +38413,6 @@ msgid ""
 msgstr ""
 "Глубокий колодец, собирающий грунтовые воды. Установленный водяной насос "
 "позволяет качать из него воду."
-
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "water dispenser"
-msgstr "рукомойник"
-
-#. ~ Description for water dispenser
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "A machine with several taps that dispenses clean water."
-msgstr "Конструкция с несколькими кранами, которая подаёт чистую воду."
 
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid "plutonium generator"
@@ -50983,6 +50993,36 @@ msgid ""
 msgstr ""
 "Лазерная пушка, снятая с лазерной турели TX-5LR Цербер. Непригодна как "
 "оружие без необходимых деталей."
+
+#: data/json/items/generic.json
+msgid "salvaged CMES gatling laser"
+msgid_plural "salvaged CMES gatling lasers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'salvaged CMES gatling laser'}
+#: data/json/items/generic.json
+msgid ""
+"A rapid-fire weapon system stripped from a wrecked combat exoskeleton.  No "
+"longer usable as a weapon in its current condition."
+msgstr ""
+
+#: data/json/items/generic.json
+msgid "salvaged RMES marksman laser"
+msgid_plural "salvaged RMES marksman lasers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'salvaged RMES marksman laser'}
+#: data/json/items/generic.json
+msgid ""
+"A long-range weapon system stripped from a wrecked recon exoskeleton.  No "
+"longer usable as a weapon in its current condition."
+msgstr ""
 
 #: data/json/items/generic.json
 msgid "light bulb"
@@ -102285,7 +102325,8 @@ msgstr ""
 #: data/json/items/gun/223.json data/json/items/gun/308.json
 #: data/json/items/gun/40.json data/json/items/gun/45.json
 #: data/json/items/gun/8x40mm.json data/json/items/gun/9mm.json
-#: data/json/items/gun/misc.json data/mods/CRT_EXPANSION/items/crt_gun.json
+#: data/json/items/gun/misc.json data/json/items/gun/ups.json
+#: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/Generic_Guns/firearms/pistol.json
 #: data/mods/Generic_Guns/firearms/rifle.json
 msgid "burst"
@@ -102753,8 +102794,7 @@ msgstr ""
 msgid "low auto"
 msgstr "короткая очередь"
 
-#: data/json/items/gun/308.json data/json/items/gun/ups.json
-#: data/mods/No_Hope/Items/guns.json
+#: data/json/items/gun/308.json data/mods/No_Hope/Items/guns.json
 msgid "high auto"
 msgstr "длинная очередь"
 
@@ -104545,8 +104585,7 @@ msgstr ""
 "света. Возможна стрельба очередями. Создавался для боя на короткой "
 "дистанции."
 
-#: data/json/items/gun/5x50.json data/json/items/gun/ups.json
-#: data/mods/Modular_Turrets/roboguns.json
+#: data/json/items/gun/5x50.json data/mods/Modular_Turrets/roboguns.json
 msgid "5 rd."
 msgstr "5 пат."
 
@@ -106613,8 +106652,7 @@ msgstr ""
 "отдел ATF, уникальный дизайн этого дробовика позволяет расстреливать все 12 "
 "патронов менее чем за 3 секунды."
 
-#: data/json/items/gun/shot.json data/json/items/gun/ups.json
-#: data/mods/CRT_EXPANSION/items/crt_gun.json
+#: data/json/items/gun/shot.json data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/FictonalWeapons/fic_weapons.json
 #: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
 msgid "3 rd."
@@ -106779,6 +106817,22 @@ msgstr ""
 "и активным охлаждением. Сеет смерть на раз-два."
 
 #: data/json/items/gun/ups.json
+msgid "rebuilt CMES gatling laser"
+msgid_plural "rebuilt CMES gatling lasers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: data/json/items/gun/ups.json
+msgid ""
+"A rapid-fire weapon system stripped from a combat mech, modified for "
+"handheld use.  While less efficient and too bulky to fire without proper "
+"support, its rotating-barrel laser system can still spray death downrange "
+"with ease."
+msgstr ""
+
+#: data/json/items/gun/ups.json
 msgid "RMES marksman system"
 msgid_plural "RMES marksman systems"
 msgstr[0] "стрелковая система РМКЭ"
@@ -106793,6 +106847,21 @@ msgid ""
 msgstr ""
 "Встроенное оружие экзоскелета РМКЭ — бесшумное и точное снайперское лазерное"
 " ружьё."
+
+#: data/json/items/gun/ups.json
+msgid "rebuilt RMES marksman laser"
+msgid_plural "rebuilt RMES marksman lasers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: data/json/items/gun/ups.json
+msgid ""
+"A long-range weapon system stripped from a recon mech, modified for handheld"
+" use.  While less efficient and too bulky to fire without proper support, "
+"it's still a quiet and relatively accurate marksman laser rifle."
+msgstr ""
 
 #: data/json/items/gun/ups.json data/mods/No_Hope/Items/guns.json
 msgid "handheld laser cannon"
@@ -136174,15 +136243,11 @@ msgid ""
 "acquisition by the US military, it was designed to be piloted by an operator"
 " to load and unload heavy material, and for limited combat support roles, it"
 " was not deployed before the Cataclysm hit, though there were a few "
-"prototypes in the field.  You may be able to hack it to accept you as its "
-"pilot.  Like all mech-suits it can act as a UPS from its large battery."
+"prototypes in the field.  It lacks any integral weaponry, but the user can "
+"fire from the open cockpit, even using the frame to support heavier "
+"firearms.  You may be able to hack it to accept you as its pilot.  Like all "
+"mech-suits it can act as a UPS from its large battery."
 msgstr ""
-"Свежая новинка американской армии — ПМКЭ (Погрузочный Механический Костюм-"
-"Экзоскелет) производства Боинг-Дэу, разработанный для погрузки и разгрузки "
-"тяжёлых предметов и ограниченной боевой поддержки. До наступления Катаклизма"
-" массово на вооружение не поступил, хотя несколько прототипов участвовали в "
-"бою. Вы можете взломать его для допуска к пилотированию. Как и все мехи, "
-"может служить в качестве УБП посредством своей большой батареи."
 
 #: data/json/monsters/mi-go.json
 msgid "mi-go"
@@ -183452,6 +183517,11 @@ msgstr ""
 msgid "Lycra"
 msgstr "лайкра"
 
+#. ~ Description for water dispenser
+#: data/json/obsoletion/uncategorized.json
+msgid "A machine with several taps that dispenses clean water."
+msgstr "Конструкция с несколькими кранами, которая подаёт чистую воду."
+
 #. ~ Description for quantum solar panel
 #: data/json/obsoletion/vehicle_parts.json
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -205215,6 +205285,14 @@ msgstr "смонтированная лазерная винтовка A7"
 #: data/json/vehicleparts/turret.json data/mods/No_Hope/vehicle_parts.json
 msgid "mounted Cerberus laser cannon"
 msgstr "установленная лазерная пушка Цербер"
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted gatling laser"
+msgstr ""
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted marksman laser"
+msgstr ""
 
 #: data/json/vehicleparts/turret.json
 msgid "mounted M249"
@@ -274243,10 +274321,6 @@ msgid "You are too weak to wield %s with only one arm."
 msgstr "Вы слишком слабы, чтобы держать %s одной рукой."
 
 #: src/character.cpp
-msgid "You cannot wield anything while piloting a mech."
-msgstr "Вы не можете ничего нести в руках во время пилотирования мехом."
-
-#: src/character.cpp
 #, c-format
 msgid "You cannot unwield your %s."
 msgstr "Вы не можете выпустить из рук %s."
@@ -278367,6 +278441,11 @@ msgstr "Выстрел отскакивает от %2$s (%1$s)!"
 #, c-format
 msgid "You were hit in the %1$s for %2$d damage."
 msgstr "Вас ударили в %1$s, нанеся урон %2$d."
+
+#: src/creature.cpp
+#, c-format
+msgid "You were hit for a total of %d damage."
+msgstr ""
 
 #. ~ "hit points", used in scrolling combat text
 #: src/creature.cpp src/melee.cpp
@@ -283886,6 +283965,11 @@ msgstr "Без дополнительного топлива будет горе
 
 #: src/game.cpp
 #, c-format
+msgid "There is a %s.  Battery level: %d%%"
+msgstr ""
+
+#: src/game.cpp
+#, c-format
 msgid "There is a %s."
 msgstr "Это %s."
 
@@ -286871,7 +286955,7 @@ msgstr "Роторы не могут создать достаточную по�
 msgid "You can't open things while you're in your shell."
 msgstr "Вы не можете открывать предметы, находясь в своей раковине."
 
-#: src/handle_action.cpp
+#: src/handle_action.cpp src/map.cpp
 msgid "You can't open things while you're riding."
 msgstr "Вы не можете ничего открывать во время езды верхом."
 
@@ -286914,6 +286998,10 @@ msgstr "Вы не можете хватать предметы, находясь
 #: src/handle_action.cpp
 msgid "You can't grab things while you're riding."
 msgstr "Вы не можете ничего хватать во время езды верхом."
+
+#: src/handle_action.cpp
+msgid "Your mech doesn't have hands to grab with."
+msgstr ""
 
 #: src/handle_action.cpp
 msgid "You can't haul things while you're in your shell."
@@ -294317,12 +294405,16 @@ msgid "You hear \"%s\""
 msgstr "Вы слышите «%s»"
 
 #: src/iuse.cpp
-msgid "You need a mechanics skill of 2 to use this repair kit."
-msgstr "Для использования этого ремкомплекта нужен уровень 2 навыка механики."
-
-#: src/iuse.cpp
 msgid "That isn't a firearm!"
 msgstr "Это не огнестрельное оружие!"
+
+#: src/iuse.cpp
+msgid "There's nothing you can clean or mend with this."
+msgstr ""
+
+#: src/iuse.cpp
+msgid "You need a mechanics skill of 2 to use this repair kit."
+msgstr "Для использования этого ремкомплекта нужен уровень 2 навыка механики."
 
 #: src/iuse.cpp
 #, c-format
@@ -305116,8 +305208,8 @@ msgid "Climb into the mech and take control"
 msgstr "Взобраться в меха и занять управление"
 
 #: src/monexamine.cpp
-msgid "You cannot pilot the mech whilst wielding something"
-msgstr "Вы не можете пилотировать мех, держа что-то в руках"
+msgid "You cannot pilot this mech whilst wielding something"
+msgstr ""
 
 #: src/monexamine.cpp
 msgid "This mech has a dead battery and won't turn on"

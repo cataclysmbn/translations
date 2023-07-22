@@ -31,7 +31,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-07-14 22:57+0000\n"
+"POT-Creation-Date: 2023-07-21 01:04+0000\n"
 "Last-Translator: Fruitybite, 2023\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -10727,6 +10727,10 @@ msgstr "도구 개조모듈로서 부착"
 #: data/json/item_actions.json
 msgid "Attach as gunmod"
 msgstr "총기 개조모듈로서 부착"
+
+#: data/json/item_actions.json
+msgid "Repair/mend a gun"
+msgstr "총기 수리 및 보수"
 
 #: data/json/item_actions.json
 msgid "Repair a gun"
@@ -28924,6 +28928,7 @@ msgstr "건물의 전력망에 연결된 태양전지판입니다."
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
 #: data/json/furniture_and_terrain/furniture-medical.json
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/furniture_and_terrain/furniture-roof.json
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -30398,7 +30403,9 @@ msgstr ""
 "동력원이 없군요. 겉표면을 뜯어내고 내부 장비를 분해해 꺼낼 수 있습니다."
 
 #: data/json/furniture_and_terrain/furniture-industrial.json
+#: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/furniture_and_terrain/terrain-manufactured.json
+#: data/json/obsoletion/uncategorized.json
 msgid "thunk."
 msgstr "꽝"
 
@@ -30940,6 +30947,18 @@ msgid ""
 "An insulated metal tank that holds water, kept to a temperature by a small "
 "gas flame."
 msgstr "물을 담아놓는 내장된 금속 탱크가 있습니다. 작은 가스불로 온도를 유지합니다."
+
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+#: data/json/obsoletion/uncategorized.json
+msgid "water dispenser"
+msgstr "급수기"
+
+#. ~ Description for water dispenser
+#: data/json/furniture_and_terrain/furniture-plumbing.json
+msgid ""
+"A machine with several taps that dispenses clean water.  Also known as a "
+"water cooler, it's still useful so long as the tank is full."
+msgstr "맑은 물을 제공하는 수도꼭지가 달린, 정수기로도 불리는 기계입니다. 탱크에 물이 있다는 전제 하에 쓸모가 있을겁니다."
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 #: data/json/items/tool/cooking.json data/json/vehicleparts/vehicle_parts.json
@@ -35930,15 +35949,6 @@ msgid ""
 "Deep well collecting ground water.  Installed water pump allows to draw "
 "water from it."
 msgstr "지하수를 모으는 깊은 우물입니다.  물 펌프를 설치하면 우물에서 물을 길을 수 있습니다."
-
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "water dispenser"
-msgstr "급수기"
-
-#. ~ Description for water dispenser
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "A machine with several taps that dispenses clean water."
-msgstr "깨끗한 물을 내릴 수 있는 수도꼭지가 달려 있는 기계."
 
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid "plutonium generator"
@@ -45864,6 +45874,30 @@ msgid ""
 "A laser cannon stripped from the barrel of a TX-5LR Cerberus laser turret.  "
 "Unusable as a weapon on its own without the necessary parts."
 msgstr "TX-5LR 서버러스 레이저 터렛의 총열을 개조한 무기. 필수적인 부품을 장착하지 않으면 무기로서 작동할 수 없습니다."
+
+#: data/json/items/generic.json
+msgid "salvaged CMES gatling laser"
+msgid_plural "salvaged CMES gatling lasers"
+msgstr[0] "분리된 전투장비 개틀링 레이저"
+
+#. ~ Description for {'str': 'salvaged CMES gatling laser'}
+#: data/json/items/generic.json
+msgid ""
+"A rapid-fire weapon system stripped from a wrecked combat exoskeleton.  No "
+"longer usable as a weapon in its current condition."
+msgstr "망가진 전투 외골격에서 떼어낸 연발 레이저 포대입니다. 지금 이대로는 무기로 쓸 수 없습니다."
+
+#: data/json/items/generic.json
+msgid "salvaged RMES marksman laser"
+msgid_plural "salvaged RMES marksman lasers"
+msgstr[0] "분리된 정찰장비 저격 레이저"
+
+#. ~ Description for {'str': 'salvaged RMES marksman laser'}
+#: data/json/items/generic.json
+msgid ""
+"A long-range weapon system stripped from a wrecked recon exoskeleton.  No "
+"longer usable as a weapon in its current condition."
+msgstr "망가진 정찰 외골격에서 떼어낸 장거리 레이저 포대입니다. 지금 이대로는 무기로 쓸 수 없습니다."
 
 #: data/json/items/generic.json
 msgid "light bulb"
@@ -84530,7 +84564,8 @@ msgstr ""
 #: data/json/items/gun/223.json data/json/items/gun/308.json
 #: data/json/items/gun/40.json data/json/items/gun/45.json
 #: data/json/items/gun/8x40mm.json data/json/items/gun/9mm.json
-#: data/json/items/gun/misc.json data/mods/CRT_EXPANSION/items/crt_gun.json
+#: data/json/items/gun/misc.json data/json/items/gun/ups.json
+#: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/Generic_Guns/firearms/pistol.json
 #: data/mods/Generic_Guns/firearms/rifle.json
 msgid "burst"
@@ -84890,8 +84925,7 @@ msgstr ""
 msgid "low auto"
 msgstr "저속자동"
 
-#: data/json/items/gun/308.json data/json/items/gun/ups.json
-#: data/mods/No_Hope/Items/guns.json
+#: data/json/items/gun/308.json data/mods/No_Hope/Items/guns.json
 msgid "high auto"
 msgstr "고속자동"
 
@@ -86228,8 +86262,7 @@ msgstr ""
 "Weapon)로 분류되는 이 첨단 화기는 리브텍(Rivtech)사에서 미군을 위해 개발하였으나, 얼마 지나지 않아 세상의 종말이 "
 "닥쳐버렸습니다. 연발 사격이 가능하도록 설계되었으며, 접근전에서 탁월한 성능을 보여줍니다."
 
-#: data/json/items/gun/5x50.json data/json/items/gun/ups.json
-#: data/mods/Modular_Turrets/roboguns.json
+#: data/json/items/gun/5x50.json data/mods/Modular_Turrets/roboguns.json
 msgid "5 rd."
 msgstr "5점사"
 
@@ -87751,8 +87784,7 @@ msgid ""
 "under 3 seconds, as demonstrated by the ATF technical branch."
 msgstr ""
 
-#: data/json/items/gun/shot.json data/json/items/gun/ups.json
-#: data/mods/CRT_EXPANSION/items/crt_gun.json
+#: data/json/items/gun/shot.json data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/FictonalWeapons/fic_weapons.json
 #: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
 msgid "3 rd."
@@ -87863,6 +87895,21 @@ msgstr ""
 "있습니다."
 
 #: data/json/items/gun/ups.json
+msgid "rebuilt CMES gatling laser"
+msgid_plural "rebuilt CMES gatling lasers"
+msgstr[0] "재구축된 전투장비 개틀링 레이저"
+
+#: data/json/items/gun/ups.json
+msgid ""
+"A rapid-fire weapon system stripped from a combat mech, modified for "
+"handheld use.  While less efficient and too bulky to fire without proper "
+"support, its rotating-barrel laser system can still spray death downrange "
+"with ease."
+msgstr ""
+"전투장비에서 떼어내 들고 쓸 수 있도록 개조한 연발 레이저 포대입니다. 적절한 지지대가 없으면 효율이 떨어지고 너무 거추장스럽지만, "
+"회전하는 레이저 총열로 손쉽게 사거리 내에 죽음을 흩뿌릴 수 있습니다."
+
+#: data/json/items/gun/ups.json
 msgid "RMES marksman system"
 msgid_plural "RMES marksman systems"
 msgstr[0] "RMES 사수 장비"
@@ -87872,6 +87919,20 @@ msgid ""
 "This is the integral weapon system for the RMES exoskeleton mech-suit, a "
 "quiet and accurate marksman laser rifle."
 msgstr "RMES 외골격 수트에 내장된 무기인, 조용하고 정확한 지정사수 레이저 소총입니다."
+
+#: data/json/items/gun/ups.json
+msgid "rebuilt RMES marksman laser"
+msgid_plural "rebuilt RMES marksman lasers"
+msgstr[0] "재구축된 정찰장비 저격 레이저"
+
+#: data/json/items/gun/ups.json
+msgid ""
+"A long-range weapon system stripped from a recon mech, modified for handheld"
+" use.  While less efficient and too bulky to fire without proper support, "
+"it's still a quiet and relatively accurate marksman laser rifle."
+msgstr ""
+"정찰장비에서 떼어내 들고 쓸 수 있도록 개조된 장거리 레이저 포대입니다. 적절한 지지대가 없으면 효율이 떨어지고 너무 거추장스럽지만, "
+"조용하고 정확한 레이저 저격소총 역할은 확실히 해냅니다."
 
 #: data/json/items/gun/ups.json data/mods/No_Hope/Items/guns.json
 msgid "handheld laser cannon"
@@ -110193,12 +110254,15 @@ msgid ""
 "acquisition by the US military, it was designed to be piloted by an operator"
 " to load and unload heavy material, and for limited combat support roles, it"
 " was not deployed before the Cataclysm hit, though there were a few "
-"prototypes in the field.  You may be able to hack it to accept you as its "
-"pilot.  Like all mech-suits it can act as a UPS from its large battery."
+"prototypes in the field.  It lacks any integral weaponry, but the user can "
+"fire from the open cockpit, even using the frame to support heavier "
+"firearms.  You may be able to hack it to accept you as its pilot.  Like all "
+"mech-suits it can act as a UPS from its large battery."
 msgstr ""
 "보잉-대우 LMES (운반용 기계외장수트), 미군이 최근에 인수한 이 장비는 본래 중장비 운반 및 제한적 전투 지원 임무를 목표로 "
-"설계되었습니다. 대재앙이 일어나기 전에 정식 배치되지는 않았지만, 전장에 프로토타입이 조금 있긴 합니다. 해킹하여 당신을 파일럿으로 "
-"인지하게끔 만들 수 있습니다. 다른 기계수트처럼, 장착된 대형 배터리를 UPS로 활용할 수 있습니다."
+"설계되었습니다. 대재앙이 일어나기 전에 정식 배치되지는 않았지만, 전장에 프로토타입이 조금 있긴 합니다. 내장된 무기는 없지만, 열린 "
+"콕핏 너머로 총기를 쏠 수 있으며 필요하다면 프레임을 중화기 고정용 지지대로 써먹을 수도 있습니다. 해킹하여 당신을 파일럿으로 인지하게끔"
+" 만들 수 있습니다. 다른 기계수트처럼, 장착된 대형 배터리를 UPS로 활용할 수 있습니다."
 
 #: data/json/monsters/mi-go.json
 msgid "mi-go"
@@ -151499,6 +151563,11 @@ msgstr "이건 굳이 말하자면 최고급 세탁기나 식기세척기의 일
 msgid "Lycra"
 msgstr "스판덱스"
 
+#. ~ Description for water dispenser
+#: data/json/obsoletion/uncategorized.json
+msgid "A machine with several taps that dispenses clean water."
+msgstr "깨끗한 물을 내릴 수 있는 수도꼭지가 달려 있는 기계."
+
 #. ~ Description for quantum solar panel
 #: data/json/obsoletion/vehicle_parts.json
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -170150,6 +170219,14 @@ msgstr "차량용 A7 레이저 라이플"
 #: data/json/vehicleparts/turret.json data/mods/No_Hope/vehicle_parts.json
 msgid "mounted Cerberus laser cannon"
 msgstr "차량용 케르베로스 레이저 캐논"
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted gatling laser"
+msgstr "차량용 개틀링 레이저"
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted marksman laser"
+msgstr "차량용 저격 레이저"
 
 #: data/json/vehicleparts/turret.json
 msgid "mounted M249"
@@ -227111,10 +227188,6 @@ msgid "You are too weak to wield %s with only one arm."
 msgstr "%s(을)를 한 손으로 들기에는 힘이 부족합니다."
 
 #: src/character.cpp
-msgid "You cannot wield anything while piloting a mech."
-msgstr "기계 외골격 수트를 조종 중일 때는 손에 아무 것도 들 수 없습니다."
-
-#: src/character.cpp
 #, c-format
 msgid "You cannot unwield your %s."
 msgstr "%s(을)를 손에서 놓을 수 없습니다."
@@ -231096,6 +231169,11 @@ msgstr "%1$s의 %2$s에 쏜 것이 튕겨져나갑니다!"
 #, c-format
 msgid "You were hit in the %1$s for %2$d damage."
 msgstr "%1$s에 %2$d 피해를 입었습니다."
+
+#: src/creature.cpp
+#, c-format
+msgid "You were hit for a total of %d damage."
+msgstr "도합 %d 피해를 입었습니다. "
 
 #. ~ "hit points", used in scrolling combat text
 #: src/creature.cpp src/melee.cpp
@@ -236530,6 +236608,11 @@ msgstr "연료를 더 투입하지 않으면 대략 %s ~ %s 동안 타오를 것
 
 #: src/game.cpp
 #, c-format
+msgid "There is a %s.  Battery level: %d%%"
+msgstr "%s(이)가 있습니다. 배터리 잔량: %d%%"
+
+#: src/game.cpp
+#, c-format
 msgid "There is a %s."
 msgstr "%s(이)가 있습니다."
 
@@ -239419,7 +239502,7 @@ msgstr "충분한 양력 발생을 위해 로터가 격렬히 작동합니다!"
 msgid "You can't open things while you're in your shell."
 msgstr "껍질 안에 있는 동안엔 무언가를 열 수 없습니다."
 
-#: src/handle_action.cpp
+#: src/handle_action.cpp src/map.cpp
 msgid "You can't open things while you're riding."
 msgstr "타고 있는 동안엔 무언가를 열 수 없습니다."
 
@@ -239462,6 +239545,10 @@ msgstr "껍질 안에 있는 동안엔 뭔가 잡을 수 없습니다."
 #: src/handle_action.cpp
 msgid "You can't grab things while you're riding."
 msgstr "타고 있는 동안엔 무언가를 잡을 수 없다."
+
+#: src/handle_action.cpp
+msgid "Your mech doesn't have hands to grab with."
+msgstr "장비에 무언가를 붙잡을 손이 달려있지 않습니다."
 
 #: src/handle_action.cpp
 msgid "You can't haul things while you're in your shell."
@@ -246555,12 +246642,16 @@ msgid "You hear \"%s\""
 msgstr "%s 소리를 들었습니다."
 
 #: src/iuse.cpp
-msgid "You need a mechanics skill of 2 to use this repair kit."
-msgstr "이 수리도구를 사용하려면 기계공학 기술이 2 이상 필요합니다."
-
-#: src/iuse.cpp
 msgid "That isn't a firearm!"
 msgstr "그것은 총기가 아니다!"
+
+#: src/iuse.cpp
+msgid "There's nothing you can clean or mend with this."
+msgstr "청소나 수리가 필요한 부분이 없습니다."
+
+#: src/iuse.cpp
+msgid "You need a mechanics skill of 2 to use this repair kit."
+msgstr "이 수리도구를 사용하려면 기계공학 기술이 2 이상 필요합니다."
 
 #: src/iuse.cpp
 #, c-format
@@ -257033,8 +257124,8 @@ msgid "Climb into the mech and take control"
 msgstr "장비에 올라타 조종하기"
 
 #: src/monexamine.cpp
-msgid "You cannot pilot the mech whilst wielding something"
-msgstr "손에 뭔가 들고 있어 이 장비를 조종할 수 없습니다."
+msgid "You cannot pilot this mech whilst wielding something"
+msgstr "손에 무언가를 들고 있는 동안 이 장비를 조종할 수 없습니다."
 
 #: src/monexamine.cpp
 msgid "This mech has a dead battery and won't turn on"
