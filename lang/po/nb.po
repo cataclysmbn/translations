@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-09-02 01:37+0000\n"
+"POT-Creation-Date: 2023-09-15 13:27+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2023\n"
 "Language-Team: Norwegian Bokmål (https://app.transifex.com/bn-team/teams/113585/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -93169,6 +93169,19 @@ msgid ""
 msgstr ""
 
 #: data/json/items/melee/spears_and_polearms.json
+msgid "makeshift glaive"
+msgid_plural "makeshift glaives"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'makeshift glaive'}
+#: data/json/items/melee/spears_and_polearms.json
+msgid ""
+"This is a large blade attached to a long stick.  It could do a considerable "
+"amount of damage."
+msgstr ""
+
+#: data/json/items/melee/spears_and_polearms.json
 msgid "glaive"
 msgid_plural "glaives"
 msgstr[0] ""
@@ -99292,7 +99305,7 @@ msgstr ""
 
 #. ~ Use action need_charges_msg for {'str': 'refillable lighter'}.
 #: data/json/items/tool/fire.json src/activity_actor.cpp src/explosion.cpp
-#: src/gates.cpp
+#: src/gates.cpp src/iuse.cpp
 msgid "Nothing happens."
 msgstr ""
 
@@ -101135,19 +101148,6 @@ msgid ""
 "Set the lifestraw in suspect water, let sit for one minute then drink.  The "
 "two part filtration system will purify the water you drink.  Water taken "
 "from uncertain sources like a river may be dirty."
-msgstr ""
-
-#: data/json/items/tool/misc.json
-msgid "makeshift glaive"
-msgid_plural "makeshift glaives"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'makeshift glaive'}
-#: data/json/items/tool/misc.json
-msgid ""
-"This is a large blade attached to a long stick.  It could do a considerable "
-"amount of damage."
 msgstr ""
 
 #: data/json/items/tool/misc.json
@@ -195864,6 +195864,42 @@ msgid ""
 "lights."
 msgstr ""
 
+#: data/mods/Magiclysm/Spells/animist.json
+msgid "Bless"
+msgstr ""
+
+#. ~ Description for {'str': 'Bless'}
+#. ~ Description for {'str': 'Scroll of Bless', 'str_pl': 'Scrolls of Bless'}
+#: data/mods/Magiclysm/Spells/animist.json
+#: data/mods/Magiclysm/items/spell_scrolls.json
+msgid "A spell of blessing that gives you energy and boosts your abilities."
+msgstr ""
+
+#: data/mods/Magiclysm/Spells/animist.json
+msgid "Holy Blade"
+msgstr ""
+
+#. ~ Description for Holy Blade
+#. ~ Description for {'str': 'Scroll of Holy Blade', 'str_pl': 'Scrolls of
+#. Holy Blade'}
+#: data/mods/Magiclysm/Spells/animist.json
+#: data/mods/Magiclysm/items/spell_scrolls.json
+msgid "This blade of light will cut through any evil it makes contact with!"
+msgstr ""
+
+#: data/mods/Magiclysm/Spells/animist.json
+msgid "Spiritual Armor"
+msgstr ""
+
+#. ~ Description for Spiritual Armor
+#. ~ Description for {'str': 'Scroll of Spiritual Armor', 'str_pl': 'Scrolls
+#. of Spiritual Armor'}
+#: data/mods/Magiclysm/Spells/animist.json
+#: data/mods/Magiclysm/items/spell_scrolls.json
+msgid ""
+"Evil will not make it through your defenses if your faith is strong enough!"
+msgstr ""
+
 #: data/mods/Magiclysm/Spells/biomancer.json
 msgid "Cure Light Wounds"
 msgstr ""
@@ -197328,17 +197364,6 @@ msgid ""
 msgstr ""
 
 #: data/mods/Magiclysm/Spells/technomancer.json
-msgid "Bless"
-msgstr ""
-
-#. ~ Description for {'str': 'Bless'}
-#. ~ Description for {'str': 'Scroll of Bless', 'str_pl': 'Scrolls of Bless'}
-#: data/mods/Magiclysm/Spells/technomancer.json
-#: data/mods/Magiclysm/items/spell_scrolls.json
-msgid "A spell of blessing that gives you energy and boosts your abilities."
-msgstr ""
-
-#: data/mods/Magiclysm/Spells/technomancer.json
 #: data/mods/Magiclysm/effects/effects.json
 msgid "Invisibility"
 msgstr ""
@@ -197353,31 +197378,6 @@ msgstr ""
 #. ~ Message for SPELL 'Invisibility'
 #: data/mods/Magiclysm/Spells/technomancer.json
 msgid "To the outside world, your body fades away and you cease to exist!"
-msgstr ""
-
-#: data/mods/Magiclysm/Spells/technomancer.json
-msgid "Holy Blade"
-msgstr ""
-
-#. ~ Description for Holy Blade
-#. ~ Description for {'str': 'Scroll of Holy Blade', 'str_pl': 'Scrolls of
-#. Holy Blade'}
-#: data/mods/Magiclysm/Spells/technomancer.json
-#: data/mods/Magiclysm/items/spell_scrolls.json
-msgid "This blade of light will cut through any evil it makes contact with!"
-msgstr ""
-
-#: data/mods/Magiclysm/Spells/technomancer.json
-msgid "Spiritual Armor"
-msgstr ""
-
-#. ~ Description for Spiritual Armor
-#. ~ Description for {'str': 'Scroll of Spiritual Armor', 'str_pl': 'Scrolls
-#. of Spiritual Armor'}
-#: data/mods/Magiclysm/Spells/technomancer.json
-#: data/mods/Magiclysm/items/spell_scrolls.json
-msgid ""
-"Evil will not make it through your defenses if your faith is strong enough!"
 msgstr ""
 
 #: data/mods/Magiclysm/Spells/technomancer.json
@@ -226324,21 +226324,19 @@ msgstr ""
 
 #: src/game.cpp
 #, c-format
-msgid "Stepping into that %1$s looks risky, but you enter anyway."
+msgid "Stepping into that %1$s looks risky.  %2$s"
 msgstr ""
 
 #: src/game.cpp
-#, c-format
-msgid ""
-"Stepping into that %1$s looks risky.  Run into it if you wish to enter "
-"anyway."
+msgid "But you enter anyway."
 msgstr ""
 
 #: src/game.cpp
-#, c-format
-msgid ""
-"Stepping into that %1$s looks risky.  Crouch and move into it if you wish to"
-" enter anyway."
+msgid "Run into it if you wish to enter anyway."
+msgstr ""
+
+#: src/game.cpp
+msgid "Crouch and move into it if you wish to enter anyway."
 msgstr ""
 
 #: src/game.cpp
@@ -240353,6 +240351,17 @@ msgstr ""
 
 #: src/main_menu.cpp
 msgid "Unable to make graphics directory.  Check permissions."
+msgstr ""
+
+#: src/main_menu.cpp
+msgid ""
+"You are running x32 build of the game on a x64 operating system.  This means"
+" the game will NOT be able to access all memory, and you may experience "
+"random out-of-memory crashes.  Consider obtaining a x64 build of the game to"
+" avoid that, but if you *really* want to be running x32 build of the game "
+"for some reason (or don't have a choice), you may want to lower your memory "
+"usage by disabling tileset, soundpack and mods and increasing autosave "
+"frequency."
 msgstr ""
 
 #: src/main_menu.cpp
