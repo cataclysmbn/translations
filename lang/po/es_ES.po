@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-10-14 01:32+0000\n"
+"POT-Creation-Date: 2023-10-21 00:36+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2023\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/bn-team/teams/113585/es_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -10962,6 +10962,13 @@ msgstr ""
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
 msgid "This item can be used to communicate with radio waves."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This item can be used to <info>pick locks</info> with <good>zero "
+"effort</good>."
 msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
@@ -32625,6 +32632,27 @@ msgid "glass breaking!"
 msgstr "¡cristal rompiéndose!"
 
 #: data/json/furniture_and_terrain/furniture-storage.json
+msgid "open gun safe"
+msgstr ""
+
+#. ~ Description for open gun safe
+#. ~ Description for closed gun safe
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid ""
+"A large and heavy container with thick metal walls and a rotary combination "
+"lock, this is designed to securely store firearms, weapon mods, and "
+"ammunition."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "screeching metal!"
+msgstr "¡chirrido de metal!"
+
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "closed gun safe"
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-storage.json
 msgid "gun safe"
 msgstr "caja fuerte de armas"
 
@@ -32634,8 +32662,8 @@ msgid "Oooooohhhh.  Shiny."
 msgstr "Oooooohhhh. Brillante."
 
 #: data/json/furniture_and_terrain/furniture-storage.json
-msgid "screeching metal!"
-msgstr "¡chirrido de metal!"
+msgid "With a satisfying click, the lock on the gun safe door opens."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "jammed gun safe"
@@ -34165,6 +34193,10 @@ msgstr "Haces fuerza, pero no puedes abrir la puerta."
 msgid "You damage the door!"
 msgstr ""
 
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "With a satisfying click, the lock on the door opens."
+msgstr "Con un satisfactorio click, la cerradura de la puerta se abre."
+
 #. ~ Description for closed wood door
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid ""
@@ -34522,6 +34554,10 @@ msgstr ""
 "habilidoso."
 
 #: data/json/furniture_and_terrain/terrain-doors.json
+msgid "The door swings open…"
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-doors.json
 msgid "closed frosted glass door"
 msgstr "puerta cerrada de cristal mate"
 
@@ -34589,6 +34625,10 @@ msgstr ""
 "Es la puerta para una verja de alambre. Esta tiene un candado para cerrarla."
 " Con las herramientas adecuadas, podrías cortar la verja o forzar la "
 "cerradura. También podrías examinar la verja para ver si se puede trepar."
+
+#: data/json/furniture_and_terrain/terrain-fences-gates.json
+msgid "With a satisfying click, the lock on the gate opens."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "closed wire gate"
@@ -50877,7 +50917,7 @@ msgstr[2] "pares de calcetines termoeléctricos"
 #. ~ Use action msg for {'str': 'thermal electric outfit'}.
 #. ~ Use action msg for {'str': 'cryopod bodyglove'}.
 #: data/json/items/tool_armor.json data/mods/Aftershock/items/tool_armor.json
-#: src/bionics.cpp src/mutation_ui.cpp
+#: src/bionics.cpp src/iexamine.cpp src/mutation_ui.cpp
 #, c-format
 msgid "You activate your %s."
 msgstr "Activas tu %s."
@@ -78454,7 +78494,6 @@ msgstr[1] "subfusiles básicos"
 msgstr[2] "subfusiles básicos"
 
 #: data/json/items/classes/gun.json data/json/items/gun/paintball.json
-#: data/json/items/ranged/crossbows.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
 msgctxt "gun_type_type"
@@ -91739,6 +91778,32 @@ msgstr ""
 "Es un sandwich con pan tostado. Se llama BLT por las letras en inglés de sus"
 " componentes: panceta, lechuga y tomate."
 
+#: data/json/items/comestibles/sandwich.json
+msgid "okay sandwich"
+msgid_plural "okay sandwiches"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'okay sandwich', 'str_pl': 'okay sandwiches'}
+#: data/json/items/comestibles/sandwich.json
+msgid ""
+"A simple sandwich, little more than meat and veggies on bread.  Rather dry."
+msgstr ""
+
+#: data/json/items/comestibles/sandwich.json
+msgid "dairy-free deluxe sandwich"
+msgid_plural "dairy-free deluxe sandwiches"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'dairy-free deluxe sandwich', 'str_pl': 'dairy-
+#. free deluxe sandwiches'}
+#: data/json/items/comestibles/sandwich.json
+msgid "A deluxe sandwich with meat, veggies, and sauce, but no cheese."
+msgstr ""
+
 #: data/json/items/comestibles/seed.json
 msgid "seeds"
 msgid_plural "seeds"
@@ -101761,6 +101826,19 @@ msgstr ""
 "Un conjunto de juntas y burletes que permiten utilizar un arma de fuego "
 "estando sumergida en el agua."
 
+#: data/json/items/gunmod/mechanism.json
+msgid "steel bowstring"
+msgid_plural "steel bowstrings"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A forged steel bowstring designed for crossbows.  It allows bolts to hit "
+"harder and fly faster, but it's too high-tension to use in a regular bow."
+msgstr ""
+
 #: data/json/items/gunmod/mount.json
 msgid "replaceable furniture kit"
 msgid_plural "replaceable furniture kits"
@@ -106658,8 +106736,10 @@ msgstr[2] "garras biónicas"
 
 #. ~ Description for {'str_sp': 'bionic claws'}
 #: data/json/items/melee/fake.json
-msgid "Short and sharp claws made from a high-tech metal."
-msgstr "Garras cortas y afiladas hechas de un metal de alta tecnología."
+msgid ""
+"Short and sharp claws made from a high-tech metal and edged with bonded "
+"nanocrystals."
+msgstr ""
 
 #: data/json/items/melee/fake.json
 msgid "monomolecular blade"
@@ -108893,6 +108973,18 @@ msgstr[2] ""
 #. ~ Description for {'str': 'dagger'}
 #: data/json/items/melee/swords_and_blades.json
 msgid "A medieval dagger, more finely crafted than a baselard."
+msgstr ""
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "bronze dagger"
+msgid_plural "bronze daggers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'bronze dagger'}
+#: data/json/items/melee/swords_and_blades.json
+msgid "An archaic-looking bronze dagger, with a serviceable sharp edge."
 msgstr ""
 
 #: data/json/items/melee/unarmed_weapons.json
@@ -114462,6 +114554,20 @@ msgstr ""
 "controlar la entrada de aire. Adentro tiene una brasa encendida, y puede "
 "usarse para encender una fogata."
 
+#: data/json/items/tool/fire.json
+msgid "electric lighter"
+msgid_plural "electric lighters"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'electric lighter'}
+#: data/json/items/tool/fire.json
+msgid ""
+"A battery-powered lighter.  More efficient than a crude electric "
+"firestarter, its batteries last for quite a while."
+msgstr ""
+
 #: data/json/items/tool/firefighting.json
 msgid "crash axe"
 msgid_plural "crash axes"
@@ -118609,6 +118715,20 @@ msgstr ""
 "cuerpo a cuerpo, pero es un poco lenta entre hachazo y hachazo."
 
 #: data/json/items/tool/woodworking.json
+msgid "bronze axe"
+msgid_plural "bronze axes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'bronze axe'}
+#: data/json/items/tool/woodworking.json
+msgid ""
+"This is a large, two-handed wood axe with a bronze axehead.  It makes a good"
+" melee weapon, but is a bit slow to recover between swings."
+msgstr ""
+
+#: data/json/items/tool/woodworking.json
 msgid "chainsaw (off)"
 msgid_plural "chainsaws (off)"
 msgstr[0] "motosierra (apagada)"
@@ -119039,6 +119159,21 @@ msgstr ""
 "Es un martillo de carpintero de acero desimantado con un mango de madera. "
 "Con un martillo, clavos y tablas de madera en tu inventario, podés bloquear "
 "con tablas cualquier puerta o ventana. También tiene miles de otros usos."
+
+#: data/json/items/tool/workshop.json
+msgid "bronze hammer"
+msgid_plural "bronze hammers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'bronze hammer'}
+#: data/json/items/tool/workshop.json
+msgid ""
+"This is a bronze claw hammer with a wooden grip, commonly used where sparks "
+"from a steel hammer might be a safety hazard.  You could board up adjacent "
+"doors and windows, among myriad other uses."
+msgstr ""
 
 #: data/json/items/tool/workshop.json
 msgid "hand drill"
@@ -122927,14 +123062,12 @@ msgstr "COMANDO: SELLAR SRCF [4423]"
 
 #. ~ Computer name
 #: data/json/mapgen/hospital.json data/json/mapgen/office_doctor.json
-#: data/mods/No_Hope/Mapgen/office_doctor.json
 msgid "Medical Supply Access"
 msgstr "Acceso a Suministros Médicos"
 
 #. ~ Computer option
 #: data/json/mapgen/hospital.json data/json/mapgen/office_doctor.json
 #: data/mods/Aftershock/maps/mapgen/augmentation_clinic.json
-#: data/mods/No_Hope/Mapgen/office_doctor.json
 msgid "Unlock Door"
 msgstr "Debloquear Puerta"
 
@@ -123291,7 +123424,6 @@ msgstr ""
 
 #. ~ Computer option
 #: data/json/mapgen/office_doctor.json
-#: data/mods/No_Hope/Mapgen/office_doctor.json
 msgid "Lock Door"
 msgstr "Bloquear Puerta"
 
@@ -145567,7 +145699,7 @@ msgstr ""
 #. ~ Description for mission '{'str': "Prove You're A Survivor"}'
 #: data/json/npcs/missiondef.json
 msgid ""
-"Prove you're a survivor by surviving for 10 days after the Cataclysm, and "
+"Prove you're a survivor by surviving for 7 days after the Cataclysm, and "
 "then returning to the person who gave you this mission."
 msgstr ""
 
@@ -145580,7 +145712,7 @@ msgid ""
 "It's hard surviving out here on our own, and we'd probably have a better "
 "chance working together.  Problem is, I don't really know you and what "
 "you're capable of.  You might have what it takes, or you might not.  Either "
-"way, I'm going to need some proof.  Come back in a few days and I'll gladly "
+"way, I'm going to need some proof.  Come back in a week and I'll gladly "
 "follow you.  It's basically a win-win for me: either you come back and I'll "
 "know you've got what it takes, or you don't and I'll know that I was right "
 "not to follow you."
@@ -145597,7 +145729,7 @@ msgid ""
 msgstr ""
 
 #: data/json/npcs/missiondef.json
-msgid "Well, you're not dead…yet."
+msgid "Don't think it's been a week, but at least you're not dead…yet."
 msgstr ""
 
 #: data/json/npcs/missiondef.json
@@ -235884,8 +236016,7 @@ msgstr "¡Te quedaste sin energía!"
 msgid "You cannot hack this."
 msgstr "No puedes hackear esto."
 
-#: src/activity_actor.cpp src/activity_handlers.cpp src/computer_session.cpp
-#: src/iuse.cpp src/map.cpp
+#: src/activity_actor.cpp src/computer_session.cpp src/iuse.cpp src/map.cpp
 msgid "an alarm sound!"
 msgstr "el sonido de una alarma!"
 
@@ -235917,6 +236048,61 @@ msgstr ""
 #: src/activity_actor.cpp
 msgid "Moving canceled auto-pickup."
 msgstr ""
+
+#: src/activity_actor.cpp
+msgid "The lock opens…"
+msgstr ""
+
+#: src/activity_actor.cpp
+msgid "Your clumsy attempt jams the lock!"
+msgstr "¡Tu intento torpe traba la cerradura!"
+
+#: src/activity_actor.cpp
+msgid "The lock stumps your efforts to pick it, and you destroy your tool."
+msgstr ""
+"La cerradura no cede a tus intentos de forzarla, y terminas rompiendo tu "
+"herramienta."
+
+#: src/activity_actor.cpp
+msgid "The lock stumps your efforts to pick it, and you damage your tool."
+msgstr ""
+"La cerradura no cede a tus intentos de forzarla, y terminas dañando tu "
+"herramienta."
+
+#: src/activity_actor.cpp
+msgid "The lock stumps your efforts to pick it."
+msgstr "La cerradura no cede a tus intentos de forzarla."
+
+#: src/activity_actor.cpp src/game.cpp src/iuse.cpp src/iuse_actor.cpp
+msgid "You cannot do that while mounted."
+msgstr ""
+
+#: src/activity_actor.cpp
+msgid "There is nothing to lockpick nearby."
+msgstr ""
+
+#: src/activity_actor.cpp
+msgid "Use your lockpick where?"
+msgstr "¿Dónde quieres usar tu ganzúa?"
+
+#: src/activity_actor.cpp
+msgid "You pick your nose and your sinuses swing open."
+msgstr ""
+"Te metes la ganzúa en la nariz y tus sinusales se abren completamente."
+
+#: src/activity_actor.cpp
+msgid ""
+"You can pick your friends, and you can pick your nose, but you can't pick "
+"your friend's nose."
+msgstr ""
+
+#: src/activity_actor.cpp
+msgid "That door isn't locked."
+msgstr "Esa puerta no está cerrada con llave."
+
+#: src/activity_actor.cpp
+msgid "That cannot be picked."
+msgstr "No puedes usar la ganzúa en eso."
 
 #. ~ Sound of a Rat mutant burrowing!
 #: src/activity_handlers.cpp
@@ -236489,26 +236675,6 @@ msgstr "¡hissssssssss!"
 #: src/activity_handlers.cpp
 msgid "With a satisfying click, the lock on the safe opens!"
 msgstr "Con un satisfactorio click, ¡la cerradura de la puerta se abre!"
-
-#: src/activity_handlers.cpp
-msgid "Your clumsy attempt jams the lock!"
-msgstr "¡Tu intento torpe traba la cerradura!"
-
-#: src/activity_handlers.cpp
-msgid "The lock stumps your efforts to pick it, and you destroy your tool."
-msgstr ""
-"La cerradura no cede a tus intentos de forzarla, y terminas rompiendo tu "
-"herramienta."
-
-#: src/activity_handlers.cpp
-msgid "The lock stumps your efforts to pick it, and you damage your tool."
-msgstr ""
-"La cerradura no cede a tus intentos de forzarla, y terminas dañando tu "
-"herramienta."
-
-#: src/activity_handlers.cpp
-msgid "The lock stumps your efforts to pick it."
-msgstr "La cerradura no cede a tus intentos de forzarla."
 
 #: src/activity_handlers.cpp
 msgid "Repeat once"
@@ -238008,7 +238174,7 @@ msgstr ""
 msgid "Properties"
 msgstr "Propiedades"
 
-#: src/armor_layers.cpp src/item.cpp
+#: src/armor_layers.cpp
 msgid "Coverage:"
 msgstr "Cobertura:"
 
@@ -240307,6 +240473,10 @@ msgstr ""
 msgid "Start a fire where?"
 msgstr "¿Dónde quieres encender un fuego?"
 
+#: src/bionics.cpp src/iuse_actor.cpp
+msgid "You happily light a fire."
+msgstr "Prendés un fuego con mucha felicidad."
+
 #: src/bionics.cpp
 #, c-format
 msgid "Your radiation level: %d"
@@ -240336,14 +240506,6 @@ msgstr "Extraer agua del %s"
 
 #: src/bionics.cpp
 msgid "There is no suitable corpse on this tile."
-msgstr ""
-
-#: src/bionics.cpp src/iuse_actor.cpp
-msgid "Use your lockpick where?"
-msgstr "¿Dónde quieres usar tu ganzúa?"
-
-#: src/bionics.cpp src/iuse_actor.cpp
-msgid "There is nothing to lockpick nearby."
 msgstr ""
 
 #: src/bionics.cpp
@@ -251228,10 +251390,6 @@ msgstr ""
 msgid "There is a %s."
 msgstr ""
 
-#: src/game.cpp src/iuse.cpp src/iuse_actor.cpp
-msgid "You cannot do that while mounted."
-msgstr ""
-
 #: src/game.cpp
 msgid "You cannot interact with a vehicle while mounted."
 msgstr ""
@@ -254417,6 +254575,10 @@ msgid "That's the same container!"
 msgstr "¡Es el mismo contenedor!"
 
 #: src/handle_liquid.cpp
+msgid "Fill avaliable tank"
+msgstr ""
+
+#: src/handle_liquid.cpp
 #, c-format
 msgid "Fill nearby vehicle %s"
 msgstr "Llenar vehículo cercano %s"
@@ -254869,6 +255031,11 @@ msgstr "Intentas abrir la cerradura del/la %1$s utilizando tu %2$s..."
 
 #: src/iexamine.cpp
 #, c-format
+msgid "You don't have enough power to activate your %s."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
 msgid ""
 "The %s is locked.  If only you had something to pry it or pick its lock…"
 msgstr ""
@@ -255138,8 +255305,8 @@ msgstr "No tienes fertilizante para el %s."
 
 #: src/iexamine.cpp
 #, c-format
-msgid "Fertilize the %s"
-msgstr "Fertilizar el %s"
+msgid "Fertilize the %s?"
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "Use which fertilizer?"
@@ -258071,181 +258238,8 @@ msgstr ""
 "<info>mejorarla reparándola</info>."
 
 #: src/item.cpp
-msgid "<bold>Covers</bold>: "
-msgstr ""
-
-#: src/item.cpp
-msgid "The <info>head</info>. "
-msgstr "La <info>cabeza</info>. "
-
-#: src/item.cpp
-msgid "The <info>eyes</info>. "
-msgstr "Los <info>ojos</info>. "
-
-#: src/item.cpp
-msgid "The <info>mouth</info>. "
-msgstr "La <info>boca</info>. "
-
-#: src/item.cpp
-msgid "The <info>torso</info>. "
-msgstr "El <info>torso</info>. "
-
-#: src/item.cpp
-msgid "Either <info>arm</info>. "
-msgstr "Cualquier <info>brazo</info>. "
-
-#: src/item.cpp
-msgid "The <info>arms</info>. "
-msgstr "Los <info>brazos</info>. "
-
-#: src/item.cpp
-msgid "The <info>left arm</info>. "
-msgstr "El <info>brazo izquierdo</info>. "
-
-#: src/item.cpp
-msgid "The <info>right arm</info>. "
-msgstr "El <info>brazo derecho</info>. "
-
-#: src/item.cpp
-msgid "Either <info>hand</info>. "
-msgstr "Cualquier <info>mano</info>. "
-
-#: src/item.cpp
-msgid "The <info>hands</info>. "
-msgstr "Las <info>manos</info>. "
-
-#: src/item.cpp
-msgid "The <info>left hand</info>. "
-msgstr "La <info>mano izquierda</info>. "
-
-#: src/item.cpp
-msgid "The <info>right hand</info>. "
-msgstr "La <info>mano derecha</info>. "
-
-#: src/item.cpp
-msgid "Either <info>leg</info>. "
-msgstr "Cualquier <info>pierna</info>. "
-
-#: src/item.cpp
-msgid "The <info>legs</info>. "
-msgstr "Las <info>piernas</info>. "
-
-#: src/item.cpp
-msgid "The <info>left leg</info>. "
-msgstr "La <info>pierna izquierda</info>. "
-
-#: src/item.cpp
-msgid "The <info>right leg</info>. "
-msgstr "La <info>pierna derecha</info>. "
-
-#: src/item.cpp
-msgid "Either <info>foot</info>. "
-msgstr "Cualquier <info>pie</info>. "
-
-#: src/item.cpp
-msgid "The <info>feet</info>. "
-msgstr "Los <info>pies</info>. "
-
-#: src/item.cpp
-msgid "The <info>left foot</info>. "
-msgstr "El <info>pie izquierdo</info>. "
-
-#: src/item.cpp
-msgid "The <info>right foot</info>. "
-msgstr "El <info>pie derecho</info>. "
-
-#: src/item.cpp
-msgid "<info>Nothing</info>."
-msgstr "<info>Nada</info>."
-
-#: src/item.cpp
-msgid "Layer: "
-msgstr "Nivel: "
-
-#: src/item.cpp
-msgid "<stat>Personal aura</stat>. "
-msgstr ""
-
-#: src/item.cpp
-msgid "<stat>Close to skin</stat>. "
-msgstr "<stat>Contra la piel</stat>. "
-
-#: src/item.cpp
-msgid "<stat>Strapped</stat>. "
-msgstr "<stat>Atado</stat>. "
-
-#: src/item.cpp
-msgid "<stat>Outer</stat>. "
-msgstr "<stat>Externo</stat>. "
-
-#: src/item.cpp
-msgid "<stat>Waist</stat>. "
-msgstr "<stat>Cintura</stat>. "
-
-#: src/item.cpp
-msgid "<stat>Outer aura</stat>. "
-msgstr ""
-
-#: src/item.cpp
-msgid "<stat>Normal</stat>. "
-msgstr "<stat>Normal</stat>. "
-
-#: src/item.cpp
-msgid "Average Coverage: "
-msgstr ""
-
-#: src/item.cpp
-msgid "Warmth: "
-msgstr "Abrigo: "
-
-#: src/item.cpp
-msgid " <info>(fits)</info>"
-msgstr ""
-
-#: src/item.cpp
-msgid " <bad>(poor fit)</bad>"
-msgstr ""
-
-#: src/item.cpp
-msgid " <bad>(too big)</bad>"
-msgstr ""
-
-#: src/item.cpp
-msgid " <bad>(huge!)</bad>"
-msgstr ""
-
-#: src/item.cpp
-msgid " <bad>(too small)</bad>"
-msgstr ""
-
-#: src/item.cpp
-msgid " <bad>(tiny!)</bad>"
-msgstr ""
-
-#: src/item.cpp
-msgid "<bold>Encumbrance</bold>:"
-msgstr ""
-
-#: src/item.cpp
-#, c-format
-msgid "%s:"
-msgstr ""
-
-#: src/item.cpp
-msgid "When Full:"
-msgstr ""
-
-#: src/item.cpp
 msgid "Storage: "
 msgstr "Almacenamiento: "
-
-#: src/item.cpp
-msgid "<bold>Weight capacity modifier</bold>: "
-msgstr "<bold>Modificador de capacidad de peso</bold>:"
-
-#: src/item.cpp
-msgid "<bold>Weight capacity bonus</bold>: "
-msgstr "<bold>Bonus de capacidad de peso</bold>:"
 
 #: src/item.cpp
 msgid "* This item can be <info>worn with a helmet</info>."
@@ -258631,6 +258625,14 @@ msgstr ""
 #: src/item.cpp
 msgid "<bold>Stat Bonus</bold>: "
 msgstr ""
+
+#: src/item.cpp src/iteminfo_armor.cpp
+msgid "<bold>Weight capacity modifier</bold>: "
+msgstr "<bold>Modificador de capacidad de peso</bold>:"
+
+#: src/item.cpp src/iteminfo_armor.cpp
+msgid "<bold>Weight capacity bonus</bold>: "
+msgstr "<bold>Bonus de capacidad de peso</bold>:"
 
 #: src/item.cpp
 msgid "<bold>Melee damage</bold>: "
@@ -259531,6 +259533,174 @@ msgstr "inventario"
 #: src/item_location.cpp
 #, c-format
 msgid "inside %s"
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Personal aura</stat>. "
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Close to skin</stat>. "
+msgstr "<stat>Contra la piel</stat>. "
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Strapped</stat>. "
+msgstr "<stat>Atado</stat>. "
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Outer</stat>. "
+msgstr "<stat>Externo</stat>. "
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Waist</stat>. "
+msgstr "<stat>Cintura</stat>. "
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Outer aura</stat>. "
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Normal</stat>. "
+msgstr "<stat>Normal</stat>. "
+
+#: src/iteminfo_armor.cpp
+msgid " <bad>(too big)</bad>"
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid " <bad>(huge!)</bad>"
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid " <bad>(too small)</bad>"
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid " <bad>(tiny!)</bad>"
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "<info>(for all parts)</info>"
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "<bold>Coverage</bold>"
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "<bold>Encumbrance</bold>"
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "When Full"
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "<bold>Storage</bold>: "
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "<bold>Covers</bold>: "
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>head</info>. "
+msgstr "La <info>cabeza</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>eyes</info>. "
+msgstr "Los <info>ojos</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>mouth</info>. "
+msgstr "La <info>boca</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>torso</info>. "
+msgstr "El <info>torso</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "Either <info>arm</info>. "
+msgstr "Cualquier <info>brazo</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>arms</info>. "
+msgstr "Los <info>brazos</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>left arm</info>. "
+msgstr "El <info>brazo izquierdo</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>right arm</info>. "
+msgstr "El <info>brazo derecho</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "Either <info>hand</info>. "
+msgstr "Cualquier <info>mano</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>hands</info>. "
+msgstr "Las <info>manos</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>left hand</info>. "
+msgstr "La <info>mano izquierda</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>right hand</info>. "
+msgstr "La <info>mano derecha</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "Either <info>leg</info>. "
+msgstr "Cualquier <info>pierna</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>legs</info>. "
+msgstr "Las <info>piernas</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>left leg</info>. "
+msgstr "La <info>pierna izquierda</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>right leg</info>. "
+msgstr "La <info>pierna derecha</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "Either <info>foot</info>. "
+msgstr "Cualquier <info>pie</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>feet</info>. "
+msgstr "Los <info>pies</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>left foot</info>. "
+msgstr "El <info>pie izquierdo</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>right foot</info>. "
+msgstr "El <info>pie derecho</info>. "
+
+#: src/iteminfo_armor.cpp
+msgid "<info>Nothing</info>."
+msgstr "<info>Nada</info>."
+
+#: src/iteminfo_armor.cpp
+msgid "Layer: "
+msgstr "Nivel: "
+
+#: src/iteminfo_armor.cpp
+msgid "Warmth: "
+msgstr "Abrigo: "
+
+#: src/iteminfo_armor.cpp
+msgid " <info>(fits)</info>"
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid " <bad>(poor fit)</bad>"
 msgstr ""
 
 #: src/itype.h
@@ -260796,6 +260966,10 @@ msgstr "¡Tick!"
 #: src/iuse.cpp
 msgid "You've already released the handle, try throwing it instead."
 msgstr "Ya soltaste la palanca, ahora intenta tirarla."
+
+#: src/iuse.cpp
+msgid "Fire…  Good…"
+msgstr ""
 
 #: src/iuse.cpp src/iuse_actor.cpp
 msgid "You need a source of fire!"
@@ -263235,26 +263409,6 @@ msgid "There is no square to spawn npc in!"
 msgstr ""
 
 #: src/iuse_actor.cpp
-msgid "You pick your nose and your sinuses swing open."
-msgstr ""
-"Te metes la ganzúa en la nariz y tus sinusales se abren completamente."
-
-#: src/iuse_actor.cpp
-msgid ""
-"You can pick your friends, and you can\n"
-"pick your nose, but you can't pick\n"
-"your friend's nose."
-msgstr ""
-
-#: src/iuse_actor.cpp
-msgid "That door isn't locked."
-msgstr "Esa puerta no está cerrada con llave."
-
-#: src/iuse_actor.cpp
-msgid "That cannot be picked."
-msgstr "No puedes usar la ganzúa en eso."
-
-#: src/iuse_actor.cpp
 msgid "a <info>crafting station</info>"
 msgstr ""
 
@@ -263353,10 +263507,6 @@ msgstr "Prendes un fuego exitosamente."
 #: src/iuse_actor.cpp
 msgid "You light a fire, but it isn't enough.  You need to light more."
 msgstr ""
-
-#: src/iuse_actor.cpp
-msgid "You happily light a fire."
-msgstr "Prendés un fuego con mucha felicidad."
 
 #: src/iuse_actor.cpp
 msgid "This tool doesn't have enough charges."
@@ -266754,18 +266904,6 @@ msgstr ""
 msgid ""
 "Errors for \"bash\" field in \"%s\": \"%s\":\n"
 "%s"
-msgstr ""
-
-#: src/mapdata.cpp
-msgid "With a satisfying click, the chain-link gate opens."
-msgstr "Con un satisfactorio click, la puerta del alambrado se abre."
-
-#: src/mapdata.cpp
-msgid "With a satisfying click, the lock on the door opens."
-msgstr "Con un satisfactorio click, la cerradura de la puerta se abre."
-
-#: src/mapdata.cpp
-msgid "The door swings open…"
 msgstr ""
 
 #: src/mapgen.cpp
@@ -277820,6 +277958,17 @@ msgstr ""
 "rápido que el predeterminado, '200' hará que tarde el doble, '0' escala "
 "automáticamente los tiempos de construcción para igualarlos a la duración de"
 " las estaciones del año del mundo."
+
+#: src/options.cpp
+msgid "Growth scaling"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Sets the time of crop growth in percents.  '50' is two times faster than "
+"default, '200' is two times longer.  '0' automatically scales growth time to"
+" match the world's season length."
+msgstr ""
 
 #: src/options.cpp
 msgid "Eternal season"

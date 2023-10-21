@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-10-14 01:32+0000\n"
+"POT-Creation-Date: 2023-10-21 00:36+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2023\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -9911,6 +9911,13 @@ msgstr "这种装备会让你难以稳定重心。穿着时被击中可能会让
 #: data/json/flags.json
 msgid "This item can be used to communicate with radio waves."
 msgstr "通过这件物品可以进行无线交流。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This item can be used to <info>pick locks</info> with <good>zero "
+"effort</good>."
+msgstr "这个物品可以被用来<good>毫不费力地</good><info>开锁</info>。"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -30615,6 +30622,27 @@ msgid "glass breaking!"
 msgstr "玻璃破碎聲!"
 
 #: data/json/furniture_and_terrain/furniture-storage.json
+msgid "open gun safe"
+msgstr "枪用保险柜（开）"
+
+#. ~ Description for open gun safe
+#. ~ Description for closed gun safe
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid ""
+"A large and heavy container with thick metal walls and a rotary combination "
+"lock, this is designed to securely store firearms, weapon mods, and "
+"ammunition."
+msgstr "这是一个大而重的容器，带有厚重的金属墙壁和旋转组合锁，专门设计用于安全存放枪支、武器改装件和弹药。"
+
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "screeching metal!"
+msgstr "金屬嘎嘎聲!"
+
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "closed gun safe"
+msgstr "枪用保险柜（关）"
+
+#: data/json/furniture_and_terrain/furniture-storage.json
 msgid "gun safe"
 msgstr "槍枝保險櫃"
 
@@ -30624,8 +30652,8 @@ msgid "Oooooohhhh.  Shiny."
 msgstr "嗚哦～讚啦。"
 
 #: data/json/furniture_and_terrain/furniture-storage.json
-msgid "screeching metal!"
-msgstr "金屬嘎嘎聲!"
+msgid "With a satisfying click, the lock on the gun safe door opens."
+msgstr "随着一声令人满意的咔哒声，枪用保险柜上的锁被打开了。"
 
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "jammed gun safe"
@@ -32048,6 +32076,10 @@ msgstr "你撬不開這個門。"
 msgid "You damage the door!"
 msgstr "你损坏了门！"
 
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "With a satisfying click, the lock on the door opens."
+msgstr "一陣輕響後, 門的鎖被撬開了。"
+
 #. ~ Description for closed wood door
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid ""
@@ -32343,6 +32375,10 @@ msgid ""
 msgstr "由相互交叉的不锈钢棒所组成的牢房门。看上去似乎已经锁上了。你可以使用开锁工具尝试开锁。"
 
 #: data/json/furniture_and_terrain/terrain-doors.json
+msgid "The door swings open…"
+msgstr "門緩緩的開啟…"
+
+#: data/json/furniture_and_terrain/terrain-doors.json
 msgid "closed frosted glass door"
 msgstr "毛玻璃门（关）"
 
@@ -32400,6 +32436,10 @@ msgid ""
 "system.  With the right tools, you could cut the metal fence or pick the "
 "lock.  You could also examine the fence to see if it looks climbable."
 msgstr "勾花围栏的大门。这扇门的门闩上有一个锁着的挂锁。使用合适的工具，你可以将金属栅栏切割开或尝试开锁。你也可以靠近点检查围栏是否可以攀爬。"
+
+#: data/json/furniture_and_terrain/terrain-fences-gates.json
+msgid "With a satisfying click, the lock on the gate opens."
+msgstr "随着一声令人满足的咔哒声，大门上的锁被打开了。"
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "closed wire gate"
@@ -45951,7 +45991,7 @@ msgstr[0] "電熱襪"
 #. ~ Use action msg for {'str': 'thermal electric outfit'}.
 #. ~ Use action msg for {'str': 'cryopod bodyglove'}.
 #: data/json/items/tool_armor.json data/mods/Aftershock/items/tool_armor.json
-#: src/bionics.cpp src/mutation_ui.cpp
+#: src/bionics.cpp src/iexamine.cpp src/mutation_ui.cpp
 #, c-format
 msgid "You activate your %s."
 msgstr "你啟動了你的 %s。"
@@ -67326,7 +67366,6 @@ msgid_plural "base SMGs"
 msgstr[0] "基本衝鋒槍"
 
 #: data/json/items/classes/gun.json data/json/items/gun/paintball.json
-#: data/json/items/ranged/crossbows.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
 msgctxt "gun_type_type"
@@ -77567,6 +77606,28 @@ msgstr[0] "培根生菜番茄三明治"
 msgid "A bacon, lettuce, and tomato sandwich on toasted bread."
 msgstr "一個用培根、生菜、蕃茄和烤麵包製成的三明治。"
 
+#: data/json/items/comestibles/sandwich.json
+msgid "okay sandwich"
+msgid_plural "okay sandwiches"
+msgstr[0] "一般的三明治"
+
+#. ~ Description for {'str': 'okay sandwich', 'str_pl': 'okay sandwiches'}
+#: data/json/items/comestibles/sandwich.json
+msgid ""
+"A simple sandwich, little more than meat and veggies on bread.  Rather dry."
+msgstr "简单的三明治，面包上只有肉和蔬菜。 比较干。"
+
+#: data/json/items/comestibles/sandwich.json
+msgid "dairy-free deluxe sandwich"
+msgid_plural "dairy-free deluxe sandwiches"
+msgstr[0] "无乳制品的豪华三明治"
+
+#. ~ Description for {'str': 'dairy-free deluxe sandwich', 'str_pl': 'dairy-
+#. free deluxe sandwiches'}
+#: data/json/items/comestibles/sandwich.json
+msgid "A deluxe sandwich with meat, veggies, and sauce, but no cheese."
+msgstr "一款豪华三明治，包括肉、蔬菜和酱汁，但不含奶酪。"
+
 #: data/json/items/comestibles/seed.json
 msgid "seeds"
 msgid_plural "seeds"
@@ -85935,6 +85996,17 @@ msgid ""
 "while submerged in water."
 msgstr "一套防水膠布和墊圈, 讓槍械在水中也能正常使用。"
 
+#: data/json/items/gunmod/mechanism.json
+msgid "steel bowstring"
+msgid_plural "steel bowstrings"
+msgstr[0] "钢制弓弦"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A forged steel bowstring designed for crossbows.  It allows bolts to hit "
+"harder and fly faster, but it's too high-tension to use in a regular bow."
+msgstr "这是专为十字弓设计的锻造钢制弓弦。它可以让弩矢打得更猛，飞得更远，但对于普通弓来说，它的张力太高，无法使用。"
+
 #: data/json/items/gunmod/mount.json
 msgid "replaceable furniture kit"
 msgid_plural "replaceable furniture kits"
@@ -89896,8 +89968,10 @@ msgstr[0] "生化爪"
 
 #. ~ Description for {'str_sp': 'bionic claws'}
 #: data/json/items/melee/fake.json
-msgid "Short and sharp claws made from a high-tech metal."
-msgstr "一副短而利的爪, 由高科技金屬所製成。"
+msgid ""
+"Short and sharp claws made from a high-tech metal and edged with bonded "
+"nanocrystals."
+msgstr "由高科技金属制成，边缘镶嵌着纳米晶体的短而锋利的爪子。"
 
 #: data/json/items/melee/fake.json
 msgid "monomolecular blade"
@@ -91662,6 +91736,16 @@ msgstr[0] "匕首"
 #: data/json/items/melee/swords_and_blades.json
 msgid "A medieval dagger, more finely crafted than a baselard."
 msgstr "一把中世纪匕首，比贝斯拉德匕首更精细制作。"
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "bronze dagger"
+msgid_plural "bronze daggers"
+msgstr[0] "青铜匕首"
+
+#. ~ Description for {'str': 'bronze dagger'}
+#: data/json/items/melee/swords_and_blades.json
+msgid "An archaic-looking bronze dagger, with a serviceable sharp edge."
+msgstr "一把古老的青铜匕首，带有一把能够使用的锋利刃。"
 
 #: data/json/items/melee/unarmed_weapons.json
 msgid "tiger claws"
@@ -96099,6 +96183,18 @@ msgid ""
 "used to start a campfire."
 msgstr "一个用来装引火物的小盒子，盒子上有个小洞以保持空气流通，里面的引火物里还有些火星在缓缓燃烧。它可以用来点燃篝火。"
 
+#: data/json/items/tool/fire.json
+msgid "electric lighter"
+msgid_plural "electric lighters"
+msgstr[0] "电子点火器"
+
+#. ~ Description for {'str': 'electric lighter'}
+#: data/json/items/tool/fire.json
+msgid ""
+"A battery-powered lighter.  More efficient than a crude electric "
+"firestarter, its batteries last for quite a while."
+msgstr "一款电池供电的点火器。比简单的电子火种工具更高效，其电池寿命相当长。"
+
 #: data/json/items/tool/firefighting.json
 msgid "crash axe"
 msgid_plural "crash axes"
@@ -99463,6 +99559,18 @@ msgid ""
 msgstr "這是一把大型的雙手伐木斧。能夠作為良好的近戰擊武器, 但是再次揮動的速度很慢。"
 
 #: data/json/items/tool/woodworking.json
+msgid "bronze axe"
+msgid_plural "bronze axes"
+msgstr[0] "青铜斧"
+
+#. ~ Description for {'str': 'bronze axe'}
+#: data/json/items/tool/woodworking.json
+msgid ""
+"This is a large, two-handed wood axe with a bronze axehead.  It makes a good"
+" melee weapon, but is a bit slow to recover between swings."
+msgstr "这是一把带有青铜斧头的大型双手伐木斧。它是一种出色的近战武器，但在挥动之间稍显缓慢恢复。"
+
+#: data/json/items/tool/woodworking.json
 msgid "chainsaw (off)"
 msgid_plural "chainsaws (off)"
 msgstr[0] "鏈鋸 (關閉)"
@@ -99808,6 +99916,19 @@ msgid ""
 " nails, and two by fours in your inventory, you could board up adjacent "
 "doors and windows.  It has myriad other uses as well."
 msgstr "這是一把消磁的鋼製羊角錘，有著木製握把。使用鐵鎚、鐵釘與木材就能加固鄰近門窗。另外還有許多用途。"
+
+#: data/json/items/tool/workshop.json
+msgid "bronze hammer"
+msgid_plural "bronze hammers"
+msgstr[0] "青铜锤"
+
+#. ~ Description for {'str': 'bronze hammer'}
+#: data/json/items/tool/workshop.json
+msgid ""
+"This is a bronze claw hammer with a wooden grip, commonly used where sparks "
+"from a steel hammer might be a safety hazard.  You could board up adjacent "
+"doors and windows, among myriad other uses."
+msgstr "这是一把带有木柄的青铜爪锤，通常用于避免使用钢锤可能引发安全风险的场合，如需要封住相邻的门窗等众多用途。"
 
 #: data/json/items/tool/workshop.json
 msgid "hand drill"
@@ -102962,14 +103083,12 @@ msgstr "命令: 封鎖 SRCF [4423]"
 
 #. ~ Computer name
 #: data/json/mapgen/hospital.json data/json/mapgen/office_doctor.json
-#: data/mods/No_Hope/Mapgen/office_doctor.json
 msgid "Medical Supply Access"
 msgstr "醫療補給存取"
 
 #. ~ Computer option
 #: data/json/mapgen/hospital.json data/json/mapgen/office_doctor.json
 #: data/mods/Aftershock/maps/mapgen/augmentation_clinic.json
-#: data/mods/No_Hope/Mapgen/office_doctor.json
 msgid "Unlock Door"
 msgstr "未上鎖的門"
 
@@ -103317,7 +103436,6 @@ msgstr "旅行者汽车旅馆"
 
 #. ~ Computer option
 #: data/json/mapgen/office_doctor.json
-#: data/mods/No_Hope/Mapgen/office_doctor.json
 msgid "Lock Door"
 msgstr "上鎖的門"
 
@@ -123301,9 +123419,9 @@ msgstr "生存者证明"
 #. ~ Description for mission '{'str': "Prove You're A Survivor"}'
 #: data/json/npcs/missiondef.json
 msgid ""
-"Prove you're a survivor by surviving for 10 days after the Cataclysm, and "
+"Prove you're a survivor by surviving for 7 days after the Cataclysm, and "
 "then returning to the person who gave you this mission."
-msgstr "通过生存 10 天来证明自己的生存能力，并向给予你任务的人报到。"
+msgstr "通过生存 7 天来证明自己的生存能力，并向给予你任务的人报到。"
 
 #: data/json/npcs/missiondef.json
 msgid "It's hard to tell who actually has the skills to survive these days…"
@@ -123314,12 +123432,12 @@ msgid ""
 "It's hard surviving out here on our own, and we'd probably have a better "
 "chance working together.  Problem is, I don't really know you and what "
 "you're capable of.  You might have what it takes, or you might not.  Either "
-"way, I'm going to need some proof.  Come back in a few days and I'll gladly "
+"way, I'm going to need some proof.  Come back in a week and I'll gladly "
 "follow you.  It's basically a win-win for me: either you come back and I'll "
 "know you've got what it takes, or you don't and I'll know that I was right "
 "not to follow you."
 msgstr ""
-"我一直活得很困难，也许和你组队会好一点。问题在于，我根本不了解你的能力，你可能是我需要的人，也可能不是。因此我需要你证明这一点。几天之后再来见我，到时候我就愿意跟你走了。这样对我比较稳当：如果你来见我了，说明你还是有两把刷子，如果你没有来见我，那我不跟你就是对的。"
+"我一直活得很困难，也许和你组队会好一点。问题在于，我根本不了解你的能力，你可能是我需要的人，也可能不是。因此我需要你证明这一点。一个星期之后再来见我，到时候我就愿意跟你走了。这样对我比较稳当：如果你来见我了，说明你还是有两把刷子，如果你没有来见我，那我不跟你就是对的。"
 
 #: data/json/npcs/missiondef.json
 msgid ""
@@ -123332,8 +123450,8 @@ msgid ""
 msgstr "别死了就行。如果你还得找我问才知道的话，那对你来说可不是什么好消息。"
 
 #: data/json/npcs/missiondef.json
-msgid "Well, you're not dead…yet."
-msgstr "哦，你还没死呢。"
+msgid "Don't think it's been a week, but at least you're not dead…yet."
+msgstr "我想不到已经过了一个星期，但你还没死...至少是这样。"
 
 #: data/json/npcs/missiondef.json
 msgid ""
@@ -190368,6 +190486,7 @@ msgid ""
 "standard calibers, which needed heavier revolvers to safely fire it.  You "
 "could take medium to large game with this hefty piece."
 msgstr ""
+"早期的手枪猎手从标准口径手枪弹中协助开发了这把左轮手枪所使用的马格南手枪弹药，它需要更重的左轮手枪来安全地射击。你可以用这把大块头轻松干掉大中型猎物。"
 
 #: data/mods/Generic_Guns/firearms/pistol_tiny.json
 msgid ".22 rifle"
@@ -206798,8 +206917,7 @@ msgstr "你的能量流失了!"
 msgid "You cannot hack this."
 msgstr "你无法入侵它。"
 
-#: src/activity_actor.cpp src/activity_handlers.cpp src/computer_session.cpp
-#: src/iuse.cpp src/map.cpp
+#: src/activity_actor.cpp src/computer_session.cpp src/iuse.cpp src/map.cpp
 msgid "an alarm sound!"
 msgstr "警報聲大作!"
 
@@ -206830,6 +206948,56 @@ msgstr "附近的门解锁了。"
 #: src/activity_actor.cpp
 msgid "Moving canceled auto-pickup."
 msgstr "移动中断了自动拾取。"
+
+#: src/activity_actor.cpp
+msgid "The lock opens…"
+msgstr "锁打开了..."
+
+#: src/activity_actor.cpp
+msgid "Your clumsy attempt jams the lock!"
+msgstr "你笨拙地嘗試, 卻把鎖眼堵住了!"
+
+#: src/activity_actor.cpp
+msgid "The lock stumps your efforts to pick it, and you destroy your tool."
+msgstr "這個鎖無情的嘲笑你的開鎖技術, 而你毀壞了你的工具。"
+
+#: src/activity_actor.cpp
+msgid "The lock stumps your efforts to pick it, and you damage your tool."
+msgstr "這個鎖無情的嘲笑你的開鎖技術, 而你損傷了你的工具。"
+
+#: src/activity_actor.cpp
+msgid "The lock stumps your efforts to pick it."
+msgstr "這個鎖無情的嘲笑你的開鎖技術。"
+
+#: src/activity_actor.cpp src/game.cpp src/iuse.cpp src/iuse_actor.cpp
+msgid "You cannot do that while mounted."
+msgstr "騎乘時無法做那個。"
+
+#: src/activity_actor.cpp
+msgid "There is nothing to lockpick nearby."
+msgstr "附近没有可以开锁的对象。"
+
+#: src/activity_actor.cpp
+msgid "Use your lockpick where?"
+msgstr "把你的的開鎖器用在哪邊?"
+
+#: src/activity_actor.cpp
+msgid "You pick your nose and your sinuses swing open."
+msgstr "你挖鼻孔使你的鼻道暢通。"
+
+#: src/activity_actor.cpp
+msgid ""
+"You can pick your friends, and you can pick your nose, but you can't pick "
+"your friend's nose."
+msgstr "你可以挖你的朋友，也可以挖你的鼻子，但你不可以挖你朋友的鼻子。"
+
+#: src/activity_actor.cpp
+msgid "That door isn't locked."
+msgstr "門沒鎖。"
+
+#: src/activity_actor.cpp
+msgid "That cannot be picked."
+msgstr "這東西不能被撬鎖。"
 
 #. ~ Sound of a Rat mutant burrowing!
 #: src/activity_handlers.cpp
@@ -207351,22 +207519,6 @@ msgstr "嘶嘶嘶嘶兹!"
 #: src/activity_handlers.cpp
 msgid "With a satisfying click, the lock on the safe opens!"
 msgstr "一陣輕響後，保險箱的鎖被撬開了。"
-
-#: src/activity_handlers.cpp
-msgid "Your clumsy attempt jams the lock!"
-msgstr "你笨拙地嘗試, 卻把鎖眼堵住了!"
-
-#: src/activity_handlers.cpp
-msgid "The lock stumps your efforts to pick it, and you destroy your tool."
-msgstr "這個鎖無情的嘲笑你的開鎖技術, 而你毀壞了你的工具。"
-
-#: src/activity_handlers.cpp
-msgid "The lock stumps your efforts to pick it, and you damage your tool."
-msgstr "這個鎖無情的嘲笑你的開鎖技術, 而你損傷了你的工具。"
-
-#: src/activity_handlers.cpp
-msgid "The lock stumps your efforts to pick it."
-msgstr "這個鎖無情的嘲笑你的開鎖技術。"
 
 #: src/activity_handlers.cpp
 msgid "Repeat once"
@@ -208806,7 +208958,7 @@ msgstr "這是一層靈氣圍繞著你。"
 msgid "Properties"
 msgstr "屬性"
 
-#: src/armor_layers.cpp src/item.cpp
+#: src/armor_layers.cpp
 msgid "Coverage:"
 msgstr "覆蓋率:"
 
@@ -211112,6 +211264,10 @@ msgstr "在关节伺服电机的帮助下，你现在可以跑得更快了。"
 msgid "Start a fire where?"
 msgstr "在哪邊生火?"
 
+#: src/bionics.cpp src/iuse_actor.cpp
+msgid "You happily light a fire."
+msgstr "你高興地生了火。"
+
 #: src/bionics.cpp
 #, c-format
 msgid "Your radiation level: %d"
@@ -211142,14 +211298,6 @@ msgstr "從 %s 取得水"
 #: src/bionics.cpp
 msgid "There is no suitable corpse on this tile."
 msgstr "此区块没有合适的尸体。"
-
-#: src/bionics.cpp src/iuse_actor.cpp
-msgid "Use your lockpick where?"
-msgstr "把你的的開鎖器用在哪邊?"
-
-#: src/bionics.cpp src/iuse_actor.cpp
-msgid "There is nothing to lockpick nearby."
-msgstr "附近没有可以开锁的对象。"
 
 #: src/bionics.cpp
 msgid "You unleash a powerful shockwave!"
@@ -222201,10 +222349,6 @@ msgstr ""
 msgid "There is a %s."
 msgstr "这里有一个 %s。"
 
-#: src/game.cpp src/iuse.cpp src/iuse_actor.cpp
-msgid "You cannot do that while mounted."
-msgstr "騎乘時無法做那個。"
-
 #: src/game.cpp
 msgid "You cannot interact with a vehicle while mounted."
 msgstr "騎乘時無法與車輛互動。"
@@ -223487,11 +223631,11 @@ msgstr "你的物品欄是空的。"
 
 #: src/game_inventory.cpp
 msgid "AVG ENCUMBRANCE"
-msgstr ""
+msgstr "平均累赘度"
 
 #: src/game_inventory.cpp
 msgid "AVG COVERAGE"
-msgstr ""
+msgstr "平均覆盖率"
 
 #: src/game_inventory.cpp
 msgid "WARMTH"
@@ -223780,7 +223924,7 @@ msgstr "武術"
 #, c-format
 msgctxt "skill"
 msgid "%1$s from %2$d to %3$d (%4$d)"
-msgstr ""
+msgstr "%1$s 从 %2$d 至 %3$d 级 （当前%4$d级）"
 
 #. ~ %1$s: book skill name, %2$d: book skill level, %3$d: player skill level
 #: src/game_inventory.cpp
@@ -225347,6 +225491,10 @@ msgid "That's the same container!"
 msgstr "同一個容器!"
 
 #: src/handle_liquid.cpp
+msgid "Fill avaliable tank"
+msgstr "填满可用的油箱"
+
+#: src/handle_liquid.cpp
 #, c-format
 msgid "Fill nearby vehicle %s"
 msgstr "加滿鄰近的車輛 %s"
@@ -225793,6 +225941,11 @@ msgstr "你尝试使用 %2$s 打开 %1$s 的锁……"
 
 #: src/iexamine.cpp
 #, c-format
+msgid "You don't have enough power to activate your %s."
+msgstr "你没有足够能量激活%s。"
+
+#: src/iexamine.cpp
+#, c-format
 msgid ""
 "The %s is locked.  If only you had something to pry it or pick its lock…"
 msgstr "%s上锁了。你要是有什么东西能撬开它或者开锁就好了……"
@@ -226057,8 +226210,8 @@ msgstr "你無肥料可施於 %s。"
 
 #: src/iexamine.cpp
 #, c-format
-msgid "Fertilize the %s"
-msgstr "對 %s 施肥"
+msgid "Fertilize the %s?"
+msgstr "给 %s 施肥？"
 
 #: src/iexamine.cpp
 msgid "Use which fertilizer?"
@@ -228904,181 +229057,8 @@ msgid ""
 msgstr "防護值<bad>會因損傷而減少</bad>，你可以<info>透過修復去改善</info>。"
 
 #: src/item.cpp
-msgid "<bold>Covers</bold>: "
-msgstr "<bold>覆盖</bold>："
-
-#: src/item.cpp
-msgid "The <info>head</info>. "
-msgstr "<info>頭部</info>。"
-
-#: src/item.cpp
-msgid "The <info>eyes</info>. "
-msgstr "<info>眼睛</info>。"
-
-#: src/item.cpp
-msgid "The <info>mouth</info>. "
-msgstr "<info>嘴巴</info>。"
-
-#: src/item.cpp
-msgid "The <info>torso</info>. "
-msgstr "<info>軀幹</info>。"
-
-#: src/item.cpp
-msgid "Either <info>arm</info>. "
-msgstr "<info>左臂/右臂</info>。"
-
-#: src/item.cpp
-msgid "The <info>arms</info>. "
-msgstr "<info>手臂</info>。"
-
-#: src/item.cpp
-msgid "The <info>left arm</info>. "
-msgstr "<info>左臂</info>。"
-
-#: src/item.cpp
-msgid "The <info>right arm</info>. "
-msgstr "<info>右臂</info>。"
-
-#: src/item.cpp
-msgid "Either <info>hand</info>. "
-msgstr "<info>左手/右手</info>。"
-
-#: src/item.cpp
-msgid "The <info>hands</info>. "
-msgstr "<info>手掌</info>。"
-
-#: src/item.cpp
-msgid "The <info>left hand</info>. "
-msgstr "<info>左手</info>。"
-
-#: src/item.cpp
-msgid "The <info>right hand</info>. "
-msgstr "<info>右手</info>。"
-
-#: src/item.cpp
-msgid "Either <info>leg</info>. "
-msgstr "<info>左腿/右腿</info>。"
-
-#: src/item.cpp
-msgid "The <info>legs</info>. "
-msgstr "<info>腿部</info>。"
-
-#: src/item.cpp
-msgid "The <info>left leg</info>. "
-msgstr "<info>左腿</info>。"
-
-#: src/item.cpp
-msgid "The <info>right leg</info>. "
-msgstr "<info>右腿</info>。"
-
-#: src/item.cpp
-msgid "Either <info>foot</info>. "
-msgstr "<info>左腳/右腳</info>。"
-
-#: src/item.cpp
-msgid "The <info>feet</info>. "
-msgstr "<info>腳掌</info>。"
-
-#: src/item.cpp
-msgid "The <info>left foot</info>. "
-msgstr "<info>左腳</info>。"
-
-#: src/item.cpp
-msgid "The <info>right foot</info>. "
-msgstr "<info>右腳</info>。"
-
-#: src/item.cpp
-msgid "<info>Nothing</info>."
-msgstr "<info>沒有</info>。"
-
-#: src/item.cpp
-msgid "Layer: "
-msgstr "衣物層級: "
-
-#: src/item.cpp
-msgid "<stat>Personal aura</stat>. "
-msgstr "<stat>自身靈氣層</stat>。"
-
-#: src/item.cpp
-msgid "<stat>Close to skin</stat>. "
-msgstr "<stat>貼身</stat>。"
-
-#: src/item.cpp
-msgid "<stat>Strapped</stat>. "
-msgstr "<stat>繫結</stat>。"
-
-#: src/item.cpp
-msgid "<stat>Outer</stat>. "
-msgstr "<stat>外層</stat>。"
-
-#: src/item.cpp
-msgid "<stat>Waist</stat>. "
-msgstr "<stat>腰部</stat>。"
-
-#: src/item.cpp
-msgid "<stat>Outer aura</stat>. "
-msgstr "<stat>外部靈氣層</stat>。"
-
-#: src/item.cpp
-msgid "<stat>Normal</stat>. "
-msgstr "<stat>一般</stat>。"
-
-#: src/item.cpp
-msgid "Average Coverage: "
-msgstr "平均覆盖率："
-
-#: src/item.cpp
-msgid "Warmth: "
-msgstr "保暖度: "
-
-#: src/item.cpp
-msgid " <info>(fits)</info>"
-msgstr "<info>（合身）</info>"
-
-#: src/item.cpp
-msgid " <bad>(poor fit)</bad>"
-msgstr "<bad>（不合身）</bad>"
-
-#: src/item.cpp
-msgid " <bad>(too big)</bad>"
-msgstr "<bad>（太大）</bad>"
-
-#: src/item.cpp
-msgid " <bad>(huge!)</bad>"
-msgstr "<bad>（巨大！）</bad>"
-
-#: src/item.cpp
-msgid " <bad>(too small)</bad>"
-msgstr "<bad>（太小）</bad>"
-
-#: src/item.cpp
-msgid " <bad>(tiny!)</bad>"
-msgstr "<bad>（极小！）</bad>"
-
-#: src/item.cpp
-msgid "<bold>Encumbrance</bold>:"
-msgstr "<bold>累赘度</bold>："
-
-#: src/item.cpp
-#, c-format
-msgid "%s:"
-msgstr ""
-
-#: src/item.cpp
-msgid "When Full:"
-msgstr "当满时："
-
-#: src/item.cpp
 msgid "Storage: "
 msgstr "儲物空間: "
-
-#: src/item.cpp
-msgid "<bold>Weight capacity modifier</bold>: "
-msgstr "<bold>负重系数：</bold>"
-
-#: src/item.cpp
-msgid "<bold>Weight capacity bonus</bold>: "
-msgstr "<bold>负重增益：</bold>"
 
 #: src/item.cpp
 msgid "* This item can be <info>worn with a helmet</info>."
@@ -229434,6 +229414,14 @@ msgstr "<bold>防弹</bold>: "
 #: src/item.cpp
 msgid "<bold>Stat Bonus</bold>: "
 msgstr "<bold>属性加成</bold>："
+
+#: src/item.cpp src/iteminfo_armor.cpp
+msgid "<bold>Weight capacity modifier</bold>: "
+msgstr "<bold>负重系数：</bold>"
+
+#: src/item.cpp src/iteminfo_armor.cpp
+msgid "<bold>Weight capacity bonus</bold>: "
+msgstr "<bold>负重增益：</bold>"
 
 #: src/item.cpp
 msgid "<bold>Melee damage</bold>: "
@@ -230288,6 +230276,174 @@ msgstr "物品欄"
 #, c-format
 msgid "inside %s"
 msgstr "在%s内"
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Personal aura</stat>. "
+msgstr "<stat>自身靈氣層</stat>。"
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Close to skin</stat>. "
+msgstr "<stat>貼身</stat>。"
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Strapped</stat>. "
+msgstr "<stat>繫結</stat>。"
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Outer</stat>. "
+msgstr "<stat>外層</stat>。"
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Waist</stat>. "
+msgstr "<stat>腰部</stat>。"
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Outer aura</stat>. "
+msgstr "<stat>外部靈氣層</stat>。"
+
+#: src/iteminfo_armor.cpp
+msgid "<stat>Normal</stat>. "
+msgstr "<stat>一般</stat>。"
+
+#: src/iteminfo_armor.cpp
+msgid " <bad>(too big)</bad>"
+msgstr "<bad>（太大）</bad>"
+
+#: src/iteminfo_armor.cpp
+msgid " <bad>(huge!)</bad>"
+msgstr "<bad>（巨大！）</bad>"
+
+#: src/iteminfo_armor.cpp
+msgid " <bad>(too small)</bad>"
+msgstr "<bad>（太小）</bad>"
+
+#: src/iteminfo_armor.cpp
+msgid " <bad>(tiny!)</bad>"
+msgstr "<bad>（极小！）</bad>"
+
+#: src/iteminfo_armor.cpp
+msgid "<info>(for all parts)</info>"
+msgstr "<info>（对所有部位适用）</info>"
+
+#: src/iteminfo_armor.cpp
+msgid "<bold>Coverage</bold>"
+msgstr "<bold>覆盖率</bold>"
+
+#: src/iteminfo_armor.cpp
+msgid "<bold>Encumbrance</bold>"
+msgstr "<bold>累赘度</bold>"
+
+#: src/iteminfo_armor.cpp
+msgid "When Full"
+msgstr "当满时"
+
+#: src/iteminfo_armor.cpp
+msgid "<bold>Storage</bold>: "
+msgstr ""
+
+#: src/iteminfo_armor.cpp
+msgid "<bold>Covers</bold>: "
+msgstr "<bold>覆盖</bold>："
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>head</info>. "
+msgstr "<info>頭部</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>eyes</info>. "
+msgstr "<info>眼睛</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>mouth</info>. "
+msgstr "<info>嘴巴</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>torso</info>. "
+msgstr "<info>軀幹</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "Either <info>arm</info>. "
+msgstr "<info>左臂/右臂</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>arms</info>. "
+msgstr "<info>手臂</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>left arm</info>. "
+msgstr "<info>左臂</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>right arm</info>. "
+msgstr "<info>右臂</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "Either <info>hand</info>. "
+msgstr "<info>左手/右手</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>hands</info>. "
+msgstr "<info>手掌</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>left hand</info>. "
+msgstr "<info>左手</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>right hand</info>. "
+msgstr "<info>右手</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "Either <info>leg</info>. "
+msgstr "<info>左腿/右腿</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>legs</info>. "
+msgstr "<info>腿部</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>left leg</info>. "
+msgstr "<info>左腿</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>right leg</info>. "
+msgstr "<info>右腿</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "Either <info>foot</info>. "
+msgstr "<info>左腳/右腳</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>feet</info>. "
+msgstr "<info>腳掌</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>left foot</info>. "
+msgstr "<info>左腳</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "The <info>right foot</info>. "
+msgstr "<info>右腳</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "<info>Nothing</info>."
+msgstr "<info>沒有</info>。"
+
+#: src/iteminfo_armor.cpp
+msgid "Layer: "
+msgstr "衣物層級: "
+
+#: src/iteminfo_armor.cpp
+msgid "Warmth: "
+msgstr "保暖度: "
+
+#: src/iteminfo_armor.cpp
+msgid " <info>(fits)</info>"
+msgstr "<info>（合身）</info>"
+
+#: src/iteminfo_armor.cpp
+msgid " <bad>(poor fit)</bad>"
+msgstr "<bad>（不合身）</bad>"
 
 #: src/itype.h
 msgid "click."
@@ -231516,6 +231672,10 @@ msgstr "滴答!"
 #: src/iuse.cpp
 msgid "You've already released the handle, try throwing it instead."
 msgstr "你已經打開保險了, 嘗試把他拋出去看看。"
+
+#: src/iuse.cpp
+msgid "Fire…  Good…"
+msgstr "火焰… 好棒…"
 
 #: src/iuse.cpp src/iuse_actor.cpp
 msgid "You need a source of fire!"
@@ -233908,28 +234068,6 @@ msgid "There is no square to spawn npc in!"
 msgstr "附近没有空位放置 NPC！"
 
 #: src/iuse_actor.cpp
-msgid "You pick your nose and your sinuses swing open."
-msgstr "你挖鼻孔使你的鼻道暢通。"
-
-#: src/iuse_actor.cpp
-msgid ""
-"You can pick your friends, and you can\n"
-"pick your nose, but you can't pick\n"
-"your friend's nose."
-msgstr ""
-"你可以挖你的朋友，也可以\n"
-"挖你的鼻子，但你不可以挖\n"
-"你朋友的鼻子。"
-
-#: src/iuse_actor.cpp
-msgid "That door isn't locked."
-msgstr "門沒鎖。"
-
-#: src/iuse_actor.cpp
-msgid "That cannot be picked."
-msgstr "這東西不能被撬鎖。"
-
-#: src/iuse_actor.cpp
 msgid "a <info>crafting station</info>"
 msgstr "<info>工作台</info>"
 
@@ -234028,10 +234166,6 @@ msgstr "你成功生了火。"
 #: src/iuse_actor.cpp
 msgid "You light a fire, but it isn't enough.  You need to light more."
 msgstr "你生了火，但這還不夠。你需要生更多火。"
-
-#: src/iuse_actor.cpp
-msgid "You happily light a fire."
-msgstr "你高興地生了火。"
 
 #: src/iuse_actor.cpp
 msgid "This tool doesn't have enough charges."
@@ -237403,18 +237537,6 @@ msgid ""
 "Errors for \"bash\" field in \"%s\": \"%s\":\n"
 "%s"
 msgstr ""
-
-#: src/mapdata.cpp
-msgid "With a satisfying click, the chain-link gate opens."
-msgstr "一陣輕響後, 鐵鍊門打開了。"
-
-#: src/mapdata.cpp
-msgid "With a satisfying click, the lock on the door opens."
-msgstr "一陣輕響後, 門的鎖被撬開了。"
-
-#: src/mapdata.cpp
-msgid "The door swings open…"
-msgstr "門緩緩的開啟…"
 
 #: src/mapgen.cpp
 msgid "Wreckage"
@@ -248271,6 +248393,17 @@ msgid ""
 "time to match the world's season length."
 msgstr ""
 "設定建造所需要的時間, 以百分比為單位。 [50] 只需要一半時間。 [200] 則需要兩倍時間。[0] 會自動調整建造時間以符合世界的季節長度。"
+
+#: src/options.cpp
+msgid "Growth scaling"
+msgstr "生长比例"
+
+#: src/options.cpp
+msgid ""
+"Sets the time of crop growth in percents.  '50' is two times faster than "
+"default, '200' is two times longer.  '0' automatically scales growth time to"
+" match the world's season length."
+msgstr "设置作物生长的时间百分比。'50' 意味着比默认快两倍，'200' 意味着比默认慢两倍。'0' 会自动调整生长时间以适应世界的季节长度。"
 
 #: src/options.cpp
 msgid "Eternal season"
