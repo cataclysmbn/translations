@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-11-18 01:05+0000\n"
+"POT-Creation-Date: 2023-11-25 00:37+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -10175,12 +10175,11 @@ msgstr "この食料は<info>生</info>であり、調理すると<good>栄養�
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
 msgid ""
-"This weapon is <bad>too unwieldy</bad> to fire on its own and <info>must be "
-"mounted</info> on a vehicle or furniture (window, table, mound of dirt, "
-"etc.) before use, <info>Large or Huge</info> mutants can fire from the hip "
-"with <bad>reduced accuracy.</bad>"
+"This weapon <bad>can only be fired if mounted</bad> on a vehicle or "
+"furniture (window, table, mound of dirt, etc.) to fire, <info>Large or "
+"Huge</info> mutants or those with active <info>Power Armor</info> can fire "
+"from the hip with <bad>reduced accuracy.</bad>"
 msgstr ""
-"この銃器はそのままでは<bad>装備困難</bad>です。発砲前に車両や適切な地形(窓枠、テーブル、畝など)に<info>固定</info>する必要があります<info>大柄(レベル2)以上</info>の変異をもっていれば腰だめ射撃が可能ですが、<bad>命中率が低下</bad>します。"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -10193,6 +10192,14 @@ msgstr "この遠距離武器を<info>必要筋力未満</info>で扱う場合�
 #: data/json/flags.json
 msgid "This gear <bad>prevents</bad> you from <info>speaking</info>."
 msgstr "このアイテムは<info>発声</info>を<bad>阻害</bad>します。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This equipment <good>allows you to fire</good> unwieldy weapons without "
+"requiring support from mountable terrain, as a <info>Large or Huge</info> "
+"mutant could, at the expense of <bad>reduced accuracy.</bad>"
+msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -50401,7 +50408,7 @@ msgstr[0] "弾倉鞄"
 #. ~ Use action holster_msg for {'str': 'XL Kevlar vest'}.
 #. ~ Use action holster_msg for {'str': 'large grenade pouch', 'str_pl':
 #. 'large grenade pouches'}.
-#. ~ Use action holster_msg for {'str': 'power armor chest rig'}.
+#. ~ Use action holster_msg for {'str': 'power armor magazine carrier'}.
 #. ~ Use action holster_msg for {'str': 'MBR vest (Kevlar plates)', 'str_pl':
 #. 'MBR vests (Kevlar plates)'}.
 #. ~ Use action holster_msg for {'str': 'HERC rig'}.
@@ -50434,7 +50441,7 @@ msgstr "%sを収納しました。"
 #. 'MBR vests (superalloy)'}.
 #. ~ Use action holster_prompt for {'str': 'tac vest'}.
 #. ~ Use action holster_prompt for {'str': 'XL Kevlar vest'}.
-#. ~ Use action holster_prompt for {'str': 'power armor chest rig'}.
+#. ~ Use action holster_prompt for {'str': 'power armor magazine carrier'}.
 #. ~ Use action holster_prompt for {'str': 'MBR vest (Kevlar plates)',
 #. 'str_pl': 'MBR vests (Kevlar plates)'}.
 #. ~ Use action holster_prompt for {'str': 'HERC rig'}.
@@ -60031,16 +60038,16 @@ msgid ""
 msgstr ""
 
 #: data/json/items/armor/power_armor.json
-msgid "power armor chest rig"
-msgid_plural "power armor chest rigs"
+msgid "power armor magazine carrier"
+msgid_plural "power armor magazine carriers"
 msgstr[0] ""
 
-#. ~ Description for {'str': 'power armor chest rig'}
+#. ~ Description for {'str': 'power armor magazine carrier'}
 #: data/json/items/armor/power_armor.json
 msgid ""
-"A set of compartments capable of carrying three magazines close at hand.  "
-"Designed to interface with a military exoskeleton.  Activate to "
-"store/retrieve your magazines."
+"A set of compartments capable of carrying two magazines close at hand, "
+"including larger drum mags or UPS batteries.  Designed to interface with a "
+"military exoskeleton.  Activate to store/retrieve your magazines."
 msgstr ""
 
 #: data/json/items/armor/power_armor.json
@@ -151712,6 +151719,10 @@ msgid "toxic waste dump"
 msgstr "有害廃棄物投棄所"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_waste_junk.json
+msgid "toxic waste dump roof"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_waste_junk.json
 msgid "hazardous waste sarcophagus"
 msgstr "有害廃棄物石棺"
 
@@ -176221,9 +176232,9 @@ msgstr "電力レベルが低いため起動できません..."
 msgid ""
 "The C.R.I.T. Spec Ops Enhanced Movement vest is embedded with high-tech "
 "filaments and reactive servos which protects its wearer and assists in "
-"movement at the cost high  power usage.  It is commonly worn by C.R.I.T. "
-"Spec Ops for its ease of use and manuverability.  Turn it on for suit mode, "
-"extra protection and movement."
+"movement at the cost high of power usage.  It is commonly worn by C.R.I.T. "
+"Spec Ops for its ease of use and maneuverability.  Turn it on for suit mode,"
+" extra protection and movement."
 msgstr ""
 
 #: data/mods/CRT_EXPANSION/items/crt_toolarmor.json
@@ -207888,8 +207899,8 @@ msgstr "ダイスロール = %i"
 
 #: src/activity_handlers.cpp
 #, c-format
-msgid "Failure chance = %f%%"
-msgstr "失敗確率 = %f%%"
+msgid "Success chance = %i%%"
+msgstr ""
 
 #: src/activity_handlers.cpp
 #, c-format
@@ -207902,7 +207913,7 @@ msgid "Your imprecise surgery damaged a bionic, producing a %s."
 msgstr ""
 
 #: src/activity_handlers.cpp
-msgid "Your imprecise surgery destroyed some organs."
+msgid "Your imprecise surgery destroyed something."
 msgstr ""
 
 #: src/activity_handlers.cpp
@@ -208004,8 +208015,9 @@ msgstr "死体から使えそうなものを切り出しましたが、酷く損
 
 #: src/activity_handlers.cpp
 msgid ""
-"You notice some strange organs, perhaps harvestable via careful dissection."
-msgstr "解体中に奇妙な臓器を発見しました。精密解剖によって取り出せそうです。"
+"You notice something embedded in the corpse, perhaps harvestable via careful"
+" dissection."
+msgstr ""
 
 #: src/activity_handlers.cpp
 msgid ""
@@ -208015,9 +208027,9 @@ msgstr ""
 
 #: src/activity_handlers.cpp
 msgid ""
-"Your butchering tool destroys a strange organ.  Perhaps a more surgical "
-"approach would allow harvesting it."
-msgstr "解体用の道具で奇妙な臓器を取り出そうとして破壊してしまいました。もっと外科的な解剖なら上手く取り出せたかもしれません。"
+"Your butchering tool destroys something.  Perhaps a more surgical approach "
+"would allow harvesting it."
+msgstr ""
 
 #: src/activity_handlers.cpp
 msgid ""

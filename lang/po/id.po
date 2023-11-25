@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-11-18 01:05+0000\n"
+"POT-Creation-Date: 2023-11-25 00:37+0000\n"
 "Language-Team: Indonesian (https://app.transifex.com/bn-team/teams/113585/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -9900,10 +9900,10 @@ msgstr ""
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
 msgid ""
-"This weapon is <bad>too unwieldy</bad> to fire on its own and <info>must be "
-"mounted</info> on a vehicle or furniture (window, table, mound of dirt, "
-"etc.) before use, <info>Large or Huge</info> mutants can fire from the hip "
-"with <bad>reduced accuracy.</bad>"
+"This weapon <bad>can only be fired if mounted</bad> on a vehicle or "
+"furniture (window, table, mound of dirt, etc.) to fire, <info>Large or "
+"Huge</info> mutants or those with active <info>Power Armor</info> can fire "
+"from the hip with <bad>reduced accuracy.</bad>"
 msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
@@ -9916,6 +9916,14 @@ msgstr ""
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
 msgid "This gear <bad>prevents</bad> you from <info>speaking</info>."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This equipment <good>allows you to fire</good> unwieldy weapons without "
+"requiring support from mountable terrain, as a <info>Large or Huge</info> "
+"mutant could, at the expense of <bad>reduced accuracy.</bad>"
 msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
@@ -49209,7 +49217,7 @@ msgstr[0] ""
 #. ~ Use action holster_msg for {'str': 'XL Kevlar vest'}.
 #. ~ Use action holster_msg for {'str': 'large grenade pouch', 'str_pl':
 #. 'large grenade pouches'}.
-#. ~ Use action holster_msg for {'str': 'power armor chest rig'}.
+#. ~ Use action holster_msg for {'str': 'power armor magazine carrier'}.
 #. ~ Use action holster_msg for {'str': 'MBR vest (Kevlar plates)', 'str_pl':
 #. 'MBR vests (Kevlar plates)'}.
 #. ~ Use action holster_msg for {'str': 'HERC rig'}.
@@ -49242,7 +49250,7 @@ msgstr ""
 #. 'MBR vests (superalloy)'}.
 #. ~ Use action holster_prompt for {'str': 'tac vest'}.
 #. ~ Use action holster_prompt for {'str': 'XL Kevlar vest'}.
-#. ~ Use action holster_prompt for {'str': 'power armor chest rig'}.
+#. ~ Use action holster_prompt for {'str': 'power armor magazine carrier'}.
 #. ~ Use action holster_prompt for {'str': 'MBR vest (Kevlar plates)',
 #. 'str_pl': 'MBR vests (Kevlar plates)'}.
 #. ~ Use action holster_prompt for {'str': 'HERC rig'}.
@@ -58788,16 +58796,16 @@ msgid ""
 msgstr ""
 
 #: data/json/items/armor/power_armor.json
-msgid "power armor chest rig"
-msgid_plural "power armor chest rigs"
+msgid "power armor magazine carrier"
+msgid_plural "power armor magazine carriers"
 msgstr[0] ""
 
-#. ~ Description for {'str': 'power armor chest rig'}
+#. ~ Description for {'str': 'power armor magazine carrier'}
 #: data/json/items/armor/power_armor.json
 msgid ""
-"A set of compartments capable of carrying three magazines close at hand.  "
-"Designed to interface with a military exoskeleton.  Activate to "
-"store/retrieve your magazines."
+"A set of compartments capable of carrying two magazines close at hand, "
+"including larger drum mags or UPS batteries.  Designed to interface with a "
+"military exoskeleton.  Activate to store/retrieve your magazines."
 msgstr ""
 
 #: data/json/items/armor/power_armor.json
@@ -148528,6 +148536,10 @@ msgid "toxic waste dump"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_waste_junk.json
+msgid "toxic waste dump roof"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_waste_junk.json
 msgid "hazardous waste sarcophagus"
 msgstr ""
 
@@ -172218,9 +172230,9 @@ msgstr ""
 msgid ""
 "The C.R.I.T. Spec Ops Enhanced Movement vest is embedded with high-tech "
 "filaments and reactive servos which protects its wearer and assists in "
-"movement at the cost high  power usage.  It is commonly worn by C.R.I.T. "
-"Spec Ops for its ease of use and manuverability.  Turn it on for suit mode, "
-"extra protection and movement."
+"movement at the cost high of power usage.  It is commonly worn by C.R.I.T. "
+"Spec Ops for its ease of use and maneuverability.  Turn it on for suit mode,"
+" extra protection and movement."
 msgstr ""
 
 #: data/mods/CRT_EXPANSION/items/crt_toolarmor.json
@@ -203445,7 +203457,7 @@ msgstr ""
 
 #: src/activity_handlers.cpp
 #, c-format
-msgid "Failure chance = %f%%"
+msgid "Success chance = %i%%"
 msgstr ""
 
 #: src/activity_handlers.cpp
@@ -203459,7 +203471,7 @@ msgid "Your imprecise surgery damaged a bionic, producing a %s."
 msgstr ""
 
 #: src/activity_handlers.cpp
-msgid "Your imprecise surgery destroyed some organs."
+msgid "Your imprecise surgery destroyed something."
 msgstr ""
 
 #: src/activity_handlers.cpp
@@ -203561,7 +203573,8 @@ msgstr ""
 
 #: src/activity_handlers.cpp
 msgid ""
-"You notice some strange organs, perhaps harvestable via careful dissection."
+"You notice something embedded in the corpse, perhaps harvestable via careful"
+" dissection."
 msgstr ""
 
 #: src/activity_handlers.cpp
@@ -203572,8 +203585,8 @@ msgstr ""
 
 #: src/activity_handlers.cpp
 msgid ""
-"Your butchering tool destroys a strange organ.  Perhaps a more surgical "
-"approach would allow harvesting it."
+"Your butchering tool destroys something.  Perhaps a more surgical approach "
+"would allow harvesting it."
 msgstr ""
 
 #: src/activity_handlers.cpp

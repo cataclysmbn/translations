@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-11-18 01:05+0000\n"
+"POT-Creation-Date: 2023-11-25 00:37+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -10139,12 +10139,12 @@ msgstr "这份食物是<info>生的</info>，烹饪后食用会<good>更有营�
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
 msgid ""
-"This weapon is <bad>too unwieldy</bad> to fire on its own and <info>must be "
-"mounted</info> on a vehicle or furniture (window, table, mound of dirt, "
-"etc.) before use, <info>Large or Huge</info> mutants can fire from the hip "
-"with <bad>reduced accuracy.</bad>"
+"This weapon <bad>can only be fired if mounted</bad> on a vehicle or "
+"furniture (window, table, mound of dirt, etc.) to fire, <info>Large or "
+"Huge</info> mutants or those with active <info>Power Armor</info> can fire "
+"from the hip with <bad>reduced accuracy.</bad>"
 msgstr ""
-"这把武器<bad>太过笨重</bad>，<info>必须安装在</info>一辆载具或者家具（窗户、桌子、土堆等）上才能够发射。<info>大型或巨型</info>变异人可以<bad>以降低的精准度</bad>自行发射。"
+"这把武器<bad>只能在安装在</bad>车辆或家具（窗户、桌子、土堆等）上时才能发射，<info>大型或巨型</info>突变体或那些穿着<info>动力装甲</info>的人可以从腰部射击，<bad>准确性降低。</bad>"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -10157,6 +10157,15 @@ msgstr "使用这种武器时，如果<info>力量低于其要求</info>，仍�
 #: data/json/flags.json
 msgid "This gear <bad>prevents</bad> you from <info>speaking</info>."
 msgstr "这件装备会 <bad>阻挡</bad>你 <info>说话的声音</info>。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This equipment <good>allows you to fire</good> unwieldy weapons without "
+"requiring support from mountable terrain, as a <info>Large or Huge</info> "
+"mutant could, at the expense of <bad>reduced accuracy.</bad>"
+msgstr ""
+"这个装备<good>使您能够</good>不需要依赖可安装的地形支撑即可开火，就像<info>大型或巨型</info>突变体一样，代价是<bad>准确性降低。</bad>"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -50198,7 +50207,7 @@ msgstr[0] "弹匣包（腰）"
 #. ~ Use action holster_msg for {'str': 'XL Kevlar vest'}.
 #. ~ Use action holster_msg for {'str': 'large grenade pouch', 'str_pl':
 #. 'large grenade pouches'}.
-#. ~ Use action holster_msg for {'str': 'power armor chest rig'}.
+#. ~ Use action holster_msg for {'str': 'power armor magazine carrier'}.
 #. ~ Use action holster_msg for {'str': 'MBR vest (Kevlar plates)', 'str_pl':
 #. 'MBR vests (Kevlar plates)'}.
 #. ~ Use action holster_msg for {'str': 'HERC rig'}.
@@ -50231,7 +50240,7 @@ msgstr "你收好了%s。"
 #. 'MBR vests (superalloy)'}.
 #. ~ Use action holster_prompt for {'str': 'tac vest'}.
 #. ~ Use action holster_prompt for {'str': 'XL Kevlar vest'}.
-#. ~ Use action holster_prompt for {'str': 'power armor chest rig'}.
+#. ~ Use action holster_prompt for {'str': 'power armor magazine carrier'}.
 #. ~ Use action holster_prompt for {'str': 'MBR vest (Kevlar plates)',
 #. 'str_pl': 'MBR vests (Kevlar plates)'}.
 #. ~ Use action holster_prompt for {'str': 'HERC rig'}.
@@ -59921,17 +59930,17 @@ msgid ""
 msgstr "一种重型枪套，使用密封件和导轨接口的组合来舒适地握住各种尺寸的手枪或类似枪支。设计用于与军用外骨骼连接。激活枪套/抽出一支小手枪。"
 
 #: data/json/items/armor/power_armor.json
-msgid "power armor chest rig"
-msgid_plural "power armor chest rigs"
-msgstr[0] "动力装甲弹匣包（胸）"
+msgid "power armor magazine carrier"
+msgid_plural "power armor magazine carriers"
+msgstr[0] "动力装甲弹匣携带器"
 
-#. ~ Description for {'str': 'power armor chest rig'}
+#. ~ Description for {'str': 'power armor magazine carrier'}
 #: data/json/items/armor/power_armor.json
 msgid ""
-"A set of compartments capable of carrying three magazines close at hand.  "
-"Designed to interface with a military exoskeleton.  Activate to "
-"store/retrieve your magazines."
-msgstr "一组弹匣包，可携带三个弹匣。设计用于与军用外骨骼连接。激活以存储/拔出弹匣。"
+"A set of compartments capable of carrying two magazines close at hand, "
+"including larger drum mags or UPS batteries.  Designed to interface with a "
+"military exoskeleton.  Activate to store/retrieve your magazines."
+msgstr "一组能够近距离携带两个弹匣的隔层，包括较大的圆鼓弹匣或UPS电池。设计用于与军用外骨骼相连接。激活以存储/检索您的弹匣。"
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor back scabbard"
@@ -151430,6 +151439,10 @@ msgid "toxic waste dump"
 msgstr "废料排放场"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_waste_junk.json
+msgid "toxic waste dump roof"
+msgstr "废料排放场屋顶"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_waste_junk.json
 msgid "hazardous waste sarcophagus"
 msgstr "放射地埋点"
 
@@ -175858,9 +175871,9 @@ msgstr "电量低，无法安全启动……"
 msgid ""
 "The C.R.I.T. Spec Ops Enhanced Movement vest is embedded with high-tech "
 "filaments and reactive servos which protects its wearer and assists in "
-"movement at the cost high  power usage.  It is commonly worn by C.R.I.T. "
-"Spec Ops for its ease of use and manuverability.  Turn it on for suit mode, "
-"extra protection and movement."
+"movement at the cost high of power usage.  It is commonly worn by C.R.I.T. "
+"Spec Ops for its ease of use and maneuverability.  Turn it on for suit mode,"
+" extra protection and movement."
 msgstr ""
 "C.R.I.T "
 "特战部队增强型运动背心，采用高科技纤维制成，内置无功伺服系统，可以保护穿戴者并消耗能量协助运动。C.R.I.T常规操作人员通常会穿着它，以方便使用和操作。开启它至服装模式以获得额外的保护和移动。"
@@ -207558,8 +207571,8 @@ msgstr "掷骰=%i"
 
 #: src/activity_handlers.cpp
 #, c-format
-msgid "Failure chance = %f%%"
-msgstr "失败机会=%f%%"
+msgid "Success chance = %i%%"
+msgstr "成功机会=%i%%"
 
 #: src/activity_handlers.cpp
 #, c-format
@@ -207572,8 +207585,8 @@ msgid "Your imprecise surgery damaged a bionic, producing a %s."
 msgstr "你那糟糕的手术损伤了一个生化插件，并产生了一个%s。"
 
 #: src/activity_handlers.cpp
-msgid "Your imprecise surgery destroyed some organs."
-msgstr "你那糟糕的手术摧毁了一些器官！"
+msgid "Your imprecise surgery destroyed something."
+msgstr "你那糟糕的手术摧毁了某些东西！"
 
 #: src/activity_handlers.cpp
 msgid "None of your cutting tools are suitable for butchering."
@@ -207674,8 +207687,9 @@ msgstr "你尽可能地从尸体上抢救回尚可用的部分，但它已经被
 
 #: src/activity_handlers.cpp
 msgid ""
-"You notice some strange organs, perhaps harvestable via careful dissection."
-msgstr "你发现尸体内的一些奇异的器官，看来需要精心解剖才能获得它。"
+"You notice something embedded in the corpse, perhaps harvestable via careful"
+" dissection."
+msgstr "你注意到有东西嵌在尸体里，看来需要精心解剖才能获得它。"
 
 #: src/activity_handlers.cpp
 msgid ""
@@ -207685,9 +207699,9 @@ msgstr "你注意到这具尸体里植入了生化插件，仔细解剖可能可
 
 #: src/activity_handlers.cpp
 msgid ""
-"Your butchering tool destroys a strange organ.  Perhaps a more surgical "
-"approach would allow harvesting it."
-msgstr "你的屠宰工具破坏了一个奇异的器官，看来需要正确解剖才能获得它。"
+"Your butchering tool destroys something.  Perhaps a more surgical approach "
+"would allow harvesting it."
+msgstr "你的屠宰工具破坏了某些东西，看来需要正确解剖才能获得它。"
 
 #: src/activity_handlers.cpp
 msgid ""
@@ -229347,6 +229361,8 @@ msgid ""
 "This ammo will produce effects with the following shape:\n"
 "<bold>%s</bold>"
 msgstr ""
+"* 这种弹药将产生以下形状的效果：\n"
+"<bold>%s</bold>"
 
 #: src/item.cpp
 msgid "This ammo has been <bad>hand-loaded</bad>."
@@ -229393,7 +229409,7 @@ msgstr "*<num>"
 
 #: src/item.cpp
 msgid " (effective: <num>)"
-msgstr ""
+msgstr "(有效范围：<num>)"
 
 #: src/item.cpp
 msgid "Sight dispersion: "
@@ -243456,7 +243472,7 @@ msgstr "选择用来装入 %s 的电池。"
 #: src/monexamine.cpp
 #, c-format
 msgid "Swipe your %s into the mech's security port?"
-msgstr ""
+msgstr "是否将 %s 插入机甲的安全卡槽？"
 
 #: src/monexamine.cpp
 #, c-format
@@ -243466,7 +243482,7 @@ msgstr "%s 轰的一声开启了，并打开它能容纳一人操控的舱门。
 #: src/monexamine.cpp
 #, c-format
 msgid "You do not have the required %s to activate this mech."
-msgstr ""
+msgstr "你没有启动这套机甲所需的 %s 。"
 
 #: src/monexamine.cpp
 #, c-format
@@ -252086,7 +252102,7 @@ msgstr "——备注：——"
 #: src/shape_impl.h
 #, c-format
 msgid "Cone of length <info>%d</info>, apex angle <info>%d</info>"
-msgstr ""
+msgstr "锥形，长度为<info>%d</info>，顶角为<info>%d</info>。"
 
 #: src/skill.cpp
 msgid "The zen-most skill there is."
