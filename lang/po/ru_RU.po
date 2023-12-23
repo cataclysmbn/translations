@@ -29,7 +29,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-12-16 00:59+0000\n"
+"POT-Creation-Date: 2023-12-23 00:37+0000\n"
 "Last-Translator: SATELLITE, 2023\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -5374,6 +5374,30 @@ msgid "Install Curtains Onto Window With Bars"
 msgstr "Повесить занавески на окно с решеткой"
 
 #: data/json/construction.json
+msgid ""
+"Build a concrete ramp leading to the next z-level above, and the "
+"corresponding ramp down leading from the z-level above to this level.  The "
+"high end of a ramp must be built adjacent to allow moving between z-levels "
+"in both directions."
+msgstr ""
+"Построить бетонную рампу, ведущую на один z-уровень вверх, и соответствующую"
+" рампу, ведущую с z-уровня выше на данный уровень. Верхний участок рампы "
+"должен быть сооружён рядом для возможности перемещения между z-уровнями в "
+"обоих направлениях."
+
+#: data/json/construction.json
+msgid ""
+"Build a concrete ramp leading to the next z-level above, and the "
+"corresponding ramp down leading from the z-level above to this level.  It "
+"must be built next to a low end of a ramp to allow moving between z-levels "
+"in both directions."
+msgstr ""
+"Построить бетонную рампу, ведущую на один z-уровень вверх, и соответствующую"
+" рампу, ведущую с z-уровня выше на данный уровень. Этот участок должен быть "
+"построен рядом с нижним участком рампы для возможности перемещения между "
+"z-уровнями в обоих направлениях."
+
+#: data/json/construction.json
 msgid "You need a deep pit to construct a root cellar."
 msgstr "Для постройки погреба потребуется глубокая яма."
 
@@ -5728,6 +5752,10 @@ msgid "Rewire Street Light"
 msgstr ""
 
 #: data/json/construction_group.json
+msgid "Build High End of a Concrete Ramp"
+msgstr "Построить верхний участок бетонной рампы"
+
+#: data/json/construction_group.json
 msgid "Build Improvised Shelter"
 msgstr "Строить временное укрытие"
 
@@ -5762,6 +5790,10 @@ msgstr "Строить стул-пенёк"
 #: data/json/construction_group.json
 msgid "Build Log Wall"
 msgstr "Строить бревенчатую стену"
+
+#: data/json/construction_group.json
+msgid "Build Low End of a Concrete Ramp"
+msgstr "Построить нижний участок бетонной рампы"
 
 #: data/json/construction_group.json
 msgid "Build Mailbox"
@@ -9126,10 +9158,6 @@ msgid "The stimulant combo is wearing off.  You feel sluggish."
 msgstr "Действие стимуляторов заканчивается. Вы чувствуете себя вялым."
 
 #: data/json/effects.json
-msgid "Adrenaline Comedown"
-msgstr "Спад адреналина"
-
-#: data/json/effects.json
 msgid "Adrenaline Rush"
 msgstr "Выброс адреналина"
 
@@ -9138,20 +9166,25 @@ msgstr "Выброс адреналина"
 msgid "You feel the rush of adrenaline in your body!"
 msgstr "Вы чувствуете прилив сил от адреналина!"
 
-#. ~ Apply message for effect(s) 'Adrenaline Comedown, Adrenaline Rush'.
+#. ~ Apply message for effect(s) 'Adrenaline Rush'.
 #: data/json/effects.json
 msgid "You feel a surge of adrenaline!"
 msgstr "Вы ощущаете прилив адреналина!"
 
-#. ~ Miss message for effect(s) 'Adrenaline Comedown, Adrenaline Rush'.
 #: data/json/effects.json
-msgid "Your comedown throws you off."
-msgstr "Отходняк мешает вам целиться."
+msgid "Adrenaline Comedown"
+msgstr "Спад адреналина"
 
-#. ~ Decay message for effect(s) 'Adrenaline Comedown, Adrenaline Rush'.
+#. ~ Apply message for effect(s) 'Adrenaline Comedown'.
+#. ~ Decay message for effect(s) 'Adrenaline Comedown'.
 #: data/json/effects.json
 msgid "Your adrenaline rush wears off.  You feel AWFUL!"
 msgstr "Выброс адреналина прекратился. Вы УЖАСНО себя чувствуете!"
+
+#. ~ Miss message for effect(s) 'Adrenaline Comedown'.
+#: data/json/effects.json
+msgid "Your comedown throws you off."
+msgstr "Отходняк мешает вам целиться."
 
 #: data/json/effects.json
 msgid "Mycus Respite"
@@ -24898,18 +24931,18 @@ msgstr ""
 #: data/json/scenarios.json
 msgctxt "scen_desc_male"
 msgid ""
-"For some reason your mission off the coast of North Korea was ended in the "
-"middle of a lake, in unknown location.  You have no idea what's happened, "
-"but now you have more important things to do."
+"For some reason your mission off the coast of North Korea has ended up "
+"stateside, stuck in the middle of a lake.  You have no idea what's happened,"
+" but now you have more important things to do."
 msgstr ""
 
 #. ~ Description for scenario 'CVN Sailor' for a female character.
 #: data/json/scenarios.json
 msgctxt "scen_desc_female"
 msgid ""
-"For some reason your mission off the coast of North Korea was ended in the "
-"middle of a lake, in unknown location.  You have no idea what's happened, "
-"but now you have more important things to do."
+"For some reason your mission off the coast of North Korea has ended up "
+"stateside, stuck in the middle of a lake.  You have no idea what's happened,"
+" but now you have more important things to do."
 msgstr ""
 
 #. ~ Starting location for scenario 'CVN Sailor'.
@@ -27547,6 +27580,32 @@ msgstr "«уиррр!»"
 msgid "vroom!"
 msgstr "«вуммм!»"
 
+#: data/json/spells_trap.json
+msgid "Can Alarm Trigger"
+msgstr ""
+
+#. ~ Description for {'str': 'Can Alarm Trigger'}
+#: data/json/spells_trap.json
+msgid ""
+"Has to be a target_attack spell instead of noise because spellcasting traps "
+"are a hacky mess."
+msgstr ""
+
+#: data/json/spells_trap.json
+msgid "Can Alarm Effect"
+msgstr ""
+
+#. ~ Description for {'str': 'Can Alarm Effect'}
+#: data/json/spells_trap.json
+msgid "And this triggers the actual sound "
+msgstr ""
+
+#. ~ Description for the sound of spell '{'str': 'Can Alarm Effect'}'
+#. ~ Trap-vehicle collision message for trap 'makeshift perimeter alarm'
+#: data/json/spells_trap.json data/json/traps.json
+msgid "empty cans clattering!"
+msgstr ""
+
 #: data/json/start_locations.json
 msgid "Shelter"
 msgstr "Укрытие"
@@ -30020,6 +30079,14 @@ msgstr "стеклянные триболы"
 #: data/json/traps.json
 msgid "tripwire"
 msgstr "растяжка"
+
+#: data/json/traps.json data/json/items/tool/traps.json
+msgid "makeshift perimeter alarm"
+msgid_plural "makeshift perimeter alarms"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: data/json/traps.json data/json/items/tool/traps.json
 msgid "crossbow trap"
@@ -106893,12 +106960,12 @@ msgstr ""
 "высмеивают из-за его пластикового корпуса, но из него очень просто стрелять."
 
 #: data/json/items/gun/9mm.json
-msgid "H&K MP5A2"
-msgid_plural "H&K MP5A2s"
-msgstr[0] "H&K MP5A2"
-msgstr[1] "H&K MP5A2"
-msgstr[2] "H&K MP5A2"
-msgstr[3] "H&K MP5A2"
+msgid "H&K MP5A4"
+msgid_plural "H&K MP5A4s"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: data/json/items/gun/9mm.json
 msgid ""
@@ -127941,6 +128008,19 @@ msgstr ""
 "устанавливать поперёк дверного проёма или другого узкого прохода. Любой "
 "проходящий через неё может споткнуться, упасть и немного покалечиться."
 
+#. ~ Use action done_message for {'str': 'makeshift perimeter alarm'}.
+#: data/json/items/tool/traps.json
+msgid "You string up some cans on a tripwire."
+msgstr ""
+
+#. ~ Description for {'str': 'makeshift perimeter alarm'}
+#: data/json/items/tool/traps.json
+msgid ""
+"This is a set of empty cans used as makeshift noisemakers, strung up across "
+"a doorway or other thin passage.  It will make noise when activated to alert"
+" you of intruders, but is otherwise harmless."
+msgstr ""
+
 #: data/json/items/tool/traps.json
 msgid "glass shard trap"
 msgid_plural "glass shard traps"
@@ -142254,6 +142334,78 @@ msgid "You are bald."
 msgstr "Ваша голова лысая."
 
 #: data/json/mutations/mutation_appearance.json
+msgid "Eye color: blue"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: blue'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have blue eyes."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: brown"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: brown'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have brown eyes."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: hazel"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: hazel'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have hazel eyes."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: amber"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: amber'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have amber eyes."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: gray"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: gray'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have gray eyes."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: green"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: green'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have green eyes."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: red"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: red'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have incredibly rare red eyes."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: violet"
+msgstr ""
+
+#. ~ Description for {'str': 'Eye color: violet'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have incredibly rare violet eyes."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
 msgid "Skin tone: dark brown"
 msgstr "Цвет кожи: тёмно-коричневый"
 
@@ -149408,7 +149560,7 @@ msgstr ""
 
 #. ~ Description for {'str': 'Debug Infinite Stamina'}
 #: data/json/mutations/mutations.json
-msgid "Lets you run forever (in other words, until you fix that bug)."
+msgid "Lets you run or swim forever (in other words, until you fix that bug)."
 msgstr ""
 
 #: data/json/mutations/mutations.json
@@ -185711,8 +185863,8 @@ msgstr "Дорожные работы"
 
 #. ~ Description for Roadworks
 #: data/json/overmap/map_extras.json
-msgid "Roadworks are here."
-msgstr "Тут ведутся дорожные работы."
+msgid "Some road work was being done here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Road Mayhem"
@@ -185720,8 +185872,8 @@ msgstr "Дорожное насилие"
 
 #. ~ Description for Road Mayhem
 #: data/json/overmap/map_extras.json
-msgid "Road mayhem is here."
-msgstr "Тут дорожное насилие."
+msgid "A car crash ended in violence here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Roadblock (Military)"
@@ -185775,8 +185927,8 @@ msgstr "Крушение вертолёта"
 
 #. ~ Description for Helicopter Crash
 #: data/json/overmap/map_extras.json
-msgid "Helicopter crashed here."
-msgstr "Тут разбившийся вертолёт."
+msgid "A helicopter crashed here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Scientists"
@@ -185793,17 +185945,8 @@ msgstr "Портал"
 
 #. ~ Description for Portal
 #: data/json/overmap/map_extras.json
-msgid "Portal is here."
-msgstr "Тут есть портал."
-
-#: data/json/overmap/map_extras.json
-msgid "Portal In"
-msgstr "Входной портал"
-
-#. ~ Description for Portal In
-#: data/json/overmap/map_extras.json
-msgid "Another portal is here."
-msgstr "Тут есть другой портал."
+msgid "A portal is here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Spider Nest"
@@ -185811,8 +185954,8 @@ msgstr "Паучье гнездо"
 
 #. ~ Description for Spider Nest
 #: data/json/overmap/map_extras.json
-msgid "Spider nest is here."
-msgstr "Тут паучье гнездо."
+msgid "A spider nest is here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Wasp Nest"
@@ -185820,8 +185963,8 @@ msgstr "Осиное гнездо"
 
 #. ~ Description for Wasp Nest
 #: data/json/overmap/map_extras.json
-msgid "Wasp nest is here."
-msgstr "Тут осиное гнездо."
+msgid "A wasp nest is here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json src/gamemode_defense.cpp
 msgid "Spiders"
@@ -185829,13 +185972,13 @@ msgstr "Пауки"
 
 #. ~ Description for Spiders
 #: data/json/overmap/map_extras.json
-msgid "This area is covered with webs.  Probably spiders are nearby"
-msgstr "Здесь всё затянуто паутиной. Пауки могут быть неподалёку"
+msgid "This area is covered with webs.  Probably spiders are nearby."
+msgstr ""
 
 #. ~ Description for Shia LaBeouf
 #: data/json/overmap/map_extras.json
-msgid "Cannibal is nearby."
-msgstr "Где-то рядом каннибал."
+msgid "The cannibal is nearby."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Eater of The Dead"
@@ -185879,8 +186022,8 @@ msgstr "Пруд"
 
 #. ~ Description for Pond
 #: data/json/overmap/map_extras.json
-msgid "Small pond is here."
-msgstr "Тут маленький пруд."
+msgid "A small pond is here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Stand of trees"
@@ -185915,36 +186058,26 @@ msgstr "Залежи глины"
 
 #. ~ Description for Clay Deposit
 #: data/json/overmap/map_extras.json
-msgid "Small clay deposit is here."
-msgstr "Тут небольшие залежи глины."
+msgid "A small clay deposit is here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Dead Vegetation"
 msgstr "Мёртвая растительность"
 
 #. ~ Description for Dead Vegetation
-#. ~ Description for Dead Vegetation (Point)
 #: data/json/overmap/map_extras.json
-msgid "Dead vegetation is here."
-msgstr "Тут мёртвая растительность."
-
-#: data/json/overmap/map_extras.json
-msgid "Dead Vegetation (Point)"
-msgstr "Мёртвая растительность (Точечная)"
+msgid "The vegetation here seems mostly dead."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Burned Ground"
 msgstr "Выжженная земля."
 
 #. ~ Description for Burned Ground
-#. ~ Description for Burned Ground (Point)
 #: data/json/overmap/map_extras.json
-msgid "Burned ground is here."
-msgstr "Тут выжженная земля."
-
-#: data/json/overmap/map_extras.json
-msgid "Burned Ground (Point)"
-msgstr "Выжженная земля (Точечная)"
+msgid "This area has been burned down."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Marloss Pilgrimage"
@@ -185952,8 +186085,8 @@ msgstr "Паломники Марло"
 
 #. ~ Description for Marloss Pilgrimage
 #: data/json/overmap/map_extras.json
-msgid "Marloss Pilgrimage is here."
-msgstr "Тут Паломники Марло."
+msgid "The Marloss Pilgrimage is here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Casings"
@@ -185961,8 +186094,8 @@ msgstr "Гильзы"
 
 #. ~ Description for Casings
 #: data/json/overmap/map_extras.json
-msgid "Several spent casings are here."
-msgstr "Тут несколько стреляных гильз."
+msgid "A shootout happened here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Looters"
@@ -185970,8 +186103,8 @@ msgstr "Мародёры"
 
 #. ~ Description for Looters
 #: data/json/overmap/map_extras.json
-msgid "Some looters gathering everything not nailed down."
-msgstr "Какие-то мародёры, собирающие всё, что не прибито к полу."
+msgid "Some looters are gathering everything not nailed down."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Corpses"
@@ -189320,6 +189453,10 @@ msgstr "заброшенная ткацкая фабрика"
 #: data/mods/Magiclysm/worldgen/overmap_terrain.json
 msgid "lake shore"
 msgstr "берег озера"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_waterbody.json
+msgid "lake shore (submerged)"
+msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_waterbody.json
 msgid "lake"
@@ -255525,38 +255662,6 @@ msgstr ""
 "Пробный/ещё разрабатываемый мод для демонстрации изменений JSON в "
 "regional_map_settings."
 
-#: data/mods/elevated_bridges/construction_group.json
-msgid "Build High End of a Concrete Ramp"
-msgstr "Построить верхний участок бетонной рампы"
-
-#: data/mods/elevated_bridges/construction_group.json
-msgid "Build Low End of a Concrete Ramp"
-msgstr "Построить нижний участок бетонной рампы"
-
-#: data/mods/elevated_bridges/content.json
-msgid ""
-"Build a concrete ramp leading to the next z-level above, and the "
-"corresponding ramp down leading from the z-level above to this level.  The "
-"high end of a ramp must be built adjacent to allow moving between z-levels "
-"in both directions."
-msgstr ""
-"Построить бетонную рампу, ведущую на один z-уровень вверх, и соответствующую"
-" рампу, ведущую с z-уровня выше на данный уровень. Верхний участок рампы "
-"должен быть сооружён рядом для возможности перемещения между z-уровнями в "
-"обоих направлениях."
-
-#: data/mods/elevated_bridges/content.json
-msgid ""
-"Build a concrete ramp leading to the next z-level above, and the "
-"corresponding ramp down leading from the z-level above to this level.  It "
-"must be built next to a low end of a ramp to allow moving between z-levels "
-"in both directions."
-msgstr ""
-"Построить бетонную рампу, ведущую на один z-уровень вверх, и соответствующую"
-" рампу, ведущую с z-уровня выше на данный уровень. Этот участок должен быть "
-"построен рядом с нижним участком рампы для возможности перемещения между "
-"z-уровнями в обоих направлениях."
-
 #: data/mods/elevated_bridges/modinfo.json
 msgid "Elevated bridges"
 msgstr "Арочные мосты"
@@ -267428,8 +267533,8 @@ msgid "Logging into %s…"
 msgstr "Вход в %s…"
 
 #: src/computer_session.cpp
-msgid "Access is temporary blocked for security purposes."
-msgstr "Доступ временно заблокирован в целях безопасности."
+msgid "Access is temporarily blocked for security purposes."
+msgstr ""
 
 #: src/computer_session.cpp
 msgid "Please contact the system administrator."
@@ -271877,6 +271982,11 @@ msgstr "«%s» удалено из списка автоматически по�
 #: src/explosion.cpp
 msgid "force of the explosion"
 msgstr "сила взрыва"
+
+#: src/explosion.cpp src/map.cpp
+#, c-format
+msgid "The %1$s"
+msgstr ""
 
 #: src/explosion.cpp
 msgid "You're caught in the explosion!"
@@ -288047,7 +288157,7 @@ msgstr "Для %s нужно, чтобы рядом был %s."
 msgid "You can't place a %s there.  It contains a trap already."
 msgstr "Тут уже есть ловушка, поэтому %s не получится разместить здесь."
 
-#: src/iuse_actor.cpp
+#: src/iuse_actor.cpp src/trapfunc.cpp
 #, c-format
 msgid "You trigger a %s!"
 msgstr "Вы активируете %s!"
@@ -292599,16 +292709,6 @@ msgstr "Умер от передозировки лечебными стимул
 msgctxt "memorial_female"
 msgid "Died of a healing stimulant overdose."
 msgstr "Умерла от передозировки лечебными стимуляторами."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of adrenaline overdose."
-msgstr "Умер от передозировки адреналином."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of adrenaline overdose."
-msgstr "Умерла от передозировки адреналином."
 
 #: src/memorial_logger.cpp
 msgctxt "memorial_male"
@@ -302241,18 +302341,6 @@ msgstr ""
 "замены частей машин."
 
 #: src/options.cpp
-msgid "Generate elevated bridges."
-msgstr "Генерация арочных мостов."
-
-#: src/options.cpp
-msgid ""
-"If true, bridges are generated at z+1 level, allowing boats to pass "
-"underneath."
-msgstr ""
-"Если \"да\", мосты будут сгенерированы на +1 уровень по высоте, что позволит"
-" лодкам проплывать под ними."
-
-#: src/options.cpp
 msgid "Quicksave on app lose focus"
 msgstr "Автосохранение при потере фокуса"
 
@@ -306573,6 +306661,11 @@ msgstr "Не удалось сгенерировать новую карту."
 #: src/trapfunc.cpp
 msgid "You feel your life force sapping away."
 msgstr "Вы чувствуете, что ваши жизненные силы иссякают."
+
+#: src/trapfunc.cpp
+#, c-format
+msgid "<npcname> triggers a %s!"
+msgstr ""
 
 #. ~ the sound a snake makes
 #: src/trapfunc.cpp

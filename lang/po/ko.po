@@ -11,7 +11,6 @@
 # 이현우, 2023
 # Cokafold, 2023
 # 99ecc9bedd126001a124273d35cfc4be_27e32b0 <edc99dec1fb9a34ce3e45b0fa08e9e04_986631>, 2023
-# DelFe, 2023
 # David Kim, 2023
 # Sungho Han <Hilldolfr@gmail.com>, 2023
 # Sail Recycle <sailrecycle@gmail.com>, 2023
@@ -28,12 +27,13 @@
 # Coolthulhu <Coolthulhu@gmail.com>, 2023
 # Jaesung Han (Re_Star), 2023
 # 김동현, 2023
+# DelFe, 2023
 # Fruitybite, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-12-16 00:59+0000\n"
+"POT-Creation-Date: 2023-12-23 00:37+0000\n"
 "Last-Translator: Fruitybite, 2023\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -4847,6 +4847,26 @@ msgid "Install Curtains Onto Window With Bars"
 msgstr "창살 달린 창문에 커튼 달기"
 
 #: data/json/construction.json
+msgid ""
+"Build a concrete ramp leading to the next z-level above, and the "
+"corresponding ramp down leading from the z-level above to this level.  The "
+"high end of a ramp must be built adjacent to allow moving between z-levels "
+"in both directions."
+msgstr ""
+"다음 z축 높이로 향하는 콘크리트 경사로와 해당 높이에서 이곳으로 내려오는 경사로를 만듭니다. 경사로 최고점이 반드시 인접해있어야 양쪽 "
+"방향에서 z축 높이를 오갈 수 있습니다."
+
+#: data/json/construction.json
+msgid ""
+"Build a concrete ramp leading to the next z-level above, and the "
+"corresponding ramp down leading from the z-level above to this level.  It "
+"must be built next to a low end of a ramp to allow moving between z-levels "
+"in both directions."
+msgstr ""
+"다음 z축 높이로 향하는 콘크리트 경사로와 해당 높이에서 이곳으로 내려오는 경사로를 만듭니다. 경사로 최저점이 반드시 인접해있어야 양쪽 "
+"방향에서 z축 높이를 오갈 수 있습니다."
+
+#: data/json/construction.json
 msgid "You need a deep pit to construct a root cellar."
 msgstr "지하 저장실을 건설하려면 깊은 구덩이가 필요합니다."
 
@@ -5189,6 +5209,10 @@ msgid "Rewire Street Light"
 msgstr "가로등 개조"
 
 #: data/json/construction_group.json
+msgid "Build High End of a Concrete Ramp"
+msgstr "콘크리트 경사로 최고점 건설"
+
+#: data/json/construction_group.json
 msgid "Build Improvised Shelter"
 msgstr "임시 피난처 건설"
 
@@ -5223,6 +5247,10 @@ msgstr "통나무 의자 만들기"
 #: data/json/construction_group.json
 msgid "Build Log Wall"
 msgstr "통나무 벽 건설"
+
+#: data/json/construction_group.json
+msgid "Build Low End of a Concrete Ramp"
+msgstr "콘크리트 경사로 최저점 건설"
 
 #: data/json/construction_group.json
 msgid "Build Mailbox"
@@ -8434,10 +8462,6 @@ msgid "The stimulant combo is wearing off.  You feel sluggish."
 msgstr "각성제 효과가 사라졌습니다. 몸이 느려집니다."
 
 #: data/json/effects.json
-msgid "Adrenaline Comedown"
-msgstr "아드레날린 후유증"
-
-#: data/json/effects.json
 msgid "Adrenaline Rush"
 msgstr "아드레날린 분비"
 
@@ -8446,20 +8470,25 @@ msgstr "아드레날린 분비"
 msgid "You feel the rush of adrenaline in your body!"
 msgstr "몸 안에 도는 아드레날린이 느껴집니다!"
 
-#. ~ Apply message for effect(s) 'Adrenaline Comedown, Adrenaline Rush'.
+#. ~ Apply message for effect(s) 'Adrenaline Rush'.
 #: data/json/effects.json
 msgid "You feel a surge of adrenaline!"
 msgstr "아드레날린이 솟구치는게 느껴집니다!"
 
-#. ~ Miss message for effect(s) 'Adrenaline Comedown, Adrenaline Rush'.
 #: data/json/effects.json
-msgid "Your comedown throws you off."
-msgstr "아드레날린 후유증이 당신을 강타합니다."
+msgid "Adrenaline Comedown"
+msgstr "아드레날린 후유증"
 
-#. ~ Decay message for effect(s) 'Adrenaline Comedown, Adrenaline Rush'.
+#. ~ Apply message for effect(s) 'Adrenaline Comedown'.
+#. ~ Decay message for effect(s) 'Adrenaline Comedown'.
 #: data/json/effects.json
 msgid "Your adrenaline rush wears off.  You feel AWFUL!"
 msgstr "아드레날린의 효력이 사라집니다. 기분이 끔찍해집니다."
+
+#. ~ Miss message for effect(s) 'Adrenaline Comedown'.
+#: data/json/effects.json
+msgid "Your comedown throws you off."
+msgstr "아드레날린 후유증이 당신을 강타합니다."
 
 #: data/json/effects.json
 msgid "Mycus Respite"
@@ -23512,22 +23541,22 @@ msgstr "항공모함 선원"
 #: data/json/scenarios.json
 msgctxt "scen_desc_male"
 msgid ""
-"For some reason your mission off the coast of North Korea was ended in the "
-"middle of a lake, in unknown location.  You have no idea what's happened, "
-"but now you have more important things to do."
+"For some reason your mission off the coast of North Korea has ended up "
+"stateside, stuck in the middle of a lake.  You have no idea what's happened,"
+" but now you have more important things to do."
 msgstr ""
-"북한 해안가에서 시작될 예정이었던 당신의 임무는 무슨 이유에서인지 어딘지 알 수 없는 호수 한가운데에서 중단되었습니다. 대체 무슨 일이 "
+"북한 해안가에서 시작될 예정이었던 당신의 임무는 무선 이유에서인지 미 본토의 어느 호수 한가운데에서 중단되었습니다. 대체 무슨 일이 "
 "일어났는지는 모르겠지만, 그걸 고민하는 것보다 더 중요한 일이 생겼습니다."
 
 #. ~ Description for scenario 'CVN Sailor' for a female character.
 #: data/json/scenarios.json
 msgctxt "scen_desc_female"
 msgid ""
-"For some reason your mission off the coast of North Korea was ended in the "
-"middle of a lake, in unknown location.  You have no idea what's happened, "
-"but now you have more important things to do."
+"For some reason your mission off the coast of North Korea has ended up "
+"stateside, stuck in the middle of a lake.  You have no idea what's happened,"
+" but now you have more important things to do."
 msgstr ""
-"북한 해안가에서 시작될 예정이었던 당신의 임무는 무슨 이유에서인지 어딘지 알 수 없는 호수 한가운데에서 중단되었습니다. 대체 무슨 일이 "
+"북한 해안가에서 시작될 예정이었던 당신의 임무는 무선 이유에서인지 미 본토의 어느 호수 한가운데에서 중단되었습니다. 대체 무슨 일이 "
 "일어났는지는 모르겠지만, 그걸 고민하는 것보다 더 중요한 일이 생겼습니다."
 
 #. ~ Starting location for scenario 'CVN Sailor'.
@@ -26030,6 +26059,32 @@ msgstr "위잉!"
 msgid "vroom!"
 msgstr "부르릉!"
 
+#: data/json/spells_trap.json
+msgid "Can Alarm Trigger"
+msgstr "깡통 경보기 작동"
+
+#. ~ Description for {'str': 'Can Alarm Trigger'}
+#: data/json/spells_trap.json
+msgid ""
+"Has to be a target_attack spell instead of noise because spellcasting traps "
+"are a hacky mess."
+msgstr "소음 대신 target_attack 주문이어야 함. 주문시전 함정이 더 나음."
+
+#: data/json/spells_trap.json
+msgid "Can Alarm Effect"
+msgstr "깡통 경보기 효과"
+
+#. ~ Description for {'str': 'Can Alarm Effect'}
+#: data/json/spells_trap.json
+msgid "And this triggers the actual sound "
+msgstr "그리고 이게 진짜 소리를 발생시킴."
+
+#. ~ Description for the sound of spell '{'str': 'Can Alarm Effect'}'
+#. ~ Trap-vehicle collision message for trap 'makeshift perimeter alarm'
+#: data/json/spells_trap.json data/json/traps.json
+msgid "empty cans clattering!"
+msgstr "빈 깡통이 요란하게 부딪힙니다!"
+
 #: data/json/start_locations.json
 msgid "Shelter"
 msgstr "대피소"
@@ -28475,6 +28530,11 @@ msgstr "유리 마름쇠"
 #: data/json/traps.json
 msgid "tripwire"
 msgstr "인계철선"
+
+#: data/json/traps.json data/json/items/tool/traps.json
+msgid "makeshift perimeter alarm"
+msgid_plural "makeshift perimeter alarms"
+msgstr[0] "급조된 경계 경보기"
 
 #: data/json/traps.json data/json/items/tool/traps.json
 msgid "crossbow trap"
@@ -65766,6 +65826,8 @@ msgid ""
 " tradition, compiled by the succeeding generations of Confucius's disciples."
 "  It is sometimes viewed as a philosophy and sometimes as a religion."
 msgstr ""
+"전통 유교 사회에서 가장 존경받는 경전으로, 공자의 가르침을 그 제자들이 정리해 펴낸 책의 영문 번역본입니다. 때때로 철학으로도, 또 "
+"종교로도 여겨집니다."
 
 #: data/json/items/book/bloat.json
 msgid "Book of Pagan prayer"
@@ -65778,7 +65840,7 @@ msgstr[0] "페이건 기도서"
 msgid ""
 "A comprehensive selection of prayers to guide the reader on Pagan and Wiccan"
 " worship."
-msgstr ""
+msgstr "독자에게 페이건 및 위카 신앙을 소개하는 기도서 모음집입니다."
 
 #: data/json/items/book/bloat.json
 msgid "Book of shamanistic and folk practices"
@@ -65791,7 +65853,7 @@ msgstr[0] "주술 및 민속신앙서"
 msgid ""
 "A comprehensive book detailing the practices of a single region of "
 "shamanistic or folk beliefs."
-msgstr ""
+msgstr "특정 지역의 주술 내지는 민속신앙의 내용을 상세히 설명하는 자료집입니다."
 
 #: data/json/items/book/bloat.json
 msgid "priest's diary"
@@ -87695,6 +87757,9 @@ msgid ""
 "collectors.  Unlike modern revolvers, the cylinder cannot swing out for "
 "loading, and spent brass must be ejected one at a time."
 msgstr ""
+"이 7.5인치 총열 우베르티 카우보이 소총은 전설적인 콜트 싱글 액션 아미 또는 콜트 피스메이커의 현대 재현품으로, 현대적인 자체 포함형"
+" 탄창을 사용한 최초의 리볼버 중 하나입니다. 서부 영화로 유명해져 카우보이 액션 슈팅, 리인액터 및 수집가들에게 여전히 인기가 "
+"있습니다. 현대 리볼버와 달리 장전을 위해 약실을 옆으로 뺄 수 없으며, 사용한 탄피는 한 번에 하나씩 배출되어야 합니다."
 
 #: data/json/items/gun/46.json
 msgid "H&K MP7A2"
@@ -88311,9 +88376,9 @@ msgid ""
 msgstr "존재하는 권총중 가장 대중적인 권총입니다. 글록 19는 플라스틱으로 되어있어 종종 폄하를 받지만, 사격하기 편합니다."
 
 #: data/json/items/gun/9mm.json
-msgid "H&K MP5A2"
-msgid_plural "H&K MP5A2s"
-msgstr[0] "H&K MP5A2"
+msgid "H&K MP5A4"
+msgid_plural "H&K MP5A4s"
+msgstr[0] "H&K MP5A4"
 
 #: data/json/items/gun/9mm.json
 msgid ""
@@ -104005,7 +104070,7 @@ msgstr "날카로운 모서리를  세워서 접착된 유리 파편입니다. �
 #. ~ Use action done_message for {'str': 'crossbow trap'}.
 #: data/json/items/tool/traps.json
 msgid "You set the crossbow trap."
-msgstr "쇠뇌 덫을 설치했다."
+msgstr "쇠뇌 덫을 설치했습니다."
 
 #. ~ Description for {'str': 'crossbow trap'}
 #: data/json/items/tool/traps.json
@@ -104061,7 +104126,7 @@ msgstr[0] "인계철선 덫"
 #. ~ Use action done_message for {'str': 'tripwire trap'}.
 #: data/json/items/tool/traps.json
 msgid "You string up the tripwire."
-msgstr "인계철선을 설치했다."
+msgstr "인계철선을 설치했습니다."
 
 #. ~ Description for {'str': 'tripwire trap'}
 #: data/json/items/tool/traps.json
@@ -104071,6 +104136,23 @@ msgid ""
 "purpose is to trip up bypassers, causing them to stumble and possibly hurt "
 "themselves slightly."
 msgstr ""
+"얇고 튼튼한 선의 양 끄트머리를 문간이나 좁은 통로에 고정해놓았습니다. 지나다니는 사람을 넘어뜨려 자빠지게 하고, 약간 다치게 할 수 "
+"있습니다."
+
+#. ~ Use action done_message for {'str': 'makeshift perimeter alarm'}.
+#: data/json/items/tool/traps.json
+msgid "You string up some cans on a tripwire."
+msgstr "인계철선에 깡통을 매달았습니다."
+
+#. ~ Description for {'str': 'makeshift perimeter alarm'}
+#: data/json/items/tool/traps.json
+msgid ""
+"This is a set of empty cans used as makeshift noisemakers, strung up across "
+"a doorway or other thin passage.  It will make noise when activated to alert"
+" you of intruders, but is otherwise harmless."
+msgstr ""
+"빈 깡통을 급조된 조음기 삼아 문간이나 좁은 통로에 걸어놓았습니다. 작동하면 요란하게 덜그럭거리며 침입을 알리지만, 그 이외에는 딱히 "
+"해롭지 않습니다."
 
 #: data/json/items/tool/traps.json
 msgid "glass shard trap"
@@ -115259,6 +115341,78 @@ msgid "You are bald."
 msgstr "당신은 머리카락이 없습니다. 쉽게 말해 대머리입니다."
 
 #: data/json/mutations/mutation_appearance.json
+msgid "Eye color: blue"
+msgstr "눈 색: 청색"
+
+#. ~ Description for {'str': 'Eye color: blue'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have blue eyes."
+msgstr "당신의 눈은 청색입니다."
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: brown"
+msgstr "눈 색: 갈색"
+
+#. ~ Description for {'str': 'Eye color: brown'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have brown eyes."
+msgstr "당신의 눈은 갈색입니다."
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: hazel"
+msgstr "눈 색: 헤이즐"
+
+#. ~ Description for {'str': 'Eye color: hazel'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have hazel eyes."
+msgstr "당신의 눈은 헤이즐색입니다."
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: amber"
+msgstr "눈 색: 호박색"
+
+#. ~ Description for {'str': 'Eye color: amber'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have amber eyes."
+msgstr "당신의 눈은 호박색입니다."
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: gray"
+msgstr "눈 색: 회색"
+
+#. ~ Description for {'str': 'Eye color: gray'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have gray eyes."
+msgstr "당신의 눈은 회색입니다."
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: green"
+msgstr "눈 색: 녹색"
+
+#. ~ Description for {'str': 'Eye color: green'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have green eyes."
+msgstr "당신의 눈은 녹색입니다."
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: red"
+msgstr "눈 색: 적색"
+
+#. ~ Description for {'str': 'Eye color: red'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have incredibly rare red eyes."
+msgstr "당신의 눈은 아주 드물게도 적색입니다."
+
+#: data/json/mutations/mutation_appearance.json
+msgid "Eye color: violet"
+msgstr "눈 색: 바이올렛"
+
+#. ~ Description for {'str': 'Eye color: violet'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have incredibly rare violet eyes."
+msgstr "당신의 눈은 아주 드물게도 바이올렛색입니다."
+
+#: data/json/mutations/mutation_appearance.json
 msgid "Skin tone: dark brown"
 msgstr "피부색: 짙은 갈색"
 
@@ -121794,8 +121948,8 @@ msgstr "디버그 무한 스태미나"
 
 #. ~ Description for {'str': 'Debug Infinite Stamina'}
 #: data/json/mutations/mutations.json
-msgid "Lets you run forever (in other words, until you fix that bug)."
-msgstr "하루종일도 달릴 수 있습니다! (다시 말하면, 버그를 고칠 때까지 달리라는 뜻입니다.)"
+msgid "Lets you run or swim forever (in other words, until you fix that bug)."
+msgstr "하루종일도 달리고 수영할 수 있습니다! (다시 말하면, 버그를 고칠 때까지 하루종일 달리고 헤엄치라는 뜻입니다.)"
 
 #: data/json/mutations/mutations.json
 msgid "Squeamish"
@@ -134940,15 +135094,15 @@ msgstr "말했잖아. 그 이야기 하기 싫어. 왜 말을 하는데 이해�
 msgid ""
 "Like I said, it's a <shitty> story, but I guess it won't kill me to tell it "
 "one more time."
-msgstr ""
+msgstr "말했듯이, <shitty>같은 이야기지만, 한번쯤 더 말한다고 죽지야 않겠지."
 
 #: data/json/npcs/Backgrounds/lost_partner_2.json
 msgid "Just another <shitty> tale of love and loss.  Not one I like to tell."
-msgstr ""
+msgstr "사랑과 이별에 관한 <shitty>같이 흔한 이야기야. 별로 말하고 싶지 않아."
 
 #: data/json/npcs/Backgrounds/lost_partner_2.json
 msgid "You said you lost someone."
-msgstr ""
+msgstr "네가 누군가를 잃었다고 들었는데."
 
 #: data/json/npcs/Backgrounds/lost_partner_2.json
 msgid "Never mind.  Sorry I brought it up."
@@ -139616,6 +139770,8 @@ msgid ""
 "safe place.  They just want me to disappear, like the others.  Can you help "
 "me figure them out?"
 msgstr ""
+"주인들이 나만의 성역을 만들어도 된다고 허락해주질 않아. 여기에 만들 수 없다는건 나도 알아. 저들이 허락하지 않을테니까. 그렇지만 내가"
+" 안전한 장소가 필요하다고 이야기해도 들어주질 않아. 그냥 다른 사람들처럼 사라졌으면 하는거야. 저들과 결판내는걸 도와줄 수 있어?"
 
 #: data/json/npcs/refugee_center/beggars/BEGGAR_2_Dino_Dave.json
 msgid ""
@@ -141784,7 +141940,7 @@ msgstr "안녕, 데이브. 좀 달라보이는데."
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Dino_Dave.json
 msgid "How are things going up here on the roof?"
-msgstr ""
+msgstr "요즘 옥상에서 지내는건 잘되어가?"
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Dino_Dave.json
 msgid "Always good to catch up, Dave.  Keep on being you."
@@ -153773,8 +153929,8 @@ msgstr "도로 공사"
 
 #. ~ Description for Roadworks
 #: data/json/overmap/map_extras.json
-msgid "Roadworks are here."
-msgstr "이곳에서 도로 공사가 진행 중이었습니다."
+msgid "Some road work was being done here."
+msgstr "도로공사 현장입니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Road Mayhem"
@@ -153782,8 +153938,8 @@ msgstr "길가의 아수라장"
 
 #. ~ Description for Road Mayhem
 #: data/json/overmap/map_extras.json
-msgid "Road mayhem is here."
-msgstr "아수라장이 벌어져있습니다."
+msgid "A car crash ended in violence here."
+msgstr "끔찍한 교통사고 현장입니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Roadblock (Military)"
@@ -153837,8 +153993,8 @@ msgstr "헬리콥터 추락사고"
 
 #. ~ Description for Helicopter Crash
 #: data/json/overmap/map_extras.json
-msgid "Helicopter crashed here."
-msgstr "헬리콥터가 이곳에 추락했습니다."
+msgid "A helicopter crashed here."
+msgstr "헬리콥터가 여기에 추락했습니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Scientists"
@@ -153855,17 +154011,8 @@ msgstr "포탈"
 
 #. ~ Description for Portal
 #: data/json/overmap/map_extras.json
-msgid "Portal is here."
+msgid "A portal is here."
 msgstr "이곳에 포탈이 있습니다."
-
-#: data/json/overmap/map_extras.json
-msgid "Portal In"
-msgstr "포탈 진입구"
-
-#. ~ Description for Portal In
-#: data/json/overmap/map_extras.json
-msgid "Another portal is here."
-msgstr "다른 포탈이 있습니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Spider Nest"
@@ -153873,8 +154020,8 @@ msgstr "거미 둥지"
 
 #. ~ Description for Spider Nest
 #: data/json/overmap/map_extras.json
-msgid "Spider nest is here."
-msgstr "거미 둥지가 있습니다."
+msgid "A spider nest is here."
+msgstr "거미둥지가 존재합니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Wasp Nest"
@@ -153882,8 +154029,8 @@ msgstr "말벌 집"
 
 #. ~ Description for Wasp Nest
 #: data/json/overmap/map_extras.json
-msgid "Wasp nest is here."
-msgstr "말벌집이 있습니다."
+msgid "A wasp nest is here."
+msgstr "말벌 집이 존재합니다."
 
 #: data/json/overmap/map_extras.json src/gamemode_defense.cpp
 msgid "Spiders"
@@ -153891,12 +154038,12 @@ msgstr "거미"
 
 #. ~ Description for Spiders
 #: data/json/overmap/map_extras.json
-msgid "This area is covered with webs.  Probably spiders are nearby"
-msgstr "이곳은 거미줄로 덮여있습니다. 아마 거미들이 근처에 있을겁니다."
+msgid "This area is covered with webs.  Probably spiders are nearby."
+msgstr "이곳은 거미줄로 덮여있습니다. 아마 거미들이 근처에 있을 것입니다."
 
 #. ~ Description for Shia LaBeouf
 #: data/json/overmap/map_extras.json
-msgid "Cannibal is nearby."
+msgid "The cannibal is nearby."
 msgstr "식인종이 근처에 있습니다."
 
 #: data/json/overmap/map_extras.json
@@ -153941,7 +154088,7 @@ msgstr "연못"
 
 #. ~ Description for Pond
 #: data/json/overmap/map_extras.json
-msgid "Small pond is here."
+msgid "A small pond is here."
 msgstr "작은 연못이 있습니다."
 
 #: data/json/overmap/map_extras.json
@@ -153977,7 +154124,7 @@ msgstr "점토 퇴적지"
 
 #. ~ Description for Clay Deposit
 #: data/json/overmap/map_extras.json
-msgid "Small clay deposit is here."
+msgid "A small clay deposit is here."
 msgstr "소규모 점토 퇴적지입니다."
 
 #: data/json/overmap/map_extras.json
@@ -153985,28 +154132,18 @@ msgid "Dead Vegetation"
 msgstr "죽은 초목"
 
 #. ~ Description for Dead Vegetation
-#. ~ Description for Dead Vegetation (Point)
 #: data/json/overmap/map_extras.json
-msgid "Dead vegetation is here."
-msgstr "초목들이 죽어있습니다."
-
-#: data/json/overmap/map_extras.json
-msgid "Dead Vegetation (Point)"
-msgstr "죽은 초목 (지점)"
+msgid "The vegetation here seems mostly dead."
+msgstr "이곳의 초목은 대부분 죽은 것 같습니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Burned Ground"
 msgstr "화재 흔적"
 
 #. ~ Description for Burned Ground
-#. ~ Description for Burned Ground (Point)
 #: data/json/overmap/map_extras.json
-msgid "Burned ground is here."
-msgstr "이곳은 불탄 흔적이 있습니다."
-
-#: data/json/overmap/map_extras.json
-msgid "Burned Ground (Point)"
-msgstr "화재 흔적 (지점)"
+msgid "This area has been burned down."
+msgstr "이곳은 죄다 불타버렸습니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Marloss Pilgrimage"
@@ -154014,17 +154151,17 @@ msgstr "말로스 순례지"
 
 #. ~ Description for Marloss Pilgrimage
 #: data/json/overmap/map_extras.json
-msgid "Marloss Pilgrimage is here."
-msgstr "말로스 신도들이 모이는 곳입니다."
+msgid "The Marloss Pilgrimage is here."
+msgstr "말로스 신도들의 순례지입니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Casings"
-msgstr "탄피"
+msgstr "사격전 흔적"
 
 #. ~ Description for Casings
 #: data/json/overmap/map_extras.json
-msgid "Several spent casings are here."
-msgstr "쏘고 난 탄피들이 떨어져있습니다."
+msgid "A shootout happened here."
+msgstr "이곳에서 사격전이 벌어졌습니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Looters"
@@ -154032,8 +154169,8 @@ msgstr "수집가"
 
 #. ~ Description for Looters
 #: data/json/overmap/map_extras.json
-msgid "Some looters gathering everything not nailed down."
-msgstr "수집가들이 못박혀 고정되지 않은걸 죄다 모으고 있습니다."
+msgid "Some looters are gathering everything not nailed down."
+msgstr "수집가들이 못박혀 고정되지 않은 것들을 죄다 긁어모으고 있습니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Corpses"
@@ -154047,7 +154184,7 @@ msgstr "대재앙으로 사라진 수억 명 중 불운한 일부입니다."
 #. ~ Description for Wasp Nest
 #: data/json/overmap/map_extras.json
 msgid "A wasp nest."
-msgstr "말벌 둥지"
+msgstr "말벌 둥지입니다."
 
 #: data/json/overmap/map_extras.json
 msgid "Dermatik Nest"
@@ -154182,6 +154319,7 @@ msgid ""
 " the edges of the site’s activities, including on-site machinery, parking "
 "lots, roads and buildings."
 msgstr ""
+"모래와 자갈로 가득한 구덩이, 광산과 채석장입니다. 채광업에 필요한 지표 시설, 주차장, 도로, 건물 등이 이 지역에 포함되어있습니다."
 
 #: data/json/overmap/overmap_land_use_codes.json
 msgid "Open Land"
@@ -157316,6 +157454,10 @@ msgstr "버려진 방직공장"
 #: data/mods/Magiclysm/worldgen/overmap_terrain.json
 msgid "lake shore"
 msgstr "호숫가"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_waterbody.json
+msgid "lake shore (submerged)"
+msgstr "호숫가 (수중)"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_waterbody.json
 msgid "lake"
@@ -211436,34 +211578,6 @@ msgstr "사막 지역"
 msgid "A testbed/WIP mod to showcase regional_map_settings JSON changes."
 msgstr "지역 지도 설정 (regional_map_settings) JSON 변경 예시로 만든 실험용/작업중 모드입니다."
 
-#: data/mods/elevated_bridges/construction_group.json
-msgid "Build High End of a Concrete Ramp"
-msgstr "콘크리트 경사로 최고점 건설"
-
-#: data/mods/elevated_bridges/construction_group.json
-msgid "Build Low End of a Concrete Ramp"
-msgstr "콘크리트 경사로 최저점 건설"
-
-#: data/mods/elevated_bridges/content.json
-msgid ""
-"Build a concrete ramp leading to the next z-level above, and the "
-"corresponding ramp down leading from the z-level above to this level.  The "
-"high end of a ramp must be built adjacent to allow moving between z-levels "
-"in both directions."
-msgstr ""
-"다음 z축 높이로 향하는 콘크리트 경사로와 해당 높이에서 이곳으로 내려오는 경사로를 만듭니다. 경사로 최고점이 반드시 인접해있어야 양쪽 "
-"방향에서 z축 높이를 오갈 수 있습니다."
-
-#: data/mods/elevated_bridges/content.json
-msgid ""
-"Build a concrete ramp leading to the next z-level above, and the "
-"corresponding ramp down leading from the z-level above to this level.  It "
-"must be built next to a low end of a ramp to allow moving between z-levels "
-"in both directions."
-msgstr ""
-"다음 z축 높이로 향하는 콘크리트 경사로와 해당 높이에서 이곳으로 내려오는 경사로를 만듭니다. 경사로 최저점이 반드시 인접해있어야 양쪽 "
-"방향에서 z축 높이를 오갈 수 있습니다."
-
 #: data/mods/elevated_bridges/modinfo.json
 msgid "Elevated bridges"
 msgstr "고가 다리"
@@ -222777,7 +222891,7 @@ msgid "Logging into %s…"
 msgstr "%s에 접속중..."
 
 #: src/computer_session.cpp
-msgid "Access is temporary blocked for security purposes."
+msgid "Access is temporarily blocked for security purposes."
 msgstr "보안상 일시적으로 접근이 차단되었습니다."
 
 #: src/computer_session.cpp
@@ -227113,6 +227227,11 @@ msgstr "자동 줍기 목록에서 '%s' 제거됨."
 msgid "force of the explosion"
 msgstr "폭발력"
 
+#: src/explosion.cpp src/map.cpp
+#, c-format
+msgid "The %1$s"
+msgstr "%1$s"
+
 #: src/explosion.cpp
 msgid "You're caught in the explosion!"
 msgstr "폭발에 휘말렸습니다!"
@@ -230360,7 +230479,7 @@ msgstr "%s - %s"
 #: src/game.cpp
 #, c-format
 msgid "Cursor At: (%d,%d,%d)"
-msgstr ""
+msgstr "커서 위치: (%d,%d,%d)"
 
 #: src/game.cpp
 msgid "You can't see that destination."
@@ -242739,7 +242858,7 @@ msgstr "%s(은)는 %s(와)과 인접한 위치에 있어야 합니다."
 msgid "You can't place a %s there.  It contains a trap already."
 msgstr "%s(을)를 그곳에 놓을 수 없습니다. 이미 함정이 설치되어 있습니다."
 
-#: src/iuse_actor.cpp
+#: src/iuse_actor.cpp src/trapfunc.cpp
 #, c-format
 msgid "You trigger a %s!"
 msgstr "%s(을)를 작동시킵니다!"
@@ -247190,16 +247309,6 @@ msgstr "각성제 과다복용으로 사망했다."
 msgctxt "memorial_female"
 msgid "Died of a healing stimulant overdose."
 msgstr "각성제 과다복용으로 사망했다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of adrenaline overdose."
-msgstr "아드레날린 과다복용으로 사망했다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of adrenaline overdose."
-msgstr "아드레날린 과다복용으로 사망했다."
 
 #: src/memorial_logger.cpp
 msgctxt "memorial_male"
@@ -256433,16 +256542,6 @@ msgid ""
 msgstr "설정을 켤 경우, 부품을 바꾸기 위해 더 이상 체력이나 들어올리기 도구를 충족시킬 필요가 없어집니다"
 
 #: src/options.cpp
-msgid "Generate elevated bridges."
-msgstr "고가 다리 생성"
-
-#: src/options.cpp
-msgid ""
-"If true, bridges are generated at z+1 level, allowing boats to pass "
-"underneath."
-msgstr "이 설정을 켜면 다리가 기존보다 1층 높은 위치에 생성되어, 선박이 아래로 지나갈 수 있게 될 것입니다."
-
-#: src/options.cpp
 msgid "Quicksave on app lose focus"
 msgstr "프로그램(앱)을 백그라운드로 전환할 경우 자동저장"
 
@@ -260603,6 +260702,11 @@ msgstr "새 맵 생성 실패"
 #: src/trapfunc.cpp
 msgid "You feel your life force sapping away."
 msgstr "생기가 빨려나가는 것 같습니다."
+
+#: src/trapfunc.cpp
+#, c-format
+msgid "<npcname> triggers a %s!"
+msgstr "<npcname>(이)가 %s(을)를 작동시켰습니다!"
 
 #. ~ the sound a snake makes
 #: src/trapfunc.cpp
