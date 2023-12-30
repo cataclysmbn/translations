@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2023-12-23 00:37+0000\n"
+"POT-Creation-Date: 2023-12-30 00:58+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2023\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -4427,6 +4427,14 @@ msgstr "裏地(羊毛)を縫う"
 msgid "Destroy wool lining"
 msgstr "裏地(羊毛)を取り除く"
 
+#: data/json/clothing_mods.json
+msgid "Resize to fit abnormally large mutated anatomy"
+msgstr ""
+
+#: data/json/clothing_mods.json
+msgid "Undo resizing for mutated anatomy"
+msgstr ""
+
 #: data/json/construction.json
 msgid "Certain terrain and furniture can be deconstructed without any tools."
 msgstr "特定の地形や設置物は工具なしで分解できます。"
@@ -4502,6 +4510,38 @@ msgid ""
 "in both directions."
 msgstr ""
 "一つ上の層へ通じるコンクリート製の傾斜路を現在の層に設置し、この層へ通じる傾斜路を一つ上の層に設置します。異なる層への移動を可能にするためには、隣接する地点に上り傾斜路下端を設置してください。"
+
+#: data/json/construction.json
+msgid ""
+"Build a rammed earth ramp leading to the next z-level above, and the "
+"corresponding ramp down leading from the z-level above to this level.  The "
+"high end of a ramp must be built adjacent to allow moving between z-levels "
+"in both directions."
+msgstr ""
+
+#: data/json/construction.json
+msgid ""
+"Build a rammed earth ramp leading to the next z-level above, and the "
+"corresponding ramp down leading from the z-level above to this level.  It "
+"must be built next to a low end of a ramp to allow moving between z-levels "
+"in both directions."
+msgstr ""
+
+#: data/json/construction.json
+msgid ""
+"Build a wooden ramp leading to the next z-level above, and the corresponding"
+" ramp down leading from the z-level above to this level.  The high end of a "
+"ramp must be built adjacent to allow moving between z-levels in both "
+"directions."
+msgstr ""
+
+#: data/json/construction.json
+msgid ""
+"Build a wooden ramp leading to the next z-level above, and the corresponding"
+" ramp down leading from the z-level above to this level.  It must be built "
+"next to a low end of a ramp to allow moving between z-levels in both "
+"directions."
+msgstr ""
 
 #: data/json/construction.json
 msgid "You need a deep pit to construct a root cellar."
@@ -4849,6 +4889,14 @@ msgid "Build High End of a Concrete Ramp"
 msgstr "上り坂上端(ｺﾝｸﾘｰﾄ)を設置する"
 
 #: data/json/construction_group.json
+msgid "Build High End of a Rammed Earth Ramp"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Build High End of a Wooden Ramp"
+msgstr ""
+
+#: data/json/construction_group.json
 msgid "Build Improvised Shelter"
 msgstr "簡易シェルターを設置する"
 
@@ -4887,6 +4935,14 @@ msgstr "壁(丸太)を設置する"
 #: data/json/construction_group.json
 msgid "Build Low End of a Concrete Ramp"
 msgstr "上り坂下端(ｺﾝｸﾘｰﾄ)を設置する"
+
+#: data/json/construction_group.json
+msgid "Build Low End of a Rammed Earth Ramp"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Build Low End of a Wooden Ramp"
+msgstr ""
 
 #: data/json/construction_group.json
 msgid "Build Mailbox"
@@ -9929,6 +9985,13 @@ msgstr "このアイテムは<info>変異した部位に着用できるサイズ
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
 msgid ""
+"This gear has been modified to accommodate <info>abnormally large mutated "
+"anatomy</info> with some <bad>increase to encumbrance</bad>."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
 "This gear <good>reduces</good> the volume of <info>sounds</info> to a safe "
 "level."
 msgstr "このアイテムは耳に入る<info>音</info>の大きさを安全なレベルまで<good>減少</good>します。"
@@ -10438,7 +10501,7 @@ msgid "Attach as gunmod"
 msgstr "銃器に取り付ける"
 
 #: data/json/item_actions.json
-msgid "Repair/mend a gun"
+msgid "Clean/mend a gun"
 msgstr ""
 
 #: data/json/item_actions.json
@@ -10527,8 +10590,6 @@ msgstr "オンにする"
 #. 'str_pl': 'pairs of infrared goggles (on)'}.
 #. ~ Use action menu_text for {'str': 'survivor divemask (on)', 'str_pl':
 #. 'survivor divemasks (on)'}.
-#. ~ Use action menu_text for {'str': 'XL survivor divemask (on)', 'str_pl':
-#. 'XL survivor divemasks (on)'}.
 #. ~ Use action menu_text for {'str': 'thermal electric outfit (on)',
 #. 'str_pl': 'thermal electric outfits (on)'}.
 #. ~ Use action menu_text for {'str_sp': "shooter's earmuffs"}.
@@ -27498,15 +27559,22 @@ msgstr[0] "クロスボウの罠"
 msgid "Clank!"
 msgstr "ガチャンッ！"
 
+#: data/json/traps.json
+msgid "double-barrel shotgun trap"
+msgstr ""
+
+#. ~ Trap-vehicle collision message for trap 'double-barrel shotgun trap'
+#. ~ Trap-vehicle collision message for trap 'shotgun trap'
+#. ~ Trap-vehicle collision message for trap 'half-empty shotgun trap'
+#: data/json/traps.json data/json/obsoletion/uncategorized.json src/iuse.cpp
+#: src/ranged.cpp
+msgid "Bang!"
+msgstr "バァン！"
+
 #: data/json/traps.json data/json/items/tool/traps.json
 msgid "shotgun trap"
 msgid_plural "shotgun traps"
 msgstr[0] "ショットガンの罠"
-
-#. ~ Trap-vehicle collision message for trap 'shotgun trap'
-#: data/json/traps.json src/iuse.cpp src/ranged.cpp
-msgid "Bang!"
-msgstr "バァン！"
 
 #: data/json/traps.json
 msgid "spinning blade engine"
@@ -33428,6 +33496,7 @@ msgid ""
 msgstr "金属製の手すりです。道路外への落下や侵入を防ぐために設置されています。"
 
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 #: data/json/mapgen_palettes/acidia_commercial_destroyed_palette.json
 msgid "concrete floor"
 msgstr "床(ｺﾝｸﾘｰﾄ)"
@@ -34145,6 +34214,11 @@ msgstr ""
 msgid ""
 "Thick metal covering of a hull, covered with a military grade epoxy mix, and"
 " painted in white color."
+msgstr ""
+
+#. ~ Description for concrete floor
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+msgid "A bare and cold concrete floor with a streak of yellow paint."
 msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-flora.json
@@ -38195,40 +38269,40 @@ msgid "A ladder leading down."
 msgstr "下方に伸びた梯子です。"
 
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
-msgid "road ramp down (high end)"
-msgstr "下り坂上端"
+msgid "ramp down (high end)"
+msgstr ""
 
-#. ~ Description for road ramp down (high end)
+#. ~ Description for ramp down (high end)
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
-msgid "The upper end of an asphalt ramp leading down."
-msgstr "下層に繋がるアスファルトの坂の上端です。"
-
-#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
-msgid "road ramp down (low end)"
-msgstr "下り坂下端"
-
-#. ~ Description for road ramp down (low end)
-#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
-msgid "The lower end of an asphalt ramp leading down."
-msgstr "下層に繋がるアスファルトの坂の下端です。"
+msgid "The upper end of a ramp leading down."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
-msgid "road ramp up (high end)"
-msgstr "上り坂上端"
+msgid "ramp down (low end)"
+msgstr ""
 
-#. ~ Description for road ramp up (high end)
+#. ~ Description for ramp down (low end)
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
-msgid "The upper end of an asphalt ramp leading up."
-msgstr "上層に繋がるアスファルトの坂の上端です。"
+msgid "The lower end of a ramp leading down."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
-msgid "road ramp up (low end)"
-msgstr "上り坂下端"
+msgid "ramp up (high end)"
+msgstr ""
 
-#. ~ Description for road ramp up (low end)
+#. ~ Description for ramp up (high end)
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
-msgid "The lower end of an asphalt ramp leading up."
-msgstr "上層に繋がるアスファルトの坂の下端です。"
+msgid "The upper end of a ramp leading up."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "ramp up (low end)"
+msgstr ""
+
+#. ~ Description for ramp up (low end)
+#: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
+msgid "The lower end of a ramp leading up."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 msgid "sidewalk ramp down (high end)"
@@ -38942,8 +39016,10 @@ msgstr[0] "チェーンリンク"
 
 #. ~ Description for {'str': 'chain link'}
 #: data/json/items/ammo.json
-msgid "Small metal rings, suitable for constructing chainmail."
-msgstr "チェーンメイルを製作するのに適した、小さな金属製の鎖です。"
+msgid ""
+"Small metal rings and wires for hand-made rivets, suitable for constructing "
+"chainmail."
+msgstr ""
 
 #: data/json/items/ammo.json
 msgid "nitrox"
@@ -44732,6 +44808,25 @@ msgid ""
 msgstr "金魚鉢には「エドへ」という宛名と「ホス」という魚の名前が書かれたタグ、そして魚が入っています。魚には小さな枝角が付いているように見えます。"
 
 #: data/json/items/generic.json
+msgid "rag"
+msgid_plural "rags"
+msgstr[0] "布"
+
+#. ~ Description for {'str': 'rag'}
+#: data/json/items/generic.json
+msgid ""
+"This is a largish piece of cloth, useful in crafting and possibly for "
+"staunching bleeding.  It's a bug if you see this."
+msgstr ""
+
+#. ~ Description for {'str': 'rag'}
+#: data/json/items/generic.json
+msgid ""
+"This is a largish piece of cloth, useful in crafting and possibly for "
+"staunching bleeding."
+msgstr "大きめの布の切れ端です。アイテム製作に使え、止血も可能です。"
+
+#: data/json/items/generic.json
 msgid "blood soaked rag"
 msgid_plural "blood soaked rags"
 msgstr[0] "血染めの布"
@@ -47087,7 +47182,6 @@ msgstr[0] "電熱靴下"
 #. ~ Use action msg for {'str': 'pair of infrared goggles', 'str_pl': 'pairs
 #. of infrared goggles'}.
 #. ~ Use action msg for {'str': 'survivor divemask'}.
-#. ~ Use action msg for {'str': 'XL survivor divemask'}.
 #. ~ Use action msg for {'str': 'thermal electric outfit'}.
 #. ~ Use action msg for {'str': 'cryopod bodyglove'}.
 #: data/json/items/tool_armor.json data/mods/Aftershock/items/tool_armor.json
@@ -47145,8 +47239,6 @@ msgstr[0] "電熱靴下(オン)"
 #. 'pairs of infrared goggles (on)'}.
 #. ~ Use action msg for {'str': 'survivor divemask (on)', 'str_pl': 'survivor
 #. divemasks (on)'}.
-#. ~ Use action msg for {'str': 'XL survivor divemask (on)', 'str_pl': 'XL
-#. survivor divemasks (on)'}.
 #. ~ Use action msg for {'str': 'thermal electric outfit (on)', 'str_pl':
 #. 'thermal electric outfits (on)'}.
 #. ~ Use action msg for {'str': 'cryopod bodyglove (on)', 'str_pl': 'cryopod
@@ -47530,7 +47622,6 @@ msgstr[0] "リブリーザーマスク"
 #. ~ Use action need_charges_msg for {'str': 'rebreather mask'}.
 #. ~ Use action need_charges_msg for {'str': 'XL rebreather mask'}.
 #. ~ Use action need_charges_msg for {'str': 'survivor divemask'}.
-#. ~ Use action need_charges_msg for {'str': 'XL survivor divemask'}.
 #: data/json/items/tool_armor.json
 msgid "The %s's filter is used up."
 msgstr "%sのフィルターを使い切りました。"
@@ -47644,20 +47735,6 @@ msgid ""
 msgstr "特製のノーメックス製ガスマスクです。顔と目を覆い、熱や煙、催涙ガスなどから強固に保護します。使用するとフィルターが機能します。"
 
 #: data/json/items/tool_armor.json
-msgid "XL survivor firemask"
-msgid_plural "XL survivor firemasks"
-msgstr[0] "XLサバイバー防火マスク"
-
-#. ~ Description for {'str': 'XL survivor firemask'}
-#: data/json/items/tool_armor.json
-msgid ""
-"A custom-built, Nomex-insulated gas mask that covers the face and eyes "
-"regardless of your state of mutation.  It provides excellent protection from"
-" heat, smoke, teargas, and shrapnel.  It must be prepared before use."
-msgstr ""
-"特製のノーメックス製ガスマスクです。変異した顔と目もしっかりと覆い、煙や催涙ガス、他の汚染物質などから強固に保護します。使用するとフィルターが機能します。"
-
-#: data/json/items/tool_armor.json
 msgid "firefighter PBA mask"
 msgid_plural "firefighter PBA masks"
 msgstr[0] "消防士用PBAマスク"
@@ -47724,20 +47801,6 @@ msgid ""
 msgstr "革で強化した特製のガスマスクです。顔と目を覆い、催涙ガス、榴散弾などを強固に防ぎます。使用するとフィルターが機能します。"
 
 #: data/json/items/tool_armor.json
-msgid "XL survivor mask"
-msgid_plural "XL survivor masks"
-msgstr[0] "XLサバイバーマスク"
-
-#. ~ Description for {'str': 'XL survivor mask'}
-#: data/json/items/tool_armor.json
-msgid ""
-"A custom-built, reinforced gas mask that covers the face and eyes regardless"
-" of your state of mutation.  Provides excellent protection from smoke, "
-"teargas, and shrapnel.  It must be prepared before use."
-msgstr ""
-"特製のノーメックス製ガスマスクです。変異した顔と目もしっかりと覆い、煙や催涙ガス、他の汚染物質などから強固に保護します。使用するとフィルターが機能します。"
-
-#: data/json/items/tool_armor.json
 msgid "winter survivor mask"
 msgid_plural "winter survivor masks"
 msgstr[0] "サバイバー防寒マスク"
@@ -47750,21 +47813,6 @@ msgid ""
 "shrapnel.  It must be prepared before use."
 msgstr ""
 "毛皮をあしらった特製のガスマスクです。顔と目を覆い、とても暖かく、煙、破片、催涙ガスなどから強固に保護します。使用するとフィルターが機能します。"
-
-#: data/json/items/tool_armor.json
-msgid "XL winter survivor mask"
-msgid_plural "XL winter survivor masks"
-msgstr[0] "XLサバイバー防寒マスク"
-
-#. ~ Description for {'str': 'XL winter survivor mask'}
-#: data/json/items/tool_armor.json
-msgid ""
-"A custom-built, fur-trimmed gas mask that covers the face and eyes "
-"regardless of your state of mutation.  Quite warm, it still provides "
-"excellent protection from smoke, teargas, and shrapnel.  It must be prepared"
-" before use."
-msgstr ""
-"毛皮をあしらった、変異状態でも着用できる特製ガスマスクです。顔と目を覆い、とても暖かく、煙、破片、催涙ガスなどから強固に保護します。使用するとフィルターが機能します。"
 
 #: data/json/items/tool_armor.json
 msgid "pair of light amp goggles"
@@ -47850,7 +47898,6 @@ msgid_plural "survivor divemasks"
 msgstr[0] "サバイバーダイビングマスク"
 
 #. ~ Description for {'str': 'survivor divemask'}
-#. ~ Description for {'str': 'XL survivor divemask'}
 #: data/json/items/tool_armor.json
 msgid ""
 "A custom-built, armored rebreather mask that covers the face and eyes.  It "
@@ -47873,27 +47920,6 @@ msgid ""
 "Use it to turn it off."
 msgstr ""
 "特製の装甲強化型リブリーザーマスクです。顔全体を危害から強固に防護し、水中での呼吸を可能とします。フィルターを消費し続けています。使用するとフィルターを無効化します。"
-
-#: data/json/items/tool_armor.json
-msgid "XL survivor divemask"
-msgid_plural "XL survivor divemasks"
-msgstr[0] "XLサバイバーダイビングマスク"
-
-#: data/json/items/tool_armor.json
-msgid "XL survivor divemask (on)"
-msgid_plural "XL survivor divemasks (on)"
-msgstr[0] "XLサバイバーダイビングマスク(オン)"
-
-#. ~ Description for {'str': 'XL survivor divemask (on)', 'str_pl': 'XL
-#. survivor divemasks (on)'}
-#: data/json/items/tool_armor.json
-msgid ""
-"A custom-built, armored rebreather mask that covers the face and eyes "
-"regardless of your state of mutation.  It provides excellent protection from"
-" harm as well providing breathing gas while underwater.  It is turned on, "
-"and continually consuming its filter.  Use it to turn it off."
-msgstr ""
-"特製の装甲強化型リブリーザーマスクです。顔全体を危害から強固に防護し、水中での呼吸を可能とします。変異した体の一部を納められるよう大きめに造られています。フィルターを消費し続けています。使用するとフィルターを無効化します。"
 
 #: data/json/items/tool_armor.json
 msgid "folded poncho"
@@ -51019,8 +51045,6 @@ msgstr[0] ""
 #. 'MBR vests (hard plates)'}.
 #. ~ Use action holster_msg for {'str': 'MBR vest (steel plating)', 'str_pl':
 #. 'MBR vests (steel plating)'}.
-#. ~ Use action holster_msg for {'str': 'MBR vest (superalloy)', 'str_pl':
-#. 'MBR vests (superalloy)'}.
 #. ~ Use action holster_msg for {'str': 'tac vest'}.
 #. ~ Use action holster_msg for {'str': 'XL Kevlar vest'}.
 #. ~ Use action holster_msg for {'str': 'hand grenade pouch', 'str_pl': 'hand
@@ -51054,8 +51078,6 @@ msgstr "%sを収納しました。"
 #. 'MBR vests (hard plates)'}.
 #. ~ Use action holster_prompt for {'str': 'MBR vest (steel plating)',
 #. 'str_pl': 'MBR vests (steel plating)'}.
-#. ~ Use action holster_prompt for {'str': 'MBR vest (superalloy)', 'str_pl':
-#. 'MBR vests (superalloy)'}.
 #. ~ Use action holster_prompt for {'str': 'tac vest'}.
 #. ~ Use action holster_prompt for {'str': 'XL Kevlar vest'}.
 #. ~ Use action holster_prompt for {'str': 'power armor magazine carrier'}.
@@ -51387,6 +51409,20 @@ msgid ""
 "vambraces, with leather straps to secure each piece and connect it as part "
 "of a set."
 msgstr "中世時代の腕を防護する装備です。上腕用の板金鎧、肘当て、鎧袖の各部品が革紐で繋がっています。"
+
+#: data/json/items/armor/arms_armor.json
+msgid "pair of superalloy arm guards"
+msgid_plural "pairs of superalloy arm guards"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'pair of superalloy arm guards', 'str_pl': 'pairs
+#. of superalloy arm guards'}
+#: data/json/items/armor/arms_armor.json
+msgid ""
+"A full assembly of medieval arm protection, made from cutting-edge "
+"superalloy.  Rerebraces, couters, and vambraces, with leather straps to "
+"secure each piece and connect it as part of a set."
+msgstr ""
 
 #: data/json/items/armor/arms_armor.json
 msgid "pair of metal arm guards"
@@ -52065,6 +52101,17 @@ msgid "An extremely heavy set of armor plated boots."
 msgstr "非常に重いプレートアーマーブーツです。"
 
 #: data/json/items/armor/boots.json
+msgid "pair of superalloy armored boots"
+msgid_plural "pairs of superalloy armored boots"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'pair of superalloy armored boots', 'str_pl':
+#. 'pairs of superalloy armored boots'}
+#: data/json/items/armor/boots.json
+msgid "A set of armor plated boots, made with lightweight superalloy."
+msgstr ""
+
+#: data/json/items/armor/boots.json
 msgid "pair of rubber boots"
 msgid_plural "pairs of rubber boots"
 msgstr[0] "ゴム長靴"
@@ -52149,20 +52196,6 @@ msgid ""
 "A pair of customized, Kevlar armored fur boots, modified to provide maximum "
 "protection from harm and the elements, even when knee-deep in the dead."
 msgstr "ケブラーで補強した毛皮製の特製ブーツです。死に直面するような場面でも外的要因と怪我から最大限に身を守れるように改良してあります。"
-
-#: data/json/items/armor/boots.json
-msgid "pair of XL survivor boots"
-msgid_plural "pairs of XL survivor boots"
-msgstr[0] "XLサバイバーブーツ"
-
-#. ~ Description for {'str': 'pair of XL survivor boots', 'str_pl': 'pairs of
-#. XL survivor boots'}
-#: data/json/items/armor/boots.json
-msgid ""
-"A massive pair of customized leather boots, armored with Kevlar and modified"
-" to provide maximum protection from harm and the elements, even when knee-"
-"deep in the dead."
-msgstr "ケブラーで補強した革製の大きな特製ブーツです。死に直面するような場面でも外的要因と怪我から最大限身を守れるように改良してあります。"
 
 #: data/json/items/armor/boots.json
 msgid "pair of cleats"
@@ -54057,6 +54090,18 @@ msgid "An extremely heavy set of armor-plated leather gloves."
 msgstr "装甲で補強した非常に重い革製グローブです。"
 
 #: data/json/items/armor/gloves.json
+msgid "pair of superalloy armored gauntlets"
+msgid_plural "pairs of superalloy armored gauntlets"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'pair of superalloy armored gauntlets', 'str_pl':
+#. 'pairs of superalloy armored gauntlets'}
+#: data/json/items/armor/gloves.json
+msgid ""
+"An set of armor-plated leather gloves, made with lightweight superalloy."
+msgstr ""
+
+#: data/json/items/armor/gloves.json
 msgid "pair of rubber gloves"
 msgid_plural "pairs of rubber gloves"
 msgstr[0] "ゴム手袋"
@@ -54223,19 +54268,6 @@ msgid ""
 "A pair of customized, Kevlar armored fur gloves, modified to be easy to wear"
 " while providing maximum protection under extreme conditions."
 msgstr "ケブラーで補強した毛皮製の特製グローブです。極限状況で身体を最大限保護するよう作られており、着心地も良好です。"
-
-#: data/json/items/armor/gloves.json
-msgid "pair of XL survivor gloves"
-msgid_plural "pairs of XL survivor gloves"
-msgstr[0] "XLサバイバーグローブ"
-
-#. ~ Description for {'str': 'pair of XL survivor gloves', 'str_pl': 'pairs of
-#. XL survivor gloves'}
-#: data/json/items/armor/gloves.json
-msgid ""
-"A massive pair of customized, Kevlar armored leather gloves, modified to be "
-"easy to wear while providing maximum protection under extreme conditions."
-msgstr "革をケブラーで補強した、サイズの大きな特製グローブです。極限状況で身体を最大限保護するよう作られており、着心地も良好です。"
 
 #: data/json/items/armor/gloves.json
 msgid "pair of extra long white gloves"
@@ -54781,6 +54813,18 @@ msgid ""
 msgstr "中世のヘルメットです。顔の部分がＹ字型に開いています。"
 
 #: data/json/items/armor/helmets.json
+msgid "superalloy barbute helm"
+msgid_plural "superalloy barbute helms"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'superalloy barbute helm'}
+#: data/json/items/armor/helmets.json
+msgid ""
+"A medieval helmet remade in modern superalloy.  Provides excellent "
+"protection for the head, with a Y shaped opening for the face."
+msgstr ""
+
+#: data/json/items/armor/helmets.json
 msgid "bike helmet"
 msgid_plural "bike helmets"
 msgstr[0] "自転車ヘルメット"
@@ -54977,6 +55021,19 @@ msgid ""
 msgstr "中世時代の兜です。重量があり、頭に大きな負担が掛かりますが、頭部全体に優れた防御力を発揮します。"
 
 #: data/json/items/armor/helmets.json
+msgid "superalloy great helm"
+msgid_plural "superalloy great helmets"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'superalloy great helm', 'str_pl': 'superalloy
+#. great helmets'}
+#: data/json/items/armor/helmets.json
+msgid ""
+"A medieval helmet remade in modern superalloy.  Provides excellent "
+"protection to the entire head, at the cost of encumbrance."
+msgstr ""
+
+#: data/json/items/armor/helmets.json
 msgid "scavenger cowl"
 msgid_plural "scavenger cowls"
 msgstr[0] "スカベンジャーカウル"
@@ -55023,18 +55080,6 @@ msgid ""
 "A customized, heavily armored Kevlar helmet, modified with leather "
 "reinforcements to provide maximum comfort and protection from harm."
 msgstr "ケブラーを革で補強した特製ヘルメットです。着心地が良く、危険から身を守ります。"
-
-#: data/json/items/armor/helmets.json
-msgid "XL survivor helmet"
-msgid_plural "XL survivor helmets"
-msgstr[0] "サバイバーヘルメット(XL)"
-
-#. ~ Description for {'str': 'XL survivor helmet'}
-#: data/json/items/armor/helmets.json
-msgid ""
-"A massive customized, heavily armored Kevlar helmet, modified with leather "
-"reinforcements to provide maximum comfort and protection from harm."
-msgstr "ケブラーを革で補強した、サイズの大きな特製ヘルメットです。着心地が良く、危険から身を守ります。"
 
 #: data/json/items/armor/helmets.json
 msgid "heavy survivor helmet"
@@ -55187,6 +55232,18 @@ msgid ""
 msgstr ""
 
 #: data/json/items/armor/holster.json
+msgid "shoulder holster"
+msgid_plural "shoulder holsters"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'shoulder holster'}
+#: data/json/items/armor/holster.json
+msgid ""
+"A shoulder holster designed to be worn under a jacket or coat that allows a "
+"gun to hang comfortably beneath the arm.  Activate to holster/draw a gun."
+msgstr ""
+
+#: data/json/items/armor/holster.json
 msgid "survivor harness"
 msgid_plural "survivor harnesses"
 msgstr[0] "サバイバーハーネス"
@@ -55291,18 +55348,6 @@ msgstr[0] "サバイバー防寒フード"
 #: data/json/items/armor/hoods.json
 msgid "A customized armored fur and Kevlar hood, very warm and durable."
 msgstr "毛皮とケブラーで作られた装甲型の特製フードです。とても暖かく頑丈です。"
-
-#: data/json/items/armor/hoods.json
-msgid "XL survivor hood"
-msgid_plural "XL survivor hoods"
-msgstr[0] "XLサバイバーフード"
-
-#. ~ Description for {'str': 'XL survivor hood'}
-#: data/json/items/armor/hoods.json
-msgid ""
-"A massive customized, heavily armored leather and Kevlar hood, designed to "
-"provide comfort and protection from harm."
-msgstr "革とケブラーで作られた、サイズの大きな特製の重装甲フードです。着心地が良く、危険から身を守ります。"
 
 #: data/json/items/armor/hoods.json
 msgid "flame-resistant hood"
@@ -59242,6 +59287,20 @@ msgid ""
 msgstr "脚を防護する中世時代の装備です。もも当て、膝当て、脛当ての各部品が革紐で繋がっています。"
 
 #: data/json/items/armor/legs_armor.json
+msgid "pair of superalloy leg guards"
+msgid_plural "pairs of superalloy leg guards"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'pair of superalloy leg guards', 'str_pl': 'pairs
+#. of superalloy leg guards'}
+#: data/json/items/armor/legs_armor.json
+msgid ""
+"A full assembly of medieval leg protection, made from cutting-edge "
+"superalloy.  Cuisses, poleyns, and greaves, with leather straps to secure "
+"each piece and connect it as part of a set."
+msgstr ""
+
+#: data/json/items/armor/legs_armor.json
 msgid "pair of iron greaves"
 msgid_plural "pairs of iron greaves"
 msgstr[0] "アイアングリーヴ"
@@ -59683,10 +59742,7 @@ msgid_plural "pairs of work pants"
 msgstr[0] "作業用パンツ"
 
 #. ~ Description for {'str': 'work pants', 'str_pl': 'pairs of work pants'}
-#. ~ Description for {'str': 'XL work pants', 'str_pl': 'pairs of XL work
-#. pants'}
 #: data/json/items/armor/legs_clothes.json
-#: data/mods/Aftershock/items/armor.json
 msgid "A pair of gray work pants."
 msgstr "灰色の作業用パンツです。"
 
@@ -60993,6 +61049,19 @@ msgid ""
 msgstr ""
 
 #: data/json/items/armor/shields.json
+msgid "welded superalloy shield"
+msgid_plural "welded superalloy shields"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'welded superalloy shield'}
+#: data/json/items/armor/shields.json
+msgid ""
+"A shield made out of superalloy armor plating with handles welded on.  It's "
+"heavier and less well-made compared to a proper medieval shield, but it "
+"certainly works."
+msgstr ""
+
+#: data/json/items/armor/shields.json
 msgid "buckler"
 msgid_plural "bucklers"
 msgstr[0] "バックラー"
@@ -61003,6 +61072,19 @@ msgid ""
 "A small metal shield historically used for dueling rather than protection "
 "from arrows.  It's small and light enough to not hinder the use of your "
 "hands."
+msgstr ""
+
+#: data/json/items/armor/shields.json
+msgid "superalloy buckler"
+msgid_plural "superalloy bucklers"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'superalloy buckler'}
+#: data/json/items/armor/shields.json
+msgid ""
+"A small metal shield historically used for dueling rather than protection "
+"from arrows.  This one is made of modern superalloy instead of steel.  It's "
+"small and light enough to not hinder the use of your hands."
 msgstr ""
 
 #: data/json/items/armor/shields.json
@@ -61599,19 +61681,6 @@ msgid ""
 msgstr "囚人が着ているような、半袖の薄いジャンプスーツです。着用してもそれほど動きを妨げず、収納力も十分です。"
 
 #: data/json/items/armor/suits_clothes.json
-msgid "XL jumpsuit"
-msgid_plural "XL jumpsuits"
-msgstr[0] "XLジャンプスーツ"
-
-#. ~ Description for {'str': 'XL jumpsuit'}
-#: data/json/items/armor/suits_clothes.json
-msgid ""
-"A thin, short-sleeved jumpsuit updated for the trans-human who needs full-"
-"body clothing.  Provides some storage and is adjustable to minimize "
-"encumbrance."
-msgstr "人間を超えた者のために調整された薄手の半袖ジャンプスーツです。最小限の阻害性である程度の収納箇所を備えています。"
-
-#: data/json/items/armor/suits_clothes.json
 msgid "Hub 01 jumpsuit"
 msgid_plural "Hub 01 jumpsuits"
 msgstr[0] "ハブ01ジャンプスーツ"
@@ -61781,6 +61850,16 @@ msgid "A suit of Gothic plate armor."
 msgstr "ゴシック様式のプレートアーマーです。"
 
 #: data/json/items/armor/suits_protection.json
+msgid "superalloy plate armor"
+msgid_plural "superalloy plate armors"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'superalloy plate armor'}
+#: data/json/items/armor/suits_protection.json
+msgid "A suit of Gothic plate armor, remade using modern superalloy."
+msgstr ""
+
+#: data/json/items/armor/suits_protection.json
 msgid "nomad gear"
 msgid_plural "nomad gears"
 msgstr[0] "放浪者の服"
@@ -61827,6 +61906,16 @@ msgstr[0] "観賞用プレートアーマー"
 #: data/json/items/armor/suits_protection.json
 msgid "An extremely heavy suit of ornamental armor."
 msgstr "非常に重い観賞用の鎧です。"
+
+#: data/json/items/armor/suits_protection.json
+msgid "ornamental superalloy plate armor"
+msgid_plural "ornamental superalloy plate armors"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'ornamental superalloy plate armor'}
+#: data/json/items/armor/suits_protection.json
+msgid "A heavy suit of ornamental armor, remade using modern superalloy."
+msgstr ""
 
 #: data/json/items/armor/suits_protection.json
 msgid "riot armor"
@@ -62151,48 +62240,6 @@ msgid ""
 msgstr ""
 "補強した防弾ベストと断熱加工した革製ジャンプスーツから作られた、手製の冬用重量型コンビネーションアーマーです。風雨だけでなく、攻撃からも肉体を保護します。"
 
-#: data/json/items/armor/suits_protection.json
-msgid "XL survivor suit"
-msgid_plural "XL survivor suits"
-msgstr[0] "XLサバイバースーツ"
-
-#. ~ Description for {'str': 'XL survivor suit'}
-#: data/json/items/armor/suits_protection.json
-msgid ""
-"A massive hand-built combination armor made from a bulletproof vest and a "
-"reinforced leather jumpsuit.  Protects from the elements as well as from "
-"harm."
-msgstr ""
-"防弾ベストと補強した革製ジャンプスーツから作られた、サイズの大きな手製のコンビネーションアーマーです。風雨だけでなく、攻撃からも肉体を保護します。"
-
-#: data/json/items/armor/suits_protection.json
-msgid "XL heavy survivor suit"
-msgid_plural "XL heavy survivor suits"
-msgstr[0] "XLヘビーサバイバースーツ"
-
-#. ~ Description for {'str': 'XL heavy survivor suit'}
-#: data/json/items/armor/suits_protection.json
-msgid ""
-"A massive, heavy, hand-built combination armor made from a reinforced "
-"bulletproof vest and a metal-plated leather jumpsuit.  Protects from the "
-"elements as well as from harm."
-msgstr ""
-"補強した防弾ベストと金属板で強化した革製ジャンプスーツから作られた、サイズの大きな手製の重量型コンビネーションアーマーです。天候や攻撃から身体を守ります。"
-
-#: data/json/items/armor/suits_protection.json
-msgid "XL superalloy survivor suit"
-msgid_plural "XL superalloy survivor suits"
-msgstr[0] ""
-
-#. ~ Description for {'str': 'XL superalloy survivor suit'}
-#: data/json/items/armor/suits_protection.json
-msgid ""
-"A massive, heavy, hand-built combination armor made from a reinforced "
-"bulletproof vest and a superalloy-plated leather jumpsuit.  Lighter and "
-"easier to move in than an equivalent suit made with steel.  Protects from "
-"the elements as well as from harm."
-msgstr ""
-
 #: data/json/items/armor/swimming.json
 msgid "pair of swimming trunks"
 msgid_plural "pairs of swimming trunks"
@@ -62405,6 +62452,19 @@ msgid ""
 "A steel breastplate, and a vital part of plate armor.  Even as full armor "
 "went into decline, cuirasses remained in use among cavalry in Europe."
 msgstr "プレートアーマーの重要なパーツである、鋼鉄製の胸当てです。鎧装備が衰退した後も、胸当ては騎兵用装備としてヨーロッパで使われ続けました。"
+
+#: data/json/items/armor/torso_armor.json
+msgid "superalloy cuirass"
+msgid_plural "superalloy cuirasses"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'superalloy cuirass', 'str_pl': 'superalloy
+#. cuirasses'}
+#: data/json/items/armor/torso_armor.json
+msgid ""
+"A superalloy breastplate, and a vital part of plate armor.  Even as full "
+"armor went into decline, cuirasses remained in use among cavalry in Europe."
+msgstr ""
 
 #: data/json/items/armor/torso_armor.json
 msgid "scrap cuirass"
@@ -63255,17 +63315,6 @@ msgid ""
 "Snug fur sleeves to keep your legs warm.  Simple yet effective since "
 "prehistoric times."
 msgstr "足を暖める、着心地の良い毛皮のスリーブです。原始時代から存在する、効果的な衣類です。"
-
-#: data/json/items/armor/undergarment.json
-msgid "pair of XL leg warmers"
-msgid_plural "pairs of XL leg warmers"
-msgstr[0] "XLレッグウォーマー"
-
-#. ~ Description for {'str': 'pair of XL leg warmers', 'str_pl': 'pairs of XL
-#. leg warmers'}
-#: data/json/items/armor/undergarment.json
-msgid "Large, soft, snug cloth sleeves to keep your exotic anatomy warm."
-msgstr "心地良く柔らかい大きな布のスリーブが、人外の部位の体温を維持してくれます。"
 
 #: data/json/items/armor/undergarment.json
 msgid "long underwear bottom"
@@ -79368,8 +79417,8 @@ msgstr[0] "種(ガマ)"
 
 #. ~ Description for {'str_sp': 'cattail seeds'}
 #: data/json/items/comestibles/seed.json
-msgid "Some cattail seeds."
-msgstr "ガマの種です。"
+msgid "Some cattail seeds.  Must be planted in shallow water."
+msgstr ""
 
 #: data/json/items/comestibles/seed.json
 msgid "cattail"
@@ -100794,10 +100843,10 @@ msgstr[0] "仕立て屋キット"
 #: data/json/items/tool/tailoring.json
 msgid ""
 "This is a high quality kit consisting of a variety of needles, some plastic "
-"spools for thread, some small scissors, and an awl.  Use a tailor's kit to "
-"customize your clothing and armor.  This uses your tailoring skill."
+"spools for thread, some small scissors, and an awl.  Using your tailoring "
+"skill, this kit can customize your clothing and armor, whether up-armoring "
+"them or altering some items to fit large mutant wearers."
 msgstr ""
-"数本の針、プラスチックの糸巻き、小さなハサミ、千枚通しが入った高品質の裁縫セットです。裁縫スキルのレベル次第で、この道具を使って服や防具の仕立て直しや改造が可能になります。"
 
 #: data/json/items/tool/toiletries.json
 msgid "bathroom scale"
@@ -100843,18 +100892,6 @@ msgid ""
 "This is an unwieldy mop.  Good for cleaning up spills.  Use to mop up any "
 "'mess' you may have made."
 msgstr "大き過ぎて扱いにくいモップです。液体の掃除に使えます。まき散らした「ゴミ」を拭き取るのに使いましょう。"
-
-#: data/json/items/tool/toiletries.json
-msgid "rag"
-msgid_plural "rags"
-msgstr[0] "布"
-
-#. ~ Description for {'str': 'rag'}
-#: data/json/items/tool/toiletries.json
-msgid ""
-"This is a largish piece of cloth, useful in crafting and possibly for "
-"staunching bleeding."
-msgstr "大きめの布の切れ端です。アイテム製作に使え、止血も可能です。"
 
 #: data/json/items/tool/toiletries.json
 msgid "razor blade"
@@ -101093,19 +101130,31 @@ msgid ""
 "This is a military anti-personnel mine that is triggered when stepped upon."
 msgstr "上に乗ると作動する、軍用の対人地雷です。"
 
+#: data/json/items/tool/traps.json
+msgid "double-barreled shotgun trap"
+msgid_plural "double-barreled shotgun traps"
+msgstr[0] ""
+
+#. ~ Use action done_message for {'str': 'double-barreled shotgun trap'}.
 #. ~ Use action done_message for {'str': 'shotgun trap'}.
 #: data/json/items/tool/traps.json
 msgid "You set the shotgun trap."
 msgstr "ショットガンの罠を設置しました。"
 
-#. ~ Description for {'str': 'shotgun trap'}
+#. ~ Description for {'str': 'double-barreled shotgun trap'}
 #: data/json/items/tool/traps.json
 msgid ""
 "This is a simple tripwire is attached to the trigger of a loaded double-"
-"barreled shotgun.  When pulled, the shotgun fires.  Two shells are loaded; "
-"the first time the trigger is pulled, one or both shells may be discharged."
+"barreled shotgun.  When pulled, the shotgun fires, discharging both barrels "
+"into the target."
 msgstr ""
-"装填済みの2連ショットガンの引き金に仕掛け線を括り付けた簡単な罠です。弾が2発装填されています。作動すれば1発ないし2発の弾丸が発射されます。"
+
+#. ~ Description for {'str': 'shotgun trap'}
+#: data/json/items/tool/traps.json
+msgid ""
+"This is a simple tripwire is attached to the trigger of a loaded single-"
+"barreled shotgun.  When pulled, the shotgun fires."
+msgstr ""
 
 #: data/json/items/tool/traps.json
 msgid "tripwire trap"
@@ -105727,6 +105776,11 @@ msgstr ""
 #. ~ Computer name
 #: data/json/mapgen/microlab/microlab_special_tiles.json
 msgid "Nanomaterial Storage Control"
+msgstr ""
+
+#. ~ Sign
+#: data/json/mapgen/military/mil_base/mil_base_z0.json
+msgid "Please do not touch or climb on display."
 msgstr ""
 
 #. ~ Computer name
@@ -149276,6 +149330,10 @@ msgstr "ライクラ"
 msgid "A machine with several taps that dispenses clean water."
 msgstr "飲料水を提供する、蛇口が付いた機械です。"
 
+#: data/json/obsoletion/uncategorized.json
+msgid "half-empty shotgun trap"
+msgstr ""
+
 #. ~ Description for quantum solar panel
 #: data/json/obsoletion/vehicle_parts.json
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -167884,6 +167942,10 @@ msgstr "車載/PPA-5プラズマガン"
 msgid "mounted A7 laser rifle"
 msgstr "車載/A7レーザー"
 
+#: data/json/vehicleparts/turret.json
+msgid "mounted shoddy laser rifle"
+msgstr ""
+
 #: data/json/vehicleparts/turret.json data/mods/No_Hope/vehicle_parts.json
 msgid "mounted Cerberus laser cannon"
 msgstr "車載/ケルベロスレーザー砲"
@@ -169523,6 +169585,10 @@ msgstr ""
 msgid "Gatling carriage"
 msgstr ""
 
+#: data/json/vehicles/military.json
+msgid "Jeep"
+msgstr ""
+
 #: data/json/vehicles/test.json
 msgid "Engine Test"
 msgstr "エンジンテスト"
@@ -169983,55 +170049,6 @@ msgstr ""
 "センチネルLXの肩に不自然な影のように掛かっていた、ベンタブラック塗料を塗った外套です。軽量で耐久性のあるグラフェン素材が織り込まれており、修復できません。"
 
 #: data/mods/Aftershock/items/armor.json
-msgid "XL jeans"
-msgid_plural "pairs of XL jeans"
-msgstr[0] "XLジーンズ"
-
-#. ~ Description for {'str': 'XL jeans', 'str_pl': 'pairs of XL jeans'}
-#: data/mods/Aftershock/items/armor.json
-msgid "A pair of XL blue jeans with two deep pockets."
-msgstr "2つの深いポケットが付いた青色の大きなジーンズです。"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "XL work pants"
-msgid_plural "pairs of XL work pants"
-msgstr[0] "XL作業用パンツ"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "A pair of XL blue work pants."
-msgstr "青色の大きな作業用パンツです。"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "A pair of XL gray work pants."
-msgstr "灰色の大きな作業用パンツです。"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "A pair of XL light-blue work pants."
-msgstr "水色の大きな作業用パンツです。"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "XL work t-shirt"
-msgid_plural "XL work t-shirts"
-msgstr[0] "XL作業用Tシャツ"
-
-#. ~ Description for {'str': 'XL work t-shirt'}
-#: data/mods/Aftershock/items/armor.json
-msgid "A gray XL work t-shirt with a small front pocket."
-msgstr "小さな前ポケットが付いた灰色の大きな作業用Tシャツです。"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "An XL blue work t-shirt with a small front pocket."
-msgstr "小さな前ポケットが付いた青色の大きな作業用Tシャツです。"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "An XL gray work t-shirt with a small front pocket."
-msgstr "小さな前ポケットが付いた灰色の大きな作業用Tシャツです。"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "An XL light-blue work t-shirt with a small front pocket."
-msgstr "小さな前ポケットが付いた水色の大きな作業用Tシャツです。"
-
-#: data/mods/Aftershock/items/armor.json
 msgid "Uplifted SWAT armor"
 msgid_plural "Uplifted SWAT armors"
 msgstr[0] "知性生物用SWATアーマー"
@@ -170068,28 +170085,6 @@ msgid "Oversized ballistic armor with ESAPI ceramic armor plates."
 msgstr "ESAPIセラミックアーマープレートを内蔵した特大サイズの防弾装備です。"
 
 #: data/mods/Aftershock/items/armor.json
-msgid "pair of XL combat boots"
-msgid_plural "pair of XL combat boots"
-msgstr[0] "XLコンバットブーツ"
-
-#. ~ Description for {'str_sp': 'pair of XL combat boots'}
-#: data/mods/Aftershock/items/armor.json
-msgid "Modern oversized reinforced tactical combat boots.  Very durable."
-msgstr "近代的な強化を施した、特大サイズの戦闘用コンバットブーツです。耐久性に優れています。"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "pair of XL tactical gloves"
-msgid_plural "pair of XL tactical gloves"
-msgstr[0] "XLタクティカルグローブ"
-
-#. ~ Description for {'str_sp': 'pair of XL tactical gloves'}
-#: data/mods/Aftershock/items/armor.json
-msgid ""
-"A pair of oversized reinforced Kevlar tactical gloves.  Commonly used by "
-"police and military units."
-msgstr "ケブラーで強化した特大サイズのタクティカルグローブです。一般的に警察や軍隊が使用しています。"
-
-#: data/mods/Aftershock/items/armor.json
 msgid "pair of Killophant gloves"
 msgid_plural "pair of Killophant gloves"
 msgstr[0] "殺人ゾウグローブ"
@@ -170104,30 +170099,6 @@ msgstr ""
 "補強が施されたケブラー製タクティカルグローブです。3本指の殺人ゾウが着用できる特別製で、通常のタクティカルグローブよりも既に作られています。"
 
 #: data/mods/Aftershock/items/armor.json
-msgid "XL leather belt"
-msgid_plural "XL leather belts"
-msgstr[0] "XLレザーベルト"
-
-#. ~ Description for {'str': 'XL leather belt'}
-#: data/mods/Aftershock/items/armor.json
-msgid ""
-"An XL leather belt.  Useful for making your pair of pants fit if you need "
-"really big pants."
-msgstr "革製の大きなベルトです。非常に大きなサイズのズボンをきちんと履く時に役立ちます。"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "XL police duty belt"
-msgid_plural "XL police duty belts"
-msgstr[0] "XL警官用ベルト"
-
-#. ~ Description for {'str': 'XL police duty belt'}
-#: data/mods/Aftershock/items/armor.json
-msgid ""
-"An XL black leather belt used by extremely large uplifted police officers.  "
-"It has several pouches and a holder for a baton."
-msgstr "大柄の警察官が着用する革製の黒い大きなベルトです。いくつかのポーチと警棒を収納するホルダーが付いています。"
-
-#: data/mods/Aftershock/items/armor.json
 msgid "XL tactical full helmet"
 msgid_plural "XL tactical full helmets"
 msgstr[0] "XLタクティカルフルヘルメット"
@@ -170138,19 +170109,6 @@ msgid ""
 "An all-encompassing massive black helmet that covers your entire face and "
 "neck, providing excellent protection from all sorts of damage."
 msgstr "フルフェイスの黒い大きなヘルメットです。顔全体と首を覆い、あらゆるダメージから身を守ります。"
-
-#: data/mods/Aftershock/items/armor.json
-msgid "XL leg ammo pouch"
-msgid_plural "XL leg ammo pouches"
-msgstr[0] "XL弾倉レッグポーチ"
-
-#. ~ Description for {'str': 'XL leg ammo pouch', 'str_pl': 'XL leg ammo
-#. pouches'}
-#: data/mods/Aftershock/items/armor.json
-msgid ""
-"An XL fabric ammo pouch that can be strapped to your leg and capable of "
-"holding two magazine close at hand."
-msgstr ""
 
 #: data/mods/Aftershock/items/armor.json
 msgid "HERC rig"
@@ -179284,7 +179242,9 @@ msgstr "追加 - 製作可能銃器パック"
 
 #. ~ Description for Craftable Gun Pack
 #: data/mods/Craft_Gunpowder/modinfo.json
-msgid "Adds more craftable firearms, and gunpowder."
+msgid ""
+"Adds more craftable firearms and gunmods.  Formerly focused on smokeless "
+"gunpowder, before the recipe for it was added to vanilla."
 msgstr ""
 
 #: data/mods/CrazyCataclysm/crazy_aperturepotato.json
@@ -206995,6 +206955,12 @@ msgid ""
 "center."
 msgstr "十分な部品があれば、トレーラーハウスを移動式の司令部に改造することも可能です。"
 
+#: data/raw/tips.json
+msgid ""
+"Having trouble finding pants that fit after hulking out?  Some outfits can "
+"be given that special touch with a tailor's kit."
+msgstr ""
+
 #: data/raw/keybindings/edit_creature_effects.json
 msgid "Add new effect"
 msgstr ""
@@ -213884,9 +213850,9 @@ msgstr "オートドクが身体を苦も無く切り裂く様子に興奮を覚
 
 #: src/bionics.cpp
 msgid ""
-"You stay very, very still, focusing intently on an interesting stain on the "
-"ceiling, as the Autodoc slices painlessly into you."
-msgstr "じっと、ひたすらじっと待ち、天井の特徴的な模様を見つめています。オートドクの器具は、少しの痛みも伴わずに、身体を切り開いています。"
+"You stay very, very still, intently staring off into space, as the Autodoc "
+"slices painlessly into you."
+msgstr ""
 
 #: src/bionics.cpp
 msgid ""
@@ -224650,6 +224616,11 @@ msgstr "射撃"
 msgid "Drop where?"
 msgstr "どこに落としますか？"
 
+#: src/game.cpp
+#, c-format
+msgid "%s (bionic detected)"
+msgstr ""
+
 #. ~ Name and number of items listed for cutting up
 #: src/game.cpp
 #, c-format
@@ -228172,6 +228143,10 @@ msgid "You saved your seeds for later."
 msgstr "種を取って置く事にしました。"
 
 #: src/iexamine.cpp
+msgid "This type of seed can not be planted in this location."
+msgstr ""
+
+#: src/iexamine.cpp
 msgid ""
 "We have altered this unit's configuration to extract and provide local "
 "nutriment.  The Mycus provides."
@@ -231131,8 +231106,8 @@ msgid "<bad>can not be downsized</bad>"
 msgstr "<bad>サイズダウン不可能</bad>"
 
 #: src/item.cpp
-msgid "<bad>can not be upsized</bad>"
-msgstr "<bad>サイズアップ不可能</bad>"
+msgid "<bad>can not be upsized</bad> without drastically altering it"
+msgstr ""
 
 #: src/item.cpp
 #, c-format
@@ -231808,6 +231783,10 @@ msgid " (bionic detected)"
 msgstr ""
 
 #: src/item.cpp
+msgid " (scanned)"
+msgstr ""
+
+#: src/item.cpp
 #, c-format
 msgid " (%s turns)"
 msgstr " (%sターン)"
@@ -231834,6 +231813,10 @@ msgstr ""
 
 #: src/item.cpp
 msgid " (cold)"
+msgstr ""
+
+#: src/item.cpp
+msgid " (XL)"
 msgstr ""
 
 #: src/item.cpp
@@ -237072,6 +237055,11 @@ msgstr "%1$s不可(糸(%2$d)の装填が必要)"
 #, c-format
 msgid "Can't %1$s (need %2$d %3$s)"
 msgstr "%1$s 不可(%3$s(%2$d)が必要)"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "Can't %s while wearing it"
+msgstr ""
 
 #. ~ %1$s: modification desc, %2$d: number of items needed, %3$s: items
 #. needed, %4$s: number of thread needed
@@ -254532,8 +254520,8 @@ msgstr "%sにひどく焼かれました！"
 
 #: src/trapfunc.cpp
 #, c-format
-msgid "Your %s is burned by the lava!"
-msgstr "%sは溶岩に焼かれました！"
+msgid "Your %1$s is burned by the %2$s!"
+msgstr ""
 
 #: src/trapfunc.cpp
 msgid "You fail to attach it…"
