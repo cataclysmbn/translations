@@ -6,14 +6,14 @@
 # Caixukun <osudyxxzgc@gmail.com>, 2023
 # 皮皮山上的咕咕⑨, 2023
 # 大侠 嘿咻, 2023
-# Coolthulhu <Coolthulhu@gmail.com>, 2023
 # 摸鱼哥, 2023
+# Coolthulhu <Coolthulhu@gmail.com>, 2024
 # Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-01-27 00:58+0000\n"
+"POT-Creation-Date: 2024-02-03 01:00+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -10406,8 +10406,37 @@ msgid ""
 msgstr "你笨手笨脚地将这一大块融合的腐烂肉块砍开，并小心观察是否有什么突出的特殊物品。"
 
 #: data/json/harvest.json
-msgid "You laboriously dissect the colossal insect."
-msgstr "你費力地解剖了龐大昆蟲。"
+msgid "<arachnid_harvest>"
+msgstr "<arachnid_harvest>"
+
+#: data/json/harvest.json
+msgid "<arachnid_flying_harvest>"
+msgstr "<arachnid_flying_harvest>"
+
+#: data/json/harvest.json
+msgid "<acidant_harvest>"
+msgstr "<acidant_harvest>"
+
+#: data/json/harvest.json
+msgid ""
+"What appeared to be insect hairs on the chitin of this creature look more "
+"like tiny feathers as you pare them back.  Inside is a bundle of bubble-like"
+" tissue sacs that appear to be floating, which doesn't fit with what you "
+"know about real bees."
+msgstr ""
+"在这种生物的甲壳素上，看似昆虫的毛发在你把它们拨开后看起来更像是细小的羽毛。 里面有一束气泡状的组织囊，似乎是漂浮着的，这与你对真实蜜蜂的了解不符。"
+
+#: data/json/harvest.json
+msgid ""
+"There's a faintly hairy, skin-like membrane, covered in blood vessels, "
+"beneath the chitin of this creature.  Inside it is a bundle of bubble-like "
+"tissue sacs that appear to be floating, which doesn't fit with what you know"
+" about real wasps."
+msgstr "在这种生物的甲壳素下面有一层淡淡的毛发状皮膜，上面布满了血管。 里面有一束气泡状的组织囊，似乎是漂浮着的，这与你对真实黄蜂的了解不符。"
+
+#: data/json/harvest.json
+msgid "<firefly_harvest>"
+msgstr "<firefly_harvest>"
 
 #: data/json/harvest.json
 msgid "You laboriously hack and dig through the remains of the fungal mass."
@@ -23027,6 +23056,16 @@ msgstr[0] "昆虫"
 #: data/json/species.json
 msgid "an insect"
 msgstr "昆蟲"
+
+#. ~ Description for a flying insect
+#: data/json/species.json
+msgid "a flying insect"
+msgid_plural "a flying insects"
+msgstr[0] "飞行昆虫"
+
+#: data/json/species.json
+msgid "BZZZZZZZZZZZZZZZZZ"
+msgstr "嗡嗡嗡嗡嗡嗡嗡嗡嗡"
 
 #: data/json/species.json
 msgid "spider"
@@ -43884,6 +43923,33 @@ msgstr[0] "甲殼塊"
 #: data/json/items/generic.json
 msgid "A piece of an insect's exoskeleton.  It is light and very durable."
 msgstr "一件昆蟲的外骨骼, 輕又耐用。"
+
+#: data/json/items/generic.json
+msgid "strand of endochitin"
+msgid_plural "strands of endochitin"
+msgstr[0] "内切酶"
+
+#. ~ Description for {'str': 'strand of endochitin', 'str_pl': 'strands of
+#. endochitin'}
+#: data/json/items/generic.json
+msgid "A piece of an insect's endoskeleton."
+msgstr "昆虫内骨骼的一部分。"
+
+#: data/json/items/generic.json
+msgid "cluster of gas sacs"
+msgid_plural "clusters of gas sacs"
+msgstr[0] "气囊团"
+
+#. ~ Description for {'str': 'cluster of gas sacs', 'str_pl': 'clusters of gas
+#. sacs'}
+#: data/json/items/generic.json
+msgid ""
+"This is a cluster of membranous bubbles, each about the size of a grape, "
+"retrieved from inside a mutant insect.  They float like tiny helium "
+"balloons, and are likely full of a lighter-than-air gas helping the bug to "
+"fly."
+msgstr ""
+"这是一簇从变异昆虫体内取出的膜状气泡，每个气泡约有葡萄大小。 它们像小氦气球一样漂浮在空中，很可能充满了一种比空气轻的气体，有助于虫子飞行。"
 
 #: data/json/items/generic.json
 msgid "set of 100 ceramic disk"
@@ -69908,12 +69974,8 @@ msgstr[0] "突變體肉塊"
 #. ~ Description for {'str': 'chunk of mutant meat', 'str_pl': 'chunks of
 #. mutant meat'}
 #: data/json/items/comestibles/carnivore.json
-msgid ""
-"Meat from a heavily mutated animal.  Tough, discolored, with a somewhat "
-"chemical smell.  Still, seems digestible at least, if you cook it and remove"
-" the worst parts."
-msgstr ""
-"从严重变异的生物身上切下的一大块肉。坚硬、褪色，有着一股化学制剂的味道。至少它看起来还能被消化，前提是你得把它烹饪加工并处理掉那些不好的部分。"
+msgid "Meat from a heavily mutated animal."
+msgstr "来自严重变异动物的肉。"
 
 #: data/json/items/comestibles/carnivore.json
 msgid "scrap of mutant meat"
@@ -69970,6 +70032,14 @@ msgstr "這是一大塊新鮮煮熟的肉。 它充滿了營養，但是沒有�
 msgid "cooked scrap of meat"
 msgid_plural "cooked scraps of meat"
 msgstr[0] "煮熟的肉渣"
+
+#. ~ Description for {'str': 'cooked scrap of meat', 'str_pl': 'cooked scraps
+#. of meat'}
+#: data/json/items/comestibles/carnivore.json
+msgid ""
+"This is a tiny scrap of cooked mutant meat.  It is small enough that it's "
+"hard to tell how disgusting it is."
+msgstr "这是一小块烹饪过的突变肉碎。它太小了，很难判断它有多恶心。"
 
 #: data/json/items/comestibles/carnivore.json
 msgid "cooked mutant meat"
@@ -70041,6 +70111,16 @@ msgid ""
 " unappetizing."
 msgstr ""
 "一只变异生物的不明器官，不同样本之间有着巨大差异，但在其他部分却相同。许多像是外部的未变异器官，但是它们的位置显然意味着不同的功能。它们有着奇怪颜色的液体和化学气味，令人反胃。"
+
+#: data/json/items/comestibles/carnivore.json
+msgid "mutant organs"
+msgid_plural "mutant organs"
+msgstr[0] "变异器官"
+
+#. ~ Description for {'str_sp': 'mutant organs'}
+#: data/json/items/comestibles/carnivore.json
+msgid "These organs came from a giant mutant bug."
+msgstr "这些器官来自一只巨大的变异虫。"
 
 #: data/json/items/comestibles/carnivore.json
 msgid "stomach"
@@ -70155,6 +70235,16 @@ msgid ""
 "prepared, it's a chewy lump of flavorless connective tissue."
 msgstr ""
 "一块来自某种动物的肺脏。看上去像粉红色的海绵状物体，而且很容易腐败。如果料理得当，它也能够变成一道美味；但如果料理不当，它就是一大块枯燥乏味的结缔组织。"
+
+#: data/json/items/comestibles/carnivore.json
+msgid "mutant lungs"
+msgid_plural "mutant lungs"
+msgstr[0] "变异肺"
+
+#. ~ Description for {'str_sp': 'mutant lungs'}
+#: data/json/items/comestibles/carnivore.json
+msgid "You're pretty sure this is lung tissue."
+msgstr "你相当确定这是肺组织。"
 
 #: data/json/items/comestibles/carnivore.json
 msgid "raw liver"
@@ -71719,6 +71809,18 @@ msgstr[0] "萤火虫卵"
 #: data/json/items/comestibles/egg.json
 msgid "The fist-sized egg of a mutant firefly.  Glows faintly in the dark."
 msgstr "一个有拳头大小的突變萤火虫卵，在黑暗中微微發光。"
+
+#: data/json/items/comestibles/egg.json
+msgid "dragonfly egg"
+msgid_plural "dragonfly eggs"
+msgstr[0] "蜻蜓卵"
+
+#. ~ Description for dragonfly egg
+#: data/json/items/comestibles/egg.json
+msgid ""
+"The still wet egg of a mutated dragonfly.  Serves as a disgusting substitute"
+" for the real thing, just don't let it hatch in the water."
+msgstr "这是一枚湿漉漉的变异蜻蜓蛋。作为真实蜻蜓卵的令人讨厌的替代品，只是不要让它在水中孵化。"
 
 #: data/json/items/comestibles/egg.json
 msgid "razorclaw roe"
@@ -95325,6 +95427,18 @@ msgid ""
 msgstr ""
 "標準的 4x8 平板木板 - 通常是膠合板，OSB或MDF。又大又重，適用於各種類的建設，但在進行小型項目之前，你可能需要將其切割成適合的尺寸。"
 
+#: data/json/items/resources/wood.json
+msgid "fuel briquette"
+msgid_plural "fuel briquettes"
+msgstr[0] "燃料砖"
+
+#. ~ Description for {'str': 'fuel briquette'}
+#: data/json/items/resources/wood.json
+msgid ""
+"A hunk of dried plant matter condensed into a puck, then dried.  It burns "
+"well."
+msgstr "一块被压缩成圆块并经过干燥的植物干物质块，它燃烧效果很好。"
+
 #: data/json/items/tool/container.json
 msgid "steel bottle"
 msgid_plural "steel bottles"
@@ -107389,6 +107503,21 @@ msgid ""
 msgstr "一只長到了家貓大小的突變萤火虫，它明亮發光的腹部上下擺動，試圖引起它看不見的伴侶的注意。它對你和一切事物都顯得異常不感興趣。"
 
 #: data/json/monsters/insect_spider.json
+msgid "huge dragonfly naiad"
+msgid_plural "huge dragonfly naiads"
+msgstr[0] "巨大蜻蜓若虫"
+
+#. ~ Description for {'str': 'huge dragonfly naiad'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"The predatory, aquatic larva of a dragonfly, normally barely a centimeter "
+"long and feeding on small fishes, grown to the size of a catfish.  "
+"Underneath its sharp mandibles you can see that its folded lower jaw changed"
+" into something resemblig a barbed spear."
+msgstr ""
+"这是蜻蜓的掠食性水生幼虫，通常只有不到一厘米长，以小鱼为食。但它已经长到了鲶鱼的大小。在其锋利的大颚下，你可以看到其折叠的下颚变成了类似带刺的矛的结构。"
+
+#: data/json/monsters/insect_spider.json
 msgid "giant dragonfly"
 msgid_plural "giant dragonflies"
 msgstr[0] "巨大蜻蜓"
@@ -107396,9 +107525,25 @@ msgstr[0] "巨大蜻蜓"
 #. ~ Description for {'str': 'giant dragonfly', 'str_pl': 'giant dragonflies'}
 #: data/json/monsters/insect_spider.json
 msgid ""
-"A ferocious mutant dragonfly as big as a cat, darting through the air with a"
-" cluster of fangs for a mouth."
-msgstr "兇猛的空降捕食者, 能在空中快速飛行, 嘴巴是一組銳利的獠牙。"
+"A ferocious, bright green dragonfly, still lightning-fast despite growing to"
+" the size of a schoolchild.  Its head is little more than a basketball-sized"
+" pair of rainbow compound eyes, and its legs - already specialized for "
+"grasping prey - end in curved talons."
+msgstr ""
+"这是一只凶猛的翠绿蜻蜓，虽然已经长到小学生那么大，但速度依然快如闪电。 它的头部只有一对篮球大小的彩虹复眼，它的腿--已经专门用来抓捕猎物--"
+"末端是弯曲的爪子。"
+
+#: data/json/monsters/insect_spider.json
+msgid "mega dragonfly"
+msgid_plural "mega dragonflies"
+msgstr[0] "超巨型蜻蜓"
+
+#. ~ Description for {'str': 'mega dragonfly', 'str_pl': 'mega dragonflies'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A single, enormous insect with a swollen abdomen and a distended ovipositor,"
+" periodically dropping a handful of glistening eggs."
+msgstr "一只巨大的昆虫，腹部膨胀，产卵器胀大，不时掉下一把闪闪发光的卵。"
 
 #: data/json/monsters/insect_spider.json
 msgid "giant fly"
@@ -152022,9 +152167,17 @@ msgid "orchard processing"
 msgstr "果園加工處"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
+msgid "orchard processing roof"
+msgstr "果园加工厂屋顶"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "orchard stall"
 msgstr "果園地攤"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
+msgid "orchard stall roof"
+msgstr "果园摊位屋顶"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
 #: data/mods/alt_map_key/overmap_terrain.json
@@ -164371,6 +164524,489 @@ msgstr "-風格"
 #: data/json/snippets/music.json
 msgid "-chant"
 msgstr "-唱腔"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Meat from a heavily mutated animal.  It has an unsettling loose and spongy "
+"texture, but smells… mostly normal.  There are strange tangles and "
+"formations in it that don't appear natural at all: bits of bone and hair "
+"crusted up inside the muscle, as if trying to form another organism.  Still,"
+" seems digestible at least, if you cook it and remove the worst parts."
+msgstr ""
+"从变异生物身上切下的肉块。这块肉有着恶心的海绵般的松散质感，不过闻起来……还算正常。肉的内部有着一些明显不自然的杂乱组织：骨头和毛发堆积在肌肉组织之间，就像是要生长出另一只生物一般。至少它看起来还能被消化，前提是你得把它烹饪加工并处理掉那些不好的部分。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Meat from a heavily mutated animal.  Although it came from muscle tissue, it"
+" has a curious swirling grain pattern, and at the center of each grain is a "
+"knot of hard, cartilaginous tissue.  It smells offputting."
+msgstr "一种严重变异动物的肉。 虽然它来自肌肉组织，但却有着奇特的漩涡状纹理，每颗纹理的中心都有一个坚硬的软骨组织结。 闻起来很不舒服。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Meat from a heavily mutated animal.  This is from muscle, but in the fascial"
+" tissue between the muscles, thick spiny hairs have grown.  Foul smelling, "
+"cream-colored fluid gushes out whenever a hair pulls loose."
+msgstr "一种严重变异动物的肉。 这是肌肉，但在肌肉之间的筋膜组织中长出了粗大的刺毛。 只要有一根毛松动，就会有恶臭的乳白色液体涌出。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Meat from a heavily mutated animal.  Although this came from muscle, it has "
+"a thick cordlike texture and smells like leather and bread mold."
+msgstr "一种严重变异动物的肉。 虽然这种肉来自肌肉，但质地像粗绳，闻起来有皮革和面包霉菌的味道。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a cooked chunk of meat from a mutated animal.  It has an unsettling,"
+" spongy texture, but otherwise tastes… mostly normal.  Hopefully you got all"
+" the bits of hair and bone out…"
+msgstr "一块煮熟的变异肉块。这块肉有着恶心的海绵般的松散质感，不过尝起来……还算正常。但愿你已经把里面的毛发和骨头全部清理干净了……"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a cooked chunk of meat from a mutated animal.  You thought you'd "
+"cleared out all the gross parts, but a fluid-filled sac inside bursts and "
+"covers it in some kind of thick grease."
+msgstr "这是一块变异动物的熟肉。 你以为你已经把所有恶心的部分都清理干净了，但里面一个充满液体的囊却破裂了，并覆盖上了某种厚厚的油脂。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a cooked chunk of meat from a mutated animal.  The surface is "
+"peppered with divets from the pieces you had to dig out to make it seem "
+"edible."
+msgstr "这是一块变异动物的熟肉。表面布满了因为你不得不挖掘出来使其看起来可食而留下的凹痕。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a cooked chunk of meat from a mutated animal.  Heat caused the "
+"muscles to twist and move as if they were alive, and now it has writhed "
+"itself into a dense knot."
+msgstr "这是一块变异动物的熟肉。高温使肌肉扭曲并像活物一样移动，现在它扭动成了一个紧密的结。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"These organs came from a giant mutant bug, and you really aren't sure what "
+"to make of them, with spines and hair and other unidentified parts "
+"protruding off seemingly at random."
+msgstr "这些器官来自一只巨大的变异虫，你真的不确定该如何处理它们，因为上面随机地似乎突出了脊椎、毛发和其他未知的部分。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"These organs came from a giant mutant bug.  They have a sickly green color, "
+"and one of them ripped when you were removing it, revealing an inner surface"
+" that looks like row upon row of human fingers, nails and all."
+msgstr ""
+"这些器官来自一只巨大的变异虫。 "
+"它们呈现出一种病态的绿色，其中一个在你摘下它的时候撕裂了，露出了一个内表面，看起来就像一排一排的人类手指，指甲什么的都有。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a huge, thick, fleshy sac you removed from a giant mutant bug.  The "
+"surface is covered in smooth, soft skin, and beneath it is a coiled, twisted"
+" mess of cordlike tissue."
+msgstr "这是你从巨型变异虫身上取出的一个巨大、厚实的肉囊。 表面覆盖着光滑柔软的皮肤，下面是盘绕扭曲的一团绳状组织。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a long, corded organ you removed from a giant mutant bug.  It ran "
+"from the head to the abdomen and has long tendrils coming off it, not unlike"
+" a spinal cord."
+msgstr "这是你从巨型变异虫身上取出的一个长长的索状器官。 它从头部延伸到腹部，上面有长长的卷须，与脊髓并无二致。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a meaty grey organ you removed from a mutant.  It has a chalky "
+"yellow coating that burns your skin, and several unidentifiable fleshy tubes"
+" sticking out of it.  The smell it gives off stings your nostrils."
+msgstr ""
+"这是从变异生物身上取下的一块多肉灰色器官。它表面覆盖着灰黄色的粉末，能灼伤你的皮肤，还有几根无法辨认的肉质管状物突出。它散发出的气味刺激着你的鼻腔。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This organ meat, retrieved from a mutated creature, looks like a series of "
+"small mammalian hearts arranged in series on a long fleshy tube.  At the end"
+" of the chain is a large fleshy sac resembling a stomach."
+msgstr "这种器官肉是从变异生物身上提取出来的，看起来就像一串串哺乳动物的小心脏，串联在一根长长的肉管子上。 管链的末端是一个类似胃的大肉囊。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You're pretty sure this is lung tissue.  It looks like a lung from a larger "
+"mammal, like a dog, but instead of a few distinct lobes, it has dozens of "
+"lobes arranged in sheets.  Strange spindles and gnarled tumescences dot the "
+"surface."
+msgstr ""
+"你很确定这是肺组织。 它看起来像狗等大型哺乳动物的肺，但不是几个明显的肺叶，而是成片排列的几十个肺叶。 表面点缀着奇怪的棘突和虬结的瘤状物。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You're pretty sure this is lung tissue.  It has a vaguely wing-like shape, "
+"with a series of nodules around what would be the trailing edge of the "
+"'wing'.  A cluster of quills in each corner of the organ held it to the "
+"bug's carapace like clasps."
+msgstr "你很确定这是肺组织。 它的形状有点像翅膀，在 '翅膀' 的后缘有一系列结节。 器官的每个角落都有一簇羽毛，像扣子一样把它扣在虫子的甲壳上。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"A piece of a bug's exoskeleton, but mutated.  The inner side is lined with "
+"veins and strange hooked protuberances."
+msgstr "一块虫子的外骨骼，但已经变异。 内侧布满了血管和奇怪的钩状突起。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"A piece of a bug's exoskeleton.  Stringy lines of nervous tissue and blood "
+"vessels still cling to the inner surface."
+msgstr "一块虫子的外骨骼。 神经组织和血管的细线仍然附着在内表面。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"A piece of rigid, tube-shaped chitin from the inside of a giant bug.  It "
+"seemed to be performing some kind of support role.  You're quite sure normal"
+" insects don't have these."
+msgstr "从一只巨虫体内取出的一块坚硬的管状甲壳素。 它似乎起着某种支撑作用。 你很确定普通昆虫没有这种东西。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"A long, flexible rod of chitin from inside a giant mutant bug.  It is laced "
+"with blood vessels and chitinous nodules."
+msgstr "巨型变异虫体内的甲壳素长条。 上面布满了血管和甲壳质结节。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"As you peel away the outer shell, you find veins lining the chitin plates"
+msgstr "当你剥去外壳时，你发现静脉贯穿在几片硬壳上"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "With the creature dead, its carapace comes away surprisingly easily"
+msgstr "随着生物的死亡，它的甲壳意外地很容易剥离"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"There's a thin membrane, much like skin, spread over the chitin of this "
+"creature"
+msgstr "这种生物的甲壳上覆盖着一层很像皮肤的薄膜"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "Under the carapace of this mutant is a bristly, velcro-like material"
+msgstr "在这种变异体的甲壳下，有一种毛茸茸的、类似魔术贴的材料"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The anatomy concealed beneath seems almost like a small mammal given a shell"
+" and twisted into the shape of an arthropod"
+msgstr "隐藏在下面的解剖结构几乎就像是给小型哺乳动物穿上了外壳，并扭曲成节肢动物的形状"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "You crack the beast open like a horrific lobster"
+msgstr "你像剥开一只可怕的龙虾一样将这个野兽劈开"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The chitin holds tight to the creature, and you need to snap and tear it "
+"away, sawing at tough fibers beneath"
+msgstr "甲壳紧紧地贴在生物身上，你需要把它撕开，锯断下面坚韧的纤维"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The moment you start cutting into the corpse a few of what you thought were "
+"extra legs detach and scurry off into the undergrowth"
+msgstr "就在你开始切割尸体的一瞬间，几条你以为是多余的腿脱落了，窜进了灌木丛中"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"For your first cut you connect the dozen openings on the creature's sides, "
+"only to reveal a finger-sized wriggling grub in each"
+msgstr "在第一次切割时，您连接了生物两侧的十几个开口，结果发现每个开口都有一个手指大小的蠕动蛴螬"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Your work disturbs the parasites still clinging to the joints of the "
+"creature, and a few size you up as a potential new home before scurrying "
+"away"
+msgstr "你的操作扰动了仍然附着在生物关节上的寄生虫，其中一些看着你，似乎将你视为一个潜在的新家，然后迅速逃开"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Inside, half-formed organs press against spongy meat that doesn't look "
+"anything like raw arthropod meat from normal creatures"
+msgstr "在内部，半成型的器官压在海绵状的肉上，看起来一点也不像正常生物的节肢动物生肉"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You find a collection of hooked spines beneath that seem to have been "
+"clasping it on somehow"
+msgstr "您发现下面有许多钩状的刺，似乎是用某种方法把它固定住的"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Inside is a complex, still-squirming mess of strange appendages and organs "
+"that bear only a passing resemblance to any natural creature"
+msgstr "里面是一团复杂的、仍然扭动的奇怪附肢和器官的混乱，与任何自然生物只有一点相似"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Beneath the chitin, the meat is covered in thick, bristly hair hiding a "
+"chaotic bramble of half-formed, mutated organs"
+msgstr "在甲壳下，肉被厚厚的、刺人的毛覆盖，隐藏着一团半形成的、突变的器官的混乱荆棘"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Inside is a tangled mess of organs and tissues that do not appear to "
+"entirely natural"
+msgstr "里面是一团纠缠在一起的器官和组织，看起来并不完全像是自然的"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"It is difficult to work, as the spongey tissue tears apart under your tools"
+msgstr "很难操作，因为海绵状组织在你的工具下撕裂开"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Despite its outward appearance, both the organs and the endolymph of this "
+"creature is pristinely white"
+msgstr "尽管外表如此，这种生物的器官和内淋巴都是纯白色的"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Some of your cuts meet nerves, and the already stiff corpse shudders with "
+"movement each time"
+msgstr "你的一些切割碰到了神经，已经僵硬的尸体在每次动作中颤动"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You follow what you think are superflous veins into the deep, finding a "
+"gorged, tick-like creature at their convergence"
+msgstr "你沿着你认为是多余的静脉深入，找到了一个饱满的、类似蜱虫的生物在它们的汇合点"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Every cut reveals an organ you can't quite recognize, and you start to "
+"wonder what your insides look like by now"
+msgstr "每割一刀，你就会发现一个你无法辨认的器官，你开始怀疑自己的内脏现在是什么样子的"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You are dizzied by the rainbow coloration of the creature's muscles, "
+"clashing with the bloody mess in its guts"
+msgstr "它肌肉上的彩虹色与内脏中的血腥杂质交相辉映，令你眼花缭乱"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"As you cut into its flesh you are disturbed by its sickly-sweet smell, like "
+"fermenting fruit"
+msgstr "当你切开它的肉时，你被它病态的甜味所困扰，就像发酵的水果一样"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The wings of this creature break apart upon the slightest touch into myriad "
+"identical rainbow crystals"
+msgstr "这种生物的翅膀轻轻一碰就会碎裂，变成无数相同的七彩晶体"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "Even as the body grows still, the wings keep on beating slowly"
+msgstr "即使身体静止不动，翅膀仍在缓缓跳动"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "The chitin of this one is light and brittle, like an empty eggshell"
+msgstr "它的甲壳又轻又脆，就像一个空蛋壳"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Where you came to expect smooth chitin you find exposed flesh, shot with a "
+"web of hardened strands"
+msgstr "在你期待光滑甲壳的地方，你发现了裸露的肉体，上面布满了坚硬的丝网"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "You cough as you inhale the fine, colorful dust shedded from the wings"
+msgstr "当你吸入从翅膀上脱落的细小而五颜六色的彩尘时，你咳嗽起来。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The carapace of this one still feels hot to the touch, especially around the"
+" wings"
+msgstr "它的甲壳摸起来仍然很烫，尤其是翅膀周围"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"What you thought was shuddering chitinous fuzz on the creature's back is in "
+"reality thousands of miniature copies of its main wings, flapping in unison"
+msgstr "你原以为是生物背部颤动的甲壳绒毛，实际上是成千上万个主翅膀的微型复制品，齐刷刷地振动着。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Spaced evenly across the entire body you find small sacs of eggs in "
+"different stages of growth"
+msgstr "在整个身体上均匀分布着处于不同生长阶段的小囊卵"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Its intestines grew into a labyrinthe tangle, like so many worms devouring "
+"each other"
+msgstr "它的肠子纠缠在一起，像许多虫子在互相吞噬"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "The wings are held in place by stiff muscles, reaching into the deep"
+msgstr "这些翅膀由僵硬的肌肉支撑在位，伸入深处"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Underneath the chitin you find bundles of small, floating pearls, each held "
+"in place by a single strand of sinew"
+msgstr "在甲壳下面，你发现一束束漂浮着的小珍珠，每颗珍珠都由一缕筋固定在原处"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Near its wings you find a black, bubbling organ still periodically emitting "
+"a bundle of floating bubbles"
+msgstr "在它的翅膀附近，你发现一个黑色的、冒着气泡的器官，还在不时地喷出一束束漂浮的气泡"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"As you open its intestines by mistake, you can barely pull your finger away "
+"from the dozen snapping mandibles on its inside"
+msgstr "当你误开它的肠道时，你几乎无法从里面十几只咬合的大颚上抽回手指"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The space not taken up by the now-familiar floating sacs is almost entirely "
+"filled by a sticky, homogenous yellow jelly that seems to actively try to "
+"avoid your knife"
+msgstr "除了现在熟悉的漂浮囊泡占据的空间外，几乎整个空间都被一种黏性、均匀的黄色果冻填满，似乎主动避开你的刀"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The wings are rooted in its flesh by an almost transparent, fractal root "
+"structure, making you question if it always belonged to the creature"
+msgstr "翅膀通过一种几乎透明的分形根系扎根在它的肉体中，让你怀疑它是否一直属于这个生物"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The meat inside gives off a horrifying stench, and seems to be covered in "
+"thin damp hair, like a newborn animal gone horribly wrong"
+msgstr "内部的肉散发着令人恐惧的恶臭，看起来覆盖着细湿的毛发，就像一个新生动物出了大差错"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Small bundles of fiber break loose as you work, splitting open to reveal "
+"twisted, half-formed copies of the creature itself"
+msgstr "当你工作时，一些纤维的小捆散开，裂开，显露出扭曲的、半形成的生物本体的复制品"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_chitin>"
+msgstr "<bug_harvest_general_chitin>"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Steaming puddles of acid spill from its outer shell as you pull it back"
+msgstr "当你把它拉回来时，一滩滩冒着热气的酸液从它的外壳溢出来"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "Steaming acid burbles from the creature's chitin as you peel it back"
+msgstr "当你剥开它时，蒸腾的酸液从生物的甲壳中喷涌而出"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Several acid glands rupture as you peel back the carapace, sending streams "
+"of steaming caustic fluids spraying around"
+msgstr "剥开甲壳时，几个酸腺破裂，蒸腾的腐蚀性液体喷向四周"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_deeper>"
+msgstr "<bug_harvest_general_deeper>"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The organs themselves have an acrid odour, but don't seem as caustically "
+"acidic as the outer shell"
+msgstr "器官本身有刺鼻的气味，但似乎不像外壳那样具有腐蚀性酸味"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You carefully avoid breaking through pockets of what you think may be acid-"
+"secreting glands"
+msgstr "你小心避免穿破你认为可能是分泌酸液的腺体的囊袋"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Thick, ropey cords of tissue beneath its chitin protect an inner layer of "
+"strange organs, resembling those of a bird more than anything"
+msgstr "甲壳下面厚厚的绳状组织保护着内层奇特的器官，这些器官更像鸟类的器官"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "The light of its abdomen flickers with each cut, growing ever dimmer"
+msgstr "它腹部的光芒随着每一次切割而闪烁，越来越暗淡"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "An errant cut coats your tools with foul-smelling, glowing goop"
+msgstr "一次错误的切割用那种恶臭的、发光的黏液覆盖了你的工具"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"What you saw as a homogenous light from a distance was the result of myriad "
+"strands of glowing chitin criscrossing just beneath the carapace"
+msgstr "你从远处看到的均匀的光芒实际上是由无数发光的几丁质丝在甲壳正下方交错而成的结果"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This one's very flesh is glowing with a blinding intensity, lighting up your"
+" gruesome work"
+msgstr "这个生物的肉体正以刺眼的强度发光，照亮着你可怕的工作"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_descriptive>"
+msgstr "<bug_harvest_general_descriptive>"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The powerfully acidic vapors coming from the carcass make it hard to work"
+msgstr "屠体散发出的强酸性蒸汽让人难以工作"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The tissues of the creature are full of half-formed organs, their purpose "
+"unclear"
+msgstr "这个生物的组织充满了半成形的器官，它们的用途还不清楚"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Several times, you nearly burn yourself piercing a concealed gland full of "
+"acid"
+msgstr "有好几次，你差点因为刺穿一个充满酸液的隐蔽腺体而烧伤自己"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_flying_chitin>."
+msgstr "<bug_harvest_flying_chitin>。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_descriptive>."
+msgstr "<bug_harvest_general_descriptive>。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_flying_deeper>"
+msgstr "<bug_harvest_flying_deeper>"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_firefly>."
+msgstr "<bug_harvest_firefly>。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_chitin>."
+msgstr "<bug_harvest_general_chitin>。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_deeper>."
+msgstr "<bug_harvest_general_deeper>。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_acid_chitin>."
+msgstr "<bug_harvest_acid_chitin>。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_acid_deeper>."
+msgstr "<bug_harvest_acid_deeper>。"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_acid_descriptive>."
+msgstr "<bug_harvest_acid_descriptive>。"
 
 #: data/json/snippets/newspapers.json
 msgid ""

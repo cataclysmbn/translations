@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-01-27 00:58+0000\n"
+"POT-Creation-Date: 2024-02-03 01:00+0000\n"
 "Last-Translator: Fruitybite, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -61,7 +61,7 @@ msgid ""
 "survivors you must stay alert, since someone may be plotting behind your "
 "back to take your hard-earned loot."
 msgstr ""
-"당신은 부족한 물자, 적대적인 생물들, 악기상 등의 다양한 역경에 대비해야 합니다. 주변의 다른 생존자도 경계의 대상입니다. 개중 "
+"당신은 부족한 물자, 적대적인 생물들, 악천후 등의 다양한 역경에 대비해야 합니다. 주변의 다른 생존자도 경계의 대상입니다. 개중 "
 "누군가가 당신이 힘들여 얻은 물자를 빼앗으려 몰래 계획 중일 수도 있습니다."
 
 #: data/help/texts.json
@@ -10838,8 +10838,40 @@ msgid ""
 msgstr "당신은 맛이 간 살덩이들을 거칠게 헤집어, 눈에 띄는 것들을 전부 확인했습니다."
 
 #: data/json/harvest.json
-msgid "You laboriously dissect the colossal insect."
-msgstr "거대한 곤충을 부지런히 해제합니다."
+msgid "<arachnid_harvest>"
+msgstr " <arachnid_harvest>"
+
+#: data/json/harvest.json
+msgid "<arachnid_flying_harvest>"
+msgstr "<arachnid_flying_harvest>  "
+
+#: data/json/harvest.json
+msgid "<acidant_harvest>"
+msgstr "<acidant_harvest>  "
+
+#: data/json/harvest.json
+msgid ""
+"What appeared to be insect hairs on the chitin of this creature look more "
+"like tiny feathers as you pare them back.  Inside is a bundle of bubble-like"
+" tissue sacs that appear to be floating, which doesn't fit with what you "
+"know about real bees."
+msgstr ""
+"이 개체의 키틴질에 나있던 털로 보이던 것을 줄여놓고 나니 아주 작은 깃털로도 보입니다. 내부에는 거품처럼 생긴 낭 조직이 둥둥 떠있는 "
+"것이 보이는데, 당신이 알고 있는 바로는 진짜 벌한테는 이런 부위가 없었습니다."
+
+#: data/json/harvest.json
+msgid ""
+"There's a faintly hairy, skin-like membrane, covered in blood vessels, "
+"beneath the chitin of this creature.  Inside it is a bundle of bubble-like "
+"tissue sacs that appear to be floating, which doesn't fit with what you know"
+" about real wasps."
+msgstr ""
+"희미한 털과 피부처럼 생긴 막이 혈관으로 덮인 채 이 개체의 키틴질 아래에 위치합니다. 내부에는 거품처럼 생긴 낭 조직이 둥둥 떠있는 "
+"것이 보이는데, 당신이 알고 있는 바로는 진짜 말벌한테는 이런 부위가 없었습니다."
+
+#: data/json/harvest.json
+msgid "<firefly_harvest>"
+msgstr "<firefly_harvest>  "
 
 #: data/json/harvest.json
 msgid "You laboriously hack and dig through the remains of the fungal mass."
@@ -24211,6 +24243,16 @@ msgstr[0] "곤충"
 #: data/json/species.json
 msgid "an insect"
 msgstr "곤충"
+
+#. ~ Description for a flying insect
+#: data/json/species.json
+msgid "a flying insect"
+msgid_plural "a flying insects"
+msgstr[0] "날아다니는 곤충"
+
+#: data/json/species.json
+msgid "BZZZZZZZZZZZZZZZZZ"
+msgstr "부우우우우웅"
 
 #: data/json/species.json
 msgid "spider"
@@ -45622,6 +45664,34 @@ msgstr[0] "키틴질 조각"
 #: data/json/items/generic.json
 msgid "A piece of an insect's exoskeleton.  It is light and very durable."
 msgstr "곤충의 외골격의 파편입니다. 가볍고 매우 견고합니다."
+
+#: data/json/items/generic.json
+msgid "strand of endochitin"
+msgid_plural "strands of endochitin"
+msgstr[0] "내키틴질 조각"
+
+#. ~ Description for {'str': 'strand of endochitin', 'str_pl': 'strands of
+#. endochitin'}
+#: data/json/items/generic.json
+msgid "A piece of an insect's endoskeleton."
+msgstr "곤충의 내골격 조각입니다."
+
+#: data/json/items/generic.json
+msgid "cluster of gas sacs"
+msgid_plural "clusters of gas sacs"
+msgstr[0] "가스 낭 다발"
+
+#. ~ Description for {'str': 'cluster of gas sacs', 'str_pl': 'clusters of gas
+#. sacs'}
+#: data/json/items/generic.json
+msgid ""
+"This is a cluster of membranous bubbles, each about the size of a grape, "
+"retrieved from inside a mutant insect.  They float like tiny helium "
+"balloons, and are likely full of a lighter-than-air gas helping the bug to "
+"fly."
+msgstr ""
+"돌연변이 곤충한테서 끄집어낸 포도알만한 크기의 거품막 다발입니다. 아주 작은 헬륨 풍선처럼 둥둥 떠다니며, 공기보다 가벼운 가스가 가득 "
+"차있어 곤충의 비행을 보조하는 것 같습니다."
 
 #: data/json/items/generic.json
 msgid "set of 100 ceramic disk"
@@ -72415,13 +72485,8 @@ msgstr[0] "돌연변이 고기 덩어리"
 #. ~ Description for {'str': 'chunk of mutant meat', 'str_pl': 'chunks of
 #. mutant meat'}
 #: data/json/items/comestibles/carnivore.json
-msgid ""
-"Meat from a heavily mutated animal.  Tough, discolored, with a somewhat "
-"chemical smell.  Still, seems digestible at least, if you cook it and remove"
-" the worst parts."
-msgstr ""
-"지독하게 변이된 동물의 고기입니다. 단단하고, 변색된데다 뭔가 기묘한 화학물질 냄새도 납니다. 적절히 요리하고 엉망이 된 부위만 "
-"떼어낸다면, 먹을 수 있을 것 같긴 합니다."
+msgid "Meat from a heavily mutated animal."
+msgstr "상당히 변이된 동물의 고기입니다."
 
 #: data/json/items/comestibles/carnivore.json
 msgid "scrap of mutant meat"
@@ -72484,6 +72549,14 @@ msgstr "이것은 갓 익힌 고기 한 덩어리입니다. 배부르고 영양�
 msgid "cooked scrap of meat"
 msgid_plural "cooked scraps of meat"
 msgstr[0] "고기조각 (조리됨)"
+
+#. ~ Description for {'str': 'cooked scrap of meat', 'str_pl': 'cooked scraps
+#. of meat'}
+#: data/json/items/comestibles/carnivore.json
+msgid ""
+"This is a tiny scrap of cooked mutant meat.  It is small enough that it's "
+"hard to tell how disgusting it is."
+msgstr "조리된 돌연변이 고기 조각입니다. 아주 작지만, 이것만으로도 충분히 역겹습니다."
 
 #: data/json/items/comestibles/carnivore.json
 msgid "cooked mutant meat"
@@ -72560,6 +72633,16 @@ msgstr ""
 "변이된 동물의 알아볼 수 없는 내장입니다. 외관상 같은 동물이라도 내장은 도저히 서로 같은 동물이라고 생각할 수 없을 정도로 "
 "뒤틀려있습니다. 변이되지 않은 평범한 장기와 닮아있지만, 전혀 다른 위치에 박혀있어 뭔가 다르게 기능하리라는걸 뚜렷하게 내보입니다. "
 "기묘한 색의 액체와 화학물질 냄새 탓에 그다지 먹고 싶지 않습니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "mutant organs"
+msgid_plural "mutant organs"
+msgstr[0] "돌연변이 내장"
+
+#. ~ Description for {'str_sp': 'mutant organs'}
+#: data/json/items/comestibles/carnivore.json
+msgid "These organs came from a giant mutant bug."
+msgstr "거대한 돌연변이 곤충의 내장입니다."
 
 #: data/json/items/comestibles/carnivore.json
 msgid "stomach"
@@ -72675,6 +72758,16 @@ msgid ""
 msgstr ""
 "동물에게서 갓 떼어낸 폐 조각입니다. 푹신하고 분홍색을 띄고 있으며, 매우 빠르게 상합니다. 적절히 조리하면 미식이 될 수 있겠지만, "
 "대충 조리했다간 씹는 맛은 있지만 아무 향미도 없는 덩어리가 되어버릴 것입니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "mutant lungs"
+msgid_plural "mutant lungs"
+msgstr[0] "돌연변이 폐"
+
+#. ~ Description for {'str_sp': 'mutant lungs'}
+#: data/json/items/comestibles/carnivore.json
+msgid "You're pretty sure this is lung tissue."
+msgstr "확실히 폐 조직인 것 같습니다."
 
 #: data/json/items/comestibles/carnivore.json
 msgid "raw liver"
@@ -74302,6 +74395,20 @@ msgstr[0] "반딧불이 알"
 #: data/json/items/comestibles/egg.json
 msgid "The fist-sized egg of a mutant firefly.  Glows faintly in the dark."
 msgstr "주먹만한 크기의 반딧불이 알입니다. 어둠 속에서 희미하게 빛납니다."
+
+#: data/json/items/comestibles/egg.json
+msgid "dragonfly egg"
+msgid_plural "dragonfly eggs"
+msgstr[0] "잠자리 알"
+
+#. ~ Description for dragonfly egg
+#: data/json/items/comestibles/egg.json
+msgid ""
+"The still wet egg of a mutated dragonfly.  Serves as a disgusting substitute"
+" for the real thing, just don't let it hatch in the water."
+msgstr ""
+"아직 축축한 돌연변이 잠자리 알입니다. 역겹다는 점을 감수하면 진짜 달걀의 대용품으로 사용할 수 있습니다. 물에 넣으면 부화할지도 모르니"
+" 조심합시다."
 
 #: data/json/items/comestibles/egg.json
 msgid "razorclaw roe"
@@ -98617,6 +98724,18 @@ msgstr ""
 "4x8 인치 단면 표준규격 나무시트. 대체로 베니어판, OSB합판, MDF합판이 사용됩니다. 무겁고 부피가 크며, 모든 종류의 건설 "
 "시공에 매우 유용하게 사용됩니다. 하지만 작은 규모 프로젝트에 사용하려면 사이즈에 맞게 재단해야 할 수 있습니다."
 
+#: data/json/items/resources/wood.json
+msgid "fuel briquette"
+msgid_plural "fuel briquettes"
+msgstr[0] "번개탄"
+
+#. ~ Description for {'str': 'fuel briquette'}
+#: data/json/items/resources/wood.json
+msgid ""
+"A hunk of dried plant matter condensed into a puck, then dried.  It burns "
+"well."
+msgstr "대량의 식물성 물질을 건조시킨 뒤 큼직한 덩어리로 압축하여 다시 건조시킨 연료입니다. 불에 잘 탑니다."
+
 #: data/json/items/tool/container.json
 msgid "steel bottle"
 msgid_plural "steel bottles"
@@ -111071,6 +111190,22 @@ msgstr ""
 "합니다. 당신과 기타 다른 모든 것에게 이상할 정도로 관심이 없어보입니다."
 
 #: data/json/monsters/insect_spider.json
+msgid "huge dragonfly naiad"
+msgid_plural "huge dragonfly naiads"
+msgstr[0] "거대 잠자리 유충"
+
+#. ~ Description for {'str': 'huge dragonfly naiad'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"The predatory, aquatic larva of a dragonfly, normally barely a centimeter "
+"long and feeding on small fishes, grown to the size of a catfish.  "
+"Underneath its sharp mandibles you can see that its folded lower jaw changed"
+" into something resemblig a barbed spear."
+msgstr ""
+"본래 1cm 정도 길이이며 작은 물고기를 먹고 사는 잠자리 유충이 메기 정도 크기로 자라났습니다. 날카로운 턱 안쪽에 접혀진 채 숨겨진 "
+"아래턱이 미늘창을 연상케 하는 형상으로 변해있는 것이 보입니다."
+
+#: data/json/monsters/insect_spider.json
 msgid "giant dragonfly"
 msgid_plural "giant dragonflies"
 msgstr[0] "거대 잠자리"
@@ -111078,9 +111213,23 @@ msgstr[0] "거대 잠자리"
 #. ~ Description for {'str': 'giant dragonfly', 'str_pl': 'giant dragonflies'}
 #: data/json/monsters/insect_spider.json
 msgid ""
-"A ferocious mutant dragonfly as big as a cat, darting through the air with a"
-" cluster of fangs for a mouth."
-msgstr "고양이 수준으로 커진 변이 잠자리로, 입에 달린 이빨들이 위협적입니다."
+"A ferocious, bright green dragonfly, still lightning-fast despite growing to"
+" the size of a schoolchild.  Its head is little more than a basketball-sized"
+" pair of rainbow compound eyes, and its legs - already specialized for "
+"grasping prey - end in curved talons."
+msgstr ""
+
+#: data/json/monsters/insect_spider.json
+msgid "mega dragonfly"
+msgid_plural "mega dragonflies"
+msgstr[0] "초거대 잠자리"
+
+#. ~ Description for {'str': 'mega dragonfly', 'str_pl': 'mega dragonflies'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A single, enormous insect with a swollen abdomen and a distended ovipositor,"
+" periodically dropping a handful of glistening eggs."
+msgstr ""
 
 #: data/json/monsters/insect_spider.json
 msgid "giant fly"
@@ -157337,9 +157486,17 @@ msgid "orchard processing"
 msgstr "과수원 발효대"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
+msgid "orchard processing roof"
+msgstr "과수원 발효대 지붕"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "orchard stall"
 msgstr "과수원 가판대"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
+msgid "orchard stall roof"
+msgstr "과수원 가판대 지붕"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
 #: data/mods/alt_map_key/overmap_terrain.json
@@ -169799,6 +169956,486 @@ msgstr "스타일"
 #: data/json/snippets/music.json
 msgid "-chant"
 msgstr "성가"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Meat from a heavily mutated animal.  It has an unsettling loose and spongy "
+"texture, but smells… mostly normal.  There are strange tangles and "
+"formations in it that don't appear natural at all: bits of bone and hair "
+"crusted up inside the muscle, as if trying to form another organism.  Still,"
+" seems digestible at least, if you cook it and remove the worst parts."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Meat from a heavily mutated animal.  Although it came from muscle tissue, it"
+" has a curious swirling grain pattern, and at the center of each grain is a "
+"knot of hard, cartilaginous tissue.  It smells offputting."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Meat from a heavily mutated animal.  This is from muscle, but in the fascial"
+" tissue between the muscles, thick spiny hairs have grown.  Foul smelling, "
+"cream-colored fluid gushes out whenever a hair pulls loose."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Meat from a heavily mutated animal.  Although this came from muscle, it has "
+"a thick cordlike texture and smells like leather and bread mold."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a cooked chunk of meat from a mutated animal.  It has an unsettling,"
+" spongy texture, but otherwise tastes… mostly normal.  Hopefully you got all"
+" the bits of hair and bone out…"
+msgstr ""
+"이것은 갓 익힌 변이된 동물 고기 한 덩어리입니다. 미묘하게 스펀지 같은 질감이지만, 그외에는… 괜찮은 것 같습니다. 여기저기에 돋아난 "
+"털과 뼈를 다 제거했다면요…"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a cooked chunk of meat from a mutated animal.  You thought you'd "
+"cleared out all the gross parts, but a fluid-filled sac inside bursts and "
+"covers it in some kind of thick grease."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a cooked chunk of meat from a mutated animal.  The surface is "
+"peppered with divets from the pieces you had to dig out to make it seem "
+"edible."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a cooked chunk of meat from a mutated animal.  Heat caused the "
+"muscles to twist and move as if they were alive, and now it has writhed "
+"itself into a dense knot."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"These organs came from a giant mutant bug, and you really aren't sure what "
+"to make of them, with spines and hair and other unidentified parts "
+"protruding off seemingly at random."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"These organs came from a giant mutant bug.  They have a sickly green color, "
+"and one of them ripped when you were removing it, revealing an inner surface"
+" that looks like row upon row of human fingers, nails and all."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a huge, thick, fleshy sac you removed from a giant mutant bug.  The "
+"surface is covered in smooth, soft skin, and beneath it is a coiled, twisted"
+" mess of cordlike tissue."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a long, corded organ you removed from a giant mutant bug.  It ran "
+"from the head to the abdomen and has long tendrils coming off it, not unlike"
+" a spinal cord."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This is a meaty grey organ you removed from a mutant.  It has a chalky "
+"yellow coating that burns your skin, and several unidentifiable fleshy tubes"
+" sticking out of it.  The smell it gives off stings your nostrils."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This organ meat, retrieved from a mutated creature, looks like a series of "
+"small mammalian hearts arranged in series on a long fleshy tube.  At the end"
+" of the chain is a large fleshy sac resembling a stomach."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You're pretty sure this is lung tissue.  It looks like a lung from a larger "
+"mammal, like a dog, but instead of a few distinct lobes, it has dozens of "
+"lobes arranged in sheets.  Strange spindles and gnarled tumescences dot the "
+"surface."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You're pretty sure this is lung tissue.  It has a vaguely wing-like shape, "
+"with a series of nodules around what would be the trailing edge of the "
+"'wing'.  A cluster of quills in each corner of the organ held it to the "
+"bug's carapace like clasps."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"A piece of a bug's exoskeleton, but mutated.  The inner side is lined with "
+"veins and strange hooked protuberances."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"A piece of a bug's exoskeleton.  Stringy lines of nervous tissue and blood "
+"vessels still cling to the inner surface."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"A piece of rigid, tube-shaped chitin from the inside of a giant bug.  It "
+"seemed to be performing some kind of support role.  You're quite sure normal"
+" insects don't have these."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"A long, flexible rod of chitin from inside a giant mutant bug.  It is laced "
+"with blood vessels and chitinous nodules."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"As you peel away the outer shell, you find veins lining the chitin plates"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "With the creature dead, its carapace comes away surprisingly easily"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"There's a thin membrane, much like skin, spread over the chitin of this "
+"creature"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "Under the carapace of this mutant is a bristly, velcro-like material"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The anatomy concealed beneath seems almost like a small mammal given a shell"
+" and twisted into the shape of an arthropod"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "You crack the beast open like a horrific lobster"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The chitin holds tight to the creature, and you need to snap and tear it "
+"away, sawing at tough fibers beneath"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The moment you start cutting into the corpse a few of what you thought were "
+"extra legs detach and scurry off into the undergrowth"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"For your first cut you connect the dozen openings on the creature's sides, "
+"only to reveal a finger-sized wriggling grub in each"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Your work disturbs the parasites still clinging to the joints of the "
+"creature, and a few size you up as a potential new home before scurrying "
+"away"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Inside, half-formed organs press against spongy meat that doesn't look "
+"anything like raw arthropod meat from normal creatures"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You find a collection of hooked spines beneath that seem to have been "
+"clasping it on somehow"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Inside is a complex, still-squirming mess of strange appendages and organs "
+"that bear only a passing resemblance to any natural creature"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Beneath the chitin, the meat is covered in thick, bristly hair hiding a "
+"chaotic bramble of half-formed, mutated organs"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Inside is a tangled mess of organs and tissues that do not appear to "
+"entirely natural"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"It is difficult to work, as the spongey tissue tears apart under your tools"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Despite its outward appearance, both the organs and the endolymph of this "
+"creature is pristinely white"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Some of your cuts meet nerves, and the already stiff corpse shudders with "
+"movement each time"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You follow what you think are superflous veins into the deep, finding a "
+"gorged, tick-like creature at their convergence"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Every cut reveals an organ you can't quite recognize, and you start to "
+"wonder what your insides look like by now"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You are dizzied by the rainbow coloration of the creature's muscles, "
+"clashing with the bloody mess in its guts"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"As you cut into its flesh you are disturbed by its sickly-sweet smell, like "
+"fermenting fruit"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The wings of this creature break apart upon the slightest touch into myriad "
+"identical rainbow crystals"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "Even as the body grows still, the wings keep on beating slowly"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "The chitin of this one is light and brittle, like an empty eggshell"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Where you came to expect smooth chitin you find exposed flesh, shot with a "
+"web of hardened strands"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "You cough as you inhale the fine, colorful dust shedded from the wings"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The carapace of this one still feels hot to the touch, especially around the"
+" wings"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"What you thought was shuddering chitinous fuzz on the creature's back is in "
+"reality thousands of miniature copies of its main wings, flapping in unison"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Spaced evenly across the entire body you find small sacs of eggs in "
+"different stages of growth"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Its intestines grew into a labyrinthe tangle, like so many worms devouring "
+"each other"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "The wings are held in place by stiff muscles, reaching into the deep"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Underneath the chitin you find bundles of small, floating pearls, each held "
+"in place by a single strand of sinew"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Near its wings you find a black, bubbling organ still periodically emitting "
+"a bundle of floating bubbles"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"As you open its intestines by mistake, you can barely pull your finger away "
+"from the dozen snapping mandibles on its inside"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The space not taken up by the now-familiar floating sacs is almost entirely "
+"filled by a sticky, homogenous yellow jelly that seems to actively try to "
+"avoid your knife"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The wings are rooted in its flesh by an almost transparent, fractal root "
+"structure, making you question if it always belonged to the creature"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The meat inside gives off a horrifying stench, and seems to be covered in "
+"thin damp hair, like a newborn animal gone horribly wrong"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Small bundles of fiber break loose as you work, splitting open to reveal "
+"twisted, half-formed copies of the creature itself"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_chitin>"
+msgstr "<bug_harvest_general_chitin>  "
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Steaming puddles of acid spill from its outer shell as you pull it back"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "Steaming acid burbles from the creature's chitin as you peel it back"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Several acid glands rupture as you peel back the carapace, sending streams "
+"of steaming caustic fluids spraying around"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_deeper>"
+msgstr "<bug_harvest_general_deeper>  "
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The organs themselves have an acrid odour, but don't seem as caustically "
+"acidic as the outer shell"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You carefully avoid breaking through pockets of what you think may be acid-"
+"secreting glands"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Thick, ropey cords of tissue beneath its chitin protect an inner layer of "
+"strange organs, resembling those of a bird more than anything"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "The light of its abdomen flickers with each cut, growing ever dimmer"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "An errant cut coats your tools with foul-smelling, glowing goop"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"What you saw as a homogenous light from a distance was the result of myriad "
+"strands of glowing chitin criscrossing just beneath the carapace"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This one's very flesh is glowing with a blinding intensity, lighting up your"
+" gruesome work"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_descriptive>"
+msgstr "  <bug_harvest_general_descriptive>"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The powerfully acidic vapors coming from the carcass make it hard to work"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The tissues of the creature are full of half-formed organs, their purpose "
+"unclear"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Several times, you nearly burn yourself piercing a concealed gland full of "
+"acid"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_flying_chitin>."
+msgstr "<bug_harvest_flying_chitin>."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_descriptive>."
+msgstr "<bug_harvest_general_descriptive>."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_flying_deeper>"
+msgstr "<bug_harvest_flying_deeper>"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_firefly>."
+msgstr "<bug_harvest_firefly>."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_chitin>."
+msgstr "<bug_harvest_general_chitin>."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_deeper>."
+msgstr "<bug_harvest_general_deeper>."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_acid_chitin>."
+msgstr "<bug_harvest_acid_chitin>."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_acid_deeper>."
+msgstr "<bug_harvest_acid_deeper>."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_acid_descriptive>."
+msgstr "<bug_harvest_acid_descriptive>."
 
 #: data/json/snippets/newspapers.json
 msgid ""
@@ -200576,6 +201213,7 @@ msgid ""
 "A 'speedloader', a metal block capable of holding and releasing ammunition "
 "to aid in loading revolvers.  Accepts 6 standard pistol cartridges."
 msgstr ""
+"한번에 실린더에 투입할 수 있도록 탄약을 고정시키거나 떼어낼 수 있는 장전보조기구입니다. 표준 권총탄을 6발까지 고정시킬 수 있 습니다."
 
 #: data/mods/Generic_Guns/magazines/pistol_magnum.json
 msgid ".44 pistol magazine"
@@ -200608,6 +201246,8 @@ msgid ""
 "A 'speedloader', a metal block capable of holding and releasing ammunition "
 "to aid in loading revolvers.  Accepts 6 magnum pistol cartridges."
 msgstr ""
+"한번에 실린더에 투입할 수 있도록 탄약을 고정시키거나 떼어낼 수 있는 장전보조기구입니다. 매그넘 권총탄을 8발까지 고정시킬 수 있 "
+"습니다."
 
 #: data/mods/Generic_Guns/magazines/pistol_tiny.json
 msgid ".22 pistol magazine"
@@ -200644,6 +201284,8 @@ msgid ""
 "A 'speedloader', a metal block capable of holding and releasing ammunition "
 "to aid in loading revolvers.  Accepts 8 standard tiny pistol cartridges."
 msgstr ""
+"한번에 실린더에 투입할 수 있도록 탄약을 고정시키거나 떼어낼 수 있는 장전보조기구입니다. 표준 초소형 권총탄을 8발까지 고정시킬 수 있 "
+"습니다."
 
 #: data/mods/Generic_Guns/magazines/rifle.json
 #: data/mods/Generic_Guns/vehicles/ammo_redefine_hacks/temp_magazine_json_load_hack.json
