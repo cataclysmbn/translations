@@ -29,7 +29,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-02-17 01:01+0000\n"
+"POT-Creation-Date: 2024-02-24 00:35+0000\n"
 "Last-Translator: Vorpal Void <vorpal.void@gmail.com>, 2024\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -11810,6 +11810,10 @@ msgid ""
 msgstr ""
 "Вы разрубаете колоссальную массу слипшейся, протухшей плоти, и пытаетесь "
 "найти что-нибудь стоящее."
+
+#: data/json/harvest.json
+msgid "<incubator_mammal>"
+msgstr ""
 
 #: data/json/harvest.json
 msgid "<arachnid_harvest>"
@@ -25822,14 +25826,10 @@ msgstr "безоружный бой"
 #. ~ Description for {'str': 'unarmed combat'}
 #: data/json/skills.json
 msgid ""
-"Your skill in hand-to-hand fighting.  For the unskilled, it's a good way to "
-"get hurt, but those with enough practice can perform special blows and "
-"techniques to quickly dispatch enemies."
+"Your skill in hand-to-hand fighting, with unarmed weapons or empty-handed.  "
+"Skill increases attack accuracy and unlocks techniques in many martial arts,"
+" while also providing a bonus to bare-handed damage."
 msgstr ""
-"Навык рукопашного боя без оружия. На низких уровнях навыка, ввязывание в бой"
-" без оружия — способ побыстрее отдать концы. Те счастливцы, которые "
-"достаточно овладеют навыком, смогут проводить спецброски и сокрушительные "
-"удары."
 
 #: data/json/skills.json
 msgid "weapon"
@@ -28054,6 +28054,26 @@ msgstr "«уиррр!»"
 #: data/json/speech.json src/vehicle.cpp
 msgid "vroom!"
 msgstr "«вуммм!»"
+
+#: data/json/speech.json
+msgid "heavy breathing"
+msgstr ""
+
+#: data/json/speech.json
+msgid "labored breathing"
+msgstr ""
+
+#: data/json/speech.json
+msgid "a whimper"
+msgstr ""
+
+#: data/json/speech.json
+msgid "a rasping growl"
+msgstr ""
+
+#: data/json/speech.json
+msgid "a quiet chittering"
+msgstr ""
 
 #: data/json/spells_trap.json
 msgid "Can Alarm Trigger"
@@ -38024,6 +38044,7 @@ msgid "A wet pit with exposed hints of iron-rich earth."
 msgstr "Влажная яма с обнаженными участками земли, богатой железом."
 
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "mound of dirt"
 msgstr "земляная насыпь"
 
@@ -41827,6 +41848,21 @@ msgstr ""
 " и заполнить влажным наполнителем."
 
 #: data/json/furniture_and_terrain/terrain-walls.json
+msgid "smooth dirt wall"
+msgstr ""
+
+#. ~ Description for smooth dirt wall
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid ""
+"A solid wall of compressed dirt, mixed with… something to keep it stable.  "
+"Its surface glistens slightly, and it smells like rotten milk."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "heavy rumbling!"
+msgstr "громкий гул!"
+
+#: data/json/furniture_and_terrain/terrain-walls.json
 msgid "junk metal wall"
 msgstr "стена из металлолома"
 
@@ -41852,10 +41888,6 @@ msgid ""
 msgstr ""
 "Цельная стена из спрессованной земли, довольно прочная, чтобы держать крышу "
 "с достаточным количеством стен и не впускать незваных гостей."
-
-#: data/json/furniture_and_terrain/terrain-walls.json
-msgid "heavy rumbling!"
-msgstr "громкий гул!"
 
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "junk metal barrier"
@@ -42477,20 +42509,23 @@ msgstr "Окно с металлическими решётками"
 #. ~ Description for Window with metal grate
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"Metal bars made into a grate for a window, Highly durability and will stand "
-"against any foe"
+"Metal bars made into a grate for a window, highly durable and will stand "
+"against any foe."
 msgstr ""
-"Металлическая решетка в оконной раме. Очень прочная, способна остановить "
-"любого врага."
 
 #. ~ Description for Window with metal grate
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"Metal bars made into a grate for a window with a closed curtain, Highly "
-"durability and will stand against any foe"
+"Metal bars made into a grate for a window with a closed curtain, highly "
+"durable and will stand against any foe."
 msgstr ""
-"Металлическая решетка в оконной раме с задёрнутыми занавесками. Очень "
-"прочная, способна остановить любого врага."
+
+#. ~ Description for Window with metal grate
+#: data/json/furniture_and_terrain/terrain-windows.json
+msgid ""
+"Metal bars made into a grate for a window with a opened curtain, highly "
+"durable and will stand against any foe."
+msgstr ""
 
 #. ~ Description for Window with metal grate
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -42678,7 +42713,7 @@ msgstr ""
 "задёрнуты, чтобы заблокировать внешний обзор и не впускать солнечный свет."
 
 #. ~ Description for Triple glazed glass window with a curtain
-#. ~ Description for Triple-pane glass window With a curtain
+#. ~ Description for Triple-pane glass window with a curtain
 #. ~ Description for Reinforced triple-pane glass window with a curtain
 #. ~ Description for Reinforced triple glazed glass window With a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -42691,8 +42726,8 @@ msgstr ""
 "свет."
 
 #: data/json/furniture_and_terrain/terrain-windows.json
-msgid "Triple-pane glass window With a curtain"
-msgstr "Трёхслойное стеклянное окно с занавеской"
+msgid "Triple-pane glass window with a curtain"
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced-triple pane glass window"
@@ -42756,7 +42791,6 @@ msgstr ""
 "задёрнуты, чтобы заблокировать внешний обзор и не впускать солнечный свет."
 
 #. ~ Description for Quadruple glazed glass window with a curtain
-#. ~ Description for Quadruple glazed glass window With a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
 "A quadruple glazed window with fancy curtains on the inside that can be "
@@ -42765,10 +42799,6 @@ msgstr ""
 "Четырехслойное окно с причудливыми занавесками на внутренней части, которые "
 "можно задёрнуть, чтобы заблокировать внешний обзор и не впускать солнечный "
 "свет."
-
-#: data/json/furniture_and_terrain/terrain-windows.json
-msgid "Quadruple glazed glass window With a curtain"
-msgstr "Четырехслойное окно с занавеской"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced quadruple glazed glass window"
@@ -42802,7 +42832,6 @@ msgid "Reinforced quadruple glazed glass window with a curtain"
 msgstr "Усиленное четырехслойное окно с занавеской"
 
 #. ~ Description for Reinforced quadruple glazed glass window with a curtain
-#. ~ Description for Reinforced quadruple glazed glass window With a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
 "A reinforced quadruple glazed window with fancy curtains on the inside that "
@@ -42811,10 +42840,6 @@ msgstr ""
 "Усиленное четырехслойное окно с причудливыми занавесками на внутренней "
 "части, которые можно задёрнуть, чтобы заблокировать внешний обзор и не "
 "впускать солнечный свет."
-
-#: data/json/furniture_and_terrain/terrain-windows.json
-msgid "Reinforced quadruple glazed glass window With a curtain"
-msgstr "Усиленное четырехслойное окно с занавеской"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Plastic window"
@@ -42845,41 +42870,26 @@ msgstr "Пластиковое окно с занавеской"
 #. ~ Description for Plastic window with a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"A makeshift window with a closed curtain.  comprising a sheet of "
+"A makeshift window with a closed curtain.  Comprising a sheet of "
 "translucent, rigid plastic secured in a wooden frame.  There are sheets "
 "drawn across it to block the light.  It'll do in a pinch."
 msgstr ""
-"Самодельное окно с занавеской — пластиковый полупрозрачный лист, "
-"закреплённый в оконной раме. Внутри повешена занавеска, которая задёрнута, "
-"чтобы заблокировать внешний обзор и не впускать солнечный свет. Сойдёт на "
-"крайний случай."
 
 #. ~ Description for Plastic window with a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"A makeshift window with a opened curtain.  comprising a sheet of "
+"A makeshift window with a opened curtain.  Comprising a sheet of "
 "translucent, rigid plastic secured in a wooden frame, with sheets strung "
 "about it to block the light as required.  It'll do in a pinch."
 msgstr ""
-"Самодельное окно с открытой занавеской — пластиковый полупрозрачный лист, "
-"закреплённый в оконной раме с занавесками, которыми можно легко отсечь "
-"наружный свет. Сойдёт на крайний случай."
 
-#: data/json/furniture_and_terrain/terrain-windows.json
-msgid "Plastic window With a curtain"
-msgstr "Пластиковое окно с занавеской"
-
-#. ~ Description for Plastic window With a curtain
+#. ~ Description for Plastic window with a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"An opened makeshift window with a opened curtain.  comprising a sheet of "
+"An opened makeshift window with a opened curtain.  Comprising a sheet of "
 "translucent, rigid plastic secured in a wooden frame, with sheets strung "
 "about it to block the light as required.  It'll do in a pinch."
 msgstr ""
-"Открытое самодельное окно с занавеской — пластиковый полупрозрачный лист, "
-"закреплённый в оконной раме. Внутри повешена занавеска, которую можно "
-"задёрнуть, чтобы заблокировать внешний обзор и не впускать солнечный свет. "
-"Сойдёт на крайний случай."
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced plastic window"
@@ -42914,20 +42924,16 @@ msgstr "Усиленное пластиковое окно с занавеско
 #. ~ Description for Reinforced plastic window with a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"A makeshift window with a closed curtain.  comprising three sheets of "
+"A makeshift window with a closed curtain.  Comprising three sheets of "
 "translucent, rigid plastic secured in a wooden frame.  It'll do in a pinch."
 msgstr ""
-"Самодельное окно с задёрнутой занавеской — три пластиковых полупрозрачных "
-"листа, закреплённых в оконной раме. Сойдёт на крайний случай."
 
 #. ~ Description for Reinforced plastic window with a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"A makeshift window with a opened curtain.  comprising three sheets of "
+"A makeshift window with a opened curtain.  Comprising three sheets of "
 "translucent, rigid plastic secured in a wooden frame.  It'll do in a pinch."
 msgstr ""
-"Самодельное окно с открытой занавеской — три пластиковых полупрозрачных "
-"листа, закреплённых в оконной раме. Сойдёт на крайний случай."
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced plastic window With a curtain"
@@ -42936,11 +42942,9 @@ msgstr "Усиленное пластиковое окно с занавеско
 #. ~ Description for Reinforced plastic window With a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"An open makeshift window with a opened curtain.  comprising three sheets of "
+"An open makeshift window with a opened curtain.  Comprising three sheets of "
 "translucent, rigid plastic secured in a wooden frame.  It'll do in a pinch."
 msgstr ""
-"Открытое самодельное окно с открытой занавеской — три пластиковых "
-"полупрозрачных листа, закреплённых в оконной раме. Сойдёт на крайний случай."
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Skylight frame"
@@ -135044,6 +135048,15 @@ msgstr "Стелящаяся тьма: телепорт"
 msgid "And this teleports the caster, counts as a safe teleport."
 msgstr "Это телепортирует заклинателя, считается безопасным телепортом."
 
+#: data/json/monster_special_attacks/spells.json
+msgid "Dermatik Emergence"
+msgstr ""
+
+#. ~ Description for Dermatik Emergence
+#: data/json/monster_special_attacks/spells.json
+msgid "The incubating dermatik larvae flee their host."
+msgstr ""
+
 #: data/json/monsters/bird.json
 msgid "chicken"
 msgid_plural "chickens"
@@ -137566,11 +137579,10 @@ msgstr[3] "дерматики"
 #. ~ Description for {'str': 'dermatik'}
 #: data/json/monsters/insect_spider.json
 msgid ""
-"A mutated wasp nearly the size of a cat, with a barbed ovipositor extruding "
-"from the abdomen."
+"A colorful parasitoid wasp grown to the size of a dog, with a huge "
+"ovipositor extruding from her abdomen.  It darts around in search of a "
+"suitable home for her many, many children."
 msgstr ""
-"Мутировавшая оса размером с кошку, с торчащим из брюшка острым жалом-"
-"яйцекладом."
 
 #: data/json/monsters/insect_spider.json
 msgid "dermatik larva"
@@ -137586,6 +137598,77 @@ msgid ""
 "A fat white grub as big as a squirrel, with a pair of large, spadelike "
 "mandibles."
 msgstr "Толстая белая личинка размером с белку, с парой больших жвал."
+
+#: data/json/monsters/insect_spider.json
+msgid "dermatik midwife"
+msgid_plural "dermatik midwives"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'dermatik midwife', 'str_pl': 'dermatik
+#. midwives'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A dermatik grown even larger, its wings and ovipositor chewed off by her "
+"sisters.  It now stands watch in the nest, tending to the unfortunate hosts "
+"dragged home and ensuring they don't perish before their purpose is "
+"fulfilled."
+msgstr ""
+
+#: data/json/monsters/insect_spider.json
+msgid "motionless deer"
+msgid_plural "motionless deers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'motionless deer'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A paralyzed, emaciated deer.  It spasms as it notices your presence, "
+"terrified eyes darting around the muddy chamber when it fails to stand and "
+"flee."
+msgstr ""
+
+#. ~ Attack message of monster "{'str': 'motionless deer'}"'s spell "None"
+#: data/json/monsters/insect_spider.json
+msgid "The sudden motion of their host cause some dermatik larvae to flee!"
+msgstr ""
+
+#: data/json/monsters/insect_spider.json
+msgid "helpless dog"
+msgid_plural "helpless dogs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'helpless dog'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A barely living dog, panting in a pool of slime and blood.  As you draw near"
+" it lets out a faint whimper, and you see the smallest hint of a twitch in "
+"its tail."
+msgstr ""
+
+#: data/json/monsters/insect_spider.json
+msgid "twitching spider"
+msgid_plural "twitching spiders"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'twitching spider'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A giant, mutated spider lying on its back, legs twitching without pause.  A "
+"translucent slime, mixed with its ichor seeps from its joints, and its "
+"chitin is marked by numerous exit wounds."
+msgstr ""
 
 #: data/json/monsters/insect_spider.json
 msgid "giant ant"
@@ -204984,6 +205067,42 @@ msgstr "<bug_harvest_acid_deeper>."
 #: data/json/snippets/mutant_anatomy.json
 msgid "<bug_harvest_acid_descriptive>."
 msgstr "<bug_harvest_acid_descriptive>."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The skin is so riddled with wounds that you barely need to cut to pull it "
+"away."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The poor creature has stopped breathing, but there's still a lot of movement"
+" in the corpse."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The larvae seem to have taken care to leave enough intact not to kill their "
+"host, but the rest is practically hollow."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You have to pause often to stomp on the slower grubs, who only now realized "
+"that their home is growing cold."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Its stomach is full of grubs even more malformed than the rest.  The runt of"
+" the litter got recycled, it seems."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"In the beginning you take care to separate parasite and host, but after a "
+"while you give up and start cutting through."
+msgstr ""
 
 #: data/json/snippets/newspapers.json
 msgid ""
@@ -301543,7 +301662,7 @@ msgstr ""
 "странные символы (например, пустые поля или вопросительные знаки). Вы были "
 "предупреждены."
 
-#: src/newcharacter.cpp src/player.cpp
+#: src/newcharacter.cpp
 #, c-format
 msgid ""
 "Select a style.\n"
@@ -307807,6 +307926,17 @@ msgstr "Вы ставите %1$s на %2$s, чтобы избежать разл
 #, c-format
 msgid "To avoid spilling its contents, <npcname> sets their %1$s on the %2$s."
 msgstr "<npcname> ставит %1$s на %2$s, чтобы избежать разлива содержимого."
+
+#: src/player.cpp
+#, c-format
+msgid ""
+"Select a style.\n"
+"\n"
+"STR: <color_white>%d</color>, DEX: <color_white>%d</color>, PER: <color_white>%d</color>, INT: <color_white>%d</color>\n"
+"Base empty-handed damage: %3d\n"
+"Effective dodge rating: %4.1f\n"
+"Press [<color_yellow>%s</color>] for more info.\n"
+msgstr ""
 
 #: src/player.cpp
 msgid "Keep hands free (off)"
