@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-02-24 00:35+0000\n"
+"POT-Creation-Date: 2024-03-02 00:55+0000\n"
 "Last-Translator: Fruitybite, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -7396,6 +7396,17 @@ msgid ""
 msgstr "서로를 밀어내는 괴물들이 갖는 AI 태그입니다. 당신이 갖고 있다면 버그입니다."
 
 #: data/json/effects.json
+msgid "Recently Split"
+msgstr ""
+
+#. ~ Description of effect 'Recently Split'.
+#: data/json/effects.json
+msgid ""
+"AI tag for ABSORBS_SPLITS monsters having recently divided, forcing a "
+"cooldown between splits.  This is a bug if you have it."
+msgstr ""
+
+#: data/json/effects.json
 msgid "Downed"
 msgstr "쓰러짐"
 
@@ -7668,6 +7679,44 @@ msgstr "심각한 중독"
 #: data/json/effects.json
 msgid "You have been badly poisoned!"
 msgstr "심각하게 중독되었습니다!"
+
+#: data/json/effects.json
+msgid "Poisoned Wound"
+msgstr "중독된 상처"
+
+#. ~ Description of effect 'Poisoned Wound'.
+#: data/json/effects.json
+msgid "The wound swells visibly and burns like hell."
+msgstr "상처가 눈에 띄게 부어올랐으며 불타는 것처럼 뜨겁습니다."
+
+#. ~ Apply message for effect(s) 'Poisoned Wound'.
+#: data/json/effects.json
+msgid "Ow, that stings!"
+msgstr "악, 따가워!"
+
+#. ~ Remove message for effect(s) 'Poisoned Wound'.
+#: data/json/effects.json
+msgid "The burning pain subsides, but the damage is done."
+msgstr "불타는 것 같던 고통이 가라앉았지만, 입은 부상은 그대로 남아있습니다."
+
+#: data/json/effects.json
+msgid "Weakening Poison"
+msgstr "약화독"
+
+#. ~ Description of effect 'Weakening Poison'.
+#: data/json/effects.json
+msgid "You feel feeble."
+msgstr "나약해진 기분이 듭니다."
+
+#. ~ Apply message for effect(s) 'Weakening Poison'.
+#: data/json/effects.json
+msgid "The sting itself barely hurt, but suddenly you feel exhausted."
+msgstr "찔린 것 자체는 별 것 아니었지만, 갑자기 몸에서 힘이 쭉 빠져나갑니다."
+
+#. ~ Remove message for effect(s) 'Weakening Poison'.
+#: data/json/effects.json
+msgid "The weight on your chest lessens."
+msgstr "몸을 짓누르던 무력감이 사라집니다."
 
 #: data/json/effects.json
 msgid "Food Poisoning"
@@ -10833,6 +10882,12 @@ msgstr "조심스럽게 외골격을 벌리고, 그 아래 살점들을 얻어�
 
 #: data/json/harvest.json
 msgid ""
+"You carefully crack open the lobster's exoskeleton to get at the delicious "
+"flesh beneath."
+msgstr ""
+
+#: data/json/harvest.json
+msgid ""
 "You search for any salvageable bionic hardware in what's left of this failed"
 " experiment"
 msgstr "당신은 이 실패한 실험에서 수거할 수 있는 바이오닉이 있는지 살펴보았습니다."
@@ -10857,7 +10912,7 @@ msgstr ""
 msgid "<arachnid_harvest>"
 msgstr " <arachnid_harvest>"
 
-#: data/json/harvest.json
+#: data/json/harvest.json data/json/snippets/mutant_anatomy.json
 msgid "<arachnid_flying_harvest>"
 msgstr "<arachnid_flying_harvest>  "
 
@@ -10876,18 +10931,28 @@ msgstr ""
 "것이 보이는데, 당신이 알고 있는 바로는 진짜 벌한테는 이런 부위가 없었습니다."
 
 #: data/json/harvest.json
-msgid ""
-"There's a faintly hairy, skin-like membrane, covered in blood vessels, "
-"beneath the chitin of this creature.  Inside it is a bundle of bubble-like "
-"tissue sacs that appear to be floating, which doesn't fit with what you know"
-" about real wasps."
-msgstr ""
-"희미한 털과 피부처럼 생긴 막이 혈관으로 덮인 채 이 개체의 키틴질 아래에 위치합니다. 내부에는 거품처럼 생긴 낭 조직이 둥둥 떠있는 "
-"것이 보이는데, 당신이 알고 있는 바로는 진짜 말벌한테는 이런 부위가 없었습니다."
+msgid "<wasp_harvest>"
+msgstr "<wasp_harvest>"
+
+#: data/json/harvest.json
+msgid "<wasp_queen_harvest>"
+msgstr "<wasp_queen_harvest>"
 
 #: data/json/harvest.json
 msgid "<firefly_harvest>"
 msgstr "<firefly_harvest>  "
+
+#: data/json/harvest.json data/json/snippets/mutant_anatomy.json
+msgid "<centipede_harvest>"
+msgstr "<centipede_harvest>"
+
+#: data/json/harvest.json
+msgid "<centipede_mom_harvest>"
+msgstr "<centipede_mom_harvest>"
+
+#: data/json/harvest.json
+msgid "<centipede_mega_harvest>"
+msgstr "<centipede_mega_harvest>"
 
 #: data/json/harvest.json
 msgid "You laboriously hack and dig through the remains of the fungal mass."
@@ -15474,14 +15539,14 @@ msgstr "%1$s(이)가 <npcname>의 몸을 찔렀다!"
 #, c-format
 msgid ""
 "The %1$s tries to impale your torso, but fails to penetrate your armor!"
-msgstr "%1$s(이)가 당신의 상체를 꿰뚫으려고 했지만, 보호구를 뚫지 못했다!"
+msgstr "%1$s(이)가 당신의 상체를 꿰뚫으려 했으나, 방어구를 뚫지 못했습니다!"
 
 #: data/json/monster_attacks.json src/monattack.cpp
 #, c-format
 msgid ""
 "The %1$s tries to impale <npcname>'s torso, but fails to penetrate their "
 "armor!"
-msgstr "%1$s(이)가 <npcname>의 상체를 꿰뚫으려고 했지만, 보호구를 뚫지 못했다!"
+msgstr "%1$s(이)가 <npcname>의 상체를 꿰뚫으려 했으나, 방어구를 뚫지 못했습니다!"
 
 #: data/json/monster_attacks.json
 msgid "The %1$s claws at you!"
@@ -15525,11 +15590,30 @@ msgstr "%1$s(이)가 <npcname>(을)를 찌릅니다!"
 
 #: data/json/monster_attacks.json
 msgid "The %1$s tries to stab you, but fails to penetrate your armor."
-msgstr "%1$s(이)가 당신을 찌르려고 했지만, 방어구를 뚫지 못했습니다."
+msgstr "%1$s(이)가 당신을 찔렀으나, 방어구를 뚫지 못했습니다."
 
 #: data/json/monster_attacks.json
 msgid "The %1$s tries to stab <npcname>, but fails to penetrate their armor!."
-msgstr "%1$s(이)가 <npcname>(을)를 찌르려 했지만, 방어구를 뚫지 못했습니다."
+msgstr "%1$s(이)가 <npcname>(을)를 찔렀으나, 방어구를 뚫지 못했습니다!"
+
+#: data/json/monster_attacks.json
+msgid "The %1$s stings your %2$s!"
+msgstr "%1$s(이)가 %2$s에 침을 쏩니다!"
+
+#: data/json/monster_attacks.json
+msgid "The %1$s stings <npcname>'s %2$s!"
+msgstr "%1$s(이)가 <npcname>의 %2$s에 침을 쏩니다!"
+
+#: data/json/monster_attacks.json
+msgid ""
+"The %1$s tries to sting your %2$s, but it fails to penetrate your armor."
+msgstr "%1$s(이)가 %2$s에 침을 쐈으나, 방어구를 뚫지 못했습니다."
+
+#: data/json/monster_attacks.json
+msgid ""
+"The %1$s tries to sting <npcname>'s %2$s, but it fails to penetrate their "
+"armor."
+msgstr "%1$s(이)가 <npcname>의 %2$s에 침을 쐈으나, 방어구를 뚫지 못했습니다."
 
 #: data/json/monster_attacks.json
 msgid "acid dart volley"
@@ -24261,14 +24345,38 @@ msgid "an insect"
 msgstr "곤충"
 
 #. ~ Description for a flying insect
+#. ~ Description for an angry wasp
 #: data/json/species.json
 msgid "a flying insect"
 msgid_plural "a flying insects"
 msgstr[0] "날아다니는 곤충"
 
 #: data/json/species.json
+msgid "bzzzzzzzzzzzzzzzzz"
+msgstr "위이이이이이이잉"
+
+#: data/json/species.json
+msgid "an angry wasp"
+msgid_plural "an angry wasps"
+msgstr[0] "성난 말벌 떼"
+
+#: data/json/species.json
 msgid "BZZZZZZZZZZZZZZZZZ"
 msgstr "부우우우우웅"
+
+#: data/json/species.json data/json/monsters/insect_spider.json
+msgid "centipede"
+msgid_plural "centipedes"
+msgstr[0] "지네"
+
+#. ~ Description for {'str': 'centipede'}
+#: data/json/species.json
+msgid "a centipede"
+msgstr "지네"
+
+#: data/json/species.json
+msgid "skittering."
+msgstr "호다닥 기어다닙니다."
 
 #: data/json/species.json
 msgid "spider"
@@ -35393,6 +35501,52 @@ msgstr "종이 바닥"
 msgid "Floor made of pulpy mass, covered in sticky wasp saliva."
 msgstr "끈적한 말벌 타액으로 덮인,  펄프질 물질로 만들어진 바닥입니다."
 
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "hard paper floor"
+msgstr ""
+
+#. ~ Description for hard paper floor
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid ""
+"Hardened cardboard floor made of chewed up trees and resin mixed with wasp "
+"saliva."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "paper brood cap"
+msgstr ""
+
+#. ~ Description for paper brood cap
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid ""
+"A thin paper floor, protecting the pupatig wasp larva until it's ready to "
+"emerge."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+#: data/json/furniture_and_terrain/terrain-roofs.json
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_evac_center.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_mall.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_military.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_residential.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_robofachq.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_waste_junk.json
+#: data/mods/Graphical_Overmap/go_overmap_terrain_ranch_camp.json
+#: data/mods/Graphical_Overmap/go_overmap_terrain_waste_junk.json
+#: data/mods/alt_map_key/overmap_terrain.json
+msgid "open air"
+msgstr "허공"
+
+#. ~ Description for open air
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+#: data/json/furniture_and_terrain/terrain-roofs.json
+msgid "This is open air."
+msgstr "텅 빈 허공입니다."
+
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid "mound of sand"
 msgstr "모래더미"
@@ -38045,28 +38199,6 @@ msgstr ""
 "실제로는 나타나지 않아야 하는 가짜 지형입니다. 식물이 심어져 있거나 잔디, 바닥 덮개 등이 투명하게 유지되어야 하는 곳에 사용됩니다."
 
 #: data/json/furniture_and_terrain/terrain-roofs.json
-#: data/json/overmap/overmap_terrain/overmap_terrain.json
-#: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
-#: data/json/overmap/overmap_terrain/overmap_terrain_evac_center.json
-#: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
-#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
-#: data/json/overmap/overmap_terrain/overmap_terrain_mall.json
-#: data/json/overmap/overmap_terrain/overmap_terrain_military.json
-#: data/json/overmap/overmap_terrain/overmap_terrain_residential.json
-#: data/json/overmap/overmap_terrain/overmap_terrain_robofachq.json
-#: data/json/overmap/overmap_terrain/overmap_terrain_waste_junk.json
-#: data/mods/Graphical_Overmap/go_overmap_terrain_ranch_camp.json
-#: data/mods/Graphical_Overmap/go_overmap_terrain_waste_junk.json
-#: data/mods/alt_map_key/overmap_terrain.json
-msgid "open air"
-msgstr "허공"
-
-#. ~ Description for open air
-#: data/json/furniture_and_terrain/terrain-roofs.json
-msgid "This is open air."
-msgstr "텅 빈 허공입니다."
-
-#: data/json/furniture_and_terrain/terrain-roofs.json
 msgid "rain gutter"
 msgstr "빗물 배수로"
 
@@ -38177,6 +38309,12 @@ msgstr "일반적인 돌로 만들어진 지붕입니다."
 #: data/json/furniture_and_terrain/terrain-roofs.json
 msgid "A flat surface made of pulpy mass, covered in sticky wasp saliva."
 msgstr "펄프 같은 것으로 만들어진 지붕. 말벌의 끈적한 타액으로 젖어있습니다."
+
+#. ~ Description for flat roof
+#: data/json/furniture_and_terrain/terrain-roofs.json
+msgid ""
+"A flat surface made of hardened pulpy mass, covered in sticky wasp saliva."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-roofs.json
 msgid "web bridge"
@@ -38983,6 +39121,17 @@ msgid ""
 "A huge wall of pulpy mass, covered in sticky wasp saliva.  You could smash "
 "it down effortlessly."
 msgstr "끈적한 말벌 침으로 덮인 커다란 펄프 덩어리 벽입니다. 별로 큰 노력 없이도 부술 수 있습니다."
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "layered paper wall"
+msgstr ""
+
+#. ~ Description for layered paper wall
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid ""
+"A thick wall of layered tree pulp and wasp saliva, hardened to withstand the"
+" elements.  You could break through this, but it won't be easy."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "root wall"
@@ -40584,11 +40733,12 @@ msgstr[0] "RA21E 의료용 앰플"
 #: data/json/items/ammo.json
 msgid ""
 "A tiny glass vial filled with advanced fast-healing chemicals which can only"
-" be activated by a Rivtech jet injector device.  A label on the side warns "
-"against using more than two doses per hour."
+" be activated by a Rivtech jet injector device.  The packaged instructions "
+"describe its efficacy in dealing with infections, wounds, intoxications, "
+"envenomations, and general tiredness in enthusiastic detail.  A short safety"
+" section at the end warn - in much smaller typeface - against using more "
+"than two doses per hour."
 msgstr ""
-"리브텍 제트 분사식 주사장치를 통해서만 사용 가능한 작은 유리병 속의 고속회복 약물. 측면의 라벨에 한 시간에 두 번 이상 사용하지 "
-"말라는 경고문구가 쓰여있습니다."
 
 #: data/json/items/ammo.json
 msgid "RA10K stimulant module"
@@ -72448,6 +72598,99 @@ msgid "Freshly cooked fish.  Very nutritious."
 msgstr "갓 요리된 생선입니다. 영양가가 아주 높습니다."
 
 #: data/json/items/comestibles/carnivore.json
+msgid "chunk of lobster meat"
+msgid_plural "chunks of lobster meat"
+msgstr[0] "랍스터 고기 덩어리"
+
+#. ~ Description for {'str': 'chunk of lobster meat', 'str_pl': 'chunks of
+#. lobster meat'}
+#: data/json/items/comestibles/carnivore.json
+msgid "A chunk of uncooked lobster meat."
+msgstr "조리되지 않은 랍스터 살입니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "cooked lobster"
+msgid_plural "cooked lobster"
+msgstr[0] "조리된 랍스터"
+
+#. ~ Description for {'str_sp': 'cooked lobster'}
+#: data/json/items/comestibles/carnivore.json
+msgid "A chunk of delicious cooked lobster meat."
+msgstr "맛있게 조리된 랍스터 살입니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "smoked lobster"
+msgid_plural "smoked lobster"
+msgstr[0] "훈제 랍스터"
+
+#. ~ Description for {'str_sp': 'smoked lobster'}
+#: data/json/items/comestibles/carnivore.json
+msgid ""
+"Tasty lobster that has been heavily smoked for long term preservation.  It "
+"could be further smoked to dehydrate it completely."
+msgstr "장기간 보존하기 위해 훈제시킨 맛있는 랍스터입니다. 좀 더 훈제시켜 수분을 완전히 제거할 수도 있습니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "dehydrated lobster"
+msgid_plural "dehydrated lobster"
+msgstr[0] "건조 랍스터"
+
+#. ~ Description for {'str_sp': 'dehydrated lobster'}
+#: data/json/items/comestibles/carnivore.json
+msgid ""
+"Dehydrated lobster flakes.  With proper storage, this dried food will remain"
+" edible for an incredibly long time."
+msgstr ""
+"수분을 완전히 제거한 랍스터 후레이크입니다. 적절히 보관하면 믿을 수 없을 정도로 오랫동안 먹을 수 있는 상태로 남아있을 것입니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "rehydrated lobster"
+msgid_plural "rehydrated lobster"
+msgstr[0] "물에 불린 건조 랍스터"
+
+#. ~ Description for {'str_sp': 'rehydrated lobster'}
+#: data/json/items/comestibles/carnivore.json
+msgid ""
+"Reconstituted lobster flakes, which are much more enjoyable to eat now that "
+"they have been rehydrated."
+msgstr "건조 랍스터를 물에 불려, 더 먹기 좋게 만든 것입니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "pickled lobster"
+msgid_plural "pickled lobster"
+msgstr[0] "절인 랍스터"
+
+#. ~ Description for {'str_sp': 'pickled lobster'}
+#: data/json/items/comestibles/carnivore.json
+msgid ""
+"This is a serving of crisply brined and canned lobster.  Tasty and "
+"nutritious."
+msgstr "랍스터를 절여 만든 통조림입니다. 맛있고 영양가가 높습니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "salted lobster slice"
+msgid_plural "salted lobster slices"
+msgstr[0] "염장 랍스터 조각"
+
+#. ~ Description for salted lobster slice
+#: data/json/items/comestibles/carnivore.json
+msgid "lobster slices cured in brine.  Salty but tasty in a pinch."
+msgstr "소금물에 절인 랍스터 조각입니다. 짜지만, 맛있습니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "canned lobster"
+msgid_plural "canned lobster"
+msgstr[0] "랍스터 통조림"
+
+#. ~ Description for {'str_sp': 'canned lobster'}
+#: data/json/items/comestibles/carnivore.json
+msgid ""
+"Low-sodium preserved lobster.  It was boiled and canned.  Contains most of "
+"the nutrition, but little of the savor of cooked lobster."
+msgstr ""
+"저염 방식으로 삶아 만든 랍스터 통조림입니다. 영양분을 대부분 그대로 보존하고 있지만, 제대로 조리한 것보다는 풍미가 떨어집니다."
+
+#: data/json/items/comestibles/carnivore.json
 msgid "human stomach"
 msgid_plural "human stomachs"
 msgstr[0] "인간의 위"
@@ -72803,7 +73046,7 @@ msgstr[0] "%s, 돌연변이"
 msgid ""
 "Tasty meat that has been heavily smoked for preservation.  It could be "
 "further smoked to dehydrate it completely."
-msgstr "보존을 위해 훈제된 맛있는 고기입니다. 수분을 완전히 제거하기 위해 추가로 훈제될 수도 있습니다."
+msgstr "장기간 보존하기 위해 훈제시킨 맛있는 고기입니다. 좀 더 훈제시켜 수분을 완전히 제거할 수도 있습니다."
 
 #: data/json/items/comestibles/carnivore.json
 msgid "smoked fish"
@@ -72815,7 +73058,7 @@ msgstr[0] "훈제 생선"
 msgid ""
 "Tasty fish that has been heavily smoked for long term preservation.  It "
 "could be further smoked to dehydrate it completely."
-msgstr "장기간 보존을 위해 훈제된 맛있는 생선입니다. 수분을 완전히 제거하면 훈제가 될 수도 있습니다."
+msgstr "장기간 보존하기 위해 훈제시킨 맛있는 생선입니다. 좀 더 훈제시켜 수분을 완전히 제거할 수도 있습니다."
 
 #: data/json/items/comestibles/carnivore.json
 msgid "piece of raw lung"
@@ -74415,6 +74658,18 @@ msgid "An egg belonging to one of reptile species found in New England."
 msgstr "이 알을 낳은 것은 뉴잉글랜드의 어느 파충류 종일 것입니다."
 
 #: data/json/items/comestibles/egg.json
+msgid "Insect Egg"
+msgid_plural "Insect Eggs"
+msgstr[0] "곤충 알"
+
+#. ~ Description for Insect Egg
+#: data/json/items/comestibles/egg.json
+msgid ""
+"An egg belonging to some kind of insect.  If you are seeing this then it is "
+"a bug."
+msgstr ""
+
+#: data/json/items/comestibles/egg.json
 msgid "ant egg"
 msgid_plural "ant eggs"
 msgstr[0] "개미 알"
@@ -74483,6 +74738,30 @@ msgid ""
 msgstr ""
 "아직 축축한 돌연변이 잠자리 알입니다. 역겹다는 점을 감수하면 진짜 달걀의 대용품으로 사용할 수 있습니다. 물에 넣으면 부화할지도 모르니"
 " 조심합시다."
+
+#: data/json/items/comestibles/egg.json
+msgid "centipede egg"
+msgid_plural "centipede eggs"
+msgstr[0] "지네 알"
+
+#. ~ Description for centipede egg
+#: data/json/items/comestibles/egg.json
+msgid ""
+"A large, soft egg you got from butchering a mutant centipede.  Inside, you "
+"can already see a bundle of spindly legs, twitching in anticipation."
+msgstr ""
+
+#: data/json/items/comestibles/egg.json
+msgid "wasp egg"
+msgid_plural "wasp eggs"
+msgstr[0] "말벌 알"
+
+#. ~ Description for {'str': 'wasp egg'}
+#: data/json/items/comestibles/egg.json
+msgid ""
+"A white, flexible wasp egg.  It looks like a pristine grain of rice, grown "
+"to the size of your palm."
+msgstr "하얗고 유연한 말벌 알입니다. 갓 도정한 쌀알처럼 생겼으며, 당신의 손바닥만한 크기입니다."
 
 #: data/json/items/comestibles/egg.json
 msgid "razorclaw roe"
@@ -74820,7 +75099,7 @@ msgid ""
 "edible for an incredibly long time.  They are useful for several cooking "
 "recipes."
 msgstr ""
-"건조처리를 거친 과일 조각입니다. 적절히 보관하면 놀라울 정도로 오랫동안 먹을만하게 남아있을 것입니다. 몇몇 요리에 유용하게 쓰입니다."
+"수분을 완전히 제거한 과일 후레이크입니다. 적절히 보관하면 믿을 수 없을 정도로 오랫동안 먹을 수 있는 상태로 남아있을 것입니다."
 
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "rehydrated fruit"
@@ -74832,7 +75111,7 @@ msgstr[0] "물에 불린 건조 과일"
 msgid ""
 "Reconstituted fruit flakes, which are much more enjoyable to eat now that "
 "they have been rehydrated."
-msgstr "건조 과일을 물에 불려, 더 먹을만하게 만들었습니다."
+msgstr "건조 과일을 물에 불려, 더 먹기 좋게 만든 것입니다."
 
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "fruit slice"
@@ -76334,7 +76613,8 @@ msgstr[0] "건조 생선"
 msgid ""
 "Dehydrated fish flakes.  With proper storage, this dried food will remain "
 "edible for an incredibly long time."
-msgstr "건조처리를 거친 생선 조각입니다. 적절히 보관하면 놀라울 정도로 오랫동안 먹을만하게 남아있을 것입니다."
+msgstr ""
+"수분을 완전히 제거한 생선 후레이크입니다. 적절히 보관하면 믿을 수 없을 정도로 오랫동안 먹을 수 있는 상태로 남아있을 것입니다."
 
 #: data/json/items/comestibles/meat_dishes.json
 msgid "rehydrated fish"
@@ -76346,7 +76626,7 @@ msgstr[0] "물에 불린 건조 생선"
 msgid ""
 "Reconstituted fish flakes, which are much more enjoyable to eat now that "
 "they have been rehydrated."
-msgstr "건조 생선을 물에 불려, 더 먹을만하게 만들었습니다."
+msgstr "건조 생선을 물에 불려, 더 먹기 좋게 만든 것입니다."
 
 #: data/json/items/comestibles/meat_dishes.json
 msgid "pickled fish"
@@ -76357,7 +76637,7 @@ msgstr[0] "생선 식초절임"
 #: data/json/items/comestibles/meat_dishes.json
 msgid ""
 "This is a serving of crisply brined and canned fish.  Tasty and nutritious."
-msgstr "소금에 절인 생선을 통조림으로 만든 식품입니다. 맛있고 영양가가 높습니다."
+msgstr "생선을 절여 만든 통조림입니다. 맛있고 영양가가 높습니다."
 
 #: data/json/items/comestibles/meat_dishes.json
 msgid "canned fish"
@@ -76369,7 +76649,8 @@ msgstr[0] "생선 통조림"
 msgid ""
 "Low-sodium preserved fish.  It was boiled and canned.  Contains most of the "
 "nutrition, but little of the savor of cooked fish."
-msgstr "저염 보존 생선. 삶아서 통조림으로 만들었습니다. 영양가가 높지만, 생선의 풍미가 부족합니다."
+msgstr ""
+"저염 방식으로 삶아 만든 생선 통조림입니다. 영양분을 대부분 그대로 보존하고 있지만, 제대로 조리한 것보다는 풍미가 떨어집니다."
 
 #: data/json/items/comestibles/meat_dishes.json
 msgid "batter fried fish"
@@ -76829,7 +77110,8 @@ msgstr[0] "소일렌트 슬라이스"
 msgid ""
 "Low-sodium preserved meat.  It was boiled and canned.  Contains most of the "
 "nutrition, but little of the savor of cooked meat."
-msgstr "저염 보존 고기. 삶아서 통조림으로 만들었습니다. 영양소가 높지만, 구운 고기보다는 맛없습니다."
+msgstr ""
+"저염 방식으로 삶아 만든 고기 통조림입니다. 영양분을 대부분 그대로 보존하고 있지만, 제대로 조리한 것보다는 풍미가 떨어집니다."
 
 #: data/json/items/comestibles/meat_dishes.json
 msgid "salted meat slice"
@@ -77023,12 +77305,12 @@ msgstr[0] "절인 고아"
 #: data/json/items/comestibles/meat_dishes.json
 msgid ""
 "This is a serving of crisply brined and canned meat.  Tasty and nutritious."
-msgstr "소금에 절인 고기를 통조림으로 만든 식품입니다. 고기의 식감이 아직 남아있어 맛있고 영양가가 높습니다."
+msgstr "고기를 절여 만든 통조림입니다. 맛있고 영양가가 높습니다."
 
 #: data/json/items/comestibles/meat_dishes.json
 msgid "dehydrated meat"
 msgid_plural "dehydrated meats"
-msgstr[0] "건조된 고기"
+msgstr[0] "건조 고기"
 
 #. ~ Conditional name for dehydrated meat when FLAG matches CANNIBALISM
 #. ~ Conditional name for rehydrated meat when FLAG matches CANNIBALISM
@@ -77043,7 +77325,8 @@ msgstr[0] "%s, 인간(이었던 것)"
 msgid ""
 "Dehydrated meat flakes.  With proper storage, this dried food will remain "
 "edible for an incredibly long time."
-msgstr "건조 처리한 고기 조각. 적절하게 보관하면, 놀라울 정도로 오랫동안 먹을 수 있는 상태로 보관할 수 있습니다."
+msgstr ""
+"수분을 완전히 제거한 고기 후레이크입니다. 적절히 보관하면 믿을 수 없을 정도로 오랫동안 먹을 수 있는 상태로 남아있을 것입니다."
 
 #: data/json/items/comestibles/meat_dishes.json
 msgid "rehydrated meat"
@@ -77055,7 +77338,7 @@ msgstr[0] "물에 불린 건조 고기"
 msgid ""
 "Reconstituted meat flakes, which are much more enjoyable to eat now that "
 "they have been rehydrated."
-msgstr "건조처리 고기에 다시 수분을 넣어 더 먹기 좋게 만든 음식입니다."
+msgstr "건조 고기를 물에 불려, 더 먹기 좋게 만든 것입니다."
 
 #: data/json/items/comestibles/meat_dishes.json
 msgid "haggis"
@@ -80562,12 +80845,12 @@ msgstr[0] "구운 두부"
 #: data/json/items/comestibles/other.json
 msgid "dehydrated tofu"
 msgid_plural "dehydrated tofu"
-msgstr[0] "말린 두부"
+msgstr[0] "건조 두부"
 
 #. ~ Description for {'str_sp': 'dehydrated tofu'}
 #: data/json/items/comestibles/other.json
 msgid "Dehydrated tofu, sealed and still extra firm to last a long time."
-msgstr "말린 두부입니다. 잘 밀봉되어있으며 아주 오랫동안 보존할 수 있습니다."
+msgstr "건조 두부입니다. 잘 밀봉되어있으며 아주 오랫동안 보존할 수 있습니다."
 
 #: data/json/items/comestibles/other.json
 msgid "soybeans"
@@ -81965,6 +82248,16 @@ msgid "A delicious fish bagel with spinach and eggs."
 msgstr "시금치와 달걀을 넣은 맛있는 생선 베이글입니다."
 
 #: data/json/items/comestibles/sandwich.json
+msgid "lobster roll"
+msgid_plural "lobster rolls"
+msgstr[0] "랍스터 롤"
+
+#. ~ Description for {'str': 'lobster roll'}
+#: data/json/items/comestibles/sandwich.json
+msgid "A delicious authentic lobster roll."
+msgstr "맛있는 진짜 랍스터 롤입니다."
+
+#: data/json/items/comestibles/sandwich.json
 msgid "BLT"
 msgid_plural "BLTs"
 msgstr[0] "베이컨 양상추 토마토 샌드위치"
@@ -82888,6 +83181,16 @@ msgid "A nutritious and delicious hearty fish soup."
 msgstr "따뜻한 생선 수프. 맛있고 영양가도 풍부합니다."
 
 #: data/json/items/comestibles/soup.json
+msgid "lobster soup"
+msgid_plural "lobster soups"
+msgstr[0] "랍스터 수프"
+
+#. ~ Description for lobster soup
+#: data/json/items/comestibles/soup.json
+msgid "A nutritious and delicious hearty lobster soup."
+msgstr "따뜻한 랍스터 수프. 맛있고 영양가도 풍부합니다."
+
+#: data/json/items/comestibles/soup.json
 msgid "curry"
 msgid_plural "curries"
 msgstr[0] "카레"
@@ -83510,7 +83813,7 @@ msgstr[0] "야채 식초절임"
 msgid ""
 "This is a serving of crisply brined and canned vegetable matter.  Tasty and "
 "nutritious."
-msgstr "야채를 다듬어 통조림으로 만든 식품입니다. 아삭한 식감을 가져 맛있고, 영양가가 높습니다."
+msgstr "야채를 절여 만든 통조림입니다. 맛있고 영양가가 높습니다."
 
 #: data/json/items/comestibles/veggy_dishes.json
 msgid "dehydrated vegetable"
@@ -83523,7 +83826,7 @@ msgid ""
 "Dehydrated vegetable flakes.  With proper storage, this dried food will "
 "remain edible for an incredibly long time."
 msgstr ""
-"건조 처리한 야채 후레이크. 적절히 보관하면, 이 건조 식품은 믿을 수 없을 정도로 오랫동안 먹을 수 있는 상태로 남아있을 것입니다."
+"수분을 완전히 제거한 야체 후레이크입니다. 적절히 보관하면 믿을 수 없을 정도로 오랫동안 먹을 수 있는 상태로 남아있을 것입니다."
 
 #: data/json/items/comestibles/veggy_dishes.json
 msgid "rehydrated vegetable"
@@ -83535,7 +83838,7 @@ msgstr[0] "물에 불린 건조 야채"
 msgid ""
 "Reconstituted vegetable flakes, which are much more enjoyable to eat now "
 "that they have been rehydrated."
-msgstr "건초 야채 후레이크에 물을 부어 더 먹기 좋게 만들었습니다."
+msgstr "건조 야채를 물에 불려, 더 먹기 좋게 만든 것입니다."
 
 #: data/json/items/comestibles/veggy_dishes.json
 msgid "vegetable salad"
@@ -90704,15 +91007,17 @@ msgid ""
 msgstr "물에 잠긴 화기가 안정적으로 작동할 수 있게 해주는 밀봉재와 개스킷 세트입니다."
 
 #: data/json/items/gunmod/mechanism.json
-msgid "steel bowstring"
-msgid_plural "steel bowstrings"
-msgstr[0] "강철 활줄"
+msgid "steel prod"
+msgid_plural "steel prods"
+msgstr[0] "강철 활대"
 
 #: data/json/items/gunmod/mechanism.json
 msgid ""
-"A forged steel bowstring designed for crossbows.  It allows bolts to hit "
-"harder and fly faster, but it's too high-tension to use in a regular bow."
-msgstr "석궁용으로 만들어진 강철 활줄입니다. 석궁의 위력과 탄속을 높여주지만, 일반적인 활에 달기에는 장력이 너무 높습니다."
+"A forged steel bowlimb reinforcement designed for crossbows.  Its increased "
+"draw strength makes the bolts fly farther and faster, but it makes reloading"
+" more difficult."
+msgstr ""
+"석궁에 장착하는 용도의 강철 활대 보강물입니다. 장력을 강화시켜 볼트가 더 빠르고 멀리 날아가게 하지만, 재장전을 조금 어렵게 만듭니다."
 
 #: data/json/items/gunmod/muzzle.json
 msgid "ported barrel"
@@ -105454,22 +105759,6 @@ msgid ""
 msgstr "배터리로 작동하는, 전기 아크를 이용해 금속조각을 용접하는데 쓰이는 공구입니다. 건축과 수리에 있어 필수적입니다."
 
 #: data/json/items/tool/workshop.json
-msgid "makeshift arc welder"
-msgid_plural "makeshift arc welders"
-msgstr[0] "수제 아크 용접기"
-
-#. ~ Description for {'str': 'makeshift arc welder'}
-#: data/json/items/tool/workshop.json
-msgid ""
-"This crude arc welder has been fashioned from a few small transformers, some"
-" wire, improvised electrode holder and complete disregard for personal "
-"safety.  While it's not as efficient as a factory welder, it will serve in a"
-" pinch."
-msgstr ""
-"작은 변압기, 전선, 간이 전극 홀더 등으로 만든 투박한 아크 용접기입니다. 사용하는 사람의 안전 따윈 전혀 생각하지 않은 물건이며 "
-"공장제 용접기보다 전력효율이 나쁘지만 급할 때는 쓸만합니다."
-
-#: data/json/items/tool/workshop.json
 msgid "wooden smoother"
 msgid_plural "wooden smoothers"
 msgstr[0] "목제 흙손"
@@ -109501,6 +109790,15 @@ msgstr "더마틱 발아"
 msgid "The incubating dermatik larvae flee their host."
 msgstr "배양 중이던 더마틱 유체가 숙주에서 빠져나옵니다."
 
+#: data/json/monster_special_attacks/spells.json
+msgid "Summon Centipede"
+msgstr "지네 소환"
+
+#. ~ Description for Summon Centipede
+#: data/json/monster_special_attacks/spells.json
+msgid "Summons a small, pissed off centipede."
+msgstr ""
+
 #: data/json/monsters/bird.json
 msgid "chicken"
 msgid_plural "chickens"
@@ -111164,6 +111462,14 @@ msgstr ""
 "침의 크기가 주방용 칼에 필적하는 거대 꿀벌로, 개 정도의 크기를 가진 이 곤충의 검은색과 노란색 무늬는 당신에게 얌전히 떠나라는 경고를"
 " 보내고 있는 것 같습니다."
 
+#. ~ Description for {'str': 'centipede'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A brightly colored mutant centipede the size of a small dog, skittering "
+"quickly in the underbrush.  Probably won't think you're suitable prey, but "
+"beware its venom."
+msgstr ""
+
 #: data/json/monsters/insect_spider.json
 msgid "giant centipede"
 msgid_plural "giant centipedes"
@@ -111172,9 +111478,45 @@ msgstr[0] "거대 지네"
 #. ~ Description for {'str': 'giant centipede'}
 #: data/json/monsters/insect_spider.json
 msgid ""
-"A meter-long centipede with a menacing pair of pincers, moving swiftly on "
-"dozens of spindly legs."
-msgstr "길이가 1미터에 가까운 거대 지네로, 수십 개의 다리를 가지고 빠르게 움직입니다."
+"A two meter long centipede with a menacing set of venom-dripping mandibles "
+"and a worrying number of grabbing appendages, moving swiftly on dozens of "
+"spindly legs.  It has a pair of small compound eyes, but seems to mostly "
+"orient itself with its antennae."
+msgstr ""
+
+#: data/json/monsters/insect_spider.json
+msgid "centipede matriarch"
+msgid_plural "centipede matriarchs"
+msgstr[0] "지네 대모"
+
+#. ~ Description for {'str': 'centipede matriarch'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A giant centipede grown even larger, hind segments curled up to protect a "
+"huge clump of eggs and its children of different ages.  Sometimes one of its"
+" young gets shaken off by its clutchmates and disappears into the "
+"underbrush."
+msgstr ""
+
+#. ~ Attack message of monster "{'str': 'centipede matriarch'}"'s spell "None"
+#: data/json/monsters/insect_spider.json
+msgid "A small centipede is shaken off in the struggle!"
+msgstr "작은 지네가 전투 와중에 튀어나옵니다!"
+
+#: data/json/monsters/insect_spider.json
+msgid "armored centipede"
+msgid_plural "armored centipedes"
+msgstr[0] "중장갑 지네"
+
+#. ~ Description for {'str': 'armored centipede'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A huge mutated centipede covered in interlocking chitinous plates of "
+"metallic grey, reminding you more of a runaway train car than any living "
+"animal.  Its mandibles end in jagged points, seemingly specialised to hunt "
+"prey at least as well-armored as itself.  You really don't want to try if "
+"you'd fare better."
+msgstr ""
 
 #: data/json/monsters/insect_spider.json
 msgid "firefly"
@@ -111371,6 +111713,82 @@ msgid ""
 msgstr "보통 크기보다 30배는 더 큰 변종 늑대거미로, 빠르고 공격적이게 움직여서 사냥감을 잡아먹습니다."
 
 #: data/json/monsters/insect_spider.json
+msgid "wasp larva"
+msgid_plural "wasp larvae"
+msgstr[0] "말벌 유충"
+
+#. ~ Description for {'str': 'wasp larva', 'str_pl': 'wasp larvae'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A dog-sized white grub, featureless apart from a vestigal mouthpart.  It "
+"hangs upside-down in its cell, and regurgitates sweet-smelling fluid in "
+"return for the scraps of viscera fed to it by the workers below."
+msgstr ""
+"개만한 크기의 하얀 유충으로, 입으로 보이는 기관 이외에는 별다른 특징이 없습니다. 제 방에 거꾸로 매달려있으며, 일벌들이 먹여주는 내장"
+" 조각의 대가로 달콤한 냄새가 나는 액체를 토해냅니다."
+
+#: data/json/monsters/insect_spider.json
+msgid "wasp pupa"
+msgid_plural "wasp pupae"
+msgstr[0] "말벌 번데기"
+
+#. ~ Description for {'str': 'wasp pupa', 'str_pl': 'wasp pupae'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A wasp larva undergoing metamorphosis into a full-grown giant wasp.  It "
+"looks like a strangely immobile adult coated in a thin white membrane, its "
+"legs and wings packed tightly into its cell."
+msgstr ""
+"말벌 유충이 온전한 거대 말벌로 변이하고 있는 번데기입니다. 얇고 하얀 막으로 덮인 기이한 성충이 움직이지 않고 있는 것처럼 생겼지만, "
+"그 다리와 날개가 방 안에 단단히 감싸여있습니다."
+
+#: data/json/monsters/insect_spider.json data/json/obsoletion/monsters.json
+msgid "wasp"
+msgid_plural "wasps"
+msgstr[0] "말벌"
+
+#. ~ Description for {'str': 'wasp'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A huge wasp the size of a large cat with bright yellow markings on her jet-"
+"black carapace and a threatening stinger.  It flies around erratically, "
+"searching for smaller prey."
+msgstr ""
+"큰 고양이만한 크기의 거대한 말벌로, 새까만 갑각 위에 노란 줄무늬가 그려져있고 위협적인 침이 달려있습니다. 불규칙적으로 주변을 "
+"날아다니며 자신보다 작은 사냥감을 노립니다."
+
+#: data/json/monsters/insect_spider.json
+msgid "wasp guard"
+msgid_plural "wasp guards"
+msgstr[0] "말벌 경비병"
+
+#. ~ Description for {'str': 'wasp guard'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A mutated wasp worker, buzzing around their nest.  While their foraging "
+"sisters are relatively content to leave you be, this one won't hesitate to "
+"attack anything it considers a threat to the nest.  Don't linger."
+msgstr ""
+"둥지 주변을 붕붕거리며 날아다니는 돌연변이 말벌 일벌입니다. 수렵채집에 집중하는 자매벌들은 당신을 내버려두겠지만, 이 벌은 둥지에 위협이"
+" 될만한 모든 것을 적으로 간주합니다. 오래 머물지 마세요."
+
+#: data/json/monsters/insect_spider.json
+msgid "wasp queen"
+msgid_plural "wasp queens"
+msgstr[0] "말벌 여왕"
+
+#. ~ Description for {'str': 'wasp queen'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A mutated wasp queen grown to the size of a person, laying a single white "
+"egg in each empty cell it comes across while scurrying around on the paper "
+"walls of their home.  It struggles to fit into some of them, but the newer "
+"cells seem to be getting larger…"
+msgstr ""
+"사람만한 크기의 돌연변이 말벌 여왕으로, 둥지의 종이 벽을 따라 종종거리며 돌아다니다가 빈 방에 새하얀 알을 하나씩 낳습니다. 어느 "
+"방에는 몸이 잘 안 맞는 것 같지만, 새로 지어진 방들은 기존 방들에 비해 점점 더 커지는 것 같습니다..."
+
+#: data/json/monsters/insect_spider.json
 msgid "giant wasp"
 msgid_plural "giant wasps"
 msgstr[0] "거대 말벌"
@@ -111378,9 +111796,44 @@ msgstr[0] "거대 말벌"
 #. ~ Description for {'str': 'giant wasp'}
 #: data/json/monsters/insect_spider.json
 msgid ""
-"A gigantic slender-bodied wasp with an evil-looking stinger protruding from "
-"its abdomen.  Its exoskeleton glowers with ominous red markings."
-msgstr "흉악하게 생겼으며, 날렵한 몸을 가진 거대 말벌입니다. 무서운 벌침을 가지고 있습니다."
+"A gigantic wasp worker, scouring the landscape for an easy meal to feed the "
+"next generation.  Its abdomen glowers with ominous yellow stripes and ends "
+"in a half-hidden stinger the size of a kitchen knife."
+msgstr ""
+"애벌레들을 키우기 위해 주변을 샅샅이 뒤지며 손쉬운 먹잇감을 찾아다니는 거대한 말벌 일벌입니다. 복부에 불길한 노란 줄무늬가 "
+"드러나있으며, 끄트머리에는 부엌칼 크기의 침이 반쯤 숨겨져있습니다."
+
+#: data/json/monsters/insect_spider.json
+msgid "giant wasp guard"
+msgid_plural "giant wasp guards"
+msgstr[0] "거대 말벌 경비병"
+
+#. ~ Description for {'str': 'giant wasp guard'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A wasp worker grown to the size of a person, buzzing around their home.  "
+"While their foraging sisters are relatively content to live and let live, "
+"this one won't hesitate to attack anything it considers a threat to the "
+"nest.  Don't linger."
+msgstr ""
+"둥지 주변을 붕붕거리며 날아다니는 돌연변이 말벌 일벌입니다. 수렵채집에 집중하는 자매벌들과 달리, 이 벌은 둥지에 위협이 될만한 모든 "
+"것을 적으로 간주합니다. 오래 머물지 마세요."
+
+#: data/json/monsters/insect_spider.json
+msgid "giant wasp queen"
+msgid_plural "giant wasp queens"
+msgstr[0] "거대 말벌 여왕"
+
+#. ~ Description for {'str': 'giant wasp queen'}
+#: data/json/monsters/insect_spider.json
+msgid ""
+"A yellowjacket queen grown to the size of a horse, towering over their "
+"daughters.  Even with their abdomen swollen with eggs and wings long unused "
+"it still poses a threat to interlopers, should their children have failed at"
+" subduing them."
+msgstr ""
+"말 크기로 자라난 말벌 여왕으로, 제 딸들을 내려다보고 있습니다. 복부에 불룩하게 알이 들어찼고 날개를 오랫동안 쓰지 않았지만, 새끼들이"
+" 침입자를 무찌르지 못했을 때 맞서싸우는 데는 지금도 충분합니다."
 
 #: data/json/monsters/insect_spider.json
 msgid "dermatik"
@@ -155462,6 +155915,22 @@ msgstr ""
 "기상관측 CBM을 설치하는데 필요한, 각 단계별로 구성된 정밀한 사용법과 기타 필요 데이터입니다. 오토닥에 삽입하여 바이오닉 설치시 "
 "실패율을 최소화할 수 있으며, 전용 저장장치에 담겨있습니다. 내장된 보안 서브루틴 탓에 한번 설치에 사용하고 나면 폐기됩니다."
 
+#: data/json/obsoletion/items.json
+msgid "makeshift arc welder"
+msgid_plural "makeshift arc welders"
+msgstr[0] "수제 아크 용접기"
+
+#. ~ Description for {'str': 'makeshift arc welder'}
+#: data/json/obsoletion/items.json
+msgid ""
+"This crude arc welder has been fashioned from a few small transformers, some"
+" wire, improvised electrode holder and complete disregard for personal "
+"safety.  While it's not as efficient as a factory welder, it will serve in a"
+" pinch."
+msgstr ""
+"작은 변압기, 전선, 간이 전극 홀더 등으로 만든 투박한 아크 용접기입니다. 사용하는 사람의 안전 따윈 전혀 생각하지 않은 물건이며 "
+"공장제 용접기보다 전력효율이 나쁘지만 급할 때는 쓸만합니다."
+
 #: data/json/obsoletion/missions.json
 msgid "Find a Flu Shot"
 msgstr "독감 주사 찾기"
@@ -155485,17 +155954,6 @@ msgstr "병원이나 진료소에 남은게 좀 있을거야."
 #: data/json/obsoletion/missions.json
 msgid "Do you have the flu shot?"
 msgstr "독감 주사 가져왔어?"
-
-#: data/json/obsoletion/monsters.json
-msgid "centipede"
-msgid_plural "centipedes"
-msgstr[0] "지네"
-
-#. ~ Description for {'str': 'centipede'}
-#: data/json/obsoletion/monsters.json
-msgid ""
-"A predatory segmented arthropod with dozens of legs and a venomous bite."
-msgstr "수십 개의 다리와 독성 이빨을 가진 절지동물입니다."
 
 #: data/json/obsoletion/monsters.json
 msgid "deer mouse"
@@ -155621,11 +156079,6 @@ msgid ""
 "A fairly large spider which tracks and catches prey through agility and "
 "stealth.  Its bite can be irritating even to large animals."
 msgstr "꽤 큰 거미로, 그 민첩성과 조용함으로 사냥감을 추적하고 사냥합니다. 이 거미의 공격은 대형 동물들에게도 위협적입니다."
-
-#: data/json/obsoletion/monsters.json
-msgid "wasp"
-msgid_plural "wasps"
-msgstr[0] "말벌"
 
 #. ~ Description for {'str': 'wasp'}
 #: data/json/obsoletion/monsters.json
@@ -170441,6 +170894,268 @@ msgstr ""
 
 #: data/json/snippets/mutant_anatomy.json
 msgid ""
+"There are fist-sized globs of nervous tissue dotted about its insides, "
+"sending the corpse into a spasm every time you touch one"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The muscles grow stiff, and begin leaking a dark gray liquid that pools "
+"around your feet"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Despite the apparent death of the whole, some organs still pump, beat, and "
+"churn on undisturbed"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_flying_chitin>"
+msgstr "<bug_harvest_flying_chitin>"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_chitin>"
+msgstr "<bug_harvest_general_chitin>  "
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Its chitin is sturdier than usual for the flying insects, and marked by the "
+"struggles of its previous victims"
+msgstr "보통 비행형 곤충에 비해 키틴질이 튼튼하고, 이전 사냥감들이 남긴 저항의 흔적이 새겨져있습니다."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The stripes on the back of its abdomen are warped into a nauseating spiral "
+"you can't tear your eyes away from"
+msgstr "후복부의 줄무늬가 구역질나는 나선으로 뒤틀려있으며, 당신의 시선을 억지로 붙잡아둡니다."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Upon closer inspection, the uniform black stripes reveal themselves to be "
+"rows upon rows of glistening eyes"
+msgstr "가까이에서 관찰하면, 새까만 줄무늬가 번들거리는 눈들과 나란히 늘어서있습니다."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"With each cut, the stinger springs from its sheath, tip bending ever so "
+"slightly towards your leg"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The stripes -so uniform at a distance- reveal themselves to be jagged, "
+"strangely familiar patterns, like the cursive of an unknown language"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_flying_deeper>"
+msgstr "<bug_harvest_flying_deeper>"
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_general_deeper>"
+msgstr "<bug_harvest_general_deeper>  "
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The chaotic bundle of organs in its torso look much like those of other "
+"mutated insects, but as you near the abdomen there's order to the madness: "
+"comparatively neat rows of venom-filled glands, each feeding into a "
+"reservoir at the base of the stinger"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "You open a stomach, releasing a gush of sweet-smelling grey fluid"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "For its apparent hunger for meat, its intestines seem almost atrophied"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Your knife reaches the retracted stinger and slips on its smooth surface, "
+"opening half a dozen venom glands in the process.  You haven't cut yourself,"
+" have you?"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You find a handful of dead grubs underneath its chitin, near a chewed-open "
+"venom gland"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Deep, deep within the dead queen you find a smooth, brightly colored plaque "
+"the size of your fingernail, reading <number><number>"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Some of the now-familiar venom glands also contain dozens of shiny white "
+"eggs, undisturbed by their deadly surroundings"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"As you cut into its abdomen you disturb a handful of normal-sized, wingless "
+"wasps clinging to a strange, tubular organ.  They crawl a few steps before "
+"falling lifelessly to the ground"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Some of the egg clusters are ransacked by fat, white worms tunneling blindly"
+" through its flesh"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "Its legs contain no muscles, just sinews hanging in yellow-green ichor"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The legs fall off easily, leaving the main body looking like an armored worm"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Each pair of legs is slightly different.  These end in hooks, the next in "
+"talons like a bird's, there's a pair of chitinous tentacles"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The mandibles keep snapping, and acrid-smelling venom wets the soil.  You "
+"decide to begin your work at its tail"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "You're startled as its antenna whips out and briefly coils on your arm"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Underneath the surface, there are small plates of chitin dotted about, much "
+"harder than the rest"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"On its tail end the segments get smaller and smaller, until they terminate "
+"in a small copy of the head, looking backwards"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The chitin of the head is caked in old blood and lymph of its previous "
+"victims"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"You find vacuoles filled with its venom in the most unexpected nooks, "
+"forcing you to work carefully"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The indescribable stench of the remains of its last meal make you question "
+"your decision to butcher it"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"On some organs you see the same swollen ulcers as around your own wounds.  "
+"It seems not all of it is venom-proof"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This one's very blood stinks like its venom, and even the slightest drop "
+"makes your skin itch"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"There is order to the chaos in this one.  Each segment's insides is a "
+"perfect copy of the last, down to each sinew"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This one smells disturbingly appetizing, like a memory of a childhood meal "
+"whose details you forgot"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"By the time you reach the rear of the matriarch, most of its offspring have "
+"disappeared into the grass.  Some stuck around feeding on their unhatched "
+"siblings, unwilling to give up the easy meal until the last moment"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"The moment the matriarch grows still the last third of its body flops to the"
+" ground, letting go of dozens of eggs and small centipedes"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"After cleaning away the rotten meat and mess of eggs shrouding the "
+"matriarchs' hind segments you find its carapace chewed open, and much of its"
+" flesh already eaten by its ever-hungry young"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"As if they noticed the death of their mother, the dozens of centipedes still"
+" clinging to it attack each other with a sudden frenzy.  You decide to give "
+"them time to disperse before continuing"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"Since your tools barely have purchase on its carapace you decide to dig the "
+"meat and viscera out from your first cut.  At times, you disappear up to "
+"your waist in its armored insides"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"As you cut more and more meat away, some of the resilient chitin plates fall"
+" away with a loud squelch"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"To bypass the armor you had to start your work by its mandibles, inches away"
+" from its venom-coated fangs and the remains of chitin, bones, and strands "
+"of Kevlar stuck between their points"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"This feels more like scrapping a car than butchering an animal.  Instead of "
+"veins and legs you find yourself thinking about joints, panels, and cabling"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"On closer inspection, the head's armor is pocked by finger-sized holes with "
+"jagged edges, reminiscent of the creature's fangs"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
+"In a hidden organ without an obvious connection to the outside world, you "
+"find a seemingly forgotten handful of glistening eggs"
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid ""
 "The wings of this creature break apart upon the slightest touch into myriad "
 "identical rainbow crystals"
 msgstr ""
@@ -170479,12 +171194,6 @@ msgstr ""
 msgid ""
 "Spaced evenly across the entire body you find small sacs of eggs in "
 "different stages of growth"
-msgstr ""
-
-#: data/json/snippets/mutant_anatomy.json
-msgid ""
-"Its intestines grew into a labyrinthe tangle, like so many worms devouring "
-"each other"
 msgstr ""
 
 #: data/json/snippets/mutant_anatomy.json
@@ -170535,10 +171244,6 @@ msgid ""
 msgstr ""
 
 #: data/json/snippets/mutant_anatomy.json
-msgid "<bug_harvest_general_chitin>"
-msgstr "<bug_harvest_general_chitin>  "
-
-#: data/json/snippets/mutant_anatomy.json
 msgid ""
 "Steaming puddles of acid spill from its outer shell as you pull it back"
 msgstr ""
@@ -170552,10 +171257,6 @@ msgid ""
 "Several acid glands rupture as you peel back the carapace, sending streams "
 "of steaming caustic fluids spraying around"
 msgstr ""
-
-#: data/json/snippets/mutant_anatomy.json
-msgid "<bug_harvest_general_deeper>"
-msgstr "<bug_harvest_general_deeper>  "
 
 #: data/json/snippets/mutant_anatomy.json
 msgid ""
@@ -170625,10 +171326,6 @@ msgid "<bug_harvest_general_descriptive>."
 msgstr "<bug_harvest_general_descriptive>."
 
 #: data/json/snippets/mutant_anatomy.json
-msgid "<bug_harvest_flying_deeper>"
-msgstr "<bug_harvest_flying_deeper>"
-
-#: data/json/snippets/mutant_anatomy.json
 msgid "<bug_harvest_firefly>."
 msgstr "<bug_harvest_firefly>."
 
@@ -170651,6 +171348,34 @@ msgstr "<bug_harvest_acid_deeper>."
 #: data/json/snippets/mutant_anatomy.json
 msgid "<bug_harvest_acid_descriptive>."
 msgstr "<bug_harvest_acid_descriptive>."
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_centipede_chitin>."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_centipede_descriptive>."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_centipede_mom>."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_centipede_mega>."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_wasp_chitin>."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_wasp_deeper>."
+msgstr ""
+
+#: data/json/snippets/mutant_anatomy.json
+msgid "<bug_harvest_wasp_queen>."
+msgstr ""
 
 #: data/json/snippets/mutant_anatomy.json
 msgid ""
@@ -172583,6 +173308,46 @@ msgstr "%1$s(이)가 도망치고 있습니다!"
 #: data/json/snippets/schizophrenia.json
 msgid "%1$s finds you filthy."
 msgstr "%1$s(이)가 당신을 역겨워합니다."
+
+#: data/json/snippets/snippets.json
+msgid "0"
+msgstr ""
+
+#: data/json/snippets/snippets.json
+msgid "1"
+msgstr ""
+
+#: data/json/snippets/snippets.json
+msgid "2"
+msgstr ""
+
+#: data/json/snippets/snippets.json
+msgid "3"
+msgstr ""
+
+#: data/json/snippets/snippets.json
+msgid "4"
+msgstr ""
+
+#: data/json/snippets/snippets.json
+msgid "5"
+msgstr ""
+
+#: data/json/snippets/snippets.json
+msgid "6"
+msgstr ""
+
+#: data/json/snippets/snippets.json
+msgid "7"
+msgstr ""
+
+#: data/json/snippets/snippets.json
+msgid "8"
+msgstr ""
+
+#: data/json/snippets/snippets.json
+msgid "9"
+msgstr ""
 
 #: data/json/snippets/snippets.json
 msgid ""
@@ -177966,12 +178731,12 @@ msgstr "%1$s(이)가 <npcname>에게 주사기로 찔러 넣었다!"
 
 #: data/mods/Aftershock/monster_attacks.json
 msgid "The %1$s tries to inject you, but fails to penetrate your armor!"
-msgstr "%1$s(이)가 주사기를 찔러 넣으려 했지만, 갑옷을 뚫지 못했습니다!"
+msgstr "%1$s(이)가 주사기를 찔렀으나, 방어구를 뚫지 못했습니다!"
 
 #: data/mods/Aftershock/monster_attacks.json
 msgid ""
 "The %1$s tries to inject <npcname>, but fails to penetrate their armor!"
-msgstr "%1$s(이)가 <npcname>에게 주사기를 찔러 넣으려 했지만, 갑옷을 뚫지 못했습니다!"
+msgstr "%1$s(이)가 <npcname>에게 주사기를 찔렀으나, 갑옷을 뚫지 못했습니다!"
 
 #. ~ Name for scenario 'Challenge - Anomalous Materials' for a male character
 #: data/mods/Aftershock/scenarios.json
@@ -202386,13 +203151,13 @@ msgstr "%1$s(이)가 <npcname>의 %2$s(을)를 삼지창으로 찔렀습니다!"
 msgid ""
 "The %1$s tries to impale your %2$s with its trident, but fails to penetrate "
 "your armor!"
-msgstr "%1$s(이)가 당신의 %2$s를 삼지창으로 찔렀지만, 보호구를 뚫지 못했습니다!"
+msgstr "%1$s(이)가 %2$s에 삼지창을 찔렀으나, 방어구를 뚫지 못했습니다!"
 
 #: data/mods/Magiclysm/monster_attacks.json
 msgid ""
 "The %1$s tries to impale <npcname>'s %2$s with its trident, but fails to "
 "penetrate their armor!"
-msgstr "%1$s(이)가 <npcname>의 %2$s를 삼지창으로 찔렀지만, 보호구를 뚫지 못했습니다!"
+msgstr "%1$s(이)가 <npcname>의 %2$s에 삼지창을 찔렀으나, 방어구를 뚫지 못했습니다!"
 
 #: data/mods/Magiclysm/monster_attacks.json
 msgid "The %1$s crushes your %2$s with its greatclub!"
@@ -214135,6 +214900,15 @@ msgstr "생존용 방어구 제거"
 #: data/mods/No_Survivor_Armor/modinfo.json
 msgid "Removes survivor armor."
 msgstr "생존용 방어구를 제거합니다."
+
+#: data/mods/No_Wasps/modinfo.json
+msgid "No Wasps"
+msgstr ""
+
+#. ~ Description for No Wasps
+#: data/mods/No_Wasps/modinfo.json
+msgid "Removes wasps, dermatiks, and their associated maps from the game"
+msgstr ""
 
 #: data/mods/Old_Mutations/modinfo.json
 msgid "Old Mutations"
@@ -249135,7 +249909,7 @@ msgstr "%s(이)가 달려들었지만, 피했습니다!"
 #: src/mattack_actors.cpp
 #, c-format
 msgid "The %1$s bites your %2$s, but fails to penetrate armor!"
-msgstr "%1$s(이)가 %2$s(을)를 물었지만, 보호구를 뚫지 못했습니다!"
+msgstr "%1$s(이)가 %2$s(을)를 물었으나, 방어구를 뚫지 못했습니다!"
 
 #: src/mattack_actors.cpp
 #, c-format
@@ -249150,7 +249924,7 @@ msgstr "%s(이)가 <npcname>에게 달려들었지만, 피했습니다!"
 #: src/mattack_actors.cpp
 #, c-format
 msgid "The %1$s bites <npcname>'s %2$s, but fails to penetrate armor!"
-msgstr "%1$s(이)가 <npcname>의 %2$s(을)를 물었지만, 보호구를 뚫지 못했습니다!"
+msgstr "%1$s(이)가 <npcname>의 %2$s(을)를 물었으나, 방어구를 뚫지 못했습니다!"
 
 #: src/mattack_actors.cpp
 #, c-format
@@ -261362,6 +262136,12 @@ msgid ""
 "Effective dodge rating: %4.1f\n"
 "Press [<color_yellow>%s</color>] for more info.\n"
 msgstr ""
+"무술 선택\n"
+"\n"
+"체력: <color_white>%d</color>, 민첩성: <color_white>%d</color>, 지각력: <color_white>%d</color>, 지능: <color_white>%d</color>\n"
+"기본 맨손 피해: %3d\n"
+"유효 회피 횟수: %4.1f\n"
+"[<color_yellow>%s</color>] 키를 눌러 자세한 정보를 확인할 수 있습니다.\n"
 
 #: src/player.cpp
 msgid "Keep hands free (off)"
