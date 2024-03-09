@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-03-02 00:55+0000\n"
+"POT-Creation-Date: 2024-03-09 00:58+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1666,6 +1666,14 @@ msgid ""
 msgstr ""
 "Q: ここに取り上げられていない質問があります。どこで答えてもらえますか\n"
 "A: wikiを確認するか、フォーラムやチャットチャンネルで親切な人に尋ねてみましょう。リンクはメインメニューのMOTDに載っています。"
+
+#: data/help/texts.json
+msgid "<5>: Resolved game directories"
+msgstr ""
+
+#: data/help/texts.json
+msgid "<GAME_DIRECTORIES>"
+msgstr ""
 
 #: data/json/achievements.json
 msgid "[Combat] One Down, Billions to Go…"
@@ -115185,6 +115193,17 @@ msgid ""
 " you heal much slower.  Stacks with Glass Jaw."
 msgstr ""
 
+#: data/json/mutations/mutations.json data/mods/Old_Mutations/modinfo.json
+msgid "Robust Genetics"
+msgstr "堅牢な遺伝子"
+
+#. ~ Description for {'str': 'Robust Genetics'}
+#: data/json/mutations/mutations.json
+msgid ""
+"You have a very strong genetic base.  Mutations gained from eating mutant "
+"flesh will balance out at a higher number of positive mutations."
+msgstr ""
+
 #: data/json/mutations/mutations.json
 msgid "Genetic Downward Spiral"
 msgstr "遺伝子劣化"
@@ -151479,15 +151498,6 @@ msgstr ""
 msgid "underbarrel mount"
 msgstr "アンダーバレルマウント"
 
-#: data/json/obsoletion/mutations.json data/mods/Old_Mutations/modinfo.json
-msgid "Robust Genetics"
-msgstr "堅牢な遺伝子"
-
-#. ~ Description for {'str': 'Robust Genetics'}
-#: data/json/obsoletion/mutations.json
-msgid "Genetics?  Doesn't excuse not eating healthy, though."
-msgstr ""
-
 #: data/json/obsoletion/mutations.json
 msgid "Truth Teller"
 msgstr "正直者"
@@ -165534,7 +165544,7 @@ msgstr "サイケ"
 msgid "noise"
 msgstr "ノイズ"
 
-#: data/json/snippets/music.json
+#: data/json/snippets/music.json src/path_display.cpp
 msgid "sound"
 msgstr "サウンド"
 
@@ -220597,7 +220607,7 @@ msgstr "色設定テンプレート: "
 msgid "Custom %s color:"
 msgstr "%sの色設定: "
 
-#: src/color.cpp
+#: src/color.cpp src/path_display.cpp
 msgid "custom colors"
 msgstr "色設定"
 
@@ -222949,6 +222959,14 @@ msgid "Reveal map"
 msgstr "解禁 - 全体マップ全域表示"
 
 #: src/debug_menu.cpp
+msgid "Reproduce in Area"
+msgstr ""
+
+#: src/debug_menu.cpp
+msgid "Erase items in Area"
+msgstr ""
+
+#: src/debug_menu.cpp
 msgid "Kill in Area"
 msgstr "殺害 - モンスター&NPC"
 
@@ -223638,6 +223656,14 @@ msgstr ""
 msgid "Drew %1$d times in %2$.3f seconds.  (%3$.3f per second average)"
 msgstr ""
 
+#: src/debug_menu.cpp src/game.cpp
+msgid "Select first point."
+msgstr "始点を選択して下さい。"
+
+#: src/debug_menu.cpp src/game.cpp
+msgid "Select second point."
+msgstr "終点を選択して下さい。"
+
 #: src/debug_menu.cpp
 msgid "Current overmap revealed."
 msgstr "全体マップを明らかにしました。"
@@ -223699,13 +223725,10 @@ msgstr ""
 msgid "Kill xp: %d"
 msgstr "殺害経験値: %d"
 
-#: src/debug_menu.cpp src/game.cpp
-msgid "Select first point."
-msgstr "始点を選択して下さい。"
-
-#: src/debug_menu.cpp src/game.cpp
-msgid "Select second point."
-msgstr "終点を選択して下さい。"
+#: src/debug_menu.cpp
+#, c-format
+msgid "Erased %d items."
+msgstr ""
 
 #: src/debug_menu.cpp
 #, c-format
@@ -228511,33 +228534,6 @@ msgid ""
 "Spotted %1$s--safe mode is on!  (%2$s to turn it off, %3$s to ignore "
 "monster%4$s)"
 msgstr "%1$sを発見しました--セーフモードを有効化します！(%2$sで無効、%3$sで対象から除外%4$s)"
-
-#: src/game.cpp
-#, c-format
-msgid "Deactivate the %s?"
-msgstr "%sを停止しますか？"
-
-#: src/game.cpp
-msgid "Engage targets."
-msgstr "目標と交戦"
-
-#: src/game.cpp
-msgid "Reprogram the manhack?"
-msgstr "マンハックを再プログラムしますか？"
-
-#: src/game.cpp
-msgid "Follow me."
-msgstr "追従"
-
-#: src/game.cpp
-#, c-format
-msgid "The %s hovers momentarily as it surveys the area."
-msgstr "%sは空中に浮かぶと、すぐに周囲を監視し始めました。"
-
-#: src/game.cpp
-#, c-format
-msgid "The %s lets out a whirring noise and starts to follow you."
-msgstr "%sはブゥンという音を発しながらあなたを追従し始めました。"
 
 #: src/game.cpp
 #, c-format
@@ -234664,6 +234660,10 @@ msgstr ""
 msgid ""
 "\n"
 "  Category: "
+msgstr ""
+
+#: src/item.cpp
+msgid "<bold>Cannot be used on:</bold>"
 msgstr ""
 
 #: src/item.cpp
@@ -248426,10 +248426,6 @@ msgid "You need any type of rope to tie %s in place"
 msgstr "%sをその場に係留するにはロープが必要です"
 
 #: src/monexamine.cpp
-msgid "Tear out pheromone ball"
-msgstr "フェロモンボールを潰す"
-
-#: src/monexamine.cpp
 #, c-format
 msgid "Milk %s"
 msgstr "%sから搾乳する"
@@ -248530,6 +248526,14 @@ msgid "You need a %s to power this mech"
 msgstr "起動には%sが必要"
 
 #: src/monexamine.cpp
+msgid "Order to engage targets"
+msgstr ""
+
+#: src/monexamine.cpp
+msgid "Order to ignore enemies and follow"
+msgstr ""
+
+#: src/monexamine.cpp
 #, c-format
 msgid "Remove items and deactivate the %s"
 msgstr ""
@@ -248541,12 +248545,18 @@ msgstr "%sを停止する"
 
 #: src/monexamine.cpp
 #, c-format
+msgid "Slaughter %s"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
 msgid "Spend a few minutes to play with your %s?"
 msgstr "しばらく%sと触れ合いますか？"
 
 #: src/monexamine.cpp
-msgid "Really kill the zombie slave?"
-msgstr "本当に奴隷ゾンビを殺しますか？"
+#, c-format
+msgid "Really kill the %s?"
+msgstr ""
 
 #: src/monexamine.cpp
 #, c-format
@@ -248711,8 +248721,9 @@ msgid "Your %1$s isn't wearing armor!"
 msgstr "%1$sは防具を着ていません！"
 
 #: src/monexamine.cpp
-msgid "You tear out the pheromone ball from the zombie slave."
-msgstr "奴隷ゾンビからフェロモンボールを引き裂きました。"
+#, c-format
+msgid "With a clean cut you put your %s down."
+msgstr ""
 
 #: src/monexamine.cpp
 #, c-format
@@ -248743,6 +248754,16 @@ msgstr "%sを解放しました。"
 #, c-format
 msgid "You take hold of the %s's leash to make it follow you."
 msgstr "%sのリードを掴んで追従するよう促しました。"
+
+#: src/monexamine.cpp
+#, c-format
+msgid "You order the %s to engage targets."
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "You order the %s to focus on following you."
+msgstr ""
 
 #: src/monexamine.cpp
 #, c-format
@@ -254647,7 +254668,7 @@ msgstr ""
 "しばらくお待ちください...\n"
 "オプションの変更を適用中..."
 
-#: src/options.cpp
+#: src/options.cpp src/path_display.cpp
 msgid "options"
 msgstr "オプション"
 
@@ -255618,7 +255639,7 @@ msgstr "ラベル(狭)"
 msgid "labels"
 msgstr "ラベル"
 
-#: src/panels.cpp
+#: src/panels.cpp src/path_display.cpp
 msgid "panel options"
 msgstr "パネル設定"
 
@@ -255637,6 +255658,158 @@ msgstr "表示順序変更"
 #: src/panels.cpp
 msgid "Exit"
 msgstr "終了"
+
+#: src/path_display.cpp
+msgid "User Directory"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user mods"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user saves"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user sounds"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user graphics"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user fonts"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user memorials"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user templates"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user graveyard"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "Defaults Directory"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "(Current Working Directory)"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "data directory"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "font"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "help"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "mods"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "default enabled mods"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "replacement mods"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "color templates"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "colors"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "font config"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "language definitions file"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "sokoban"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "main menu tips"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "keybindings"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "graphics"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "default sound"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "Config Directory"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "debug"
+msgstr "デバッグ"
+
+#: src/path_display.cpp
+msgid "crash"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "autopickup"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "base colors"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user default mods"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "distraction"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user font config"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "user keybindings"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "last world"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "Lua doc output"
+msgstr ""
+
+#: src/path_display.cpp
+msgid "safe mode"
+msgstr ""
 
 #: src/pickup.cpp
 #, c-format

@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-03-02 00:55+0000\n"
+"POT-Creation-Date: 2024-03-09 00:58+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -1667,6 +1667,14 @@ msgid ""
 msgstr ""
 "问：我还有些问题这里没有找到答案，我该去问谁呢？\n"
 "答：查看wiki百科，或者在论坛或聊天频道询问热心的朋友。主菜单中的 MOTD 提供了相关链接。"
+
+#: data/help/texts.json
+msgid "<5>: Resolved game directories"
+msgstr "<5>: 已解决的游戏目录"
+
+#: data/help/texts.json
+msgid "<GAME_DIRECTORIES>"
+msgstr "<GAME_DIRECTORIES>"
 
 #: data/json/achievements.json
 msgid "[Combat] One Down, Billions to Go…"
@@ -115093,6 +115101,17 @@ msgid ""
 " you heal much slower.  Stacks with Glass Jaw."
 msgstr "你的身体极其脆弱，最大HP比正常人低75％，恢复速度也比正常人慢。能和脆弱头骨叠加。"
 
+#: data/json/mutations/mutations.json data/mods/Old_Mutations/modinfo.json
+msgid "Robust Genetics"
+msgstr "优良基因"
+
+#. ~ Description for {'str': 'Robust Genetics'}
+#: data/json/mutations/mutations.json
+msgid ""
+"You have a very strong genetic base.  Mutations gained from eating mutant "
+"flesh will balance out at a higher number of positive mutations."
+msgstr "你拥有非常强大的基因基础。通过食用突变肉获得的突变将在更多的积极突变数量上达到平衡。"
+
 #: data/json/mutations/mutations.json
 msgid "Genetic Downward Spiral"
 msgstr "基因恶性循环"
@@ -151363,15 +151382,6 @@ msgstr "这是一个塑料支架，用于连接管下枪械模组，设计能永
 msgid "underbarrel mount"
 msgstr "管下底座"
 
-#: data/json/obsoletion/mutations.json data/mods/Old_Mutations/modinfo.json
-msgid "Robust Genetics"
-msgstr "优良基因"
-
-#. ~ Description for {'str': 'Robust Genetics'}
-#: data/json/obsoletion/mutations.json
-msgid "Genetics?  Doesn't excuse not eating healthy, though."
-msgstr "基因？不过，这并不能成为不健康饮食的借口。"
-
 #: data/json/obsoletion/mutations.json
 msgid "Truth Teller"
 msgstr "说不出谎"
@@ -165417,7 +165427,7 @@ msgstr "迷幻音乐"
 msgid "noise"
 msgstr "噪音音乐"
 
-#: data/json/snippets/music.json
+#: data/json/snippets/music.json src/path_display.cpp
 msgid "sound"
 msgstr "声乐曲"
 
@@ -220473,7 +220483,7 @@ msgstr "配色方案："
 msgid "Custom %s color:"
 msgstr "自定义 %s 颜色："
 
-#: src/color.cpp
+#: src/color.cpp src/path_display.cpp
 msgid "custom colors"
 msgstr "自定义颜色"
 
@@ -222834,6 +222844,14 @@ msgid "Reveal map"
 msgstr "显示地图"
 
 #: src/debug_menu.cpp
+msgid "Reproduce in Area"
+msgstr ""
+
+#: src/debug_menu.cpp
+msgid "Erase items in Area"
+msgstr ""
+
+#: src/debug_menu.cpp
 msgid "Kill in Area"
 msgstr "杀死区域内生物"
 
@@ -223526,6 +223544,14 @@ msgstr "刷新了%1$d次于%2$.3f秒内。  （平均帧率%3$.3f）"
 msgid "Drew %1$d times in %2$.3f seconds.  (%3$.3f per second average)"
 msgstr "渲染了%1$d次于%2$.3f秒内。  （平均每秒%3$.3f次）"
 
+#: src/debug_menu.cpp src/game.cpp
+msgid "Select first point."
+msgstr "选择第一点。"
+
+#: src/debug_menu.cpp src/game.cpp
+msgid "Select second point."
+msgstr "选择第二点。"
+
 #: src/debug_menu.cpp
 msgid "Current overmap revealed."
 msgstr "当前世界地图已显示。"
@@ -223587,13 +223613,10 @@ msgstr ""
 msgid "Kill xp: %d"
 msgstr "击杀获得经验：%d"
 
-#: src/debug_menu.cpp src/game.cpp
-msgid "Select first point."
-msgstr "选择第一点。"
-
-#: src/debug_menu.cpp src/game.cpp
-msgid "Select second point."
-msgstr "选择第二点。"
+#: src/debug_menu.cpp
+#, c-format
+msgid "Erased %d items."
+msgstr ""
 
 #: src/debug_menu.cpp
 #, c-format
@@ -228409,33 +228432,6 @@ msgid ""
 "Spotted %1$s--safe mode is on!  (%2$s to turn it off, %3$s to ignore "
 "monster%4$s)"
 msgstr "发现了%1$s：安全模式已触发，暂停游戏！（%2$s 关闭模式，%3$s 忽略怪物%4$s）"
-
-#: src/game.cpp
-#, c-format
-msgid "Deactivate the %s?"
-msgstr "关闭%s？"
-
-#: src/game.cpp
-msgid "Engage targets."
-msgstr "攻击目标。"
-
-#: src/game.cpp
-msgid "Reprogram the manhack?"
-msgstr "重新编程飞锯无人机？"
-
-#: src/game.cpp
-msgid "Follow me."
-msgstr "跟随我。"
-
-#: src/game.cpp
-#, c-format
-msgid "The %s hovers momentarily as it surveys the area."
-msgstr "%s短暂徘徊，调查了该区域。"
-
-#: src/game.cpp
-#, c-format
-msgid "The %s lets out a whirring noise and starts to follow you."
-msgstr "%s\"呼呼\"地响了一阵，开始跟随你。"
 
 #: src/game.cpp
 #, c-format
@@ -234571,6 +234567,10 @@ msgid ""
 msgstr ""
 "\n"
 "  类别: "
+
+#: src/item.cpp
+msgid "<bold>Cannot be used on:</bold>"
+msgstr "<bold>不可使用在：</bold>"
 
 #: src/item.cpp
 msgid "<bold>Incompatible with mod location: </bold> "
@@ -248326,10 +248326,6 @@ msgid "You need any type of rope to tie %s in place"
 msgstr "你需要些绳子才能绑住 %s。"
 
 #: src/monexamine.cpp
-msgid "Tear out pheromone ball"
-msgstr "撕下费洛蒙球体"
-
-#: src/monexamine.cpp
 #, c-format
 msgid "Milk %s"
 msgstr "给%s挤奶"
@@ -248430,6 +248426,14 @@ msgid "You need a %s to power this mech"
 msgstr "你需要 %s 来为机甲供能"
 
 #: src/monexamine.cpp
+msgid "Order to engage targets"
+msgstr "命令攻击目标"
+
+#: src/monexamine.cpp
+msgid "Order to ignore enemies and follow"
+msgstr "命令忽略目标并跟随"
+
+#: src/monexamine.cpp
 #, c-format
 msgid "Remove items and deactivate the %s"
 msgstr "移除物品以及关闭%s"
@@ -248441,12 +248445,18 @@ msgstr "关闭%s"
 
 #: src/monexamine.cpp
 #, c-format
+msgid "Slaughter %s"
+msgstr "屠宰%s"
+
+#: src/monexamine.cpp
+#, c-format
 msgid "Spend a few minutes to play with your %s?"
 msgstr "花几分钟和 %s 一起玩耍？"
 
 #: src/monexamine.cpp
-msgid "Really kill the zombie slave?"
-msgstr "真的终结这个丧尸奴仆吗？"
+#, c-format
+msgid "Really kill the %s?"
+msgstr "确定要杀掉%s？"
 
 #: src/monexamine.cpp
 #, c-format
@@ -248611,8 +248621,9 @@ msgid "Your %1$s isn't wearing armor!"
 msgstr "你的 %1$s 没有装甲！"
 
 #: src/monexamine.cpp
-msgid "You tear out the pheromone ball from the zombie slave."
-msgstr "你从丧尸奴仆的身上扯下费洛蒙球体。"
+#, c-format
+msgid "With a clean cut you put your %s down."
+msgstr "你干净利落地将你的%s放倒。"
 
 #: src/monexamine.cpp
 #, c-format
@@ -248643,6 +248654,16 @@ msgstr "你解开了 %s 上的缰绳。"
 #, c-format
 msgid "You take hold of the %s's leash to make it follow you."
 msgstr "你抓住 %s 的绳索，让它跟着你走。"
+
+#: src/monexamine.cpp
+#, c-format
+msgid "You order the %s to engage targets."
+msgstr "你命令%s攻击目标。"
+
+#: src/monexamine.cpp
+#, c-format
+msgid "You order the %s to focus on following you."
+msgstr "你命令%s专注于跟随你。"
 
 #: src/monexamine.cpp
 #, c-format
@@ -254509,7 +254530,7 @@ msgstr ""
 "请等待……\n"
 "应用选项更改……"
 
-#: src/options.cpp
+#: src/options.cpp src/path_display.cpp
 msgid "options"
 msgstr "选项"
 
@@ -255483,7 +255504,7 @@ msgstr "标签（窄）"
 msgid "labels"
 msgstr "标签"
 
-#: src/panels.cpp
+#: src/panels.cpp src/path_display.cpp
 msgid "panel options"
 msgstr "面板选项"
 
@@ -255502,6 +255523,158 @@ msgstr "改变显示顺序"
 #: src/panels.cpp
 msgid "Exit"
 msgstr "退出"
+
+#: src/path_display.cpp
+msgid "User Directory"
+msgstr "游戏目录"
+
+#: src/path_display.cpp
+msgid "user mods"
+msgstr "用户模组"
+
+#: src/path_display.cpp
+msgid "user saves"
+msgstr "用户存档"
+
+#: src/path_display.cpp
+msgid "user sounds"
+msgstr "用户音效"
+
+#: src/path_display.cpp
+msgid "user graphics"
+msgstr "用户图像"
+
+#: src/path_display.cpp
+msgid "user fonts"
+msgstr "用户字体"
+
+#: src/path_display.cpp
+msgid "user memorials"
+msgstr "用户纪念"
+
+#: src/path_display.cpp
+msgid "user templates"
+msgstr "用户模版"
+
+#: src/path_display.cpp
+msgid "user graveyard"
+msgstr "用户墓地"
+
+#: src/path_display.cpp
+msgid "Defaults Directory"
+msgstr "默认目录"
+
+#: src/path_display.cpp
+msgid "(Current Working Directory)"
+msgstr "（当前工作目录）"
+
+#: src/path_display.cpp
+msgid "data directory"
+msgstr "档案目录"
+
+#: src/path_display.cpp
+msgid "font"
+msgstr "字体"
+
+#: src/path_display.cpp
+msgid "help"
+msgstr "帮助"
+
+#: src/path_display.cpp
+msgid "mods"
+msgstr "模组"
+
+#: src/path_display.cpp
+msgid "default enabled mods"
+msgstr "默认启用模组"
+
+#: src/path_display.cpp
+msgid "replacement mods"
+msgstr "替换模组"
+
+#: src/path_display.cpp
+msgid "color templates"
+msgstr "配色方案"
+
+#: src/path_display.cpp
+msgid "colors"
+msgstr "颜色"
+
+#: src/path_display.cpp
+msgid "font config"
+msgstr "字体设定"
+
+#: src/path_display.cpp
+msgid "language definitions file"
+msgstr "语言定义文件"
+
+#: src/path_display.cpp
+msgid "sokoban"
+msgstr "推箱子"
+
+#: src/path_display.cpp
+msgid "main menu tips"
+msgstr "主菜单提示"
+
+#: src/path_display.cpp
+msgid "keybindings"
+msgstr "绑定按键"
+
+#: src/path_display.cpp
+msgid "graphics"
+msgstr "图形"
+
+#: src/path_display.cpp
+msgid "default sound"
+msgstr "默认音效"
+
+#: src/path_display.cpp
+msgid "Config Directory"
+msgstr "设定目录"
+
+#: src/path_display.cpp
+msgid "debug"
+msgstr "调试"
+
+#: src/path_display.cpp
+msgid "crash"
+msgstr "崩溃"
+
+#: src/path_display.cpp
+msgid "autopickup"
+msgstr "自动拾取"
+
+#: src/path_display.cpp
+msgid "base colors"
+msgstr "基础颜色"
+
+#: src/path_display.cpp
+msgid "user default mods"
+msgstr "用户默认模组"
+
+#: src/path_display.cpp
+msgid "distraction"
+msgstr "分心"
+
+#: src/path_display.cpp
+msgid "user font config"
+msgstr "用户字体设定"
+
+#: src/path_display.cpp
+msgid "user keybindings"
+msgstr "用户绑定按键"
+
+#: src/path_display.cpp
+msgid "last world"
+msgstr "上个世界"
+
+#: src/path_display.cpp
+msgid "Lua doc output"
+msgstr "Lua 文档输出"
+
+#: src/path_display.cpp
+msgid "safe mode"
+msgstr "安全模式"
 
 #: src/pickup.cpp
 #, c-format
