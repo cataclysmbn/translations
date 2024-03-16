@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-03-09 00:58+0000\n"
+"POT-Creation-Date: 2024-03-16 00:58+0000\n"
 "Last-Translator: Frostbite, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -10730,6 +10730,13 @@ msgstr "이 바이오닉은 전력을 공급합니다."
 #: data/json/flags.json
 msgid "This bionic can provide power to powered armor."
 msgstr "이 바이오닉은 파워아머에 전력을 공급할 수 있습니다."
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This item is a <info>magical focus</info>.  You can cast spells with it in "
+"your hand."
+msgstr "이 물품은 <info>마법적 도구</info>입니다. 이 물품을 손에 든 채로 주문을 시전할 수 있습니다."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -29045,6 +29052,11 @@ msgstr "구역질나는 식단"
 #: data/json/weapon_categories.json
 msgid "Fist Weapons"
 msgstr "격투용 장비"
+
+#. ~ weapon category name
+#: data/json/weapon_categories.json
+msgid "Stilettos"
+msgstr "스틸레토"
 
 #. ~ weapon category name
 #: data/json/weapon_categories.json
@@ -99260,29 +99272,37 @@ msgid ""
 msgstr "에스빗 스토브라고 알려진 이 가벼운 접이식 스토브는 헥사민 판을 연료로 사용합니다."
 
 #: data/json/items/tool/cooking.json
-msgid "sealed yeast culture"
-msgid_plural "sealed yeast culture"
-msgstr[0] "밀봉된 효모 배양기"
+msgid "small sealed yeast culture"
+msgid_plural "small sealed yeast culture"
+msgstr[0] "밀봉된 소형 효모 배양기"
 
-#. ~ Use action msg for {'str_sp': 'sealed yeast culture'}.
+#. ~ Use action msg for {'str_sp': 'small sealed yeast culture'}.
 #: data/json/items/tool/cooking.json
 msgid "You open the flask and harvest the culture."
 msgstr "플라스크를 열고 배양된 이스트를 꺼냈습니다."
 
+#. ~ Use action not_ready_msg for {'str_sp': 'small sealed yeast culture'}.
 #. ~ Use action not_ready_msg for {'str_sp': 'sealed yeast culture'}.
+#. ~ Use action not_ready_msg for {'str_sp': 'large sealed yeast culture'}.
 #. ~ Use action not_ready_msg for {'str_sp': 'sealed wild yeast culture'}.
 #: data/json/items/tool/cooking.json
 msgid "The yeast isn't done culturing yet."
 msgstr "이스트가 충분히 배양되지 않았습니다."
 
-#. ~ Description for {'str_sp': 'sealed yeast culture'}
+#. ~ Description for {'str_sp': 'small sealed yeast culture'}
 #: data/json/items/tool/cooking.json
 msgid ""
 "A sealed flask holding sanitized yeast wort.  You may harvest the yeast "
 "inside when it's done culturing."
 msgstr "살균된 이스트 배양액을 넣고 밀봉한 플라스크. 배양과정이 끝나면 수확할 수 있습니다."
 
+#: data/json/items/tool/cooking.json
+msgid "sealed yeast culture"
+msgid_plural "sealed yeast culture"
+msgstr[0] "밀봉된 효모 배양기"
+
 #. ~ Use action msg for {'str_sp': 'sealed yeast culture'}.
+#. ~ Use action msg for {'str_sp': 'large sealed yeast culture'}.
 #. ~ Use action msg for {'str_sp': 'sealed wild yeast culture'}.
 #: data/json/items/tool/cooking.json
 msgid "You open the jar and harvest the culture."
@@ -99296,6 +99316,18 @@ msgid ""
 msgstr "살균된 이스트 배양액을 넣고 밀봉한 용기. 배양과정이 끝나면 수확할 수 있습니다."
 
 #: data/json/items/tool/cooking.json
+msgid "large sealed yeast culture"
+msgid_plural "large sealed yeast culture"
+msgstr[0] "밀봉된 대형 효모 배양기"
+
+#. ~ Description for {'str_sp': 'large sealed yeast culture'}
+#: data/json/items/tool/cooking.json
+msgid ""
+"A sealed 3L glass jar holding sanitized yeast wort.  You may harvest the "
+"yeast inside when it's done culturing."
+msgstr "살균된 이스트 배양액을 넣고 밀봉한 3L 유리병. 배양과정이 끝나면 수확할 수 있습니다."
+
+#: data/json/items/tool/cooking.json
 msgid "sealed wild yeast culture"
 msgid_plural "sealed wild yeast culture"
 msgstr[0] "밀봉된 야생 효모 배양기"
@@ -99303,8 +99335,8 @@ msgstr[0] "밀봉된 야생 효모 배양기"
 #. ~ Description for {'str_sp': 'sealed wild yeast culture'}
 #: data/json/items/tool/cooking.json
 msgid ""
-"Mixture of water, sugar and fruits with some naturally occuring yeast, that "
-"will eventually produce a more sizeable yeast culture."
+"Mixture of water, sugar and fruits with some naturally occurring yeast, that"
+" will eventually produce a more sizable yeast culture."
 msgstr "물, 설탕, 과일, 그리고 자연스럽게 붙은 효모의 혼합물입니다. 머지않아 이스트가 잔뜩 배양될 것입니다."
 
 #: data/json/items/tool/cooking.json
@@ -112931,6 +112963,21 @@ msgid ""
 "The snowshoe hare, a small grass-eater with a brown fur coat that changes to"
 " white in the wintertime."
 msgstr "멧토끼의 일종인 작은 초식동물입니다. 평소에는 털가죽이 갈색을 띄지만, 겨울에는 흰색으로 털갈이합니다."
+
+#: data/json/monsters/mammal.json
+msgid "foal"
+msgid_plural "foals"
+msgstr[0] "망아지"
+
+#. ~ Description for {'str': 'foal'}
+#: data/json/monsters/mammal.json
+msgid ""
+"A hooved grazing mammal with a mane of hair, a sweeping tail, and powerful-"
+"looking muscles.  This one is still a juvenile; it'll take a while before it"
+" can be ridden."
+msgstr ""
+"갈기가 조금 자라나있고 꼬리가 흐늘거리며 튼실해보이는 근육이 붙은, 발굽달린 초식포유동물입니다. 이 동물은 아직 어리며, 타고 다니려면 "
+"좀 기다려야 할 것 같습니다."
 
 #: data/json/monsters/mammal.json
 msgid "horse"
@@ -144029,8 +144076,8 @@ msgid "No worries.  Let me know if you want to try again."
 msgstr "괜찮아. 다시 시도해보겠다면 나한테 알려줘."
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Boris_Borichenko.json
-msgid "Bring Boris some tools."
-msgstr "보리스에게 도구 가져다주기"
+msgid "Find a circular saw."
+msgstr "원형톱을 찾으세요."
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Boris_Borichenko.json
 msgid "Find a circular saw for Boris."
@@ -148217,9 +148264,9 @@ msgstr "김장의 날"
 #. ~ Description for mission '{'str': 'In a Pickle'}'
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid ""
-"Deliver 100 half-liter glass canning jars to the Free Merchants to kickstart"
-" their food storage plans."
-msgstr ""
+"Deliver twenty-five half-liter glass canning jars to the Free Merchants to "
+"kickstart their food storage plans."
+msgstr "자유상인연합의 식량 저장 계획에 보탬이 되도록 0.5리터들이 유리통을 25개 가져다주세요."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid ""
@@ -148230,8 +148277,13 @@ msgid ""
 " preserve them.  Some of our people know enough about food canning that if "
 "we had a good stock of canning jars, we could make pickles and canned meats "
 "to get us set for the winter.  I'll pay you a premium rate if you can bring "
-"us around a hundred jars to get us started."
+"us twenty-five glass jars to get us started."
 msgstr ""
+"매일의 식량 공급을 최대한 안정화시키려고 노력했지만, 고작해야 근근이 먹고 사는 정도야. 만약 무슨 일이 생겨서 사람들이 밖에 나가지 "
+"못하고 갇혀있어야 하는 상황이 생기면 우리 식량 저장고는 고작 며칠 정도 버틸테고. 그런 꼴을 피하려면 저장량을 늘려야 해. 전진기지 "
+"덕분에 고기와 채소가 공급되고는 있지만, 그걸 보관할 더 나은 방법을 준비해야지. 누가 말하기를 유리병만 충분히 있으면 절임이나 고기 "
+"통조림 같은걸 만들 수 있는 통조림 만드는 기술을 알고 있다더라구. 그게 있으면 겨울을 버틸 수 있겠지. 우선 유리병을 25개 가져다주면"
+" 끝내주는 가격에 매입할게."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid ""
@@ -148248,12 +148300,15 @@ msgstr ""
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid ""
 "That's one less thing to worry about.  Glad to have someone like you on our "
-"side.  Here's 25 merch, and the broker will buy any further glass jars you "
+"side.  Here's 250 merch, and the broker will buy any further glass jars you "
 "can find - at a reduced price, we can't keep up the premium rate.  Actually,"
 " the broker was saying they had some jobs like this for you, and that it "
 "might be easier to just go straight through their office if you want more "
 "work."
 msgstr ""
+"덕분에 걱정거리가 하나 줄었어. 너 같은 녀석이 우리와 함께해서 참 다행이야. 여기 250 머크야. 만약 유리병을 더 구해온다면 우리 "
+"거래상이 매입할테지만, 지금처럼 좋게 쳐주기는 힘들어. 미안해. 그러고보니 거래상이 네가 관심보일만한 일을 좀 가져왔다던데, 혹시 관심 "
+"있으면 그 녀석 사무실로 가봐."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid "Unknown Recipient"
@@ -157755,6 +157810,7 @@ msgid "cabin basement"
 msgstr "오두막 지하실"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
 #: data/mods/Magiclysm/worldgen/overmap_terrain.json
@@ -157883,6 +157939,7 @@ msgid "irradiation plant"
 msgstr "방사성 살균 공장"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_evac_center.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_military.json
@@ -170916,7 +170973,7 @@ msgstr "신경 조직이 내부에 점점히 박힌 주먹만한 크기의 방�
 msgid ""
 "The muscles grow stiff, and begin leaking a dark gray liquid that pools "
 "around your feet"
-msgstr ""
+msgstr "근육이 딱딱하게 굳었으며, 어두운 잿빛 액체가 흘러나와 발 아래에 웅덩이를 이룹니다."
 
 #: data/json/snippets/mutant_anatomy.json
 msgid ""
@@ -177792,8 +177849,11 @@ msgstr "차량 내부의 여러 사각형을 밝히는 밝은 조명."
 #: data/json/vehicleparts/vp_flags.json
 msgid ""
 "Armor plate.  Will partially protect other components on the same frame from"
-" damage."
-msgstr "장갑판입니다. 같은 프레임에 있는 다른 장치들을 피해로부터 부분적으로 보호합니다."
+" damage from direct attacks but not from the shock damage of a distant "
+"collision."
+msgstr ""
+"이 장갑판은 장착된 프레임 내에 위치한 다른 부품을 직접적 충격으로부터 부분적으로 보호하지만, 먼 곳에서 발생한 충돌로 인한 충격에는 "
+"영향을 주지 못합니다."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/vehicleparts/vp_flags.json
@@ -177913,6 +177973,15 @@ msgid ""
 "tile with it."
 msgstr ""
 "이 부품은 충돌시에 당신이 차량 밖으로 튕겨져나가지 않게 막아줍니다. 이 부품이 설치된 타일로 이동하면 자동적으로 이 부품을 사용합니다."
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/vehicleparts/vp_flags.json
+msgid ""
+"Armor plate.  Will partially protect other components on the same frame from"
+" the shock damage of a distant collision but not from direct attacks."
+msgstr ""
+"이 장갑판은 장착된 프레임 내에 위치한 다른 부품을 먼 곳에서 발생한 충돌로 인한 충격으로부터 부분적으로 보호하지만, 직접적 충격에는 "
+"영향을 주지 못합니다."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/vehicleparts/vp_flags.json
@@ -220128,6 +220197,11 @@ msgstr "그 작업에 필요한 기술이 부족합니다."
 msgid "There is something blocking the location for this task."
 msgstr "이 일을 하는 걸 방해하는 무언가가 있습니다."
 
+#: src/activity_item_handling.cpp src/iexamine.cpp src/mission_companion.cpp
+#: src/vehicle_part.cpp
+msgid "It is too cold to plant anything now."
+msgstr "너무 추워서 어떤 것도 심을 수 없습니다."
+
 #: src/activity_item_handling.cpp
 msgid "The required items are not available to complete this task."
 msgstr "이 작업을 완료하는데 필요한 물품이 없습니다."
@@ -238035,10 +238109,6 @@ msgstr "%s(이)가 산산조각나 포자가 되어 흩날립니다!"
 msgid "Use which seed?"
 msgstr "어떤 씨앗을 사용합니까?"
 
-#: src/iexamine.cpp src/mission_companion.cpp src/vehicle_part.cpp
-msgid "It is too cold to plant anything now."
-msgstr "너무 추워서 어떤 것도 심을 수 없습니다."
-
 #: src/iexamine.cpp
 msgid "You have no seeds to plant."
 msgstr "심을 수 있는 씨앗이 없습니다."
@@ -240465,15 +240535,23 @@ msgid "Weapon Category: "
 msgstr "무기 분류: "
 
 #: src/item.cpp
-msgid ""
-"This item is a <info>magical focus</info>.  You can cast spells with it in "
-"your hand."
-msgstr "이 물품은 <info>마법적 도구</info>입니다. 이 물품을 손에 든 채로 주문을 시전할 수 있습니다."
-
-#: src/item.cpp
 #, c-format
 msgid "This is an in progress %s.  It is %d percent complete."
 msgstr "제작 중인 %s입니다.  현재 %d 퍼센트 완료되었습니다."
+
+#. ~ %1$s: gerund (e.g. carved), %2$s: item name, %3$s: inscription text
+#: src/item.cpp
+#, c-format
+msgctxt "carving"
+msgid "<info>%1$s on the %2$s is:</info> %3$s"
+msgstr "<info>%1$s의 %2$s:</info> %3$s"
+
+#. ~ %1$s: inscription text
+#: src/item.cpp
+#, c-format
+msgctxt "carving"
+msgid "Note: %1$s"
+msgstr "메모: %1$s"
 
 #: src/item.cpp
 #, c-format
@@ -240532,8 +240610,8 @@ msgid "rot (turns): "
 msgstr "부패 (턴):"
 
 #: src/item.cpp
-msgid "max rot (turns): "
-msgstr "최대 부패 (턴):"
+msgid "shelf life (turns): "
+msgstr "유통기한 (턴): "
 
 #: src/item.cpp
 msgid "last rot: "
@@ -241575,20 +241653,6 @@ msgstr "작업이 완료되었고, 이제 <info>사용할 수 있습니다</info
 #, c-format
 msgid "It will be done in %s."
 msgstr "작업 완료까지 %s."
-
-#. ~ %1$s: gerund (e.g. carved), %2$s: item name, %3$s: inscription text
-#: src/item.cpp
-#, c-format
-msgctxt "carving"
-msgid "%1$s on the %2$s is: %3$s"
-msgstr "%2$s의 %1$s: %3$s"
-
-#. ~ %1$s: inscription text
-#: src/item.cpp
-#, c-format
-msgctxt "carving"
-msgid "Note: %1$s"
-msgstr "메모: %1$s"
 
 #: src/item.cpp
 #, c-format
@@ -258569,6 +258633,46 @@ msgid ""
 "Set a default character name that will be used instead of a random name on "
 "character creation."
 msgstr "캐릭터 생성 시 무작위 이름 대신 사용할 기본 캐릭터 이름을 설정합니다."
+
+#: src/options.cpp
+msgid "Merge similar comestibles"
+msgstr "비슷한 식품 합치기"
+
+#: src/options.cpp
+msgid "Configure how similar items are stacked."
+msgstr "유사한 물품이 누적될지의 여부를 설정합니다."
+
+#: src/options.cpp
+msgid "Merging Mode"
+msgstr "물품 병합 모드"
+
+#: src/options.cpp
+msgid ""
+"Merge similar comestibles.  Legacy: default behavior.  Liquid: Merge only "
+"liquid comestibles.  All: Merge all comestibles."
+msgstr ""
+"유사한 식품을 하나로 합칩니다. 기존: 기본 상태를 유지합니다. 액체: 액체형 식품만 합칩니다. 전체: 모든 식품을 합칩니다."
+
+#: src/options.cpp
+msgid "Legacy"
+msgstr "기존"
+
+#: src/options.cpp
+msgid "Liquid"
+msgstr "액체"
+
+#: src/options.cpp
+msgid "Freshness similarity threshold"
+msgstr "신선도 유사 한계선"
+
+#: src/options.cpp
+msgid ""
+"Limit maximum allowed staleness difference when merging comestibles.  The "
+"lower the value, the more similar the items must be to merge.  0.0: Only "
+"merge identical items.  1.0: Merge comestibles regardless of its freshness."
+msgstr ""
+"여러 식품들을 하나로 합칠 때 허용 가능한 최대 신선도 차이를 설정합니다. 값이 낮을수록 더 유사한 신선도의 물품끼리만 합쳐집니다. "
+"0.0: 완전히 같은 물품만 합쳐집니다. 1.0: 신선도에 관계없이 모든 식품을 하나로 합칩니다."
 
 #: src/options.cpp
 msgid "Auto pickup enabled"
