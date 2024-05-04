@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-04-27 01:00+0000\n"
+"POT-Creation-Date: 2024-05-04 01:03+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -15186,10 +15186,11 @@ msgstr "射出酸液球的假枪。"
 #: data/json/items/gun/762.json data/json/items/gun/762x25.json
 #: data/json/items/gun/8x40mm.json data/json/items/gun/9mm.json
 #: data/json/items/gun/9x18.json data/json/items/gun/bio.json
-#: data/json/items/gun/flammable.json data/json/items/gun/plasma.json
-#: data/json/items/gun/shot.json data/json/items/gun/ups.json
-#: data/json/items/gunmod/mechanism.json data/json/items/ranged/pneumatic.json
-#: data/json/obsoletion/items.json data/mods/Generic_Guns/firearms/pistol.json
+#: data/json/items/gun/flammable.json data/json/items/gun/nail.json
+#: data/json/items/gun/plasma.json data/json/items/gun/shot.json
+#: data/json/items/gun/ups.json data/json/items/gunmod/mechanism.json
+#: data/json/items/ranged/pneumatic.json data/json/obsoletion/items.json
+#: data/mods/Generic_Guns/firearms/pistol.json
 #: data/mods/Generic_Guns/firearms/rifle.json
 #: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
 #: src/item_factory.cpp
@@ -15198,8 +15199,9 @@ msgstr "自动"
 
 #: data/json/monster_attacks.json data/json/items/fake.json
 #: data/json/items/classes/gun.json data/json/items/classes/range.json
-#: data/json/items/gun/bio.json data/json/items/ranged/spearguns.json
-#: data/json/obsoletion/items.json data/mods/Aftershock/items/obsolete.json
+#: data/json/items/gun/bio.json data/json/items/gun/nail.json
+#: data/json/items/ranged/spearguns.json
+#: data/mods/Aftershock/items/obsolete.json
 #: data/mods/Aftershock/items/weapons.json
 #: data/mods/Aftershock/items/gun/advanced.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
@@ -28196,8 +28198,8 @@ msgid "NULL Weather - BUG"
 msgstr "空天气（Bug）"
 
 #: data/json/weather_type.json
-msgid "Clear"
-msgstr "晴朗"
+msgid "Fair"
+msgstr "好天气"
 
 #: data/json/weather_type.json
 msgid "Sunny"
@@ -47685,9 +47687,20 @@ msgstr "你激活你的 %s。"
 #. ~ Use action need_charges_msg for {'str': 'pair of infrared goggles',
 #. 'str_pl': 'pairs of infrared goggles'}.
 #. ~ Use action need_charges_msg for {'str': 'thermal electric outfit'}.
+#. ~ Use action need_charges_msg for {'str': 'powered quarterstaff (off)',
+#. 'str_pl': 'powered quarterstaves (off)'}.
+#. ~ Use action need_charges_msg for {'str': 'tactical tonfa (off)', 'str_pl':
+#. 'tactical tonfas (off)'}.
+#. ~ Use action need_charges_msg for {'str': 'electrified foil (off)'}.
+#. ~ Use action need_charges_msg for {'str': 'electrified épée'}.
+#. ~ Use action need_charges_msg for {'str': 'electrified saber (off)',
+#. 'str_pl': 'electrified sabers (off)'}.
+#. ~ Use action need_charges_msg for {'str': 'electrified rapier (off)',
+#. 'str_pl': 'electrified rapiers (off)'}.
 #. ~ Use action need_charges_msg for {'str': 'cryopod bodyglove'}.
-#: data/json/items/tool_armor.json data/mods/Aftershock/items/tool_armor.json
-#: src/iuse.cpp
+#: data/json/items/tool_armor.json data/json/items/melee/bludgeons.json
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/Aftershock/items/tool_armor.json src/iuse.cpp
 #, c-format
 msgid "The %s's batteries are dead."
 msgstr "%s没电了。"
@@ -49307,6 +49320,13 @@ msgstr "一对用线连接的工业级防噪耳塞，现在正挂在你的脖子
 msgid "survivor half-mask"
 msgid_plural "survivor half-masks"
 msgstr[0] "幸存者半面罩"
+
+#. ~ Description for {'str': 'survivor half-mask'}
+#: data/json/items/tool_armor.json
+msgid ""
+"A custom-built, reinforced gas mask that covers just the mouth.  Provides "
+"excellent protection from smoke.  It must be prepared before use."
+msgstr "一个自制防毒面具，只覆盖嘴部，保护你不会受到烟雾的影响。配套的过滤器需要准备一下才能使用。"
 
 #: data/json/items/toolmod.json
 msgid "base toolmod"
@@ -52165,6 +52185,85 @@ msgstr "存放手雷"
 #: data/json/items/armor/bandolier.json
 msgid "A pouch for holding up to four full-sized grenades of various types."
 msgstr "一个能存放四颗各式手雷的大型榴弹袋。"
+
+#: data/json/items/armor/bandolier.json
+msgid "grenade ammo bandolier"
+msgid_plural "grenade ammo bandoliers"
+msgstr[0] "榴弹弹药带"
+
+#. ~ Description for {'str': 'grenade ammo bandolier'}
+#: data/json/items/armor/bandolier.json
+msgid "A leather bandolier for keeping cartridge grenades close to hand."
+msgstr "一个皮革子弹带，保证榴弹弹药随手可得。"
+
+#: data/json/items/armor/bedding.json
+msgid "sheet"
+msgid_plural "sheets"
+msgstr[0] "布料"
+
+#. ~ Description for {'str': 'sheet'}
+#: data/json/items/armor/bedding.json
+msgid ""
+"A large fabric sheet, could be used as a curtain or bedsheets; or cut up for"
+" a bunch of rags."
+msgstr "一大卷棉布，可以用来制造成窗帘或床单，或者裁剪为一堆布条。"
+
+#: data/json/items/armor/bedding.json
+msgid "blanket"
+msgid_plural "blankets"
+msgstr[0] "棉毯"
+
+#. ~ Description for {'str': 'blanket'}
+#: data/json/items/armor/bedding.json
+msgid "Hiding under here will not protect you from the monsters."
+msgstr ""
+"一个大的棉毯，可以用来当被子，也可以穿上进行保暖。\n"
+"\"在怪物攻击时躲在它底下并不能保护你。\""
+
+#: data/json/items/armor/bedding.json
+msgid "down-filled blanket"
+msgid_plural "down-filled blankets"
+msgstr[0] "羽绒毯"
+
+#. ~ Description for {'str': 'down-filled blanket'}
+#: data/json/items/armor/bedding.json
+msgid ""
+"Hiding under here will not protect you from the monsters, but it'll keep you"
+" warm."
+msgstr "一个羽绒毯，相比普通棉毯，羽绒毯更加的温暖舒适，你可以用它当被子，也可以穿在身上进行保暖。"
+
+#: data/json/items/armor/bedding.json
+msgid "fur blanket"
+msgid_plural "fur blankets"
+msgstr[0] "毛皮毯子"
+
+#. ~ Description for {'str': 'fur blanket'}
+#: data/json/items/armor/bedding.json
+msgid "A heavy fur blanket that covers most of your body."
+msgstr "一件厚重的毛毯，可以用来当被子，也可以穿在身上进行保暖。"
+
+#: data/json/items/armor/bedding.json
+msgid "sleeping bag"
+msgid_plural "sleeping bags"
+msgstr[0] "睡袋"
+
+#. ~ Use action menu_text for {'str': 'sleeping bag'}.
+#. ~ Use action menu_text for {'str': 'fur sleeping bag'}.
+#: data/json/items/armor/bedding.json data/json/items/armor/misc.json
+msgid "Roll up"
+msgstr "卷起"
+
+#. ~ Use action msg for {'str': 'sleeping bag'}.
+#: data/json/items/armor/bedding.json
+msgid "You roll up the sleeping bag, preparing it for transport."
+msgstr "你把睡袋卷起来，便于携带。"
+
+#. ~ Description for {'str': 'sleeping bag'}
+#: data/json/items/armor/bedding.json
+msgid ""
+"A large sleeping bag that covers you head to toe.  This one is medium "
+"weight."
+msgstr "一个可以把你从头到脚包住的大睡袋。它采用中厚织物制成。"
 
 #: data/json/items/armor/belts.json
 msgid "firefighter belt"
@@ -60599,12 +60698,6 @@ msgid "fur sleeping bag"
 msgid_plural "fur sleeping bags"
 msgstr[0] "毛皮睡袋"
 
-#. ~ Use action menu_text for {'str': 'fur sleeping bag'}.
-#. ~ Use action menu_text for {'str': 'sleeping bag'}.
-#: data/json/items/armor/misc.json data/json/items/generic/bedding.json
-msgid "Roll up"
-msgstr "卷起"
-
 #. ~ Use action msg for {'str': 'fur sleeping bag'}.
 #: data/json/items/armor/misc.json
 msgid "You roll up the fur sleeping bag, preparing it for transport."
@@ -66031,6 +66124,21 @@ msgid ""
 "how to mix and use cement to form useful aggregates."
 msgstr "这本书介绍了混凝土的各类主要用途。同时详细说明了混合水泥及骨料制成混凝土的过程。"
 
+#: data/json/items/book/fabrication.json data/json/obsoletion/items.json
+msgid "238-NK: Practicality Enhancement"
+msgid_plural "copies of 238-NK: Practicality Enhancement"
+msgstr[0] "238-NK：实用性强化"
+
+#. ~ Description for {'str': '238-NK: Practicality Enhancement', 'str_pl':
+#. 'copies of 238-NK: Practicality Enhancement'}
+#: data/json/items/book/fabrication.json data/json/obsoletion/items.json
+msgid ""
+"The authors of this thoroughly researched and documented proposal make a "
+"very persuasive case for the adoption of spring-driven nuclear shells.  It's"
+" stamped \"DENIED\"."
+msgstr ""
+"从这份学术综述中能够看出，作者做了详尽的研究和总结，并用近乎怂恿的语气推荐有关部门试用这种\"弹簧驱动式\"热核子弹。不过，封面上盖着大大的\"弃用\"章。"
+
 #: data/json/items/book/firstaid.json
 msgid "Guide to Advanced Emergency Care"
 msgid_plural "copies of Guide to Advanced Emergency Care"
@@ -69160,7 +69268,8 @@ msgstr[0] "基础发射器"
 
 #: data/json/items/classes/gun.json data/json/items/gun/40x46mm.json
 #: data/json/items/gun/4570.json data/json/items/gun/shot.json
-#: data/json/obsoletion/items.json data/mods/Aftershock/items/gun/5x50.json
+#: data/json/items/ranged/pneumatic.json
+#: data/mods/Aftershock/items/gun/5x50.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/Generic_Guns/firearms/obsolete.json
 #: data/mods/Magiclysm/items/enchanted_ranged.json
@@ -69275,7 +69384,7 @@ msgstr[0] "基础霰弹枪"
 
 #: data/json/items/classes/gun.json data/json/items/gun/bio.json
 #: data/json/items/gun/combination.json data/json/items/gun/monster_gun.json
-#: data/json/obsoletion/items.json
+#: data/json/items/ranged/pneumatic.json
 #: data/mods/Aftershock/items/gun/projectile.json
 #: data/mods/Magiclysm/items/enchanted_ranged.json
 #: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
@@ -77943,26 +78052,6 @@ msgid "A handful of raw hard nuts from a hazelnut tree."
 msgstr "一把从榛树上摘下来的生榛子，很硬。"
 
 #: data/json/items/comestibles/nuts.json
-msgid "roasted edamame"
-msgid_plural "roasted edamame"
-msgstr[0] "烤毛豆"
-
-#. ~ Description for {'str_sp': 'roasted edamame'}
-#: data/json/items/comestibles/nuts.json
-msgid "Roasted edamame, a heart healthy snack."
-msgstr "烤毛豆，一种有益心脏健康的零食。"
-
-#: data/json/items/comestibles/nuts.json
-msgid "roasted soy nuts"
-msgid_plural "roasted soy nuts"
-msgstr[0] "烤大豆"
-
-#. ~ Description for {'str_sp': 'roasted soy nuts'}
-#: data/json/items/comestibles/nuts.json
-msgid "Roasted soybeans, often called soy nuts."
-msgstr "烤大豆，通常被称为烤豆子。"
-
-#: data/json/items/comestibles/nuts.json
 msgid "roasted hazelnuts"
 msgid_plural "roasted hazelnuts"
 msgstr[0] "烤榛子"
@@ -81626,6 +81715,47 @@ msgstr[0] "煎蕨菜"
 msgid "Fiddleheads sauteed in fat.  Tender and delicious."
 msgstr "用油煎过的蕨菜。软嫩而美味。"
 
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "smoked veggy sausage"
+msgid_plural "smoked veggy sausages"
+msgstr[0] "熏素香肠"
+
+#. ~ Description for smoked veggy sausage
+#: data/json/items/comestibles/veggy_dishes.json
+msgid ""
+"A plant based sausage that has been cured and smoked for long term storage."
+msgstr "一条很大的美味植物制腊肠，已经经过处理熏制，可以长期存储。"
+
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "cooked veggy sausage"
+msgid_plural "cooked veggy sausages"
+msgstr[0] "熟素香肠"
+
+#. ~ Description for cooked veggy sausage
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "A plant based sausage that has been cooked."
+msgstr "一条很大的熟植物制香肠，可以食用了。"
+
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "roasted edamame"
+msgid_plural "roasted edamame"
+msgstr[0] "烤毛豆"
+
+#. ~ Description for {'str_sp': 'roasted edamame'}
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "Roasted edamame, a heart healthy snack."
+msgstr "烤毛豆，一种有益心脏健康的零食。"
+
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "roasted soy nuts"
+msgid_plural "roasted soy nuts"
+msgstr[0] "烤大豆"
+
+#. ~ Description for {'str_sp': 'roasted soy nuts'}
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "Roasted soybeans, often called soy nuts."
+msgstr "烤大豆，通常被称为烤豆子。"
+
 #: data/json/items/comestibles/wheat.json
 msgid "wheat cereal"
 msgid_plural "wheat cereals"
@@ -82967,69 +83097,6 @@ msgid ""
 "A wand made of heat-resistant ceramics.  When plugged into an outlet, it is "
 "hot enough to shape your hair into curls.  Too bad the power's out."
 msgstr "一根采用耐热陶瓷制成的短棒。当插入插座后，它能够加热到使你的头发卷曲的温度。可惜停电了。"
-
-#: data/json/items/generic/bedding.json
-msgid "sheet"
-msgid_plural "sheets"
-msgstr[0] "布料"
-
-#. ~ Description for {'str': 'sheet'}
-#: data/json/items/generic/bedding.json
-msgid ""
-"A large fabric sheet, could be used as a curtain or bedsheets; or cut up for"
-" a bunch of rags."
-msgstr "一大卷棉布，可以用来制造成窗帘或床单，或者裁剪为一堆布条。"
-
-#: data/json/items/generic/bedding.json
-msgid "blanket"
-msgid_plural "blankets"
-msgstr[0] "棉毯"
-
-#. ~ Description for {'str': 'blanket'}
-#: data/json/items/generic/bedding.json
-msgid "Hiding under here will not protect you from the monsters."
-msgstr ""
-"一个大的棉毯，可以用来当被子，也可以穿上进行保暖。\n"
-"\"在怪物攻击时躲在它底下并不能保护你。\""
-
-#: data/json/items/generic/bedding.json
-msgid "down-filled blanket"
-msgid_plural "down-filled blankets"
-msgstr[0] "羽绒毯"
-
-#. ~ Description for {'str': 'down-filled blanket'}
-#: data/json/items/generic/bedding.json
-msgid ""
-"Hiding under here will not protect you from the monsters, but it'll keep you"
-" warm."
-msgstr "一个羽绒毯，相比普通棉毯，羽绒毯更加的温暖舒适，你可以用它当被子，也可以穿在身上进行保暖。"
-
-#: data/json/items/generic/bedding.json
-msgid "fur blanket"
-msgid_plural "fur blankets"
-msgstr[0] "毛皮毯子"
-
-#. ~ Description for {'str': 'fur blanket'}
-#: data/json/items/generic/bedding.json
-msgid "A heavy fur blanket that covers most of your body."
-msgstr "一件厚重的毛毯，可以用来当被子，也可以穿在身上进行保暖。"
-
-#: data/json/items/generic/bedding.json
-msgid "sleeping bag"
-msgid_plural "sleeping bags"
-msgstr[0] "睡袋"
-
-#. ~ Use action msg for {'str': 'sleeping bag'}.
-#: data/json/items/generic/bedding.json
-msgid "You roll up the sleeping bag, preparing it for transport."
-msgstr "你把睡袋卷起来，便于携带。"
-
-#. ~ Description for {'str': 'sleeping bag'}
-#: data/json/items/generic/bedding.json
-msgid ""
-"A large sleeping bag that covers you head to toe.  This one is medium "
-"weight."
-msgstr "一个可以把你从头到脚包住的大睡袋。它采用中厚织物制成。"
 
 #: data/json/items/generic/casing.json
 msgid "Casing from ammunition cartridge"
@@ -85402,7 +85469,7 @@ msgid ""
 msgstr "一把源自意大利的双管半自动手枪，每次发射两发子弹，是 M1911 手枪的衍生型号。"
 
 #: data/json/items/gun/38super.json data/json/items/gun/bio.json
-#: data/json/items/gun/shot.json data/json/obsoletion/items.json
+#: data/json/items/gun/shot.json data/json/items/ranged/pneumatic.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/Generic_Guns/firearms/obsolete.json
 #: data/mods/Magiclysm/items/enchanted_unarmed.json
@@ -87447,6 +87514,35 @@ msgid ""
 "A tool used to drive nails into wood or other material.  It could also be "
 "used as an ad-hoc weapon."
 msgstr "一把将钉子射入木头和其他材料的工具。也可以当作临时武器使用。"
+
+#: data/json/items/gun/nail.json
+msgid "coilgun"
+msgid_plural "coilguns"
+msgstr[0] "自制线圈枪"
+
+#: data/json/items/gun/nail.json
+msgid ""
+"A homemade gun, using electromagnets to accelerate a ferromagnetic "
+"projectile to high velocity.  Powered by UPS."
+msgstr "一把自制的枪，灵感来源于炮姐，利用电磁铁来加速铁磁弹丸从而射出。采用UPS供电。"
+
+#: data/json/items/gun/nail.json data/mods/Aftershock/items/gun/advanced.json
+#: data/mods/CRT_EXPANSION/items/crt_gun.json
+#: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
+msgid "semi-auto"
+msgstr "半自动"
+
+#: data/json/items/gun/nail.json data/mods/No_Hope/Items/guns.json
+msgid "nail rifle"
+msgid_plural "nail rifles"
+msgstr[0] "射钉步枪"
+
+#: data/json/items/gun/nail.json data/mods/No_Hope/Items/guns.json
+msgid ""
+"This is a nailgun that has been extensively modified with the addition of a "
+"short barrel, stock and hand guard.  It can be reloaded using detachable "
+"magazines and is an overall much more effective weapon."
+msgstr "这是一把射钉枪，被改造的面目全非，增加了一个短枪管，枪托和护木。它可以使用可拆卸弹匣装填，总体上说是更为有效的武器。"
 
 #: data/json/items/gun/paintball.json
 msgid "Paintball gun"
@@ -91344,6 +91440,19 @@ msgid ""
 "system."
 msgstr "带有阀门的 4L 加压钢罐，专为 RM451 的进料系统设计。"
 
+#: data/json/items/magazine/nail.json
+msgid "nail rifle magazine"
+msgid_plural "nail rifle magazines"
+msgstr[0] "射钉步枪弹匣"
+
+#. ~ Description for {'str': 'nail rifle magazine'}
+#: data/json/items/magazine/nail.json
+msgid ""
+"An improvised magazine for use with a nail rifle.  Little more than a tin "
+"can, spring and some duct tape it is awkward to reload and not especially "
+"reliable."
+msgstr "一个可用于射钉步枪的自制弹匣。由锡罐、弹簧和一些胶带制成，有点难装填，而且也不是特别可靠。"
+
 #: data/json/items/magazine/shot.json
 msgid "Saiga-12 box magazine"
 msgid_plural "Saiga-12 box magazines"
@@ -92140,19 +92249,46 @@ msgid ""
 msgstr "一根光滑坚硬的木棒，有皮制的把手，并且箍上金属圈装上金属包头来加强攻击力。耐用、匀称，并且令人惊奇的容易掌握。"
 
 #: data/json/items/melee/bludgeons.json
-msgid "powered quarterstaff"
-msgid_plural "powered quarterstaves"
-msgstr[0] "电棍"
+msgid "powered quarterstaff (off)"
+msgid_plural "powered quarterstaves (off)"
+msgstr[0] "电棍（关）"
 
-#. ~ Description for {'str': 'powered quarterstaff', 'str_pl': 'powered
-#. quarterstaves'}
+#. ~ Use action msg for {'str': 'powered quarterstaff (off)', 'str_pl':
+#. 'powered quarterstaves (off)'}.
+#: data/json/items/melee/bludgeons.json
+msgid "You press a button and the staff crackles with electricity."
+msgstr "你按下按钮，这根棍子就发出电流的啪啪声。"
+
+#. ~ Description for {'str': 'powered quarterstaff (off)', 'str_pl': 'powered
+#. quarterstaves (off)'}
 #: data/json/items/melee/bludgeons.json
 msgid ""
 "This is an ironshod quarterstaff that has a high-voltage stun gun built into"
 " the handle.  The stun gun is wired to the metal caps at either end of the "
-"staff, allowing you to zap a dangerous opponent should beating them "
-"senseless with it prove too hazardous."
-msgstr "这是一柄铁头木棒，内置有高压眩晕枪。眩晕枪发出电流能传至棍棒两端的金属帽上，为将强敌电晕后痛殴致死提供了便利。"
+"staff, allowing you to zap a dangerous opponent with each strike.  It is "
+"currently off."
+msgstr "这是一柄铁头木棒，内置有高压眩晕枪。眩晕枪发出电流能传至棍棒两端的金属帽上，让你每次出击都能电击危险的对手。 目前处于关闭状态。"
+
+#: data/json/items/melee/bludgeons.json
+msgid "powered quarterstaff (on)"
+msgid_plural "powered quarterstaves (on)"
+msgstr[0] "电棍（开）"
+
+#. ~ Use action msg for {'str': 'powered quarterstaff (on)', 'str_pl':
+#. 'powered quarterstaves (on)'}.
+#: data/json/items/melee/bludgeons.json
+msgid "You press a button and the staff turns off."
+msgstr "你按下按钮，这根棍子就被关闭了电源。"
+
+#. ~ Description for {'str': 'powered quarterstaff (on)', 'str_pl': 'powered
+#. quarterstaves (on)'}
+#: data/json/items/melee/bludgeons.json
+msgid ""
+"This is an ironshod quarterstaff that has a high-voltage stun gun built into"
+" the handle.  The stun gun is wired to the metal caps at either end of the "
+"staff, allowing you to zap a dangerous opponent with each strike.  It is "
+"currently on."
+msgstr "这是一柄铁头木棒，内置有高压眩晕枪。眩晕枪发出电流能传至棍棒两端的金属帽上，让你每次出击都能电击危险的对手。 目前处于开启状态。"
 
 #: data/json/items/melee/bludgeons.json
 msgid "rock in a sock"
@@ -92234,36 +92370,46 @@ msgid "tactical tonfa (off)"
 msgid_plural "tactical tonfas (off)"
 msgstr[0] "战术拐（关）"
 
+#. ~ Use action msg for {'str': 'tactical tonfa (off)', 'str_pl': 'tactical
+#. tonfas (off)'}.
+#: data/json/items/melee/bludgeons.json
+msgid "You press a button and the tonfa crackles with electricity."
+msgstr "你按下按钮，这根拐就发出电流的啪啪声。"
+
 #. ~ Description for {'str': 'tactical tonfa (off)', 'str_pl': 'tactical
 #. tonfas (off)'}
 #: data/json/items/melee/bludgeons.json
 msgid ""
 "This is a reinforced plastic tonfa; the core is hollowed out and is filled "
-"with capacitors and a high-yield rechargeable storage battery.  When a "
-"switch on the handle is pressed, a high-voltage current is transmitted to "
-"the two electrodes mounted in the end of the tonfa, and by extension to "
-"anyone unfortunate enough to be in contact with them.  It also has a nifty "
-"flashlight, which is off at the moment."
+"with capacitors and a battery compartment.  When a switch on the handle is "
+"pressed, a high-voltage current is transmitted to the two electrodes mounted"
+" in the end of the tonfa, and by extension to anyone unfortunate enough to "
+"be in contact with them.  It's currently turned off."
 msgstr ""
-"这是个强化的塑料警棍，中空的部分装着电容与高效的充电电池。当握把上的开关被按下去时，一股高压电流会被传送至安装在警棍顶端的两个电极上，并输出给任何接触到电极的倒霉蛋身上。他还有个别致的小手电筒，现在处于关闭的状态。"
+"这是个强化的塑料警棍，中空的部分装着电容与电池盒。当握把上的开关被按下去时，一股高压电流会被传送至安装在拐顶端的两个电极上，并输出给任何接触到电极的倒霉蛋身上。目前处于关闭状态。"
 
 #: data/json/items/melee/bludgeons.json
 msgid "tactical tonfa (on)"
 msgid_plural "tactical tonfas (on)"
 msgstr[0] "战术拐（开）"
 
+#. ~ Use action msg for {'str': 'tactical tonfa (on)', 'str_pl': 'tactical
+#. tonfas (on)'}.
+#: data/json/items/melee/bludgeons.json
+msgid "You press a button and the tonfa turns off."
+msgstr "你按下按钮，这根拐就被关闭了电源。"
+
 #. ~ Description for {'str': 'tactical tonfa (on)', 'str_pl': 'tactical tonfas
 #. (on)'}
 #: data/json/items/melee/bludgeons.json
 msgid ""
 "This is a reinforced plastic tonfa; the core is hollowed out and is filled "
-"with capacitors and a high-yield rechargeable storage battery.  When a "
-"switch on the handle is pressed, a high-voltage current is transmitted to "
-"the two electrodes mounted in the end of the tonfa, and by extension to "
-"anyone unfortunate enough to be in contact with them.  It also has a nifty "
-"flashlight, which is currently active."
+"with capacitors and a battery compartment.  When a switch on the handle is "
+"pressed, a high-voltage current is transmitted to the two electrodes mounted"
+" in the end of the tonfa, and by extension to anyone unfortunate enough to "
+"be in contact with them.  It's currently turned on."
 msgstr ""
-"这是个强化的塑料警棍，中空的部分装着电容与高效的充电电池。当握把上的开关被按下去时，一股高压电流会被传送至安装在警棍顶端的两个电极上，并输出给任何接触到电极的倒霉蛋身上。他还有个别致的小手电筒，现在处于开启的状态。"
+"这是个强化的塑料警棍，中空的部分装着电容与电池盒。当握把上的开关被按下去时，一股高压电流会被传送至安装在拐顶端的两个电极上，并输出给任何接触到电极的倒霉蛋身上。目前处于开启状态。"
 
 #: data/json/items/melee/bludgeons.json
 msgid "war hammer"
@@ -93651,21 +93797,50 @@ msgstr ""
 "这把曾经人畜无害的花剑的压力感应器已经被移除，末端被粗糙地磨尖。虽然它还是没有剑刃，但磨尖的末端已经使它带有一定程度的致命性，对于熟悉击剑的人来说还是比较有用的。"
 
 #: data/json/items/melee/swords_and_blades.json
-msgid "electrified foil"
-msgid_plural "electrified foils"
-msgstr[0] "电击花剑"
+msgid "electrified foil (off)"
+msgid_plural "electrified foil (off)s"
+msgstr[0] "电击花剑（关）"
 
-#. ~ Description for {'str': 'electrified foil'}
+#. ~ Use action msg for {'str': 'electrified foil (off)'}.
+#. ~ Use action msg for {'str': 'electrified saber (on)', 'str_pl':
+#. 'electrified sabers (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the foil crackles with electricity."
+msgstr "你按下按钮，这把花剑就发出电流的啪啪声。"
+
+#. ~ Description for {'str': 'electrified foil (off)'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
 "The modifications made to this fencing foil may not be sporting, but they "
 "might give you an edge in this final competition.  Extra effort has been "
 "made to insulate the grip and a high voltage stun gun has been attached to "
 "the guard, wired through the electronic scoring circuit to the tip.  "
-"Thrusting the sharpened tip into a foe and activating the momentary switch "
-"will deliver a painful electric shock."
+"Activate the switch to elecrocute your foes!"
 msgstr ""
-"这把花剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把花剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并通过电子计分器的电路连到了花剑末端。如果你在击打敌人时按下电击开关，就可以释放出一道强烈的电击。"
+"这把花剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把花剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并通过电子计分器的电路连到了花剑末端。打开开关来电烂你的敌人吧！"
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "electrified foil (on)"
+msgid_plural "electrified foils (on)"
+msgstr[0] "电击花剑（开）"
+
+#. ~ Use action msg for {'str': 'electrified foil (on)', 'str_pl':
+#. 'electrified foils (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the foil turns off."
+msgstr "你按下按钮，这把花剑就被关闭了电源。"
+
+#. ~ Description for {'str': 'electrified foil (on)', 'str_pl': 'electrified
+#. foils (on)'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"The modifications made to this fencing foil may not be sporting, but they "
+"might give you an edge in this final competition.  Extra effort has been "
+"made to insulate the grip and a high voltage stun gun has been attached to "
+"the guard, wired through the electronic scoring circuit to the tip.  It is "
+"currently turned on."
+msgstr ""
+"这把花剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把花剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并通过电子计分器的电路连到了花剑末端。目前处于开启状态。"
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "fencing épée"
@@ -93700,6 +93875,11 @@ msgid "electrified épée"
 msgid_plural "electrified épées"
 msgstr[0] "电击重剑"
 
+#. ~ Use action msg for {'str': 'electrified épée'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the epee crackles with electricity."
+msgstr "你按下按钮，这把重剑就发出电流的啪啪声。"
+
 #. ~ Description for {'str': 'electrified épée'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
@@ -93707,10 +93887,32 @@ msgid ""
 "might give you an edge in this final competition.  Extra effort has been "
 "made to insulate the grip and a high voltage stun gun has been attached to "
 "the guard, wired through the electronic scoring circuit to the tip.  "
-"Thrusting the sharpened tip into a foe and activating the momentary switch "
-"will deliver a painful electric shock."
+"Activate the switch to electrocute your foes!"
 msgstr ""
-"这把重剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把重剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并通过电子计分器的电路连到了重剑末端。如果你在击打敌人时按下电击开关，就可以释放出一道强烈的电击。"
+"这把重剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把重剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并通过电子计分器的电路连到了重剑末端。打开开关来电烂你的敌人吧！"
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "electrified epee (on)"
+msgid_plural "electrified epees (on)"
+msgstr[0] "电击重剑（开）"
+
+#. ~ Use action msg for {'str': 'electrified epee (on)', 'str_pl':
+#. 'electrified epees (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the epee turns off."
+msgstr "你按下按钮，这把重剑就被关闭了电源。"
+
+#. ~ Description for {'str': 'electrified epee (on)', 'str_pl': 'electrified
+#. epees (on)'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"The modifications made to this fencing épée may not be sporting, but they "
+"might give you an edge in this final competition.  Extra effort has been "
+"made to insulate the grip and a high voltage stun gun has been attached to "
+"the guard, wired through the electronic scoring circuit to the tip.  It is "
+"currently turned on."
+msgstr ""
+"这把重剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把重剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并通过电子计分器的电路连到了重剑末端。目前处于开启状态。"
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "fencing saber"
@@ -93740,21 +93942,44 @@ msgstr ""
 "这把曾经人畜无害的佩剑的钝尖已经被折断，末端被粗糙地磨尖。虽然它还是没有剑刃，但磨尖的剑尖已经使它带有相当程度的致命性，对于熟悉击剑的人来说还是比较有用的。"
 
 #: data/json/items/melee/swords_and_blades.json
-msgid "electrified saber"
-msgid_plural "electrified sabers"
-msgstr[0] "电击佩剑"
+msgid "electrified saber (off)"
+msgid_plural "electrified sabers (off)"
+msgstr[0] "电击佩剑（关）"
 
-#. ~ Description for {'str': 'electrified saber'}
+#. ~ Use action msg for {'str': 'electrified saber (off)', 'str_pl':
+#. 'electrified sabers (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the sabre crackles with electricity."
+msgstr "你按下按钮，这把佩剑就发出电流的啪啪声。"
+
+#. ~ Description for {'str': 'electrified saber (off)', 'str_pl': 'electrified
+#. sabers (off)'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
 "The modifications made to this fencing saber may not be sporting, but they "
 "might give you an edge in this final competition.  Extra effort has been "
 "made to insulate the grip and a high voltage stun gun has been attached to "
-"the guard, wired to the tip along the saber's groove.  Thrusting the "
-"sharpened tip into a foe and activating the momentary switch will deliver a "
-"painful electric shock."
+"the guard, wired to the tip along the saber's groove.  Activate the switch "
+"to electrocute your foes!"
 msgstr ""
-"这把佩剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把佩剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并沿着佩剑的血槽连到了剑的末端。如果你在击打敌人时按下电击开关，就可以释放出一道强烈的电击。"
+"这把佩剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把佩剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并沿着佩剑的血槽连到了剑的末端。打开开关来电烂你的敌人吧！"
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "electrified saber (on)"
+msgid_plural "electrified sabers (on)"
+msgstr[0] "电击佩剑（开）"
+
+#. ~ Description for {'str': 'electrified saber (on)', 'str_pl': 'electrified
+#. sabers (on)'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"The modifications made to this fencing saber may not be sporting, but they "
+"might give you an edge in this final competition.  Extra effort has been "
+"made to insulate the grip and a high voltage stun gun has been attached to "
+"the guard, wired through the electronic scoring circuit to the tip.  It is "
+"currently turned on."
+msgstr ""
+"这把佩剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把佩剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并沿着佩剑的血槽连到了剑的末端。目前处于开启状态。"
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "sword cane"
@@ -93816,6 +94041,52 @@ msgid ""
 " weapon of gentlemen and swashbucklers.  Light and quick, it makes any "
 "battle a stylish battle."
 msgstr "很适合绅士与剑士使用的武器，轻盈而迅捷，可以适用于各种战斗。"
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "electrified rapier (off)"
+msgid_plural "electrified rapiers (off)"
+msgstr[0] "电击迅捷剑（关）"
+
+#. ~ Use action msg for {'str': 'electrified rapier (off)', 'str_pl':
+#. 'electrified rapiers (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the rapier crackles with electricity."
+msgstr "你按下按钮，这把迅捷剑就发出电流的啪啪声。"
+
+#. ~ Description for {'str': 'electrified rapier (off)', 'str_pl':
+#. 'electrified rapiers (off)'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"The modifications made to this rapier may not be sporting, but they might "
+"give you an edge in this final competition.  Extra effort has been made to "
+"insulate the grip and a high voltage stun gun has been attached to the "
+"guard, wired to the tip along the saber's groove.  Activate the switch to "
+"electrocute your foes!"
+msgstr ""
+"这把迅捷剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把佩剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并沿着佩剑的血槽连到了剑的末端。打开开关来电烂你的敌人吧！"
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "electrified rapier (on)"
+msgid_plural "electrified rapiers (on)"
+msgstr[0] "电击迅捷剑（开）"
+
+#. ~ Use action msg for {'str': 'electrified rapier (on)', 'str_pl':
+#. 'electrified rapiers (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the rapier turns off."
+msgstr "你按下按钮，这把迅捷剑就被关闭了电源。"
+
+#. ~ Description for {'str': 'electrified rapier (on)', 'str_pl': 'electrified
+#. rapiers (on)'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"The modifications made to this rapier may not be sporting, but they might "
+"give you an edge in this final competition.  Extra effort has been made to "
+"insulate the grip and a high voltage stun gun has been attached to the "
+"guard, wired through the electronic scoring circuit to the tip.  It is "
+"currently turned on."
+msgstr ""
+"这把迅捷剑的改装可以说毫无体育精神，但是能够给你在这场末日比赛中带来一点优势。这把佩剑的把手经过了充分绝缘改装，剑格上接上了一把高压电击枪，并沿着佩剑的血槽连到了剑的末端。目前处于开启状态。"
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "rapier fake"
@@ -94188,6 +94459,32 @@ msgid ""
 "A steel brace with a metal blade at the end, designed to allow the user to "
 "stab and slash with the same motions as a punch."
 msgstr "这是一个带有金属刀片的钢制支撑装置，旨在使用户能够以类似于拳击的动作进行刺击和劈砍。"
+
+#: data/json/items/melee/unarmed_weapons.json
+msgid "jamadhar"
+msgid_plural "jamadhars"
+msgstr[0] "拳锋"
+
+#. ~ Description for {'str': 'jamadhar'}
+#: data/json/items/melee/unarmed_weapons.json
+msgid ""
+"A steel brace with two thinner, pointed blades at the end, designed "
+"primarily to stab victims when used to punch."
+msgstr "一种钢制支架，末端有两个较细、尖锐的刀片，主要设计用于在使用拳头时刺伤受害者。"
+
+#: data/json/items/melee/unarmed_weapons.json
+msgid "pair of impact knuckles"
+msgid_plural "pairs of impact knuckles"
+msgstr[0] "撞击指虎"
+
+#. ~ Description for {'str': 'pair of impact knuckles', 'str_pl': 'pairs of
+#. impact knuckles'}
+#: data/json/items/melee/unarmed_weapons.json
+msgid ""
+"A pair of sturdy steel bracings, inlaid with padding material, which are "
+"then covered by hardened steel plates.  Can be used to safely deliver "
+"punches full force without the risk of harming ones hands."
+msgstr "一对坚固的钢支架，镶嵌有衬垫材料，然后由硬化钢板覆盖。 可用于安全地全力出拳，而不会有伤害手部的危险。"
 
 #: data/json/items/melee/unarmed_weapons.json
 msgid "spiked boxing gloves"
@@ -94819,6 +95116,19 @@ msgid ""
 "reload it, pumping air into the tank takes a few seconds.  It is pretty "
 "quiet and quite deadly."
 msgstr "废料手制而成的多冲程气动步枪。装填时要小心，泵入气体需要几秒时间。它安静而致命。"
+
+#: data/json/items/ranged/pneumatic.json data/mods/No_Hope/Items/guns.json
+msgid "pneumatic shotgun"
+msgid_plural "pneumatic shotguns"
+msgstr[0] "气动双管霰弹枪"
+
+#: data/json/items/ranged/pneumatic.json data/mods/No_Hope/Items/guns.json
+msgid ""
+"A double-barreled pneumatic air shotgun handcrafted from scrap.  Though it's"
+" firepower is lacking compared to more conventional shotguns, this thing can"
+" still pack quite a punch.  That is, if your target is directly in front of "
+"you."
+msgstr "一把双管气动霰弹枪，由废料纯手工制造。虽然和传统霰弹枪相比更弱一些，但是它的威力仍然不错。当然，前提是你的目标离你不远。"
 
 #: data/json/items/ranged/slings.json
 msgctxt "weapon"
@@ -98722,7 +99032,23 @@ msgid ""
 "for bait, but can't get out.  Not humane, prohibited by law, but there are "
 "no cops left to care."
 msgstr ""
-"由塑料瓶改装来的简易捕鱼器。非常简单，甚至原始，但是易用。工作原理：鱼为了吃饵游进来，但是出不去。这玩意和自由博爱背道而驰，同时被美帝法律禁止，不过末世后谁还把美帝当回事呢。"
+"由塑料瓶改装来的简易捕鱼器。非常简单，甚至原始，但是易用。工作原理：鱼为了吃饵游进来，但是出不去。不人道且于法不容, 但这里早就没有警察了。"
+
+#: data/json/items/tool/fishing.json
+msgid "clay fish trap"
+msgid_plural "clay fish traps"
+msgstr[0] "陶制捕鱼器"
+
+#. ~ Description for {'str': 'clay fish trap'}
+#: data/json/items/tool/fishing.json
+msgid ""
+"This is a fish trap made from clay canisters, closely resembling old "
+"Japanese squid traps.  It's simple, even primitive, but easy to use.  The "
+"principle of action: the fish swims inside for bait, but can't get out.  Not"
+" humane, prohibited by law, but there are no cops left to care."
+msgstr ""
+"由陶土制成的简易捕鱼器，与日本古老的乌贼诱捕器非常相似。非常简单，甚至原始，但是易用。工作原理：鱼为了吃饵游进来，但是出不去。不人道且于法不容, "
+"但这里早就没有警察了。"
 
 #: data/json/items/tool/fishing.json
 msgid "fishing hook"
@@ -100593,6 +100919,16 @@ msgid "A polished bone flute with five finger holes."
 msgstr "一根经过精心打磨的骨笛，上面有着五个音孔。"
 
 #: data/json/items/tool/musical_instruments.json
+msgid "wooden flute"
+msgid_plural "wooden flutes"
+msgstr[0] "木笛"
+
+#. ~ Description for {'str': 'wooden flute'}
+#: data/json/items/tool/musical_instruments.json
+msgid "A simple flute carved from wood with five finger holes."
+msgstr "这是一种用木头雕刻而成的简易长笛，有五个指孔。"
+
+#: data/json/items/tool/musical_instruments.json
 msgid "clarinet"
 msgid_plural "clarinets"
 msgstr[0] "黑管"
@@ -100933,6 +101269,7 @@ msgstr ""
 "一个用来收集雨水的大型金属漏斗状装置。相较于塑料版更难移动，但能收集更多水。在户外激活该物品把它放在地上，然后在它下面放一个容器就可以收集雨水了。"
 
 #: data/json/items/tool/raincatchers.json
+#: data/json/vehicleparts/vehicle_parts.json
 msgid "tarp raincatcher"
 msgid_plural "tarp raincatchers"
 msgstr[0] "防水帆布集雨器"
@@ -108585,10 +108922,12 @@ msgstr[0] "黄蜂幼虫"
 #. ~ Description for {'str': 'wasp larva', 'str_pl': 'wasp larvae'}
 #: data/json/monsters/insect_spider.json
 msgid ""
-"A dog-sized white grub, featureless apart from a vestigal mouthpart.  It "
-"hangs upside-down in its cell, and regurgitates sweet-smelling fluid in "
-"return for the scraps of viscera fed to it by the workers below."
-msgstr "一只小狗大小的白色幼虫，除了退化的口器外没有其他特征。它倒挂在自己的巢室里，并反刍出一种带有甜味的液体，以换取下面工蜂给它喂食内脏碎片。"
+"A white grub the size of a large cat, featureless apart from a vestigal "
+"mouthpart.  It hangs upside-down in its cell, and regurgitates sweet-"
+"smelling fluid in return for the scraps of viscera fed to it by the workers "
+"below."
+msgstr ""
+"一只有成年猫这么大的白色幼虫，除了退化的口器外没有其他特征。它倒挂在自己的巢室里，并反刍出一种带有甜味的液体，以换取下面工蜂给它喂食内脏碎片。"
 
 #: data/json/monsters/insect_spider.json
 msgid "wasp pupa"
@@ -108611,10 +108950,10 @@ msgstr[0] "黄蜂"
 #. ~ Description for {'str': 'wasp'}
 #: data/json/monsters/insect_spider.json
 msgid ""
-"A huge wasp the size of a large cat with bright yellow markings on her jet-"
-"black carapace and a threatening stinger.  It flies around erratically, "
-"searching for smaller prey."
-msgstr "一只体型有成年猫那么大的巨型黄蜂，黑色的甲壳上长着亮黄色的斑纹，还有一根凶猛的毒刺。它飘忽不定地飞行，寻找着比它更小的猎物。"
+"A mutant wasp the size of a dog with bright yellow markings on her jet-black"
+" carapace and a threatening stinger.  It flies around erratically, searching"
+" for smaller prey."
+msgstr "一只体型有小狗那么大的巨型黄蜂，黑色的甲壳上长着亮黄色的斑纹，还有一根凶猛的毒刺。它飘忽不定地飞行，寻找着比它更小的猎物。"
 
 #: data/json/monsters/insect_spider.json
 msgid "wasp guard"
@@ -148596,19 +148935,6 @@ msgid ""
 "into an active cable charger system."
 msgstr "一套已经展开的便携式超能太阳能电池板阵列，准备好为电缆充电器提供能量。"
 
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/guns.json
-msgid "pneumatic shotgun"
-msgid_plural "pneumatic shotguns"
-msgstr[0] "气动双管霰弹枪"
-
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/guns.json
-msgid ""
-"A double-barreled pneumatic air shotgun handcrafted from scrap.  Though it's"
-" firepower is lacking compared to more conventional shotguns, this thing can"
-" still pack quite a punch.  That is, if your target is directly in front of "
-"you."
-msgstr "一把双管气动霰弹枪，由废料纯手工制造。虽然和传统霰弹枪相比更弱一些，但是它的威力仍然不错。当然，前提是你的目标离你不远。"
-
 #: data/json/obsoletion/items.json
 msgid "mininuke launcher"
 msgid_plural "mininuke launchers"
@@ -148619,64 +148945,6 @@ msgid ""
 "A powerful handheld launcher handcrafted from scrap.  Made to launch "
 "modified handheld nuclear weapons, it is an exceedingly powerful weapon."
 msgstr "一个强力的手持式导弹发射器，可以用来发射经过改造的小型核弹，是一个极具杀伤力的武器。"
-
-#: data/json/obsoletion/items.json
-msgid "coilgun"
-msgid_plural "coilguns"
-msgstr[0] "自制线圈枪"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A homemade gun, using electromagnets to accelerate a ferromagnetic "
-"projectile to high velocity.  Powered by UPS."
-msgstr "一把自制的枪，灵感来源于炮姐，利用电磁铁来加速铁磁弹丸从而射出。采用UPS供电。"
-
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/guns.json
-msgid "nail rifle"
-msgid_plural "nail rifles"
-msgstr[0] "射钉步枪"
-
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/guns.json
-msgid ""
-"This is a nailgun that has been extensively modified with the addition of a "
-"short barrel, stock and hand guard.  It can be reloaded using detachable "
-"magazines and is an overall much more effective weapon."
-msgstr "这是一把射钉枪，被改造的面目全非，增加了一个短枪管，枪托和护木。它可以使用可拆卸弹匣装填，总体上说是更为有效的武器。"
-
-#: data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/gun/advanced.json
-#: data/mods/CRT_EXPANSION/items/crt_gun.json
-#: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
-msgid "semi-auto"
-msgstr "半自动"
-
-#: data/json/obsoletion/items.json
-msgid "nail rifle magazine"
-msgid_plural "nail rifle magazines"
-msgstr[0] "射钉步枪弹匣"
-
-#. ~ Description for {'str': 'nail rifle magazine'}
-#: data/json/obsoletion/items.json
-msgid ""
-"An improvised magazine for use with a nail rifle.  Little more than a tin "
-"can, spring and some duct tape it is awkward to reload and not especially "
-"reliable."
-msgstr "一个可用于射钉步枪的自制弹匣。由锡罐、弹簧和一些胶带制成，有点难装填，而且也不是特别可靠。"
-
-#: data/json/obsoletion/items.json
-msgid "238-NK: Practicality Enhancement"
-msgid_plural "copies of 238-NK: Practicality Enhancement"
-msgstr[0] "238-NK：实用性强化"
-
-#. ~ Description for {'str': '238-NK: Practicality Enhancement', 'str_pl':
-#. 'copies of 238-NK: Practicality Enhancement'}
-#: data/json/obsoletion/items.json
-msgid ""
-"The authors of this thoroughly researched and documented proposal make a "
-"very persuasive case for the adoption of spring-driven nuclear shells.  It's"
-" stamped \"DENIED\"."
-msgstr ""
-"从这份学术综述中能够看出，作者做了详尽的研究和总结，并用近乎怂恿的语气推荐有关部门试用这种\"弹簧驱动式\"热核子弹。不过，封面上盖着大大的\"弃用\"章。"
 
 #: data/json/obsoletion/items.json
 msgid "modified mininuke"
@@ -152025,14 +152293,6 @@ msgid ""
 "making it possible for you to recognize your surroundings even in complete "
 "darkness."
 msgstr "当该系统激活时，你可以使你的嗅觉形象化，使你即使在完全的黑暗当中也能识别出周围的环境。"
-
-#: data/json/obsoletion/uncategorized.json
-msgid "mounted mininuke launcher"
-msgstr "车载微型核弹发射器"
-
-#: data/json/obsoletion/uncategorized.json
-msgid "mounted coilgun"
-msgstr "车载自制线圈枪"
 
 #: data/json/obsoletion/uncategorized.json
 msgid "broken centrifuge"
@@ -166699,6 +166959,14 @@ msgstr "19 世纪的一种旋转火器，用手摇柄驱动多个枪管进行持
 msgid "mounted slingshot cannon"
 msgstr "车载弹弓炮"
 
+#: data/json/vehicleparts/turret.json
+msgid "mounted coilgun"
+msgstr "车载自制线圈枪"
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted mininuke launcher"
+msgstr "车载微型核弹发射器"
+
 #: data/json/vehicleparts/utilities.json
 msgid "kitchen unit"
 msgstr "车载厨房"
@@ -167443,6 +167711,13 @@ msgstr "一个时钟，让你知道现在的时间。"
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "A funnel that will collect rainwater into the tank beneath it."
 msgstr "一个能够为底下水箱收集雨水的车载集雨器。"
+
+#. ~ Description for {'str': 'tarp raincatcher'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"An improvised raincatcher made using a tarpaulin, to collect rainwater into "
+"the tank beneath it."
+msgstr "用防水帆布制作的临时雨水收集器，用于将雨水收集到其下方的水箱中。"
 
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "scoop"
@@ -230605,38 +230880,6 @@ msgstr "<npcname> 试图电击 %s，但是失败了！"
 #: src/iuse.cpp
 msgid "Insufficient power"
 msgstr "电力不足"
-
-#: src/iuse.cpp
-msgid "tactical tonfa"
-msgstr "战术拐"
-
-#: src/iuse.cpp
-msgid "Turn on light"
-msgstr "开灯"
-
-#: src/iuse.cpp
-msgid "Zap something"
-msgstr "击中某物"
-
-#: src/iuse.cpp
-msgid "The batteries are dead."
-msgstr "电池耗尽了。"
-
-#: src/iuse.cpp
-msgid "You turn the light on."
-msgstr "你打开灯。"
-
-#: src/iuse.cpp
-msgid "Your tactical tonfa is out of power."
-msgstr "你的战术拐没电了。"
-
-#: src/iuse.cpp
-msgid "Turn off light"
-msgstr "关灯"
-
-#: src/iuse.cpp
-msgid "You turn off the light."
-msgstr "你关闭了电灯。"
 
 #: src/iuse.cpp
 msgid "The device's batteries are dead."

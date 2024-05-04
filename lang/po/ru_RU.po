@@ -30,7 +30,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-04-27 01:00+0000\n"
+"POT-Creation-Date: 2024-05-04 01:03+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2024\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -16738,10 +16738,11 @@ msgstr "Оружие отладки, стреляет кислотными сг�
 #: data/json/items/gun/762.json data/json/items/gun/762x25.json
 #: data/json/items/gun/8x40mm.json data/json/items/gun/9mm.json
 #: data/json/items/gun/9x18.json data/json/items/gun/bio.json
-#: data/json/items/gun/flammable.json data/json/items/gun/plasma.json
-#: data/json/items/gun/shot.json data/json/items/gun/ups.json
-#: data/json/items/gunmod/mechanism.json data/json/items/ranged/pneumatic.json
-#: data/json/obsoletion/items.json data/mods/Generic_Guns/firearms/pistol.json
+#: data/json/items/gun/flammable.json data/json/items/gun/nail.json
+#: data/json/items/gun/plasma.json data/json/items/gun/shot.json
+#: data/json/items/gun/ups.json data/json/items/gunmod/mechanism.json
+#: data/json/items/ranged/pneumatic.json data/json/obsoletion/items.json
+#: data/mods/Generic_Guns/firearms/pistol.json
 #: data/mods/Generic_Guns/firearms/rifle.json
 #: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
 #: src/item_factory.cpp
@@ -16750,8 +16751,9 @@ msgstr "авто"
 
 #: data/json/monster_attacks.json data/json/items/fake.json
 #: data/json/items/classes/gun.json data/json/items/classes/range.json
-#: data/json/items/gun/bio.json data/json/items/ranged/spearguns.json
-#: data/json/obsoletion/items.json data/mods/Aftershock/items/obsolete.json
+#: data/json/items/gun/bio.json data/json/items/gun/nail.json
+#: data/json/items/ranged/spearguns.json
+#: data/mods/Aftershock/items/obsolete.json
 #: data/mods/Aftershock/items/weapons.json
 #: data/mods/Aftershock/items/gun/advanced.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
@@ -31278,8 +31280,8 @@ msgid "NULL Weather - BUG"
 msgstr "NULL Погода — ОШИБКА"
 
 #: data/json/weather_type.json
-msgid "Clear"
-msgstr "Ясно"
+msgid "Fair"
+msgstr ""
 
 #: data/json/weather_type.json
 msgid "Sunny"
@@ -55602,9 +55604,20 @@ msgstr "Вы включаете %s."
 #. ~ Use action need_charges_msg for {'str': 'pair of infrared goggles',
 #. 'str_pl': 'pairs of infrared goggles'}.
 #. ~ Use action need_charges_msg for {'str': 'thermal electric outfit'}.
+#. ~ Use action need_charges_msg for {'str': 'powered quarterstaff (off)',
+#. 'str_pl': 'powered quarterstaves (off)'}.
+#. ~ Use action need_charges_msg for {'str': 'tactical tonfa (off)', 'str_pl':
+#. 'tactical tonfas (off)'}.
+#. ~ Use action need_charges_msg for {'str': 'electrified foil (off)'}.
+#. ~ Use action need_charges_msg for {'str': 'electrified épée'}.
+#. ~ Use action need_charges_msg for {'str': 'electrified saber (off)',
+#. 'str_pl': 'electrified sabers (off)'}.
+#. ~ Use action need_charges_msg for {'str': 'electrified rapier (off)',
+#. 'str_pl': 'electrified rapiers (off)'}.
 #. ~ Use action need_charges_msg for {'str': 'cryopod bodyglove'}.
-#: data/json/items/tool_armor.json data/mods/Aftershock/items/tool_armor.json
-#: src/iuse.cpp
+#: data/json/items/tool_armor.json data/json/items/melee/bludgeons.json
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/Aftershock/items/tool_armor.json src/iuse.cpp
 #, c-format
 msgid "The %s's batteries are dead."
 msgstr "У %s сели батарейки."
@@ -57750,6 +57763,13 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+#. ~ Description for {'str': 'survivor half-mask'}
+#: data/json/items/tool_armor.json
+msgid ""
+"A custom-built, reinforced gas mask that covers just the mouth.  Provides "
+"excellent protection from smoke.  It must be prepared before use."
+msgstr ""
 
 #: data/json/items/toolmod.json
 msgid "base toolmod"
@@ -61728,6 +61748,105 @@ msgid "A pouch for holding up to four full-sized grenades of various types."
 msgstr ""
 "Сумка, способная вместить себя до четырёх полноразмерных гранат разных "
 "типов."
+
+#: data/json/items/armor/bandolier.json
+msgid "grenade ammo bandolier"
+msgid_plural "grenade ammo bandoliers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'grenade ammo bandolier'}
+#: data/json/items/armor/bandolier.json
+msgid "A leather bandolier for keeping cartridge grenades close to hand."
+msgstr ""
+
+#: data/json/items/armor/bedding.json
+msgid "sheet"
+msgid_plural "sheets"
+msgstr[0] "штора"
+msgstr[1] "шторы"
+msgstr[2] "штор"
+msgstr[3] "штора"
+
+#. ~ Description for {'str': 'sheet'}
+#: data/json/items/armor/bedding.json
+msgid ""
+"A large fabric sheet, could be used as a curtain or bedsheets; or cut up for"
+" a bunch of rags."
+msgstr ""
+"Большой кусок ткани, можно использовать в качестве занавески или простыни. "
+"Можно порезать на кучу тряпок."
+
+#: data/json/items/armor/bedding.json
+msgid "blanket"
+msgid_plural "blankets"
+msgstr[0] "одеяло"
+msgstr[1] "одеяла"
+msgstr[2] "одеял"
+msgstr[3] "одеяло"
+
+#. ~ Description for {'str': 'blanket'}
+#: data/json/items/armor/bedding.json
+msgid "Hiding under here will not protect you from the monsters."
+msgstr "Прятание здесь не защитит вас от монстров."
+
+#: data/json/items/armor/bedding.json
+msgid "down-filled blanket"
+msgid_plural "down-filled blankets"
+msgstr[0] "пуховое одеяло"
+msgstr[1] "пуховых одеяла"
+msgstr[2] "пуховых одеял"
+msgstr[3] "пуховое одеяло"
+
+#. ~ Description for {'str': 'down-filled blanket'}
+#: data/json/items/armor/bedding.json
+msgid ""
+"Hiding under here will not protect you from the monsters, but it'll keep you"
+" warm."
+msgstr "Прятание под ним не защитит вас от монстров, но защитит от холода."
+
+#: data/json/items/armor/bedding.json
+msgid "fur blanket"
+msgid_plural "fur blankets"
+msgstr[0] "меховое одеяло"
+msgstr[1] "меховых одеяла"
+msgstr[2] "меховых одеял"
+msgstr[3] "меховое одеяло"
+
+#. ~ Description for {'str': 'fur blanket'}
+#: data/json/items/armor/bedding.json
+msgid "A heavy fur blanket that covers most of your body."
+msgstr "Тяжёлое меховое одеяло, которое покрывает большую часть вашего тела."
+
+#: data/json/items/armor/bedding.json
+msgid "sleeping bag"
+msgid_plural "sleeping bags"
+msgstr[0] "спальный мешок"
+msgstr[1] "спальных мешка"
+msgstr[2] "спальных мешков"
+msgstr[3] "спальный мешок"
+
+#. ~ Use action menu_text for {'str': 'sleeping bag'}.
+#. ~ Use action menu_text for {'str': 'fur sleeping bag'}.
+#: data/json/items/armor/bedding.json data/json/items/armor/misc.json
+msgid "Roll up"
+msgstr "Свернуть"
+
+#. ~ Use action msg for {'str': 'sleeping bag'}.
+#: data/json/items/armor/bedding.json
+msgid "You roll up the sleeping bag, preparing it for transport."
+msgstr "Вы свернули спальный мешок, приготовив его к транспортировке."
+
+#. ~ Description for {'str': 'sleeping bag'}
+#: data/json/items/armor/bedding.json
+msgid ""
+"A large sleeping bag that covers you head to toe.  This one is medium "
+"weight."
+msgstr ""
+"Большой спальный мешок, который укроет вас с ног до головы. Этот весит "
+"средне."
 
 #: data/json/items/armor/belts.json
 msgid "firefighter belt"
@@ -73204,12 +73323,6 @@ msgstr[1] "меховых спальных мешка"
 msgstr[2] "меховых спальных мешков"
 msgstr[3] "меховой спальный мешок"
 
-#. ~ Use action menu_text for {'str': 'fur sleeping bag'}.
-#. ~ Use action menu_text for {'str': 'sleeping bag'}.
-#: data/json/items/armor/misc.json data/json/items/generic/bedding.json
-msgid "Roll up"
-msgstr "Свернуть"
-
 #. ~ Use action msg for {'str': 'fur sleeping bag'}.
 #: data/json/items/armor/misc.json
 msgid "You roll up the fur sleeping bag, preparing it for transport."
@@ -80687,6 +80800,26 @@ msgstr ""
 "Перечисление типичных методов использования бетона. Содержит детальные "
 "инструкции по смешиванию и подготовке бетона для любых целей."
 
+#: data/json/items/book/fabrication.json data/json/obsoletion/items.json
+msgid "238-NK: Practicality Enhancement"
+msgid_plural "copies of 238-NK: Practicality Enhancement"
+msgstr[0] "«238-NK: Увеличение практичности»"
+msgstr[1] "книги «238-NK: Увеличение практичности»"
+msgstr[2] "книг «238-NK: Увеличение практичности"
+msgstr[3] "книги «238-NK: Увеличение практичности»"
+
+#. ~ Description for {'str': '238-NK: Practicality Enhancement', 'str_pl':
+#. 'copies of 238-NK: Practicality Enhancement'}
+#: data/json/items/book/fabrication.json data/json/obsoletion/items.json
+msgid ""
+"The authors of this thoroughly researched and documented proposal make a "
+"very persuasive case for the adoption of spring-driven nuclear shells.  It's"
+" stamped \"DENIED\"."
+msgstr ""
+"Авторы этого досконально изученного и задокументированного предложения "
+"представили очень убедительные доводы в пользу идеи использования пружинных "
+"ядерных боеголовок. На обложке стоит штамп «ОТКЛОНЕНО»."
+
 #: data/json/items/book/firstaid.json
 msgid "Guide to Advanced Emergency Care"
 msgid_plural "copies of Guide to Advanced Emergency Care"
@@ -84684,7 +84817,8 @@ msgstr[3] "базовый гранатомёт"
 
 #: data/json/items/classes/gun.json data/json/items/gun/40x46mm.json
 #: data/json/items/gun/4570.json data/json/items/gun/shot.json
-#: data/json/obsoletion/items.json data/mods/Aftershock/items/gun/5x50.json
+#: data/json/items/ranged/pneumatic.json
+#: data/mods/Aftershock/items/gun/5x50.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/Generic_Guns/firearms/obsolete.json
 #: data/mods/Magiclysm/items/enchanted_ranged.json
@@ -84856,7 +84990,7 @@ msgstr[3] "базовый дробовик"
 
 #: data/json/items/classes/gun.json data/json/items/gun/bio.json
 #: data/json/items/gun/combination.json data/json/items/gun/monster_gun.json
-#: data/json/obsoletion/items.json
+#: data/json/items/ranged/pneumatic.json
 #: data/mods/Aftershock/items/gun/projectile.json
 #: data/mods/Magiclysm/items/enchanted_ranged.json
 #: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
@@ -96781,32 +96915,6 @@ msgid "A handful of raw hard nuts from a hazelnut tree."
 msgstr "Горсть сырого фундука с фундукового дерева."
 
 #: data/json/items/comestibles/nuts.json
-msgid "roasted edamame"
-msgid_plural "roasted edamame"
-msgstr[0] "жареные эдамамэ"
-msgstr[1] "жареные эдамамэ"
-msgstr[2] "жареные эдамамэ"
-msgstr[3] "жареные эдамамэ"
-
-#. ~ Description for {'str_sp': 'roasted edamame'}
-#: data/json/items/comestibles/nuts.json
-msgid "Roasted edamame, a heart healthy snack."
-msgstr "Жареные эдамамэ, полезная закуска."
-
-#: data/json/items/comestibles/nuts.json
-msgid "roasted soy nuts"
-msgid_plural "roasted soy nuts"
-msgstr[0] "жареные соевые бобы"
-msgstr[1] "жареные соевые бобы"
-msgstr[2] "жареные соевые бобы"
-msgstr[3] "жареные соевые бобы"
-
-#. ~ Description for {'str_sp': 'roasted soy nuts'}
-#: data/json/items/comestibles/nuts.json
-msgid "Roasted soybeans, often called soy nuts."
-msgstr "Жареные соевые бобы, иногда называемые соевыми орехами."
-
-#: data/json/items/comestibles/nuts.json
 msgid "roasted hazelnuts"
 msgid_plural "roasted hazelnuts"
 msgstr[0] "жаренный фундук"
@@ -101692,6 +101800,59 @@ msgstr[3] "соте из побегов папоротника"
 msgid "Fiddleheads sauteed in fat.  Tender and delicious."
 msgstr "Побеги папоротника, пассерованные в жире. Нежные и вкусные."
 
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "smoked veggy sausage"
+msgid_plural "smoked veggy sausages"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for smoked veggy sausage
+#: data/json/items/comestibles/veggy_dishes.json
+msgid ""
+"A plant based sausage that has been cured and smoked for long term storage."
+msgstr ""
+
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "cooked veggy sausage"
+msgid_plural "cooked veggy sausages"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for cooked veggy sausage
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "A plant based sausage that has been cooked."
+msgstr ""
+
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "roasted edamame"
+msgid_plural "roasted edamame"
+msgstr[0] "жареные эдамамэ"
+msgstr[1] "жареные эдамамэ"
+msgstr[2] "жареные эдамамэ"
+msgstr[3] "жареные эдамамэ"
+
+#. ~ Description for {'str_sp': 'roasted edamame'}
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "Roasted edamame, a heart healthy snack."
+msgstr "Жареные эдамамэ, полезная закуска."
+
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "roasted soy nuts"
+msgid_plural "roasted soy nuts"
+msgstr[0] "жареные соевые бобы"
+msgstr[1] "жареные соевые бобы"
+msgstr[2] "жареные соевые бобы"
+msgstr[3] "жареные соевые бобы"
+
+#. ~ Description for {'str_sp': 'roasted soy nuts'}
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "Roasted soybeans, often called soy nuts."
+msgstr "Жареные соевые бобы, иногда называемые соевыми орехами."
+
 #: data/json/items/comestibles/wheat.json
 msgid "wheat cereal"
 msgid_plural "wheat cereals"
@@ -103392,86 +103553,6 @@ msgid ""
 msgstr ""
 "Щипцы из термостойкой керамики. Когда они подключены к розетке, достаточно "
 "нагреваются, чтобы завить волосы. Жаль, что нет электричества."
-
-#: data/json/items/generic/bedding.json
-msgid "sheet"
-msgid_plural "sheets"
-msgstr[0] "штора"
-msgstr[1] "шторы"
-msgstr[2] "штор"
-msgstr[3] "штора"
-
-#. ~ Description for {'str': 'sheet'}
-#: data/json/items/generic/bedding.json
-msgid ""
-"A large fabric sheet, could be used as a curtain or bedsheets; or cut up for"
-" a bunch of rags."
-msgstr ""
-"Большой кусок ткани, можно использовать в качестве занавески или простыни. "
-"Можно порезать на кучу тряпок."
-
-#: data/json/items/generic/bedding.json
-msgid "blanket"
-msgid_plural "blankets"
-msgstr[0] "одеяло"
-msgstr[1] "одеяла"
-msgstr[2] "одеял"
-msgstr[3] "одеяло"
-
-#. ~ Description for {'str': 'blanket'}
-#: data/json/items/generic/bedding.json
-msgid "Hiding under here will not protect you from the monsters."
-msgstr "Прятание здесь не защитит вас от монстров."
-
-#: data/json/items/generic/bedding.json
-msgid "down-filled blanket"
-msgid_plural "down-filled blankets"
-msgstr[0] "пуховое одеяло"
-msgstr[1] "пуховых одеяла"
-msgstr[2] "пуховых одеял"
-msgstr[3] "пуховое одеяло"
-
-#. ~ Description for {'str': 'down-filled blanket'}
-#: data/json/items/generic/bedding.json
-msgid ""
-"Hiding under here will not protect you from the monsters, but it'll keep you"
-" warm."
-msgstr "Прятание под ним не защитит вас от монстров, но защитит от холода."
-
-#: data/json/items/generic/bedding.json
-msgid "fur blanket"
-msgid_plural "fur blankets"
-msgstr[0] "меховое одеяло"
-msgstr[1] "меховых одеяла"
-msgstr[2] "меховых одеял"
-msgstr[3] "меховое одеяло"
-
-#. ~ Description for {'str': 'fur blanket'}
-#: data/json/items/generic/bedding.json
-msgid "A heavy fur blanket that covers most of your body."
-msgstr "Тяжёлое меховое одеяло, которое покрывает большую часть вашего тела."
-
-#: data/json/items/generic/bedding.json
-msgid "sleeping bag"
-msgid_plural "sleeping bags"
-msgstr[0] "спальный мешок"
-msgstr[1] "спальных мешка"
-msgstr[2] "спальных мешков"
-msgstr[3] "спальный мешок"
-
-#. ~ Use action msg for {'str': 'sleeping bag'}.
-#: data/json/items/generic/bedding.json
-msgid "You roll up the sleeping bag, preparing it for transport."
-msgstr "Вы свернули спальный мешок, приготовив его к транспортировке."
-
-#. ~ Description for {'str': 'sleeping bag'}
-#: data/json/items/generic/bedding.json
-msgid ""
-"A large sleeping bag that covers you head to toe.  This one is medium "
-"weight."
-msgstr ""
-"Большой спальный мешок, который укроет вас с ног до головы. Этот весит "
-"средне."
 
 #: data/json/items/generic/casing.json
 msgid "Casing from ammunition cartridge"
@@ -106725,7 +106806,7 @@ msgstr ""
 "стреляющий дуплетом, прообраз пистолета M1911."
 
 #: data/json/items/gun/38super.json data/json/items/gun/bio.json
-#: data/json/items/gun/shot.json data/json/obsoletion/items.json
+#: data/json/items/gun/shot.json data/json/items/ranged/pneumatic.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/Generic_Guns/firearms/obsolete.json
 #: data/mods/Magiclysm/items/enchanted_unarmed.json
@@ -109562,6 +109643,46 @@ msgid ""
 msgstr ""
 "Инструмент, чтобы вгонять гвозди в дерево или другой материал. Может быть "
 "использовано, как специализированное оружие."
+
+#: data/json/items/gun/nail.json
+msgid "coilgun"
+msgid_plural "coilguns"
+msgstr[0] "гаусс-пушка"
+msgstr[1] "гаусс-пушки"
+msgstr[2] "гаусс-пушек"
+msgstr[3] "гаусс-пушка"
+
+#: data/json/items/gun/nail.json
+msgid ""
+"A homemade gun, using electromagnets to accelerate a ferromagnetic "
+"projectile to high velocity.  Powered by UPS."
+msgstr ""
+"Самодельное оружие, использующее электромагнитное поле для разгона "
+"высокоскоростных ферромагнитных снарядов. Питается от УБП."
+
+#: data/json/items/gun/nail.json data/mods/Aftershock/items/gun/advanced.json
+#: data/mods/CRT_EXPANSION/items/crt_gun.json
+#: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
+msgid "semi-auto"
+msgstr "полуавтомат"
+
+#: data/json/items/gun/nail.json data/mods/No_Hope/Items/guns.json
+msgid "nail rifle"
+msgid_plural "nail rifles"
+msgstr[0] "гвоздестрел"
+msgstr[1] "гвоздестрела"
+msgstr[2] "гвоздестрелов"
+msgstr[3] "гвоздестрел"
+
+#: data/json/items/gun/nail.json data/mods/No_Hope/Items/guns.json
+msgid ""
+"This is a nailgun that has been extensively modified with the addition of a "
+"short barrel, stock and hand guard.  It can be reloaded using detachable "
+"magazines and is an overall much more effective weapon."
+msgstr ""
+"Это сильно модифицированный гвоздомёт, к которому добавили короткий ствол, "
+"приклад и цевьё. Его можно перезаряжать при помощи съёмных магазинов. В "
+"целом это гораздо более эффективное оружие."
 
 #: data/json/items/gun/paintball.json
 msgid "Paintball gun"
@@ -114990,6 +115111,25 @@ msgstr ""
 "Четырёхлитровая стальная канистра под давлением, оснащённая клапаном. "
 "Предназначена для системы подачи смеси для огнемёта RM451."
 
+#: data/json/items/magazine/nail.json
+msgid "nail rifle magazine"
+msgid_plural "nail rifle magazines"
+msgstr[0] "магазин гвоздестрела"
+msgstr[1] "магазина гвоздестрела"
+msgstr[2] "магазинов гвоздестрела"
+msgstr[3] "магазины гвоздестрела"
+
+#. ~ Description for {'str': 'nail rifle magazine'}
+#: data/json/items/magazine/nail.json
+msgid ""
+"An improvised magazine for use with a nail rifle.  Little more than a tin "
+"can, spring and some duct tape it is awkward to reload and not especially "
+"reliable."
+msgstr ""
+"Импровизированный магазин для гвоздестрела. Представляет собой чуть больше, "
+"чем набор из жестяной банки, пружины и немного клейкой ленты. Его неудобно "
+"перезаряжать, и он не особо надёжен."
+
 #: data/json/items/magazine/shot.json
 msgid "Saiga-12 box magazine"
 msgid_plural "Saiga-12 box magazines"
@@ -116065,26 +116205,52 @@ msgstr ""
 "обращении."
 
 #: data/json/items/melee/bludgeons.json
-msgid "powered quarterstaff"
-msgid_plural "powered quarterstaves"
-msgstr[0] "посох-шокер"
-msgstr[1] "посоха-шокера"
-msgstr[2] "посохов-шокеров"
-msgstr[3] "посох-шокер"
+msgid "powered quarterstaff (off)"
+msgid_plural "powered quarterstaves (off)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
-#. ~ Description for {'str': 'powered quarterstaff', 'str_pl': 'powered
-#. quarterstaves'}
+#. ~ Use action msg for {'str': 'powered quarterstaff (off)', 'str_pl':
+#. 'powered quarterstaves (off)'}.
+#: data/json/items/melee/bludgeons.json
+msgid "You press a button and the staff crackles with electricity."
+msgstr ""
+
+#. ~ Description for {'str': 'powered quarterstaff (off)', 'str_pl': 'powered
+#. quarterstaves (off)'}
 #: data/json/items/melee/bludgeons.json
 msgid ""
 "This is an ironshod quarterstaff that has a high-voltage stun gun built into"
 " the handle.  The stun gun is wired to the metal caps at either end of the "
-"staff, allowing you to zap a dangerous opponent should beating them "
-"senseless with it prove too hazardous."
+"staff, allowing you to zap a dangerous opponent with each strike.  It is "
+"currently off."
 msgstr ""
-"Обитый железом посох со встроенным электрическим шокером. Шокер прикреплён к"
-" металлическим наконечникам на концах посоха, позволяя вам оглушить опасного"
-" противника, если простое забивание его до бессознательного состояние "
-"покажется вам слишком опасным."
+
+#: data/json/items/melee/bludgeons.json
+msgid "powered quarterstaff (on)"
+msgid_plural "powered quarterstaves (on)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Use action msg for {'str': 'powered quarterstaff (on)', 'str_pl':
+#. 'powered quarterstaves (on)'}.
+#: data/json/items/melee/bludgeons.json
+msgid "You press a button and the staff turns off."
+msgstr ""
+
+#. ~ Description for {'str': 'powered quarterstaff (on)', 'str_pl': 'powered
+#. quarterstaves (on)'}
+#: data/json/items/melee/bludgeons.json
+msgid ""
+"This is an ironshod quarterstaff that has a high-voltage stun gun built into"
+" the handle.  The stun gun is wired to the metal caps at either end of the "
+"staff, allowing you to zap a dangerous opponent with each strike.  It is "
+"currently on."
+msgstr ""
 
 #: data/json/items/melee/bludgeons.json
 msgid "rock in a sock"
@@ -116204,23 +116370,22 @@ msgstr[1] "тактических тонфы (выкл.)"
 msgstr[2] "тактических тонф (выкл.)"
 msgstr[3] "тактические тонфы (выкл.)"
 
+#. ~ Use action msg for {'str': 'tactical tonfa (off)', 'str_pl': 'tactical
+#. tonfas (off)'}.
+#: data/json/items/melee/bludgeons.json
+msgid "You press a button and the tonfa crackles with electricity."
+msgstr ""
+
 #. ~ Description for {'str': 'tactical tonfa (off)', 'str_pl': 'tactical
 #. tonfas (off)'}
 #: data/json/items/melee/bludgeons.json
 msgid ""
 "This is a reinforced plastic tonfa; the core is hollowed out and is filled "
-"with capacitors and a high-yield rechargeable storage battery.  When a "
-"switch on the handle is pressed, a high-voltage current is transmitted to "
-"the two electrodes mounted in the end of the tonfa, and by extension to "
-"anyone unfortunate enough to be in contact with them.  It also has a nifty "
-"flashlight, which is off at the moment."
+"with capacitors and a battery compartment.  When a switch on the handle is "
+"pressed, a high-voltage current is transmitted to the two electrodes mounted"
+" in the end of the tonfa, and by extension to anyone unfortunate enough to "
+"be in contact with them.  It's currently turned off."
 msgstr ""
-"Тонфа из армированного пластика; сердечник полый и заполнен конденсаторами с"
-" высокоёмкой аккумуляторной батареей. При нажатии переключателя на рукоятке "
-"ток высокого напряжения подаётся на два электрода, установленных на "
-"наконечнике оружия, и, соответственно, на любого, кому посчастливилось "
-"оказаться в контакте с ними. Также у неё есть замечательный фонарик, который"
-" в данный момент не активен."
 
 #: data/json/items/melee/bludgeons.json
 msgid "tactical tonfa (on)"
@@ -116230,16 +116395,21 @@ msgstr[1] "тактических тонфы (вкл.)"
 msgstr[2] "тактических тонф (вкл.)"
 msgstr[3] "тактические тонфы (вкл.)"
 
+#. ~ Use action msg for {'str': 'tactical tonfa (on)', 'str_pl': 'tactical
+#. tonfas (on)'}.
+#: data/json/items/melee/bludgeons.json
+msgid "You press a button and the tonfa turns off."
+msgstr ""
+
 #. ~ Description for {'str': 'tactical tonfa (on)', 'str_pl': 'tactical tonfas
 #. (on)'}
 #: data/json/items/melee/bludgeons.json
 msgid ""
 "This is a reinforced plastic tonfa; the core is hollowed out and is filled "
-"with capacitors and a high-yield rechargeable storage battery.  When a "
-"switch on the handle is pressed, a high-voltage current is transmitted to "
-"the two electrodes mounted in the end of the tonfa, and by extension to "
-"anyone unfortunate enough to be in contact with them.  It also has a nifty "
-"flashlight, which is currently active."
+"with capacitors and a battery compartment.  When a switch on the handle is "
+"pressed, a high-voltage current is transmitted to the two electrodes mounted"
+" in the end of the tonfa, and by extension to anyone unfortunate enough to "
+"be in contact with them.  It's currently turned on."
 msgstr ""
 
 #: data/json/items/melee/bludgeons.json
@@ -118188,28 +118358,54 @@ msgstr ""
 "опытному фехтовальщику."
 
 #: data/json/items/melee/swords_and_blades.json
-msgid "electrified foil"
-msgid_plural "electrified foils"
-msgstr[0] "электрифицированная рапира"
-msgstr[1] "электрифицированные рапиры"
-msgstr[2] "электрифицированных рапир"
-msgstr[3] "электрифицированные рапиры"
+msgid "electrified foil (off)"
+msgid_plural "electrified foil (off)s"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
-#. ~ Description for {'str': 'electrified foil'}
+#. ~ Use action msg for {'str': 'electrified foil (off)'}.
+#. ~ Use action msg for {'str': 'electrified saber (on)', 'str_pl':
+#. 'electrified sabers (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the foil crackles with electricity."
+msgstr ""
+
+#. ~ Description for {'str': 'electrified foil (off)'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
 "The modifications made to this fencing foil may not be sporting, but they "
 "might give you an edge in this final competition.  Extra effort has been "
 "made to insulate the grip and a high voltage stun gun has been attached to "
 "the guard, wired through the electronic scoring circuit to the tip.  "
-"Thrusting the sharpened tip into a foe and activating the momentary switch "
-"will deliver a painful electric shock."
+"Activate the switch to elecrocute your foes!"
 msgstr ""
-"Может, улучшения этой фехтовальной шпаги и неспортивные, но они дадут вам "
-"преимущество в нынешнем финальном соревновании. Рукоять покрыта "
-"дополнительной изоляцией, а к гарде прикреплён высоковольтный шокер, "
-"соединённый проводом с кончиком шпаги. Если вонзить наконечник в противника "
-"и нажать кнопку, жертва получит болезненный удар током."
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "electrified foil (on)"
+msgid_plural "electrified foils (on)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Use action msg for {'str': 'electrified foil (on)', 'str_pl':
+#. 'electrified foils (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the foil turns off."
+msgstr ""
+
+#. ~ Description for {'str': 'electrified foil (on)', 'str_pl': 'electrified
+#. foils (on)'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"The modifications made to this fencing foil may not be sporting, but they "
+"might give you an edge in this final competition.  Extra effort has been "
+"made to insulate the grip and a high voltage stun gun has been attached to "
+"the guard, wired through the electronic scoring circuit to the tip.  It is "
+"currently turned on."
+msgstr ""
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "fencing épée"
@@ -118259,6 +118455,11 @@ msgstr[1] "электрифицированные шпаги"
 msgstr[2] "электрифицированных шпаг"
 msgstr[3] "электрифицированные шпаги"
 
+#. ~ Use action msg for {'str': 'electrified épée'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the epee crackles with electricity."
+msgstr ""
+
 #. ~ Description for {'str': 'electrified épée'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
@@ -118266,14 +118467,33 @@ msgid ""
 "might give you an edge in this final competition.  Extra effort has been "
 "made to insulate the grip and a high voltage stun gun has been attached to "
 "the guard, wired through the electronic scoring circuit to the tip.  "
-"Thrusting the sharpened tip into a foe and activating the momentary switch "
-"will deliver a painful electric shock."
+"Activate the switch to electrocute your foes!"
 msgstr ""
-"Может, улучшения этой фехтовальной шпаги и неспортивные, но они дадут вам "
-"преимущество в нынешнем финальном соревновании. Рукоять покрыта "
-"дополнительной изоляцией, а к гарде прикреплён высоковольтный шокер, "
-"соединённый проводом с кончиком шпаги. Если вонзить наконечник в противника "
-"и нажать кнопку, жертва получит болезненный удар током."
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "electrified epee (on)"
+msgid_plural "electrified epees (on)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Use action msg for {'str': 'electrified epee (on)', 'str_pl':
+#. 'electrified epees (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the epee turns off."
+msgstr ""
+
+#. ~ Description for {'str': 'electrified epee (on)', 'str_pl': 'electrified
+#. epees (on)'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"The modifications made to this fencing épée may not be sporting, but they "
+"might give you an edge in this final competition.  Extra effort has been "
+"made to insulate the grip and a high voltage stun gun has been attached to "
+"the guard, wired through the electronic scoring circuit to the tip.  It is "
+"currently turned on."
+msgstr ""
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "fencing saber"
@@ -118313,28 +118533,48 @@ msgstr ""
 "более смертоносна и всё ещё знакома опытному фехтовальщику."
 
 #: data/json/items/melee/swords_and_blades.json
-msgid "electrified saber"
-msgid_plural "electrified sabers"
-msgstr[0] "электрифицированная сабля"
-msgstr[1] "электрифицированные сабли"
-msgstr[2] "электрифицированных сабель"
-msgstr[3] "электрифицированные сабли"
+msgid "electrified saber (off)"
+msgid_plural "electrified sabers (off)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
-#. ~ Description for {'str': 'electrified saber'}
+#. ~ Use action msg for {'str': 'electrified saber (off)', 'str_pl':
+#. 'electrified sabers (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the sabre crackles with electricity."
+msgstr ""
+
+#. ~ Description for {'str': 'electrified saber (off)', 'str_pl': 'electrified
+#. sabers (off)'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
 "The modifications made to this fencing saber may not be sporting, but they "
 "might give you an edge in this final competition.  Extra effort has been "
 "made to insulate the grip and a high voltage stun gun has been attached to "
-"the guard, wired to the tip along the saber's groove.  Thrusting the "
-"sharpened tip into a foe and activating the momentary switch will deliver a "
-"painful electric shock."
+"the guard, wired to the tip along the saber's groove.  Activate the switch "
+"to electrocute your foes!"
 msgstr ""
-"Может, улучшения этой фехтовальной сабли и неспортивные, но они дадут вам "
-"преимущество в нынешнем финальном соревновании. Рукоять покрыта "
-"дополнительной изоляцией, а к гарде прикреплён высоковольтный шокер, "
-"соединённый проводом с кончиком сабли. Если вонзить наконечник в противника "
-"и нажать кнопку, жертва получит болезненный удар током."
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "electrified saber (on)"
+msgid_plural "electrified sabers (on)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'electrified saber (on)', 'str_pl': 'electrified
+#. sabers (on)'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"The modifications made to this fencing saber may not be sporting, but they "
+"might give you an edge in this final competition.  Extra effort has been "
+"made to insulate the grip and a high voltage stun gun has been attached to "
+"the guard, wired through the electronic scoring circuit to the tip.  It is "
+"currently turned on."
+msgstr ""
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "sword cane"
@@ -118419,6 +118659,56 @@ msgid ""
 msgstr ""
 "Меч со штыкообразным клинком и эфесом сложной формы. Любимое оружие "
 "джентльменов и пиратов. Лёгкая и быстрая, она делает любую битву стильной."
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "electrified rapier (off)"
+msgid_plural "electrified rapiers (off)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Use action msg for {'str': 'electrified rapier (off)', 'str_pl':
+#. 'electrified rapiers (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the rapier crackles with electricity."
+msgstr ""
+
+#. ~ Description for {'str': 'electrified rapier (off)', 'str_pl':
+#. 'electrified rapiers (off)'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"The modifications made to this rapier may not be sporting, but they might "
+"give you an edge in this final competition.  Extra effort has been made to "
+"insulate the grip and a high voltage stun gun has been attached to the "
+"guard, wired to the tip along the saber's groove.  Activate the switch to "
+"electrocute your foes!"
+msgstr ""
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "electrified rapier (on)"
+msgid_plural "electrified rapiers (on)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Use action msg for {'str': 'electrified rapier (on)', 'str_pl':
+#. 'electrified rapiers (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You press a button and the rapier turns off."
+msgstr ""
+
+#. ~ Description for {'str': 'electrified rapier (on)', 'str_pl': 'electrified
+#. rapiers (on)'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"The modifications made to this rapier may not be sporting, but they might "
+"give you an edge in this final competition.  Extra effort has been made to "
+"insulate the grip and a high voltage stun gun has been attached to the "
+"guard, wired through the electronic scoring circuit to the tip.  It is "
+"currently turned on."
+msgstr ""
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "rapier fake"
@@ -118936,6 +119226,38 @@ msgstr ""
 "Стальная скоба с металлическим лезвием на конце, предназначенная для того, "
 "чтобы атакующий мог наносить колющие и режущие повреждения обычными ударами "
 "кулаков."
+
+#: data/json/items/melee/unarmed_weapons.json
+msgid "jamadhar"
+msgid_plural "jamadhars"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'jamadhar'}
+#: data/json/items/melee/unarmed_weapons.json
+msgid ""
+"A steel brace with two thinner, pointed blades at the end, designed "
+"primarily to stab victims when used to punch."
+msgstr ""
+
+#: data/json/items/melee/unarmed_weapons.json
+msgid "pair of impact knuckles"
+msgid_plural "pairs of impact knuckles"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'pair of impact knuckles', 'str_pl': 'pairs of
+#. impact knuckles'}
+#: data/json/items/melee/unarmed_weapons.json
+msgid ""
+"A pair of sturdy steel bracings, inlaid with padding material, which are "
+"then covered by hardened steel plates.  Can be used to safely deliver "
+"punches full force without the risk of harming ones hands."
+msgstr ""
 
 #: data/json/items/melee/unarmed_weapons.json
 msgid "spiked boxing gloves"
@@ -119854,6 +120176,25 @@ msgstr ""
 "Многоступенчатая пневматическая винтовка изготовленная вручную из "
 "металлолома. Будьте осторожны при перезарядке, закачка воздуха в бак "
 "занимает несколько секунд. Она довольно тихая и смертельно опасная."
+
+#: data/json/items/ranged/pneumatic.json data/mods/No_Hope/Items/guns.json
+msgid "pneumatic shotgun"
+msgid_plural "pneumatic shotguns"
+msgstr[0] "пневматический дробовик"
+msgstr[1] "пневматических дробовика"
+msgstr[2] "пневматических дробовиков"
+msgstr[3] "пневматические дробовики"
+
+#: data/json/items/ranged/pneumatic.json data/mods/No_Hope/Items/guns.json
+msgid ""
+"A double-barreled pneumatic air shotgun handcrafted from scrap.  Though it's"
+" firepower is lacking compared to more conventional shotguns, this thing can"
+" still pack quite a punch.  That is, if your target is directly in front of "
+"you."
+msgstr ""
+"Двуствольный пневматический дробовик, собранный из металлолома. Уступает "
+"обычным дробовикам по огневой мощи, однако всё-таки способен вдарить как "
+"следует. Ну, если стрелять прямо в упор."
 
 #: data/json/items/ranged/slings.json
 msgctxt "weapon"
@@ -125156,6 +125497,23 @@ msgstr ""
 " до этого дело."
 
 #: data/json/items/tool/fishing.json
+msgid "clay fish trap"
+msgid_plural "clay fish traps"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'clay fish trap'}
+#: data/json/items/tool/fishing.json
+msgid ""
+"This is a fish trap made from clay canisters, closely resembling old "
+"Japanese squid traps.  It's simple, even primitive, but easy to use.  The "
+"principle of action: the fish swims inside for bait, but can't get out.  Not"
+" humane, prohibited by law, but there are no cops left to care."
+msgstr ""
+
+#: data/json/items/tool/fishing.json
 msgid "fishing hook"
 msgid_plural "fishing hooks"
 msgstr[0] "рыболовный крючок"
@@ -127637,6 +127995,19 @@ msgid "A polished bone flute with five finger holes."
 msgstr "Полированная костяная флейта с пятью отверстиями для пальцев."
 
 #: data/json/items/tool/musical_instruments.json
+msgid "wooden flute"
+msgid_plural "wooden flutes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'wooden flute'}
+#: data/json/items/tool/musical_instruments.json
+msgid "A simple flute carved from wood with five finger holes."
+msgstr ""
+
+#: data/json/items/tool/musical_instruments.json
 msgid "clarinet"
 msgid_plural "clarinets"
 msgstr[0] "кларнет"
@@ -128105,6 +128476,7 @@ msgstr ""
 "разместите под ней контейнер, чтобы собрать воду во время дождя."
 
 #: data/json/items/tool/raincatchers.json
+#: data/json/vehicleparts/vehicle_parts.json
 msgid "tarp raincatcher"
 msgid_plural "tarp raincatchers"
 msgstr[0] "брезентовая дожделовка"
@@ -138094,9 +138466,10 @@ msgstr[3] ""
 #. ~ Description for {'str': 'wasp larva', 'str_pl': 'wasp larvae'}
 #: data/json/monsters/insect_spider.json
 msgid ""
-"A dog-sized white grub, featureless apart from a vestigal mouthpart.  It "
-"hangs upside-down in its cell, and regurgitates sweet-smelling fluid in "
-"return for the scraps of viscera fed to it by the workers below."
+"A white grub the size of a large cat, featureless apart from a vestigal "
+"mouthpart.  It hangs upside-down in its cell, and regurgitates sweet-"
+"smelling fluid in return for the scraps of viscera fed to it by the workers "
+"below."
 msgstr ""
 
 #: data/json/monsters/insect_spider.json
@@ -138126,9 +138499,9 @@ msgstr[3] "осы"
 #. ~ Description for {'str': 'wasp'}
 #: data/json/monsters/insect_spider.json
 msgid ""
-"A huge wasp the size of a large cat with bright yellow markings on her jet-"
-"black carapace and a threatening stinger.  It flies around erratically, "
-"searching for smaller prey."
+"A mutant wasp the size of a dog with bright yellow markings on her jet-black"
+" carapace and a threatening stinger.  It flies around erratically, searching"
+" for smaller prey."
 msgstr ""
 
 #: data/json/monsters/insect_spider.json
@@ -185035,25 +185408,6 @@ msgstr ""
 "Разложенный массив портативных квантовых солнечных панелей, готовый передать"
 " энергию в активированную систему зарядки по кабелю."
 
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/guns.json
-msgid "pneumatic shotgun"
-msgid_plural "pneumatic shotguns"
-msgstr[0] "пневматический дробовик"
-msgstr[1] "пневматических дробовика"
-msgstr[2] "пневматических дробовиков"
-msgstr[3] "пневматические дробовики"
-
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/guns.json
-msgid ""
-"A double-barreled pneumatic air shotgun handcrafted from scrap.  Though it's"
-" firepower is lacking compared to more conventional shotguns, this thing can"
-" still pack quite a punch.  That is, if your target is directly in front of "
-"you."
-msgstr ""
-"Двуствольный пневматический дробовик, собранный из металлолома. Уступает "
-"обычным дробовикам по огневой мощи, однако всё-таки способен вдарить как "
-"следует. Ну, если стрелять прямо в упор."
-
 #: data/json/obsoletion/items.json
 msgid "mininuke launcher"
 msgid_plural "mininuke launchers"
@@ -185070,86 +185424,6 @@ msgstr ""
 "Мощный портативный миномёт, сделанный из металлолома. Предназначен для "
 "стрельбы модифицированными ядерными мини-бомбами. Является чрезвычайно "
 "мощным оружием."
-
-#: data/json/obsoletion/items.json
-msgid "coilgun"
-msgid_plural "coilguns"
-msgstr[0] "гаусс-пушка"
-msgstr[1] "гаусс-пушки"
-msgstr[2] "гаусс-пушек"
-msgstr[3] "гаусс-пушка"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A homemade gun, using electromagnets to accelerate a ferromagnetic "
-"projectile to high velocity.  Powered by UPS."
-msgstr ""
-"Самодельное оружие, использующее электромагнитное поле для разгона "
-"высокоскоростных ферромагнитных снарядов. Питается от УБП."
-
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/guns.json
-msgid "nail rifle"
-msgid_plural "nail rifles"
-msgstr[0] "гвоздестрел"
-msgstr[1] "гвоздестрела"
-msgstr[2] "гвоздестрелов"
-msgstr[3] "гвоздестрел"
-
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/guns.json
-msgid ""
-"This is a nailgun that has been extensively modified with the addition of a "
-"short barrel, stock and hand guard.  It can be reloaded using detachable "
-"magazines and is an overall much more effective weapon."
-msgstr ""
-"Это сильно модифицированный гвоздомёт, к которому добавили короткий ствол, "
-"приклад и цевьё. Его можно перезаряжать при помощи съёмных магазинов. В "
-"целом это гораздо более эффективное оружие."
-
-#: data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/gun/advanced.json
-#: data/mods/CRT_EXPANSION/items/crt_gun.json
-#: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
-msgid "semi-auto"
-msgstr "полуавтомат"
-
-#: data/json/obsoletion/items.json
-msgid "nail rifle magazine"
-msgid_plural "nail rifle magazines"
-msgstr[0] "магазин гвоздестрела"
-msgstr[1] "магазина гвоздестрела"
-msgstr[2] "магазинов гвоздестрела"
-msgstr[3] "магазины гвоздестрела"
-
-#. ~ Description for {'str': 'nail rifle magazine'}
-#: data/json/obsoletion/items.json
-msgid ""
-"An improvised magazine for use with a nail rifle.  Little more than a tin "
-"can, spring and some duct tape it is awkward to reload and not especially "
-"reliable."
-msgstr ""
-"Импровизированный магазин для гвоздестрела. Представляет собой чуть больше, "
-"чем набор из жестяной банки, пружины и немного клейкой ленты. Его неудобно "
-"перезаряжать, и он не особо надёжен."
-
-#: data/json/obsoletion/items.json
-msgid "238-NK: Practicality Enhancement"
-msgid_plural "copies of 238-NK: Practicality Enhancement"
-msgstr[0] "«238-NK: Увеличение практичности»"
-msgstr[1] "книги «238-NK: Увеличение практичности»"
-msgstr[2] "книг «238-NK: Увеличение практичности"
-msgstr[3] "книги «238-NK: Увеличение практичности»"
-
-#. ~ Description for {'str': '238-NK: Practicality Enhancement', 'str_pl':
-#. 'copies of 238-NK: Practicality Enhancement'}
-#: data/json/obsoletion/items.json
-msgid ""
-"The authors of this thoroughly researched and documented proposal make a "
-"very persuasive case for the adoption of spring-driven nuclear shells.  It's"
-" stamped \"DENIED\"."
-msgstr ""
-"Авторы этого досконально изученного и задокументированного предложения "
-"представили очень убедительные доводы в пользу идеи использования пружинных "
-"ядерных боеголовок. На обложке стоит штамп «ОТКЛОНЕНО»."
 
 #: data/json/obsoletion/items.json
 msgid "modified mininuke"
@@ -189660,14 +189934,6 @@ msgid ""
 msgstr ""
 "Когда эта система активна, вы можете визуально ощущать запахи и чувствовать "
 "окружение даже в полной темноте."
-
-#: data/json/obsoletion/uncategorized.json
-msgid "mounted mininuke launcher"
-msgstr "смонтированная пусковая установка для ядерных мини-бомб"
-
-#: data/json/obsoletion/uncategorized.json
-msgid "mounted coilgun"
-msgstr "смонтированная гаусс-пушка"
 
 #: data/json/obsoletion/uncategorized.json
 msgid "broken centrifuge"
@@ -206981,6 +207247,14 @@ msgstr ""
 msgid "mounted slingshot cannon"
 msgstr ""
 
+#: data/json/vehicleparts/turret.json
+msgid "mounted coilgun"
+msgstr "смонтированная гаусс-пушка"
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted mininuke launcher"
+msgstr "смонтированная пусковая установка для ядерных мини-бомб"
+
 #: data/json/vehicleparts/utilities.json
 msgid "kitchen unit"
 msgstr "автокухня"
@@ -207856,6 +208130,13 @@ msgstr "Часы, чтобы знать, который час."
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "A funnel that will collect rainwater into the tank beneath it."
 msgstr "Воронка, собирающая дождевую воду в бак под ней."
+
+#. ~ Description for {'str': 'tarp raincatcher'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"An improvised raincatcher made using a tarpaulin, to collect rainwater into "
+"the tank beneath it."
+msgstr ""
 
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "scoop"
@@ -282171,38 +282452,6 @@ msgstr "<npcname> безуспешно пытается ударить токо�
 #: src/iuse.cpp
 msgid "Insufficient power"
 msgstr "Недостаточно энергии."
-
-#: src/iuse.cpp
-msgid "tactical tonfa"
-msgstr "тактическая тонфа"
-
-#: src/iuse.cpp
-msgid "Turn on light"
-msgstr "Включить свет"
-
-#: src/iuse.cpp
-msgid "Zap something"
-msgstr "Ткнуть что-нибудь"
-
-#: src/iuse.cpp
-msgid "The batteries are dead."
-msgstr "Батарейки разряжены."
-
-#: src/iuse.cpp
-msgid "You turn the light on."
-msgstr "Вы включили свет."
-
-#: src/iuse.cpp
-msgid "Your tactical tonfa is out of power."
-msgstr "В тактической тонфе кончился заряд."
-
-#: src/iuse.cpp
-msgid "Turn off light"
-msgstr "Выключить свет"
-
-#: src/iuse.cpp
-msgid "You turn off the light."
-msgstr "Вы выключаете свет."
 
 #: src/iuse.cpp
 msgid "The device's batteries are dead."
