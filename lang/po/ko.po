@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-05-25 00:39+0000\n"
+"POT-Creation-Date: 2024-06-01 00:44+0000\n"
 "Last-Translator: Fruitybite, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -23036,7 +23036,8 @@ msgstr ""
 #. ~ Starting location for scenario 'Challenge - Medieval Peasant'.
 #. ~ Starting location for scenario 'Experiment'.
 #. ~ Starting location for scenario 'Wilderness'.
-#: data/json/scenarios.json
+#. ~ Starting location for scenario 'Hunted by Dinosaurs'.
+#: data/json/scenarios.json data/mods/DinoMod/scenarios.json
 msgctxt "start_name"
 msgid "Wilderness"
 msgstr "야생에서"
@@ -24346,6 +24347,16 @@ msgstr "해당 무기 기술 수준"
 msgid "seeing this is a bug"
 msgid_plural "seeing this is a bug"
 msgstr[0] "이걸 보고 있다면 버그입니다."
+
+#: data/json/species.json
+msgid "everything (debug)"
+msgid_plural "everything (debug)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'everything (debug)'}
+#: data/json/species.json
+msgid "an everything (debug)"
+msgstr ""
 
 #: data/json/species.json
 msgid "mammal"
@@ -48233,6 +48244,18 @@ msgid ""
 "A pillow to rest your head on when sleeping.  This one is made entirely of "
 "fluffy wool!"
 msgstr "머리에 베고 잘 수 있는 베개입니다. 푹신한 양모로 만들었습니다!"
+
+#: data/json/items/generic.json
+msgid "Kevlar plate"
+msgid_plural "Kevlar plates"
+msgstr[0] "케블라 장갑판"
+
+#. ~ Description for {'str': 'Kevlar plate'}
+#: data/json/items/generic.json
+msgid ""
+"This is a plate of reinforced Kevlar.  It could be used to repair items made"
+" of Kevlar."
+msgstr "강화된 케블라 판. 케블라로 만들어진 물건을 수리할 때 사용할 수 있습니다."
 
 #: data/json/items/handloaded_bullets.json
 msgid "blunderbuss slug"
@@ -78797,9 +78820,10 @@ msgstr[0] "앰비엔"
 #: data/json/items/comestibles/med.json
 msgid ""
 "A habit-forming tranquilizer with a variety of psychoactive side effects.  "
-"Used in the treatment of insomnia.  Its generic name is zolpidem tartrate."
+"Used in the treatment of insomnia.  Its active ingredient is zolpidem "
+"tartrate."
 msgstr ""
-"다양한 정신적 부작용을 동반하는 중독성 향정신성 약물. 약물/불면증을 예방하는 데 사용되며,  보통은 졸피뎀 타르타르산염이라고 부른다."
+"다양한 정신적 부작용을 동반하는, 중독성이 있는 향정신성 약물입니다. 불면증 치료에 사용되며, 통상명은 졸피뎀 타르타르산염입니다."
 
 #: data/json/items/comestibles/med.json
 msgid "poppy painkiller"
@@ -103448,18 +103472,6 @@ msgid "This is a car horn meant to be attached to a car's electrical system."
 msgstr "차량 전력으로 작동하는 차량용 경적."
 
 #: data/json/items/tool/misc.json
-msgid "Kevlar plate"
-msgid_plural "Kevlar plates"
-msgstr[0] "케블라 장갑판"
-
-#. ~ Description for {'str': 'Kevlar plate'}
-#: data/json/items/tool/misc.json
-msgid ""
-"This is a plate of reinforced Kevlar.  It could be used to repair items made"
-" of Kevlar."
-msgstr "강화된 케블라 판. 케블라로 만들어진 물건을 수리할 때 사용할 수 있습니다."
-
-#: data/json/items/tool/misc.json
 msgid "large space heater"
 msgid_plural "large space heaters"
 msgstr[0] "대형 난방기"
@@ -108502,6 +108514,16 @@ msgstr[0] "테를 씌운 나무 수레바퀴"
 #: data/json/items/vehicle/wheel.json
 msgid "A wooden cart wheel with metal bands for durability, hand made."
 msgstr "내구성을 위해 금속 띠를 두른 수제 나무 수레바퀴."
+
+#: data/json/items/vehicle/wheel.json data/json/vehicleparts/wheel.json
+msgid "light wooden wheel mount"
+msgid_plural "light wooden wheel mounts"
+msgstr[0] "경량형 나무 바퀴 마운트"
+
+#. ~ Description for {'str': 'light wooden wheel mount'}
+#: data/json/items/vehicle/wheel.json data/json/vehicleparts/wheel.json
+msgid "A piece of wood with holes suitable for a bike or motorbike wheel."
+msgstr "자전거 바퀴나 오토바이 바퀴를 달 수 있도록 구멍이 뚫려있는 나무 조각."
 
 #. ~ Sign
 #: data/json/mapgen/Bastion_Fort.json data/json/mapgen/s_gas.json
@@ -185329,9 +185351,53 @@ msgid ""
 "LOOSE."
 msgstr "이 소리가 들린다면, 당장 시설에서 나가세요. 짐승이 풀려났습니다."
 
+#. ~ Name for scenario 'Hunted by Dinosaurs' for a male character
+#: data/mods/DinoMod/scenarios.json
+msgctxt "scenario_male"
+msgid "Hunted by Dinosaurs"
+msgstr "공룡 습격"
+
+#. ~ Name for scenario 'Hunted by Dinosaurs' for a female character
+#: data/mods/DinoMod/scenarios.json
+msgctxt "scenario_female"
+msgid "Hunted by Dinosaurs"
+msgstr "공룡 습격"
+
+#. ~ Description for scenario 'Hunted by Dinosaurs' for a male character.
+#: data/mods/DinoMod/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"You find yourself among trees.  The screaming and moaning is fainter, but it"
+" sounds like something bigger and more dangerous is close by."
+msgstr "정신을 차려보니 숲속이었습니다. 비명과 신음성은 희미해졌지만, 뭔가 더 크고 위험한 것이 다가오는 소리가 들립니다."
+
+#. ~ Description for scenario 'Hunted by Dinosaurs' for a female character.
+#: data/mods/DinoMod/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"You find yourself among trees.  The screaming and moaning is fainter, but it"
+" sounds like something bigger and more dangerous is close by."
+msgstr "정신을 차려보니 숲속이었습니다. 비명과 신음성은 희미해졌지만, 뭔가 더 크고 위험한 것이 다가오는 소리가 들립니다."
+
 #: data/mods/DinoMod/startlocations.json
 msgid "Dinosaur exhibit"
 msgstr "공룡 전시장"
+
+#: data/mods/DinoMod/startlocations.json
+msgid "DinoLab"
+msgstr "공룡 연구소"
+
+#: data/mods/DinoMod/startlocations.json
+msgid "DinoZoo (Giftshop)"
+msgstr "공룡원 선물가게"
+
+#: data/mods/DinoMod/startlocations.json
+msgid "DinoZoo (Cages)"
+msgstr "공룡원 사육장"
+
+#: data/mods/DinoMod/startlocations.json
+msgid "Middle of Swamp"
+msgstr "늪지 한가운데"
 
 #: data/mods/DinoMod/NPC/BEGGAR_2_Dino_Dave.json
 msgid ""
@@ -198690,7 +198756,7 @@ msgstr "오리칼쿰"
 
 #: data/mods/Magiclysm/materials.json
 msgid "Concentrated Mana"
-msgstr ""
+msgstr "농축된 마나"
 
 #: data/mods/Magiclysm/modinfo.json
 msgid "Magiclysm"
@@ -210501,6 +210567,15 @@ msgstr "말벌 제거"
 #: data/mods/No_Wasps/modinfo.json
 msgid "Removes wasps, dermatiks, and their associated maps from the game"
 msgstr "말벌과 더마틱 및 이들과 관련된 지형을 게임에서 제거합니다."
+
+#: data/mods/No_Zombify/modinfo.json
+msgid "Prevent Zombification"
+msgstr "좀비화 방지"
+
+#. ~ Description for Prevent Zombification
+#: data/mods/No_Zombify/modinfo.json
+msgid "Disables zombification for monsters."
+msgstr "괴물이 좀비화되는 것을 방지합니다."
 
 #: data/mods/Old_Mutations/modinfo.json
 msgid "Old Mutations"
@@ -236370,8 +236445,8 @@ msgid "You suddenly feel hollow inside."
 msgstr "느닷없이 몸 안이 텅 빈 느낌이 듭니다."
 
 #: src/iuse.cpp
-msgid "You feel very sleepy…"
-msgstr "너무 졸립니다..."
+msgid "You feel sleepy…"
+msgstr "졸립니다..."
 
 #: src/iuse.cpp
 msgid "You eat the datura seed."

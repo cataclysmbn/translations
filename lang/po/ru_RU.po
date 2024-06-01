@@ -31,7 +31,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-05-25 00:39+0000\n"
+"POT-Creation-Date: 2024-06-01 00:44+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2024\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -24656,7 +24656,8 @@ msgstr ""
 #. ~ Starting location for scenario 'Challenge - Medieval Peasant'.
 #. ~ Starting location for scenario 'Experiment'.
 #. ~ Starting location for scenario 'Wilderness'.
-#: data/json/scenarios.json
+#. ~ Starting location for scenario 'Hunted by Dinosaurs'.
+#: data/json/scenarios.json data/mods/DinoMod/scenarios.json
 msgctxt "start_name"
 msgid "Wilderness"
 msgstr "Глухомань"
@@ -26074,6 +26075,19 @@ msgstr[0] "Если вы это видите, то это баг."
 msgstr[1] "Если вы это видите, то это баг."
 msgstr[2] "Если вы это видите, то это баг."
 msgstr[3] "Если вы это видите, то это баг."
+
+#: data/json/species.json
+msgid "everything (debug)"
+msgid_plural "everything (debug)s"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'everything (debug)'}
+#: data/json/species.json
+msgid "an everything (debug)"
+msgstr ""
 
 #: data/json/species.json
 msgid "mammal"
@@ -54007,6 +54021,23 @@ msgid ""
 msgstr ""
 "Подушка, на которую можно положить голову во время сна. Эта подушка "
 "полностью изготовлена из пушистой шерсти!"
+
+#: data/json/items/generic.json
+msgid "Kevlar plate"
+msgid_plural "Kevlar plates"
+msgstr[0] "кевларовая пластина"
+msgstr[1] "кевларовых пластины"
+msgstr[2] "кевларовых пластин"
+msgstr[3] "кевларовая пластина"
+
+#. ~ Description for {'str': 'Kevlar plate'}
+#: data/json/items/generic.json
+msgid ""
+"This is a plate of reinforced Kevlar.  It could be used to repair items made"
+" of Kevlar."
+msgstr ""
+"Это пластина из армированного кевлара. Она может быть использована для "
+"ремонта изделий из кевлара."
 
 #: data/json/items/handloaded_bullets.json
 msgid "blunderbuss slug"
@@ -94602,11 +94633,9 @@ msgstr[3] "золпидем"
 #: data/json/items/comestibles/med.json
 msgid ""
 "A habit-forming tranquilizer with a variety of psychoactive side effects.  "
-"Used in the treatment of insomnia.  Its generic name is zolpidem tartrate."
+"Used in the treatment of insomnia.  Its active ingredient is zolpidem "
+"tartrate."
 msgstr ""
-"Вызывающий привыкание транквилизатор, имеющий ряд психотропных побочных "
-"эффектов. Используется при лечении бессонницы. Название вещества — золпидема"
-" тартрат."
 
 #: data/json/items/comestibles/med.json
 msgid "poppy painkiller"
@@ -127296,23 +127325,6 @@ msgstr ""
 "Автомобильный гудок, может быть подключён к электрической сети автомобиля."
 
 #: data/json/items/tool/misc.json
-msgid "Kevlar plate"
-msgid_plural "Kevlar plates"
-msgstr[0] "кевларовая пластина"
-msgstr[1] "кевларовых пластины"
-msgstr[2] "кевларовых пластин"
-msgstr[3] "кевларовая пластина"
-
-#. ~ Description for {'str': 'Kevlar plate'}
-#: data/json/items/tool/misc.json
-msgid ""
-"This is a plate of reinforced Kevlar.  It could be used to repair items made"
-" of Kevlar."
-msgstr ""
-"Это пластина из армированного кевлара. Она может быть использована для "
-"ремонта изделий из кевлара."
-
-#: data/json/items/tool/misc.json
 msgid "large space heater"
 msgid_plural "large space heaters"
 msgstr[0] "большой автообогреватель"
@@ -134039,6 +134051,19 @@ msgid "A wooden cart wheel with metal bands for durability, hand made."
 msgstr ""
 "Деревянное тележное колесо ручной работы с металлическими обручами для "
 "прочности."
+
+#: data/json/items/vehicle/wheel.json data/json/vehicleparts/wheel.json
+msgid "light wooden wheel mount"
+msgid_plural "light wooden wheel mounts"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'light wooden wheel mount'}
+#: data/json/items/vehicle/wheel.json data/json/vehicleparts/wheel.json
+msgid "A piece of wood with holes suitable for a bike or motorbike wheel."
+msgstr ""
 
 #. ~ Sign
 #: data/json/mapgen/Bastion_Fort.json data/json/mapgen/s_gas.json
@@ -222638,9 +222663,53 @@ msgid ""
 msgstr ""
 "ЕСЛИ ВЫ СЛЫШИТЕ ЭТУ ЗАПИСЬ, ПОЖАЛУЙСТА, ПОКИНЬТЕ ОБЪЕКТ. ТИГР НА СВОБОДЕ."
 
+#. ~ Name for scenario 'Hunted by Dinosaurs' for a male character
+#: data/mods/DinoMod/scenarios.json
+msgctxt "scenario_male"
+msgid "Hunted by Dinosaurs"
+msgstr ""
+
+#. ~ Name for scenario 'Hunted by Dinosaurs' for a female character
+#: data/mods/DinoMod/scenarios.json
+msgctxt "scenario_female"
+msgid "Hunted by Dinosaurs"
+msgstr ""
+
+#. ~ Description for scenario 'Hunted by Dinosaurs' for a male character.
+#: data/mods/DinoMod/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"You find yourself among trees.  The screaming and moaning is fainter, but it"
+" sounds like something bigger and more dangerous is close by."
+msgstr ""
+
+#. ~ Description for scenario 'Hunted by Dinosaurs' for a female character.
+#: data/mods/DinoMod/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"You find yourself among trees.  The screaming and moaning is fainter, but it"
+" sounds like something bigger and more dangerous is close by."
+msgstr ""
+
 #: data/mods/DinoMod/startlocations.json
 msgid "Dinosaur exhibit"
 msgstr "Выставка динозавров"
+
+#: data/mods/DinoMod/startlocations.json
+msgid "DinoLab"
+msgstr ""
+
+#: data/mods/DinoMod/startlocations.json
+msgid "DinoZoo (Giftshop)"
+msgstr ""
+
+#: data/mods/DinoMod/startlocations.json
+msgid "DinoZoo (Cages)"
+msgstr ""
+
+#: data/mods/DinoMod/startlocations.json
+msgid "Middle of Swamp"
+msgstr ""
 
 #: data/mods/DinoMod/NPC/BEGGAR_2_Dino_Dave.json
 msgid ""
@@ -254534,6 +254603,15 @@ msgstr ""
 msgid "Removes wasps, dermatiks, and their associated maps from the game"
 msgstr ""
 
+#: data/mods/No_Zombify/modinfo.json
+msgid "Prevent Zombification"
+msgstr ""
+
+#. ~ Description for Prevent Zombification
+#: data/mods/No_Zombify/modinfo.json
+msgid "Disables zombification for monsters."
+msgstr ""
+
 #: data/mods/Old_Mutations/modinfo.json
 msgid "Old Mutations"
 msgstr "Старые Мутации"
@@ -281563,8 +281641,8 @@ msgid "You suddenly feel hollow inside."
 msgstr "Неожиданно у вас возникает чувство пустоты внутри."
 
 #: src/iuse.cpp
-msgid "You feel very sleepy…"
-msgstr "Вас сильно тянет в сон…"
+msgid "You feel sleepy…"
+msgstr ""
 
 #: src/iuse.cpp
 msgid "You eat the datura seed."
