@@ -27,14 +27,14 @@
 # Jaesung Han (Re_Star), 2024
 # DelFe, 2024
 # JJ J <congstrot@gmail.com>, 2024
-# Fruitybite, 2024
 # Coolthulhu <Coolthulhu@gmail.com>, 2024
+# Fruitybite, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-06-08 01:03+0000\n"
-"Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2024\n"
+"POT-Creation-Date: 2024-06-15 01:04+0000\n"
+"Last-Translator: Fruitybite, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4962,6 +4962,12 @@ msgstr "전력망이 연결되어 있고 배터리가 설치되어 있는 건물
 
 #: data/json/construction.json
 msgid ""
+"Will only work if constructed on flowing water.  Also needs a building that "
+"has an electric grid with a mounted battery."
+msgstr "흐르는 물 위에 설치되었을 때에만 작동합니다. 전력망이 연결되어 있고 배터리가 설치되어 있는 건물이 필요합니다."
+
+#: data/json/construction.json
+msgid ""
 "Will only work if constructed in/on a building that has an electric grid "
 "with a mounted battery."
 msgstr "전력망이 연결되어 있고 배터리가 설치되어 있는 건물 안 혹은 위에 설치되었을 때에만 작동합니다."
@@ -4974,6 +4980,14 @@ msgstr "전력망이 연결되어 있는 건물 안에 설치되었을 때에만
 msgid ""
 "Will only work if constructed in/on a building that has an electric grid."
 msgstr "전력망이 연결되어 있는 건물 안 혹은 위에 설치되었을 때에만 작동합니다."
+
+#: data/json/construction.json
+msgid ""
+"Must be constructed on an opened window, empty window frame, or similar "
+"opening.  Will only work if constructed in/on a building that has an "
+"electric grid with a mounted battery."
+msgstr ""
+"전력망이 연결되어 있고 배터리가 설치되어 있는 건물에 설치되었을 때에만 작동합니다. 열린 창문, 빈 창틀 등의 공간에 설치되어야 합니다."
 
 #: data/json/construction.json
 msgid ""
@@ -5276,6 +5290,10 @@ msgstr "모닥불 터 만들기"
 #: data/json/construction_group.json
 msgid "Build floor lamp"
 msgstr "실내용 전등 만들기"
+
+#: data/json/construction_group.json
+msgid "Build floodlight"
+msgstr "투광 조명등 만들기"
 
 #: data/json/construction_group.json
 msgid "Rewire Street Light"
@@ -5842,6 +5860,10 @@ msgid "Install Plutonium Generator"
 msgstr "플루토늄 발전기 설치"
 
 #: data/json/construction_group.json
+msgid "Place Window-Mounted AC Unit"
+msgstr "창문형 에어컨 설치"
+
+#: data/json/construction_group.json
 msgid "Place Small Space Heater"
 msgstr "실내용 소형 난방기 설치"
 
@@ -5856,6 +5878,14 @@ msgstr "풍력발전용 터빈 설치"
 #: data/json/construction_group.json
 msgid "Install Large Wind Turbine"
 msgstr "대형 풍력발전용 터빈 설치"
+
+#: data/json/construction_group.json
+msgid "Install Water Wheel"
+msgstr "수력발전기 설치"
+
+#: data/json/construction_group.json
+msgid "Install Large Water Wheel"
+msgstr "대형 수력발전기 설치"
 
 #: data/json/construction_group.json
 msgid "Install Solar Panel"
@@ -16535,7 +16565,11 @@ msgstr "분해"
 
 #: data/json/player_activities.json
 msgid "field dressing"
-msgstr "내장 들어내기"
+msgstr "내장 제거하기"
+
+#: data/json/player_activities.json
+msgid "bleeding"
+msgstr "출혈"
 
 #: data/json/player_activities.json
 msgid "skinning"
@@ -29512,8 +29546,11 @@ msgstr "냉각 장치"
 
 #. ~ Description for cooling unit
 #: data/json/furniture_and_terrain/furniture-appliances.json
-msgid "A big, blocky metal device for refrigerating large areas."
-msgstr "넓은 구역을 냉각시키는데 쓰이는 크고 거치적거리는 금속 장치입니다."
+msgid ""
+"A big, blocky metal device for refrigerating large areas, now just a source "
+"of parts to salvage and repurpose."
+msgstr ""
+"넓은 공간을 냉방하는데 쓰이는 크고 거치적거리는 금속 장비였지만, 지금은 분해해서 다른 용도로 쓸 부품을 얻는 정도밖에 쓸모가 없습니다."
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
@@ -29614,6 +29651,7 @@ msgstr "추상화 실내용 전등"
 #. ~ Description for abstract glass fridge
 #. ~ Description for abstract fridge
 #. ~ Description for abstract minifreezer
+#. ~ Description for abstract air conditioner
 #. ~ Description for abstract space heater
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "Abstract furniture.  If you see this, something went wrong."
@@ -29668,6 +29706,58 @@ msgstr "실내용 전등 (켜짐)"
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "A tall standing lamp, plugged into a wall."
 msgstr "벽에 달린 콘센트에 연결된 길쭉한 실내용 전등입니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "grid floodlight (off)"
+msgstr "망 연결된 투광 조명등 (꺼짐)"
+
+#. ~ Description for grid floodlight (off)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An industrial flood light, hooked up to draw from a local grid.  Flicking it"
+" on will output a nice, bright source of light."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Switch on the floodlight."
+msgstr "투광 조명등 켜기"
+
+#. ~ Message for furniture 'grid floodlight (off)'
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "You switch on the floodlight."
+msgstr "투광 조명등을 켰습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "grid floodlight (no power)"
+msgstr "망 연결된 투광 조명등 (전력 없음)"
+
+#. ~ Description for grid floodlight (no power)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An industrial flood light, hooked up to draw from a local grid.  It's "
+"currently out of power."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Switch off the floodlight"
+msgstr "투광 조명등 끄기"
+
+#. ~ Message for furniture 'grid floodlight (no power)'
+#. ~ Message for furniture 'grid floodlight (on)'
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "You switch off the floodlight."
+msgstr "투광 조명등을 껐습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "grid floodlight (on)"
+msgstr "망 연결된 투광 조명등 (켜짐)"
+
+#. ~ Description for grid floodlight (on)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An industrial flood light, hooked up to draw from a local grid.  It's "
+"currently providing plenty of light."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "rewired street light (off)"
@@ -29978,6 +30068,24 @@ msgstr "꽝!"
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "A large mounted wind turbine connected to building's electric grid."
 msgstr "건물의 전력망에 연결된 대형 풍력발전용 터빈입니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "mounted water wheel"
+msgstr "망 연결된 수력발전기"
+
+#. ~ Description for mounted water wheel
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "A mounted water wheel connected to building's electric grid."
+msgstr "건물의 전력망에 연결된 수력발전기입니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "mounted large water wheel"
+msgstr "망 연결된 대형 수력발전기"
+
+#. ~ Description for mounted large water wheel
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "A large mounted water wheel connected to building's electric grid."
+msgstr "건물의 전력망에 연결된 대형 수력발전기입니다."
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "mounted solar panel"
@@ -30492,6 +30600,62 @@ msgstr ""
 "바이오닉을 고치는데도 쓸 수 있습니다."
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "abstract air conditioner"
+msgstr "추상적인 에어컨"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "air conditioner (no power)"
+msgstr "에어컨 (전력 없음)"
+
+#. ~ Description for air conditioner (no power)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"A window-mounted air conditioner, plugged into the wall.  This one has no "
+"power."
+msgstr "벽에 달린 콘센트에 연결된 창문형 에어컨입니다. 전기가 들어오지 않는 것 같습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Switch off AC unit"
+msgstr "에어컨 끄기"
+
+#. ~ Message for furniture 'air conditioner (no power)'
+#. ~ Message for furniture 'air conditioner (on)'
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "You turn the AC off."
+msgstr "에어컨을 끕니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "air conditioner (off)"
+msgstr "에어컨 (꺼짐)"
+
+#. ~ Description for air conditioner (off)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"A window-mounted air conditioner, plugged into the wall.  This one is "
+"currently turned off."
+msgstr "벽에 달린 콘센트에 연결된 창문형 에어컨입니다. 현재 전원이 꺼져있습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Switch on AC unit"
+msgstr "에어컨 켜기"
+
+#. ~ Message for furniture 'air conditioner (off)'
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "You turn the AC on."
+msgstr "에어컨을 켭니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "air conditioner (on)"
+msgstr "에어컨 (켜짐)"
+
+#. ~ Description for air conditioner (on)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"A window-mounted air conditioner, plugged into the wall.  This one is "
+"running and providing cool air."
+msgstr "벽에 달린 콘센트에 연결된 창문형 에어컨입니다. 현재 전원이 켜져있으며, 냉기를 뿜어내고 있습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "abstract space heater"
 msgstr "추상화 난방기"
 
@@ -30584,13 +30748,13 @@ msgstr "망 연결된 플루토늄 발전기"
 #. ~ Description for grid plutonium generator
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid ""
-"This imposing apparatus harnesses the power of the atom.  Refined nuclear "
-"fuel is 'burned' to provide nearly limitless electrical power.  Now "
-"installed and connected, it will generate little but steady amount of "
-"electricy, forever!"
+"This imposing apparatus harnesses the power of the atom.  A compact nuclear "
+"reactor, sealed and configured to provide nearly limitless electrical power "
+"from refined nuclear fuel.  Now installed and connected, it will generate a "
+"small but constant source of electricity."
 msgstr ""
-"이 거대한 장치는 원자의 힘을 자유롭게 휘두르게 해줍니다. 정제된 핵 연료를 내부에서 '불태워', 거의 무한한 전력을 생산할 수 "
-"있습니다. 건물에 설치하고 전력망과 연결시킨 결과, 작은 양의 전력을 꾸준히... 그리고 영원히 생산할 것입니다!"
+"이 거대한 장치는 원자의 힘을 자유롭게 휘두르게 해줍니다. 정제된 핵 연료를 내부에 장착한 소형 원자로로 거의 무한한 전력을 생산할 수 "
+"있습니다. 건물에 설치하고 전력망과 연결시킨 결과, 적은 양의 전력을 꾸준히, 그리고 영원히 생산할 것입니다."
 
 #: data/json/furniture_and_terrain/furniture-barriers.json
 msgid "road barricade"
@@ -32956,8 +33120,11 @@ msgstr "쓰레기통"
 
 #. ~ Description for trash can
 #: data/json/furniture_and_terrain/furniture-storage.json
-msgid "One man's trash is another man's dinner."
-msgstr "누군가의 쓰레기는 누군가의 저녁식사죠."
+msgid ""
+"One man's trash is another man's dinner.  Examine it to take down, if you "
+"need an improvised bucket."
+msgstr ""
+"누군가에게 쓰레기인 물건이 누군가에게는 보물일 수 있죠. 양동이가 꼭 필요하다면 이걸 조사하여 넘어뜨려 대용품으로 사용할 수 있습니다."
 
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "wardrobe"
@@ -35405,11 +35572,14 @@ msgstr "시설 조명"
 #. ~ Description for utility light
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 msgid ""
-"An industrial flood light set up to illuminate the surroundings.  Smashing "
-"it doesn't seem like it'd produce any worthwhile salvage.  Examine it to "
-"switch it off."
+"An industrial flood light set up to illuminate the surroundings.  It could "
+"be salvaged to install elsewhere, but will require grid power once taken "
+"down.  Examine it to switch it off."
 msgstr ""
-"주위를 환하게 밝히도록 설치된 산업용 투광 조명등. 파괴해도 쓸만한 자재가 나올 것 같지는 않습니다. 조사하여 끌 수 있습니다."
+
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "Switch off the utility light"
+msgstr "시설 조명 끄기"
 
 #. ~ Message for terrain 'utility light'
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
@@ -35424,10 +35594,13 @@ msgstr "시설 조명 (꺼짐)"
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 msgid ""
 "An industrial flood light, which could be turned on to illuminate your "
-"surroundings.  Smashing it doesn't seem like it'd produce any worthwhile "
-"salvage.  Examine it to switch it back on."
+"surroundings.  It could also be salvaged if you're willing to provide it "
+"more than emergency power.  Examine it to switch it back on."
 msgstr ""
-"주위를 환하게 밝히도록 설치된 산업용 투광 조명등. 파괴해도 쓸만한 자재가 나올 것 같지는 않습니다. 조사하여 켤 수 있습니다."
+
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "Switch on the utility light"
+msgstr "시설 조명 켜기"
 
 #. ~ Message for terrain 'utility light (off)'
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
@@ -37659,7 +37832,7 @@ msgid ""
 msgstr "지하수를 모으는 깊은 우물입니다.  물 펌프를 설치하면 우물에서 물을 길을 수 있습니다."
 
 #: data/json/furniture_and_terrain/terrain-manufactured.json
-#: data/json/items/furniture.json
+#: data/json/items/furniture.json data/json/vehicleparts/vehicle_parts.json
 msgid "plutonium generator"
 msgid_plural "plutonium generators"
 msgstr[0] "플루토늄 발전기"
@@ -37667,13 +37840,13 @@ msgstr[0] "플루토늄 발전기"
 #. ~ Description for plutonium generator
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid ""
-"This imposing apparatus harnesses the power of the atom.  Refined nuclear "
-"fuel is 'burned' to provide nearly limitless electrical power.  It's not "
-"doing much good here though.  Perhaps it could be salvaged for other "
-"purposes."
+"This imposing apparatus harnesses the power of the atom, configured to "
+"provide nearly limitless backup power from the nuclear fuel installed in it."
+"  It's not doing much good here though.  Perhaps it could be salvaged for "
+"other purposes."
 msgstr ""
-"이 거대한 장치는 원자의 힘을 자유롭게 휘두르게 해줍니다. 정제된 핵 연료를 내부에서 '불태워', 거의 무한한 전력을 생산할 수 "
-"있습니다. 그렇지만 지금 여기서는 큰 쓸모가 없어보이고, 분해해서 다른 용도로 쓸 수 있을지도 모릅니다."
+"이 거대한 장치는 원자의 힘을 자유롭게 휘두르게 해줍니다. 정제된 핵 연료가 내부에 장착되어 거의 무한한 전력을 생산하도록 의도되었지만,"
+" 지금 당장은 그 목적을 제대로 수행하지 못하는 것 같습니다. 분해해서 다른 용도로 쓸 수 있을지도 모릅니다."
 
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid "telecom cabinet"
@@ -38737,17 +38910,17 @@ msgstr "벽"
 msgid ""
 "The stereotypical wall with wooden support structure filled with insulation "
 "and drywalled.  Paint job is the all too common and neutral off-white or "
-"cream color, it could use more vibrant paint.  Appears as though the "
-"material is still flammable."
+"cream color, it could use more vibrant paint.  The underlying material is "
+"still somewhat flammable."
 msgstr ""
-"나무 지지대에 석고판과 단열재를 채운 흔해 빠진 벽입니다. 지금은 흔하고 평범한 황백색 또는 크림색으로 칠해져 있지만, 더 밝은 톤으로 "
-"칠할 수도 있습니다. 여전히 화재에 취약해 보입니다."
+"나무 지지대에 석고판을 대고 단열재를 채운 흔해빠진 벽입니다. 지금 칠해진 색은 흔하고 평범한 황백색 내지는 크림색이지만, 다른 색으로 "
+"칠할 수도 있습니다. 내부 재질 탓에 여전히 화재에 취약해보입니다."
 
 #: data/json/furniture_and_terrain/terrain-walls.json
-msgid "half-built wall"
-msgstr "반쯤 만든 벽"
+msgid "half-built wooden wall"
+msgstr "반쯤 만든 나무 벽"
 
-#. ~ Description for half-built wall
+#. ~ Description for half-built wooden wall
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid ""
 "An incomplete wall of refined wood, dotted with carefully placed nails to "
@@ -38756,6 +38929,18 @@ msgid ""
 msgstr ""
 "가공된 나무 판자에 조심스럽게 못질해 적당한 지지력을 제공하게끔 만든 불완전한 벽입니다. 제대로 된 벽이 되려면 널빤지와 못이 좀 더 "
 "있어야 할 것 같습니다."
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "half-built domestic wall"
+msgstr "반쯤 지어진 실내용 벽"
+
+#. ~ Description for half-built domestic wall
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid ""
+"Wooden slats nailed across the bare skeleton of what will eventually be a "
+"modern interior wall.  The finishing touches would typically be drywall or "
+"plaster, or whatever one can improvise out of local materials."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "pony wall"
@@ -45298,6 +45483,20 @@ msgstr[0] "유해 폐기물 보관통"
 msgid "A yellow drum meant for the storage of hazardous substances."
 msgstr "유해 폐기물을 저장할 때 쓰이는 노란색 원형 드럼통."
 
+#: data/json/items/containers.json
+msgid "plastic trash can"
+msgid_plural "plastic trash cans"
+msgstr[0] "플라스틱 쓰레기통"
+
+#. ~ Description for {'str': 'plastic trash can'}
+#: data/json/items/containers.json
+msgid ""
+"A small plastic wastebasket for offices and kitchens.  Could be repurposed "
+"as an open-top container if you're desperate, or placed back down."
+msgstr ""
+"사무실이나 주방에서 흔히 쓰이는 작은 플라스틱 쓰레기통입니다. 꼭 그래야겠다면 뚜껑 없는 용기로 쓸 수 있고, 아니면 도로 놓아둘 수 "
+"있습니다."
+
 #: data/json/items/fake.json
 msgid "fake item"
 msgid_plural "fake items"
@@ -45798,6 +45997,16 @@ msgstr ""
 "휘발유와 경유를 같은 비율로 섞은 혼합유입니다. 두 기름을 섞은 덕택에 휘발유로도 경유로도 사용할 수 없습니다만, 화염방사기에는 사용할 "
 "수 있습니다."
 
+#: data/json/items/furniture.json
+msgid "air conditioner"
+msgid_plural "air conditioners"
+msgstr[0] "에어컨"
+
+#. ~ Description for air conditioner
+#: data/json/items/furniture.json
+msgid "A household AC unit, designed to be mounted in a window."
+msgstr "창문에 설치하도록 설계된 가정용 에어컨입니다."
+
 #. ~ Description for refrigerator
 #: data/json/items/furniture.json
 msgid "A large and heavy fridge."
@@ -45840,8 +46049,16 @@ msgstr "가정용 전기 오븐입니다."
 #. ~ Description for plutonium generator
 #: data/json/items/furniture.json
 msgid ""
-"A generator used on large ships or submarines, usually as a backup power."
-msgstr "대형 함선이나 잠수함에서 흔히 예비 동력원으로 사용되는 발전기입니다."
+"A generator used on large ships or submarines.  Using a compact nuclear "
+"reactor, refined nuclear fuel is sealed within and configured to provide a "
+"constant low yield of power when properly installed.  It could be taken "
+"apart to reuse the minireactor for more energy-intensive applications, or "
+"installed in a local grid to continue providing a small but limitless source"
+" of electricity."
+msgstr ""
+"대형 선박이나 잠수함에 쓰이는 발전기입니다. 정제된 핵 연료를 내부에 장착한 소형 원자로가 엄중하게 봉인되어 있으며, 적절히 설치되면 "
+"거의 무한한 전력을 꾸준히 제공할 것입니다. 분해하여 여기 장착된 소형 반응로를 보다 많은 전력이 필요한 곳에 사용하거나, 지역 전력망에"
+" 설치하여 적은 양의 전력을 꾸준히, 그리고 영원히 생산하게 할 수 있습니다."
 
 #: data/json/items/generic.json
 msgid "animal"
@@ -47989,11 +48206,11 @@ msgid "A set of long, snakelike tubes for evaporating refrigerant."
 msgstr "증발 냉매를 위한 뱀처럼 긴 튜브 세트."
 
 #: data/json/items/generic.json
-msgid "condensor coil"
-msgid_plural "condensor coils"
+msgid "condenser coil"
+msgid_plural "condenser coils"
 msgstr[0] "콘덴서 코일"
 
-#. ~ Description for {'str': 'condensor coil'}
+#. ~ Description for {'str': 'condenser coil'}
 #: data/json/items/generic.json
 msgid "A compressor and a fan work together to cool down the refrigerant."
 msgstr "압축기와 팬이 함께 작동하며 냉매를 냉각시킵니다."
@@ -50355,59 +50572,6 @@ msgid ""
 "A small battery-powered biometric safety device worn on the wrist.  Activate"
 " to check your current level of radiation exposure."
 msgstr "손목에 착용하는 배터리 구동 소형 생체 안전장치입니다. 활성화하여 현재 방사선 노출 수준을 확인합니다."
-
-#: data/json/items/tool_armor.json
-msgid "survivor utility belt"
-msgid_plural "survivor utility belts"
-msgstr[0] "생존용 다용도 벨트"
-
-#. ~ Use action holster_msg for {'str': 'survivor utility belt'}.
-#. ~ Use action holster_msg for {'str': 'survivor belt'}.
-#. ~ Use action holster_msg for {'str': 'power armor back scabbard'}.
-#. ~ Use action holster_msg for {'str': 'power armor sheath'}.
-#. ~ Use action holster_msg for {'str': 'axe ring holster'}.
-#. ~ Use action holster_msg for {'str': 'baldric'}.
-#. ~ Use action holster_msg for {'str': 'ankle sheath'}.
-#. ~ Use action holster_msg for {'str': 'wrist sheath'}.
-#. ~ Use action holster_msg for {'str': 'back scabbard'}.
-#. ~ Use action holster_msg for {'str': 'scabbard'}.
-#. ~ Use action holster_msg for {'str': 'sheath', 'str_pl': 'sheathes'}.
-#. ~ Use action holster_msg for {'str': 'hiking backpack'}.
-#. ~ Use action holster_msg for {'str': 'survivor hiking backpack'}.
-#. ~ Use action holster_msg for {'str': 'hollow cane'}.
-#. ~ Use action holster_msg for C.R.I.T. web belt.
-#. ~ Use action holster_msg for {'str': "technomancer's toolbelt"}.
-#: data/json/items/tool_armor.json data/json/items/armor/belts.json
-#: data/json/items/armor/power_armor.json data/json/items/armor/sheath.json
-#: data/json/items/armor/storage.json data/json/items/melee/bludgeons.json
-#: data/mods/CRT_EXPANSION/items/crt_clothes.json
-#: data/mods/Magiclysm/items/enchanted_belts.json
-msgid "You sheath your %s"
-msgstr "%s(을)를 칼집에 넣었습니다."
-
-#. ~ Use action holster_prompt for {'str': 'survivor utility belt'}.
-#. ~ Use action holster_prompt for {'str': 'survivor belt'}.
-#. ~ Use action holster_prompt for {'str': 'hiking backpack'}.
-#. ~ Use action holster_prompt for {'str': 'survivor hiking backpack'}.
-#. ~ Use action holster_prompt for C.R.I.T. web belt.
-#. ~ Use action holster_prompt for {'str': "technomancer's toolbelt"}.
-#: data/json/items/tool_armor.json data/json/items/armor/belts.json
-#: data/json/items/armor/storage.json
-#: data/mods/CRT_EXPANSION/items/crt_clothes.json
-#: data/mods/Magiclysm/items/enchanted_belts.json
-msgid "Sheath blade"
-msgstr "칼 집어넣기"
-
-#. ~ Description for {'str': 'survivor utility belt'}
-#: data/json/items/tool_armor.json
-msgid ""
-"A custom-built leather utility belt covered with straps and pouches "
-"containing many useful hand tools and a sheath to carry a smaller blade.  "
-"Durable and carefully crafted to be comfortable to wear.  Activate to "
-"sheathe/draw a weapon."
-msgstr ""
-"수제 가죽 다용도벨트. 줄과 작은 칼을 넣을 수 있는 주머니가 달려 있습니다. 견고하고 착용시 편안하도록 만들여져 있습니다. 사용하면 "
-"무기를 넣거나 뺍니다."
 
 #: data/json/items/tool_armor.json
 msgid "hairpin"
@@ -54332,16 +54496,12 @@ msgid_plural "firefighter belts"
 msgstr[0] "소방관 벨트"
 
 #. ~ Use action holster_msg for {'str': 'firefighter belt'}.
-#. ~ Use action holster_msg for {'str': 'survivor utility belt (holster)',
-#. 'str_pl': 'survivor utility belts (holster)'}.
-#: data/json/items/armor/belts.json data/mods/Aftershock/items/obsolete.json
+#: data/json/items/armor/belts.json
 msgid "You clip your %s to your %s"
 msgstr "%s(을)를 %s에 부착했습니다."
 
 #. ~ Use action holster_prompt for {'str': 'firefighter belt'}.
-#. ~ Use action holster_prompt for {'str': 'survivor utility belt (holster)',
-#. 'str_pl': 'survivor utility belts (holster)'}.
-#: data/json/items/armor/belts.json data/mods/Aftershock/items/obsolete.json
+#: data/json/items/armor/belts.json
 msgid "Attach what to belt loop?"
 msgstr "벨트 고리에 무엇을 부착합니까?"
 
@@ -54507,6 +54667,18 @@ msgid "survivor belt"
 msgid_plural "survivor belts"
 msgstr[0] "생존용 벨트"
 
+#. ~ Use action holster_msg for {'str': 'survivor belt'}.
+#. ~ Use action holster_msg for {'str': 'tool belt'}.
+#: data/json/items/armor/belts.json
+msgid "You put your %1$s in your %2$s"
+msgstr "%1$s(을)를 %2$s에 넣었습니다."
+
+#. ~ Use action holster_prompt for {'str': 'survivor belt'}.
+#. ~ Use action holster_prompt for {'str': 'tool belt'}.
+#: data/json/items/armor/belts.json
+msgid "Store tool or blade"
+msgstr "도구나 칼을 수납하기"
+
 #. ~ Description for {'str': 'survivor belt'}
 #: data/json/items/armor/belts.json
 msgid ""
@@ -54521,16 +54693,6 @@ msgstr ""
 msgid "tool belt"
 msgid_plural "tool belts"
 msgstr[0] "도구 벨트"
-
-#. ~ Use action holster_msg for {'str': 'tool belt'}.
-#: data/json/items/armor/belts.json
-msgid "You put your %1$s in your %2$s"
-msgstr "%1$s(을)를 %2$s에 넣었습니다."
-
-#. ~ Use action holster_prompt for {'str': 'tool belt'}.
-#: data/json/items/armor/belts.json
-msgid "Store tool or blade"
-msgstr "도구나 칼을 수납하기"
 
 #. ~ Description for {'str': 'tool belt'}
 #: data/json/items/armor/belts.json
@@ -56470,9 +56632,9 @@ msgstr[0] "권투 글러브"
 #. boxing gloves'}
 #: data/json/items/armor/gloves.json
 msgid ""
-"A pair of big, red, 8 oz. boxing gloves.  They make dexterous tasks near "
+"A pair of big, red boxing gloves.  They make dexterous tasks near "
 "impossible, but provide ample protection."
-msgstr "붉은색의 보통 권투 글러브. 이걸 착용하고 섬세한 작업을 하기는 거의 불가능하지만, 충분한 방어력을 제공합니다."
+msgstr ""
 
 #: data/json/items/armor/gloves.json
 msgid "pair of chainmail gloves"
@@ -63566,6 +63728,27 @@ msgid "power armor back scabbard"
 msgid_plural "power armor back scabbards"
 msgstr[0] "파워 아머 등 검집"
 
+#. ~ Use action holster_msg for {'str': 'power armor back scabbard'}.
+#. ~ Use action holster_msg for {'str': 'power armor sheath'}.
+#. ~ Use action holster_msg for {'str': 'axe ring holster'}.
+#. ~ Use action holster_msg for {'str': 'baldric'}.
+#. ~ Use action holster_msg for {'str': 'ankle sheath'}.
+#. ~ Use action holster_msg for {'str': 'wrist sheath'}.
+#. ~ Use action holster_msg for {'str': 'back scabbard'}.
+#. ~ Use action holster_msg for {'str': 'scabbard'}.
+#. ~ Use action holster_msg for {'str': 'sheath', 'str_pl': 'sheathes'}.
+#. ~ Use action holster_msg for {'str': 'hiking backpack'}.
+#. ~ Use action holster_msg for {'str': 'survivor hiking backpack'}.
+#. ~ Use action holster_msg for {'str': 'hollow cane'}.
+#. ~ Use action holster_msg for C.R.I.T. web belt.
+#. ~ Use action holster_msg for {'str': "technomancer's toolbelt"}.
+#: data/json/items/armor/power_armor.json data/json/items/armor/sheath.json
+#: data/json/items/armor/storage.json data/json/items/melee/bludgeons.json
+#: data/mods/CRT_EXPANSION/items/crt_clothes.json
+#: data/mods/Magiclysm/items/enchanted_belts.json
+msgid "You sheath your %s"
+msgstr "%s(을)를 칼집에 넣었습니다."
+
 #. ~ Use action holster_prompt for {'str': 'power armor back scabbard'}.
 #. ~ Use action holster_prompt for {'str': 'baldric'}.
 #. ~ Use action holster_prompt for {'str': 'back scabbard'}.
@@ -63991,6 +64174,16 @@ msgstr "작은 배낭. 적은 방해도에 괜찮은 저장공간이 있습니�
 msgid "hiking backpack"
 msgid_plural "hiking backpacks"
 msgstr[0] "산악용 백팩"
+
+#. ~ Use action holster_prompt for {'str': 'hiking backpack'}.
+#. ~ Use action holster_prompt for {'str': 'survivor hiking backpack'}.
+#. ~ Use action holster_prompt for C.R.I.T. web belt.
+#. ~ Use action holster_prompt for {'str': "technomancer's toolbelt"}.
+#: data/json/items/armor/storage.json
+#: data/mods/CRT_EXPANSION/items/crt_clothes.json
+#: data/mods/Magiclysm/items/enchanted_belts.json
+msgid "Sheath blade"
+msgstr "칼 집어넣기"
 
 #. ~ Description for {'str': 'hiking backpack'}
 #: data/json/items/armor/storage.json
@@ -73524,6 +73717,60 @@ msgid "Blood, possibly that of a human.  Disgusting!"
 msgstr "인간의 것으로 보이는 혈액입니다. 역겹네요!"
 
 #: data/json/items/comestibles/carnivore.json
+msgid "animal blood"
+msgid_plural "animal blood"
+msgstr[0] "동물 혈액"
+
+#. ~ Description for {'str_sp': 'animal blood'}
+#: data/json/items/comestibles/carnivore.json
+msgid "Blood extracted from a living creature."
+msgstr "살아있는 생물에게서 채혈한 피입니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "concentrated blood"
+msgid_plural "concentrated blood"
+msgstr[0] "농축 혈액"
+
+#. ~ Description for {'str_sp': 'concentrated blood'}
+#: data/json/items/comestibles/carnivore.json
+msgid "Blood concentrated by some means.  It just looks and feels wrong."
+msgstr "왜 그랬는지는 모르겠지만 농축한 혈액입니다. 뭔가 이상하고, 기분나쁩니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "concentrated animal blood"
+msgid_plural "concentrated animal blood"
+msgstr[0] "농축 동물 혈액"
+
+#. ~ Description for {'str_sp': 'concentrated animal blood'}
+#: data/json/items/comestibles/carnivore.json
+msgid "Blood extracted from a living creature, concentrated by some means."
+msgstr "살아있는 생물에게서 채혈한 뒤 왜 그랬는지는 모르겠지만 농축한 혈액입니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "mutant blood"
+msgid_plural "mutant blood"
+msgstr[0] "돌연변이 혈액"
+
+#. ~ Description for {'str_sp': 'mutant blood'}
+#: data/json/items/comestibles/carnivore.json
+msgid "Blood extracted from a heavily mutated creature."
+msgstr "심하게 변이된 생물에게서 채혈한 피입니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "concentrated mutant blood"
+msgid_plural "concentrated mutant blood"
+msgstr[0] "농축 돌연변이 혈액"
+
+#. ~ Description for {'str_sp': 'concentrated mutant blood'}
+#: data/json/items/comestibles/carnivore.json
+msgid ""
+"Blood from a mutated creature, concentrated by some means.  Despite it being"
+" a liquid, some parts are thicker than the other."
+msgstr ""
+"돌연변이 개체에게서 채혈한 뒤 왜 그랬는지는 모르겠지만 농축한 혈액입니다. 액체임에도 불구하고 특정 부분이 다른 부분에 비해 더 "
+"걸쭉해보입니다."
+
+#: data/json/items/comestibles/carnivore.json
 msgid "bone"
 msgid_plural "bones"
 msgstr[0] "뼈"
@@ -73660,6 +73907,32 @@ msgid ""
 msgstr ""
 "돌연변이 인간에게서 건조 추출된 지방으로 이루어진 부드러운 흰색의 사각형 덩어리입니다. 이것은 오랫동안 썩지 않고, 많은 음식과 물건의 "
 "재료로 사용될 수 있습니다."
+
+#: data/json/items/comestibles/carnivore.json
+#: data/mods/Magiclysm/items/ammo_types.json
+#: data/mods/Magiclysm/items/fuel.json
+msgid "tainted blood"
+msgid_plural "tainted blood"
+msgstr[0] "더럽혀진 혈액"
+
+#. ~ Description for {'str_sp': 'tainted blood'}
+#: data/json/items/comestibles/carnivore.json
+msgid ""
+"Blood that's obviously unhealthy.  You could drink it, but it will poison "
+"you."
+msgstr "확실히 몸에 해로운 혈액입니다. 마실 수는 있지만, 중독될 겁니다."
+
+#: data/json/items/comestibles/carnivore.json
+msgid "concentrated tainted blood"
+msgid_plural "concentrated tainted blood"
+msgstr[0] "농축 오염된 혈액"
+
+#. ~ Description for {'str_sp': 'concentrated tainted blood'}
+#: data/json/items/comestibles/carnivore.json
+msgid ""
+"Poisonous and unhealthy blood, concentrated by some means.  You swear you "
+"could see it pulsing ever so slightly."
+msgstr "왜 그랬는지는 모르겠지만 농축한, 유독하고 몸에 해로운 혈액입니다. 이게 희미하게 맥동하는걸 봤습니다. 분명히요."
 
 #: data/json/items/comestibles/carnivore.json
 msgid "chunk of tainted meat"
@@ -74101,6 +74374,18 @@ msgid ""
 "life, and also sweetened."
 msgstr "부분적으로 탈수된 소의 우유는 저장 수명을 엄청나게 증가시키고 또한 단맛이 납니다"
 
+#: data/json/items/comestibles/dairy.json
+msgid "buttermilk"
+msgid_plural "buttermilk"
+msgstr[0] "버터밀크"
+
+#. ~ Description for {'str_sp': 'buttermilk'}
+#: data/json/items/comestibles/dairy.json
+msgid ""
+"This is cultured milk defatted either due to churning or curdling.  Spoils "
+"quickly."
+msgstr "버터 등을 만들고 남은, 지방이 줄어든 우유입니다. 빠르게 상합니다."
+
 #: data/json/items/comestibles/drink.json
 msgid "apple cider"
 msgid_plural "apple cider"
@@ -74395,7 +74680,7 @@ msgstr "뜨거운 코코아로 알려진, 이 뜨거운 초콜릿 음료는 추�
 #: data/json/items/comestibles/drink.json
 msgid "juice"
 msgid_plural "juices"
-msgstr[0] ""
+msgstr[0] "주스"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches apple
 #. ~ Conditional name for kompot when COMPONENT_ID matches apple
@@ -74418,7 +74703,7 @@ msgstr[0] ""
 #, c-format
 msgid "apple %s"
 msgid_plural "apple %s"
-msgstr[0] ""
+msgstr[0] "사과 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches apricot
 #. ~ Conditional name for kompot when COMPONENT_ID matches apricot
@@ -74442,7 +74727,7 @@ msgstr[0] ""
 #, c-format
 msgid "apricot %s"
 msgid_plural "apricot %s"
-msgstr[0] ""
+msgstr[0] "살구 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches banana
 #. ~ Conditional name for kompot when COMPONENT_ID matches banana
@@ -74466,7 +74751,7 @@ msgstr[0] ""
 #, c-format
 msgid "banana %s"
 msgid_plural "banana %s"
-msgstr[0] ""
+msgstr[0] "바나나 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches blackberries
 #. ~ Conditional name for kompot when COMPONENT_ID matches blackberries
@@ -74491,7 +74776,7 @@ msgstr[0] ""
 #, c-format
 msgid "blackberry %s"
 msgid_plural "blackberry %s"
-msgstr[0] ""
+msgstr[0] "블랙베리 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches blueberries
 #. ~ Conditional name for kompot when COMPONENT_ID matches blueberries
@@ -74516,7 +74801,7 @@ msgstr[0] ""
 #, c-format
 msgid "blueberry %s"
 msgid_plural "blueberry %s"
-msgstr[0] ""
+msgstr[0] "블루베리 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches cherries
 #. ~ Conditional name for kompot when COMPONENT_ID matches cherries
@@ -74540,7 +74825,7 @@ msgstr[0] ""
 #, c-format
 msgid "cherry %s"
 msgid_plural "cherry %s"
-msgstr[0] ""
+msgstr[0] "체리 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches cranberries
 #. ~ Conditional name for kompot when COMPONENT_ID matches cranberries
@@ -74565,7 +74850,7 @@ msgstr[0] ""
 #, c-format
 msgid "cranberry %s"
 msgid_plural "cranberry %s"
-msgstr[0] ""
+msgstr[0] "크랜베리 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches grapefruit
 #. ~ Conditional name for kompot when COMPONENT_ID matches grapefruit
@@ -74590,7 +74875,7 @@ msgstr[0] ""
 #, c-format
 msgid "grapefruit %s"
 msgid_plural "grapefruit %s"
-msgstr[0] ""
+msgstr[0] "자몽 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches grapes
 #. ~ Conditional name for kompot when COMPONENT_ID matches grapes
@@ -74614,7 +74899,7 @@ msgstr[0] ""
 #, c-format
 msgid "grape %s"
 msgid_plural "grape %s"
-msgstr[0] ""
+msgstr[0] "포도 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches kiwi
 #. ~ Conditional name for kompot when COMPONENT_ID matches kiwi
@@ -74636,7 +74921,7 @@ msgstr[0] ""
 #, c-format
 msgid "kiwi %s"
 msgid_plural "kiwi %s"
-msgstr[0] ""
+msgstr[0] "키위 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches mango
 #. ~ Conditional name for kompot when COMPONENT_ID matches mango
@@ -74659,7 +74944,7 @@ msgstr[0] ""
 #, c-format
 msgid "mango %s"
 msgid_plural "mango %s"
-msgstr[0] ""
+msgstr[0] "망고 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches melon
 #. ~ Conditional name for kompot when COMPONENT_ID matches melon
@@ -74682,7 +74967,7 @@ msgstr[0] ""
 #, c-format
 msgid "melon %s"
 msgid_plural "melon %s"
-msgstr[0] ""
+msgstr[0] "멜론 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches orange
 #. ~ Conditional name for kompot when COMPONENT_ID matches orange
@@ -74706,7 +74991,7 @@ msgstr[0] ""
 #, c-format
 msgid "orange %s"
 msgid_plural "orange %s"
-msgstr[0] ""
+msgstr[0] "오렌지 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches papaya
 #. ~ Conditional name for kompot when COMPONENT_ID matches papaya
@@ -74730,7 +75015,7 @@ msgstr[0] ""
 #, c-format
 msgid "papaya %s"
 msgid_plural "papaya %s"
-msgstr[0] ""
+msgstr[0] "파파야 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches peach
 #. ~ Conditional name for kompot when COMPONENT_ID matches peach
@@ -74753,7 +75038,7 @@ msgstr[0] ""
 #, c-format
 msgid "peach %s"
 msgid_plural "peach %s"
-msgstr[0] ""
+msgstr[0] "복숭아 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches pear
 #. ~ Conditional name for kompot when COMPONENT_ID matches pear
@@ -74775,7 +75060,7 @@ msgstr[0] ""
 #, c-format
 msgid "pear %s"
 msgid_plural "pear %s"
-msgstr[0] ""
+msgstr[0] "배 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches pineapple
 #. ~ Conditional name for kompot when COMPONENT_ID matches pineapple
@@ -74800,7 +75085,7 @@ msgstr[0] ""
 #, c-format
 msgid "pineapple %s"
 msgid_plural "pineapple %s"
-msgstr[0] ""
+msgstr[0] "파인애플 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches plums
 #. ~ Conditional name for kompot when COMPONENT_ID matches plums
@@ -74823,7 +75108,7 @@ msgstr[0] ""
 #, c-format
 msgid "plum %s"
 msgid_plural "plum %s"
-msgstr[0] ""
+msgstr[0] "자두 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches pomegranate
 #. ~ Conditional name for kompot when COMPONENT_ID matches pomegranate
@@ -74848,7 +75133,7 @@ msgstr[0] ""
 #, c-format
 msgid "pomegranate %s"
 msgid_plural "pomegranate %s"
-msgstr[0] ""
+msgstr[0] "석류 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches raspberries
 #. ~ Conditional name for kompot when COMPONENT_ID matches raspberries
@@ -74873,7 +75158,7 @@ msgstr[0] ""
 #, c-format
 msgid "raspberry %s"
 msgid_plural "raspberry %s"
-msgstr[0] ""
+msgstr[0] "산딸기 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches rose_hips
 #. ~ Conditional name for kompot when COMPONENT_ID matches rose_hips
@@ -74898,7 +75183,7 @@ msgstr[0] ""
 #, c-format
 msgid "rose_hip %s"
 msgid_plural "rose_hip %s"
-msgstr[0] ""
+msgstr[0] "로즈힙 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches strawberries
 #. ~ Conditional name for kompot when COMPONENT_ID matches strawberries
@@ -74923,7 +75208,7 @@ msgstr[0] ""
 #, c-format
 msgid "strawberry %s"
 msgid_plural "strawberry %s"
-msgstr[0] ""
+msgstr[0] "딸기 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches huckleberries
 #. ~ Conditional name for kompot when COMPONENT_ID matches huckleberries
@@ -74949,7 +75234,7 @@ msgstr[0] ""
 #, c-format
 msgid "huckleberry %s"
 msgid_plural "huckleberry %s"
-msgstr[0] ""
+msgstr[0] "허클베리 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches mulberries
 #. ~ Conditional name for kompot when COMPONENT_ID matches mulberries
@@ -74974,7 +75259,7 @@ msgstr[0] ""
 #, c-format
 msgid "mulberry %s"
 msgid_plural "mulberry %s"
-msgstr[0] ""
+msgstr[0] "오디 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches elderberries
 #. ~ Conditional name for kompot when COMPONENT_ID matches elderberries
@@ -74999,7 +75284,7 @@ msgstr[0] ""
 #, c-format
 msgid "elderberry %s"
 msgid_plural "elderberry %s"
-msgstr[0] ""
+msgstr[0] "엘더베리 %s"
 
 #. ~ Conditional name for juice when COMPONENT_ID matches watermelon
 #. ~ Conditional name for kompot when COMPONENT_ID matches watermelon
@@ -75024,7 +75309,7 @@ msgstr[0] ""
 #, c-format
 msgid "watermelon %s"
 msgid_plural "watermelon %s"
-msgstr[0] ""
+msgstr[0] "수박 %s"
 
 #. ~ Description for juice
 #: data/json/items/comestibles/drink.json
@@ -75834,7 +76119,7 @@ msgstr[0] "조미료 뿌린 삶은 달걀"
 #, c-format
 msgid "%s with ketchup"
 msgid_plural "%s with ketchups"
-msgstr[0] ""
+msgstr[0] "케첩 뿌린 %s"
 
 #. ~ Conditional name for {'str': 'boiled egg with condiment'} when
 #. COMPONENT_ID matches mayonnaise
@@ -75847,7 +76132,7 @@ msgstr[0] ""
 #, c-format
 msgid "%s with mayonnaise"
 msgid_plural "%s with mayonnaises"
-msgstr[0] ""
+msgstr[0] "마요네즈 뿌린 %s"
 
 #. ~ Conditional name for {'str': 'boiled egg with condiment'} when
 #. COMPONENT_ID matches mustard
@@ -75860,7 +76145,7 @@ msgstr[0] ""
 #, c-format
 msgid "%s with mustard"
 msgid_plural "%s with mustards"
-msgstr[0] ""
+msgstr[0] "겨자 뿌린 %s"
 
 #. ~ Conditional name for {'str': 'boiled egg with condiment'} when
 #. COMPONENT_ID matches horseradish
@@ -75873,7 +76158,7 @@ msgstr[0] ""
 #, c-format
 msgid "%s with horseradish"
 msgid_plural "%s with horseradishs"
-msgstr[0] ""
+msgstr[0] "서양고추냉이 뿌린 %s"
 
 #. ~ Conditional name for {'str': 'boiled egg with condiment'} when
 #. COMPONENT_ID matches salt
@@ -76081,7 +76366,7 @@ msgstr "이탈리안 풍의 아이스크림. 일반적인 아이스크림보다 
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked strawberry"
 msgid_plural "cooked strawberries"
-msgstr[0] "익힌 딸기"
+msgstr[0] "딸기 (조리됨)"
 
 #. ~ Description for {'str': 'cooked strawberry', 'str_pl': 'cooked
 #. strawberries'}
@@ -76103,7 +76388,7 @@ msgstr "설탕으로 절인 말린 과일 조각입니다."
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked blueberry"
 msgid_plural "cooked blueberries"
-msgstr[0] "익힌 블루베리"
+msgstr[0] "블루베리 (조리됨)"
 
 #. ~ Description for {'str': 'cooked blueberry', 'str_pl': 'cooked
 #. blueberries'}
@@ -76150,151 +76435,151 @@ msgstr "레몬 향을 한껏 내뿜는 시큼한 노란 가루입니다. 물에 
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked fruit"
 msgid_plural "cooked fruits"
-msgstr[0] "익힌 과일"
+msgstr[0] "조리된 과일"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches apple
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked apple"
 msgid_plural "cooked apples"
-msgstr[0] ""
+msgstr[0] "사과 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches apricot
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked apricot"
 msgid_plural "cooked apricots"
-msgstr[0] ""
+msgstr[0] "살구 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches banana
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked banana"
 msgid_plural "cooked bananas"
-msgstr[0] ""
+msgstr[0] "바나나 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches blackberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked blackberry"
 msgid_plural "cooked blackberrys"
-msgstr[0] ""
+msgstr[0] "블랙베리 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches cherries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked cherry"
 msgid_plural "cooked cherrys"
-msgstr[0] ""
+msgstr[0] "체리 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches cranberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked cranberry"
 msgid_plural "cooked cranberrys"
-msgstr[0] ""
+msgstr[0] "크랜베리 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches grapefruit
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked grapefruit"
 msgid_plural "cooked grapefruits"
-msgstr[0] ""
+msgstr[0] "자몽 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches grapes
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked grape"
 msgid_plural "cooked grapes"
-msgstr[0] ""
+msgstr[0] "포도 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches kiwi
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked kiwi"
 msgid_plural "cooked kiwis"
-msgstr[0] ""
+msgstr[0] "키위 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches mango
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked mango"
 msgid_plural "cooked mangos"
-msgstr[0] ""
+msgstr[0] "망고 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches melon
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked melon"
 msgid_plural "cooked melons"
-msgstr[0] ""
+msgstr[0] "멜론 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches orange
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked orange"
 msgid_plural "cooked oranges"
-msgstr[0] ""
+msgstr[0] "오렌지 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches papaya
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked papaya"
 msgid_plural "cooked papayas"
-msgstr[0] ""
+msgstr[0] "파파야 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches peach
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked peach"
 msgid_plural "cooked peachs"
-msgstr[0] ""
+msgstr[0] "복숭아 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches pear
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked pear"
 msgid_plural "cooked pears"
-msgstr[0] ""
+msgstr[0] "배 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches pineapple
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked pineapple"
 msgid_plural "cooked pineapples"
-msgstr[0] ""
+msgstr[0] "파인애플 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches plums
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked plum"
 msgid_plural "cooked plums"
-msgstr[0] ""
+msgstr[0] "자두 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches pomegranate
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked pomegranate"
 msgid_plural "cooked pomegranates"
-msgstr[0] ""
+msgstr[0] "석류 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches raspberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked raspberry"
 msgid_plural "cooked raspberrys"
-msgstr[0] ""
+msgstr[0] "산딸기 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches rose_hips
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked rose_hip"
 msgid_plural "cooked rose_hips"
-msgstr[0] ""
+msgstr[0] "로즈힙 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches huckleberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked huckleberry"
 msgid_plural "cooked huckleberrys"
-msgstr[0] ""
+msgstr[0] "허클베리 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches mulberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked mulberry"
 msgid_plural "cooked mulberrys"
-msgstr[0] ""
+msgstr[0] "오디 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches elderberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked elderberry"
 msgid_plural "cooked elderberrys"
-msgstr[0] ""
+msgstr[0] "엘더베리 (조리됨)"
 
 #. ~ Conditional name for cooked fruit when COMPONENT_ID matches watermelon
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cooked watermelon"
 msgid_plural "cooked watermelons"
-msgstr[0] ""
+msgstr[0] "수박 (조리됨)"
 
 #. ~ Description for cooked fruit
 #: data/json/items/comestibles/fruit_dishes.json
@@ -76304,7 +76589,7 @@ msgstr "설탕이 빠진 과일 잼이라고 봐도 무방합니다."
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "jam"
 msgid_plural "jam"
-msgstr[0] ""
+msgstr[0] "잼"
 
 #. ~ Description for {'str_sp': 'jam'}
 #: data/json/items/comestibles/fruit_dishes.json
@@ -76347,182 +76632,182 @@ msgstr[0] "과일 조각"
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "apple slice"
 msgid_plural "apple slice"
-msgstr[0] ""
+msgstr[0] "사과 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. apricot
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "apricot slice"
 msgid_plural "apricot slice"
-msgstr[0] ""
+msgstr[0] "살구 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. banana
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "banana slice"
 msgid_plural "banana slice"
-msgstr[0] ""
+msgstr[0] "바나나 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. blackberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "blackberry slice"
 msgid_plural "blackberry slice"
-msgstr[0] ""
+msgstr[0] "블랙베리 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. blueberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "blueberry slice"
 msgid_plural "blueberry slice"
-msgstr[0] ""
+msgstr[0] "블루베리 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. cherries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cherry slice"
 msgid_plural "cherry slice"
-msgstr[0] ""
+msgstr[0] "체리 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. cranberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "cranberry slice"
 msgid_plural "cranberry slice"
-msgstr[0] ""
+msgstr[0] "크랜베리 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. grapefruit
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "grapefruit slice"
 msgid_plural "grapefruit slice"
-msgstr[0] ""
+msgstr[0] "자몽 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. grapes
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "grape slice"
 msgid_plural "grape slice"
-msgstr[0] ""
+msgstr[0] "포도 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. kiwi
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "kiwi slice"
 msgid_plural "kiwi slice"
-msgstr[0] ""
+msgstr[0] "키위 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. mango
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "mango slice"
 msgid_plural "mango slice"
-msgstr[0] ""
+msgstr[0] "망고 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. melon
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "melon slice"
 msgid_plural "melon slice"
-msgstr[0] ""
+msgstr[0] "멜론 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. orange
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "orange slice"
 msgid_plural "orange slice"
-msgstr[0] ""
+msgstr[0] "오렌지 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. papaya
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "papaya slice"
 msgid_plural "papaya slice"
-msgstr[0] ""
+msgstr[0] "파파야 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. peach
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "peach slice"
 msgid_plural "peach slice"
-msgstr[0] ""
+msgstr[0] "복숭아 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. pear
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "pear slice"
 msgid_plural "pear slice"
-msgstr[0] ""
+msgstr[0] "배 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. pineapple
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "pineapple slice"
 msgid_plural "pineapple slice"
-msgstr[0] ""
+msgstr[0] "파인애플 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. plums
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "plum slice"
 msgid_plural "plum slice"
-msgstr[0] ""
+msgstr[0] "자두 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. pomegranate
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "pomegranate slice"
 msgid_plural "pomegranate slice"
-msgstr[0] ""
+msgstr[0] "석류 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. raspberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "raspberry slice"
 msgid_plural "raspberry slice"
-msgstr[0] ""
+msgstr[0] "산딸기 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. rose_hips
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "rose_hip slice"
 msgid_plural "rose_hip slice"
-msgstr[0] ""
+msgstr[0] "로즈힙 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. strawberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "strawberry slice"
 msgid_plural "strawberry slice"
-msgstr[0] ""
+msgstr[0] "딸기 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. huckleberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "huckleberry slice"
 msgid_plural "huckleberry slice"
-msgstr[0] ""
+msgstr[0] "허클베리 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. mulberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "mulberry slice"
 msgid_plural "mulberry slice"
-msgstr[0] ""
+msgstr[0] "오디 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. elderberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "elderberry slice"
 msgid_plural "elderberry slice"
-msgstr[0] ""
+msgstr[0] "엘더베리 조각"
 
 #. ~ Conditional name for {'str': 'fruit slice'} when COMPONENT_ID matches
 #. watermelon
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "watermelon slice"
 msgid_plural "watermelon slice"
-msgstr[0] ""
+msgstr[0] "수박 조각"
 
 #. ~ Description for {'str': 'fruit slice'}
 #: data/json/items/comestibles/fruit_dishes.json
@@ -76540,175 +76825,175 @@ msgstr[0] "과일 통조림"
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned apple"
 msgid_plural "canned apples"
-msgstr[0] ""
+msgstr[0] "사과 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. apricot
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned apricot"
 msgid_plural "canned apricots"
-msgstr[0] ""
+msgstr[0] "살구 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. banana
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned banana"
 msgid_plural "canned bananas"
-msgstr[0] ""
+msgstr[0] "바나나 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. blackberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned blackberry"
 msgid_plural "canned blackberrys"
-msgstr[0] ""
+msgstr[0] "블랙베리 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. blueberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned blueberry"
 msgid_plural "canned blueberrys"
-msgstr[0] ""
+msgstr[0] "블루베리 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. cherries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned cherry"
 msgid_plural "canned cherrys"
-msgstr[0] ""
+msgstr[0] "체리 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. cranberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned cranberry"
 msgid_plural "canned cranberrys"
-msgstr[0] ""
+msgstr[0] "크랜베리 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. grapefruit
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned grapefruit"
 msgid_plural "canned grapefruits"
-msgstr[0] ""
+msgstr[0] "자몽 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. grapes
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned grape"
 msgid_plural "canned grapes"
-msgstr[0] ""
+msgstr[0] "포도 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. kiwi
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned kiwi"
 msgid_plural "canned kiwis"
-msgstr[0] ""
+msgstr[0] "키위 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. mango
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned mango"
 msgid_plural "canned mangos"
-msgstr[0] ""
+msgstr[0] "망고 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. melon
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned melon"
 msgid_plural "canned melons"
-msgstr[0] ""
+msgstr[0] "멜론 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. orange
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned orange"
 msgid_plural "canned oranges"
-msgstr[0] ""
+msgstr[0] "오렌지 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. papaya
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned papaya"
 msgid_plural "canned papayas"
-msgstr[0] ""
+msgstr[0] "파파야 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. peach
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned peach"
 msgid_plural "canned peachs"
-msgstr[0] ""
+msgstr[0] "복숭아 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. pear
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned pear"
 msgid_plural "canned pears"
-msgstr[0] ""
+msgstr[0] "배 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. plums
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned plum"
 msgid_plural "canned plums"
-msgstr[0] ""
+msgstr[0] "자두 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. pomegranate
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned pomegranate"
 msgid_plural "canned pomegranates"
-msgstr[0] ""
+msgstr[0] "석류 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. raspberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned raspberry"
 msgid_plural "canned raspberrys"
-msgstr[0] ""
+msgstr[0] "산딸기 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. rose_hips
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned rose_hip"
 msgid_plural "canned rose_hips"
-msgstr[0] ""
+msgstr[0] "로즈힙 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. strawberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned strawberry"
 msgid_plural "canned strawberrys"
-msgstr[0] ""
+msgstr[0] "딸기 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. huckleberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned huckleberry"
 msgid_plural "canned huckleberrys"
-msgstr[0] ""
+msgstr[0] "허클베리 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. mulberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned mulberry"
 msgid_plural "canned mulberrys"
-msgstr[0] ""
+msgstr[0] "오디 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. elderberries
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned elderberry"
 msgid_plural "canned elderberrys"
-msgstr[0] ""
+msgstr[0] "엘더베리 통조림"
 
 #. ~ Conditional name for {'str_sp': 'canned fruit'} when COMPONENT_ID matches
 #. watermelon
 #: data/json/items/comestibles/fruit_dishes.json
 msgid "canned watermelon"
 msgid_plural "canned watermelons"
-msgstr[0] ""
+msgstr[0] "수박 통조림"
 
 #. ~ Description for {'str_sp': 'canned fruit'}
 #: data/json/items/comestibles/fruit_dishes.json
@@ -77494,7 +77779,7 @@ msgstr[0] "사탕무 시럽"
 msgid ""
 "A thick syrup produced from shredded sugar beets.  Useful in cooking as a "
 "sweetener."
-msgstr "사탕무로 만든 시럽. 요리를 달콤하게 한다."
+msgstr "사탕무를 잘게 토막내 만든 걸쭉한 시럽입니다. 요리에 당을 첨가하는 용도로 유용합니다."
 
 #: data/json/items/comestibles/junkfood.json
 msgid "cake"
@@ -78139,6 +78424,55 @@ msgstr[0] "조리된 황무지 소세지"
 #: data/json/items/comestibles/meat_dishes.json
 msgid "Lean sausage made from salt-cured offal, that has been cooked."
 msgstr "장기간 보존을 위해 내장에 소금을 뿌린, 비계 없는 소세지를 요리한 것입니다."
+
+#: data/json/items/comestibles/meat_dishes.json
+msgid "smoked blutwurst"
+msgid_plural "smoked blutwursts"
+msgstr[0] "훈제 블루트부어스트"
+
+#. ~ Conditional name for smoked blutwurst when COMPONENT_ID matches mutant
+#. ~ Conditional name for raw blutwurst when COMPONENT_ID matches mutant
+#. ~ Conditional name for {'str': 'meat sandwich', 'str_pl': 'meat
+#. sandwiches'} when COMPONENT_ID matches mutant
+#. ~ Conditional name for meat soup when COMPONENT_ID matches mutant
+#: data/json/items/comestibles/meat_dishes.json
+#: data/json/items/comestibles/sandwich.json
+#: data/json/items/comestibles/soup.json
+#, c-format
+msgid "mutant %s"
+msgid_plural "mutant %s"
+msgstr[0] "돌연변이 %s"
+
+#. ~ Description for smoked blutwurst
+#: data/json/items/comestibles/meat_dishes.json
+msgid ""
+"Traditional blood sausage made from blood, some meat, and various "
+"seasonings, encased in natural gut.  Smoky and rich in flavor."
+msgstr "피, 고기와 향신료를 내장에 채워 만든 전통적인 피소세지입니다. 훈연하여 향미가 풍부해졌습니다."
+
+#: data/json/items/comestibles/meat_dishes.json
+msgid "raw blutwurst"
+msgid_plural "raw blutwursts"
+msgstr[0] "생 블루트부어스트"
+
+#. ~ Description for raw blutwurst
+#: data/json/items/comestibles/meat_dishes.json
+msgid ""
+"Traditional blood sausage made from blood, some meat, and various "
+"seasonings, ready to be smoked."
+msgstr "피, 고기와 향신료를 내장에 채워 만든 전통적인 피소세지입니다. 이대로 훈연하면 될 것 같습니다."
+
+#: data/json/items/comestibles/meat_dishes.json
+msgid "cooked blutwurst"
+msgid_plural "cooked blutwursts"
+msgstr[0] "조리된 블루트부어스트"
+
+#. ~ Description for cooked blutwurst
+#: data/json/items/comestibles/meat_dishes.json
+msgid ""
+"Traditional blood sausage made from blood, some meat, and various "
+"seasonings, that has been cooked."
+msgstr "피, 고기와 향신료를 내장에 채워 만든 전통적인 피소세지를 잘 구운 것입니다."
 
 #: data/json/items/comestibles/meat_dishes.json
 msgid "cracklins"
@@ -79082,6 +79416,17 @@ msgstr ""
 "옥수수 또르띨리야 안에 고기와 야채를 가득 채우고 튜브 형태로 만 것으로, 주유소에서 찾을 수 있는 비슷한 것들과 달리 수제인데다 "
 "맛있습니다!"
 
+#: data/json/items/comestibles/meat_dishes.json
+msgid "chunk of curdled blood"
+msgid_plural "chunks of curdled blood"
+msgstr[0] "응고된 혈액 덩어리"
+
+#. ~ Description for {'str': 'chunk of curdled blood', 'str_pl': 'chunks of
+#. curdled blood'}
+#: data/json/items/comestibles/meat_dishes.json
+msgid "A chunk of solid cooked blood."
+msgstr "조리되어 단단하게 응고된 혈액 덩어리입니다."
+
 #: data/json/items/comestibles/med.json
 msgid "first aid kit"
 msgid_plural "first aid kits"
@@ -80011,7 +80356,7 @@ msgstr[0] "양귀비 기침약"
 #. ~ Description for {'str_sp': 'poppy cough syrup'}
 #: data/json/items/comestibles/med.json
 msgid "Cough syrup made from mutated poppy.  Will make you sleepy."
-msgstr "변이된 양귀비로 만든 기침약. 수면을 유도한다."
+msgstr "돌연변이 양귀비로 만든 기침약입니다. 먹으면 졸릴 것입니다."
 
 #: data/json/items/comestibles/med.json
 msgid "Prozac"
@@ -80465,8 +80810,8 @@ msgid ""
 "soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"고추 & 콩 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"칠리를 곁들인 베이크드 빈즈 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 "
+"부패하기 시작할 것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - BBQ Beef"
@@ -80480,8 +80825,8 @@ msgid ""
 " needs.  The contents will begin to rot once they're removed from this "
 "sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"쇠고기 바비큐요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"쇠고기 바비큐 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Chicken & Noodles"
@@ -80496,8 +80841,8 @@ msgid ""
 "hungry soldier needs.  The contents will begin to rot once they're removed "
 "from this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"쇠치킨 & 국수 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"닭고기 국수 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Spaghetti"
@@ -80511,8 +80856,8 @@ msgid ""
 "soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"스파게티요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. 사용하거나"
-" 분해로 개봉 가능."
+"스파게티 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Chicken Chunks"
@@ -80527,8 +80872,8 @@ msgid ""
 "soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"순살치킨, 그리고 배고픈 군인에게 필요한 모든 것이 들어있는 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"순살큐브치킨 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Beef Taco"
@@ -80542,8 +80887,8 @@ msgid ""
 "soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"쇠고기타코 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"소고기 타코 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Beef Brisket"
@@ -80558,8 +80903,8 @@ msgid ""
 "soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"차돌박이요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. 사용하거나"
-" 분해로 개봉 가능."
+"소고기 양지 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Meatballs & Marinara"
@@ -80574,8 +80919,8 @@ msgid ""
 " needs.  The contents will begin to rot once they're removed from this "
 "sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"미트볼요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. 사용하거나 "
-"분해로 개봉 가능."
+"미트볼 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 것입니다."
+" 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Beef Stew"
@@ -80589,8 +80934,8 @@ msgid ""
 "soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"소고기 스튜요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"소고기 스튜 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Chili & Macaroni"
@@ -80605,8 +80950,8 @@ msgid ""
 " soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"고추 & 마카로니 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다."
-" 사용하거나 분해로 개봉 가능."
+"칠리를 곁들인 마카로니 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 "
+"시작할 것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Vegetarian Taco"
@@ -80621,8 +80966,8 @@ msgid ""
 "soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"채식형 타코 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"채식주의자 타코 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Macaroni Marinara"
@@ -80637,8 +80982,8 @@ msgid ""
 "hungry soldier needs.  The contents will begin to rot once they're removed "
 "from this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"마카로니 마리나라요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"마카로니 마리나라 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할"
+" 것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Cheese Tortellini"
@@ -80653,8 +80998,8 @@ msgid ""
 "hungry soldier needs.  The contents will begin to rot once they're removed "
 "from this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"치즈 토르텔리니 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"치즈 토르텔리니 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Mushroom Fettuccine"
@@ -80669,8 +81014,8 @@ msgid ""
 "hungry soldier needs.  The contents will begin to rot once they're removed "
 "from this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"버섯 페투치네 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"버섯 페투치네 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Mexican Chicken Stew"
@@ -80685,8 +81030,8 @@ msgid ""
 "hungry soldier needs.  The contents will begin to rot once they're removed "
 "from this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"멕시코식 치킨 스튜 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 "
-"시작한다. 사용하거나 분해로 개봉 가능."
+"멕시코식 치킨 스튜 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 "
+"시작할 것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Chicken Burrito Bowl"
@@ -80701,8 +81046,8 @@ msgid ""
 "hungry soldier needs.  The contents will begin to rot once they're removed "
 "from this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"치킨 부리토 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"치킨 부리토 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Maple Sausage"
@@ -80717,8 +81062,8 @@ msgid ""
 "soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"메이플시럽을 곁들인 소세지 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 "
-"시작한다. 사용하거나 분해로 개봉 가능."
+"메이플 시럽을 곁들인 소세지 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 "
+"부패하기 시작할 것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Ravioli"
@@ -80732,8 +81077,8 @@ msgid ""
 "needs.  The contents will begin to rot once they're removed from this sealed"
 " bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"라비올리 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"라비올리 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Pepper Jack Beef"
@@ -80748,8 +81093,8 @@ msgid ""
 " soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"후추 잭 소고기 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"페퍼 잭 치즈를 곁들인 소고기 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 "
+"부패하기 시작할 것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Hash Browns & Bacon"
@@ -80764,8 +81109,8 @@ msgid ""
 "hungry soldier needs.  The contents will begin to rot once they're removed "
 "from this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"해쉬 브라운 & 베이컨 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 "
-"시작한다. 사용하거나 분해로 개봉 가능."
+"해쉬 브라운을 곁들인 베이컨 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 "
+"부패하기 시작할 것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Lemon Pepper Tuna"
@@ -80780,8 +81125,8 @@ msgid ""
 "hungry soldier needs.  The contents will begin to rot once they're removed "
 "from this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"레몬 후추 참치 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"레몬 후추 참치 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Asian Beef & Vegetables"
@@ -80796,8 +81141,8 @@ msgid ""
 "a hungry soldier needs.  The contents will begin to rot once they're removed"
 " from this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"아시아산 소고기 & 야채 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 "
-"시작한다. 사용하거나 분해로 개봉 가능."
+"야채를 곁들인 아시아식 소고기 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 "
+"부패하기 시작할 것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Chicken Pesto & Pasta"
@@ -80812,8 +81157,8 @@ msgid ""
 "soldier needs.  The contents will begin to rot once they're removed from "
 "this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"치킨 페스토 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 시작한다. "
-"사용하거나 분해로 개봉 가능."
+"치킨 페스토 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 뒤에야 부패하기 시작할 "
+"것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Southwest Beef & Beans"
@@ -80828,8 +81173,8 @@ msgid ""
 "hungry soldier needs.  The contents will begin to rot once they're removed "
 "from this sealed bag.  Activate or disassemble it to get to its contents."
 msgstr ""
-"남서부식 소고기 & 콩 요리와 배고픈 군인이 필요한 모든 것을 갖춘 'Meal Ready to Eat'. 개봉하면 내용물이 부패하기 "
-"시작한다. 사용하거나 분해로 개봉 가능."
+"베이크드 빈즈를 곁들인 남서부식 소고기 정식 및 기타 배고픈 군인에게 필요한 것들을 갖춘 MRE입니다. 잘 밀봉된 덕분에 내용물을 꺼낸 "
+"뒤에야 부패하기 시작할 것입니다. 사용하거나 분해하여 꺼낼 수 있습니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "MRE - Frankfurters & Beans"
@@ -80858,7 +81203,8 @@ msgid ""
 "The chili & beans entree from an MRE.  Sterilized using radiation, so it's "
 "safe to eat.  Exposed to the atmosphere, it has started to go bad."
 msgstr ""
-"MRE에서 꺼낸 고추와 콩으로 만든 요리. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+"MRE에서 꺼낸 칠리를 곁들인 베이크드 빈즈 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할"
+" 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "BBQ beef entree"
@@ -80870,7 +81216,8 @@ msgstr[0] "BBQ 쇠고기 요리"
 msgid ""
 "The BBQ beef entree from an MRE.  Sterilized using radiation, so it's safe "
 "to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 바비큐 쇠고기 정식. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 쇠고기 바비큐 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "chicken noodle entree"
@@ -80883,7 +81230,7 @@ msgid ""
 "The chicken noodle entree from an MRE.  Sterilized using radiation, so it's "
 "safe to eat.  Exposed to the atmosphere, it has started to go bad."
 msgstr ""
-"MRE에서 꺼낸 방사선에 조사된 닭고기 국수 요리. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+"MRE에서 꺼낸 닭고기 국수 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "spaghetti entree"
@@ -80895,7 +81242,8 @@ msgstr[0] "스파게티 요리"
 msgid ""
 "The spaghetti entree from an MRE.  Sterilized using radiation, so it's safe "
 "to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 스파게티. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 스파게티 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "chicken chunks entree"
@@ -80907,7 +81255,8 @@ msgstr[0] "순살치킨 요리"
 msgid ""
 "The chicken chunks entree from an MRE.  Sterilized using radiation, so it's "
 "safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 순살치킨. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 순살큐브치킨 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "beef taco entree"
@@ -80919,7 +81268,8 @@ msgstr[0] "쇠고기 타코 요리"
 msgid ""
 "The beef taco entree from an MRE.  Sterilized using radiation, so it's safe "
 "to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 쇠고기 타코. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 소고기 타코 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "beef brisket entree"
@@ -80931,7 +81281,8 @@ msgstr[0] "차돌박이 요리"
 msgid ""
 "The beef brisket entree from an MRE.  Sterilized using radiation, so it's "
 "safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 차돌박이 요리. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 소고기 양지 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "meatballs & marinara entree"
@@ -80944,7 +81295,7 @@ msgid ""
 "The meatballs & marinara entree from an MRE.  Sterilized using radiation, so"
 " it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
 msgstr ""
-"MRE에서 꺼낸 미트볼 & 마리나라 요리. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+"MRE에서 꺼낸 미트볼 마리나라 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "beef stew entree"
@@ -80956,7 +81307,8 @@ msgstr[0] "비프 스튜 요리"
 msgid ""
 "The beef stew entree from an MRE.  Sterilized using radiation, so it's safe "
 "to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 비프 스튜. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 소고기 스튜 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "chili & macaroni entree"
@@ -80968,7 +81320,9 @@ msgstr[0] "칠리 & 마카로니 요리"
 msgid ""
 "The chili & macaroni entree from an MRE.  Sterilized using radiation, so "
 "it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 고추와 마카로니 요리. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 칠리를 곁들인 마카로니 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 "
+"것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "vegetarian taco entree"
@@ -80980,7 +81334,8 @@ msgstr[0] "채식형 타코 요리"
 msgid ""
 "The vegetarian taco entree from an MRE.  Sterilized using radiation, so it's"
 " safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 채식 타코. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 채식주의자 타코 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "macaroni & marinara entree"
@@ -80993,7 +81348,7 @@ msgid ""
 "The macaroni & marinara entree from an MRE.  Sterilized using radiation, so "
 "it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
 msgstr ""
-"MRE에서 꺼낸 마카로니 & 마리나라 요리. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+"MRE에서 꺼낸 마카로니 마리나라 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "cheese tortellini entree"
@@ -81005,7 +81360,8 @@ msgstr[0] "치즈 토르텔리니 요리"
 msgid ""
 "The cheese tortellini entree from an MRE.  Sterilized using radiation, so "
 "it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 치즈 토르텔리니. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 치즈 토르텔리니 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "mushroom fettuccine entree"
@@ -81017,7 +81373,8 @@ msgstr[0] "버섯 페투치네 요리"
 msgid ""
 "The mushroom fettuccine entree from an MRE.  Sterilized using radiation, so "
 "it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 버섯 페투치네. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 버섯 페투치네 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "Mexican chicken stew entree"
@@ -81029,7 +81386,9 @@ msgstr[0] "멕시코식 치킨 스튜 요리"
 msgid ""
 "The Mexican chicken stew entree from an MRE.  Sterilized using radiation, so"
 " it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 멕시코식 치킨 스튜. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 멕시코식 치킨 스튜 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 "
+"것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "chicken burrito bowl entree"
@@ -81041,7 +81400,8 @@ msgstr[0] "치킨 부리토 요리"
 msgid ""
 "The chicken burrito bowl entree from an MRE.  Sterilized using radiation, so"
 " it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 치킨 부리또. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 치킨 부리토 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "maple sausage entree"
@@ -81053,7 +81413,9 @@ msgstr[0] "메이플 소세지 요리"
 msgid ""
 "The maple sausage entree from an MRE.  Sterilized using radiation, so it's "
 "safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 메이플 소세지. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 메이플 시럽을 곁들인 소세지 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할"
+" 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "ravioli entree"
@@ -81065,7 +81427,8 @@ msgstr[0] "라비올리 요리"
 msgid ""
 "The ravioli entree from an MRE.  Sterilized using radiation, so it's safe to"
 " eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 라비올리. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 라비올리 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "pepper jack beef entree"
@@ -81077,7 +81440,9 @@ msgstr[0] "후추 잭 소고기 요리"
 msgid ""
 "The pepper jack beef entree from an MRE.  Sterilized using radiation, so "
 "it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 후추 뿌린 쇠고기 햄. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 페퍼 잭 치즈를 곁들인 소고기 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 "
+"상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "hash browns & bacon entree"
@@ -81089,7 +81454,9 @@ msgstr[0] "해시 브라운 & 베이컨 요리"
 msgid ""
 "The hash browns & bacon entree from an MRE.  Sterilized using radiation, so "
 "it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 해쉬브라운과 베이컨. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 해쉬 브라운을 곁들인 베이컨 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할"
+" 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "lemon pepper tuna entree"
@@ -81101,7 +81468,8 @@ msgstr[0] "레몬 후추 참치 요리"
 msgid ""
 "The lemon pepper tuna entree from an MRE.  Sterilized using radiation, so "
 "it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 레몬 후추 참치 요리. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 레몬 후추 참치 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "asian beef & vegetables entree"
@@ -81114,7 +81482,8 @@ msgid ""
 "The asian beef & vegetables entree from an MRE.  Sterilized using radiation,"
 " so it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
 msgstr ""
-"MRE에서 꺼낸 아시아식 쇠고기와 채소 요리. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+"MRE에서 꺼낸 채소를 곁들인 아시아식 소고기 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 "
+"상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "chicken pesto & pasta entree"
@@ -81126,7 +81495,9 @@ msgstr[0] "치킨 페스토 & 파스타 요리"
 msgid ""
 "The chicken pesto & pasta entree from an MRE.  Sterilized using radiation, "
 "so it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
-msgstr "MRE에서 꺼낸 치킨 페스토 & 파스타. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+msgstr ""
+"MRE에서 꺼낸 파스타를 곁들인 치킨 페스토 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상할"
+" 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "southwest beef & beans entree"
@@ -81139,7 +81510,8 @@ msgid ""
 "The southwest beef & beans entree from an MRE.  Sterilized using radiation, "
 "so it's safe to eat.  Exposed to the atmosphere, it has started to go bad."
 msgstr ""
-"MRE에서 꺼낸 남서부식 쇠고기 & 콩 요리. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 지나면 상한다."
+"MRE에서 꺼낸 베이크드 빈즈를 곁들인 남서부식 소고기 정식입니다. 방사선으로 살균했기에 먹어도 안전합니다. 대기에 노출되었기에 시간이 "
+"지나면 상할 것입니다."
 
 #: data/json/items/comestibles/mre.json
 msgid "frankfurters & beans entree"
@@ -81177,7 +81549,7 @@ msgstr[0] "곰보 버섯"
 msgid ""
 "Prized by chefs and woodsmen alike, morel mushrooms are delicious but must "
 "be cooked before they are safe to eat."
-msgstr "나무꾼과 요리사들이 극찬하는 곰보버섯. 맛있지만 안전하게 먹으려면 반드시 조리를 해야한다."
+msgstr "요리사와 나무꾼이 입을 모아 극찬하는 곰보버섯입니다. 정말로 맛있지만, 안전을 위해 반드시 조리하여 먹어야 합니다."
 
 #: data/json/items/comestibles/mushroom.json
 msgid "cooked morel mushroom"
@@ -81711,10 +82083,10 @@ msgstr[0] "오염된 토네이도스"
 #. ~ Description for tainted tornado
 #: data/json/items/comestibles/mutagen.json
 msgid ""
-"A frothing slurry of alcohol-soaked zombie flesh and rotten blood, it smells"
-" almost as bad as it looks.  Will make you mutate uncontrollably."
+"A frothing slurry of alcohol-soaked zombie rotten blood, it smells almost as"
+" bad as it looks.  Will make you mutate uncontrollably."
 msgstr ""
-"알코올에 적신 좀비 살점과 썩은 피의 구역질나는 혼합물로, 외관만큼이나 냄새도 역겹습니다. 당신에게 통제할 수 없는 변이를 일으킵니다."
+"알코올에 적신 좀비의 썩은 피의 구역질나는 혼합물로, 외관만큼이나 냄새도 역겹습니다. 당신에게 통제할 수 없는 변이를 일으킵니다."
 
 #: data/json/items/comestibles/mutagen.json
 msgid "sewer brew"
@@ -82856,7 +83228,7 @@ msgstr "새콤한 붉은색 열매입니다. 건강에 좋습니다."
 #: data/json/items/comestibles/raw_fruit.json
 msgid "raspberries"
 msgid_plural "raspberries"
-msgstr[0] "라즈베리"
+msgstr[0] "산딸기기"
 
 #. ~ Description for {'str_sp': 'raspberries'}
 #: data/json/items/comestibles/raw_fruit.json
@@ -83673,7 +84045,7 @@ msgstr[0] "\"특제\" 샌드위치"
 #: data/json/items/comestibles/sandwich.json
 msgid "slob deluxe sandwich"
 msgid_plural "slob deluxe sandwiches"
-msgstr[0] ""
+msgstr[0] "디럭스 시발놈 샌드위치"
 
 #. ~ Conditional name for {'str': 'deluxe sandwich', 'str_pl': 'deluxe
 #. sandwiches'} when COMPONENT_ID matches butter
@@ -83683,7 +84055,7 @@ msgstr[0] ""
 #, c-format
 msgid "%s with butter"
 msgid_plural "%s with butters"
-msgstr[0] ""
+msgstr[0] "버터를 곁들인 %s"
 
 #. ~ Conditional name for {'str': 'deluxe sandwich', 'str_pl': 'deluxe
 #. sandwiches'} when COMPONENT_ID matches sauerkraut
@@ -83693,7 +84065,7 @@ msgstr[0] ""
 #, c-format
 msgid "%s with sauerkraut"
 msgid_plural "%s with sauerkrauts"
-msgstr[0] ""
+msgstr[0] "자우어크라우트를 곁들인 %s"
 
 #. ~ Conditional name for {'str': 'deluxe sandwich', 'str_pl': 'deluxe
 #. sandwiches'} when COMPONENT_ID matches soysauce
@@ -83703,7 +84075,7 @@ msgstr[0] ""
 #, c-format
 msgid "%s with soy sauce"
 msgid_plural "%s with soy sauces"
-msgstr[0] ""
+msgstr[0] "간장 뿌린 %s"
 
 #. ~ Conditional name for {'str': 'deluxe sandwich', 'str_pl': 'deluxe
 #. sandwiches'} when COMPONENT_ID matches seasoning_salt
@@ -83713,7 +84085,7 @@ msgstr[0] ""
 #, c-format
 msgid "%s with seasoned salt"
 msgid_plural "%s with seasoned salts"
-msgstr[0] ""
+msgstr[0] "맛소금 뿌린 %s"
 
 #. ~ Description for {'str': 'deluxe sandwich', 'str_pl': 'deluxe sandwiches'}
 #: data/json/items/comestibles/sandwich.json
@@ -83790,63 +84162,63 @@ msgstr[0] "소스 샌드위치"
 #: data/json/items/comestibles/sandwich.json
 msgid "ketchup sandwich"
 msgid_plural "ketchup sandwiches"
-msgstr[0] ""
+msgstr[0] "케첩 샌드위치"
 
 #. ~ Conditional name for {'str': 'sauce sandwich', 'str_pl': 'sauce
 #. sandwiches'} when COMPONENT_ID matches mayonnaise
 #: data/json/items/comestibles/sandwich.json
 msgid "mayonnaise sandwich"
 msgid_plural "mayonnaise sandwiches"
-msgstr[0] ""
+msgstr[0] "마요네즈 샌드위치"
 
 #. ~ Conditional name for {'str': 'sauce sandwich', 'str_pl': 'sauce
 #. sandwiches'} when COMPONENT_ID matches mustard
 #: data/json/items/comestibles/sandwich.json
 msgid "mustard sandwich"
 msgid_plural "mustard sandwiches"
-msgstr[0] ""
+msgstr[0] "겨자 샌드위치"
 
 #. ~ Conditional name for {'str': 'sauce sandwich', 'str_pl': 'sauce
 #. sandwiches'} when COMPONENT_ID matches horseradish
 #: data/json/items/comestibles/sandwich.json
 msgid "horseradish sandwich"
 msgid_plural "horseradish sandwiches"
-msgstr[0] ""
+msgstr[0] "서양고추냉이 샌드위치"
 
 #. ~ Conditional name for {'str': 'sauce sandwich', 'str_pl': 'sauce
 #. sandwiches'} when COMPONENT_ID matches butter
 #: data/json/items/comestibles/sandwich.json
 msgid "butter sandwich"
 msgid_plural "butter sandwiches"
-msgstr[0] ""
+msgstr[0] "버터 샌드위치"
 
 #. ~ Conditional name for {'str': 'sauce sandwich', 'str_pl': 'sauce
 #. sandwiches'} when COMPONENT_ID matches sauerkraut
 #: data/json/items/comestibles/sandwich.json
 msgid "sauerkraut sandwich"
 msgid_plural "sauerkraut sandwiches"
-msgstr[0] ""
+msgstr[0] "자우어크라우트 샌드위치"
 
 #. ~ Conditional name for {'str': 'sauce sandwich', 'str_pl': 'sauce
 #. sandwiches'} when COMPONENT_ID matches soysauce
 #: data/json/items/comestibles/sandwich.json
 msgid "soy sauce sandwich"
 msgid_plural "soy sauce sandwiches"
-msgstr[0] ""
+msgstr[0] "간장 샌드위치"
 
 #. ~ Conditional name for {'str': 'sauce sandwich', 'str_pl': 'sauce
 #. sandwiches'} when COMPONENT_ID matches sauce_pesto
 #: data/json/items/comestibles/sandwich.json
 msgid "pesto sandwich"
 msgid_plural "pesto sandwiches"
-msgstr[0] ""
+msgstr[0] "페스토 샌드위치"
 
 #. ~ Conditional name for {'str': 'sauce sandwich', 'str_pl': 'sauce
 #. sandwiches'} when COMPONENT_ID matches sauce_red
 #: data/json/items/comestibles/sandwich.json
 msgid "red sauce sandwich"
 msgid_plural "red sauce sandwiches"
-msgstr[0] ""
+msgstr[0] "레드 소스 샌드위치"
 
 #. ~ Description for {'str': 'sauce sandwich', 'str_pl': 'sauce sandwiches'}
 #: data/json/items/comestibles/sandwich.json
@@ -83876,16 +84248,6 @@ msgstr[0] "고기 샌드위치"
 msgid "slob sandwich"
 msgid_plural "slob sandwiches"
 msgstr[0] "시발놈 샌드위치"
-
-#. ~ Conditional name for {'str': 'meat sandwich', 'str_pl': 'meat
-#. sandwiches'} when COMPONENT_ID matches mutant
-#. ~ Conditional name for meat soup when COMPONENT_ID matches mutant
-#: data/json/items/comestibles/sandwich.json
-#: data/json/items/comestibles/soup.json
-#, c-format
-msgid "mutant %s"
-msgid_plural "mutant %s"
-msgstr[0] "돌연변이 %s"
 
 #. ~ Description for {'str': 'meat sandwich', 'str_pl': 'meat sandwiches'}
 #: data/json/items/comestibles/sandwich.json
@@ -83972,14 +84334,14 @@ msgstr[0] "유제품 없는 디럭스 샌드위치"
 #: data/json/items/comestibles/sandwich.json
 msgid "dairy-free \"deluxe\" sandwich"
 msgid_plural "dairy-free \"deluxe\" sandwiches"
-msgstr[0] ""
+msgstr[0] "유제품 없는 \"디럭스\" 샌드위치"
 
 #. ~ Conditional name for {'str': 'dairy-free deluxe sandwich', 'str_pl':
 #. 'dairy-free deluxe sandwiches'} when FLAG matches CANNIBALISM
 #: data/json/items/comestibles/sandwich.json
 msgid "dairy-free slob deluxe sandwich"
 msgid_plural "dairy-free slob deluxe sandwiches"
-msgstr[0] ""
+msgstr[0] "유제품 없는 디럭스 시발놈 샌드위치"
 
 #. ~ Description for {'str': 'dairy-free deluxe sandwich', 'str_pl': 'dairy-
 #. free deluxe sandwiches'}
@@ -84867,6 +85229,19 @@ msgstr[0] "싸가지 수프"
 #: data/json/items/comestibles/soup.json
 msgid "A nutritious and delicious hearty meat soup."
 msgstr "따뜻한 고기 수프. 맛있고 영양가도 풍부합니다."
+
+#: data/json/items/comestibles/soup.json
+msgid "blood soup"
+msgid_plural "blood soups"
+msgstr[0] "선지 수프"
+
+#. ~ Description for blood soup
+#: data/json/items/comestibles/soup.json
+msgid ""
+"Soup made of animal blood and vinegar.  Not something everyone likes, but a "
+"delicacy in parts of Germany, also named \"Schwarzsauer\"."
+msgstr ""
+"동물 혈액과 식초로 만든 수프입니다. 모두가 좋아하지는 않지만, 독일 일부 지방에서는 슈바르트자우어라고 부르며 즐겨먹는 미식입니다."
 
 #: data/json/items/comestibles/soup.json
 msgid "fish soup"
@@ -85869,182 +86244,182 @@ msgstr[0] "과일 팬케이크"
 #: data/json/items/comestibles/wheat.json
 msgid "apple pancake"
 msgid_plural "apple pancake"
-msgstr[0] ""
+msgstr[0] "사과 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. apricot
 #: data/json/items/comestibles/wheat.json
 msgid "apricot pancake"
 msgid_plural "apricot pancake"
-msgstr[0] ""
+msgstr[0] "살구 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. banana
 #: data/json/items/comestibles/wheat.json
 msgid "banana pancake"
 msgid_plural "banana pancake"
-msgstr[0] ""
+msgstr[0] "바나나 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. blackberries
 #: data/json/items/comestibles/wheat.json
 msgid "blackberry pancake"
 msgid_plural "blackberry pancake"
-msgstr[0] ""
+msgstr[0] "블랙베리 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. blueberries
 #: data/json/items/comestibles/wheat.json
 msgid "blueberry pancake"
 msgid_plural "blueberry pancake"
-msgstr[0] ""
+msgstr[0] "블루베리 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. cherries
 #: data/json/items/comestibles/wheat.json
 msgid "cherry pancake"
 msgid_plural "cherry pancake"
-msgstr[0] ""
+msgstr[0] "체리 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. cranberries
 #: data/json/items/comestibles/wheat.json
 msgid "cranberry pancake"
 msgid_plural "cranberry pancake"
-msgstr[0] ""
+msgstr[0] "크랜베리 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. grapefruit
 #: data/json/items/comestibles/wheat.json
 msgid "grapefruit pancake"
 msgid_plural "grapefruit pancake"
-msgstr[0] ""
+msgstr[0] "자몽 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. grapes
 #: data/json/items/comestibles/wheat.json
 msgid "grape pancake"
 msgid_plural "grape pancake"
-msgstr[0] ""
+msgstr[0] "포도 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. kiwi
 #: data/json/items/comestibles/wheat.json
 msgid "kiwi pancake"
 msgid_plural "kiwi pancake"
-msgstr[0] ""
+msgstr[0] "키위 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. mango
 #: data/json/items/comestibles/wheat.json
 msgid "mango pancake"
 msgid_plural "mango pancake"
-msgstr[0] ""
+msgstr[0] "망고 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. melon
 #: data/json/items/comestibles/wheat.json
 msgid "melon pancake"
 msgid_plural "melon pancake"
-msgstr[0] ""
+msgstr[0] "멜론 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. orange
 #: data/json/items/comestibles/wheat.json
 msgid "orange pancake"
 msgid_plural "orange pancake"
-msgstr[0] ""
+msgstr[0] "오렌지 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. papaya
 #: data/json/items/comestibles/wheat.json
 msgid "papaya pancake"
 msgid_plural "papaya pancake"
-msgstr[0] ""
+msgstr[0] "파파야 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. peach
 #: data/json/items/comestibles/wheat.json
 msgid "peach pancake"
 msgid_plural "peach pancake"
-msgstr[0] ""
+msgstr[0] "복숭아 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. pear
 #: data/json/items/comestibles/wheat.json
 msgid "pear pancake"
 msgid_plural "pear pancake"
-msgstr[0] ""
+msgstr[0] "배 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. pineapple
 #: data/json/items/comestibles/wheat.json
 msgid "pineapple pancake"
 msgid_plural "pineapple pancake"
-msgstr[0] ""
+msgstr[0] "파인애플 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. plums
 #: data/json/items/comestibles/wheat.json
 msgid "plum pancake"
 msgid_plural "plum pancake"
-msgstr[0] ""
+msgstr[0] "자두 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. pomegranate
 #: data/json/items/comestibles/wheat.json
 msgid "pomegranate pancake"
 msgid_plural "pomegranate pancake"
-msgstr[0] ""
+msgstr[0] "석류 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. raspberries
 #: data/json/items/comestibles/wheat.json
 msgid "raspberry pancake"
 msgid_plural "raspberry pancake"
-msgstr[0] ""
+msgstr[0] "산딸기 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. rose_hips
 #: data/json/items/comestibles/wheat.json
 msgid "rose_hip pancake"
 msgid_plural "rose_hip pancake"
-msgstr[0] ""
+msgstr[0] "로즈힙 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. strawberries
 #: data/json/items/comestibles/wheat.json
 msgid "strawberry pancake"
 msgid_plural "strawberry pancake"
-msgstr[0] ""
+msgstr[0] "딸기 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. huckleberries
 #: data/json/items/comestibles/wheat.json
 msgid "huckleberry pancake"
 msgid_plural "huckleberry pancake"
-msgstr[0] ""
+msgstr[0] "엘더베리 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. mulberries
 #: data/json/items/comestibles/wheat.json
 msgid "mulberry pancake"
 msgid_plural "mulberry pancake"
-msgstr[0] ""
+msgstr[0] "오디 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. elderberries
 #: data/json/items/comestibles/wheat.json
 msgid "elderberry pancake"
 msgid_plural "elderberry pancake"
-msgstr[0] ""
+msgstr[0] "엘더베리 팬케이크"
 
 #. ~ Conditional name for {'str': 'fruit pancake'} when COMPONENT_ID matches
 #. watermelon
 #: data/json/items/comestibles/wheat.json
 msgid "watermelon pancake"
 msgid_plural "watermelon pancake"
-msgstr[0] ""
+msgstr[0] "수박 팬케이크"
 
 #. ~ Description for {'str': 'fruit pancake'}
 #: data/json/items/comestibles/wheat.json
@@ -86086,157 +86461,157 @@ msgstr[0] "과일 와플"
 #: data/json/items/comestibles/wheat.json
 msgid "apple waffle"
 msgid_plural "apple waffle"
-msgstr[0] ""
+msgstr[0] "사과 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches apricot
 #: data/json/items/comestibles/wheat.json
 msgid "apricot waffle"
 msgid_plural "apricot waffle"
-msgstr[0] ""
+msgstr[0] "살구 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches banana
 #: data/json/items/comestibles/wheat.json
 msgid "banana waffle"
 msgid_plural "banana waffle"
-msgstr[0] ""
+msgstr[0] "바나나 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches blackberries
 #: data/json/items/comestibles/wheat.json
 msgid "blackberry waffle"
 msgid_plural "blackberry waffle"
-msgstr[0] ""
+msgstr[0] "블랙베리 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches blueberries
 #: data/json/items/comestibles/wheat.json
 msgid "blueberry waffle"
 msgid_plural "blueberry waffle"
-msgstr[0] ""
+msgstr[0] "블루베리 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches cherries
 #: data/json/items/comestibles/wheat.json
 msgid "cherry waffle"
 msgid_plural "cherry waffle"
-msgstr[0] ""
+msgstr[0] "체리 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches cranberries
 #: data/json/items/comestibles/wheat.json
 msgid "cranberry waffle"
 msgid_plural "cranberry waffle"
-msgstr[0] ""
+msgstr[0] "크랜베리 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches grapefruit
 #: data/json/items/comestibles/wheat.json
 msgid "grapefruit waffle"
 msgid_plural "grapefruit waffle"
-msgstr[0] ""
+msgstr[0] "자몽 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches grapes
 #: data/json/items/comestibles/wheat.json
 msgid "grape waffle"
 msgid_plural "grape waffle"
-msgstr[0] ""
+msgstr[0] "포도 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches kiwi
 #: data/json/items/comestibles/wheat.json
 msgid "kiwi waffle"
 msgid_plural "kiwi waffle"
-msgstr[0] ""
+msgstr[0] "키위 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches mango
 #: data/json/items/comestibles/wheat.json
 msgid "mango waffle"
 msgid_plural "mango waffle"
-msgstr[0] ""
+msgstr[0] "망고 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches melon
 #: data/json/items/comestibles/wheat.json
 msgid "melon waffle"
 msgid_plural "melon waffle"
-msgstr[0] ""
+msgstr[0] "멜론 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches orange
 #: data/json/items/comestibles/wheat.json
 msgid "orange waffle"
 msgid_plural "orange waffle"
-msgstr[0] ""
+msgstr[0] "오렌지 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches papaya
 #: data/json/items/comestibles/wheat.json
 msgid "papaya waffle"
 msgid_plural "papaya waffle"
-msgstr[0] ""
+msgstr[0] "파파야 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches peach
 #: data/json/items/comestibles/wheat.json
 msgid "peach waffle"
 msgid_plural "peach waffle"
-msgstr[0] ""
+msgstr[0] "복숭아 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches pear
 #: data/json/items/comestibles/wheat.json
 msgid "pear waffle"
 msgid_plural "pear waffle"
-msgstr[0] ""
+msgstr[0] "배 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches pineapple
 #: data/json/items/comestibles/wheat.json
 msgid "pineapple waffle"
 msgid_plural "pineapple waffle"
-msgstr[0] ""
+msgstr[0] "파인애플 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches plums
 #: data/json/items/comestibles/wheat.json
 msgid "plum waffle"
 msgid_plural "plum waffle"
-msgstr[0] ""
+msgstr[0] "자두 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches pomegranate
 #: data/json/items/comestibles/wheat.json
 msgid "pomegranate waffle"
 msgid_plural "pomegranate waffle"
-msgstr[0] ""
+msgstr[0] "석류 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches raspberries
 #: data/json/items/comestibles/wheat.json
 msgid "raspberry waffle"
 msgid_plural "raspberry waffle"
-msgstr[0] ""
+msgstr[0] "산딸기 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches rose_hips
 #: data/json/items/comestibles/wheat.json
 msgid "rose_hip waffle"
 msgid_plural "rose_hip waffle"
-msgstr[0] ""
+msgstr[0] "로즈힙 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches strawberries
 #: data/json/items/comestibles/wheat.json
 msgid "strawberry waffle"
 msgid_plural "strawberry waffle"
-msgstr[0] ""
+msgstr[0] "딸기 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches huckleberries
 #: data/json/items/comestibles/wheat.json
 msgid "huckleberry waffle"
 msgid_plural "huckleberry waffle"
-msgstr[0] ""
+msgstr[0] "허클베리 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches mulberries
 #: data/json/items/comestibles/wheat.json
 msgid "mulberry waffle"
 msgid_plural "mulberry waffle"
-msgstr[0] ""
+msgstr[0] "오디 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches elderberries
 #: data/json/items/comestibles/wheat.json
 msgid "elderberry waffle"
 msgid_plural "elderberry waffle"
-msgstr[0] ""
+msgstr[0] "엘더베리 와플"
 
 #. ~ Conditional name for fruit waffle when COMPONENT_ID matches watermelon
 #: data/json/items/comestibles/wheat.json
 msgid "watermelon waffle"
 msgid_plural "watermelon waffle"
-msgstr[0] ""
+msgstr[0] "수박 와플"
 
 #. ~ Description for fruit waffle
 #: data/json/items/comestibles/wheat.json
@@ -86265,157 +86640,157 @@ msgstr[0] "과일 파이"
 #: data/json/items/comestibles/wheat.json
 msgid "apple pie"
 msgid_plural "apple pie"
-msgstr[0] ""
+msgstr[0] "사과 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches apricot
 #: data/json/items/comestibles/wheat.json
 msgid "apricot pie"
 msgid_plural "apricot pie"
-msgstr[0] ""
+msgstr[0] "살구 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches banana
 #: data/json/items/comestibles/wheat.json
 msgid "banana pie"
 msgid_plural "banana pie"
-msgstr[0] ""
+msgstr[0] "바나나 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches blackberries
 #: data/json/items/comestibles/wheat.json
 msgid "blackberry pie"
 msgid_plural "blackberry pie"
-msgstr[0] ""
+msgstr[0] "블랙베리 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches blueberries
 #: data/json/items/comestibles/wheat.json
 msgid "blueberry pie"
 msgid_plural "blueberry pie"
-msgstr[0] ""
+msgstr[0] "블루베리 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches cherries
 #: data/json/items/comestibles/wheat.json
 msgid "cherry pie"
 msgid_plural "cherry pie"
-msgstr[0] ""
+msgstr[0] "체리 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches cranberries
 #: data/json/items/comestibles/wheat.json
 msgid "cranberry pie"
 msgid_plural "cranberry pie"
-msgstr[0] ""
+msgstr[0] "크랜베리 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches grapefruit
 #: data/json/items/comestibles/wheat.json
 msgid "grapefruit pie"
 msgid_plural "grapefruit pie"
-msgstr[0] ""
+msgstr[0] "자몽 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches grapes
 #: data/json/items/comestibles/wheat.json
 msgid "grape pie"
 msgid_plural "grape pie"
-msgstr[0] ""
+msgstr[0] "포도 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches kiwi
 #: data/json/items/comestibles/wheat.json
 msgid "kiwi pie"
 msgid_plural "kiwi pie"
-msgstr[0] ""
+msgstr[0] "키위 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches mango
 #: data/json/items/comestibles/wheat.json
 msgid "mango pie"
 msgid_plural "mango pie"
-msgstr[0] ""
+msgstr[0] "망고 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches melon
 #: data/json/items/comestibles/wheat.json
 msgid "melon pie"
 msgid_plural "melon pie"
-msgstr[0] ""
+msgstr[0] "멜론 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches orange
 #: data/json/items/comestibles/wheat.json
 msgid "orange pie"
 msgid_plural "orange pie"
-msgstr[0] ""
+msgstr[0] "오렌지 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches papaya
 #: data/json/items/comestibles/wheat.json
 msgid "papaya pie"
 msgid_plural "papaya pie"
-msgstr[0] ""
+msgstr[0] "파파야 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches peach
 #: data/json/items/comestibles/wheat.json
 msgid "peach pie"
 msgid_plural "peach pie"
-msgstr[0] ""
+msgstr[0] "복숭아 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches pear
 #: data/json/items/comestibles/wheat.json
 msgid "pear pie"
 msgid_plural "pear pie"
-msgstr[0] ""
+msgstr[0] "배 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches pineapple
 #: data/json/items/comestibles/wheat.json
 msgid "pineapple pie"
 msgid_plural "pineapple pie"
-msgstr[0] ""
+msgstr[0] "파인애플 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches plums
 #: data/json/items/comestibles/wheat.json
 msgid "plum pie"
 msgid_plural "plum pie"
-msgstr[0] ""
+msgstr[0] "자두 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches pomegranate
 #: data/json/items/comestibles/wheat.json
 msgid "pomegranate pie"
 msgid_plural "pomegranate pie"
-msgstr[0] ""
+msgstr[0] "석류 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches raspberries
 #: data/json/items/comestibles/wheat.json
 msgid "raspberry pie"
 msgid_plural "raspberry pie"
-msgstr[0] ""
+msgstr[0] "산딸기 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches rose_hips
 #: data/json/items/comestibles/wheat.json
 msgid "rose_hip pie"
 msgid_plural "rose_hip pie"
-msgstr[0] ""
+msgstr[0] "로즈힙 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches strawberries
 #: data/json/items/comestibles/wheat.json
 msgid "strawberry pie"
 msgid_plural "strawberry pie"
-msgstr[0] ""
+msgstr[0] "딸기 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches huckleberries
 #: data/json/items/comestibles/wheat.json
 msgid "huckleberry pie"
 msgid_plural "huckleberry pie"
-msgstr[0] ""
+msgstr[0] "허클베리 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches mulberries
 #: data/json/items/comestibles/wheat.json
 msgid "mulberry pie"
 msgid_plural "mulberry pie"
-msgstr[0] ""
+msgstr[0] "오디 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches elderberries
 #: data/json/items/comestibles/wheat.json
 msgid "elderberry pie"
 msgid_plural "elderberry pie"
-msgstr[0] ""
+msgstr[0] "엘더베리 파이"
 
 #. ~ Conditional name for fruit pie when COMPONENT_ID matches watermelon
 #: data/json/items/comestibles/wheat.json
 msgid "watermelon pie"
 msgid_plural "watermelon pie"
-msgstr[0] ""
+msgstr[0] "수박 파이"
 
 #. ~ Description for fruit pie
 #: data/json/items/comestibles/wheat.json
@@ -93377,6 +93752,8 @@ msgid ""
 "most ammo subsonic at the cost of terminal performance.  It is not as "
 "effective as modern designs."
 msgstr ""
+"H&K MP5SD용 내부 소음기입니다. 총열에 포함된 여러 구멍과 연결된 넓은 확장 공간을 통해 탄속을 감소시켜, 단말 성능을 대가로 "
+"대부분의 총탄을 아음속으로 만듭니다. 현대 부품만큼 효과적이지는 않습니다."
 
 #: data/json/items/gunmod/muzzle.json
 msgid "compact suppressor"
@@ -96970,7 +97347,7 @@ msgstr "펼치기"
 #. batons (retracted)'}.
 #: data/json/items/melee/bludgeons.json
 msgid "You snap open your PR-24 baton."
-msgstr "PR-24 삼단봉을 휘둘러서 폈다."
+msgstr "PR-24 삼단봉을 휘둘러서 폅니다."
 
 #. ~ Description for {'str': 'PR-24 baton (retracted)', 'str_pl': 'PR-24
 #. batons (retracted)'}
@@ -97230,13 +97607,13 @@ msgstr "전투용으로 만들어진 중세의 망치. 특이한 모양과 밸�
 #: data/json/items/melee/bludgeons.json
 msgid "extendable quarterstaff (retracted)"
 msgid_plural "extendable quarterstaves (retracted)"
-msgstr[0] ""
+msgstr[0] "연장형 육척봉 (접힘)"
 
 #. ~ Use action msg for {'str': 'extendable quarterstaff (retracted)',
 #. 'str_pl': 'extendable quarterstaves (retracted)'}.
 #: data/json/items/melee/bludgeons.json
 msgid "You snap open your staff."
-msgstr ""
+msgstr "육척봉을 휘둘러서 폅니다."
 
 #. ~ Description for {'str': 'extendable quarterstaff (retracted)', 'str_pl':
 #. 'extendable quarterstaves (retracted)'}
@@ -97247,17 +97624,19 @@ msgid ""
 "lightweight but less sturdy than a more traditional staff.  It is currently "
 "retracted."
 msgstr ""
+"쉽게 보관할 수 있도록 배턴 크기까지 줄일 수 있게 주문 제작된 단축형 강철 육척봉입니다. 내부가 비어있는 덕분에 일반적인 지팡이에 비해"
+" 훨씬 가볍지만, 내구성은 떨어집니다. 현재 접힌 상태입니다."
 
 #: data/json/items/melee/bludgeons.json
 msgid "extendable quarterstaff (extended)"
 msgid_plural "extendable quarterstaves (extended)"
-msgstr[0] ""
+msgstr[0] "연장형 육척봉 (펴짐)"
 
 #. ~ Use action msg for {'str': 'extendable quarterstaff (extended)',
 #. 'str_pl': 'extendable quarterstaves (extended)'}.
 #: data/json/items/melee/bludgeons.json
 msgid "You retract your staff."
-msgstr ""
+msgstr "육척봉을 접습니다."
 
 #. ~ Description for {'str': 'extendable quarterstaff (extended)', 'str_pl':
 #. 'extendable quarterstaves (extended)'}
@@ -97268,6 +97647,8 @@ msgid ""
 "lightweight but less sturdy than a more traditional staff.  It is currently "
 "extended."
 msgstr ""
+"쉽게 보관할 수 있도록 배턴 크기까지 줄일 수 있게 주문 제작된 단축형 강철 육척봉입니다. 내부가 비어있는 덕분에 일반적인 지팡이에 비해"
+" 훨씬 가볍지만, 내구성은 떨어집니다. 현재 펴진 상태입니다."
 
 #: data/json/items/melee/fake.json
 msgid "bionic claws"
@@ -103886,7 +104267,7 @@ msgstr "작은 주머니 칼. 전투에 쓰기 좋지는 않지만 없는 것보
 #: data/json/items/tool/knives.json
 msgid "primitive knife"
 msgid_plural "primitive knives"
-msgstr[0] ""
+msgstr[0] "원시적 칼"
 
 #. ~ Conditional name for {'str': 'primitive knife', 'str_pl': 'primitive
 #. knives'} when COMPONENT_ID matches rock
@@ -103900,7 +104281,7 @@ msgstr[0] "돌 칼"
 #: data/json/items/tool/knives.json
 msgid "ceramic knife"
 msgid_plural "ceramic knives"
-msgstr[0] ""
+msgstr[0] "도자기 칼"
 
 #. ~ Description for {'str': 'primitive knife', 'str_pl': 'primitive knives'}
 #: data/json/items/tool/knives.json
@@ -103908,6 +104289,7 @@ msgid ""
 "This is a sharpened stone or shard of ceramic set into a hollowed handle.  "
 "Not nearly as usable as a proper knife, but it's better than nothing."
 msgstr ""
+"날카롭게 갈아낸 돌이나 도자기 파편을 속이 빈 손잡이 안에 끼운 것입니다. 제대로 된 칼만큼 유용하지는 않지만, 없는 것보다는 낫습니다."
 
 #: data/json/items/tool/landscaping.json
 msgid "digging stick"
@@ -103947,7 +104329,7 @@ msgstr "농사지을 때 쓰는 도구입니다. 땅을 개간하여 농지로 �
 #: data/json/items/tool/landscaping.json
 msgid "primitive shovel"
 msgid_plural "primitive shovels"
-msgstr[0] ""
+msgstr[0] "원시적 삽"
 
 #. ~ Conditional name for {'str': 'primitive shovel'} when COMPONENT_ID
 #. matches rock
@@ -103961,14 +104343,14 @@ msgstr[0] "돌 삽"
 #: data/json/items/tool/landscaping.json
 msgid "ceramic shovel"
 msgid_plural "ceramic shovels"
-msgstr[0] ""
+msgstr[0] "도자기 삽"
 
 #. ~ Description for {'str': 'primitive shovel'}
 #: data/json/items/tool/landscaping.json
 msgid ""
 "This is a flattened stone or ceramic shard affixed to a stick.  It works "
 "passably well as a shovel but really can't compare to a real shovel."
-msgstr ""
+msgstr "투박하게 성형한 돌판이나 도자기판을 막대에 붙인 것입니다. 삽으로 쓰기에 충분하지만, 진짜 삽만큼 쓸만하지는 않습니다."
 
 #: data/json/items/tool/landscaping.json
 msgid "scythe"
@@ -107282,7 +107664,7 @@ msgstr "전기톱이 작동 중이며 굉음을 내고 있습니다. 사용하�
 #: data/json/items/tool/woodworking.json
 msgid "primitive adze"
 msgid_plural "primitive adzes"
-msgstr[0] ""
+msgstr[0] "원시적 자귀"
 
 #. ~ Conditional name for {'str': 'primitive adze'} when COMPONENT_ID matches
 #. rock
@@ -107296,18 +107678,18 @@ msgstr[0] "돌 자귀"
 #: data/json/items/tool/woodworking.json
 msgid "ceramic adze"
 msgid_plural "ceramic adzes"
-msgstr[0] ""
+msgstr[0] "도자기 자귀"
 
 #. ~ Description for {'str': 'primitive adze'}
 #: data/json/items/tool/woodworking.json
 msgid ""
 "This is a stone or ceramic adze, somewhat useful for smoothing wood objects."
-msgstr ""
+msgstr "나무를 매끄럽게 다듬는데 사용하는 돌 또는 도자기 자귀입니다."
 
 #: data/json/items/tool/woodworking.json
 msgid "primtitive axe"
 msgid_plural "primtitive axes"
-msgstr[0] ""
+msgstr[0] "원시적 도끼"
 
 #. ~ Conditional name for {'str': 'primtitive axe'} when COMPONENT_ID matches
 #. rock
@@ -107321,7 +107703,7 @@ msgstr[0] "돌 도끼"
 #: data/json/items/tool/woodworking.json
 msgid "ceramic axe"
 msgid_plural "ceramic axes"
-msgstr[0] ""
+msgstr[0] "도자기 도끼"
 
 #. ~ Description for {'str': 'primtitive axe'}
 #: data/json/items/tool/woodworking.json
@@ -107357,7 +107739,7 @@ msgstr "짧은 돌 끌입니다. 돌, 나무, 혹은 부드러운 금속에 뭔�
 #: data/json/items/tool/woodworking.json
 msgid "primitive tomahawk"
 msgid_plural "primitive tomahawks"
-msgstr[0] ""
+msgstr[0] "원시적 토마호크"
 
 #. ~ Conditional name for {'str': 'primitive tomahawk'} when COMPONENT_ID
 #. matches rock
@@ -107371,14 +107753,14 @@ msgstr[0] "돌 토마호크"
 #: data/json/items/tool/woodworking.json
 msgid "ceramic tomahawk"
 msgid_plural "ceramic tomahawks"
-msgstr[0] ""
+msgstr[0] "도자기 토마호크"
 
 #. ~ Conditional name for {'str': 'primitive tomahawk'} when COMPONENT_ID
 #. matches bone
 #: data/json/items/tool/woodworking.json
 msgid "bone tomahawk"
 msgid_plural "bone tomahawks"
-msgstr[0] ""
+msgstr[0] "뼈 토마호크"
 
 #. ~ Description for {'str': 'primitive tomahawk'}
 #: data/json/items/tool/woodworking.json
@@ -107403,7 +107785,7 @@ msgstr "구리로 간단히 만든 경량 전투도끼입니다. 돌로 만든 �
 #: data/json/items/tool/workshop.json
 msgid "pallet of wet adobe bricks"
 msgid_plural "pallets of wet adobe bricks"
-msgstr[0] "축축한 어도비 벽돌 / 팔레트"
+msgstr[0] "축축한 어도비 벽돌 팔레트"
 
 #. ~ Use action msg for {'str': 'pallet of wet adobe bricks', 'str_pl':
 #. 'pallets of wet adobe bricks'}.
@@ -107422,12 +107804,12 @@ msgstr "이 벽돌은 아직 무게를 견디지 못할 정도로 축축합니�
 #: data/json/items/tool/workshop.json
 msgid ""
 "A pallet full of heavy mud bricks which need to dry slowly to be usable."
-msgstr "무거운 진흙 벽돌로 가득 찬 팔레트.  사용하려면 천천히 건조해야 합니다."
+msgstr "무거운 진흙 벽돌로 가득 찬 팔레트입니다. 사용하려면 천천히 건조해야 합니다."
 
 #: data/json/items/tool/workshop.json
 msgid "pallet of dry adobe bricks"
 msgid_plural "pallets of dry adobe bricks"
-msgstr[0] "건조된 어도비 벽돌 / 팔레트"
+msgstr[0] "건조된 어도비 벽돌 팔레트"
 
 #. ~ Description for {'str': 'pallet of dry adobe bricks', 'str_pl': 'pallets
 #. of dry adobe bricks'}
@@ -107441,19 +107823,19 @@ msgstr ""
 #: data/json/items/tool/workshop.json
 msgid "pallet of wet ceramic"
 msgid_plural "pallets of wet ceramic"
-msgstr[0] ""
+msgstr[0] "축축한 도자기 팔레트"
 
 #. ~ Use action msg for {'str': 'pallet of wet ceramic', 'str_pl': 'pallets of
 #. wet ceramic'}.
 #: data/json/items/tool/workshop.json
 msgid "You test the ceramic, and it's the right consistency to use."
-msgstr ""
+msgstr "도자기를 시험해보니 충분히 단단하게 굳은 것 같습니다."
 
 #. ~ Use action not_ready_msg for {'str': 'pallet of wet ceramic', 'str_pl':
 #. 'pallets of wet ceramic'}.
 #: data/json/items/tool/workshop.json
 msgid "The ceramic is still too damp to be used."
-msgstr ""
+msgstr "이 도자기는 이대로 쓰기에는 아직 축축합니다."
 
 #. ~ Description for {'str': 'pallet of wet ceramic', 'str_pl': 'pallets of
 #. wet ceramic'}
@@ -107461,12 +107843,12 @@ msgstr ""
 msgid ""
 "A pallet full of crushed wet ceramic, which needs to dry slowly to be "
 "usable."
-msgstr ""
+msgstr "곱게 으깨 푹 적신 도자기로 가득 찬 팔레트입니다. 사용하려면 천천히 건조해야 합니다."
 
 #: data/json/items/tool/workshop.json
 msgid "pallet of ceramic clay"
 msgid_plural "pallets of ceramic clay"
-msgstr[0] ""
+msgstr[0] "건조된 도자기 팔레트"
 
 #. ~ Description for {'str': 'pallet of ceramic clay', 'str_pl': 'pallets of
 #. ceramic clay'}
@@ -107474,7 +107856,7 @@ msgstr[0] ""
 msgid ""
 "A pallet of ceramic clay which is now ready to be made into pottery.  "
 "Disassemble it to retrieve your sheet, frame and crafting supplies."
-msgstr ""
+msgstr "그릇 따위를 만들기에 적합한 도자기 팔레트입니다. 분해하여 팔레트 틀과 도자기를 회수할 수 있습니다."
 
 #: data/json/items/tool/workshop.json
 msgid "acetylene-gas machine"
@@ -109421,7 +109803,7 @@ msgstr "바람의 힘을 전력으로 전환하는 대형 터빈입니다."
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "water wheel"
 msgid_plural "water wheels"
-msgstr[0] "물레방아"
+msgstr[0] "수력발전기"
 
 #. ~ Description for {'str': 'water wheel'}
 #: data/json/items/vehicle/mills.json
@@ -109429,13 +109811,13 @@ msgstr[0] "물레방아"
 msgid ""
 "A water wheel.  Will slowly recharge the vehicle's electrical power when "
 "built over shallow moving water."
-msgstr "물레방아입니다. 흐르고 있는 얕은 물 위에 건설되면 차량의 전력을 서서히 충전시킬 것입니다."
+msgstr "수력발전기입니다. 흐르고 있는 얕은 물 위에 건설되면 차량의 전력을 서서히 충전시킬 것입니다."
 
 #: data/json/items/vehicle/mills.json
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "large water wheel"
 msgid_plural "large water wheels"
-msgstr[0] "대형 물레방아"
+msgstr[0] "대형 수력발전기"
 
 #. ~ Description for {'str': 'large water wheel'}
 #: data/json/items/vehicle/mills.json
@@ -109443,7 +109825,7 @@ msgstr[0] "대형 물레방아"
 msgid ""
 "A large water wheel with wooden supports.  Will recharge the vehicle's "
 "electrical power when built over shallow moving water."
-msgstr "나무 지지대가 달린 커다란 물레방아입니다. 흐르고 있는 얕은 물 위에 건설되면 차량의 전력을 서서히 충전시킬 것입니다."
+msgstr "나무 지지대가 달린 커다란 수력발전기입니다. 흐르고 있는 얕은 물 위에 건설되면 차량의 전력을 서서히 충전시킬 것입니다."
 
 #: data/json/items/vehicle/motors.json data/json/vehicleparts/motor.json
 msgid "electric motor"
@@ -114170,7 +114552,7 @@ msgstr "다람쥐 크기의 뚱뚱한 흰색 애벌레입니다. 입에 달린 �
 #: data/json/monsters/insect_spider.json
 msgid "dermatik midwife"
 msgid_plural "dermatik midwives"
-msgstr[0] ""
+msgstr[0] "더마틱 산파"
 
 #. ~ Description for {'str': 'dermatik midwife', 'str_pl': 'dermatik
 #. midwives'}
@@ -114181,6 +114563,8 @@ msgid ""
 "dragged home and ensuring they don't perish before their purpose is "
 "fulfilled."
 msgstr ""
+"한층 더 크게 자라났으나 날개와 산란관이 자매들에게 물어뜯겨진 더마틱입니다. 지금은 둥지를 경비하며 불운한 숙주들이 끌려오면 그 목적이 "
+"달성되기 전까지 죽지 않도록 지키는 역할을 합니다."
 
 #: data/json/monsters/insect_spider.json
 msgid "motionless deer"
@@ -128131,6 +128515,11 @@ msgid "Why should I share my equipment with you?"
 msgstr "왜 내가 너하고 장비를 나눠야 되는데?"
 
 #: data/json/npcs/TALK_COMMON_OTHER.json
+msgid ""
+"These aren't enough to finish the job, you want me to succeed, don't you…"
+msgstr ""
+
+#: data/json/npcs/TALK_COMMON_OTHER.json
 msgid "Okay, fine."
 msgstr "좋아, 알았어."
 
@@ -128233,12 +128622,8 @@ msgid "Smart choice."
 msgstr "똑똑하군."
 
 #: data/json/npcs/TALK_COMMON_OTHER.json
-msgid "<no>, and if you ask again, <ill_kill_you>!"
-msgstr "<no>, 또 물어보면 <ill_kill_you>!"
-
-#: data/json/npcs/TALK_COMMON_OTHER.json
-msgid "<no><punc> <fuck_you>!"
-msgstr "<no>, <fuck_you><punc>!"
+msgid "<no>."
+msgstr ""
 
 #: data/json/npcs/TALK_COMMON_OTHER.json
 msgid "Okay, okay, sorry."
@@ -143123,8 +143508,10 @@ msgstr "구동 벨트 구하기"
 
 #. ~ Description for mission 'Find Drive Belts'
 #: data/json/npcs/lumberyard/lumbermill_missions.json
-msgid "Obtain 3 drive belts in exchange for credit with the loggers."
-msgstr "구동 벨트 3개를 구해서 벌목꾼의 보상과 교환하세요."
+msgid ""
+"Obtain 3 drive belts or makeshift drive belts in exchange for credit with "
+"the loggers."
+msgstr "구동 벨트 또는 급조된 구동 벨트 3개를 구해서 벌목꾼의 보상과 교환하세요."
 
 #: data/json/npcs/lumberyard/lumbermill_missions.json
 msgid "I need three drive belts."
@@ -143254,8 +143641,10 @@ msgstr "담요 6장 구하기"
 
 #. ~ Description for mission 'Find 6 Blankets'
 #: data/json/npcs/lumberyard/lumbermill_missions.json
-msgid "Obtain 6 blankets or quilts in exchange for credit with the loggers."
-msgstr "담요 또는 킬트 6장을 구해 벌목꾼의 보상과 교환하세요."
+msgid ""
+"Obtain 6 blankets, fur blankets, electric blankets etc in exchange for "
+"credit with the loggers."
+msgstr "담요, 털 담요, 전기 담요 등을 6장 구해서 벌목꾼의 보상과 교환하세요."
 
 #: data/json/npcs/lumberyard/lumbermill_missions.json
 msgid "I need 6 blankets."
@@ -143266,14 +143655,16 @@ msgid ""
 "Now that we should be safe from harm, I decided to start adding a few things"
 " to this place.  Right now, we don't have anywhere to comfortably sleep, so "
 "we're building a small sleeping quarter.  We just need 6 big, warm blankets "
-"or quilts to finish our project."
+"to finish our project."
 msgstr ""
 "덕분에 다들 안전하게 지낼 수 있게 됐으니, 이것저것 필요한 것들을 마련해보기로 했어. 지금 당장은 편히 잘만한 곳이 없으니, 작은 "
-"침실을 하나 만들 계획이야. 크고 따뜻한 담요나 킬트 6장이 있으면 충분할 것 같아."
+"침실을 하나 만들 계획이야. 크고 따뜻한 담요 6장이 있으면 충분할 것 같아."
 
 #: data/json/npcs/lumberyard/lumbermill_missions.json
-msgid "I figure any hotel or motel in town should have lots of blankets."
-msgstr "마을에 있는 아무 호텔이나 모텔에 담요가 잔뜩 있을거야."
+msgid ""
+"I figure any hotel or motel in town should have lots of blankets, whatever "
+"types you can find for us."
+msgstr "마을에 있는 아무 호텔이나 모텔에 담요가 잔뜩 있을거야. 종류는 뭐든 상관없어."
 
 #: data/json/npcs/lumberyard/lumbermill_missions.json
 msgid "Did you find us some bedding yet?"
@@ -146506,7 +146897,7 @@ msgstr ""
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Dana_Nunez.json
 msgid "I'll look into that.  What were you saying before?"
-msgstr ""
+msgstr "알아볼게. 이전에 무슨 이야기하고 있었지?"
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Dana_Nunez.json
 msgid ""
@@ -146911,14 +147302,16 @@ msgid ""
 "need some normality in these times.  Some reminders of how things used to "
 "be.  I think a sing-along or two could do folks good."
 msgstr ""
+"나도 그래! 힘든 시절이라 웃을 일이 없지. 요즘 같은 시절일수록 평범한게 필요한데 말이야. 좋았던 옛날이 어땠는지를 추억할만한게. "
+"다함께 모여서 노래부를 기회가 좀 있으면 좋을 것 같아."
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Draco_Dune.json
 msgid "Couldn't hurt."
-msgstr ""
+msgstr "나쁘지 않지."
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Draco_Dune.json
 msgid "I don't need to hear amateur-hour karaoke around here.  Goodbye."
-msgstr ""
+msgstr "아마추어 노래방이 필요한게 아닌데. 잘 있어."
 
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Draco_Dune.json
 msgid ""
@@ -156730,18 +157123,6 @@ msgid ""
 msgstr "식초와 레닛을 넣어 응고시킨 우유. 치즈가 되려면 소금을 치고 유청을 제거해야 합니다."
 
 #: data/json/obsoletion/items.json
-msgid "buttermilk"
-msgid_plural "buttermilk"
-msgstr[0] "버터밀크"
-
-#. ~ Description for {'str_sp': 'buttermilk'}
-#: data/json/obsoletion/items.json
-msgid ""
-"This is cultured milk defatted either due to churning or curdling.  Spoils "
-"quickly."
-msgstr "버터 등을 만들고 남은, 지방이 줄어든 우유입니다. 빠르게 상합니다."
-
-#: data/json/obsoletion/items.json
 msgid "heavy cream"
 msgid_plural "heavy cream"
 msgstr[0] "진한 크림"
@@ -164723,6 +165104,9 @@ msgid ""
 " bells again and again.  She belched out holy harangues at the heathens "
 "below and laughed maniacally as the undead eventually tore through her body."
 msgstr ""
+"    자신 주변의 온 세상이 썩어가는 것을 보며 삽식간에 광신적으로 변했습니다. 머지않아 스스로를 인간 이상의 무언가로 보게 "
+"되었습니다. 버려진 대성당에 다다라, 첨탑을 기어올라 종을 끝없이 울렸습니다. 망자들이 그녀의 몸을 찢어발기는 순간까지 신성한 장광설을 "
+"저 아래 이교도들에게 내뱉으며 미친듯이 웃었습니다."
 
 #: data/json/snippets/fliers.json
 msgid ""
@@ -168540,7 +168924,7 @@ msgstr ""
 
 #: data/json/snippets/mutant_anatomy.json
 msgid "Its legs contain no muscles, just sinews hanging in yellow-green ichor"
-msgstr ""
+msgstr "이 다리에는 근육이 전혀 없습니다. 힘줄이 노란색과 초록색이 뒤섞인 영액에 잠겨 매달려있을 뿐입니다."
 
 #: data/json/snippets/mutant_anatomy.json
 msgid ""
@@ -168603,7 +168987,7 @@ msgstr ""
 msgid ""
 "This one's very blood stinks like its venom, and even the slightest drop "
 "makes your skin itch"
-msgstr ""
+msgstr "이 개체의 혈액은 그 독처럼 따끔거려서, 한 방울만으로도 피부가 가려워집니다."
 
 #: data/json/snippets/mutant_anatomy.json
 msgid ""
@@ -168615,7 +168999,7 @@ msgstr ""
 msgid ""
 "This one smells disturbingly appetizing, like a memory of a childhood meal "
 "whose details you forgot"
-msgstr ""
+msgstr "불쾌할 정도로 식욕을 돋구는 냄새가 납니다. 상세한 내용을 잊어버린 어린시절의 식사에 대한 기억처럼요."
 
 #: data/json/snippets/mutant_anatomy.json
 msgid ""
@@ -168790,7 +169174,7 @@ msgstr ""
 msgid ""
 "The organs themselves have an acrid odour, but don't seem as caustically "
 "acidic as the outer shell"
-msgstr ""
+msgstr "내장에서 매캐한 냄새가 나지만, 딱히 외각만큼 강산에 덮여있지는 않습니다."
 
 #: data/json/snippets/mutant_anatomy.json
 msgid ""
@@ -170364,6 +170748,115 @@ msgid ""
 "Don't send us a rescue team, we know the odds.  Will be moving east towards "
 "the shore, and if we're not there in T minus 3 days, count us dead.  Proud "
 "to serve the country.  Over and out."
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid ""
+"There's a picture of a tabby cat and the caption \"Lost Cat - Jonesy - If "
+"found, please call 555-3541\""
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid ""
+"This sign once had a message of some kind, but its now covered up by the "
+"crudely graffitied words \"TRAITOR\" and \"DIE\""
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Vote <given_name> <family_name> For Mayor"
+msgstr "<given_name><family_name>을 시장으로!"
+
+#: data/json/snippets/residential_signs.json
+msgid "Please Keep Off The Grass"
+msgstr "잔디밭 출입 금지"
+
+#: data/json/snippets/residential_signs.json
+msgid "Vote \"No!\" on Proposition 725"
+msgstr "법률안 725에 반대해주세요!"
+
+#: data/json/snippets/residential_signs.json
+msgid "Atlas Contracting - 555-4212 - Residential Construction Experts"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Please Slow Down"
+msgstr "감속하시오"
+
+#: data/json/snippets/residential_signs.json
+msgid ""
+"It looks like this used to be a welcome sign, but all of the bullet holes "
+"make it a little hard to tell"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Happy 10th Birthday <given_name>!"
+msgstr "10번째 생일 축하해, <given_name>!"
+
+#: data/json/snippets/residential_signs.json
+msgid "Garage Sale - Sunday, April 25th"
+msgstr "중고 물품 세일 - 4월 25일 (일)"
+
+#: data/json/snippets/residential_signs.json
+msgid "Clarity Windows and Doors - 555-1932"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Full Service Lawn Care - 555-4628 - Tuffy Lawns"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Prospect Realty - Open House"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Private Property - No Trespassing"
+msgstr "사유지 - 출입금지"
+
+#: data/json/snippets/residential_signs.json
+msgid "Stern Security Group - 555-7612"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "<family_name> Lawnscaping - 555-2674"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Beware of Dog"
+msgstr "개 조심"
+
+#: data/json/snippets/residential_signs.json
+msgid "The <family_name> Residence"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid ""
+"This For Sale sign has a printed note stapled over top of it that reads "
+"\"<given_name>, tried to text you.  Gone to the cabin with <given_name> and "
+"<given_name>.  Meet us there.  Love, Mom\""
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Another Home Sold - <family_name> Realtors - 555-7481"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "For Sale - 555-8485 - Sunset Realty"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Welcome to Our Home - The <family_name> Family"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Re-elect <family_name> for City Council"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Roofing Experts - <family_name> Brothers Roofing  - 555-4332"
+msgstr ""
+
+#: data/json/snippets/residential_signs.json
+msgid "Polyphemus Security - 555-1112-  \"Keeping an Eye Out since 1987\""
 msgstr ""
 
 #: data/json/snippets/schizophrenia.json
@@ -174625,6 +175118,14 @@ msgstr ""
 "소형 핵반응로입니다. 플루토늄 연료전지를 투입하고 작동시키면 어마어마한 양의 전력을 생산합니다. 비원자력 시스템에서 생산되는 양의 "
 "10배인, 각 연료전지당 50,000kJ의 전력을 제공합니다."
 
+#. ~ Description for {'str': 'plutonium generator'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"A nuclear reactor, sealed and configured to provide nearly limitless "
+"electrical power from refined nuclear fuel.  It can generate a small but "
+"constant source of electricity."
+msgstr "정제된 핵 연료를 내부에 장착한 소형 원자로로, 적은 양의 전력을 꾸준히, 그리고 영원히 생산할 것입니다."
+
 #. ~ Description for {'str': 'minifridge'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
@@ -177925,26 +178426,6 @@ msgstr[0] "기운 킬트"
 #: data/mods/Aftershock/items/obsolete.json
 msgid "A huge, patchwork wool quilt.  Very, very warm."
 msgstr "커다란 누더기 양모 킬트입니다. 정말, 정말로 따뜻합니다."
-
-#: data/mods/Aftershock/items/obsolete.json
-msgid "survivor utility belt (holster)"
-msgid_plural "survivor utility belts (holster)"
-msgstr[0] "생존자 유틸리티 벨트 (홀스터)"
-
-#. ~ Description for {'str': 'survivor utility belt (holster)', 'str_pl':
-#. 'survivor utility belts (holster)'}
-#: data/mods/Aftershock/items/obsolete.json
-msgid ""
-"A custom-built leather utility belt covered with straps and pouches "
-"containing many useful hand tools and a clip for holding various equipment."
-"  Durable and carefully crafted to be comfortable to wear.  Activate to clip"
-" something to it."
-msgstr ""
-
-#: data/mods/Aftershock/items/obsolete.json
-msgid "survivor utility belt (sheath)"
-msgid_plural "survivor utility belts (sheath)"
-msgstr[0] "생존자 유틸리티 벨트 (수납)"
 
 #: data/mods/Aftershock/items/obsolete.json
 msgid "brigandine"
@@ -203786,12 +204267,6 @@ msgstr[0] "드래곤의 혈액"
 
 #: data/mods/Magiclysm/items/ammo_types.json
 #: data/mods/Magiclysm/items/fuel.json
-msgid "tainted blood"
-msgid_plural "tainted blood"
-msgstr[0] "더럽혀진 혈액"
-
-#: data/mods/Magiclysm/items/ammo_types.json
-#: data/mods/Magiclysm/items/fuel.json
 msgid "mana infused blood"
 msgid_plural "mana_infused_blood"
 msgstr[0] ""
@@ -214218,9 +214693,9 @@ msgstr "죽음은 경험의 일부입니다. 배운 것을 기반으로 다시 �
 
 #: data/raw/tips.json
 msgid ""
-"Power may be out, but by constructing solar panels, you can generate your "
-"own elecricity."
-msgstr "전기가 나갔다고요? 걱정하지 마세요. 태양 전지판을 설치하면 실컷 쓸 수 있습니다!"
+"Power may be out, but by constructing solar panels or other furniture, you "
+"can generate your own electricity."
+msgstr "전기가 나갔다고요? 걱정하지 마세요. 태양 전지판 같은 장비를 이용하면 실컷 쓸 수 있습니다!"
 
 #: data/raw/tips.json
 msgid "Underground spaces like basements or caves stay cool year-round."
@@ -214803,11 +215278,11 @@ msgstr "필터 초기화"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Scroll recipe info up"
-msgstr ""
+msgstr "제작법 정보 위로 스크롤"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Scroll recipe info down"
-msgstr ""
+msgstr "제작법 정보 아래로 스크롤"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Show recipe result"
@@ -215159,7 +215634,7 @@ msgstr "부품 수리"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Mend part"
-msgstr "부품 수리"
+msgstr "부품 보수"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Refill tank/battery"
@@ -216152,7 +216627,7 @@ msgstr "부분 재장전"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Mend"
-msgstr "수리"
+msgstr "보수"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Disassemble"
@@ -216208,63 +216683,63 @@ msgstr "최하단으로 이동"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Cancel text input"
-msgstr ""
+msgstr "텍스트 입력 취소"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Confirm text input"
-msgstr ""
+msgstr "텍스트 입력 확정"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Move cursor left"
-msgstr ""
+msgstr "커서 왼쪽으로 옮기기"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Move cursor right"
-msgstr ""
+msgstr "커서 오른쪽으로 옮기기"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Move cursor to previous page"
-msgstr ""
+msgstr "커서 이전 페이지로 옮기기"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Move cursor to next page"
-msgstr ""
+msgstr "커서 다음 페이지로 옮기기"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Clear text"
-msgstr ""
+msgstr "텍스트 초기화"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Remove previous character"
-msgstr ""
+msgstr "이전 캐릭터 삭제"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Move cursor to start"
-msgstr ""
+msgstr "커서 처음으로 옮기기"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Move cursor to end"
-msgstr ""
+msgstr "커서 끝으로 옮기기"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Remove current character"
-msgstr ""
+msgstr "현재 캐릭터 삭제"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Paste from clipboard"
-msgstr ""
+msgstr "클립보드로부터 붙여넣기"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Input text from file"
-msgstr ""
+msgstr "파일로부터 텍스트 입력"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Show previous history"
-msgstr ""
+msgstr "이전 기록 확인"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Show next history"
-msgstr ""
+msgstr "다음 기록 확인"
 
 #: data/raw/keybindings/messages.json
 msgid "Toggle wide display"
@@ -216814,7 +217289,7 @@ msgstr "이 정도로 곤죽이 된 시체에서 바이오닉을 찾는 것은 �
 
 #: src/activity_handlers.cpp
 msgid "This corpse is already field dressed."
-msgstr "이 시체는 이미 내장이 들어내졌습니다."
+msgstr "이 시체는 이미 내장이 제거되었습니다."
 
 #: src/activity_handlers.cpp
 msgid "This corpse is already skinned."
@@ -216831,6 +217306,18 @@ msgstr "이건 이미 4등분 낸 조각입니다."
 #: src/activity_handlers.cpp
 msgid "You need to perform field dressing before quartering."
 msgstr "4등분하려면 먼저 내장을 제거해야 합니다."
+
+#: src/activity_handlers.cpp
+msgid "This has already been bled."
+msgstr "이 개체에서 이미 채혈했습니다."
+
+#: src/activity_handlers.cpp
+msgid "Field dressed corpses no longer have blood."
+msgstr "시체의 내장이 제거되어 피가 남아있지 않습니다."
+
+#: src/activity_handlers.cpp
+msgid "Quartered corpses no longer have blood."
+msgstr "시체가 4등분되어 피가 남아있지 않습니다."
 
 #: src/activity_handlers.cpp
 msgid "Would you dare desecrate the mortal remains of a fellow human being?"
@@ -216866,9 +217353,9 @@ msgstr "시체에 무언가 쓸만한게 있습니다. 신중하게 해부하면
 
 #: src/activity_handlers.cpp
 msgid ""
-"You notice there are bionics implanted in this corpse, that careful "
-"dissection might preserve."
-msgstr "이 시체에 바이오닉이 장착되어 있습니다. 신중하게 해체하면 망가뜨리지 않고 회수할 수 있을지도 모릅니다."
+"You notice there are implants in this corpse, that careful dissection might "
+"preserve."
+msgstr "이 시체에 이식물이 장착되어 있습니다. 신중하게 해체하면 망가뜨리지 않고 회수할 수 있을지도 모릅니다."
 
 #: src/activity_handlers.cpp
 msgid ""
@@ -216889,9 +217376,9 @@ msgstr "시체에 뭔가 이식물이 있지만, 지금 중요한건 살덩이 �
 
 #: src/activity_handlers.cpp
 msgid ""
-"You found some bionics in the body, but harvesting them would require more "
+"You found some implants in the body, but harvesting them would require more "
 "surgical approach."
-msgstr "시체에서 바이오닉을 발견했습니다. 회수하려면 좀 더 수술적인 접근법이 필요합니다."
+msgstr "시체에서 이식물을 발견했습니다. 회수하려면 보다 수술적인 접근이 필요합니다."
 
 #: src/activity_handlers.cpp
 #, c-format
@@ -216985,6 +217472,11 @@ msgstr "시체의 복부를 가르고 내부에서 부패하지 않을 거라는
 #: src/activity_handlers.cpp
 msgid "You remove guts and excess parts, preparing the corpse for later use."
 msgstr "시체를 나중에 쓰기 위해 시체의 내장과 필요없는 부위들을 제거합니다."
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid "You bleed the %s."
+msgstr "%s (으)로부터 채혈합니다."
 
 #: src/activity_handlers.cpp
 #, c-format
@@ -220560,7 +221052,7 @@ msgstr "어느 결함점을 켜고끕니까?"
 #, c-format
 msgctxt "fault"
 msgid "Mend: %s"
-msgstr ""
+msgstr "보수: %s"
 
 #: src/avatar_functions.cpp
 #, c-format
@@ -220586,7 +221078,7 @@ msgstr "이 물품은 손상되었지만 %s(을)를 사용하여 수리할 수 �
 
 #: src/avatar_functions.cpp
 msgid "Mend which fault?"
-msgstr "어느 부분을 수리합니까?"
+msgstr "어느 부분을 보수합니까?"
 
 #: src/avatar_functions.cpp
 #, c-format
@@ -226132,32 +226624,32 @@ msgstr "제작불가"
 #: src/crafting_gui.cpp
 #, c-format
 msgid "Primary skill: %s\n"
-msgstr ""
+msgstr "주요 기술: %s\n"
 
 #: src/crafting_gui.cpp
 #, c-format
 msgid "Other skills: %s\n"
-msgstr ""
+msgstr "보조 기술: %s\n"
 
 #: src/crafting_gui.cpp
 #, c-format
 msgid "Time to complete: <color_cyan>%s</color>\n"
-msgstr ""
+msgstr "제작 요구 시간: <color_cyan>%s</color>\n"
 
 #: src/crafting_gui.cpp
 #, c-format
 msgid "Batch time savings: <color_cyan>%s</color>\n"
-msgstr ""
+msgstr "일괄 제작시 시간 절약: <color_cyan>%s</color>\n"
 
 #: src/crafting_gui.cpp
 #, c-format
 msgid "Recipe makes: <color_cyan>%d</color>\n"
-msgstr ""
+msgstr "제작시 완성: <color_cyan>%d</color>\n"
 
 #: src/crafting_gui.cpp
 #, c-format
 msgid "Craftable in the dark?  <color_cyan>%s</color>\n"
-msgstr ""
+msgstr "무광원 제작 가능 여부? <color_cyan>%s</color>\n"
 
 #: src/crafting_gui.cpp src/gamemode_defense.cpp
 msgid "Easy"
@@ -226178,48 +226670,58 @@ msgstr "<color_red>8000, 9000... 큭, 스카우터가!</color>"
 #: src/crafting_gui.cpp
 #, c-format
 msgid "Nearby: %s\n"
-msgstr ""
+msgstr "인근 갯수: %s\n"
 
 #: src/crafting_gui.cpp
 msgid "<color_red>Will use rotten ingredients</color>\n"
-msgstr ""
+msgstr "<color_red>부패한 재료 사용</color>\n"
 
 #: src/crafting_gui.cpp
 msgid ""
 "Due to the complex overlapping requirements, this recipe <color_yellow>may "
 "appear to be craftable when it is not</color>.\n"
 msgstr ""
+"필요사항의 다중 중복으로 인해, 이 제작법은 <color_yellow>제작 불가능하더라도 제작 가능한 것처럼 보일 수 "
+"있습니다</color>.\n"
 
 #: src/crafting_gui.cpp
 msgid ""
 "<color_red>Cannot be crafted because the same item is needed for multiple "
 "components</color>\n"
-msgstr ""
+msgstr "<color_red>동일한 물품을 여러 요소에 사용해야 하므로 제작할 수 없습니다</color>\n"
 
 #: src/crafting_gui.cpp
 msgid "<color_red>Not known</color>\n"
-msgstr ""
+msgstr "<color_red>알고 있지 않음</color>\n"
 
 #: src/crafting_gui.cpp
 msgid "Byproducts:\n"
-msgstr ""
+msgstr "부산물: \n"
 
 #: src/crafting_gui.cpp
 msgid "Recipe not memorized yet\n"
+msgstr "아직 암기하지 않은 제작법\n"
+
+#: src/crafting_gui.cpp
+msgid "id: "
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "book count: "
 msgstr ""
 
 #: src/crafting_gui.cpp
 #, c-format
 msgid "Written in: %s\n"
-msgstr ""
+msgstr "다음에 적혀있음: %s\n"
 
 #: src/crafting_gui.cpp src/ui.cpp
 msgid "Fast scroll up"
-msgstr ""
+msgstr "빠르게 위로 스크롤"
 
 #: src/crafting_gui.cpp src/ui.cpp
 msgid "Fast scroll down"
-msgstr ""
+msgstr "빠르게 아래로 스크롤"
 
 #. ~ %1$s: action description text before key,
 #. ~ %2$s: key description,
@@ -226246,7 +226748,7 @@ msgstr "제작"
 #: src/crafting_gui.cpp
 msgctxt "crafting gui"
 msgid "Describe"
-msgstr ""
+msgstr "설명"
 
 #: src/crafting_gui.cpp
 msgctxt "crafting gui"
@@ -226261,12 +226763,12 @@ msgstr "필터 초기화"
 #: src/crafting_gui.cpp
 msgctxt "crafting gui"
 msgid "Show/hide"
-msgstr ""
+msgstr "표시/숨기기"
 
 #: src/crafting_gui.cpp
 msgctxt "crafting gui"
 msgid "Related"
-msgstr ""
+msgstr "관련"
 
 #: src/crafting_gui.cpp
 msgctxt "crafting gui"
@@ -226277,6 +226779,11 @@ msgstr "즐겨찾기 등록"
 msgctxt "crafting gui"
 msgid "Batch"
 msgstr "일괄제작"
+
+#: src/crafting_gui.cpp
+msgctxt "crafting gui"
+msgid "Show unavailable"
+msgstr "제작불가 레시피 보이기"
 
 #: src/crafting_gui.cpp
 msgctxt "crafting gui"
@@ -230456,6 +230963,19 @@ msgstr ""
 " 가죽 방수포 같은 평평한 표면이 필요합니다. 수확물을 잔뜩 - 그리고 다양하게 얻을 수 있겠지만, 시간이 오래 걸립니다."
 
 #: src/game.cpp
+msgid "Bleed corpse"
+msgstr "시체 채혈"
+
+#: src/game.cpp
+msgid ""
+"Bleeding involves severing the carotid arteries and jugular veins, or the "
+"blood vessels from which they arise.  You need skill and an appropriately "
+"sharp and precise knife to do a good job."
+msgstr ""
+"채혈은 경동맥과 경정맥 및 이로부터 뻗어나온 혈관을 절단하는 과정을 포함합니다. 적절한 기술과 충분히 날카롭고 정밀한 칼이 있어야 제대로"
+" 수행할 수 있습니다."
+
+#: src/game.cpp
 msgid "Field dress corpse"
 msgstr "시체 내장 제거하기"
 
@@ -231072,7 +231592,7 @@ msgstr ""
 msgid ""
 "There is a huge blob of water!  You may be unable to return back down these "
 "stairs.  Continue up?"
-msgstr ""
+msgstr "물이 너무 많습니다! 이 계단을 다시 내려올 수 없을지도 모릅니다. 올라가시겠습니까?"
 
 #: src/game.cpp
 msgid "You may be unable to return back down these stairs.  Continue up?"
@@ -232590,8 +233110,8 @@ msgid "There are no items to haul here."
 msgstr "여기에 끌고 갈 아이템이 없습니다."
 
 #: src/handle_action.cpp
-msgid "Are you sure you want to smash with an item made of glass?"
-msgstr "정말로 유리 재질 물건을 부숩니까?"
+msgid "Are you sure you want to smash with an item that might shatter?"
+msgstr "정말로 부서지기 쉬운 재질의 물건을 휘두릅니까?"
 
 #: src/handle_action.cpp
 msgid "Smash where?"
@@ -235826,7 +236346,7 @@ msgstr "RETURN"
 #: src/input.cpp
 msgctxt "key name"
 msgid "DELETE"
-msgstr ""
+msgstr "삭제"
 
 #: src/input.cpp
 msgctxt "key name"
@@ -235918,7 +236438,7 @@ msgstr "F%d"
 #, c-format
 msgctxt "control key name"
 msgid "CTRL+%c"
-msgstr ""
+msgstr "컨트롤+%c"
 
 #: src/input.cpp
 msgctxt "key name"
@@ -235976,13 +236496,13 @@ msgstr " 또는 "
 #: src/input.cpp
 msgctxt "keybinding"
 msgid "any"
-msgstr ""
+msgstr "임의"
 
 #. ~ keybinding description for unbound or disabled keys
 #: src/input.cpp
 msgctxt "keybinding"
 msgid "n/a"
-msgstr ""
+msgstr "없음"
 
 #. ~ %1$s: action description text before key,
 #. ~ %2$s: key description,
@@ -236020,11 +236540,14 @@ msgid ""
 "Press %c to add local keybinding\n"
 "Press %c to add global keybinding\n"
 msgstr ""
+"%c 키로 단축키 설정을 지웁니다.\n"
+"%c 키로 로컬 단축키를 설정합니다.\n"
+"%c 키로 전역 단축키를 설정합니다.\n"
 
 #: src/input.cpp
 #, c-format
 msgid "Press %c to execute action\n"
-msgstr ""
+msgstr "%c (을)를 눌러 작업 실행\n"
 
 #: src/input.cpp
 msgid "Keybindings"
@@ -237314,6 +237837,14 @@ msgstr "<bold>물건 속 내용물</bold>:"
 
 #: src/item.cpp
 msgid ""
+"* This item will potentially <info>shatter</info> if used as a weapon or "
+"thrown, instantly <bad>destroying it and spilling any contents</bad>."
+msgstr ""
+"* 이 물품은 무기로 사용하거나 던졌을 때 <info>부서지기 쉽습니다</info>. 이 경우 <bad>즉시 파괴되며 내용물을 흩뿌릴 "
+"것입니다</bad>."
+
+#: src/item.cpp
+msgid ""
 "* This item is <info>not rigid</info>.  Its volume and encumbrance increase "
 "with contents."
 msgstr "* 이 물품은 <info>단단하지 않아</info>, 부피와 방해도가 내용물에 의해 증가합니다."
@@ -238014,7 +238545,7 @@ msgstr "%s(이)가 사라졌습니다!"
 msgctxt "item name"
 msgid "human blood"
 msgid_plural "human blood"
-msgstr[0] "인간의 혈액"
+msgstr[0] "인간 혈액"
 
 #: src/item.cpp
 #, c-format
@@ -239829,6 +240360,11 @@ msgstr "%s(은)는 가득 찼습니다!"
 
 #: src/iuse.cpp
 #, c-format
+msgid "That %s has already been bled dry."
+msgstr "%s(은)는 이미 채혈되어 메말랐습니다."
+
+#: src/iuse.cpp
+#, c-format
 msgid "Draw blood from %s?"
 msgstr "%s의 피를 뽑습니까?"
 
@@ -240130,7 +240666,7 @@ msgstr "그것은 총기가 아니다!"
 
 #: src/iuse.cpp
 msgid "There's nothing you can clean or mend with this."
-msgstr "청소나 수리가 필요한 부분이 없습니다."
+msgstr "청소나 보수가 필요한 부분이 없습니다."
 
 #: src/iuse.cpp
 msgid "You need a mechanics skill of 2 to use this repair kit."
@@ -241359,6 +241895,8 @@ msgid ""
 "Wind: %.1f %2$s from the %3$s.\n"
 "Feels like: %4$s."
 msgstr ""
+"바람: %3$s으로부터의 %.1f%2$s\n"
+"체감: %4$s."
 
 #: src/iuse.cpp src/iuse_actor.cpp
 #, c-format
@@ -249810,6 +250348,11 @@ msgstr "%s에게 어떻게 안장을 채워야 할지 모르겠습니다."
 #, c-format
 msgid "Manage your friendship with %s"
 msgstr "%s와(과)의 우정 관리"
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Untie and mount %s"
+msgstr ""
 
 #: src/monexamine.cpp
 #, c-format
@@ -260089,11 +260632,11 @@ msgstr "%s(이)가 이쪽을 바라봅니다. "
 
 #: src/ui.cpp
 msgid "Go to first entry"
-msgstr ""
+msgstr "첫 항목으로 이동"
 
 #: src/ui.cpp
 msgid "Go to last entry"
-msgstr ""
+msgstr "마지막 항목으로 이동"
 
 #. ~ vehicle speed tiles per turn
 #: src/units_utility.cpp
@@ -260344,7 +260887,7 @@ msgstr "이 차량에는 손상된 부품이 없습니다."
 
 #: src/veh_interact.cpp
 msgid "Choose a part here to repair:"
-msgstr "이 칸의 부품 중 수리할 것을 고르세요:"
+msgstr "수리할 부품을 선택하세요:"
 
 #: src/veh_interact.cpp
 msgid "This part cannot be repaired"
@@ -260364,7 +260907,7 @@ msgstr "운전 중에는 고장난 부품을 고칠 수 없습니다."
 
 #: src/veh_interact.cpp
 msgid "Choose a part here to mend:"
-msgstr "이 칸의 부품 중 고장을 고칠 것을 고르세요:"
+msgstr "보수할 부품을 선택하세요:"
 
 #: src/veh_interact.cpp
 msgid "You can't refill a moving vehicle."
@@ -260747,32 +261290,32 @@ msgstr ""
 #: src/veh_interact.cpp
 msgctxt "veh_interact"
 msgid "install"
-msgstr ""
+msgstr "설치"
 
 #: src/veh_interact.cpp
 msgctxt "veh_interact"
 msgid "repair"
-msgstr ""
-
-#: src/veh_interact.cpp
-msgctxt "veh_interact"
-msgid "mend"
 msgstr "수리"
 
 #: src/veh_interact.cpp
 msgctxt "veh_interact"
+msgid "mend"
+msgstr "보수"
+
+#: src/veh_interact.cpp
+msgctxt "veh_interact"
 msgid "refill"
-msgstr ""
+msgstr "다시 채우기"
 
 #: src/veh_interact.cpp
 msgctxt "veh_interact"
 msgid "remove"
-msgstr ""
+msgstr "제거"
 
 #: src/veh_interact.cpp
 msgctxt "veh_interact"
 msgid "siphon"
-msgstr ""
+msgstr "흡인"
 
 #: src/veh_interact.cpp
 msgctxt "veh_interact"
@@ -260782,22 +261325,22 @@ msgstr "빼내기"
 #: src/veh_interact.cpp
 msgctxt "veh_interact"
 msgid "crew"
-msgstr ""
+msgstr "승무원"
 
 #: src/veh_interact.cpp
 msgctxt "veh_interact"
 msgid "rename"
-msgstr ""
+msgstr "이름 바꾸기"
 
 #: src/veh_interact.cpp
 msgctxt "veh_interact"
 msgid "label"
-msgstr ""
+msgstr "라벨"
 
 #: src/veh_interact.cpp
 msgctxt "veh_interact"
 msgid "back"
-msgstr ""
+msgstr "뒤로"
 
 #: src/veh_interact.cpp
 msgid "Dur"
@@ -262900,7 +263443,7 @@ msgstr "월드 마무리"
 
 #: src/worldfactory.cpp
 msgid "World name cannot be empty!"
-msgstr ""
+msgstr "세계 이름을 비워둘 수 없습니다!"
 
 #: src/worldfactory.cpp
 #, c-format
@@ -262915,9 +263458,9 @@ msgstr "%s(으)로 명명된 세계가 이미 존재합니다!"
 #: src/worldfactory.cpp
 #, c-format
 msgid "World name contains invalid character: '%c'"
-msgstr ""
+msgstr "세계 이름에 부적절한 문자가 포함되어 있습니다: '%c'"
 
 #: src/worldfactory.cpp
 #, c-format
 msgid "World name contains invalid character: 0x%x"
-msgstr ""
+msgstr "세계 이름에 부적절한 문자가 포함되어 있습니다: 0x%x"
