@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-06-15 01:04+0000\n"
+"POT-Creation-Date: 2024-06-22 01:02+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -10917,10 +10917,6 @@ msgid "Capture/place"
 msgstr "捕捉/放置"
 
 #: data/json/item_actions.json
-msgid "Place"
-msgstr "放置"
-
-#: data/json/item_actions.json
 msgid "Chew"
 msgstr "咀嚼"
 
@@ -10947,6 +10943,10 @@ msgstr "挖坑"
 #: data/json/item_actions.json
 msgid "Find direction"
 msgstr "尋找方向"
+
+#: data/json/item_actions.json
+msgid "Place"
+msgstr "放置"
 
 #: data/json/item_actions.json
 msgid "Blow"
@@ -11158,6 +11158,10 @@ msgstr "滅火"
 #: data/json/item_actions.json
 msgid "Enable/disable food heating"
 msgstr "开/关食物加热"
+
+#: data/json/item_actions.json
+msgid "Enable/disable UPS charging"
+msgstr "开/关UPS充电"
 
 #: data/json/item_actions.json
 msgid "Check grid charge"
@@ -15214,18 +15218,18 @@ msgstr "能夠發射酸液球的槍。"
 #: data/json/items/gun/22.json data/json/items/gun/223.json
 #: data/json/items/gun/3006.json data/json/items/gun/300BLK.json
 #: data/json/items/gun/308.json data/json/items/gun/32.json
-#: data/json/items/gun/380.json data/json/items/gun/40x53mm.json
-#: data/json/items/gun/45.json data/json/items/gun/46.json
-#: data/json/items/gun/50.json data/json/items/gun/545x39.json
-#: data/json/items/gun/57.json data/json/items/gun/5x50.json
-#: data/json/items/gun/762.json data/json/items/gun/762x25.json
-#: data/json/items/gun/8x40mm.json data/json/items/gun/9mm.json
-#: data/json/items/gun/9x18.json data/json/items/gun/bio.json
-#: data/json/items/gun/flammable.json data/json/items/gun/nail.json
-#: data/json/items/gun/plasma.json data/json/items/gun/shot.json
-#: data/json/items/gun/ups.json data/json/items/gunmod/mechanism.json
-#: data/json/items/ranged/pneumatic.json data/json/obsoletion/items.json
-#: data/mods/Generic_Guns/firearms/pistol.json
+#: data/json/items/gun/380.json data/json/items/gun/40.json
+#: data/json/items/gun/40x53mm.json data/json/items/gun/45.json
+#: data/json/items/gun/46.json data/json/items/gun/50.json
+#: data/json/items/gun/545x39.json data/json/items/gun/57.json
+#: data/json/items/gun/5x50.json data/json/items/gun/762.json
+#: data/json/items/gun/762x25.json data/json/items/gun/8x40mm.json
+#: data/json/items/gun/9mm.json data/json/items/gun/9x18.json
+#: data/json/items/gun/bio.json data/json/items/gun/flammable.json
+#: data/json/items/gun/nail.json data/json/items/gun/plasma.json
+#: data/json/items/gun/shot.json data/json/items/gun/ups.json
+#: data/json/items/gunmod/mechanism.json data/json/items/ranged/pneumatic.json
+#: data/json/obsoletion/items.json data/mods/Generic_Guns/firearms/pistol.json
 #: data/mods/Generic_Guns/firearms/rifle.json
 #: data/mods/Modular_Turrets/roboguns.json data/mods/No_Hope/Items/guns.json
 #: src/item_factory.cpp
@@ -20979,15 +20983,15 @@ msgstr ""
 
 #: data/json/professions.json
 msgctxt "profession_male"
-msgid "Competetive Fencer"
+msgid "Competitive Fencer"
 msgstr "竞技击剑运动员"
 
 #: data/json/professions.json
 msgctxt "profession_female"
-msgid "Competetive Fencer"
+msgid "Competitive Fencer"
 msgstr "竞技击剑运动员"
 
-#. ~ Profession (male Competetive Fencer) description
+#. ~ Profession (male Competitive Fencer) description
 #: data/json/professions.json
 msgctxt "prof_desc_male"
 msgid ""
@@ -20998,7 +21002,7 @@ msgid ""
 msgstr ""
 "你是个热衷于击剑运动的运动员，总是在当地的俱乐部练习，参加各种锦标赛。当世界末日来临的时候，你正准备去俱乐部玩几次呢。现在你将面对自己生涯中最重要的一次锦标赛，不过裁判都是死人，而你的对手也不会遵守任何规则。"
 
-#. ~ Profession (female Competetive Fencer) description
+#. ~ Profession (female Competitive Fencer) description
 #: data/json/professions.json
 msgctxt "prof_desc_female"
 msgid ""
@@ -50626,9 +50630,21 @@ msgstr ""
 "柯尔特空尖弹，原本是为柯尔特单动式陆军左轮手枪设计的弹药，但仍然被用于现代重制版的左轮手枪中。这种子弹历史上采用黑火药装填，但现代化的装药可以使其在新时代也具有竞争力。"
 
 #: data/json/items/ammo/45colt.json
-msgid ".45 Colt JHP, black powder"
-msgid_plural ".45 Colt JHP, black powders"
-msgstr[0] ".45 柯爾特空尖彈（黑火藥）"
+msgid ".45 Colt, black powder"
+msgid_plural ".45 Colt, black powders"
+msgstr[0] ".45 柯尔特空尖弹（黑火药）"
+
+#. ~ Description for {'str': '.45 Colt, black powder'}
+#: data/json/items/ammo/45colt.json
+msgid ""
+".45 Colt ammunition with 250gr jacketed hollow point bullets.  Originally "
+"designed for the Colt Single Action Army, and still used for modern "
+"reproduction revolvers.  Originally a black powder cartridge, this load is "
+"less powerful and dirtier than modern reproduction loads but still packs a "
+"decent punch."
+msgstr ""
+"250 格令的 .45 "
+"柯尔特空尖弹，原本是为柯尔特单动式陆军左轮手枪设计的弹药，但仍然被用于现代重制版的左轮手枪中。这种子弹历史上采用黑火药装填，与现代复制子弹相比，其威力较小，也更脏，但仍具有相当大的威力。"
 
 #: data/json/items/ammo/46.json
 msgid "4.6x30mm"
@@ -86456,6 +86472,30 @@ msgid ""
 " you could unload the batteries out of it."
 msgstr "一個小孩玩的會說話玩偶。還好還有電, 你能夠從裡面取出電池。"
 
+#: data/json/items/gun/10mm.json
+msgid "Glock 20"
+msgid_plural "Glock 20s"
+msgstr[0] "格洛克 20 手枪"
+
+#: data/json/items/gun/10mm.json
+msgid ""
+"A full-sized version of the highly successful Glock, chambered in hard-"
+"hitting 10mm Auto.  The third model of Glock designed, all other full-sized,"
+" large framed Glocks are adaptations of this one."
+msgstr ""
+"非常成功的格洛克手枪的全尺寸版本，采用强劲的10mm自动弹药。这是格洛克设计的第三款型号，所有其他全尺寸、大框架的格洛克都是基于这款进行改进的。"
+
+#: data/json/items/gun/10mm.json
+msgid "TNW Aero Survival Rifle"
+msgid_plural "TNW Aero Survival Rifles"
+msgstr[0] "TNW 航空生存步枪"
+
+#: data/json/items/gun/10mm.json
+msgid ""
+"A pistol caliber carbine made of aircraft aluminum.  This is the 10mm "
+"version and can use Glock 20 magazines."
+msgstr "一款由航空铝制成的手枪口径卡宾枪。这是10mm版本，可以使用格洛克20的弹匣。"
+
 #: data/json/items/gun/12mm.json
 msgid "H&K G80 railgun"
 msgid_plural "H&K G80 railguns"
@@ -86495,16 +86535,16 @@ msgstr "Rivtech RM20 無殼自動戰鬥霰彈槍的研發概念是擁有可靠�
 #: data/json/items/gun/223.json data/json/items/gun/3006.json
 #: data/json/items/gun/300BLK.json data/json/items/gun/308.json
 #: data/json/items/gun/32.json data/json/items/gun/380.json
-#: data/json/items/gun/40x46mm.json data/json/items/gun/40x53mm.json
-#: data/json/items/gun/45.json data/json/items/gun/46.json
-#: data/json/items/gun/50.json data/json/items/gun/545x39.json
-#: data/json/items/gun/57.json data/json/items/gun/5x50.json
-#: data/json/items/gun/762.json data/json/items/gun/762x25.json
-#: data/json/items/gun/8x40mm.json data/json/items/gun/9mm.json
-#: data/json/items/gun/9x18.json data/json/items/gun/bio.json
-#: data/json/items/gun/flammable.json data/json/items/gun/plasma.json
-#: data/json/items/gun/shot.json data/json/items/gun/ups.json
-#: data/json/items/ranged/pneumatic.json
+#: data/json/items/gun/40.json data/json/items/gun/40x46mm.json
+#: data/json/items/gun/40x53mm.json data/json/items/gun/45.json
+#: data/json/items/gun/46.json data/json/items/gun/50.json
+#: data/json/items/gun/545x39.json data/json/items/gun/57.json
+#: data/json/items/gun/5x50.json data/json/items/gun/762.json
+#: data/json/items/gun/762x25.json data/json/items/gun/8x40mm.json
+#: data/json/items/gun/9mm.json data/json/items/gun/9x18.json
+#: data/json/items/gun/bio.json data/json/items/gun/flammable.json
+#: data/json/items/gun/plasma.json data/json/items/gun/shot.json
+#: data/json/items/gun/ups.json data/json/items/ranged/pneumatic.json
 #: data/mods/Generic_Guns/firearms/pistol.json
 #: data/mods/Generic_Guns/firearms/rifle.json src/item_factory.cpp
 msgid "semi"
@@ -87298,6 +87338,17 @@ msgid ""
 "one is chambered for .357 SIG."
 msgstr "西格&绍尔 P320 紧凑型手枪是一种半自动的短反冲手枪。这一把使用 .357 西格弹。"
 
+#: data/json/items/gun/357sig.json
+msgid "Moriarti AR .357sig"
+msgid_plural "Moriarti AR .357sigs"
+msgstr[0] "莫里亚蒂 AR .357西格步枪"
+
+#: data/json/items/gun/357sig.json
+msgid ""
+"A semi-automatic rifle using .357 SIG rounds, also known as Moriarti "
+"MA-357Sig-16.  It is also compatible with Glock 31 magazines."
+msgstr "一款使用.357西格弹药的半自动步枪，被称为莫里亚蒂MA-357西格-16。也兼容格洛克31的弹匣。"
+
 #: data/json/items/gun/36paper.json
 msgid "Colt M1861 Navy"
 msgid_plural "Colt M1861 Navy"
@@ -87377,6 +87428,29 @@ msgid ""
 " sight and a reinforced frame."
 msgstr "一把由 Smith & Wesson 公司販售的 7 發裝的 .38 左輪手槍。特點為固定的前準星與鋼製的框架。"
 
+#: data/json/items/gun/38.json
+msgid "Colt Python"
+msgid_plural "Colt Python"
+msgstr[0] "柯尔特蟒蛇"
+
+#: data/json/items/gun/38.json
+msgid ""
+"A six inch, six-round revolver chambered in .357 Magnum/.38 Special.  "
+"Favorite of sheriffs and post-Cataclysm survivor group leaders."
+msgstr "一款六英寸、六发的左轮手枪，使用.357马格南/.38 特制弹。是警长和大灾变幸存者团体领袖的最爱。"
+
+#: data/json/items/gun/38.json
+msgid "Marlin 1894C"
+msgid_plural "Marlin 1894C"
+msgstr[0] "马林 1984C 步枪"
+
+#: data/json/items/gun/38.json
+msgid ""
+"The Marlin Model 1894 is a lever-action repeating rifle.  It comes with a "
+"walnut stock and foreend.  The C version is chambered in .357 Magnum/.38 "
+"Special."
+msgstr "马林1894型是一款杠杆式连发步枪。它配有胡桃木枪托和前托。C型号使用.357马格南/.38 特制弹口径。"
+
 #: data/json/items/gun/380.json
 msgid "MAC-11"
 msgid_plural "MAC-11s"
@@ -87445,12 +87519,9 @@ msgstr[0] "Hi-Point CF-380 手槍"
 #: data/json/items/gun/380.json
 msgid ""
 "The Hi-Point CF-380 is a blowback operated semi-automatic pistol designed by"
-" Hi-Point Firearms, which is known for making inexpensive firearms, and for "
-"making said firearms bulky and uncomfortable.  Hi-Points have slides made "
-"with a zinc pot-metal which is relatively fragile compared to steel slides."
+" Hi-Point Firearms.  Hi-Points have slides made with a zinc pot-metal."
 msgstr ""
-"Hi-Point CF-380 手枪是一种采用反冲式枪机的半自动手枪，由 Hi-Point 设计。Hi-Point "
-"以制造廉价武器而知名，其生产的武器常常体积巨大且使用不便。Hi-Point 制造的枪械的套筒由锌合金制成，相比钢制套筒来说比较脆弱。"
+"Hi-Point CF-380 手枪是一种采用反冲式枪机的半自动手枪，由 Hi-Point 设计。Hi-Point 制造的枪械的套筒由锌合金制成。"
 
 #: data/json/items/gun/380.json
 msgid "Taurus Spectrum"
@@ -87462,6 +87533,17 @@ msgid ""
 "A .380 subcompact pistol.  Designed for concealed carry and built from high-"
 "quality, durable materials."
 msgstr "一把体积紧凑的 .38 口径手枪，在设计时极力强调隐蔽携带性能，在制造时更是选用了高质量、有保障的新型材料。"
+
+#: data/json/items/gun/380.json
+msgid "Hi-Point 3895"
+msgid_plural "Hi-Point 3895"
+msgstr[0] "Hi-Point 3895 卡宾枪"
+
+#: data/json/items/gun/380.json
+msgid ""
+"A .380 carbine, fun to shoot, not so much useful against anything larger.  "
+"Usually good for training.  Also available in pink camo."
+msgstr "一款.380 卡宾枪，射击时很有趣，但对付较大的目标效果不佳。通常适合训练用。也有粉色迷彩版本。"
 
 #: data/json/items/gun/38super.json
 msgid "AF2011A1 .38 Super"
@@ -87632,6 +87714,30 @@ msgid ""
 msgstr ""
 "Hi-Point JCP 型手枪是一种采用反冲式枪机的半自动手枪，由 Hi-Point 设计。Hi-Point "
 "以制造廉价武器而知名，其生产的武器常常体积巨大且使用不便。Hi-Point 制造的枪械的套筒由锌合金制成，相比钢制套筒来说比较脆弱。"
+
+#: data/json/items/gun/40.json
+msgid "CMMG MkG Banshee"
+msgid_plural "CMMG MkG Banshees"
+msgstr[0] "CMMG MkG 女妖步枪"
+
+#: data/json/items/gun/40.json
+msgid ""
+"A semi-automatic rifle using .40 S&W rounds.  It is also compatible with "
+"Glock 22 magazines."
+msgstr "一款使用.40 S&W弹药的半自动步枪，也兼容格洛克22的弹匣。"
+
+#: data/json/items/gun/40.json
+msgid "KRISS Vector"
+msgid_plural "KRISS Vectors"
+msgstr[0] "KRISS 维克托冲锋枪"
+
+#: data/json/items/gun/40.json
+msgid ""
+"The KRISS Vector is a submachine gun with a unique, in-line design that "
+"makes recoil very manageable.  It is a evolution of the formally known TDI "
+"Vector, this particullar model uses .40 S&W."
+msgstr ""
+"KRISS 维克托是一款冲锋枪，具有独特的直线设计，使后坐力非常容易控制。这是以前称为TDI 维克托的演变型号，这款特别型号使用.40 S&W弹药。"
 
 #: data/json/items/gun/40x46mm.json
 msgid "tube 40mm launcher"
@@ -88028,6 +88134,17 @@ msgid ""
 "A full-sized version of the highly successful Glock.  This model is "
 "chambered in .45 ACP."
 msgstr "著名的格洛克手枪的全尺寸版本，使用.45 ACP子弹。"
+
+#: data/json/items/gun/45.json
+msgid "CMMG MkG Guard"
+msgid_plural "CMMG MkG Guards"
+msgstr[0] "CMMG MkG 守卫者步枪"
+
+#: data/json/items/gun/45.json
+msgid ""
+"A semi-automatic rifle using .45 ACP rounds.  It is also compatible with "
+"Glock 21 magazines."
+msgstr "一款使用.45 ACP弹药的半自动步枪，也兼容格洛克21的弹匣。"
 
 #: data/json/items/gun/454.json
 msgid "Taurus Raging Bull"
@@ -90474,6 +90591,50 @@ msgstr ""
 " SP-1 原装件，改装后的枪械可靠性和精度受到很大影响。"
 
 #: data/json/items/gunmod/mechanism.json
+msgid "glock switch"
+msgid_plural "glock switchs"
+msgstr[0] "格洛克开关"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"Patented in 1998 the Glock auto-sear or switch as it is called was illegal "
+"due to being able to turn Glock firearms full auto by applying force to a "
+"Glock's trigger bar.  The switch allows for selective fire modes, a single "
+"shot or when flipped, a six round full auto fire."
+msgstr ""
+"格洛克自动击发器或称为开关于1998年获得专利。由于它可以通过对格洛克扳机杆施加压力使格洛克枪械全自动射击，因此是非法的。该开关允许选择射击模式，单发射击或切换后进行六发全自动射击。"
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "glock_17"
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "glock_19"
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "glock_20"
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "glock_21"
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "glock_22"
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "glock_31"
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
 msgid "firearm waterproofing"
 msgid_plural "firearm waterproofings"
 msgstr[0] "槍械防水套裝"
@@ -91352,6 +91513,38 @@ msgid ""
 " was modified and customized to mount on pretty much any weapon other than "
 "pistols, if you so want."
 msgstr "枪管很短的双管霰弹枪，它可以被安装在多种步枪的枪管下。一次能装填两发霰弹。这把霰弹枪经过了改装，可以装在除手枪外的几乎任何武器上。"
+
+#: data/json/items/magazine/10mm.json
+msgid "Glock 20 magazine"
+msgid_plural "Glock 20 magazines"
+msgstr[0] "格洛克 20 手枪弹匣"
+
+#. ~ Description for {'str': 'Glock 20 magazine'}
+#: data/json/items/magazine/10mm.json
+msgid ""
+"A compact light-weight steel and polymer magazine for use with Glock pistols"
+" chambered for 10mm Auto."
+msgstr "一个紧凑且重量轻的钢和高分子聚合物弹匣，用于格洛克 10 毫米自动手枪。"
+
+#: data/json/items/magazine/10mm.json
+msgid "Glock 20 extended magazine"
+msgid_plural "Glock 20 extended magazines"
+msgstr[0] "格洛克 20 手枪扩充弹匣"
+
+#. ~ Description for {'str': 'Glock 20 extended magazine'}
+#: data/json/items/magazine/10mm.json
+msgid "An extended 30-round polymer magazine for the Glock 20."
+msgstr "加长的30发高分子聚合物弹匣，可用于格洛克 20 手枪。"
+
+#: data/json/items/magazine/10mm.json
+msgid "Glock 20 50-round drum magazine"
+msgid_plural "Glock 20 50-round drum magazines"
+msgstr[0] "格洛克 20 手枪50发弹鼓"
+
+#. ~ Description for {'str': 'Glock 20 50-round drum magazine'}
+#: data/json/items/magazine/10mm.json
+msgid "Made to fit the Glock 20.  This drum magazine holds 50 rounds."
+msgstr "设计用于格洛克 20 手枪，弹容量为50发。"
 
 #: data/json/items/magazine/12mm.json
 msgid "H&K G80 magazine"
@@ -92274,6 +92467,17 @@ msgid ""
 "A compact, 6-round steel box magazine for use with the Taurus Spectrum."
 msgstr "一个紧凑的钢制盒式弹匣，可用于陶鲁斯\"光谱\"手枪。"
 
+#: data/json/items/magazine/380.json
+msgid "Hi-Point 3895 magazine"
+msgid_plural "Hi-Point 3895 magazines"
+msgstr[0] "Hi-Point 3895 卡宾枪弹匣"
+
+#. ~ Description for {'str': 'Hi-Point 3895 magazine'}
+#: data/json/items/magazine/380.json
+msgid ""
+"10-round magazine for the Hi-Point 3895.  Not compatible with the CF380."
+msgstr "用于 Hi-Point 3895 的 10 发弹匣。 与 CF380 不兼容。"
+
 #: data/json/items/magazine/38super.json
 msgid "AF2011A1 magazine"
 msgid_plural "AF2011A1 magazines"
@@ -92319,6 +92523,18 @@ msgid ""
 "A magazine for the 92 and 96 series of Beretta handguns, this one is for .40"
 " S&W and can hold 12 rounds."
 msgstr "伯莱塔92和96系列手枪所使用的弹匣，能装填12发 .40 S&W 弹。"
+
+#: data/json/items/magazine/40.json
+msgid "Glock 22 50-round drum magazine"
+msgid_plural "Glock 22 50-round drum magazines"
+msgstr[0] "格洛克 22 手枪50发弹鼓"
+
+#. ~ Description for {'str': 'Glock 22 50-round drum magazine'}
+#: data/json/items/magazine/40.json
+msgid ""
+"A 50-round drum magazine for use with Glock pistols chambered for .40 S&W or"
+" .357 SIG."
+msgstr "50发弹鼓，用于格洛克手枪，可装填 .40 S&W弹 或 .357 西格弹。"
 
 #: data/json/items/magazine/40.json
 msgid "Glock 22 extended magazine"
@@ -92427,6 +92643,16 @@ msgstr[0] "Hi-Point JCP 型手枪弹匣"
 #: data/json/items/magazine/40.json
 msgid "A 10-round steel box magazine for use with the Hi-Point Model JCP."
 msgstr "一个 10 发钢制盒式弹匣，可用于 Hi-Point JCP 型手枪。"
+
+#: data/json/items/magazine/40.json
+msgid "KRISS Vector magazine"
+msgid_plural "KRISS Vector magazines"
+msgstr[0] "KRISS 维克托冲锋枪弹匣"
+
+#. ~ Description for {'str': 'KRISS Vector magazine'}
+#: data/json/items/magazine/40.json
+msgid "A 30-round steel box magazine for use with the KRISS Vector"
+msgstr "一个30发钢制弹匣，可用于 KRISS 维克托冲锋枪。"
 
 #: data/json/items/magazine/40mm.json
 #: data/mods/Generic_Guns/vehicles/ammo_redefine_hacks/temp_magazine_json_load_hack.json
@@ -92640,6 +92866,16 @@ msgstr[0] "格洛克 21 26发弹匣"
 #: data/json/items/magazine/45.json
 msgid "A double capacity magazine for use with the Glock 21."
 msgstr "一个双倍容量的弹匣，可用于格洛克 21 手枪。"
+
+#: data/json/items/magazine/45.json
+msgid "Glock 21 40-round drum magazine"
+msgid_plural "Glock 21 40-round drum magazines"
+msgstr[0] "格洛克 21 手枪40发弹鼓"
+
+#. ~ Description for {'str': 'Glock 21 40-round drum magazine'}
+#: data/json/items/magazine/45.json
+msgid "Made to fit the Glock 21.  This drum magazine holds 40 rounds."
+msgstr "设计用于格洛克 21 手枪，弹容量为40发。"
 
 #: data/json/items/magazine/454.json
 msgid ".454 5-round speedloader"
@@ -98987,11 +99223,12 @@ msgstr[0] "专业相机"
 msgid ""
 "A 35 mm digital SLR (single-lens reflex) camera, with optical and digital "
 "viewfinders, zoom lens with auto-focus and stabilizer, and flash.  You can "
-"view your photos on it or transfer them with a memory card; it runs on "
-"conventional batteries.  Before the Cataclysm, you could have taken "
-"professional-grade photos using this."
+"view your photos on it or transfer them with a memory card; it runs on a "
+"rechargeable power cell that can be switched to charge via Unified Power "
+"Supply.  Before the Cataclysm, you could have taken professional-grade "
+"photos using this."
 msgstr ""
-"35mm的数码单反（单镜头反光）相机使用普通电池，带光学/数字取景器，具有自动对焦和变焦镜头和闪光灯的防抖功能。你可以使用它查看已拍摄的照片，或者将照片存储至SD存储卡上；它使用传统的普通电池供电。在大灾变之前，专业级照片都是使用它拍摄出来的。"
+"35mm的数码单反（单镜头反光）相机使用普通电池，带光学/数字取景器，具有自动对焦和变焦镜头和闪光灯的防抖功能。你可以使用它查看已拍摄的照片，或者将照片存储至SD存储卡上；它运行在可充电电池上，可以通过UPS切换充电。在大灾变之前，专业级照片都是使用它拍摄出来的。"
 
 #: data/json/items/tool/electronics.json
 msgid "cellphone"
@@ -99040,11 +99277,12 @@ msgid_plural "control laptops"
 msgstr[0] "操控用筆記型電腦"
 
 #. ~ Description for {'str': 'control laptop'}
-#: data/json/items/tool/electronics.json data/mods/Aftershock/items/tools.json
+#: data/json/items/tool/electronics.json
 msgid ""
 "A modified laptop, now capable of transmitting in the ultra-high frequencies"
-" utilized by robots.  Activate it to command robots from afar."
-msgstr "一台改造的笔记本，现在可以发送超高频信号来与机器人进行通讯。激活它来遥控机器人。"
+" utilized by robots.  Activate it to command robots from afar, or to toggle "
+"charging via UPS."
+msgstr "一台改造的笔记本，现在可以发送超高频信号来与机器人进行通讯。激活它来遥控机器人，或切换通过UPS充电。"
 
 #: data/json/items/tool/electronics.json
 msgid "directional antenna"
@@ -99080,9 +99318,10 @@ msgstr[0] "平板電腦"
 #. ~ Description for {'str': 'e-ink tablet PC'}
 #: data/json/items/tool/electronics.json
 msgid ""
-"A tablet PC using an efficient color e-ink display.  Before the Cataclysm, "
+"A tablet PC using an efficient color e-ink display, with a recharging "
+"battery that can be switched to draw from a UPS.  Before the Cataclysm, "
 "these were nifty gadgets; now, it's an almost priceless resource."
-msgstr "一台拥有高清彩色电子墨水屏的平板电脑。大灾变前的俏玩意，现如今的无价宝。"
+msgstr "一台拥有高清彩色电子墨水屏的平板电脑，带有可充电电池，可以切换为从UPS供电。大灾变前的俏玩意，现如今的无价宝。"
 
 #: data/json/items/tool/electronics.json data/mods/Modular_Turrets/items.json
 msgid "electrohack"
@@ -99149,8 +99388,10 @@ msgstr "笔记本电脑没电了。"
 
 #. ~ Description for laptop computer
 #: data/json/items/tool/electronics.json
-msgid "A laptop computer using UPS."
-msgstr "一台使用UPS的笔记本电脑。"
+msgid ""
+"A laptop computer with an internal rechargeable battery, also capable of "
+"using UPS."
+msgstr "一台带有内置可充电电池的笔记本电脑，也可以使用UPS供电。"
 
 #: data/json/items/tool/electronics.json
 msgid "laptop computer - lit screen"
@@ -99168,8 +99409,10 @@ msgstr[0] "MP3 播放器 (關閉)"
 msgid ""
 "This battery-powered device is loaded up with someone's music collection.  "
 "Fortunately, there's lots of songs you like, and listening to it will raise "
-"your morale slightly.  Use it to turn it on."
-msgstr "这个耗电池的玩意里存着某人的音乐珍藏，里面恰好有不少你喜欢的歌。听听看吧，你的情绪会随着音乐而高涨。"
+"your morale slightly.  Use it to turn it on, or toggle charging on the go "
+"from a Unified Power System."
+msgstr ""
+"这个耗电池的玩意里存着某人的音乐珍藏，里面恰好有不少你喜欢的歌。听听看吧，你的情绪会随着音乐而高涨。使用它来开启设备，或在移动中通过UPS切换充电。"
 
 #: data/json/items/tool/electronics.json
 msgid "mp3 player (on)"
@@ -99225,8 +99468,9 @@ msgstr[0] "掌上型電動"
 msgid ""
 "This is a portable games console in working condition, with an LED-screen "
 "allowing you to play in the dark.  You can use it to play it for a little "
-"while, but this requires UPS."
-msgstr "一个完好的便携式游戏机，它有一个LED屏幕可以在黑暗中使用，你需要UPS才能玩一会。"
+"while, running down the integrated battery.  Can also be set to draw power "
+"from a UPS."
+msgstr "一个完好的便携式游戏机，它有一个LED屏幕可以在黑暗中使用。您可以使用来玩一会儿，消耗内置电池的电量。也可以设置为从UPS获取电力。"
 
 #: data/json/items/tool/electronics.json
 msgid "smartphone"
@@ -99252,10 +99496,9 @@ msgid ""
 "camera and illuminating an area as per flashlight app, assuming it has "
 "enough charge.  The smartphone also has a clock app that includes an alarm."
 "  Runs on a small, rechargeable power cell compatible with Unified Power "
-"Supply."
+"Supply if set to charge from one."
 msgstr ""
-"這是一支時髦、花俏的智慧型手機。假如它有足夠的電力, 它可以用內建的相機拍攝照片, "
-"或用手電筒應用程式照亮一個區域。同時它具有一個包含鬧鐘功能的時鐘應用程式。它使用 UPS 相容的小型充電電池。"
+"一款广受欢迎的时尚智能手机。当电量足够时，能够使用内置摄像头拍摄照片，或者激活手电筒应用照明一个区域。智能手机还有一个时钟应用程序，其中包括闹钟功能。使用小型可充电电池供电，如果设置为从UPS充电，则与UPS兼容。"
 
 #: data/json/items/tool/electronics.json
 msgid "smartphone - music"
@@ -104128,25 +104371,25 @@ msgid ""
 msgstr "一个平头石斧或陶瓷斧，可以用来磨平木制物品。"
 
 #: data/json/items/tool/woodworking.json
-msgid "primtitive axe"
-msgid_plural "primtitive axes"
+msgid "primitive axe"
+msgid_plural "primitive axes"
 msgstr[0] "原始斧"
 
-#. ~ Conditional name for {'str': 'primtitive axe'} when COMPONENT_ID matches
+#. ~ Conditional name for {'str': 'primitive axe'} when COMPONENT_ID matches
 #. rock
 #: data/json/items/tool/woodworking.json
 msgid "stone axe"
 msgid_plural "stone axes"
 msgstr[0] "石斧"
 
-#. ~ Conditional name for {'str': 'primtitive axe'} when COMPONENT_ID matches
+#. ~ Conditional name for {'str': 'primitive axe'} when COMPONENT_ID matches
 #. ceramic
 #: data/json/items/tool/woodworking.json
 msgid "ceramic axe"
 msgid_plural "ceramic axes"
 msgstr[0] "陶瓷斧"
 
-#. ~ Description for {'str': 'primtitive axe'}
+#. ~ Description for {'str': 'primitive axe'}
 #: data/json/items/tool/woodworking.json
 msgid ""
 "This is a stone with a narrow edge affixed to a stick.  It can chop wood, "
@@ -104427,9 +104670,9 @@ msgstr[0] "電動手提鑿岩機"
 #: data/json/items/tool/workshop.json
 msgid ""
 "This is a construction tool for drilling through hard rock or other "
-"surfaces.  It runs on a cell compatible with UPS.  Use it to blast a hole in"
-" adjacent solid terrain."
-msgstr "一种能够钻穿坚硬岩石或其他表面的建筑工具。它靠UPS驱动，开启后，可以把附近的地面或者敌人钻出一个大洞来。"
+"surfaces.  It runs on a rechargeable cell, optionally compatible with UPS.  "
+"Use it to blast a hole in adjacent solid terrain."
+msgstr "一种能够钻穿坚硬岩石或其他表面的建筑工具。它使用可充电电池，并可选择与UPS兼容。开启后，可以把附近的地面或者敌人钻出一个大洞来。"
 
 #: data/json/items/tool/workshop.json
 msgid "hacksaw"
@@ -173011,6 +173254,13 @@ msgid ""
 "bionic power."
 msgstr "这个设备用一个精心设计的端口取代了电子设备的标准电源连接和电池端口，这个端口可以与生化插件连接。连接后，它可以让物品使用生化能量运行。"
 
+#. ~ Description for {'str': 'control laptop'}
+#: data/mods/Aftershock/items/tools.json
+msgid ""
+"A modified laptop, now capable of transmitting in the ultra-high frequencies"
+" utilized by robots.  Activate it to command robots from afar."
+msgstr "一台改造的笔记本，现在可以发送超高频信号来与机器人进行通讯。激活它来遥控机器人。"
+
 #: data/mods/Aftershock/items/vehicle_items.json
 msgid "robot carrier"
 msgid_plural "robot carriers"
@@ -208441,6 +208691,10 @@ msgid "Mark selected item"
 msgstr "標記選中的物品"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Examine item"
+msgstr "检查物品"
+
+#: data/raw/keybindings/keybindings.json
 msgid "Enable auto note for map extra"
 msgstr "开启地图事件自动备注"
 
@@ -209859,10 +210113,6 @@ msgstr "返回"
 
 #: data/raw/keybindings/keybindings.json
 msgid "More"
-msgstr ""
-
-#: data/raw/keybindings/keybindings.json
-msgid "Examine item"
 msgstr ""
 
 #: data/raw/keybindings/keybindings.json
@@ -232438,9 +232688,8 @@ msgid "This tastes really weird!  You're not sure it's good for you…"
 msgstr "这个味道太诡异了！你不认为这玩意对你有好处……"
 
 #: src/iuse.cpp
-#, c-format
-msgid "The %s doesn't want that kind of food."
-msgstr "这只 %s 不想要这种食物。"
+msgid "You doubt someone would want to eat % 1$s."
+msgstr "你怀疑会有人想吃%1$s。"
 
 #: src/iuse.cpp
 #, c-format
@@ -232448,8 +232697,8 @@ msgid "Tame which animal with the %s?"
 msgstr "用%s驯服哪种动物？"
 
 #: src/iuse.cpp
-msgid "Are you sure you want to feed a person the dog food?"
-msgstr "你確定要把狗食餵給人吃?"
+msgid "Are you sure you want to feed a person the pet food?"
+msgstr "你确定你要给一个人类喂宠物食品吗？"
 
 #: src/iuse.cpp
 #, c-format
@@ -232458,9 +232707,9 @@ msgstr "你把你的 %1$s 放到 %2$s 的嘴巴裡!"
 
 #: src/iuse.cpp
 msgid ""
-"Okay, but please, don't give me this again.  I don't want to eat dog food in"
+"Okay, but please, don't give me this again.  I don't want to eat pet food in"
 " the cataclysm all day."
-msgstr "好吧, 但請你不要再給我這個。我可不想在大災變中整天吃狗食。"
+msgstr "好吧，但请再也不要给我喂这玩意。我可不想在大灾变时整天吃宠物食品。"
 
 #: src/iuse.cpp
 #, c-format
@@ -232478,33 +232727,29 @@ msgid "You reach for the %s, but it recoils away from you!"
 msgstr ""
 
 #: src/iuse.cpp
-msgid "You want to feed it the dog food, but it bites your fingers!"
-msgstr "你想餵牠狗食, 但牠卻咬了你的手指!"
+#, c-format
+msgid "The %s doesn't want that kind of food."
+msgstr "这只 %s 不想要这种食物。"
+
+#: src/iuse.cpp
+msgid "You want to feed it the pet food, but it bites your fingers!"
+msgstr "你想用宠物食品喂它，但它咬了你的手指头！"
 
 #: src/iuse.cpp
 msgid ""
-"Apparently it's more interested in your flesh than the dog food in your "
+"Apparently it's more interested in your flesh than the pet food in your "
 "hand!"
-msgstr "相比你手中的狗食, 顯然牠對你的肉更感興趣!"
+msgstr "显然比起你手里的宠物食品，它对你的肉更感兴趣！"
 
 #: src/iuse.cpp
 #, c-format
-msgid ""
-"The %s seems to like you!  It lets you pat its head and seems friendly."
-msgstr "%s 似乎喜歡你! 牠讓你拍了拍他的頭, 感覺很友善。"
+msgid "You feed your %1$s to the %2$s."
+msgstr "你把你的%1$s喂给了%2$s。"
 
 #: src/iuse.cpp
 #, c-format
-msgid ""
-"The %s seems to like you!  Or maybe it just tolerates your presence better."
-"  It's hard to tell with felines."
-msgstr "这只 %s 看来很喜欢你！或者只是暂时容忍你的存在。猫科动物永远让人难以捉摸。"
-
-#: src/iuse.cpp
-#, c-format
-msgid ""
-"The %s seems to like you!  It runs around your legs and seems friendly."
-msgstr "%s 似乎喜歡你! 牠在你的腳邊跑來跑去, 感覺很友善。"
+msgid "The %1$s is your pet now!"
+msgstr "%1$s现在是你的宠物了！"
 
 #: src/iuse.cpp
 msgid "There is nothing to be fed here."
@@ -235373,6 +235618,16 @@ msgstr "下次在食用应当热食的时候，你会尝试使用%s来加热食�
 #, c-format
 msgid "You will no longer use %s to heat food."
 msgstr "你不会再用%s来加热食物。"
+
+#: src/iuse.cpp
+#, c-format
+msgid "You will recharge the %s using any available Unified Power System."
+msgstr "你将使用任何可用的 UPS 为 %s 充电"
+
+#: src/iuse.cpp
+#, c-format
+msgid "You will no longer recharge the %s via UPS."
+msgstr "你将不再通过 UPS 为 %s 充电。"
 
 #: src/iuse.cpp
 msgid "This electric grid has no connections."
@@ -241628,12 +241883,12 @@ msgstr ""
 
 #: src/mod_manager_ui.cpp
 msgid "The mod is already on the list."
-msgstr ""
+msgstr "该模组已在列表中。"
 
 #: src/mod_manager_ui.cpp
 #, c-format
 msgid "Unable to find mod with id \"%s\"."
-msgstr ""
+msgstr "无法找到ID为\"%s\"的模组。"
 
 #: src/mod_manager_ui.cpp
 msgid "Failed to build dependency tree for the mod."
@@ -241654,6 +241909,9 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"该模组或其某些依赖项与活动模组存在冲突：\n"
+"\n"
+"%s"
 
 #: src/monattack.cpp
 #, c-format
@@ -247142,12 +247400,12 @@ msgstr "交易多少 %s [最多：%d]："
 #: src/npctrade.cpp
 #, c-format
 msgid "Hint: You can buy up to %d with your current balance."
-msgstr ""
+msgstr "提示：您可以用当前的余额购买最多 %d。"
 
 #: src/npctrade.cpp
 #, c-format
 msgid "Hint: You'll need to offer %d to even out the deal."
-msgstr ""
+msgstr "提示：您需要提供 %d 来平衡交易。"
 
 #: src/npctrade.cpp
 msgid "You'll need to offer me more than that."
@@ -247263,7 +247521,7 @@ msgstr "与 SDL、图块、图集和声音有关的信息。"
 
 #: src/options.cpp
 msgid "Lua"
-msgstr ""
+msgstr "Lua"
 
 #: src/options.cpp
 msgid "Messages from Lua scripts."
@@ -249108,6 +249366,14 @@ msgid ""
 msgstr "一个确定大地图特殊地形之间最小距离的数字。-1 允许大地图特殊地形的交汇。"
 
 #: src/options.cpp
+msgid "Vehicle damage modifier"
+msgstr "车辆损坏修正系数"
+
+#: src/options.cpp
+msgid "A scaling factor that determines how damaged vehicles are."
+msgstr "设置车辆损坏程度的系数。"
+
+#: src/options.cpp
 msgid "Spawn rate scaling factor"
 msgstr "怪物產生比率"
 
@@ -249942,7 +250208,7 @@ msgstr "確定刪除註記?"
 
 #: src/overmap_ui.cpp
 msgid "Yes, and don't ask again."
-msgstr ""
+msgstr "是的，不要再次询问。"
 
 #: src/overmap_ui.cpp
 msgid "Mark area as dangerous ( to avoid on automove paths? )"
