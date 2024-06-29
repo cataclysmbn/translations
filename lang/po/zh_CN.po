@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-06-22 01:02+0000\n"
+"POT-Creation-Date: 2024-06-29 01:04+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -3802,16 +3802,17 @@ msgid ""
 "pixelation."
 msgstr "一个出现故障的生化插件。导致你偶尔会出现视觉失真和像素化。"
 
-#: data/json/bionics.json
+#: data/json/bionics.json data/json/enchantments.json
 msgid "Uncanny Dodge"
 msgstr "神奇闪避"
 
 #. ~ Description for {'str': 'Uncanny Dodge'}
 #: data/json/bionics.json
 msgid ""
-"Your nervous system has been augmented with bionic processors, allowing you "
-"to dodge attacks beyond normal human capability, including bullets."
-msgstr "你的神经系统因为安装插件而得到了强化，获得超乎常人的回避技巧，包括闪避子弹。"
+"Your nervous system has been augmented with bionic processors, increasing "
+"your ability to dodge while active.  Your dodge skill will also grant a "
+"chance to evade attacks beyond normal human capability, such as bullets."
+msgstr "你的神经系统被植入了仿生处理器，从而提高了你的闪避能力。 你的闪避技能还能让你有机会躲避子弹等超出常人能力的攻击。"
 
 #: data/json/bionics.json
 msgid "Internal Unified Power System"
@@ -3884,7 +3885,7 @@ msgstr ""
 
 #: data/json/bionics.json
 msgid "Advanced Micro Reactor"
-msgstr "先进微型反应堆"
+msgstr "高级微型反应堆"
 
 #. ~ Description for {'str': 'Advanced Micro Reactor'}
 #: data/json/bionics.json
@@ -5452,6 +5453,10 @@ msgstr "安装玻璃冰箱"
 #: data/json/construction_group.json
 msgid "Install Plutonium Generator"
 msgstr "安装钚反应堆"
+
+#: data/json/construction_group.json
+msgid "Place 3D Printer"
+msgstr "放置3D打印机"
 
 #: data/json/construction_group.json
 msgid "Place Window-Mounted AC Unit"
@@ -9242,6 +9247,11 @@ msgstr "你因为口渴而变得虚弱。"
 msgid "You're weak from thirst."
 msgstr "你因为口渴而变得虚弱。"
 
+#. ~ Description for {'str': 'Uncanny Dodge'}
+#: data/json/enchantments.json
+msgid "You're currently under the effects of the Uncanny Dodge CBM."
+msgstr "您目前正处于神奇闪避CBM的效果下。"
+
 #: data/json/field_type.json
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 #: data/mods/alt_map_key/overmap_terrain.json src/mapdata.cpp src/skill.cpp
@@ -10390,9 +10400,24 @@ msgstr ""
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
 msgid ""
+"This item <bad>requires adequate tinder</bad> to be provided as fuel when "
+"starting a fire."
+msgstr "这件物品<bad>需要足够的火绒</bad>来作为点火时的燃料。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
 "Using this weapon with <info>less strength than its requirement</info> will "
 "still allow you to fire, but at reduced <bad>damage and range</bad>."
 msgstr "使用这种武器时，如果<info>力量低于其要求</info>，仍然可以开火，但<bad>伤害和射程会减少</bad>。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This item can be used as tinder in a firewood source, <info>automatically "
+"being used</info> to light fires if using a a firestarting tool that "
+"requires it."
+msgstr "此物品可用作柴火来源中的火绒，<info>在使用需要它的打火工具时</info>会自动用于点火。"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -10782,6 +10807,11 @@ msgstr "开启"
 #. 'str_pl': 'heavy power armor helmets (active)'}.
 #. ~ Use action menu_text for {'str': 'light power armor helmet (active)',
 #. 'str_pl': 'light power armor helmets (active)'}.
+#. ~ Use action menu_text for {'str_sp': 'survivor power armor (active)'}.
+#. ~ Use action menu_text for {'str': 'military exo-suit (active)', 'str_pl':
+#. 'military exo-suits (active)'}.
+#. ~ Use action menu_text for {'str': 'industrial exo-suit (active)',
+#. 'str_pl': 'industrial exo-suits (active)'}.
 #. ~ Use action menu_text for {'str': 'L-stick (on)', 'str_pl': 'L-sticks
 #. (on)'}.
 #. ~ Use action menu_text for {'str': 'cellphone - Screenlight', 'str_pl':
@@ -10822,6 +10852,7 @@ msgstr "开启"
 #. cubes (torch on)'}.
 #: data/json/item_actions.json data/json/items/tool_armor.json
 #: data/json/items/armor/cloaks.json data/json/items/armor/power_armor.json
+#: data/json/items/armor/suits_protection.json
 #: data/json/items/melee/bludgeons.json data/json/items/tool/electronics.json
 #: data/json/items/tool/lighting.json data/json/items/tool/misc.json
 #: data/mods/Aftershock/items/obsolete.json
@@ -15112,6 +15143,10 @@ msgstr "泥土"
 #: data/json/materials.json
 msgid "Zinc"
 msgstr "锌"
+
+#: data/json/materials.json
+msgid "Carbon Fiber"
+msgstr "碳素纤维"
 
 #. ~ 1$s is monster name, 2$s bodypart in accusative
 #: data/json/monster_attacks.json src/monattack.cpp
@@ -29523,6 +29558,24 @@ msgid ""
 msgstr ""
 "一台能够利用原子能的强大设备。它是一座紧凑的核反应堆，经过密封和配置，可以从精炼的核燃料中提供几乎无限的电力。安装并连接后，它将产生一个小但稳定的电力。"
 
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "grid 3D printer"
+msgstr "3D打印机（电网）"
+
+#. ~ Description for grid 3D printer
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "A 3D printer connected to a electrical grid."
+msgstr "一个连接到建筑电网的3D打印机。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "grid 3D printer (advanced)"
+msgstr "高级3D打印机（电网）"
+
+#. ~ Description for grid 3D printer (advanced)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "An advanced 3D printer connected to a electrical grid."
+msgstr "一个连接到建筑电网的高级3D打印机。"
+
 #: data/json/furniture_and_terrain/furniture-barriers.json
 msgid "road barricade"
 msgstr "路障"
@@ -41596,11 +41649,12 @@ msgstr[0] "神奇闪避CBM"
 #. ~ Description for {'str': 'Uncanny Dodge CBM'}
 #: data/json/items/bionics.json
 msgid ""
-"Bionic processors that augment the user's nervous system, allowing them to "
-"dodge attacks beyond normal human capability, including bullets."
+"Bionic processors that augment the user's nervous system, increasing their "
+"ability to dodge while active.  Dodge skill will also allow evading attacks "
+"beyond normal human capability, such as bullets."
 msgstr ""
-"一套生化处理器，能够增强使用者的神经系统，使其能够以远超常人的水平回避攻击，包括闪避子弹。\n"
-"\"这下我连雨滴也躲得开了。\""
+"仿生处理器可增强使用者的神经系统，从而提高他们的闪避能力。 闪避技能还能躲避子弹等超出正常人能力的攻击。\n"
+"\"哈哈现在我连雨滴都能躲开了！\""
 
 #: data/json/items/bionics.json
 msgid "Unified Power System CBM"
@@ -43897,6 +43951,16 @@ msgstr "一把假枪，通过未知的推进方式以极高的速度发射出某
 msgid "grid water purifier"
 msgid_plural "grid water purifiers"
 msgstr[0] "净水器（电网）"
+
+#: data/json/items/fake.json
+msgid "Grid 3D Printer"
+msgid_plural "Grid 3D Printers"
+msgstr[0] "3D打印机（电网）"
+
+#: data/json/items/fake.json
+msgid "Advanced Grid 3D Printer"
+msgid_plural "Advanced Grid 3D Printers"
+msgstr[0] "高级3D打印机（电网）"
 
 #: data/json/items/faults_bionic.json
 msgid "Non-sterile"
@@ -49560,9 +49624,9 @@ msgstr[0] "电池仓改装模组"
 #. ~ Description for {'str': 'battery compartment mod'}
 #: data/json/items/toolmod.json
 msgid ""
-"A battery compartment mod that allows using vehicle batteries and small "
-"storage batteries in regular tools."
-msgstr "一个电池仓改装模组，允许将普通工具改装成使用汽车电池及小型蓄电池供电。"
+"A battery compartment mod that allows using vehicle and storage batteries in"
+" regular tools, up to the size of a car battery."
+msgstr "一个电池仓改装模组，允许将普通工具改装成使用汽车电池及小型蓄电池供电，最大尺寸可达到汽车电池的大小。"
 
 #: data/json/items/toolmod.json
 msgid "light battery mod"
@@ -50145,6 +50209,16 @@ msgid ""
 "rounds."
 msgstr ".357 西格弹的空尖弹型号。.357 西格弹是一种高速手枪弹，相较于普通手枪弹药它的弹道更加平直。    "
 
+#: data/json/items/ammo/357sig.json
+msgid ".357 SIG FMJ, black powder"
+msgid_plural ".357 SIG FMJ, black powders"
+msgstr[0] ".357 西格被甲弹（黑火药）"
+
+#: data/json/items/ammo/357sig.json
+msgid ".357 SIG JHP, black powder"
+msgid_plural ".357 SIG JHP, black powders"
+msgstr[0] ".357 西格空尖弹（黑火药）"
+
 #: data/json/items/ammo/36paper.json
 msgid ".36 paper cartridge"
 msgid_plural ".36 paper cartridges"
@@ -50272,6 +50346,11 @@ msgid ""
 ".38 Super ammunition with 90gr JHP bullets.  Designed in 1929, the .38 super"
 " cartridge was designed to penetrate body armor and vehicles."
 msgstr "90格令的.38 超级弹是一种被甲空尖弹。于1929年面世，.38超级弹设计用于穿透防弹衣和车辆。"
+
+#: data/json/items/ammo/38super.json
+msgid ".38 Super, black powder"
+msgid_plural ".38 Super, black powders"
+msgstr[0] ".38 超级弹（黑火药）"
 
 #: data/json/items/ammo/40.json
 msgid ".40 S&W FMJ"
@@ -50468,6 +50547,11 @@ msgstr[0] ".410 000 号霰弹"
 #: data/json/items/ammo/410shot.json
 msgid "A .410 shell with 5 000 pellets.  Good for a hunting or combat load."
 msgstr "一颗 .410 口径霰弹，内装约5000颗小弹丸。适合狩猎或战斗使用。"
+
+#: data/json/items/ammo/410shot.json
+msgid ".410 000 shot, black powder"
+msgid_plural ".410 000 shot, black powders"
+msgstr[0] ".410 000 号霰弹（黑火药）"
 
 #: data/json/items/ammo/44.json
 msgid ".44 Magnum FMJ"
@@ -50825,6 +50909,21 @@ msgstr ""
 "这款 .50 BMG "
 "弹型号充分利用了自身口径的潜在载荷发射能力：弹尖内装入了特殊的燃烧剂，会在撞击时点燃，并引爆RDX或PETN装药。此外还会点燃环绕在碳化钨穿甲弹头周围的锆粉，两者被同时密封在软钢杯中。钢杯碎片和燃烧的金属粉末跟随着穿甲弹头穿过装甲目标，增加了杀伤力。这种罕见复杂且昂贵的弹药几乎不可能再次被制造出来；慎重使用。"
 
+#: data/json/items/ammo/50.json
+msgid ".50 BMG M17 tracer, black powder"
+msgid_plural ".50 BMG M17 tracer, black powders"
+msgstr[0] ".50 BMG M17 曳光弹（黑火药）"
+
+#: data/json/items/ammo/50.json
+msgid ".50 BMG M33 Ball, black powder"
+msgid_plural ".50 BMG M33 Ball, black powders"
+msgstr[0] ".50 BMG M33 普通弹（黑火药）"
+
+#: data/json/items/ammo/50.json
+msgid ".50 BMG M2 AP, black powder"
+msgid_plural ".50 BMG M2 AP, black powders"
+msgstr[0] ".50 BMG M2 穿甲弹（黑火药）"
+
 #: data/json/items/ammo/500.json
 msgid ".500 S&W Magnum"
 msgid_plural ".500 S&W Magnums"
@@ -50870,6 +50969,16 @@ msgid ""
 "Armor piercing 5.45x39mm ammunition with 57gr bullets containing a steel "
 "penetrator.  Developed in 1998 by the Russian military."
 msgstr "57格令的5.45x39mm 7N22 钢芯穿甲弹，俄军于1998年研制。"
+
+#: data/json/items/ammo/545x39.json
+msgid "5.45x39mm 7N10, black powder"
+msgid_plural "5.45x39mm 7N10, black powders"
+msgstr[0] "5.45x39mm 7N10 弹（黑火药）"
+
+#: data/json/items/ammo/545x39.json
+msgid "5.45x39mm 7N22, black powder"
+msgid_plural "5.45x39mm 7N22, black powders"
+msgstr[0] "5.45x39mm 7N22 弹（黑火药）"
 
 #: data/json/items/ammo/57.json
 msgid "5.7x28mm SS190"
@@ -50977,6 +51086,21 @@ msgstr ""
 ".700 Nitro "
 "Express是一种非常强力的步枪子弹，设计用于远距离射击。它优秀的准确度和穿甲性能使其成为最致命的弹药之一，这足够弥补其巨大的后坐力和噪音所带来的负面影响。"
 
+#: data/json/items/ammo/700nx.json
+msgid ".700 NX, black powder"
+msgid_plural ".700 NX, black powders"
+msgstr[0] ".700 NX 弹（黑火药）"
+
+#. ~ Description for {'str': '.700 NX, black powder'}
+#: data/json/items/ammo/700nx.json
+msgid ""
+"The .700 Nitro Express is a very powerful rifle round designed for long-"
+"range use.  The \"Nitro\" in the name isn't very applicable to this "
+"blackpowder load, but it still has plenty of Express."
+msgstr ""
+".700 Nitro "
+"Express是一种非常强力的步枪子弹，设计用于远距离射击。虽然名称中的\"Nitro（硝基）\"不太适用于这种黑火药装药，但它依然具有相当强的威力。"
+
 #: data/json/items/ammo/762.json
 msgid "7.62x39mm 57-N-231"
 msgid_plural "7.62x39mm 57-N-231s"
@@ -51009,6 +51133,16 @@ msgstr ""
 "123 格令的7.62x39mm M67 型子弹。由于7.62x39mm M43型子弹的终端弹道性能不足，于是在20世纪60年代，7.62x39mm "
 "M67型子弹在南斯拉夫被研发出来。它在击中目标之后会比M43型子弹更快地出现弹头翻滚，给目标造成更大的伤害。"
 
+#: data/json/items/ammo/762.json
+msgid "7.62x39mm 57-N-231, black powder"
+msgid_plural "7.62x39mm 57-N-231, black powders"
+msgstr[0] "7.62x39mm 57-N-231 弹（黑火药）"
+
+#: data/json/items/ammo/762.json
+msgid "7.62x39mm M67, black powder"
+msgid_plural "7.62x39mm M67, black powders"
+msgstr[0] "7.62x39mm M67 弹（黑火药）"
+
 #: data/json/items/ammo/762R.json
 msgid "7.62x54mmR"
 msgid_plural "7.62x54mmRs"
@@ -51025,6 +51159,11 @@ msgid ""
 msgstr ""
 "150格令的7.62x54mmR "
 "全金属被甲弹。7.62x54mmR口径子弹是至今仍被广泛使用的最老式子弹之一，主要是因为它所配套的莫辛纳甘步枪的流行使得它经久不衰，尽管在军用领域它在几十年前就已经撤装，但是在民用射击领域至今仍有它的身影。这种弹药是一种能够一击杀死大部分猎物的大威力弹药。"
+
+#: data/json/items/ammo/762R.json
+msgid "7.62x54mmR, black powder"
+msgid_plural "7.62x54mmR, black powders"
+msgstr[0] "7.62x54mmR 弹（黑火药）"
 
 #: data/json/items/ammo/762x25.json
 msgid "7.62x25mm FMJ"
@@ -52318,6 +52457,19 @@ msgstr[0] "轻皮护臂"
 #: data/json/items/armor/arms_armor.json
 msgid "A pair of light leather arm guards, made for archery."
 msgstr "一对轻皮革护臂，用于射箭。"
+
+#: data/json/items/armor/arms_armor.json
+msgid "carbon fiber arm guards"
+msgid_plural "carbon fiber arm guardss"
+msgstr[0] "碳素纤维护臂"
+
+#. ~ Description for {'str': 'carbon fiber arm guards'}
+#: data/json/items/armor/arms_armor.json
+msgid ""
+"Custom armguards of layered carbon fiber armor made using a 3D printer.  Its"
+" rigid plates are more comparable to a suit of armor than kevlar, but it's "
+"very protective and lightweight."
+msgstr "使用3D打印机定制的多层碳素纤维护臂。 与凯夫拉相比，它的硬质板材更像是一套盔甲，但却具有很强的防护性，而且重量很轻。"
 
 #: data/json/items/armor/ballistic_armor.json
 msgid "dragon skin vest"
@@ -53634,6 +53786,19 @@ msgstr "一双带绑带的凉鞋，前部有皮革板，类似于古罗马和希
 msgid "pair of thick socks"
 msgid_plural "pairs of thick socks"
 msgstr[0] "厚袜子"
+
+#: data/json/items/armor/boots.json
+msgid "carbon fiber boots"
+msgid_plural "carbon fiber bootss"
+msgstr[0] "碳素纤维靴"
+
+#. ~ Description for {'str': 'carbon fiber boots'}
+#: data/json/items/armor/boots.json
+msgid ""
+"A custom pair of boots made out of layered carbon fiber armor made using a "
+"3D printer.  Its rigid plates are more comparable to a suit of armor than "
+"kevlar, but it's very protective and lightweight."
+msgstr "使用3D打印机定制的多层碳素纤维靴子。 与凯夫拉相比，它的硬质板材更像是一套盔甲，但却具有很强的防护性，而且重量很轻。"
 
 #: data/json/items/armor/cloaks.json
 msgid "American flag"
@@ -55261,6 +55426,19 @@ msgstr[0] "高尔夫球手套"
 msgid "A thin pair of black leather golfing gloves."
 msgstr "一双轻薄的黑色皮制高尔夫球手套。"
 
+#: data/json/items/armor/gloves.json
+msgid "carbon fiber gloves"
+msgid_plural "carbon fiber glovess"
+msgstr[0] "碳素纤维手套"
+
+#. ~ Description for {'str': 'carbon fiber gloves'}
+#: data/json/items/armor/gloves.json
+msgid ""
+"A custom pair of fingerless armored gloves made using a 3D printer.  Its "
+"rigid plates are more comparable to metal than kevlar, but it's very "
+"protective and lightweight."
+msgstr "使用3D打印机定制的无指装甲手套。与凯夫拉相比，它的硬质板材更像金属，但保护性很强，重量也很轻。"
+
 #: data/json/items/armor/hats.json
 msgid "ten-gallon hat"
 msgid_plural "ten-gallon hats"
@@ -56071,6 +56249,19 @@ msgid ""
 "A huge makeshift helmet made from a canning pot.  For the truly desperate "
 "man-bear-pig."
 msgstr "一个使用水浴锅制成的还凑合的超大号头盔。为了那些真正走投无路的人型猪头熊。（注：南方公园S10E6）"
+
+#: data/json/items/armor/helmets.json
+msgid "carbon fiber helmet"
+msgid_plural "carbon fiber helmets"
+msgstr[0] "碳素纤维头盔"
+
+#. ~ Description for {'str': 'carbon fiber helmet'}
+#: data/json/items/armor/helmets.json
+msgid ""
+"A custom helmet of layered carbon fiber armor made using a 3D printer.  Its "
+"rigid plates are more comparable to a suit of armor than kevlar, but it's "
+"very protective and lightweight."
+msgstr "使用3D打印机定制的多层碳素纤维头盔。 与凯夫拉相比，它的硬质板材更像是一套盔甲，但却具有很强的防护性，而且重量很轻。"
 
 #: data/json/items/armor/holster.json
 msgid "back holster"
@@ -60342,6 +60533,19 @@ msgid ""
 " to wear in the summer and far easier to move in."
 msgstr "这是一种由皮革制成的装甲裙，其内精巧缝入金属板。相比于合适的腿部装甲，它的防护性稍逊一筹，但在夏天穿着更为舒适，也更容易活动。"
 
+#: data/json/items/armor/legs_armor.json
+msgid "carbon fiber leg guards"
+msgid_plural "carbon fiber leg guardss"
+msgstr[0] "碳素纤维护腿"
+
+#. ~ Description for {'str': 'carbon fiber leg guards'}
+#: data/json/items/armor/legs_armor.json
+msgid ""
+"Custom legs of layered carbon fiber armor made using a 3D printer.  Its "
+"rigid plates are more comparable to a suit of armor than kevlar, but it's "
+"very protective and lightweight."
+msgstr "使用3D打印机定制的多层碳素纤维护腿。 与凯夫拉相比，它的硬质板材更像是一套盔甲，但却具有很强的防护性，而且重量很轻。"
+
 #: data/json/items/armor/legs_clothes.json
 msgid "basketball shorts"
 msgid_plural "basketball shorts"
@@ -61414,7 +61618,11 @@ msgstr[0] "动力装甲"
 #. power armor'}.
 #. ~ Use action msg for {'str': 'light power armor', 'str_pl': 'suits of light
 #. power armor'}.
+#. ~ Use action msg for {'str': 'survivor power armor'}.
+#. ~ Use action msg for {'str': 'military exo-suit'}.
+#. ~ Use action msg for {'str': 'industrial exo-suit'}.
 #: data/json/items/armor/power_armor.json
+#: data/json/items/armor/suits_protection.json
 msgid "The %s engages."
 msgstr "%s 启动了。"
 
@@ -61443,7 +61651,13 @@ msgstr[0] "动力装甲（开启）"
 #. of heavy power armor (active)'}.
 #. ~ Use action msg for {'str': 'light power armor (active)', 'str_pl': 'suits
 #. of light power armor (active)'}.
+#. ~ Use action msg for {'str_sp': 'survivor power armor (active)'}.
+#. ~ Use action msg for {'str': 'military exo-suit (active)', 'str_pl':
+#. 'military exo-suits (active)'}.
+#. ~ Use action msg for {'str': 'industrial exo-suit (active)', 'str_pl':
+#. 'industrial exo-suits (active)'}.
 #: data/json/items/armor/power_armor.json
+#: data/json/items/armor/suits_protection.json
 msgid "The %s disengages."
 msgstr "%s停止了工作。"
 
@@ -62099,6 +62313,35 @@ msgid ""
 "A large metal reinforced shield with spikes jutting out of it.  Can be used "
 "as a melee weapon if need be."
 msgstr "一种金属加固的大型盾牌，上面突出着尖刺。如果需要，可以用作近战武器。"
+
+#: data/json/items/armor/shields.json
+msgid "carbon fiber buckler"
+msgid_plural "carbon fiber bucklers"
+msgstr[0] "碳素纤维小圆盾"
+
+#. ~ Description for {'str': 'carbon fiber buckler'}
+#: data/json/items/armor/shields.json
+msgid ""
+"A custom buckler made out of layered carbon fiber armor over synthetic "
+"fabric padding made using a 3D printer.  Its rigid plates are more "
+"comparable to a sheet of metal than kevlar, but it's very protective and "
+"lightweight."
+msgstr "使用3D打印机制作的层叠碳素纤维装甲和合成织物填充物定制的圆盾。与凯夫拉相比，它的硬质板材更像金属板，但却具有很强的防护性，而且重量很轻。"
+
+#: data/json/items/armor/shields.json
+msgid "carbon fiber ballistic shield"
+msgid_plural "carbon fiber ballistic shields"
+msgstr[0] "碳素纤维防弹盾牌"
+
+#. ~ Description for {'str': 'carbon fiber ballistic shield'}
+#: data/json/items/armor/shields.json
+msgid ""
+"A custom ballistic shield made out of layered carbon fiber armor over "
+"synthetic fabric padding made using a 3D printer.  Its rigid plates are more"
+" comparable to a sheet of metal than kevlar, but it's very protective and "
+"lightweight."
+msgstr ""
+"使用3D打印机制作的层叠碳素纤维装甲和合成织物填充物定制的防弹盾牌。与凯夫拉相比，它的硬质板材更像金属板，但却具有很强的防护性，而且重量很轻。"
 
 #: data/json/items/armor/storage.json
 msgid "backpack"
@@ -63256,6 +63499,104 @@ msgid ""
 "elements as well as from harm."
 msgstr "一件自制的防寒重型复合防护服，由防弹衣及强化保暖的连身皮衣缝制而成，保暖的同时可以提供环境和伤害防护。"
 
+#: data/json/items/armor/suits_protection.json
+msgid "carbon fiber armor"
+msgid_plural "carbon fiber armors"
+msgstr[0] "碳素纤维护甲"
+
+#. ~ Description for {'str': 'carbon fiber armor'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"A custom suit of layered carbon fiber armor over neoprene padding made using"
+" a 3D printer.  Its rigid plates are more comparable to a suit of armor than"
+" kevlar, but it's very protective and moves surprisingly well."
+msgstr "使用3D打印机定制的一套多层碳素纤维护甲，外覆氯丁橡胶衬垫。 与凯夫拉相比，它的硬板更像是一套盔甲，但它的保护性很强，移动性也出奇地好。"
+
+#: data/json/items/armor/suits_protection.json
+msgid "survivor power armor"
+msgid_plural "survivor power armors"
+msgstr[0] "幸存者动力装甲"
+
+#. ~ Description for {'str': 'survivor power armor'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, not everyone has "
+"access to it.  This particular suit is cobbled together from scavenged "
+"materials, but it works for what it is."
+msgstr "尽管动力装甲风靡全球军队，但并非人人都能拥有。 这套特殊的盔甲是用捡来的材料拼凑而成的，但就其本质而言，它还是有效的。"
+
+#: data/json/items/armor/suits_protection.json
+msgid "survivor power armor (active)"
+msgid_plural "survivor power armor (active)"
+msgstr[0] "幸存者动力装甲（开启）"
+
+#. ~ Description for {'str_sp': 'survivor power armor (active)'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, not everyone has "
+"access to it.  This particular suit is cobbled together from scavenged "
+"materials, but it works for what it is.  It is currently turned on, activate"
+" it to turn it off."
+msgstr ""
+"尽管动力装甲风靡全球军队，但并非人人都能拥有。 这套特殊的盔甲是用捡来的材料拼凑而成的，但就其本质而言，它还是有效的。当前已打开，激活后即可关闭。"
+
+#: data/json/items/armor/suits_protection.json
+msgid "military exo-suit"
+msgid_plural "military exo-suits"
+msgstr[0] "军用外骨骼"
+
+#. ~ Description for {'str': 'military exo-suit'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, the technologies "
+"used to make them also allowed for smaller, less protective external rigging"
+" that rely on UPS to boost strength, ones designed for operatives or light "
+"infantry."
+msgstr "尽管动力装甲风靡全球军队，用于制造它们的技术也使得较小、保护性较弱的外部装备成为可能。这些装备依靠UPS提升力量，专为特工或轻步兵设计。"
+
+#: data/json/items/armor/suits_protection.json
+msgid "military exo-suit (active)"
+msgid_plural "military exo-suits (active)"
+msgstr[0] "军用外骨骼（开启）"
+
+#. ~ Description for {'str': 'military exo-suit (active)', 'str_pl': 'military
+#. exo-suits (active)'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, the technologies "
+"used to make them also allowed for smaller, more personalized suits of armor"
+" that rely on UPS, ones designed for operatives or light infantry rather "
+"than heavy infantry.  It is currently turned on, activate it to turn it off."
+msgstr ""
+"尽管动力装甲风靡全球军队，用于制造它们的技术也使得较小、更个性化的装甲成为可能。这些装甲依靠UPS提升力量，专为特工或轻步兵设计，而不是重步兵。当前已打开，激活后即可关闭。"
+
+#: data/json/items/armor/suits_protection.json
+msgid "industrial exo-suit"
+msgid_plural "industrial exo-suits"
+msgstr[0] "工业用外骨骼"
+
+#. ~ Description for {'str': 'industrial exo-suit'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, the technologies "
+"used to make them also allowed for smaller, industrial powered suits meant "
+"for heavy lifting."
+msgstr "尽管动力装甲风靡全球军队，用于制造它们的技术也使得用于重型举升的较小工业动力装甲成为可能。"
+
+#: data/json/items/armor/suits_protection.json
+msgid "industrial exo-suit (active)"
+msgid_plural "industrial exo-suits (active)"
+msgstr[0] "工业用外骨骼（开启）"
+
+#. ~ Description for {'str': 'industrial exo-suit (active)', 'str_pl':
+#. 'industrial exo-suits (active)'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, the technologies "
+"used to make them also allowed for industrial powered suits meant for heavy "
+"lifting.  It is currently turned on, activate it to turn it off."
+msgstr "尽管动力装甲风靡全球军队，但用于制造它们的技术也使得工业用动力装甲成为可能，这些装甲用于重型举升。当前已打开，激活后即可关闭。"
+
 #: data/json/items/armor/swimming.json
 msgid "pair of swimming trunks"
 msgid_plural "pairs of swimming trunks"
@@ -63641,6 +63982,19 @@ msgid ""
 "An armored vest made from thick leather and metal plates.  Cumbersome, but "
 "offers excellent protection from harm."
 msgstr "一件由厚实的皮革加上金属板制成的护甲背心。累赘，但是提供了绝佳的伤害保护。"
+
+#: data/json/items/armor/torso_armor.json
+msgid "carbon fiber chestguard"
+msgid_plural "carbon fiber chestguards"
+msgstr[0] "碳素纤维护胸"
+
+#. ~ Description for {'str': 'carbon fiber chestguard'}
+#: data/json/items/armor/torso_armor.json
+msgid ""
+"A custom chestplate of layered carbon fiber armor made using a 3D printer.  "
+"Its rigid plates are more comparable to a suit of armor than kevlar, but "
+"it's very protective and lightweight."
+msgstr "使用3D打印机定制的多层碳素纤维护胸。 与凯夫拉相比，它的硬质板材更像是一套盔甲，但却具有很强的防护性，而且重量很轻。"
 
 #: data/json/items/armor/torso_clothes.json
 msgid "leather apron"
@@ -87242,6 +87596,17 @@ msgid ""
 " better homemade weapons."
 msgstr "一把设计精良的自制卡宾枪，已经锯短枪管。支持原始的可拆卸弹匣或STANAG北约制式弹匣，算是把比较好的自制武器。"
 
+#: data/json/items/gun/223.json
+msgid "carbon fiber assault rifle"
+msgid_plural "carbon fiber assault rifles"
+msgstr[0] "碳素纤维突击步枪"
+
+#: data/json/items/gun/223.json
+msgid ""
+"This assault rifle was made using a 3D printer, resulting in a very "
+"lightweight weapon."
+msgstr "这支突击步枪是用3D打印机制造的，因此重量非常轻。"
+
 #: data/json/items/gun/270win.json
 msgid "Remington 700 .270 Win"
 msgid_plural "Remington 700 .270 Win"
@@ -89523,6 +89888,17 @@ msgstr ""
 "瓦尔特 CCP 手枪是一种采用气体延迟反冲式枪机、适合隐藏携带的民用半自动手枪，其内部设计几乎与与 H&K P7 "
 "手枪相同。固定的枪管使其理论上比其它手枪更为精确，但是由于其本身扳机的质量和小瞄具半径，可能很难察觉到任何精度提升。"
 
+#: data/json/items/gun/9mm.json
+msgid "carbon fiber machine pistol"
+msgid_plural "carbon fiber machine pistols"
+msgstr[0] "碳素纤维冲锋手枪"
+
+#: data/json/items/gun/9mm.json
+msgid ""
+"This 3D printed machine pistol is made completely without any metal parts.  "
+"As a result, it is very lightweight."
+msgstr "这把3D打印冲锋手枪完全不使用任何金属部件。 因此，它非常轻便。"
+
 #: data/json/items/gun/9x18.json
 msgid "Makarov PM"
 msgid_plural "Makarov PMs"
@@ -90839,11 +91215,11 @@ msgstr[0] "电子激光束改装件"
 
 #: data/json/items/gunmod/laser_gunmods.json
 msgid ""
-"A set of high-tech electronics and optics.  These converts a laser pistol "
+"A set of high-tech electronics and optics.  These converts a laser weapon "
 "into a less-lethal electrolaser capable of stunning targets, at the cost of "
 "a decreased damage output and increased power consumption."
 msgstr ""
-"一套高科技电路及光学器件。这套改装模组可将激光手枪改装成发射非致命但能够电击击晕目标的电子束激光，但相应的会减少伤害输出，并增加射击时的能量消耗。"
+"一套高科技电路及光学器件。这套改装模组可将激光武器改装成发射非致命但能够电击击晕目标的电子束激光，但相应的会减少伤害输出，并增加射击时的能量消耗。"
 
 #: data/json/items/gunmod/laser_gunmods.json
 msgid "effective emitter"
@@ -92346,6 +92722,18 @@ msgid ""
 "little more than a bent sheet of steel held together by duct tape and hope, "
 "for use with the Ruger Mini-14 rifle."
 msgstr "一个简易的单排盒式弹匣，被强力胶带勉强粘起来的，是几块弯曲钢板和生存的希望。能容纳5发子弹，可用于鲁格Mini-14步枪。"
+
+#: data/json/items/magazine/223.json
+msgid "carbon fiber .223 30-round magazine"
+msgid_plural "carbon fiber .223 30-round magazines"
+msgstr[0] "碳素纤维 .223 30发弹匣"
+
+#. ~ Description for {'str': 'carbon fiber .223 30-round magazine'}
+#: data/json/items/magazine/223.json
+msgid ""
+"A standard capacity 30-round box magazine for use with 3D printed carbon "
+"fiber rifles, though it will fit with just about any STANAG rifle."
+msgstr "一个标准容量的 30 发盒式弹匣，用于3D打印碳素纤维步枪，但几乎适用于任何 STANAG 步枪。"
 
 #: data/json/items/magazine/300.json
 msgid "M2010 ESR magazine"
@@ -95654,6 +96042,19 @@ msgid ""
 "earlier ge or dagger-axe."
 msgstr "一把起源自中国商朝或是更早时期的青铜长柄武器。它的顶部由矛尖和垂直于矛尖的被称作戈的刀刃组成。"
 
+#: data/json/items/melee/spears_and_polearms.json
+msgid "carbon fiber spear"
+msgid_plural "carbon fiber spears"
+msgstr[0] "碳素纤维长矛"
+
+#. ~ Description for {'str': 'carbon fiber spear'}
+#: data/json/items/melee/spears_and_polearms.json
+msgid ""
+"A custom 3D-printed spear made out of carbon fiber.  It is more lightweight "
+"than a normal spear thanks to its method of manufacturing, but it can only "
+"be repaired using a 3D printer."
+msgstr "用碳素纤维定制的3D打印长矛。 由于其制造方法，它比普通长矛更轻便，但只能使用3D打印机进行修复。"
+
 #: data/json/items/melee/swords_and_blades.json
 msgid "2-by-sword"
 msgid_plural "2-by-swords"
@@ -96986,6 +97387,32 @@ msgid ""
 " of power, but it can irradiate the wielder when damaged."
 msgstr "这是一把刀或匕首，经过售后改装使刀刃加热。自制的原子电池意味着它永远不会耗尽电力，但在受损时可能会辐射持有者。"
 
+#: data/json/items/melee/swords_and_blades.json
+msgid "carbon fiber knife"
+msgid_plural "carbon fiber knifes"
+msgstr[0] "碳素纤维小刀"
+
+#. ~ Description for {'str': 'carbon fiber knife'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"A custom 3D-printed combat knife made out of carbon fiber.  It is more "
+"lightweight than a normal knife thanks to its method of manufacturing, but "
+"it can only be repaired using a 3D printer."
+msgstr "用碳素纤维定制的3D打印战术匕首。 由于其制造方法，它比普通小刀更轻便，但只能使用3D打印机进行修复。"
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "carbon fiber sword"
+msgid_plural "carbon fiber swords"
+msgstr[0] "碳素纤维剑"
+
+#. ~ Description for {'str': 'carbon fiber sword'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"A custom 3D-printed single-bladed sword made out of carbon fiber.  It is "
+"more lightweight than a normal sword thanks to its method of manufacturing, "
+"but it can only be repaired using a 3D printer."
+msgstr "用碳素纤维定制的3D打印单刃剑。 由于其制造方法，它比普通剑更轻便，但只能使用3D打印机进行修复。"
+
 #: data/json/items/melee/unarmed_weapons.json
 msgid "tiger claws"
 msgid_plural "tiger claws"
@@ -97137,6 +97564,32 @@ msgid ""
 "It's primarily used for disarming opponents, but can also make your punches "
 "puncture your foes."
 msgstr "一个尖锐的金属棍，手柄上有两个弯曲的尖齿。它主要用于解除对手的武装，但也可以让你的拳头刺穿敌人。"
+
+#: data/json/items/melee/unarmed_weapons.json
+msgid "carbon fiber jamadhar"
+msgid_plural "carbon fiber jamadhars"
+msgstr[0] "碳素纤维拳锋"
+
+#. ~ Description for {'str': 'carbon fiber jamadhar'}
+#: data/json/items/melee/unarmed_weapons.json
+msgid ""
+"A custom 3D-printed jamadhar made out of carbon fiber.  It is more "
+"lightweight than a normal weapon thanks to its method of manufacturing, but "
+"it can only be repaired using a 3D printer."
+msgstr "用碳素纤维定制的3D打印拳锋。 由于其制造方法，它比普通武器更轻便，但只能使用3D打印机进行修复。"
+
+#: data/json/items/melee/unarmed_weapons.json
+msgid "carbon fiber katar"
+msgid_plural "carbon fiber katars"
+msgstr[0] "碳素纤维卡塔尔拳刃"
+
+#. ~ Description for {'str': 'carbon fiber katar'}
+#: data/json/items/melee/unarmed_weapons.json
+msgid ""
+"A custom 3D-printed katar made out of carbon fiber.  It is more lightweight "
+"than a normal weapon thanks to its method of manufacturing, but it can only "
+"be repaired using a 3D printer."
+msgstr "用碳素纤维定制的3D打印卡塔尔拳刃。 由于其制造方法，它比普通武器更轻便，但只能使用3D打印机进行修复。"
 
 #: data/json/items/ranged/archery.json
 msgid "crude wooden arrow"
@@ -97709,6 +98162,19 @@ msgid ""
 msgstr ""
 "一把自制的十字弓，精巧的机关可让弩箭的装填和发射在同一个动作完成。木制的弹匣能容纳 10 支十字弓箭。由此武器射出的十字弓箭矢多数可以重复使用。"
 
+#: data/json/items/ranged/crossbows.json
+msgid "carbon fiber repeating crossbow"
+msgid_plural "carbon fiber repeating crossbows"
+msgstr[0] "碳素纤维连弩"
+
+#: data/json/items/ranged/crossbows.json
+msgid ""
+"A custom 3D-printed pump-action repeating crossbow made out of carbon fiber "
+"and synthetic fabric.  This expensive hunting weapon is surprisingly "
+"lightweight thanks to its construction, but it can only be repaired using a "
+"3D printer."
+msgstr "由碳纤维和合成纤维制成的定制 3D 打印泵动连发弩。 这种昂贵的狩猎武器因其结构而出奇地轻巧，但只能使用 3D 打印机进行修复。"
+
 #: data/json/items/ranged/pneumatic.json
 msgid "BB gun"
 msgid_plural "BB guns"
@@ -97727,10 +98193,10 @@ msgstr[0] "气动弩矢射枪"
 
 #: data/json/items/ranged/pneumatic.json
 msgid ""
-"An eight-shot, revolving barrel, pneumatic bolt driver handcrafted from "
-"scrap.  Be careful where you reload it, pumping air into the tank takes a "
-"few seconds.  It is pretty quiet and quite deadly."
-msgstr "废料手制而成的八发转管气动弩矢射枪。装填时要小心，泵入气体需要几秒时间。它安静而致命。"
+"A ten-shot, revolving barrel, pneumatic bolt driver handcrafted from scrap."
+"  Be careful where you reload it, pumping air into the tank takes a few "
+"seconds.  It is pretty quiet and quite deadly."
+msgstr "废料手制而成的十发转管气动弩矢射枪。装填时要小心，泵入气体需要几秒时间。它安静而致命。"
 
 #: data/json/items/ranged/pneumatic.json
 msgid "pneumatic assault rifle"
@@ -103984,6 +104450,36 @@ msgid ""
 "powerful piece of equipment that can spin stuff really quickly.  It's not a "
 "toy!"
 msgstr "这是一个较小版本的，台式的大型家具大小的离心机。别被它的便携式天平欺骗了，它仍然是一个非常强大的设备，可以快速旋转东西。这不是玩具！"
+
+#: data/json/items/tool/science.json
+msgid "3D printer"
+msgid_plural "3D printers"
+msgstr[0] "3D打印机"
+
+#. ~ Description for {'str': '3D printer'}
+#: data/json/items/tool/science.json
+msgid ""
+"Although it's not nearly as fancy as the experimental nanofabricators, this "
+"civilian-grade 3D printer can produce almost any item out of plastic, "
+"polymer, or carbon fiber…  so long as you can program it."
+msgstr ""
+"虽然这款民用级3D打印机不像纳米制造实验机那样花哨，但它几乎可以用塑料、聚合物或碳纤维制造任何物品......只要你会编程。\n"
+"\"我会编程，但我不会3D建模啊喂。\""
+
+#: data/json/items/tool/science.json
+msgid "advanced 3D printer"
+msgid_plural "advanced 3D printers"
+msgstr[0] "高级3D打印机"
+
+#. ~ Description for {'str': 'advanced 3D printer'}
+#: data/json/items/tool/science.json
+msgid ""
+"Recent advances in 3D printing technology have resulted in the ability to "
+"quickly and cheaply 3D print metals and alloys.  Such 3D printers are highly"
+" expensive, but sought out by collectors and preppers alike."
+msgstr ""
+"3D打印技术的最新进展使得人们能够快速、廉价地3D打印金属和合金。 这种3D打印机价格昂贵，但却受到收藏家和准备者的青睐。\n"
+"\"连老婆都能打印出来！\""
 
 #: data/json/items/tool/shelters.json
 msgid "damaged shelter kit"
@@ -155020,13 +155516,13 @@ msgid "There is a crater here."
 msgstr "这里有个弹坑。"
 
 #: data/json/overmap/map_extras.json
-msgid "College Kids"
-msgstr "大学生"
+msgid "Lost Campers"
+msgstr ""
 
-#. ~ Description for College Kids
+#. ~ Description for Lost Campers
 #: data/json/overmap/map_extras.json
-msgid "Several corpses of college kids are here."
-msgstr "这里有几具大学生的尸体。"
+msgid "Several corpses of college kids or hunters out camping are here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Drug Deal"
@@ -195055,6 +195551,48 @@ msgid "Greatly limits the exponential growth ability of fungaloids."
 msgstr "极大地限制了真菌的指数增长能力。"
 
 #: data/mods/MMA/martial.json
+msgid "Scorching Sirocco"
+msgid_plural "Scorching Sirocco"
+msgstr[0] "灼热之风"
+
+#. ~ Description for {'str_sp': 'Scorching Sirocco'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Desert Wind discipline."
+msgstr "这本书包含了漠风流派相关的武术教学。"
+
+#: data/mods/MMA/martial.json
+msgid "Perfect Clarity of Mind and Body"
+msgid_plural "Perfect Clarity of Mind and Body"
+msgstr[0] "完美身心"
+
+#. ~ Description for {'str_sp': 'Perfect Clarity of Mind and Body'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Diamond Mind discipline."
+msgstr "这本书包含了钢魂流派相关的武术教学。"
+
+#: data/mods/MMA/martial.json
+msgid "The Book of Mudora"
+msgid_plural "The Book of Mudora"
+msgstr[0] "姆多拉之书"
+
+#. ~ Description for {'str_sp': 'The Book of Mudora'}
+#: data/mods/MMA/martial.json
+msgid ""
+"A collection of ancient Hylian lore and stories.  A section on historic "
+"battles is bookmarked."
+msgstr "一本古老的海拉尔传说和故事集。其中关于一次历史上著名的战役的章节被加上了书签标记。"
+
+#: data/mods/MMA/martial.json
+msgid "Stormguard Warrior"
+msgid_plural "Stormguard Warrior"
+msgstr[0] "风暴之盾"
+
+#. ~ Description for {'str_sp': 'Stormguard Warrior'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Iron Heart discipline."
+msgstr "这本书包含了铁心流派相关的武术教学。"
+
+#: data/mods/MMA/martial.json
 msgid "The Life and Work of Tiger Sauer"
 msgid_plural "The Life and Work of Tiger Sauer"
 msgstr[0] "泰格·斯奥尔的生活和工作"
@@ -195065,6 +195603,318 @@ msgid ""
 "A biography of a combat cyborg agent detailing his philosophy and martial "
 "art."
 msgstr "一位战斗改造人特工的传记，详述了他的哲学和武术。"
+
+#: data/mods/MMA/martial.json
+msgid "Pocket Monster Encyclopedia"
+msgid_plural "Pocket Monster Encyclopedia"
+msgstr[0] "精灵宝可梦百科"
+
+#. ~ Description for {'str_sp': 'Pocket Monster Encyclopedia'}
+#: data/mods/MMA/martial.json
+msgid ""
+"This encyclopedia contains a detailed listing of the strengths and "
+"techniques of various fictional monsters and how to apply them the in a real"
+" fight."
+msgstr "这部百科全书详细列出了宝可梦游戏中各种虚构怪物的强度和招式，以及如何在真实战斗中运用它们的手段。"
+
+#: data/mods/MMA/martial.json
+msgid "Distant Horizon"
+msgid_plural "Distant Horizon"
+msgstr[0] "遥远的地平线"
+
+#. ~ Description for {'str_sp': 'Distant Horizon'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Setting Sun discipline."
+msgstr "这本书包含了暮日流派相关的武术教学。"
+
+#: data/mods/MMA/martial.json
+msgid "Jedi Holocrons: Form I"
+msgid_plural "Jedi Holocrons: Form I"
+msgstr[0] "绝地全息仪：第一式"
+
+#. ~ Description for {'str_sp': 'Jedi Holocrons: Form I'}
+#: data/mods/MMA/martial.json
+msgid ""
+"This device contains the teachings of the first form of Jedi lightsaber "
+"combat: Shii-Cho."
+msgstr "这个装置包含了绝地武士光剑战斗的第一式：锡秋剑法相关的武术教学。"
+
+#: data/mods/MMA/martial.json
+msgid "Shards of Granite"
+msgid_plural "Shards of Granite"
+msgstr[0] "宁为玉碎"
+
+#. ~ Description for {'str_sp': 'Shards of Granite'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Stone Dragon discipline."
+msgstr "这本书包含了石龙流派相关的武术教学。"
+
+#: data/mods/MMA/martial.json
+msgid "Reaping Talons"
+msgid_plural "Reaping Talons"
+msgstr[0] "收割之爪"
+
+#. ~ Description for {'str_sp': 'Reaping Talons'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Tiger Claw discipline."
+msgstr "这本书包含了虎爪流派相关的武术教学。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Desert Wind"
+msgstr "漠风"
+
+#. ~ Description for martial art '{'str': 'Desert Wind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Desert Wind maneuvers focus on quick movement and swirling, flaming strikes."
+"  The complex spinning and slashing of the curved blade incorporated into "
+"many Desert Wind maneuvers are in fact carefully honed gestures that evoke "
+"the power of fire, if performed correctly and with the proper focus."
+msgstr ""
+"漠风流派的学徒们学习如何将体内的内在力量引导成强大火焰旋风。漠风学徒们总是不停地在移动，利用自己的武器为媒介，用灼热的火焰烧尽敌人。此外，这些火焰会爆炸性的扩散，对附近所有人造成伤害。"
+
+#. ~ Initiate message for martial art '{'str': 'Desert Wind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You feel a wave of heat wash over you as you assume a running combat stance."
+msgstr "随着你摆出一副奔跑的战斗姿态时，你感到一股热浪席卷过体内。"
+
+#. ~ Initiate message for martial art '{'str': 'Desert Wind'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s assumes into a running combat stance."
+msgstr "%s 摆出了一个奔跑的战斗姿态。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Wind Stride"
+msgstr "风行"
+
+#. ~ Description of buff 'Wind Stride' for martial art '{'str': 'Desert
+#. Wind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"A warm breeze swirls about you as you move speedily away.\n"
+"\n"
+"+1.0 Dodging skill.\n"
+"Lasts 1 turn."
+msgstr ""
+"当你快速远离敌人时，一股温暖的微风在你周围旋转。\n"
+"\n"
+"闪避技能 +1。\n"
+"持续 1 回合。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Zephyr Dance"
+msgstr "西风之舞"
+
+#. ~ Description of buff 'Zephyr Dance' for martial art '{'str': 'Desert
+#. Wind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You spin gracefully away from attacks, whirling like the dersert zephyr racing across the sands.\n"
+"\n"
+"+1.0 Dodging skill, +1 Dodge attempt\n"
+"Lasts 1 turn."
+msgstr ""
+"你优雅地避开敌人的攻击，像拂过沙丘的沙漠西风一样不断旋转。\n"
+"\n"
+"闪避技能 +1，闪避次数 +1。\n"
+"持续 2 回合。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Diamond Mind"
+msgstr "钢魂"
+
+#. ~ Description for martial art '{'str': 'Diamond Mind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"True quickness lies in the mind, not the body.  A student of the Diamond "
+"Mind discipline seeks to hone his perceptions and discipline his thoughts so"
+" that he can act in slivers of time so narrow that others cannot even "
+"perceive them.  A corollary of this speed of thought and action is the "
+"concept of the mind as the battleground.  An enemy defeated in his mind must"
+" inevitably be defeated in truth."
+msgstr ""
+"真正的敏捷在于头脑，而不是身体。一个钻研钢魂流派的学徒会不断磨练自身的感知并训练自己的思维，以便他能够在刹那之间做出行动，以至于其他人甚至无法察觉。这种将思维和行动速度相互关联的必然结果就是把头脑当作战场的概念。一个在他心中早已被打败的敌人必然也会在现实中被打败。"
+
+#. ~ Initiate message for martial art '{'str': 'Diamond Mind'}'
+#: data/mods/MMA/martialarts.json
+msgid "You concentrate and become very still for a moment."
+msgstr "你集中精神，并瞬间变得安定不动。"
+
+#. ~ Initiate message for martial art '{'str': 'Diamond Mind'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s becomes very still for a moment."
+msgstr "%s 瞬间变得安定不动。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Stance of Alacrity"
+msgstr "神速体"
+
+#. ~ Description of buff 'Stance of Alacrity' for martial art '{'str':
+#. 'Diamond Mind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You move slightly faster than normal due to a combination of confidence, raining, and clarity of mind.  This slight edge adds up with each action.\n"
+"\n"
+"-15% move cost"
+msgstr ""
+"因为自信，饱经训练，而且精神明净，你的动作比普通人略快。每次行动都能给你增添少许优势。\n"
+"\n"
+"攻击耗时 -15%。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Pearl of Black Doubt"
+msgstr "疑虑珍珠"
+
+#. ~ Description of buff 'Pearl of Black Doubt' for martial art '{'str':
+#. 'Diamond Mind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"With every miss, your opponents become more uncertain, their doubt growing like an irritating pearl in the mouth of a helpless oyster.\n"
+"\n"
+"+1 Dodge attempt\n"
+"Lasts 1 turn.  Stacks 2 times"
+msgstr ""
+"每一次失误，让你的对手变得更加没有信心，他们的疑虑就像无助的牡蛎嘴里的一颗恼人的珍珠。\n"
+"\n"
+"闪避次数+1。\n"
+"持续 1 回合。可叠加 2 次。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Hylian Swordsmanship"
+msgstr "海拉尔剑术"
+
+#. ~ Description for martial art '{'str': 'Hylian Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"This rare form of combat has been practiced by many legendary heroes "
+"throughout the ages.  Hylian Swordsmanship favors mobility for offense and "
+"defense by using spins, jumps, and flips to confuse enemies and strike from "
+"unexpected angles."
+msgstr "这种罕见的武术流派被历代传奇英雄所使用。海拉尔剑术专注于提升进攻和防御的机动性，通过旋转、跳跃和翻滚来迷惑敌人并从意想不到的角度攻击。"
+
+#. ~ Initiate message for martial art '{'str': 'Hylian Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid "You begin to step lightly from side to side."
+msgstr "你开始轻柔地来回跨步。"
+
+#. ~ Initiate message for martial art '{'str': 'Hylian Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s begins to step lightly from side to side."
+msgstr "%s 开始轻柔地来回跨步。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Combat Acrobat"
+msgstr "战斗杂技"
+
+#. ~ Description of buff 'Combat Acrobat' for martial art '{'str': 'Hylian
+#. Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Always stay light on your feet.  It is better to evade than be hit.\n"
+"\n"
+"+1.0 Dodging skill."
+msgstr ""
+"永远保持轻盈的步伐。闪避总比被击中好。\n"
+"\n"
+"闪避技能 +1。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Intermediate Combat Acrobat"
+msgstr "中级战斗杂技"
+
+#. ~ Description of buff 'Intermediate Combat Acrobat' for martial art
+#. '{'str': 'Hylian Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"After a great deal of practice, you have become even more nimble in a battle.\n"
+"\n"
+"+1.0 Dodging skill."
+msgstr ""
+"经过大量的练习，你在战斗中变得更加敏捷。\n"
+"\n"
+"闪避技能 +1。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Master Combat Acrobat"
+msgstr "战斗杂技大师"
+
+#. ~ Description of buff 'Master Combat Acrobat' for martial art '{'str':
+#. 'Hylian Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You have seen so much combat that your dodging skills have become top notch!\n"
+"\n"
+"+1.0 Dodging skill."
+msgstr ""
+"你经历了这么多的战斗，你的闪避技能已经成为一流！\n"
+"\n"
+"闪避技能 +1。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Dash Attack"
+msgstr "冲刺攻击"
+
+#. ~ Description of buff 'Dash Attack' for martial art '{'str': 'Hylian
+#. Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Taking advantage of momentum, you rush towards foes to deliver a powerful strike.\n"
+"\n"
+"+10% damage.\n"
+"Lasts 1 turn.  Stacks 3 times."
+msgstr ""
+"利用自身动能，你冲向敌人，进行强力打击。\n"
+"\n"
+"+10% 伤害。\n"
+"持续 1 回合。可叠加 3 次。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Flurry Rush"
+msgstr "子弹时间"
+
+#. ~ Description of buff 'Flurry Rush' for martial art '{'str': 'Hylian
+#. Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"When you perfectly dodge an attack, you can attack rapidly for a short time.\n"
+"\n"
+"-25% move cost.\n"
+"Lasts 1 turn."
+msgstr ""
+"当你完全闪避攻击时，你可以在短时间内快速还击。\n"
+"\n"
+"-25%行动耗时。\n"
+"持续 1 回合。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Iron Heart"
+msgstr "铁心"
+
+#. ~ Description for martial art '{'str': 'Iron Heart'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Absolute mastery of the sword is the goal of the Iron Heart discipline.  "
+"Through unending practice and study, the Iron Heart adept achieves "
+"superhuman skill with her weapons.  Iron Heart maneuvers are demonstrations "
+"of uncanny martial skill—weaving patterns of steel that dizzy, confuse, and "
+"ultimately kill with no recourse."
+msgstr ""
+"对剑术的绝对掌握是铁心流派修炼的目标。通过不断的训练和学习，一名铁心高手能用手中的武器展现出超人般的技能。铁心流派的招式大都是不可思议的武术技巧，它用钢铁编织出的图案让人晕眩、迷惑，最终杀死毫无抵抗的敌人。"
+
+#. ~ Initiate message for martial art '{'str': 'Iron Heart'}'
+#: data/mods/MMA/martialarts.json
+msgid "You push away your fear and stand tall."
+msgstr "你清空内心的恐惧并站直身体。"
+
+#. ~ Initiate message for martial art '{'str': 'Iron Heart'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s takes a bold and fearless stance."
+msgstr "%s 摆出了一个勇敢无畏的姿势。"
 
 #: data/mods/MMA/martialarts.json
 msgid "Panzer Kunst"
@@ -195124,6 +195974,301 @@ msgstr ""
 "钝击护甲穿透+5。\n"
 "持续 2 回合。"
 
+#: data/mods/MMA/martialarts.json
+msgid "Pokken"
+msgstr "口袋铁拳"
+
+#. ~ Description for martial art '{'str': 'Pokken'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Pokken or \"Pocket Fist\" is a strange martial art developed from the famous"
+" Pokemon video game series.  Somehow, a group of dedicated fans managed to "
+"combine the moves used by various pokemon with multiple existing martial "
+"arts such as boxing and karate.  Amazingly, it actually works.  Some might "
+"even say it's a super effective way to fight."
+msgstr ""
+"\"口袋铁拳\"是从著名的宝可梦系列电子游戏发展而来的一种奇怪的武术流派。不知怎的，一群热心的粉丝设法将各种精灵宝可梦中的招式与拳击、空手道等多种现有武术结合起来。令人惊讶的是，它确实有效。有人甚至会说这是一种效果拔群的战斗方式。"
+
+#. ~ Initiate message for martial art '{'str': 'Pokken'}'
+#: data/mods/MMA/martialarts.json
+msgid "You get ready to battle."
+msgstr "你准备好战斗了。"
+
+#. ~ Initiate message for martial art '{'str': 'Pokken'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s is about to challenge someone to a battle."
+msgstr "%s 准备好和人战斗了。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Setting Sun"
+msgstr "暮日"
+
+#. ~ Description for martial art '{'str': 'Setting Sun'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"The Setting Sun discipline teaches its initiates to turn their opponents' "
+"strength against them.  With a quick shift in stance and carefully aimed "
+"attack, a Setting Sun warrior sends a charging enemy tumbling in a new "
+"direction."
+msgstr ""
+"暮日派教导门徒借力打力。随着姿态的快速转变和精心瞄准的攻击，依靠着四两拨千斤的巧劲，暮日派的武道家可以让向自己冲锋的敌人失去重心翻滚向另一个方向。"
+
+#. ~ Initiate message for martial art '{'str': 'Setting Sun'}'
+#: data/mods/MMA/martialarts.json
+msgid "You shift your weight and prepare to defend yourself."
+msgstr "你调整重心，准备好防御自己。"
+
+#. ~ Initiate message for martial art '{'str': 'Setting Sun'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s shifts their weight and assumes a new stance."
+msgstr "%s 调整重心，摆出了一个新姿势。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Shii-Cho"
+msgstr "锡秋剑法"
+
+#. ~ Description for martial art '{'str': 'Shii-Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Shii-Cho, \"The way of the Sarlacc\" was the first form lightsaber combat "
+"developed by the Jedi during their transition from metal weaponry to "
+"lightsabers.  Shii-Cho is regarded as a training form that all Jedi learn to"
+" understand the basics of armed combat.  Shii-Cho excels at fighting against"
+" groups but lacks the offensive power of the other lightsaber forms."
+msgstr ""
+"锡秋剑法，\"沙拉克之路\"是绝地武士从金属武器向光剑过渡期间发展起来的第一种光剑战斗流派。锡秋剑法被认为是所有绝地武士在学习了解武装战斗基本知识时使用的训练剑法。锡秋剑法擅长对抗多名敌人，但缺乏其他光剑流派的攻击力。"
+
+#. ~ Initiate message for martial art '{'str': 'Shii-Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You place one foot back and hold your weapon vertically on your dominant "
+"side."
+msgstr "你双脚前后分立，把你的武器竖直握在你的主手侧。"
+
+#. ~ Initiate message for martial art '{'str': 'Shii-Cho'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s places one foot back and hold their weapon vertically."
+msgstr "%s 双脚前后分立，把武器竖直握在主手侧。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Determination"
+msgstr "坚定决心"
+
+#. ~ Description of buff 'Determination' for martial art '{'str': 'Shii-Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You are a determined warrior.  Your inner calm aids you in landing your strikes and protecting yourself.\n"
+"\n"
+"Blocked damage reduced by 100% of Strength, +1 Accuracy."
+msgstr ""
+"你是一名坚定的战士。你内心的平静有助于你击中敌人并保护自己。\n"
+"\n"
+"格挡值按力量的 100% 增加，命中 +1。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Apprentice Training"
+msgstr "实习训练"
+
+#. ~ Description of buff 'Apprentice Training' for martial art '{'str': 'Shii-
+#. Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Your training in Shii-Cho teaches you how to combat multiple opponents.\n"
+"\n"
+"+1 block attempts, +1 block effectiveness."
+msgstr ""
+"你对锡秋剑法的训练教你如何与多个对手作战。\n"
+"\n"
+"格挡次数+1，格挡效果+1。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Knight Training"
+msgstr "武士训练"
+
+#. ~ Description of buff 'Knight Training' for martial art '{'str': 'Shii-
+#. Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Further training in Shii-Cho improves your ability to combat multiple opponents.\n"
+"\n"
+"+1 block attempts, +1 block effectiveness."
+msgstr ""
+"你对锡秋剑法的进一步训练提高了你与多个对手作战的能力。\n"
+"\n"
+"格挡次数+1，格挡效果+1。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Master Training"
+msgstr "大师训练"
+
+#. ~ Description of buff 'Master Training' for martial art '{'str': 'Shii-
+#. Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"As a master of Shii-Cho, your ability to fight against groups is second to none.\n"
+"\n"
+"+1 block attempts, +1 block effectiveness."
+msgstr ""
+"作为一名锡秋剑法大师，你对抗多个敌人的能力无人能敌。\n"
+"\n"
+"格挡次数+1，格挡效果+1。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Stone Dragon"
+msgstr "石龙"
+
+#. ~ Description for martial art '{'str': 'Stone Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"The Stone Dragon discipline for focuses on strength, power, and toughness.  "
+"Its teachings grant a martial adept the ability to splinter steel with a "
+"single, focused blow.  Stone Dragon's defensive abilities focus on tapping "
+"into the enduring power of stone to turn aside attacks."
+msgstr "石龙流专注于力量，威力以及强壮。它传授了武技学徒在一击间破金裂石的威力。石龙的防御则注重于将对手的攻击的破坏力转嫁到大地上。"
+
+#. ~ Initiate message for martial art '{'str': 'Stone Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid "You dig your heels into the ground and steady yourself."
+msgstr "你将脚深深扎入土中，稳住自己。"
+
+#. ~ Initiate message for martial art '{'str': 'Stone Dragon'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s digs their heels into the ground."
+msgstr "%s 将脚深深扎入土中。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Stone Bones"
+msgstr "石铸身躯"
+
+#. ~ Description of buff 'Stone Bones' for martial art '{'str': 'Stone
+#. Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You focus your energy to enhance your defenses, drawing on the power of your weapon's impact with a foe to toughen yourself against a counterattack.\n"
+"\n"
+"+1 bash, cut, and stab armor.\n"
+"Lasts 1 turn.  Stacks 5 times."
+msgstr ""
+"你聚集你的武器打中对手时产生的能量来强化自己的防御，这使你在面对接下来的反击时立于不败之地。\n"
+"\n"
+"+1 钝击/斩击/刺击防护。\n"
+"持续 1 回合。可叠加 5 次。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Stonefoot Stance"
+msgstr "坚如磐石"
+
+#. ~ Description of buff 'Stonefoot Stance' for martial art '{'str': 'Stone
+#. Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You crouch and set your feet flat on the ground, drawing the resilience of the earth into your body.  However, moving too much will break your stance.\n"
+"\n"
+"+10% damage, +2 bash, cut, and stab armor."
+msgstr ""
+"你将重心沉向下盘，将大地之力转化为自身的抗力。然而，移动太多会破坏你的姿势。\n"
+"\n"
+"+10% 伤害，+2 钝击/斩击/刺击防护。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Cracked Stone"
+msgstr "裂石"
+
+#. ~ Description of buff 'Cracked Stone' for martial art '{'str': 'Stone
+#. Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Moving too much will negate the effects of Surefoot Stance.  Stay still to avoid shattering your stance!\n"
+"\n"
+"Enables \"Shattered Stone\" buff.\n"
+"Lasts 1 turn."
+msgstr ""
+"移动太多会破坏坚如磐石的效果。站稳了别动，不要破坏了你的姿势！\n"
+"\n"
+"解锁\"碎石\"招式。\n"
+"持续 1 回合。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Stattered Stone"
+msgstr "碎石"
+
+#. ~ Description of buff 'Stattered Stone' for martial art '{'str': 'Stone
+#. Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You are unable to maintain your Surefoot Stance and must stop moving for a short time to regain its benefits.\n"
+"\n"
+"-10% damage, -2 bash, cut, and stab armor.\n"
+"Lasts 4 turn."
+msgstr ""
+"你完全无法保持坚如磐石的姿势，必须停止移动一段时间以重新获得增益。\n"
+"\n"
+"-10% 伤害，-2 钝击/斩击/刺击防护。\n"
+"持续 4 回合。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Tiger Claw"
+msgstr "虎爪"
+
+#. ~ Description for martial art '{'str': 'Tiger Claw'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"The Tiger Claw discipline embraces a feral rage that lurks within the heart "
+"of its initiates.  In battle, such warriors growl like wild animals, attack "
+"with a furry similar to that of a barbarian, and rely on overwhelming, "
+"vicious assaults to defeat their enemies."
+msgstr ""
+"虎爪流派信奉潜伏在其门徒的内心之中的狂暴怒火。在战斗中，这些战士像野兽一样咆哮，用类似于野蛮人的怒火攻击，依靠势不可挡、凶残的攻击来击败他们的敌人。"
+
+#. ~ Initiate message for martial art '{'str': 'Tiger Claw'}'
+#: data/mods/MMA/martialarts.json
+msgid "You emit a low growl as you prepare for battle."
+msgstr "你发出低沉的咆哮，准备好作战。"
+
+#. ~ Initiate message for martial art '{'str': 'Tiger Claw'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s hunkers down like a wild animal."
+msgstr "%s 像一只野兽一样蹲下。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Improved Critical"
+msgstr "精通重击"
+
+#. ~ Description of buff 'Improved Critical' for martial art '{'str': 'Tiger
+#. Claw'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Always strike with full force.  Never hold back anything unless you want to die.\n"
+"\n"
+"+2 Accuracy, n+15 speed, +25% damage."
+msgstr ""
+"总是全力打击。除非你想死，否则永远不要限制自己。\n"
+"\n"
+"命中 +1，+15速度，+25% 伤害。"
+
+#: data/mods/MMA/martialarts.json
+msgid "Pounching Charge"
+msgstr "猛扑冲锋"
+
+#. ~ Description of buff 'Pounching Charge' for martial art '{'str': 'Tiger
+#. Claw'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"With the roar of a wild beast, you throw yourself into the fray.  Strike first and strike hard.\n"
+"\n"
+"+2 Accuracy, +10% damage.\n"
+"Lasts 1 turn."
+msgstr ""
+"伴随着野兽般的咆哮，你自己投身进入了这场打斗中。先发制人，一击致命。\n"
+"\n"
+"命中 +2，+10% 伤害。\n"
+"持续 1 回合。"
+
 #: data/mods/MMA/modinfo.json
 msgid "Mythical Martial Arts"
 msgstr "神话武术"
@@ -195158,6 +196303,52 @@ msgid ""
 "unarmed combat."
 msgstr "古老的酒后斗殴术对你来说如同是与生俱来一般！在酒精的作用下，你的近战能力将大幅上升，尤其是徒手格斗。"
 
+#: data/mods/MMA/mutations.json
+msgid "Hero's Spirit"
+msgstr "英雄之魂"
+
+#. ~ Description for {'str': "Hero's Spirit"}
+#: data/mods/MMA/mutations.json
+msgid ""
+"You have studied the deeds and legends of ancient heroes.  From your "
+"research, you have learned an ancient form of combat called Hylian "
+"Swordsmanship."
+msgstr "你研究过古代英雄的事迹和传说。研究中你学会了一种古老的武术流派，称为海拉尔剑术。"
+
+#: data/mods/MMA/mutations.json
+msgid "Jedi Training"
+msgstr "绝地武士训练"
+
+#. ~ Description for {'str': 'Jedi Training'}
+#: data/mods/MMA/mutations.json
+msgid ""
+"You are trained in the ways of the Jedi.  Your knowledge allows you to "
+"utilize a form of lightsaber combat."
+msgstr "你受过绝地武士训练。这让你能够使用光剑战斗流派作战。"
+
+#: data/mods/MMA/mutations.json
+msgid "Pokken Master"
+msgstr "口袋铁拳大师"
+
+#. ~ Description for {'str': 'Pokken Master'}
+#: data/mods/MMA/mutations.json
+msgid ""
+"You are well versed in the monsterous Pocket Fist martial art.  Train well, "
+"because it is your destiny to be a master."
+msgstr "你非常精通口袋铁拳中的各类武术招式。好好训练，因为你命中注定要成为一名训练师。"
+
+#: data/mods/MMA/mutations.json
+msgid "Martial Adept"
+msgstr "武术专长"
+
+#. ~ Description for {'str': 'Martial Adept'}
+#: data/mods/MMA/mutations.json
+msgid ""
+"You are a martial adept and learned one of the martial disciplines of the "
+"Sublime Way.  You start with your choice of Desert Wind, Diamond Mind, Iron "
+"Heart, Setting Sun, Stone Dragon, or Tiger Claw."
+msgstr "你是一名武道高手，学会了至高之道的武术流派中的一种。你能够从漠风，钢魂，铁心，暮日，石龙，及虎爪流派中选择一种开始游戏。"
+
 #: data/mods/MMA/professions.json
 msgctxt "profession_male"
 msgid "Battle Angel"
@@ -195179,6 +196370,193 @@ msgstr "一台战备状态的改造人，从一个不起眼的垃圾场里被抢
 msgctxt "prof_desc_female"
 msgid "A combat-ready cyborg once salvaged from an obscure junkyard…"
 msgstr "一台战备状态的改造人，从一个不起眼的垃圾场里被抢救出来……"
+
+#: data/mods/MMA/techniques.json
+msgid "Burning Blade"
+msgstr "红莲之剑"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You unleash a fiery attack against %s"
+msgstr "你对 %s 发动了猛烈的攻击！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> unleash a fiery attack against %s"
+msgstr "<npcname> 对 %s 发动了猛烈的攻击！"
+
+#: data/mods/MMA/techniques.json
+msgid "Inferno Blade"
+msgstr "业火之剑"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You strike %s with powerful inferno"
+msgstr "你用强大的业火攻击了 %s！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> strikes %s with powerful inferno"
+msgstr "<npcname> 用强大的业火攻击了 %s！"
+
+#: data/mods/MMA/techniques.json
+msgid "Firesnake"
+msgstr "焰之蛇"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You strike through %s with a snaking flame"
+msgstr "你用蛇形火焰刺穿了 %s！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> strikes through %s with a snaking flame"
+msgstr "<npcname> 用蛇形火焰刺穿了 %s！"
+
+#: data/mods/MMA/techniques.json
+msgid "Ring of Fire"
+msgstr "红莲之阵"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You become a flaming blur as you strike %s and those around you"
+msgstr "你变成了一团燃烧的幻影，攻击 %s 及你四周的人！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid ""
+"<npcname> becomes a flaming blur as they strike %s and those around them"
+msgstr "<npcname> 变成了一团燃烧的幻影，攻击 %s 及自己四周的人！"
+
+#: data/mods/MMA/techniques.json
+msgid "Flashing Sun"
+msgstr "日曜剑"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You carve an arc through %s and those nearby"
+msgstr "你划出一道弧线劈向 %s 和其周围的人！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> carve an arc through %s and those nearby"
+msgstr "<npcname> 划出一道弧线劈向 %s 和其周围的人！"
+
+#: data/mods/MMA/techniques.json
+msgid "Insightful Strike"
+msgstr "先觉剑"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You spot %s's weakpoint and strike"
+msgstr "你观察到 %s 的弱点，随即攻击！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> spot %s's weakpoint and strike"
+msgstr "<npcname> 观察到 %s 的弱点，随即攻击！"
+
+#: data/mods/MMA/techniques.json
+msgid "Greater Insightful Strike"
+msgstr "真·先觉剑"
+
+#: data/mods/MMA/techniques.json
+msgid "Spin Attack"
+msgstr "回旋斩"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You unleash a spin attack against %s and those nearby"
+msgstr "你对 %s 和其周围的人发动回旋斩！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> unleashes a spin attack against %s and those nearby"
+msgstr "<npcname> 对 %s 和其周围的人发动回旋斩！"
+
+#: data/mods/MMA/techniques.json
+msgid "Disarming Strike"
+msgstr "缴械攻击"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You skillfully disarm %s"
+msgstr "你巧妙地将%s缴械！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> skillfully disarms %s"
+msgstr "<npcname>巧妙地将%s缴械！"
+
+#: data/mods/MMA/techniques.json
+msgid "Lightning Recovery"
+msgstr "快速整顿"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You miss %s but recover in the blink of an eye"
+msgstr "你没能击中 %s，但转瞬间就已复位！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> misses %s but recovers in the blink of an eye"
+msgstr "<npcname> 没能击中 %s，但转瞬间就已复位！"
+
+#: data/mods/MMA/techniques.json
+msgid "Finishing Move"
+msgstr "终结之舞"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You finish off %s with a powerful slash"
+msgstr "你用一记强力的劈砍终结了 %s！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> finishes off %s with a powerful slash"
+msgstr "<npcname> 用一记强力的劈砍终结了 %s！"
+
+#: data/mods/MMA/techniques.json
+msgid "Dazing Strike"
+msgstr "晕眩打击"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You harshly stun %s"
+msgstr "你用力击晕了 %s！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> harshly stuns %s"
+msgstr "<npcname> 用力击晕了 %s！"
+
+#: data/mods/MMA/techniques.json
+msgid "Steel Wind"
+msgstr "钢铁之风"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You cleave through %s and those nearby like a steel wind"
+msgstr "你像钢铁之风一样劈穿了%s和附近的敌人！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> cleaves through %s and those nearby like a steel wind"
+msgstr "<npcname>像钢铁之风一样劈穿了%s和附近的敌人！"
+
+#: data/mods/MMA/techniques.json
+msgid "Scything Blade"
+msgstr "收割之刃"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You cleanly reap through %s and those nearby"
+msgstr "你干净利落地收割了%s和附近的敌人！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> cleanly reap throug %s and those nearby"
+msgstr "<npcname>干净利落地收割了%s和附近的敌人！"
 
 #: data/mods/MMA/techniques.json
 msgid "Ausstoß"
@@ -195235,6 +196613,216 @@ msgstr "你如导弹一般对%s发动超音速冲击。"
 #, c-format
 msgid "<npcname> launches a supersonic punch at %s"
 msgstr "<npcname>如导弹一般，突破音速撞向%s。"
+
+#: data/mods/MMA/techniques.json
+msgid "Mega Kick"
+msgstr "百万吨重踢"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You use Mega Kick on %s"
+msgstr "你对%s使用了百万吨重踢！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> uses Mega Kick on %s"
+msgstr "<npcname>对%s使用了百万吨重踢！"
+
+#: data/mods/MMA/techniques.json
+msgid "Darkest Lariat"
+msgstr "DD金勾臂"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You use Darkest Lariat on %s"
+msgstr "你对%s使用了DD金勾臂！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> uses Darkest Lariat on %s"
+msgstr "<npcname>对%s使用了DD金勾臂！"
+
+#: data/mods/MMA/techniques.json
+msgid "Smart Strike"
+msgstr "修长之角"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You use Smart Strike on %s"
+msgstr "你对%s使用了修长之角！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> uses Smart Strike on %s"
+msgstr "<npcname>对%s使用了修长之角！"
+
+#: data/mods/MMA/techniques.json
+msgid "Low Sweep"
+msgstr "下盘踢"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You use Low Sweep on %s"
+msgstr "你对%s使用了下盘踢！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> uses Low Sweep on %s"
+msgstr "<npcname>对%s使用了下盘踢！"
+
+#: data/mods/MMA/techniques.json
+msgid "Fool's Strike"
+msgstr "愚者之击"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You completely fool %s and strike back"
+msgstr "你完全愚弄了%s并反击"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> completely fools %s and strike back"
+msgstr "<npcname> 完全愚弄了%s并反击"
+
+#: data/mods/MMA/techniques.json
+msgid "Hydra Slaying Strike"
+msgstr "破龙击"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You interrupt %s with a perfectly aimed strike"
+msgstr "你精准一击打断了 %s！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> interrupt %s with a perfectly aimed strike"
+msgstr "<npcname> 精准一击打断了 %s！"
+
+#: data/mods/MMA/techniques.json
+msgid "Mighty Throw"
+msgstr "暮日投"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You toss %s aside with a Mighty Throw"
+msgstr "你使出一招暮日投，将%s丢倒在地！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> tosses %s with a Mighty Throw"
+msgstr "<npcname>使出一招暮日投，将%s丢倒在地！"
+
+#: data/mods/MMA/techniques.json
+msgid "Ballista Throw"
+msgstr "穿云投"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You spin and hurl %s away with a Ballista Throw"
+msgstr "你使出一招穿云投，将%s远远丟倒在地！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> spins and hurls %s away with a Ballista Throw"
+msgstr "<npcname>使出一招穿云投，将%s远远丟倒在地！"
+
+#: data/mods/MMA/techniques.json
+msgid "Flowing Water"
+msgstr "流水击"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You deflect %s's attack and counter in one fluid motion"
+msgstr "你偏转了%s的攻击并以一个流畅的动作反击"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> deflects %s's attack and counters in one fluid motion"
+msgstr "<npcname> 偏转了%s的攻击并以一个流畅的动作反击"
+
+#: data/mods/MMA/techniques.json
+msgid "Disarming Slash"
+msgstr "缴械斩"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You disarm %s with a quick flick of your weapon"
+msgstr "你用武器轻轻一砍，将 %s 缴械！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> disarms %s with a quick flick of their weapon"
+msgstr "<npcname> 用武器轻轻一砍，将 %s 缴械！"
+
+#: data/mods/MMA/techniques.json
+msgid "Sarlacc Sweep"
+msgstr "沙拉克扫击"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You quickly sweep through %s and those nearby"
+msgstr "你迅速地扫击了%s和附近的敌人！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> quickly sweeps through %s and those nearby"
+msgstr "<npcname>迅速地扫击了%s和附近的敌人！"
+
+#: data/mods/MMA/techniques.json
+msgid "Mountain Hammer"
+msgstr "巨山破"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You crush %s with the weight of your Mountain Hammer"
+msgstr "你用一记巨山破砸向 %s！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> crushes %s with the weight of their Mountain Hammer"
+msgstr "<npcname> 用一记巨山破砸向 %s！"
+
+#: data/mods/MMA/techniques.json
+msgid "Irrestistible Mountain Strike"
+msgstr "地动山摇"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You smash down on %s with a Mountain Strike"
+msgstr "你用一记地动山摇将 %s 砸翻！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> smashes down on %s with a Mountain Strike"
+msgstr "<npcname> 用一记地动山摇将 %s 砸翻！"
+
+#: data/mods/MMA/techniques.json
+msgid "Colossus Strike"
+msgstr "巨人冲击"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You completely shatter %s with a Colossus Strike"
+msgstr "你用一记巨人冲击击碎了 %s！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> completely shatters %s with a Colossus Strike"
+msgstr "<npcname> 用一记巨人冲击击碎了 %s！"
+
+#: data/mods/MMA/techniques.json
+msgid "Wolverine Stance"
+msgstr "狼獾势"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "The %s tries to grab you, but you thrash your way to freedom!"
+msgstr "你差点被%s抓住，但是用蛮力挣脱了！"
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "The %s tries to grab <npcname>, but they thrash their way to freedom!"
+msgstr "<npcname>差点被%s抓住，但是用蛮力挣脱了！"
 
 #: data/mods/Magiclysm/bionics.json data/mods/Magiclysm/items/bionics.json
 msgid "Blood Power Generator CBM"
@@ -209309,6 +210897,10 @@ msgid "Toggle Explored"
 msgstr "切换已探索"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Mark/unmark Travel Path"
+msgstr "标记/不标记旅行路径"
+
+#: data/raw/keybindings/keybindings.json
 msgid "Place Overmap Terrain"
 msgstr "放置地形"
 
@@ -218347,6 +219939,15 @@ msgid "Wield what?"
 msgstr "手持什么？"
 
 #: src/character_functions.cpp
+msgid "Time seems to slow down and you effortlessly dodge!"
+msgstr "时间好像慢了下来，你毫不费力地闪了过去！"
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s effortlessly dodges… so fast!"
+msgstr "%s毫不费力地躲开了......好快！"
+
+#: src/character_functions.cpp
 msgid "Time seems to slow down and you instinctively dodge!"
 msgstr "时间好像慢了下来，你本能地闪了过去！"
 
@@ -218356,13 +219957,13 @@ msgid "%s dodges… so fast!"
 msgstr "%s 闪开了……好快！"
 
 #: src/character_functions.cpp
-msgid "You try to dodge but there's no room!"
-msgstr "你想要躲闪，但却没有足够施展的空间！"
+msgid "You try to dodge but fail!"
+msgstr "你试图躲避，但失败了！"
 
 #: src/character_functions.cpp
 #, c-format
-msgid "%s tries to dodge but there's no room!"
-msgstr "%s 想要躲闪，但却没有腾挪的空间！"
+msgid "%s tries to dodge but fails!"
+msgstr "%s试图躲避，但失败了！"
 
 #: src/character_functions.cpp src/veh_interact.cpp
 #, c-format
@@ -224769,6 +226370,10 @@ msgstr ""
 #: src/game.cpp
 msgid "Bleed corpse"
 msgstr "放血尸体"
+
+#: src/game.cpp
+msgid "has no blood"
+msgstr "没有血液"
 
 #: src/game.cpp
 msgid ""

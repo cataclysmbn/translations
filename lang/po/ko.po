@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-06-22 01:02+0000\n"
+"POT-Creation-Date: 2024-06-29 01:04+0000\n"
 "Last-Translator: Fruitybite, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -4163,16 +4163,19 @@ msgid ""
 "pixelation."
 msgstr "고장난 바이오닉으로 인해 가끔씩 시각 자료가 왜곡되고 화소 단위로 쪼개지는 현상이 발생하게 되었습니다."
 
-#: data/json/bionics.json
+#: data/json/bionics.json data/json/enchantments.json
 msgid "Uncanny Dodge"
 msgstr "초인적 회피"
 
 #. ~ Description for {'str': 'Uncanny Dodge'}
 #: data/json/bionics.json
 msgid ""
-"Your nervous system has been augmented with bionic processors, allowing you "
-"to dodge attacks beyond normal human capability, including bullets."
-msgstr "신경계가 바이오닉 제어장치로 개조되었습니다, 보통 인간이라면 피할 수 없는 총알 같은 것에도 회피를 시도할 수 있습니다."
+"Your nervous system has been augmented with bionic processors, increasing "
+"your ability to dodge while active.  Your dodge skill will also grant a "
+"chance to evade attacks beyond normal human capability, such as bullets."
+msgstr ""
+"신경계에 바이오닉 프로세서가 설치되어, 활성화 중일 때 회피 능력을 향상시킵니다. 또한 회피 기술이 인간의 범주를 벗어나, 총알 같은 "
+"것도 피할 수 있게 됩니다."
 
 #: data/json/bionics.json
 msgid "Internal Unified Power System"
@@ -5858,6 +5861,10 @@ msgstr "유리문 냉장고 설치"
 #: data/json/construction_group.json
 msgid "Install Plutonium Generator"
 msgstr "플루토늄 발전기 설치"
+
+#: data/json/construction_group.json
+msgid "Place 3D Printer"
+msgstr "3D 프린터 설치"
 
 #: data/json/construction_group.json
 msgid "Place Window-Mounted AC Unit"
@@ -9658,6 +9665,11 @@ msgstr "목이 말라 힘이 나오지 않습니다."
 msgid "You're weak from thirst."
 msgstr "목이 말라 힘이 없습니다."
 
+#. ~ Description for {'str': 'Uncanny Dodge'}
+#: data/json/enchantments.json
+msgid "You're currently under the effects of the Uncanny Dodge CBM."
+msgstr "현재 초인적 회피 바이오닉의 효과를 받고 있습니다."
+
 #: data/json/field_type.json
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 #: data/mods/alt_map_key/overmap_terrain.json src/mapdata.cpp src/skill.cpp
@@ -10822,11 +10834,27 @@ msgstr ""
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
 msgid ""
+"This item <bad>requires adequate tinder</bad> to be provided as fuel when "
+"starting a fire."
+msgstr "이 물품으로 불을 피우려면 <bad>충분한 불쏘시개가 필요</bad>합니다."
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
 "Using this weapon with <info>less strength than its requirement</info> will "
 "still allow you to fire, but at reduced <bad>damage and range</bad>."
 msgstr ""
 "<info>필요 능력치를 만족하지 못한 채로</info> 이 무기를 사용하면 사격할 수는 있지만, <bad>피해량과 유효사거리가 "
 "감소</bad>할 것입니다."
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This item can be used as tinder in a firewood source, <info>automatically "
+"being used</info> to light fires if using a a firestarting tool that "
+"requires it."
+msgstr ""
+"이 물품은 불을 피울 때 불쏘시개로 쓸 수 있으며, 불쏘시개가 필요한 도구로 불을 피울 때 <info>자동적으로 사용</info>됩니다."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -11218,6 +11246,11 @@ msgstr "켜기"
 #. 'str_pl': 'heavy power armor helmets (active)'}.
 #. ~ Use action menu_text for {'str': 'light power armor helmet (active)',
 #. 'str_pl': 'light power armor helmets (active)'}.
+#. ~ Use action menu_text for {'str_sp': 'survivor power armor (active)'}.
+#. ~ Use action menu_text for {'str': 'military exo-suit (active)', 'str_pl':
+#. 'military exo-suits (active)'}.
+#. ~ Use action menu_text for {'str': 'industrial exo-suit (active)',
+#. 'str_pl': 'industrial exo-suits (active)'}.
 #. ~ Use action menu_text for {'str': 'L-stick (on)', 'str_pl': 'L-sticks
 #. (on)'}.
 #. ~ Use action menu_text for {'str': 'cellphone - Screenlight', 'str_pl':
@@ -11258,6 +11291,7 @@ msgstr "켜기"
 #. cubes (torch on)'}.
 #: data/json/item_actions.json data/json/items/tool_armor.json
 #: data/json/items/armor/cloaks.json data/json/items/armor/power_armor.json
+#: data/json/items/armor/suits_protection.json
 #: data/json/items/melee/bludgeons.json data/json/items/tool/electronics.json
 #: data/json/items/tool/lighting.json data/json/items/tool/misc.json
 #: data/mods/Aftershock/items/obsolete.json
@@ -15604,6 +15638,10 @@ msgstr "토양"
 msgid "Zinc"
 msgstr "아연"
 
+#: data/json/materials.json
+msgid "Carbon Fiber"
+msgstr "탄소섬유"
+
 #. ~ 1$s is monster name, 2$s bodypart in accusative
 #: data/json/monster_attacks.json src/monattack.cpp
 #, c-format
@@ -17063,8 +17101,8 @@ msgid ""
 "  Most people wouldn't expect a simple tailor to live long.  This is your "
 "opportunity to prove them wrong."
 msgstr ""
-"재봉은 세계에 종말이 닥쳤을 때 그다지 유용한 기술이라고 생각되지는 않을 것입니다. 많은 사람들은 평범한 재단사가 오랫동안 생존할 수 "
-"있다고 생각하진 않을 것입니다. 지금이 바로 그러한 생각이 잘못되었음을 입증할 기회입니다."
+"세상이 멸망했을 때, 흔히들 바느질이 무슨 도움이 되겠느냐고 이야기하곤 합니다. 대부분의 사람들은 평범한 재봉사가 오래 살아남으리라고는 "
+"생각도 하지 못하죠. 놈들이 틀렸음을 보여줄 기회입니다."
 
 #. ~ Profession (female Tailor) description
 #: data/json/professions.json
@@ -17074,8 +17112,8 @@ msgid ""
 "  Most people wouldn't expect a simple tailor to live long.  This is your "
 "opportunity to prove them wrong."
 msgstr ""
-"재봉은 세계에 종말이 닥쳤을 때 그다지 유용한 기술이라고 생각되지는 않을 것입니다. 많은 사람들은 평범한 재단사가 오랫동안 생존할 수 "
-"있다고 생각하진 않을 것입니다. 지금이 바로 그러한 생각이 잘못되었음을 입증할 기회입니다."
+"세상이 멸망했을 때, 흔히들 바느질이 무슨 도움이 되겠느냐고 이야기하곤 합니다. 대부분의 사람들은 평범한 재봉사가 오래 살아남으리라고는 "
+"생각도 하지 못하죠. 놈들이 틀렸음을 보여줄 기회입니다."
 
 #: data/json/professions.json
 msgctxt "profession_male"
@@ -30760,6 +30798,24 @@ msgstr ""
 "이 거대한 장치는 원자의 힘을 자유롭게 휘두르게 해줍니다. 정제된 핵 연료를 내부에 장착한 소형 원자로로 거의 무한한 전력을 생산할 수 "
 "있습니다. 건물에 설치하고 전력망과 연결시킨 결과, 적은 양의 전력을 꾸준히, 그리고 영원히 생산할 것입니다."
 
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "grid 3D printer"
+msgstr "망 연결된 3D 프린터"
+
+#. ~ Description for grid 3D printer
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "A 3D printer connected to a electrical grid."
+msgstr "건물의 전력망에 연결된 3D 프린터입니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "grid 3D printer (advanced)"
+msgstr "망 연결된 첨단 3D 프린터"
+
+#. ~ Description for grid 3D printer (advanced)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "An advanced 3D printer connected to a electrical grid."
+msgstr "건물의 전력망에 연결된 첨단 3D 프린터입니다."
+
 #: data/json/furniture_and_terrain/furniture-barriers.json
 msgid "road barricade"
 msgstr "도로 바리케이드"
@@ -43242,9 +43298,12 @@ msgstr[0] "CBM:초인적 회피"
 #. ~ Description for {'str': 'Uncanny Dodge CBM'}
 #: data/json/items/bionics.json
 msgid ""
-"Bionic processors that augment the user's nervous system, allowing them to "
-"dodge attacks beyond normal human capability, including bullets."
-msgstr "신경계를 강화하는 바이오닉 제어장치. 보통 인간이라면 피할 수 없는 총알 같은 것에도 회피를 시도할 수 있습니다."
+"Bionic processors that augment the user's nervous system, increasing their "
+"ability to dodge while active.  Dodge skill will also allow evading attacks "
+"beyond normal human capability, such as bullets."
+msgstr ""
+"사용자의 신경계에 바이오닉 프로세서가 설치되어, 활성화 중일 때 회피 능력을 향상시킵니다. 또한 회피 기술이 인간의 범주를 벗어나, 총알"
+" 같은 것도 피할 수 있게 됩니다."
 
 #: data/json/items/bionics.json
 msgid "Unified Power System CBM"
@@ -45588,7 +45647,7 @@ msgstr[0] "반쯤 갈린 알갱이"
 #. ~ Description for {'str_sp': 'semi ground grains'}
 #: data/json/items/fake.json
 msgid "A paste of half-finished milled grains, not yet flour."
-msgstr "반쯤 갈린 알갱이. 아직 밀가루가 되지 못했다."
+msgstr "반쯤 갈아낸 곡물 덩어리입니다. 아직 곡물가루라고 부를 정도는 아닙니다."
 
 #: data/json/items/fake.json
 msgid "smoldering embers"
@@ -45622,6 +45681,16 @@ msgstr "알 수 없는 추진력에 의해 매우 빠르게 고체화된 유기�
 msgid "grid water purifier"
 msgid_plural "grid water purifiers"
 msgstr[0] "망 연결된 정수기"
+
+#: data/json/items/fake.json
+msgid "Grid 3D Printer"
+msgid_plural "Grid 3D Printers"
+msgstr[0] "망 연결된 3D 프린터"
+
+#: data/json/items/fake.json
+msgid "Advanced Grid 3D Printer"
+msgid_plural "Advanced Grid 3D Printers"
+msgstr[0] "망 연결된 첨단 3D 프린터"
 
 #: data/json/items/faults_bionic.json
 msgid "Non-sterile"
@@ -50990,7 +51059,7 @@ msgstr[0] "스키 마스크"
 #. ~ Use action msg for {'str': 'ski mask'}.
 #: data/json/items/tool_armor.json
 msgid "You adjust your ski mask for less warmth."
-msgstr "체온을 내리기 위해 스키 마스크를 조정했다."
+msgstr "너무 더운 것 같아 스키 마스크를 조정합니다."
 
 #. ~ Description for {'str': 'ski mask'}
 #. ~ Description for {'str': 'ski mask (open)', 'str_pl': 'ski masks (open)'}
@@ -51017,7 +51086,7 @@ msgstr "조이기"
 #. (open)'}.
 #: data/json/items/tool_armor.json
 msgid "You adjust your ski mask for more warmth."
-msgstr "체온을 높이기 위해 스키 마스크를 조정했다."
+msgstr "너무 추운 것 같아 스키 마스크를 조정합니다."
 
 #: data/json/items/tool_armor.json
 msgid "whistle"
@@ -51446,9 +51515,9 @@ msgstr[0] "배터리 수납함 모드"
 #. ~ Description for {'str': 'battery compartment mod'}
 #: data/json/items/toolmod.json
 msgid ""
-"A battery compartment mod that allows using vehicle batteries and small "
-"storage batteries in regular tools."
-msgstr "배터리 수납함 모듈은 자동차 배터리와 소형 축전지를 일반 도구에 사용할 수 있게 해줍니다."
+"A battery compartment mod that allows using vehicle and storage batteries in"
+" regular tools, up to the size of a car battery."
+msgstr "자동차 배터리나 소형 축전지를 일반 장비에 연결하기 위한 배터리 수납함 모듈입니다."
 
 #: data/json/items/toolmod.json
 msgid "light battery mod"
@@ -52046,6 +52115,16 @@ msgid ""
 "rounds."
 msgstr ".357 SIG JHP 탄.  .357 SIG 탄은 고속 권총 탄환으로, 다른 권총탄에 비해 더 곧은 탄도가 생깁니다."
 
+#: data/json/items/ammo/357sig.json
+msgid ".357 SIG FMJ, black powder"
+msgid_plural ".357 SIG FMJ, black powders"
+msgstr[0] ".357 SIG FMJ, 흑색화약"
+
+#: data/json/items/ammo/357sig.json
+msgid ".357 SIG JHP, black powder"
+msgid_plural ".357 SIG JHP, black powders"
+msgstr[0] ".357 SIG JHP, 흑색화약"
+
 #: data/json/items/ammo/36paper.json
 msgid ".36 paper cartridge"
 msgid_plural ".36 paper cartridges"
@@ -52174,6 +52253,11 @@ msgid ""
 msgstr ""
 "90gr 무게의 탄두를 사용한 .38 Super JHP 탄. .38 슈퍼 탄은 방탄복과 차량을 관통하기 위한 목적으로 1929년에 "
 "설계되었습니다."
+
+#: data/json/items/ammo/38super.json
+msgid ".38 Super, black powder"
+msgid_plural ".38 Super, black powders"
+msgstr[0] ".38 수퍼, 흑색화약"
 
 #: data/json/items/ammo/40.json
 msgid ".40 S&W FMJ"
@@ -52382,6 +52466,11 @@ msgstr[0] ".410 000 샷"
 #: data/json/items/ammo/410shot.json
 msgid "A .410 shell with 5 000 pellets.  Good for a hunting or combat load."
 msgstr "000 샷 5개가 채워진 .410 산탄총 탄약. 사냥이나 전투에 걸맞는 위력을 가졌다."
+
+#: data/json/items/ammo/410shot.json
+msgid ".410 000 shot, black powder"
+msgid_plural ".410 000 shot, black powders"
+msgstr[0] ".410 000 샷, 흑색화약"
 
 #: data/json/items/ammo/44.json
 msgid ".44 Magnum FMJ"
@@ -52749,6 +52838,21 @@ msgstr ""
 "있는 지르코늄 가루도 점화합니다. 기갑 목표물을 관통한 관통자를 따라서 강철 뚜껑의 파편과 불타는 금속 가루가 침투하여 살상력을 "
 "높입니다. 이 희귀하고 복잡하며 비싼 탄환은 다시 제작할 수 없습니다. 신중히 사용하세요."
 
+#: data/json/items/ammo/50.json
+msgid ".50 BMG M17 tracer, black powder"
+msgid_plural ".50 BMG M17 tracer, black powders"
+msgstr[0] ".50 BGM M17 예광탄, 흑색화약"
+
+#: data/json/items/ammo/50.json
+msgid ".50 BMG M33 Ball, black powder"
+msgid_plural ".50 BMG M33 Ball, black powders"
+msgstr[0] ".50 BMG M33 통상탄, 흑색화약"
+
+#: data/json/items/ammo/50.json
+msgid ".50 BMG M2 AP, black powder"
+msgid_plural ".50 BMG M2 AP, black powders"
+msgstr[0] ".50 BMG M2 AP, 흑색화약"
+
 #: data/json/items/ammo/500.json
 msgid ".500 S&W Magnum"
 msgid_plural ".500 S&W Magnums"
@@ -52796,6 +52900,16 @@ msgid ""
 "Armor piercing 5.45x39mm ammunition with 57gr bullets containing a steel "
 "penetrator.  Developed in 1998 by the Russian military."
 msgstr "57gr 무게의 탄두를 사용한 5.45x39mm FMJ 탄약. 1998년 러시아군이 개발했습니다."
+
+#: data/json/items/ammo/545x39.json
+msgid "5.45x39mm 7N10, black powder"
+msgid_plural "5.45x39mm 7N10, black powders"
+msgstr[0] "5.45x39mm 7N10, 흑색화약"
+
+#: data/json/items/ammo/545x39.json
+msgid "5.45x39mm 7N22, black powder"
+msgid_plural "5.45x39mm 7N22, black powders"
+msgstr[0] "5.45x39mm 7N22, 흑색화약"
 
 #: data/json/items/ammo/57.json
 msgid "5.7x28mm SS190"
@@ -52908,6 +53022,19 @@ msgstr ""
 ".700 Nitro Express는 장거리 사격을 위해 고안된 매우 강력한 소총탄입니다. 놀라울 정도로 정확도와 장갑 관통력이 높기에 "
 "가장 치명적인 탄약으로 불리고, 강력한 반동과 총성만이 단점으로 꼽힙니다."
 
+#: data/json/items/ammo/700nx.json
+msgid ".700 NX, black powder"
+msgid_plural ".700 NX, black powders"
+msgstr[0] ".700 NX, 흑색화약"
+
+#. ~ Description for {'str': '.700 NX, black powder'}
+#: data/json/items/ammo/700nx.json
+msgid ""
+"The .700 Nitro Express is a very powerful rifle round designed for long-"
+"range use.  The \"Nitro\" in the name isn't very applicable to this "
+"blackpowder load, but it still has plenty of Express."
+msgstr ""
+
 #: data/json/items/ammo/762.json
 msgid "7.62x39mm 57-N-231"
 msgid_plural "7.62x39mm 57-N-231s"
@@ -52941,6 +53068,16 @@ msgstr ""
 "123gr 무게의 탄두를 사용한 7.62x39mm M67 탄. M43 탄의 종말탄도학적으로 부족한 부분을 보완하고자 유고슬라비아에서 "
 "1960년대에 개발했습니다. M67은 M43에 비해 표적에 닿은 직후 탄두가 빠르게 불안정해지기 때문에 강력한 파괴력을 지닙니다."
 
+#: data/json/items/ammo/762.json
+msgid "7.62x39mm 57-N-231, black powder"
+msgid_plural "7.62x39mm 57-N-231, black powders"
+msgstr[0] "7.62x39mm 57-N-231, 흑색화약"
+
+#: data/json/items/ammo/762.json
+msgid "7.62x39mm M67, black powder"
+msgid_plural "7.62x39mm M67, black powders"
+msgstr[0] "7.62x39mm M67, 흑색화약"
+
 #: data/json/items/ammo/762R.json
 msgid "7.62x54mmR"
 msgid_plural "7.62x54mmRs"
@@ -52958,6 +53095,11 @@ msgstr ""
 "150gr 무게의 탄두를 사용한 7.62x54mmR FMJ 탄. 7.62x54mmR 탄은 현재까지 사용되는 탄약 중에서 가장 오래된 탄환"
 " 중 하나이며, 이는 모신나강 소총의 인기 때문입니다. 수십년간 군대에서는 사용되지 않았지만, 민간에서는 아직까지도 많이 사용합니다. 이"
 " 탄환은 거의 모든 목표를 단 한번의 사격으로 무력화 할 수 있을 정도로 강력합니다."
+
+#: data/json/items/ammo/762R.json
+msgid "7.62x54mmR, black powder"
+msgid_plural "7.62x54mmR, black powders"
+msgstr[0] "7.62x54mmR, 흑색화약"
 
 #: data/json/items/ammo/762x25.json
 msgid "7.62x25mm FMJ"
@@ -52996,7 +53138,7 @@ msgid ""
 "A subsonic cartridge derived from the 7.62x25mm, designed for silenced "
 "firearms.  It offers good armor penetration at the cost of slightly less "
 "damage."
-msgstr "소음무기용 7.62x25mm 저속 탄환. 피해량이 감소하고 장갑관통력이 증가했다. "
+msgstr "소음무기용 7.62x25mm 아음속 탄입니다. 장갑관통력이 높지만, 피해량은 약간 낮습니다."
 
 #: data/json/items/ammo/762x25.json
 msgid "7.62x25mm FMJ, black powder"
@@ -53806,7 +53948,7 @@ msgstr[0] "탄창 가방"
 #: data/mods/Aftershock/items/armor.json
 #: data/mods/Aftershock/items/obsolete.json
 msgid "You stash your %s."
-msgstr "%s(을)를 수납했다."
+msgstr "%s(을)를 수납합니다."
 
 #. ~ Use action holster_prompt for {'str': 'magazine satchel'}.
 #. ~ Use action holster_prompt for {'str': 'chest magazine pouch', 'str_pl':
@@ -54286,6 +54428,21 @@ msgstr[0] "가죽 완갑"
 #: data/json/items/armor/arms_armor.json
 msgid "A pair of light leather arm guards, made for archery."
 msgstr "양궁용으로 제작된 가벼운 가죽제 팔 보호대 한 쌍."
+
+#: data/json/items/armor/arms_armor.json
+msgid "carbon fiber arm guards"
+msgid_plural "carbon fiber arm guardss"
+msgstr[0] "탄소섬유 팔 보호구"
+
+#. ~ Description for {'str': 'carbon fiber arm guards'}
+#: data/json/items/armor/arms_armor.json
+msgid ""
+"Custom armguards of layered carbon fiber armor made using a 3D printer.  Its"
+" rigid plates are more comparable to a suit of armor than kevlar, but it's "
+"very protective and lightweight."
+msgstr ""
+"3D 프린터를 이용해 탄소섬유를 겹겹이 쌓아 만든 수제 팔 보호구입니다. 뻣뻣한 장갑판은 케블라보다는 갑옷에 가까우며, 방어력이 "
+"높으면서도 가볍습니다."
 
 #: data/json/items/armor/ballistic_armor.json
 msgid "dragon skin vest"
@@ -55614,6 +55771,21 @@ msgstr ""
 msgid "pair of thick socks"
 msgid_plural "pairs of thick socks"
 msgstr[0] "두꺼운 양말"
+
+#: data/json/items/armor/boots.json
+msgid "carbon fiber boots"
+msgid_plural "carbon fiber bootss"
+msgstr[0] "탄소섬유 부츠"
+
+#. ~ Description for {'str': 'carbon fiber boots'}
+#: data/json/items/armor/boots.json
+msgid ""
+"A custom pair of boots made out of layered carbon fiber armor made using a "
+"3D printer.  Its rigid plates are more comparable to a suit of armor than "
+"kevlar, but it's very protective and lightweight."
+msgstr ""
+"3D 프린터를 이용해 탄소섬유를 겹겹이 쌓아 만든 수제 부츠입니다. 뻣뻣한 장갑판은 케블라보다는 갑옷에 가까우며, 방어력이 높으면서도 "
+"가볍습니다."
 
 #: data/json/items/armor/cloaks.json
 msgid "American flag"
@@ -57243,6 +57415,21 @@ msgstr[0] "골프 장갑"
 msgid "A thin pair of black leather golfing gloves."
 msgstr "두꺼운 검은 가죽 골프 장갑."
 
+#: data/json/items/armor/gloves.json
+msgid "carbon fiber gloves"
+msgid_plural "carbon fiber glovess"
+msgstr[0] "탄소섬유 장갑"
+
+#. ~ Description for {'str': 'carbon fiber gloves'}
+#: data/json/items/armor/gloves.json
+msgid ""
+"A custom pair of fingerless armored gloves made using a 3D printer.  Its "
+"rigid plates are more comparable to metal than kevlar, but it's very "
+"protective and lightweight."
+msgstr ""
+"3D 프린터를 이용해 탄소섬유를 겹겹이 쌓아 만든 수제 반장갑입니다. 뻣뻣한 장갑판은 케블라보다는 금속에 가까우며, 방어력이 높으면서도 "
+"가볍습니다."
+
 #: data/json/items/armor/hats.json
 msgid "ten-gallon hat"
 msgid_plural "ten-gallon hats"
@@ -58049,6 +58236,21 @@ msgid ""
 "A huge makeshift helmet made from a canning pot.  For the truly desperate "
 "man-bear-pig."
 msgstr "통조림 냄비로 만든 거대한 임시 헬멧입니다. 정말 절박한 사람을 위해서요."
+
+#: data/json/items/armor/helmets.json
+msgid "carbon fiber helmet"
+msgid_plural "carbon fiber helmets"
+msgstr[0] "탄소섬유 헬멧"
+
+#. ~ Description for {'str': 'carbon fiber helmet'}
+#: data/json/items/armor/helmets.json
+msgid ""
+"A custom helmet of layered carbon fiber armor made using a 3D printer.  Its "
+"rigid plates are more comparable to a suit of armor than kevlar, but it's "
+"very protective and lightweight."
+msgstr ""
+"3D 프린터를 이용해 탄소섬유를 겹겹이 쌓아 만든 수제 헬멧입니다. 뻣뻣한 장갑판은 케블라보다는 갑옷에 가까우며, 방어력이 높으면서도 "
+"가볍습니다."
 
 #: data/json/items/armor/holster.json
 msgid "back holster"
@@ -62355,6 +62557,21 @@ msgstr ""
 "가죽 사이에 금속판을 솜씨좋게 달아 고정시킨 장갑화 치마입니다. 제대로 된 다리 보호구보다는 방어력이 낮지만, 대신 여름에도 상대적으로 "
 "입을만하고 착용한 채로 움직이기도 편합니다."
 
+#: data/json/items/armor/legs_armor.json
+msgid "carbon fiber leg guards"
+msgid_plural "carbon fiber leg guardss"
+msgstr[0] "탄소섬유 다리 보호구"
+
+#. ~ Description for {'str': 'carbon fiber leg guards'}
+#: data/json/items/armor/legs_armor.json
+msgid ""
+"Custom legs of layered carbon fiber armor made using a 3D printer.  Its "
+"rigid plates are more comparable to a suit of armor than kevlar, but it's "
+"very protective and lightweight."
+msgstr ""
+"3D 프린터를 이용해 탄소섬유를 겹겹이 쌓아 만든 수제 다리 보호구입니다. 뻣뻣한 장갑판은 케블라보다는 갑옷에 가까우며, 방어력이 "
+"높으면서도 가볍습니다."
+
 #: data/json/items/armor/legs_clothes.json
 msgid "basketball shorts"
 msgid_plural "basketball shorts"
@@ -63435,7 +63652,11 @@ msgstr[0] "파워 아머"
 #. power armor'}.
 #. ~ Use action msg for {'str': 'light power armor', 'str_pl': 'suits of light
 #. power armor'}.
+#. ~ Use action msg for {'str': 'survivor power armor'}.
+#. ~ Use action msg for {'str': 'military exo-suit'}.
+#. ~ Use action msg for {'str': 'industrial exo-suit'}.
 #: data/json/items/armor/power_armor.json
+#: data/json/items/armor/suits_protection.json
 msgid "The %s engages."
 msgstr "%s(이)가 기동합니다."
 
@@ -63466,7 +63687,13 @@ msgstr[0] "파워 아머 (켜짐)"
 #. of heavy power armor (active)'}.
 #. ~ Use action msg for {'str': 'light power armor (active)', 'str_pl': 'suits
 #. of light power armor (active)'}.
+#. ~ Use action msg for {'str_sp': 'survivor power armor (active)'}.
+#. ~ Use action msg for {'str': 'military exo-suit (active)', 'str_pl':
+#. 'military exo-suits (active)'}.
+#. ~ Use action msg for {'str': 'industrial exo-suit (active)', 'str_pl':
+#. 'industrial exo-suits (active)'}.
 #: data/json/items/armor/power_armor.json
+#: data/json/items/armor/suits_protection.json
 msgid "The %s disengages."
 msgstr "%s의 기동을 중지합니다."
 
@@ -64033,7 +64260,7 @@ msgstr ""
 #: data/json/items/armor/shields.json
 msgid "ballistic shield"
 msgid_plural "ballistic shields"
-msgstr[0] "방탄 방패"
+msgstr[0] "방탄방패"
 
 #. ~ Description for {'str': 'ballistic shield'}
 #: data/json/items/armor/shields.json
@@ -64177,6 +64404,38 @@ msgid ""
 "A large metal reinforced shield with spikes jutting out of it.  Can be used "
 "as a melee weapon if need be."
 msgstr "가시가 여럿 돋혀있는 커다란 금속보강 방패입니다. 필요하다면 근접무기로 써먹을 수도 있습니다."
+
+#: data/json/items/armor/shields.json
+msgid "carbon fiber buckler"
+msgid_plural "carbon fiber bucklers"
+msgstr[0] "탄소섬유 버클러"
+
+#. ~ Description for {'str': 'carbon fiber buckler'}
+#: data/json/items/armor/shields.json
+msgid ""
+"A custom buckler made out of layered carbon fiber armor over synthetic "
+"fabric padding made using a 3D printer.  Its rigid plates are more "
+"comparable to a sheet of metal than kevlar, but it's very protective and "
+"lightweight."
+msgstr ""
+"3D 프린터를 이용해 합성섬유 충전재 위에 탄소섬유를 겹겹이 쌓아 만든 수제 버클러입니다. 뻣뻣한 장갑판은 케블라보다는 금속에 가까우며,"
+" 방어력이 높으면서도 가볍습니다."
+
+#: data/json/items/armor/shields.json
+msgid "carbon fiber ballistic shield"
+msgid_plural "carbon fiber ballistic shields"
+msgstr[0] "탄소섬유 방탄방패"
+
+#. ~ Description for {'str': 'carbon fiber ballistic shield'}
+#: data/json/items/armor/shields.json
+msgid ""
+"A custom ballistic shield made out of layered carbon fiber armor over "
+"synthetic fabric padding made using a 3D printer.  Its rigid plates are more"
+" comparable to a sheet of metal than kevlar, but it's very protective and "
+"lightweight."
+msgstr ""
+"3D 프린터를 이용해 합성섬유 충전재 위에 탄소섬유를 겹겹이 쌓아 만든 수제 방탄방패입니다. 뻣뻣한 장갑판은 케블라보다는 금속에 "
+"가까우며, 방어력이 높으면서도 가볍습니다."
 
 #: data/json/items/armor/storage.json
 msgid "backpack"
@@ -64395,7 +64654,8 @@ msgstr[0] "생가죽 가방"
 msgid ""
 "The raw skin of an animal, quickly turned into a makeshift bag for storage."
 "  It will still rot, and needs to be cured and tanned."
-msgstr "동물의 생가죽, 빠른 보관을 위한 수제가방으로 변신했다. 여전히 썩을 것이고, 고치고 무두질 해야한다."
+msgstr ""
+"동물의 생가죽을 다듬어 임시 수납용 가방으로 만든 것입니다. 이 상태로도 부패가 진행되므로, 가죽을 정리하고 무두질할 필요가 있습니다."
 
 #: data/json/items/armor/storage.json
 msgid "tainted hide bag"
@@ -64407,7 +64667,8 @@ msgstr[0] "오염된 가죽 가방"
 msgid ""
 "The raw skin of a monster, quickly turned into a makeshift bag for storage."
 "  It will still rot, and needs to be cured and tanned."
-msgstr "괴물의 생가죽을 급히 임시 수납용 가방으로 만든것, 썩을 것이기 때문에, 가죽을 정리하고 무두질 해야 합니다."
+msgstr ""
+"괴물의 생가죽을 다듬어 임시 수납용 가방으로 만든 것입니다. 이 상태로도 부패가 진행되므로, 가죽을 정리하고 무두질할 필요가 있습니다."
 
 #: data/json/items/armor/storage.json
 msgid "H&K operational briefcase (empty)"
@@ -65358,6 +65619,117 @@ msgstr ""
 "강화된 방탄조끼와 단열 처리된 가죽 점프슈트를 이용해 만든 따뜻하고 묵직한 수제 방어구입니다. 각종 위험환경과 피해로부터 몸을 "
 "보호해줍니다."
 
+#: data/json/items/armor/suits_protection.json
+msgid "carbon fiber armor"
+msgid_plural "carbon fiber armors"
+msgstr[0] "탄소섬유 갑옷"
+
+#. ~ Description for {'str': 'carbon fiber armor'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"A custom suit of layered carbon fiber armor over neoprene padding made using"
+" a 3D printer.  Its rigid plates are more comparable to a suit of armor than"
+" kevlar, but it's very protective and moves surprisingly well."
+msgstr ""
+"3D 프린터를 이용해 네오프렌 충전재 위에 탄소섬유를 겹겹이 쌓아 만든 수제 갑옷입니다. 뻣뻣한 장갑판은 케블라보다는 갑옷에 가까우며, "
+"방어력이 높으면서도 놀랄 정도로 움직이기 편합니다."
+
+#: data/json/items/armor/suits_protection.json
+msgid "survivor power armor"
+msgid_plural "survivor power armors"
+msgstr[0] "생존자 파워 아머"
+
+#. ~ Description for {'str': 'survivor power armor'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, not everyone has "
+"access to it.  This particular suit is cobbled together from scavenged "
+"materials, but it works for what it is."
+msgstr ""
+"파워 아머가 온 세상의 군대를 순식간에 사로잡은 것은 사실이지만, 모두가 파워 아머를 손에 넣을 수 있던 것은 아니었습니다. 이 파워 "
+"아머는 재활용된 부품을 꿰맞춰 만들어졌지만, 그럭저럭 쓸만합니다."
+
+#: data/json/items/armor/suits_protection.json
+msgid "survivor power armor (active)"
+msgid_plural "survivor power armor (active)"
+msgstr[0] "생존자 파워 아머 (켜짐)"
+
+#. ~ Description for {'str_sp': 'survivor power armor (active)'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, not everyone has "
+"access to it.  This particular suit is cobbled together from scavenged "
+"materials, but it works for what it is.  It is currently turned on, activate"
+" it to turn it off."
+msgstr ""
+"파워 아머가 온 세상의 군대를 순식간에 사로잡은 것은 사실이지만, 모두가 파워 아머를 손에 넣을 수 있던 것은 아니었습니다. 이 파워 "
+"아머는 재활용된 부품을 꿰맞춰 만들어졌지만, 그럭저럭 쓸만합니다. 현재 작동 중이며, 다시 사용하여 전원을 끌 수 있습니다."
+
+#: data/json/items/armor/suits_protection.json
+msgid "military exo-suit"
+msgid_plural "military exo-suits"
+msgstr[0] "군용 외골격"
+
+#. ~ Description for {'str': 'military exo-suit'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, the technologies "
+"used to make them also allowed for smaller, less protective external rigging"
+" that rely on UPS to boost strength, ones designed for operatives or light "
+"infantry."
+msgstr ""
+"파워 아머가 온 세상의 군대를 순식간에 사로잡은 것은 사실이지만, 그 기술이 꼭 파워 아머만을 위한 것은 아니었습니다. 이 외골격은 "
+"특수요원이나 경보병을 위한 장비로, UPS를 동력원으로 삼아 근력을 향상시키지만 크기가 더 작고 방어력도 낮습니다."
+
+#: data/json/items/armor/suits_protection.json
+msgid "military exo-suit (active)"
+msgid_plural "military exo-suits (active)"
+msgstr[0] "군용 외골격 (켜짐)"
+
+#. ~ Description for {'str': 'military exo-suit (active)', 'str_pl': 'military
+#. exo-suits (active)'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, the technologies "
+"used to make them also allowed for smaller, more personalized suits of armor"
+" that rely on UPS, ones designed for operatives or light infantry rather "
+"than heavy infantry.  It is currently turned on, activate it to turn it off."
+msgstr ""
+"파워 아머가 온 세상의 군대를 순식간에 사로잡은 것은 사실이지만, 그 기술이 꼭 파워 아머만을 위한 것은 아니었습니다. 이 외골격은 "
+"특수요원이나 경보병을 위한 장비로, UPS를 동력원으로 삼아 근력을 향상시키지만 크기가 더 작고 방어력도 낮습니다. 현재 작동 중이며, "
+"다시 사용하여 끌 수 있습니다."
+
+#: data/json/items/armor/suits_protection.json
+msgid "industrial exo-suit"
+msgid_plural "industrial exo-suits"
+msgstr[0] "산업용 외골격"
+
+#. ~ Description for {'str': 'industrial exo-suit'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, the technologies "
+"used to make them also allowed for smaller, industrial powered suits meant "
+"for heavy lifting."
+msgstr ""
+"파워 아머가 온 세상의 군대를 순식간에 사로잡은 것은 사실이지만, 그 기술이 꼭 파워 아머만을 위한 것은 아니었습니다. 이 외골격은 "
+"무거운 짐을 나르는 용도로 소형화한 산업용 장비입니다."
+
+#: data/json/items/armor/suits_protection.json
+msgid "industrial exo-suit (active)"
+msgid_plural "industrial exo-suits (active)"
+msgstr[0] "산업용 외골격 (켜짐)"
+
+#. ~ Description for {'str': 'industrial exo-suit (active)', 'str_pl':
+#. 'industrial exo-suits (active)'}
+#: data/json/items/armor/suits_protection.json
+msgid ""
+"Although power armor took the world's militaries by storm, the technologies "
+"used to make them also allowed for industrial powered suits meant for heavy "
+"lifting.  It is currently turned on, activate it to turn it off."
+msgstr ""
+"파워 아머가 온 세상의 군대를 순식간에 사로잡은 것은 사실이지만, 그 기술이 꼭 파워 아머만을 위한 것은 아니었습니다. 이 외골격은 "
+"무거운 짐을 나르는 용도로 소형화한 산업용 장비입니다. 현재 작동 중이며, 다시 사용하여 끌 수 있습니다."
+
 #: data/json/items/armor/swimming.json
 msgid "pair of swimming trunks"
 msgid_plural "pairs of swimming trunks"
@@ -65750,6 +66122,21 @@ msgid ""
 "An armored vest made from thick leather and metal plates.  Cumbersome, but "
 "offers excellent protection from harm."
 msgstr "두꺼운 가죽과 금속판으로 만든 갑옷 조끼. 불편하지만, 높은 방어력을 가집니다."
+
+#: data/json/items/armor/torso_armor.json
+msgid "carbon fiber chestguard"
+msgid_plural "carbon fiber chestguards"
+msgstr[0] "탄소섬유 가슴 보호구"
+
+#. ~ Description for {'str': 'carbon fiber chestguard'}
+#: data/json/items/armor/torso_armor.json
+msgid ""
+"A custom chestplate of layered carbon fiber armor made using a 3D printer.  "
+"Its rigid plates are more comparable to a suit of armor than kevlar, but "
+"it's very protective and lightweight."
+msgstr ""
+"3D 프린터를 이용해 탄소섬유를 겹겹이 쌓아 만든 수제 가슴 보호구입니다. 뻣뻣한 장갑판은 케블라보다는 갑옷에 가까우며, 방어력이 "
+"높으면서도 가볍습니다."
 
 #: data/json/items/armor/torso_clothes.json
 msgid "leather apron"
@@ -89843,6 +90230,17 @@ msgstr ""
 "잘 설계된 급조된 레버액션 카빈으로 총열이 짧아졌습니다. 조잡한 분리형 탄창이나 STANAG 탄창을 먹는 이 총은 괜찮은 수제 "
 "무기입니다."
 
+#: data/json/items/gun/223.json
+msgid "carbon fiber assault rifle"
+msgid_plural "carbon fiber assault rifles"
+msgstr[0] "탄소섬유 돌격소총"
+
+#: data/json/items/gun/223.json
+msgid ""
+"This assault rifle was made using a 3D printer, resulting in a very "
+"lightweight weapon."
+msgstr "3D 프린터를 이용해 만든 돌격소총으로, 매우 가볍습니다."
+
 #: data/json/items/gun/270win.json
 msgid "Remington 700 .270 Win"
 msgid_plural "Remington 700 .270 Win"
@@ -90302,13 +90700,14 @@ msgstr "P320 컴팩트는 반자동, 저반동형 권총입니다. .357 SIG탄�
 #: data/json/items/gun/357sig.json
 msgid "Moriarti AR .357sig"
 msgid_plural "Moriarti AR .357sigs"
-msgstr[0] ""
+msgstr[0] "모리아티 AR .357 SIG"
 
 #: data/json/items/gun/357sig.json
 msgid ""
 "A semi-automatic rifle using .357 SIG rounds, also known as Moriarti "
 "MA-357Sig-16.  It is also compatible with Glock 31 magazines."
 msgstr ""
+"모리아티 MA-357 SIG-16 이라고도 불리는, .357 SIG 탄을 사용하는 반자동 소총입니다. 글록 31 탄창과 호환됩니다."
 
 #: data/json/items/gun/36paper.json
 msgid "Colt M1861 Navy"
@@ -90409,7 +90808,7 @@ msgstr ""
 #: data/json/items/gun/38.json
 msgid "Marlin 1894C"
 msgid_plural "Marlin 1894C"
-msgstr[0] ""
+msgstr[0] "말린 1894C"
 
 #: data/json/items/gun/38.json
 msgid ""
@@ -90417,6 +90816,8 @@ msgid ""
 "walnut stock and foreend.  The C version is chambered in .357 Magnum/.38 "
 "Special."
 msgstr ""
+"말린 모델 1894는 레버액션식 연발소총입니다. 호두나무 개머리판과 총열덮개가 달려있습니다. 이름에 붙은 C는 .357 매그넘 및 .38"
+" 스페셜 탄을 사용함을 의미합니다."
 
 #: data/json/items/gun/380.json
 msgid "MAC-11"
@@ -90507,13 +90908,15 @@ msgstr ""
 #: data/json/items/gun/380.json
 msgid "Hi-Point 3895"
 msgid_plural "Hi-Point 3895"
-msgstr[0] ""
+msgstr[0] "하이-포인트 3895"
 
 #: data/json/items/gun/380.json
 msgid ""
 "A .380 carbine, fun to shoot, not so much useful against anything larger.  "
 "Usually good for training.  Also available in pink camo."
 msgstr ""
+".380 카빈은 쏘기에는 재밌지만 어지간히 큰 목표에게는 별 쓸모가 없는 총입니다. 보통 훈련용으로 쓰입니다. 핑크빛 위장색으로 덮인 "
+"것도 있습니다."
 
 #: data/json/items/gun/38super.json
 msgid "AF2011A1 .38 Super"
@@ -92252,6 +92655,17 @@ msgid ""
 " its average trigger and short sight radius."
 msgstr ""
 
+#: data/json/items/gun/9mm.json
+msgid "carbon fiber machine pistol"
+msgid_plural "carbon fiber machine pistols"
+msgstr[0] "탄소섬유 기관권총"
+
+#: data/json/items/gun/9mm.json
+msgid ""
+"This 3D printed machine pistol is made completely without any metal parts.  "
+"As a result, it is very lightweight."
+msgstr "3D 프린터를 이용해 만든 기관권총으로, 금속부품이 일절 포함되지 않아 매우 가볍습니다."
+
 #: data/json/items/gun/9x18.json
 msgid "Makarov PM"
 msgid_plural "Makarov PMs"
@@ -93592,12 +94006,12 @@ msgstr[0] "일렉트로레이저 전환도구"
 
 #: data/json/items/gunmod/laser_gunmods.json
 msgid ""
-"A set of high-tech electronics and optics.  These converts a laser pistol "
+"A set of high-tech electronics and optics.  These converts a laser weapon "
 "into a less-lethal electrolaser capable of stunning targets, at the cost of "
 "a decreased damage output and increased power consumption."
 msgstr ""
-"첨단 전자기기와 광학렌즈입니다. 레이저 권총을 저치사성 일렉트로레이저 무기로 개조하여 대상을 기절시킬 수 있게 만들지만, 피해가 감소하고"
-" 전력 소모량을 증가시킵니다."
+"첨단 전자기기 및 광학렌즈입니다. 레이저 무기를 저치사성 일렉트로레이저 무기로 개조하여 대상을 기절시키는 기능을 추가하지만, 피해가 "
+"감소하고 전력 소모량을 증가시킵니다."
 
 #: data/json/items/gunmod/laser_gunmods.json
 msgid "effective emitter"
@@ -94849,7 +95263,7 @@ msgstr ""
 #: data/json/items/magazine/223.json
 msgid "Ruger 5.56x45mm 5-round magazine"
 msgid_plural "Ruger 5.56x45mm 5-round magazines"
-msgstr[0] "루거 5.56x45mm 5발들이 탄창"
+msgstr[0] "루거 5.56x45mm 5발 탄창"
 
 #. ~ Description for {'str': 'Ruger 5.56x45mm 5-round magazine'}
 #: data/json/items/magazine/223.json
@@ -94869,7 +95283,7 @@ msgstr "STANAG 호환 소총에 사용되는 10발들이 소형 박스 탄창."
 #: data/json/items/magazine/223.json
 msgid "Ruger 5.56x45mm 10-round magazine"
 msgid_plural "Ruger 5.56x45mm 10-round magazines"
-msgstr[0] "루거 5.56x45mm 10발들이 탄창"
+msgstr[0] "루거 5.56x45mm 10발 탄창"
 
 #. ~ Description for {'str': 'Ruger 5.56x45mm 10-round magazine'}
 #: data/json/items/magazine/223.json
@@ -94879,7 +95293,7 @@ msgstr "루거 미니-14 소총에 사용되는 10발들이 소형 박스 탄창
 #: data/json/items/magazine/223.json
 msgid "Ruger 5.56x45mm 20-round magazine"
 msgid_plural "Ruger 5.56x45mm 20-round magazines"
-msgstr[0] "루거 5.56x45mm 20발들이 탄창"
+msgstr[0] "루거 5.56x45mm 20발 탄창"
 
 #. ~ Description for {'str': 'Ruger 5.56x45mm 20-round magazine'}
 #: data/json/items/magazine/223.json
@@ -94889,7 +95303,7 @@ msgstr "루거 미니-14 소총에 사용되는 20발들이 박스 탄창."
 #: data/json/items/magazine/223.json
 msgid "Ruger 5.56x45mm 30-round magazine"
 msgid_plural "Ruger 5.56x45mm 30-round magazines"
-msgstr[0] "루거 5.56x45mm 30발들이 탄창"
+msgstr[0] "루거 5.56x45mm 30발 탄창"
 
 #. ~ Description for {'str': 'Ruger 5.56x45mm 30-round magazine'}
 #: data/json/items/magazine/223.json
@@ -94899,7 +95313,7 @@ msgstr "루거 미니-14 소총에 사용되는 대용량 박스 탄창."
 #: data/json/items/magazine/223.json
 msgid "Ruger 5.56x45mm 90-round snail drum magazine"
 msgid_plural "Ruger 5.56x45mm 90-round snail drum magazines"
-msgstr[0] "루거 5.56x45mm 90발들이 원판형 드럼 탄창"
+msgstr[0] "루거 5.56x45mm 90발 원판형 드럼 탄창"
 
 #. ~ Description for {'str': 'Ruger 5.56x45mm 90-round snail drum magazine'}
 #: data/json/items/magazine/223.json
@@ -94910,7 +95324,7 @@ msgstr "루거 미니-14 소총에 사용되는 부피가 큰 90발들이 달팽
 #: data/json/items/magazine/223.json
 msgid "Ruger 5.56x45mm 100-round double drum magazine"
 msgid_plural "Ruger 5.56x45mm 100-round double drum magazines"
-msgstr[0] "루거 5.56x45mm 100발들이 이중 드럼 탄창"
+msgstr[0] "루거 5.56x45mm 100발 이중 드럼 탄창"
 
 #. ~ Description for {'str': 'Ruger 5.56x45mm 100-round double drum magazine'}
 #: data/json/items/magazine/223.json
@@ -95142,6 +95556,20 @@ msgid ""
 "little more than a bent sheet of steel held together by duct tape and hope, "
 "for use with the Ruger Mini-14 rifle."
 msgstr "루거 미니-14 소총에 사용되는 5발들이 급조 단열 박스 탄창. 구부러진 강철판을 접착 테이프와 희망으로 붙여 만들었습니다."
+
+#: data/json/items/magazine/223.json
+msgid "carbon fiber .223 30-round magazine"
+msgid_plural "carbon fiber .223 30-round magazines"
+msgstr[0] "탄소섬유 .223 30발 탄창"
+
+#. ~ Description for {'str': 'carbon fiber .223 30-round magazine'}
+#: data/json/items/magazine/223.json
+msgid ""
+"A standard capacity 30-round box magazine for use with 3D printed carbon "
+"fiber rifles, though it will fit with just about any STANAG rifle."
+msgstr ""
+"3D 프린터를 이용해 만든 30발들이 표준형 박스탄창으로, 본래는 탄소섬유 돌격소총과 함께 사용되어야 하지만 아무 STANAG 소총에 "
+"써도 호환될 것입니다."
 
 #: data/json/items/magazine/300.json
 msgid "M2010 ESR magazine"
@@ -95615,13 +96043,13 @@ msgstr "타우러스 스펙트럼에 사용되는 6발들이 소형 박스 탄�
 #: data/json/items/magazine/380.json
 msgid "Hi-Point 3895 magazine"
 msgid_plural "Hi-Point 3895 magazines"
-msgstr[0] ""
+msgstr[0] "하이-포인트 3895 탄창"
 
 #. ~ Description for {'str': 'Hi-Point 3895 magazine'}
 #: data/json/items/magazine/380.json
 msgid ""
 "10-round magazine for the Hi-Point 3895.  Not compatible with the CF380."
-msgstr ""
+msgstr "하이-포인트 3895용 10발들이 탄창입니다. CF380과 호환되지 않습니다."
 
 #: data/json/items/magazine/38super.json
 msgid "AF2011A1 magazine"
@@ -95681,7 +96109,7 @@ msgstr[0] "글록 22 50발 드럼 탄창"
 msgid ""
 "A 50-round drum magazine for use with Glock pistols chambered for .40 S&W or"
 " .357 SIG."
-msgstr ""
+msgstr "글록 권총에 사용되는 50발들이 드럼 탄창입니다. .40 S&W 또는 .357 SIG 탄을 사용합니다."
 
 #: data/json/items/magazine/40.json
 msgid "Glock 22 extended magazine"
@@ -95746,7 +96174,7 @@ msgstr ""
 #: data/json/items/magazine/40.json
 msgid "Hi-Power .40 S&W magazine"
 msgid_plural "Hi-Power .40 S&W magazines"
-msgstr[0] "하이-파워.40 S&W 탄창"
+msgstr[0] "하이-파워 .40 S&W 탄창"
 
 #. ~ Description for {'str': 'Hi-Power .40 S&W magazine'}
 #: data/json/items/magazine/40.json
@@ -95801,7 +96229,7 @@ msgstr[0] "크리스 벡터 탄창"
 #. ~ Description for {'str': 'KRISS Vector magazine'}
 #: data/json/items/magazine/40.json
 msgid "A 30-round steel box magazine for use with the KRISS Vector"
-msgstr ""
+msgstr "크리스 벡터에 사용되는 30발들이 철제 박스 탄창입니다."
 
 #: data/json/items/magazine/40mm.json
 #: data/mods/Generic_Guns/vehicles/ammo_redefine_hacks/temp_magazine_json_load_hack.json
@@ -98495,6 +98923,20 @@ msgid ""
 "earlier ge or dagger-axe."
 msgstr "중국 상 왕조, 혹은 그 이전에서부터 유래된 청동 창. 창의 양쪽에 수직으로 뻗은 과 형태의 날을 달았습니다. "
 
+#: data/json/items/melee/spears_and_polearms.json
+msgid "carbon fiber spear"
+msgid_plural "carbon fiber spears"
+msgstr[0] "탄소섬유 창"
+
+#. ~ Description for {'str': 'carbon fiber spear'}
+#: data/json/items/melee/spears_and_polearms.json
+msgid ""
+"A custom 3D-printed spear made out of carbon fiber.  It is more lightweight "
+"than a normal spear thanks to its method of manufacturing, but it can only "
+"be repaired using a 3D printer."
+msgstr ""
+"3D 프린터를 이용해 만든 탄소섬유 창입니다. 제조 방식 덕분에 일반적인 창에 비해 훨씬 가볍지만, 3D 프린터로만 수리할 수 있습니다."
+
 #: data/json/items/melee/swords_and_blades.json
 msgid "2-by-sword"
 msgid_plural "2-by-swords"
@@ -99885,6 +100327,36 @@ msgstr ""
 "사제 개조를 통해 칼날 가열 기능이 추가된 단검입니다. 급조된 원자력 배터리를 장착해 사실상 영원히 사용할 수 있지만, 장비가 손상될 때"
 " 사용자를 방사능에 중독시킬 수 있습니다."
 
+#: data/json/items/melee/swords_and_blades.json
+msgid "carbon fiber knife"
+msgid_plural "carbon fiber knifes"
+msgstr[0] "탄소섬유 나이프"
+
+#. ~ Description for {'str': 'carbon fiber knife'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"A custom 3D-printed combat knife made out of carbon fiber.  It is more "
+"lightweight than a normal knife thanks to its method of manufacturing, but "
+"it can only be repaired using a 3D printer."
+msgstr ""
+"3D 프린터를 이용해 만든 탄소섬유 컴뱃 나이프입니다. 제조 방식 덕분에 일반적인 나이프에 비해 훨씬 가볍지만, 3D 프린터로만 수리할 "
+"수 있습니다."
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "carbon fiber sword"
+msgid_plural "carbon fiber swords"
+msgstr[0] "탄소섬유 검"
+
+#. ~ Description for {'str': 'carbon fiber sword'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"A custom 3D-printed single-bladed sword made out of carbon fiber.  It is "
+"more lightweight than a normal sword thanks to its method of manufacturing, "
+"but it can only be repaired using a 3D printer."
+msgstr ""
+"3D 프린터를 이용해 만든 탄소섬유 외날검입니다. 제조 방식 덕분에 일반적인 검에 비해 훨씬 가볍지만, 3D 프린터로만 수리할 수 "
+"있습니다."
+
 #: data/json/items/melee/unarmed_weapons.json
 msgid "tiger claws"
 msgid_plural "tiger claws"
@@ -99993,7 +100465,7 @@ msgstr ""
 #: data/json/items/melee/unarmed_weapons.json
 msgid "jamadhar"
 msgid_plural "jamadhars"
-msgstr[0] "카타르"
+msgstr[0] "자마다르"
 
 #. ~ Description for {'str': 'jamadhar'}
 #: data/json/items/melee/unarmed_weapons.json
@@ -100043,6 +100515,36 @@ msgid ""
 msgstr ""
 "손잡이에서 뻗어나와 구부러진 두 갈래가 특징인 뾰족한 금속 바통입니다. 주로 적을 무장해제시키는데 쓰였지만, 당신의 주먹이 적을 꿰뚫게 "
 "만드는데도 쓰입니다."
+
+#: data/json/items/melee/unarmed_weapons.json
+msgid "carbon fiber jamadhar"
+msgid_plural "carbon fiber jamadhars"
+msgstr[0] "탄소섬유 자마다르"
+
+#. ~ Description for {'str': 'carbon fiber jamadhar'}
+#: data/json/items/melee/unarmed_weapons.json
+msgid ""
+"A custom 3D-printed jamadhar made out of carbon fiber.  It is more "
+"lightweight than a normal weapon thanks to its method of manufacturing, but "
+"it can only be repaired using a 3D printer."
+msgstr ""
+"3D 프린터를 이용해 만든 탄소섬유 자마다르입니다. 제조 방식 덕분에 일반적인 자마다르에 비해 훨씬 가볍지만, 3D 프린터로만 수리할 수"
+" 있습니다."
+
+#: data/json/items/melee/unarmed_weapons.json
+msgid "carbon fiber katar"
+msgid_plural "carbon fiber katars"
+msgstr[0] "탄소섬유 카타르"
+
+#. ~ Description for {'str': 'carbon fiber katar'}
+#: data/json/items/melee/unarmed_weapons.json
+msgid ""
+"A custom 3D-printed katar made out of carbon fiber.  It is more lightweight "
+"than a normal weapon thanks to its method of manufacturing, but it can only "
+"be repaired using a 3D printer."
+msgstr ""
+"3D 프린터를 이용해 만든 탄소섬유 카타르입니다. 제조 방식 덕분에 일반적인 카타르에 비해 훨씬 가볍지만, 3D 프린터로만 수리할 수 "
+"있습니다."
 
 #: data/json/items/ranged/archery.json
 msgid "crude wooden arrow"
@@ -100636,6 +101138,21 @@ msgstr ""
 "한 동작으로만 볼트를 발사하는 기발한 작동방식을 가진 주문제작식 쇠뇌이며, 10발을 장전할 수 있는 나무탄창이 있습니다. 이 무기로 "
 "발사된 볼트는 재사용 확률이 높습니다."
 
+#: data/json/items/ranged/crossbows.json
+msgid "carbon fiber repeating crossbow"
+msgid_plural "carbon fiber repeating crossbows"
+msgstr[0] "탄소섬유 연발 쇠뇌"
+
+#: data/json/items/ranged/crossbows.json
+msgid ""
+"A custom 3D-printed pump-action repeating crossbow made out of carbon fiber "
+"and synthetic fabric.  This expensive hunting weapon is surprisingly "
+"lightweight thanks to its construction, but it can only be repaired using a "
+"3D printer."
+msgstr ""
+"3D 프린터를 이용해 탄소섬유와 합성섬유로 만든 펌프액션식 연발 쇠뇌입니다. 이 사냥용 무기는 제조 방식 덕분에 훨씬 가볍지만, "
+"3D프린터로만 수리할 수 있습니다."
+
 #: data/json/items/ranged/pneumatic.json
 msgid "BB gun"
 msgid_plural "BB guns"
@@ -100656,11 +101173,11 @@ msgstr[0] "공압식 볼트 드라이버"
 
 #: data/json/items/ranged/pneumatic.json
 msgid ""
-"An eight-shot, revolving barrel, pneumatic bolt driver handcrafted from "
-"scrap.  Be careful where you reload it, pumping air into the tank takes a "
-"few seconds.  It is pretty quiet and quite deadly."
+"A ten-shot, revolving barrel, pneumatic bolt driver handcrafted from scrap."
+"  Be careful where you reload it, pumping air into the tank takes a few "
+"seconds.  It is pretty quiet and quite deadly."
 msgstr ""
-"고철과 잔해를 그러모아 만든, 여덟발들이 회전총열 공압식 볼트 드라이버입니다. 탱크에 공기를 주입하는데 시간이 약간 소요되니 재장전에 "
+"고철과 잔해를 그러모아 만든, 열발들이 회전총열 공압식 볼트 드라이버입니다. 탱크에 공기를 주입하는데 시간이 약간 소요되니 재장전에 "
 "주의가 필요합니다. 조용하면서도 상당히 치명적입니다."
 
 #: data/json/items/ranged/pneumatic.json
@@ -107132,6 +107649,36 @@ msgid ""
 "powerful piece of equipment that can spin stuff really quickly.  It's not a "
 "toy!"
 msgstr ""
+
+#: data/json/items/tool/science.json
+msgid "3D printer"
+msgid_plural "3D printers"
+msgstr[0] "3D 프린터"
+
+#. ~ Description for {'str': '3D printer'}
+#: data/json/items/tool/science.json
+msgid ""
+"Although it's not nearly as fancy as the experimental nanofabricators, this "
+"civilian-grade 3D printer can produce almost any item out of plastic, "
+"polymer, or carbon fiber…  so long as you can program it."
+msgstr ""
+"실험 단계의 나노 제작기만큼 멋진 물건은 아니지만, 이 민간용 3D 프린터로도 대부분의 플라스틱, 폴리머, 탄소섬유 재질의 물건을 "
+"만들어낼 수 있습니다... 적절하게 프로그래밍하는 법만 안다면요."
+
+#: data/json/items/tool/science.json
+msgid "advanced 3D printer"
+msgid_plural "advanced 3D printers"
+msgstr[0] "첨단 3D 프린터"
+
+#. ~ Description for {'str': 'advanced 3D printer'}
+#: data/json/items/tool/science.json
+msgid ""
+"Recent advances in 3D printing technology have resulted in the ability to "
+"quickly and cheaply 3D print metals and alloys.  Such 3D printers are highly"
+" expensive, but sought out by collectors and preppers alike."
+msgstr ""
+"3D 프린팅 기술의 발전으로 이제 금속과 합금도 빠르고 저렴하게 3D 프린트할 수 있게 되었습니다. 비록 극도로 비싸긴 하지만, 수집가나"
+" 생존주의자들이 열정적으로 사들였습니다."
 
 #: data/json/items/tool/shelters.json
 msgid "damaged shelter kit"
@@ -160097,13 +160644,13 @@ msgid "There is a crater here."
 msgstr "이곳에 크레이터가 파여있습니다."
 
 #: data/json/overmap/map_extras.json
-msgid "College Kids"
-msgstr "대학생"
+msgid "Lost Campers"
+msgstr ""
 
-#. ~ Description for College Kids
+#. ~ Description for Lost Campers
 #: data/json/overmap/map_extras.json
-msgid "Several corpses of college kids are here."
-msgstr "대학생들의 시체가 널려있습니다."
+msgid "Several corpses of college kids or hunters out camping are here."
+msgstr ""
 
 #: data/json/overmap/map_extras.json
 msgid "Drug Deal"
@@ -200945,7 +201492,7 @@ msgid ""
 "identify you as a friendly, roam around or follow you, and attack all "
 "enemies with its grenade launcher."
 msgstr ""
-"비활성화된 여섯발들이 유탄발사기 탑재형 탈론 UGV입니다. 사용하면 HEDP 유탄 카트리지를 장전하여 보안로봇을 작동시키고 바닥에 "
+"비활성화된 6발들이 유탄발사기 탑재형 탈론 UGV입니다. 사용하면 HEDP 유탄 카트리지를 장전하여 보안로봇을 작동시키고 바닥에 "
 "놓습니다. (탄을 나눠두고 싶다면, 장전시키고 싶지 *않은* 탄약들을 한쪽에 치워두세요) 적절하게 재프로그래밍하면 보안로봇이 당신을 "
 "아군으로 인지하여, 주변을 돌아다니거나 당신을 따라다니면서 탑재된 소총으로 모든 적을 공격할 것입니다."
 
@@ -200987,12 +201534,12 @@ msgstr[0] "급조 HK417 탄창"
 #: data/mods/Generic_Guns/vehicles/ammo_redefine_hacks/temp_magazine_json_load_hack.json
 msgid "Ruger .223 5-round magazine"
 msgid_plural "Ruger .223 5-round magazines"
-msgstr[0] "루거 .223 5발들이 탄창"
+msgstr[0] "루거 .223 5발 탄창"
 
 #: data/mods/Generic_Guns/vehicles/ammo_redefine_hacks/temp_magazine_json_load_hack.json
 msgid "Ruger .223 10-round magazine"
 msgid_plural "Ruger .223 10-round magazines"
-msgstr[0] "루거 .223 10발들이 탄창"
+msgstr[0] "루거 .223 10발 탄창"
 
 #: data/mods/Generic_Guns/vehicles/ammo_redefine_hacks/temp_magazine_json_load_hack.json
 msgid "Ruger .223 high-capacity magazine"
@@ -201057,6 +201604,48 @@ msgid "Greatly limits the exponential growth ability of fungaloids."
 msgstr "진균체의 기하급수적인 성장능력을 크게 제한합니다."
 
 #: data/mods/MMA/martial.json
+msgid "Scorching Sirocco"
+msgid_plural "Scorching Sirocco"
+msgstr[0] "타오르는 열풍"
+
+#. ~ Description for {'str_sp': 'Scorching Sirocco'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Desert Wind discipline."
+msgstr ""
+
+#: data/mods/MMA/martial.json
+msgid "Perfect Clarity of Mind and Body"
+msgid_plural "Perfect Clarity of Mind and Body"
+msgstr[0] "명경지수"
+
+#. ~ Description for {'str_sp': 'Perfect Clarity of Mind and Body'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Diamond Mind discipline."
+msgstr ""
+
+#: data/mods/MMA/martial.json
+msgid "The Book of Mudora"
+msgid_plural "The Book of Mudora"
+msgstr[0] "무도라의 서"
+
+#. ~ Description for {'str_sp': 'The Book of Mudora'}
+#: data/mods/MMA/martial.json
+msgid ""
+"A collection of ancient Hylian lore and stories.  A section on historic "
+"battles is bookmarked."
+msgstr ""
+
+#: data/mods/MMA/martial.json
+msgid "Stormguard Warrior"
+msgid_plural "Stormguard Warrior"
+msgstr[0] "폭풍수호자 전사"
+
+#. ~ Description for {'str_sp': 'Stormguard Warrior'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Iron Heart discipline."
+msgstr ""
+
+#: data/mods/MMA/martial.json
 msgid "The Life and Work of Tiger Sauer"
 msgid_plural "The Life and Work of Tiger Sauer"
 msgstr[0] "퀸스틀러를 위한 판처 쿤스트 안내서"
@@ -201067,6 +201656,283 @@ msgid ""
 "A biography of a combat cyborg agent detailing his philosophy and martial "
 "art."
 msgstr "전투용 사이보그 요원이 자신의 철학과 무예를 집대성한 자서전입니다."
+
+#: data/mods/MMA/martial.json
+msgid "Pocket Monster Encyclopedia"
+msgid_plural "Pocket Monster Encyclopedia"
+msgstr[0] "포켓 몬스터 백과사전"
+
+#. ~ Description for {'str_sp': 'Pocket Monster Encyclopedia'}
+#: data/mods/MMA/martial.json
+msgid ""
+"This encyclopedia contains a detailed listing of the strengths and "
+"techniques of various fictional monsters and how to apply them the in a real"
+" fight."
+msgstr ""
+
+#: data/mods/MMA/martial.json
+msgid "Distant Horizon"
+msgid_plural "Distant Horizon"
+msgstr[0] "아득한 수평선"
+
+#. ~ Description for {'str_sp': 'Distant Horizon'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Setting Sun discipline."
+msgstr ""
+
+#: data/mods/MMA/martial.json
+msgid "Jedi Holocrons: Form I"
+msgid_plural "Jedi Holocrons: Form I"
+msgstr[0] "제다이 홀로크론: 1식"
+
+#. ~ Description for {'str_sp': 'Jedi Holocrons: Form I'}
+#: data/mods/MMA/martial.json
+msgid ""
+"This device contains the teachings of the first form of Jedi lightsaber "
+"combat: Shii-Cho."
+msgstr ""
+
+#: data/mods/MMA/martial.json
+msgid "Shards of Granite"
+msgid_plural "Shards of Granite"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'Shards of Granite'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Stone Dragon discipline."
+msgstr ""
+
+#: data/mods/MMA/martial.json
+msgid "Reaping Talons"
+msgid_plural "Reaping Talons"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'Reaping Talons'}
+#: data/mods/MMA/martial.json
+msgid "This book contains the teaching of the Tiger Claw discipline."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Desert Wind"
+msgstr ""
+
+#. ~ Description for martial art '{'str': 'Desert Wind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Desert Wind maneuvers focus on quick movement and swirling, flaming strikes."
+"  The complex spinning and slashing of the curved blade incorporated into "
+"many Desert Wind maneuvers are in fact carefully honed gestures that evoke "
+"the power of fire, if performed correctly and with the proper focus."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Desert Wind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You feel a wave of heat wash over you as you assume a running combat stance."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Desert Wind'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s assumes into a running combat stance."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Wind Stride"
+msgstr ""
+
+#. ~ Description of buff 'Wind Stride' for martial art '{'str': 'Desert
+#. Wind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"A warm breeze swirls about you as you move speedily away.\n"
+"\n"
+"+1.0 Dodging skill.\n"
+"Lasts 1 turn."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Zephyr Dance"
+msgstr ""
+
+#. ~ Description of buff 'Zephyr Dance' for martial art '{'str': 'Desert
+#. Wind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You spin gracefully away from attacks, whirling like the dersert zephyr racing across the sands.\n"
+"\n"
+"+1.0 Dodging skill, +1 Dodge attempt\n"
+"Lasts 1 turn."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Diamond Mind"
+msgstr ""
+
+#. ~ Description for martial art '{'str': 'Diamond Mind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"True quickness lies in the mind, not the body.  A student of the Diamond "
+"Mind discipline seeks to hone his perceptions and discipline his thoughts so"
+" that he can act in slivers of time so narrow that others cannot even "
+"perceive them.  A corollary of this speed of thought and action is the "
+"concept of the mind as the battleground.  An enemy defeated in his mind must"
+" inevitably be defeated in truth."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Diamond Mind'}'
+#: data/mods/MMA/martialarts.json
+msgid "You concentrate and become very still for a moment."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Diamond Mind'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s becomes very still for a moment."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Stance of Alacrity"
+msgstr ""
+
+#. ~ Description of buff 'Stance of Alacrity' for martial art '{'str':
+#. 'Diamond Mind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You move slightly faster than normal due to a combination of confidence, raining, and clarity of mind.  This slight edge adds up with each action.\n"
+"\n"
+"-15% move cost"
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Pearl of Black Doubt"
+msgstr ""
+
+#. ~ Description of buff 'Pearl of Black Doubt' for martial art '{'str':
+#. 'Diamond Mind'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"With every miss, your opponents become more uncertain, their doubt growing like an irritating pearl in the mouth of a helpless oyster.\n"
+"\n"
+"+1 Dodge attempt\n"
+"Lasts 1 turn.  Stacks 2 times"
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Hylian Swordsmanship"
+msgstr ""
+
+#. ~ Description for martial art '{'str': 'Hylian Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"This rare form of combat has been practiced by many legendary heroes "
+"throughout the ages.  Hylian Swordsmanship favors mobility for offense and "
+"defense by using spins, jumps, and flips to confuse enemies and strike from "
+"unexpected angles."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Hylian Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid "You begin to step lightly from side to side."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Hylian Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s begins to step lightly from side to side."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Combat Acrobat"
+msgstr ""
+
+#. ~ Description of buff 'Combat Acrobat' for martial art '{'str': 'Hylian
+#. Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Always stay light on your feet.  It is better to evade than be hit.\n"
+"\n"
+"+1.0 Dodging skill."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Intermediate Combat Acrobat"
+msgstr ""
+
+#. ~ Description of buff 'Intermediate Combat Acrobat' for martial art
+#. '{'str': 'Hylian Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"After a great deal of practice, you have become even more nimble in a battle.\n"
+"\n"
+"+1.0 Dodging skill."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Master Combat Acrobat"
+msgstr ""
+
+#. ~ Description of buff 'Master Combat Acrobat' for martial art '{'str':
+#. 'Hylian Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You have seen so much combat that your dodging skills have become top notch!\n"
+"\n"
+"+1.0 Dodging skill."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Dash Attack"
+msgstr ""
+
+#. ~ Description of buff 'Dash Attack' for martial art '{'str': 'Hylian
+#. Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Taking advantage of momentum, you rush towards foes to deliver a powerful strike.\n"
+"\n"
+"+10% damage.\n"
+"Lasts 1 turn.  Stacks 3 times."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Flurry Rush"
+msgstr ""
+
+#. ~ Description of buff 'Flurry Rush' for martial art '{'str': 'Hylian
+#. Swordsmanship'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"When you perfectly dodge an attack, you can attack rapidly for a short time.\n"
+"\n"
+"-25% move cost.\n"
+"Lasts 1 turn."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Iron Heart"
+msgstr ""
+
+#. ~ Description for martial art '{'str': 'Iron Heart'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Absolute mastery of the sword is the goal of the Iron Heart discipline.  "
+"Through unending practice and study, the Iron Heart adept achieves "
+"superhuman skill with her weapons.  Iron Heart maneuvers are demonstrations "
+"of uncanny martial skill—weaving patterns of steel that dizzy, confuse, and "
+"ultimately kill with no recourse."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Iron Heart'}'
+#: data/mods/MMA/martialarts.json
+msgid "You push away your fear and stand tall."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Iron Heart'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s takes a bold and fearless stance."
+msgstr ""
 
 #: data/mods/MMA/martialarts.json
 msgid "Panzer Kunst"
@@ -201118,6 +201984,263 @@ msgid ""
 "Lasts 2 turns."
 msgstr ""
 
+#: data/mods/MMA/martialarts.json
+msgid "Pokken"
+msgstr ""
+
+#. ~ Description for martial art '{'str': 'Pokken'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Pokken or \"Pocket Fist\" is a strange martial art developed from the famous"
+" Pokemon video game series.  Somehow, a group of dedicated fans managed to "
+"combine the moves used by various pokemon with multiple existing martial "
+"arts such as boxing and karate.  Amazingly, it actually works.  Some might "
+"even say it's a super effective way to fight."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Pokken'}'
+#: data/mods/MMA/martialarts.json
+msgid "You get ready to battle."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Pokken'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s is about to challenge someone to a battle."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Setting Sun"
+msgstr ""
+
+#. ~ Description for martial art '{'str': 'Setting Sun'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"The Setting Sun discipline teaches its initiates to turn their opponents' "
+"strength against them.  With a quick shift in stance and carefully aimed "
+"attack, a Setting Sun warrior sends a charging enemy tumbling in a new "
+"direction."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Setting Sun'}'
+#: data/mods/MMA/martialarts.json
+msgid "You shift your weight and prepare to defend yourself."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Setting Sun'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s shifts their weight and assumes a new stance."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Shii-Cho"
+msgstr ""
+
+#. ~ Description for martial art '{'str': 'Shii-Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Shii-Cho, \"The way of the Sarlacc\" was the first form lightsaber combat "
+"developed by the Jedi during their transition from metal weaponry to "
+"lightsabers.  Shii-Cho is regarded as a training form that all Jedi learn to"
+" understand the basics of armed combat.  Shii-Cho excels at fighting against"
+" groups but lacks the offensive power of the other lightsaber forms."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Shii-Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You place one foot back and hold your weapon vertically on your dominant "
+"side."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Shii-Cho'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s places one foot back and hold their weapon vertically."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Determination"
+msgstr ""
+
+#. ~ Description of buff 'Determination' for martial art '{'str': 'Shii-Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You are a determined warrior.  Your inner calm aids you in landing your strikes and protecting yourself.\n"
+"\n"
+"Blocked damage reduced by 100% of Strength, +1 Accuracy."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Apprentice Training"
+msgstr ""
+
+#. ~ Description of buff 'Apprentice Training' for martial art '{'str': 'Shii-
+#. Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Your training in Shii-Cho teaches you how to combat multiple opponents.\n"
+"\n"
+"+1 block attempts, +1 block effectiveness."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Knight Training"
+msgstr ""
+
+#. ~ Description of buff 'Knight Training' for martial art '{'str': 'Shii-
+#. Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Further training in Shii-Cho improves your ability to combat multiple opponents.\n"
+"\n"
+"+1 block attempts, +1 block effectiveness."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Master Training"
+msgstr ""
+
+#. ~ Description of buff 'Master Training' for martial art '{'str': 'Shii-
+#. Cho'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"As a master of Shii-Cho, your ability to fight against groups is second to none.\n"
+"\n"
+"+1 block attempts, +1 block effectiveness."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Stone Dragon"
+msgstr ""
+
+#. ~ Description for martial art '{'str': 'Stone Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"The Stone Dragon discipline for focuses on strength, power, and toughness.  "
+"Its teachings grant a martial adept the ability to splinter steel with a "
+"single, focused blow.  Stone Dragon's defensive abilities focus on tapping "
+"into the enduring power of stone to turn aside attacks."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Stone Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid "You dig your heels into the ground and steady yourself."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Stone Dragon'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s digs their heels into the ground."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Stone Bones"
+msgstr ""
+
+#. ~ Description of buff 'Stone Bones' for martial art '{'str': 'Stone
+#. Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You focus your energy to enhance your defenses, drawing on the power of your weapon's impact with a foe to toughen yourself against a counterattack.\n"
+"\n"
+"+1 bash, cut, and stab armor.\n"
+"Lasts 1 turn.  Stacks 5 times."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Stonefoot Stance"
+msgstr ""
+
+#. ~ Description of buff 'Stonefoot Stance' for martial art '{'str': 'Stone
+#. Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You crouch and set your feet flat on the ground, drawing the resilience of the earth into your body.  However, moving too much will break your stance.\n"
+"\n"
+"+10% damage, +2 bash, cut, and stab armor."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Cracked Stone"
+msgstr ""
+
+#. ~ Description of buff 'Cracked Stone' for martial art '{'str': 'Stone
+#. Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Moving too much will negate the effects of Surefoot Stance.  Stay still to avoid shattering your stance!\n"
+"\n"
+"Enables \"Shattered Stone\" buff.\n"
+"Lasts 1 turn."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Stattered Stone"
+msgstr ""
+
+#. ~ Description of buff 'Stattered Stone' for martial art '{'str': 'Stone
+#. Dragon'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"You are unable to maintain your Surefoot Stance and must stop moving for a short time to regain its benefits.\n"
+"\n"
+"-10% damage, -2 bash, cut, and stab armor.\n"
+"Lasts 4 turn."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Tiger Claw"
+msgstr ""
+
+#. ~ Description for martial art '{'str': 'Tiger Claw'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"The Tiger Claw discipline embraces a feral rage that lurks within the heart "
+"of its initiates.  In battle, such warriors growl like wild animals, attack "
+"with a furry similar to that of a barbarian, and rely on overwhelming, "
+"vicious assaults to defeat their enemies."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Tiger Claw'}'
+#: data/mods/MMA/martialarts.json
+msgid "You emit a low growl as you prepare for battle."
+msgstr ""
+
+#. ~ Initiate message for martial art '{'str': 'Tiger Claw'}'
+#: data/mods/MMA/martialarts.json
+#, c-format
+msgid "%s hunkers down like a wild animal."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Improved Critical"
+msgstr ""
+
+#. ~ Description of buff 'Improved Critical' for martial art '{'str': 'Tiger
+#. Claw'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"Always strike with full force.  Never hold back anything unless you want to die.\n"
+"\n"
+"+2 Accuracy, n+15 speed, +25% damage."
+msgstr ""
+
+#: data/mods/MMA/martialarts.json
+msgid "Pounching Charge"
+msgstr ""
+
+#. ~ Description of buff 'Pounching Charge' for martial art '{'str': 'Tiger
+#. Claw'}'
+#: data/mods/MMA/martialarts.json
+msgid ""
+"With the roar of a wild beast, you throw yourself into the fray.  Strike first and strike hard.\n"
+"\n"
+"+2 Accuracy, +10% damage.\n"
+"Lasts 1 turn."
+msgstr ""
+
 #: data/mods/MMA/modinfo.json
 msgid "Mythical Martial Arts"
 msgstr "신화 속의 무술"
@@ -201153,6 +202276,52 @@ msgid ""
 msgstr ""
 "고대 취권의 능력이 몸에 잠재되어 있습니다! 술을 마셨을 때 근접공격 기술이 상당히 향상되며, 특히 비무장 공격 기술이 많이 향상됩니다."
 
+#: data/mods/MMA/mutations.json
+msgid "Hero's Spirit"
+msgstr ""
+
+#. ~ Description for {'str': "Hero's Spirit"}
+#: data/mods/MMA/mutations.json
+msgid ""
+"You have studied the deeds and legends of ancient heroes.  From your "
+"research, you have learned an ancient form of combat called Hylian "
+"Swordsmanship."
+msgstr ""
+
+#: data/mods/MMA/mutations.json
+msgid "Jedi Training"
+msgstr ""
+
+#. ~ Description for {'str': 'Jedi Training'}
+#: data/mods/MMA/mutations.json
+msgid ""
+"You are trained in the ways of the Jedi.  Your knowledge allows you to "
+"utilize a form of lightsaber combat."
+msgstr ""
+
+#: data/mods/MMA/mutations.json
+msgid "Pokken Master"
+msgstr ""
+
+#. ~ Description for {'str': 'Pokken Master'}
+#: data/mods/MMA/mutations.json
+msgid ""
+"You are well versed in the monsterous Pocket Fist martial art.  Train well, "
+"because it is your destiny to be a master."
+msgstr ""
+
+#: data/mods/MMA/mutations.json
+msgid "Martial Adept"
+msgstr ""
+
+#. ~ Description for {'str': 'Martial Adept'}
+#: data/mods/MMA/mutations.json
+msgid ""
+"You are a martial adept and learned one of the martial disciplines of the "
+"Sublime Way.  You start with your choice of Desert Wind, Diamond Mind, Iron "
+"Heart, Setting Sun, Stone Dragon, or Tiger Claw."
+msgstr ""
+
 #: data/mods/MMA/professions.json
 msgctxt "profession_male"
 msgid "Battle Angel"
@@ -201174,6 +202343,193 @@ msgstr "과거 이름 없는 폐차장에서 구조된 싸울 준비가 된 사�
 msgctxt "prof_desc_female"
 msgid "A combat-ready cyborg once salvaged from an obscure junkyard…"
 msgstr "과거 이름 없는 폐차장에서 구조된 싸울 준비가 된 사이보그 "
+
+#: data/mods/MMA/techniques.json
+msgid "Burning Blade"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You unleash a fiery attack against %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> unleash a fiery attack against %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Inferno Blade"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You strike %s with powerful inferno"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> strikes %s with powerful inferno"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Firesnake"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You strike through %s with a snaking flame"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> strikes through %s with a snaking flame"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Ring of Fire"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You become a flaming blur as you strike %s and those around you"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid ""
+"<npcname> becomes a flaming blur as they strike %s and those around them"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Flashing Sun"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You carve an arc through %s and those nearby"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> carve an arc through %s and those nearby"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Insightful Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You spot %s's weakpoint and strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> spot %s's weakpoint and strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Greater Insightful Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Spin Attack"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You unleash a spin attack against %s and those nearby"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> unleashes a spin attack against %s and those nearby"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Disarming Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You skillfully disarm %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> skillfully disarms %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Lightning Recovery"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You miss %s but recover in the blink of an eye"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> misses %s but recovers in the blink of an eye"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Finishing Move"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You finish off %s with a powerful slash"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> finishes off %s with a powerful slash"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Dazing Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You harshly stun %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> harshly stuns %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Steel Wind"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You cleave through %s and those nearby like a steel wind"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> cleaves through %s and those nearby like a steel wind"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Scything Blade"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You cleanly reap through %s and those nearby"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> cleanly reap throug %s and those nearby"
+msgstr ""
 
 #: data/mods/MMA/techniques.json
 msgid "Ausstoß"
@@ -201230,6 +202586,216 @@ msgstr "%s에게 초음속 펀치를 날립니다."
 #, c-format
 msgid "<npcname> launches a supersonic punch at %s"
 msgstr "<npcname>(이)가 %s에게 초음속 펀치를 날립니다."
+
+#: data/mods/MMA/techniques.json
+msgid "Mega Kick"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You use Mega Kick on %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> uses Mega Kick on %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Darkest Lariat"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You use Darkest Lariat on %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> uses Darkest Lariat on %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Smart Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You use Smart Strike on %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> uses Smart Strike on %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Low Sweep"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You use Low Sweep on %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> uses Low Sweep on %s"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Fool's Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You completely fool %s and strike back"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> completely fools %s and strike back"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Hydra Slaying Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You interrupt %s with a perfectly aimed strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> interrupt %s with a perfectly aimed strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Mighty Throw"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You toss %s aside with a Mighty Throw"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> tosses %s with a Mighty Throw"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Ballista Throw"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You spin and hurl %s away with a Ballista Throw"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> spins and hurls %s away with a Ballista Throw"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Flowing Water"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You deflect %s's attack and counter in one fluid motion"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> deflects %s's attack and counters in one fluid motion"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Disarming Slash"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You disarm %s with a quick flick of your weapon"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> disarms %s with a quick flick of their weapon"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Sarlacc Sweep"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You quickly sweep through %s and those nearby"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> quickly sweeps through %s and those nearby"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Mountain Hammer"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You crush %s with the weight of your Mountain Hammer"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> crushes %s with the weight of their Mountain Hammer"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Irrestistible Mountain Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You smash down on %s with a Mountain Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> smashes down on %s with a Mountain Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Colossus Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "You completely shatter %s with a Colossus Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "<npcname> completely shatters %s with a Colossus Strike"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+msgid "Wolverine Stance"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "The %s tries to grab you, but you thrash your way to freedom!"
+msgstr ""
+
+#: data/mods/MMA/techniques.json
+#, c-format
+msgid "The %s tries to grab <npcname>, but they thrash their way to freedom!"
+msgstr ""
 
 #: data/mods/Magiclysm/bionics.json data/mods/Magiclysm/items/bionics.json
 msgid "Blood Power Generator CBM"
@@ -215725,6 +217291,10 @@ msgid "Toggle Explored"
 msgstr "탐사 완료 설정"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Mark/unmark Travel Path"
+msgstr "여행 경로 기록/해제"
+
+#: data/raw/keybindings/keybindings.json
 msgid "Place Overmap Terrain"
 msgstr "개별 지형 설치"
 
@@ -224794,8 +226364,17 @@ msgid "Wield what?"
 msgstr "무엇을 듭니까?"
 
 #: src/character_functions.cpp
+msgid "Time seems to slow down and you effortlessly dodge!"
+msgstr "시간이 느리게 느껴지며 손쉽게 피했습니다!"
+
+#: src/character_functions.cpp
+#, c-format
+msgid "%s effortlessly dodges… so fast!"
+msgstr "%s (이)가 손쉽게 피해냅니다... 말도 안되게 빠르군요!"
+
+#: src/character_functions.cpp
 msgid "Time seems to slow down and you instinctively dodge!"
-msgstr "시간이 느리게 느껴지더니 본능적으로 피했습니다!"
+msgstr "시간이 느리게 느껴지며 본능적으로 피했습니다!"
 
 #: src/character_functions.cpp
 #, c-format
@@ -224803,13 +226382,13 @@ msgid "%s dodges… so fast!"
 msgstr "%s(이)가.... 정말 빠르게 회피합니다!"
 
 #: src/character_functions.cpp
-msgid "You try to dodge but there's no room!"
-msgstr "피하려고 했지만, 피할 공간이 없다!"
+msgid "You try to dodge but fail!"
+msgstr "공격을 피하려 했지만 실패합니다!"
 
 #: src/character_functions.cpp
 #, c-format
-msgid "%s tries to dodge but there's no room!"
-msgstr "%s(이)가 피하려고 했지만, 피할 공간이 없다!"
+msgid "%s tries to dodge but fails!"
+msgstr "%s (이)가 공격을 피하려 했지만 실패합니다!"
 
 #: src/character_functions.cpp src/veh_interact.cpp
 #, c-format
@@ -231229,6 +232808,10 @@ msgstr ""
 #: src/game.cpp
 msgid "Bleed corpse"
 msgstr "시체 채혈"
+
+#: src/game.cpp
+msgid "has no blood"
+msgstr "에 피가 남아있지 않습니다"
 
 #: src/game.cpp
 msgid ""
