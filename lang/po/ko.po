@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-07-13 01:05+0000\n"
+"POT-Creation-Date: 2024-07-20 01:05+0000\n"
 "Last-Translator: Fruitybite, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -5869,6 +5869,10 @@ msgstr "플루토늄 발전기 설치"
 #: data/json/construction_group.json
 msgid "Place 3D Printer"
 msgstr "3D 프린터 설치"
+
+#: data/json/construction_group.json
+msgid "Place Advanced 3D Printer"
+msgstr ""
 
 #: data/json/construction_group.json
 msgid "Place Window-Mounted AC Unit"
@@ -31739,6 +31743,8 @@ msgstr "시체들을 지켜줍니다."
 #: data/json/furniture_and_terrain/furniture-graves.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 #: data/mods/Aftershock/maps/terrain.json src/map.cpp src/mapdata.h
 msgid "thump!"
 msgstr "쿵!"
@@ -35984,12 +35990,6 @@ msgid "A mound of clay soil."
 msgstr "점토 더미입니다."
 
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
-#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
-#: data/mods/desert_region/desert_terrain.json
-msgid "splosh!"
-msgstr "첨벙!"
-
-#: data/json/furniture_and_terrain/terrain-floors-indoor.json
 msgid "paper floor"
 msgstr "종이 바닥"
 
@@ -36061,6 +36061,11 @@ msgstr "갈철석"
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid "A wet pit with exposed hints of iron-rich earth."
 msgstr "철 성분이 풍부하게 함유된 덩어리가 군데군데 삐져나온 질척한 구덩이입니다."
+
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+#: data/mods/desert_region/desert_terrain.json
+msgid "splosh!"
+msgstr "첨벙!"
 
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
@@ -38198,6 +38203,20 @@ msgid ""
 "A small shelter covered by waterproof tarp, that can be used to take refuge "
 "from the elements or to protect a campfire from the rain."
 msgstr "방수포로 덮은 작은 피난처입니다. 가혹한 기온을 피하거나, 캠프파이어를 비로부터 지키는데 쓰입니다."
+
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid "wind turbine rotor assembly"
+msgstr "풍력 발전기 로터"
+
+#. ~ Description for wind turbine rotor assembly
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid ""
+"A large, bladed turbine meant for generating power from wind.  Spinning idly"
+" in the breeze trying to power a grid that's since gone dark, the turbine "
+"could be salvaged for local power generation instead."
+msgstr ""
+"바람을 전력으로 바꿀 수 있도록 거대한 날개가 달린 풍력 발전기입니다. 이미 끊긴 전력망에 전력을 공급하려 공회전하고 있으며, 분해하여 "
+"지역 전력 공급에 이바지하도록 쓸 수 있습니다."
 
 #: data/json/furniture_and_terrain/terrain-mechanisms.json
 msgid "mechanical winch"
@@ -44789,7 +44808,7 @@ msgstr[0] "파워 아머 2.5L 수통"
 msgid ""
 "A large plastic water canteen, with a 2.5 liter capacity.  It's been "
 "converted to clip onto power armor."
-msgstr ""
+msgstr "2.5리터 용량의 대형 플라스틱 수통입니다. 파워 아머에 고정시킬 수 있도록 개조되었습니다."
 
 #: data/json/items/containers.json
 msgid "30 gallon barrel"
@@ -45147,7 +45166,7 @@ msgstr[0] "플라스틱 수통"
 msgid ""
 "A military-style water canteen with a 1.5 liter capacity.  Commonly worn at "
 "the hip."
-msgstr "1.5L까지 담을 수 있는 밀리터리 스타일 수통. 주로 허리에 착용합니다."
+msgstr "1.5리터 용량의 밀리터리룩 수통입니다. 보통 허리에 착용합니다."
 
 #: data/json/items/containers.json
 msgid "power armor canteen"
@@ -45159,7 +45178,7 @@ msgstr[0] "파워 아머 수통"
 msgid ""
 "A military-style water canteen with a 1.5 liter capacity.  Commonly worn at "
 "the hip, it's been converted to clip onto power armor."
-msgstr ""
+msgstr "1.5리터 용량의 밀리터리룩 수통입니다. 본래 허리에 착용하지만, 파워 아머에 고정시킬 수 있도록 개조되었습니다."
 
 #: data/json/items/containers.json
 msgid "thermos"
@@ -58396,8 +58415,7 @@ msgid ""
 "be strapped to the back.  Whilst initially cumbersome it becomes much easier"
 " to use with practice.  Activate to holster/draw a gun."
 msgstr ""
-"소총 같은 커다란 총이 들어갈 만큼 큰 가죽 총집. 등에 메도록 만들어졌습니다. 처음 사용하면 불편하지만 연습하면 더 쉽게 사용할 수 "
-"있으며, 사용하면 총을 집어넣거나 뽑아들 수 있습니다."
+"소총 같은 대형 총기를 보관할 수 있는 커다란 가죽 총집입니다. 등에 메도록 만들어졌습니다. 사용하여 총기를 뽑거나 수납할 수 있습니다."
 
 #: data/json/items/armor/holster.json
 msgid "ankle holster"
@@ -58449,7 +58467,7 @@ msgstr[0] "권총집"
 msgid ""
 "A leather strap worn on the hip for holding pistol sized guns.  Activate to "
 "holster/draw a gun."
-msgstr "권총 크기의 총을 넣어둘 수 있도록 옆구리에 매는 가죽끈. 사용하면 총을 집어넣거나 뽑아들 수 있습니다."
+msgstr "권총 크기의 총기를 옆구리에 달아둘 수 있는 가죽끈입니다. 사용하여 총기를 뽑거나 수납할 수 있습니다."
 
 #: data/json/items/armor/holster.json
 msgid "fast draw holster"
@@ -64063,6 +64081,8 @@ msgid ""
 "comfortably hold blades or firearms of various sizes.  Designed to interface"
 " with a military exoskeleton.  Activate to holster/draw a blade or gun."
 msgstr ""
+"다양한 크기의 근접무기와 총기를 능히 보관할 수 있도록 죔쇠와 레일을 장치한 대형 보관대입니다. 군용 외골격과 함께 사용하도록 "
+"설계되었습니다. 사용하여 근접무기나 총기를 뽑거나 수납할 수 있습니다."
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor leg mount"
@@ -64076,6 +64096,8 @@ msgid ""
 "firearms and tools.  Designed to interface with a military exoskeleton, "
 "clipped to the leg.  Activate to holster/draw a blade, tool, or gun."
 msgstr ""
+"다양한 크기의 도구와 총기를 능히 보관할 수 있도록 죔쇠와 레일을 장치한 대형 보관대입니다. 군용 외골격과 함께 사용하여 다리에 "
+"장착하도록 설계되었습니다. 사용하여 근접무기, 도구, 총기를 뽑거나 수납할 수 있습니다."
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor magazine carrier"
@@ -64105,6 +64127,8 @@ msgid ""
 "be strapped to the back, it's been converted to clip onto power armor.  "
 "Activate to holster/draw a gun."
 msgstr ""
+"소총 같은 대형 총기를 보관할 수 있는 커다란 가죽 총집입니다. 본래 등에 메도록 만들어졌지만, 파워 아머에 고정시킬 수 있도록 "
+"개조되었습니다. 사용하여 총기를 뽑거나 수납할 수 있습니다."
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor holster"
@@ -64117,6 +64141,8 @@ msgid ""
 "A leather strap worn on the hip for holding pistol sized guns.  It's been "
 "converted to clip onto power armor.  Activate to holster/draw a gun."
 msgstr ""
+"권총 크기의 총기를 옆구리에 달아둘 수 있는 가죽끈입니다. 파워 아머에 고정시킬 수 있도록 개조되었습니다. 사용하여 총기를 뽑거나 수납할"
+" 수 있습니다."
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor back scabbard"
@@ -64130,6 +64156,8 @@ msgid ""
 "strapped to the back, it's been converted to clip onto power armor.  "
 "Activate to sheath/draw a sword."
 msgstr ""
+"어떤 검이든 담아둘 수 있는 커다란 가죽 검집입니다. 본래 등에 메도록 만들어졌지만, 파워 아머에 고정시킬 수 있도록 개조되었습니다. "
+"사용하여 무기를 뽑거나 수납할 수 있습니다."
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor scabbard"
@@ -64142,6 +64170,8 @@ msgid ""
 "A large, adjustable sheath for holding swords and other large blades.  It's "
 "been converted to clip onto power armor.  Activate to sheathe/draw a weapon."
 msgstr ""
+"검이나 다른 커다란 날붙이들을 담아둘 수 있는 크고 조절 가능한 검집입니다. 파워 아머에 고정시킬 수 있도록 개조되었습니다. 사용하여 "
+"무기를 뽑거나 수납할 수 있습니다."
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor sheath"
@@ -64154,6 +64184,8 @@ msgid ""
 "A leather sheath for holding knives and other small blades.  It's been "
 "converted to clip onto power armor.  Activate to sheathe/draw a weapon."
 msgstr ""
+"나이프나 다른 작은 날붙이들을 담아둘 수 있는 가죽 검집입니다. 파워 아머에 고정시킬 수 있도록 개조되었습니다. 사용하여 무기를 뽑거나 "
+"수납할 수 있습니다."
 
 #: data/json/items/armor/power_armor.json
 msgid "survivor armored exo-suit"
@@ -64400,8 +64432,8 @@ msgid ""
 "strapped to the back, it's very difficult to draw from without considerable "
 "practice.  Activate to sheath/draw a sword."
 msgstr ""
-"어떤 검이든 넣기 충분한 크기의 가죽 검집. 등에 줄로 매도록 되어 있습니다. 상당한 연습 없이는 검을 뽑기가 어렵습니다. 사용하면 "
-"무기를 집어넣거나 뽑아들 수 있습니다."
+"어떤 검이든 담아둘 수 있는 커다란 가죽 검집입니다. 등에 메도록 만들어졌지만, 충분히 연습하기 전까지는 무기를 뽑기 어려울 것입니다. "
+"사용하여 무기를 뽑거나 수납할 수 있습니다."
 
 #: data/json/items/armor/sheath.json
 msgid "scabbard"
@@ -64413,7 +64445,7 @@ msgstr[0] "검집"
 msgid ""
 "A large, adjustable sheath for holding swords and other large blades.  "
 "Activate to sheathe/draw a weapon."
-msgstr "검처럼 큰 날붙이를 넣어둘 수 있는 큰 조정식 검집. 사용하면 무기를 집어넣거나 뽑아들 수 있습니다."
+msgstr "검이나 다른 커다란 날붙이들을 담아둘 수 있는 크고 조절 가능한 검집입니다. 사용하여 무기를 뽑거나 수납할 수 있습니다."
 
 #: data/json/items/armor/sheath.json
 msgid "sheath"
@@ -64426,7 +64458,8 @@ msgid ""
 "A leather sheath for holding knives and other small blades.  It is easy to "
 "use without much practice.  Activate to sheathe/draw a weapon."
 msgstr ""
-"나이프나 작은 칼을 넣을수 있는 가죽 칼집. 연습 없이도 꽤 사용하기 쉽습니다. 사용하면 무기를 집어넣거나 뽑아 들 수 있습니다."
+"나이프나 다른 작은 날붙이들을 담아둘 수 있는 가죽 검집입니다. 따로 연습하지 않아도 쉽게 사용할 수 있습니다. 사용하여 무기를 뽑거나 "
+"수납할 수 있습니다."
 
 #: data/json/items/armor/sheath.json
 msgid "spear strap"
@@ -65043,9 +65076,9 @@ msgstr[0] "주머니"
 #. ~ Description for {'str': 'pouch', 'str_pl': 'pouches'}
 #: data/json/items/armor/storage.json
 msgid ""
-"A makeshift bag, cobbled together from rags.  Really gets in the way, but "
-"provides a decent amount of storage."
-msgstr "천 조각을 이어붙여 만든 수제 가방. 조금 불편하지만, 생각보다 많은 물품을 넣어둘 수 있습니다."
+"A makeshift bag, cobbled together from rags.  Doesn't hold an awful lot but "
+"is easy to wear."
+msgstr "천 조각을 이어붙여 만든 임시 가방입니다. 물건을 별로 많이 넣지는 못하지만, 착용하기 편합니다."
 
 #: data/json/items/armor/storage.json
 msgid "military rucksack"
@@ -90284,19 +90317,19 @@ msgid "2 rd."
 msgstr "2점사"
 
 #: data/json/items/gun/223.json
-msgid "OA-93"
-msgid_plural "OA-93s"
-msgstr[0] "OA-93"
+msgid "OA-98"
+msgid_plural "OA-98s"
+msgstr[0] "OA-98"
 
 #: data/json/items/gun/223.json
 msgid ""
-"An AR-15 derivative pistol manufactured by Olympic Arms in the nineties.  "
+"An AR-15 derivative carbine manufactured by Olympic Arms in the nineties.  "
 "The main difference compared to the AR-15 is that the recoil spring has been"
 " moved to the top of the gun, circumventing the necessity for a solid "
 "buttstock."
 msgstr ""
-"90년대에 Olympic Arms에서 제조한 AR-15 파생 권총입니다. AR-15와의 가장 큰 차이점은 반동 스프링이 총의 상단으로 "
-"이동되어 개머리판이 필요 없다는 것입니다."
+"올림픽 암즈 사에서 제조된 AR-15 파생형 카빈입니다. AR-15와의 주요 차이점은 반동 스프링이 총 상단부로 이동되어 개머리판의 "
+"필요성이 사라졌다는 것입니다."
 
 #: data/json/items/gun/223.json
 msgid "pipe rifle: 5.56x45mm"
@@ -91832,6 +91865,17 @@ msgstr ""
 " 탄창을 사용한 최초의 리볼버 중 하나입니다. 서부 영화로 유명해져 카우보이 액션 슈팅, 리인액터 및 수집가들에게 여전히 인기가 "
 "있습니다. 현대 리볼버와 달리 장전을 위해 약실을 옆으로 뺄 수 없으며, 사용한 탄피는 한 번에 하나씩 배출되어야 합니다."
 
+#: data/json/items/gun/45colt.json
+msgid "Taurus Judge"
+msgid_plural "Taurus Judge"
+msgstr[0] "타우루스 저지"
+
+#: data/json/items/gun/45colt.json
+msgid ""
+"The Taurus Judge is a 6-shot revolver chambered in .45 Colt.  It can fire "
+".410 shotshells as well."
+msgstr "타우러스 저지는 .45 콜트 탄을 쓰는 6발들이 리볼버입니다. .410 산탄도 쓸 수 있습니다."
+
 #: data/json/items/gun/46.json
 msgid "H&K MP7A2"
 msgid_plural "H&K MP7A2s"
@@ -92149,9 +92193,9 @@ msgstr ""
 " 내장 총검 덕분에 엄청난 인기를 유지하고 있습니다."
 
 #: data/json/items/gun/762.json
-msgid "AK-47"
-msgid_plural "AK-47s"
-msgstr[0] "AK-47"
+msgid "AK-47 semi"
+msgid_plural "AK-47 semis"
+msgstr[0] "AK-47 반자동"
 
 #: data/json/items/gun/762.json
 msgid ""
@@ -93693,9 +93737,9 @@ msgid ""
 msgstr ""
 
 #: data/json/items/gun/shot.json
-msgid "1887 bootleg shotgun"
-msgid_plural "1887 bootleg shotguns"
-msgstr[0] "1887 산탄총 해적판"
+msgid "Winchester 1887"
+msgid_plural "Winchester 1887s"
+msgstr[0] "윈체스터 1887"
 
 #: data/json/items/gun/shot.json
 msgid ""
@@ -93707,9 +93751,9 @@ msgid ""
 msgstr ""
 
 #: data/json/items/gun/shot.json
-msgid "M1897 Trench Gun"
-msgid_plural "M1897 Trench Guns"
-msgstr[0] "M1897 트렌치 건"
+msgid "Winchester 1897"
+msgid_plural "Winchester 1897s"
+msgstr[0] "윈체스터 1897"
 
 #: data/json/items/gun/shot.json
 msgid ""
@@ -102214,6 +102258,19 @@ msgid ""
 msgstr "플라스틱 조각. 플라스틱 재질의 물건을 만들거나, 수리하거나, 강화하는데 사용할 수 있다."
 
 #: data/json/items/resources/plastic.json
+msgid "carbon fiber filament"
+msgid_plural "carbon fiber filament"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'carbon fiber filament'}
+#: data/json/items/resources/plastic.json
+msgid ""
+"A spool of fine carbon filament, used to make lightweight yet strong items."
+"  Very useful if you can get your hands on a 3D printer, more advanced "
+"models might even allow you to make more."
+msgstr ""
+
+#: data/json/items/resources/plastic.json
 msgid "synthetic fabric"
 msgid_plural "synthetic fabric"
 msgstr[0] "인조 섬유"
@@ -103031,26 +103088,26 @@ msgstr "증류기는 주류를 증류할 때 유용하며, 때때로 아주 *흥
 #: data/json/items/tool/cooking.json
 msgid "clay retort"
 msgid_plural "clay retorts"
-msgstr[0] ""
+msgstr[0] "점토 증류기"
 
 #. ~ Description for {'str': 'clay retort'}
 #: data/json/items/tool/cooking.json
 msgid ""
 "This is a primitive distillation tool made from clay, with a long neck that "
 "acts as a condenser."
-msgstr ""
+msgstr "점토로 만든 원시적인 증류기입니다. 냉각관 역할을 하는 긴 목이 달려있습니다."
 
 #: data/json/items/tool/cooking.json
 msgid "copper retort"
 msgid_plural "copper retorts"
-msgstr[0] ""
+msgstr[0] "구리 증류기"
 
 #. ~ Description for {'str': 'copper retort'}
 #: data/json/items/tool/cooking.json
 msgid ""
 "This is a primitive distillation tool made from copper, with a long neck "
 "that acts as a condenser."
-msgstr ""
+msgstr "점토로 만든 원시적인 증류기입니다. 냉각관 역할을 하는 긴 목이 달려있습니다."
 
 #: data/json/items/tool/cooking.json
 msgid "survivor mess kit"
@@ -140531,7 +140588,7 @@ msgstr ""
 msgid ""
 "Do you think there's some way your knowledge could help us understand all "
 "this?"
-msgstr ""
+msgstr "네 지식이 있다면 우리가 이 모든 상황을 이해하는데 도움이 될까?"
 
 #: data/json/npcs/Backgrounds/professor_1.json
 msgid ""
@@ -140539,12 +140596,14 @@ msgid ""
 "  I'm at a loss to how that relates, but if you come across something where "
 "my knowledge would help I'll gladly offer it."
 msgstr ""
+"뭐라고 말하기 어려운걸. 난 유기화학자도 아니고, 지구화학을 전공해서. 얼마나 쓸모가 있을지는 모르겠지만, 내 지식이 보탬이 될만한 "
+"부분이 있다면 기꺼이 돕지."
 
 #: data/json/npcs/Backgrounds/professor_1.json
 #: data/json/npcs/Backgrounds/scientist_1.json
 #: data/json/npcs/Backgrounds/scientist_2.json
 msgid "Cool.  What did you say before that?"
-msgstr ""
+msgstr "멋진걸. 이전에 무슨 이야기하고 있었지?"
 
 #: data/json/npcs/Backgrounds/religious_1.json
 msgid ""
@@ -151990,6 +152049,8 @@ msgid ""
 "computers will have some security on them.  Bring back anything you find on "
 "a USB drive."
 msgstr ""
+"연구소가 잠겨있다면, 피난 도중에 죽은 직원들이 가진 ID 카드로 열 수 있을거야. 컴퓨터마다 보안 시스템이 적용되어있으니 컴퓨터 기술도"
+" 미리 익혀둬야겠지. 뭘 찾든간에 USB 드라이브에 담아오게."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
 #: data/json/npcs/refugee_center/surface_visitors/NPC_old_guard_representative.json
@@ -152014,12 +152075,15 @@ msgid ""
 "hidden beneath a town, they weren't allowed in.  That means it should have "
 "unsecured computers we can get the codes from."
 msgstr ""
+"안타깝지만, 자네가 가져다준 데이터는 불완전했고 거의 대부분이 암호화되어있었네. 복호화 코드를 알아낼 방법이 있긴 해. 정보보안팀에서 "
+"연구시설 한 곳에 긴급 보안 업데이트를 할 수 없었다고 불평한 기록을 찾았어. 도시 지하에 숨겨져있고 보다 제한이 엄격한 2차 시설이라 "
+"그치들이 들어갈 수 없었지. 이 말은 우리가 코드를 얻어낼만한, 암호화되지 않은 컴퓨터가 있을거라는 뜻이네."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
 msgid ""
 "Great!  I've mapped out a route, it should look like a normal house.  Bring "
 "back anything you find on a USB drive."
-msgstr "좋아! 내가 미리 길을 준비해놨어. 평범한 집처럼 보일거야. 거기서 뭘 찾든간에 USB 드라이브에 담아와."
+msgstr "좋아! 내가 길을 미리 기록해놨네. 겉으로는 평범한 집처럼 보일거야. 거기서 뭘 찾든간에 USB 드라이브에 담아오라고."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
 msgid "Expect the lab to be locked as usual."
@@ -152044,12 +152108,17 @@ msgid ""
 "everything to subzero temperatures.  I bet the archives inside that lab are "
 "still working."
 msgstr ""
+"수 개월, 어쩌면 수 년 이상의 실험 기록이 쌓여있을테니 데이터가 분명 거대할거야. 그 정도 데이터를 보관할 서버가 비상전력으로만 "
+"가동되었다면 일찌감치 과열되었겠지. 헌데, 대재앙 와중에 무슨 혹한의 포탈 같은게 열린 연구소가 있었다는 기록을 찾았네. 시설 내부가 "
+"온통 영하권이 되어버렸다던데, 아마 그 연구소 안의 아카이브는 무사할거야."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
 msgid ""
 "Great!  I've mapped out a route.  Bundle up, it gets colder the deeper you "
 "go and it looks like the archives were on the fourth basement level."
 msgstr ""
+"좋아! 내가 길을 미리 기록해놨네. 단단히 준비하게, 더 깊이 들어갈수록 더 추워질테고, 아카이브가 있던 곳은 지하 4층이라는 것 같으니"
+" 말이야."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
 msgid ""
@@ -152057,10 +152126,12 @@ msgid ""
 "You'll really need special equipment to survive that far down.  Bring back "
 "anything you find on a USB drive."
 msgstr ""
+"그 연구소는 꽁꽁 얼어붙었고, 더 깊이 들어갈수록 더 추워질거야. 저 깊은 곳에서 살아남으려면 특별한 장비가 있어야겠지. 거기서 찾은 "
+"것을 USB 드라이브에 담아오게."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
 msgid "Thanks!  This is a lot of data to go through."
-msgstr ""
+msgstr "고마워! 파헤칠 데이터가 잔뜩이군."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
 msgid "Find Lab Tunnels"
@@ -164480,8 +164551,8 @@ msgstr "산탄류"
 
 #. ~ Crafting recipes subcategory of 'AMMO' category
 #: data/json/recipes/recipes.json
-msgid "GRENADES"
-msgstr "수류탄"
+msgid "LAUNCHER"
+msgstr ""
 
 #. ~ Crafting recipes subcategory of 'AMMO' category
 #: data/json/recipes/recipes.json
@@ -164652,7 +164723,7 @@ msgstr "말 저장공간"
 msgid "BUILDING"
 msgstr "건축"
 
-#: data/json/recipes/ammo/other.json
+#: data/json/recipes/ammo/launcher.json
 msgid "Stuff THE MAN doesn't want you to know"
 msgstr "누군가 당신이 알게하고 싶지 않은 것"
 
@@ -170307,7 +170378,7 @@ msgstr ""
 msgid ""
 "The poor creature has stopped breathing, but there's still a lot of movement"
 " in the corpse."
-msgstr ""
+msgstr "이 불쌍한 것은 호흡을 멈췄지만, 그 시체 안에서 아직도 수많은 것들이 움찔거립니다."
 
 #: data/json/snippets/mutant_anatomy.json
 msgid ""
@@ -201958,6 +202029,10 @@ msgid ""
 "+1.0 Dodging skill.\n"
 "Lasts 1 turn."
 msgstr ""
+"재빠르게 움직이자 따스한 산들바람이 당신을 휘감습니다.\n"
+"\n"
+"회피 기술 +1.0\n"
+"1턴간 지속."
 
 #: data/mods/MMA/martialarts.json
 msgid "Zephyr Dance"
@@ -201972,6 +202047,10 @@ msgid ""
 "+1.0 Dodging skill, +1 Dodge attempt\n"
 "Lasts 1 turn."
 msgstr ""
+"모래를 따라 부는 사막의 바람처럼 우아하게 회전하며 공격을 피해냅니다.\n"
+"\n"
+"회피 기술 +1.0, 회피 시도 +1\n"
+"1턴간 지속."
 
 #: data/mods/MMA/martialarts.json
 msgid "Diamond Mind"
@@ -202011,6 +202090,9 @@ msgid ""
 "\n"
 "-15% move cost"
 msgstr ""
+"자신감, 신중함, 명경지수의 융합을 통해 본래보다 빠르게 움직입니다.\n"
+"\n"
+"이동력 소모 -15%"
 
 #: data/mods/MMA/martialarts.json
 msgid "Pearl of Black Doubt"
@@ -202025,6 +202107,10 @@ msgid ""
 "+1 Dodge attempt\n"
 "Lasts 1 turn.  Stacks 2 times"
 msgstr ""
+"공격이 빗나갈 때마다 적들이 미혹을 품어, 무력한 굴의 주둥이에서 진주가 저항할 방도도 없이 자라나듯 의심이 커져갑니다.\n"
+"\n"
+"회피 시도 +1\n"
+"1턴간 지속. 2회까지 누적 가능."
 
 #: data/mods/MMA/martialarts.json
 msgid "Hylian Swordsmanship"
@@ -202064,6 +202150,9 @@ msgid ""
 "\n"
 "+1.0 Dodging skill."
 msgstr ""
+"발걸음은 늘 가볍게. 맞는 것보다 피하는 것이 낫습니다.\n"
+"\n"
+"회피 기술 +1.0"
 
 #: data/mods/MMA/martialarts.json
 msgid "Intermediate Combat Acrobat"
@@ -202077,6 +202166,9 @@ msgid ""
 "\n"
 "+1.0 Dodging skill."
 msgstr ""
+"상당한 훈련 끝에 전투 상황에서 보다 날렵하게 움직이게 되었습니다.\n"
+"\n"
+"회피 기술 +1.0"
 
 #: data/mods/MMA/martialarts.json
 msgid "Master Combat Acrobat"
@@ -202090,6 +202182,9 @@ msgid ""
 "\n"
 "+1.0 Dodging skill."
 msgstr ""
+"너무나도 많은 전투를 겪은 결과 당신의 회피는 흠잡을 데가 없습니다!\n"
+"\n"
+"회피 기술 +1.0"
 
 #: data/mods/MMA/martialarts.json
 msgid "Dash Attack"
@@ -202118,6 +202213,10 @@ msgid ""
 "-25% move cost.\n"
 "Lasts 1 turn."
 msgstr ""
+"공격을 완벽하게 피해내면, 잠시 더 빠르게 공격할 수 있습니다.\n"
+"\n"
+"이동력 소모 -25%\n"
+"1턴간 지속."
 
 #: data/mods/MMA/martialarts.json
 msgid "Iron Heart"
