@@ -4,7 +4,7 @@
 # LuXts, 2023
 # Caixukun <osudyxxzgc@gmail.com>, 2023
 # 皮皮山上的咕咕⑨, 2023
-# 大侠 嘿咻, 2023
+# 嘿咻大侠, 2023
 # 摸鱼哥, 2024
 # chenzhiyuan42, 2024
 # Coolthulhu <Coolthulhu@gmail.com>, 2024
@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-09-14 01:09+0000\n"
+"POT-Creation-Date: 2024-09-21 01:10+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -4436,7 +4436,7 @@ msgid ""
 msgstr ""
 "标记一处制造专用的地点。在该地点旁进行的制造任务将自动使用这个位置，而不是试图在你的手中制造，通常在地面上工作的速度会受到很大的惩罚。不妨碍使用适当的工作台（如果存在）。拆除或粉碎以移除。"
 
-#: data/json/construction.json
+#: data/json/construction.json data/mods/pride_flags/construction.json
 msgid "Can be deconstructed without tools."
 msgstr "可以不用工具拆卸。"
 
@@ -4546,6 +4546,12 @@ msgid ""
 "Mark a spot for target practice.  Firing will automatically target the first"
 " practice target location found in gun range, if no enemies are around."
 msgstr "标记一块地作为射击练习目标。当你射程内没有敌人时，射击时会自动锁定射程内所发现的第一个射击练习目标。"
+
+#: data/json/construction.json
+msgid ""
+"Firing will automatically target the first practice target found in gun "
+"range, if no enemies are around."
+msgstr "当你射程内没有敌人时，射击时会自动锁定射程内所发现的第一个射击练习目标。"
 
 #: data/json/construction.json
 msgid ""
@@ -5550,12 +5556,28 @@ msgid "Mark practice target"
 msgstr "标记练习目标"
 
 #: data/json/construction_group.json
+msgid "Build steel target"
+msgstr "建造钢制靶"
+
+#: data/json/construction_group.json
 msgid "Mine Downstair"
 msgstr "建造下行矿梯"
 
 #: data/json/construction_group.json
 msgid "Mine Upstair"
 msgstr "建造上行矿梯"
+
+#: data/json/construction_group.json
+msgid "Build Wooden Flagpole"
+msgstr "建造木制旗杆"
+
+#: data/json/construction_group.json
+msgid "Hoist American Flag"
+msgstr "升起美国国旗"
+
+#: data/json/construction_group.json
+msgid "Hoist Jolly Roger"
+msgstr "升起骷髅旗"
 
 #: data/json/construction_group.json
 msgid "Paint Grass White"
@@ -28557,6 +28579,7 @@ msgstr "一个大型笨重的金属装置，用于冷却大面积区域，现在
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/mapgen/city_blocks/urban_37_office_tower_beehive.json
 #: data/json/obsoletion/uncategorized.json data/mods/Magiclysm/furniture.json
+#: data/mods/pride_flags/furniture.json
 msgid "metal screeching!"
 msgstr "一声尖锐的金属断裂的声音！"
 
@@ -28586,6 +28609,7 @@ msgstr "一声尖锐的金属断裂的声音！"
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/mapgen/city_blocks/urban_37_office_tower_beehive.json
 #: data/json/obsoletion/uncategorized.json data/mods/Magiclysm/furniture.json
+#: data/mods/pride_flags/furniture.json
 msgid "clang!"
 msgstr "哐啷！"
 
@@ -29034,7 +29058,7 @@ msgstr "一块与该建筑电网相连接的风力发电机。"
 #: data/json/furniture_and_terrain/terrain-walls.json
 #: data/json/furniture_and_terrain/terrain-windows.json
 #: data/json/obsoletion/uncategorized.json data/mods/Magiclysm/terrain.json
-#: data/mods/No_Hope/terrain.json
+#: data/mods/No_Hope/terrain.json data/mods/pride_flags/furniture.json
 msgid "whack!"
 msgstr "喀啦！"
 
@@ -29278,7 +29302,8 @@ msgstr "一个连接到电网的便携式食物脱水机，用以加工并长期
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/obsoletion/uncategorized.json
 #: data/mods/CRT_EXPANSION/constructions/crt_terrain.json
-#: data/mods/Magiclysm/terrain.json src/mapdata.cpp
+#: data/mods/Magiclysm/terrain.json data/mods/pride_flags/furniture.json
+#: src/mapdata.cpp
 msgid "crunch!"
 msgstr "嘎嚓！"
 
@@ -30693,8 +30718,9 @@ msgstr "方尖碑"
 
 #. ~ Description for obelisk
 #: data/json/furniture_and_terrain/furniture-graves.json
-msgid "Monument to pride."
-msgstr "骄傲的纪念碑。"
+msgid ""
+"A monument to the fallen, from a time when the dead weren't so restless."
+msgstr "这是一座逝者的纪念碑，在那个年代，逝者还没有如此躁动不安。"
 
 #: data/json/furniture_and_terrain/furniture-graves.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
@@ -31384,13 +31410,52 @@ msgid "Jump!  Jump!  Dive!"
 msgstr "一个用于跳进泳池的台子。"
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
-msgid "target"
-msgstr "靶子"
+msgid "steel target"
+msgstr "钢制靶"
 
-#. ~ Description for target
+#. ~ Description for steel target
 #: data/json/furniture_and_terrain/furniture-recreation.json
-msgid "A metal shooting target in the rough shape of a human."
-msgstr "一个金属制成的人形射击靶。"
+msgid ""
+"A metal shooting target in the rough shape of a human, that tips over when "
+"shot.  Or you could examine it to tip it over by hand, if you want."
+msgstr "一个大致呈人形的金属射击靶，被击中时会倒下。如果你愿意，也可以手动检查并将其推倒。"
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "clatter!"
+msgstr "哐当！"
+
+#: data/json/furniture_and_terrain/furniture-recreation.json src/ranged.cpp
+msgid "plink!"
+msgstr "砰砰砰！"
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "Tip steel target over"
+msgstr "推倒钢制靶"
+
+#. ~ Message for furniture 'steel target'
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "You knock the steel target over.  How fun."
+msgstr "你把钢制靶推倒了。真好玩。"
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "toppled steel target"
+msgstr "倒下的钢制靶"
+
+#. ~ Description for toppled steel target
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid ""
+"A metal shooting target in the rough shape of a human.  It's been knocked "
+"over by a good hit, examine it to stand it back up."
+msgstr "一个大致呈人形的金属射击靶，已被击中倒地。检查它可以将其重新立起来。"
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "Stand steel target upright"
+msgstr "竖起钢制靶"
+
+#. ~ Message for furniture 'toppled steel target'
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "You prop the steel target back up."
+msgstr "你把钢制靶重新支起来了。"
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
 msgid "arcade machine"
@@ -32794,6 +32859,63 @@ msgid ""
 "The result of you pouring concrete over mi-go gas emitters.  It's stuck to "
 "the floor.  It can be used as a primitive anvil."
 msgstr "你将混凝土倒在米·戈气体喷射器上的结果。它被牢牢地固定在地板上，可以作为一个原始的铁砧使用。"
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "flagpole"
+msgstr "旗杆"
+
+#. ~ Description for flagpole
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"An old metal flagpole, with no flag to fly.  Don't lick it if it's cold out."
+msgstr "一根老旧的金属旗杆，没有旗帜。 如果外面很冷，就不要舔它了。"
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "flagpole with American flag"
+msgstr "美国国旗旗杆"
+
+#. ~ Description for flagpole with American flag
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"An old metal flagpole flying an American flag.  A leftover from before the "
+"world ended, you could take it down if you need one for some reason."
+msgstr "一根悬挂着美国国旗的旧金属旗杆，遗留于世界末日之前。如果你出于某种原因需要，可以把它取下来。"
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "wooden flagpole"
+msgstr "木制旗杆"
+
+#. ~ Description for wooden flagpole
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "A makeshift flagpole constructed from a wooden beam and rope."
+msgstr "一个用木梁和绳子临时搭建的旗杆。"
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "wooden flagpole with American flag"
+msgstr "美国国旗木制旗杆"
+
+#. ~ Description for wooden flagpole with American flag
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "Someone's hoisted an old American flag from this makeshift flagpole."
+msgstr "有人在这根临时旗杆上挂起了一面旧美国国旗。"
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "flagpole with Jolly Roger"
+msgstr "骷髅旗旗杆"
+
+#. ~ Description for flagpole with Jolly Roger
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "An old metal flagpole, now flying a black pirate flag."
+msgstr "一根老旧的金属旗杆，现在悬挂着一面黑色的海盗旗。"
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "wooden flagpole with Jolly Roger"
+msgstr "骷髅旗木制旗杆"
+
+#. ~ Description for wooden flagpole with Jolly Roger
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "Someone's hoisted a black pirate flag from this makeshift flagpole."
+msgstr "有人在这根临时旗杆上挂起了一面黑色的海盗旗。"
 
 #: data/json/furniture_and_terrain/furniture-tools.json
 #: data/json/furniture_and_terrain/terrain-mechanisms.json
@@ -46126,10 +46248,11 @@ msgstr[0] "时钟"
 
 #. ~ Description for {'str': 'clock'}
 #: data/json/items/generic.json
-msgid "A small mechanical clock, it's stopped at 10:10."
+msgid ""
+"A small mechanical clock.  Tells the time and has an alarm clock feature."
 msgstr ""
-"\"10:10\"\n"
-"一个小机械钟，已经停止运作。"
+"一个小机械钟。可以显示时间，还有闹钟功能。\n"
+"\"你还是可以让它正常运转，而不是仅仅停留在10:10。\""
 
 #: data/json/items/generic.json
 msgid "clockworks"
@@ -54465,6 +54588,58 @@ msgid "A large American flag made to fly in even the worst conditions."
 msgstr ""
 "一个大大的美国国旗，俗称\"星条旗\"，由13道红白相间的宽条构成，左上角还有一个包含了50颗白色小五角星的蓝色长方形。\n"
 "\"请沿星条剪开，裁成布条。\""
+
+#: data/json/items/armor/cloaks.json
+msgid "Jolly Roger"
+msgid_plural "Jolly Rogers"
+msgstr[0] "骷髅旗"
+
+#. ~ Description for {'str': 'Jolly Roger'}
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag."
+msgstr ""
+"一面黑色仿制海盗旗。\n"
+"\"准备好了吗？孩子们！\""
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting a skull-and-crossbones."
+msgstr ""
+"一面黑色仿制海盗旗，上面刻有骷髅头和交叉骨。\n"
+"\"是的！船长！\""
+
+#: data/json/items/armor/cloaks.json
+msgid ""
+"A black replica pirate flag, depicting a skull-and-crossbones over an "
+"hourglass."
+msgstr ""
+"一面黑色仿制海盗旗，上面有一个沙漏上的骷髅头。\n"
+"\"太小声啰！\""
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting a skull over a cutlass."
+msgstr ""
+"一面黑色仿制海盗旗，上面有一个头骨和一把弯刀。\n"
+"\"是的！！！船长！！！\""
+
+#: data/json/items/armor/cloaks.json
+msgid ""
+"A black replica pirate flag, depicting a skeleton stabbing a heart with a "
+"spear."
+msgstr ""
+"一面黑色仿制海盗旗，上面画着一个用长矛刺穿心脏的骷髅。\n"
+"\"我们对喝醉的水手做什么好呢？在这清晨时分？\""
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting an arm holding a cutlass."
+msgstr ""
+"一面黑色仿制海盗旗，描绘了一只手持弯刀的手臂。\n"
+"\"嗨！嘿！扬帆起航！在这清晨时分！\""
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting a skull."
+msgstr ""
+"一面黑色的仿制海盗旗，上面有一个骷髅头。\n"
+"\"把他丢到船长女儿的床上！在这清晨时分！\""
 
 #: data/json/items/armor/cloaks.json
 msgid "Foodperson's cape"
@@ -89763,7 +89938,7 @@ msgstr[0] "M2HB 勃朗宁重机枪"
 msgid ""
 "A heavy machine gun used by the US Military from its inception to the "
 "Cataclysm, and even rarely by Cataclysm survivors."
-msgstr "美帝军队在大灾变之初大量使用的重型机枪，在幸存者之中也有少量保有。"
+msgstr "美国军队在大灾变之初大量使用的重型机枪，在幸存者之中也有少量保有。"
 
 #: data/json/items/gun/50.json
 msgid ".50 caliber rifle"
@@ -95765,7 +95940,7 @@ msgstr[0] "琉森锤（赝品）"
 #: data/json/items/melee/bludgeons.json
 msgid ""
 "This is a cheap piece of crap imitation of a versatile polearm with a spiked"
-" hammer head, probably used for LARPing"
+" hammer head, probably used for LARPing."
 msgstr "这是一种多功能长柄武器的拙劣仿制品，上面有一个钉锤头，也许是用来Cosplay的。"
 
 #: data/json/items/melee/bludgeons.json
@@ -97444,7 +97619,7 @@ msgstr[0] "日式短刀（复制品）"
 msgid ""
 "Long Japanese knives like this more-modern remake were the samurai's backup "
 "weapon, before the advent of the larger wakizashi.  This one doesn't feel "
-"well-balanced"
+"well-balanced."
 msgstr "一把日式短刀，不同于肋差，此刀仅在护身和最后关头时切腹使用。这把感觉握起来不太匀称。"
 
 #: data/json/items/melee/swords_and_blades.json
@@ -97944,8 +98119,8 @@ msgstr[0] "武士刀（复制品）"
 #. ~ Description for {'str': 'katana replica'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
-"This is a rare sword from Japan.  While it's got the right edge and weight, "
-"the pommel just snaps off, and the blade seems pretty worn."
+"This is a rare sword from Japan.  While it's got the right edge and balance,"
+" the pommel just snaps off, and the blade seems pretty worn."
 msgstr "一柄武士刀，打刀款式，为日本武士步兵作战时使用，刀身中央略微弯曲，以利于迅速拔刀，全长一米左右。这把刀的刀柄圆头已经脱落，刀刃也磨损严重。"
 
 #: data/json/items/melee/swords_and_blades.json
@@ -107544,15 +107719,27 @@ msgstr[0] "桨"
 msgid "Oars for a boat."
 msgstr "船桨，严格说是橹。"
 
-#: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
+#: data/json/items/vehicle/boat.json
 msgid "sail"
 msgid_plural "sails"
 msgstr[0] "船帆"
 
 #. ~ Description for {'str': 'sail'}
 #: data/json/items/vehicle/boat.json
-msgid "Sails for a boat."
-msgstr "船的帆。"
+msgid "A small sail and makeshift rigging for a raft."
+msgstr "一面小型帆和用于木筏的简易索具。"
+
+#: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
+msgid "large sail"
+msgid_plural "large sails"
+msgstr[0] "大型帆"
+
+#. ~ Description for {'str': 'large sail'}
+#: data/json/items/vehicle/boat.json
+msgid ""
+"A wooden mast with sails fit for a yacht or sloop, and about as much rigging"
+" as a single sailor can handle."
+msgstr "一根木制桅杆，挂有适合游艇或单桅小帆船的帆布，并配有足够一名水手操作的缆索和索具。"
 
 #: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
 msgid "inflatable section"
@@ -123813,7 +124000,7 @@ msgstr "联邦执法官"
 msgid ""
 "You are a duly sworn Federal marshal, with nationwide jurisdiction and the "
 "authority of the United States of America."
-msgstr "你是一名誓言守卫法律的联邦执法官，拥有在美帝全国的执法权。"
+msgstr "你是一名誓言守卫法律的联邦执法官，拥有在美国全国的执法权。"
 
 #: data/json/mutations/mutations.json
 msgid "True Foodperson"
@@ -129743,7 +129930,7 @@ msgstr "那些罪犯迟早都会被清算的，如果不是已经过了的话。
 
 #: data/json/npcs/missiondef.json
 msgid "Find Flag"
-msgstr "寻找美帝国旗"
+msgstr "寻找美国国旗"
 
 #: data/json/npcs/missiondef.json
 msgid "Does our flag still yet wave?"
@@ -129757,7 +129944,7 @@ msgstr "国旗还在飘扬吗？我们遭受重创，但没有停止战斗，不
 
 #: data/json/npcs/missiondef.json
 msgid "Hell ya!  Find me one of those big ol' American flags."
-msgstr "真棒！那就赶紧去找来一面大大的美帝国旗给我吧。"
+msgstr "真棒！那就赶紧去找来一面大大的美国国旗给我吧。"
 
 #: data/json/npcs/missiondef.json
 msgid "Seriously?  God damned commie…"
@@ -171965,6 +172152,22 @@ msgid ""
 msgstr "一块轻便而先进的碳素纤维板，可以把水挡在船外。"
 
 #: data/json/vehicleparts/vehicle_parts.json
+msgid "small sail"
+msgstr "小型帆"
+
+#. ~ Description for {'str': 'small sail'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "A sail for a raft, small enough to be foldable."
+msgstr "一面适用于木筏的帆，体积小巧，便于折叠收纳。"
+
+#. ~ Description for {'str': 'large sail'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"Sails and rigging fit for a yacht or sloop, about as large as a single "
+"person can reasonably crew."
+msgstr "适用于游艇或单桅小帆船的帆和索具，大约是一个人可以合理操控的最大尺寸。"
+
+#: data/json/vehicleparts/vehicle_parts.json
 msgid "hand paddles"
 msgstr "手桨"
 
@@ -172486,6 +172689,24 @@ msgid ""
 "A 60L refrigerated tank.  When turned on, it will cool the liquid inside, "
 "extending the time until the food spoils."
 msgstr "一个60升容量的冷藏罐。开启时，冷却里面的液体，延缓腐烂。"
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "mounted American flag"
+msgstr "车载美国国旗"
+
+#. ~ Description for {'str': 'mounted American flag'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "An American flag, fluttering in the breeze atop a vehicle."
+msgstr "一面美国国旗，在一个载具上随风飘扬。"
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "mounted Jolly Roger"
+msgstr "车载骷髅旗"
+
+#. ~ Description for {'str': 'mounted Jolly Roger'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "A black pirate flag, fluttering in the breeze atop a vehicle."
+msgstr "一面黑色海盗旗，在一个载具上随风飘扬。"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/vehicleparts/vp_flags.json
@@ -211678,6 +211899,54 @@ msgstr "简单营养"
 msgid "Disables vitamin requirements."
 msgstr "禁用维生素与微量元素需求。"
 
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Trans Pride Flag"
+msgstr "升起跨性别骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist LGBTQ+ Pride Flag"
+msgstr "升起 LGBTQ+ 骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Aromantic Pride Flag"
+msgstr "升起无浪漫倾向骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Asexual Pride Flag"
+msgstr "升起无性恋骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Bisexual Pride Flag"
+msgstr "升起双性恋骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Intersex Pride Flag"
+msgstr "升起双性人骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Lesbian Pride Flag"
+msgstr "升起女同性恋骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Non-binary Pride Flag"
+msgstr "升起非二元性别骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Pansexual Pride Flag"
+msgstr "升起泛性恋骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Gay Pride Flag"
+msgstr "升起男同性恋骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Genderfluid Pride Flag"
+msgstr "升起性别流动骄傲旗帜"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Autism Pride Flag"
+msgstr "升起自闭症骄傲旗帜"
+
 #: data/mods/pride_flags/flags.json
 msgid "Trans pride flag"
 msgid_plural "Trans pride flags"
@@ -211714,7 +211983,7 @@ msgid ""
 "spectrum as a whole, the white represents the importance of non-romantic "
 "relationships, and the black and grey represent the sexuality spectrum that "
 "ranges from aro-ace to aro-allosexual."
-msgstr "一面无性恋骄傲旗帜。绿色代表无性恋和整个无性恋光谱，白色代表非浪漫关系的重要性，黑色和灰色代表从无性恋到非无性恋的性取向光谱。"
+msgstr "一面无浪漫倾向骄傲旗帜。绿色代表无性恋和整个无性恋光谱，白色代表非浪漫关系的重要性，黑色和灰色代表从无性恋到非无性恋的性取向光谱。"
 
 #: data/mods/pride_flags/flags.json
 msgid "Asexual pride flag"
@@ -211726,7 +211995,7 @@ msgstr[0] "无性恋骄傲旗帜"
 msgid ""
 "An asexual pride flag.  The black represents total asexuality, the grey "
 "represents demisexuals and grey-asexuals, the white represents allies, and "
-"the purple represents community "
+"the purple represents community."
 msgstr "一面无性恋骄傲旗帜。黑色代表完全无性恋，灰色代表半性恋和灰色无性恋者，白色代表盟友，紫色代表社群。"
 
 #: data/mods/pride_flags/flags.json
@@ -211752,7 +212021,7 @@ msgstr[0] "双性人骄傲旗帜"
 msgid ""
 "An intersex pride flag.  The center circle symbolizes wholeness and "
 "completeness."
-msgstr "一面双性人骄傲旗帜。中心的圆圈象征着完整与完整。"
+msgstr "一面双性人骄傲旗帜。中心的圆圈象征着完整与圆满。"
 
 #: data/mods/pride_flags/flags.json
 msgid "Lesbian pride flag"
@@ -211833,11 +212102,343 @@ msgid ""
 "The autistic pride flag.  Gold middle band refers to the elemental symbol of"
 " gold (AU) which is used in the autistic community.  The gradient refers to "
 "the Pride Movement.  Red originated as a protest to the `light it up blue` "
-"campaign, which was denounced by the autistic community.  In color theory, "
-"green is the complimentary color to red.  The infinity sign is a symbol long"
-" used in the wider autistic and wider neurodiverse community."
+"campaign, which was denounced by the autistic community.  The infinity sign "
+"is a symbol long used in the wider autistic and wider neurodiverse "
+"community."
 msgstr ""
-"自闭症骄傲旗帜。中间的金色条带指的是金元素符号（AU），在自闭症社区中使用。渐变色代表骄傲运动。红色起源于对“点亮蓝色”活动的抗议，这个活动曾受到自闭症社区的谴责。在色彩理论中，绿色是红色的补色。无限符号是长期以来在更广泛的自闭症和更广泛的神经多样性社区中使用的符号。"
+"自闭症骄傲旗帜。中间的金色条带指的是金元素符号（AU），在自闭症社区中使用。渐变色代表骄傲运动。红色起源于对“点亮蓝色”活动的抗议，这个活动曾受到自闭症社区的谴责。无限符号是长期以来在更广泛的自闭症和更广泛的神经多样性社区中使用的符号。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Trans pride flag"
+msgstr "跨性别骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Trans pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the blue, pink, and white of a transgender"
+" pride flag.  The blue represents transmascs, the pink represents "
+"transfemmes, and the white represents non-binary individuals."
+msgstr "一根老旧的金属旗杆，现在悬挂着蓝色、粉色和白色的跨性别骄傲旗帜。蓝色代表跨性别男性，粉色代表跨性别女性，白色代表非二元性别个体。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Trans pride flag"
+msgstr "跨性别骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Trans pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the blue, pink, and white of a "
+"transgender pride flag.  The blue represents transmascs, the pink represents"
+" transfemmes, and the white represents non-binary individuals."
+msgstr "这根临时旗杆目前正悬挂着蓝色、粉色和白色的跨性别骄傲旗帜。蓝色代表跨性别男性，粉色代表跨性别女性，白色代表非二元性别个体。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with LGBTQ+ pride flag"
+msgstr "LGBTQ+ 骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with LGBTQ+ pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the classic rainbow hues of an LGBTQ+ "
+"pride flag.  The rainbow of colors represents the rainbow of individuals "
+"throughout the community."
+msgstr "一根老旧的金属旗杆，现在悬挂着经典的彩虹色 LGBTQ+ 骄傲旗帜。七彩的颜色代表社区中各种各样的个体。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with LGBTQ+ pride flag"
+msgstr "LGBTQ+ 骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with LGBTQ+ pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the classic rainbow hues of an "
+"LGBTQ+ pride flag.  The rainbow of colors represents the rainbow of "
+"individuals throughout the community."
+msgstr "这根临时旗杆目前正悬挂着经典的彩虹色 LGBTQ+ 骄傲旗帜。七彩的颜色代表社区中各种各样的个体。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Aromantic pride flag"
+msgstr "无浪漫倾向骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Aromantic pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying an aromantic pride flag displaying greens,"
+" white, black and grey.  The greens represent aromanticism and the aro-"
+"spectrum as a whole, the white represents the importance of non-romantic "
+"relationships, and the black and grey represent the sexuality spectrum that "
+"ranges from aro-ace to aro-allosexual."
+msgstr ""
+"一根老旧的金属旗杆，现在悬挂着无浪漫倾向骄傲旗帜，上面有绿色、白色、黑色和灰色。绿色代表无性恋和整个无性恋光谱，白色代表非浪漫关系的重要性，黑色和灰色代表从无性恋到非无性恋的性取向光谱。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Aromantic pride flag"
+msgstr "无浪漫倾向骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Aromantic pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying an aromantic pride flag "
+"displaying greens, white, black and grey.  The greens represent aromanticism"
+" and the aro-spectrum as a whole, the white represents the importance of "
+"non-romantic relationships, and the black and grey represent the sexuality "
+"spectrum that ranges from aro-ace to aro-allosexual."
+msgstr ""
+"这根临时旗杆目前正悬挂着无浪漫倾向骄傲旗帜，上面有绿色、白色、黑色和灰色。绿色代表无性恋和整个无性恋光谱，白色代表非浪漫关系的重要性，黑色和灰色代表从无性恋到非无性恋的性取向光谱。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Asexual pride flag"
+msgstr "无性恋骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Asexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the black, grey, white and purple tones of"
+" an asexual pride flag.  The black represents total asexuality, the grey "
+"represents demisexuals and grey-asexuals, the white represents allies, and "
+"the purple represents community."
+msgstr ""
+"一根老旧的金属旗杆，现在悬挂着黑、灰、白、紫四色的无性恋骄傲旗帜。黑色代表完全无性恋，灰色代表半性恋和灰色无性恋者，白色代表盟友，紫色代表社群。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Asexual pride flag"
+msgstr "无性恋骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Asexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the black, grey, white and "
+"purple tones of an asexual pride flag.  The black represents total "
+"asexuality, the grey represents demisexuals and grey-asexuals, the white "
+"represents allies, and the purple represents community."
+msgstr "这根临时旗杆目前正悬挂着黑、灰、白、紫四色的无性恋骄傲旗帜。黑色代表完全无性恋，灰色代表半性恋和灰色无性恋者，白色代表盟友，紫色代表社群。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Bisexual pride flag"
+msgstr "双性恋骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Bisexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying a bisexual pride flag, showing blue and "
+"pink with purple in-between.  The pink represents attraction to the same "
+"sex, the blue represents attraction to the opposite sex, and the purple "
+"overlap represents the combination of both."
+msgstr ""
+"一根老旧的金属旗杆，现在悬挂着双性恋骄傲旗帜，旗帜呈蓝色和粉红色，中间夹杂着紫色。粉色代表对同性的吸引，蓝色代表对异性的吸引，紫色重叠部分代表两者的结合。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Bisexual pride flag"
+msgstr "双性恋骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Bisexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying a bisexual pride flag, showing "
+"blue and pink with purple in-between.  The pink represents attraction to the"
+" same sex, the blue represents attraction to the opposite sex, and the "
+"purple overlap represents the combination of both."
+msgstr ""
+"这根临时旗杆目前正悬挂着双性恋骄傲旗帜，旗帜呈蓝色和粉红色，中间夹杂着紫色。粉色代表对同性的吸引，蓝色代表对异性的吸引，紫色重叠部分代表两者的结合。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Intersex pride flag"
+msgstr "双性人骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Intersex pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the intersex pride flag, a yellow field "
+"with a purple ring.  The center circle symbolizes wholeness and "
+"completeness."
+msgstr "一根老旧的金属旗杆，现在悬挂着双性人骄傲旗帜，黄色的旗帜上有一个紫色的圆环。中心的圆圈象征着完整与圆满。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Intersex pride flag"
+msgstr "双性人骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Intersex pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying an intersex pride flag, a yellow"
+" field with a purple ring.  The center circle symbolizes wholeness and "
+"completeness."
+msgstr "这根临时旗杆目前正悬挂着双性人骄傲旗帜，黄色的旗帜上有一个紫色的圆环。中心的圆圈象征着完整与圆满。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Lesbian pride flag"
+msgstr "女同性恋骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Lesbian pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the oranges, rosen shades, and white of a "
+"lesbian pride flag.  The dark orange represents gender non-conformity, the "
+"orange represents independence, the white represents unique relationships to"
+" womanhood, pink represents serenity and peace, and the dark rose represents"
+" feminimity."
+msgstr ""
+"一根老旧的金属旗杆，现在悬挂着橙色、玫瑰色和白色的女同性恋骄傲旗帜。深橙色代表性别不符合规范，橙色代表独立，白色代表对女性身份的独特关系，粉色代表宁静与和平，深玫瑰色代表女性特质。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Lesbian pride flag"
+msgstr "女同性恋骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Lesbian pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the oranges, rosen shades, and "
+"white of a lesbian pride flag.  The dark orange represents gender non-"
+"conformity, the orange represents independence, the white represents unique "
+"relationships to womanhood, pink represents serenity and peace, and the dark"
+" rose represents feminimity."
+msgstr ""
+"这根临时旗杆目前正悬挂着橙色、玫瑰色和白色的女同性恋骄傲旗帜。深橙色代表性别不符合规范，橙色代表独立，白色代表对女性身份的独特关系，粉色代表宁静与和平，深玫瑰色代表女性特质。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Non-binary pride flag"
+msgstr "非二元性别骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Non-binary pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying a non-binary pride flag; yellow upon "
+"white, then purple, then black.  Yellow represents those who identify "
+"outside of the gender binary, white represents those with multiple genders, "
+"purple for those with a mix of both male and female, and black for agender "
+"individuals."
+msgstr ""
+"一根老旧的金属旗杆，现在悬挂着非二元性别骄傲旗帜；先黄后白，先紫后黑。黄色代表那些在性别二元之外识别的个体，白色代表拥有多种性别的人，紫色代表拥有男性和女性混合特征的人，黑色代表无性别个体。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Non-binary pride flag"
+msgstr "非二元性别骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Non-binary pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying a non-binary pride flag; yellow "
+"upon white, then purple, then black.  Yellow represents those who identify "
+"outside of the gender binary, white represents those with multiple genders, "
+"purple for those with a mix of both male and female, and black for agender "
+"individuals."
+msgstr ""
+"这根临时旗杆目前正悬挂着非二元性别骄傲旗帜；先黄后白，先紫后黑。黄色代表那些在性别二元之外识别的个体，白色代表拥有多种性别的人，紫色代表拥有男性和女性混合特征的人，黑色代表无性别个体。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Pansexual pride flag"
+msgstr "泛性恋骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Pansexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the pink, blue, and yellow of a pansexual "
+"pride flag.  Pink represents being attracted to women, blue being attracted "
+"to men, and yellow being attracted to everyone else."
+msgstr "一根老旧的金属旗杆，现在悬挂着粉色、蓝色和黄色的泛性恋骄傲旗帜。粉色代表对女性的吸引，蓝色代表对男性的吸引，黄色代表对其他所有人的吸引。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Pansexual pride flag"
+msgstr "泛性恋骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Pansexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the pink, blue, and yellow of a "
+"pansexual pride flag.  Pink represents being attracted to women, blue being "
+"attracted to men, and yellow being attracted to everyone else."
+msgstr "这根临时旗杆目前正悬挂着粉色、蓝色和黄色的泛性恋骄傲旗帜。粉色代表对女性的吸引，蓝色代表对男性的吸引，黄色代表对其他所有人的吸引。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Gay pride flag"
+msgstr "男同性恋骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Gay pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying a men's gay pride flag, with white in "
+"between shades of green and blue.  The greens represent healing and joy; the"
+" white stripe includes people who are transgender, nonbinary, intersex, or "
+"otherwise likely to be traditionally left out; the blues represent pure "
+"love, strength, and diversity."
+msgstr ""
+"一根老旧的金属旗杆，现在悬挂着男同性恋骄傲旗帜，白色夹杂在绿色和蓝色之间。绿色代表康复和喜悦；白色条纹包括跨性别者、非二元性别者、雙性人，或其他有可能被传统排斥的人群；蓝色代表纯爱、力量和多样性。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Gay pride flag"
+msgstr "男同性恋骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Gay pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying a men's gay pride flag, with "
+"white in between shades of green and blue.  The greens represent healing and"
+" joy; the white stripe includes people who are transgender, nonbinary, "
+"intersex, or otherwise likely to be traditionally left out; the blues "
+"represent pure love, strength, and diversity."
+msgstr ""
+"这根临时旗杆目前正悬挂着男同性恋骄傲旗帜，白色夹杂在绿色和蓝色之间。绿色代表康复和喜悦；白色条纹包括跨性别者、非二元性别者、雙性人，或其他有可能被传统排斥的人群；蓝色代表纯爱、力量和多样性。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Genderfluid pride flag"
+msgstr "性别流动骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Genderfluid pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the pink, white, purple, black and blue "
+"genderfluid pride flag.  The pink represents feminimity, the white "
+"represents lack of gender, the purple represents androgyny, the black "
+"represents all other genders, and the blue represents masculinity."
+msgstr ""
+"一根老旧的金属旗杆，现在悬挂着粉色、白色、紫色、黑色和蓝色的性别流动骄傲旗帜。粉色代表女性特质，白色代表缺乏性别，紫色代表雌雄同体，黑色代表所有其他性别，蓝色代表男性特质。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Genderfluid pride flag"
+msgstr "性别流动骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Genderfluid pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the pink, white, purple, black "
+"and blue genderfluid pride flag.  The pink represents feminimity, the white "
+"represents lack of gender, the purple represents androgyny, the black "
+"represents all other genders, and the blue represents masculinity."
+msgstr ""
+"这根临时旗杆目前正悬挂着粉色、白色、紫色、黑色和蓝色的性别流动骄傲旗帜。粉色代表女性特质，白色代表缺乏性别，紫色代表雌雄同体，黑色代表所有其他性别，蓝色代表男性特质。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Autism pride flag"
+msgstr "自闭症骄傲旗帜旗杆"
+
+#. ~ Description for flagpole with Autism pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the infinity symbol upon an autism pride "
+"flag.  Gold middle band refers to the elemental symbol of gold (AU) which is"
+" used in the autistic community.  The gradient refers to the Pride Movement."
+"  Red originated as a protest to the `light it up blue` campaign, which was "
+"denounced by the autistic community.  The infinity sign is a symbol long "
+"used in the wider autistic and wider neurodiverse community."
+msgstr ""
+"一根老旧的金属旗杆，现在悬挂着印有无限符号的自闭症骄傲旗帜。中间的金色条带指的是金元素符号（AU），在自闭症社区中使用。渐变色代表骄傲运动。红色起源于对“点亮蓝色”活动的抗议，这个活动曾受到自闭症社区的谴责。无限符号是长期以来在更广泛的自闭症和更广泛的神经多样性社区中使用的符号。"
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Autism pride flag"
+msgstr "自闭症骄傲旗帜木制旗杆"
+
+#. ~ Description for wooden flagpole with Autism pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the infinity symbol upon an "
+"autism pride flag.  Gold middle band refers to the elemental symbol of gold "
+"(AU) which is used in the autistic community.  The gradient refers to the "
+"Pride Movement.  Red originated as a protest to the `light it up blue` "
+"campaign, which was denounced by the autistic community.  The infinity sign "
+"is a symbol long used in the wider autistic and wider neurodiverse "
+"community."
+msgstr ""
+"这根临时旗杆目前正悬挂着印有无限符号的自闭症骄傲旗帜。中间的金色条带指的是金元素符号（AU），在自闭症社区中使用。渐变色代表骄傲运动。红色起源于对“点亮蓝色”活动的抗议，这个活动曾受到自闭症社区的谴责。无限符号是长期以来在更广泛的自闭症和更广泛的神经多样性社区中使用的符号。"
 
 #: data/mods/pride_flags/modinfo.json
 msgid "Pride Flags for BN"
@@ -211847,6 +212448,162 @@ msgstr "性别认同骄傲旗帜"
 #: data/mods/pride_flags/modinfo.json
 msgid "Pride flags for Bright Nights, for all your roleplaying needs."
 msgstr "这是为了满足您所有角色扮演需求而设计的骄傲旗帜。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Trans pride flag"
+msgstr "车载跨性别骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Trans pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A transgender pride flag, fluttering in the breeze atop a vehicle.  The blue"
+" represents transmascs, the pink represents transfemmes, and the white "
+"represents non-binary individuals."
+msgstr "一面跨性别骄傲旗帜，在一个载具上随风飘扬。蓝色代表跨性别男性，粉色代表跨性别女性，白色代表非二元性别个体。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted LGBTQ+ pride flag"
+msgstr "车载 LGBTQ+ 骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted LGBTQ+ pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An LGBTQ+ pride flag, fluttering in the breeze atop a vehicle.  The rainbow "
+"of colors represents the rainbow of individuals throughout the community."
+msgstr "一面 LGBTQ+ 骄傲旗帜，在一个载具上随风飘扬。七彩的颜色代表社区中各种各样的个体。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Aromantic pride flag"
+msgstr "车载无浪漫倾向骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Aromantic pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An aromantic pride flag, fluttering in the breeze atop a vehicle.  The "
+"greens represent aromanticism and the aro-spectrum as a whole, the white "
+"represents the importance of non-romantic relationships, and the black and "
+"grey represent the sexuality spectrum that ranges from aro-ace to aro-"
+"allosexual."
+msgstr ""
+"一面无浪漫倾向骄傲旗帜，在一个载具上随风飘扬。绿色代表无性恋和整个无性恋光谱，白色代表非浪漫关系的重要性，黑色和灰色代表从无性恋到非无性恋的性取向光谱。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Asexual pride flag"
+msgstr "车载无性恋骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Asexual pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An asexual pride flag, fluttering in the breeze atop a vehicle.  The black "
+"represents total asexuality, the grey represents demisexuals and grey-"
+"asexuals, the white represents allies, and the purple represents community."
+msgstr "一面无性恋骄傲旗帜，在一个载具上随风飘扬。黑色代表完全无性恋，灰色代表半性恋和灰色无性恋者，白色代表盟友，紫色代表社群。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Bisexual pride flag"
+msgstr "车载双性恋骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Bisexual pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A bisexual pride flag, fluttering in the breeze atop a vehicle.  The pink "
+"represents attraction to the same sex, the blue represents attraction to the"
+" opposite sex, and the purple overlap represents the combination of both."
+msgstr "一面双性恋骄傲旗帜，在一个载具上随风飘扬。粉色代表对同性的吸引，蓝色代表对异性的吸引，紫色重叠部分代表两者的结合。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Intersex pride flag"
+msgstr "车载双性人骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Intersex pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An intersex pride flag, fluttering in the breeze atop a vehicle.  The center"
+" circle symbolizes wholeness and completeness."
+msgstr "一面双性人骄傲旗帜，在一个载具上随风飘扬。中心的圆圈象征着完整与圆满。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Lesbian pride flag"
+msgstr "车载女同性恋骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Lesbian pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A lesbian pride flag, fluttering in the breeze atop a vehicle.  The dark "
+"orange represents gender non-conformity, the orange represents independence,"
+" the white represents unique relationships to womanhood, pink represents "
+"serenity and peace, and the dark rose represents feminimity."
+msgstr ""
+"一面女同性恋骄傲旗帜，在一个载具上随风飘扬。深橙色代表性别不符合规范，橙色代表独立，白色代表对女性身份的独特关系，粉色代表宁静与和平，深玫瑰色代表女性特质。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Non-binary pride flag"
+msgstr "车载非二元性别骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Non-binary pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A non-binary pride flag, fluttering in the breeze atop a vehicle.  Yellow "
+"represents those who identify outside of the gender binary, white represents"
+" those with multiple genders, purple for those with a mix of both male and "
+"female, and black for agender individuals."
+msgstr ""
+"一面非二元性别骄傲旗帜，在一个载具上随风飘扬。黄色代表那些在性别二元之外识别的个体，白色代表拥有多种性别的人，紫色代表拥有男性和女性混合特征的人，黑色代表无性别个体。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Pansexual pride flag"
+msgstr "车载泛性恋骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Pansexual pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A pansexual pride flag, fluttering in the breeze atop a vehicle.  Pink "
+"represents being attracted to women, blue being attracted to men, and yellow"
+" being attracted to everyone else."
+msgstr "一面泛性恋骄傲旗帜，在一个载具上随风飘扬。粉色代表对女性的吸引，蓝色代表对男性的吸引，黄色代表对其他所有人的吸引。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Gay pride flag"
+msgstr "车载男同性恋骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Gay pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A men's gay pride flag, fluttering in the breeze atop a vehicle.  The greens"
+" represent healing and joy; the white stripe includes people who are "
+"transgender, nonbinary, intersex, or otherwise likely to be traditionally "
+"left out; the blues represent pure love, strength, and diversity."
+msgstr ""
+"一面男同性恋骄傲旗帜，在一个载具上随风飘扬。绿色代表康复和喜悦；白色条纹包括跨性别者、非二元性别者、雙性人，或其他有可能被传统排斥的人群；蓝色代表纯爱、力量和多样性。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Genderfluid pride flag"
+msgstr "车载性别流动骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Genderfluid pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A genderfluid pride flag, fluttering in the breeze atop a vehicle.  The pink"
+" represents feminimity, the white represents lack of gender, the purple "
+"represents androgyny, the black represents all other genders, and the blue "
+"represents masculinity."
+msgstr "一面性别流动骄傲旗帜，在一个载具上随风飘扬。粉色代表女性特质，白色代表缺乏性别，紫色代表雌雄同体，黑色代表所有其他性别，蓝色代表男性特质。"
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Autism pride flag"
+msgstr "车载自闭症骄傲旗帜"
+
+#. ~ Description for {'str': 'mounted Autism pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An autism pride flag, fluttering in the breeze atop a vehicle.  Gold middle "
+"band refers to the elemental symbol of gold (AU) which is used in the "
+"autistic community.  The gradient refers to the Pride Movement.  Red "
+"originated as a protest to the `light it up blue` campaign, which was "
+"denounced by the autistic community.  The infinity sign is a symbol long "
+"used in the wider autistic and wider neurodiverse community."
+msgstr ""
+"一面自闭症骄傲旗帜，在一个载具上随风飘扬。中间的金色条带指的是金元素符号（AU），在自闭症社区中使用。渐变色代表骄傲运动。红色起源于对“点亮蓝色”活动的抗议，这个活动曾受到自闭症社区的谴责。无限符号是长期以来在更广泛的自闭症和更广泛的神经多样性社区中使用的符号。"
 
 #: data/mods/rural_biome/modinfo.json
 msgid "Rural-Only Mapgen"
@@ -256077,12 +256834,12 @@ msgstr "你手动对%s进行了退膛。"
 #: src/ranged.cpp
 #, c-format
 msgid "You fire your %s, %s"
-msgstr ""
+msgstr "你射击你的%s，%s"
 
 #: src/ranged.cpp
 #, c-format
 msgid "You fire your %s!"
-msgstr ""
+msgstr "你射击你的%s！"
 
 #: src/ranged.cpp
 #, c-format
@@ -256276,10 +257033,6 @@ msgstr "咔啦轰！"
 #: src/ranged.cpp
 msgid "Brrrip!"
 msgstr "噗噗噗！"
-
-#: src/ranged.cpp
-msgid "plink!"
-msgstr "砰砰砰！"
 
 #: src/ranged.cpp
 msgid "Brrrap!"

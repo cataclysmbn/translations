@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-09-14 01:09+0000\n"
+"POT-Creation-Date: 2024-09-20 01:15+0000\n"
 "Last-Translator: Fruitybite, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -4830,7 +4830,7 @@ msgstr ""
 "페널티는 손에 들고 제작하는 것과 같습니다. 다른 작업대를 사용할 수 있다면, 그 작업대를 사용하는 것을 막지 않습니다. 때려부수거나 "
 "건축 메뉴에서 제거할 수 있습니다."
 
-#: data/json/construction.json
+#: data/json/construction.json data/mods/pride_flags/construction.json
 msgid "Can be deconstructed without tools."
 msgstr "도구 없이도 분해할 수 있습니다."
 
@@ -4953,7 +4953,14 @@ msgid ""
 "Mark a spot for target practice.  Firing will automatically target the first"
 " practice target location found in gun range, if no enemies are around."
 msgstr ""
-"한 지점을 연습용 타겟으로 지정합니다. 사정거리 내에 있고 다른 적이 없다면 그 주변에서의 사격은 연습용 타겟을 우선 사격합니다."
+"표적 사격을 위한 목표를 지정합니다. 사정거리 내에 연습용 표적이 있고 다른 적이 없다면 그 주변에서의 사격은 연습용 표적을 우선적으로 "
+"사격합니다."
+
+#: data/json/construction.json
+msgid ""
+"Firing will automatically target the first practice target found in gun "
+"range, if no enemies are around."
+msgstr "사정거리 내에 연습용 표적이 있고 다른 적이 없다면 그 주변에서의 사격은 연습용 표적을 우선적으로 사격합니다."
 
 #: data/json/construction.json
 msgid ""
@@ -5959,12 +5966,28 @@ msgid "Mark practice target"
 msgstr "연습용 목표 지정"
 
 #: data/json/construction_group.json
+msgid "Build steel target"
+msgstr "강철 표적 건설"
+
+#: data/json/construction_group.json
 msgid "Mine Downstair"
 msgstr "아래로 가는 계단 제작"
 
 #: data/json/construction_group.json
 msgid "Mine Upstair"
 msgstr "위로 가는 계단 제작"
+
+#: data/json/construction_group.json
+msgid "Build Wooden Flagpole"
+msgstr "나무 깃대 건설"
+
+#: data/json/construction_group.json
+msgid "Hoist American Flag"
+msgstr "성조기 게양"
+
+#: data/json/construction_group.json
+msgid "Hoist Jolly Roger"
+msgstr "해적 깃발 게양"
 
 #: data/json/construction_group.json
 msgid "Paint Grass White"
@@ -10774,7 +10797,7 @@ msgstr "이 물품을 사용하여 <info>먼 곳에 있는 것</info>을 <good>�
 msgid ""
 "This clothing has a fur lining sewn into it to <good>increase</good> its "
 "overall <info>warmth</info>."
-msgstr "이 의류는 안감이 모피로 되어있어 <info>보온력</info>이 <good>높습니다</good>."
+msgstr "이 의류는 모피를 덧대어 <info>보온력</info>이 <good>높습니다</good>."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -10811,7 +10834,7 @@ msgstr ""
 msgid ""
 "This clothing has a wool lining sewn into it to <good>increase</good> its "
 "overall <info>warmth</info>."
-msgstr "이 의류는 안감이 양모로 되어 있어, <info>보온력</info>이 <good>높습니다</good>."
+msgstr "이 의류는 양모를 덧대어 <info>보온력</info>이 <good>높습니다</good>."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -29793,6 +29816,7 @@ msgstr ""
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/mapgen/city_blocks/urban_37_office_tower_beehive.json
 #: data/json/obsoletion/uncategorized.json data/mods/Magiclysm/furniture.json
+#: data/mods/pride_flags/furniture.json
 msgid "metal screeching!"
 msgstr "끼기기기긱!"
 
@@ -29822,6 +29846,7 @@ msgstr "끼기기기긱!"
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/mapgen/city_blocks/urban_37_office_tower_beehive.json
 #: data/json/obsoletion/uncategorized.json data/mods/Magiclysm/furniture.json
+#: data/mods/pride_flags/furniture.json
 msgid "clang!"
 msgstr "쨍그랑!"
 
@@ -30278,7 +30303,7 @@ msgstr "건물의 전력망에 연결된 풍력발전용 터빈입니다."
 #: data/json/furniture_and_terrain/terrain-walls.json
 #: data/json/furniture_and_terrain/terrain-windows.json
 #: data/json/obsoletion/uncategorized.json data/mods/Magiclysm/terrain.json
-#: data/mods/No_Hope/terrain.json
+#: data/mods/No_Hope/terrain.json data/mods/pride_flags/furniture.json
 msgid "whack!"
 msgstr "꽝!"
 
@@ -30526,7 +30551,8 @@ msgstr "전력망에 연결된 휴대용 음식 건조기. 음식을 보존하�
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/obsoletion/uncategorized.json
 #: data/mods/CRT_EXPANSION/constructions/crt_terrain.json
-#: data/mods/Magiclysm/terrain.json src/mapdata.cpp
+#: data/mods/Magiclysm/terrain.json data/mods/pride_flags/furniture.json
+#: src/mapdata.cpp
 msgid "crunch!"
 msgstr "우지끈!"
 
@@ -31959,8 +31985,9 @@ msgstr "오벨리스크"
 
 #. ~ Description for obelisk
 #: data/json/furniture_and_terrain/furniture-graves.json
-msgid "Monument to pride."
-msgstr "자부심의 기념비입니다."
+msgid ""
+"A monument to the fallen, from a time when the dead weren't so restless."
+msgstr "망자들을 위한 기념비입니다. 망자들이 지금처럼 움직이지 않던 시대에 만들어졌습니다."
 
 #: data/json/furniture_and_terrain/furniture-graves.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
@@ -32688,13 +32715,52 @@ msgid "Jump!  Jump!  Dive!"
 msgstr "뛰어! 뛰어! 다이브!"
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
-msgid "target"
-msgstr "목표"
+msgid "steel target"
+msgstr "강철 표적"
 
-#. ~ Description for target
+#. ~ Description for steel target
 #: data/json/furniture_and_terrain/furniture-recreation.json
-msgid "A metal shooting target in the rough shape of a human."
-msgstr "인간 형상을 대충 비슷하게 만든 금속제 사격 과녁."
+msgid ""
+"A metal shooting target in the rough shape of a human, that tips over when "
+"shot.  Or you could examine it to tip it over by hand, if you want."
+msgstr "인간 형상을 대충 흉내냈으며 적중하면 넘어지는 강철 사격용 표적입니다. 원한다면 손으로 직접 넘어뜨릴수도 있습니다."
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "clatter!"
+msgstr "철컹!"
+
+#: data/json/furniture_and_terrain/furniture-recreation.json src/ranged.cpp
+msgid "plink!"
+msgstr "핑!"
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "Tip steel target over"
+msgstr "강철 표적 넘어뜨리기"
+
+#. ~ Message for furniture 'steel target'
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "You knock the steel target over.  How fun."
+msgstr "강철 표적을 넘어뜨립니다. 재밌네요."
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "toppled steel target"
+msgstr "넘어진 강철 표적"
+
+#. ~ Description for toppled steel target
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid ""
+"A metal shooting target in the rough shape of a human.  It's been knocked "
+"over by a good hit, examine it to stand it back up."
+msgstr "인간 형상을 대충 흉내냈으며 넘어져있는 강철 사격용 표적입니다. 조사하여 다시 일으켜세울 수 있습니다."
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "Stand steel target upright"
+msgstr "강철 표적 바로세우기"
+
+#. ~ Message for furniture 'toppled steel target'
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "You prop the steel target back up."
+msgstr "강철 표적을 다시 세웁니다."
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
 msgid "arcade machine"
@@ -34117,6 +34183,63 @@ msgid ""
 "the floor.  It can be used as a primitive anvil."
 msgstr ""
 "미-고 가스 방출기 위에 콘크리트를 들이부은 결과물입니다. 바닥에 단단히 고정되어있으며, 원시적인 모루로 사용할 수 있습니다."
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "flagpole"
+msgstr "깃대"
+
+#. ~ Description for flagpole
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"An old metal flagpole, with no flag to fly.  Don't lick it if it's cold out."
+msgstr "휘날리는 깃발이 없는 오래된 금속 깃대입니다. 날씨가 추울 때는 핥지 마세요."
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "flagpole with American flag"
+msgstr "성조기가 걸린 깃대"
+
+#. ~ Description for flagpole with American flag
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"An old metal flagpole flying an American flag.  A leftover from before the "
+"world ended, you could take it down if you need one for some reason."
+msgstr "성조기가 휘날리고 있는 오래된 금속 깃대입니다. 세상이 끝장나기 전의 유물로, 필요하다면 성조기를 내려 가져갈 수 있습니다."
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "wooden flagpole"
+msgstr "나무 깃대"
+
+#. ~ Description for wooden flagpole
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "A makeshift flagpole constructed from a wooden beam and rope."
+msgstr "나무 기둥과 밧줄로 만든 간이 깃대입니다."
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "wooden flagpole with American flag"
+msgstr "성조기가 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with American flag
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "Someone's hoisted an old American flag from this makeshift flagpole."
+msgstr "누군가가 간이 깃대에 오래된 성조기를 걸어놓았습니다."
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "flagpole with Jolly Roger"
+msgstr "해적 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Jolly Roger
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "An old metal flagpole, now flying a black pirate flag."
+msgstr "검은 해적 깃발이 휘날리고 있는 오래된 금속 깃대입니다."
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "wooden flagpole with Jolly Roger"
+msgstr "해적 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Jolly Roger
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "Someone's hoisted a black pirate flag from this makeshift flagpole."
+msgstr "누군가가 간이 깃대에 검은 해적 깃발을 걸어놓았습니다."
 
 #: data/json/furniture_and_terrain/furniture-tools.json
 #: data/json/furniture_and_terrain/terrain-mechanisms.json
@@ -36191,7 +36314,7 @@ msgstr "땅"
 msgid ""
 "It's dirt.  Looks like some fine soil for tillage.  Could also be dug out "
 "for construction projects."
-msgstr "흙입니다. 경작에 쓰기 좋은 고운 흙입니다. 또한 건축을 위한 구덩이를 파는데도 쓸 수 있습니다."
+msgstr "흙입니다. 경작에 쓰기 좋은 고운 흙입니다. 파헤쳐서 건물을 지을 수도 있습니다."
 
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
@@ -47885,8 +48008,9 @@ msgstr[0] "시계"
 
 #. ~ Description for {'str': 'clock'}
 #: data/json/items/generic.json
-msgid "A small mechanical clock, it's stopped at 10:10."
-msgstr "작은 기계식 시계. 10시 10분에 멈춰있습니다."
+msgid ""
+"A small mechanical clock.  Tells the time and has an alarm clock feature."
+msgstr "작은 기계식 시계입니다. 시간을 알려주며 알람 기능이 있습니다."
 
 #: data/json/items/generic.json
 msgid "clockworks"
@@ -52055,7 +52179,7 @@ msgstr "끈으로 이어져있는 산업용 귀마개.  목에 두를 수 있으
 #: data/json/items/tool_armor.json
 msgid "survivor half-mask"
 msgid_plural "survivor half-masks"
-msgstr[0] "생존자용 하프마스크"
+msgstr[0] "생존용 하프마스크"
 
 #. ~ Description for {'str': 'survivor half-mask'}
 #: data/json/items/tool_armor.json
@@ -53614,6 +53738,8 @@ msgid ""
 "range use.  The \"Nitro\" in the name isn't very applicable to this "
 "blackpowder load, but it still has plenty of Express."
 msgstr ""
+".700 니트로 익스프레스는 장거리 사격용으로 설계된 매우 강력한 소총탄입니다. 사실 흑색화약을 사용하는 시점에서 \"니트로\"라는 "
+"이름은 어울리지 않지만, 여전히 \"익스프레스\"긴 합니다."
 
 #: data/json/items/ammo/762.json
 msgid "7.62x39mm 57-N-231"
@@ -56469,6 +56595,44 @@ msgstr[0] "성조기"
 #: data/json/items/armor/cloaks.json
 msgid "A large American flag made to fly in even the worst conditions."
 msgstr "최악의 상황에서도 게양할 수 있도록 만들어진 대형 성조기."
+
+#: data/json/items/armor/cloaks.json
+msgid "Jolly Roger"
+msgid_plural "Jolly Rogers"
+msgstr[0] "해적 깃발"
+
+#. ~ Description for {'str': 'Jolly Roger'}
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag."
+msgstr "검은 해적 깃발의 복제품입니다."
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting a skull-and-crossbones."
+msgstr "두개골과 교차된 뼈가 그려진 검은 해적 깃발의 복제품입니다."
+
+#: data/json/items/armor/cloaks.json
+msgid ""
+"A black replica pirate flag, depicting a skull-and-crossbones over an "
+"hourglass."
+msgstr "두개골과 교차된 뼈, 그리고 모래시계가 그려진 검은 해적 깃발의 복제품입니다."
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting a skull over a cutlass."
+msgstr "두개골과 커틀러스가 그려진 검은 해적 깃발의 복제품입니다."
+
+#: data/json/items/armor/cloaks.json
+msgid ""
+"A black replica pirate flag, depicting a skeleton stabbing a heart with a "
+"spear."
+msgstr "심장을 창으로 찌르고 있는 해골이 그려진 검은 해적 깃발의 복제품입니다."
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting an arm holding a cutlass."
+msgstr "커틀러스를 들고 있는 손이 그려진 검은 해적 깃발의 복제품입니다."
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting a skull."
+msgstr "두개골이 그려진 검은 해적 깃발의 복제품입니다."
 
 #: data/json/items/armor/cloaks.json
 msgid "Foodperson's cape"
@@ -84346,7 +84510,7 @@ msgstr "새콤한 붉은색 열매입니다. 건강에 좋습니다."
 #: data/json/items/comestibles/raw_fruit.json
 msgid "raspberries"
 msgid_plural "raspberries"
-msgstr[0] "산딸기기"
+msgstr[0] "산딸기"
 
 #. ~ Description for {'str_sp': 'raspberries'}
 #: data/json/items/comestibles/raw_fruit.json
@@ -91663,6 +91827,8 @@ msgid ""
 "The Hi-Point CF-380 is a blowback operated semi-automatic pistol designed by"
 " Hi-Point Firearms.  Hi-Points have slides made with a zinc pot-metal."
 msgstr ""
+"하이-포인트 CF-380은 블로우백 방식으로 노리쇠뭉치를 후퇴시키는 하이-포인트 파이어암 사의 반자동권총입니다. 하이-포인트에는 아연 "
+"합금 슬라이드가 사용됩니다."
 
 #: data/json/items/gun/380.json
 msgid "Taurus Spectrum"
@@ -98659,9 +98825,8 @@ msgstr[0] "가짜 루체른 해머"
 #: data/json/items/melee/bludgeons.json
 msgid ""
 "This is a cheap piece of crap imitation of a versatile polearm with a spiked"
-" hammer head, probably used for LARPing"
-msgstr ""
-"아마도 LARP(Live Action Role Playing)에 사용되는 뾰족한 해머 헤드를 가진 다용도 장대의 값싼 모조품입니다."
+" hammer head, probably used for LARPing."
+msgstr "아마도 현실에서 TRPG를 즐기는데 쓰이는 것 같은, 뾰족한 망치머리가 달린 범용 장대무기의 싸구려 모조품입니다."
 
 #: data/json/items/melee/bludgeons.json
 msgid "mace"
@@ -100389,8 +100554,10 @@ msgstr[0] "탄토 레플리카"
 msgid ""
 "Long Japanese knives like this more-modern remake were the samurai's backup "
 "weapon, before the advent of the larger wakizashi.  This one doesn't feel "
-"well-balanced"
-msgstr "현대적인 리메이크처럼 긴 일본 칼은 더 큰 와키자시가 등장하기 전에 사무라이의 예비 무기였습니다. 균형이 맞지 않습니다."
+"well-balanced."
+msgstr ""
+"더 커다란 와키자시가 등장하기 전까지 사무라이들은 예비 무기로 기다란 일본 단도를 가지고 다녔습니다. 이 검은 균형이 잘 잡혀있지 않은 "
+"것 같습니다."
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "tanto fake"
@@ -100913,10 +101080,10 @@ msgstr[0] "일본도 레플리카"
 #. ~ Description for {'str': 'katana replica'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
-"This is a rare sword from Japan.  While it's got the right edge and weight, "
-"the pommel just snaps off, and the blade seems pretty worn."
+"This is a rare sword from Japan.  While it's got the right edge and balance,"
+" the pommel just snaps off, and the blade seems pretty worn."
 msgstr ""
-"이것은 일본에서 들여온 진귀한 검입니다. 오른쪽 가장자리와 무게는 맞지만, 안장은 그냥 툭툭 끊어지고, 칼날은 꽤 닳은 것 같습니다."
+"일본에서 만들어진 희귀한 검입니다. 칼날이 제대로 서있고 무게균형도 맞지만, 폼멜이 툭툭 꺾이고 도신도 꽤 낡아있는 것 같습니다."
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "katana fake"
@@ -110873,15 +111040,27 @@ msgstr[0] "노"
 msgid "Oars for a boat."
 msgstr "보트에 쓰이는 노."
 
-#: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
+#: data/json/items/vehicle/boat.json
 msgid "sail"
 msgid_plural "sails"
 msgstr[0] "돛"
 
 #. ~ Description for {'str': 'sail'}
 #: data/json/items/vehicle/boat.json
-msgid "Sails for a boat."
-msgstr "보트에 다는 돛."
+msgid "A small sail and makeshift rigging for a raft."
+msgstr "뗏목에 적합한 소형 돛과 간이 삭구입니다."
+
+#: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
+msgid "large sail"
+msgid_plural "large sails"
+msgstr[0] "대형 돛"
+
+#. ~ Description for {'str': 'large sail'}
+#: data/json/items/vehicle/boat.json
+msgid ""
+"A wooden mast with sails fit for a yacht or sloop, and about as much rigging"
+" as a single sailor can handle."
+msgstr "요트나 슬루프 등 대부분의 범선에 적합한 나무 돛대입니다. 선원 혼자서도 다룰 수 있습니다."
 
 #: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
 msgid "inflatable section"
@@ -177601,6 +177780,22 @@ msgid ""
 msgstr "당신의 배에 물이 들어오는 것을 막아주는 가벼운 첨단 탄소 섬유로 된 튼튼한 판입니다."
 
 #: data/json/vehicleparts/vehicle_parts.json
+msgid "small sail"
+msgstr "소형 돛"
+
+#. ~ Description for {'str': 'small sail'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "A sail for a raft, small enough to be foldable."
+msgstr "뗏목에 달만한 크기의 돛입니다. 충분히 작은 덕분에 접을 수 있습니다."
+
+#. ~ Description for {'str': 'large sail'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"Sails and rigging fit for a yacht or sloop, about as large as a single "
+"person can reasonably crew."
+msgstr "요트나 슬루프 등 대부분의 범선에 적합한 돛과 삭구입니다. 혼자서 몰 수 있는 선에서 최대한 큰 크기입니다."
+
+#: data/json/vehicleparts/vehicle_parts.json
 msgid "hand paddles"
 msgstr "노"
 
@@ -178160,6 +178355,24 @@ msgid ""
 "A 60L refrigerated tank.  When turned on, it will cool the liquid inside, "
 "extending the time until the food spoils."
 msgstr "60L 냉장 탱크입니다. 작동되면 내부 액체를 냉각시켜, 음식이 부패되기까지의 시간을 연장시킵니다."
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "mounted American flag"
+msgstr "차량용 성조기"
+
+#. ~ Description for {'str': 'mounted American flag'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "An American flag, fluttering in the breeze atop a vehicle."
+msgstr "차량에 장착되어 바람에 휘날리는 성조기입니다."
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "mounted Jolly Roger"
+msgstr "차량용 해적 깃발"
+
+#. ~ Description for {'str': 'mounted Jolly Roger'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "A black pirate flag, fluttering in the breeze atop a vehicle."
+msgstr "차량에 장착되어 바람에 휘날리는 해적 깃발입니다."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/vehicleparts/vp_flags.json
@@ -181261,7 +181474,7 @@ msgstr ""
 #: data/mods/Aftershock/items/weapons.json
 msgid "hydraulic gauntlet"
 msgid_plural "hydraulic gauntlets"
-msgstr[0] "유압 건틀릿"
+msgstr[0] "유압 건틀렛"
 
 #. ~ Description for {'str': 'hydraulic gauntlet'}
 #: data/mods/Aftershock/items/weapons.json
@@ -188953,7 +189166,9 @@ msgid ""
 "A large chunk of native aluminum, which would have been priceless before "
 "other ways to obtain aluminum were invented.  It needs to be cast into an "
 "ingot."
-msgstr "자연 상태에서 발견되는 알루미늄 덩어리입니다. 제대로 써먹으려면 좀 더 유용한 형태로 만들어야 합니다."
+msgstr ""
+"자연 상태에서 발견되는 알루미늄 덩어리입니다. 알루미늄을 얻어낼 다른 방법이 개발되기 전까지는 귀중한 자원이었습니다. 주괴 형태로 "
+"만들어야 사용할 수 있습니다."
 
 #: data/mods/CheesyInnaWoodsFixes/items/ore_bn.json
 msgid "chunk of cassiterite"
@@ -204292,6 +204507,9 @@ msgid ""
 "\n"
 "+2 Accuracy, n+15 speed, +25% damage."
 msgstr ""
+"항상 전력을 다해 후려치세요. 죽고 싶은게 아니라면 힘을 아낄 이유가 없습니다.\n"
+"\n"
+"명중률 +2, 속도 +15, 피해량 +25%."
 
 #: data/mods/MMA/martialarts.json
 msgid "Pounching Charge"
@@ -204306,6 +204524,10 @@ msgid ""
 "+2 Accuracy, +10% damage.\n"
 "Lasts 1 turn."
 msgstr ""
+"야수의 포효와 함께 스스로를 전장에 내몹니다. 먼저 때리고, 힘껏 때리세요.\n"
+"\n"
+"명중률 +2, 피해량 10%.\n"
+"1턴간 지속."
 
 #: data/mods/MMA/modinfo.json
 msgid "Mythical Martial Arts"
@@ -204730,12 +204952,12 @@ msgstr "히드라 참살격"
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "You interrupt %s with a perfectly aimed strike"
-msgstr ""
+msgstr "%s에게 완벽한 조준공격을 가해 행동을 방해합니다."
 
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "<npcname> interrupt %s with a perfectly aimed strike"
-msgstr ""
+msgstr "<npcname>(이)가 %s에게 완벽한 조준공격을 가해 행동을 방해합니다."
 
 #: data/mods/MMA/techniques.json
 msgid "Mighty Throw"
@@ -204744,12 +204966,12 @@ msgstr "통렬한 투척"
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "You toss %s aside with a Mighty Throw"
-msgstr ""
+msgstr "%s(을)를 통렬한 투척으로 내던집니다."
 
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "<npcname> tosses %s with a Mighty Throw"
-msgstr ""
+msgstr "<npcname>(이)가 %s(을)를 통렬한 투척으로 내던집니다."
 
 #: data/mods/MMA/techniques.json
 msgid "Ballista Throw"
@@ -204772,12 +204994,12 @@ msgstr "흐르는 물처럼"
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "You deflect %s's attack and counter in one fluid motion"
-msgstr ""
+msgstr "%s의 공격을 쳐내고 물흐르듯이 반격합니다."
 
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "<npcname> deflects %s's attack and counters in one fluid motion"
-msgstr ""
+msgstr "<npcname>(이)가 %s의 공격을 쳐내고 물흐르듯이 반격합니다."
 
 #: data/mods/MMA/techniques.json
 msgid "Disarming Slash"
@@ -204786,12 +205008,12 @@ msgstr "무장해제의 가르기"
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "You disarm %s with a quick flick of your weapon"
-msgstr ""
+msgstr "무기를 빠르게 튕겨 %s(을)를 무장해제시킵니다."
 
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "<npcname> disarms %s with a quick flick of their weapon"
-msgstr ""
+msgstr "<npcname>(이)가 무기를 빠르게 튕겨%s(을)를 무장해제시킵니다."
 
 #: data/mods/MMA/techniques.json
 msgid "Sarlacc Sweep"
@@ -204800,12 +205022,12 @@ msgstr "살락 휩쓸기"
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "You quickly sweep through %s and those nearby"
-msgstr ""
+msgstr "%s 및 인접한 자들을 빠르게 휩씁니다."
 
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "<npcname> quickly sweeps through %s and those nearby"
-msgstr ""
+msgstr "<npcname>(이)가 %s 및 인접한 자들을 빠르게 휩씁니다."
 
 #: data/mods/MMA/techniques.json
 msgid "Mountain Hammer"
@@ -204814,12 +205036,12 @@ msgstr "태산 강타"
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "You crush %s with the weight of your Mountain Hammer"
-msgstr ""
+msgstr "태산 강타로 무게를 실어 %s(을)를 으깨버립니다."
 
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "<npcname> crushes %s with the weight of their Mountain Hammer"
-msgstr ""
+msgstr "<npcname>(이)가 태산 강타로 무게를 실어 %s(을)를 으깨버립니다."
 
 #: data/mods/MMA/techniques.json
 msgid "Irrestistible Mountain Strike"
@@ -204828,12 +205050,12 @@ msgstr "산사태의 일격"
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "You smash down on %s with a Mountain Strike"
-msgstr ""
+msgstr "%s에게 산사태의 일격을 퍼붓습니다."
 
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "<npcname> smashes down on %s with a Mountain Strike"
-msgstr ""
+msgstr "<npcname>(이)가 %s에게 산사태의 일격을 퍼붓습니다."
 
 #: data/mods/MMA/techniques.json
 msgid "Colossus Strike"
@@ -204842,12 +205064,12 @@ msgstr "거상의 강타"
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "You completely shatter %s with a Colossus Strike"
-msgstr ""
+msgstr "거상의 강타로 %s(을)를 완전히 박살냅니다."
 
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "<npcname> completely shatters %s with a Colossus Strike"
-msgstr ""
+msgstr "<npcname>(이)가 거상의 강타로 %s(을)를 완전히 박살냅니다."
 
 #: data/mods/MMA/techniques.json
 msgid "Wolverine Stance"
@@ -204856,17 +205078,17 @@ msgstr "울버린 태세"
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "The %s tries to grab you, but you thrash your way to freedom!"
-msgstr ""
+msgstr "%s(이)가 당신을 붙잡으려 했지만, 거칠게 쳐냅니다!"
 
 #: data/mods/MMA/techniques.json
 #, c-format
 msgid "The %s tries to grab <npcname>, but they thrash their way to freedom!"
-msgstr ""
+msgstr "%s(이)가 <npcname>(을)를 붙잡으려 했지만, 거칠게 쳐냅니다!"
 
 #: data/mods/Magiclysm/bionics.json data/mods/Magiclysm/items/bionics.json
 msgid "Blood Power Generator CBM"
 msgid_plural "Blood Power Generator CBMs"
-msgstr[0] "CBM:혈액 발전"
+msgstr[0] "CBM:혈액 발전기"
 
 #. ~ Description for {'str': 'Blood Power Generator CBM'}
 #: data/mods/Magiclysm/bionics.json
@@ -204903,7 +205125,7 @@ msgstr "전송 관문 만들기"
 msgid ""
 "This clothing has an owlbear fur lining sewn into it to <good>greatly "
 "increase</good> its overall <info>warmth</info>."
-msgstr "이 의류는 안감이 아울베어 모피로 되어있어 <info>보온력</info>이 <good>아주 높습니다</good>."
+msgstr "이 의류는 아울베어 모피를 덧대어 <info>보온력</info>이 <good>아주 높습니다</good>."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/mods/Magiclysm/flags.json
@@ -204925,18 +205147,18 @@ msgstr "전송용 관문입니다.  전송 주문을 시전하거나 관문을 �
 
 #: data/mods/Magiclysm/furniture.json
 msgid "Magic Circle"
-msgstr "매직 서클"
+msgstr "마법진"
 
 #. ~ Description for Magic Circle
 #: data/mods/Magiclysm/furniture.json
 msgid ""
 "This is a rough magic circle, carved into the ground and decorated with "
 "blood, candles, and other small knick-knacks."
-msgstr "이것은 땅에 거칠게 새겨진 마법의 원으로, 피와 양초, 그리고 여러 작은 장식품들로 구성되어 있습니다."
+msgstr "거친 형태의 마법진으로, 지면에 원을 그려 새기고 피, 양초, 기타 작은 장식품들로 꾸몄습니다."
 
 #: data/mods/Magiclysm/furniture.json
 msgid "large glowing boulder"
-msgstr "큰 빛나는 바위"
+msgstr "빛나는 큰 바위"
 
 #. ~ Description for large glowing boulder
 #: data/mods/Magiclysm/furniture.json
@@ -204945,7 +205167,7 @@ msgstr "이건 뭔가 잘못됐습니다."
 
 #: data/mods/Magiclysm/furniture.json
 msgid "enchanter's workbench"
-msgstr "요술쟁이의 작업대"
+msgstr "인챈터의 작업대"
 
 #. ~ Description for enchanter's workbench
 #: data/mods/Magiclysm/furniture.json
@@ -204954,8 +205176,8 @@ msgid ""
 " alchemical spills and burns.  It has wired in electrical and gas fittings, "
 "and has been decorated with several protection runes - mostly ornamental."
 msgstr ""
-"대부분의 연금술 유출과 화재에 강한, 견고한 수지 작업대가 갖춰진 화려한 오크나무 수납장입니다.  전기와 가스 설비가 연결되어 있으며, "
-"(주로 관상용인) 몇몇의 보호용 룬으로 장식되어 있습니다."
+"대부분의 연금물질 누출과 화재에 저항력을 갖는 견고한 수지 작업대가 달린 화려하게 장식된 참나무 캐비넷입니다. 전기와 가스 설비가 "
+"연결되어있으며, 대부분 장식에 불과한 여러 보호의 룬이 달려있습니다."
 
 #: data/mods/Magiclysm/furniture.json
 msgid "standing alembic"
@@ -204968,12 +205190,12 @@ msgid ""
 "consists of a copper pot with rising spires of twisted glass draining into "
 "various removable bottles."
 msgstr ""
-"연금혼합물들을 증류하기 위한 유리와 구리로 된 거대한 증류기입니다.  구리로 된 솥과 이리저리 꼬이면서 올라가며 끝에서는 교체 가능한 "
-"유리병으로 이어지는 유리관으로 구성되어있습니다."
+"연금혼합물을 증류하는데 쓰이는 유리-구리 재질의 대형 증류기입니다. 구리 솥, 뱅뱅 꼬인 유리관, 교체할 수 있는 유리병으로 "
+"구성되어있습니다."
 
 #: data/mods/Magiclysm/furniture.json
 msgid "orrery"
-msgstr "오렐리"
+msgstr "태양계 모형"
 
 #. ~ Description for orrery
 #: data/mods/Magiclysm/furniture.json
@@ -204983,8 +205205,9 @@ msgid ""
 "turn of a crank.  This more modern version also has bluetooth and could have"
 " been controlled with an app, if there was any power anymore."
 msgstr ""
-"이 아름다운 물체는 태양계의 비축척 모형입니다.  크랭크를 회전하면 복잡한 일련의 기기들이 작동하면서 행성들의 상대적인 움직임을 관찰할 "
-"수 있게끔 합니다.  좀 더 현대적인 버전은 블루투스를 내장하고 있으며 전력이 있었다면 앱으로도 제어할 수 있었을 겁니다."
+"아름다운 태양계 비축척 모형입니다. 크랭크의 회전에 따라 복잡한 장치들이 기동하여 행성들의 상대적 움직임을 관찰할 수 있습니다. 이 "
+"장비는 좀 더 현대적인 기술이 도입되어, 블루투스로 연결할 수 있고 스마트폰 어플리케이션으로 제어할 수도 있습니다. 전력이 멀쩡했다면 "
+"좋았을텐데요."
 
 #: data/mods/Magiclysm/furniture.json
 msgid "huge mana crystal"
@@ -204997,8 +205220,7 @@ msgid ""
 "like a weed.  It pulses with a delicate yellow energy, occasionally bursting"
 " with flashes of pent-up light."
 msgstr ""
-"마치 잔디처럼 바닥에서 자라난 것 같은 마나 수정입니다. 은은한 노란색 기운이 고동치고 있으며, 때때로 억눌려있던 섬광이 터져나오기도 "
-"합니다."
+"마치 잔디처럼 바닥에서 자라난 것 같은 마나 수정입니다. 은은한 노란색 에너지가 맥동하며, 때때로 억눌려있던 섬광이 터져나오기도 합니다."
 
 #: data/mods/Magiclysm/furniture.json
 msgid "glass shattering!"
@@ -205017,7 +205239,7 @@ msgstr "돌 제단"
 msgid ""
 "This is big stone altar.  Most commonly used in morally questionable "
 "rituals."
-msgstr "커다란 돌 제단입니다.  심히 비도덕적일 것 같은 의식에 주로 사용됩니다."
+msgstr "커다란 돌 제단입니다. 대체로 도덕적으로 논란의 여지가 있는 의식을 치르는데 쓰입니다."
 
 #: data/mods/Magiclysm/furniture.json data/mods/Magiclysm/items/tools.json
 msgid "demon forge"
@@ -205031,9 +205253,8 @@ msgid ""
 " for flames.  Custom made to withstand the heat from alumentum, this forge "
 "can resmelt the magical metals into their workable, ingot form."
 msgstr ""
-"불을 좋아하는 커다란 붉은 거미의 키틴질로 만든 용광로입니다. 알루멘튬의 열을 견디도록 수제작된 덕분에, 마법의 금속을 이것은 불에 "
-"친화적인 거대한 붉은 거미의 키틴질로 만든 단조 장치입니다.  알루멘튬의 열을 견딜 수 있도록 제작된 이 장치는 마법의 금속을 재련하여 "
-"제작에 쓸 수 있는 주괴 형태로 가공할 수 있습니다."
+"불을 좋아하는 거대한 붉은 거미의 키틴질로 만든 용광로입니다. 이 용광로는 알루멘툼의 열을 견디도록 수제작되어, 마법의 금속을 녹여 다른"
+" 용도로 쓸 수 있는 주괴 형태로 가공할 수 있습니다."
 
 #: data/mods/Magiclysm/materials.json
 msgid "Arcane Skin"
@@ -205066,7 +205287,7 @@ msgstr "카타클리즘인데 이제 마법 주문도 있습니다! 밝은 밤 �
 
 #: data/mods/Magiclysm/modinfo.json
 msgid "spellcraft"
-msgstr "마법학"
+msgstr "주문학"
 
 #. ~ Description for spellcraft
 #: data/mods/Magiclysm/modinfo.json
@@ -205075,8 +205296,8 @@ msgid ""
 "higher skill increases how quickly you can learn spells, and decreases their"
 " spell failure chance.  You learn this skill by studying books or spells."
 msgstr ""
-"마법 등의 신비한 현상을 다루는 기술로, 마법 이론과 이에 수반되는 모든 일을 일컫습니다.  능숙해질수록 주문 학습 속도가 빨라지고 주문"
-" 실패율이 낮아집니다.  책을 읽거나 주문을 익힘으로써 기술을 연마할 수 있습니다."
+"비전 지식을 나타내는 기술입니다. 마법 이론과 이에 수반되는 모든 사항들을 포함합니다. 능숙해질수록 주문을 배우는 속도가 빨라지고, 주문"
+" 실패율이 낮아집니다. 책을 읽거나 주문을 익혀 기술을 수련할 수 있습니다."
 
 #: data/mods/Magiclysm/monster_attacks.json
 msgid "The %1$s impales your %2$s with its trident!"
@@ -205309,12 +205530,12 @@ msgstr ""
 #: data/mods/Magiclysm/professions.json
 msgctxt "profession_male"
 msgid "Novice Necromancer"
-msgstr "견습 강령술사"
+msgstr "견습 네크로맨서"
 
 #: data/mods/Magiclysm/professions.json
 msgctxt "profession_female"
 msgid "Novice Necromancer"
-msgstr "견습 강령술사"
+msgstr "견습 네크로맨서"
 
 #. ~ Profession (male Novice Necromancer) description
 #: data/mods/Magiclysm/professions.json
@@ -205583,7 +205804,7 @@ msgstr ""
 #: data/mods/Magiclysm/scenarios.json
 msgctxt "start_name"
 msgid "Wizard's Retreat Vacation"
-msgstr "마법사의 바캉스 은신처"
+msgstr "마법사의 바캉스 별장"
 
 #: data/mods/Magiclysm/species.json
 msgid "magical beast"
@@ -205598,7 +205819,7 @@ msgstr[0] "드래곤"
 #: data/mods/Magiclysm/species.json
 msgid "lizardfolk"
 msgid_plural "lizardfolk"
-msgstr[0] "파충인"
+msgstr[0] "리자드맨"
 
 #: data/mods/Magiclysm/species.json
 msgid "goblin"
@@ -205611,7 +205832,7 @@ msgstr "마법사의 비밀 지하 연구실"
 
 #: data/mods/Magiclysm/start_locations.json
 msgid "Wizard's lake retreat"
-msgstr "마법사의 연못 은신처"
+msgstr "마법사의 호숫가 별장"
 
 #: data/mods/Magiclysm/terrain.json
 msgid "burnt tree"
@@ -205654,7 +205875,7 @@ msgstr "황량한 땅"
 msgid ""
 "It's dirt.  The ground here is infertile.  Could also be dug out for "
 "construction projects."
-msgstr "흙입니다. 씨앗을 심더라도 뭔가 자라지는 않을 것 같습니다. 또한 건축을 위한 구덩이를 파는데도 쓸 수 있습니다."
+msgstr "흙입니다. 씨앗을 심더라도 뭔가 자라지는 않을 것 같습니다. 파헤쳐서 건물을 지을 수도 있습니다."
 
 #: data/mods/Magiclysm/tool_qualities.json
 msgid "magic mutagen mixer"
@@ -206073,7 +206294,7 @@ msgstr "마법의 빛을 생성합니다."
 
 #: data/mods/Magiclysm/Spells/classless.json
 msgid "Blinding Flash"
-msgstr "눈부신 빛줄기"
+msgstr "눈부신 섬광"
 
 #. ~ Description for {'str': 'Blinding Flash'}
 #. ~ Description for {'str': 'Scroll of Blinding Flash', 'str_pl': 'Scrolls of
@@ -206315,7 +206536,7 @@ msgstr "입에서 산성을 내뿜습니다."
 #: data/mods/Magiclysm/Spells/druid.json
 #: data/mods/Magiclysm/effects/effects.json
 msgid "Vegetative Grasp"
-msgstr "초목의 옭아매기"
+msgstr "초목의 손아귀"
 
 #. ~ Description for {'str': 'Vegetative Grasp'}
 #. ~ Description for {'str': 'Scroll of Vegetative Grasp', 'str_pl': 'Scrolls
@@ -206568,7 +206789,7 @@ msgstr "마법의 돌 투사체를 고속으로 발사합니다."
 
 #: data/mods/Magiclysm/Spells/earthshaper.json
 msgid "Move Earth"
-msgstr "움직이는 대지"
+msgstr "대지 움직이기"
 
 #. ~ Description for {'str': 'Move Earth'}
 #: data/mods/Magiclysm/Spells/earthshaper.json
@@ -206637,7 +206858,7 @@ msgstr "살아있는 암석으로 형성된 갑옷으로 몸을 감싸, 보호�
 
 #: data/mods/Magiclysm/Spells/earthshaper.json
 msgid "Pillar of Stone"
-msgstr "돌의 기둥"
+msgstr "돌 기둥"
 
 #. ~ Description for {'str': 'Pillar of Stone'}
 #. ~ Description for {'str': 'Scroll of Pillar of Stone', 'str_pl': 'Scrolls
@@ -206727,7 +206948,7 @@ msgstr ""
 
 #: data/mods/Magiclysm/Spells/kelvinist.json
 msgid "Point Flare"
-msgstr "포인트 플레어"
+msgstr "발화"
 
 #. ~ Description for {'str': 'Point Flare'}
 #. ~ Description for {'str': 'Scroll of Point Flare', 'str_pl': 'Scrolls of
@@ -206825,7 +207046,7 @@ msgstr "이거 분명히 어느 게임에서 봤었는데요. 단거리 원뿔 �
 
 #: data/mods/Magiclysm/Spells/kelvinist.json
 msgid "Chilling Touch"
-msgstr "서늘한 접촉"
+msgstr "서늘한 손길"
 
 #. ~ Description for {'str': 'Chilling Touch'}
 #. ~ Description for {'str': 'Scroll of Chilling Touch', 'str_pl': 'Scrolls of
@@ -206851,7 +207072,7 @@ msgstr "발을 마법적인 얼음으로 코팅하여, 매끄러운 표면을 �
 
 #: data/mods/Magiclysm/Spells/kelvinist.json
 msgid "Hoary Blast"
-msgstr "눈의 꽃"
+msgstr "눈꽃 폭발"
 
 #. ~ Description for {'str': 'Hoary Blast'}
 #. ~ Description for {'str': 'Scroll of Hoary Blast', 'str_pl': 'Scrolls of
@@ -206966,7 +207187,7 @@ msgstr "짧은 거리를 임의의 방향으로 순간이동합니다."
 
 #: data/mods/Magiclysm/Spells/magus.json
 msgid "Gravity Well"
-msgstr "중력의 샘"
+msgstr "중력 우물"
 
 #. ~ Description for {'str': 'Gravity Well'}
 #. ~ Description for {'str': 'Scroll of Gravity Well', 'str_pl': 'Scrolls of
@@ -206976,11 +207197,11 @@ msgstr "중력의 샘"
 msgid ""
 "Summons a well of gravity with the epicenter at the location.  Deals bashing"
 " damage to all creatures in the affected area."
-msgstr "중심점이 있는 중력의 샘을 불러냅니다.  주변의 영향을 받는 모든 존재에게 타격 피해를 입힙니다."
+msgstr "목표 지점을 중심점으로 하는 중력 우물을 불러냅니다. 효과 범위 내 모든 개체에게 타격 피해를 입힙니다."
 
 #: data/mods/Magiclysm/Spells/magus.json
 msgid "Mana Blast"
-msgstr "마나 블래스트"
+msgstr "마나 폭발"
 
 #. ~ Description for {'str': 'Mana Blast'}
 #. ~ Description for {'str': 'Scroll of Mana Blast', 'str_pl': 'Scrolls of
@@ -206992,7 +207213,7 @@ msgstr "마력을 집중하고 폭발시켜 넓은 범위를 파괴해버립니�
 
 #: data/mods/Magiclysm/Spells/magus.json
 msgid "Mana Bolt"
-msgstr "마나 볼트"
+msgstr "마나 화살"
 
 #. ~ Description for {'str': 'Mana Bolt'}
 #. ~ Description for {'str': 'Scroll of Mana Bolt', 'str_pl': 'Scrolls of Mana
@@ -207121,7 +207342,7 @@ msgstr "추적 볼트"
 msgid ""
 "Fires bolts of mana from your fingertips that home in on randomly selected "
 "targets in range."
-msgstr "범위 내에서 무작위 대상을 추적하는 마나 볼트를 발사합니다."
+msgstr "범위 내에서 무작위 대상을 추적하는 마나 화살을 발사합니다."
 
 #. ~ Description for the sound of spell '{'str': 'Seeker Bolts'}'
 #: data/mods/Magiclysm/Spells/manatouched.json
@@ -207135,7 +207356,7 @@ msgstr "흡혈"
 #. ~ Description for {'str': 'Blood Suck'}
 #: data/mods/Magiclysm/Spells/monsterspells.json
 msgid "Sucks blood from one foe."
-msgstr "적 하나에서 피를 빨아냅니다."
+msgstr "적 하나에게서 피를 빨아냅니다."
 
 #: data/mods/Magiclysm/Spells/monsterspells.json
 msgid "Bear Trap"
@@ -207144,7 +207365,7 @@ msgstr "곰 덫 소환"
 #. ~ Description for Bear Trap
 #: data/mods/Magiclysm/Spells/monsterspells.json
 msgid "A trap that summons bears!  Not what you were expecting, is it?"
-msgstr "말 그대로 곰을 소환하는 함정입니다! 당신이 생각하는 그게 아니었죠?"
+msgstr "말 그대로 곰을 소환하는 덫입니다! 당신이 기대하던 것과 다르죠?"
 
 #. ~ Description for the sound of spell 'Bear Trap'
 #: data/mods/Magiclysm/Spells/monsterspells.json
@@ -207298,7 +207519,7 @@ msgstr "폭풍망치 소환"
 msgid ""
 "Creates a crackling magical warhammer full of lightning to smite your foes "
 "with, and of course, smash things to bits!"
-msgstr "적들을 산산조각 낼 번개로 충만한 마법의 전쟁망치를 만들어냅니다. 물론, 사물들도 박살낼 수 있습니다!"
+msgstr "적들을 후려쳐 산산조각낼 번개로 충만한 마법의 전쟁망치를 만들어냅니다. 물론, 물건도 충분히 잘 부숩니다!"
 
 #: data/mods/Magiclysm/Spells/stormshaper.json
 msgid "Stormshaper Rune"
@@ -207585,7 +207806,7 @@ msgstr "대량의 마나를 불어넣는 과정에서 극도로 피곤해졌습�
 #. ~ Remove message for effect(s) 'Mana Fatigue'.
 #: data/mods/Magiclysm/effects/effects.json
 msgid "The burden of mana fatigue has faded"
-msgstr "마나 탈진의 영향이 사라집니다."
+msgstr "마나 피로의 영향이 사라집니다."
 
 #. ~ Description of effect 'Windrunning'.
 #: data/mods/Magiclysm/effects/effects.json
@@ -207828,7 +208049,7 @@ msgstr "충만감이 사라지고, 당신의 삶이 다시금 공허하고 무�
 
 #: data/mods/Magiclysm/effects/effects.json
 msgid "Debug Feather Fall"
-msgstr "디버그 깃털과도 같은 낙하"
+msgstr "디버그 깃털처럼 가벼운 낙하"
 
 #. ~ Description of effect 'Debug Feather Fall'.
 #: data/mods/Magiclysm/effects/effects.json
@@ -208623,8 +208844,8 @@ msgid ""
 "on an island and a remote looking cabin in the woods.  It includes a map of "
 "the areas."
 msgstr ""
-"학생들에게 호수나 멀리 떨어진 오두막에서 휴가를 보내라고 권하는 화려한 광고지입니다. 이 광고지에는 어느 섬에 있는 탑과 숲속의 고독한 "
-"오두막을 과시하는 사진들이 실려있고, 그 지역에 대한 지도도 포함되어 있습니다."
+"학생들에게 호숫가 별장이나 멀리 떨어진 오두막에서 휴가를 보내라고 권하는 화려한 광고지입니다. 이 광고지에는 어느 섬에 있는 탑과 숲속의"
+" 고독한 오두막을 과시하는 사진들이 실려있고, 그 지역에 대한 지도도 포함되어 있습니다."
 
 #: data/mods/Magiclysm/items/books_lore.json
 msgid "lair map"
@@ -208679,7 +208900,7 @@ msgstr[0] "대형 마나 물약"
 #: data/mods/Magiclysm/items/cast_spell_items.json
 msgid "potion of Cat's Grace"
 msgid_plural "potions of Cat's Grace"
-msgstr[0] "고양이의 우아함 물약"
+msgstr[0] "고양이의 우아함의 물약"
 
 #. ~ Description for {'str': "potion of Cat's Grace", 'str_pl': "potions of
 #. Cat's Grace"}
@@ -208687,12 +208908,12 @@ msgstr[0] "고양이의 우아함 물약"
 msgid ""
 "This is a potion of Cat's Grace.  It will increase your dexterity for 10 "
 "minutes."
-msgstr "고양이의 우아함 물약입니다.  마시면 당신의 민첩이 10분간 향상될 것입니다."
+msgstr "고양이의 우아함의 물약입니다. 마시면 10분 동안 민첩성이 향상될 것입니다."
 
 #: data/mods/Magiclysm/items/cast_spell_items.json
 msgid "potion of Ogre's Strength"
 msgid_plural "potions of Ogre's Strength"
-msgstr[0] "오우거의 힘 물약"
+msgstr[0] "오우거의 힘의 물약"
 
 #. ~ Description for {'str': "potion of Ogre's Strength", 'str_pl': "potions
 #. of Ogre's Strength"}
@@ -208700,12 +208921,12 @@ msgstr[0] "오우거의 힘 물약"
 msgid ""
 "This is a potion of Ogre's Strength.  It will increase your strength for 10 "
 "minutes."
-msgstr "오우거의 힘 물약입니다. 마시면 당신의 힘이 10분간 향상될 것입니다."
+msgstr "오우거의 힘의 물약입니다. 마시면 10분 동안 체력이 향상될 것입니다."
 
 #: data/mods/Magiclysm/items/cast_spell_items.json
 msgid "potion of Eagle's Sight"
 msgid_plural "potions of Eagle's Sight"
-msgstr[0] "매의 눈 물약"
+msgstr[0] "독수리의 시야의 물약"
 
 #. ~ Description for {'str': "potion of Eagle's Sight", 'str_pl': "potions of
 #. Eagle's Sight"}
@@ -208713,12 +208934,12 @@ msgstr[0] "매의 눈 물약"
 msgid ""
 "This is a potion of Eagle's Sight.  It will increase your perception for 10 "
 "minutes."
-msgstr "매의 눈 물약입니다. 마시면 당신의 지각력이 10분간 향상될 것입니다."
+msgstr "독수리의 시야의 물약입니다. 마시면 10분 동안 지각력이 향상될 것입니다."
 
 #: data/mods/Magiclysm/items/cast_spell_items.json
 msgid "potion of Fox's Cunning"
 msgid_plural "potions of Fox's Cunning"
-msgstr[0] "여우의 교활함 물약"
+msgstr[0] "여우의 교활함의 물약"
 
 #. ~ Description for {'str': "potion of Fox's Cunning", 'str_pl': "potions of
 #. Fox's Cunning"}
@@ -208726,7 +208947,7 @@ msgstr[0] "여우의 교활함 물약"
 msgid ""
 "This is a potion of Fox's Cunning.  It will increase your intelligence for "
 "10 minutes."
-msgstr "여우의 교활함 물약입니다. 마시면 당신의 지능이 10분간 향상될 것입니다."
+msgstr "여우의 교활함의 물약입니다. 마시면 10분 동안 지능이 향상될 것입니다."
 
 #: data/mods/Magiclysm/items/cast_spell_items.json
 msgid "zombie voodoo doll"
@@ -210994,7 +211215,7 @@ msgstr[0] "발화의 상급 완드"
 #: data/mods/Magiclysm/items/enchanted_wands.json
 msgid "minor wand of hoary blast"
 msgid_plural "minor wands of hoary blast"
-msgstr[0] "눈의 꽃의 하급 완드"
+msgstr[0] "눈꽃 폭발의 하급 완드"
 
 #. ~ Description for {'str': 'minor wand of hoary blast', 'str_pl': 'minor
 #. wands of hoary blast'}
@@ -211007,17 +211228,17 @@ msgid ""
 "A slender wooden wand with a mana crystal socket at the base that casts a "
 "spell when activated.  This wand casts hoary blast."
 msgstr ""
-"몸체에 마나 결정 소켓이 달린 가느다란 나무 지팡이, 사용하면  마법을 걸 수 있습니다.  이 지팡이는 눈의 꽃을 발사합니다."
+"사용하여 주문을 시전할 수 있도록 마나 결정 소켓이 달린 가느다란 나무 지팡이입니다. 이 지팡이는 눈꽃 폭발 주문을 시전합니다."
 
 #: data/mods/Magiclysm/items/enchanted_wands.json
 msgid "lesser wand of hoary blast"
 msgid_plural "lesser wands of hoary blast"
-msgstr[0] "눈의 꽃의 중급 완드"
+msgstr[0] "눈꽃 폭발의 중급 완드"
 
 #: data/mods/Magiclysm/items/enchanted_wands.json
 msgid "greater wand of hoary blast"
 msgid_plural "greater wands of hoary blast"
-msgstr[0] "눈의 꽃의 상급 완드"
+msgstr[0] "눈꽃 폭발의 상급 완드"
 
 #: data/mods/Magiclysm/items/enchanted_wands.json
 msgid "minor wand of cone of cold"
@@ -211160,7 +211381,7 @@ msgstr[0] "발화의 일회용 상급 완드"
 #: data/mods/Magiclysm/items/enchanted_wands.json
 msgid "disposable minor wand of hoary blast"
 msgid_plural "disposable minor wands of hoary blast"
-msgstr[0] "눈의 꽃의 일회용 하급 완드"
+msgstr[0] "눈꽃 폭발의 일회용 하급 완드"
 
 #. ~ Description for {'str': 'disposable minor wand of hoary blast', 'str_pl':
 #. 'disposable minor wands of hoary blast'}
@@ -211173,17 +211394,17 @@ msgid ""
 "A slender wooden wand with an embedded mana crystal at the base that casts a"
 " spell when activated.  This wand casts hoary blast."
 msgstr ""
-"몸체에 마나 결정 소켓이 달린 가느다란 일회용 나무 지팡이, 사용하면  마법을 걸 수 있습니다.  이 지팡이는 눈의 꽃을 발사합니다."
+"사용하여 주문을 시전할 수 있도록 마나 결정 소켓이 달린 가느다란 일회용 나무 지팡이입니다. 이 지팡이는 눈꽃 폭발 주문을 시전합니다."
 
 #: data/mods/Magiclysm/items/enchanted_wands.json
 msgid "disposable lesser wand of hoary blast"
 msgid_plural "disposable lesser wands of hoary blast"
-msgstr[0] "눈의 꽃의 일회용 중급 완드"
+msgstr[0] "눈꽃 폭발의 일회용 중급 완드"
 
 #: data/mods/Magiclysm/items/enchanted_wands.json
 msgid "disposable greater wand of hoary blast"
 msgid_plural "disposable greater wands of hoary blast"
-msgstr[0] "눈의 꽃의 일회용 상급 완드"
+msgstr[0] "눈꽃 폭발의 일회용 상급 완드"
 
 #: data/mods/Magiclysm/items/enchanted_wands.json
 msgid "disposable minor wand of cone of cold"
@@ -211289,7 +211510,7 @@ msgstr[0] "폭풍망치"
 msgid ""
 "A crackling magical warhammer full of lightning to smite your foes with, and"
 " of course, smash things to bits!"
-msgstr "적들을 산산조각 낼 번개로 충만한 마법의 전쟁망치입니다.  물론, 사물들도 박살낼 수 있습니다!"
+msgstr "적들을 후려쳐 산산조각낼 번개로 충만한 마법의 전쟁망치입니다. 물론, 물건도 충분히 잘 부숩니다!"
 
 #: data/mods/Magiclysm/items/ethereal_items.json
 msgid "Stormfist"
@@ -211932,7 +212153,7 @@ msgstr "놋쇠 표지가 있는 책.  오리칼쿰과 같은 마법의 금속을
 #: data/mods/Magiclysm/items/recipe_books.json
 msgid "Protection from Magical Beasts"
 msgid_plural "copies of Protection from Magical Beasts"
-msgstr[0] "마법 괴수에게서 나를 보호하기"
+msgstr[0] "환수로부터 안전해지는 법"
 
 #. ~ Description for {'str': 'Protection from Magical Beasts', 'str_pl':
 #. 'copies of Protection from Magical Beasts'}
@@ -212102,7 +212323,7 @@ msgstr[0] "마법의 빛 두루마리"
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Blinding Flash"
 msgid_plural "Scrolls of Blinding Flash"
-msgstr[0] "눈부신 빛줄기의 두루마리"
+msgstr[0] "눈부신 섬광의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Ethereal Grasp"
@@ -212117,7 +212338,7 @@ msgstr[0] "보호의 오라 두루마리"
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Vegetative Grasp"
 msgid_plural "Scrolls of Vegetative Grasp"
-msgstr[0] "초목의 옭아매기 두루마리"
+msgstr[0] "초목의 손아귀의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Root Strike"
@@ -212152,12 +212373,12 @@ msgstr[0] "돌주먹의 두루마리"
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Seismic Stomp"
 msgid_plural "Scrolls of Seismic Stomp"
-msgstr[0] "지진의 발구르기 두루마리"
+msgstr[0] "지진의 발구르기의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Stone's Endurance"
 msgid_plural "Scrolls of Stone's Endurance"
-msgstr[0] "돌의 강인함 두루마리"
+msgstr[0] "돌의 강인함의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Shardspray"
@@ -212182,7 +212403,7 @@ msgstr[0] "암석의 화살 두루마리"
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Point Flare"
 msgid_plural "Scrolls of Point Flare"
-msgstr[0] "포인트 플레어의 두루마리"
+msgstr[0] "발화의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Finger Firelighter"
@@ -212217,7 +212438,7 @@ msgstr[0] "서리 분사의 두루마리"
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Chilling Touch"
 msgid_plural "Scrolls of Chilling Touch"
-msgstr[0] "서늘한 접촉의 두루마리"
+msgstr[0] "서늘한 손길의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Glide on Ice"
@@ -212227,7 +212448,7 @@ msgstr[0] "빙상 활주의 두루마리"
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Hoary Blast"
 msgid_plural "Scrolls of Hoary Blast"
-msgstr[0] "눈의 꽃 두루마리"
+msgstr[0] "눈꽃 폭발의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Ice Shield"
@@ -212252,17 +212473,17 @@ msgstr[0] "위상 관문의 두루마리"
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Gravity Well"
 msgid_plural "Scrolls of Gravity Well"
-msgstr[0] "중력의 샘 두루마리"
+msgstr[0] "중력 우물 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Mana Blast"
 msgid_plural "Scrolls of Mana Blast"
-msgstr[0] "마나 블래스트의 두루마리"
+msgstr[0] "마나 폭발의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Mana Bolt"
 msgid_plural "Scrolls of Mana Bolt"
-msgstr[0] "마나 볼트의 두루마리"
+msgstr[0] "마나 화살의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Haste"
@@ -212282,22 +212503,22 @@ msgstr[0] "탈출의 두루마리"
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Cat's Grace"
 msgid_plural "Scrolls of Cat's Grace"
-msgstr[0] "고양이의 우아함 두루마리"
+msgstr[0] "고양이의 우아함의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Eagle's Sight"
 msgid_plural "Scrolls of Eagle's Sight"
-msgstr[0] "독수리의 시야 두루마리"
+msgstr[0] "독수리의 시야의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Ogre's Strength"
 msgid_plural "Scrolls of Ogre's Strength"
-msgstr[0] "오우거의 힘 두루마리"
+msgstr[0] "오우거의 힘의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Fox's Cunning"
 msgid_plural "Scrolls of Fox's Cunning"
-msgstr[0] "여우의 교활함 두루마리"
+msgstr[0] "여우의 교활함의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Jolt"
@@ -212448,12 +212669,12 @@ msgstr "이 두루마리는 스톰셰이퍼들이 흔히 쓰는 번개 폭풍 �
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Sacrificial Regrowth"
 msgid_plural "Scrolls of Sacrificial Regrowth"
-msgstr[0] "희생의 재성장 두루마리"
+msgstr[0] "희생의 재성장의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Sacrificial Healing"
 msgid_plural "Scrolls of Sacrificial Healing"
-msgstr[0] "희생의 치유 두루마리"
+msgstr[0] "희생의 치유의 두루마리"
 
 #: data/mods/Magiclysm/items/spell_scrolls.json
 msgid "Scroll of Stoneskin"
@@ -218299,6 +218520,54 @@ msgstr "영양수치 단순화"
 msgid "Disables vitamin requirements."
 msgstr "비타민 요구사항 관련 요소를 끕니다."
 
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Trans Pride Flag"
+msgstr "트랜스젠더 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist LGBTQ+ Pride Flag"
+msgstr "LGBTQ+ 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Aromantic Pride Flag"
+msgstr "에이로맨틱 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Asexual Pride Flag"
+msgstr "에이섹슈얼 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Bisexual Pride Flag"
+msgstr "바이섹슈얼 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Intersex Pride Flag"
+msgstr "인터섹스 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Lesbian Pride Flag"
+msgstr "레즈비언 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Non-binary Pride Flag"
+msgstr "논바이너리 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Pansexual Pride Flag"
+msgstr "판섹슈얼 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Gay Pride Flag"
+msgstr "게이 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Genderfluid Pride Flag"
+msgstr "젠더플루이드 자긍심 깃발 게양"
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Autism Pride Flag"
+msgstr "자폐 자긍심 깃발 게양"
+
 #: data/mods/pride_flags/flags.json
 msgid "Trans pride flag"
 msgid_plural "Trans pride flags"
@@ -218336,6 +218605,8 @@ msgid ""
 "relationships, and the black and grey represent the sexuality spectrum that "
 "ranges from aro-ace to aro-allosexual."
 msgstr ""
+"에이로맨틱 자긍심 깃발입니다. 녹색과 연두색은 에이로맨티시즘과 에이로맨틱 스펙트럼 전체를, 흰색은 비-로맨스적 관계의 중요성을, 검은색과"
+" 회색은 에이로맨틱-에이섹슈얼로부터 에이로맨틱-알로섹슈얼까지의 범주를 포괄하는 성애 스펙트럼을 상징합니다."
 
 #: data/mods/pride_flags/flags.json
 msgid "Asexual pride flag"
@@ -218347,7 +218618,7 @@ msgstr[0] "에이섹슈얼 자긍심 깃발"
 msgid ""
 "An asexual pride flag.  The black represents total asexuality, the grey "
 "represents demisexuals and grey-asexuals, the white represents allies, and "
-"the purple represents community "
+"the purple represents community."
 msgstr ""
 "에이섹슈얼 자긍심 깃발입니다. 검은색은 무성애를, 회색은 유성애와 무성애의 사이 집단을, 흰색은 유성애를, 보라색은 공동체를 상징합니다."
 
@@ -218390,6 +218661,8 @@ msgid ""
 "to womanhood, pink represents serenity and peace, and the dark rose "
 "represents feminimity."
 msgstr ""
+"레즈비언 자긍심 깃발입니다. 어두운 주황색은 젠더에 대한 비순응을, 주황색은 독립성을, 흰색은 여성들과의 특별한 관계를, 분홍색은 평온과"
+" 평화를, 검은 장미는 여성성을 상징합니다."
 
 #: data/mods/pride_flags/flags.json
 msgid "Non-binary pride flag"
@@ -218403,6 +218676,8 @@ msgid ""
 "the gender binary, white represents those with multiple genders, purple for "
 "those with a mix of both male and female, and black for agender individuals."
 msgstr ""
+"논바이너리 자긍심 깃발입니다. 노란색은 스스로를 젠더 이분법 이외로 정의하는 이들을, 흰색은 스스로를 여러 젠더로 정의하는 이들을, "
+"보라색은 남성과 여성의 혼합을, 검은색은 에이젠더 개인을 상징합니다."
 
 #: data/mods/pride_flags/flags.json
 msgid "Pansexual pride flag"
@@ -218431,6 +218706,8 @@ msgid ""
 "otherwise likely to be traditionally left out; the blues represent pure "
 "love, strength, and diversity."
 msgstr ""
+"게이 자긍심 깃발입니다. 녹색은 치유와 즐거움을, 흰 줄무늬는 트랜스젠더, 논바이너리, 인터섹스 및 기타 소외계층을, 푸른색은 순수한 "
+"사랑, 힘, 다양성을 상징합니다."
 
 #: data/mods/pride_flags/flags.json
 msgid "Genderfluid pride flag"
@@ -218458,13 +218735,382 @@ msgid ""
 "The autistic pride flag.  Gold middle band refers to the elemental symbol of"
 " gold (AU) which is used in the autistic community.  The gradient refers to "
 "the Pride Movement.  Red originated as a protest to the `light it up blue` "
-"campaign, which was denounced by the autistic community.  In color theory, "
-"green is the complimentary color to red.  The infinity sign is a symbol long"
-" used in the wider autistic and wider neurodiverse community."
+"campaign, which was denounced by the autistic community.  The infinity sign "
+"is a symbol long used in the wider autistic and wider neurodiverse "
+"community."
 msgstr ""
 "자폐 자긍심 깃발입니다. 중앙의 금색 띠는 자폐 공동체에서 사용되는 금의 원소 기호(Au)를 상징합니다. 무지개색은 자긍심 운동을 "
-"상징합니다. 빨간색은 자폐 권리 운동에 의해 격렬하게 공격받은 '파란 빛을 밝혀요' 캠페인에 대한 저항을 상징합니다. 색상이론에서 "
-"초록색은 빨간색의 보색입니다. 무한 표식은 자폐 및 신경다양성 공동체에서 널리 사용되어온 상징입니다."
+"상징합니다. 빨간색은 자폐 권리 운동에 의해 격렬하게 공격받은 '파란 빛을 밝혀요' 캠페인에 대한 저항을 상징합니다. 무한 표식은 자폐 "
+"및 신경다양성 공동체에서 널리 사용되어온 상징입니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Trans pride flag"
+msgstr "트랜스젠더 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Trans pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the blue, pink, and white of a transgender"
+" pride flag.  The blue represents transmascs, the pink represents "
+"transfemmes, and the white represents non-binary individuals."
+msgstr ""
+"푸른색, 분홍색, 흰색으로 이뤄진 트랜스젠더 자긍심 깃발이 휘날리고 있는 오래된 금속 깃대입니다. 푸른색은 트랜스남성, 분홍색은 "
+"트랜스여성, 흰색은 논바이너리를 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Trans pride flag"
+msgstr "트랜스젠더 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Trans pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the blue, pink, and white of a "
+"transgender pride flag.  The blue represents transmascs, the pink represents"
+" transfemmes, and the white represents non-binary individuals."
+msgstr ""
+"푸른색, 분홍색, 흰색으로 이뤄진 트랜스젠더 자긍심 깃발이 휘날리고 있는 간이 깃대입니다. 푸른색은 트랜스남성, 분홍색은 트랜스여성, "
+"흰색은 논바이너리를 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with LGBTQ+ pride flag"
+msgstr "LGBTQ+ 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with LGBTQ+ pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the classic rainbow hues of an LGBTQ+ "
+"pride flag.  The rainbow of colors represents the rainbow of individuals "
+"throughout the community."
+msgstr ""
+"무지개색으로 이뤄진 LGBTQ+ 공동체를 상징하는 전통적인 자긍심 깃발이 휘날리는 오래된 금속 깃대입니다. 무지개색은 공동체 전체 "
+"구성원의 다양성을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with LGBTQ+ pride flag"
+msgstr "LGBTQ+ 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with LGBTQ+ pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the classic rainbow hues of an "
+"LGBTQ+ pride flag.  The rainbow of colors represents the rainbow of "
+"individuals throughout the community."
+msgstr ""
+"무지개색으로 이뤄진 LGBTQ+ 공동체를 상징하는 전통적인 자긍심 깃발이 휘날리는 간이 깃대입니다. 무지개색은 공동체 전체 구성원의 "
+"다양성을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Aromantic pride flag"
+msgstr "에이로맨틱 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Aromantic pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying an aromantic pride flag displaying greens,"
+" white, black and grey.  The greens represent aromanticism and the aro-"
+"spectrum as a whole, the white represents the importance of non-romantic "
+"relationships, and the black and grey represent the sexuality spectrum that "
+"ranges from aro-ace to aro-allosexual."
+msgstr ""
+"녹색, 연두색, 흰색, 검은색, 회색으로 이뤄진 에이로맨틱 자긍심 깃발이 휘날리는 오래된 금속 깃대입니다. 녹색과 연두색은 "
+"에이로맨티시즘과 에이로맨틱 스펙트럼 전체를, 흰색은 비-로맨스적 관계의 중요성을, 검은색과 회색은 에이로맨틱-에이섹슈얼로부터 에이로맨틱-"
+"알로섹슈얼까지의 범주를 포괄하는 성애 스펙트럼을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Aromantic pride flag"
+msgstr "에이로맨틱 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Aromantic pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying an aromantic pride flag "
+"displaying greens, white, black and grey.  The greens represent aromanticism"
+" and the aro-spectrum as a whole, the white represents the importance of "
+"non-romantic relationships, and the black and grey represent the sexuality "
+"spectrum that ranges from aro-ace to aro-allosexual."
+msgstr ""
+"녹색, 연두색, 흰색, 검은색, 회색으로 이뤄진 에이로맨틱 자긍심 깃발이 휘날리는 간이 깃대입니다. 녹색과 연두색은 에이로맨티시즘과 "
+"에이로맨틱 스펙트럼 전체를, 흰색은 비-로맨스적 관계의 중요성을, 검은색과 회색은 에이로맨틱-에이섹슈얼로부터 에이로맨틱-알로섹슈얼까지의 "
+"범주를 포괄하는 성애 스펙트럼을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Asexual pride flag"
+msgstr "에이섹슈얼 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Asexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the black, grey, white and purple tones of"
+" an asexual pride flag.  The black represents total asexuality, the grey "
+"represents demisexuals and grey-asexuals, the white represents allies, and "
+"the purple represents community."
+msgstr ""
+"검은색, 회색, 흰색, 보라색 줄무늬로 이뤄진 에이섹슈얼 자긍심 깃발이 휘날리는 오래된 금속 깃대입니다. 검은색은 무성애를, 회색은 "
+"유성애와 무성애의 사이 집단을, 흰색은 유성애를, 보라색은 공동체를 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Asexual pride flag"
+msgstr "에이섹슈얼 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Asexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the black, grey, white and "
+"purple tones of an asexual pride flag.  The black represents total "
+"asexuality, the grey represents demisexuals and grey-asexuals, the white "
+"represents allies, and the purple represents community."
+msgstr ""
+"검은색, 회색, 흰색, 보라색 줄무늬로 이뤄진 에이섹슈얼 자긍심 깃발이 휘날리는 간이 깃대입니다. 검은색은 무성애를, 회색은 유성애와 "
+"무성애의 사이 집단을, 흰색은 유성애를, 보라색은 공동체를 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Bisexual pride flag"
+msgstr "바이섹슈얼 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Bisexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying a bisexual pride flag, showing blue and "
+"pink with purple in-between.  The pink represents attraction to the same "
+"sex, the blue represents attraction to the opposite sex, and the purple "
+"overlap represents the combination of both."
+msgstr ""
+"푸른색과 분홍색 사이에 보라색이 채워진 바이섹슈얼 자긍심 깃발이 휘날리고 있는 오래된 금속 깃대입니다. 분홍색은 동성애를, 푸른색은 "
+"이성애를, 보라색은 양쪽 모두에게 성적 매력을 느끼는 양성애를 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Bisexual pride flag"
+msgstr "바이섹슈얼 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Bisexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying a bisexual pride flag, showing "
+"blue and pink with purple in-between.  The pink represents attraction to the"
+" same sex, the blue represents attraction to the opposite sex, and the "
+"purple overlap represents the combination of both."
+msgstr ""
+"푸른색과 분홍색 사이에 보라색이 채워진 바이섹슈얼 자긍심 깃발이 휘날리고 있는 간이 깃대입니다. 분홍색은 동성애를, 푸른색은 이성애를, "
+"보라색은 양쪽 모두에게 성적 매력을 느끼는 양성애를 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Intersex pride flag"
+msgstr "인터섹스 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Intersex pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the intersex pride flag, a yellow field "
+"with a purple ring.  The center circle symbolizes wholeness and "
+"completeness."
+msgstr ""
+"노란색 바탕에 보라색 원이 그려진 인터섹스 자긍심 깃발이 휘날리고 있는 오래된 금속 깃대입니다. 중심부의 원은 완전성과 완결성을 "
+"상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Intersex pride flag"
+msgstr "인터섹스 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Intersex pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying an intersex pride flag, a yellow"
+" field with a purple ring.  The center circle symbolizes wholeness and "
+"completeness."
+msgstr ""
+"노란색 바탕에 보라색 원이 그려진 인터섹스 자긍심 깃발이 휘날리고 있는 간이 깃대입니다. 중심부의 원은 완전성과 완결성을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Lesbian pride flag"
+msgstr "레즈비언 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Lesbian pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the oranges, rosen shades, and white of a "
+"lesbian pride flag.  The dark orange represents gender non-conformity, the "
+"orange represents independence, the white represents unique relationships to"
+" womanhood, pink represents serenity and peace, and the dark rose represents"
+" feminimity."
+msgstr ""
+"주황색, 장미 그림자, 흰색으로 이뤄진 레즈비언 자긍심 깃발이 휘날리고 있는 오래된 금속 깃대입니다. 어두운 주황색은 젠더에 대한 "
+"비순응을, 주황색은 독립성을, 흰색은 여성들과의 특별한 관계를, 분홍색은 평온과 평화를, 검은 장미는 여성성을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Lesbian pride flag"
+msgstr "레즈비언 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Lesbian pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the oranges, rosen shades, and "
+"white of a lesbian pride flag.  The dark orange represents gender non-"
+"conformity, the orange represents independence, the white represents unique "
+"relationships to womanhood, pink represents serenity and peace, and the dark"
+" rose represents feminimity."
+msgstr ""
+"주황색, 장미 그림자, 흰색으로 이뤄진 레즈비언 자긍심 깃발이 휘날리고 있는 간이 깃대입니다. 어두운 주황색은 젠더에 대한 비순응을, "
+"주황색은 독립성을, 흰색은 여성들과의 특별한 관계를, 분홍색은 평온과 평화를, 검은 장미는 여성성을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Non-binary pride flag"
+msgstr "논바이너리 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Non-binary pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying a non-binary pride flag; yellow upon "
+"white, then purple, then black.  Yellow represents those who identify "
+"outside of the gender binary, white represents those with multiple genders, "
+"purple for those with a mix of both male and female, and black for agender "
+"individuals."
+msgstr ""
+"노란색, 흰색, 보라색, 검은색으로 이뤄진 논바이너리 자긍심 깃발이 휘날리고 있는 오래된 금속 깃대입니다. 노란색은 스스로를 젠더 이분법"
+" 이외로 정의하는 이들을, 흰색은 스스로를 여러 젠더로 정의하는 이들을, 보라색은 남성과 여성의 혼합을, 검은색은 에이젠더 개인을 "
+"상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Non-binary pride flag"
+msgstr "논바이너리 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Non-binary pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying a non-binary pride flag; yellow "
+"upon white, then purple, then black.  Yellow represents those who identify "
+"outside of the gender binary, white represents those with multiple genders, "
+"purple for those with a mix of both male and female, and black for agender "
+"individuals."
+msgstr ""
+"노란색, 흰색, 보라색, 검은색으로 이뤄진 논바이너리 자긍심 깃발이 휘날리고 있는 간이 깃대입니다. 노란색은 스스로를 젠더 이분법 이외로"
+" 정의하는 이들을, 흰색은 스스로를 여러 젠더로 정의하는 이들을, 보라색은 남성과 여성의 혼합을, 검은색은 에이젠더 개인을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Pansexual pride flag"
+msgstr "판섹슈얼 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Pansexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the pink, blue, and yellow of a pansexual "
+"pride flag.  Pink represents being attracted to women, blue being attracted "
+"to men, and yellow being attracted to everyone else."
+msgstr ""
+"분홍색, 푸른색, 노란색으로 이뤄진 판섹슈얼 자긍심 깃발이 휘날리고 있는 오래된 금속 깃대입니다. 분홍색은 여성에 대한 성적 끌림을, "
+"푸른색은 남성에 대한 성적 끌림을, 노란색은 제3의 성에 대한 성적 끌림을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Pansexual pride flag"
+msgstr "판섹슈얼 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Pansexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the pink, blue, and yellow of a "
+"pansexual pride flag.  Pink represents being attracted to women, blue being "
+"attracted to men, and yellow being attracted to everyone else."
+msgstr ""
+"분홍색, 푸른색, 노란색으로 이뤄진 판섹슈얼 자긍심 깃발이 휘날리고 있는 간이 깃대입니다. 분홍색은 여성에 대한 성적 끌림을, 푸른색은 "
+"남성에 대한 성적 끌림을, 노란색은 제3의 성에 대한 성적 끌림을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Gay pride flag"
+msgstr "게이 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Gay pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying a men's gay pride flag, with white in "
+"between shades of green and blue.  The greens represent healing and joy; the"
+" white stripe includes people who are transgender, nonbinary, intersex, or "
+"otherwise likely to be traditionally left out; the blues represent pure "
+"love, strength, and diversity."
+msgstr ""
+"녹색과 푸른색의 그림자 사이에 흰색이 칠해진 게이 자긍심 깃발이 휘날리고 있는 오래된 금속 깃대입니다. 녹색은 치유와 즐거움을, 흰 "
+"줄무늬는 트랜스젠더, 논바이너리, 인터섹스 및 기타 소외계층을, 푸른색은 순수한 사랑, 힘, 다양성을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Gay pride flag"
+msgstr "게이 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Gay pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying a men's gay pride flag, with "
+"white in between shades of green and blue.  The greens represent healing and"
+" joy; the white stripe includes people who are transgender, nonbinary, "
+"intersex, or otherwise likely to be traditionally left out; the blues "
+"represent pure love, strength, and diversity."
+msgstr ""
+"녹색과 푸른색의 그림자 사이에 흰색이 칠해진 게이 자긍심 깃발이 휘날리고 있는 간이 깃대입니다. 녹색은 치유와 즐거움을, 흰 줄무늬는 "
+"트랜스젠더, 논바이너리, 인터섹스 및 기타 소외계층을, 푸른색은 순수한 사랑, 힘, 다양성을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Genderfluid pride flag"
+msgstr "젠더플루이드 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Genderfluid pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the pink, white, purple, black and blue "
+"genderfluid pride flag.  The pink represents feminimity, the white "
+"represents lack of gender, the purple represents androgyny, the black "
+"represents all other genders, and the blue represents masculinity."
+msgstr ""
+"분홍색, 흰색, 포라색, 검은색, 푸른색으로 이뤄진 젠더플루이드 자긍심 깃발이 휘날리고 있는 오래된 금속 깃발입니다. 분홍색은 여성성을,"
+" 흰색은 젠더의 부재를, 보라색은 여성성과 남성성의 조합을, 검은색은 기타 모든 젠더를, 푸른색은 남성성을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Genderfluid pride flag"
+msgstr "젠더플루이드 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Genderfluid pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the pink, white, purple, black "
+"and blue genderfluid pride flag.  The pink represents feminimity, the white "
+"represents lack of gender, the purple represents androgyny, the black "
+"represents all other genders, and the blue represents masculinity."
+msgstr ""
+"분홍색, 흰색, 포라색, 검은색, 푸른색으로 이뤄진 젠더플루이드 자긍심 깃발이 휘날리고 있는 간이 깃대입니다. 분홍색은 여성성을, 흰색은"
+" 젠더의 부재를, 보라색은 여성성과 남성성의 조합을, 검은색은 기타 모든 젠더를, 푸른색은 남성성을 상징합니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Autism pride flag"
+msgstr "자폐 자긍심 깃발이 걸린 깃대"
+
+#. ~ Description for flagpole with Autism pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the infinity symbol upon an autism pride "
+"flag.  Gold middle band refers to the elemental symbol of gold (AU) which is"
+" used in the autistic community.  The gradient refers to the Pride Movement."
+"  Red originated as a protest to the `light it up blue` campaign, which was "
+"denounced by the autistic community.  The infinity sign is a symbol long "
+"used in the wider autistic and wider neurodiverse community."
+msgstr ""
+"자폐 자긍심 깃발이 휘날리고 있는 오래된 금속 깃대입니다. 중앙의 금색 띠는 자폐 공동체에서 사용되는 금의 원소 기호(Au)를 "
+"상징합니다. 무지개색은 자긍심 운동을 상징합니다. 빨간색은 자폐 권리 운동에 의해 격렬하게 공격받은 '파란 빛을 밝혀요' 캠페인에 대한 "
+"저항을 상징합니다. 무한 표식은 자폐 및 신경다양성 공동체에서 널리 사용되어온 상징입니다."
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Autism pride flag"
+msgstr "자폐 자긍심 깃발이 걸린 나무 깃대"
+
+#. ~ Description for wooden flagpole with Autism pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the infinity symbol upon an "
+"autism pride flag.  Gold middle band refers to the elemental symbol of gold "
+"(AU) which is used in the autistic community.  The gradient refers to the "
+"Pride Movement.  Red originated as a protest to the `light it up blue` "
+"campaign, which was denounced by the autistic community.  The infinity sign "
+"is a symbol long used in the wider autistic and wider neurodiverse "
+"community."
+msgstr ""
+"자폐 자긍심 깃발이 휘날리고 있는 간이 깃대입니다. 중앙의 금색 띠는 자폐 공동체에서 사용되는 금의 원소 기호(Au)를 상징합니다. "
+"무지개색은 자긍심 운동을 상징합니다. 빨간색은 자폐 권리 운동에 의해 격렬하게 공격받은 '파란 빛을 밝혀요' 캠페인에 대한 저항을 "
+"상징합니다. 무한 표식은 자폐 및 신경다양성 공동체에서 널리 사용되어온 상징입니다."
 
 #: data/mods/pride_flags/modinfo.json
 msgid "Pride Flags for BN"
@@ -218474,6 +219120,178 @@ msgstr "밝은밤용 자긍심 깃발"
 #: data/mods/pride_flags/modinfo.json
 msgid "Pride flags for Bright Nights, for all your roleplaying needs."
 msgstr "밝은밤에 자긍심 깃발을 추가합니다. 롤플레이에 사용하세요."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Trans pride flag"
+msgstr "차량용 트랜스젠더 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Trans pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A transgender pride flag, fluttering in the breeze atop a vehicle.  The blue"
+" represents transmascs, the pink represents transfemmes, and the white "
+"represents non-binary individuals."
+msgstr ""
+"차량에 장착되어 바람에 휘날리는 트랜스젠더 자긍심 깃발입니다. 푸른색은 트랜스남성, 분홍색은 트랜스여성, 흰색은 논바이너리를 상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted LGBTQ+ pride flag"
+msgstr "차량용 LGBTQ+ 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted LGBTQ+ pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An LGBTQ+ pride flag, fluttering in the breeze atop a vehicle.  The rainbow "
+"of colors represents the rainbow of individuals throughout the community."
+msgstr "차량에 장착되어 바람에 휘날리는 LGBTQ+ 자긍심 깃발입니다. 무지개색은 공동체 전체 구성원의 다양성을 상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Aromantic pride flag"
+msgstr "차량용 에이로맨틱 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Aromantic pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An aromantic pride flag, fluttering in the breeze atop a vehicle.  The "
+"greens represent aromanticism and the aro-spectrum as a whole, the white "
+"represents the importance of non-romantic relationships, and the black and "
+"grey represent the sexuality spectrum that ranges from aro-ace to aro-"
+"allosexual."
+msgstr ""
+"차량에 장착되어 바람에 휘날리는 에이로맨틱 자긍심 깃발입니다. 녹색과 연두색은 에이로맨티시즘과 에이로맨틱 스펙트럼 전체를, 흰색은 "
+"비-로맨스적 관계의 중요성을, 검은색과 회색은 에이로맨틱-에이섹슈얼로부터 에이로맨틱-알로섹슈얼까지의 범주를 포괄하는 성애 스펙트럼을 "
+"상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Asexual pride flag"
+msgstr "차량용 에이섹슈얼 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Asexual pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An asexual pride flag, fluttering in the breeze atop a vehicle.  The black "
+"represents total asexuality, the grey represents demisexuals and grey-"
+"asexuals, the white represents allies, and the purple represents community."
+msgstr ""
+"차량에 장착되어 바람에 휘날리는 에이섹슈얼 자긍심 깃발입니다. 검은색은 무성애를, 회색은 유성애와 무성애의 사이 집단을, 흰색은 "
+"유성애를, 보라색은 공동체를 상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Bisexual pride flag"
+msgstr "차량용 바이섹슈얼 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Bisexual pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A bisexual pride flag, fluttering in the breeze atop a vehicle.  The pink "
+"represents attraction to the same sex, the blue represents attraction to the"
+" opposite sex, and the purple overlap represents the combination of both."
+msgstr ""
+"차량에 장착되어 바람에 휘날리는 바이섹슈얼 자긍심 깃발입니다. 분홍색은 동성애를, 푸른색은 이성애를, 보라색은 양쪽 모두에게 성적 매력을"
+" 느끼는 양성애를 상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Intersex pride flag"
+msgstr "차량용 인터섹스 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Intersex pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An intersex pride flag, fluttering in the breeze atop a vehicle.  The center"
+" circle symbolizes wholeness and completeness."
+msgstr "차량에 장착되어 바람에 휘날리는 인터섹스 자긍심 깃발입니다. 중심부의 원은 완전성과 완결성을 상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Lesbian pride flag"
+msgstr "차량용 레즈비언 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Lesbian pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A lesbian pride flag, fluttering in the breeze atop a vehicle.  The dark "
+"orange represents gender non-conformity, the orange represents independence,"
+" the white represents unique relationships to womanhood, pink represents "
+"serenity and peace, and the dark rose represents feminimity."
+msgstr ""
+"차량에 장착되어 바람에 휘날리는 레즈비언 자긍심 깃발입니다. 어두운 주황색은 젠더에 대한 비순응을, 주황색은 독립성을, 흰색은 여성들과의"
+" 특별한 관계를, 분홍색은 평온과 평화를, 검은 장미는 여성성을 상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Non-binary pride flag"
+msgstr "차량용 논바이너리 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Non-binary pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A non-binary pride flag, fluttering in the breeze atop a vehicle.  Yellow "
+"represents those who identify outside of the gender binary, white represents"
+" those with multiple genders, purple for those with a mix of both male and "
+"female, and black for agender individuals."
+msgstr ""
+"차량에 장착되어 바람에 휘날리는 논바이너리 자긍심 깃발입니다. 노란색은 스스로를 젠더 이분법 이외로 정의하는 이들을, 흰색은 스스로를 "
+"여러 젠더로 정의하는 이들을, 보라색은 남성과 여성의 혼합을, 검은색은 에이젠더 개인을 상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Pansexual pride flag"
+msgstr "차량용 판섹슈얼 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Pansexual pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A pansexual pride flag, fluttering in the breeze atop a vehicle.  Pink "
+"represents being attracted to women, blue being attracted to men, and yellow"
+" being attracted to everyone else."
+msgstr ""
+"차량에 장착되어 바람에 휘날리는 판섹슈얼 자긍심 깃발입니다. 분홍색은 여성에 대한 성적 끌림을, 푸른색은 남성에 대한 성적 끌림을, "
+"노란색은 제3의 성에 대한 성적 끌림을 상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Gay pride flag"
+msgstr "차량용 게이 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Gay pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A men's gay pride flag, fluttering in the breeze atop a vehicle.  The greens"
+" represent healing and joy; the white stripe includes people who are "
+"transgender, nonbinary, intersex, or otherwise likely to be traditionally "
+"left out; the blues represent pure love, strength, and diversity."
+msgstr ""
+"차량에 장착되어 바람에 휘날리는 게이 자긍심 깃발입니다. 녹색은 치유와 즐거움을, 흰 줄무늬는 트랜스젠더, 논바이너리, 인터섹스 및 기타"
+" 소외계층을, 푸른색은 순수한 사랑, 힘, 다양성을 상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Genderfluid pride flag"
+msgstr "차량용 젠더플루이드 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Genderfluid pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A genderfluid pride flag, fluttering in the breeze atop a vehicle.  The pink"
+" represents feminimity, the white represents lack of gender, the purple "
+"represents androgyny, the black represents all other genders, and the blue "
+"represents masculinity."
+msgstr ""
+"차량에 장착되어 바람에 휘날리는 게이 자긍심 깃발입니다. 녹색은 치유와 즐거움을, 흰 줄무늬는 트랜스젠더, 논바이너리, 인터섹스 및 기타"
+" 소외계층을, 푸른색은 순수한 사랑, 힘, 다양성을 상징합니다."
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Autism pride flag"
+msgstr "차량용 자폐 자긍심 깃발"
+
+#. ~ Description for {'str': 'mounted Autism pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An autism pride flag, fluttering in the breeze atop a vehicle.  Gold middle "
+"band refers to the elemental symbol of gold (AU) which is used in the "
+"autistic community.  The gradient refers to the Pride Movement.  Red "
+"originated as a protest to the `light it up blue` campaign, which was "
+"denounced by the autistic community.  The infinity sign is a symbol long "
+"used in the wider autistic and wider neurodiverse community."
+msgstr ""
+"차량에 장착되어 바람에 휘날리는 자폐 자긍심 깃발입니다. 중앙의 금색 띠는 자폐 공동체에서 사용되는 금의 원소 기호(Au)를 상징합니다."
+" 무지개색은 자긍심 운동을 상징합니다. 빨간색은 자폐 권리 운동에 의해 격렬하게 공격받은 '파란 빛을 밝혀요' 캠페인에 대한 저항을 "
+"상징합니다. 무한 표식은 자폐 및 신경다양성 공동체에서 널리 사용되어온 상징입니다."
 
 #: data/mods/rural_biome/modinfo.json
 msgid "Rural-Only Mapgen"
@@ -262916,7 +263734,7 @@ msgstr "%s(을)를 수동으로 순환시킵니다."
 #: src/ranged.cpp
 #, c-format
 msgid "You fire your %s, %s"
-msgstr "%s, %s(을)를 발사합니다."
+msgstr "%s (을)를 발사합니다. %s"
 
 #: src/ranged.cpp
 #, c-format
@@ -263117,10 +263935,6 @@ msgstr "콰-콰웅!"
 #: src/ranged.cpp
 msgid "Brrrip!"
 msgstr "픕!"
-
-#: src/ranged.cpp
-msgid "plink!"
-msgstr "핑!"
 
 #: src/ranged.cpp
 msgid "Brrrap!"

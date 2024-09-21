@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-09-14 01:09+0000\n"
+"POT-Creation-Date: 2024-09-21 01:10+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2024\n"
 "Language-Team: Ukrainian (Ukraine) (https://app.transifex.com/bn-team/teams/113585/uk_UA/)\n"
 "MIME-Version: 1.0\n"
@@ -4304,7 +4304,7 @@ msgid ""
 "smash to remove."
 msgstr ""
 
-#: data/json/construction.json
+#: data/json/construction.json data/mods/pride_flags/construction.json
 msgid "Can be deconstructed without tools."
 msgstr ""
 
@@ -4412,6 +4412,12 @@ msgstr ""
 msgid ""
 "Mark a spot for target practice.  Firing will automatically target the first"
 " practice target location found in gun range, if no enemies are around."
+msgstr ""
+
+#: data/json/construction.json
+msgid ""
+"Firing will automatically target the first practice target found in gun "
+"range, if no enemies are around."
 msgstr ""
 
 #: data/json/construction.json
@@ -5417,11 +5423,27 @@ msgid "Mark practice target"
 msgstr ""
 
 #: data/json/construction_group.json
+msgid "Build steel target"
+msgstr ""
+
+#: data/json/construction_group.json
 msgid "Mine Downstair"
 msgstr ""
 
 #: data/json/construction_group.json
 msgid "Mine Upstair"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Build Wooden Flagpole"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Hoist American Flag"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Hoist Jolly Roger"
 msgstr ""
 
 #: data/json/construction_group.json
@@ -28211,6 +28233,7 @@ msgstr ""
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/mapgen/city_blocks/urban_37_office_tower_beehive.json
 #: data/json/obsoletion/uncategorized.json data/mods/Magiclysm/furniture.json
+#: data/mods/pride_flags/furniture.json
 msgid "metal screeching!"
 msgstr ""
 
@@ -28240,6 +28263,7 @@ msgstr ""
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/mapgen/city_blocks/urban_37_office_tower_beehive.json
 #: data/json/obsoletion/uncategorized.json data/mods/Magiclysm/furniture.json
+#: data/mods/pride_flags/furniture.json
 msgid "clang!"
 msgstr ""
 
@@ -28700,7 +28724,7 @@ msgstr ""
 #: data/json/furniture_and_terrain/terrain-walls.json
 #: data/json/furniture_and_terrain/terrain-windows.json
 #: data/json/obsoletion/uncategorized.json data/mods/Magiclysm/terrain.json
-#: data/mods/No_Hope/terrain.json
+#: data/mods/No_Hope/terrain.json data/mods/pride_flags/furniture.json
 msgid "whack!"
 msgstr ""
 
@@ -28959,7 +28983,8 @@ msgstr ""
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/obsoletion/uncategorized.json
 #: data/mods/CRT_EXPANSION/constructions/crt_terrain.json
-#: data/mods/Magiclysm/terrain.json src/mapdata.cpp
+#: data/mods/Magiclysm/terrain.json data/mods/pride_flags/furniture.json
+#: src/mapdata.cpp
 msgid "crunch!"
 msgstr ""
 
@@ -30440,7 +30465,8 @@ msgstr ""
 
 #. ~ Description for obelisk
 #: data/json/furniture_and_terrain/furniture-graves.json
-msgid "Monument to pride."
+msgid ""
+"A monument to the fallen, from a time when the dead weren't so restless."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-graves.json
@@ -31131,12 +31157,51 @@ msgid "Jump!  Jump!  Dive!"
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
-msgid "target"
+msgid "steel target"
 msgstr ""
 
-#. ~ Description for target
+#. ~ Description for steel target
 #: data/json/furniture_and_terrain/furniture-recreation.json
-msgid "A metal shooting target in the rough shape of a human."
+msgid ""
+"A metal shooting target in the rough shape of a human, that tips over when "
+"shot.  Or you could examine it to tip it over by hand, if you want."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "clatter!"
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-recreation.json src/ranged.cpp
+msgid "plink!"
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "Tip steel target over"
+msgstr ""
+
+#. ~ Message for furniture 'steel target'
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "You knock the steel target over.  How fun."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "toppled steel target"
+msgstr ""
+
+#. ~ Description for toppled steel target
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid ""
+"A metal shooting target in the rough shape of a human.  It's been knocked "
+"over by a good hit, examine it to stand it back up."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "Stand steel target upright"
+msgstr ""
+
+#. ~ Message for furniture 'toppled steel target'
+#: data/json/furniture_and_terrain/furniture-recreation.json
+msgid "You prop the steel target back up."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
@@ -32565,6 +32630,63 @@ msgstr ""
 msgid ""
 "The result of you pouring concrete over mi-go gas emitters.  It's stuck to "
 "the floor.  It can be used as a primitive anvil."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "flagpole"
+msgstr ""
+
+#. ~ Description for flagpole
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"An old metal flagpole, with no flag to fly.  Don't lick it if it's cold out."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "flagpole with American flag"
+msgstr ""
+
+#. ~ Description for flagpole with American flag
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"An old metal flagpole flying an American flag.  A leftover from before the "
+"world ended, you could take it down if you need one for some reason."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "wooden flagpole"
+msgstr ""
+
+#. ~ Description for wooden flagpole
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "A makeshift flagpole constructed from a wooden beam and rope."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "wooden flagpole with American flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with American flag
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "Someone's hoisted an old American flag from this makeshift flagpole."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "flagpole with Jolly Roger"
+msgstr ""
+
+#. ~ Description for flagpole with Jolly Roger
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "An old metal flagpole, now flying a black pirate flag."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "wooden flagpole with Jolly Roger"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Jolly Roger
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "Someone's hoisted a black pirate flag from this makeshift flagpole."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-tools.json
@@ -47418,7 +47540,8 @@ msgstr[3] ""
 
 #. ~ Description for {'str': 'clock'}
 #: data/json/items/generic.json
-msgid "A small mechanical clock, it's stopped at 10:10."
+msgid ""
+"A small mechanical clock.  Tells the time and has an alarm clock feature."
 msgstr ""
 
 #: data/json/items/generic.json
@@ -57491,6 +57614,47 @@ msgstr[3] ""
 #. ~ Description for {'str': 'American flag'}
 #: data/json/items/armor/cloaks.json
 msgid "A large American flag made to fly in even the worst conditions."
+msgstr ""
+
+#: data/json/items/armor/cloaks.json
+msgid "Jolly Roger"
+msgid_plural "Jolly Rogers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'Jolly Roger'}
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag."
+msgstr ""
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting a skull-and-crossbones."
+msgstr ""
+
+#: data/json/items/armor/cloaks.json
+msgid ""
+"A black replica pirate flag, depicting a skull-and-crossbones over an "
+"hourglass."
+msgstr ""
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting a skull over a cutlass."
+msgstr ""
+
+#: data/json/items/armor/cloaks.json
+msgid ""
+"A black replica pirate flag, depicting a skeleton stabbing a heart with a "
+"spear."
+msgstr ""
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting an arm holding a cutlass."
+msgstr ""
+
+#: data/json/items/armor/cloaks.json
+msgid "A black replica pirate flag, depicting a skull."
 msgstr ""
 
 #: data/json/items/armor/cloaks.json
@@ -108127,7 +108291,7 @@ msgstr[3] ""
 #: data/json/items/melee/bludgeons.json
 msgid ""
 "This is a cheap piece of crap imitation of a versatile polearm with a spiked"
-" hammer head, probably used for LARPing"
+" hammer head, probably used for LARPing."
 msgstr ""
 
 #: data/json/items/melee/bludgeons.json
@@ -110142,7 +110306,7 @@ msgstr[3] ""
 msgid ""
 "Long Japanese knives like this more-modern remake were the samurai's backup "
 "weapon, before the advent of the larger wakizashi.  This one doesn't feel "
-"well-balanced"
+"well-balanced."
 msgstr ""
 
 #: data/json/items/melee/swords_and_blades.json
@@ -110731,8 +110895,8 @@ msgstr[3] ""
 #. ~ Description for {'str': 'katana replica'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
-"This is a rare sword from Japan.  While it's got the right edge and weight, "
-"the pommel just snaps off, and the blade seems pretty worn."
+"This is a rare sword from Japan.  While it's got the right edge and balance,"
+" the pommel just snaps off, and the blade seems pretty worn."
 msgstr ""
 
 #: data/json/items/melee/swords_and_blades.json
@@ -122237,7 +122401,7 @@ msgstr[3] ""
 msgid "Oars for a boat."
 msgstr ""
 
-#: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
+#: data/json/items/vehicle/boat.json
 msgid "sail"
 msgid_plural "sails"
 msgstr[0] ""
@@ -122247,7 +122411,22 @@ msgstr[3] ""
 
 #. ~ Description for {'str': 'sail'}
 #: data/json/items/vehicle/boat.json
-msgid "Sails for a boat."
+msgid "A small sail and makeshift rigging for a raft."
+msgstr ""
+
+#: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
+msgid "large sail"
+msgid_plural "large sails"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'large sail'}
+#: data/json/items/vehicle/boat.json
+msgid ""
+"A wooden mast with sails fit for a yacht or sloop, and about as much rigging"
+" as a single sailor can handle."
 msgstr ""
 
 #: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
@@ -188015,6 +188194,22 @@ msgid ""
 msgstr ""
 
 #: data/json/vehicleparts/vehicle_parts.json
+msgid "small sail"
+msgstr ""
+
+#. ~ Description for {'str': 'small sail'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "A sail for a raft, small enough to be foldable."
+msgstr ""
+
+#. ~ Description for {'str': 'large sail'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"Sails and rigging fit for a yacht or sloop, about as large as a single "
+"person can reasonably crew."
+msgstr ""
+
+#: data/json/vehicleparts/vehicle_parts.json
 msgid "hand paddles"
 msgstr ""
 
@@ -188530,6 +188725,24 @@ msgstr ""
 msgid ""
 "A 60L refrigerated tank.  When turned on, it will cool the liquid inside, "
 "extending the time until the food spoils."
+msgstr ""
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "mounted American flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted American flag'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "An American flag, fluttering in the breeze atop a vehicle."
+msgstr ""
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "mounted Jolly Roger"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Jolly Roger'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "A black pirate flag, fluttering in the breeze atop a vehicle."
 msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
@@ -233083,6 +233296,54 @@ msgstr ""
 msgid "Disables vitamin requirements."
 msgstr ""
 
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Trans Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist LGBTQ+ Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Aromantic Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Asexual Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Bisexual Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Intersex Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Lesbian Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Non-binary Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Pansexual Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Gay Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Genderfluid Pride Flag"
+msgstr ""
+
+#: data/mods/pride_flags/construction_group.json
+msgid "Hoist Autism Pride Flag"
+msgstr ""
+
 #: data/mods/pride_flags/flags.json
 msgid "Trans pride flag"
 msgid_plural "Trans pride flags"
@@ -233143,7 +233404,7 @@ msgstr[3] ""
 msgid ""
 "An asexual pride flag.  The black represents total asexuality, the grey "
 "represents demisexuals and grey-asexuals, the white represents allies, and "
-"the purple represents community "
+"the purple represents community."
 msgstr ""
 
 #: data/mods/pride_flags/flags.json
@@ -233272,9 +233533,326 @@ msgid ""
 "The autistic pride flag.  Gold middle band refers to the elemental symbol of"
 " gold (AU) which is used in the autistic community.  The gradient refers to "
 "the Pride Movement.  Red originated as a protest to the `light it up blue` "
-"campaign, which was denounced by the autistic community.  In color theory, "
-"green is the complimentary color to red.  The infinity sign is a symbol long"
-" used in the wider autistic and wider neurodiverse community."
+"campaign, which was denounced by the autistic community.  The infinity sign "
+"is a symbol long used in the wider autistic and wider neurodiverse "
+"community."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Trans pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Trans pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the blue, pink, and white of a transgender"
+" pride flag.  The blue represents transmascs, the pink represents "
+"transfemmes, and the white represents non-binary individuals."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Trans pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Trans pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the blue, pink, and white of a "
+"transgender pride flag.  The blue represents transmascs, the pink represents"
+" transfemmes, and the white represents non-binary individuals."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with LGBTQ+ pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with LGBTQ+ pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the classic rainbow hues of an LGBTQ+ "
+"pride flag.  The rainbow of colors represents the rainbow of individuals "
+"throughout the community."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with LGBTQ+ pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with LGBTQ+ pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the classic rainbow hues of an "
+"LGBTQ+ pride flag.  The rainbow of colors represents the rainbow of "
+"individuals throughout the community."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Aromantic pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Aromantic pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying an aromantic pride flag displaying greens,"
+" white, black and grey.  The greens represent aromanticism and the aro-"
+"spectrum as a whole, the white represents the importance of non-romantic "
+"relationships, and the black and grey represent the sexuality spectrum that "
+"ranges from aro-ace to aro-allosexual."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Aromantic pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Aromantic pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying an aromantic pride flag "
+"displaying greens, white, black and grey.  The greens represent aromanticism"
+" and the aro-spectrum as a whole, the white represents the importance of "
+"non-romantic relationships, and the black and grey represent the sexuality "
+"spectrum that ranges from aro-ace to aro-allosexual."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Asexual pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Asexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the black, grey, white and purple tones of"
+" an asexual pride flag.  The black represents total asexuality, the grey "
+"represents demisexuals and grey-asexuals, the white represents allies, and "
+"the purple represents community."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Asexual pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Asexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the black, grey, white and "
+"purple tones of an asexual pride flag.  The black represents total "
+"asexuality, the grey represents demisexuals and grey-asexuals, the white "
+"represents allies, and the purple represents community."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Bisexual pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Bisexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying a bisexual pride flag, showing blue and "
+"pink with purple in-between.  The pink represents attraction to the same "
+"sex, the blue represents attraction to the opposite sex, and the purple "
+"overlap represents the combination of both."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Bisexual pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Bisexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying a bisexual pride flag, showing "
+"blue and pink with purple in-between.  The pink represents attraction to the"
+" same sex, the blue represents attraction to the opposite sex, and the "
+"purple overlap represents the combination of both."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Intersex pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Intersex pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the intersex pride flag, a yellow field "
+"with a purple ring.  The center circle symbolizes wholeness and "
+"completeness."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Intersex pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Intersex pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying an intersex pride flag, a yellow"
+" field with a purple ring.  The center circle symbolizes wholeness and "
+"completeness."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Lesbian pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Lesbian pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the oranges, rosen shades, and white of a "
+"lesbian pride flag.  The dark orange represents gender non-conformity, the "
+"orange represents independence, the white represents unique relationships to"
+" womanhood, pink represents serenity and peace, and the dark rose represents"
+" feminimity."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Lesbian pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Lesbian pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the oranges, rosen shades, and "
+"white of a lesbian pride flag.  The dark orange represents gender non-"
+"conformity, the orange represents independence, the white represents unique "
+"relationships to womanhood, pink represents serenity and peace, and the dark"
+" rose represents feminimity."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Non-binary pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Non-binary pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying a non-binary pride flag; yellow upon "
+"white, then purple, then black.  Yellow represents those who identify "
+"outside of the gender binary, white represents those with multiple genders, "
+"purple for those with a mix of both male and female, and black for agender "
+"individuals."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Non-binary pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Non-binary pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying a non-binary pride flag; yellow "
+"upon white, then purple, then black.  Yellow represents those who identify "
+"outside of the gender binary, white represents those with multiple genders, "
+"purple for those with a mix of both male and female, and black for agender "
+"individuals."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Pansexual pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Pansexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the pink, blue, and yellow of a pansexual "
+"pride flag.  Pink represents being attracted to women, blue being attracted "
+"to men, and yellow being attracted to everyone else."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Pansexual pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Pansexual pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the pink, blue, and yellow of a "
+"pansexual pride flag.  Pink represents being attracted to women, blue being "
+"attracted to men, and yellow being attracted to everyone else."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Gay pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Gay pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying a men's gay pride flag, with white in "
+"between shades of green and blue.  The greens represent healing and joy; the"
+" white stripe includes people who are transgender, nonbinary, intersex, or "
+"otherwise likely to be traditionally left out; the blues represent pure "
+"love, strength, and diversity."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Gay pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Gay pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying a men's gay pride flag, with "
+"white in between shades of green and blue.  The greens represent healing and"
+" joy; the white stripe includes people who are transgender, nonbinary, "
+"intersex, or otherwise likely to be traditionally left out; the blues "
+"represent pure love, strength, and diversity."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Genderfluid pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Genderfluid pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the pink, white, purple, black and blue "
+"genderfluid pride flag.  The pink represents feminimity, the white "
+"represents lack of gender, the purple represents androgyny, the black "
+"represents all other genders, and the blue represents masculinity."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Genderfluid pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Genderfluid pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the pink, white, purple, black "
+"and blue genderfluid pride flag.  The pink represents feminimity, the white "
+"represents lack of gender, the purple represents androgyny, the black "
+"represents all other genders, and the blue represents masculinity."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "flagpole with Autism pride flag"
+msgstr ""
+
+#. ~ Description for flagpole with Autism pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"An old metal flagpole, now flying the infinity symbol upon an autism pride "
+"flag.  Gold middle band refers to the elemental symbol of gold (AU) which is"
+" used in the autistic community.  The gradient refers to the Pride Movement."
+"  Red originated as a protest to the `light it up blue` campaign, which was "
+"denounced by the autistic community.  The infinity sign is a symbol long "
+"used in the wider autistic and wider neurodiverse community."
+msgstr ""
+
+#: data/mods/pride_flags/furniture.json
+msgid "wooden flagpole with Autism pride flag"
+msgstr ""
+
+#. ~ Description for wooden flagpole with Autism pride flag
+#: data/mods/pride_flags/furniture.json
+msgid ""
+"This makeshift flagpole is currently flying the infinity symbol upon an "
+"autism pride flag.  Gold middle band refers to the elemental symbol of gold "
+"(AU) which is used in the autistic community.  The gradient refers to the "
+"Pride Movement.  Red originated as a protest to the `light it up blue` "
+"campaign, which was denounced by the autistic community.  The infinity sign "
+"is a symbol long used in the wider autistic and wider neurodiverse "
+"community."
 msgstr ""
 
 #: data/mods/pride_flags/modinfo.json
@@ -233284,6 +233862,157 @@ msgstr ""
 #. ~ Description for Pride Flags for BN
 #: data/mods/pride_flags/modinfo.json
 msgid "Pride flags for Bright Nights, for all your roleplaying needs."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Trans pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Trans pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A transgender pride flag, fluttering in the breeze atop a vehicle.  The blue"
+" represents transmascs, the pink represents transfemmes, and the white "
+"represents non-binary individuals."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted LGBTQ+ pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted LGBTQ+ pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An LGBTQ+ pride flag, fluttering in the breeze atop a vehicle.  The rainbow "
+"of colors represents the rainbow of individuals throughout the community."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Aromantic pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Aromantic pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An aromantic pride flag, fluttering in the breeze atop a vehicle.  The "
+"greens represent aromanticism and the aro-spectrum as a whole, the white "
+"represents the importance of non-romantic relationships, and the black and "
+"grey represent the sexuality spectrum that ranges from aro-ace to aro-"
+"allosexual."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Asexual pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Asexual pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An asexual pride flag, fluttering in the breeze atop a vehicle.  The black "
+"represents total asexuality, the grey represents demisexuals and grey-"
+"asexuals, the white represents allies, and the purple represents community."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Bisexual pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Bisexual pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A bisexual pride flag, fluttering in the breeze atop a vehicle.  The pink "
+"represents attraction to the same sex, the blue represents attraction to the"
+" opposite sex, and the purple overlap represents the combination of both."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Intersex pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Intersex pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An intersex pride flag, fluttering in the breeze atop a vehicle.  The center"
+" circle symbolizes wholeness and completeness."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Lesbian pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Lesbian pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A lesbian pride flag, fluttering in the breeze atop a vehicle.  The dark "
+"orange represents gender non-conformity, the orange represents independence,"
+" the white represents unique relationships to womanhood, pink represents "
+"serenity and peace, and the dark rose represents feminimity."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Non-binary pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Non-binary pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A non-binary pride flag, fluttering in the breeze atop a vehicle.  Yellow "
+"represents those who identify outside of the gender binary, white represents"
+" those with multiple genders, purple for those with a mix of both male and "
+"female, and black for agender individuals."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Pansexual pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Pansexual pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A pansexual pride flag, fluttering in the breeze atop a vehicle.  Pink "
+"represents being attracted to women, blue being attracted to men, and yellow"
+" being attracted to everyone else."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Gay pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Gay pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A men's gay pride flag, fluttering in the breeze atop a vehicle.  The greens"
+" represent healing and joy; the white stripe includes people who are "
+"transgender, nonbinary, intersex, or otherwise likely to be traditionally "
+"left out; the blues represent pure love, strength, and diversity."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Genderfluid pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Genderfluid pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"A genderfluid pride flag, fluttering in the breeze atop a vehicle.  The pink"
+" represents feminimity, the white represents lack of gender, the purple "
+"represents androgyny, the black represents all other genders, and the blue "
+"represents masculinity."
+msgstr ""
+
+#: data/mods/pride_flags/vehicleparts.json
+msgid "mounted Autism pride flag"
+msgstr ""
+
+#. ~ Description for {'str': 'mounted Autism pride flag'}
+#: data/mods/pride_flags/vehicleparts.json
+msgid ""
+"An autism pride flag, fluttering in the breeze atop a vehicle.  Gold middle "
+"band refers to the elemental symbol of gold (AU) which is used in the "
+"autistic community.  The gradient refers to the Pride Movement.  Red "
+"originated as a protest to the `light it up blue` campaign, which was "
+"denounced by the autistic community.  The infinity sign is a symbol long "
+"used in the wider autistic and wider neurodiverse community."
 msgstr ""
 
 #: data/mods/rural_biome/modinfo.json
@@ -277747,10 +278476,6 @@ msgstr ""
 
 #: src/ranged.cpp
 msgid "Brrrip!"
-msgstr ""
-
-#: src/ranged.cpp
-msgid "plink!"
 msgstr ""
 
 #: src/ranged.cpp
