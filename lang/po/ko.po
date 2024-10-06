@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-09-22 01:16+0000\n"
+"POT-Creation-Date: 2024-10-05 01:14+0000\n"
 "Last-Translator: Fruitybite, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -3822,12 +3822,12 @@ msgstr "레일건"
 #. ~ Description for {'str': 'Railgun'}
 #: data/json/bionics.json
 msgid ""
-"EM field generators in your arms double the range and damage of thrown iron "
-"and steel objects at a cost of 1 power per throw, causing them to leave a "
-"trail of electricity that can cause additional damage."
+"EM field generators in your arms double the range and increase damage of "
+"thrown iron and steel objects at a cost of 1kJ per throw, causing them to "
+"leave a trail of electricity that can cause additional damage."
 msgstr ""
-"팔에 이식한 전자기장 생성기로, 철제 물건의 투척 거리와 피해량을 두 배로 늘려줍니다. 매 투척마다 전력이 1 소모되고, 던진 물체를 "
-"따라 전류가 남아 추가 피해를 줄 수 있습니다."
+"양팔에 설치된 전자기장 발생장치가 매 투척마다 전력을 1kJ 소모하여 철제 및 강철제 물건의 투척 사거리 및 피해량을 두 배로 늘리고, "
+"추가 피해를 입힐 수 있는 전류의 흐름을 남깁니다."
 
 #: data/json/bionics.json
 msgid "Fingertip Razors"
@@ -4241,6 +4241,22 @@ msgstr ""
 "작은 가솔린 연료 전지가 견갑골에 고정되어 있습니다. 다른 연료 전지와 다르게 에너지 효율은 그리 좋지 않지만 등에 설치된 열 배출 "
 "돌기로 상당한 양의 방열이 계속 흘러나오고 있습니다. 바이오 플라스틱으로 만들어진 수포 분산 네트워크가 순환계에 있어 연료 탱크처럼 "
 "기능합니다. "
+
+#: data/json/bionics.json data/json/items/bionics.json
+msgid "Hydrogen Fuel Cell CBM"
+msgid_plural "Hydrogen Fuel Cell CBMs"
+msgstr[0] "수소 연료 시스템"
+
+#. ~ Description for {'str': 'Hydrogen Fuel Cell CBM'}
+#: data/json/bionics.json
+msgid ""
+"A small hydrogen fuel cell fixed to your scapula.  Fairly efficient and "
+"produces minimal heat, though the low density of even compressed hydrogen is"
+" a hindrance.  A network of compressors and fuel tanks has been distributed "
+"throughout your body to store fuel."
+msgstr ""
+"어깨뼈에 소형 수소 연료 전지가 설치되었습니다. 꽤 효율적이고 열을 최소한으로 발생시키지만, 압축 수소를 사용했음에도 불구하고 그리 높지"
+" 않은 밀도 탓에 다소 거치적거립니다. 몸 곳곳에 압축기와 연료 탱크의 연결망이 나뉘어 설치되었습니다."
 
 #: data/json/bionics.json
 msgid "Micro Reactor"
@@ -4830,6 +4846,10 @@ msgstr ""
 "페널티는 손에 들고 제작하는 것과 같습니다. 다른 작업대를 사용할 수 있다면, 그 작업대를 사용하는 것을 막지 않습니다. 때려부수거나 "
 "건축 메뉴에서 제거할 수 있습니다."
 
+#: data/json/construction.json
+msgid "Will be harvestable after one season."
+msgstr "한 계절 뒤에 수확할 수 있습니다."
+
 #: data/json/construction.json data/mods/pride_flags/construction.json
 msgid "Can be deconstructed without tools."
 msgstr "도구 없이도 분해할 수 있습니다."
@@ -5007,13 +5027,13 @@ msgstr ""
 msgid ""
 "Must be adjacent to a brick or (reinforced)concrete wall that is itself "
 "adjacent to a garage gate in order to open said gate."
-msgstr "벽돌이나 (강화된)콘크리트 벽 사이에서 서로 인접하고 있어야만 문을 여닫을 수 있습니다."
+msgstr "벽돌이나 (철근)콘크리트 벽 사이에서 서로 인접하고 있어야만 문을 여닫을 수 있습니다."
 
 #: data/json/construction.json
 msgid ""
 "Must be between brick or (reinforced)concrete walls to function, and at "
 "least one wall must have an adjacent mechanical winch."
-msgstr "벽돌 혹은 (강화된)콘크리트 벽 사이에서만 기능하며, 최소한 한 개의 벽은 기계 윈치와 인접해야 합니다."
+msgstr "벽돌 혹은 (철근)콘크리트 벽 사이에서만 기능하며, 최소한 한 개의 벽은 기계 윈치와 인접해야 합니다."
 
 #: data/json/construction_category.json src/advanced_inv.cpp
 #: src/armor_layers.cpp src/debug_menu.cpp src/options.cpp src/scenario.cpp
@@ -5091,11 +5111,11 @@ msgstr "나무 문 덧대기"
 
 #: data/json/construction_group.json
 msgid "Build a bellow"
-msgstr "풀무 건설"
+msgstr "풀무 제작"
 
 #: data/json/construction_group.json
 msgid "Build a drop hammer"
-msgstr "단조용 드롭 해머 건설"
+msgstr "단조용 드롭 해머 제작"
 
 #: data/json/construction_group.json
 msgid "Build a radio tower"
@@ -5103,19 +5123,19 @@ msgstr "방송탑 건설"
 
 #: data/json/construction_group.json
 msgid "Build a radio tower console"
-msgstr "방송탑 제어기 건설"
+msgstr "방송탑 제어기 제작"
 
 #: data/json/construction_group.json
 msgid "Build Arc Furnace"
-msgstr "아크 용광로 만들기"
+msgstr "아크 용광로 제작"
 
 #: data/json/construction_group.json
 msgid "Build Armchair"
-msgstr "안락의자 만들기"
+msgstr "안락의자 제작"
 
 #: data/json/construction_group.json
 msgid "Build Bar Door"
-msgstr "쇠창살 문 만들기"
+msgstr "쇠창살 문 제작"
 
 #: data/json/construction_group.json
 msgid "Build Barbed Wire Fence"
@@ -5127,19 +5147,19 @@ msgstr "구슬장식 커튼 달기"
 
 #: data/json/construction_group.json
 msgid "Build Bed Frame"
-msgstr "침대 틀 만들기"
+msgstr "침대 틀 제작"
 
 #: data/json/construction_group.json
 msgid "Build Bed from Scratch"
-msgstr "잡동사니로 침대 만들기"
+msgstr "잡동사니로 침대 제작"
 
 #: data/json/construction_group.json
 msgid "Build Bench"
-msgstr "벤치 만들기"
+msgstr "벤치 제작"
 
 #: data/json/construction_group.json
 msgid "Build Bookcase"
-msgstr "책장 만들기"
+msgstr "책장 제작"
 
 #: data/json/construction_group.json
 msgid "Build Brick Wall"
@@ -5151,15 +5171,15 @@ msgstr "어도비 벽돌 벽 건설"
 
 #: data/json/construction_group.json
 msgid "Build Bulletin Board"
-msgstr "게시판 만들기"
+msgstr "게시판 제작"
 
 #: data/json/construction_group.json
 msgid "Build Bunk Bed"
-msgstr "2단 침대 만들기"
+msgstr "2단 침대 제작"
 
 #: data/json/construction_group.json
 msgid "Build Butchering Rack"
-msgstr "도축 선반 만들기"
+msgstr "도축 선반 제작"
 
 #: data/json/construction_group.json
 msgid "Build Cardboard Fort"
@@ -5175,11 +5195,11 @@ msgstr "철책 문 건설"
 
 #: data/json/construction_group.json
 msgid "Build Chair"
-msgstr "의자 만들기"
+msgstr "의자 제작"
 
 #: data/json/construction_group.json
 msgid "Build Charcoal Kiln"
-msgstr "목탄 가마 만들기"
+msgstr "목탄 가마 제작"
 
 #: data/json/construction_group.json
 msgid "Build Chickenwire Fence"
@@ -5191,19 +5211,19 @@ msgstr "육각 철조망 울타리 문 건설"
 
 #: data/json/construction_group.json
 msgid "Build Clay Kiln"
-msgstr "점토 가마 만들기"
+msgstr "점토 가마 제작"
 
 #: data/json/construction_group.json
 msgid "Build Coat Rack"
-msgstr "코트 걸이 만들기"
+msgstr "코트 걸이 제작"
 
 #: data/json/construction_group.json
 msgid "Build Coffee Table"
-msgstr "커피 탁자 만들기"
+msgstr "커피 탁자 제작"
 
 #: data/json/construction_group.json
 msgid "Build Coffin"
-msgstr "관 만들기"
+msgstr "관 제작"
 
 #: data/json/construction_group.json
 msgid "Build Concrete Column"
@@ -5227,11 +5247,11 @@ msgstr "카운터 문 건설"
 
 #: data/json/construction_group.json
 msgid "Build Crate"
-msgstr "상자 만들기"
+msgstr "상자 제작"
 
 #: data/json/construction_group.json
 msgid "Build Cupboard"
-msgstr "찬장 만들기"
+msgstr "찬장 제작"
 
 #: data/json/construction_group.json
 msgid "Build Decorative Tree"
@@ -5243,7 +5263,7 @@ msgstr "깊은 강 부두 건설"
 
 #: data/json/construction_group.json
 msgid "Build Desk"
-msgstr "책상 만들기"
+msgstr "책상 제작"
 
 #: data/json/construction_group.json
 msgid "Build Diagonal Small Railroad Track"
@@ -5259,11 +5279,11 @@ msgstr "문에 커튼 달기"
 
 #: data/json/construction_group.json
 msgid "Build Double Glazed Glass Window"
-msgstr "이중 유리창 만들기"
+msgstr "이중 유리창 제작"
 
 #: data/json/construction_group.json
 msgid "Build Dresser"
-msgstr "옷장 만들기"
+msgstr "옷장 제작"
 
 #: data/json/construction_group.json
 msgid "Build Dry Stone Wall"
@@ -5271,7 +5291,7 @@ msgstr "돌담 건설"
 
 #: data/json/construction_group.json
 msgid "Build Dumpster"
-msgstr "쓰레기 컨테이너 만들기"
+msgstr "쓰레기 컨테이너 제작"
 
 #: data/json/construction_group.json
 msgid "Build Earthbag Wall"
@@ -5279,7 +5299,7 @@ msgstr "흙 자루 벽 건설"
 
 #: data/json/construction_group.json
 msgid "Build Entertainment Center"
-msgstr "오락기기 만들기"
+msgstr "오락기기 제작"
 
 #: data/json/construction_group.json
 msgid "Build Fence"
@@ -5295,19 +5315,19 @@ msgstr "울타리 기둥 건설"
 
 #: data/json/construction_group.json
 msgid "Build Fermenting Vat"
-msgstr "발효통 만들기"
+msgstr "발효통 제작"
 
 #: data/json/construction_group.json
 msgid "Build Fire Ring"
-msgstr "모닥불 터 만들기"
+msgstr "모닥불 터 제작"
 
 #: data/json/construction_group.json
 msgid "Build floor lamp"
-msgstr "실내용 전등 만들기"
+msgstr "실내용 전등 제작"
 
 #: data/json/construction_group.json
 msgid "Build floodlight"
-msgstr "투광 조명등 만들기"
+msgstr "투광 조명등 제작"
 
 #: data/json/construction_group.json
 msgid "Rewire Street Light"
@@ -5331,7 +5351,7 @@ msgstr "임시 피난처 건설"
 
 #: data/json/construction_group.json
 msgid "Build Jumper Cable Connector"
-msgstr "점퍼 케이블 커넥터 만들기"
+msgstr "점퍼 케이블 커넥터 제작"
 
 #: data/json/construction_group.json
 msgid "Build Junk Metal Barrier"
@@ -5343,11 +5363,11 @@ msgstr "쓰레기 금속 바닥 건설"
 
 #: data/json/construction_group.json
 msgid "Build Large Metal Support"
-msgstr "대형 금속 지지대 만들기"
+msgstr "대형 금속 지지대 제작"
 
 #: data/json/construction_group.json
 msgid "Build Locker"
-msgstr "사물함 만들기"
+msgstr "사물함 제작"
 
 #: data/json/construction_group.json
 msgid "Build Roof Over Primitive Floor"
@@ -5355,7 +5375,7 @@ msgstr "원시적 바닥 위 지붕 건설"
 
 #: data/json/construction_group.json
 msgid "Build Log Stool"
-msgstr "통나무 의자 만들기"
+msgstr "통나무 의자 제작"
 
 #: data/json/construction_group.json
 msgid "Build Log Wall"
@@ -5375,11 +5395,11 @@ msgstr "나무 경사로 최저점 건설"
 
 #: data/json/construction_group.json
 msgid "Build Mailbox"
-msgstr "우편함 만들기"
+msgstr "우편함 제작"
 
 #: data/json/construction_group.json
 msgid "Build Makeshift Bed"
-msgstr "간이 침대 만들기"
+msgstr "간이 침대 제작"
 
 #: data/json/construction_group.json
 msgid "Build Makeshift Door"
@@ -5395,7 +5415,7 @@ msgstr "쇠창살 건설"
 
 #: data/json/construction_group.json
 msgid "Build Metal Charcoal Kiln"
-msgstr "금속 목탄 가마 만들기"
+msgstr "금속 목탄 가마 제작"
 
 #: data/json/construction_group.json
 msgid "Build Metal Door"
@@ -5415,7 +5435,7 @@ msgstr "유리 없는 창문에 금속 격자 달기"
 
 #: data/json/construction_group.json
 msgid "Build Metal Rack"
-msgstr "철제 선반 만들기"
+msgstr "철제 선반 제작"
 
 #: data/json/construction_group.json
 msgid "Build Roof Over Simple Metal Floor"
@@ -5427,7 +5447,7 @@ msgstr "금속 벽 건설"
 
 #: data/json/construction_group.json
 msgid "Build Mushroom Rack"
-msgstr "버섯 선반 만들기"
+msgstr "버섯 선반 제작"
 
 #: data/json/construction_group.json
 msgid "Build Palisade Gate"
@@ -5439,23 +5459,23 @@ msgstr "말뚝 울타리벽 건설"
 
 #: data/json/construction_group.json
 msgid "Build Pile of Leaves"
-msgstr "나뭇잎 더미 만들기"
+msgstr "나뭇잎 더미 제작"
 
 #: data/json/construction_group.json
 msgid "Build Pillow Fort"
-msgstr "베개 요새 만들기"
+msgstr "베개 요새 제작"
 
 #: data/json/construction_group.json
 msgid "Build Pine Lean-To"
-msgstr "소나무 피난처 만들기"
+msgstr "소나무 피난처 제작"
 
 #: data/json/construction_group.json
 msgid "Build Planter"
-msgstr "플랜터 만들기"
+msgstr "플랜터 제작"
 
 #: data/json/construction_group.json
 msgid "Build Plastic Window"
-msgstr "플라스틱 창문 만들기"
+msgstr "플라스틱 창문 제작"
 
 #: data/json/construction_group.json
 msgid "Build Pontoon Bridge"
@@ -5475,7 +5495,7 @@ msgstr "보안 울타리 문 건설"
 
 #: data/json/construction_group.json
 msgid "Build Quadruple Glazed Glass Window"
-msgstr "사중 유리창 만들기"
+msgstr "사중 유리창 제작"
 
 #: data/json/construction_group.json
 msgid "Build Rammed Earth Wall"
@@ -5491,27 +5511,27 @@ msgstr "철근 콘크리트 벽 건설"
 
 #: data/json/construction_group.json
 msgid "Build Reinforced Double Glazed Glass Window"
-msgstr "강화된 이중 유리창 만들기"
+msgstr "보강된 이중 유리창 제작"
 
 #: data/json/construction_group.json
 msgid "Build Reinforced Glass Window"
-msgstr "강화 유리창문 건설"
+msgstr "강화 유리 창문 제작"
 
 #: data/json/construction_group.json
 msgid "Build Reinforced Plastic Window"
-msgstr "강화된 플라스틱 창문 만들기"
+msgstr "보강된 플라스틱 창문 제작"
 
 #: data/json/construction_group.json
 msgid "Build Reinforced Quadruple Glazed Glass Window"
-msgstr "강화된 사중 유리창 만들기"
+msgstr "보강된 사중 유리창 제작"
 
 #: data/json/construction_group.json
 msgid "Build Reinforced Single Glazed Glass Window"
-msgstr "강화된 단층 유리창 만들기"
+msgstr "보강된 단층 유리창 제작"
 
 #: data/json/construction_group.json
 msgid "Build Reinforced Triple Glazed Glass Window"
-msgstr "강화된 삼중 유리창 만들기"
+msgstr "보강된 삼중 유리창 제작"
 
 #: data/json/construction_group.json
 msgid "Build River Bridge"
@@ -5523,11 +5543,11 @@ msgstr "얉은 강 부두/다리 건설"
 
 #: data/json/construction_group.json
 msgid "Build Road Barricade"
-msgstr "도로 바리케이드 만들기"
+msgstr "도로 바리케이드 제작"
 
 #: data/json/construction_group.json
 msgid "Build Rock Forge"
-msgstr "석재 용광로 만들기"
+msgstr "석재 용광로 제작"
 
 #: data/json/construction_group.json
 msgid "Build Roof Over Wooden Floor"
@@ -5547,11 +5567,11 @@ msgstr "줄 울타리 건설"
 
 #: data/json/construction_group.json
 msgid "Build Rope & Pulley System"
-msgstr "도르래 장치 만들기"
+msgstr "도르래 장치 제작"
 
 #: data/json/construction_group.json
 msgid "Build Safe"
-msgstr "금고 만들기"
+msgstr "금고 제작"
 
 #: data/json/construction_group.json
 msgid "Build Sandbag Wall"
@@ -5571,7 +5591,7 @@ msgstr "얉은 강 임시 다리 건설"
 
 #: data/json/construction_group.json
 msgid "Build Sign"
-msgstr "표지판 만들기"
+msgstr "표지판 제작"
 
 #: data/json/construction_group.json
 msgid "Build Simple Concrete Wall"
@@ -5579,27 +5599,27 @@ msgstr "간이 콘크리트 벽 건설"
 
 #: data/json/construction_group.json
 msgid "Build Single Glazed Glass Window"
-msgstr "단층 유리창 만들기"
+msgstr "단층 유리창 제작"
 
 #: data/json/construction_group.json
 msgid "Build Sky Light"
-msgstr "채광창 만들기"
+msgstr "채광창 제작"
 
 #: data/json/construction_group.json
 msgid "Build Sky Light Frame"
-msgstr "채광창 프레임 만들기"
+msgstr "채광창 프레임 제작"
 
 #: data/json/construction_group.json
 msgid "Build Small Metal Support"
-msgstr "소형 금속 지지대 만들기"
+msgstr "소형 금속 지지대 제작"
 
 #: data/json/construction_group.json
 msgid "Build Smoking Rack"
-msgstr "훈제 선반 만들기"
+msgstr "훈제 선반 제작"
 
 #: data/json/construction_group.json
 msgid "Build Sofa"
-msgstr "소파 만들기"
+msgstr "소파 제작"
 
 #: data/json/construction_group.json
 msgid "Build Split Rail Fence"
@@ -5611,11 +5631,11 @@ msgstr "가로 장 울타리 문 건설"
 
 #: data/json/construction_group.json
 msgid "Build Standing Tank"
-msgstr "물탱크 만들기"
+msgstr "물탱크 제작"
 
 #: data/json/construction_group.json
 msgid "Build Stone Fireplace"
-msgstr "석재 난로 건설"
+msgstr "석재 난로 제작"
 
 #: data/json/construction_group.json
 msgid "Build Stone Wall"
@@ -5623,7 +5643,7 @@ msgstr "돌벽 건설"
 
 #: data/json/construction_group.json
 msgid "Build Stool"
-msgstr "간이의자 만들기"
+msgstr "간이의자 제작"
 
 #: data/json/construction_group.json
 msgid "Build Straight Small Railroad Track"
@@ -5631,15 +5651,15 @@ msgstr "직선 소형 철도 선로 건설"
 
 #: data/json/construction_group.json
 msgid "Build Straw Bed"
-msgstr "짚 침대 만들기"
+msgstr "짚 침대 제작"
 
 #: data/json/construction_group.json
 msgid "Build Table"
-msgstr "탁자 만들기"
+msgstr "탁자 제작"
 
 #: data/json/construction_group.json
 msgid "Build Tarp Lean-To"
-msgstr "타프 피난처 만들기"
+msgstr "타프 피난처 제작"
 
 #: data/json/construction_group.json
 msgid "Build Thatched Roof Over Dirt Floor"
@@ -5647,15 +5667,15 @@ msgstr "흙 바닥 위 초가 지붕 건설"
 
 #: data/json/construction_group.json
 msgid "Build Triple Glazed Glass Window"
-msgstr "삼중 유리창 만들기"
+msgstr "삼중 유리창 제작"
 
 #: data/json/construction_group.json
 msgid "Build Wardrobe"
-msgstr "옷장 만들기"
+msgstr "옷장 제작"
 
 #: data/json/construction_group.json
 msgid "Build Warehouse Shelf"
-msgstr "창고 선반 만들기"
+msgstr "창고 선반 제작"
 
 #: data/json/construction_group.json
 msgid "Build Water Well"
@@ -5667,11 +5687,11 @@ msgstr "초벽 건설"
 
 #: data/json/construction_group.json
 msgid "Build Window"
-msgstr "창문 만들기"
+msgstr "창문 제작"
 
 #: data/json/construction_group.json
 msgid "Build Window from Tempered Glass"
-msgstr "강화 유리 창문 만들기"
+msgstr "강화 유리 창문 제작"
 
 #: data/json/construction_group.json
 msgid "Build Wire Fence"
@@ -5679,7 +5699,7 @@ msgstr "철조망 건설"
 
 #: data/json/construction_group.json
 msgid "Build Wood Stove"
-msgstr "장작 난로 만들기"
+msgstr "장작 난로 제작"
 
 #: data/json/construction_group.json
 msgid "Build Wood Wall"
@@ -5691,7 +5711,7 @@ msgstr "나무 바닥 건설"
 
 #: data/json/construction_group.json
 msgid "Build Wooden Keg"
-msgstr "나무통 만들기"
+msgstr "나무통 제작"
 
 #: data/json/construction_group.json
 msgid "Build Wooden Rack"
@@ -5699,15 +5719,15 @@ msgstr "나무 선반 제작"
 
 #: data/json/construction_group.json
 msgid "Build Wooden Railing"
-msgstr "나무 난간 만들기"
+msgstr "나무 난간 제작"
 
 #: data/json/construction_group.json
 msgid "Build Wooden Staircase"
-msgstr "나무 계단 만들기"
+msgstr "나무 계단 제작"
 
 #: data/json/construction_group.json
 msgid "Build Workbench"
-msgstr "작업대 만들기"
+msgstr "작업대 제작"
 
 #: data/json/construction_group.json
 msgid "Carpet Floor Green"
@@ -5740,6 +5760,10 @@ msgstr "논 제거"
 #: data/json/construction_group.json
 msgid "Gather Clay From Dirt"
 msgstr "흙에서 점토 긁어모으기"
+
+#: data/json/construction_group.json
+msgid "Build Niter Bed"
+msgstr "초석 재배지 건설"
 
 #: data/json/construction_group.json
 msgid "Clean Broken Window"
@@ -5780,18 +5804,6 @@ msgstr "무덤을 파고 봉한 관을 넣기"
 #: data/json/construction_group.json
 msgid "Fill Shallow Grave"
 msgstr "얕은 무덤 채우기"
-
-#: data/json/construction_group.json
-msgid "Extract Clay"
-msgstr "점토 파내기"
-
-#: data/json/construction_group.json
-msgid "Extract Sand"
-msgstr "모래 파내기"
-
-#: data/json/construction_group.json
-msgid "Extract Bog Iron"
-msgstr "갈철석 추출"
 
 #: data/json/construction_group.json
 msgid "Extrude Resin Floor and Roof"
@@ -5862,8 +5874,12 @@ msgid "Install Glass Freezer"
 msgstr "유리문 냉동고 설치"
 
 #: data/json/construction_group.json
+msgid "Install Minifridge"
+msgstr "소형냉장고 설치"
+
+#: data/json/construction_group.json
 msgid "Install Minifreezer"
-msgstr "소형 냉동고 설치"
+msgstr "소형냉동고 설치"
 
 #: data/json/construction_group.json
 msgid "Install Oven"
@@ -5967,7 +5983,11 @@ msgstr "연습용 목표 지정"
 
 #: data/json/construction_group.json
 msgid "Build steel target"
-msgstr "강철 표적 건설"
+msgstr "강철 표적 제작"
+
+#: data/json/construction_group.json
+msgid "Build Beehive"
+msgstr "벌집 제작"
 
 #: data/json/construction_group.json
 msgid "Mine Downstair"
@@ -5979,7 +5999,7 @@ msgstr "위로 가는 계단 제작"
 
 #: data/json/construction_group.json
 msgid "Build Wooden Flagpole"
-msgstr "나무 깃대 건설"
+msgstr "나무 깃대 제작"
 
 #: data/json/construction_group.json
 msgid "Hoist American Flag"
@@ -6155,7 +6175,7 @@ msgstr "콘크리트 벽 제거하기"
 
 #: data/json/construction_group.json
 msgid "Remove a reinforced concrete floor"
-msgstr "강화된 콘크리트 바닥 제거하기"
+msgstr "철근 콘크리트 바닥 제거하기"
 
 #: data/json/construction_group.json
 msgid "Remove a rock wall"
@@ -6215,7 +6235,7 @@ msgstr "철근 골조 제거하기"
 
 #: data/json/construction_group.json
 msgid "Remove reinforced concrete wall"
-msgstr "강화된 콘크리트 벽 제거하기"
+msgstr "철근 콘크리트 벽 제거하기"
 
 #: data/json/construction_group.json
 msgid "Remove Tape from Window"
@@ -6239,7 +6259,7 @@ msgstr "나무 문 수리하기"
 
 #: data/json/construction_group.json
 msgid "Build Door Frame"
-msgstr "문틀 만들기"
+msgstr "문틀 제작"
 
 #: data/json/construction_group.json
 msgid "Repair Wood Wall"
@@ -10526,6 +10546,12 @@ msgstr "이 장비는 <info>가스</info>를 <good>완전히 차단</good>합니
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
 msgid ""
+"This item can be carried in a <info>holster</info> of the appropriate size."
+msgstr "이 물품은 적당한 크기의 <info>총집</info>에 보관할 수 있습니다."
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
 "This clothing has a <info>hood</info> to keep your head warm if your head is"
 " unencumbered."
 msgstr "이 의류는 <info>후드</info>가 있어, 머리에 걸리적거리는 것이 없다면 덮어써 머리를 따뜻하게 할 수 있습니다."
@@ -10925,6 +10951,12 @@ msgid ""
 "requires it."
 msgstr ""
 "이 물품은 불을 피울 때 불쏘시개로 쓸 수 있으며, 불쏘시개가 필요한 도구로 불을 피울 때 <info>자동적으로 사용</info>됩니다."
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This item <bad>stops working</bad> when <info>submerged in water</info>."
+msgstr "이 물품은 <info>물에 잠기면</info> <bad>작동을 중단합니다</bad>."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -11566,6 +11598,10 @@ msgid "Meditate"
 msgstr "명상"
 
 #: data/json/item_actions.json
+msgid "Detonate"
+msgstr "폭파"
+
+#: data/json/item_actions.json
 msgid "Mop"
 msgstr "걸레질"
 
@@ -11797,6 +11833,10 @@ msgstr "저울 사용"
 #: data/json/item_actions.json
 msgid "Work on craft"
 msgstr "작업대에서 제작"
+
+#: data/json/item_actions.json
+msgid "(Debug) Amputate body part"
+msgstr "(디버그) 신체 부위 절단"
 
 #: data/json/item_category.json
 msgid "GUNS"
@@ -15731,6 +15771,14 @@ msgstr "아연"
 #: data/json/materials.json
 msgid "Carbon Fiber"
 msgstr "탄소섬유"
+
+#: data/json/materials.json
+msgid "Scute"
+msgstr "파충류 가죽"
+
+#: data/json/materials.json
+msgid "Heavy Bone"
+msgstr "두꺼운 뼈"
 
 #. ~ 1$s is monster name, 2$s bodypart in accusative
 #: data/json/monster_attacks.json src/monattack.cpp
@@ -29892,6 +29940,7 @@ msgstr "추상화 실내용 전등"
 #. ~ Description for abstract floor lamp
 #. ~ Description for abstract glass fridge
 #. ~ Description for abstract fridge
+#. ~ Description for abstract minifridge
 #. ~ Description for abstract minifreezer
 #. ~ Description for abstract air conditioner
 #. ~ Description for abstract space heater
@@ -30565,6 +30614,7 @@ msgstr "우지끈!"
 #: data/json/furniture_and_terrain/furniture-medical.json
 #: data/json/furniture_and_terrain/furniture-migo.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
+#: data/json/furniture_and_terrain/furniture-rural.json
 #: data/json/furniture_and_terrain/furniture-seats.json
 #: data/json/furniture_and_terrain/furniture-signs.json
 #: data/json/furniture_and_terrain/furniture-sleep.json
@@ -30680,6 +30730,7 @@ msgid "refrigerator (off)"
 msgstr "냉장고 (꺼짐)"
 
 #. ~ Description for refrigerator (off)
+#. ~ Description for grid minifridge (off)
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid ""
 "Refrigerate your food with the amazing science of electricity!  It is "
@@ -30704,6 +30755,7 @@ msgid_plural "refrigerators"
 msgstr[0] "냉장고"
 
 #. ~ Description for refrigerator
+#. ~ Description for grid minifridge
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid ""
 "Refrigerate your food with the amazing science of electricity!  It has no "
@@ -30725,6 +30777,7 @@ msgid "refrigerator (on)"
 msgstr "냉장고 (켜짐)"
 
 #. ~ Description for refrigerator (on)
+#. ~ Description for grid minifridge (on)
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid ""
 "Refrigerate your food with the amazing science of electricity!  It is "
@@ -30790,6 +30843,41 @@ msgid ""
 msgstr "놀라운 전기의 과학으로 음식을 냉동보관하세요! 현재 켜져있습니다."
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "abstract minifridge"
+msgstr "추상화 소형냉장고"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "grid minifridge (off)"
+msgstr "망 연결된 소형냉장고 (꺼짐)"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Switch on the minifridge."
+msgstr "소형냉장고를 켜기"
+
+#. ~ Message for furniture 'grid minifridge (off)'
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "You switch on the minifridge."
+msgstr "소형냉장고를 켰습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "grid minifridge"
+msgstr "망 연결된 소형냉장고"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Switch off the minifridge."
+msgstr "소형냉장고 끄기"
+
+#. ~ Message for furniture 'grid minifridge'
+#. ~ Message for furniture 'grid minifridge (on)'
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "You switch off the minifridge."
+msgstr "소형냉장고를 껐습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "grid minifridge (on)"
+msgstr "망 연결된 소형냉장고 (켜짐)"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "abstract minifreezer"
 msgstr "추상화 소형냉동고"
 
@@ -30815,7 +30903,7 @@ msgstr[0] "소형냉동고"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "Switch off the minifreezer."
-msgstr "소형 냉동고 끄기"
+msgstr "소형냉동고 끄기"
 
 #. ~ Message for furniture 'minifreezer'
 #. ~ Message for furniture 'minifreezer (on)'
@@ -31735,6 +31823,17 @@ msgid ""
 msgstr "이 유용한 풀은 연중 내내 핍니다. 이 풀의 대부분은 먹을 수 있습니다."
 
 #: data/json/furniture_and_terrain/furniture-flora.json
+msgid "harvested cattails"
+msgstr "부들 (수확함)"
+
+#. ~ Description for harvested cattails
+#: data/json/furniture_and_terrain/furniture-flora.json
+msgid ""
+"This useful plant has been stripped of most of its stalks, and the easier-"
+"to-reach rhizomes have all been pulled up."
+msgstr "이 유용한 식물은 현재 줄기가 죄다 벗겨져있으며, 접근하기 쉬운 꽃이삭 부위는 전부 뽑혀나갔습니다."
+
+#: data/json/furniture_and_terrain/furniture-flora.json
 #: data/json/obsoletion/items.json
 msgid "black eyed susan"
 msgid_plural "black eyed susans"
@@ -31957,6 +32056,7 @@ msgstr "시체들을 지켜줍니다."
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+#: data/json/furniture_and_terrain/terrain-manufactured.json
 #: data/mods/Aftershock/maps/terrain.json src/map.cpp src/mapdata.h
 msgid "thump!"
 msgstr "쿵!"
@@ -32983,6 +33083,58 @@ msgstr "쪼개진 나무조각 더미"
 #: data/json/furniture_and_terrain/furniture-rural.json
 msgid "Pile of chipped wood pieces.  You can move it with a shovel."
 msgstr "쪼개진 나무조각 더미. 삽으로 치울 수 있습니다."
+
+#: data/json/furniture_and_terrain/furniture-rural.json
+#: data/json/items/generic.json
+msgid "empty beehive"
+msgid_plural "empty beehives"
+msgstr[0] "빈 벌집"
+
+#. ~ Description for empty beehive
+#: data/json/furniture_and_terrain/furniture-rural.json
+msgid ""
+"A traditional beehive, baited to attract bees.  It will take a while before "
+"any bees decide to make use of it."
+msgstr ""
+"전통적인 방식으로 벌들을 끌어들이기 위한 미끼를 놓은 벌집입니다. 분봉나온 벌들이 이 집이 괜찮다고 판단하고 이사오려면 시간이 좀 걸릴 "
+"것입니다."
+
+#: data/json/furniture_and_terrain/furniture-rural.json
+msgid "growing beehive"
+msgstr "성장 중인 벌집"
+
+#. ~ Description for growing beehive
+#: data/json/furniture_and_terrain/furniture-rural.json
+msgid ""
+"A traditional beehive, buzzing with slight activity.  Some bees have started"
+" work on this hive, but it won't be ready just yet."
+msgstr ""
+"벌들이 조금씩 드나들며 웅웅거리는 전통적인 벌집입니다. 몇몇 벌들이 이 집에서 살기 위한 작업을 진행 중이지만, 아직 충분히 많지 "
+"않습니다."
+
+#: data/json/furniture_and_terrain/furniture-rural.json
+msgid "mature beehive"
+msgstr "성숙한 벌집"
+
+#. ~ Description for mature beehive
+#: data/json/furniture_and_terrain/furniture-rural.json
+msgid ""
+"A traditional beehive, buzzing with activity.  The colony is doing well "
+"enough that you could harvest a good amount without the hive dying off, "
+"except during the winter."
+msgstr ""
+"벌들이 드나들며 웅웅거리는 벌집입니다. 왕국이 제 역할을 충실히 수행하는 덕분에 꿀을 수확해도 죽지 않을 것입니다. 겨울이 아니라면요."
+
+#: data/json/furniture_and_terrain/furniture-rural.json
+msgid "recovering beehive"
+msgstr "회복 중인 벌집"
+
+#. ~ Description for recovering beehive
+#: data/json/furniture_and_terrain/furniture-rural.json
+msgid ""
+"A traditional beehive, buzzing with activity.  The colony is still "
+"recovering from last harvest."
+msgstr "벌들이 드나들며 웅웅거리는 벌집입니다. 왕국은 지난 수확으로 빼앗긴 꿀을 다시 모으고 있습니다."
 
 #: data/json/furniture_and_terrain/furniture-seats.json
 msgid "bench"
@@ -34667,7 +34819,7 @@ msgstr "주유를 자동으로 제어하는 조작판입니다. 망가져서 별
 
 #: data/json/furniture_and_terrain/furniture-tools.json
 msgid "reinforced vending machine"
-msgstr "강화된 자판기"
+msgstr "보강된 자판기"
 
 #. ~ Description for reinforced vending machine
 #: data/json/furniture_and_terrain/furniture-tools.json
@@ -35294,7 +35446,7 @@ msgstr "개방을 막기 위해 널빤지를 추가로 겹겹이 덧댄 문입�
 
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid "boarded up damaged reinforced door"
-msgstr "파손된 판자로 막은 강화 문"
+msgstr "손상된 판자로 보강된 강화 문"
 
 #. ~ Description for boarded up damaged reinforced door
 #: data/json/furniture_and_terrain/terrain-doors.json
@@ -35746,9 +35898,11 @@ msgstr "가로장 울타리"
 #. ~ Description for split rail fence
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid ""
-"A rather stout fence made of 2x4s and fence posts, suitable for containing "
-"livestock like horses, cows and pigs."
-msgstr "널빤지와 울타리 기둥으로 만든 꽤 튼튼한 울타리입니다. 말, 소, 돼지 같은 가축들을 키울 우리를 만드는데 좋습니다."
+"A rather stout fence made of split logs with notches, held together by "
+"gravity and suitable for containing livestock like horses, cows and pigs."
+msgstr ""
+"통나무를 쪼갠 뒤 홈을 파서 중력으로 고정시켜 만든 꽤 튼튼한 울타리입니다. 말, 소, 돼지 같은 가축들을 키울 우리를 만드는데 "
+"좋습니다."
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "closed wooden split rail gate"
@@ -36329,8 +36483,8 @@ msgstr[0] "모래"
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid ""
 "A large area of fine sand that could be useful in a number of ways, if it "
-"was extracted properly."
-msgstr "적절히 모으면 여러 용도로 쓸 수 있는 고운 모래로 이뤄진 넓은 구역입니다."
+"was extracted properly.  Dig a shallow pit here to harvest the sand."
+msgstr "적절히 모으면 여러 용도로 써먹기 좋은 모래로 가득한 곳입니다. 얕은 구덩이를 파서 모래를 얻어낼 수 있습니다."
 
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
@@ -36364,8 +36518,10 @@ msgstr "점토"
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid ""
 "A field full of malleable clay, suitable for kiln firing if it was extracted"
-" properly."
-msgstr "여러 형태로 만들기 좋은 점토로 가득한 곳입니다. 적절히 모으면 가마에 넣고 구울 수 있습니다."
+" properly.  Dig a shallow pit here to harvest the clay."
+msgstr ""
+"여러 형태로 만들기 좋은 점토로 가득한 곳입니다. 적절히 모으면 가마에 넣고 구울 수 있습니다. 얕은 구덩이를 파서 점토를 얻어낼 수 "
+"있습니다."
 
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
@@ -36374,9 +36530,8 @@ msgstr "점토더미"
 
 #. ~ Description for mound of clay
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
-#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid "A mound of clay soil."
-msgstr "점토 더미입니다."
+msgstr "점토더미입니다."
 
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 msgid "paper floor"
@@ -36433,14 +36588,19 @@ msgstr "허공"
 msgid "This is open air."
 msgstr "텅 빈 허공입니다."
 
+#. ~ Description for mound of clay
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+msgid "A mound of clay soil.  Dig a shallow pit here to harvest the clay."
+msgstr "점토더미입니다. 얕은 구덩이를 파서 점토를 얻어낼 수 있습니다."
+
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid "mound of sand"
 msgstr "모래더미"
 
 #. ~ Description for mound of sand
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
-msgid "A mound of sand."
-msgstr "모래 더미입니다."
+msgid "A mound of sand.  Dig a shallow pit here to harvest the sand."
+msgstr "모래더미입니다. 얕은 구덩이를 파서 모래를 얻어낼 수 있습니다."
 
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid "bog iron"
@@ -36448,13 +36608,24 @@ msgstr "갈철석"
 
 #. ~ Description for bog iron
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
-msgid "A wet pit with exposed hints of iron-rich earth."
-msgstr "철 성분이 풍부하게 함유된 덩어리가 군데군데 삐져나온 질척한 구덩이입니다."
+msgid ""
+"A wet pit with exposed hints of iron-rich earth.  Dig a shallow pit here to "
+"stake your claim on the ore."
+msgstr "군데군데 철분이 풍부한 흙이 있는 흠뻑 젖은 구덩이입니다. 얕은 구덩이를 파서 철광석을 얻어낼 수 있습니다."
 
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
-#: data/mods/desert_region/desert_terrain.json
-msgid "splosh!"
-msgstr "첨벙!"
+msgid "alluvial deposit"
+msgstr "충적토 퇴적지"
+
+#. ~ Description for alluvial deposit
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+msgid ""
+"A patch of wet sediment washed ashore by the steady flow of a river, often "
+"containing mineral deposits.  And washed-up litter, thanks to pre-cataclysm "
+"humanity.  Dig a shallow pit here to see if you strike paydirt."
+msgstr ""
+"강의 꾸준한 흐름을 통해 해안가에 쌓인 푹 젖은 상태의 퇴적지로, 광물 덩어리를 흔히 함유하고 있습니다. 대재앙 이전의 인류 여러분 "
+"덕분에 잘 씻긴 쓰레기도 포함되어있고요. 얕은 구덩이를 파서 노다지를 얻어낼 수 있습니다."
 
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
@@ -37772,12 +37943,12 @@ msgstr "진균이 두껍고 빽빽하게 자라나 벽을 이뤘습니다. 만�
 
 #: data/json/furniture_and_terrain/terrain-fungal.json
 msgid "fungal mound"
-msgstr "진균 더미"
+msgstr "진균더미"
 
 #. ~ Description for fungal mound
 #: data/json/furniture_and_terrain/terrain-fungal.json
 msgid "A mound of fungal matter, intertwined in itself."
-msgstr "진균 더미가 제 혼자 얽힌 채 덮여있습니다."
+msgstr "진균더미가 제 혼자 얽힌 채 덮여있습니다."
 
 #: data/json/furniture_and_terrain/terrain-fungal.json
 msgid "fungal shrub"
@@ -38590,6 +38761,31 @@ msgid ""
 "A small shelter covered by waterproof tarp, that can be used to take refuge "
 "from the elements or to protect a campfire from the rain."
 msgstr "방수포로 덮은 작은 피난처입니다. 가혹한 기온을 피하거나, 캠프파이어를 비로부터 지키는데 쓰입니다."
+
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid "unfinished niter bed"
+msgstr "미완성된 초석 재배지"
+
+#. ~ Description for unfinished niter bed
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid ""
+"A wet heap of fertilizer and plant matter covered in soil for traditional "
+"saltpeter production.  In about a season, enough potassium nitrate will "
+"leach through and crystallize to be harvestable."
+msgstr ""
+"전통적인 초석 생산방식대로 식물성 물질과 비료를 섞어만든 축축한 더미입니다. 대략 한 계절이 지나면 질산칼륨이 수확할 수 있을 정도로 "
+"충분히 모여 결정화될 것입니다."
+
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid "mature niter bed"
+msgstr "완성된 초석 재배지"
+
+#. ~ Description for mature niter bed
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid ""
+"This heap of nitrated compost has leached out and crystallized a bunch of "
+"niter.  Dig here to extract it."
+msgstr "질산염 퇴비더미가 충분히 무르익어 초석 결정을 맺었습니다. 파헤쳐서 수확할 수 있습니다."
 
 #: data/json/furniture_and_terrain/terrain-mechanisms.json
 msgid "mechanical winch"
@@ -40549,7 +40745,7 @@ msgstr "안쪽에 화려한 커튼이 달려 있어, 시야를 가리고 빛을 
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced single glazed glass window"
-msgstr "강화된 단층 유리창"
+msgstr "보강된 단층 유리창"
 
 #. ~ Description for Reinforced single glazed glass window
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40558,11 +40754,11 @@ msgstr "커다란 강화 유리판 하나가 창틀에 끼워진 유리창입니
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced single glazed glass window open"
-msgstr "강화된 단층 유리창 (열림)"
+msgstr "보강된 단층 유리창 (열림)"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced single glazed glass window with a curtain"
-msgstr "커튼이 달린 강화된 단층 유리창"
+msgstr "커튼이 달린 보강된 단층 유리창"
 
 #. ~ Description for Reinforced single glazed glass window with a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40573,7 +40769,7 @@ msgstr "안쪽에 화려한 커튼이 쳐져 있어, 시야를 가리고 빛을 
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "reinforced single glazed glass window with a curtain"
-msgstr "커튼이 달린 강화된 단층 유리창"
+msgstr "커튼이 달린 보강된 단층 유리창"
 
 #. ~ Description for reinforced single glazed glass window with a curtain
 #. ~ Description for Reinforced single glazed glass window with a curtain
@@ -40619,7 +40815,7 @@ msgstr "안쪽에 화려한 커튼을 칠 수 있어, 시야를 가리고 빛을
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced double glazed glass window"
-msgstr "강화된 이중 유리창"
+msgstr "보강된 이중 유리창"
 
 #. ~ Description for Reinforced double glazed glass window
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40630,7 +40826,7 @@ msgstr "이중 강화 유리판을 창틀에 끼워 만든 유리창입니다. �
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced double glazed glass window open"
-msgstr "강화된 이중 유리창 (열림)"
+msgstr "보강된 이중 유리창 (열림)"
 
 #. ~ Description for Reinforced double glazed glass window open
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40641,7 +40837,7 @@ msgstr "커다란 강화 유리판 하나가 창틀에 끼워진 이중 유리 �
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced double glazed glass window with a curtain"
-msgstr "커튼 달린 강화된 이중 유리창"
+msgstr "커튼 달린 보강된 이중 유리창"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Triple glazed glass window"
@@ -40686,7 +40882,7 @@ msgstr "커튼 달린 삼중 유리창"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced-triple pane glass window"
-msgstr "강화된 삼중 유리창"
+msgstr "보강된 삼단 유리창"
 
 #. ~ Description for Reinforced-triple pane glass window
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40704,15 +40900,15 @@ msgstr "삼중 유리판과 커다란 강화 유리판 하나가 창틀에 끼�
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced triple glazed glass window with a curtain"
-msgstr "커튼이 달린 강화된 삼중 유리창"
+msgstr "커튼이 달린 보강된 삼중 유리창"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced triple-pane glass window with a curtain"
-msgstr "커튼이 달린 강화된 삼층 유리창"
+msgstr "커튼이 달린 보강된 삼단 유리창"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced triple glazed glass window With a curtain"
-msgstr "커튼이 달린 강화된 삼중 유리창"
+msgstr "커튼이 달린 보강된 삼중 유리창"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Quadruple glazed glass window"
@@ -40748,7 +40944,7 @@ msgstr "안쪽에 화려한 커튼이 달려 있어, 시야를 가리고 빛을 
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced quadruple glazed glass window"
-msgstr "강화된 사중 유리창"
+msgstr "보강된 사중 유리창"
 
 #. ~ Description for Reinforced quadruple glazed glass window
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40759,7 +40955,7 @@ msgstr "커다란 삼중 유리판과 강화 유리판 하나가 창틀에 끼�
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "reinforced quadruple glazed glass window with a curtain"
-msgstr "커튼이 달린 강화된 사중 유리창"
+msgstr "커튼이 달린 보강된 사중 유리창"
 
 #. ~ Description for reinforced quadruple glazed glass window with a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40770,7 +40966,7 @@ msgstr "안쪽에 화려한 커튼이 달려 있어, 시야를 가리고 빛을 
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced quadruple glazed glass window with a curtain"
-msgstr "커튼이 달린 강화된 사중 유리창"
+msgstr "커튼이 달린 보강된 사중 유리창"
 
 #. ~ Description for Reinforced quadruple glazed glass window with a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40831,7 +41027,7 @@ msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced plastic window"
-msgstr "강화된 플라스틱 창문"
+msgstr "보강된 플라스틱 창문"
 
 #. ~ Description for Reinforced plastic window
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40842,7 +41038,7 @@ msgstr "급조된 창문입니다. 반투명한 플라스틱판 세 장을 겹�
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced Plastic window"
-msgstr "강화된 플라스틱 창문 (열림)"
+msgstr "보강된 플라스틱 창문 (열림)"
 
 #. ~ Description for Reinforced Plastic window
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40853,7 +41049,7 @@ msgstr "열려있는 급조된 창문입니다. 반투명한 플라스틱판 세
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced plastic window with a curtain"
-msgstr "커튼이 달린 강화된 플라스틱 창문"
+msgstr "커튼이 달린 보강된 플라스틱 창문"
 
 #. ~ Description for Reinforced plastic window with a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -40871,7 +41067,7 @@ msgstr "반투명한 플라스틱판 세 장을 나무 틀에 끼워 만든 급�
 
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid "Reinforced plastic window With a curtain"
-msgstr "커튼이 달린 강화된 플라스틱 창문 (열림)"
+msgstr "커튼이 달린 보강된 플라스틱 창문 (열림)"
 
 #. ~ Description for Reinforced plastic window With a curtain
 #: data/json/furniture_and_terrain/terrain-windows.json
@@ -41478,6 +41674,21 @@ msgid ""
 "solid.  With proper equipment, it could be heated to plasma."
 msgstr "압력을 가해 고체화된 수소가 담긴 용기. 적절한 장비와 함께 열을 가하면 플라즈마로 만들 수 있습니다."
 
+#: data/json/items/ammo.json data/json/items/ammo_types.json
+msgid "hydrogen gas"
+msgid_plural "hydrogen gas"
+msgstr[0] "수소 가스"
+
+#. ~ Description for {'str_sp': 'hydrogen gas'}
+#: data/json/items/ammo.json
+msgid ""
+"A light, flammable gas compressed for use as fuel.  Requires a lot of energy"
+" to produce, even moreso without pre-cataclysm industry.  Quite energy "
+"dense, though not very volume-efficient."
+msgstr ""
+"연료로 쓰기 위해 압축시킨 공기보다 가벼운 가연성 가스입니다. 생산하는데 막대한 에너지가 필요하며, 대재앙 이전의 산업시설이 없어 더더욱"
+" 그렇습니다. 꽤 높은 에너지 밀도를 갖고 있지만, 크기에 비하면 그렇게 효율적이지는 않습니다."
+
 #: data/json/items/ammo.json
 msgid "smokeless gunpowder"
 msgid_plural "smokeless gunpowders"
@@ -41567,8 +41778,8 @@ msgstr[0] "고무 슬러그"
 #: data/json/items/ammo.json
 msgid ""
 "Rubber slugs from a shotgun beanbag round.  You could use them to make new "
-"beanbag rounds."
-msgstr "산탄총용 빈백탄에 사용되는 고무 슬러그탄. 새 빈백탄 제작에 사용할 수 있습니다."
+"beanbag rounds, or sling them at people."
+msgstr "산탄용 빈백탄에 사용되는 고무 슬러그탄입니다. 새 빈백탄을 만드는데 쓰거나, 새총으로 사람들에게 쏠 수 있습니다."
 
 #: data/json/items/ammo.json
 msgid "chunk of rubber"
@@ -41945,7 +42156,7 @@ msgstr "산탄"
 msgid "20ga percussion"
 msgstr "20게이지 뇌관"
 
-#: data/json/items/ammo_types.json data/mods/No_Hope/Ammo/ammo_types.json
+#: data/json/items/ammo_types.json
 msgid "shotcanisters"
 msgstr "탄환용기"
 
@@ -42317,6 +42528,11 @@ msgstr "강산"
 #: data/json/items/ammo_types.json
 msgid "modified mininuke"
 msgstr "개조된 소형핵"
+
+#: data/json/items/ammo_types.json data/json/items/generic.json
+msgid "pitch"
+msgid_plural "pitch"
+msgstr[0] "소나무 수지"
 
 #: data/json/items/battery.json
 msgid "test battery"
@@ -43456,8 +43672,8 @@ msgid ""
 "thrown magnetic objects at a cost of 1 bionic power per throw.  They will "
 "create a trail of electricity that can cause additional damage."
 msgstr ""
-"팔에 이식하는 전자기장 생성기로, 철제 물건의 투척 거리와 피해량을 두 배로 늘려줍니다. 매 투척마다 전력이 1 소모되고, 던진 물체를 "
-"따라 전류가 남아 추가 피해를 줄 수 있습니다."
+"양팔에 설치하는 전자기장 발생장치가 매 투척마다 전력을 1kJ 소모하여 철제 및 강철제 물건의 투척 사거리 및 피해량을 두 배로 늘리고,"
+" 추가 피해를 입힐 수 있는 전류의 흐름을 남깁니다."
 
 #: data/json/items/bionics.json
 msgid "Fingertip Razors CBM"
@@ -43484,6 +43700,16 @@ msgid ""
 msgstr ""
 "휘발유를 바이오닉 전력으로 변환하는 작은 휘발유 연료전지. 바이오 플라스틱 주머니와 연결되어 최대 500ml의 휘발유를 담을 수 "
 "있습니다."
+
+#. ~ Description for {'str': 'Hydrogen Fuel Cell CBM'}
+#: data/json/items/bionics.json
+msgid ""
+"A small hydrogen fuel cell able to generate bionic power at a decent rate of"
+" efficiency.  It's connected to a diffuse network of compressors and compact"
+" canisters able to hold up to 500 ml of hydrogen."
+msgstr ""
+"수소를 상당한 효율로 바이오닉 전력으로 변환하는 작은 수소 연료전지. 압축기 및 500ml 어치 수소를 보관할 수 있는 압축 탱크로 "
+"구성된 분산형 연결망과 연결되어있습니다."
 
 #: data/json/items/bionics.json
 msgid "Internal Microreactor CBM"
@@ -44193,8 +44419,10 @@ msgstr[0] "황 덩어리"
 
 #. ~ Description for {'str': 'chunk of sulfur', 'str_pl': 'chunks of sulfur'}
 #: data/json/items/chemicals_and_resources.json
-msgid "A chunk of pure sulfur.  Break it up to use it."
-msgstr "순수한 유황 덩어리. 사용하려면 부숴야 합니다."
+msgid ""
+"A chunk of pure sulfur.  Break it up to use it.  Slinging it at someone "
+"might give their eyes some nasty burns."
+msgstr "순수한 유황 덩어리입니다. 깨뜨려 사용할 수 있습니다. 눈을 노리고 쏘면 위험한 화상을 입힐 수 있습니다."
 
 #: data/json/items/chemicals_and_resources.json
 #: data/mods/Item_Category_Overhaul/overwrite_scrap.json
@@ -44223,11 +44451,11 @@ msgstr[0] "석회석"
 #: data/json/items/chemicals_and_resources.json
 msgid ""
 "A handful of small chunks of limestone.  Useful for experiments at science "
-"fairs, but pretty useless as ammo.  Maybe something could be crafted from "
+"fairs, or fired out of a slingshot.  Maybe something could be crafted from "
 "this stuff…"
 msgstr ""
-"한 손 가득한 양의 석회석. 과학 실험에 유용하지만, 탄약으로썬 거의 쓸모가 없습니다. 아마도 무언가 이걸로 만들어지는 물건이 "
-"있을것입니다..."
+"한손 가득 모은 작은 석회석 덩어리들입니다. 과학 축전에 낼만한 실험에 유용하며, 새총에 매어 쏠 수도 있습니다. 이 물질로 만들만한 "
+"것들이 있겠지요..."
 
 #: data/json/items/chemicals_and_resources.json
 #: data/mods/Item_Category_Overhaul/overwrite_scrap.json
@@ -45163,16 +45391,6 @@ msgid ""
 "Enzymes used to curdle milk, for making cheese.  Traditionally made from the"
 " stomachs of ruminant animals."
 msgstr "우유를 응고시켜 치즈를 만드는데 쓰는 효소입니다. 반추동물의 위를 쓰는 전통적 방식으로 만들었습니다."
-
-#: data/json/items/chemicals_and_resources.json
-msgid "rosin"
-msgid_plural "rosins"
-msgstr[0] "로진"
-
-#. ~ Description for {'str': 'rosin'}
-#: data/json/items/chemicals_and_resources.json
-msgid "This is a chunk of yellowish rosin, usable as a flux for soldering."
-msgstr "노란 빛을 띄는 송진 덩어리입니다. 납땜용 플럭스로 쓸 수 있습니다."
 
 #: data/json/items/chemicals_and_resources.json
 msgid "acetylene"
@@ -46832,6 +47050,17 @@ msgid ""
 "heavy-duty usages, but it can be used as a varnish or holding together small"
 " items."
 msgstr "동물의 뼈를 끓여서 만든 접착제. 접착력은 강하지 않지만, 광택을 내거나 작은 물건을 붙이는데 사용할 수 있습니다."
+
+#. ~ Description for {'str_sp': 'pitch'}
+#: data/json/items/generic.json
+msgid ""
+"Sticky resin made from pine or birch tar.  Can be used for waterproofing or "
+"holding together small items, or for improvised repairs with the right "
+"tools.  When dried further it's known as rosin, often used as flux for "
+"solder."
+msgstr ""
+"소나무나 자작나무 재로 만든 끈적한 수지입니다. 작은 물체를 방수처리하거나 한데 묶어두는데 쓸 수 있으며, 적절한 도구가 있다면 손상된 "
+"물건을 임시로 수리하는 데에도 쓸 수 있습니다. 잘 건조시키면 송진이 되어 납땜에 쓸 수도 있습니다."
 
 #: data/json/items/generic.json
 msgid "fertilizer"
@@ -49202,6 +49431,59 @@ msgid ""
 "This is a plate of reinforced Kevlar.  It could be used to repair items made"
 " of Kevlar."
 msgstr "강화된 케블라 판. 케블라로 만들어진 물건을 수리할 때 사용할 수 있습니다."
+
+#: data/json/items/generic.json
+msgid "scute"
+msgid_plural "scutes"
+msgstr[0] "파충류 가죽"
+
+#. ~ Description for {'str': 'scute'}
+#: data/json/items/generic.json
+msgid ""
+"A bony and scaled protrusion harvested from a large reptile.  Such things "
+"were used to make handbags before the Cataclysm, but the material is sturdy "
+"and protective."
+msgstr ""
+"대형 파충류에게서 얻어낸 뼈와 비늘로 이뤄진 겉피부입니다. 대재앙 이전에는 핸드백을 만드는데 쓰였지만, 견고하고 충격을 잘 흡수하는 점을"
+" 살려 다른 용도로도 쓸 수 있을 것 같습니다."
+
+#: data/json/items/generic.json
+msgid "heavy bone"
+msgid_plural "heavy bones"
+msgstr[0] "두꺼운 뼈"
+
+#. ~ Description for {'str': 'heavy bone'}
+#: data/json/items/generic.json
+msgid ""
+"A bone harvested from a large animal such as an elephant, or from certain "
+"types of zombies.  It is extremely dense and durable for its size, and "
+"largely inedible."
+msgstr ""
+"코끼리 같은 대형 동물이나 어느 종류의 좀비로부터 얻어낸 뼈입니다. 그 크기에 비해 어마어마하게 딱딱하고 튼튼하며, 먹기가 거의 "
+"불가능합니다."
+
+#: data/json/items/generic.json
+msgid "sharp teeth"
+msgid_plural "sharp teeths"
+msgstr[0] "날카로운 이빨"
+
+#. ~ Description for {'str': 'sharp teeth'}
+#: data/json/items/generic.json
+msgid ""
+"Teeth harvested from a carnivore such as a shark, or from certain types of "
+"mutant animals.  They are extremely dense and durable for their size, and "
+"can very easily cause jagged wounds."
+msgstr ""
+"상어 같은 육식동물이나 어느 종류의 돌연변이 동물로부터 얻어낸 이빨입니다. 그 크기에 비해 어마어마하게 딱딱하고 튼튼하며, 들쭉날쭉한 "
+"상처를 아주 간단히 입힐 수 있습니다."
+
+#. ~ Description for {'str': 'empty beehive'}
+#: data/json/items/generic.json
+msgid ""
+"A large, enclosed wooden box with multiple sliding frames in it.  With "
+"something to attract bees, it can be used to grow a hive."
+msgstr ""
+"내부에 접이식 판이 여러 장 들어있는 크고 잘 봉인된 나무 상자입니다. 벌들을 끌어들일만한 미끼가 있다면 양봉에 쓸 수 있습니다."
 
 #: data/json/items/handloaded_bullets.json
 msgid "blunderbuss slug"
@@ -54174,6 +54456,33 @@ msgstr ""
 "충전재, 흑색화약, 3인치 주철 대포알을 잘 포장해둔 묶음입니다. 본래 남북전쟁 시기 대포에는 폭발성 \"통상탄\"이 쓰였지만, 이 "
 "포탄도 충분히 사람을 끝장낼 수 있습니다."
 
+#: data/json/items/ammo/cannon.json
+msgid "cannon canister shot"
+msgid_plural "cannon canister shots"
+msgstr[0] "대포용 산탄"
+
+#. ~ Description for {'str': 'cannon canister shot'}
+#: data/json/items/ammo/cannon.json
+msgid ""
+"A bundle of wadding, black gunpowder, and a good five pounds of round lead "
+"shot.  Used for hosing down formations of line infantry, and quite capable "
+"of absolutely ruining a zombie's day."
+msgstr ""
+"충전재, 흑색화약, 질 좋은 납탄 5파운드어치를 잘 포장해둔 산탄 묶음입니다. 전열보병의 대형을 뭉개버리는 용도로 쓰였고, 좀비들에게 "
+"죽여주는 하루를 선사하기에도 충분합니다."
+
+#: data/json/items/ammo/cannon.json
+msgid "cannon scrap shot"
+msgid_plural "cannon scrap shots"
+msgstr[0] "대포용 고철탄"
+
+#. ~ Description for {'str': 'cannon scrap shot'}
+#: data/json/items/ammo/cannon.json
+msgid ""
+"A bundle of wadding, black gunpowder, and a load of improvised buckshot.  "
+"Certainly still quite dangerous to anything downrange."
+msgstr "충전재, 흑색화약, 급조 벅샷을 가득 채운 묶음입니다. 사정거리 내 목표에게는 확실히 위협적입니다."
+
 #: data/json/items/ammo/chemical_spray.json
 msgid "sprayable toxic gas"
 msgid_plural "sprayable toxic gas"
@@ -54478,25 +54787,25 @@ msgid ""
 msgstr ""
 "산탄총에 장전해 소총과 같은 장거리 사격 능력을 제공하는 무거운 금속 슬러그탄. 엄청나게 강력하지만, 그만큼 정확도가 떨어집니다. "
 
-#: data/json/items/ammo/shotcanister.json data/mods/No_Hope/Ammo/ammo.json
+#: data/json/items/ammo/shotcanister.json
 msgid "scrap shotcanister"
 msgid_plural "scrap shotcanisters"
 msgstr[0] "고철 탄환용기"
 
 #. ~ Description for {'str': 'scrap shotcanister'}
-#: data/json/items/ammo/shotcanister.json data/mods/No_Hope/Ammo/ammo.json
+#: data/json/items/ammo/shotcanister.json
 msgid ""
 "This small paper canister resembling a crude shotshell is filled to the brim"
 " with assorted pieces of scrap metal."
 msgstr "종이에 고철을 채워 만든 수제 산탄총 탄약."
 
-#: data/json/items/ammo/shotcanister.json data/mods/No_Hope/Ammo/ammo.json
+#: data/json/items/ammo/shotcanister.json
 msgid "pebble shotcanister"
 msgid_plural "pebble shotcanisters"
 msgstr[0] "조약돌 탄환용기"
 
 #. ~ Description for {'str': 'pebble shotcanister'}
-#: data/json/items/ammo/shotcanister.json data/mods/No_Hope/Ammo/ammo.json
+#: data/json/items/ammo/shotcanister.json
 msgid ""
 "This small paper canister resembling a crude shotshell is filled to the brim"
 " with tiny pebbles.  Damage is pathetic but flight is much more stable than "
@@ -54505,25 +54814,25 @@ msgstr ""
 "산탄을 조잡하게 본따 만든 이 작은 종이 용기에는 작은 조약돌이 가득 차 있습니다. 탄환의 피해는 보잘것 없지만 고철 탄환에 비해 탄도는"
 " 더 안정적입니다."
 
-#: data/json/items/ammo/shotcanister.json data/mods/No_Hope/Ammo/ammo.json
+#: data/json/items/ammo/shotcanister.json
 msgid "flechette shotcanister"
 msgid_plural "flechette shotcanisters"
 msgstr[0] "플레셰트 탄환용기"
 
 #. ~ Description for {'str': 'flechette shotcanister'}
-#: data/json/items/ammo/shotcanister.json data/mods/No_Hope/Ammo/ammo.json
+#: data/json/items/ammo/shotcanister.json
 msgid ""
 "This small paper canister resembling a crude shotshell is filled to the brim"
 " with handmade flechettes, giving it some armor piercing capabilities."
 msgstr "종이에 날카로운 다트를 채워 만든 수제 산탄총 탄약. 어느 정도 장갑을 관통할 수 있다."
 
-#: data/json/items/ammo/shotcanister.json data/mods/No_Hope/Ammo/ammo.json
+#: data/json/items/ammo/shotcanister.json
 msgid "bearing shotcanister"
 msgid_plural "bearing shotcanisters"
 msgstr[0] "베어링 탄환용기"
 
 #. ~ Description for {'str': 'bearing shotcanister'}
-#: data/json/items/ammo/shotcanister.json data/mods/No_Hope/Ammo/ammo.json
+#: data/json/items/ammo/shotcanister.json
 msgid ""
 "This small paper canister resembling a crude shotshell is filled to the brim"
 " with handmade bearings, stabilizing its flight pattern a tiny bit."
@@ -55164,6 +55473,16 @@ msgid ""
 msgstr ""
 "3D 프린터를 이용해 탄소섬유를 겹겹이 쌓아 만든 수제 팔 보호구입니다. 뻣뻣한 장갑판은 케블라보다는 갑옷에 가까우며, 방어력이 "
 "높으면서도 가볍습니다."
+
+#: data/json/items/armor/arms_armor.json
+msgid "scaleskin armguards"
+msgid_plural "scaleskin armguardss"
+msgstr[0] "파충류 가죽 팔 보호구"
+
+#. ~ Description for {'str': 'scaleskin armguards'}
+#: data/json/items/armor/arms_armor.json
+msgid "Arm guards made from the hardened scales of large reptiles."
+msgstr "대형 파충류의 단단한 비늘로 만든 팔 보호구입니다."
 
 #: data/json/items/armor/ballistic_armor.json
 msgid "dragon skin vest"
@@ -56585,6 +56904,18 @@ msgid ""
 msgstr ""
 "3D 프린터를 이용해 탄소섬유를 겹겹이 쌓아 만든 수제 부츠입니다. 뻣뻣한 장갑판은 케블라보다는 갑옷에 가까우며, 방어력이 높으면서도 "
 "가볍습니다."
+
+#: data/json/items/armor/boots.json
+msgid "scaleskin boots"
+msgid_plural "scaleskin bootss"
+msgstr[0] "파충류 가죽 부츠"
+
+#. ~ Description for {'str': 'scaleskin boots'}
+#: data/json/items/armor/boots.json
+msgid ""
+"Boots made from the hardened scales of large reptiles.  It doesn't look "
+"quite like normal alligator skin boots due to the armored design."
+msgstr "대형 파충류의 단단한 가죽으로 만든 부츠입니다. 묵직한 중장갑 탓에 평범한 악어 가죽 부츠처럼 보이지는 않습니다."
 
 #: data/json/items/armor/cloaks.json
 msgid "American flag"
@@ -58267,6 +58598,16 @@ msgstr ""
 "3D 프린터를 이용해 탄소섬유를 겹겹이 쌓아 만든 수제 반장갑입니다. 뻣뻣한 장갑판은 케블라보다는 금속에 가까우며, 방어력이 높으면서도 "
 "가볍습니다."
 
+#: data/json/items/armor/gloves.json
+msgid "scaleskin gauntlets"
+msgid_plural "scaleskin gauntletss"
+msgstr[0] "파충류 가죽 건틀릿"
+
+#. ~ Description for {'str': 'scaleskin gauntlets'}
+#: data/json/items/armor/gloves.json
+msgid "Gauntlets made from the hardened scales of large reptiles."
+msgstr "대형 파충류의 단단한 가죽으로 만든 건틀릿입니다."
+
 #: data/json/items/armor/hats.json
 msgid "ten-gallon hat"
 msgid_plural "ten-gallon hats"
@@ -59088,6 +59429,16 @@ msgid ""
 msgstr ""
 "3D 프린터를 이용해 탄소섬유를 겹겹이 쌓아 만든 수제 헬멧입니다. 뻣뻣한 장갑판은 케블라보다는 갑옷에 가까우며, 방어력이 높으면서도 "
 "가볍습니다."
+
+#: data/json/items/armor/helmets.json
+msgid "scaleskin helmet"
+msgid_plural "scaleskin helmets"
+msgstr[0] "파충류 가죽 헬멧"
+
+#. ~ Description for {'str': 'scaleskin helmet'}
+#: data/json/items/armor/helmets.json
+msgid "A helmet made from the hardened scales of large reptiles."
+msgstr "대형 파충류의 단단한 가죽으로 만든 헬멧입니다."
 
 #: data/json/items/armor/holster.json
 msgid "back holster"
@@ -66133,7 +66484,7 @@ msgstr[0] "키틴질 갑옷"
 msgid ""
 "Leg and body armor made from the exoskeletons of insects.  Light and "
 "durable."
-msgstr "다리와 몸을 보호하는 갑옷. 곤충의 외골격으로 만들어졌습니다. 가볍고 견고합니다."
+msgstr "곤충의 외골격으로 만든 다리 및 몸통 보호구입니다. 가볍고 견고합니다."
 
 #: data/json/items/armor/suits_protection.json
 msgid "biosilicified chitin armor"
@@ -66611,6 +66962,16 @@ msgid ""
 msgstr ""
 "3D 프린터를 이용해 네오프렌 충전재 위에 탄소섬유를 겹겹이 쌓아 만든 수제 갑옷입니다. 뻣뻣한 장갑판은 케블라보다는 갑옷에 가까우며, "
 "방어력이 높으면서도 놀랄 정도로 움직이기 편합니다."
+
+#: data/json/items/armor/suits_protection.json
+msgid "scaleskin armor"
+msgid_plural "scaleskin armors"
+msgstr[0] "파충류 가죽 갑옷"
+
+#. ~ Description for {'str': 'scaleskin armor'}
+#: data/json/items/armor/suits_protection.json
+msgid "Leg and body armor made from the hardened scales of large reptiles."
+msgstr "대형 파충류의 단단한 가죽으로 만든 다리 및 몸통 보호구입니다."
 
 #: data/json/items/armor/swimming.json
 msgid "pair of swimming trunks"
@@ -79759,6 +80120,21 @@ msgid "cracklins"
 msgid_plural "cracklins"
 msgstr[0] "크래클린"
 
+#. ~ Conditional name for {'str_sp': 'cracklins'} when FLAG matches
+#. CANNIBALISM
+#: data/json/items/comestibles/meat_dishes.json
+msgid "long pork rinds"
+msgid_plural "long pork rindss"
+msgstr[0] "인육 크래클린"
+
+#. ~ Conditional name for {'str_sp': 'cracklins'} when COMPONENT_ID matches
+#. mutant
+#: data/json/items/comestibles/meat_dishes.json
+#, c-format
+msgid "cursed %s"
+msgid_plural "cursed %s"
+msgstr[0] "저주받은 %s"
+
 #. ~ Description for {'str_sp': 'cracklins'}
 #: data/json/items/comestibles/meat_dishes.json
 msgid ""
@@ -83397,9 +83773,12 @@ msgstr[0] "두송실"
 #. ~ Description for {'str_sp': 'junipers'}
 #: data/json/items/comestibles/nuts.json
 msgid ""
-"Junipers, for making gin and earthy flavors.  Spicy, tastes similar to "
+"A handful of junipers, for making gin and earthy flavors.  Technically a "
+"seed cone, but resembles a small blue berry.  Spicy, tastes similar to "
 "rosemary."
-msgstr "진을 만들거나 건강한 맛을 내는데 쓰이는 두송실입니다. 향과 맛이 로즈마리와 비슷합니다."
+msgstr ""
+"진을 만들거나 그윽한 향을 내는데 쓰이는 두송실입니다. 기본적으로는 씨앗 덩어리에 가깝지만, 작은 블루베리를 닮았습니다. 맛이 강렬하며 "
+"로즈마리와 비슷합니다."
 
 #: data/json/items/comestibles/nuts.json
 msgid "pistachios"
@@ -90562,6 +90941,34 @@ msgstr ""
 "자연산 재료로 만든 3피트 (90cm) 길이의 끈입니다. 몇몇 용도로는 쓸만하겠지만, 제대로 된 끈만큼 튼튼하거나 유연하지는 않습니다."
 
 #: data/json/items/generic/string.json
+msgid "short leather cord"
+msgid_plural "short leather cords"
+msgstr[0] "짧은 가죽 끈"
+
+#. ~ Description for {'str': 'short leather cord'}
+#: data/json/items/generic/string.json
+msgid ""
+"A 6-inch (or about 15 cm) long piece of rawhide or leather cord.  Useful for"
+" some purposes, but not as strong or flexible as proper string."
+msgstr ""
+"생가죽이나 가죽 끈으로 만든 6인치 (15cm) 길이의 끈입니다. 몇몇 용도로는 쓸만하겠지만, 제대로 된 끈만큼 튼튼하거나 유연하지는 "
+"않습니다."
+
+#: data/json/items/generic/string.json
+msgid "long leather cord"
+msgid_plural "long leather cords"
+msgstr[0] "긴 가죽 끈"
+
+#. ~ Description for {'str': 'long leather cord'}
+#: data/json/items/generic/string.json
+msgid ""
+"A 3-foot (or about 90 cm) long piece of rawhide or leather cord.  Useful for"
+" some purposes, but not as strong or flexible as proper string."
+msgstr ""
+"생가죽이나 가죽 끈으로 만든 3피트 (90cm) 길이의 끈입니다. 몇몇 용도로는 쓸만하겠지만, 제대로 된 끈만큼 튼튼하거나 유연하지는 "
+"않습니다."
+
+#: data/json/items/generic/string.json
 #: data/mods/Item_Category_Overhaul/overwrite_scrap.json
 msgid "short string"
 msgid_plural "short strings"
@@ -93706,6 +94113,20 @@ msgid ""
 "Civil War, noted for its reliability."
 msgstr "미국 남북전쟁 당시에 흔히 쓰였던 경량(포병 기준) 화포로, 뛰어난 신뢰성이 특기할만합니다."
 
+#: data/json/items/gun/cannon.json
+msgid "makeshift 3-inch cannon"
+msgid_plural "makeshift 3-inch cannons"
+msgstr[0] "급조 3인치 대포"
+
+#: data/json/items/gun/cannon.json
+msgid ""
+"A muzzleloading blackpowder cannon made from logs bored for 3-inch shells, "
+"reinforced with iron bands.  While lighter and easier to produce, it's not "
+"as effective and less durable than the real deal."
+msgstr ""
+"통나무에 3인치 포탄이 들어갈만한 구멍을 내고 강철 띠로 보강해 만든 전장식 흑색화약 대포입니다. 가볍고 만들기 쉽지만, 진짜 대포보다는"
+" 화력이 떨어지고 내구성도 부족합니다."
+
 #: data/json/items/gun/chemical_spray.json
 msgid "makeshift chemical thrower"
 msgid_plural "makeshift chemical throwers"
@@ -93979,19 +94400,34 @@ msgstr ""
 "없으면 제대로 사격할 수 없습니다. 끔찍할 정도의 UPS 덕분에 장기간의 교전에 부적절한 것은 말할 필요도 없죠."
 
 #: data/json/items/gun/metal_rail.json
+msgid "makeshift ferromagnetic rail rifle"
+msgid_plural "makeshift ferromagnetic rail rifles"
+msgstr[0] "급조 자성 레일 라이플"
+
+#: data/json/items/gun/metal_rail.json
+msgid ""
+"An electrically propelled steel rail launcher handcrafted from scrap.  The "
+"hypervelocity metal stake that it fires is accelerated to the point of "
+"spontaneous combustion by a Lorentz force generated by electromagnetic "
+"induction, powered by a standard UPS."
+msgstr ""
+"고철로 만든 수제 전기추진식 강철 레일발사기입니다. 로렌츠 힘의 전자기 유도를 통해 탄환이 되는 금속 말뚝을 자연연소 지점까지 가속시켜 "
+"초고속으로 발사합니다. 표준 UPS로 작동합니다."
+
+#: data/json/items/gun/metal_rail.json
 msgid "ferromagnetic rail rifle"
 msgid_plural "ferromagnetic rail rifles"
 msgstr[0] "강자성 레일 라이플"
 
 #: data/json/items/gun/metal_rail.json
 msgid ""
-"A single-shot, electrically propelled, steel rail launcher handcrafted from "
-"scrap.  The hypervelocity metal stake that it fires is accelerated to the "
-"point of spontaneous combustion by a Lorentz force generated by "
-"electromagnetic induction, powered by a standard UPS."
+"An electrically propelled steel rail launcher designed for urban warfare "
+"situations where ammo is scarce.  The hypervelocity metal stake that it "
+"fires is accelerated to the point of spontaneous combustion by a Lorentz "
+"force generated by electromagnetic induction, powered by a standard UPS."
 msgstr ""
-"전기로 추진되며 고철을 이용해 제작한 단발식 강철 레일발사기입니다. 로렌츠 힘의 전자기 유도로 인해 자발적으로 연소되어 강철 말뚝이 "
-"초고속으로 발사됩니다. 기본형 UPS 로 충전됩니다."
+"탄약 부족이 흔한 시가전 환경을 염두에 두고 설계된 전기추진식 강철 레일발사기입니다. 로렌츠 힘의 전자기 유도를 통해 탄환이 되는 금속 "
+"말뚝을 자연연소 지점까지 가속시켜 초고속으로 발사합니다. 표준 UPS로 작동합니다."
 
 #: data/json/items/gun/mininuke_mod.json
 msgid "mininuke launcher"
@@ -94087,9 +94523,9 @@ msgstr[0] "코일건"
 
 #: data/json/items/gun/nail.json
 msgid ""
-"A homemade gun, using electromagnets to accelerate a ferromagnetic "
+"A homemade gun, using electromagnets to accelerate a small ferromagnetic "
 "projectile to high velocity.  Powered by UPS."
-msgstr "전자석을 사용해 강자성 물질을 높은 속도로 가속시켜 쏘아내는 수제 총. UPS로 작동합니다."
+msgstr "전자석을 사용해 소형 강자성 물질을 가속시켜 쏘아내는 수제 총기입니다. UPS로 작동합니다."
 
 #: data/json/items/gun/nail.json data/mods/Aftershock/items/gun/advanced.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
@@ -95272,6 +95708,21 @@ msgid ""
 "A large suppressor designed to work with shotguns.  It's a lot more complex "
 "than a suppressor for a pistol or rifle."
 msgstr "산탄총에 장착하기 위한 커다란 소음기입니다. 권총이나 소총용 소음기보다 훨씬 복잡합니다."
+
+#: data/json/items/gunmod/muzzle.json
+msgid "homemade shotgun suppressor"
+msgid_plural "homemade shotgun suppressors"
+msgstr[0] "수제 산탄총 소음기"
+
+#: data/json/items/gunmod/muzzle.json
+msgid ""
+"A large homemade suppressor designed for shotguns.  More complex than normal"
+" makeshift suppressors, its improvised baffles will deteriorate with use.  "
+"When attached, it will interfere with your ability to aim down the base "
+"sights of the gun."
+msgstr ""
+"산탄총에 장착할 수 있도록 설계된 커다란 수제 소음기입니다. 평범한 수제 소음기에 비해 훨씬 복잡한 탓에, 급조된 소음차단부가 사용에 "
+"따라 손상될 것입니다. 장착되면 총기의 기본 조준장비로 조준하는 것을 방해합니다."
 
 #: data/json/items/gunmod/muzzle.json
 msgid "suppressor"
@@ -99300,6 +99751,18 @@ msgstr ""
 "강철띠와 가시를 신중하게 박아넣은 나무 몽둥이입니다. 제대로 된 메이스처럼 효과적이거나 멋지지는 않지만, 중세 전장에서부터 쓰여온 이 "
 "무기의 역사는 주목할만합니다."
 
+#: data/json/items/melee/bludgeons.json
+msgid "bone mace"
+msgid_plural "bone maces"
+msgstr[0] "뼈 메이스"
+
+#. ~ Description for {'str': 'bone mace'}
+#: data/json/items/melee/bludgeons.json
+msgid ""
+"This mace is carved from a series of sturdy bones, capable of bashing faces "
+"in with swiftness and efficiency."
+msgstr "단단한 뼈를 깎아 만든 메이스로, 남의 낯짝을 빠르고 효율적으로 후려칠 수 있습니다."
+
 #: data/json/items/melee/fake.json
 msgid "bionic claws"
 msgid_plural "bionic claws"
@@ -99939,6 +100402,18 @@ msgid ""
 "be repaired using a 3D printer."
 msgstr ""
 "3D 프린터를 이용해 만든 탄소섬유 창입니다. 제조 방식 덕분에 일반적인 창에 비해 훨씬 가볍지만, 3D 프린터로만 수리할 수 있습니다."
+
+#: data/json/items/melee/spears_and_polearms.json
+msgid "bone glaive"
+msgid_plural "bone glaives"
+msgstr[0] "뼈 글레이브"
+
+#. ~ Description for {'str': 'bone glaive'}
+#: data/json/items/melee/spears_and_polearms.json
+msgid ""
+"This glaive's blade is carved from a single massive bone, and is capable of "
+"slicing foes in with swiftness and efficiency."
+msgstr "단단한 뼈를 깎아 만든 칼날이 달린 글레이브로, 적을 빠르고 효율적으로 베어낼 수 있습니다."
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "2-by-sword"
@@ -101120,6 +101595,14 @@ msgid "chainsaw lajatang (off)"
 msgid_plural "chainsaw lajatangs (off)"
 msgstr[0] "엔진톱 월아산 (꺼짐)"
 
+#. ~ Use action msg for {'str': 'chainsaw lajatang (off)', 'str_pl': 'chainsaw
+#. lajatangs (off)'}.
+#. ~ Use action msg for {'str': 'electric chainsaw lajatang (off)', 'str_pl':
+#. 'electric chainsaw lajatangs (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You turn on the chainsaw lajatang."
+msgstr "엔진톱 월아산의 전원을 켰습니다."
+
 #. ~ Description for {'str': 'chainsaw lajatang (off)', 'str_pl': 'chainsaw
 #. lajatangs (off)'}
 #: data/json/items/melee/swords_and_blades.json
@@ -101137,6 +101620,14 @@ msgid "chainsaw lajatang (on)"
 msgid_plural "chainsaw lajatangs (on)"
 msgstr[0] "엔진톱 월아산 (켜짐)"
 
+#. ~ Use action msg for {'str': 'chainsaw lajatang (on)', 'str_pl': 'chainsaw
+#. lajatangs (on)'}.
+#. ~ Use action msg for {'str': 'electric chainsaw lajatang (on)', 'str_pl':
+#. 'electric chainsaw lajatangs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You turn off the chainsaw lajatang."
+msgstr "엔진톱 월아산의 전원을 껐습니다."
+
 #. ~ Description for {'str': 'chainsaw lajatang (on)', 'str_pl': 'chainsaw
 #. lajatangs (on)'}
 #: data/json/items/melee/swords_and_blades.json
@@ -101150,7 +101641,7 @@ msgstr ""
 #: data/mods/No_Hope/Items/swords_and_blades.json
 msgid "electric chainsaw lajatang (off)"
 msgid_plural "electric chainsaw lajatangs (off)"
-msgstr[0] "전기 엔진톱 월아산 (켜짐)"
+msgstr[0] "전기톱 월아산 (꺼짐)"
 
 #. ~ Description for {'str': 'electric chainsaw lajatang (off)', 'str_pl':
 #. 'electric chainsaw lajatangs (off)'}
@@ -101168,7 +101659,7 @@ msgstr ""
 #: data/mods/No_Hope/Items/swords_and_blades.json
 msgid "electric chainsaw lajatang (on)"
 msgid_plural "electric chainsaw lajatangs (on)"
-msgstr[0] "전기 엔진톱 월아산 (꺼짐)"
+msgstr[0] "전기톱 월아산 (켜짐)"
 
 #. ~ Description for {'str': 'electric chainsaw lajatang (on)', 'str_pl':
 #. 'electric chainsaw lajatangs (on)'}
@@ -101260,6 +101751,14 @@ msgid "combat chainsaw (off)"
 msgid_plural "combat chainsaws (off)"
 msgstr[0] "전투용 엔진톱 (꺼짐)"
 
+#. ~ Use action msg for {'str': 'combat chainsaw (off)', 'str_pl': 'combat
+#. chainsaws (off)'}.
+#. ~ Use action msg for {'str': 'electric combat chainsaw (off)', 'str_pl':
+#. 'electric combat chainsaws (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You turn on the combat chainsaw."
+msgstr "전투용 엔진톱의 전원을 켰습니다."
+
 #. ~ Description for {'str': 'combat chainsaw (off)', 'str_pl': 'combat
 #. chainsaws (off)'}
 #: data/json/items/melee/swords_and_blades.json
@@ -101274,6 +101773,14 @@ msgid "combat chainsaw (on)"
 msgid_plural "combat chainsaws (on)"
 msgstr[0] "전투용 엔진톱 (켜짐)"
 
+#. ~ Use action msg for {'str': 'combat chainsaw (on)', 'str_pl': 'combat
+#. chainsaws (on)'}.
+#. ~ Use action msg for {'str': 'electric combat chainsaw (on)', 'str_pl':
+#. 'electric combat chainsaws (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You turn off the combat chainsaw."
+msgstr "전투용 엔진톱의 전원을 껐습니다."
+
 #. ~ Description for {'str': 'combat chainsaw (on)', 'str_pl': 'combat
 #. chainsaws (on)'}
 #: data/json/items/melee/swords_and_blades.json
@@ -101285,7 +101792,7 @@ msgstr "전투용 엔진톱. 작동 중이며, 휘발유를 소모하고 있다.
 #: data/json/items/melee/swords_and_blades.json
 msgid "electric combat chainsaw (off)"
 msgid_plural "electric combat chainsaws (off)"
-msgstr[0] "전기 전투용 엔진톱 (꺼짐)"
+msgstr[0] "전투용 전기톱 (꺼짐)"
 
 #. ~ Description for {'str': 'electric combat chainsaw (off)', 'str_pl':
 #. 'electric combat chainsaws (off)'}
@@ -101299,7 +101806,7 @@ msgstr "전기톱을 상당히 개조해 무기로 쓰기 효율적으로 만든
 #: data/json/items/melee/swords_and_blades.json
 msgid "electric combat chainsaw (on)"
 msgid_plural "electric combat chainsaws (on)"
-msgstr[0] "전기 전투용 엔진톱 (켜짐)"
+msgstr[0] "전투용 전기톱 (켜짐)"
 
 #. ~ Description for {'str': 'electric combat chainsaw (on)', 'str_pl':
 #. 'electric combat chainsaws (on)'}
@@ -101418,6 +101925,43 @@ msgid ""
 msgstr ""
 "3D 프린터를 이용해 만든 탄소섬유 양손검입니다. 제조 방식 덕분에 일반적인 검에 비해 훨씬 가볍지만, 3D 프린터로만 수리할 수 "
 "있습니다."
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "stinger dagger"
+msgid_plural "stinger daggers"
+msgstr[0] "독침 단검"
+
+#. ~ Description for {'str': 'stinger dagger'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"A dagger made from a sharpened mutant insect stinger.  It's only natural "
+"that the Cataclysm would advent new, creative forms of old weapons."
+msgstr ""
+"예리하게 날을 세운 돌연변이 곤충의 독침으로 만든 단검입니다. 대재앙 이전의 옛 무기를 새로이 창의적으로 재구성한 형태입니다."
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "sharktooth leiomano"
+msgid_plural "sharktooth leiomanos"
+msgstr[0] "상어이빨 뼈몽둥이"
+
+#. ~ Description for {'str': 'sharktooth leiomano'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"A flat wooden club with razor-sharp teeth set into the edges.  This was a "
+"weapon of various Polynesian peoples, and was used to great effect."
+msgstr "모서리에 상어이빨을 박아넣은 평평한 나무 몽둥이입니다. 폴리네시아 전통 무기로, 대단히 뛰어난 효과를 보여줬습니다."
+
+#: data/json/items/melee/swords_and_blades.json
+msgid "bone machete"
+msgid_plural "bone machetes"
+msgstr[0] "뼈 마체테"
+
+#. ~ Description for {'str': 'bone machete'}
+#: data/json/items/melee/swords_and_blades.json
+msgid ""
+"This shortsword is carved from a single massive bone, and is capable of "
+"slicing foes in with swiftness and efficiency."
+msgstr "단단한 뼈를 깎아 만든 숏소드로, 적을 빠르고 효율적으로 베어낼 수 있습니다."
 
 #: data/json/items/melee/unarmed_weapons.json
 msgid "tiger claws"
@@ -101608,6 +102152,22 @@ msgstr ""
 "3D 프린터를 이용해 만든 탄소섬유 카타르입니다. 제조 방식 덕분에 일반적인 카타르에 비해 훨씬 가볍지만, 3D 프린터로만 수리할 수 "
 "있습니다."
 
+#: data/json/items/melee/unarmed_weapons.json
+msgid "sharktooth cestus"
+msgid_plural "sharktooth cestuses"
+msgstr[0] "상어이빨 세스터스"
+
+#. ~ Description for {'str': 'sharktooth cestus', 'str_pl': 'sharktooth
+#. cestuses'}
+#: data/json/items/melee/unarmed_weapons.json
+msgid ""
+"This weapon is a series of leather wrappings with a bone plate that has a "
+"series of razor-sharp teeth attached to it.  For when your punches need more"
+" bite."
+msgstr ""
+"뼈 장갑판에 면도날처럼 예리한 이빨을 여럿 달고 가죽 끈을 감아둔 무기입니다. 주먹을 휘두르며 적을 찌르고 싶다면 이게 바로 당신을 위한"
+" 무기입니다."
+
 #: data/json/items/ranged/archery.json
 msgid "crude wooden arrow"
 msgid_plural "crude wooden arrows"
@@ -101680,7 +102240,8 @@ msgstr[0] "조잡한 화염 경화 화살"
 msgid ""
 "A simple fletched wooden arrow shaft with a fire-hardened and sharpened tip."
 "  Stands a low chance of remaining intact once fired."
-msgstr "불로 그을린 뾰족한 촉과 깃을 붙인 나무 화살. 재사용 확률 낮음."
+msgstr ""
+"불에 구워 단단하고 예리하게 만든 나무 화살촉과 깃을 붙인 나무 화살입니다. 한번 쏘고 나면 쉽게 부러져서 다시 써먹기 꽤 어렵습니다."
 
 #: data/json/items/ranged/archery.json
 msgid "wooden small game arrow"
@@ -101705,7 +102266,35 @@ msgstr[0] "간이 필드 포인트 화살"
 msgid ""
 "A simple fletched wooden arrow shaft with a makeshift arrowhead.  Stands a "
 "low chance of remaining intact once fired."
-msgstr "조잡한 화살촉과 깃이 달린 나무 화살. 재사용 확률 낮음."
+msgstr "조잡한 화살촉과 깃을 붙인 나무 화살입니다. 한번 쏘고 나면 쉽게 부러져서 다시 써먹기 꽤 어렵습니다."
+
+#: data/json/items/ranged/archery.json
+msgid "stinger arrow"
+msgid_plural "stinger arrows"
+msgstr[0] "독침 화살"
+
+#. ~ Description for {'str': 'stinger arrow'}
+#: data/json/items/ranged/archery.json
+msgid ""
+"A simple fletched wooden arrow shaft with an arrowhead carved from a mutated"
+" insect stinger.  It paralyzes enemies it hits and stands a somewhat low "
+"chance of remaining intact once fired."
+msgstr ""
+"돌연변이 곤충의 독침을 깎아 만든 화살촉과 깃을 붙인 나무 화살입니다. 한번 쏘고 나면 쉽게 부러져서 다시 써먹기 어렵지만, 적중한 적을"
+" 마비시킵니다."
+
+#: data/json/items/ranged/archery.json
+msgid "sharktooth arrow"
+msgid_plural "sharktooth arrows"
+msgstr[0] "상어이빨 화살"
+
+#. ~ Description for {'str': 'sharktooth arrow'}
+#: data/json/items/ranged/archery.json
+msgid ""
+"A simple fletched wooden arrow shaft with an arrowhead carved from a "
+"serrated tooth.  It stands a somewhat low chance of remaining intact once "
+"fired."
+msgstr "톱니모양 이빨을 깎아 만든 화살촉과 깃을 붙인 나무 화살입니다. 한번 쏘고 나면 쉽게 부러져서 다시 써먹기 어렵습니다."
 
 #: data/json/items/ranged/archery.json
 msgid "simple metal arrow"
@@ -101717,7 +102306,8 @@ msgstr[0] "조잡한 금속 화살"
 msgid ""
 "A simple fletched steel arrow shaft with a flattened and sharpened tip.  "
 "Stands a somewhat low chance of remaining intact once fired."
-msgstr "날카롭게 두드린 촉과 깃이 달린 단순한 강철 화살. 재사용 확률 조금 낮음."
+msgstr ""
+"날카롭게 두드려 평평하고 예리하게 만든 금속 화살촉과 깃을 붙인 나무 화살입니다. 한번 쏘고 나면 쉽게 부러져서 다시 써먹기 어렵습니다."
 
 #: data/json/items/ranged/archery.json
 msgid "aluminum broadhead arrow"
@@ -102029,6 +102619,33 @@ msgid ""
 "woodland creatures without splattering them all over the ground.  Stands a "
 "decent chance of remaining intact once fired."
 msgstr "뭉툭한 촉과 깃이 달린 나무 볼트. 위력이 낮아 작은 동물을 피떡으로 만들지 않는다. 재사용 확률 평균."
+
+#: data/json/items/ranged/crossbows.json
+msgid "stinger bolt"
+msgid_plural "stinger bolts"
+msgstr[0] "독침 볼트"
+
+#. ~ Description for {'str': 'stinger bolt'}
+#: data/json/items/ranged/crossbows.json
+msgid ""
+"A simple fletched wooden crossbow bolt with a tip carved from a mutated "
+"insect stinger.  It paralyzes enemies it hits and stands a decent chance of "
+"remaining intact once fired."
+msgstr ""
+"돌연변이 곤충의 독침을 깎아 만든 화살촉과 깃을 붙인 나무 볼트입니다. 한번 쏘고 나면 쉽게 부러져서 다시 써먹기 어렵지만, 적중한 적을"
+" 마비시킵니다."
+
+#: data/json/items/ranged/crossbows.json
+msgid "sharktooth bolt"
+msgid_plural "sharktooth bolts"
+msgstr[0] "상어이빨 볼트"
+
+#. ~ Description for {'str': 'sharktooth bolt'}
+#: data/json/items/ranged/crossbows.json
+msgid ""
+"A simple fletched crossbow bolt shaft with a tip carved from a serrated "
+"tooth.  It stands a somewhat low chance of remaining intact once fired."
+msgstr "톱니모양 이빨을 깎아 만든 화살촉과 깃을 붙인 나무 볼트입니다. 한번 쏘고 나면 쉽게 부러져서 다시 써먹기 어렵습니다."
 
 #: data/json/items/ranged/crossbows.json
 msgid "simple metal bolt"
@@ -102628,7 +103245,7 @@ msgstr "깨지기 쉬운 커다란 유리판. 창문을 갈아끼울 때 사용�
 #: data/mods/Item_Category_Overhaul/overwrite_scrap.json
 msgid "sheet of reinforced glass"
 msgid_plural "sheets of reinforced glass"
-msgstr[0] "강화된 유리판"
+msgstr[0] "강화 유리판"
 
 #. ~ Description for {'str': 'sheet of reinforced glass', 'str_pl': 'sheets of
 #. reinforced glass'}
@@ -102640,7 +103257,7 @@ msgstr "철사로 보강된 커다란 유리판."
 #: data/mods/Item_Category_Overhaul/overwrite_scrap.json
 msgid "pane of reinforced glass"
 msgid_plural "panes of reinforced glass"
-msgstr[0] "강화된 판유리"
+msgstr[0] "강화 판유리"
 
 #. ~ Description for {'str': 'pane of reinforced glass', 'str_pl': 'panes of
 #. reinforced glass'}
@@ -103457,6 +104074,12 @@ msgid "electric carver (off)"
 msgid_plural "electric carvers (off)"
 msgstr[0] "전동칼 (꺼짐)"
 
+#. ~ Use action msg for {'str': 'electric carver (off)', 'str_pl': 'electric
+#. carvers (off)'}.
+#: data/json/items/tool/cooking.json
+msgid "You turn on the electric carver."
+msgstr "전동칼의 전원을 켰습니다."
+
 #. ~ Description for {'str': 'electric carver (off)', 'str_pl': 'electric
 #. carvers (off)'}
 #: data/json/items/tool/cooking.json
@@ -103470,6 +104093,12 @@ msgstr "배터리로 돌아가는 전동 고기칼입니다. 두 톱날이 함�
 msgid "electric carver (on)"
 msgid_plural "electric carvers (on)"
 msgstr[0] "전동칼 (켜짐)"
+
+#. ~ Use action msg for {'str': 'electric carver (on)', 'str_pl': 'electric
+#. carvers (on)'}.
+#: data/json/items/tool/cooking.json
+msgid "You turn off the electric carver."
+msgstr "전동칼의 전원을 껐습니다."
 
 #. ~ Description for {'str': 'electric carver (on)', 'str_pl': 'electric
 #. carvers (on)'}
@@ -105590,12 +106219,12 @@ msgstr ""
 #: data/json/items/tool/explosives.json
 msgid ""
 "A bottle of flammable liquid with a flaming rag stoppered in its neck.  "
-"Throwing it will shatter the bottle on impact and ignite a fireball.  "
-"Dropping it will set you on fire, so don't do that unless you want to burn "
-"to death."
+"Throwing it will shatter the bottle on impact and ignite a fireball.  You "
+"can also activate it to smash it on yourself, but why would you want to do "
+"that?"
 msgstr ""
-"병 안에 인화성 액체와 불에 잘 붙는 천이 들어가 있습니다. 던지면 병이 깨질 것이고, 불이 확산할 것입니다. 당신이 던지지 않으면 불이"
-" 꺼질 것입니다. 불붙은 상태로 버리는 것은 안전하지 않습니다."
+"인화성 액체와 가연성 천으로 채워진 병입니다. 던지면 병이 깨져 화염구가 터져나올 것입니다. 원한다면 주먹으로 내리쳐 곧장 터뜨릴 수도 "
+"있겠지만, 그런 짓을 굳이 해야 할까요?"
 
 #: data/json/items/tool/explosives.json
 msgid "improvised pipe bomb"
@@ -106469,6 +107098,12 @@ msgid "hedge trimmer (off)"
 msgid_plural "hedge trimmers (off)"
 msgstr[0] "전정기 (꺼짐)"
 
+#. ~ Use action msg for {'str': 'hedge trimmer (off)', 'str_pl': 'hedge
+#. trimmers (off)'}.
+#: data/json/items/tool/landscaping.json
+msgid "You turn on the hedge trimmer."
+msgstr "전정기의 전원을 켰습니다."
+
 #. ~ Description for {'str': 'hedge trimmer (off)', 'str_pl': 'hedge trimmers
 #. (off)'}
 #: data/json/items/tool/landscaping.json
@@ -106485,6 +107120,12 @@ msgstr ""
 msgid "hedge trimmer (on)"
 msgid_plural "hedge trimmers (on)"
 msgstr[0] "전정기 (켜짐)"
+
+#. ~ Use action msg for {'str': 'hedge trimmer (on)', 'str_pl': 'hedge
+#. trimmers (on)'}.
+#: data/json/items/tool/landscaping.json
+msgid "You turn off the hedge trimmer."
+msgstr "전정기의 전원을 껐습니다."
 
 #. ~ Description for {'str': 'hedge trimmer (on)', 'str_pl': 'hedge trimmers
 #. (on)'}
@@ -107090,6 +107731,12 @@ msgid "masonry saw (off)"
 msgid_plural "masonry saws (off)"
 msgstr[0] "석조 톱 (꺼짐)"
 
+#. ~ Use action msg for {'str': 'masonry saw (off)', 'str_pl': 'masonry saws
+#. (off)'}.
+#: data/json/items/tool/masonry.json
+msgid "You turn on the masonry saw."
+msgstr "석조 톱의 전원을 켰습니다."
+
 #. ~ Description for {'str': 'masonry saw (off)', 'str_pl': 'masonry saws
 #. (off)'}
 #: data/json/items/tool/masonry.json
@@ -107105,6 +107752,12 @@ msgstr ""
 msgid "masonry saw (on)"
 msgid_plural "masonry saws (on)"
 msgstr[0] "석조 톱 (켜짐)"
+
+#. ~ Use action msg for {'str': 'masonry saw (on)', 'str_pl': 'masonry saws
+#. (on)'}.
+#: data/json/items/tool/masonry.json
+msgid "You turn off the masonry saw."
+msgstr "석조 톱의 전원을 껐습니다."
 
 #. ~ Description for {'str': 'masonry saw (on)', 'str_pl': 'masonry saws
 #. (on)'}
@@ -109777,6 +110430,12 @@ msgid "chainsaw (off)"
 msgid_plural "chainsaws (off)"
 msgstr[0] "엔진톱 (꺼짐)"
 
+#. ~ Use action msg for {'str': 'chainsaw (off)', 'str_pl': 'chainsaws
+#. (off)'}.
+#: data/json/items/tool/woodworking.json
+msgid "You turn on the chainsaw."
+msgstr "엔진톱의 전원을 켰습니다."
+
 #. ~ Description for {'str': 'chainsaw (off)', 'str_pl': 'chainsaws (off)'}
 #: data/json/items/tool/woodworking.json
 msgid ""
@@ -109791,6 +110450,11 @@ msgstr ""
 msgid "chainsaw (on)"
 msgid_plural "chainsaws (on)"
 msgstr[0] "엔진톱 (켜짐)"
+
+#. ~ Use action msg for {'str': 'chainsaw (on)', 'str_pl': 'chainsaws (on)'}.
+#: data/json/items/tool/woodworking.json
+msgid "You turn off the chainsaw."
+msgstr "엔진톱의 전원을 껐습니다."
 
 #. ~ Description for {'str': 'chainsaw (on)', 'str_pl': 'chainsaws (on)'}
 #: data/json/items/tool/woodworking.json
@@ -109824,6 +110488,12 @@ msgstr ""
 msgid "circular saw (on)"
 msgid_plural "circular saws (on)"
 msgstr[0] "원형톱 (켜짐)"
+
+#. ~ Use action msg for {'str': 'circular saw (on)', 'str_pl': 'circular saws
+#. (on)'}.
+#: data/json/items/tool/woodworking.json
+msgid "You turn off the circular saw."
+msgstr "원형톱의 전원을 껐습니다."
 
 #. ~ Description for {'str': 'circular saw (on)', 'str_pl': 'circular saws
 #. (on)'}
@@ -109864,6 +110534,12 @@ msgid "electric chainsaw (off)"
 msgid_plural "electric chainsaws (off)"
 msgstr[0] "전기톱 (꺼짐)"
 
+#. ~ Use action msg for {'str': 'electric chainsaw (off)', 'str_pl': 'electric
+#. chainsaws (off)'}.
+#: data/json/items/tool/woodworking.json
+msgid "You turn on the electric chainsaw."
+msgstr "전기톱의 전원을 켰습니다."
+
 #. ~ Description for {'str': 'electric chainsaw (off)', 'str_pl': 'electric
 #. chainsaws (off)'}
 #: data/json/items/tool/woodworking.json
@@ -109879,6 +110555,12 @@ msgstr ""
 msgid "electric chainsaw (on)"
 msgid_plural "electric chainsaws (on)"
 msgstr[0] "전기톱 (켜짐)"
+
+#. ~ Use action msg for {'str': 'electric chainsaw (on)', 'str_pl': 'electric
+#. chainsaws (on)'}.
+#: data/json/items/tool/woodworking.json
+msgid "You turn off the electric chainsaw."
+msgstr "전기톱의 전원을 껐습니다."
 
 #. ~ Description for {'str': 'electric chainsaw (on)', 'str_pl': 'electric
 #. chainsaws (on)'}
@@ -110247,6 +110929,19 @@ msgid "This is a sturdy saw, useful for cutting through metal objects."
 msgstr "금속으로 된 물건을 자를 때 유용하게 쓰이는 튼튼한 톱입니다."
 
 #: data/json/items/tool/workshop.json
+msgid "wire saw"
+msgid_plural "wire saws"
+msgstr[0] "실톱"
+
+#. ~ Description for {'str': 'wire saw'}
+#: data/json/items/tool/workshop.json
+msgid ""
+"This is a flexible saw made from thin wire, with simple handles on either "
+"end.  It should suffice for light metal and wood sawing, or for cutting "
+"chain-link fences."
+msgstr "가느다란 와이어 양끝에 간단한 손잡이를 단 유연한 톱입니다. 경금속이나 나무, 혹은 사슬 울타리를 자르기에 충분합니다."
+
+#: data/json/items/tool/workshop.json
 #: data/mods/Item_Category_Overhaul/overwrite_tools.json
 msgid "hammer"
 msgid_plural "hammers"
@@ -110441,7 +111136,7 @@ msgstr "건설 현장에서 콘크리트나 회반죽을 평평하게 펴는데 
 #: data/mods/Item_Category_Overhaul/overwrite_tools.json
 msgid "misc repair kit"
 msgid_plural "misc repair kits"
-msgstr[0] "잡다한 수리도구"
+msgstr[0] "범용 수리도구"
 
 #. ~ Description for {'str': 'misc repair kit'}
 #: data/json/items/tool/workshop.json
@@ -110451,8 +111146,24 @@ msgid ""
 "duty wood cutting, and a patch of soft material for cleaning surfaces.  If "
 "supplied with duct tape, it can be used to repair certain items."
 msgstr ""
-"교체 부품을 정밀하게 조각하기 위한 작은 조각 칼,  튼튼한 목재 절단을 위한 목재 톱, 표면을 청소하기 위한 부드러운 천조각으로 "
-"구성되어 있는 휴대용 도구모음. 덕트 테이프가 있다면 특정 품목의 수리에도 사용할 수 있습니다."
+"교체용 부품을 다듬기 위한 조각칼, 단단한 나무를 자르기 위한 목공톱, 표면을 닦아내기 위한 부드러운 천조각으로 이뤄진 휴대용 "
+"도구모음입니다. 덕트 테이프가 있다면 특정 물품의 수리에도 써먹을 수 있습니다."
+
+#: data/json/items/tool/workshop.json
+msgid "makeshift repair kit"
+msgid_plural "makeshift repair kits"
+msgstr[0] "간이 수리도구"
+
+#. ~ Description for {'str': 'makeshift repair kit'}
+#: data/json/items/tool/workshop.json
+msgid ""
+"This is a portable toolkit, consisting of a primitive knife for carving "
+"replacement parts, an adze for more heavy-duty wood cutting, and a patch of "
+"soft material for cleaning surfaces.  It can be used to repair certain items"
+" if supplied with pitch, though it isn't ideal for complex work."
+msgstr ""
+"교체용 부품을 다듬기 위한 원시적인 칼, 단단한 나무를 자르기 위한 자귀, 표면을 닦아내기 위한 부드러운 천조각으로 이뤄진 휴대용 "
+"도구모음입니다. 소나무 수지가 있다면 특정 물품의 수리에도 써먹을 수 있지만, 복잡한 작업에는 큰 도움이 되지 않을 것 같습니다."
 
 #: data/json/items/tool/workshop.json
 #: data/mods/Item_Category_Overhaul/overwrite_tools.json
@@ -113144,6 +113855,20 @@ msgstr[0] "경량형 나무 바퀴 마운트"
 #: data/json/items/vehicle/wheel.json data/json/vehicleparts/wheel.json
 msgid "A piece of wood with holes suitable for a bike or motorbike wheel."
 msgstr "자전거 바퀴나 오토바이 바퀴를 달 수 있도록 구멍이 뚫려있는 나무 조각."
+
+#: data/json/items/vehicle/wheel.json data/json/vehicleparts/wheel.json
+msgid "sled runners"
+msgid_plural "sled runners"
+msgstr[0] "썰매 손잡이"
+
+#. ~ Description for {'str_sp': 'sled runners'}
+#: data/json/items/vehicle/wheel.json
+msgid ""
+"Simple wooden runners for a hand-pulled sled.  They make it easier to drag a"
+" cart across rough terrain, but that's about all they do."
+msgstr ""
+"손으로 끌고다니는 썰매에 달 수 있는 간단한 나무 손잡이입니다. 차량을 거친 지형 너머로 끌고 가는데 유용하지만, 그 이외에는 별 쓸모가"
+" 없습니다."
 
 #. ~ Sign
 #: data/json/mapgen/Bastion_Fort.json data/json/mapgen/s_gas.json
@@ -118013,7 +118738,7 @@ msgstr ""
 "일부는 수생 족제비인 미국 밍크는 한때 모피를 위해 공장에서 사육되었습니다. 물고기를 잘 잡지만 수달이 있어서 물고기보단 육지 생물을 더"
 " 많이 잡습니다."
 
-#: data/json/monsters/mammal.json data/mods/No_Hope/monsters.json
+#: data/json/monsters/mammal.json
 msgid "moose"
 msgid_plural "moose"
 msgstr[0] "무스"
@@ -118579,11 +119304,11 @@ msgstr[0] "비늘 달린 곰"
 #: data/json/monsters/mutant_animal.json
 msgid ""
 "This bear is covered by large, black, scales.  It seems to have slight "
-"problems turning around, but its twitchy, \"spidery\", movement is no slower"
-" than that of normal bears."
+"problems turning around, but its sinuous movement is no slower than that of "
+"normal bears."
 msgstr ""
-"이 곰은 크고 새카만 비늘로 덮여있습니다. 몸을 돌리는데 약간 문제가 있어보이지만, 거미처럼 홱홱 움직이는 그 움직임은 다른 곰에 비해 "
-"딱히 느리지 않습니다."
+"이 곰은 크고 새카만 비늘로 덮여있습니다. 몸을 돌리는데 약간의 문제가 있어보이지만, 구불거리는 움직임은 다른 곰에 비해 딱히 느리지 "
+"않습니다."
 
 #: data/json/monsters/mutant_animal.json
 msgid "Cerbearus"
@@ -121114,25 +121839,25 @@ msgstr ""
 "도금된 뼈와 기형적인 살로 이루어진 이 흉측한 골렘은 원치 않는 짐처럼 무겁고 뾰족한 사지를 뒤로 끌고 갑니다. 전에는 부드럽고 연약한 "
 "뼈들이 보호하기 위해 형태를 중심으로 성장했습니다. 단지, 뼈들은 계속 성장합니다. 그리고 성장합니다. 그리고 성장합니다..."
 
-#: data/json/monsters/zed_soldiers.json data/mods/No_Hope/monsters.json
+#: data/json/monsters/zed_soldiers.json
 msgid "zombie soldier"
 msgid_plural "zombie soldiers"
 msgstr[0] "군인 좀비"
 
 #. ~ Description for {'str': 'zombie soldier'}
-#: data/json/monsters/zed_soldiers.json data/mods/No_Hope/monsters.json
+#: data/json/monsters/zed_soldiers.json
 msgid ""
 "Once a soldier, it is dressed head to toe in combat gear and carries itself "
 "rather steadily for a zombie."
 msgstr "한때는 군인이였으며, 머리부터 발끝까지 군용 장비를 착용하고 있습니다. 다른 좀비보다는 똑바로 걷는 편입니다."
 
-#: data/json/monsters/zed_soldiers.json data/mods/No_Hope/monsters.json
+#: data/json/monsters/zed_soldiers.json
 msgid "black-ops zombie"
 msgid_plural "black-ops zombies"
 msgstr[0] "특수부대원 좀비"
 
 #. ~ Description for {'str': 'black-ops zombie'}
-#: data/json/monsters/zed_soldiers.json data/mods/No_Hope/monsters.json
+#: data/json/monsters/zed_soldiers.json
 msgid ""
 "This soldier zombie's skin radiates a sort of shadowy smoke that obscures "
 "its outline, making its camouflage even harder to see against the "
@@ -121235,13 +121960,13 @@ msgid ""
 "and a sturdy looking helmet."
 msgstr "한때는 조종사였던것, 기본적인 군사적 작업복, 비행사 선글라스, 그리고 튼튼해 보이는 헬멧을 쓰고 있습니다."
 
-#: data/json/monsters/zed_soldiers.json data/mods/No_Hope/monsters.json
+#: data/json/monsters/zed_soldiers.json
 msgid "zombie burner"
 msgid_plural "zombie burners"
 msgstr[0] "화염방사병 좀비"
 
 #. ~ Description for {'str': 'zombie burner'}
-#: data/json/monsters/zed_soldiers.json data/mods/No_Hope/monsters.json
+#: data/json/monsters/zed_soldiers.json
 msgid ""
 "When bullets weren't enough to stop the end of the world, the military tried"
 " fire instead.  Their failure is made manifest in this gas-masked husk, its "
@@ -122645,7 +123370,8 @@ msgstr "결합된 분열."
 
 #. ~ Mutation class name
 #: data/json/mutations/mutation_category.json
-#: data/json/mutations/mutations.json
+#: data/json/mutations/mutations.json data/mods/Monster_Girls/categories.json
+#: data/mods/Monster_Girls/thresh_mutation.json
 msgid "Fey"
 msgstr "요정"
 
@@ -135371,15 +136097,15 @@ msgstr "부들 줄기 수집"
 #. ~ Description for mission '{'str': 'Gather Cattail Stalks'}'
 #: data/json/npcs/missiondef.json
 msgid ""
-"Gather <color_light_blue>80 cattail stalks</color> from the swamp and bring "
+"Gather <color_light_blue>20 cattail stalks</color> from the swamp and bring "
 "them back to <color_light_red>learn how to craft cattail jelly</color>.  "
 "Raise your <color_light_blue>survival skill to at least 1</color> by "
-"harvesting cattail stalks.  <color_light_blue>Bring back the provided "
-"bag</color> as well."
+"harvesting cattail stalks or other plants.  <color_light_blue>Bring back the"
+" provided bag</color> as well."
 msgstr ""
-"늪지에 가서 <color_light_blue>부들 줄기 80개</color>를 모아서 가져가 <color_light_red>부들 젤리를 "
-"만드는 방법 배우기</color>.  부들을 채집하면서 <color_light_blue>생존술을 적어도 1까지</color> 올려야 "
-"한다.  <color_light_blue>같이 받은 가방</color> 또한 가져가야 한다."
+"늪지에서 <color_light_blue>부들 줄기 20개</color>를 모아 <color_light_red>부들 젤리를 만드는 "
+"방법</color>을 배워야 합니다. 부들 줄기나 다른 식물을 채집하며 <color_light_blue>생존술을 최소 1 "
+"이상</color>으로 올려야 합니다. <color_light_blue>제공된 가방 또한 반납</color>해야 합니다."
 
 #: data/json/npcs/missiondef.json
 msgid ""
@@ -135395,11 +136121,11 @@ msgid ""
 "Did you know that cattails are a source of a jelly that works as an "
 "antiseptic and analgesic?  Something like that is likely to be mighty "
 "helpful out here.  I want you to take this bag, head to the nearest swamp, "
-"collect 80 cattail stalks, and bring them back here.  In exchange, I'll show"
+"collect 20 cattail stalks, and bring them back here.  In exchange, I'll show"
 " you how to harvest the jelly."
 msgstr ""
-"부들로 소독과 진통 작용을 하는 젤리를 만들 수 있다는 거 알고 있었어?  지금같은 상황에서는 그런 것들이 꽤 유용할 거야.  이 가방을"
-" 가지고 가까운 늪지에 가서 80개의 부들 줄기를 가지고 돌아와.  그럼 대가로 어떻게 젤리를 추출해내는지 알려줄게."
+"부들로 소독제 겸 진통제 작용을 하는 젤리를 만들 수 있다는 것 알고 있어? 이런 시대에는 그런게 꽤 유용할걸. 이 가방을 가지고 가까운"
+" 늪지에 가서 부들 줄기 20개를 가져와. 그러면 젤리를 어떻게 구하는지 알려줄게."
 
 #: data/json/npcs/missiondef.json
 msgid ""
@@ -161343,6 +162069,16 @@ msgstr[0] "곰보버섯 포자"
 msgid "Some morel mushroom spores."
 msgstr "곰보버섯 포자."
 
+#: data/json/obsoletion/items.json
+msgid "rosin"
+msgid_plural "rosins"
+msgstr[0] "로진"
+
+#. ~ Description for {'str': 'rosin'}
+#: data/json/obsoletion/items.json
+msgid "This is a chunk of yellowish rosin, usable as a flux for soldering."
+msgstr "노란 빛을 띄는 송진 덩어리입니다. 납땜용 플럭스로 쓸 수 있습니다."
+
 #: data/json/obsoletion/missions.json
 msgid "Find a Flu Shot"
 msgstr "독감 주사 찾기"
@@ -171204,7 +171940,7 @@ msgstr ""
 msgid ""
 "A piece of a bug's exoskeleton, but mutated.  The inner side is lined with "
 "veins and strange hooked protuberances."
-msgstr ""
+msgstr "돌연변이 벌레의 외골격입니다. 내부 면에는 혈관과 기이한 갈고리모양 돌기가 박혀있습니다."
 
 #: data/json/snippets/mutant_anatomy.json
 msgid ""
@@ -177354,7 +178090,7 @@ msgstr "차량용 A7 레이저 라이플"
 msgid "mounted shoddy laser rifle"
 msgstr "차량용 조잡한 레이저 소총"
 
-#: data/json/vehicleparts/turret.json data/mods/No_Hope/vehicle_parts.json
+#: data/json/vehicleparts/turret.json
 msgid "mounted Cerberus laser cannon"
 msgstr "차량용 케르베로스 레이저 캐논"
 
@@ -177449,6 +178185,17 @@ msgstr "차량용 자성 레일 라이플"
 #: data/json/vehicleparts/turret.json
 msgid "mounted 3-inch ordnance rifle"
 msgstr "차량용 3인치 화포"
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted makeshift 3-inch cannon"
+msgstr "차량용 급조 3인치 대포"
+
+#. ~ Description for {'str': 'mounted makeshift 3-inch cannon'}
+#: data/json/vehicleparts/turret.json
+msgid ""
+"A muzzleloading cannon improvised from logs reinforced with iron bands, less"
+" effective than a proper artillery piece."
+msgstr "통나무를 강철 띠로 보강해 만든 급조된 전장식 대포입니다. 제대로 된 대포보다는 훨씬 화력이 떨어집니다."
 
 #: data/json/vehicleparts/turret.json
 msgid "mounted M1874 Gatling gun"
@@ -178377,9 +179124,51 @@ msgstr ""
 #. ~ Description for {'str': 'turret mount'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
-"A rotating, universal mount for a weapon.  If your hands are empty, you can "
-"stand on the same tile as a turret mount and 'f'ire the weapon."
-msgstr "회전 가능한 범용 무기 장착대입니다. 손이 비어있다면 이 타일에 서서 무기를 발사(f)할 수 있습니다."
+"A rotating, universal mount for a weapon.  Weapons installed on it can be "
+"fired from the vehicle controls.  If your hands are empty, you can also "
+"stand on the same tile as a mounted gun and 'f'ire the weapon."
+msgstr ""
+"회전 가능한 범용 무기 장착대입니다. 여기 장착된 총기는 차량 제어판에서 원격으로 사격할 수 있습니다. 손이 비어있다면 이 타일에 서서 "
+"장착된 총기를 발사(f)할 수 있습니다."
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "simple foldable wooden turret mount"
+msgstr "수동형 접이식 목재 터렛 장착대"
+
+#. ~ Description for {'str': 'simple foldable wooden turret mount'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"A simple hardpoint for mounting a weapon.  Can only be fired manually, and "
+"can't accept turret controls.  If your hands are empty, you can stand on the"
+" same tile as a mounted gun and 'f'ire the weapon."
+msgstr ""
+"무기를 장착하기 위한 수동형 거점입니다. 장착된 총기는 수동으로만 발사할 수 있으며, 터렛 제어장치가 먹히지 않습니다. 손이 비어있다면 "
+"이 타일에 서서 장착된 총기를 발사(f)할 수 있습니다."
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "simple foldable light turret mount"
+msgstr "수동형 접이식 경량 터렛 장착대"
+
+#. ~ Description for {'str': 'simple foldable light turret mount'}
+#. ~ Description for {'str': 'simple wooden turret mount'}
+#. ~ Description for {'str': 'simple steel turret mount'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"A simple hardpoint for mounting a weapon.  Lacks the necessary electronics "
+"to support firing remotely or installing turret controls.  If your hands are"
+" empty, you can stand on the same tile as a mounted gun and 'f'ire the "
+"weapon."
+msgstr ""
+"무기를 장착하기 위한 수동형 거점입니다. 터렛을 원격으로 제어하거나 터렛 제어장치를 설치하는데 필요한 전자부품이 빠져있습니다. 손이 "
+"비어있다면 이 타일에 서서 장착된 총기를 발사(f)할 수 있습니다."
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "simple wooden turret mount"
+msgstr "수동형 목재 터렛 장착대"
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "simple steel turret mount"
+msgstr "수동형 강철 터렛 장착대"
 
 #. ~ Description for {'str': 'turret control unit'}
 #: data/json/vehicleparts/vehicle_parts.json
@@ -178591,9 +179380,9 @@ msgstr "차량이 회전하려면 적어도 하나의 조종 가능한 바퀴가
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/vehicleparts/vp_flags.json
 msgid ""
-"A heavy weapon mounted in a turret.  It can be fired from the vehicle "
-"controls."
-msgstr "터렛에 장착된 중형 무기입니다. 차량 조종장치로 발사할 수 있습니다."
+"A heavy weapon mounted in a turret.  If your hands are empty, you can stand "
+"on the same tile as a mounted gun and 'f'ire the weapon."
+msgstr "포탑에 장착된 중병기입니다. 손이 비어있다면 이 타일에 서서 장착된 총기를 발사(f)할 수 있습니다."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/vehicleparts/vp_flags.json
@@ -178762,7 +179551,7 @@ msgstr "차량 밖을 보게 해주는 유리판입니다."
 
 #: data/json/vehicleparts/windshields.json
 msgid "reinforced windshield"
-msgstr "강화된 정면유리"
+msgstr "보강된 정면유리"
 
 #. ~ Description for {'str': 'reinforced windshield'}
 #: data/json/vehicleparts/windshields.json
@@ -205229,7 +206018,7 @@ msgstr "덧댄 악마 키틴질 제거"
 
 #: data/mods/Magiclysm/construction_group.json
 msgid "Build Translocator Gate"
-msgstr "전송 관문 만들기"
+msgstr "전송 관문 제작"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/mods/Magiclysm/flags.json
@@ -214945,7 +215734,7 @@ msgstr[0] "내장 산탄총"
 #: data/mods/Modular_Turrets/roboguns.json
 msgid "integral beanbag launcher"
 msgid_plural "integral beanbag launchers"
-msgstr[0] "내장 콩주머니 발사기"
+msgstr[0] "내장 빈백탄 발사기"
 
 #: data/mods/Modular_Turrets/items.json
 #: data/mods/Modular_Turrets/roboguns.json
@@ -215779,6 +216568,28 @@ msgstr "하피"
 msgid "Dryad"
 msgstr "드라이어드"
 
+#. ~ Mutation class: Fey mutagen_message
+#: data/mods/Monster_Girls/categories.json
+msgid "You feel the woods calling to you."
+msgstr "숲이 당신을 부르고 있습니다."
+
+#. ~ Mutation class: Fey iv_message
+#: data/mods/Monster_Girls/categories.json
+msgid "You feel like you could live forever, just like the trees!"
+msgstr "마치 나무들처럼 영원히 살 수 있을듯한 느낌이 듭니다!"
+
+#. ~ Mutation class: Fey Male memorial messsage
+#: data/mods/Monster_Girls/categories.json
+msgctxt "memorial_male"
+msgid "Spoke with the trees."
+msgstr "나무와 수다떱니다."
+
+#. ~ Mutation class: Fey Female memorial messsage
+#: data/mods/Monster_Girls/categories.json
+msgctxt "memorial_female"
+msgid "Spoke with the trees."
+msgstr "나무와 수다떱니다."
+
 #: data/mods/Monster_Girls/modinfo.json
 msgid "Monster Girls Mutations"
 msgstr "괴물 소녀 돌연변이"
@@ -215886,6 +216697,16 @@ msgid "Slime mutagen"
 msgid_plural "Slime mutagens"
 msgstr[0] "슬라임 뮤타젠"
 
+#: data/mods/Monster_Girls/mutagens.json
+msgid "Fey mutagen"
+msgid_plural "Fey mutagens"
+msgstr[0] "요정 뮤타젠"
+
+#: data/mods/Monster_Girls/mutagens.json
+msgid "Fey serum"
+msgid_plural "Fey serums"
+msgstr[0] "요정 혈청"
+
 #. ~ Description for {'str': 'Nekomimi'}
 #: data/mods/Monster_Girls/thresh_mutation.json
 msgid ""
@@ -215973,6 +216794,16 @@ msgid ""
 msgstr ""
 "당신의 비-뉴턴적 육체는 말도 안되게 잘 구부러지고 신축성도 뛰어납니다! 이걸 가지고 해볼만한 짖궂은 일들이 잔뜩 떠오르지만... 지금은"
 " 좀비를 무덤에 도로 처넣는 놀이를 즐기러 떠날 시간입니다."
+
+#. ~ Description for {'str': 'Fey'}
+#: data/mods/Monster_Girls/thresh_mutation.json
+msgid ""
+"You've found yourself with an incredible craving for lembas, as well as a "
+"strong desire to nock an arrow to a bow.  The trees speak to you, and you "
+"speak back.  In the darkest hour of mankind, the fae shall bring the light!"
+msgstr ""
+"렘바스를 향한 믿을 수 없을만큼 강한 갈망이 느껴지며, 동시에 활로 화살을 쏘고 싶다는 욕구도 솟구칩니다. 나무들이 당신에게 이야기하고,"
+" 당신도 나무에게 이야기합니다. 인류의 가장 어두운 시대에, 요정이 빛을 불러올 것입니다!"
 
 #: data/mods/Mundane_Zombies/modinfo.json
 msgid "Mundane Zombies"
@@ -216676,13 +217507,6 @@ msgid ""
 "The Northrop Watchman X-1 is a production series of heavily armored combat "
 "robots.  Initially designed for military patrol and escort service, it rolls"
 " on a set of hydraulic treads and is armed with a M16A4."
-msgstr ""
-
-#. ~ Description for {'str_sp': 'moose'}
-#: data/mods/No_Hope/monsters.json
-msgid ""
-"The Eastern moose, the largest living species of deer.  The bulls are quite "
-"ill-tempered, especially in the rutting season."
 msgstr ""
 
 #: data/mods/No_Hope/professions.json
@@ -217963,6 +218787,10 @@ msgid ""
 "A formation of sand containing special minerals to produce whistling noises "
 "when stepped on and from the wind."
 msgstr "바람이 불거나 밟힐 때 휘파람 소리를 내는 특수한 광물을 함유한 모래의 형체."
+
+#: data/mods/desert_region/desert_terrain.json
+msgid "splosh!"
+msgstr "첨벙!"
 
 #: data/mods/desert_region/desert_terrain.json
 msgid "fweet!"
@@ -221739,6 +222567,10 @@ msgid "Disassemble"
 msgstr "분해"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Kills"
+msgstr "처치 확인"
+
+#: data/raw/keybindings/keybindings.json
 msgid "Unfavorite"
 msgstr "즐겨찾기 해제"
 
@@ -221845,6 +222677,10 @@ msgstr "이전 기록 확인"
 #: data/raw/keybindings/keybindings.json
 msgid "Show next history"
 msgstr "다음 기록 확인"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle AIM Filter Autoreset"
+msgstr "고급 소지품 관리자 필터 자동 초기화 활성화/비활성화"
 
 #: data/raw/keybindings/messages.json
 msgid "Toggle wide display"
@@ -222836,7 +223672,7 @@ msgstr "한 번 더"
 
 #: src/activity_handlers.cpp
 msgid "Repeat until reinforced"
-msgstr "강화될 때까지 반복"
+msgstr "보강될 때까지 반복"
 
 #: src/activity_handlers.cpp
 msgid "Repeat until fully repaired, but don't reinforce"
@@ -224063,6 +224899,20 @@ msgstr "기준 없음 (추가 순서대로 정렬)"
 #, c-format
 msgid "< [<color_yellow>%s</color>] keybindings >"
 msgstr "< [<color_yellow>%s</color>] 단축키 설정 >"
+
+#: src/advanced_inv.cpp
+msgid ""
+"Reset Filter On Close "
+"[<color_light_green>ON</color>|<color_dark_gray>OFF</color>]"
+msgstr ""
+"닫을 때 필터 초기화 [<color_light_green>활성화</color>|<color_dark_gray>비활성화</color>]"
+
+#: src/advanced_inv.cpp
+msgid ""
+"Reset Filter On Close "
+"[<color_dark_gray>ON</color>|<color_light_green>OFF</color>]"
+msgstr ""
+"닫을 때 필터 초기화 [<color_dark_gray>활성화</color>|<color_light_green>비활성화</color>]"
 
 #: src/advanced_inv.cpp
 #, c-format
@@ -226775,6 +227625,12 @@ msgstr "%s(은)는 %s 바이오닉을 먼저 제거해야 %s (을)를 제거할 
 #: src/bionics.cpp
 #, c-format
 msgid ""
+"%s cannot be removed because it is required by the following bionics:%s."
+msgstr "%s(은)는 현재 설치된 바이오닉 %s의 선결사항에 포함되어 제거할 수 없습니다."
+
+#: src/bionics.cpp
+#, c-format
+msgid ""
 "The Telescopic Lenses are part of %s eyes now.  Removing them would leave %s"
 " blind."
 msgstr "망원 렌즈는 %s의 눈의 일부입니다. 이를 제거하면 %s(은)는 장님이 될 것입니다."
@@ -226835,6 +227691,11 @@ msgstr "%1$s(은)는 잠들고, %2$s(이)가 수술을 시작합니다."
 #, c-format
 msgid "%s's parts are jiggled back into their familiar places."
 msgstr "%s의 부품들이 있어야 할 자리로 돌아왔습니다."
+
+#: src/bionics.cpp
+#, c-format
+msgid "CBM requires prior installation of%s."
+msgstr "이 바이오닉을 설치하려면 %s(을)를 먼저 설치해야 합니다."
 
 #: src/bionics.cpp
 #, c-format
@@ -239484,16 +240345,12 @@ msgid "You don't have a digging tool to dig up roots.  Pick %s anyway?"
 msgstr "뿌리를 파낼 도구가 없습니다.  그래도 %s(을)를 수확합니까?"
 
 #: src/iexamine.cpp
-msgid "Nothing can be harvested from this plant in current season."
-msgstr "이 계절에는 식물에서 수확할 수 있는 것이 없습니다."
+msgid "Nothing can be harvested from this currently."
+msgstr "현재 수확할 수 있는 것이 없습니다."
 
 #: src/iexamine.cpp
 msgid "You couldn't harvest anything."
 msgstr "수확할만한 것이 없습니다."
-
-#: src/iexamine.cpp
-msgid "Nothing can be harvested from this plant in current season"
-msgstr "이 계절에는 식물에서 수확할 수 있는 것이 없습니다."
 
 #: src/iexamine.cpp
 msgid "This flower is still alive, despite the harsh conditions…"
@@ -243665,11 +244522,6 @@ msgstr "%s(을)를 작동시키려면 UPS나 파워 아머 인터페이스가 �
 
 #: src/item.cpp
 #, c-format
-msgid "You need a Bionic Power Interface to run the %s!"
-msgstr "%s(을)를 작동시키려면 파워 아머 인터페이스가 있어야 합니다!"
-
-#: src/item.cpp
-#, c-format
 msgid "You need a UPS to run the %s!"
 msgstr "%s(을)를 작동시키려면 UPS가 있어야 합니다!"
 
@@ -244757,132 +245609,6 @@ msgid "There is nothing to siphon nearby."
 msgstr "근처에 빨아들일 것이 없습니다."
 
 #: src/iuse.cpp
-msgid "With a snarl, the combat chainsaw screams to life!"
-msgstr "전투용 엔진톱이 위잉거리는 소음을 내며 작동을 시작했다!"
-
-#: src/iuse.cpp
-msgid "You yank the cord, but nothing happens."
-msgstr "줄을 당겼지만 아무 일도 일어나지 않았다."
-
-#: src/iuse.cpp
-msgid "With a snarl, the electric combat chainsaw screams to life!"
-msgstr "전투용 전기톱이 위잉거리는 소음을 내며 작동을 시작했다!"
-
-#: src/iuse.cpp
-msgid "You pull the trigger, but nothing happens."
-msgstr "방아쇠를 당겼지만, 아무 일도 일어나지 않았다."
-
-#: src/iuse.cpp
-msgid "With a roar, the chainsaw leaps to life!"
-msgstr "엔진톱이 울리며 작동을 시작했다!"
-
-#: src/iuse.cpp
-msgid "With a roar, the electric chainsaw leaps to life!"
-msgstr "전기톱이 울리며 작동을 시작했다!"
-
-#: src/iuse.cpp
-msgid "With a roar, the chainsaws leap to life!"
-msgstr "엔진톱이 울리며 작동을 시작했다!"
-
-#: src/iuse.cpp
-msgid "You yank the cords, but nothing happens."
-msgstr "줄을 당겼지만 아무 일도 일어나지 않았다."
-
-#: src/iuse.cpp
-msgid "With a buzz, the chainsaws leap to life!"
-msgstr "웅웅거리며 엔진톱이 작동을 시작합니다!"
-
-#: src/iuse.cpp
-msgid "The electric carver's serrated blades start buzzing!"
-msgstr "전동칼의 톱니형 칼날이 윙윙거리기 시작했다!"
-
-#: src/iuse.cpp
-msgid "With a roar, the hedge trimmer leaps to life!"
-msgstr "전정기가 울리며 작동을 시작했다!"
-
-#: src/iuse.cpp
-#, c-format
-msgid "Your %s gurgles in the water and stops."
-msgstr ""
-
-#: src/iuse.cpp
-#, c-format
-msgid "Your %s goes quiet."
-msgstr "%s(이)가 조용해졌다."
-
-#: src/iuse.cpp
-msgid "combat chainsaw"
-msgstr "전투용 엔진톱"
-
-#: src/iuse.cpp
-msgid "Your combat chainsaw growls."
-msgstr "전투용 엔진톱이 으르렁거립니다."
-
-#: src/iuse.cpp
-msgid "electric combat chainsaw"
-msgstr "전기 전투용 엔진촙"
-
-#: src/iuse.cpp
-msgid "Your electric combat chainsaw growls."
-msgstr "전기 전투용 엔진톱이 으르렁거립니다."
-
-#: src/iuse.cpp
-msgid "chainsaw"
-msgstr "엔진톱"
-
-#: src/iuse.cpp
-msgid "Your chainsaw rumbles."
-msgstr "엔진톱이 소음을 낸다."
-
-#: src/iuse.cpp
-msgid "electric chainsaw"
-msgstr "전기톱"
-
-#: src/iuse.cpp
-msgid "Your electric chainsaw rumbles."
-msgstr "전기톱이 소음을 낸다."
-
-#: src/iuse.cpp
-msgid "chainsaw lajatang"
-msgstr "엔진톱 월아산"
-
-#: src/iuse.cpp
-msgid "Your chainsaws rumble."
-msgstr "엔진톱이 소음을 낸다."
-
-#: src/iuse.cpp
-msgid "electric chainsaw lajatang"
-msgstr "전기톱 월아산"
-
-#: src/iuse.cpp
-msgid "Your chainsaws buzz."
-msgstr "전기톱이 붕붕거립니다."
-
-#: src/iuse.cpp
-msgid "electric carver"
-msgstr "전동칼"
-
-#: src/iuse.cpp
-msgid "Your electric carver buzzes."
-msgstr "전동칼이 붕붕거립니다."
-
-#: src/iuse.cpp
-msgid "hedge trimmer"
-msgstr "전정기"
-
-#: src/iuse.cpp
-msgid "Your hedge trimmer rumbles."
-msgstr "전정기가 소음을 낸다."
-
-#: src/iuse.cpp
-msgid "circular saw"
-msgstr "원형톱"
-
-#: src/iuse.cpp
-msgid "Your circular saw buzzes."
-msgstr "원형톱이 붕붕거립니다."
-
-#: src/iuse.cpp
 msgid "Drill where?"
 msgstr "어디를 뚫을까요?"
 
@@ -245082,7 +245808,7 @@ msgstr "째깍!"
 msgid "You've already released the handle, try throwing it instead."
 msgstr "이미 손잡이를 놓았습니다. 빨리 던지세요."
 
-#: src/iuse.cpp
+#: src/iuse.cpp src/iuse_actor.cpp
 msgid "Fire…  Good…"
 msgstr "불... 좋아..."
 
@@ -245095,8 +245821,8 @@ msgid "You light the arrow!"
 msgstr "화살에 불을 붙입니다!"
 
 #: src/iuse.cpp
-msgid "Your lit Molotov goes out."
-msgstr "화염병의 불이 꺼집니다."
+msgid "You should probably throw it instead."
+msgstr "던져버리는게 나을 것 같습니다."
 
 #: src/iuse.cpp
 msgid "You light the pack of firecrackers."
@@ -247322,6 +248048,15 @@ msgstr ""
 msgid "Are you sure?"
 msgstr "이대로 진행할까요?"
 
+#: src/iuse.cpp
+msgid "Select body part to amputate:"
+msgstr "절단할 신체 부위를 선택하세요:"
+
+#: src/iuse.cpp
+#, c-format
+msgid "Body part removed: %s"
+msgstr "신체 부위 제거됨: %s"
+
 #: src/iuse_actor.cpp
 #, c-format
 msgid "The %s is empty!"
@@ -247335,6 +248070,10 @@ msgstr "%1$s(을)를 사용하려면 먼저 손에 들어야 합니다."
 #: src/iuse_actor.cpp
 msgid "You can't do that while underwater"
 msgstr "수중에서는 할 수 없습니다"
+
+#: src/iuse_actor.cpp
+msgid "This item cannot be used while underwater."
+msgstr "이 물품은 수중에서 사용할 수 없습니다."
 
 #: src/iuse_actor.cpp
 #, c-format
@@ -260193,6 +260932,16 @@ msgid ""
 msgstr "설정을 켜면, 고급 소지품 관리 메뉴가 전체화면에 들어맞도록 확대합니다. 켜지 않으면 여전히 사이드바가 보이게 됩니다."
 
 #: src/options.cpp
+msgid "Advanced Inventory Manager Filter Resets"
+msgstr "향상된 소지품 관리자 필터 자동 초기화"
+
+#: src/options.cpp
+msgid ""
+"If true, Advanced Inventory Manager filters will be reset when leaving the "
+"menu"
+msgstr "활성화되면 고급 소지품 관리자 필터가 메뉴를 종료할 때 자동으로 초기화됩니다."
+
+#: src/options.cpp
 msgid "Move view offset"
 msgstr "이동시 시야차"
 
@@ -260262,7 +261011,7 @@ msgstr "물품 내구도 표시"
 #: src/options.cpp
 msgid ""
 "If true, show item health bars instead of reinforced, scratched etc. text."
-msgstr "이 설정을 켜면 강화된, 살짝 긁힌 등의 글이 아니라 내구도 바를 표시해줍니다."
+msgstr "활성화되면 보강된, 살짝 긁힌 등의 문구가 아니라 막대 형태로 남은 내구도를 표시합니다."
 
 #: src/options.cpp
 msgid "Show item symbols"
