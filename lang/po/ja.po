@@ -3,13 +3,13 @@
 # くりやまたいせい, 2023
 # Olanti <olanti-p@yandex.ru>, 2023
 # O M, 2024
-# Pigmentblue15, 2024
+# pigmentblue15, 2024
 # Coolthulhu <Coolthulhu@gmail.com>, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-10-12 01:15+0000\n"
+"POT-Creation-Date: 2024-10-19 00:50+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -32006,6 +32006,12 @@ msgid "Sit down, have a drink.  It can folded for easy transportation."
 msgstr "ここに座って一杯やりましょうか。折り畳んで持ち運べます。"
 
 #: data/json/furniture_and_terrain/furniture-seats.json
+#: data/json/furniture_and_terrain/terrain-railroads.json
+#: data/json/furniture_and_terrain/terrain-roofs.json
+msgid "clang."
+msgstr "ガン。"
+
+#: data/json/furniture_and_terrain/furniture-seats.json
 msgid "log stool"
 msgstr "丸太椅子"
 
@@ -37820,11 +37826,6 @@ msgid ""
 "Won't stop people from turning into meaty mush by other means, though."
 msgstr ""
 "列車が接近すると光と騒音を発し、人間が線路を横切ってミンチになるのを防ぎます。ただし、今は他の理由で人間がミンチになるため意味がありません。"
-
-#: data/json/furniture_and_terrain/terrain-railroads.json
-#: data/json/furniture_and_terrain/terrain-roofs.json
-msgid "clang."
-msgstr "ガン。"
 
 #: data/json/furniture_and_terrain/terrain-railroads.json
 msgid "crossbuck"
@@ -99277,10 +99278,9 @@ msgstr[0] "矢(ｶｰﾎﾞﾝ/狩猟)"
 #: data/json/items/ranged/archery.json
 msgid ""
 "A fletched carbon fiber arrow shaft with an expanding broadhead tip.  Deals "
-"impressive damage to targets.  Stands a good chance of remaining intact once"
-" fired."
+"impressive damage to targets, but less effective against armor.  Stands a "
+"good chance of remaining intact once fired."
 msgstr ""
-"矢羽と幅が広く切れ味鋭い矢尻が付いた、カーボンファイバー製の矢です。標的に対して非常に高いダメージを与えられます。放った矢がほぼ確実に地面に残ります。"
 
 #: data/json/items/ranged/archery.json
 msgid "explosive arrow"
@@ -99615,10 +99615,9 @@ msgstr[0] "ボルト(ｶｰﾎﾞﾝ)"
 #: data/json/items/ranged/crossbows.json
 msgid ""
 "A fletched carbon fiber crossbow bolt shaft with an expanding broadhead tip."
-"  Deals impressive damage to targets.  Stands a good chance of remaining "
-"intact once fired."
+"  Deals impressive damage to targets, but less effective against armor.  "
+"Stands a good chance of remaining intact once fired."
 msgstr ""
-"矢羽と幅が広く切れ味鋭い矢尻が付いた、カーボンファイバー製のボルトです。標的に対して非常に高いダメージを与えられます。放った矢がほぼ確実に地面に残ります。"
 
 #: data/json/items/ranged/crossbows.json
 msgid "explosive crossbow bolt"
@@ -200940,6 +200939,24 @@ msgstr ""
 msgid "You can teleport instantaneously forward."
 msgstr ""
 
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "debug push no aoe"
+msgstr ""
+
+#. ~ Description for debug push no aoe
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "pushes all types of objects with an aoe of 0"
+msgstr ""
+
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "debug push blast"
+msgstr ""
+
+#. ~ Description for debug push blast
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "pushes all types of objects with an aoe of 3 in a blast pattern"
+msgstr ""
+
 #: data/mods/Magiclysm/Spells/dragonbreath.json
 msgid "Black Dragons' Breath"
 msgstr "ブラック・ドラゴンズ・ブレス"
@@ -244763,6 +244780,11 @@ msgstr[0] "<bold>攻撃条件: </bold>"
 #, c-format
 msgid "%s: <stat>%d</stat>"
 msgstr "%s: <stat>%d</stat>"
+
+#: src/martialarts.cpp
+msgid "<bold>Weapon category required: </bold>"
+msgid_plural "<bold>Weapon categories required: </bold>"
+msgstr[0] ""
 
 #: src/martialarts.cpp
 msgid "<bold>Requires:</bold> "

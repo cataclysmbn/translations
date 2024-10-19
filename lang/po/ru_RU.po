@@ -31,7 +31,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-10-12 01:15+0000\n"
+"POT-Creation-Date: 2024-10-19 00:50+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2024\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -35408,6 +35408,12 @@ msgid "Sit down, have a drink.  It can folded for easy transportation."
 msgstr "Присядь, выпей чего-нибудь. Можно сложить для удобной переноски."
 
 #: data/json/furniture_and_terrain/furniture-seats.json
+#: data/json/furniture_and_terrain/terrain-railroads.json
+#: data/json/furniture_and_terrain/terrain-roofs.json
+msgid "clang."
+msgstr "лязг."
+
+#: data/json/furniture_and_terrain/furniture-seats.json
 msgid "log stool"
 msgstr "пенёк"
 
@@ -42090,11 +42096,6 @@ msgstr ""
 "Светофоры светились и шумели при приближении поезда, чтобы люди не "
 "превращались в кровавый фарш при пересечении путей. Впрочем, это не "
 "уберегало людей от превращения в кровавый фарш другими способами."
-
-#: data/json/furniture_and_terrain/terrain-railroads.json
-#: data/json/furniture_and_terrain/terrain-roofs.json
-msgid "clang."
-msgstr "лязг."
 
 #: data/json/furniture_and_terrain/terrain-railroads.json
 msgid "crossbuck"
@@ -125105,11 +125106,9 @@ msgstr[3] "стрелы из углеволокна"
 #: data/json/items/ranged/archery.json
 msgid ""
 "A fletched carbon fiber arrow shaft with an expanding broadhead tip.  Deals "
-"impressive damage to targets.  Stands a good chance of remaining intact once"
-" fired."
+"impressive damage to targets, but less effective against armor.  Stands a "
+"good chance of remaining intact once fired."
 msgstr ""
-"Оперённая карбоновая стрела с раскрывающимся широким наконечником. Наносит "
-"внушительный урон целям. Имеет хорошие шансы уцелеть после выстрела."
 
 #: data/json/items/ranged/archery.json
 msgid "explosive arrow"
@@ -125587,12 +125586,9 @@ msgstr[3] "болты из углеволокна"
 #: data/json/items/ranged/crossbows.json
 msgid ""
 "A fletched carbon fiber crossbow bolt shaft with an expanding broadhead tip."
-"  Deals impressive damage to targets.  Stands a good chance of remaining "
-"intact once fired."
+"  Deals impressive damage to targets, but less effective against armor.  "
+"Stands a good chance of remaining intact once fired."
 msgstr ""
-"Оперённый карбоновый болт для арбалета с раскрывающимся широким "
-"наконечником. Наносит внушительный урон целям. Имеет хорошие шансы уцелеть "
-"после выстрела."
 
 #: data/json/items/ranged/crossbows.json
 msgid "explosive crossbow bolt"
@@ -248795,6 +248791,24 @@ msgstr ""
 msgid "You can teleport instantaneously forward."
 msgstr ""
 
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "debug push no aoe"
+msgstr ""
+
+#. ~ Description for debug push no aoe
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "pushes all types of objects with an aoe of 0"
+msgstr ""
+
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "debug push blast"
+msgstr ""
+
+#. ~ Description for debug push blast
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "pushes all types of objects with an aoe of 3 in a blast pattern"
+msgstr ""
+
 #: data/mods/Magiclysm/Spells/dragonbreath.json
 msgid "Black Dragons' Breath"
 msgstr "Дыхание чёрного дракона"
@@ -297488,6 +297502,14 @@ msgstr[3] "<bold>Требуемые типы повреждения: </bold>"
 #, c-format
 msgid "%s: <stat>%d</stat>"
 msgstr "%s: <stat>%d</stat>"
+
+#: src/martialarts.cpp
+msgid "<bold>Weapon category required: </bold>"
+msgid_plural "<bold>Weapon categories required: </bold>"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: src/martialarts.cpp
 msgid "<bold>Requires:</bold> "

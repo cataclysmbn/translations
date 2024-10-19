@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-10-12 01:15+0000\n"
+"POT-Creation-Date: 2024-10-19 00:50+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -31902,6 +31902,12 @@ msgid "Sit down, have a drink.  It can folded for easy transportation."
 msgstr "坐下，喝一杯。这张椅子可以折叠方便携带。"
 
 #: data/json/furniture_and_terrain/furniture-seats.json
+#: data/json/furniture_and_terrain/terrain-railroads.json
+#: data/json/furniture_and_terrain/terrain-roofs.json
+msgid "clang."
+msgstr "鐺。"
+
+#: data/json/furniture_and_terrain/furniture-seats.json
 msgid "log stool"
 msgstr "圆木凳"
 
@@ -37681,11 +37687,6 @@ msgid ""
 "prevent people from turning into meaty mush while they cross the tracks.  "
 "Won't stop people from turning into meaty mush by other means, though."
 msgstr "道口信号灯的作用是当火车驶近时发出灯光和噪音，以防止人们在过铁轨时被火车碾压变成肉泥。但这并不能阻止人们通过其他方式变成肉泥。"
-
-#: data/json/furniture_and_terrain/terrain-railroads.json
-#: data/json/furniture_and_terrain/terrain-roofs.json
-msgid "clang."
-msgstr "鐺。"
 
 #: data/json/furniture_and_terrain/terrain-railroads.json
 msgid "crossbuck"
@@ -98980,9 +98981,9 @@ msgstr[0] "碳素狩猎箭"
 #: data/json/items/ranged/archery.json
 msgid ""
 "A fletched carbon fiber arrow shaft with an expanding broadhead tip.  Deals "
-"impressive damage to targets.  Stands a good chance of remaining intact once"
-" fired."
-msgstr "附有箭羽的碳纖維箭桿，箭頭呈擴張的寬頭狀。對目標造成驚人的傷害。射出後保持完好的機率頗高。"
+"impressive damage to targets, but less effective against armor.  Stands a "
+"good chance of remaining intact once fired."
+msgstr "装有大号宽刃箭头的碳纤维羽箭，能对目标造成惊人的伤害，但对装甲的效果较差。射出后有很高概率保持完好。"
 
 #: data/json/items/ranged/archery.json
 msgid "explosive arrow"
@@ -99313,9 +99314,9 @@ msgstr[0] "碳素狩猎弩矢"
 #: data/json/items/ranged/crossbows.json
 msgid ""
 "A fletched carbon fiber crossbow bolt shaft with an expanding broadhead tip."
-"  Deals impressive damage to targets.  Stands a good chance of remaining "
-"intact once fired."
-msgstr "附有箭羽的碳纖維十字弓弩箭，箭頭呈擴張的寬頭狀。對目標造成驚人的傷害。射出後保持完好的機率頗高。"
+"  Deals impressive damage to targets, but less effective against armor.  "
+"Stands a good chance of remaining intact once fired."
+msgstr "装有大号宽刃箭头的碳纤维弩矢，能对目标造成惊人的伤害，但对装甲的效果较差。射出后有很高概率保持完好。"
 
 #: data/json/items/ranged/crossbows.json
 msgid "explosive crossbow bolt"
@@ -200768,6 +200769,24 @@ msgstr "调试用冲刺"
 msgid "You can teleport instantaneously forward."
 msgstr "你可以瞬间向前传送。"
 
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "debug push no aoe"
+msgstr "调试推力无范围效果"
+
+#. ~ Description for debug push no aoe
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "pushes all types of objects with an aoe of 0"
+msgstr "推动所有类型的物体，范围效果为0。"
+
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "debug push blast"
+msgstr "调试推力爆破"
+
+#. ~ Description for debug push blast
+#: data/mods/Magiclysm/Spells/debug.json
+msgid "pushes all types of objects with an aoe of 3 in a blast pattern"
+msgstr "推动所有类型的物体，范围效果为3，呈爆破模式。"
+
 #: data/mods/Magiclysm/Spells/dragonbreath.json
 msgid "Black Dragons' Breath"
 msgstr "黑龍吐息"
@@ -244581,6 +244600,11 @@ msgstr[0] ""
 #, c-format
 msgid "%s: <stat>%d</stat>"
 msgstr "%s：<stat>%d</stat>"
+
+#: src/martialarts.cpp
+msgid "<bold>Weapon category required: </bold>"
+msgid_plural "<bold>Weapon categories required: </bold>"
+msgstr[0] "<bold>所需武器类别：</bold>"
 
 #: src/martialarts.cpp
 msgid "<bold>Requires:</bold> "
