@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-10-26 01:15+0000\n"
+"POT-Creation-Date: 2024-11-02 01:16+0000\n"
 "Last-Translator: Fruitybite, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -4598,8 +4598,8 @@ msgid "mouth"
 msgstr "입"
 
 #: data/json/body_parts.json
-msgid "Running is slowed."
-msgstr "달리기가 느려졌습니다."
+msgid "Stamina regeneration is slowed."
+msgstr "지구력 재생이 느려집니다."
 
 #: data/json/body_parts.json
 msgid "Mouth"
@@ -4767,6 +4767,10 @@ msgstr "왼발"
 msgctxt "bodypart_accusative"
 msgid "feet"
 msgstr "양발"
+
+#: data/json/body_parts.json
+msgid "Running is slowed."
+msgstr "달리기가 느려졌습니다."
 
 #: data/json/body_parts.json
 msgid "L. Foot"
@@ -6319,6 +6323,10 @@ msgstr "바닥 왁스칠하기"
 #: data/json/construction_group.json
 msgid "Remove Mi-Go gas emitter"
 msgstr "미-고 가스 방출기 제거"
+
+#: data/json/construction_group.json
+msgid "Install a ceiling lamp"
+msgstr "천장 전등 설치"
 
 #: data/json/dreams.json
 msgid "You have a strange dream about lizards."
@@ -11312,12 +11320,16 @@ msgstr "상처 지지기"
 msgid "Create a zombie slave"
 msgstr "노예 좀비 만들기"
 
+#. ~ Use action menu_text for chaos dagger.
 #. ~ Use action menu_text for {'str': 'large space heater'}.
 #. ~ Use action menu_text for {'str': 'small space heater'}.
-#: data/json/item_actions.json data/json/items/tool/misc.json src/iuse.cpp
+#: data/json/item_actions.json data/json/artifact/premade_artifacts.json
+#: data/json/items/tool/misc.json src/iuse.cpp
 msgid "Turn on"
 msgstr "켜기"
 
+#. ~ Use action menu_text for {'str': 'chaos dagger (shifting)', 'str_pl':
+#. 'chaos daggers (shifting)'}.
 #. ~ Use action menu_text for {'str': 'mining helmet (on)', 'str_pl': 'mining
 #. helmets (on)'}.
 #. ~ Use action menu_text for {'str': 'pair of thermal electric socks (on)',
@@ -11328,6 +11340,8 @@ msgstr "켜기"
 #. 'str_pl': 'pairs of thermal electric gloves (on)'}.
 #. ~ Use action menu_text for {'str': 'thermal electric balaclava (on)',
 #. 'str_pl': 'thermal electric balaclavas (on)'}.
+#. ~ Use action menu_text for {'str': 'liquid cooling outfit (on)', 'str_pl':
+#. 'liquid cooling outfits (on)'}.
 #. ~ Use action menu_text for {'str': 'headlamp (on)', 'str_pl': 'headlamps
 #. (on)'}.
 #. ~ Use action menu_text for {'str': 'survivor headlamp (on)', 'str_pl':
@@ -11409,11 +11423,11 @@ msgstr "켜기"
 #. 'C.R.I.T. gasmasks (on)'}.
 #. ~ Use action menu_text for {'str': 'heat cube (torch on)', 'str_pl': 'heat
 #. cubes (torch on)'}.
-#: data/json/item_actions.json data/json/items/tool_armor.json
-#: data/json/items/armor/cloaks.json data/json/items/armor/power_armor.json
-#: data/json/items/melee/bludgeons.json data/json/items/tool/electronics.json
-#: data/json/items/tool/lighting.json data/json/items/tool/misc.json
-#: data/mods/Aftershock/items/obsolete.json
+#: data/json/item_actions.json data/json/artifact/premade_artifacts.json
+#: data/json/items/tool_armor.json data/json/items/armor/cloaks.json
+#: data/json/items/armor/power_armor.json data/json/items/melee/bludgeons.json
+#: data/json/items/tool/electronics.json data/json/items/tool/lighting.json
+#: data/json/items/tool/misc.json data/mods/Aftershock/items/obsolete.json
 #: data/mods/Aftershock/items/tool_armor.json
 #: data/mods/Aftershock/items/tools.json
 #: data/mods/CRT_EXPANSION/items/crt_toolarmor.json
@@ -29857,6 +29871,51 @@ msgstr ""
 "겉으로 보는 것보다 훨씬 무겁고, 단단한 큐브입니다. 큐브를 들여다보면 당신의 시야가 끌려들어가, 하늘에서 내려다보는 구도로 주변을 "
 "바라보게 됩니다."
 
+#: data/json/artifact/premade_artifacts.json
+msgid "chaos dagger"
+msgid_plural "chaos daggers"
+msgstr[0] "혼돈의 단검"
+
+#. ~ Use action msg for chaos dagger.
+#: data/json/artifact/premade_artifacts.json
+msgid ""
+"The chaos dagger starts shifting, the crystals moving about in a "
+"scintillating rainbow."
+msgstr "혼돈의 단검이 뒤틀리기 시작하며, 수정들이 살아있는 무지개로 변해 꿈틀거립니다."
+
+#. ~ Description for chaos dagger
+#: data/json/artifact/premade_artifacts.json
+msgid ""
+"A small but surprisingly heavy knife seemingly made of crystalline bismuth, "
+"iridescent rectangular patterns twisting into a fractal towards the blade's "
+"edge."
+msgstr ""
+"결정형 비스무트로 만들어진 것으로 보이는, 크기는 작지만 놀라울 정도로 무거운 단검입니다. 칼날에서 무지갯빛 직사각형 문양이 프랙탈 "
+"형상으로 흔들리고 있습니다."
+
+#: data/json/artifact/premade_artifacts.json
+msgid "chaos dagger (shifting)"
+msgid_plural "chaos daggers (shifting)"
+msgstr[0] "혼돈의 단검 (변화 중)"
+
+#. ~ Use action msg for {'str': 'chaos dagger (shifting)', 'str_pl': 'chaos
+#. daggers (shifting)'}.
+#: data/json/artifact/premade_artifacts.json
+msgid "The chaos dagger goes still"
+msgstr "혼돈의 단검이 잠잠해집니다."
+
+#. ~ Description for {'str': 'chaos dagger (shifting)', 'str_pl': 'chaos
+#. daggers (shifting)'}
+#: data/json/artifact/premade_artifacts.json
+msgid ""
+"A small but surprisingly heavy knife seemingly made of crystalline bismuth, "
+"iridescent rectangular patterns twisting into a fractal towards the blade's "
+"edge.  The crystals are shifting as you look at them, rapidly growing, "
+"melding together and reforming."
+msgstr ""
+"결정형 비스무트로 만들어진 것으로 보이는, 크기는 작지만 놀라울 정도로 무거운 단검입니다. 칼날에서 무지갯빛 직사각형 문양이 프랙탈 "
+"형상으로 흔들리고 있습니다. 결정이 당신의 시선에 따라 뒤틀리고, 빠르게 성장하며, 하나로 녹아들어 그 형체를 재구성하는 것이 보입니다."
+
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "cooling unit"
 msgstr "냉각 장치"
@@ -29973,6 +30032,7 @@ msgstr "추상화 실내용 전등"
 #. ~ Description for abstract minifreezer
 #. ~ Description for abstract air conditioner
 #. ~ Description for abstract space heater
+#. ~ Description for overhead light
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "Abstract furniture.  If you see this, something went wrong."
 msgstr "추상적 가구입니다. 이걸 보고 있다는건 뭔가 잘못됐다는 뜻입니다."
@@ -31150,6 +31210,74 @@ msgid ""
 msgstr ""
 "수제 탄약을 만들거나 탄약을 분해해 재료를 수급하는데 쓰이는 도구가 모두 들어있는 장비입니다. 탄약 주형을 뜨기 위한 핫플레이트가 "
 "전력망에 연결되어있습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "overhead light"
+msgstr "경광등"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/furniture-storage.json
+#: data/json/furniture_and_terrain/furniture-tools.json
+#: data/json/furniture_and_terrain/terrain-doors.json
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+#: data/json/furniture_and_terrain/terrain-walls.json
+#: data/json/furniture_and_terrain/terrain-windows.json
+#: data/mods/Magiclysm/furniture.json data/mods/No_Hope/terrain.json
+#: src/ballistics.cpp
+msgid "glass breaking!"
+msgstr "쨍그랑!"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "clink!"
+msgstr "쨍그랑!"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "ceiling lamp (off)"
+msgstr "천장 전등 (꺼짐)"
+
+#. ~ Description for ceiling lamp (off)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "A working lamp installed on the ceiling, this one is turned off."
+msgstr "천장에 설치되어 작동 가능한 전등입니다. 현재 꺼져있습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Switch on the ceiling lamp."
+msgstr "천장 전등 켜기"
+
+#. ~ Message for furniture 'ceiling lamp (off)'
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "You switched on the ceiling lamp."
+msgstr "천장 전등을 켰습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "ceiling lamp (on)"
+msgstr "천장 전등 (켜짐)"
+
+#. ~ Description for ceiling lamp (on)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "A working lamp installed on the ceiling, this one is turned on."
+msgstr "천장에 설치되어 작동 가능한 전등입니다. 현재 켜져있습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Switch off the ceiling lamp."
+msgstr "천장 전등 끄기"
+
+#. ~ Message for furniture 'ceiling lamp (on)'
+#. ~ Message for furniture 'ceiling lamp (no power)'
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "You switched off the ceiling lamp."
+msgstr "천장 전등을 껐습니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "ceiling lamp (no power)"
+msgstr "천장 전등 (전력 없음)"
+
+#. ~ Description for ceiling lamp (no power)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"A working lamp installed on the ceiling, this one is turned on but it has no"
+" power."
+msgstr "천장에 설치되어 작동 가능한 전등입니다. 현재 켜져있지만 전력이 공급되지 않고 있습니다."
 
 #: data/json/furniture_and_terrain/furniture-barriers.json
 msgid "road barricade"
@@ -33549,17 +33677,6 @@ msgstr "거울 달린 캐비넷"
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "A tall storage cabinet with a clear glass window."
 msgstr "깨끗한 유리창이 달린 큰 보관용 캐비넷입니다."
-
-#: data/json/furniture_and_terrain/furniture-storage.json
-#: data/json/furniture_and_terrain/furniture-tools.json
-#: data/json/furniture_and_terrain/terrain-doors.json
-#: data/json/furniture_and_terrain/terrain-floors-indoor.json
-#: data/json/furniture_and_terrain/terrain-walls.json
-#: data/json/furniture_and_terrain/terrain-windows.json
-#: data/mods/Magiclysm/furniture.json data/mods/No_Hope/terrain.json
-#: src/ballistics.cpp
-msgid "glass breaking!"
-msgstr "쨍그랑!"
 
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "open gun safe"
@@ -50836,6 +50953,7 @@ msgstr[0] "발열 양말"
 #. ~ Use action msg for {'str': 'pair of thermal electric gloves', 'str_pl':
 #. 'pairs of thermal electric gloves'}.
 #. ~ Use action msg for {'str': 'thermal electric balaclava'}.
+#. ~ Use action msg for {'str': 'liquid cooling outfit'}.
 #. ~ Use action msg for {'str': 'rebreather mask'}.
 #. ~ Use action msg for {'str': 'XL rebreather mask'}.
 #. ~ Use action msg for {'str': 'pair of light amp goggles', 'str_pl': 'pairs
@@ -50857,6 +50975,7 @@ msgstr "%s(을)를 작동시킵니다."
 #. ~ Use action need_charges_msg for {'str': 'pair of thermal electric
 #. gloves', 'str_pl': 'pairs of thermal electric gloves'}.
 #. ~ Use action need_charges_msg for {'str': 'thermal electric balaclava'}.
+#. ~ Use action need_charges_msg for {'str': 'liquid cooling outfit'}.
 #. ~ Use action need_charges_msg for {'str': 'pair of light amp goggles',
 #. 'str_pl': 'pairs of light amp goggles'}.
 #. ~ Use action need_charges_msg for {'str': 'pair of infrared goggles',
@@ -50901,6 +51020,8 @@ msgstr[0] "발열 양말 (켜짐)"
 #. 'str_pl': 'pairs of thermal electric gloves (on)'}.
 #. ~ Use action msg for {'str': 'thermal electric balaclava (on)', 'str_pl':
 #. 'thermal electric balaclavas (on)'}.
+#. ~ Use action msg for {'str': 'liquid cooling outfit (on)', 'str_pl':
+#. 'liquid cooling outfits (on)'}.
 #. ~ Use action msg for {'str': 'rebreather mask (on)', 'str_pl': 'rebreather
 #. masks (on)'}.
 #. ~ Use action msg for {'str': 'XL rebreather mask (on)', 'str_pl': 'XL
@@ -51012,6 +51133,35 @@ msgid ""
 msgstr ""
 "배터리로 돌아가는 발열장치가 달린, 푹신한 면 재질의 발라클라바입니다. 현재 작동 중이며, 지속적으로 배터리를 소모하고 있습니다. "
 "사용하면 전원을 끕니다."
+
+#: data/json/items/tool_armor.json
+msgid "liquid cooling outfit"
+msgid_plural "liquid cooling outfits"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'liquid cooling outfit'}
+#: data/json/items/tool_armor.json
+msgid ""
+"This skintight suit covers you from head to toe and is designed to keep you "
+"at an ideal temperature using a number of heatsinks and heating coils tied "
+"to a liquid coolant system.  It also includes some handy features such as a "
+"built-in thermometer.  Use it to turn it on."
+msgstr ""
+
+#: data/json/items/tool_armor.json
+msgid "liquid cooling outfit (on)"
+msgid_plural "liquid cooling outfits (on)"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'liquid cooling outfit (on)', 'str_pl': 'liquid
+#. cooling outfits (on)'}
+#: data/json/items/tool_armor.json
+msgid ""
+"This skintight suit covers you from head to toe and is designed to keep you "
+"at an ideal temperature using a number of heatsinks and heating coils tied "
+"to a liquid coolant system.  It also includes some handy features such as a "
+"built-in thermometer.  It is currently on, use it to turn it off."
+msgstr ""
 
 #: data/json/items/tool_armor.json
 msgid "pair of binoculars"
@@ -115664,35 +115814,35 @@ msgstr "작지만 열받은 지네를 소환합니다."
 
 #: data/json/monster_special_attacks/spells.json
 msgid "Spawn Raptors"
-msgstr ""
+msgstr "랩터 소환"
 
 #. ~ Description for {'str': 'Spawn Raptors'}
 #: data/json/monster_special_attacks/spells.json
 msgid "Summons several zombiespawn raptors."
-msgstr ""
+msgstr "좀비 랩터 몇 개체를 소환합니다."
 
 #. ~ Description for {'str': 'Spawn Raptors'}
 #: data/json/monster_special_attacks/spells.json
 msgid "Summons many zombiespawn raptors."
-msgstr ""
+msgstr "좀비 랩터 다수를 소환합니다."
 
 #: data/json/monster_special_attacks/spells.json
 msgid "Spawn Shady Raptors"
-msgstr ""
+msgstr "셰이디 랩터 소환"
 
 #. ~ Description for {'str': 'Spawn Shady Raptors'}
 #: data/json/monster_special_attacks/spells.json
 msgid "Summons a few shady zombiespawn raptors."
-msgstr ""
+msgstr "셰이디 좀비 랩터 몇 개체를 소환합니다."
 
 #: data/json/monster_special_attacks/spells.json
 msgid "Spawning Zombie Die"
-msgstr ""
+msgstr "내장 좀비 소환"
 
 #. ~ Description for {'str': 'Spawning Zombie Die'}
 #: data/json/monster_special_attacks/spells.json
 msgid "For zombies that are spawning something and die in the process."
-msgstr ""
+msgstr "무언가를 생성한 뒤 죽는 좀비를 소환합니다."
 
 #: data/json/monsters/bird.json
 msgid "chicken"
@@ -121039,7 +121189,7 @@ msgstr "찢어진 보안 유니폼을 입고 있는 근육질의 좀비입니다
 #: data/json/monsters/zed-pupating.json
 msgid "pupating zombie crawler"
 msgid_plural "pupating zombie crawlers"
-msgstr[0] ""
+msgstr[0] "번데기 기어다니는 좀비"
 
 #. ~ Description for {'str': 'pupating zombie crawler'}
 #: data/json/monsters/zed-pupating.json
@@ -121048,11 +121198,13 @@ msgid ""
 "everything neck down.  Beneath the wrapping there is strange rhythmic "
 "movement grotesque to behold."
 msgstr ""
+"끈적한 검은색 섬유로 목 아래가 완전히 뒤덮인, 반쯤 남은 인간 시체입니다. 섬유로 뒤덮인 아래를 주시하면 기괴하게 규칙적으로 움찔거리는"
+" 모습이 보입니다."
 
 #: data/json/monsters/zed-pupating.json
 msgid "pupating zombie"
 msgid_plural "pupating zombies"
-msgstr[0] ""
+msgstr[0] "번데기 좀비"
 
 #. ~ Description for {'str': 'pupating zombie'}
 #: data/json/monsters/zed-pupating.json
@@ -121061,11 +121213,13 @@ msgid ""
 "neck down.  Beneath the wrapping there is strange rhythmic movement "
 "grotesque to behold."
 msgstr ""
+"끈적한 검은색 섬유로 목 아래가 완전히 뒤덮인 인간 시체입니다. 섬유로 뒤덮인 아래를 주시하면 기괴하게 규칙적으로 움찔거리는 모습이 "
+"보입니다."
 
 #: data/json/monsters/zed-pupating.json
 msgid "shady pupating zombie"
 msgid_plural "shady pupating zombies"
-msgstr[0] ""
+msgstr[0] "번데기 셰이디 좀비"
 
 #. ~ Description for {'str': 'shady pupating zombie'}
 #: data/json/monsters/zed-pupating.json
@@ -121074,11 +121228,13 @@ msgid ""
 "what once may have been a human being, but its edges bulge rhythmically in "
 "places that are not anatomically possible for humans."
 msgstr ""
+"기이한 그림자가 이 개체를 뒤덮고 있습니다. 한때 인간이었을지도 모를 무언가의 겉모습이 얼핏 드러나지만, 인간이라고 부르기에는 "
+"해부학적으로 불가능한 부위들이 규칙적으로 맥동하는 것이 보입니다."
 
 #: data/json/monsters/zed-winged.json
 msgid "batwing zombie"
 msgid_plural "batwing zombies"
-msgstr[0] ""
+msgstr[0] "박쥐날개 좀비"
 
 #. ~ Description for {'str': 'batwing zombie'}
 #: data/json/monsters/zed-winged.json
@@ -121087,11 +121243,13 @@ msgid ""
 "lengthened into a gruesome fleshy membrane.  The mutation does not suit it "
 "well: it moves clumsily, even compared to other zombies."
 msgstr ""
+"팔이 인간의 한계를 넘을 정도로 길어지고 피부가 섬뜩한 살덩이 막처럼 늘어난 좀비입니다. 변이가 불완전한 모양인지, 다른 좀비와 비교해도"
+" 움직임이 어색합니다."
 
 #: data/json/monsters/zed-winged.json
 msgid "garghoul"
 msgid_plural "garghouls"
-msgstr[0] ""
+msgstr[0] "가고울"
 
 #. ~ Description for {'str': 'garghoul'}
 #: data/json/monsters/zed-winged.json
@@ -121102,11 +121260,13 @@ msgid ""
 "to be able to truly fly, it uses its mutated arms to make shockingly fast "
 "leaps through the air."
 msgstr ""
+"팔이 인간의 한계를 넘을 정도로 길어지고 피부가 섬뜩한 살덩이 막처럼 늘어난 좀비입니다. 나머지 사지는 퍽 수척해져, 가느다란 밧줄같은 "
+"근육이 팽팽한 살점을 파고들었습니다. 진짜로 날 수 있는 것 같지는 않지만, 변이된 팔을 이용해 충격적인 속도로 도약할 수 있습니다."
 
 #: data/json/monsters/zed-winged.json
 msgid "flesh-raptor"
 msgid_plural "flesh-raptors"
-msgstr[0] ""
+msgstr[0] "살덩이 랩터"
 
 #. ~ Description for {'str': 'flesh-raptor'}
 #: data/json/monsters/zed-winged.json
@@ -121116,11 +121276,13 @@ msgid ""
 "sheer jagged spike.  It looks like nothing you've seen on Earth, and yet "
 "strangely like it was made of human parts."
 msgstr ""
+"가느다란 털이 달린 쭉 뻗은 인간의 손처럼 생긴 날개 셋으로 하늘을 내달리며 적을 사냥하는 작은 포식자입니다. 날개가 만나는 부위에는 "
+"삐죽삐죽한 말뚝이 툭 튀어나와있고, 기이하게도 인간의 신체로 만들어진 것처럼 생겼습니다."
 
 #: data/json/monsters/zed-winged.json
 msgid "shadow raptor"
 msgid_plural "shadow raptors"
-msgstr[0] ""
+msgstr[0] "그림자 랩터"
 
 #. ~ Description for {'str': 'shadow raptor'}
 #: data/json/monsters/zed-winged.json
@@ -121128,11 +121290,12 @@ msgid ""
 "An uncanny shadow envelops this creature.  You can make out the outline of "
 "three flapping wings connected to a jagged pointed object."
 msgstr ""
+"기이한 그림자가 이 개체를 뒤덮고 있습니다. 불룩 튀어나온 부위에 퍼덕거리는 날개 세 장이 달린 무언가의 겉모습이 얼핏 드러납니다."
 
 #: data/json/monsters/zed-winged.json
 msgid "unstable flesh-raptor"
 msgid_plural "unstable flesh-raptor"
-msgstr[0] ""
+msgstr[0] "불안정한 살덩이 랩터"
 
 #. ~ Description for {'str_sp': 'unstable flesh-raptor'}
 #: data/json/monsters/zed-winged.json
@@ -121141,11 +121304,13 @@ msgid ""
 "wings that look like stretched human hands.  Where the wings meet juts a "
 "jagged spike and a bloated fleshy belly."
 msgstr ""
+"가느다란 털이 달린 쭉 뻗은 인간의 손처럼 생긴 날개 셋으로 하늘을 내달리며 적을 사냥하는 작은 포식자입니다. 날개가 만나는 부위에는 "
+"삐죽삐죽한 말뚝이 툭 튀어나와있고 두툼하게 부풀어오른 배가 달려있습니다."
 
 #: data/json/monsters/zed-winged.json
 msgid "zaptor"
 msgid_plural "zaptors"
-msgstr[0] ""
+msgstr[0] "좀비 랩터"
 
 #. ~ Description for {'str': 'zaptor'}
 #: data/json/monsters/zed-winged.json
@@ -121154,6 +121319,8 @@ msgid ""
 "wings that look like stretched human hands.  Where the wings meet juts a "
 "jagged spike with a pulsing electrical glow."
 msgstr ""
+"가느다란 털이 달린 쭉 뻗은 인간의 손처럼 생긴 날개 셋으로 하늘을 내달리며 적을 사냥하는 작은 포식자입니다. 날개가 만나는 부위에는 "
+"삐죽삐죽한 말뚝이 툭 튀어나와 전기적 발광을 주기적으로 분출합니다."
 
 #: data/json/monsters/zed_acid.json
 msgid "acidic zombie"
@@ -121928,7 +122095,7 @@ msgid ""
 "repulsed to touch it.  All you can make out is its shambling, human shaped "
 "outline."
 msgstr ""
-"빛이 혐오라도 하듯이, 이상한 그림자가 이것을 감싸고 있습니다. 당신이 볼 수 있는 것은 꿈틀거리는 인간 형태의 외곽선 뿐입니다."
+"마치 빛에게 혐오당하는듯, 기이한 그림자가 이 개체를 뒤덮고 있습니다. 꿈틀거리는 인간 형상의 겉모습만이 얼핏 드러날 뿐입니다."
 
 #: data/json/monsters/zed_misc.json data/json/overmap/map_extras.json
 msgid "Shia LaBeouf"
@@ -131801,9 +131968,7 @@ msgstr "아니면 죽여버리겠어."
 #: data/json/npcs/TALK_COMMON_OTHER.json
 #: data/json/npcs/TALK_TRUE_FOODPERSON.json
 #: data/json/npcs/cabin_chemist/cabin_chemist.json
-#: data/json/npcs/scrap_trader/scrap_trader.json
-#: data/mods/smart_house_remotes/main.lua data/mods/teleportation_mod/main.lua
-#: src/iuse.cpp
+#: data/json/npcs/scrap_trader/scrap_trader.json src/iuse.cpp
 msgid "Nevermind."
 msgstr "신경쓰지마."
 
@@ -170259,6 +170424,8 @@ msgid ""
 " database was copied.  IT suspects China, as usual.  The knee-jerk is to "
 "silo all our labs and force us to communicate by Melchior only."
 msgstr ""
+"대규모 보안 침입이 발생했다. 우리 데이터베이스의 절반 이상이 복사당했다. IT팀은 늘 그렇듯이 중국을 범인으로 보고 있다. 우리 "
+"연구소는 자동적으로 봉인됐고, 멜키오르를 통해서만 소통하도록 제한됐다."
 
 #: data/json/snippets/lab.json
 msgid ""
@@ -170350,6 +170517,10 @@ msgid ""
 "and you get this kind of bitching.  The Director sent 'em back with a note "
 "that we're scientists, not firmware devs."
 msgstr ""
+"칼스버그 장군은 로봇의 인공지능에 대체 무슨 문제가 있는건지 알아내라고 지시했다. 현재 돼지같은 부자 나리들을 지키는 경호 계약에 투입된"
+" 장난감들이 몇 초 이상의 미래를 예측하는 문제가 있어, 인간 감독관이 없다면 피아식별이 제대로 이뤄지지 않는다. 문자 그대로의 예측 "
+"능력이 있는 로봇을 만들면 겪게 되는 좆같은 일이다. 감독관은 그 작자들한테 우리는 과학자지, 펌웨어 개발자가 아니라는 메모를 적어 "
+"돌려보냈다."
 
 #: data/json/snippets/lab.json
 msgid ""
@@ -170372,6 +170543,8 @@ msgid ""
 "want us to use the same tech, but without the future sense, and they want it"
 " to work just as well.  Goddamn desk jockeys."
 msgstr ""
+"참 좆같은 일이다. 이 모든 기술들은 전부 미래를 몇 초쯤 바라본 뒤 그 결과물을 보고 베끼는 꼼수를 부리자는 아이디어에 기반하고 있다."
+" 그런데 저들은 같은 기술을 미래를 내다보지 않고도 만들어내기를, 그리고 그게 잘 작동하기를 원한다. 병신같은 책상물림들 같으니."
 
 #: data/json/snippets/lab.json
 msgid ""
@@ -170395,6 +170568,9 @@ msgid ""
 "percent was getting Davids to shell out for a much sexier sounding voice "
 "synth package."
 msgstr ""
+"저들에게 멜키오르가 본래보다 똑똑하다고 설득해, 한동안 우리한테 귀찮게 굴지 않게 만들었다. 어떻게 했냐고? 매 초마다 탐지하는 차원의 "
+"수를 줄이는 것을 통해 정확도를 몇 단계에 걸쳐 감소시키는거다. 그렇게 아낀 전력으로 더 넓은 시간범위를 탐지할 수 있다. 그 용도로 "
+"쓰이는게 대략 10%다. 나머지 90%는 데이비드네가 더 섹시한 음성 합성 패키지를 구해오는데 쓰인다."
 
 #: data/json/snippets/lab.json
 msgid ""
@@ -170417,6 +170593,8 @@ msgid ""
 "come up with a way to get rich and hog the limelight for discoveries we can "
 "never make public."
 msgstr ""
+"실버슈타인 박사가 떠났고, 우리네 가장 뛰어난 프로그래머 대여섯 명도 함께 떠났다. 우리 성과물 중 일부를 새 연구로 내세우는 개인 "
+"스타트업을 세우겠다는 협정을 맺었다. 실버슈타인은 우리가 결코 대중에게 발표할 수 없을 발견들로 부자가 되고 인기도 끌게 분명하다."
 
 #: data/json/snippets/lab.json
 msgid ""
@@ -170429,6 +170607,10 @@ msgid ""
 "unit back at Hub01, and just have little booster versions of it at the local"
 " lab level.  $aving$ is a language admin speaks."
 msgstr ""
+"실버슈타인 박사 무리의 대탈주가 그렇게 나쁜 것만은 아니었다. 그 작자가 으스대며 돌아다니면서 온 사방에 시비거는 일이 없어진 덕분에, "
+"데이비드네와 쾰러가 멜키오르 중심 회로에 돌려보고 싶어했던 성능 패키지를 시도할 짬이 났다. 결과는 예측보다 뛰어났다. 우리가 멜키오르 "
+"중앙 허브에서 이걸 작업할 때 분산된 XEDRA 사일로와 통신하는 속도는 기본적으로 멜키오르의 처리속도와 같을 것이다. 그러면 허브 "
+"01에 멜키오르의 진짜 중앙 유닛을 배치하고 각 실험실에는 소형 부스터 버전만 놓아둘 수 있다. 관리자가 항상 $예산$만 신경쓰니 원."
 
 #: data/json/snippets/lab.json
 msgid ""
@@ -186463,6 +186645,8 @@ msgid ""
 " chance any of us had of surviving.  They started injecting people at "
 "gunpoint."
 msgstr ""
+"그 마지막 날에 경비대와 과학자들이 지하 연구실에서 올라와서는, 남아있던 직업을 전부 모아놓고 에워싸더군. 놈들 중 하나 말로는 우리 중"
+" 살아남을 가능성이 있는 방법은 이것 뿐이라고 말하면서, 총을 겨누고 위협하면서 사람들한테 약물을 주사하더라고."
 
 #: data/mods/Aftershock/npcs/Backgrounds/selftest.json
 msgid ""
@@ -187653,6 +187837,7 @@ msgid ""
 "insulated with rubber.  They are sturdy and will block attacks, but they are"
 " ridiculously heavy."
 msgstr ""
+"네오프렌 재질 위에 초합금을 덧입히고 고무로 절연처리한 팔 보호대입니다. 공격을 막아낼만큼 충분히 튼튼하지만, 웃길 정도로 무겁습니다."
 
 #: data/mods/CRT_EXPANSION/items/crt_armor.json
 #: data/mods/CRT_EXPANSION/items/crt_clothes.json
@@ -220627,51 +220812,6 @@ msgstr ""
 msgid "Control doors and shutters"
 msgstr "문 및 셔터 제어"
 
-#: data/mods/smart_house_remotes/main.lua
-msgid "Open curtains"
-msgstr "커튼 젖히기"
-
-#: data/mods/smart_house_remotes/main.lua
-msgid "Close curtains"
-msgstr "커튼 닫기"
-
-#: data/mods/smart_house_remotes/main.lua
-msgid "Raise garage door"
-msgstr "차고 문 열기"
-
-#: data/mods/smart_house_remotes/main.lua
-msgid "Lower garage door"
-msgstr "차고 문 닫기"
-
-#. ~ Message on the remote, stylized as calculator led display.
-#. Shown when there's not enough grid charge.
-#: data/mods/smart_house_remotes/main.lua
-msgid "Low Current At Endpoint"
-msgstr "단말 전력 부족"
-
-#. ~ Message on the remote, stylized as calculator led display.
-#. Shown when player is too far away from the area.
-#: data/mods/smart_house_remotes/main.lua
-msgid "No Signal"
-msgstr "신호 없음"
-
-#. ~ Message on the remote, stylized as calculator led display.
-#. Shown when there's nothing to activate.
-#: data/mods/smart_house_remotes/main.lua
-msgid "No Endpoints Available"
-msgstr "단말 없음"
-
-#: data/mods/smart_house_remotes/main.lua
-msgid "The remote beeps quietly."
-msgstr "신호음이 나지막하게 삑삑 울립니다."
-
-#. ~ Title of the menu prompting player to select what to activate with the
-#. remote.
-#. Typically it's doors, garage doors or window curtains.
-#: data/mods/smart_house_remotes/main.lua
-msgid "Select endpoint"
-msgstr "단말 선택"
-
 #: data/mods/smart_house_remotes/modinfo.json
 msgid "Smart House Remotes"
 msgstr "스마트 홈 시스템"
@@ -220776,123 +220916,6 @@ msgstr "공간이동 닻을 설치하여 활성화시킵니다."
 #: data/mods/teleportation_mod/iuse.json
 msgid "Place and activate the teleporter station."
 msgstr "공간이동기를 설치하여 활성화시킵니다."
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Power too low for charging."
-msgstr "충전에 필요한 전력이 부족합니다."
-
-#: data/mods/teleportation_mod/main.lua
-msgid "How much power do you want to charge the station with?"
-msgstr "공간이동기에 전력을 얼마나 충전시킵니까?"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "The station was charged."
-msgstr "공간이동기 충전이 완료되었습니다."
-
-#: data/mods/teleportation_mod/main.lua
-msgid "No grid or no power in grid"
-msgstr "전력망이 구성되어있지 않거나, 전력망에 저장된 전력이 없습니다."
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Charge which station?"
-msgstr "어느 공간이동기를 충전시킵니까?"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "No stations found on your tile."
-msgstr "현재 타일에 설치된 공간이동기가 없습니다."
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Use which station?"
-msgstr "어느 공간이동기를 사용합니까?"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Select teleportation target"
-msgstr "공간이동 목표지점을 선택하세요"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Change which variable?"
-msgstr "어느 변수로 변경합니까?"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Passive charge per hour"
-msgstr "시간당 기본 충전량"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "kJ to charge ratio"
-msgstr "kJ 기준 충전비"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Set passive charge to:"
-msgstr "기본 충전량 설정:"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Default: "
-msgstr "기본값: "
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Half: "
-msgstr "절반: "
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Double: "
-msgstr "두 배: "
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Set kJ to charge to:"
-msgstr "충전량 설정(kJ 기준): "
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Appropriate furniture not found. Something went terribly wrong!"
-msgstr "적절한 가구를 찾을 수 없습니다. 뭔가 끔찍하게 잘못됐습니다!"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Remove station or anchor?"
-msgstr "공간이동 닻 또는 공간이동기를 제거할까요?"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Station"
-msgstr "공간이동기"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Anchor"
-msgstr "닻"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "No anchors found on this tile."
-msgstr "해당 타일에 설치된 공간이동 닻이 없습니다."
-
-#: data/mods/teleportation_mod/main.lua
-msgid "No stations found on this tile."
-msgstr "해당 타일에 설치된 공간이동기가 없습니다."
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Do what?"
-msgstr "무엇을 할까요?"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Teleport"
-msgstr "공간이동"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Charge stations"
-msgstr "공간이동기 충전"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Check network status"
-msgstr "네트워크 정보 확인"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Remove anchors and stations"
-msgstr "공간이동 닻 및 공간이동기 제거"
-
-#: data/mods/teleportation_mod/main.lua src/action.cpp src/diary_ui.cpp
-#: src/options.cpp
-msgid "Info"
-msgstr "정보"
-
-#: data/mods/teleportation_mod/main.lua
-msgid "Config"
-msgstr "설정"
 
 #: data/mods/teleportation_mod/modinfo.json
 msgid "Teleportation"
@@ -223282,6 +223305,10 @@ msgstr "전투"
 #: src/action.cpp
 msgid "Craft"
 msgstr "제작"
+
+#: src/action.cpp src/diary_ui.cpp src/options.cpp
+msgid "Info"
+msgstr "정보"
 
 #: src/action.cpp
 msgid "Misc"
@@ -244123,6 +244150,10 @@ msgid "Typical damage per second:"
 msgstr "예상 DPS:"
 
 #: src/item.cpp
+msgid "<bold>Melee damage</bold>:"
+msgstr "<bold>근접 피해</bold>: "
+
+#: src/item.cpp
 msgid "<bold>Techniques when wielded</bold>: "
 msgstr "<bold>사용 가능 기술</bold>: "
 
@@ -244170,6 +244201,22 @@ msgstr "관통 피해:"
 #: src/item.cpp
 msgid "Critical pierce: "
 msgstr "치명타 관통 피해:"
+
+#: src/item.cpp
+msgid ": "
+msgstr ": "
+
+#: src/item.cpp
+msgid "  Armor-pierce: "
+msgstr "장갑관통력: "
+
+#: src/item.cpp
+msgid "/"
+msgstr "/"
+
+#: src/item.cpp
+msgid "  Armor multiplier: "
+msgstr "장갑 배율: "
 
 #: src/item.cpp
 msgid "Integrated mod: "
