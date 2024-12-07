@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-11-30 01:19+0000\n"
+"POT-Creation-Date: 2024-12-07 01:21+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2024\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/bn-team/teams/113585/es_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -39957,7 +39957,8 @@ msgid ""
 "This imposing apparatus harnesses the power of the atom, configured to "
 "provide nearly limitless backup power from the nuclear fuel installed in it."
 "  It's not doing much good here though.  It has a complicated security "
-"system that is dangerous and difficult to bypass without the code."
+"system that is dangerous and difficult to bypass without authorization; a "
+"small slot suggests that it can accept some form of ID card."
 msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-manufactured.json
@@ -82917,8 +82918,7 @@ msgstr[1] "pistolas básicas"
 msgstr[2] "pistolas básicas"
 
 #: data/json/items/classes/gun.json data/json/items/classes/range.json
-#: data/json/items/gun/20x66mm.json data/json/items/gun/bio.json
-#: data/json/items/gun/monster_gun.json data/json/items/gun/shot.json
+#: data/json/items/gun/bio.json data/json/items/gun/monster_gun.json
 #: data/json/obsoletion/items.json data/mods/CRT_EXPANSION/items/crt_gun.json
 msgctxt "gun_type_type"
 msgid "pistol"
@@ -118718,9 +118718,9 @@ msgstr[2] "hondas"
 
 #: data/json/items/ranged/slings.json
 msgid ""
-"A leather sling, easy to use and accurate.  It uses pebbles as ammunition."
+"A leather sling, easy to use and accurate.  It uses pebbles or rocks as "
+"ammunition."
 msgstr ""
-"Es una honda de cuero, fácil de usar y precisa. Usa guijarros como munición."
 
 #: data/json/items/ranged/slings.json
 msgid "staff sling"
@@ -197589,21 +197589,33 @@ msgstr "Es un motor de combustión. Quema combustible del tanque del vehículo."
 #: data/json/vehicleparts/combustion.json
 msgid ""
 "A combustion engine.  Burns diesel fuel from a tank in the vehicle.  Can "
-"also burn biodiesel or lamp oil, though somewhat less efficiently."
+"also burn biodiesel or oil, though somewhat less efficiently."
+msgstr ""
+
+#: data/json/vehicleparts/combustion.json
+msgid ""
+"A combustion engine.  Burns gasoline fuel from a tank in the vehicle.  Can "
+"also burn concentrated alcohol, though somewhat less efficiently."
+msgstr ""
+
+#: data/json/vehicleparts/combustion.json
+msgid ""
+"An advanced combustion engine.  Burns gasoline or diesel or aviation fuel "
+"from a tank in the vehicle.  Can also burn biodiesel, oil, or concentrated "
+"alcohol; though somewhat less efficiently.  Better power-to-weight ratio "
+"than a traditional engine but consumes more fuel, its power will not "
+"diminish even when multiple of them are installed."
+msgstr ""
+
+#: data/json/vehicleparts/combustion.json
+msgid ""
+"A combustion engine.  Burns diesel fuel from a tank in the vehicle.  Can "
+"also burn biodiesel, though somewhat less efficiently."
 msgstr ""
 
 #: data/json/vehicleparts/combustion.json
 msgid "A combustion engine.  Burns gasoline fuel from a tank in the vehicle."
 msgstr "Es un motor de combustión. Quema nafta del tanque del vehículo."
-
-#: data/json/vehicleparts/combustion.json
-msgid ""
-"An advanced combustion engine.  Burns gasoline or diesel or aviation fuel "
-"from a tank in the vehicle.  Can also burn lamp oil, though somewhat less "
-"efficiently.  Better power-to-weight ratio than a traditional engine but "
-"consumes more fuel, its power will not diminish even when multiple of them "
-"are installed."
-msgstr ""
 
 #: data/json/vehicleparts/combustion.json
 msgid ""
@@ -266324,6 +266336,18 @@ msgstr ""
 msgid "You grab hold of a sinewy tendril and wrench it loose!"
 msgstr ""
 
+#: src/iexamine.cpp
+msgid ""
+"The plutonium generator beeps twice, then disengages from the surrounding "
+"conduits with a series of mechanical clunks."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid ""
+"The plutonium generator has significant security measures in place. Without "
+"the necessary ID, you'll have to remove it by hand."
+msgstr ""
+
 #: src/iexamine_elevator.cpp
 msgid " (this floor)"
 msgstr ""
@@ -267596,6 +267620,10 @@ msgstr[1] "Utiliza <stat>%i</stat> cargas del UPS por disparo"
 msgstr[2] "Utiliza <stat>%i</stat> cargas del UPS por disparo"
 
 #: src/item.cpp
+msgid "Damage/range will vary with <info>throwing skill and ammo.</info>"
+msgstr ""
+
+#: src/item.cpp
 msgid "<bold>Base aim speed</bold>: "
 msgstr ""
 
@@ -267913,7 +267941,7 @@ msgstr ""
 
 #: src/item.cpp
 #, c-format
-msgid "Can bring your <info>%s skill to</info> <num>."
+msgid "Can bring <info>%s skill to</info> <num>."
 msgstr ""
 
 #: src/item.cpp
