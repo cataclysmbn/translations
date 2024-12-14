@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-12-07 01:21+0000\n"
+"POT-Creation-Date: 2024-12-14 01:21+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -45415,10 +45415,10 @@ msgstr[0] "膠凝汽油"
 #. ~ Description for {'str_sp': 'gelled gasoline'}
 #: data/json/items/fuel.json
 msgid ""
-"A flammable gel composed of gasoline and dissolved shavings of polystyrene, "
-"roughly similar in properties to napalm b.  It's meant to be used with a "
-"flamethrower."
-msgstr "一種易燃的凝膠，由汽油和聚苯乙烯的溶解刨屑所組成，其性質跟凝固汽油b類似。它能與火焰噴射器一起使用。"
+"A flammable gel composed of gasoline and a chemical that renders it to a "
+"gel, it is roughly similar in properties to napalm b.  It's meant to be used"
+" with a flamethrower."
+msgstr "一种由汽油和使其呈凝胶状的化学物质组成的可燃凝胶，性质类似凝固汽油。可以用作火焰喷射器的燃料。"
 
 #: data/json/items/fuel.json
 msgid "flamethrower fuel"
@@ -63832,8 +63832,8 @@ msgstr[0] "木盾"
 #. ~ Description for {'str': 'wooden shield'}
 #: data/json/items/armor/shields.json
 msgid ""
-"A crude wooden shield, lacking any metal or leather reinforcement.  "
-"Tolerable weight but not very tough."
+"A crude wooden shield lacking any metal or leather reinforcement.  Tolerable"
+" weight but not very tough."
 msgstr "一件粗糙的木制盾牌，缺少金属及皮革的加固部件。可接受的重量但不坚固。"
 
 #: data/json/items/armor/shields.json
@@ -63844,7 +63844,7 @@ msgstr[0] "大木盾"
 #. ~ Description for {'str': 'large wooden shield'}
 #: data/json/items/armor/shields.json
 msgid ""
-"An crude wooden tower shield, lacking any metal or leather reinforcement.  "
+"A crude wooden tower shield lacking any metal or leather reinforcement.  "
 "Bulky, but offers a decent amount of protection."
 msgstr "一个粗糙的木制防御塔盾，缺少金属及皮革的加固部件。相当笨重，但提供不错的防护。"
 
@@ -63856,9 +63856,9 @@ msgstr[0] "防暴盾牌"
 #. ~ Description for {'str': 'riot shield'}
 #: data/json/items/armor/shields.json
 msgid ""
-"A large but fairly light plastic shield, designed for riot police officers."
-"  Not too encumbering, but designed for fending off thrown rocks rather than"
-" bullets."
+"A large but fairly light plastic shield designed for riot police officers.  "
+"Not too encumbering, but designed for fending off thrown rocks rather than "
+"bullets."
 msgstr "一块大而相对轻便的塑料盾牌，设计用于防暴警察。它不会过于沉重，但更适用于抵挡被投掷的石块，而不是子弹。"
 
 #: data/json/items/armor/shields.json
@@ -230057,6 +230057,11 @@ msgid "uistate data"
 msgstr "使用者介面資料"
 
 #: src/game.cpp
+#, c-format
+msgid "World Saved (took %dms)."
+msgstr "世界已保存（耗时 %d毫秒）。"
+
+#: src/game.cpp
 msgid "Failed to save game data"
 msgstr "無法儲存遊戲數據"
 
@@ -245569,11 +245574,6 @@ msgstr ""
 msgid ""
 "Something stirs and clambers out of the ruined mass of flesh and nerves!"
 msgstr "有什么东西从被毁坏的肉体和神经中蠢蠢欲动、跃跃欲试！"
-
-#: src/map_memory.cpp
-#, c-format
-msgid "memory map region for (%d,%d,%d)"
-msgstr "地图记忆坐标（%d，%d，%d）"
 
 #: src/mapbuffer.cpp
 #, c-format
@@ -263053,13 +263053,18 @@ msgstr ""
 msgid "Global"
 msgstr "全局"
 
+#: src/world.cpp
+msgid "world data"
+msgstr "世界資料"
+
+#: src/world.cpp
+#, c-format
+msgid "memory map region for (%d,%d,%d)"
+msgstr "地图记忆坐标（%d，%d，%d）"
+
 #: src/worldfactory.cpp
 msgid "Do you want to abort World Generation?"
 msgstr "你要中止創造世界嗎?"
-
-#: src/worldfactory.cpp
-msgid "world data"
-msgstr "世界資料"
 
 #: src/worldfactory.cpp
 msgid " WORLD SELECTION "
