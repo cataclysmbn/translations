@@ -31,7 +31,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-12-14 01:21+0000\n"
+"POT-Creation-Date: 2024-12-21 01:19+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2024\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -9220,6 +9220,28 @@ msgid "You feel nauseous and rat-like."
 msgstr "Вы превращаетесь в крысу, а ещё вас мутит."
 
 #: data/json/effects.json
+msgid "Took Prussian blue"
+msgstr ""
+
+#. ~ Description of effect 'Took Prussian blue'.
+#: data/json/effects.json
+msgid ""
+"You consumed Prussian blue, to help remove radioactive contaminants from "
+"your body more quickly."
+msgstr ""
+
+#: data/json/effects.json
+msgid "Took potassium iodide"
+msgstr ""
+
+#. ~ Description of effect 'Took potassium iodide'.
+#: data/json/effects.json
+msgid ""
+"You consumed potassium iodide, reducing the amount of contaminants you'll "
+"accumulate during radiation exposure."
+msgstr ""
+
+#: data/json/effects.json
 msgid "Shakes"
 msgstr "Озноб"
 
@@ -16606,7 +16628,7 @@ msgstr "алмаз"
 msgid "Gemstone"
 msgstr "драгоценный камень"
 
-#: data/json/materials.json
+#: data/json/materials.json data/json/vitamin.json
 msgid "Egg"
 msgstr "яйцо"
 
@@ -16826,7 +16848,7 @@ msgstr "бобы"
 msgid "Garlic"
 msgstr "чеснок"
 
-#: data/json/materials.json
+#: data/json/materials.json data/json/vitamin.json
 msgid "Nut"
 msgstr "орехи"
 
@@ -16839,7 +16861,7 @@ msgstr "гриб"
 msgid "Water"
 msgstr "вода"
 
-#: data/json/materials.json
+#: data/json/materials.json data/json/vitamin.json
 msgid "Wheat"
 msgstr "пшеница"
 
@@ -31532,6 +31554,34 @@ msgstr "Мутагенные токсины"
 #: data/json/vitamin.json
 msgid "Disgusting Diet"
 msgstr "Отвратительная диета"
+
+#: data/json/vitamin.json
+msgid "Consumed human flesh"
+msgstr ""
+
+#: data/json/vitamin.json
+msgid "Meat"
+msgstr ""
+
+#: data/json/vitamin.json
+msgid "Veggy"
+msgstr ""
+
+#: data/json/vitamin.json
+msgid "Fruit"
+msgstr ""
+
+#: data/json/vitamin.json
+msgid "Junk"
+msgstr ""
+
+#: data/json/vitamin.json data/mods/Aftershock/npcs/prepnet_dialogue.json
+msgid "Bread"
+msgstr "Хлеб"
+
+#: data/json/vitamin.json
+msgid "Milk"
+msgstr ""
 
 #. ~ weapon category name
 #: data/json/weapon_categories.json
@@ -89635,8 +89685,8 @@ msgstr[1] "вяленого мяса"
 msgstr[2] "вяленого мяса"
 msgstr[3] "вяленое мясо"
 
-#. ~ Conditional name for {'str_sp': 'meat jerky'} when FLAG matches
-#. CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'meat jerky'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/carnivore.json
 msgid "jerk jerky"
 msgid_plural "jerk jerky"
@@ -89687,7 +89737,7 @@ msgstr[1] "копчёное мясо"
 msgstr[2] "копчёное мясо"
 msgstr[3] "копчёное мясо"
 
-#. ~ Conditional name for smoked meat when FLAG matches CANNIBALISM
+#. ~ Conditional name for smoked meat when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/carnivore.json
 msgid "smoked sucker"
 msgid_plural "smoked sucker"
@@ -95436,8 +95486,8 @@ msgstr[1] "начос с мясом"
 msgstr[2] "начос с мясом"
 msgstr[3] "начос с мясом"
 
-#. ~ Conditional name for {'str_sp': 'meat nachos'} when FLAG matches
-#. CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'meat nachos'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/junkfood.json
 msgid "niño nachos"
 msgid_plural "niño nachos"
@@ -95473,8 +95523,8 @@ msgstr[1] "мясных начос с сыром"
 msgstr[2] "мясных начос с сыром"
 msgstr[3] "мясные начос с сыром"
 
-#. ~ Conditional name for {'str_sp': 'meat nachos with cheese'} when FLAG
-#. matches CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'meat nachos with cheese'} when VITAMIN
+#. matches human_flesh_vitamin
 #: data/json/items/comestibles/junkfood.json
 msgid "niño nachos with cheese"
 msgid_plural "niño nachos with cheese"
@@ -95791,7 +95841,7 @@ msgstr[1] "сырые колбасы"
 msgstr[2] "сырых колбас"
 msgstr[3] "сырые колбасы"
 
-#. ~ Conditional name for raw sausage when FLAG matches CANNIBALISM
+#. ~ Conditional name for raw sausage when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "raw Mannwurst"
 msgid_plural "raw Mannwursts"
@@ -95827,7 +95877,8 @@ msgstr[1] "копченые колбасы"
 msgstr[2] "копченых колбас"
 msgstr[3] "копчёные колбасы"
 
-#. ~ Conditional name for smoked sausage when FLAG matches CANNIBALISM
+#. ~ Conditional name for smoked sausage when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "smoked Mannwurst"
 msgid_plural "smoked Mannwursts"
@@ -95849,7 +95900,8 @@ msgstr[1] "приготовленные колбасы"
 msgstr[2] "приготовленных колбас"
 msgstr[3] "приготовленные колбасы"
 
-#. ~ Conditional name for cooked sausage when FLAG matches CANNIBALISM
+#. ~ Conditional name for cooked sausage when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "cooked Mannwurst"
 msgid_plural "cooked Mannwursts"
@@ -95928,8 +95980,8 @@ msgstr[1] "консервированное мясо"
 msgstr[2] "консервированное мясо"
 msgstr[3] "консервированное мясо"
 
-#. ~ Conditional name for {'str_sp': 'potted meat'} when FLAG matches
-#. CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'potted meat'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "potted person"
 msgid_plural "potted person"
@@ -95981,7 +96033,8 @@ msgstr[1] "братвурста"
 msgstr[2] "братвурстов"
 msgstr[3] "братвурсты"
 
-#. ~ Conditional name for {'str': 'bratwurst'} when FLAG matches CANNIBALISM
+#. ~ Conditional name for {'str': 'bratwurst'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "Mannbrat"
 msgid_plural "Mannbrats"
@@ -96173,8 +96226,8 @@ msgstr[1] "шкварки"
 msgstr[2] "шкварки"
 msgstr[3] "шкварки"
 
-#. ~ Conditional name for {'str_sp': 'cracklins'} when FLAG matches
-#. CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'cracklins'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "long pork rinds"
 msgid_plural "long pork rindss"
@@ -96240,7 +96293,7 @@ msgstr[1] "колбасы в соусе карри"
 msgstr[2] "колбас в соусе карри"
 msgstr[3] "колбасы в соусе карри"
 
-#. ~ Conditional name for currywurst when FLAG matches CANNIBALISM
+#. ~ Conditional name for currywurst when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 #, c-format
 msgid "cheapskate %s"
@@ -96286,7 +96339,8 @@ msgstr[1] "мерзостных %s"
 msgstr[2] "мерзостных %s"
 msgstr[3] "мерзостные %s"
 
-#. ~ Conditional name for {'str': 'aspic'} when FLAG matches CANNIBALISM
+#. ~ Conditional name for {'str': 'aspic'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 #, c-format
 msgid "amoral %s"
@@ -96418,7 +96472,8 @@ msgstr[1] "болонские колбасы"
 msgstr[2] "болонских колбасы"
 msgstr[3] "болонские колбасы"
 
-#. ~ Conditional name for {'str_sp': 'bologna'} when FLAG matches CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'bologna'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 #, c-format
 msgid "brat %s"
@@ -96528,7 +96583,7 @@ msgstr[2] "сосисок с соусом"
 msgstr[3] "сосиска с соусом"
 
 #. ~ Conditional name for {'str': 'sausage gravy', 'str_pl': 'sausage
-#. gravies'} when FLAG matches CANNIBALISM
+#. gravies'} when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "Mannwurst gravy"
 msgid_plural "Mannwurst gravies"
@@ -96565,7 +96620,8 @@ msgstr[1] "пеммикана"
 msgstr[2] "пеммиканов"
 msgstr[3] "пеммикан"
 
-#. ~ Conditional name for {'str_sp': 'pemmican'} when FLAG matches CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'pemmican'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 #, c-format
 msgid "prepper %s"
@@ -96605,7 +96661,8 @@ msgstr[1] "макароны по-флотски"
 msgstr[2] "макароны по-флотски"
 msgstr[3] "макароны по-флотски"
 
-#. ~ Conditional name for hamburger helper when FLAG matches CANNIBALISM
+#. ~ Conditional name for hamburger helper when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "hobo helper"
 msgid_plural "hobo helpers"
@@ -96655,7 +96712,7 @@ msgstr[2] "соусов чили с мясом"
 msgstr[3] "соус чили с мясом"
 
 #. ~ Conditional name for {'str': 'chili con carne', 'str_pl': 'chilis con
-#. carne'} when FLAG matches CANNIBALISM
+#. carne'} when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "chili con cabron"
 msgid_plural "chilis con cabron"
@@ -96875,7 +96932,7 @@ msgstr[1] "мясной пирог"
 msgstr[2] "мясной пирог"
 msgstr[3] "мясные пироги"
 
-#. ~ Conditional name for meat pie when FLAG matches CANNIBALISM
+#. ~ Conditional name for meat pie when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "prick pie"
 msgid_plural "prick pies"
@@ -96907,7 +96964,7 @@ msgstr[1] "мясная пицца"
 msgstr[2] "мясная пицца"
 msgstr[3] "мясные пиццы"
 
-#. ~ Conditional name for meat pizza when FLAG matches CANNIBALISM
+#. ~ Conditional name for meat pizza when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "poser pizza"
 msgid_plural "poser pizzas"
@@ -96980,7 +97037,7 @@ msgstr[1] "мясные консервы"
 msgstr[2] "мясные консервы"
 msgstr[3] "мясные консервы"
 
-#. ~ Conditional name for canned meat when FLAG matches CANNIBALISM
+#. ~ Conditional name for canned meat when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "soylent slice"
 msgid_plural "soylent slices"
@@ -97006,7 +97063,8 @@ msgstr[1] "солонина из мяса"
 msgstr[2] "солонина из мяса"
 msgstr[3] "солонина из мяса"
 
-#. ~ Conditional name for salted meat slice when FLAG matches CANNIBALISM
+#. ~ Conditional name for salted meat slice when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "salted simpleton slice"
 msgid_plural "salted simpleton slices"
@@ -97030,8 +97088,8 @@ msgstr[1] "спагетти с соусом болоньезе"
 msgstr[2] "спагетти с соусом болоньезе"
 msgstr[3] "спагетти с соусом болоньезе"
 
-#. ~ Conditional name for {'str_sp': 'spaghetti bolognese'} when FLAG matches
-#. CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'spaghetti bolognese'} when VITAMIN
+#. matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "scoundrel spaghetti"
 msgid_plural "scoundrel spaghettis"
@@ -97064,7 +97122,7 @@ msgstr[1] "лазаньи"
 msgstr[2] "лазаньи"
 msgstr[3] "лазаньи"
 
-#. ~ Conditional name for lasagne when FLAG matches CANNIBALISM
+#. ~ Conditional name for lasagne when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 #, c-format
 msgid "Luigi %s"
@@ -97114,7 +97172,8 @@ msgstr[1] "чизбургера"
 msgstr[2] "чизбургеров"
 msgstr[3] "чизбургеры"
 
-#. ~ Conditional name for cheeseburger when FLAG matches CANNIBALISM
+#. ~ Conditional name for cheeseburger when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 #, c-format
 msgid "chump %s"
@@ -97151,7 +97210,7 @@ msgstr[1] "гамбургера"
 msgstr[2] "гамбургеров"
 msgstr[3] "гамбургеры"
 
-#. ~ Conditional name for hamburger when FLAG matches CANNIBALISM
+#. ~ Conditional name for hamburger when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "bobburger"
 msgid_plural "bobburgers"
@@ -97183,7 +97242,7 @@ msgstr[1] "ленивых Джо"
 msgstr[2] "ленивых Джо"
 msgstr[3] "ленивые Джо"
 
-#. ~ Conditional name for sloppy joe when FLAG matches CANNIBALISM
+#. ~ Conditional name for sloppy joe when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "manwich"
 msgid_plural "manwiches"
@@ -97218,7 +97277,7 @@ msgstr[1] "тако"
 msgstr[2] "тако"
 msgstr[3] "тако"
 
-#. ~ Conditional name for taco when FLAG matches CANNIBALISM
+#. ~ Conditional name for taco when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 #, c-format
 msgid "tio %s"
@@ -97255,7 +97314,8 @@ msgstr[1] "маринованное мясо"
 msgstr[2] "маринованное мясо"
 msgstr[3] "маринованное мясо"
 
-#. ~ Conditional name for pickled meat when FLAG matches CANNIBALISM
+#. ~ Conditional name for pickled meat when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 msgid "pickled punk"
 msgid_plural "pickled punks"
@@ -97278,8 +97338,10 @@ msgstr[1] "сушёное мясо"
 msgstr[2] "сушёное мясо"
 msgstr[3] "сушёное мясо"
 
-#. ~ Conditional name for dehydrated meat when FLAG matches CANNIBALISM
-#. ~ Conditional name for rehydrated meat when FLAG matches CANNIBALISM
+#. ~ Conditional name for dehydrated meat when VITAMIN matches
+#. human_flesh_vitamin
+#. ~ Conditional name for rehydrated meat when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 #, c-format
 msgid "%s, human"
@@ -97323,9 +97385,9 @@ msgstr[1] "хаггис"
 msgstr[2] "хаггис"
 msgstr[3] "хаггис"
 
-#. ~ Conditional name for {'str': 'haggis', 'str_pl': 'haggises'} when FLAG
-#. matches CANNIBALISM
-#. ~ Conditional name for bone broth when FLAG matches CANNIBALISM
+#. ~ Conditional name for {'str': 'haggis', 'str_pl': 'haggises'} when VITAMIN
+#. matches human_flesh_vitamin
+#. ~ Conditional name for bone broth when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 #: data/json/items/comestibles/soup.json
 #, c-format
@@ -97500,9 +97562,10 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#. ~ Conditional name for {'str_sp': 'bibimbap'} when FLAG matches CANNIBALISM
-#. ~ Conditional name for {'str_sp': 'simple bibimbap'} when FLAG matches
-#. CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'bibimbap'} when VITAMIN matches
+#. human_flesh_vitamin
+#. ~ Conditional name for {'str_sp': 'simple bibimbap'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/meat_dishes.json
 #, c-format
 msgid "saram %s"
@@ -101776,8 +101839,8 @@ msgstr[1] "жареных потрохов"
 msgstr[2] "жареных потрохов"
 msgstr[3] "жареные потроха"
 
-#. ~ Conditional name for {'str_sp': 'fried offal'} when FLAG matches
-#. CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'fried offal'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/offal_dishes.json
 msgid "fried Frank offal"
 msgid_plural "fried Frank offals"
@@ -102383,7 +102446,8 @@ msgstr[1] "протеиновый напиток"
 msgstr[2] "протеиновый напиток"
 msgstr[3] "протеиновый напиток"
 
-#. ~ Conditional name for protein drink when FLAG matches CANNIBALISM
+#. ~ Conditional name for protein drink when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/protein.json
 msgid "soylent green drink"
 msgid_plural "soylent green drinks"
@@ -102424,8 +102488,8 @@ msgstr[1] "протеиновых порошока"
 msgstr[2] "протеиновых порошков"
 msgstr[3] "протеиновый порошок"
 
-#. ~ Conditional name for {'str_sp': 'protein powder'} when FLAG matches
-#. CANNIBALISM
+#. ~ Conditional name for {'str_sp': 'protein powder'} when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/protein.json
 msgid "soylent green powder"
 msgid_plural "soylent green powder"
@@ -102480,7 +102544,8 @@ msgstr[1] "протеиновый коктейль"
 msgstr[2] "протеиновый коктейль"
 msgstr[3] "протеиновый коктейль"
 
-#. ~ Conditional name for protein shake when FLAG matches CANNIBALISM
+#. ~ Conditional name for protein shake when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/protein.json
 msgid "soylent green shake"
 msgid_plural "soylent green shakes"
@@ -102506,8 +102571,8 @@ msgstr[1] "обогащённый протеиновый коктейль"
 msgstr[2] "обогащённый протеиновый коктейль"
 msgstr[3] "обогащённый протеиновый коктейль"
 
-#. ~ Conditional name for fortified protein shake when FLAG matches
-#. CANNIBALISM
+#. ~ Conditional name for fortified protein shake when VITAMIN matches
+#. human_flesh_vitamin
 #: data/json/items/comestibles/protein.json
 msgid "fortified soylent green shake"
 msgid_plural "fortified soylent green shakes"
@@ -104019,7 +104084,7 @@ msgstr[2] "мясных сэндвичей"
 msgstr[3] "мясной сэндвич"
 
 #. ~ Conditional name for {'str': 'meat sandwich', 'str_pl': 'meat
-#. sandwiches'} when FLAG matches CANNIBALISM
+#. sandwiches'} when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/sandwich.json
 msgid "slob sandwich"
 msgid_plural "slob sandwiches"
@@ -105315,7 +105380,7 @@ msgstr[1] "мясной суп"
 msgstr[2] "мясной суп"
 msgstr[3] "мясной суп"
 
-#. ~ Conditional name for meat soup when FLAG matches CANNIBALISM
+#. ~ Conditional name for meat soup when VITAMIN matches human_flesh_vitamin
 #: data/json/items/comestibles/soup.json
 msgid "sap soup"
 msgid_plural "sap soups"
@@ -223355,10 +223420,6 @@ msgid ""
 "animals."
 msgstr "Да этого добра навалом. На улице куча диких животных."
 
-#: data/mods/Aftershock/npcs/prepnet_dialogue.json
-msgid "Bread"
-msgstr "Хлеб"
-
 #. ~ Description for mission 'Bread'
 #: data/mods/Aftershock/npcs/prepnet_dialogue.json
 msgid "Find 50 flour."
@@ -282305,11 +282366,8 @@ msgstr "У вас в руках нет оружия дальнего боя."
 msgid ""
 "Your character is dead, do you accept this?\n"
 "\n"
-"Select Yes to abandon the character to their fate, select No to return to main menu."
+"Select Yes to abandon the character to their fate, select No to try again."
 msgstr ""
-"Ваш персонаж погиб, вы согласны с этим?\n"
-"\n"
-"Выберите \"Да\" для смирения с судьбой, или выберите \"Нет\" для возвращения в главное меню."
 
 #: src/game.cpp
 msgid "Watch the last moments of your life…?"
@@ -288597,10 +288655,6 @@ msgid "Factions"
 msgstr "Фракции"
 
 #: src/init.cpp
-msgid "Construction sequences"
-msgstr "Последовательности строительства"
-
-#: src/init.cpp
 msgid "Crafting recipes"
 msgstr "Крафт: рецепты"
 
@@ -288675,6 +288729,10 @@ msgstr "Палитры генерации карты"
 #: src/init.cpp
 msgid "Furniture and terrain"
 msgstr "Мебель и типы местности"
+
+#: src/init.cpp
+msgid "Construction sequences"
+msgstr "Последовательности строительства"
 
 #: src/init.cpp
 msgid "Professions"
@@ -307101,12 +307159,8 @@ msgstr "Уточнение смерти персонажа"
 #: src/options.cpp
 msgid ""
 "If enabled, when your character dies, the player is given a prompt that "
-"gives the option to cancel savefile deletion and other death effects, "
-"returning to the main menu without saving instead."
+"gives the option to reload the last saved game instead of dying."
 msgstr ""
-"Если \"да\", при смерти вашего персонажа будет показано окно с выбором, "
-"позволяющее отменить удаление файла сохранения и прочие эффекты, связанные "
-"со смертью, и возвращающее в главное меню вместо сохранения."
 
 #: src/options.cpp
 msgid "Default character name"
