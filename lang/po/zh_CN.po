@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2024-12-21 01:19+0000\n"
+"POT-Creation-Date: 2024-12-28 01:16+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -6155,7 +6155,7 @@ msgstr "你梦见自己在海洋里遨游。"
 msgid "In your dream, you see a strangely fishlike image of yourself."
 msgstr "在梦里，你看见自己奇怪的像鱼一样的身影。"
 
-#: data/json/dreams.json
+#: data/json/dreams.json data/mods/Monster_Girls/dreams.json
 msgid "You have a vivid dream of hunting in the woods."
 msgstr "你做了一个在树林里打猎的生动的梦。"
 
@@ -15749,7 +15749,7 @@ msgstr "你感到精力充沛！"
 msgid "Hoarder"
 msgstr "贮藏癖"
 
-#: data/json/morale_types.json data/json/mutations/mutations.json
+#: data/json/morale_types.json data/json/obsoletion/mutations.json
 msgid "Stylish"
 msgstr "时尚范"
 
@@ -107718,6 +107718,18 @@ msgid ""
 msgstr "笨重的拖把，清理泄漏的液体很不错。"
 
 #: data/json/items/tool/toiletries.json
+msgid "collapsible mop"
+msgid_plural "collapsible mops"
+msgstr[0] "折叠拖把"
+
+#. ~ Description for {'str': 'collapsible mop'}
+#: data/json/items/tool/toiletries.json
+msgid ""
+"A long unwieldy mop with a collapsible handle for convenient transportation."
+"  You may use it to clean up any 'mess' you have made."
+msgstr "一款长柄而笨重的拖把，配有可折叠手柄，便于运输。你可以用它清理任何你制造的\"混乱\"。"
+
+#: data/json/items/tool/toiletries.json
 #: data/mods/Item_Category_Overhaul/overwrite_tools.json
 msgid "razor blade"
 msgid_plural "razor blades"
@@ -121291,12 +121303,17 @@ msgid ""
 msgstr ""
 "你有着一段关于兴奋剂（如咖啡因或安非他明）的独特经历。你比普通人能够承受更高剂量的兴奋剂而不过量，但如果你摄入过多兴奋剂，你会开始看见奇怪的事情发生……"
 
-#. ~ Description for {'str': 'Stylish'}
+#: data/json/mutations/mutations.json
+msgid "Fashion Deficient"
+msgstr "时尚无感"
+
+#. ~ Description for {'str': 'Fashion Deficient'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Practicality is far less important than style.  Your morale is improved by "
-"wearing fashionable and attractive clothing."
-msgstr "对你来说，实用的重要性远远低于好看。即使是在末世，把自己打扮的光彩照人和是很重要的。你的心情值会随着自己穿着的时髦衣着而增加。"
+"You have no sense of style, and don't care about wearing anything 'fancy';  "
+"you'd be perfectly happy to wear non-matching socks, or wear socks and "
+"sandals.  You get no morale bonus from fancy equipment."
+msgstr "你完全没有时尚感，不喜欢穿 \"花哨\" 的衣服；你非常乐意穿不配套的袜子，或者穿袜子配凉鞋。你无法从花哨的装备中获得任何心情值加成。"
 
 #: data/json/mutations/mutations.json
 msgid "Light Step"
@@ -158583,6 +158600,11 @@ msgid ""
 "being removed.  If you see this on a profession or mutate this trait, this "
 "is a bug."
 msgstr "由于隐藏的移动速度惩罚被移除，这种变异已经被废弃。如果你在职业上看到了这一点，或者变异了这一特性，这就是一个bug。"
+
+#. ~ Description for {'str': 'Stylish'}
+#: data/json/obsoletion/mutations.json
+msgid "Obsoleted due to becoming default behavior."
+msgstr "已废弃，因为此行为已成为默认状态。"
 
 #: data/json/obsoletion/npc.json
 msgid "Head of Security"
@@ -211147,6 +211169,44 @@ msgctxt "memorial_female"
 msgid "Spoke with the trees."
 msgstr "与树木交談。"
 
+#. ~ Mutation class name
+#: data/mods/Monster_Girls/categories.json
+#: data/mods/Monster_Girls/thresh_mutation.json
+msgid "Kitsune"
+msgstr ""
+
+#. ~ Mutation class: Kitsune mutagen_message
+#: data/mods/Monster_Girls/categories.json
+msgid "You suddenly have an indescribable craving for chicken..."
+msgstr ""
+
+#. ~ Mutation class: Kitsune iv_message
+#: data/mods/Monster_Girls/categories.json
+msgid ""
+"Your blood runs wild with mischief and merriment as the mutagen flows "
+"through it."
+msgstr ""
+
+#. ~ Mutation class: Kitsune Male memorial messsage
+#: data/mods/Monster_Girls/categories.json
+msgctxt "memorial_male"
+msgid "Learned what the fox says."
+msgstr ""
+
+#. ~ Mutation class: Kitsune Female memorial messsage
+#: data/mods/Monster_Girls/categories.json
+msgctxt "memorial_female"
+msgid "Learned what the fox says."
+msgstr ""
+
+#: data/mods/Monster_Girls/dreams.json
+msgid "You have a strange dream about foxes."
+msgstr ""
+
+#: data/mods/Monster_Girls/dreams.json
+msgid "Your dreams give you a mischievous furry feeling."
+msgstr ""
+
 #: data/mods/Monster_Girls/dreams.json
 msgid "In a dream, you see a curiously harpy-like reflection of yourself."
 msgstr "在梦里，你看见自己奇异的、像鹰身女妖一样的身影。"
@@ -211168,6 +211228,15 @@ msgstr "你的梦中形象似乎长出了狗耳朵。"
 msgid ""
 "In a dream you catch a glimpse of a strangely cattle-like tail on yourself."
 msgstr "在梦里，你瞥见自己身上竟然长出了一条奇怪的牛尾巴。"
+
+#: data/mods/Monster_Girls/dreams.json
+msgid "You have a vivid dream of sneaking up to a chicken coop."
+msgstr ""
+
+#: data/mods/Monster_Girls/dreams.json
+msgid ""
+"Whilst dreaming, you see yourself… but with a pair of fox ears on your head?"
+msgstr ""
 
 #: data/mods/Monster_Girls/dreams.json
 msgid ""
@@ -211195,9 +211264,33 @@ msgstr "你梦见自己变成了半人半蜘蛛的模样，这让你感到害怕
 
 #: data/mods/Monster_Girls/dreams.json
 msgid ""
+"You vividly dream of running away from a chicken coop, your prey held by the"
+" neck between your teeth."
+msgstr ""
+
+#: data/mods/Monster_Girls/dreams.json
+msgid "You vividly dream of… a wedding altar?!?"
+msgstr ""
+
+#: data/mods/Monster_Girls/dreams.json
+msgid ""
 "A rather attractive triffid offers you a bouquet of zombie heads.  How "
 "thoughtful!"
 msgstr "一个富有魅力的三尖树送了你一束由丧尸头组成的花束，太体贴了！"
+
+#: data/mods/Monster_Girls/dreams.json
+msgid "You vividly dream of committing tax fraud: the ultimate trick!"
+msgstr ""
+
+#: data/mods/Monster_Girls/dreams.json
+msgid ""
+"You find yourself subconsciously moving your head from your normal pillow to"
+" your tail as you sleep."
+msgstr ""
+
+#: data/mods/Monster_Girls/dreams.json
+msgid "You dream of sharing your love of mischief with a partner."
+msgstr ""
 
 #: data/mods/Monster_Girls/modinfo.json
 msgid "Monster Girls Mutations"
@@ -211314,6 +211407,23 @@ msgid "Fey serum"
 msgid_plural "Fey serums"
 msgstr[0] "精灵诱变血清"
 
+#: data/mods/Monster_Girls/mutagens.json
+msgid "Kitsune mutagen"
+msgid_plural "Kitsune mutagens"
+msgstr[0] ""
+
+#: data/mods/Monster_Girls/mutagens.json
+msgid "Kitsune serum"
+msgid_plural "Kitsune serums"
+msgstr[0] ""
+
+#. ~ Description for Kitsune serum
+#: data/mods/Monster_Girls/mutagens.json
+msgid ""
+"A super-concentrated mutagen the color of amber.  You need a syringe to "
+"inject it… if you really want to?"
+msgstr ""
+
 #. ~ Description for {'str': 'Nekomimi'}
 #: data/mods/Monster_Girls/thresh_mutation.json
 msgid ""
@@ -211396,6 +211506,15 @@ msgid ""
 "speak back.  In the darkest hour of mankind, the fae shall bring the light!"
 msgstr ""
 "你发现自己对兰巴斯（精灵面包）有着难以抑制的渴望，同时也强烈想要在弓上装上箭矢。树木与你交谈，你也回应它们。在人类最黑暗的时刻，精灵将带来光明！"
+
+#. ~ Description for {'str': 'Kitsune'}
+#: data/mods/Monster_Girls/thresh_mutation.json
+msgid ""
+"While you may not have gained the magical powers of the japanese fox "
+"spirits, you embody their mischievous nature perfectly.  Perhaps one day, "
+"you'll find that special partner-in-crime to live up to the other reputation"
+" Kitsunes have."
+msgstr ""
 
 #: data/mods/Mundane_Zombies/modinfo.json
 msgid "Mundane Zombies"
@@ -230326,6 +230445,9 @@ msgid ""
 "\n"
 "Select Yes to abandon the character to their fate, select No to try again."
 msgstr ""
+"您的角色已经死亡，您是否接受？\n"
+"\n"
+"选择“是”来放弃角色的命运，选择“否”来再试一次。"
 
 #: src/game.cpp
 msgid "Watch the last moments of your life…?"
@@ -238286,14 +238408,6 @@ msgid "Stats of the active <info>gunmod (%s)</info> are shown."
 msgstr "已启用的 <info>配件（%s）<info> 属性已经显示。"
 
 #: src/item.cpp
-msgid "left"
-msgstr "左"
-
-#: src/item.cpp
-msgid "right"
-msgstr "右"
-
-#: src/item.cpp
 #, c-format
 msgid "It takes you an extremely long time to wield your %s."
 msgstr "手持 %s 花费了非常长时间。"
@@ -238551,6 +238665,14 @@ msgstr "%1$s（%3$s/%2$s）"
 msgctxt "cash card and money"
 msgid "%1$s %2$s"
 msgstr "%1$s（%2$s）"
+
+#: src/item.cpp
+msgid "left"
+msgstr "左"
+
+#: src/item.cpp
+msgid "right"
+msgstr "右"
 
 #: src/item.cpp
 msgid "++"
@@ -245635,7 +245757,7 @@ msgstr "这一击被%s挡住了！"
 #: src/map.cpp
 #, c-format
 msgid "The shot hits the %s and punches through!"
-msgstr "子弹击中了%s并穿透了！"
+msgstr "子弹击中了%s并穿透了它！"
 
 #: src/map.cpp
 msgid "laser beam"
@@ -254285,7 +254407,7 @@ msgstr "角色死亡提示"
 msgid ""
 "If enabled, when your character dies, the player is given a prompt that "
 "gives the option to reload the last saved game instead of dying."
-msgstr ""
+msgstr "如果启用此选项，在您的角色死亡时，玩家将收到一个提示，可以选择重新加载上一次保存的游戏，而不是直接死亡。"
 
 #: src/options.cpp
 msgid "Default character name"
