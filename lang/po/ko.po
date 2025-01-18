@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-01-11 01:18+0000\n"
+"POT-Creation-Date: 2025-01-18 01:15+0000\n"
 "Last-Translator: Fruitybite, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -8146,14 +8146,14 @@ msgstr "모든 것을 꿰뚫어봅니다!"
 
 #: data/json/effects.json
 msgid "Irradiation triangle"
-msgstr ""
+msgstr "방사성 삼각형"
 
 #. ~ Description of effect 'Irradiation triangle'.
 #: data/json/effects.json
 msgid ""
 "This irradiates you every 15 minutes while aboveground so long as you have "
 "it in your inventory!"
-msgstr ""
+msgstr "지상에서 이 물품을 갖고 있을 때 매 15분마다 당신을 방사능에 중독시킵니다!"
 
 #: data/json/effects.json
 msgid "Took Xanax"
@@ -30327,14 +30327,14 @@ msgstr ""
 #: data/json/artifact/premade_artifacts.json
 msgid "The irradiation triangle"
 msgid_plural "The irradiation triangles"
-msgstr[0] ""
+msgstr[0] "방사성 삼각형"
 
 #. ~ Description for {'str': 'The irradiation triangle'}
 #: data/json/artifact/premade_artifacts.json
 msgid ""
 "Who so ever dares to hold this triangle inside inventory when not "
 "underground shall gain 1 to 3 irradiation every 10 minutes."
-msgstr ""
+msgstr "지상 지형에서 감히 이 물품을 품에 넣고 있는 자는 매 10분마다 방사능이 1~3만큼 누적됩니다."
 
 #: data/json/artifact/premade_artifacts.json
 msgid "chaos dagger"
@@ -230657,6 +230657,10 @@ msgid "Can't wear more than one %s!"
 msgstr "%s(은)는 동시에 하나만 착용할 수 있습니다!"
 
 #: src/character.cpp
+msgid "Can't wear more than one exosuit!"
+msgstr ""
+
+#: src/character.cpp
 #, c-format
 msgid "Can't wear %i or more %s at once."
 msgstr "%i개 이상의 %s(은)는 동시에 착용할 수 없습니다."
@@ -252405,8 +252409,14 @@ msgid "ERROR: Invalid energy string.  Defaulting to NONE"
 msgstr "오류: 유효하지 않은 에너지 스트링입니다. 기본값 없음을 사용합니다."
 
 #: src/magic.cpp
-msgid "ERROR: Invalid damage type string.  Defaulting to none"
-msgstr "오류: 유효하지 않은 피해 종류 스트링입니다. 기본값 피해종류 없음을 사용합니다."
+msgid ""
+"ERROR: 'None' damage is not not valid and obsoleted for spells!  Please "
+"switch to 'True' instead"
+msgstr "오류: '없음' 피해는 주문에 대해 유효하지 않으며 구식화된 피해 종류입니다. '방어 무시' 피해로 변경해주세요"
+
+#: src/magic.cpp
+msgid "ERROR: Invalid damage type string.  Defaulting to bash"
+msgstr "오류: 유효하지 않은 피해 종류 스트링입니다. 기본값 피해종류 때리기를 사용합니다."
 
 #: src/magic.cpp
 #, c-format
@@ -269554,6 +269564,11 @@ msgstr "%s(이)가 온데간데 없이 사라집니다."
 
 #: src/vehicle.cpp
 #, c-format
+msgid "%1s took %.1f damage from shock."
+msgstr ""
+
+#: src/vehicle.cpp
+#, c-format
 msgid "The %s's %s breaks into pieces!"
 msgstr "%s의 %s(이)가 산산조각납니다!"
 
@@ -269692,6 +269707,16 @@ msgstr "%s의 엔진에서 재채기 같은 소리가 납니다."
 #, c-format
 msgid "Your %s is not fast enough to keep up with the %s"
 msgstr "%s(은)는 %s(을)를 따라갈만큼 빠르지 않습니다."
+
+#: src/vehicle_move.cpp
+#, c-format
+msgid "%1s collided with %2s!"
+msgstr ""
+
+#: src/vehicle_move.cpp
+#, c-format
+msgid "%1s smashed %2s!"
+msgstr ""
 
 #. ~ 1$s - vehicle name, 2$s - part name, 3$s - NPC or monster
 #: src/vehicle_move.cpp

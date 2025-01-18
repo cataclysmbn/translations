@@ -8,14 +8,14 @@
 # 摸鱼哥, 2024
 # Coolthulhu <Coolthulhu@gmail.com>, 2024
 # Zarathustra, 2024
-# hiro9888 <hiro9888@gmail.com>, 2024
+# hiro9888 <hiro9888@gmail.com>, 2025
 # H_Hedgehog, 2025
 # Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-01-11 01:18+0000\n"
+"POT-Creation-Date: 2025-01-18 01:15+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -174855,11 +174855,11 @@ msgstr "电动自行车"
 
 #: data/json/vehicles/bikes.json
 msgid "Motocross Bike"
-msgstr "越野摩托车"
+msgstr "越野摩托"
 
 #: data/json/vehicles/bikes.json
 msgid "Street-Legal Dirt Bike"
-msgstr "街道版越野摩托车"
+msgstr "街道版越野摩托"
 
 #: data/json/vehicles/bikes.json
 msgid "Motorcycle"
@@ -175083,7 +175083,7 @@ msgstr "废土战车"
 
 #: data/json/vehicles/custom_vehicles.json
 msgid "Meth Bike"
-msgstr "安非他命摩托车"
+msgstr "制毒摩托"
 
 #: data/json/vehicles/emergency.json
 msgid "Ambulance"
@@ -223625,6 +223625,10 @@ msgid "Can't wear more than one %s!"
 msgstr "不能再穿一件 %s！"
 
 #: src/character.cpp
+msgid "Can't wear more than one exosuit!"
+msgstr ""
+
+#: src/character.cpp
 #, c-format
 msgid "Can't wear %i or more %s at once."
 msgstr "不能同时装备超过 %i 件 %s。"
@@ -224622,7 +224626,7 @@ msgstr "进入冬眠。"
 
 #: src/character.cpp
 msgid "You enter hibernation."
-msgstr ""
+msgstr "你进入了冬眠状态。"
 
 #: src/character.cpp
 msgid "You need to be nearly full of food and water to enter hibernation."
@@ -237879,7 +237883,7 @@ msgstr "* 这种弹药 <neutral>可以生火</neutral>。"
 
 #: src/item.cpp
 msgid "Weapon <bad>can't be loaded in its current state</bad>."
-msgstr ""
+msgstr "该武器<bad>无法在当前状态下填充弹药</bad>。"
 
 #: src/item.cpp
 msgid ""
@@ -245303,11 +245307,17 @@ msgstr "在%s内"
 
 #: src/magic.cpp
 msgid "ERROR: Invalid energy string.  Defaulting to NONE"
-msgstr "错误：能量字符串无效。缺省为无"
+msgstr "错误：能量字符串无效。已默认设置为 NONE"
 
 #: src/magic.cpp
-msgid "ERROR: Invalid damage type string.  Defaulting to none"
-msgstr "错误：伤害字符串无效，缺省为无"
+msgid ""
+"ERROR: 'None' damage is not not valid and obsoleted for spells!  Please "
+"switch to 'True' instead"
+msgstr "错误：'None' 伤害无效，并已废弃用于法术！请切换为 'True' （开启）"
+
+#: src/magic.cpp
+msgid "ERROR: Invalid damage type string.  Defaulting to bash"
+msgstr "错误：伤害类型字符串无效。已默认设置为物理打击"
 
 #: src/magic.cpp
 #, c-format
@@ -246438,6 +246448,8 @@ msgid ""
 "Errors for \"bash\" field in \"%s\": \"%s\":\n"
 "%s"
 msgstr ""
+"错误：在\"%s\"的\"bash\"字段中发现错误：\"%s\"：\n"
+"%s"
 
 #: src/mapgen.cpp
 msgid "Wreckage"
@@ -262340,6 +262352,11 @@ msgstr " %s 一眨眼就消失不见了。"
 
 #: src/vehicle.cpp
 #, c-format
+msgid "%1s took %.1f damage from shock."
+msgstr "%1s 受到 %.1f 点冲击伤害。"
+
+#: src/vehicle.cpp
+#, c-format
 msgid "The %s's %s breaks into pieces!"
 msgstr "%s 的 %s 碎了一地！"
 
@@ -262478,6 +262495,16 @@ msgstr "%s 的引擎发出了扑哧声。"
 #, c-format
 msgid "Your %s is not fast enough to keep up with the %s"
 msgstr "你的 %s 跟不上 %s 的速度"
+
+#: src/vehicle_move.cpp
+#, c-format
+msgid "%1s collided with %2s!"
+msgstr "%1s 撞上了 %2s！"
+
+#: src/vehicle_move.cpp
+#, c-format
+msgid "%1s smashed %2s!"
+msgstr "%1s 撞毁了 %2s！"
 
 #. ~ 1$s - vehicle name, 2$s - part name, 3$s - NPC or monster
 #: src/vehicle_move.cpp
