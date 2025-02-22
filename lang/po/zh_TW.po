@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-02-15 01:18+0000\n"
+"POT-Creation-Date: 2025-02-22 01:18+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -5948,6 +5948,10 @@ msgstr "安装一个顶灯"
 #: data/json/construction_group.json
 msgid "Install a light switch"
 msgstr "安装灯光开关"
+
+#: data/json/construction_group.json
+msgid "Install Hydraulic Press"
+msgstr ""
 
 #: data/json/debug_spells.json
 msgid "Template Spell"
@@ -30726,6 +30730,19 @@ msgstr "一个连接电网的灯光开关，这个是开启的。"
 msgid "You switched off the lights."
 msgstr "你关闭了灯光。"
 
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/items/fake.json
+msgid "grid hydraulic press"
+msgid_plural "grid hydraulic presss"
+msgstr[0] ""
+
+#. ~ Description for grid hydraulic press
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"If you really want to squash something a lot, this would be exactly the "
+"right industrial tool for you."
+msgstr ""
+
 #: data/json/furniture_and_terrain/furniture-barriers.json
 msgid "road barricade"
 msgstr "路障"
@@ -34192,17 +34209,6 @@ msgid ""
 "A table-shaped tool with a rotating blade that will cut down, smooth out, "
 "and square off a board to make it very smooth and nice indeed."
 msgstr "一张安装有旋转刀刃工具的桌子，它可以把一块木板切割成形、磨平，使之变得非常光滑、美观。"
-
-#: data/json/furniture_and_terrain/furniture-tools.json
-msgid "hydraulic press"
-msgstr "液壓機"
-
-#. ~ Description for hydraulic press
-#: data/json/furniture_and_terrain/furniture-tools.json
-msgid ""
-"If you really want to squash something a lot, this would be exactly the "
-"right industrial tool for you.  If, you know, it had power."
-msgstr "如果你真的很想挤压一些东西，这对你来说就是一个很好的工业工具。你懂的，它的力量非常大。"
 
 #: data/json/furniture_and_terrain/furniture-tools.json
 msgid "power lathe"
@@ -84978,6 +84984,21 @@ msgid ""
 "from it."
 msgstr "一簇石质种子被缠绕在一张细密的灰色菌丝网上。如果种植在树干上或专门的蘑菇架上，它有可能长出极为奇妙的东西。"
 
+#: data/json/items/comestibles/seed.json
+msgid "spurge seeds"
+msgid_plural "spurge seeds"
+msgstr[0] "大戟花种子"
+
+#. ~ Description for {'str_sp': 'spurge seeds'}
+#: data/json/items/comestibles/seed.json
+msgid "Some spurge seeds."
+msgstr "一些大戟花种子。"
+
+#: data/json/items/comestibles/seed.json data/json/obsoletion/items.json
+msgid "spurge"
+msgid_plural "spurges"
+msgstr[0] "大戟(翡翠塔)屬植物"
+
 #: data/json/items/comestibles/soup.json
 msgid "broth"
 msgid_plural "broths"
@@ -92670,12 +92691,12 @@ msgid ""
 "This Remington 870 Modular Combat System shotgun is currently setup for "
 "breaching operations, with a 10 inch barrel and no stock.  It is small "
 "enough to carry as a secondary weapon, specifically to pop open any pesky "
-"doors you might come across.  The grip's design makes for controllable yet "
-"unpleasant recoil, and the barrel lacks any integral sights, requiring you "
-"to install your own if you want better accuracy."
+"doors you might come across.  The grip's design makes for controllable "
+"recoil, and the barrel lacks any integral sights, requiring you to install "
+"your own if you want better accuracy."
 msgstr ""
 "这把雷明顿 870 MCS "
-"模块化战斗霰弹枪专为室内破门行动而设计，采用10英寸的枪管而且没有枪托。它体积足够小，可以作为次武器携带，特别适合用来打开你所遇到的任何烦人的门。握把设计虽能有效控制后坐力，但射击时仍感不适，加上枪管未内置瞄具，若追求更高精准度，需自行加装瞄准装置。"
+"模块化战斗霰弹枪专为室内破门行动而设计，采用10英寸的枪管而且没有枪托。它体积足够小，可以作为次武器携带，特别适合用来打开你所遇到的任何烦人的门。握把设计能有效控制后坐力，枪管未内置瞄具，若追求更高精准度，需自行加装瞄准装置。"
 
 #: data/json/items/gun/shot.json
 msgid "Remington 870 express"
@@ -93275,8 +93296,9 @@ msgstr[0] "破门握把"
 
 #: data/json/items/gunmod/grip.json
 msgid ""
-"A very uncomfortable straight grip.  Clearly not intended for regular use."
-msgstr "非常不舒服的直握把。显然不是为了日常使用设计的。"
+"A very uncomfortable straight grip.  Designed to absorb recoil while "
+"blasting open obstacles, at the expense of accuracy."
+msgstr "一个非常不舒服的直握把。 设计用于在爆破障碍物时吸收后坐力，但以牺牲精准度为代价。"
 
 #: data/json/items/gunmod/laser_gunmods.json
 msgid "beam scatterer"
@@ -93369,9 +93391,8 @@ msgstr[0] "競賽扳機"
 
 #: data/json/items/gunmod/mechanism.json
 msgid ""
-"A precision weighted trigger assembly that slightly improves a firearm's "
-"accuracy."
-msgstr "精密加重的扳機組件，可略微提高槍械的準確性。"
+"A precision weighted trigger assembly that improves a firearm's accuracy."
+msgstr "这种精密的配重扳机组件可以提升枪械命中率。"
 
 #: data/json/items/gunmod/mechanism.json data/json/obsoletion/items.json
 msgid "mechanism"
@@ -101135,6 +101156,19 @@ msgid ""
 msgstr "一根鋼管, 能作為良好的近戰武器。能用於某些物品製作配方。"
 
 #: data/json/items/resources/metal.json
+#: data/mods/CheesyInnaWoodsFixes/items/ammo_casing.json
+msgid "brass"
+msgid_plural "brass"
+msgstr[0] "黄铜"
+
+#. ~ Description for {'str_sp': 'brass'}
+#: data/json/items/resources/metal.json
+msgid ""
+"Some brass scraps, if you have the right tools they could be formed into "
+"cartridge casings."
+msgstr ""
+
+#: data/json/items/resources/metal.json
 msgid "scrap metal"
 msgid_plural "scrap metals"
 msgstr[0] "金属废料"
@@ -105529,6 +105563,20 @@ msgid ""
 "system."
 msgstr ""
 "这是一个便携式的电动金属加工炉，由电池供电。搭配适当的工具，你可以用它来加工金属物品，也可以用于修复金属制品。只要掌握一点机械知识，你甚至可以将其转换为直接从车辆的能源系统中运行。"
+
+#: data/json/items/tool/metalworking.json
+msgid "hydraulic press"
+msgid_plural "hydraulic presss"
+msgstr[0] "液压机"
+
+#. ~ Description for {'str': 'hydraulic press'}
+#: data/json/items/tool/metalworking.json
+msgid ""
+"A large, barely portable hydraulic press, that uses a 36kW motor to squash "
+"whatever needs squashing.  Do not put your hand in here, it will get "
+"squashed.  Can run off heavy-duty batteries, or installed to run off a power"
+" grid instead."
+msgstr ""
 
 #: data/json/items/tool/metalworking.json
 msgid "finished charcoal kiln"
@@ -153845,11 +153893,6 @@ msgid ""
 "A tulip bud.  Contains some substances commonly produced by a tulip flower."
 msgstr "鬱金香花苞, 含有一些鬱金香常產生的物質。"
 
-#: data/json/obsoletion/items.json
-msgid "spurge"
-msgid_plural "spurges"
-msgstr[0] "大戟(翡翠塔)屬植物"
-
 #. ~ Description for {'str': 'spurge'}
 #: data/json/obsoletion/items.json
 msgid "A spurge stalk with some petals."
@@ -183930,11 +183973,6 @@ msgid ""
 "CheesyInnaWoodFixes ports CDDA innawoods content and makes industrial age "
 "possible."
 msgstr "Cheesy的深入林间模组修正将移植 CDDA 深入林间内容，使工业时代成为可能。"
-
-#: data/mods/CheesyInnaWoodsFixes/items/ammo_casing.json
-msgid "brass"
-msgid_plural "brass"
-msgstr[0] "黄铜"
 
 #. ~ Description for {'str_sp': 'brass'}
 #: data/mods/CheesyInnaWoodsFixes/items/ammo_casing.json
