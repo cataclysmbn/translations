@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-03-08 01:09+0000\n"
+"POT-Creation-Date: 2025-03-15 00:53+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -5738,6 +5738,10 @@ msgid "Place Electric Kiln"
 msgstr "放置电窑"
 
 #: data/json/construction_group.json
+msgid "Place Advanced Butchering Station"
+msgstr "放置高级屠宰站"
+
+#: data/json/construction_group.json
 msgid "Place Electrolysis Kit"
 msgstr "放置电解工具箱"
 
@@ -5980,6 +5984,10 @@ msgstr "安装灯光开关"
 #: data/json/construction_group.json
 msgid "Install Hydraulic Press"
 msgstr "安装液压机（电网）"
+
+#: data/json/construction_group.json
+msgid "Install Metal Compactor"
+msgstr "安装金属锻压机"
 
 #: data/json/debug_spells.json
 msgid "Template Spell"
@@ -30741,6 +30749,17 @@ msgid "You switched off the lights."
 msgstr "你关闭了灯光。"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/items/vehicle/tables.json
+msgid "advanced butchering station"
+msgid_plural "advanced butchering stations"
+msgstr[0] "高级屠宰站"
+
+#. ~ Description for advanced butchering station
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "An advanced butchering station connected to a electrical grid."
+msgstr "一个连接到建筑电网的高级屠宰站。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/items/fake.json
 msgid "grid hydraulic press"
 msgid_plural "grid hydraulic presss"
@@ -30752,6 +30771,22 @@ msgid ""
 "If you really want to squash something a lot, this would be exactly the "
 "right industrial tool for you."
 msgstr "如果你真的很想挤压一些东西，这对你来说就是一个很好的工业工具。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+#: data/json/items/furniture.json
+msgid "metal compactor"
+msgid_plural "metal compactors"
+msgstr[0] "金属锻压机"
+
+#. ~ Description for metal compactor
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid ""
+"A hydraulic compactor that can accept items made of various metals, and "
+"press them into basic shapes, ready for further crafting.  If you're very "
+"careful, you can even uninstall it to transport it elsewhere."
+msgstr "一台液压驱动的金属锻压机，可以将各种金属制品压制成金属块，以用于进一步加工。如果操作足够小心，还可以将其卸载并运输到其他地方。"
 
 #: data/json/furniture_and_terrain/furniture-barriers.json
 msgid "road barricade"
@@ -37594,17 +37629,6 @@ msgid ""
 " with yelllow paint.  With a watertight container, you could gather fresh "
 "water from here.  Not safe to drink as is."
 msgstr "你正站在淡水底部的涂着黄漆的混凝土垫上。有水密容器的话，可以从这里收集淡水。直接饮用并不安全。"
-
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "metal compactor"
-msgstr "金属锻压机"
-
-#. ~ Description for metal compactor
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid ""
-"A hydraulic compactor that can accept items made of various metals, and "
-"press them into basic shapes, ready for further crafting."
-msgstr "一台液压驱动的金属锻压机，可以将各种金属制品压制成金属块，以用于进一步加工。"
 
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid "gasoline pump"
@@ -45593,7 +45617,12 @@ msgstr[0] "高级3D打印机（电网）"
 #: data/json/items/fake.json
 msgid "installed reloading press"
 msgid_plural "installed reloading presss"
-msgstr[0] "安装重装压弹机"
+msgstr[0] "已安装的重装压弹机"
+
+#: data/json/items/fake.json
+msgid "installed advanced butchering station"
+msgid_plural "installed advanced butchering stations"
+msgstr[0] "已安装的高级屠宰站"
 
 #: data/json/items/faults_bionic.json
 msgid "Non-sterile"
@@ -46040,6 +46069,13 @@ msgid ""
 " of electricity."
 msgstr ""
 "一种用于大型船舶或潜艇的发电机。采用紧凑型核反应堆，精炼的核燃料被密封在内部并配置好，在正确安装时可提供持续低产量的电力。可以将其拆卸下来，重新利用迷你反应堆用于更多能量密集型的应用，或者安装在本地电网中，继续提供少量但无限的电力来源。"
+
+#. ~ Description for metal compactor
+#: data/json/items/furniture.json
+msgid ""
+"A hydraulic compactor that can accept items made of various metals, and "
+"press them into basic shapes, ready for further crafting."
+msgstr "一台液压驱动的金属锻压机，可以将各种金属制品压制成金属块，以用于进一步加工。"
 
 #: data/json/items/generic.json
 msgid "animal"
@@ -55721,11 +55757,12 @@ msgid_plural "pairs of thick socks"
 msgstr[0] "厚袜子"
 
 #: data/json/items/armor/boots.json
-msgid "carbon fiber boots"
-msgid_plural "carbon fiber bootss"
+msgid "pair of carbon fiber boots"
+msgid_plural "pairs of carbon fiber boots"
 msgstr[0] "碳素纤维靴"
 
-#. ~ Description for {'str': 'carbon fiber boots'}
+#. ~ Description for {'str': 'pair of carbon fiber boots', 'str_pl': 'pairs of
+#. carbon fiber boots'}
 #: data/json/items/armor/boots.json
 msgid ""
 "A custom pair of boots made out of layered carbon fiber armor made using a "
@@ -55734,11 +55771,12 @@ msgid ""
 msgstr "使用3D打印机定制的多层碳素纤维靴子。 与凯夫拉相比，它的硬质板材更像是一套盔甲，但却具有很强的防护性，而且重量很轻。"
 
 #: data/json/items/armor/boots.json
-msgid "scaleskin boots"
-msgid_plural "scaleskin bootss"
+msgid "pair of scaleskin boots"
+msgid_plural "pairs of scaleskin boots"
 msgstr[0] "鳞甲靴"
 
-#. ~ Description for {'str': 'scaleskin boots'}
+#. ~ Description for {'str': 'pair of scaleskin boots', 'str_pl': 'pairs of
+#. scaleskin boots'}
 #: data/json/items/armor/boots.json
 msgid ""
 "Boots made from the hardened scales of large reptiles.  It doesn't look "
@@ -111030,6 +111068,13 @@ msgstr "一个粗糙的木桌"
 msgid "robobench"
 msgid_plural "robobenches"
 msgstr[0] "机器人工作台"
+
+#. ~ Description for {'str': 'advanced butchering station'}
+#: data/json/items/vehicle/tables.json
+msgid ""
+"Combining a fixed-up dissector, workbench and advanced electronics, this is "
+"a marvel capable of butchering, dissecting and cutting like nothing else!"
+msgstr "结合了修复后的解剖器、工作台和先进电子设备，这是一项奇迹般的发明，能够进行屠宰、解剖和切割，效率无人能及！"
 
 #: data/json/items/vehicle/turrets.json
 #: data/json/vehicleparts/vehicle_parts.json
@@ -201041,8 +201086,10 @@ msgid "A spell of blessing that gives you energy and boosts your abilities."
 msgstr "给予你能量和提升你能力的祝福法术。"
 
 #: data/mods/Magical_Nights/Spells/animist.json
+#: data/mods/Magical_Nights/items/ethereal_items.json
 msgid "Holy Blade"
-msgstr "光明之刃"
+msgid_plural "Holy Blades"
+msgstr[0] "光明之刃"
 
 #. ~ Description for {'str': 'Holy Blade'}
 #. ~ Description for {'str': 'Scroll of Holy Blade', 'str_pl': 'Scrolls of
@@ -204538,6 +204585,13 @@ msgstr[0] "风行光环"
 #: data/mods/Magical_Nights/items/ethereal_items.json
 msgid "The wind at your back helping to ease your travel."
 msgstr "背后的风帮助你轻松旅行。"
+
+#. ~ Description for Holy Blade
+#: data/mods/Magical_Nights/items/ethereal_items.json
+msgid ""
+"A broadsword made out of concentrated magical light and glowing with holy "
+"power.  Let your blade cleave through these unholy monsters!"
+msgstr "一把由浓缩魔法之光铸成的阔剑，散发着神圣的力量。让你的剑刃斩碎这些邪恶的怪物吧！"
 
 #. ~ Description for {'str_sp': 'dragon blood'}
 #: data/mods/Magical_Nights/items/fuel.json
@@ -222250,6 +222304,12 @@ msgstr "手术开始时，你感到一阵兴奋。"
 
 #: src/bionics.cpp
 msgid ""
+"As your consciousness slips away, you feel regret that you won't be able to "
+"enjoy the operation."
+msgstr "随着你的意识渐渐消逝，你开始为自己无法享受手术过程而感到一阵懊悔。"
+
+#: src/bionics.cpp
+msgid ""
 "You feel excited as the Autodoc slices painlessly into you.  You enjoy the "
 "sight of scalpels slicing you apart."
 msgstr "当全自动医疗仪毫无痛苦地割开你的身体时，你感到一阵兴奋。你欣喜地看着手术刀将你切开。"
@@ -222259,12 +222319,6 @@ msgid ""
 "You stay very, very still, intently staring off into space, as the Autodoc "
 "slices painlessly into you."
 msgstr "你静静等待着，专注地凝视着虚空。全自动医疗仪正把你切开，但你毫无痛感。"
-
-#: src/bionics.cpp
-msgid ""
-"As your consciousness slips away, you feel regret that you won't be able to "
-"enjoy the operation."
-msgstr "随着你的意识渐渐消逝，你开始为自己无法享受手术过程而感到一阵懊悔。"
 
 #: src/bionics_ui.cpp src/mutation_ui.cpp src/options.cpp
 msgid "None"
@@ -232686,6 +232740,11 @@ msgid ""
 "<color_yellow>Patient has Sensory Dulling CBM installed.  Anesthesia "
 "unneeded.</color>"
 msgstr "<color_yellow>病人已有痛感抑制CBM。无需麻醉。</color>"
+
+#: src/game_inventory.cpp
+msgid ""
+"<color_yellow>Bug-hunters don't need anesthetics to withstand pain.</color>"
+msgstr "<color_yellow>捕虫者不需要麻醉剂来忍受疼痛。</color>"
 
 #: src/game_inventory.cpp
 #, c-format
