@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-03-15 00:53+0000\n"
+"POT-Creation-Date: 2025-03-22 01:21+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/bn-team/teams/113585/es_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -5556,6 +5556,10 @@ msgid "Board Up Wood Door"
 msgstr "Cubrir Puerta con Tablas"
 
 #: data/json/construction_group.json
+msgid "Weld Shut Metal Door"
+msgstr ""
+
+#: data/json/construction_group.json
 msgid "Build a bellow"
 msgstr ""
 
@@ -6313,6 +6317,10 @@ msgstr ""
 
 #: data/json/construction_group.json
 msgid "Install Freezer"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Install Industrial Freezer"
 msgstr ""
 
 #: data/json/construction_group.json
@@ -16683,21 +16691,13 @@ msgstr "¡El %1$s empala tu torso!"
 msgid "The %1$s impales <npcname>'s torso!"
 msgstr "¡El %1$s empala el torso de <npcname>!"
 
-#: data/json/monster_attacks.json src/monattack.cpp
-#, c-format
-msgid ""
-"The %1$s tries to impale your torso, but fails to penetrate your armor!"
+#: data/json/monster_attacks.json
+msgid "The %1$s tries to impale you, but fails to."
 msgstr ""
-"¡El %1$s intenta empalar tu torso, pero no consigue penetrar tu armadura!"
 
-#: data/json/monster_attacks.json src/monattack.cpp
-#, c-format
-msgid ""
-"The %1$s tries to impale <npcname>'s torso, but fails to penetrate their "
-"armor!"
+#: data/json/monster_attacks.json
+msgid "The %1$s tries to impale <npcname>, but fails to."
 msgstr ""
-"¡El %1$s intenta empalar el torso de <npcname>, pero no consigue penetrar su"
-" armadura!"
 
 #: data/json/monster_attacks.json
 msgid "The %1$s claws at you!"
@@ -16740,11 +16740,11 @@ msgid "The %1$s stabs <npcname>!"
 msgstr ""
 
 #: data/json/monster_attacks.json
-msgid "The %1$s tries to stab you, but fails to penetrate your armor."
+msgid "The %1$s tries to stab you, but fails to."
 msgstr ""
 
 #: data/json/monster_attacks.json
-msgid "The %1$s tries to stab <npcname>, but fails to penetrate their armor!."
+msgid "The %1$s tries to stab <npcname>, but fails to."
 msgstr ""
 
 #: data/json/monster_attacks.json
@@ -16756,14 +16756,11 @@ msgid "The %1$s stings <npcname>'s %2$s!"
 msgstr ""
 
 #: data/json/monster_attacks.json
-msgid ""
-"The %1$s tries to sting your %2$s, but it fails to penetrate your armor."
+msgid "The %1$s tries to sting your %2$s, but it fails to."
 msgstr ""
 
 #: data/json/monster_attacks.json
-msgid ""
-"The %1$s tries to sting <npcname>'s %2$s, but it fails to penetrate their "
-"armor."
+msgid "The %1$s tries to sting <npcname>'s %2$s, but it fails to."
 msgstr ""
 
 #: data/json/monster_attacks.json
@@ -18024,6 +18021,10 @@ msgstr "tirar"
 
 #: data/json/player_activities.json
 msgid "dummy activity"
+msgstr ""
+
+#: data/json/player_activities.json
+msgid "assisting"
 msgstr ""
 
 #: data/json/professions.json
@@ -32315,6 +32316,7 @@ msgid "Switch on the freezer."
 msgstr ""
 
 #. ~ Message for furniture 'freezer (off)'
+#. ~ Message for furniture 'industrial freezer (off)'
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "You switch on the freezer."
 msgstr ""
@@ -32341,6 +32343,7 @@ msgstr ""
 
 #. ~ Message for furniture 'freezer'
 #. ~ Message for furniture 'freezer (on)'
+#. ~ Message for furniture 'industrial freezer'
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "You switch off the freezer."
 msgstr ""
@@ -32355,6 +32358,39 @@ msgstr ""
 msgid ""
 "Freeze your food with the amazing science of electricity!  It is switched "
 "on."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "industrial freezer"
+msgstr ""
+
+#. ~ Description for industrial freezer
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An industrial grade freezer, capable preserving huge amounts of food, as "
+"long as it's powered.  It has no power."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "industrial freezer (off)"
+msgstr ""
+
+#. ~ Description for industrial freezer (off)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An industrial grade freezer, capable preserving huge amounts of food, as "
+"long as it's powered.  It is switched off."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "industrial freezer (on)"
+msgstr ""
+
+#. ~ Description for industrial freezer (on)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An industrial grade freezer, capable preserving huge amounts of food, as "
+"long as it's powered.  It is switched on."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
@@ -35319,6 +35355,7 @@ msgstr "Muestra tus objetos."
 
 #. ~ message when finished sawing display rack
 #. ~ message when finished sawing closed bar door
+#. ~ message when finished sawing welded bar door
 #. ~ message when finished sawing locked wire gate
 #. ~ message when finished sawing closed wire gate
 #. ~ message when finished sawing chain link fence
@@ -37496,6 +37533,51 @@ msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid "open bulkhead door"
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "welded metal door"
+msgstr ""
+
+#. ~ Description for welded metal door
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid ""
+"An extremely resilient door made of assorted steel, carved and pounded into "
+"shape.  It's been welded shut, that oughta hold 'em."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "welded metal door with peephole"
+msgstr ""
+
+#. ~ Description for welded metal door with peephole
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid ""
+"An extremely resilient door made of assorted steel, carved and pounded into "
+"shape.  It's been welded shut, that oughta hold 'em.  If you examined it "
+"more closely, you'd be able to peek through the hole."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "welded bulkhead door"
+msgstr ""
+
+#. ~ Description for welded bulkhead door
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid ""
+"An extremely resilient watertight door of cast metal.  Used to open using "
+"the fly wheel, it's since been welded shut.  That oughta hold 'em."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "welded bar door"
+msgstr ""
+
+#. ~ Description for welded bar door
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid ""
+"A detention door made up of crisscrossed stainless steel bars.  It's been "
+"welded shut, that oughta hold 'em."
 msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
@@ -92813,6 +92895,56 @@ msgid ""
 "with a spicy flavor."
 msgstr ""
 
+#: data/json/items/comestibles/meat_dishes.json
+msgid "kebab"
+msgid_plural "kebab"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Conditional name for {'str_sp': 'kebab'} when VITAMIN matches
+#. human_flesh_vitamin
+#. ~ Conditional name for {'str_sp': 'meat kebab'} when VITAMIN matches
+#. human_flesh_vitamin
+#: data/json/items/comestibles/meat_dishes.json
+msgid "donner kebab"
+msgid_plural "donner kebabs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Conditional name for {'str_sp': 'kebab'} when COMPONENT_ID matches mutant
+#. ~ Conditional name for {'str_sp': 'meat kebab'} when COMPONENT_ID matches
+#. mutant
+#: data/json/items/comestibles/meat_dishes.json
+#, c-format
+msgid "killer %s"
+msgid_plural "killer %s"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str_sp': 'kebab'}
+#: data/json/items/comestibles/meat_dishes.json
+msgid ""
+"Cooked meats and veggies on a stick.  Popular street food originating from "
+"the Middle East and later spread to Asia and the rest of the world."
+msgstr ""
+
+#: data/json/items/comestibles/meat_dishes.json
+msgid "meat kebab"
+msgid_plural "meat kebab"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str_sp': 'meat kebab'}
+#: data/json/items/comestibles/meat_dishes.json
+msgid ""
+"Cooked meats on a stick.  Popular street food originating from the Middle "
+"East and later spread to Asia and the rest of the world."
+msgstr ""
+
 #: data/json/items/comestibles/med.json
 msgid "first aid kit"
 msgid_plural "first aid kits"
@@ -101278,6 +101410,20 @@ msgstr[2] ""
 msgid ""
 "Soft, boiled tofu served with spicy, stir-fried kimchi.  The mild tofu "
 "complements the bold flavors of the kimchi for a balanced taste."
+msgstr ""
+
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "vegetable kebab"
+msgid_plural "vegetable kebab"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str_sp': 'vegetable kebab'}
+#: data/json/items/comestibles/veggy_dishes.json
+msgid ""
+"Cooked veggies on a stick.  Popular street food originating from the Middle "
+"East and later spread to Asia and the rest of the world."
 msgstr ""
 
 #: data/json/items/comestibles/wheat.json
@@ -182679,7 +182825,7 @@ msgstr ""
 
 #. ~ Description for Lost Campers
 #: data/json/overmap/map_extras.json
-msgid "Several corpses of college kids or hunters out camping are here."
+msgid "Several corpses of teenagers out camping are here."
 msgstr ""
 
 #: data/json/overmap/map_extras.json
@@ -243617,6 +243763,18 @@ msgstr "Nutrición simplificada"
 msgid "Disables vitamin requirements."
 msgstr "Desactiva los requisitos de vitaminas."
 
+#: data/mods/pathfinding_stockfish/modinfo.json
+msgid "Pathfinding: Stockfish AI"
+msgstr ""
+
+#. ~ Description for Pathfinding: Stockfish AI
+#: data/mods/pathfinding_stockfish/modinfo.json
+msgid ""
+"Stockfish-level AI pathfinding: allow complete and unlimited pathfinding for"
+" AI regardless of intended enemy intelligence. Additionally, enables pathing"
+" around mobs"
+msgstr ""
+
 #: data/mods/pride_flags/construction_group.json
 msgid "Hoist Trans Pride Flag"
 msgstr ""
@@ -251537,14 +251695,30 @@ msgstr ""
 
 #: src/bionics.cpp
 msgid ""
+"You have a cable plugged to a portable power source, but you need to plug it"
+" in to the CBM."
+msgstr ""
+
+#: src/bionics.cpp
+msgid ""
+"You have a cable plugged to a vehicle, but you need to plug it in to the "
+"CBM."
+msgstr ""
+
+#: src/bionics.cpp
+msgid ""
+"You have a cable plugged to a grid, but you need to plug it in to the CBM."
+msgstr ""
+
+#: src/bionics.cpp
+msgid ""
 "Cable is plugged-in to the CBM but it has to be also connected to the power "
 "source."
 msgstr ""
 
 #: src/bionics.cpp
 msgid ""
-"You are plugged to the vehicle.  It will charge you if it has some juice in "
-"it."
+"You are plugged to the grid.  It will charge you if it has some juice in it."
 msgstr ""
 
 #: src/bionics.cpp
@@ -251560,14 +251734,8 @@ msgstr ""
 
 #: src/bionics.cpp
 msgid ""
-"You have a cable plugged to a portable power source, but you need to plug it"
-" in to the CBM."
-msgstr ""
-
-#: src/bionics.cpp
-msgid ""
-"You have a cable plugged to a vehicle, but you need to plug it in to the "
-"CBM."
+"You are plugged to the vehicle.  It will charge you if it has some juice in "
+"it."
 msgstr ""
 
 #: src/bionics.cpp
@@ -251677,6 +251845,10 @@ msgid ""
 "Stored calories are below the safe threshold, <npcname>'s %s shuts down to "
 "preserve their health."
 msgstr ""
+
+#: src/bionics.cpp src/item.cpp src/iuse.cpp
+msgid "You notice the cable has come loose!"
+msgstr "¡Te das cuenta que el cable se soltó!"
 
 #: src/bionics.cpp
 #, c-format
@@ -269039,9 +269211,9 @@ msgstr "Tu %s es extinguido/a por la lluvia."
 msgid "Your %s is blown out by the wind."
 msgstr ""
 
-#: src/item.cpp src/iuse.cpp
-msgid "You notice the cable has come loose!"
-msgstr "¡Te das cuenta que el cable se soltó!"
+#: src/item.cpp
+msgid "You notice the cable has disconnected from a vehicle!"
+msgstr ""
 
 #: src/item.cpp
 msgid "The over-extended cable breaks loose!"
@@ -270841,6 +271013,11 @@ msgid "You can't cut that."
 msgstr "No puedes cortar eso."
 
 #: src/iuse.cpp
+#, c-format
+msgid "Your %1$s doesn't have enough charges to cut this, %2$s required."
+msgstr ""
+
+#: src/iuse.cpp
 msgid "You're not even chained to a boiler."
 msgstr "Ni siquiera estás encadenado a una caldera."
 
@@ -272164,7 +272341,7 @@ msgstr ""
 "funciona, pero mejor deja de joder con ella."
 
 #: src/iuse.cpp
-msgid "Attach cable to the vehicle that will do the towing."
+msgid "Attach cable where?"
 msgstr ""
 
 #: src/iuse.cpp
@@ -272176,6 +272353,10 @@ msgid "You can't attach the tow-line to an internal part."
 msgstr ""
 
 #: src/iuse.cpp
+msgid "There's no grid connector there."
+msgstr ""
+
+#: src/iuse.cpp
 msgid "Using cable:"
 msgstr "Usar cable:"
 
@@ -272184,11 +272365,35 @@ msgid "Detach and re-spool the cable"
 msgstr "Desconectar y enrollar el cable"
 
 #: src/iuse.cpp
-msgid "Attach loose end to vehicle"
+msgid "Attach cable to self"
+msgstr "Conectar cable"
+
+#: src/iuse.cpp
+msgid "Attach cable to vehicle"
+msgstr "Conectar cable a vehículo"
+
+#: src/iuse.cpp
+msgid "Attach cable to grid connector"
 msgstr ""
 
 #: src/iuse.cpp
-msgid "Attach cable to vehicle that will be towed."
+msgid "Attach cable to ups"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "Attach cable to solar pack"
+msgstr "Conectar cable a equipo solar"
+
+#: src/iuse.cpp
+msgid "Using cable tow cable. Attached vehicle will be towed:"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "Using cable tow cable. Attached vehicle will tow the other:"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "Attach loose end to vehicle"
 msgstr ""
 
 #: src/iuse.cpp
@@ -272209,23 +272414,7 @@ msgid "You don't have any UPS."
 msgstr ""
 
 #: src/iuse.cpp
-msgid "Attach cable to vehicle"
-msgstr "Conectar cable a vehículo"
-
-#: src/iuse.cpp
-msgid "Attach cable to self"
-msgstr "Conectar cable"
-
-#: src/iuse.cpp
-msgid "Attach cable to solar pack"
-msgstr "Conectar cable a equipo solar"
-
-#: src/iuse.cpp
-msgid "Attach cable to UPS"
-msgstr ""
-
-#: src/iuse.cpp
-msgid "You attach the cable to your Cable Charger System."
+msgid "You attach the cable to the Cable Charger System."
 msgstr ""
 
 #: src/iuse.cpp
@@ -272233,31 +272422,19 @@ msgid "You attach the cable to the solar pack."
 msgstr ""
 
 #: src/iuse.cpp
+msgid "That would be unwise to short-circuit this grid connector."
+msgstr ""
+
+#: src/iuse.cpp
+msgid "To directly connect two networks together, use a voltmeter instead."
+msgstr ""
+
+#: src/iuse.cpp
 msgid "You attach the cable to the UPS."
 msgstr ""
 
 #: src/iuse.cpp
-msgid "Attach cable to vehicle where?"
-msgstr "¿En dónde quieres conectar el cable al vehículo?"
-
-#: src/iuse.cpp
-msgid "Attach loose end to vehicle or grid connector"
-msgstr ""
-
-#: src/iuse.cpp
-msgid "Attach loose end to self"
-msgstr ""
-
-#: src/iuse.cpp
-msgid "Attach loose end to solar pack"
-msgstr ""
-
-#: src/iuse.cpp
-msgid "Attach loose end to UPS"
-msgstr ""
-
-#: src/iuse.cpp
-msgid "You attach the cable to the Cable Charger System."
+msgid "You are now plugged to the grid."
 msgstr ""
 
 #: src/iuse.cpp
@@ -272273,19 +272450,6 @@ msgid "You are now plugged to the vehicle."
 msgstr ""
 
 #: src/iuse.cpp
-msgid "Attach cable where?"
-msgstr ""
-
-#: src/iuse.cpp
-msgid "There's no vehicle or grid connection there."
-msgstr ""
-
-#: src/iuse.cpp
-#, c-format
-msgid "You connect the %s to the electric grid."
-msgstr ""
-
-#: src/iuse.cpp
 #, c-format
 msgid "The %s already has access to its own electric system!"
 msgstr "¡El %s ya tiene acceso a su propio sistema eléctrico!"
@@ -272294,6 +272458,15 @@ msgstr "¡El %s ya tiene acceso a su propio sistema eléctrico!"
 #, c-format
 msgid "You link up the electric systems of the %1$s and the %2$s."
 msgstr "Conectás los sistemas eléctricos del %1$s y del %2$s."
+
+#: src/iuse.cpp
+msgid "There's no grid connection there."
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "You connect the %s to the electric grid."
+msgstr ""
 
 #: src/iuse.cpp
 msgid "You need soap to use this."
@@ -272875,6 +273048,14 @@ msgstr "No podés desplegar un/a %s ahí."
 #, c-format
 msgid "There isn't anything new on the %s."
 msgstr "No hay nada nuevo en el %s."
+
+#: src/iuse_actor.cpp
+msgid "Closest"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Random"
+msgstr ""
 
 #: src/iuse_actor.cpp
 #, c-format
@@ -279469,6 +279650,22 @@ msgstr "¡El %s apunta, y lanza hacia ti un masivo tallo!"
 #: src/monattack.cpp
 msgid "You feel millions of live spores pumping into you…"
 msgstr ""
+
+#: src/monattack.cpp
+#, c-format
+msgid ""
+"The %1$s tries to impale your torso, but fails to penetrate your armor!"
+msgstr ""
+"¡El %1$s intenta empalar tu torso, pero no consigue penetrar tu armadura!"
+
+#: src/monattack.cpp
+#, c-format
+msgid ""
+"The %1$s tries to impale <npcname>'s torso, but fails to penetrate their "
+"armor!"
+msgstr ""
+"¡El %1$s intenta empalar el torso de <npcname>, pero no consigue penetrar su"
+" armadura!"
 
 #: src/monattack.cpp
 #, c-format
@@ -286748,6 +286945,16 @@ msgid ""
 msgstr ""
 
 #: src/options.cpp
+msgid "Use legacy pathfinding"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"If true, opt out of new pathfinding in favor of legacy one. This makes "
+"pathfinding mods not work."
+msgstr ""
+
+#: src/options.cpp
 msgid "World end handling"
 msgstr "Manejo del fin de mundo"
 
@@ -288376,6 +288583,10 @@ msgstr "ON"
 #: src/panels.cpp
 msgid "Place: "
 msgstr "Lugar : "
+
+#: src/panels.cpp
+msgid "X,Y,Z: "
+msgstr ""
 
 #: src/panels.cpp
 msgid "Sky  : Underground"

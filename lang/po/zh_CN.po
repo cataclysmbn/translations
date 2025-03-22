@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-03-15 00:53+0000\n"
+"POT-Creation-Date: 2025-03-22 01:21+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -4774,6 +4774,10 @@ msgid "Board Up Wood Door"
 msgstr "用木板封门"
 
 #: data/json/construction_group.json
+msgid "Weld Shut Metal Door"
+msgstr "焊死的金属门"
+
+#: data/json/construction_group.json
 msgid "Build a bellow"
 msgstr "建造风箱"
 
@@ -5532,6 +5536,10 @@ msgstr "安装超大型蓄电池"
 #: data/json/construction_group.json
 msgid "Install Freezer"
 msgstr "安装冰柜"
+
+#: data/json/construction_group.json
+msgid "Install Industrial Freezer"
+msgstr "安装工业冰柜"
 
 #: data/json/construction_group.json
 msgid "Install Glass Freezer"
@@ -15831,18 +15839,13 @@ msgstr "%1$s 刺穿了你的躯干！"
 msgid "The %1$s impales <npcname>'s torso!"
 msgstr "%1$s 刺穿了 <npcname> 的躯干！"
 
-#: data/json/monster_attacks.json src/monattack.cpp
-#, c-format
-msgid ""
-"The %1$s tries to impale your torso, but fails to penetrate your armor!"
-msgstr "%1$s 试图刺穿你的躯干，但是没能穿透护甲！"
+#: data/json/monster_attacks.json
+msgid "The %1$s tries to impale you, but fails to."
+msgstr "%1$s 试图刺穿你，但是失败了。"
 
-#: data/json/monster_attacks.json src/monattack.cpp
-#, c-format
-msgid ""
-"The %1$s tries to impale <npcname>'s torso, but fails to penetrate their "
-"armor!"
-msgstr "%1$s 试图刺穿 <npcname> 的躯干，但是没能穿透护甲！"
+#: data/json/monster_attacks.json
+msgid "The %1$s tries to impale <npcname>, but fails to."
+msgstr "%1$s 试图刺穿 <npcname>，但是失败了。"
 
 #: data/json/monster_attacks.json
 msgid "The %1$s claws at you!"
@@ -15885,12 +15888,12 @@ msgid "The %1$s stabs <npcname>!"
 msgstr "%1$s刺击了<npcname>！"
 
 #: data/json/monster_attacks.json
-msgid "The %1$s tries to stab you, but fails to penetrate your armor."
-msgstr "%1$s试图刺击你，但是没能穿透护甲。"
+msgid "The %1$s tries to stab you, but fails to."
+msgstr "%1$s 试图刺向你，但是失败了。"
 
 #: data/json/monster_attacks.json
-msgid "The %1$s tries to stab <npcname>, but fails to penetrate their armor!."
-msgstr "%1$s试图刺击<npcname>，但是没能穿透护甲！"
+msgid "The %1$s tries to stab <npcname>, but fails to."
+msgstr "%1$s 试图刺向 <npcname>，但是失败了。"
 
 #: data/json/monster_attacks.json
 msgid "The %1$s stings your %2$s!"
@@ -15901,15 +15904,12 @@ msgid "The %1$s stings <npcname>'s %2$s!"
 msgstr "%1$s 蜇刺了 <npcname> 的 %2$s！"
 
 #: data/json/monster_attacks.json
-msgid ""
-"The %1$s tries to sting your %2$s, but it fails to penetrate your armor."
-msgstr "%1$s试图蜇刺你的%2$s，但是没能穿透护甲。"
+msgid "The %1$s tries to sting your %2$s, but it fails to."
+msgstr "%1$s试图蜇刺你的%2$s，但是失败了。"
 
 #: data/json/monster_attacks.json
-msgid ""
-"The %1$s tries to sting <npcname>'s %2$s, but it fails to penetrate their "
-"armor."
-msgstr "%1$s试图蜇刺<npcname>的%2$s，但是没能穿透护甲。"
+msgid "The %1$s tries to sting <npcname>'s %2$s, but it fails to."
+msgstr "%1$s试图蜇刺<npcname>的%2$s，但是失败了。"
 
 #: data/json/monster_attacks.json
 msgid "acid dart volley"
@@ -17083,6 +17083,10 @@ msgstr "投掷"
 #: data/json/player_activities.json
 msgid "dummy activity"
 msgstr "假活动"
+
+#: data/json/player_activities.json
+msgid "assisting"
+msgstr "协助中"
 
 #: data/json/professions.json
 msgctxt "profession_male"
@@ -30284,6 +30288,7 @@ msgid "Switch on the freezer."
 msgstr "开启冰柜电源。"
 
 #. ~ Message for furniture 'freezer (off)'
+#. ~ Message for furniture 'industrial freezer (off)'
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "You switch on the freezer."
 msgstr "你开启了冰柜的电源。"
@@ -30308,6 +30313,7 @@ msgstr "关闭冰柜电源。"
 
 #. ~ Message for furniture 'freezer'
 #. ~ Message for furniture 'freezer (on)'
+#. ~ Message for furniture 'industrial freezer'
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "You switch off the freezer."
 msgstr "你关闭了冰柜的电源。"
@@ -30323,6 +30329,39 @@ msgid ""
 "Freeze your food with the amazing science of electricity!  It is switched "
 "on."
 msgstr "科学地用电力来冷冻您的食物！它目前是开着的。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "industrial freezer"
+msgstr "工业冰柜"
+
+#. ~ Description for industrial freezer
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An industrial grade freezer, capable preserving huge amounts of food, as "
+"long as it's powered.  It has no power."
+msgstr "一款工业级冰柜，能够储存大量食品，只要有电就能保持低温。目前没有电源。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "industrial freezer (off)"
+msgstr "工业冰柜（关）"
+
+#. ~ Description for industrial freezer (off)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An industrial grade freezer, capable preserving huge amounts of food, as "
+"long as it's powered.  It is switched off."
+msgstr "一款工业级冰柜，能够储存大量食品，只要有电就能保持低温。目前已关闭。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "industrial freezer (on)"
+msgstr "工业冰柜（开）"
+
+#. ~ Description for industrial freezer (on)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An industrial grade freezer, capable preserving huge amounts of food, as "
+"long as it's powered.  It is switched on."
+msgstr "一款工业级冰柜，能够储存大量食品，只要有电就能保持低温。目前已开启。"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "abstract minifridge"
@@ -33197,6 +33236,7 @@ msgstr "一个常见于超市等场所的金属展架，多用于陈列物品。
 
 #. ~ message when finished sawing display rack
 #. ~ message when finished sawing closed bar door
+#. ~ message when finished sawing welded bar door
 #. ~ message when finished sawing locked wire gate
 #. ~ message when finished sawing closed wire gate
 #. ~ message when finished sawing chain link fence
@@ -35194,6 +35234,51 @@ msgstr "一扇极其坚固的铸铁门，密封性良好，通过飞轮打开。
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid "open bulkhead door"
 msgstr "船舱门（开）"
+
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "welded metal door"
+msgstr "焊死的金属门"
+
+#. ~ Description for welded metal door
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid ""
+"An extremely resilient door made of assorted steel, carved and pounded into "
+"shape.  It's been welded shut, that oughta hold 'em."
+msgstr "一个十分坚固的金属门，由合金钢制成，一体冲压成型。这扇门已被焊死，应该能挡住他们。"
+
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "welded metal door with peephole"
+msgstr "焊死的猫眼金属门"
+
+#. ~ Description for welded metal door with peephole
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid ""
+"An extremely resilient door made of assorted steel, carved and pounded into "
+"shape.  It's been welded shut, that oughta hold 'em.  If you examined it "
+"more closely, you'd be able to peek through the hole."
+msgstr "一个十分坚固的金属门，由合金钢制成，一体冲压成型，差在多了个窥视孔。这扇门已被焊死，应该能挡住他们。如果你仔细检查，就可以透过孔窥视。"
+
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "welded bulkhead door"
+msgstr "焊死的船舱门"
+
+#. ~ Description for welded bulkhead door
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid ""
+"An extremely resilient watertight door of cast metal.  Used to open using "
+"the fly wheel, it's since been welded shut.  That oughta hold 'em."
+msgstr "一个十分坚固且防水的金属门，由铸造金属制成。原本可以用手轮开启，但现在已被焊死。这应该能挡住他们。"
+
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "welded bar door"
+msgstr "焊死的栏杆门"
+
+#. ~ Description for welded bar door
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid ""
+"A detention door made up of crisscrossed stainless steel bars.  It's been "
+"welded shut, that oughta hold 'em."
+msgstr "由相互交叉的不锈钢棒所组成的牢房门。这扇门已被焊死，应该能挡住他们。"
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "palisade gate"
@@ -79684,6 +79769,48 @@ msgid ""
 "with a spicy flavor."
 msgstr "一道韩国菜，以煮熟的肉配上泡菜，肉质鲜嫩，搭配辛辣的风味。"
 
+#: data/json/items/comestibles/meat_dishes.json
+msgid "kebab"
+msgid_plural "kebab"
+msgstr[0] "烤肉串配蔬菜"
+
+#. ~ Conditional name for {'str_sp': 'kebab'} when VITAMIN matches
+#. human_flesh_vitamin
+#. ~ Conditional name for {'str_sp': 'meat kebab'} when VITAMIN matches
+#. human_flesh_vitamin
+#: data/json/items/comestibles/meat_dishes.json
+msgid "donner kebab"
+msgid_plural "donner kebabs"
+msgstr[0] "烤肉串配蔬菜（人肉）"
+
+#. ~ Conditional name for {'str_sp': 'kebab'} when COMPONENT_ID matches mutant
+#. ~ Conditional name for {'str_sp': 'meat kebab'} when COMPONENT_ID matches
+#. mutant
+#: data/json/items/comestibles/meat_dishes.json
+#, c-format
+msgid "killer %s"
+msgid_plural "killer %s"
+msgstr[0] "%s（变异肉）"
+
+#. ~ Description for {'str_sp': 'kebab'}
+#: data/json/items/comestibles/meat_dishes.json
+msgid ""
+"Cooked meats and veggies on a stick.  Popular street food originating from "
+"the Middle East and later spread to Asia and the rest of the world."
+msgstr "烤制的肉类和蔬菜串在一起。起源于中东的流行街头美食，后来传播到亚洲及世界各地。"
+
+#: data/json/items/comestibles/meat_dishes.json
+msgid "meat kebab"
+msgid_plural "meat kebab"
+msgstr[0] "烤肉串"
+
+#. ~ Description for {'str_sp': 'meat kebab'}
+#: data/json/items/comestibles/meat_dishes.json
+msgid ""
+"Cooked meats on a stick.  Popular street food originating from the Middle "
+"East and later spread to Asia and the rest of the world."
+msgstr "烤制的肉类串在一起。起源于中东的流行街头美食，后来传播到亚洲及世界各地。"
+
 #: data/json/items/comestibles/med.json
 msgid "first aid kit"
 msgid_plural "first aid kits"
@@ -86371,6 +86498,18 @@ msgid ""
 "Soft, boiled tofu served with spicy, stir-fried kimchi.  The mild tofu "
 "complements the bold flavors of the kimchi for a balanced taste."
 msgstr "软嫩的煮豆腐配上辛辣的炒泡菜，温和的豆腐与浓郁的泡菜风味相辅相成，味道平衡。"
+
+#: data/json/items/comestibles/veggy_dishes.json
+msgid "vegetable kebab"
+msgid_plural "vegetable kebab"
+msgstr[0] "烤蔬菜串"
+
+#. ~ Description for {'str_sp': 'vegetable kebab'}
+#: data/json/items/comestibles/veggy_dishes.json
+msgid ""
+"Cooked veggies on a stick.  Popular street food originating from the Middle "
+"East and later spread to Asia and the rest of the world."
+msgstr "烤制的蔬菜串在一起。起源于中东的流行街头美食，后来传播到亚洲及世界各地。"
 
 #: data/json/items/comestibles/wheat.json
 msgid "wheat cereal"
@@ -158326,8 +158465,8 @@ msgstr "迷失的露营者"
 
 #. ~ Description for Lost Campers
 #: data/json/overmap/map_extras.json
-msgid "Several corpses of college kids or hunters out camping are here."
-msgstr "这里有几具大学生或野营猎人的尸体。"
+msgid "Several corpses of teenagers out camping are here."
+msgstr "这里有几具外出露营的青少年尸体。"
 
 #: data/json/overmap/map_extras.json
 msgid "Drug Deal"
@@ -214101,6 +214240,19 @@ msgstr "简单营养"
 msgid "Disables vitamin requirements."
 msgstr "禁用维生素与微量元素需求。"
 
+#: data/mods/pathfinding_stockfish/modinfo.json
+msgid "Pathfinding: Stockfish AI"
+msgstr "路径寻找：Stockfish AI"
+
+#. ~ Description for Pathfinding: Stockfish AI
+#: data/mods/pathfinding_stockfish/modinfo.json
+msgid ""
+"Stockfish-level AI pathfinding: allow complete and unlimited pathfinding for"
+" AI regardless of intended enemy intelligence. Additionally, enables pathing"
+" around mobs"
+msgstr ""
+"Stockfish 级别的 AI 路径寻找：允许 AI 进行完全无限制的路径寻找，而不受敌人智能的限制。此外，还可绕过敌对生物进行路径规划。"
+
 #: data/mods/pride_flags/construction_group.json
 msgid "Hoist Trans Pride Flag"
 msgstr "升起跨性别骄傲旗帜"
@@ -221792,15 +221944,31 @@ msgstr "你需要一条连接到电源的跨接电缆来吸取能量。"
 
 #: src/bionics.cpp
 msgid ""
+"You have a cable plugged to a portable power source, but you need to plug it"
+" in to the CBM."
+msgstr "你已将电缆接入到便携电源，但你还需要将它接入到CBM。"
+
+#: src/bionics.cpp
+msgid ""
+"You have a cable plugged to a vehicle, but you need to plug it in to the "
+"CBM."
+msgstr "你已将电缆接入到载具，但你还需要将它接入到CBM。"
+
+#: src/bionics.cpp
+msgid ""
+"You have a cable plugged to a grid, but you need to plug it in to the CBM."
+msgstr "你已将电缆接入到电网，但你还需要将它接入到CBM。"
+
+#: src/bionics.cpp
+msgid ""
 "Cable is plugged-in to the CBM but it has to be also connected to the power "
 "source."
 msgstr "电缆已接入CBM，但你还需要将它接入到电源上。"
 
 #: src/bionics.cpp
 msgid ""
-"You are plugged to the vehicle.  It will charge you if it has some juice in "
-"it."
-msgstr "你已经和载具相接。如果载具有电，它将为你充能。"
+"You are plugged to the grid.  It will charge you if it has some juice in it."
+msgstr "你已经和电网相接。如果电网有电，它将为你充能。"
 
 #: src/bionics.cpp
 msgid ""
@@ -221815,15 +221983,9 @@ msgstr "你已经和UPS相接，如果UPS有电，它将为你充能。"
 
 #: src/bionics.cpp
 msgid ""
-"You have a cable plugged to a portable power source, but you need to plug it"
-" in to the CBM."
-msgstr "你已将电缆接入到便携电源，但你还需要将它接入到CBM。"
-
-#: src/bionics.cpp
-msgid ""
-"You have a cable plugged to a vehicle, but you need to plug it in to the "
-"CBM."
-msgstr "你已将电缆接入到载具，但你还需要将它接入到CBM。"
+"You are plugged to the vehicle.  It will charge you if it has some juice in "
+"it."
+msgstr "你已经和载具相接。如果载具有电，它将为你充能。"
 
 #: src/bionics.cpp
 msgid ""
@@ -221932,6 +222094,10 @@ msgid ""
 "Stored calories are below the safe threshold, <npcname>'s %s shuts down to "
 "preserve their health."
 msgstr "<npcname> 体内储存的卡路里低于安全门槛，%s 自动关闭以保持健康。"
+
+#: src/bionics.cpp src/item.cpp src/iuse.cpp
+msgid "You notice the cable has come loose!"
+msgstr "你注意到电缆脱落了！"
 
 #: src/bionics.cpp
 #, c-format
@@ -238912,9 +239078,9 @@ msgstr "你的 %s 被降水浇灭了。"
 msgid "Your %s is blown out by the wind."
 msgstr "%s 被大风吹灭了。"
 
-#: src/item.cpp src/iuse.cpp
-msgid "You notice the cable has come loose!"
-msgstr "你注意到电缆脱落了！"
+#: src/item.cpp
+msgid "You notice the cable has disconnected from a vehicle!"
+msgstr "你注意到电缆已经从一辆载具上断开！"
 
 #: src/item.cpp
 msgid "The over-extended cable breaks loose!"
@@ -240678,6 +240844,11 @@ msgid "You can't cut that."
 msgstr "你不能切割那个。"
 
 #: src/iuse.cpp
+#, c-format
+msgid "Your %1$s doesn't have enough charges to cut this, %2$s required."
+msgstr "你的%1$s没有足够的能量来切割这个，需要%2$s。"
+
+#: src/iuse.cpp
 msgid "You're not even chained to a boiler."
 msgstr "你甚至都没有链接锅炉。"
 
@@ -241965,8 +242136,8 @@ msgid ""
 msgstr "你的捣鼓要把多功能厨师机弄坏了！幸运的是，它还能用。你最好少乱动它了。"
 
 #: src/iuse.cpp
-msgid "Attach cable to the vehicle that will do the towing."
-msgstr "将牵引索连接到要进行牵引的车辆上。"
+msgid "Attach cable where?"
+msgstr ""
 
 #: src/iuse.cpp
 msgid "That vehicle already has a tow-line attached."
@@ -241977,6 +242148,10 @@ msgid "You can't attach the tow-line to an internal part."
 msgstr "你不能把牵引索系在内部部件上。"
 
 #: src/iuse.cpp
+msgid "There's no grid connector there."
+msgstr "那里没有电网连接器。"
+
+#: src/iuse.cpp
 msgid "Using cable:"
 msgstr "使用电缆："
 
@@ -241985,12 +242160,36 @@ msgid "Detach and re-spool the cable"
 msgstr "拆除并重卷电缆"
 
 #: src/iuse.cpp
-msgid "Attach loose end to vehicle"
-msgstr "接驳电缆至载具"
+msgid "Attach cable to self"
+msgstr "连接电缆至自身"
 
 #: src/iuse.cpp
-msgid "Attach cable to vehicle that will be towed."
-msgstr "将牵引索连接到将被牵引的车辆上。"
+msgid "Attach cable to vehicle"
+msgstr "连接电缆至载具"
+
+#: src/iuse.cpp
+msgid "Attach cable to grid connector"
+msgstr "将电缆连接到电网连接器"
+
+#: src/iuse.cpp
+msgid "Attach cable to ups"
+msgstr "连接电缆至UPS"
+
+#: src/iuse.cpp
+msgid "Attach cable to solar pack"
+msgstr "连接电缆至太阳能背包"
+
+#: src/iuse.cpp
+msgid "Using cable tow cable. Attached vehicle will be towed:"
+msgstr "使用牵引索，附加的载具将被拖曳："
+
+#: src/iuse.cpp
+msgid "Using cable tow cable. Attached vehicle will tow the other:"
+msgstr "使用牵引索，附加的载具将拖曳另一辆载具："
+
+#: src/iuse.cpp
+msgid "Attach loose end to vehicle"
+msgstr "接驳电缆至载具"
 
 #: src/iuse.cpp
 msgid "You cannot set a vehicle to tow itself!"
@@ -242010,56 +242209,28 @@ msgid "You don't have any UPS."
 msgstr "你没有任何UPS。"
 
 #: src/iuse.cpp
-msgid "Attach cable to vehicle"
-msgstr "连接电缆至载具"
-
-#: src/iuse.cpp
-msgid "Attach cable to self"
-msgstr "连接电缆至自身"
-
-#: src/iuse.cpp
-msgid "Attach cable to solar pack"
-msgstr "连接电缆至太阳能背包"
-
-#: src/iuse.cpp
-msgid "Attach cable to UPS"
-msgstr "连接电缆至UPS"
-
-#: src/iuse.cpp
-msgid "You attach the cable to your Cable Charger System."
-msgstr "你将电缆一端连接至你的电缆充电器CBM上。"
+msgid "You attach the cable to the Cable Charger System."
+msgstr "你将电缆一端连接在电缆充电器CBM上。"
 
 #: src/iuse.cpp
 msgid "You attach the cable to the solar pack."
 msgstr "你将电缆一端连接至太阳能背包。"
 
 #: src/iuse.cpp
+msgid "That would be unwise to short-circuit this grid connector."
+msgstr "短路这个电网连接器是不明智的。"
+
+#: src/iuse.cpp
+msgid "To directly connect two networks together, use a voltmeter instead."
+msgstr "要直接连接两个网络，请使用电压表。"
+
+#: src/iuse.cpp
 msgid "You attach the cable to the UPS."
 msgstr "你将电缆一端连接至UPS。"
 
 #: src/iuse.cpp
-msgid "Attach cable to vehicle where?"
-msgstr "在载具的哪里连接电缆？"
-
-#: src/iuse.cpp
-msgid "Attach loose end to vehicle or grid connector"
-msgstr ""
-
-#: src/iuse.cpp
-msgid "Attach loose end to self"
-msgstr "接驳电缆至你自己"
-
-#: src/iuse.cpp
-msgid "Attach loose end to solar pack"
-msgstr "接驳电缆至太阳能背包"
-
-#: src/iuse.cpp
-msgid "Attach loose end to UPS"
-msgstr "接驳电缆至UPS"
-
-#: src/iuse.cpp
-msgid "You attach the cable to the Cable Charger System."
-msgstr "你将电缆一端连接在电缆充电器CBM上。"
+msgid "You are now plugged to the grid."
+msgstr "你现在已连接到电网。"
 
 #: src/iuse.cpp
 msgid "You are now plugged to the solar backpack."
@@ -242074,19 +242245,6 @@ msgid "You are now plugged to the vehicle."
 msgstr "你现在通过电缆与载具相连。"
 
 #: src/iuse.cpp
-msgid "Attach cable where?"
-msgstr ""
-
-#: src/iuse.cpp
-msgid "There's no vehicle or grid connection there."
-msgstr ""
-
-#: src/iuse.cpp
-#, c-format
-msgid "You connect the %s to the electric grid."
-msgstr ""
-
-#: src/iuse.cpp
 #, c-format
 msgid "The %s already has access to its own electric system!"
 msgstr "%s 已经连接到它自己的电气系统了！"
@@ -242095,6 +242253,15 @@ msgstr "%s 已经连接到它自己的电气系统了！"
 #, c-format
 msgid "You link up the electric systems of the %1$s and the %2$s."
 msgstr "你把 %1$s 和 %2$s 的电气系统连接了起来。"
+
+#: src/iuse.cpp
+msgid "There's no grid connection there."
+msgstr "那里没有电网连接。"
+
+#: src/iuse.cpp
+#, c-format
+msgid "You connect the %s to the electric grid."
+msgstr ""
 
 #: src/iuse.cpp
 msgid "You need soap to use this."
@@ -242670,6 +242837,14 @@ msgstr "你无法在这里放置 %s。"
 #, c-format
 msgid "There isn't anything new on the %s."
 msgstr "%s 上并没有什么新的东西。"
+
+#: src/iuse_actor.cpp
+msgid "Closest"
+msgstr "最近的"
+
+#: src/iuse_actor.cpp
+msgid "Random"
+msgstr "随机"
 
 #: src/iuse_actor.cpp
 #, c-format
@@ -249180,6 +249355,19 @@ msgstr "%s 瞄准，用巨大的触须向你猛刺了过来！"
 #: src/monattack.cpp
 msgid "You feel millions of live spores pumping into you…"
 msgstr "你感觉到数百万个鲜活孢子灌入你的体内……"
+
+#: src/monattack.cpp
+#, c-format
+msgid ""
+"The %1$s tries to impale your torso, but fails to penetrate your armor!"
+msgstr "%1$s 试图刺穿你的躯干，但是没能穿透护甲！"
+
+#: src/monattack.cpp
+#, c-format
+msgid ""
+"The %1$s tries to impale <npcname>'s torso, but fails to penetrate their "
+"armor!"
+msgstr "%1$s 试图刺穿 <npcname> 的躯干，但是没能穿透护甲！"
 
 #: src/monattack.cpp
 #, c-format
@@ -256204,6 +256392,16 @@ msgid ""
 msgstr "开启后，刺刀将取代武器攻击，而不是增加攻击。目前这是一个正在开发的功能，这会显著削弱刺刀的效果。"
 
 #: src/options.cpp
+msgid "Use legacy pathfinding"
+msgstr "使用旧版路径寻找"
+
+#: src/options.cpp
+msgid ""
+"If true, opt out of new pathfinding in favor of legacy one. This makes "
+"pathfinding mods not work."
+msgstr "开启后，将放弃新版路径寻找，改用旧版路径寻找。这会导致路径寻找模组无法正常工作。"
+
+#: src/options.cpp
 msgid "World end handling"
 msgstr "死后世界存档处理"
 
@@ -257702,6 +257900,10 @@ msgstr "开"
 #: src/panels.cpp
 msgid "Place: "
 msgstr "地点： "
+
+#: src/panels.cpp
+msgid "X,Y,Z: "
+msgstr "X,Y,Z: "
 
 #: src/panels.cpp
 msgid "Sky  : Underground"
