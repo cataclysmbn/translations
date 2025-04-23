@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-04-22 01:24+0000\n"
+"POT-Creation-Date: 2025-04-23 01:25+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/bn-team/teams/113585/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -12550,6 +12550,10 @@ msgstr "Pegar o conteúdo"
 
 #: data/json/item_actions.json
 msgid "Use Scale"
+msgstr ""
+
+#: data/json/item_actions.json
+msgid "Search GPS"
 msgstr ""
 
 #: data/json/item_actions.json
@@ -100895,8 +100899,27 @@ msgstr[2] ""
 msgid ""
 "This is an inactive longrange milspec turret.  Using this item involves "
 "loading the unit with the factory-loaded 7.62x51mm rounds in your inventory "
-"(if you wish to divide your ammunition, set aside whatever 77.62x51mm rounds"
-" you do NOT want to give the turret) turning it on, and placing it on the "
+"(if you wish to divide your ammunition, set aside whatever 7.62x51mm rounds "
+"you do NOT want to give the turret) turning it on, and placing it on the "
+"ground, where it will attach itself.  If programmed successfully the turret "
+"will then identify you as a friendly, and attack all enemies with its gun."
+msgstr ""
+
+#: data/json/items/corpses/inactive_bots.json
+msgid "inactive autonomous anti-materiel milspec turret"
+msgid_plural "inactive autonomous anti-materiel milspec turrets"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'inactive autonomous anti-materiel milspec
+#. turret'}
+#: data/json/items/corpses/inactive_bots.json
+msgid ""
+"This is an inactive anti-material milspec turret.  Using this item involves "
+"loading the unit with the factory-loaded .50 BMG rounds in your inventory "
+"(if you wish to divide your ammunition, set aside whatever .50 BMG rounds "
+"you do NOT want to give the turret) turning it on, and placing it on the "
 "ground, where it will attach itself.  If programmed successfully the turret "
 "will then identify you as a friendly, and attack all enemies with its gun."
 msgstr ""
@@ -103263,7 +103286,8 @@ msgid ""
 msgstr ""
 
 #: data/json/items/gun/223.json data/json/items/gun/308.json
-#: data/json/items/gun/9mm.json data/json/items/gun/ups.json
+#: data/json/items/gun/50.json data/json/items/gun/9mm.json
+#: data/json/items/gun/ups.json
 msgid "If you see it - it is bug!"
 msgstr ""
 
@@ -105079,6 +105103,13 @@ msgid ""
 "A heavy machine gun used by the US Military from its inception to the "
 "Cataclysm, and even rarely by Cataclysm survivors."
 msgstr ""
+
+#: data/json/items/gun/50.json
+msgid "M2HB Browning MG"
+msgid_plural "M2HB Browning MG"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: data/json/items/gun/50.json
 msgid ".50 caliber rifle"
@@ -108576,6 +108607,20 @@ msgstr ""
 
 #: data/json/items/gunmod/sling.json
 msgid "sling"
+msgstr ""
+
+#: data/json/items/gunmod/sling.json
+msgid "pistol lanyard"
+msgid_plural "pistol lanyards"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: data/json/items/gunmod/sling.json
+msgid ""
+"A pistol lanyard allows the attached gun to hang freely off your belt, so "
+"you won't lose it in case it's not in a holster.  However, it offers no "
+"protection."
 msgstr ""
 
 #: data/json/items/gunmod/stock.json
@@ -119768,6 +119813,35 @@ msgstr ""
 " vibrador Este dispositivo de devoramento de bateria é apenas a coisa "
 "paraamassar a tensão e ajudá-lo a relaxar. Use-o para fazer uma pausa "
 "edescontrair."
+
+#: data/json/items/tool/electronics.json
+msgid "gps pinpointer"
+msgid_plural "gps pinpointers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'gps pinpointer'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"Durable handheld GPS unit built for outdoor navigation.  Activate to acquire"
+" satellite lock and search the database."
+msgstr ""
+
+#: data/json/items/tool/electronics.json
+msgid "military gps pinpointer"
+msgid_plural "military gps pinpointers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'military gps pinpointer'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"Durable handheld GPS unit built for outdoor navigation.  Activate to acquire"
+" satellite lock and search the database.  This one has encrpytion keys for "
+"military-grade satellites, allowing a much greater search range."
+msgstr ""
 
 #: data/json/items/tool/electronics.json
 msgid "bionic scanner"
@@ -137227,6 +137301,23 @@ msgid ""
 "vulnerability of TX-5 Sentinel to sniper fire.  Its advanced target "
 "recognition system and 7.62x51mm gun allows it to engage targets protected "
 "by modern body armor at very long range."
+msgstr ""
+
+#: data/json/monsters/turrets.json
+msgid "anti-materiel milspec turret"
+msgid_plural "anti-materiel milspec turrets"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'anti-materiel milspec turret'}
+#: data/json/monsters/turrets.json
+msgid ""
+"The General Atomics TX-10 Heavy, an automated milspec turret equipped with a"
+" M2HB machine gun.  Designed for light vehicles or enemies behind cover, it "
+"utilizes the powerful and ubiquitous .50 BMG.  Its advanced target "
+"recognition system and M2HB makes a deadly combination for anything short of"
+" an armored vehicle."
 msgstr ""
 
 #: data/json/monsters/utility_bot.json
@@ -241555,28 +241646,6 @@ msgstr ""
 msgid "Mod for testing Lua save/load API."
 msgstr ""
 
-#: data/mods/sees_player_hitbutton/modinfo.json
-msgid "sees-player icon, HitButton_iso"
-msgstr ""
-
-#. ~ Description for sees-player icon, HitButton_iso
-#: data/mods/sees_player_hitbutton/modinfo.json
-msgid ""
-"Adds indicator icon if a creature sees the player.  Designed for the "
-"HitButton isometric tileset."
-msgstr ""
-
-#: data/mods/sees_player_retro/modinfo.json
-msgid "sees-player icon, retrodays"
-msgstr ""
-
-#. ~ Description for sees-player icon, retrodays
-#: data/mods/sees_player_retro/modinfo.json
-msgid ""
-"Adds indicator icon if a creature sees the player.  Designed for the "
-"retrodays tileset."
-msgstr ""
-
 #: data/mods/smart_house_remotes/item.json
 msgid "smart house remote"
 msgid_plural "smart house remotes"
@@ -270733,6 +270802,41 @@ msgstr "Você não pode se pesar sobre uma montaria."
 #: src/iuse_actor.cpp
 #, c-format
 msgid "ERROR: Max weight of %.0f %s exceeded"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "This item uses up (%.2f) additional charges per tile revealed."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Search for location:"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Please enter at least 3 characters."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Searching…"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "No locations found for \"%s\"."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "Requires %.1f charges, but only %d remaining."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Nothing new to display."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "You add the GPS results to your map."
 msgstr ""
 
 #: src/iuse_actor.cpp

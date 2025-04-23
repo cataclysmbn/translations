@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-04-22 01:24+0000\n"
+"POT-Creation-Date: 2025-04-23 01:25+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -11721,6 +11721,10 @@ msgstr "拿取內容物"
 #: data/json/item_actions.json
 msgid "Use Scale"
 msgstr "秤重"
+
+#: data/json/item_actions.json
+msgid "Search GPS"
+msgstr "搜索 GPS"
 
 #: data/json/item_actions.json
 msgid "Work on craft"
@@ -88156,13 +88160,32 @@ msgstr[0] "长程军用自动炮塔（关）"
 msgid ""
 "This is an inactive longrange milspec turret.  Using this item involves "
 "loading the unit with the factory-loaded 7.62x51mm rounds in your inventory "
-"(if you wish to divide your ammunition, set aside whatever 77.62x51mm rounds"
-" you do NOT want to give the turret) turning it on, and placing it on the "
+"(if you wish to divide your ammunition, set aside whatever 7.62x51mm rounds "
+"you do NOT want to give the turret) turning it on, and placing it on the "
 "ground, where it will attach itself.  If programmed successfully the turret "
 "will then identify you as a friendly, and attack all enemies with its gun."
 msgstr ""
 "一座未激活的长程军用自动机枪炮塔。使用该物品来激活/放置炮塔并用你物品栏内的原装 7.62x51mm "
-"弹药装填（如果你想分配你的弹药，先丢下你不想给炮塔的子弹）。成功编程放置后的炮塔会将你识别为友方，并采用内置机枪攻击附近的所有敌人。"
+"弹药装填（如果你只希望装填一部分弹药，可先将不需装填的部分从物品栏移除）。成功编程放置后的炮塔会将你识别为友方，并采用内置机枪攻击附近的所有敌人。"
+
+#: data/json/items/corpses/inactive_bots.json
+msgid "inactive autonomous anti-materiel milspec turret"
+msgid_plural "inactive autonomous anti-materiel milspec turrets"
+msgstr[0] "反器材军用自动炮塔（关）"
+
+#. ~ Description for {'str': 'inactive autonomous anti-materiel milspec
+#. turret'}
+#: data/json/items/corpses/inactive_bots.json
+msgid ""
+"This is an inactive anti-material milspec turret.  Using this item involves "
+"loading the unit with the factory-loaded .50 BMG rounds in your inventory "
+"(if you wish to divide your ammunition, set aside whatever .50 BMG rounds "
+"you do NOT want to give the turret) turning it on, and placing it on the "
+"ground, where it will attach itself.  If programmed successfully the turret "
+"will then identify you as a friendly, and attack all enemies with its gun."
+msgstr ""
+"一座未激活的反器材军用自动机枪炮塔。使用该物品来激活/放置炮塔并用你物品栏内的原装 .50 BMG "
+"弹药装填（如果你只希望装填一部分弹药，可先将不需装填的部分从物品栏移除）。成功编程放置后的炮塔会将你识别为友方，并采用内置机枪攻击附近的所有敌人。"
 
 #: data/json/items/corpses/inactive_bots.json
 msgid "inactive recon mech"
@@ -90149,7 +90172,8 @@ msgstr ""
 "年内被全球的军队广泛使用。这是一种转拴式气动步枪，以其高命中率和易于掌控的后坐力而出名。"
 
 #: data/json/items/gun/223.json data/json/items/gun/308.json
-#: data/json/items/gun/9mm.json data/json/items/gun/ups.json
+#: data/json/items/gun/50.json data/json/items/gun/9mm.json
+#: data/json/items/gun/ups.json
 msgid "If you see it - it is bug!"
 msgstr "如果你看到了这个东西，说明游戏出bug了！"
 
@@ -91666,6 +91690,11 @@ msgid ""
 "A heavy machine gun used by the US Military from its inception to the "
 "Cataclysm, and even rarely by Cataclysm survivors."
 msgstr "美帝军队在大灾变之初大量使用的重型机枪，在幸存者之中也有少量保有。"
+
+#: data/json/items/gun/50.json
+msgid "M2HB Browning MG"
+msgid_plural "M2HB Browning MG"
+msgstr[0] "M2HB 勃朗宁机枪"
 
 #: data/json/items/gun/50.json
 msgid ".50 caliber rifle"
@@ -94587,6 +94616,18 @@ msgstr "肩帶可以把步槍像衣服一樣掛在肩後, 但不會提供任何�
 #: data/json/items/gunmod/sling.json
 msgid "sling"
 msgstr "投石帶"
+
+#: data/json/items/gunmod/sling.json
+msgid "pistol lanyard"
+msgid_plural "pistol lanyards"
+msgstr[0] "手枪挂绳"
+
+#: data/json/items/gunmod/sling.json
+msgid ""
+"A pistol lanyard allows the attached gun to hang freely off your belt, so "
+"you won't lose it in case it's not in a holster.  However, it offers no "
+"protection."
+msgstr "手枪挂绳可以让挂着的枪自由地悬挂在腰带上，即使没有枪套也不易遗失。不过，它并不提供任何防护。"
 
 #: data/json/items/gunmod/stock.json
 msgid "adjustable stock"
@@ -103609,6 +103650,31 @@ msgid ""
 "This battery-devouring device is just the thing to knead the tension out and"
 " help you relax.  Use it to take a break and unwind."
 msgstr "這個吃電池的裝置是用來幫你按摩舒緩僵硬的身體, 使用他來幫助你休息和伸展。"
+
+#: data/json/items/tool/electronics.json
+msgid "gps pinpointer"
+msgid_plural "gps pinpointers"
+msgstr[0] "GPS 定位仪"
+
+#. ~ Description for {'str': 'gps pinpointer'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"Durable handheld GPS unit built for outdoor navigation.  Activate to acquire"
+" satellite lock and search the database."
+msgstr "耐用型手持 GPS 装置，专为户外导航而设计。激活后可获取卫星信号并搜索数据库。"
+
+#: data/json/items/tool/electronics.json
+msgid "military gps pinpointer"
+msgid_plural "military gps pinpointers"
+msgstr[0] "军用 GPS 定位仪"
+
+#. ~ Description for {'str': 'military gps pinpointer'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"Durable handheld GPS unit built for outdoor navigation.  Activate to acquire"
+" satellite lock and search the database.  This one has encrpytion keys for "
+"military-grade satellites, allowing a much greater search range."
+msgstr "耐用型手持 GPS 装置，专为户外导航而设计。激活后可获取卫星信号并搜索数据库。该设备拥有军用级卫星加密密钥，可实现更广范围的搜索。"
 
 #: data/json/items/tool/electronics.json
 msgid "bionic scanner"
@@ -118095,6 +118161,23 @@ msgid ""
 "by modern body armor at very long range."
 msgstr ""
 "通用原子TX-7狙击手，一种装备7.62x51mm枪械的自动军用炮塔。设计为反狙击炮塔，以覆盖TX-5哨兵对狙击手火力的脆弱性。其先进的目标识别系统和7.62x51mm枪械使其能够在很长的距离内与现代防弹衣保护的目标交战。"
+
+#: data/json/monsters/turrets.json
+msgid "anti-materiel milspec turret"
+msgid_plural "anti-materiel milspec turrets"
+msgstr[0] "反器材军用炮塔"
+
+#. ~ Description for {'str': 'anti-materiel milspec turret'}
+#: data/json/monsters/turrets.json
+msgid ""
+"The General Atomics TX-10 Heavy, an automated milspec turret equipped with a"
+" M2HB machine gun.  Designed for light vehicles or enemies behind cover, it "
+"utilizes the powerful and ubiquitous .50 BMG.  Its advanced target "
+"recognition system and M2HB makes a deadly combination for anything short of"
+" an armored vehicle."
+msgstr ""
+"通用原子公司 TX-10 重型军规炮塔，配备 M2HB 机枪的自动化炮塔。专为轻型载具或掩体后敌人设计，使用威力强大且广泛使用的 .50 BMG "
+"子弹。其先进的目标识别系统与 M2HB 机枪结合，几乎能消灭除装甲车辆之外的所有目标。"
 
 #: data/json/monsters/utility_bot.json
 #: data/mods/Modular_Turrets/monster_override.json
@@ -215263,28 +215346,6 @@ msgstr "Lua SaveLoad 测试"
 msgid "Mod for testing Lua save/load API."
 msgstr "用于测试Lua保存/加载API的模组。"
 
-#: data/mods/sees_player_hitbutton/modinfo.json
-msgid "sees-player icon, HitButton_iso"
-msgstr "发现玩家图标，HitButton_iso版"
-
-#. ~ Description for sees-player icon, HitButton_iso
-#: data/mods/sees_player_hitbutton/modinfo.json
-msgid ""
-"Adds indicator icon if a creature sees the player.  Designed for the "
-"HitButton isometric tileset."
-msgstr "如果某个生物发现了你，会显示一个！图标。专为 HitButton isometric 贴图包设计。"
-
-#: data/mods/sees_player_retro/modinfo.json
-msgid "sees-player icon, retrodays"
-msgstr "发现玩家图标，retrodays版"
-
-#. ~ Description for sees-player icon, retrodays
-#: data/mods/sees_player_retro/modinfo.json
-msgid ""
-"Adds indicator icon if a creature sees the player.  Designed for the "
-"retrodays tileset."
-msgstr "如果某个生物发现了你，会显示一个！图标。专为 retrodays 贴图包设计。"
-
 #: data/mods/smart_house_remotes/item.json
 msgid "smart house remote"
 msgid_plural "smart house remotes"
@@ -244100,6 +244161,41 @@ msgstr "騎乘時無法秤自己體重。"
 #, c-format
 msgid "ERROR: Max weight of %.0f %s exceeded"
 msgstr "错误：最大重量%.0f%s，已超重。"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "This item uses up (%.2f) additional charges per tile revealed."
+msgstr "每揭示一个格子将额外消耗 (%.2f) 点电量。"
+
+#: src/iuse_actor.cpp
+msgid "Search for location:"
+msgstr "搜索地点："
+
+#: src/iuse_actor.cpp
+msgid "Please enter at least 3 characters."
+msgstr "请输入至少 3 个字符。"
+
+#: src/iuse_actor.cpp
+msgid "Searching…"
+msgstr "正在搜索……"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "No locations found for \"%s\"."
+msgstr "未找到与 \"%s\" 匹配的地点。"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "Requires %.1f charges, but only %d remaining."
+msgstr "需要 %.1f 点电量，但只剩 %d 点。"
+
+#: src/iuse_actor.cpp
+msgid "Nothing new to display."
+msgstr "没有新内容可显示。"
+
+#: src/iuse_actor.cpp
+msgid "You add the GPS results to your map."
+msgstr "你将 GPS 搜索结果添加到了地图上。"
 
 #: src/iuse_actor.cpp
 msgid "You can't see to sew!"

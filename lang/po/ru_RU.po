@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-04-22 01:24+0000\n"
+"POT-Creation-Date: 2025-04-23 01:25+0000\n"
 "Last-Translator: Vadim Chetkov, 2025\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -13199,6 +13199,10 @@ msgstr "Получить содержимое"
 #: data/json/item_actions.json
 msgid "Use Scale"
 msgstr "Использовать весы"
+
+#: data/json/item_actions.json
+msgid "Search GPS"
+msgstr "Поиск GPS"
 
 #: data/json/item_actions.json
 msgid "Work on craft"
@@ -110504,17 +110508,43 @@ msgstr[3] "неактивные автономные дальнобойные в
 msgid ""
 "This is an inactive longrange milspec turret.  Using this item involves "
 "loading the unit with the factory-loaded 7.62x51mm rounds in your inventory "
-"(if you wish to divide your ammunition, set aside whatever 77.62x51mm rounds"
-" you do NOT want to give the turret) turning it on, and placing it on the "
+"(if you wish to divide your ammunition, set aside whatever 7.62x51mm rounds "
+"you do NOT want to give the turret) turning it on, and placing it on the "
 "ground, where it will attach itself.  If programmed successfully the turret "
 "will then identify you as a friendly, and attack all enemies with its gun."
 msgstr ""
-"Это неактивная дальнобойная военная турель. Для использования её нужно "
-"активировать и выбрать место на земле для установки, она будет заряжена "
-"патронами 7,62x51 мм из инвентаря (выложите часть, если вы НЕ хотите "
-"загружать в турель все). Если турель была успешно перепрограммирована, то "
-"она будет идентифицировать вас как дружественный объект и атаковать всех "
-"врагов из орудия."
+"Это неактивная дальнобойная milspec турель. Использование этого предмета "
+"подразумевает загрузку устройства заводскими патронами 7,62x51 мм из вашего "
+"инвентаря (если вы хотите разделить боеприпасы, отложите те патроны 7,62x51 "
+"мм, которые вы НЕ хотите давать турели), включение и размещение на земле, "
+"где она прикрепится сама. Если программирование прошло успешно, турель "
+"определит вас как своего и будет атаковать всех врагов своим оружием."
+
+#: data/json/items/corpses/inactive_bots.json
+msgid "inactive autonomous anti-materiel milspec turret"
+msgid_plural "inactive autonomous anti-materiel milspec turrets"
+msgstr[0] "неактивная автономная антиматериальная milspec турель "
+msgstr[1] "неактивная автономная антиматериальная milspec турель "
+msgstr[2] "неактивная автономная антиматериальная milspec турель "
+msgstr[3] "неактивная автономная антиматериальная milspec турель "
+
+#. ~ Description for {'str': 'inactive autonomous anti-materiel milspec
+#. turret'}
+#: data/json/items/corpses/inactive_bots.json
+msgid ""
+"This is an inactive anti-material milspec turret.  Using this item involves "
+"loading the unit with the factory-loaded .50 BMG rounds in your inventory "
+"(if you wish to divide your ammunition, set aside whatever .50 BMG rounds "
+"you do NOT want to give the turret) turning it on, and placing it on the "
+"ground, where it will attach itself.  If programmed successfully the turret "
+"will then identify you as a friendly, and attack all enemies with its gun."
+msgstr ""
+"Это неактивная антиматериальная турель milspec. Использование этого предмета"
+" подразумевает загрузку устройства заводскими патронами .50 BMG из вашего "
+"инвентаря (если вы хотите разделить боеприпасы, отложите те патроны .50 BMG,"
+" которые вы НЕ хотите давать турели), включение и размещение на земле, где "
+"она сама себя прикрепит. Если программирование прошло успешно, турель "
+"определит вас как своего и будет атаковать всех врагов своим оружием."
 
 #: data/json/items/corpses/inactive_bots.json
 msgid "inactive recon mech"
@@ -113205,7 +113235,8 @@ msgstr ""
 "подавлением отдачи."
 
 #: data/json/items/gun/223.json data/json/items/gun/308.json
-#: data/json/items/gun/9mm.json data/json/items/gun/ups.json
+#: data/json/items/gun/50.json data/json/items/gun/9mm.json
+#: data/json/items/gun/ups.json
 msgid "If you see it - it is bug!"
 msgstr "Если вы это видите — это баг!"
 
@@ -115358,6 +115389,14 @@ msgid ""
 msgstr ""
 "Крупнокалиберный пулемет, который использовался военными США с самого начала"
 " до Катаклизма, и даже изредка использовался выжившими после Катаклизма."
+
+#: data/json/items/gun/50.json
+msgid "M2HB Browning MG"
+msgid_plural "M2HB Browning MG"
+msgstr[0] "M2HB  Браунинг MG"
+msgstr[1] "M2HB Браунинг MG"
+msgstr[2] "M2HB Браунинг MG"
+msgstr[3] "M2HB Браунинг MG"
 
 #: data/json/items/gun/50.json
 msgid ".50 caliber rifle"
@@ -119455,6 +119494,24 @@ msgstr ""
 #: data/json/items/gunmod/sling.json
 msgid "sling"
 msgstr "крепление для ремня"
+
+#: data/json/items/gunmod/sling.json
+msgid "pistol lanyard"
+msgid_plural "pistol lanyards"
+msgstr[0] "пистолетный шнур"
+msgstr[1] "пистолетные шнуры"
+msgstr[2] "пистолетные шнуры"
+msgstr[3] "пистолетные шнуры"
+
+#: data/json/items/gunmod/sling.json
+msgid ""
+"A pistol lanyard allows the attached gun to hang freely off your belt, so "
+"you won't lose it in case it's not in a holster.  However, it offers no "
+"protection."
+msgstr ""
+"Пистолетный шнур позволяет свободно повесить прикрепленный пистолет на пояс,"
+" так что вы не потеряете его, если он не в кобуре. Однако он не обеспечивает"
+" никакой защиты."
 
 #: data/json/items/gunmod/stock.json
 msgid "adjustable stock"
@@ -124178,10 +124235,10 @@ msgstr ""
 #: data/json/items/melee/bludgeons.json
 msgid "powered quarterstaff (off)"
 msgid_plural "powered quarterstaves (off)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "электрический посох (выкл.)"
+msgstr[1] "электрический посох (выкл.)"
+msgstr[2] "электрический посох (выкл.)"
+msgstr[3] "электрический посох (выкл.)"
 
 #. ~ Use action msg for {'str': 'powered quarterstaff (off)', 'str_pl':
 #. 'powered quarterstaves (off)'}.
@@ -124199,20 +124256,24 @@ msgid ""
 "staff, allowing you to zap a dangerous opponent with each strike.  It is "
 "currently off."
 msgstr ""
+"Это посох с железной подковкой, в рукоятку которого встроен электрошокер "
+"высокого напряжения. Электрошокер подключен к металлическим колпачкам на "
+"обоих концах посоха, что позволяет вам поражать опасного противника током с "
+"каждым ударом. В данный момент он выключен."
 
 #: data/json/items/melee/bludgeons.json
 msgid "powered quarterstaff (on)"
 msgid_plural "powered quarterstaves (on)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "электрический посох (вкл.)"
+msgstr[1] "электрический посох (вкл.)"
+msgstr[2] "электрический посох (вкл.)"
+msgstr[3] "электрический посох (вкл.)"
 
 #. ~ Use action msg for {'str': 'powered quarterstaff (on)', 'str_pl':
 #. 'powered quarterstaves (on)'}.
 #: data/json/items/melee/bludgeons.json
 msgid "You press a button and the staff turns off."
-msgstr ""
+msgstr "Вы нажимаете кнопку и посох выключается."
 
 #. ~ Description for {'str': 'powered quarterstaff (on)', 'str_pl': 'powered
 #. quarterstaves (on)'}
@@ -124223,6 +124284,10 @@ msgid ""
 "staff, allowing you to zap a dangerous opponent with each strike.  It is "
 "currently on."
 msgstr ""
+"Это посох с железной подковкой, в рукоятку которого встроен электрошокер "
+"высокого напряжения. Электрошокер подключен к металлическим колпачкам на "
+"обоих концах посоха, что позволяет вам бить током опасного противника каждым"
+" ударом. В данный момент он включен."
 
 #: data/json/items/melee/bludgeons.json
 msgid "rock in a sock"
@@ -124330,6 +124395,9 @@ msgid ""
 "Originally an Okinawan weapon, it consists of a carved stick with a "
 "perpendicular handle attached a third of the way down its length."
 msgstr ""
+"Прочная деревянная дубинка, которую обычно использует полиция. Первоначально"
+" Окинавское оружие, представляет собой резную палку с перпендикулярной "
+"ручкой, прикрепленной на треть длины."
 
 #: data/json/items/melee/bludgeons.json
 msgid "tactical tonfa (off)"
@@ -124374,7 +124442,7 @@ msgstr[3] "тактические тонфы (вкл.)"
 #. tonfas (on)'}.
 #: data/json/items/melee/bludgeons.json
 msgid "You press a button and the tonfa turns off."
-msgstr ""
+msgstr "Нажимаете кнопку, и тонфа выключается."
 
 #. ~ Description for {'str': 'tactical tonfa (on)', 'str_pl': 'tactical tonfas
 #. (on)'}
@@ -124412,16 +124480,16 @@ msgstr ""
 #: data/json/items/melee/bludgeons.json
 msgid "extendable quarterstaff (retracted)"
 msgid_plural "extendable quarterstaves (retracted)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "выдвижной посох (втянутый)"
+msgstr[1] "выдвижной посох (втянутый)"
+msgstr[2] "выдвижной посох (втянутый)"
+msgstr[3] "выдвижной посох (втянутый)"
 
 #. ~ Use action msg for {'str': 'extendable quarterstaff (retracted)',
 #. 'str_pl': 'extendable quarterstaves (retracted)'}.
 #: data/json/items/melee/bludgeons.json
 msgid "You snap open your staff."
-msgstr ""
+msgstr "Вы раздвинули свой посох."
 
 #. ~ Description for {'str': 'extendable quarterstaff (retracted)', 'str_pl':
 #. 'extendable quarterstaves (retracted)'}
@@ -124432,20 +124500,24 @@ msgid ""
 "lightweight but less sturdy than a more traditional staff.  It is currently "
 "retracted."
 msgstr ""
+"Изготовленный на заказ телескопический стальной посох, который может "
+"сжиматься до размера дубинки для удобства хранения. Его полая структура "
+"делает его более легким, но менее прочным, чем традиционный посох. В "
+"настоящее время он сложен."
 
 #: data/json/items/melee/bludgeons.json
 msgid "extendable quarterstaff (extended)"
 msgid_plural "extendable quarterstaves (extended)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "выдвижной посох (вытянутый)"
+msgstr[1] "выдвижной посох (вытянутый)"
+msgstr[2] "выдвижной посох (вытянутый)"
+msgstr[3] "выдвижной посох (вытянутый)"
 
 #. ~ Use action msg for {'str': 'extendable quarterstaff (extended)',
 #. 'str_pl': 'extendable quarterstaves (extended)'}.
 #: data/json/items/melee/bludgeons.json
 msgid "You retract your staff."
-msgstr ""
+msgstr "Вы сложили свой посох."
 
 #. ~ Description for {'str': 'extendable quarterstaff (extended)', 'str_pl':
 #. 'extendable quarterstaves (extended)'}
@@ -124456,14 +124528,18 @@ msgid ""
 "lightweight but less sturdy than a more traditional staff.  It is currently "
 "extended."
 msgstr ""
+"Изготовленный на заказ телескопический стальной посох, способный сжиматься "
+"до размера дубинки для удобства хранения. Его полая структура делает его "
+"более легким, но менее прочным, чем более традиционный посох. В настоящее "
+"время он выдвинут."
 
 #: data/json/items/melee/bludgeons.json
 msgid "spiked survivor club"
 msgid_plural "spiked survivor clubs"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "шипованная дубинка вышивальщика "
+msgstr[1] "шипованная дубинка вышивальщика "
+msgstr[2] "шипованная дубинка вышивальщика "
+msgstr[3] "шипованная дубинка вышивальщика "
 
 #. ~ Description for spiked survivor club
 #: data/json/items/melee/bludgeons.json
@@ -124474,14 +124550,19 @@ msgid ""
 "battlefields is noteworthy.  It was also known as a trench club during world"
 " war 1."
 msgstr ""
+"Деревянная дубинка с полосами железа или петлями из проволоки и шипами, "
+"аккуратно прибитыми к ней. Хотя она не так эффективна или изысканна, как "
+"настоящая булава или моргенштерн, ее история на полях сражений средневековья"
+" и даже раннего Нового времени заслуживает внимания. Она также была известна"
+" как окопная дубинка во время Первой мировой войны."
 
 #: data/json/items/melee/bludgeons.json
 msgid "bone club"
 msgid_plural "bone clubs"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "костяная дубинка"
+msgstr[1] "костяная дубинка"
+msgstr[2] "костяная дубинка"
+msgstr[3] "костяная дубинка"
 
 #. ~ Description for {'str': 'bone club'}
 #: data/json/items/melee/bludgeons.json
@@ -124489,14 +124570,16 @@ msgid ""
 "This hefty bludgeon is carved from sturdy bones mounted on a wooden haft, "
 "capable of bashing faces in with swiftness and efficiency."
 msgstr ""
+"Эта тяжелая дубинка вырезана из прочных костей, закрепленных на деревянной "
+"рукояти, и способна быстро и эффективно крушить лица."
 
 #: data/json/items/melee/bludgeons.json
 msgid "spiked survivor staff"
 msgid_plural "spiked survivor staffs"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "шипастый посох выжившего"
+msgstr[1] "шипастый посох выжившего"
+msgstr[2] "шипастый посох выжившего"
+msgstr[3] "шипастый посох выжившего"
 
 #. ~ Description for spiked survivor staff
 #: data/json/items/melee/bludgeons.json
@@ -124507,6 +124590,12 @@ msgid ""
 "the trench clubs of World War 1 to the staffs used by medieval peasants, and"
 " hopefully it will help you survive too."
 msgstr ""
+"Деревянный посох с металлическими полосами или отрезком проволоки, "
+"обмотанными с обоих концов, и различными гвоздями или шипами, прикрепленными"
+" к нему, включая один зловещий шип наверху. Самодельное оружие имеет долгую "
+"историю на протяжении всей войны: от траншейных дубинок Первой мировой войны"
+" до посохов, которыми пользовались средневековые крестьяне, и, надеюсь, оно "
+"поможет выжить и вам."
 
 #: data/json/items/melee/fake.json
 msgid "bionic claws"
@@ -124545,10 +124634,10 @@ msgstr ""
 #: data/json/items/melee/fake.json
 msgid "monofilament whip"
 msgid_plural "monofilament whips"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "моноволоконный хлыст"
+msgstr[1] "моноволоконный хлыст"
+msgstr[2] "моноволоконный хлыст"
+msgstr[3] "моноволоконный хлыст"
 
 #. ~ Description for {'str': 'monofilament whip'}
 #: data/json/items/melee/fake.json
@@ -124556,6 +124645,8 @@ msgid ""
 "A long, sharp thread of high-tech material, with a small counterweight at "
 "the end."
 msgstr ""
+"Длинная, острая нить из высокотехнологичного материала с небольшим "
+"противовесом на конце."
 
 #: data/json/items/melee/knives_kitchen.json
 msgid "generic kitchen knife"
@@ -125378,10 +125469,10 @@ msgstr ""
 #: data/json/items/melee/spears_and_polearms.json
 msgid "sharktooth spear"
 msgid_plural "sharktooth spears"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "копье из акульего зуба"
+msgstr[1] "копье из акульего зуба"
+msgstr[2] "копье из акульего зуба"
+msgstr[3] "копье из акульего зуба"
 
 #. ~ Description for {'str': 'sharktooth spear'}
 #: data/json/items/melee/spears_and_polearms.json
@@ -131858,10 +131949,10 @@ msgstr ""
 #: data/json/items/tool/electronics.json
 msgid "smartphone - Flashlight"
 msgid_plural "smartphones - Flashlight"
-msgstr[0] "смартфон с фонариком"
-msgstr[1] "смартфона с фонариком"
-msgstr[2] "смартфонов с фонариком"
-msgstr[3] "смартфоны с фонариком"
+msgstr[0] "смартфон (фонарик)"
+msgstr[1] "смартфона (фонарик)"
+msgstr[2] "смартфонов (фонарик)"
+msgstr[3] "смартфоны (фонарик)"
 
 #. ~ Use action menu_text for {'str': 'smartphone - Flashlight', 'str_pl':
 #. 'smartphones - Flashlight'}.
@@ -131912,6 +132003,37 @@ msgid ""
 msgstr ""
 "Это пожирающее батарею устройство — незаменимая вещь для массирования "
 "напряжённых мест. Используйте его, чтобы отдохнуть и расслабиться."
+
+#: data/json/items/tool/electronics.json
+msgid "gps pinpointer"
+msgid_plural "gps pinpointers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'gps pinpointer'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"Durable handheld GPS unit built for outdoor navigation.  Activate to acquire"
+" satellite lock and search the database."
+msgstr ""
+
+#: data/json/items/tool/electronics.json
+msgid "military gps pinpointer"
+msgid_plural "military gps pinpointers"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'military gps pinpointer'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"Durable handheld GPS unit built for outdoor navigation.  Activate to acquire"
+" satellite lock and search the database.  This one has encrpytion keys for "
+"military-grade satellites, allowing a much greater search range."
+msgstr ""
 
 #: data/json/items/tool/electronics.json
 msgid "bionic scanner"
@@ -146892,14 +147014,18 @@ msgid ""
 "spindly legs.  It has a pair of small compound eyes, but seems to mostly "
 "orient itself with its antennae."
 msgstr ""
+"Двухметровая многоножка с угрожающим набором ядовитых жвал, и внушающим "
+"опасения количеством хватательных придатков, быстро передвигающаяся на "
+"десятках веретенообразных ног. У нее есть пара маленьких сложносоставных "
+"глаз, но ориентируется она в основном с помощью усиков."
 
 #: data/json/monsters/insect_spider.json
 msgid "centipede matriarch"
 msgid_plural "centipede matriarchs"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "многоножка матриарх"
+msgstr[1] "многоножки матриарха"
+msgstr[2] "многоножек матриархов"
+msgstr[3] "многоножки матриархи"
 
 #. ~ Description for {'str': 'centipede matriarch'}
 #: data/json/monsters/insect_spider.json
@@ -146909,6 +147035,9 @@ msgid ""
 " young gets shaken off by its clutchmates and disappears into the "
 "underbrush."
 msgstr ""
+"Гигантская многоножка выросла еще больше, задние конечности свернуты, чтобы "
+"защитить огромную кучу яиц и своих детенышей разного возраста. Иногда один "
+"из детенышей стряхивает с себя своих сородичей и исчезает в щетине."
 
 #. ~ Attack message of monster "{'str': 'centipede matriarch'}"'s spell "None"
 #: data/json/monsters/insect_spider.json
@@ -151120,6 +151249,24 @@ msgstr ""
 "Усовершенствованная система распознавания целей и орудие калибра 7,62x51мм "
 "позволяют ей поражать цели, защищённые современными бронежилетами, на очень "
 "большом расстоянии."
+
+#: data/json/monsters/turrets.json
+msgid "anti-materiel milspec turret"
+msgid_plural "anti-materiel milspec turrets"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'anti-materiel milspec turret'}
+#: data/json/monsters/turrets.json
+msgid ""
+"The General Atomics TX-10 Heavy, an automated milspec turret equipped with a"
+" M2HB machine gun.  Designed for light vehicles or enemies behind cover, it "
+"utilizes the powerful and ubiquitous .50 BMG.  Its advanced target "
+"recognition system and M2HB makes a deadly combination for anything short of"
+" an armored vehicle."
+msgstr ""
 
 #: data/json/monsters/utility_bot.json
 #: data/mods/Modular_Turrets/monster_override.json
@@ -198157,7 +198304,7 @@ msgstr "Потерявшиеся туристы"
 #. ~ Description for Lost Campers
 #: data/json/overmap/map_extras.json
 msgid "Several corpses of teenagers out camping are here."
-msgstr ""
+msgstr "Тут несколько трупов подростков, отправившихся в поход."
 
 #: data/json/overmap/map_extras.json
 msgid "Drug Deal"
@@ -268103,32 +268250,6 @@ msgstr "Тест загрузки и сохранения Lua"
 msgid "Mod for testing Lua save/load API."
 msgstr "Мод для тестирования API сохранения/загрузки с использованием Lua."
 
-#: data/mods/sees_player_hitbutton/modinfo.json
-msgid "sees-player icon, HitButton_iso"
-msgstr "значок видит-ли-игрока, HitButton_iso"
-
-#. ~ Description for sees-player icon, HitButton_iso
-#: data/mods/sees_player_hitbutton/modinfo.json
-msgid ""
-"Adds indicator icon if a creature sees the player.  Designed for the "
-"HitButton isometric tileset."
-msgstr ""
-"Добавляет значок-индикатор, если существо видит игрока. Для изометрического "
-"тайлсета HitButton."
-
-#: data/mods/sees_player_retro/modinfo.json
-msgid "sees-player icon, retrodays"
-msgstr "значок видит-ли-игрока, retrodays"
-
-#. ~ Description for sees-player icon, retrodays
-#: data/mods/sees_player_retro/modinfo.json
-msgid ""
-"Adds indicator icon if a creature sees the player.  Designed for the "
-"retrodays tileset."
-msgstr ""
-"Добавляет значок, если существо видит игрока. Предназначен для тайлсета "
-"retrodays."
-
 #: data/mods/smart_house_remotes/item.json
 msgid "smart house remote"
 msgid_plural "smart house remotes"
@@ -276445,10 +276566,10 @@ msgstr[3] "%3d секунда"
 #, c-format
 msgid "%3d  minute"
 msgid_plural "%3d minutes"
-msgstr[0] "%3d  минута"
-msgstr[1] "%3d  минуты"
-msgstr[2] "%3d   минут"
-msgstr[3] "%3d  минута"
+msgstr[0] "%3d минута"
+msgstr[1] "%3d минуты"
+msgstr[2] "%3d минут"
+msgstr[3] "%3d минуты"
 
 #. ~ Right-aligned time string. should right-align with other strings with
 #. this same comment
@@ -298196,6 +298317,41 @@ msgstr "Нельзя взвешиваться верхом."
 #, c-format
 msgid "ERROR: Max weight of %.0f %s exceeded"
 msgstr "ОШИБКА: Превышен максимальный вес в %.0f %s"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "This item uses up (%.2f) additional charges per tile revealed."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Search for location:"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Please enter at least 3 characters."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Searching…"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "No locations found for \"%s\"."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "Requires %.1f charges, but only %d remaining."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Nothing new to display."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "You add the GPS results to your map."
+msgstr ""
 
 #: src/iuse_actor.cpp
 msgid "You can't see to sew!"
