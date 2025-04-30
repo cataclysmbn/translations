@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-04-29 01:47+0000\n"
+"POT-Creation-Date: 2025-04-30 01:26+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -11062,11 +11062,6 @@ msgstr "이 장비는 <good>근시를 교정</good>합니다."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
-msgid "This item is <bad>filthy</bad>."
-msgstr "이 물품은 <bad>더럽습니다</bad>."
-
-#. ~ Please leave anything in <angle brackets> unchanged.
-#: data/json/flags.json
 msgid ""
 "This clothing <info>prevents going underwater</info> including both "
 "<good>drowning</good> and <bad>diving</bad>."
@@ -12343,18 +12338,6 @@ msgid "Well, you know"
 msgstr "글쎄, 너도 알다시피"
 
 #: data/json/item_actions.json
-msgid "Wash soft items"
-msgstr "부드러운 물품 세탁"
-
-#: data/json/item_actions.json
-msgid "Wash hard items"
-msgstr "단단한 물품 세탁"
-
-#: data/json/item_actions.json
-msgid "Wash items"
-msgstr "물품 세탁하기"
-
-#: data/json/item_actions.json
 msgid "Purify some water"
 msgstr "정수"
 
@@ -13201,19 +13184,8 @@ msgstr "물품: 의류"
 
 #. ~ Description for Loot: Clothing
 #: data/json/loot_zones.json
-msgid ""
-"Destination for clothing.  Does include filthy clothing if such zone is not "
-"specified."
-msgstr "의류를 모아놓는 곳입니다. 따로 지정되지 않았다면, 불결한 의류 또한 이곳에 함께 저장됩니다."
-
-#: data/json/loot_zones.json
-msgid "Loot: F.Clothing"
-msgstr "물품: 불결한 의류"
-
-#. ~ Description for Loot: F.Clothing
-#: data/json/loot_zones.json
-msgid "Destination for filthy clothing."
-msgstr "불결한 의류를 모아놓는 곳입니다."
+msgid "Destination for clothing."
+msgstr ""
 
 #: data/json/loot_zones.json
 msgid "Loot: Drugs"
@@ -16526,7 +16498,7 @@ msgid "Mushroom"
 msgstr "버섯"
 
 #: data/json/materials.json data/json/overmap/overmap_land_use_codes.json
-#: src/game_inventory.cpp src/gamemode_defense.cpp
+#: src/gamemode_defense.cpp
 msgid "Water"
 msgstr "물"
 
@@ -17010,10 +16982,6 @@ msgstr "최근에 살해함"
 #: data/json/morale_types.json
 msgid "Longing to kill"
 msgstr "살해에 목마름"
-
-#: data/json/morale_types.json
-msgid "Filthy Gear"
-msgstr "불결한 장비"
 
 #: data/json/morale_types.json
 msgid "Anguished by memories of butchering human corpse"
@@ -17756,10 +17724,6 @@ msgstr "돌 치우기"
 #: data/json/player_activities.json
 msgid "meditating"
 msgstr "명상"
-
-#: data/json/player_activities.json
-msgid "washing"
-msgstr "씻기"
 
 #: data/json/player_activities.json
 msgid "cutting the metal"
@@ -46582,8 +46546,10 @@ msgstr[0] "세제"
 
 #. ~ Description for {'str_sp': 'detergent'}
 #: data/json/items/chemicals_and_resources.json
-msgid "A popular pre-Cataclysm washing powder."
-msgstr "대재앙 이전의 유명한 브랜드의 세제입니다."
+msgid ""
+"A popular pre-Cataclysm washing powder.  It is used for chemistry "
+"experiments such as manufacturing gelled gasoline."
+msgstr ""
 
 #: data/json/items/chemicals_and_resources.json
 msgid "soap flakes"
@@ -46592,8 +46558,9 @@ msgstr[0] "비누 조각"
 
 #. ~ Description for {'str_sp': 'soap flakes'}
 #: data/json/items/chemicals_and_resources.json
-msgid "A bar of soap cut into flakes suitable for use in a washing machine."
-msgstr "비누를 자른 조각으로 세탁기에 쓰기 알맞습니다."
+msgid ""
+"A bar of soap cut into flakes, it can only be used for varnishing wood now."
+msgstr ""
 
 #: data/json/items/chemicals_and_resources.json
 msgid "lye"
@@ -50216,6 +50183,7 @@ msgstr[0] "시가"
 #. ~ Use action menu_text for {'str': 'joint'}.
 #. ~ Use action menu_text for {'str': "spooky jack o'lantern", 'str_pl': "jack
 #. o'lanterns"}.
+#. ~ Use action menu_text for {'str': 'battletorch'}.
 #. ~ Use action menu_text for {'str': 'refillable lighter'}.
 #. ~ Use action menu_text for {'str': 'ember carrier (lit)', 'str_pl': 'ember
 #. carriers (lit)'}.
@@ -50229,8 +50197,9 @@ msgstr[0] "시가"
 #. 'everburning torches'}.
 #. ~ Use action menu_text for Louisville Slaughterer.
 #: data/json/items/generic.json data/json/items/items_holiday.json
-#: data/json/items/tool/fire.json data/json/items/tool/lighting.json
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
+#: data/json/items/melee/bludgeons.json data/json/items/tool/fire.json
+#: data/json/items/tool/lighting.json data/json/obsoletion/items.json
+#: data/mods/CrazyCataclysm/crazy_items.json
 #: data/mods/MagicalNights/items/enchanted/enchanted_misc.json
 #: data/mods/No_Hope/Items/tools.json
 msgid "Extinguish"
@@ -50953,11 +50922,13 @@ msgid_plural "jack o'lanterns"
 msgstr[0] "잭 오 랜턴"
 
 #. ~ Use action menu_text for {'str': "jack o'lantern"}.
+#. ~ Use action menu_text for {'str': 'battletorch'}.
 #. ~ Use action menu_text for {'str': 'candle'}.
 #. ~ Use action menu_text for {'str': 'Louisville Slaughterer'}.
 #. ~ Use action menu_text for Louisville Slaughterer.
-#: data/json/items/items_holiday.json data/json/items/tool/lighting.json
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
+#: data/json/items/items_holiday.json data/json/items/melee/bludgeons.json
+#: data/json/items/tool/lighting.json
+#: data/mods/CrazyCataclysm/crazy_items.json
 #: data/mods/No_Hope/Items/tools.json src/player_activity.cpp
 #: src/veh_interact.cpp
 msgid "Light"
@@ -93593,15 +93564,17 @@ msgstr ""
 "5.56x45mm 탄의 가벼운 무게를 의미합니다."
 
 #: data/json/items/gun/223.json
-msgid "SIG 552"
-msgid_plural "SIG 552s"
-msgstr[0] "SIG 552"
+msgid "SIG 552 SWAT"
+msgid_plural "SIG 552 SWATs"
+msgstr[0] ""
 
 #: data/json/items/gun/223.json
 msgid ""
-"A compact selective fire automatic rifle designed for the Swiss military.  "
-"It features a three-round burst mode and an integrated folding stock."
-msgstr "스위스 군용 단축형 자동소총. 일체형 접이식 개머리판과 3연발 기능이 특징입니다."
+"A select fire rifle originally made for the Swiss military and redesigned "
+"for American specifications.  This is the shortened version, made with SWAT "
+"teams and vehicle crewmen in mind.  Unlike the European original it features"
+" a STANAG magwell."
+msgstr ""
 
 #: data/json/items/gun/223.json
 msgid "Steyr AUG"
@@ -94510,18 +94483,17 @@ msgid ""
 msgstr ".40 S&W 탄을 사용하는 반자동 소총입니다. 글록 22 탄창과 호환됩니다."
 
 #: data/json/items/gun/40.json
-msgid "KRISS Vector"
-msgid_plural "KRISS Vectors"
-msgstr[0] "크리스 벡터"
+msgid "KRISS Vector .40 S&W"
+msgid_plural "KRISS Vector .40 S&Ws"
+msgstr[0] ""
 
 #: data/json/items/gun/40.json
 msgid ""
-"The KRISS Vector is a submachine gun with a unique, in-line design that "
-"makes recoil very manageable.  It is a evolution of the formally known TDI "
-"Vector, this particullar model uses .40 S&W."
+"A submachine gun with a sleek in-line design.  It features a 2-round burst "
+"mode to make the most out of its unique recoil mitigation system alongside a"
+" blistering full-auto mode.  This one is chambered in .40 S&W and uses Glock"
+" 22 magazines."
 msgstr ""
-"크리스 벡터는 특유의 수직 작동 구조를 채택해 반동을 쉽게 제어할 수 있도록 만든 기관단총입니다. 기존에 알려진 TDI 벡터의 "
-"변형판으로, .40 S&W탄을 사용합니다."
 
 #: data/json/items/gun/40x46mm.json
 msgid "tube 40mm launcher"
@@ -96085,6 +96057,19 @@ msgid ""
 "As a result, it is very lightweight."
 msgstr "3D 프린터를 이용해 만든 기관권총으로, 금속부품이 일절 포함되지 않아 매우 가볍습니다."
 
+#: data/json/items/gun/9mm.json
+msgid "Kriss Vector 9mm"
+msgid_plural "Kriss Vector 9mms"
+msgstr[0] ""
+
+#: data/json/items/gun/9mm.json
+msgid ""
+"A submachine gun with a sleek in-line design.  It features a 2-round burst "
+"mode to make the most out of its unique recoil mitigation system alongside a"
+" blistering full-auto mode.  This one is chambered in 9mm and uses full-size"
+" Glock 17 magazines."
+msgstr ""
+
 #: data/json/items/gun/9x18.json
 msgid "Makarov PM"
 msgid_plural "Makarov PMs"
@@ -96377,6 +96362,32 @@ msgid ""
 msgstr ""
 "리브텍 제의 군용 화염방사기. RM451 화염방사기는 비동기 압력 방식의 고속 연료 분사 시스템과 고속 압전 점화 장치를 장착하고 "
 "있습니다. 견고히 제작된 내구성을 고려하면, 제대로 사용하면 극도로 파괴적인 무기가 사용할 수 있습니다."
+
+#: data/json/items/gun/flammable.json
+msgid "spraycan flamethrower"
+msgid_plural "spraycan flamethrowers"
+msgstr[0] "스프레이캔 화염방사기"
+
+#: data/json/items/gun/flammable.json
+msgid ""
+"A favorite of hooligans around the world, this lighter duct-taped to a spray"
+" can is probably as dangerous to the user as anyone else.  The nozzle has "
+"been crudely modified to disperse gasoline, and a small pump attached to the"
+" side allows for repressurization, though this process takes a few minutes."
+msgstr ""
+"전 세계의 훌리건들이 가장 좋아하는, 덕트테이프로 라이터가 붙여진 이 스프레이캔은 아마도 다른 누구 못지않게 사용자에게 위험할 것입니다."
+" 노즐은 휘발유를 분사하기 위해 조잡하게 개조되었으며, 측면에 부착된 작은 펌프가 재가압을 허용하지만 이 과정은 몇 분 정도 걸립니다."
+
+#: data/json/items/gun/flammable.json
+msgid "simple flamethrower"
+msgid_plural "simple flamethrowers"
+msgstr[0] "간이 화염방사기"
+
+#: data/json/items/gun/flammable.json
+msgid ""
+"A simple, home-made flamethrower.  While its capacity is not superb, it is "
+"more than capable of igniting terrain and monsters alike."
+msgstr "직접 만든 단순한 구조의 화염방사기입니다. 장탄량이 많지는 않지만, 나무나 괴물 등에게 불을 붙일 수 있습니다."
 
 #: data/json/items/gun/flintlock.json
 msgid "flintlock carbine"
@@ -97363,6 +97374,24 @@ msgstr ""
 "전력 전송 기술의 발전으로 코일건이 실용화되었습니다. 이 부품 같은 간이 코일건 개조는 대재앙 이전부터 드물게나마 시위 현장에서 "
 "등장해왔습니다. 그리고 지금은 당신이 살아남는데 도움이 될 것 같군요. 이 부품은 단총열 총기용입니다."
 
+#: data/json/items/gunmod/barrel.json
+msgid "aux flamethrower"
+msgid_plural "aux flamethrowers"
+msgstr[0] "부착형 화염방사기"
+
+#: data/json/items/gunmod/barrel.json
+msgid ""
+"This custom-built miniature flamethrower is made to be attached to most "
+"firearms, greatly expanding its lethality."
+msgstr ""
+
+#: data/json/items/gunmod/barrel.json data/json/items/gunmod/bionicmods.json
+#: data/json/items/gunmod/underbarrel.json
+#: data/mods/CRT_EXPANSION/items/crt_gunmods.json
+#: data/mods/MagicalNights/items/enchanted/enchanted_gunmods.json
+msgid "underbarrel"
+msgstr "총열하단"
+
 #: data/json/items/gunmod/bionicmods.json
 msgid "Power shot"
 msgid_plural "Power shots"
@@ -97373,13 +97402,6 @@ msgid ""
 "This is a pseudo item -- the builtin part of a fusion blaster for the "
 "maximum power firing mode."
 msgstr "이 물품은 가짜입니다 - 퓨전 블래스터의 최대 화력 설정에 사용됩니다."
-
-#: data/json/items/gunmod/bionicmods.json
-#: data/json/items/gunmod/underbarrel.json data/json/obsoletion/items.json
-#: data/mods/CRT_EXPANSION/items/crt_gunmods.json
-#: data/mods/MagicalNights/items/enchanted/enchanted_gunmods.json
-msgid "underbarrel"
-msgstr "총열하단"
 
 #: data/json/items/gunmod/brass_catcher.json
 msgid "brass catcher"
@@ -97652,6 +97674,40 @@ msgid ""
 "A set of seals and gaskets that will allow a firearm to operate reliably "
 "while submerged in water."
 msgstr "물에 잠긴 화기가 안정적으로 작동할 수 있게 해주는 밀봉재와 개스킷 세트입니다."
+
+#: data/json/items/gunmod/mechanism.json
+msgid "G36 STANAG adapter"
+msgid_plural "G36 STANAG adapters"
+msgstr[0] ""
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A custom magwell which is installed into the lower receiver of a G36 to "
+"enable the use of most STANAG magazines save for the largest ones."
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "hk_g36"
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgid "AUG NATO conversion kit"
+msgid_plural "AUG NATO conversion kits"
+msgstr[0] ""
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A STANAG sized magwell and a modified trigger group to facilitate the use of"
+" STANAG magazines on an AUG rifle.  Most versions of the rifle come with "
+"this out of the factory as the A3 variant but it's quite simple to convert "
+"the older variants.  Fits all but the largest STANAG magazines."
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "steyr_aug"
+msgstr ""
 
 #: data/json/items/gunmod/mechanism.json
 msgid "steel prod"
@@ -99787,14 +99843,17 @@ msgid "A 10-round steel box magazine for use with the Hi-Point Model JCP."
 msgstr "하이-포인트 JCP 모델에 사용되는 10발들이 철제 박스 탄창입니다."
 
 #: data/json/items/magazine/40.json
-msgid "KRISS Vector magazine"
-msgid_plural "KRISS Vector magazines"
-msgstr[0] "크리스 벡터 탄창"
+msgid "KRISS Vector .40 S&W/.357 SIG magazine"
+msgid_plural "KRISS Vector .40 S&W/.357 SIG magazines"
+msgstr[0] ""
 
-#. ~ Description for {'str': 'KRISS Vector magazine'}
+#. ~ Description for {'str': 'KRISS Vector .40 S&W/.357 SIG magazine'}
 #: data/json/items/magazine/40.json
-msgid "A 30-round steel box magazine for use with the KRISS Vector"
-msgstr "크리스 벡터에 사용되는 30발들이 철제 박스 탄창입니다."
+msgid ""
+"A 32-round modified Glock 22 magazine with a +17 MagEx kit installed, "
+"intended to be used with a KRISS Vector in .40 S&W.  Can also fit in a Glock"
+" 22."
+msgstr ""
 
 #: data/json/items/magazine/40mm.json
 #: data/mods/Generic_Guns/vehicles/ammo_redefine_hacks/temp_magazine_json_load_hack.json
@@ -99882,14 +99941,16 @@ msgstr ""
 "MAC-10 기관단총에 사용되는 20발들이 급조 단열 박스 탄창.  구부러진 강철판을 접착 테이프와 희망으로 붙여 만들었습니다."
 
 #: data/json/items/magazine/45.json
-msgid "TDI Vector magazine"
-msgid_plural "TDI Vector magazines"
-msgstr[0] "TDI Vector 탄창"
+msgid "Kriss Vector .45ACP magazine"
+msgid_plural "Kriss Vector .45ACP magazines"
+msgstr[0] ""
 
-#. ~ Description for {'str': 'TDI Vector magazine'}
+#. ~ Description for {'str': 'Kriss Vector .45ACP magazine'}
 #: data/json/items/magazine/45.json
-msgid "A 30-round steel box magazine for use with the TDI Vector"
-msgstr "TDI 벡터에 사용되는 30발들이 철제 박스 탄창입니다."
+msgid ""
+"A 30-round modified Glock 21 magazine with a +17 MagEx kit installed, "
+"intended to be used with a KRISS Vector .45ACP.  Can also fit in a Glock 21."
+msgstr ""
 
 #: data/json/items/magazine/45.json
 msgid "Thompson extended magazine"
@@ -100745,6 +100806,18 @@ msgstr[0] "CCP 탄창"
 #: data/json/items/magazine/9mm.json
 msgid "An 8-round steel box magazine for use with the Walther CCP."
 msgstr "발터 CCP에 사용되는 8발들이 철제 박스 탄창입니다."
+
+#: data/json/items/magazine/9mm.json
+msgid "Kriss Vector 9mm magazine"
+msgid_plural "Kriss Vector 9mm magazines"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'Kriss Vector 9mm magazine'}
+#: data/json/items/magazine/9mm.json
+msgid ""
+"A 40-round modified Glock 17 magazine with a +23 MagEx kit installed, "
+"intended to be used with a KRISS Vector 9mm.  Can also fit in a Glock 19."
+msgstr ""
 
 #: data/json/items/magazine/9x18.json
 msgid "Makarov PM magazine"
@@ -101938,6 +102011,69 @@ msgstr ""
 " 전장에서 만들어진 간이 무기는 충세 농민들이 사용한 지팡이에서 제1차 세계대전 당시의 참호 몽둥이에 이르기까지 기나긴 역사를 갖고 "
 "있습니다. 간이 무기가 그들을 살렸듯, 이 지팡이가 당신을 살리기를 바랄 뿐입니다."
 
+#: data/json/items/melee/bludgeons.json
+msgid "burnt out battletorch"
+msgid_plural "burnt out battletorchs"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'burnt out battletorch'}
+#. ~ Description for {'str': 'burnt out Louisville Slaughterer'}
+#. ~ Description for burnt out Louisville Slaughterer
+#: data/json/items/melee/bludgeons.json
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/generic.json
+msgid ""
+"A sturdy wood bat, wrapped in flame-resistant Nomex fabric.  Makes a good "
+"melee weapon but better be disassembled to recycle the baseball bat and some"
+" Nomex patches."
+msgstr ""
+"튼튼한 나무 방망이를 가솔린에 적신 천조각과 내화성 노멕스 원단으로 감싼 물건입니다. 쓸만한 근접무기지만, 분해해서 야구방망이와 노멕스 "
+"조각을 재활용하는게 낫겠습니다."
+
+#: data/json/items/melee/bludgeons.json
+msgid "battletorch"
+msgid_plural "battletorchs"
+msgstr[0] ""
+
+#. ~ Use action msg for {'str': 'battletorch'}.
+#: data/json/items/melee/bludgeons.json
+msgid "You light the battletorch."
+msgstr ""
+
+#. ~ Description for {'str': 'battletorch'}
+#. ~ Description for {'str': 'Louisville Slaughterer'}
+#. ~ Description for Louisville Slaughterer
+#: data/json/items/melee/bludgeons.json
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/tools.json
+msgid ""
+"This is sturdy wood bat, wrapped in gasoline-soaked rags and flame-resistant"
+" Nomex fabric.  Light it, and the ball game will REALLY heat up.  You'll "
+"need a lighter or matches to light it."
+msgstr ""
+"튼튼한 나무 방망이를 가솔린에 적신 천조각과 내화성 노멕스 원단으로 감싼 물건입니다. 불을 붙이면 이번 싸움이 정말 화끈해질겁니다. "
+"라이터나 성냥이 있어야 불을 붙일 수 있습니다."
+
+#. ~ Use action msg for {'str': 'battletorch'}.
+#: data/json/items/melee/bludgeons.json
+msgid "The battletorch is extinguished."
+msgstr ""
+
+#. ~ Description for {'str': 'battletorch'}
+#. ~ Description for {'str': 'Louisville Slaughterer'}
+#. ~ Description for Louisville Slaughterer
+#: data/json/items/melee/bludgeons.json
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/tools.json
+msgid ""
+"This is a sturdy wood bat, wrapped in gasoline-soaked rags and flame-"
+"resistant Nomex fabric.  It is burning brightly, and makes it much easier to"
+" see the baselines at night games (It also makes the umpire FAR more likely "
+"to call a ball instead of a strike)."
+msgstr ""
+"튼튼한 나무 방망이를 가솔린에 적신 천조각과 내화성 노멕스 원단으로 감싼 물건입니다. 환하게 타오르고 있으며, 야간 경기 중에 "
+"베이스라인을 보는게 훨씬 쉬워질 것 같습니다 (덤으로 스트라이크 대신 볼이 훨씬 더 많이 나오겠고요)."
+
 #: data/json/items/melee/fake.json
 msgid "bionic claws"
 msgid_plural "bionic claws"
@@ -102778,15 +102914,12 @@ msgstr[0] "RM42 전투용 나이프"
 #. knives'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
-"This sturdy matte black Rivtech combat dagger features a long and slim "
-"double-edged blade with a spear-point and a distinctive slip-resistant grip "
-"which can also be used to affix it to a suitable firearm.  Originally "
-"manufactured for the military, it was very popular in films and among "
-"collectors due to its fearsome appearance."
+"This matte black Rivtech combat dagger features a long double-edged blade "
+"converging to a spear-point and a distinctive slip-resistant grip with low-"
+"profile grooves to affix to a firearm.  Improving on the design of the "
+"legendary Fairbarn-Sykes dagger with new materials, it was very popular in "
+"films and among collectors due to its fearsome appearance."
 msgstr ""
-"리브텍사의 검은색으로 무광 처리된 견고한 전투용 단검. 뾰족한 칼끝과 길고 가는 양날을 가지고 있으며, 손잡이에 미끄럼 방지 처리와 함께"
-" 착검용 장치가 있습니다. 본래 군용으로 생산된 이 단검은 무시무시한 외관 때문에 영화에서 자주 쓰였으며, 수집가들 사이에서도 인기가 "
-"많습니다."
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "Swiss Army knife"
@@ -104204,6 +104337,91 @@ msgid ""
 "This shortsword is carved from a large chunk of bone set in a wooden haft, "
 "and is capable of slicing foes in with swiftness and efficiency."
 msgstr "단단한 뼈를 깎아 만든 칼날에 나무 손잡이를 단 숏소드로, 적을 빠르고 효율적으로 베어낼 수 있습니다."
+
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "shishkebab (off)"
+msgid_plural "shishkebabs (off)"
+msgstr[0] "쉬쉬케밥 (꺼짐)"
+
+#. ~ Use action failure_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "The igniter clicks, but nothing catches."
+msgstr ""
+
+#. ~ Use action lacks_fuel_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You hear a sputter—it's dry. No fuel left."
+msgstr ""
+
+#. ~ Use action success_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "A burst of flame roars to life, crawling along the blade."
+msgstr ""
+
+#. ~ Description for {'str': 'shishkebab (off)', 'str_pl': 'shishkebabs
+#. (off)'}
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/No_Hope/Items/tools.json
+msgid ""
+"This is a large blade with a fuel pipe on the side, and a small tank and "
+"igniter built into the insulated hilt.  When filled with gasoline, the blade"
+" can be made scorching hot to singe enemies and light your way.  Use to "
+"ignite."
+msgstr ""
+"옆에 연료 파이프와 점화기, 소형 탱크가 붙어 있는 큰 칼. 휘발유를 채우고 불을 붙이면 눈부시게 빛나며 적을 불태우고 길을 밝혀줍니다."
+" 사용하면 점화됩니다."
+
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "shishkebab (on)"
+msgid_plural "shishkebabs (on)"
+msgstr[0] "쉬쉬케밥 (켜짐)"
+
+#. ~ Use action auto_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "The flame sputters, then dies with a faint hiss."
+msgstr ""
+
+#. ~ Use action charges_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "The fuel runs dry. The flame gutters and dies in an instant."
+msgstr ""
+
+#. ~ Use action noise_message for {'str': 'shishkebab (on)', 'str_pl':
+#. 'shishkebabs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "The shishkebab crackles as flames whip along its edge."
+msgstr ""
+
+#. ~ Use action voluntary_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You shut it down. The flame gutters out."
+msgstr ""
+
+#. ~ Use action water_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "Your shishkebab hisses in the water and goes out."
+msgstr "쉬쉬케밥이 물 속에서 칙칙 소리를 내더니 꺼졌다."
+
+#. ~ Description for {'str': 'shishkebab (on)', 'str_pl': 'shishkebabs (on)'}
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/No_Hope/Items/tools.json
+msgid ""
+"This is a large blade with a fuel pipe on the side, and a small tank and "
+"igniter built into the insulated hilt.  The blade is glowing brightly.  Use "
+"to shut off the gas."
+msgstr ""
+"옆에 연료 파이프와 점화기, 소형 탱크가 붙어 있는 큰 칼. 휘발유를 채우고 불을 붙이면 눈부시게 빛나며 적을 불태우고 길을 밝혀줍니다."
+" 날이 밝게 불타오르고 있습니다. 사용하면 꺼집니다."
 
 #: data/json/items/melee/unarmed_weapons.json
 msgid "tiger claws"
@@ -131705,17 +131923,6 @@ msgid "Lets you run or swim forever (in other words, until you fix that bug)."
 msgstr "하루종일도 달리고 수영할 수 있습니다! (다시 말하면, 버그를 고칠 때까지 하루종일 달리고 헤엄치라는 뜻입니다.)"
 
 #: data/json/mutations/mutations.json
-msgid "Squeamish"
-msgstr "결벽증"
-
-#. ~ Description for {'str': 'Squeamish'}
-#: data/json/mutations/mutations.json
-msgid ""
-"You can't even think about putting filthy clothes on yourself, especially "
-"from zombies' corpses."
-msgstr "당신에게 있어 불결한 옷을 입는다는 건 상상도 못할 일입니다. 그게 좀비 시체에서 벗긴 옷이라면 더욱 그렇습니다."
-
-#: data/json/mutations/mutations.json
 msgid "Bee"
 msgstr "벌"
 
@@ -137054,14 +137261,6 @@ msgid ""
 msgstr ""
 "짐을 나를 수 있게 개한테 가방을 입혀두려고 했어. 근데 내 생각대로는 잘 안됐던게, 내 개는 치와와였고, 로트와일러한테 뜯어먹혔지. "
 "좀비 군견들이 입고 다니는 것 같은 케블라를 씌웠어야 했는데. 젠장…"
-
-#: data/json/npcs/hints.json
-msgid ""
-"Stuff from zombies is filthy but perfectly fine otherwise.  Using soap or "
-"other detergents won't hurt you.  Quick wash and you're equipped for days."
-msgstr ""
-"좀비한테서 얻어낸 것들은 더럽지만, 그 외에는 별 문제 없어. 비누나 뭐 그런 세제들을 쓰면 될거야. 재빨리 세탁하면 오래오래 입을 수 "
-"있지."
 
 #: data/json/npcs/hints.json
 msgid ""
@@ -160541,21 +160740,6 @@ msgid ""
 "reliably of a firearm."
 msgstr "화기의 정밀도와 신뢰성을 높여줄 미세 조정 내장 부품 세트입니다."
 
-#: data/json/obsoletion/items.json
-msgid "spraycan flamethrower"
-msgid_plural "spraycan flamethrowers"
-msgstr[0] "스프레이캔 화염방사기"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A favorite of hooligans around the world, this lighter duct-taped to a spray"
-" can is probably as dangerous to the user as anyone else.  The nozzle has "
-"been crudely modified to disperse gasoline, and a small pump attached to the"
-" side allows for repressurization, though this process takes a few minutes."
-msgstr ""
-"전 세계의 훌리건들이 가장 좋아하는, 덕트테이프로 라이터가 붙여진 이 스프레이캔은 아마도 다른 누구 못지않게 사용자에게 위험할 것입니다."
-" 노즐은 휘발유를 분사하기 위해 조잡하게 개조되었으며, 측면에 부착된 작은 펌프가 재가압을 허용하지만 이 과정은 몇 분 정도 걸립니다."
-
 #: data/json/obsoletion/items.json data/json/obsoletion/uncategorized.json
 msgid "Magnesium Supplements"
 msgstr "마그네슘 보충제"
@@ -160583,17 +160767,6 @@ msgid ""
 "Space inside your chest cavity has been converted into a storage area.  You "
 "may carry an extra 2 liters of volume."
 msgstr "상체 내부 공간을 저장공간으로 개조하였습니다. 2리터 만큼의 저장공간을 추가로 얻습니다."
-
-#: data/json/obsoletion/items.json
-msgid "simple flamethrower"
-msgid_plural "simple flamethrowers"
-msgstr[0] "간이 화염방사기"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A simple, home-made flamethrower.  While its capacity is not superb, it is "
-"more than capable of igniting terrain and monsters alike."
-msgstr "직접 만든 단순한 구조의 화염방사기입니다. 장탄량이 많지는 않지만, 나무나 괴물 등에게 불을 붙일 수 있습니다."
 
 #: data/json/obsoletion/items.json
 msgid "homemade laser pistol"
@@ -161224,86 +161397,6 @@ msgstr ""
 "접착 테이프, 그리고 이것에 대한 신뢰뿐입니다."
 
 #: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "shishkebab (off)"
-msgid_plural "shishkebabs (off)"
-msgstr[0] "쉬쉬케밥 (꺼짐)"
-
-#. ~ Use action failure_message for {'str': 'shishkebab (off)', 'str_pl':
-#. 'shishkebabs (off)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Aw, dangit.  It fails to start!"
-msgstr "빌어먹을... 켜지지가 않는다!"
-
-#. ~ Use action lacks_fuel_message for {'str': 'shishkebab (off)', 'str_pl':
-#. 'shishkebabs (off)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "This thing needs some fuel!"
-msgstr "연료가 부족해 켤 수 없다!"
-
-#. ~ Use action success_message for {'str': 'shishkebab (off)', 'str_pl':
-#. 'shishkebabs (off)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Let's dance, Zeds!"
-msgstr "불이 타오른다. 좀비 놈들과 신나게 춤출 준비가 되었다!"
-
-#. ~ Description for {'str': 'shishkebab (off)', 'str_pl': 'shishkebabs
-#. (off)'}
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid ""
-"This is a large blade with a fuel pipe on the side, and a small tank and "
-"igniter built into the insulated hilt.  When filled with gasoline, the blade"
-" can be made scorching hot to singe enemies and light your way.  Use to "
-"ignite."
-msgstr ""
-"옆에 연료 파이프와 점화기, 소형 탱크가 붙어 있는 큰 칼. 휘발유를 채우고 불을 붙이면 눈부시게 빛나며 적을 불태우고 길을 밝혀줍니다."
-" 사용하면 점화됩니다."
-
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "shishkebab (on)"
-msgid_plural "shishkebabs (on)"
-msgstr[0] "쉬쉬케밥 (켜짐)"
-
-#. ~ Use action auto_extinguish_message for {'str': 'shishkebab (on)',
-#. 'str_pl': 'shishkebabs (on)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Bummer, man!  Your shishkebab's flame flickers and dies out."
-msgstr "게으르기는... 쯧쯧. 쉬쉬케밥의 불이 깜박이더니 꺼졌다."
-
-#. ~ Use action charges_extinguish_message for {'str': 'shishkebab (on)',
-#. 'str_pl': 'shishkebabs (on)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Uncool, outta gas!  Your shishkebab's flame goes out."
-msgstr "연료가 없다! 쉬쉬케밥의 불이 꺼졌다."
-
-#. ~ Use action noise_message for {'str': 'shishkebab (on)', 'str_pl':
-#. 'shishkebabs (on)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Your shishkebab crackles!"
-msgstr "쉬쉬케밥에서 딱딱거리며 불타는 소리가 난다!"
-
-#. ~ Use action voluntary_extinguish_message for {'str': 'shishkebab (on)',
-#. 'str_pl': 'shishkebabs (on)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Peace out.  Your shishkebab's flame dies."
-msgstr "친구여, 안녕. 쉬쉬케밥의 불을 껐다."
-
-#. ~ Use action water_extinguish_message for {'str': 'shishkebab (on)',
-#. 'str_pl': 'shishkebabs (on)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Your shishkebab hisses in the water and goes out."
-msgstr "쉬쉬케밥이 물 속에서 칙칙 소리를 내더니 꺼졌다."
-
-#. ~ Description for {'str': 'shishkebab (on)', 'str_pl': 'shishkebabs (on)'}
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid ""
-"This is a large blade with a fuel pipe on the side, and a small tank and "
-"igniter built into the insulated hilt.  The blade is glowing brightly.  Use "
-"to shut off the gas."
-msgstr ""
-"옆에 연료 파이프와 점화기, 소형 탱크가 붙어 있는 큰 칼. 휘발유를 채우고 불을 붙이면 눈부시게 빛나며 적을 불태우고 길을 밝혀줍니다."
-" 날이 밝게 불타오르고 있습니다. 사용하면 꺼집니다."
-
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
 msgid "No. 9"
 msgid_plural "No. 9's"
 msgstr[0] "No. 9"
@@ -161572,69 +161665,6 @@ msgstr ""
 msgid "Dein Schwert zischt und erlischt."
 msgstr ""
 
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/generic.json
-msgid "burnt out Louisville Slaughterer"
-msgid_plural "burnt out Louisville Slaughterers"
-msgstr[0] "타버린 루이빌 학살자"
-
-#. ~ Description for {'str': 'burnt out Louisville Slaughterer'}
-#. ~ Description for burnt out Louisville Slaughterer
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/generic.json
-msgid ""
-"A sturdy wood bat, wrapped in flame-resistant Nomex fabric.  Makes a good "
-"melee weapon but better be disassembled to recycle the baseball bat and some"
-" Nomex patches."
-msgstr ""
-"튼튼한 나무 방망이를 가솔린에 적신 천조각과 내화성 노멕스 원단으로 감싼 물건입니다. 쓸만한 근접무기지만, 분해해서 야구방망이와 노멕스 "
-"조각을 재활용하는게 낫겠습니다."
-
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/tools.json
-msgid "Louisville Slaughterer"
-msgid_plural "Louisville Slaughterers"
-msgstr[0] "루이빌 학살자"
-
-#. ~ Use action msg for {'str': 'Louisville Slaughterer'}.
-#. ~ Use action msg for Louisville Slaughterer.
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/tools.json
-msgid "You light the Louisville Slaughterer."
-msgstr "루이빌 학살자에 불을 붙입니다."
-
-#. ~ Description for {'str': 'Louisville Slaughterer'}
-#. ~ Description for Louisville Slaughterer
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/tools.json
-msgid ""
-"This is sturdy wood bat, wrapped in gasoline-soaked rags and flame-resistant"
-" Nomex fabric.  Light it, and the ball game will REALLY heat up.  You'll "
-"need a lighter or matches to light it."
-msgstr ""
-"튼튼한 나무 방망이를 가솔린에 적신 천조각과 내화성 노멕스 원단으로 감싼 물건입니다. 불을 붙이면 이번 싸움이 정말 화끈해질겁니다. "
-"라이터나 성냥이 있어야 불을 붙일 수 있습니다."
-
-#. ~ Use action msg for {'str': 'Louisville Slaughterer'}.
-#. ~ Use action msg for Louisville Slaughterer.
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/tools.json
-msgid "The Louisville Slaughterer is extinguished."
-msgstr "루이빌 학살자에 붙은 불이 꺼졌습니다."
-
-#. ~ Description for {'str': 'Louisville Slaughterer'}
-#. ~ Description for Louisville Slaughterer
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/tools.json
-msgid ""
-"This is a sturdy wood bat, wrapped in gasoline-soaked rags and flame-"
-"resistant Nomex fabric.  It is burning brightly, and makes it much easier to"
-" see the baselines at night games (It also makes the umpire FAR more likely "
-"to call a ball instead of a strike)."
-msgstr ""
-"튼튼한 나무 방망이를 가솔린에 적신 천조각과 내화성 노멕스 원단으로 감싼 물건입니다. 환하게 타오르고 있으며, 야간 경기 중에 "
-"베이스라인을 보는게 훨씬 쉬워질 것 같습니다 (덤으로 스트라이크 대신 볼이 훨씬 더 많이 나오겠고요)."
-
 #: data/json/obsoletion/items.json data/mods/No_Hope/Items/guns.json
 msgid "L2037 Backup"
 msgid_plural "L2037 Backups"
@@ -161699,17 +161729,6 @@ msgid ""
 "A Leadworks built in heavy duty barrel especially designed for prolonged "
 "shooting.  Increases damage output and weapon range."
 msgstr ""
-
-#: data/json/obsoletion/items.json
-msgid "aux flamethrower"
-msgid_plural "aux flamethrowers"
-msgstr[0] "부착형 화염방사기"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"This custom-built miniature flamethrower is made to be attached to almost "
-"any sort of firearm, greatly expanding its lethality."
-msgstr "이 맞춤형 소형 화염방사기는 화기의 살상력을 높이기 위해 거의 모든 종류의 화기에 장착할 수 있도록 만들어졌습니다."
 
 #: data/json/obsoletion/items.json
 msgid "RDX sand bomb"
@@ -180607,22 +180626,15 @@ msgstr "소형 냉장고입니다. 작동되면 내부 음식을 냉각시켜, �
 #. ~ Description for {'str': 'washing machine'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
-"A small washing machine.  With detergent, water, and some electrical power, "
-"you could clean a lot of clothes.  'e'xamine the tile with the washing "
-"machine to use it."
+"A small washing machine.  It's only good for salvage, or decorating your "
+"vehicle."
 msgstr ""
-"소형 세탁기입니다. 세제, 물, 전력이 공급되면 상당한 양의 의복을 세탁할 수 있습니다. 사용하려면 세탁기가 위치한 타일을 "
-"조사(e)하세요."
 
 #. ~ Description for {'str': 'dishwasher'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
-"A small dishwasher.  With detergent, water, and some electrical power, you "
-"could clean your dishes…  Or something more useful like a CBM dripping with "
-"zombie gore.  'e'xamine the tile with the dishwasher to use it."
+"A small dishwasher.  It's only good for salvage, or decorating your vehicle."
 msgstr ""
-"소형 식기세척기입니다. 세제, 물, 전력이 공급되면 설거지거리를 세척할 수 있습니다... 물론 좀 더 유용한 것들도 세척할 수 있습니다."
-" 좀비 찌꺼기가 뚝뚝 떨어지는 CBM 같은 것 말이죠. 사용하려면 식기세척기가 위치한 타일을 조사(e)하세요."
 
 #. ~ Description for {'str': 'autoclave'}
 #: data/json/vehicleparts/vehicle_parts.json
@@ -192503,6 +192515,32 @@ msgid ""
 msgstr ""
 "Ein großes zweihändiges Schwert aus Deutschland, an dessen Klinge sich, unter Zuführung von Benzin, eine anhaltende Flamme erzeugen lässt.  Es ist eine sehr mächtige Waffe.\n"
 "(독일에서 온 양손 검으로서, 칼날에 가솔린을 첨가하여 지속적인 불꽃을 낼 수 있습니다. 매우 강력한 무기입니다.)"
+
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/generic.json
+msgid "burnt out Louisville Slaughterer"
+msgid_plural "burnt out Louisville Slaughterers"
+msgstr[0] "타버린 루이빌 학살자"
+
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "Louisville Slaughterer"
+msgid_plural "Louisville Slaughterers"
+msgstr[0] "루이빌 학살자"
+
+#. ~ Use action msg for {'str': 'Louisville Slaughterer'}.
+#. ~ Use action msg for Louisville Slaughterer.
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "You light the Louisville Slaughterer."
+msgstr "루이빌 학살자에 불을 붙입니다."
+
+#. ~ Use action msg for {'str': 'Louisville Slaughterer'}.
+#. ~ Use action msg for Louisville Slaughterer.
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "The Louisville Slaughterer is extinguished."
+msgstr "루이빌 학살자에 붙은 불이 꺼졌습니다."
 
 #. ~ Description for {'str': 'shocker zombie'}
 #: data/mods/CrazyCataclysm/crazy_monsters.json
@@ -220668,15 +220706,6 @@ msgstr "이성을 잃은 자 제거"
 msgid "Removes all feral humans from the game."
 msgstr "게임에서 이성을 잃은 자들을 제거합니다."
 
-#: data/mods/No_Filthy_Clothes/modinfo.json
-msgid "No Filthy Clothing"
-msgstr "더러운 옷 금지"
-
-#. ~ Description for No Filthy Clothing
-#: data/mods/No_Filthy_Clothes/modinfo.json
-msgid "Clothes dropped by zombies will be completely clean."
-msgstr "좀비들이 떨어뜨리는 옷이 깨끗해집니다"
-
 #: data/mods/No_Flaming_Weapons/modinfo.json
 msgid "No Flaming Weapons"
 msgstr "화염 무기 제거"
@@ -221461,6 +221490,48 @@ msgid ""
 "A 21-round polymer magazine for Leadworks LLC 9x19mm firearms.  Lightweight "
 "and reliable but somewhat more difficult to reload."
 msgstr "리드워크 사의 9x19mm 총기용 21발들이 폴리머 탄창입니다. 가볍고 믿음직하지만 재장전하기 조금 어렵습니다."
+
+#. ~ Use action failure_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Aw, dangit.  It fails to start!"
+msgstr "빌어먹을... 켜지지가 않는다!"
+
+#. ~ Use action lacks_fuel_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "This thing needs some fuel!"
+msgstr "연료가 부족해 켤 수 없다!"
+
+#. ~ Use action success_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Let's dance, Zeds!"
+msgstr "불이 타오른다. 좀비 놈들과 신나게 춤출 준비가 되었다!"
+
+#. ~ Use action auto_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Bummer, man!  Your shishkebab's flame flickers and dies out."
+msgstr "게으르기는... 쯧쯧. 쉬쉬케밥의 불이 깜박이더니 꺼졌다."
+
+#. ~ Use action charges_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Uncool, outta gas!  Your shishkebab's flame goes out."
+msgstr "연료가 없다! 쉬쉬케밥의 불이 꺼졌다."
+
+#. ~ Use action noise_message for {'str': 'shishkebab (on)', 'str_pl':
+#. 'shishkebabs (on)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Your shishkebab crackles!"
+msgstr "쉬쉬케밥에서 딱딱거리며 불타는 소리가 난다!"
+
+#. ~ Use action voluntary_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Peace out.  Your shishkebab's flame dies."
+msgstr "친구여, 안녕. 쉬쉬케밥의 불을 껐다."
 
 #: data/mods/No_Hope/Mapgen/map_extras/map_extras.json
 msgid "Bandit Ambush"
@@ -223700,12 +223771,10 @@ msgstr[0] "공간이동 네트워크 기초"
 #. ~ Description for {'str_sp': 'Teleporter network schematics'}
 #: data/mods/teleportation_mod/item.json
 msgid ""
-"A disjointed collection of lab book pages , post-it notes, and computer "
-"printouts containing some funky physics equations and circuit diagrams. They"
-" seem to be describing some form of stable teleportation technology."
+"A disjointed collection of lab book pages, post-it notes, and computer "
+"printouts containing some funky physics equations and circuit diagrams.  "
+"They seem to be describing some form of stable teleportation technology."
 msgstr ""
-"괴상한 물리방정식과 회로도가 포함된 물리학 연구 논문, 포스트잇, 컴퓨터 출력물을 엉망진창으로 모아놓은 모음집입니다. 안정적인 공간이동 "
-"기술의 일종을 묘사하고 있는 것 같습니다."
 
 #: data/mods/teleportation_mod/iuse.json
 msgid "Activate the teleporter network."
@@ -225653,7 +225722,7 @@ msgstr "삭제"
 
 #: data/raw/keybindings/keybindings.json src/character.cpp
 #: src/inventory_ui.cpp src/monexamine.cpp src/npctalk_funcs.cpp
-#: src/pickup.cpp src/vehicle_use.cpp
+#: src/pickup.cpp
 msgid "Cancel"
 msgstr "취소"
 
@@ -227500,20 +227569,6 @@ msgstr "<npcname>(이)가 %s에 몇가지 물품을 넣었습니다."
 #, c-format
 msgid "Some items tumble to the %s."
 msgstr "몇몇 물품이 %s(으)로 굴러떨어졌습니다."
-
-#: src/activity_item_handling.cpp src/iuse.cpp
-#, c-format
-msgid "You need %1$i charges of water or clean water to wash these items."
-msgstr "이 물품들을 세탁하려면 %1$i 단위의 물 또는 깨끗한 물이 필요합니다."
-
-#: src/activity_item_handling.cpp src/iuse.cpp
-#, c-format
-msgid "You need %1$i charges of cleansing agent to wash these items."
-msgstr "이 물품들을 세탁하려면 %1$i 단위의 세정제가 필요합니다."
-
-#: src/activity_item_handling.cpp
-msgid "You washed your items."
-msgstr "물품을 씻어냈습니다."
 
 #: src/activity_item_handling.cpp
 msgid "The pet has moved somewhere else."
@@ -231988,10 +232043,6 @@ msgid "Can't wear that, it's made of wool!"
 msgstr "그건 못 입습니다. 양모 재질이잖아요!"
 
 #: src/character.cpp
-msgid "Can't wear that, it's filthy!"
-msgstr "그건 못 입습니다. 너무 더럽잖아요!"
-
-#: src/character.cpp
 #, c-format
 msgid "Your %s mutation prevents you from wearing your %s."
 msgstr "당신의 %s 돌연변이로 인해 %s(을)를 입을 수 없습니다."
@@ -232995,10 +233046,6 @@ msgstr "<npcname>(이)가 %s에게 붙잡혔다!"
 #, c-format
 msgid "You are grabbed by %s!"
 msgstr "%s에게 붙잡혔다!"
-
-#: src/character.cpp
-msgid "Filth from your clothing has implanted deep in the wound."
-msgstr "옷에 묻은 오물이 상처 깊숙한 곳에 들어갔습니다."
 
 #: src/character.cpp
 #, c-format
@@ -241532,26 +241579,6 @@ msgid "You have nothing to drop."
 msgstr "버릴만한 것이 없습니다."
 
 #: src/game_inventory.cpp
-msgid "Cleanser"
-msgstr "세제"
-
-#: src/game_inventory.cpp
-msgid "ITEMS TO CLEAN"
-msgstr "세탁할 물품"
-
-#: src/game_inventory.cpp
-msgid "Multiclean"
-msgstr "여러가지 세탁하기"
-
-#: src/game_inventory.cpp
-msgid "To clean x items, type a number before selecting."
-msgstr "같은 물건을 여러 개 세탁하려면, 숫자를 입력한 뒤에 선택하세요."
-
-#: src/game_inventory.cpp
-msgid "You have nothing to clean."
-msgstr "세탁할만한 것이 없습니다."
-
-#: src/game_inventory.cpp
 msgid "Select two items to compare them."
 msgstr "비교할 물건 두 개를 선택하세요."
 
@@ -241700,10 +241727,6 @@ msgstr "상위 버전을 설치하였습니다."
 #: src/game_inventory.cpp
 msgid "CBM is not compatible with patient."
 msgstr "이 바이오닉은 피시술자에게 호환되지 않습니다."
-
-#: src/game_inventory.cpp
-msgid "CBM is filthy.  Wash it first."
-msgstr "바이오닉이 오염되었습니다. 세척한 뒤에 다시 시도해주세요."
 
 #: src/game_inventory.cpp
 msgid "Sterilization"
@@ -243483,7 +243506,7 @@ msgstr ""
 msgid "Select an action"
 msgstr "행동 선택"
 
-#: src/iexamine.cpp src/vehicle_use.cpp
+#: src/iexamine.cpp
 msgid "Get items"
 msgstr "물건 줍기"
 
@@ -247449,10 +247472,6 @@ msgid " (poor fit)"
 msgstr " (불편함)"
 
 #: src/item.cpp
-msgid " (filthy)"
-msgstr " (불결함)"
-
-#: src/item.cpp
 msgid " (sterile)"
 msgstr " (멸균됨)"
 
@@ -251047,14 +251066,6 @@ msgstr "그곳에 놓을 수 없습니다."
 msgid "You set down the ladder."
 msgstr "사다리를 설치했다."
 
-#: src/iuse.cpp src/iuse_actor.cpp
-msgid "You can't see to do that!"
-msgstr "보이질 않아 할 수 없습니다!"
-
-#: src/iuse.cpp
-msgid "You're carrying too much to clean anything."
-msgstr "뭔가 세탁하기에는 짐이 너무 많습니다."
-
 #: src/iuse.cpp
 msgid "You take some weak antibiotics."
 msgstr "약한 항생제를 복용합니다."
@@ -252041,6 +252052,10 @@ msgid "<npcname> can't do that while mounted."
 msgstr "<npcname>(은)는 탑승 중에 그걸 할 수 없습니다."
 
 #: src/iuse_actor.cpp
+msgid "You can't see to do that!"
+msgstr "보이질 않아 할 수 없습니다!"
+
+#: src/iuse_actor.cpp
 msgid "Your tool does not have enough charges to do that."
 msgstr "도구의 충전량이 부족해서 할 수 없습니다."
 
@@ -252130,10 +252145,6 @@ msgstr "연습중"
 #, c-format
 msgid "Repair %s"
 msgstr "%s 수리"
-
-#: src/iuse_actor.cpp
-msgid "You can't use filthy items for healing."
-msgstr "치료하는데 소독도 되지 않은 물건을 쓸 수는 없습니다."
 
 #: src/iuse_actor.cpp
 msgid "The bleeding is stopped."
@@ -254727,21 +254738,6 @@ msgstr "쇠창살이 녹아내립니다!"
 #: src/map.cpp
 msgid "swish"
 msgstr "휙"
-
-#: src/map.cpp
-#, c-format
-msgid "It should take %1$d minutes to finish washing items in the %2$s."
-msgstr "%2$s의 내용물을 세척하는데 %1$d분이 걸릴 것입니다."
-
-#: src/map.cpp
-#, c-format
-msgid "The washing machine in the %s has finished washing."
-msgstr "%s의 세탁기가 세탁을 마쳤습니다."
-
-#: src/map.cpp
-#, c-format
-msgid "The dishwasher in the %s has finished washing."
-msgstr "%s의 식기세척기가 세척을 마쳤습니다."
 
 #: src/map.cpp
 #, c-format
@@ -272059,84 +272055,6 @@ msgid "WREEP"
 msgstr "삐유웅"
 
 #: src/vehicle_use.cpp
-msgid ""
-"You turn the washing machine off before it's finished the program, and open "
-"its lid."
-msgstr "세탁과정이 끝나기 전에 세탁기를 끄고 문을 열었습니다."
-
-#: src/vehicle_use.cpp
-msgid "The washing machine is empty, there's no point in starting it."
-msgstr "세탁기가 비어 있어서 작동시킬 이유가 없습니다."
-
-#: src/vehicle_use.cpp
-#, c-format
-msgid ""
-"You need 24 charges of water in tanks of the %s to fill the washing machine."
-msgstr "세탁기를 채우려면 %s의 탱크에 든 24 단위의 물이 필요합니다."
-
-#: src/vehicle_use.cpp
-msgid "You need 5 charges of a detergent for the washing machine."
-msgstr "세탁기를 돌리는 데 5 충전량의 세제가 필요합니다."
-
-#: src/vehicle_use.cpp
-msgid ""
-"You need to remove all non-filthy items from the washing machine to start "
-"the washing program."
-msgstr "세탁과정을 시작하려면 세탁기에서 불결하지 않은 옷을 모두 꺼내야 합니다."
-
-#: src/vehicle_use.cpp
-msgid "CBMs can't be cleaned in a washing machine.  You need to remove them."
-msgstr "CBM은 세탁기에서 세척할 수 없습니다.  CBM을 제거해야 합니다."
-
-#: src/vehicle_use.cpp
-msgid "Use what detergent?"
-msgstr "어떤 세제를 사용합니까?"
-
-#: src/vehicle_use.cpp
-msgid ""
-"You pour some detergent into the washing machine, close its lid, and turn it"
-" on.  The washing machine is being filled with water from vehicle tanks."
-msgstr "세탁기에 세제를 약간 쏟아붓고 뚜껑을 닫은 뒤 전원을 켰습니다. 이내 차량 탱크의 물이 세탁기를 가득 채웠습니다."
-
-#: src/vehicle_use.cpp
-msgid ""
-"Soft items can't be cleaned in a dishwasher, you should use a washing "
-"machine for that.  You need to remove them:"
-msgstr "부드러운 물품은 식기세척기에서 세탁할 수 없고, 대신 세탁기를 사용해야 합니다.  다음 것들을 빼내야 합니다:"
-
-#: src/vehicle_use.cpp
-msgid ""
-"You turn the dishwasher off before it's finished the program, and open its "
-"lid."
-msgstr "작동이 종료되기 전에 식기세척기를 끄고, 뚜껑을 엽니다."
-
-#: src/vehicle_use.cpp
-msgid "The dishwasher is empty, there's no point in starting it."
-msgstr "식기세척기가 비어 있어서 작동시킬 이유가 없습니다."
-
-#: src/vehicle_use.cpp
-#, c-format
-msgid ""
-"You need 24 charges of water in tanks of the %s to fill the dishwasher."
-msgstr "%s 의 탱크에 24 충전량의 물이 있어야 식기세척기를 채울 수 있습니다."
-
-#: src/vehicle_use.cpp
-msgid "You need 5 charges of detergent for the dishwasher."
-msgstr "식기세척기를 작동하기 위해서는 세제 5 충전량이 필요합니다."
-
-#: src/vehicle_use.cpp
-msgid ""
-"You need to remove all non-filthy items from the dishwasher to start the "
-"washing program."
-msgstr "불결하지 않은 모든 물건을 식기세척기에서 빼내야 세탁 프로그램을 시작할 수 있습니다."
-
-#: src/vehicle_use.cpp
-msgid ""
-"You pour some detergent into the dishwasher, close its lid, and turn it on."
-"  The dishwasher is being filled with water from vehicle tanks."
-msgstr "식기세척기에 세제를 조금 붓고, 뚜껑을 닫고, 작동 버튼을 누릅니다. 식기세척기는 차량 탱크의 물로 차오르고 있습니다."
-
-#: src/vehicle_use.cpp
 msgid "The harness is blocked."
 msgstr "하네스가 가로막혀있습니다."
 
@@ -272194,22 +272112,6 @@ msgstr "CBM 멸균 처리"
 #: src/vehicle_use.cpp
 msgid "Use autodoc"
 msgstr "오토닥 사용"
-
-#: src/vehicle_use.cpp
-msgid "Deactivate the washing machine"
-msgstr "세탁기 작동중지"
-
-#: src/vehicle_use.cpp
-msgid "Activate the washing machine (1.5 hours)"
-msgstr "세탁기 가동 (1.5시간)"
-
-#: src/vehicle_use.cpp
-msgid "Deactivate the dishwasher"
-msgstr "식기세척기 작동중지"
-
-#: src/vehicle_use.cpp
-msgid "Activate the dishwasher (1.5 hours)"
-msgstr "식기세척기 작동 (1.5 시간)"
 
 #: src/vehicle_use.cpp
 msgid "Peek through the closed curtains"

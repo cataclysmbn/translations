@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-04-29 01:47+0000\n"
+"POT-Creation-Date: 2025-04-30 01:26+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -10662,11 +10662,6 @@ msgstr "このアイテムは<good>近視を矯正</good>します。"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
-msgid "This item is <bad>filthy</bad>."
-msgstr "このアイテムは<bad>不潔</bad>です。"
-
-#. ~ Please leave anything in <angle brackets> unchanged.
-#: data/json/flags.json
 msgid ""
 "This clothing <info>prevents going underwater</info> including both "
 "<good>drowning</good> and <bad>diving</bad>."
@@ -11925,18 +11920,6 @@ msgid "Well, you know"
 msgstr "お察しください"
 
 #: data/json/item_actions.json
-msgid "Wash soft items"
-msgstr "洗濯する"
-
-#: data/json/item_actions.json
-msgid "Wash hard items"
-msgstr "洗浄する"
-
-#: data/json/item_actions.json
-msgid "Wash items"
-msgstr "洗濯/洗浄する"
-
-#: data/json/item_actions.json
 msgid "Purify some water"
 msgstr "浄水する"
 
@@ -12782,19 +12765,8 @@ msgstr "分類: 衣類"
 
 #. ~ Description for Loot: Clothing
 #: data/json/loot_zones.json
-msgid ""
-"Destination for clothing.  Does include filthy clothing if such zone is not "
-"specified."
-msgstr "衣類を置く区域です。他に該当する区域を指定していない場合、不潔な衣類はここに移動されます。"
-
-#: data/json/loot_zones.json
-msgid "Loot: F.Clothing"
-msgstr "分類: 不潔な衣類"
-
-#. ~ Description for Loot: F.Clothing
-#: data/json/loot_zones.json
-msgid "Destination for filthy clothing."
-msgstr "不潔な衣類を置く区域です。"
+msgid "Destination for clothing."
+msgstr ""
 
 #: data/json/loot_zones.json
 msgid "Loot: Drugs"
@@ -16017,7 +15989,7 @@ msgid "Mushroom"
 msgstr "キノコ"
 
 #: data/json/materials.json data/json/overmap/overmap_land_use_codes.json
-#: src/game_inventory.cpp src/gamemode_defense.cpp
+#: src/gamemode_defense.cpp
 msgid "Water"
 msgstr "水"
 
@@ -16501,10 +16473,6 @@ msgstr "他者を殺した"
 #: data/json/morale_types.json
 msgid "Longing to kill"
 msgstr "殺し足りない"
-
-#: data/json/morale_types.json
-msgid "Filthy Gear"
-msgstr "不潔なアイテム"
 
 #: data/json/morale_types.json
 msgid "Anguished by memories of butchering human corpse"
@@ -17235,10 +17203,6 @@ msgstr "瓦礫除去"
 #: data/json/player_activities.json
 msgid "meditating"
 msgstr "瞑想"
-
-#: data/json/player_activities.json
-msgid "washing"
-msgstr "洗濯"
 
 #: data/json/player_activities.json
 msgid "cutting the metal"
@@ -44946,8 +44910,10 @@ msgstr[0] "洗剤"
 
 #. ~ Description for {'str_sp': 'detergent'}
 #: data/json/items/chemicals_and_resources.json
-msgid "A popular pre-Cataclysm washing powder."
-msgstr "大変動前は一般的だった洗濯用洗剤です。"
+msgid ""
+"A popular pre-Cataclysm washing powder.  It is used for chemistry "
+"experiments such as manufacturing gelled gasoline."
+msgstr ""
 
 #: data/json/items/chemicals_and_resources.json
 msgid "soap flakes"
@@ -44956,8 +44922,9 @@ msgstr[0] "フレーク石鹸"
 
 #. ~ Description for {'str_sp': 'soap flakes'}
 #: data/json/items/chemicals_and_resources.json
-msgid "A bar of soap cut into flakes suitable for use in a washing machine."
-msgstr "洗濯機での使用に適した、フレーク状にカットされた石鹸です。"
+msgid ""
+"A bar of soap cut into flakes, it can only be used for varnishing wood now."
+msgstr ""
 
 #: data/json/items/chemicals_and_resources.json
 msgid "lye"
@@ -48517,6 +48484,7 @@ msgstr[0] "葉巻"
 #. ~ Use action menu_text for {'str': 'joint'}.
 #. ~ Use action menu_text for {'str': "spooky jack o'lantern", 'str_pl': "jack
 #. o'lanterns"}.
+#. ~ Use action menu_text for {'str': 'battletorch'}.
 #. ~ Use action menu_text for {'str': 'refillable lighter'}.
 #. ~ Use action menu_text for {'str': 'ember carrier (lit)', 'str_pl': 'ember
 #. carriers (lit)'}.
@@ -48530,8 +48498,9 @@ msgstr[0] "葉巻"
 #. 'everburning torches'}.
 #. ~ Use action menu_text for Louisville Slaughterer.
 #: data/json/items/generic.json data/json/items/items_holiday.json
-#: data/json/items/tool/fire.json data/json/items/tool/lighting.json
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
+#: data/json/items/melee/bludgeons.json data/json/items/tool/fire.json
+#: data/json/items/tool/lighting.json data/json/obsoletion/items.json
+#: data/mods/CrazyCataclysm/crazy_items.json
 #: data/mods/MagicalNights/items/enchanted/enchanted_misc.json
 #: data/mods/No_Hope/Items/tools.json
 msgid "Extinguish"
@@ -49237,11 +49206,13 @@ msgid_plural "jack o'lanterns"
 msgstr[0] "ジャック・オ・ランタン"
 
 #. ~ Use action menu_text for {'str': "jack o'lantern"}.
+#. ~ Use action menu_text for {'str': 'battletorch'}.
 #. ~ Use action menu_text for {'str': 'candle'}.
 #. ~ Use action menu_text for {'str': 'Louisville Slaughterer'}.
 #. ~ Use action menu_text for Louisville Slaughterer.
-#: data/json/items/items_holiday.json data/json/items/tool/lighting.json
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
+#: data/json/items/items_holiday.json data/json/items/melee/bludgeons.json
+#: data/json/items/tool/lighting.json
+#: data/mods/CrazyCataclysm/crazy_items.json
 #: data/mods/No_Hope/Items/tools.json src/player_activity.cpp
 #: src/veh_interact.cpp
 msgid "Light"
@@ -90743,16 +90714,17 @@ msgid ""
 msgstr ""
 
 #: data/json/items/gun/223.json
-msgid "SIG 552"
-msgid_plural "SIG 552s"
-msgstr[0] "ライフル(.223口径/SIG 552)"
+msgid "SIG 552 SWAT"
+msgid_plural "SIG 552 SWATs"
+msgstr[0] ""
 
 #: data/json/items/gun/223.json
 msgid ""
-"A compact selective fire automatic rifle designed for the Swiss military.  "
-"It features a three-round burst mode and an integrated folding stock."
+"A select fire rifle originally made for the Swiss military and redesigned "
+"for American specifications.  This is the shortened version, made with SWAT "
+"teams and vehicle crewmen in mind.  Unlike the European original it features"
+" a STANAG magwell."
 msgstr ""
-"スイス軍のために設計された、セレクティブ・ファイア機構を備えた小型のオートマチックライフルです。三点バーストモードと折り畳み式の銃床を備えています。"
 
 #: data/json/items/gun/223.json
 msgid "Steyr AUG"
@@ -91592,15 +91564,16 @@ msgid ""
 msgstr ""
 
 #: data/json/items/gun/40.json
-msgid "KRISS Vector"
-msgid_plural "KRISS Vectors"
-msgstr[0] "サブマシンガン(.45口径/ｸﾘｽﾍﾞｸﾀｰ)"
+msgid "KRISS Vector .40 S&W"
+msgid_plural "KRISS Vector .40 S&Ws"
+msgstr[0] ""
 
 #: data/json/items/gun/40.json
 msgid ""
-"The KRISS Vector is a submachine gun with a unique, in-line design that "
-"makes recoil very manageable.  It is a evolution of the formally known TDI "
-"Vector, this particullar model uses .40 S&W."
+"A submachine gun with a sleek in-line design.  It features a 2-round burst "
+"mode to make the most out of its unique recoil mitigation system alongside a"
+" blistering full-auto mode.  This one is chambered in .40 S&W and uses Glock"
+" 22 magazines."
 msgstr ""
 
 #: data/json/items/gun/40x46mm.json
@@ -93070,6 +93043,19 @@ msgid ""
 "As a result, it is very lightweight."
 msgstr ""
 
+#: data/json/items/gun/9mm.json
+msgid "Kriss Vector 9mm"
+msgid_plural "Kriss Vector 9mms"
+msgstr[0] ""
+
+#: data/json/items/gun/9mm.json
+msgid ""
+"A submachine gun with a sleek in-line design.  It features a 2-round burst "
+"mode to make the most out of its unique recoil mitigation system alongside a"
+" blistering full-auto mode.  This one is chambered in 9mm and uses full-size"
+" Glock 17 magazines."
+msgstr ""
+
 #: data/json/items/gun/9x18.json
 msgid "Makarov PM"
 msgid_plural "Makarov PMs"
@@ -93348,6 +93334,31 @@ msgid ""
 " serves as an incredibly destructive weapon in the right hands."
 msgstr ""
 "耐久性を念頭に置いた堅固な造りの、Rivtech社製戦闘用火炎放射器です。回転加圧式急速燃焼装置や高速圧電点火装置といった軍用水準の高度な機能が盛り込まれています。正しく使えば素晴らしい破壊兵器として猛威を振るうことでしょう。"
+
+#: data/json/items/gun/flammable.json
+msgid "spraycan flamethrower"
+msgid_plural "spraycan flamethrowers"
+msgstr[0] "火炎放射器(スプレー塗料)"
+
+#: data/json/items/gun/flammable.json
+msgid ""
+"A favorite of hooligans around the world, this lighter duct-taped to a spray"
+" can is probably as dangerous to the user as anyone else.  The nozzle has "
+"been crudely modified to disperse gasoline, and a small pump attached to the"
+" side allows for repressurization, though this process takes a few minutes."
+msgstr ""
+"世界中のごろつきが愛用する簡易兵器です。スプレー缶にダクトテープでライターを取り付けただけでも十分危なっかしいオモチャになりますが、小さなガソリンタンクと噴霧ノズル、簡単な加圧ポンプまで付いています。加圧に数分の時間がかかります。"
+
+#: data/json/items/gun/flammable.json
+msgid "simple flamethrower"
+msgid_plural "simple flamethrowers"
+msgstr[0] "火炎放射器(自作)"
+
+#: data/json/items/gun/flammable.json
+msgid ""
+"A simple, home-made flamethrower.  While its capacity is not superb, it is "
+"more than capable of igniting terrain and monsters alike."
+msgstr "シンプルな自作の火炎放射器です。その性能は素晴らしいとまでは言えないが、地形や怪物に火をつけるには十分な性能です。"
 
 #: data/json/items/gun/flintlock.json
 msgid "flintlock carbine"
@@ -94288,6 +94299,24 @@ msgid ""
 "it.  This particular attachment is designed for short-barreled guns."
 msgstr ""
 
+#: data/json/items/gunmod/barrel.json
+msgid "aux flamethrower"
+msgid_plural "aux flamethrowers"
+msgstr[0] "補助火炎放射器"
+
+#: data/json/items/gunmod/barrel.json
+msgid ""
+"This custom-built miniature flamethrower is made to be attached to most "
+"firearms, greatly expanding its lethality."
+msgstr ""
+
+#: data/json/items/gunmod/barrel.json data/json/items/gunmod/bionicmods.json
+#: data/json/items/gunmod/underbarrel.json
+#: data/mods/CRT_EXPANSION/items/crt_gunmods.json
+#: data/mods/MagicalNights/items/enchanted/enchanted_gunmods.json
+msgid "underbarrel"
+msgstr "アンダーバレル"
+
 #: data/json/items/gunmod/bionicmods.json
 msgid "Power shot"
 msgid_plural "Power shots"
@@ -94298,13 +94327,6 @@ msgid ""
 "This is a pseudo item -- the builtin part of a fusion blaster for the "
 "maximum power firing mode."
 msgstr "フュージョンブラスターの最大充填モード用疑似アイテムです。"
-
-#: data/json/items/gunmod/bionicmods.json
-#: data/json/items/gunmod/underbarrel.json data/json/obsoletion/items.json
-#: data/mods/CRT_EXPANSION/items/crt_gunmods.json
-#: data/mods/MagicalNights/items/enchanted/enchanted_gunmods.json
-msgid "underbarrel"
-msgstr "アンダーバレル"
 
 #: data/json/items/gunmod/brass_catcher.json
 msgid "brass catcher"
@@ -94572,6 +94594,40 @@ msgid ""
 "A set of seals and gaskets that will allow a firearm to operate reliably "
 "while submerged in water."
 msgstr "銃器の機構を浸水から守るための、シールやガスケット等の密封材のセットです。"
+
+#: data/json/items/gunmod/mechanism.json
+msgid "G36 STANAG adapter"
+msgid_plural "G36 STANAG adapters"
+msgstr[0] ""
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A custom magwell which is installed into the lower receiver of a G36 to "
+"enable the use of most STANAG magazines save for the largest ones."
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "hk_g36"
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgid "AUG NATO conversion kit"
+msgid_plural "AUG NATO conversion kits"
+msgstr[0] ""
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A STANAG sized magwell and a modified trigger group to facilitate the use of"
+" STANAG magazines on an AUG rifle.  Most versions of the rifle come with "
+"this out of the factory as the A3 variant but it's quite simple to convert "
+"the older variants.  Fits all but the largest STANAG magazines."
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "steyr_aug"
+msgstr ""
 
 #: data/json/items/gunmod/mechanism.json
 msgid "steel prod"
@@ -96672,13 +96728,16 @@ msgid "A 10-round steel box magazine for use with the Hi-Point Model JCP."
 msgstr "ハイポイントモデルJCPに対応する、10発鋼鉄製箱型弾倉です。"
 
 #: data/json/items/magazine/40.json
-msgid "KRISS Vector magazine"
-msgid_plural "KRISS Vector magazines"
-msgstr[0] "弾倉(.45口径/ｸﾘｽﾍﾞｸﾀｰ)"
+msgid "KRISS Vector .40 S&W/.357 SIG magazine"
+msgid_plural "KRISS Vector .40 S&W/.357 SIG magazines"
+msgstr[0] ""
 
-#. ~ Description for {'str': 'KRISS Vector magazine'}
+#. ~ Description for {'str': 'KRISS Vector .40 S&W/.357 SIG magazine'}
 #: data/json/items/magazine/40.json
-msgid "A 30-round steel box magazine for use with the KRISS Vector"
+msgid ""
+"A 32-round modified Glock 22 magazine with a +17 MagEx kit installed, "
+"intended to be used with a KRISS Vector in .40 S&W.  Can also fit in a Glock"
+" 22."
 msgstr ""
 
 #: data/json/items/magazine/40mm.json
@@ -96768,14 +96827,16 @@ msgstr ""
 "MAC-10に対応する、有り合わせの物で作った即席の20発箱型弾倉です。錆の浮いた金属片を折り曲げ、重ね合わせて、祈りを込めたダクトテープで巻いてあります。"
 
 #: data/json/items/magazine/45.json
-msgid "TDI Vector magazine"
-msgid_plural "TDI Vector magazines"
-msgstr[0] "弾倉(.45口径/TDIﾍﾞｸﾀｰ)"
+msgid "Kriss Vector .45ACP magazine"
+msgid_plural "Kriss Vector .45ACP magazines"
+msgstr[0] ""
 
-#. ~ Description for {'str': 'TDI Vector magazine'}
+#. ~ Description for {'str': 'Kriss Vector .45ACP magazine'}
 #: data/json/items/magazine/45.json
-msgid "A 30-round steel box magazine for use with the TDI Vector"
-msgstr "TDIベクターに対応する30発箱型弾倉です。"
+msgid ""
+"A 30-round modified Glock 21 magazine with a +17 MagEx kit installed, "
+"intended to be used with a KRISS Vector .45ACP.  Can also fit in a Glock 21."
+msgstr ""
 
 #: data/json/items/magazine/45.json
 msgid "Thompson extended magazine"
@@ -97631,6 +97692,18 @@ msgstr[0] "弾倉(9mm/CCP)"
 #: data/json/items/magazine/9mm.json
 msgid "An 8-round steel box magazine for use with the Walther CCP."
 msgstr "ワルサーCCPに対応する8発鋼鉄製箱型弾倉です。"
+
+#: data/json/items/magazine/9mm.json
+msgid "Kriss Vector 9mm magazine"
+msgid_plural "Kriss Vector 9mm magazines"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'Kriss Vector 9mm magazine'}
+#: data/json/items/magazine/9mm.json
+msgid ""
+"A 40-round modified Glock 17 magazine with a +23 MagEx kit installed, "
+"intended to be used with a KRISS Vector 9mm.  Can also fit in a Glock 19."
+msgstr ""
 
 #: data/json/items/magazine/9x18.json
 msgid "Makarov PM magazine"
@@ -98782,6 +98855,66 @@ msgid ""
 " hopefully it will help you survive too."
 msgstr ""
 
+#: data/json/items/melee/bludgeons.json
+msgid "burnt out battletorch"
+msgid_plural "burnt out battletorchs"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'burnt out battletorch'}
+#. ~ Description for {'str': 'burnt out Louisville Slaughterer'}
+#. ~ Description for burnt out Louisville Slaughterer
+#: data/json/items/melee/bludgeons.json
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/generic.json
+msgid ""
+"A sturdy wood bat, wrapped in flame-resistant Nomex fabric.  Makes a good "
+"melee weapon but better be disassembled to recycle the baseball bat and some"
+" Nomex patches."
+msgstr ""
+"耐熱性のノーメックス生地で覆った木製バットです。このままでも丁度いい近接武器になりますが、分解する事でより優れた野球バットとノーメックスの布片へと再利用できます。"
+
+#: data/json/items/melee/bludgeons.json
+msgid "battletorch"
+msgid_plural "battletorchs"
+msgstr[0] ""
+
+#. ~ Use action msg for {'str': 'battletorch'}.
+#: data/json/items/melee/bludgeons.json
+msgid "You light the battletorch."
+msgstr ""
+
+#. ~ Description for {'str': 'battletorch'}
+#. ~ Description for {'str': 'Louisville Slaughterer'}
+#. ~ Description for Louisville Slaughterer
+#: data/json/items/melee/bludgeons.json
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/tools.json
+msgid ""
+"This is sturdy wood bat, wrapped in gasoline-soaked rags and flame-resistant"
+" Nomex fabric.  Light it, and the ball game will REALLY heat up.  You'll "
+"need a lighter or matches to light it."
+msgstr ""
+"木製バットを燃料を染み込ませた布と耐熱性のノーメックス生地で覆ったものです。着火して点灯することで熱い試合のプレイボールを宣言できます。着火にはライターやマッチが必要です。"
+
+#. ~ Use action msg for {'str': 'battletorch'}.
+#: data/json/items/melee/bludgeons.json
+msgid "The battletorch is extinguished."
+msgstr ""
+
+#. ~ Description for {'str': 'battletorch'}
+#. ~ Description for {'str': 'Louisville Slaughterer'}
+#. ~ Description for Louisville Slaughterer
+#: data/json/items/melee/bludgeons.json
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/tools.json
+msgid ""
+"This is a sturdy wood bat, wrapped in gasoline-soaked rags and flame-"
+"resistant Nomex fabric.  It is burning brightly, and makes it much easier to"
+" see the baselines at night games (It also makes the umpire FAR more likely "
+"to call a ball instead of a strike)."
+msgstr ""
+"木製バットを燃料を染み込ませた布と耐熱性のノーメックス生地で覆ったものです。今やナイターの球場でもベースラインがはっきりと見えるくらいに明るく燃えています。これなら主審がどんなに遠くにいてもストライクの判定をで出せますね。"
+
 #: data/json/items/melee/fake.json
 msgid "bionic claws"
 msgid_plural "bionic claws"
@@ -99597,13 +99730,12 @@ msgstr[0] "RM42ファイティングナイフ"
 #. knives'}
 #: data/json/items/melee/swords_and_blades.json
 msgid ""
-"This sturdy matte black Rivtech combat dagger features a long and slim "
-"double-edged blade with a spear-point and a distinctive slip-resistant grip "
-"which can also be used to affix it to a suitable firearm.  Originally "
-"manufactured for the military, it was very popular in films and among "
-"collectors due to its fearsome appearance."
+"This matte black Rivtech combat dagger features a long double-edged blade "
+"converging to a spear-point and a distinctive slip-resistant grip with low-"
+"profile grooves to affix to a firearm.  Improving on the design of the "
+"legendary Fairbarn-Sykes dagger with new materials, it was very popular in "
+"films and among collectors due to its fearsome appearance."
 msgstr ""
-"つや消しの黒で塗装されたRivtech社製の戦闘用ダガーナイフです。ナイフとしてはやや長く細身な両刃の刀身で、貫通力を重視して先端が鋭角に成形されています。また特徴的な滑り止め加工の握りが付いており、適切な銃器に取り付けて使うこともできます。元々は軍用に開発された製品でしたが、その鋭利で恐ろしげなデザインが注目されて映画業界やコレクターの間で大人気になりました。"
 
 #: data/json/items/melee/swords_and_blades.json
 msgid "Swiss Army knife"
@@ -100956,6 +101088,89 @@ msgid ""
 "This shortsword is carved from a large chunk of bone set in a wooden haft, "
 "and is capable of slicing foes in with swiftness and efficiency."
 msgstr ""
+
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "shishkebab (off)"
+msgid_plural "shishkebabs (off)"
+msgstr[0] "シシカバブ(オフ)"
+
+#. ~ Use action failure_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "The igniter clicks, but nothing catches."
+msgstr ""
+
+#. ~ Use action lacks_fuel_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You hear a sputter—it's dry. No fuel left."
+msgstr ""
+
+#. ~ Use action success_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "A burst of flame roars to life, crawling along the blade."
+msgstr ""
+
+#. ~ Description for {'str': 'shishkebab (off)', 'str_pl': 'shishkebabs
+#. (off)'}
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/No_Hope/Items/tools.json
+msgid ""
+"This is a large blade with a fuel pipe on the side, and a small tank and "
+"igniter built into the insulated hilt.  When filled with gasoline, the blade"
+" can be made scorching hot to singe enemies and light your way.  Use to "
+"ignite."
+msgstr ""
+"燃料パイプと点火装置が取り付けてある、大きな刃です。ガソリンを充填して点火することで刃の攻撃に炎の熱が加わり、また周囲を照らします。使用することで点火します。"
+
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "shishkebab (on)"
+msgid_plural "shishkebabs (on)"
+msgstr[0] "シシカバブ(オン)"
+
+#. ~ Use action auto_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "The flame sputters, then dies with a faint hiss."
+msgstr ""
+
+#. ~ Use action charges_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "The fuel runs dry. The flame gutters and dies in an instant."
+msgstr ""
+
+#. ~ Use action noise_message for {'str': 'shishkebab (on)', 'str_pl':
+#. 'shishkebabs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "The shishkebab crackles as flames whip along its edge."
+msgstr ""
+
+#. ~ Use action voluntary_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+msgid "You shut it down. The flame gutters out."
+msgstr ""
+
+#. ~ Use action water_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "Your shishkebab hisses in the water and goes out."
+msgstr "シシカバブの炎は水中でシュッと音を立てて消えました。"
+
+#. ~ Description for {'str': 'shishkebab (on)', 'str_pl': 'shishkebabs (on)'}
+#: data/json/items/melee/swords_and_blades.json
+#: data/mods/No_Hope/Items/tools.json
+msgid ""
+"This is a large blade with a fuel pipe on the side, and a small tank and "
+"igniter built into the insulated hilt.  The blade is glowing brightly.  Use "
+"to shut off the gas."
+msgstr ""
+"燃料パイプと点火装置が取り付けてある、大きな刃です。ガソリンを充填して点火することで刃の攻撃に炎の熱が加わります。刃は炎に包まれ、周囲を明るく照らしています。使用することで日を消します。"
 
 #: data/json/items/melee/unarmed_weapons.json
 msgid "tiger claws"
@@ -127418,17 +127633,6 @@ msgid "Lets you run or swim forever (in other words, until you fix that bug)."
 msgstr ""
 
 #: data/json/mutations/mutations.json
-msgid "Squeamish"
-msgstr "潔癖症"
-
-#. ~ Description for {'str': 'Squeamish'}
-#: data/json/mutations/mutations.json
-msgid ""
-"You can't even think about putting filthy clothes on yourself, especially "
-"from zombies' corpses."
-msgstr "汚れた服を着るなんて考えられません。ましてやゾンビが着ていた服などもっての外です。"
-
-#: data/json/mutations/mutations.json
 msgid "Bee"
 msgstr "ハチ"
 
@@ -132569,12 +132773,6 @@ msgid ""
 "Should have put some Kevlar on it like those Z9.  Oh well…"
 msgstr ""
 "飼い犬にバッグを取り付けて荷物を運ばせようと思いついたことがある。チワワには荷が重かったようだけどね。その後あいつは野生のロットワイラーに食い殺された。ゾンビ警察犬が着ているようなケブラー装備を用意するべきだったんだ。はぁ..."
-
-#: data/json/npcs/hints.json
-msgid ""
-"Stuff from zombies is filthy but perfectly fine otherwise.  Using soap or "
-"other detergents won't hurt you.  Quick wash and you're equipped for days."
-msgstr "ゾンビの着ていた服は不潔だけど、それ以外なら何も問題ない。石鹸や洗剤を使えばもう害はない。一度洗えば、その後は何日でも着ていられるよ。"
 
 #: data/json/npcs/hints.json
 msgid ""
@@ -155094,20 +155292,6 @@ msgid ""
 "reliably of a firearm."
 msgstr "銃火器用の微調整された内部部品セットです。銃火器の精度と信頼性が増加します。"
 
-#: data/json/obsoletion/items.json
-msgid "spraycan flamethrower"
-msgid_plural "spraycan flamethrowers"
-msgstr[0] "火炎放射器(スプレー塗料)"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A favorite of hooligans around the world, this lighter duct-taped to a spray"
-" can is probably as dangerous to the user as anyone else.  The nozzle has "
-"been crudely modified to disperse gasoline, and a small pump attached to the"
-" side allows for repressurization, though this process takes a few minutes."
-msgstr ""
-"世界中のごろつきが愛用する簡易兵器です。スプレー缶にダクトテープでライターを取り付けただけでも十分危なっかしいオモチャになりますが、小さなガソリンタンクと噴霧ノズル、簡単な加圧ポンプまで付いています。加圧に数分の時間がかかります。"
-
 #: data/json/obsoletion/items.json data/json/obsoletion/uncategorized.json
 msgid "Magnesium Supplements"
 msgstr "マグネシウム剤"
@@ -155135,17 +155319,6 @@ msgid ""
 "Space inside your chest cavity has been converted into a storage area.  You "
 "may carry an extra 2 liters of volume."
 msgstr "胸の内部を格納領域に改造します。 所持品の最大容積が2L増加します。"
-
-#: data/json/obsoletion/items.json
-msgid "simple flamethrower"
-msgid_plural "simple flamethrowers"
-msgstr[0] "火炎放射器(自作)"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A simple, home-made flamethrower.  While its capacity is not superb, it is "
-"more than capable of igniting terrain and monsters alike."
-msgstr "シンプルな自作の火炎放射器です。その性能は素晴らしいとまでは言えないが、地形や怪物に火をつけるには十分な性能です。"
 
 #: data/json/obsoletion/items.json
 msgid "homemade laser pistol"
@@ -155761,84 +155934,6 @@ msgstr ""
 "錆び付いたレシーバー、レミントン700互換の銃身、折れた松葉杖の上半分。これらの材料に接着剤を塗りダクトテープを巻き付けて、どうにかライフルらしき形に整え、仕上げにありったけの祈りを込めて完成した、真の生存者のためのライフルです。"
 
 #: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "shishkebab (off)"
-msgid_plural "shishkebabs (off)"
-msgstr[0] "シシカバブ(オフ)"
-
-#. ~ Use action failure_message for {'str': 'shishkebab (off)', 'str_pl':
-#. 'shishkebabs (off)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Aw, dangit.  It fails to start!"
-msgstr "おっと、ちくしょう。起動に失敗しました！"
-
-#. ~ Use action lacks_fuel_message for {'str': 'shishkebab (off)', 'str_pl':
-#. 'shishkebabs (off)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "This thing needs some fuel!"
-msgstr "燃料が必要です！"
-
-#. ~ Use action success_message for {'str': 'shishkebab (off)', 'str_pl':
-#. 'shishkebabs (off)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Let's dance, Zeds!"
-msgstr "ゾンビとダンスだ！"
-
-#. ~ Description for {'str': 'shishkebab (off)', 'str_pl': 'shishkebabs
-#. (off)'}
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid ""
-"This is a large blade with a fuel pipe on the side, and a small tank and "
-"igniter built into the insulated hilt.  When filled with gasoline, the blade"
-" can be made scorching hot to singe enemies and light your way.  Use to "
-"ignite."
-msgstr ""
-"燃料パイプと点火装置が取り付けてある、大きな刃です。ガソリンを充填して点火することで刃の攻撃に炎の熱が加わり、また周囲を照らします。使用することで点火します。"
-
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "shishkebab (on)"
-msgid_plural "shishkebabs (on)"
-msgstr[0] "シシカバブ(オン)"
-
-#. ~ Use action auto_extinguish_message for {'str': 'shishkebab (on)',
-#. 'str_pl': 'shishkebabs (on)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Bummer, man!  Your shishkebab's flame flickers and dies out."
-msgstr "なんだ、つまんねぇ！シシカバブの炎が揺らめき、消えました。"
-
-#. ~ Use action charges_extinguish_message for {'str': 'shishkebab (on)',
-#. 'str_pl': 'shishkebabs (on)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Uncool, outta gas!  Your shishkebab's flame goes out."
-msgstr "ダッセぇ、ガス欠かよ！シシカバブの炎が消えました。"
-
-#. ~ Use action noise_message for {'str': 'shishkebab (on)', 'str_pl':
-#. 'shishkebabs (on)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Your shishkebab crackles!"
-msgstr "シシカバブはパチパチと燃えています！"
-
-#. ~ Use action voluntary_extinguish_message for {'str': 'shishkebab (on)',
-#. 'str_pl': 'shishkebabs (on)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Peace out.  Your shishkebab's flame dies."
-msgstr "あばよ。シシカバブの炎が消えました。"
-
-#. ~ Use action water_extinguish_message for {'str': 'shishkebab (on)',
-#. 'str_pl': 'shishkebabs (on)'}.
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid "Your shishkebab hisses in the water and goes out."
-msgstr "シシカバブの炎は水中でシュッと音を立てて消えました。"
-
-#. ~ Description for {'str': 'shishkebab (on)', 'str_pl': 'shishkebabs (on)'}
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
-msgid ""
-"This is a large blade with a fuel pipe on the side, and a small tank and "
-"igniter built into the insulated hilt.  The blade is glowing brightly.  Use "
-"to shut off the gas."
-msgstr ""
-"燃料パイプと点火装置が取り付けてある、大きな刃です。ガソリンを充填して点火することで刃の攻撃に炎の熱が加わります。刃は炎に包まれ、周囲を明るく照らしています。使用することで日を消します。"
-
-#: data/json/obsoletion/items.json data/mods/No_Hope/Items/tools.json
 msgid "No. 9"
 msgid_plural "No. 9's"
 msgstr[0] "No. 9"
@@ -156099,66 +156194,6 @@ msgstr "Die Flamme deines Schwertes erlischt.(剣の炎が消えました。)"
 msgid "Dein Schwert zischt und erlischt."
 msgstr "Dein Schwert zischt und erlischt.(剣の炎はシュッと音を立てて消えました。)"
 
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/generic.json
-msgid "burnt out Louisville Slaughterer"
-msgid_plural "burnt out Louisville Slaughterers"
-msgstr[0] "ルイビルスロータラー(使用済)"
-
-#. ~ Description for {'str': 'burnt out Louisville Slaughterer'}
-#. ~ Description for burnt out Louisville Slaughterer
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/generic.json
-msgid ""
-"A sturdy wood bat, wrapped in flame-resistant Nomex fabric.  Makes a good "
-"melee weapon but better be disassembled to recycle the baseball bat and some"
-" Nomex patches."
-msgstr ""
-"耐熱性のノーメックス生地で覆った木製バットです。このままでも丁度いい近接武器になりますが、分解する事でより優れた野球バットとノーメックスの布片へと再利用できます。"
-
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/tools.json
-msgid "Louisville Slaughterer"
-msgid_plural "Louisville Slaughterers"
-msgstr[0] "ルイビルスロータラー"
-
-#. ~ Use action msg for {'str': 'Louisville Slaughterer'}.
-#. ~ Use action msg for Louisville Slaughterer.
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/tools.json
-msgid "You light the Louisville Slaughterer."
-msgstr "ルイビルスロータラーに火をつけました。"
-
-#. ~ Description for {'str': 'Louisville Slaughterer'}
-#. ~ Description for Louisville Slaughterer
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/tools.json
-msgid ""
-"This is sturdy wood bat, wrapped in gasoline-soaked rags and flame-resistant"
-" Nomex fabric.  Light it, and the ball game will REALLY heat up.  You'll "
-"need a lighter or matches to light it."
-msgstr ""
-"木製バットを燃料を染み込ませた布と耐熱性のノーメックス生地で覆ったものです。着火して点灯することで熱い試合のプレイボールを宣言できます。着火にはライターやマッチが必要です。"
-
-#. ~ Use action msg for {'str': 'Louisville Slaughterer'}.
-#. ~ Use action msg for Louisville Slaughterer.
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/tools.json
-msgid "The Louisville Slaughterer is extinguished."
-msgstr "ルイビルスロータラーの火が消えました。"
-
-#. ~ Description for {'str': 'Louisville Slaughterer'}
-#. ~ Description for Louisville Slaughterer
-#: data/json/obsoletion/items.json data/mods/CrazyCataclysm/crazy_items.json
-#: data/mods/No_Hope/Items/tools.json
-msgid ""
-"This is a sturdy wood bat, wrapped in gasoline-soaked rags and flame-"
-"resistant Nomex fabric.  It is burning brightly, and makes it much easier to"
-" see the baselines at night games (It also makes the umpire FAR more likely "
-"to call a ball instead of a strike)."
-msgstr ""
-"木製バットを燃料を染み込ませた布と耐熱性のノーメックス生地で覆ったものです。今やナイターの球場でもベースラインがはっきりと見えるくらいに明るく燃えています。これなら主審がどんなに遠くにいてもストライクの判定をで出せますね。"
-
 #: data/json/obsoletion/items.json data/mods/No_Hope/Items/guns.json
 msgid "L2037 Backup"
 msgid_plural "L2037 Backups"
@@ -156220,17 +156255,6 @@ msgid ""
 "A Leadworks built in heavy duty barrel especially designed for prolonged "
 "shooting.  Increases damage output and weapon range."
 msgstr "長期間の過酷な使用に耐えるLeadworks社製の一体型銃身です。威力と射程距離が向上します。"
-
-#: data/json/obsoletion/items.json
-msgid "aux flamethrower"
-msgid_plural "aux flamethrowers"
-msgstr[0] "補助火炎放射器"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"This custom-built miniature flamethrower is made to be attached to almost "
-"any sort of firearm, greatly expanding its lethality."
-msgstr "大抵の銃器に取り付けられる、特製の小型火炎放射器です。殺傷能力を大幅に拡張します。"
 
 #: data/json/obsoletion/items.json
 msgid "RDX sand bomb"
@@ -174626,19 +174650,15 @@ msgstr "小型の冷蔵庫です。電源を入れると中に置いた食べ物
 #. ~ Description for {'str': 'washing machine'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
-"A small washing machine.  With detergent, water, and some electrical power, "
-"you could clean a lot of clothes.  'e'xamine the tile with the washing "
-"machine to use it."
-msgstr "小型の洗濯機です。洗剤と水、電力を消費して大量の衣類を洗濯できます。このタイルを調べると洗濯機を使用できます。"
+"A small washing machine.  It's only good for salvage, or decorating your "
+"vehicle."
+msgstr ""
 
 #. ~ Description for {'str': 'dishwasher'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
-"A small dishwasher.  With detergent, water, and some electrical power, you "
-"could clean your dishes…  Or something more useful like a CBM dripping with "
-"zombie gore.  'e'xamine the tile with the dishwasher to use it."
+"A small dishwasher.  It's only good for salvage, or decorating your vehicle."
 msgstr ""
-"小さな食洗器です。洗剤と水、電力を消費して食器...あるいはもっと有用な、例えばゾンビの死体に埋まっていたCBMを洗浄できそうです。タイルを調べると使用できます。"
 
 #. ~ Description for {'str': 'autoclave'}
 #: data/json/vehicleparts/vehicle_parts.json
@@ -186096,6 +186116,32 @@ msgstr ""
 "Ein großes zweihändiges Schwert aus Deutschland, an dessen Klinge sich, "
 "unter Zuführung von Benzin, eine anhaltende Flamme erzeugen lässt. Es ist "
 "eine sehr mächtige Waffe.(ガソリンの炎で刀身を燃やし続けるドイツ生まれの大型両手剣です。非常に強力な武器です。)"
+
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/generic.json
+msgid "burnt out Louisville Slaughterer"
+msgid_plural "burnt out Louisville Slaughterers"
+msgstr[0] "ルイビルスロータラー(使用済)"
+
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "Louisville Slaughterer"
+msgid_plural "Louisville Slaughterers"
+msgstr[0] "ルイビルスロータラー"
+
+#. ~ Use action msg for {'str': 'Louisville Slaughterer'}.
+#. ~ Use action msg for Louisville Slaughterer.
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "You light the Louisville Slaughterer."
+msgstr "ルイビルスロータラーに火をつけました。"
+
+#. ~ Use action msg for {'str': 'Louisville Slaughterer'}.
+#. ~ Use action msg for Louisville Slaughterer.
+#: data/mods/CrazyCataclysm/crazy_items.json
+#: data/mods/No_Hope/Items/tools.json
+msgid "The Louisville Slaughterer is extinguished."
+msgstr "ルイビルスロータラーの火が消えました。"
 
 #. ~ Description for {'str': 'shocker zombie'}
 #: data/mods/CrazyCataclysm/crazy_monsters.json
@@ -213573,15 +213619,6 @@ msgstr "削除 - 狂人"
 msgid "Removes all feral humans from the game."
 msgstr ""
 
-#: data/mods/No_Filthy_Clothes/modinfo.json
-msgid "No Filthy Clothing"
-msgstr "削除 - 不潔な着用アイテム"
-
-#. ~ Description for No Filthy Clothing
-#: data/mods/No_Filthy_Clothes/modinfo.json
-msgid "Clothes dropped by zombies will be completely clean."
-msgstr "ゾンビが落とす着用アイテムが不潔状態にならなくなります。"
-
 #: data/mods/No_Flaming_Weapons/modinfo.json
 msgid "No Flaming Weapons"
 msgstr "削除 - 発火武器"
@@ -214332,6 +214369,48 @@ msgid ""
 "A 21-round polymer magazine for Leadworks LLC 9x19mm firearms.  Lightweight "
 "and reliable but somewhat more difficult to reload."
 msgstr ""
+
+#. ~ Use action failure_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Aw, dangit.  It fails to start!"
+msgstr "おっと、ちくしょう。起動に失敗しました！"
+
+#. ~ Use action lacks_fuel_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "This thing needs some fuel!"
+msgstr "燃料が必要です！"
+
+#. ~ Use action success_message for {'str': 'shishkebab (off)', 'str_pl':
+#. 'shishkebabs (off)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Let's dance, Zeds!"
+msgstr "ゾンビとダンスだ！"
+
+#. ~ Use action auto_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Bummer, man!  Your shishkebab's flame flickers and dies out."
+msgstr "なんだ、つまんねぇ！シシカバブの炎が揺らめき、消えました。"
+
+#. ~ Use action charges_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Uncool, outta gas!  Your shishkebab's flame goes out."
+msgstr "ダッセぇ、ガス欠かよ！シシカバブの炎が消えました。"
+
+#. ~ Use action noise_message for {'str': 'shishkebab (on)', 'str_pl':
+#. 'shishkebabs (on)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Your shishkebab crackles!"
+msgstr "シシカバブはパチパチと燃えています！"
+
+#. ~ Use action voluntary_extinguish_message for {'str': 'shishkebab (on)',
+#. 'str_pl': 'shishkebabs (on)'}.
+#: data/mods/No_Hope/Items/tools.json
+msgid "Peace out.  Your shishkebab's flame dies."
+msgstr "あばよ。シシカバブの炎が消えました。"
 
 #: data/mods/No_Hope/Mapgen/map_extras/map_extras.json
 msgid "Bandit Ambush"
@@ -216421,9 +216500,9 @@ msgstr[0] ""
 #. ~ Description for {'str_sp': 'Teleporter network schematics'}
 #: data/mods/teleportation_mod/item.json
 msgid ""
-"A disjointed collection of lab book pages , post-it notes, and computer "
-"printouts containing some funky physics equations and circuit diagrams. They"
-" seem to be describing some form of stable teleportation technology."
+"A disjointed collection of lab book pages, post-it notes, and computer "
+"printouts containing some funky physics equations and circuit diagrams.  "
+"They seem to be describing some form of stable teleportation technology."
 msgstr ""
 
 #: data/mods/teleportation_mod/iuse.json
@@ -218367,7 +218446,7 @@ msgstr "削除"
 
 #: data/raw/keybindings/keybindings.json src/character.cpp
 #: src/inventory_ui.cpp src/monexamine.cpp src/npctalk_funcs.cpp
-#: src/pickup.cpp src/vehicle_use.cpp
+#: src/pickup.cpp
 msgid "Cancel"
 msgstr "取消"
 
@@ -220207,20 +220286,6 @@ msgstr "<npcname>は複数のアイテムを%sに入れました。"
 #, c-format
 msgid "Some items tumble to the %s."
 msgstr "複数のアイテムが%sに転がり落ちました。"
-
-#: src/activity_item_handling.cpp src/iuse.cpp
-#, c-format
-msgid "You need %1$i charges of water or clean water to wash these items."
-msgstr "洗濯をするには%1$iの水が必要です。"
-
-#: src/activity_item_handling.cpp src/iuse.cpp
-#, c-format
-msgid "You need %1$i charges of cleansing agent to wash these items."
-msgstr "洗濯をするには%1$iの洗剤類が必要です。"
-
-#: src/activity_item_handling.cpp
-msgid "You washed your items."
-msgstr "アイテムを洗いました。"
 
 #: src/activity_item_handling.cpp
 msgid "The pet has moved somewhere else."
@@ -224686,10 +224751,6 @@ msgid "Can't wear that, it's made of wool!"
 msgstr "羊毛製なので着用できません！"
 
 #: src/character.cpp
-msgid "Can't wear that, it's filthy!"
-msgstr "不潔なものは着用できません！"
-
-#: src/character.cpp
 #, c-format
 msgid "Your %s mutation prevents you from wearing your %s."
 msgstr "%sの変異のため%sを着用できません。"
@@ -225692,10 +225753,6 @@ msgstr "<npcname>は%sに掴まれました！"
 #, c-format
 msgid "You are grabbed by %s!"
 msgstr "%sに掴まれました！"
-
-#: src/character.cpp
-msgid "Filth from your clothing has implanted deep in the wound."
-msgstr "衣服の汚れが傷口に入り込みました。"
 
 #: src/character.cpp
 #, c-format
@@ -234190,26 +234247,6 @@ msgid "You have nothing to drop."
 msgstr "落とすアイテムがない。"
 
 #: src/game_inventory.cpp
-msgid "Cleanser"
-msgstr "洗剤"
-
-#: src/game_inventory.cpp
-msgid "ITEMS TO CLEAN"
-msgstr "洗濯するアイテム"
-
-#: src/game_inventory.cpp
-msgid "Multiclean"
-msgstr "複数洗濯"
-
-#: src/game_inventory.cpp
-msgid "To clean x items, type a number before selecting."
-msgstr "特定個数のアイテムを洗濯するには、選択前に個数を数字で入力します。"
-
-#: src/game_inventory.cpp
-msgid "You have nothing to clean."
-msgstr "洗濯するアイテムがありません。"
-
-#: src/game_inventory.cpp
 msgid "Select two items to compare them."
 msgstr "比較する2つのアイテムを選択。"
 
@@ -234358,10 +234395,6 @@ msgstr "上位バージョンが移植されています。"
 #: src/game_inventory.cpp
 msgid "CBM is not compatible with patient."
 msgstr "CBMが患者に適合しません。"
-
-#: src/game_inventory.cpp
-msgid "CBM is filthy.  Wash it first."
-msgstr "CBMが汚れています。まず洗いましょう。"
 
 #: src/game_inventory.cpp
 msgid "Sterilization"
@@ -236143,7 +236176,7 @@ msgstr ""
 msgid "Select an action"
 msgstr "行動を選択する"
 
-#: src/iexamine.cpp src/vehicle_use.cpp
+#: src/iexamine.cpp
 msgid "Get items"
 msgstr "アイテム拾得"
 
@@ -240074,10 +240107,6 @@ msgid " (poor fit)"
 msgstr "(不適)"
 
 #: src/item.cpp
-msgid " (filthy)"
-msgstr "(不潔)"
-
-#: src/item.cpp
 msgid " (sterile)"
 msgstr "(滅菌)"
 
@@ -243674,14 +243703,6 @@ msgstr "そこには設置できません。"
 msgid "You set down the ladder."
 msgstr "梯子を設置しました。"
 
-#: src/iuse.cpp src/iuse_actor.cpp
-msgid "You can't see to do that!"
-msgstr "視界が暗いため作業できません！"
-
-#: src/iuse.cpp
-msgid "You're carrying too much to clean anything."
-msgstr "所持品が多すぎて洗濯ができません。"
-
 #: src/iuse.cpp
 msgid "You take some weak antibiotics."
 msgstr "弱い抗生物質を摂取しました。"
@@ -244662,6 +244683,10 @@ msgid "<npcname> can't do that while mounted."
 msgstr "<npcname>は騎乗中にその行動をできません。"
 
 #: src/iuse_actor.cpp
+msgid "You can't see to do that!"
+msgstr "視界が暗いため作業できません！"
+
+#: src/iuse_actor.cpp
 msgid "Your tool does not have enough charges to do that."
 msgstr "それをするには道具の装填量が足りません。"
 
@@ -244751,10 +244776,6 @@ msgstr "練習"
 #, c-format
 msgid "Repair %s"
 msgstr "%s製アイテムを修復する"
-
-#: src/iuse_actor.cpp
-msgid "You can't use filthy items for healing."
-msgstr "汚れたアイテムでは治療できません。"
 
 #: src/iuse_actor.cpp
 msgid "The bleeding is stopped."
@@ -247337,21 +247358,6 @@ msgstr "金属柵が溶解しました！"
 #: src/map.cpp
 msgid "swish"
 msgstr "ギィ。"
-
-#: src/map.cpp
-#, c-format
-msgid "It should take %1$d minutes to finish washing items in the %2$s."
-msgstr "%1$d分で%2$sでの洗濯が完了します。"
-
-#: src/map.cpp
-#, c-format
-msgid "The washing machine in the %s has finished washing."
-msgstr "%sの洗濯機が洗濯を完了しました。"
-
-#: src/map.cpp
-#, c-format
-msgid "The dishwasher in the %s has finished washing."
-msgstr "%sの食器洗浄機が洗浄を完了しました。"
 
 #: src/map.cpp
 #, c-format
@@ -264575,84 +264581,6 @@ msgid "WREEP"
 msgstr "ビーッ"
 
 #: src/vehicle_use.cpp
-msgid ""
-"You turn the washing machine off before it's finished the program, and open "
-"its lid."
-msgstr "洗濯が終了する前に洗濯機を停止し、ふたを開けました。"
-
-#: src/vehicle_use.cpp
-msgid "The washing machine is empty, there's no point in starting it."
-msgstr "洗濯機内に何も入っていないため、起動しても意味がありません。"
-
-#: src/vehicle_use.cpp
-#, c-format
-msgid ""
-"You need 24 charges of water in tanks of the %s to fill the washing machine."
-msgstr "洗濯機に水を充填するには%sのタンク内に24単位の水が必要です。"
-
-#: src/vehicle_use.cpp
-msgid "You need 5 charges of a detergent for the washing machine."
-msgstr "洗濯機を使うには5単位の洗剤が必要です。"
-
-#: src/vehicle_use.cpp
-msgid ""
-"You need to remove all non-filthy items from the washing machine to start "
-"the washing program."
-msgstr "洗濯を開始する前に、洗濯機の中から汚れていないアイテムを取り出す必要があります。"
-
-#: src/vehicle_use.cpp
-msgid "CBMs can't be cleaned in a washing machine.  You need to remove them."
-msgstr "CBMは洗濯機では洗浄できません。取り出してください。"
-
-#: src/vehicle_use.cpp
-msgid "Use what detergent?"
-msgstr "使用する洗剤を選択"
-
-#: src/vehicle_use.cpp
-msgid ""
-"You pour some detergent into the washing machine, close its lid, and turn it"
-" on.  The washing machine is being filled with water from vehicle tanks."
-msgstr "洗濯機に洗剤を入れ、ふたを閉めて電源を入れました。車両のタンク内の水が洗濯機に注がれています。"
-
-#: src/vehicle_use.cpp
-msgid ""
-"Soft items can't be cleaned in a dishwasher, you should use a washing "
-"machine for that.  You need to remove them:"
-msgstr "柔らかいアイテムは洗濯機で洗う必要があります。食器洗浄機では洗浄できません。対象アイテム:"
-
-#: src/vehicle_use.cpp
-msgid ""
-"You turn the dishwasher off before it's finished the program, and open its "
-"lid."
-msgstr "洗浄が終了する前に食器洗浄機を停止し、ふたを開けました。"
-
-#: src/vehicle_use.cpp
-msgid "The dishwasher is empty, there's no point in starting it."
-msgstr "食器洗浄機内に何も入っていないため、起動しても意味がありません。"
-
-#: src/vehicle_use.cpp
-#, c-format
-msgid ""
-"You need 24 charges of water in tanks of the %s to fill the dishwasher."
-msgstr "食器洗浄機を使用するには、%sのタンク内に24単位の水が必要です。"
-
-#: src/vehicle_use.cpp
-msgid "You need 5 charges of detergent for the dishwasher."
-msgstr "食器洗浄機を使用するには5単位の洗剤が必要です。"
-
-#: src/vehicle_use.cpp
-msgid ""
-"You need to remove all non-filthy items from the dishwasher to start the "
-"washing program."
-msgstr "洗浄を開始する前に、食器洗浄機の中から汚れていないアイテムを取り出す必要があります。"
-
-#: src/vehicle_use.cpp
-msgid ""
-"You pour some detergent into the dishwasher, close its lid, and turn it on."
-"  The dishwasher is being filled with water from vehicle tanks."
-msgstr "食器洗浄機に洗剤を入れ、ふたを閉めて電源を入れました。車両のタンク内の水が食器洗浄機に注がれています。"
-
-#: src/vehicle_use.cpp
 msgid "The harness is blocked."
 msgstr "車両接続ハーネスが塞がれています。"
 
@@ -264710,22 +264638,6 @@ msgstr ""
 #: src/vehicle_use.cpp
 msgid "Use autodoc"
 msgstr ""
-
-#: src/vehicle_use.cpp
-msgid "Deactivate the washing machine"
-msgstr "洗濯機を停止する"
-
-#: src/vehicle_use.cpp
-msgid "Activate the washing machine (1.5 hours)"
-msgstr "洗濯機を起動する(1時間30分)"
-
-#: src/vehicle_use.cpp
-msgid "Deactivate the dishwasher"
-msgstr "食器洗浄機を停止する"
-
-#: src/vehicle_use.cpp
-msgid "Activate the dishwasher (1.5 hours)"
-msgstr "食器洗浄機を起動する(1時間30分)"
 
 #: src/vehicle_use.cpp
 msgid "Peek through the closed curtains"
