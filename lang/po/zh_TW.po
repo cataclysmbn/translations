@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-05-12 01:30+0000\n"
+"POT-Creation-Date: 2025-05-13 01:27+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -6173,6 +6173,20 @@ msgstr "你召唤了一些奶酪，但如果你是老鼠就不能召唤。"
 #: data/json/debug_spells.json
 msgid "Passed the anti-rat test"
 msgstr "通过了防鼠测试"
+
+#: data/json/debug_spells.json
+msgid "Debug Brawler-appropriate spell"
+msgstr "调试用的适合格斗家的法术"
+
+#. ~ Description for Debug Brawler-appropriate spell
+#: data/json/debug_spells.json
+msgid "Brawlers are allowed to spawn a sword."
+msgstr "格斗家可以生成一把剑。"
+
+#. ~ Message for SPELL 'Debug Brawler-appropriate spell'
+#: data/json/debug_spells.json
+msgid "Not cowardly!"
+msgstr "毫不胆怯！"
 
 #: data/json/dreams.json
 msgid "You have a strange dream about lizards."
@@ -91676,10 +91690,14 @@ msgstr[0] "H&K UMP45"
 
 #: data/json/items/gun/45.json
 msgid ""
-"Developed as a successor to the MP5 submachine gun, the UMP45 retains the "
-"earlier model's supreme accuracy and low recoil, but in the higher .45 "
-"caliber."
-msgstr "鑑於 MP5 這槍型的成功, UMP45 保留了之前型號的優點與低後座力, 並加大了口徑達到 .45 的口徑。"
+"Developed as a lower-cost successor to H&K's own MP5, the Universal Machine "
+"Pistol is a closed-bolt, simple blowback sub-machine gun constructed of "
+"lightweight polymer.  In order to make it more attractive to American police"
+" departments, it was offered in .40 S&W and .45 ACP as well as the "
+"ubiquitous 9x19mm.  This version is chambered in .45 ACP."
+msgstr ""
+"作为H&K公司MP5的一款低成本继任产品，这款通用冲锋手枪是一种闭锁式、简单自由枪机冲锋枪，采用轻质聚合材料制造。为了更具吸引力地推销给美国警察部门，它提供了"
+" .40 S&W、.45 ACP 以及广泛使用的 9x19mm 版本。该型号使用 .45 ACP 弹药。"
 
 #: data/json/items/gun/45.json
 msgid "M1911"
@@ -96739,8 +96757,10 @@ msgstr[0] "UMP45冲锋枪弹匣"
 
 #. ~ Description for {'str': 'UMP45 magazine'}
 #: data/json/items/magazine/45.json
-msgid "A standard 25-round box magazine for use with the H&K UMP45 SMG."
-msgstr "一个标准的25发弹匣，可用于H&K UMP45冲锋枪。"
+msgid ""
+"A straight, double-stack plastic box magazine for the UMP sub-machine gun in"
+" .45 ACP.  Holds 25 rounds."
+msgstr "一种用于UMP冲锋枪的直式双排塑料弹匣，口径为 .45 ACP，容量为25发。"
 
 #: data/json/items/magazine/45.json
 msgid "UMP45 makeshift magazine"
@@ -230054,12 +230074,16 @@ msgid "You don't know any spells to cast."
 msgstr "你不懂任何法术。"
 
 #: src/handle_action.cpp
-msgid "Pfft, magic is for COWARDS."
-msgstr "呵，魔法是懦夫才用的玩意。"
-
-#: src/handle_action.cpp
 msgid "You can't cast any of the spells you know!"
 msgstr "你不能施放任何你所知道的法术！"
+
+#: src/handle_action.cpp
+msgid "You don't know any spells you can cast as a Brawler!"
+msgstr "你不会任何格斗家可以施放的法术！"
+
+#: src/handle_action.cpp
+msgid "Pfft, that spell is for COWARDS, and a Brawler like you is no coward!"
+msgstr "呸，这种法术是给胆小鬼用的，而像你这样的格斗家可不是胆小鬼！"
 
 #: src/handle_action.cpp
 #, c-format
@@ -241395,6 +241419,10 @@ msgstr "需要可動性"
 #: src/magic.cpp
 msgid "can be cast through walls"
 msgstr "能夠隔牆施法"
+
+#: src/magic.cpp
+msgid "can be used by Brawlers"
+msgstr "格斗家可以使用"
 
 #: src/magic.cpp
 msgid "Classless"
