@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-05-13 01:27+0000\n"
+"POT-Creation-Date: 2025-05-16 01:28+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -11455,10 +11455,6 @@ msgstr "加工原木"
 #: data/json/item_actions.json
 msgid "Remove tool mods"
 msgstr "移除工具的模组"
-
-#: data/json/item_actions.json
-msgid "Cut up an item"
-msgstr "切割物品"
 
 #: data/json/item_actions.json
 msgid "Write on an item"
@@ -104360,10 +104356,10 @@ msgstr ""
 "一副电子手铐，警察和机器人用来限制嫌疑人行动的常用工具。它会持续的发出警报并且不停的呼叫警官过来将犯人带回警局关押。如果试图挣脱或者逃跑，手铐将主动电击疑犯。\n"
 "\"鉴于目前的治安情况，请在被电击和被吃掉脑子之间选择一个吧，亲。\""
 
-#: data/json/items/tool/electronics.json
+#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
 msgid "e-ink tablet PC"
 msgid_plural "e-ink tablet PCs"
-msgstr[0] "电纸书"
+msgstr[0] "平板电脑"
 
 #. ~ Description for {'str': 'e-ink tablet PC'}
 #: data/json/items/tool/electronics.json
@@ -129092,7 +129088,7 @@ msgstr "坚守阵地：不要移动到我旁边的障碍物上。"
 #: src/avatar_functions.cpp src/character_functions.cpp src/crafting.cpp
 #: src/game.cpp src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp
 #: src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp
-#: src/pickup.cpp src/veh_interact.cpp src/vehicle_use.cpp
+#: src/pickup.cpp src/salvage.cpp src/veh_interact.cpp src/vehicle_use.cpp
 msgid "Never mind."
 msgstr "算了。"
 
@@ -210629,6 +210625,19 @@ msgstr "沙漠地区"
 msgid "A testbed/WIP mod to showcase regional_map_settings JSON changes."
 msgstr "测试性未完工模组，用于展示regional_map_settings的变化"
 
+#: data/mods/ebook_lua/item_action.json
+msgid "Scan/Load a book"
+msgstr "扫描/加载一本书"
+
+#: data/mods/ebook_lua/modinfo.json
+msgid "Tablet e-book"
+msgstr "平板电子书"
+
+#. ~ Description for Tablet e-book
+#: data/mods/ebook_lua/modinfo.json
+msgid "Adding e-book system on tablet PC"
+msgstr "在平板电脑上添加电子书系统"
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr "深入林间"
@@ -212916,6 +212925,10 @@ msgstr "建设地形"
 msgid "Disassemble items"
 msgstr "拆解物品"
 
+#: data/raw/keybindings/keybindings.json
+msgid "Salvage items"
+msgstr "回收物品"
+
 #: data/raw/keybindings/keybindings.json src/gamemode_defense.cpp
 msgid "Sleep"
 msgstr "睡觉"
@@ -213522,6 +213535,10 @@ msgid "Mend"
 msgstr "修复"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Salvage"
+msgstr "回收"
+
+#: data/raw/keybindings/keybindings.json
 msgid "Disassemble"
 msgstr "拆解"
 
@@ -213644,6 +213661,18 @@ msgstr "显示下一个纪录"
 #: data/raw/keybindings/keybindings.json
 msgid "Toggle AIM Filter Autoreset"
 msgstr "切换高级物品管理器筛选器自动重置"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Abort"
+msgstr "中止"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Skip"
+msgstr "跳过"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Ignore further promts and finish"
+msgstr "忽略后续提示并完成"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Select random trait"
@@ -214475,10 +214504,6 @@ msgstr "根据排除法，这根线可以启动引擎。"
 #: src/activity_handlers.cpp
 msgid "The red wire always starts the engine, doesn't it?"
 msgstr "红色的线总是能启动引擎，不是么？"
-
-#: src/activity_handlers.cpp
-msgid "You finish salvaging."
-msgstr "你完成了回收。"
 
 #: src/activity_handlers.cpp
 msgid "There's no corpse to make into a zombie slave!"
@@ -218101,7 +218126,7 @@ msgstr "你将 %1$s 从 %2$s 中移除。"
 msgid "Permanently install your %1$s in your %2$s?"
 msgstr "确定要永久安装 %1$s 到 %2$s 上吗？"
 
-#: src/avatar_functions.cpp src/consumption.cpp src/iuse_actor.cpp
+#: src/avatar_functions.cpp src/consumption.cpp src/salvage.cpp
 msgid "You do not have that item."
 msgstr "你没有那东西。"
 
@@ -229210,13 +229235,13 @@ msgstr "选择要放进%s的物品"
 msgid "You have no items you could put into your %s."
 msgstr "你没有可以放进%s的物品。"
 
-#: src/game_inventory.cpp src/iuse.cpp
-msgid "Cut up what?"
-msgstr "切割什么？"
+#: src/game_inventory.cpp
+msgid "Salvage what?"
+msgstr "回收什么？"
 
 #: src/game_inventory.cpp
-msgid "You have nothing to cut up."
-msgstr "你没有可以切割的物品。"
+msgid "You have nothing to salvage."
+msgstr "你没有可以回收的东西。"
 
 #: src/game_inventory.cpp
 msgid "Repair what?"
@@ -230504,6 +230529,14 @@ msgstr "你在驾驶载具时无法拆解物品。"
 #: src/handle_action.cpp
 msgid "You can't disassemble items while you're riding."
 msgstr "你不能在骑乘的时候拆东西。"
+
+#: src/handle_action.cpp
+msgid "You can't salvage items while driving."
+msgstr "开车时无法回收物品。"
+
+#: src/handle_action.cpp
+msgid "You can't salvage items while you're riding."
+msgstr "骑乘时无法回收物品。"
 
 #: src/handle_action.cpp
 msgid "You can't construct while in a vehicle."
@@ -237141,6 +237174,10 @@ msgid "There's nothing to use the %s on here."
 msgstr "这里没有可以使用 %s 的对象。"
 
 #: src/iuse.cpp
+msgid "Cut up what?"
+msgstr "切割什么？"
+
+#: src/iuse.cpp
 msgid "Chop down which tree?"
 msgstr "砍倒哪棵树木？"
 
@@ -239257,60 +239294,6 @@ msgstr "如果天气不变，大概需要 %d 分钟来生火。"
 #, c-format
 msgid "At your skill level, it will take around %d minutes to light a fire."
 msgstr "按你当前技能等级，需要约 %d 分钟来生火。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Can't salvage anything from %s."
-msgstr "无法从 %s 中回收任何东西。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Try disassembling the %s instead."
-msgstr "可以尝试拆解 %s。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s is made of material that cannot be cut up."
-msgstr "%s 是由无法切割的材料制成。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Please empty the %s before cutting it up."
-msgstr "请在切割前清空 %s。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s is too small to salvage material from."
-msgstr "%s 太小了，分割不出有用的材料。"
-
-#: src/iuse_actor.cpp
-msgid "You are wielding that, are you sure?"
-msgstr "你正拿着它。确定要这么做吗？"
-
-#: src/iuse_actor.cpp
-msgid "You're wearing that, are you sure?"
-msgstr "你正穿着它，你确定吗？"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You can not cut the %s with itself."
-msgstr "你没法用 %s 切割它自己。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You try to salvage materials from the %s."
-msgstr "你试着分割 %s 回收材料。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Salvaged %1$i %2$s."
-msgid_plural "Salvaged %1$i %2$s."
-msgstr[0] "回收了 %1$i %2$s。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Could not salvage a %s."
-msgstr "没能回收 %s。"
 
 #: src/iuse_actor.cpp
 msgid "You can't inscribe an item that isn't solid!"
@@ -256434,6 +256417,96 @@ msgstr "安全模式没有在选项中打开。现在打开？"
 #: src/safemode_ui.cpp
 msgid "safemode configuration"
 msgstr "安全模式设置"
+
+#: src/salvage.cpp
+#, c-format
+msgctxt "YN_IGNORE_QUERY"
+msgid "<color_light_red>%s (Case Sensitive)</color>"
+msgstr "<color_light_red>%s（区分大小写）</color>"
+
+#: src/salvage.cpp
+#, c-format
+msgctxt "YN_IGNORE_QUERY"
+msgid "<color_light_red>%s</color>"
+msgstr "<color_light_red>%s</color>"
+
+#: src/salvage.cpp
+#, c-format
+msgid "Can't salvage anything from %s.\n"
+msgstr "无法从 %s 中回收任何东西。\n"
+
+#: src/salvage.cpp
+#, c-format
+msgid "Try disassembling the %s instead."
+msgstr "可以尝试拆解 %s。"
+
+#: src/salvage.cpp
+#, c-format
+msgid "The %s is made entirely of material that cannot be salvaged up."
+msgstr "%s完全由无法回收的材料构成。"
+
+#: src/salvage.cpp
+#, c-format
+msgid "Please empty the %s before salvaged it up."
+msgstr "请在回收%s之前将其清空。"
+
+#: src/salvage.cpp
+#, c-format
+msgid "The %s is too small to salvage any material from."
+msgstr "%s太小，无法从中回收出任何材料。"
+
+#: src/salvage.cpp
+#, c-format
+msgid "You lack proper tools to salvage any material from the %s."
+msgstr "你缺少从%s中回收材料所需的工具。"
+
+#: src/salvage.cpp
+#, c-format
+msgid ""
+"You lack proper tools to salvage %s from the %s, meaning no output for this "
+"material.  Salvage anyway?"
+msgstr "你缺少将%s从%s中回收出来的合适工具，因此不会获得该材料。仍然要回收吗？"
+
+#: src/salvage.cpp
+msgid "You are wielding that, salvage anyway?"
+msgstr "你正装备着它，仍然要回收吗？"
+
+#: src/salvage.cpp
+msgid "You're wearing that, salvage anyway?"
+msgstr "你正穿戴着它，仍然要回收吗？"
+
+#: src/salvage.cpp
+msgid "This item is marked as favorite, salvage anyway?"
+msgstr "此物品已标记为收藏，仍然要回收吗？"
+
+#: src/salvage.cpp
+#, c-format
+msgid "You try to salvage materials from the %s."
+msgstr "你试着分割 %s 回收材料。"
+
+#: src/salvage.cpp
+#, c-format
+msgid "Salvaged %1$i %2$s."
+msgid_plural "Salvaged %1$i %2$s."
+msgstr[0] "回收了 %1$i %2$s。"
+
+#: src/salvage.cpp
+#, c-format
+msgid "Could not salvage a %s."
+msgstr "没能回收 %s。"
+
+#: src/salvage.cpp
+#, c-format
+msgid "Salvaging the %s may yield:\n"
+msgstr "回收%s可能会获得：\n"
+
+#: src/salvage.cpp
+msgid "Really salvage?\n"
+msgstr "确定要回收吗？\n"
+
+#: src/salvage.cpp
+msgid "You finish salvaging."
+msgstr "你完成了回收。"
 
 #: src/savegame.cpp
 #, c-format

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-05-13 01:27+0000\n"
+"POT-Creation-Date: 2025-05-16 01:28+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/bn-team/teams/113585/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -11819,10 +11819,6 @@ msgstr "Rönkfa deszkává vágása"
 #: data/json/item_actions.json
 msgid "Remove tool mods"
 msgstr "Szerszámmod eltávolítása"
-
-#: data/json/item_actions.json
-msgid "Cut up an item"
-msgstr "Tárgy szétvágása"
 
 #: data/json/item_actions.json
 msgid "Write on an item"
@@ -113500,7 +113496,7 @@ msgid ""
 "However, since the only police likely to respond are undead, you may have a long wait ahead, unless you get creative…"
 msgstr ""
 
-#: data/json/items/tool/electronics.json
+#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
 msgid "e-ink tablet PC"
 msgid_plural "e-ink tablet PCs"
 msgstr[0] "E-Ink Tablet PC"
@@ -140952,7 +140948,7 @@ msgstr ""
 #: src/avatar_functions.cpp src/character_functions.cpp src/crafting.cpp
 #: src/game.cpp src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp
 #: src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp
-#: src/pickup.cpp src/veh_interact.cpp src/vehicle_use.cpp
+#: src/pickup.cpp src/salvage.cpp src/veh_interact.cpp src/vehicle_use.cpp
 msgid "Never mind."
 msgstr "Mindegy."
 
@@ -223903,6 +223899,19 @@ msgstr ""
 msgid "A testbed/WIP mod to showcase regional_map_settings JSON changes."
 msgstr ""
 
+#: data/mods/ebook_lua/item_action.json
+msgid "Scan/Load a book"
+msgstr ""
+
+#: data/mods/ebook_lua/modinfo.json
+msgid "Tablet e-book"
+msgstr ""
+
+#. ~ Description for Tablet e-book
+#: data/mods/ebook_lua/modinfo.json
+msgid "Adding e-book system on tablet PC"
+msgstr ""
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr ""
@@ -226272,6 +226281,10 @@ msgstr "Terület építése"
 msgid "Disassemble items"
 msgstr "Tárgyak szétszerelése"
 
+#: data/raw/keybindings/keybindings.json
+msgid "Salvage items"
+msgstr ""
+
 #: data/raw/keybindings/keybindings.json src/gamemode_defense.cpp
 msgid "Sleep"
 msgstr "Alvás"
@@ -226878,6 +226891,10 @@ msgid "Mend"
 msgstr ""
 
 #: data/raw/keybindings/keybindings.json
+msgid "Salvage"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
 msgid "Disassemble"
 msgstr ""
 
@@ -226999,6 +227016,18 @@ msgstr ""
 
 #: data/raw/keybindings/keybindings.json
 msgid "Toggle AIM Filter Autoreset"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Abort"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Skip"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Ignore further promts and finish"
 msgstr ""
 
 #: data/raw/keybindings/keybindings.json
@@ -227862,10 +227891,6 @@ msgstr "Kizárásos alapon ezzel a dróttal indul a motor."
 #: src/activity_handlers.cpp
 msgid "The red wire always starts the engine, doesn't it?"
 msgstr "Mindig a piros dróttal indul be a motor, ugye?"
-
-#: src/activity_handlers.cpp
-msgid "You finish salvaging."
-msgstr "Végeztél a kitermeléssel."
 
 #: src/activity_handlers.cpp
 msgid "There's no corpse to make into a zombie slave!"
@@ -231538,7 +231563,7 @@ msgstr "Eltávolítod a %1$st innen: %2$s."
 msgid "Permanently install your %1$s in your %2$s?"
 msgstr "Véglegesen beszereled ezt: %1$s ebbe: %2$s?"
 
-#: src/avatar_functions.cpp src/consumption.cpp src/iuse_actor.cpp
+#: src/avatar_functions.cpp src/consumption.cpp src/salvage.cpp
 msgid "You do not have that item."
 msgstr ""
 
@@ -242831,13 +242856,13 @@ msgstr ""
 msgid "You have no items you could put into your %s."
 msgstr ""
 
-#: src/game_inventory.cpp src/iuse.cpp
-msgid "Cut up what?"
-msgstr "Mit vágsz szét?"
+#: src/game_inventory.cpp
+msgid "Salvage what?"
+msgstr ""
 
 #: src/game_inventory.cpp
-msgid "You have nothing to cut up."
-msgstr "Semmit sem tudsz szétvágni."
+msgid "You have nothing to salvage."
+msgstr ""
 
 #: src/game_inventory.cpp
 msgid "Repair what?"
@@ -244128,6 +244153,14 @@ msgstr "Vezetés közben nem tudsz tárgyakat szétszedni."
 
 #: src/handle_action.cpp
 msgid "You can't disassemble items while you're riding."
+msgstr ""
+
+#: src/handle_action.cpp
+msgid "You can't salvage items while driving."
+msgstr ""
+
+#: src/handle_action.cpp
+msgid "You can't salvage items while you're riding."
 msgstr ""
 
 #: src/handle_action.cpp
@@ -250895,6 +250928,10 @@ msgid "There's nothing to use the %s on here."
 msgstr ""
 
 #: src/iuse.cpp
+msgid "Cut up what?"
+msgstr "Mit vágsz szét?"
+
+#: src/iuse.cpp
 msgid "Chop down which tree?"
 msgstr ""
 
@@ -253009,61 +253046,6 @@ msgstr ""
 #: src/iuse_actor.cpp
 #, c-format
 msgid "At your skill level, it will take around %d minutes to light a fire."
-msgstr ""
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Can't salvage anything from %s."
-msgstr ""
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Try disassembling the %s instead."
-msgstr ""
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s is made of material that cannot be cut up."
-msgstr ""
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Please empty the %s before cutting it up."
-msgstr ""
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s is too small to salvage material from."
-msgstr ""
-
-#: src/iuse_actor.cpp
-msgid "You are wielding that, are you sure?"
-msgstr ""
-
-#: src/iuse_actor.cpp
-msgid "You're wearing that, are you sure?"
-msgstr ""
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You can not cut the %s with itself."
-msgstr ""
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You try to salvage materials from the %s."
-msgstr ""
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Salvaged %1$i %2$s."
-msgid_plural "Salvaged %1$i %2$s."
-msgstr[0] ""
-msgstr[1] ""
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Could not salvage a %s."
 msgstr ""
 
 #: src/iuse_actor.cpp
@@ -270361,6 +270343,97 @@ msgstr ""
 #: src/safemode_ui.cpp
 msgid "safemode configuration"
 msgstr "bizt. mód beállítása"
+
+#: src/salvage.cpp
+#, c-format
+msgctxt "YN_IGNORE_QUERY"
+msgid "<color_light_red>%s (Case Sensitive)</color>"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgctxt "YN_IGNORE_QUERY"
+msgid "<color_light_red>%s</color>"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Can't salvage anything from %s.\n"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Try disassembling the %s instead."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "The %s is made entirely of material that cannot be salvaged up."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Please empty the %s before salvaged it up."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "The %s is too small to salvage any material from."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "You lack proper tools to salvage any material from the %s."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid ""
+"You lack proper tools to salvage %s from the %s, meaning no output for this "
+"material.  Salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "You are wielding that, salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "You're wearing that, salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "This item is marked as favorite, salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "You try to salvage materials from the %s."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Salvaged %1$i %2$s."
+msgid_plural "Salvaged %1$i %2$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Could not salvage a %s."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Salvaging the %s may yield:\n"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "Really salvage?\n"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "You finish salvaging."
+msgstr "Végeztél a kitermeléssel."
 
 #: src/savegame.cpp
 #, c-format

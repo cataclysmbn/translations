@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-05-15 01:27+0000\n"
+"POT-Creation-Date: 2025-05-16 01:28+0000\n"
 "Last-Translator: Fruitybite, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -11903,10 +11903,6 @@ msgstr "통나무를 널빤지로 가공"
 #: data/json/item_actions.json
 msgid "Remove tool mods"
 msgstr "도구 개조부품 제거"
-
-#: data/json/item_actions.json
-msgid "Cut up an item"
-msgstr "물품 절단"
 
 #: data/json/item_actions.json
 msgid "Write on an item"
@@ -107562,7 +107558,7 @@ msgstr ""
 "경찰로봇과 폭동진압로봇이 용의자를 체포하기 위해 사용하는 전기 수갑입니다. 지속적으로 사이렌을 울리며 이 수갑이 채워진 자를 체포된 범죄자로 인식하고 인간 경찰을 호출합니다. 지원병력이 올 때까지 대기하고, 탈출하거나 수갑을 벗으려 하지 마세요 - 전기 충격이 가해질겁니다.\n"
 "그렇지만, 응답할 경찰이 죄다 살아있는 시체가 되었으니, 뭔가 창의적인 생각을 해내지 않으면 아주, 아주 오랫동안 기다려야 할 것 같습니다..."
 
-#: data/json/items/tool/electronics.json
+#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
 msgid "e-ink tablet PC"
 msgid_plural "e-ink tablet PCs"
 msgstr[0] "전자잉크 태블릿 PC"
@@ -133337,7 +133333,7 @@ msgstr "대열을 유지해: 내 주변에 있는 장애물 쪽으로 이동하�
 #: src/avatar_functions.cpp src/character_functions.cpp src/crafting.cpp
 #: src/game.cpp src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp
 #: src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp
-#: src/pickup.cpp src/veh_interact.cpp src/vehicle_use.cpp
+#: src/pickup.cpp src/salvage.cpp src/veh_interact.cpp src/vehicle_use.cpp
 msgid "Never mind."
 msgstr "아무 것도 하지 않습니다."
 
@@ -217326,6 +217322,19 @@ msgstr "사막 지역"
 msgid "A testbed/WIP mod to showcase regional_map_settings JSON changes."
 msgstr "지역 지도 설정 (regional_map_settings) JSON 변경 예시로 만든 실험용/작업중 모드입니다."
 
+#: data/mods/ebook_lua/item_action.json
+msgid "Scan/Load a book"
+msgstr "책 스캔/불러오기"
+
+#: data/mods/ebook_lua/modinfo.json
+msgid "Tablet e-book"
+msgstr "태블릿 e북"
+
+#. ~ Description for Tablet e-book
+#: data/mods/ebook_lua/modinfo.json
+msgid "Adding e-book system on tablet PC"
+msgstr "태블릿 PC에 e북 기능을 추가합니다"
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr "숲속생활"
@@ -219691,6 +219700,10 @@ msgstr "지형 건설하기"
 msgid "Disassemble items"
 msgstr "물건 분해하기"
 
+#: data/raw/keybindings/keybindings.json
+msgid "Salvage items"
+msgstr "물품 분해"
+
 #: data/raw/keybindings/keybindings.json src/gamemode_defense.cpp
 msgid "Sleep"
 msgstr "잠자기"
@@ -220297,6 +220310,10 @@ msgid "Mend"
 msgstr "보수"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Salvage"
+msgstr "분해"
+
+#: data/raw/keybindings/keybindings.json
 msgid "Disassemble"
 msgstr "분해"
 
@@ -220419,6 +220436,18 @@ msgstr "다음 기록 확인"
 #: data/raw/keybindings/keybindings.json
 msgid "Toggle AIM Filter Autoreset"
 msgstr "고급 소지품 관리자 필터 자동 초기화 활성화/비활성화"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Abort"
+msgstr "중지"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Skip"
+msgstr "건너뛰기"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Ignore further promts and finish"
+msgstr "추가 입력 무시 후 종료"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Select random trait"
@@ -221257,10 +221286,6 @@ msgstr "소거법으로 이야기하자면, 이 전선을 합선시키면 엔진
 #: src/activity_handlers.cpp
 msgid "The red wire always starts the engine, doesn't it?"
 msgstr "시동이 걸리는건 항상 빨간 전선이더라. 안 그래?"
-
-#: src/activity_handlers.cpp
-msgid "You finish salvaging."
-msgstr "수거를 마칩니다."
 
 #: src/activity_handlers.cpp
 msgid "There's no corpse to make into a zombie slave!"
@@ -224890,7 +224915,7 @@ msgstr "%2$s에서 %1$s(을)를 떼어냈습니다."
 msgid "Permanently install your %1$s in your %2$s?"
 msgstr "%2$s에 %1$s(을)를 영구적으로 설치합니까?"
 
-#: src/avatar_functions.cpp src/consumption.cpp src/iuse_actor.cpp
+#: src/avatar_functions.cpp src/consumption.cpp src/salvage.cpp
 msgid "You do not have that item."
 msgstr "그런 물품은 가지고 있지 않습니다."
 
@@ -236042,13 +236067,13 @@ msgstr "%s에 넣을 물품을 선택하세요."
 msgid "You have no items you could put into your %s."
 msgstr "%s에 넣을 수 있는 물건이 없습니다."
 
-#: src/game_inventory.cpp src/iuse.cpp
-msgid "Cut up what?"
-msgstr "무엇을 잘라냅니까?"
+#: src/game_inventory.cpp
+msgid "Salvage what?"
+msgstr "어떤 물품을 분해합니까?"
 
 #: src/game_inventory.cpp
-msgid "You have nothing to cut up."
-msgstr "잘라낼 수 있는 것이 없습니다."
+msgid "You have nothing to salvage."
+msgstr "분해할 수 있는 물품이 없습니다."
 
 #: src/game_inventory.cpp
 msgid "Repair what?"
@@ -237335,6 +237360,14 @@ msgstr "운전 중에는 물건을 분해할 수 없습니다."
 #: src/handle_action.cpp
 msgid "You can't disassemble items while you're riding."
 msgstr "타고 있는 동안엔 물건을 분해할 수 없습니다."
+
+#: src/handle_action.cpp
+msgid "You can't salvage items while driving."
+msgstr "운전 중에는 분해할 수 없습니다."
+
+#: src/handle_action.cpp
+msgid "You can't salvage items while you're riding."
+msgstr "조종 중에는 분해할 수 없습니다."
 
 #: src/handle_action.cpp
 msgid "You can't construct while in a vehicle."
@@ -244004,6 +244037,10 @@ msgid "There's nothing to use the %s on here."
 msgstr "%s(을)를 여기에서 쓸만한 용도가 떠오르지 않습니다."
 
 #: src/iuse.cpp
+msgid "Cut up what?"
+msgstr "무엇을 잘라냅니까?"
+
+#: src/iuse.cpp
 msgid "Chop down which tree?"
 msgstr "어느 나무를 벱니까?"
 
@@ -246120,60 +246157,6 @@ msgstr "지금 같은 날씨가 계속 유지된다면, 불을 붙이는데 %d�
 #, c-format
 msgid "At your skill level, it will take around %d minutes to light a fire."
 msgstr "지금 기술 수준에서는 불을 붙이는데 %d분 정도 걸릴 것입니다."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Can't salvage anything from %s."
-msgstr "%s(으)로부터 아무것도 얻지 못했습니다."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Try disassembling the %s instead."
-msgstr "대신 %s(을)를 분해해보세요."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s is made of material that cannot be cut up."
-msgstr "%s(은)는 자를 수 없는 재질로 만들어졌습니다."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Please empty the %s before cutting it up."
-msgstr "자르기 전에 %s의 내용물을 비워주세요."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s is too small to salvage material from."
-msgstr "%s(은)는 쓸만한 재료를 얻기에 너무 작습니다."
-
-#: src/iuse_actor.cpp
-msgid "You are wielding that, are you sure?"
-msgstr "지금 손에 들고 있습니다만, 정말로 시도합니까?"
-
-#: src/iuse_actor.cpp
-msgid "You're wearing that, are you sure?"
-msgstr "지금 입고 있는 것입니다만, 정말로 시도합니까?"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You can not cut the %s with itself."
-msgstr "%s(으)로 그 자체를 자를 수는 없습니다."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You try to salvage materials from the %s."
-msgstr "%s에서 쓸만한 재료를 얻어내려 시도합니다."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Salvaged %1$i %2$s."
-msgid_plural "Salvaged %1$i %2$s."
-msgstr[0] "%1$i %2$s(을)를 얻었습니다."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Could not salvage a %s."
-msgstr "%s(을)를 얻지 못했습니다."
 
 #: src/iuse_actor.cpp
 msgid "You can't inscribe an item that isn't solid!"
@@ -263405,6 +263388,96 @@ msgstr "안전모드가 설정에서 활성화되어있지 않습니다. 지금 
 #: src/safemode_ui.cpp
 msgid "safemode configuration"
 msgstr "안전모드 설정"
+
+#: src/salvage.cpp
+#, c-format
+msgctxt "YN_IGNORE_QUERY"
+msgid "<color_light_red>%s (Case Sensitive)</color>"
+msgstr "<color_light_red>%s (대소문자 주의)</color>"
+
+#: src/salvage.cpp
+#, c-format
+msgctxt "YN_IGNORE_QUERY"
+msgid "<color_light_red>%s</color>"
+msgstr "<color_light_red>%s</color>"
+
+#: src/salvage.cpp
+#, c-format
+msgid "Can't salvage anything from %s.\n"
+msgstr "%s(을)를 분해해 얻을 수 있는 것이 없습니다.\n"
+
+#: src/salvage.cpp
+#, c-format
+msgid "Try disassembling the %s instead."
+msgstr "대신 %s(을)를 분해해보세요."
+
+#: src/salvage.cpp
+#, c-format
+msgid "The %s is made entirely of material that cannot be salvaged up."
+msgstr "%s(은)는 분해할 수 없는 재질만으로 이뤄져있습니다."
+
+#: src/salvage.cpp
+#, c-format
+msgid "Please empty the %s before salvaged it up."
+msgstr "%s(을)를 분해하려면 내용물을 비워야 합니다."
+
+#: src/salvage.cpp
+#, c-format
+msgid "The %s is too small to salvage any material from."
+msgstr "%s(은)는 너무 작아서 분해해 쓸만한 물품을 얻을 수 없습니다."
+
+#: src/salvage.cpp
+#, c-format
+msgid "You lack proper tools to salvage any material from the %s."
+msgstr "%s(을)를 분해하는데 필요한 적절한 도구가 부족합니다."
+
+#: src/salvage.cpp
+#, c-format
+msgid ""
+"You lack proper tools to salvage %s from the %s, meaning no output for this "
+"material.  Salvage anyway?"
+msgstr "%s(을)를 얻기 위해 %s(을)를 분해하는데 필요한 적절한 도구가 부족합니다. 그래도 계속 분해합니까?"
+
+#: src/salvage.cpp
+msgid "You are wielding that, salvage anyway?"
+msgstr "현재 해당 물품을 장비하고 있습니다. 그래도 계속 분해합니까?"
+
+#: src/salvage.cpp
+msgid "You're wearing that, salvage anyway?"
+msgstr "현재 해당 물품을 착용하고 있습니다. 그래도 계속 분해합니까?"
+
+#: src/salvage.cpp
+msgid "This item is marked as favorite, salvage anyway?"
+msgstr "해당 물품은 즐겨찾기로 등록되어있습니다. 그래도 계속 분해합니까?"
+
+#: src/salvage.cpp
+#, c-format
+msgid "You try to salvage materials from the %s."
+msgstr "%s에서 쓸만한 재료를 얻어내려 시도합니다."
+
+#: src/salvage.cpp
+#, c-format
+msgid "Salvaged %1$i %2$s."
+msgid_plural "Salvaged %1$i %2$s."
+msgstr[0] "%1$i %2$s(을)를 얻었습니다."
+
+#: src/salvage.cpp
+#, c-format
+msgid "Could not salvage a %s."
+msgstr "%s(을)를 얻지 못했습니다."
+
+#: src/salvage.cpp
+#, c-format
+msgid "Salvaging the %s may yield:\n"
+msgstr "%s(을)를 분해하여 얻을 수도 있는 물품은 다음과 같습니다:\n"
+
+#: src/salvage.cpp
+msgid "Really salvage?\n"
+msgstr "정말로 분해합니까?\n"
+
+#: src/salvage.cpp
+msgid "You finish salvaging."
+msgstr "수거를 마칩니다."
 
 #: src/savegame.cpp
 #, c-format

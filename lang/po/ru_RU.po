@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-05-14 01:27+0000\n"
+"POT-Creation-Date: 2025-05-16 01:28+0000\n"
 "Last-Translator: Ivan Saikyo, 2025\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -12945,10 +12945,6 @@ msgstr "Распилить бревно на доски"
 #: data/json/item_actions.json
 msgid "Remove tool mods"
 msgstr "Снять модификации с инструментов"
-
-#: data/json/item_actions.json
-msgid "Cut up an item"
-msgstr "Разрезать предмет"
 
 #: data/json/item_actions.json
 msgid "Write on an item"
@@ -132489,7 +132485,7 @@ msgstr ""
 "Пара электронных наручников, используемых полицией и омоновцами для задержания. Их непрерывная сирена четко идентифицирует владельца как арестованного преступника и предупреждает человеческую полицию. Дождитесь их прибытия, не пытайтесь сбежать или снять манжеты — они нанесут удар током.\n"
 "Однако, поскольку единственная полиция, которая может ответить — это нежить, вы можете дожидаться очень долго, если только не подойдёте к проблеме творчески…"
 
-#: data/json/items/tool/electronics.json
+#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
 msgid "e-ink tablet PC"
 msgid_plural "e-ink tablet PCs"
 msgstr[0] "планшет на э-чернилах"
@@ -163977,7 +163973,7 @@ msgstr "Держать строй: не иди в препятствия ряд�
 #: src/avatar_functions.cpp src/character_functions.cpp src/crafting.cpp
 #: src/game.cpp src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp
 #: src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp
-#: src/pickup.cpp src/veh_interact.cpp src/vehicle_use.cpp
+#: src/pickup.cpp src/salvage.cpp src/veh_interact.cpp src/vehicle_use.cpp
 msgid "Never mind."
 msgstr "Ладно, неважно."
 
@@ -235968,14 +235964,17 @@ msgid ""
 "A makeshift assembly of criniere, peytral, and croupiere made from chitin "
 "fitted to a thin mesh.  You could put this on a friendly bear."
 msgstr ""
+"Самодельная сборка из криньера, пейтраля и крупьера, сделанная из хитина, "
+"прикрепленного к тонкой сетке. Вы могли бы надеть это на дружелюбного "
+"медведя."
 
 #: data/mods/DinoMod/items/pets_bear_armor.json
 msgid "chainmail bear armor"
 msgid_plural "chainmail bear armors"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "кольчужный доспех медведя"
+msgstr[1] "кольчужный доспех медведя"
+msgstr[2] "кольчужный доспех медведя"
+msgstr[3] "кольчужный доспех медведя"
 
 #. ~ Description for {'str': 'chainmail bear armor'}
 #: data/mods/DinoMod/items/pets_bear_armor.json
@@ -235989,10 +235988,10 @@ msgstr ""
 #: data/mods/DinoMod/items/pets_bear_armor.json
 msgid "boiled leather bear barding with caparison"
 msgid_plural "boiled leather bear bardings with caparison"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "медвежий доспех из варёной кожи с капарис"
+msgstr[1] "медвежий доспех из варёной кожи с капарис"
+msgstr[2] "медвежий доспех из варёной кожи с капарис"
+msgstr[3] "медвежий доспех из варёной кожи с капарис"
 
 #. ~ Description for {'str': 'boiled leather bear barding with caparison',
 #. 'str_pl': 'boiled leather bear bardings with caparison'}
@@ -236002,6 +236001,10 @@ msgid ""
 "underneath.  This caparison depicts four men in heavy metal armor riddled "
 "with bullet marks.  You could put this on a friendly bear."
 msgstr ""
+"Полная Бард (доспех) для медведей, состоящая из вареной кожи с тканью под "
+"ней. Этот капарис изображает четырех мужчин в тяжелых металлических "
+"доспехах, изрешеченных следами пуль. Вы можете надеть ее на дружелюбного "
+"медведя."
 
 #: data/mods/DinoMod/items/pets_bear_armor.json
 msgid ""
@@ -262882,6 +262885,19 @@ msgstr ""
 "Пробный/ещё разрабатываемый мод для демонстрации изменений JSON в "
 "regional_map_settings."
 
+#: data/mods/ebook_lua/item_action.json
+msgid "Scan/Load a book"
+msgstr ""
+
+#: data/mods/ebook_lua/modinfo.json
+msgid "Tablet e-book"
+msgstr ""
+
+#. ~ Description for Tablet e-book
+#: data/mods/ebook_lua/modinfo.json
+msgid "Adding e-book system on tablet PC"
+msgstr ""
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr "В лесах"
@@ -265333,6 +265349,10 @@ msgstr "Строить"
 msgid "Disassemble items"
 msgstr "Разобрать предметы"
 
+#: data/raw/keybindings/keybindings.json
+msgid "Salvage items"
+msgstr ""
+
 #: data/raw/keybindings/keybindings.json src/gamemode_defense.cpp
 msgid "Sleep"
 msgstr "Спать"
@@ -265939,6 +265959,10 @@ msgid "Mend"
 msgstr "Отремонтировать"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Salvage"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
 msgid "Disassemble"
 msgstr "Разобрать"
 
@@ -266061,6 +266085,18 @@ msgstr "Показать следующую историю"
 #: data/raw/keybindings/keybindings.json
 msgid "Toggle AIM Filter Autoreset"
 msgstr "Переключить сброс фильтра расш. инвентаря"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Abort"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Skip"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Ignore further promts and finish"
+msgstr ""
 
 #: data/raw/keybindings/keybindings.json
 msgid "Select random trait"
@@ -266940,10 +266976,6 @@ msgstr "Методом исключения, этот провод запуст�
 #: src/activity_handlers.cpp
 msgid "The red wire always starts the engine, doesn't it?"
 msgstr "Красный провод всегда запускает двигатель, не так ли?"
-
-#: src/activity_handlers.cpp
-msgid "You finish salvaging."
-msgstr "Вы закончили собирать добычу."
 
 #: src/activity_handlers.cpp
 msgid "There's no corpse to make into a zombie slave!"
@@ -270765,7 +270797,7 @@ msgstr "Вы вынимаете %1$s из %2$s."
 msgid "Permanently install your %1$s in your %2$s?"
 msgstr "Установить %1$s в %2$s навсегда?"
 
-#: src/avatar_functions.cpp src/consumption.cpp src/iuse_actor.cpp
+#: src/avatar_functions.cpp src/consumption.cpp src/salvage.cpp
 msgid "You do not have that item."
 msgstr "У вас нет этого предмета."
 
@@ -282269,13 +282301,13 @@ msgstr "Выберите предмет для помещения в %s"
 msgid "You have no items you could put into your %s."
 msgstr "У вас нет предметов, которые вы могли бы убрать в %s."
 
-#: src/game_inventory.cpp src/iuse.cpp
-msgid "Cut up what?"
-msgstr "Что разрезать?"
+#: src/game_inventory.cpp
+msgid "Salvage what?"
+msgstr ""
 
 #: src/game_inventory.cpp
-msgid "You have nothing to cut up."
-msgstr "Вам нечего резать."
+msgid "You have nothing to salvage."
+msgstr ""
 
 #: src/game_inventory.cpp
 msgid "Repair what?"
@@ -283608,6 +283640,14 @@ msgstr "Нельзя разбирать предметы, находясь в т
 #: src/handle_action.cpp
 msgid "You can't disassemble items while you're riding."
 msgstr "Вы не можете ничего разбирать во время езды верхом."
+
+#: src/handle_action.cpp
+msgid "You can't salvage items while driving."
+msgstr ""
+
+#: src/handle_action.cpp
+msgid "You can't salvage items while you're riding."
+msgstr ""
 
 #: src/handle_action.cpp
 msgid "You can't construct while in a vehicle."
@@ -290578,6 +290618,10 @@ msgid "There's nothing to use the %s on here."
 msgstr "Здесь %s не к чему применять."
 
 #: src/iuse.cpp
+msgid "Cut up what?"
+msgstr "Что разрезать?"
+
+#: src/iuse.cpp
 msgid "Chop down which tree?"
 msgstr "Какое дерево срубить?"
 
@@ -292770,65 +292814,6 @@ msgstr "Если текущая погода не изменится, то ра�
 #, c-format
 msgid "At your skill level, it will take around %d minutes to light a fire."
 msgstr "С вашим уровнем навыка разведение огня займёт %d минут."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Can't salvage anything from %s."
-msgstr "Нельзя извлечь что-нибудь из %s."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Try disassembling the %s instead."
-msgstr "Вместо этого попытайтесь разобрать %s."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s is made of material that cannot be cut up."
-msgstr "%s из материала, который нельзя разрезать."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Please empty the %s before cutting it up."
-msgstr "Пожалуйста, опустошите %s перед тем, как разрезать."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s is too small to salvage material from."
-msgstr ""
-"%s имеет слишком маленькие размеры, чтобы можно было извлечь какие-нибудь "
-"материалы."
-
-#: src/iuse_actor.cpp
-msgid "You are wielding that, are you sure?"
-msgstr "Вы вооружены этим. Уверены?"
-
-#: src/iuse_actor.cpp
-msgid "You're wearing that, are you sure?"
-msgstr "Вы ведь носите это, вы уверены?"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You can not cut the %s with itself."
-msgstr "Вы не можете разрезать %s при помощи этого же самого предмета."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You try to salvage materials from the %s."
-msgstr "Вы пытаетесь извлечь материалы из %s."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Salvaged %1$i %2$s."
-msgid_plural "Salvaged %1$i %2$s."
-msgstr[0] "Извлечено: %1$i %2$s."
-msgstr[1] "Извлечено: %1$i %2$s."
-msgstr[2] "Извлечено: %1$i %2$s."
-msgstr[3] "Извлечено: %1$i %2$s."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Could not salvage a %s."
-msgstr "Не удалось извлечь: %s."
 
 #: src/iuse_actor.cpp
 msgid "You can't inscribe an item that isn't solid!"
@@ -310699,6 +310684,99 @@ msgstr "Безопасный режим не включён в настройк�
 #: src/safemode_ui.cpp
 msgid "safemode configuration"
 msgstr "конфигурация безопасного режима"
+
+#: src/salvage.cpp
+#, c-format
+msgctxt "YN_IGNORE_QUERY"
+msgid "<color_light_red>%s (Case Sensitive)</color>"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgctxt "YN_IGNORE_QUERY"
+msgid "<color_light_red>%s</color>"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Can't salvage anything from %s.\n"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Try disassembling the %s instead."
+msgstr "Вместо этого попытайтесь разобрать %s."
+
+#: src/salvage.cpp
+#, c-format
+msgid "The %s is made entirely of material that cannot be salvaged up."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Please empty the %s before salvaged it up."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "The %s is too small to salvage any material from."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "You lack proper tools to salvage any material from the %s."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid ""
+"You lack proper tools to salvage %s from the %s, meaning no output for this "
+"material.  Salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "You are wielding that, salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "You're wearing that, salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "This item is marked as favorite, salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "You try to salvage materials from the %s."
+msgstr "Вы пытаетесь извлечь материалы из %s."
+
+#: src/salvage.cpp
+#, c-format
+msgid "Salvaged %1$i %2$s."
+msgid_plural "Salvaged %1$i %2$s."
+msgstr[0] "Извлечено: %1$i %2$s."
+msgstr[1] "Извлечено: %1$i %2$s."
+msgstr[2] "Извлечено: %1$i %2$s."
+msgstr[3] "Извлечено: %1$i %2$s."
+
+#: src/salvage.cpp
+#, c-format
+msgid "Could not salvage a %s."
+msgstr "Не удалось извлечь: %s."
+
+#: src/salvage.cpp
+#, c-format
+msgid "Salvaging the %s may yield:\n"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "Really salvage?\n"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "You finish salvaging."
+msgstr "Вы закончили собирать добычу."
 
 #: src/savegame.cpp
 #, c-format

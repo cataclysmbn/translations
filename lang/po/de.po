@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-05-13 01:27+0000\n"
+"POT-Creation-Date: 2025-05-16 01:28+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: German (https://app.transifex.com/bn-team/teams/113585/de/)\n"
 "MIME-Version: 1.0\n"
@@ -11904,10 +11904,6 @@ msgstr "Holzscheit zu Planken zerhacken"
 #: data/json/item_actions.json
 msgid "Remove tool mods"
 msgstr "Werkzeugmodifikationen entfernen"
-
-#: data/json/item_actions.json
-msgid "Cut up an item"
-msgstr "Einen Gegenstand aufschneiden"
 
 #: data/json/item_actions.json
 msgid "Write on an item"
@@ -114910,7 +114906,7 @@ msgid ""
 "However, since the only police likely to respond are undead, you may have a long wait ahead, unless you get creative…"
 msgstr ""
 
-#: data/json/items/tool/electronics.json
+#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
 msgid "e-ink tablet PC"
 msgid_plural "e-ink tablet PCs"
 msgstr[0] "E-Ink-Tablet-PC"
@@ -142647,7 +142643,7 @@ msgstr ""
 #: src/avatar_functions.cpp src/character_functions.cpp src/crafting.cpp
 #: src/game.cpp src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp
 #: src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp
-#: src/pickup.cpp src/veh_interact.cpp src/vehicle_use.cpp
+#: src/pickup.cpp src/salvage.cpp src/veh_interact.cpp src/vehicle_use.cpp
 msgid "Never mind."
 msgstr "Ach, schon gut."
 
@@ -228273,6 +228269,19 @@ msgstr ""
 msgid "A testbed/WIP mod to showcase regional_map_settings JSON changes."
 msgstr ""
 
+#: data/mods/ebook_lua/item_action.json
+msgid "Scan/Load a book"
+msgstr ""
+
+#: data/mods/ebook_lua/modinfo.json
+msgid "Tablet e-book"
+msgstr ""
+
+#. ~ Description for Tablet e-book
+#: data/mods/ebook_lua/modinfo.json
+msgid "Adding e-book system on tablet PC"
+msgstr ""
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr ""
@@ -230661,6 +230670,10 @@ msgstr "Gelände bebauen"
 msgid "Disassemble items"
 msgstr "Gegenstände demontieren"
 
+#: data/raw/keybindings/keybindings.json
+msgid "Salvage items"
+msgstr ""
+
 #: data/raw/keybindings/keybindings.json src/gamemode_defense.cpp
 msgid "Sleep"
 msgstr "Schlafen"
@@ -231267,6 +231280,10 @@ msgid "Mend"
 msgstr ""
 
 #: data/raw/keybindings/keybindings.json
+msgid "Salvage"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
 msgid "Disassemble"
 msgstr ""
 
@@ -231388,6 +231405,18 @@ msgstr ""
 
 #: data/raw/keybindings/keybindings.json
 msgid "Toggle AIM Filter Autoreset"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Abort"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Skip"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Ignore further promts and finish"
 msgstr ""
 
 #: data/raw/keybindings/keybindings.json
@@ -232263,10 +232292,6 @@ msgstr "Nach dem Ausschlussprinzip wird dieses Kabel den Motor starten."
 #: src/activity_handlers.cpp
 msgid "The red wire always starts the engine, doesn't it?"
 msgstr "Das rote Kabel startet immer den Motor, oder?"
-
-#: src/activity_handlers.cpp
-msgid "You finish salvaging."
-msgstr "Du bist fertig mit der Gewinnung."
 
 #: src/activity_handlers.cpp
 msgid "There's no corpse to make into a zombie slave!"
@@ -235954,7 +235979,7 @@ msgstr "Du entfernst dein %1$s von deiner %2$s."
 msgid "Permanently install your %1$s in your %2$s?"
 msgstr "%1$s permanent in dein(en) %2$s installieren?"
 
-#: src/avatar_functions.cpp src/consumption.cpp src/iuse_actor.cpp
+#: src/avatar_functions.cpp src/consumption.cpp src/salvage.cpp
 msgid "You do not have that item."
 msgstr "Diesen Gegenstand hast du nicht."
 
@@ -247172,13 +247197,13 @@ msgstr ""
 msgid "You have no items you could put into your %s."
 msgstr ""
 
-#: src/game_inventory.cpp src/iuse.cpp
-msgid "Cut up what?"
-msgstr "Was aufschneiden?"
+#: src/game_inventory.cpp
+msgid "Salvage what?"
+msgstr ""
 
 #: src/game_inventory.cpp
-msgid "You have nothing to cut up."
-msgstr "Du hast nichts zum aufschneiden."
+msgid "You have nothing to salvage."
+msgstr ""
 
 #: src/game_inventory.cpp
 msgid "Repair what?"
@@ -248479,6 +248504,14 @@ msgstr "Du kannst bei der Fahrt keine Gegenstände demontieren."
 
 #: src/handle_action.cpp
 msgid "You can't disassemble items while you're riding."
+msgstr ""
+
+#: src/handle_action.cpp
+msgid "You can't salvage items while driving."
+msgstr ""
+
+#: src/handle_action.cpp
+msgid "You can't salvage items while you're riding."
 msgstr ""
 
 #: src/handle_action.cpp
@@ -255313,6 +255346,10 @@ msgid "There's nothing to use the %s on here."
 msgstr ""
 
 #: src/iuse.cpp
+msgid "Cut up what?"
+msgstr "Was aufschneiden?"
+
+#: src/iuse.cpp
 msgid "Chop down which tree?"
 msgstr "Welchen Baum fällen?"
 
@@ -257475,62 +257512,6 @@ msgid "At your skill level, it will take around %d minutes to light a fire."
 msgstr ""
 "Mit deiner Fertigungsstufe wird es ca. %d Minuten brauchen, um ein Feuer zu "
 "entfachen."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Can't salvage anything from %s."
-msgstr "Aus %s kann nichts geborgen werden."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Try disassembling the %s instead."
-msgstr "Versuch, stattdessen %s zu demontieren."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s is made of material that cannot be cut up."
-msgstr ""
-"%s besteht aus einem Material, welches nicht aufgeschnitten werden kann."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Please empty the %s before cutting it up."
-msgstr "Bitte leere %s, bevor du es aufschneidest."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s is too small to salvage material from."
-msgstr "%s ist zu klein, um Materialien daraus zu bergen."
-
-#: src/iuse_actor.cpp
-msgid "You are wielding that, are you sure?"
-msgstr "Du hältst das in deiner Hand, bist du sicher?"
-
-#: src/iuse_actor.cpp
-msgid "You're wearing that, are you sure?"
-msgstr "Dies trägst du. Bist du sicher?"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You can not cut the %s with itself."
-msgstr "Du kannst %s nicht mit sich selbst zerschneiden."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You try to salvage materials from the %s."
-msgstr "Du versuchst, Materialien aus dem %s zu bergen."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Salvaged %1$i %2$s."
-msgid_plural "Salvaged %1$i %2$s."
-msgstr[0] "%1$i %2$s geborgen."
-msgstr[1] "%1$i %2$s geborgen."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "Could not salvage a %s."
-msgstr "1 %s konnte nicht geborgen werden."
 
 #: src/iuse_actor.cpp
 msgid "You can't inscribe an item that isn't solid!"
@@ -275038,6 +275019,97 @@ msgstr ""
 #: src/safemode_ui.cpp
 msgid "safemode configuration"
 msgstr "Sicherheitsmoduskonfiguration"
+
+#: src/salvage.cpp
+#, c-format
+msgctxt "YN_IGNORE_QUERY"
+msgid "<color_light_red>%s (Case Sensitive)</color>"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgctxt "YN_IGNORE_QUERY"
+msgid "<color_light_red>%s</color>"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Can't salvage anything from %s.\n"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Try disassembling the %s instead."
+msgstr "Versuch, stattdessen %s zu demontieren."
+
+#: src/salvage.cpp
+#, c-format
+msgid "The %s is made entirely of material that cannot be salvaged up."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "Please empty the %s before salvaged it up."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "The %s is too small to salvage any material from."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "You lack proper tools to salvage any material from the %s."
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid ""
+"You lack proper tools to salvage %s from the %s, meaning no output for this "
+"material.  Salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "You are wielding that, salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "You're wearing that, salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "This item is marked as favorite, salvage anyway?"
+msgstr ""
+
+#: src/salvage.cpp
+#, c-format
+msgid "You try to salvage materials from the %s."
+msgstr "Du versuchst, Materialien aus dem %s zu bergen."
+
+#: src/salvage.cpp
+#, c-format
+msgid "Salvaged %1$i %2$s."
+msgid_plural "Salvaged %1$i %2$s."
+msgstr[0] "%1$i %2$s geborgen."
+msgstr[1] "%1$i %2$s geborgen."
+
+#: src/salvage.cpp
+#, c-format
+msgid "Could not salvage a %s."
+msgstr "1 %s konnte nicht geborgen werden."
+
+#: src/salvage.cpp
+#, c-format
+msgid "Salvaging the %s may yield:\n"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "Really salvage?\n"
+msgstr ""
+
+#: src/salvage.cpp
+msgid "You finish salvaging."
+msgstr "Du bist fertig mit der Gewinnung."
 
 #: src/savegame.cpp
 #, c-format
