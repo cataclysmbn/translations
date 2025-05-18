@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-05-17 01:27+0000\n"
+"POT-Creation-Date: 2025-05-18 01:34+0000\n"
 "Last-Translator: Fruitybite, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -83673,7 +83673,7 @@ msgstr[0] ""
 #. ~ Use action activation_message for {'str_sp': 'sizzurp lean'}.
 #: data/json/items/comestibles/med.json
 msgid "You take a sip of purple."
-msgstr ""
+msgstr "보라색 맛이 납니다."
 
 #. ~ Description for {'str_sp': 'sizzurp lean'}
 #: data/json/items/comestibles/med.json
@@ -122936,6 +122936,9 @@ msgid ""
 "recognition system and M2HB makes a deadly combination for anything short of"
 " an armored vehicle."
 msgstr ""
+"제너럴 아토믹스 사의 TX-10 '헤비'는 M2HB 기관총이 장착된 자동화 군용 터렛입니다. 경량 차량 또는 엄폐물 뒤에 숨은 적을 "
+"상대할 수 있도록 강력하며 범용성 높은 .50 BMG 탄을 사용합니다. 첨단 대상 인지 체계와 M2HB의 파괴적인 조합을 통해 중장갑 "
+"차량 이외의 모든 것을 파괴할 수 있습니다."
 
 #: data/json/monsters/turrets.json
 msgid "grenade launcher milspec turret"
@@ -204461,7 +204464,7 @@ msgstr "점프 패드"
 #. ~ Description for jump pad
 #: data/mods/Jump Pad/items/jump_pad.json
 msgid "A trampoline made of energy that allows you to jump up to a ledge."
-msgstr ""
+msgstr "높은 절벽으로 뛰어오를 수 있게 돕는, 에너지로 만들어진 트램펄린입니다."
 
 #: data/mods/Limit Fungal Growth/modinfo.json
 msgid "Limit Fungal Growth"
@@ -220481,6 +220484,46 @@ msgstr "와이드 디스플레이 활성화/비활성화"
 #: data/raw/keybindings/messages.json
 msgid "Toggle full height display"
 msgstr "전체 높이 디스플레이 활성화/비활성화"
+
+#: data/raw/keybindings/mouse.json
+msgid "Left mouse button pressed"
+msgstr "왼쪽 마우스 버튼 눌림"
+
+#: data/raw/keybindings/mouse.json
+msgid "Left mouse button released"
+msgstr "왼쪽 마우스 버튼 풀림"
+
+#: data/raw/keybindings/mouse.json
+msgid "Right mouse button pressed"
+msgstr "오른쪽 마우스 버튼 눌림"
+
+#: data/raw/keybindings/mouse.json
+msgid "Right mouse button released"
+msgstr "오른쪽 마우스 버튼 풀림"
+
+#: data/raw/keybindings/mouse.json
+msgid "Middle mouse button pressed"
+msgstr "가운데 마우스 버튼 눌림"
+
+#: data/raw/keybindings/mouse.json
+msgid "Middle mouse button released"
+msgstr "가운데 마우스 버튼 풀림"
+
+#: data/raw/keybindings/mouse.json
+msgid "First extra mouse button pressed"
+msgstr "1번 추가 마우스 버튼 눌림"
+
+#: data/raw/keybindings/mouse.json
+msgid "First extra mouse button released"
+msgstr "1번 추가 마우스 버튼 풀림"
+
+#: data/raw/keybindings/mouse.json
+msgid "Second extra mouse button pressed"
+msgstr "2번 추가 마우스 버튼 눌림"
+
+#: data/raw/keybindings/mouse.json
+msgid "Second extra mouse button released"
+msgstr "2번 추가 마우스 버튼 풀림"
 
 #: data/raw/keybindings/vehicle.json src/vehicle_use.cpp
 msgid "Control multiple electronics"
@@ -238066,7 +238109,7 @@ msgstr ""
 msgid "Select an action"
 msgstr "행동 선택"
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle_use.cpp
 msgid "Get items"
 msgstr "물건 줍기"
 
@@ -240282,26 +240325,54 @@ msgid "JOY_7"
 msgstr "조이스틱_7"
 
 #: src/input.cpp
-#, c-format
-msgctxt "function key name"
-msgid "F%d"
-msgstr "F%d"
-
-#: src/input.cpp
-#, c-format
-msgctxt "control key name"
-msgid "CTRL+%c"
-msgstr "컨트롤+%c"
-
-#: src/input.cpp
 msgctxt "key name"
 msgid "MOUSE_LEFT"
 msgstr "마우스_왼쪽"
 
 #: src/input.cpp
 msgctxt "key name"
+msgid "MOUSE_LEFT_PRESSED"
+msgstr "MOUSE_LEFT_PRESSED"
+
+#: src/input.cpp
+msgctxt "key name"
 msgid "MOUSE_RIGHT"
 msgstr "마우스_오른쪽"
+
+#: src/input.cpp
+msgctxt "key name"
+msgid "MOUSE_RIGHT_PRESSED"
+msgstr "MOUSE_RIGHT_PRESSED"
+
+#: src/input.cpp
+msgctxt "key name"
+msgid "MOUSE_MIDDLE_RELEASED"
+msgstr "MOUSE_MIDDLE_RELEASED"
+
+#: src/input.cpp
+msgctxt "key name"
+msgid "MOUSE_MIDDLE_PRESSED"
+msgstr "MOUSE_MIDDLE_PRESSED"
+
+#: src/input.cpp
+msgctxt "key name"
+msgid "MOUSE_X1_RELEASED"
+msgstr "MOUSE_X1_RELEASED"
+
+#: src/input.cpp
+msgctxt "key name"
+msgid "MOUSE_X1_PRESSED"
+msgstr "MOUSE_X1_PRESSED"
+
+#: src/input.cpp
+msgctxt "key name"
+msgid "MOUSE_X2_RELEASED"
+msgstr "MOUSE_X2_RELEASED"
+
+#: src/input.cpp
+msgctxt "key name"
+msgid "MOUSE_X2_PRESSED"
+msgstr "MOUSE_X2_PRESSED"
 
 #: src/input.cpp
 msgctxt "key name"
@@ -240317,6 +240388,18 @@ msgstr "아래로 스크롤"
 msgctxt "key name"
 msgid "MOUSE_MOVE"
 msgstr "마우스 이동"
+
+#: src/input.cpp
+#, c-format
+msgctxt "function key name"
+msgid "F%d"
+msgstr "F%d"
+
+#: src/input.cpp
+#, c-format
+msgctxt "control key name"
+msgid "CTRL+%c"
+msgstr "컨트롤+%c"
 
 #: src/input.cpp
 msgctxt "key name"
