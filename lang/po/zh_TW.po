@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-05-18 01:34+0000\n"
+"POT-Creation-Date: 2025-05-22 01:33+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -110431,6 +110431,18 @@ msgstr[0] "充氣氣囊"
 msgid "An inflatable airbag."
 msgstr "一個可充氣的安全氣囊。"
 
+#: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
+msgid "hovercraft impeller"
+msgid_plural "hovercraft impeller"
+msgstr[0] "气垫船推进器"
+
+#. ~ Description for {'str_sp': 'hovercraft impeller'}
+#: data/json/items/vehicle/boat.json
+msgid ""
+"An impeller and skirt used by air-cushion-vehicles to float just above the "
+"surface of land or water."
+msgstr "一种用于气垫车辆的推进器和裙边，使其能够在陆地或水面上方略微悬浮。"
+
 #: data/json/items/vehicle/cables.json
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "jumper cable"
@@ -174462,6 +174474,13 @@ msgid ""
 "of your boat."
 msgstr "輕巧的高級碳纖維硬板，可防止船隻進水。"
 
+#. ~ Description for {'str': 'hovercraft impeller'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"An impeller and skirt used by air-cushion vehicles to float just above the "
+"surface of land or water."
+msgstr "一种用于气垫车辆的推进器和裙边，使其能够在陆地或水面上方略微悬浮。"
+
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "small sail"
 msgstr "小型帆"
@@ -175506,6 +175525,10 @@ msgstr "筏"
 #: data/json/vehicles/boats.json
 msgid "motor boat"
 msgstr "摩托快艇"
+
+#: data/json/vehicles/boats.json
+msgid "hovercraft"
+msgstr "气垫船"
 
 #: data/json/vehicles/boats.json
 msgid "wooden rowboat"
@@ -212633,7 +212656,7 @@ msgstr "拆解物品"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Salvage items"
-msgstr "回收物品"
+msgstr "切割回收物品"
 
 #: data/raw/keybindings/keybindings.json src/gamemode_defense.cpp
 msgid "Sleep"
@@ -213242,7 +213265,7 @@ msgstr "修复"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Salvage"
-msgstr "回收"
+msgstr "切割回收"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Disassemble"
@@ -229007,11 +229030,11 @@ msgstr "你没有可以放进%s的物品。"
 
 #: src/game_inventory.cpp
 msgid "Salvage what?"
-msgstr "回收什么？"
+msgstr "切割回收什么？"
 
 #: src/game_inventory.cpp
 msgid "You have nothing to salvage."
-msgstr "你没有可以回收的东西。"
+msgstr "你没有可以切割回收的东西。"
 
 #: src/game_inventory.cpp
 msgid "Repair what?"
@@ -230302,11 +230325,11 @@ msgstr "騎乘時不能拆解物品。"
 
 #: src/handle_action.cpp
 msgid "You can't salvage items while driving."
-msgstr "开车时无法回收物品。"
+msgstr "开车时无法切割回收物品。"
 
 #: src/handle_action.cpp
 msgid "You can't salvage items while you're riding."
-msgstr "骑乘时无法回收物品。"
+msgstr "骑乘时无法切割回收物品。"
 
 #: src/handle_action.cpp
 msgid "You can't construct while in a vehicle."
@@ -256259,7 +256282,7 @@ msgstr "<color_light_red>%s</color>"
 #: src/salvage.cpp
 #, c-format
 msgid "Can't salvage anything from %s.\n"
-msgstr "无法从 %s 中回收任何东西。\n"
+msgstr "无法从 %s 中切割回收任何东西。\n"
 
 #: src/salvage.cpp
 #, c-format
@@ -256269,41 +256292,41 @@ msgstr "嘗試拆解 %s 來代替。"
 #: src/salvage.cpp
 #, c-format
 msgid "The %s is made entirely of material that cannot be salvaged up."
-msgstr "%s完全由无法回收的材料构成。"
+msgstr "%s完全由无法切割回收的材料构成。"
 
 #: src/salvage.cpp
 #, c-format
 msgid "Please empty the %s before salvaged it up."
-msgstr "请在回收%s之前将其清空。"
+msgstr "请在切割回收%s之前将其清空。"
 
 #: src/salvage.cpp
 #, c-format
 msgid "The %s is too small to salvage any material from."
-msgstr "%s太小，无法从中回收出任何材料。"
+msgstr "%s太小，无法从中切割回收出任何材料。"
 
 #: src/salvage.cpp
 #, c-format
 msgid "You lack proper tools to salvage any material from the %s."
-msgstr "你缺少从%s中回收材料所需的工具。"
+msgstr "你缺少从%s中切割回收材料所需的工具。"
 
 #: src/salvage.cpp
 #, c-format
 msgid ""
 "You lack proper tools to salvage %s from the %s, meaning no output for this "
 "material.  Salvage anyway?"
-msgstr "你缺少将%s从%s中回收出来的合适工具，因此不会获得该材料。仍然要回收吗？"
+msgstr "你缺少将%s从%s中切割回收出来的合适工具，因此不会获得该材料。仍然要切割回收吗？"
 
 #: src/salvage.cpp
 msgid "You are wielding that, salvage anyway?"
-msgstr "你正装备着它，仍然要回收吗？"
+msgstr "你正装备着它，仍然要切割回收吗？"
 
 #: src/salvage.cpp
 msgid "You're wearing that, salvage anyway?"
-msgstr "你正穿戴着它，仍然要回收吗？"
+msgstr "你正穿戴着它，仍然要切割回收吗？"
 
 #: src/salvage.cpp
 msgid "This item is marked as favorite, salvage anyway?"
-msgstr "此物品已标记为收藏，仍然要回收吗？"
+msgstr "此物品已标记为收藏，仍然要切割回收吗？"
 
 #: src/salvage.cpp
 #, c-format
@@ -256324,11 +256347,11 @@ msgstr "無法回收 %s。"
 #: src/salvage.cpp
 #, c-format
 msgid "Salvaging the %s may yield:\n"
-msgstr "回收%s可能会获得：\n"
+msgstr "切割回收%s可能会获得：\n"
 
 #: src/salvage.cpp
 msgid "Really salvage?\n"
-msgstr "确定要回收吗？\n"
+msgstr "确定要切割回收吗？\n"
 
 #: src/salvage.cpp
 msgid "You finish salvaging."
