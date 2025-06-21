@@ -26,15 +26,15 @@
 # Jaesung Han (Re_Star), 2024
 # DelFe, 2024
 # JJ J <congstrot@gmail.com>, 2024
-# 김동현, 2025
 # Coolthulhu <Coolthulhu@gmail.com>, 2025
 # Fruitybite, 2025
+# 김동현, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-06-20 01:34+0000\n"
-"Last-Translator: Fruitybite, 2025\n"
+"POT-Creation-Date: 2025-06-21 01:32+0000\n"
+"Last-Translator: 김동현, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4946,6 +4946,10 @@ msgid "Can be deconstructed without tools."
 msgstr "도구 없이도 분해할 수 있습니다."
 
 #: data/json/construction.json
+msgid "Needs to be supported on both sides by fencing, walls, etc."
+msgstr "울타리나 벽 따위로 양쪽에서 지지해주어야 합니다."
+
+#: data/json/construction.json
 msgid "Must be supported on at least two sides."
 msgstr "적어도 두 방향에서 지지해줘야 합니다."
 
@@ -4960,10 +4964,6 @@ msgid ""
 "Must be between palisade walls to function, and at least one wall must have "
 "an adjacent rope & pulley system."
 msgstr "말뚝 울타리벽 사이에서만 기능하며, 적어도 벽 하나는 도르래 장치와 인접해야 합니다."
-
-#: data/json/construction.json
-msgid "Needs to be supported on both sides by fencing, walls, etc."
-msgstr "울타리나 벽 따위로 양쪽에서 지지해주어야 합니다."
 
 #: data/json/construction.json
 msgid "Install Bars Onto Store Showcase Window"
@@ -33333,6 +33333,7 @@ msgstr "시체들을 지켜줍니다."
 
 #: data/json/furniture_and_terrain/furniture-graves.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
+#: data/json/furniture_and_terrain/terrain-doors.json
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
@@ -37004,6 +37005,25 @@ msgid ""
 "welded shut, that oughta hold 'em."
 msgstr "십자형 스테인리스 스틸 막대로 만들어진 쇠창살 문. 닫힌 상태로 용접되어 단단히 고정되었습니다."
 
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "closed screen door"
+msgstr "닫힌 스크린 도어"
+
+#. ~ Description for closed screen door
+#. ~ Description for open screen door
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "A simple wooden doorway with screen mesh."
+msgstr "플라스틱 망으로 된 문입니다."
+
+#: data/json/furniture_and_terrain/terrain-doors.json
+#: data/json/furniture_and_terrain/terrain-fences-gates.json
+msgid "rattle!"
+msgstr "덜컹!"
+
+#: data/json/furniture_and_terrain/terrain-doors.json
+msgid "open screen door"
+msgstr "열린 플라스틱 망 문"
+
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "palisade gate"
 msgstr "말뚝 울타리 문"
@@ -37106,24 +37126,6 @@ msgid ""
 msgstr "돈 받고 팔아도 될 수준의 나무 문으로, 걸쇠가 달려있습니다. 문이 활짝 열려있어 뭐든지 지나갈 수 있습니다."
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
-msgid "closed screen door"
-msgstr "닫힌 스크린 도어"
-
-#. ~ Description for closed screen door
-#. ~ Description for open screen door
-#: data/json/furniture_and_terrain/terrain-fences-gates.json
-msgid "A simple wooden doorway with screen mesh."
-msgstr "플라스틱 망으로 된 문입니다."
-
-#: data/json/furniture_and_terrain/terrain-fences-gates.json
-msgid "rattle!"
-msgstr "덜컹!"
-
-#: data/json/furniture_and_terrain/terrain-fences-gates.json
-msgid "open screen door"
-msgstr "열린 플라스틱 망 문"
-
-#: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "closed chickenwire gate"
 msgstr "닫힌 육각 철조망 울타리 문"
 
@@ -37196,19 +37198,9 @@ msgstr ""
 "2x4 크기로 강철 철사를 이용해 만들어진, 비교적으로 조잡한 높은 울타리입니다. 닭과 같은 작은 가축들을 두는 데 적합합니다."
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
+#: data/json/furniture_and_terrain/terrain-walls.json
 msgid "metal rattling!"
 msgstr "끼기기기긱!"
-
-#: data/json/furniture_and_terrain/terrain-fences-gates.json
-msgid "screen mesh wall"
-msgstr "플라스틱 망 벽"
-
-#. ~ Description for screen mesh wall
-#: data/json/furniture_and_terrain/terrain-fences-gates.json
-msgid ""
-"A rather flimsy tall wall made of 2x4s and screen mesh, suitable for keeping"
-" the bugs out."
-msgstr "널빤지와 플라스틱 망으로 만든 얄팍하고 높은 벽입니다. 벌레들을 막는데 유용합니다."
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "chickenwire fence post"
@@ -41290,6 +41282,17 @@ msgid ""
 "A partially built makeshift wall of metal that could potentially support a "
 "roof if it were completed."
 msgstr "반쯤 지어진 급조 금속 벽으로, 완성되면 지붕을 떠받칠 수 있을 것 같습니다."
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "screen mesh wall"
+msgstr "플라스틱 망 벽"
+
+#. ~ Description for screen mesh wall
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid ""
+"A rather flimsy tall wall made of 2x4s and screen mesh, suitable for keeping"
+" the bugs out."
+msgstr "널빤지와 플라스틱 망으로 만든 얄팍하고 높은 벽입니다. 벌레들을 막는데 유용합니다."
 
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "wooden wall"
@@ -77771,7 +77774,7 @@ msgstr[0] "코코넛 우유"
 #. ~ Description for coconut milk
 #: data/json/items/comestibles/drink.json
 msgid "A dense, sweet creamy sauce, often used in curries."
-msgstr "매우 달콤한 크림 소스입니다. 종종 카레에 사용되기도 합니다."
+msgstr "매우 달콤하고 크리미한 소스입니다. 종종 카레에 사용되기도 합니다."
 
 #: data/json/items/comestibles/drink.json
 msgid "chai tea"
@@ -102196,7 +102199,7 @@ msgstr ""
 #: data/json/items/melee/bludgeons.json
 msgid "burnt out battletorch"
 msgid_plural "burnt out battletorchs"
-msgstr[0] "불이 꺼진 전술 손전등"
+msgstr[0] "타버린 전투횃불"
 
 #. ~ Description for {'str': 'burnt out battletorch'}
 #. ~ Description for {'str': 'burnt out Louisville Slaughterer'}
@@ -102213,12 +102216,12 @@ msgstr ""
 #: data/json/items/melee/bludgeons.json
 msgid "battletorch"
 msgid_plural "battletorchs"
-msgstr[0] "전술 손전등"
+msgstr[0] "전투횃불"
 
 #. ~ Use action msg for {'str': 'battletorch'}.
 #: data/json/items/melee/bludgeons.json
 msgid "You light the battletorch."
-msgstr "전술 손전등을 켭니다."
+msgstr "전투횃불에 불을 붙입니다."
 
 #. ~ Description for {'str': 'battletorch'}
 #. ~ Description for {'str': 'Louisville Slaughterer'}
@@ -102235,7 +102238,7 @@ msgstr ""
 #. ~ Use action msg for {'str': 'battletorch'}.
 #: data/json/items/melee/bludgeons.json
 msgid "The battletorch is extinguished."
-msgstr "전술 손전등이 꺼집니다."
+msgstr "전투횃불이 꺼집니다."
 
 #. ~ Description for {'str': 'battletorch'}
 #. ~ Description for {'str': 'Louisville Slaughterer'}
@@ -145745,6 +145748,9 @@ msgid ""
 "lines.  It's not going exactly like I thought it would, but that's prophecy "
 "for you."
 msgstr ""
+"물론이지. 충분히 분명하지 않나? 그... 그 끝은 '휴거'였다. 나는 아직 여기 있고, 그 이유는 아직 모르겠지만, 앞으로 다가올 "
+"환난을 통해 예수님을 내 마음속에 모실 거야. 고난이 지나가면 그분이 나를 천국으로 맞이해 주실 거라고 확신해. 아니면... 아니면 "
+"비슷한 일이 일어나거나. 내가 생각했던 것과 정확히 일치하지는 않지만, 그게 바로 예언이지."
 
 #: data/json/npcs/Backgrounds/religious_1.json
 msgid "What if you're wrong?"
@@ -145774,6 +145780,9 @@ msgid ""
 "the Earth, and the Righteous have all be drawn up into the Lord's Kingdom.  "
 "What more proof could you possibly ask for?"
 msgstr ""
+"뭐라고? 대체 어떻게 그런 말을 할 수 있는 거지? 이 모든 것을 보고도 종말이라고 생각한다는 게 믿기지 않아. 죽은 자들이 걸어 "
+"다니고, 지옥의 문이 열리고, 악마의 짐승들이 땅을 돌아다니고, 의로운 자들이 모두 주님의 왕국으로 이끌려 들어가고 있어. 이보다 더 "
+"확실한 증거가 있을까?"
 
 #: data/json/npcs/Backgrounds/religious_1.json
 msgid "What will you do, then?"
