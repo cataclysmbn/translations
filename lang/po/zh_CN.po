@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-07-01 01:41+0000\n"
+"POT-Creation-Date: 2025-07-02 01:33+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -15975,7 +15975,7 @@ msgstr "氯丁橡胶"
 msgid "Nomex"
 msgstr "芳纶"
 
-#: data/json/materials.json src/monster.cpp
+#: data/json/materials.json src/monster.cpp src/mtype.cpp
 msgid "Unknown"
 msgstr "未知"
 
@@ -125637,7 +125637,7 @@ msgid ""
 msgstr "你明显地长高长壮了。你变得更强壮（力量+2），但是你发现你的平衡感被破坏了，甚至会自己绊到自己（+10躯干和手臂累赘）。"
 
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
+#: data/mods/Aftershock/mutations/obsolete.json src/mtype.cpp
 msgid "Large"
 msgstr "魁梧身躯"
 
@@ -125662,7 +125662,7 @@ msgid ""
 "(Strength +4), but it's a real pain to haul around."
 msgstr "你的巨型身材很难找到匹配的衣服，连钻进汽车都困难。尽管你的力量惊人（力量+4）但是与之相随的迟缓笨重令你相当头痛。"
 
-#: data/json/mutations/mutations.json
+#: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Huge"
 msgstr "巨无霸"
 
@@ -125906,7 +125906,7 @@ msgid ""
 "litheness, but your smaller stature prevents you from carrying as much."
 msgstr "你的体型明显缩小了。你移动时更加敏捷，但你的小个子让你无法携带很多东西。"
 
-#: data/json/mutations/mutations.json
+#: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Tiny"
 msgstr "体型细小"
 
@@ -227392,12 +227392,30 @@ msgid "OTHER FACTIONS"
 msgstr "其他派系"
 
 #: src/faction.cpp
+msgid "LORE"
+msgstr "背景故事"
+
+#: src/faction.cpp
+msgid "CREATURES"
+msgstr "生物"
+
+#: src/faction.cpp
 msgid "You have no followers"
 msgstr "你没有追随者"
 
 #: src/faction.cpp
 msgid "You don't know of any factions."
 msgstr "你不了解任何派系。"
+
+#: src/faction.cpp
+msgid "You haven't learned anything about the world."
+msgstr "你还没有了解这个世界的任何信息。"
+
+#: src/faction.cpp
+msgid ""
+"You haven't recorded sightings of any creatures.  Taking photos can be a "
+"good way to keep track of them."
+msgstr "你还没有记录到任何生物的目击信息。拍照是一个不错的记录方式。"
 
 #: src/faction.cpp
 #, c-format
@@ -230157,7 +230175,7 @@ msgstr "允许存档"
 msgid "Custom"
 msgstr "自定义"
 
-#: src/gamemode_defense.cpp
+#: src/gamemode_defense.cpp src/mtype.cpp
 msgid "Medium"
 msgstr "中等"
 
@@ -242312,7 +242330,7 @@ msgstr "（最大）"
 msgid "Max Level"
 msgstr "最大等级"
 
-#: src/magic.cpp
+#: src/magic.cpp src/mtype.cpp
 msgid "Difficulty"
 msgstr "施法难度"
 
@@ -248438,27 +248456,27 @@ msgstr "骑乘者：%s"
 msgid "Difficulty "
 msgstr "难度"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_gray>Minimal threat.</color>"
 msgstr "<color_light_gray>极低威胁。</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_gray>Mildly dangerous.</color>"
 msgstr "<color_light_gray>低威胁。</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_red>Dangerous.</color>"
 msgstr "<color_light_red>中威胁。</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Very dangerous.</color>"
 msgstr "<color_red>高威胁。</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Extremely dangerous.</color>"
 msgstr "<color_red>极高威胁。</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Fatally dangerous!</color>"
 msgstr "<color_red>致命威胁！</color>"
 
@@ -248931,6 +248949,66 @@ msgstr "疲劳士气上限："
 #: src/morale.cpp
 msgid "Focus trends towards:"
 msgstr "专注值平衡点："
+
+#: src/mtype.cpp
+msgid "Origin"
+msgstr "起源"
+
+#: src/mtype.cpp
+msgid "Small"
+msgstr "小型"
+
+#: src/mtype.cpp
+msgid "Size"
+msgstr "体型"
+
+#: src/mtype.cpp
+msgid "Species"
+msgstr "物种"
+
+#: src/mtype.cpp
+msgid "hearing"
+msgstr "听力"
+
+#: src/mtype.cpp
+msgid "sight"
+msgstr "视力"
+
+#: src/mtype.cpp
+msgid "smell"
+msgstr "嗅觉"
+
+#: src/mtype.cpp
+msgid "Senses"
+msgstr "感官"
+
+#: src/mtype.cpp
+msgid "It can swim."
+msgstr "它会游泳。"
+
+#: src/mtype.cpp
+msgid "It can fly."
+msgstr "它会飞。"
+
+#: src/mtype.cpp
+msgid "It can burrow underground."
+msgstr "它会在地下打洞。"
+
+#: src/mtype.cpp
+msgid "It can climb."
+msgstr "它会攀爬。"
+
+#: src/mtype.cpp
+msgid "It can grab."
+msgstr "它会抓取。"
+
+#: src/mtype.cpp
+msgid "It can inflict poison."
+msgstr "它能造成中毒。"
+
+#: src/mtype.cpp
+msgid "It can inflict paralysis."
+msgstr "它能造成麻痹。"
 
 #: src/mutation.cpp
 #, c-format

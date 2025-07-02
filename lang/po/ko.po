@@ -27,14 +27,14 @@
 # DelFe, 2024
 # JJ J <congstrot@gmail.com>, 2024
 # Coolthulhu <Coolthulhu@gmail.com>, 2025
-# 김동현, 2025
 # Fruitybite, 2025
+# 김동현, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-07-01 01:41+0000\n"
-"Last-Translator: Fruitybite, 2025\n"
+"POT-Creation-Date: 2025-07-02 01:33+0000\n"
+"Last-Translator: 김동현, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16478,7 +16478,7 @@ msgstr "네오프렌"
 msgid "Nomex"
 msgstr "노멕스"
 
-#: data/json/materials.json src/monster.cpp
+#: data/json/materials.json src/monster.cpp src/mtype.cpp
 msgid "Unknown"
 msgstr "미지의"
 
@@ -129748,7 +129748,7 @@ msgstr ""
 "어려워졌습니다. (몸통 및 팔 방해도 +10)"
 
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
+#: data/mods/Aftershock/mutations/obsolete.json src/mtype.cpp
 msgid "Large"
 msgstr "커다람"
 
@@ -129775,7 +129775,7 @@ msgstr ""
 "몸이 더더욱 거대해져서 일반적인 체형에 맞는 의류나 차량에 몸을 끼워 넣을 수 없습니다. 거대해진 만큼 근육량이 늘었지만, 몸을 끌고 "
 "움직이는 것만으로 매우 힘겹습니다. (+4 체력)"
 
-#: data/json/mutations/mutations.json
+#: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Huge"
 msgstr "거대함"
 
@@ -130023,7 +130023,7 @@ msgid ""
 msgstr ""
 "몸집이 확연히 작아졌습니다. 훨씬 유연하게 움직일 수 있지만, 작은 체격 탓에 이전만큼 많은 물건을 가지고 다니기는 힘듭니다."
 
-#: data/json/mutations/mutations.json
+#: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Tiny"
 msgstr "매우 작음"
 
@@ -142534,7 +142534,7 @@ msgstr "제로 데이"
 
 #: data/json/npcs/talk_tags.json
 msgid "They'll kill us!  Run away!"
-msgstr "우릴 죽일거야!  도망쳐!"
+msgstr "놈들이 우릴 죽일거야!  도망쳐!"
 
 #: data/json/npcs/talk_tags.json
 msgid "We're going to die!  Fall back!"
@@ -142562,7 +142562,7 @@ msgstr "으아악, 내 다리! 으아아악!!"
 
 #: data/json/npcs/talk_tags.json
 msgid "We have a serious situation here.  I'm leaving!"
-msgstr "우린 심각한 상황이군. 난 갈게!"
+msgstr "심각한 상황이다. 난 간다!"
 
 #: data/json/npcs/talk_tags.json
 msgid "It can't follow all of us.  I'll run this way, you go there!"
@@ -142658,7 +142658,7 @@ msgstr "소화기 가져와!"
 
 #: data/json/npcs/talk_tags.json
 msgid "Danger hot!"
-msgstr "빌어먹게 뜨겁네!"
+msgstr "존나 뜨겁네!"
 
 #: data/json/npcs/talk_tags.json
 msgid "Is it getting hot in here or is it just me?  Oh, fire!"
@@ -175910,6 +175910,9 @@ msgid ""
 "citizens to comply with all military directives and avoid quarantined areas "
 "whenever possible until order can be restored.\""
 msgstr ""
+"너무 멀리 간 조치. 월요일에 발표된 성명에서 미 국방부는 폭동이 격화된 고위험 지역을 격리하기 위해 주요 교량 지점에 전략적 지뢰 "
+"지대를 배치할 계획을 밝혔습니다. “군 병력이 현장에 배치되어 정전 구역에서 탈출하는 피난민을 지원할 예정입니다. 질서가 회복될 때까지 "
+"시민들은 모든 군 지시에 따르고 가능한 한 격리 지역을 피할 것을 강력히 권고합니다.”"
 
 #: data/json/snippets/newspapers.json
 msgid ""
@@ -176082,6 +176085,9 @@ msgid ""
 "you're there and listening, barricade or lay low until they go by.  There's "
 "another horde forming out of Metro Bay."
 msgstr ""
+"여기는 에스코트, 주파수 155, 19,000. 보고 시작한다. 아멘 한 마디 해줄 수 있나? 세상이 끝장난지 …치지지직… 일이 "
+"지났는데도 난 아직도 멀쩡하네. 버러지들이 뉴폴크 쪽으로 남하 중이니까, 그 근처에 있는 사람들은 들었으면 바리케이드를 치든, 숨어 있든"
+" 하면서 놈들이 꺼질 때까지 조용히 있어. 지하철 역 근처에도 무리가 모이고 있으니 신경써야 할거야."
 
 #: data/json/snippets/radio.json
 msgid ""
@@ -234347,12 +234353,30 @@ msgid "OTHER FACTIONS"
 msgstr "기타 세력"
 
 #: src/faction.cpp
+msgid "LORE"
+msgstr "세계 정보"
+
+#: src/faction.cpp
+msgid "CREATURES"
+msgstr "개체 정보"
+
+#: src/faction.cpp
 msgid "You have no followers"
 msgstr "보유한 동료가 없습니다"
 
 #: src/faction.cpp
 msgid "You don't know of any factions."
 msgstr "알고 있는 세력이 없습니다"
+
+#: src/faction.cpp
+msgid "You haven't learned anything about the world."
+msgstr "세계에 대해 아직 알고 있는 것이 없습니다."
+
+#: src/faction.cpp
+msgid ""
+"You haven't recorded sightings of any creatures.  Taking photos can be a "
+"good way to keep track of them."
+msgstr "어느 개체에 대해서도 아직 기록해둔 정보가 없습니다. 사진을 찍으면 대상의 정보를 기록하기 수월합니다."
 
 #: src/faction.cpp
 #, c-format
@@ -237127,7 +237151,7 @@ msgstr "저장 허용 여부"
 msgid "Custom"
 msgstr "커스텀"
 
-#: src/gamemode_defense.cpp
+#: src/gamemode_defense.cpp src/mtype.cpp
 msgid "Medium"
 msgstr "보통"
 
@@ -249315,7 +249339,7 @@ msgstr "(최대)"
 msgid "Max Level"
 msgstr "최대 레벨"
 
-#: src/magic.cpp
+#: src/magic.cpp src/mtype.cpp
 msgid "Difficulty"
 msgstr "난이도"
 
@@ -255453,27 +255477,27 @@ msgstr "기수: %s"
 msgid "Difficulty "
 msgstr "난이도"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_gray>Minimal threat.</color>"
 msgstr "<color_light_gray>최소 위협</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_gray>Mildly dangerous.</color>"
 msgstr "<color_light_gray>사소한 위협</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_red>Dangerous.</color>"
 msgstr "<color_light_red>위험</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Very dangerous.</color>"
 msgstr "<color_red>매우 위험</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Extremely dangerous.</color>"
 msgstr "<color_red>극도로 위험</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Fatally dangerous!</color>"
 msgstr "<color_red>최고로 위험!</color>"
 
@@ -255946,6 +255970,66 @@ msgstr "피로로 인한 기분 최대치:"
 #: src/morale.cpp
 msgid "Focus trends towards:"
 msgstr "집중 수준 변동 경향:"
+
+#: src/mtype.cpp
+msgid "Origin"
+msgstr "기원"
+
+#: src/mtype.cpp
+msgid "Small"
+msgstr "작음"
+
+#: src/mtype.cpp
+msgid "Size"
+msgstr "크기"
+
+#: src/mtype.cpp
+msgid "Species"
+msgstr "종"
+
+#: src/mtype.cpp
+msgid "hearing"
+msgstr "청각"
+
+#: src/mtype.cpp
+msgid "sight"
+msgstr "시각"
+
+#: src/mtype.cpp
+msgid "smell"
+msgstr "후각"
+
+#: src/mtype.cpp
+msgid "Senses"
+msgstr "감각"
+
+#: src/mtype.cpp
+msgid "It can swim."
+msgstr "이 개체는 수영할 수 있습니다."
+
+#: src/mtype.cpp
+msgid "It can fly."
+msgstr "이 개체는 비행할 수 있습니다."
+
+#: src/mtype.cpp
+msgid "It can burrow underground."
+msgstr "이 개체는 굴착해 이동할 수 있습니다."
+
+#: src/mtype.cpp
+msgid "It can climb."
+msgstr "이 개체는 등반할 수 있습니다."
+
+#: src/mtype.cpp
+msgid "It can grab."
+msgstr "이 개체는 상대를 붙잡을 수 있습니다."
+
+#: src/mtype.cpp
+msgid "It can inflict poison."
+msgstr "이 개체는 상대를 중독시킬 수 있습니다."
+
+#: src/mtype.cpp
+msgid "It can inflict paralysis."
+msgstr "이 개체는 상대를 마비시킬 수 있습니다."
 
 #: src/mutation.cpp
 #, c-format

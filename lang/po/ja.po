@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-07-01 01:41+0000\n"
+"POT-Creation-Date: 2025-07-02 01:33+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -15966,7 +15966,7 @@ msgstr "ネオプレン"
 msgid "Nomex"
 msgstr "ノーメックス"
 
-#: data/json/materials.json src/monster.cpp
+#: data/json/materials.json src/monster.cpp src/mtype.cpp
 msgid "Unknown"
 msgstr "不明"
 
@@ -125442,7 +125442,7 @@ msgstr ""
 "縦にも横にも明らかに大きい、不便なほどの巨体に成長しました。見た目に恥じない筋力を誇りますが、全体のバランスに欠け、自分の体が邪魔で動きにくくなっています。筋力に+2のボーナスを得ますが、胴と腕に+10の動作制限を受けます。"
 
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
+#: data/mods/Aftershock/mutations/obsolete.json src/mtype.cpp
 msgid "Large"
 msgstr "大柄(レベル2)"
 
@@ -125468,7 +125468,7 @@ msgid ""
 msgstr ""
 "さらに巨大に成長しました。もう人間サイズの衣服や乗り物は利用できそうにありません。屈強すぎるこの身体で歩き回るのは本当に苦痛です。筋力に+4のボーナスを得ます。"
 
-#: data/json/mutations/mutations.json
+#: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Huge"
 msgstr "大柄(レベル4)"
 
@@ -125713,7 +125713,7 @@ msgid ""
 "litheness, but your smaller stature prevents you from carrying as much."
 msgstr "身長が著しく縮んでいます。よりしなやかに動けるようになりましたが、体躯が小さいため物をたくさん所持できません。"
 
-#: data/json/mutations/mutations.json
+#: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Tiny"
 msgstr "小柄"
 
@@ -226987,12 +226987,30 @@ msgid "OTHER FACTIONS"
 msgstr "他の派閥"
 
 #: src/faction.cpp
+msgid "LORE"
+msgstr ""
+
+#: src/faction.cpp
+msgid "CREATURES"
+msgstr ""
+
+#: src/faction.cpp
 msgid "You have no followers"
 msgstr "仲間が存在しません"
 
 #: src/faction.cpp
 msgid "You don't know of any factions."
 msgstr "知っている派閥がありません"
+
+#: src/faction.cpp
+msgid "You haven't learned anything about the world."
+msgstr ""
+
+#: src/faction.cpp
+msgid ""
+"You haven't recorded sightings of any creatures.  Taking photos can be a "
+"good way to keep track of them."
+msgstr ""
 
 #: src/faction.cpp
 #, c-format
@@ -229749,7 +229767,7 @@ msgstr "保存許可"
 msgid "Custom"
 msgstr "カスタム"
 
-#: src/gamemode_defense.cpp
+#: src/gamemode_defense.cpp src/mtype.cpp
 msgid "Medium"
 msgstr "普通"
 
@@ -241894,7 +241912,7 @@ msgstr "(最大)"
 msgid "Max Level"
 msgstr "最大レベル"
 
-#: src/magic.cpp
+#: src/magic.cpp src/mtype.cpp
 msgid "Difficulty"
 msgstr "難易度"
 
@@ -248013,27 +248031,27 @@ msgstr "騎乗: %s"
 msgid "Difficulty "
 msgstr "強さ"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_gray>Minimal threat.</color>"
 msgstr "<color_light_gray>ほぼ無力</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_gray>Mildly dangerous.</color>"
 msgstr "<color_light_gray>少し危険</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_red>Dangerous.</color>"
 msgstr "<color_light_red>危険</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Very dangerous.</color>"
 msgstr "<color_red>非常に危険</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Extremely dangerous.</color>"
 msgstr "<color_red>ものすごく危険</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Fatally dangerous!</color>"
 msgstr "<color_red>とてつもなく危険！</color>"
 
@@ -248506,6 +248524,66 @@ msgstr ""
 #: src/morale.cpp
 msgid "Focus trends towards:"
 msgstr "変動:"
+
+#: src/mtype.cpp
+msgid "Origin"
+msgstr ""
+
+#: src/mtype.cpp
+msgid "Small"
+msgstr ""
+
+#: src/mtype.cpp
+msgid "Size"
+msgstr ""
+
+#: src/mtype.cpp
+msgid "Species"
+msgstr ""
+
+#: src/mtype.cpp
+msgid "hearing"
+msgstr "聴覚"
+
+#: src/mtype.cpp
+msgid "sight"
+msgstr "視覚"
+
+#: src/mtype.cpp
+msgid "smell"
+msgstr "嗅覚"
+
+#: src/mtype.cpp
+msgid "Senses"
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can swim."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can fly."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can burrow underground."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can climb."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can grab."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can inflict poison."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can inflict paralysis."
+msgstr ""
 
 #: src/mutation.cpp
 #, c-format

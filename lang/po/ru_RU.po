@@ -28,15 +28,15 @@
 # LunaeLum, 2025
 # Pururun kun, 2025
 # Ivan Saikyo, 2025
-# Coolthulhu <Coolthulhu@gmail.com>, 2025
-# Vadim, 2025
 # Vorpal Void <vorpal.void@gmail.com>, 2025
+# Vadim, 2025
+# Coolthulhu <Coolthulhu@gmail.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-07-01 01:41+0000\n"
-"Last-Translator: Vorpal Void <vorpal.void@gmail.com>, 2025\n"
+"POT-Creation-Date: 2025-07-02 01:33+0000\n"
+"Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17621,7 +17621,7 @@ msgstr "неопрен"
 msgid "Nomex"
 msgstr "номекс"
 
-#: data/json/materials.json src/monster.cpp
+#: data/json/materials.json src/monster.cpp src/mtype.cpp
 msgid "Unknown"
 msgstr "неизвестный"
 
@@ -160149,7 +160149,7 @@ msgstr ""
 "несколько мешает вам (+10 к стеснению торса и рук)"
 
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
+#: data/mods/Aftershock/mutations/obsolete.json src/mtype.cpp
 msgid "Large"
 msgstr "Крупный размер"
 
@@ -160179,7 +160179,7 @@ msgstr ""
 "сможете использовать обычную одежду или транспорт. Конечно, по большей части"
 " это мощная мышечная масса (Сила +4), но это уже реально неудобно."
 
-#: data/json/mutations/mutations.json
+#: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Huge"
 msgstr "Огромный размер"
 
@@ -160440,7 +160440,7 @@ msgstr ""
 "передвигаться более ловко, но ваш размер больше не позволяет вам таскать "
 "много вещей."
 
-#: data/json/mutations/mutations.json
+#: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Tiny"
 msgstr "Крохотный размер"
 
@@ -280616,12 +280616,30 @@ msgid "OTHER FACTIONS"
 msgstr "ДРУГИЕ ФРАКЦИИ"
 
 #: src/faction.cpp
+msgid "LORE"
+msgstr ""
+
+#: src/faction.cpp
+msgid "CREATURES"
+msgstr ""
+
+#: src/faction.cpp
 msgid "You have no followers"
 msgstr "У вас нет последователей"
 
 #: src/faction.cpp
 msgid "You don't know of any factions."
 msgstr "Вы не знаете ни одной фракции."
+
+#: src/faction.cpp
+msgid "You haven't learned anything about the world."
+msgstr ""
+
+#: src/faction.cpp
+msgid ""
+"You haven't recorded sightings of any creatures.  Taking photos can be a "
+"good way to keep track of them."
+msgstr ""
 
 #: src/faction.cpp
 #, c-format
@@ -283483,7 +283501,7 @@ msgstr "Разрешить сохранение"
 msgid "Custom"
 msgstr "Пользовательский"
 
-#: src/gamemode_defense.cpp
+#: src/gamemode_defense.cpp src/mtype.cpp
 msgid "Medium"
 msgstr "Средне"
 
@@ -296105,19 +296123,19 @@ msgstr "может быть усилено уроном оружия ближн�
 
 #: src/magic.cpp
 msgid "scales off of strength stat"
-msgstr ""
+msgstr "зависит от силы"
 
 #: src/magic.cpp
 msgid "scales off of dexterity stat"
-msgstr ""
+msgstr "зависит от ловкости"
 
 #: src/magic.cpp
 msgid "scales off of perception stat"
-msgstr ""
+msgstr "зависит от восприятия"
 
 #: src/magic.cpp
 msgid "scales off of intelligence stat"
-msgstr ""
+msgstr "зависит от интеллекта"
 
 #: src/magic.cpp
 msgid "Classless"
@@ -296147,7 +296165,7 @@ msgstr "(МАКС)"
 msgid "Max Level"
 msgstr "Макс. уровень"
 
-#: src/magic.cpp
+#: src/magic.cpp src/mtype.cpp
 msgid "Difficulty"
 msgstr "Сложность"
 
@@ -302432,27 +302450,27 @@ msgstr "Наездник: %s"
 msgid "Difficulty "
 msgstr "Сложность "
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_gray>Minimal threat.</color>"
 msgstr "<color_light_gray>Минимальная опасность.</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_gray>Mildly dangerous.</color>"
 msgstr "<color_light_gray>Небольшая опасность.</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_light_red>Dangerous.</color>"
 msgstr "<color_light_red>Опасно.</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Very dangerous.</color>"
 msgstr "<color_red>Очень опасно.</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Extremely dangerous.</color>"
 msgstr "<color_red>Чрезвычайно опасно.</color>"
 
-#: src/monster.cpp
+#: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Fatally dangerous!</color>"
 msgstr "<color_red>Смертельно опасно!</color>"
 
@@ -302925,6 +302943,66 @@ msgstr "Порог морали из-за усталости:"
 #: src/morale.cpp
 msgid "Focus trends towards:"
 msgstr "Фокус смещается в сторону:"
+
+#: src/mtype.cpp
+msgid "Origin"
+msgstr ""
+
+#: src/mtype.cpp
+msgid "Small"
+msgstr ""
+
+#: src/mtype.cpp
+msgid "Size"
+msgstr ""
+
+#: src/mtype.cpp
+msgid "Species"
+msgstr ""
+
+#: src/mtype.cpp
+msgid "hearing"
+msgstr "слух"
+
+#: src/mtype.cpp
+msgid "sight"
+msgstr "зрение"
+
+#: src/mtype.cpp
+msgid "smell"
+msgstr "обоняние"
+
+#: src/mtype.cpp
+msgid "Senses"
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can swim."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can fly."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can burrow underground."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can climb."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can grab."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can inflict poison."
+msgstr ""
+
+#: src/mtype.cpp
+msgid "It can inflict paralysis."
+msgstr ""
 
 #: src/mutation.cpp
 #, c-format
