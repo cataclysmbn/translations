@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-07-23 01:42+0000\n"
+"POT-Creation-Date: 2025-07-24 01:38+0000\n"
 "Last-Translator: Vadim, 2025\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -3144,6 +3144,21 @@ msgstr ""
 "урона, умеренно от режущего и едва защищает от ударного. После получения "
 "урона заряжается вдвое медленнее в течение 3 ходов, и не потребляет энергию "
 "после полной зарядки."
+
+#: data/json/bionics.json
+msgid "Thermofluidic Propulsion Modules"
+msgstr ""
+
+#. ~ Description for {'str': 'Thermofluidic Propulsion Modules'}
+#: data/json/bionics.json
+msgid ""
+"These advanced propulsion modules utilize thermofluidic principles to "
+"generate lift and controlled thrust, allowing the user to achieve limited "
+"levitation and short-range flight.  When toggled on, they emit directed "
+"thermal energy through micro-thrusters to maneuver over obstacles or "
+"hazardous terrain.  Energy is consumed both during activation and sustained "
+"operation."
+msgstr ""
 
 #: data/json/bionics.json
 msgid "Alarm System"
@@ -9286,6 +9301,15 @@ msgstr ""
 "воздействием."
 
 #: data/json/effects.json
+msgid "Took GHB"
+msgstr ""
+
+#. ~ Description of effect 'Took GHB'.
+#: data/json/effects.json
+msgid "You took GHB some time ago and you might still be under its influence."
+msgstr ""
+
+#: data/json/effects.json
 msgid "Lucidity"
 msgstr "Ясность"
 
@@ -11782,6 +11806,20 @@ msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid ""
+"This gear <info>allows flight</info> when active, at the cost of <info>power"
+" from a UPS</info>."
+msgstr ""
+"После активации это снаряжение <info>позволяет летать</info> за счёт "
+"<info>энергии УБП</info>."
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid "This gear <info>allows flight</info>."
+msgstr "Это снаряжение <info>позволяет летать</info>."
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This gear has an <info>alarm clock</info> feature."
 msgstr "У этого снаряжения есть функция <info>будильника</info>."
 
@@ -12568,6 +12606,11 @@ msgstr "В этом предмете есть рецепт для нанофаб
 #: data/json/flags.json
 msgid "This bionic is <bad>faulty</bad>."
 msgstr "Этот имплант <bad>неисправен</bad>."
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid "This bionic allows flight."
+msgstr "Эта бионика <info>позволяет летать</info>."
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -48123,6 +48166,25 @@ msgstr[0] "КБМ: Активная система обороны"
 msgstr[1] "КБМ: Активная система обороны"
 msgstr[2] "КБМ: Активная система обороны"
 msgstr[3] "КБМ: Активная система обороны"
+
+#: data/json/items/bionics.json
+msgid "Thermofluidic Propulsion Modules CBM"
+msgid_plural "Thermofluidic Propulsion Modules CBMs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'Thermofluidic Propulsion Modules CBM'}
+#: data/json/items/bionics.json
+msgid ""
+"An advanced mobility system implanted along the lower spine, legs, and feet,"
+" the Thermofluidic Propulsion Modules utilize controlled bursts of heated "
+"fluid dynamics and high-efficiency micro-thrusters to achieve lift and "
+"precise maneuverability.  This system enables short-range flight and "
+"levitation by manipulating pressure and thermal gradients, providing "
+"enhanced mobility across challenging terrain."
+msgstr ""
 
 #: data/json/items/bionics.json
 msgid "Alarm System CBM"
@@ -158645,13 +158707,15 @@ msgstr "Птичьи крылья"
 #. ~ Description for {'str': 'Bird Wings'}
 #: data/json/mutations/mutations.json
 msgid ""
-"You have a pair of large, feathered wings.  Your body is too heavy to be "
-"able to fly, but you can use them to slow your descent during a fall, and "
-"will not take falling damage under any circumstances."
+"You have a pair of large, feathered wings.  Though your body is heavy and "
+"not built for sustained flight, you can use your wings to fly for short "
+"periods.  You can also glide to slow your descent and will never take "
+"falling damage under any circumstances."
 msgstr ""
-"У вас есть пара больших оперённых крыльев. Ваше тело слишком тяжёлое для "
-"полёта, но с их помощью можно замедлить падение. Вы никогда не будете "
-"получать урон от падения."
+"У вас есть пара больших оперённых крыльев. Хотя ваше тело тяжёлое и не "
+"приспособлено для длительного полета, вы можете использовать крылья для "
+"коротких полётов. Вы также можете планировать, чтобы замедлить спуск, и "
+"никогда не будете получать урон от падения."
 
 #: data/json/mutations/mutations.json
 msgid "Insect Wings"
@@ -158936,17 +159000,13 @@ msgid "Inconveniently Large"
 msgstr "Неудобно крупный"
 
 #. ~ Description for {'str': 'Inconveniently Large'}
-#. ~ Description for Elephantine
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
 msgid ""
 "You have grown noticeably taller and broader.  Much of it is useful muscle "
 "mass (Strength +2), but you find it throws off your balance and you get in "
-"your own way (+10 torso and arm encumbrance)."
+"your own way (+10 torso and arm encumbrance).  You can also fire heavy "
+"weapons without the aid of terrain, at a penalty to accuracy."
 msgstr ""
-"Вы стали заметно выше и шире. По большей части, за счёт полезной мышечной "
-"массы (сила +2), но вы обнаруживаете, что это вредит вашему балансу и "
-"несколько мешает вам (+10 к стеснению торса и рук)"
 
 #: data/json/mutations/mutations.json
 #: data/mods/Aftershock/mutations/obsolete.json src/mtype.cpp
@@ -158954,45 +159014,37 @@ msgid "Large"
 msgstr "Крупный размер"
 
 #. ~ Description for {'str': 'Large'}
-#. ~ Description for Large
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
-msgid "You carry your rugged body with the dignity you deserve.  Strength +2."
+msgid ""
+"You carry your rugged body with the dignity you deserve.  Strength +2, and "
+"you can fire heavy weapons without the aid of terrain at the cost of "
+"accuracy."
 msgstr ""
-"Вы несёте своё массивное тело с достоинством, которое вы заслуживаете. Сила "
-"+2."
 
 #: data/json/mutations/mutations.json
 msgid "Freakishly Huge"
 msgstr "Необычно огромный"
 
 #. ~ Description for {'str': 'Freakishly Huge'}
-#. ~ Description for Freakishly Gigantic
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
 msgid ""
 "You have grown even more massive, to the point where you cannot usefully fit"
 " into human-sized clothing or vehicles.  Much of it is powerful muscle mass "
-"(Strength +4), but it's a real pain to haul around."
+"(Strength +4), but it's a real pain to haul around.  On the plus side, "
+"firing heavy weapons without mounting appropriate terrain is a bit easier."
 msgstr ""
-"Вы стали ещё более массивным, достигнув предела, после которого вы не "
-"сможете использовать обычную одежду или транспорт. Конечно, по большей части"
-" это мощная мышечная масса (Сила +4), но это уже реально неудобно."
 
 #: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Huge"
 msgstr "Огромный размер"
 
 #. ~ Description for {'str': 'Huge'}
-#. ~ Description for Gigantic
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
 msgid ""
 "Your cardiovascular system has caught up with your muscular physique, so who"
-" needs pathetic human cars?  Strength +4."
+" needs pathetic human cars?  Strength +4, and you can fire heavy weapons "
+"unsupported more easily."
 msgstr ""
-"Ваша сердечно-сосудистая система приспособилась к вашему мощному телу. Так, "
-"кто ещё нуждается в жалких человеческих автомобилях? Сила +4."
 
 #: data/json/mutations/mutations.json
 msgid "Strong"
@@ -159227,10 +159279,10 @@ msgstr ""
 "можете игнорировать подавление ваших органов чувств."
 
 #: data/json/mutations/mutations.json
-msgid "Little"
-msgstr "Маленький размер"
+msgid "Uncomfortably Small"
+msgstr ""
 
-#. ~ Description for {'str': 'Little'}
+#. ~ Description for {'str': 'Uncomfortably Small'}
 #: data/json/mutations/mutations.json
 msgid ""
 "You've noticeably shrunk in size.  You're able to move with increased "
@@ -159241,10 +159293,22 @@ msgstr ""
 "много вещей."
 
 #: data/json/mutations/mutations.json src/mtype.cpp
-msgid "Tiny"
-msgstr "Крохотный размер"
+msgid "Small"
+msgstr ""
 
-#. ~ Description for {'str': 'Tiny'}
+#. ~ Description for {'str': 'Small'}
+#: data/json/mutations/mutations.json
+msgid ""
+"You can deny it no longer!  You are small.  You've adapted to your new size,"
+" suffering a bit less from your reduced carry capacity and increased "
+"fragility."
+msgstr ""
+
+#: data/json/mutations/mutations.json
+msgid "Worryingly Tiny"
+msgstr ""
+
+#. ~ Description for {'str': 'Worryingly Tiny'}
 #: data/json/mutations/mutations.json
 msgid ""
 "You're only half as tall as you used to be!  The weight of things you once "
@@ -159259,11 +159323,11 @@ msgstr ""
 "снижены. Однако вы умеете передвигаться бесшумно, а ваш навык уклонения "
 "немного повышен."
 
-#: data/json/mutations/mutations.json
-msgid "Unassuming"
-msgstr "Непритязательность"
+#: data/json/mutations/mutations.json src/mtype.cpp
+msgid "Tiny"
+msgstr "Крохотный размер"
 
-#. ~ Description for {'str': 'Unassuming'}
+#. ~ Description for {'str': 'Tiny'}
 #: data/json/mutations/mutations.json
 msgid ""
 "You've mastered your tiny form!  Item encumbrance and carry weight penalties"
@@ -161452,6 +161516,15 @@ msgstr "Отладочное ночное зрение"
 #: data/json/mutations/mutations.json
 msgid "You can clearly see that this is for dev purposes only."
 msgstr "Хорошо видно, что это только для разработчиков."
+
+#: data/json/mutations/mutations.json
+msgid "Debug Noclip"
+msgstr ""
+
+#. ~ Description for {'str': 'Debug Noclip'}
+#: data/json/mutations/mutations.json
+msgid "Garry?"
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Debug Invisibility"
@@ -177140,7 +177213,7 @@ msgstr "Что это за место?"
 
 #: data/json/npcs/cabin_chemist/cabin_chemist.json
 msgid "Brewed anything new lately?"
-msgstr ""
+msgstr "В последнее время варили что-нибудь новое?"
 
 #: data/json/npcs/cabin_chemist/cabin_chemist.json
 msgid "I'd like to buy in bulk."
@@ -177151,10 +177224,12 @@ msgid ""
 "Unfortunately, I'm still gathering resources and cooking new stuff.  Maybe "
 "ask again after <interval>."
 msgstr ""
+"К сожалению, я всё ещё собираю ресурсы и готовлю кое-что новое. Можешь "
+"попробовать узнать снова через <interval>."
 
 #: data/json/npcs/cabin_chemist/cabin_chemist.json
 msgid "Alright.  thanks nonetheless."
-msgstr ""
+msgstr "Хорошо. Всё равно спасибо."
 
 #: data/json/npcs/cabin_chemist/cabin_chemist.json
 msgid ""
@@ -179467,7 +179542,7 @@ msgstr "Да, я маршал."
 #: data/json/npcs/isherwood_farm/NPC_Claire_Isherwood.json
 #: data/json/npcs/isherwood_farm/NPC_Jack_Isherwood.json
 msgid "Hey, when would more of this stuff be ready?"
-msgstr ""
+msgstr "Эй, когда будет готово больше чего-нибудь подобного?"
 
 #: data/json/npcs/isherwood_farm/NPC_Claire_Isherwood.json
 msgid "Hi, nice farm you have here."
@@ -179489,7 +179564,7 @@ msgstr "Давай торговать."
 #: data/mods/Aftershock/npcs/prepnet_dialogue.json
 #: data/mods/Aftershock/npcs/whately_generic_dialogue.json
 msgid "Around <interval>."
-msgstr ""
+msgstr "Где-то через <interval>."
 
 #: data/json/npcs/isherwood_farm/NPC_Claire_Isherwood.json
 #: data/json/npcs/isherwood_farm/NPC_Jack_Isherwood.json
@@ -179497,7 +179572,7 @@ msgstr ""
 #: data/mods/Aftershock/npcs/prepnet_dialogue.json
 #: data/mods/Aftershock/npcs/whately_generic_dialogue.json
 msgid "Alright then, bye."
-msgstr ""
+msgstr "Ну ладно, пока."
 
 #: data/json/npcs/isherwood_farm/NPC_Claire_Isherwood.json
 msgid "I live here with my husband, Jack.  He is working out in his shop."
@@ -179771,15 +179846,16 @@ msgstr "Привет, Джек и Клэр предложили сходить �
 
 #: data/json/npcs/isherwood_farm/NPC_Eddie_Isherwood.json
 msgid "When will your cows produce again?"
-msgstr ""
+msgstr "Когда коровы снова начнут давать молоко?"
 
 #: data/json/npcs/isherwood_farm/NPC_Eddie_Isherwood.json
 msgid "If the cows don't get anything nasty it should be around <interval>."
 msgstr ""
+"Если коровы не подхватят ничего вредного, то должно быть через <interval>."
 
 #: data/json/npcs/isherwood_farm/NPC_Eddie_Isherwood.json
 msgid "Cheers, bye."
-msgstr ""
+msgstr "Всего хорошего, пока."
 
 #: data/json/npcs/isherwood_farm/NPC_Eddie_Isherwood.json
 msgid ""
@@ -188282,7 +188358,7 @@ msgstr "Что я могу сделать для центра?"
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid "When will you have new stuff in stock?"
-msgstr ""
+msgstr "Когда в наличии появятся новые товары?"
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid "What's with these 'free merchant certified notes'?"
@@ -188294,20 +188370,21 @@ msgstr "Мне лучше идти. Пока."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid "Next shipment should arrive in around <interval>."
-msgstr ""
+msgstr "Следующая поставка должна прибыть примерно через <interval>."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid ""
 "Stick around for <interval>, there will surely be something you'd like."
 msgstr ""
+"Побудь здесь примерно <interval>, и обязательно найдёшь что-нибудь по душе."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid "Actually, I wanted to ask…"
-msgstr ""
+msgstr "Впрочем, у меня есть вопрос…"
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid "Thanks, I will make sure to check back.  Farewell."
-msgstr ""
+msgstr "Спасибо, обязательно загляну. До встречи."
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
 msgid "Welcome marshal…"
@@ -189584,7 +189661,7 @@ msgstr "Я куплю."
 
 #: data/json/npcs/refugee_center/surface_visitors/NPC_arsonist.json
 msgid "When will you have more materials in?"
-msgstr ""
+msgstr "Когда появятся новые материалы?"
 
 #: data/json/npcs/refugee_center/surface_visitors/NPC_arsonist.json
 msgid "Who needs rebar?"
@@ -189749,13 +189826,13 @@ msgstr ""
 
 #: data/json/npcs/refugee_center/surface_visitors/NPC_hunter.json
 msgid "Know when you'll get more?"
-msgstr ""
+msgstr "Известно ли, когда будет ещё?"
 
 #: data/json/npcs/refugee_center/surface_visitors/NPC_hunter.json
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 #: data/json/npcs/robofac/ROBOFAC_SURFACE_FREEMERCHANT.json
 msgid "Thanks for the info, bye."
-msgstr ""
+msgstr "Спасибо за информацию, пока."
 
 #: data/json/npcs/refugee_center/surface_visitors/NPC_hunter.json
 msgid ""
@@ -190685,7 +190762,7 @@ msgstr "Давай поторгуем."
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid "Know when you'll get another shipment?"
-msgstr ""
+msgstr "Известно ли, когда следующая партия?"
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid "It's the apocalypse out here!  Please let me in!"
@@ -190735,7 +190812,7 @@ msgstr "Я думаю, лаборатория проживёт без некот
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 #: data/json/npcs/robofac/ROBOFAC_SURFACE_FREEMERCHANT.json
 msgid "Around <interval>, if the caravan doesn't run into trouble."
-msgstr ""
+msgstr "Примерно <interval>, если караван не столкнётся с проблемами."
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid ""
@@ -191198,7 +191275,7 @@ msgstr "Безопасного пути, странник."
 
 #: data/json/npcs/robofac/ROBOFAC_SURFACE_FREEMERCHANT.json
 msgid "When is the next shipment?"
-msgstr ""
+msgstr "Когда будет следующая поставка?"
 
 #: data/json/npcs/robofac/ROBOFAC_SURFACE_FREEMERCHANT.json
 msgid ""
@@ -191297,7 +191374,7 @@ msgstr ""
 
 #: data/json/npcs/scrap_trader/scrap_trader.json
 msgid "Find anything good?"
-msgstr ""
+msgstr "Нашлось что-нибудь интересное?"
 
 #: data/json/npcs/scrap_trader/scrap_trader.json
 msgid "I'd like some specialty metals."
@@ -191379,7 +191456,7 @@ msgstr ""
 
 #: data/json/npcs/scrap_trader/scrap_trader.json
 msgid "Well, good luck."
-msgstr ""
+msgstr "Ну, удачи."
 
 #: data/json/npcs/scrap_trader/scrap_trader_missions.json
 msgid "Find 5 Microwaves"
@@ -192977,7 +193054,7 @@ msgstr "Давай посмотрим, что тебе удалось найти
 
 #: data/json/npcs/tacoma_ranch/NPC_ranch_scavenger.json
 msgid "Any lucky find?"
-msgstr ""
+msgstr "Есть удачные находки?"
 
 #: data/json/npcs/tacoma_ranch/NPC_ranch_scavenger.json
 msgid ""
@@ -193021,7 +193098,7 @@ msgstr ""
 
 #: data/json/npcs/tacoma_ranch/NPC_ranch_scavenger.json
 msgid "Alright, thanks."
-msgstr ""
+msgstr "Хорошо, спасибо."
 
 #: data/json/npcs/tacoma_ranch/NPC_ranch_scavenger.json
 msgid "Make 12 Knife Spears"
@@ -198969,6 +199046,38 @@ msgstr ""
 msgid "Hand Axes"
 msgstr "Ручные топоры"
 
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s starts burning your hands!"
+msgstr "%1$s жжёт ваши руки!"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s feels freezing cold!"
+msgstr "%1$s ледяной на ощупь!"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "An electric shock shoots into your hand from %1$s!"
+msgstr "%1$s бьёт током вашу руку!"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s lied to you."
+msgstr "%1$s лжёт тебе."
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s was working for… THEM"
+msgstr "%1$s работал… на НИХ"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s said something stupid."
+msgstr "%1$s городит какую-то тупость."
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s is running away!"
+msgstr "%1$s убегает!"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s finds you filthy."
+msgstr "%1$s видит в тебе неряху."
+
 #. ~ Description for quantum solar panel
 #: data/json/obsoletion/vehicle_parts.json
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -202488,6 +202597,10 @@ msgstr "местная электростанция"
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
 msgid "local power plant roof"
 msgstr "крыша местной электростанции"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+msgid "solar farm"
+msgstr "солнечная электростанция"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
 msgid "small power substation"
@@ -213874,38 +213987,6 @@ msgstr "«Мне не стоило тебе доверять!»"
 #: data/json/snippets/schizophrenia.json
 msgid "\"RUN.  NOW.  IT MAY NOT BE TOO LATE.\""
 msgstr "«БЕГИ. СЕЙЧАС. УЖЕ МОЖЕТ БЫТЬ СЛИШКОМ ПОЗДНО.»"
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s starts burning your hands!"
-msgstr "%1$s жжёт ваши руки!"
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s feels freezing cold!"
-msgstr "%1$s ледяной на ощупь!"
-
-#: data/json/snippets/schizophrenia.json
-msgid "An electric shock shoots into your hand from %1$s!"
-msgstr "%1$s бьёт током вашу руку!"
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s lied to you."
-msgstr "%1$s лжёт тебе."
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s was working for… THEM"
-msgstr "%1$s работал… на НИХ"
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s said something stupid."
-msgstr "%1$s городит какую-то тупость."
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s is running away!"
-msgstr "%1$s убегает!"
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s finds you filthy."
-msgstr "%1$s видит в тебе неряху."
 
 #: data/json/snippets/snippets.json
 msgid "0"
@@ -225639,13 +225720,51 @@ msgstr "Щит из плоти"
 msgid "Elephantine"
 msgstr "Слоноподобный"
 
+#. ~ Description for Elephantine
+#: data/mods/Aftershock/mutations/obsolete.json
+msgid ""
+"You have grown noticeably taller and broader.  Much of it is useful muscle "
+"mass (Strength +2), but you find it throws off your balance and you get in "
+"your own way (+10 torso and arm encumbrance)."
+msgstr ""
+"Вы стали заметно выше и шире. По большей части, за счёт полезной мышечной "
+"массы (сила +2), но вы обнаруживаете, что это вредит вашему балансу и "
+"несколько мешает вам (+10 к стеснению торса и рук)"
+
+#. ~ Description for Large
+#: data/mods/Aftershock/mutations/obsolete.json
+msgid "You carry your rugged body with the dignity you deserve.  Strength +2."
+msgstr ""
+"Вы несёте своё массивное тело с достоинством, которое вы заслуживаете. Сила "
+"+2."
+
 #: data/mods/Aftershock/mutations/obsolete.json
 msgid "Freakishly Gigantic"
 msgstr "Чудовищно большой"
 
+#. ~ Description for Freakishly Gigantic
+#: data/mods/Aftershock/mutations/obsolete.json
+msgid ""
+"You have grown even more massive, to the point where you cannot usefully fit"
+" into human-sized clothing or vehicles.  Much of it is powerful muscle mass "
+"(Strength +4), but it's a real pain to haul around."
+msgstr ""
+"Вы стали ещё более массивным, достигнув предела, после которого вы не "
+"сможете использовать обычную одежду или транспорт. Конечно, по большей части"
+" это мощная мышечная масса (Сила +4), но это уже реально неудобно."
+
 #: data/mods/Aftershock/mutations/obsolete.json
 msgid "Gigantic"
 msgstr "Гигантский"
+
+#. ~ Description for Gigantic
+#: data/mods/Aftershock/mutations/obsolete.json
+msgid ""
+"Your cardiovascular system has caught up with your muscular physique, so who"
+" needs pathetic human cars?  Strength +4."
+msgstr ""
+"Ваша сердечно-сосудистая система приспособилась к вашему мощному телу. Так, "
+"кто ещё нуждается в жалких человеческих автомобилях? Сила +4."
 
 #: data/mods/Aftershock/mutations/obsolete.json
 msgid "Terrible Odor"
@@ -226685,7 +226804,7 @@ msgstr "Криптомонеты? Что за бред, интернет то б
 
 #: data/mods/Aftershock/npcs/prepnet_dialogue.json
 msgid "When will you have more?"
-msgstr ""
+msgstr "Когда будет больше?"
 
 #: data/mods/Aftershock/npcs/prepnet_dialogue.json
 msgid ""
@@ -226964,7 +227083,7 @@ msgstr "Тогда взглянем, что ты можешь мне предл�
 
 #: data/mods/Aftershock/npcs/whately_generic_dialogue.json
 msgid "When will you have more in stock?"
-msgstr ""
+msgstr "Когда в наличии будет больше?"
 
 #: data/mods/Aftershock/npcs/whately_generic_dialogue.json
 msgid "Only blood allowed, and the family Elders can make you of the blood."
@@ -262646,13 +262765,10 @@ msgstr ""
 #. ~ Description for {'str': 'Harpy'}
 #: data/mods/Monster_Girls/thresh_mutation.json
 msgid ""
-"Sadly, it looks like all those myths got it wrong about flying.  Well, at "
-"least you *think* so.  Maybe with some extra practice and some dieting, you "
-"can one day take to the sky unaided!"
+"The Wright Brothers **wish** they could have flown like you do.  The zombies"
+" stand no chance, now that you can swoop down from above!  Part of you "
+"wishes you could build a house on a floating sky island, though…"
 msgstr ""
-"К сожалению, похоже, что все эти мифы о полетах были ошибочными. Ну, по "
-"крайней мере, вы так *думаете*. Может быть, потренировавшись и посидев на "
-"диете, вы сможете однажды взлететь в небо без посторонней помощи!"
 
 #. ~ Description for {'str': 'Dryad'}
 #: data/mods/Monster_Girls/thresh_mutation.json
@@ -273210,7 +273326,7 @@ msgstr "に坂索トし荷測のンおク妙免イロコヤ梅棋厚れ表幌"
 #: src/catalua.cpp
 #, c-format
 msgid "Reloaded %1$d lua mods."
-msgstr ""
+msgstr "Перезагружены lua моды (%1$d)."
 
 #: src/catalua_console.cpp
 msgid "Press Ctrl+S to run script, press Esc to cancel"
@@ -282567,12 +282683,16 @@ msgstr ""
 "ваш вес."
 
 #: src/game.cpp
-msgid "You can't go down here!"
-msgstr "Вы не можете здесь спуститься!"
-
-#: src/game.cpp
 msgid "You can't go up here!"
 msgstr "Вы не можете здесь подняться!"
+
+#: src/game.cpp
+msgid "There is something above blocking your way."
+msgstr ""
+
+#: src/game.cpp
+msgid "You can't go down here!"
+msgstr "Вы не можете здесь спуститься!"
 
 #: src/game.cpp
 msgid "You can't drag things up and down stairs."
@@ -303160,10 +303280,6 @@ msgid "Origin"
 msgstr ""
 
 #: src/mtype.cpp
-msgid "Small"
-msgstr ""
-
-#: src/mtype.cpp
 msgid "Size"
 msgstr ""
 
@@ -312235,6 +312351,10 @@ msgstr "Вас бросило в озноб."
 #: src/suffer.cpp
 msgid "<npcname> starts to shake uncontrollably."
 msgstr "<npcname> бросило в озноб."
+
+#: src/suffer.cpp
+msgid "You find it hard to focus all of a sudden."
+msgstr ""
 
 #: src/suffer.cpp
 #, c-format

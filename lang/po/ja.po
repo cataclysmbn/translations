@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-07-23 01:42+0000\n"
+"POT-Creation-Date: 2025-07-24 01:38+0000\n"
 "Last-Translator: jacli mouber, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2566,6 +2566,24 @@ msgid ""
 " charged."
 msgstr ""
 "肉体を覆うように力場を生み出し、襲い来る攻撃を逸らします。銃弾に対して非常に効果が高く、次いで貫通攻撃、斬撃に対して効果を発揮しますが、打撃攻撃にはあまり効果がありません。力場が完全に充填されている状態では電力を消費せず、攻撃を受けてから3ターンは充填速度が通常の半分に低下します。"
+
+#: data/json/bionics.json
+msgid "Thermofluidic Propulsion Modules"
+msgstr "熱流体推進モジュール"
+
+#. ~ Description for {'str': 'Thermofluidic Propulsion Modules'}
+#: data/json/bionics.json
+msgid ""
+"These advanced propulsion modules utilize thermofluidic principles to "
+"generate lift and controlled thrust, allowing the user to achieve limited "
+"levitation and short-range flight.  When toggled on, they emit directed "
+"thermal energy through micro-thrusters to maneuver over obstacles or "
+"hazardous terrain.  Energy is consumed both during activation and sustained "
+"operation."
+msgstr ""
+"この高度な推進モジュールは、熱流体の原理を利用して揚力と制御された推進力を生み、限定的な浮遊や短距離飛行を可能にします。\n"
+"装置を起動すると、マイクロスラスターから指向性の熱エネルギーを放出し、障害物や危険な地形を乗り越えて移動します。\n"
+"起動時と動作中の両方でUPSの電力が消費されます。"
 
 #: data/json/bionics.json
 msgid "Alarm System"
@@ -8099,6 +8117,15 @@ msgid ""
 msgstr "摂取したソラジンの影響がまだ続いています。"
 
 #: data/json/effects.json
+msgid "Took GHB"
+msgstr "GHB接種"
+
+#. ~ Description of effect 'Took GHB'.
+#: data/json/effects.json
+msgid "You took GHB some time ago and you might still be under its influence."
+msgstr "摂取したGHBの影響がまだ続いています。"
+
+#: data/json/effects.json
 msgid "Lucidity"
 msgstr "明晰"
 
@@ -10535,6 +10562,18 @@ msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid ""
+"This gear <info>allows flight</info> when active, at the cost of <info>power"
+" from a UPS</info>."
+msgstr "このアイテムを起動すると、着用者を<info>飛行</info>させます。起動中は<info>UPS</info>の電力を消費します。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid "This gear <info>allows flight</info>."
+msgstr "このアイテムは着用者を<info>飛行</info>させます。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This gear has an <info>alarm clock</info> feature."
 msgstr "このアイテムは<info>アラーム</info>機能を備えています。"
 
@@ -11186,6 +11225,11 @@ msgstr "このアイテムにはナノ製作レシピが入っています。"
 #: data/json/flags.json
 msgid "This bionic is <bad>faulty</bad>."
 msgstr "このCBMは<bad>故障</bad>しています。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid "This bionic allows flight."
+msgstr "このCBMにより飛行が可能になります。"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -12182,23 +12226,23 @@ msgstr "他の道具"
 
 #: data/json/item_category.json
 msgid "ENTRY TOOLS"
-msgstr "開錠用具"
+msgstr "開錠道具"
 
 #: data/json/item_category.json
 msgid "WORKSHOP TOOLS"
-msgstr "工房用具"
+msgstr "工作道具"
 
 #: data/json/item_category.json
 msgid "COOKING TOOLS"
-msgstr "調理用具"
+msgstr "調理道具"
 
 #: data/json/item_category.json
 msgid "CHEMISTRY TOOLS"
-msgstr "化学用具"
+msgstr "化学道具"
 
 #: data/json/item_category.json
 msgid "FARM TOOLS"
-msgstr "農業用具"
+msgstr "農業道具"
 
 #: data/json/item_category.json
 msgid "DEPLOYABLES"
@@ -12293,11 +12337,11 @@ msgstr "予備部品"
 
 #: data/json/item_category.json
 msgid "METAL SCRAP"
-msgstr "金属屑"
+msgstr "金属材"
 
 #: data/json/item_category.json
 msgid "ELECTRONIC SCRAP"
-msgstr "廃電子機器"
+msgstr "電子部品類"
 
 #: data/json/item_category.json
 msgid "FABRICS"
@@ -12305,7 +12349,7 @@ msgstr "布地"
 
 #: data/json/item_category.json
 msgid "WOOD SCRAP"
-msgstr "廃材"
+msgstr "材木"
 
 #: data/json/item_category.json
 msgid "PLASTIC SCRAP"
@@ -13135,93 +13179,93 @@ msgstr "その他の道具を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Entry Tools"
-msgstr "分類: 開錠用具"
+msgstr "分類: 開錠道具"
 
 #. ~ Description for Loot: Entry Tools
 #: data/json/loot_zones.json
 msgid "Destination for entry tools."
-msgstr "開錠用具を置く区域です。"
+msgstr "開錠道具を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Workshop Tools"
-msgstr ""
+msgstr "分類: 工作道具"
 
 #. ~ Description for Loot: Workshop Tools
 #: data/json/loot_zones.json
 msgid "Destination for workshop tools."
-msgstr ""
+msgstr "工作道具を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Cooking Tools"
-msgstr ""
+msgstr "分類: 調理道具"
 
 #. ~ Description for Loot: Cooking Tools
 #: data/json/loot_zones.json
 msgid "Destination for cooking tools."
-msgstr ""
+msgstr "調理道具を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Chemistry Tools"
-msgstr ""
+msgstr "分類: 化学道具"
 
 #. ~ Description for Loot: Chemistry Tools
 #: data/json/loot_zones.json
 msgid "Destination for chemistry tools."
-msgstr ""
+msgstr "化学道具を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Farm Tools"
-msgstr ""
+msgstr "分類: 農業道具"
 
 #. ~ Description for Loot: Farm Tools
 #: data/json/loot_zones.json
 msgid "Destination for farm tools."
-msgstr ""
+msgstr "農業道具を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Deployables"
-msgstr ""
+msgstr "分類: 設置物"
 
 #. ~ Description for Loot: Deployables
 #: data/json/loot_zones.json
 msgid "Destination for deployable objects."
-msgstr ""
+msgstr "設置物を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Electronics"
-msgstr ""
+msgstr "分類: 電子機器"
 
 #. ~ Description for Loot: Electronics
 #: data/json/loot_zones.json
 msgid "Destination for electronics."
-msgstr ""
+msgstr "電子機器を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Cooking Ingredients"
-msgstr ""
+msgstr "分類: 調理材料"
 
 #. ~ Description for Loot: Cooking Ingredients
 #: data/json/loot_zones.json
 msgid "Destination for cooking ingredients."
-msgstr ""
+msgstr "調理材料を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Scrap Metal"
-msgstr ""
+msgstr "分類: 金属材"
 
 #. ~ Description for Loot: Scrap Metal
 #: data/json/loot_zones.json
 msgid "Destination for scrap metal."
-msgstr ""
+msgstr "金属材を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Scrap Electronics"
-msgstr ""
+msgstr "分類: 電子部品類"
 
 #. ~ Description for Loot: Scrap Electronics
 #: data/json/loot_zones.json
 msgid "Destination for scrap electronics."
-msgstr ""
+msgstr "電子部品類を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Scrap Fabric"
@@ -13230,70 +13274,70 @@ msgstr "分類: 予備部品"
 #. ~ Description for Loot: Scrap Fabric
 #: data/json/loot_zones.json
 msgid "Destination for scrap fabric."
-msgstr ""
+msgstr "布地を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Scrap Wood"
-msgstr ""
+msgstr "分類: 材木"
 
 #. ~ Description for Loot: Scrap Wood
 #: data/json/loot_zones.json
 msgid "Destination for scrap wood."
-msgstr ""
+msgstr "材木を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Scrap Plastic"
-msgstr ""
+msgstr "分類: プラスチック屑"
 
 #. ~ Description for Loot: Scrap Plastic
 #: data/json/loot_zones.json
 msgid "Destination for scrap plastic."
-msgstr ""
+msgstr "プラスチック屑を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Scrap Ceramics"
-msgstr ""
+msgstr "分類: セラミック屑"
 
 #. ~ Description for Loot: Scrap Ceramics
 #: data/json/loot_zones.json
 msgid "Destination for scrap ceramics."
-msgstr ""
+msgstr "セラミック屑を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Scrap Glass"
-msgstr ""
+msgstr "分類: ガラス屑"
 
 #. ~ Description for Loot: Scrap Glass
 #: data/json/loot_zones.json
 msgid "Destination for scrap glass."
-msgstr ""
+msgstr "ガラス屑を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Valuables"
-msgstr ""
+msgstr "分類: 貴重品"
 
 #. ~ Description for Loot: Valuables
 #: data/json/loot_zones.json
 msgid "Destination for valuables."
-msgstr ""
+msgstr "貴重品を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Rocks"
-msgstr ""
+msgstr "分類: 岩石"
 
 #. ~ Description for Loot: Rocks
 #: data/json/loot_zones.json
 msgid "Destination for rocks and minerals."
-msgstr ""
+msgstr "岩石や鉱物を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "Loot: Soil"
-msgstr ""
+msgstr "分類: 土"
 
 #. ~ Description for Loot: Soil
 #: data/json/loot_zones.json
 msgid "Destination for soil."
-msgstr ""
+msgstr "土を置く区域です。"
 
 #: data/json/loot_zones.json
 msgid "No Auto Pickup"
@@ -13346,13 +13390,13 @@ msgstr "友好NPCはこの区域内から発生する正体不明の音のみを
 
 #: data/json/loot_zones.json
 msgid "Loot: Dump"
-msgstr ""
+msgstr "分類: ごみ"
 
 #. ~ Description for Loot: Dump
 #: data/json/loot_zones.json
 msgid ""
 "Any item not otherwise sorted will be placed here if this zone is specified."
-msgstr ""
+msgstr "このゾーンが指定されている場合、他に分類されていないアイテムはすべてここに配置されます。"
 
 #: data/json/martialarts.json
 msgid "No style"
@@ -13480,6 +13524,7 @@ msgid ""
 "transferring kinetic energy through armor and into vulnerable organs and "
 "bones."
 msgstr ""
+"バーバラン・モンタンテは16世紀のスペインに起源を持ち、両手剣と大ぶりな横薙ぎによって重装甲を打ち破ることに特化しています。その攻撃は、装甲越しに運動エネルギーを伝え、内部の臓器や骨にダメージを与えます。"
 
 #. ~ Initiate message for martial art '{'str': 'Barbaran Montante'}'
 #: data/json/martialarts.json
@@ -13562,6 +13607,9 @@ msgid ""
 "\n"
 "+2 Damage, Blocked damge reduced by 50% of Strength."
 msgstr ""
+"堅実な構えで通常より多くのダメージをブロックし、鋭いパンチを繰り出します。\n"
+"\n"
+"打撃与ダメージ+2、筋力x50%のブロック時ダメージ軽減"
 
 #: data/json/martialarts.json
 msgid "Footwork"
@@ -13592,6 +13640,10 @@ msgid ""
 "+25% Damage.\n"
 "Lasts for 1 turn."
 msgstr ""
+"チャンスが見えました。さあ反撃です！\n"
+"\n"
+"打撃与ダメージ+25%\n"
+"1ターン継続"
 
 #: data/json/martialarts.json
 msgid "Brawling"
@@ -13713,6 +13765,10 @@ msgid ""
 "\n"
 "Damage increased by 75% of Dexterity but decreased by 75% of Strength."
 msgstr ""
+"力任せではない、スピードと精密性を重視した弱点狙いの攻撃を繰り出します。\n"
+"筋力ではなく器用によって近接戦闘与ダメージが増加します。\n"
+"\n"
+"器用x75%の打撃与ダメージ上昇、筋力x75%の打撃与ダメージ低下"
 
 #: data/json/martialarts.json
 msgid "Crane's Flight"
@@ -13789,6 +13845,9 @@ msgid ""
 "Enables \"Dragon Vortex Block\" and \"Dragon Wing Dodge\"\n"
 "Lasts 1 turn."
 msgstr ""
+"生命と戦いは円です。攻撃はカウンターに繋がり、再び攻撃に戻ります。この円環を完成させましょう。\n"
+"「旋風の守り」「旋風の身かわし」有効化\n"
+"1ターン継続"
 
 #: data/json/martialarts.json
 msgid "Dragon's Knowledge"
@@ -14039,19 +14098,19 @@ msgstr ""
 
 #: data/json/martialarts.json
 msgid "Kickboxing"
-msgstr ""
+msgstr "キックボクシング"
 
 #. ~ Description for martial art '{'str': 'Kickboxing'}'
 #: data/json/martialarts.json
 msgid ""
 "A martial art that combines western boxing with elements of Karate, "
 "Taekwondo, Muay Thai and Savate, particularly in the use of kicks."
-msgstr ""
+msgstr "西洋式ボクシングに、空手、テコンドー、ムエタイ、サバットの要素を組み合わせた武術で、特にキックの技術に重点を置いています。"
 
 #. ~ Initiate message for martial art '{'str': 'Kickboxing'}'
 #: data/json/martialarts.json
 msgid "You assume a kickboxing stance and focus power into your limbs."
-msgstr ""
+msgstr "キックボクシングの構えを取り、四肢に力を集中させました。"
 
 #. ~ Initiate message for martial art '{'str': 'Kickboxing'}'
 #: data/json/martialarts.json
@@ -42808,6 +42867,22 @@ msgstr "副腎にアドレナリン刺激装置を埋め込みます。この装
 msgid "Active Defense System CBM"
 msgid_plural "Active Defense System CBMs"
 msgstr[0] "CBM: 積極防御システム"
+
+#: data/json/items/bionics.json
+msgid "Thermofluidic Propulsion Modules CBM"
+msgid_plural "Thermofluidic Propulsion Modules CBMs"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'Thermofluidic Propulsion Modules CBM'}
+#: data/json/items/bionics.json
+msgid ""
+"An advanced mobility system implanted along the lower spine, legs, and feet,"
+" the Thermofluidic Propulsion Modules utilize controlled bursts of heated "
+"fluid dynamics and high-efficiency micro-thrusters to achieve lift and "
+"precise maneuverability.  This system enables short-range flight and "
+"levitation by manipulating pressure and thermal gradients, providing "
+"enhanced mobility across challenging terrain."
+msgstr ""
 
 #: data/json/items/bionics.json
 msgid "Alarm System CBM"
@@ -124390,11 +124465,11 @@ msgstr "鳥翼"
 #. ~ Description for {'str': 'Bird Wings'}
 #: data/json/mutations/mutations.json
 msgid ""
-"You have a pair of large, feathered wings.  Your body is too heavy to be "
-"able to fly, but you can use them to slow your descent during a fall, and "
-"will not take falling damage under any circumstances."
+"You have a pair of large, feathered wings.  Though your body is heavy and "
+"not built for sustained flight, you can use your wings to fly for short "
+"periods.  You can also glide to slow your descent and will never take "
+"falling damage under any circumstances."
 msgstr ""
-"羽毛で覆われた一対の大きな翼を獲得しました。飛行するには体が重すぎますが、落下速度を制御することはできます。落下によるダメージを絶対に受けません。"
 
 #: data/json/mutations/mutations.json
 msgid "Insect Wings"
@@ -124633,15 +124708,13 @@ msgid "Inconveniently Large"
 msgstr "大柄(レベル1)"
 
 #. ~ Description for {'str': 'Inconveniently Large'}
-#. ~ Description for Elephantine
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
 msgid ""
 "You have grown noticeably taller and broader.  Much of it is useful muscle "
 "mass (Strength +2), but you find it throws off your balance and you get in "
-"your own way (+10 torso and arm encumbrance)."
+"your own way (+10 torso and arm encumbrance).  You can also fire heavy "
+"weapons without the aid of terrain, at a penalty to accuracy."
 msgstr ""
-"縦にも横にも明らかに大きい、不便なほどの巨体に成長しました。見た目に恥じない筋力を誇りますが、全体のバランスに欠け、自分の体が邪魔で動きにくくなっています。筋力に+2のボーナスを得ますが、胴と腕に+10の動作制限を受けます。"
 
 #: data/json/mutations/mutations.json
 #: data/mods/Aftershock/mutations/obsolete.json src/mtype.cpp
@@ -124649,39 +124722,37 @@ msgid "Large"
 msgstr "大柄(レベル2)"
 
 #. ~ Description for {'str': 'Large'}
-#. ~ Description for Large
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
-msgid "You carry your rugged body with the dignity you deserve.  Strength +2."
-msgstr "威厳と風格の漂う、巨岩のごとき肉体を手に入れました。筋力に+2のボーナスを得ます。"
+msgid ""
+"You carry your rugged body with the dignity you deserve.  Strength +2, and "
+"you can fire heavy weapons without the aid of terrain at the cost of "
+"accuracy."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Freakishly Huge"
 msgstr "大柄(レベル3)"
 
 #. ~ Description for {'str': 'Freakishly Huge'}
-#. ~ Description for Freakishly Gigantic
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
 msgid ""
 "You have grown even more massive, to the point where you cannot usefully fit"
 " into human-sized clothing or vehicles.  Much of it is powerful muscle mass "
-"(Strength +4), but it's a real pain to haul around."
+"(Strength +4), but it's a real pain to haul around.  On the plus side, "
+"firing heavy weapons without mounting appropriate terrain is a bit easier."
 msgstr ""
-"さらに巨大に成長しました。もう人間サイズの衣服や乗り物は利用できそうにありません。屈強すぎるこの身体で歩き回るのは本当に苦痛です。筋力に+4のボーナスを得ます。"
 
 #: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Huge"
 msgstr "大柄(レベル4)"
 
 #. ~ Description for {'str': 'Huge'}
-#. ~ Description for Gigantic
 #: data/json/mutations/mutations.json
-#: data/mods/Aftershock/mutations/obsolete.json
 msgid ""
 "Your cardiovascular system has caught up with your muscular physique, so who"
-" needs pathetic human cars?  Strength +4."
-msgstr "心肺及び循環系の機能がついにこの逞しい肉体に追い付きました。もはや哀れな人間どもの乗り物に用はありませんね。筋力に+4のボーナスを得ます。"
+" needs pathetic human cars?  Strength +4, and you can fire heavy weapons "
+"unsupported more easily."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Strong"
@@ -124905,10 +124976,10 @@ msgstr ""
 "感覚器を自在に生成展開、再吸収できるようになりました。これによって、並の生物ならばその場に倒れてしまうほどの五感へのショックも平然と無視することができます。"
 
 #: data/json/mutations/mutations.json
-msgid "Little"
-msgstr "低身長"
+msgid "Uncomfortably Small"
+msgstr ""
 
-#. ~ Description for {'str': 'Little'}
+#. ~ Description for {'str': 'Uncomfortably Small'}
 #: data/json/mutations/mutations.json
 msgid ""
 "You've noticeably shrunk in size.  You're able to move with increased "
@@ -124916,10 +124987,22 @@ msgid ""
 msgstr "身長が著しく縮んでいます。よりしなやかに動けるようになりましたが、体躯が小さいため物をたくさん所持できません。"
 
 #: data/json/mutations/mutations.json src/mtype.cpp
-msgid "Tiny"
-msgstr "小柄"
+msgid "Small"
+msgstr ""
 
-#. ~ Description for {'str': 'Tiny'}
+#. ~ Description for {'str': 'Small'}
+#: data/json/mutations/mutations.json
+msgid ""
+"You can deny it no longer!  You are small.  You've adapted to your new size,"
+" suffering a bit less from your reduced carry capacity and increased "
+"fragility."
+msgstr ""
+
+#: data/json/mutations/mutations.json
+msgid "Worryingly Tiny"
+msgstr ""
+
+#. ~ Description for {'str': 'Worryingly Tiny'}
 #: data/json/mutations/mutations.json
 msgid ""
 "You're only half as tall as you used to be!  The weight of things you once "
@@ -124930,11 +125013,11 @@ msgid ""
 msgstr ""
 "今までの身長の半分まで縮んでしまいました！かつて簡単に持ち運べた重さの物を持ち上げるのにも一苦労です。服のサイズも以前の2倍に伸びた(身長が1/2に縮んだと言うべきでしょうか)ので、動作の邪魔になります。HPが大幅に減少しますが、静かに移動できるようになり、回避スキルが少し向上します。"
 
-#: data/json/mutations/mutations.json
-msgid "Unassuming"
-msgstr "小型"
+#: data/json/mutations/mutations.json src/mtype.cpp
+msgid "Tiny"
+msgstr "小柄"
 
-#. ~ Description for {'str': 'Unassuming'}
+#. ~ Description for {'str': 'Tiny'}
 #: data/json/mutations/mutations.json
 msgid ""
 "You've mastered your tiny form!  Item encumbrance and carry weight penalties"
@@ -126824,6 +126907,15 @@ msgstr "夜目(デバッグ専用)"
 #: data/json/mutations/mutations.json
 msgid "You can clearly see that this is for dev purposes only."
 msgstr "これはデバッグ専用の変異です。"
+
+#: data/json/mutations/mutations.json
+msgid "Debug Noclip"
+msgstr ""
+
+#. ~ Description for {'str': 'Debug Noclip'}
+#: data/json/mutations/mutations.json
+msgid "Garry?"
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Debug Invisibility"
@@ -158778,6 +158870,38 @@ msgstr ""
 msgid "Hand Axes"
 msgstr ""
 
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s starts burning your hands!"
+msgstr "%1$sがあなたの手を燃やしました！"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s feels freezing cold!"
+msgstr "%1$sはとても寒がっているようです。"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "An electric shock shoots into your hand from %1$s!"
+msgstr "%1$sがあなたの手に電撃を放ちました！"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s lied to you."
+msgstr "%1$sはあなたに嘘をついています。"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s was working for… THEM"
+msgstr "%1$sは「奴ら」のために動いています..."
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s said something stupid."
+msgstr "%1$sが馬鹿げたことを言っています。"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s is running away!"
+msgstr "%1$sは逃げ出しました！"
+
+#: data/json/obsoletion/uncategorized.json
+msgid "%1$s finds you filthy."
+msgstr ""
+
 #. ~ Description for quantum solar panel
 #: data/json/obsoletion/vehicle_parts.json
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -161864,6 +161988,10 @@ msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
 msgid "local power plant roof"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+msgid "solar farm"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
@@ -171023,38 +171151,6 @@ msgstr "「絶対に信じない！」"
 
 #: data/json/snippets/schizophrenia.json
 msgid "\"RUN.  NOW.  IT MAY NOT BE TOO LATE.\""
-msgstr ""
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s starts burning your hands!"
-msgstr "%1$sがあなたの手を燃やしました！"
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s feels freezing cold!"
-msgstr "%1$sはとても寒がっているようです。"
-
-#: data/json/snippets/schizophrenia.json
-msgid "An electric shock shoots into your hand from %1$s!"
-msgstr "%1$sがあなたの手に電撃を放ちました！"
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s lied to you."
-msgstr "%1$sはあなたに嘘をついています。"
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s was working for… THEM"
-msgstr "%1$sは「奴ら」のために動いています..."
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s said something stupid."
-msgstr "%1$sが馬鹿げたことを言っています。"
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s is running away!"
-msgstr "%1$sは逃げ出しました！"
-
-#: data/json/snippets/schizophrenia.json
-msgid "%1$s finds you filthy."
 msgstr ""
 
 #: data/json/snippets/snippets.json
@@ -180495,13 +180591,43 @@ msgstr "不動"
 msgid "Elephantine"
 msgstr "ゾウの体格"
 
+#. ~ Description for Elephantine
+#: data/mods/Aftershock/mutations/obsolete.json
+msgid ""
+"You have grown noticeably taller and broader.  Much of it is useful muscle "
+"mass (Strength +2), but you find it throws off your balance and you get in "
+"your own way (+10 torso and arm encumbrance)."
+msgstr ""
+"縦にも横にも明らかに大きい、不便なほどの巨体に成長しました。見た目に恥じない筋力を誇りますが、全体のバランスに欠け、自分の体が邪魔で動きにくくなっています。筋力に+2のボーナスを得ますが、胴と腕に+10の動作制限を受けます。"
+
+#. ~ Description for Large
+#: data/mods/Aftershock/mutations/obsolete.json
+msgid "You carry your rugged body with the dignity you deserve.  Strength +2."
+msgstr "威厳と風格の漂う、巨岩のごとき肉体を手に入れました。筋力に+2のボーナスを得ます。"
+
 #: data/mods/Aftershock/mutations/obsolete.json
 msgid "Freakishly Gigantic"
 msgstr "大柄ゾウの体格"
 
+#. ~ Description for Freakishly Gigantic
+#: data/mods/Aftershock/mutations/obsolete.json
+msgid ""
+"You have grown even more massive, to the point where you cannot usefully fit"
+" into human-sized clothing or vehicles.  Much of it is powerful muscle mass "
+"(Strength +4), but it's a real pain to haul around."
+msgstr ""
+"さらに巨大に成長しました。もう人間サイズの衣服や乗り物は利用できそうにありません。屈強すぎるこの身体で歩き回るのは本当に苦痛です。筋力に+4のボーナスを得ます。"
+
 #: data/mods/Aftershock/mutations/obsolete.json
 msgid "Gigantic"
 msgstr "巨大ゾウの体格"
+
+#. ~ Description for Gigantic
+#: data/mods/Aftershock/mutations/obsolete.json
+msgid ""
+"Your cardiovascular system has caught up with your muscular physique, so who"
+" needs pathetic human cars?  Strength +4."
+msgstr "心肺及び循環系の機能がついにこの逞しい肉体に追い付きました。もはや哀れな人間どもの乗り物に用はありませんね。筋力に+4のボーナスを得ます。"
 
 #: data/mods/Aftershock/mutations/obsolete.json
 msgid "Terrible Odor"
@@ -210016,9 +210142,9 @@ msgstr ""
 #. ~ Description for {'str': 'Harpy'}
 #: data/mods/Monster_Girls/thresh_mutation.json
 msgid ""
-"Sadly, it looks like all those myths got it wrong about flying.  Well, at "
-"least you *think* so.  Maybe with some extra practice and some dieting, you "
-"can one day take to the sky unaided!"
+"The Wright Brothers **wish** they could have flown like you do.  The zombies"
+" stand no chance, now that you can swoop down from above!  Part of you "
+"wishes you could build a house on a floating sky island, though…"
 msgstr ""
 
 #. ~ Description for {'str': 'Dryad'}
@@ -228898,12 +229024,16 @@ msgid ""
 msgstr "ここからは登れません - 身体を支える地形が必要です。"
 
 #: src/game.cpp
-msgid "You can't go down here!"
-msgstr "ここではこれ以上は下がれません！"
-
-#: src/game.cpp
 msgid "You can't go up here!"
 msgstr "ここではこれ以上は上がれません！"
+
+#: src/game.cpp
+msgid "There is something above blocking your way."
+msgstr ""
+
+#: src/game.cpp
+msgid "You can't go down here!"
+msgstr "ここではこれ以上は下がれません！"
 
 #: src/game.cpp
 msgid "You can't drag things up and down stairs."
@@ -248780,10 +248910,6 @@ msgid "Origin"
 msgstr ""
 
 #: src/mtype.cpp
-msgid "Small"
-msgstr ""
-
-#: src/mtype.cpp
 msgid "Size"
 msgstr ""
 
@@ -257331,6 +257457,10 @@ msgstr "震えがこみ上げてきました。"
 #: src/suffer.cpp
 msgid "<npcname> starts to shake uncontrollably."
 msgstr "<npcname>は抑え切れずに震え始めました。"
+
+#: src/suffer.cpp
+msgid "You find it hard to focus all of a sudden."
+msgstr ""
 
 #: src/suffer.cpp
 #, c-format
