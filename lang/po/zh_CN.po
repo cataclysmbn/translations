@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-08-03 01:46+0000\n"
+"POT-Creation-Date: 2025-08-04 01:45+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -6045,6 +6045,14 @@ msgstr "雕刻防御工事"
 #: data/json/construction_group.json
 msgid "Place Clay Pots"
 msgstr "放置陶锅"
+
+#: data/json/construction_group.json
+msgid "Build Adobe Floor"
+msgstr "建造黏土砖地板"
+
+#: data/json/construction_group.json
+msgid "Build Roof Over Adobe Floor"
+msgstr "为黏土砖地建造屋顶"
 
 #: data/json/debug_spells.json
 msgid "Template Spell"
@@ -36847,6 +36855,18 @@ msgstr "露天"
 msgid "This is open air."
 msgstr "这是露天的。"
 
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+msgid "adobe floor"
+msgstr "黏土砖地板"
+
+#. ~ Description for adobe floor
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid ""
+"Adobe bricks and mortar smoothed out to make a clean fireproof floor, with a"
+" matching roof of adobe."
+msgstr "用黏土砖和砂浆抹平，制成干净耐火的地板，并配有相匹配的黏土砖屋顶。"
+
 #. ~ Description for mound of clay
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid "A mound of clay soil.  Dig a shallow pit here to harvest the clay."
@@ -37095,6 +37115,11 @@ msgstr "一片光禿禿、冰冷的混凝土地板，上面有一條黃色的油
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid "A bare and cold concrete floor."
 msgstr "一片光秃秃、冰冷的混凝土地板。"
+
+#. ~ Description for adobe floor
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+msgid "Adobe bricks and mortar smoothed out to make a clean fireproof floor."
+msgstr "用黏土砖和砂浆抹平，制成干净耐火的地板。"
 
 #: data/json/furniture_and_terrain/terrain-flora.json
 msgid "walnut tree"
@@ -161875,42 +161900,6 @@ msgstr "蚁后室"
 msgid "ant tunnel"
 msgstr "蚁穴通道"
 
-#: data/json/overmap/overmap_terrain/overmap_terrain_campus.json
-msgid "campus admin building"
-msgstr "大学（行政楼）"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain_campus.json
-msgid "campus commons building"
-msgstr "大学（公共楼）"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain_campus.json
-msgid "campus commons roof"
-msgstr "大学（公共楼屋顶）"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain_campus.json
-msgid "campus media building"
-msgstr "大学（多媒体楼）"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain_campus.json
-msgid "campus media building roof"
-msgstr "大学（多媒体楼屋顶）"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain_campus.json
-msgid "campus health building"
-msgstr "大学（医务楼）"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain_campus.json
-msgid "campus health building roof"
-msgstr "大学（医务楼屋顶）"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain_campus.json
-msgid "campus lecture hall"
-msgstr "大学（讲堂）"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain_campus.json
-msgid "campus lecture hall roof"
-msgstr "大学（讲堂屋顶）"
-
 #: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_necropolis.json
 #: data/mods/alt_map_key/overmap_terrain.json
@@ -225457,6 +225446,11 @@ msgstr "你躲开了飞来的弹药！"
 #: src/creature.cpp
 msgid "<npcname> avoids an incoming projectile."
 msgstr "<npcname> 躲开了飞来的弹药！"
+
+#: src/creature.cpp
+#, c-format
+msgid "Projectile damage is now %s, arpen is now %s"
+msgstr "抛射物伤害现在是 %s，护甲穿透现在是 %s"
 
 #: src/creature.cpp
 msgid "You feel poison coursing through your body!"
