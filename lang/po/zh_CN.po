@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-08-09 01:32+0000\n"
+"POT-Creation-Date: 2025-08-10 01:41+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -4479,19 +4479,19 @@ msgstr "破坏皮革衬里"
 
 #: data/json/clothing_mods.json
 msgid "Pad with steel"
-msgstr "增加钢板衬里"
+msgstr "增加钢片衬里"
 
 #: data/json/clothing_mods.json
 msgid "Destroy steel padding"
-msgstr "破坏钢板衬里"
+msgstr "破坏钢片衬里"
 
 #: data/json/clothing_mods.json
 msgid "Pad with superalloy"
-msgstr "添加钢板内衬"
+msgstr "添加超合金片衬里"
 
 #: data/json/clothing_mods.json
 msgid "Destroy superalloy padding"
-msgstr "移除钢板内衬"
+msgstr "移除超合金片衬里"
 
 #: data/json/clothing_mods.json
 msgid "Pad with Kevlar"
@@ -26988,6 +26988,11 @@ msgstr "城堡堡垒"
 msgid "Convention Center Rooftop"
 msgstr "会展中心屋顶"
 
+#: data/json/start_locations.json
+#: data/json/overmap/overmap_land_use_codes.json
+msgid "Marina"
+msgstr "游艇停靠区"
+
 #: data/json/techniques.json
 msgid "Not at technique at all"
 msgstr "毫无技术含量。"
@@ -34067,10 +34072,25 @@ msgid ""
 msgstr "用金属制成的坚固的工作台。它非常适合用来制造巨大而沉重的物品。"
 
 #: data/json/furniture_and_terrain/furniture-surfaces.json
-msgid "Robotic workbench"
+msgid "survivor workbench"
+msgstr "幸存者工作台"
+
+#. ~ Description for survivor workbench
+#. ~ Description for {'str': 'survivors workbench', 'str_pl': 'survivors
+#. workbenches'}
+#: data/json/furniture_and_terrain/furniture-surfaces.json
+#: data/json/items/vehicle/tables.json
+msgid ""
+"A sturdy workbench built out of metal.  It is perfect for crafting large and"
+" heavy things.  This one contains a few extra tools and supplies, making it "
+"more useful than a standard workbench."
+msgstr "由金属制成的坚固工作台，非常适合制作大型和沉重的物品。这个工作台配备了一些额外的工具和物资，比普通工作台更实用。"
+
+#: data/json/furniture_and_terrain/furniture-surfaces.json
+msgid "robotic workbench"
 msgstr "机器人工作台"
 
-#. ~ Description for Robotic workbench
+#. ~ Description for robotic workbench
 #. ~ Description for {'str': 'robobench', 'str_pl': 'robobenches'}
 #: data/json/furniture_and_terrain/furniture-surfaces.json
 #: data/json/items/vehicle/tables.json
@@ -70057,6 +70077,23 @@ msgid ""
 "all the best diners and bars.  Using it will add points of interest to your "
 "map."
 msgstr "一本铜版纸小册子，由本地商会出版。上面标注了附近所有餐厅和酒吧的详细地址。使用它将在你的地图添加兴趣点。"
+
+#: data/json/items/book/maps.json
+msgid "waterway map"
+msgid_plural "waterway maps"
+msgstr[0] "水路地图"
+
+#. ~ Use action message for {'str': 'waterway map'}.
+#: data/json/items/book/maps.json
+msgid "You add local waterways and notable features on the shore to your map."
+msgstr "你在地图上添加了本地水路以及岸边的显著特征。"
+
+#. ~ Description for {'str': 'waterway map'}
+#: data/json/items/book/maps.json
+msgid ""
+"This is a map of local rivers and lakes, along with the location of notable "
+"points of interest such as marinas and lighthouses."
+msgstr "这是一张当地河流和湖泊的地图，并标注了码头、灯塔等重要兴趣点的位置。"
 
 #: data/json/items/book/martial.json
 msgid "The Spirit of Aikido"
@@ -112107,6 +112144,12 @@ msgstr[0] "木桌子"
 #: data/json/items/vehicle/tables.json
 msgid "A crude wooden table."
 msgstr "一个粗糙的木桌"
+
+#: data/json/items/vehicle/tables.json
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "survivors workbench"
+msgid_plural "survivors workbenches"
+msgstr[0] "幸存者工作台"
 
 #: data/json/items/vehicle/tables.json
 #: data/json/vehicleparts/vehicle_parts.json
@@ -161156,10 +161199,6 @@ msgid ""
 msgstr "包括绿道、沙井、球场内水域、相关建筑和停车场。区域范围内超过1英亩的大片森林被归类为森林（3类）。不包括驾驶场或迷你高尔夫球场。"
 
 #: data/json/overmap/overmap_land_use_codes.json
-msgid "Marina"
-msgstr "游艇停靠区"
-
-#: data/json/overmap/overmap_land_use_codes.json
 msgid ""
 "Include parking lots and associated facilities but not docks (in class 18)"
 msgstr "包括停车场和相关设施，但不包括码头（18类）。"
@@ -163310,6 +163349,10 @@ msgstr "地区学校"
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "prison"
 msgstr "监狱"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_public_institutional.json
+msgid "island prison"
+msgstr "监狱岛"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_public_institutional.json
 #: data/mods/alt_map_key/overmap_terrain.json
@@ -176741,6 +176784,26 @@ msgstr "气垫船"
 #: data/json/vehicles/boats.json
 msgid "wooden rowboat"
 msgstr "木划艇"
+
+#: data/json/vehicles/boats.json
+msgid "Sailboat"
+msgstr "帆船"
+
+#: data/json/vehicles/boats.json
+msgid "Pirate Ship"
+msgstr "海盗船"
+
+#: data/json/vehicles/boats.json
+msgid "Coast Guard Patrol Boat"
+msgstr "海岸警卫队巡逻艇"
+
+#: data/json/vehicles/boats.json
+msgid "Coast Guard Cutter"
+msgstr "海岸警卫队巡逻舰"
+
+#: data/json/vehicles/boats.json
+msgid "Smuggling Speedboat"
+msgstr "走私快艇"
 
 #: data/json/vehicles/cars.json
 msgid "4x4 Car"
