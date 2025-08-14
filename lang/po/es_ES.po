@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-08-13 01:36+0000\n"
+"POT-Creation-Date: 2025-08-14 01:45+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/bn-team/teams/113585/es_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -17129,17 +17129,13 @@ msgstr ""
 msgid "Heavy Bone"
 msgstr ""
 
-#. ~ 1$s is monster name, 2$s bodypart in accusative
-#: data/json/monster_attacks.json src/monattack.cpp
-#, c-format
-msgid "The %1$s impales your torso!"
-msgstr "¡El %1$s empala tu torso!"
+#: data/json/monster_attacks.json
+msgid "The %1$s impales your %2$s!"
+msgstr ""
 
-#. ~ 1$s is monster name, 2$s bodypart in accusative
-#: data/json/monster_attacks.json src/monattack.cpp
-#, c-format
-msgid "The %1$s impales <npcname>'s torso!"
-msgstr "¡El %1$s empala el torso de <npcname>!"
+#: data/json/monster_attacks.json
+msgid "The %1$s impales <npcname>'s %2$s!"
+msgstr ""
 
 #: data/json/monster_attacks.json
 msgid "The %1$s tries to impale you, but fails to."
@@ -135001,7 +134997,7 @@ msgstr ""
 
 #. ~ Description for {'str': 'Summon Zombie Soldier Minions'}
 #: data/json/monster_special_attacks/spells.json
-msgid "Summons 3 or 4 zombie soldiers."
+msgid "Summons 2 to 5 zombie soldiers."
 msgstr ""
 
 #: data/json/monster_special_attacks/spells.json
@@ -143035,42 +143031,33 @@ msgid ""
 msgstr ""
 
 #: data/json/monsters/zed_soldiers.json
-msgid "zombie supply sergeant"
-msgid_plural "zombie supply sergeants"
+msgid "zombie sergeant"
+msgid_plural "zombie sergeants"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#. ~ Description for {'str': 'zombie supply sergeant'}
+#. ~ Description for {'str': 'zombie sergeant'}
 #: data/json/monsters/zed_soldiers.json
 msgid ""
-"This zombie was once the unit's administrative officer, a bizarre entity "
-"still clinging to past obsessions and a sense of authority even after the "
-"collapse.  This zombie specializes in command and control rather than direct"
-" combat, summoning and directing nearby zombies with a hoarse voice that "
-"perpetually sounds like grumbling."
+"This zombie's tattered uniform indicates it might have once been an NCO.  A "
+"bizarre entity still clinging to past obsessions and a sense of authority, "
+"as if it was still leading the charge against the enemy it fell against.  It"
+" summons echos of fallen soldiers, with a hoarse voice that perpetually "
+"sounds like grumbling."
 msgstr ""
 
-#. ~ Attack message of monster "{'str': 'zombie supply sergeant'}"'s spell
-#. "None"
+#. ~ Attack message of monster "{'str': 'zombie sergeant'}"'s spell "None"
 #: data/json/monsters/zed_soldiers.json
 msgid ""
-"As the zombie supply sergeant gargles with rage, the available troops begin "
-"to gather around!"
+"The zombie sergeant gargles with rage, and spectral troops begin to gather "
+"around!"
 msgstr ""
 
-#: data/json/monsters/zed_soldiers.json
-msgid "auxiliary zombie force"
-msgid_plural "auxiliary zombie forces"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#. ~ Description for {'str': 'auxiliary zombie force'}
 #: data/json/monsters/zed_soldiers.json
 msgid ""
 "These are the pathetic beings reluctantly dragged into action under the "
-"coercive command of the zombie quartermaster.  They still wear expressions "
+"coercive command of their commanding officer.  They still wear expressions "
 "of profound displeasure and exhibit a visibly annoyed demeanor, moving "
 "listlessly to commands that are a confused echo of their past lives.  "
 "Forcibly deployed, they shamble towards you, but their every movement "
@@ -202310,6 +202297,10 @@ msgid "Coast Guard Cutter"
 msgstr ""
 
 #: data/json/vehicles/boats.json
+msgid "Police Boat"
+msgstr ""
+
+#: data/json/vehicles/boats.json
 msgid "Smuggling Speedboat"
 msgstr ""
 
@@ -236984,6 +236975,20 @@ msgid ""
 "tuned to .40 S&W."
 msgstr ""
 
+#: data/mods/MagicalNights/items/enchanted/enchanted_misc.json
+msgid "mana-fueled vibrator"
+msgid_plural "mana-fueled vibrators"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'mana-fueled vibrator'}
+#: data/mods/MagicalNights/items/enchanted/enchanted_misc.json
+msgid ""
+"This mana-devouring device is just the thing to knead the tension out and "
+"help you relax.  Wizards have needs too, after all."
+msgstr ""
+
 #: data/mods/MagicalNights/items/enchanted/enchanted_ranged.json
 msgid "M47A1 Techno-Medusa"
 msgid_plural "M47A1 Techno-Medusae"
@@ -266728,6 +266733,10 @@ msgid "Moves per attack: "
 msgstr "Movimientos por ataque: "
 
 #: src/item.cpp
+msgid "Stamina Cost: "
+msgstr ""
+
+#: src/item.cpp
 msgid "Typical damage per second:"
 msgstr "Daño por segundo típico:"
 
@@ -277910,6 +277919,18 @@ msgstr "¡El %s apunta, y lanza hacia ti un masivo tallo!"
 #: src/monattack.cpp
 msgid "You feel millions of live spores pumping into you…"
 msgstr ""
+
+#. ~ 1$s is monster name, 2$s bodypart in accusative
+#: src/monattack.cpp
+#, c-format
+msgid "The %1$s impales your torso!"
+msgstr "¡El %1$s empala tu torso!"
+
+#. ~ 1$s is monster name, 2$s bodypart in accusative
+#: src/monattack.cpp
+#, c-format
+msgid "The %1$s impales <npcname>'s torso!"
+msgstr "¡El %1$s empala el torso de <npcname>!"
 
 #: src/monattack.cpp
 #, c-format
