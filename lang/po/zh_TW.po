@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-08-18 01:45+0000\n"
+"POT-Creation-Date: 2025-08-19 01:32+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -5678,6 +5678,10 @@ msgstr "標記製作現場"
 #: data/json/construction_group.json
 msgid "Make Gravel Floor"
 msgstr "建造碎石地板"
+
+#: data/json/construction_group.json
+msgid "Make Trash Island"
+msgstr "制作垃圾岛"
 
 #: data/json/construction_group.json
 msgid "Make Woodchip Floor"
@@ -30926,6 +30930,7 @@ msgstr "一个连接到电网的便携式食物脱水机，用以加工并长期
 #: data/json/furniture_and_terrain/terrain-doors.json
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 #: data/json/furniture_and_terrain/terrain-flora.json
 #: data/json/furniture_and_terrain/terrain-fungal.json
 #: data/json/furniture_and_terrain/terrain-manufactured.json
@@ -31613,6 +31618,7 @@ msgstr "碰!"
 #: data/json/furniture_and_terrain/terrain-doors.json
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 #: data/json/furniture_and_terrain/terrain-highways.json
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 #: data/json/furniture_and_terrain/terrain-mechanisms.json
@@ -34977,6 +34983,15 @@ msgid ""
 msgstr "一堆垃圾和泥土青草混在一起，味道很让人恶心，不过常言道：\"一个人的垃圾是……\""
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "pile of floating trash"
+msgstr "一堆漂浮的垃圾"
+
+#. ~ Description for pile of floating trash
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "Trash floating in the water. I guess it really does all end up here..."
+msgstr "漂浮在水上的垃圾。看来，它们最后真的都漂到这里来了……"
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "metal wreckage"
 msgstr "金屬殘骸"
 
@@ -37632,6 +37647,28 @@ msgstr "一片光秃秃、冰冷的混凝土地板。"
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid "Adobe bricks and mortar smoothed out to make a clean fireproof floor."
 msgstr "用黏土砖和砂浆抹平，制成干净耐火的地板。"
+
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+msgid "trash island"
+msgstr "垃圾岛"
+
+#. ~ Description for trash island
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+msgid ""
+"A small section of floating trash debris, neatly tied and packed together."
+msgstr "一小片漂浮的垃圾残骸，被整齐地捆扎在一起。"
+
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+msgid "sandy trash island"
+msgstr "沙土垃圾岛"
+
+#. ~ Description for sandy trash island
+#: data/json/furniture_and_terrain/terrain-floors-outdoors.json
+msgid ""
+"A small section of floating trash debris, neatly tied and packed together.  "
+"This section has been covered with sand and soil, making it more stable and "
+"able to sustain certain plants."
+msgstr "一小片漂浮的垃圾残骸，被整齐地捆扎在一起。这片区域上覆盖了沙土，使其更加稳定，并能维持某些植物的生长。"
 
 #: data/json/furniture_and_terrain/terrain-flora.json
 msgid "walnut tree"
@@ -41745,17 +41782,21 @@ msgid ""
 msgstr "一扇在室内挂着花哨窗帘的窗户。窗帘可以拉上，挡住阳光和视线。"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
-msgid "Plastic window"
+msgid "plastic window"
 msgstr "塑料窗"
 
-#. ~ Description for Plastic window
+#. ~ Description for plastic window
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
 "A makeshift window comprising a sheet of translucent, rigid plastic secured "
 "in a wooden frame.  It'll do in a pinch."
 msgstr "一扇简易的窗户，将一片半透明的硬质塑料板固定在木头窗框上。勉强能用就行了。"
 
-#. ~ Description for Plastic window
+#: data/json/furniture_and_terrain/terrain-windows.json
+msgid "open plastic window"
+msgstr "塑料窗（开）"
+
+#. ~ Description for open plastic window
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
 "An opened makeshift window comprising a sheet of translucent, rigid plastic "
@@ -41763,10 +41804,10 @@ msgid ""
 msgstr "一扇简易的窗户，将一片半透明的硬质塑料板固定在木头窗框上。勉强能用就行了。这扇窗户开着。"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
-msgid "Plastic window with a curtain"
-msgstr "有窗帘的塑料窗"
+msgid "plastic window with closed curtains"
+msgstr "有窗帘的塑料窗（拉上窗帘）"
 
-#. ~ Description for Plastic window with a curtain
+#. ~ Description for plastic window with closed curtains
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
 "A makeshift window with a closed curtain.  Comprising a sheet of "
@@ -41774,27 +41815,35 @@ msgid ""
 "drawn across it to block the light.  It'll do in a pinch."
 msgstr "一扇简易的带窗帘的窗户，将一片半透明的硬质塑料板固定在木头窗框上。窗帘拉上了，挡住阳光和视线。勉强能用就行了。"
 
-#. ~ Description for Plastic window with a curtain
+#: data/json/furniture_and_terrain/terrain-windows.json
+msgid "plastic window with curtains"
+msgstr "有窗帘的塑料窗"
+
+#. ~ Description for plastic window with curtains
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"A makeshift window with a opened curtain.  Comprising a sheet of "
+"A makeshift window with an opened curtain.  Comprising a sheet of "
 "translucent, rigid plastic secured in a wooden frame, with sheets strung "
 "about it to block the light as required.  It'll do in a pinch."
 msgstr "一扇开着窗帘的简易窗户，将一片半透明的硬质塑料板固定在木头窗框上。窗帘可以拉上，挡住阳光和视线。勉强能用就行了。"
 
-#. ~ Description for Plastic window with a curtain
+#: data/json/furniture_and_terrain/terrain-windows.json
+msgid "open plastic window with curtains"
+msgstr "有窗帘的塑料窗（开）"
+
+#. ~ Description for open plastic window with curtains
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"An opened makeshift window with a opened curtain.  Comprising a sheet of "
+"An opened makeshift window with an opened curtain.  Comprising a sheet of "
 "translucent, rigid plastic secured in a wooden frame, with sheets strung "
 "about it to block the light as required.  It'll do in a pinch."
 msgstr "一扇开着窗帘的简易窗户，将一片半透明的硬质塑料板固定在木头窗框上。窗帘可以拉上，挡住阳光和视线。勉强能用就行了。这扇窗户开着。"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
-msgid "Reinforced plastic window"
+msgid "reinforced plastic window"
 msgstr "强化塑料窗"
 
-#. ~ Description for Reinforced plastic window
+#. ~ Description for reinforced plastic window
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
 "A makeshift window comprising three sheets of translucent, rigid plastic "
@@ -41802,10 +41851,10 @@ msgid ""
 msgstr "一扇简易的窗户，将三片半透明的硬质塑料板固定在木头窗框上。勉强能用就行了。"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
-msgid "Reinforced Plastic window"
-msgstr "强化塑料窗"
+msgid "open reinforced plastic window"
+msgstr "强化塑料窗（开）"
 
-#. ~ Description for Reinforced Plastic window
+#. ~ Description for open reinforced plastic window
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
 "An open makeshift window comprising three sheets of translucent, rigid "
@@ -41813,28 +41862,32 @@ msgid ""
 msgstr "一扇简易的窗户，将三片半透明的硬质塑料板固定在木头窗框上。勉强能用就行了。这扇窗户开着。"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
-msgid "Reinforced plastic window with a curtain"
-msgstr "有窗帘的强化塑料窗"
+msgid "reinforced plastic window with closed curtains"
+msgstr "有窗帘的强化塑料窗（拉上窗帘）"
 
-#. ~ Description for Reinforced plastic window with a curtain
+#. ~ Description for reinforced plastic window with closed curtains
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
 "A makeshift window with a closed curtain.  Comprising three sheets of "
 "translucent, rigid plastic secured in a wooden frame.  It'll do in a pinch."
 msgstr "一扇关着窗帘的简易窗户，将三片半透明的硬质塑料板固定在木头窗框上。勉强能用就行了。"
 
-#. ~ Description for Reinforced plastic window with a curtain
+#: data/json/furniture_and_terrain/terrain-windows.json
+msgid "reinforced plastic window with curtains"
+msgstr "有窗帘的强化塑料窗"
+
+#. ~ Description for reinforced plastic window with curtains
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
-"A makeshift window with a opened curtain.  Comprising three sheets of "
+"A makeshift window with an opened curtain.  Comprising three sheets of "
 "translucent, rigid plastic secured in a wooden frame.  It'll do in a pinch."
 msgstr "一扇开着窗帘的简易窗户，将三片半透明的硬质塑料板固定在木头窗框上。勉强能用就行了。"
 
 #: data/json/furniture_and_terrain/terrain-windows.json
-msgid "Reinforced plastic window With a curtain"
-msgstr "有窗帘的强化塑料窗"
+msgid "open reinforced plastic window with curtains"
+msgstr "有窗帘的强化塑料窗（开）"
 
-#. ~ Description for Reinforced plastic window With a curtain
+#. ~ Description for open reinforced plastic window with curtains
 #: data/json/furniture_and_terrain/terrain-windows.json
 msgid ""
 "An open makeshift window with a opened curtain.  Comprising three sheets of "
@@ -41896,6 +41949,17 @@ msgid ""
 "A thick round window surrounded with a strong metal frame, the window is "
 "sealed closed."
 msgstr "一個由堅固金屬框架包圍的厚實圓形窗戶，窗戶被密封緊閉。"
+
+#: data/json/furniture_and_terrain/terrain-windows.json
+msgid "underwater porthole"
+msgstr "水下舷窗"
+
+#. ~ Description for underwater porthole
+#: data/json/furniture_and_terrain/terrain-windows.json
+msgid ""
+"A thick round window surrounded with a strong metal frame, the window seems "
+"to be leaking a bit."
+msgstr "一個由堅固金屬框架包圍的厚實圓形窗戶，窗戶似乎有点漏水。"
 
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 msgid "wooden stairs"
@@ -175967,6 +176031,14 @@ msgid ""
 msgstr ""
 "一个安装在车内货舱或者客舱上的能够装载液体的车载容器。装入车辆引擎所对应消耗的燃料后，引擎启动时将会自动从对应的水箱内抽取燃料。装入水或其他液体后，可以在车辆水龙头处获取对应液体。你也可以使用一根橡胶软管从水箱中抽取液体。"
 
+#: data/json/vehicleparts/tanks.json
+msgid "roof-mounted wooden barrel (100L)"
+msgstr "车顶外挂木桶（100升）"
+
+#: data/json/vehicleparts/tanks.json
+msgid "wooden barrel (20L)"
+msgstr "木桶（20L）"
+
 #. ~ Description for {'str': 'fuel bunker'}
 #: data/json/vehicleparts/tanks.json
 msgid ""
@@ -175986,6 +176058,10 @@ msgstr "车载巨弩"
 #: data/json/vehicleparts/turret.json
 msgid "mounted repeating crossbow"
 msgstr "车载连弩"
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted carbon fiber repeating crossbow"
+msgstr "车载碳素纤维连弩"
 
 #: data/json/vehicleparts/turret.json
 msgid "mounted XM34 EMP projector"
@@ -176144,6 +176220,10 @@ msgstr "车载弹弓炮"
 #: data/json/vehicleparts/turret.json
 msgid "mounted coilgun"
 msgstr "車載電磁加速槍"
+
+#: data/json/vehicleparts/turret.json
+msgid "mounted nail rifle"
+msgstr "车载射钉步枪"
 
 #: data/json/vehicleparts/turret.json
 msgid "mounted mininuke launcher"
@@ -176614,6 +176694,15 @@ msgstr "加固百叶窗"
 msgid ""
 "Strong metal shutters to armor a window, which can be opened or closed."
 msgstr "用于加固窗户的坚固金属百叶窗，可开启或关闭。"
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "wooden shutter"
+msgstr "木制百叶窗"
+
+#. ~ Description for {'str': 'wooden shutter'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "Wooden shutters to protect a window, which can be opened or closed."
+msgstr "用于保护窗户的木制百叶窗，可开启或关闭。"
 
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "aisle curtain"
@@ -177146,6 +177235,11 @@ msgstr "你可以在安装座椅或鞍座后在此驾驶载具，你能按\"e\"�
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/vehicleparts/vp_flags.json
+msgid "Allows you to fire two-handed weapons while driving."
+msgstr "允许你在驾驶时使用双手武器。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/vehicleparts/vp_flags.json
 msgid "Illuminated items in this space will not illuminate nearby squares."
 msgstr "此处的照明物不能照亮附近的方格。"
 
@@ -177444,6 +177538,17 @@ msgid ""
 "wire to make it harder to break than normal glass."
 msgstr "一塊玻璃, 讓你能看到車外。用鐵絲強化, 使其比普通玻璃更難破碎。"
 
+#: data/json/vehicleparts/windshields.json
+msgid "plastic windshield"
+msgstr "塑料挡风玻璃"
+
+#. ~ Description for {'str': 'plastic windshield'}
+#: data/json/vehicleparts/windshields.json
+msgid ""
+"A translucent sheet of rigid that lets you see outside the vehicle.  Bit "
+"more durable than glass."
+msgstr "一块半透明的硬质板材，让你可以看见外面。比玻璃耐用一些。"
+
 #: data/json/vehicles/bikes.json
 msgid "Bicycle"
 msgstr "自行車"
@@ -177537,7 +177642,7 @@ msgid "motorized kayak"
 msgstr "摩托皮划艇"
 
 #: data/json/vehicles/boats.json
-msgid "jetski"
+msgid "Jetski"
 msgstr "水上摩托"
 
 #: data/json/vehicles/boats.json
@@ -177579,6 +177684,22 @@ msgstr "警用巡逻艇"
 #: data/json/vehicles/boats.json
 msgid "Smuggling Speedboat"
 msgstr "走私快艇"
+
+#: data/json/vehicles/boats.json
+msgid "Barge Trailer"
+msgstr "驳船拖车"
+
+#: data/json/vehicles/boats.json
+msgid "Scuba Boat"
+msgstr "潜水船"
+
+#: data/json/vehicles/boats.json
+msgid "Fishing Boat"
+msgstr "渔船"
+
+#: data/json/vehicles/boats.json
+msgid "Automatic Water Skimmer"
+msgstr "自动水面收集器"
 
 #: data/json/vehicles/cars.json
 msgid "4x4 Car"
@@ -259270,6 +259391,22 @@ msgstr "射程内炮塔：%d / %d"
 #, c-format
 msgid "You can't currently fire your %s."
 msgstr "你目前不能发射你的 %s。"
+
+#: src/ranged.cpp
+#, c-format
+msgid "You can't fire your %s while driving; this vehicle is hand-powered."
+msgstr "你驾驶载具时不能发射%s；这辆载具需要手动驱动。"
+
+#: src/ranged.cpp
+#, c-format
+msgid "Your driving skill isn't high enough to fire your %s while driving."
+msgstr "你的驾驶技能不足，驾驶载具时不能发射%s。"
+
+#: src/ranged.cpp
+#, c-format
+msgid ""
+"You can't fire your %s while driving; this vehicle is too large to handle."
+msgstr "你驾驶载具时不能发射%s；这辆载具过于庞大，难以操控。"
 
 #: src/ranged.cpp
 #, c-format
