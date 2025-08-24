@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-08-23 01:30+0000\n"
+"POT-Creation-Date: 2025-08-24 01:39+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -9989,6 +9989,16 @@ msgid ""
 "at greater speeds when submerged."
 msgstr "你的水下推进器已经展开，让你能在水下时以更快的速度机动。"
 
+#: data/json/enchantments.json
+msgid "debugging hammer"
+msgid_plural "debugging hammers"
+msgstr[0] "调试锤"
+
+#. ~ Description for {'str': 'debugging hammer'}
+#: data/json/enchantments.json
+msgid "Fix'em all!"
+msgstr "全部搞定！"
+
 #: data/json/field_type.json
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 #: data/mods/alt_map_key/overmap_terrain.json src/mapdata.cpp src/skill.cpp
@@ -16528,7 +16538,7 @@ msgstr "這是一個模擬物品"
 #: data/json/items/gun/bio.json data/json/items/gun/flammable.json
 #: data/json/items/gun/metal_rail.json data/json/items/gun/plasma.json
 #: data/json/items/gun/shot.json data/json/items/gun/ups.json
-#: data/json/items/ranged/pneumatic.json
+#: data/json/items/gunmod/mechanism.json data/json/items/ranged/pneumatic.json
 #: data/json/obsoletion/MOVE_AFTER_NEXT_STABLE/exotic_ammo/gun/46.json
 #: data/json/obsoletion/MOVE_AFTER_NEXT_STABLE/exotic_ammo/gun/545x39.json
 #: data/json/obsoletion/MOVE_AFTER_NEXT_STABLE/exotic_ammo/gun/57.json
@@ -31311,7 +31321,6 @@ msgstr "匡噹!"
 #: data/json/furniture_and_terrain/terrain-mechanisms.json
 #: data/json/furniture_and_terrain/terrain-railroads.json
 #: data/json/furniture_and_terrain/terrain-recreational.json
-#: data/mods/Aftershock/items/furniture.json
 #: data/mods/MagicalNights/furniture.json
 msgid "whump."
 msgstr "呼。"
@@ -31942,7 +31951,6 @@ msgstr "一个连接电网的灯光开关，这个是关闭的。"
 #: data/json/furniture_and_terrain/terrain-bridges-docks.json
 #: data/json/furniture_and_terrain/terrain-doors.json
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
-#: data/mods/Aftershock/items/furniture.json
 #: data/mods/MagicalNights/furniture.json
 #: data/mods/desert_region/desert_terrain.json src/mapdata.h
 #: src/vehicle_move.cpp
@@ -34831,6 +34839,18 @@ msgstr "黄油搅拌机"
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "A pedal driven butter churn."
 msgstr "一台脚踏式黄油搅拌机。"
+
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "atomic butter churn on a stand"
+msgstr "原子黄油搅拌机（架起）"
+
+#. ~ Description for atomic butter churn on a stand
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid ""
+"The Rivtech Atomic Butter Churn in deployed state.  It hums menacingly.  "
+"Ready to add raw milk and salt.  It will churn till the earth is a cinder."
+msgstr ""
+"这台由Rivtech公司生产的原子黄油搅拌机已经架起，正不断高声轰鸣。已经能够朝其中添加生奶和食盐，并用其超强的动力把它们和这世上其他的一切东西一起搅成黄油！"
 
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "metal foot locker"
@@ -54208,8 +54228,21 @@ msgstr[0] ".44 紙卷彈"
 #: data/json/items/ammo/44paper.json
 msgid ""
 "A paper cartridge containing a premeasured amount of black powder and a .44 "
-"projectile.  Used by the Colt M1860 Army."
-msgstr "一個內含定量黑火藥與 .44 彈丸的紙卷子彈。適用於柯爾特 M1860 陸軍手槍。"
+"projectile."
+msgstr "一颗纸卷弹，里面填充有预先称量好的黑火药和一颗.44口径弹头。"
+
+#: data/json/items/ammo/44paper.json
+msgid ".44 smokeless paper cartridge"
+msgid_plural ".44 smokeless paper cartridges"
+msgstr[0] ".44口径无烟纸卷弹"
+
+#. ~ Description for {'str': '.44 smokeless paper cartridge'}
+#: data/json/items/ammo/44paper.json
+msgid ""
+"A paper cartridge containing a premeasured amount of smokeless powder and a "
+".44 projectile, for people who want to fire real civil war era weapons "
+"without getting a lungful of smoke."
+msgstr "一种内含预定量无烟火药和.44口径弹头的纸卷弹，专为那些想使用真正的美国内战时期武器，又不想吸入满肺浓烟的人而设计。"
 
 #: data/json/items/ammo/45.json
 msgid ".45 ACP FMJ"
@@ -73503,9 +73536,10 @@ msgid "base launcher"
 msgid_plural "base launchers"
 msgstr[0] "基本發射器"
 
-#: data/json/items/classes/gun.json data/json/items/gun/40x46mm.json
-#: data/json/items/gun/4570.json data/json/items/gun/shot.json
-#: data/json/items/ranged/pneumatic.json
+#: data/json/items/classes/gun.json data/json/items/gun/38.json
+#: data/json/items/gun/40x46mm.json data/json/items/gun/4570.json
+#: data/json/items/gun/flintlock.json data/json/items/gun/shot.json
+#: data/json/items/ranged/pneumatic.json data/json/items/ranged/spearguns.json
 #: data/mods/Aftershock/items/gun/5x50.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
 #: data/mods/MagicalNights/items/enchanted/enchanted_ranged.json
@@ -73569,6 +73603,11 @@ msgstr[0] "基本步槍"
 msgid "rifle with manual actions"
 msgid_plural "rifles with manual actions"
 msgstr[0] "手動步槍"
+
+#: data/json/items/classes/gun.json
+msgid "cap & ball rifle"
+msgid_plural "cap & ball rifles"
+msgstr[0] "雷管步枪"
 
 #: data/json/items/classes/gun.json
 msgid "semi-automatic rifle"
@@ -91461,6 +91500,7 @@ msgstr ""
 #: data/json/items/gun/4570.json data/json/items/gun/8x40mm.json
 #: data/json/items/gun/9mm.json data/json/items/gun/metal_rail.json
 #: data/json/items/gun/misc.json data/json/items/gun/ups.json
+#: data/json/items/gunmod/mechanism.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
 msgid "burst"
 msgstr "連發"
@@ -92093,6 +92133,15 @@ msgid ""
 msgstr ""
 "一個手工製, 使用 .38 special 子彈的雙管手槍, 很不幸的, 這把槍的名字和它的雙槍管沒啥關係, 而是指它故障可能會害你中兩槍。"
 
+#: data/json/items/gun/38.json data/json/items/gun/bio.json
+#: data/json/items/gun/flintlock.json data/json/items/gun/shot.json
+#: data/json/items/ranged/pneumatic.json data/json/items/ranged/spearguns.json
+#: data/json/obsoletion/MOVE_AFTER_NEXT_STABLE/exotic_ammo/gun/38super.json
+#: data/mods/CRT_EXPANSION/items/crt_gun.json
+#: data/mods/MagicalNights/items/enchanted/enchanted_unarmed.json
+msgid "double"
+msgstr "雙發"
+
 #: data/json/items/gun/38.json
 msgid "COP .357 Derringer"
 msgid_plural "COP .357 Derringers"
@@ -92647,6 +92696,20 @@ msgid ""
 msgstr ""
 "这是皮耶塔公司制造的美国内战时期的 LeMat 左轮手枪的仿品，是一把稀有且非同一般的 .44 口径雷管左轮手枪。这种手枪最初使用的 .42 或 .35"
 " 口径限制了其在南方军中的实用性，但这把仿品使用了更常用的 .44 口径。尽管使用了高质量的现代材料，这把手枪的设计仍使得它十分脆弱。"
+
+#: data/json/items/gun/44paper.json
+msgid "Colt Ring Lever Rifle"
+msgid_plural "Colt Ring Lever Rifles"
+msgstr[0] "柯尔特环形杠杆步枪"
+
+#: data/json/items/gun/44paper.json
+msgid ""
+"The Colt Ring Lever Rifle was one of the first true lever-action rifles, "
+"designed to utilize the same caplock ammo as Colt revolvers.  It was "
+"famously used in the second Seminole war, where the Seminole people had "
+"learned to strike American soldiers while they were reloading their muskets."
+msgstr ""
+"柯尔特环形杠杆步枪是最早的真正意义上的杠杆式步枪之一，其设计旨在使用与柯尔特左轮手枪相同的火帽式弹药。它因在第二次塞米诺尔战争中的使用而闻名，当时塞米诺尔人已经学会了在美国士兵为旧式滑膛枪装填弹药时发动攻击。"
 
 #: data/json/items/gun/45.json
 msgid "TDI Vector"
@@ -93787,14 +93850,6 @@ msgstr[0] "生化霰彈槍"
 #: data/json/items/gun/bio.json
 msgid "Bionic retracting shotgun integrated with your arm."
 msgstr "通过生化插件植入你手臂的伸缩式霰弹枪。"
-
-#: data/json/items/gun/bio.json data/json/items/gun/shot.json
-#: data/json/items/ranged/pneumatic.json
-#: data/json/obsoletion/MOVE_AFTER_NEXT_STABLE/exotic_ammo/gun/38super.json
-#: data/mods/CRT_EXPANSION/items/crt_gun.json
-#: data/mods/MagicalNights/items/enchanted/enchanted_unarmed.json
-msgid "double"
-msgstr "雙發"
 
 #: data/json/items/gun/bio.json
 msgid "laser finger"
@@ -95259,9 +95314,9 @@ msgid ""
 "Patented in 1998 the Glock auto-sear or switch as it is called was illegal "
 "due to being able to turn Glock firearms full auto by applying force to a "
 "Glock's trigger bar.  The switch allows for selective fire modes, a single "
-"shot or when flipped, a six round full auto fire."
+"shot or when flipped, a three round burst, or six round full auto fire."
 msgstr ""
-"格洛克自动击发器或称为开关于1998年获得专利。由于它可以通过对格洛克扳机杆施加压力使格洛克枪械全自动射击，因此是非法的。该开关允许选择射击模式，单发射击或切换后进行六发全自动射击。"
+"格洛克自动击锤（俗称“快慢机”）于1998年获得专利。但由于它能通过对格洛克手枪的扳机连杆施力，将枪械改为全自动模式，因此被视为非法装置。该快慢机支持多种射击模式：单发射击，或在切换后实现三连发点射，甚至六连发全自动射击。"
 
 #: data/json/items/gunmod/mechanism.json
 msgctxt "gun_type_type"
@@ -103815,9 +103870,14 @@ msgstr[0] "虚拟黄油搅拌机"
 
 #. ~ Description for {'str': 'pseudo butter churn'}
 #. ~ Description for {'str': 'deployed atomic butter churn'}
-#: data/json/items/tool/cooking.json data/mods/Aftershock/items/items.json
+#: data/json/items/tool/cooking.json
 msgid "This is a crafting_pseudo_item if you have it something is wrong."
 msgstr "这是一个虚拟物品，正常不应该出现在你的游戏里。"
+
+#: data/json/items/tool/cooking.json
+msgid "deployed atomic butter churn"
+msgid_plural "deployed atomic butter churns"
+msgstr[0] "已部署的原子黄油搅拌机"
 
 #: data/json/items/tool/cooking.json
 msgid "can sealer"
@@ -104152,6 +104212,24 @@ msgid ""
 "This is a small heating element on a stand, powered by batteries.  It is "
 "indispensable for cooking and chemistry.  Try not to burn yourself."
 msgstr "一個小型的加熱元件。是烹飪及化學不可或卻的。小心別燙到了。"
+
+#: data/json/items/tool/cooking.json
+msgid "atompot"
+msgid_plural "atompots"
+msgstr[0] "原子鍋"
+
+#. ~ Description for {'str': 'atompot'}
+#: data/json/items/tool/cooking.json
+msgid ""
+"Rivtech's premiere self-heating kitchen appliance, complete with lid, hand-"
+"crafted with the power of the atom to reach any temperature in thirty "
+"seconds.  As bulky as it is, its plutonium power source means that it can be"
+" used to cook an absurd amount of meals without ever worrying about running "
+"low on power.  Unsurprisingly, sales weren't particularly good because of "
+"the prospect of irradiating your food, but internal shielding ensures that "
+"only trace amounts find its way into the center."
+msgstr ""
+"Rivtech有限公司首创的自动加热厨房设备，配有盖子，用原子的力量烹饪食物，可在30秒内达到任何温度。虽然它体积庞大，但它的钚电源意味着它可以用来烹饪大量的食物，而不用担心电量不足。由于担心放射性物质会污染食物，该设备的销售情况不出所料并不特别好，但内部密封确保只有微量放射性物质会进入食物之中。"
 
 #: data/json/items/tool/cooking.json
 msgid "sealed jar of eggs"
@@ -104686,6 +104764,22 @@ msgid ""
 "This model uses a foot crank and holds three gallons of raw milk."
 msgstr "一个大木桶，能够将生牛奶制成黄油和奶油。这个型号有个脚踏曲柄，能够装下三加仑生牛奶。"
 
+#: data/json/items/tool/deployable.json
+msgid "folded atomic butter churn"
+msgid_plural "folded atomic butter churns"
+msgstr[0] "原子黄油搅拌机（折叠）"
+
+#. ~ Description for {'str': 'folded atomic butter churn'}
+#: data/json/items/tool/deployable.json
+msgid ""
+"The Rivtech Churninator 4000, the only churn to be banned by 13 religious "
+"sects.  The legs are currently folded up for travel.  This churn requires "
+"nothing but raw milk, salt and a healthy respect for glowing objects, even "
+"able to clarify butter with its awe-inspiring nuclear might."
+msgstr ""
+"Rivtech Churninator "
+"4000是唯一一个被13个宗教派别禁止的搅拌器。它的支架目前折叠起来以便打包。这种搅拌只需要生牛奶、盐和对发光物体的尊重，就能够用它那令人敬畏的核力量净化黄油。"
+
 #. ~ Description for {'str': 'water mill'}
 #: data/json/items/tool/deployable.json
 msgid ""
@@ -105061,6 +105155,32 @@ msgstr "關掉手電筒"
 #: data/json/items/tool/electronics.json data/mods/Aftershock/items/tools.json
 msgid "You deactivate the flashlight app."
 msgstr "你關掉了手電筒 app。"
+
+#: data/json/items/tool/electronics.json
+msgid "atomic smartphone"
+msgid_plural "atomic smartphones"
+msgstr[0] "原子智慧型手機"
+
+#. ~ Description for {'str': 'atomic smartphone'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"Never charge your phone again with the Rivtech atomic smartphone.  Rated for"
+" 10 million years of use, this cutting-edge gadget had been on public "
+"markets for less than a week when the Cataclysm hit, and their eye-watering "
+"price made them a rarity.  It includes an alarm clock, a high-resolution "
+"camera, and a bright flashlight."
+msgstr ""
+"有了Rivtech原子智慧型手機，你就再不需要幫你的手機充電了。它可以使用一千萬年，這個最尖端的小玩兒在大災變來臨的一星期之前推出市場，它的超高價格使它成為一件珍品。它包含一個鬧鐘、一個高解像度相機、以及一個光亮的電筒。"
+
+#: data/json/items/tool/electronics.json
+msgid "atomic smartphone - music"
+msgid_plural "atomic smartphones - music"
+msgstr[0] "原子智能手机（音乐）"
+
+#: data/json/items/tool/electronics.json
+msgid "atomic smartphone - Flashlight"
+msgid_plural "atomic smartphones - Flashlight"
+msgstr[0] "原子智慧型手機 - 手電筒模式"
 
 #. ~ Description for {'str': 'UPS', 'str_pl': "UPS's"}
 #: data/json/items/tool/electronics.json
@@ -117240,6 +117360,18 @@ msgid ""
 msgstr "許多腐爛的人類和動物融合成噁心的形體, 上面的所有頭顱會快速的眨眼而嘴巴會發出尖叫與呻吟。"
 
 #: data/json/monsters/mammal.json
+msgid "bat pup"
+msgid_plural "bat pups"
+msgstr[0] "蝙蝠幼崽"
+
+#. ~ Description for {'str': 'bat pup'}
+#: data/json/monsters/mammal.json
+msgid ""
+"One of the vesper bats, a family of winged insect-eating mammals.  This one "
+"seems very young."
+msgstr "蝙蝠科的一种，是一种以昆虫为食的有翼哺乳动物。这只看起来非常年幼。"
+
+#: data/json/monsters/mammal.json
 msgid "bat"
 msgid_plural "bats"
 msgstr[0] "蝙蝠"
@@ -117251,6 +117383,31 @@ msgid ""
 " in caves and other hollows, and uses a form of echolocation to aerially "
 "navigate through tricky terrain at rapid speeds."
 msgstr "夜行蝙蝠的一種, 一種群居性的吃昆蟲的有翅哺乳類。其棲息於洞窟或凹地, 利用超音波來進行定位, 同時夠在錯綜複雜的地形快速的飛行。"
+
+#: data/json/monsters/mammal.json
+msgid "vampire bat"
+msgid_plural "vampire bats"
+msgstr[0] "吸血蝙蝠"
+
+#. ~ Description for {'str': 'vampire bat'}
+#: data/json/monsters/mammal.json
+msgid ""
+"One of the Desmodontinae bats, a family of winged blood-eating mammals.  It "
+"roosts in caves and other hollows, and uses a form of echolocation to "
+"aerially navigate through tricky terrain at rapid speeds."
+msgstr "吸血蝠亚科的一种，属于以血液为食的有翼哺乳动物。它栖息在洞穴和其他空洞中，并利用回声定位以极快的速度在复杂地形中飞行导航。"
+
+#: data/json/monsters/mammal.json
+msgid "mutant vampire bat"
+msgid_plural "mutant vampire bats"
+msgstr[0] "变异吸血蝙蝠"
+
+#. ~ Description for {'str': 'mutant vampire bat'}
+#: data/json/monsters/mammal.json
+msgid ""
+"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
+"This one looks terribly larger and stronger than its other kin."
+msgstr "吸血蝠亚科的一种，属于以血液为食的有翼哺乳动物。这一只看起来比它的同类要庞大和强壮得多。"
 
 #: data/json/monsters/mammal.json
 msgid "black bear cub"
@@ -162621,6 +162778,10 @@ msgid "bog"
 msgstr "沼澤"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "natural spring"
+msgstr "天然泉水"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "swamp shack"
 msgstr "沼澤棚屋"
@@ -164803,10 +164964,6 @@ msgstr "體育館車庫"
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "stadium bar"
 msgstr "體育館酒吧"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain_recreational.json
-msgid "Natural Spring"
-msgstr "天然溫泉"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_recreational.json
 msgid "movie theater"
@@ -179669,18 +179826,6 @@ msgid ""
 "you to give it the spark of life.  In all likelihood you are the monster."
 msgstr "这个缝合而成可憎人形怪物静止不动，等待着你赋予它生命的火花。十之八九，你才是那个怪物。"
 
-#: data/mods/Aftershock/items/furniture.json
-msgid "atomic butter churn on a stand"
-msgstr "原子黄油搅拌机（架起）"
-
-#. ~ Description for atomic butter churn on a stand
-#: data/mods/Aftershock/items/furniture.json
-msgid ""
-"The Rivtech Atomic Butter Churn in deployed state.  It hums menacingly.  "
-"Ready to add raw milk and salt.  It will churn till the earth is a cinder."
-msgstr ""
-"这台由Rivtech公司生产的原子黄油搅拌机已经架起，正不断高声轰鸣。已经能够朝其中添加生奶和食盐，并用其超强的动力把它们和这世上其他的一切东西一起搅成黄油！"
-
 #: data/mods/Aftershock/items/grenades.json
 msgid "electroshock grenade"
 msgid_plural "electroshock grenades"
@@ -180039,27 +180184,6 @@ msgid ""
 "and chemicals.  Includes proper fume vents and a separator, so you don't "
 "contaminate your food with toxic chemicals."
 msgstr "平底鍋，鐵鍋，加熱板和化學儀器套組。製作食物和化學品所需的一切。包括通風口和分離器，因此有毒化學物質不會污染您的食物。"
-
-#: data/mods/Aftershock/items/items.json
-msgid "folded atomic butter churn"
-msgid_plural "folded atomic butter churns"
-msgstr[0] "原子黄油搅拌机（折叠）"
-
-#. ~ Description for {'str': 'folded atomic butter churn'}
-#: data/mods/Aftershock/items/items.json
-msgid ""
-"The Rivtech Churninator 4000, the only churn to be banned by 13 religious "
-"sects.  The legs are currently folded up for travel.  This churn requires "
-"nothing but raw milk, salt and a healthy respect for glowing objects, even "
-"able to clarify butter with its awe-inspiring nuclear might."
-msgstr ""
-"Rivtech Churninator "
-"4000是唯一一个被13个宗教派别禁止的搅拌器。它的支架目前折叠起来以便打包。这种搅拌只需要生牛奶、盐和对发光物体的尊重，就能够用它那令人敬畏的核力量净化黄油。"
-
-#: data/mods/Aftershock/items/items.json
-msgid "deployed atomic butter churn"
-msgid_plural "deployed atomic butter churns"
-msgstr[0] "已部署的原子黄油搅拌机"
 
 #: data/mods/Aftershock/items/items.json
 msgid "titanium"
@@ -180443,32 +180567,6 @@ msgid "bionic assembly"
 msgstr "生化组装"
 
 #: data/mods/Aftershock/items/tools.json
-msgid "atomic smartphone"
-msgid_plural "atomic smartphones"
-msgstr[0] "原子智慧型手機"
-
-#. ~ Description for {'str': 'atomic smartphone'}
-#: data/mods/Aftershock/items/tools.json
-msgid ""
-"Never charge your phone again with the Rivtech atomic smartphone.  Rated for"
-" 10 million years of use, this cutting-edge gadget had been on public "
-"markets for less than a week when the Cataclysm hit, and their eye-watering "
-"price made them a rarity.  It includes an alarm clock, a high-resolution "
-"camera, and a bright flashlight."
-msgstr ""
-"有了Rivtech原子智慧型手機，你就再不需要幫你的手機充電了。它可以使用一千萬年，這個最尖端的小玩兒在大災變來臨的一星期之前推出市場，它的超高價格使它成為一件珍品。它包含一個鬧鐘、一個高解像度相機、以及一個光亮的電筒。"
-
-#: data/mods/Aftershock/items/tools.json
-msgid "atomic smartphone - music"
-msgid_plural "atomic smartphones - music"
-msgstr[0] "原子智能手机（音乐）"
-
-#: data/mods/Aftershock/items/tools.json
-msgid "atomic smartphone - Flashlight"
-msgid_plural "atomic smartphones - Flashlight"
-msgstr[0] "原子智慧型手機 - 手電筒模式"
-
-#: data/mods/Aftershock/items/tools.json
 msgid "Wraitheon executive's smartphone"
 msgid_plural "Wraitheon executive's smartphones"
 msgstr[0] "\"幽灵怪\"公司高管智能手机"
@@ -180489,24 +180587,6 @@ msgstr[0] "\"幽灵怪\"公司高管智能手机（音乐）"
 msgid "Executive's smartphone - Flashlight"
 msgid_plural "Executive's smartphones - Flashlight"
 msgstr[0] "高管智能手机（手电筒）"
-
-#: data/mods/Aftershock/items/tools.json
-msgid "atompot"
-msgid_plural "atompots"
-msgstr[0] "原子鍋"
-
-#. ~ Description for {'str': 'atompot'}
-#: data/mods/Aftershock/items/tools.json
-msgid ""
-"Rivtech's premiere self-heating kitchen appliance, complete with lid, hand-"
-"crafted with the power of the atom to reach any temperature in thirty "
-"seconds.  As bulky as it is, its plutonium power source means that it can be"
-" used to cook an absurd amount of meals without ever worrying about running "
-"low on power.  Unsurprisingly, sales weren't particularly good because of "
-"the prospect of irradiating your food, but internal shielding ensures that "
-"only trace amounts find its way into the center."
-msgstr ""
-"Rivtech有限公司首创的自动加热厨房设备，配有盖子，用原子的力量烹饪食物，可在30秒内达到任何温度。虽然它体积庞大，但它的钚电源意味着它可以用来烹饪大量的食物，而不用担心电量不足。由于担心放射性物质会污染食物，该设备的销售情况不出所料并不特别好，但内部密封确保只有微量放射性物质会进入食物之中。"
 
 #: data/mods/Aftershock/items/tools.json
 msgid "chain wrench"
@@ -215389,6 +215469,18 @@ msgid ""
 "will make you automatically prioritize lockpicking over prying tools."
 msgstr "如果你更喜欢用一种更隐蔽的方式进行破门而入，蹲下时会自动优先选择撬锁而不是撬棍。"
 
+#: data/raw/tips.json
+msgid ""
+"Crouching slows you down, but allows you to hide behind obstacles and makes "
+"you a smaller target when bullets start flying."
+msgstr "蹲下会减慢你的速度，但能让你躲在障碍物后，并在枪林弹雨中成为更小的目标。"
+
+#: data/raw/tips.json
+msgid ""
+"Make every shot count.  Take time to steady your aim, or crouch for more "
+"accurate fire."
+msgstr "弹无虚发。花些时间稳定瞄准，或蹲下以提高射击精度。"
+
 #: data/raw/keybindings/edit_creature_effects.json
 msgid "Add new effect"
 msgstr ""
@@ -221051,6 +221143,10 @@ msgstr "你将机甲的腿部电机功率设置为疾行挡。"
 msgid "You nudge your steed into a steady trot."
 msgstr "你輕推坐騎讓它穩定地快步走。"
 
+#: src/avatar.cpp src/character.cpp
+msgid "You stand up."
+msgstr "你站起來了。"
+
 #: src/avatar.cpp
 msgid "You start walking."
 msgstr "你開始步行。"
@@ -221062,6 +221158,10 @@ msgstr "你将机甲的腿部电机功率设置为最高挡。"
 #: src/avatar.cpp
 msgid "You spur your steed into a gallop."
 msgstr "你鞭策你的坐騎開始奔馳。"
+
+#: src/avatar.cpp
+msgid "You stand up and start running."
+msgstr "你站起身来开始奔跑。"
 
 #: src/avatar.cpp
 msgid "You start running."
@@ -221224,6 +221324,11 @@ msgstr "你需要空氣但是你無法游泳! 快到陸地上!"
 #: src/avatar_action.cpp
 msgid "You cannot board a vehicle while mounted."
 msgstr "騎乘時無法登上車輛。"
+
+#: src/avatar_action.cpp src/game.cpp
+#, c-format
+msgid "You are hiding in the %s."
+msgstr "你躲藏了在 %s 裡。"
 
 #: src/avatar_action.cpp
 msgid "No hostile creature in reach.  Waiting a turn."
@@ -223043,10 +223148,6 @@ msgstr "你無法下馬到那邊！"
 #: src/character.cpp
 msgid "You struggle to stand."
 msgstr "你掙扎試著站起。"
-
-#: src/character.cpp
-msgid "You stand up."
-msgstr "你站起來了。"
 
 #: src/character.cpp
 msgid "<npcname> stands up."
@@ -231764,11 +231865,6 @@ msgstr "腳步聲"
 #: src/game.cpp
 msgid "a rattling sound."
 msgstr "刺耳的聲音。"
-
-#: src/game.cpp
-#, c-format
-msgid "You are hiding in the %s."
-msgstr "你躲藏了在 %s 裡。"
 
 #: src/game.cpp
 #, c-format
