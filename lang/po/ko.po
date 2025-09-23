@@ -30,14 +30,14 @@
 # 김예준, 2025
 # Coolthulhu <Coolthulhu@gmail.com>, 2025
 # Tae Heon Lim, 2025
-# Fruitybite, 2025
 # ARDOR Flag, 2025
+# Fruitybite, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-09-22 01:36+0000\n"
-"Last-Translator: ARDOR Flag, 2025\n"
+"POT-Creation-Date: 2025-09-23 01:34+0000\n"
+"Last-Translator: Fruitybite, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -6284,6 +6284,34 @@ msgstr "욕조를 돈으로 채우기"
 msgid "Remove Money from Bathtub"
 msgstr "욕조에서 돈 꺼내기"
 
+#: data/json/construction_group.json
+msgid "Fill Pit With Water"
+msgstr "구덩이를 물로 채우기"
+
+#: data/json/construction_group.json
+msgid "Dig High End of a Ramp"
+msgstr "경사로 최고점 건설"
+
+#: data/json/construction_group.json
+msgid "Dig Low End of a Ramp"
+msgstr "경사로 최저점 건설"
+
+#: data/json/construction_group.json
+msgid "Construct Crude Bridge"
+msgstr "간이 다리 건설"
+
+#: data/json/construction_group.json
+msgid "Quarry Ground Away"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Remove Flat Roof"
+msgstr "평평한 지붕 제거"
+
+#: data/json/construction_group.json
+msgid "Plant Grass"
+msgstr "잔디 심기"
+
 #: data/json/debug_spells.json
 msgid "Template Spell"
 msgstr "템플릿 주문"
@@ -11890,6 +11918,10 @@ msgstr "의류 개조하기"
 #: data/json/item_actions.json
 msgid "Start a fire quickly"
 msgstr "불 피우기"
+
+#: data/json/item_actions.json
+msgid "Unveil Contents"
+msgstr "내용물 드러내기"
 
 #: data/json/item_actions.json
 msgid "Pull out nails"
@@ -32988,6 +33020,42 @@ msgstr ""
 "다음 z축 높이로 향하는 나무 경사로와 해당 높이에서 이곳으로 내려오는 경사로를 만듭니다. 경사로 최저점이 반드시 인접해있어야 양쪽 "
 "방향에서 z축 높이를 오갈 수 있습니다."
 
+#: data/json/construction/construct_dig.json
+msgid ""
+"Digs a simple stone ramp leading to the next z-level above, and the "
+"corresponding ramp down leading from the z-level above to this level.  The "
+"high end of a ramp must be built adjacent to allow moving between z-levels "
+"in both directions."
+msgstr ""
+
+#: data/json/construction/construct_dig.json
+msgid ""
+"Digs a simple stone ramp leading to the next z-level above, and the "
+"corresponding ramp down leading from the z-level above to this level.  It "
+"must be built next to a low end of a ramp to allow moving between z-levels "
+"in both directions."
+msgstr ""
+
+#: data/json/construction/construct_dig.json
+msgid ""
+"Removes any remaining material left in the pit, and smooths and reinforces "
+"the surrounding ground to not fall in."
+msgstr "구덩이 안의 내용물을 제거하고, 인근 지형을 매끄럽게 보강해 발이 걸리지 않게 만듭니다."
+
+#: data/json/construction/construct_dig.json
+msgid ""
+"Mines a hole straight through a rock floor; adding wood to not allow nearby "
+"rocks to fill the hole. You see no possible way this could go wrong."
+msgstr "돌 바닥에 구멍을 파고, 돌이 무너져 구멍에 차지 않도록 나무를 덧댑니다. 이게 잘못될 일은 없어보입니다."
+
+#: data/json/construction/construct_dig.json
+msgid "Covers any reinforced holes with some 2x4 to make a crude bridge."
+msgstr "보강된 구덩이 위로 널빤지를 덮어 간이 다리를 만듭니다."
+
+#: data/json/construction/construct_dig.json
+msgid "Reinforces a 2x4 plank bridge into a much more sturdy metal version."
+msgstr "널빤지 다리를 더 튼튼한 금속 버전으로 보강합니다."
+
 #: data/json/construction/construct_furn.json
 msgid ""
 "Firing will automatically target the first practice target found in gun "
@@ -33038,6 +33106,12 @@ msgid ""
 msgstr ""
 "표적 사격을 위한 목표를 지정합니다. 사정거리 내에 연습용 표적이 있고 다른 적이 없다면 그 주변에서의 사격은 연습용 표적을 우선적으로 "
 "사격합니다."
+
+#: data/json/construction/construct_other.json
+msgid ""
+"Remove a section of roof while carefully reinforcing the area to not "
+"collapse."
+msgstr "주변이 무너지지 않도록 보강하면서 지붕 구획을 제거합니다."
 
 #: data/json/construction/construct_windows.json
 msgid "Install Bars Onto Store Showcase Window"
@@ -34542,6 +34616,7 @@ msgstr "전력망에 연결된 전등 스위치입니다. 현재 꺼져있습니
 #: data/json/furniture_and_terrain/terrain-bridges-docks.json
 #: data/json/furniture_and_terrain/terrain-doors.json
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/mods/MagicalNights/furniture.json
 #: data/mods/desert_region/desert_terrain.json src/mapdata.h
 #: src/vehicle_move.cpp
@@ -40642,6 +40717,37 @@ msgid "This is open air."
 msgstr "텅 빈 허공입니다."
 
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "quarry hole air"
+msgstr ""
+
+#. ~ Description for quarry hole air
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid ""
+"This is effectively open air, with a frame bracing to ensure anything around"
+" it doesnt collapse into it. Blocks roofs, but deconstructing the bracing "
+"would be rather easy."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "crude plank bridge"
+msgstr "간이 널빤지 다리"
+
+#. ~ Description for crude plank bridge
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "A gathering of planks over a large hole or air. Not very sturdy."
+msgstr "커다란 구덩이 내지는 허공 위로 널빤지 몇 장을 놓은 것입니다. 절대 튼튼하지 않습니다."
+
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "metal bridge"
+msgstr "금속 다리"
+
+#. ~ Description for metal bridge
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid ""
+"Some sturdy metal sheets welded into a makeshift bridge. Suprisingly sturdy."
+msgstr "간이 다리에 단단한 금속판을 용접해 만들었습니다. 놀라울 정도로 견고합니다."
+
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid "adobe floor"
 msgstr "어도비 바닥"
@@ -44472,6 +44578,15 @@ msgid "Solid rock, with an exposed seam of reddish-brown iron ore."
 msgstr "적갈색 철광석의 노출된 이음새가 있는 단단한 암석."
 
 #: data/json/furniture_and_terrain/terrain-walls.json
+msgid "banded-iron ore vein"
+msgstr "줄무늬 철 광맥"
+
+#. ~ Description for banded-iron ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed seam of brown-red banded-iron ore."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-walls.json
 msgid "copper ore vein"
 msgstr "구리 광맥"
 
@@ -44479,6 +44594,24 @@ msgstr "구리 광맥"
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "Solid rock, with an exposed seam of green copper ore."
 msgstr "녹색 구리 광석이 노출된 단단한 암석."
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "tetrahedrite ore vein"
+msgstr "사면동광 광맥"
+
+#. ~ Description for tetrahedrite ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed seam of grey tetrahedrite ore."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "chalcopyrite ore vein"
+msgstr "황동광 광맥"
+
+#. ~ Description for chalcopyrite ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed seam of light-green chalcopyrite ore."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "lead ore vein"
@@ -44490,6 +44623,24 @@ msgid "Solid rock, with an exposed dull gray and yellow seam of lead ore."
 msgstr "단단한 암석으로, 노출된 칙칙한 회색과 노란색 납 광석의 이음새가 있습니다."
 
 #: data/json/furniture_and_terrain/terrain-walls.json
+msgid "galena ore vein"
+msgstr "방연석 광맥"
+
+#. ~ Description for galena ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed dull gray seam of galena ore."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "galenau ore vein"
+msgstr ""
+
+#. ~ Description for galenau ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed yellow-grey seam of galenau ore."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-walls.json
 msgid "tin ore vein"
 msgstr "주석 광맥"
 
@@ -44499,6 +44650,26 @@ msgid ""
 "Solid rock, with dark gray hints of what you're fairly certain is an ore of "
 "tin."
 msgstr "단단한 암석과 짙은 회색의 힌트는 주석 광석이라고 꽤 확신할 수 있습니다."
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "coppin ore vein"
+msgstr "구리-주석 광맥"
+
+#. ~ Description for coppin ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with a seeming mixture of copper and tin ore."
+msgstr ""
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "bronzium ore vein"
+msgstr "청동-주석 광맥"
+
+#. ~ Description for bronzium ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid ""
+"Solid rock, with a seeming mixture of copper and tin ore. Faintly resembles "
+"crude bronze."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "silver ore vein"
@@ -44526,6 +44697,15 @@ msgid ""
 msgstr ""
 "젠장, 금을 찾았습니다!  바위 속에서 빛나는 모습을 보니, 이게 세상이 끝난 후 이 물건의 가치가 얼마나 떨어졌는지 잊게 만드는 데 "
 "충분합니다."
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "electrumite ore vein"
+msgstr "호박 광맥"
+
+#. ~ Description for electrumite ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed silvered yellow gleam of electrumite ore."
+msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "little column"
@@ -49185,6 +49365,32 @@ msgid ""
 "Silver with a few million years of tarnish on it.  With the right knowhow, "
 "it could be smelted into usable metal."
 msgstr "수백만 년 동안 변색된 은입니다. 적절한 기술이 있다면 제련하여 유용한 금속을 만들어낼 수 있습니다."
+
+#: data/json/items/chemicals_and_resources.json
+msgid "chunk of gold ore"
+msgid_plural "chunks of gold ore"
+msgstr[0] "금광석 덩어리"
+
+#. ~ Description for {'str': 'chunk of gold ore', 'str_pl': 'chunks of gold
+#. ore'}
+#: data/json/items/chemicals_and_resources.json
+msgid ""
+"A small, dense chunk of what seems to be quartz,but what interests you is "
+"the gold interlaced. With the right knowhow, it could be smelted into usable"
+" metal."
+msgstr ""
+
+#: data/json/items/chemicals_and_resources.json
+msgid "geode"
+msgid_plural "geodes"
+msgstr[0] "정족"
+
+#. ~ Description for {'str': 'geode'}
+#: data/json/items/chemicals_and_resources.json
+msgid ""
+"A large rock, sounds kinda hollow, could crack it open easy enough, wonder "
+"whats inside?"
+msgstr "속이 비어있는듯한 커다란 바위입니다. 원한다면 손쉽게 쪼개서 열 수 있습니다. 안에 뭐가 들어있을까요?"
 
 #: data/json/items/chemicals_and_resources.json
 msgid "aluminum sulfate"
@@ -171684,6 +171890,38 @@ msgstr "주석 광맥"
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "iron vein"
 msgstr "철 광맥"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "banded iron vein"
+msgstr "줄무늬 철 광맥"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "tetrahedrite vein"
+msgstr "사면동광 광맥"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "chalcopyrite vein"
+msgstr "황동광 광맥"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "galena vein"
+msgstr "방연석 광맥"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "galenau vein"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "coppin vein"
+msgstr "구리-주석 광맥"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "bronzium vein"
+msgstr "청동-주석 광맥"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "electrumite vein"
+msgstr "호박 광맥"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_abstract.json
 msgid "generic_cropland"

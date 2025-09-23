@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-09-22 01:36+0000\n"
+"POT-Creation-Date: 2025-09-23 01:34+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -5882,6 +5882,34 @@ msgstr "用钱装满浴缸"
 msgid "Remove Money from Bathtub"
 msgstr "从浴缸中取出钱"
 
+#: data/json/construction_group.json
+msgid "Fill Pit With Water"
+msgstr "往坑里灌水"
+
+#: data/json/construction_group.json
+msgid "Dig High End of a Ramp"
+msgstr "挖掘斜坡高处"
+
+#: data/json/construction_group.json
+msgid "Dig Low End of a Ramp"
+msgstr "挖掘斜坡低处"
+
+#: data/json/construction_group.json
+msgid "Construct Crude Bridge"
+msgstr "建造简易桥"
+
+#: data/json/construction_group.json
+msgid "Quarry Ground Away"
+msgstr "采掘地面"
+
+#: data/json/construction_group.json
+msgid "Remove Flat Roof"
+msgstr "拆除平顶"
+
+#: data/json/construction_group.json
+msgid "Plant Grass"
+msgstr "种草"
+
 #: data/json/debug_spells.json
 msgid "Template Spell"
 msgstr "法术模板"
@@ -11453,6 +11481,10 @@ msgstr "改造装备"
 #: data/json/item_actions.json
 msgid "Start a fire quickly"
 msgstr "快速生火"
+
+#: data/json/item_actions.json
+msgid "Unveil Contents"
+msgstr "揭示内容物"
 
 #: data/json/item_actions.json
 msgid "Pull out nails"
@@ -31611,6 +31643,42 @@ msgid ""
 "directions."
 msgstr "建造一个通往下层的木制坡道，需要在下层建造对应的通往本层的坡道。坡道顶部需要与底部相邻，这样才能在两层之间来回移动。"
 
+#: data/json/construction/construct_dig.json
+msgid ""
+"Digs a simple stone ramp leading to the next z-level above, and the "
+"corresponding ramp down leading from the z-level above to this level.  The "
+"high end of a ramp must be built adjacent to allow moving between z-levels "
+"in both directions."
+msgstr "挖掘一个通往上层的简单石制斜坡，需要在上层建造对应的通往本层的坡道。坡道顶部需要与底部相邻，这样才能在两层之间来回移动。"
+
+#: data/json/construction/construct_dig.json
+msgid ""
+"Digs a simple stone ramp leading to the next z-level above, and the "
+"corresponding ramp down leading from the z-level above to this level.  It "
+"must be built next to a low end of a ramp to allow moving between z-levels "
+"in both directions."
+msgstr "挖掘一个通往下层的简单石制斜坡，需要在下层建造对应的通往本层的坡道。坡道顶部需要与底部相邻，这样才能在两层之间来回移动。"
+
+#: data/json/construction/construct_dig.json
+msgid ""
+"Removes any remaining material left in the pit, and smooths and reinforces "
+"the surrounding ground to not fall in."
+msgstr "清除坑中所有剩余的材料，并平整和加固周围的地面以防坍塌。"
+
+#: data/json/construction/construct_dig.json
+msgid ""
+"Mines a hole straight through a rock floor; adding wood to not allow nearby "
+"rocks to fill the hole. You see no possible way this could go wrong."
+msgstr "直接在岩石地面上挖一个贯通的洞；用木头加固以防止周围的岩石将其填满。你觉得这绝不可能出什么岔子。"
+
+#: data/json/construction/construct_dig.json
+msgid "Covers any reinforced holes with some 2x4 to make a crude bridge."
+msgstr "用一些2x4木板盖住加固过的洞口，造出一座简易的桥。"
+
+#: data/json/construction/construct_dig.json
+msgid "Reinforces a 2x4 plank bridge into a much more sturdy metal version."
+msgstr "将2x4木板桥加固成一个更坚固的金属版本。"
+
 #: data/json/construction/construct_furn.json
 msgid ""
 "Firing will automatically target the first practice target found in gun "
@@ -31656,6 +31724,12 @@ msgid ""
 "Mark a spot for target practice.  Firing will automatically target the first"
 " practice target location found in gun range, if no enemies are around."
 msgstr "标记一块地作为射击练习目标。当你射程内没有敌人时，射击时会自动锁定射程内所发现的第一个射击练习目标。"
+
+#: data/json/construction/construct_other.json
+msgid ""
+"Remove a section of roof while carefully reinforcing the area to not "
+"collapse."
+msgstr "移除一块屋顶，并小心地加固该区域以防坍塌。"
 
 #: data/json/construction/construct_windows.json
 msgid "Install Bars Onto Store Showcase Window"
@@ -33139,6 +33213,7 @@ msgstr "一个连接电网的灯光开关，这个是关闭的。"
 #: data/json/furniture_and_terrain/terrain-bridges-docks.json
 #: data/json/furniture_and_terrain/terrain-doors.json
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/mods/MagicalNights/furniture.json
 #: data/mods/desert_region/desert_terrain.json src/mapdata.h
 #: src/vehicle_move.cpp
@@ -39075,6 +39150,37 @@ msgid "This is open air."
 msgstr "这是露天的。"
 
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "quarry hole air"
+msgstr "采石坑空间"
+
+#. ~ Description for quarry hole air
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid ""
+"This is effectively open air, with a frame bracing to ensure anything around"
+" it doesnt collapse into it. Blocks roofs, but deconstructing the bracing "
+"would be rather easy."
+msgstr "这实际上是一片露天空间，带有框架支撑以确保周围区域不会向内坍塌。它会阻挡屋顶的建造，但拆除这个支撑框架相当容易。"
+
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "crude plank bridge"
+msgstr "简易木板桥"
+
+#. ~ Description for crude plank bridge
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "A gathering of planks over a large hole or air. Not very sturdy."
+msgstr "一些拼凑起来的木板，架在一个大洞或空地上方。不是很坚固。"
+
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid "metal bridge"
+msgstr "金属桥"
+
+#. ~ Description for metal bridge
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
+msgid ""
+"Some sturdy metal sheets welded into a makeshift bridge. Suprisingly sturdy."
+msgstr "一些坚固的金属板焊接而成的临时桥梁。出乎意料地坚固。"
+
+#: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 msgid "adobe floor"
 msgstr "黏土砖地板"
@@ -42696,6 +42802,15 @@ msgid "Solid rock, with an exposed seam of reddish-brown iron ore."
 msgstr "坚硬的岩石，带有裸露的红褐色铁矿石层。"
 
 #: data/json/furniture_and_terrain/terrain-walls.json
+msgid "banded-iron ore vein"
+msgstr "条带状铁矿脉"
+
+#. ~ Description for banded-iron ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed seam of brown-red banded-iron ore."
+msgstr "坚硬的岩石，带有裸露的棕红色条带状铁矿石层。"
+
+#: data/json/furniture_and_terrain/terrain-walls.json
 msgid "copper ore vein"
 msgstr "铜矿脉"
 
@@ -42703,6 +42818,24 @@ msgstr "铜矿脉"
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "Solid rock, with an exposed seam of green copper ore."
 msgstr "坚硬的岩石，带有裸露的绿色铜矿石层。"
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "tetrahedrite ore vein"
+msgstr "黝铜矿脉"
+
+#. ~ Description for tetrahedrite ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed seam of grey tetrahedrite ore."
+msgstr "坚硬的岩石，带有裸露的灰色黝铜矿石层。"
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "chalcopyrite ore vein"
+msgstr "黄铜矿脉"
+
+#. ~ Description for chalcopyrite ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed seam of light-green chalcopyrite ore."
+msgstr "坚硬的岩石，带有裸露的浅绿色黄铜矿石层。"
 
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "lead ore vein"
@@ -42714,6 +42847,24 @@ msgid "Solid rock, with an exposed dull gray and yellow seam of lead ore."
 msgstr "坚硬的岩石，带有裸露的暗灰色和黄色铅矿石层。"
 
 #: data/json/furniture_and_terrain/terrain-walls.json
+msgid "galena ore vein"
+msgstr "方铅矿脉"
+
+#. ~ Description for galena ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed dull gray seam of galena ore."
+msgstr "坚硬的岩石，带有裸露的暗灰色方铅矿石层。"
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "galenau ore vein"
+msgstr "铅诺矿脉"
+
+#. ~ Description for galenau ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed yellow-grey seam of galenau ore."
+msgstr "坚硬的岩石，带有裸露的黄灰色铅诺矿石层。"
+
+#: data/json/furniture_and_terrain/terrain-walls.json
 msgid "tin ore vein"
 msgstr "锡矿脉"
 
@@ -42723,6 +42874,26 @@ msgid ""
 "Solid rock, with dark gray hints of what you're fairly certain is an ore of "
 "tin."
 msgstr "坚硬的岩石，带有暗灰色的痕迹，你相当确定这是锡矿石。"
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "coppin ore vein"
+msgstr "琥珀金矿脉"
+
+#. ~ Description for coppin ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with a seeming mixture of copper and tin ore."
+msgstr "坚硬的岩石，带有裸露的泛着银光的黄色琥珀金矿石层。"
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "bronzium ore vein"
+msgstr "青铜矿脉"
+
+#. ~ Description for bronzium ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid ""
+"Solid rock, with a seeming mixture of copper and tin ore. Faintly resembles "
+"crude bronze."
+msgstr "坚硬的岩石，看起来像是铜矿和锡矿的混合物。隐约有点像粗制青铜。"
 
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "silver ore vein"
@@ -42748,6 +42919,15 @@ msgid ""
 " it's almost enough to make one forget how much less valuable it is after "
 "the end of the world."
 msgstr "老天爷，你挖到金子了！它以天然形态在岩石中闪闪发光，这景象几乎让人忘记了在世界末日之后它贬值了多少。"
+
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "electrumite ore vein"
+msgstr "琥珀金矿脉"
+
+#. ~ Description for electrumite ore vein
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "Solid rock, with an exposed silvered yellow gleam of electrumite ore."
+msgstr "坚硬的岩石，露出了泛着银光的黄色琥珀金矿石。"
 
 #: data/json/furniture_and_terrain/terrain-walls.json
 msgid "little column"
@@ -47245,6 +47425,32 @@ msgid ""
 "Silver with a few million years of tarnish on it.  With the right knowhow, "
 "it could be smelted into usable metal."
 msgstr "带有数百万年锈迹的银。只要有合适的技术，它就能被冶炼成可用的金属。"
+
+#: data/json/items/chemicals_and_resources.json
+msgid "chunk of gold ore"
+msgid_plural "chunks of gold ore"
+msgstr[0] "金矿块"
+
+#. ~ Description for {'str': 'chunk of gold ore', 'str_pl': 'chunks of gold
+#. ore'}
+#: data/json/items/chemicals_and_resources.json
+msgid ""
+"A small, dense chunk of what seems to be quartz,but what interests you is "
+"the gold interlaced. With the right knowhow, it could be smelted into usable"
+" metal."
+msgstr "一小块致密的石英状矿块，但其中交织的黄金才是重点。只要有合适的技术，就可以将其熔炼成可用的金属。"
+
+#: data/json/items/chemicals_and_resources.json
+msgid "geode"
+msgid_plural "geodes"
+msgstr[0] "晶洞"
+
+#. ~ Description for {'str': 'geode'}
+#: data/json/items/chemicals_and_resources.json
+msgid ""
+"A large rock, sounds kinda hollow, could crack it open easy enough, wonder "
+"whats inside?"
+msgstr "一块听起来有点空的大石头。应该很容易就能敲开，不知道里面会是什么呢？"
 
 #: data/json/items/chemicals_and_resources.json
 msgid "aluminum sulfate"
@@ -165394,6 +165600,38 @@ msgstr "锡脉"
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "iron vein"
 msgstr "铁脉"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "banded iron vein"
+msgstr "条带状铁矿脉"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "tetrahedrite vein"
+msgstr "黝铜矿脉"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "chalcopyrite vein"
+msgstr "黄铜矿脉"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "galena vein"
+msgstr "方铅矿脉"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "galenau vein"
+msgstr "铅诺矿脉"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "coppin vein"
+msgstr "铜锡矿脉"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "bronzium vein"
+msgstr "青铜矿脉"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "electrumite vein"
+msgstr "琥珀金矿脉"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_abstract.json
 msgid "generic_cropland"
