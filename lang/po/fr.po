@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-09-29 01:40+0000\n"
+"POT-Creation-Date: 2025-09-30 01:34+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: French (https://app.transifex.com/bn-team/teams/113585/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -4472,6 +4472,14 @@ msgstr "Renforcer avec du Kevlar"
 #: data/json/clothing_mods.json
 msgid "Destroy Kevlar padding"
 msgstr "Retirer le renfort en Kevlar"
+
+#: data/json/clothing_mods.json
+msgid "Permeate with carbon fiber"
+msgstr ""
+
+#: data/json/clothing_mods.json
+msgid "Destroy carbon fiber weave"
+msgstr ""
 
 #: data/json/clothing_mods.json
 msgid "Line it with fur"
@@ -11168,6 +11176,13 @@ msgstr ""
 #: data/json/flags.json
 msgid ""
 "This gear has Kevlar inserted into strategic locations to <good>increase "
+"protection</good> with some <bad>increase to encumbrance</bad>."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This gear has been permeated with carbon fiber to <good>increase "
 "protection</good> with some <bad>increase to encumbrance</bad>."
 msgstr ""
 
@@ -25797,18 +25812,17 @@ msgstr ""
 " élevée, et réduit la pénalité de tir en conduisant."
 
 #: data/json/skills.json
-msgid "Swimming"
+msgid "Athletics"
 msgstr ""
 
-#. ~ Description for {'str': 'Swimming'}
+#. ~ Description for {'str': 'Athletics'}
 #: data/json/skills.json
 msgid ""
-"Your ability to stay afloat and move around in bodies of water.  This skill "
-"keeps you from drowning, affects your combat effectiveness and speed in deep"
-" water, and determines the detriment of swimming with heavier gear."
+"Your capability to perform physically demanding tasks such as running, "
+"jumping, climbing, and swimming efficiently. This skill influences your "
+"overall performance when swimming, reduces stamina consumption of physical "
+"activity, and reduces the impact of encumbrance."
 msgstr ""
-"Votre compétence à flotter et nager dans l'eau. Cela vous évitera de vous "
-"noyer et rendra les combats en eaux profondes plus efficaces."
 
 #: data/json/skills.json
 msgid "Fabrication"
@@ -124704,7 +124718,8 @@ msgstr[2] ""
 msgid ""
 "Although it's not nearly as fancy as the experimental nanofabricators, this "
 "civilian-grade 3D printer can produce almost any item out of plastic, "
-"polymer, or carbon fiber…  so long as you can program it."
+"polymer, or carbon fiber…  so long as you can program it.  It's also useful "
+"for repairing items made out of plastic or carbon fiber."
 msgstr ""
 
 #: data/json/items/tool/science.json
@@ -124719,7 +124734,9 @@ msgstr[2] ""
 msgid ""
 "Recent advances in 3D printing technology have resulted in the ability to "
 "quickly and cheaply 3D print metals and alloys.  Such 3D printers are highly"
-" expensive, but sought out by collectors and preppers alike."
+" expensive, but sought out by collectors and preppers alike.  In addition to"
+" crafting, it can be used to repair polymer and metal items alike, or "
+"permeate fabric items with carbon fiber for added protection."
 msgstr ""
 
 #: data/json/items/tool/shelters.json
@@ -236968,6 +236985,13 @@ msgid ""
 "accurate fire."
 msgstr ""
 
+#: data/raw/tips.json
+msgid ""
+"Running, swimming, and other physical activity will increase your Athletics "
+"skill, reducing encumbrance penalty, decreasing stamina consumption, and "
+"making swimming easier."
+msgstr ""
+
 #: data/raw/keybindings/edit_creature_effects.json
 msgid "Add new effect"
 msgstr ""
@@ -265475,16 +265499,16 @@ msgstr "Quelle modification souhaitez vous apporter?"
 msgid "Can't %1$s (incompatible with %2$s)"
 msgstr ""
 
-#. ~ %1$s: modification desc, %2$d: number of thread needed
+#. ~ %1$s: modification desc
 #: src/iuse_actor.cpp
 #, c-format
 msgid "Can't %1$s (already resized)"
 msgstr ""
 
-#. ~ %1$s: modification desc, %2$d: number of thread needed
+#. ~ %1$s: modification desc, %2$d: number of charges needed
 #: src/iuse_actor.cpp
 #, c-format
-msgid "Can't %1$s (need %2$d thread loaded)"
+msgid "Can't %1$s (need %2$d charges loaded)"
 msgstr ""
 
 #. ~ %1$s: modification desc, %2$d: number of items needed, %3$s: items needed
@@ -265499,10 +265523,10 @@ msgid "Can't %s while wearing it"
 msgstr ""
 
 #. ~ %1$s: modification desc, %2$d: number of items needed, %3$s: items
-#. needed, %4$s: number of thread needed
+#. needed, %4$s: number of charges needed
 #: src/iuse_actor.cpp
 #, c-format
-msgid "%1$s (%2$d %3$s and %4$d thread)"
+msgid "%1$s (%2$d %3$s and %4$d charges)"
 msgstr ""
 
 #: src/iuse_actor.cpp
@@ -265543,14 +265567,13 @@ msgid "You damage your %s trying to modify it!  ( %s-> %s)"
 msgstr ""
 
 #: src/iuse_actor.cpp
-msgid "You fail to modify the clothing, and you waste thread and materials."
+msgid "You fail to modify the clothing, and you waste charges and materials."
 msgstr ""
-"Vous échouez à modifier le vêtement, et gâchez du fil et des matériaux."
 
 #: src/iuse_actor.cpp
 #, c-format
-msgid "You modify your %s, but waste a lot of thread."
-msgstr "Vous modifiez votre %s, mais gâchez beaucoup de fil."
+msgid "You modify your %s, but waste a lot of charges."
+msgstr ""
 
 #: src/iuse_actor.cpp
 #, c-format
