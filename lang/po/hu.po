@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-10-31 01:46+0000\n"
+"POT-Creation-Date: 2025-11-05 01:47+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/bn-team/teams/113585/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -6069,6 +6069,18 @@ msgstr ""
 
 #: data/json/construction_group.json
 msgid "Plant Grass"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Build canvas flooring"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Build canvas wall"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Build canvas door"
 msgstr ""
 
 #: data/json/debug_spells.json
@@ -12540,6 +12552,14 @@ msgstr ""
 
 #: data/json/item_actions.json
 msgid "Listen to music"
+msgstr ""
+
+#: data/json/item_actions.json
+msgid "Use the planter"
+msgstr ""
+
+#: data/json/item_actions.json
+msgid "Collect a plant"
 msgstr ""
 
 #: data/json/item_category.json
@@ -34647,6 +34667,7 @@ msgid "This plant is maturing."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-domestic_plants.json
+#: src/iuse_actor.cpp
 msgid "seed"
 msgstr "vetőmag"
 
@@ -34658,6 +34679,7 @@ msgid ""
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-domestic_plants.json
+#: src/iuse_actor.cpp
 msgid "seedling"
 msgstr "csíranövény"
 
@@ -37710,12 +37732,25 @@ msgid ""
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "skylight canvas floor"
+msgstr ""
+
+#. ~ Description for skylight canvas floor
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"Flooring made out of stretched, waterproof cloth.  Helps keep the dirt out "
+"of the tent. Has a plastic skylight to let light"
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "canvas wall"
 msgstr "vászon fal"
 
 #. ~ Description for canvas wall
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "A wall made of stretched, waterproof cloth."
+msgid ""
+"A wall made of stretched, waterproof cloth and supported by wooden or metal "
+"stakes."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
@@ -37726,9 +37761,15 @@ msgstr ""
 msgid "slap!"
 msgstr "csatt!"
 
-#. ~ Description for canvas wall
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "A wall made of stretched, heavy-duty, waterproof cloth."
+msgid "heavy-duty canvas wall"
+msgstr ""
+
+#. ~ Description for heavy-duty canvas wall
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"A wall made of stretched, waterproof cloth and supported by wooden or metal "
+"stakes. It has been strenghtened with plastic sheets."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
@@ -37736,8 +37777,11 @@ msgid "canvas flap"
 msgstr "vászon redőny"
 
 #. ~ Description for canvas flap
+#. ~ Description for heavy-duty canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "This canvas flap door could be pulled aside."
+msgid ""
+"This canvas flap door could be pulled aside. If you examine it closely, you "
+"could peek outside."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
@@ -37745,18 +37789,17 @@ msgid "open canvas flap"
 msgstr "nyitott vászon redőny"
 
 #. ~ Description for open canvas flap
+#. ~ Description for open heavy-duty canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "This canvas flap door has been pulled aside."
 msgstr ""
 
-#. ~ Description for canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "This heavy canvas flap door could be pulled aside."
+msgid "heavy-duty canvas flap"
 msgstr ""
 
-#. ~ Description for open canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "This heavy canvas flap door has been pulled aside."
+msgid "open heavy-duty canvas flap"
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
@@ -48607,6 +48650,7 @@ msgstr ""
 " Nagyon nem ajánlott meginni."
 
 #: data/json/items/chemicals_and_resources.json
+#: data/mods/flowerpots_plus/items/overrides.json
 msgid "liquid fertilizer"
 msgid_plural "liquid fertilizer"
 msgstr[0] "folyékony műtrágya"
@@ -48618,6 +48662,7 @@ msgid "A nutrient rich elixir for plants."
 msgstr "Tápanyagban gazdag elixír a növényeknek."
 
 #: data/json/items/chemicals_and_resources.json
+#: data/mods/flowerpots_plus/items/overrides.json
 msgid "commercial fertilizer"
 msgid_plural "commercial fertilizer"
 msgstr[0] "ipari műtrágya"
@@ -51587,7 +51632,8 @@ msgid ""
 "solder."
 msgstr ""
 
-#: data/json/items/generic.json
+#: data/json/items/generic.json data/mods/flowerpots_plus/ammo_types.json
+#: data/mods/flowerpots_plus/items/overrides.json
 msgid "fertilizer"
 msgid_plural "fertilizers"
 msgstr[0] "műtrágya"
@@ -231326,6 +231372,215 @@ msgid ""
 "and reliable but somewhat more difficult to reload."
 msgstr ""
 
+#: data/mods/flowerpots_plus/modinfo.json
+msgid "FlowerPots++"
+msgstr ""
+
+#. ~ Description for FlowerPots++
+#: data/mods/flowerpots_plus/modinfo.json
+msgid "Adds flower pots to grow plants on the go."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II"
+msgid_plural "POWER-GRO planter MK-IIs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"Consumes up to 5 seeds and 5 units of fertilizer per use."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (seed)"
+msgid_plural "POWER-GRO planter MK-II (seed)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (seed)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"This one has a seed in it."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (seedling)"
+msgid_plural "POWER-GRO planter MK-II (seedling)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (seedling)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"The seed is sprouting."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (mature)"
+msgid_plural "POWER-GRO planter MK-II (mature)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (mature)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"Should bear fruit soon."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (harvest)"
+msgid_plural "POWER-GRO planter MK-II (harvest)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (harvest)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"Fresh produce right at your fingertips."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter"
+msgid_plural "advanced planters"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'advanced planter'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"Consumes up to 3 seeds and 3 units of fertilizer per use."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (seed)"
+msgid_plural "advanced planter (seed)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'advanced planter (seed)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"This one has a seed in it."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (seedling)"
+msgid_plural "advanced planter (seedling)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'advanced planter (seedling)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"The seed is sprouting."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (mature)"
+msgid_plural "advanced planter (mature)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'advanced planter (mature)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"Should bear fruit soon."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (harvest)"
+msgid_plural "advanced planter (harvest)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'advanced planter (harvest)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"Fresh produce right at your fingertips."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter"
+msgid_plural "portable planters"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'portable planter'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"Consumes up to 1 seed and 1 unit of fertilizer per use."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (seed)"
+msgid_plural "portable planter (seed)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'portable planter (seed)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"This one has a seed in it."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (seedling)"
+msgid_plural "portable planter (seedling)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'portable planter (seedling)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"The seed is sprouting."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (mature)"
+msgid_plural "portable planter (mature)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'portable planter (mature)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"Should bear fruit soon."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (harvest)"
+msgid_plural "portable planter (harvest)s"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'portable planter (harvest)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"Fresh produce right at your fingertips."
+msgstr ""
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr ""
@@ -242072,12 +242327,20 @@ msgid "You try to shout but you have no face!"
 msgstr "Próbálsz kiabálni, de nincsen arcod!"
 
 #: src/character.cpp
-msgid "a piercing howl!"
-msgstr "fülrepesztő vonítás!"
+msgid "You let out an ear-piercing howl!"
+msgstr ""
+
+#: src/character.cpp src/monattack.cpp
+msgid "an ear-piercing howl!"
+msgstr ""
 
 #: src/character.cpp
-msgid "yourself let out a piercing howl!"
-msgstr "fülrepesztő vonítás tör előre belőled!"
+msgid "yourself let out an ear-piercing howl!"
+msgstr ""
+
+#: src/character.cpp
+msgid "You scream loudly!"
+msgstr ""
 
 #: src/character.cpp
 msgid "a loud scream!"
@@ -242086,6 +242349,10 @@ msgstr "hangos sikoly!"
 #: src/character.cpp
 msgid "yourself scream loudly!"
 msgstr "hangosan sikoltasz!"
+
+#: src/character.cpp
+msgid "You yell loudly!"
+msgstr ""
 
 #: src/character.cpp
 msgid "a loud shout!"
@@ -253223,7 +253490,7 @@ msgstr ""
 msgid "Use which seed?"
 msgstr ""
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You have no seeds to plant."
 msgstr ""
 
@@ -253231,7 +253498,7 @@ msgstr ""
 msgid "Something's lying there…"
 msgstr ""
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You saved your seeds for later."
 msgstr ""
 
@@ -262227,6 +262494,74 @@ msgid ""
 "nearby."
 msgstr ""
 
+#: src/iuse_actor.cpp
+msgid "You need to wait for it to grow."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "You don't have enough fertilizer."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Growing</bold>: %s"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Stage</bold>: %s"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "mature"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "harvest"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Progress</bold>: %d%%"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Harvestable in</bold>: %s"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Seeds</bold>: %d/%d"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Fertilizer</bold>: %d/%d"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Growth</bold>: %d%%"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Yield</bold>: %d%%"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Which planter?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Transplant what?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "There is nothing that can be collected nearby."
+msgstr ""
+
 #: src/iuse_actor.h
 msgid "Carve"
 msgstr ""
@@ -267319,10 +267654,6 @@ msgid "a piercing wail!"
 msgstr ""
 
 #: src/monattack.cpp
-msgid "an ear-piercing howl!"
-msgstr ""
-
-#: src/monattack.cpp
 msgid "a sibilant rattling sound!"
 msgstr ""
 
@@ -272131,6 +272462,14 @@ msgid "Talk to…"
 msgstr ""
 
 #: src/npctalk.cpp
+msgid "Howl"
+msgstr ""
+
+#: src/npctalk.cpp
+msgid "Scream"
+msgstr ""
+
+#: src/npctalk.cpp
 msgid "Yell"
 msgstr "Kiabálás"
 
@@ -272229,10 +272568,6 @@ msgid "Clear"
 msgstr "Tiszta"
 
 #: src/npctalk.cpp
-msgid "loudly."
-msgstr ""
-
-#: src/npctalk.cpp
 msgid "Enter a sentence to yell"
 msgstr "Írd le, hogy milyen mondatot kiabálj"
 
@@ -272319,16 +272654,6 @@ msgstr ""
 
 #: src/npctalk.cpp
 msgid "As you were."
-msgstr ""
-
-#: src/npctalk.cpp
-#, c-format
-msgid "You yell %s"
-msgstr "Kiabálsz: %s"
-
-#: src/npctalk.cpp
-#, c-format
-msgid "%s yelling %s"
 msgstr ""
 
 #: src/npctalk.cpp

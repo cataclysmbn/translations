@@ -36,7 +36,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-11-04 00:59+0000\n"
+"POT-Creation-Date: 2025-11-05 01:47+0000\n"
 "Last-Translator: Tae Heon Lim, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -6335,6 +6335,18 @@ msgstr "평평한 지붕 제거"
 msgid "Plant Grass"
 msgstr "잔디 심기"
 
+#: data/json/construction_group.json
+msgid "Build canvas flooring"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Build canvas wall"
+msgstr ""
+
+#: data/json/construction_group.json
+msgid "Build canvas door"
+msgstr ""
+
 #: data/json/debug_spells.json
 msgid "Template Spell"
 msgstr "템플릿 주문"
@@ -12630,6 +12642,14 @@ msgstr "기술 훈련하기"
 #: data/json/item_actions.json
 msgid "Listen to music"
 msgstr "음악 듣기"
+
+#: data/json/item_actions.json
+msgid "Use the planter"
+msgstr ""
+
+#: data/json/item_actions.json
+msgid "Collect a plant"
+msgstr ""
 
 #: data/json/item_category.json
 msgid "GUNS"
@@ -35134,6 +35154,7 @@ msgid "This plant is maturing."
 msgstr "이 식물은 성장 중입니다."
 
 #: data/json/furniture_and_terrain/furniture-domestic_plants.json
+#: src/iuse_actor.cpp
 msgid "seed"
 msgstr "씨앗"
 
@@ -35145,6 +35166,7 @@ msgid ""
 msgstr "간단히 심겨진 씨앗. 적절한 행동이 있다면 이 씨앗의 운명이 숙명으로 바뀔 것입니다."
 
 #: data/json/furniture_and_terrain/furniture-domestic_plants.json
+#: src/iuse_actor.cpp
 msgid "seedling"
 msgstr "묘목"
 
@@ -38286,13 +38308,26 @@ msgid ""
 msgstr "쫙 펼친 방수천을 바닥에 깔았습니다. 텐트에 흙이 들어오지 않게 막아줍니다."
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "skylight canvas floor"
+msgstr ""
+
+#. ~ Description for skylight canvas floor
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"Flooring made out of stretched, waterproof cloth.  Helps keep the dirt out "
+"of the tent. Has a plastic skylight to let light"
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "canvas wall"
 msgstr "캔버스 벽"
 
 #. ~ Description for canvas wall
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "A wall made of stretched, waterproof cloth."
-msgstr "쫙 펼친 방수천 벽입니다."
+msgid ""
+"A wall made of stretched, waterproof cloth and supported by wooden or metal "
+"stakes."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
 #: data/json/furniture_and_terrain/terrain-doors.json
@@ -38302,38 +38337,46 @@ msgstr "쫙 펼친 방수천 벽입니다."
 msgid "slap!"
 msgstr "찰싹!"
 
-#. ~ Description for canvas wall
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "A wall made of stretched, heavy-duty, waterproof cloth."
-msgstr "쫙 펼친 튼튼한 방수천으로 만든 벽입니다."
+msgid "heavy-duty canvas wall"
+msgstr ""
+
+#. ~ Description for heavy-duty canvas wall
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"A wall made of stretched, waterproof cloth and supported by wooden or metal "
+"stakes. It has been strenghtened with plastic sheets."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "canvas flap"
 msgstr "캔버스 덮개"
 
 #. ~ Description for canvas flap
+#. ~ Description for heavy-duty canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "This canvas flap door could be pulled aside."
-msgstr "이 캔버스 덮개는 옆으로 젖혀둘 수 있습니다."
+msgid ""
+"This canvas flap door could be pulled aside. If you examine it closely, you "
+"could peek outside."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "open canvas flap"
 msgstr "열린 캔버스 덮개"
 
 #. ~ Description for open canvas flap
+#. ~ Description for open heavy-duty canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "This canvas flap door has been pulled aside."
 msgstr "이 캔버스 덮개는 옆으로 젖혀져 있습니다."
 
-#. ~ Description for canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "This heavy canvas flap door could be pulled aside."
-msgstr "이 묵직한 캔버스 덮개는 옆으로 젖혀져 있습니다."
+msgid "heavy-duty canvas flap"
+msgstr ""
 
-#. ~ Description for open canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "This heavy canvas flap door has been pulled aside."
-msgstr "이 묵직한 캔버스 덮개 문은 옆으로 젖혀져 있습니다."
+msgid "open heavy-duty canvas flap"
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "groundsheet"
@@ -49159,6 +49202,7 @@ msgid ""
 msgstr "일반적으로 가정용 세척제로 사용되는 수산화암모늄입니다. 마시면 매우 위험합니다."
 
 #: data/json/items/chemicals_and_resources.json
+#: data/mods/flowerpots_plus/items/overrides.json
 msgid "liquid fertilizer"
 msgid_plural "liquid fertilizer"
 msgstr[0] "액체비료"
@@ -49169,6 +49213,7 @@ msgid "A nutrient rich elixir for plants."
 msgstr "식물에 주는 약으로 영양소가 풍부합니다."
 
 #: data/json/items/chemicals_and_resources.json
+#: data/mods/flowerpots_plus/items/overrides.json
 msgid "commercial fertilizer"
 msgid_plural "commercial fertilizer"
 msgstr[0] "화학비료"
@@ -51818,7 +51863,8 @@ msgstr ""
 "소나무나 자작나무 재로 만든 끈적한 수지입니다. 작은 물체를 방수처리하거나 한데 묶어두는데 쓸 수 있으며, 적절한 도구가 있다면 손상된 "
 "물건을 임시로 수리하는 데에도 쓸 수 있습니다. 잘 건조시키면 송진이 되어 납땜에 쓸 수도 있습니다."
 
-#: data/json/items/generic.json
+#: data/json/items/generic.json data/mods/flowerpots_plus/ammo_types.json
+#: data/mods/flowerpots_plus/items/overrides.json
 msgid "fertilizer"
 msgid_plural "fertilizers"
 msgstr[0] "비료"
@@ -226187,6 +226233,200 @@ msgid ""
 "and reliable but somewhat more difficult to reload."
 msgstr "리드워크 사의 9x19mm 총기용 21발들이 폴리머 탄창입니다. 가볍고 믿음직하지만 재장전하기 조금 어렵습니다."
 
+#: data/mods/flowerpots_plus/modinfo.json
+msgid "FlowerPots++"
+msgstr ""
+
+#. ~ Description for FlowerPots++
+#: data/mods/flowerpots_plus/modinfo.json
+msgid "Adds flower pots to grow plants on the go."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II"
+msgid_plural "POWER-GRO planter MK-IIs"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"Consumes up to 5 seeds and 5 units of fertilizer per use."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (seed)"
+msgid_plural "POWER-GRO planter MK-II (seed)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (seed)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"This one has a seed in it."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (seedling)"
+msgid_plural "POWER-GRO planter MK-II (seedling)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (seedling)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"The seed is sprouting."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (mature)"
+msgid_plural "POWER-GRO planter MK-II (mature)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (mature)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"Should bear fruit soon."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (harvest)"
+msgid_plural "POWER-GRO planter MK-II (harvest)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (harvest)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"Fresh produce right at your fingertips."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter"
+msgid_plural "advanced planters"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'advanced planter'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"Consumes up to 3 seeds and 3 units of fertilizer per use."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (seed)"
+msgid_plural "advanced planter (seed)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'advanced planter (seed)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"This one has a seed in it."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (seedling)"
+msgid_plural "advanced planter (seedling)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'advanced planter (seedling)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"The seed is sprouting."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (mature)"
+msgid_plural "advanced planter (mature)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'advanced planter (mature)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"Should bear fruit soon."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (harvest)"
+msgid_plural "advanced planter (harvest)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'advanced planter (harvest)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"Fresh produce right at your fingertips."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter"
+msgid_plural "portable planters"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'portable planter'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"Consumes up to 1 seed and 1 unit of fertilizer per use."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (seed)"
+msgid_plural "portable planter (seed)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'portable planter (seed)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"This one has a seed in it."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (seedling)"
+msgid_plural "portable planter (seedling)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'portable planter (seedling)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"The seed is sprouting."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (mature)"
+msgid_plural "portable planter (mature)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'portable planter (mature)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"Should bear fruit soon."
+msgstr ""
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (harvest)"
+msgid_plural "portable planter (harvest)s"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'portable planter (harvest)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"Fresh produce right at your fingertips."
+msgstr ""
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr "숲속생활"
@@ -236842,12 +237082,20 @@ msgid "You try to shout but you have no face!"
 msgstr "소리를 지르고 싶지만 얼굴이 없습니다!"
 
 #: src/character.cpp
-msgid "a piercing howl!"
-msgstr "날카로운 울음소리!"
+msgid "You let out an ear-piercing howl!"
+msgstr ""
+
+#: src/character.cpp src/monattack.cpp
+msgid "an ear-piercing howl!"
+msgstr "귀를 꿰뚫는 울부짖음!"
 
 #: src/character.cpp
-msgid "yourself let out a piercing howl!"
-msgstr "날카로운 굉음으로 울부짖습니다!"
+msgid "yourself let out an ear-piercing howl!"
+msgstr ""
+
+#: src/character.cpp
+msgid "You scream loudly!"
+msgstr ""
 
 #: src/character.cpp
 msgid "a loud scream!"
@@ -236856,6 +237104,10 @@ msgstr "큰 비명소리!"
 #: src/character.cpp
 msgid "yourself scream loudly!"
 msgstr "시끄럽게 비명을 지릅니다!"
+
+#: src/character.cpp
+msgid "You yell loudly!"
+msgstr ""
 
 #: src/character.cpp
 msgid "a loud shout!"
@@ -247890,7 +248142,7 @@ msgstr "%s(이)가 산산조각나 포자가 되어 흩날립니다!"
 msgid "Use which seed?"
 msgstr "어떤 씨앗을 사용합니까?"
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You have no seeds to plant."
 msgstr "심을 수 있는 씨앗이 없습니다."
 
@@ -247898,7 +248150,7 @@ msgstr "심을 수 있는 씨앗이 없습니다."
 msgid "Something's lying there…"
 msgstr "뭔가 있는 것 같습니다."
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You saved your seeds for later."
 msgstr "나중에 쓰기 위해 씨앗을 보관해두었습니다."
 
@@ -256808,6 +257060,74 @@ msgid ""
 "nearby."
 msgstr "%s(을)를 이용해 샘플을 그러모으며 광맥이 어디쯤 있을지 짐작해봅니다."
 
+#: src/iuse_actor.cpp
+msgid "You need to wait for it to grow."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "You don't have enough fertilizer."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Growing</bold>: %s"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Stage</bold>: %s"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "mature"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "harvest"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Progress</bold>: %d%%"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Harvestable in</bold>: %s"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Seeds</bold>: %d/%d"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Fertilizer</bold>: %d/%d"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Growth</bold>: %d%%"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Yield</bold>: %d%%"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Which planter?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Transplant what?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "There is nothing that can be collected nearby."
+msgstr ""
+
 #: src/iuse_actor.h
 msgid "Carve"
 msgstr ""
@@ -261928,10 +262248,6 @@ msgid "a piercing wail!"
 msgstr "귀를 꿰뚫는 울부짖음!"
 
 #: src/monattack.cpp
-msgid "an ear-piercing howl!"
-msgstr "귀를 꿰뚫는 울부짖음!"
-
-#: src/monattack.cpp
 msgid "a sibilant rattling sound!"
 msgstr "쉭쉭거리는 소리!"
 
@@ -266745,6 +267061,14 @@ msgid "Talk to…"
 msgstr "말을 걸기..."
 
 #: src/npctalk.cpp
+msgid "Howl"
+msgstr ""
+
+#: src/npctalk.cpp
+msgid "Scream"
+msgstr ""
+
+#: src/npctalk.cpp
 msgid "Yell"
 msgstr "외치기"
 
@@ -266843,10 +267167,6 @@ msgid "Clear"
 msgstr "맑음"
 
 #: src/npctalk.cpp
-msgid "loudly."
-msgstr "크게 소리지릅니다."
-
-#: src/npctalk.cpp
 msgid "Enter a sentence to yell"
 msgstr "고함 지를 문장 입력"
 
@@ -266943,16 +267263,6 @@ msgstr "앞에 위협이 있어.  모두들 긴장하고 가까이 붙어있어.
 #: src/npctalk.cpp
 msgid "As you were."
 msgstr "그대로 있어."
-
-#: src/npctalk.cpp
-#, c-format
-msgid "You yell %s"
-msgstr "%s"
-
-#: src/npctalk.cpp
-#, c-format
-msgid "%s yelling %s"
-msgstr ""
 
 #: src/npctalk.cpp
 #, c-format

@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-10-31 01:46+0000\n"
+"POT-Creation-Date: 2025-11-05 01:47+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -5933,6 +5933,18 @@ msgstr "拆除平顶"
 #: data/json/construction_group.json
 msgid "Plant Grass"
 msgstr "种草"
+
+#: data/json/construction_group.json
+msgid "Build canvas flooring"
+msgstr "建造帆布地板"
+
+#: data/json/construction_group.json
+msgid "Build canvas wall"
+msgstr "建造帆布墙"
+
+#: data/json/construction_group.json
+msgid "Build canvas door"
+msgstr "建造帆布门"
 
 #: data/json/debug_spells.json
 msgid "Template Spell"
@@ -12192,6 +12204,14 @@ msgstr "训练技能"
 #: data/json/item_actions.json
 msgid "Listen to music"
 msgstr "听音乐"
+
+#: data/json/item_actions.json
+msgid "Use the planter"
+msgstr "使用种植盆"
+
+#: data/json/item_actions.json
+msgid "Collect a plant"
+msgstr "采集植物"
 
 #: data/json/item_category.json
 msgid "GUNS"
@@ -33708,6 +33728,7 @@ msgid "This plant is maturing."
 msgstr "这颗植物已经成熟了。"
 
 #: data/json/furniture_and_terrain/furniture-domestic_plants.json
+#: src/iuse_actor.cpp
 msgid "seed"
 msgstr "种子"
 
@@ -33719,6 +33740,7 @@ msgid ""
 msgstr "一种不起眼的种子。行动是命运的种子，行动成长为命运。"
 
 #: data/json/furniture_and_terrain/furniture-domestic_plants.json
+#: src/iuse_actor.cpp
 msgid "seedling"
 msgstr "幼苗"
 
@@ -36744,13 +36766,26 @@ msgid ""
 msgstr "地板由拉伸的防水布制成。有助于防止灰尘进入帐篷。"
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
+msgid "skylight canvas floor"
+msgstr "天窗帆布地板"
+
+#. ~ Description for skylight canvas floor
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"Flooring made out of stretched, waterproof cloth.  Helps keep the dirt out "
+"of the tent. Has a plastic skylight to let light"
+msgstr "地板由拉伸的防水布制成。有助于防止灰尘进入帐篷。带有一个塑料天窗用于采光。"
+
+#: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "canvas wall"
 msgstr "帆布墙"
 
 #. ~ Description for canvas wall
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "A wall made of stretched, waterproof cloth."
-msgstr "一种由拉伸的防水布制成的墙。"
+msgid ""
+"A wall made of stretched, waterproof cloth and supported by wooden or metal "
+"stakes."
+msgstr "一种由拉伸的防水布制成的墙，由木桩或金属桩支撑。"
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
 #: data/json/furniture_and_terrain/terrain-doors.json
@@ -36760,38 +36795,46 @@ msgstr "一种由拉伸的防水布制成的墙。"
 msgid "slap!"
 msgstr "啪！"
 
-#. ~ Description for canvas wall
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "A wall made of stretched, heavy-duty, waterproof cloth."
-msgstr "由拉伸的重型防水布制成的墙。"
+msgid "heavy-duty canvas wall"
+msgstr "重型帆布墙"
+
+#. ~ Description for heavy-duty canvas wall
+#: data/json/furniture_and_terrain/furniture-terrains.json
+msgid ""
+"A wall made of stretched, waterproof cloth and supported by wooden or metal "
+"stakes. It has been strenghtened with plastic sheets."
+msgstr "一种由拉伸的防水布制成的墙，由木桩或金属桩支撑。它已用塑料板加固。"
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "canvas flap"
 msgstr "帆布帘子"
 
 #. ~ Description for canvas flap
+#. ~ Description for heavy-duty canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "This canvas flap door could be pulled aside."
-msgstr "这扇帆布门帘可以拉到一边。"
+msgid ""
+"This canvas flap door could be pulled aside. If you examine it closely, you "
+"could peek outside."
+msgstr "这扇帆布门帘可以拉到一边。如果仔细查看，你可以偷看到外面。"
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "open canvas flap"
-msgstr "帆布帘子（打开）"
+msgstr "帆布帘子（开）"
 
 #. ~ Description for open canvas flap
+#. ~ Description for open heavy-duty canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "This canvas flap door has been pulled aside."
 msgstr "这扇帆布门帘已被拉开。"
 
-#. ~ Description for canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "This heavy canvas flap door could be pulled aside."
-msgstr "这扇厚重的帆布门帘可以拉到一边。"
+msgid "heavy-duty canvas flap"
+msgstr "重型帆布门帘"
 
-#. ~ Description for open canvas flap
 #: data/json/furniture_and_terrain/furniture-terrains.json
-msgid "This heavy canvas flap door has been pulled aside."
-msgstr "这扇厚重的帆布门帘已被拉开。"
+msgid "open heavy-duty canvas flap"
+msgstr "重型帆布门帘（开）"
 
 #: data/json/furniture_and_terrain/furniture-terrains.json
 msgid "groundsheet"
@@ -47204,6 +47247,7 @@ msgstr ""
 "\"喝下去导致的后果会和闻起来同样刺激。\""
 
 #: data/json/items/chemicals_and_resources.json
+#: data/mods/flowerpots_plus/items/overrides.json
 msgid "liquid fertilizer"
 msgid_plural "liquid fertilizer"
 msgstr[0] "液体肥料"
@@ -47214,6 +47258,7 @@ msgid "A nutrient rich elixir for plants."
 msgstr "一些流体肥料，俗称液肥，内含多种对作物有益的微量营养元素，对作物有着明显的增产左右。"
 
 #: data/json/items/chemicals_and_resources.json
+#: data/mods/flowerpots_plus/items/overrides.json
 msgid "commercial fertilizer"
 msgid_plural "commercial fertilizer"
 msgstr[0] "商品肥料"
@@ -49789,7 +49834,8 @@ msgid ""
 "solder."
 msgstr "由松树或桦树焦油制成的粘性树脂。可以用于防水或粘合小物件，或者在合适的工具下进行简易修复。进一步干燥后称为松香，常用于焊接的助焊剂。"
 
-#: data/json/items/generic.json
+#: data/json/items/generic.json data/mods/flowerpots_plus/ammo_types.json
+#: data/mods/flowerpots_plus/items/overrides.json
 msgid "fertilizer"
 msgid_plural "fertilizers"
 msgstr[0] "肥料"
@@ -218107,6 +218153,235 @@ msgid ""
 "and reliable but somewhat more difficult to reload."
 msgstr "用于 Leadworks LLC 9x19mm 口径枪械的21发聚合物弹匣。重量轻、可靠性高，但重新装填稍显困难。"
 
+#: data/mods/flowerpots_plus/modinfo.json
+msgid "FlowerPots++"
+msgstr "花盆++"
+
+#. ~ Description for FlowerPots++
+#: data/mods/flowerpots_plus/modinfo.json
+msgid "Adds flower pots to grow plants on the go."
+msgstr "添加了花盆，让你可以随时随地种植植物。"
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II"
+msgid_plural "POWER-GRO planter MK-IIs"
+msgstr[0] "POWER-GRO 种植盆 MK-II"
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"Consumes up to 5 seeds and 5 units of fertilizer per use."
+msgstr ""
+"POWER-GRO 种植器 MK-II 是室内种植的终极解决方案。将一整个农场搬进你的厨房。\n"
+"阅读此标签即表示您同意 POWER-GRO 对任何与辐射相关的事故概不负责，并放弃起诉 POWER-GRO 的任何权利。\n"
+"每次使用最多消耗5颗种子和5单位肥料。"
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (seed)"
+msgid_plural "POWER-GRO planter MK-II (seed)s"
+msgstr[0] "POWER-GRO 种植盆 MK-II（有种子）"
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (seed)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"This one has a seed in it."
+msgstr ""
+"POWER-GRO 种植器 MK-II 是室内种植的终极解决方案。将一整个农场搬进你的厨房。\n"
+"阅读此标签即表示您同意 POWER-GRO 对任何与辐射相关的事故概不负责，并放弃起诉 POWER-GRO 的任何权利。\n"
+"这里面有一颗种子。"
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (seedling)"
+msgid_plural "POWER-GRO planter MK-II (seedling)s"
+msgstr[0] "POWER-GRO 种植盆 MK-II（幼苗）"
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (seedling)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"The seed is sprouting."
+msgstr ""
+"POWER-GRO 种植器 MK-II 是室内种植的终极解决方案。将一整个农场搬进你的厨房。\n"
+"阅读此标签即表示您同意 POWER-GRO 对任何与辐射相关的事故概不负责，并放弃起诉 POWER-GRO 的任何权利。\n"
+"种子正在发芽。"
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (mature)"
+msgid_plural "POWER-GRO planter MK-II (mature)s"
+msgstr[0] "POWER-GRO 种植盆 MK-II（成熟期）"
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (mature)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"Should bear fruit soon."
+msgstr ""
+"POWER-GRO 种植器 MK-II 是室内种植的终极解决方案。将一整个农场搬进你的厨房。\n"
+"阅读此标签即表示您同意 POWER-GRO 对任何与辐射相关的事故概不负责，并放弃起诉 POWER-GRO 的任何权利。\n"
+"很快就能结果了。"
+
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid "POWER-GRO planter MK-II (harvest)"
+msgid_plural "POWER-GRO planter MK-II (harvest)s"
+msgstr[0] "POWER-GRO 种植盆 MK-II（可收获）"
+
+#. ~ Description for {'str': 'POWER-GRO planter MK-II (harvest)'}
+#: data/mods/flowerpots_plus/items/planter_l.json
+msgid ""
+"The POWER-GRO planter MK-II is the ultimate solution for indoors growing. A whole farm right at your kitchen.\n"
+"By reading this label you agree that POWER-GRO is not liable for any radiation related incidents, and waive any rights to sue POWER-GRO.\n"
+"Fresh produce right at your fingertips."
+msgstr ""
+"POWER-GRO 种植器 MK-II 是室内种植的终极解决方案。将一整个农场搬进你的厨房。\n"
+"阅读此标签即表示您同意 POWER-GRO 对任何与辐射相关的事故概不负责，并放弃起诉 POWER-GRO 的任何权利。\n"
+"新鲜的农产品触手可及。"
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter"
+msgid_plural "advanced planters"
+msgstr[0] "高级种植盆"
+
+#. ~ Description for {'str': 'advanced planter'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"Consumes up to 3 seeds and 3 units of fertilizer per use."
+msgstr ""
+"一种满足您室内种植需求的高级种植盆，内置一盏植物生长灯。由核衰变的魔力与低功耗LED提供能源。\n"
+"每次使用最多消耗3颗种子和3单位肥料。"
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (seed)"
+msgid_plural "advanced planter (seed)s"
+msgstr[0] "高级种植盆（有种子）"
+
+#. ~ Description for {'str': 'advanced planter (seed)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"This one has a seed in it."
+msgstr ""
+"一种满足您室内种植需求的高级种植盆，内置一盏植物生长灯。由核衰变的魔力与低功耗LED提供能源。\n"
+"这里面有一颗种子。"
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (seedling)"
+msgid_plural "advanced planter (seedling)s"
+msgstr[0] "高级种植盆（幼苗）"
+
+#. ~ Description for {'str': 'advanced planter (seedling)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"The seed is sprouting."
+msgstr ""
+"一种满足您室内种植需求的高级种植盆，内置一盏植物生长灯。由核衰变的魔力与低功耗LED提供能源。\n"
+"种子正在发芽。"
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (mature)"
+msgid_plural "advanced planter (mature)s"
+msgstr[0] "高级种植盆（成熟期）"
+
+#. ~ Description for {'str': 'advanced planter (mature)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"Should bear fruit soon."
+msgstr ""
+"一种满足您室内种植需求的高级种植盆，内置一盏植物生长灯。由核衰变的魔力与低功耗LED提供能源。\n"
+"很快就能结果了。"
+
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid "advanced planter (harvest)"
+msgid_plural "advanced planter (harvest)s"
+msgstr[0] "高级种植盆（可收获）"
+
+#. ~ Description for {'str': 'advanced planter (harvest)'}
+#: data/mods/flowerpots_plus/items/planter_m.json
+msgid ""
+"An advanced planter for your indoors growing needs, comes with a built-in growing lamp.  Powered by the magic of nuclear decay and low-energy LEDs.\n"
+"Fresh produce right at your fingertips."
+msgstr ""
+"一种满足您室内种植需求的高级种植盆，内置一盏植物生长灯。由核衰变的魔力与低功耗LED提供能源。\n"
+"新鲜的农产品触手可及。"
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter"
+msgid_plural "portable planters"
+msgstr[0] "便携种植盆"
+
+#. ~ Description for {'str': 'portable planter'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"Consumes up to 1 seed and 1 unit of fertilizer per use."
+msgstr ""
+"一种满足您室内种植需求的小型种植盆。\n"
+"每次使用最多消耗1颗种子和1单位肥料。"
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (seed)"
+msgid_plural "portable planter (seed)s"
+msgstr[0] "便携种植盆（有种子）"
+
+#. ~ Description for {'str': 'portable planter (seed)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"This one has a seed in it."
+msgstr ""
+"一种满足您室内种植需求的小型种植盆。\n"
+"这里面有一颗种子。"
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (seedling)"
+msgid_plural "portable planter (seedling)s"
+msgstr[0] "便携种植盆（幼苗）"
+
+#. ~ Description for {'str': 'portable planter (seedling)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"The seed is sprouting."
+msgstr ""
+"一种满足您室内种植需求的小型种植盆。\n"
+"种子正在发芽。"
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (mature)"
+msgid_plural "portable planter (mature)s"
+msgstr[0] "便携种植盆（成熟期）"
+
+#. ~ Description for {'str': 'portable planter (mature)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"Should bear fruit soon."
+msgstr ""
+"一种满足您室内种植需求的小型种植盆。\n"
+"很快就能结果了。"
+
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid "portable planter (harvest)"
+msgid_plural "portable planter (harvest)s"
+msgstr[0] "便携种植盆（可收获）"
+
+#. ~ Description for {'str': 'portable planter (harvest)'}
+#: data/mods/flowerpots_plus/items/planter_s.json
+msgid ""
+"A small sized planter for your indoor growing needs.\n"
+"Fresh produce right at your fingertips."
+msgstr ""
+"一种满足您室内种植需求的小型种植盆。\n"
+"新鲜的农产品触手可及。"
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr "深入林间"
@@ -228644,12 +228919,20 @@ msgid "You try to shout but you have no face!"
 msgstr "你想要叫喊，但你没有面具！"
 
 #: src/character.cpp
-msgid "a piercing howl!"
+msgid "You let out an ear-piercing howl!"
+msgstr "你发出一声刺耳的嚎叫！"
+
+#: src/character.cpp src/monattack.cpp
+msgid "an ear-piercing howl!"
 msgstr "一声刺耳的嚎叫！"
 
 #: src/character.cpp
-msgid "yourself let out a piercing howl!"
-msgstr "自己发出刺耳的嚎叫！"
+msgid "yourself let out an ear-piercing howl!"
+msgstr "你自己发出一声刺耳的嚎叫！"
+
+#: src/character.cpp
+msgid "You scream loudly!"
+msgstr "你大声尖叫！"
 
 #: src/character.cpp
 msgid "a loud scream!"
@@ -228658,6 +228941,10 @@ msgstr "一声尖叫！"
 #: src/character.cpp
 msgid "yourself scream loudly!"
 msgstr "自己大声尖叫！"
+
+#: src/character.cpp
+msgid "You yell loudly!"
+msgstr "你大声叫喊！"
 
 #: src/character.cpp
 msgid "a loud shout!"
@@ -239658,7 +239945,7 @@ msgstr "%s 碎成了孢子！"
 msgid "Use which seed?"
 msgstr "播种哪个种子？"
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You have no seeds to plant."
 msgstr "你没有种子来播种。"
 
@@ -239666,7 +239953,7 @@ msgstr "你没有种子来播种。"
 msgid "Something's lying there…"
 msgstr "那里有一些东西……"
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You saved your seeds for later."
 msgstr "你把种子收起以备将来。"
 
@@ -248541,6 +248828,74 @@ msgid ""
 "nearby."
 msgstr "你使用%s收集了一些样本，以此来估测附近可能存在的矿藏。"
 
+#: src/iuse_actor.cpp
+msgid "You need to wait for it to grow."
+msgstr "你需要等待它生长。"
+
+#: src/iuse_actor.cpp
+msgid "You don't have enough fertilizer."
+msgstr "你的肥料不足。"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Growing</bold>: %s"
+msgstr "<bold>正在生长</bold>： %s"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Stage</bold>: %s"
+msgstr "<bold>阶段</bold>： %s"
+
+#: src/iuse_actor.cpp
+msgid "mature"
+msgstr "成熟期"
+
+#: src/iuse_actor.cpp
+msgid "harvest"
+msgstr "可收获"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Progress</bold>: %d%%"
+msgstr "<bold>进度</bold>： %d%%"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Harvestable in</bold>: %s"
+msgstr "<bold>收获倒计时</bold>： %s"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Seeds</bold>: %d/%d"
+msgstr "<bold>种子</bold>： %d/%d"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Fertilizer</bold>: %d/%d"
+msgstr "<bold>肥料</bold>： %d/%d"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Growth</bold>: %d%%"
+msgstr "<bold>生长</bold>： %d%%"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "<bold>Yield</bold>: %d%%"
+msgstr "<bold>产量</bold>： %d%%"
+
+#: src/iuse_actor.cpp
+msgid "Which planter?"
+msgstr "哪个种植盆？"
+
+#: src/iuse_actor.cpp
+msgid "Transplant what?"
+msgstr "移植什么？"
+
+#: src/iuse_actor.cpp
+msgid "There is nothing that can be collected nearby."
+msgstr "附近没有任何可以采集的东西。"
+
 #: src/iuse_actor.h
 msgid "Carve"
 msgstr "雕刻"
@@ -253654,10 +254009,6 @@ msgid "a piercing wail!"
 msgstr "一声刺耳的哀嚎！"
 
 #: src/monattack.cpp
-msgid "an ear-piercing howl!"
-msgstr "一声刺耳的嚎叫！"
-
-#: src/monattack.cpp
 msgid "a sibilant rattling sound!"
 msgstr "一阵咝咝嚯嚯的声音！"
 
@@ -258454,6 +258805,14 @@ msgid "Talk to…"
 msgstr "与人交谈……"
 
 #: src/npctalk.cpp
+msgid "Howl"
+msgstr "嚎叫"
+
+#: src/npctalk.cpp
+msgid "Scream"
+msgstr "尖叫"
+
+#: src/npctalk.cpp
 msgid "Yell"
 msgstr "叫喊"
 
@@ -258552,10 +258911,6 @@ msgid "Clear"
 msgstr "晴朗"
 
 #: src/npctalk.cpp
-msgid "loudly."
-msgstr "大叫。"
-
-#: src/npctalk.cpp
 msgid "Enter a sentence to yell"
 msgstr "输入要喊的句子"
 
@@ -258652,16 +259007,6 @@ msgstr "我们有危险。保持警惕，跟紧我，不要走远，不要乱开
 #: src/npctalk.cpp
 msgid "As you were."
 msgstr "你们可以回到之前的状态了。"
-
-#: src/npctalk.cpp
-#, c-format
-msgid "You yell %s"
-msgstr "你大喊%s"
-
-#: src/npctalk.cpp
-#, c-format
-msgid "%s yelling %s"
-msgstr "%s 大喊： %s"
 
 #: src/npctalk.cpp
 #, c-format
