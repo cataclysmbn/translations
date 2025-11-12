@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-11-10 01:38+0000\n"
+"POT-Creation-Date: 2025-11-12 01:50+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -52118,6 +52118,18 @@ msgstr[0] "鲨鱼毛绒娃娃"
 #: data/json/items/generic.json
 msgid "A slightly large shark plushie, perfect for cuddles."
 msgstr "一个稍大一点的鲨鱼毛绒娃娃，非常适合拥抱。"
+
+#: data/json/items/generic.json
+msgid "locks and keys set"
+msgid_plural "locks and keys sets"
+msgstr[0] "锁具套装"
+
+#. ~ Description for {'str': 'locks and keys set'}
+#: data/json/items/generic.json
+msgid ""
+"A set of locks and keys designed to be installed on something you want to "
+"keep prying hands away."
+msgstr "一套锁具，可安装在您想锁好的物品上，防止他人擅自打开。"
 
 #: data/json/items/handloaded_bullets.json
 msgid "blunderbuss slug"
@@ -114174,16 +114186,6 @@ msgid ""
 "and used to support another vehicle for transport.  It must be mounted on a "
 "vehicle to be used."
 msgstr "一系列鋼管支架，滑輪和皮帶，安裝在車輛的邊緣，用於支撐並運輸另一台交通工具。它必須安裝在要作為運輸者的車輛上。"
-
-#: data/json/items/vehicle/cargo.json
-msgid "cargo lock set"
-msgid_plural "cargo lock sets"
-msgstr[0] "貨架上鎖工具"
-
-#. ~ Description for {'str': 'cargo lock set'}
-#: data/json/items/vehicle/cargo.json
-msgid "A set of locks designed to be installed on a vehicle."
-msgstr "一套設計用作安裝在車輛上的鎖。"
 
 #: data/json/items/vehicle/cargo.json data/json/vehicleparts/cargo.json
 msgid "large folding wire basket"
@@ -180947,6 +180949,17 @@ msgid ""
 "people from accessing the cargo and taking your stuff."
 msgstr "一套锁具。能够被安装在合适的货舱部件上，可以避免其他人使用货舱并拿走你的物品。"
 
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "door lock"
+msgstr "门锁"
+
+#. ~ Description for {'str': 'door lock'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"A set of locks.  Attached to a suitable openable part, it will prevent other"
+" people from opening it."
+msgstr "一套锁具。将其安装在合适的可开启部件上，就能防止他人打开。"
+
 #. ~ Description for {'str': 'turret mount'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
@@ -222074,6 +222087,10 @@ msgid "Toggle reactor"
 msgstr "開關反應爐"
 
 #: data/raw/keybindings/vehicle.json
+msgid "Toggle door locks"
+msgstr "切换门锁状态"
+
+#: data/raw/keybindings/vehicle.json
 msgid "Toggle reaper"
 msgstr "開關收割機"
 
@@ -238436,11 +238453,6 @@ msgstr "附近没有可以开启的地形。"
 
 #: src/handle_action.cpp
 #, c-format
-msgid "That %s can only opened from the inside."
-msgstr "%s 只能從內側被打開。"
-
-#: src/handle_action.cpp
-#, c-format
 msgid "That %s is already open."
 msgstr "%s 已經打開了。"
 
@@ -251016,6 +251028,21 @@ msgstr "嗖～"
 
 #: src/map.cpp
 #, c-format
+msgid "The %1$s's %2$s can only be opened from outside."
+msgstr "%1$s的%2$s只能从外面打开。"
+
+#: src/map.cpp
+#, c-format
+msgid "The %1$s's %2$s can only be opened from inside."
+msgstr "%1$s的%2$s只能从里面打开。"
+
+#: src/map.cpp
+#, c-format
+msgid "The %1$s's %2$s is locked."
+msgstr "%1$s的%2$s已上锁。"
+
+#: src/map.cpp
+#, c-format
 msgid "The %s is taken down."
 msgstr "%s已被拆下。"
 
@@ -261726,6 +261753,14 @@ msgid "A scaling factor that determines how damaged vehicles are."
 msgstr "设置车辆损坏程度的系数。"
 
 #: src/options.cpp
+msgid "Vehicle door locks"
+msgstr "载具门锁"
+
+#: src/options.cpp
+msgid "Determines if new vehicles can spawn with locked doors."
+msgstr "决定新生成的载具是否自带已上锁的车门。"
+
+#: src/options.cpp
 msgid "Spawn rate scaling factor"
 msgstr "怪物產生比率"
 
@@ -267576,6 +267611,21 @@ msgstr "來自於 %s 傳來震耳的爆炸聲！"
 
 #: src/vehicle.cpp
 #, c-format
+msgid "Remove the %1$s %2$s first."
+msgstr "请先移除%1$s%2$s。"
+
+#: src/vehicle.cpp
+#, c-format
+msgid "Open the attached %s first."
+msgstr "请先打开所连接的%s。"
+
+#: src/vehicle.cpp
+#, c-format
+msgid "Close the attached %s first."
+msgstr "请先关闭所连接的%s。"
+
+#: src/vehicle.cpp
+#, c-format
 msgid "Remove the attached %s first."
 msgstr "要先移除安装在它上面的 %s。"
 
@@ -268101,6 +268151,11 @@ msgstr "反應爐"
 
 #: src/vehicle_use.cpp
 msgctxt "electronics menu option"
+msgid "door locks"
+msgstr "门锁"
+
+#: src/vehicle_use.cpp
+msgctxt "electronics menu option"
 msgid "headlights"
 msgstr "車頭燈"
 
@@ -268617,6 +268672,10 @@ msgstr "從架上卸下 %s"
 #: src/vehicle_use.cpp
 msgid "Examine vehicle"
 msgstr "檢視車輛"
+
+#: src/vehicle_use.cpp
+msgid "Pick the lock"
+msgstr "撬锁"
 
 #: src/vehicle_use.cpp
 msgid "Pull handbrake"

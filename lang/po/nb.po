@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-11-10 01:38+0000\n"
+"POT-Creation-Date: 2025-11-12 01:50+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2024\n"
 "Language-Team: Norwegian Bokmål (https://app.transifex.com/bn-team/teams/113585/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -52211,6 +52211,19 @@ msgstr[1] ""
 #. ~ Description for {'str': 'shark plush'}
 #: data/json/items/generic.json
 msgid "A slightly large shark plushie, perfect for cuddles."
+msgstr ""
+
+#: data/json/items/generic.json
+msgid "locks and keys set"
+msgid_plural "locks and keys sets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'locks and keys set'}
+#: data/json/items/generic.json
+msgid ""
+"A set of locks and keys designed to be installed on something you want to "
+"keep prying hands away."
 msgstr ""
 
 #: data/json/items/handloaded_bullets.json
@@ -118434,17 +118447,6 @@ msgid ""
 "vehicle to be used."
 msgstr ""
 
-#: data/json/items/vehicle/cargo.json
-msgid "cargo lock set"
-msgid_plural "cargo lock sets"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'cargo lock set'}
-#: data/json/items/vehicle/cargo.json
-msgid "A set of locks designed to be installed on a vehicle."
-msgstr ""
-
 #: data/json/items/vehicle/cargo.json data/json/vehicleparts/cargo.json
 msgid "large folding wire basket"
 msgid_plural "large folding wire baskets"
@@ -184451,6 +184453,17 @@ msgid ""
 "people from accessing the cargo and taking your stuff."
 msgstr ""
 
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "door lock"
+msgstr ""
+
+#. ~ Description for {'str': 'door lock'}
+#: data/json/vehicleparts/vehicle_parts.json
+msgid ""
+"A set of locks.  Attached to a suitable openable part, it will prevent other"
+" people from opening it."
+msgstr ""
+
 #. ~ Description for {'str': 'turret mount'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
@@ -226776,6 +226789,10 @@ msgid "Toggle reactor"
 msgstr ""
 
 #: data/raw/keybindings/vehicle.json
+msgid "Toggle door locks"
+msgstr ""
+
+#: data/raw/keybindings/vehicle.json
 msgid "Toggle reaper"
 msgstr ""
 
@@ -242991,11 +243008,6 @@ msgstr ""
 
 #: src/handle_action.cpp
 #, c-format
-msgid "That %s can only opened from the inside."
-msgstr ""
-
-#: src/handle_action.cpp
-#, c-format
 msgid "That %s is already open."
 msgstr ""
 
@@ -255536,6 +255548,21 @@ msgstr ""
 
 #: src/map.cpp
 #, c-format
+msgid "The %1$s's %2$s can only be opened from outside."
+msgstr ""
+
+#: src/map.cpp
+#, c-format
+msgid "The %1$s's %2$s can only be opened from inside."
+msgstr ""
+
+#: src/map.cpp
+#, c-format
+msgid "The %1$s's %2$s is locked."
+msgstr ""
+
+#: src/map.cpp
+#, c-format
 msgid "The %s is taken down."
 msgstr ""
 
@@ -266159,6 +266186,14 @@ msgid "A scaling factor that determines how damaged vehicles are."
 msgstr ""
 
 #: src/options.cpp
+msgid "Vehicle door locks"
+msgstr ""
+
+#: src/options.cpp
+msgid "Determines if new vehicles can spawn with locked doors."
+msgstr ""
+
+#: src/options.cpp
 msgid "Spawn rate scaling factor"
 msgstr ""
 
@@ -271976,6 +272011,21 @@ msgstr ""
 
 #: src/vehicle.cpp
 #, c-format
+msgid "Remove the %1$s %2$s first."
+msgstr ""
+
+#: src/vehicle.cpp
+#, c-format
+msgid "Open the attached %s first."
+msgstr ""
+
+#: src/vehicle.cpp
+#, c-format
+msgid "Close the attached %s first."
+msgstr ""
+
+#: src/vehicle.cpp
+#, c-format
 msgid "Remove the attached %s first."
 msgstr ""
 
@@ -272501,6 +272551,11 @@ msgstr ""
 
 #: src/vehicle_use.cpp
 msgctxt "electronics menu option"
+msgid "door locks"
+msgstr ""
+
+#: src/vehicle_use.cpp
+msgctxt "electronics menu option"
 msgid "headlights"
 msgstr ""
 
@@ -273016,6 +273071,10 @@ msgstr ""
 
 #: src/vehicle_use.cpp
 msgid "Examine vehicle"
+msgstr ""
+
+#: src/vehicle_use.cpp
+msgid "Pick the lock"
 msgstr ""
 
 #: src/vehicle_use.cpp
