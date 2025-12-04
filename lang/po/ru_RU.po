@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-12-03 01:35+0000\n"
+"POT-Creation-Date: 2025-12-04 01:37+0000\n"
 "Last-Translator: Vorpal Void <vorpal.void@gmail.com>, 2025\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -170363,7 +170363,9 @@ msgstr "Я убью тебя если ты не сделаешь этого."
 #: data/json/npcs/TALK_COMMON_OTHER.json
 #: data/json/npcs/TALK_TRUE_FOODPERSON.json
 #: data/json/npcs/cabin_chemist/cabin_chemist.json
-#: data/json/npcs/scrap_trader/scrap_trader.json src/iuse.cpp
+#: data/json/npcs/scrap_trader/scrap_trader.json
+#: data/mods/smart_house_remotes/main.lua data/mods/teleportation_mod/main.lua
+#: src/iuse.cpp
 msgid "Nevermind."
 msgstr "Забудь."
 
@@ -270370,6 +270372,288 @@ msgstr ""
 msgid "Scan/Load a book"
 msgstr "Сканировать/Загрузить книгу"
 
+#: data/mods/ebook_lua/main.lua
+msgid "Your e-copy is degrading!"
+msgstr "Цифрокопия книги распадается!"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "%d books are found. Do you want to scan them all?\n"
+msgstr "Найдено книг: %d. Хотите отсканировать их все?\n"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"\n"
+"...And more! (%d)"
+msgstr ""
+"\n"
+"...и ещё! (%d)"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Scan all"
+msgstr "Сканировать всё"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Scan all the books until charges going off."
+msgstr "Сканировать все книги до тех пор, пока хватает заряда."
+
+#: data/mods/ebook_lua/main.lua data/raw/keybindings/keybindings.json
+#: src/character.cpp src/inventory_ui.cpp src/monexamine.cpp
+#: src/npctalk_funcs.cpp src/pickup.cpp
+msgid "Cancel"
+msgstr "Отмена"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Discard the book list and go back."
+msgstr "Сбросить список книг и вернуться назад."
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "You scanned %d book(s)."
+msgstr "Отсканировано книг: %d."
+
+#: data/mods/ebook_lua/main.lua
+msgid ""
+"WARNING: Not enough battery to scan all books.\n"
+"Proceed anyway?"
+msgstr ""
+"ВНИМАНИЕ: недостаточный уровень заряда для сканирования всех книг.\n"
+"Всё равно продолжить?"
+
+#: data/mods/ebook_lua/main.lua
+msgid "You have no book to be scanned."
+msgstr "У вас нет книг для сканирования."
+
+#: data/mods/ebook_lua/main.lua
+msgid "Choose the book you want to get."
+msgstr "Выберите книгу, которую хотите получить."
+
+#: data/mods/ebook_lua/main.lua
+msgid "How long time do you need?(Digits only)"
+msgstr "На какой срок? (только цифры)"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "Input the minute( up to %d ): "
+msgstr "Введите количество минут ( вплоть до %d ):"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "[e-copy] %s"
+msgstr "[цифрокопия] %s"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"You printed a physical copy of %s.\n"
+"It’s virtually weightless and will degrade naturally in about \n"
+"[%d minutes.]\n"
+"You can return it to the device to recover some energy."
+msgstr ""
+"Вы распечатали физическую копию книги %s.\n"
+"Она ничего не весит и распадётся на атомы сама по себе примерно через [%d минут.]\n"
+"Вы можете вернуть книгу в устройство для восстановления части энергии."
+
+#: data/mods/ebook_lua/main.lua
+msgid ""
+"Input value is over than available charges.\n"
+"Please check your input."
+msgstr ""
+"Введённое значение превышает уровень доступного заряда.\n"
+"Проверьте вводимое значение."
+
+#: data/mods/ebook_lua/main.lua
+msgid "There is no book to return."
+msgstr "Нет книги для возврата."
+
+#: data/mods/ebook_lua/main.lua
+msgid "There is no book in the device."
+msgstr "В устройстве нет книг."
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"UID:%s\n"
+"\n"
+"This device has book data as below:\n"
+"%s"
+msgstr ""
+"ID пользователя:%s\n"
+"\n"
+"Данные книг на этом устройстве:\n"
+"%s"
+
+#: data/mods/ebook_lua/main.lua
+msgid "You don't have any empty memory card."
+msgstr "У вас нет пустой карты памяти."
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"UID: %s\n"
+"\n"
+"Select a memory card."
+msgstr ""
+"ID пользователя: %s\n"
+"\n"
+"Выберите карту памяти."
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"UID: %s\n"
+"\n"
+"Memory card data I/O online.\n"
+"Current card: %s"
+msgstr ""
+"ID пользователя: %s\n"
+"\n"
+"Операции ввода-вывода карты памяти активны.\n"
+"Текущая карта: %s"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "Do you want to delete all of book data of %s? It's irretrievable!"
+msgstr ""
+"Вы хотите удалить все данные о книгах на устройстве (%s)? Это необратимая "
+"операция!"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Are you sure to delete book data in the card?"
+msgstr "Вы хотите удалить все данные о книгах с карты памяти?"
+
+#: data/mods/ebook_lua/main.lua
+msgid "The memory card is reset successfully."
+msgstr "Сброс карты памяти прошёл успешно."
+
+#: data/mods/ebook_lua/main.lua
+msgid "It has no book data."
+msgstr "Здесь нет данных о книгах."
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"%d books uploaded on %s.\n"
+"Naming the card is recommended."
+msgstr ""
+"%d книг загружено на: %s.\n"
+"Рекомендуется дать название карте памяти."
+
+#: data/mods/ebook_lua/main.lua
+msgid "e-book saved SD-Memory Card"
+msgstr "SD-карта с электронными книгами"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "%s has the same books already."
+msgstr "%s уже хранит в себе такие же книги."
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "%d books downloaded from %s."
+msgstr "%d книг скачано с: %s."
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "%s has nothing new books."
+msgstr "%s не содержит новых книг."
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"Book data of %s:\n"
+"%s"
+msgstr ""
+"%s хранит следующие данные о книгах:\n"
+"%s"
+
+#: data/mods/ebook_lua/main.lua
+msgid ""
+"ERROR: Network Connection Failed\n"
+"\n"
+"Connection denied by Protocol Zero. Server access is temporarily suspended.\n"
+"Please wait for further updates."
+msgstr ""
+"ОШИБКА: Не удалось установить соединение\n"
+"\n"
+"Соединение прервано Нулевым Протоколом. Доступ к серверу временно приостановлен.\n"
+"Ожидайте дальнейших объявлений."
+
+#: data/mods/ebook_lua/main.lua
+msgid "Are you sure to delete book data in the device?"
+msgstr "Вы уверены, что хотите удалить данные о книгах с устройства?"
+
+#: data/mods/ebook_lua/main.lua
+msgid "The device is reset successfully."
+msgstr "Сброс устройства прошёл успешно."
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"UID: %s\n"
+"\n"
+"Network: Offline (Cloud unreachable)\n"
+"\n"
+"Last Sync: %d days ago"
+msgstr ""
+"ID пользователя: %s\n"
+"\n"
+"Сеть: отключена (облачный сервис недоступен)\n"
+"\n"
+"Последняя синхронизация: %d дней назад"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"Welcome to e-book library!\n"
+"This device currently holds %d book(s).\n"
+"Network sync unavilable."
+msgstr ""
+"Добро пожаловать в цифровую библиотеку!\n"
+"Количество книг на данном устройстве: %d.\n"
+"Сетевая синхронизация недоступна."
+
+#: data/mods/ebook_lua/main.lua
+msgid "Scan book(s)"
+msgstr "Сканировать книги"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Scans all the book you have. It will progress instantly."
+msgstr ""
+"Отсканировать все книги в вашем распоряжении. Это мгновенная операция."
+
+#: data/mods/ebook_lua/main.lua
+msgid "Load book(s)"
+msgstr "Скачать книги"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Temporarily prints a physical copy from the device’s library."
+msgstr "Временно печатает физическую копию из библиотеки на устройстве."
+
+#: data/mods/ebook_lua/main.lua
+msgid "Return book(s)"
+msgstr "Вернуть книги"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Absorbs the copy back into the device and restores partial power."
+msgstr ""
+"Устройство поглотит распечатанную копию книги и частично восстановит запас "
+"энергии."
+
+#: data/mods/ebook_lua/main.lua
+msgid "Info.."
+msgstr "Информация…"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Shows UID, list of data, explanation for customers!"
+msgstr ""
+"Показывает ID пользователя, список данных и пользовательские инструкции!"
+
+#: data/mods/ebook_lua/main.lua
+msgid "No book in device!"
+msgstr "На устройстве нет книг!"
+
 #: data/mods/ebook_lua/modinfo.json
 msgid "Tablet e-book"
 msgstr "Электронная книга"
@@ -273569,6 +273853,10 @@ msgstr ""
 msgid "Place and activate the resurrection anchor."
 msgstr "Установить и активировать воскрешающий якорь."
 
+#: data/mods/resurrection_mod/main.lua data/mods/teleportation_mod/main.lua
+msgid "No anchors found on this tile."
+msgstr "В этом месте нет якорей."
+
 #: data/mods/resurrection_mod/modinfo.json
 msgid "Resurrection"
 msgstr "Воскрешение"
@@ -274110,6 +274398,42 @@ msgstr ""
 msgid "Control doors and shutters"
 msgstr "Управлять дверями и жалюзи"
 
+#: data/mods/smart_house_remotes/main.lua
+msgid "Open curtains"
+msgstr "Открыть занавески"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "Close curtains"
+msgstr "Задёрнуть занавески"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "Raise garage door"
+msgstr "Поднять гаражные ворота"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "Lower garage door"
+msgstr "Опустить гаражные ворота"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "Low Current At Endpoint"
+msgstr "Низкое напряжение на точке подключения"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "No Signal"
+msgstr "Нет сигнала"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "No Endpoints Available"
+msgstr "Нет доступных точек подключения"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "The remote beeps quietly."
+msgstr "Пульт издаёт тихий писк."
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "Select endpoint"
+msgstr "Выберите точку подключения"
+
 #: data/mods/smart_house_remotes/modinfo.json
 msgid "Smart House Remotes"
 msgstr "Пульты управления умными домами"
@@ -274236,6 +274560,119 @@ msgstr "Установить и активировать телепортаци�
 #: data/mods/teleportation_mod/iuse.json
 msgid "Place and activate the teleporter station."
 msgstr "Установить и активировать телепортационную станцию."
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Power too low for charging."
+msgstr "Недостаточно энергии для зарядки."
+
+#: data/mods/teleportation_mod/main.lua
+msgid "How much power do you want to charge the station with?"
+msgstr "Сколько энергии вы хотите передать на зарядку станции?"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "The station was charged."
+msgstr "Станция была заряжена."
+
+#: data/mods/teleportation_mod/main.lua
+msgid "No grid or no power in grid"
+msgstr "Нет электросети, или размещение вне электросети"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Charge which station?"
+msgstr "Какую станцию зарядить?"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "No stations found on your tile."
+msgstr "На вашем местоположении нет станций."
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Use which station?"
+msgstr "Какую станцию использовать?"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Select teleportation target"
+msgstr "Выбрать цель для телепортации"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Change which variable?"
+msgstr "Какую переменную изменить?"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Passive charge per hour"
+msgstr "Пассивный заряд в час"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "kJ to charge ratio"
+msgstr "Соотношение кДж к заряду"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Set passive charge to:"
+msgstr "Установить пассивный заряд на:"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Default: "
+msgstr "Стандарт: "
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Half: "
+msgstr "Половина: "
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Double: "
+msgstr "Удвоить: "
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Set kJ to charge to:"
+msgstr "Установить соотношение кДж к заряду на:"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Appropriate furniture not found. Something went terribly wrong!"
+msgstr "Подходящая мебель не обнаружена. Что-то пошло ужасно неправильно!"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Remove station or anchor?"
+msgstr "Удалить станцию или якорь?"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Station"
+msgstr "Станция"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Anchor"
+msgstr "Якорь"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "No stations found on this tile."
+msgstr "В этом месте нет станций."
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Do what?"
+msgstr "Что сделать?"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Teleport"
+msgstr "Телепортация"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Charge stations"
+msgstr "Зарядить станции"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Check network status"
+msgstr "Проверить статус сети"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Remove anchors and stations"
+msgstr "Удалить якоря и станции"
+
+#: data/mods/teleportation_mod/main.lua src/action.cpp src/diary_ui.cpp
+#: src/options.cpp
+msgid "Info"
+msgstr "Информация"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Config"
+msgstr "Настройка"
 
 #: data/mods/teleportation_mod/modinfo.json
 msgid "Teleportation"
@@ -276317,12 +276754,6 @@ msgstr "Загрузить"
 msgid "Delete"
 msgstr "Удалить"
 
-#: data/raw/keybindings/keybindings.json src/character.cpp
-#: src/inventory_ui.cpp src/monexamine.cpp src/npctalk_funcs.cpp
-#: src/pickup.cpp
-msgid "Cancel"
-msgstr "Отмена"
-
 #: data/raw/keybindings/keybindings.json
 msgid "Quit"
 msgstr "Выйти"
@@ -276845,10 +277276,6 @@ msgstr "Бой"
 #: src/action.cpp
 msgid "Craft"
 msgstr "Изготовление"
-
-#: src/action.cpp src/diary_ui.cpp src/options.cpp
-msgid "Info"
-msgstr "Информация"
 
 #: src/action.cpp
 msgid "Misc"

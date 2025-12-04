@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-12-03 01:35+0000\n"
+"POT-Creation-Date: 2025-12-04 01:37+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -134731,7 +134731,9 @@ msgstr "要是不答应我就杀了你。"
 #: data/json/npcs/TALK_COMMON_OTHER.json
 #: data/json/npcs/TALK_TRUE_FOODPERSON.json
 #: data/json/npcs/cabin_chemist/cabin_chemist.json
-#: data/json/npcs/scrap_trader/scrap_trader.json src/iuse.cpp
+#: data/json/npcs/scrap_trader/scrap_trader.json
+#: data/mods/smart_house_remotes/main.lua data/mods/teleportation_mod/main.lua
+#: src/iuse.cpp
 msgid "Nevermind."
 msgstr "算了。"
 
@@ -217121,6 +217123,278 @@ msgstr "测试性未完工模组，用于展示regional_map_settings的变化"
 msgid "Scan/Load a book"
 msgstr "扫描/加载一本书"
 
+#: data/mods/ebook_lua/main.lua
+msgid "Your e-copy is degrading!"
+msgstr "你的电子副本正在降解！"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "%d books are found. Do you want to scan them all?\n"
+msgstr "发现了 %d 本书。是否全部扫描？\n"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"\n"
+"...And more! (%d)"
+msgstr ""
+"\n"
+"……以及更多！(%d)"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Scan all"
+msgstr "扫描全部"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Scan all the books until charges going off."
+msgstr "扫描所有书籍直到电量耗尽。"
+
+#: data/mods/ebook_lua/main.lua data/raw/keybindings/keybindings.json
+#: src/character.cpp src/inventory_ui.cpp src/monexamine.cpp
+#: src/npctalk_funcs.cpp src/pickup.cpp
+msgid "Cancel"
+msgstr "取消"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Discard the book list and go back."
+msgstr "丢弃书籍列表并返回。"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "You scanned %d book(s)."
+msgstr "你扫描了 %d 本书。"
+
+#: data/mods/ebook_lua/main.lua
+msgid ""
+"WARNING: Not enough battery to scan all books.\n"
+"Proceed anyway?"
+msgstr "警告：电量不足以扫描所有书籍。仍要继续吗？"
+
+#: data/mods/ebook_lua/main.lua
+msgid "You have no book to be scanned."
+msgstr "你没有可供扫描的书籍。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Choose the book you want to get."
+msgstr "选择你想要获取的书籍。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "How long time do you need?(Digits only)"
+msgstr "你需要多长时间？（仅限数字）"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "Input the minute( up to %d ): "
+msgstr "输入分钟数（最多 %d）："
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "[e-copy] %s"
+msgstr "[电子副本] %s"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"You printed a physical copy of %s.\n"
+"It’s virtually weightless and will degrade naturally in about \n"
+"[%d minutes.]\n"
+"You can return it to the device to recover some energy."
+msgstr ""
+"你打印了一本 %s 的实体副本。\n"
+"它几乎没有重量，并将在大约 [%d 分钟] 后自然降解。\n"
+"你可以将其归还给设备以恢复部分能量。"
+
+#: data/mods/ebook_lua/main.lua
+msgid ""
+"Input value is over than available charges.\n"
+"Please check your input."
+msgstr "输入数值超过了可用电量。请检查你的输入。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "There is no book to return."
+msgstr "没有可归还的书籍。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "There is no book in the device."
+msgstr "设备中没有书籍。"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"UID:%s\n"
+"\n"
+"This device has book data as below:\n"
+"%s"
+msgstr ""
+"UID：%s \n"
+"\n"
+"此设备包含以下书籍数据：\n"
+"%s"
+
+#: data/mods/ebook_lua/main.lua
+msgid "You don't have any empty memory card."
+msgstr "你没有任何空的存储卡。"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"UID: %s\n"
+"\n"
+"Select a memory card."
+msgstr ""
+"UID：%s \n"
+"\n"
+"选择一张存储卡。"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"UID: %s\n"
+"\n"
+"Memory card data I/O online.\n"
+"Current card: %s"
+msgstr ""
+"UID：%s \n"
+"\n"
+"存储卡数据读写已上线。\n"
+"当前存储卡：%s"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "Do you want to delete all of book data of %s? It's irretrievable!"
+msgstr "你想要删除 %s 的所有书籍数据吗？此操作无法恢复！"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Are you sure to delete book data in the card?"
+msgstr "你确定要删除存储卡中的书籍数据吗？"
+
+#: data/mods/ebook_lua/main.lua
+msgid "The memory card is reset successfully."
+msgstr "存储卡重置成功。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "It has no book data."
+msgstr "它没有书籍数据。"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"%d books uploaded on %s.\n"
+"Naming the card is recommended."
+msgstr ""
+"已将 %d 本书上传至 %s。\n"
+"建议给存储卡命名。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "e-book saved SD-Memory Card"
+msgstr "存有电子书的SD存储卡"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "%s has the same books already."
+msgstr "%s 已经包含相同的书籍了。"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "%d books downloaded from %s."
+msgstr "从 %s 下载了 %d 本书。"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid "%s has nothing new books."
+msgstr "%s 没有新书。"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"Book data of %s:\n"
+"%s"
+msgstr ""
+"%s 的书籍数据：\n"
+"%s"
+
+#: data/mods/ebook_lua/main.lua
+msgid ""
+"ERROR: Network Connection Failed\n"
+"\n"
+"Connection denied by Protocol Zero. Server access is temporarily suspended.\n"
+"Please wait for further updates."
+msgstr ""
+"错误：网络连接失败。\n"
+"\n"
+"连接被“零号协议”拒绝。服务器访问暂时中止。\n"
+"请等待进一步更新。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Are you sure to delete book data in the device?"
+msgstr "你确定要删除设备中的书籍数据吗？"
+
+#: data/mods/ebook_lua/main.lua
+msgid "The device is reset successfully."
+msgstr "设备重置成功。"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"UID: %s\n"
+"\n"
+"Network: Offline (Cloud unreachable)\n"
+"\n"
+"Last Sync: %d days ago"
+msgstr ""
+"UID：%s \n"
+"\n"
+"网络：离线（无法连接云端） \n"
+"\n"
+"上次同步：%d 天前"
+
+#: data/mods/ebook_lua/main.lua
+#, c-format
+msgid ""
+"Welcome to e-book library!\n"
+"This device currently holds %d book(s).\n"
+"Network sync unavilable."
+msgstr ""
+"欢迎来到电子书图书馆！\n"
+"此设备当前存储了 %d 本书。\n"
+"网络同步不可用。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Scan book(s)"
+msgstr "扫描书籍"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Scans all the book you have. It will progress instantly."
+msgstr "扫描你拥有的所有书籍。这将瞬间完成。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Load book(s)"
+msgstr "加载书籍"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Temporarily prints a physical copy from the device’s library."
+msgstr "从设备书库中临时打印一份实体副本。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Return book(s)"
+msgstr "归还书籍"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Absorbs the copy back into the device and restores partial power."
+msgstr "将副本吸收回设备并恢复部分电量。"
+
+#: data/mods/ebook_lua/main.lua
+msgid "Info.."
+msgstr "信息..."
+
+#: data/mods/ebook_lua/main.lua
+msgid "Shows UID, list of data, explanation for customers!"
+msgstr "显示 UID、数据列表以及用户说明！"
+
+#: data/mods/ebook_lua/main.lua
+msgid "No book in device!"
+msgstr "设备中没有书籍！"
+
 #: data/mods/ebook_lua/modinfo.json
 msgid "Tablet e-book"
 msgstr "平板电子书"
@@ -219695,6 +219969,10 @@ msgstr "一个复活锚点，可以放置并用作复活点。"
 msgid "Place and activate the resurrection anchor."
 msgstr "放置并启动复活锚。"
 
+#: data/mods/resurrection_mod/main.lua data/mods/teleportation_mod/main.lua
+msgid "No anchors found on this tile."
+msgstr "在这个图块上未找到锚点。"
+
 #: data/mods/resurrection_mod/modinfo.json
 msgid "Resurrection"
 msgstr "复活"
@@ -220236,6 +220514,42 @@ msgstr "一个带有 LCD 显示屏的小型遥控器，用于控制车库门和�
 msgid "Control doors and shutters"
 msgstr "控制门和窗帘"
 
+#: data/mods/smart_house_remotes/main.lua
+msgid "Open curtains"
+msgstr "打开窗帘"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "Close curtains"
+msgstr "关闭窗帘"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "Raise garage door"
+msgstr "升起车库门"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "Lower garage door"
+msgstr "放下车库门"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "Low Current At Endpoint"
+msgstr "终端电流过低"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "No Signal"
+msgstr "无信号"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "No Endpoints Available"
+msgstr "无可用终端"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "The remote beeps quietly."
+msgstr "遥控器发出了轻微的哔哔声。"
+
+#: data/mods/smart_house_remotes/main.lua
+msgid "Select endpoint"
+msgstr "选择终端"
+
 #: data/mods/smart_house_remotes/modinfo.json
 msgid "Smart House Remotes"
 msgstr "智能家居遥控器"
@@ -220337,6 +220651,119 @@ msgstr "放置并启动传送锚。"
 #: data/mods/teleportation_mod/iuse.json
 msgid "Place and activate the teleporter station."
 msgstr "放置并启动传送站。"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Power too low for charging."
+msgstr "电量太低，无法充电。"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "How much power do you want to charge the station with?"
+msgstr "您想用多大的电量为电站充电？"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "The station was charged."
+msgstr "站台已经充电完成。"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "No grid or no power in grid"
+msgstr "无电网或电网无电"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Charge which station?"
+msgstr "为哪个站充电？"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "No stations found on your tile."
+msgstr "在您的图块上未找到任何站台。"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Use which station?"
+msgstr "使用哪个站台？"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Select teleportation target"
+msgstr "选择传送目标"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Change which variable?"
+msgstr "更改哪个变量？"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Passive charge per hour"
+msgstr "每小时的被动充电"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "kJ to charge ratio"
+msgstr "充电的KJ比率"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Set passive charge to:"
+msgstr "将被动充电设置为："
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Default: "
+msgstr "默认："
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Half: "
+msgstr "一半："
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Double: "
+msgstr "双倍："
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Set kJ to charge to:"
+msgstr "设置充电的KJ为："
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Appropriate furniture not found. Something went terribly wrong!"
+msgstr "未找到合适的家具。出了些大问题！"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Remove station or anchor?"
+msgstr "移除站台或锚点？"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Station"
+msgstr "站台"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Anchor"
+msgstr "锚点"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "No stations found on this tile."
+msgstr "在这个图块上未找到站台。"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Do what?"
+msgstr "做什么？"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Teleport"
+msgstr "传送"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Charge stations"
+msgstr "充电站"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Check network status"
+msgstr "检查网络状态"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Remove anchors and stations"
+msgstr "移除锚点和基站"
+
+#: data/mods/teleportation_mod/main.lua src/action.cpp src/diary_ui.cpp
+#: src/options.cpp
+msgid "Info"
+msgstr "说明信息"
+
+#: data/mods/teleportation_mod/main.lua
+msgid "Config"
+msgstr "配置"
 
 #: data/mods/teleportation_mod/modinfo.json
 msgid "Teleportation"
@@ -222296,12 +222723,6 @@ msgstr "读取"
 msgid "Delete"
 msgstr "删除"
 
-#: data/raw/keybindings/keybindings.json src/character.cpp
-#: src/inventory_ui.cpp src/monexamine.cpp src/npctalk_funcs.cpp
-#: src/pickup.cpp
-msgid "Cancel"
-msgstr "取消"
-
 #: data/raw/keybindings/keybindings.json
 msgid "Quit"
 msgstr "退出"
@@ -222824,10 +223245,6 @@ msgstr "战斗"
 #: src/action.cpp
 msgid "Craft"
 msgstr "制造"
-
-#: src/action.cpp src/diary_ui.cpp src/options.cpp
-msgid "Info"
-msgstr "说明信息"
 
 #: src/action.cpp
 msgid "Misc"
