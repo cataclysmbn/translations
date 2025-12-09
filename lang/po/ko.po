@@ -36,7 +36,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-12-08 12:06+0000\n"
+"POT-Creation-Date: 2025-12-09 13:13+0000\n"
 "Last-Translator: Choi Dong-uk, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -16402,7 +16402,7 @@ msgid "Alcohol"
 msgstr "알코올"
 
 #: data/json/materials.json data/mods/My_Sweet_Cataclysm/sweet_materials.json
-#: src/material.cpp
+#: data/mods/rpg_system/main.lua src/material.cpp
 msgid "damaged"
 msgstr "손상된"
 
@@ -229036,6 +229036,385 @@ msgstr "부활 닻을 추가합니다."
 msgid "Access the [System]"
 msgstr "[시스템] 접근"
 
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid ""
+"%s initialized. Welcome %s of world IB-73758-R. Use your %s to access the "
+"%s."
+msgstr "%s 가동. %s IB-73758-R 세계에 오신 것을 환영합니다. %s(을)를 이용해 %s에 접속하십시오."
+
+#: data/mods/rpg_system/main.lua
+msgid "[System]"
+msgstr "[시스템]"
+
+#: data/mods/rpg_system/main.lua
+msgid "[User]"
+msgstr "[유저]"
+
+#: data/mods/rpg_system/main.lua data/mods/rpg_system/system_interface.json
+msgid "[System Interface]"
+msgid_plural "[System Interface]s"
+msgstr[0] "[시스템 인터페이스]"
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "You are now %s!"
+msgstr "당신은 지금부터 %s입니다!"
+
+#: data/mods/rpg_system/main.lua
+msgid "Level"
+msgstr "레벨"
+
+#: data/mods/rpg_system/main.lua
+msgid "LEVEL UP!"
+msgstr "레벨업!"
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "You now have %s trait slots."
+msgstr "이제 특성 슬롯 %s개를 갖습니다."
+
+#: data/mods/rpg_system/main.lua
+msgid "New trait slot unlocked!"
+msgid_plural "New trait slots unlocked!"
+msgstr[0] "신규 특성 슬롯 해금!"
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "You have %s unassigned stat point."
+msgid_plural "You have %s unassigned stat points."
+msgstr[0] "아직 배정되지 않은 능력치 점수 %s점이 있습니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "✦ %d stat point earned!"
+msgid_plural "✦ %d stat points earned!"
+msgstr[0] "✦ %d 능력치 점수 획득!"
+
+#: data/mods/rpg_system/main.lua
+msgid "=== [SYSTEM] ==="
+msgstr "=== [시스템] ==="
+
+#: data/mods/rpg_system/main.lua src/newcharacter.cpp
+msgid "Name:"
+msgstr "이름:"
+
+#: data/mods/rpg_system/main.lua
+msgid "Level:"
+msgstr "레벨: "
+
+#. ~ translation should not exceed 4 console cells
+#: data/mods/rpg_system/main.lua src/debug_menu.cpp
+msgid "MAX"
+msgstr "최대"
+
+#: data/mods/rpg_system/main.lua
+msgid "XP"
+msgstr "경험치"
+
+#: data/mods/rpg_system/main.lua
+msgid "Next:"
+msgstr "다음 레벨까지: "
+
+#: data/mods/rpg_system/main.lua
+msgid "Total XP:"
+msgstr "총 경험치: "
+
+#: data/mods/rpg_system/main.lua src/diary.cpp src/newcharacter.cpp
+msgid "Stats:"
+msgstr "능력치:"
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "  ✦ %d unassigned stat point available!"
+msgid_plural "  ✦ %d unassigned stat points available!"
+msgstr[0] " ✦ 미배정된 능력치 점수 %d점 남음!"
+
+#: data/mods/rpg_system/main.lua src/diary.cpp src/memorial_logger.cpp
+#: src/newcharacter.cpp
+msgid "Skills:"
+msgstr "기술:"
+
+#: data/mods/rpg_system/main.lua
+msgid "  No skills trained yet."
+msgstr "  아직 훈련한 스킬이 없습니다."
+
+#: data/mods/rpg_system/main.lua
+msgid "Class:"
+msgstr "클래스: "
+
+#: data/mods/rpg_system/main.lua
+msgid "[None]"
+msgstr "[없음]"
+
+#: data/mods/rpg_system/main.lua
+msgid "Trait Slots:"
+msgstr "특성 슬롯: "
+
+#: data/mods/rpg_system/main.lua
+msgid "  No traits selected yet."
+msgstr "  아직 선택된 특성이 없습니다."
+
+#: data/mods/rpg_system/main.lua
+msgid "Active Traits:"
+msgstr "활성화된 특성: "
+
+#: data/mods/rpg_system/main.lua
+msgid "Manage Class"
+msgstr "클래스 설정"
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "Assign Stats (%d available)"
+msgstr "능력치 점수 분배 (%d점 남음)"
+
+#: data/mods/rpg_system/main.lua
+msgid "Manage Traits"
+msgstr "특성 설정"
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "Assign Traits (%d available)"
+msgstr "특성 분배 (%d개 남음)"
+
+#: data/mods/rpg_system/main.lua
+msgid "Help"
+msgstr "도움말"
+
+#: data/mods/rpg_system/main.lua src/vehicle_use.cpp
+msgid "Close"
+msgstr "닫기"
+
+#: data/mods/rpg_system/main.lua
+msgid "=== Select Class ==="
+msgstr "=== 클래스 선택 ==="
+
+#: data/mods/rpg_system/main.lua
+msgid "✖ Abandon class"
+msgstr "✖ 클래스 포기"
+
+#: data/mods/rpg_system/main.lua
+msgid "Damages your soul for 3 days, with severe penalties."
+msgstr "영혼에 3일간 지속되는 피해 및 심각한 페널티를 입힙니다."
+
+#: data/mods/rpg_system/main.lua
+msgid "WARNING:"
+msgstr "경고: "
+
+#: data/mods/rpg_system/main.lua
+msgid "← Back"
+msgstr "← 돌아가기"
+
+#: data/mods/rpg_system/main.lua
+msgid "Return to main menu"
+msgstr "메인 메뉴로 돌아가기"
+
+#: data/mods/rpg_system/main.lua
+msgid "You don't meet the requirements for this class."
+msgstr "이 클래스를 습득하기 위한 선결조건이 부족합니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "✓ You have chosen your path as %s!"
+msgstr "✓ 이제 당신의 길은 %s입니다!"
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "Your soul is %s for 3 days."
+msgstr "당신의 영혼이 3일 동안 %s 상태가 됩니다."
+
+#: data/mods/rpg_system/main.lua
+msgid "✖ You have abandoned your class!"
+msgstr "✖ 습득했던 클래스를 포기했습니다!"
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "=== Select Trait (%d/%d) ==="
+msgstr "=== 특성 선택 (%d/%d) ==="
+
+#: data/mods/rpg_system/main.lua
+msgid "No slots available"
+msgstr "남은 슬롯 없음"
+
+#: data/mods/rpg_system/main.lua
+msgid "Owned"
+msgstr "획득함"
+
+#: data/mods/rpg_system/main.lua
+msgid "No traits to reset"
+msgstr "초기화할 특성이 없습니다"
+
+#: data/mods/rpg_system/main.lua
+msgid "✖ Reset Traits"
+msgstr "✖ 특성 초기화"
+
+#: data/mods/rpg_system/main.lua
+msgid ""
+"Remove all traits and damage your soul for 3 days, with severe penalties. "
+"You will keep your trait slots."
+msgstr "모든 특성을 제거하는 대가로 영혼에 3일간 지속되는 피해 및 심각한 페널티를 입힙니다. 특성 슬롯은 그대로 남습니다."
+
+#: data/mods/rpg_system/main.lua
+msgid "You don't meet the requirements for this trait."
+msgstr "이 특성을 습득하기 위한 선결조건이 부족합니다."
+
+#: data/mods/rpg_system/main.lua
+msgid "You already have this trait."
+msgstr "이미 이 특성을 갖고 있습니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "✓ You have gained %s!"
+msgstr "✓ %s 특성을 획득했습니다!"
+
+#: data/mods/rpg_system/main.lua
+msgid "✖ You have abandoned your traits!"
+msgstr "✖ 습득했던 특성을 포기했습니다!"
+
+#: data/mods/rpg_system/main.lua
+msgid "You have no stat points to assign."
+msgstr "배정할 능력치 점수가 없습니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "=== Assign Stat Points (%d available) ==="
+msgstr "=== 능력치 점수 배정 (%d점 남음) ==="
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "Strength (Current: %d)"
+msgstr "체력 (현재: %d)"
+
+#: data/mods/rpg_system/main.lua src/character_display.cpp
+msgid ""
+"Strength affects your melee damage, the amount of weight you can carry, your"
+" total HP, your resistance to many diseases, and the effectiveness of "
+"actions which require brute force."
+msgstr ""
+"체력은 근접 공격력에 영향을 끼치고, 한계 하중과 최대 HP를 결정하며, 많은 질병에 대한 저항력을 갖춰주고, 육체적인 힘이 필요한 "
+"행동의 효과에 영향을 끼칩니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "Dexterity (Current: %d)"
+msgstr "민첩성 (현재: %d)"
+
+#: data/mods/rpg_system/main.lua src/character_display.cpp
+msgid ""
+"Dexterity affects your chance to hit in melee combat, helps you steady your "
+"gun for ranged combat, and enhances many actions that require finesse."
+msgstr ""
+"민첩성은 근접 공격 명중률에 영향을 끼치고, 안정적으로 화기를 다루는 데 도움을 주며, 정밀함을 필요로 하는 많은 행동의 성공률을 "
+"높여줍니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "Intelligence (Current: %d)"
+msgstr "지능 (현재: %d)"
+
+#: data/mods/rpg_system/main.lua src/character_display.cpp
+msgid ""
+"Intelligence is less important in most situations, but it is vital for more "
+"complex tasks like electronics crafting.  It also affects how much skill you"
+" can pick up from reading a book."
+msgstr ""
+"지능은 대부분의 상황에서 중요성이 떨어지는 능력치이지만, 전자제품 제작처럼 복잡한 작업에는 필수적입니다. 또한, 독서로 얻을 수 있는 "
+"기술 숙련량에도 영향을 미칩니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "Perception (Current: %d)"
+msgstr "지각력 (현재: %d)"
+
+#: data/mods/rpg_system/main.lua src/character_display.cpp
+msgid ""
+"Perception is the most important stat for ranged combat.  It's also used for"
+" detecting traps and other things of interest."
+msgstr "지각력은 원거리 전투에서 가장 중요한 능력치입니다. 또한, 함정이나 그 밖의 다른 것들을 발견하는 데에도 영향을 미칩니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "✓ +1 %s assigned!"
+msgstr "✓ %s에 +1 만큼 배정되었습니다!"
+
+#: data/mods/rpg_system/main.lua
+msgid "=== [System] Information ==="
+msgstr "=== [시스템] 정보 ==="
+
+#: data/mods/rpg_system/main.lua
+msgid "About the System"
+msgstr "시스템에 대해"
+
+#: data/mods/rpg_system/main.lua
+msgid "[System] Query: Basic information"
+msgstr "[시스템] 쿼리: 기본 정보"
+
+#: data/mods/rpg_system/main.lua
+msgid "Adjust Level Scaling"
+msgstr "레벨 스케일링 조정"
+
+#: data/mods/rpg_system/main.lua
+msgid "Fine-tune power scaling for balance"
+msgstr "밸런스를 위한 파워 스케일링 세부 조정"
+
+#: data/mods/rpg_system/main.lua
+msgid "=== [System] Database Entry ==="
+msgstr "=== [시스템] 데이터베이스 엔트리 ==="
+
+#: data/mods/rpg_system/main.lua
+msgid "=== Adjust Level Scaling ==="
+msgstr "=== 레벨 스케일링 조정 ==="
+
+#: data/mods/rpg_system/main.lua
+msgid "Current setting:"
+msgstr "현재 설정: "
+
+#: data/mods/rpg_system/main.lua
+msgid ""
+"Affects class bonuses and periodic effects. Things that don't scale with "
+"level are unaffected."
+msgstr "클래스 보너스 및 주기적 효과에 영향을 끼칩니다. 레벨에 의해 변동하지 않는 효과는 영향받지 않습니다."
+
+#: data/mods/rpg_system/main.lua
+msgid "Does not affect assigned stats."
+msgstr "배정된 능력치 점수에 영향을 주지 않습니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "0% (Disable scaling)"
+msgstr "0% (스케일링 비활성화)"
+
+#: data/mods/rpg_system/main.lua
+msgid "Disables all level-based class bonuses and periodic effects."
+msgstr "레벨 기반 클래스 보너스 및 주기적 효과를 비활성화합니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "50% (Half power)"
+msgstr "50% (절반)"
+
+#: data/mods/rpg_system/main.lua
+msgid "Half effectiveness for balanced gameplay."
+msgstr "밸런스를 위해 효과를 절반으로 제한합니다."
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "100% (Full power)"
+msgstr "100% (최대)"
+
+#: data/mods/rpg_system/main.lua
+msgid "Default intended [System] experience."
+msgstr "[시스템] 이용에 있어 기본값으로 의도된 값입니다."
+
+#: data/mods/rpg_system/main.lua
+msgid "Return to help menu"
+msgstr "도움말 메뉴로 돌아가기"
+
+#: data/mods/rpg_system/main.lua
+#, c-format
+msgid "Level scaling set to %s"
+msgstr "레벨 스케일링을 %s (으)로 설정했습니다."
+
 #: data/mods/rpg_system/modinfo.json
 msgid "RPG System"
 msgstr "RPG 시스템"
@@ -229048,11 +229427,6 @@ msgid ""
 msgstr ""
 "[클래스], [특성], [레벨]과 같은 RPG 시스템을 추가합니다. 괴물을 처치하여 경험치를 얻고, 레벨업하고, 클래스를 선택하여 강력한"
 " 특성을 얻을 수 있습니다."
-
-#: data/mods/rpg_system/system_interface.json
-msgid "[System Interface]"
-msgid_plural "[System Interface]s"
-msgstr[0] "[시스템 인터페이스]"
 
 #. ~ Description for {'str': '[System Interface]'}
 #: data/mods/rpg_system/system_interface.json
@@ -239573,15 +239947,6 @@ msgid "Age:"
 msgstr "나이:"
 
 #: src/character_display.cpp
-msgid ""
-"Strength affects your melee damage, the amount of weight you can carry, your"
-" total HP, your resistance to many diseases, and the effectiveness of "
-"actions which require brute force."
-msgstr ""
-"체력은 근접 공격력에 영향을 끼치고, 한계 하중과 최대 HP를 결정하며, 많은 질병에 대한 저항력을 갖춰주고, 육체적인 힘이 필요한 "
-"행동의 효과에 영향을 끼칩니다."
-
-#: src/character_display.cpp
 #, c-format
 msgid "Base HP: <color_white>%d</color>"
 msgstr "기본 HP: <color_white>%d</color>"
@@ -239595,14 +239960,6 @@ msgstr "들 수 있는 무게 한도 (%s): <color_white>%.1f</color>"
 #, c-format
 msgid "Melee damage: <color_white>%.1f</color>"
 msgstr "근접 피해: <color_white>%.1f</color>"
-
-#: src/character_display.cpp
-msgid ""
-"Dexterity affects your chance to hit in melee combat, helps you steady your "
-"gun for ranged combat, and enhances many actions that require finesse."
-msgstr ""
-"민첩성은 근접 공격 명중률에 영향을 끼치고, 안정적으로 화기를 다루는 데 도움을 주며, 정밀함을 필요로 하는 많은 행동의 성공률을 "
-"높여줍니다."
 
 #: src/character_display.cpp
 #, c-format
@@ -239620,15 +239977,6 @@ msgid "Throwing penalty per target's dodge: <color_white>%+d</color>"
 msgstr "목표의 회피 기술에 비례하는 투척 페널티 : <color_white>%+d</color>"
 
 #: src/character_display.cpp
-msgid ""
-"Intelligence is less important in most situations, but it is vital for more "
-"complex tasks like electronics crafting.  It also affects how much skill you"
-" can pick up from reading a book."
-msgstr ""
-"지능은 대부분의 상황에서 중요성이 떨어지는 능력치이지만, 전자제품 제작처럼 복잡한 작업에는 필수적입니다. 또한, 독서로 얻을 수 있는 "
-"기술 숙련량에도 영향을 미칩니다."
-
-#: src/character_display.cpp
 #, c-format
 msgid "Skill rust: <color_white>%d%%</color>"
 msgstr "기술 망각:<color_white>%d%%</color>"
@@ -239642,12 +239990,6 @@ msgstr "독서 시간: <color_white>%d%%</color>"
 #, c-format
 msgid "Crafting bonus: <color_white>+%d%%</color>"
 msgstr "제작시간 보너스: <color_white>+%d%%</color>"
-
-#: src/character_display.cpp
-msgid ""
-"Perception is the most important stat for ranged combat.  It's also used for"
-" detecting traps and other things of interest."
-msgstr "지각력은 원거리 전투에서 가장 중요한 능력치입니다. 또한, 함정이나 그 밖의 다른 것들을 발견하는 데에도 영향을 미칩니다."
 
 #: src/character_display.cpp
 #, c-format
@@ -243481,11 +243823,6 @@ msgstr "주문"
 msgid "LVL"
 msgstr "레벨"
 
-#. ~ translation should not exceed 4 console cells
-#: src/debug_menu.cpp
-msgid "MAX"
-msgstr "최대"
-
 #: src/debug_menu.cpp
 msgid "Debug level spell:"
 msgstr "디버그 주문 레벨:"
@@ -244043,10 +244380,6 @@ msgstr "죽인 수:"
 msgid "NPC killed:"
 msgstr "살해한 NPC: "
 
-#: src/diary.cpp src/memorial_logger.cpp src/newcharacter.cpp
-msgid "Skills:"
-msgstr "기술:"
-
 #: src/diary.cpp
 #, c-format
 msgid "<color_light_blue>%s: %d -> %d</color>"
@@ -244063,10 +244396,6 @@ msgstr "획득한 돌연변이: "
 #: src/diary.cpp
 msgid "Lost mutations:"
 msgstr "사라진 돌연변이: "
-
-#: src/diary.cpp src/newcharacter.cpp
-msgid "Stats:"
-msgstr "능력치:"
 
 #: src/diary.cpp
 #, c-format
@@ -268197,10 +268526,6 @@ msgid "%s (<color_white>%d</color> variants)"
 msgstr "%s (<color_white>%d</color> 종류)"
 
 #: src/newcharacter.cpp
-msgid "Name:"
-msgstr "이름:"
-
-#: src/newcharacter.cpp
 msgid "Gender:"
 msgstr "성별:"
 
@@ -278453,10 +278778,6 @@ msgstr "%s의 통제력을 잃었습니다."
 #: src/vehicle_use.cpp
 msgid "Select door to toggle"
 msgstr "여닫을 문을 선택하세요."
-
-#: src/vehicle_use.cpp
-msgid "Close"
-msgstr "닫기"
 
 #: src/vehicle_use.cpp
 msgid "Open"
