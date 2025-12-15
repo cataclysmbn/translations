@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-12-14 20:43+0000\n"
+"POT-Creation-Date: 2025-12-15 19:57+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -24820,6 +24820,58 @@ msgid ""
 "you know how to fight with a sword and you have this armor so it could be "
 "worse."
 msgstr "骑士精神！英勇无畏！还有荣誉感！这些特质在大灾变中统统毫无用处。不过你懂得如何用剑战斗，身上还穿着这套盔甲，所以处境还不算太糟。"
+
+#: data/json/professions.json
+msgctxt "profession_male"
+msgid "Airship Pilot"
+msgstr "飞艇驾驶员"
+
+#: data/json/professions.json
+msgctxt "profession_female"
+msgid "Airship Pilot"
+msgstr "飞艇驾驶员"
+
+#. ~ Profession (male Airship Pilot) description
+#. ~ Profession (male Airboat Pilot) description
+#. ~ Profession (male Aircanoe Pilot) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You once led a crew of skyfarers, traveling the skies for fame, bricks and "
+"sand. Now you are on your own, and the ground is swarming with zombies.  At "
+"least this world has ground..."
+msgstr "你曾率领一众空行者遨游天际，追寻名望、砖块与沙子。如今你孤身一人，地面上更是遍布丧尸。不过，至少这个世界还有地面……"
+
+#. ~ Profession (female Airship Pilot) description
+#. ~ Profession (female Airboat Pilot) description
+#. ~ Profession (female Aircanoe Pilot) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You once led a crew of skyfarers, traveling the skies for fame, bricks and "
+"sand. Now you are on your own, and the ground is swarming with zombies.  At "
+"least this world has ground..."
+msgstr "你曾率领一众空行者遨游天际，追寻名望、砖块与沙子。如今你孤身一人，地面上更是遍布丧尸。不过，至少这个世界还有地面……"
+
+#: data/json/professions.json
+msgctxt "profession_male"
+msgid "Airboat Pilot"
+msgstr "飞船驾驶员"
+
+#: data/json/professions.json
+msgctxt "profession_female"
+msgid "Airboat Pilot"
+msgstr "飞船驾驶员"
+
+#: data/json/professions.json
+msgctxt "profession_male"
+msgid "Aircanoe Pilot"
+msgstr "空中独木舟驾驶员"
+
+#: data/json/professions.json
+msgctxt "profession_female"
+msgid "Aircanoe Pilot"
+msgstr "空中独木舟驾驶员"
 
 #. ~ Name for scenario 'Evacuee' for a male character
 #: data/json/scenarios.json
@@ -133916,6 +133968,14 @@ msgid "<ally_rule_forbid_engage_false_text>"
 msgstr "<ally_rule_forbid_engage_false_text>"
 
 #: data/json/npcs/TALK_COMMON_ALLY.json
+msgid "<ally_rule_move_own_pace_true_text>"
+msgstr ""
+
+#: data/json/npcs/TALK_COMMON_ALLY.json
+msgid "<ally_rule_move_own_pace_false_text>"
+msgstr ""
+
+#: data/json/npcs/TALK_COMMON_ALLY.json
 msgid "Follow same rules as this follower."
 msgstr "遵循這位追隨者的一套規則。"
 
@@ -133982,6 +134042,14 @@ msgstr "如果聽到聲音但看不到聲音來源，請前去調查。"
 #: data/json/npcs/TALK_COMMON_ALLY.json
 msgid "Don't investigate noises that you can't see."
 msgstr "別調查看不見的聲音來源。"
+
+#: data/json/npcs/TALK_COMMON_ALLY.json
+msgid "Match my movement speed when following."
+msgstr ""
+
+#: data/json/npcs/TALK_COMMON_ALLY.json
+msgid "Move at your own pace."
+msgstr ""
 
 #: data/json/npcs/TALK_COMMON_ALLY.json
 msgid "Set up pickup rules."
@@ -142911,6 +142979,14 @@ msgstr "螺螺螺旋旋旋！"
 #: data/json/npcs/talk_tags.json
 msgid "Rotate!"
 msgstr "旋转！"
+
+#: data/json/npcs/talk_tags.json
+msgid "<mypronoun> will move at their own pace when following."
+msgstr ""
+
+#: data/json/npcs/talk_tags.json
+msgid "<mypronoun> will follow your movement speed when following."
+msgstr ""
 
 #: data/json/npcs/Backgrounds/backgrounds_table_of_contents.json
 #: data/mods/Aftershock/npcs/Backgrounds/BG_BR_tableofcontents_AFS.json
@@ -181080,6 +181156,18 @@ msgstr "小型双座飞机"
 #: data/json/vehicles/aircraft_other.json
 msgid "Commercial Blimp"
 msgstr "商用软式飞艇"
+
+#: data/json/vehicles/aircraft_other.json
+msgid "airship"
+msgstr "飞艇"
+
+#: data/json/vehicles/aircraft_other.json
+msgid "airboat"
+msgstr "飞船"
+
+#: data/json/vehicles/aircraft_other.json
+msgid "aircanoe"
+msgstr "空中独木舟"
 
 #: data/json/vehicles/bikes.json
 msgid "Bicycle"
@@ -258563,11 +258651,9 @@ msgstr "某個東西猛力地拉扯了一會兒...然後...你...自由了！"
 msgid "Your appetite for blood fades."
 msgstr "你嗜血的慾望消失。"
 
-#. ~NOPAIN is a post-Threshold trait, so you shouldn't
-#. ~legitimately have it and get here!
 #: src/mutation.cpp
-msgid "You feel extremely Bugged."
-msgstr "你感到極度煩惱。"
+msgid "You feel extremely disappointed as nothing happens."
+msgstr "什么都没有发生，你感到非常失望。"
 
 #: src/mutation.cpp
 msgid "You stagger with a piercing headache!"
@@ -270346,8 +270432,9 @@ msgid "Prereqs, 2d:"
 msgstr "具備, 2d:"
 
 #: src/wish.cpp
-msgid "Thresholds required:"
-msgstr "所需的門檻:"
+#, c-format
+msgid "Threshold tier: %d"
+msgstr "阈值层级：%d"
 
 #: src/wish.cpp
 msgid "Cancels:"
