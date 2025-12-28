@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-12-27 10:21+0000\n"
+"POT-Creation-Date: 2025-12-28 06:37+0000\n"
 "Last-Translator: Choi Dong-uk, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -120712,6 +120712,18 @@ msgstr[0] "터렛 장착대"
 msgid "A universal mount for weapons intended to be installed as turrets."
 msgstr "터렛으로 설치할 무기를 올려놓는데 쓰이는 범용 받침대."
 
+#: data/json/items/vehicle/turrets.json data/json/vehicleparts/utilities.json
+msgid "turret autoloader"
+msgid_plural "turret autoloaders"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'turret autoloader'}
+#: data/json/items/vehicle/turrets.json
+msgid ""
+"An automated ammunition feeding system designed for vehicle-mounted turrets."
+" Requires electric power to operate."
+msgstr ""
+
 #: data/json/items/vehicle/utilities.json
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "military black box"
@@ -187515,6 +187527,15 @@ msgstr ""
 msgid "mounted hydraulic press"
 msgstr "차량용 유압 프레스"
 
+#. ~ Description for {'str': 'turret autoloader'}
+#: data/json/vehicleparts/utilities.json
+msgid ""
+"An automated ammunition feeding system installed alongside a vehicle turret."
+" It searches all vehicle cargo for compatible ammunition and reloads the "
+"turret. Must be installed on the same tile as a turret. The mechanical "
+"feeding system requires electrical power to operate."
+msgstr ""
+
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "null part"
 msgstr "null part"
@@ -232076,6 +232097,22 @@ msgid "Scroll down through vehicle overview"
 msgstr "차량 전반 스크롤 내리기"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Zoom in (tiles mode)"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Zoom out (tiles mode)"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll up through parts list"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll down through parts list"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
 msgid "Toggle unavailable constructions"
 msgstr "불가능한 건설 항목 아래로"
 
@@ -272665,6 +272702,16 @@ msgid "Choose the overmap tileset you want to use."
 msgstr "사용할 오버맵 타일셋을 선택하세요."
 
 #: src/options.cpp
+msgid "Graphical vehicle display"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"If true, the vehicle interaction screen will display vehicle parts using "
+"graphical tiles instead of ASCII symbols."
+msgstr ""
+
+#: src/options.cpp
 msgid "Enable character preview window"
 msgstr "캐릭터 미리보기 창 활성화"
 
@@ -279375,8 +279422,12 @@ msgid "You're about to crash into something!"
 msgstr "이대로는 뭔가에 충돌합니다!"
 
 #: src/vehicle_display.cpp
-msgid "More parts here…"
-msgstr "부품 더 많음…"
+msgid "^ More parts above…"
+msgstr ""
+
+#: src/vehicle_display.cpp
+msgid "v More parts below…"
+msgstr ""
 
 #: src/vehicle_display.cpp
 #, c-format
@@ -279410,6 +279461,10 @@ msgid "Label: %s"
 msgstr "라벨: %s"
 
 #: src/vehicle_display.cpp
+msgid "More parts here…"
+msgstr "부품 더 많음…"
+
+#: src/vehicle_display.cpp
 msgid "mL"
 msgstr "mL"
 
@@ -279434,6 +279489,16 @@ msgstr ", %d %s(%4.2f%%)/시간, %s 까지 %s"
 #, c-format
 msgid ", %3.1f%% / hour, %s until %s"
 msgstr ", %3.1f%% / 시간, %s 까지 %s"
+
+#: src/vehicle_functions.cpp
+#, c-format
+msgid "The %1$s's autoloader begins reloading %2$s into %3$s."
+msgstr ""
+
+#: src/vehicle_functions.cpp
+#, c-format
+msgid "The %1$s's autoloader reloaded %2$s into %3$s."
+msgstr ""
 
 #: src/vehicle_group.cpp
 msgid "pile-up"

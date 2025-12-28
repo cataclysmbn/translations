@@ -28,15 +28,15 @@
 # Vlados <vuradoz@gmail.com>, 2025
 # GostBug <blackday8990@gmx.de>, 2025
 # Vadim, 2025
-# toy goy “phil1999ru” loc, 2025
 # Coolthulhu <Coolthulhu@gmail.com>, 2025
 # Vorpal Void <vorpal.void@gmail.com>, 2025
+# toy goy “phil1999ru” loc, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-12-26 16:52+0000\n"
-"Last-Translator: Vorpal Void <vorpal.void@gmail.com>, 2025\n"
+"POT-Creation-Date: 2025-12-28 06:37+0000\n"
+"Last-Translator: toy goy “phil1999ru” loc, 2025\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -135,6 +135,14 @@ msgid ""
 "good weapon or a strong character, mining takes time, and both cause a lot "
 "of noise, so be careful there aren't any zombies nearby before you try it."
 msgstr ""
+"Вы можете найти двери ('+'); их можно открыть с помощью <press_open> или "
+"войдя в них, и закрыть <press_close>. Некоторые двери заперты. Запертые "
+"двери, окна и некоторые другие препятствия можно разрушить, разбив их "
+"(<press_smash>, затем выберите направление) или используя инструмент для "
+"добычи ресурсов, такой как отбойный молоток или кирка. Разбивать препятствия"
+" гораздо проще с хорошим оружием или сильным персонажем, добыча ресурсов "
+"занимает время и сопровождается большим шумом, поэтому будьте осторожны и "
+"убедитесь, что поблизости нет зомби, прежде чем пытаться это сделать."
 
 #: data/help/texts.json
 msgid ""
@@ -148323,6 +148331,21 @@ msgstr ""
 "Универсальное крепление для оружия, которое планируется установить в "
 "качестве турели."
 
+#: data/json/items/vehicle/turrets.json data/json/vehicleparts/utilities.json
+msgid "turret autoloader"
+msgid_plural "turret autoloaders"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'turret autoloader'}
+#: data/json/items/vehicle/turrets.json
+msgid ""
+"An automated ammunition feeding system designed for vehicle-mounted turrets."
+" Requires electric power to operate."
+msgstr ""
+
 #: data/json/items/vehicle/utilities.json
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "military black box"
@@ -224050,6 +224073,15 @@ msgstr ""
 msgid "mounted hydraulic press"
 msgstr "смонтированный гидравлический пресс"
 
+#. ~ Description for {'str': 'turret autoloader'}
+#: data/json/vehicleparts/utilities.json
+msgid ""
+"An automated ammunition feeding system installed alongside a vehicle turret."
+" It searches all vehicle cargo for compatible ammunition and reloads the "
+"turret. Must be installed on the same tile as a turret. The mechanical "
+"feeding system requires electrical power to operate."
+msgstr ""
+
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "null part"
 msgstr "пустая часть"
@@ -277032,6 +277064,22 @@ msgid "Scroll down through vehicle overview"
 msgstr "Прокрутка вниз в меню обзора транспорта"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Zoom in (tiles mode)"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Zoom out (tiles mode)"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll up through parts list"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll down through parts list"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
 msgid "Toggle unavailable constructions"
 msgstr "Недоступное строительство"
 
@@ -319050,6 +319098,16 @@ msgid "Choose the overmap tileset you want to use."
 msgstr "Выберите тайлсет глобальной карты, который собираетесь использовать."
 
 #: src/options.cpp
+msgid "Graphical vehicle display"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"If true, the vehicle interaction screen will display vehicle parts using "
+"graphical tiles instead of ASCII symbols."
+msgstr ""
+
+#: src/options.cpp
 msgid "Enable character preview window"
 msgstr "Включить окно предварительного просмотра персонажа"
 
@@ -326064,8 +326122,12 @@ msgid "You're about to crash into something!"
 msgstr "Вы вот-вот с чем-то столкнётесь!"
 
 #: src/vehicle_display.cpp
-msgid "More parts here…"
-msgstr "Ещё запчасти…"
+msgid "^ More parts above…"
+msgstr ""
+
+#: src/vehicle_display.cpp
+msgid "v More parts below…"
+msgstr ""
 
 #: src/vehicle_display.cpp
 #, c-format
@@ -326099,6 +326161,10 @@ msgid "Label: %s"
 msgstr "Метка: %s"
 
 #: src/vehicle_display.cpp
+msgid "More parts here…"
+msgstr "Ещё запчасти…"
+
+#: src/vehicle_display.cpp
 msgid "mL"
 msgstr "мл"
 
@@ -326123,6 +326189,16 @@ msgstr ", %d %s(%4.2f%%)/час, %s до %s"
 #, c-format
 msgid ", %3.1f%% / hour, %s until %s"
 msgstr ", %3.1f%% / час, %s до %s"
+
+#: src/vehicle_functions.cpp
+#, c-format
+msgid "The %1$s's autoloader begins reloading %2$s into %3$s."
+msgstr ""
+
+#: src/vehicle_functions.cpp
+#, c-format
+msgid "The %1$s's autoloader reloaded %2$s into %3$s."
+msgstr ""
 
 #: src/vehicle_group.cpp
 msgid "pile-up"

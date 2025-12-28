@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-12-27 10:21+0000\n"
+"POT-Creation-Date: 2025-12-28 06:37+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -116851,6 +116851,18 @@ msgstr[0] "炮塔底座"
 msgid "A universal mount for weapons intended to be installed as turrets."
 msgstr "一个将武器安装为车载炮塔的通用炮塔底座。"
 
+#: data/json/items/vehicle/turrets.json data/json/vehicleparts/utilities.json
+msgid "turret autoloader"
+msgid_plural "turret autoloaders"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'turret autoloader'}
+#: data/json/items/vehicle/turrets.json
+msgid ""
+"An automated ammunition feeding system designed for vehicle-mounted turrets."
+" Requires electric power to operate."
+msgstr ""
+
 #: data/json/items/vehicle/utilities.json
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "military black box"
@@ -180183,6 +180195,15 @@ msgstr "这是一种集成的手工装弹工具，既可以组装弹药，也可
 msgid "mounted hydraulic press"
 msgstr "车载液压机"
 
+#. ~ Description for {'str': 'turret autoloader'}
+#: data/json/vehicleparts/utilities.json
+msgid ""
+"An automated ammunition feeding system installed alongside a vehicle turret."
+" It searches all vehicle cargo for compatible ammunition and reloads the "
+"turret. Must be installed on the same tile as a turret. The mechanical "
+"feeding system requires electrical power to operate."
+msgstr ""
+
 #: data/json/vehicleparts/vehicle_parts.json
 msgid "null part"
 msgstr "无效部件"
@@ -223099,6 +223120,22 @@ msgid "Scroll down through vehicle overview"
 msgstr "向下滚动载具总览"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Zoom in (tiles mode)"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Zoom out (tiles mode)"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll up through parts list"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Scroll down through parts list"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
 msgid "Toggle unavailable constructions"
 msgstr "切换不可建造的设施"
 
@@ -263521,6 +263558,16 @@ msgid "Choose the overmap tileset you want to use."
 msgstr "请选择你想要使用的大地图贴图包。"
 
 #: src/options.cpp
+msgid "Graphical vehicle display"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"If true, the vehicle interaction screen will display vehicle parts using "
+"graphical tiles instead of ASCII symbols."
+msgstr ""
+
+#: src/options.cpp
 msgid "Enable character preview window"
 msgstr "启用角色预览窗口"
 
@@ -270173,8 +270220,12 @@ msgid "You're about to crash into something!"
 msgstr "你即将撞上其他物体了！"
 
 #: src/vehicle_display.cpp
-msgid "More parts here…"
-msgstr "更多部件……"
+msgid "^ More parts above…"
+msgstr ""
+
+#: src/vehicle_display.cpp
+msgid "v More parts below…"
+msgstr ""
 
 #: src/vehicle_display.cpp
 #, c-format
@@ -270208,6 +270259,10 @@ msgid "Label: %s"
 msgstr "标记：%s"
 
 #: src/vehicle_display.cpp
+msgid "More parts here…"
+msgstr "更多部件……"
+
+#: src/vehicle_display.cpp
 msgid "mL"
 msgstr "毫升"
 
@@ -270232,6 +270287,16 @@ msgstr "，%d %s（%4.2f%%）/小时，%s 后 %s"
 #, c-format
 msgid ", %3.1f%% / hour, %s until %s"
 msgstr "，%3.1f%%/小时，%s 后 %s"
+
+#: src/vehicle_functions.cpp
+#, c-format
+msgid "The %1$s's autoloader begins reloading %2$s into %3$s."
+msgstr ""
+
+#: src/vehicle_functions.cpp
+#, c-format
+msgid "The %1$s's autoloader reloaded %2$s into %3$s."
+msgstr ""
 
 #: src/vehicle_group.cpp
 msgid "pile-up"
