@@ -26,17 +26,17 @@
 # 김예준 <gimy77357@gmail.com>, 2025
 # 김동현, 2025
 # ARDOR Flag, 2025
-# Coolthulhu <Coolthulhu@gmail.com>, 2025
 # scarf <greenscarf005@gmail.com>, 2025
 # DelFe, 2025
 # Tae Heon Lim, 2025
 # Choi Dong-uk, 2025
+# Coolthulhu <Coolthulhu@gmail.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-12-29 16:44+0000\n"
-"Last-Translator: Choi Dong-uk, 2025\n"
+"POT-Creation-Date: 2025-12-30 07:22+0000\n"
+"Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5958,6 +5958,10 @@ msgstr "전기식 소형 냉장고"
 #: data/json/construction_group.json
 msgid "Plug In Minifreezer"
 msgstr "전기식 소형 냉동고"
+
+#: data/json/construction_group.json
+msgid "Plug In Cloning Vat"
+msgstr ""
 
 #: data/json/construction_group.json
 msgid "Plug In Oven"
@@ -12623,6 +12627,14 @@ msgstr "사용 준비"
 #: data/json/item_actions.json
 msgid "Use regulator"
 msgstr "조절기 사용"
+
+#: data/json/item_actions.json
+msgid "Take specimen sample"
+msgstr ""
+
+#: data/json/item_actions.json
+msgid "Inspect genome drive"
+msgstr ""
 
 #: data/json/item_actions.json
 msgid "Unfold"
@@ -29384,7 +29396,8 @@ msgid "a snapping sound."
 msgstr "뭔가 부러지는 소리."
 
 #. ~ Beeper sound
-#: data/json/speech.json src/vehicle_use.cpp
+#: data/json/speech.json src/iexamine.cpp src/iuse_actor.cpp
+#: src/vehicle_use.cpp
 msgid "beep!"
 msgstr "삐익!"
 
@@ -35305,6 +35318,45 @@ msgstr ""
 "다양한 금속 재질의 물품을 압축시켜 다른 제작에 쓸 수 있는 기본적인 형태로 만드는데 쓰이는 유압식 압축기입니다. 정말 신경쓰인다면 "
 "분해하여 다른 곳에 설치할 수도 있습니다."
 
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+#: data/json/items/vehicle/utilities.json
+msgid "cloning vat"
+msgid_plural "cloning vats"
+msgstr[0] ""
+
+#. ~ Description for cloning vat
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"A vat full of solution, probably intended to hold growing clones of people "
+"or other life forms.  Requires a steady, strong power supply to avoid "
+"failure.  Examine it to activate, requires a sterile artificial womb and "
+"viable DNA, the latter produced via a genome workstation from stored sample "
+"data off USB and sufficient growth medium."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/terrain-fences-gates.json
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid "ker-rash!"
+msgstr "쨍-그랑!"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid "plunk."
+msgstr "쿵."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "active cloning vat"
+msgstr ""
+
+#. ~ Description for active cloning vat
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"A vat full of solution, its surface rippling as bubbles rise to the top.  It"
+" hums softly, the liquid churning as if something inside is taking shape."
+msgstr ""
+
 #: data/json/furniture_and_terrain/furniture-barriers.json
 msgid "road barricade"
 msgstr "도로 바리케이드"
@@ -40767,11 +40819,6 @@ msgid "glass braking!"
 msgstr "유리가 부서진다!"
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "ker-rash!"
-msgstr "쨍-그랑!"
-
-#: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "metal railing"
 msgstr "금속 난간"
 
@@ -43394,20 +43441,12 @@ msgid ""
 "for reading templates."
 msgstr "나노제작기에 부착되어 있는 작은 컴퓨터 패널입니다.  파일을 읽어올 수 있는 슬롯이 하나 있습니다."
 
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "cloning vat"
-msgstr "복제용 원통"
-
 #. ~ Description for cloning vat
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid ""
 "A vat full of solution, probably intended to hold growing clones of people "
 "or other life forms."
 msgstr "용제로 가득찬 통으로, 사람이나 다른 생물체의 클론을 성장시키는 용도인 것 같습니다."
-
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "plunk."
-msgstr "쿵."
 
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid "slot machine"
@@ -47363,6 +47402,11 @@ msgstr "용접용 가스"
 #: data/json/items/ammo_types.json
 msgid "concentrated alcohol"
 msgstr "고농도 알코올"
+
+#: data/json/items/ammo_types.json data/json/items/tool/med.json
+msgid "DNA"
+msgid_plural "DNA"
+msgstr[0] ""
 
 #: data/json/items/ammo_types.json data/json/items/ammo/8x40mm.json
 msgid "8x40mm caseless"
@@ -51551,6 +51595,16 @@ msgid "A paste of half-finished milled grains, not yet flour."
 msgstr "반쯤 갈아낸 곡물 덩어리입니다. 아직 곡물가루라고 부를 정도는 아닙니다."
 
 #: data/json/items/fake.json
+msgid "growing embryo"
+msgid_plural "growing embryo"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'growing embryo'}
+#: data/json/items/fake.json
+msgid "A growing embryo."
+msgstr ""
+
+#: data/json/items/fake.json
 msgid "smoldering embers"
 msgid_plural "smoldering embers"
 msgstr[0] "연기나는 잉걸불"
@@ -52467,6 +52521,18 @@ msgstr[0] "USB 드라이브"
 #: data/json/items/generic.json
 msgid "A USB thumb drive.  Useful for holding software."
 msgstr "휴대용 USB 드라이브. 소프트웨어를 저장할 때 쓰입니다."
+
+#: data/json/items/generic.json
+msgid "genome drive"
+msgid_plural "genome drives"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'genome drive'}
+#: data/json/items/generic.json
+msgid ""
+"A USB thumb drive labeled with tape.  Stores genetic information that can be"
+" used in a genome workstation, to create DNA samples for cloning."
+msgstr ""
 
 #: data/json/items/generic.json
 msgid "blank card"
@@ -112508,6 +112574,33 @@ msgstr ""
 "바이오닉 장치를 탐지하는데 특화된 소형 금속 탐지기입니다. 작동시키면 지속적으로 전력을 소모하며 근처 시체에 있는 바이오닉을 탐지할 수 "
 "있습니다."
 
+#: data/json/items/tool/electronics.json
+msgid "genome sampler"
+msgid_plural "genome samplers"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'genome sampler'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"A handheld device designed to extract and analyze DNA from living organisms."
+"  If you have an empty USB drive on hand, scanning a creature with it can "
+"create a genome sample for later sequencing in a cloning vat."
+msgstr ""
+
+#: data/json/items/tool/electronics.json
+msgid "genome workstation"
+msgid_plural "genome workstations"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'genome workstation'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"A medium-sized, high-tech machine with screens and sample trays.  It can "
+"scan genetic samples off USB drives, and produce DNA samples for cloning if "
+"provided with growth medium.  It can also be used as a microcentrifuge in a "
+"pinch."
+msgstr ""
+
 #: data/json/items/tool/entry_tools.json
 msgid "crowbar"
 msgid_plural "crowbars"
@@ -115021,6 +115114,26 @@ msgstr[0] "주사기"
 msgid "A medical syringe.  Used for administering intravenous drugs."
 msgstr "의료용 주사기. 약물을 정맥에 주사할 수 있다."
 
+#. ~ Description for {'str_sp': 'DNA'}
+#: data/json/items/tool/med.json
+msgid ""
+"The DNA sample of some living creature.  This can be used in a cloning vat, "
+"together with a sterile artificial womb, to create a copy of the creature."
+msgstr ""
+
+#: data/json/items/tool/med.json
+msgid "universal growth medium"
+msgid_plural "universal growth medium"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'universal growth medium'}
+#: data/json/items/tool/med.json
+msgid ""
+"A heavily processed nutrient liquid, containing the basic building blocks of"
+" life.  A genome workstation could take a stored sample off a USB drive, and"
+" convert this raw material into viable DNA for cloning."
+msgstr ""
+
 #: data/json/items/tool/med.json
 msgid "thermometer"
 msgid_plural "thermometers"
@@ -115908,6 +116021,39 @@ msgid ""
 "An old-fashioned pocket watch, useful for telling the time and not much "
 "else."
 msgstr "구식 회중시계입니다. 시간을 알려주는 것 이외에는 큰 쓸모가 없습니다."
+
+#: data/json/items/tool/misc.json
+msgid "artificial womb"
+msgid_plural "artificial wombs"
+msgstr[0] ""
+
+#. ~ Use action friendly_msg for {'str': 'artificial womb'}.
+#: data/json/items/tool/misc.json
+msgid "The cloned creature seems to enjoy your presence."
+msgstr ""
+
+#. ~ Use action hostile_msg for {'str': 'artificial womb'}.
+#: data/json/items/tool/misc.json
+msgid "The cloned creature seems aloof to you!"
+msgstr ""
+
+#. ~ Description for {'str': 'artificial womb'}
+#: data/json/items/tool/misc.json
+msgid ""
+"This artificial womb holds a nearly fully grown clone, nurtured from "
+"extracted DNA within a cloning vat.  Activate it, and the organism will "
+"swiftly complete its development and emerge ready to function.  Ideal for "
+"quickly repopulating herds, restoring endangered species, or deploying "
+"engineered creatures with minimal wait."
+msgstr ""
+
+#. ~ Description for {'str': 'artificial womb'}
+#: data/json/items/tool/misc.json
+msgid ""
+"A single-use vessel for transporting clones safely from the cloning vat to "
+"the field.  Currently empty, if sufficiently sterile it can be used by a "
+"cloning vat to grow a creature from a viable DNA sample. "
+msgstr ""
 
 #: data/json/items/tool/musical_instruments.json
 msgid "banjo"
@@ -120860,6 +121006,14 @@ msgid ""
 "Compact version of a chest freezer, designed as a mobile solution for "
 "freezing food.  Provides insulation from the elements."
 msgstr "냉동 보관이 필요한 음식의 고민을 해결해주는, 이동 가능한 해결책이자 냉동고의 소형화 버전입니다. 단열 효과가 있습니다."
+
+#. ~ Description for {'str': 'cloning vat'}
+#: data/json/items/vehicle/utilities.json
+msgid ""
+"A vessel designed to grow and sustain living beings.  If constructed and "
+"provided with sufficient power, it can take a sterile artificial womb and a "
+"DNA sample and create a viable clone."
+msgstr ""
 
 #: data/json/items/vehicle/utilities.json
 msgid "mountable autoclave"
@@ -249189,12 +249343,12 @@ msgid "Sterilization"
 msgstr "소독"
 
 #: src/game_inventory.cpp
-msgid "<color_yellow>Select one CBM to sterilize</color>"
-msgstr "<color_yellow>멸균 처리할 CBM을 선택하세요</color>"
+msgid "<color_yellow>Select a device to sterilize:</color>"
+msgstr ""
 
 #: src/game_inventory.cpp
-msgid "You don't have any CBM to sterilize."
-msgstr "멸균 처리할 CBM이 없습니다."
+msgid "You don't have any devices to sterilize."
+msgstr ""
 
 #: src/gamemode.cpp
 msgid "Tutorial"
@@ -252391,6 +252545,14 @@ msgstr "아마 저 안에 %s %s만큼 넣을 수 있을 것 같습니다."
 msgid "You remove the brake on the millstone and it slowly starts to turn."
 msgstr "방앗돌에서 고정대를 떼어내자 방아가 천천히 돌기 시작합니다."
 
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Select specimen sample:"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "The cloning vat begins its rapid incubation process."
+msgstr ""
+
 #: src/iexamine.cpp
 msgid "This rack already contains smoked food."
 msgstr "선반에 이미 훈제된 음식이 있습니다."
@@ -252457,6 +252619,10 @@ msgstr "훈제 선반에 불을 붙입니까?"
 msgid "You light a small fire under the rack and it starts to smoke."
 msgstr "선반 아래에 조그만 불을 피우자 연기를 내뿜기 시작합니다."
 
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "ding!"
+msgstr "땡!"
+
 #: src/iexamine.cpp
 msgid "You can't place more food while it's smoking."
 msgstr "이미 훈제가 진행 중일 때는 음식을 더 넣을 수 없습니다."
@@ -252509,6 +252675,15 @@ msgstr "%s(을)를 방아에 얼마나 많이 넣습니까?"
 msgctxt "item amount and name"
 msgid "You carefully place %s %s in the mill."
 msgstr "조심스럽게 %s %s(을)를 방아에 넣습니다. "
+
+#: src/iexamine.cpp
+#, c-format
+msgid "Cancel incubation (%s left)"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Cancel incubation process?  This will kill the specimen inside."
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "The water mill needs to be over shallow flowing water to work."
@@ -259981,6 +260156,71 @@ msgid "You use the %s to mask your scent"
 msgstr "%s(으)로 체취를 가리려 시도합니다."
 
 #: src/iuse_actor.cpp
+#, c-format
+msgid "There's not enough charge left in the %s."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Select which creature?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "There's no creature there."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid ""
+"The %s emits a loud error beep!  You failed to gather a sufficient sample."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid ""
+"The %s emits two error beeps.  This creature can't provide a valid sample."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "That creature's genome has already been scanned."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s beeps softly.  You successfully gathered a sample from the %s!"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "What to do with the %s?"
+msgstr "%s(으)로 무엇을 합니까?"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid ""
+"Examination Results:\n"
+"\n"
+"Sample Name: %s\n"
+"Size Class: %s\n"
+"Weight: %.0fkg\n"
+"Volume: %.0fl"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid ""
+"This will use up 1 unit of mutagen and 1 unit of biomaterial.  Are you sure?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The research produced a viable %s sample!"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "You produce a unit of %s DNA."
+msgstr ""
+
+#: src/iuse_actor.cpp
 msgid "And when you gaze long into a screen, the screen also gazes into you."
 msgstr "화면을 오랫동안 들여다보노라면, 화면도 당신을 들여다보고 있음을 알아야 합니다."
 
@@ -260010,10 +260250,6 @@ msgstr "멀티쿠커가 도망쳐버립니다!"
 #: src/iuse_actor.cpp
 msgid "You're surrounded by aggressive multi-cookers!"
 msgstr "공격적인 멀티쿠커들에게 포위당했습니다!"
-
-#: src/iuse_actor.cpp
-msgid "ding!"
-msgstr "땡!"
 
 #: src/iuse_actor.cpp
 msgid "Choose option:"

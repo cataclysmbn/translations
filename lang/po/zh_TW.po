@@ -9,14 +9,14 @@
 # hiro9888 <hiro9888@gmail.com>, 2025
 # 嘿咻大侠, 2025
 # H_Hedgehog, 2025
-# Coolthulhu <Coolthulhu@gmail.com>, 2025
 # Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025
+# Coolthulhu <Coolthulhu@gmail.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-12-29 16:44+0000\n"
-"Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2025\n"
+"POT-Creation-Date: 2025-12-30 07:22+0000\n"
+"Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5599,6 +5599,10 @@ msgstr "插电小冰箱"
 #: data/json/construction_group.json
 msgid "Plug In Minifreezer"
 msgstr "插电小冰柜"
+
+#: data/json/construction_group.json
+msgid "Plug In Cloning Vat"
+msgstr ""
 
 #: data/json/construction_group.json
 msgid "Plug In Oven"
@@ -12225,6 +12229,14 @@ msgstr "準備使用"
 #: data/json/item_actions.json
 msgid "Use regulator"
 msgstr "使用調節器"
+
+#: data/json/item_actions.json
+msgid "Take specimen sample"
+msgstr ""
+
+#: data/json/item_actions.json
+msgid "Inspect genome drive"
+msgstr ""
 
 #: data/json/item_actions.json
 msgid "Unfold"
@@ -28052,7 +28064,8 @@ msgid "a snapping sound."
 msgstr "東西折斷的聲音。"
 
 #. ~ Beeper sound
-#: data/json/speech.json src/vehicle_use.cpp
+#: data/json/speech.json src/iexamine.cpp src/iuse_actor.cpp
+#: src/vehicle_use.cpp
 msgid "beep!"
 msgstr "嗶!"
 
@@ -33923,6 +33936,45 @@ msgid ""
 "careful, you can even uninstall it to transport it elsewhere."
 msgstr "一台液压驱动的金属锻压机，可以将各种金属制品压制成金属块，以用于进一步加工。如果操作足够小心，还可以将其卸载并运输到其他地方。"
 
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+#: data/json/items/vehicle/utilities.json
+msgid "cloning vat"
+msgid_plural "cloning vats"
+msgstr[0] ""
+
+#. ~ Description for cloning vat
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"A vat full of solution, probably intended to hold growing clones of people "
+"or other life forms.  Requires a steady, strong power supply to avoid "
+"failure.  Examine it to activate, requires a sterile artificial womb and "
+"viable DNA, the latter produced via a genome workstation from stored sample "
+"data off USB and sufficient growth medium."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/terrain-fences-gates.json
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid "ker-rash!"
+msgstr "咔-啦!"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/furniture_and_terrain/terrain-manufactured.json
+msgid "plunk."
+msgstr "啪。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "active cloning vat"
+msgstr ""
+
+#. ~ Description for active cloning vat
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"A vat full of solution, its surface rippling as bubbles rise to the top.  It"
+" hums softly, the liquid churning as if something inside is taking shape."
+msgstr ""
+
 #: data/json/furniture_and_terrain/furniture-barriers.json
 msgid "road barricade"
 msgstr "路障"
@@ -39214,11 +39266,6 @@ msgid "glass braking!"
 msgstr "玻璃破裂的声音！"
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "ker-rash!"
-msgstr "咔-啦!"
-
-#: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "metal railing"
 msgstr "金属栏杆"
 
@@ -41693,20 +41740,12 @@ msgid ""
 "for reading templates."
 msgstr "一种连接在纳米制造机上的小型计算机控制面板。它上面有个可以插入制造模板的插槽。"
 
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "cloning vat"
-msgstr "複製艙"
-
 #. ~ Description for cloning vat
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid ""
 "A vat full of solution, probably intended to hold growing clones of people "
 "or other life forms."
 msgstr "一个装满溶液的大罐子，可能是用来装人或其他生命形式的克隆体。"
-
-#: data/json/furniture_and_terrain/terrain-manufactured.json
-msgid "plunk."
-msgstr "啪。"
 
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 msgid "slot machine"
@@ -45526,6 +45565,11 @@ msgstr "焊接瓦斯"
 #: data/json/items/ammo_types.json
 msgid "concentrated alcohol"
 msgstr "高濃度酒精"
+
+#: data/json/items/ammo_types.json data/json/items/tool/med.json
+msgid "DNA"
+msgid_plural "DNA"
+msgstr[0] ""
 
 #: data/json/items/ammo_types.json data/json/items/ammo/8x40mm.json
 msgid "8x40mm caseless"
@@ -49518,6 +49562,16 @@ msgid "A paste of half-finished milled grains, not yet flour."
 msgstr "磨到一半的榖物顆粒，還沒有變成麵粉。"
 
 #: data/json/items/fake.json
+msgid "growing embryo"
+msgid_plural "growing embryo"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'growing embryo'}
+#: data/json/items/fake.json
+msgid "A growing embryo."
+msgstr ""
+
+#: data/json/items/fake.json
 msgid "smoldering embers"
 msgid_plural "smoldering embers"
 msgstr[0] "悶燒的餘燼"
@@ -50422,6 +50476,18 @@ msgstr[0] "USB 隨身碟"
 #: data/json/items/generic.json
 msgid "A USB thumb drive.  Useful for holding software."
 msgstr "拇指大小的隨身碟, 儲存資料用。"
+
+#: data/json/items/generic.json
+msgid "genome drive"
+msgid_plural "genome drives"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'genome drive'}
+#: data/json/items/generic.json
+msgid ""
+"A USB thumb drive labeled with tape.  Stores genetic information that can be"
+" used in a genome workstation, to create DNA samples for cloning."
+msgstr ""
 
 #: data/json/items/generic.json
 msgid "blank card"
@@ -108573,6 +108639,33 @@ msgid ""
 "for bionics."
 msgstr "一台专门用于探测生化插件的小型金属扫描仪。在使用过程中，它将逐渐消耗能量，并自动扫描您附近的尸体，寻找生化插件。"
 
+#: data/json/items/tool/electronics.json
+msgid "genome sampler"
+msgid_plural "genome samplers"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'genome sampler'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"A handheld device designed to extract and analyze DNA from living organisms."
+"  If you have an empty USB drive on hand, scanning a creature with it can "
+"create a genome sample for later sequencing in a cloning vat."
+msgstr ""
+
+#: data/json/items/tool/electronics.json
+msgid "genome workstation"
+msgid_plural "genome workstations"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'genome workstation'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"A medium-sized, high-tech machine with screens and sample trays.  It can "
+"scan genetic samples off USB drives, and produce DNA samples for cloning if "
+"provided with growth medium.  It can also be used as a microcentrifuge in a "
+"pinch."
+msgstr ""
+
 #: data/json/items/tool/entry_tools.json
 msgid "crowbar"
 msgid_plural "crowbars"
@@ -110989,6 +111082,26 @@ msgstr[0] "針筒"
 msgid "A medical syringe.  Used for administering intravenous drugs."
 msgstr "一根醫療用針筒。能進行藥物或毒品的靜脈注射。"
 
+#. ~ Description for {'str_sp': 'DNA'}
+#: data/json/items/tool/med.json
+msgid ""
+"The DNA sample of some living creature.  This can be used in a cloning vat, "
+"together with a sterile artificial womb, to create a copy of the creature."
+msgstr ""
+
+#: data/json/items/tool/med.json
+msgid "universal growth medium"
+msgid_plural "universal growth medium"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'universal growth medium'}
+#: data/json/items/tool/med.json
+msgid ""
+"A heavily processed nutrient liquid, containing the basic building blocks of"
+" life.  A genome workstation could take a stored sample off a USB drive, and"
+" convert this raw material into viable DNA for cloning."
+msgstr ""
+
 #: data/json/items/tool/med.json
 msgid "thermometer"
 msgid_plural "thermometers"
@@ -111846,6 +111959,39 @@ msgid ""
 "An old-fashioned pocket watch, useful for telling the time and not much "
 "else."
 msgstr "老式怀表，只能用来报时，其他用处不大。"
+
+#: data/json/items/tool/misc.json
+msgid "artificial womb"
+msgid_plural "artificial wombs"
+msgstr[0] ""
+
+#. ~ Use action friendly_msg for {'str': 'artificial womb'}.
+#: data/json/items/tool/misc.json
+msgid "The cloned creature seems to enjoy your presence."
+msgstr ""
+
+#. ~ Use action hostile_msg for {'str': 'artificial womb'}.
+#: data/json/items/tool/misc.json
+msgid "The cloned creature seems aloof to you!"
+msgstr ""
+
+#. ~ Description for {'str': 'artificial womb'}
+#: data/json/items/tool/misc.json
+msgid ""
+"This artificial womb holds a nearly fully grown clone, nurtured from "
+"extracted DNA within a cloning vat.  Activate it, and the organism will "
+"swiftly complete its development and emerge ready to function.  Ideal for "
+"quickly repopulating herds, restoring endangered species, or deploying "
+"engineered creatures with minimal wait."
+msgstr ""
+
+#. ~ Description for {'str': 'artificial womb'}
+#: data/json/items/tool/misc.json
+msgid ""
+"A single-use vessel for transporting clones safely from the cloning vat to "
+"the field.  Currently empty, if sufficiently sterile it can be used by a "
+"cloning vat to grow a creature from a viable DNA sample. "
+msgstr ""
 
 #: data/json/items/tool/musical_instruments.json
 msgid "banjo"
@@ -116620,6 +116766,14 @@ msgid ""
 "Compact version of a chest freezer, designed as a mobile solution for "
 "freezing food.  Provides insulation from the elements."
 msgstr "一個小巧的冰櫃, 設計來作為冷藏食物的移動式解決方案。提供絕緣溫度的能力。"
+
+#. ~ Description for {'str': 'cloning vat'}
+#: data/json/items/vehicle/utilities.json
+msgid ""
+"A vessel designed to grow and sustain living beings.  If constructed and "
+"provided with sufficient power, it can take a sterile artificial womb and a "
+"DNA sample and create a viable clone."
+msgstr ""
 
 #: data/json/items/vehicle/utilities.json
 msgid "mountable autoclave"
@@ -239863,12 +240017,12 @@ msgid "Sterilization"
 msgstr "消毒"
 
 #: src/game_inventory.cpp
-msgid "<color_yellow>Select one CBM to sterilize</color>"
-msgstr "<color_yellow>選擇要進行滅菌的生化插件</color>"
+msgid "<color_yellow>Select a device to sterilize:</color>"
+msgstr ""
 
 #: src/game_inventory.cpp
-msgid "You don't have any CBM to sterilize."
-msgstr "你沒有可進行滅菌的生化插件。"
+msgid "You don't have any devices to sterilize."
+msgstr ""
 
 #: src/gamemode.cpp
 msgid "Tutorial"
@@ -243059,6 +243213,14 @@ msgstr "你認為可以在裡面放入 %s %s 的食物。"
 msgid "You remove the brake on the millstone and it slowly starts to turn."
 msgstr "你卸下磨石上的製動器，它慢慢地開始轉動。"
 
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Select specimen sample:"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "The cloning vat begins its rapid incubation process."
+msgstr ""
+
 #: src/iexamine.cpp
 msgid "This rack already contains smoked food."
 msgstr "這個架子裡已經裝有煙燻過的食物了。"
@@ -243125,6 +243287,10 @@ msgstr "要點燃煙燻架嗎?"
 msgid "You light a small fire under the rack and it starts to smoke."
 msgstr "你在架子下方點燃了火苗, 它開始冒煙。"
 
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "ding!"
+msgstr "叮!"
+
 #: src/iexamine.cpp
 msgid "You can't place more food while it's smoking."
 msgstr "你不能在煙燻途中放入更多食物。"
@@ -243177,6 +243343,15 @@ msgstr "要往磨中放入多少 %s？"
 msgctxt "item amount and name"
 msgid "You carefully place %s %s in the mill."
 msgstr "你小心翼翼地往磨中放入 %s %s 。"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "Cancel incubation (%s left)"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Cancel incubation process?  This will kill the specimen inside."
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "The water mill needs to be over shallow flowing water to work."
@@ -250610,6 +250785,71 @@ msgid "You use the %s to mask your scent"
 msgstr "你使用了 %s 来掩盖体味"
 
 #: src/iuse_actor.cpp
+#, c-format
+msgid "There's not enough charge left in the %s."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Select which creature?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "There's no creature there."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid ""
+"The %s emits a loud error beep!  You failed to gather a sufficient sample."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid ""
+"The %s emits two error beeps.  This creature can't provide a valid sample."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "That creature's genome has already been scanned."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s beeps softly.  You successfully gathered a sample from the %s!"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "What to do with the %s?"
+msgstr "要對 %s 做什麼？"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid ""
+"Examination Results:\n"
+"\n"
+"Sample Name: %s\n"
+"Size Class: %s\n"
+"Weight: %.0fkg\n"
+"Volume: %.0fl"
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid ""
+"This will use up 1 unit of mutagen and 1 unit of biomaterial.  Are you sure?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The research produced a viable %s sample!"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "You produce a unit of %s DNA."
+msgstr ""
+
+#: src/iuse_actor.cpp
 msgid "And when you gaze long into a screen, the screen also gazes into you."
 msgstr "你盯著螢幕, 螢幕也盯著你。"
 
@@ -250639,10 +250879,6 @@ msgstr "大同電鍋跑走了!"
 #: src/iuse_actor.cpp
 msgid "You're surrounded by aggressive multi-cookers!"
 msgstr "你被進擊的大同電鍋包圍了!"
-
-#: src/iuse_actor.cpp
-msgid "ding!"
-msgstr "叮!"
 
 #: src/iuse_actor.cpp
 msgid "Choose option:"
