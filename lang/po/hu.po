@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2025-12-30 07:22+0000\n"
+"POT-Creation-Date: 2025-12-31 20:02+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/bn-team/teams/113585/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -12679,6 +12679,10 @@ msgid "Modify grid connections"
 msgstr ""
 
 #: data/json/item_actions.json
+msgid "Measure grid power"
+msgstr ""
+
+#: data/json/item_actions.json
 msgid "Dry/clean yourself"
 msgstr "Megszárítás"
 
@@ -13979,6 +13983,101 @@ msgstr ""
 #: data/json/loot_zones.json
 msgid ""
 "Any item not otherwise sorted will be placed here if this zone is specified."
+msgstr ""
+
+#: data/json/main.lua
+msgid "Do you want to modify grid connections?"
+msgstr ""
+
+#: data/json/main.lua src/iexamine.cpp src/iuse.cpp
+#, c-format
+msgid "This electric grid stores %d kJ of electric power."
+msgstr ""
+
+#: data/json/main.lua src/iuse.cpp
+#, c-format
+msgid ""
+"\n"
+"Generation: %s"
+msgstr ""
+
+#: data/json/main.lua src/iuse.cpp
+#, c-format
+msgid ""
+"\n"
+"Consumption: %s"
+msgstr ""
+
+#: data/json/main.lua src/iuse.cpp
+#, c-format
+msgid ""
+"\n"
+"Net: %s"
+msgstr ""
+
+#. ~ %s is list of directions
+#: data/json/main.lua src/iuse.cpp
+#, c-format
+msgid "This electric grid has connections: %s."
+msgstr ""
+
+#: data/json/main.lua src/iuse.cpp
+msgid "This electric grid has no connections."
+msgstr ""
+
+#: data/json/main.lua
+msgid "Modify Grid Connections"
+msgstr ""
+
+#: data/json/main.lua src/iuse.cpp
+#, c-format
+msgid "Add connection in direction: %s"
+msgstr ""
+
+#: data/json/main.lua src/iuse.cpp
+#, c-format
+msgid "Remove connection in direction: %s"
+msgstr ""
+
+#: data/json/main.lua
+#, c-format
+msgid "You are connecting a grid with %d elements to a grid with %d elements."
+msgstr ""
+
+#: data/json/main.lua
+#, c-format
+msgid "You are extending a grid with %d elements."
+msgstr ""
+
+#: data/json/main.lua
+#, c-format
+msgid "You are connecting two locations in the same grid, with %d elements."
+msgstr ""
+
+#: data/json/main.lua
+msgid "Error: requirement not found."
+msgstr ""
+
+#: data/json/main.lua src/iuse.cpp
+msgid "Are you sure?"
+msgstr ""
+
+#: data/json/main.lua
+msgid ""
+"This action will not consume any resources.\n"
+"Are you sure?"
+msgstr ""
+
+#: data/json/main.lua
+msgid "Failed to establish grid connection."
+msgstr ""
+
+#: data/json/main.lua
+msgid "Grid connection established."
+msgstr ""
+
+#: data/json/main.lua
+msgid "Grid connection removed."
 msgstr ""
 
 #: data/json/martialarts.json
@@ -125184,9 +125283,9 @@ msgstr[1] ""
 #. ~ Description for {'str': 'gas sac buoyancy cell'}
 #: data/json/items/vehicle/boat.json
 msgid ""
-"Several bags tied together, filled with just enough hydrogen to provide "
-"buoyancy.  Add buoyancy cells to a vehicle until it floats.  Then attach "
-"oars or a motor to get the boat to move."
+"Several bags tied together, filled with hydrogen to provide buoyancy.  Add "
+"buoyancy cells to a vehicle until it floats, or install enough to provide "
+"lift for an airship."
 msgstr ""
 
 #: data/json/items/vehicle/boat.json data/json/vehicleparts/vehicle_parts.json
@@ -129263,10 +129362,6 @@ msgstr ""
 
 #: data/json/mapgen/water_tower/overmap_terrain.json
 msgid "water tower reservoir"
-msgstr ""
-
-#: data/json/mapgen/water_tower/overmap_terrain.json
-msgid "water tower resorvoir"
 msgstr ""
 
 #: data/json/monster_special_attacks/spells.json
@@ -192081,8 +192176,12 @@ msgstr ""
 #. ~ Description for {'str': 'gas sac buoyancy cell'}
 #: data/json/vehicleparts/vehicle_parts.json
 msgid ""
-"Hydrogen-filled bags tied together.  Not light enough to provide lift for an"
-" airship, but can help a boat float."
+"Hydrogen-filled bags tied together.  Can help a boat float or provide "
+"limited lift for an airship."
+msgstr ""
+
+#: data/json/vehicleparts/vehicle_parts.json
+msgid "external gas sac buoyancy cell"
 msgstr ""
 
 #. ~ Description for {'str': 'plastic boat hull'}
@@ -204214,6 +204313,24 @@ msgid ""
 msgstr ""
 "Úgy néz ki, mint egy valamilyen Genetic Lifeform and Disk Operating System, "
 "amit egy krumplihoz csatoltak."
+
+#: data/mods/CrazyCataclysm/crazy_balloons.json
+msgid "bundle of balloons"
+msgid_plural "bundle of balloonss"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bundle of balloons'}
+#: data/mods/CrazyCataclysm/crazy_balloons.json
+msgid ""
+"A large bunch of party balloons tied together with string, attached to a "
+"rock so it doesn't float away. If attached to a vehicle instead this may "
+"provide a small amount of lift."
+msgstr ""
+
+#: data/mods/CrazyCataclysm/crazy_balloons.json
+msgid "external bundle of balloons"
+msgstr ""
 
 #: data/mods/CrazyCataclysm/crazy_comestibles.json
 msgid "SpOreos"
@@ -257366,11 +257483,6 @@ msgstr ""
 msgid "This battery stores %d kJ of electric power."
 msgstr ""
 
-#: src/iexamine.cpp src/iuse.cpp
-#, c-format
-msgid "This electric grid stores %d kJ of electric power."
-msgstr ""
-
 #: src/iexamine.cpp
 msgid "This looks important.  Tear open nerve cluster?"
 msgstr ""
@@ -263325,26 +263437,6 @@ msgid "You will no longer recharge the %s via UPS."
 msgstr ""
 
 #: src/iuse.cpp
-msgid "This electric grid has no connections."
-msgstr ""
-
-#. ~ %s is list of directions
-#: src/iuse.cpp
-#, c-format
-msgid "This electric grid has connections: %s."
-msgstr ""
-
-#: src/iuse.cpp
-#, c-format
-msgid "Remove connection in direction: %s"
-msgstr ""
-
-#: src/iuse.cpp
-#, c-format
-msgid "Add connection in direction: %s"
-msgstr ""
-
-#: src/iuse.cpp
 #, c-format
 msgid "You are connecting two locations in the same grid, with %lu elements."
 msgstr ""
@@ -263374,10 +263466,6 @@ msgid ""
 "%s\n"
 "This action will not consume any resources.\n"
 "Are you sure?"
-msgstr ""
-
-#: src/iuse.cpp
-msgid "Are you sure?"
 msgstr ""
 
 #: src/iuse.cpp
