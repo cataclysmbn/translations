@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-04 15:01+0000\n"
+"POT-Creation-Date: 2026-01-05 19:16+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -237141,6 +237141,25 @@ msgstr "%1$s"
 msgid "You're caught in the explosion!"
 msgstr "你被爆炸波及!"
 
+#. ~ %1$s: entity dealing damage, %2$s: target creature name, %3$d: damage
+#. value
+#: src/explosion.cpp
+#, c-format
+msgid "%1$s flies and hits %2$s for %3$d damage!"
+msgstr "%1$s 飞出击中 %2$s，造成了 %3$d 点伤害！"
+
+#. ~ %1$s: entity dealing damage, %2$s: target creature name
+#: src/explosion.cpp
+#, c-format
+msgid "%1$s flies and hits %2$s but deals no damage."
+msgstr "%1$s 飞出击中 %2$s，但未造成伤害。"
+
+#. ~ %1$s: item name
+#: src/explosion.cpp
+#, c-format
+msgid "%1$s flies and smashes into something!"
+msgstr "%1$s 飞出并撞上了某物！"
+
 #: src/explosion.cpp
 msgid "a huge explosion!"
 msgstr "一聲大爆炸!"
@@ -264240,6 +264259,16 @@ msgid ""
 msgstr "当受到超过阈值的伤害时，爆炸物品和陷阱将会引爆。较高的数字意味着需要更多的伤害来引爆。将其设置为0以禁用该功能。"
 
 #: src/options.cpp
+msgid "Item damage on flying impact"
+msgstr "物品飞行撞击伤害"
+
+#: src/options.cpp
+msgid ""
+"If true, items flung by explosions will deal (lethal) damage to whatever "
+"they hit."
+msgstr "开启后，被爆炸炸飞的物品将对击中的目标造成（致命）伤害。"
+
+#: src/options.cpp
 msgid "Old explosions system"
 msgstr "旧版爆炸系统"
 
@@ -264373,6 +264402,14 @@ msgstr "载具门锁"
 #: src/options.cpp
 msgid "Determines if new vehicles can spawn with locked doors."
 msgstr "决定新生成的载具是否自带已上锁的车门。"
+
+#: src/options.cpp
+msgid "Vehicle spawn rate scaling factor"
+msgstr ""
+
+#: src/options.cpp
+msgid "A scaling factor that determines density of vehicle spawns."
+msgstr ""
 
 #: src/options.cpp
 msgid "Spawn rate scaling factor"
