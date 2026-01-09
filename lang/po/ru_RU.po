@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-08 18:17+0000\n"
+"POT-Creation-Date: 2026-01-09 17:42+0000\n"
 "Last-Translator: Vorpal Void <vorpal.void@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -15085,112 +15085,6 @@ msgstr ""
 "Жидкости в этой зоне будут выпиваться вами, если вы проголодаетесь во время "
 "длительного занятия."
 
-#: data/json/main.lua
-msgid "Do you want to modify grid connections?"
-msgstr "Хотите модифицировать соединения в электросети?"
-
-#: data/json/main.lua src/iexamine.cpp src/iuse.cpp
-#, c-format
-msgid "This electric grid stores %d kJ of electric power."
-msgstr "Эта электрическая сеть хранит %d кДж электроэнергии."
-
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid ""
-"\n"
-"Generation: %s"
-msgstr ""
-"\n"
-"Производство: %s"
-
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid ""
-"\n"
-"Consumption: %s"
-msgstr ""
-"\n"
-"Потребление: %s"
-
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid ""
-"\n"
-"Net: %s"
-msgstr ""
-"\n"
-"Всего: %s"
-
-#. ~ %s is list of directions
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid "This electric grid has connections: %s."
-msgstr "Подключения данной электросети: %s."
-
-#: data/json/main.lua src/iuse.cpp
-msgid "This electric grid has no connections."
-msgstr "Данная электросеть не имеет точек подключения."
-
-#: data/json/main.lua
-msgid "Modify Grid Connections"
-msgstr "Модифицировать соединения"
-
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid "Add connection in direction: %s"
-msgstr "Добавить соединение в направлении: %s"
-
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid "Remove connection in direction: %s"
-msgstr "Убрать соединение в направлении: %s"
-
-#: data/json/main.lua
-#, c-format
-msgid "You are connecting a grid with %d elements to a grid with %d elements."
-msgstr ""
-"Вы соединяете электросеть (%d элементов) с другой электросетью (%d "
-"элементов)."
-
-#: data/json/main.lua
-#, c-format
-msgid "You are extending a grid with %d elements."
-msgstr "Вы расширяете электросеть: %d элементов."
-
-#: data/json/main.lua
-#, c-format
-msgid "You are connecting two locations in the same grid, with %d elements."
-msgstr ""
-"Вы соединяете две локации в одну электросеть, количество элементов: %d."
-
-#: data/json/main.lua
-msgid "Error: requirement not found."
-msgstr "Ошибка: требования не выполнены."
-
-#: data/json/main.lua src/iuse.cpp
-msgid "Are you sure?"
-msgstr "Вы уверены?"
-
-#: data/json/main.lua
-msgid ""
-"This action will not consume any resources.\n"
-"Are you sure?"
-msgstr ""
-"Это действие не требует никаких ресурсов.\n"
-"Вы уверены?"
-
-#: data/json/main.lua
-msgid "Failed to establish grid connection."
-msgstr "Не удалось подключиться к электросети."
-
-#: data/json/main.lua
-msgid "Grid connection established."
-msgstr "Подключение к электросети установлено."
-
-#: data/json/main.lua
-msgid "Grid connection removed."
-msgstr "Подключение к электросети убрано."
-
 #: data/json/martialarts.json
 msgid "No style"
 msgstr "Без стиля"
@@ -17795,7 +17689,7 @@ msgid "Resin"
 msgstr "смола"
 
 #: data/json/materials.json data/mods/Aftershock/items/materials.json
-#: data/mods/MagicalNights/materials.json src/veh_interact.cpp
+#: data/mods/MagicalNights/materials.json src/game.cpp src/veh_interact.cpp
 msgid "dented"
 msgstr "испорчено"
 
@@ -17837,7 +17731,8 @@ msgstr "погнуто"
 msgid "smashed"
 msgstr "разбитый"
 
-#: data/json/materials.json src/character.cpp src/veh_interact.cpp
+#: data/json/materials.json src/character.cpp src/game.cpp
+#: src/veh_interact.cpp
 msgid "destroyed"
 msgstr "уничтожено"
 
@@ -35352,6 +35247,112 @@ msgstr "Хлеб"
 #: data/json/vitamin.json
 msgid "Milk"
 msgstr "Молоко"
+
+#: data/json/voltmeter.lua
+msgid "Do you want to modify grid connections?"
+msgstr "Хотите модифицировать соединения в электросети?"
+
+#: data/json/voltmeter.lua src/iexamine.cpp src/iuse.cpp
+#, c-format
+msgid "This electric grid stores %d kJ of electric power."
+msgstr "Эта электрическая сеть хранит %d кДж электроэнергии."
+
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid ""
+"\n"
+"Generation: %s"
+msgstr ""
+"\n"
+"Производство: %s"
+
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid ""
+"\n"
+"Consumption: %s"
+msgstr ""
+"\n"
+"Потребление: %s"
+
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid ""
+"\n"
+"Net: %s"
+msgstr ""
+"\n"
+"Всего: %s"
+
+#. ~ %s is list of directions
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid "This electric grid has connections: %s."
+msgstr "Подключения данной электросети: %s."
+
+#: data/json/voltmeter.lua src/iuse.cpp
+msgid "This electric grid has no connections."
+msgstr "Данная электросеть не имеет точек подключения."
+
+#: data/json/voltmeter.lua
+msgid "Modify Grid Connections"
+msgstr "Модифицировать соединения"
+
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid "Add connection in direction: %s"
+msgstr "Добавить соединение в направлении: %s"
+
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid "Remove connection in direction: %s"
+msgstr "Убрать соединение в направлении: %s"
+
+#: data/json/voltmeter.lua
+#, c-format
+msgid "You are connecting a grid with %d elements to a grid with %d elements."
+msgstr ""
+"Вы соединяете электросеть (%d элементов) с другой электросетью (%d "
+"элементов)."
+
+#: data/json/voltmeter.lua
+#, c-format
+msgid "You are extending a grid with %d elements."
+msgstr "Вы расширяете электросеть: %d элементов."
+
+#: data/json/voltmeter.lua
+#, c-format
+msgid "You are connecting two locations in the same grid, with %d elements."
+msgstr ""
+"Вы соединяете две локации в одну электросеть, количество элементов: %d."
+
+#: data/json/voltmeter.lua
+msgid "Error: requirement not found."
+msgstr "Ошибка: требования не выполнены."
+
+#: data/json/voltmeter.lua src/iuse.cpp
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+#: data/json/voltmeter.lua
+msgid ""
+"This action will not consume any resources.\n"
+"Are you sure?"
+msgstr ""
+"Это действие не требует никаких ресурсов.\n"
+"Вы уверены?"
+
+#: data/json/voltmeter.lua
+msgid "Failed to establish grid connection."
+msgstr "Не удалось подключиться к электросети."
+
+#: data/json/voltmeter.lua
+msgid "Grid connection established."
+msgstr "Подключение к электросети установлено."
+
+#: data/json/voltmeter.lua
+msgid "Grid connection removed."
+msgstr "Подключение к электросети убрано."
 
 #. ~ weapon category name
 #: data/json/weapon_categories.json
@@ -276297,6 +276298,15 @@ msgstr "Телепортация"
 msgid "Add craftable and buildable teleporters."
 msgstr "Добавляет создаваемые и устанавливаемые телепорты."
 
+#: data/mods/test_lua_require/modinfo.json
+msgid "Test Lua Require"
+msgstr ""
+
+#. ~ Description for Test Lua Require
+#: data/mods/test_lua_require/modinfo.json
+msgid "Test mod for Lua relative and absolute imports"
+msgstr ""
+
 #: data/mods/underground_dynamic_temperature/modinfo.json
 msgid "Underground Dynamic Temperature"
 msgstr "Динамическая температура под землёй"
@@ -278274,6 +278284,10 @@ msgstr "Выключить зону"
 #: data/raw/keybindings/keybindings.json
 msgid "Show all zones / hide distant zones"
 msgstr "Показать все зоны / спрятать удалённые зоны"
+
+#: data/raw/keybindings/keybindings.json src/debug_menu.cpp
+msgid "Toggle zone overlay"
+msgstr "Переключить видимость зон"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Select left inventory"
@@ -282283,11 +282297,11 @@ msgstr ""
 "Натолкнитесь на большее количество специальных событий, чтобы заполнить этот"
 " список"
 
-#: src/auto_note.cpp src/editmap.cpp
+#: src/auto_note.cpp src/editmap.cpp src/game.cpp
 msgid "no"
 msgstr "нет"
 
-#: src/auto_note.cpp src/crafting_gui.cpp src/editmap.cpp
+#: src/auto_note.cpp src/crafting_gui.cpp src/editmap.cpp src/game.cpp
 msgid "yes"
 msgstr "да"
 
@@ -289781,10 +289795,6 @@ msgid "Toggle display submap grid"
 msgstr "Переключить отображение сетки подкарты"
 
 #: src/debug_menu.cpp
-msgid "Toggle zone overlay"
-msgstr "Переключить видимость зон"
-
-#: src/debug_menu.cpp
 msgid "Set automove target"
 msgstr "Установить цель автодвижения"
 
@@ -292411,7 +292421,7 @@ msgstr "Вам и вашему спутнику нужна рация"
 msgid "Within interaction range"
 msgstr "В пределах радиуса взаимодействия"
 
-#: src/faction.cpp
+#: src/faction.cpp src/game.cpp
 msgid "Status: "
 msgstr "Состояние: "
 
@@ -293386,6 +293396,10 @@ msgid "<M>ap"
 msgstr "<M>: карта"
 
 #: src/game.cpp
+msgid "<O> - Toggle Overlays"
+msgstr ""
+
+#: src/game.cpp
 msgid "Zones manager"
 msgstr "Редактор зон"
 
@@ -293494,9 +293508,94 @@ msgstr "<+/->Приоритет"
 msgid "<T>ravel to"
 msgstr "<T>:Подойти"
 
+#: src/game.cpp src/veh_interact.cpp
+msgid "like new"
+msgstr "как новое"
+
+#: src/game.cpp src/veh_interact.cpp
+msgid "battered"
+msgstr "побито"
+
+#: src/game.cpp src/veh_interact.cpp
+msgid "wrecked"
+msgstr "разрушено"
+
 #: src/game.cpp
-msgid "You don't see any items or monsters around you!"
-msgstr "Вы не видите вокруг себя ни предметов, ни монстров!"
+msgid "Vehicles"
+msgstr ""
+
+#: src/game.cpp
+msgid "You don't see any vehicles around you!"
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "%d %s"
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "Engine: %s"
+msgstr ""
+
+#: src/game.cpp
+msgid "off"
+msgstr ""
+
+#: src/game.cpp
+msgid "on"
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "Moving: %s"
+msgstr ""
+
+#: src/game.cpp
+msgid "This vehicle has enough wheels."
+msgstr ""
+
+#: src/game.cpp
+msgid "This vehicle does not have enough wheels."
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "%s / %s %s"
+msgstr ""
+
+#: src/game.cpp
+msgid "This vehicle is leaking fuel."
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "Floats: %s"
+msgstr ""
+
+#: src/game.cpp
+msgid "Speed: "
+msgstr ""
+
+#: src/game.cpp
+msgid "Engine: "
+msgstr ""
+
+#: src/game.cpp
+msgid "Cargo: "
+msgstr ""
+
+#: src/game.cpp
+msgid "This vehicle can float."
+msgstr ""
+
+#: src/game.cpp
+msgid "This vehicle can't float."
+msgstr ""
+
+#: src/game.cpp
+msgid "You don't see any items, monsters, or vehicles around you!"
+msgstr ""
 
 #: src/game.cpp
 msgctxt "list items"
@@ -321517,8 +321616,12 @@ msgid "Type COLOR;TEXT to set a custom color."
 msgstr "Напишите ЦВЕТ;ТЕКСТ, чтобы установить пользовательский цвет."
 
 #: src/overmap_ui.cpp
-msgid "Examples: B:Base | g;Loot | !:R;Minefield"
-msgstr "Примеры: B;База | g;Предметы | !:R;Минное поле"
+msgid "Type SPRITE:TILE_ID to set a custom sprite."
+msgstr ""
+
+#: src/overmap_ui.cpp
+msgid "Examples: B:Base | g;Loot | SPRITE:toolbox;g;Tools"
+msgstr ""
 
 #: src/overmap_ui.cpp
 msgid "Note:"
@@ -326341,18 +326444,6 @@ msgstr "Ёмкость батарей"
 #, c-format
 msgid "Power: <color_light_gray>%+8d</color>"
 msgstr "Зарядка: <color_light_gray>%+8d</color>"
-
-#: src/veh_interact.cpp
-msgid "like new"
-msgstr "как новое"
-
-#: src/veh_interact.cpp
-msgid "battered"
-msgstr "побито"
-
-#: src/veh_interact.cpp
-msgid "wrecked"
-msgstr "разрушено"
 
 #: src/veh_interact.cpp
 msgid "Select tank to siphon:"

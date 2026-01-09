@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-08 18:17+0000\n"
+"POT-Creation-Date: 2026-01-09 17:42+0000\n"
 "Last-Translator: Choi Dong-uk, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -13079,7 +13079,7 @@ msgstr "장비 무기"
 
 #: data/json/item_category.json
 msgid "USABLE BIONICS"
-msgstr ""
+msgstr "이용 가능한 바이오닉"
 
 #: data/json/legacy_artifact_active.json
 msgid "Artifact Adrenaline"
@@ -14190,109 +14190,6 @@ msgid ""
 "Items in this zone will be automatically consumed during a long activity if "
 "you get thirsty."
 msgstr "장기간 활동 중에 목이 마르면 자동적으로 이 영역 내에 있는 음료를 마실 것입니다."
-
-#: data/json/main.lua
-msgid "Do you want to modify grid connections?"
-msgstr "전력망 연결을 변경합니까?"
-
-#: data/json/main.lua src/iexamine.cpp src/iuse.cpp
-#, c-format
-msgid "This electric grid stores %d kJ of electric power."
-msgstr "이 전력망은 %d kJ의 전력을 저장 중입니다."
-
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid ""
-"\n"
-"Generation: %s"
-msgstr ""
-"\n"
-"생산: %s"
-
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid ""
-"\n"
-"Consumption: %s"
-msgstr ""
-"\n"
-"소비: %s"
-
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid ""
-"\n"
-"Net: %s"
-msgstr ""
-"\n"
-"연결: %s"
-
-#. ~ %s is list of directions
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid "This electric grid has connections: %s."
-msgstr "이 전력망에 다음의 연결이 존재합니다: %s."
-
-#: data/json/main.lua src/iuse.cpp
-msgid "This electric grid has no connections."
-msgstr "이 전력망에 연결이 존재하지 않습니다."
-
-#: data/json/main.lua
-msgid "Modify Grid Connections"
-msgstr "전력망 연결 변경"
-
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid "Add connection in direction: %s"
-msgstr "%s 방향의 전력망 연결 추가"
-
-#: data/json/main.lua src/iuse.cpp
-#, c-format
-msgid "Remove connection in direction: %s"
-msgstr "%s 방향의 전력망 연결 제거"
-
-#: data/json/main.lua
-#, c-format
-msgid "You are connecting a grid with %d elements to a grid with %d elements."
-msgstr "전력망 (%d)과 전력망 (%d)을 연결하려 하고 있습니다."
-
-#: data/json/main.lua
-#, c-format
-msgid "You are extending a grid with %d elements."
-msgstr "전력망 (%d)을 확장하려 하고 있습니다."
-
-#: data/json/main.lua
-#, c-format
-msgid "You are connecting two locations in the same grid, with %d elements."
-msgstr "동일한 전력망 (%d) 내의 두 지점을 연결하려 하고 있습니다."
-
-#: data/json/main.lua
-msgid "Error: requirement not found."
-msgstr "오류: 필요사항을 찾을 수 없습니다."
-
-#: data/json/main.lua src/iuse.cpp
-msgid "Are you sure?"
-msgstr "이대로 진행할까요?"
-
-#: data/json/main.lua
-msgid ""
-"This action will not consume any resources.\n"
-"Are you sure?"
-msgstr ""
-"이 행동은 아무 자원도 소모하지 않을 것입니다.\n"
-"이대로 진행할까요?"
-
-#: data/json/main.lua
-msgid "Failed to establish grid connection."
-msgstr "전력망 연결 생성에 실패했습니다."
-
-#: data/json/main.lua
-msgid "Grid connection established."
-msgstr "전력망 연결이 생성되었습니다."
-
-#: data/json/main.lua
-msgid "Grid connection removed."
-msgstr "전력망 연결이 제거되었습니다."
 
 #: data/json/martialarts.json
 msgid "No style"
@@ -16828,7 +16725,7 @@ msgid "Resin"
 msgstr "수지"
 
 #: data/json/materials.json data/mods/Aftershock/items/materials.json
-#: data/mods/MagicalNights/materials.json src/veh_interact.cpp
+#: data/mods/MagicalNights/materials.json src/game.cpp src/veh_interact.cpp
 msgid "dented"
 msgstr "찌그러진"
 
@@ -16870,7 +16767,8 @@ msgstr "구부러진"
 msgid "smashed"
 msgstr "거의 박살난"
 
-#: data/json/materials.json src/character.cpp src/veh_interact.cpp
+#: data/json/materials.json src/character.cpp src/game.cpp
+#: src/veh_interact.cpp
 msgid "destroyed"
 msgstr "박살난"
 
@@ -33352,6 +33250,109 @@ msgstr "빵"
 #: data/json/vitamin.json
 msgid "Milk"
 msgstr "우유"
+
+#: data/json/voltmeter.lua
+msgid "Do you want to modify grid connections?"
+msgstr "전력망 연결을 변경합니까?"
+
+#: data/json/voltmeter.lua src/iexamine.cpp src/iuse.cpp
+#, c-format
+msgid "This electric grid stores %d kJ of electric power."
+msgstr "이 전력망은 %d kJ의 전력을 저장 중입니다."
+
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid ""
+"\n"
+"Generation: %s"
+msgstr ""
+"\n"
+"생산: %s"
+
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid ""
+"\n"
+"Consumption: %s"
+msgstr ""
+"\n"
+"소비: %s"
+
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid ""
+"\n"
+"Net: %s"
+msgstr ""
+"\n"
+"연결: %s"
+
+#. ~ %s is list of directions
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid "This electric grid has connections: %s."
+msgstr "이 전력망에 다음의 연결이 존재합니다: %s."
+
+#: data/json/voltmeter.lua src/iuse.cpp
+msgid "This electric grid has no connections."
+msgstr "이 전력망에 연결이 존재하지 않습니다."
+
+#: data/json/voltmeter.lua
+msgid "Modify Grid Connections"
+msgstr "전력망 연결 변경"
+
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid "Add connection in direction: %s"
+msgstr "%s 방향의 전력망 연결 추가"
+
+#: data/json/voltmeter.lua src/iuse.cpp
+#, c-format
+msgid "Remove connection in direction: %s"
+msgstr "%s 방향의 전력망 연결 제거"
+
+#: data/json/voltmeter.lua
+#, c-format
+msgid "You are connecting a grid with %d elements to a grid with %d elements."
+msgstr "전력망 (%d)과 전력망 (%d)을 연결하려 하고 있습니다."
+
+#: data/json/voltmeter.lua
+#, c-format
+msgid "You are extending a grid with %d elements."
+msgstr "전력망 (%d)을 확장하려 하고 있습니다."
+
+#: data/json/voltmeter.lua
+#, c-format
+msgid "You are connecting two locations in the same grid, with %d elements."
+msgstr "동일한 전력망 (%d) 내의 두 지점을 연결하려 하고 있습니다."
+
+#: data/json/voltmeter.lua
+msgid "Error: requirement not found."
+msgstr "오류: 필요사항을 찾을 수 없습니다."
+
+#: data/json/voltmeter.lua src/iuse.cpp
+msgid "Are you sure?"
+msgstr "이대로 진행할까요?"
+
+#: data/json/voltmeter.lua
+msgid ""
+"This action will not consume any resources.\n"
+"Are you sure?"
+msgstr ""
+"이 행동은 아무 자원도 소모하지 않을 것입니다.\n"
+"이대로 진행할까요?"
+
+#: data/json/voltmeter.lua
+msgid "Failed to establish grid connection."
+msgstr "전력망 연결 생성에 실패했습니다."
+
+#: data/json/voltmeter.lua
+msgid "Grid connection established."
+msgstr "전력망 연결이 생성되었습니다."
+
+#: data/json/voltmeter.lua
+msgid "Grid connection removed."
+msgstr "전력망 연결이 제거되었습니다."
 
 #. ~ weapon category name
 #: data/json/weapon_categories.json
@@ -112977,7 +112978,7 @@ msgstr ""
 #: data/json/items/tool/entry_tools.json
 msgid "bionic lockpick"
 msgid_plural "bionic lockpicks"
-msgstr[0] ""
+msgstr[0] "바이오닉 락픽"
 
 #: data/json/items/tool/explosives.json
 msgid "debug shrapnel"
@@ -227360,6 +227361,9 @@ msgid ""
 "This device currently holds %d book(s).\n"
 "Network sync unavailable."
 msgstr ""
+"전자책 도서관에 오신 것을 환영합니다!\n"
+"이 장치에 현재 책 %d권이 저장되어 있습니다.\n"
+"네트워크 동기화를 이용할 수 없습니다."
 
 #: data/mods/ebook_lua/main.lua
 msgid "Scan book(s)"
@@ -227367,7 +227371,7 @@ msgstr "책 스캔"
 
 #: data/mods/ebook_lua/main.lua
 msgid "Scan all the books you have. It will progress instantly."
-msgstr ""
+msgstr "현재 가진 책 전체를 스캔합니다. 즉시 실행됩니다."
 
 #: data/mods/ebook_lua/main.lua
 msgid "Load book(s)"
@@ -229906,6 +229910,9 @@ msgid ""
 " <color_blue>f</color><color_magenta>o</color><color_red>r</color> "
 "<color_pink>B</color><color_yellow>N</color>"
 msgstr ""
+"<color_red>자</color><color_pink>긍</color><color_yellow>심</color> "
+"<color_green>깃</color><color_blue>발</color> <color_magenta>-</color> "
+"<color_red>밝</color><color_pink>은</color><color_yellow>밤</color><color_green>용</color>"
 
 #. ~ Description for
 #. <color_red>P</color><color_pink>r</color><color_yellow>i</color><color_green>d</color><color_blue>e</color>
@@ -231458,6 +231465,15 @@ msgstr "공간이동"
 #: data/mods/teleportation_mod/modinfo.json
 msgid "Add craftable and buildable teleporters."
 msgstr "제작 및 설치할 수 있는 공간이동 장치를 추가합니다."
+
+#: data/mods/test_lua_require/modinfo.json
+msgid "Test Lua Require"
+msgstr ""
+
+#. ~ Description for Test Lua Require
+#: data/mods/test_lua_require/modinfo.json
+msgid "Test mod for Lua relative and absolute imports"
+msgstr ""
 
 #: data/mods/underground_dynamic_temperature/modinfo.json
 msgid "Underground Dynamic Temperature"
@@ -233318,6 +233334,10 @@ msgstr "영역 비활성"
 #: data/raw/keybindings/keybindings.json
 msgid "Show all zones / hide distant zones"
 msgstr "모든 영역 보이기 / 먼 곳의 영역 숨기기"
+
+#: data/raw/keybindings/keybindings.json src/debug_menu.cpp
+msgid "Toggle zone overlay"
+msgstr "구역 오버레이 설정"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Select left inventory"
@@ -237126,11 +237146,11 @@ msgstr "<S>witch"
 msgid "Discover more special encounters to populate this list"
 msgstr "이 목록을 채우기 위하여 더 특별한 만남을 발견하십시오."
 
-#: src/auto_note.cpp src/editmap.cpp
+#: src/auto_note.cpp src/editmap.cpp src/game.cpp
 msgid "no"
 msgstr "안 돼"
 
-#: src/auto_note.cpp src/crafting_gui.cpp src/editmap.cpp
+#: src/auto_note.cpp src/crafting_gui.cpp src/editmap.cpp src/game.cpp
 msgid "yes"
 msgstr "가능"
 
@@ -244359,10 +244379,6 @@ msgid "Toggle display submap grid"
 msgstr "서브맵 그리드 표시 활성화/비활성화"
 
 #: src/debug_menu.cpp
-msgid "Toggle zone overlay"
-msgstr "구역 오버레이 설정"
-
-#: src/debug_menu.cpp
 msgid "Set automove target"
 msgstr "자동이동 대상 설정"
 
@@ -246954,7 +246970,7 @@ msgstr "당신과 동료 모두 라디오가 필요합니다"
 msgid "Within interaction range"
 msgstr "상호작용 범위 안"
 
-#: src/faction.cpp
+#: src/faction.cpp src/game.cpp
 msgid "Status: "
 msgstr "상태: "
 
@@ -247908,6 +247924,10 @@ msgid "<M>ap"
 msgstr "<M>지도"
 
 #: src/game.cpp
+msgid "<O> - Toggle Overlays"
+msgstr "<O> - 오버레이 설정"
+
+#: src/game.cpp
 msgid "Zones manager"
 msgstr "영역 관리자"
 
@@ -248016,9 +248036,94 @@ msgstr "<+/->우선도"
 msgid "<T>ravel to"
 msgstr "[<T>] 다음 장소로 이동"
 
+#: src/game.cpp src/veh_interact.cpp
+msgid "like new"
+msgstr "새 것 같음"
+
+#: src/game.cpp src/veh_interact.cpp
+msgid "battered"
+msgstr "너덜너덜"
+
+#: src/game.cpp src/veh_interact.cpp
+msgid "wrecked"
+msgstr "심하게 망가진"
+
 #: src/game.cpp
-msgid "You don't see any items or monsters around you!"
-msgstr "주변에서 어떤 물품이나 적도 찾을 수 없습니다!"
+msgid "Vehicles"
+msgstr "차량"
+
+#: src/game.cpp
+msgid "You don't see any vehicles around you!"
+msgstr "주변에 어떤 차량도 보이지 않습니다!"
+
+#: src/game.cpp
+#, c-format
+msgid "%d %s"
+msgstr "%d %s"
+
+#: src/game.cpp
+#, c-format
+msgid "Engine: %s"
+msgstr "엔진: %s"
+
+#: src/game.cpp
+msgid "off"
+msgstr "작동중지"
+
+#: src/game.cpp
+msgid "on"
+msgstr "작동"
+
+#: src/game.cpp
+#, c-format
+msgid "Moving: %s"
+msgstr "이동: %s"
+
+#: src/game.cpp
+msgid "This vehicle has enough wheels."
+msgstr "이 차량에 바퀴가 충분합니다."
+
+#: src/game.cpp
+msgid "This vehicle does not have enough wheels."
+msgstr "이 차량에 바퀴가 부족합니다."
+
+#: src/game.cpp
+#, c-format
+msgid "%s / %s %s"
+msgstr "%s / %s %s"
+
+#: src/game.cpp
+msgid "This vehicle is leaking fuel."
+msgstr "이 차량에서 연료가 새고 있습니다."
+
+#: src/game.cpp
+#, c-format
+msgid "Floats: %s"
+msgstr "부력: %s"
+
+#: src/game.cpp
+msgid "Speed: "
+msgstr "속도: "
+
+#: src/game.cpp
+msgid "Engine: "
+msgstr "엔진: "
+
+#: src/game.cpp
+msgid "Cargo: "
+msgstr "화물: "
+
+#: src/game.cpp
+msgid "This vehicle can float."
+msgstr "이 차량은 뜰 수 있습니다."
+
+#: src/game.cpp
+msgid "This vehicle can't float."
+msgstr "이 차량은 뜰 수 없습니다."
+
+#: src/game.cpp
+msgid "You don't see any items, monsters, or vehicles around you!"
+msgstr "주변에 물품, 괴물, 차량이 보이지 않습니다!"
 
 #: src/game.cpp
 msgctxt "list items"
@@ -274964,15 +275069,19 @@ msgstr "색 코드: "
 
 #: src/overmap_ui.cpp
 msgid "Type GLYPH:TEXT to set a custom glyph."
-msgstr "타입 상형 문자:TEXT를 입력하여 사용자 정의 상형문자를 설정."
+msgstr "상징문자:텍스트를 입력하여 사용자 정의 상징문자를 설정할 수 있습니다."
 
 #: src/overmap_ui.cpp
 msgid "Type COLOR;TEXT to set a custom color."
-msgstr "타입 컬러;TEXT를 입력하여 사용자 정의 색상을 설정."
+msgstr "색상;텍스트를 입력하여 해당 문구에 사용할 사용자 정의 색상을 설정할 수 있습니다."
 
 #: src/overmap_ui.cpp
-msgid "Examples: B:Base | g;Loot | !:R;Minefield"
-msgstr "예시: B:거점 | g;Loot | !:R:지뢰밭"
+msgid "Type SPRITE:TILE_ID to set a custom sprite."
+msgstr "SPRITE:타일 아이디를 입력하여 해당 타일에 사용할 사용자 정의 스프라이트를 설정할 수 있습니다."
+
+#: src/overmap_ui.cpp
+msgid "Examples: B:Base | g;Loot | SPRITE:toolbox;g;Tools"
+msgstr "예시: B:거점 | g:수집품 | SPRITE:toolbox;g;도구"
 
 #: src/overmap_ui.cpp
 msgid "Note:"
@@ -279662,18 +279771,6 @@ msgstr "전력량"
 #, c-format
 msgid "Power: <color_light_gray>%+8d</color>"
 msgstr "엔진 출력: <color_light_gray>%+8d</color>"
-
-#: src/veh_interact.cpp
-msgid "like new"
-msgstr "새 것 같음"
-
-#: src/veh_interact.cpp
-msgid "battered"
-msgstr "너덜너덜"
-
-#: src/veh_interact.cpp
-msgid "wrecked"
-msgstr "심하게 망가진"
 
 #: src/veh_interact.cpp
 msgid "Select tank to siphon:"
