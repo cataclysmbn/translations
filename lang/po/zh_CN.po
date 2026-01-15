@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-14 19:02+0000\n"
+"POT-Creation-Date: 2026-01-15 19:12+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -16820,10 +16820,9 @@ msgstr "射出酸液球的假枪。"
 #: data/json/items/gun/nail.json data/json/items/gun/plasma.json
 #: data/json/items/gun/shot.json data/json/items/gun/ups.json
 #: data/json/items/gunmod/mechanism.json data/json/items/ranged/pneumatic.json
-#: data/json/obsoletion/items.json data/mods/exotic_ammo/gun/46.json
-#: data/mods/exotic_ammo/gun/545x39.json data/mods/exotic_ammo/gun/57.json
-#: data/mods/exotic_ammo/gun/762x25.json data/mods/exotic_ammo/gun/9x18.json
-#: data/mods/exotic_ammo/items/gun/22.json
+#: data/mods/exotic_ammo/gun/46.json data/mods/exotic_ammo/gun/545x39.json
+#: data/mods/exotic_ammo/gun/57.json data/mods/exotic_ammo/gun/762x25.json
+#: data/mods/exotic_ammo/gun/9x18.json data/mods/exotic_ammo/items/gun/22.json
 #: data/mods/exotic_ammo/items/gun/223.json src/item_factory.cpp
 msgid "auto"
 msgstr "自动"
@@ -25142,6 +25141,7 @@ msgstr "无论是由于固执，无知，或者仅仅是运气不好，反正你
 #. ~ Starting location for scenario 'Missed'.
 #. ~ Starting location for scenario 'Surrounded'.
 #. ~ Starting location for scenario 'Infected'.
+#. ~ Starting location for scenario 'Challenge - Hunted'.
 #. ~ Starting location for scenario 'Burning Building'.
 #. ~ Starting location for scenario 'Challenge - Really Bad Day'.
 #: data/json/scenarios.json
@@ -25306,6 +25306,36 @@ msgid ""
 "In the chaos and panic of evacuation, you got bitten by something!  You "
 "didn't get proper medical care, and now the wound has started turning green."
 msgstr "在混乱和恐慌的撤离行动中，你被什么东西给咬了！由于没有得到及时的医治，现在伤口都开始变绿了，情况危急。"
+
+#. ~ Name for scenario 'Challenge - Hunted' for a male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "Challenge - Hunted"
+msgstr "挑战 - 被追杀"
+
+#. ~ Name for scenario 'Challenge - Hunted' for a female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "Challenge - Hunted"
+msgstr "挑战 - 被追杀"
+
+#. ~ Description for scenario 'Challenge - Hunted' for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr "自大灾变爆发以来，有个东西一直在对你穷追不舍。虽然你能甩掉它，但它似乎总能再次找到你。只有当你们其中一方死去，这场追逐才会终结。"
+
+#. ~ Description for scenario 'Challenge - Hunted' for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr "自大灾变爆发以来，有个东西一直在对你穷追不舍。虽然你能甩掉它，但它似乎总能再次找到你。只有当你们其中一方死去，这场追逐才会终结。"
 
 #. ~ Name for scenario 'Burning Building' for a male character
 #: data/json/scenarios.json
@@ -99335,6 +99365,45 @@ msgid ""
 msgstr ""
 "这是一种特殊改装的手工电容组，尽管是手工制作，但绝不粗糙。其设计旨在提高能量传输效率，并利用原子电池来减少（但无法完全消除）电力消耗。在大灾变前的抗议活动期间，比起简易轨道炮武器和改装枪械，这种电容组更为罕见，主要原因是某些关键材料极为稀缺。不幸的是，由于简易加速装置缺乏适当的内部组件，该电容组无法用于它们。"
 
+#: data/json/items/gunmod/mechanism.json
+msgid "auto-fire mechanism"
+msgid_plural "auto-fire mechanisms"
+msgstr[0] "连发装置"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A simple mechanism that converts a pistol to a selective fire weapon with a "
+"burst size of three rounds.  However it reduces accuracy and increases "
+"noise."
+msgstr "一套枪械改造模组，可以为手枪增加三连发射击模式，然而同时会降低命中率并增加噪音。"
+
+#: data/json/items/gunmod/mechanism.json
+msgid "belt feed adapter"
+msgid_plural "belt feed adapters"
+msgstr[0] "子弹带适配器"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A kit providing the necessary parts for permanently converting a firearm "
+"from magazine to belt-feed.  Guaranteed to void your warranty."
+msgstr "一套工具，用于将枪械永久地从弹匣供弹改装为弹链供弹。保证让枪的保修失效。"
+
+#: data/json/items/gunmod/mechanism.json
+#: data/mods/exotic_ammo/items/gunmod/magazine.json
+msgid "magazine"
+msgstr "弹仓"
+
+#: data/json/items/gunmod/mechanism.json
+msgid "tuned mechanism"
+msgid_plural "tuned mechanisms"
+msgstr[0] "枪械精调件"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A set of finely tuned internal components which increase the precision and "
+"reliably of a firearm."
+msgstr "通过微调枪械内部组件从而增加其精度和可靠的一套组件。"
+
 #: data/json/items/gunmod/muzzle.json
 msgid "ported barrel"
 msgid_plural "ported barrels"
@@ -125928,6 +125997,18 @@ msgstr ""
 "一个全身肌肉都发生了变异的超大块头丧尸，体型约为六个人大小，双臂极为强壮，力量之大足以击碎墙壁，愤怒的破坏欲支配着它粉碎着所能见到的一切，极为危险。"
 
 #: data/json/monsters/zed_misc.json
+msgid "relentless hulk"
+msgid_plural "relentless hulks"
+msgstr[0] "穷追不舍的浩克"
+
+#. ~ Description for {'str': 'relentless hulk'}
+#: data/json/monsters/zed_misc.json
+msgid ""
+"A hulking zombie swollen to the size of six men.  Its inky black eyes are "
+"locked on you.  No matter how far you run, it always seems to find you."
+msgstr "一具体型庞大的丧尸，肿胀得有六个成年人那么大。它那漆黑的双眼死死地盯着你。无论你逃到哪里，它似乎总能找到你。"
+
+#: data/json/monsters/zed_misc.json
 msgid "zombie hunter"
 msgid_plural "zombie hunters"
 msgstr[0] "狩猎者丧尸"
@@ -133785,6 +133866,18 @@ msgid ""
 msgstr "你不是一个聪明的射手。你的远程射击不可能暴击，你更有可能击中敌人的身体或四肢而不是头部。"
 
 #: data/json/mutations/mutations.json
+msgid "Hunted"
+msgstr "被追杀"
+
+#. ~ Description for {'str': 'Hunted'}
+#: data/json/mutations/mutations.json
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr "自大灾变爆发以来，有个东西一直在对你穷追不舍。虽然你能甩掉它，但它似乎总能再次找到你。只有当你们其中一方死去，这场追逐才会终结。"
+
+#: data/json/mutations/mutations.json
 msgid "Lost To The Cataclysm"
 msgstr "失落大灾变"
 
@@ -139942,6 +140035,18 @@ msgstr "愿那个混蛋死翘翘了。"
 #: data/json/npcs/missiondef.json
 msgid "I don't think we got it yet."
 msgstr "我想我们还没干掉它。"
+
+#: data/json/npcs/missiondef.json
+msgid "Kill Your Pursuer"
+msgstr "杀死你的追击者"
+
+#. ~ Description for mission '{'str': 'Kill Your Pursuer'}'
+#: data/json/npcs/missiondef.json
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it but never truly escape it.  It won't end "
+"until one of you dies."
+msgstr "自大灾变爆发以来，有个东西一直在对你穷追不舍。你可以甩掉它，但永远无法真正摆脱它。除非你们之中死一个，否则这一切绝不会结束。"
 
 #: data/json/npcs/missiondef.json
 msgid "Kill Jabberwock"
@@ -161543,18 +161648,6 @@ msgid ""
 msgstr "改良的反冲式枪机结构，使得全自动射击时射速更快，但会降低命中率并增加噪音。"
 
 #: data/json/obsoletion/items.json
-msgid "auto-fire mechanism"
-msgid_plural "auto-fire mechanisms"
-msgstr[0] "连发装置"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A simple mechanism that converts a pistol to a selective fire weapon with a "
-"burst size of three rounds.  However it reduces accuracy and increases "
-"noise."
-msgstr "一套枪械改造模组，可以为手枪增加三连发射击模式，然而同时会降低命中率并增加噪音。"
-
-#: data/json/obsoletion/items.json
 msgid ".22 caliber conversion kit"
 msgid_plural ".22 caliber conversion kits"
 msgstr[0] ".22 口径改装件"
@@ -161601,33 +161694,6 @@ msgid ""
 "converts it to a 9x19mm firearm.  The conversion results in a slight "
 "reduction to accuracy."
 msgstr "这套改装工具可以将9x18mm、.38、.40、.44和.45口径的枪械改装成9mm口径，会稍微降低命中率。"
-
-#: data/json/obsoletion/items.json
-msgid "belt feed adapter"
-msgid_plural "belt feed adapters"
-msgstr[0] "子弹带适配器"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A kit providing the necessary parts for permanently converting a firearm "
-"from magazine to belt-feed.  Guaranteed to void your warranty."
-msgstr "一套工具，用于将枪械永久地从弹匣供弹改装为弹链供弹。保证让枪的保修失效。"
-
-#: data/json/obsoletion/items.json
-#: data/mods/exotic_ammo/items/gunmod/magazine.json
-msgid "magazine"
-msgstr "弹仓"
-
-#: data/json/obsoletion/items.json
-msgid "tuned mechanism"
-msgid_plural "tuned mechanisms"
-msgstr[0] "枪械精调件"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A set of finely tuned internal components which increase the precision and "
-"reliably of a firearm."
-msgstr "通过微调枪械内部组件从而增加其精度和可靠的一套组件。"
 
 #: data/json/obsoletion/items.json data/json/obsoletion/uncategorized.json
 msgid "Magnesium Supplements"
@@ -230818,7 +230884,7 @@ msgid "Press PgUp/PgDn/Home/End to scroll output window"
 msgstr ""
 
 #: src/character.cpp src/debug_menu.cpp src/game.cpp src/iuse.cpp
-#: src/npctrade.cpp
+#: src/npctalk.cpp src/npctrade.cpp
 msgid "You"
 msgstr "你"
 
@@ -236807,29 +236873,28 @@ msgid "Flags: "
 msgstr "标签："
 
 #: src/dialogue_win.cpp
-#, c-format
-msgid "Dialogue: %s"
-msgstr "对话：%s"
+msgid "Dialogue:"
+msgstr "对话："
 
 #: src/dialogue_win.cpp
 msgid "Your response:"
 msgstr "你的回复："
 
 #: src/dialogue_win.cpp
-msgid "Shift+L: Look at"
-msgstr "Shift+L：审视对方"
+msgid "L: Look at"
+msgstr "L：审视对方"
 
 #: src/dialogue_win.cpp
-msgid "Shift+S: Size up stats"
-msgstr "Shift+S：估测状态"
+msgid "S: Size up stats"
+msgstr "S：估测状态"
 
 #: src/dialogue_win.cpp
-msgid "Shift+Y: Yell"
-msgstr "Shift+Y：大声叫喊"
+msgid "Y: Yell"
+msgstr "Y：大声叫喊"
 
 #: src/dialogue_win.cpp
-msgid "Shift+O: Check opinion"
-msgstr "Shift+O：观察态度"
+msgid "O: Check opinion"
+msgstr "O：观察态度"
 
 #: src/diary.cpp
 msgid "Known spells:"
@@ -262558,8 +262623,8 @@ msgstr "你将会更加无助！确定吗？"
 #: src/npctalk.cpp
 #, c-format
 msgctxt "you say something"
-msgid "You: %s"
-msgstr "你：%s"
+msgid "%s: %s"
+msgstr "%s: %s"
 
 #: src/npctalk.cpp
 msgid "You can't afford it!"

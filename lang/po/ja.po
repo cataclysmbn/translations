@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-13 21:35+0000\n"
+"POT-Creation-Date: 2026-01-15 19:12+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -16900,10 +16900,9 @@ msgstr "酸の塊を発射する偽の銃。"
 #: data/json/items/gun/nail.json data/json/items/gun/plasma.json
 #: data/json/items/gun/shot.json data/json/items/gun/ups.json
 #: data/json/items/gunmod/mechanism.json data/json/items/ranged/pneumatic.json
-#: data/json/obsoletion/items.json data/mods/exotic_ammo/gun/46.json
-#: data/mods/exotic_ammo/gun/545x39.json data/mods/exotic_ammo/gun/57.json
-#: data/mods/exotic_ammo/gun/762x25.json data/mods/exotic_ammo/gun/9x18.json
-#: data/mods/exotic_ammo/items/gun/22.json
+#: data/mods/exotic_ammo/gun/46.json data/mods/exotic_ammo/gun/545x39.json
+#: data/mods/exotic_ammo/gun/57.json data/mods/exotic_ammo/gun/762x25.json
+#: data/mods/exotic_ammo/gun/9x18.json data/mods/exotic_ammo/items/gun/22.json
 #: data/mods/exotic_ammo/items/gun/223.json src/item_factory.cpp
 msgid "auto"
 msgstr "オート"
@@ -25428,6 +25427,7 @@ msgstr "頑固さ、無知、あるいは単なる不運か。避難に間に合
 #. ~ Starting location for scenario 'Missed'.
 #. ~ Starting location for scenario 'Surrounded'.
 #. ~ Starting location for scenario 'Infected'.
+#. ~ Starting location for scenario 'Challenge - Hunted'.
 #. ~ Starting location for scenario 'Burning Building'.
 #. ~ Starting location for scenario 'Challenge - Really Bad Day'.
 #: data/json/scenarios.json
@@ -25592,6 +25592,36 @@ msgid ""
 "In the chaos and panic of evacuation, you got bitten by something!  You "
 "didn't get proper medical care, and now the wound has started turning green."
 msgstr "パニックと混沌の中を避難している時に、何かに噛まれてしまった！適切な治療が受けられないまま、傷口が緑色に変色し始めている。"
+
+#. ~ Name for scenario 'Challenge - Hunted' for a male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "Challenge - Hunted"
+msgstr ""
+
+#. ~ Name for scenario 'Challenge - Hunted' for a female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "Challenge - Hunted"
+msgstr ""
+
+#. ~ Description for scenario 'Challenge - Hunted' for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr ""
+
+#. ~ Description for scenario 'Challenge - Hunted' for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr ""
 
 #. ~ Name for scenario 'Burning Building' for a male character
 #: data/json/scenarios.json
@@ -99572,6 +99602,45 @@ msgid ""
 msgstr ""
 "電力伝送効率を高め、原子力バッテリーを使用することで電力消費を最小限に抑えた、手作りでありながら粗末さのない高性能コンデンサーだ。必要な素材が極めて希少なため、大災厄以前の抗議活動で見られた簡易レールガンや改造銃器よりも入手が難しい貴重品。残念ながら、簡易加速装置には互換性に必要な内部部品が不足しているため、使用することはできない。"
 
+#: data/json/items/gunmod/mechanism.json
+msgid "auto-fire mechanism"
+msgid_plural "auto-fire mechanisms"
+msgstr[0] "自動発射機構"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A simple mechanism that converts a pistol to a selective fire weapon with a "
+"burst size of three rounds.  However it reduces accuracy and increases "
+"noise."
+msgstr "ピストルを3点バースト可能なセレクティブ・ファイア武器に改造するためのシンプルな機構だ。ただし、命中精度が低下し、発射音が大きくなる。"
+
+#: data/json/items/gunmod/mechanism.json
+msgid "belt feed adapter"
+msgid_plural "belt feed adapters"
+msgstr[0] "ベルト給弾 アダプター"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A kit providing the necessary parts for permanently converting a firearm "
+"from magazine to belt-feed.  Guaranteed to void your warranty."
+msgstr "銃器をマガジン給弾からベルト給弾に恒久的に変換するために必要な部品を提供するキット。保証は無効になることが保証されている。"
+
+#: data/json/items/gunmod/mechanism.json
+#: data/mods/exotic_ammo/items/gunmod/magazine.json
+msgid "magazine"
+msgstr "マガジン"
+
+#: data/json/items/gunmod/mechanism.json
+msgid "tuned mechanism"
+msgid_plural "tuned mechanisms"
+msgstr[0] "調整済み メカニズム"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A set of finely tuned internal components which increase the precision and "
+"reliably of a firearm."
+msgstr "銃器の精度と信頼性を向上させる、微調整された内部 構成部品のセット。"
+
 #: data/json/items/gunmod/muzzle.json
 msgid "ported barrel"
 msgid_plural "ported barrels"
@@ -126339,6 +126408,18 @@ msgid ""
 msgstr "人間の体が成人男性6人分の大きさにまで膨れ上がり、腕はゴミ箱ほど太くなっている。"
 
 #: data/json/monsters/zed_misc.json
+msgid "relentless hulk"
+msgid_plural "relentless hulks"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'relentless hulk'}
+#: data/json/monsters/zed_misc.json
+msgid ""
+"A hulking zombie swollen to the size of six men.  Its inky black eyes are "
+"locked on you.  No matter how far you run, it always seems to find you."
+msgstr ""
+
+#: data/json/monsters/zed_misc.json
 msgid "zombie hunter"
 msgid_plural "zombie hunters"
 msgstr[0] "狩人ゾンビ"
@@ -134220,6 +134301,18 @@ msgid ""
 msgstr "お前は知的な射手ではない。遠隔武器でのクリティカル攻撃は発生しなくなり、頭部ではなく胴体や手足に命中しやすくなる。"
 
 #: data/json/mutations/mutations.json
+msgid "Hunted"
+msgstr ""
+
+#. ~ Description for {'str': 'Hunted'}
+#: data/json/mutations/mutations.json
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr ""
+
+#: data/json/mutations/mutations.json
 msgid "Lost To The Cataclysm"
 msgstr "大災厄に囚われし者"
 
@@ -140451,6 +140544,18 @@ msgstr "あのろくでなしが二度と起き上がることがないように
 #: data/json/npcs/missiondef.json
 msgid "I don't think we got it yet."
 msgstr "まだ仕事が済んだようには見えないな。"
+
+#: data/json/npcs/missiondef.json
+msgid "Kill Your Pursuer"
+msgstr ""
+
+#. ~ Description for mission '{'str': 'Kill Your Pursuer'}'
+#: data/json/npcs/missiondef.json
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it but never truly escape it.  It won't end "
+"until one of you dies."
+msgstr ""
 
 #: data/json/npcs/missiondef.json
 msgid "Kill Jabberwock"
@@ -162098,18 +162203,6 @@ msgid ""
 msgstr "連射速度を向上させる改良型の排莢機構だ。その代償として命中精度が低下し、発射音が大きくなる。"
 
 #: data/json/obsoletion/items.json
-msgid "auto-fire mechanism"
-msgid_plural "auto-fire mechanisms"
-msgstr[0] "自動発射機構"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A simple mechanism that converts a pistol to a selective fire weapon with a "
-"burst size of three rounds.  However it reduces accuracy and increases "
-"noise."
-msgstr "ピストルを3点バースト可能なセレクティブ・ファイア武器に改造するためのシンプルな機構だ。ただし、命中精度が低下し、発射音が大きくなる。"
-
-#: data/json/obsoletion/items.json
 msgid ".22 caliber conversion kit"
 msgid_plural ".22 caliber conversion kits"
 msgstr[0] ".22 変換キット"
@@ -162160,33 +162253,6 @@ msgid ""
 "reduction to accuracy."
 msgstr ""
 "9x18mm、.38口径、.40口径、.44口径、または.45口径の銃の主要部品を交換し、9x19mm口径弾対応に変換する。この変換により、命中精度がわずかに低下する。"
-
-#: data/json/obsoletion/items.json
-msgid "belt feed adapter"
-msgid_plural "belt feed adapters"
-msgstr[0] "ベルト給弾 アダプター"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A kit providing the necessary parts for permanently converting a firearm "
-"from magazine to belt-feed.  Guaranteed to void your warranty."
-msgstr "銃器をマガジン給弾からベルト給弾に恒久的に変換するために必要な部品を提供するキット。保証は無効になることが保証されている。"
-
-#: data/json/obsoletion/items.json
-#: data/mods/exotic_ammo/items/gunmod/magazine.json
-msgid "magazine"
-msgstr "マガジン"
-
-#: data/json/obsoletion/items.json
-msgid "tuned mechanism"
-msgid_plural "tuned mechanisms"
-msgstr[0] "調整済み メカニズム"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A set of finely tuned internal components which increase the precision and "
-"reliably of a firearm."
-msgstr "銃器の精度と信頼性を向上させる、微調整された内部 構成部品のセット。"
 
 #: data/json/obsoletion/items.json data/json/obsoletion/uncategorized.json
 msgid "Magnesium Supplements"
@@ -231938,7 +232004,7 @@ msgid "Press PgUp/PgDn/Home/End to scroll output window"
 msgstr "出力ウィンドウをスクロールするには、PgUp/PgDn/Home/Endキーを押す。"
 
 #: src/character.cpp src/debug_menu.cpp src/game.cpp src/iuse.cpp
-#: src/npctrade.cpp
+#: src/npctalk.cpp src/npctrade.cpp
 msgid "You"
 msgstr "あなた"
 
@@ -237930,29 +237996,28 @@ msgid "Flags: "
 msgstr "フラグ:"
 
 #: src/dialogue_win.cpp
-#, c-format
-msgid "Dialogue: %s"
-msgstr "会話: %s"
+msgid "Dialogue:"
+msgstr ""
 
 #: src/dialogue_win.cpp
 msgid "Your response:"
 msgstr "返答: "
 
 #: src/dialogue_win.cpp
-msgid "Shift+L: Look at"
-msgstr "Shift+L: 観察する"
+msgid "L: Look at"
+msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "Shift+S: Size up stats"
-msgstr "Shift+S: 能力を推測する"
+msgid "S: Size up stats"
+msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "Shift+Y: Yell"
-msgstr "Shift+Y: 叫ぶ"
+msgid "Y: Yell"
+msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "Shift+O: Check opinion"
-msgstr "Shift+O: 評価を調べる"
+msgid "O: Check opinion"
+msgstr ""
 
 #: src/diary.cpp
 msgid "Known spells:"
@@ -263714,8 +263779,8 @@ msgstr "あなたは無力化されている！続けるか？"
 #: src/npctalk.cpp
 #, c-format
 msgctxt "you say something"
-msgid "You: %s"
-msgstr "あなた: %s"
+msgid "%s: %s"
+msgstr "%s: %s"
 
 #: src/npctalk.cpp
 msgid "You can't afford it!"

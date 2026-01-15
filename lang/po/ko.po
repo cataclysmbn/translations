@@ -27,15 +27,15 @@
 # ARDOR Flag, 2025
 # scarf <greenscarf005@gmail.com>, 2025
 # Tae Heon Lim, 2026
-# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # DelFe, 2026
 # 47a81cb9738d39622e1b1fde74c42b2a_791bd4f <20fb875a401cb03ba4fd8103e46da6b9_1176784>, 2026
+# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # Choi Dong-uk, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-14 19:02+0000\n"
+"POT-Creation-Date: 2026-01-15 19:12+0000\n"
 "Last-Translator: Choi Dong-uk, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -17350,10 +17350,9 @@ msgstr "산성 방울을 발사하는 가짜 총입니다."
 #: data/json/items/gun/nail.json data/json/items/gun/plasma.json
 #: data/json/items/gun/shot.json data/json/items/gun/ups.json
 #: data/json/items/gunmod/mechanism.json data/json/items/ranged/pneumatic.json
-#: data/json/obsoletion/items.json data/mods/exotic_ammo/gun/46.json
-#: data/mods/exotic_ammo/gun/545x39.json data/mods/exotic_ammo/gun/57.json
-#: data/mods/exotic_ammo/gun/762x25.json data/mods/exotic_ammo/gun/9x18.json
-#: data/mods/exotic_ammo/items/gun/22.json
+#: data/mods/exotic_ammo/gun/46.json data/mods/exotic_ammo/gun/545x39.json
+#: data/mods/exotic_ammo/gun/57.json data/mods/exotic_ammo/gun/762x25.json
+#: data/mods/exotic_ammo/gun/9x18.json data/mods/exotic_ammo/items/gun/22.json
 #: data/mods/exotic_ammo/items/gun/223.json src/item_factory.cpp
 msgid "auto"
 msgstr "완전자동"
@@ -26469,6 +26468,7 @@ msgstr ""
 #. ~ Starting location for scenario 'Missed'.
 #. ~ Starting location for scenario 'Surrounded'.
 #. ~ Starting location for scenario 'Infected'.
+#. ~ Starting location for scenario 'Challenge - Hunted'.
 #. ~ Starting location for scenario 'Burning Building'.
 #. ~ Starting location for scenario 'Challenge - Really Bad Day'.
 #: data/json/scenarios.json
@@ -26637,6 +26637,40 @@ msgid ""
 "In the chaos and panic of evacuation, you got bitten by something!  You "
 "didn't get proper medical care, and now the wound has started turning green."
 msgstr "당신은 피난길의 혼란과 공황 속에서 뭔가에 물렸습니다! 제대로 된 치료를 받지 못해, 상처가 초록색으로 변하기 시작했습니다."
+
+#. ~ Name for scenario 'Challenge - Hunted' for a male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "Challenge - Hunted"
+msgstr "도전 - 사냥감"
+
+#. ~ Name for scenario 'Challenge - Hunted' for a female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "Challenge - Hunted"
+msgstr "도전 - 사냥감"
+
+#. ~ Description for scenario 'Challenge - Hunted' for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr ""
+"대재앙이 벌어진 이래, 무언가가 당신을 쉬지 않고 추적해오고 있습니다. 놈을 잠시 따돌릴 수는 있지만, 놈은 계속해서 당신을 찾아냅니다."
+" 둘 중 하나가 죽어야만 끝날 것입니다."
+
+#. ~ Description for scenario 'Challenge - Hunted' for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr ""
+"대재앙이 벌어진 이래, 무언가가 당신을 쉬지 않고 추적해오고 있습니다. 놈을 잠시 따돌릴 수는 있지만, 놈은 계속해서 당신을 찾아냅니다."
+" 둘 중 하나가 죽어야만 끝날 것입니다."
 
 #. ~ Name for scenario 'Burning Building' for a male character
 #: data/json/scenarios.json
@@ -102613,6 +102647,45 @@ msgstr ""
 "재료의 희귀성으로 인해 대재앙 이전의 시위에서 등장했던 간이 레일건이나 개조 총기보다도 찾기 어려운 물건으로, 간이 가속기에는 호환에 "
 "필요한 내부 부품이 부족한 탓에 안타깝게도 간이 가속기와 호환되지 않습니다."
 
+#: data/json/items/gunmod/mechanism.json
+msgid "auto-fire mechanism"
+msgid_plural "auto-fire mechanisms"
+msgstr[0] "자동사격 개조부품"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A simple mechanism that converts a pistol to a selective fire weapon with a "
+"burst size of three rounds.  However it reduces accuracy and increases "
+"noise."
+msgstr "권총에 3연사 기능을 제공하는 간단한 기계 부품. 하지만 명중률이 감소하고 사격 소음이 커집니다."
+
+#: data/json/items/gunmod/mechanism.json
+msgid "belt feed adapter"
+msgid_plural "belt feed adapters"
+msgstr[0] "벨트 급탄 어댑터"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A kit providing the necessary parts for permanently converting a firearm "
+"from magazine to belt-feed.  Guaranteed to void your warranty."
+msgstr "총기의 급탄방식을 탄창에서 벨트로 영구적으로 교체하는데 필요한 부품 모음입니다. 사용시 제품 보증이 무효화됩니다."
+
+#: data/json/items/gunmod/mechanism.json
+#: data/mods/exotic_ammo/items/gunmod/magazine.json
+msgid "magazine"
+msgstr "탄창"
+
+#: data/json/items/gunmod/mechanism.json
+msgid "tuned mechanism"
+msgid_plural "tuned mechanisms"
+msgstr[0] "정밀 총기부품"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A set of finely tuned internal components which increase the precision and "
+"reliably of a firearm."
+msgstr "화기의 정밀도와 신뢰성을 높여줄 미세 조정 내장 부품 세트입니다."
+
 #: data/json/items/gunmod/muzzle.json
 msgid "ported barrel"
 msgid_plural "ported barrels"
@@ -130360,6 +130433,20 @@ msgid ""
 msgstr "보통 사람보다 6배는 되는 덩치에, 팔은 쓰레기통만큼 굵은 인간 시체입니다."
 
 #: data/json/monsters/zed_misc.json
+msgid "relentless hulk"
+msgid_plural "relentless hulks"
+msgstr[0] "불굴의 괴물"
+
+#. ~ Description for {'str': 'relentless hulk'}
+#: data/json/monsters/zed_misc.json
+msgid ""
+"A hulking zombie swollen to the size of six men.  Its inky black eyes are "
+"locked on you.  No matter how far you run, it always seems to find you."
+msgstr ""
+"사람 여섯 명 정도의 크기로 부풀어오른 거대한 좀비입니다. 잉크를 풀어놓은 듯한 검은 눈이 당신을 주시하고 있습니다. 당신이 아무리 멀리"
+" 도망치더라도 놈은 당신을 찾아낼 것입니다."
+
+#: data/json/monsters/zed_misc.json
 msgid "zombie hunter"
 msgid_plural "zombie hunters"
 msgstr[0] "좀비 사냥꾼"
@@ -138564,6 +138651,20 @@ msgstr ""
 "당신은 뛰어난 사수가 아닙니다. 원거리 공격이 더이상 치명타로 적중할 수 없으며, 머리가 아니라 몸이나 팔다리를 맞출 확률이 높아집니다."
 
 #: data/json/mutations/mutations.json
+msgid "Hunted"
+msgstr "사냥감"
+
+#. ~ Description for {'str': 'Hunted'}
+#: data/json/mutations/mutations.json
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr ""
+"대재앙이 벌어진 이래, 무언가가 당신을 쉬지 않고 추적해오고 있습니다. 놈을 잠시 따돌릴 수는 있지만, 놈은 계속해서 당신을 찾아냅니다."
+" 둘 중 하나가 죽어야만 끝날 것입니다."
+
+#: data/json/mutations/mutations.json
 msgid "Lost To The Cataclysm"
 msgstr "대재앙을 헤메는 자"
 
@@ -145015,6 +145116,20 @@ msgstr "그 망할 놈들이 다시 일어나는 일이 없기를."
 #: data/json/npcs/missiondef.json
 msgid "I don't think we got it yet."
 msgstr "아직 그걸 못찾은거 같은데."
+
+#: data/json/npcs/missiondef.json
+msgid "Kill Your Pursuer"
+msgstr "추적자를 죽여라"
+
+#. ~ Description for mission '{'str': 'Kill Your Pursuer'}'
+#: data/json/npcs/missiondef.json
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it but never truly escape it.  It won't end "
+"until one of you dies."
+msgstr ""
+"대재앙이 벌어진 이래, 무언가가 당신을 쉬지 않고 추적해오고 있습니다. 놈을 잠시 따돌릴 수는 있지만, 결코 완벽하게 도망칠 수는 "
+"없습니다. 둘 중 하나가 죽기 전까지는 끝나지 않을 것입니다."
 
 #: data/json/npcs/missiondef.json
 msgid "Kill Jabberwock"
@@ -167834,18 +167949,6 @@ msgid ""
 msgstr "개선된 연발 사격 장치 부품입니다. 완전 자동 사격 속도가 증가하지만 정확도가 감소하고 소음이 증가합니다."
 
 #: data/json/obsoletion/items.json
-msgid "auto-fire mechanism"
-msgid_plural "auto-fire mechanisms"
-msgstr[0] "자동사격 개조부품"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A simple mechanism that converts a pistol to a selective fire weapon with a "
-"burst size of three rounds.  However it reduces accuracy and increases "
-"noise."
-msgstr "권총에 3연사 기능을 제공하는 간단한 기계 부품. 하지만 명중률이 감소하고 사격 소음이 커집니다."
-
-#: data/json/obsoletion/items.json
 msgid ".22 caliber conversion kit"
 msgid_plural ".22 caliber conversion kits"
 msgstr[0] ".22구경 전환도구"
@@ -167900,33 +168003,6 @@ msgid ""
 msgstr ""
 "9x18mm, .38구경, .40구경, .44구경, .45구경 총기를 9x19mm 탄을 사용하도록 바꾸는데 필요한 부품 모음입니다. 개조"
 " 과정에서 정확도가 약간 감소합니다."
-
-#: data/json/obsoletion/items.json
-msgid "belt feed adapter"
-msgid_plural "belt feed adapters"
-msgstr[0] "벨트 급탄 어댑터"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A kit providing the necessary parts for permanently converting a firearm "
-"from magazine to belt-feed.  Guaranteed to void your warranty."
-msgstr "총기의 급탄방식을 탄창에서 벨트로 영구적으로 교체하는데 필요한 부품 모음입니다. 사용시 제품 보증이 무효화됩니다."
-
-#: data/json/obsoletion/items.json
-#: data/mods/exotic_ammo/items/gunmod/magazine.json
-msgid "magazine"
-msgstr "탄창"
-
-#: data/json/obsoletion/items.json
-msgid "tuned mechanism"
-msgid_plural "tuned mechanisms"
-msgstr[0] "정밀 총기부품"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A set of finely tuned internal components which increase the precision and "
-"reliably of a firearm."
-msgstr "화기의 정밀도와 신뢰성을 높여줄 미세 조정 내장 부품 세트입니다."
 
 #: data/json/obsoletion/items.json data/json/obsoletion/uncategorized.json
 msgid "Magnesium Supplements"
@@ -239946,7 +240022,7 @@ msgid "Press PgUp/PgDn/Home/End to scroll output window"
 msgstr "페이지업/페이지다운/홈/엔드 키로 출력 창을 스크롤합니다."
 
 #: src/character.cpp src/debug_menu.cpp src/game.cpp src/iuse.cpp
-#: src/npctrade.cpp
+#: src/npctalk.cpp src/npctrade.cpp
 msgid "You"
 msgstr "당신"
 
@@ -245958,29 +246034,28 @@ msgid "Flags: "
 msgstr "플래그: "
 
 #: src/dialogue_win.cpp
-#, c-format
-msgid "Dialogue: %s"
-msgstr "대화: %s"
+msgid "Dialogue:"
+msgstr "대화:"
 
 #: src/dialogue_win.cpp
 msgid "Your response:"
 msgstr "대답:"
 
 #: src/dialogue_win.cpp
-msgid "Shift+L: Look at"
-msgstr "Shift+L: 장비 보기"
+msgid "L: Look at"
+msgstr "L: 보기"
 
 #: src/dialogue_win.cpp
-msgid "Shift+S: Size up stats"
-msgstr "Shift+S: 능력치 추측하기"
+msgid "S: Size up stats"
+msgstr "S: 능력치 확인"
 
 #: src/dialogue_win.cpp
-msgid "Shift+Y: Yell"
-msgstr "Shift+Y: 외치기"
+msgid "Y: Yell"
+msgstr "Y: 소리지르기"
 
 #: src/dialogue_win.cpp
-msgid "Shift+O: Check opinion"
-msgstr "Shift+O: 나에 대한 견해 확인"
+msgid "O: Check opinion"
+msgstr "O: 의견 확인"
 
 #: src/diary.cpp
 msgid "Known spells:"
@@ -271795,8 +271870,8 @@ msgstr "당신은 무력해질 것입니다!  계속합니까?"
 #: src/npctalk.cpp
 #, c-format
 msgctxt "you say something"
-msgid "You: %s"
-msgstr "당신: %s"
+msgid "%s: %s"
+msgstr "%s: %s"
 
 #: src/npctalk.cpp
 msgid "You can't afford it!"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-14 19:02+0000\n"
+"POT-Creation-Date: 2026-01-15 19:12+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/bn-team/teams/113585/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -16888,10 +16888,9 @@ msgstr "Nem igazi fegyver, ami savtócsákat lő ki."
 #: data/json/items/gun/nail.json data/json/items/gun/plasma.json
 #: data/json/items/gun/shot.json data/json/items/gun/ups.json
 #: data/json/items/gunmod/mechanism.json data/json/items/ranged/pneumatic.json
-#: data/json/obsoletion/items.json data/mods/exotic_ammo/gun/46.json
-#: data/mods/exotic_ammo/gun/545x39.json data/mods/exotic_ammo/gun/57.json
-#: data/mods/exotic_ammo/gun/762x25.json data/mods/exotic_ammo/gun/9x18.json
-#: data/mods/exotic_ammo/items/gun/22.json
+#: data/mods/exotic_ammo/gun/46.json data/mods/exotic_ammo/gun/545x39.json
+#: data/mods/exotic_ammo/gun/57.json data/mods/exotic_ammo/gun/762x25.json
+#: data/mods/exotic_ammo/gun/9x18.json data/mods/exotic_ammo/items/gun/22.json
 #: data/mods/exotic_ammo/items/gun/223.json src/item_factory.cpp
 msgid "auto"
 msgstr "automata"
@@ -25863,6 +25862,7 @@ msgstr ""
 #. ~ Starting location for scenario 'Missed'.
 #. ~ Starting location for scenario 'Surrounded'.
 #. ~ Starting location for scenario 'Infected'.
+#. ~ Starting location for scenario 'Challenge - Hunted'.
 #. ~ Starting location for scenario 'Burning Building'.
 #. ~ Starting location for scenario 'Challenge - Really Bad Day'.
 #: data/json/scenarios.json
@@ -26031,6 +26031,36 @@ msgid ""
 msgstr ""
 "Az evakuálás káoszában és pánikjában valami megharapott! Nem kaptál "
 "megfelelő orvosi ellátást és a sebesülésed most elkezdett bezöldülni."
+
+#. ~ Name for scenario 'Challenge - Hunted' for a male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "Challenge - Hunted"
+msgstr ""
+
+#. ~ Name for scenario 'Challenge - Hunted' for a female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "Challenge - Hunted"
+msgstr ""
+
+#. ~ Description for scenario 'Challenge - Hunted' for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr ""
+
+#. ~ Description for scenario 'Challenge - Hunted' for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr ""
 
 #. ~ Name for scenario 'Burning Building' for a male character
 #: data/json/scenarios.json
@@ -106963,6 +106993,56 @@ msgid ""
 "accelerators thanks to them lacking the proper internal components."
 msgstr ""
 
+#: data/json/items/gunmod/mechanism.json
+msgid "auto-fire mechanism"
+msgid_plural "auto-fire mechanisms"
+msgstr[0] "automata závárzat"
+msgstr[1] "automata závárzat"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A simple mechanism that converts a pistol to a selective fire weapon with a "
+"burst size of three rounds.  However it reduces accuracy and increases "
+"noise."
+msgstr ""
+"Ez az egyszerű berendezés egy teljesen automata fegyverré alakítja a "
+"pisztolyt, a sorozat három lövedéket ad le. Csökkenti azonban a pontosságot,"
+" valamint növeli a zajt."
+
+#: data/json/items/gunmod/mechanism.json
+msgid "belt feed adapter"
+msgid_plural "belt feed adapters"
+msgstr[0] "töltényhevederes átalakítás"
+msgstr[1] "töltényhevederes átalakítás"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A kit providing the necessary parts for permanently converting a firearm "
+"from magazine to belt-feed.  Guaranteed to void your warranty."
+msgstr ""
+"A készlet az összes olyan alkatrészt tartalmazza, amely a fegyvert állandó "
+"jelleggel átalakítja tölténytárasról töltényhevederesre. A gyártói jótállást"
+" garantáltan megszünteti."
+
+#: data/json/items/gunmod/mechanism.json
+#: data/mods/exotic_ammo/items/gunmod/magazine.json
+msgid "magazine"
+msgstr "tölténytár"
+
+#: data/json/items/gunmod/mechanism.json
+msgid "tuned mechanism"
+msgid_plural "tuned mechanisms"
+msgstr[0] "finomhangolt mechanizmus"
+msgstr[1] "finomhangolt mechanizmus"
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A set of finely tuned internal components which increase the precision and "
+"reliably of a firearm."
+msgstr ""
+"A finomhangolt belső alkatrészek növelik a fegyver pontosságát és "
+"megbízhatóságát."
+
 #: data/json/items/gunmod/muzzle.json
 msgid "ported barrel"
 msgid_plural "ported barrels"
@@ -137096,6 +137176,19 @@ msgid ""
 msgstr "Hatemberes méretre duzzadt emberi test, karja vastag, mint egy kuka."
 
 #: data/json/monsters/zed_misc.json
+msgid "relentless hulk"
+msgid_plural "relentless hulks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'relentless hulk'}
+#: data/json/monsters/zed_misc.json
+msgid ""
+"A hulking zombie swollen to the size of six men.  Its inky black eyes are "
+"locked on you.  No matter how far you run, it always seems to find you."
+msgstr ""
+
+#: data/json/monsters/zed_misc.json
 msgid "zombie hunter"
 msgid_plural "zombie hunters"
 msgstr[0] ""
@@ -145557,6 +145650,18 @@ msgid ""
 msgstr ""
 
 #: data/json/mutations/mutations.json
+msgid "Hunted"
+msgstr ""
+
+#. ~ Description for {'str': 'Hunted'}
+#: data/json/mutations/mutations.json
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it, but it always seems to find you "
+"eventually.  The only escape is for one of you to die."
+msgstr ""
+
+#: data/json/mutations/mutations.json
 msgid "Lost To The Cataclysm"
 msgstr ""
 
@@ -151826,6 +151931,18 @@ msgstr "Imádkozzunk, hogy az a rohadék soha többé ne kelljen fel."
 #: data/json/npcs/missiondef.json
 msgid "I don't think we got it yet."
 msgstr "Szerintem még nem kaptuk el."
+
+#: data/json/npcs/missiondef.json
+msgid "Kill Your Pursuer"
+msgstr ""
+
+#. ~ Description for mission '{'str': 'Kill Your Pursuer'}'
+#: data/json/npcs/missiondef.json
+msgid ""
+"Since the start of the Cataclysm, something has been hunting you "
+"relentlessly.  You can outrun it but never truly escape it.  It won't end "
+"until one of you dies."
+msgstr ""
 
 #: data/json/npcs/missiondef.json
 msgid "Kill Jabberwock"
@@ -173092,22 +173209,6 @@ msgstr ""
 "ront a pontosságán."
 
 #: data/json/obsoletion/items.json
-msgid "auto-fire mechanism"
-msgid_plural "auto-fire mechanisms"
-msgstr[0] "automata závárzat"
-msgstr[1] "automata závárzat"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A simple mechanism that converts a pistol to a selective fire weapon with a "
-"burst size of three rounds.  However it reduces accuracy and increases "
-"noise."
-msgstr ""
-"Ez az egyszerű berendezés egy teljesen automata fegyverré alakítja a "
-"pisztolyt, a sorozat három lövedéket ad le. Csökkenti azonban a pontosságot,"
-" valamint növeli a zajt."
-
-#: data/json/obsoletion/items.json
 msgid ".22 caliber conversion kit"
 msgid_plural ".22 caliber conversion kits"
 msgstr[0] "átalakító készlet .22 kaliberre"
@@ -173167,40 +173268,6 @@ msgstr ""
 "A 9x18mm, .38, .40, .44 és .45 kaliberű lőfegyverek számos kulcsfontosságú "
 "részét alakítja át 9x19 mm-esre. Az átalakítás eredményeképpen egy kicsit "
 "csökken a fegyver pontossága."
-
-#: data/json/obsoletion/items.json
-msgid "belt feed adapter"
-msgid_plural "belt feed adapters"
-msgstr[0] "töltényhevederes átalakítás"
-msgstr[1] "töltényhevederes átalakítás"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A kit providing the necessary parts for permanently converting a firearm "
-"from magazine to belt-feed.  Guaranteed to void your warranty."
-msgstr ""
-"A készlet az összes olyan alkatrészt tartalmazza, amely a fegyvert állandó "
-"jelleggel átalakítja tölténytárasról töltényhevederesre. A gyártói jótállást"
-" garantáltan megszünteti."
-
-#: data/json/obsoletion/items.json
-#: data/mods/exotic_ammo/items/gunmod/magazine.json
-msgid "magazine"
-msgstr "tölténytár"
-
-#: data/json/obsoletion/items.json
-msgid "tuned mechanism"
-msgid_plural "tuned mechanisms"
-msgstr[0] "finomhangolt mechanizmus"
-msgstr[1] "finomhangolt mechanizmus"
-
-#: data/json/obsoletion/items.json
-msgid ""
-"A set of finely tuned internal components which increase the precision and "
-"reliably of a firearm."
-msgstr ""
-"A finomhangolt belső alkatrészek növelik a fegyver pontosságát és "
-"megbízhatóságát."
 
 #: data/json/obsoletion/items.json data/json/obsoletion/uncategorized.json
 msgid "Magnesium Supplements"
@@ -244164,7 +244231,7 @@ msgid "Press PgUp/PgDn/Home/End to scroll output window"
 msgstr ""
 
 #: src/character.cpp src/debug_menu.cpp src/game.cpp src/iuse.cpp
-#: src/npctrade.cpp
+#: src/npctalk.cpp src/npctrade.cpp
 msgid "You"
 msgstr "Te"
 
@@ -250208,29 +250275,28 @@ msgid "Flags: "
 msgstr ""
 
 #: src/dialogue_win.cpp
-#, c-format
-msgid "Dialogue: %s"
-msgstr "Párbeszéd: %s"
+msgid "Dialogue:"
+msgstr ""
 
 #: src/dialogue_win.cpp
 msgid "Your response:"
 msgstr "Válaszod:"
 
 #: src/dialogue_win.cpp
-msgid "Shift+L: Look at"
-msgstr "Shift+L: Ránéz"
+msgid "L: Look at"
+msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "Shift+S: Size up stats"
-msgstr "Shift+S: Stat értékei"
+msgid "S: Size up stats"
+msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "Shift+Y: Yell"
-msgstr "Shift+Y: Kiabál"
+msgid "Y: Yell"
+msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "Shift+O: Check opinion"
-msgstr "Shift+O: Véleménye"
+msgid "O: Check opinion"
+msgstr ""
 
 #: src/diary.cpp
 msgid "Known spells:"
@@ -276133,8 +276199,8 @@ msgstr ""
 #: src/npctalk.cpp
 #, c-format
 msgctxt "you say something"
-msgid "You: %s"
-msgstr ""
+msgid "%s: %s"
+msgstr "%s: %s"
 
 #: src/npctalk.cpp
 msgid "You can't afford it!"
