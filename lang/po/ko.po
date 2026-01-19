@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-18 19:08+0000\n"
+"POT-Creation-Date: 2026-01-19 20:24+0000\n"
 "Last-Translator: Choi Dong-uk, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -58506,8 +58506,9 @@ msgstr[0] "배터리 수납함 모드"
 #: data/json/items/toolmod.json
 msgid ""
 "A battery compartment mod that allows using vehicle and storage batteries in"
-" regular tools, up to the size of a car battery."
-msgstr "자동차 배터리나 소형 축전지를 일반 장비에 연결하기 위한 배터리 수납함 모듈입니다."
+" regular tools, up to the size of a large storage battery, as unwieldy as "
+"that may be."
+msgstr ""
 
 #: data/json/items/toolmod.json
 msgid "light battery mod"
@@ -234017,6 +234018,26 @@ msgstr "지역 설명"
 msgid "Switch lists"
 msgstr "목록 전환"
 
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle category select"
+msgstr "카테고리 선택 전환"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Autobalance trade"
+msgstr "거래 잔금 자동 균형 맞추기"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle item description"
+msgstr "물품 설명 활성화/비활성화"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Add item to trade"
+msgstr "물품을 거래에 추가"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Remove item from trade"
+msgstr "물품을 거래에서 제거"
+
 #: data/raw/keybindings/keybindings.json src/action.cpp
 msgid "Back"
 msgstr "뒤로"
@@ -236364,7 +236385,7 @@ msgstr "착용 물품"
 msgid "name"
 msgstr "이름"
 
-#: src/advanced_inv.cpp
+#: src/advanced_inv.cpp src/trade_win.cpp
 msgid "weight"
 msgstr "무게"
 
@@ -236408,7 +236429,7 @@ msgstr "수량 무게 부피"
 msgid "src amt weight vol"
 msgstr "위치 수량 무게 부피"
 
-#: src/advanced_inv.cpp
+#: src/advanced_inv.cpp src/trade_win.cpp
 msgid "Name (charges)"
 msgstr "물품 이름 (충전량)"
 
@@ -239644,11 +239665,11 @@ msgstr "%s/턴"
 msgid "%s/%d turns"
 msgstr "%s/%d턴"
 
-#: src/bionics_ui.cpp src/handle_action.cpp
+#: src/bionics_ui.cpp src/handle_action.cpp src/trade_win.cpp
 msgid "OFF"
 msgstr "꺼짐"
 
-#: src/bionics_ui.cpp src/handle_action.cpp
+#: src/bionics_ui.cpp src/handle_action.cpp src/trade_win.cpp
 msgid "ON"
 msgstr "켜짐"
 
@@ -240068,7 +240089,7 @@ msgid "Press PgUp/PgDn/Home/End to scroll output window"
 msgstr "페이지업/페이지다운/홈/엔드 키로 출력 창을 스크롤합니다."
 
 #: src/character.cpp src/debug_menu.cpp src/game.cpp src/iuse.cpp
-#: src/npctalk.cpp src/npctrade.cpp
+#: src/npctalk.cpp src/trade_win.cpp
 msgid "You"
 msgstr "당신"
 
@@ -246088,20 +246109,20 @@ msgid "Your response:"
 msgstr "대답:"
 
 #: src/dialogue_win.cpp
-msgid "L: Look at"
-msgstr "L: 보기"
+msgid "[L] Look at"
+msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "S: Size up stats"
-msgstr "S: 능력치 확인"
+msgid "[S] Size up stats"
+msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "Y: Yell"
-msgstr "Y: 소리지르기"
+msgid "[Y] Yell"
+msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "O: Check opinion"
-msgstr "O: 의견 확인"
+msgid "[O] Check opinion"
+msgstr ""
 
 #: src/diary.cpp
 msgid "Known spells:"
@@ -255739,7 +255760,7 @@ msgstr "관통 피해:"
 msgid "Critical pierce: "
 msgstr "치명타 관통 피해:"
 
-#: src/item.cpp
+#: src/item.cpp src/trade_win.cpp
 msgid ": "
 msgstr ": "
 
@@ -265016,7 +265037,7 @@ msgstr "무기:"
 msgid "Equipment:"
 msgstr "장비:"
 
-#: src/memorial_logger.cpp src/newcharacter.cpp
+#: src/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
 msgid "Inventory:"
 msgstr "소지품창:"
 
@@ -272052,7 +272073,7 @@ msgstr "…그거 말고도 정말 아무것도 보관할 자리가 없어."
 msgid "It is too heavy for me to carry."
 msgstr "내가 짊어지기엔 너무 무거워."
 
-#: src/npctalk_funcs.cpp
+#: src/npctalk_funcs.cpp src/trade_win.cpp
 msgid "Reward"
 msgstr "보상"
 
@@ -272181,112 +272202,13 @@ msgstr "%s(은)는 당신을 보다 덜 위협적으로 느끼는 것 같습니�
 msgid "Pause to stay still.  Any movement may cause %s to attack."
 msgstr "조금이라도 움직이면 %s(이)가 공격한다."
 
-#: src/npctalk_funcs.cpp
+#: src/npctalk_funcs.cpp src/trade_win.cpp
 msgid "Pay:"
 msgstr "지불:"
 
 #: src/npctalk_funcs.cpp
 msgid "Select a follower"
 msgstr "동료 선택"
-
-#: src/npctrade.cpp
-#, c-format
-msgid ""
-"Trading with %s.\n"
-"[<color_yellow>%s</color>] to switch lists, letters to pick items, [<color_yellow>%s</color>] and [<color_yellow>%s</color>] to switch pages, [<color_yellow>%s</color>] to finalize, [<color_yellow>%s</color>] to quit, [<color_yellow>%s</color>] to get information on an item."
-msgstr ""
-"%s(와)과 거래중.\n"
-"[<color_yellow>%s</color>]을 눌러 목록을 전환하고, 물품을 선택하려면 해당 문자를 누르세요.  [<color_yellow>%s</color>]과 [<color_yellow>%s</color>]을 이용하여 페이지를 전환하고, [<color_yellow>%s</color>]을 눌러 거래를 완료하거나, [<color_yellow>%s</color>]를 통해 거래를 취소할 수 있습니다.  물품에 대한 정보를 보려면 [<color_yellow>%s</color>]을 누르세요."
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Volume: %s %s, Weight: %.1f %s"
-msgstr "부피: %s %s, 무게: %.1f %s"
-
-#: src/npctrade.cpp
-msgid "Exchange"
-msgstr "교환"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Credit %s"
-msgstr "현금 %s"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Debt %s"
-msgstr "빚 %s"
-
-#: src/npctrade.cpp
-#, c-format
-msgid ": trading %d"
-msgstr ": %d 거래하기"
-
-#: src/npctrade.cpp
-#, c-format
-msgid " (%d)"
-msgstr " (%d)"
-
-#: src/npctrade.cpp
-msgid "< Back"
-msgstr "< 뒤로"
-
-#: src/npctrade.cpp
-msgid "More >"
-msgstr "추가 >"
-
-#: src/npctrade.cpp
-msgid "Examine which item?"
-msgstr "어떤 물건을 조사합니까?"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Trade how many containers with %s [MAX: %d]: "
-msgstr "%s(와)과 거래할 용기 수량 [최대: %d]: "
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Trade how many %s [MAX: %d]: "
-msgstr "%s 거래 수량 [최대: %d]: "
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Hint: You can buy up to %d with your current balance."
-msgstr "힌트: 현재 잔액으로 최대 %d 까지 살 수 있습니다."
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Hint: You'll need to offer %d to even out the deal."
-msgstr "힌트: 거래를 성립시키려면 %d (을)를 제공해야 합니다."
-
-#: src/npctrade.cpp
-msgid "You'll need to offer me more than that."
-msgstr "그거보단 더 줘야 할 걸."
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Sorry, I'm only willing to extend you %s in credit."
-msgstr "미안하지만, 외상은 %s까지만 가능해."
-
-#: src/npctrade.cpp
-#, c-format
-msgid "%s can't carry all that."
-msgstr "%s(이)가 그만큼 들 수 없습니다."
-
-#: src/npctrade.cpp
-#, c-format
-msgid ""
-"I'm never going to be able to pay you back for all that.  The most I'm willing to owe you is %s.\n"
-"\n"
-"Continue with trade?"
-msgstr ""
-"그렇게 많이 제공해도, 이 인물이 차액을 돌려주지는 않을 것입니다. 최대로 지울 수 있는 빚은 %s입니다.\n"
-"\n"
-"이를 감수하고 계속 거래합니까?"
-
-#: src/npctrade.cpp
-msgid "Looks like a deal!  Accept this trade?"
-msgstr "이거 괜찮네요! 거래를 수락합니까?"
 
 #: src/options.cpp
 msgid "Debug information"
@@ -278902,6 +278824,151 @@ msgstr "동굴 전체가 진동합니다!"
 #: src/timed_event.cpp
 msgid "The earth rumbles."
 msgstr "땅이 흔들립니다."
+
+#: src/trade_win.cpp
+msgid "< ["
+msgstr "< ["
+
+#: src/trade_win.cpp
+msgid "] keybindings >"
+msgstr "] 단축키 >"
+
+#: src/trade_win.cpp
+msgid "Paying"
+msgstr "지불"
+
+#: src/trade_win.cpp
+msgid "Accepting a reward from"
+msgstr "다음으로부터 보상 수락:"
+
+#: src/trade_win.cpp
+msgid "Trading with"
+msgstr "다음과 거래:"
+
+#: src/trade_win.cpp
+msgid "confirm trade"
+msgstr "거래 확정"
+
+#: src/trade_win.cpp
+msgid "autobalance"
+msgstr "자동 균형 맞추기"
+
+#: src/trade_win.cpp
+msgid "examine item"
+msgstr "물품 조사"
+
+#: src/trade_win.cpp
+msgid "switch panes"
+msgstr "창 전환"
+
+#: src/trade_win.cpp
+msgid "|"
+msgstr "|"
+
+#: src/trade_win.cpp
+msgid "Exchange"
+msgstr "교환"
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Credit %s"
+msgstr "현금 %s"
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Debt %s"
+msgstr "빚 %s"
+
+#: src/trade_win.cpp
+msgid "] category select "
+msgstr "] 카테고리 선택"
+
+#: src/trade_win.cpp
+msgid " >"
+msgstr " >"
+
+#: src/trade_win.cpp
+msgid "amt"
+msgstr "양"
+
+#: src/trade_win.cpp
+msgid "vol"
+msgstr "부피"
+
+#: src/trade_win.cpp
+msgid "unit price"
+msgstr "개당 가격"
+
+#: src/trade_win.cpp
+#, c-format
+msgid "/%s %s"
+msgstr "/ %s %s"
+
+#: src/trade_win.cpp
+msgid "] filter"
+msgstr "] 필터"
+
+#: src/trade_win.cpp
+#, c-format
+msgid "< Page %d/%d >"
+msgstr "< 페이지 %d / %d >"
+
+#: src/trade_win.cpp
+msgid "< item description >"
+msgstr "< 물품 설명 >"
+
+#: src/trade_win.cpp
+msgid "No item selected."
+msgstr "선택된 물품이 없습니다."
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Trade how many containers with %s [MAX: %d]: "
+msgstr "%s(와)과 거래할 용기 수량 [최대: %d]: "
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Trade how many %s [MAX: %d]: "
+msgstr "%s 거래 수량 [최대: %d]: "
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Hint: You can buy up to %d with your current balance."
+msgstr "힌트: 현재 잔액으로 최대 %d 까지 살 수 있습니다."
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Hint: You'll need to offer %d to even out the deal."
+msgstr "힌트: 거래를 성립시키려면 %d (을)를 제공해야 합니다."
+
+#: src/trade_win.cpp
+msgid "You'll need to offer me more than that."
+msgstr "그거보단 더 줘야 할 걸."
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Sorry, I'm only willing to extend you %s in credit."
+msgstr "미안하지만, 외상은 %s까지만 가능해."
+
+#: src/trade_win.cpp
+#, c-format
+msgid "%s can't carry all that."
+msgstr "%s(이)가 그만큼 들 수 없습니다."
+
+#: src/trade_win.cpp
+#, c-format
+msgid ""
+"I'm never going to be able to pay you back for all that.  The most I'm willing to owe you is %s.\n"
+"\n"
+"Continue with trade?"
+msgstr ""
+"그렇게 많이 제공해도, 이 인물이 차액을 돌려주지는 않을 것입니다. 최대로 지울 수 있는 빚은 %s입니다.\n"
+"\n"
+"이를 감수하고 계속 거래합니까?"
+
+#: src/trade_win.cpp
+msgid "Looks like a deal!  Accept this trade?"
+msgstr "이거 괜찮네요! 거래를 수락합니까?"
 
 #: src/trait_group.cpp
 msgid "Result of 100 spawns:"

@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-18 19:08+0000\n"
+"POT-Creation-Date: 2026-01-19 20:24+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -56610,8 +56610,9 @@ msgstr[0] "電池ボックス改造モッド"
 #: data/json/items/toolmod.json
 msgid ""
 "A battery compartment mod that allows using vehicle and storage batteries in"
-" regular tools, up to the size of a car battery."
-msgstr "電池ボックスを改造し、通常の装置に車両用・蓄電池の使用を可能にするモッド。対応サイズは車用バッテリーまで。"
+" regular tools, up to the size of a large storage battery, as unwieldy as "
+"that may be."
+msgstr ""
 
 #: data/json/items/toolmod.json
 msgid "light battery mod"
@@ -225999,6 +226000,26 @@ msgstr "地形説明"
 msgid "Switch lists"
 msgstr "切替/リスト"
 
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle category select"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Autobalance trade"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle item description"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Add item to trade"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Remove item from trade"
+msgstr ""
+
 #: data/raw/keybindings/keybindings.json src/action.cpp
 msgid "Back"
 msgstr "戻る"
@@ -228348,7 +228369,7 @@ msgstr "着用"
 msgid "name"
 msgstr "名前"
 
-#: src/advanced_inv.cpp
+#: src/advanced_inv.cpp src/trade_win.cpp
 msgid "weight"
 msgstr "重量"
 
@@ -228392,7 +228413,7 @@ msgstr "数  重量 体積"
 msgid "src amt weight vol"
 msgstr "方向 数  重量 体積"
 
-#: src/advanced_inv.cpp
+#: src/advanced_inv.cpp src/trade_win.cpp
 msgid "Name (charges)"
 msgstr "名称(装填量)"
 
@@ -231625,11 +231646,11 @@ msgstr "%s/ターン"
 msgid "%s/%d turns"
 msgstr "%s/%dターン"
 
-#: src/bionics_ui.cpp src/handle_action.cpp
+#: src/bionics_ui.cpp src/handle_action.cpp src/trade_win.cpp
 msgid "OFF"
 msgstr "オフ"
 
-#: src/bionics_ui.cpp src/handle_action.cpp
+#: src/bionics_ui.cpp src/handle_action.cpp src/trade_win.cpp
 msgid "ON"
 msgstr "オン"
 
@@ -232048,7 +232069,7 @@ msgid "Press PgUp/PgDn/Home/End to scroll output window"
 msgstr "出力ウィンドウをスクロールするには、PgUp/PgDn/Home/Endキーを押す。"
 
 #: src/character.cpp src/debug_menu.cpp src/game.cpp src/iuse.cpp
-#: src/npctalk.cpp src/npctrade.cpp
+#: src/npctalk.cpp src/trade_win.cpp
 msgid "You"
 msgstr "あなた"
 
@@ -238048,19 +238069,19 @@ msgid "Your response:"
 msgstr "返答: "
 
 #: src/dialogue_win.cpp
-msgid "L: Look at"
+msgid "[L] Look at"
 msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "S: Size up stats"
+msgid "[S] Size up stats"
 msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "Y: Yell"
+msgid "[Y] Yell"
 msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "O: Check opinion"
+msgid "[O] Check opinion"
 msgstr ""
 
 #: src/diary.cpp
@@ -247674,7 +247695,7 @@ msgstr "刺突: "
 msgid "Critical pierce: "
 msgstr "刺突会心: "
 
-#: src/item.cpp
+#: src/item.cpp src/trade_win.cpp
 msgid ": "
 msgstr ": "
 
@@ -256932,7 +256953,7 @@ msgstr "武器:"
 msgid "Equipment:"
 msgstr "装備:"
 
-#: src/memorial_logger.cpp src/newcharacter.cpp
+#: src/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
 msgid "Inventory:"
 msgstr "持ち物欄:"
 
@@ -263959,7 +263980,7 @@ msgstr "…あるいは他の何を保管するにしても同様だ。"
 msgid "It is too heavy for me to carry."
 msgstr "私には重すぎて背負えない。"
 
-#: src/npctalk_funcs.cpp
+#: src/npctalk_funcs.cpp src/trade_win.cpp
 msgid "Reward"
 msgstr "報酬"
 
@@ -264088,115 +264109,13 @@ msgstr "%s はあなたに対して、それほど脅威に感じていないよ
 msgid "Pause to stay still.  Any movement may cause %s to attack."
 msgstr "少しでも動けば、%s が攻撃してくる。"
 
-#: src/npctalk_funcs.cpp
+#: src/npctalk_funcs.cpp src/trade_win.cpp
 msgid "Pay:"
 msgstr "支払い:"
 
 #: src/npctalk_funcs.cpp
 msgid "Select a follower"
 msgstr "仲間の選択"
-
-#: src/npctrade.cpp
-#, c-format
-msgid ""
-"Trading with %s.\n"
-"[<color_yellow>%s</color>] to switch lists, letters to pick items, [<color_yellow>%s</color>] and [<color_yellow>%s</color>] to switch pages, [<color_yellow>%s</color>] to finalize, [<color_yellow>%s</color>] to quit, [<color_yellow>%s</color>] to get information on an item."
-msgstr ""
-"%s と取引中です。\n"
-"[<color_yellow>%s</color>] を押してリストを切り替え、アイテムを選択するには対応する文字を押してください。\n"
-"[<color_yellow>%s</color>] と [<color_yellow>%s</color>] でページを切り替えてください。\n"
-"取引を完了するには [<color_yellow>%s</color>] を、取引をキャンセルするには [<color_yellow>%s</color>] を押してください。\n"
-"アイテムの情報を確認するには [<color_yellow>%s</color>] を押してください。"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Volume: %s %s, Weight: %.1f %s"
-msgstr "体積: %s %s、重量: %.1f %s"
-
-#: src/npctrade.cpp
-msgid "Exchange"
-msgstr "交換"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Credit %s"
-msgstr "現金 %s"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Debt %s"
-msgstr "借金 %s"
-
-#: src/npctrade.cpp
-#, c-format
-msgid ": trading %d"
-msgstr ": %d 取引する"
-
-#: src/npctrade.cpp
-#, c-format
-msgid " (%d)"
-msgstr " (%d)"
-
-#: src/npctrade.cpp
-msgid "< Back"
-msgstr "< 戻る"
-
-#: src/npctrade.cpp
-msgid "More >"
-msgstr "追加 >"
-
-#: src/npctrade.cpp
-msgid "Examine which item?"
-msgstr "何の品物を調べますか？"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Trade how many containers with %s [MAX: %d]: "
-msgstr "容器を何個 %s と交換しますか [MAX: %d]: "
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Trade how many %s [MAX: %d]: "
-msgstr "%s を何個交換しますか [MAX: %d]: "
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Hint: You can buy up to %d with your current balance."
-msgstr "ヒント:現在の残高で最大 %d まで購入できる。"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Hint: You'll need to offer %d to even out the deal."
-msgstr "ヒント:取引を成立させるには、%d を提供する必要がある。"
-
-#: src/npctrade.cpp
-msgid "You'll need to offer me more than that."
-msgstr "それよりも多く払わなければならない。"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Sorry, I'm only willing to extend you %s in credit."
-msgstr "申し訳ないが、お前には%sまでしかクレジットを渡せない。"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "%s can't carry all that."
-msgstr "%s はそれだけの重さを運べない。"
-
-#: src/npctrade.cpp
-#, c-format
-msgid ""
-"I'm never going to be able to pay you back for all that.  The most I'm willing to owe you is %s.\n"
-"\n"
-"Continue with trade?"
-msgstr ""
-"それほど多く支払っても、この人物は差額を返してくれない。返済できる最大の借金は %s 。\n"
-"\n"
-"そのことを承知の上で、取引を続ける？"
-
-#: src/npctrade.cpp
-msgid "Looks like a deal!  Accept this trade?"
-msgstr "これはいいですね！取引を承認する？"
 
 #: src/options.cpp
 msgid "Debug information"
@@ -270763,6 +270682,151 @@ msgstr "洞窟全体が揺れた！"
 #: src/timed_event.cpp
 msgid "The earth rumbles."
 msgstr "大地が轟く。"
+
+#: src/trade_win.cpp
+msgid "< ["
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "] keybindings >"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "Paying"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "Accepting a reward from"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "Trading with"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "confirm trade"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "autobalance"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "examine item"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "switch panes"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "|"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "Exchange"
+msgstr "交換"
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Credit %s"
+msgstr "現金 %s"
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Debt %s"
+msgstr "借金 %s"
+
+#: src/trade_win.cpp
+msgid "] category select "
+msgstr ""
+
+#: src/trade_win.cpp
+msgid " >"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "amt"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "vol"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "unit price"
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "/%s %s"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "] filter"
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "< Page %d/%d >"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "< item description >"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "No item selected."
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Trade how many containers with %s [MAX: %d]: "
+msgstr "容器を何個 %s と交換しますか [MAX: %d]: "
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Trade how many %s [MAX: %d]: "
+msgstr "%s を何個交換しますか [MAX: %d]: "
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Hint: You can buy up to %d with your current balance."
+msgstr "ヒント:現在の残高で最大 %d まで購入できる。"
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Hint: You'll need to offer %d to even out the deal."
+msgstr "ヒント:取引を成立させるには、%d を提供する必要がある。"
+
+#: src/trade_win.cpp
+msgid "You'll need to offer me more than that."
+msgstr "それよりも多く払わなければならない。"
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Sorry, I'm only willing to extend you %s in credit."
+msgstr "申し訳ないが、お前には%sまでしかクレジットを渡せない。"
+
+#: src/trade_win.cpp
+#, c-format
+msgid "%s can't carry all that."
+msgstr "%s はそれだけの重さを運べない。"
+
+#: src/trade_win.cpp
+#, c-format
+msgid ""
+"I'm never going to be able to pay you back for all that.  The most I'm willing to owe you is %s.\n"
+"\n"
+"Continue with trade?"
+msgstr ""
+"それほど多く支払っても、この人物は差額を返してくれない。返済できる最大の借金は %s 。\n"
+"\n"
+"そのことを承知の上で、取引を続ける？"
+
+#: src/trade_win.cpp
+msgid "Looks like a deal!  Accept this trade?"
+msgstr "これはいいですね！取引を承認する？"
 
 #: src/trait_group.cpp
 msgid "Result of 100 spawns:"

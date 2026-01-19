@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-18 19:08+0000\n"
+"POT-Creation-Date: 2026-01-19 20:24+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/bn-team/teams/113585/es_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -61381,7 +61381,8 @@ msgstr[2] "Compartimentos de baterías modificados"
 #: data/json/items/toolmod.json
 msgid ""
 "A battery compartment mod that allows using vehicle and storage batteries in"
-" regular tools, up to the size of a car battery."
+" regular tools, up to the size of a large storage battery, as unwieldy as "
+"that may be."
 msgstr ""
 
 #: data/json/items/toolmod.json
@@ -253190,6 +253191,26 @@ msgstr "Describir terreno"
 msgid "Switch lists"
 msgstr "Cambiar listas"
 
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle category select"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Autobalance trade"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle item description"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Add item to trade"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Remove item from trade"
+msgstr ""
+
 #: data/raw/keybindings/keybindings.json src/action.cpp
 msgid "Back"
 msgstr "Volver"
@@ -255631,7 +255652,7 @@ msgstr "Objetos Puestos"
 msgid "name"
 msgstr "nombre"
 
-#: src/advanced_inv.cpp
+#: src/advanced_inv.cpp src/trade_win.cpp
 msgid "weight"
 msgstr "peso"
 
@@ -255675,7 +255696,7 @@ msgstr "cant  peso  vol"
 msgid "src amt weight vol"
 msgstr "lug cant  peso  vol"
 
-#: src/advanced_inv.cpp
+#: src/advanced_inv.cpp src/trade_win.cpp
 msgid "Name (charges)"
 msgstr "Nombre (Cargas)"
 
@@ -258933,11 +258954,11 @@ msgstr "%s/turno"
 msgid "%s/%d turns"
 msgstr "%s/%d turnos"
 
-#: src/bionics_ui.cpp src/handle_action.cpp
+#: src/bionics_ui.cpp src/handle_action.cpp src/trade_win.cpp
 msgid "OFF"
 msgstr "APAGADO"
 
-#: src/bionics_ui.cpp src/handle_action.cpp
+#: src/bionics_ui.cpp src/handle_action.cpp src/trade_win.cpp
 msgid "ON"
 msgstr "ENCENDIDO"
 
@@ -259378,7 +259399,7 @@ msgid "Press PgUp/PgDn/Home/End to scroll output window"
 msgstr ""
 
 #: src/character.cpp src/debug_menu.cpp src/game.cpp src/iuse.cpp
-#: src/npctalk.cpp src/npctrade.cpp
+#: src/npctalk.cpp src/trade_win.cpp
 msgid "You"
 msgstr "Tú"
 
@@ -265409,19 +265430,19 @@ msgid "Your response:"
 msgstr "Tu respuesta:"
 
 #: src/dialogue_win.cpp
-msgid "L: Look at"
+msgid "[L] Look at"
 msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "S: Size up stats"
+msgid "[S] Size up stats"
 msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "Y: Yell"
+msgid "[Y] Yell"
 msgstr ""
 
 #: src/dialogue_win.cpp
-msgid "O: Check opinion"
+msgid "[O] Check opinion"
 msgstr ""
 
 #: src/diary.cpp
@@ -275274,7 +275295,7 @@ msgstr "Perforante:"
 msgid "Critical pierce: "
 msgstr "Perforación crítica:"
 
-#: src/item.cpp
+#: src/item.cpp src/trade_win.cpp
 msgid ": "
 msgstr ""
 
@@ -284703,7 +284724,7 @@ msgstr "Arma:"
 msgid "Equipment:"
 msgstr "Equipo:"
 
-#: src/memorial_logger.cpp src/newcharacter.cpp
+#: src/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
 msgid "Inventory:"
 msgstr "Inventario:"
 
@@ -291788,7 +291809,7 @@ msgstr ""
 msgid "It is too heavy for me to carry."
 msgstr "Es demasiado pesado para que lo pueda llevar."
 
-#: src/npctalk_funcs.cpp
+#: src/npctalk_funcs.cpp src/trade_win.cpp
 msgid "Reward"
 msgstr "Recompensa"
 
@@ -291918,107 +291939,13 @@ msgid "Pause to stay still.  Any movement may cause %s to attack."
 msgstr ""
 "Frena para quedarse quieto. Cualquier movimiento puede hacer que %s ataque."
 
-#: src/npctalk_funcs.cpp
+#: src/npctalk_funcs.cpp src/trade_win.cpp
 msgid "Pay:"
 msgstr "Pago:"
 
 #: src/npctalk_funcs.cpp
 msgid "Select a follower"
 msgstr "Elegir un seguidor"
-
-#: src/npctrade.cpp
-#, c-format
-msgid ""
-"Trading with %s.\n"
-"[<color_yellow>%s</color>] to switch lists, letters to pick items, [<color_yellow>%s</color>] and [<color_yellow>%s</color>] to switch pages, [<color_yellow>%s</color>] to finalize, [<color_yellow>%s</color>] to quit, [<color_yellow>%s</color>] to get information on an item."
-msgstr ""
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Volume: %s %s, Weight: %.1f %s"
-msgstr "Volumen: %s %s, Peso: %.1f %s"
-
-#: src/npctrade.cpp
-msgid "Exchange"
-msgstr "Intercambiar"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Credit %s"
-msgstr ""
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Debt %s"
-msgstr ""
-
-#: src/npctrade.cpp
-#, c-format
-msgid ": trading %d"
-msgstr ""
-
-#: src/npctrade.cpp
-#, c-format
-msgid " (%d)"
-msgstr " (%d)"
-
-#: src/npctrade.cpp
-msgid "< Back"
-msgstr "< Atrás"
-
-#: src/npctrade.cpp
-msgid "More >"
-msgstr "Más >"
-
-#: src/npctrade.cpp
-msgid "Examine which item?"
-msgstr "¿Cuál examinar?"
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Trade how many containers with %s [MAX: %d]: "
-msgstr ""
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Trade how many %s [MAX: %d]: "
-msgstr ""
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Hint: You can buy up to %d with your current balance."
-msgstr ""
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Hint: You'll need to offer %d to even out the deal."
-msgstr ""
-
-#: src/npctrade.cpp
-msgid "You'll need to offer me more than that."
-msgstr ""
-
-#: src/npctrade.cpp
-#, c-format
-msgid "Sorry, I'm only willing to extend you %s in credit."
-msgstr ""
-
-#: src/npctrade.cpp
-#, c-format
-msgid "%s can't carry all that."
-msgstr "%s no puede llevar todo eso."
-
-#: src/npctrade.cpp
-#, c-format
-msgid ""
-"I'm never going to be able to pay you back for all that.  The most I'm willing to owe you is %s.\n"
-"\n"
-"Continue with trade?"
-msgstr ""
-
-#: src/npctrade.cpp
-msgid "Looks like a deal!  Accept this trade?"
-msgstr ""
 
 #: src/options.cpp
 msgid "Debug information"
@@ -298878,6 +298805,148 @@ msgstr "¡Toda la cueva tiembla!"
 #: src/timed_event.cpp
 msgid "The earth rumbles."
 msgstr "Retumba la tierra."
+
+#: src/trade_win.cpp
+msgid "< ["
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "] keybindings >"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "Paying"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "Accepting a reward from"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "Trading with"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "confirm trade"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "autobalance"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "examine item"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "switch panes"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "|"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "Exchange"
+msgstr "Intercambiar"
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Credit %s"
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Debt %s"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "] category select "
+msgstr ""
+
+#: src/trade_win.cpp
+msgid " >"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "amt"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "vol"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "unit price"
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "/%s %s"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "] filter"
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "< Page %d/%d >"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "< item description >"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "No item selected."
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Trade how many containers with %s [MAX: %d]: "
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Trade how many %s [MAX: %d]: "
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Hint: You can buy up to %d with your current balance."
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Hint: You'll need to offer %d to even out the deal."
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "You'll need to offer me more than that."
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "Sorry, I'm only willing to extend you %s in credit."
+msgstr ""
+
+#: src/trade_win.cpp
+#, c-format
+msgid "%s can't carry all that."
+msgstr "%s no puede llevar todo eso."
+
+#: src/trade_win.cpp
+#, c-format
+msgid ""
+"I'm never going to be able to pay you back for all that.  The most I'm willing to owe you is %s.\n"
+"\n"
+"Continue with trade?"
+msgstr ""
+
+#: src/trade_win.cpp
+msgid "Looks like a deal!  Accept this trade?"
+msgstr ""
 
 #: src/trait_group.cpp
 msgid "Result of 100 spawns:"
