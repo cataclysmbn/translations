@@ -10,14 +10,14 @@
 # H_Hedgehog, 2025
 # HuanSen233, 2026
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
-# Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026
 # LuXts, 2026
+# Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-01-23 18:57+0000\n"
-"Last-Translator: LuXts, 2026\n"
+"POT-Creation-Date: 2026-01-24 16:24+0000\n"
+"Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -69166,9 +69166,9 @@ msgstr[0] "环带盾牌"
 #. ~ Description for {'str': 'banded shield'}
 #: data/json/items/armor/shields.json
 msgid ""
-"A simple round shield made of wood with bands of steel reinforcing it.  "
+"A simple round shield made of wood with bands of iron reinforcing it.  "
 "Stronger than a simple wooden shield, but also more encumbering."
-msgstr "一个由木头制成并用钢带加固的简单圆形盾牌。比普通的木盾更强韧，但也更加沉重。"
+msgstr ""
 
 #: data/json/items/armor/shields.json
 msgid "large leather-reinforced shield"
@@ -69190,9 +69190,9 @@ msgstr[0] "大型环带盾牌"
 #. ~ Description for {'str': 'large banded shield'}
 #: data/json/items/armor/shields.json
 msgid ""
-"A large shield made of wood with steel bands reinforcing it.  Stronger than "
-"a simple wooden shield, but also more encumbering."
-msgstr "一个由木头制成并用钢带加固的大型圆形盾牌。比普通的木盾更强韧，但也更加沉重。"
+"A large shield made of wood with iron bands reinforcing it.  Stronger than a"
+" simple wooden shield, but also more encumbering."
+msgstr ""
 
 #: data/json/items/armor/shields.json
 msgid "welded shield"
@@ -133857,6 +133857,18 @@ msgid ""
 "Whether from personal choice or childhood trauma, using ranged weapons is "
 "off-limits to you, even if your life depended on it."
 msgstr "无论是出于个人选择还是童年阴影，你不愿使用远距武器，就算事关生死也不能接受。"
+
+#: data/json/mutations/mutations.json
+msgid "Gun Shy"
+msgstr "恐枪症"
+
+#. ~ Description for {'str': 'Gun Shy'}
+#: data/json/mutations/mutations.json
+msgid ""
+"Whether from personal choice or childhood trauma, using firearms is "
+"completely off-limits to you, even if your life depended on it.  Other "
+"ranged weapons, however, are totally fine."
+msgstr "无论是出于个人选择还是童年阴影，你都绝对无法强迫自己使用枪支，就算事关生死也不能接受。不过，使用其他远程武器完全没问题。"
 
 #: data/json/mutations/mutations.json
 msgid "Nomad"
@@ -229247,6 +229259,10 @@ msgid "You refuse to use this ranged weapon."
 msgstr "你拒绝使用这个远程武器。"
 
 #: src/avatar_action.cpp
+msgid "You refuse to use this gun."
+msgstr "你拒绝使用这把枪。"
+
+#: src/avatar_action.cpp
 msgid "Your eyes steel, and you raise your weapon!"
 msgstr "你目光如铁，你举起了你的武器！"
 
@@ -229257,6 +229273,10 @@ msgstr "你无法射击，武器太重了……"
 #: src/avatar_action.cpp
 msgid "You refuse to use this ranged weapon"
 msgstr "你拒绝使用这个远程武器"
+
+#: src/avatar_action.cpp
+msgid "You refuse to use this gun turret"
+msgstr "你拒绝使用这个炮塔。"
 
 #: src/avatar_action.cpp
 msgid "Your eyes steel, and you aim your weapon!"
@@ -235223,7 +235243,7 @@ msgstr "未选中配方！按 [ESC] 关闭"
 
 #: src/crafting_gui.cpp
 msgid "Compare to which item?"
-msgstr ""
+msgstr "要与哪个物品进行对比？"
 
 #: src/crafting_gui.cpp src/game_inventory.cpp src/inventory_ui.cpp
 msgid "Your inventory is empty."
@@ -254057,6 +254077,10 @@ msgid "Unable to make config directory.  Check permissions."
 msgstr "无法创建设置文件夹。请检查权限。"
 
 #: src/main_menu.cpp
+msgid "Unable to make user mods directory.  Check permissions."
+msgstr "无法创建用户模组目录。请检查权限。"
+
+#: src/main_menu.cpp
 msgid "Unable to make save directory.  Check permissions."
 msgstr "无法创建存档文件夹。请检查权限。"
 
@@ -270402,6 +270426,10 @@ msgid "Search for part"
 msgstr "筛选部件"
 
 #: src/veh_interact.cpp
+msgid "It's too hard to reach the vehicle with the other vehicle in the way"
+msgstr "因为有另一辆车挡路，难以够到那辆车。"
+
+#: src/veh_interact.cpp
 msgid "Your morale is too low to construct…"
 msgstr "你心情值过低，无法建造……"
 
@@ -270456,6 +270484,12 @@ msgstr "你在驾驶载具时无法修复部件。"
 #: src/veh_interact.cpp
 msgid "Choose a part here to mend:"
 msgstr "选择要修复的部件："
+
+#: src/veh_interact.cpp
+msgid ""
+"You can't refill that fuel tank, it's too hard to reach with the other "
+"vehicle in the way"
+msgstr "你无法加注那个油箱，因为有另一辆车挡路，难以够到。"
 
 #: src/veh_interact.cpp
 msgid "You can't refill a moving vehicle."
@@ -270581,6 +270615,11 @@ msgid "Better not remove something while driving."
 msgstr "驾驶时最好别乱拆部件。"
 
 #: src/veh_interact.cpp
+msgid ""
+"It's too hard to siphon from the vehicle with the other vehicle in the way"
+msgstr "因为有另一辆车挡路，难以从那辆车中抽取燃料。"
+
+#: src/veh_interact.cpp
 msgid "The vehicle has no liquid fuel left to siphon."
 msgstr "这辆载具没有可抽取的液态燃料。"
 
@@ -270595,6 +270634,10 @@ msgstr "你无法从正在移动的载具中抽油。"
 #: src/veh_interact.cpp
 msgid "Select part to siphon:"
 msgstr "选择要抽取的水箱："
+
+#: src/veh_interact.cpp
+msgid "You cant unloade with the other vehicle in the way"
+msgstr "因为有另一辆车挡路，你无法进行卸载。"
 
 #: src/veh_interact.cpp
 msgid "The vehicle has no solid fuel left to remove."
