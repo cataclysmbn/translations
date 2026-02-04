@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-03 20:02+0000\n"
+"POT-Creation-Date: 2026-02-04 01:13+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Polish (Poland) (https://app.transifex.com/bn-team/teams/113585/pl_PL/)\n"
 "MIME-Version: 1.0\n"
@@ -2923,15 +2923,11 @@ msgstr "Bioniczne Szpony"
 #. ~ Description for {'str': 'Bionic Claws'}
 #: data/json/bionics.json
 msgid ""
-"Vicious claws have been surgically installed inside your fingers, allowing "
-"you to extend and retract them at the cost of a small amount of power.  "
-"These do considerable cutting damage, but prevent you from holding anything "
-"else while extended."
+"Vicious claws have been surgically installed inside your hands, allowing you"
+" to extend and retract them at the cost of a small amount of power.  These "
+"do considerable cutting damage, but prevent you from holding anything else "
+"while extended."
 msgstr ""
-"Okrutne szpony zostały chirurgicznie zainstalowane wewnątrz twoich palców, "
-"co umożliwia ich chowanie i wyciąganie kosztem małej ilości mocy. Zadają "
-"znaczne obrażenia cięte, ale uniemożliwiają trzymanie czegokolwiek, gdy są "
-"wysunięte."
 
 #: data/json/bionics.json
 msgid "Internal Climate Control"
@@ -3013,7 +3009,7 @@ msgstr "Rozszerzony System Trawienny"
 #. ~ Description for {'str': 'Expanded Digestive System'}
 #: data/json/bionics.json
 msgid ""
-"You have been outfitted with three synthetic stomachs and industrial-grade "
+"You have been outfitted with a synthetic stomach and industrial-grade "
 "intestines.  Not only can you extract much more nutrition from food, but you"
 " are immune to foodborne illness, parasites, and can even eat rotten food."
 msgstr ""
@@ -4246,9 +4242,8 @@ msgstr ""
 #: data/json/bionics.json
 msgid ""
 "This stripped down mini-reactor generates impressive amounts of bionic power"
-" but slowly irradiates the user.  1 plutonium fuel cell provides 1000 "
-"charges producing 10kJ of power a turn, while not active & fueled provides a"
-" constant 50J of power."
+" but slowly irradiates the user when in use.  1 plutonium fuel cell provides"
+" 1000 charges producing 10kW of power a turn."
 msgstr ""
 
 #: data/json/bionics.json
@@ -4260,8 +4255,7 @@ msgstr ""
 msgid ""
 "This stripped down mini-reactor has been heavily modified and is more "
 "efficient and safer than the base model.  1 plutonium fuel cell provides "
-"1500 charges producing 10kJ of power a turn, while not active & fueled "
-"provides a constant 75J of power."
+"1500 charges producing 10kW of power."
 msgstr ""
 
 #: data/json/bionics.json
@@ -4269,12 +4263,23 @@ msgid "Micro Reactor Safety Override"
 msgstr ""
 
 #. ~ Description for {'str': 'Micro Reactor Safety Override'}
-#. ~ Description for {'str': 'Micro Reactor Safety Override CBM'}
-#: data/json/bionics.json data/json/items/bionics.json
+#: data/json/bionics.json
 msgid ""
 "Disables the radiation safety protocols allowing for much higher energy "
-"production.  While active produces 40kJ of power a turn and 1 irradiated "
-"stack every 20 turns."
+"production.  While active produces 40kW of power and 1 irradiated stack "
+"every 20 turns."
+msgstr ""
+
+#: data/json/bionics.json
+msgid "Atomic Battery"
+msgstr ""
+
+#. ~ Description for {'str': 'Atomic Battery'}
+#: data/json/bionics.json
+msgid ""
+"A compact alphavoltaic power source, producing a steady source of limitless "
+"bionic power at the cost of minimal radiation while in use.  Produces 50W of"
+" power while active."
 msgstr ""
 
 #: data/json/bionics.json
@@ -4333,15 +4338,10 @@ msgstr "Modyfikator Zmysłu Smaku"
 #. ~ Description for {'str': 'Taste Modifier'}
 #: data/json/bionics.json
 msgid ""
-"A set of highly sensitive sensors is installed in your mouth, and a small "
-"yet sophisticated analyzer is installed in the cavity of your skull.  The "
-"active bionic will nullify the taste of all comestibles with negative "
-"enjoyment value at the cost of draining bionic power."
+"A set of highly sensitive sensors is installed in your mouth.  The active "
+"bionic will nullify the taste of all comestibles with negative enjoyment "
+"value at the cost of draining bionic power."
 msgstr ""
-"Zestaw wyspecjalizowanych sensorów zainstalowanych wewnątrz twoich ust, wraz"
-" z wyrafinowanym analizatorem umieszczonym w jednym z licznych zagłębień "
-"twojej czaszki. Ta bionika, aktywowana, niweluje nieprzyjemne smaki oraz "
-"wynikające z nich niezadowolenie. Kosztem, oczywiście, bionicznej mocy."
 
 #: data/json/bionics.json
 msgid "Soporific Induction"
@@ -4415,7 +4415,7 @@ msgstr "Ręka - Blaster Fuzyjny"
 #. ~ Description for {'str': 'Fusion Blaster Arm'}
 #: data/json/bionics.json
 msgid ""
-"Heavy-duty fusion blaster was integrated ino your left arm!  You may use "
+"A heavy-duty fusion blaster was integrated into your left arm!  You may use "
 "your energy banks to fire a damaging heat ray."
 msgstr ""
 
@@ -27525,6 +27525,7 @@ msgid "Weapon"
 msgstr "Broń"
 
 #. ~ Description for {'str': 'Weapon'}
+#. ~ Description for {'str': 'Alphavoltaic Power', 'str_pl': 'none'}
 #. ~ Description for {'str_sp': 'animal'}
 #. ~ Description for {'str_sp': 'nearby fire'}
 #. ~ Description for {'str_sp': 'muscle'}
@@ -27538,8 +27539,9 @@ msgstr "Broń"
 #. ~ Description for {'str': 'abstract map'}
 #. ~ Description for {'str_sp': 'seeing this is a bug'}
 #: data/json/skills.json data/json/furniture_and_terrain/furniture-fakes.json
-#: data/json/items/generic.json data/json/items/book/electronics.json
-#: data/json/items/book/maps.json data/json/items/tool/deployable.json
+#: data/json/items/fake.json data/json/items/generic.json
+#: data/json/items/book/electronics.json data/json/items/book/maps.json
+#: data/json/items/tool/deployable.json
 msgid "seeing this is a bug"
 msgid_plural "seeing this is a bug"
 msgstr[0] ""
@@ -49630,8 +49632,7 @@ msgstr[3] "Wewnętrzny Mikroreaktor CBM"
 msgid ""
 "This stripped down mini-reactor will generate impressive amounts of bionic "
 "power, but may not be the safest thing to install.  1 plutonium fuel cell "
-"provides 1000 charges producing 10kJ of power a turn, while not active & "
-"fueled provides a constant 50J of power."
+"provides 1000 charges producing 10kW of power."
 msgstr ""
 
 #: data/json/items/bionics.json
@@ -49647,8 +49648,7 @@ msgstr[3] "Zaawansowany Mikroreaktor CBM"
 msgid ""
 "This module upgrades a pre-installed microreactor with enhanced maximum "
 "yield and limited automatic radiation scrubbing capabilities.  1 plutonium "
-"fuel cell provides 1500 charges producing 10kJ of power a turn, while not "
-"active & fueled provides a constant 75J of power."
+"fuel cell provides 1500 charges producing 10kW of power."
 msgstr ""
 
 #: data/json/items/bionics.json
@@ -49658,6 +49658,30 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+#. ~ Description for {'str': 'Micro Reactor Safety Override CBM'}
+#: data/json/items/bionics.json
+msgid ""
+"Disables the radiation safety protocols allowing for much higher energy "
+"production.  While active produces 40kJ of power a turn and 1 irradiated "
+"stack every 20 turns."
+msgstr ""
+
+#: data/json/items/bionics.json
+msgid "Atomic Battery CBM"
+msgid_plural "Atomic Battery CBMs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'Atomic Battery CBM'}
+#: data/json/items/bionics.json
+msgid ""
+" Effectively a plutonium fuel cell converted into an alphavoltaic battery, "
+"this bionic will provide a limitless source of power at a steady 50 watts "
+"when active, with only minimal exposure to radiation while in use."
+msgstr ""
 
 #: data/json/items/bionics.json
 msgid "Microreactor Upgrade CBM"
@@ -53273,6 +53297,14 @@ msgstr ""
 #: data/json/items/fake.json
 msgid "local gateway"
 msgid_plural "local gateway"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: data/json/items/fake.json
+msgid "Alphavoltaic Power"
+msgid_plural "none"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
