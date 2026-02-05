@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-04 01:13+0000\n"
+"POT-Creation-Date: 2026-02-05 20:39+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -17904,8 +17904,8 @@ msgid "smashing"
 msgstr "打砸"
 
 #: data/json/player_activities.json
-msgid "cranking"
-msgstr "转动把手"
+msgid "charging"
+msgstr "充电"
 
 #: data/json/player_activities.json
 msgid "heating"
@@ -166365,12 +166365,8 @@ msgid "shipwreck"
 msgstr "沉船"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
-msgid "Cargoship1"
-msgstr "货船1"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain.json
-msgid "Cargoshipunder"
-msgstr "货船下层"
+msgid "cargo ship"
+msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "wasp-infested radio tower"
@@ -182993,14 +182989,14 @@ msgstr "%1$s 试图用针管给 <npcname> 注射什么东西，但是没能穿�
 #: data/mods/Aftershock/scenarios.json
 msgctxt "scenario_male"
 msgid "Challenge - Anomalous Materials"
-msgstr "挑战-异常物质实验室"
+msgstr "挑战 - 异常物质实验室"
 
 #. ~ Name for scenario 'Challenge - Anomalous Materials' for a female
 #. character
 #: data/mods/Aftershock/scenarios.json
 msgctxt "scenario_female"
 msgid "Challenge - Anomalous Materials"
-msgstr "挑战-异常物质实验室"
+msgstr "挑战 - 异常物质实验室"
 
 #. ~ Name for scenario 'Robots' for a male character
 #: data/mods/Aftershock/scenarios.json
@@ -226049,14 +226045,6 @@ msgid "You get some training in %s."
 msgstr "你完成了 %s 的训练。"
 
 #: src/activity_handlers.cpp
-msgid "You've charged the battery completely."
-msgstr "你已经将电池充满电了。"
-
-#: src/activity_handlers.cpp src/iuse.cpp
-msgid "You're too exhausted to keep cranking."
-msgstr "你太累了，不能继续转动了。"
-
-#: src/activity_handlers.cpp
 msgid "You have trouble breathing, and stop."
 msgstr "你无法呼吸，呼吸停止了。"
 
@@ -240949,11 +240937,6 @@ msgid "Speed %s%d!"
 msgstr "速度 %s%d！"
 
 #: src/game.cpp
-#, c-format
-msgid "We modified climb, it's %s now"
-msgstr "我们修改了攀爬参数，现在是 %s"
-
-#: src/game.cpp
 msgid "You slip while climbing and fall down again."
 msgstr "你爬的时候滑了一下，结果又掉下来了"
 
@@ -244178,11 +244161,20 @@ msgstr "%1$s 含有 %2$d 个 %3$s 。是否取出？"
 msgid "You need some %1$s to reload this %2$s."
 msgstr "你需要一些 %1$s 来重新装填 %2$s。"
 
-#. ~ Loading fuel or other items into a piece of furniture.
 #: src/iexamine.cpp
 #, c-format
-msgid "Put how many of the %1$s into the %2$s?"
-msgstr "将多少 %1$s 放进 %2$s？"
+msgid " (%d in inventory, %d nearby)"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid " (%d nearby)"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "Put how much %1$s into the %2$s?%3$s"
+msgstr ""
 
 #. ~ %1$s - furniture, %2$d - number, %3$s items.
 #: src/iexamine.cpp
@@ -244834,6 +244826,10 @@ msgstr "叮！"
 #: src/iexamine.cpp
 msgid "You can't place more food while it's smoking."
 msgstr "你无法在烟熏架熏制时添加更多的食物。"
+
+#: src/iexamine.cpp
+msgid "Remove it before loading the smoking rack again."
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "Load smoking rack with what kind of food?"
@@ -249240,24 +249236,6 @@ msgid "You play on your %s for a while."
 msgstr "你玩了一会儿 %s。"
 
 #: src/iuse.cpp
-msgid "It's not waterproof enough to work underwater."
-msgstr "它的防水性在水中无效。"
-
-#: src/iuse.cpp
-#, c-format
-msgid "You start cranking the %s to charge its %s."
-msgstr "你开始转动%s给%s充电。"
-
-#: src/iuse.cpp
-#, c-format
-msgid "You could use the %s to charge its %s, but it's already charged."
-msgstr "你可以用 %s 为 %s 充电，但它已经充满电了。"
-
-#: src/iuse.cpp
-msgid "You need a rechargeable battery cell to charge."
-msgstr "你需要一个可充电电池来充能。"
-
-#: src/iuse.cpp
 msgid "You cannot do… that while mounted."
 msgstr "你不能在骑乘时做……那种事。"
 
@@ -251260,6 +251238,10 @@ msgstr "%s 下方空间过于拥挤，无法放置 %s。"
 #, c-format
 msgid "You can't deploy a %s there."
 msgstr "你无法在这里放置 %s。"
+
+#: src/iuse_actor.cpp
+msgid "Can't put that here - items in the way."
+msgstr ""
 
 #: src/iuse_actor.cpp src/mission_start.cpp src/mission_util.cpp
 msgid "Please wait…"

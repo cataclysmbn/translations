@@ -28,16 +28,16 @@
 # scarf <greenscarf005@gmail.com>, 2025
 # DelFe, 2025
 # 47a81cb9738d39622e1b1fde74c42b2a_791bd4f <20fb875a401cb03ba4fd8103e46da6b9_1176784>, 2026
-# Tae Heon Lim, 2026
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
-# 고양이맛커피, 2026
+# CatCoffee, 2026
 # Choi Dong-uk, 2026
+# Tae Heon Lim, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-04 01:13+0000\n"
-"Last-Translator: Choi Dong-uk, 2026\n"
+"POT-Creation-Date: 2026-02-05 20:39+0000\n"
+"Last-Translator: Tae Heon Lim, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18458,8 +18458,8 @@ msgid "smashing"
 msgstr "부수기"
 
 #: data/json/player_activities.json
-msgid "cranking"
-msgstr "크랭크 돌리기"
+msgid "charging"
+msgstr "충전중"
 
 #: data/json/player_activities.json
 msgid "heating"
@@ -172868,12 +172868,8 @@ msgid "shipwreck"
 msgstr "난파선"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
-msgid "Cargoship1"
-msgstr "화물선1"
-
-#: data/json/overmap/overmap_terrain/overmap_terrain.json
-msgid "Cargoshipunder"
-msgstr "화물선지하"
+msgid "cargo ship"
+msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "wasp-infested radio tower"
@@ -235230,14 +235226,6 @@ msgid "You get some training in %s."
 msgstr "%s에 보다 숙련된 기분입니다."
 
 #: src/activity_handlers.cpp
-msgid "You've charged the battery completely."
-msgstr "배터리를 완전히 충전했습니다."
-
-#: src/activity_handlers.cpp src/iuse.cpp
-msgid "You're too exhausted to keep cranking."
-msgstr "크랭크질을 계속하기에는 너무 지쳤습니다."
-
-#: src/activity_handlers.cpp
 msgid "You have trouble breathing, and stop."
 msgstr "숨쉬기가 곤란해졌다가, 멈췄다."
 
@@ -250186,11 +250174,6 @@ msgid "Speed %s%d!"
 msgstr "속도 %s%d!"
 
 #: src/game.cpp
-#, c-format
-msgid "We modified climb, it's %s now"
-msgstr "등반이 수정되었습니다. 현재 %s 입니다."
-
-#: src/game.cpp
 msgid "You slip while climbing and fall down again."
 msgstr "미끄러져서 떨어졌습니다."
 
@@ -253419,11 +253402,20 @@ msgstr "%1$s에는 %2$d 만큼의 %3$s(이)가 들어있습니다.  꺼내겠습
 msgid "You need some %1$s to reload this %2$s."
 msgstr "%2$s에는 %1$s(이)가 필요합니다."
 
-#. ~ Loading fuel or other items into a piece of furniture.
 #: src/iexamine.cpp
 #, c-format
-msgid "Put how many of the %1$s into the %2$s?"
-msgstr "%1$s(을)를 %2$s에 얼마나 넣습니까?"
+msgid " (%d in inventory, %d nearby)"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid " (%d nearby)"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "Put how much %1$s into the %2$s?%3$s"
+msgstr ""
 
 #. ~ %1$s - furniture, %2$d - number, %3$s items.
 #: src/iexamine.cpp
@@ -254076,6 +254068,10 @@ msgstr "땡!"
 #: src/iexamine.cpp
 msgid "You can't place more food while it's smoking."
 msgstr "이미 훈제가 진행 중일 때는 음식을 더 넣을 수 없습니다."
+
+#: src/iexamine.cpp
+msgid "Remove it before loading the smoking rack again."
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "Load smoking rack with what kind of food?"
@@ -258513,24 +258509,6 @@ msgid "You play on your %s for a while."
 msgstr "잠깐 동안 %s(을)를 가지고 놀았다."
 
 #: src/iuse.cpp
-msgid "It's not waterproof enough to work underwater."
-msgstr "수중에서 작동할 정도로 방수 성능이 뛰어나지는 않습니다."
-
-#: src/iuse.cpp
-#, c-format
-msgid "You start cranking the %s to charge its %s."
-msgstr "%s의 크랭크를 돌려 %s(을)를 충전하기 시작합니다."
-
-#: src/iuse.cpp
-#, c-format
-msgid "You could use the %s to charge its %s, but it's already charged."
-msgstr "%s(을)를 써서 %s(을)를 충전시킬 수 있는건 맞지만, 이미 가득 충전되어 있습니다."
-
-#: src/iuse.cpp
-msgid "You need a rechargeable battery cell to charge."
-msgstr "재충전 가능한 배터리가 필요합니다."
-
-#: src/iuse.cpp
 msgid "You cannot do… that while mounted."
 msgstr "안됩니다… 뭔가에 타고 있는 동안에는요."
 
@@ -260539,6 +260517,10 @@ msgstr "%s 밑의 공간은 %s(을)를 설치하기에 너무 비좁습니다."
 #, c-format
 msgid "You can't deploy a %s there."
 msgstr "그곳에는 %s(을)를 설치할 수 없습니다."
+
+#: src/iuse_actor.cpp
+msgid "Can't put that here - items in the way."
+msgstr ""
 
 #: src/iuse_actor.cpp src/mission_start.cpp src/mission_util.cpp
 msgid "Please wait…"
