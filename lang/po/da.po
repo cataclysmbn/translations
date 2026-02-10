@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-09 20:10+0000\n"
+"POT-Creation-Date: 2026-02-10 19:25+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2023\n"
 "Language-Team: Danish (https://app.transifex.com/bn-team/teams/113585/da/)\n"
 "MIME-Version: 1.0\n"
@@ -11080,6 +11080,13 @@ msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid ""
+"Any creature spawned from this item will <info>always</info> emerge "
+"<bad>against you</good>."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This comestible can be <good>eaten even on full stomach</good>."
 msgstr ""
 
@@ -12231,7 +12238,15 @@ msgid "Check grid connections"
 msgstr ""
 
 #: data/json/item_actions.json
+msgid "Check fluid grid connections"
+msgstr ""
+
+#: data/json/item_actions.json
 msgid "Modify grid connections"
+msgstr ""
+
+#: data/json/item_actions.json
+msgid "Modify fluid grid connections"
 msgstr ""
 
 #: data/json/item_actions.json
@@ -36711,6 +36726,15 @@ msgstr ""
 #. ~ Description for standing tank
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "A large freestanding metal tank, useful for holding liquids."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "standing tank (plumbed)"
+msgstr ""
+
+#. ~ Description for standing tank (plumbed)
+#: data/json/furniture_and_terrain/furniture-storage.json
+msgid "A large freestanding metal tank hooked into a fluid grid."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -118868,6 +118892,19 @@ msgstr[1] ""
 msgid ""
 "This is a flexible rubber hose.  It could be used for crafting, or siphoning"
 " fuel from a vehicle."
+msgstr ""
+
+#: data/json/items/tool/workshop.json
+msgid "plumber's toolkit"
+msgid_plural "plumber's toolkits"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': "plumber's toolkit"}
+#: data/json/items/tool/workshop.json
+msgid ""
+"A compact kit for probing, joining, and extending fluid grid connections in "
+"buildings."
 msgstr ""
 
 #: data/json/items/tool/workshop.json
@@ -222312,6 +222349,15 @@ msgid ""
 "Removes all monsters from the game, save for those in the WILDLIFE category."
 msgstr ""
 
+#: data/mods/Spawn_Hook_Test/modinfo.json
+msgid "Spawn hook testing"
+msgstr ""
+
+#. ~ Description for Spawn hook testing
+#: data/mods/Spawn_Hook_Test/modinfo.json
+msgid "Testing spawn hooks. It should be obsolete after testing!"
+msgstr ""
+
 #: data/mods/StatsThroughSkills/modinfo.json
 msgid "Stats Through Skills"
 msgstr ""
@@ -247980,8 +248026,47 @@ msgid "You squeeze the last drops of %s from the vat."
 msgstr ""
 
 #: src/iexamine.cpp
+msgid ""
+"Adding clean water to this grid containing tainted water will contaminate "
+"your clean water.  Continue?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid ""
+"Adding tainted water to this grid containing clean water will contaminate "
+"your clean water.  Continue?"
+msgstr ""
+
+#: src/iexamine.cpp
 #, c-format
-msgid "You don't have any drinks to fill the %s with."
+msgid "Adding %s will contaminate the fluid grid's water supply.  Continue?"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s contains non-water liquids and cannot be connected."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "Dispense or dump %s"
+msgstr ""
+
+#: src/iexamine.cpp src/vehicle_use.cpp
+msgid "Have a drink"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Fill"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Disconnect from fluid grid"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You don't have any water to fill the %s with."
 msgstr ""
 
 #: src/iexamine.cpp
@@ -247995,7 +248080,7 @@ msgstr ""
 
 #: src/iexamine.cpp
 #, c-format
-msgid "You completely fill the %1$s with %2$s."
+msgid "The %s cannot hold any more water."
 msgstr ""
 
 #: src/iexamine.cpp
@@ -248003,13 +248088,46 @@ msgstr ""
 msgid "You fill the %1$s with %2$s."
 msgstr ""
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/iuse.cpp
 #, c-format
-msgid "Dispense or dump %s"
+msgid "Fluid stored: %1$s/%2$s %3$s."
 msgstr ""
 
-#: src/iexamine.cpp src/vehicle_use.cpp
-msgid "Have a drink"
+#: src/iexamine.cpp src/iuse.cpp src/vehicle_display.cpp
+msgid "empty"
+msgstr ""
+
+#: src/iexamine.cpp src/iuse.cpp
+msgid "mixed fluids"
+msgstr ""
+
+#: src/iexamine.cpp src/iuse.cpp
+#, c-format
+msgid "Fluid type: %s."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You disconnect the %s from the fluid grid."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Add to fluid grid"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You connect the %s to the fluid grid."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You don't have any drinks to fill the %s with."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You completely fill the %1$s with %2$s."
 msgstr ""
 
 #: src/iexamine.cpp
@@ -248034,6 +248152,11 @@ msgstr ""
 #: src/iexamine.cpp
 #, c-format
 msgid "It contains %s (%d), %0.f%% full."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s only accepts water."
 msgstr ""
 
 #: src/iexamine.cpp
@@ -248220,6 +248343,20 @@ msgstr ""
 #: src/iexamine.cpp
 #, c-format
 msgid "There is a %s there.  Disarm?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "It is not connected to a fluid grid fixture."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s has no usable output."
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "The %s is dry."
 msgstr ""
 
 #: src/iexamine.cpp
@@ -251464,6 +251601,10 @@ msgstr ""
 
 #: src/item.cpp src/wish.cpp
 msgid " (friendly)"
+msgstr ""
+
+#: src/item.cpp
+msgid " (hostile)"
 msgstr ""
 
 #: src/item.cpp
@@ -255037,6 +255178,15 @@ msgid "You will no longer recharge the %s via UPS."
 msgstr ""
 
 #: src/iuse.cpp
+msgid "This fluid grid has no connections."
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "This fluid grid has connections: %s."
+msgstr ""
+
+#: src/iuse.cpp
 #, c-format
 msgid "You are connecting two locations in the same grid, with %lu elements."
 msgstr ""
@@ -255066,6 +255216,16 @@ msgid ""
 "%s\n"
 "This action will not consume any resources.\n"
 "Are you sure?"
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "Remove fluid grid connection in direction: %s"
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "Add fluid grid connection in direction: %s"
 msgstr ""
 
 #: src/iuse.cpp
@@ -275794,10 +275954,6 @@ msgstr ""
 
 #: src/vehicle_display.cpp
 msgid "full"
-msgstr ""
-
-#: src/vehicle_display.cpp
-msgid "empty"
 msgstr ""
 
 #: src/vehicle_display.cpp
