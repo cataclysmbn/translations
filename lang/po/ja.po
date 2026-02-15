@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-12 01:08+0000\n"
+"POT-Creation-Date: 2026-02-15 19:30+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -11115,6 +11115,12 @@ msgstr "この装備は、<bad>視界を遮断し</bad>、<info>何も見えな�
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid ""
+"When thrown and it hits a creature's head, it can <bad>blind</bad> them."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This item can be used to block attacks when worn."
 msgstr "このアイテムは着用時に、攻撃を防ぐことができる。"
 
@@ -11795,6 +11801,11 @@ msgid ""
 "This weapon's <info>reload speed</info> is <good>increased by "
 "strength</good>."
 msgstr "この銃器の<info>リロード速度</info>は<good>筋力によって上昇</good>する。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid "Thrown nets apply the NET_TANGLE ammo effect to nearby creatures."
+msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
@@ -46923,6 +46934,10 @@ msgid "throwing weapon"
 msgstr "投擲武器"
 
 #: data/json/items/ammo_types.json
+msgid "bola"
+msgstr ""
+
+#: data/json/items/ammo_types.json
 msgid "chemical ampoule"
 msgstr "化学薬品アンプル"
 
@@ -47051,6 +47066,11 @@ msgstr "改造済みミニニューク"
 msgid "pitch"
 msgid_plural "pitch"
 msgstr[0] "松やに"
+
+#: data/json/items/ammo_types.json data/json/items/ranged/throwing.json
+msgid "bola cartridge"
+msgid_plural "bola cartridges"
+msgstr[0] ""
 
 #: data/json/items/battery.json
 msgid "test battery"
@@ -79066,10 +79086,10 @@ msgstr "粉と水、空気中のカビと細菌から成る貴重な混合物。
 
 #: data/json/items/comestibles/bread.json
 msgid "sourdough bread"
-msgid_plural "sourdough breads"
-msgstr[0] "サワードウブレッド"
+msgid_plural "sourdough bread"
+msgstr[0] ""
 
-#. ~ Description for sourdough bread
+#. ~ Description for {'str_sp': 'sourdough bread'}
 #: data/json/items/comestibles/bread.json
 msgid ""
 "Healthy and filling, with a sharper taste and thicker crust than yeast-only "
@@ -79078,20 +79098,20 @@ msgstr "イースト100%のパンより酸味が強く、表皮も硬い。健�
 
 #: data/json/items/comestibles/bread.json
 msgid "flatbread"
-msgid_plural "flatbreads"
-msgstr[0] "フラットブレッド"
+msgid_plural "flatbread"
+msgstr[0] ""
 
-#. ~ Description for flatbread
+#. ~ Description for {'str_sp': 'flatbread'}
 #: data/json/items/comestibles/bread.json
 msgid "Simple unleavened bread."
 msgstr "無発酵のシンプルなブレッド。"
 
 #: data/json/items/comestibles/bread.json
 msgid "bread"
-msgid_plural "breads"
-msgstr[0] "ブレッド"
+msgid_plural "bread"
+msgstr[0] ""
 
-#. ~ Description for bread
+#. ~ Description for {'str_sp': 'bread'}
 #: data/json/items/comestibles/bread.json
 msgid "Healthy and filling."
 msgstr "健康に良く、満足感がある。"
@@ -79108,10 +79128,10 @@ msgstr "ニンニクと油、調味料で調理されたパン。"
 
 #: data/json/items/comestibles/bread.json
 msgid "cornbread"
-msgid_plural "cornbreads"
-msgstr[0] "コーンブレッド"
+msgid_plural "cornbread"
+msgstr[0] ""
 
-#. ~ Description for cornbread
+#. ~ Description for {'str_sp': 'cornbread'}
 #: data/json/items/comestibles/bread.json
 msgid "Healthy and filling cornbread."
 msgstr "凝縮されており、味わい深い揚げパンのお菓子。"
@@ -99133,6 +99153,17 @@ msgid ""
 msgstr ""
 "消防車に搭載されているタイプの水砲。車両に装備すれば、火災の消火や「デモ隊」の鎮圧に使える。あるいは、より腐食性の高い物質を充填して、消防活動をはるかに超える武力を行使することも可能だ。"
 
+#: data/json/items/gun/misc.json
+msgid "restraint launcher"
+msgid_plural "restraint launchers"
+msgstr[0] ""
+
+#: data/json/items/gun/misc.json
+msgid ""
+"A compact pistol-style launcher designed to fire bola or net cartridges for "
+"non-lethal control."
+msgstr ""
+
 #: data/json/items/gun/monster_gun.json
 msgid "barb launching organ"
 msgid_plural "barb launching organs"
@@ -108087,16 +108118,23 @@ msgstr ""
 
 #: data/json/items/ranged/throwing.json
 msgid "bolas"
-msgid_plural "bolases"
-msgstr[0] "ボラ"
+msgid_plural "pairs of bolas"
+msgstr[0] ""
 
-#. ~ Description for {'str': 'bolas', 'str_pl': 'bolases'}
+#. ~ Description for {'str': 'bolas', 'str_pl': 'pairs of bolas'}
 #: data/json/items/ranged/throwing.json
 msgid ""
 "Some ropes with weights, designed to tangle the legs of a target when "
 "thrown, usually at an animal.  Used by the Gauchos of Argentina."
 msgstr ""
 "重りが付いた複数のロープで構成された狩猟用具。投げつけることで、主に動物の足に絡みつかせて転倒させるよう設計されている。アルゼンチンのガウチョによって使用された。"
+
+#. ~ Description for {'str': 'bola cartridge'}
+#: data/json/items/ranged/throwing.json
+msgid ""
+"A single-use cartridge that fires a bola and leaves the ropes to tangle the "
+"target."
+msgstr ""
 
 #: data/json/items/ranged/throwing.json src/artifact.cpp
 msgid "disc"
@@ -108131,6 +108169,18 @@ msgid ""
 "A mesh of string and weights, traditionally used to catch fish, and to "
 "entangle opponents in combat."
 msgstr "紐と重りで構成された網。伝統的に魚を捕獲したり、戦闘で敵を絡め取ったりするために使用される。"
+
+#: data/json/items/ranged/throwing.json
+msgid "net cartridge"
+msgid_plural "net cartridges"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'net cartridge'}
+#: data/json/items/ranged/throwing.json
+msgid ""
+"A disposable cartridge that launches a weighted net and lets its ropes do "
+"the tying."
+msgstr ""
 
 #: data/json/items/ranged/throwing.json
 msgid "lawn dart"
@@ -110105,6 +110155,7 @@ msgstr "制御用ノートパソコンのバッテリーは、もっと充電が
 #. ~ Use action msg for {'str': 'control laptop'}.
 #. ~ Use action msg for {'str': 'wrist computer'}.
 #. ~ Use action msg for {'str': 'wrist control computer'}.
+#. ~ Use action msg for {'str': 'e-ink tablet PC'}.
 #. ~ Use action msg for laptop computer.
 #. ~ Use action msg for {'str': 'mp3 player (off)', 'str_pl': 'mp3 players
 #. (off)'}.
@@ -110112,6 +110163,7 @@ msgstr "制御用ノートパソコンのバッテリーは、もっと充電が
 #. ~ Use action msg for {'str': 'atomic smartphone'}.
 #. ~ Use action msg for {'str': "Wraitheon executive's smartphone"}.
 #: data/json/items/tool/electronics.json data/mods/Aftershock/items/tools.json
+#: data/mods/ebook_lua/items/tools.json
 msgid "You put in the earbuds and start listening to music."
 msgstr "イヤホンを耳に差し込み、音楽を聴き始めた。"
 
@@ -110264,6 +110316,19 @@ msgid ""
 "these were nifty gadgets; now, it's an almost priceless resource."
 msgstr ""
 "高効率のカラー電子インクディスプレイを搭載したタブレットPC。UPS充電に対応した充電式バッテリーで動作。大災厄以前は実用的な道具であり、現在では極めて貴重な資源。"
+
+#: data/json/items/tool/electronics.json
+msgid "e-ink tablet PC - music"
+msgid_plural "e-ink tablet PCs - music"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'e-ink tablet PC - music', 'str_pl': 'e-ink
+#. tablet PCs - music'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"This e-ink tablet PC is playing music, steadily raising your morale.  You "
+"can't hear anything else while you're listening."
+msgstr ""
 
 #: data/json/items/tool/electronics.json
 msgid "electrohack"
@@ -131012,10 +131077,10 @@ msgstr "樹皮"
 #. ~ Description for {'str': 'Bark'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your skin is coated in a light bark, like that of a tree.  This provides 5 "
-"points of cutting and piercing damage, 4 points of ballistic armor, and one "
-"point of protection from fire.  Greatly reduces wet effects."
-msgstr "皮膚が樹木のような薄い樹皮に覆われた。斬撃・刺突耐性を5、銃弾耐性を4、火炎耐性を1向上させる。濡れ状態による影響を大幅に軽減する。"
+"Your skin has grown over with bark, like that of a tree.  This provides an "
+"additional 3 points of cutting, piercing, and ballistic armor, along with 1 "
+"point of protection from fire.  Further reduces wet effects."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Thorns"
@@ -133076,6 +133141,15 @@ msgid ""
 "You require more food than most people.  On a plus side, you are more "
 "resistant to cold."
 msgstr "他のほとんどの人よりも多くの食料を必要とする。その代わり、寒さに強くなる。"
+
+#: data/json/mutations/mutations.json
+msgid "Hairy"
+msgstr ""
+
+#. ~ Description for {'str': 'Hairy'}
+#: data/json/mutations/mutations.json
+msgid "Your body is covered in thick body hair, making you slightly warmer."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Rapid Metabolism"
@@ -245954,6 +246028,10 @@ msgid "There is a %s there.  Disarm?"
 msgstr "%sがある。解除する？"
 
 #: src/iexamine.cpp
+msgid "Use fixture"
+msgstr ""
+
+#: src/iexamine.cpp
 msgid "It is not connected to a fluid grid fixture."
 msgstr ""
 
@@ -246174,6 +246252,11 @@ msgid "Climb down."
 msgstr "下層へ降りる"
 
 #: src/iexamine.cpp
+#, c-format
+msgid "Pull up the %s."
+msgstr ""
+
+#: src/iexamine.cpp
 msgid "Spin Web Bridge."
 msgstr "ウェブ橋を紡ぐ。"
 
@@ -246231,6 +246314,11 @@ msgstr "上手く着地できず怪我をする可能性がある。跳躍する
 #: src/iexamine.cpp
 msgid "You probably won't be able to get back up.  Climb down?"
 msgstr "一度降りると恐らく引き返せない。降りる？"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You pull up the %s."
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "There is nothing for your to attach your web to!"
@@ -257982,8 +258070,8 @@ msgstr "%1$sは%2$sで死亡した。"
 
 #: src/memorial_logger.cpp
 #, c-format
-msgid "Cataclysm - Dark Days Ahead version %s memorial file"
-msgstr "Cataclysm - Dark Days Ahead バージョン %s メモリアルファイル"
+msgid "Cataclysm: Bright Nights version %s memorial file"
+msgstr ""
 
 #: src/memorial_logger.cpp
 #, c-format
@@ -258114,9 +258202,8 @@ msgstr "義体を装着していません。"
 
 #: src/memorial_logger.cpp
 #, c-format
-msgid ""
-"Bionic Power: <color_light_blue>%d</color>/<color_light_blue>%d</color>"
-msgstr "義体電力:<color_light_blue>%d</color>/<color_light_blue>%d</color>"
+msgid "Bionic Power: %d/%d"
+msgstr ""
 
 #: src/memorial_logger.cpp src/panels.cpp
 msgid "Weapon:"

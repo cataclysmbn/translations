@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-12 01:08+0000\n"
+"POT-Creation-Date: 2026-02-15 19:30+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/bn-team/teams/113585/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -10839,6 +10839,12 @@ msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid ""
+"When thrown and it hits a creature's head, it can <bad>blind</bad> them."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This item can be used to block attacks when worn."
 msgstr ""
 
@@ -11512,6 +11518,11 @@ msgstr ""
 msgid ""
 "This weapon's <info>reload speed</info> is <good>increased by "
 "strength</good>."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid "Thrown nets apply the NET_TANGLE ammo effect to nearby creatures."
 msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
@@ -45979,6 +45990,10 @@ msgid "throwing weapon"
 msgstr "werpwapen"
 
 #: data/json/items/ammo_types.json
+msgid "bola"
+msgstr ""
+
+#: data/json/items/ammo_types.json
 msgid "chemical ampoule"
 msgstr ""
 
@@ -46114,6 +46129,12 @@ msgstr ""
 #: data/json/items/ammo_types.json data/json/items/generic.json
 msgid "pitch"
 msgid_plural "pitch"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/json/items/ammo_types.json data/json/items/ranged/throwing.json
+msgid "bola cartridge"
+msgid_plural "bola cartridges"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -80122,11 +80143,11 @@ msgstr ""
 
 #: data/json/items/comestibles/bread.json
 msgid "sourdough bread"
-msgid_plural "sourdough breads"
+msgid_plural "sourdough bread"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for sourdough bread
+#. ~ Description for {'str_sp': 'sourdough bread'}
 #: data/json/items/comestibles/bread.json
 msgid ""
 "Healthy and filling, with a sharper taste and thicker crust than yeast-only "
@@ -80135,22 +80156,22 @@ msgstr ""
 
 #: data/json/items/comestibles/bread.json
 msgid "flatbread"
-msgid_plural "flatbreads"
+msgid_plural "flatbread"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for flatbread
+#. ~ Description for {'str_sp': 'flatbread'}
 #: data/json/items/comestibles/bread.json
 msgid "Simple unleavened bread."
 msgstr ""
 
 #: data/json/items/comestibles/bread.json
 msgid "bread"
-msgid_plural "breads"
+msgid_plural "bread"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for bread
+#. ~ Description for {'str_sp': 'bread'}
 #: data/json/items/comestibles/bread.json
 msgid "Healthy and filling."
 msgstr ""
@@ -80168,11 +80189,11 @@ msgstr ""
 
 #: data/json/items/comestibles/bread.json
 msgid "cornbread"
-msgid_plural "cornbreads"
+msgid_plural "cornbread"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for cornbread
+#. ~ Description for {'str_sp': 'cornbread'}
 #: data/json/items/comestibles/bread.json
 msgid "Healthy and filling cornbread."
 msgstr ""
@@ -101476,6 +101497,18 @@ msgid ""
 "corrosive, for a lot less firefighting and a lot more excessive force."
 msgstr ""
 
+#: data/json/items/gun/misc.json
+msgid "restraint launcher"
+msgid_plural "restraint launchers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/json/items/gun/misc.json
+msgid ""
+"A compact pistol-style launcher designed to fire bola or net cartridges for "
+"non-lethal control."
+msgstr ""
+
 #: data/json/items/gun/monster_gun.json
 msgid "barb launching organ"
 msgid_plural "barb launching organs"
@@ -110909,15 +110942,22 @@ msgstr ""
 
 #: data/json/items/ranged/throwing.json
 msgid "bolas"
-msgid_plural "bolases"
+msgid_plural "pairs of bolas"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'bolas', 'str_pl': 'bolases'}
+#. ~ Description for {'str': 'bolas', 'str_pl': 'pairs of bolas'}
 #: data/json/items/ranged/throwing.json
 msgid ""
 "Some ropes with weights, designed to tangle the legs of a target when "
 "thrown, usually at an animal.  Used by the Gauchos of Argentina."
+msgstr ""
+
+#. ~ Description for {'str': 'bola cartridge'}
+#: data/json/items/ranged/throwing.json
+msgid ""
+"A single-use cartridge that fires a bola and leaves the ropes to tangle the "
+"target."
 msgstr ""
 
 #: data/json/items/ranged/throwing.json src/artifact.cpp
@@ -110955,6 +110995,19 @@ msgstr[1] ""
 msgid ""
 "A mesh of string and weights, traditionally used to catch fish, and to "
 "entangle opponents in combat."
+msgstr ""
+
+#: data/json/items/ranged/throwing.json
+msgid "net cartridge"
+msgid_plural "net cartridges"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'net cartridge'}
+#: data/json/items/ranged/throwing.json
+msgid ""
+"A disposable cartridge that launches a weighted net and lets its ropes do "
+"the tying."
 msgstr ""
 
 #: data/json/items/ranged/throwing.json
@@ -113030,6 +113083,7 @@ msgstr ""
 #. ~ Use action msg for {'str': 'control laptop'}.
 #. ~ Use action msg for {'str': 'wrist computer'}.
 #. ~ Use action msg for {'str': 'wrist control computer'}.
+#. ~ Use action msg for {'str': 'e-ink tablet PC'}.
 #. ~ Use action msg for laptop computer.
 #. ~ Use action msg for {'str': 'mp3 player (off)', 'str_pl': 'mp3 players
 #. (off)'}.
@@ -113037,6 +113091,7 @@ msgstr ""
 #. ~ Use action msg for {'str': 'atomic smartphone'}.
 #. ~ Use action msg for {'str': "Wraitheon executive's smartphone"}.
 #: data/json/items/tool/electronics.json data/mods/Aftershock/items/tools.json
+#: data/mods/ebook_lua/items/tools.json
 msgid "You put in the earbuds and start listening to music."
 msgstr ""
 
@@ -113196,6 +113251,20 @@ msgid ""
 "A tablet PC using an efficient color e-ink display, with a recharging "
 "battery that can be switched to draw from a UPS.  Before the Cataclysm, "
 "these were nifty gadgets; now, it's an almost priceless resource."
+msgstr ""
+
+#: data/json/items/tool/electronics.json
+msgid "e-ink tablet PC - music"
+msgid_plural "e-ink tablet PCs - music"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'e-ink tablet PC - music', 'str_pl': 'e-ink
+#. tablet PCs - music'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"This e-ink tablet PC is playing music, steadily raising your morale.  You "
+"can't hear anything else while you're listening."
 msgstr ""
 
 #: data/json/items/tool/electronics.json
@@ -134701,9 +134770,9 @@ msgstr ""
 #. ~ Description for {'str': 'Bark'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your skin is coated in a light bark, like that of a tree.  This provides 5 "
-"points of cutting and piercing damage, 4 points of ballistic armor, and one "
-"point of protection from fire.  Greatly reduces wet effects."
+"Your skin has grown over with bark, like that of a tree.  This provides an "
+"additional 3 points of cutting, piercing, and ballistic armor, along with 1 "
+"point of protection from fire.  Further reduces wet effects."
 msgstr ""
 
 #: data/json/mutations/mutations.json
@@ -136735,6 +136804,15 @@ msgstr ""
 msgid ""
 "You require more food than most people.  On a plus side, you are more "
 "resistant to cold."
+msgstr ""
+
+#: data/json/mutations/mutations.json
+msgid "Hairy"
+msgstr ""
+
+#. ~ Description for {'str': 'Hairy'}
+#: data/json/mutations/mutations.json
+msgid "Your body is covered in thick body hair, making you slightly warmer."
 msgstr ""
 
 #: data/json/mutations/mutations.json
@@ -248810,6 +248888,10 @@ msgid "There is a %s there.  Disarm?"
 msgstr ""
 
 #: src/iexamine.cpp
+msgid "Use fixture"
+msgstr ""
+
+#: src/iexamine.cpp
 msgid "It is not connected to a fluid grid fixture."
 msgstr ""
 
@@ -249030,6 +249112,11 @@ msgid "Climb down."
 msgstr ""
 
 #: src/iexamine.cpp
+#, c-format
+msgid "Pull up the %s."
+msgstr ""
+
+#: src/iexamine.cpp
 msgid "Spin Web Bridge."
 msgstr ""
 
@@ -249087,6 +249174,11 @@ msgstr ""
 
 #: src/iexamine.cpp
 msgid "You probably won't be able to get back up.  Climb down?"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "You pull up the %s."
 msgstr ""
 
 #: src/iexamine.cpp
@@ -260787,7 +260879,7 @@ msgstr ""
 
 #: src/memorial_logger.cpp
 #, c-format
-msgid "Cataclysm - Dark Days Ahead version %s memorial file"
+msgid "Cataclysm: Bright Nights version %s memorial file"
 msgstr ""
 
 #: src/memorial_logger.cpp
@@ -260919,8 +261011,7 @@ msgstr ""
 
 #: src/memorial_logger.cpp
 #, c-format
-msgid ""
-"Bionic Power: <color_light_blue>%d</color>/<color_light_blue>%d</color>"
+msgid "Bionic Power: %d/%d"
 msgstr ""
 
 #: src/memorial_logger.cpp src/panels.cpp
