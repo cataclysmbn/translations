@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-24 18:48+0000\n"
+"POT-Creation-Date: 2026-02-24 23:19+0000\n"
 "Last-Translator: a, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -73492,7 +73492,7 @@ msgstr[0] "판금 갑옷"
 msgid ""
 "A suit of Gothic plate armor, forged from solid steel and shaped to deflect "
 "blows.  It's heavy, but surprisingly easy to move in."
-msgstr "고딕 양식의 판금 갑옷으로, 단단한 강철로 단조되어 공격을 막아내도록 제작되었다. 무겁지만 의외로 움직이기 편하다."
+msgstr "단단한 강철을 단조해 공격을 튕겨내도록 만든 고딕 양식의 판금 갑옷입니다. 무겁지만 놀라울 정도로 움직이기 편합니다."
 
 #: data/json/items/armor/suits_protection.json
 msgid "superalloy plate armor"
@@ -73504,8 +73504,7 @@ msgstr[0] "초합금 판금 갑옷"
 msgid ""
 "A suit of Gothic plate armor, forged from modern superalloy and shaped to "
 "deflect blows.  It's lighter than steel armor."
-msgstr ""
-"고딕 양식의 판금 갑옷으로, 현대적인 초합금으로 제작되었으며, 타격을 막아내도록 설계되었습니다. 강철 판금 갑옷보다 가볍습니다."
+msgstr "현대 초합금을 단조해 공격을 튕겨내도록 만든 고딕 양식의 판금 갑옷입니다. 강철 판금 갑옷보다 가볍습니다."
 
 #: data/json/items/armor/suits_protection.json
 msgid "nomad gear"
@@ -73559,8 +73558,8 @@ msgid ""
 "than serious armor, but the heavy steel plating should be more than enough "
 "to keep the wearer safe."
 msgstr ""
-"매우 무거운 판금 갑옷으로, 눈에 띄는 사타구니 보호대가 달려 있습니다. 금으로 상감된 장식적인 문양 때문에 진지한 갑옷이라기보다는 "
-"전시품처럼 보이지만, 두꺼운 강철판은 착용자를 보호하기에 충분할 것입니다."
+"확 눈에 들어오는 사타구니 보호대가 달린 매우 무거운 판금 갑옷입니다. 금으로 상감된 장식 문양 탓에 제대로 된 갑옷보다는 전시품으로 "
+"여겨지기 십상이지만, 두꺼운 강철판이 달려있어 착용자를 보호하기에 충분합니다."
 
 #: data/json/items/armor/suits_protection.json
 msgid "ornamental superalloy plate armor"
@@ -73574,8 +73573,8 @@ msgid ""
 " codpiece.  It is decorated with menacing spikes and has been polished to a "
 "mirror shine."
 msgstr ""
-"현대적인 초합금으로 제작된 무거운 판금 갑옷으로, 눈에 띄는 사타구니 보호대가 특징입니다. 위협적인 스파이크 장식이 촘촘히 박혀 있으며,"
-" 거울처럼 매끄럽게 광택 처리되어 있습니다."
+"확 눈에 들어오는 사타구니 보호대가 달린 현대 초합금 재질의 묵직한 판금 갑옷입니다. 위협적인 가시 장식이 달려있고 거울처럼 반짝거리게끔"
+" 광택을 냈습니다."
 
 #: data/json/items/armor/suits_protection.json
 msgid "riot armor"
@@ -100607,14 +100606,15 @@ msgstr ""
 #: data/json/items/gun/45.json
 msgid "TDI Vector"
 msgid_plural "TDI Vectors"
-msgstr[0] "TDI 벡터"
+msgstr[0] "크리스 벡터 (.45 ACP)"
 
 #: data/json/items/gun/45.json
 msgid ""
 "The TDI Vector is a submachine gun with a unique, in-line design that makes "
 "recoil very manageable, even in the powerful .45 caliber."
 msgstr ""
-"TDI 벡터는 특유의 수직 작동 구조를 채택해 반동을 쉽게 제어할 수 있도록 만든 기관단총입니다. 강력한 .45구경 탄약을 사용합니다."
+"TDI(현 KRISS사) 벡터는 특유의 수직 작동 구조를 채택해 반동을 쉽게 제어할 수 있도록 만든 기관단총입니다. 강력한 .45구경 "
+"탄약을 사용합니다."
 
 #: data/json/items/gun/45.json
 msgid "H&K UMP45"
@@ -251924,6 +251924,37 @@ msgstr "어떤 물품을 해체합니까?"
 #: src/game_inventory.cpp
 msgid "You have nothing to salvage."
 msgstr "해체할 수 있는 물품이 없습니다."
+
+#: src/game_inventory.cpp
+#, c-format
+msgid "%s (%d)"
+msgstr "%s (%d)"
+
+#: src/game_inventory.cpp
+msgid "<color_red>NONE</color>"
+msgstr "<color_red>없음</color>"
+
+#: src/game_inventory.cpp
+msgid "MATERIALS AVAILABLE"
+msgstr "이용 가능한 재료"
+
+#: src/game_inventory.cpp
+msgid "SUCCESS"
+msgstr "성공"
+
+#: src/game_inventory.cpp
+msgid "DMG"
+msgstr "피해"
+
+#: src/game_inventory.cpp
+#, c-format
+msgid "Tool: <color_cyan>%s</color>"
+msgstr "도구: <color_cyan>%s</color>"
+
+#: src/game_inventory.cpp
+#, c-format
+msgid "Skill used: <color_cyan>%s (%d)</color>"
+msgstr "필요 기술: <color_cyan>%s (%d)</color>"
 
 #: src/game_inventory.cpp
 msgid "Repair what?"
