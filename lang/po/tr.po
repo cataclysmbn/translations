@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-02-24 23:19+0000\n"
+"POT-Creation-Date: 2026-02-27 12:01+0000\n"
 "Last-Translator: Raina Lute, 2024\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -198470,7 +198470,7 @@ msgid ""
 "with an affection for dinosaurs.  They welcome all untainted humans."
 msgstr ""
 
-#: data/mods/DinoMod/NPC/NC_Red.json
+#: data/mods/DinoMod/NPC/NC_Red.json src/options.cpp
 msgid "Red"
 msgstr ""
 
@@ -246878,7 +246878,7 @@ msgstr ""
 msgid "Allow save"
 msgstr ""
 
-#: src/gamemode_defense.cpp src/iuse_software_minesweeper.cpp
+#: src/gamemode_defense.cpp src/iuse_software_minesweeper.cpp src/options.cpp
 msgid "Custom"
 msgstr ""
 
@@ -248057,6 +248057,10 @@ msgstr ""
 
 #: src/iexamine.cpp
 msgid "Choose a recipe:"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Dispense how many units?"
 msgstr ""
 
 #: src/iexamine.cpp
@@ -249998,6 +250002,18 @@ msgstr ""
 msgid "You remove the brake on the millstone and it slowly starts to turn."
 msgstr ""
 
+#: src/iexamine.cpp
+msgid "You need a sterilized artificial womb and DNA to begin incubation."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You need to remove the radio mod first."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You have no valid specimen samples."
+msgstr ""
+
 #: src/iexamine.cpp src/iuse_actor.cpp
 msgid "Select specimen sample:"
 msgstr ""
@@ -250125,8 +250141,29 @@ msgid "You carefully place %s %s in the mill."
 msgstr ""
 
 #: src/iexamine.cpp
+msgid "What to do with the cloning vat?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Get contents"
+msgstr ""
+
+#: src/iexamine.cpp
+#, c-format
+msgid "Take %s from the cloning vat?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Begin incubation"
+msgstr ""
+
+#: src/iexamine.cpp
 #, c-format
 msgid "Cancel incubation (%s left)"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "What to do with the active cloning vat?"
 msgstr ""
 
 #: src/iexamine.cpp
@@ -268721,6 +268758,10 @@ msgid "Graphics"
 msgstr ""
 
 #: src/options.cpp
+msgid "Performance"
+msgstr ""
+
+#: src/options.cpp
 msgid "World Defaults"
 msgstr ""
 
@@ -269999,6 +270040,30 @@ msgid "If true, forces the game to redraw at least once per turn."
 msgstr ""
 
 #: src/options.cpp
+msgid "Night Vision Default Colors"
+msgstr ""
+
+#: src/options.cpp
+msgid "Choose from default night vision colors."
+msgstr ""
+
+#: src/options.cpp
+msgid "Green"
+msgstr ""
+
+#: src/options.cpp
+msgid "Gray"
+msgstr ""
+
+#: src/options.cpp
+msgid "Night Vision Color"
+msgstr ""
+
+#: src/options.cpp
+msgid "Sets custom night vision color."
+msgstr ""
+
+#: src/options.cpp
 msgid "Terminal width"
 msgstr ""
 
@@ -270432,15 +270497,15 @@ msgid "4x"
 msgstr ""
 
 #: src/options.cpp
-msgid "Performance"
+msgid "Sleep Boost"
 msgstr ""
 
 #: src/options.cpp
-msgid "Configure performance settings that can detract from the game."
+msgid "Skip expensive processing while the player sleeps."
 msgstr ""
 
 #: src/options.cpp
-msgid "Sleep Boost: Skip Vehicle Movement"
+msgid "Skip Vehicle Movement"
 msgstr ""
 
 #: src/options.cpp
@@ -270448,7 +270513,7 @@ msgid "Turns off vehicle movement and autodrive while sleeping"
 msgstr ""
 
 #: src/options.cpp
-msgid "Sleep Boost: Skip Sound Processing On Sleep"
+msgid "Skip Sound Processing On Sleep"
 msgstr ""
 
 #: src/options.cpp
@@ -270456,11 +270521,22 @@ msgid "Sounds are not processed while sleeping"
 msgstr ""
 
 #: src/options.cpp
-msgid "Sleep Boost: Skip Monster Movement"
+msgid "Skip Monster Movement"
 msgstr ""
 
 #: src/options.cpp
-msgid "Monsters do not move while sleeping"
+msgid "Monsters do not move while the player is sleeping"
+msgstr ""
+
+#: src/options.cpp
+msgid "Skip NPC Movement"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"NPCs are forced to sleep alongside the player, skipping movement but still "
+"processing rest recovery (fatigue reduction, healing, etc.).  NPCs with non-"
+"interruptible activities (e.g. surgery) are frozen for the turn instead."
 msgstr ""
 
 #: src/options.cpp
@@ -270469,6 +270545,199 @@ msgstr ""
 
 #: src/options.cpp
 msgid "Save in data/catalcysm... instead of Documents/..."
+msgstr ""
+
+#: src/options.cpp
+msgid "Monster LOD"
+msgstr ""
+
+#: src/options.cpp
+msgid "Configure level-of-detail thresholds for monster AI."
+msgstr ""
+
+#: src/options.cpp
+msgid "Enable Monster LOD"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Enable level-of-detail processing for monsters.  When enabled, distant or "
+"wandering monsters are assigned reduced-fidelity AI tiers (coarse path reuse"
+" or a simple macro step) to save CPU.  When disabled, every monster runs "
+"full AI every turn regardless of distance."
+msgstr ""
+
+#: src/options.cpp
+msgid "Action Budget"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Minimum number of monsters that enter the move loop per turn.  The actual "
+"budget is the larger of this value and the current Tier-0 (full-AI) monster "
+"count, so full-AI monsters are never skipped.  Higher values process more "
+"distant monsters each turn at a CPU cost.  0 means only Tier-0 monsters run "
+"(no extra Tier-1 budget)."
+msgstr ""
+
+#: src/options.cpp
+msgid "Macro Step Interval"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"How many turns elapse between movement steps for Tier-2 (distant wandering) "
+"monsters.  At 1 they step every turn; at 3 (default) they step once every 3 "
+"turns.  Higher values reduce CPU cost for distant hordes."
+msgstr ""
+
+#: src/options.cpp
+msgid "Full AI Radius"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Chebyshev distance threshold for full-AI (Tier 0) monsters.  Monsters within"
+" this radius run the complete AI every turn.  Must be less than the Coarse "
+"AI Radius."
+msgstr ""
+
+#: src/options.cpp
+msgid "Coarse AI Radius"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Chebyshev distance threshold for coarse-AI (Tier 1) monsters.  Monsters "
+"between the Full AI Radius and this distance use cached paths and skip "
+"expensive faction queries.  Monsters beyond this distance are Tier-2 (macro "
+"step only)."
+msgstr ""
+
+#: src/options.cpp
+msgid "Demotion Cooldown"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Turns a monster must wait after being promoted to a higher-fidelity tier "
+"before it can be demoted again.  Prevents rapid tier oscillation at distance"
+" boundaries.  0 disables the cooldown."
+msgstr ""
+
+#: src/options.cpp
+msgid "Coarse Scent Check Interval"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"How many turns elapse between scent-tracking checks for Tier-1 (coarse) "
+"monsters.  At 1 they check scent every turn (full fidelity); at 3 (default) "
+"only once every 3 turns.  Higher values reduce CPU cost for mid-range "
+"hordes."
+msgstr ""
+
+#: src/options.cpp
+msgid "Group Morale Max Tier"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Highest LOD tier that participates in group-morale and swarming "
+"calculations.  0 = Tier-0 only (default, cheapest).  1 = Tier-0 and Tier-1 "
+"monsters also run group-morale/swarm checks at the cost of the extra O(M²) "
+"faction scan for mid-range monsters."
+msgstr ""
+
+#: src/options.cpp
+msgid "LOS Cache Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Maximum number of line-of-sight results kept in the skew-vision LRU cache.  "
+"Higher values reduce redundant ray traces at the cost of more RAM.  Reduce "
+"if memory is tight; increase on machines with spare RAM and many on-screen "
+"creatures."
+msgstr ""
+
+#: src/options.cpp
+msgid "Multithreading"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Configure worker-thread parallelism for expensive per-turn computations."
+msgstr ""
+
+#: src/options.cpp
+msgid "Enable Multithreading"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Enable worker-thread parallelism for expensive per-turn computations "
+"(monster planning, map-cache building, scent map updates).  Disable to run "
+"everything on the main thread — useful for debugging, reproducibility "
+"testing, or machines where thread overhead exceeds gain.  Requires restart."
+msgstr ""
+
+#: src/options.cpp
+msgid "Thread Pool Worker Count"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Number of worker threads in the persistent thread pool.  0 means automatic "
+"(hardware concurrency minus 1, leaving one core for the main/SDL thread).  "
+"Set to a lower value to cap CPU usage, e.g. when streaming or running other "
+"CPU-heavy applications alongside the game.  Requires restart."
+msgstr ""
+
+#: src/options.cpp
+msgid "Parallel Monster Planning"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Compute monster AI plans (pathfinding target selection, LOS queries) in "
+"parallel across worker threads each turn.  Disable if monsters behave "
+"unexpectedly or for reproducible save-file testing.  Requires restart."
+msgstr ""
+
+#: src/options.cpp
+msgid "Monster Plan Chunk Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Number of monsters batched into a single worker-thread task during the "
+"parallel planning pass.  Smaller values improve load balancing when planning"
+" cost varies widely (large hordes with mixed sight ranges); larger values "
+"reduce task-dispatch overhead.  Requires restart."
+msgstr ""
+
+#: src/options.cpp
+msgid "Parallel Map Cache Build"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Build per-z-level map caches (transparency, outside, floor, vehicle-"
+"obscured) in parallel across worker threads.  Disable on machines where the "
+"thread-dispatch overhead exceeds the benefit (typically dual-core systems or"
+" when z-levels are disabled).  Requires restart."
+msgstr ""
+
+#: src/options.cpp
+msgid "Parallel Scent Update"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Compute the scent-diffusion Y-pass and X-pass across worker threads.  "
+"Disable on machines where the ~70 k-cell work unit is too small to amortize "
+"dispatch latency.  Requires restart."
 msgstr ""
 
 #: src/options.cpp
