@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-16 04:05+0000\n"
+"POT-Creation-Date: 2026-03-17 20:23+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -10429,6 +10429,7 @@ msgstr "全部搞定！"
 
 #: data/json/field_type.json
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
 #: data/mods/alt_map_key/overmap_terrain.json src/mapdata.cpp src/skill.cpp
 msgid "nothing"
 msgstr "无"
@@ -12208,6 +12209,8 @@ msgstr "开启"
 #. 'liquid cooling suits (on)'}.
 #. ~ Use action menu_text for {'str': 'headlamp (on)', 'str_pl': 'headlamps
 #. (on)'}.
+#. ~ Use action menu_text for {'str': 'sparkledog suit (on)', 'str_pl':
+#. 'sparkledog suits (on)'}.
 #. ~ Use action menu_text for {'str': 'survivor headlamp (on)', 'str_pl':
 #. 'survivor headlamps (on)'}.
 #. ~ Use action menu_text for {'str': 'RM13 combat armor (on)', 'str_pl':
@@ -12766,6 +12769,14 @@ msgstr "使用种植盆"
 #: data/json/item_actions.json
 msgid "Collect a plant"
 msgstr "采集植物"
+
+#: data/json/item_actions.json
+msgid "Travel to another dimension"
+msgstr "前往另一个维度"
+
+#: data/json/item_actions.json
+msgid "Access a pocket dimension"
+msgstr "进入口袋维度"
 
 #: data/json/item_category.json
 msgid "GUNS"
@@ -32866,6 +32877,33 @@ msgstr "雪"
 msgid "Snowstorm"
 msgstr "暴雪"
 
+#: data/json/world_types.json
+msgid "New England"
+msgstr "新英格兰"
+
+#. ~ Description for {'str': 'New England'}
+#: data/json/world_types.json
+msgid "The cataclysm really did a number on the property value."
+msgstr "这场大灾变真的让这里的房产价值大打折扣。"
+
+#: data/json/world_types.json
+msgid "Pocket Dimension"
+msgstr "口袋维度"
+
+#. ~ Description for {'str': 'Pocket Dimension'}
+#: data/json/world_types.json
+msgid "A small bounded extradimensional space."
+msgstr "一个边界明确的微型异度空间。"
+
+#: data/json/world_types.json
+msgid "Desert Dimension"
+msgstr "沙漠维度"
+
+#. ~ Description for {'str': 'Desert Dimension'}
+#: data/json/world_types.json
+msgid "An alternate dimension dominated by arid desert terrain."
+msgstr "一个以干旱沙漠地形为主的平行维度。"
+
 #: data/json/artifact/premade_artifacts.json
 msgid "The Architect's Cube"
 msgid_plural "The Architect's Cubes"
@@ -33190,6 +33228,7 @@ msgstr "一个大型笨重的金属装置，用于冷却大面积区域，现在
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
 #: data/json/furniture_and_terrain/furniture-plumbing.json
+#: data/json/furniture_and_terrain/furniture-power-portals.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/furniture_and_terrain/furniture-seats.json
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -33219,6 +33258,7 @@ msgstr "一声尖锐的金属断裂的声音！"
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
 #: data/json/furniture_and_terrain/furniture-plumbing.json
+#: data/json/furniture_and_terrain/furniture-power-portals.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/furniture_and_terrain/furniture-roof.json
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -34630,6 +34670,7 @@ msgstr "咔嚓！"
 #: data/json/furniture_and_terrain/furniture-storage.json
 #: data/json/furniture_and_terrain/furniture-tools.json
 #: data/json/furniture_and_terrain/terrain-bridges-docks.json
+#: data/json/furniture_and_terrain/terrain-dimensional.json
 #: data/json/furniture_and_terrain/terrain-doors.json
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
@@ -36596,6 +36637,41 @@ msgstr "雨水收集器（接管）"
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid "A plumbed rain collector that feeds a fluid grid when it is raining."
 msgstr "一个接了水管的雨水收集器，下雨时可向液体管网供水。"
+
+#: data/json/furniture_and_terrain/furniture-power-portals.json
+msgid "power portal"
+msgstr "能量传送门"
+
+#. ~ Description for power portal
+#: data/json/furniture_and_terrain/furniture-power-portals.json
+msgid ""
+"A large arcane-industrial apparatus that can form a persistent electrical "
+"bridge to a paired node, even across dimensional boundaries. Currently "
+"unlinked."
+msgstr "一种大型奥术工业装置，能与配对节点形成持久的电力桥梁，即使跨越维度边界也能生效。当前未连接。"
+
+#: data/json/furniture_and_terrain/furniture-power-portals.json
+msgid "power portal (active)"
+msgstr "能量传送门（开启）"
+
+#. ~ Description for power portal (active)
+#: data/json/furniture_and_terrain/furniture-power-portals.json
+msgid ""
+"A large arcane-industrial apparatus forming a persistent electrical bridge "
+"to a paired node. The hum of power flowing through the dimensional membrane "
+"is faintly audible."
+msgstr "一种大型奥术工业装置，正在与配对节点形成持久的电力桥梁。隐约可以听到能量流过维度膜时发出的嗡嗡声。"
+
+#: data/json/furniture_and_terrain/furniture-power-portals.json
+msgid "power portal (paused)"
+msgstr "能量传送门（暂停）"
+
+#. ~ Description for power portal (paused)
+#: data/json/furniture_and_terrain/furniture-power-portals.json
+msgid ""
+"A large arcane-industrial apparatus configured to form an electrical bridge,"
+" but currently inactive due to insufficient power or a manual pause."
+msgstr "一种大型奥术工业装置，已配置为形成电力桥梁，但由于能量不足或手动暂停，目前处于未开启状态。"
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/items/fake.json data/json/items/furniture.json
@@ -39205,6 +39281,32 @@ msgstr "金属浮坞"
 #: data/json/furniture_and_terrain/terrain-bridges-docks.json
 msgid "A floating temporary dock, anchored to keep it from drifting away."
 msgstr "漂浮的临时船坞，用锚固定以防漂走。"
+
+#: data/json/furniture_and_terrain/terrain-dimensional.json
+msgid "dimensional boundary"
+msgstr "维度边界"
+
+#. ~ Description for dimensional boundary
+#: data/json/furniture_and_terrain/terrain-dimensional.json
+msgid ""
+"An impenetrable barrier marking the edge of a pocket dimension.  The space "
+"beyond seems to shimmer and distort, as if reality itself is uncertain about"
+" what lies there."
+msgstr "一道不可穿透的屏障，标志着口袋维度的边缘。屏障外的空间似乎在闪烁和扭曲，仿佛现实本身也不确定那里存在着什么。"
+
+#: data/json/furniture_and_terrain/terrain-dimensional.json
+msgid "The dimensional boundary absorbs the impact without effect."
+msgstr "维度边界吸收了冲击，毫发无损。"
+
+#: data/json/furniture_and_terrain/terrain-dimensional.json
+#: data/json/furniture_and_terrain/terrain-walls.json
+msgid "stone wall"
+msgstr "石墙"
+
+#. ~ Description for stone wall
+#: data/json/furniture_and_terrain/terrain-dimensional.json
+msgid "It's solid rock."
+msgstr "这是坚硬的岩石。"
 
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid "closed laminated glass door"
@@ -43918,10 +44020,6 @@ msgid ""
 "A solid brick wall, sturdy enough to support a roof with enough walls and "
 "keep out any unwanted visitors."
 msgstr "坚固的砖墙，牢靠程度足以支撑有足够墙壁的屋顶，并阻挡任何不速之客。"
-
-#: data/json/furniture_and_terrain/terrain-walls.json
-msgid "stone wall"
-msgstr "石墙"
 
 #. ~ Description for stone wall
 #: data/json/furniture_and_terrain/terrain-walls.json
@@ -55536,6 +55634,40 @@ msgid ""
 "worn on your head or attached to your helmet.  It is turned on, and "
 "continually draining batteries.  Use it to turn it off."
 msgstr "一个 LED 手电筒系在一条可调整的带子上，让你可以把它穿在头上或者系在头盔上。它已经被开启，不断耗电来产生光亮。激活它来关闭。"
+
+#: data/json/items/tool_armor.json
+msgid "sparkledog suit"
+msgid_plural "sparkledog suits"
+msgstr[0] ""
+
+#. ~ Use action msg for {'str': 'sparkledog suit'}.
+#: data/json/items/tool_armor.json
+msgid "You turn your fursuit's LEDs on."
+msgstr ""
+
+#. ~ Use action need_charges_msg for {'str': 'sparkledog suit'}.
+#: data/json/items/tool_armor.json
+msgid "The fursuit's batteries are dead."
+msgstr ""
+
+#. ~ Description for {'str': 'sparkledog suit'}
+#: data/json/items/tool_armor.json
+msgid ""
+"A full body fursuit in the form of some unidentifiable species. It's a riot "
+"of clashing neon colors, LEDs, and glitter. It is quite encumbering and has "
+"little storage but is very warm.  Using it will turn the LEDs on."
+msgstr ""
+
+#: data/json/items/tool_armor.json
+msgid "sparkledog suit (on)"
+msgid_plural "sparkledog suits (on)"
+msgstr[0] ""
+
+#. ~ Use action msg for {'str': 'sparkledog suit (on)', 'str_pl': 'sparkledog
+#. suits (on)'}.
+#: data/json/items/tool_armor.json
+msgid "You turn your fursuit off."
+msgstr ""
 
 #: data/json/items/tool_armor.json
 msgid "survivor headlamp"
@@ -99606,6 +99738,17 @@ msgstr ""
 "温彻斯特 1897 "
 "霰弹枪是首批在商业上成功的泵动霰弹枪之一。它的\"堑壕战\"型号已经成为一个高度浪漫化的一战美国象征。它的枪套、刺刀卡口和17英寸长的刺刀，无可否认，让这把霰弹枪看上去十分骇人。现在已经没有战壕需要清理，但来个充满丧尸的城镇也足够了。"
 
+#: data/json/items/gun/shot.json
+msgid "BP-12"
+msgid_plural "BP-12s"
+msgstr[0] "BP-12 霰弹枪"
+
+#: data/json/items/gun/shot.json
+msgid ""
+"A bullpup, magazine fed, semi-automatic shotgun, possessing the accuracy of "
+"a full-length barrel in a compact frame."
+msgstr "一把采用无托结构、弹匣供弹的半自动霰弹枪，在紧凑的枪身下拥有全尺寸枪管的精度。"
+
 #: data/json/items/gun/shotpaper.json
 msgid "20ga muzzleloading shotgun"
 msgid_plural "20ga muzzleloading shotguns"
@@ -110063,6 +110206,64 @@ msgstr ""
 "已折叠的塑料椅，带有金属框架，展开它来坐下。\n"
 "\"WWE指定武器。\""
 
+#: data/json/items/tool/dimensional_travel.json
+msgid "dimensional pocket watch (desert)"
+msgid_plural "dimensional pocket watch (desert)s"
+msgstr[0] "维度怀表（沙漠）"
+
+#. ~ Use action success_message for {'str': 'dimensional pocket watch
+#. (desert)'}.
+#: data/json/items/tool/dimensional_travel.json
+msgid ""
+"You feel a wrenching sensation as you are pulled through space and time."
+msgstr "你感到一阵剧烈的拉扯感，仿佛正被拖曳着穿过时空。"
+
+#. ~ Use action msg for {'str': 'dimensional pocket watch (desert)'}.
+#. ~ Use action msg for {'str': 'dimensional pocket watch (default)'}.
+#: data/json/items/tool/dimensional_travel.json
+msgid "The watch reconfigures itself."
+msgstr "怀表重新配置了自身。"
+
+#. ~ Description for {'str': 'dimensional pocket watch (desert)'}
+#: data/json/items/tool/dimensional_travel.json
+msgid ""
+"A pocket watch that allows the user to travel to the desert dimension.  Used"
+" for debugging purposes only.  Transforms after use."
+msgstr "一块允许使用者前往沙漠维度的怀表。仅供调试使用。使用后会变形。"
+
+#: data/json/items/tool/dimensional_travel.json
+msgid "dimensional pocket watch (default)"
+msgid_plural "dimensional pocket watch (default)s"
+msgstr[0] "维度怀表（默认）"
+
+#. ~ Use action success_message for {'str': 'dimensional pocket watch
+#. (default)'}.
+#: data/json/items/tool/dimensional_travel.json
+msgid "You feel reality snap back into place."
+msgstr "你感觉现实重新归位。"
+
+#. ~ Description for {'str': 'dimensional pocket watch (default)'}
+#: data/json/items/tool/dimensional_travel.json
+msgid ""
+"A pocket watch that allows the user to return to the default dimension.  "
+"Used for debugging purposes only."
+msgstr "一块允许使用者返回默认维度的怀表。仅供调试使用。"
+
+#: data/json/items/tool/dimensional_travel.json
+msgid "pocket cave key"
+msgid_plural "pocket cave keys"
+msgstr[0] "口袋洞穴钥匙"
+
+#. ~ Description for {'str': 'pocket cave key'}
+#: data/json/items/tool/dimensional_travel.json
+msgid ""
+"A strange key that glows with an otherworldly light.  When activated, it "
+"opens a door to a pocket dimension containing a small extradimensional "
+"space.  The pocket dimension is tied to this key - if the key is destroyed, "
+"the dimension collapses."
+msgstr ""
+"一把散发着奇异光芒的奇怪钥匙。激活后，它会打开一扇通往口袋维度的门，里面包含一个微小的异度空间。该口袋维度与这把钥匙绑定——如果钥匙被摧毁，该维度就会坍塌。"
+
 #: data/json/items/tool/electronics.json data/mods/Aftershock/items/tools.json
 msgid "advanced UPS"
 msgid_plural "advanced UPS's"
@@ -110728,6 +110929,21 @@ msgid ""
 "pinch."
 msgstr ""
 "一台配有屏幕和样本托盘的中型高科技机器。它可以扫描USB驱动器中的遗传样本，如果提供了生长介质，还能制造出用于克隆的DNA样本。在紧要关头，它也能当作微型离心机使用。"
+
+#: data/json/items/tool/electronics.json
+msgid "power portal keycard"
+msgid_plural "power portal keycards"
+msgstr[0] "能量传送门钥匙卡"
+
+#. ~ Description for {'str': 'power portal keycard'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"A programmable electronic keycard used to pair two power portal nodes. "
+"Stores the absolute location of a single portal endpoint; re-attuning it to "
+"a different portal simply overwrites the stored data. Carry this to the "
+"second portal and use its interface to complete the link."
+msgstr ""
+"一张用于配对两个能量传送门节点的可编程电子钥匙卡。它存储单个传送门端点的绝对位置；将其重新与不同的传送门同调只会覆盖已存储的数据。携带此卡前往第二个传送门并使用其界面即可完成连接。"
 
 #: data/json/items/tool/entry_tools.json
 msgid "crowbar"
@@ -240295,6 +240511,10 @@ msgid "factions data"
 msgstr "派系数据"
 
 #: src/game.cpp
+msgid "dimension data"
+msgstr "维度数据"
+
+#: src/game.cpp
 #, c-format
 msgid "Failed to save the maps: %s"
 msgstr "存储地图失败：%s"
@@ -242222,6 +242442,11 @@ msgstr "你从 %s 旁边挤了过去。"
 #: src/game.cpp src/handle_action.cpp
 msgid "You cannot haul items here."
 msgstr "你不能在这里搬运物品。"
+
+#: src/game.cpp
+#, c-format
+msgid "Failed to save map data: %s"
+msgstr "无法保存地图数据：%s"
 
 #. ~ %s is the name of hostile NPC
 #: src/game.cpp src/gates.cpp src/vehicle_use.cpp
@@ -246906,6 +247131,110 @@ msgid "This battery stores %d kJ of electric power."
 msgstr "该电池储存了%dkJ的电力。"
 
 #: src/iexamine.cpp
+msgid "The portal is in an unloaded submap."
+msgstr "该传送门位于未加载的子地图中。"
+
+#: src/iexamine.cpp
+msgid "This portal has no active tile data."
+msgstr "该传送门没有激活的图块数据。"
+
+#: src/iexamine.cpp
+msgid "This doesn't seem to be a functioning power portal."
+msgstr "这似乎不是一个正常运作的能量传送门。"
+
+#: src/iexamine.cpp
+msgid "Status: Unlinked"
+msgstr "状态：未连接"
+
+#: src/iexamine.cpp
+#, c-format
+msgid ""
+"Status: PAUSED — insufficient power\n"
+"Target: [%s] (%d,%d,%d)"
+msgstr ""
+"状态：已暂停 — 能量不足\n"
+"目标：[%s] (%d,%d,%d)"
+
+#: src/iexamine.cpp
+msgid "primary"
+msgstr "主要"
+
+#: src/iexamine.cpp
+#, c-format
+msgid ""
+"Status: Active\n"
+"Target: [%s] (%d,%d,%d)"
+msgstr ""
+"状态：激活\n"
+"目标：[%s] (%d,%d,%d)"
+
+#: src/iexamine.cpp
+msgid "Attune keycard to this portal"
+msgstr "将钥匙卡与该传送门同调"
+
+#: src/iexamine.cpp
+msgid ""
+"Stores this portal's location in the keycard.  Overwrites any existing "
+"attunement."
+msgstr "将该传送门的位置存储在钥匙卡中。覆盖任何现有的同调数据。"
+
+#: src/iexamine.cpp
+msgid "Link portal using keycard"
+msgstr "使用钥匙卡连接传送门"
+
+#: src/iexamine.cpp
+msgid "Establishes a power bridge to the portal stored in the keycard."
+msgstr "建立通往钥匙卡中存储的传送门的能量桥梁。"
+
+#: src/iexamine.cpp
+msgid "Resume link"
+msgstr "恢复连接"
+
+#: src/iexamine.cpp
+msgid "Restarts power transfer.  Both sides need enough power to pay upkeep."
+msgstr "重新启动能量传输。连接双方都需要有足够的能量来支付维护消耗。"
+
+#: src/iexamine.cpp
+msgid "Pause link"
+msgstr "暂停连接"
+
+#: src/iexamine.cpp
+msgid "Suspends power transfer without severing the connection."
+msgstr "中止能量传输，但不切断连接。"
+
+#: src/iexamine.cpp
+msgid "Unlink portal"
+msgstr "断开传送门连接"
+
+#: src/iexamine.cpp
+msgid "Severs the connection permanently.  Both portals revert to unlinked."
+msgstr "永久切断连接。两个传送门都将恢复为未连接状态。"
+
+#: src/iexamine.cpp
+msgid "You attune the keycard to this power portal."
+msgstr "你将钥匙卡与这个能量传送门进行了同调。"
+
+#: src/iexamine.cpp
+msgid "You can't link a portal to itself."
+msgstr "你不能将传送门连接到它自己。"
+
+#: src/iexamine.cpp
+msgid "Power link established."
+msgstr "能量连接已建立。"
+
+#: src/iexamine.cpp
+msgid "Power link resumed."
+msgstr "能量连接已恢复。"
+
+#: src/iexamine.cpp
+msgid "Power link paused."
+msgstr "能量连接已暂停。"
+
+#: src/iexamine.cpp
+msgid "Power link severed."
+msgstr "能量连接已切断。"
+
+#: src/iexamine.cpp
 msgid "This looks important.  Tear open nerve cluster?"
 msgstr ""
 
@@ -246965,6 +247294,10 @@ msgstr "身体部位"
 #: src/init.cpp
 msgid "Weather types"
 msgstr "天气类型"
+
+#: src/init.cpp
+msgid "World types"
+msgstr "世界类型"
 
 #: src/init.cpp
 msgid "Field types"
@@ -254374,6 +254707,43 @@ msgstr "移植什么？"
 msgid "There is nothing that can be collected nearby."
 msgstr "附近没有任何可以采集的东西。"
 
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s doesn't have enough charges."
+msgstr "%s 的充能不足。"
+
+#: src/iuse_actor.cpp
+msgid "This item has no destination configured."
+msgstr "该物品未配置目的地。"
+
+#: src/iuse_actor.cpp
+msgid "You are already in that dimension."
+msgstr "你已经在那个维度中了。"
+
+#: src/iuse_actor.cpp
+msgid "You are too far from the portal!"
+msgstr "你离传送门太远了！"
+
+#: src/iuse_actor.cpp
+msgid "You travel to another dimension!"
+msgstr "你传送到了另一个维度！"
+
+#: src/iuse_actor.cpp
+msgid "Failed to initialize the pocket dimension."
+msgstr "无法初始化口袋维度。"
+
+#: src/iuse_actor.cpp
+msgid "You can only use this from where you last exited this pocket."
+msgstr "你只能在上次离开该口袋维度的地方使用它。"
+
+#: src/iuse_actor.cpp
+msgid "You enter the pocket dimension."
+msgstr "你进入了口袋维度。"
+
+#: src/iuse_actor.cpp
+msgid "You exit the pocket dimension."
+msgstr "你离开了口袋维度。"
+
 #: src/iuse_actor.h
 msgid "Carve"
 msgstr "雕刻"
@@ -256649,21 +257019,6 @@ msgstr "选择要测试的地图事件列表"
 #: src/map_extras.cpp
 msgid "Result of 32400 selections:"
 msgstr "32400次选择的结果："
-
-#: src/map_field.cpp
-#, c-format
-msgid "A %s hits you!"
-msgstr "%s击中了你！"
-
-#: src/map_field.cpp
-#, c-format
-msgid "A %1$s hits %2$s!"
-msgstr "%1$s 击中了 %2$s！"
-
-#: src/map_field.cpp
-#, c-format
-msgid "A %1$s hits the %2$s!"
-msgstr "%1$s 击中了 %2$s！"
 
 #: src/map_field.cpp
 msgid "The acid burns your body!"
@@ -267345,6 +267700,104 @@ msgstr ""
 "k-cell）工作单元太小，不足以抵消线程派发延迟的开销，请禁用此项。需要重启游戏生效。"
 
 #: src/options.cpp
+msgid "Pre-load Border"
+msgstr "预加载边界"
+
+#: src/options.cpp
+msgid ""
+"Keep a border of submaps loaded around the reality bubble.  These are pre-"
+"loaded from disk in the background so that map shifts are faster (the data "
+"is already in memory).  Uses more memory but reduces stalls when the map "
+"scrolls.  Takes effect immediately without restart."
+msgstr ""
+"在现实气泡周围保持一圈子地图处于加载状态。这些子地图会在后台从磁盘预加载，从而加快地图切换速度（数据已存在于内存中）。这会消耗更多内存，但能减少地图滚动时的卡顿。无需重启，立即生效。"
+
+#: src/options.cpp
+msgid "Reality Bubble"
+msgstr "现实气泡"
+
+#: src/options.cpp
+msgid "Configure how submaps are loaded and processed."
+msgstr "配置子地图的加载和处理方式。"
+
+#: src/options.cpp
+msgid "World Tick Interval"
+msgstr "世界刻间隔"
+
+#: src/options.cpp
+msgid ""
+"How many turns elapse between out-of-bubble world ticks.  1 processes every "
+"loaded submap outside the player's reality bubble each turn at full "
+"fidelity. Higher values amortize cost by batching N turns of simulation into"
+" a single pass — useful on slow hardware."
+msgstr ""
+"现实气泡外的世界刻（Tick）之间经过的回合数。设置为 1 表示每回合都以最高保真度处理玩家现实气泡外的每个已加载子地图。较高的值通过将 N "
+"个回合的模拟分批集中在单次处理中来分摊性能消耗——对性能较低的硬件很有用。"
+
+#: src/options.cpp
+msgid "Out-of-Bubble Fire Spread"
+msgstr "气泡外火焰蔓延"
+
+#: src/options.cpp
+msgid ""
+"Controls whether fire in loaded submaps can spread into adjacent unloaded "
+"submaps. 'None': fire only decays, never spreads beyond the loaded set. "
+"'Adjacent': fire requests one extra layer of loaded submaps at each boundary"
+" to preserve correct spread behavior."
+msgstr ""
+"控制已加载子地图中的火焰是否可以蔓延到相邻未加载的子地图中。“无”：火焰只会衰减，永远不会蔓延到已加载区域之外。“相邻”：火焰在每个边界额外请求加载一层子地图，以保持正确的蔓延行为。"
+
+#: src/options.cpp
+msgid "None (pause spread)"
+msgstr "无（暂停蔓延）"
+
+#: src/options.cpp
+msgid "Adjacent (one layer)"
+msgstr "相邻（单层）"
+
+#: src/options.cpp
+msgid "Fire Spread Submap Cap"
+msgstr "火焰蔓延子地图上限"
+
+#: src/options.cpp
+msgid ""
+"Maximum number of submaps that fire spread may keep loaded simultaneously "
+"across all dimensions. Higher values allow larger fires to be simulated "
+"correctly at the cost of CPU and memory. 0 disables out-of-bubble fire "
+"spread loading entirely. Takes effect immediately without restart."
+msgstr ""
+"跨越所有维度，因火焰蔓延而可同时保持加载状态的子地图最大数量。较高的值允许正确模拟更大规模的火灾，代价是消耗更多 CPU 和内存。设置为 0 "
+"将完全禁用气泡外的火焰蔓延加载。无需重启，立即生效。"
+
+#: src/options.cpp
+msgid "Reality Bubble Size"
+msgstr "现实气泡大小"
+
+#: src/options.cpp
+msgid ""
+"Submap radius of the reality bubble (submaps visible beyond your position). "
+"Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
+"Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
+"the loaded area and memory usage; smaller values reduce both. REQUIRES A "
+"GAME RESTART to take effect — changing this mid-session will NOT resize "
+"caches or the loaded map."
+msgstr ""
+"现实气泡的子地图半径（玩家位置之外可见的子地图范围）。网格边长 = 2 × 气泡大小 + 3个子地图（大小为4 → "
+"11×11网格，传统默认值）。玩家最大视野范围 = 12 × (气泡大小 + 1) "
+"个图块。较大的值会增加已加载区域和内存使用量；较小的值则会减少这两者。需要重启游戏才能生效——在游戏中途更改此设置不会调整缓存或已加载的地图大小。"
+
+#: src/options.cpp
+msgid "Power portal load radius (submaps)"
+msgstr "能量传送门加载半径（子地图）"
+
+#: src/options.cpp
+msgid ""
+"Radius in submaps around each end of a power-portal link that is force-"
+"loaded while the link is active.  Larger values keep more terrain around a "
+"remote portal resident, at the cost of memory."
+msgstr "在能量连接激活期间被强制加载的，围绕能量传送门连接两端的子地图半径。较大的值会将远程传送门周围更多的地形保留在内存中，代价是消耗更多内存。"
+
+#: src/options.cpp
 msgid "Strict JSON checks"
 msgstr "严格的JSON检查"
 
@@ -267934,6 +268387,35 @@ msgstr "辐射诱发变异"
 #: src/options.cpp
 msgid "If true, radiation causes the player to mutate."
 msgstr "开启后，辐射将会导致玩家变异。"
+
+#: src/options.cpp
+msgid "Pocket Dimension Simulation"
+msgstr "口袋维度模拟"
+
+#: src/options.cpp
+msgid ""
+"How to handle the last visited pocket dimension. 'Off' unloads normally. "
+"'None' keeps loaded but frozen for fast travel. 'Minimal' simulates fields "
+"only (fire, gas). 'Moderate' adds vehicle systems (solar charging). 'Full' "
+"simulates everything including off-screen combat."
+msgstr ""
+"如何处理最后访问的口袋维度。“关闭”表示正常卸载。“无”表示保持加载但处于冻结状态，以便快速传送。“最低”表示仅模拟环境场（如火焰、气体）。“中度”表示增加车辆系统模拟（如太阳能充电）。“完整”表示模拟包括屏幕外战斗在内的所有内容。"
+
+#: src/options.cpp
+msgid "None (Fast Travel)"
+msgstr "无（快速传送）"
+
+#: src/options.cpp
+msgid "Minimal (Fields)"
+msgstr "最低（环境场）"
+
+#: src/options.cpp
+msgid "Moderate (Fields + Vehicles)"
+msgstr "中度（环境场 + 车辆）"
+
+#: src/options.cpp
+msgid "Full (Everything)"
+msgstr "完整（所有事物）"
 
 #: src/options.cpp
 msgid "Character point pools"
