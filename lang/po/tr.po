@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-20 15:09+0000\n"
+"POT-Creation-Date: 2026-03-21 21:17+0000\n"
 "Last-Translator: Arif Öcal, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -71890,6 +71890,19 @@ msgstr ""
 "ama acı çekmeden. Çok sıcak tutar."
 
 #: data/json/items/armor/hats.json
+msgid "bearskin hat"
+msgid_plural "bearskin hats"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'bearskin hat'}
+#: data/json/items/armor/hats.json
+msgid ""
+"A tall ceremonial hat once worn by European soldiers.  Very warm.  Very "
+"tall."
+msgstr ""
+
+#: data/json/items/armor/hats.json
 msgid "hard hat"
 msgid_plural "hard hats"
 msgstr[0] "baret"
@@ -139283,6 +139296,18 @@ msgstr[1] "kaya tekerlekleri"
 #: data/json/items/vehicle/engineering.json
 msgid "A large and heavy jagged metal disc to dig trenches."
 msgstr "Hendek kazmak için büyük ve ağır, tırtıklı bir metal disk."
+
+#: data/json/items/vehicle/engineering.json
+#: data/json/vehicleparts/engineering.json
+msgid "roadheader"
+msgid_plural "roadheaders"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'roadheader'}
+#: data/json/items/vehicle/engineering.json
+msgid "A massive metal wheel-like drill used to bore tunnels."
+msgstr ""
 
 #: data/json/items/vehicle/engineering.json
 msgid "airjack"
@@ -213929,6 +213954,15 @@ msgid ""
 " dirt.  Mount it on the edge of your vehicle."
 msgstr ""
 
+#. ~ Description for {'str': 'roadheader'}
+#: data/json/vehicleparts/engineering.json
+msgid ""
+"A large metal jagged metalhead, powered by the vehicle's engines.  Use the "
+"vehicle controls to turn it on or off.  When turned on, it will stop the "
+"vehicle unless it has a strong engine.  When turned on, it will destroy "
+"walls near it."
+msgstr ""
+
 #: data/json/vehicleparts/engineering.json
 msgid "air jack system"
 msgstr "hava kriko sistemi"
@@ -215020,13 +215054,10 @@ msgstr ""
 #. ~ Description for {'str': 'shredder'}
 #: data/json/vehicleparts/rams.json
 msgid ""
-"A circular blade, powered by the vehicle's engine.  It will dramatically "
+"A circular blade, powered by the vehicle's engine.  It will significantly "
 "increase the damage the vehicle delivers in collisions.  Mount on the edges "
 "of the vehicle, preferably the front."
 msgstr ""
-"Aracın motoruyla çalışan dairesel bir bıçak. Çarpışmalarda aracın verdiği "
-"hasarı önemli ölçüde artıracaktır. Aracın kenarlarına, tercihen ön kısmına "
-"monte edin."
 
 #. ~ Description for {'str': 'blade'}
 #: data/json/vehicleparts/rams.json
@@ -216874,6 +216905,10 @@ msgstr "Forklift"
 #: data/json/vehicles/utility.json
 msgid "Trencher"
 msgstr "Kanal Kazıcı"
+
+#: data/json/vehicles/utility.json
+msgid "Mining Roadheader"
+msgstr ""
 
 #: data/json/vehicles/utility.json
 msgid "work light"
@@ -309053,6 +309088,50 @@ msgstr ""
 "O(M²) fraksiyon taraması maliyetiyle."
 
 #: src/options.cpp
+msgid "3D Field of Vision"
+msgstr ""
+
+#: src/options.cpp
+msgid "Configure three-dimensional visibility across z-levels."
+msgstr ""
+
+#: src/options.cpp
+msgid "3D field of vision"
+msgstr "3D görüş alanı"
+
+#: src/options.cpp
+msgid ""
+"If false, vision is limited to current z-level.  If true and the world is in"
+" z-level mode, the vision will extend beyond current z-level."
+msgstr ""
+"Yanlışsa, görüş mevcut z-seviyesi ile sınırlıdır. Doğruysa ve dünya "
+"z-seviyesi modundaysa, görüş mevcut z-seviyesinin ötesine uzanır."
+
+#: src/options.cpp
+msgid "Vertical range of 3D field of vision"
+msgstr "3D görüş alanının dikey menzili"
+
+#: src/options.cpp
+msgid ""
+"How many levels up and down the experimental 3D field of vision reaches.  "
+"(This many levels up, this many levels down.)  3D vision of the full height "
+"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
+msgstr ""
+"Deneysel 3D görüş alanının kaç seviye yukarı ve aşağı ulaştığı. (Bu kadar "
+"seviye yukarı, bu kadar seviye aşağı.) Dünyanın tam yüksekliğinde 3D görüş, "
+"oyunu çok yavaşlatabilir. Daha az Z-seviyesi görmek daha hızlıdır."
+
+#: src/options.cpp
+msgid "3D FoV horizontal occlusion"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"When enabled, obstacles at other z-levels correctly block horizontal line of"
+" sight.  Requires 3D FoV.  Slower than disabled."
+msgstr ""
+
+#: src/options.cpp
 msgid "LOS Cache Size"
 msgstr "LOS Önbellek Boyutu"
 
@@ -309425,32 +309504,6 @@ msgid ""
 msgstr ""
 "Eşyaların üretim (veya diğer bazı eylemler) için kullanılabilir olarak kabul"
 " edildiği maksimum mesafe."
-
-#: src/options.cpp
-msgid "3D field of vision"
-msgstr "3D görüş alanı"
-
-#: src/options.cpp
-msgid ""
-"If false, vision is limited to current z-level.  If true and the world is in"
-" z-level mode, the vision will extend beyond current z-level."
-msgstr ""
-"Yanlışsa, görüş mevcut z-seviyesi ile sınırlıdır. Doğruysa ve dünya "
-"z-seviyesi modundaysa, görüş mevcut z-seviyesinin ötesine uzanır."
-
-#: src/options.cpp
-msgid "Vertical range of 3D field of vision"
-msgstr "3D görüş alanının dikey menzili"
-
-#: src/options.cpp
-msgid ""
-"How many levels up and down the experimental 3D field of vision reaches.  "
-"(This many levels up, this many levels down.)  3D vision of the full height "
-"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
-msgstr ""
-"Deneysel 3D görüş alanının kaç seviye yukarı ve aşağı ulaştığı. (Bu kadar "
-"seviye yukarı, bu kadar seviye aşağı.) Dünyanın tam yüksekliğinde 3D görüş, "
-"oyunu çok yavaşlatabilir. Daha az Z-seviyesi görmek daha hızlıdır."
 
 #: src/options.cpp
 msgid "Event bus system"

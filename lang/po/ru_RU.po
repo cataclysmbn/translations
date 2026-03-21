@@ -28,14 +28,14 @@
 # GostBug <blackday8990@gmx.de>, 2025
 # toy goy “phil1999ru” loc, 2025
 # Vadim, 2026
-# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # Vorpal Void <vorpal.void@gmail.com>, 2026
+# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-20 15:09+0000\n"
-"Last-Translator: Vorpal Void <vorpal.void@gmail.com>, 2026\n"
+"POT-Creation-Date: 2026-03-21 21:17+0000\n"
+"Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -75341,6 +75341,21 @@ msgstr ""
 "настоящий мех, но без страданий. Очень тёплая."
 
 #: data/json/items/armor/hats.json
+msgid "bearskin hat"
+msgid_plural "bearskin hats"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'bearskin hat'}
+#: data/json/items/armor/hats.json
+msgid ""
+"A tall ceremonial hat once worn by European soldiers.  Very warm.  Very "
+"tall."
+msgstr ""
+
+#: data/json/items/armor/hats.json
 msgid "hard hat"
 msgid_plural "hard hats"
 msgstr[0] "каска"
@@ -150080,6 +150095,20 @@ msgstr[3] "дисковый резак"
 msgid "A large and heavy jagged metal disc to dig trenches."
 msgstr ""
 "Большой и тяжёлый зазубренный металлический диск для прокладки траншей."
+
+#: data/json/items/vehicle/engineering.json
+#: data/json/vehicleparts/engineering.json
+msgid "roadheader"
+msgid_plural "roadheaders"
+msgstr[0] "горнопроходчик"
+msgstr[1] "горнопроходчика"
+msgstr[2] "горнопроходчиков"
+msgstr[3] "горнопроходчики"
+
+#. ~ Description for {'str': 'roadheader'}
+#: data/json/items/vehicle/engineering.json
+msgid "A massive metal wheel-like drill used to bore tunnels."
+msgstr ""
 
 #: data/json/items/vehicle/engineering.json
 msgid "airjack"
@@ -226411,6 +226440,19 @@ msgid ""
 " dirt.  Mount it on the edge of your vehicle."
 msgstr ""
 
+#. ~ Description for {'str': 'roadheader'}
+#: data/json/vehicleparts/engineering.json
+msgid ""
+"A large metal jagged metalhead, powered by the vehicle's engines.  Use the "
+"vehicle controls to turn it on or off.  When turned on, it will stop the "
+"vehicle unless it has a strong engine.  When turned on, it will destroy "
+"walls near it."
+msgstr ""
+"Большой металлический зазубренный бур, вращение которого обеспечивается "
+"двигателями машины. Его можно включать и выключать, используя систему "
+"управления. При включении застопорит машину, если у неё нет мощного "
+"двигателя, и будет разрушать стены поблизости."
+
 #: data/json/vehicleparts/engineering.json
 msgid "air jack system"
 msgstr "пневматический домкрат"
@@ -227521,13 +227563,10 @@ msgstr "Матрас, привязанный к машине. Смягчит л�
 #. ~ Description for {'str': 'shredder'}
 #: data/json/vehicleparts/rams.json
 msgid ""
-"A circular blade, powered by the vehicle's engine.  It will dramatically "
+"A circular blade, powered by the vehicle's engine.  It will significantly "
 "increase the damage the vehicle delivers in collisions.  Mount on the edges "
 "of the vehicle, preferably the front."
 msgstr ""
-"Дисковое лезвие с приводом от двигателя автомобиля. Значительно увеличивает "
-"урон, наносимый автомобилем при столкновениях. Устанавливается на края "
-"транспортного средства, лучше всего спереди."
 
 #. ~ Description for {'str': 'blade'}
 #: data/json/vehicleparts/rams.json
@@ -229387,6 +229426,10 @@ msgstr "вилочный погрузчик"
 #: data/json/vehicles/utility.json
 msgid "Trencher"
 msgstr "траншеекопатель"
+
+#: data/json/vehicles/utility.json
+msgid "Mining Roadheader"
+msgstr ""
 
 #: data/json/vehicles/utility.json
 msgid "work light"
@@ -325058,6 +325101,51 @@ msgstr ""
 "фракций со сложностью O(M²) для монстров на умеренном отдалении."
 
 #: src/options.cpp
+msgid "3D Field of Vision"
+msgstr ""
+
+#: src/options.cpp
+msgid "Configure three-dimensional visibility across z-levels."
+msgstr ""
+
+#: src/options.cpp
+msgid "3D field of vision"
+msgstr "3D поле зрения"
+
+#: src/options.cpp
+msgid ""
+"If false, vision is limited to current z-level.  If true and the world is in"
+" z-level mode, the vision will extend beyond current z-level."
+msgstr ""
+"Если выключено, то зрение ограничено текущим z-уровнем. Если включено и мир "
+"находится в режиме z-уровней, то зрение будет распространяться и за пределы "
+"текущего z-уровня."
+
+#: src/options.cpp
+msgid "Vertical range of 3D field of vision"
+msgstr "Вертикальный диапазон 3D поля зрения"
+
+#: src/options.cpp
+msgid ""
+"How many levels up and down the experimental 3D field of vision reaches.  "
+"(This many levels up, this many levels down.)  3D vision of the full height "
+"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
+msgstr ""
+"Указывает на сколько уровней простирается экспериментальное 3D поле зрения. "
+"(На сколько вверх, на столько же и вниз.) 3D зрение полной высоты мира может"
+" сильно замедлить игру. Чем меньше Z-уровней видно, тем меньше лагов."
+
+#: src/options.cpp
+msgid "3D FoV horizontal occlusion"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"When enabled, obstacles at other z-levels correctly block horizontal line of"
+" sight.  Requires 3D FoV.  Slower than disabled."
+msgstr ""
+
+#: src/options.cpp
 msgid "LOS Cache Size"
 msgstr "Размер кэша линии видимости"
 
@@ -325466,33 +325554,6 @@ msgid ""
 msgstr ""
 "Максимальное расстояние, на котором предметы считаются доступными для крафта"
 " (или некоторых других действий)."
-
-#: src/options.cpp
-msgid "3D field of vision"
-msgstr "3D поле зрения"
-
-#: src/options.cpp
-msgid ""
-"If false, vision is limited to current z-level.  If true and the world is in"
-" z-level mode, the vision will extend beyond current z-level."
-msgstr ""
-"Если выключено, то зрение ограничено текущим z-уровнем. Если включено и мир "
-"находится в режиме z-уровней, то зрение будет распространяться и за пределы "
-"текущего z-уровня."
-
-#: src/options.cpp
-msgid "Vertical range of 3D field of vision"
-msgstr "Вертикальный диапазон 3D поля зрения"
-
-#: src/options.cpp
-msgid ""
-"How many levels up and down the experimental 3D field of vision reaches.  "
-"(This many levels up, this many levels down.)  3D vision of the full height "
-"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
-msgstr ""
-"Указывает на сколько уровней простирается экспериментальное 3D поле зрения. "
-"(На сколько вверх, на столько же и вниз.) 3D зрение полной высоты мира может"
-" сильно замедлить игру. Чем меньше Z-уровней видно, тем меньше лагов."
 
 #: src/options.cpp
 msgid "Event bus system"

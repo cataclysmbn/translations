@@ -9,14 +9,14 @@
 # H_Hedgehog, 2025
 # HuanSen233, 2026
 # LuXts, 2026
-# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026
+# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-20 15:09+0000\n"
-"Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
+"POT-Creation-Date: 2026-03-21 21:17+0000\n"
+"Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63186,6 +63186,18 @@ msgid ""
 msgstr "一顶用人造毛皮制成的时髦帽子。像真正的皮毛，如果真如标签所说的话，制造过程不会杀害野生动物。十分保暖。"
 
 #: data/json/items/armor/hats.json
+msgid "bearskin hat"
+msgid_plural "bearskin hats"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'bearskin hat'}
+#: data/json/items/armor/hats.json
+msgid ""
+"A tall ceremonial hat once worn by European soldiers.  Very warm.  Very "
+"tall."
+msgstr ""
+
+#: data/json/items/armor/hats.json
 msgid "hard hat"
 msgid_plural "hard hats"
 msgstr[0] "安全帽"
@@ -117931,6 +117943,17 @@ msgstr[0] "铣挖机"
 #: data/json/items/vehicle/engineering.json
 msgid "A large and heavy jagged metal disc to dig trenches."
 msgstr "一个用于挖掘壕沟的巨大而沉重的锯齿状金属盘。"
+
+#: data/json/items/vehicle/engineering.json
+#: data/json/vehicleparts/engineering.json
+msgid "roadheader"
+msgid_plural "roadheaders"
+msgstr[0] "掘进机"
+
+#. ~ Description for {'str': 'roadheader'}
+#: data/json/items/vehicle/engineering.json
+msgid "A massive metal wheel-like drill used to bore tunnels."
+msgstr ""
 
 #: data/json/items/vehicle/engineering.json
 msgid "airjack"
@@ -181346,6 +181369,15 @@ msgid ""
 " dirt.  Mount it on the edge of your vehicle."
 msgstr "一个大型金属圆盘，由车辆引擎驱动。使用车辆控制装置将其开启或关闭。开启后，它会在泥土中挖出一个浅坑。请将其安装在车辆边缘。"
 
+#. ~ Description for {'str': 'roadheader'}
+#: data/json/vehicleparts/engineering.json
+msgid ""
+"A large metal jagged metalhead, powered by the vehicle's engines.  Use the "
+"vehicle controls to turn it on or off.  When turned on, it will stop the "
+"vehicle unless it has a strong engine.  When turned on, it will destroy "
+"walls near it."
+msgstr "一个由车辆引擎带动的大型金属刀盘。在载具控制菜单中控制开关。开启时会摧毁附近的墙壁。"
+
 #: data/json/vehicleparts/engineering.json
 msgid "air jack system"
 msgstr "充气千斤顶系统"
@@ -182288,10 +182320,10 @@ msgstr "一个绑到载具上的床垫，可以用来吸收冲击。"
 #. ~ Description for {'str': 'shredder'}
 #: data/json/vehicleparts/rams.json
 msgid ""
-"A circular blade, powered by the vehicle's engine.  It will dramatically "
+"A circular blade, powered by the vehicle's engine.  It will significantly "
 "increase the damage the vehicle delivers in collisions.  Mount on the edges "
 "of the vehicle, preferably the front."
-msgstr "一个圆形刀片，采用载具引擎牵引其旋转。会大大提升载具碰撞时所造成的伤害。安装在车辆外侧，最好是正前方。"
+msgstr ""
 
 #. ~ Description for {'str': 'blade'}
 #: data/json/vehicleparts/rams.json
@@ -184013,6 +184045,10 @@ msgstr "叉车"
 #: data/json/vehicles/utility.json
 msgid "Trencher"
 msgstr "挖沟机"
+
+#: data/json/vehicles/utility.json
+msgid "Mining Roadheader"
+msgstr ""
 
 #: data/json/vehicles/utility.json
 msgid "work light"
@@ -267609,6 +267645,45 @@ msgstr ""
 "级怪物也会运行群体士气/集群检测，代价是需要为中距离怪物进行额外的 O(M²) 派系扫描。"
 
 #: src/options.cpp
+msgid "3D Field of Vision"
+msgstr "3D视野"
+
+#: src/options.cpp
+msgid "Configure three-dimensional visibility across z-levels."
+msgstr "配置跨Z层的三维可见度。"
+
+#: src/options.cpp
+msgid "3D field of vision"
+msgstr "3D 视野"
+
+#: src/options.cpp
+msgid ""
+"If false, vision is limited to current z-level.  If true and the world is in"
+" z-level mode, the vision will extend beyond current z-level."
+msgstr "若为否，视野仅限于当前的 Z 水平。 如果为 true，且世界处于 Z 水平模式，视野将超出当前的 Z 水平。"
+
+#: src/options.cpp
+msgid "Vertical range of 3D field of vision"
+msgstr "3D视野垂直可见范围"
+
+#: src/options.cpp
+msgid ""
+"How many levels up and down the experimental 3D field of vision reaches.  "
+"(This many levels up, this many levels down.)  3D vision of the full height "
+"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
+msgstr "在实验性的3D视野中能向上向下看多少层。（向上看这么多层，向下也看这么多层）过高的3D视野会严重拖慢游戏速度。能看到的层数越少速度越快。"
+
+#: src/options.cpp
+msgid "3D FoV horizontal occlusion"
+msgstr "3D视野水平遮挡"
+
+#: src/options.cpp
+msgid ""
+"When enabled, obstacles at other z-levels correctly block horizontal line of"
+" sight.  Requires 3D FoV.  Slower than disabled."
+msgstr "启用后，其他Z层的障碍物将正确遮挡水平视线。需要开启“3D视野”。运行速度比禁用时更慢（更耗费性能）。"
+
+#: src/options.cpp
 msgid "LOS Cache Size"
 msgstr "视野缓存大小"
 
@@ -267951,27 +268026,6 @@ msgid ""
 "Maximum distance at which items are considered available for crafting (or "
 "some other actions)."
 msgstr "物品被认定为可用于制造（或某些其他行为）的最大距离。"
-
-#: src/options.cpp
-msgid "3D field of vision"
-msgstr "3D 视野"
-
-#: src/options.cpp
-msgid ""
-"If false, vision is limited to current z-level.  If true and the world is in"
-" z-level mode, the vision will extend beyond current z-level."
-msgstr "若为否，视野仅限于当前的 Z 水平。 如果为 true，且世界处于 Z 水平模式，视野将超出当前的 Z 水平。"
-
-#: src/options.cpp
-msgid "Vertical range of 3D field of vision"
-msgstr "3D视野垂直可见范围"
-
-#: src/options.cpp
-msgid ""
-"How many levels up and down the experimental 3D field of vision reaches.  "
-"(This many levels up, this many levels down.)  3D vision of the full height "
-"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
-msgstr "在实验性的3D视野中能向上向下看多少层。（向上看这么多层，向下也看这么多层）过高的3D视野会严重拖慢游戏速度。能看到的层数越少速度越快。"
 
 #: src/options.cpp
 msgid "Event bus system"

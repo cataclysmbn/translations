@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-20 15:09+0000\n"
+"POT-Creation-Date: 2026-03-21 21:17+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -63508,6 +63508,18 @@ msgid ""
 msgstr "フェイクファー製のおしゃれな帽子。本物の毛皮のように見えるが、タグによれば殺生はしていないらしい。非常に暖かい。"
 
 #: data/json/items/armor/hats.json
+msgid "bearskin hat"
+msgid_plural "bearskin hats"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'bearskin hat'}
+#: data/json/items/armor/hats.json
+msgid ""
+"A tall ceremonial hat once worn by European soldiers.  Very warm.  Very "
+"tall."
+msgstr ""
+
+#: data/json/items/armor/hats.json
 msgid "hard hat"
 msgid_plural "hard hats"
 msgstr[0] "ハードハット"
@@ -118236,6 +118248,17 @@ msgstr[0] "溝堀機"
 #: data/json/items/vehicle/engineering.json
 msgid "A large and heavy jagged metal disc to dig trenches."
 msgstr "溝を掘るための、縁がギザギザになった重くて大きな金属製ディスクだ。"
+
+#: data/json/items/vehicle/engineering.json
+#: data/json/vehicleparts/engineering.json
+msgid "roadheader"
+msgid_plural "roadheaders"
+msgstr[0] "ボーリングビット"
+
+#. ~ Description for {'str': 'roadheader'}
+#: data/json/items/vehicle/engineering.json
+msgid "A massive metal wheel-like drill used to bore tunnels."
+msgstr ""
 
 #: data/json/items/vehicle/engineering.json
 msgid "airjack"
@@ -182063,6 +182086,16 @@ msgid ""
 " dirt.  Mount it on the edge of your vehicle."
 msgstr ""
 
+#. ~ Description for {'str': 'roadheader'}
+#: data/json/vehicleparts/engineering.json
+msgid ""
+"A large metal jagged metalhead, powered by the vehicle's engines.  Use the "
+"vehicle controls to turn it on or off.  When turned on, it will stop the "
+"vehicle unless it has a strong engine.  When turned on, it will destroy "
+"walls near it."
+msgstr ""
+"車両のエンジンによって駆動する棘が付いた金属製の大型装置です。車両制御装置を使うと、電源のオンオフを切り替えられます。オンにすると付近の壁を破壊しますが、エンジンの性能が悪いと車両は停止してしまいます。"
+
 #: data/json/vehicleparts/engineering.json
 msgid "air jack system"
 msgstr "エアジャッキ機構"
@@ -183015,10 +183048,10 @@ msgstr "車両に結束されたマットレスだ。衝突による衝撃を鈍
 #. ~ Description for {'str': 'shredder'}
 #: data/json/vehicleparts/rams.json
 msgid ""
-"A circular blade, powered by the vehicle's engine.  It will dramatically "
+"A circular blade, powered by the vehicle's engine.  It will significantly "
 "increase the damage the vehicle delivers in collisions.  Mount on the edges "
 "of the vehicle, preferably the front."
-msgstr "車両のエンジンによって駆動する円形の刃だ。衝突時に車両が与えるダメージを劇的に増加させる。車両の端、できれば前面に取り付けよ。"
+msgstr ""
 
 #. ~ Description for {'str': 'blade'}
 #: data/json/vehicleparts/rams.json
@@ -184741,6 +184774,10 @@ msgstr "フォークリフト"
 #: data/json/vehicles/utility.json
 msgid "Trencher"
 msgstr "溝掘り用トラクター"
+
+#: data/json/vehicles/utility.json
+msgid "Mining Roadheader"
+msgstr ""
 
 #: data/json/vehicles/utility.json
 msgid "work light"
@@ -268581,6 +268618,47 @@ msgid ""
 msgstr ""
 
 #: src/options.cpp
+msgid "3D Field of Vision"
+msgstr ""
+
+#: src/options.cpp
+msgid "Configure three-dimensional visibility across z-levels."
+msgstr ""
+
+#: src/options.cpp
+msgid "3D field of vision"
+msgstr "3次元可視範囲"
+
+#: src/options.cpp
+msgid ""
+"If false, vision is limited to current z-level.  If true and the world is in"
+" z-level mode, the vision will extend beyond current z-level."
+msgstr ""
+"無効にすると、可視範囲は現在のz軸に限定される。有効にしており、現在の世界にz軸の設定が適用されている場合、可視範囲が現在のz軸を超えて拡張される。"
+
+#: src/options.cpp
+msgid "Vertical range of 3D field of vision"
+msgstr "実験的な3D視界の垂直視野"
+
+#: src/options.cpp
+msgid ""
+"How many levels up and down the experimental 3D field of vision reaches.  "
+"(This many levels up, this many levels down.)  3D vision of the full height "
+"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
+msgstr ""
+"実験的な3D視界が上下方向にどの程度届くかを設定する。3D視界を最大まで有効にするとゲームが遅くなる可能性がある。数値が小さいほどパフォーマンスが向上する。"
+
+#: src/options.cpp
+msgid "3D FoV horizontal occlusion"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"When enabled, obstacles at other z-levels correctly block horizontal line of"
+" sight.  Requires 3D FoV.  Slower than disabled."
+msgstr ""
+
+#: src/options.cpp
 msgid "LOS Cache Size"
 msgstr ""
 
@@ -268906,29 +268984,6 @@ msgid ""
 "Maximum distance at which items are considered available for crafting (or "
 "some other actions)."
 msgstr "作業やその他の行動に使用するアイテムを認識できる距離だ。この距離内のアイテムは作成や作業に使用できる。"
-
-#: src/options.cpp
-msgid "3D field of vision"
-msgstr "3次元可視範囲"
-
-#: src/options.cpp
-msgid ""
-"If false, vision is limited to current z-level.  If true and the world is in"
-" z-level mode, the vision will extend beyond current z-level."
-msgstr ""
-"無効にすると、可視範囲は現在のz軸に限定される。有効にしており、現在の世界にz軸の設定が適用されている場合、可視範囲が現在のz軸を超えて拡張される。"
-
-#: src/options.cpp
-msgid "Vertical range of 3D field of vision"
-msgstr "実験的な3D視界の垂直視野"
-
-#: src/options.cpp
-msgid ""
-"How many levels up and down the experimental 3D field of vision reaches.  "
-"(This many levels up, this many levels down.)  3D vision of the full height "
-"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
-msgstr ""
-"実験的な3D視界が上下方向にどの程度届くかを設定する。3D視界を最大まで有効にするとゲームが遅くなる可能性がある。数値が小さいほどパフォーマンスが向上する。"
 
 #: src/options.cpp
 msgid "Event bus system"
