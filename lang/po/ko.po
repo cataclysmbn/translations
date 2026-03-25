@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-24 19:20+0000\n"
+"POT-Creation-Date: 2026-03-25 02:14+0000\n"
 "Last-Translator: Choi Dong-uk, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -5320,7 +5320,7 @@ msgid "Favorite"
 msgstr "즐겨찾기 등록"
 
 #: data/json/construction_category.json data/raw/keybindings/keybindings.json
-#: src/construction.cpp src/veh_interact.cpp
+#: src/veh_interact.cpp
 msgid "Filter"
 msgstr "필터"
 
@@ -5654,7 +5654,7 @@ msgstr "간이 침대 제작"
 
 #: data/json/construction_group.json
 msgid "Build Windowed Door"
-msgstr ""
+msgstr "창문 달린 문 건설"
 
 #: data/json/construction_group.json
 msgid "Build Makeshift Door"
@@ -14486,6 +14486,17 @@ msgstr "건축: 청사진"
 #: data/json/loot_zones.json
 msgid "Designate a blueprint zone for construction."
 msgstr "건축을 위한 청사진 영역을 설정합니다."
+
+#: data/json/loot_zones.json
+msgid "Construction: Ignore"
+msgstr "건축: 무시"
+
+#. ~ Description for Construction: Ignore
+#: data/json/loot_zones.json
+msgid ""
+"NPCs will ignore construction orders inside this zone, useful for leaving "
+"openings such as doorways."
+msgstr "NPC는 이 구역 내의 건설 명령을 무시할 것입니다. 문간 등을 위한 빈 공간을 남겨둘 때 유용합니다."
 
 #: data/json/loot_zones.json
 msgid "Farm: Plot"
@@ -41873,21 +41884,21 @@ msgstr "열린 플라스틱 망 문"
 
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid "closed wood windowed door"
-msgstr ""
+msgstr "닫힌 나무 창문 달린 문"
 
 #. ~ Description for closed wood windowed door
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid ""
 "A standard wooden door that doesn't look very resilient.  It'd probably burn"
 " easily, too. This one has a window."
-msgstr ""
+msgstr "별 탄력 없어보이는 평범한 나무 문입니다. 쉽게 불에 탈 것입니다. 창문이 달려있습니다."
 
 #. ~ Description for open wood door
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid ""
 "A standard wooden door that doesn't look very resilient.  It'd probably burn"
 " easily, too.  This one is wide open, and has a window."
-msgstr ""
+msgstr "별 탄력 없어보이는 평범한 나무 문입니다. 쉽게 불에 탈 것입니다. 활짝 열려있으며, 창문이 달려있습니다."
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "palisade gate"
@@ -84424,6 +84435,16 @@ msgid "Things go better with cola.  Sugar water with caffeine added."
 msgstr "콜라와 함께 하면 뭐든 더 좋아집니다. 설탕물을 기본으로, 카페인이 함유되어 있습니다."
 
 #: data/json/items/comestibles/drink.json
+msgid "zero cola"
+msgid_plural "zero colas"
+msgstr[0] "제로 콜라"
+
+#. ~ Description for zero cola
+#: data/json/items/comestibles/drink.json
+msgid "Dark cola, now with sugar substitutes. Mmm, lime flavor."
+msgstr "설탕이 없는 다크 콜라입니다. 라임향이 나네요."
+
+#: data/json/items/comestibles/drink.json
 msgid "dark cola soda syrup"
 msgid_plural "dark cola soda syrup"
 msgstr[0] "다크 콜라 소다 시럽"
@@ -121210,7 +121231,7 @@ msgid ""
 "chain-link fences."
 msgstr "가느다란 와이어 양끝에 간단한 손잡이를 단 유연한 톱입니다. 경금속이나 나무, 혹은 사슬 울타리를 자르기에 충분합니다."
 
-#: data/json/items/tool/workshop.json
+#: data/json/items/tool/workshop.json src/construction.cpp
 msgid "hammer"
 msgid_plural "hammers"
 msgstr[0] "망치"
@@ -192508,6 +192529,10 @@ msgid "Wasteland Interceptor"
 msgstr "황무지 요격기"
 
 #: data/json/vehicles/custom_vehicles.json
+msgid "Bandit Bulldozer"
+msgstr "약탈자 불도저"
+
+#: data/json/vehicles/custom_vehicles.json
 msgid "Meth Bike"
 msgstr "약쟁이 바이크"
 
@@ -192633,6 +192658,10 @@ msgid "Armored Personnel Carrier"
 msgstr "병력수송 장갑차"
 
 #: data/json/vehicles/military.json
+msgid "M2 Bradley Infantry Fighting Vehicle"
+msgstr "M2 브래들리 보병전투차량"
+
+#: data/json/vehicles/military.json
 #: data/mods/Aftershock/vehicles/vehicles.json
 msgid "Humvee"
 msgstr "험비"
@@ -192657,27 +192686,19 @@ msgstr "스콜피오 발리스타"
 msgid "Jeep"
 msgstr "지프"
 
-#: data/json/vehicles/tanks.json
-msgid "M1 Abrams Main Battle Tank"
-msgstr "M1 에이브럼스 주력전차"
-
-#: data/json/vehicles/tanks.json
-msgid "M109 Self-Propelled Howitzer"
-msgstr "M109 자주곡사포"
-
-#: data/json/vehicles/tanks.json
-msgid "M2 Bradley Infantry Fighting Vehicle"
-msgstr "M2 브래들리 보병전투차량"
-
-#: data/json/vehicles/tanks.json
-msgid "Bandit Bulldozer"
-msgstr "약탈자 불도저"
-
-#: data/json/vehicles/tanks.json
+#: data/json/vehicles/military.json
 msgid "M60 Patton Main Battle Tank"
 msgstr "M60 패튼 주력전차"
 
-#: data/json/vehicles/tanks.json
+#: data/json/vehicles/military.json
+msgid "M1 Abrams Main Battle Tank"
+msgstr "M1 에이브럼스 주력전차"
+
+#: data/json/vehicles/military.json
+msgid "M109 Self-Propelled Howitzer"
+msgstr "M109 자주곡사포"
+
+#: data/json/vehicles/military.json
 msgid "XM7 Electric Mini-Tank"
 msgstr "XM7 전기 미니 탱크"
 
@@ -203559,29 +203580,28 @@ msgstr ""
 "출시되었습니다!"
 
 #: data/mods/CrazyCataclysm/crazy_items.json
-msgid "debug grenade"
-msgid_plural "debug grenades"
-msgstr[0] "디버그 수류탄"
+msgid "chaos canister"
+msgid_plural "chaos canisters"
+msgstr[0] "혼돈탄"
 
-#. ~ Description for {'str': 'debug grenade'}
+#. ~ Description for {'str': 'chaos canister'}
 #: data/mods/CrazyCataclysm/crazy_items.json
 msgid ""
-"Attached to this grenade is a tag with 'debug' written on it.  Does not seem"
-" to work like a grenade, handle with care."
-msgstr "'디버그용'이라는 이름표가 붙어있는 수류탄입니다. 일반적인 수류탄과 퍽 달라보이니 조심해서 다루세요."
+"A suspiciously uncanny-looking cylinder that hums like a compiler about to "
+"throw warnings. Handle with care."
+msgstr "컴파일러처럼 웅웅거리며 어서 던져버리라고 경고하는, 의심스럽기 짝이 없는 기이한 원통입니다. 조심해서 다루세요."
 
 #: data/mods/CrazyCataclysm/crazy_items.json
-msgid "active debug grenade"
-msgid_plural "active debug grenades"
-msgstr[0] "디버그 수류탄 (켜짐)"
+msgid "active chaos canister"
+msgid_plural "active chaos canisters"
+msgstr[0] "혼돈탄 (켜짐)"
 
-#. ~ Description for {'str': 'active debug grenade'}
+#. ~ Description for {'str': 'active chaos canister'}
 #: data/mods/CrazyCataclysm/crazy_items.json
 msgid ""
-"Attached to this grenade is a tag with 'debug' written on it.  Does not seem"
-" to work like a grenade, handle with care.  Better throw it!"
-msgstr ""
-"'디버그용'이라는 이름표가 붙어있는 수류탄입니다. 일반적인 수류탄과 퍽 달라보이니 조심해서 다루세요. 당장 던져버리는 편이 좋겠네요!"
+"A suspiciously uncanny-looking cylinder that hums like a compiler about to "
+"throw warnings. Handle with care. Better throw it!"
+msgstr "컴파일러처럼 웅웅거리며 어서 던져버리라고 경고하는, 의심스럽기 짝이 없는 기이한 원통입니다. 당장 던져버리세요!"
 
 #: data/mods/CrazyCataclysm/crazy_items.json
 msgid "Ionic Overload Generator CBM"
@@ -230022,7 +230042,7 @@ msgstr "오두막 폐허 (주차장)"
 msgid "ruined cabin - dirt plaza"
 msgstr "오두막 폐허 (평야)"
 
-#: data/mods/bn/modinfo.json
+#: data/mods/bn/modinfo.json src/construction.cpp
 msgid "Bright Nights"
 msgstr "밝은 밤"
 
@@ -235535,7 +235555,7 @@ msgstr "커스텀 웨이포인트 활성화/비활성화"
 msgid "Rotate"
 msgstr "회전"
 
-#: data/raw/keybindings/keybindings.json src/construction.cpp
+#: data/raw/keybindings/keybindings.json
 msgid "Search"
 msgstr "찾기"
 
@@ -238590,6 +238610,67 @@ msgstr "몇몇 물품이 %s(으)로 굴러떨어졌습니다."
 msgid "The pet has moved somewhere else."
 msgstr "애완동물이 다른 곳으로 움직입니다."
 
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: the vehicle is moving or under control."
+msgstr "차량 제작을 진행할 수 없습니다: 차량이 이동 중 또는 누군가에 의해 조종 중입니다."
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: someone is already working here."
+msgstr "차량 제작을 진행할 수 없습니다: 누군가가 이미 작업 중입니다."
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Vehicle deconstruction blocked: requires %s."
+msgstr "차량 해체를 진행할 수 없습니다: %s(이)가 필요합니다."
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle deconstruction blocked: insufficient skill for this task."
+msgstr "차량 해체를 진행할 수 없습니다: 이 작업에 필요한 기술 수준이 부족합니다."
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Vehicle deconstruction blocked: need lifting level %d here."
+msgstr "차량 해체를 진행할 수 없습니다: 들어올리기 기능 %d단계가 필요합니다. "
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid ""
+"Vehicle deconstruction missing requirements:\n"
+"%s"
+msgstr ""
+"차량 해체 조건 미달:\n"
+"%s"
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle deconstruction missing requirements nearby."
+msgstr "차량 해체에 필요한 인근 조건이 충족되지 않았습니다."
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Vehicle repair blocked: requires %s."
+msgstr "차량 수리를 진행할 수 없습니다: %s(이)가 필요합니다."
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle repair blocked: insufficient skill for this task."
+msgstr "차량 수리를 진행할 수 없습니다: 이 작업에 필요한 기술 수준이 부족합니다."
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid ""
+"Vehicle repair missing requirements:\n"
+"%s"
+msgstr ""
+"차량 수리 조건 미달:\n"
+"%s"
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle repair missing requirements nearby."
+msgstr "차량 수리에 필요한 인근 조건이 충족되지 않았습니다."
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: no suitable part to work on here."
+msgstr "차량 제작을 진행할 수 없습니다: 해당 지점에 적절한 부품이 없습니다."
+
 #: src/activity_item_handling.cpp src/npcmove.cpp
 #, c-format
 msgid "%1$s picks up a %2$s."
@@ -238615,32 +238696,103 @@ msgid "%s sorted out every item possible."
 msgstr "%s(이)가 가능한 물품 모두를 정리했습니다."
 
 #: src/activity_item_handling.cpp
+msgid ""
+"Construction tasks skipped: all targets are inside a Construction: Ignore "
+"zone.  Remove that zone or move the blueprint."
+msgstr "건축을 생략합니다: 모든 대상이 건축: 무시 구역 내에 있습니다. 해당 구역을 제거하거나 청사진을 옮겨주세요."
+
+#: src/activity_item_handling.cpp
+msgid ""
+"<npcname> reports every construction target is inside a Construction: Ignore"
+" zone.  Remove that zone or move the blueprint."
+msgstr ""
+"<npcname>(이)가 모든 건축 목표가 건축: 무시 구역 내에 있다고 보고합니다. 해당 구역을 제거하거나 청사진을 옮겨주세요."
+
+#: src/activity_item_handling.cpp
 msgid "It is too dark to do this activity."
 msgstr "그 행동을 하기에는 너무 어둡습니다."
 
 #: src/activity_item_handling.cpp
-msgid "You don't have the skill for this task."
-msgstr "그 작업에 필요한 기술이 부족합니다."
+msgid ""
+"No construction sites are available.  Add a Construction: Blueprint zone or "
+"start a construction to give the order."
+msgstr "건축 부지가 없습니다. 건축: 청사진 구역을 추가하거나 건축을 시작해 명령을 내리세요."
 
 #: src/activity_item_handling.cpp
-msgid "There is something blocking the location for this task."
-msgstr "이 일을 하는 걸 방해하는 무언가가 있습니다."
+msgid ""
+"<npcname> reports no construction sites are available.  Add a Construction: "
+"Blueprint zone or start a construction to give the order."
+msgstr "<npcname>(이)가 건축 부지가 없다고 보고합니다. 건축: 청사진 구역을 추가하거나 건축을 시작해 명령을 내리세요."
 
-#: src/activity_item_handling.cpp src/iexamine.cpp src/vehicle_part.cpp
-msgid "It is too cold to plant anything now."
-msgstr "너무 추워서 어떤 것도 심을 수 없습니다."
+#: src/activity_item_handling.cpp
+msgid ""
+"No valid construction site here.  Check your blueprint zones and ignored "
+"areas."
+msgstr "유효한 건축 부지가 없습니다. 청사진 구역 및 무시 구역을 다시 확인해주세요."
 
-#: src/activity_item_handling.cpp src/iexamine.cpp
-msgid "It's too cold down here to plant this type of seed underground."
-msgstr "이 씨앗을 지하에 심기에는 너무 춥습니다."
+#: src/activity_item_handling.cpp
+msgid "Vehicle work ended: no valid target zone here."
+msgstr "차량 제작 작업을 종료합니다: 유효한 목표 구역이 없습니다."
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: insufficient skill for the selected build."
+msgstr "건축을 진행할 수 없습니다: 이 건축에 필요한 기술 수준이 부족합니다."
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Construction blocked: requires %s."
+msgstr "건축을 진행할 수 없습니다: %s(이)가 필요합니다."
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: insufficient skill for this task."
+msgstr "차량 제작을 진행할 수 없습니다: 이 작업에 필요한 기술 수준이 부족합니다."
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: something is occupying the build site."
+msgstr "건축을 진행할 수 없습니다: 무언가가 건축 부지를 차지하고 있습니다."
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: something is occupying the work site."
+msgstr "차량 제작을 진행할 수 없습니다: 무언가가 작업 부지를 차지하고 있습니다."
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: conditions are too cold for this step."
+msgstr "건축을 진행할 수 없습니다: 이 단계를 진행하기에는 너무 춥습니다."
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: this step must be above ground."
+msgstr "건축을 진행할 수 없습니다: 이 단계는 반드시 지상에서 행해져야 합니다."
+
+#: src/activity_item_handling.cpp
+msgid "Construction skipped: required components or tools are missing nearby."
+msgstr "건축을 생략합니다: 필요한 재료 또는 도구가 근처에 없습니다."
 
 #: src/activity_item_handling.cpp
 msgid "The required items are not available to complete this task."
 msgstr "이 작업을 완료하는데 필요한 물품이 없습니다."
 
 #: src/activity_item_handling.cpp
+msgid "Vehicle work skipped: required components or tools are missing nearby."
+msgstr "차량 제작을 생략합니다: 필요한 재료 또는 도구가 근처에 없습니다."
+
+#: src/activity_item_handling.cpp
+msgid ""
+"Construction task ended with no progress.  Path to the site is blocked."
+msgstr "건축이 진행되지 않았습니다. 건축 부지로 향하는 경로가 막혀있습니다."
+
+#: src/activity_item_handling.cpp
 msgid "It is too dark to work here."
 msgstr "여기서 일하기에는 너무 어둡다."
+
+#: src/activity_item_handling.cpp
+msgid "Construction task ended with no progress.  It was too dark to work."
+msgstr "건축이 진행되지 않았습니다. 건축을 시도하기에는 너무 어둡습니다."
+
+#: src/activity_item_handling.cpp
+msgid ""
+"Construction task ended with no progress.  Check zones and required "
+"components."
+msgstr "건축이 진행되지 않았습니다. 구역을 확인하여 필요한 재료를 구비하세요."
 
 #: src/activity_type.cpp
 #, c-format
@@ -239263,6 +239415,11 @@ msgstr "잘못된 보관용기"
 #: src/animation.cpp
 msgid "Hang on a bit…"
 msgstr "잠시 기다려주십시오..."
+
+#: src/animation.cpp src/cata_tiles.cpp
+#, c-format
+msgid "(%dx%d)"
+msgstr "(%dx%d)"
 
 #: src/armor_layers.cpp
 msgid "in your <color_light_blue>personal aura</color>"
@@ -245415,6 +245572,26 @@ msgstr "지상음파탐지기가 %2$s 방향의 %1$s(을)를 탐지했습니다!
 msgid "You've spotted a %1$s to the %2$s!"
 msgstr "%1$s(을)를 %2$s에서 발견했습니다!"
 
+#: src/clzones.cpp
+msgid "Filled rectangle"
+msgstr "채워진 사각형"
+
+#: src/clzones.cpp
+msgid "Rectangle border"
+msgstr "사각형 테두리"
+
+#: src/clzones.cpp
+msgid "Filled circle"
+msgstr "채워진 원형"
+
+#: src/clzones.cpp
+msgid "Circle border"
+msgstr "원형 테두리"
+
+#: src/clzones.cpp
+msgid "Select placement layout"
+msgstr "배치 레이아웃 선택"
+
 #: src/clzones.cpp src/game.cpp
 msgid "Filter:"
 msgstr "필터:"
@@ -245441,6 +245618,18 @@ msgid "No filter"
 msgstr "필터 없음"
 
 #: src/clzones.cpp
+msgid "Edit blueprint options"
+msgstr "청사진 옵션 변경"
+
+#: src/clzones.cpp
+msgid "Change construction"
+msgstr "건축 변경"
+
+#: src/clzones.cpp
+msgid "Change placement layout"
+msgstr "배치 레이아웃 변경"
+
+#: src/clzones.cpp
 msgid "No construction"
 msgstr "건설 없음"
 
@@ -245451,6 +245640,10 @@ msgstr "건설: "
 #: src/clzones.cpp
 msgid "No Construction"
 msgstr "건설 없음"
+
+#: src/clzones.cpp
+msgid "Layout: "
+msgstr "레이아웃: "
 
 #: src/clzones.cpp
 msgid "Plant seed: "
@@ -246231,8 +246424,38 @@ msgstr "좌측 탭으로 이동"
 
 #: src/construction.cpp
 #, c-format
+msgid "* No hidden recipe - %d in category *"
+msgstr "* 숨긴 제작법 없음 - 카테고리 내 제작법 %d개 *"
+
+#: src/construction.cpp src/monster.cpp
+msgid "Origin: "
+msgstr "출처: "
+
+#: src/construction.cpp src/item.cpp
+msgid "Category: "
+msgstr "분류: "
+
+#: src/construction.cpp
+#, c-format
+msgid "* %d results in category *"
+msgstr "* 카테고리 내 제작법 %d개 * "
+
+#: src/construction.cpp
+#, c-format
 msgid "Stage/Variant #%d: "
 msgstr "단계/종류 #%d: "
+
+#: src/construction.cpp
+msgid "Move cost:"
+msgstr "이동력 소모:"
+
+#: src/construction.cpp
+msgid "Bash str:"
+msgstr "타격력:"
+
+#: src/construction.cpp
+msgid "Indestructible"
+msgstr "파괴 불가"
 
 #: src/construction.cpp
 msgid "Result: "
@@ -246291,6 +246514,15 @@ msgstr "속도 수정치:"
 msgid "Terrain needs: "
 msgstr "지형 요구사항: "
 
+#: src/construction.cpp src/crafting_gui.cpp
+msgid "Searched"
+msgstr "검색완료"
+
+#: src/construction.cpp
+#, c-format
+msgid "Construction speed %d%%"
+msgstr "건설 속도 %d%%"
+
 #: src/construction.cpp
 #, c-format
 msgid "Press %s to show previous stage(s)."
@@ -246340,6 +246572,87 @@ msgstr "[<color_yellow>%s</color>] 키를 눌러 즐겨찾기에 추가합니다
 #, c-format
 msgid "Press [<color_yellow>%s</color>] to view and edit keybindings."
 msgstr "[<color_yellow>%s</color>]를 눌러 키 설정"
+
+#: src/construction.cpp
+msgid "<color_cyan>description</color> contains text"
+msgstr "텍스트를 포함하는 <color_cyan>설명</color>"
+
+#: src/construction.cpp
+msgid "wall"
+msgstr "벽"
+
+#: src/construction.cpp
+msgid "2x4"
+msgstr "널빤지"
+
+#: src/construction.cpp
+msgid "<color_cyan>component</color> required"
+msgstr "필요한 <color_cyan>재료</color>"
+
+#: src/construction.cpp
+msgid "<color_cyan>tool</color> required"
+msgstr "필요한 <color_cyan>도구 이름</color>"
+
+#: src/construction.cpp
+msgid "<color_cyan>quality</color> required"
+msgstr "필요한 <color_cyan>도구 기능</color>"
+
+#: src/construction.cpp
+msgid "WRENCH"
+msgstr "렌치"
+
+#: src/construction.cpp
+msgid "<color_cyan>primary skill</color> required"
+msgstr "필요한 <color_cyan>주요 기술</color>"
+
+#: src/construction.cpp
+msgid "fabrication"
+msgstr "제작"
+
+#: src/construction.cpp
+msgid "<color_cyan>any skill</color> required"
+msgstr "필요한 <color_cyan>기술</color>"
+
+#: src/construction.cpp
+msgid "mechanics"
+msgstr "기계공학"
+
+#: src/construction.cpp
+msgid ""
+"The default is to search construction names.  Single-character prefixes with a colon <color_red>:</color> search other fields.  Additional filters are separated by commas <color_red>,</color>.\n"
+"\n"
+"<color_white>Examples:</color>\n"
+msgstr ""
+"기본 검색값은 건설 결과물의 이름입니다. 검색 시 알파벳 접두어 및 콜론 <color_red>:</color>을 결합하여 다른 방식으로 검색할 수 있습니다. 추가적인 필터는 쉼표 <color_red>,</color>를 통해 구분할 수 있습니다.\n"
+"\n"
+"<color_white>예시:</color>\n"
+
+#: src/construction.cpp src/crafting_gui.cpp
+#, c-format
+msgid "  <color_white>%s</color>%.*s    %s\n"
+msgstr "  <color_white>%s</color>%.*s    %s\n"
+
+#: src/construction.cpp
+msgid "<color_cyan>name</color> of construction"
+msgstr "건설 결과물의 <color_cyan>이름</color>"
+
+#: src/construction.cpp src/crafting_gui.cpp
+#, c-format
+msgid "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
+msgstr "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
+
+#: src/construction.cpp src/crafting_gui.cpp
+msgid ""
+"\n"
+"Use <color_red>up/down arrow</color> to go through your search history."
+msgstr ""
+"\n"
+"<color_red>위/아래 방향키</color>를 사용해 검색 내역을 볼 수 있습니다."
+
+#: src/construction.cpp src/crafting_gui.cpp src/newcharacter.cpp
+#: src/overmap_ui.cpp
+msgid "Search:"
+msgstr "찾기:"
 
 #: src/construction.cpp src/iexamine.cpp
 msgid "It is too dark to construct right now."
@@ -247536,30 +247849,8 @@ msgid "shirt"
 msgstr "티셔츠"
 
 #: src/crafting_gui.cpp
-#, c-format
-msgid "  <color_white>%s</color>%.*s    %s\n"
-msgstr "  <color_white>%s</color>%.*s    %s\n"
-
-#: src/crafting_gui.cpp
 msgid "<color_cyan>name</color> of resulting item"
 msgstr "제작한 물품의 <color_cyan>이름</color>"
-
-#: src/crafting_gui.cpp
-#, c-format
-msgid "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
-msgstr "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
-
-#: src/crafting_gui.cpp
-msgid ""
-"\n"
-"Use <color_red>up/down arrow</color> to go through your search history."
-msgstr ""
-"\n"
-"<color_red>위/아래 방향키</color>를 사용해 검색 내역을 볼 수 있습니다."
-
-#: src/crafting_gui.cpp src/newcharacter.cpp src/overmap_ui.cpp
-msgid "Search:"
-msgstr "찾기:"
 
 #: src/crafting_gui.cpp
 msgid ""
@@ -247598,12 +247889,12 @@ msgstr "관련 제작법:"
 #: src/crafting_gui.cpp
 #, c-format
 msgid "* %s hidden recipe - %s in category *"
-msgstr "* 숨긴 제작법 %s 개 - 카테고리에 제작법 %s 개 *"
+msgstr "* 숨긴 제작법 %s개 - 카테고리 내 제작법 %s개 *"
 
 #: src/crafting_gui.cpp
 #, c-format
 msgid "* %s hidden recipes - %s in category *"
-msgstr "* 숨긴 제작법 %s 개 - 카테고리에 제작법 %s 개 *"
+msgstr "* 숨긴 제작법 %s개 - 카테고리 내 제작법 %s개 *"
 
 #: src/crafting_gui.cpp
 #, c-format
@@ -247626,10 +247917,6 @@ msgstr "제작 느려짐 %d%%"
 #: src/crafting_gui.cpp
 msgid "craftable"
 msgstr "제작가능"
-
-#: src/crafting_gui.cpp
-msgid "Searched"
-msgstr "검색완료"
 
 #: src/crafting_gui.cpp
 msgid "Batch"
@@ -251978,6 +252265,10 @@ msgid "<O> - Toggle Overlays"
 msgstr "<O> - 오버레이 설정"
 
 #: src/game.cpp
+msgid "<G> - Submap grid"
+msgstr "<G> - 서브맵 그리드"
+
+#: src/game.cpp
 msgid "Zones manager"
 msgstr "영역 관리자"
 
@@ -255868,6 +256159,10 @@ msgstr "%s(이)가 산산조각나 포자가 되어 흩날립니다!"
 msgid "Use which seed?"
 msgstr "어떤 씨앗을 사용합니까?"
 
+#: src/iexamine.cpp src/vehicle_part.cpp
+msgid "It is too cold to plant anything now."
+msgstr "너무 추워서 어떤 것도 심을 수 없습니다."
+
 #: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You have no seeds to plant."
 msgstr "심을 수 있는 씨앗이 없습니다."
@@ -255879,6 +256174,10 @@ msgstr "뭔가 있는 것 같습니다."
 #: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You saved your seeds for later."
 msgstr "나중에 쓰기 위해 씨앗을 보관해두었습니다."
+
+#: src/iexamine.cpp
+msgid "It's too cold down here to plant this type of seed underground."
+msgstr "이 씨앗을 지하에 심기에는 너무 춥습니다."
 
 #: src/iexamine.cpp
 msgid "This type of seed can not be planted in this location."
@@ -258583,10 +258882,6 @@ msgstr "무게: "
 #, c-format
 msgid "Owner: %s"
 msgstr "소유주: %s"
-
-#: src/item.cpp
-msgid "Category: "
-msgstr "분류: "
 
 #: src/item.cpp
 msgid "Weapon Category: "
@@ -261540,28 +261835,32 @@ msgid "A nearby splatter of goo forms into a goo pit."
 msgstr "근처 오물 구덩이에서 무언가가 형체를 이룬다."
 
 #: src/iuse.cpp
-msgid "Merged!"
-msgstr "합쳐짐!"
+msgid "\"Merged!\""
+msgstr "\"머지됨!\""
 
 #: src/iuse.cpp
-msgid "BUGFIXES!"
-msgstr "버그픽스!"
+msgid "\"BUGFIXES!\""
+msgstr "\"버그수정!\""
 
 #: src/iuse.cpp
-msgid "BUFFS!"
-msgstr "버프!"
+msgid "\"BUFFS!\""
+msgstr "\"버프!\""
 
 #: src/iuse.cpp
-msgid "NERFS!"
-msgstr "너프!"
+msgid "\"NERFS!\""
+msgstr "\"너프!\""
 
 #: src/iuse.cpp
-msgid "REVERTS!"
-msgstr "롤백!"
+msgid "\"REVERTS!\""
+msgstr "\"롤백!\""
 
 #: src/iuse.cpp
-msgid "BEES!"
-msgstr "벌이야!"
+msgid "\"QUACK!\""
+msgstr "\"꽥!\""
+
+#: src/iuse.cpp
+msgid "\"EEPY!\""
+msgstr "\"얍삐!\""
 
 #: src/iuse.cpp
 msgid "Set the timer to (0 to cancel)?"
@@ -272952,10 +273251,6 @@ msgstr "<color_red>극도로 위험</color>"
 #: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Fatally dangerous!</color>"
 msgstr "<color_red>최고로 위험!</color>"
-
-#: src/monster.cpp
-msgid "Origin: "
-msgstr "출처: "
 
 #: src/monster.cpp
 #, c-format

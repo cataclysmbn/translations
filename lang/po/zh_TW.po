@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-24 19:20+0000\n"
+"POT-Creation-Date: 2026-03-25 02:14+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -4878,7 +4878,7 @@ msgid "Favorite"
 msgstr "收藏"
 
 #: data/json/construction_category.json data/raw/keybindings/keybindings.json
-#: src/construction.cpp src/veh_interact.cpp
+#: src/veh_interact.cpp
 msgid "Filter"
 msgstr "篩選"
 
@@ -5212,7 +5212,7 @@ msgstr "建造簡便床鋪"
 
 #: data/json/construction_group.json
 msgid "Build Windowed Door"
-msgstr ""
+msgstr "建造带窗门"
 
 #: data/json/construction_group.json
 msgid "Build Makeshift Door"
@@ -14001,6 +14001,17 @@ msgstr "建造：藍圖"
 #: data/json/loot_zones.json
 msgid "Designate a blueprint zone for construction."
 msgstr "指定建築藍圖區域。"
+
+#: data/json/loot_zones.json
+msgid "Construction: Ignore"
+msgstr "建造：忽略"
+
+#. ~ Description for Construction: Ignore
+#: data/json/loot_zones.json
+msgid ""
+"NPCs will ignore construction orders inside this zone, useful for leaving "
+"openings such as doorways."
+msgstr "NPC将忽略此区域内的建造命令，这对于预留门道等开口非常有用。"
 
 #: data/json/loot_zones.json
 msgid "Farm: Plot"
@@ -40185,21 +40196,21 @@ msgstr "纱窗门（开）"
 
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid "closed wood windowed door"
-msgstr ""
+msgstr "木带窗门（关）"
 
 #. ~ Description for closed wood windowed door
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid ""
 "A standard wooden door that doesn't look very resilient.  It'd probably burn"
 " easily, too. This one has a window."
-msgstr ""
+msgstr "标准的木门，看起来不太坚固。多半也很易燃。这扇门带有窗户。"
 
 #. ~ Description for open wood door
 #: data/json/furniture_and_terrain/terrain-doors.json
 msgid ""
 "A standard wooden door that doesn't look very resilient.  It'd probably burn"
 " easily, too.  This one is wide open, and has a window."
-msgstr ""
+msgstr "标准的木门，看起来不太坚固。多半也很易燃。这是敞开的，且带有窗户。"
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
 msgid "palisade gate"
@@ -81234,6 +81245,16 @@ msgid "Things go better with cola.  Sugar water with caffeine added."
 msgstr "有可樂喝總是幸福些。內含糖水與咖啡因。"
 
 #: data/json/items/comestibles/drink.json
+msgid "zero cola"
+msgid_plural "zero colas"
+msgstr[0] "零卡可乐"
+
+#. ~ Description for zero cola
+#: data/json/items/comestibles/drink.json
+msgid "Dark cola, now with sugar substitutes. Mmm, lime flavor."
+msgstr "深色可乐，现在使用了代糖。嗯，青柠味。"
+
+#: data/json/items/comestibles/drink.json
 msgid "dark cola soda syrup"
 msgid_plural "dark cola soda syrup"
 msgstr[0] "可乐糖浆"
@@ -116804,7 +116825,7 @@ msgid ""
 "chain-link fences."
 msgstr "这是一种由细钢丝制成的灵活锯，两端有简单的把手。它可以满足轻金属和木材的锯切，或用于切割铁丝网。"
 
-#: data/json/items/tool/workshop.json
+#: data/json/items/tool/workshop.json src/construction.cpp
 msgid "hammer"
 msgid_plural "hammers"
 msgstr[0] "鐵鎚"
@@ -184489,6 +184510,10 @@ msgid "Wasteland Interceptor"
 msgstr "废土战车"
 
 #: data/json/vehicles/custom_vehicles.json
+msgid "Bandit Bulldozer"
+msgstr "強盜推土機"
+
+#: data/json/vehicles/custom_vehicles.json
 msgid "Meth Bike"
 msgstr "安非他命摩托车"
 
@@ -184614,6 +184639,10 @@ msgid "Armored Personnel Carrier"
 msgstr "裝甲運兵車"
 
 #: data/json/vehicles/military.json
+msgid "M2 Bradley Infantry Fighting Vehicle"
+msgstr "M2 布雷德利步兵战车"
+
+#: data/json/vehicles/military.json
 #: data/mods/Aftershock/vehicles/vehicles.json
 msgid "Humvee"
 msgstr "悍馬"
@@ -184638,27 +184667,19 @@ msgstr "蝎式弩炮"
 msgid "Jeep"
 msgstr "吉普车"
 
-#: data/json/vehicles/tanks.json
-msgid "M1 Abrams Main Battle Tank"
-msgstr "M1 艾布拉姆斯主战坦克"
-
-#: data/json/vehicles/tanks.json
-msgid "M109 Self-Propelled Howitzer"
-msgstr "M109 自行榴弹炮"
-
-#: data/json/vehicles/tanks.json
-msgid "M2 Bradley Infantry Fighting Vehicle"
-msgstr "M2 布雷德利步兵战车"
-
-#: data/json/vehicles/tanks.json
-msgid "Bandit Bulldozer"
-msgstr "強盜推土機"
-
-#: data/json/vehicles/tanks.json
+#: data/json/vehicles/military.json
 msgid "M60 Patton Main Battle Tank"
 msgstr "M60 巴顿主战坦克"
 
-#: data/json/vehicles/tanks.json
+#: data/json/vehicles/military.json
+msgid "M1 Abrams Main Battle Tank"
+msgstr "M1 艾布拉姆斯主战坦克"
+
+#: data/json/vehicles/military.json
+msgid "M109 Self-Propelled Howitzer"
+msgstr "M109 自行榴弹炮"
+
+#: data/json/vehicles/military.json
 msgid "XM7 Electric Mini-Tank"
 msgstr "XM7 电动微型坦克"
 
@@ -195080,28 +195101,28 @@ msgid ""
 msgstr "来自马库斯工业的畅销饼干！现在有了让人上瘾的口味，比如马洛斯风味、致幻菇，还有人类文明不可避免的、被逐渐侵蚀的灭亡。"
 
 #: data/mods/CrazyCataclysm/crazy_items.json
-msgid "debug grenade"
-msgid_plural "debug grenades"
-msgstr[0] "调试手雷"
+msgid "chaos canister"
+msgid_plural "chaos canisters"
+msgstr[0] "混沌罐"
 
-#. ~ Description for {'str': 'debug grenade'}
+#. ~ Description for {'str': 'chaos canister'}
 #: data/mods/CrazyCataclysm/crazy_items.json
 msgid ""
-"Attached to this grenade is a tag with 'debug' written on it.  Does not seem"
-" to work like a grenade, handle with care."
-msgstr "这枚手雷上挂着一个写有\"调试\"字样的标签。它的运作方式似乎跟普通手雷不太一样，请小心处置。"
+"A suspiciously uncanny-looking cylinder that hums like a compiler about to "
+"throw warnings. Handle with care."
+msgstr "一个看起来怪异得可疑的圆柱体，发出的嗡嗡声就像一个即将抛出警告的编译器。请小心轻放。"
 
 #: data/mods/CrazyCataclysm/crazy_items.json
-msgid "active debug grenade"
-msgid_plural "active debug grenades"
-msgstr[0] "激活的调试手雷"
+msgid "active chaos canister"
+msgid_plural "active chaos canisters"
+msgstr[0] "混沌罐（无保险）"
 
-#. ~ Description for {'str': 'active debug grenade'}
+#. ~ Description for {'str': 'active chaos canister'}
 #: data/mods/CrazyCataclysm/crazy_items.json
 msgid ""
-"Attached to this grenade is a tag with 'debug' written on it.  Does not seem"
-" to work like a grenade, handle with care.  Better throw it!"
-msgstr "这枚手雷上挂着一个写有\"调试\"字样的标签。它的运作方式似乎跟普通手雷不太一样，请小心处置。最好赶紧把它扔出去！"
+"A suspiciously uncanny-looking cylinder that hums like a compiler about to "
+"throw warnings. Handle with care. Better throw it!"
+msgstr "一个看起来怪异得可疑的圆柱体，发出的嗡嗡声就像一个即将抛出警告的编译器。小心轻放。最好把它扔出去！"
 
 #: data/mods/CrazyCataclysm/crazy_items.json
 msgid "Ionic Overload Generator CBM"
@@ -220572,7 +220593,7 @@ msgstr "頹傾小屋 - 牆角"
 msgid "ruined cabin - dirt plaza"
 msgstr "頹傾小屋 - 泥土廣場"
 
-#: data/mods/bn/modinfo.json
+#: data/mods/bn/modinfo.json src/construction.cpp
 msgid "Bright Nights"
 msgstr "明亮之夜"
 
@@ -225929,7 +225950,7 @@ msgstr "切换自定义航点"
 msgid "Rotate"
 msgstr "旋轉"
 
-#: data/raw/keybindings/keybindings.json src/construction.cpp
+#: data/raw/keybindings/keybindings.json
 msgid "Search"
 msgstr "搜尋"
 
@@ -228976,6 +228997,67 @@ msgstr "一些物品滾落到 %s。"
 msgid "The pet has moved somewhere else."
 msgstr "寵物移動到別處了。"
 
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: the vehicle is moving or under control."
+msgstr "车辆工作受阻：车辆正在移动或被控制中。"
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: someone is already working here."
+msgstr "车辆工作受阻：已经有人在这里工作。"
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Vehicle deconstruction blocked: requires %s."
+msgstr "车辆拆解受阻：需要 %s。"
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle deconstruction blocked: insufficient skill for this task."
+msgstr "车辆拆解受阻：执行此任务的技能不足。"
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Vehicle deconstruction blocked: need lifting level %d here."
+msgstr "车辆拆解受阻：此处需要 %d 级起重能力。"
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid ""
+"Vehicle deconstruction missing requirements:\n"
+"%s"
+msgstr ""
+"车辆拆解缺少所需条件：\n"
+"%s"
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle deconstruction missing requirements nearby."
+msgstr "附近缺少车辆拆解所需条件。"
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Vehicle repair blocked: requires %s."
+msgstr "车辆修理受阻：需要 %s。"
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle repair blocked: insufficient skill for this task."
+msgstr "车辆修理受阻：执行此任务的技能不足。"
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid ""
+"Vehicle repair missing requirements:\n"
+"%s"
+msgstr ""
+"车辆修理缺少所需条件：\n"
+"%s"
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle repair missing requirements nearby."
+msgstr "附近缺少车辆修理所需条件。"
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: no suitable part to work on here."
+msgstr "车辆工作受阻：此处没有适合操作的部件。"
+
 #: src/activity_item_handling.cpp src/npcmove.cpp
 #, c-format
 msgid "%1$s picks up a %2$s."
@@ -229001,32 +229083,102 @@ msgid "%s sorted out every item possible."
 msgstr "%s 整理了所有適合的物品。"
 
 #: src/activity_item_handling.cpp
+msgid ""
+"Construction tasks skipped: all targets are inside a Construction: Ignore "
+"zone.  Remove that zone or move the blueprint."
+msgstr "建造任务已跳过：所有目标均在“建造：忽略”区域内。请移除该区域或移动蓝图。"
+
+#: src/activity_item_handling.cpp
+msgid ""
+"<npcname> reports every construction target is inside a Construction: Ignore"
+" zone.  Remove that zone or move the blueprint."
+msgstr "<npcname>报告所有建造目标均在“建造：忽略”区域内。请移除该区域或移动蓝图。"
+
+#: src/activity_item_handling.cpp
 msgid "It is too dark to do this activity."
 msgstr "太暗了，無法進行這項活動。"
 
 #: src/activity_item_handling.cpp
-msgid "You don't have the skill for this task."
-msgstr "你沒有執行此任務的技能。"
+msgid ""
+"No construction sites are available.  Add a Construction: Blueprint zone or "
+"start a construction to give the order."
+msgstr "没有可用的建造点。请添加一个“建造：蓝图”区域或开始一项建造任务以下达命令。"
 
 #: src/activity_item_handling.cpp
-msgid "There is something blocking the location for this task."
-msgstr "此任務的位置被東西擋住了。"
+msgid ""
+"<npcname> reports no construction sites are available.  Add a Construction: "
+"Blueprint zone or start a construction to give the order."
+msgstr "<npcname>报告没有可用的建造点。请添加一个“建造：蓝图”区域或开始一项建造任务以下达命令。"
 
-#: src/activity_item_handling.cpp src/iexamine.cpp src/vehicle_part.cpp
-msgid "It is too cold to plant anything now."
-msgstr "氣候太冷無法種植。"
+#: src/activity_item_handling.cpp
+msgid ""
+"No valid construction site here.  Check your blueprint zones and ignored "
+"areas."
+msgstr "此处没有有效的建造点。请检查你的蓝图区域和忽略区域。"
 
-#: src/activity_item_handling.cpp src/iexamine.cpp
-msgid "It's too cold down here to plant this type of seed underground."
-msgstr "这里太冷了，不适合在地底种植这种种子。"
+#: src/activity_item_handling.cpp
+msgid "Vehicle work ended: no valid target zone here."
+msgstr "车辆工作结束：此处没有有效的目标区域。"
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: insufficient skill for the selected build."
+msgstr "建造受阻：选定建造任务的技能不足。"
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Construction blocked: requires %s."
+msgstr "建造受阻：需要 %s。"
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: insufficient skill for this task."
+msgstr "车辆工作受阻：执行此任务的技能不足。"
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: something is occupying the build site."
+msgstr "建造受阻：有东西占据了建造点。"
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: something is occupying the work site."
+msgstr "车辆工作受阻：有东西占据了工作点。"
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: conditions are too cold for this step."
+msgstr "建造受阻：环境太冷，无法进行此步骤。"
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: this step must be above ground."
+msgstr "建造受阻：此步骤必须在地面上进行。"
+
+#: src/activity_item_handling.cpp
+msgid "Construction skipped: required components or tools are missing nearby."
+msgstr "建造已跳过：附近缺少所需的组件或工具。"
 
 #: src/activity_item_handling.cpp
 msgid "The required items are not available to complete this task."
 msgstr "完成任務所需的物品目前無法取用。"
 
 #: src/activity_item_handling.cpp
+msgid "Vehicle work skipped: required components or tools are missing nearby."
+msgstr "车辆工作已跳过：附近缺少所需的组件或工具。"
+
+#: src/activity_item_handling.cpp
+msgid ""
+"Construction task ended with no progress.  Path to the site is blocked."
+msgstr "建造任务结束，毫无进展。前往该地点的路径被阻挡。"
+
+#: src/activity_item_handling.cpp
 msgid "It is too dark to work here."
 msgstr "光线不足，你无法工作！"
+
+#: src/activity_item_handling.cpp
+msgid "Construction task ended with no progress.  It was too dark to work."
+msgstr "建造任务结束，毫无进展。环境太暗，无法工作。"
+
+#: src/activity_item_handling.cpp
+msgid ""
+"Construction task ended with no progress.  Check zones and required "
+"components."
+msgstr "建造任务结束，毫无进展。请检查区域和所需组件。"
 
 #: src/activity_type.cpp
 #, c-format
@@ -229655,6 +229807,11 @@ msgstr "無效的容器"
 #: src/animation.cpp
 msgid "Hang on a bit…"
 msgstr "請稍候…"
+
+#: src/animation.cpp src/cata_tiles.cpp
+#, c-format
+msgid "(%dx%d)"
+msgstr "(%dx%d)"
 
 #: src/armor_layers.cpp
 msgid "in your <color_light_blue>personal aura</color>"
@@ -235791,6 +235948,26 @@ msgstr "你的声纳足在 %2$s 方向发现了一个 %1$s！"
 msgid "You've spotted a %1$s to the %2$s!"
 msgstr "你發現 %1$s 在你的 %2$s!"
 
+#: src/clzones.cpp
+msgid "Filled rectangle"
+msgstr "填充矩形"
+
+#: src/clzones.cpp
+msgid "Rectangle border"
+msgstr "矩形边框"
+
+#: src/clzones.cpp
+msgid "Filled circle"
+msgstr "填充圆形"
+
+#: src/clzones.cpp
+msgid "Circle border"
+msgstr "圆形边框"
+
+#: src/clzones.cpp
+msgid "Select placement layout"
+msgstr "选择布置方式"
+
 #: src/clzones.cpp src/game.cpp
 msgid "Filter:"
 msgstr "篩選:"
@@ -235817,6 +235994,18 @@ msgid "No filter"
 msgstr "無篩選"
 
 #: src/clzones.cpp
+msgid "Edit blueprint options"
+msgstr "编辑蓝图选项"
+
+#: src/clzones.cpp
+msgid "Change construction"
+msgstr "更改建造项目"
+
+#: src/clzones.cpp
+msgid "Change placement layout"
+msgstr "更改布置方式"
+
+#: src/clzones.cpp
 msgid "No construction"
 msgstr "沒有建造"
 
@@ -235827,6 +236016,10 @@ msgstr "建造："
 #: src/clzones.cpp
 msgid "No Construction"
 msgstr "沒有建造"
+
+#: src/clzones.cpp
+msgid "Layout: "
+msgstr "布局："
 
 #: src/clzones.cpp
 msgid "Plant seed: "
@@ -236606,8 +236799,38 @@ msgstr "移到上個分頁"
 
 #: src/construction.cpp
 #, c-format
+msgid "* No hidden recipe - %d in category *"
+msgstr "* 没有隐藏配方 - 类别中有 %d 个 *"
+
+#: src/construction.cpp src/monster.cpp
+msgid "Origin: "
+msgstr "来源："
+
+#: src/construction.cpp src/item.cpp
+msgid "Category: "
+msgstr "分類: "
+
+#: src/construction.cpp
+#, c-format
+msgid "* %d results in category *"
+msgstr "* 类别中有 %d 个结果 *"
+
+#: src/construction.cpp
+#, c-format
 msgid "Stage/Variant #%d: "
 msgstr "步骤/方法 #%d："
+
+#: src/construction.cpp
+msgid "Move cost:"
+msgstr "移动消耗："
+
+#: src/construction.cpp
+msgid "Bash str:"
+msgstr "砸击强度："
+
+#: src/construction.cpp
+msgid "Indestructible"
+msgstr "坚不可摧"
 
 #: src/construction.cpp
 msgid "Result: "
@@ -236666,6 +236889,15 @@ msgstr "速度修正："
 msgid "Terrain needs: "
 msgstr "地形需求："
 
+#: src/construction.cpp src/crafting_gui.cpp
+msgid "Searched"
+msgstr "搜尋結果"
+
+#: src/construction.cpp
+#, c-format
+msgid "Construction speed %d%%"
+msgstr "建造速度 %d%%"
+
 #: src/construction.cpp
 #, c-format
 msgid "Press %s to show previous stage(s)."
@@ -236715,6 +236947,87 @@ msgstr "按 [<color_yellow>%s</color>]添加至收藏。"
 #, c-format
 msgid "Press [<color_yellow>%s</color>] to view and edit keybindings."
 msgstr "按 [<color_yellow>%s</color>] 查看并编辑按键绑定设置。"
+
+#: src/construction.cpp
+msgid "<color_cyan>description</color> contains text"
+msgstr "<color_cyan>描述</color>包含文本"
+
+#: src/construction.cpp
+msgid "wall"
+msgstr "牆"
+
+#: src/construction.cpp
+msgid "2x4"
+msgstr "2x4"
+
+#: src/construction.cpp
+msgid "<color_cyan>component</color> required"
+msgstr "需要<color_cyan>组件</color>"
+
+#: src/construction.cpp
+msgid "<color_cyan>tool</color> required"
+msgstr "需要<color_cyan>工具</color>"
+
+#: src/construction.cpp
+msgid "<color_cyan>quality</color> required"
+msgstr "需要<color_cyan>品质</color>"
+
+#: src/construction.cpp
+msgid "WRENCH"
+msgstr "扳手"
+
+#: src/construction.cpp
+msgid "<color_cyan>primary skill</color> required"
+msgstr "需要<color_cyan>主要技能</color>"
+
+#: src/construction.cpp
+msgid "fabrication"
+msgstr "製作"
+
+#: src/construction.cpp
+msgid "<color_cyan>any skill</color> required"
+msgstr "需要<color_cyan>任意技能</color>"
+
+#: src/construction.cpp
+msgid "mechanics"
+msgstr "機械"
+
+#: src/construction.cpp
+msgid ""
+"The default is to search construction names.  Single-character prefixes with a colon <color_red>:</color> search other fields.  Additional filters are separated by commas <color_red>,</color>.\n"
+"\n"
+"<color_white>Examples:</color>\n"
+msgstr ""
+"默认为搜索建造名称。带有冒号 <color_red>:</color> 的单字符前缀可搜索其他字段。附加过滤器用逗号 <color_red>,</color> 分隔。\n"
+"\n"
+"<color_white>示例：</color>\n"
+
+#: src/construction.cpp src/crafting_gui.cpp
+#, c-format
+msgid "  <color_white>%s</color>%.*s    %s\n"
+msgstr "  <color_white>%s</color>%.*s    %s\n"
+
+#: src/construction.cpp
+msgid "<color_cyan>name</color> of construction"
+msgstr "建造的<color_cyan>名称</color>"
+
+#: src/construction.cpp src/crafting_gui.cpp
+#, c-format
+msgid "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
+msgstr "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
+
+#: src/construction.cpp src/crafting_gui.cpp
+msgid ""
+"\n"
+"Use <color_red>up/down arrow</color> to go through your search history."
+msgstr ""
+"\n"
+"使用 <color_red>上/下按键</color> 查看历史记录。"
+
+#: src/construction.cpp src/crafting_gui.cpp src/newcharacter.cpp
+#: src/overmap_ui.cpp
+msgid "Search:"
+msgstr "搜尋: "
 
 #: src/construction.cpp src/iexamine.cpp
 msgid "It is too dark to construct right now."
@@ -237905,30 +238218,8 @@ msgid "shirt"
 msgstr "上衣"
 
 #: src/crafting_gui.cpp
-#, c-format
-msgid "  <color_white>%s</color>%.*s    %s\n"
-msgstr "  <color_white>%s</color>%.*s    %s\n"
-
-#: src/crafting_gui.cpp
 msgid "<color_cyan>name</color> of resulting item"
 msgstr "配方製品的<color_cyan>名稱</color>"
-
-#: src/crafting_gui.cpp
-#, c-format
-msgid "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
-msgstr "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
-
-#: src/crafting_gui.cpp
-msgid ""
-"\n"
-"Use <color_red>up/down arrow</color> to go through your search history."
-msgstr ""
-"\n"
-"使用 <color_red>上/下按键</color> 查看历史记录。"
-
-#: src/crafting_gui.cpp src/newcharacter.cpp src/overmap_ui.cpp
-msgid "Search:"
-msgstr "搜尋: "
 
 #: src/crafting_gui.cpp
 msgid ""
@@ -237989,10 +238280,6 @@ msgstr "制造速度慢：%d%%"
 #: src/crafting_gui.cpp
 msgid "craftable"
 msgstr "可制造"
-
-#: src/crafting_gui.cpp
-msgid "Searched"
-msgstr "搜尋結果"
 
 #: src/crafting_gui.cpp
 msgid "Batch"
@@ -242335,6 +242622,10 @@ msgid "<O> - Toggle Overlays"
 msgstr "<O> - 切换覆盖层"
 
 #: src/game.cpp
+msgid "<G> - Submap grid"
+msgstr "<G> - 子地图网格"
+
+#: src/game.cpp
 msgid "Zones manager"
 msgstr "區域管理器"
 
@@ -246209,6 +246500,10 @@ msgstr "%s 分裂成了孢子!"
 msgid "Use which seed?"
 msgstr "要使用哪個種子?"
 
+#: src/iexamine.cpp src/vehicle_part.cpp
+msgid "It is too cold to plant anything now."
+msgstr "氣候太冷無法種植。"
+
 #: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You have no seeds to plant."
 msgstr "你沒有可以種植的種子。"
@@ -246220,6 +246515,10 @@ msgstr "有東西潛伏在那…"
 #: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You saved your seeds for later."
 msgstr "你把你的種子保留了。"
+
+#: src/iexamine.cpp
+msgid "It's too cold down here to plant this type of seed underground."
+msgstr "这里太冷了，不适合在地底种植这种种子。"
 
 #: src/iexamine.cpp
 msgid "This type of seed can not be planted in this location."
@@ -248919,10 +249218,6 @@ msgstr "重量: "
 #, c-format
 msgid "Owner: %s"
 msgstr "占有者：%s"
-
-#: src/item.cpp
-msgid "Category: "
-msgstr "分類: "
 
 #: src/item.cpp
 msgid "Weapon Category: "
@@ -251847,28 +252142,32 @@ msgid "A nearby splatter of goo forms into a goo pit."
 msgstr "一個附近的黏液灘變成了黏液坑。"
 
 #: src/iuse.cpp
-msgid "Merged!"
-msgstr "程序合併!"
+msgid "\"Merged!\""
+msgstr "\"已合并！\""
 
 #: src/iuse.cpp
-msgid "BUGFIXES!"
-msgstr "臭蟲已修正！"
+msgid "\"BUGFIXES!\""
+msgstr "\"漏洞修复！\""
 
 #: src/iuse.cpp
-msgid "BUFFS!"
-msgstr "加強！！"
+msgid "\"BUFFS!\""
+msgstr "\"增强！\""
 
 #: src/iuse.cpp
-msgid "NERFS!"
-msgstr "削弱！！"
+msgid "\"NERFS!\""
+msgstr "\"削弱！\""
 
 #: src/iuse.cpp
-msgid "REVERTS!"
-msgstr "恢復！！"
+msgid "\"REVERTS!\""
+msgstr "\"还原！\""
 
 #: src/iuse.cpp
-msgid "BEES!"
-msgstr "蜜蜂！！"
+msgid "\"QUACK!\""
+msgstr "\"嘎！\""
+
+#: src/iuse.cpp
+msgid "\"EEPY!\""
+msgstr "\"困困！\""
 
 #: src/iuse.cpp
 msgid "Set the timer to (0 to cancel)?"
@@ -263241,10 +263540,6 @@ msgstr "<color_red>極度危險的。</color>"
 #: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Fatally dangerous!</color>"
 msgstr "<color_red>致命的危險！</color>"
-
-#: src/monster.cpp
-msgid "Origin: "
-msgstr "来源："
 
 #: src/monster.cpp
 #, c-format

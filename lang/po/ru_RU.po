@@ -28,14 +28,14 @@
 # toy goy “phil1999ru” loc, 2025
 # Vadim, 2026
 # Vorpal Void <vorpal.void@gmail.com>, 2026
-# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # Ekaterina Aleksashkina <donjonn@yandex.ru>, 2026
+# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-24 19:20+0000\n"
-"Last-Translator: Ekaterina Aleksashkina <donjonn@yandex.ru>, 2026\n"
+"POT-Creation-Date: 2026-03-25 02:14+0000\n"
+"Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -6032,7 +6032,7 @@ msgid "Favorite"
 msgstr "Добавить в избранное"
 
 #: data/json/construction_category.json data/raw/keybindings/keybindings.json
-#: src/construction.cpp src/veh_interact.cpp
+#: src/veh_interact.cpp
 msgid "Filter"
 msgstr "Фильтр"
 
@@ -15652,6 +15652,17 @@ msgstr "Строительство: проект"
 #: data/json/loot_zones.json
 msgid "Designate a blueprint zone for construction."
 msgstr "Назначить проектную зону для строительства."
+
+#: data/json/loot_zones.json
+msgid "Construction: Ignore"
+msgstr ""
+
+#. ~ Description for Construction: Ignore
+#: data/json/loot_zones.json
+msgid ""
+"NPCs will ignore construction orders inside this zone, useful for leaving "
+"openings such as doorways."
+msgstr ""
 
 #: data/json/loot_zones.json
 msgid "Farm: Plot"
@@ -100105,6 +100116,19 @@ msgid "Things go better with cola.  Sugar water with caffeine added."
 msgstr "С колой дела идут лучше. Сладкая вода с кофеином."
 
 #: data/json/items/comestibles/drink.json
+msgid "zero cola"
+msgid_plural "zero colas"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for zero cola
+#: data/json/items/comestibles/drink.json
+msgid "Dark cola, now with sugar substitutes. Mmm, lime flavor."
+msgstr ""
+
+#: data/json/items/comestibles/drink.json
 msgid "dark cola soda syrup"
 msgid_plural "dark cola soda syrup"
 msgstr[0] "концентрат колы"
@@ -148818,7 +148842,7 @@ msgstr ""
 "хватит для резки тонкого металла и дерева, а также для резки ограждений из "
 "цепей."
 
-#: data/json/items/tool/workshop.json
+#: data/json/items/tool/workshop.json src/construction.cpp
 msgid "hammer"
 msgid_plural "hammers"
 msgstr[0] "молоток"
@@ -230329,6 +230353,10 @@ msgid "Wasteland Interceptor"
 msgstr "перехватчик пустошей"
 
 #: data/json/vehicles/custom_vehicles.json
+msgid "Bandit Bulldozer"
+msgstr "бульдозер бандитов"
+
+#: data/json/vehicles/custom_vehicles.json
 msgid "Meth Bike"
 msgstr "мет-байк"
 
@@ -230454,6 +230482,10 @@ msgid "Armored Personnel Carrier"
 msgstr "БТР"
 
 #: data/json/vehicles/military.json
+msgid "M2 Bradley Infantry Fighting Vehicle"
+msgstr ""
+
+#: data/json/vehicles/military.json
 #: data/mods/Aftershock/vehicles/vehicles.json
 msgid "Humvee"
 msgstr "армейский вездеход"
@@ -230478,27 +230510,19 @@ msgstr "баллиста «Скорпион»"
 msgid "Jeep"
 msgstr "джип"
 
-#: data/json/vehicles/tanks.json
-msgid "M1 Abrams Main Battle Tank"
-msgstr ""
-
-#: data/json/vehicles/tanks.json
-msgid "M109 Self-Propelled Howitzer"
-msgstr ""
-
-#: data/json/vehicles/tanks.json
-msgid "M2 Bradley Infantry Fighting Vehicle"
-msgstr ""
-
-#: data/json/vehicles/tanks.json
-msgid "Bandit Bulldozer"
-msgstr "бульдозер бандитов"
-
-#: data/json/vehicles/tanks.json
+#: data/json/vehicles/military.json
 msgid "M60 Patton Main Battle Tank"
 msgstr ""
 
-#: data/json/vehicles/tanks.json
+#: data/json/vehicles/military.json
+msgid "M1 Abrams Main Battle Tank"
+msgstr ""
+
+#: data/json/vehicles/military.json
+msgid "M109 Self-Propelled Howitzer"
+msgstr ""
+
+#: data/json/vehicles/military.json
 msgid "XM7 Electric Mini-Tank"
 msgstr ""
 
@@ -243519,39 +243543,34 @@ msgstr ""
 "Марло, Лисичек и Неизбежного Конца Человеческой Цивилизации."
 
 #: data/mods/CrazyCataclysm/crazy_items.json
-msgid "debug grenade"
-msgid_plural "debug grenades"
-msgstr[0] "отладочная граната"
-msgstr[1] "отладочных гранаты"
-msgstr[2] "отладочных гранат"
-msgstr[3] "отладочные гранаты"
+msgid "chaos canister"
+msgid_plural "chaos canisters"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
-#. ~ Description for {'str': 'debug grenade'}
+#. ~ Description for {'str': 'chaos canister'}
 #: data/mods/CrazyCataclysm/crazy_items.json
 msgid ""
-"Attached to this grenade is a tag with 'debug' written on it.  Does not seem"
-" to work like a grenade, handle with care."
+"A suspiciously uncanny-looking cylinder that hums like a compiler about to "
+"throw warnings. Handle with care."
 msgstr ""
-"К этой гранате прицеплена бирка с надписью «отладка». Не похоже, что эта "
-"штука работает, как граната, соблюдайте осторожность."
 
 #: data/mods/CrazyCataclysm/crazy_items.json
-msgid "active debug grenade"
-msgid_plural "active debug grenades"
-msgstr[0] "отладочная граната (активно)"
-msgstr[1] "отладочных гранаты (активно)"
-msgstr[2] "отладочных гранат (активно)"
-msgstr[3] "отладочные гранаты (активно)"
+msgid "active chaos canister"
+msgid_plural "active chaos canisters"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
-#. ~ Description for {'str': 'active debug grenade'}
+#. ~ Description for {'str': 'active chaos canister'}
 #: data/mods/CrazyCataclysm/crazy_items.json
 msgid ""
-"Attached to this grenade is a tag with 'debug' written on it.  Does not seem"
-" to work like a grenade, handle with care.  Better throw it!"
+"A suspiciously uncanny-looking cylinder that hums like a compiler about to "
+"throw warnings. Handle with care. Better throw it!"
 msgstr ""
-"К этой гранате прицеплена бирка с надписью «отладка». Не похоже, что эта "
-"штука работает, как граната, соблюдайте осторожность. Лучше её поскорее "
-"бросить!"
 
 #: data/mods/CrazyCataclysm/crazy_items.json
 msgid "Ionic Overload Generator CBM"
@@ -275592,7 +275611,7 @@ msgstr "разрушенная хижина-стоянка"
 msgid "ruined cabin - dirt plaza"
 msgstr "разрушенная хижина с грязной площадью"
 
-#: data/mods/bn/modinfo.json
+#: data/mods/bn/modinfo.json src/construction.cpp
 msgid "Bright Nights"
 msgstr "Bright Nights"
 
@@ -282154,7 +282173,7 @@ msgstr "Вкл/выкл польз. метку"
 msgid "Rotate"
 msgstr "Поворот"
 
-#: data/raw/keybindings/keybindings.json src/construction.cpp
+#: data/raw/keybindings/keybindings.json
 msgid "Search"
 msgstr "Поиск"
 
@@ -285354,6 +285373,63 @@ msgstr "Некоторые предметы упали сюда: %s."
 msgid "The pet has moved somewhere else."
 msgstr "Питомец ушёл куда-то в другое место."
 
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: the vehicle is moving or under control."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: someone is already working here."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Vehicle deconstruction blocked: requires %s."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle deconstruction blocked: insufficient skill for this task."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Vehicle deconstruction blocked: need lifting level %d here."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid ""
+"Vehicle deconstruction missing requirements:\n"
+"%s"
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle deconstruction missing requirements nearby."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Vehicle repair blocked: requires %s."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle repair blocked: insufficient skill for this task."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid ""
+"Vehicle repair missing requirements:\n"
+"%s"
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle repair missing requirements nearby."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: no suitable part to work on here."
+msgstr ""
+
 #: src/activity_item_handling.cpp src/npcmove.cpp
 #, c-format
 msgid "%1$s picks up a %2$s."
@@ -285381,32 +285457,102 @@ msgid "%s sorted out every item possible."
 msgstr "%s рассортировал все доступные предметы."
 
 #: src/activity_item_handling.cpp
+msgid ""
+"Construction tasks skipped: all targets are inside a Construction: Ignore "
+"zone.  Remove that zone or move the blueprint."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid ""
+"<npcname> reports every construction target is inside a Construction: Ignore"
+" zone.  Remove that zone or move the blueprint."
+msgstr ""
+
+#: src/activity_item_handling.cpp
 msgid "It is too dark to do this activity."
 msgstr "Для этого слишком темно."
 
 #: src/activity_item_handling.cpp
-msgid "You don't have the skill for this task."
-msgstr "Вам не хватает навыков для этой работы."
+msgid ""
+"No construction sites are available.  Add a Construction: Blueprint zone or "
+"start a construction to give the order."
+msgstr ""
 
 #: src/activity_item_handling.cpp
-msgid "There is something blocking the location for this task."
-msgstr "В области этой задачи что-то мешается."
+msgid ""
+"<npcname> reports no construction sites are available.  Add a Construction: "
+"Blueprint zone or start a construction to give the order."
+msgstr ""
 
-#: src/activity_item_handling.cpp src/iexamine.cpp src/vehicle_part.cpp
-msgid "It is too cold to plant anything now."
-msgstr "Слишком холодно, чтобы что-то сажать."
+#: src/activity_item_handling.cpp
+msgid ""
+"No valid construction site here.  Check your blueprint zones and ignored "
+"areas."
+msgstr ""
 
-#: src/activity_item_handling.cpp src/iexamine.cpp
-msgid "It's too cold down here to plant this type of seed underground."
-msgstr "Здесь слишком холодно, чтобы сажать этот вид семян."
+#: src/activity_item_handling.cpp
+msgid "Vehicle work ended: no valid target zone here."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: insufficient skill for the selected build."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Construction blocked: requires %s."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: insufficient skill for this task."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: something is occupying the build site."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Vehicle work blocked: something is occupying the work site."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: conditions are too cold for this step."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Construction blocked: this step must be above ground."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "Construction skipped: required components or tools are missing nearby."
+msgstr ""
 
 #: src/activity_item_handling.cpp
 msgid "The required items are not available to complete this task."
 msgstr "Для завершения задачи не хватает требуемых предметов."
 
 #: src/activity_item_handling.cpp
+msgid "Vehicle work skipped: required components or tools are missing nearby."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid ""
+"Construction task ended with no progress.  Path to the site is blocked."
+msgstr ""
+
+#: src/activity_item_handling.cpp
 msgid "It is too dark to work here."
 msgstr "Здесь слишком темно, чтобы работать."
+
+#: src/activity_item_handling.cpp
+msgid "Construction task ended with no progress.  It was too dark to work."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid ""
+"Construction task ended with no progress.  Check zones and required "
+"components."
+msgstr ""
 
 #: src/activity_type.cpp
 #, c-format
@@ -286038,6 +286184,11 @@ msgstr "Неверный контейнер"
 #: src/animation.cpp
 msgid "Hang on a bit…"
 msgstr "Подождите немного…"
+
+#: src/animation.cpp src/cata_tiles.cpp
+#, c-format
+msgid "(%dx%d)"
+msgstr ""
 
 #: src/armor_layers.cpp
 msgid "in your <color_light_blue>personal aura</color>"
@@ -292427,6 +292578,26 @@ msgstr "Ваш сонар заметил %1$s к %2$sу от вас!"
 msgid "You've spotted a %1$s to the %2$s!"
 msgstr "Вы заметили %1$s к %2$sу от вас!"
 
+#: src/clzones.cpp
+msgid "Filled rectangle"
+msgstr ""
+
+#: src/clzones.cpp
+msgid "Rectangle border"
+msgstr ""
+
+#: src/clzones.cpp
+msgid "Filled circle"
+msgstr ""
+
+#: src/clzones.cpp
+msgid "Circle border"
+msgstr ""
+
+#: src/clzones.cpp
+msgid "Select placement layout"
+msgstr ""
+
 #: src/clzones.cpp src/game.cpp
 msgid "Filter:"
 msgstr "Фильтр:"
@@ -292453,6 +292624,18 @@ msgid "No filter"
 msgstr "Без Фильтра"
 
 #: src/clzones.cpp
+msgid "Edit blueprint options"
+msgstr ""
+
+#: src/clzones.cpp
+msgid "Change construction"
+msgstr ""
+
+#: src/clzones.cpp
+msgid "Change placement layout"
+msgstr ""
+
+#: src/clzones.cpp
 msgid "No construction"
 msgstr "Нет построек"
 
@@ -292463,6 +292646,10 @@ msgstr "Строить: "
 #: src/clzones.cpp
 msgid "No Construction"
 msgstr "Нет строительства"
+
+#: src/clzones.cpp
+msgid "Layout: "
+msgstr ""
 
 #: src/clzones.cpp
 msgid "Plant seed: "
@@ -293264,8 +293451,38 @@ msgstr "Сдвинуть вкладку влево"
 
 #: src/construction.cpp
 #, c-format
+msgid "* No hidden recipe - %d in category *"
+msgstr ""
+
+#: src/construction.cpp src/monster.cpp
+msgid "Origin: "
+msgstr "Источник: "
+
+#: src/construction.cpp src/item.cpp
+msgid "Category: "
+msgstr "Категория: "
+
+#: src/construction.cpp
+#, c-format
+msgid "* %d results in category *"
+msgstr ""
+
+#: src/construction.cpp
+#, c-format
 msgid "Stage/Variant #%d: "
 msgstr "Этап/вариант #%d: "
+
+#: src/construction.cpp
+msgid "Move cost:"
+msgstr ""
+
+#: src/construction.cpp
+msgid "Bash str:"
+msgstr ""
+
+#: src/construction.cpp
+msgid "Indestructible"
+msgstr ""
 
 #: src/construction.cpp
 msgid "Result: "
@@ -293324,6 +293541,15 @@ msgstr "Модификаторы скорости:"
 msgid "Terrain needs: "
 msgstr "Требования к поверхности:"
 
+#: src/construction.cpp src/crafting_gui.cpp
+msgid "Searched"
+msgstr "Найдено"
+
+#: src/construction.cpp
+#, c-format
+msgid "Construction speed %d%%"
+msgstr ""
+
 #: src/construction.cpp
 #, c-format
 msgid "Press %s to show previous stage(s)."
@@ -293375,6 +293601,84 @@ msgstr "Нажмите [<color_yellow>%s</color>] чтобы добавить в
 #, c-format
 msgid "Press [<color_yellow>%s</color>] to view and edit keybindings."
 msgstr "Нажмите [<color_yellow>%s</color>] для просмотра и настройки клавиш."
+
+#: src/construction.cpp
+msgid "<color_cyan>description</color> contains text"
+msgstr ""
+
+#: src/construction.cpp
+msgid "wall"
+msgstr "стена"
+
+#: src/construction.cpp
+msgid "2x4"
+msgstr ""
+
+#: src/construction.cpp
+msgid "<color_cyan>component</color> required"
+msgstr ""
+
+#: src/construction.cpp
+msgid "<color_cyan>tool</color> required"
+msgstr ""
+
+#: src/construction.cpp
+msgid "<color_cyan>quality</color> required"
+msgstr ""
+
+#: src/construction.cpp
+msgid "WRENCH"
+msgstr ""
+
+#: src/construction.cpp
+msgid "<color_cyan>primary skill</color> required"
+msgstr ""
+
+#: src/construction.cpp
+msgid "fabrication"
+msgstr "производство"
+
+#: src/construction.cpp
+msgid "<color_cyan>any skill</color> required"
+msgstr ""
+
+#: src/construction.cpp
+msgid "mechanics"
+msgstr "механика"
+
+#: src/construction.cpp
+msgid ""
+"The default is to search construction names.  Single-character prefixes with a colon <color_red>:</color> search other fields.  Additional filters are separated by commas <color_red>,</color>.\n"
+"\n"
+"<color_white>Examples:</color>\n"
+msgstr ""
+
+#: src/construction.cpp src/crafting_gui.cpp
+#, c-format
+msgid "  <color_white>%s</color>%.*s    %s\n"
+msgstr "  <color_white>%s</color>%.*s    %s\n"
+
+#: src/construction.cpp
+msgid "<color_cyan>name</color> of construction"
+msgstr ""
+
+#: src/construction.cpp src/crafting_gui.cpp
+#, c-format
+msgid "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
+msgstr "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
+
+#: src/construction.cpp src/crafting_gui.cpp
+msgid ""
+"\n"
+"Use <color_red>up/down arrow</color> to go through your search history."
+msgstr ""
+"\n"
+"Для просмотра истории поиска используйте <color_red>стрелки вверх/вниз</color>"
+
+#: src/construction.cpp src/crafting_gui.cpp src/newcharacter.cpp
+#: src/overmap_ui.cpp
+msgid "Search:"
+msgstr "Поиск:"
 
 #: src/construction.cpp src/iexamine.cpp
 msgid "It is too dark to construct right now."
@@ -294617,30 +294921,8 @@ msgid "shirt"
 msgstr "футболка"
 
 #: src/crafting_gui.cpp
-#, c-format
-msgid "  <color_white>%s</color>%.*s    %s\n"
-msgstr "  <color_white>%s</color>%.*s    %s\n"
-
-#: src/crafting_gui.cpp
 msgid "<color_cyan>name</color> of resulting item"
 msgstr "<color_cyan>имя</color> изготовленной вещи"
-
-#: src/crafting_gui.cpp
-#, c-format
-msgid "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
-msgstr "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
-
-#: src/crafting_gui.cpp
-msgid ""
-"\n"
-"Use <color_red>up/down arrow</color> to go through your search history."
-msgstr ""
-"\n"
-"Для просмотра истории поиска используйте <color_red>стрелки вверх/вниз</color>"
-
-#: src/crafting_gui.cpp src/newcharacter.cpp src/overmap_ui.cpp
-msgid "Search:"
-msgstr "Поиск:"
 
 #: src/crafting_gui.cpp
 msgid ""
@@ -294707,10 +294989,6 @@ msgstr "создание предметов замедлено %d%%"
 #: src/crafting_gui.cpp
 msgid "craftable"
 msgstr "можно создать"
-
-#: src/crafting_gui.cpp
-msgid "Searched"
-msgstr "Найдено"
 
 #: src/crafting_gui.cpp
 msgid "Batch"
@@ -299126,6 +299404,10 @@ msgid "<O> - Toggle Overlays"
 msgstr "<O>: переключить оверлей"
 
 #: src/game.cpp
+msgid "<G> - Submap grid"
+msgstr ""
+
+#: src/game.cpp
 msgid "Zones manager"
 msgstr "Редактор зон"
 
@@ -303149,6 +303431,10 @@ msgstr "%s рассыпается на споры!"
 msgid "Use which seed?"
 msgstr "Какие семена использовать?"
 
+#: src/iexamine.cpp src/vehicle_part.cpp
+msgid "It is too cold to plant anything now."
+msgstr "Слишком холодно, чтобы что-то сажать."
+
 #: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You have no seeds to plant."
 msgstr "У вас нет семян для посадки."
@@ -303160,6 +303446,10 @@ msgstr "Здесь что-то лежит…"
 #: src/iexamine.cpp src/iuse_actor.cpp
 msgid "You saved your seeds for later."
 msgstr "Вы сохранили семена на потом."
+
+#: src/iexamine.cpp
+msgid "It's too cold down here to plant this type of seed underground."
+msgstr "Здесь слишком холодно, чтобы сажать этот вид семян."
 
 #: src/iexamine.cpp
 msgid "This type of seed can not be planted in this location."
@@ -305988,10 +306278,6 @@ msgstr "Вес: "
 #, c-format
 msgid "Owner: %s"
 msgstr "Владелец: %s"
-
-#: src/item.cpp
-msgid "Category: "
-msgstr "Категория: "
 
 #: src/item.cpp
 msgid "Weapon Category: "
@@ -309102,28 +309388,32 @@ msgid "A nearby splatter of goo forms into a goo pit."
 msgstr "Лужа слизи неподалёку превратилась в яму со слизью."
 
 #: src/iuse.cpp
-msgid "Merged!"
-msgstr "Слияние кода!"
+msgid "\"Merged!\""
+msgstr ""
 
 #: src/iuse.cpp
-msgid "BUGFIXES!"
-msgstr "БАГФИКСЫ!"
+msgid "\"BUGFIXES!\""
+msgstr ""
 
 #: src/iuse.cpp
-msgid "BUFFS!"
-msgstr "БАФФЫ!"
+msgid "\"BUFFS!\""
+msgstr ""
 
 #: src/iuse.cpp
-msgid "NERFS!"
-msgstr "НЕРФЫ!"
+msgid "\"NERFS!\""
+msgstr ""
 
 #: src/iuse.cpp
-msgid "REVERTS!"
-msgstr "ИСХОДНОЕ!"
+msgid "\"REVERTS!\""
+msgstr ""
 
 #: src/iuse.cpp
-msgid "BEES!"
-msgstr "ПЧЁЛЫ!"
+msgid "\"QUACK!\""
+msgstr ""
+
+#: src/iuse.cpp
+msgid "\"EEPY!\""
+msgstr ""
 
 #: src/iuse.cpp
 msgid "Set the timer to (0 to cancel)?"
@@ -320805,10 +321095,6 @@ msgstr "<color_red>Чрезвычайно опасно.</color>"
 #: src/monster.cpp src/mtype.cpp
 msgid "<color_red>Fatally dangerous!</color>"
 msgstr "<color_red>Смертельно опасно!</color>"
-
-#: src/monster.cpp
-msgid "Origin: "
-msgstr "Источник: "
 
 #: src/monster.cpp
 #, c-format
