@@ -29,14 +29,14 @@
 # a, 2026
 # 모랑랑, 2026
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
-# Choi Dong-uk, 2026
 # 김동현, 2026
+# Choi Dong-uk, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-30 18:17+0000\n"
-"Last-Translator: 김동현, 2026\n"
+"POT-Creation-Date: 2026-04-01 16:13+0000\n"
+"Last-Translator: Choi Dong-uk, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -6135,6 +6135,10 @@ msgstr "복제 장치 설치"
 #: data/json/construction_group.json
 msgid "Plug In Oven"
 msgstr "오븐 콘센트 연결"
+
+#: data/json/construction_group.json
+msgid "Plug In Multi Cooker"
+msgstr "멀티쿠커 콘센트 연결"
 
 #: data/json/construction_group.json
 msgid "Plug In Refrigerator"
@@ -12297,6 +12301,11 @@ msgstr "이 물품은 <info>물에 잠기면</info> <bad>작동을 중단합니�
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid "This gun can be fired while <good>worn</good>."
+msgstr "이 총기는 <good>착용한 상태</good>로 사격할 수 있습니다."
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This gear <bad>prevents</bad> you from <info>speaking</info>."
 msgstr "이 장비는 <info>대화</info>를 <bad>할 수 없게</bad> 합니다."
 
@@ -13191,6 +13200,10 @@ msgstr "소리 내기"
 msgctxt "musical_instrument"
 msgid "Play"
 msgstr "연주하기"
+
+#: data/json/item_actions.json
+msgid "Scan with sonar"
+msgstr "소나로 스캔하기"
 
 #: data/json/item_actions.json
 msgid "Mask scent"
@@ -18934,6 +18947,10 @@ msgstr "머리 자르기"
 #: data/json/player_activities.json
 msgid "playing with your pet"
 msgstr "애완동물과 놀기"
+
+#: data/json/player_activities.json
+msgid "training your pet"
+msgstr "애완동물 훈련시키기"
 
 #: data/json/player_activities.json
 msgid "trying to fall asleep"
@@ -28703,6 +28720,14 @@ msgid "seeing this is a bug"
 msgid_plural "seeing this is a bug"
 msgstr[0] "이걸 보고 있다면 버그입니다."
 
+#: data/json/sonar.lua
+msgid "The sonar pulse finds nothing new."
+msgstr "소나 펄스가 새로운 것을 찾아내지 못했습니다."
+
+#: data/json/sonar.lua
+msgid "The sonar pulse maps nearby underwater terrain."
+msgstr "소나 펄스가 인근 수중 지형을 탐지했습니다."
+
 #: data/json/species.json
 msgid "everything (debug)"
 msgid_plural "everything (debug)s"
@@ -35331,6 +35356,17 @@ msgid ""
 msgstr ""
 "전기로 작동하며, 음식을 데우고 조리하는데 쓰였습니다. 동력을 공급할 방법이 있다면 아직 작동할지도 모릅니다. 내부에 불을 피워도 "
 "안전합니다."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/items/tool/cooking.json
+msgid "multi cooker"
+msgid_plural "multi cookers"
+msgstr[0] "멀티쿠커"
+
+#. ~ Description for multi cooker
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Used for automatic cooking food with electricity."
+msgstr "전기를 이용해 음식을 자동으로 조리하는데 쓰입니다."
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/items/vehicle/rigs.json
@@ -66545,6 +66581,19 @@ msgid ""
 msgstr "모든 종류의 피해에 대해 우수한 방어력을 가진 묵직한 헬멧입니다. 고급 전투 헬멧이라는 라벨이 붙어있습니다."
 
 #: data/json/items/armor/helmets.json
+msgid "steel combat helmet"
+msgid_plural "steel combat helmets"
+msgstr[0] "강철 전투 헬멧"
+
+#. ~ Description for {'str': 'steel combat helmet'}
+#: data/json/items/armor/helmets.json
+msgid ""
+"A heavy helmet made of hardened steel with a chin strap.  Various designs "
+"were once used by armies around the world, modern ballistic helmets have "
+"mostly relegated this to military surplus."
+msgstr ""
+
+#: data/json/items/armor/helmets.json
 msgid "tactical full helmet"
 msgid_plural "tactical full helmets"
 msgstr[0] "전술 풀 헬멧"
@@ -74984,12 +75033,10 @@ msgstr[0] "봄 수영복"
 #. ~ Description for {'str': 'spring suit'}
 #: data/json/items/armor/swimming.json
 msgid ""
-"A long-sleeved spring wetsuit with pink color details and cleavage-"
-"enhancing, hip-accentuating construction.  Not as protective as a full-body "
-"suit, but also less restrictive."
+"A pink neoprene wetsuit that leaves the legs exposed.  Not as protective as "
+"a full-body suit, but also less restrictive and more comfortable in the "
+"summer."
 msgstr ""
-"긴 소매에 분홍색으로 장식된 봄에 입는 수영복. 엉덩이와 가슴골이 강조되어 있습니다. 전신 수영복보다는 몸을 덜 보호하지만, 그만큼 덜 "
-"불편합니다."
 
 #: data/json/items/armor/swimming.json
 msgid "faraday shark suit"
@@ -114353,11 +114400,6 @@ msgstr ""
 "오목한 그릇 모양 돌과 절굿공이용 돌을 합쳐놓은 것 뿐인 간단한 물건입니다. 곡식을 가는 데 쓰지만 더 복잡한 방식과 비교하면 시간이 "
 "오래 걸립니다."
 
-#: data/json/items/tool/cooking.json
-msgid "multi cooker"
-msgid_plural "multi cookers"
-msgstr[0] "멀티쿠커"
-
 #. ~ Description for {'str': 'multi cooker'}
 #: data/json/items/tool/cooking.json
 msgid ""
@@ -115206,6 +115248,18 @@ msgid ""
 msgstr ""
 "방사능을 측정하는 도구. 지속탐색 모드로, 삑삑 거리는 소리를 내서 인근 지역의 방사능 수치를 알려주고 있습니다. 사용해서 끄거나, 땅을"
 " 확인하거나, 몸의 수치를 측정할 수 있습니다. 현재는 켜져있습니다."
+
+#: data/json/items/tool/electronics.json
+msgid "handheld sonar"
+msgid_plural "handheld sonars"
+msgstr[0] "휴대용 소나"
+
+#. ~ Description for {'str': 'handheld sonar'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"A rugged sonar unit with a compact transducer and display.  Activate it to "
+"ping nearby underwater terrain and sketch what you find onto the overmap."
+msgstr ""
 
 #: data/json/items/tool/electronics.json
 msgid "hand-crank charger"
@@ -122499,7 +122553,7 @@ msgstr[0] "내부 연소 엔진"
 #: data/json/items/vehicle/engine.json
 msgid "base diesel engine"
 msgid_plural "base diesel engines"
-msgstr[0] "기초 디젤 엔진"
+msgstr[0] "기초 경유 엔진"
 
 #: data/json/items/vehicle/engine.json
 msgid "strong diesel engine"
@@ -122707,7 +122761,7 @@ msgstr[0] "초대형 엔진 블록"
 msgid ""
 "The beginnings of a massive gas or diesel engine.  It's not good for much of"
 " anything on its own."
-msgstr "초대형 가스/디젤 엔진의 기초 단계입니다. 이것만으로는 딱히 쓸모가 없어보입니다."
+msgstr "초대형 가스/경유 엔진의 기초 단계입니다. 이것만으로는 딱히 쓸모가 없어보입니다."
 
 #: data/json/items/vehicle/engine.json
 msgid "large engine block"
@@ -122719,7 +122773,7 @@ msgstr[0] "대형 엔진 블록"
 msgid ""
 "The beginnings of a large gas or diesel engine.  It's not good for much of "
 "anything on its own."
-msgstr "대형 가스/디젤 엔진의 기초 단계입니다. 이것만으로는 딱히 쓸모가 없어보입니다."
+msgstr "대형 가스/경유 엔진의 기초 단계입니다. 이것만으로는 딱히 쓸모가 없어보입니다."
 
 #: data/json/items/vehicle/engine.json
 msgid "medium engine block"
@@ -122731,7 +122785,7 @@ msgstr[0] "표준형 엔진 블록"
 msgid ""
 "The beginnings of a medium gas or diesel engine.  It's not good for much of "
 "anything on its own."
-msgstr "중형 가스/디젤 엔진의 기초 단계입니다. 이것만으로는 딱히 쓸모가 없어보입니다."
+msgstr "중형 가스/경유 엔진의 기초 단계입니다. 이것만으로는 딱히 쓸모가 없어보입니다."
 
 #: data/json/items/vehicle/engine.json
 msgid "small engine block"
@@ -122743,7 +122797,7 @@ msgstr[0] "소형 엔진 블록"
 msgid ""
 "The beginnings of a small gas or diesel engine.  It's not good for much of "
 "anything on its own."
-msgstr "소형 가스/디젤 엔진의 기초 단계입니다. 이것만으로는 딱히 쓸모가 없어보입니다."
+msgstr "소형 가스/경유 엔진의 기초 단계입니다. 이것만으로는 딱히 쓸모가 없어보입니다."
 
 #: data/json/items/vehicle/engine.json
 msgid "tiny engine block"
@@ -122755,7 +122809,7 @@ msgstr[0] "초소형 엔진 블록"
 msgid ""
 "The beginnings of a tiny gas or diesel engine.  It's not good for much of "
 "anything on its own."
-msgstr "초소형 가스/디젤 엔진의 기초 단계입니다. 이것만으로는 딱히 쓸모가 없어보입니다."
+msgstr "초소형 가스/경유 엔진의 기초 단계입니다. 이것만으로는 딱히 쓸모가 없어보입니다."
 
 #: data/json/items/vehicle/engine.json
 msgid "1350 hp gas turbine engine"
@@ -177796,6 +177850,17 @@ msgid "ALL"
 msgstr "전체"
 
 #. ~ Crafting recipes subcategory of 'WEAPON' category
+#. ~ Crafting recipes subcategory of 'AMMO' category
+#. ~ Crafting recipes subcategory of 'FOOD' category
+#. ~ Crafting recipes subcategory of 'CHEM' category
+#. ~ Crafting recipes subcategory of 'ELECTRONIC' category
+#. ~ Crafting recipes subcategory of 'ARMOR' category
+#. ~ Crafting recipes subcategory of 'OTHER' category
+#: data/json/recipes/recipes.json
+msgid "NESTED"
+msgstr "집합"
+
+#. ~ Crafting recipes subcategory of 'WEAPON' category
 #: data/json/recipes/recipes.json
 msgid "BASHING"
 msgstr "타격무기"
@@ -189498,6 +189563,18 @@ msgstr ""
 "하나 이상의 카메라와 연결된 LCD 디스플레이입니다. 작동시키면 카메라를 통해 볼 수 있지만, 차량 전력을 소모합니다. 타일을 e 키로 "
 "조작하거나, 차량 조작키 (기본값 '^') 를 쓸 수 있습니다."
 
+#: data/json/vehicleparts/controls.json
+msgid "sonar array"
+msgstr "소나 배열"
+
+#. ~ Description for {'str': 'sonar array'}
+#: data/json/vehicleparts/controls.json
+msgid ""
+"A set of sonar transducers and electronics used to scan underwater terrain."
+"  Activate it from the vehicle controls to reveal local underwater overmap "
+"tiles."
+msgstr ""
+
 #. ~ Description for {'str': 'security camera'}
 #: data/json/vehicleparts/controls.json
 msgid ""
@@ -190151,19 +190228,19 @@ msgstr "%s의 시동 방해기를 정지시켰습니다."
 
 #: data/json/vehicleparts/faults.json
 msgid "Faulty diesel pump"
-msgstr "고장난 디젤 펌프"
+msgstr "고장난 경유 펌프"
 
 #. ~ Description for fault '{'str': 'Faulty diesel pump'}'
 #: data/json/vehicleparts/faults.json
 msgid ""
 "Prevents the engine from starting.  A damaged pump means that diesel can't "
 "be pumped and pressurized from the vehicle's tank."
-msgstr "엔진에 시동이 걸리는 것을 차단합니다. 디젤 펌프가 고장나 차량 연료 탱크에서 경유를 끌어와 압력을 가하지 못하고 있습니다."
+msgstr "엔진에 시동이 걸리는 것을 차단합니다. 경유 펌프가 고장나 차량 연료 탱크에서 경유를 끌어와 압력을 가하지 못하고 있습니다."
 
 #. ~ Name of mending method for fault '{'str': 'Faulty diesel pump'}'
 #: data/json/vehicleparts/faults.json
 msgid "Replace faulty diesel pump"
-msgstr "고장난 디젤 펌프 교체"
+msgstr "고장난 경유 펌프 교체"
 
 #. ~ Description for mending method 'Replace faulty diesel pump' of fault
 #. '{'str': 'Faulty diesel pump'}'
@@ -191324,6 +191401,10 @@ msgstr "외부 탱크 (200L)"
 #: data/json/vehicleparts/tanks.json
 msgid "roof-mounted external tank (200L)"
 msgstr "지붕에 설치된 외부 탱크 (200L)"
+
+#: data/json/vehicleparts/tanks.json
+msgid "mounted external tank (200L)"
+msgstr "차량용 외부 탱크 (200L)"
 
 #: data/json/vehicleparts/tanks.json
 msgid "wooden barrel (100L)"
@@ -192780,7 +192861,67 @@ msgstr "평상형 트럭"
 
 #: data/json/vehicles/trucks.json
 msgid "Diesel Flatbed Truck"
-msgstr "디젤 평상형 트럭"
+msgstr "경유 평상형 트럭"
+
+#: data/json/vehicles/trucks.json
+msgid "Avgas Tanker"
+msgstr "비행용 휘발유 유조차"
+
+#: data/json/vehicles/trucks.json
+msgid "JP-8 Tanker"
+msgstr "JP-8 유조차"
+
+#: data/json/vehicles/trucks.json
+msgid "Diesel Tanker"
+msgstr "경유 유조차"
+
+#: data/json/vehicles/trucks.json
+msgid "Fertilizer Tanker"
+msgstr "비료 운송차량"
+
+#: data/json/vehicles/trucks.json
+msgid "Bleach Tanker"
+msgstr "표백제 운송차량"
+
+#: data/json/vehicles/trucks.json
+msgid "Ammonia Tanker"
+msgstr "암모니아 운송차량"
+
+#: data/json/vehicles/trucks.json
+msgid "Gas Tanker"
+msgstr "유조차"
+
+#: data/json/vehicles/trucks.json
+msgid "Water Tanker"
+msgstr "급수차"
+
+#: data/json/vehicles/trucks.json
+msgid "Ether Tanker"
+msgstr "에테르 운송차량"
+
+#: data/json/vehicles/trucks.json
+msgid "Formaldehyde Tanker"
+msgstr "포름알데히드 운송차량"
+
+#: data/json/vehicles/trucks.json
+msgid "Cooking Oil Tanker"
+msgstr "식용유 운송차량"
+
+#: data/json/vehicles/trucks.json
+msgid "Plutonium Slurry Tanker"
+msgstr "플루토늄 슬러리 운송차량"
+
+#: data/json/vehicles/trucks.json
+msgid "Sewage Tanker"
+msgstr "하수도 운송차량"
+
+#: data/json/vehicles/trucks.json
+msgid "Sulfuric Acid Tanker"
+msgstr "황산 유조차"
+
+#: data/json/vehicles/trucks.json
+msgid "Milk Tanker"
+msgstr "우유 유조차"
 
 #: data/json/vehicles/trucks.json
 msgid "Pickup Truck"
@@ -192788,7 +192929,7 @@ msgstr "픽업 트럭"
 
 #: data/json/vehicles/trucks.json
 msgid "Diesel Pickup Truck"
-msgstr "디젤 픽업 트럭"
+msgstr "경유 픽업 트럭"
 
 #: data/json/vehicles/trucks.json
 msgid "Semi Truck"
@@ -199664,14 +199805,6 @@ msgid ""
 "camera station, steering tools, and electronics controls."
 msgstr "차량 조종 장치, 전자기기 제어 장치, 카메라 스테이션이 포함된 크고 복잡한 군용 차량 조종 계기판입니다."
 
-#: data/mods/Aftershock/vehicles/vehicle_overrides.json
-msgid "Gas Tanker"
-msgstr "유조차"
-
-#: data/mods/Aftershock/vehicles/vehicle_overrides.json
-msgid "Water Tanker"
-msgstr "급수차"
-
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
 msgid "cargo trough"
 msgstr "화물 통"
@@ -199765,10 +199898,6 @@ msgid ""
 "A large and complex dashboard mounted with steering controls and several LCD"
 " touch screens for controlling vehicle systems."
 msgstr "차량 시스템을 조종하기 위한 LCD 터치 스크린과 조종 장치가 부착된 커다랗고 복잡한 대시보드입니다."
-
-#: data/mods/Aftershock/vehicles/vehicle_parts.json
-msgid "mounted external tank (200L)"
-msgstr "차량용 외부 탱크 (200L)"
 
 #. ~ Description for {'str': 'ultralight frame'}
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -232395,6 +232524,17 @@ msgstr ""
 "실내 재배에 꼭 필요한 소형 재배기입니다.\n"
 "현재 내부의 식물이 완전히 익어, 손끝으로 톡 건드리면 곧장 신선한 수확물을 얻을 수 있습니다."
 
+#: data/mods/gunchair/gunchair.json data/mods/gunchair/modinfo.json
+msgid "GunChair™"
+msgstr "건체어™"
+
+#. ~ Description for GunChair™
+#: data/mods/gunchair/modinfo.json
+msgid ""
+"Own a minigun-propelled armchair for home defense, Just as the founding "
+"fathers intended"
+msgstr "자기 방어를 위한 미니건추진식 팔걸이 의자를 지금 구매하세요! 이게 바로 건국의 아버지들이 꿈꾸던 물건 아니겠어요?"
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr "숲속생활"
@@ -234597,7 +234737,7 @@ msgstr "닻"
 msgid "No stations found on this tile."
 msgstr "해당 타일에 설치된 공간이동기가 없습니다."
 
-#: data/mods/teleportation_mod/main.lua
+#: data/mods/teleportation_mod/main.lua src/handle_action.cpp
 msgid "Do what?"
 msgstr "무엇을 할까요?"
 
@@ -238344,6 +238484,20 @@ msgstr "%s(을)를 채웠다."
 #, c-format
 msgid "Playing with your %s has lifted your spirits a bit."
 msgstr "%s(와)과 즐겁게 노니 기분이 좋아집니다."
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid ""
+"Training your %s has finally succeeded, they should be less skittish in "
+"combat now."
+msgstr "%s(을)를 훈련시키는데 성공했습니다. 이제 전투 중에 보다 덜 겁에 질릴 것입니다."
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid ""
+"Training your %s takes time, it seems they are making a bit of progress at "
+"least."
+msgstr "%s(을)를 훈련시키는데 시간이 꽤 걸릴 것 같지만, 최소한 뭔가 이뤄지기는 하는 것 같습니다."
 
 #: src/activity_handlers.cpp
 msgid "You open up your kit and shave."
@@ -246427,7 +246581,7 @@ msgstr "* 숨긴 제작법 없음 - 카테고리 내 제작법 %d개 *"
 msgid "Origin: "
 msgstr "출처: "
 
-#: src/construction.cpp src/item.cpp
+#: src/construction.cpp src/crafting_gui.cpp src/item.cpp
 msgid "Category: "
 msgstr "분류: "
 
@@ -247763,6 +247917,25 @@ msgstr "신규!"
 msgid "%2dx %s"
 msgstr "%2dx %s"
 
+#: src/crafting_gui.cpp src/output.cpp
+msgid "unknown"
+msgstr "알 수 없음"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "Known recipes: <color_light_blue>%d</color>"
+msgstr "알고 있는 제작법: <color_light_blue>%d</color>"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "<color_light_blue>Origin: '%s'</color>"
+msgstr "<color_light_blue>원본: '%s'</color>"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "Category: <color_magenta>%s</color>"
+msgstr "카테고리: <color_magenta>%s</color>"
+
 #: src/crafting_gui.cpp
 msgid "You can't do that!  Press [<color_yellow>ESC</color>]!"
 msgstr "그렇게는 할 수 없습니다! [<color_yellow>ESC</color>]를 누르세요!"
@@ -248871,13 +249044,13 @@ msgstr "세이브 파일 명칭 변경 (경고: 세이브 파일을 중복해서
 msgid "Rename character:"
 msgstr "캐릭터 이름 변경:"
 
-#: src/debug_menu.cpp src/newcharacter.cpp
+#: src/debug_menu.cpp
 msgid "Enter age in years.  Minimum 16, maximum 55"
-msgstr "나이(년) 입력. 최소 16, 최대 55"
+msgstr "나이를 년 단위로 입력해주세요. 최소 16, 최대 55"
 
 #: src/debug_menu.cpp src/newcharacter.cpp
 msgid "Enter height in centimeters.  Minimum 145, maximum 200"
-msgstr "키(cm) 입력. 최소 145, 최대 200"
+msgstr "키를 센티미터 단위로 입력해주세요. 최소 145, 최대 200"
 
 #: src/debug_menu.cpp
 #, c-format
@@ -255052,10 +255225,6 @@ msgid "%1$s from %2$s (%3$d)"
 msgstr "%2$s에서 %1$s (%3$d) "
 
 #: src/handle_action.cpp
-msgid "Draw what?"
-msgstr "무엇을 꺼냅니까?"
-
-#: src/handle_action.cpp
 msgid "Change to which movement mode?"
 msgstr "어떤 이동 방식으로 변경하시겠습니까?"
 
@@ -258021,6 +258190,72 @@ msgid ""
 "The plutonium generator has significant security measures in place. Without "
 "the necessary ID, you'll have to remove it by hand."
 msgstr "플루토늄 발전기에는 핵심 보안 장치가 달려있습니다. 적절한 ID 카드가 없다면 직접 떼어내야 합니다."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose option:"
+msgstr "옵션 선택:"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Stop crafting"
+msgstr "제작 중단"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Remove Product"
+msgstr "물품 제거"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Batteries are low."
+msgstr "배터리가 부족합니다."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Start crafting "
+msgstr "제작 시작"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Really stop?"
+msgstr "정말로 중단합니까?"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "You don't have a suitable container to store your %s."
+msgstr "%s(을)를 담을 적절한 용기가 없습니다."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "You got the %s from the %s."
+msgstr "%s(을)를 %s에서 끄집어냅니다."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose desired recipe:"
+msgstr "원하는 제작법 선택:"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "%s (%1.f charges)"
+msgstr "%s (%1.f 충전량)"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "You don't know of anything you could craft with this."
+msgstr "이것으로 뭘 만들 수 있을지 아직 잘 모르겠습니다."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose batch count:"
+msgstr "일괄 수량 선택:"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "%s batches (%1.f charges)"
+msgstr "%s 묶음 (%1.f 충전량)"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "The %s needs %d charges to create this."
+msgstr "이 물품을 제작하려면 %s에 충전량이 %d만큼 필요합니다."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "The %s begins to hum."
+msgstr "%s(이)가 웅웅거리기 시작합니다."
 
 #: src/iexamine_elevator.cpp
 msgid " (this floor)"
@@ -265329,72 +265564,6 @@ msgid "You're surrounded by aggressive multi-cookers!"
 msgstr "공격적인 멀티쿠커들에게 포위당했습니다!"
 
 #: src/iuse_actor.cpp
-msgid "Choose option:"
-msgstr "옵션 선택:"
-
-#: src/iuse_actor.cpp
-msgid "Stop crafting"
-msgstr "제작 중단"
-
-#: src/iuse_actor.cpp
-msgid "Batteries are low."
-msgstr "배터리가 부족합니다."
-
-#: src/iuse_actor.cpp
-msgid "Start crafting "
-msgstr "제작 시작"
-
-#: src/iuse_actor.cpp
-msgid "Remove Product"
-msgstr "물품 제거"
-
-#: src/iuse_actor.cpp
-msgid "Really stop?"
-msgstr "정말로 중단합니까?"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You don't have a suitable container to store your %s."
-msgstr "%s(을)를 담을 적절한 용기가 없습니다."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You got the %s from the %s."
-msgstr "%s(을)를 %s에서 끄집어냅니다."
-
-#: src/iuse_actor.cpp
-msgid "Choose desired recipe:"
-msgstr "원하는 제작법 선택:"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "%s (%1.f charges)"
-msgstr "%s (%1.f 충전량)"
-
-#: src/iuse_actor.cpp
-msgid "You don't know of anything you could craft with this."
-msgstr "이것으로 뭘 만들 수 있을지 아직 잘 모르겠습니다."
-
-#: src/iuse_actor.cpp
-msgid "Choose batch count:"
-msgstr "일괄 수량 선택:"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "%s batches (%1.f charges)"
-msgstr "%s 묶음 (%1.f 충전량)"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s needs %d charges to create this."
-msgstr "이 물품을 제작하려면 %s에 충전량이 %d만큼 필요합니다."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s begins to hum."
-msgstr "%s(이)가 웅웅거리기 시작합니다."
-
-#: src/iuse_actor.cpp
 msgid "You can't do *that* while mounted"
 msgstr "탑승 중에 해당 행동을 할 수 없습니다."
 
@@ -272546,6 +272715,11 @@ msgid "Play with %s"
 msgstr "%s와(과) 놀기"
 
 #: src/monexamine.cpp
+#, c-format
+msgid "Train %s"
+msgstr "%s 훈련시키기"
+
+#: src/monexamine.cpp
 msgid "Untie"
 msgstr "풀기"
 
@@ -274963,6 +275137,11 @@ msgstr "정말 이대로 끝냅니까?"
 #: src/newcharacter.cpp
 msgid "Enter name.  Cancel to delete all."
 msgstr "이름을 기입하십시오. 전부 지우려면 취소하세요."
+
+#: src/newcharacter.cpp
+#, c-format
+msgid "Enter age in years.  Minimum %d, maximum %d"
+msgstr "나이를 년 단위로 입력해주세요. 최소 %d, 최대 %d"
 
 #: src/newcharacter.cpp
 msgid "Name of template:"
@@ -277682,6 +277861,16 @@ msgid "Highlight unread recipes to allow tracking of newly learned recipes."
 msgstr "새로 익힌 제작법을 파악할 수 있도록 읽지 않은 제작법을 강조합니다."
 
 #: src/options.cpp
+msgid "Enable nested crafting categories"
+msgstr "집합 제작 카테고리 활성화"
+
+#: src/options.cpp
+msgid ""
+"Show nested crafting categories in the crafting UI.  When disabled, nested "
+"recipes appear directly in their normal subcategories."
+msgstr "제작 UI에서 집합 제작 카테고리를 표시합니다. 비활성화하면 집합 제작법은 본래 하위 카테고리에 직접 표시될 것입니다."
+
+#: src/options.cpp
 msgid "Highlight unread items"
 msgstr "읽지 않은 물품 강조"
 
@@ -278367,13 +278556,13 @@ msgstr "괴물 LOD 활성화"
 #: src/options.cpp
 msgid ""
 "Enable level-of-detail processing for monsters.  When enabled, distant or "
-"wandering monsters are assigned reduced-fidelity AI tiers (coarse path reuse"
-" or a simple macro step) to save CPU.  When disabled, every monster runs "
-"full AI every turn regardless of distance."
+"wandering monsters are assigned AI tiers. Higher tiers are processed less "
+"often and skip certain functions.  When disabled, every monster runs full AI"
+" every turn regardless of distance."
 msgstr ""
-"괴물의 정밀 조정 프로세싱을 허용합니다. 활성화되면 CPU 자원 절약을 위해 멀리 있거나 방황 중인 괴물에 대해 낮은 충실도 (간이 경로"
-" 재사용 또는 간단한 매크로 단계 등) 의 인공지능 등급이 할당됩니다. 비활성화되면 거리에 상관없이 모든 괴물이 매 턴마다 온전한 "
-"인공지능을 실행합니다."
+"괴물의 정밀 조정 프로세싱을 허용합니다. 활성화되면 CPU 자원 절약을 위해 멀리 있거나 방황 중인 괴물에 대해 인공지능 등급이 "
+"할당됩니다. 등ㄱ브이 높아질수록 보다 덜 자주 처리되고 특정 기능이 생략될 수 있습니다. 비활성화되면 거리에 상관없이 모든 괴물이 매 "
+"턴마다 온전한 인공지능을 실행합니다."
 
 #: src/options.cpp
 msgid "Action Budget"
@@ -278384,8 +278573,8 @@ msgid ""
 "Minimum number of monsters that enter the move loop per turn.  The actual "
 "budget is the larger of this value and the current Tier-0 (full-AI) monster "
 "count, so full-AI monsters are never skipped.  Higher values process more "
-"distant monsters each turn at a CPU cost.  0 means only Tier-0 monsters run "
-"(no extra Tier-1 budget)."
+"distant monsters each turn.  0 means only Tier-0 monsters run (no extra "
+"Tier-1 budget)."
 msgstr ""
 "턴당 이동 루프에 진입하는 괴물의 최소 수치입니다. 실제 예산은 이 값 및 현재 티어 0 (온전한 인공지능) 괴물 수보다 크므로, 온전한"
 " 인공지능으로 작동하는 괴물은 결코 생략되지 않습니다. 이 값이 커지면 CPU 자원을 소모하여 같은 턴에 더 멀리 있는 괴물까지 "
@@ -278410,12 +278599,9 @@ msgstr "온전한 인공지능 반경"
 
 #: src/options.cpp
 msgid ""
-"Chebyshev distance threshold for full-AI (Tier 0) monsters.  Monsters within"
-" this radius run the complete AI every turn.  Must be less than the Coarse "
-"AI Radius."
-msgstr ""
-"온전한 인공지능 (티어 0) 괴물에 대한 체비쇼프 거리 한계선입니다. 이 반경 이내에 있는 괴물은 매 턴마다 온전한 인공지능을 "
-"실행합니다. 간이 인공지능 반경보다 작아야 합니다."
+"Monsters within this radius run the complete AI every turn.  Must be less "
+"than the Coarse AI Radius."
+msgstr "이 반경 이내에 있는 괴물은 매 턴마다 온전한 인공지능을 실행합니다. 간이 인공지능 반경보다 작아야 합니다."
 
 #: src/options.cpp
 msgid "Coarse AI Radius"
@@ -278423,13 +278609,12 @@ msgstr "간이 인공지능 반경"
 
 #: src/options.cpp
 msgid ""
-"Chebyshev distance threshold for coarse-AI (Tier 1) monsters.  Monsters "
-"between the Full AI Radius and this distance use cached paths and skip "
-"expensive faction queries.  Monsters beyond this distance are Tier-2 (macro "
-"step only)."
+"Monsters between the Full AI Radius and this distance use cached paths and "
+"skip expensive faction queries.  Monsters beyond this distance are Tier-2 "
+"(macro step only)."
 msgstr ""
-"간이 인공지능 (티어 1) 괴물에 대한 체비쇼프 거리 한계선입니다. 온전한 인공지능 반경과 이 값 사이에 있는 괴물은 저장된 경로를 "
-"사용하고 자원이 많이 소모되는 세력 쿼리를 생략합니다. 이 값 이후의 괴물은 티어 2 (매크로 단계 한정) 로 분류됩니다."
+"온전한 인공지능 반경과 이 값 사이에 있는 괴물은 저장된 경로를 사용하고 자원이 많이 소모되는 세력 쿼리를 생략합니다. 이 값 이후의 "
+"괴물은 티어 2 (매크로 단계 한정) 로 분류됩니다."
 
 #: src/options.cpp
 msgid "Demotion Cooldown"
@@ -278452,12 +278637,10 @@ msgstr "간이 후각 확인 간격"
 msgid ""
 "How many turns elapse between scent-tracking checks for Tier-1 (coarse) "
 "monsters.  At 1 they check scent every turn (full fidelity); at 3 (default) "
-"only once every 3 turns.  Higher values reduce CPU cost for mid-range "
-"hordes."
+"only once every 3 turns. "
 msgstr ""
 "티어 1 (간이 인공지능) 괴물에 대해 후각 기반 추적 확인당 경과하는 턴을 결정합니다. 1로 설정하면 (온전한 충실도) 매 턴마다 "
-"후각을 확인하고, (기본값인) 3으로 설정하면 매 3턴마다 한 번 확인합니다. 이 값이 커지면 중간 거리의 무리에 대해 보다 적은 CPU"
-" 자원을 할당합니다."
+"후각을 확인하고, (기본값인) 3으로 설정하면 매 3턴마다 한 번 확인합니다."
 
 #: src/options.cpp
 msgid "Group Morale Max Tier"
@@ -278467,12 +278650,10 @@ msgstr "집단 사기 최대 등급"
 msgid ""
 "Highest LOD tier that participates in group-morale and swarming "
 "calculations.  0 = Tier-0 only (default, cheapest).  1 = Tier-0 and Tier-1 "
-"monsters also run group-morale/swarm checks at the cost of the extra O(M²) "
-"faction scan for mid-range monsters."
+"monsters also run group-morale/swarm checks. "
 msgstr ""
 "집단 사기 및 무리짓기 연산에 관여하는 가장 높은 LOD 등급을 결정합니다. (기본값) 0은 티어 0에 대해서만 적용하며, CPU 자원이"
-" 가장 적게 소모됩니다. 1은 중간 거리의 괴물에 대해 추가적인 O(M²) 세력 스캔을 시도하는 것을 감수하여 티어 0 및 1에 대해 "
-"집단 사기 및 무리짓기 연산을 시도합니다."
+" 가장 적게 소모됩니다. 1은 티어 0 및 1에 대해 집단 사기 및 무리짓기 연산을 시도합니다."
 
 #: src/options.cpp
 msgid "3D Field of Vision"
@@ -278513,11 +278694,11 @@ msgstr "3차원 시야 수평 장애물"
 
 #: src/options.cpp
 msgid ""
-"When enabled, obstacles at other z-levels correctly block horizontal line of"
-" sight.  Requires 3D FoV.  Slower than disabled."
+"When enabled, obstacles at other z-levels correctly cast 3D shadows.  "
+"Requires 3D FoV.  Significantly slower than disabled."
 msgstr ""
-"활성화되면 다른 z축에 위치한 장애물이 수평 시야선을 제대로 차단합니다. 3차원 시야가 활성화되어야 합니다. 비활성화된 상태보다 게임이 "
-"느려집니다."
+"활성화되면 다른 z축에 위치한 장애물이 3차원 그림자를 제대로 생성합니다. 3차원 시야가 활성화되어야 합니다. 비활성화된 상태보다 게임이"
+" 뚜렷하게 느려집니다."
 
 #: src/options.cpp
 msgid "LOS Cache Size"
@@ -278549,8 +278730,8 @@ msgstr "멀티스레딩 활성화"
 #: src/options.cpp
 msgid ""
 "Enable worker-thread parallelism for expensive per-turn computations "
-"(monster planning, map-cache building, scent map updates).  Disable to run "
-"everything on the main thread — useful for debugging, reproducibility "
+"(monster planning, map-cache building, scent map updates, etc).  Disable to "
+"run everything on the main thread — useful for debugging, reproducibility "
 "testing, or machines where thread overhead exceeds gain.  Requires restart."
 msgstr ""
 "괴물 계획, 맵 캐시 생성, 후각 지도 갱신 등 자원이 많이 들어가는 턴당 연산을 병렬 처리하기 위한 작업 스레드 병렬 처리를 "
@@ -278635,32 +278816,136 @@ msgid ""
 "Keep a border of submaps loaded around the reality bubble.  These are pre-"
 "loaded from disk in the background so that map shifts are faster (the data "
 "is already in memory).  Uses more memory but reduces stalls when the map "
-"scrolls.  Takes effect immediately without restart."
+"scrolls.  "
 msgstr ""
 "현실 거품 주변에 불러온 서브맵 경계를 유지합니다. 맵 간 이동을 더 빨리 진행할 수 있도록 디스크에서 데이터를 미리 불러와 메모리에 "
-"올려놓습니다. 메모리 사용량이 증가하지만 맵 스크롤 과정에서 발생하는 렉을 감소시킵니다. 재시작할 필요 없이 즉시 영향을 끼칩니다."
+"올려놓습니다. 메모리 사용량이 증가하지만 맵 스크롤 과정에서 발생하는 렉을 감소시킵니다."
 
 #: src/options.cpp
 msgid "Reality Bubble"
 msgstr "현실 거품"
 
 #: src/options.cpp
-msgid "Configure how submaps are loaded and processed."
-msgstr "서브맵을 불러오고 처리하는 과정을 설정합니다."
+msgid "Configure how the reality bubble functions."
+msgstr "현실 거품이 작동하는 방식을 설정합니다."
 
 #: src/options.cpp
-msgid "World Tick Interval"
-msgstr "세계 틱 간격"
+msgid "Reality Bubble Size"
+msgstr "현실 거품 크기"
 
 #: src/options.cpp
 msgid ""
-"How many turns elapse between out-of-bubble world ticks.  1 processes every "
-"loaded submap outside the player's reality bubble each turn at full "
-"fidelity. Higher values amortize cost by batching N turns of simulation into"
-" a single pass — useful on slow hardware."
+"Submap radius of the reality bubble (submaps visible beyond your position). "
+"Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
+"Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
+"the loaded area and memory usage; smaller values reduce both. "
 msgstr ""
-"현실 거품 바깥의 세계 틱당 경과하는 턴을 설정합니다. 1로 설정하면 플레이어의 현실 거품 바깥에 불러온 모든 서브맵이 매 턴마다 최대 "
-"충실도로 처리됩니다. 값이 커지면 N턴 어치의 시뮬레이션을 묶어서 진행하여 자원을 절약합니다. 보다 느린 하드웨어에서 유용합니다."
+"현실 거품 (당신의 위치에서 볼 수 있는 모든 서브맵) 반경을 설정합니다. 구획 크기는 2 * 크기 + 각 면당 3 서브맵입니다. (기존"
+" 기본값은 4이며, 이는 11 * 11 크기를 의미합니다.) 최대 플레이어 시야 범위는 12 * (크기 + 1) 타일입니다. 이 값이 "
+"커지면 불러오는 영역이 증가하면서 메모리 소모량이 커집니다. 이 값이 작아지면 불러오는 영역이 감소하면서 메모리 소모량이 작아집니다."
+
+#: src/options.cpp
+msgid "Mobile Activity Bubble Size"
+msgstr "활동 중 현실 거품 크기"
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is performing a "
+"mobile activity (crafting, construction, etc.).  0 disables the feature.  "
+"Must be smaller than Reality Bubble Size to take effect."
+msgstr ""
+"플레이어가 건설, 제작 등 지속적인 작업을 수행 중일 때 현실 거품 반경을 지정된 값까지 축소시킵니다. 0으로 설정하면 이 기능이 "
+"비활성화됩니다. 이 값이 현실 거품 크기보다 작아야 작동합니다."
+
+#: src/options.cpp
+msgid "Idle Activity Bubble Size"
+msgstr "방치 중 현실 거품 크기"
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is performing an "
+"idle activity (sleeping, reading, waiting, etc.).  0 disables the feature.  "
+"Must be smaller than Reality Bubble Size to take effect."
+msgstr ""
+"플레이어가 수면, 독서, 대기 등 방치 활동을 수행 중일 때 현실 거품을 지정된 값까지 축소시킵니다. 0으로 설정하면 이 기능이 "
+"비활성화됩니다. 이 값이 현실 거품 크기보다 작아야 작동합니다."
+
+#: src/options.cpp
+msgid "Underground Reality Bubble Size"
+msgstr "지하 현실 거품 크기"
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is underground and"
+" indoors (no sky visible).  0 disables the feature.  Must be smaller than "
+"Reality Bubble Size to take effect."
+msgstr ""
+"플레이어가 하늘이 보이지 않는 실내 지하에 있을 때 현실 거품을 지정된 값까지 축소시킵니다. 0으로 설정하면 이 기능이 비활성화됩니다. "
+"이 값이 현실 거품 크기보다 작아야 작동합니다."
+
+#: src/options.cpp
+msgid "Vehicle Reality Bubble Size"
+msgstr "차량 현실 거품 크기"
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is actively "
+"driving a vehicle  or mounted on a creature. Useful with a high render "
+"distance to reduce lag at speed.  0 disables the feature.  Must be smaller "
+"than Reality Bubble Size to take effect."
+msgstr ""
+"플레이어가 차량을 운전 중이거나 개체에 탑승 중일 때 현실 거품 반경을 지정된 값까지 축소시킵니다. 렌더링 거리를 높은 값으로 설정한 "
+"상태일 때 고속으로 이동하면 발생하는 렉을 줄이는데 유용합니다. 0으로 설정하면 이 기능이 비활성화됩니다. 이 값이 현실 거품 크기보다 "
+"작아야 작동합니다."
+
+#: src/options.cpp
+msgid "Combat Reality Bubble Size"
+msgstr "전투 중 현실 거품 크기"
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while hostile creatures are visible"
+" nearby.  Uses the same detection range as safe mode.  0 disables the "
+"feature.  Must be smaller than Reality Bubble Size to take effect."
+msgstr ""
+"플레이어의 시야에서 적대적인 개체가 근처에 있을 때 현실 거품 반경을 지정된 값까지 축소시킵니다. 안전 모드와 같은 탐지 범위를 "
+"사용합니다. 0으로 설정하면 이 기능이 비활성화됩니다. 이 값이 현실 거품 크기보다 작아야 작동합니다."
+
+#: src/options.cpp
+msgid "Activity Bubble Grace Period"
+msgstr "활동 중 거품 보호 기간"
+
+#: src/options.cpp
+msgid ""
+"Minimum length of activity in minutes before the reality bubble shrinks.  "
+"Acts as a safety net to avoid unnecessary resizes for short tasks.  Default "
+"is 5 minutes."
+msgstr ""
+"현실 거품 크기를 축소시키는데 필요한 최소 활동 시간을 분 단위로 설정합니다. 짧은 작업을 진행할 때마다 현실 거품 크기가 변하는 것을 "
+"막아주는 안전망으로 작동합니다. 기본값은 5분입니다."
+
+#: src/options.cpp
+msgid "Dynamic Bubble Grace Period"
+msgstr "포괄적 거품 보호 기간"
+
+#: src/options.cpp
+msgid ""
+"Consecutive turns a condition must be met before the reality bubble shrinks "
+"for underground, vehicle, and combat modes.  Prevents rapid resizing when "
+"briefly entering or leaving a trigger zone.  Default is 5 turns."
+msgstr ""
+"지하, 차량, 전투 상황에서 현실 거품 크기를 축소시키는데 필요한 최소 지속 시간을 턴 단위로 설정합니다. 영향받는 위치 주변을 오갈 "
+"때마다 현실 거품 크기가 변하는 것을 막아줍니다. 기본값은 5턴입니다."
+
+#: src/options.cpp
+msgid "Submap Loading"
+msgstr "서브맵 불러오기"
+
+#: src/options.cpp
+msgid ""
+"Configure how submaps are loaded and processed outside of the reality "
+"bubble."
+msgstr "현실 거품 바깥에서 서브맵을 불러오고 처리하는 과정을 설정합니다."
 
 #: src/options.cpp
 msgid "Out-of-Bubble Fire Spread"
@@ -278668,14 +278953,10 @@ msgstr "현실 거품 바깥의 화재 확산"
 
 #: src/options.cpp
 msgid ""
-"Controls whether fire in loaded submaps can spread into adjacent unloaded "
-"submaps. 'None': fire only decays, never spreads beyond the loaded set. "
-"'Adjacent': fire requests one extra layer of loaded submaps at each boundary"
-" to preserve correct spread behavior."
+"Controls whether fire can keep areas loaded outside of render distance. "
+"'None': fire burns out in place. 'Adjacent': fire can spread into unloaded "
+"areas, and keeps close enough."
 msgstr ""
-"불러온 서브맵에 있는 화재가 인접한 불러오지 않은 서브맵으로 확산될 수 있는지의 여부를 결정합니다. '없음' 설정에서는 화재의 지속시간은"
-" 경과되지만 불러온 서브맵 바깥으로 새어나가지 않습니다. '인접' 설정에서는 적절한 화재 확산 활동을 유지할 수 있도록 각 경계당 "
-"서브맵을 1단계씩 더 불러옵니다."
 
 #: src/options.cpp
 msgid "None (pause spread)"
@@ -278693,30 +278974,8 @@ msgstr "화재 확산 서브맵 제한"
 msgid ""
 "Maximum number of submaps that fire spread may keep loaded simultaneously "
 "across all dimensions. Higher values allow larger fires to be simulated "
-"correctly at the cost of CPU and memory. 0 disables out-of-bubble fire "
-"spread loading entirely. Takes effect immediately without restart."
+"correctly. 0 disables out-of-bubble fire spread loading entirely. "
 msgstr ""
-"모든 차원에서 화재가 확산될 수 있도록 불러온 상태를 유지하는 최대 서브맵 갯수를 설정합니다. 이 값이 커지면 더 큰 화재를 적절히 "
-"시뮬레이션하기 위해 CPU 및 메모리 소모량이 증가합니다. 0으로 설정하면 현실 거품 바깥의 화재 확산을 위한 맵 불러오기를 완전히 "
-"비활성화합니다. 재시작할 필요 없이 즉시 영향을 끼칩니다."
-
-#: src/options.cpp
-msgid "Reality Bubble Size"
-msgstr "현실 거품 크기"
-
-#: src/options.cpp
-msgid ""
-"Submap radius of the reality bubble (submaps visible beyond your position). "
-"Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
-"Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
-"the loaded area and memory usage; smaller values reduce both. REQUIRES A "
-"GAME RESTART to take effect — changing this mid-session will NOT resize "
-"caches or the loaded map."
-msgstr ""
-"현실 거품 (당신의 위치에서 볼 수 있는 모든 서브맵) 반경을 설정합니다. 구획 크기는 2 * 크기 + 각 면당 3 서브맵입니다. (기존"
-" 기본값은 4이며, 이는 11 * 11 크기를 의미합니다.) 최대 플레이어 시야 범위는 12 * (크기 + 1) 타일입니다. 이 값이 "
-"커지면 불러오는 영역이 증가하면서 메모리 소모량이 커집니다. 이 값이 작아지면 불러오는 영역이 감소하면서 메모리 소모량이 작아집니다. "
-"반드시 게임을 재시작해야 영향을 끼칩니다. 게임 도중에 이 설정을 변경하는 것만으로는 캐시 또는 불러온 맵의 크기가 변경되지 않습니다."
 
 #: src/options.cpp
 msgid "Power portal load radius (submaps)"
@@ -278725,11 +278984,8 @@ msgstr "에너지 포탈 불러오기 반경 (서브맵)"
 #: src/options.cpp
 msgid ""
 "Radius in submaps around each end of a power-portal link that is force-"
-"loaded while the link is active.  Larger values keep more terrain around a "
-"remote portal resident, at the cost of memory."
+"loaded while the link is active."
 msgstr ""
-"에너지 포탈 연결이 활성화되어있는 동안 불러온 상태를 강제로 유지할 각 포탈 출입구 주변 서브맵 반경입니다. 이 값이 커지면 원격 포탈 "
-"인근의 지형을 더 많이 보존하지만 메모리 소모량이 증가합니다."
 
 #: src/options.cpp
 msgid "Strict JSON checks"
@@ -279072,6 +279328,17 @@ msgid "A scaling factor that determines density of vehicle spawns."
 msgstr "차량 생성 밀도를 설정합니다. 높을수록 많아집니다."
 
 #: src/options.cpp
+msgid "Vehicle gun recoil scaling factor"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"A scaling factor that determines how strongly firing guns pushes the vehicle"
+" you are on.  0.0 disables this behavior, 1.0 uses the default mass-based "
+"recoil propulsion, and higher values exaggerate it."
+msgstr ""
+
+#: src/options.cpp
 msgid "Spawn rate scaling factor"
 msgstr "괴물 생성 계수"
 
@@ -279380,6 +279647,16 @@ msgstr "개별 선택제 전용"
 #: src/options.cpp
 msgid "No freeform"
 msgstr "자유 선택제 없음"
+
+#: src/options.cpp
+msgid "Enforce profession age ranges"
+msgstr "직업 나이 범위 강제"
+
+#: src/options.cpp
+msgid ""
+"When enabled, character ages are constrained by profession-defined age "
+"ranges when available."
+msgstr "활성화되면 직업에 사전 설정된 나이 범위가 있을 경우 캐릭터 나이에 이를 반영합니다."
 
 #: src/options.cpp
 msgid "Disables lifting requirements for vehicle parts."
@@ -279926,10 +280203,6 @@ msgid "Examples: c:food,m:iron,q:hammering,n:toolshelf,d:pipe"
 msgstr "예시: c:식품, m:강철, q:지레, n:도구선반, d:파이프"
 
 #: src/output.cpp
-msgid "unknown"
-msgstr "알 수 없음"
-
-#: src/output.cpp
 msgid "bright"
 msgstr "밝음"
 
@@ -280143,20 +280416,34 @@ msgid "Color codes: "
 msgstr "색 코드: "
 
 #: src/overmap_ui.cpp
-msgid "Type GLYPH:TEXT to set a custom glyph."
-msgstr "상징문자:텍스트를 입력하여 사용자 정의 상징문자를 설정할 수 있습니다."
+msgid "Type <color_white>COLOR;TEXT</color> to set a custom color."
+msgstr ""
 
 #: src/overmap_ui.cpp
-msgid "Type COLOR;TEXT to set a custom color."
-msgstr "색상;텍스트를 입력하여 해당 문구에 사용할 사용자 정의 색상을 설정할 수 있습니다."
+msgid "Type <color_white>GLYPH:TEXT</color> to set a custom glyph."
+msgstr ""
 
 #: src/overmap_ui.cpp
-msgid "Type SPRITE:TILE_ID to set a custom sprite."
-msgstr "SPRITE:타일 아이디를 입력하여 해당 타일에 사용할 사용자 정의 스프라이트를 설정할 수 있습니다."
+msgid "Type <color_white>SPRITE:TILE_ID</color> to set a custom sprite."
+msgstr ""
 
 #: src/overmap_ui.cpp
-msgid "Examples: B:Base | g;Loot | SPRITE:toolbox;g;Tools"
-msgstr "예시: B:거점 | g:수집품 | SPRITE:toolbox;g;도구"
+msgid "Type <color_white>LABEL:TEXT</color> to set a custom label."
+msgstr ""
+
+#: src/overmap_ui.cpp
+msgid "Use <color_white>;</color> as a separator to combine elements."
+msgstr ""
+
+#: src/overmap_ui.cpp
+msgid ""
+"Examples: <color_white>$:Bank</color> | <color_white>R;Red</color> | "
+"<color_white>SPRITE:toolbox</color> | <color_white>LABEL:Survivor "
+"City</color>"
+msgstr ""
+"예시: <color_white>$:Bank</color> | <color_white>R;Red</color> | "
+"<color_white>SPRITE:toolbox</color> | <color_white>LABEL:Survivor "
+"City</color>"
 
 #: src/overmap_ui.cpp
 msgid "Note:"
@@ -285929,6 +286216,14 @@ msgid "Remember vehicle position"
 msgstr "차량 위치 기억"
 
 #: src/vehicle_use.cpp
+msgid "Brake hold: off"
+msgstr "브레이크 유지: 꺼짐"
+
+#: src/vehicle_use.cpp
+msgid "Brake hold: on"
+msgstr "브레이크 유지: 켜짐"
+
+#: src/vehicle_use.cpp
 msgid "Choose action for the autopilot"
 msgstr "오토파일럿 행동 지정하기"
 
@@ -285967,6 +286262,14 @@ msgstr "차량 위치 추적을 중단합니다."
 #: src/vehicle_use.cpp
 msgid "You start keeping track of this vehicle's position."
 msgstr "차량 위치 추적을 시작합니다."
+
+#: src/vehicle_use.cpp
+msgid "Brake hold turned off."
+msgstr "브레이크 유지를 비활성화했습니다."
+
+#: src/vehicle_use.cpp
+msgid "Brake hold turned on."
+msgstr "브레이크 유지를 활성화했습니다."
 
 #: src/vehicle_use.cpp
 msgid "Really let go of controls while flying?  This will result in a crash."

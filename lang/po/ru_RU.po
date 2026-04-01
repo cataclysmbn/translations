@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-29 03:06+0000\n"
+"POT-Creation-Date: 2026-04-01 16:13+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -6849,6 +6849,10 @@ msgid "Plug In Oven"
 msgstr "Подключить духовку"
 
 #: data/json/construction_group.json
+msgid "Plug In Multi Cooker"
+msgstr ""
+
+#: data/json/construction_group.json
 msgid "Plug In Refrigerator"
 msgstr "Подключить холодильник"
 
@@ -13412,6 +13416,11 @@ msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid "This gun can be fired while <good>worn</good>."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This gear <bad>prevents</bad> you from <info>speaking</info>."
 msgstr "Это снаряжение <bad>не позволяет</bad> вам <info>говорить</info>."
 
@@ -14332,6 +14341,10 @@ msgstr "Пошуметь"
 msgctxt "musical_instrument"
 msgid "Play"
 msgstr "Играть"
+
+#: data/json/item_actions.json
+msgid "Scan with sonar"
+msgstr ""
 
 #: data/json/item_actions.json
 msgid "Mask scent"
@@ -20304,6 +20317,10 @@ msgstr "стрижка волос"
 #: data/json/player_activities.json
 msgid "playing with your pet"
 msgstr "игра с питомцем"
+
+#: data/json/player_activities.json
+msgid "training your pet"
+msgstr ""
 
 #: data/json/player_activities.json
 msgid "trying to fall asleep"
@@ -30768,6 +30785,14 @@ msgstr[1] "Если вы это видите, то это баг."
 msgstr[2] "Если вы это видите, то это баг."
 msgstr[3] "Если вы это видите, то это баг."
 
+#: data/json/sonar.lua
+msgid "The sonar pulse finds nothing new."
+msgstr ""
+
+#: data/json/sonar.lua
+msgid "The sonar pulse maps nearby underwater terrain."
+msgstr ""
+
 #: data/json/species.json
 msgid "everything (debug)"
 msgid_plural "everything (debug)s"
@@ -37690,6 +37715,20 @@ msgstr ""
 "Используется для приготовления или разогрева еды при помощи электричества. "
 "Будет работать, если подключить к электросети. Внутри можно безопасно "
 "развести огонь."
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/items/tool/cooking.json
+msgid "multi cooker"
+msgid_plural "multi cookers"
+msgstr[0] "мультиварка"
+msgstr[1] "мультиварки"
+msgstr[2] "мультиварок"
+msgstr[3] "мультиварка"
+
+#. ~ Description for multi cooker
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Used for automatic cooking food with electricity."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/items/vehicle/rigs.json
@@ -76403,6 +76442,22 @@ msgstr ""
 "видов повреждений. Она помечена как «продвинутый боевой шлем»."
 
 #: data/json/items/armor/helmets.json
+msgid "steel combat helmet"
+msgid_plural "steel combat helmets"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'steel combat helmet'}
+#: data/json/items/armor/helmets.json
+msgid ""
+"A heavy helmet made of hardened steel with a chin strap.  Various designs "
+"were once used by armies around the world, modern ballistic helmets have "
+"mostly relegated this to military surplus."
+msgstr ""
+
+#: data/json/items/armor/helmets.json
 msgid "tactical full helmet"
 msgid_plural "tactical full helmets"
 msgstr[0] "полный тактический шлем"
@@ -87781,13 +87836,10 @@ msgstr[3] "короткий гидрокостюм"
 #. ~ Description for {'str': 'spring suit'}
 #: data/json/items/armor/swimming.json
 msgid ""
-"A long-sleeved spring wetsuit with pink color details and cleavage-"
-"enhancing, hip-accentuating construction.  Not as protective as a full-body "
-"suit, but also less restrictive."
+"A pink neoprene wetsuit that leaves the legs exposed.  Not as protective as "
+"a full-body suit, but also less restrictive and more comfortable in the "
+"summer."
 msgstr ""
-"Гидрокостюм для сёрфинга с длинными рукавами, оформлен в розовых цветах. "
-"Обеспечивает меньшую защиту по сравнению с обычным гидрокостюмом, зато "
-"меньше сковывает."
 
 #: data/json/items/armor/swimming.json
 msgid "faraday shark suit"
@@ -139944,14 +139996,6 @@ msgstr ""
 "чаши. Используется для помола зерна, но времени на это будет уходить больше,"
 " если сравнивать с более сложными методами."
 
-#: data/json/items/tool/cooking.json
-msgid "multi cooker"
-msgid_plural "multi cookers"
-msgstr[0] "мультиварка"
-msgstr[1] "мультиварки"
-msgstr[2] "мультиварок"
-msgstr[3] "мультиварка"
-
 #. ~ Description for {'str': 'multi cooker'}
 #: data/json/items/tool/cooking.json
 msgid ""
@@ -141031,6 +141075,21 @@ msgstr ""
 "Счётчик Гейгера замеряет радиационный фон. Сейчас находится режиме "
 "сканирования и, в случае наличия радиоизлучения, будет издавать щелчки. При "
 "использовании можно просканировать себя, местность, или выключить. Включён."
+
+#: data/json/items/tool/electronics.json
+msgid "handheld sonar"
+msgid_plural "handheld sonars"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'handheld sonar'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"A rugged sonar unit with a compact transducer and display.  Activate it to "
+"ping nearby underwater terrain and sketch what you find onto the overmap."
+msgstr ""
 
 #: data/json/items/tool/electronics.json
 msgid "hand-crank charger"
@@ -213470,6 +213529,17 @@ msgid "ALL"
 msgstr "ВСЁ"
 
 #. ~ Crafting recipes subcategory of 'WEAPON' category
+#. ~ Crafting recipes subcategory of 'AMMO' category
+#. ~ Crafting recipes subcategory of 'FOOD' category
+#. ~ Crafting recipes subcategory of 'CHEM' category
+#. ~ Crafting recipes subcategory of 'ELECTRONIC' category
+#. ~ Crafting recipes subcategory of 'ARMOR' category
+#. ~ Crafting recipes subcategory of 'OTHER' category
+#: data/json/recipes/recipes.json
+msgid "NESTED"
+msgstr ""
+
+#. ~ Crafting recipes subcategory of 'WEAPON' category
 #: data/json/recipes/recipes.json
 msgid "BASHING"
 msgstr "УДАРНОЕ"
@@ -227043,6 +227113,18 @@ msgstr ""
 "транспорта. Вы можете «e» изучить тайл, чтобы получить доступ к управлению, "
 "или использовать клавишу управления (по умолчанию «^»)."
 
+#: data/json/vehicleparts/controls.json
+msgid "sonar array"
+msgstr ""
+
+#. ~ Description for {'str': 'sonar array'}
+#: data/json/vehicleparts/controls.json
+msgid ""
+"A set of sonar transducers and electronics used to scan underwater terrain."
+"  Activate it from the vehicle controls to reveal local underwater overmap "
+"tiles."
+msgstr ""
+
 #. ~ Description for {'str': 'security camera'}
 #: data/json/vehicleparts/controls.json
 msgid ""
@@ -229085,6 +229167,10 @@ msgid "roof-mounted external tank (200L)"
 msgstr "внешний бак на крышу (200 л)"
 
 #: data/json/vehicleparts/tanks.json
+msgid "mounted external tank (200L)"
+msgstr "смонтированный внешний бак (200 л)"
+
+#: data/json/vehicleparts/tanks.json
 msgid "wooden barrel (100L)"
 msgstr "деревянная бочка (100Л)"
 
@@ -230605,6 +230691,66 @@ msgstr "безбортовый грузовик"
 #: data/json/vehicles/trucks.json
 msgid "Diesel Flatbed Truck"
 msgstr "дизельный бортовой грузовик"
+
+#: data/json/vehicles/trucks.json
+msgid "Avgas Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "JP-8 Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Diesel Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Fertilizer Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Bleach Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Ammonia Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Gas Tanker"
+msgstr "Бензовоз"
+
+#: data/json/vehicles/trucks.json
+msgid "Water Tanker"
+msgstr "Водовоз"
+
+#: data/json/vehicles/trucks.json
+msgid "Ether Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Formaldehyde Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Cooking Oil Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Plutonium Slurry Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Sewage Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Sulfuric Acid Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Milk Tanker"
+msgstr ""
 
 #: data/json/vehicles/trucks.json
 msgid "Pickup Truck"
@@ -238950,14 +239096,6 @@ msgstr ""
 "Большая и сложная станция управления из военной машины, включая пульт с "
 "камерами, рулевое управление и переключатели электроники."
 
-#: data/mods/Aftershock/vehicles/vehicle_overrides.json
-msgid "Gas Tanker"
-msgstr "Бензовоз"
-
-#: data/mods/Aftershock/vehicles/vehicle_overrides.json
-msgid "Water Tanker"
-msgstr "Водовоз"
-
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
 msgid "cargo trough"
 msgstr "грузовое корыто"
@@ -239065,10 +239203,6 @@ msgid ""
 msgstr ""
 "Большая и сложная панель с рычагами управления и несколькими светодиодными "
 "тачскринами для управления системами транспорта."
-
-#: data/mods/Aftershock/vehicles/vehicle_parts.json
-msgid "mounted external tank (200L)"
-msgstr "смонтированный внешний бак (200 л)"
 
 #. ~ Description for {'str': 'ultralight frame'}
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -278610,6 +278744,17 @@ msgstr ""
 "Садовый ящик небольшого размера, для выращивания растений внутри помещений.\n"
 "Свежий урожай на кончиках ваших пальцев."
 
+#: data/mods/gunchair/gunchair.json data/mods/gunchair/modinfo.json
+msgid "GunChair™"
+msgstr ""
+
+#. ~ Description for GunChair™
+#: data/mods/gunchair/modinfo.json
+msgid ""
+"Own a minigun-propelled armchair for home defense, Just as the founding "
+"fathers intended"
+msgstr ""
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr "В лесах"
@@ -281097,7 +281242,7 @@ msgstr "Якорь"
 msgid "No stations found on this tile."
 msgstr "В этом месте нет станций."
 
-#: data/mods/teleportation_mod/main.lua
+#: data/mods/teleportation_mod/main.lua src/handle_action.cpp
 msgid "Do what?"
 msgstr "Что сделать?"
 
@@ -285048,6 +285193,20 @@ msgstr "Вы закончили закапывать %s."
 #, c-format
 msgid "Playing with your %s has lifted your spirits a bit."
 msgstr "Игра с %s подняла вам настроение."
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid ""
+"Training your %s has finally succeeded, they should be less skittish in "
+"combat now."
+msgstr ""
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid ""
+"Training your %s takes time, it seems they are making a bit of progress at "
+"least."
+msgstr ""
 
 #: src/activity_handlers.cpp
 msgid "You open up your kit and shave."
@@ -293454,7 +293613,7 @@ msgstr ""
 msgid "Origin: "
 msgstr "Источник: "
 
-#: src/construction.cpp src/item.cpp
+#: src/construction.cpp src/crafting_gui.cpp src/item.cpp
 msgid "Category: "
 msgstr "Категория: "
 
@@ -294835,6 +294994,25 @@ msgstr "НОВОЕ!"
 msgid "%2dx %s"
 msgstr "x%2d %s"
 
+#: src/crafting_gui.cpp src/output.cpp
+msgid "unknown"
+msgstr "неизвестно"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "Known recipes: <color_light_blue>%d</color>"
+msgstr ""
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "<color_light_blue>Origin: '%s'</color>"
+msgstr ""
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "Category: <color_magenta>%s</color>"
+msgstr ""
+
 #: src/crafting_gui.cpp
 msgid "You can't do that!  Press [<color_yellow>ESC</color>]!"
 msgstr "Вы не можете сделать это! Нажмите [<color_yellow>ESC</color>]!"
@@ -295947,7 +296125,7 @@ msgstr ""
 msgid "Rename character:"
 msgstr "Переименовать персонажа:"
 
-#: src/debug_menu.cpp src/newcharacter.cpp
+#: src/debug_menu.cpp
 msgid "Enter age in years.  Minimum 16, maximum 55"
 msgstr "Введите ваш возраст. От 16 до 55."
 
@@ -302289,10 +302467,6 @@ msgid "%1$s from %2$s (%3$d)"
 msgstr "%1$sв %2$s (%3$d)"
 
 #: src/handle_action.cpp
-msgid "Draw what?"
-msgstr "Взять что?"
-
-#: src/handle_action.cpp
 msgid "Change to which movement mode?"
 msgstr "Какой режим передвижения включить?"
 
@@ -305402,6 +305576,72 @@ msgid ""
 msgstr ""
 "Этот плутониевый генератор имеет серьезные меры безопасности. Без "
 "необходимого удостоверения личности вам придётся извлекать его вручную."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose option:"
+msgstr "Выберите опцию:"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Stop crafting"
+msgstr "Прекратить сборку"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Remove Product"
+msgstr "Вынуть содержимое"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Batteries are low."
+msgstr "Батарея разряжена."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Start crafting "
+msgstr "Начать сборку"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Really stop?"
+msgstr "Действительно прекратить?"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "You don't have a suitable container to store your %s."
+msgstr "У вас нет подходящего контейнера для хранения %s."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "You got the %s from the %s."
+msgstr "Вы получили %s из %s."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose desired recipe:"
+msgstr "Выберите желаемый рецепт:"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "%s (%1.f charges)"
+msgstr "%s (%1.f заряда)"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "You don't know of anything you could craft with this."
+msgstr "Вы не знаете, что можно из этого сделать."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose batch count:"
+msgstr "Укажите количество порций:"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "%s batches (%1.f charges)"
+msgstr "порций: %s (%1.f зарядов)"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "The %s needs %d charges to create this."
+msgstr "%s требуется %d зарядов, чтобы создать это."
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "The %s begins to hum."
+msgstr "%s начинает гудеть."
 
 #: src/iexamine_elevator.cpp
 msgid " (this floor)"
@@ -312983,72 +313223,6 @@ msgid "You're surrounded by aggressive multi-cookers!"
 msgstr "Вы окружены агрессивными мультиварками!"
 
 #: src/iuse_actor.cpp
-msgid "Choose option:"
-msgstr "Выберите опцию:"
-
-#: src/iuse_actor.cpp
-msgid "Stop crafting"
-msgstr "Прекратить сборку"
-
-#: src/iuse_actor.cpp
-msgid "Batteries are low."
-msgstr "Батарея разряжена."
-
-#: src/iuse_actor.cpp
-msgid "Start crafting "
-msgstr "Начать сборку"
-
-#: src/iuse_actor.cpp
-msgid "Remove Product"
-msgstr "Вынуть содержимое"
-
-#: src/iuse_actor.cpp
-msgid "Really stop?"
-msgstr "Действительно прекратить?"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You don't have a suitable container to store your %s."
-msgstr "У вас нет подходящего контейнера для хранения %s."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You got the %s from the %s."
-msgstr "Вы получили %s из %s."
-
-#: src/iuse_actor.cpp
-msgid "Choose desired recipe:"
-msgstr "Выберите желаемый рецепт:"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "%s (%1.f charges)"
-msgstr "%s (%1.f заряда)"
-
-#: src/iuse_actor.cpp
-msgid "You don't know of anything you could craft with this."
-msgstr "Вы не знаете, что можно из этого сделать."
-
-#: src/iuse_actor.cpp
-msgid "Choose batch count:"
-msgstr "Укажите количество порций:"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "%s batches (%1.f charges)"
-msgstr "порций: %s (%1.f зарядов)"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s needs %d charges to create this."
-msgstr "%s требуется %d зарядов, чтобы создать это."
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s begins to hum."
-msgstr "%s начинает гудеть."
-
-#: src/iuse_actor.cpp
 msgid "You can't do *that* while mounted"
 msgstr "Во время езды верхом *этого* делать нельзя."
 
@@ -320384,6 +320558,11 @@ msgid "Play with %s"
 msgstr "Поиграть с: %s"
 
 #: src/monexamine.cpp
+#, c-format
+msgid "Train %s"
+msgstr ""
+
+#: src/monexamine.cpp
 msgid "Untie"
 msgstr "Отвязать"
 
@@ -322875,6 +323054,11 @@ msgstr "Вы уверены, что готовы?"
 #: src/newcharacter.cpp
 msgid "Enter name.  Cancel to delete all."
 msgstr "Введите имя. Отмените, чтобы всё удалить."
+
+#: src/newcharacter.cpp
+#, c-format
+msgid "Enter age in years.  Minimum %d, maximum %d"
+msgstr ""
 
 #: src/newcharacter.cpp
 msgid "Name of template:"
@@ -325726,6 +325910,16 @@ msgstr ""
 "Подсветка непрочитанных рецептов для отслеживания того, что вы изучаете."
 
 #: src/options.cpp
+msgid "Enable nested crafting categories"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Show nested crafting categories in the crafting UI.  When disabled, nested "
+"recipes appear directly in their normal subcategories."
+msgstr ""
+
+#: src/options.cpp
 msgid "Highlight unread items"
 msgstr "Подсвечивать неосмотренные предметы"
 
@@ -326468,15 +326662,10 @@ msgstr "Включить уровни проработки монстров"
 #: src/options.cpp
 msgid ""
 "Enable level-of-detail processing for monsters.  When enabled, distant or "
-"wandering monsters are assigned reduced-fidelity AI tiers (coarse path reuse"
-" or a simple macro step) to save CPU.  When disabled, every monster runs "
-"full AI every turn regardless of distance."
+"wandering monsters are assigned AI tiers. Higher tiers are processed less "
+"often and skip certain functions.  When disabled, every monster runs full AI"
+" every turn regardless of distance."
 msgstr ""
-"Включает уровни проработки монстров. Когда опция активна, удалённым или "
-"бродящим монстрам назначаются уровни ИИ с пониженной точностью (повторное "
-"использование приблизительного маршрута пути или простой макрошаг) для "
-"экономии ресурсов процессора. Если опция не активна, каждый монстр "
-"использует полный ИИ в каждом ходу, независимо от расстояния."
 
 #: src/options.cpp
 msgid "Action Budget"
@@ -326487,16 +326676,9 @@ msgid ""
 "Minimum number of monsters that enter the move loop per turn.  The actual "
 "budget is the larger of this value and the current Tier-0 (full-AI) monster "
 "count, so full-AI monsters are never skipped.  Higher values process more "
-"distant monsters each turn at a CPU cost.  0 means only Tier-0 monsters run "
-"(no extra Tier-1 budget)."
+"distant monsters each turn.  0 means only Tier-0 monsters run (no extra "
+"Tier-1 budget)."
 msgstr ""
-"Минимальное количество монстров, которые попадут в цикл вычисления "
-"перемещения каждый ход. Фактический лимит равен большему из этих значений и "
-"текущего количества монстров уровня 0 (с полным ИИ), поэтому монстры с "
-"полным ИИ никогда не пропускаются. Более высокие значения позволяют "
-"обрабатывать монстров, находящихся на большем расстоянии, за счёт увеличения"
-" нагрузки на процессор. Значение 0 означает, что перемещаются только монстры"
-" уровня 0 (без дополнительного лимита для уровня 1)."
 
 #: src/options.cpp
 msgid "Macro Step Interval"
@@ -326519,13 +326701,9 @@ msgstr "Радиус полноценного ИИ"
 
 #: src/options.cpp
 msgid ""
-"Chebyshev distance threshold for full-AI (Tier 0) monsters.  Monsters within"
-" this radius run the complete AI every turn.  Must be less than the Coarse "
-"AI Radius."
+"Monsters within this radius run the complete AI every turn.  Must be less "
+"than the Coarse AI Radius."
 msgstr ""
-"Пороговое значение расстояния Чебышёва для монстров с полноценным ИИ "
-"(уровень 0). Монстры, находящиеся в пределах этого радиуса, каждый ход "
-"выполняют полный цикл ИИ. Должно быть меньше радиуса грубого ИИ."
 
 #: src/options.cpp
 msgid "Coarse AI Radius"
@@ -326533,16 +326711,10 @@ msgstr "Радиус упрощённого ИИ"
 
 #: src/options.cpp
 msgid ""
-"Chebyshev distance threshold for coarse-AI (Tier 1) monsters.  Monsters "
-"between the Full AI Radius and this distance use cached paths and skip "
-"expensive faction queries.  Monsters beyond this distance are Tier-2 (macro "
-"step only)."
+"Monsters between the Full AI Radius and this distance use cached paths and "
+"skip expensive faction queries.  Monsters beyond this distance are Tier-2 "
+"(macro step only)."
 msgstr ""
-"Пороговое значение расстояния Чебышёва для монстров с упрощённым ИИ (уровень"
-" 1). Монстры, находящиеся на расстоянии от полного радиуса действия ИИ до "
-"этого значения, используют кэшированные траектории и пропускают сложные "
-"вычисления фракций. Монстры, находящиеся за пределами этого расстояния, "
-"относятся к уровню 2 (только макрошаг)."
 
 #: src/options.cpp
 msgid "Demotion Cooldown"
@@ -326567,14 +326739,8 @@ msgstr "Интервал упрощённой проверки запахов"
 msgid ""
 "How many turns elapse between scent-tracking checks for Tier-1 (coarse) "
 "monsters.  At 1 they check scent every turn (full fidelity); at 3 (default) "
-"only once every 3 turns.  Higher values reduce CPU cost for mid-range "
-"hordes."
+"only once every 3 turns. "
 msgstr ""
-"Сколько ходов проходит между проверками отслеживания по запаху для монстров "
-"1-го уровня (упрощённый ИИ). При значении 1 проверка запаха происходит "
-"каждый ход (полная точность); при значении 3 (по умолчанию) — только раз в 3"
-" хода. Более высокие значения снижают нагрузку на процессор при работе с "
-"ордами на умеренном отдалении."
 
 #: src/options.cpp
 msgid "Group Morale Max Tier"
@@ -326584,14 +326750,8 @@ msgstr "Максимальный уровень групповой морали"
 msgid ""
 "Highest LOD tier that participates in group-morale and swarming "
 "calculations.  0 = Tier-0 only (default, cheapest).  1 = Tier-0 and Tier-1 "
-"monsters also run group-morale/swarm checks at the cost of the extra O(M²) "
-"faction scan for mid-range monsters."
+"monsters also run group-morale/swarm checks. "
 msgstr ""
-"Наивысший уровень проработки, учитываемый при расчёте группового морального "
-"духа и сбора в скопление. 0 = Только уровень 0 (по умолчанию, самый "
-"экономичный). 1 = Монстры уровней 0 и 1 также проходят проверку группового "
-"морального духа и скоплений, что требует дополнительного сканирования "
-"фракций со сложностью O(M²) для монстров на умеренном отдалении."
 
 #: src/options.cpp
 msgid "3D Field of Vision"
@@ -326634,8 +326794,8 @@ msgstr ""
 
 #: src/options.cpp
 msgid ""
-"When enabled, obstacles at other z-levels correctly block horizontal line of"
-" sight.  Requires 3D FoV.  Slower than disabled."
+"When enabled, obstacles at other z-levels correctly cast 3D shadows.  "
+"Requires 3D FoV.  Significantly slower than disabled."
 msgstr ""
 
 #: src/options.cpp
@@ -326674,16 +326834,10 @@ msgstr "Включить многопоточность"
 #: src/options.cpp
 msgid ""
 "Enable worker-thread parallelism for expensive per-turn computations "
-"(monster planning, map-cache building, scent map updates).  Disable to run "
-"everything on the main thread — useful for debugging, reproducibility "
+"(monster planning, map-cache building, scent map updates, etc).  Disable to "
+"run everything on the main thread — useful for debugging, reproducibility "
 "testing, or machines where thread overhead exceeds gain.  Requires restart."
 msgstr ""
-"Включение параллелизма рабочих потоков для ресурсоёмких вычислений каждого "
-"хода (планирование активности монстров, построение кэша карты, обновление "
-"карты запахов). Отключение приведёт к обработке всех вычислений на главном "
-"потоке — полезно для отладки и воспроизводимости при тестах, или на "
-"оборудовании, где накладные расходы на распределение потоков превышают "
-"выгоду. Требуется перезапуск."
 
 #: src/options.cpp
 msgid "Thread Pool Worker Count"
@@ -326777,37 +326931,116 @@ msgid ""
 "Keep a border of submaps loaded around the reality bubble.  These are pre-"
 "loaded from disk in the background so that map shifts are faster (the data "
 "is already in memory).  Uses more memory but reduces stalls when the map "
-"scrolls.  Takes effect immediately without restart."
+"scrolls.  "
 msgstr ""
-"Загрузка области подкарт вокруг пузыря реальности. Они предварительно "
-"загружаются с диска на фоне, чтобы ускорить смену карт (данные уже находятся"
-" в памяти). Требует большего объема памяти, но сокращает задержки при "
-"прокрутке карты. Изменение вступает в силу немедленно, без перезапуска."
 
 #: src/options.cpp
 msgid "Reality Bubble"
 msgstr "Пузырь реальности"
 
 #: src/options.cpp
-msgid "Configure how submaps are loaded and processed."
-msgstr "Настройка загрузки и обработки подкарт."
+msgid "Configure how the reality bubble functions."
+msgstr ""
 
 #: src/options.cpp
-msgid "World Tick Interval"
-msgstr "Интервал глобального таймера"
+msgid "Reality Bubble Size"
+msgstr "Размер пузыря реальности"
 
 #: src/options.cpp
 msgid ""
-"How many turns elapse between out-of-bubble world ticks.  1 processes every "
-"loaded submap outside the player's reality bubble each turn at full "
-"fidelity. Higher values amortize cost by batching N turns of simulation into"
-" a single pass — useful on slow hardware."
+"Submap radius of the reality bubble (submaps visible beyond your position). "
+"Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
+"Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
+"the loaded area and memory usage; smaller values reduce both. "
 msgstr ""
-"Количество ходов, которое проходит для мира, находящегося за пределами "
-"пузыря реальности. Значение 1 обрабатывает каждую подкарту за пределами "
-"реальности окружения игрока каждый ход в полной мере. Более высокие значения"
-" уменьшают накладные расходы, обрабатывая N ходов симуляции за один проход —"
-" полезно на медленном оборудовании."
+
+#: src/options.cpp
+msgid "Mobile Activity Bubble Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is performing a "
+"mobile activity (crafting, construction, etc.).  0 disables the feature.  "
+"Must be smaller than Reality Bubble Size to take effect."
+msgstr ""
+
+#: src/options.cpp
+msgid "Idle Activity Bubble Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is performing an "
+"idle activity (sleeping, reading, waiting, etc.).  0 disables the feature.  "
+"Must be smaller than Reality Bubble Size to take effect."
+msgstr ""
+
+#: src/options.cpp
+msgid "Underground Reality Bubble Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is underground and"
+" indoors (no sky visible).  0 disables the feature.  Must be smaller than "
+"Reality Bubble Size to take effect."
+msgstr ""
+
+#: src/options.cpp
+msgid "Vehicle Reality Bubble Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is actively "
+"driving a vehicle  or mounted on a creature. Useful with a high render "
+"distance to reduce lag at speed.  0 disables the feature.  Must be smaller "
+"than Reality Bubble Size to take effect."
+msgstr ""
+
+#: src/options.cpp
+msgid "Combat Reality Bubble Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while hostile creatures are visible"
+" nearby.  Uses the same detection range as safe mode.  0 disables the "
+"feature.  Must be smaller than Reality Bubble Size to take effect."
+msgstr ""
+
+#: src/options.cpp
+msgid "Activity Bubble Grace Period"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Minimum length of activity in minutes before the reality bubble shrinks.  "
+"Acts as a safety net to avoid unnecessary resizes for short tasks.  Default "
+"is 5 minutes."
+msgstr ""
+
+#: src/options.cpp
+msgid "Dynamic Bubble Grace Period"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Consecutive turns a condition must be met before the reality bubble shrinks "
+"for underground, vehicle, and combat modes.  Prevents rapid resizing when "
+"briefly entering or leaving a trigger zone.  Default is 5 turns."
+msgstr ""
+
+#: src/options.cpp
+msgid "Submap Loading"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Configure how submaps are loaded and processed outside of the reality "
+"bubble."
+msgstr ""
 
 #: src/options.cpp
 msgid "Out-of-Bubble Fire Spread"
@@ -326815,15 +327048,10 @@ msgstr "Пожары вне пузыря реальности"
 
 #: src/options.cpp
 msgid ""
-"Controls whether fire in loaded submaps can spread into adjacent unloaded "
-"submaps. 'None': fire only decays, never spreads beyond the loaded set. "
-"'Adjacent': fire requests one extra layer of loaded submaps at each boundary"
-" to preserve correct spread behavior."
+"Controls whether fire can keep areas loaded outside of render distance. "
+"'None': fire burns out in place. 'Adjacent': fire can spread into unloaded "
+"areas, and keeps close enough."
 msgstr ""
-"Управляет распространением огня из загруженных подкарт в незагруженные. "
-"«Нет»: огонь может только затухать, но не распространяться. «Соседние»: "
-"огонь запросит загрузку дополнительного слоя подкарт на каждой границе с "
-"пожаром, чтобы сохранить корректную модель распространения."
 
 #: src/options.cpp
 msgid "None (pause spread)"
@@ -326841,35 +327069,8 @@ msgstr "Порог подкарт распространения пожаров"
 msgid ""
 "Maximum number of submaps that fire spread may keep loaded simultaneously "
 "across all dimensions. Higher values allow larger fires to be simulated "
-"correctly at the cost of CPU and memory. 0 disables out-of-bubble fire "
-"spread loading entirely. Takes effect immediately without restart."
+"correctly. 0 disables out-of-bubble fire spread loading entirely. "
 msgstr ""
-"Максимальное значение загруженных подкарт во всех измерениях, которое может "
-"поддерживаться существующими пожарами. Более высокие значения позволяют "
-"обрабатывать большие пожары реалистично, но требовательны к процессору и "
-"памяти. Значение 0 полностью отключает пожары вне пузыря реальности. "
-"Изменение вступает в силу немедленно, без перезапуска."
-
-#: src/options.cpp
-msgid "Reality Bubble Size"
-msgstr "Размер пузыря реальности"
-
-#: src/options.cpp
-msgid ""
-"Submap radius of the reality bubble (submaps visible beyond your position). "
-"Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
-"Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
-"the loaded area and memory usage; smaller values reduce both. REQUIRES A "
-"GAME RESTART to take effect — changing this mid-session will NOT resize "
-"caches or the loaded map."
-msgstr ""
-"Радиус подкарт для пузыря реальности (подкарт, окружающих вашу зону "
-"видимости). Размер сетки = 2 × размер + 3 подкарты на одну сторону (размер 4"
-" → 11×11, стандартное значение старых версий игры). Максимальная дальность "
-"видимости игрока = 12 × (размер + 1) тайлов. Более высокие значения увеличат"
-" загруженную область и нагрузят оборудование, и наоборот. ТРЕБУЕТСЯ "
-"ПЕРЕЗАПУСК ИГРЫ — изменение в реальном времени НЕ изменит размер кэша "
-"загруженной карты."
 
 #: src/options.cpp
 msgid "Power portal load radius (submaps)"
@@ -326878,12 +327079,8 @@ msgstr "Радиус загрузки силовых порталов (подк�
 #: src/options.cpp
 msgid ""
 "Radius in submaps around each end of a power-portal link that is force-"
-"loaded while the link is active.  Larger values keep more terrain around a "
-"remote portal resident, at the cost of memory."
+"loaded while the link is active."
 msgstr ""
-"Радиус в подкартах для каждого конца силовых порталов для загрузки во время "
-"существования активного соединения между ними. Большие значения поддерживают"
-" загруженной большую область, за счёт увеличенного расхода памяти."
 
 #: src/options.cpp
 msgid "Strict JSON checks"
@@ -327265,6 +327462,17 @@ msgid "A scaling factor that determines density of vehicle spawns."
 msgstr "Множитель, определяющий частоту появления различного транспорта."
 
 #: src/options.cpp
+msgid "Vehicle gun recoil scaling factor"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"A scaling factor that determines how strongly firing guns pushes the vehicle"
+" you are on.  0.0 disables this behavior, 1.0 uses the default mass-based "
+"recoil propulsion, and higher values exaggerate it."
+msgstr ""
+
+#: src/options.cpp
 msgid "Spawn rate scaling factor"
 msgstr "Множитель зарождения монстров"
 
@@ -327605,6 +327813,16 @@ msgstr "Только несколько пулов"
 #: src/options.cpp
 msgid "No freeform"
 msgstr "Запрет на свободный режим"
+
+#: src/options.cpp
+msgid "Enforce profession age ranges"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"When enabled, character ages are constrained by profession-defined age "
+"ranges when available."
+msgstr ""
 
 #: src/options.cpp
 msgid "Disables lifting requirements for vehicle parts."
@@ -328215,10 +328433,6 @@ msgid "Examples: c:food,m:iron,q:hammering,n:toolshelf,d:pipe"
 msgstr "Например: c:food,m:iron,q:hammering,n:toolshelf,d:pipe"
 
 #: src/output.cpp
-msgid "unknown"
-msgstr "неизвестно"
-
-#: src/output.cpp
 msgid "bright"
 msgstr "светло"
 
@@ -328436,20 +328650,31 @@ msgid "Color codes: "
 msgstr "Коды цвета: "
 
 #: src/overmap_ui.cpp
-msgid "Type GLYPH:TEXT to set a custom glyph."
-msgstr "Напишите СИМВОЛ:ТЕКСТ, чтобы установить пользовательский символ."
+msgid "Type <color_white>COLOR;TEXT</color> to set a custom color."
+msgstr ""
 
 #: src/overmap_ui.cpp
-msgid "Type COLOR;TEXT to set a custom color."
-msgstr "Напишите ЦВЕТ;ТЕКСТ, чтобы установить пользовательский цвет."
+msgid "Type <color_white>GLYPH:TEXT</color> to set a custom glyph."
+msgstr ""
 
 #: src/overmap_ui.cpp
-msgid "Type SPRITE:TILE_ID to set a custom sprite."
-msgstr "Используйте SPRITE:TILE_ID для установки кастомного спрайта."
+msgid "Type <color_white>SPRITE:TILE_ID</color> to set a custom sprite."
+msgstr ""
 
 #: src/overmap_ui.cpp
-msgid "Examples: B:Base | g;Loot | SPRITE:toolbox;g;Tools"
-msgstr "Примеры: B:Base | g;Loot | SPRITE:toolbox;g;Tools"
+msgid "Type <color_white>LABEL:TEXT</color> to set a custom label."
+msgstr ""
+
+#: src/overmap_ui.cpp
+msgid "Use <color_white>;</color> as a separator to combine elements."
+msgstr ""
+
+#: src/overmap_ui.cpp
+msgid ""
+"Examples: <color_white>$:Bank</color> | <color_white>R;Red</color> | "
+"<color_white>SPRITE:toolbox</color> | <color_white>LABEL:Survivor "
+"City</color>"
+msgstr ""
 
 #: src/overmap_ui.cpp
 msgid "Note:"
@@ -334372,6 +334597,14 @@ msgid "Remember vehicle position"
 msgstr "Запомнить положение транспорта"
 
 #: src/vehicle_use.cpp
+msgid "Brake hold: off"
+msgstr ""
+
+#: src/vehicle_use.cpp
+msgid "Brake hold: on"
+msgstr ""
+
+#: src/vehicle_use.cpp
 msgid "Choose action for the autopilot"
 msgstr "Выберите действие для автопилота"
 
@@ -334414,6 +334647,14 @@ msgstr "Вы прекращаете следить за положением т�
 #: src/vehicle_use.cpp
 msgid "You start keeping track of this vehicle's position."
 msgstr "Вы начинаете следить за положением транспортного средства."
+
+#: src/vehicle_use.cpp
+msgid "Brake hold turned off."
+msgstr ""
+
+#: src/vehicle_use.cpp
+msgid "Brake hold turned on."
+msgstr ""
 
 #: src/vehicle_use.cpp
 msgid "Really let go of controls while flying?  This will result in a crash."

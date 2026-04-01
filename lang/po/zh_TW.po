@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-29 03:06+0000\n"
+"POT-Creation-Date: 2026-04-01 16:13+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -5693,6 +5693,10 @@ msgstr "插电克隆缸"
 #: data/json/construction_group.json
 msgid "Plug In Oven"
 msgstr "插电烤箱"
+
+#: data/json/construction_group.json
+msgid "Plug In Multi Cooker"
+msgstr "插电多功能炊具"
 
 #: data/json/construction_group.json
 msgid "Plug In Refrigerator"
@@ -11819,6 +11823,11 @@ msgstr "这个物品在 <info>浸入水中</info> 时会 <bad>停止运作</bad>
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid "This gun can be fired while <good>worn</good>."
+msgstr "这把枪可以在<good>穿戴</good>时开火。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This gear <bad>prevents</bad> you from <info>speaking</info>."
 msgstr "这件装备会 <bad>阻挡</bad>你 <info>说话的声音</info>。"
 
@@ -12710,6 +12719,10 @@ msgstr "弄點聲音"
 msgctxt "musical_instrument"
 msgid "Play"
 msgstr "遊玩"
+
+#: data/json/item_actions.json
+msgid "Scan with sonar"
+msgstr "使用声纳扫描"
 
 #: data/json/item_actions.json
 msgid "Mask scent"
@@ -18379,6 +18392,10 @@ msgstr "剪頭髮"
 #: data/json/player_activities.json
 msgid "playing with your pet"
 msgstr "跟你的寵物玩耍"
+
+#: data/json/player_activities.json
+msgid "training your pet"
+msgstr "训练你的宠物"
 
 #: data/json/player_activities.json
 msgid "trying to fall asleep"
@@ -27248,6 +27265,14 @@ msgid "seeing this is a bug"
 msgid_plural "seeing this is a bug"
 msgstr[0] "見到這句話本身代表出現bug了"
 
+#: data/json/sonar.lua
+msgid "The sonar pulse finds nothing new."
+msgstr "声纳脉冲没有发现任何新内容。"
+
+#: data/json/sonar.lua
+msgid "The sonar pulse maps nearby underwater terrain."
+msgstr "声纳脉冲绘制了附近的水下地形图。"
+
 #: data/json/species.json
 msgid "everything (debug)"
 msgid_plural "everything (debug)s"
@@ -33838,6 +33863,17 @@ msgid ""
 "Used for heating and cooking food with electricity.  Might still work, if "
 "you manage to power it.  It's safe to light a fire inside of it."
 msgstr "使用电力加热和烹饪食物。如果给它通上电的话也许还能用。是一个可靠的火焰容器。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/items/tool/cooking.json
+msgid "multi cooker"
+msgid_plural "multi cookers"
+msgstr[0] "大同電鍋"
+
+#. ~ Description for multi cooker
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Used for automatic cooking food with electricity."
+msgstr "用于通电自动烹饪食物。"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/items/vehicle/rigs.json
@@ -63945,6 +63981,19 @@ msgid ""
 msgstr "一顶沉重的头盔，能很好地保护你免受各种伤害。上面有个标记写着\"先进作战头盔\"。"
 
 #: data/json/items/armor/helmets.json
+msgid "steel combat helmet"
+msgid_plural "steel combat helmets"
+msgstr[0] "钢制战斗头盔"
+
+#. ~ Description for {'str': 'steel combat helmet'}
+#: data/json/items/armor/helmets.json
+msgid ""
+"A heavy helmet made of hardened steel with a chin strap.  Various designs "
+"were once used by armies around the world, modern ballistic helmets have "
+"mostly relegated this to military surplus."
+msgstr "一顶由硬化钢制成的重型头盔，配有下巴带。世界各国的军队曾经使用过各种设计，现代防弹头盔已基本将其淘汰为军用剩余物资。"
+
+#: data/json/items/armor/helmets.json
 msgid "tactical full helmet"
 msgid_plural "tactical full helmets"
 msgstr[0] "戰術全罩頭盔"
@@ -72139,10 +72188,10 @@ msgstr[0] "連身泳衣"
 #. ~ Description for {'str': 'spring suit'}
 #: data/json/items/armor/swimming.json
 msgid ""
-"A long-sleeved spring wetsuit with pink color details and cleavage-"
-"enhancing, hip-accentuating construction.  Not as protective as a full-body "
-"suit, but also less restrictive."
-msgstr "一件長袖的粉紅色連身泳裝, 能夠完美的加強女性的胸部集中以及提臀效果。不像潛水衣有全身保護的效果, 但約束感較少。"
+"A pink neoprene wetsuit that leaves the legs exposed.  Not as protective as "
+"a full-body suit, but also less restrictive and more comfortable in the "
+"summer."
+msgstr "一件粉色的氯丁橡胶潜水服，腿部裸露。防护性不如全身潜水服，但束缚感更小，在夏天穿着也更舒适。"
 
 #: data/json/items/armor/swimming.json
 msgid "faraday shark suit"
@@ -110218,11 +110267,6 @@ msgid ""
 "methods."
 msgstr "這是一個小磨石和碗狀石的簡單組合。用於研磨穀物, 但相比起其他複雜的方法較為耗時。"
 
-#: data/json/items/tool/cooking.json
-msgid "multi cooker"
-msgid_plural "multi cookers"
-msgstr[0] "大同電鍋"
-
 #. ~ Description for {'str': 'multi cooker'}
 #: data/json/items/tool/cooking.json
 msgid ""
@@ -111038,6 +111082,18 @@ msgid ""
 "Using it allows you to turn it off, or scan yourself or the ground.  It is "
 "currently on."
 msgstr "一個用於測量輻射的工具。正處於持續偵測模式, 當偵測到環境輻射時會發出響聲。使用它能夠進行關閉、掃描自己或掃描地面。它現在是啟動的。"
+
+#: data/json/items/tool/electronics.json
+msgid "handheld sonar"
+msgid_plural "handheld sonars"
+msgstr[0] "手持声纳"
+
+#. ~ Description for {'str': 'handheld sonar'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"A rugged sonar unit with a compact transducer and display.  Activate it to "
+"ping nearby underwater terrain and sketch what you find onto the overmap."
+msgstr "一台坚固的声纳设备，配有紧凑的换能器和显示屏。激活它以探测附近的水下地形，并将发现的内容绘制到大地图上。"
 
 #: data/json/items/tool/electronics.json
 msgid "hand-crank charger"
@@ -170828,6 +170884,17 @@ msgid "ALL"
 msgstr "全部"
 
 #. ~ Crafting recipes subcategory of 'WEAPON' category
+#. ~ Crafting recipes subcategory of 'AMMO' category
+#. ~ Crafting recipes subcategory of 'FOOD' category
+#. ~ Crafting recipes subcategory of 'CHEM' category
+#. ~ Crafting recipes subcategory of 'ELECTRONIC' category
+#. ~ Crafting recipes subcategory of 'ARMOR' category
+#. ~ Crafting recipes subcategory of 'OTHER' category
+#: data/json/recipes/recipes.json
+msgid "NESTED"
+msgstr "嵌套"
+
+#. ~ Crafting recipes subcategory of 'WEAPON' category
 #: data/json/recipes/recipes.json
 msgid "BASHING"
 msgstr "鈍擊"
@@ -181592,6 +181659,18 @@ msgid ""
 "key (default '^')."
 msgstr "一套连接到车载摄像头的液晶显示屏。开启时，使用车载电源并让你通过摄像头观察四周。你可以按\"e\"查看或在此按载具控制键\"^\"以控制载具。"
 
+#: data/json/vehicleparts/controls.json
+msgid "sonar array"
+msgstr "声纳阵列"
+
+#. ~ Description for {'str': 'sonar array'}
+#: data/json/vehicleparts/controls.json
+msgid ""
+"A set of sonar transducers and electronics used to scan underwater terrain."
+"  Activate it from the vehicle controls to reveal local underwater overmap "
+"tiles."
+msgstr "一组用于扫描水下地形的声纳换能器和电子设备。通过车辆控制面板激活它，以揭示局部的水下大地图图块。"
+
 #. ~ Description for {'str': 'security camera'}
 #: data/json/vehicleparts/controls.json
 msgid ""
@@ -183338,6 +183417,10 @@ msgid "roof-mounted external tank (200L)"
 msgstr "頂裝式外部水箱（200 公升）"
 
 #: data/json/vehicleparts/tanks.json
+msgid "mounted external tank (200L)"
+msgstr "懸掛式外部油箱（200 公升）"
+
+#: data/json/vehicleparts/tanks.json
 msgid "wooden barrel (100L)"
 msgstr "木桶 (100 公升)"
 
@@ -184762,6 +184845,66 @@ msgstr "拖板車"
 #: data/json/vehicles/trucks.json
 msgid "Diesel Flatbed Truck"
 msgstr "柴油平板卡车"
+
+#: data/json/vehicles/trucks.json
+msgid "Avgas Tanker"
+msgstr "航空燃油罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "JP-8 Tanker"
+msgstr "JP-8燃油罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Diesel Tanker"
+msgstr "柴油罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Fertilizer Tanker"
+msgstr "化肥罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Bleach Tanker"
+msgstr "漂白剂罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Ammonia Tanker"
+msgstr "氨水罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Gas Tanker"
+msgstr "油罐車"
+
+#: data/json/vehicles/trucks.json
+msgid "Water Tanker"
+msgstr "水罐車"
+
+#: data/json/vehicles/trucks.json
+msgid "Ether Tanker"
+msgstr "乙醚罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Formaldehyde Tanker"
+msgstr "甲醛罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Cooking Oil Tanker"
+msgstr "食用油罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Plutonium Slurry Tanker"
+msgstr "钚浆罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Sewage Tanker"
+msgstr "污水罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Sulfuric Acid Tanker"
+msgstr "硫酸罐车"
+
+#: data/json/vehicles/trucks.json
+msgid "Milk Tanker"
+msgstr "牛奶罐车"
 
 #: data/json/vehicles/trucks.json
 msgid "Pickup Truck"
@@ -191393,14 +191536,6 @@ msgid ""
 "camera station, steering tools, and electronics controls."
 msgstr "軍用車輛上大型的複雜駕駛控制站，包括攝影監控系統、轉向工具與電子控制元件。"
 
-#: data/mods/Aftershock/vehicles/vehicle_overrides.json
-msgid "Gas Tanker"
-msgstr "油罐車"
-
-#: data/mods/Aftershock/vehicles/vehicle_overrides.json
-msgid "Water Tanker"
-msgstr "水罐車"
-
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
 msgid "cargo trough"
 msgstr "貨物槽"
@@ -191482,10 +191617,6 @@ msgid ""
 "A large and complex dashboard mounted with steering controls and several LCD"
 " touch screens for controlling vehicle systems."
 msgstr "一个巨大而复杂的仪表板，装有转向控制器和几块LCD触摸屏。你可以用它来控制载具。"
-
-#: data/mods/Aftershock/vehicles/vehicle_parts.json
-msgid "mounted external tank (200L)"
-msgstr "懸掛式外部油箱（200 公升）"
 
 #. ~ Description for {'str': 'ultralight frame'}
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -222889,6 +223020,17 @@ msgstr ""
 "一种满足您室内种植需求的小型种植盆。\n"
 "新鲜的农产品触手可及。"
 
+#: data/mods/gunchair/gunchair.json data/mods/gunchair/modinfo.json
+msgid "GunChair™"
+msgstr "机枪椅™"
+
+#. ~ Description for GunChair™
+#: data/mods/gunchair/modinfo.json
+msgid ""
+"Own a minigun-propelled armchair for home defense, Just as the founding "
+"fathers intended"
+msgstr "拥有一把由转轮机枪推进的扶手椅用于家庭防卫，正如开国元勋们所期望的那样。"
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr "深入林间"
@@ -224998,7 +225140,7 @@ msgstr "锚点"
 msgid "No stations found on this tile."
 msgstr "在这个图块上未找到站台。"
 
-#: data/mods/teleportation_mod/main.lua
+#: data/mods/teleportation_mod/main.lua src/handle_action.cpp
 msgid "Do what?"
 msgstr "做什么？"
 
@@ -228731,6 +228873,20 @@ msgstr "你完成了填蓋 %s。"
 #, c-format
 msgid "Playing with your %s has lifted your spirits a bit."
 msgstr "跟你的%s一起玩之後，精神振奮了一點。"
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid ""
+"Training your %s has finally succeeded, they should be less skittish in "
+"combat now."
+msgstr "对你的 %s 的训练终于成功了，它们现在在战斗中应该不会那么容易受惊了。"
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid ""
+"Training your %s takes time, it seems they are making a bit of progress at "
+"least."
+msgstr "训练你的 %s 需要时间，看来它们至少取得了一点进展。"
 
 #: src/activity_handlers.cpp
 msgid "You open up your kit and shave."
@@ -236802,7 +236958,7 @@ msgstr "* 没有隐藏配方 - 类别中有 %d 个 *"
 msgid "Origin: "
 msgstr "来源："
 
-#: src/construction.cpp src/item.cpp
+#: src/construction.cpp src/crafting_gui.cpp src/item.cpp
 msgid "Category: "
 msgstr "分類: "
 
@@ -238132,6 +238288,25 @@ msgstr "新！"
 msgid "%2dx %s"
 msgstr "%2dx %s"
 
+#: src/crafting_gui.cpp src/output.cpp
+msgid "unknown"
+msgstr "未知"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "Known recipes: <color_light_blue>%d</color>"
+msgstr "已知配方：<color_light_blue>%d</color>"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "<color_light_blue>Origin: '%s'</color>"
+msgstr "<color_light_blue>来源：'%s'</color>"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "Category: <color_magenta>%s</color>"
+msgstr "类别：<color_magenta>%s</color>"
+
 #: src/crafting_gui.cpp
 msgid "You can't do that!  Press [<color_yellow>ESC</color>]!"
 msgstr "无法进行该配方的制造！按 [ESC] 关闭"
@@ -239231,7 +239406,7 @@ msgstr ""
 msgid "Rename character:"
 msgstr ""
 
-#: src/debug_menu.cpp src/newcharacter.cpp
+#: src/debug_menu.cpp
 msgid "Enter age in years.  Minimum 16, maximum 55"
 msgstr "输入年龄（岁）。最小16，最大55"
 
@@ -245394,10 +245569,6 @@ msgid "%1$s from %2$s (%3$d)"
 msgstr "%1$s 裝在 %2$s（%3$d）"
 
 #: src/handle_action.cpp
-msgid "Draw what?"
-msgstr "抽出什麼?"
-
-#: src/handle_action.cpp
 msgid "Change to which movement mode?"
 msgstr "切換至哪種行動模式？"
 
@@ -248361,6 +248532,72 @@ msgid ""
 "The plutonium generator has significant security measures in place. Without "
 "the necessary ID, you'll have to remove it by hand."
 msgstr "钚发电机有严密的安全措施。如果没有必要的身份证，你只能手动将其拆除。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose option:"
+msgstr "选择选项："
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Stop crafting"
+msgstr "停止制作"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Remove Product"
+msgstr "移除产品"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Batteries are low."
+msgstr "低電量。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Start crafting "
+msgstr "开始制作"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Really stop?"
+msgstr "确定要停止吗？"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "You don't have a suitable container to store your %s."
+msgstr "你没有合适的容器来存储你的%s。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "You got the %s from the %s."
+msgstr "你从 %s 获得了 %s。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose desired recipe:"
+msgstr "选择想要的配方："
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "%s (%1.f charges)"
+msgstr "%s（%1.f 次充能）"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "You don't know of anything you could craft with this."
+msgstr "没有可使用此物品制作的配方。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose batch count:"
+msgstr "选择制作数量："
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "%s batches (%1.f charges)"
+msgstr "%s 批（%1.f 次充能）"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "The %s needs %d charges to create this."
+msgstr "制作此物品需要 %s 的 %d 次充能。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "The %s begins to hum."
+msgstr "%s 开始发出嗡嗡声。"
 
 #: src/iexamine_elevator.cpp
 msgid " (this floor)"
@@ -255630,72 +255867,6 @@ msgid "You're surrounded by aggressive multi-cookers!"
 msgstr "你被進擊的大同電鍋包圍了!"
 
 #: src/iuse_actor.cpp
-msgid "Choose option:"
-msgstr "选择选项："
-
-#: src/iuse_actor.cpp
-msgid "Stop crafting"
-msgstr "停止制作"
-
-#: src/iuse_actor.cpp
-msgid "Batteries are low."
-msgstr "低電量。"
-
-#: src/iuse_actor.cpp
-msgid "Start crafting "
-msgstr "开始制作"
-
-#: src/iuse_actor.cpp
-msgid "Remove Product"
-msgstr "移除产品"
-
-#: src/iuse_actor.cpp
-msgid "Really stop?"
-msgstr "确定要停止吗？"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You don't have a suitable container to store your %s."
-msgstr "你没有合适的容器来存储你的%s。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You got the %s from the %s."
-msgstr "你从 %s 获得了 %s。"
-
-#: src/iuse_actor.cpp
-msgid "Choose desired recipe:"
-msgstr "选择想要的配方："
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "%s (%1.f charges)"
-msgstr "%s（%1.f 次充能）"
-
-#: src/iuse_actor.cpp
-msgid "You don't know of anything you could craft with this."
-msgstr "没有可使用此物品制作的配方。"
-
-#: src/iuse_actor.cpp
-msgid "Choose batch count:"
-msgstr "选择制作数量："
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "%s batches (%1.f charges)"
-msgstr "%s 批（%1.f 次充能）"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s needs %d charges to create this."
-msgstr "制作此物品需要 %s 的 %d 次充能。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s begins to hum."
-msgstr "%s 开始发出嗡嗡声。"
-
-#: src/iuse_actor.cpp
 msgid "You can't do *that* while mounted"
 msgstr "骑乘时无法进行此操作。"
 
@@ -262835,6 +263006,11 @@ msgid "Play with %s"
 msgstr "玩%s"
 
 #: src/monexamine.cpp
+#, c-format
+msgid "Train %s"
+msgstr "训练 %s"
+
+#: src/monexamine.cpp
 msgid "Untie"
 msgstr "解開"
 
@@ -265247,6 +265423,11 @@ msgstr "你 *確定* 完成了嗎?"
 #: src/newcharacter.cpp
 msgid "Enter name.  Cancel to delete all."
 msgstr "输入名字。取消则清除全部。"
+
+#: src/newcharacter.cpp
+#, c-format
+msgid "Enter age in years.  Minimum %d, maximum %d"
+msgstr "输入年龄（岁）。最小 %d，最大 %d"
 
 #: src/newcharacter.cpp
 msgid "Name of template:"
@@ -267932,6 +268113,16 @@ msgid "Highlight unread recipes to allow tracking of newly learned recipes."
 msgstr "高亮显示未读配方，以便追踪新学会的配方。"
 
 #: src/options.cpp
+msgid "Enable nested crafting categories"
+msgstr "启用嵌套制作类别"
+
+#: src/options.cpp
+msgid ""
+"Show nested crafting categories in the crafting UI.  When disabled, nested "
+"recipes appear directly in their normal subcategories."
+msgstr "在制作界面中显示嵌套的制作类别。禁用时，嵌套的配方将直接显示在其常规的子类别中。"
+
+#: src/options.cpp
 msgid "Highlight unread items"
 msgstr "高亮未读物品"
 
@@ -268608,12 +268799,12 @@ msgstr "启用怪物 LOD"
 #: src/options.cpp
 msgid ""
 "Enable level-of-detail processing for monsters.  When enabled, distant or "
-"wandering monsters are assigned reduced-fidelity AI tiers (coarse path reuse"
-" or a simple macro step) to save CPU.  When disabled, every monster runs "
-"full AI every turn regardless of distance."
+"wandering monsters are assigned AI tiers. Higher tiers are processed less "
+"often and skip certain functions.  When disabled, every monster runs full AI"
+" every turn regardless of distance."
 msgstr ""
-"启用怪物的细节级别处理。启用后，远处的或游荡的怪物将被分配较低精度的 AI 层级（粗略路径复用或简单的宏观步进）以节省 CPU "
-"资源。禁用后，无论距离多远，所有怪物每回合都会运行完整的 AI。"
+"启用怪物的细节级别（LOD）处理。启用后，远处的或游荡的怪物将被分配 AI "
+"层级。较高的层级处理频率较低，并会跳过某些功能。禁用后，无论距离多远，每个怪物每回合都会运行完整的 AI。"
 
 #: src/options.cpp
 msgid "Action Budget"
@@ -268624,11 +268815,11 @@ msgid ""
 "Minimum number of monsters that enter the move loop per turn.  The actual "
 "budget is the larger of this value and the current Tier-0 (full-AI) monster "
 "count, so full-AI monsters are never skipped.  Higher values process more "
-"distant monsters each turn at a CPU cost.  0 means only Tier-0 monsters run "
-"(no extra Tier-1 budget)."
+"distant monsters each turn.  0 means only Tier-0 monsters run (no extra "
+"Tier-1 budget)."
 msgstr ""
-"每回合进入移动循环的怪物最小数量。实际预算为该值与当前 0 级（完整 AI）怪物数量中的较大者，因此完整 AI "
-"的怪物绝对不会被跳过。较高的值会在每回合处理更多远处的怪物，但会增加 CPU 开销。设置为 0 意味着仅运行 0 级怪物（没有额外的 1 级怪物预算）。"
+"每回合进入移动循环的怪物最小数量。实际运算预算是此数值与当前 0级（完整 AI）怪物数量中的较大者，因此完整 AI "
+"的怪物永远不会被跳过。较高的数值会在每回合处理更多远处的怪物。0 表示仅运行 0级怪物（没有额外的 1级预算）。"
 
 #: src/options.cpp
 msgid "Macro Step Interval"
@@ -268649,12 +268840,9 @@ msgstr "完整 AI 半径"
 
 #: src/options.cpp
 msgid ""
-"Chebyshev distance threshold for full-AI (Tier 0) monsters.  Monsters within"
-" this radius run the complete AI every turn.  Must be less than the Coarse "
-"AI Radius."
-msgstr ""
-"完整 AI（0 级）怪物的切比雪夫距离（Chebyshev distance）阈值。在此半径内的怪物每回合都会运行完整的 AI。该值必须小于“粗略 AI"
-" 半径”。"
+"Monsters within this radius run the complete AI every turn.  Must be less "
+"than the Coarse AI Radius."
+msgstr "在此半径内的怪物每回合都会运行完整的 AI。必须小于“粗略 AI 半径”。"
 
 #: src/options.cpp
 msgid "Coarse AI Radius"
@@ -268662,13 +268850,10 @@ msgstr "粗略 AI 半径"
 
 #: src/options.cpp
 msgid ""
-"Chebyshev distance threshold for coarse-AI (Tier 1) monsters.  Monsters "
-"between the Full AI Radius and this distance use cached paths and skip "
-"expensive faction queries.  Monsters beyond this distance are Tier-2 (macro "
-"step only)."
-msgstr ""
-"粗略 AI（1 级）怪物的切比雪夫距离阈值。处于“完整 AI 半径”与此距离之间的怪物会使用缓存路径，并跳过高开销的派系查询。超出此距离的怪物属于 2 "
-"级（仅进行宏观步进）。"
+"Monsters between the Full AI Radius and this distance use cached paths and "
+"skip expensive faction queries.  Monsters beyond this distance are Tier-2 "
+"(macro step only)."
+msgstr "处于“完整 AI 半径”与此距离之间的怪物将使用缓存的路径，并跳过高消耗的阵营查询。超出此距离的怪物属于 2级 AI（仅进行宏观移动）。"
 
 #: src/options.cpp
 msgid "Demotion Cooldown"
@@ -268690,11 +268875,9 @@ msgstr "粗略气味检测间隔"
 msgid ""
 "How many turns elapse between scent-tracking checks for Tier-1 (coarse) "
 "monsters.  At 1 they check scent every turn (full fidelity); at 3 (default) "
-"only once every 3 turns.  Higher values reduce CPU cost for mid-range "
-"hordes."
+"only once every 3 turns. "
 msgstr ""
-"1 级（粗略 AI）怪物进行气味追踪检测之间相隔的回合数。设为 1 时，它们每回合都会检测气味（全精度）；设为 3（默认值）时，每 3 "
-"回合仅检测一次。较高的值可降低中距离尸群/怪物群的 CPU 开销。"
+"1级（粗略）怪物进行气味追踪检查之间经过的回合数。设为 1 时，它们每回合都会检查气味（完全保真）；设为 3（默认）时，每 3 回合只检查一次。"
 
 #: src/options.cpp
 msgid "Group Morale Max Tier"
@@ -268704,11 +268887,8 @@ msgstr "群体士气最大层级"
 msgid ""
 "Highest LOD tier that participates in group-morale and swarming "
 "calculations.  0 = Tier-0 only (default, cheapest).  1 = Tier-0 and Tier-1 "
-"monsters also run group-morale/swarm checks at the cost of the extra O(M²) "
-"faction scan for mid-range monsters."
-msgstr ""
-"参与群体士气与集群计算的最高 LOD 层级。0 = 仅限 0 级（默认，性能开销最小）。1 = 0 级和 1 "
-"级怪物也会运行群体士气/集群检测，代价是需要为中距离怪物进行额外的 O(M²) 派系扫描。"
+"monsters also run group-morale/swarm checks. "
+msgstr "参与群体士气和集群计算的最高 LOD 层级。0 = 仅限 0级（默认，性能消耗最低）。1 = 0级和 1级怪物也运行群体士气/集群检查。"
 
 #: src/options.cpp
 msgid "3D Field of Vision"
@@ -268745,9 +268925,9 @@ msgstr "3D视野水平遮挡"
 
 #: src/options.cpp
 msgid ""
-"When enabled, obstacles at other z-levels correctly block horizontal line of"
-" sight.  Requires 3D FoV.  Slower than disabled."
-msgstr "启用后，其他Z层的障碍物将正确遮挡水平视线。需要开启“3D视野”。运行速度比禁用时更慢（更耗费性能）。"
+"When enabled, obstacles at other z-levels correctly cast 3D shadows.  "
+"Requires 3D FoV.  Significantly slower than disabled."
+msgstr "启用后，其他 Z轴层级的障碍物会正确投射 3D 阴影。需要开启 3D 视野。比禁用时运行速度慢得多。"
 
 #: src/options.cpp
 msgid "LOS Cache Size"
@@ -268779,11 +268959,11 @@ msgstr "启用多线程"
 #: src/options.cpp
 msgid ""
 "Enable worker-thread parallelism for expensive per-turn computations "
-"(monster planning, map-cache building, scent map updates).  Disable to run "
-"everything on the main thread — useful for debugging, reproducibility "
+"(monster planning, map-cache building, scent map updates, etc).  Disable to "
+"run everything on the main thread — useful for debugging, reproducibility "
 "testing, or machines where thread overhead exceeds gain.  Requires restart."
 msgstr ""
-"启用工作线程并行处理以应对每回合的高开销计算（怪物行动规划、地图缓存构建、气味地图更新）。禁用此项会将所有计算放在主线程上运行——这对于调试、复现测试或线程开销大于收益的机器很有用。需要重启游戏生效。"
+"为高消耗的每回合计算（怪物寻路规划、地图缓存构建、气味贴图更新等）启用工作线程并行处理。禁用则在主线程上运行所有内容——适用于调试、复现测试，或者线程开销大于收益的设备。需要重启生效。"
 
 #: src/options.cpp
 msgid "Thread Pool Worker Count"
@@ -268860,31 +269040,121 @@ msgid ""
 "Keep a border of submaps loaded around the reality bubble.  These are pre-"
 "loaded from disk in the background so that map shifts are faster (the data "
 "is already in memory).  Uses more memory but reduces stalls when the map "
-"scrolls.  Takes effect immediately without restart."
+"scrolls.  "
 msgstr ""
-"在现实气泡周围保持一圈子地图处于加载状态。这些子地图会在后台从磁盘预加载，从而加快地图切换速度（数据已存在于内存中）。这会消耗更多内存，但能减少地图滚动时的卡顿。无需重启，立即生效。"
+"在现实气泡周围保持加载一圈边界子地图。这些子地图会在后台从磁盘预加载，以便加快地图切换速度（数据已在内存中）。会占用更多内存，但能减少地图滚动时的卡顿。"
 
 #: src/options.cpp
 msgid "Reality Bubble"
 msgstr "现实气泡"
 
 #: src/options.cpp
-msgid "Configure how submaps are loaded and processed."
-msgstr "配置子地图的加载和处理方式。"
+msgid "Configure how the reality bubble functions."
+msgstr "配置现实气泡的运行方式。"
 
 #: src/options.cpp
-msgid "World Tick Interval"
-msgstr "世界刻间隔"
+msgid "Reality Bubble Size"
+msgstr "现实气泡大小"
 
 #: src/options.cpp
 msgid ""
-"How many turns elapse between out-of-bubble world ticks.  1 processes every "
-"loaded submap outside the player's reality bubble each turn at full "
-"fidelity. Higher values amortize cost by batching N turns of simulation into"
-" a single pass — useful on slow hardware."
+"Submap radius of the reality bubble (submaps visible beyond your position). "
+"Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
+"Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
+"the loaded area and memory usage; smaller values reduce both. "
 msgstr ""
-"现实气泡外的世界刻（Tick）之间经过的回合数。设置为 1 表示每回合都以最高保真度处理玩家现实气泡外的每个已加载子地图。较高的值通过将 N "
-"个回合的模拟分批集中在单次处理中来分摊性能消耗——对性能较低的硬件很有用。"
+"现实气泡的子地图半径（超出你位置可见的子地图数）。网格大小 = 2 × 设定值 + 每边 3 个子地图（设定值为 4 → "
+"11×11，旧版默认值）。最大玩家视野范围 = 12 × (设定值 + 1) 个图块。较大的数值会增加加载区域和内存占用；较小的数值会减少这两者。"
+
+#: src/options.cpp
+msgid "Mobile Activity Bubble Size"
+msgstr "移动活动气泡大小"
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is performing a "
+"mobile activity (crafting, construction, etc.).  0 disables the feature.  "
+"Must be smaller than Reality Bubble Size to take effect."
+msgstr "当玩家进行移动活动（制作、建造等）时，将现实气泡缩小至此半径。0 为禁用此功能。必须小于“现实气泡大小”才能生效。"
+
+#: src/options.cpp
+msgid "Idle Activity Bubble Size"
+msgstr "待机活动气泡大小"
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is performing an "
+"idle activity (sleeping, reading, waiting, etc.).  0 disables the feature.  "
+"Must be smaller than Reality Bubble Size to take effect."
+msgstr "当玩家进行待机活动（睡眠、阅读、等待等）时，将现实气泡缩小至此半径。0 为禁用此功能。必须小于“现实气泡大小”才能生效。"
+
+#: src/options.cpp
+msgid "Underground Reality Bubble Size"
+msgstr "地下现实气泡大小"
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is underground and"
+" indoors (no sky visible).  0 disables the feature.  Must be smaller than "
+"Reality Bubble Size to take effect."
+msgstr "当玩家在地下且在室内（看不到天空）时，将现实气泡缩小至此半径。0 为禁用此功能。必须小于“现实气泡大小”才能生效。"
+
+#: src/options.cpp
+msgid "Vehicle Reality Bubble Size"
+msgstr "载具现实气泡大小"
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is actively "
+"driving a vehicle  or mounted on a creature. Useful with a high render "
+"distance to reduce lag at speed.  0 disables the feature.  Must be smaller "
+"than Reality Bubble Size to take effect."
+msgstr ""
+"当玩家正在驾驶载具或骑乘生物时，将现实气泡缩小至此半径。在较高渲染距离下，这有助于减少高速行驶时的卡顿。0 "
+"为禁用此功能。必须小于“现实气泡大小”才能生效。"
+
+#: src/options.cpp
+msgid "Combat Reality Bubble Size"
+msgstr "战斗现实气泡大小"
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while hostile creatures are visible"
+" nearby.  Uses the same detection range as safe mode.  0 disables the "
+"feature.  Must be smaller than Reality Bubble Size to take effect."
+msgstr "当附近有可见的敌对生物时，将现实气泡缩小至此半径。使用与安全模式相同的侦测范围。0 为禁用此功能。必须小于“现实气泡大小”才能生效。"
+
+#: src/options.cpp
+msgid "Activity Bubble Grace Period"
+msgstr "活动气泡宽限期"
+
+#: src/options.cpp
+msgid ""
+"Minimum length of activity in minutes before the reality bubble shrinks.  "
+"Acts as a safety net to avoid unnecessary resizes for short tasks.  Default "
+"is 5 minutes."
+msgstr "现实气泡缩小前所需的活动最短时长（以分钟为单位）。作为一个安全保障，避免短时间任务引起不必要的气泡大小调整。默认为 5 分钟。"
+
+#: src/options.cpp
+msgid "Dynamic Bubble Grace Period"
+msgstr "动态气泡宽限期"
+
+#: src/options.cpp
+msgid ""
+"Consecutive turns a condition must be met before the reality bubble shrinks "
+"for underground, vehicle, and combat modes.  Prevents rapid resizing when "
+"briefly entering or leaving a trigger zone.  Default is 5 turns."
+msgstr "在地下、载具和战斗模式下，现实气泡缩小前必须连续满足条件的回合数。可防止在短暂进入或离开触发区域时发生频繁的大小调整。默认为 5 回合。"
+
+#: src/options.cpp
+msgid "Submap Loading"
+msgstr "子地图加载"
+
+#: src/options.cpp
+msgid ""
+"Configure how submaps are loaded and processed outside of the reality "
+"bubble."
+msgstr "配置现实气泡外部子地图的加载和处理方式。"
 
 #: src/options.cpp
 msgid "Out-of-Bubble Fire Spread"
@@ -268892,12 +269162,10 @@ msgstr "气泡外火焰蔓延"
 
 #: src/options.cpp
 msgid ""
-"Controls whether fire in loaded submaps can spread into adjacent unloaded "
-"submaps. 'None': fire only decays, never spreads beyond the loaded set. "
-"'Adjacent': fire requests one extra layer of loaded submaps at each boundary"
-" to preserve correct spread behavior."
-msgstr ""
-"控制已加载子地图中的火焰是否可以蔓延到相邻未加载的子地图中。“无”：火焰只会衰减，永远不会蔓延到已加载区域之外。“相邻”：火焰在每个边界额外请求加载一层子地图，以保持正确的蔓延行为。"
+"Controls whether fire can keep areas loaded outside of render distance. "
+"'None': fire burns out in place. 'Adjacent': fire can spread into unloaded "
+"areas, and keeps close enough."
+msgstr "控制火焰是否能让渲染距离之外的区域保持加载状态。“无”：火焰在原地熄灭。“相邻”：火焰可以蔓延到未加载的区域，并保持足够的加载距离。"
 
 #: src/options.cpp
 msgid "None (pause spread)"
@@ -268915,28 +269183,8 @@ msgstr "火焰蔓延子地图上限"
 msgid ""
 "Maximum number of submaps that fire spread may keep loaded simultaneously "
 "across all dimensions. Higher values allow larger fires to be simulated "
-"correctly at the cost of CPU and memory. 0 disables out-of-bubble fire "
-"spread loading entirely. Takes effect immediately without restart."
-msgstr ""
-"跨越所有维度，因火焰蔓延而可同时保持加载状态的子地图最大数量。较高的值允许正确模拟更大规模的火灾，代价是消耗更多 CPU 和内存。设置为 0 "
-"将完全禁用气泡外的火焰蔓延加载。无需重启，立即生效。"
-
-#: src/options.cpp
-msgid "Reality Bubble Size"
-msgstr "现实气泡大小"
-
-#: src/options.cpp
-msgid ""
-"Submap radius of the reality bubble (submaps visible beyond your position). "
-"Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
-"Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
-"the loaded area and memory usage; smaller values reduce both. REQUIRES A "
-"GAME RESTART to take effect — changing this mid-session will NOT resize "
-"caches or the loaded map."
-msgstr ""
-"现实气泡的子地图半径（玩家位置之外可见的子地图范围）。网格边长 = 2 × 气泡大小 + 3个子地图（大小为4 → "
-"11×11网格，传统默认值）。玩家最大视野范围 = 12 × (气泡大小 + 1) "
-"个图块。较大的值会增加已加载区域和内存使用量；较小的值则会减少这两者。需要重启游戏才能生效——在游戏中途更改此设置不会调整缓存或已加载的地图大小。"
+"correctly. 0 disables out-of-bubble fire spread loading entirely. "
+msgstr "火焰蔓延可在所有维度上同时保持加载的最大子地图数量。较高的数值允许正确模拟更大规模的火灾。0 为完全禁用气泡外的火焰蔓延加载。"
 
 #: src/options.cpp
 msgid "Power portal load radius (submaps)"
@@ -268945,9 +269193,8 @@ msgstr "能量传送门加载半径（子地图）"
 #: src/options.cpp
 msgid ""
 "Radius in submaps around each end of a power-portal link that is force-"
-"loaded while the link is active.  Larger values keep more terrain around a "
-"remote portal resident, at the cost of memory."
-msgstr "在能量连接激活期间被强制加载的，围绕能量传送门连接两端的子地图半径。较大的值会将远程传送门周围更多的地形保留在内存中，代价是消耗更多内存。"
+"loaded while the link is active."
+msgstr "当电力传送门链接激活时，其两端周围被强制加载的子地图半径。"
 
 #: src/options.cpp
 msgid "Strict JSON checks"
@@ -269280,6 +269527,17 @@ msgid "A scaling factor that determines density of vehicle spawns."
 msgstr "设置载具生成的密度系数。"
 
 #: src/options.cpp
+msgid "Vehicle gun recoil scaling factor"
+msgstr "车载武器后坐力缩放倍率"
+
+#: src/options.cpp
+msgid ""
+"A scaling factor that determines how strongly firing guns pushes the vehicle"
+" you are on.  0.0 disables this behavior, 1.0 uses the default mass-based "
+"recoil propulsion, and higher values exaggerate it."
+msgstr "决定开火时对你所在载具产生多大推力的缩放倍率。0.0 禁用此行为，1.0 使用默认基于质量的后坐力推进，更高的数值会放大该效果。"
+
+#: src/options.cpp
 msgid "Spawn rate scaling factor"
 msgstr "怪物產生比率"
 
@@ -269574,6 +269832,16 @@ msgstr "點數分別計算"
 #: src/options.cpp
 msgid "No freeform"
 msgstr "沒有自由形式"
+
+#: src/options.cpp
+msgid "Enforce profession age ranges"
+msgstr "强制职业年龄范围"
+
+#: src/options.cpp
+msgid ""
+"When enabled, character ages are constrained by profession-defined age "
+"ranges when available."
+msgstr "启用后，当职业有定义的年龄范围时，角色年龄将受其限制。"
 
 #: src/options.cpp
 msgid "Disables lifting requirements for vehicle parts."
@@ -270104,10 +270372,6 @@ msgid "Examples: c:food,m:iron,q:hammering,n:toolshelf,d:pipe"
 msgstr "示例：c:食物，m:铁，q:锻造，n:工具架，d:钢管"
 
 #: src/output.cpp
-msgid "unknown"
-msgstr "未知"
-
-#: src/output.cpp
 msgid "bright"
 msgstr "明亮"
 
@@ -270319,20 +270583,33 @@ msgid "Color codes: "
 msgstr "顏色代碼: "
 
 #: src/overmap_ui.cpp
-msgid "Type GLYPH:TEXT to set a custom glyph."
-msgstr "輸入 \"符號:文字\" 來設定一個自訂符號。"
+msgid "Type <color_white>COLOR;TEXT</color> to set a custom color."
+msgstr "输入 <color_white>颜色;文本</color> 以设置自定义颜色。"
 
 #: src/overmap_ui.cpp
-msgid "Type COLOR;TEXT to set a custom color."
-msgstr "輸入 \"顏色;文字\" 來設定一個自訂顏色。"
+msgid "Type <color_white>GLYPH:TEXT</color> to set a custom glyph."
+msgstr "输入 <color_white>符号:文本</color> 以设置自定义符号。"
 
 #: src/overmap_ui.cpp
-msgid "Type SPRITE:TILE_ID to set a custom sprite."
-msgstr "输入 SPRITE:图块ID 以设置自定义图像。"
+msgid "Type <color_white>SPRITE:TILE_ID</color> to set a custom sprite."
+msgstr "输入 <color_white>贴图:图块ID</color> 以设置自定义贴图。"
 
 #: src/overmap_ui.cpp
-msgid "Examples: B:Base | g;Loot | SPRITE:toolbox;g;Tools"
-msgstr "示例：B:基地 | g;战利品 | SPRITE:toolbox;g;工具"
+msgid "Type <color_white>LABEL:TEXT</color> to set a custom label."
+msgstr "输入 <color_white>标签:文本</color> 以设置自定义标签。"
+
+#: src/overmap_ui.cpp
+msgid "Use <color_white>;</color> as a separator to combine elements."
+msgstr "使用 <color_white>;</color> 作为分隔符来组合元素。"
+
+#: src/overmap_ui.cpp
+msgid ""
+"Examples: <color_white>$:Bank</color> | <color_white>R;Red</color> | "
+"<color_white>SPRITE:toolbox</color> | <color_white>LABEL:Survivor "
+"City</color>"
+msgstr ""
+"示例：<color_white>$:银行</color> | <color_white>R;红色</color> | "
+"<color_white>SPRITE:toolbox</color> | <color_white>LABEL:幸存者城市</color>"
 
 #: src/overmap_ui.cpp
 msgid "Note:"
@@ -276098,6 +276375,14 @@ msgid "Remember vehicle position"
 msgstr "記得車輛位置"
 
 #: src/vehicle_use.cpp
+msgid "Brake hold: off"
+msgstr "刹车保持：关"
+
+#: src/vehicle_use.cpp
+msgid "Brake hold: on"
+msgstr "刹车保持：开"
+
+#: src/vehicle_use.cpp
 msgid "Choose action for the autopilot"
 msgstr "選擇自動駕駛的動作"
 
@@ -276136,6 +276421,14 @@ msgstr "你停止追蹤車輛位置。"
 #: src/vehicle_use.cpp
 msgid "You start keeping track of this vehicle's position."
 msgstr "你開始追蹤車輛位置。"
+
+#: src/vehicle_use.cpp
+msgid "Brake hold turned off."
+msgstr "刹车保持已关闭。"
+
+#: src/vehicle_use.cpp
+msgid "Brake hold turned on."
+msgstr "刹车保持已开启。"
 
 #: src/vehicle_use.cpp
 msgid "Really let go of controls while flying?  This will result in a crash."

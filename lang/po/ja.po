@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-03-29 03:06+0000\n"
+"POT-Creation-Date: 2026-04-01 16:13+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -5742,6 +5742,10 @@ msgstr ""
 #: data/json/construction_group.json
 msgid "Plug In Oven"
 msgstr "オーブンに電源を差し込む"
+
+#: data/json/construction_group.json
+msgid "Plug In Multi Cooker"
+msgstr ""
 
 #: data/json/construction_group.json
 msgid "Plug In Refrigerator"
@@ -11869,6 +11873,11 @@ msgstr "このアイテムは<info>完全に水没すると</info><bad>機能を
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid "This gun can be fired while <good>worn</good>."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This gear <bad>prevents</bad> you from <info>speaking</info>."
 msgstr "このアイテムは<info>発声</info>を<bad>阻害</bad>する。"
 
@@ -12760,6 +12769,10 @@ msgstr "音を出す"
 msgctxt "musical_instrument"
 msgid "Play"
 msgstr "楽器を演奏する"
+
+#: data/json/item_actions.json
+msgid "Scan with sonar"
+msgstr ""
 
 #: data/json/item_actions.json
 msgid "Mask scent"
@@ -18460,6 +18473,10 @@ msgstr "散髪"
 #: data/json/player_activities.json
 msgid "playing with your pet"
 msgstr "ペットと交流中"
+
+#: data/json/player_activities.json
+msgid "training your pet"
+msgstr ""
 
 #: data/json/player_activities.json
 msgid "trying to fall asleep"
@@ -27526,6 +27543,14 @@ msgid "seeing this is a bug"
 msgid_plural "seeing this is a bug"
 msgstr[0] "このアイテムが見えている場合はバグが発生している"
 
+#: data/json/sonar.lua
+msgid "The sonar pulse finds nothing new."
+msgstr ""
+
+#: data/json/sonar.lua
+msgid "The sonar pulse maps nearby underwater terrain."
+msgstr ""
+
 #: data/json/species.json
 msgid "everything (debug)"
 msgid_plural "everything (debug)s"
@@ -34120,6 +34145,17 @@ msgid ""
 "Used for heating and cooking food with electricity.  Might still work, if "
 "you manage to power it.  It's safe to light a fire inside of it."
 msgstr "食品の加熱や調理に使う電気設備。電力を供給できれば稼働するかもしれない。内部で安全に火を焚ける。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/items/tool/cooking.json
+msgid "multi cooker"
+msgid_plural "multi cookers"
+msgstr[0] "マルチクッカー"
+
+#. ~ Description for multi cooker
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Used for automatic cooking food with electricity."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/items/vehicle/rigs.json
@@ -64366,6 +64402,19 @@ msgid ""
 msgstr "あらゆる種類のダメージから優れた保護を提供する重いヘルメット。ラベルには「先進の戦闘用ヘルメット」と記されている。"
 
 #: data/json/items/armor/helmets.json
+msgid "steel combat helmet"
+msgid_plural "steel combat helmets"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'steel combat helmet'}
+#: data/json/items/armor/helmets.json
+msgid ""
+"A heavy helmet made of hardened steel with a chin strap.  Various designs "
+"were once used by armies around the world, modern ballistic helmets have "
+"mostly relegated this to military surplus."
+msgstr ""
+
+#: data/json/items/armor/helmets.json
 msgid "tactical full helmet"
 msgid_plural "tactical full helmets"
 msgstr[0] "タクティカルフルヘルメット"
@@ -72594,10 +72643,10 @@ msgstr[0] "スプリングスーツ"
 #. ~ Description for {'str': 'spring suit'}
 #: data/json/items/armor/swimming.json
 msgid ""
-"A long-sleeved spring wetsuit with pink color details and cleavage-"
-"enhancing, hip-accentuating construction.  Not as protective as a full-body "
-"suit, but also less restrictive."
-msgstr "胸元と腰回りを強調する構造を持つ、ピンク色のロングスプリングウェットスーツ。フルボディスーツほど防御力はないが、制限が少ない。"
+"A pink neoprene wetsuit that leaves the legs exposed.  Not as protective as "
+"a full-body suit, but also less restrictive and more comfortable in the "
+"summer."
+msgstr ""
 
 #: data/json/items/armor/swimming.json
 msgid "faraday shark suit"
@@ -110837,11 +110886,6 @@ msgid ""
 "methods."
 msgstr "小さな磨石と皿状の石を組み合わせたシンプルな道具。穀物を挽くのに使うが、より複雑な方法と比べると時間がかかる。"
 
-#: data/json/items/tool/cooking.json
-msgid "multi cooker"
-msgid_plural "multi cookers"
-msgstr[0] "マルチクッカー"
-
 #. ~ Description for {'str': 'multi cooker'}
 #: data/json/items/tool/cooking.json
 msgid ""
@@ -111662,6 +111706,18 @@ msgid ""
 "currently on."
 msgstr ""
 "放射能を測定する装置。継続測定モードで稼働中。ピーピーという音で周囲の放射能レベルを知らせている。使用して電源を切るか、地面の測定、体の被曝量測定が可能。現在は電源が入っている。"
+
+#: data/json/items/tool/electronics.json
+msgid "handheld sonar"
+msgid_plural "handheld sonars"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'handheld sonar'}
+#: data/json/items/tool/electronics.json
+msgid ""
+"A rugged sonar unit with a compact transducer and display.  Activate it to "
+"ping nearby underwater terrain and sketch what you find onto the overmap."
+msgstr ""
 
 #: data/json/items/tool/electronics.json
 msgid "hand-crank charger"
@@ -171681,6 +171737,17 @@ msgid "ALL"
 msgstr "全て"
 
 #. ~ Crafting recipes subcategory of 'WEAPON' category
+#. ~ Crafting recipes subcategory of 'AMMO' category
+#. ~ Crafting recipes subcategory of 'FOOD' category
+#. ~ Crafting recipes subcategory of 'CHEM' category
+#. ~ Crafting recipes subcategory of 'ELECTRONIC' category
+#. ~ Crafting recipes subcategory of 'ARMOR' category
+#. ~ Crafting recipes subcategory of 'OTHER' category
+#: data/json/recipes/recipes.json
+msgid "NESTED"
+msgstr ""
+
+#. ~ Crafting recipes subcategory of 'WEAPON' category
 #: data/json/recipes/recipes.json
 msgid "BASHING"
 msgstr "打撃"
@@ -182575,6 +182642,18 @@ msgstr ""
 "複数のカメラと接続されたLCDディスプレイ。電源を入れると車両のバッテリー電力を消費し、カメラの映像を確認できる。このタイルを調べる（e）か、車両制御キー（デフォルトは"
 " ^）で操作にアクセスできる。"
 
+#: data/json/vehicleparts/controls.json
+msgid "sonar array"
+msgstr ""
+
+#. ~ Description for {'str': 'sonar array'}
+#: data/json/vehicleparts/controls.json
+msgid ""
+"A set of sonar transducers and electronics used to scan underwater terrain."
+"  Activate it from the vehicle controls to reveal local underwater overmap "
+"tiles."
+msgstr ""
+
 #. ~ Description for {'str': 'security camera'}
 #: data/json/vehicleparts/controls.json
 msgid ""
@@ -184339,6 +184418,10 @@ msgid "roof-mounted external tank (200L)"
 msgstr "屋根設置型外部タンク [200L]"
 
 #: data/json/vehicleparts/tanks.json
+msgid "mounted external tank (200L)"
+msgstr "外部搭載タンク [200L]"
+
+#: data/json/vehicleparts/tanks.json
 msgid "wooden barrel (100L)"
 msgstr "木製樽 [100L]"
 
@@ -185764,6 +185847,66 @@ msgstr "平床トラック"
 #: data/json/vehicles/trucks.json
 msgid "Diesel Flatbed Truck"
 msgstr "平床ディーゼルトラック"
+
+#: data/json/vehicles/trucks.json
+msgid "Avgas Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "JP-8 Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Diesel Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Fertilizer Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Bleach Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Ammonia Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Gas Tanker"
+msgstr "タンクローリー"
+
+#: data/json/vehicles/trucks.json
+msgid "Water Tanker"
+msgstr "給水車"
+
+#: data/json/vehicles/trucks.json
+msgid "Ether Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Formaldehyde Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Cooking Oil Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Plutonium Slurry Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Sewage Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Sulfuric Acid Tanker"
+msgstr ""
+
+#: data/json/vehicles/trucks.json
+msgid "Milk Tanker"
+msgstr ""
 
 #: data/json/vehicles/trucks.json
 msgid "Pickup Truck"
@@ -192435,14 +192578,6 @@ msgid ""
 "camera station, steering tools, and electronics controls."
 msgstr "カメラ操作、ステアリングツール、電子制御装置などの機能を含む、軍用車両用の複雑な大型制御装置だ。"
 
-#: data/mods/Aftershock/vehicles/vehicle_overrides.json
-msgid "Gas Tanker"
-msgstr "タンクローリー"
-
-#: data/mods/Aftershock/vehicles/vehicle_overrides.json
-msgid "Water Tanker"
-msgstr "給水車"
-
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
 msgid "cargo trough"
 msgstr "簡易カーゴ"
@@ -192526,10 +192661,6 @@ msgid ""
 "A large and complex dashboard mounted with steering controls and several LCD"
 " touch screens for controlling vehicle systems."
 msgstr "ステアリング機構と車両制御用の液晶タッチスクリーンが複数搭載された、大きく複雑なダッシュボードだ。"
-
-#: data/mods/Aftershock/vehicles/vehicle_parts.json
-msgid "mounted external tank (200L)"
-msgstr "外部搭載タンク [200L]"
 
 #. ~ Description for {'str': 'ultralight frame'}
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -224183,6 +224314,17 @@ msgstr ""
 "屋内栽培向けの小型プランター。\n"
 "新鮮な作物がすぐ手に入る。"
 
+#: data/mods/gunchair/gunchair.json data/mods/gunchair/modinfo.json
+msgid "GunChair™"
+msgstr ""
+
+#. ~ Description for GunChair™
+#: data/mods/gunchair/modinfo.json
+msgid ""
+"Own a minigun-propelled armchair for home defense, Just as the founding "
+"fathers intended"
+msgstr ""
+
 #: data/mods/innawoods/modinfo.json
 msgid "innawoods"
 msgstr "インナウッズ"
@@ -226309,7 +226451,7 @@ msgstr "アンカー"
 msgid "No stations found on this tile."
 msgstr "このタイルにステーションは見つからない。"
 
-#: data/mods/teleportation_mod/main.lua
+#: data/mods/teleportation_mod/main.lua src/handle_action.cpp
 msgid "Do what?"
 msgstr "何をする？"
 
@@ -230043,6 +230185,20 @@ msgstr "%sに土を埋め終えた。"
 #, c-format
 msgid "Playing with your %s has lifted your spirits a bit."
 msgstr "%sと触れ合って少し心が癒された。"
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid ""
+"Training your %s has finally succeeded, they should be less skittish in "
+"combat now."
+msgstr ""
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid ""
+"Training your %s takes time, it seems they are making a bit of progress at "
+"least."
+msgstr ""
 
 #: src/activity_handlers.cpp
 msgid "You open up your kit and shave."
@@ -238116,7 +238272,7 @@ msgstr ""
 msgid "Origin: "
 msgstr "出典:"
 
-#: src/construction.cpp src/item.cpp
+#: src/construction.cpp src/crafting_gui.cpp src/item.cpp
 msgid "Category: "
 msgstr "分類: "
 
@@ -239443,6 +239599,25 @@ msgstr ""
 msgid "%2dx %s"
 msgstr "%2dx %s"
 
+#: src/crafting_gui.cpp src/output.cpp
+msgid "unknown"
+msgstr "不明"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "Known recipes: <color_light_blue>%d</color>"
+msgstr ""
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "<color_light_blue>Origin: '%s'</color>"
+msgstr ""
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "Category: <color_magenta>%s</color>"
+msgstr ""
+
 #: src/crafting_gui.cpp
 msgid "You can't do that!  Press [<color_yellow>ESC</color>]!"
 msgstr "製作できない！[<color_yellow>ESC</color>]を押してくれ！"
@@ -240545,7 +240720,7 @@ msgstr "セーブファイル名を変更する (警告: セーブデータが�
 msgid "Rename character:"
 msgstr "キャラクター名を変更する:"
 
-#: src/debug_menu.cpp src/newcharacter.cpp
+#: src/debug_menu.cpp
 msgid "Enter age in years.  Minimum 16, maximum 55"
 msgstr "年齢を入力してくれ。(16～55)"
 
@@ -246591,10 +246766,6 @@ msgid "%1$s from %2$s (%3$d)"
 msgstr "%1$s/%2$s(%3$d)"
 
 #: src/handle_action.cpp
-msgid "Draw what?"
-msgstr "何を引き抜く？"
-
-#: src/handle_action.cpp
 msgid "Change to which movement mode?"
 msgstr "移動モードを選択"
 
@@ -249557,6 +249728,72 @@ msgid ""
 "The plutonium generator has significant security measures in place. Without "
 "the necessary ID, you'll have to remove it by hand."
 msgstr "プルトニウム発電機には厳重なセキュリティ対策が施されている。必要なIDがなければ、手作業で取り外さなければならない。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose option:"
+msgstr "オプションを選べ:"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Stop crafting"
+msgstr "製作を停止する"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Remove Product"
+msgstr "製品を取り除く"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Batteries are low."
+msgstr "電池が消耗している。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Start crafting "
+msgstr "製作を開始する"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Really stop?"
+msgstr "本当に停止するか？"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "You don't have a suitable container to store your %s."
+msgstr "%sの保存に適した容器がない。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "You got the %s from the %s."
+msgstr "%sから%sを手に入れた。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose desired recipe:"
+msgstr "望むレシピを選べ:"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "%s (%1.f charges)"
+msgstr "%s (チャージ %1.f)"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "You don't know of anything you could craft with this."
+msgstr "これで製作できるものを何も知らない。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+msgid "Choose batch count:"
+msgstr "バッチ数を選ぶ:"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "%s batches (%1.f charges)"
+msgstr "%s バッチ (チャージ %1.f)"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "The %s needs %d charges to create this."
+msgstr "%sがこれを作成するために、チャージ %d 必要だ。"
+
+#: src/iexamine.cpp src/iuse_actor.cpp
+#, c-format
+msgid "The %s begins to hum."
+msgstr "%sが低い唸りを始める。"
 
 #: src/iexamine_elevator.cpp
 msgid " (this floor)"
@@ -256842,72 +257079,6 @@ msgid "You're surrounded by aggressive multi-cookers!"
 msgstr "多機能調理機の群れに取り囲まれた！牙を剥いて唸っている！"
 
 #: src/iuse_actor.cpp
-msgid "Choose option:"
-msgstr "オプションを選べ:"
-
-#: src/iuse_actor.cpp
-msgid "Stop crafting"
-msgstr "製作を停止する"
-
-#: src/iuse_actor.cpp
-msgid "Batteries are low."
-msgstr "電池が消耗している。"
-
-#: src/iuse_actor.cpp
-msgid "Start crafting "
-msgstr "製作を開始する"
-
-#: src/iuse_actor.cpp
-msgid "Remove Product"
-msgstr "製品を取り除く"
-
-#: src/iuse_actor.cpp
-msgid "Really stop?"
-msgstr "本当に停止するか？"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You don't have a suitable container to store your %s."
-msgstr "%sの保存に適した容器がない。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "You got the %s from the %s."
-msgstr "%sから%sを手に入れた。"
-
-#: src/iuse_actor.cpp
-msgid "Choose desired recipe:"
-msgstr "望むレシピを選べ:"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "%s (%1.f charges)"
-msgstr "%s (チャージ %1.f)"
-
-#: src/iuse_actor.cpp
-msgid "You don't know of anything you could craft with this."
-msgstr "これで製作できるものを何も知らない。"
-
-#: src/iuse_actor.cpp
-msgid "Choose batch count:"
-msgstr "バッチ数を選ぶ:"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "%s batches (%1.f charges)"
-msgstr "%s バッチ (チャージ %1.f)"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s needs %d charges to create this."
-msgstr "%sがこれを作成するために、チャージ %d 必要だ。"
-
-#: src/iuse_actor.cpp
-#, c-format
-msgid "The %s begins to hum."
-msgstr "%sが低い唸りを始める。"
-
-#: src/iuse_actor.cpp
 msgid "You can't do *that* while mounted"
 msgstr "乗車中にそれはできない。"
 
@@ -264047,6 +264218,11 @@ msgid "Play with %s"
 msgstr "%sと遊ぶ"
 
 #: src/monexamine.cpp
+#, c-format
+msgid "Train %s"
+msgstr ""
+
+#: src/monexamine.cpp
 msgid "Untie"
 msgstr "解く"
 
@@ -266461,6 +266637,11 @@ msgstr "本当にこのまま終了するか？"
 #: src/newcharacter.cpp
 msgid "Enter name.  Cancel to delete all."
 msgstr "名前を入力。すべて消去する場合は、キャンセルすること。"
+
+#: src/newcharacter.cpp
+#, c-format
+msgid "Enter age in years.  Minimum %d, maximum %d"
+msgstr ""
 
 #: src/newcharacter.cpp
 msgid "Name of template:"
@@ -269159,6 +269340,16 @@ msgid "Highlight unread recipes to allow tracking of newly learned recipes."
 msgstr ""
 
 #: src/options.cpp
+msgid "Enable nested crafting categories"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Show nested crafting categories in the crafting UI.  When disabled, nested "
+"recipes appear directly in their normal subcategories."
+msgstr ""
+
+#: src/options.cpp
 msgid "Highlight unread items"
 msgstr ""
 
@@ -269838,9 +270029,9 @@ msgstr ""
 #: src/options.cpp
 msgid ""
 "Enable level-of-detail processing for monsters.  When enabled, distant or "
-"wandering monsters are assigned reduced-fidelity AI tiers (coarse path reuse"
-" or a simple macro step) to save CPU.  When disabled, every monster runs "
-"full AI every turn regardless of distance."
+"wandering monsters are assigned AI tiers. Higher tiers are processed less "
+"often and skip certain functions.  When disabled, every monster runs full AI"
+" every turn regardless of distance."
 msgstr ""
 
 #: src/options.cpp
@@ -269852,8 +270043,8 @@ msgid ""
 "Minimum number of monsters that enter the move loop per turn.  The actual "
 "budget is the larger of this value and the current Tier-0 (full-AI) monster "
 "count, so full-AI monsters are never skipped.  Higher values process more "
-"distant monsters each turn at a CPU cost.  0 means only Tier-0 monsters run "
-"(no extra Tier-1 budget)."
+"distant monsters each turn.  0 means only Tier-0 monsters run (no extra "
+"Tier-1 budget)."
 msgstr ""
 
 #: src/options.cpp
@@ -269873,9 +270064,8 @@ msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Chebyshev distance threshold for full-AI (Tier 0) monsters.  Monsters within"
-" this radius run the complete AI every turn.  Must be less than the Coarse "
-"AI Radius."
+"Monsters within this radius run the complete AI every turn.  Must be less "
+"than the Coarse AI Radius."
 msgstr ""
 
 #: src/options.cpp
@@ -269884,10 +270074,9 @@ msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Chebyshev distance threshold for coarse-AI (Tier 1) monsters.  Monsters "
-"between the Full AI Radius and this distance use cached paths and skip "
-"expensive faction queries.  Monsters beyond this distance are Tier-2 (macro "
-"step only)."
+"Monsters between the Full AI Radius and this distance use cached paths and "
+"skip expensive faction queries.  Monsters beyond this distance are Tier-2 "
+"(macro step only)."
 msgstr ""
 
 #: src/options.cpp
@@ -269909,8 +270098,7 @@ msgstr ""
 msgid ""
 "How many turns elapse between scent-tracking checks for Tier-1 (coarse) "
 "monsters.  At 1 they check scent every turn (full fidelity); at 3 (default) "
-"only once every 3 turns.  Higher values reduce CPU cost for mid-range "
-"hordes."
+"only once every 3 turns. "
 msgstr ""
 
 #: src/options.cpp
@@ -269921,8 +270109,7 @@ msgstr ""
 msgid ""
 "Highest LOD tier that participates in group-morale and swarming "
 "calculations.  0 = Tier-0 only (default, cheapest).  1 = Tier-0 and Tier-1 "
-"monsters also run group-morale/swarm checks at the cost of the extra O(M²) "
-"faction scan for mid-range monsters."
+"monsters also run group-morale/swarm checks. "
 msgstr ""
 
 #: src/options.cpp
@@ -269962,8 +270149,8 @@ msgstr ""
 
 #: src/options.cpp
 msgid ""
-"When enabled, obstacles at other z-levels correctly block horizontal line of"
-" sight.  Requires 3D FoV.  Slower than disabled."
+"When enabled, obstacles at other z-levels correctly cast 3D shadows.  "
+"Requires 3D FoV.  Significantly slower than disabled."
 msgstr ""
 
 #: src/options.cpp
@@ -269994,8 +270181,8 @@ msgstr ""
 #: src/options.cpp
 msgid ""
 "Enable worker-thread parallelism for expensive per-turn computations "
-"(monster planning, map-cache building, scent map updates).  Disable to run "
-"everything on the main thread — useful for debugging, reproducibility "
+"(monster planning, map-cache building, scent map updates, etc).  Disable to "
+"run everything on the main thread — useful for debugging, reproducibility "
 "testing, or machines where thread overhead exceeds gain.  Requires restart."
 msgstr ""
 
@@ -270066,7 +270253,7 @@ msgid ""
 "Keep a border of submaps loaded around the reality bubble.  These are pre-"
 "loaded from disk in the background so that map shifts are faster (the data "
 "is already in memory).  Uses more memory but reduces stalls when the map "
-"scrolls.  Takes effect immediately without restart."
+"scrolls.  "
 msgstr ""
 
 #: src/options.cpp
@@ -270074,19 +270261,107 @@ msgid "Reality Bubble"
 msgstr ""
 
 #: src/options.cpp
-msgid "Configure how submaps are loaded and processed."
+msgid "Configure how the reality bubble functions."
 msgstr ""
 
 #: src/options.cpp
-msgid "World Tick Interval"
+msgid "Reality Bubble Size"
 msgstr ""
 
 #: src/options.cpp
 msgid ""
-"How many turns elapse between out-of-bubble world ticks.  1 processes every "
-"loaded submap outside the player's reality bubble each turn at full "
-"fidelity. Higher values amortize cost by batching N turns of simulation into"
-" a single pass — useful on slow hardware."
+"Submap radius of the reality bubble (submaps visible beyond your position). "
+"Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
+"Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
+"the loaded area and memory usage; smaller values reduce both. "
+msgstr ""
+
+#: src/options.cpp
+msgid "Mobile Activity Bubble Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is performing a "
+"mobile activity (crafting, construction, etc.).  0 disables the feature.  "
+"Must be smaller than Reality Bubble Size to take effect."
+msgstr ""
+
+#: src/options.cpp
+msgid "Idle Activity Bubble Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is performing an "
+"idle activity (sleeping, reading, waiting, etc.).  0 disables the feature.  "
+"Must be smaller than Reality Bubble Size to take effect."
+msgstr ""
+
+#: src/options.cpp
+msgid "Underground Reality Bubble Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is underground and"
+" indoors (no sky visible).  0 disables the feature.  Must be smaller than "
+"Reality Bubble Size to take effect."
+msgstr ""
+
+#: src/options.cpp
+msgid "Vehicle Reality Bubble Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while the player is actively "
+"driving a vehicle  or mounted on a creature. Useful with a high render "
+"distance to reduce lag at speed.  0 disables the feature.  Must be smaller "
+"than Reality Bubble Size to take effect."
+msgstr ""
+
+#: src/options.cpp
+msgid "Combat Reality Bubble Size"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Shrink the reality bubble to this radius while hostile creatures are visible"
+" nearby.  Uses the same detection range as safe mode.  0 disables the "
+"feature.  Must be smaller than Reality Bubble Size to take effect."
+msgstr ""
+
+#: src/options.cpp
+msgid "Activity Bubble Grace Period"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Minimum length of activity in minutes before the reality bubble shrinks.  "
+"Acts as a safety net to avoid unnecessary resizes for short tasks.  Default "
+"is 5 minutes."
+msgstr ""
+
+#: src/options.cpp
+msgid "Dynamic Bubble Grace Period"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Consecutive turns a condition must be met before the reality bubble shrinks "
+"for underground, vehicle, and combat modes.  Prevents rapid resizing when "
+"briefly entering or leaving a trigger zone.  Default is 5 turns."
+msgstr ""
+
+#: src/options.cpp
+msgid "Submap Loading"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Configure how submaps are loaded and processed outside of the reality "
+"bubble."
 msgstr ""
 
 #: src/options.cpp
@@ -270095,10 +270370,9 @@ msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Controls whether fire in loaded submaps can spread into adjacent unloaded "
-"submaps. 'None': fire only decays, never spreads beyond the loaded set. "
-"'Adjacent': fire requests one extra layer of loaded submaps at each boundary"
-" to preserve correct spread behavior."
+"Controls whether fire can keep areas loaded outside of render distance. "
+"'None': fire burns out in place. 'Adjacent': fire can spread into unloaded "
+"areas, and keeps close enough."
 msgstr ""
 
 #: src/options.cpp
@@ -270117,22 +270391,7 @@ msgstr ""
 msgid ""
 "Maximum number of submaps that fire spread may keep loaded simultaneously "
 "across all dimensions. Higher values allow larger fires to be simulated "
-"correctly at the cost of CPU and memory. 0 disables out-of-bubble fire "
-"spread loading entirely. Takes effect immediately without restart."
-msgstr ""
-
-#: src/options.cpp
-msgid "Reality Bubble Size"
-msgstr ""
-
-#: src/options.cpp
-msgid ""
-"Submap radius of the reality bubble (submaps visible beyond your position). "
-"Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
-"Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
-"the loaded area and memory usage; smaller values reduce both. REQUIRES A "
-"GAME RESTART to take effect — changing this mid-session will NOT resize "
-"caches or the loaded map."
+"correctly. 0 disables out-of-bubble fire spread loading entirely. "
 msgstr ""
 
 #: src/options.cpp
@@ -270142,8 +270401,7 @@ msgstr ""
 #: src/options.cpp
 msgid ""
 "Radius in submaps around each end of a power-portal link that is force-"
-"loaded while the link is active.  Larger values keep more terrain around a "
-"remote portal resident, at the cost of memory."
+"loaded while the link is active."
 msgstr ""
 
 #: src/options.cpp
@@ -270480,6 +270738,17 @@ msgid "A scaling factor that determines density of vehicle spawns."
 msgstr ""
 
 #: src/options.cpp
+msgid "Vehicle gun recoil scaling factor"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"A scaling factor that determines how strongly firing guns pushes the vehicle"
+" you are on.  0.0 disables this behavior, 1.0 uses the default mass-based "
+"recoil propulsion, and higher values exaggerate it."
+msgstr ""
+
+#: src/options.cpp
 msgid "Spawn rate scaling factor"
 msgstr "モンスター生成係数"
 
@@ -270772,6 +271041,16 @@ msgstr "個別選択制専用"
 #: src/options.cpp
 msgid "No freeform"
 msgstr "フリー選択禁止"
+
+#: src/options.cpp
+msgid "Enforce profession age ranges"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"When enabled, character ages are constrained by profession-defined age "
+"ranges when available."
+msgstr ""
 
 #: src/options.cpp
 msgid "Disables lifting requirements for vehicle parts."
@@ -271312,10 +271591,6 @@ msgid "Examples: c:food,m:iron,q:hammering,n:toolshelf,d:pipe"
 msgstr "記述例:c:食料、m:鉄、q:打込、n:工具棚、d:パイプ"
 
 #: src/output.cpp
-msgid "unknown"
-msgstr "不明"
-
-#: src/output.cpp
 msgid "bright"
 msgstr "明るい"
 
@@ -271529,19 +271804,30 @@ msgid "Color codes: "
 msgstr "カラーコード:"
 
 #: src/overmap_ui.cpp
-msgid "Type GLYPH:TEXT to set a custom glyph."
-msgstr "カスタムグリフを設定するには、GLYPH と入力。"
-
-#: src/overmap_ui.cpp
-msgid "Type COLOR;TEXT to set a custom color."
-msgstr "カスタム色を設定するには、COLOR;テキスト と入力。"
-
-#: src/overmap_ui.cpp
-msgid "Type SPRITE:TILE_ID to set a custom sprite."
+msgid "Type <color_white>COLOR;TEXT</color> to set a custom color."
 msgstr ""
 
 #: src/overmap_ui.cpp
-msgid "Examples: B:Base | g;Loot | SPRITE:toolbox;g;Tools"
+msgid "Type <color_white>GLYPH:TEXT</color> to set a custom glyph."
+msgstr ""
+
+#: src/overmap_ui.cpp
+msgid "Type <color_white>SPRITE:TILE_ID</color> to set a custom sprite."
+msgstr ""
+
+#: src/overmap_ui.cpp
+msgid "Type <color_white>LABEL:TEXT</color> to set a custom label."
+msgstr ""
+
+#: src/overmap_ui.cpp
+msgid "Use <color_white>;</color> as a separator to combine elements."
+msgstr ""
+
+#: src/overmap_ui.cpp
+msgid ""
+"Examples: <color_white>$:Bank</color> | <color_white>R;Red</color> | "
+"<color_white>SPRITE:toolbox</color> | <color_white>LABEL:Survivor "
+"City</color>"
 msgstr ""
 
 #: src/overmap_ui.cpp
@@ -277313,6 +277599,14 @@ msgid "Remember vehicle position"
 msgstr "車両の位置を記憶する"
 
 #: src/vehicle_use.cpp
+msgid "Brake hold: off"
+msgstr ""
+
+#: src/vehicle_use.cpp
+msgid "Brake hold: on"
+msgstr ""
+
+#: src/vehicle_use.cpp
 msgid "Choose action for the autopilot"
 msgstr "自動操縦の動作を選択"
 
@@ -277351,6 +277645,14 @@ msgstr "車両の位置情報を記録しなくなった。"
 #: src/vehicle_use.cpp
 msgid "You start keeping track of this vehicle's position."
 msgstr "この車両の位置情報を記録し始めた。"
+
+#: src/vehicle_use.cpp
+msgid "Brake hold turned off."
+msgstr ""
+
+#: src/vehicle_use.cpp
+msgid "Brake hold turned on."
+msgstr ""
 
 #: src/vehicle_use.cpp
 msgid "Really let go of controls while flying?  This will result in a crash."
