@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-05 01:01+0000\n"
+"POT-Creation-Date: 2026-04-06 18:40+0000\n"
 "Last-Translator: Arif Öcal, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -276236,7 +276236,7 @@ msgstr ""
 "Kış uykusuna girmek için neredeyse tamamen yiyecek ve su dolu olmanız "
 "gerekiyor."
 
-#: src/character.cpp src/faction.cpp
+#: src/character.cpp src/faction.cpp src/npc.cpp
 msgid "Wielding: "
 msgstr "Kullanılan:"
 
@@ -277930,7 +277930,7 @@ msgstr "Sekmeyi sola taşı"
 msgid "* No hidden recipe - %d in category *"
 msgstr ""
 
-#: src/construction.cpp src/monster.cpp
+#: src/construction.cpp
 msgid "Origin: "
 msgstr "Menşei:"
 
@@ -279872,6 +279872,14 @@ msgid "Crash game (test crash handling)"
 msgstr "Oyunu çökert (çökme işlemini test et)"
 
 #: src/debug_menu.cpp
+msgid "Show debug message (worker thread)"
+msgstr ""
+
+#: src/debug_menu.cpp
+msgid "Crash worker thread (test crash handling)"
+msgstr ""
+
+#: src/debug_menu.cpp
 msgid "Reload translations"
 msgstr "Çevirileri yeniden yükle"
 
@@ -280995,8 +281003,10 @@ msgstr "Burada herhangi bir mobilya görmüyorsunuz."
 
 #: src/descriptions.cpp
 #, c-format
-msgid "Origin: %s\n"
-msgstr "Kaynak: %s\n"
+msgid ""
+"\n"
+"Origin: %s\n"
+msgstr ""
 
 #: src/descriptions.cpp
 msgid "You can't see the terrain here."
@@ -281015,10 +281025,9 @@ msgid ""
 "Sign: ???"
 msgstr ""
 
-#: src/descriptions.cpp src/iexamine.cpp
-#, c-format
-msgid "That is a %s."
-msgstr "Bu bir %s."
+#: src/descriptions.cpp src/monster.cpp
+msgid "This is a "
+msgstr ""
 
 #: src/descriptions.cpp
 msgid "You could harvest the following things from it:"
@@ -281429,7 +281438,7 @@ msgstr "alan: %s L:%d[%s] A:%d"
 msgid "trap: %s (%d)"
 msgstr "tuzak: %s (%d)"
 
-#: src/editmap.cpp src/game.cpp
+#: src/editmap.cpp
 #, c-format
 msgid "There is a %s there.  Parts:"
 msgstr "Orada bir %s var.  Parçalar:"
@@ -283738,27 +283747,28 @@ msgid "Unseen."
 msgstr "Görünmez."
 
 #: src/game.cpp
-#, c-format
-msgid "%s; Impassable"
-msgstr "%s; Geçilmez"
+msgid "Impassable "
+msgstr ""
 
 #: src/game.cpp
 #, c-format
-msgid "%s; Movement cost %d"
-msgstr "%s; Hareket maliyeti %d"
+msgid "Move cost: %d "
+msgstr ""
 
 #: src/game.cpp
-msgid "Lighting: "
-msgstr "Aydınlatma:"
+#, c-format
+msgid "Cover: %d%%"
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "Block: %d%%"
+msgstr ""
 
 #: src/game.cpp
 #, c-format
 msgid "Sign: %s"
 msgstr "İşaret: %s"
-
-#: src/game.cpp
-msgid "Sign: ???"
-msgstr "İşaret: ???"
 
 #: src/game.cpp
 #, c-format
@@ -283769,11 +283779,6 @@ msgstr "Aşağıda: %s; Destek yok"
 #, c-format
 msgid "Below: %s; Walkable"
 msgstr "Aşağıda: %s; Yürünebilir"
-
-#: src/game.cpp
-#, c-format
-msgid "Coverage: %d%%"
-msgstr "Kapsama: %d%%"
 
 #: src/game.cpp
 #, c-format
@@ -287098,6 +287103,11 @@ msgstr "Not renkleri:"
 #: src/help.cpp
 msgid " HELP "
 msgstr "YARDIM"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "That is a %s."
+msgstr "Bu bir %s."
 
 #: src/iexamine.cpp
 msgid "Apply diamond coating"
@@ -299543,46 +299553,6 @@ msgid "The %s you were grabbing is destroyed!"
 msgstr "Tuttuğun %s yok oldu!"
 
 #: src/map.cpp
-msgid "Smashable."
-msgstr "Kırılabilir."
-
-#: src/map.cpp
-msgid "Diggable."
-msgstr "Kazılabilir."
-
-#: src/map.cpp
-msgid "Plowable."
-msgstr "Sürülebilir."
-
-#: src/map.cpp
-msgid "Rough."
-msgstr "Pürüzlü."
-
-#: src/map.cpp
-msgid "Unstable."
-msgstr "Dengesiz."
-
-#: src/map.cpp
-msgid "Sharp."
-msgstr "Keskin."
-
-#: src/map.cpp
-msgid "Flat."
-msgstr "Düz."
-
-#: src/map.cpp
-msgid "Roof."
-msgstr "Çatı."
-
-#: src/map.cpp
-msgid "Simple."
-msgstr "Basit."
-
-#: src/map.cpp
-msgid "Mountable."
-msgstr "Monte edilebilir."
-
-#: src/map.cpp
 #, c-format
 msgid "Falling %s hits you!"
 msgstr "Düşen %s sana çarpıyor!"
@@ -305253,6 +305223,14 @@ msgid "It is a creature."
 msgstr "Bu bir yaratık."
 
 #: src/monster.cpp
+msgid "Can see to your current location"
+msgstr ""
+
+#: src/monster.cpp
+msgid "Can't see to your current location"
+msgstr ""
+
+#: src/monster.cpp
 msgid " Difficulty "
 msgstr "Zorluk"
 
@@ -305261,14 +305239,15 @@ msgstr "Zorluk"
 msgid "Origin: %s"
 msgstr "Köken: %s"
 
-#: src/monster.cpp src/npc.cpp
-msgid "Aware of your presence!"
-msgstr "Varlığınızın farkında!"
-
 #: src/monster.cpp
 #, c-format
 msgid "Rider: %s"
 msgstr "Binici: %s"
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s."
+msgstr "Bu %s."
 
 #: src/monster.cpp
 msgid "Difficulty "
@@ -305300,22 +305279,12 @@ msgstr "<color_red>Ölümcül derecede tehlikeli!</color>"
 
 #: src/monster.cpp
 #, c-format
-msgid "This is a %s.  %s %s"
-msgstr "Bu bir %s.  %s %s"
-
-#: src/monster.cpp
-#, c-format
 msgid "<stat>It is %s.</stat>"
 msgstr "<stat>Bu %s'dir.</stat>"
 
 #: src/monster.cpp
 msgid "an animal"
 msgstr "bir hayvan"
-
-#: src/monster.cpp
-#, c-format
-msgid "It is %s."
-msgstr "Bu %s."
 
 #: src/monster.cpp
 #, c-format
@@ -307168,13 +307137,12 @@ msgid "%1$s says something but you can't hear it!"
 msgstr "%1$s bir şeyler söylüyor ama duyamıyorsun!"
 
 #: src/npc.cpp
-msgid "NPC: "
-msgstr "NPC:"
+msgid "Aware of your presence"
+msgstr ""
 
 #: src/npc.cpp
-#, c-format
-msgid "Wielding a %s"
-msgstr "Bir %s kuşanmış"
+msgid "Unaware of you"
+msgstr ""
 
 #: src/npc.cpp
 msgid "Completely untrusting"

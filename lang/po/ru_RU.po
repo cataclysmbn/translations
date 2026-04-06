@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-05 01:01+0000\n"
+"POT-Creation-Date: 2026-04-06 18:40+0000\n"
 "Last-Translator: Vorpal Void <vorpal.void@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -292061,7 +292061,7 @@ msgid "You need to be nearly full of food and water to enter hibernation."
 msgstr ""
 "Чтобы войти в спячку, вы должны быть почти полностью наполнены едой и водой."
 
-#: src/character.cpp src/faction.cpp
+#: src/character.cpp src/faction.cpp src/npc.cpp
 msgid "Wielding: "
 msgstr "В руках: "
 
@@ -293785,7 +293785,7 @@ msgstr "Сдвинуть вкладку влево"
 msgid "* No hidden recipe - %d in category *"
 msgstr ""
 
-#: src/construction.cpp src/monster.cpp
+#: src/construction.cpp
 msgid "Origin: "
 msgstr "Источник: "
 
@@ -295743,6 +295743,14 @@ msgid "Crash game (test crash handling)"
 msgstr "Вылет игры (тест обработки вылета)"
 
 #: src/debug_menu.cpp
+msgid "Show debug message (worker thread)"
+msgstr ""
+
+#: src/debug_menu.cpp
+msgid "Crash worker thread (test crash handling)"
+msgstr ""
+
+#: src/debug_menu.cpp
 msgid "Reload translations"
 msgstr "Перезагрузить файлы перевода"
 
@@ -296878,8 +296886,10 @@ msgstr "Вы не видите здесь никакой мебели."
 
 #: src/descriptions.cpp
 #, c-format
-msgid "Origin: %s\n"
-msgstr "Источник: %s\n"
+msgid ""
+"\n"
+"Origin: %s\n"
+msgstr ""
 
 #: src/descriptions.cpp
 msgid "You can't see the terrain here."
@@ -296902,10 +296912,9 @@ msgstr ""
 "\n"
 "Знак: ???"
 
-#: src/descriptions.cpp src/iexamine.cpp
-#, c-format
-msgid "That is a %s."
-msgstr "Это %s."
+#: src/descriptions.cpp src/monster.cpp
+msgid "This is a "
+msgstr ""
 
 #: src/descriptions.cpp
 msgid "You could harvest the following things from it:"
@@ -297319,7 +297328,7 @@ msgstr "область: %s L:%d[%s] A:%d"
 msgid "trap: %s (%d)"
 msgstr "ловушка: %s (%d)"
 
-#: src/editmap.cpp src/game.cpp
+#: src/editmap.cpp
 #, c-format
 msgid "There is a %s there.  Parts:"
 msgstr "Здесь %s. Части:"
@@ -299681,27 +299690,28 @@ msgid "Unseen."
 msgstr "Не видно."
 
 #: src/game.cpp
-#, c-format
-msgid "%s; Impassable"
-msgstr "%s; Непроходимо"
+msgid "Impassable "
+msgstr ""
 
 #: src/game.cpp
 #, c-format
-msgid "%s; Movement cost %d"
-msgstr "%s; Цена движения %d"
+msgid "Move cost: %d "
+msgstr ""
 
 #: src/game.cpp
-msgid "Lighting: "
-msgstr "Освещение: "
+#, c-format
+msgid "Cover: %d%%"
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "Block: %d%%"
+msgstr ""
 
 #: src/game.cpp
 #, c-format
 msgid "Sign: %s"
 msgstr "Знак: %s"
-
-#: src/game.cpp
-msgid "Sign: ???"
-msgstr "Знак: ???"
 
 #: src/game.cpp
 #, c-format
@@ -299712,11 +299722,6 @@ msgstr "Ниже: %s; Нет поддержки"
 #, c-format
 msgid "Below: %s; Walkable"
 msgstr "Ниже: %s; Проходимо"
-
-#: src/game.cpp
-#, c-format
-msgid "Coverage: %d%%"
-msgstr "Прикрытие: %d%%"
 
 #: src/game.cpp
 #, c-format
@@ -303071,6 +303076,11 @@ msgstr "Цвета заметок: "
 #: src/help.cpp
 msgid " HELP "
 msgstr " ПОМОЩЬ "
+
+#: src/iexamine.cpp
+#, c-format
+msgid "That is a %s."
+msgstr "Это %s."
 
 #: src/iexamine.cpp
 msgid "Apply diamond coating"
@@ -315668,46 +315678,6 @@ msgid "The %s you were grabbing is destroyed!"
 msgstr "%s, что вы тащили, уничтожен!"
 
 #: src/map.cpp
-msgid "Smashable."
-msgstr "Можно разбить."
-
-#: src/map.cpp
-msgid "Diggable."
-msgstr "Можно копать."
-
-#: src/map.cpp
-msgid "Plowable."
-msgstr "Можно пахать."
-
-#: src/map.cpp
-msgid "Rough."
-msgstr "Неровное."
-
-#: src/map.cpp
-msgid "Unstable."
-msgstr "Нестабильно."
-
-#: src/map.cpp
-msgid "Sharp."
-msgstr "Острое."
-
-#: src/map.cpp
-msgid "Flat."
-msgstr "Ровное."
-
-#: src/map.cpp
-msgid "Roof."
-msgstr "Крыша."
-
-#: src/map.cpp
-msgid "Simple."
-msgstr "Легко разобрать."
-
-#: src/map.cpp
-msgid "Mountable."
-msgstr "Упор для сошек."
-
-#: src/map.cpp
 #, c-format
 msgid "Falling %s hits you!"
 msgstr "Вас задевает падающий %s!"
@@ -321406,6 +321376,14 @@ msgid "It is a creature."
 msgstr "Это существо."
 
 #: src/monster.cpp
+msgid "Can see to your current location"
+msgstr ""
+
+#: src/monster.cpp
+msgid "Can't see to your current location"
+msgstr ""
+
+#: src/monster.cpp
 msgid " Difficulty "
 msgstr " Сложность "
 
@@ -321414,14 +321392,15 @@ msgstr " Сложность "
 msgid "Origin: %s"
 msgstr "Источник: %s"
 
-#: src/monster.cpp src/npc.cpp
-msgid "Aware of your presence!"
-msgstr "Знает о вашем присутствии!"
-
 #: src/monster.cpp
 #, c-format
 msgid "Rider: %s"
 msgstr "Наездник: %s"
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s."
+msgstr "Это %s."
 
 #: src/monster.cpp
 msgid "Difficulty "
@@ -321453,22 +321432,12 @@ msgstr "<color_red>Смертельно опасно!</color>"
 
 #: src/monster.cpp
 #, c-format
-msgid "This is a %s.  %s %s"
-msgstr "Это %s. %s %s"
-
-#: src/monster.cpp
-#, c-format
 msgid "<stat>It is %s.</stat>"
 msgstr "<stat>Текущие эффекты: %s.</stat>"
 
 #: src/monster.cpp
 msgid "an animal"
 msgstr "животное"
-
-#: src/monster.cpp
-#, c-format
-msgid "It is %s."
-msgstr "Это %s."
 
 #: src/monster.cpp
 #, c-format
@@ -323360,13 +323329,12 @@ msgid "%1$s says something but you can't hear it!"
 msgstr "%1$s говорит что-то, но вы не слышите!"
 
 #: src/npc.cpp
-msgid "NPC: "
-msgstr "НПС: "
+msgid "Aware of your presence"
+msgstr ""
 
 #: src/npc.cpp
-#, c-format
-msgid "Wielding a %s"
-msgstr "В руках %s"
+msgid "Unaware of you"
+msgstr ""
 
 #: src/npc.cpp
 msgid "Completely untrusting"

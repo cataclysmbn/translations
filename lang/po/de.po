@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-05 01:01+0000\n"
+"POT-Creation-Date: 2026-04-06 18:40+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: German (https://app.transifex.com/bn-team/teams/113585/de/)\n"
 "MIME-Version: 1.0\n"
@@ -253519,7 +253519,7 @@ msgstr ""
 msgid "You need to be nearly full of food and water to enter hibernation."
 msgstr ""
 
-#: src/character.cpp src/faction.cpp
+#: src/character.cpp src/faction.cpp src/npc.cpp
 msgid "Wielding: "
 msgstr "Hält: "
 
@@ -255162,7 +255162,7 @@ msgstr "Vorherige Kategorie wählen"
 msgid "* No hidden recipe - %d in category *"
 msgstr ""
 
-#: src/construction.cpp src/monster.cpp
+#: src/construction.cpp
 msgid "Origin: "
 msgstr ""
 
@@ -257072,6 +257072,14 @@ msgid "Crash game (test crash handling)"
 msgstr "Spiel-Absturz (Test-Absturz-Handhabung)"
 
 #: src/debug_menu.cpp
+msgid "Show debug message (worker thread)"
+msgstr ""
+
+#: src/debug_menu.cpp
+msgid "Crash worker thread (test crash handling)"
+msgstr ""
+
+#: src/debug_menu.cpp
 msgid "Reload translations"
 msgstr ""
 
@@ -258192,7 +258200,9 @@ msgstr "Hier siehst du keine Möbel."
 
 #: src/descriptions.cpp
 #, c-format
-msgid "Origin: %s\n"
+msgid ""
+"\n"
+"Origin: %s\n"
 msgstr ""
 
 #: src/descriptions.cpp
@@ -258216,10 +258226,9 @@ msgstr ""
 "\n"
 "Schild: ???"
 
-#: src/descriptions.cpp src/iexamine.cpp
-#, c-format
-msgid "That is a %s."
-msgstr "Dies ist: %s."
+#: src/descriptions.cpp src/monster.cpp
+msgid "This is a "
+msgstr ""
 
 #: src/descriptions.cpp
 msgid "You could harvest the following things from it:"
@@ -258630,7 +258639,7 @@ msgstr ""
 msgid "trap: %s (%d)"
 msgstr "Falle: %s (%d)"
 
-#: src/editmap.cpp src/game.cpp
+#: src/editmap.cpp
 #, c-format
 msgid "There is a %s there.  Parts:"
 msgstr ""
@@ -260843,27 +260852,28 @@ msgid "Unseen."
 msgstr "Unsichtbar."
 
 #: src/game.cpp
-#, c-format
-msgid "%s; Impassable"
-msgstr "%s; unpassierbar"
+msgid "Impassable "
+msgstr ""
 
 #: src/game.cpp
 #, c-format
-msgid "%s; Movement cost %d"
-msgstr "%s; Bewegungskosten: %d"
+msgid "Move cost: %d "
+msgstr ""
 
 #: src/game.cpp
-msgid "Lighting: "
-msgstr "Beleuchtung: "
+#, c-format
+msgid "Cover: %d%%"
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "Block: %d%%"
+msgstr ""
 
 #: src/game.cpp
 #, c-format
 msgid "Sign: %s"
 msgstr "Schild: »%s«"
-
-#: src/game.cpp
-msgid "Sign: ???"
-msgstr "Schild: ???"
 
 #: src/game.cpp
 #, c-format
@@ -260874,11 +260884,6 @@ msgstr "Unten: %s; nicht gestützt"
 #, c-format
 msgid "Below: %s; Walkable"
 msgstr "Unten: %s; begehbar"
-
-#: src/game.cpp
-#, c-format
-msgid "Coverage: %d%%"
-msgstr ""
 
 #: src/game.cpp
 #, c-format
@@ -264177,6 +264182,11 @@ msgstr "Notizfarben: "
 #: src/help.cpp
 msgid " HELP "
 msgstr " HILFE "
+
+#: src/iexamine.cpp
+#, c-format
+msgid "That is a %s."
+msgstr "Dies ist: %s."
 
 #: src/iexamine.cpp
 msgid "Apply diamond coating"
@@ -276496,46 +276506,6 @@ msgid "The %s you were grabbing is destroyed!"
 msgstr "%s, was zu ergriffen hattest, wurde zerstört!"
 
 #: src/map.cpp
-msgid "Smashable."
-msgstr ""
-
-#: src/map.cpp
-msgid "Diggable."
-msgstr ""
-
-#: src/map.cpp
-msgid "Plowable."
-msgstr ""
-
-#: src/map.cpp
-msgid "Rough."
-msgstr ""
-
-#: src/map.cpp
-msgid "Unstable."
-msgstr ""
-
-#: src/map.cpp
-msgid "Sharp."
-msgstr ""
-
-#: src/map.cpp
-msgid "Flat."
-msgstr ""
-
-#: src/map.cpp
-msgid "Roof."
-msgstr ""
-
-#: src/map.cpp
-msgid "Simple."
-msgstr ""
-
-#: src/map.cpp
-msgid "Mountable."
-msgstr ""
-
-#: src/map.cpp
 #, c-format
 msgid "Falling %s hits you!"
 msgstr "Fallende %s treffen dich!"
@@ -282208,6 +282178,14 @@ msgid "It is a creature."
 msgstr ""
 
 #: src/monster.cpp
+msgid "Can see to your current location"
+msgstr ""
+
+#: src/monster.cpp
+msgid "Can't see to your current location"
+msgstr ""
+
+#: src/monster.cpp
 msgid " Difficulty "
 msgstr " Schwierigkeitsgrad "
 
@@ -282216,14 +282194,15 @@ msgstr " Schwierigkeitsgrad "
 msgid "Origin: %s"
 msgstr ""
 
-#: src/monster.cpp src/npc.cpp
-msgid "Aware of your presence!"
-msgstr ""
-
 #: src/monster.cpp
 #, c-format
 msgid "Rider: %s"
 msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s."
+msgstr "Ist %s."
 
 #: src/monster.cpp
 msgid "Difficulty "
@@ -282255,22 +282234,12 @@ msgstr "<color_red>Tödliche Gefahr!</color>"
 
 #: src/monster.cpp
 #, c-format
-msgid "This is a %s.  %s %s"
-msgstr "%s: %s %s"
-
-#: src/monster.cpp
-#, c-format
 msgid "<stat>It is %s.</stat>"
 msgstr "<stat>Ist %s.</stat>"
 
 #: src/monster.cpp
 msgid "an animal"
 msgstr "ein Tier"
-
-#: src/monster.cpp
-#, c-format
-msgid "It is %s."
-msgstr "Ist %s."
 
 #: src/monster.cpp
 #, c-format
@@ -284090,13 +284059,12 @@ msgid "%1$s says something but you can't hear it!"
 msgstr "%1$s sagt etwas, aber du kannst es nicht hören."
 
 #: src/npc.cpp
-msgid "NPC: "
+msgid "Aware of your presence"
 msgstr ""
 
 #: src/npc.cpp
-#, c-format
-msgid "Wielding a %s"
-msgstr "Hält: %s"
+msgid "Unaware of you"
+msgstr ""
 
 #: src/npc.cpp
 msgid "Completely untrusting"

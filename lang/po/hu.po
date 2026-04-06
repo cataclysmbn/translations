@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-05 01:01+0000\n"
+"POT-Creation-Date: 2026-04-06 18:40+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/bn-team/teams/113585/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -249169,7 +249169,7 @@ msgstr ""
 msgid "You need to be nearly full of food and water to enter hibernation."
 msgstr ""
 
-#: src/character.cpp src/faction.cpp
+#: src/character.cpp src/faction.cpp src/npc.cpp
 msgid "Wielding: "
 msgstr "Kezében: "
 
@@ -250864,7 +250864,7 @@ msgstr "Fül mozgatása balra"
 msgid "* No hidden recipe - %d in category *"
 msgstr ""
 
-#: src/construction.cpp src/monster.cpp
+#: src/construction.cpp
 msgid "Origin: "
 msgstr ""
 
@@ -252798,6 +252798,14 @@ msgid "Crash game (test crash handling)"
 msgstr ""
 
 #: src/debug_menu.cpp
+msgid "Show debug message (worker thread)"
+msgstr ""
+
+#: src/debug_menu.cpp
+msgid "Crash worker thread (test crash handling)"
+msgstr ""
+
+#: src/debug_menu.cpp
 msgid "Reload translations"
 msgstr ""
 
@@ -253915,7 +253923,9 @@ msgstr "Itt nem látsz semmiféle bútort."
 
 #: src/descriptions.cpp
 #, c-format
-msgid "Origin: %s\n"
+msgid ""
+"\n"
+"Origin: %s\n"
 msgstr ""
 
 #: src/descriptions.cpp
@@ -253939,10 +253949,9 @@ msgstr ""
 "\n"
 "Tábla: ???"
 
-#: src/descriptions.cpp src/iexamine.cpp
-#, c-format
-msgid "That is a %s."
-msgstr "Az egy %s."
+#: src/descriptions.cpp src/monster.cpp
+msgid "This is a "
+msgstr ""
 
 #: src/descriptions.cpp
 msgid "You could harvest the following things from it:"
@@ -254353,7 +254362,7 @@ msgstr ""
 msgid "trap: %s (%d)"
 msgstr ""
 
-#: src/editmap.cpp src/game.cpp
+#: src/editmap.cpp
 #, c-format
 msgid "There is a %s there.  Parts:"
 msgstr ""
@@ -256553,27 +256562,28 @@ msgid "Unseen."
 msgstr "Nem látható."
 
 #: src/game.cpp
-#, c-format
-msgid "%s; Impassable"
-msgstr "%s; Átjárhatatlan"
+msgid "Impassable "
+msgstr ""
 
 #: src/game.cpp
 #, c-format
-msgid "%s; Movement cost %d"
-msgstr "%s; Mozgási költség %d"
+msgid "Move cost: %d "
+msgstr ""
 
 #: src/game.cpp
-msgid "Lighting: "
-msgstr "Fény: "
+#, c-format
+msgid "Cover: %d%%"
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "Block: %d%%"
+msgstr ""
 
 #: src/game.cpp
 #, c-format
 msgid "Sign: %s"
 msgstr "Jel: %s"
-
-#: src/game.cpp
-msgid "Sign: ???"
-msgstr "Jel: ???"
 
 #: src/game.cpp
 #, c-format
@@ -256584,11 +256594,6 @@ msgstr "Alatta: %s; Nincs támasz"
 #, c-format
 msgid "Below: %s; Walkable"
 msgstr "Alatta: %s; Járható"
-
-#: src/game.cpp
-#, c-format
-msgid "Coverage: %d%%"
-msgstr "Fedettség: %d%%"
 
 #: src/game.cpp
 #, c-format
@@ -259877,6 +259882,11 @@ msgstr "Jegyzet színe: "
 #: src/help.cpp
 msgid " HELP "
 msgstr " SÚGÓ"
+
+#: src/iexamine.cpp
+#, c-format
+msgid "That is a %s."
+msgstr "Az egy %s."
 
 #: src/iexamine.cpp
 msgid "Apply diamond coating"
@@ -272055,46 +272065,6 @@ msgid "The %s you were grabbing is destroyed!"
 msgstr "Az általad megragadott %s megsemmisült!"
 
 #: src/map.cpp
-msgid "Smashable."
-msgstr ""
-
-#: src/map.cpp
-msgid "Diggable."
-msgstr ""
-
-#: src/map.cpp
-msgid "Plowable."
-msgstr ""
-
-#: src/map.cpp
-msgid "Rough."
-msgstr ""
-
-#: src/map.cpp
-msgid "Unstable."
-msgstr ""
-
-#: src/map.cpp
-msgid "Sharp."
-msgstr ""
-
-#: src/map.cpp
-msgid "Flat."
-msgstr ""
-
-#: src/map.cpp
-msgid "Roof."
-msgstr ""
-
-#: src/map.cpp
-msgid "Simple."
-msgstr ""
-
-#: src/map.cpp
-msgid "Mountable."
-msgstr ""
-
-#: src/map.cpp
 #, c-format
 msgid "Falling %s hits you!"
 msgstr "Rád esik a(z) %s."
@@ -277664,6 +277634,14 @@ msgid "It is a creature."
 msgstr ""
 
 #: src/monster.cpp
+msgid "Can see to your current location"
+msgstr ""
+
+#: src/monster.cpp
+msgid "Can't see to your current location"
+msgstr ""
+
+#: src/monster.cpp
 msgid " Difficulty "
 msgstr "Nehézség"
 
@@ -277672,13 +277650,14 @@ msgstr "Nehézség"
 msgid "Origin: %s"
 msgstr ""
 
-#: src/monster.cpp src/npc.cpp
-msgid "Aware of your presence!"
-msgstr "Tud a jelenlétedről!"
-
 #: src/monster.cpp
 #, c-format
 msgid "Rider: %s"
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s."
 msgstr ""
 
 #: src/monster.cpp
@@ -277711,21 +277690,11 @@ msgstr "<color_red>Életveszélyes!</color>"
 
 #: src/monster.cpp
 #, c-format
-msgid "This is a %s.  %s %s"
-msgstr "Ez egy %s.  %s %s"
-
-#: src/monster.cpp
-#, c-format
 msgid "<stat>It is %s.</stat>"
 msgstr "<stat>%s.</stat>"
 
 #: src/monster.cpp
 msgid "an animal"
-msgstr ""
-
-#: src/monster.cpp
-#, c-format
-msgid "It is %s."
 msgstr ""
 
 #: src/monster.cpp
@@ -279535,12 +279504,11 @@ msgid "%1$s says something but you can't hear it!"
 msgstr ""
 
 #: src/npc.cpp
-msgid "NPC: "
+msgid "Aware of your presence"
 msgstr ""
 
 #: src/npc.cpp
-#, c-format
-msgid "Wielding a %s"
+msgid "Unaware of you"
 msgstr ""
 
 #: src/npc.cpp

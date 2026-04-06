@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-05 01:01+0000\n"
+"POT-Creation-Date: 2026-04-06 18:40+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -236705,7 +236705,7 @@ msgstr "冬眠に入った。"
 msgid "You need to be nearly full of food and water to enter hibernation."
 msgstr "休眠状態に入るには、食料と水分がほぼ満たされている必要がある。"
 
-#: src/character.cpp src/faction.cpp
+#: src/character.cpp src/faction.cpp src/npc.cpp
 msgid "Wielding: "
 msgstr "装備: "
 
@@ -238395,7 +238395,7 @@ msgstr "左のタブへ"
 msgid "* No hidden recipe - %d in category *"
 msgstr ""
 
-#: src/construction.cpp src/monster.cpp
+#: src/construction.cpp
 msgid "Origin: "
 msgstr "出典:"
 
@@ -240291,6 +240291,14 @@ msgid "Crash game (test crash handling)"
 msgstr "テスト - 強制終了処理"
 
 #: src/debug_menu.cpp
+msgid "Show debug message (worker thread)"
+msgstr ""
+
+#: src/debug_menu.cpp
+msgid "Crash worker thread (test crash handling)"
+msgstr ""
+
+#: src/debug_menu.cpp
 msgid "Reload translations"
 msgstr "翻訳をリロードする"
 
@@ -241414,8 +241422,10 @@ msgstr "設置物が見当たらない。"
 
 #: src/descriptions.cpp
 #, c-format
-msgid "Origin: %s\n"
-msgstr "起源: %s\n"
+msgid ""
+"\n"
+"Origin: %s\n"
+msgstr ""
 
 #: src/descriptions.cpp
 msgid "You can't see the terrain here."
@@ -241438,10 +241448,9 @@ msgstr ""
 "\n"
 "看板: ???"
 
-#: src/descriptions.cpp src/iexamine.cpp
-#, c-format
-msgid "That is a %s."
-msgstr "それは%sです。"
+#: src/descriptions.cpp src/monster.cpp
+msgid "This is a "
+msgstr ""
 
 #: src/descriptions.cpp
 msgid "You could harvest the following things from it:"
@@ -241851,7 +241860,7 @@ msgstr "地形効果: %s L:%d[%s] A:%d"
 msgid "trap: %s (%d)"
 msgstr "罠: %s(%d)"
 
-#: src/editmap.cpp src/game.cpp
+#: src/editmap.cpp
 #, c-format
 msgid "There is a %s there.  Parts:"
 msgstr "%s / 部品:"
@@ -244042,27 +244051,28 @@ msgid "Unseen."
 msgstr "視界外"
 
 #: src/game.cpp
-#, c-format
-msgid "%s; Impassable"
-msgstr "%s; 通行不可"
+msgid "Impassable "
+msgstr ""
 
 #: src/game.cpp
 #, c-format
-msgid "%s; Movement cost %d"
-msgstr "%s; 移動コスト %d"
+msgid "Move cost: %d "
+msgstr ""
 
 #: src/game.cpp
-msgid "Lighting: "
-msgstr "光量: "
+#, c-format
+msgid "Cover: %d%%"
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "Block: %d%%"
+msgstr ""
 
 #: src/game.cpp
 #, c-format
 msgid "Sign: %s"
 msgstr "看板: %s"
-
-#: src/game.cpp
-msgid "Sign: ???"
-msgstr "看板: ???"
 
 #: src/game.cpp
 #, c-format
@@ -244073,11 +244083,6 @@ msgstr "下層: %s;  歩行不可"
 #, c-format
 msgid "Below: %s; Walkable"
 msgstr "下層: %s; 歩行可能"
-
-#: src/game.cpp
-#, c-format
-msgid "Coverage: %d%%"
-msgstr "潜伏: %d%%"
 
 #: src/game.cpp
 #, c-format
@@ -247316,6 +247321,11 @@ msgstr "メモに使える色: "
 #: src/help.cpp
 msgid " HELP "
 msgstr " ヘルプ "
+
+#: src/iexamine.cpp
+#, c-format
+msgid "That is a %s."
+msgstr "それは%sです。"
 
 #: src/iexamine.cpp
 msgid "Apply diamond coating"
@@ -259402,46 +259412,6 @@ msgid "The %s you were grabbing is destroyed!"
 msgstr "掴んでいた%sが壊れた！"
 
 #: src/map.cpp
-msgid "Smashable."
-msgstr " 破壊可能 "
-
-#: src/map.cpp
-msgid "Diggable."
-msgstr " 穴掘可能 "
-
-#: src/map.cpp
-msgid "Plowable."
-msgstr "耕作可能 "
-
-#: src/map.cpp
-msgid "Rough."
-msgstr " 凸凹 "
-
-#: src/map.cpp
-msgid "Unstable."
-msgstr " 不安定 "
-
-#: src/map.cpp
-msgid "Sharp."
-msgstr " 鋭利 "
-
-#: src/map.cpp
-msgid "Flat."
-msgstr " 平坦 "
-
-#: src/map.cpp
-msgid "Roof."
-msgstr "屋根。"
-
-#: src/map.cpp
-msgid "Simple."
-msgstr " 簡素 "
-
-#: src/map.cpp
-msgid "Mountable."
-msgstr " 火器設置可能 "
-
-#: src/map.cpp
 #, c-format
 msgid "Falling %s hits you!"
 msgstr "落ちてきた%sが命中した！"
@@ -265011,6 +264981,14 @@ msgid "It is a creature."
 msgstr "それは生き物だ。"
 
 #: src/monster.cpp
+msgid "Can see to your current location"
+msgstr ""
+
+#: src/monster.cpp
+msgid "Can't see to your current location"
+msgstr ""
+
+#: src/monster.cpp
 msgid " Difficulty "
 msgstr "難易度"
 
@@ -265019,14 +264997,15 @@ msgstr "難易度"
 msgid "Origin: %s"
 msgstr "出典:%s"
 
-#: src/monster.cpp src/npc.cpp
-msgid "Aware of your presence!"
-msgstr "あなたに気づいた！"
-
 #: src/monster.cpp
 #, c-format
 msgid "Rider: %s"
 msgstr "騎乗者:%s"
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s."
+msgstr "%sだ。"
 
 #: src/monster.cpp
 msgid "Difficulty "
@@ -265058,22 +265037,12 @@ msgstr "<color_red>最大級の危険！</color>"
 
 #: src/monster.cpp
 #, c-format
-msgid "This is a %s.  %s %s"
-msgstr "これは%s。%s%s"
-
-#: src/monster.cpp
-#, c-format
 msgid "<stat>It is %s.</stat>"
 msgstr "<stat>%sだ。</stat>"
 
 #: src/monster.cpp
 msgid "an animal"
 msgstr "動物"
-
-#: src/monster.cpp
-#, c-format
-msgid "It is %s."
-msgstr "%sだ。"
 
 #: src/monster.cpp
 #, c-format
@@ -266890,13 +266859,12 @@ msgid "%1$s says something but you can't hear it!"
 msgstr "%1$s が何か言ったが、聞き取れなかった！"
 
 #: src/npc.cpp
-msgid "NPC: "
-msgstr "NPC: "
+msgid "Aware of your presence"
+msgstr ""
 
 #: src/npc.cpp
-#, c-format
-msgid "Wielding a %s"
-msgstr "%s を所持中"
+msgid "Unaware of you"
+msgstr ""
 
 #: src/npc.cpp
 msgid "Completely untrusting"
