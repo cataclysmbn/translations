@@ -28,15 +28,15 @@
 # a, 2026
 # 모랑랑, 2026
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
-# Choi Dong-uk, 2026
 # Tae Heon Lim, 2026
 # 김동현, 2026
+# Choi Dong-uk, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-08 17:42+0000\n"
-"Last-Translator: 김동현, 2026\n"
+"POT-Creation-Date: 2026-04-09 21:12+0000\n"
+"Last-Translator: Choi Dong-uk, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -6638,7 +6638,7 @@ msgstr "구덩이를 물로 채우기"
 
 #: data/json/construction_group.json
 msgid "Fill Pit With Salt Water"
-msgstr ""
+msgstr "구덩이를 소금물로 채우기"
 
 #: data/json/construction_group.json
 msgid "Dig High End of a Ramp"
@@ -133901,7 +133901,7 @@ msgstr ""
 #. ~ Description for {'str': 'Hair style: overflowing'}
 #: data/json/mutations/mutation_appearance.json
 msgid "Very long, flowing hair"
-msgstr ""
+msgstr "무척 길고 부드럽게 물결치는 머리카락입니다."
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Hair style: bald"
@@ -134332,7 +134332,7 @@ msgstr "수염 상태: 마법사 수염"
 #. ~ Description for {'str': 'Facial hair: wizened'}
 #: data/json/mutations/mutation_appearance.json
 msgid "You have a long, flowing beard that indicates wisdom."
-msgstr "당신은 지헤로울 것 같은 길고 흩날리는 수염을 지니고 있습니다."
+msgstr "당신은 이야기 속 현자를 연상케 하는 길고 흐늘거리는 수염을 갖고 있습니다."
 
 #: data/json/mutations/mutation_appearance.json
 msgid "Facial hair: jaw scruff"
@@ -248625,11 +248625,11 @@ msgstr "게임 충돌시키기 (충돌 처리 시험)"
 
 #: src/debug_menu.cpp
 msgid "Show debug message (worker thread)"
-msgstr ""
+msgstr "디버깅 메시지 표시 (작업 스레드)"
 
 #: src/debug_menu.cpp
 msgid "Crash worker thread (test crash handling)"
-msgstr ""
+msgstr "작업 스레드 충돌시키기 (충돌 처리 시험)"
 
 #: src/debug_menu.cpp
 msgid "Reload translations"
@@ -249759,6 +249759,8 @@ msgid ""
 "\n"
 "Origin: %s\n"
 msgstr ""
+"\n"
+"출처: %s\n"
 
 #: src/descriptions.cpp
 msgid "You can't see the terrain here."
@@ -249783,7 +249785,7 @@ msgstr ""
 
 #: src/descriptions.cpp src/monster.cpp
 msgid "This is a "
-msgstr ""
+msgstr "이것은 "
 
 #: src/descriptions.cpp
 msgid "You could harvest the following things from it:"
@@ -252507,22 +252509,22 @@ msgstr "보이지 않음."
 
 #: src/game.cpp
 msgid "Impassable "
-msgstr ""
+msgstr "지나갈 수 없음"
 
 #: src/game.cpp
 #, c-format
 msgid "Move cost: %d "
-msgstr ""
+msgstr "이동력 소모: %d"
 
 #: src/game.cpp
 #, c-format
 msgid "Cover: %d%%"
-msgstr ""
+msgstr "보호율: %d%%"
 
 #: src/game.cpp
 #, c-format
 msgid "Block: %d%%"
-msgstr ""
+msgstr "차단율: %d%%"
 
 #: src/game.cpp
 #, c-format
@@ -273488,11 +273490,11 @@ msgstr "개체입니다."
 
 #: src/monster.cpp
 msgid "Can see to your current location"
-msgstr ""
+msgstr "당신의 현재 위치를 볼 수 있습니다."
 
 #: src/monster.cpp
 msgid "Can't see to your current location"
-msgstr ""
+msgstr "당신의 현재 위치를 볼 수 없습니다."
 
 #: src/monster.cpp
 msgid " Difficulty "
@@ -275370,11 +275372,11 @@ msgstr "%1$s(이)가 뭔가 말했지만 듣지 못했다!"
 
 #: src/npc.cpp
 msgid "Aware of your presence"
-msgstr ""
+msgstr "당신을 눈치챘습니다."
 
 #: src/npc.cpp
 msgid "Unaware of you"
-msgstr ""
+msgstr "당신을 눈치채지 못했습니다."
 
 #: src/npc.cpp
 msgid "Completely untrusting"
@@ -279351,6 +279353,21 @@ msgid ""
 "If true, opt out of new pathfinding in favor of legacy one. This makes "
 "pathfinding mods not work."
 msgstr "활성화되면 새 길찾기 설정 대신 구식 길찾기 설정을 사용하며, 이로 인해 길찾기 모드가 작동하지 않게 됩니다."
+
+#: src/options.cpp
+msgid "Legacy Pathfinder Distance Cap"
+msgstr "구식 길찾기 거리 한계"
+
+#: src/options.cpp
+#, c-format
+msgid ""
+"Hard cap on straight-line pathfinding distance (in tiles) for the legacy "
+"pathfinder.  Monsters and NPCs whose configured range exceeds this value are"
+" limited to it.  The old fixed map allowed at most 120 tiles end-to-end; the"
+" default of 96 is 50%% larger than the old per-side maximum of 60.  Raise "
+"this if mods require longer paths; lower it to reduce pathfinding cost at "
+"large bubble sizes."
+msgstr ""
 
 #: src/options.cpp
 msgid "World end handling"

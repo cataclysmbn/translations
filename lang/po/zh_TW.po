@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-08 17:42+0000\n"
+"POT-Creation-Date: 2026-04-09 21:12+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -133333,6 +133333,7 @@ msgid ""
 "your own way (+10 torso, arm, and leg encumbrance).  You can also fire heavy"
 " weapons without the aid of terrain, at a penalty to accuracy."
 msgstr ""
+"你明显地长高长壮了。你变得更强壮（力量+2），但是你发现你的平衡感被破坏了，甚至会自己绊到自己（+10躯干、手臂和腿部累赘）。你可以在没有地形支撑的情况下发射重型武器，不过会降低命中精度。"
 
 #: data/json/mutations/mutations.json
 #: data/mods/Aftershock/mutations/obsolete.json src/mtype.cpp
@@ -269544,6 +269545,24 @@ msgid ""
 "If true, opt out of new pathfinding in favor of legacy one. This makes "
 "pathfinding mods not work."
 msgstr "开启后，将放弃新版路径寻找，改用旧版路径寻找。这会导致路径寻找模组无法正常工作。"
+
+#: src/options.cpp
+msgid "Legacy Pathfinder Distance Cap"
+msgstr "传统寻路器距离上限"
+
+#: src/options.cpp
+#, c-format
+msgid ""
+"Hard cap on straight-line pathfinding distance (in tiles) for the legacy "
+"pathfinder.  Monsters and NPCs whose configured range exceeds this value are"
+" limited to it.  The old fixed map allowed at most 120 tiles end-to-end; the"
+" default of 96 is 50%% larger than the old per-side maximum of 60.  Raise "
+"this if mods require longer paths; lower it to reduce pathfinding cost at "
+"large bubble sizes."
+msgstr ""
+"传统寻路器直线寻路距离（以格数为单位）的硬上限。怪物与 NPC 所配置的寻路范围若超过此数值，将被强制限制在该上限内。旧版固定地图的极限跨度最多为 "
+"120 格；当前默认值 96 比旧版单边最大值 60 要大 "
+"50%%。如果模组需要更长的寻路路径，请调高此数值；在较大的气泡尺寸下，调低此数值可降低寻路带来的性能开销。"
 
 #: src/options.cpp
 msgid "World end handling"
