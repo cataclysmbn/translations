@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-09 21:12+0000\n"
+"POT-Creation-Date: 2026-04-11 07:00+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -91613,7 +91613,7 @@ msgstr[0] "无乳制品的懒人特级三明治"
 msgid "A deluxe sandwich with meat, veggies, and sauce, but no cheese."
 msgstr "一款豪华三明治，包括肉、蔬菜和酱汁，但不含奶酪。"
 
-#: data/json/items/comestibles/seed.json
+#: data/json/items/comestibles/seed.json src/activity_item_handling.cpp
 msgid "seeds"
 msgid_plural "seeds"
 msgstr[0] "种子"
@@ -169885,7 +169885,7 @@ msgid "lumbermill roof"
 msgstr "木材厂（屋顶）"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
-#: data/mods/alt_map_key/overmap_terrain.json
+#: data/mods/alt_map_key/overmap_terrain.json src/activity_item_handling.cpp
 msgid "construction site"
 msgstr "建筑工地"
 
@@ -229573,6 +229573,15 @@ msgid "The pet has moved somewhere else."
 msgstr "宠物已经移动到了其他位置。"
 
 #: src/activity_item_handling.cpp
+#, c-format
+msgid "farm plot for %s"
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "farm plot"
+msgstr ""
+
+#: src/activity_item_handling.cpp
 msgid "Vehicle work blocked: the vehicle is moving or under control."
 msgstr "车辆工作受阻：车辆正在移动或被控制中。"
 
@@ -229674,6 +229683,16 @@ msgid "It is too dark to do this activity."
 msgstr "天色太暗，无法进行这项活动。"
 
 #: src/activity_item_handling.cpp
+msgid "Farming blocked for nearby farm plots: it is too dark to work."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid ""
+"No nearby farm plots are available for this order.  Add a Farm Plot zone to "
+"give the order."
+msgstr ""
+
+#: src/activity_item_handling.cpp
 msgid ""
 "No construction sites are available.  Add a Construction: Blueprint zone or "
 "start a construction to give the order."
@@ -229686,47 +229705,100 @@ msgid ""
 msgstr "<npcname>报告没有可用的建造点。请添加一个“建造：蓝图”区域或开始一项建造任务以下达命令。"
 
 #: src/activity_item_handling.cpp
+#, c-format
 msgid ""
-"No valid construction site here.  Check your blueprint zones and ignored "
-"areas."
-msgstr "此处没有有效的建造点。请检查你的蓝图区域和忽略区域。"
+"No valid site for %s is available here.  Check your blueprint zones and "
+"ignored areas."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+msgid "No valid farm plot is available here.  Check your Farm Plot zones."
+msgstr ""
 
 #: src/activity_item_handling.cpp
 msgid "Vehicle work ended: no valid target zone here."
 msgstr "车辆工作结束：此处没有有效的目标区域。"
 
 #: src/activity_item_handling.cpp
-msgid "Construction blocked: insufficient skill for the selected build."
-msgstr "建造受阻：选定建造任务的技能不足。"
+#, c-format
+msgid ""
+"Construction blocked for %s: insufficient skill for the selected build."
+msgstr ""
 
 #: src/activity_item_handling.cpp
 #, c-format
-msgid "Construction blocked: requires %s."
-msgstr "建造受阻：需要 %s。"
+msgid "Construction blocked for %1$s: requires %2$s."
+msgstr ""
 
 #: src/activity_item_handling.cpp
 msgid "Vehicle work blocked: insufficient skill for this task."
 msgstr "车辆工作受阻：执行此任务的技能不足。"
 
 #: src/activity_item_handling.cpp
-msgid "Construction blocked: something is occupying the build site."
-msgstr "建造受阻：有东西占据了建造点。"
+#, c-format
+msgid "Construction blocked for %1$s: %2$s is occupying the build site."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Farming blocked for %1$s: %2$s is lying on the plot."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Construction blocked for %s: the build site is occupied."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Farming blocked for %s: the plot is occupied."
+msgstr ""
 
 #: src/activity_item_handling.cpp
 msgid "Vehicle work blocked: something is occupying the work site."
 msgstr "车辆工作受阻：有东西占据了工作点。"
 
 #: src/activity_item_handling.cpp
-msgid "Construction blocked: conditions are too cold for this step."
-msgstr "建造受阻：环境太冷，无法进行此步骤。"
+#, c-format
+msgid "Construction blocked for %s: conditions are too cold for this step."
+msgstr ""
 
 #: src/activity_item_handling.cpp
-msgid "Construction blocked: this step must be above ground."
-msgstr "建造受阻：此步骤必须在地面上进行。"
+#, c-format
+msgid "Farming blocked for %s: it is too cold to plant here."
+msgstr ""
 
 #: src/activity_item_handling.cpp
-msgid "Construction skipped: required components or tools are missing nearby."
-msgstr "建造已跳过：附近缺少所需的组件或工具。"
+#, c-format
+msgid "Construction blocked for %s: this step must be above ground."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid ""
+"Farming blocked for %s: this seed cannot be planted underground without "
+"enough heat."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Construction skipped for %s: missing nearby requirements."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Farming skipped for %s: missing nearby seeds."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Farming skipped for %s: missing nearby tilling tools."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Farming skipped for %s: missing nearby requirements."
+msgstr ""
 
 #: src/activity_item_handling.cpp
 msgid "The required items are not available to complete this task."
@@ -229737,17 +229809,32 @@ msgid "Vehicle work skipped: required components or tools are missing nearby."
 msgstr "车辆工作已跳过：附近缺少所需的组件或工具。"
 
 #: src/activity_item_handling.cpp
+#, c-format
 msgid ""
-"Construction task ended with no progress.  Path to the site is blocked."
-msgstr "建造任务结束，毫无进展。前往该地点的路径被阻挡。"
+"Construction task for %s ended with no progress.  Path to the site is "
+"blocked."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid ""
+"Farming task for %s ended with no progress.  Path to the plot is blocked."
+msgstr ""
 
 #: src/activity_item_handling.cpp
 msgid "It is too dark to work here."
 msgstr "光线不足，你无法工作！"
 
 #: src/activity_item_handling.cpp
-msgid "Construction task ended with no progress.  It was too dark to work."
-msgstr "建造任务结束，毫无进展。环境太暗，无法工作。"
+#, c-format
+msgid ""
+"Construction task for %s ended with no progress.  It was too dark to work."
+msgstr ""
+
+#: src/activity_item_handling.cpp
+#, c-format
+msgid "Farming task for %s ended with no progress.  It was too dark to work."
+msgstr ""
 
 #: src/activity_item_handling.cpp
 msgid ""
