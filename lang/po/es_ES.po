@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-11 07:00+0000\n"
+"POT-Creation-Date: 2026-04-14 20:42+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/bn-team/teams/113585/es_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -12469,6 +12469,13 @@ msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid ""
+"This gear <good>greatly enhances your vision</good> when worn, and "
+"<info>tints your field of view</info>."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This gear <good>enhances your vision</good> when worn."
 msgstr ""
 
@@ -12951,6 +12958,7 @@ msgstr "Encender"
 #. rebreather masks (on)'}.
 #. ~ Use action menu_text for {'str_pl': 'pairs of light amp goggles (on)',
 #. 'str': 'pair of light amp goggles (on)'}.
+#. ~ Use action menu_text for {'str_sp': 'enhanced light amp goggles (on)'}.
 #. ~ Use action menu_text for {'str': 'pair of infrared goggles (on)',
 #. 'str_pl': 'pairs of infrared goggles (on)'}.
 #. ~ Use action menu_text for {'str': 'survivor divemask (on)', 'str_pl':
@@ -22659,6 +22667,34 @@ msgstr ""
 "Tus biónicos, equipo y amplio entrenamiento de campo te permiten derribar "
 "objetivos desde distancias inverosímiles, incluso después de semanas de "
 "total aislamiento en territorio enemigo."
+
+#: data/json/professions.json data/mods/Aftershock/player/professions.json
+msgctxt "profession_male"
+msgid "Bionic Operator"
+msgstr ""
+
+#: data/json/professions.json data/mods/Aftershock/player/professions.json
+msgctxt "profession_female"
+msgid "Bionic Operator"
+msgstr ""
+
+#. ~ Profession (male Bionic Operator) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You were the best of the best, the military's finest, and your bionics have "
+"only enhanced your abilities.  Specializing in close quarters combat, you "
+"were sent on the most dangerous and critical missions."
+msgstr ""
+
+#. ~ Profession (female Bionic Operator) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You were the best of the best, the military's finest, and your bionics have "
+"only enhanced your abilities.  Specializing in close quarters combat, you "
+"were sent on the most dangerous and critical missions."
+msgstr ""
 
 #: data/json/professions.json
 msgctxt "profession_male"
@@ -60463,6 +60499,7 @@ msgstr "Activas tu %s."
 #. ~ Use action need_charges_msg for {'str': 'liquid cooling suit'}.
 #. ~ Use action need_charges_msg for {'str': 'pair of light amp goggles',
 #. 'str_pl': 'pairs of light amp goggles'}.
+#. ~ Use action need_charges_msg for {'str_sp': 'enhanced light amp goggles'}.
 #. ~ Use action need_charges_msg for {'str': 'pair of infrared goggles',
 #. 'str_pl': 'pairs of infrared goggles'}.
 #. ~ Use action need_charges_msg for {'str': 'thermal electric outfit'}.
@@ -61323,6 +61360,7 @@ msgstr[2] "pares de gafas amplificadoras de luz"
 
 #. ~ Use action msg for {'str': 'pair of light amp goggles', 'str_pl': 'pairs
 #. of light amp goggles'}.
+#. ~ Use action msg for {'str_sp': 'enhanced light amp goggles'}.
 #. ~ Use action msg for {'str': 'pair of infrared goggles', 'str_pl': 'pairs
 #. of infrared goggles'}.
 #: data/json/items/tool_armor.json
@@ -61348,6 +61386,7 @@ msgstr[2] "pares de gafas amplificadoras de luz (encendidas)"
 
 #. ~ Use action msg for {'str_pl': 'pairs of light amp goggles (on)', 'str':
 #. 'pair of light amp goggles (on)'}.
+#. ~ Use action msg for {'str_sp': 'enhanced light amp goggles (on)'}.
 #. ~ Use action msg for {'str': 'pair of infrared goggles (on)', 'str_pl':
 #. 'pairs of infrared goggles (on)'}.
 #: data/json/items/tool_armor.json
@@ -61361,6 +61400,37 @@ msgid ""
 "A pair of battery-powered light amplifying goggles with an infrared "
 "illuminator, allowing you to see in the dark.  It is turned on, and "
 "continually draining batteries.  Use it to turn them off."
+msgstr ""
+
+#: data/json/items/tool_armor.json
+msgid "enhanced light amp goggles"
+msgid_plural "enhanced light amp goggles"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str_sp': 'enhanced light amp goggles'}
+#: data/json/items/tool_armor.json
+msgid ""
+"Modern light enhancement goggles that greatly amplify ambient light, "
+"allowing you to see in the dark almost perfectly, all while looking properly"
+" tactical.  Use it to turn them on."
+msgstr ""
+
+#: data/json/items/tool_armor.json
+msgid "enhanced light amp goggles (on)"
+msgid_plural "enhanced light amp goggles (on)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str_sp': 'enhanced light amp goggles (on)'}
+#: data/json/items/tool_armor.json
+msgid ""
+"Modern light enhancement goggles that greatly amplify ambient light, "
+"allowing you to see in the dark almost perfectly, all while looking properly"
+" tactical.  It is turned on, and continually draining batteries.  Use it to "
+"turn them off."
 msgstr ""
 
 #: data/json/items/tool_armor.json
@@ -63708,16 +63778,16 @@ msgstr[2] ""
 #. ~ Description for {'str': 'improvised 40x46mm flechette'}
 #: data/json/items/ammo/40x46mm.json
 msgid ""
-"An improvised 40x46mm flechette load containing 70 steel darts.  Aside from "
-"using the M118 casing normally used by HEDP shells, it performs as well as "
-"flechette shells using the M199 casing."
+"An improvised 40x46mm flechette load containing a load of steel darts.  "
+"Aside from using the M118 casing normally used by HEDP shells, it performs "
+"as well as flechette shells using the M199 casing."
 msgstr ""
 
 #. ~ Description for {'str': 'improvised 40x46mm flechette'}
 #: data/json/items/ammo/40x46mm.json
 msgid ""
-"An improvised 40x46mm flechette load containing 70 steel darts, loaded into "
-"the M199 casing used by M576 buckshot shells."
+"An improvised 40x46mm flechette load containing a load of steel darts, "
+"loaded into the M199 casing used by M576 buckshot shells."
 msgstr ""
 
 #: data/json/items/ammo/40x53mm.json
@@ -153876,12 +153946,9 @@ msgstr "Huesos Livianos"
 #: data/json/mutations/mutations.json
 msgid ""
 "Your bones are very light.  This enables you to move and attack 10% faster, "
-"but also reduces your carrying weight by 20% and makes bashing attacks hurt "
-"a little more."
+"but also reduces your carrying weight by 20% and increases the damage you "
+"take from bashing attacks by 40%."
 msgstr ""
-"Tus huesos son muy livianos. Esto te permite moverte y atacar un 10% más "
-"rápido, pero también reduce tu capacidad de cargar peso en un 20%, y hace "
-"que los ataques golpeantes duelan un poco más."
 
 #: data/json/mutations/mutations.json
 msgid "Feathers"
@@ -156331,12 +156398,9 @@ msgstr "Huesos Huecos"
 msgid ""
 "You have Avian Bone Syndrome--your bones are nearly hollow.  Your body is "
 "very light as a result, enabling you to move and attack 20% faster, but also"
-" frail; you can carry 40% less, and bashing attacks injure you more."
+" frail; you can carry 40% less, and take 80% more damage from bashing "
+"attacks."
 msgstr ""
-"Tienes el Síndrome de los Huesos Aviarios -tus huesos son casi huecos. Como "
-"resultado tu cuerpo es muy liviano, lo que te permite moverte y atacar un "
-"20% más rápido, pero también es frágil. Puedes cargar un 40% menos, y los "
-"ataques golpeantes te causan más daño."
 
 #. ~ Description for {'str': 'Nausea'}
 #: data/json/mutations/mutations.json
@@ -216838,16 +216902,6 @@ msgid ""
 "your compulsive service period, and even earned the right to be considered a"
 " full citizen.  Now, with the end of the world in the horizon, it seems that"
 " your combat skills might come useful once again."
-msgstr ""
-
-#: data/mods/Aftershock/player/professions.json
-msgctxt "profession_male"
-msgid "Bionic Operator"
-msgstr ""
-
-#: data/mods/Aftershock/player/professions.json
-msgctxt "profession_female"
-msgid "Bionic Operator"
 msgstr ""
 
 #. ~ Profession (male Bionic Operator) description
@@ -279037,6 +279091,18 @@ msgid "Dispersion: "
 msgstr "Dispersión: "
 
 #: src/item.cpp
+msgid "Pellet count: "
+msgstr ""
+
+#: src/item.cpp
+msgid "<num> degrees"
+msgstr ""
+
+#: src/item.cpp
+msgid "Pattern half-angle: "
+msgstr ""
+
+#: src/item.cpp
 msgid "Recoil: "
 msgstr "Retroceso: "
 
@@ -302083,6 +302149,26 @@ msgstr "Tu alarma está sonando."
 #: src/player_hardcoded_effects.cpp
 msgid "Your alarm went off."
 msgstr "Tu alarma sonó."
+
+#: src/ranged.cpp
+#, c-format
+msgid "%1$d %2$s pellets hit you for %3$d damage."
+msgstr ""
+
+#: src/ranged.cpp
+#, c-format
+msgid "%1$d %2$s pellets hit you but deal no damage."
+msgstr ""
+
+#: src/ranged.cpp
+#, c-format
+msgid "%1$d %2$s pellets hit %3$s for %4$d damage."
+msgstr ""
+
+#: src/ranged.cpp
+#, c-format
+msgid "%1$d %2$s pellets hit %3$s but deal no damage."
+msgstr ""
 
 #: src/ranged.cpp
 #, c-format

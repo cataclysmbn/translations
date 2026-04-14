@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-11 07:00+0000\n"
+"POT-Creation-Date: 2026-04-14 20:42+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -11812,6 +11812,13 @@ msgstr ""
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid ""
+"This gear <good>greatly enhances your vision</good> when worn, and "
+"<info>tints your field of view</info>."
+msgstr ""
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This gear <good>enhances your vision</good> when worn."
 msgstr ""
 
@@ -12289,6 +12296,7 @@ msgstr "オンにする"
 #. rebreather masks (on)'}.
 #. ~ Use action menu_text for {'str_pl': 'pairs of light amp goggles (on)',
 #. 'str': 'pair of light amp goggles (on)'}.
+#. ~ Use action menu_text for {'str_sp': 'enhanced light amp goggles (on)'}.
 #. ~ Use action menu_text for {'str': 'pair of infrared goggles (on)',
 #. 'str_pl': 'pairs of infrared goggles (on)'}.
 #. ~ Use action menu_text for {'str': 'survivor divemask (on)', 'str_pl':
@@ -21897,6 +21905,34 @@ msgid ""
 "targets from implausible distances, even after weeks of total isolation in "
 "enemy territory."
 msgstr "義体、装備、そして徹底した実地訓練により、敵地で数週間完全に隔離された後でも、到底あり得ない距離から標的を撃ち抜くことができる。"
+
+#: data/json/professions.json data/mods/Aftershock/player/professions.json
+msgctxt "profession_male"
+msgid "Bionic Operator"
+msgstr "義体サイボーグ"
+
+#: data/json/professions.json data/mods/Aftershock/player/professions.json
+msgctxt "profession_female"
+msgid "Bionic Operator"
+msgstr "義体サイボーグ"
+
+#. ~ Profession (male Bionic Operator) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You were the best of the best, the military's finest, and your bionics have "
+"only enhanced your abilities.  Specializing in close quarters combat, you "
+"were sent on the most dangerous and critical missions."
+msgstr ""
+
+#. ~ Profession (female Bionic Operator) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You were the best of the best, the military's finest, and your bionics have "
+"only enhanced your abilities.  Specializing in close quarters combat, you "
+"were sent on the most dangerous and critical missions."
+msgstr ""
 
 #: data/json/professions.json
 msgctxt "profession_male"
@@ -56032,6 +56068,7 @@ msgstr "%sを使った。"
 #. ~ Use action need_charges_msg for {'str': 'liquid cooling suit'}.
 #. ~ Use action need_charges_msg for {'str': 'pair of light amp goggles',
 #. 'str_pl': 'pairs of light amp goggles'}.
+#. ~ Use action need_charges_msg for {'str_sp': 'enhanced light amp goggles'}.
 #. ~ Use action need_charges_msg for {'str': 'pair of infrared goggles',
 #. 'str_pl': 'pairs of infrared goggles'}.
 #. ~ Use action need_charges_msg for {'str': 'thermal electric outfit'}.
@@ -56749,6 +56786,7 @@ msgstr[0] "光増幅ゴーグル"
 
 #. ~ Use action msg for {'str': 'pair of light amp goggles', 'str_pl': 'pairs
 #. of light amp goggles'}.
+#. ~ Use action msg for {'str_sp': 'enhanced light amp goggles'}.
 #. ~ Use action msg for {'str': 'pair of infrared goggles', 'str_pl': 'pairs
 #. of infrared goggles'}.
 #: data/json/items/tool_armor.json
@@ -56770,6 +56808,7 @@ msgstr[0] "光増幅ゴーグル(作動中)"
 
 #. ~ Use action msg for {'str_pl': 'pairs of light amp goggles (on)', 'str':
 #. 'pair of light amp goggles (on)'}.
+#. ~ Use action msg for {'str_sp': 'enhanced light amp goggles (on)'}.
 #. ~ Use action msg for {'str': 'pair of infrared goggles (on)', 'str_pl':
 #. 'pairs of infrared goggles (on)'}.
 #: data/json/items/tool_armor.json
@@ -56785,6 +56824,33 @@ msgid ""
 "continually draining batteries.  Use it to turn them off."
 msgstr ""
 "電池式のゴーグル。周囲の光を増幅するとともに赤外線を照射し、暗所での視認を可能にする。現在、電源は入っており、継続的にバッテリーを消費している。使うと電源を切る。"
+
+#: data/json/items/tool_armor.json
+msgid "enhanced light amp goggles"
+msgid_plural "enhanced light amp goggles"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'enhanced light amp goggles'}
+#: data/json/items/tool_armor.json
+msgid ""
+"Modern light enhancement goggles that greatly amplify ambient light, "
+"allowing you to see in the dark almost perfectly, all while looking properly"
+" tactical.  Use it to turn them on."
+msgstr ""
+
+#: data/json/items/tool_armor.json
+msgid "enhanced light amp goggles (on)"
+msgid_plural "enhanced light amp goggles (on)"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'enhanced light amp goggles (on)'}
+#: data/json/items/tool_armor.json
+msgid ""
+"Modern light enhancement goggles that greatly amplify ambient light, "
+"allowing you to see in the dark almost perfectly, all while looking properly"
+" tactical.  It is turned on, and continually draining batteries.  Use it to "
+"turn them off."
+msgstr ""
 
 #: data/json/items/tool_armor.json
 msgid "pair of infrared goggles"
@@ -58677,18 +58743,17 @@ msgstr[0] "40x46mm 即席ﾌﾚｼｪｯﾄ"
 #. ~ Description for {'str': 'improvised 40x46mm flechette'}
 #: data/json/items/ammo/40x46mm.json
 msgid ""
-"An improvised 40x46mm flechette load containing 70 steel darts.  Aside from "
-"using the M118 casing normally used by HEDP shells, it performs as well as "
-"flechette shells using the M199 casing."
+"An improvised 40x46mm flechette load containing a load of steel darts.  "
+"Aside from using the M118 casing normally used by HEDP shells, it performs "
+"as well as flechette shells using the M199 casing."
 msgstr ""
-"70本の鋼製ダーツを内蔵した即席の40x46mmフレチェット弾。本来HEDP弾に使われるM118薬莢を使用しているが、M199薬莢を用いるフレチェット弾と同等の性能を発揮する。"
 
 #. ~ Description for {'str': 'improvised 40x46mm flechette'}
 #: data/json/items/ammo/40x46mm.json
 msgid ""
-"An improvised 40x46mm flechette load containing 70 steel darts, loaded into "
-"the M199 casing used by M576 buckshot shells."
-msgstr "70本の鋼製ダーツを内蔵した即席の40x46mmフレチェット弾。M576バックショット弾に使用されるM199薬莢に装填されている。"
+"An improvised 40x46mm flechette load containing a load of steel darts, "
+"loaded into the M199 casing used by M576 buckshot shells."
+msgstr ""
 
 #: data/json/items/ammo/40x53mm.json
 msgid "40x53mm M1001 flechette"
@@ -132464,9 +132529,9 @@ msgstr "軽骨"
 #: data/json/mutations/mutations.json
 msgid ""
 "Your bones are very light.  This enables you to move and attack 10% faster, "
-"but also reduces your carrying weight by 20% and makes bashing attacks hurt "
-"a little more."
-msgstr "骨が非常に軽い。攻撃と移動速度が10%向上するが、所持重量が20%低下し、打撃ダメージがわずかに増加する。"
+"but also reduces your carrying weight by 20% and increases the damage you "
+"take from bashing attacks by 40%."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Feathers"
@@ -134713,9 +134778,9 @@ msgstr "中空骨"
 msgid ""
 "You have Avian Bone Syndrome--your bones are nearly hollow.  Your body is "
 "very light as a result, enabling you to move and attack 20% faster, but also"
-" frail; you can carry 40% less, and bashing attacks injure you more."
+" frail; you can carry 40% less, and take 80% more damage from bashing "
+"attacks."
 msgstr ""
-"鳥類骨症候群を発症した。骨がほぼ中空になったため体が非常に軽くなり、移動と攻撃の速度が20%速くなる。しかし、その分脆く、所持容量が40%減少し、打撃攻撃によるダメージが増加する。"
 
 #. ~ Description for {'str': 'Nausea'}
 #: data/json/mutations/mutations.json
@@ -192537,16 +192602,6 @@ msgid ""
 " your combat skills might come useful once again."
 msgstr ""
 "人間、ゾウ、マストドンのDNAを組み合わせて計画的に生み出された、知性をもつゾウ型の執行者だ。血気盛んな親戚たちとは異なり、強制的な服務期間を終えると平穏な引退生活を求め、市民権を得る権利さえ勝ち取った。しかし、世界の終焉が近づいた今、お前の戦闘スキルが再び役立つ時が来たようだ。"
-
-#: data/mods/Aftershock/player/professions.json
-msgctxt "profession_male"
-msgid "Bionic Operator"
-msgstr "義体サイボーグ"
-
-#: data/mods/Aftershock/player/professions.json
-msgctxt "profession_female"
-msgid "Bionic Operator"
-msgstr "義体サイボーグ"
 
 #. ~ Profession (male Bionic Operator) description
 #: data/mods/Aftershock/player/professions.json
@@ -251154,6 +251209,18 @@ msgid "Dispersion: "
 msgstr "分散: "
 
 #: src/item.cpp
+msgid "Pellet count: "
+msgstr ""
+
+#: src/item.cpp
+msgid "<num> degrees"
+msgstr ""
+
+#: src/item.cpp
+msgid "Pattern half-angle: "
+msgstr ""
+
+#: src/item.cpp
 msgid "Recoil: "
 msgstr "反動: "
 
@@ -273658,6 +273725,26 @@ msgstr "アラームが作動している。"
 #: src/player_hardcoded_effects.cpp
 msgid "Your alarm went off."
 msgstr "アラームが作動した。"
+
+#: src/ranged.cpp
+#, c-format
+msgid "%1$d %2$s pellets hit you for %3$d damage."
+msgstr ""
+
+#: src/ranged.cpp
+#, c-format
+msgid "%1$d %2$s pellets hit you but deal no damage."
+msgstr ""
+
+#: src/ranged.cpp
+#, c-format
+msgid "%1$d %2$s pellets hit %3$s for %4$d damage."
+msgstr ""
+
+#: src/ranged.cpp
+#, c-format
+msgid "%1$d %2$s pellets hit %3$s but deal no damage."
+msgstr ""
 
 #: src/ranged.cpp
 #, c-format
