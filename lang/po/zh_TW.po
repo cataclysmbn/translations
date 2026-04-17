@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-16 21:12+0000\n"
+"POT-Creation-Date: 2026-04-17 20:30+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -4055,7 +4055,7 @@ msgid ""
 " by ten, while failing to improve your ability to hold objects whatsoever."
 msgstr "会自锁的手指紧紧抓住（尽管你不想这么做）并且坚决不松开（尽管你很想放手）。手掌累赘+10，但是并不能让你能把手里的物品抓得更牢。"
 
-#: data/json/bionics.json
+#: data/json/bionics.json data/json/monster_special_attacks/spells.json
 msgid "Time Dilation"
 msgstr "時間膨脹"
 
@@ -4452,6 +4452,20 @@ msgid ""
 "perpetual generator powered by nonsensoleum.  When activated its power gen "
 "doubles.  If you are seeing this, you'd better be debugging."
 msgstr "太阳之力，在我掌中！安装在你体内的是一台由非太阳能供电的永久发电机。激活后，它的发电量加倍。如果你看到了这这个，你最好是处在调试模式。"
+
+#: data/json/bionics.json data/json/vehicleparts/portal_tap.json
+msgid "Dimensional Portal Tap"
+msgstr ""
+
+#. ~ Description for {'str': 'Dimensional Portal Tap'}
+#. ~ Description for {'str': 'Dimensional Portal Tap CBM'}
+#: data/json/bionics.json data/json/items/bionics.json
+msgid ""
+"An implanted interface for siphoning power from a linked dimensional portal."
+"  Must be linked to a specific portal by examining it.  While the linked "
+"portal's grid has power, this bionic passively draws energy into your "
+"reserves each turn."
+msgstr ""
 
 #: data/json/body_parts.json
 msgid "appendix"
@@ -32348,6 +32362,10 @@ msgid "<npcname> phase-strikes %s"
 msgstr "<npcname>對 %s 發動 相位打擊"
 
 #: data/json/test_regions.json
+msgid "sand flats"
+msgstr ""
+
+#: data/json/test_regions.json
 msgid "abandoned drive-through"
 msgstr "廢棄的得來速"
 
@@ -33333,8 +33351,10 @@ msgstr "沙漠维度"
 
 #. ~ Description for {'str': 'Desert Dimension'}
 #: data/json/world_types.json
-msgid "An alternate dimension dominated by arid desert terrain."
-msgstr "一个以干旱沙漠地形为主的平行维度。"
+msgid ""
+"An alternate dimension dominated by arid desert terrain with a scorching "
+"sun."
+msgstr ""
 
 #: data/json/artifact/premade_artifacts.json
 msgid "The Architect's Cube"
@@ -33657,11 +33677,11 @@ msgstr "一个大型笨重的金属装置，用于冷却大面积区域，现在
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
 #: data/json/furniture_and_terrain/furniture-fireplaces.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
 #: data/json/furniture_and_terrain/furniture-plumbing.json
-#: data/json/furniture_and_terrain/furniture-power-portals.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/furniture_and_terrain/furniture-seats.json
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -33687,11 +33707,11 @@ msgstr "金屬嘎嘎聲!"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
 #: data/json/furniture_and_terrain/furniture-fireplaces.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
 #: data/json/furniture_and_terrain/furniture-plumbing.json
-#: data/json/furniture_and_terrain/furniture-power-portals.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/furniture_and_terrain/furniture-roof.json
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -35448,6 +35468,78 @@ msgstr "装饰树"
 msgid "A decorative tree for the winter holidays."
 msgstr "用于冬季装饰的树。"
 
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+#: data/json/furniture_and_terrain/terrain-nether.json
+msgid "dimensional portal"
+msgstr "跨维度传送门"
+
+#. ~ Description for dimensional portal
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"A shimmering aperture in space, held open by an arcane-industrial framework."
+" Unlinked."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "a resonant crack!"
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "dimensional portal (active)"
+msgstr ""
+
+#. ~ Description for dimensional portal (active)
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"A shimmering aperture in space, held open by an arcane-industrial framework."
+" Examining it will transport you to the linked dimension."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "dimensional portal (closed)"
+msgstr ""
+
+#. ~ Description for dimensional portal (closed)
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"The arcane-industrial framework of a dimensional portal, its aperture now "
+"sealed. The dimensional connection it once maintained has collapsed."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "power portal"
+msgstr "能量传送门"
+
+#. ~ Description for power portal
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"A large arcane-industrial apparatus that can form a persistent electrical "
+"bridge to a paired node, even across dimensional boundaries. Unlinked."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "power portal (active)"
+msgstr "能量传送门（开启）"
+
+#. ~ Description for power portal (active)
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"A large arcane-industrial apparatus forming a persistent electrical bridge "
+"to a paired node. The hum of power flowing through the dimensional membrane "
+"is faintly audible."
+msgstr "一种大型奥术工业装置，正在与配对节点形成持久的电力桥梁。隐约可以听到能量流过维度膜时发出的嗡嗡声。"
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "power portal (paused)"
+msgstr "能量传送门（暂停）"
+
+#. ~ Description for power portal (paused)
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"A large arcane-industrial apparatus configured to form an electrical bridge,"
+" but currently inactive due to insufficient power or a manual pause."
+msgstr "一种大型奥术工业装置，已配置为形成电力桥梁，但由于能量不足或手动暂停，目前处于未开启状态。"
+
 #: data/json/furniture_and_terrain/furniture-domestic_plants.json
 msgid "indoor plant"
 msgstr "室內植物"
@@ -37083,41 +37175,6 @@ msgstr "雨水收集器（接管）"
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid "A plumbed rain collector that feeds a fluid grid when it is raining."
 msgstr "一个接了水管的雨水收集器，下雨时可向液体管网供水。"
-
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid "power portal"
-msgstr "能量传送门"
-
-#. ~ Description for power portal
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid ""
-"A large arcane-industrial apparatus that can form a persistent electrical "
-"bridge to a paired node, even across dimensional boundaries. Currently "
-"unlinked."
-msgstr "一种大型奥术工业装置，能与配对节点形成持久的电力桥梁，即使跨越维度边界也能生效。当前未连接。"
-
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid "power portal (active)"
-msgstr "能量传送门（开启）"
-
-#. ~ Description for power portal (active)
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid ""
-"A large arcane-industrial apparatus forming a persistent electrical bridge "
-"to a paired node. The hum of power flowing through the dimensional membrane "
-"is faintly audible."
-msgstr "一种大型奥术工业装置，正在与配对节点形成持久的电力桥梁。隐约可以听到能量流过维度膜时发出的嗡嗡声。"
-
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid "power portal (paused)"
-msgstr "能量传送门（暂停）"
-
-#. ~ Description for power portal (paused)
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid ""
-"A large arcane-industrial apparatus configured to form an electrical bridge,"
-" but currently inactive due to insufficient power or a manual pause."
-msgstr "一种大型奥术工业装置，已配置为形成电力桥梁，但由于能量不足或手动暂停，目前处于未开启状态。"
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/items/fake.json data/json/items/furniture.json
@@ -43827,10 +43884,6 @@ msgstr "樹脂間隔孔"
 msgid "An open hole in the resin wall, large enough to pass through."
 msgstr "樹脂壁上的開孔，大到能夠穿過它。"
 
-#: data/json/furniture_and_terrain/terrain-nether.json
-msgid "dimensional portal"
-msgstr "跨维度传送门"
-
 #. ~ Description for dimensional portal
 #: data/json/furniture_and_terrain/terrain-nether.json
 msgid ""
@@ -49089,6 +49142,11 @@ msgstr ""
 msgid "Perpetual Generator CBM"
 msgid_plural "Perpetual Generator CBMs"
 msgstr[0] "永久发电机CBM"
+
+#: data/json/items/bionics.json
+msgid "Dimensional Portal Tap CBM"
+msgid_plural "Dimensional Portal Tap CBMs"
+msgstr[0] ""
 
 #: data/json/items/biosignatures.json
 msgid "bird litter"
@@ -70364,6 +70422,19 @@ msgstr[0] "動力裝甲拖架"
 msgid ""
 "A heavy duty hauling frame designed to interface with military exoskeletons."
 msgstr "一个与军用外骨骼配套使用的携行系统。"
+
+#: data/json/items/armor/power_armor.json
+msgid "advanced power armor hauling frame"
+msgid_plural "advanced power armor hauling frames"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'advanced power armor hauling frame'}
+#: data/json/items/armor/power_armor.json
+msgid ""
+"A cutting-edge advanced hauling frame made from superalloy designed to "
+"interface with military exoskeletons.  Barely deployed before the Cataclysm "
+"struck."
+msgstr ""
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor weapon rack"
@@ -100506,7 +100577,7 @@ msgstr ""
 #: data/json/items/gun/tankguns.json
 msgid "GAU-22 rotary cannon"
 msgid_plural "GAU-22 rotary cannons"
-msgstr[0] ""
+msgstr[0] "GAU-22 旋转机炮"
 
 #: data/json/items/gun/tankguns.json
 msgid ""
@@ -100515,6 +100586,8 @@ msgid ""
 "hard-hitting ammunition, but is only remotely practical to use mounted on a "
 "vehicle."
 msgstr ""
+"这是一款发射 25x137 毫米弹药的四管加特林机炮，专为 "
+"F-35“闪电”等战机设计。它拥有毁灭性的射速和威力巨大的弹药，但只有安装在载具上使用才勉强谈得上实用。"
 
 #: data/json/items/gun/tankguns.json
 msgid "M246 120mm tank gun"
@@ -112809,19 +112882,19 @@ msgstr "這塊火箭糖已被點燃, 伴隨著響亮的嘶嘶聲噴出大量的�
 #: data/json/items/tool/explosives.json
 msgid "aerial bomb"
 msgid_plural "aerial bombs"
-msgstr[0] ""
+msgstr[0] "航空炸弹"
 
 #. ~ Use action menu_text for {'str': 'aerial bomb'}.
 #: data/json/items/tool/explosives.json
 msgid "Arm bomb"
-msgstr ""
+msgstr "启动炸弹"
 
 #. ~ Use action msg for {'str': 'aerial bomb'}.
 #: data/json/items/tool/explosives.json
 msgid ""
 "You arm the bomb.  Activate again to disarm it, or drop it to explode on "
 "impact."
-msgstr ""
+msgstr "你启动了炸弹。再次激活即可将其停用，或者将其丢下以触发触地爆炸。"
 
 #. ~ Description for {'str': 'aerial bomb'}
 #: data/json/items/tool/explosives.json
@@ -112832,23 +112905,25 @@ msgid ""
 "stories above your target to maintain a safe distance.  Trying to arm it "
 "manually and throw it by hand would be a terrible idea."
 msgstr ""
+"一种极具分量的爆炸物，专为飞机空投设计。如果从载具弹舱投放，它会被激活并在触地时自动爆炸，其威力足以将一栋房屋夷为平地。为了保持安全距离，你最好在目标上方至少"
+" 4 层楼的高度进行投放。试图手动启动并用手投掷绝对是个极其愚蠢的想法。"
 
 #: data/json/items/tool/explosives.json
 msgid "aerial bomb (armed)"
 msgid_plural "aerial bombs (armed)"
-msgstr[0] ""
+msgstr[0] "航空炸弹（无保险）"
 
 #. ~ Use action menu_text for {'str': 'aerial bomb (armed)', 'str_pl': 'aerial
 #. bombs (armed)'}.
 #: data/json/items/tool/explosives.json
 msgid "Disarm bomb"
-msgstr ""
+msgstr "停用炸弹"
 
 #. ~ Use action msg for {'str': 'aerial bomb (armed)', 'str_pl': 'aerial bombs
 #. (armed)'}.
 #: data/json/items/tool/explosives.json
 msgid "You carefully disarm the bomb."
-msgstr ""
+msgstr "你小心翼翼地停用了炸弹。"
 
 #. ~ Description for {'str': 'aerial bomb (armed)', 'str_pl': 'aerial bombs
 #. (armed)'}
@@ -112859,6 +112934,7 @@ msgid ""
 "currently struggling to lift this monstrosity, you should probably disarm it"
 " before you drop it on your foot and blow yourself up."
 msgstr ""
+"一种专为飞机或其他载具空投设计的重型爆炸物。它目前处于启动状态，一旦落地就会爆炸。如果你现在搬起这个大家伙都觉得费劲，那你最好先把它停用，免得一不小心掉在脚上把自己给炸飞了。"
 
 #: data/json/items/tool/fire.json
 msgid "electric firestarter"
@@ -119112,12 +119188,11 @@ msgstr[0] "悬浮反重力推进器"
 #. ~ Description for hover repulsor
 #: data/json/items/vehicle/jets.json data/json/vehicleparts/jets.json
 msgid ""
-"This is a lightweight hover repulsor module mounted on the underside of the "
-"next-generation hoverbike.  It offers unparalleled maneuverability, allowing"
-" the hoverbike to glide effortlessly over swamps and ruins, completely "
-"overcoming ground friction."
+"This is a lightweight hover repulsor module mounted on the underside of a "
+"vehicle.  It offers unparalleled maneuverability, allowing the vehicle to "
+"glide effortlessly over swamps and ruins, completely overcoming ground "
+"friction."
 msgstr ""
-"这是一种安装在下一代悬浮摩托底部的轻型悬浮反重力模块。它能提供无与伦比的机动性，使悬浮摩托得以完全无视地面摩擦力，在沼泽和废墟上毫不费力地穿梭滑行。"
 
 #: data/json/items/vehicle/lights.json
 msgid "car headlight"
@@ -119562,6 +119637,20 @@ msgstr[0] "骨製裝甲板"
 #: data/json/items/vehicle/plating.json
 msgid "Bone plating made for a vehicle."
 msgstr "為車輛而設計的骨板。"
+
+#: data/json/items/vehicle/portal_tap.json
+msgid "dimensional portal tap"
+msgid_plural "dimensional portal taps"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'dimensional portal tap'}
+#: data/json/items/vehicle/portal_tap.json
+msgid ""
+"An advanced interface module designed to siphon power from a linked "
+"dimensional portal directly into a vehicle's battery system.  It requires "
+"installation into a vehicle and linking to a specific portal before it will "
+"function."
+msgstr ""
 
 #: data/json/items/vehicle/propellers.json
 #: data/json/vehicleparts/propellers.json
@@ -122016,6 +122105,11 @@ msgid ""
 "effect.  Starts very short range, increases rapidly with level."
 msgstr "米戈捕奴者光束會引起疼痛，降低耐力並產生短暫的暈眩效果。起初距離很短，隨著等級迅速增加。"
 
+#. ~ Description for {'str': 'Time Dilation'}
+#: data/json/monster_special_attacks/spells.json
+msgid "Time dilation ability for feral armored boss."
+msgstr ""
+
 #: data/json/monster_special_attacks/spells.json
 msgid "Summon Gangrenous Crawlers"
 msgstr "召唤坏疽爬行者"
@@ -122858,6 +122952,28 @@ msgid ""
 "grip a combat knife as their bloodshot eyes scan for threats."
 msgstr ""
 "这位身穿防弹背心及军装的人似乎曾经是一名训练有素的军人，现在早已发疯。它紧绷、肮脏的双手握着一把战术匕首，布满血丝的眼睛不断扫视着四周的威胁。"
+
+#: data/json/monsters/feral_humans.json
+msgid "feral armored bio-operator"
+msgid_plural "feral armored bio-operators"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'feral armored bio-operator'}
+#: data/json/monsters/feral_humans.json
+msgid ""
+"Wearing an advanced suit of power armor, this person seems to be a highly "
+"trained military professional, now turned feral.  Worse, the faint "
+"electrical crackling that emanates from their body indicates heavy bionic "
+"augmentation."
+msgstr ""
+
+#. ~ Attack message of monster "{'str': 'feral armored bio-operator'}"'s spell
+#. "None"
+#: data/json/monsters/feral_humans.json
+msgid ""
+"The feral activates its time dilation bionic, and suddenly moves with a "
+"burst of speed!"
+msgstr ""
 
 #: data/json/monsters/feral_humans.json
 msgid "feral corporate executive"
@@ -183526,6 +183642,14 @@ msgstr "尖刺裝甲板會增加碰撞中傳遞給其他人的傷害。"
 msgid "military composite armor plating"
 msgstr "軍用複合裝甲板"
 
+#. ~ Description for {'str': 'Dimensional Portal Tap'}
+#: data/json/vehicleparts/portal_tap.json
+msgid ""
+"An advanced interface module that siphons power from a linked dimensional "
+"portal directly into the vehicle's battery system.  Must be linked to a "
+"specific portal by examining it while in the vehicle."
+msgstr ""
+
 #. ~ Description for {'str': 'wind turbine'}
 #: data/json/vehicleparts/power.json
 msgid ""
@@ -184354,7 +184478,7 @@ msgstr "简配版 25mm 机炮"
 
 #: data/json/vehicleparts/turret.json
 msgid "25mm rotary cannon"
-msgstr ""
+msgstr "25毫米旋转机炮"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/vehicleparts/vp_flags.json
@@ -184539,6 +184663,14 @@ msgstr "这件物品<good>可以作为一个屠宰架使用</good>。"
 #: data/json/vehicleparts/vp_flags.json
 msgid "You can craft here."
 msgstr "你可以在这里制造物品。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/vehicleparts/vp_flags.json
+msgid ""
+"This part can siphon power from a linked dimensional portal into the "
+"vehicle's battery system.  Must be linked by examining a compatible portal "
+"while the vehicle is nearby."
+msgstr ""
 
 #: data/json/vehicleparts/wheel.json
 msgid "light wheel mount (steerable)"
@@ -184876,7 +185008,7 @@ msgstr "飞行自行车"
 
 #: data/json/vehicles/aircraft_other.json
 msgid "F-35 Strike Fighter"
-msgstr ""
+msgstr "F-35 攻击战斗机"
 
 #: data/json/vehicles/bikes.json
 msgid "Bicycle"
@@ -185371,6 +185503,14 @@ msgstr "M109 自行榴弹炮"
 #: data/json/vehicles/military.json
 msgid "XM7 Electric Mini-Tank"
 msgstr "XM7 电动微型坦克"
+
+#: data/json/vehicles/military.json
+msgid "XMH Hover Tank"
+msgstr ""
+
+#: data/json/vehicles/military.json
+msgid "Experimental Hover APC"
+msgstr ""
 
 #: data/json/vehicles/test.json
 msgid "Engine Test"
@@ -244751,6 +244891,11 @@ msgstr "你爬的時候滑了一下, 結果又掉下來了。"
 msgid "Climbing is impossible in your current state."
 msgstr "你目前的状态不妙，无法攀爬。"
 
+#: src/game.cpp
+#, c-format
+msgid "The %s flickers and goes dark — the pocket dimension has collapsed."
+msgstr ""
+
 #: src/game_inventory.cpp
 msgid "You don't have the necessary item at hand."
 msgstr "你的手邊沒有必要的物品。"
@@ -249237,6 +249382,50 @@ msgstr "能量连接已暂停。"
 #: src/iexamine.cpp
 msgid "Power link severed."
 msgstr "能量连接已切断。"
+
+#: src/iexamine.cpp
+msgid "This portal doesn't appear to be active."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "The portal shimmers.  Step through to an unknown destination?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "The portal stabilizes."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "This portal has no configured destination."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Link your Dimensional Portal Tap bionic to this portal?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Bionic linked."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Link vehicle's Dimensional Portal Tap to this portal?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Vehicle part linked."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "The portal shimmers — it appears to be one-way."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Step through the portal?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You step through the portal."
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "This looks important.  Tear open nerve cluster?"
@@ -256747,12 +256936,41 @@ msgid "Failed to initialize the pocket dimension."
 msgstr "无法初始化口袋维度。"
 
 #: src/iuse_actor.cpp
-msgid "You can only use this from where you last exited this pocket."
-msgstr "你只能在上次离开该口袋维度的地方使用它。"
+msgid "You can only use this to return from or re-enter this pocket."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s is cold and inert — the pocket dimension has collapsed."
+msgstr ""
 
 #: src/iuse_actor.cpp
 msgid "You enter the pocket dimension."
 msgstr "你进入了口袋维度。"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "Link %s to this portal?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s locks onto the portal."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s isn't linked to any portal."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Return to your origin point?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s tears a path through dimensional space."
+msgstr ""
 
 #: src/iuse_actor.cpp
 msgid "You exit the pocket dimension."
@@ -269601,7 +269819,7 @@ msgstr "3D 视野"
 msgid ""
 "If false, vision is limited to current z-level. If true and the world is in "
 "z-level mode, the vision will extend beyond current z-level."
-msgstr ""
+msgstr "如果设为否，视野将仅限于当前 Z 轴层级。如果设为是且当前世界已开启 Z 轴模式，视野将延伸至当前 Z 轴层级之外。"
 
 #: src/options.cpp
 msgid "Vertical range of 3D field of vision"
@@ -269613,16 +269831,18 @@ msgid ""
 "(This many levels up, this many levels down.)  3D vision of the full height "
 "of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
 msgstr ""
+"实验性 3D 视野向上和向下能覆盖的层数。（即向上多少层，向下多少层）。开启覆盖整个世界高度的全景 3D 视野会严重拖慢游戏运行速度。可见的 Z "
+"轴层数越少，游戏运行越快。"
 
 #: src/options.cpp
 msgid "3D FoV shadow casting"
-msgstr ""
+msgstr "3D 视野阴影投射"
 
 #: src/options.cpp
 msgid ""
 "When enabled, obstacles at other z-levels correctly cast 3D shadows. "
 "Requires 3D FoV. Significantly slower than disabled."
-msgstr ""
+msgstr "启用后，其他 Z 轴层级上的障碍物将正确投射 3D 阴影。需要开启 3D 视野（3D FoV）功能。运行速度会比禁用该功能时慢得多。"
 
 #: src/options.cpp
 msgid "LOS Cache Size"
@@ -270364,14 +270584,6 @@ msgid "( WIP feature ) Determines terrain, shops, plants, and more."
 msgstr " (開發中的功能) 設定地形、商店、植被、以及更多。"
 
 #: src/options.cpp
-msgid "Initial time"
-msgstr "初始時間"
-
-#: src/options.cpp
-msgid "Initial starting time of day on character generation."
-msgstr "設定角色起始時是當天的幾點。"
-
-#: src/options.cpp
 msgid "Initial day"
 msgstr "大災難日"
 
@@ -270396,12 +270608,72 @@ msgid ""
 msgstr "玩家從大災難後第幾日開始進行遊戲。設定為 0 即是大災難發生當天。可被開場劇情所覆寫改變。增加日數會使食物腐敗與怪物進化。"
 
 #: src/options.cpp
+msgid "Initial time"
+msgstr "初始時間"
+
+#: src/options.cpp
+msgid "Hour of the day at which the player starts the game."
+msgstr ""
+
+#: src/options.cpp
 msgid "Season length"
 msgstr "季節長度"
 
 #: src/options.cpp
 msgid "Season length, in days."
 msgstr "季节长度，以天为单位。"
+
+#: src/options.cpp
+msgid "Sunrise hour (summer)"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Hour of sunrise at the summer solstice for the base dimension.  Per-"
+"dimension overrides can be set in world_types JSON."
+msgstr ""
+
+#: src/options.cpp
+msgid "Sunrise hour (winter)"
+msgstr ""
+
+#: src/options.cpp
+msgid "Hour of sunrise at the winter solstice for the base dimension."
+msgstr ""
+
+#: src/options.cpp
+msgid "Sunrise hour (equinox)"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Hour of sunrise at the spring and autumn equinox for the base dimension."
+msgstr ""
+
+#: src/options.cpp
+msgid "Sunset hour (summer)"
+msgstr ""
+
+#: src/options.cpp
+msgid "Hour of sunset at the summer solstice for the base dimension."
+msgstr ""
+
+#: src/options.cpp
+msgid "Sunset hour (winter)"
+msgstr ""
+
+#: src/options.cpp
+msgid "Hour of sunset at the winter solstice for the base dimension."
+msgstr ""
+
+#: src/options.cpp
+msgid "Sunset hour (equinox)"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Hour of sunset at the spring and autumn equinox for the base dimension."
+msgstr ""
 
 #: src/options.cpp
 msgid "Construction speed percentage"

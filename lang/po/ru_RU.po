@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-16 21:12+0000\n"
+"POT-Creation-Date: 2026-04-17 20:30+0000\n"
 "Last-Translator: Vorpal Void <vorpal.void@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -5126,7 +5126,7 @@ msgstr ""
 "стеснение рук на 10, ваша способность держать предметы при этом не "
 "улучшается."
 
-#: data/json/bionics.json
+#: data/json/bionics.json data/json/monster_special_attacks/spells.json
 msgid "Time Dilation"
 msgstr "Замедление времени"
 
@@ -5633,6 +5633,20 @@ msgstr ""
 "Сила солнца на ладони! Внутри вас установлен вечный генератор, питающийся от"
 " нонсенсолеума. При активации его мощность удваивается. Если вы видите это, "
 "вам лучше заняться отладкой."
+
+#: data/json/bionics.json data/json/vehicleparts/portal_tap.json
+msgid "Dimensional Portal Tap"
+msgstr ""
+
+#. ~ Description for {'str': 'Dimensional Portal Tap'}
+#. ~ Description for {'str': 'Dimensional Portal Tap CBM'}
+#: data/json/bionics.json data/json/items/bionics.json
+msgid ""
+"An implanted interface for siphoning power from a linked dimensional portal."
+"  Must be linked to a specific portal by examining it.  While the linked "
+"portal's grid has power, this bionic passively draws energy into your "
+"reserves each turn."
+msgstr ""
 
 #: data/json/body_parts.json
 msgid "appendix"
@@ -36020,6 +36034,10 @@ msgid "<npcname> phase-strikes %s"
 msgstr "<npcname> наносит фазовый удар по %s"
 
 #: data/json/test_regions.json
+msgid "sand flats"
+msgstr ""
+
+#: data/json/test_regions.json
 msgid "abandoned drive-through"
 msgstr "заброшенный автомобильный проезд"
 
@@ -37059,9 +37077,10 @@ msgstr "Пустынное измерение"
 
 #. ~ Description for {'str': 'Desert Dimension'}
 #: data/json/world_types.json
-msgid "An alternate dimension dominated by arid desert terrain."
+msgid ""
+"An alternate dimension dominated by arid desert terrain with a scorching "
+"sun."
 msgstr ""
-"Альтернативное измерение, наполненное засушливыми и пустынными территориями."
 
 #: data/json/artifact/premade_artifacts.json
 msgid "The Architect's Cube"
@@ -37488,11 +37507,11 @@ msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
 #: data/json/furniture_and_terrain/furniture-fireplaces.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
 #: data/json/furniture_and_terrain/furniture-plumbing.json
-#: data/json/furniture_and_terrain/furniture-power-portals.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/furniture_and_terrain/furniture-seats.json
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -37518,11 +37537,11 @@ msgstr "скрежет металла!"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
 #: data/json/furniture_and_terrain/furniture-fireplaces.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
 #: data/json/furniture_and_terrain/furniture-plumbing.json
-#: data/json/furniture_and_terrain/furniture-power-portals.json
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/furniture_and_terrain/furniture-roof.json
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -39533,6 +39552,84 @@ msgstr "декоративное дерево"
 msgid "A decorative tree for the winter holidays."
 msgstr "Декоративное дерево к зимним праздникам."
 
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+#: data/json/furniture_and_terrain/terrain-nether.json
+msgid "dimensional portal"
+msgstr "пространственный портал"
+
+#. ~ Description for dimensional portal
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"A shimmering aperture in space, held open by an arcane-industrial framework."
+" Unlinked."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "a resonant crack!"
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "dimensional portal (active)"
+msgstr ""
+
+#. ~ Description for dimensional portal (active)
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"A shimmering aperture in space, held open by an arcane-industrial framework."
+" Examining it will transport you to the linked dimension."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "dimensional portal (closed)"
+msgstr ""
+
+#. ~ Description for dimensional portal (closed)
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"The arcane-industrial framework of a dimensional portal, its aperture now "
+"sealed. The dimensional connection it once maintained has collapsed."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "power portal"
+msgstr "силовой портал"
+
+#. ~ Description for power portal
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"A large arcane-industrial apparatus that can form a persistent electrical "
+"bridge to a paired node, even across dimensional boundaries. Unlinked."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "power portal (active)"
+msgstr "силовой портал (активен)"
+
+#. ~ Description for power portal (active)
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"A large arcane-industrial apparatus forming a persistent electrical bridge "
+"to a paired node. The hum of power flowing through the dimensional membrane "
+"is faintly audible."
+msgstr ""
+"Большой аркано-промышленный аппарат, способный создавать устойчивое "
+"электрическое соединение с сопряжённым узлом. Слышен слабый гул энергии, "
+"проходящей через межпространственную мембрану."
+
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid "power portal (paused)"
+msgstr "силовой портал (приостановлен)"
+
+#. ~ Description for power portal (paused)
+#: data/json/furniture_and_terrain/furniture-dim-portals.json
+msgid ""
+"A large arcane-industrial apparatus configured to form an electrical bridge,"
+" but currently inactive due to insufficient power or a manual pause."
+msgstr ""
+"Большой аркано-промышленный аппарат, способный создавать устойчивое "
+"электрическое соединение с сопряжённым узлом, но в данный момент не "
+"работает, либо по причине нехватки энергии, или из-за решения оператора."
+
 #: data/json/furniture_and_terrain/furniture-domestic_plants.json
 msgid "indoor plant"
 msgstr "комнатное растение"
@@ -41445,50 +41542,6 @@ msgstr ""
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid "A plumbed rain collector that feeds a fluid grid when it is raining."
 msgstr ""
-
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid "power portal"
-msgstr "силовой портал"
-
-#. ~ Description for power portal
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid ""
-"A large arcane-industrial apparatus that can form a persistent electrical "
-"bridge to a paired node, even across dimensional boundaries. Currently "
-"unlinked."
-msgstr ""
-"Большой аркано-промышленный аппарат, способный создавать устойчивое "
-"электрическое соединение с сопряжённым узлом даже через границы измерений. В"
-" настоящее время никуда не подключен."
-
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid "power portal (active)"
-msgstr "силовой портал (активен)"
-
-#. ~ Description for power portal (active)
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid ""
-"A large arcane-industrial apparatus forming a persistent electrical bridge "
-"to a paired node. The hum of power flowing through the dimensional membrane "
-"is faintly audible."
-msgstr ""
-"Большой аркано-промышленный аппарат, способный создавать устойчивое "
-"электрическое соединение с сопряжённым узлом. Слышен слабый гул энергии, "
-"проходящей через межпространственную мембрану."
-
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid "power portal (paused)"
-msgstr "силовой портал (приостановлен)"
-
-#. ~ Description for power portal (paused)
-#: data/json/furniture_and_terrain/furniture-power-portals.json
-msgid ""
-"A large arcane-industrial apparatus configured to form an electrical bridge,"
-" but currently inactive due to insufficient power or a manual pause."
-msgstr ""
-"Большой аркано-промышленный аппарат, способный создавать устойчивое "
-"электрическое соединение с сопряжённым узлом, но в данный момент не "
-"работает, либо по причине нехватки энергии, или из-за решения оператора."
 
 #: data/json/furniture_and_terrain/furniture-recreation.json
 #: data/json/items/fake.json data/json/items/furniture.json
@@ -49312,10 +49365,6 @@ msgid "An open hole in the resin wall, large enough to pass through."
 msgstr ""
 "Открытое отверстие в смоляное стене, достаточно большое, чтобы пройти."
 
-#: data/json/furniture_and_terrain/terrain-nether.json
-msgid "dimensional portal"
-msgstr "пространственный портал"
-
 #. ~ Description for dimensional portal
 #: data/json/furniture_and_terrain/terrain-nether.json
 msgid ""
@@ -56017,6 +56066,14 @@ msgstr[0] "КБМ: Вечный генератор"
 msgstr[1] "КБМ: Вечный генератор"
 msgstr[2] "КБМ: Вечный генератор"
 msgstr[3] "КБМ: Вечный генератор"
+
+#: data/json/items/bionics.json
+msgid "Dimensional Portal Tap CBM"
+msgid_plural "Dimensional Portal Tap CBMs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: data/json/items/biosignatures.json
 msgid "bird litter"
@@ -85222,6 +85279,22 @@ msgid ""
 msgstr ""
 "Тяжёлая грузонесущая рама, предназначенная для работы с боевыми "
 "экзоскелетами."
+
+#: data/json/items/armor/power_armor.json
+msgid "advanced power armor hauling frame"
+msgid_plural "advanced power armor hauling frames"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'advanced power armor hauling frame'}
+#: data/json/items/armor/power_armor.json
+msgid ""
+"A cutting-edge advanced hauling frame made from superalloy designed to "
+"interface with military exoskeletons.  Barely deployed before the Cataclysm "
+"struck."
+msgstr ""
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor weapon rack"
@@ -151937,10 +152010,10 @@ msgstr[3] ""
 #. ~ Description for hover repulsor
 #: data/json/items/vehicle/jets.json data/json/vehicleparts/jets.json
 msgid ""
-"This is a lightweight hover repulsor module mounted on the underside of the "
-"next-generation hoverbike.  It offers unparalleled maneuverability, allowing"
-" the hoverbike to glide effortlessly over swamps and ruins, completely "
-"overcoming ground friction."
+"This is a lightweight hover repulsor module mounted on the underside of a "
+"vehicle.  It offers unparalleled maneuverability, allowing the vehicle to "
+"glide effortlessly over swamps and ruins, completely overcoming ground "
+"friction."
 msgstr ""
 
 #: data/json/items/vehicle/lights.json
@@ -152547,6 +152620,23 @@ msgstr[3] "набор костяной брони"
 #: data/json/items/vehicle/plating.json
 msgid "Bone plating made for a vehicle."
 msgstr "Костяная броня для транспорта."
+
+#: data/json/items/vehicle/portal_tap.json
+msgid "dimensional portal tap"
+msgid_plural "dimensional portal taps"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'dimensional portal tap'}
+#: data/json/items/vehicle/portal_tap.json
+msgid ""
+"An advanced interface module designed to siphon power from a linked "
+"dimensional portal directly into a vehicle's battery system.  It requires "
+"installation into a vehicle and linking to a specific portal before it will "
+"function."
+msgstr ""
 
 #: data/json/items/vehicle/propellers.json
 #: data/json/vehicleparts/propellers.json
@@ -155393,6 +155483,11 @@ msgstr ""
 "кратковременному оглушению. Дальность поражения значительно увеличивается с "
 "уровнем."
 
+#. ~ Description for {'str': 'Time Dilation'}
+#: data/json/monster_special_attacks/spells.json
+msgid "Time dilation ability for feral armored boss."
+msgstr ""
+
 #: data/json/monster_special_attacks/spells.json
 msgid "Summon Gangrenous Crawlers"
 msgstr "Вызвать гангренозных ползунов"
@@ -156516,6 +156611,31 @@ msgstr ""
 "Одетый в военную форму с баллистическим жилетом, этот человек выглядит как "
 "высококвалифицированный военный специалист, ныне одичавший. Напряжённые, "
 "грязные руки сжимают боевой нож, а налитые кровью глаза высматривают угрозу."
+
+#: data/json/monsters/feral_humans.json
+msgid "feral armored bio-operator"
+msgid_plural "feral armored bio-operators"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'feral armored bio-operator'}
+#: data/json/monsters/feral_humans.json
+msgid ""
+"Wearing an advanced suit of power armor, this person seems to be a highly "
+"trained military professional, now turned feral.  Worse, the faint "
+"electrical crackling that emanates from their body indicates heavy bionic "
+"augmentation."
+msgstr ""
+
+#. ~ Attack message of monster "{'str': 'feral armored bio-operator'}"'s spell
+#. "None"
+#: data/json/monsters/feral_humans.json
+msgid ""
+"The feral activates its time dilation bionic, and suddenly moves with a "
+"burst of speed!"
+msgstr ""
 
 #: data/json/monsters/feral_humans.json
 msgid "feral corporate executive"
@@ -229253,6 +229373,14 @@ msgstr ""
 msgid "military composite armor plating"
 msgstr "военная композитная броня"
 
+#. ~ Description for {'str': 'Dimensional Portal Tap'}
+#: data/json/vehicleparts/portal_tap.json
+msgid ""
+"An advanced interface module that siphons power from a linked dimensional "
+"portal directly into the vehicle's battery system.  Must be linked to a "
+"specific portal by examining it while in the vehicle."
+msgstr ""
+
 #. ~ Description for {'str': 'wind turbine'}
 #: data/json/vehicleparts/power.json
 msgid ""
@@ -230415,6 +230543,14 @@ msgstr ""
 msgid "You can craft here."
 msgstr "Вы можете изготавливать тут."
 
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/vehicleparts/vp_flags.json
+msgid ""
+"This part can siphon power from a linked dimensional portal into the "
+"vehicle's battery system.  Must be linked by examining a compatible portal "
+"while the vehicle is nearby."
+msgstr ""
+
 #: data/json/vehicleparts/wheel.json
 msgid "light wheel mount (steerable)"
 msgstr "лёгкое крепление колеса (управляемое)"
@@ -231272,6 +231408,14 @@ msgstr "самоходная гаубица M109"
 #: data/json/vehicles/military.json
 msgid "XM7 Electric Mini-Tank"
 msgstr "электромини-танк XM7"
+
+#: data/json/vehicles/military.json
+msgid "XMH Hover Tank"
+msgstr ""
+
+#: data/json/vehicles/military.json
+msgid "Experimental Hover APC"
+msgstr ""
 
 #: data/json/vehicles/test.json
 msgid "Engine Test"
@@ -301669,6 +301813,11 @@ msgstr "Вы соскальзываете и падаете вниз."
 msgid "Climbing is impossible in your current state."
 msgstr "В текущем состоянии невозможно взобраться."
 
+#: src/game.cpp
+#, c-format
+msgid "The %s flickers and goes dark — the pocket dimension has collapsed."
+msgstr ""
+
 #: src/game_inventory.cpp
 msgid "You don't have the necessary item at hand."
 msgstr "У вас под рукой нет необходимого предмета."
@@ -306343,6 +306492,50 @@ msgstr "Силовое соединение приостановлено."
 #: src/iexamine.cpp
 msgid "Power link severed."
 msgstr "Силовое соединение оборвано."
+
+#: src/iexamine.cpp
+msgid "This portal doesn't appear to be active."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "The portal shimmers.  Step through to an unknown destination?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "The portal stabilizes."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "This portal has no configured destination."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Link your Dimensional Portal Tap bionic to this portal?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Bionic linked."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Link vehicle's Dimensional Portal Tap to this portal?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Vehicle part linked."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "The portal shimmers — it appears to be one-way."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Step through the portal?"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You step through the portal."
+msgstr ""
 
 #: src/iexamine.cpp
 msgid "This looks important.  Tear open nerve cluster?"
@@ -314172,14 +314365,41 @@ msgid "Failed to initialize the pocket dimension."
 msgstr "Не удалось инициализировать карманное измерение."
 
 #: src/iuse_actor.cpp
-msgid "You can only use this from where you last exited this pocket."
+msgid "You can only use this to return from or re-enter this pocket."
 msgstr ""
-"Это можно использовать только в том месте, где вы в последний раз вышли из "
-"данного карманного измерения."
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s is cold and inert — the pocket dimension has collapsed."
+msgstr ""
 
 #: src/iuse_actor.cpp
 msgid "You enter the pocket dimension."
 msgstr "Вы входите в карманное измерение."
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "Link %s to this portal?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s locks onto the portal."
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s isn't linked to any portal."
+msgstr ""
+
+#: src/iuse_actor.cpp
+msgid "Return to your origin point?"
+msgstr ""
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "The %s tears a path through dimensional space."
+msgstr ""
 
 #: src/iuse_actor.cpp
 msgid "You exit the pocket dimension."
@@ -328466,14 +328686,6 @@ msgid "( WIP feature ) Determines terrain, shops, plants, and more."
 msgstr "(В разработке) Определяет тип местности, магазинов, растений и т.д."
 
 #: src/options.cpp
-msgid "Initial time"
-msgstr "Стартовое время"
-
-#: src/options.cpp
-msgid "Initial starting time of day on character generation."
-msgstr "Стартовое время дня при генерации персонажа."
-
-#: src/options.cpp
 msgid "Initial day"
 msgstr "Первый день"
 
@@ -328502,12 +328714,72 @@ msgstr ""
 "и эволюцию монстров."
 
 #: src/options.cpp
+msgid "Initial time"
+msgstr "Стартовое время"
+
+#: src/options.cpp
+msgid "Hour of the day at which the player starts the game."
+msgstr ""
+
+#: src/options.cpp
 msgid "Season length"
 msgstr "Длительность сезона"
 
 #: src/options.cpp
 msgid "Season length, in days."
 msgstr "Длительность сезона, в днях."
+
+#: src/options.cpp
+msgid "Sunrise hour (summer)"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Hour of sunrise at the summer solstice for the base dimension.  Per-"
+"dimension overrides can be set in world_types JSON."
+msgstr ""
+
+#: src/options.cpp
+msgid "Sunrise hour (winter)"
+msgstr ""
+
+#: src/options.cpp
+msgid "Hour of sunrise at the winter solstice for the base dimension."
+msgstr ""
+
+#: src/options.cpp
+msgid "Sunrise hour (equinox)"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Hour of sunrise at the spring and autumn equinox for the base dimension."
+msgstr ""
+
+#: src/options.cpp
+msgid "Sunset hour (summer)"
+msgstr ""
+
+#: src/options.cpp
+msgid "Hour of sunset at the summer solstice for the base dimension."
+msgstr ""
+
+#: src/options.cpp
+msgid "Sunset hour (winter)"
+msgstr ""
+
+#: src/options.cpp
+msgid "Hour of sunset at the winter solstice for the base dimension."
+msgstr ""
+
+#: src/options.cpp
+msgid "Sunset hour (equinox)"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Hour of sunset at the spring and autumn equinox for the base dimension."
+msgstr ""
 
 #: src/options.cpp
 msgid "Construction speed percentage"
