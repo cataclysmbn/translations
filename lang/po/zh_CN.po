@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-18 20:45+0000\n"
+"POT-Creation-Date: 2026-04-19 17:29+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -25677,6 +25677,42 @@ msgid ""
 msgstr ""
 "作为一名资深特工，在经历了多年外勤工作中的濒死遭遇后，已经没有什么能真正让你感到惊慌了。在调查税务欺诈时，你挨过枪子、被刀砍过、被人挥拳痛击过，还差点被车碾过；这场大灾变对你来说不过是家常便饭。现在再也没有人能约束你了，要么乖乖交税，要么就地正法。你如宿命般不可阻挡。"
 
+#: data/json/professions.json
+msgctxt "profession_male"
+msgid "Elite Operator"
+msgstr "精英干员"
+
+#: data/json/professions.json
+msgctxt "profession_female"
+msgid "Elite Operator"
+msgstr "精英干员"
+
+#. ~ Profession (male Elite Operator) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You were the best of the best, the military's finest, and among them you "
+"were better still.  Movies have been made about the missions you went on, "
+"and that's only the declassified ones. After getting back from yet another "
+"top secret mission, all you wanted to do was relax. Unfortunately, the "
+"Cataclysm had other plans, and now, stuck without your gear, you'll just "
+"have to show them what makes you tier one."
+msgstr ""
+"你是精英中的精英，是军队中最出色的战士，而在这些佼佼者中，你依然出类拔萃。你执行过的任务甚至被拍成了电影，而那还仅仅是已经解密的部分。在又一次完成绝密任务归来后，你只想好好放松一下。不幸的是，大灾变另有安排。现在，虽然受困于此且没有装备傍身，但你也只能向他们展示，什么才是真正的第一梯队。"
+
+#. ~ Profession (female Elite Operator) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You were the best of the best, the military's finest, and among them you "
+"were better still.  Movies have been made about the missions you went on, "
+"and that's only the declassified ones. After getting back from yet another "
+"top secret mission, all you wanted to do was relax. Unfortunately, the "
+"Cataclysm had other plans, and now, stuck without your gear, you'll just "
+"have to show them what makes you tier one."
+msgstr ""
+"你是精英中的精英，是军队中最出色的战士，而在这些佼佼者中，你依然出类拔萃。你执行过的任务甚至被拍成了电影，而那还仅仅是已经解密的部分。在又一次完成绝密任务归来后，你只想好好放松一下。不幸的是，大灾变另有安排。现在，虽然受困于此且没有装备傍身，但你也只能向他们展示，什么才是真正的第一梯队。"
+
 #. ~ Name for scenario 'Evacuee' for a male character
 #: data/json/scenarios.json
 msgctxt "scenario_male"
@@ -33644,6 +33680,12 @@ msgid ""
 "opening.  Will only work if constructed in/on a building that has an "
 "electric grid with a mounted battery."
 msgstr "必须安装在打开的窗户、空窗框或类似开口上。仅当在具有装配了电池的电网的建筑物内或建筑物上时才有效。 "
+
+#: data/json/construction/construct_workshop.json
+msgid ""
+"Requires being built with a roof overhead.  Will only work if constructed "
+"in/on a building that has an electric grid with a mounted battery."
+msgstr "需要在上方有屋顶的位置建造。仅当建在带有电网且已安装电池的建筑物内部/上方时才会生效。"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "cooling unit"
@@ -122261,7 +122303,7 @@ msgstr "开启入口"
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans_1side.json
 msgid "Hardware Storage"
-msgstr ""
+msgstr "硬件仓库终端"
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans_1side.json
@@ -239968,6 +240010,10 @@ msgid "Toggle display transparency"
 msgstr "切换显示透明度"
 
 #: src/debug_menu.cpp
+msgid "Toggle display outside/sheltered/indoors"
+msgstr "切换显示 室外/有遮蔽/室内"
+
+#: src/debug_menu.cpp
 msgid "Toggle display radiation"
 msgstr "切换显示辐射值"
 
@@ -241548,8 +241594,8 @@ msgstr "缓存（透明：%.4f可见：%.4f视角：%.4f）"
 
 #: src/editmap.cpp
 #, c-format
-msgid "outside: %d obstructed: %d floor: %d"
-msgstr "户外：%d 阻挡：%d 地板：%d"
+msgid "outside: %d sheltered: %d floor: %d obstructed: %d"
+msgstr "室外: %d 有遮蔽: %d 地板: %d 障碍: %d"
 
 #: src/editmap.cpp
 #, c-format
@@ -241568,6 +241614,10 @@ msgstr "[载具]"
 #: src/editmap.cpp
 msgid " [indoors]"
 msgstr "[地板层]"
+
+#: src/editmap.cpp
+msgid " [sheltered]"
+msgstr "[有遮蔽]"
 
 #: src/editmap.cpp
 msgid " [roof]"
@@ -241628,12 +241678,10 @@ msgstr "陷阱"
 #, c-format
 msgid ""
 "Move cost: %d\n"
-"Indoors: %s\n"
 "Roof: %s"
 msgstr ""
-"行动点：%d\n"
-"室内：%s\n"
-"屋顶：%s"
+"移动消耗: %d\n"
+"屋顶: %s"
 
 #: src/editmap.cpp
 #, c-format
