@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-24 20:25+0000\n"
+"POT-Creation-Date: 2026-04-25 21:27+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -30452,6 +30452,46 @@ msgstr ""
 
 #: data/json/speech.json
 msgid "\" Time to collect my bonus!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"Enemy spotted!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"Contact!  One more loose end…\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"This shouldn't take long!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"Tango dead ahead!  This one's lasted longer than the others…\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"You chose the wrong military installation, kid!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"We call this a difficulty tweak!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"You'll be nothing more than a redaction line when I'm done with you!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"Everyone move up!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"CBM power in the red, cover me!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"I bet five dollars this guy doesn't last another thirty seconds!\""
 msgstr ""
 
 #: data/json/spells_trap.json
@@ -123932,6 +123972,32 @@ msgstr ""
 msgid "The feral bodyguard fires their pistol!"
 msgstr ""
 
+#: data/json/monsters/feral_humans.json
+msgid "feral black-ops"
+msgid_plural "feral black-opss"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'feral black-ops'}
+#: data/json/monsters/feral_humans.json
+msgid ""
+"Dressed in a suit of unmarked black armor and surrounded by a shadowy field,"
+" this heavily armed feral looks to be part of an elite unit. Now that you've"
+" stumbled upon their operation, you're just another loose thread to clean "
+"up..."
+msgstr ""
+
+#: data/json/monsters/feral_humans.json
+msgid "The feral black-ops fires their smg!"
+msgstr ""
+
+#: data/json/monsters/feral_humans.json
+msgid "The feral black-ops fires their automagnum!"
+msgstr ""
+
+#: data/json/monsters/feral_humans.json
+msgid "The feral black-ops fires their sniper rifle!"
+msgstr ""
+
 #: data/json/monsters/fish.json
 msgid "alpha razorclaw"
 msgid_plural "alpha razorclaws"
@@ -138759,6 +138825,10 @@ msgstr "釣りをしてきてくれ。"
 #: data/json/npcs/TALK_COMMON_ALLY.json
 msgid "Please do some farming work."
 msgstr "農作業をしてきてくれ。"
+
+#: data/json/npcs/TALK_COMMON_ALLY.json
+msgid "Can you craft this item?"
+msgstr ""
 
 #: data/json/npcs/TALK_COMMON_ALLY.json
 msgid "*pssshht* ten-four, I'll make my way there, over."
@@ -231162,6 +231232,14 @@ msgid ""
 msgstr "<npcname>は未完成のアイテムを所持していない。<npcname>は製作を中断した。"
 
 #: src/activity_handlers.cpp
+msgid "You cannot continue crafting."
+msgstr ""
+
+#: src/activity_handlers.cpp
+msgid "<npcname> cannot continue crafting."
+msgstr ""
+
+#: src/activity_handlers.cpp
 #, c-format
 msgid "There is nothing left of the %s to craft from."
 msgstr "製作できる%sはもうない。"
@@ -240180,6 +240258,10 @@ msgid "You can no longer see well enough to keep crafting."
 msgstr "視界が悪すぎて製作を続けられない。"
 
 #: src/crafting.cpp
+msgid "<npcname> can no longer see well enough to keep crafting."
+msgstr ""
+
+#: src/crafting.cpp
 #, c-format
 msgid ""
 "The %s is too large and/or heavy to work on.  You may want to use a "
@@ -240187,8 +240269,19 @@ msgid ""
 msgstr "%sは体積か重量が超過しており作業できない。作業台を使用するか一括製作する量を減らそう。"
 
 #: src/crafting.cpp
+#, c-format
+msgid ""
+"The %s is too large and/or heavy for <npcname> to work on.  They may need a "
+"workbench or a smaller batch size"
+msgstr ""
+
+#: src/crafting.cpp
 msgid "Your morale is too low to continue crafting."
 msgstr "製作する意欲が湧かない。"
+
+#: src/crafting.cpp
+msgid "<npcname>'s morale is too low to continue crafting."
+msgstr ""
 
 #: src/crafting.cpp
 msgid "You are too frustrated to continue and should just give up."
@@ -240216,6 +240309,10 @@ msgstr "製作を繰り返すには、まず何かを製作してくれ。"
 #: src/crafting.cpp
 msgid "You can no longer make that craft!"
 msgstr "材料を使い果たした。"
+
+#: src/crafting.cpp
+msgid "<npcname> can no longer make that craft!"
+msgstr ""
 
 #: src/crafting.cpp
 #, c-format
@@ -240339,6 +240436,10 @@ msgid "You don't have the required components to continue crafting!"
 msgstr "製作を続けるのに必要な素材を所持していない！"
 
 #: src/crafting.cpp
+msgid "<npcname> don't have the required components to continue crafting!"
+msgstr ""
+
+#: src/crafting.cpp
 msgid "Consume the missing components and continue crafting?"
 msgstr "足りない材料を補充して製作を続ける？"
 
@@ -240357,6 +240458,10 @@ msgstr "製作を中断した。"
 #: src/crafting.cpp
 msgid "You don't have the necessary tools to continue crafting!"
 msgstr "製作を続けるのに必要な道具を所持してない！"
+
+#: src/crafting.cpp
+msgid "<npcname> don't have the necessary tools to continue crafting!"
+msgstr ""
 
 #: src/crafting.cpp
 msgid "Use which selection of components?"
@@ -257428,11 +257533,6 @@ msgid "<npcname> starts playing their %s"
 msgstr "<npcname>は%sの演奏を始めた"
 
 #: src/iuse_actor.cpp
-#, c-format
-msgid "%1$s %2$s"
-msgstr "%1$s%2$s"
-
-#: src/iuse_actor.cpp
 msgid "You produce an annoying sound"
 msgstr "耳障りな酷い音を奏でている"
 
@@ -257440,6 +257540,11 @@ msgstr "耳障りな酷い音を奏でている"
 #, c-format
 msgid "%s produces an annoying sound"
 msgstr "%sは耳障りな酷い音を奏でている"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "%1$s %2$s"
+msgstr "%1$s%2$s"
 
 #: src/iuse_actor.cpp
 msgid "You can't do that while mounted."
@@ -259731,7 +259836,7 @@ msgstr "< <color_green>マウス視点操作</color> >"
 msgid "Loading"
 msgstr "ロード中"
 
-#: src/locations.cpp
+#: src/locations.cpp src/npc.cpp
 msgid "inventory"
 msgstr "所持品"
 
@@ -267909,6 +268014,35 @@ msgstr "眼鏡がないので読むことがでない。"
 #, c-format
 msgid "%s starts reading."
 msgstr "%s が読書を始めた。"
+
+#: src/npc.cpp
+msgid "Craft what?"
+msgstr ""
+
+#: src/npc.cpp
+msgid "Craft new item"
+msgstr ""
+
+#: src/npc.cpp
+msgid "Resume a craft"
+msgstr ""
+
+#: src/npc.cpp
+msgid "No in-progress crafts within reach."
+msgstr ""
+
+#: src/npc.cpp
+msgid "Resume which craft?"
+msgstr ""
+
+#: src/npc.cpp
+msgid "ground"
+msgstr ""
+
+#: src/npc.cpp
+#, c-format
+msgid "%1$s picks up the %2$s."
+msgstr ""
 
 #: src/npc.cpp
 msgid "This can't be worn."

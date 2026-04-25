@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-04-24 20:25+0000\n"
+"POT-Creation-Date: 2026-04-25 21:27+0000\n"
 "Last-Translator: Vorpal Void <vorpal.void@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -33844,6 +33844,46 @@ msgstr ""
 
 #: data/json/speech.json
 msgid "\" Time to collect my bonus!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"Enemy spotted!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"Contact!  One more loose end…\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"This shouldn't take long!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"Tango dead ahead!  This one's lasted longer than the others…\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"You chose the wrong military installation, kid!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"We call this a difficulty tweak!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"You'll be nothing more than a redaction line when I'm done with you!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"Everyone move up!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"CBM power in the red, cover me!\""
+msgstr ""
+
+#: data/json/speech.json
+msgid "\"I bet five dollars this guy doesn't last another thirty seconds!\""
 msgstr ""
 
 #: data/json/spells_trap.json
@@ -156965,6 +157005,35 @@ msgstr ""
 msgid "The feral bodyguard fires their pistol!"
 msgstr ""
 
+#: data/json/monsters/feral_humans.json
+msgid "feral black-ops"
+msgid_plural "feral black-opss"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'feral black-ops'}
+#: data/json/monsters/feral_humans.json
+msgid ""
+"Dressed in a suit of unmarked black armor and surrounded by a shadowy field,"
+" this heavily armed feral looks to be part of an elite unit. Now that you've"
+" stumbled upon their operation, you're just another loose thread to clean "
+"up..."
+msgstr ""
+
+#: data/json/monsters/feral_humans.json
+msgid "The feral black-ops fires their smg!"
+msgstr ""
+
+#: data/json/monsters/feral_humans.json
+msgid "The feral black-ops fires their automagnum!"
+msgstr ""
+
+#: data/json/monsters/feral_humans.json
+msgid "The feral black-ops fires their sniper rifle!"
+msgstr ""
+
 #: data/json/monsters/fish.json
 msgid "alpha razorclaw"
 msgid_plural "alpha razorclaws"
@@ -175375,6 +175444,10 @@ msgstr "Пожалуйста, отправляйся на рыбалку."
 #: data/json/npcs/TALK_COMMON_ALLY.json
 msgid "Please do some farming work."
 msgstr "Пожалуйста, займись работой в огороде."
+
+#: data/json/npcs/TALK_COMMON_ALLY.json
+msgid "Can you craft this item?"
+msgstr ""
 
 #: data/json/npcs/TALK_COMMON_ALLY.json
 msgid "*pssshht* ten-four, I'll make my way there, over."
@@ -286291,6 +286364,14 @@ msgstr ""
 "работу."
 
 #: src/activity_handlers.cpp
+msgid "You cannot continue crafting."
+msgstr ""
+
+#: src/activity_handlers.cpp
+msgid "<npcname> cannot continue crafting."
+msgstr ""
+
+#: src/activity_handlers.cpp
 #, c-format
 msgid "There is nothing left of the %s to craft from."
 msgstr "Не осталось %s, чтобы собирать."
@@ -295677,6 +295758,10 @@ msgid "You can no longer see well enough to keep crafting."
 msgstr "Освещение стало слишком плохим, чтобы можно было продолжать сборку."
 
 #: src/crafting.cpp
+msgid "<npcname> can no longer see well enough to keep crafting."
+msgstr ""
+
+#: src/crafting.cpp
 #, c-format
 msgid ""
 "The %s is too large and/or heavy to work on.  You may want to use a "
@@ -295686,8 +295771,19 @@ msgstr ""
 "использовать верстак или уменьшить размер партии"
 
 #: src/crafting.cpp
+#, c-format
+msgid ""
+"The %s is too large and/or heavy for <npcname> to work on.  They may need a "
+"workbench or a smaller batch size"
+msgstr ""
+
+#: src/crafting.cpp
 msgid "Your morale is too low to continue crafting."
 msgstr "У вас слишком низкий моральный дух, чтобы продолжать сборку."
+
+#: src/crafting.cpp
+msgid "<npcname>'s morale is too low to continue crafting."
+msgstr ""
 
 #: src/crafting.cpp
 msgid "You are too frustrated to continue and should just give up."
@@ -295718,6 +295814,10 @@ msgstr "Сперва соберите что-нибудь."
 #: src/crafting.cpp
 msgid "You can no longer make that craft!"
 msgstr "Вы больше не можете это собрать!"
+
+#: src/crafting.cpp
+msgid "<npcname> can no longer make that craft!"
+msgstr ""
 
 #: src/crafting.cpp
 #, c-format
@@ -295844,6 +295944,10 @@ msgid "You don't have the required components to continue crafting!"
 msgstr "У вас нет необходимых компонентов, нельзя продолжить сборку!"
 
 #: src/crafting.cpp
+msgid "<npcname> don't have the required components to continue crafting!"
+msgstr ""
+
+#: src/crafting.cpp
 msgid "Consume the missing components and continue crafting?"
 msgstr "Израсходовать недостающие компоненты и продолжить изготовление?"
 
@@ -295862,6 +295966,10 @@ msgstr "Вы прекратили производство."
 #: src/crafting.cpp
 msgid "You don't have the necessary tools to continue crafting!"
 msgstr "У вас нет необходимых инструментов для продолжения сборки!"
+
+#: src/crafting.cpp
+msgid "<npcname> don't have the necessary tools to continue crafting!"
+msgstr ""
 
 #: src/crafting.cpp
 msgid "Use which selection of components?"
@@ -313666,11 +313774,6 @@ msgid "<npcname> starts playing their %s"
 msgstr "<npcname> прекращает играть на инструменте (%s)."
 
 #: src/iuse_actor.cpp
-#, c-format
-msgid "%1$s %2$s"
-msgstr "%1$s %2$s"
-
-#: src/iuse_actor.cpp
 msgid "You produce an annoying sound"
 msgstr "Вы производите раздражающий звук."
 
@@ -313678,6 +313781,11 @@ msgstr "Вы производите раздражающий звук."
 #, c-format
 msgid "%s produces an annoying sound"
 msgstr "%s производит раздражающий звук."
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
 
 #: src/iuse_actor.cpp
 msgid "You can't do that while mounted."
@@ -316037,7 +316145,7 @@ msgstr "< <color_green>Осмотр мышью</color> >"
 msgid "Loading"
 msgstr "Загрузка"
 
-#: src/locations.cpp
+#: src/locations.cpp src/npc.cpp
 msgid "inventory"
 msgstr "инвентарь"
 
@@ -324453,6 +324561,35 @@ msgstr "Я не могу читать без очков."
 #, c-format
 msgid "%s starts reading."
 msgstr "%s начинает читать."
+
+#: src/npc.cpp
+msgid "Craft what?"
+msgstr ""
+
+#: src/npc.cpp
+msgid "Craft new item"
+msgstr ""
+
+#: src/npc.cpp
+msgid "Resume a craft"
+msgstr ""
+
+#: src/npc.cpp
+msgid "No in-progress crafts within reach."
+msgstr ""
+
+#: src/npc.cpp
+msgid "Resume which craft?"
+msgstr ""
+
+#: src/npc.cpp
+msgid "ground"
+msgstr ""
+
+#: src/npc.cpp
+#, c-format
+msgid "%1$s picks up the %2$s."
+msgstr ""
 
 #: src/npc.cpp
 msgid "This can't be worn."
