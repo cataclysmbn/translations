@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-01 04:18+0000\n"
+"POT-Creation-Date: 2026-05-02 21:47+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -11126,6 +11126,33 @@ msgstr "当被投掷并击中生物头部时，可以<bad>致盲</bad>它们。"
 
 #. ~ Please leave anything in <angle brackets> unchanged.
 #: data/json/flags.json
+msgid "Light levels have no effect."
+msgstr "光照程度没有影响。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid "This is easy to do in the dark."
+msgstr "这在黑暗中很容易完成。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid "This is difficult to do in the dark."
+msgstr "这在黑暗中很难完成。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid ""
+"This is incredibly difficult to do in the dark, and impossible if you cannot"
+" see."
+msgstr "这在黑暗中极其难以完成，如果看不见则根本不可能完成。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
+msgid "This is cannot be done if you cannot see."
+msgstr "如果你看不见，则无法完成。"
+
+#. ~ Please leave anything in <angle brackets> unchanged.
+#: data/json/flags.json
 msgid "This item can be used to block attacks when worn."
 msgstr "这件装备穿戴后可以格挡攻击。"
 
@@ -12737,6 +12764,10 @@ msgid "Analyze artifact"
 msgstr "分析神器"
 
 #: data/json/item_actions.json
+msgid "Inspect object variables"
+msgstr "检查对象变量"
+
+#: data/json/item_actions.json
 msgid "Dry/clean yourself"
 msgstr "擦干/清理自己"
 
@@ -13058,6 +13089,90 @@ msgstr "手持武器"
 #: data/json/item_category.json
 msgid "USABLE BIONICS"
 msgstr "可用生化插件"
+
+#: data/json/item_var_viewer.lua
+#, c-format
+msgid "Stored vars for %s"
+msgstr "%s 的已存变量"
+
+#: data/json/item_var_viewer.lua
+#, c-format
+msgid "Stored entries: %d"
+msgstr "存储条目：%d"
+
+#: data/json/item_var_viewer.lua
+#, c-format
+msgid "No stored variables found on %s."
+msgstr "在 %s 上未找到存储的变量。"
+
+#: data/json/item_var_viewer.lua
+msgid "Variable name"
+msgstr "变量名"
+
+#: data/json/item_var_viewer.lua
+#, c-format
+msgid "Enter the variable name for %s."
+msgstr "请输入 %s 的变量名。"
+
+#: data/json/item_var_viewer.lua
+msgid "Variable value"
+msgstr "变量值"
+
+#: data/json/item_var_viewer.lua
+#, c-format
+msgid "Enter the value for %s."
+msgstr "请输入 %s 的值。"
+
+#: data/json/item_var_viewer.lua
+#, c-format
+msgid "Set variable %s on %s."
+msgstr "在 %s 上设置变量 %s。"
+
+#: data/json/item_var_viewer.lua
+msgid "Remove variable"
+msgstr "移除变量"
+
+#: data/json/item_var_viewer.lua
+#, c-format
+msgid "Remove variable %s from %s?"
+msgstr "要从 %s 中移除变量 %s 吗？"
+
+#: data/json/item_var_viewer.lua
+#, c-format
+msgid "Removed variable %s from %s."
+msgstr "已从 %s 中移除变量 %s。"
+
+#: data/json/item_var_viewer.lua
+msgid "Item var viewer"
+msgstr "物品变量查看器"
+
+#: data/json/item_var_viewer.lua
+msgid "Add / update variable"
+msgstr "添加/更新变量"
+
+#: data/json/item_var_viewer.lua
+msgid "Item"
+msgstr "物品"
+
+#: data/json/item_var_viewer.lua src/debug_menu.cpp
+msgid "Player"
+msgstr "玩家"
+
+#: data/json/item_var_viewer.lua
+msgid "Monster"
+msgstr "怪物"
+
+#: data/json/item_var_viewer.lua src/options.cpp
+msgid "NPC"
+msgstr "NPC"
+
+#: data/json/item_var_viewer.lua
+msgid "Ground"
+msgstr "地面"
+
+#: data/json/item_var_viewer.lua
+msgid "You have nothing to inspect."
+msgstr "你没有可检查的对象。"
 
 #: data/json/legacy_artifact_active.json
 msgid "Artifact Adrenaline"
@@ -115988,6 +116103,19 @@ msgid ""
 "cloning vat to grow a creature from a viable DNA sample. "
 msgstr "一种用于将克隆体从克隆缸安全运输到野外的一次性容器。目前是空的，如果足够无菌，克隆缸可以使用它通过活性DNA样本来培育生物。"
 
+#: data/json/items/tool/misc.json
+msgid "object variable viewer"
+msgid_plural "object variable viewers"
+msgstr[0] "对象变量查看器"
+
+#. ~ Description for {'str': 'object variable viewer'}
+#: data/json/items/tool/misc.json
+msgid ""
+"A compact analyzer that scans any nearby object and reveals every stored "
+"variable for quick debugging without needing to drop the object.  It can "
+"also add, update, or remove item variables."
+msgstr "一款便携的分析仪，可扫描附近的任何对象并显示所有存储的变量，以便在无需丢弃对象的情况下进行快速调试。它还可以添加、更新或移除物品变量。"
+
 #: data/json/items/tool/musical_instruments.json
 msgid "banjo"
 msgid_plural "banjos"
@@ -135155,11 +135283,10 @@ msgstr "蝠翼"
 #. ~ Description for {'str': 'Bat Wings'}
 #: data/json/mutations/mutations.json
 msgid ""
-"You have a pair of large, leathery wings.  You can move them a little, but "
-"they only catch enough air to reduce falling damage a bit, and in fact put "
-"you off balance, reducing your ability to dodge slightly."
-msgstr ""
-"你拥有一对大型的皮质翅膀。虽然你只能略微活动它们，但它们能捕捉到少量空气，从而稍微减少坠落伤害。不过，这对翅膀会让你失去平衡，稍微降低你的闪避能力。"
+"You have a pair of large, leathery wings.  While you can fly short distances"
+" with them, it's more taxing than more aerodynamic wings would be.  They "
+"also hinder your balance, reducing your ability to dodge."
+msgstr "你拥有一对巨大的皮质翅膀。虽然你可以用它们短距离飞行，但相比更符合空气动力学的翅膀，这要更加费力。它们还会妨碍你的平衡，降低你的闪避能力。"
 
 #: data/json/mutations/mutations.json
 msgid "Butterfly Wings"
@@ -135168,10 +135295,10 @@ msgstr "蝶翼"
 #. ~ Description for {'str': 'Butterfly Wings'}
 #: data/json/mutations/mutations.json
 msgid ""
-"You have a very large pair of brightly-colored, very beautiful wings.  They "
-"can't lift you, and they make balancing tricky, but they certainly catch air"
-" and attention!"
-msgstr "你拥有一对又大又漂亮的色彩斑斓的蝶翼。靠这玩意飞不起来，也让行走时的平衡变得更难。不过至少它很拉风！"
+"You have a very large pair of brightly-colored, very beautiful wings that "
+"allow flight across short distances.  They make balancing tricky, but they "
+"certainly catch air and attention!"
+msgstr "你拥有一对色彩鲜艳、极其美丽的巨大翅膀，可以让你进行短距离飞行。它们会让保持平衡变得有些困难，但绝对既能乘风而起，又极其拉风引人注目！"
 
 #: data/json/mutations/mutations.json
 msgid "Spots"
@@ -257209,6 +257336,14 @@ msgid "Mark selected item"
 msgstr "标记所选物品"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Wear selected item"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
+msgid "Wield selected item"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
 msgid "Examine item"
 msgstr "检查物品"
 
@@ -258052,7 +258187,7 @@ msgstr "脱下物品"
 msgid "Consume Item Menu"
 msgstr "消耗物品菜单"
 
-#: data/raw/keybindings/keybindings.json
+#: data/raw/keybindings/keybindings.json src/pickup.cpp
 msgid "Wield"
 msgstr "手持物品"
 
@@ -258071,6 +258206,10 @@ msgstr "装填手持物品"
 #: data/raw/keybindings/keybindings.json
 msgid "Unload or Empty Wielded Item"
 msgstr "卸载/清空手持物品"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Unload All Items"
+msgstr ""
 
 #: data/raw/keybindings/keybindings.json
 msgid "Throw Item"
@@ -258739,7 +258878,7 @@ msgstr "更改职业名称"
 msgid "Change name"
 msgstr "更改名称"
 
-#: data/raw/keybindings/keybindings.json
+#: data/raw/keybindings/keybindings.json src/pickup.cpp
 msgid "Wear"
 msgstr "穿戴"
 
@@ -269697,17 +269836,29 @@ msgstr "配方制造：<color_cyan>%d</color>\n"
 msgid "Craftable in the dark?  <color_cyan>%s</color>\n"
 msgstr "能否在黑暗中制作？  <color_cyan>%s</color>\n"
 
+#: src/crafting_gui.cpp
+msgid "Effortless"
+msgstr "毫不费力"
+
 #: src/crafting_gui.cpp src/gamemode_defense.cpp
 msgid "Easy"
 msgstr "简单"
 
-#: src/crafting_gui.cpp src/gamemode_defense.cpp
-msgid "Hard"
-msgstr "困难"
+#: src/crafting_gui.cpp
+msgid "Awkward"
+msgstr "笨拙"
+
+#: src/crafting_gui.cpp
+msgid "Very Hard"
+msgstr "非常困难"
 
 #: src/crafting_gui.cpp
 msgid "Impossible"
 msgstr "不可能"
+
+#: src/crafting_gui.cpp
+msgid "Reasonabe"
+msgstr "尚可"
 
 #: src/crafting_gui.cpp
 msgid "<color_red>It's Over 9000!!!</color>"
@@ -270732,10 +270883,6 @@ msgstr "人物需求："
 #, c-format
 msgid "Total morale: %d"
 msgstr "总心情值：%d"
-
-#: src/debug_menu.cpp
-msgid "Player"
-msgstr "玩家"
 
 #: src/debug_menu.cpp
 msgid "[p]ick different character"
@@ -275611,6 +275758,10 @@ msgid "The %s flickers and goes dark — the pocket dimension has collapsed."
 msgstr "%s 闪烁并熄灭了——这个口袋维度已经崩溃。"
 
 #: src/game_inventory.cpp
+msgid "Unload every carried item that can be unloaded"
+msgstr ""
+
+#: src/game_inventory.cpp
 msgid "You don't have the necessary item at hand."
 msgstr "你手上没有所需的物品。"
 
@@ -276413,6 +276564,10 @@ msgstr "自定义"
 #: src/gamemode_defense.cpp src/mtype.cpp
 msgid "Medium"
 msgstr "中等"
+
+#: src/gamemode_defense.cpp
+msgid "Hard"
+msgstr "困难"
 
 #: src/gamemode_defense.cpp
 msgid "Shaun of the Dead"
@@ -288946,6 +289101,11 @@ msgid "< <color_green>Mouse View</color> >"
 msgstr "< <color_green>鼠标视图</color> >"
 
 #: src/loading_ui.cpp
+#, c-format
+msgid "by %s"
+msgstr "由 %s"
+
+#: src/loading_ui.cpp
 msgid "Loading"
 msgstr "读取中"
 
@@ -298580,10 +298740,6 @@ msgid "Messages related to tile memory (map_memory.cpp)."
 msgstr "与图块内存有关的信息 (map_memory.cpp)。"
 
 #: src/options.cpp
-msgid "NPC"
-msgstr "NPC"
-
-#: src/options.cpp
 msgid "Messages related to NPCs (npcs*.cpp)."
 msgstr "与NPC有关的信息 (npcs*.cpp) 。"
 
@@ -300132,6 +300288,14 @@ msgid ""
 "  While having a window press 'z'/'Z' to perform zoom-in/zoom-out.  Press "
 "'C' to toggle clothes preview"
 msgstr "开启时，在角色创建时在特质选项卡中显示角色预览窗口。在有窗口时，按 'z'/'Z' 进行放大/缩小。按 'C' 切换服装预览。"
+
+#: src/options.cpp
+msgid "Loading screen images"
+msgstr "载入画面图像"
+
+#: src/options.cpp
+msgid "If true, shows loading splash images when available."
+msgstr "开启时，则在有可用图片时显示加载过渡图。"
 
 #: src/options.cpp
 msgid "Memory map drawing mode"
@@ -308177,6 +308341,10 @@ msgstr "停止…"
 #: src/vehicle_use.cpp
 msgid "Stop all autopilot related activities."
 msgstr "停止与自动驾驶仪相关的行动。"
+
+#: src/vehicle_use.cpp
+msgid "What distance?"
+msgstr "距离多远？"
 
 #: src/vehicle_use.cpp
 msgid "You stop keeping track of the vehicle position."
