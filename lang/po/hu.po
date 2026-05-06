@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-05 21:54+0000\n"
+"POT-Creation-Date: 2026-05-06 18:56+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/bn-team/teams/113585/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -12836,8 +12836,8 @@ msgstr "Sprézés"
 msgid "Fill pit / tamp ground"
 msgstr "Gödör betemetése / talaj ledöngölése"
 
-#. ~ Mutation class name
-#: data/json/item_actions.json data/json/mutations/mutation_category.json
+#: data/json/item_actions.json
+msgctxt "fishing action"
 msgid "Fish"
 msgstr "Horgászás"
 
@@ -16878,9 +16878,8 @@ msgstr "barázdált"
 msgid "scratched"
 msgstr "karcolt"
 
-#: data/json/materials.json data/json/obsoletion/uncategorized.json
-#: data/mods/Aftershock/items/materials.json
-#: data/mods/MagicalNights/materials.json
+#: data/json/materials.json data/mods/MagicalNights/materials.json
+msgctxt "material damage adjective"
 msgid "cut"
 msgstr "szétvágott"
 
@@ -16950,6 +16949,12 @@ msgstr ""
 #: data/mods/MagicalNights/materials.json
 msgid "ripped"
 msgstr "kiszakadt"
+
+#: data/json/materials.json data/json/obsoletion/uncategorized.json
+#: data/mods/Aftershock/items/materials.json
+msgctxt "material damage verb"
+msgid "cut"
+msgstr "szétvágott"
 
 #: data/json/materials.json
 msgid "torn"
@@ -17084,7 +17089,8 @@ msgstr "szénhidrogén"
 msgid "Insect Flesh"
 msgstr "rovarhús"
 
-#: data/json/materials.json data/json/vitamin.json
+#: data/json/materials.json
+msgctxt "material"
 msgid "Iron"
 msgstr "vas"
 
@@ -28491,13 +28497,15 @@ msgid "scratch"
 msgstr ""
 
 #: data/json/species.json
+msgctxt "species"
 msgid "fish"
 msgid_plural "fish"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str_sp': 'fish'}
+#. ~ Description for {'ctxt': 'species', 'str_sp': 'fish'}
 #: data/json/species.json
+msgctxt "species"
 msgid "a fish"
 msgstr ""
 
@@ -28808,13 +28816,15 @@ msgid "soft scuttling"
 msgstr ""
 
 #: data/json/species.json
+msgctxt "species"
 msgid "plant"
 msgid_plural "plants"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'plant'}
+#. ~ Description for {'ctxt': 'species', 'str': 'plant'}
 #: data/json/species.json
+msgctxt "species"
 msgid "a plant"
 msgstr ""
 
@@ -28838,13 +28848,15 @@ msgid "a mollusk"
 msgstr ""
 
 #: data/json/species.json
+msgctxt "species"
 msgid "worm"
 msgid_plural "worms"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'worm'}
+#. ~ Description for {'ctxt': 'species', 'str': 'worm'}
 #: data/json/species.json
+msgctxt "species"
 msgid "a worm"
 msgstr ""
 
@@ -33965,6 +33977,11 @@ msgstr "esőfogó"
 #: data/json/vitamin.json
 msgid "Calcium"
 msgstr "Kalcium"
+
+#: data/json/vitamin.json
+msgctxt "nutrient"
+msgid "Iron"
+msgstr "vas"
 
 #: data/json/vitamin.json
 msgid "Vitamin A"
@@ -60471,7 +60488,7 @@ msgstr[1] ""
 #. ~ Use action msg for {'str': 'scouting visor'}.
 #. ~ Use action msg for {'str': 'upgraded scouting visor'}.
 #: data/json/items/tool_armor.json
-msgid "You activate your %'s night vision mode."
+msgid "You activate your %s's night vision mode."
 msgstr ""
 
 #. ~ Description for {'str': 'scouting visor'}
@@ -134676,23 +134693,25 @@ msgstr ""
 "füstölve."
 
 #: data/json/monsters/fish.json
+msgctxt "fish"
 msgid "largemouth bass"
 msgid_plural "largemouth bass"
 msgstr[0] "pisztrángsügér"
 msgstr[1] "pisztrángsügér"
 
-#. ~ Description for {'str_sp': 'largemouth bass'}
+#. ~ Description for {'ctxt': 'fish', 'str_sp': 'largemouth bass'}
 #: data/json/monsters/fish.json
 msgid "A largemouth bass.  Very popular with sports fishermen."
 msgstr "A pisztrángsügér a sporthorgászok egyik kedvenc hala."
 
 #: data/json/monsters/fish.json
+msgctxt "fish"
 msgid "smallmouth bass"
 msgid_plural "smallmouth bass"
 msgstr[0] "fekete sügér"
 msgstr[1] "fekete sügér"
 
-#. ~ Description for {'str_sp': 'smallmouth bass'}
+#. ~ Description for {'ctxt': 'fish', 'str_sp': 'smallmouth bass'}
 #: data/json/monsters/fish.json
 msgid ""
 "A smallmouth bass.  Being intolerant to pollution in the water, smallmouth "
@@ -134700,12 +134719,13 @@ msgid ""
 msgstr ""
 
 #: data/json/monsters/fish.json
+msgctxt "fish"
 msgid "striped bass"
 msgid_plural "striped bass"
 msgstr[0] "csíkos sügér"
 msgstr[1] "csíkos sügér"
 
-#. ~ Description for {'str_sp': 'striped bass'}
+#. ~ Description for {'ctxt': 'fish', 'str_sp': 'striped bass'}
 #: data/json/monsters/fish.json
 msgid ""
 "A striped bass.  Mostly a salt water fish, they migrate to fresher water to "
@@ -134714,12 +134734,13 @@ msgstr ""
 "A csíkos sügér nagyrészt sós vízi hal, csak ívásra úszik fel az édesvizekbe."
 
 #: data/json/monsters/fish.json
+msgctxt "fish"
 msgid "white bass"
 msgid_plural "white bass"
 msgstr[0] "fehér sügér"
 msgstr[1] "fehér sügér"
 
-#. ~ Description for {'str_sp': 'white bass'}
+#. ~ Description for {'ctxt': 'fish', 'str_sp': 'white bass'}
 #: data/json/monsters/fish.json
 msgid ""
 "A white bass.  Common to the region, a slab-sided and spiny-rayed little "
@@ -134727,12 +134748,13 @@ msgid ""
 msgstr ""
 
 #: data/json/monsters/fish.json
+msgctxt "fish"
 msgid "perch"
 msgid_plural "perches"
 msgstr[0] "sügér"
 msgstr[1] "sügér"
 
-#. ~ Description for {'str': 'perch', 'str_pl': 'perches'}
+#. ~ Description for {'ctxt': 'fish', 'str': 'perch', 'str_pl': 'perches'}
 #: data/json/monsters/fish.json
 msgid ""
 "A small sprightly perch.  A very bony fish, still got some tasty meat on it "
@@ -134831,12 +134853,13 @@ msgid "A redear sunfish.  A small fish related to bass or bluegill."
 msgstr ""
 
 #: data/json/monsters/fish.json
+msgctxt "fish"
 msgid "rock bass"
 msgid_plural "rock bass"
 msgstr[0] "kövi sügér"
 msgstr[1] "kövi sügér"
 
-#. ~ Description for {'str_sp': 'rock bass'}
+#. ~ Description for {'ctxt': 'fish', 'str_sp': 'rock bass'}
 #: data/json/monsters/fish.json
 msgid ""
 "A rock bass.  Related to sunfish, this tiny fish has a camouflage-like "
@@ -134844,12 +134867,13 @@ msgid ""
 msgstr ""
 
 #: data/json/monsters/fish.json
+msgctxt "fish"
 msgid "calico bass"
 msgid_plural "calico bass"
 msgstr[0] "pomoxis"
 msgstr[1] "pomoxis"
 
-#. ~ Description for {'str_sp': 'calico bass'}
+#. ~ Description for {'ctxt': 'fish', 'str_sp': 'calico bass'}
 #: data/json/monsters/fish.json
 msgid "A calico bass.  A medium-sized fish also known as a 'Crappie'."
 msgstr ""
@@ -134950,12 +134974,13 @@ msgid "A white sucker.  It has a streamlined body with a round mouth."
 msgstr ""
 
 #: data/json/monsters/fish.json
+msgctxt "fish"
 msgid "carp"
 msgid_plural "carps"
 msgstr[0] "ponty"
 msgstr[1] "ponty"
 
-#. ~ Description for {'str': 'carp'}
+#. ~ Description for {'ctxt': 'fish', 'str': 'carp'}
 #: data/json/monsters/fish.json
 msgid ""
 "A golden-yellow common carp.  Some people think they don't taste great, but "
@@ -142429,6 +142454,11 @@ msgstr "Feladta a merev emberi szokásokat."
 msgctxt "memorial_female"
 msgid "Gave up on rigid human norms."
 msgstr "Feladta a merev emberi szokásokat."
+
+#. ~ Mutation class name
+#: data/json/mutations/mutation_category.json
+msgid "Fish"
+msgstr "Horgászás"
 
 #. ~ Mutation class: Fish mutagen_message
 #: data/json/mutations/mutation_category.json
@@ -156269,7 +156299,8 @@ msgstr "seggtitán"
 msgid "piece of shit"
 msgstr "szarcsimbók"
 
-#: data/json/npcs/talk_tags.json data/json/snippets/music.json
+#: data/json/npcs/talk_tags.json
+msgctxt "insult"
 msgid "punk"
 msgstr "punk"
 
@@ -181217,12 +181248,12 @@ msgstr ""
 msgid "Several supply crates were dropped here."
 msgstr ""
 
-#. ~ Military time, e.g.  2359
-#: data/json/overmap/map_extras.json src/options.cpp
+#: data/json/overmap/map_extras.json
+msgctxt "map extra"
 msgid "Military"
 msgstr "Katonai"
 
-#. ~ Description for Military
+#. ~ Description for {'ctxt': 'map extra', 'str': 'Military'}
 #: data/json/overmap/map_extras.json
 msgid "Several corpses of soldiers are here."
 msgstr ""
@@ -189589,6 +189620,11 @@ msgstr ""
 #: data/json/snippets/music.json
 msgid "ska"
 msgstr "ska"
+
+#: data/json/snippets/music.json
+msgctxt "music genre"
+msgid "punk"
+msgstr "punk"
 
 #: data/json/snippets/music.json
 msgid "thrash"
@@ -296535,7 +296571,8 @@ msgid "This tastes really weird!  You're not sure it's good for you…"
 msgstr ""
 
 #: src/iuse.cpp
-msgid "You doubt someone would want to eat % 1$s."
+#, c-format
+msgid "You doubt someone would want to eat %1$s."
 msgstr ""
 
 #: src/iuse.cpp
@@ -312476,6 +312513,12 @@ msgstr ""
 #: src/options.cpp
 msgid "12h"
 msgstr "12h"
+
+#. ~ Military time, e.g.  2359
+#: src/options.cpp
+msgctxt "time format"
+msgid "Military"
+msgstr "Katonai"
 
 #. ~ 24h time, e.g.  23:59
 #: src/options.cpp
