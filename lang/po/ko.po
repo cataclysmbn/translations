@@ -9691,7 +9691,7 @@ msgstr "포식함"
 
 #. ~ Description of effect 'Well Fed'.
 #: data/json/effects.json
-#, c-format
+#, no-c-format
 msgid ""
 "This animal has been fed quality food and is healthier and more productive. "
 "It matures 30% faster, produces 30% more offspring per birth, and generates "
@@ -17363,11 +17363,16 @@ msgstr "찍힌"
 msgid "scratched"
 msgstr "살짝 긁힌"
 
-#: data/json/materials.json data/json/obsoletion/uncategorized.json
-#: data/mods/Aftershock/items/materials.json
-#: data/mods/MagicalNights/materials.json
+#: data/json/materials.json data/mods/MagicalNights/materials.json
+msgctxt "material damage adjective"
 msgid "cut"
 msgstr "약간 잘라진"
+
+#: data/json/materials.json data/json/obsoletion/uncategorized.json
+#: data/mods/Aftershock/items/materials.json
+msgctxt "material damage verb"
+msgid "cut"
+msgstr "잘린"
 
 #: data/json/materials.json data/json/obsoletion/uncategorized.json
 #: data/mods/MagicalNights/materials.json
@@ -17569,9 +17574,15 @@ msgstr "탄화수소"
 msgid "Insect Flesh"
 msgstr "곤충 육질"
 
-#: data/json/materials.json data/json/vitamin.json
+#: data/json/materials.json
+msgctxt "material"
 msgid "Iron"
 msgstr "철"
+
+#: data/json/vitamin.json
+msgctxt "nutrient"
+msgid "Iron"
+msgstr "철분"
 
 #: data/json/materials.json
 msgid "Junk Food"
@@ -149546,9 +149557,15 @@ msgstr "찐따"
 msgid "piece of shit"
 msgstr "허접"
 
-#: data/json/npcs/talk_tags.json data/json/snippets/music.json
+#: data/json/npcs/talk_tags.json
+msgctxt "insult"
 msgid "punk"
-msgstr "요들"
+msgstr "양아치"
+
+#: data/json/snippets/music.json
+msgctxt "music genre"
+msgid "punk"
+msgstr "펑크"
 
 #: data/json/npcs/talk_tags.json
 msgid "scumbag"
@@ -175854,9 +175871,15 @@ msgid "Several supply crates were dropped here."
 msgstr "보급상자 몇 개가 이곳에 떨어졌습니다."
 
 #. ~ Military time, e.g.  2359
-#: data/json/overmap/map_extras.json src/options.cpp
+#: src/options.cpp
+msgctxt "time format"
 msgid "Military"
-msgstr "군대"
+msgstr "군용 시간"
+
+#: data/json/overmap/map_extras.json
+msgctxt "map extra"
+msgid "Military"
+msgstr "군인 시체"
 
 #. ~ Description for Military
 #: data/json/overmap/map_extras.json
@@ -308467,10 +308490,10 @@ msgid "Verbose crafting/construction speed modifiers"
 msgstr "자세한 제작/건설 속도 수정치"
 
 #: src/options.cpp
-#, c-format
+#, no-c-format
 msgid ""
 "If true, show 100% crafting/construction speed modifiers in the info panels."
-msgstr "활성화되면 정보 패널에 건설/제작 수정치를 완전히 표시합니다."
+msgstr "활성화되면 정보 패널에 100% 건설/제작 속도 수정치를 표시합니다."
 
 #: src/options.cpp
 msgid "Autoselect if exactly one valid target"
@@ -313659,7 +313682,7 @@ msgid "Cost: %s %s (Current: %s)"
 msgstr "비용: %s %s (현재: %s)"
 
 #: src/ranged.cpp
-#, c-format
+#, no-c-format
 msgid "0.0 % Failure Chance"
 msgstr "0.0 % 실패율"
 
