@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-06 18:56+0000\n"
+"POT-Creation-Date: 2026-05-07 21:25+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -171510,13 +171510,9 @@ msgid ""
 "You have grown noticeably taller and broader.  Much of it is useful muscle "
 "mass (Strength +2), but you find it throws off your balance and you get in "
 "your own way (+10 torso, arm, and leg encumbrance).  You can also fire heavy"
-" weapons without the aid of terrain, at a penalty to accuracy."
+" weapons without the aid of terrain, at a penalty to accuracy. You gain 5% "
+"to all hit points with all the increased mass."
 msgstr ""
-"Вы стали заметно выше и шире. По большей части, за счёт полезной мышечной "
-"массы (сила +2), но вы обнаруживаете, что это вредит вашему балансу и "
-"несколько мешает (+10 к стеснению торса, рук и ног). Для стрельбы с тяжёлого"
-" оружия вам больше не нужно ставить его на какой-то упор, но всё ещё "
-"сохраняется штраф к точности."
 
 #: data/json/mutations/mutations.json
 #: data/mods/Aftershock/mutations/obsolete.json src/mtype.cpp
@@ -171528,11 +171524,9 @@ msgstr "Крупный размер"
 msgid ""
 "You carry your rugged body with the dignity you deserve.  Strength +2, and "
 "you can fire heavy weapons without the aid of terrain at the cost of "
-"accuracy."
+"accuracy. You gain 10% to all hit points with all the increased mass because"
+" you're better at controlling how it soaks up damage."
 msgstr ""
-"Вы обладаете крепким телом с достоинством, которого заслуживаете. Сила +2, и"
-" вы можете стрелять из тяжёлого оружия без поддержки рельефа местности, но с"
-" потерей точности."
 
 #: data/json/mutations/mutations.json
 msgid "Freakishly Huge"
@@ -171544,13 +171538,9 @@ msgid ""
 "You have grown even more massive, to the point where you cannot usefully fit"
 " into human-sized clothing or vehicles.  Much of it is powerful muscle mass "
 "(Strength +4), but it's a real pain to haul around.  On the plus side, "
-"firing heavy weapons without mounting appropriate terrain is a bit easier."
+"firing heavy weapons without mounting appropriate terrain is a bit easier. "
+"You gain 15% to all hit points with all the increased mass."
 msgstr ""
-"Ваша масса увеличилась настолько, что вы больше не можете носить одежду и "
-"пользоваться транспортными средствами, рассчитанными на людей. Большая часть"
-" этой массы — это огромные мышцы (Сила +4), но с ними очень неудобно "
-"передвигаться. С другой стороны, стрелять из тяжёлого оружия без подходящей "
-"опоры стало немного проще."
 
 #: data/json/mutations/mutations.json src/mtype.cpp
 msgid "Huge"
@@ -171561,11 +171551,9 @@ msgstr "Огромный размер"
 msgid ""
 "Your cardiovascular system has caught up with your muscular physique, so who"
 " needs pathetic human cars?  Strength +4, and you can fire heavy weapons "
-"unsupported more easily."
+"unsupported more easily. You gain 20% to all hit points with all the "
+"increased mass because you're better at controlling how it soaks up damage."
 msgstr ""
-"Ваша сердечно-сосудистая система приспособилась к вашему мощному телу. Так, "
-"кто ещё нуждается в жалких человеческих автомобилях? Сила +4, и вам гораздо "
-"легче вести огонь из тяжёлого оружия без соответствующей опоры."
 
 #: data/json/mutations/mutations.json
 msgid "Strong"
@@ -358551,6 +358539,68 @@ msgid ""
 msgstr ""
 
 #: src/options.cpp
+msgid "Handle occlusion by high sprites"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Draw tall sprites normal (Off), retracted/transparent (On), or automatically"
+" retracting/transparent near the player (Auto)."
+msgstr ""
+
+#: src/options.cpp src/panels.cpp
+msgid "Off"
+msgstr "Выкл"
+
+#: src/options.cpp src/panels.cpp
+msgid "On"
+msgstr "Вкл"
+
+#: src/options.cpp
+msgid "Auto"
+msgstr ""
+
+#: src/options.cpp
+msgid "Prevent occlusion via transparency"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Prevent high-sprite occlusion by using semi-transparent *_transparent tile "
+"variants when available."
+msgstr ""
+
+#: src/options.cpp
+msgid "Prevent occlusion via retraction"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Prevent high-sprite occlusion by retracting sprites that define retracted "
+"offsets."
+msgstr ""
+
+#: src/options.cpp
+msgid "Minimum distance for automatic occlusion handling"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Minimum distance for automatic occlusion handling. Values above zero "
+"override tileset settings."
+msgstr ""
+
+#: src/options.cpp
+msgid "Maximum distance for automatic occlusion handling"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Maximum distance for automatic occlusion handling. Values above zero "
+"override tileset settings."
+msgstr ""
+
+#: src/options.cpp
 msgid "LOS Cache Size"
 msgstr "Размер кэша линии видимости"
 
@@ -358990,10 +359040,6 @@ msgstr "Интеллект"
 #: src/options.cpp
 msgid "IntCap"
 msgstr "ИнтОгр"
-
-#: src/options.cpp src/panels.cpp
-msgid "Off"
-msgstr "Выкл"
 
 #: src/options.cpp
 msgid "Crafting range"
@@ -361008,10 +361054,6 @@ msgstr "Энерг:"
 #: src/panels.cpp
 msgid "Safe :"
 msgstr "Безоп:"
-
-#: src/panels.cpp
-msgid "On"
-msgstr "Вкл"
 
 #: src/panels.cpp
 msgid "Place: "
