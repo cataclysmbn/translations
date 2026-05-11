@@ -1,0 +1,87 @@
+name: Pull translations from Transifex
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 21 * * *"
+
+concurrency:
+  group: pull-translations
+  cancel-in-progress: true
+
+env:
+  TRANSIFEX_CLI_VERSION: v1.6.17
+
+jobs:
+  keepalive:
+    name: Keep scheduled workflow alive
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/keepalive-workflow@v2
+
+  pull-translations:
+    name: Pull and commit translations
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Validate secrets
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+        run: |
+          test -n "${TX_TOKEN}" || { echo "::error::TX_TOKEN is required to pull translations from Transifex"; exit 1; }
+
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Transifex CLI
+        run: |
+          curl -sL "https://github.com/transifex/cli/releases/download/${TRANSIFEX_CLI_VERSION}/tx-linux-amd64.tar.gz" | sudo tar zxvf - -C /usr/local/bin tx
+
+      - name: Pull translations
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+        run: |
+          mkdir -p lang/po
+          tx pull --force --all
+
+      - name: Verify translation paths
+        run: |
+          po_count=$(find lang/po -maxdepth 1 -type f -name '*.po' | wc -l)
+          if [ "${po_count}" -eq 0 ]; then
+            echo "::error::No .po files were downloaded to lang/po"
+            exit 1
+          fi
+
+          unexpected_po=$(find . -path './.git' -prune -o -type f -name '*.po' ! -path './lang/po/*.po' -print)
+          if [ -n "${unexpected_po}" ]; then
+            echo "::error::.po files must be downloaded to lang/po/<lang>.po, matching the old Cataclysm-BN layout"
+            echo "${unexpected_po}"
+            exit 1
+          fi
+
+      - name: Show changes
+        run: |
+          git status --short
+          git diff --numstat
+
+      - name: Commit translation updates
+        run: |
+          git add -A -- lang/po
+
+          if git diff --cached --quiet; then
+            echo "No translation changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "feat(i18n): routine i18n updates on $(date -u +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
