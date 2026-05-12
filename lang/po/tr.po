@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-10 23:37+0000\n"
+"POT-Creation-Date: 2026-05-11 06:05+0000\n"
 "Last-Translator: Arif Öcal, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -61827,8 +61827,8 @@ msgstr[1] "jack o'lanternlar"
 #. 'battletorches'}.
 #. ~ Use action menu_text for {'str': 'candle'}.
 #: data/json/items/items_holiday.json data/json/items/melee/bludgeons.json
-#: data/json/items/tool/lighting.json src/crafting_gui.cpp
-#: src/player_activity.cpp src/veh_interact.cpp
+#: data/json/items/tool/lighting.json src/activity_actor.cpp
+#: src/crafting_gui.cpp src/player_activity.cpp src/veh_interact.cpp
 msgid "Light"
 msgstr "Işık"
 
@@ -154509,6 +154509,15 @@ msgid "You have a dark brown skin tone."
 msgstr "Koyu kahverengi bir cilt tonuna sahipsiniz."
 
 #: data/json/mutations/mutation_appearance.json
+msgid "Skin tone: lighter"
+msgstr ""
+
+#. ~ Description for {'str': 'Skin tone: lighter'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have a lighter peach skin tone."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
 msgid "Skin tone: light"
 msgstr "Cilt tonu: açık"
 
@@ -201111,8 +201120,8 @@ msgid "2-story motel"
 msgstr "2 katlı motel"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
-msgid "Large Office Tower"
-msgstr "Büyük Ofis Kulesi"
+msgid "large office tower"
+msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
 #: data/mods/alt_map_key/overmap_terrain.json
@@ -299746,6 +299755,54 @@ msgstr "%s'den zanaat yapmak için geriye bir şey kalmadı."
 msgid "There is nothing left of the %s <npcname> was crafting."
 msgstr "%s'den <npcname>'in zanaat yaptığı bir şey kalmadı."
 
+#: src/activity_actor.cpp src/player_activity.cpp
+#, c-format
+msgid "Time left: %s"
+msgstr "Kalan süre: %s"
+
+#: src/activity_actor.cpp src/player_activity.cpp
+msgid "Crafting speed multipliers:\n"
+msgstr "Üretim hızı çarpanları:\n"
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Total"
+msgstr "Toplam"
+
+#: src/activity_actor.cpp src/bonuses.cpp src/panels.cpp
+#: src/player_activity.cpp
+msgid "Speed"
+msgstr "Hız"
+
+#: src/activity_actor.cpp src/crafting_gui.cpp src/player_activity.cpp
+msgid "Workbench"
+msgstr "Çalışma Tezgahı"
+
+#: src/activity_actor.cpp src/crafting_gui.cpp src/morale.cpp
+#: src/player_activity.cpp
+msgid "Morale"
+msgstr "Moral"
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Tools"
+msgstr "Araçlar"
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Assistants"
+msgstr "Asistanlar"
+
+#: src/activity_actor.cpp src/player_activity.cpp
+#, c-format
+msgid ""
+"%s: %s\n"
+"\n"
+"%s\n"
+"\n"
+"%s"
+msgstr "%s: %s"
+
 #: src/activity_actor.cpp
 #, c-format
 msgid "%s did not find an unfinished construction at the activity spot."
@@ -300744,9 +300801,12 @@ msgstr "%s ile oynamak moralinizi biraz yükseltti."
 
 #: src/activity_handlers.cpp
 #, c-format
-msgid ""
-"Training your %s has finally succeeded, they should be less skittish in "
-"combat now."
+msgid "You lack the skill to train %s effectively."
+msgstr ""
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid "Training your %s has paid off!  They are now at training level %d/%d."
 msgstr ""
 
 #: src/activity_handlers.cpp
@@ -305139,10 +305199,6 @@ msgstr "%s etkinleştirilemez!"
 msgid "Accuracy"
 msgstr "Doğruluk"
 
-#: src/bonuses.cpp src/panels.cpp src/player_activity.cpp
-msgid "Speed"
-msgstr "Hız"
-
 #: src/bonuses.cpp
 msgid "Move cost"
 msgstr "Hareket maliyeti"
@@ -309099,18 +309155,6 @@ msgid "> %1$s: <color_%2$s>%3$d%%</color>"
 msgstr "> %1$s: <color_%2$s>%3$d%%</color>"
 
 #: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Total"
-msgstr "Toplam"
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Assistants"
-msgstr "Asistanlar"
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Tools"
-msgstr "Araçlar"
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
 msgid "Traits"
 msgstr "Özellikler"
 
@@ -310236,14 +310280,6 @@ msgstr "Toplu zaman tasarrufu: <color_cyan>%s</color>\n"
 #, c-format
 msgid "> %1$s: <color_%2$s>%3$d%%</color>\n"
 msgstr "> %1$s: <color_%2$s>%3$d%%</color>\n"
-
-#: src/crafting_gui.cpp src/player_activity.cpp
-msgid "Workbench"
-msgstr "Çalışma Tezgahı"
-
-#: src/crafting_gui.cpp src/morale.cpp src/player_activity.cpp
-msgid "Morale"
-msgstr "Moral"
 
 #: src/crafting_gui.cpp
 msgid "Speed modifiers: <color_cyan>none</color>\n"
@@ -335957,7 +335993,27 @@ msgstr "%s ile oyna"
 
 #: src/monexamine.cpp
 #, c-format
-msgid "Train %s"
+msgid "Train %s (cannot be trained)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (level %d/%d - fully trained)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (requires survival %d)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (requires well-fed)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (level %d/%d)"
 msgstr ""
 
 #: src/monexamine.cpp
@@ -336813,6 +336869,33 @@ msgid "It has a head."
 msgstr "Bir kafası var."
 
 #: src/monster.cpp
+msgid "much"
+msgstr ""
+
+#: src/monster.cpp
+msgid "noticeably"
+msgstr ""
+
+#: src/monster.cpp
+msgid "slightly"
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s tougher than normal."
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s stronger than normal."
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s more agile than normal."
+msgstr ""
+
+#: src/monster.cpp
 msgid "In melee, you can expect to:"
 msgstr "Yakın dövüşte şunları bekleyebilirsiniz:"
 
@@ -337439,6 +337522,22 @@ msgstr "Oh, evet! İşte bu!"
 msgid "First temperature modifier can't be higher than the second"
 msgstr "İlk sıcaklık değiştiricisi ikinci olandan yüksek olamaz"
 
+#: src/mutation_type.cpp
+msgid "skin color"
+msgstr ""
+
+#: src/mutation_type.cpp
+msgid "eye color"
+msgstr ""
+
+#: src/mutation_type.cpp
+msgid "hair style"
+msgstr ""
+
+#: src/mutation_type.cpp
+msgid "hair color"
+msgstr ""
+
 #: src/mutation_ui.cpp
 msgid "Reassigning."
 msgstr "Yeniden atama yapılıyor."
@@ -337850,8 +337949,9 @@ msgid "Your profession of %s prevents you from removing this trait."
 msgstr "%s mesleğiniz bu özelliği kaldırmanızı engelliyor."
 
 #: src/newcharacter.cpp
-msgid "You must have a trait of this type."
-msgstr "Bu türden bir özelliğe sahip olmalısınız."
+#, c-format
+msgid "You need to select 1 %s."
+msgstr ""
 
 #: src/newcharacter.cpp
 msgid "You already picked a conflicting trait!"
@@ -345199,27 +345299,8 @@ msgstr "%s…"
 
 #: src/player_activity.cpp
 #, c-format
-msgid "Time left: %s"
-msgstr "Kalan süre: %s"
-
-#: src/player_activity.cpp
-msgid "Crafting speed multipliers:\n"
-msgstr "Üretim hızı çarpanları:\n"
-
-#: src/player_activity.cpp
-#, c-format
 msgid "%s: %s\n"
 msgstr "%s: %s\n"
-
-#: src/player_activity.cpp
-#, c-format
-msgid ""
-"%s: %s\n"
-"\n"
-"%s\n"
-"\n"
-"%s"
-msgstr "%s: %s"
 
 #: src/player_activity.cpp
 #, c-format

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-10 23:37+0000\n"
+"POT-Creation-Date: 2026-05-11 06:05+0000\n"
 "Last-Translator: Krwak, 2026\n"
 "Language-Team: Slovak (Slovakia) (https://app.transifex.com/bn-team/teams/113585/sk_SK/)\n"
 "MIME-Version: 1.0\n"
@@ -56692,8 +56692,8 @@ msgstr[3] ""
 #. 'battletorches'}.
 #. ~ Use action menu_text for {'str': 'candle'}.
 #: data/json/items/items_holiday.json data/json/items/melee/bludgeons.json
-#: data/json/items/tool/lighting.json src/crafting_gui.cpp
-#: src/player_activity.cpp src/veh_interact.cpp
+#: data/json/items/tool/lighting.json src/activity_actor.cpp
+#: src/crafting_gui.cpp src/player_activity.cpp src/veh_interact.cpp
 msgid "Light"
 msgstr ""
 
@@ -148389,6 +148389,15 @@ msgid "You have a dark brown skin tone."
 msgstr ""
 
 #: data/json/mutations/mutation_appearance.json
+msgid "Skin tone: lighter"
+msgstr ""
+
+#. ~ Description for {'str': 'Skin tone: lighter'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have a lighter peach skin tone."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
 msgid "Skin tone: light"
 msgstr ""
 
@@ -188662,7 +188671,7 @@ msgid "2-story motel"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
-msgid "Large Office Tower"
+msgid "large office tower"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
@@ -281988,6 +281997,54 @@ msgstr ""
 msgid "There is nothing left of the %s <npcname> was crafting."
 msgstr ""
 
+#: src/activity_actor.cpp src/player_activity.cpp
+#, c-format
+msgid "Time left: %s"
+msgstr ""
+
+#: src/activity_actor.cpp src/player_activity.cpp
+msgid "Crafting speed multipliers:\n"
+msgstr ""
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Total"
+msgstr ""
+
+#: src/activity_actor.cpp src/bonuses.cpp src/panels.cpp
+#: src/player_activity.cpp
+msgid "Speed"
+msgstr ""
+
+#: src/activity_actor.cpp src/crafting_gui.cpp src/player_activity.cpp
+msgid "Workbench"
+msgstr ""
+
+#: src/activity_actor.cpp src/crafting_gui.cpp src/morale.cpp
+#: src/player_activity.cpp
+msgid "Morale"
+msgstr ""
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Tools"
+msgstr ""
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Assistants"
+msgstr ""
+
+#: src/activity_actor.cpp src/player_activity.cpp
+#, c-format
+msgid ""
+"%s: %s\n"
+"\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+
 #: src/activity_actor.cpp
 #, c-format
 msgid "%s did not find an unfinished construction at the activity spot."
@@ -282927,9 +282984,12 @@ msgstr ""
 
 #: src/activity_handlers.cpp
 #, c-format
-msgid ""
-"Training your %s has finally succeeded, they should be less skittish in "
-"combat now."
+msgid "You lack the skill to train %s effectively."
+msgstr ""
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid "Training your %s has paid off!  They are now at training level %d/%d."
 msgstr ""
 
 #: src/activity_handlers.cpp
@@ -287236,10 +287296,6 @@ msgstr ""
 msgid "Accuracy"
 msgstr ""
 
-#: src/bonuses.cpp src/panels.cpp src/player_activity.cpp
-msgid "Speed"
-msgstr ""
-
 #: src/bonuses.cpp
 msgid "Move cost"
 msgstr ""
@@ -291128,18 +291184,6 @@ msgid "> %1$s: <color_%2$s>%3$d%%</color>"
 msgstr ""
 
 #: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Total"
-msgstr ""
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Assistants"
-msgstr ""
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Tools"
-msgstr ""
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
 msgid "Traits"
 msgstr ""
 
@@ -292247,14 +292291,6 @@ msgstr ""
 #: src/crafting_gui.cpp
 #, c-format
 msgid "> %1$s: <color_%2$s>%3$d%%</color>\n"
-msgstr ""
-
-#: src/crafting_gui.cpp src/player_activity.cpp
-msgid "Workbench"
-msgstr ""
-
-#: src/crafting_gui.cpp src/morale.cpp src/player_activity.cpp
-msgid "Morale"
 msgstr ""
 
 #: src/crafting_gui.cpp
@@ -317287,7 +317323,27 @@ msgstr ""
 
 #: src/monexamine.cpp
 #, c-format
-msgid "Train %s"
+msgid "Train %s (cannot be trained)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (level %d/%d - fully trained)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (requires survival %d)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (requires well-fed)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (level %d/%d)"
 msgstr ""
 
 #: src/monexamine.cpp
@@ -318142,6 +318198,33 @@ msgid "It has a head."
 msgstr ""
 
 #: src/monster.cpp
+msgid "much"
+msgstr ""
+
+#: src/monster.cpp
+msgid "noticeably"
+msgstr ""
+
+#: src/monster.cpp
+msgid "slightly"
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s tougher than normal."
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s stronger than normal."
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s more agile than normal."
+msgstr ""
+
+#: src/monster.cpp
 msgid "In melee, you can expect to:"
 msgstr ""
 
@@ -318756,6 +318839,22 @@ msgstr ""
 msgid "First temperature modifier can't be higher than the second"
 msgstr ""
 
+#: src/mutation_type.cpp
+msgid "skin color"
+msgstr ""
+
+#: src/mutation_type.cpp
+msgid "eye color"
+msgstr ""
+
+#: src/mutation_type.cpp
+msgid "hair style"
+msgstr ""
+
+#: src/mutation_type.cpp
+msgid "hair color"
+msgstr ""
+
 #: src/mutation_ui.cpp
 msgid "Reassigning."
 msgstr ""
@@ -319135,7 +319234,8 @@ msgid "Your profession of %s prevents you from removing this trait."
 msgstr ""
 
 #: src/newcharacter.cpp
-msgid "You must have a trait of this type."
+#, c-format
+msgid "You need to select 1 %s."
 msgstr ""
 
 #: src/newcharacter.cpp
@@ -326007,26 +326107,7 @@ msgstr ""
 
 #: src/player_activity.cpp
 #, c-format
-msgid "Time left: %s"
-msgstr ""
-
-#: src/player_activity.cpp
-msgid "Crafting speed multipliers:\n"
-msgstr ""
-
-#: src/player_activity.cpp
-#, c-format
 msgid "%s: %s\n"
-msgstr ""
-
-#: src/player_activity.cpp
-#, c-format
-msgid ""
-"%s: %s\n"
-"\n"
-"%s\n"
-"\n"
-"%s"
 msgstr ""
 
 #: src/player_activity.cpp

@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-10 23:37+0000\n"
+"POT-Creation-Date: 2026-05-11 17:55+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -54951,8 +54951,8 @@ msgstr[0] "傑克南瓜燈"
 #. 'battletorches'}.
 #. ~ Use action menu_text for {'str': 'candle'}.
 #: data/json/items/items_holiday.json data/json/items/melee/bludgeons.json
-#: data/json/items/tool/lighting.json src/crafting_gui.cpp
-#: src/player_activity.cpp src/veh_interact.cpp
+#: data/json/items/tool/lighting.json src/activity_actor.cpp
+#: src/crafting_gui.cpp src/player_activity.cpp src/veh_interact.cpp
 msgid "Light"
 msgstr "燈光"
 
@@ -130623,6 +130623,15 @@ msgid "You have a dark brown skin tone."
 msgstr "你的膚色是深棕色。"
 
 #: data/json/mutations/mutation_appearance.json
+msgid "Skin tone: lighter"
+msgstr "肤色：较浅"
+
+#. ~ Description for {'str': 'Skin tone: lighter'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have a lighter peach skin tone."
+msgstr "您的肤色属于浅蜜桃色。"
+
+#: data/json/mutations/mutation_appearance.json
 msgid "Skin tone: light"
 msgstr "膚色：淺色"
 
@@ -171050,7 +171059,7 @@ msgid "2-story motel"
 msgstr "雙層旅館"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
-msgid "Large Office Tower"
+msgid "large office tower"
 msgstr "辦公大樓"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
@@ -243022,18 +243031,18 @@ msgstr "将附近的生物拉向你。"
 
 #: data/mods/MagicalNights/Spells/magus.json
 msgid "Mana Bomb"
-msgstr ""
+msgstr "法力炸弹"
 
 #. ~ Description for {'str': 'Mana Bomb'}
 #: data/mods/MagicalNights/Spells/magus.json
 msgid ""
 "A sphere of very concentrated magical power that erases everything in small "
 "area."
-msgstr ""
+msgstr "极度浓缩的魔法能量球，能抹除小范围内的一切事物。"
 
 #: data/mods/MagicalNights/Spells/magus.json
 msgid "Phase Jump"
-msgstr ""
+msgstr "相位跳跃"
 
 #. ~ Description for {'str': 'Phase Jump'}
 #. ~ Description for {'str': 'Scroll of Phase Jump', 'str_pl': 'Scrolls of
@@ -243041,7 +243050,7 @@ msgstr ""
 #: data/mods/MagicalNights/Spells/magus.json
 #: data/mods/MagicalNights/items/spell_scrolls.json
 msgid "Teleports you a short distance in chosen direction."
-msgstr ""
+msgstr "向选定方向传送一小段距离。"
 
 #. ~ Description for {'str': 'Crystallize Mana'}
 #: data/mods/MagicalNights/Spells/manatouched.json
@@ -247227,18 +247236,18 @@ msgstr[0] "强力拉引卷轴"
 #: data/mods/MagicalNights/items/spell_scrolls.json
 msgid "Scroll of Mana Bomb"
 msgid_plural "Scrolls of Mana Bomb"
-msgstr[0] ""
+msgstr[0] "法力炸弹卷轴"
 
 #. ~ Description for {'str': 'Scroll of Mana Bomb', 'str_pl': 'Scrolls of Mana
 #. Bomb'}
 #: data/mods/MagicalNights/items/spell_scrolls.json
 msgid "As if normal nukes weren't enough."
-msgstr ""
+msgstr "好像嫌普通核弹的威力还不够似的。"
 
 #: data/mods/MagicalNights/items/spell_scrolls.json
 msgid "Scroll of Phase Jump"
 msgid_plural "Scrolls of Phase Jump"
-msgstr[0] ""
+msgstr[0] "相位跳跃卷轴"
 
 #: data/mods/MagicalNights/items/spellbooks.json
 msgid "A Technomancer's Guide to Debugging C:DDA"
@@ -259941,6 +259950,59 @@ msgstr "%s 中没有足够用来制造的物品。"
 msgid "There is nothing left of the %s <npcname> was crafting."
 msgstr "%s 中没有足够 <npcname> 用来制造的物品。"
 
+#: src/activity_actor.cpp src/player_activity.cpp
+#, c-format
+msgid "Time left: %s"
+msgstr "剩余时间：%s"
+
+#: src/activity_actor.cpp src/player_activity.cpp
+msgid "Crafting speed multipliers:\n"
+msgstr "制造速度加成:\n"
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Total"
+msgstr "共计"
+
+#: src/activity_actor.cpp src/bonuses.cpp src/panels.cpp
+#: src/player_activity.cpp
+msgid "Speed"
+msgstr "速度"
+
+#: src/activity_actor.cpp src/crafting_gui.cpp src/player_activity.cpp
+msgid "Workbench"
+msgstr "工作台"
+
+#: src/activity_actor.cpp src/crafting_gui.cpp src/morale.cpp
+#: src/player_activity.cpp
+msgid "Morale"
+msgstr "士氣"
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Tools"
+msgstr "工具"
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Assistants"
+msgstr "协助"
+
+#: src/activity_actor.cpp src/player_activity.cpp
+#, c-format
+msgid ""
+"%s: %s\n"
+"\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"%s: %s\n"
+"\n"
+"%s\n"
+"\n"
+"%s"
+
 #: src/activity_actor.cpp
 #, c-format
 msgid "%s did not find an unfinished construction at the activity spot."
@@ -260865,10 +260927,13 @@ msgstr "跟你的%s一起玩之後，精神振奮了一點。"
 
 #: src/activity_handlers.cpp
 #, c-format
-msgid ""
-"Training your %s has finally succeeded, they should be less skittish in "
-"combat now."
-msgstr "对你的 %s 的训练终于成功了，它们现在在战斗中应该不会那么容易受惊了。"
+msgid "You lack the skill to train %s effectively."
+msgstr "你缺乏有效训练 %s 的技能。"
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid "Training your %s has paid off!  They are now at training level %d/%d."
+msgstr "对 %s 的训练见效了！目前的训练等级为 %d/%d。"
 
 #: src/activity_handlers.cpp
 #, c-format
@@ -265183,10 +265248,6 @@ msgstr "你无法激活 %s！要阅读 %s 的说明，请按\"%s\"。"
 msgid "Accuracy"
 msgstr "命中率"
 
-#: src/bonuses.cpp src/panels.cpp src/player_activity.cpp
-msgid "Speed"
-msgstr "速度"
-
 #: src/bonuses.cpp
 msgid "Move cost"
 msgstr "行動點數消耗"
@@ -269088,18 +269149,6 @@ msgid "> %1$s: <color_%2$s>%3$d%%</color>"
 msgstr "> %1$s: <color_%2$s>%3$d%%</color>"
 
 #: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Total"
-msgstr "共计"
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Assistants"
-msgstr "协助"
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Tools"
-msgstr "工具"
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
 msgid "Traits"
 msgstr "特性"
 
@@ -270195,14 +270244,6 @@ msgstr "批量耗时减少：<color_cyan>%s</color>\n"
 #, c-format
 msgid "> %1$s: <color_%2$s>%3$d%%</color>\n"
 msgstr "> %1$s: <color_%2$s>%3$d%%</color>\n"
-
-#: src/crafting_gui.cpp src/player_activity.cpp
-msgid "Workbench"
-msgstr "工作台"
-
-#: src/crafting_gui.cpp src/morale.cpp src/player_activity.cpp
-msgid "Morale"
-msgstr "士氣"
 
 #: src/crafting_gui.cpp
 msgid "Speed modifiers: <color_cyan>none</color>\n"
@@ -295354,8 +295395,28 @@ msgstr "玩%s"
 
 #: src/monexamine.cpp
 #, c-format
-msgid "Train %s"
-msgstr "训练 %s"
+msgid "Train %s (cannot be trained)"
+msgstr "训练 %s（无法训练）"
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (level %d/%d - fully trained)"
+msgstr "训练 %s（等级 %d/%d - 训练已满）"
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (requires survival %d)"
+msgstr "训练 %s（需要生存 %d）"
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (requires well-fed)"
+msgstr "训练 %s（需要饱腹状态）"
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (level %d/%d)"
+msgstr "训练 %s（等级 %d/%d）"
 
 #: src/monexamine.cpp
 msgid "Untie"
@@ -296210,6 +296271,33 @@ msgid "It has a head."
 msgstr "它有頭。"
 
 #: src/monster.cpp
+msgid "much"
+msgstr "大幅"
+
+#: src/monster.cpp
+msgid "noticeably"
+msgstr "明显"
+
+#: src/monster.cpp
+msgid "slightly"
+msgstr "略微"
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s tougher than normal."
+msgstr "它比平时 %s 强韧。"
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s stronger than normal."
+msgstr "它比平时 %s 强壮。"
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s more agile than normal."
+msgstr "它比平时 %s 敏捷。"
+
+#: src/monster.cpp
 msgid "In melee, you can expect to:"
 msgstr "在近战中，你可以估计："
 
@@ -296824,6 +296912,22 @@ msgstr "欧耶！就是这玩意！"
 msgid "First temperature modifier can't be higher than the second"
 msgstr "第一个温度修正值不能高于第二个"
 
+#: src/mutation_type.cpp
+msgid "skin color"
+msgstr "肤色"
+
+#: src/mutation_type.cpp
+msgid "eye color"
+msgstr "眼睛颜色"
+
+#: src/mutation_type.cpp
+msgid "hair style"
+msgstr "发型"
+
+#: src/mutation_type.cpp
+msgid "hair color"
+msgstr "发色"
+
 #: src/mutation_ui.cpp
 msgid "Reassigning."
 msgstr "重定代碼中。"
@@ -297229,8 +297333,9 @@ msgid "Your profession of %s prevents you from removing this trait."
 msgstr "你的 %s 職業不允許你移除這個特質。"
 
 #: src/newcharacter.cpp
-msgid "You must have a trait of this type."
-msgstr "你必须拥有此类特质。"
+#, c-format
+msgid "You need to select 1 %s."
+msgstr "您需要选择 1 个%s。"
 
 #: src/newcharacter.cpp
 msgid "You already picked a conflicting trait!"
@@ -304166,32 +304271,8 @@ msgstr "%s ..."
 
 #: src/player_activity.cpp
 #, c-format
-msgid "Time left: %s"
-msgstr "剩余时间：%s"
-
-#: src/player_activity.cpp
-msgid "Crafting speed multipliers:\n"
-msgstr "制造速度加成:\n"
-
-#: src/player_activity.cpp
-#, c-format
 msgid "%s: %s\n"
 msgstr "%s: %s\n"
-
-#: src/player_activity.cpp
-#, c-format
-msgid ""
-"%s: %s\n"
-"\n"
-"%s\n"
-"\n"
-"%s"
-msgstr ""
-"%s: %s\n"
-"\n"
-"%s\n"
-"\n"
-"%s"
 
 #: src/player_activity.cpp
 #, c-format

@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-10 23:37+0000\n"
+"POT-Creation-Date: 2026-05-11 06:05+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -63941,8 +63941,8 @@ msgstr[3] "фонари из тыквы"
 #. 'battletorches'}.
 #. ~ Use action menu_text for {'str': 'candle'}.
 #: data/json/items/items_holiday.json data/json/items/melee/bludgeons.json
-#: data/json/items/tool/lighting.json src/crafting_gui.cpp
-#: src/player_activity.cpp src/veh_interact.cpp
+#: data/json/items/tool/lighting.json src/activity_actor.cpp
+#: src/crafting_gui.cpp src/player_activity.cpp src/veh_interact.cpp
 msgid "Light"
 msgstr "Свет"
 
@@ -166931,6 +166931,15 @@ msgid "You have a dark brown skin tone."
 msgstr "Ваша кожа тёмно-коричневого цвета."
 
 #: data/json/mutations/mutation_appearance.json
+msgid "Skin tone: lighter"
+msgstr ""
+
+#. ~ Description for {'str': 'Skin tone: lighter'}
+#: data/json/mutations/mutation_appearance.json
+msgid "You have a lighter peach skin tone."
+msgstr ""
+
+#: data/json/mutations/mutation_appearance.json
 msgid "Skin tone: light"
 msgstr "Цвет кожи: светлый"
 
@@ -213777,8 +213786,8 @@ msgid "2-story motel"
 msgstr "2-х этажный мотель"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
-msgid "Large Office Tower"
-msgstr "Большое офисное здание"
+msgid "large office tower"
+msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_commercial.json
 #: data/mods/alt_map_key/overmap_terrain.json
@@ -316187,6 +316196,59 @@ msgstr "Не осталось %s, чтобы собирать."
 msgid "There is nothing left of the %s <npcname> was crafting."
 msgstr "Ничего не осталось от %s, который <npcname> пытался создать."
 
+#: src/activity_actor.cpp src/player_activity.cpp
+#, c-format
+msgid "Time left: %s"
+msgstr "Осталось времени: %s"
+
+#: src/activity_actor.cpp src/player_activity.cpp
+msgid "Crafting speed multipliers:\n"
+msgstr "Множители скорости крафта:\n"
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Total"
+msgstr "Всего"
+
+#: src/activity_actor.cpp src/bonuses.cpp src/panels.cpp
+#: src/player_activity.cpp
+msgid "Speed"
+msgstr "Скорость"
+
+#: src/activity_actor.cpp src/crafting_gui.cpp src/player_activity.cpp
+msgid "Workbench"
+msgstr "Верстак"
+
+#: src/activity_actor.cpp src/crafting_gui.cpp src/morale.cpp
+#: src/player_activity.cpp
+msgid "Morale"
+msgstr "Мораль"
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Tools"
+msgstr "Инструменты"
+
+#: src/activity_actor.cpp src/construction.cpp src/crafting_gui.cpp
+#: src/player_activity.cpp
+msgid "Assistants"
+msgstr "Помощники"
+
+#: src/activity_actor.cpp src/player_activity.cpp
+#, c-format
+msgid ""
+"%s: %s\n"
+"\n"
+"%s\n"
+"\n"
+"%s"
+msgstr ""
+"%s: %s\n"
+"\n"
+"%s\n"
+"\n"
+"%s"
+
 #: src/activity_actor.cpp
 #, c-format
 msgid "%s did not find an unfinished construction at the activity spot."
@@ -317197,12 +317259,13 @@ msgstr "Игра с %s подняла вам настроение."
 
 #: src/activity_handlers.cpp
 #, c-format
-msgid ""
-"Training your %s has finally succeeded, they should be less skittish in "
-"combat now."
+msgid "You lack the skill to train %s effectively."
 msgstr ""
-"%s наконец-то преуспевает в тренировках, что должно повысить результаты в "
-"боевых ситуациях."
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid "Training your %s has paid off!  They are now at training level %d/%d."
+msgstr ""
 
 #: src/activity_handlers.cpp
 #, c-format
@@ -321718,10 +321781,6 @@ msgstr ""
 msgid "Accuracy"
 msgstr "Точности"
 
-#: src/bonuses.cpp src/panels.cpp src/player_activity.cpp
-msgid "Speed"
-msgstr "Скорость"
-
 #: src/bonuses.cpp
 msgid "Move cost"
 msgstr "Стоимость движения"
@@ -325758,18 +325817,6 @@ msgid "> %1$s: <color_%2$s>%3$d%%</color>"
 msgstr "> %1$s: <color_%2$s>%3$d%%</color>"
 
 #: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Total"
-msgstr "Всего"
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Assistants"
-msgstr "Помощники"
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
-msgid "Tools"
-msgstr "Инструменты"
-
-#: src/construction.cpp src/crafting_gui.cpp src/player_activity.cpp
 msgid "Traits"
 msgstr "Черты"
 
@@ -326911,14 +326958,6 @@ msgstr "Экономия времени при серийном изготовл
 #, c-format
 msgid "> %1$s: <color_%2$s>%3$d%%</color>\n"
 msgstr "> %1$s: <color_%2$s>%3$d%%</color>\n"
-
-#: src/crafting_gui.cpp src/player_activity.cpp
-msgid "Workbench"
-msgstr "Верстак"
-
-#: src/crafting_gui.cpp src/morale.cpp src/player_activity.cpp
-msgid "Morale"
-msgstr "Мораль"
 
 #: src/crafting_gui.cpp
 msgid "Speed modifiers: <color_cyan>none</color>\n"
@@ -352905,8 +352944,28 @@ msgstr "Поиграть с: %s"
 
 #: src/monexamine.cpp
 #, c-format
-msgid "Train %s"
-msgstr "Тренировка: %s"
+msgid "Train %s (cannot be trained)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (level %d/%d - fully trained)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (requires survival %d)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (requires well-fed)"
+msgstr ""
+
+#: src/monexamine.cpp
+#, c-format
+msgid "Train %s (level %d/%d)"
+msgstr ""
 
 #: src/monexamine.cpp
 msgid "Untie"
@@ -353767,6 +353826,33 @@ msgid "It has a head."
 msgstr "Обладает головой."
 
 #: src/monster.cpp
+msgid "much"
+msgstr ""
+
+#: src/monster.cpp
+msgid "noticeably"
+msgstr ""
+
+#: src/monster.cpp
+msgid "slightly"
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s tougher than normal."
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s stronger than normal."
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It is %s more agile than normal."
+msgstr ""
+
+#: src/monster.cpp
 msgid "In melee, you can expect to:"
 msgstr "В ближнем бою вы можете:"
 
@@ -354396,6 +354482,22 @@ msgstr "О, да! Это то, что было нужно!"
 msgid "First temperature modifier can't be higher than the second"
 msgstr "Первый модификатор температуры не может быть выше второго"
 
+#: src/mutation_type.cpp
+msgid "skin color"
+msgstr ""
+
+#: src/mutation_type.cpp
+msgid "eye color"
+msgstr ""
+
+#: src/mutation_type.cpp
+msgid "hair style"
+msgstr ""
+
+#: src/mutation_type.cpp
+msgid "hair color"
+msgstr ""
+
 #: src/mutation_ui.cpp
 msgid "Reassigning."
 msgstr "Переназначение"
@@ -354818,7 +354920,8 @@ msgid "Your profession of %s prevents you from removing this trait."
 msgstr "Ваша профессия (%s) не позволяет убрать эту черту."
 
 #: src/newcharacter.cpp
-msgid "You must have a trait of this type."
+#, c-format
+msgid "You need to select 1 %s."
 msgstr ""
 
 #: src/newcharacter.cpp
@@ -362327,32 +362430,8 @@ msgstr "%s…"
 
 #: src/player_activity.cpp
 #, c-format
-msgid "Time left: %s"
-msgstr "Осталось времени: %s"
-
-#: src/player_activity.cpp
-msgid "Crafting speed multipliers:\n"
-msgstr "Множители скорости крафта:\n"
-
-#: src/player_activity.cpp
-#, c-format
 msgid "%s: %s\n"
 msgstr "%s: %s\n"
-
-#: src/player_activity.cpp
-#, c-format
-msgid ""
-"%s: %s\n"
-"\n"
-"%s\n"
-"\n"
-"%s"
-msgstr ""
-"%s: %s\n"
-"\n"
-"%s\n"
-"\n"
-"%s"
 
 #: src/player_activity.cpp
 #, c-format
