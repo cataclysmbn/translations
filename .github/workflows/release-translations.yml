@@ -1,0 +1,124 @@
+name: Release translations
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Cataclysm-BN release tag
+        required: true
+      release-name:
+        description: Release title
+        required: false
+      source-run-id:
+        description: Cataclysm-BN workflow run id containing the translations artifact
+        required: true
+      source-repo:
+        description: Source repository
+        required: false
+        default: cataclysmbn/Cataclysm-BN
+      prerelease:
+        description: Mark release as prerelease
+        required: false
+        type: boolean
+        default: true
+  repository_dispatch:
+    types: [cataclysm-bn-release]
+
+concurrency:
+  group: release-${{ github.event.client_payload.tag || inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve inputs
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
+          INPUT_RELEASE_NAME: ${{ inputs.release-name }}
+          INPUT_SOURCE_RUN_ID: ${{ inputs.source-run-id }}
+          INPUT_SOURCE_REPO: ${{ inputs.source-repo }}
+          INPUT_PRERELEASE: ${{ inputs.prerelease }}
+          PAYLOAD_TAG: ${{ github.event.client_payload.tag }}
+          PAYLOAD_RELEASE_NAME: ${{ github.event.client_payload.release_name }}
+          PAYLOAD_SOURCE_RUN_ID: ${{ github.event.client_payload.source_run_id }}
+          PAYLOAD_SOURCE_REPO: ${{ github.event.client_payload.source_repo }}
+          PAYLOAD_PRERELEASE: ${{ github.event.client_payload.prerelease }}
+        run: |
+          tag="${PAYLOAD_TAG:-${INPUT_TAG}}"
+          release_name="${PAYLOAD_RELEASE_NAME:-${INPUT_RELEASE_NAME}}"
+          source_run_id="${PAYLOAD_SOURCE_RUN_ID:-${INPUT_SOURCE_RUN_ID}}"
+          source_repo="${PAYLOAD_SOURCE_REPO:-${INPUT_SOURCE_REPO:-cataclysmbn/Cataclysm-BN}}"
+          prerelease="${PAYLOAD_PRERELEASE:-${INPUT_PRERELEASE:-true}}"
+
+          test -n "${tag}" || { echo "::error::tag is required"; exit 1; }
+          test -n "${source_run_id}" || { echo "::error::source-run-id is required"; exit 1; }
+          if [ -z "${release_name}" ]; then
+            release_name="Nightly ${tag}"
+          fi
+
+          {
+            echo "tag=${tag}"
+            echo "release_name=${release_name}"
+            echo "source_run_id=${source_run_id}"
+            echo "source_repo=${source_repo}"
+            echo "prerelease=${prerelease}"
+          } >> "$GITHUB_ENV"
+
+      - name: Download Cataclysm-BN translations artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          rm -rf /tmp/translations-artifact
+          mkdir -p /tmp/translations-artifact
+          gh run download "${source_run_id}" --repo "${source_repo}" --name translations --dir /tmp/translations-artifact
+          test -d /tmp/translations-artifact/lang/po || { echo "::error::translations artifact must contain lang/po"; exit 1; }
+
+      - name: Commit translations
+        run: |
+          rm -rf lang/po
+          mkdir -p lang
+          cp -a /tmp/translations-artifact/lang/po lang/po
+
+          po_count=$(find lang/po -maxdepth 1 -type f -name '*.po' | wc -l)
+          if [ "${po_count}" -eq 0 ]; then
+            echo "::error::No .po files found in artifact"
+            exit 1
+          fi
+
+          git add -A lang/po
+          if git diff --cached --quiet; then
+            echo "No translation changes to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "feat(i18n): add ${tag} translations"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Tag commit
+        run: |
+          git tag -f "${tag}"
+          git push origin "refs/tags/${tag}" --force
+
+      - name: Create or update release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          args=()
+          if [ "${prerelease}" = "true" ]; then
+            args+=(--prerelease)
+          fi
+
+          notes="Translations for Cataclysm-BN ${tag}."
+          if gh release view "${tag}" >/dev/null 2>&1; then
+            gh release edit "${tag}" --title "${release_name}" --notes "${notes}" "${args[@]}"
+          else
+            gh release create "${tag}" --title "${release_name}" --notes "${notes}" "${args[@]}"
+          fi
