@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-14 18:50+0000\n"
+"POT-Creation-Date: 2026-05-15 16:01+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Serbian (https://app.transifex.com/bn-team/teams/113585/sr/)\n"
 "MIME-Version: 1.0\n"
@@ -49967,6 +49967,20 @@ msgstr[2] ""
 #: data/json/items/chemicals_and_resources.json
 msgid ""
 "Pure superiority extracted from an alpha mutant.  Could be used by an "
+"experienced chemist to harness some of its power."
+msgstr ""
+
+#: data/json/items/chemicals_and_resources.json
+msgid "medical sample"
+msgid_plural "medical samples"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for medical sample
+#: data/json/items/chemicals_and_resources.json
+msgid ""
+"Unnatural life extracted from a medical mutant.  Could be used by an "
 "experienced chemist to harness some of its power."
 msgstr ""
 
@@ -133674,6 +133688,24 @@ msgstr ""
 msgid "Applies pull"
 msgstr ""
 
+#: data/json/monster_special_attacks/spells.json
+msgid "Summon medical nightmare"
+msgstr ""
+
+#. ~ Description for Summon medical nightmare
+#: data/json/monster_special_attacks/spells.json
+msgid "Summon medical nightmare."
+msgstr ""
+
+#: data/json/monster_special_attacks/spells.json
+msgid "nightmare teleport"
+msgstr ""
+
+#. ~ Description for nightmare teleport
+#: data/json/monster_special_attacks/spells.json
+msgid "teleport short distance."
+msgstr ""
+
 #: data/json/monsters/bird.json
 msgid "chicken"
 msgid_plural "chickens"
@@ -138234,6 +138266,48 @@ msgstr ""
 msgid ""
 "The mutant stares straight into your eyes, and you can't help but feel drawn"
 " towards it..."
+msgstr ""
+
+#: data/json/monsters/mutant_human.json
+msgid "medical mutant"
+msgid_plural "medical mutants"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'medical mutant'}
+#: data/json/monsters/mutant_human.json
+msgid ""
+"A disfigured human wearing the tattered remains of a yellow jumpsuit, "
+"bearing a dead expression and lightless eyes.  They twitch and jerk around "
+"frantically, as if in great fear, yet their face betrays no emotion."
+msgstr ""
+
+#. ~ Attack message of monster "{'str': 'medical mutant'}"'s spell "None"
+#: data/json/monsters/mutant_human.json
+msgid ""
+"You suddenly feel as if you're seeing through the mutant's eyes, and "
+"nightmarish figures appear!"
+msgstr ""
+
+#: data/json/monsters/mutant_human.json
+msgid "nightmarish hallucination"
+msgid_plural "nightmarish hallucinations"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'nightmarish hallucination'}
+#: data/json/monsters/mutant_human.json
+msgid ""
+"This terrifying black figure's indescribable features shift constantly and "
+"erratically."
+msgstr ""
+
+#. ~ Attack message of monster "{'str': 'nightmarish hallucination'}"'s spell
+#. "None"
+#: data/json/monsters/mutant_human.json
+msgid "The figure vanishes and reappears!"
 msgstr ""
 
 #: data/json/monsters/nether.json
@@ -280450,7 +280524,7 @@ msgstr ""
 msgid "Wearing: "
 msgstr ""
 
-#: src/character.cpp src/newcharacter.cpp src/npc.cpp
+#: src/character.cpp src/iuse.cpp src/newcharacter.cpp src/npc.cpp
 msgid "Traits: "
 msgstr ""
 
@@ -286667,6 +286741,11 @@ msgstr ""
 
 #: src/field_type.h
 #, c-format
+msgid " covered in a %s"
+msgstr ""
+
+#: src/field_type.h
+#, c-format
 msgid " on %s"
 msgstr ""
 
@@ -288672,6 +288751,10 @@ msgstr ""
 
 #: src/game.cpp
 msgid "There is something above blocking your way."
+msgstr ""
+
+#: src/game.cpp
+msgid "Tried to move outside of zlevel world bounds."
 msgstr ""
 
 #: src/game.cpp
@@ -298676,7 +298759,7 @@ msgstr ""
 #: src/iuse.cpp
 #, c-format
 msgctxt "someone stands/sits *on* something"
-msgid " on a %s."
+msgid " on %s."
 msgstr ""
 
 #: src/iuse.cpp
@@ -298688,11 +298771,11 @@ msgstr[1] ""
 msgstr[2] ""
 
 #: src/iuse.cpp
-msgid "sits"
+msgid "is sitting"
 msgstr ""
 
 #: src/iuse.cpp
-msgid "stands"
+msgid "is standing"
 msgstr ""
 
 #: src/iuse.cpp src/memorial_logger.cpp
@@ -298787,19 +298870,36 @@ msgid ""
 msgstr ""
 
 #: src/iuse.cpp
-msgid "It is <color_yellow>sunrise</color>. "
+msgid "<color_yellow>sunrise</color>"
 msgstr ""
 
 #: src/iuse.cpp
-msgid "It is <color_light_red>sunset</color>. "
+msgid "<color_magenta>sunset</color>"
 msgstr ""
 
 #: src/iuse.cpp
-msgid "It is <color_dark_gray>night</color>. "
+msgid "<color_dark_gray>midnight</color>"
 msgstr ""
 
 #: src/iuse.cpp
-msgid "It is day. "
+msgid "<color_gray>night</color>"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "<color_cyan>morning</color>"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "<color_light_red>afternoon</color>"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "<color_light_blue>midday</color>"
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "It is %s. "
 msgstr ""
 
 #: src/iuse.cpp
@@ -298809,13 +298909,25 @@ msgstr ""
 
 #: src/iuse.cpp
 #, c-format
-msgid "%s appearance:"
+msgid "%s's appearance:"
 msgstr ""
 
 #: src/iuse.cpp
 #, c-format
 msgctxt "Date"
 msgid "The photo was taken on %s."
+msgstr ""
+
+#: src/iuse.cpp
+msgid "is wielding a "
+msgstr ""
+
+#: src/iuse.cpp
+msgid "is wearing: "
+msgstr ""
+
+#: src/iuse.cpp
+msgid "is not wearing anything."
 msgstr ""
 
 #: src/iuse.cpp
