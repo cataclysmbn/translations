@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-15 16:01+0000\n"
+"POT-Creation-Date: 2026-05-16 20:46+0000\n"
 "Last-Translator: Neko Sippo, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -26706,6 +26706,8 @@ msgstr "研究者たちは突然、お前に対する実験を中止し、封鎖
 
 #. ~ Starting location for scenario 'Challenge - Lab Patient'.
 #. ~ Starting location for scenario 'Challenge - Lab Staff'.
+#. ~ Starting location for scenario 'Challenge - Trans-Coast Logistics
+#. Concourse'.
 #: data/json/scenarios.json
 msgctxt "start_name"
 msgid "Locked Lab"
@@ -27588,6 +27590,40 @@ msgstr ""
 #: data/json/scenarios.json
 msgctxt "start_name"
 msgid "Office Tower"
+msgstr ""
+
+#. ~ Name for scenario 'Challenge - Trans-Coast Logistics Concourse' for a
+#. male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "Challenge - Trans-Coast Logistics Concourse"
+msgstr ""
+
+#. ~ Name for scenario 'Challenge - Trans-Coast Logistics Concourse' for a
+#. female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "Challenge - Trans-Coast Logistics Concourse"
+msgstr ""
+
+#. ~ Description for scenario 'Challenge - Trans-Coast Logistics Concourse'
+#. for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"You were deemed an essential employee and required to stay behind during the"
+" facility's evacuation.  You'd better find a keycard before something finds "
+"you."
+msgstr ""
+
+#. ~ Description for scenario 'Challenge - Trans-Coast Logistics Concourse'
+#. for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"You were deemed an essential employee and required to stay behind during the"
+" facility's evacuation.  You'd better find a keycard before something finds "
+"you."
 msgstr ""
 
 #. ~ Display string for skill display type 'display_melee'
@@ -31110,6 +31146,10 @@ msgstr ""
 
 #: data/json/start_locations.json
 msgid "Office Tower"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Cargo area Trans-Coast Logistics"
 msgstr ""
 
 #: data/json/techniques.json
@@ -35697,6 +35737,8 @@ msgstr ""
 "弾薬を組み立てることも、材料として分解することもできるオールインワンのハンドロードツールで、電力網に接続された弾丸成形用のホットプレートを備えている。"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/mapgen/lab/lab_modular/lab_2x2_MUT_Tier_2.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_shared_traps.json
 msgid "overhead light"
 msgstr "天井灯"
 
@@ -121393,6 +121435,37 @@ msgid ""
 msgstr ""
 "車両の蓄電池で動くように作られた溶接装置だ。細かい作業用のはんだごてアタッチメントが付いており、余分な工具を収納するスペースも備わっている。"
 
+#: data/json/items/vehicle/rigs.json data/json/vehicleparts/crafting.json
+msgid "vehicle 3D printer"
+msgid_plural "vehicle 3D printers"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'vehicle 3D printer'}
+#: data/json/items/vehicle/rigs.json
+msgid ""
+"A 3D printer made to run off a vehicle's storage battery. Although it's not "
+"nearly as fancy as the experimental nanofabricators, this civilian-grade 3D "
+"printer can produce almost any item out of plastic, polymer, or carbon "
+"fiber…  so long as you can program it.  It's also useful for repairing items"
+" made out of plastic or carbon fiber."
+msgstr ""
+
+#: data/json/items/vehicle/rigs.json data/json/vehicleparts/crafting.json
+msgid "vehicle advanced 3D printer"
+msgid_plural "vehicle advanced 3D printers"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'vehicle advanced 3D printer'}
+#: data/json/items/vehicle/rigs.json
+msgid ""
+"An advanced 3D printer made to run off a vehicle's storage battery. Recent "
+"advances in 3D printing technology have resulted in the ability to quickly "
+"and cheaply 3D print metals and alloys.  Such 3D printers are highly "
+"expensive, but sought out by collectors and preppers alike.  In addition to "
+"crafting, it can be used to repair polymer and metal items alike, or "
+"permeate fabric items with carbon fiber for added protection."
+msgstr ""
+
 #: data/json/items/vehicle/rotor.json data/json/vehicleparts/rotor.json
 msgid "heavy-duty military rotors"
 msgid_plural "sets of heavy-duty military rotors"
@@ -122680,6 +122753,8 @@ msgstr "ドアのロックを解除"
 #: data/json/mapgen/hospital.json data/json/mapgen/lab/lab_floorplans.json
 #: data/json/mapgen/lab/lab_floorplans_1side.json
 #: data/json/mapgen/lab/lab_rooms.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_medical.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
 msgid "Centrifuge"
 msgstr "遠心分離機"
 
@@ -122687,6 +122762,8 @@ msgstr "遠心分離機"
 #: data/json/mapgen/hospital.json data/json/mapgen/lab/lab_floorplans.json
 #: data/json/mapgen/lab/lab_floorplans_1side.json
 #: data/json/mapgen/lab/lab_rooms.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_medical.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
 msgid "Analyze blood"
 msgstr "血液を分析"
 
@@ -123104,11 +123181,13 @@ msgstr "<city>発電所"
 
 #. ~ Computer name
 #: data/json/mapgen/prison_1.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
 msgid "Armory Access"
 msgstr "武器庫管理端末"
 
 #. ~ Computer option
 #: data/json/mapgen/prison_1.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
 msgid "Open Armory Door"
 msgstr "武器庫ドアを解錠する"
 
@@ -123500,6 +123579,11 @@ msgstr "図書室入口"
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_1side.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
+#: data/json/mapgen/lab/lab_modular/lab_central_hallway.json
+#: data/json/mapgen/lab/lab_modular/lab_health_clinic.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_science_common.json
 #: data/mods/Aftershock/maps/lab_vehicle_track.json
 #: data/mods/Aftershock/maps/lab_weapons_range.json
 #: data/mods/CRT_EXPANSION/mapgen/lab_floorplans_1side.json
@@ -123523,6 +123607,8 @@ msgstr "兵舎入口"
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_science_common.json
 msgid "Magazine Entrance"
 msgstr "弾薬庫入口"
 
@@ -123558,11 +123644,13 @@ msgstr "共鳴カスケードを起動する"
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_trains.json
+#: data/json/mapgen/lab/lab_modular/lab_central_hallway.json
 msgid "Laboratory Train Controls"
 msgstr "研究所列車制御装置"
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_trains.json
+#: data/json/mapgen/lab/lab_modular/lab_central_hallway.json
 msgid "Request Subway Train"
 msgstr "地下鉄の出動を要請する"
 
@@ -123570,6 +123658,90 @@ msgstr "地下鉄の出動を要請する"
 #: data/json/mapgen/lab/lab_trains.json
 msgid "View Subway Routes"
 msgstr "地下鉄の経路を閲覧する"
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
+msgid "<color_white_green>Relaxation Zone</color>"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
+msgid "Security Public Relations Zone"
+msgstr ""
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
+msgid "<color_white_red>High Security Zone Beyond This Point.</color>"
+msgstr ""
+
+#: data/json/mapgen/lab/lab_modular/lab_central_hallway.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_shared_traps.json
+#: data/json/vehicleparts/doors.json
+msgid "door"
+msgstr "ドア"
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_central_hallway.json
+msgid "Emergency Containment Entrance"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_health_clinic.json
+msgid "Pharmacy"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
+msgid "Bio-Sample Storage"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
+msgid "Alien-Sample Storage"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
+msgid "PE050 Storage"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
+msgid "Specimen Processing"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
+msgid "Storage for Gary"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
+msgid "PE065 Storage"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
+msgid "PE070 Storage"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
+#: src/mapgen.cpp
+msgid "Log Console"
+msgstr "コンソール履歴"
+
+#. ~ Computer option
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
+#: src/mapgen.cpp
+msgid "View Research Logs"
+msgstr "研究履歴を閲覧する"
+
+#. ~ Computer option
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
+#: src/mapgen.cpp
+msgid "Download Map Data"
+msgstr "マップデータをダウンロードする"
 
 #. ~ Computer name
 #: data/json/mapgen/microlab/microlab_firebreak.json
@@ -172510,6 +172682,7 @@ msgid "mine shaft"
 msgstr "鉱山竪坑"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_microlab.json
 msgid "subway station?"
 msgstr "地下鉄駅？"
@@ -172577,6 +172750,42 @@ msgstr "研究施設の屋根"
 #: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "small cabin"
 msgstr "小さな小屋"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "lab research zone"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "lab recreation zone"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "lab security zone"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "lab cargo zone"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "lab residential zone"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "trans-coast logistics"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "trans-coast logistics roof"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "lab health clinic"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "lab maintenance zone"
+msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_mall.json
 #: data/mods/alt_map_key/overmap_terrain.json
@@ -184854,6 +185063,20 @@ msgid ""
 msgstr ""
 "車両に搭載された溶接リグだ。車両のバッテリーから電力を引き出す。眩しさを防ぐための保護具は依然として必要だ。リグのあるタイルを「e」で調べると、所持品のアイテムを修理するために使用できる。溶接機が必要なアイテムの製作または修理を行おうとすると、溶接リグを使用するオプションが表示される。"
 
+#. ~ Description for {'str': 'vehicle 3D printer'}
+#: data/json/vehicleparts/crafting.json
+msgid ""
+"A 3D printer mounted in the vehicle, that draws power from the vehicle's "
+"batteries."
+msgstr ""
+
+#. ~ Description for {'str': 'vehicle advanced 3D printer'}
+#: data/json/vehicleparts/crafting.json
+msgid ""
+"An advanced 3D printer mounted in the vehicle, that draws power from the "
+"vehicle's batteries."
+msgstr ""
+
 #. ~ Description for {'str': 'FOODCO kitchen buddy'}
 #: data/json/vehicleparts/crafting.json
 msgid ""
@@ -184954,10 +185177,6 @@ msgid ""
 "A set of locks.  Attached to a suitable openable part, it will prevent other"
 " people from opening it."
 msgstr "錠前一式。適切な開閉可能な部品に取り付けることで、他の人物が開けるのを防ぐ。"
-
-#: data/json/vehicleparts/doors.json
-msgid "door"
-msgstr "ドア"
 
 #. ~ Description for {'str': 'door'}
 #. ~ Description for {'str': 'wooden door'}
@@ -291092,18 +291311,6 @@ msgstr ""
 #: src/mapgen.cpp
 msgid "Wreckage"
 msgstr "残骸"
-
-#: src/mapgen.cpp
-msgid "Log Console"
-msgstr "コンソール履歴"
-
-#: src/mapgen.cpp
-msgid "View Research Logs"
-msgstr "研究履歴を閲覧する"
-
-#: src/mapgen.cpp
-msgid "Download Map Data"
-msgstr "マップデータをダウンロードする"
 
 #: src/mapgen.cpp
 msgid "Bionic access"
