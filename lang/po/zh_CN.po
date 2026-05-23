@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-22 18:00+0000\n"
+"POT-Creation-Date: 2026-05-23 19:04+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -122635,6 +122635,7 @@ msgstr "开门"
 #. ~ Computer name
 #: data/json/mapgen/hospital.json data/json/mapgen/lab/lab_floorplans.json
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 #: data/json/mapgen/lab/lab_rooms.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_medical.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
@@ -122644,6 +122645,7 @@ msgstr "离心机控制终端"
 #. ~ Computer option
 #: data/json/mapgen/hospital.json data/json/mapgen/lab/lab_floorplans.json
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 #: data/json/mapgen/lab/lab_rooms.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_medical.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
@@ -123416,6 +123418,7 @@ msgstr "打开全自动医疗仪门锁"
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans.json
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 msgid "Containment Control"
 msgstr "隔离区控制台"
 
@@ -123461,7 +123464,9 @@ msgstr "图书馆入口"
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_floorplans_finale1level_ice.json
 #: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
 #: data/json/mapgen/lab/lab_modular/lab_central_hallway.json
 #: data/json/mapgen/lab/lab_modular/lab_health_clinic.json
@@ -123502,11 +123507,18 @@ msgstr "囚犯隔离间入口"
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 msgid "EMERGENCY CONTAINMENT RELEASE"
 msgstr "隔离区紧急释放"
 
 #. ~ Computer name
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
+msgid "Alien Containment Entrance"
+msgstr ""
+
+#. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_floorplans_finale1level_ice.json
 msgid "High Risk Subject Containment"
 msgstr "高危实验体收容"
 
@@ -123524,6 +123536,17 @@ msgstr "切换传送门"
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
 msgid "Activate Resonance Cascade"
 msgstr "开启串联共振进程"
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_rooms.json
+msgid ""
+"Warning!\n"
+"Live Fire Zone\n"
+"Avoid In Case of Lockdown!"
+msgstr ""
+"警告！\n"
+"实弹射击区\n"
+"如遇封锁，请勿靠近！"
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_trains.json
@@ -261708,6 +261731,14 @@ msgid "<npcname> finishes digging."
 msgstr "<npcname>完成了挖掘。"
 
 #: src/activity_handlers.cpp
+msgid "You are unable to pulp the corpse."
+msgstr "你无法砸烂这具尸体。"
+
+#: src/activity_handlers.cpp
+msgid "<npcname> is unable to pulp the corpse."
+msgstr "<npcname>无法砸烂这具尸体。"
+
+#: src/activity_handlers.cpp
 msgid "The corpse moved before you could finish smashing it!"
 msgstr "尸体在被完全砸碎之前就动起来了！"
 
@@ -302935,16 +302966,6 @@ msgstr ""
 "k-cell）工作单元太小，不足以抵消线程派发延迟的开销，请禁用此项。需要重启游戏生效。"
 
 #: src/options.cpp
-msgid "Pre-load Border"
-msgstr "预加载边界"
-
-#: src/options.cpp
-msgid ""
-"No effect — lazy border loading is pending async mapgen rework and is "
-"currently disabled regardless of this setting."
-msgstr "无效 — 延迟边界加载正在等待异步地图生成的重构，无论此项如何设置，目前均已被禁用。"
-
-#: src/options.cpp
 msgid "Reality Bubble"
 msgstr "现实气泡"
 
@@ -302965,6 +302986,17 @@ msgid ""
 msgstr ""
 "现实气泡的子地图半径（超出你位置可见的子地图数）。网格大小 = 2 × 设定值 + 每边 3 个子地图（设定值为 4 → "
 "11×11，旧版默认值）。最大玩家视野范围 = 12 × (设定值 + 1) 个图块。较大的数值会增加加载区域和内存占用；较小的数值会减少这两者。"
+
+#: src/options.cpp
+msgid "Pre-load Border"
+msgstr "预加载边界"
+
+#: src/options.cpp
+msgid ""
+"Preload a one-overmap-tile border around the reality bubble over several "
+"turns.  This reduces map-shift hitches at the cost of extra per-turn loading"
+" work and    some additional memory usage."
+msgstr ""
 
 #: src/options.cpp
 msgid "Mobile Activity Bubble Size"
@@ -303055,6 +303087,16 @@ msgid ""
 "Configure how submaps are loaded and processed outside of the reality "
 "bubble."
 msgstr "配置现实气泡外部子地图的加载和处理方式。"
+
+#: src/options.cpp
+msgid "Retained Map Cache"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Keep more map data loaded to reduce lag when moving around the same general "
+"area, at the cost of memory usage."
+msgstr ""
 
 #: src/options.cpp
 msgid "Power portal load radius (submaps)"

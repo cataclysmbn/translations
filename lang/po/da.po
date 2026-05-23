@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-22 04:33+0000\n"
+"POT-Creation-Date: 2026-05-23 19:01+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Danish (https://app.transifex.com/bn-team/teams/113585/da/)\n"
 "MIME-Version: 1.0\n"
@@ -126436,6 +126436,7 @@ msgstr ""
 #. ~ Computer name
 #: data/json/mapgen/hospital.json data/json/mapgen/lab/lab_floorplans.json
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 #: data/json/mapgen/lab/lab_rooms.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_medical.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
@@ -126445,6 +126446,7 @@ msgstr ""
 #. ~ Computer option
 #: data/json/mapgen/hospital.json data/json/mapgen/lab/lab_floorplans.json
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 #: data/json/mapgen/lab/lab_rooms.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_medical.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
@@ -127217,6 +127219,7 @@ msgstr ""
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans.json
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 msgid "Containment Control"
 msgstr ""
 
@@ -127262,7 +127265,9 @@ msgstr ""
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_floorplans_finale1level_ice.json
 #: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
 #: data/json/mapgen/lab/lab_modular/lab_central_hallway.json
 #: data/json/mapgen/lab/lab_modular/lab_health_clinic.json
@@ -127303,11 +127308,18 @@ msgstr ""
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_1side.json
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 msgid "EMERGENCY CONTAINMENT RELEASE"
 msgstr ""
 
 #. ~ Computer name
+#: data/json/mapgen/lab/lab_floorplans_1side_ice.json
+msgid "Alien Containment Entrance"
+msgstr ""
+
+#. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_floorplans_finale1level_ice.json
 msgid "High Risk Subject Containment"
 msgstr ""
 
@@ -127324,6 +127336,14 @@ msgstr ""
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
 msgid "Activate Resonance Cascade"
+msgstr ""
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_rooms.json
+msgid ""
+"Warning!\n"
+"Live Fire Zone\n"
+"Avoid In Case of Lockdown!"
 msgstr ""
 
 #. ~ Computer name
@@ -265025,6 +265045,14 @@ msgid "<npcname> finishes digging."
 msgstr ""
 
 #: src/activity_handlers.cpp
+msgid "You are unable to pulp the corpse."
+msgstr ""
+
+#: src/activity_handlers.cpp
+msgid "<npcname> is unable to pulp the corpse."
+msgstr ""
+
+#: src/activity_handlers.cpp
 msgid "The corpse moved before you could finish smashing it!"
 msgstr ""
 
@@ -305862,16 +305890,6 @@ msgid ""
 msgstr ""
 
 #: src/options.cpp
-msgid "Pre-load Border"
-msgstr ""
-
-#: src/options.cpp
-msgid ""
-"No effect — lazy border loading is pending async mapgen rework and is "
-"currently disabled regardless of this setting."
-msgstr ""
-
-#: src/options.cpp
 msgid "Reality Bubble"
 msgstr ""
 
@@ -305889,6 +305907,17 @@ msgid ""
 "Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
 "Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
 "the loaded area and memory usage; smaller values reduce both. "
+msgstr ""
+
+#: src/options.cpp
+msgid "Pre-load Border"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Preload a one-overmap-tile border around the reality bubble over several "
+"turns.  This reduces map-shift hitches at the cost of extra per-turn loading"
+" work and    some additional memory usage."
 msgstr ""
 
 #: src/options.cpp
@@ -305977,6 +306006,16 @@ msgstr ""
 msgid ""
 "Configure how submaps are loaded and processed outside of the reality "
 "bubble."
+msgstr ""
+
+#: src/options.cpp
+msgid "Retained Map Cache"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Keep more map data loaded to reduce lag when moving around the same general "
+"area, at the cost of memory usage."
 msgstr ""
 
 #: src/options.cpp
