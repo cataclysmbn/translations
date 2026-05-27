@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-26 20:00+0000\n"
+"POT-Creation-Date: 2026-05-27 18:28+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -52308,6 +52308,18 @@ msgid ""
 "Several documents with all kinds of information, customer data and charts "
 "kept together, pretty useless now though."
 msgstr "裡面有幾份文件資料, 比如客戶信息和市場分析圖表之類。不過你可以肯定, 現在這些VIP 客戶的需求只剩下一個了。"
+
+#: data/json/items/generic.json
+msgid "classified lab reports"
+msgid_plural "classified lab reportss"
+msgstr[0] "机密实验室报告"
+
+#. ~ Description for {'str': 'classified lab reports'}
+#: data/json/items/generic.json
+msgid ""
+"A large stack of papers detailing all manner of classified information "
+"regarding the secret labs."
+msgstr "一大摞文件，详细记录了有关秘密实验室的各种机密信息。"
 
 #: data/json/items/generic.json
 msgid "INCIDENT REPORT: IMMERSION-27A"
@@ -140108,8 +140120,12 @@ msgstr "能和我分享一些有用的东西吗？"
 
 #: data/json/npcs/TALK_COMMON_OTHER.json data/json/npcs/holdouts/Mr_Lapin.json
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_guard_generic.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard1_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
 #: data/json/npcs/refugee_center/surface_staff/NPC_scavenger_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientist_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
 #: data/json/npcs/refugee_center/surface_visitors/NPC_arsonist.json
 #: data/json/npcs/refugee_center/surface_visitors/NPC_old_guard_representative.json
 #: data/json/npcs/refugee_center/surface_visitors/NPC_scavenger_mercenary.json
@@ -140465,6 +140481,7 @@ msgstr "下不为例，你可以留着它。别告诉别人。"
 #: data/json/npcs/necropolis/NPC_Old_Guard_Commo.json
 #: data/json/npcs/prepper/TALK_NPC_prepper.json
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
 #: data/json/npcs/tacoma_ranch/NPC_ranch_foreman.json
 msgid "Thanks."
 msgstr "謝謝。"
@@ -141394,6 +141411,14 @@ msgid "I'm looking for clues concerning these monsters' origins…"
 msgstr "我在找关于这些怪物起源的线索……"
 
 #: data/json/npcs/classes.json
+msgid "Head Scientist"
+msgstr "首席科学家"
+
+#: data/json/npcs/classes.json
+msgid "I'm a head scientist from the trans-coast logistics center…"
+msgstr "我是跨洋物流中心的首席科学家……"
+
+#: data/json/npcs/classes.json
 msgid "Bounty Hunter"
 msgstr "賞金獵人"
 
@@ -141476,6 +141501,14 @@ msgstr "我正在进行一场剿灭黄蜂的圣战。"
 #: data/mods/Arcana_BN/npcs/npcs.json data/mods/Fuji_Mil_Prof/npc/classes.json
 msgid "Soldier"
 msgstr "軍人"
+
+#: data/json/npcs/classes.json
+msgid "Lab Guard"
+msgstr "实验室守卫"
+
+#: data/json/npcs/classes.json
+msgid "I'm a lab guard who scavenged some equipment."
+msgstr "我是个搜刮了一些装备的实验室守卫。"
 
 #: data/json/npcs/classes.json
 #: data/json/npcs/tacoma_ranch/NPC_ranch_bartender.json
@@ -152232,6 +152265,7 @@ msgstr "欢迎！你是新来的，我能帮你什么忙吗？"
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Uyen_Tran.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Vanessa_Toby.json
 #: data/json/npcs/refugee_center/surface_staff/NPC_free_merchant_shopkeep.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
 #: data/json/npcs/scrap_trader/scrap_trader.json
 #: data/json/obsoletion/npc_dialogue.json
 #: data/mods/Aftershock/npcs/prepnet_dialogue.json
@@ -155911,6 +155945,7 @@ msgstr ""
 "他们都说我为<the_cataclysm>做准备是疯了。现在，他们都死了，而我还活着。当骚乱变成了僵尸潮，我已经准备好了。我只需要躲避一些<zombies>就能回到我的堡垒。从那时起，我一直在这里安全地生活。"
 
 #: data/json/npcs/prepper/TALK_NPC_prepper.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
 #: data/json/npcs/refugee_center/surface_visitors/NPC_exterminator.json
 #: data/json/npcs/refugee_center/surface_visitors/NPC_hunter.json
 #: data/json/npcs/scrap_trader/scrap_trader.json
@@ -162218,6 +162253,89 @@ msgstr "化学品吗？我确信我们可以找到一些用途，而且我们需
 msgid "Well, how about 300 merch for 10 liters of…"
 msgstr "好的，那么300个商品换取10升的…"
 
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard1_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+msgid "security guard"
+msgstr "警卫"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard1_docmission.json
+msgid "I hope those damn things don't come back for us..."
+msgstr "我希望那些该死的东西别再来找我们了……"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard1_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+msgid "How did you end up here?"
+msgstr "你是怎么落到这步田地的？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard1_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+msgid "Can you help me?"
+msgstr "你能帮我吗？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard1_docmission.json
+msgid ""
+"Was just another day at work, was about to go on my patrol when someone came"
+" over the loudspeaker and announced an emergency evacuation.  'Course, I "
+"couldn't leave till we got all the eggheads out, so I was going to my "
+"station when I heard gunfire in the halls.  I peeked my head out and... and "
+"these things, these black things were tearing everyone up.  I don't know who"
+" or what they were, but they were surrounded by shadow, and I saw one of em "
+"shrug off a hit from a soldier's M4.  At that point, I knew this was above "
+"my paygrade, and I ran like hell, which is how I met up with the rest of the"
+" group, and we took shelter down here."
+msgstr ""
+"那本来只是普通的一个工作日，我正准备去巡逻，突然有人通过扩音器宣布紧急撤离。当然，在把那些书呆子都弄出来之前我不能离开，所以当时我正赶往我的岗位，接着我就听到了走廊里的枪声。我探出头去，然后……然后这些东西，这些黑色的东西正在把所有人撕成碎片。我不知道他们是谁，也不知道那是什么，但他们被阴影笼罩着，我亲眼看到其中一个硬抗了士兵M4步枪的射击竟然毫发无损。在那一刻，我知道这根本不是我这点薪水该管的事，于是我拼命逃跑，接着就遇到了队伍里的其他人，我们就在这里避难了。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard1_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_scavenger_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientist_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "Ok, bye."
+msgstr "好的，再见。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard1_docmission.json
+msgid ""
+"Sorry, I'm not going out there again.  Besides, these \"geniuses\" are the "
+"only way I'm getting out of here, and they couldn't shoot if their life "
+"depended upon it."
+msgstr "抱歉，我不会再出去了。再说，这些“天才”是我离开这里的唯一指望，而他们就算刀架在脖子上都开不来枪。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+msgid "We're getting out of here, right?"
+msgstr "我们能离开这里的，对吧？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+msgid ""
+"There's not much to say...  We were attacked, I ran, I met these guys, "
+"and... and that's that."
+msgstr "没什么好说的……我们遭到了袭击，我跑了，遇到了这些人，然后……事情就是这样。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+msgid "I feel like there's something you're not telling me."
+msgstr "我感觉你有事瞒着我。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+msgid "I can't, I'm sorry..."
+msgstr "我不能说，对不起……"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+msgid ""
+"W-Well, alright.  You're right, I should tell you...  The things that "
+"attacked us... They weren't monsters, they were soldiers, special soldiers."
+"  One of them came right up to me, and... and I could faintly see the "
+"outline of powered combat armor...  I-It thrust a blade at me, and, and..."
+msgstr ""
+"哎……好吧。你说得对，我应该告诉你……袭击我们的那些东西……它们不是怪物，而是士兵，特殊士兵。其中一个直接走到我面前，然后……我隐约能看到动力战斗装甲的轮廓……它、它朝我刺来一刀，然后，然后……"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+msgid "It's ok, thanks for the information."
+msgstr "没关系，谢谢你提供的信息。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_labguard2_docmission.json
+msgid "I-I'm serious, that's all there is."
+msgstr "我、我是认真的，就知道这么多了。"
+
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
 msgid "Marshal..."
 msgstr "法警…"
@@ -162366,7 +162484,6 @@ msgid ""
 msgstr "太好了！我已经把去那里的路线标记在地图上了。大多数工作站应该都在地下一层。"
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
-#: data/json/obsoletion/missions.json
 msgid "Can't blame you, but come back if you change your mind."
 msgstr "不怪你，但如果你改主意了，记得再回来找我。"
 
@@ -162382,7 +162499,6 @@ msgstr ""
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
 #: data/json/npcs/refugee_center/surface_visitors/NPC_old_guard_representative.json
-#: data/json/obsoletion/missions.json
 msgid "Have you completed your mission?"
 msgstr "你完成了你的任務了嗎?"
 
@@ -162466,7 +162582,6 @@ msgstr ""
 "我们在数据中发现了一份很久以前订购隧道和列车设备的重要合同。这是我们目前最好的线索。如果这些记录属实，这些设备似乎被用来建造完全位于地下的“微型实验室”，以便在其中开展危险性较低的研究。幸运的是，我已经确认了一个在“大灾变”前刚刚完工的微型实验室，由于刚刚完工，建筑工头很可能还在那里。如果说有谁身上带着关于列车网络的信息，那肯定非他莫属了。我要你去那里把这些信息取回来。"
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
-#: data/json/obsoletion/missions.json
 msgid "So glad for your help."
 msgstr "很高興有你幫手。"
 
@@ -162482,11 +162597,56 @@ msgstr ""
 "我建议你找一个地铁站或其他形式的地下入口，然后沿着地铁线路一直走，直到抵达该实验室。请记住，危险性较低的研究并不意味着对你来说就不危险。这些微型实验室里可能到处都是丧尸和自动防御系统，而且其中狭窄蜿蜒的走廊意味着你必须格外小心。"
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
-#: data/json/obsoletion/missions.json
 msgid ""
 "Fantastic!  I should be able to reconstruct what cargo moved between which "
 "labs.  I wonder what was really going on down there."
 msgstr "大棒了! 我應該可以重現甚麼貨物在哪些實驗室之間運送。我很想知道那裡下面到底發生了甚麼事。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
+msgid "Investigate the Logistics Center"
+msgstr "调查物流中心"
+
+#. ~ Description for mission '{'str': 'Investigate the Logistics Center'}'
+#: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
+msgid ""
+"Find and obtain the <color_light_blue>classified lab reports</color> in the "
+"<color_red>trans-coast logistics center</color>."
+msgstr "在<color_red>跨洋物流中心</color>寻找并获取<color_light_blue>机密实验室报告</color>。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
+msgid ""
+"The train network information revealed a completely separate secret train "
+"network deeper than the normal subway system that seems to be used "
+"exclusively for transport between labs.  Not only that, but it also revealed"
+" a network of logistics centers.  You know those trans-coast logistics "
+"centers, the big warehouses from the company that promised you same-day "
+"shipping?  It turns out those are actually fronts used to facilitate the "
+"mass shipment of supplies and the conduction of classified research!  If any"
+" place holds the key to unlocking the mystery of how and why this all "
+"happened, it is almost certainly locked within one of those centers!  I've "
+"identified the center that seems to have been the most critical for the "
+"region, and I need you to travel to it and find any information that points "
+"you to what could possibly have caused all of this!"
+msgstr ""
+"列车网络信息揭示了一个比普通地铁系统更深的、完全独立的秘密列车网络，似乎专门用于实验室之间的运输。不仅如此，它还揭示了一个物流中心网络。你知道那些跨洋物流中心吗？就是那个承诺当日送达的物流公司的大型仓库？事实证明，这些实际上都是幌子，用来掩护物资的大规模运输和进行机密研究！如果有什么地方藏有解开这一切发生的原因和方式之谜的钥匙，那它几乎肯定被锁在其中一个中心里！我已经确定了对该地区似乎最为关键的那个中心，我需要你前往那里，寻找任何能指出到底是什么导致了这一切的线索信息！"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
+msgid ""
+"This may be the most dangerous lab you've visited yet.  If I recall "
+"correctly, the main entrance is heavily defended by rifle caliber turrets "
+"and robots, not to mention the swarms of zombies and other abominations "
+"you'll likely find inside.  An intelligent course of action may be to find "
+"an entrance to this secret train network, likely located in a lab or "
+"microlab at a depth equivalent to the fourth basement floor, and navigate to"
+" the logistics center along it."
+msgstr ""
+"这可能是你探索过的最危险的实验室。如果我没记错的话，正门有步枪口径的自动炮塔和机器人重兵把守，更不用说你很可能会在里面发现成群的丧尸和其他怪物。明智的做法可能是找到这个秘密列车网络的入口，它可能位于相当于地下四层深度的实验室或微型实验室中，然后顺着它前往物流中心。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_old_guard_doctor.json
+msgid ""
+"Fantastic!  This is exactly the data I needed, and I have a feeling that we "
+"will soon uncover a way to finally halt this Cataclysm..."
+msgstr "太棒了！这正是我需要的数据，我有一种感觉，我们很快就会找到彻底阻止这场大灾变的方法……"
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_scavenger_docmission.json
 msgid "Oh. Hi there. I hope you aren't planning any trouble..."
@@ -162538,6 +162698,7 @@ msgid "O-ok no need to get violent, just take it!"
 msgstr "好、好吧，没必要动粗，你拿走就是了！"
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_scavenger_docmission.json
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
 #: data/mods/Arcana_BN/npcs/TALK_MAGE_HUNTER.json
 msgid "Good."
 msgstr "很好。"
@@ -162547,12 +162708,265 @@ msgid "Uh, I'd love to help, but I gotta surive out here too you know."
 msgstr "呃，我很想帮你，但你知道我也得在这里活下去啊。"
 
 #: data/json/npcs/refugee_center/surface_staff/NPC_scavenger_docmission.json
-msgid "Ok, bye."
-msgstr "好的，再见。"
-
-#: data/json/npcs/refugee_center/surface_staff/NPC_scavenger_docmission.json
 msgid "I-I don't think so, you better leave me alone!"
 msgstr "我、我不这么认为，你最好离我远点！"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientist_docmission.json
+msgid "scientist"
+msgstr "科学家"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientist_docmission.json
+msgid "I hope you're here to help us..."
+msgstr "我希望你是来帮助我们的……"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientist_docmission.json
+msgid "What kind of experiments were you doing here?"
+msgstr "你们在这里做什么样的实验？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientist_docmission.json
+msgid ""
+"We were simply conducting a, er, health survey of the workers at this "
+"facility."
+msgstr "我们只是在对这个设施的工人进行，呃，健康调查。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientist_docmission.json
+msgid "Come on, there's no reason to lie at this point."
+msgstr "拜托，事到如今已经没有撒谎的必要了。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientist_docmission.json
+msgid ""
+"Oh fine.  We were conducting mutation experiments on the test subjects here "
+"in an attempt to unlock the true potential of humanity.  Things didn't "
+"always turn out correctly, of course, but our star specimen should still be "
+"somewhere upstairs.  He's of no use to me now, obviously, but you may want "
+"to watch out for him if you decide to explore the medical wing."
+msgstr ""
+"噢，好吧。我们在这里对实验对象进行变异实验，试图解锁人类的真正潜能。当然，事情并不总是按计划进行，但我们的完美实验体应该还在楼上某个地方。显然，他现在对我没什么用了，但如果你决定探索医疗区，最好还是小心着点他。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientist_docmission.json
+msgid "Wow, was that so hard?"
+msgstr "哇哦，坦白有那么难吗？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientist_docmission.json
+msgid "Lie about what?  I am simply an innocent practitioner of science!"
+msgstr "撒什么谎？我只是个无辜的科学工作者！"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "head scientist"
+msgstr "首席科学家"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "You look like you're very capable."
+msgstr "你看起来很有本事。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "What are you all doing here?"
+msgstr "你们在这里做什么？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "So what will your group do now?"
+msgstr "那你们这群人现在打算怎么办？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+#: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
+msgid "Lets trade."
+msgstr "我們來交易吧。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"As far as I know, we are the last survivors of this trans-coast logistics "
+"center.  We were attacked during our evacuation, and we have barricaded "
+"ourselves here to survive.  I am the head scientist of this facility."
+msgstr ""
+"据我所知，我们是这个跨洋物流中心最后的幸存者了。我们在撤离时遭到了袭击，为了活下去，我们用路障把自己封锁在了这里。我是这个设施的首席科学家。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "Do you know where I could find some classified information?"
+msgstr "你知道我在哪里可以找到一些机密信息吗？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"Very direct are we?  Yes, I in fact hold the only copy of the information "
+"you are likely looking for.  However, they are not for a stranger's eyes."
+msgstr "我们还挺直接的嘛？是的，事实上我手里有你可能正在寻找的信息的唯一副本。然而，这些绝不是给陌生人看的。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "Please, this information could be the key to stopping the Cataclysm."
+msgstr "拜托了，这些信息可能是阻止大灾变的关键。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "You can give it to me or I'll take it."
+msgstr "你可以把它交给我，否则我就硬抢了。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "How can I earn your trust?"
+msgstr "我怎么才能赢得你的信任？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "I'll get back to you about it."
+msgstr "我回头再来找你谈这个。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "I suppose I can make an exception if it is of such importance."
+msgstr "如果它真的如此重要，我想我可以破例。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"I have no desire to make an enemy from you, just take it and leave us be, "
+"that information is worthless now anyways."
+msgstr "我不想与你为敌，你直接拿走然后别来打扰我们吧，反正那些信息现在也一文不值了。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"Sorry, I have clear orders and protocols as head scientist, even in these "
+"extenuating circumstances."
+msgstr "抱歉，作为首席科学家，我受制于明确的命令和协议，即使在这种特殊情况下也是如此。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "Aggression would be a poor choice of action for you."
+msgstr "采取暴力行为对你来说绝非明智之举。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"I am the head scientist of this lab, though that is likely inconsequential "
+"now.  I was instructed by the federal government to perform an emergency "
+"evacuation of this facility, and I was preparing to evacuate when we came "
+"under attack from unknown adversaries.  Our security team tried their best, "
+"but alas many are not much more than civilians given a gun, though how these"
+" adversaries bested our military contingent I am still unsure.  Regardless, "
+"I was able to convene with the people around me, and we fortified this cargo"
+" area to survive."
+msgstr ""
+"哪怕事到如今说这些可能已经没什么意义了，但我曾是这个实验室的首席科学家。我受联邦政府指示，对该设施进行紧急疏散。就在我准备撤离时，我们遭到了未知敌人的袭击。我们的安保团队尽力了，但可悲的是，他们中许多人只不过是配了枪的平民，不过我至今仍不清楚这些敌人是如何击败我们驻军部队的。不管怎样，我成功地和周围的人汇合，我们在这个货物区建立了防御以求生存。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "How long have you been down here?"
+msgstr "你们在这里待了多久了？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"At this point, I am unsure.  We have survived so far by the good grace of "
+"ending up in the cargo zone, where some opportunistic scavenging has "
+"provided us with large supplies of sustenance and some military equipment."
+msgstr "到了现在，我也说不清了。我们能活到现在，多亏了我们最后退守到了货物区，在这里趁机搜刮到的大量食物补给和一些军事装备，让我们撑了下来。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "Why don't you leave?"
+msgstr "你们为什么不离开？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"We are backed into a corner, and we do not have the ammunition to fight our "
+"way out.  Behind us is the dark train network, which stretches for miles and"
+" could contain unimaginable horrors, and in front of us is our former "
+"facility, now infested by zombies and shoot-on-sight automatons.  It is no "
+"great way to live, trapped in a cargo zone, but I believe it is our only "
+"choice."
+msgstr ""
+"我们已经被逼入了绝境，而且我们没有足够的弹药杀出一条血路。在我们身后是黑暗的列车网络，绵延数英里，可能隐藏着无法想象的恐怖；而在我们面前是我们以前的设施，现在已经被丧尸和见人就开火的自动机器人占据了。被困在货物区里确实生不如死，但我相信这是我们唯一的选择。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"Now that you've eliminated the most dangerous threat, I feel confident in "
+"staying down here for the foreseeable future.  This is a well-fortified "
+"location after all, and there are likely years worth of supplies still left "
+"in this facility."
+msgstr "既然你已经消除了最危险的威胁，我就有信心在可预见的未来继续待在这里了。毕竟这里防御严密，而且这个设施里可能还剩下足够我们撑上好几年的物资。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "No worries, I'll be around."
+msgstr "别担心，我会在附近的。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"Well, you have what you wanted, yes?  Those dangerous adversaries are still "
+"present, making any attempt at scavenging much riskier and more difficult.  "
+"We will likely be stuck down here for the foreseeable future, though at "
+"least we should have a large stockpile of supplies close enough that we need"
+" not risk deadly confrontation."
+msgstr ""
+"好了，你得到你想要的了，对吧？那些危险的敌人还在，让任何搜刮尝试都变得更加危险和困难。在可预见的未来，我们很可能要被困在这里了，不过至少我们在近处应该就有大量物资储备，不至于要去冒生命危险与人发生冲突。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+#: data/json/npcs/scrap_trader/scrap_trader.json
+msgid "Well, good luck."
+msgstr "好吧，祝你好运。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "Eliminate the Shadowy Threat"
+msgstr "消除暗影威胁"
+
+#. ~ Description for mission '{'str': 'Eliminate the Shadowy Threat'}'
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"Find and kill the <color_light_blue>shadowy threat</color>. According to the"
+" head scientist, it is likely in the <color_red>security wing</color>."
+msgstr ""
+"寻找并杀死<color_light_blue>暗影威胁</color>。根据首席科学家的说法，它很可能在<color_red>安保区</color>。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "We need help to get rid of this threat…"
+msgstr "我们需要帮助来摆脱这个威胁……"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"Ever since the day we were attacked during the evacuation, we have had to "
+"operate in fear of whatever it was that attacked us.  The shadowy figures "
+"who did it seem to have mostly left the premises since, but every so often "
+"we will spot one during a scavenging run and thus be forced to mount a hasty"
+" retreat.  Unluckily, the figure seems to be most present in the lab's "
+"security zone, where the armories are.  If you will help us by terminating "
+"the threat, I will be willing to give you a copy of the information you "
+"seek."
+msgstr ""
+"自从我们在撤离期间遭到袭击的那一天起，我们就不得不在对那袭击我们的未知生物的恐惧中行事。实施袭击的那些暗影般的身影似乎大部分已经离开了这里，但我们每隔一段时间就会在搜刮物资时发现一个，从而被迫仓皇撤退。不幸的是，那个身影似乎最常出现在实验室的安保区，也就是军械库所在的地方。如果你能帮我们消灭这个威胁，我愿意给你一份你正在寻找的信息。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"Excellent.  Here is the location of the lab's security zone, along with the "
+"floor we last encountered the figure on.  This facility is heavily secured "
+"with ID scanners, you will find these IDs useful for navigating this "
+"facility, and more can be easily found if you run out.  I wish you good "
+"luck, for all our sakes."
+msgstr ""
+"太好了。这是实验室安保区的位置，以及我们上次遇到那个身影的楼层。这个设施有极其严密的ID扫描仪安保，你会发现这些ID卡在探索这个设施时很有用，如果用完了，也很容易找到更多的。为了我们所有人，祝你好运。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "Very well, but do not expect to receive the information you seek…"
+msgstr "很好，但别指望能得到你寻找的信息……"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"I have so far been unable to ascertain the nature of this threat, whether it"
+" be mutant, zombie, or even human.  All that is known is that it is a fast "
+"and deadly fighter that possesses a field of shadow capable of snuffing out "
+"even the brightest lights, as well as incredible durability, effortlessly "
+"ignoring small caliber weapons and being barely fazed by a full-auto M4 "
+"burst.  Even night vision seems to be unable to spot it within its darkness,"
+" but infrared might be able to."
+msgstr ""
+"到目前为止，我还无法确定这种威胁的本质，无论是变异体、丧尸，甚至人类。我们只知道它是一个快速而致命的战士，拥有一片能够吞噬最强光线的暗影力场，同时具有令人难以置信的防御力，可以毫不费力地无视小口径武器，而且即使面对M4步枪的全自动扫射也毫不在乎。甚至连夜视仪似乎也无法在其黑暗中发现它，但红外线也许可以。"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "Is it dead yet?"
+msgstr "它死了吗？"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid ""
+"This is brilliant news indeed!  You have earned my trust and my admiration."
+"  Please take the information with my thanks.  Furthermore, with the threat "
+"removed, we can become more bold with our scavenging, and can perhaps even "
+"sell you some surplus equipment we find!"
+msgstr ""
+"这真是个天大的好消息！你赢得了我的信任和钦佩。请收下这份信息，并接受我的谢意。此外，威胁解除后，我们的搜刮行动可以更加大胆了，甚至也许能把我们找到的一些多余装备卖给你！"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "A likely story..."
+msgstr "听起来像是编的……"
+
+#: data/json/npcs/refugee_center/surface_staff/NPC_scientistquestgiver_docmission.json
+msgid "It was hopeless anyways..."
+msgstr "反正本来也是没有希望的……"
 
 #: data/json/npcs/refugee_center/surface_visitors/NPC_arsonist.json
 msgid "Arsonist"
@@ -163728,10 +164142,6 @@ msgid "You do realize that the front door is just open?"
 msgstr "你知道前门就已经是这么开着的吗？"
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
-msgid "Lets trade."
-msgstr "我們來交易吧。"
-
-#: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid "Know when you'll get another shipment?"
 msgstr "知道下一批货什么时候到吗？"
 
@@ -164376,10 +164786,6 @@ msgid ""
 "Nope, although I have a really good claim by the river.  Gonna go fetch them"
 " soon, be right back in <interval>."
 msgstr "没，不过我在河边占了个好位置。我马上就去把东西取回来，大概<interval>后就回来。"
-
-#: data/json/npcs/scrap_trader/scrap_trader.json
-msgid "Well, good luck."
-msgstr "好吧，祝你好运。"
 
 #: data/json/npcs/scrap_trader/scrap_trader_missions.json
 msgid "Find 5 Microwaves"
@@ -168933,28 +169339,6 @@ msgstr "醫院或者診所應該還有些未曾使用的。"
 #: data/json/obsoletion/missions.json
 msgid "Do you have the flu shot?"
 msgstr "你有沒有流感疫苗?"
-
-#: data/json/obsoletion/missions.json
-msgid "Find Lab Tunnels"
-msgstr "尋找研究所隧道"
-
-#: data/json/obsoletion/missions.json
-msgid ""
-"In the data we found a major contract for tunneling and train equipment, "
-"ordered a long time ago.  It's the best lead we have.  Here's the address of"
-" the government lab where the equipment was delivered.  I want you to go "
-"there, find the tunnels that they dug, and download everything you can about"
-" the train network."
-msgstr ""
-"在那些檔案裡，我們找到一個隧道挖掘與列車設備的重要合約，是在很久以前訂下的。那是我們最好的線索。這裡是政府發送設備到目標研究所的地址。我想你去那裡，找出他們挖掘的隧道，然後下載任何有關鐵路網絡的資料。"
-
-#: data/json/obsoletion/missions.json
-msgid ""
-"The equipment was rated for 50 feet underground, so that tunnel entrance is "
-"going to be deeper inside a lab than a normal subway.  Fifty feet would mean"
-" maybe four stories down.  Bring back anything you find on a USB drive."
-msgstr ""
-"設備是計劃用在地底50英尺，所以研究所的隧道入口會比普通的地下鐡路更深。50英尺即是大約四層樓深。將你找到的東西放進USB隨身碟裡然後帶回來。"
 
 #: data/json/obsoletion/monsters.json
 msgid "deer mouse"
@@ -284318,8 +284702,8 @@ msgid " (fresh)"
 msgstr " (新鮮)"
 
 #: src/item.cpp
-msgid " (very cold)"
-msgstr "（极度冷藏）"
+msgid " (frozen)"
+msgstr "（冷冻）"
 
 #: src/item.cpp
 msgid " (cold)"
