@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-29 18:58+0000\n"
+"POT-Creation-Date: 2026-05-30 21:38+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -99246,11 +99246,12 @@ msgstr[0] "RM802 榴彈發射器"
 msgid ""
 "The Rivtech RM802 pump-action 40mm grenade launcher was designed to be a "
 "step ahead of single-shot grenade launchers by allowing sustained heavy "
-"firepower.  However, its capacity is fairly limited so it must be used with "
-"careful planning."
+"firepower, and its durable alloy receiver allows it to even fire high-"
+"velocity 40x53mm shells in a pinch.  However, its capacity is fairly limited"
+" so it must be used with careful planning."
 msgstr ""
-"Rivtech RM802 是一把泵動式 40mm 榴彈發射器。它能夠裝填多發彈藥以提供持續而強大的火力, 使得其比單發榴彈發射器優勝。儘管如此, "
-"使用時仍需注意其有限的裝彈量。"
+"Rivtech RM802 泵动式 40mm 榴弹发射器的设计初衷是超越单发榴弹发射器，实现持续重火力。其耐用的合金机匣使其在紧急情况下甚至能够发射高速"
+" 40x53mm 榴弹。然而，它的弹容量相对有限，因此使用时必须进行谨慎规划。"
 
 #: data/json/items/gun/40x46mm.json
 msgid "triple-barrel 40mm launcher"
@@ -102119,6 +102120,20 @@ msgstr "h&k416a5"
 msgctxt "gun_type_type"
 msgid "m27iar"
 msgstr "M27 步兵自動步槍"
+
+#: data/json/items/gunmod/conversions.json
+msgid "40x53mm grenade launcher conversion kit"
+msgid_plural "40x53mm grenade launcher conversion kits"
+msgstr[0] "40x53mm 榴弹发射器改装件"
+
+#: data/json/items/gunmod/conversions.json
+msgid ""
+"Given the varied total length of different 40x46mm loads, many launchers can"
+" TECHNICALLY fit 40x53mm high-pressure rounds.  This set of reinforcement "
+"parts allows doing so without it blowing up in your face."
+msgstr ""
+"鉴于不同 40x46mm 弹药的总长度各不相同，许多发射器在技术上确实可以装填 40x53mm "
+"高压弹药。这套强化部件可以允许您这样做，而不用担心它在眼前炸膛。"
 
 #: data/json/items/gunmod/grip.json
 msgid "fluted large grip"
@@ -116140,14 +116155,14 @@ msgstr "被印出來的一串代碼, 能夠用來存取危險廢物堆放場石�
 #: data/json/items/tool/misc.json
 msgid "lab door override code"
 msgid_plural "lab door override codes"
-msgstr[0] ""
+msgstr[0] "实验室门锁覆盖代码"
 
 #. ~ Description for {'str': 'lab door override code'}
 #: data/json/items/tool/misc.json
 msgid ""
 "This printout contains a one-time use emergency override code for any locked"
 " door in a science lab."
-msgstr ""
+msgstr "此打印件包含一个一次性的紧急覆盖代码，可用于解锁科学实验室中任何锁住的门。"
 
 #: data/json/items/tool/misc.json
 msgid "small space heater"
@@ -123388,7 +123403,7 @@ msgstr "入口解鎖"
 #: data/json/mapgen/lab/lab_floorplans_1side.json
 #: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 msgid "ENTER EMERGENCY OVERRIDE CODE"
-msgstr ""
+msgstr "输入紧急覆盖代码"
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans_1side.json
@@ -130305,7 +130320,7 @@ msgstr "阴影笼罩着这个生物，但你仍能隐约分辨出那曾经是一
 #: data/json/monsters/zed_lab.json
 msgid "zombie lab administrator"
 msgid_plural "zombie lab administrators"
-msgstr[0] ""
+msgstr[0] "丧尸实验室管理员"
 
 #. ~ Description for {'str': 'zombie lab administrator'}
 #: data/json/monsters/zed_lab.json
@@ -130315,6 +130330,7 @@ msgid ""
 "most of its IDs are useless now that the lab is on lockdown, it likely still"
 " carries a useful door override code."
 msgstr ""
+"这只丧尸身穿实验服，上面显眼地挂着一排徽章，生前可能曾是该实验室的主管或管理员。尽管由于实验室目前处于封锁状态，它的大部分身份证件已失去作用，但它身上很可能仍携带着有用的门锁覆盖代码。"
 
 #: data/json/monsters/zed_lab.json
 msgid "zombie security guard"
@@ -270818,7 +270834,7 @@ msgstr ""
 
 #: src/computer_session.cpp
 msgid "Override code required!  Press any key…"
-msgstr ""
+msgstr "需要覆盖代码！请按任意键……"
 
 #. ~ 1st: query string, 2nd-4th: keybinding descriptions
 #: src/computer_session.cpp
@@ -278097,18 +278113,6 @@ msgid "You don't have a suitable container for carrying %s."
 msgstr "你沒有可以容納 %s 的容器。"
 
 #: src/game_inventory.cpp
-msgid "Can't pick up spilt liquids"
-msgstr "無法撿起溢出的液體"
-
-#: src/game_inventory.cpp
-msgid "Too big to pick up"
-msgstr "無法撿取太大的物品"
-
-#: src/game_inventory.cpp
-msgid "Too heavy to pick up"
-msgstr "無法撿取太重的物品"
-
-#: src/game_inventory.cpp
 msgid "YIELD"
 msgstr "獲得"
 
@@ -278497,6 +278501,18 @@ msgstr "要丟棄 x 個物品, 輸入數量接著選擇物品。"
 #: src/game_inventory.cpp
 msgid "You have nothing to drop."
 msgstr "你沒有可以丟棄的東西。"
+
+#: src/game_inventory.cpp
+msgid "Multipickup"
+msgstr ""
+
+#: src/game_inventory.cpp
+msgid "To pickup x items, type a number before selecting."
+msgstr ""
+
+#: src/game_inventory.cpp
+msgid "You have nothing to pickup."
+msgstr ""
 
 #: src/game_inventory.cpp
 msgid "Select two items to compare them."
@@ -283356,6 +283372,18 @@ msgstr "你的 %s 因為生鏽而損壞了。"
 msgctxt "count"
 msgid "%1$d of %2$d"
 msgstr "%1$d 個從 %2$d 個"
+
+#: src/inventory_ui.cpp
+msgid "Can't pick up spilt liquids"
+msgstr "無法撿起溢出的液體"
+
+#: src/inventory_ui.cpp
+msgid "Too big to pick up"
+msgstr "無法撿取太大的物品"
+
+#: src/inventory_ui.cpp
+msgid "Too heavy to pick up"
+msgstr "無法撿取太重的物品"
 
 #: src/inventory_ui.cpp
 #, c-format
@@ -302367,6 +302395,16 @@ msgid ""
 "If true, Advanced Inventory Manager filters will be reset when leaving the "
 "menu"
 msgstr "开启后，在退出菜单时，高级物品管理器的筛选器将会被重置。"
+
+#: src/options.cpp
+msgid "Use new pickup menu ui (EXPERIMENTAL)"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Whether to use the new or old pickup menu ui. WARNING: Is experimental "
+"feature"
+msgstr ""
 
 #: src/options.cpp
 msgid "Move view offset"
