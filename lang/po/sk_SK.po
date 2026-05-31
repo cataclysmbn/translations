@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-30 21:38+0000\n"
+"POT-Creation-Date: 2026-05-31 05:19+0000\n"
 "Last-Translator: Krwak, 2026\n"
 "Language-Team: Slovak (Slovakia) (https://app.transifex.com/bn-team/teams/113585/sk_SK/)\n"
 "MIME-Version: 1.0\n"
@@ -158554,10 +158554,15 @@ msgid ""
 msgstr ""
 
 #: data/json/npcs/TALK_CYBORG_1.json
-#: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
 msgid ""
-"For all you know, I did.  I'm being nice for now.  You'd better hope that it"
-" lasts."
+"I could be, but honestly, you're in no condition to make it out there. "
+"Trusting me is your only real option for survival."
+msgstr ""
+
+#: data/json/npcs/TALK_CYBORG_1.json
+msgid ""
+"For all you know, I am.  I'm being nice for now.  You'd better hope that it "
+"lasts."
 msgstr ""
 
 #: data/json/npcs/TALK_CYBORG_1.json
@@ -212238,6 +212243,12 @@ msgstr ""
 
 #: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
 msgid "I went to a lot of trouble to provide you with a body."
+msgstr ""
+
+#: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
+msgid ""
+"For all you know, I did.  I'm being nice for now.  You'd better hope that it"
+" lasts."
 msgstr ""
 
 #: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
@@ -287103,26 +287114,17 @@ msgid ""
 "*avy fle*fi*arrow     multiple * are allowed\n"
 "heAVY*woOD*arrOW      case insensitive search\n"
 "\n"
-"Pickup based on item materials:\n"
+"Pickup using:\n"
+"c:food          matches item in category food\n"
 "m:kevlar        matches items made of Kevlar\n"
 "M:copper        matches items made purely of copper\n"
-"M:steel,iron    multiple materials allowed (OR search)"
+"q:drilling      matches items with drilling qualites\n"
+"k:fabrication   matches books that teach fabrication\n"
+"b:c:food;*meat* matches items that are foods and *meat*"
 msgstr ""
 
 #: src/auto_pickup.cpp
 msgid "Pickup Rule:"
-msgstr ""
-
-#: src/auto_pickup.cpp
-msgid " AUTO PICKUP MANAGER "
-msgstr ""
-
-#: src/auto_pickup.cpp src/safemode_ui.cpp
-msgid "[<Global>]"
-msgstr ""
-
-#: src/auto_pickup.cpp src/safemode_ui.cpp
-msgid "[<Character>]"
 msgstr ""
 
 #: src/auto_pickup.cpp
@@ -287136,6 +287138,18 @@ msgstr[3] ""
 
 #: src/auto_pickup.cpp
 msgid "Won't display content or suffix matches"
+msgstr ""
+
+#: src/auto_pickup.cpp
+msgid " AUTO PICKUP MANAGER "
+msgstr ""
+
+#: src/auto_pickup.cpp src/safemode_ui.cpp
+msgid "[<Global>]"
+msgstr ""
+
+#: src/auto_pickup.cpp src/safemode_ui.cpp
+msgid "[<Character>]"
 msgstr ""
 
 #: src/auto_pickup.cpp
@@ -297659,16 +297673,16 @@ msgid "World retained.  Characters remaining:%s"
 msgstr ""
 
 #: src/game.cpp
+#, c-format
+msgid "The %s is dangerously close!"
+msgstr ""
+
+#: src/game.cpp
 msgid "Wait till you wake up…"
 msgstr ""
 
 #: src/game.cpp
 msgid "Travelling…"
-msgstr ""
-
-#: src/game.cpp
-#, c-format
-msgid "The %s is dangerously close!"
 msgstr ""
 
 #: src/game.cpp
@@ -325207,6 +325221,18 @@ msgid ""
 "Highest LOD tier that participates in group-morale and swarming "
 "calculations.  0 = Tier-0 only (default, cheapest).  1 = Tier-0 and Tier-1 "
 "monsters also run group-morale/swarm checks. "
+msgstr ""
+
+#: src/options.cpp
+msgid "Activity Skip Monster Gate"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Highest real monster LOD tier allowed to run activity-skip AI.  Allowed "
+"monsters act one LOD tier less detailed than normal.  0 lets only Tier-0 "
+"monsters act as Tier-1.  1 lets Tier-0 and Tier-1 monsters act as Tier-1 and"
+" Tier-2, which is the default.  2 also lets Tier-2 monsters run macro AI."
 msgstr ""
 
 #: src/options.cpp

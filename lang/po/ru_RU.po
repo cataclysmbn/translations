@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-30 21:38+0000\n"
+"POT-Creation-Date: 2026-05-31 05:19+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -178253,13 +178253,16 @@ msgstr ""
 "появилось самостоятельное мышление."
 
 #: data/json/npcs/TALK_CYBORG_1.json
-#: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
 msgid ""
-"For all you know, I did.  I'm being nice for now.  You'd better hope that it"
-" lasts."
+"I could be, but honestly, you're in no condition to make it out there. "
+"Trusting me is your only real option for survival."
 msgstr ""
-"Да будет тебе известно, да. Пока что у меня хорошее настроение. Надейся, что"
-" оно будет хорошим и далее."
+
+#: data/json/npcs/TALK_CYBORG_1.json
+msgid ""
+"For all you know, I am.  I'm being nice for now.  You'd better hope that it "
+"lasts."
+msgstr ""
 
 #: data/json/npcs/TALK_CYBORG_1.json
 #: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
@@ -242241,6 +242244,14 @@ msgstr "…Это просто ещё одна чёртова пытка, да?!
 #: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
 msgid "I went to a lot of trouble to provide you with a body."
 msgstr "Мне пришлось влезть в кучу неприятностей, чтобы достать тебе тело."
+
+#: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
+msgid ""
+"For all you know, I did.  I'm being nice for now.  You'd better hope that it"
+" lasts."
+msgstr ""
+"Да будет тебе известно, да. Пока что у меня хорошее настроение. Надейся, что"
+" оно будет хорошим и далее."
 
 #: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
 msgid ""
@@ -321427,39 +321438,18 @@ msgid ""
 "*avy fle*fi*arrow     multiple * are allowed\n"
 "heAVY*woOD*arrOW      case insensitive search\n"
 "\n"
-"Pickup based on item materials:\n"
+"Pickup using:\n"
+"c:food          matches item in category food\n"
 "m:kevlar        matches items made of Kevlar\n"
 "M:copper        matches items made purely of copper\n"
-"M:steel,iron    multiple materials allowed (OR search)"
+"q:drilling      matches items with drilling qualites\n"
+"k:fabrication   matches books that teach fabrication\n"
+"b:c:food;*meat* matches items that are foods and *meat*"
 msgstr ""
-"* используется для подстановки. Примеры:\n"
-"\n"
-"деревянная стрела совпадает с именем предмета\n"
-"дер* совпадает для всех предметов, начинающихся с дер\n"
-"*рела совпадает для всех предметов, кончающихся на рела\n"
-"строки типа де*я ст*а также разрешены\n"
-"дЕр*Вя*Ая Ст*Ела регистронезависимый поиск\n"
-"\n"
-"Поднимание вещей, основанное на материалах:\n"
-"m:кевлар означает вещь, сделанную из кевлара\n"
-"M:медь подразумевает вещь, сделанную из чистой меди\n"
-"M:сталь,железо разрешено несколько материалов (ИЛИ поиск)"
 
 #: src/auto_pickup.cpp
 msgid "Pickup Rule:"
 msgstr "Правило подбора:"
-
-#: src/auto_pickup.cpp
-msgid " AUTO PICKUP MANAGER "
-msgstr " НАСТРОЙКА АВТОПОДБОРА "
-
-#: src/auto_pickup.cpp src/safemode_ui.cpp
-msgid "[<Global>]"
-msgstr "[<Общие>]"
-
-#: src/auto_pickup.cpp src/safemode_ui.cpp
-msgid "[<Character>]"
-msgstr "[<Персонаж>]"
 
 #: src/auto_pickup.cpp
 #, c-format
@@ -321473,6 +321463,18 @@ msgstr[3] "%1$d предмет подходит: %2$s"
 #: src/auto_pickup.cpp
 msgid "Won't display content or suffix matches"
 msgstr "Не отображаются совпадения по содержимому или по суффиксам"
+
+#: src/auto_pickup.cpp
+msgid " AUTO PICKUP MANAGER "
+msgstr " НАСТРОЙКА АВТОПОДБОРА "
+
+#: src/auto_pickup.cpp src/safemode_ui.cpp
+msgid "[<Global>]"
+msgstr "[<Общие>]"
+
+#: src/auto_pickup.cpp src/safemode_ui.cpp
+msgid "[<Character>]"
+msgstr "[<Персонаж>]"
 
 #: src/auto_pickup.cpp
 msgid "Autopickup is not enabled in the options.  Enable it now?"
@@ -332345,17 +332347,17 @@ msgid "World retained.  Characters remaining:%s"
 msgstr "Мир сохранён. Оставшиеся персонажи:%s"
 
 #: src/game.cpp
+#, c-format
+msgid "The %s is dangerously close!"
+msgstr "%s опасно близко!"
+
+#: src/game.cpp
 msgid "Wait till you wake up…"
 msgstr "Ожидайте, пока ваш персонаж не проснётся…"
 
 #: src/game.cpp
 msgid "Travelling…"
 msgstr "Перемещение…"
-
-#: src/game.cpp
-#, c-format
-msgid "The %s is dangerously close!"
-msgstr "%s опасно близко!"
 
 #: src/game.cpp
 #, c-format
@@ -361170,6 +361172,18 @@ msgstr ""
 "духа и сбора в скопление. 0 = Только уровень 0 (по умолчанию, самый "
 "экономичный). 1 = Монстры уровней 0 и 1 также проходят проверку группового "
 "морального духа и скоплений."
+
+#: src/options.cpp
+msgid "Activity Skip Monster Gate"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Highest real monster LOD tier allowed to run activity-skip AI.  Allowed "
+"monsters act one LOD tier less detailed than normal.  0 lets only Tier-0 "
+"monsters act as Tier-1.  1 lets Tier-0 and Tier-1 monsters act as Tier-1 and"
+" Tier-2, which is the default.  2 also lets Tier-2 monsters run macro AI."
+msgstr ""
 
 #: src/options.cpp
 msgid "3D Field of Vision"

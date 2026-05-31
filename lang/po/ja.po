@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-30 21:38+0000\n"
+"POT-Creation-Date: 2026-05-31 05:19+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -141470,11 +141470,16 @@ msgid ""
 msgstr "ただ言う事を聞かせたかっただけなら、チップを抜き取るなんて面倒なことはしなかったよ。"
 
 #: data/json/npcs/TALK_CYBORG_1.json
-#: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
 msgid ""
-"For all you know, I did.  I'm being nice for now.  You'd better hope that it"
-" lasts."
-msgstr "ことによると、悪人かもな。今の所は優しくしてやっているんだから、大人しく従っておけ。"
+"I could be, but honestly, you're in no condition to make it out there. "
+"Trusting me is your only real option for survival."
+msgstr ""
+
+#: data/json/npcs/TALK_CYBORG_1.json
+msgid ""
+"For all you know, I am.  I'm being nice for now.  You'd better hope that it "
+"lasts."
+msgstr ""
 
 #: data/json/npcs/TALK_CYBORG_1.json
 #: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
@@ -195640,6 +195645,12 @@ msgstr "...これもただの拷問じゃないか！"
 #: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
 msgid "I went to a lot of trouble to provide you with a body."
 msgstr "その肉体の材料を集めるのに散々苦労したんだ。"
+
+#: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
+msgid ""
+"For all you know, I did.  I'm being nice for now.  You'd better hope that it"
+" lasts."
+msgstr "ことによると、悪人かもな。今の所は優しくしてやっているんだから、大人しく従っておけ。"
 
 #: data/mods/Aftershock/npcs/Backgrounds/talk_cyborg_abomination.json
 msgid ""
@@ -265064,27 +265075,28 @@ msgid ""
 "*avy fle*fi*arrow     multiple * are allowed\n"
 "heAVY*woOD*arrOW      case insensitive search\n"
 "\n"
-"Pickup based on item materials:\n"
+"Pickup using:\n"
+"c:food          matches item in category food\n"
 "m:kevlar        matches items made of Kevlar\n"
 "M:copper        matches items made purely of copper\n"
-"M:steel,iron    multiple materials allowed (OR search)"
+"q:drilling      matches items with drilling qualites\n"
+"k:fabrication   matches books that teach fabrication\n"
+"b:c:food;*meat* matches items that are foods and *meat*"
 msgstr ""
-"*キーはワイルドカードとして使う。例: \n"
-"\n"
-"wooden arrow 完全一致検索\n"
-"wooden ar* 前方一致検索\n"
-"*rrow 後方一致検索\n"
-"*avy fle*fi*arrow 複数のワイルドカード\n"
-"heAVY*woOD*arrOW 大文字/小文字を区別せず検索\n"
-"\n"
-"素材に基づくアイテム拾得\n"
-"m:ケブラー 小文字で特定素材が含まれるアイテム\n"
-"M:銅 大文字で特定素材のみのアイテム\n"
-"M:鋼鉄,鉄 複数素材のOR検索"
 
 #: src/auto_pickup.cpp
 msgid "Pickup Rule:"
 msgstr "拾得規則: "
+
+#: src/auto_pickup.cpp
+#, c-format
+msgid "%1$d item matches: %2$s"
+msgid_plural "%1$d items match: %2$s"
+msgstr[0] "%1$d個のアイテムが一致: %2$s"
+
+#: src/auto_pickup.cpp
+msgid "Won't display content or suffix matches"
+msgstr "容器アイテムと接尾辞を表示しない"
 
 #: src/auto_pickup.cpp
 msgid " AUTO PICKUP MANAGER "
@@ -265097,16 +265109,6 @@ msgstr "[<Global>]"
 #: src/auto_pickup.cpp src/safemode_ui.cpp
 msgid "[<Character>]"
 msgstr "[<Character>]"
-
-#: src/auto_pickup.cpp
-#, c-format
-msgid "%1$d item matches: %2$s"
-msgid_plural "%1$d items match: %2$s"
-msgstr[0] "%1$d個のアイテムが一致: %2$s"
-
-#: src/auto_pickup.cpp
-msgid "Won't display content or suffix matches"
-msgstr "容器アイテムと接尾辞を表示しない"
 
 #: src/auto_pickup.cpp
 msgid "Autopickup is not enabled in the options.  Enable it now?"
@@ -275654,17 +275656,17 @@ msgid "World retained.  Characters remaining:%s"
 msgstr "世界が保存された。残っているキャラクター:%s"
 
 #: src/game.cpp
+#, c-format
+msgid "The %s is dangerously close!"
+msgstr "%sが至近距離に迫っている！"
+
+#: src/game.cpp
 msgid "Wait till you wake up…"
 msgstr "睡眠中..."
 
 #: src/game.cpp
 msgid "Travelling…"
 msgstr "移動中"
-
-#: src/game.cpp
-#, c-format
-msgid "The %s is dangerously close!"
-msgstr "%sが至近距離に迫っている！"
 
 #: src/game.cpp
 #, c-format
@@ -303252,6 +303254,18 @@ msgid ""
 "Highest LOD tier that participates in group-morale and swarming "
 "calculations.  0 = Tier-0 only (default, cheapest).  1 = Tier-0 and Tier-1 "
 "monsters also run group-morale/swarm checks. "
+msgstr ""
+
+#: src/options.cpp
+msgid "Activity Skip Monster Gate"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Highest real monster LOD tier allowed to run activity-skip AI.  Allowed "
+"monsters act one LOD tier less detailed than normal.  0 lets only Tier-0 "
+"monsters act as Tier-1.  1 lets Tier-0 and Tier-1 monsters act as Tier-1 and"
+" Tier-2, which is the default.  2 also lets Tier-2 monsters run macro AI."
 msgstr ""
 
 #: src/options.cpp
