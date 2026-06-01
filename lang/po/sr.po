@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-05-31 05:19+0000\n"
+"POT-Creation-Date: 2026-06-01 21:36+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Serbian (https://app.transifex.com/bn-team/teams/113585/sr/)\n"
 "MIME-Version: 1.0\n"
@@ -19104,6 +19104,36 @@ msgstr ""
 
 #: data/json/professions.json
 msgctxt "profession_male"
+msgid "Military Corpsman"
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_female"
+msgid "Military Corpsman"
+msgstr ""
+
+#. ~ Profession (male Military Corpsman) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You were trained to keep your platoon in top shape, while still having to "
+"lug all the same kit as any other soldier alongside your medical supplies.  "
+"Now you're on your own against the undead, and that rifle they saddled you "
+"with is your only line of defense."
+msgstr ""
+
+#. ~ Profession (female Military Corpsman) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You were trained to keep your platoon in top shape, while still having to "
+"lug all the same kit as any other soldier alongside your medical supplies.  "
+"Now you're on your own against the undead, and that rifle they saddled you "
+"with is your only line of defense."
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_male"
 msgid "Special Operator"
 msgstr ""
 
@@ -25460,6 +25490,34 @@ msgid ""
 " armor, and gear the online forums said you would need to survive.  However,"
 " you never actually learned how to use any of it, and now that the Cataclysm"
 " is actually here, you're gonna have to figure it out quickly."
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_male"
+msgid "RANDOMISED: Melee survivor"
+msgstr ""
+
+#: data/json/professions.json
+msgctxt "profession_female"
+msgid "RANDOMISED: Melee survivor"
+msgstr ""
+
+#. ~ Profession (male RANDOMISED: Melee survivor) description
+#: data/json/professions.json
+msgctxt "prof_desc_male"
+msgid ""
+"You've looted a random assortment of intact armor and a pristine weapon from"
+" the overly hungry folk, but will it be enough?  (Note: What you see in "
+"character creator IS NOT what you get in game!)"
+msgstr ""
+
+#. ~ Profession (female RANDOMISED: Melee survivor) description
+#: data/json/professions.json
+msgctxt "prof_desc_female"
+msgid ""
+"You've looted a random assortment of intact armor and a pristine weapon from"
+" the overly hungry folk, but will it be enough?  (Note: What you see in "
+"character creator IS NOT what you get in game!)"
 msgstr ""
 
 #: data/json/professions.json
@@ -93525,9 +93583,23 @@ msgstr[2] ""
 #. ~ Description for {'str': 'first aid kit'}
 #: data/json/items/comestibles/med.json
 msgid ""
-"A full medical kit, with bandages, local anesthetics, and rapid healing "
-"agents.  Used for healing large amounts of damage.  Disassemble to get its "
-"content."
+"A compact medical kit containing bandages and antiseptic.  Used for healing "
+"large amounts of damage.  Disassemble to get its content."
+msgstr ""
+
+#: data/json/items/comestibles/med.json
+msgid "deluxe first aid kit"
+msgid_plural "deluxe first aid kits"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'deluxe first aid kit'}
+#: data/json/items/comestibles/med.json
+msgid ""
+"A full medical kit, with bandages, antiseptic, local analgesics, and basic "
+"medical tools.  Used for healing large amounts of damage.  Disassemble to "
+"get its content."
 msgstr ""
 
 #: data/json/items/comestibles/med.json
@@ -93551,21 +93623,21 @@ msgid ""
 msgstr ""
 
 #: data/json/items/comestibles/med.json
-msgid "Nerve dampening tablet"
-msgid_plural "Nerve dampening tablets"
+msgid "nerve dampening tablet"
+msgid_plural "nerve dampening tablets"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#. ~ Use action activation_message for Nerve dampening tablet.
+#. ~ Use action activation_message for nerve dampening tablet.
 #: data/json/items/comestibles/med.json
 msgid "You pop a nerve dampening tablet."
 msgstr ""
 
-#. ~ Description for Nerve dampening tablet
+#. ~ Description for nerve dampening tablet
 #: data/json/items/comestibles/med.json
 msgid ""
-"A chemical that surpresses pain response, made from alien fungal tissues.  "
+"A chemical that suppresses pain response, made from alien fungal tissues.  "
 "Without a central nervous system, the only thing fungus can feel is rage.  "
 "Seems to be safe from spore infection, though there still might be "
 "unpleasant effects after it wears off…"
@@ -94425,8 +94497,8 @@ msgstr[2] ""
 #. ~ Description for saline solution
 #: data/json/items/comestibles/med.json
 msgid ""
-"A solution of sterilized water and salt for intravenous infusion or washing "
-"contaminants from one's eyes."
+"A solution of sterilized water and salt for intravenous infusion.  Can be "
+"used to flush contaminants from wounds."
 msgstr ""
 
 #: data/json/items/comestibles/med.json
@@ -277918,29 +277990,14 @@ msgid ""
 "*avy fle*fi*arrow     multiple * are allowed\n"
 "heAVY*woOD*arrOW      case insensitive search\n"
 "\n"
-"Pickup using:\n"
-"c:food          matches item in category food\n"
+"Pickup based on item materials:\n"
 "m:kevlar        matches items made of Kevlar\n"
 "M:copper        matches items made purely of copper\n"
-"q:drilling      matches items with drilling qualites\n"
-"k:fabrication   matches books that teach fabrication\n"
-"b:c:food;*meat* matches items that are foods and *meat*"
+"M:steel,iron    multiple materials allowed (OR search)"
 msgstr ""
 
 #: src/auto_pickup.cpp
 msgid "Pickup Rule:"
-msgstr ""
-
-#: src/auto_pickup.cpp
-#, c-format
-msgid "%1$d item matches: %2$s"
-msgid_plural "%1$d items match: %2$s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: src/auto_pickup.cpp
-msgid "Won't display content or suffix matches"
 msgstr ""
 
 #: src/auto_pickup.cpp
@@ -277953,6 +278010,18 @@ msgstr ""
 
 #: src/auto_pickup.cpp src/safemode_ui.cpp
 msgid "[<Character>]"
+msgstr ""
+
+#: src/auto_pickup.cpp
+#, c-format
+msgid "%1$d item matches: %2$s"
+msgid_plural "%1$d items match: %2$s"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/auto_pickup.cpp
+msgid "Won't display content or suffix matches"
 msgstr ""
 
 #: src/auto_pickup.cpp
@@ -301644,7 +301713,7 @@ msgstr ""
 msgid "Closest"
 msgstr ""
 
-#: src/iuse_actor.cpp
+#: src/iuse_actor.cpp src/title_screen.cpp
 msgid "Random"
 msgstr ""
 
@@ -307965,7 +308034,7 @@ msgstr ""
 msgid "NO CATEGORY"
 msgstr ""
 
-#: src/mod_manager.cpp
+#: src/mod_manager.cpp src/title_screen.cpp
 msgid "Default"
 msgstr ""
 
@@ -314546,6 +314615,14 @@ msgstr ""
 
 #: src/options.cpp
 msgid "Switch Language."
+msgstr ""
+
+#: src/options.cpp
+msgid "Title screen"
+msgstr ""
+
+#: src/options.cpp
+msgid "Title screen ASCII art to display on the main menu."
 msgstr ""
 
 #: src/options.cpp
