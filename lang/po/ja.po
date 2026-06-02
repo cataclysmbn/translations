@@ -3,14 +3,14 @@
 # やまねこ, 2026
 # jacli mouber, 2026
 # pigmentblue15, 2026
-# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # Neko Sippo, 2026
+# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-01 21:36+0000\n"
-"Last-Translator: Neko Sippo, 2026\n"
+"POT-Creation-Date: 2026-06-02 22:43+0000\n"
+"Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -8451,6 +8451,15 @@ msgid "You are invisible."
 msgstr "透明化している。"
 
 #: data/json/effects.json
+msgid "Enhanced Clairvoyance"
+msgstr ""
+
+#. ~ Description of effect 'Enhanced Clairvoyance'.
+#: data/json/effects.json src/game.cpp
+msgid "You can see through walls!"
+msgstr "壁を透視出来るようになった！"
+
+#: data/json/effects.json
 msgid "Debug Clairvoyance"
 msgstr "千里眼(デバッグ)"
 
@@ -9067,7 +9076,7 @@ msgstr "喘息治療薬服用"
 msgid "You have taken an antiasthmatic drug recently."
 msgstr "喘息治療薬を服用した。"
 
-#: data/json/effects.json
+#: data/json/effects.json data/json/legacy_artifact_passive.json
 msgid "Being Watched"
 msgstr "視線"
 
@@ -9077,6 +9086,11 @@ msgid ""
 "You can't shake the feeling that something out there is watching you.  "
 "Something big…"
 msgstr "何かに見られているような気がする…"
+
+#. ~ Apply message for effect(s) 'Being Watched'.
+#: data/json/effects.json
+msgid "You feel like you're being watched…"
+msgstr ""
 
 #. ~ Remove message for effect(s) 'Being Watched'.
 #: data/json/effects.json
@@ -10979,6 +10993,10 @@ msgstr "濃い殺虫ガス"
 #: data/json/field_type.json
 msgid "smoke vent"
 msgstr "煙噴出孔"
+
+#: data/json/field_type.json
+msgid "mysterious fog"
+msgstr ""
 
 #. ~ info for JSON flag 'ACTIVE_CLOAKING'
 #: data/json/flags.json
@@ -13635,6 +13653,11 @@ msgstr "イイイヴィィィィィィル！"
 #: data/json/legacy_artifact_passive.json
 msgid "You debugged in this spell!  It makes you evil for 30 minutes."
 msgstr "この呪文はデバッグ用！30分間、邪悪な状態になる。"
+
+#. ~ Description for Being Watched
+#: data/json/legacy_artifact_passive.json
+msgid "Grants nether attention for 30 minutes."
+msgstr ""
 
 #: data/json/loot_zones.json
 msgid "Loot: Unsorted"
@@ -29798,7 +29821,6 @@ msgstr "[ゼーゼーと苦しそうに息を詰まらせる音。]"
 msgid "a snapping sound."
 msgstr "パチン。"
 
-#. ~ Beeper sound
 #: data/json/speech.json src/iexamine.cpp src/iuse_actor.cpp
 #: src/vehicle_use.cpp
 msgid "beep!"
@@ -33606,8 +33628,7 @@ msgid "dissector"
 msgstr "解剖器具"
 
 #. ~ Trap-vehicle collision message for trap 'dissector'
-#. ~ the sound of a dissector dissecting
-#: data/json/traps.json src/trapfunc.cpp
+#: data/json/traps.json
 msgid "BRZZZAP!"
 msgstr "キュィィィン！"
 
@@ -34150,6 +34171,21 @@ msgid ""
 msgstr ""
 "小さくも予想外に重たい、結晶状のビスマスでできたらしいナイフ。虹色に輝く長方形の模様が、刃先に向かってフラクタル状に渦巻いている。見つめるたびに結晶は変化し、急速に成長し、融合しては再び形を成している。"
 
+#: data/json/artifact/premade_artifacts.json
+msgid "onyx eye"
+msgid_plural "onyx eyes"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'onyx eye'}
+#: data/json/artifact/premade_artifacts.json
+msgid ""
+"A small, light gemstone made of an unknown pitch black material.  The gem's "
+"surface is lined with cracks, through which a blinding white light shines "
+"through.  Holding it gives you profound, indescribable perspective, as "
+"countless worlds along with your own flash before you, all somehow equally "
+"discernible.  However, you get the feeling you aren't the only one looking…"
+msgstr ""
+
 #: data/json/construction/construct.json
 #: data/json/construction/construct_deco.json
 #: data/json/construction/construct_furn.json
@@ -34295,6 +34331,7 @@ msgstr "敵がいなければ、射撃は射程内で最初に見つかる練習
 
 #: data/json/construction/construct_furn.json
 #: data/json/construction/construct_workshop.json
+#: data/mods/Aftershock/construction/construction.json
 msgid ""
 "Will only work if constructed in/on a building that has an electric grid "
 "with a mounted battery."
@@ -34444,6 +34481,7 @@ msgstr "巨大で無骨な金属製の冷蔵装置で広範囲の冷却用とし
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/mapgen/city_blocks/urban_37_office_tower_beehive.json
 #: data/json/obsoletion/uncategorized.json
+#: data/mods/Aftershock/furniture_and_terrain/furniture-appliances.json
 #: data/mods/MagicalNights/furniture.json data/mods/pride_flags/furniture.json
 msgid "metal screeching!"
 msgstr "[金属が軋む音]"
@@ -34476,6 +34514,7 @@ msgstr "[金属が軋む音]"
 #: data/json/furniture_and_terrain/terrain-zlevel-transitions.json
 #: data/json/mapgen/city_blocks/urban_37_office_tower_beehive.json
 #: data/json/obsoletion/uncategorized.json
+#: data/mods/Aftershock/furniture_and_terrain/furniture-appliances.json
 #: data/mods/MagicalNights/furniture.json data/mods/pride_flags/furniture.json
 msgid "clang!"
 msgstr "ガン！"
@@ -34945,6 +34984,7 @@ msgstr "設置済みの風力タービン発電装置。"
 #: data/json/furniture_and_terrain/terrain-windows.json
 #: data/json/obsoletion/uncategorized.json
 #: data/mods/MagicalNights/terrain.json data/mods/pride_flags/furniture.json
+#: src/melee.cpp
 msgid "whack!"
 msgstr "バシッ！"
 
@@ -124663,6 +124703,15 @@ msgstr ""
 msgid "Summons woodland protector."
 msgstr ""
 
+#: data/json/monster_special_attacks/spells.json
+msgid "Ink Spray"
+msgstr ""
+
+#. ~ Description for {'str': 'Ink Spray'}
+#: data/json/monster_special_attacks/spells.json
+msgid "Used by the kraken boss to blind."
+msgstr ""
+
 #: data/json/monsters/bird.json
 msgid "chicken"
 msgid_plural "chickens"
@@ -126055,6 +126104,25 @@ msgid ""
 "found.  It has shimmering green scales and a mouth lined with three jagged "
 "rows of razor-sharp teeth."
 msgstr "汚染された場所に群れをなす、コイの大型変異種だ。きらめく緑の鱗と、カミソリのように鋭いギザギザの歯が三列に並んだ口を持つ。"
+
+#: data/json/monsters/fish.json
+msgid "kraken"
+msgid_plural "krakens"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'kraken'}
+#: data/json/monsters/fish.json
+msgid ""
+"A creature of terror from old sailor legend, said to be able to bring down "
+"entire ships and swallow a crew whole.  You were sure it was just a legend, "
+"but now, seeing this beast's massive, razored tentacles rise from the water,"
+" you aren't so sure."
+msgstr ""
+
+#. ~ Attack message of monster "{'str': 'kraken'}"'s spell "None"
+#: data/json/monsters/fish.json
+msgid "The kraken sprays thick, blinding ink!"
+msgstr ""
 
 #: data/json/monsters/fungus.json data/mods/Limit Fungal Growth/modinfo.json
 msgid "fungal boomer"
@@ -190015,6 +190083,54 @@ msgstr "「ブブブブブ」"
 #: data/mods/Aftershock/start_locations.json
 msgid "Robot Dispatch Center"
 msgstr "ロボット派遣センター"
+
+#: data/mods/Aftershock/construction/construction_group.json
+msgid "Place cooking rig"
+msgstr ""
+
+#: data/mods/Aftershock/construction/construction_group.json
+msgid "Place KitchenMaster Cooking Buddy"
+msgstr ""
+
+#: data/mods/Aftershock/construction/construction_group.json
+msgid "Place MetalMaster forge buddy"
+msgstr ""
+
+#: data/mods/Aftershock/furniture_and_terrain/furniture-appliances.json
+msgid "grid cooking rig"
+msgstr ""
+
+#. ~ Description for grid cooking rig
+#: data/mods/Aftershock/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An all-in-one kitchen unit and chemistry lab, wired into the building's "
+"electric grid.  If you attempt to craft an item that needs one of its "
+"functions, it will automatically be selected as a tool."
+msgstr ""
+
+#: data/mods/Aftershock/furniture_and_terrain/furniture-appliances.json
+msgid "grid KitchenMaster cooking buddy"
+msgstr ""
+
+#. ~ Description for grid KitchenMaster cooking buddy
+#: data/mods/Aftershock/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An all-in-one kitchen unit, chemistry lab, and food preparation area, wired "
+"into the building's electric grid.  If you attempt to craft an item that "
+"needs one of its functions, it will automatically be selected as a tool."
+msgstr ""
+
+#: data/mods/Aftershock/furniture_and_terrain/furniture-appliances.json
+msgid "grid MetalMaster forge buddy"
+msgstr ""
+
+#. ~ Description for grid MetalMaster forge buddy
+#: data/mods/Aftershock/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"A welding and metalworking station, wired into the building's electric grid."
+" 'e'xamine the forge rig to utilize its welder or soldering iron; you'll "
+"still need glare protection."
+msgstr ""
 
 #: data/mods/Aftershock/items/ammo.json
 #: data/mods/Aftershock/items/ammo_type.json
@@ -261748,8 +261864,6 @@ msgstr "自動運転を中止した。"
 msgid "You have reached your destination."
 msgstr "目的地に到着した。"
 
-#. ~ Sound of a shovel digging a pit at work!
-#. ~ Sound of a shovel filling a pit or mound at work!
 #: src/activity_actor.cpp src/activity_handlers.cpp
 msgid "hsh!"
 msgstr "ザクッ！"
@@ -261820,7 +261934,6 @@ msgstr "付近のドアのロックが解除された。"
 msgid "Moving canceled auto-pickup."
 msgstr "移動中は自動拾得が中断される。"
 
-#. ~ Sound of a metal sawing tool at work!
 #: src/activity_actor.cpp
 msgid "grnd grnd grnd"
 msgstr "ギコ、ギコ、ギコ..."
@@ -261988,7 +262101,6 @@ msgstr "%sの活動範囲に未完成の建設作業はない。"
 msgid "%s can't work on this construction anymore."
 msgstr "%sはこの建設作業に取り組めない。"
 
-#. ~ Sound of a Rat mutant burrowing!
 #: src/activity_handlers.cpp
 msgid "ScratchCrunchScrabbleScurry."
 msgstr "[引っ掻いたりかじったり暴れたり走り回ったりする音]"
@@ -262369,7 +262481,6 @@ msgid ""
 "think you have it right."
 msgstr "襲ってこないように死体を切り刻んだが、うまくいったのか自信がない。"
 
-#. ~ Sound of a Pickaxe at work!
 #: src/activity_handlers.cpp
 msgid "CHNK!  CHNK!  CHNK!"
 msgstr "カチン！カチン！カチン！"
@@ -262859,7 +262970,6 @@ msgstr "少しだけ何かを学んだ気がする。"
 msgid "You pry out the nails from the terrain."
 msgstr "地面に埋まった釘をこじって回収した。"
 
-#. ~ Sound of a wood chopping tool at work!
 #: src/activity_handlers.cpp
 msgid "CHK!"
 msgstr "カツン！"
@@ -262890,7 +263000,6 @@ msgstr "%d枚の裂けた木材が生産された。"
 msgid "You waste a lot of the wood."
 msgstr "多くの木材を無駄にした。"
 
-#. ~ Sound of a jackhammer at work!
 #: src/activity_handlers.cpp
 msgid "TATATATATATATAT!"
 msgstr "ガガガガガガガ！"
@@ -266303,7 +266412,6 @@ msgstr "%sが湿度低下警告を発した。供給効率が低下する。"
 msgid "You change your mind and turn it off."
 msgstr "考え直した結果、機能を停止させた。"
 
-#. ~Sound of a bionic sonic-resonator shaking the area
 #: src/bionics.cpp
 msgid "VRRRRMP!"
 msgstr "キィゥゥゥン！"
@@ -266354,7 +266462,6 @@ msgstr "どこにEMPを発生させる？"
 msgid "Your muscles hiss as hydraulic strength fills them!"
 msgstr "油圧機構の力に満たされた全身の筋肉が甲高い唸りをあげている！"
 
-#. ~ Sound of hissing hydraulic muscle! (not quite as loud as a car horn)
 #: src/bionics.cpp
 msgid "HISISSS!"
 msgstr "シューシュー！"
@@ -269261,10 +269368,6 @@ msgstr "怪我をしてしまった！"
 msgid "You smell like yourself again."
 msgstr "体臭が元に戻った。"
 
-#. ~spore-release sound
-#. ~ the sound of a fungus releasing spores
-#. ~ That spore sound again
-#. ~ the sound of a fungus dying
 #: src/character.cpp src/monattack.cpp src/mondeath.cpp
 msgid "Pouf!"
 msgstr "ポフッ！"
@@ -272928,6 +273031,14 @@ msgid "Toggle display submap grid"
 msgstr "サブマップグリッドの表示を切り替える"
 
 #: src/debug_menu.cpp
+msgid "Toggle display terrain sound absorption"
+msgstr ""
+
+#: src/debug_menu.cpp
+msgid "Toggle display sound walls"
+msgstr ""
+
+#: src/debug_menu.cpp
 msgid "Set automove target"
 msgstr ""
 
@@ -273938,8 +274049,8 @@ msgid "Keep normal wind speed"
 msgstr "通常の風速変化"
 
 #: src/debug_menu.cpp
-msgid "Volume of sound: "
-msgstr "音量: "
+msgid "Volume of sound( 0 - 191 ): "
+msgstr ""
 
 #: src/debug_menu.cpp
 #, c-format
@@ -275179,7 +275290,7 @@ msgstr "%sは%sによって%sに被弾した。"
 msgid "a huge boom!"
 msgstr "轟音が響き渡った！"
 
-#: src/explosion.cpp
+#: src/explosion.cpp src/melee.cpp
 msgid "Crack!"
 msgstr "メリッ！"
 
@@ -277954,10 +278065,6 @@ msgid "You fade into invisibility!"
 msgstr "透明になった！"
 
 #: src/game.cpp
-msgid "You can see through walls!"
-msgstr "壁を透視出来るようになった！"
-
-#: src/game.cpp
 msgid "Your steps stop making noise."
 msgstr "足音が立たなくなった。"
 
@@ -279204,7 +279311,6 @@ msgstr "ラジコンカーと接続されていない。"
 msgid "sound of a collision with an obstacle."
 msgstr "障害物にぶつかった音がした。"
 
-#. ~ Sound of moving a remote controlled car
 #: src/handle_action.cpp
 msgid "zzz…"
 msgstr "ブブブ…"
@@ -279333,6 +279439,10 @@ msgstr "酸性の液体が溜まった死体を叩き潰す？"
 #, c-format
 msgid "Your %s shatters!"
 msgstr "%sは粉々になった！"
+
+#: src/handle_action.cpp
+msgid "CRACK!"
+msgstr ""
 
 #: src/handle_action.cpp
 msgid "Floor below destroyed!  Move where?"
@@ -283404,14 +283514,6 @@ msgid "Can't pick up spilt liquids"
 msgstr "こぼれた液体は拾えない"
 
 #: src/inventory_ui.cpp
-msgid "Too big to pick up"
-msgstr "大きすぎて拾えない"
-
-#: src/inventory_ui.cpp
-msgid "Too heavy to pick up"
-msgstr "重すぎて拾えない"
-
-#: src/inventory_ui.cpp
 #, c-format
 msgid "Page %d/%d"
 msgstr "ページ %d/%d"
@@ -286253,7 +286355,6 @@ msgstr "ラジオは静かになった。"
 msgid "You turn the noise emitter on."
 msgstr "ノイズ発生器を起動した。"
 
-#. ~ the sound of a noise emitter when turned on
 #: src/iuse.cpp
 msgid "KXSHHHHRRCRKLKKK!"
 msgstr "ガガザーガギャギャザピー！！"
@@ -286552,28 +286653,28 @@ msgid "A nearby splatter of goo forms into a goo pit."
 msgstr "近くに飛び散った粘液が粘液溜まりになった。"
 
 #: src/iuse.cpp
-msgid "\"Merged!\""
-msgstr ""
+msgid "Merged!"
+msgstr "合体！"
 
 #: src/iuse.cpp
-msgid "\"BUGFIXES!\""
-msgstr ""
+msgid "BUGFIXES!"
+msgstr "バグフィックス！"
 
 #: src/iuse.cpp
-msgid "\"BUFFS!\""
-msgstr ""
+msgid "BUFFS!"
+msgstr "バフ！"
 
 #: src/iuse.cpp
-msgid "\"NERFS!\""
-msgstr ""
+msgid "NERFS!"
+msgstr "ナーフ！"
 
 #: src/iuse.cpp
-msgid "\"REVERTS!\""
-msgstr ""
+msgid "REVERTS!"
+msgstr "もどれー！"
 
 #: src/iuse.cpp
-msgid "\"QUACK!\""
-msgstr ""
+msgid "BEES!"
+msgstr "ハチだー！"
 
 #: src/iuse.cpp
 msgid "\"EEPY!\""
@@ -287265,6 +287366,10 @@ msgstr "%sの整備状態は完璧だ。"
 #: src/iuse.cpp
 msgid "With a higher mechanics skill, you might be able to improve it."
 msgstr "もっと高度な機械整備のスキルがあれば精密に調整できそうだ。"
+
+#: src/iuse.cpp
+msgid "crunch"
+msgstr ""
 
 #: src/iuse.cpp
 #, c-format
@@ -288086,7 +288191,6 @@ msgstr "%sはラジコンカーに取り付けるには重すぎる。"
 msgid "You disarmed your RC car."
 msgstr "ラジコンカーから爆弾を取り外した。"
 
-#. ~Sound of a radio controlled car moving around
 #: src/iuse.cpp
 msgid "buzzz…"
 msgstr "ブーン..."
@@ -295710,7 +295814,6 @@ msgstr "%sが脈動し、新鮮な真菌物質をまき散らす。"
 msgid "The %s suddenly inhales!"
 msgstr "%sが息を吸い込む！"
 
-#. ~Sound of a giant fungal blossom inhaling
 #: src/monattack.cpp
 msgid "WOOOSH!"
 msgstr "シュウウウ！"
@@ -295720,15 +295823,13 @@ msgstr "シュウウウ！"
 msgid "The %s discharges an immense flow of spores, smothering the flames!"
 msgstr "%sが大量の胞子を吐き出し、炎を遮った！"
 
-#. ~Sound of a giant fungal blossom blowing out the dangerous fire!
 #: src/monattack.cpp
 msgid "POUFF!"
 msgstr "ポッフ！"
 
-#. ~ That spore sound, much louder
 #: src/monattack.cpp
-msgid "POUF."
-msgstr "ポフ。"
+msgid "POUF"
+msgstr ""
 
 #: src/monattack.cpp
 #, c-format
@@ -296325,20 +296426,19 @@ msgstr "目標補足。"
 msgid "The %s's grenade launcher fires!"
 msgstr "%sはグレネードランチャーを発射した！"
 
-#. ~ Sound of a tank turret swiveling into place
 #. ~ Sound of a atgm tube uncovering swiveling into place
 #: src/monattack.cpp
 msgid "whirrrrrclick."
 msgstr "ウィーーーーーンカチッ。"
 
 #: src/monattack.cpp
-msgid "clank!"
-msgstr "ガチャン！"
-
-#: src/monattack.cpp
 #, c-format
 msgid "The %s's 120mm cannon fires!"
 msgstr "%sが120mm砲を発射した！"
+
+#: src/monattack.cpp
+msgid "clank!"
+msgstr "ガチャン！"
 
 #: src/monattack.cpp
 #, c-format
@@ -296349,10 +296449,6 @@ msgstr ""
 #, c-format
 msgid "The tongue of flame hits the %s!"
 msgstr "炎の渦が%sを飲み込む！"
-
-#: src/monattack.cpp
-msgid "a robotic voice boom, \"Citizen, Halt!\""
-msgstr "[機械音声]「止まれ、市民！」"
 
 #: src/monattack.cpp
 msgid "a robotic voice boom, \"Please put down your weapon.\""
@@ -296745,27 +296841,13 @@ msgstr "ロボットがあなたに手錠をかける。"
 msgid ""
 "You are under arrest, citizen.  You have the right to remain silent.  If you"
 " do not remain silent, anything you say may be used against you in a court "
-"of law."
-msgstr "『お前を逮捕する。お前には沈黙する権利がある。沈黙権を放棄して発言した内容は、法廷でお前を不利にする可能性がある。』"
-
-#: src/monattack.cpp
-msgid ""
-"You have the right to an attorney.  If you cannot afford an attorney, one "
-"will be provided at no cost to you.  You may have your attorney present "
-"during any questioning."
-msgstr "『お前には弁護人を立てられる権利がある。弁護人を立てられない場合は、国選弁護人が選任され、取り調べの際に弁護人を同席させることができる。』"
-
-#: src/monattack.cpp
-msgid ""
-"If you do not understand these rights, an officer will explain them in "
-"greater detail when taking you into custody."
-msgstr "『以上の権利を理解できない場合、拘留中に警察がより詳しく説明する。』"
-
-#: src/monattack.cpp
-msgid ""
-"Do not attempt to flee or to remove the handcuffs, citizen.  That can be "
-"dangerous to your health."
-msgstr "『逃走または手錠の除去を試みるな、市民。お前の命が危険にさらされる可能性がある。』"
+"of law. You have the right to an attorney.  If you cannot afford an "
+"attorney, one will be provided at no cost to you.  You may have your "
+"attorney present during any questioning. If you do not understand these "
+"rights, an officer will explain them in greater detail when taking you into "
+"custody. Do not attempt to flee or to remove the handcuffs, citizen.  That "
+"can be dangerous to your health."
+msgstr ""
 
 #: src/monattack.cpp
 msgid ""
@@ -296788,7 +296870,6 @@ msgstr "ロボットが催涙ガスを噴射する！"
 msgid "Empty your hands and hold your position, citizen!"
 msgstr "『手にある武器を下ろし、その場で立ち止まれ！』"
 
-#. ~ Sound of a riotbot using its blinding flash
 #: src/monattack.cpp
 msgid "fzzzzzt"
 msgstr "パチパチ"
@@ -300704,6 +300785,10 @@ msgstr "前方に脅威がある。全員、警戒して密着して進め。動
 #: src/npctalk.cpp
 msgid "As you were."
 msgstr "その場にとどまれ。"
+
+#: src/npctalk.cpp src/sounds.cpp
+msgid "a noise"
+msgstr "騒音"
 
 #: src/npctalk.cpp
 #, c-format
@@ -307852,6 +307937,72 @@ msgid "The zen-most skill there is."
 msgstr "最も禅に近いスキル。"
 
 #: src/sounds.cpp
+#, c-format
+msgid ""
+"Error in sounds::svol:at(). Sound [ %1s ] from %i:%i:%i with origin volume "
+"of %i dB, has impossible escape vol in %i direction of %i mdB."
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Error in sounds::svol:at(). Calced Escape Vol of %i mdB, Calced vol_z_adjust"
+" of %i mdB, Calced cumulative distance loss of %i mdB across %i tiles from "
+"heard sound [ %1s ] at %i:%i:%i to heard location %i:%i:%i"
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Error in sounds::svol:at(). Sound [ %1s ] from %i:%i:%i with origin volume "
+"of %i dB, has impossible heard vol in %i direction of %i mdB at a distance "
+"of %i manhattan.xt"
+msgstr ""
+
+#: src/sounds.cpp
+msgid "Maximum number of attempted floodfills in a turn reached!"
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid "Sound instances vector contained %i sounds before emergency flush."
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Sound with description [ %1s ] at %i:%i with a volume %i too quiet for "
+"propagation."
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Sound with description [ %1s ] at %i:%i attempted to propagate with a volume"
+" of %i dB which is louder than possible in atmosphere!"
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid "vol %i  vol_hordes %i sig_power %i "
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Monster %1s at %i:%i:%i attempted to make a filtered sound list but could "
+"not find it after generation!"
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Player given sound louder than possible in Atmosphere! Sound with "
+"description [ %1s ] from %i:%i:%i with an origin volume of %i dB is louder "
+"than possible."
+msgstr ""
+
+#: src/sounds.cpp
 msgid "Your eardrums suddenly ache!"
 msgstr "鼓膜が急に痛む！"
 
@@ -307860,13 +308011,9 @@ msgid "Something is making noise."
 msgstr "何かが音を立てている。"
 
 #: src/sounds.cpp
-msgid "a noise"
-msgstr "騒音"
-
-#: src/sounds.cpp
 #, c-format
-msgid "Heard %s"
-msgstr "%sが聞こえた"
+msgid "Heard %s!"
+msgstr "%sが聞こえました！"
 
 #: src/sounds.cpp
 #, c-format
@@ -307898,6 +308045,55 @@ msgstr "目覚まし時計が鳴ったが、一睡もしていない。"
 #: src/sounds.cpp
 msgid "You turn off your alarm-clock."
 msgstr "目覚まし時計を切った。"
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Avatar sound processing diagnostic: Checked:%i, Within minvol distance:%i, "
+"Within flood envelope:%i, Ambient Vol:%i mdB, Vol Threshold:%i mdB"
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Loudest Sound: Description:[%1s], Origin vol:%i dB at [%i:%i:%i], Minvol "
+"distance:%i, Floodfill radius:%i"
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Heard vol:%i mdB at [%i:%i:%i], Distance:%i, SDI from sound to Avatar:%i, "
+"with envelope escape vol in that SDI:%i mdB"
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Attempted to floodfill %i total sounds. Flooding attempted on %i deafening, "
+"%i movement, %i from NPCs, %i from monsters, %i non-batch floods."
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Batch flooded %i sounds from monsters and %i sounds from NPCs. %i sounds "
+"invalidated during batch flooding."
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Caught %i sounds still in floodfill que. Cleared %i sound filter lists out "
+"of %i sound filter lists made."
+msgstr ""
+
+#: src/sounds.cpp
+#, c-format
+msgid ""
+"Culled %i sounds this turn. Sounds vector size %i end of turn. Prior turn "
+"sound vector size %i"
+msgstr ""
 
 #: src/sounds.cpp
 msgid "a sound"
@@ -308165,7 +308361,6 @@ msgstr "%sが%sや他の部位を貫いた。"
 msgid "You shed a tooth!"
 msgstr "歯が一本抜けた！"
 
-#. ~Sound of buzzing Insect Wings
 #: src/suffer.cpp
 msgid "BZZZZZ"
 msgstr "ブーン"
@@ -308641,6 +308836,10 @@ msgid "<npcname> steps on some glass!"
 msgstr "<npcname>はガラスを踏みつけた！"
 
 #: src/trapfunc.cpp
+msgid "The shards shatter!"
+msgstr "破片が粉々に砕けた！"
+
+#: src/trapfunc.cpp
 msgid "glass cracking!"
 msgstr "ガラスがヒビ割れる！"
 
@@ -308695,10 +308894,6 @@ msgstr "鋭いガラス棘を踏みつけた！"
 #: src/trapfunc.cpp
 msgid "<npcname> steps on a sharp glass caltrop!"
 msgstr "<npcname>は鋭いガラス棘を踏みつけた！"
-
-#: src/trapfunc.cpp
-msgid "The shards shatter!"
-msgstr "破片が粉々に砕けた！"
 
 #: src/trapfunc.cpp
 msgid "You trip over a tripwire!"
@@ -308829,7 +309024,6 @@ msgstr "罠を発動させた！"
 msgid "<npcname> triggers a booby trap!"
 msgstr "<npcname>は罠を発動させた！"
 
-#. ~ the sound of a telepad functioning
 #: src/trapfunc.cpp
 msgid "vvrrrRRMM*POP!*"
 msgstr "ヴヴヴッ...*パオッ！*"
@@ -308870,6 +309064,10 @@ msgstr "床から電気ビームが発射され、あなたの肉体を切り裂
 #: src/trapfunc.cpp
 msgid "Electrical beams emit from the floor and slice <npcname>s flesh!"
 msgstr "床から電気ビームが発射され、<npcname>の肉体を切り裂いた！"
+
+#: src/trapfunc.cpp
+msgid "BRZZZAP"
+msgstr ""
 
 #: src/trapfunc.cpp
 #, c-format
@@ -309087,7 +309285,6 @@ msgstr "生命力が失われていくのを感じる。"
 msgid "<npcname> triggers a %s!"
 msgstr "<npcname>が %s を起動した！"
 
-#. ~ the sound a snake makes
 #: src/trapfunc.cpp
 msgid "ssssssss"
 msgstr "スススススススス"
@@ -310193,7 +310390,6 @@ msgstr ""
 msgid "The %s shuts down - it cannot operate without an occupant."
 msgstr ""
 
-#. ~ backfire sound
 #: src/vehicle.cpp
 #, c-format
 msgid "a loud BANG! from the %s"
