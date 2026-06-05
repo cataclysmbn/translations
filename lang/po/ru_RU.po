@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-04 22:12+0000\n"
+"POT-Creation-Date: 2026-06-05 21:10+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -63875,6 +63875,14 @@ msgstr[2] "сломанных лёгких турелей"
 msgstr[3] "сломанные лёгкие турели"
 
 #: data/json/items/generic.json
+msgid "broken Hub 01 light turret"
+msgid_plural "broken Hub 01 light turrets"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: data/json/items/generic.json
 msgid "broken medium milspec turret"
 msgid_plural "broken medium milspec turrets"
 msgstr[0] "сломанная средняя военная турель "
@@ -72354,10 +72362,8 @@ msgstr[3] "колчаны для дротиков"
 #: data/json/items/armor/ammo_pouch.json
 msgid ""
 "A leather quiver worn at the waist, lengthened to hold atlatl darts.  "
-"Activate to store up to 15 darts."
+"Activate to store up to 10 darts."
 msgstr ""
-"Кожаный колчан на пояс, удлинённый для вмещения дротиков под атлатль. "
-"Активируйте, чтобы поместить внутрь до 15 дротиков."
 
 #: data/json/items/armor/ammo_pouch.json
 msgid "birchbark atlatl dart quiver"
@@ -72371,10 +72377,8 @@ msgstr[3] "берестяные колчаны для дротиков"
 #: data/json/items/armor/ammo_pouch.json
 msgid ""
 "A quiver woven from strips of birch bark, worn at the waist, lengthened to "
-"hold atlatl darts.  Activate to store up to 15 darts."
+"hold atlatl darts.  Activate to store up to 10 darts."
 msgstr ""
-"Колчан на пояс из полос бересты, удлинённый для вмещения дротиков под "
-"атлатль. Активируйте, чтобы поместить внутрь до 15 дротиков."
 
 #: data/json/items/armor/ammo_pouch.json
 msgid "tac vest"
@@ -155261,6 +155265,27 @@ msgstr ""
 "подключения. Крылья позволяют летать, но для взлёта требуется пропеллер и "
 "достаточная скорость."
 
+#: data/json/lua/nuclear_tear.lua
+#, c-format
+msgid "The blast seals the %s!"
+msgstr "Взрыв закрывает %s!"
+
+#: data/json/lua/nuclear_tear.lua
+#, c-format
+msgid "The blast destabilizes the %s, causing it to widen!"
+msgstr "%s теряет стабильность из-за взрыва, и расширяется!"
+
+#: data/json/lua/nuclear_tear.lua
+#, c-format
+msgid "The blast destabilizes the %s, but it holds!"
+msgstr "%s теряет стабильность из-за взрыва, но всё ещё держится! "
+
+#: data/json/lua/robofac.lua
+msgid ""
+"The control panels' screen flashes before displaying \"UNAUTHORIZED\" in "
+"bold red letters."
+msgstr ""
+
 #: data/json/lua/iuse/artifact_analyzer.lua src/bionics_ui.cpp
 #: src/mutation_ui.cpp src/options.cpp
 msgid "None"
@@ -164529,6 +164554,14 @@ msgstr ""
 "популярности оказалась задействована в военных операциях. Высококачественные"
 " системы прицеливания позволяют ей вести огонь даже по умеренно удалённым "
 "целям."
+
+#: data/json/monsters/turrets.json
+msgid "Hub 01 light turret"
+msgid_plural "Hub 01 light turrets"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: data/json/monsters/turrets.json
 msgid "medium milspec turret"
@@ -179247,7 +179280,7 @@ msgstr "Добытчик"
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Stan_Borichenko.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Uyen_Tran.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Vanessa_Toby.json
-#: data/json/obsoletion/npc.json
+#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
 msgid "I'm just trying to survive."
 msgstr "Просто пытаюсь выжить."
 
@@ -197716,7 +197749,7 @@ msgstr "Точно. Пошли."
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Stan_Borichenko.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Uyen_Tran.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Vanessa_Toby.json
-#: data/json/obsoletion/npc.json
+#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
 msgid "refugee"
 msgstr "беженец"
 
@@ -197740,7 +197773,7 @@ msgstr "Алиша Сивард"
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Stan_Borichenko.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Uyen_Tran.json
 #: data/json/npcs/refugee_center/surface_refugees/NPC_Vanessa_Toby.json
-#: data/json/obsoletion/npc.json
+#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
 msgid "Refugee"
 msgstr "Беженец"
 
@@ -205310,6 +205343,12 @@ msgid "Have you retrieved the blueprints?"
 msgstr "Удалось ли вернуть чертежи?"
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
+msgid ""
+"Fantastic.  You have our thanks and payment.  The elevator access doors have"
+" been opened, and you are now authorized to use the elevator."
+msgstr ""
+
+#: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid "So, do you need something?"
 msgstr "Итак, что-нибудь нужно?"
 
@@ -205884,14 +205923,30 @@ msgstr "Тебе дорогу подсказать, или как?"
 msgid "Can't believe we got lost…"
 msgstr "Поверить не могу, что мы заблудились…"
 
+#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
+msgid "Head of Security"
+msgstr "Глава Службы безопасности"
+
+#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
+msgid "U. Rourke"
+msgstr "Ю. Рурк"
+
+#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
+msgid "Head of security"
+msgstr "Глава службы безопасности"
+
+#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
+#: data/json/npcs/robofac/NPC_robofac_generic_security.json
+msgid "I'm part of the Hub security team."
+msgstr "Я отношусь к службе безопасности Центра."
+
+#: data/json/npcs/robofac/NPC_Ulysses_Rourke.json
+msgid "Alonso Lautrec"
+msgstr "Алонсо Лотрек"
+
 #: data/json/npcs/robofac/NPC_robofac_generic_security.json
 msgid "Hub Security"
 msgstr "Служба безопасности Центра"
-
-#: data/json/npcs/robofac/NPC_robofac_generic_security.json
-#: data/json/obsoletion/npc.json
-msgid "I'm part of the Hub security team."
-msgstr "Я отношусь к службе безопасности Центра."
 
 #: data/json/npcs/robofac/NPC_robofac_generic_security.json
 msgid "Keep it civil, merc."
@@ -212705,22 +212760,6 @@ msgstr "Самоконтроль"
 #: data/json/obsoletion/mutations.json
 msgid "This mutation is now just an option in the settings."
 msgstr "Функционал этой мутации теперь часть настроек игры."
-
-#: data/json/obsoletion/npc.json
-msgid "Head of Security"
-msgstr "Глава Службы безопасности"
-
-#: data/json/obsoletion/npc.json
-msgid "U. Rourke"
-msgstr "Ю. Рурк"
-
-#: data/json/obsoletion/npc.json
-msgid "Head of security"
-msgstr "Глава службы безопасности"
-
-#: data/json/obsoletion/npc.json
-msgid "Alonso Lautrec"
-msgstr "Алонсо Лотрек"
 
 #: data/json/obsoletion/npc_dialogue.json
 msgid "You seem a little forward…"
@@ -312552,21 +312591,6 @@ msgstr "Упрощённое питание"
 msgid "Disables vitamin requirements."
 msgstr "Отключает комплексную систему витаминов."
 
-#: data/mods/nuclear_tear/main.lua
-#, c-format
-msgid "The blast seals the %s!"
-msgstr "Взрыв закрывает %s!"
-
-#: data/mods/nuclear_tear/main.lua
-#, c-format
-msgid "The blast destabilizes the %s, causing it to widen!"
-msgstr "%s теряет стабильность из-за взрыва, и расширяется!"
-
-#: data/mods/nuclear_tear/main.lua
-#, c-format
-msgid "The blast destabilizes the %s, but it holds!"
-msgstr "%s теряет стабильность из-за взрыва, но всё ещё держится! "
-
 #: data/mods/nuclear_tear/modinfo.json
 msgid "Closable tear in reality"
 msgstr "Закрываемые разломы в реальности"
@@ -312574,11 +312598,9 @@ msgstr "Закрываемые разломы в реальности"
 #. ~ Description for Closable tear in reality
 #: data/mods/nuclear_tear/modinfo.json
 msgid ""
-"Make high-damage explosions (like mininukes) to seal or destabilize tears in"
-" reality."
+"Obsolete compatibility stub. High-damage explosions now seal or destabilize "
+"tears in reality in the BN core content pack."
 msgstr ""
-"Взрывы особо высокой мощности (вроде мини-ядерных бомб) смогут закрывать или"
-" дестабилизировать разломы в реальности."
 
 #: data/mods/pathfinding_stockfish/modinfo.json
 msgid "Pathfinding: Stockfish AI"
@@ -369616,11 +369638,6 @@ msgstr "%s нельзя использовать со сломанной ног�
 #, c-format
 msgid "Looks like the %1$s is out of %2$s."
 msgstr "Похоже, транспортное средство (%1$s) осталось без топлива (%2$s)."
-
-#: src/vehicle_use.cpp
-#, c-format
-msgid "the %s bang as it starts"
-msgstr "%s издаёт хлопок при запуске."
 
 #: src/vehicle_use.cpp
 #, c-format
