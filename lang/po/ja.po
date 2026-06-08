@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-07 06:08+0000\n"
+"POT-Creation-Date: 2026-06-08 04:20+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -134134,8 +134134,8 @@ msgstr "優秀なナビゲーター"
 msgid ""
 "You're an excellent navigator and your ability to recognize distant "
 "landmarks is unmatched.  Your sight radius on the overmap extends beyond the"
-" normal range."
-msgstr "遠くの目印さえ見分けられる、比類なき優秀なナビゲーターだ。オーバーマップの視認範囲が通常より広くなる。"
+" normal range, and distant details are easier for you to resolve."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Topographagnosia"
@@ -139128,6 +139128,17 @@ msgstr "デバッグ用すり抜け"
 #: data/json/mutations/mutations.json
 msgid "Garry?"
 msgstr "ゲイリー？"
+
+#: data/json/mutations/mutations.json
+msgid "Debug Infinite Speed"
+msgstr ""
+
+#. ~ Description for {'str': 'Debug Infinite Speed'}
+#: data/json/mutations/mutations.json
+msgid ""
+"The only problem with being faster than light is that you always live in "
+"darkness."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Debug Invisibility"
@@ -187694,9 +187705,9 @@ msgstr ""
 #: data/json/vehicleparts/lights.json
 msgid ""
 "Emergency lights, like a police car's or ambulance's, mounted on the "
-"vehicle's roof.  Flashes between red and blue when turned on, attracting "
-"attention without illuminating the area."
-msgstr "警察車両や救急車のもののように、車両の屋根に取り付けられた緊急用照明だ。電源を入れると赤と青に点滅し、周囲を照らすことなく注目を集める。"
+"vehicle's roof.  When turned on, they sweep colored beams around the "
+"vehicle."
+msgstr ""
 
 #: data/json/vehicleparts/lights.json
 msgid "blue light"
@@ -274710,6 +274721,11 @@ msgstr "客観明度: %s"
 
 #: src/editmap.cpp
 #, c-format
+msgid "apparent light: GPU visibility (%d)"
+msgstr ""
+
+#: src/editmap.cpp
+#, c-format
 msgid "apparent light: %.5f (%d)"
 msgstr "主観明度: %.5f(%d)"
 
@@ -303062,6 +303078,15 @@ msgid "If true, replaces some TTF rendered text with tiles."
 msgstr "この設定を有効にすると、TTF形式でレンダリングされたテキストがタイルに変換される。"
 
 #: src/options.cpp
+msgid "Colored lighting"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"If true, map tiles and entities can be tinted by colored light sources."
+msgstr ""
+
+#: src/options.cpp
 msgid "Choose tileset"
 msgstr "タイルセット選択"
 
@@ -303373,6 +303398,28 @@ msgid "4x"
 msgstr "4x"
 
 #: src/options.cpp
+msgid "Compute Acceleration"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Controls SDL_GPU compute device selection for lighting and visibility.  "
+"Requires restart."
+msgstr ""
+
+#: src/options.cpp
+msgid "Auto"
+msgstr ""
+
+#: src/options.cpp
+msgid "Software"
+msgstr ""
+
+#: src/options.cpp
+msgid "Force hardware"
+msgstr ""
+
+#: src/options.cpp
 msgid "Sleep Boost"
 msgstr ""
 
@@ -303542,34 +303589,13 @@ msgid "Configure three-dimensional visibility across z-levels."
 msgstr ""
 
 #: src/options.cpp
-msgid "3D field of vision"
-msgstr "3次元可視範囲"
-
-#: src/options.cpp
-msgid ""
-"If false, vision is limited to current z-level. If true and the world is in "
-"z-level mode, the vision will extend beyond current z-level."
-msgstr ""
-
-#: src/options.cpp
-msgid "Vertical range of 3D field of vision"
-msgstr "実験的な3D視界の垂直視野"
-
-#: src/options.cpp
-msgid ""
-"How many levels up and down the experimental 3D field of vision reaches. "
-"(This many levels up, this many levels down.)  3D vision of the full height "
-"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
-msgstr ""
-
-#: src/options.cpp
-msgid "3D FoV shadow casting"
+msgid "Angled Sunlight Shadows"
 msgstr ""
 
 #: src/options.cpp
 msgid ""
-"When enabled, obstacles at other z-levels correctly cast 3D shadows. "
-"Requires 3D FoV. Significantly slower than disabled."
+"When enabled, direct sunlight follows the current sun angle and roofs or "
+"overhangs cast time-dependent shadows."
 msgstr ""
 
 #: src/options.cpp
@@ -303589,10 +303615,6 @@ msgstr "無効"
 #: src/options.cpp src/panels.cpp
 msgid "On"
 msgstr "オン"
-
-#: src/options.cpp
-msgid "Auto"
-msgstr ""
 
 #: src/options.cpp
 msgid "Prevent occlusion via transparency"
@@ -303743,6 +303765,31 @@ msgid ""
 "Grid size = 2 × size + 3 submaps per side (size 4 → 11×11, legacy default). "
 "Maximum player sight range = 12 × (size + 1) tiles.  Larger values increase "
 "the loaded area and memory usage; smaller values reduce both. "
+msgstr ""
+
+#: src/options.cpp
+msgid "Visibility Scaling"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Controls how clear-air visibility attenuation scales with the reality "
+"bubble.  Perfect scales directly with the current bubble size.  Smart keeps "
+"visibility near the size 6 baseline while still giving small bubbles less "
+"range and large bubbles more range.  None keeps visibility at the size 6 "
+"baseline and only uses bubble size as a hard view cap."
+msgstr ""
+
+#: src/options.cpp
+msgid "Perfect Scale"
+msgstr ""
+
+#: src/options.cpp
+msgid "Smart Scale"
+msgstr ""
+
+#: src/options.cpp
+msgid "No Scale"
 msgstr ""
 
 #: src/options.cpp
@@ -304303,14 +304350,90 @@ msgid ""
 msgstr ""
 
 #: src/options.cpp
+msgid "Global action speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines the baseline action rate for creatures and activities.  A higher "
+"value allows more actions per in-game second, while a lower value makes "
+"calendar time pass faster relative to actions."
+msgstr ""
+
+#: src/options.cpp
+msgid "Player action speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines the player's action rate as a percentage of the global action "
+"speed.  A higher value allows more player actions per in-game second and a "
+"lower value allows fewer."
+msgstr ""
+
+#: src/options.cpp
+msgid "NPC action speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines NPC action rate as a percentage of the global action speed.  A "
+"higher value allows more NPC actions per in-game second and a lower value "
+"allows fewer."
+msgstr ""
+
+#: src/options.cpp
+msgid "Activity progress percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines long activity and crafting progress as a percentage of the global"
+" action speed.  A higher value completes activities faster per in-game "
+"second and a lower value completes them slower."
+msgstr ""
+
+#: src/options.cpp
+msgid "Vehicle control speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines driver control action rate as a percentage of the global action "
+"speed without changing physical vehicle movement.  A higher value allows "
+"more steering, braking, and throttle inputs per in-game second and a lower "
+"value allows fewer."
+msgstr ""
+
+#: src/options.cpp
+msgid "Overmap horde speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines overmap horde movement speed as a percentage of global action "
+"speed and monster speed.  A higher value makes hordes travel faster over the"
+" overmap and a lower value makes them slower."
+msgstr ""
+
+#: src/options.cpp
 msgid "Monster speed percentage"
 msgstr "モンスターの速度 (%)"
 
 #: src/options.cpp
 msgid ""
-"Determines the movement rate of monsters.  A higher value increases monster "
-"speed and a lower reduces it.  Requires world reset."
-msgstr "怪物の移動速度を決定する。数値が高いほど怪物の速度が上がり、低いほど遅くなる。世界マップの初期化が必要になる。"
+"Determines monster action rate as a percentage of the global action speed.  "
+"A higher value allows more monster actions per in-game second and a lower "
+"value allows fewer."
+msgstr ""
+
+#: src/options.cpp
+msgid "Time Scaling"
+msgstr ""
+
+#: src/options.cpp
+msgid "Configure experimental calendar and action-rate scaling."
+msgstr ""
 
 #: src/options.cpp
 msgid "Monster resilience percentage"

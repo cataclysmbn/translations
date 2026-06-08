@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-07 06:08+0000\n"
+"POT-Creation-Date: 2026-06-08 14:32+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -133484,8 +133484,8 @@ msgstr "偵察兵"
 msgid ""
 "You're an excellent navigator and your ability to recognize distant "
 "landmarks is unmatched.  Your sight radius on the overmap extends beyond the"
-" normal range."
-msgstr "你是个出色的领航员，你发现远处地标的能力无与伦比。你的大地图视野相比普通人有所扩大。"
+" normal range, and distant details are easier for you to resolve."
+msgstr "你是一名出色的领航员，识别远方地标的能力无人能及。你在大地图上的视野半径超出了正常范围，且更容易分辨远处的细节。"
 
 #: data/json/mutations/mutations.json
 msgid "Topographagnosia"
@@ -138471,6 +138471,17 @@ msgstr "调试穿墙模式"
 #: data/json/mutations/mutations.json
 msgid "Garry?"
 msgstr "盖瑞？"
+
+#: data/json/mutations/mutations.json
+msgid "Debug Infinite Speed"
+msgstr "调试用无限速度"
+
+#. ~ Description for {'str': 'Debug Infinite Speed'}
+#: data/json/mutations/mutations.json
+msgid ""
+"The only problem with being faster than light is that you always live in "
+"darkness."
+msgstr "速度超越光速的唯一烦恼，就是你只能永远生活在黑暗之中。"
 
 #: data/json/mutations/mutations.json
 msgid "Debug Invisibility"
@@ -186835,9 +186846,9 @@ msgstr "一盏明亮的探照灯，开启时照亮车外一片广角锥形区域
 #: data/json/vehicleparts/lights.json
 msgid ""
 "Emergency lights, like a police car's or ambulance's, mounted on the "
-"vehicle's roof.  Flashes between red and blue when turned on, attracting "
-"attention without illuminating the area."
-msgstr "一盏安装在车顶上的警灯，和警车和救护车顶上的一样。开启时发出红蓝相间的光，照亮不了很大范围但能够吸引附近人的注意。"
+"vehicle's roof.  When turned on, they sweep colored beams around the "
+"vehicle."
+msgstr "安装在车顶的应急灯，类似于警车或救护车上的那种。开启后，彩色光束会扫过车辆周围。"
 
 #: data/json/vehicleparts/lights.json
 msgid "blue light"
@@ -274666,6 +274677,11 @@ msgstr "光强：%s"
 
 #: src/editmap.cpp
 #, c-format
+msgid "apparent light: GPU visibility (%d)"
+msgstr "表观光照：GPU 可见度 (%d)"
+
+#: src/editmap.cpp
+#, c-format
 msgid "apparent light: %.5f (%d)"
 msgstr "光能：%.5f（%d）"
 
@@ -303119,6 +303135,15 @@ msgid "If true, replaces some TTF rendered text with tiles."
 msgstr "設定為 [是], 會以圖像包取代字符畫面。"
 
 #: src/options.cpp
+msgid "Colored lighting"
+msgstr "彩色光照"
+
+#: src/options.cpp
+msgid ""
+"If true, map tiles and entities can be tinted by colored light sources."
+msgstr "开启时，地图图块与实体将被彩色光源着色。"
+
+#: src/options.cpp
 msgid "Choose tileset"
 msgstr "選擇圖像包"
 
@@ -303425,6 +303450,28 @@ msgid "4x"
 msgstr "4x"
 
 #: src/options.cpp
+msgid "Compute Acceleration"
+msgstr "计算加速"
+
+#: src/options.cpp
+msgid ""
+"Controls SDL_GPU compute device selection for lighting and visibility.  "
+"Requires restart."
+msgstr "控制用于光照与视野计算的 SDL_GPU 计算设备选择。需要重启游戏。"
+
+#: src/options.cpp
+msgid "Auto"
+msgstr "自动"
+
+#: src/options.cpp
+msgid "Software"
+msgstr "软件"
+
+#: src/options.cpp
+msgid "Force hardware"
+msgstr "强制硬件"
+
+#: src/options.cpp
 msgid "Sleep Boost"
 msgstr "睡眠加速"
 
@@ -303608,37 +303655,14 @@ msgid "Configure three-dimensional visibility across z-levels."
 msgstr "配置跨Z层的三维可见度。"
 
 #: src/options.cpp
-msgid "3D field of vision"
-msgstr "3D 视野"
+msgid "Angled Sunlight Shadows"
+msgstr "阳光倾角阴影"
 
 #: src/options.cpp
 msgid ""
-"If false, vision is limited to current z-level. If true and the world is in "
-"z-level mode, the vision will extend beyond current z-level."
-msgstr "如果设为否，视野将仅限于当前 Z 轴层级。如果设为是且当前世界已开启 Z 轴模式，视野将延伸至当前 Z 轴层级之外。"
-
-#: src/options.cpp
-msgid "Vertical range of 3D field of vision"
-msgstr "3D视野垂直可见范围"
-
-#: src/options.cpp
-msgid ""
-"How many levels up and down the experimental 3D field of vision reaches. "
-"(This many levels up, this many levels down.)  3D vision of the full height "
-"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
-msgstr ""
-"实验性 3D 视野向上和向下能覆盖的层数。（即向上多少层，向下多少层）。开启覆盖整个世界高度的全景 3D 视野会严重拖慢游戏运行速度。可见的 Z "
-"轴层数越少，游戏运行越快。"
-
-#: src/options.cpp
-msgid "3D FoV shadow casting"
-msgstr "3D 视野阴影投射"
-
-#: src/options.cpp
-msgid ""
-"When enabled, obstacles at other z-levels correctly cast 3D shadows. "
-"Requires 3D FoV. Significantly slower than disabled."
-msgstr "启用后，其他 Z 轴层级上的障碍物将正确投射 3D 阴影。需要开启 3D 视野（3D FoV）功能。运行速度会比禁用该功能时慢得多。"
+"When enabled, direct sunlight follows the current sun angle and roofs or "
+"overhangs cast time-dependent shadows."
+msgstr "开启此项后，直射阳光将随当前的太阳角度变化，屋顶或悬垂物会投射出随时间变化的阴影。"
 
 #: src/options.cpp
 msgid "Handle occlusion by high sprites"
@@ -303657,10 +303681,6 @@ msgstr "關閉"
 #: src/options.cpp src/panels.cpp
 msgid "On"
 msgstr "開"
-
-#: src/options.cpp
-msgid "Auto"
-msgstr "自动"
 
 #: src/options.cpp
 msgid "Prevent occlusion via transparency"
@@ -303825,6 +303845,32 @@ msgid ""
 msgstr ""
 "现实气泡的子地图半径（超出你位置可见的子地图数）。网格大小 = 2 × 设定值 + 每边 3 个子地图（设定值为 4 → "
 "11×11，旧版默认值）。最大玩家视野范围 = 12 × (设定值 + 1) 个图块。较大的数值会增加加载区域和内存占用；较小的数值会减少这两者。"
+
+#: src/options.cpp
+msgid "Visibility Scaling"
+msgstr "视野缩放"
+
+#: src/options.cpp
+msgid ""
+"Controls how clear-air visibility attenuation scales with the reality "
+"bubble.  Perfect scales directly with the current bubble size.  Smart keeps "
+"visibility near the size 6 baseline while still giving small bubbles less "
+"range and large bubbles more range.  None keeps visibility at the size 6 "
+"baseline and only uses bubble size as a hard view cap."
+msgstr ""
+"控制晴朗天气下的视野衰减如何随现实气泡缩放。“完美”模式会随当前气泡大小进行等比缩放；“智能”模式会将视野维持在尺寸6的基准线附近，同时让较小气泡的视野范围稍减，大气泡的视野范围稍增；“无”模式会将视野固定在尺寸6的基准线，仅将气泡大小作为视野的硬性上限。"
+
+#: src/options.cpp
+msgid "Perfect Scale"
+msgstr "完美缩放"
+
+#: src/options.cpp
+msgid "Smart Scale"
+msgstr "智能缩放"
+
+#: src/options.cpp
+msgid "No Scale"
+msgstr "不缩放"
 
 #: src/options.cpp
 msgid "Pre-load Border"
@@ -304389,14 +304435,91 @@ msgstr ""
 "100%）。设置为 0.0 可禁用该类别的物品生成。"
 
 #: src/options.cpp
+msgid "Global action speed percentage"
+msgstr "全局动作速度百分比"
+
+#: src/options.cpp
+msgid ""
+"Determines the baseline action rate for creatures and activities.  A higher "
+"value allows more actions per in-game second, while a lower value makes "
+"calendar time pass faster relative to actions."
+msgstr "决定生物与各项活动的基准动作速率。数值越高，游戏内每秒可执行的动作越多；数值越低，日历时间相对动作时间的流逝速度就越快。"
+
+#: src/options.cpp
+msgid "Player action speed percentage"
+msgstr "玩家动作速度百分比"
+
+#: src/options.cpp
+msgid ""
+"Determines the player's action rate as a percentage of the global action "
+"speed.  A higher value allows more player actions per in-game second and a "
+"lower value allows fewer."
+msgstr "决定玩家动作速率占全局动作速度的百分比。数值越高，游戏内每秒可执行的玩家动作越多；数值越低则越少。"
+
+#: src/options.cpp
+msgid "NPC action speed percentage"
+msgstr "NPC动作速度百分比"
+
+#: src/options.cpp
+msgid ""
+"Determines NPC action rate as a percentage of the global action speed.  A "
+"higher value allows more NPC actions per in-game second and a lower value "
+"allows fewer."
+msgstr "决定NPC动作速率占全局动作速度的百分比。数值越高，游戏内每秒可执行的NPC动作越多；数值越低则越少。"
+
+#: src/options.cpp
+msgid "Activity progress percentage"
+msgstr "活动进度百分比"
+
+#: src/options.cpp
+msgid ""
+"Determines long activity and crafting progress as a percentage of the global"
+" action speed.  A higher value completes activities faster per in-game "
+"second and a lower value completes them slower."
+msgstr "决定长时间活动与制造进度占全局动作速度的百分比。数值越高，游戏内每秒完成的活动进度越快；数值越低则越慢。"
+
+#: src/options.cpp
+msgid "Vehicle control speed percentage"
+msgstr "车辆控制速度百分比"
+
+#: src/options.cpp
+msgid ""
+"Determines driver control action rate as a percentage of the global action "
+"speed without changing physical vehicle movement.  A higher value allows "
+"more steering, braking, and throttle inputs per in-game second and a lower "
+"value allows fewer."
+msgstr ""
+"决定驾驶员操作速率占全局动作速度的百分比，且不改变车辆的实际物理运动。数值越高，游戏内每秒可输入的转向、刹车与油门操作越多；数值越低则越少。"
+
+#: src/options.cpp
+msgid "Overmap horde speed percentage"
+msgstr "大地图尸群速度百分比"
+
+#: src/options.cpp
+msgid ""
+"Determines overmap horde movement speed as a percentage of global action "
+"speed and monster speed.  A higher value makes hordes travel faster over the"
+" overmap and a lower value makes them slower."
+msgstr "决定大地图尸群移动速度占全局动作速度与怪物速度的百分比。数值越高，尸群在大地图上移动得越快；数值越低则越慢。"
+
+#: src/options.cpp
 msgid "Monster speed percentage"
 msgstr "怪物速度百分比"
 
 #: src/options.cpp
 msgid ""
-"Determines the movement rate of monsters.  A higher value increases monster "
-"speed and a lower reduces it.  Requires world reset."
-msgstr "決定怪物的移動速度。數字越大，怪物速度越快，數字越小，怪物速度越慢。需要重置世界。"
+"Determines monster action rate as a percentage of the global action speed.  "
+"A higher value allows more monster actions per in-game second and a lower "
+"value allows fewer."
+msgstr "决定怪物动作速率占全局动作速度的百分比。数值越高，游戏内每秒可执行的怪物动作越多；数值越低则越少。"
+
+#: src/options.cpp
+msgid "Time Scaling"
+msgstr "时间缩放"
+
+#: src/options.cpp
+msgid "Configure experimental calendar and action-rate scaling."
+msgstr "配置实验性的日历与动作速率缩放。"
 
 #: src/options.cpp
 msgid "Monster resilience percentage"

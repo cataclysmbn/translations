@@ -35,7 +35,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-07 15:02+0000\n"
+"POT-Creation-Date: 2026-06-08 04:20+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -138661,10 +138661,8 @@ msgstr "정찰"
 msgid ""
 "You're an excellent navigator and your ability to recognize distant "
 "landmarks is unmatched.  Your sight radius on the overmap extends beyond the"
-" normal range."
+" normal range, and distant details are easier for you to resolve."
 msgstr ""
-"당신은 타고난 길잡이이며, 멀리 떨어진 곳에 위치한 주요 지형지물을 인지하는데 있어 타고났습니다. 오버맵에서의 시야 범위가 훨씬 "
-"넓어집니다."
 
 #: data/json/mutations/mutations.json
 msgid "Topographagnosia"
@@ -143933,6 +143931,17 @@ msgstr "디버그 벽 통과"
 #: data/json/mutations/mutations.json
 msgid "Garry?"
 msgstr "개리?"
+
+#: data/json/mutations/mutations.json
+msgid "Debug Infinite Speed"
+msgstr ""
+
+#. ~ Description for {'str': 'Debug Infinite Speed'}
+#: data/json/mutations/mutations.json
+msgid ""
+"The only problem with being faster than light is that you always live in "
+"darkness."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Debug Invisibility"
@@ -195012,11 +195021,9 @@ msgstr ""
 #: data/json/vehicleparts/lights.json
 msgid ""
 "Emergency lights, like a police car's or ambulance's, mounted on the "
-"vehicle's roof.  Flashes between red and blue when turned on, attracting "
-"attention without illuminating the area."
+"vehicle's roof.  When turned on, they sweep colored beams around the "
+"vehicle."
 msgstr ""
-"경찰차나 앰뷸런스 지붕에 흔히 달려있는 경광등입니다. 작동시키면 적색과 청색으로 번쩍이며 주목을 끌어모으지만, 광원 역할은 하지 "
-"못합니다."
 
 #: data/json/vehicleparts/lights.json
 msgid "blue light"
@@ -284327,6 +284334,11 @@ msgstr "조명_위치: %s"
 
 #: src/editmap.cpp
 #, c-format
+msgid "apparent light: GPU visibility (%d)"
+msgstr ""
+
+#: src/editmap.cpp
+#, c-format
 msgid "apparent light: %.5f (%d)"
 msgstr "겉보기 조명: %.5f (%d)"
 
@@ -312884,6 +312896,15 @@ msgid "If true, replaces some TTF rendered text with tiles."
 msgstr "이 설정을 켜면 TTF 형식으로 렌더링된 텍스트가 타일로 변환됩니다."
 
 #: src/options.cpp
+msgid "Colored lighting"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"If true, map tiles and entities can be tinted by colored light sources."
+msgstr ""
+
+#: src/options.cpp
 msgid "Choose tileset"
 msgstr "타일셋 선택"
 
@@ -313195,6 +313216,28 @@ msgid "4x"
 msgstr "4x"
 
 #: src/options.cpp
+msgid "Compute Acceleration"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Controls SDL_GPU compute device selection for lighting and visibility.  "
+"Requires restart."
+msgstr ""
+
+#: src/options.cpp
+msgid "Auto"
+msgstr "자동"
+
+#: src/options.cpp
+msgid "Software"
+msgstr ""
+
+#: src/options.cpp
+msgid "Force hardware"
+msgstr ""
+
+#: src/options.cpp
 msgid "Sleep Boost"
 msgstr "수면 가속"
 
@@ -313385,41 +313428,14 @@ msgid "Configure three-dimensional visibility across z-levels."
 msgstr "z축에 기반하는 3차원 시야를 설정합니다."
 
 #: src/options.cpp
-msgid "3D field of vision"
-msgstr "3차원 가시범위"
+msgid "Angled Sunlight Shadows"
+msgstr ""
 
 #: src/options.cpp
 msgid ""
-"If false, vision is limited to current z-level. If true and the world is in "
-"z-level mode, the vision will extend beyond current z-level."
+"When enabled, direct sunlight follows the current sun angle and roofs or "
+"overhangs cast time-dependent shadows."
 msgstr ""
-"비활성화되면 가시범위를 현재 z축으로 제한합니다. 활성화된 상태이며 현재 세계에 z축 옵션이 적용되어있을 경우 가시범위가 현재 z축 "
-"너머로 확장됩니다."
-
-#: src/options.cpp
-msgid "Vertical range of 3D field of vision"
-msgstr "실험적 3D 시야의 수직 시야"
-
-#: src/options.cpp
-msgid ""
-"How many levels up and down the experimental 3D field of vision reaches. "
-"(This many levels up, this many levels down.)  3D vision of the full height "
-"of the world can slow the game down a lot.  Seeing fewer Z-levels is faster."
-msgstr ""
-"실험적 3D 시야의 수직 범위를 결정하는 설정입니다. (위아래를 모두 포함합니다.) 이 값을 최대치로 설정하면 게임 속도가 매우 "
-"느려지며, 수치가 낮을수록 게임 속도가 빨라집니다."
-
-#: src/options.cpp
-msgid "3D FoV shadow casting"
-msgstr "3D 시야 그림자 투사"
-
-#: src/options.cpp
-msgid ""
-"When enabled, obstacles at other z-levels correctly cast 3D shadows. "
-"Requires 3D FoV. Significantly slower than disabled."
-msgstr ""
-"활성화되면 다른 z축에 위치한 장애물이 3차원 그림자를 제대로 생성합니다. 3차원 시야가 활성화되어야 합니다. 비활성화된 상태보다 게임이"
-" 뚜렷하게 느려집니다."
 
 #: src/options.cpp
 msgid "Handle occlusion by high sprites"
@@ -313440,10 +313456,6 @@ msgstr "끔"
 #: src/options.cpp src/panels.cpp
 msgid "On"
 msgstr "켬"
-
-#: src/options.cpp
-msgid "Auto"
-msgstr "자동"
 
 #: src/options.cpp
 msgid "Prevent occlusion via transparency"
@@ -313614,6 +313626,31 @@ msgstr ""
 "현실 거품 (당신의 위치에서 볼 수 있는 모든 서브맵) 반경을 설정합니다. 구획 크기는 2 * 크기 + 각 면당 3 서브맵입니다. (기존"
 " 기본값은 4이며, 이는 11 * 11 크기를 의미합니다.) 최대 플레이어 시야 범위는 12 * (크기 + 1) 타일입니다. 이 값이 "
 "커지면 불러오는 영역이 증가하면서 메모리 소모량이 커집니다. 이 값이 작아지면 불러오는 영역이 감소하면서 메모리 소모량이 작아집니다."
+
+#: src/options.cpp
+msgid "Visibility Scaling"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Controls how clear-air visibility attenuation scales with the reality "
+"bubble.  Perfect scales directly with the current bubble size.  Smart keeps "
+"visibility near the size 6 baseline while still giving small bubbles less "
+"range and large bubbles more range.  None keeps visibility at the size 6 "
+"baseline and only uses bubble size as a hard view cap."
+msgstr ""
+
+#: src/options.cpp
+msgid "Perfect Scale"
+msgstr ""
+
+#: src/options.cpp
+msgid "Smart Scale"
+msgstr ""
+
+#: src/options.cpp
+msgid "No Scale"
+msgstr ""
 
 #: src/options.cpp
 msgid "Pre-load Border"
@@ -314208,15 +314245,90 @@ msgstr ""
 "으로 설정되면 해당 종류의 물품이 생성되지 않습니다."
 
 #: src/options.cpp
+msgid "Global action speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines the baseline action rate for creatures and activities.  A higher "
+"value allows more actions per in-game second, while a lower value makes "
+"calendar time pass faster relative to actions."
+msgstr ""
+
+#: src/options.cpp
+msgid "Player action speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines the player's action rate as a percentage of the global action "
+"speed.  A higher value allows more player actions per in-game second and a "
+"lower value allows fewer."
+msgstr ""
+
+#: src/options.cpp
+msgid "NPC action speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines NPC action rate as a percentage of the global action speed.  A "
+"higher value allows more NPC actions per in-game second and a lower value "
+"allows fewer."
+msgstr ""
+
+#: src/options.cpp
+msgid "Activity progress percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines long activity and crafting progress as a percentage of the global"
+" action speed.  A higher value completes activities faster per in-game "
+"second and a lower value completes them slower."
+msgstr ""
+
+#: src/options.cpp
+msgid "Vehicle control speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines driver control action rate as a percentage of the global action "
+"speed without changing physical vehicle movement.  A higher value allows "
+"more steering, braking, and throttle inputs per in-game second and a lower "
+"value allows fewer."
+msgstr ""
+
+#: src/options.cpp
+msgid "Overmap horde speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Determines overmap horde movement speed as a percentage of global action "
+"speed and monster speed.  A higher value makes hordes travel faster over the"
+" overmap and a lower value makes them slower."
+msgstr ""
+
+#: src/options.cpp
 msgid "Monster speed percentage"
 msgstr "괴물 속도 백분율"
 
 #: src/options.cpp
 msgid ""
-"Determines the movement rate of monsters.  A higher value increases monster "
-"speed and a lower reduces it.  Requires world reset."
+"Determines monster action rate as a percentage of the global action speed.  "
+"A higher value allows more monster actions per in-game second and a lower "
+"value allows fewer."
 msgstr ""
-"괴물의 이동속도를 결정합니다. 수치가 높을 경우 괴물의 속도를 상승시키며 낮을 경우 느리게 합니다. 월드맵 재생성이 필요합니다."
+
+#: src/options.cpp
+msgid "Time Scaling"
+msgstr ""
+
+#: src/options.cpp
+msgid "Configure experimental calendar and action-rate scaling."
+msgstr ""
 
 #: src/options.cpp
 msgid "Monster resilience percentage"
