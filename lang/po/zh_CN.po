@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-09 20:37+0000\n"
+"POT-Creation-Date: 2026-06-10 13:47+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -6188,8 +6188,16 @@ msgid "Build Roof Over Adobe Floor"
 msgstr "为黏土砖地建造屋顶"
 
 #: data/json/construction_group.json
+msgid "Build Bathtub"
+msgstr "建造浴缸"
+
+#: data/json/construction_group.json
 msgid "Fill Bathtub with Money"
 msgstr "用钱装满浴缸"
+
+#: data/json/construction_group.json
+msgid "Build Shower Booth"
+msgstr "建造淋浴间"
 
 #: data/json/construction_group.json
 msgid "Remove Money from Bathtub"
@@ -6390,10 +6398,6 @@ msgstr "放置钢管舞杆"
 #: data/json/construction_group.json
 msgid "Place Roulette Table"
 msgstr "放置轮盘赌桌"
-
-#: data/json/construction_group.json
-msgid "Build Bathtub"
-msgstr "建造浴缸"
 
 #: data/json/debug_spells.json
 msgid "Template Spell"
@@ -11013,6 +11017,11 @@ msgstr "这个装备 <info>可用于飞行</info>，但需要消耗 <info>UPS</i
 #: data/json/flags.json
 msgid "This gear <info>allows flight</info>."
 msgstr "这个装备<info>可用于飞行</info>。"
+
+#. ~ info for JSON flag 'BODY_CLEANSER'
+#: data/json/flags.json
+msgid "Safe to use as a body cleanser while bathing."
+msgstr "沐浴时可安全用作身体清洁剂。"
 
 #. ~ info for JSON flag 'ALLOWS_TAIL_SNAKE'
 #: data/json/flags.json
@@ -17540,6 +17549,18 @@ msgid "Good feeling"
 msgstr "感觉不错"
 
 #: data/json/morale_types.json
+msgid "Had shower"
+msgstr "洗过淋浴"
+
+#: data/json/morale_types.json
+msgid "Had bath"
+msgstr "洗过盆浴"
+
+#: data/json/morale_types.json
+msgid "Cleansed self"
+msgstr "清洁过身体"
+
+#: data/json/morale_types.json
 msgid "Supported"
 msgstr "受到鼓励"
 
@@ -18284,6 +18305,10 @@ msgstr "游戏"
 #: data/json/player_activities.json
 msgid "waiting"
 msgstr "等待"
+
+#: data/json/player_activities.json
+msgid "washing"
+msgstr "清洗"
 
 #: data/json/player_activities.json
 msgid "crafting"
@@ -37648,13 +37673,16 @@ msgid "whunk!"
 msgstr "唰唰！"
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
+#: data/json/lua/plumbing.lua
 msgid "shower"
 msgstr "淋浴器"
 
 #. ~ Description for shower
 #: data/json/furniture_and_terrain/furniture-plumbing.json
-msgid "You would be able to clean yourself if water was running."
-msgstr "一个供淋浴用的淋浴器，已停水。"
+msgid ""
+"You would be able to clean yourself if water was running.  Soap, detergent, "
+"or bleach could help with a thorough wash."
+msgstr "如果有自来水，你就可以清洁身体。肥皂、洗涤剂或漂白剂有助于彻底清洗。"
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid "sink"
@@ -37825,7 +37853,7 @@ msgstr "一个连接到液体管网的电动水井泵。当前处于开启状态
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid "rain collector (plumbed)"
-msgstr "雨水收集器（接管）"
+msgstr "雨水收集器（已接管）"
 
 #. ~ Description for rain collector (plumbed)
 #: data/json/furniture_and_terrain/furniture-plumbing.json
@@ -38952,7 +38980,7 @@ msgstr "一个用来装液体的大型立式金属罐，能装下很多液体。
 
 #: data/json/furniture_and_terrain/furniture-storage.json
 msgid "standing tank (plumbed)"
-msgstr "立式水箱（已接管）"
+msgstr "储存罐（已接管）"
 
 #. ~ Description for standing tank (plumbed)
 #: data/json/furniture_and_terrain/furniture-storage.json
@@ -121923,6 +121951,16 @@ msgstr[0] "水龙头"
 msgid "A metal faucet that can be attached to a water tank for easy access."
 msgstr "一个金属的水龙头，可以连接到水箱上，方便随时取水。"
 
+#: data/json/items/vehicle/utilities.json data/json/vehicleparts/crafting.json
+msgid "vehicle shower"
+msgid_plural "vehicle showers"
+msgstr[0] "车载淋浴器"
+
+#. ~ Description for {'str': 'vehicle shower'}
+#: data/json/items/vehicle/utilities.json
+msgid "A compact shower head and drain that can be attached to a water tank."
+msgstr "一个可连接到水箱的紧凑型淋浴喷头和排水管。"
+
 #: data/json/items/vehicle/wheel.json data/json/vehicleparts/wheel.json
 msgid "light wheel mount"
 msgid_plural "light wheel mounts"
@@ -122368,6 +122406,114 @@ msgstr "爆炸扰动了 %s，导致它扩大了！"
 #, c-format
 msgid "The blast destabilizes the %s, but it holds!"
 msgstr "爆炸扰动了 %s，但它维持住了！"
+
+#: data/json/lua/plumbing.lua
+msgid "bath"
+msgstr "盆浴"
+
+#: data/json/lua/plumbing.lua
+msgid "Shower Booth"
+msgstr "淋浴间"
+
+#: data/json/lua/plumbing.lua
+msgid "Bathtub"
+msgstr "浴缸"
+
+#: data/json/lua/plumbing.lua
+msgid "warm "
+msgstr "温水"
+
+#: data/json/lua/plumbing.lua
+msgid "cold "
+msgstr "冷水"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You need to stand on the %s tile to use it."
+msgstr "你需要站在 %s 格子上才能使用它。"
+
+#: data/json/lua/plumbing.lua
+msgid "the vehicle towel hanger"
+msgstr "车载毛巾架"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid ""
+"Need %.1f L of water for a %s, currently: %.1f L clean / %.1f L regular."
+msgstr "需要 %.1f 升水来进行 %s，当前有：%.1f 升纯净水 / %.1f 升普通水。"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid ""
+"This %s is too bloody to use.  Blood covers %d tile(s).  Clean it first."
+msgstr "这个 %s 沾了太多血，无法使用。血液覆盖了 %d 个格子。请先清理干净。"
+
+#: data/json/lua/plumbing.lua
+msgid "Need 1 body cleanser nearby or in inventory to cleanse yourself."
+msgstr "附近或物品栏中需要有 1 个身体清洁剂才能清洁身体。"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You clean the blood from the %s."
+msgstr "你清理了 %s 上的血迹。"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "Take a %s%s"
+msgstr "洗一个%s%s"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s and cleanse yourself"
+msgstr "%s并清洁身体"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "Need an electric grid with %d power for a warm %s, currently: no grid."
+msgstr "需要连接提供 %d 电力的电网才能进行温水 %s，当前：无电网。"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "Need %d power for a warm %s, currently: %d."
+msgstr "需要 %d 电力才能进行温水 %s，当前电力：%d。"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You start taking a %s%s."
+msgstr "你开始洗%s%s。"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You start taking a %s%s with %s."
+msgstr "你开始洗%s%s，并使用了%s。"
+
+#: data/json/lua/plumbing.lua
+msgid "Manage stored contents"
+msgstr "管理储存的物品"
+
+#: data/json/lua/plumbing.lua
+msgid "Clean the blood away"
+msgstr "清理血迹"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You finish your %s%s feeling refreshed."
+msgstr "你洗完了%s%s，感觉神清气爽。"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s  You cleansed yourself with %s."
+msgstr "%s 你用 %s 清洁了身体。"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s  Without a dry towel, you are soaked."
+msgstr "%s 因为没有干毛巾，你全身都湿透了。"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s  You dry off with %s."
+msgstr "%s 你用 %s 擦干了身体。"
 
 #: data/json/lua/robofac.lua
 msgid ""
@@ -186134,6 +186280,11 @@ msgstr "一台车载净水器，使用车载电源供电。你可以用它净化
 #: data/json/vehicleparts/crafting.json
 msgid "A water faucet."
 msgstr "一个水龙头。"
+
+#. ~ Description for {'str': 'vehicle shower'}
+#: data/json/vehicleparts/crafting.json
+msgid "A compact shower connected to the vehicle's water tanks."
+msgstr "一个连接到车载水箱的紧凑型淋浴器。"
 
 #. ~ Description for {'str': 'autoclave'}
 #: data/json/vehicleparts/crafting.json
@@ -304337,6 +304488,28 @@ msgid ""
 msgstr "用软件渲染来替代硬件加速，需要重启。（安卓版采用软件渲染不稳定，可能导致闪退）"
 
 #: src/options.cpp
+msgid "Texture Streaming"
+msgstr "纹理流送"
+
+#: src/options.cpp
+msgid ""
+"Use texture-streaming instead of render-to-texture for dynamic graphics. "
+"Requires restart."
+msgstr "针对动态图形，使用纹理流送代替渲染至纹理。需要重新启动。"
+
+#: src/options.cpp
+msgid "Auto"
+msgstr "自动"
+
+#: src/options.cpp
+msgid "Enable"
+msgstr "启用"
+
+#: src/options.cpp
+msgid "Disable"
+msgstr "禁用"
+
+#: src/options.cpp
 msgid "Allow render batching"
 msgstr "启用批量渲染"
 
@@ -304407,10 +304580,6 @@ msgid ""
 "Controls SDL_GPU compute device selection for lighting and visibility.  "
 "Requires restart."
 msgstr "控制用于光照与视野计算的 SDL_GPU 计算设备选择。需要重启游戏。"
-
-#: src/options.cpp
-msgid "Auto"
-msgstr "自动"
 
 #: src/options.cpp
 msgid "Software"
@@ -312667,6 +312836,10 @@ msgstr "用水装满容器"
 #: src/vehicle_use.cpp
 msgid "Use a towel"
 msgstr "使用毛巾"
+
+#: src/vehicle_use.cpp
+msgid "Take a shower"
+msgstr "洗淋浴"
 
 #: src/vehicle_use.cpp
 msgid "Use the integrated tools"

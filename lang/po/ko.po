@@ -16,7 +16,6 @@
 # 백도 <tmtm1379@gmail.com>, 2026
 # Cokafold, 2026
 # ARDOR Flag, 2026
-# 김정국 <forforever12@gmail.com>, 2026
 # Sail Recycle <sailrecycle@gmail.com>, 2026
 # 이찬기, 2026
 # 47a81cb9738d39622e1b1fde74c42b2a_791bd4f <20fb875a401cb03ba4fd8103e46da6b9_1176784>, 2026
@@ -30,12 +29,13 @@
 # Tae Heon Lim, 2026
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
 # 모랑랑, 2026
+# 김정국 <forforever12@gmail.com>, 2026
 # Fruitybite, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-09 18:18+0000\n"
+"POT-Creation-Date: 2026-06-10 15:54+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -6627,8 +6627,16 @@ msgid "Build Roof Over Adobe Floor"
 msgstr "어도비 벽돌 바닥 위 지붕 건설"
 
 #: data/json/construction_group.json
+msgid "Build Bathtub"
+msgstr "욕조 제작"
+
+#: data/json/construction_group.json
 msgid "Fill Bathtub with Money"
 msgstr "욕조를 돈으로 채우기"
+
+#: data/json/construction_group.json
+msgid "Build Shower Booth"
+msgstr "샤워 부스 건설"
 
 #: data/json/construction_group.json
 msgid "Remove Money from Bathtub"
@@ -6829,10 +6837,6 @@ msgstr "댄스용 기둥 설치"
 #: data/json/construction_group.json
 msgid "Place Roulette Table"
 msgstr "룰렛 테이블 설치"
-
-#: data/json/construction_group.json
-msgid "Build Bathtub"
-msgstr "욕조 제작"
 
 #: data/json/debug_spells.json
 msgid "Template Spell"
@@ -11463,6 +11467,11 @@ msgstr "이 장비는 <info>비행 기능</info>을 활성화할 수 있지만, 
 #: data/json/flags.json
 msgid "This gear <info>allows flight</info>."
 msgstr "이 장비는 <info>비행 기능</info>이 있습니다."
+
+#. ~ info for JSON flag 'BODY_CLEANSER'
+#: data/json/flags.json
+msgid "Safe to use as a body cleanser while bathing."
+msgstr "목욕할 때 바디워시 용도로 쓸 수 있습니다."
 
 #. ~ info for JSON flag 'ALLOWS_TAIL_SNAKE'
 #: data/json/flags.json
@@ -18076,6 +18085,18 @@ msgid "Good feeling"
 msgstr "기분이 좋음"
 
 #: data/json/morale_types.json
+msgid "Had shower"
+msgstr "최근 샤워함"
+
+#: data/json/morale_types.json
+msgid "Had bath"
+msgstr "최근 목욕함"
+
+#: data/json/morale_types.json
+msgid "Cleansed self"
+msgstr "최근 정갈하게 씻음"
+
+#: data/json/morale_types.json
 msgid "Supported"
 msgstr "격려받음"
 
@@ -18841,6 +18862,10 @@ msgstr "놀기"
 #: data/json/player_activities.json
 msgid "waiting"
 msgstr "대기"
+
+#: data/json/player_activities.json
+msgid "washing"
+msgstr "씻기"
 
 #: data/json/player_activities.json
 msgid "crafting"
@@ -39314,13 +39339,16 @@ msgid "whunk!"
 msgstr "터엉!"
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
+#: data/json/lua/plumbing.lua
 msgid "shower"
 msgstr "샤워기"
 
 #. ~ Description for shower
 #: data/json/furniture_and_terrain/furniture-plumbing.json
-msgid "You would be able to clean yourself if water was running."
-msgstr "수도가 멀쩡했다면 이걸로 간만에 샤워를 좀 할 수 있을텐데요."
+msgid ""
+"You would be able to clean yourself if water was running.  Soap, detergent, "
+"or bleach could help with a thorough wash."
+msgstr "수도가 공급된다면 몸을 씻을 수 있습니다. 비누, 세제, 표백제를 사용하면 더 깨끗하게 씻을 수 있습니다."
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid "sink"
@@ -126194,6 +126222,16 @@ msgstr[0] "수도꼭지"
 msgid "A metal faucet that can be attached to a water tank for easy access."
 msgstr "쉽게 물탱크에서 물을 빼낼 수 있도록 부착하는 금속 수도꼭지."
 
+#: data/json/items/vehicle/utilities.json data/json/vehicleparts/crafting.json
+msgid "vehicle shower"
+msgid_plural "vehicle showers"
+msgstr[0] "차량용 샤워기"
+
+#. ~ Description for {'str': 'vehicle shower'}
+#: data/json/items/vehicle/utilities.json
+msgid "A compact shower head and drain that can be attached to a water tank."
+msgstr "차량 물탱크에 연결할 수 있는 호스 및 샤워기입니다."
+
 #: data/json/items/vehicle/wheel.json data/json/vehicleparts/wheel.json
 msgid "light wheel mount"
 msgid_plural "light wheel mounts"
@@ -126664,6 +126702,114 @@ msgstr "폭발이 %s(을)를 불안정화시켜, 더 크게 넓힙니다!"
 #, c-format
 msgid "The blast destabilizes the %s, but it holds!"
 msgstr "폭발이 %s(을)를 불안정화시키지만, 아슬아슬하게 유지됩니다!"
+
+#: data/json/lua/plumbing.lua
+msgid "bath"
+msgstr "목욕"
+
+#: data/json/lua/plumbing.lua
+msgid "Shower Booth"
+msgstr "샤워 부스"
+
+#: data/json/lua/plumbing.lua
+msgid "Bathtub"
+msgstr "욕조"
+
+#: data/json/lua/plumbing.lua
+msgid "warm "
+msgstr "따뜻함"
+
+#: data/json/lua/plumbing.lua
+msgid "cold "
+msgstr "차가움"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You need to stand on the %s tile to use it."
+msgstr "%s 타일 이내에 서있어야 사용할 수 있습니다."
+
+#: data/json/lua/plumbing.lua
+msgid "the vehicle towel hanger"
+msgstr "차량용 수건 걸이"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid ""
+"Need %.1f L of water for a %s, currently: %.1f L clean / %.1f L regular."
+msgstr "%.1f L 의 물이 있어야 %s(을)를 시도할 수 있습니다. 잔량: 깨끗한 물 %.1f L / 일반 물 %.1f L."
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid ""
+"This %s is too bloody to use.  Blood covers %d tile(s).  Clean it first."
+msgstr "%s(이)가 너무 피투성이라 이대로는 쓸 수 없습니다. 피가 %d 타일에 덮여있으니 먼저 닦으세요."
+
+#: data/json/lua/plumbing.lua
+msgid "Need 1 body cleanser nearby or in inventory to cleanse yourself."
+msgstr "인근에 있거나 소지 중인 바디워시 1개가 있어야 정갈하게 씻을 수 있습니다."
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You clean the blood from the %s."
+msgstr "%s에서 피를 씻어냅니다."
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "Take a %s%s"
+msgstr "%s%s"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s and cleanse yourself"
+msgstr "%s 및 정갈하게 씻기"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "Need an electric grid with %d power for a warm %s, currently: no grid."
+msgstr "전력 %d(이)가 충전된 전력망이 있어야 %s(을)를 데울 수 있습니다. 현재 전력망이 없습니다."
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "Need %d power for a warm %s, currently: %d."
+msgstr "전력 %d(이)가 있어야 %s(을)를 데울 수 있습니다. 현재 전력은 %d입니다."
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You start taking a %s%s."
+msgstr "%s%s(을)를 시작합니다."
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You start taking a %s%s with %s."
+msgstr "%s%s(을)를 %s(을)를 이용해 시작합니다."
+
+#: data/json/lua/plumbing.lua
+msgid "Manage stored contents"
+msgstr "저장된 내용물 관리"
+
+#: data/json/lua/plumbing.lua
+msgid "Clean the blood away"
+msgstr "피 씻어내기"
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You finish your %s%s feeling refreshed."
+msgstr "%s%s(을)를 마치자 몸에 활기가 돌아옵니다."
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s  You cleansed yourself with %s."
+msgstr "%s %s(을)를 이용해 몸을 정갈하게 씻었습니다."
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s  Without a dry towel, you are soaked."
+msgstr "%s 마른 수건이 없어 몸이 축축하게 젖은 상태입니다."
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s  You dry off with %s."
+msgstr "%s %s(으)로 몸을 닦았습니다."
 
 #: data/json/lua/robofac.lua
 msgid ""
@@ -193985,6 +194131,11 @@ msgstr ""
 msgid "A water faucet."
 msgstr "수도꼭지입니다."
 
+#. ~ Description for {'str': 'vehicle shower'}
+#: data/json/vehicleparts/crafting.json
+msgid "A compact shower connected to the vehicle's water tanks."
+msgstr "차량 물탱크에 연결된 샤워기입니다."
+
 #. ~ Description for {'str': 'autoclave'}
 #: data/json/vehicleparts/crafting.json
 msgid ""
@@ -237268,7 +237419,7 @@ msgstr "제 부모를 찾아 헤메는데 집착하는 이 아이는 어느 죽�
 #: data/mods/Civilians/civilians.json
 msgid "survivor hunter"
 msgid_plural "survivor hunters"
-msgstr[0] ""
+msgstr[0] "생존자 사냥꾼"
 
 #. ~ Description for {'str': 'survivor hunter'}
 #: data/mods/Civilians/civilians.json
@@ -237278,10 +237429,12 @@ msgid ""
 "crude but deadly makeshift bow, coldly aiming at any threat that dares "
 "approach."
 msgstr ""
+"대재앙이 약자들을 제거했지만, 이 작자는 살아남았습니다. 이 잔혹한 세계에서 살아남기 위해 옛 시대의 안락을 포기하고 조잡하지만 치명적인"
+" 간이 활을 손에 들었으며, 감히 다가오는 어떤 위협에든 냉정하게 조준합니다."
 
 #: data/mods/Civilians/civilians.json
 msgid "The survivor hunter shoots their bow!"
-msgstr ""
+msgstr "생존자 사냥꾼이 활을 발사합니다!"
 
 #. ~ Description for {'str': 'survivor hunter'}
 #: data/mods/Civilians/civilians.json
@@ -237291,15 +237444,17 @@ msgid ""
 "crude but deadly makeshift crossbow, coldly aiming at any threat that dares "
 "approach."
 msgstr ""
+"대재앙이 약자들을 제거했지만, 이 작자는 살아남았습니다. 이 잔혹한 세계에서 살아남기 위해 옛 시대의 안락을 포기하고 조잡하지만 치명적인"
+" 간이 석궁을 손에 들었으며, 감히 다가오는 어떤 위협에든 냉정하게 조준합니다."
 
 #: data/mods/Civilians/civilians.json
 msgid "The survivor hunter shoots their crossbow!"
-msgstr ""
+msgstr "생존자 사냥꾼이 석궁을 발사합니다!"
 
 #: data/mods/Civilians/civilians.json
 msgid "survivor gunner"
 msgid_plural "survivor gunners"
-msgstr[0] ""
+msgstr[0] "생존자 총잡이"
 
 #. ~ Description for {'str': 'survivor gunner'}
 #: data/mods/Civilians/civilians.json
@@ -237309,15 +237464,17 @@ msgid ""
 "any monster trying to take their life straight to hell with the bullets in "
 "their chamber."
 msgstr ""
+"잔혹한 대재앙은 이 민간인이 냉혹한 생존자로 탈바꿈하게 만들었습니다. 늘 날카롭게 긴장한 채 권총을 움켜쥐고 있으며, 감히 목숨을 해치려"
+" 드는 괴물을 언제든지 총탄과 함께 지옥으로 보내줄 준비가 되어있습니다."
 
 #: data/mods/Civilians/civilians.json
 msgid "The survivor gunner fires their pistol!"
-msgstr ""
+msgstr "생존자 총잡이가 권총을 발사합니다!"
 
 #: data/mods/Civilians/civilians.json
 msgid "survivor fighter"
 msgid_plural "survivor fighters"
-msgstr[0] ""
+msgstr[0] "생존자 전사"
 
 #. ~ Description for {'str': 'survivor fighter'}
 #: data/mods/Civilians/civilians.json
@@ -237331,7 +237488,7 @@ msgstr ""
 #: data/mods/Civilians/civilians.json
 msgid "survivor guardian"
 msgid_plural "survivor guardians"
-msgstr[0] ""
+msgstr[0] "생존자 수호자"
 
 #. ~ Description for {'str': 'survivor guardian'}
 #: data/mods/Civilians/civilians.json
@@ -237345,7 +237502,7 @@ msgstr ""
 
 #: data/mods/Civilians/civilians.json
 msgid "The survivor guardian fires their shotgun!"
-msgstr ""
+msgstr "생존자 수호자가 산탄총을 발사합니다!"
 
 #. ~ Description for {'str': 'survivor guardian'}
 #: data/mods/Civilians/civilians.json
@@ -237359,12 +237516,12 @@ msgstr ""
 
 #: data/mods/Civilians/civilians.json
 msgid "The survivor guardian fires their submachine gun!"
-msgstr ""
+msgstr "생존자 수호자가 기관단총을 발사합니다!"
 
 #: data/mods/Civilians/civilians.json
 msgid "survivor child"
 msgid_plural "survivor childs"
-msgstr[0] ""
+msgstr[0] "생존자 아이"
 
 #. ~ Description for {'str': 'survivor child'}
 #: data/mods/Civilians/civilians.json
@@ -237377,12 +237534,12 @@ msgstr ""
 
 #: data/mods/Civilians/civilians.json
 msgid "The survivor child throws a bola!"
-msgstr ""
+msgstr "생존자 아이가 볼라를 던집니다!"
 
 #: data/mods/Civilians/civilians.json
 msgid "veteran survivor hunter"
 msgid_plural "veteran survivor hunters"
-msgstr[0] ""
+msgstr[0] "베테랑 생존자 사냥꾼"
 
 #. ~ Description for {'str': 'veteran survivor hunter'}
 #: data/mods/Civilians/civilians.json
@@ -237395,7 +237552,7 @@ msgstr ""
 
 #: data/mods/Civilians/civilians.json
 msgid "The veteran survivor hunter shoots their bow!"
-msgstr ""
+msgstr "베테랑 생존자 사냥꾼이 활을 발사합니다!"
 
 #. ~ Description for {'str': 'veteran survivor hunter'}
 #: data/mods/Civilians/civilians.json
@@ -237408,12 +237565,12 @@ msgstr ""
 
 #: data/mods/Civilians/civilians.json
 msgid "The veteran survivor hunter shoots their crossbow!"
-msgstr ""
+msgstr "베테랑 생존자 사냥꾼이 석궁을 발사합니다!"
 
 #: data/mods/Civilians/civilians.json
 msgid "veteran survivor gunner"
 msgid_plural "veteran survivor gunners"
-msgstr[0] ""
+msgstr[0] "베테랑 생존자 총잡이"
 
 #. ~ Description for {'str': 'veteran survivor gunner'}
 #: data/mods/Civilians/civilians.json
@@ -237426,12 +237583,12 @@ msgstr ""
 
 #: data/mods/Civilians/civilians.json
 msgid "The veteran survivor gunner fires their pistol!"
-msgstr ""
+msgstr "베테랑 생존자 총잡이가 권총을 발사합니다!"
 
 #: data/mods/Civilians/civilians.json
 msgid "veteran survivor fighter"
 msgid_plural "veteran survivor fighters"
-msgstr[0] ""
+msgstr[0] "베테랑 생존자 전사"
 
 #. ~ Description for {'str': 'veteran survivor fighter'}
 #: data/mods/Civilians/civilians.json
@@ -237446,7 +237603,7 @@ msgstr ""
 #: data/mods/Civilians/civilians.json
 msgid "veteran survivor guardian"
 msgid_plural "veteran survivor guardians"
-msgstr[0] ""
+msgstr[0] "베테랑 생존자 수호자"
 
 #. ~ Description for {'str': 'veteran survivor guardian'}
 #: data/mods/Civilians/civilians.json
@@ -237460,7 +237617,7 @@ msgstr ""
 
 #: data/mods/Civilians/civilians.json
 msgid "The veteran survivor guardian fires their rifle!"
-msgstr ""
+msgstr "생존자 수호자가 소총을 발사합니다!"
 
 #. ~ Description for {'str': 'veteran survivor guardian'}
 #: data/mods/Civilians/civilians.json
@@ -237474,12 +237631,12 @@ msgstr ""
 
 #: data/mods/Civilians/civilians.json
 msgid "The veteran survivor guardian fires their assault rifle!"
-msgstr ""
+msgstr "생존자 수호자가 돌격소총을 발사합니다!"
 
 #: data/mods/Civilians/civilians.json
 msgid "veteran survivor child"
 msgid_plural "veteran survivor childs"
-msgstr[0] ""
+msgstr[0] "베테랑 생존자 아이"
 
 #. ~ Description for {'str': 'veteran survivor child'}
 #: data/mods/Civilians/civilians.json
@@ -237493,7 +237650,7 @@ msgstr ""
 
 #: data/mods/Civilians/civilians.json
 msgid "The veteran survivor child throws a net!"
-msgstr ""
+msgstr "생존자 아이가 그물을 던집니다!"
 
 #: data/mods/Civilians/modinfo.json
 msgid "Civilians"
@@ -237520,7 +237677,7 @@ msgstr "지나치게 자신만만한 경관이 소지하는 총입니다. 밸런
 #: data/mods/Civilians/monster_gun.json
 msgid "Survivor hunter's weapon (bow)"
 msgid_plural "Survivor hunter's weapon (bow)s"
-msgstr[0] ""
+msgstr[0] "생존자 사냥꾼 무기 (활)"
 
 #: data/mods/Civilians/monster_gun.json
 msgid ""
@@ -237531,12 +237688,12 @@ msgstr ""
 #: data/mods/Civilians/monster_gun.json
 msgid "Survivor hunter's weapon (crossbow)"
 msgid_plural "Survivor hunter's weapon (crossbow)s"
-msgstr[0] ""
+msgstr[0] "생존자 사냥꾼 무기 (석궁)"
 
 #: data/mods/Civilians/monster_gun.json
 msgid "Survivor gunner's weapon"
 msgid_plural "Survivor gunner's weapons"
-msgstr[0] ""
+msgstr[0] "생존자 총잡이 무기"
 
 #: data/mods/Civilians/monster_gun.json
 msgid ""
@@ -237547,7 +237704,7 @@ msgstr ""
 #: data/mods/Civilians/monster_gun.json
 msgid "Survivor guardian's weapon"
 msgid_plural "Survivor guardian's weapons"
-msgstr[0] ""
+msgstr[0] "생존자 수호자 무기"
 
 #: data/mods/Civilians/monster_gun.json
 msgid ""
@@ -237558,7 +237715,7 @@ msgstr ""
 #: data/mods/Civilians/monster_gun.json
 msgid "Veteran survivor hunter's weapon (bow)"
 msgid_plural "Veteran survivor hunter's weapon (bow)s"
-msgstr[0] ""
+msgstr[0] "베테랑 생존자 사냥꾼 무기 (활)"
 
 #: data/mods/Civilians/monster_gun.json
 msgid ""
@@ -237569,12 +237726,12 @@ msgstr ""
 #: data/mods/Civilians/monster_gun.json
 msgid "Veteran survivor hunter's weapon (crossbow)"
 msgid_plural "Veteran survivor hunter's weapon (crossbow)s"
-msgstr[0] ""
+msgstr[0] "베테랑 생존자 사냥꾼 무기 (석궁)"
 
 #: data/mods/Civilians/monster_gun.json
 msgid "Veteran survivor gunner's weapon"
 msgid_plural "Veteran survivor gunner's weapon"
-msgstr[0] ""
+msgstr[0] "베테랑 생존자 총잡이 무기"
 
 #: data/mods/Civilians/monster_gun.json
 msgid ""
@@ -237585,7 +237742,7 @@ msgstr ""
 #: data/mods/Civilians/monster_gun.json
 msgid "Veteran survivor guardian's weapon"
 msgid_plural "Veteran survivor guardian's weapon"
-msgstr[0] ""
+msgstr[0] "베테랑 생존자 수호자 무기"
 
 #: data/mods/Civilians/monster_gun.json
 msgid ""
@@ -237661,19 +237818,19 @@ msgstr ""
 
 #: data/mods/Civilians/speech.json
 msgid "A terrified howl."
-msgstr ""
+msgstr "겁에 질린 울부짖음"
 
 #: data/mods/Civilians/speech.json
 msgid "A fearful wail."
-msgstr ""
+msgstr "두려운 통곡"
 
 #: data/mods/Civilians/speech.json
 msgid "An agonizing scream."
-msgstr ""
+msgstr "고통스러운 비명"
 
 #: data/mods/Civilians/speech.json
 msgid "A painful cry."
-msgstr ""
+msgstr "고통스러운 울부짖음"
 
 #: data/mods/Civilians/speech.json
 msgid "A faint whimper, barely human."
@@ -237681,7 +237838,7 @@ msgstr ""
 
 #: data/mods/Civilians/speech.json
 msgid "Someone screams frantically: 'Help! Somebody help me!'"
-msgstr ""
+msgstr "누군가가 미친듯이 외칩니다. \"도와줘요! 누가 좀 도와주세요!\""
 
 #: data/mods/Civilians/speech.json
 msgid ""
@@ -237980,7 +238137,7 @@ msgstr ""
 
 #: data/mods/Civilians/speech.json
 msgid "A child's playful laughter."
-msgstr ""
+msgstr "아이의 쾌활한 웃음소리"
 
 #: data/mods/Civilians/speech.json
 msgid ""
@@ -267150,16 +267307,16 @@ msgstr "좀비가 바위를 집어던집니다!"
 
 #: data/mods/lua_ai_attitude_debug/item_action.json
 msgid "Run Lua AI debug helper"
-msgstr ""
+msgstr "Lua 인공지능 디버그 도우미 실행"
 
 #: data/mods/lua_ai_attitude_debug/item_action.json
 msgid "Set Lua AI debug drone mode"
-msgstr ""
+msgstr "Lua 인공지능 디버그 드론 모드 설정"
 
 #: data/mods/lua_ai_attitude_debug/items.json
 msgid "Lua AI debug remote"
 msgid_plural "Lua AI debug remotes"
-msgstr[0] ""
+msgstr[0] "Lua 인공지능 디버그 원격조종"
 
 #. ~ Description for {'str': 'Lua AI debug remote'}
 #: data/mods/lua_ai_attitude_debug/items.json
@@ -267171,7 +267328,7 @@ msgstr ""
 #: data/mods/lua_ai_attitude_debug/items.json
 msgid "Lua AI debug selector"
 msgid_plural "Lua AI debug selectors"
-msgstr[0] ""
+msgstr[0] "Lua 인공지능 디버그 선택기"
 
 #. ~ Description for {'str': 'Lua AI debug selector'}
 #: data/mods/lua_ai_attitude_debug/items.json
@@ -267182,7 +267339,7 @@ msgstr ""
 
 #: data/mods/lua_ai_attitude_debug/modinfo.json
 msgid "Lua AI Examples"
-msgstr ""
+msgstr "Lua 인공지능 예시"
 
 #. ~ Description for Lua AI Examples
 #: data/mods/lua_ai_attitude_debug/modinfo.json
@@ -267194,7 +267351,7 @@ msgstr ""
 #: data/mods/lua_ai_attitude_debug/monsters.json
 msgid "Lua debug drone"
 msgid_plural "Lua debug drones"
-msgstr[0] ""
+msgstr[0] "Lua 디버그 드론"
 
 #. ~ Description for {'str': 'Lua debug drone'}
 #: data/mods/lua_ai_attitude_debug/monsters.json
@@ -267206,7 +267363,7 @@ msgstr ""
 #: data/mods/lua_ai_attitude_debug/monsters.json
 msgid "Lua dance bot"
 msgid_plural "Lua dance bots"
-msgstr[0] ""
+msgstr[0] "Lua 댄스로봇"
 
 #. ~ Description for {'str': 'Lua dance bot'}
 #: data/mods/lua_ai_attitude_debug/monsters.json
@@ -313834,6 +313991,28 @@ msgid ""
 msgstr "그래픽카드 가속 대신 소프트웨어 렌더러를 사용합니다. 재시작을 필요로 합니다."
 
 #: src/options.cpp
+msgid "Texture Streaming"
+msgstr "텍스처 스트리밍"
+
+#: src/options.cpp
+msgid ""
+"Use texture-streaming instead of render-to-texture for dynamic graphics. "
+"Requires restart."
+msgstr ""
+
+#: src/options.cpp
+msgid "Auto"
+msgstr "자동"
+
+#: src/options.cpp
+msgid "Enable"
+msgstr "활성화"
+
+#: src/options.cpp
+msgid "Disable"
+msgstr "비활성화"
+
+#: src/options.cpp
 msgid "Allow render batching"
 msgstr "렌더 배칭 허용"
 
@@ -313905,10 +314084,6 @@ msgid ""
 "Controls SDL_GPU compute device selection for lighting and visibility.  "
 "Requires restart."
 msgstr "조명 및 시야 처리에 사용할 SDL_GPU 연산 장치를 선택합니다. 설정을 변경한 후에는 재시작이 필요합니다."
-
-#: src/options.cpp
-msgid "Auto"
-msgstr "자동"
 
 #: src/options.cpp
 msgid "Software"
@@ -322268,6 +322443,10 @@ msgstr "물 채우기"
 #: src/vehicle_use.cpp
 msgid "Use a towel"
 msgstr "수건 사용"
+
+#: src/vehicle_use.cpp
+msgid "Take a shower"
+msgstr "샤워하기"
 
 #: src/vehicle_use.cpp
 msgid "Use the integrated tools"

@@ -2,15 +2,15 @@
 # O M, 2026
 # やまねこ, 2026
 # jacli mouber, 2026
-# pigmentblue15, 2026
 # Neko Sippo, 2026
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
+# pigmentblue15, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-09 18:18+0000\n"
-"Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
+"POT-Creation-Date: 2026-06-10 09:00+0000\n"
+"Last-Translator: pigmentblue15, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -6233,8 +6233,16 @@ msgid "Build Roof Over Adobe Floor"
 msgstr "アドビ床の上に屋根を組み立てる"
 
 #: data/json/construction_group.json
+msgid "Build Bathtub"
+msgstr ""
+
+#: data/json/construction_group.json
 msgid "Fill Bathtub with Money"
 msgstr "浴槽をお金で満たす"
+
+#: data/json/construction_group.json
+msgid "Build Shower Booth"
+msgstr ""
 
 #: data/json/construction_group.json
 msgid "Remove Money from Bathtub"
@@ -6434,10 +6442,6 @@ msgstr ""
 
 #: data/json/construction_group.json
 msgid "Place Roulette Table"
-msgstr ""
-
-#: data/json/construction_group.json
-msgid "Build Bathtub"
 msgstr ""
 
 #: data/json/debug_spells.json
@@ -11053,6 +11057,11 @@ msgstr "このアイテムは起動中、<info>飛行を可能</info>にする�
 #: data/json/flags.json
 msgid "This gear <info>allows flight</info>."
 msgstr "このアイテムは着用者の<info>飛行を可能</info>にする。"
+
+#. ~ info for JSON flag 'BODY_CLEANSER'
+#: data/json/flags.json
+msgid "Safe to use as a body cleanser while bathing."
+msgstr ""
 
 #. ~ info for JSON flag 'ALLOWS_TAIL_SNAKE'
 #: data/json/flags.json
@@ -17615,6 +17624,18 @@ msgid "Good feeling"
 msgstr "気分が良くなった"
 
 #: data/json/morale_types.json
+msgid "Had shower"
+msgstr ""
+
+#: data/json/morale_types.json
+msgid "Had bath"
+msgstr ""
+
+#: data/json/morale_types.json
+msgid "Cleansed self"
+msgstr ""
+
+#: data/json/morale_types.json
 msgid "Supported"
 msgstr "支援を受けた"
 
@@ -18365,6 +18386,10 @@ msgstr "遊戯"
 #: data/json/player_activities.json
 msgid "waiting"
 msgstr "待機"
+
+#: data/json/player_activities.json
+msgid "washing"
+msgstr "洗濯"
 
 #: data/json/player_activities.json
 msgid "crafting"
@@ -37938,13 +37963,16 @@ msgid "whunk!"
 msgstr "ガンッ！"
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
+#: data/json/lua/plumbing.lua
 msgid "shower"
 msgstr "シャワー"
 
 #. ~ Description for shower
 #: data/json/furniture_and_terrain/furniture-plumbing.json
-msgid "You would be able to clean yourself if water was running."
-msgstr "水さえ出れば体を綺麗にできるのだが。"
+msgid ""
+"You would be able to clean yourself if water was running.  Soap, detergent, "
+"or bleach could help with a thorough wash."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-plumbing.json
 msgid "sink"
@@ -122161,6 +122189,16 @@ msgstr[0] "蛇口"
 msgid "A metal faucet that can be attached to a water tank for easy access."
 msgstr "金属製の蛇口だ。給水タンクに取り付けると、中の液体を簡単に流せる。"
 
+#: data/json/items/vehicle/utilities.json data/json/vehicleparts/crafting.json
+msgid "vehicle shower"
+msgid_plural "vehicle showers"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'vehicle shower'}
+#: data/json/items/vehicle/utilities.json
+msgid "A compact shower head and drain that can be attached to a water tank."
+msgstr ""
+
 #: data/json/items/vehicle/wheel.json data/json/vehicleparts/wheel.json
 msgid "light wheel mount"
 msgid_plural "light wheel mounts"
@@ -122611,6 +122649,114 @@ msgstr ""
 #: data/json/lua/nuclear_tear.lua
 #, c-format
 msgid "The blast destabilizes the %s, but it holds!"
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+msgid "bath"
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+msgid "Shower Booth"
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+msgid "Bathtub"
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+msgid "warm "
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+msgid "cold "
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You need to stand on the %s tile to use it."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+msgid "the vehicle towel hanger"
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid ""
+"Need %.1f L of water for a %s, currently: %.1f L clean / %.1f L regular."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid ""
+"This %s is too bloody to use.  Blood covers %d tile(s).  Clean it first."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+msgid "Need 1 body cleanser nearby or in inventory to cleanse yourself."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You clean the blood from the %s."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "Take a %s%s"
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s and cleanse yourself"
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "Need an electric grid with %d power for a warm %s, currently: no grid."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "Need %d power for a warm %s, currently: %d."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You start taking a %s%s."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You start taking a %s%s with %s."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+msgid "Manage stored contents"
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+msgid "Clean the blood away"
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "You finish your %s%s feeling refreshed."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s  You cleansed yourself with %s."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s  Without a dry towel, you are soaked."
+msgstr ""
+
+#: data/json/lua/plumbing.lua
+#, c-format
+msgid "%s  You dry off with %s."
 msgstr ""
 
 #: data/json/lua/robofac.lua
@@ -186699,6 +186845,11 @@ msgstr "浄水器。車両のバッテリーの電力で駆動する。容器や
 #: data/json/vehicleparts/crafting.json
 msgid "A water faucet."
 msgstr "蛇口だ。"
+
+#. ~ Description for {'str': 'vehicle shower'}
+#: data/json/vehicleparts/crafting.json
+msgid "A compact shower connected to the vehicle's water tanks."
+msgstr ""
 
 #. ~ Description for {'str': 'autoclave'}
 #: data/json/vehicleparts/crafting.json
@@ -304011,6 +304162,28 @@ msgid ""
 msgstr "グラフィックカードのハードウェアアクセラレーションを使わず、代わりにソフトウェアレンダラーを使用する。再起動が必要。"
 
 #: src/options.cpp
+msgid "Texture Streaming"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Use texture-streaming instead of render-to-texture for dynamic graphics. "
+"Requires restart."
+msgstr ""
+
+#: src/options.cpp
+msgid "Auto"
+msgstr ""
+
+#: src/options.cpp
+msgid "Enable"
+msgstr ""
+
+#: src/options.cpp
+msgid "Disable"
+msgstr ""
+
+#: src/options.cpp
 msgid "Allow render batching"
 msgstr "レンダーバッチングを許可"
 
@@ -304082,10 +304255,6 @@ msgstr ""
 msgid ""
 "Controls SDL_GPU compute device selection for lighting and visibility.  "
 "Requires restart."
-msgstr ""
-
-#: src/options.cpp
-msgid "Auto"
 msgstr ""
 
 #: src/options.cpp
@@ -312325,6 +312494,10 @@ msgstr "容器に水を満たす"
 #: src/vehicle_use.cpp
 msgid "Use a towel"
 msgstr "タオルを使う"
+
+#: src/vehicle_use.cpp
+msgid "Take a shower"
+msgstr ""
 
 #: src/vehicle_use.cpp
 msgid "Use the integrated tools"
