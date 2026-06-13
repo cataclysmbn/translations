@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-12 15:12+0000\n"
+"POT-Creation-Date: 2026-06-13 02:05+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: German (https://app.transifex.com/bn-team/teams/113585/de/)\n"
 "MIME-Version: 1.0\n"
@@ -17526,9 +17526,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: data/json/monster_attacks.json data/json/items/classes/gun.json
-#: data/json/items/gun/atgm.json data/json/items/gun/mininuke_mod.json
-#: data/json/items/gun/tankguns.json data/json/items/ranged/slings.json
-#: data/json/obsoletion/items.json data/mods/Aftershock/items/bioparts.json
+#: data/json/items/gun/atgm.json data/json/items/gun/hellfire.json
+#: data/json/items/gun/mininuke_mod.json data/json/items/gun/tankguns.json
+#: data/json/items/ranged/slings.json data/json/obsoletion/items.json
+#: data/mods/Aftershock/items/bioparts.json
 #: data/mods/Aftershock/items/weapons.json
 #: data/mods/CRT_EXPANSION/items/crt_gun.json
 msgctxt "gun_type_type"
@@ -26972,7 +26973,7 @@ msgctxt "prof_desc_male"
 msgid ""
 "You've looted a random assortment of intact armor and a pristine weapon from"
 " the overly hungry folk, but will it be enough?  (Note: What you see in "
-"character creator IS NOT what you get in game!)"
+"character creation does not reflect what it will select at game start.)"
 msgstr ""
 
 #. ~ Profession (female RANDOMISED: Melee survivor) description
@@ -26981,7 +26982,7 @@ msgctxt "prof_desc_female"
 msgid ""
 "You've looted a random assortment of intact armor and a pristine weapon from"
 " the overly hungry folk, but will it be enough?  (Note: What you see in "
-"character creator IS NOT what you get in game!)"
+"character creation does not reflect what it will select at game start.)"
 msgstr ""
 
 #: data/json/professions.json
@@ -49695,6 +49696,10 @@ msgid "152mm anti-tank guided missile"
 msgstr "152mm-Panzerabwehrlenkrakete"
 
 #: data/json/items/ammo_types.json
+msgid "Hellfire missile"
+msgstr ""
+
+#: data/json/items/ammo_types.json
 msgid "semi-charred fuel"
 msgstr "halbverkohlter Brennstoff"
 
@@ -63752,6 +63757,34 @@ msgstr ""
 "Eine Papierpatrone, welche Schwarzpulver und metallische Schrotkugeln "
 "enthält. Historisch benutzt, um Vorderlader in einer annehmbareren Zeit "
 "nachzuladen."
+
+#: data/json/items/ammo/hellfire.json
+msgid "AGM-114L Hellfire Longbow"
+msgid_plural "AGM-114L Hellfire Longbows"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'AGM-114L Hellfire Longbow'}
+#: data/json/items/ammo/hellfire.json
+msgid ""
+"An anti-armor air-to-ground missile equipped with millimeter-wave radar "
+"seeking and a 9kg HEAT warhead, designed to have devastating effect against "
+"all manner of vehicles and structures."
+msgstr ""
+
+#: data/json/items/ammo/hellfire.json
+msgid "AGM-114R-R9X Hellfire 'Ninja'"
+msgid_plural "AGM-114R-R9X Hellfire 'Ninja's"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': "AGM-114R-R9X Hellfire 'Ninja'"}
+#: data/json/items/ammo/hellfire.json
+msgid ""
+"A highly specialized air-to-ground missile designed to eliminate high value "
+"targets while causing minimal collateral damage. Blades pop out of the "
+"missile after launch and devastate any single target."
+msgstr ""
 
 #: data/json/items/ammo/metal_rail.json
 msgid "rebar rail"
@@ -110191,6 +110224,18 @@ msgid ""
 "reload."
 msgstr ""
 
+#: data/json/items/gun/hellfire.json data/json/vehicleparts/turret.json
+msgid "Hellfire missile rack"
+msgid_plural "Hellfire missile rack"
+msgstr[0] ""
+msgstr[1] ""
+
+#: data/json/items/gun/hellfire.json
+msgid ""
+"A quad rack for Hellfire missiles, specifically designed for vehicle use.  "
+"Needs to be mounted on a vehicle to fire."
+msgstr ""
+
 #: data/json/items/gun/metal_rail.json
 msgid "heavy rail rifle"
 msgid_plural "heavy rail rifles"
@@ -152838,6 +152883,20 @@ msgid ""
 "You possess authority nationwide to lawfully seize assets, detain "
 "individuals, and deploy lethal force in the collection of Uncle Sam's "
 "undeclared revenue. You are the IRS. You are inevitable."
+msgstr ""
+
+#: data/json/mutations/mutations.json
+msgid "Carry Permit"
+msgstr ""
+
+#. ~ Description for {'str': 'Carry Permit'}
+#: data/json/mutations/mutations.json
+msgid ""
+"You prepared for trouble as best as you could, though it might not be enough"
+" for the end of the world.  In addition to any weapons your profession might"
+" start with, you start with a randomly-selected common pistol and some spare"
+" mags.  (Note: What you see in character creation does not reflect what it "
+"will select at game start.)"
 msgstr ""
 
 #: data/json/npcs/BG_traits.json
@@ -322048,16 +322107,20 @@ msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Controls SDL_GPU compute device selection for lighting and visibility.  "
-"Requires restart."
+"Controls compute backend selection for lighting, visibility, and line of "
+"sight.  Requires restart."
 msgstr ""
 
 #: src/options.cpp
-msgid "Software"
+msgid "GPU"
 msgstr ""
 
 #: src/options.cpp
-msgid "Force hardware"
+msgid "CPU compute"
+msgstr ""
+
+#: src/options.cpp
+msgid "Software GPU (debug)"
 msgstr ""
 
 #: src/options.cpp
