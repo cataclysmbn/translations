@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-17 13:15+0000\n"
+"POT-Creation-Date: 2026-06-18 03:06+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -88102,11 +88102,11 @@ msgid ""
 msgstr "香酥的炸蛤蜊肉条，金黄诱人，美味可口。一道新英格兰地区的特色菜。"
 
 #: data/json/items/comestibles/med.json
-msgid "first aid kit"
-msgid_plural "first aid kits"
-msgstr[0] "急救箱"
+msgid "compact first aid kit"
+msgid_plural "compact first aid kits"
+msgstr[0] "紧凑型急救箱"
 
-#. ~ Description for {'str': 'first aid kit'}
+#. ~ Description for {'str': 'compact first aid kit'}
 #: data/json/items/comestibles/med.json
 msgid ""
 "A compact medical kit containing bandages and antiseptic.  Used for healing "
@@ -88114,11 +88114,11 @@ msgid ""
 msgstr "一个包含绷带和消毒剂的便携式医疗包。用于治疗大量伤害。拆解可获得其内容物。"
 
 #: data/json/items/comestibles/med.json
-msgid "deluxe first aid kit"
-msgid_plural "deluxe first aid kits"
-msgstr[0] "高级急救箱"
+msgid "first aid kit"
+msgid_plural "first aid kits"
+msgstr[0] "急救箱"
 
-#. ~ Description for {'str': 'deluxe first aid kit'}
+#. ~ Description for {'str': 'first aid kit'}
 #: data/json/items/comestibles/med.json
 msgid ""
 "A full medical kit, with bandages, antiseptic, local analgesics, and basic "
@@ -279014,24 +279014,6 @@ msgid "You can't drag things up and down stairs."
 msgstr "你不能把東西拖上或拖下樓梯。"
 
 #: src/game.cpp
-#, c-format
-msgid "You try to use the stairs.  Suddenly you are blocked by a %s!"
-msgstr "你試圖使用樓梯。突然 %s 擋住你的去路！"
-
-#: src/game.cpp
-#, c-format
-msgid "The are a lot of them on the %s!"
-msgstr "好多它們在 %s 上!"
-
-#: src/game.cpp
-msgid "There's something else behind it!"
-msgstr "有什麼東西在那後面!"
-
-#: src/game.cpp
-msgid "You manage to slip past!"
-msgstr "你設法滑過去!"
-
-#: src/game.cpp
 msgid "You swim down."
 msgstr "你游了下去。"
 
@@ -279083,10 +279065,6 @@ msgstr "你的 %s 为你让出了路。"
 #, c-format
 msgid "You push past %s blocking the way."
 msgstr "你从 %s 旁边挤了过去。"
-
-#: src/game.cpp src/handle_action.cpp
-msgid "You cannot haul items here."
-msgstr "你不能在這裡搬運。"
 
 #: src/game.cpp
 #, c-format
@@ -280556,10 +280534,6 @@ msgid "Can't drive this vehicle remotely.  It has no working controls."
 msgstr "無法遙控該車輛。它沒有控制器。"
 
 #: src/handle_action.cpp
-msgid "This vehicle doesn't look very airworthy."
-msgstr "这辆载具看起来无法飞行。"
-
-#: src/handle_action.cpp
 msgid "You steer the vehicle into a descent."
 msgstr "你驾驶载具下降。"
 
@@ -280641,6 +280615,10 @@ msgstr "你不能在車輛內搬運。"
 #: src/handle_action.cpp
 msgid "You cannot haul while in deep water."
 msgstr "你不能在深水中搬運。"
+
+#: src/handle_action.cpp
+msgid "You cannot haul items here."
+msgstr "你不能在這裡搬運。"
 
 #: src/handle_action.cpp
 msgid "There are no items to haul here."
@@ -293866,16 +293844,6 @@ msgstr "你解除陷阱失敗。"
 msgid "You fail to disarm the trap, and you set it off!"
 msgstr "你解除陷阱失敗, 並觸發了!"
 
-#: src/map.cpp
-#, c-format
-msgid "Something has crawled out of the %s plants!"
-msgstr "有東西從 %s 植物中爬出來了！ "
-
-#: src/map.cpp
-#, c-format
-msgid "Something has crawled out of the %s!"
-msgstr "有東西從 %s 爬出來了！"
-
 #: src/map_extras.cpp
 msgid "DANGER!  MINEFIELD!"
 msgstr "危險！地雷區！"
@@ -294091,6 +294059,16 @@ msgstr "一声响亮的异形尖叫在建筑内回荡！"
 msgid ""
 "Something stirs and clambers out of the ruined mass of flesh and nerves!"
 msgstr "有什么东西从被毁坏的肉体和神经中蠢蠢欲动、跃跃欲试！"
+
+#: src/mapbuffer.cpp
+#, c-format
+msgid "Something has crawled out of the %s plants!"
+msgstr "有東西從 %s 植物中爬出來了！ "
+
+#: src/mapbuffer.cpp
+#, c-format
+msgid "Something has crawled out of the %s!"
+msgstr "有東西從 %s 爬出來了！"
 
 #: src/mapbuffer.cpp
 #, c-format
@@ -310506,17 +310484,13 @@ msgid "<npcname> falls into a sinkhole!"
 msgstr "<npcname> 摔進了流沙坑!"
 
 #: src/trapfunc.cpp
-msgid "You fall down a level!"
-msgstr "你下落了一層!"
+#, c-format
+msgid "You fall down under %s!"
+msgstr "你摔到了 %s 下面!"
 
 #: src/trapfunc.cpp
 msgid "<npcname> falls down a level!"
 msgstr "<npcname> 摔下一層樓!"
-
-#: src/trapfunc.cpp
-#, c-format
-msgid "You fall down under %s!"
-msgstr "你摔到了 %s 下面!"
 
 #: src/trapfunc.cpp
 #, c-format
