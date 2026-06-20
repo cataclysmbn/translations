@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-18 03:06+0000\n"
+"POT-Creation-Date: 2026-06-20 01:15+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -52024,6 +52024,16 @@ msgstr[0] "整合工具手"
 msgid "integrated voltmeter"
 msgid_plural "integrated voltmeters"
 msgstr[0] "内置电压表"
+
+#: data/json/items/fake.json
+msgid "makeshift water purifier"
+msgid_plural "makeshift water purifiers"
+msgstr[0] "简易净水器"
+
+#. ~ Description for {'str': 'makeshift water purifier'}
+#: data/json/items/fake.json
+msgid "Pseudo item for charcoal purifier furniture."
+msgstr "代表木炭净水器家具的伪物品。"
 
 #: data/json/items/fake.json
 msgid "bionic goggles"
@@ -278927,11 +278937,6 @@ msgstr "移動這沉重 %s 花費了不少時間。"
 
 #: src/game.cpp
 #, c-format
-msgid "Stuff spills from the %s!"
-msgstr "東西從 %s 中洩漏出來!"
-
-#: src/game.cpp
-#, c-format
 msgid "You let go of the %s."
 msgstr "你松开了 %s。"
 
@@ -293708,7 +293713,12 @@ msgstr "%1$s 的 %2$s 碰撞到 %3$s 的 %4$s。"
 msgid "the %s"
 msgstr "%s"
 
-#: src/map.cpp src/map_mutation_hooks.cpp
+#: src/map.cpp
+#, c-format
+msgid "Stuff spills from the %s!"
+msgstr "東西從 %s 中洩漏出來!"
+
+#: src/map.cpp
 #, c-format
 msgid "The %s you were grabbing is destroyed!"
 msgstr "你抓取的 %s 被摧毀了!"
@@ -305062,9 +305072,9 @@ msgstr "保留地图缓存"
 
 #: src/options.cpp
 msgid ""
-"Keep more map data loaded to reduce lag when moving around the same general "
-"area, at the cost of memory usage."
-msgstr "保持加载更多的地图数据，以减少在同一大致区域内移动时的卡顿，代价是会消耗更多的内存。"
+"Side length of the extra overmap-terrain MRU cache. The retained cache "
+"budget is this value squared; lazy border loading is budgeted separately."
+msgstr "额外的大地图地形MRU（最近最常使用）缓存的边长。保留的缓存预算为该值的平方；边界的延迟加载（lazy loading）预算单独计算。"
 
 #: src/options.cpp
 msgid "Power portal load radius (submaps)"

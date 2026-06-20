@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-18 03:06+0000\n"
+"POT-Creation-Date: 2026-06-20 01:15+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/bn-team/teams/113585/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -53686,6 +53686,17 @@ msgid "integrated voltmeter"
 msgid_plural "integrated voltmeters"
 msgstr[0] ""
 msgstr[1] ""
+
+#: data/json/items/fake.json
+msgid "makeshift water purifier"
+msgid_plural "makeshift water purifiers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'makeshift water purifier'}
+#: data/json/items/fake.json
+msgid "Pseudo item for charcoal purifier furniture."
+msgstr ""
 
 #: data/json/items/fake.json
 msgid "bionic goggles"
@@ -291800,11 +291811,6 @@ msgstr "Egy kis időbe telik a nehéz %s megmozdítása."
 
 #: src/game.cpp
 #, c-format
-msgid "Stuff spills from the %s!"
-msgstr "Dolgok potyognak ki ebből: %s!"
-
-#: src/game.cpp
-#, c-format
 msgid "You let go of the %s."
 msgstr "Elengeded a(z) %st."
 
@@ -306709,7 +306715,12 @@ msgstr "A(z) %1$s %2$se összeütközik ezzel: %3$s %4$s."
 msgid "the %s"
 msgstr "a(z) %s"
 
-#: src/map.cpp src/map_mutation_hooks.cpp
+#: src/map.cpp
+#, c-format
+msgid "Stuff spills from the %s!"
+msgstr "Dolgok potyognak ki ebből: %s!"
+
+#: src/map.cpp
 #, c-format
 msgid "The %s you were grabbing is destroyed!"
 msgstr "Az általad megragadott %s megsemmisült!"
@@ -318125,8 +318136,8 @@ msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Keep more map data loaded to reduce lag when moving around the same general "
-"area, at the cost of memory usage."
+"Side length of the extra overmap-terrain MRU cache. The retained cache "
+"budget is this value squared; lazy border loading is budgeted separately."
 msgstr ""
 
 #: src/options.cpp

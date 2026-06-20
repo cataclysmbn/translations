@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-18 03:06+0000\n"
+"POT-Creation-Date: 2026-06-20 01:15+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -52383,6 +52383,16 @@ msgstr[0] "内蔵工具セット"
 msgid "integrated voltmeter"
 msgid_plural "integrated voltmeters"
 msgstr[0] "内蔵電圧計"
+
+#: data/json/items/fake.json
+msgid "makeshift water purifier"
+msgid_plural "makeshift water purifiers"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'makeshift water purifier'}
+#: data/json/items/fake.json
+msgid "Pseudo item for charcoal purifier furniture."
+msgstr ""
 
 #: data/json/items/fake.json
 msgid "bionic goggles"
@@ -278819,11 +278829,6 @@ msgstr "重い%sを動かすには少し時間がかかる。"
 
 #: src/game.cpp
 #, c-format
-msgid "Stuff spills from the %s!"
-msgstr "%sに置いてあったアイテムが落ちた！"
-
-#: src/game.cpp
-#, c-format
 msgid "You let go of the %s."
 msgstr "%sを手放した。"
 
@@ -293610,7 +293615,12 @@ msgstr "%1$sの%2$sは%3$sの%4$sと衝突した。"
 msgid "the %s"
 msgstr "%s"
 
-#: src/map.cpp src/map_mutation_hooks.cpp
+#: src/map.cpp
+#, c-format
+msgid "Stuff spills from the %s!"
+msgstr "%sに置いてあったアイテムが落ちた！"
+
+#: src/map.cpp
 #, c-format
 msgid "The %s you were grabbing is destroyed!"
 msgstr "掴んでいた%sが壊れた！"
@@ -304949,8 +304959,8 @@ msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Keep more map data loaded to reduce lag when moving around the same general "
-"area, at the cost of memory usage."
+"Side length of the extra overmap-terrain MRU cache. The retained cache "
+"budget is this value squared; lazy border loading is budgeted separately."
 msgstr ""
 
 #: src/options.cpp

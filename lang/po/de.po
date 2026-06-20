@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-18 03:06+0000\n"
+"POT-Creation-Date: 2026-06-20 01:15+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: German (https://app.transifex.com/bn-team/teams/113585/de/)\n"
 "MIME-Version: 1.0\n"
@@ -54172,6 +54172,17 @@ msgid "integrated voltmeter"
 msgid_plural "integrated voltmeters"
 msgstr[0] ""
 msgstr[1] ""
+
+#: data/json/items/fake.json
+msgid "makeshift water purifier"
+msgid_plural "makeshift water purifiers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'makeshift water purifier'}
+#: data/json/items/fake.json
+msgid "Pseudo item for charcoal purifier furniture."
+msgstr ""
 
 #: data/json/items/fake.json
 msgid "bionic goggles"
@@ -296060,11 +296071,6 @@ msgstr "Es kostet etwas Zeit, das schwere %s zu bewegen!"
 
 #: src/game.cpp
 #, c-format
-msgid "Stuff spills from the %s!"
-msgstr "Es kleckert aus dem %s!"
-
-#: src/game.cpp
-#, c-format
 msgid "You let go of the %s."
 msgstr ""
 
@@ -311119,7 +311125,12 @@ msgstr "%2$s von %1$s kollidiert mit %4$s von %3$s."
 msgid "the %s"
 msgstr "%s"
 
-#: src/map.cpp src/map_mutation_hooks.cpp
+#: src/map.cpp
+#, c-format
+msgid "Stuff spills from the %s!"
+msgstr "Es kleckert aus dem %s!"
+
+#: src/map.cpp
 #, c-format
 msgid "The %s you were grabbing is destroyed!"
 msgstr "%s, was zu ergriffen hattest, wurde zerstört!"
@@ -322628,8 +322639,8 @@ msgstr ""
 
 #: src/options.cpp
 msgid ""
-"Keep more map data loaded to reduce lag when moving around the same general "
-"area, at the cost of memory usage."
+"Side length of the extra overmap-terrain MRU cache. The retained cache "
+"budget is this value squared; lazy border loading is budgeted separately."
 msgstr ""
 
 #: src/options.cpp

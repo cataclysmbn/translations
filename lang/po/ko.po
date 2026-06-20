@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-19 16:48+0000\n"
+"POT-Creation-Date: 2026-06-20 01:15+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -54271,6 +54271,16 @@ msgstr[0] "내장형 도구모음"
 msgid "integrated voltmeter"
 msgid_plural "integrated voltmeters"
 msgstr[0] "내장 전압계"
+
+#: data/json/items/fake.json
+msgid "makeshift water purifier"
+msgid_plural "makeshift water purifiers"
+msgstr[0] "간이 정수기"
+
+#. ~ Description for {'str': 'makeshift water purifier'}
+#: data/json/items/fake.json
+msgid "Pseudo item for charcoal purifier furniture."
+msgstr "숯 정수기 가구를 위한 가짜 물품입니다."
 
 #: data/json/items/fake.json
 msgid "bionic goggles"
@@ -173426,7 +173436,7 @@ msgstr "집, 병원, 연구소, 진료소를 뒤져봐."
 
 #: data/json/npcs/tacoma_ranch/NPC_ranch_foreman.json
 msgid "Do you have the first aid kits?"
-msgstr "구급상자를 가지고 있습니까?"
+msgstr "구급상자는 가져왔어?"
 
 #: data/json/npcs/tacoma_ranch/NPC_ranch_foreman.json
 msgid "Find 2 Arc Welders"
@@ -288718,11 +288728,6 @@ msgstr "%s(이)가 무거워 움직이는데 시간이 좀 걸립니다."
 
 #: src/game.cpp
 #, c-format
-msgid "Stuff spills from the %s!"
-msgstr "%s에서 물건들이 굴러떨어집니다!"
-
-#: src/game.cpp
-#, c-format
 msgid "You let go of the %s."
 msgstr "%s(을)를 놓습니다."
 
@@ -303544,7 +303549,12 @@ msgstr "%1$s의 %2$s(이)가 %3$s의 %4$s와 부딪혔다."
 msgid "the %s"
 msgstr "%s"
 
-#: src/map.cpp src/map_mutation_hooks.cpp
+#: src/map.cpp
+#, c-format
+msgid "Stuff spills from the %s!"
+msgstr "%s에서 물건들이 굴러떨어집니다!"
+
+#: src/map.cpp
 #, c-format
 msgid "The %s you were grabbing is destroyed!"
 msgstr "붙잡고 있던 %s(이)가 파괴되었습니다!"
@@ -314982,9 +314992,9 @@ msgstr "저장된 지도 캐시"
 
 #: src/options.cpp
 msgid ""
-"Keep more map data loaded to reduce lag when moving around the same general "
-"area, at the cost of memory usage."
-msgstr "동일 지역 인근을 이동할 때 메모리 사용량 증가를 감수하고 지도 데이터를 더 많이 유지하여 렉을 감소시킵니다."
+"Side length of the extra overmap-terrain MRU cache. The retained cache "
+"budget is this value squared; lazy border loading is budgeted separately."
+msgstr ""
 
 #: src/options.cpp
 msgid "Power portal load radius (submaps)"
