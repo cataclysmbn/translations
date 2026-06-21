@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-20 01:15+0000\n"
+"POT-Creation-Date: 2026-06-21 05:31+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/bn-team/teams/113585/es_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -55768,6 +55768,20 @@ msgstr[2] "varas de clarividencia"
 msgid ""
 "Item to test aep_clairvoyance_plus flag.  If this spawns randomly, then it's"
 " a bug."
+msgstr ""
+
+#: data/json/items/fake.json
+msgid "clairvoyance super rod"
+msgid_plural "clairvoyance super rods"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'clairvoyance super rod'}
+#: data/json/items/fake.json
+msgid ""
+"Item to test enchantment clairvoyance.  If this spawns randomly, then it's a"
+" bug."
 msgstr ""
 
 #: data/json/items/fake.json
@@ -117373,6 +117387,17 @@ msgstr[2] ""
 msgid "Sunlight radiates from this mutated triffid petal."
 msgstr ""
 
+#: data/json/items/gun/monster_gun.json
+msgid "thrown tear gas grenade"
+msgid_plural "thrown tear gas grenades"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: data/json/items/gun/monster_gun.json
+msgid "Tear gas grenade thrown from practiced muscle memory."
+msgstr ""
+
 #: data/json/items/gun/nail.json
 msgid "nail gun"
 msgid_plural "nail guns"
@@ -151637,10 +151662,42 @@ msgstr[2] "zombis policías"
 #. ~ Description for {'str': 'zombie cop'}
 #: data/json/monsters/zed-classic.json
 msgid ""
-"A human body covered by a weather-beaten and badly damaged set of riot gear."
+"A human body covered by a weather-beaten and badly damaged police uniform. A"
+" similarly damaged kevlar vest can be seen through the holes of its uniform."
 msgstr ""
-"Un cadáver humano cubierto con un equipo policial anti-disturbios muy dañado"
-" y gastado por el clima."
+
+#: data/json/monsters/zed-classic.json
+msgid "zombie riot cop"
+msgid_plural "zombie riot cops"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for zombie riot cop
+#: data/json/monsters/zed-classic.json
+msgid ""
+"A human body covered by a weather-beaten and badly damaged police uniform.  "
+"It still holds a riot shield, which it hides behind as it slowly walks."
+msgstr ""
+
+#: data/json/monsters/zed-classic.json
+msgid "SWAT zombie"
+msgid_plural "SWAT zombies"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for SWAT zombie
+#: data/json/monsters/zed-classic.json
+msgid ""
+"This zombie was part of a specialized unit of law enforcement.  It still "
+"wears a battered armor with the SWAT logo emblazoned on the front, and it "
+"holds a tear gas grenade in its hands."
+msgstr ""
+
+#: data/json/monsters/zed-classic.json
+msgid "The SWAT zombie throws a tear gas grenade!"
+msgstr ""
 
 #: data/json/monsters/zed-classic.json
 msgid "crawling zombie"
@@ -151745,20 +151802,6 @@ msgid ""
 msgstr ""
 "Un cadáver humano que alguna vez estuvo muerto. Su carne hinchada y "
 "descolorida está llena de heridas infectadas y llagas abiertas."
-
-#: data/json/monsters/zed-classic.json
-msgid "SWAT zombie"
-msgid_plural "SWAT zombies"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#. ~ Description for SWAT zombie
-#: data/json/monsters/zed-classic.json
-msgid ""
-"This zombie was part of a specialized unit of law enforcement.  It still "
-"wears a battered armor with the SWAT logo emblazoned on the front."
-msgstr ""
 
 #: data/json/monsters/zed-classic.json
 msgid "tough zombie"
@@ -195891,6 +195934,15 @@ msgstr ""
 msgid "A vehicle surrounded by zombies."
 msgstr ""
 
+#: data/json/overmap/map_extras.json data/json/vehicles/emergency.json
+msgid "SWAT Truck"
+msgstr "Camión de SWAT"
+
+#. ~ Description for SWAT Truck
+#: data/json/overmap/map_extras.json
+msgid "A SWAT truck."
+msgstr ""
+
 #: data/json/overmap/map_extras.json
 msgid "Mass Grave"
 msgstr "Fosa Común"
@@ -213812,10 +213864,6 @@ msgstr "Policía SUV"
 #: data/json/vehicles/emergency.json
 msgid "Police K9 Transport"
 msgstr "Transporte de K9 de Policía"
-
-#: data/json/vehicles/emergency.json
-msgid "SWAT Truck"
-msgstr "Camión de SWAT"
 
 #: data/json/vehicles/emergency.json
 msgid "Hazmat Response Vehicle"
@@ -290364,6 +290412,10 @@ msgid "Autoattack"
 msgstr "Autoatacar"
 
 #: data/raw/keybindings/keybindings.json
+msgid "Toggle manual combat mode"
+msgstr ""
+
+#: data/raw/keybindings/keybindings.json
 msgid "Main Menu"
 msgstr "Menú Principal"
 
@@ -295366,6 +295418,81 @@ msgstr ""
 msgid "What to do with your %s?"
 msgstr "¿Qué quieres hacer con tu %s?"
 
+#: src/avatar_action.cpp src/grab.cpp
+msgid "No vehicle at grabbed point."
+msgstr "No hay un vehículo en el lugar de agarre."
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "You're too small to get enough leverage to shove the %s."
+msgstr ""
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "You lack the strength to shove the %s."
+msgstr ""
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "You can't shove the %s vertically."
+msgstr ""
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "You can only shove the %s away from yourself."
+msgstr ""
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "The %s won't budge."
+msgstr ""
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "You shove the %s away from you."
+msgstr ""
+
+#: src/avatar_action.cpp
+msgid "shove"
+msgstr ""
+
+#: src/avatar_action.cpp
+msgid "throw"
+msgstr "tirar"
+
+#: src/avatar_action.cpp
+msgid "hurl"
+msgstr ""
+
+#: src/avatar_action.cpp
+msgid "send flying"
+msgstr ""
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "You can't throw %s; %s is too large."
+msgstr ""
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "You can't muster the strength to throw %s."
+msgstr ""
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "You're too exhausted to throw %s."
+msgstr ""
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "This will probably make %s angry.  Continue?"
+msgstr ""
+
+#: src/avatar_action.cpp
+#, c-format
+msgid "You %1$s %2$s!"
+msgstr ""
+
 #: src/avatar_action.cpp
 msgid "You can't move while in your shell.  Deactivate it to go mobile."
 msgstr ""
@@ -295396,7 +295523,8 @@ msgstr "¡Tu voluntad se reafirma a sí misma, y tú haces lo mismo!"
 msgid "You're too pacified to strike anything…"
 msgstr ""
 
-#: src/avatar_action.cpp src/game.cpp src/monexamine.cpp src/npctalk.cpp
+#: src/avatar_action.cpp src/game.cpp src/handle_action.cpp src/monexamine.cpp
+#: src/npctalk.cpp
 msgid "You may be attacked!  Proceed?"
 msgstr "¡Puedes ser atacado/a! ¿Continuar?"
 
@@ -295497,6 +295625,14 @@ msgstr "Te escondes en el  %s."
 
 #: src/avatar_action.cpp
 msgid "No hostile creature in reach.  Waiting a turn."
+msgstr ""
+
+#: src/avatar_action.cpp
+msgid "Manual combat mode ON!"
+msgstr ""
+
+#: src/avatar_action.cpp
+msgid "Manual combat mode OFF!"
 msgstr ""
 
 #: src/avatar_action.cpp
@@ -307233,6 +307369,16 @@ msgid "Can't find grabbed object."
 msgstr "No se encuentra objeto agarrado."
 
 #: src/game.cpp
+#, c-format
+msgid "You let go of %s."
+msgstr ""
+
+#: src/game.cpp
+#, c-format
+msgid "You struggle to drag %s, but can't move them."
+msgstr ""
+
+#: src/game.cpp
 msgid "You cannot board a vehicle whilst riding."
 msgstr ""
 
@@ -309044,10 +309190,6 @@ msgid "stuff"
 msgstr "cosa"
 
 #: src/grab.cpp
-msgid "No vehicle at grabbed point."
-msgstr "No hay un vehículo en el lugar de agarre."
-
-#: src/grab.cpp
 #, c-format
 msgid "You cannot move this vehicle whilst your %s is harnessed!"
 msgstr ""
@@ -309075,6 +309217,25 @@ msgstr "errores en el código de movimiento"
 #, c-format
 msgid "The %s collides with %s."
 msgstr "%s choca con %s."
+
+#: src/handle_action.cpp
+#, c-format
+msgid "You release %s."
+msgstr ""
+
+#: src/handle_action.cpp
+msgid "You release your grip."
+msgstr ""
+
+#: src/handle_action.cpp
+#, c-format
+msgid "You can't grab %s."
+msgstr ""
+
+#: src/handle_action.cpp
+#, c-format
+msgid "You grab %s."
+msgstr ""
 
 #: src/handle_action.cpp
 msgid "Accept your fate"
@@ -314674,6 +314835,26 @@ msgstr ""
 
 #: src/item.cpp
 msgid "  Armor multiplier: "
+msgstr ""
+
+#: src/item.cpp
+msgid "<bold>Base throw damage</bold>: "
+msgstr ""
+
+#: src/item.cpp
+msgid "<bold>Throw damage</bold>: "
+msgstr ""
+
+#: src/item.cpp
+msgid "Throw range: "
+msgstr ""
+
+#: src/item.cpp
+msgid "Moves per throw: "
+msgstr ""
+
+#: src/item.cpp
+msgid "Stamina cost: "
 msgstr ""
 
 #: src/item.cpp
@@ -323248,6 +323429,11 @@ msgstr[1] "tiles"
 msgstr[2] "tiles"
 
 #: src/martialarts.cpp
+msgid ""
+"* Can <info>control</info> the knockback direction in manual combat mode."
+msgstr ""
+
+#: src/martialarts.cpp
 msgid "* Will <info>follow</info> enemies after knockback."
 msgstr ""
 
@@ -323447,6 +323633,289 @@ msgstr ""
 #: src/mattack_actors.cpp src/monattack.cpp
 msgid "The "
 msgstr "El/la "
+
+#: src/melee.cpp
+msgid "Weapon techniques"
+msgstr ""
+
+#: src/melee.cpp
+msgid "Weapon + martial art techniques"
+msgstr ""
+
+#: src/melee.cpp
+msgid "Martial art techniques"
+msgstr ""
+
+#: src/melee.cpp
+msgid "Mutation attacks"
+msgstr ""
+
+#: src/melee.cpp
+msgid "needs another adjacent enemy"
+msgstr ""
+
+#: src/melee.cpp
+msgid "needs a target behind the enemy"
+msgstr ""
+
+#: src/melee.cpp
+msgid "needs at least two adjacent enemies"
+msgstr ""
+
+#: src/melee.cpp
+msgid "needs a valid target layout"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "%.1f %s"
+msgstr ""
+
+#: src/melee.cpp
+msgid "no damage"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "%s is covered"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "blocked by %s"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "requires %s"
+msgstr ""
+
+#: src/melee.cpp
+msgid "always triggers when available"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "%d%% trigger chance when available"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid ""
+"%1$s\n"
+"Damage: %2$s"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "missing required weapon flag: %s"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "%s %d+"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "needs weapon damage: %s"
+msgstr ""
+
+#: src/melee.cpp
+msgid "requires a weapon"
+msgstr ""
+
+#: src/melee.cpp
+msgid "unarmed only"
+msgstr ""
+
+#: src/melee.cpp
+msgid "needs an allowed weapon or unarmed state"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "requires mutation: %s"
+msgstr ""
+
+#: src/melee.cpp
+msgid "needs to be near a wall"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "%s %d+ (have %d)"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "missing skill requirement: %s"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "wrong weapon category: %s"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "missing required buff: %s"
+msgstr ""
+
+#: src/melee.cpp
+msgid "armed or unarmed"
+msgstr ""
+
+#: src/melee.cpp
+msgid "weapon only"
+msgstr ""
+
+#: src/melee.cpp
+msgid "near wall"
+msgstr ""
+
+#: src/melee.cpp
+msgid "crit only"
+msgstr ""
+
+#: src/melee.cpp
+msgid "no extra requirements"
+msgstr ""
+
+#: src/melee.cpp
+msgid "internal"
+msgstr ""
+
+#: src/melee.cpp
+msgid "defensive only"
+msgstr ""
+
+#: src/melee.cpp
+msgid "dodge counter only"
+msgstr ""
+
+#: src/melee.cpp
+msgid "not on dodge counters"
+msgstr ""
+
+#: src/melee.cpp
+msgid "block counter only"
+msgstr ""
+
+#: src/melee.cpp
+msgid "not on block counters"
+msgstr ""
+
+#: src/melee.cpp
+msgid "normal hit only"
+msgstr ""
+
+#: src/melee.cpp
+msgid "not on crits"
+msgstr ""
+
+#: src/melee.cpp
+msgid "target already downed"
+msgstr ""
+
+#: src/melee.cpp
+msgid "needs a downed target"
+msgstr ""
+
+#: src/melee.cpp
+msgid "needs a stunned target"
+msgstr ""
+
+#: src/melee.cpp
+msgid "no weapon to disarm"
+msgstr ""
+
+#: src/melee.cpp
+msgid "needs a valid weapon"
+msgstr ""
+
+#: src/melee.cpp
+msgid "human target only"
+msgstr ""
+
+#: src/melee.cpp
+msgid "too slow right now"
+msgstr ""
+
+#: src/melee.cpp
+msgid "requirements not met"
+msgstr ""
+
+#: src/melee.cpp
+msgid " Technique Reference "
+msgstr ""
+
+#: src/melee.cpp
+msgid "automatic defensive technique"
+msgstr ""
+
+#: src/melee.cpp
+msgid "automatic extra attack"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "<header>Active martial art:</header> %s\n"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "<header>Source:</header> %s\n"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "<header>Technique:</header> <bold>%s</bold>\n"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "<header>Trigger:</header> %s\n"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "<bad>Unavailable:</bad> %s\n"
+msgstr ""
+
+#: src/melee.cpp
+msgid "unarmed attack"
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid "Attack %s with %s (%s)"
+msgstr ""
+
+#: src/melee.cpp
+msgid "Generic techniques"
+msgstr ""
+
+#: src/melee.cpp
+msgid "Basic attack"
+msgstr ""
+
+#: src/melee.cpp
+msgid "Use a basic attack with no technique."
+msgstr ""
+
+#: src/melee.cpp
+msgid "Automatic"
+msgstr ""
+
+#: src/melee.cpp
+msgid "Let the game pick the best available technique."
+msgstr ""
+
+#: src/melee.cpp
+#, c-format
+msgid ", uses %s"
+msgstr ""
 
 #: src/melee.cpp
 #, c-format
@@ -334579,6 +335048,16 @@ msgid ""
 msgstr ""
 
 #: src/options.cpp
+msgid "Crowd crush"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"When enabled, being grabbed by enough adjacent creatures can drain breath "
+"and eventually cause crushing damage."
+msgstr ""
+
+#: src/options.cpp
 msgid "Merchant restock scaling factor"
 msgstr ""
 
@@ -337850,12 +338329,25 @@ msgid "Blind throwing %s"
 msgstr "Lanzar a ciegas %s"
 
 #: src/ranged.cpp
+msgid "Throwing creature"
+msgstr ""
+
+#: src/ranged.cpp
+msgid "Shoving vehicle"
+msgstr ""
+
+#: src/ranged.cpp
 msgid "Set target"
 msgstr "Establecer objetivo"
 
 #: src/ranged.cpp
 msgctxt "[Hotkey] to throw"
 msgid "to throw"
+msgstr ""
+
+#: src/ranged.cpp
+msgctxt "[Hotkey] to shove"
+msgid "to shove"
 msgstr ""
 
 #: src/ranged.cpp
@@ -338629,6 +339121,14 @@ msgstr "Estás demasiado exhausto para mantener funcionando tu %s."
 #: src/suffer.cpp
 msgid "You're drowning!"
 msgstr "¡Te estás ahogando!"
+
+#: src/suffer.cpp
+msgid "You're being crushed!"
+msgstr ""
+
+#: src/suffer.cpp
+msgid "You're having difficulty breathing!"
+msgstr ""
 
 #: src/suffer.cpp
 msgid "You're suddenly overcome with the urge to sleep and you pass out."
