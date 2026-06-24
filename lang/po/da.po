@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-23 19:00+0000\n"
+"POT-Creation-Date: 2026-06-24 17:25+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Danish (https://app.transifex.com/bn-team/teams/113585/da/)\n"
 "MIME-Version: 1.0\n"
@@ -26909,6 +26909,44 @@ msgid ""
 "you."
 msgstr ""
 
+#. ~ Name for scenario 'The Metro' for a male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "The Metro"
+msgstr ""
+
+#. ~ Name for scenario 'The Metro' for a female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "The Metro"
+msgstr ""
+
+#. ~ Description for scenario 'The Metro' for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"In the chaos of the Cataclysm, you decided to make a run for the subway "
+"tunnels, hoping to find refuge away from the horrors on the surface.  Now, "
+"you find yourself in the dark tunnels of the subway system, and yet you feel"
+" like you're not alone..."
+msgstr ""
+
+#. ~ Description for scenario 'The Metro' for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"In the chaos of the Cataclysm, you decided to make a run for the subway "
+"tunnels, hoping to find refuge away from the horrors on the surface.  Now, "
+"you find yourself in the dark tunnels of the subway system, and yet you feel"
+" like you're not alone..."
+msgstr ""
+
+#. ~ Starting location for scenario 'The Metro'.
+#: data/json/scenarios.json
+msgctxt "start_name"
+msgid "Subway Tunnels"
+msgstr ""
+
 #. ~ Display string for skill display type 'display_melee'
 #: data/json/skillDisplayType.json
 msgid "Melee skills"
@@ -30440,6 +30478,10 @@ msgstr ""
 
 #: data/json/start_locations.json
 msgid "Cargo area Trans-Coast Logistics"
+msgstr ""
+
+#: data/json/start_locations.json
+msgid "Subway Tunnels"
 msgstr ""
 
 #: data/json/techniques.json
@@ -66524,6 +66566,7 @@ msgstr[1] ""
 #. ~ Use action holster_msg for {'str': 'survivor harness', 'str_pl':
 #. 'survivor harnesses'}.
 #. ~ Use action holster_msg for {'str': 'MOLLE pack'}.
+#. ~ Use action holster_msg for {'str': 'survivor MOLLE pack'}.
 #: data/json/items/armor/holster.json data/json/items/armor/storage.json
 msgid "You stow your %s"
 msgstr ""
@@ -73781,6 +73824,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. ~ Use action holster_prompt for {'str': 'MOLLE pack'}.
+#. ~ Use action holster_prompt for {'str': 'survivor MOLLE pack'}.
 #: data/json/items/armor/storage.json
 msgid "Stow gear"
 msgstr ""
@@ -73963,17 +74007,17 @@ msgid ""
 msgstr ""
 
 #: data/json/items/armor/storage.json
-#: data/mods/No_encum_backpacks/override.json
-msgid "survivor backpack"
-msgid_plural "survivor backpacks"
+msgid "survivor MOLLE pack"
+msgid_plural "survivor MOLLE packs"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Description for {'str': 'survivor backpack'}
+#. ~ Description for {'str': 'survivor MOLLE pack'}
 #: data/json/items/armor/storage.json
 msgid ""
 "A custom-built backpack.  Durable and carefully crafted to hold as much "
-"stuff as possible."
+"stuff as possible, as well as covered with equipment straps for quick access"
+" to weapons."
 msgstr ""
 
 #: data/json/items/armor/storage.json
@@ -259591,6 +259635,12 @@ msgid ""
 "this is the mod for you."
 msgstr ""
 
+#: data/mods/No_encum_backpacks/override.json
+msgid "survivor backpack"
+msgid_plural "survivor backpacks"
+msgstr[0] ""
+msgstr[1] ""
+
 #: data/mods/Old_Mutations/modinfo.json
 msgid "Old Mutations"
 msgstr ""
@@ -267821,12 +267871,27 @@ msgstr ""
 
 #: src/activity_handlers.cpp
 #, c-format
+msgid "%s (<color_%s>%d</color>)"
+msgstr ""
+
+#: src/activity_handlers.cpp
+#, c-format
 msgid "%s %s\n"
 msgstr ""
 
 #: src/activity_handlers.cpp
 #, c-format
 msgid "Charges: <color_light_blue>%s/%s</color> %s (%s per use)\n"
+msgstr ""
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid "Materials available: %s\n"
+msgstr ""
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid "Materials needed: <color_light_blue>%d</color>\n"
 msgstr ""
 
 #: src/activity_handlers.cpp
@@ -283682,6 +283747,15 @@ msgstr ""
 
 #: src/game_inventory.cpp
 msgid "MATERIALS AVAILABLE"
+msgstr ""
+
+#: src/game_inventory.cpp
+#, c-format
+msgid "%d"
+msgstr ""
+
+#: src/game_inventory.cpp
+msgid "NEED"
 msgstr ""
 
 #: src/game_inventory.cpp

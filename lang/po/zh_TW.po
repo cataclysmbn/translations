@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-23 19:51+0000\n"
+"POT-Creation-Date: 2026-06-24 17:25+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -27635,6 +27635,44 @@ msgid ""
 "you."
 msgstr "你被视为核心员工，并被要求在设施撤离期间留守。你最好在什么东西找到你之前赶紧找一张门禁卡。"
 
+#. ~ Name for scenario 'The Metro' for a male character
+#: data/json/scenarios.json
+msgctxt "scenario_male"
+msgid "The Metro"
+msgstr ""
+
+#. ~ Name for scenario 'The Metro' for a female character
+#: data/json/scenarios.json
+msgctxt "scenario_female"
+msgid "The Metro"
+msgstr ""
+
+#. ~ Description for scenario 'The Metro' for a male character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_male"
+msgid ""
+"In the chaos of the Cataclysm, you decided to make a run for the subway "
+"tunnels, hoping to find refuge away from the horrors on the surface.  Now, "
+"you find yourself in the dark tunnels of the subway system, and yet you feel"
+" like you're not alone..."
+msgstr ""
+
+#. ~ Description for scenario 'The Metro' for a female character.
+#: data/json/scenarios.json
+msgctxt "scen_desc_female"
+msgid ""
+"In the chaos of the Cataclysm, you decided to make a run for the subway "
+"tunnels, hoping to find refuge away from the horrors on the surface.  Now, "
+"you find yourself in the dark tunnels of the subway system, and yet you feel"
+" like you're not alone..."
+msgstr ""
+
+#. ~ Starting location for scenario 'The Metro'.
+#: data/json/scenarios.json
+msgctxt "start_name"
+msgid "Subway Tunnels"
+msgstr ""
+
 #. ~ Display string for skill display type 'display_melee'
 #: data/json/skillDisplayType.json
 msgid "Melee skills"
@@ -31140,6 +31178,10 @@ msgstr "办公大楼"
 #: data/json/start_locations.json
 msgid "Cargo area Trans-Coast Logistics"
 msgstr "跨洋物流货运区"
+
+#: data/json/start_locations.json
+msgid "Subway Tunnels"
+msgstr ""
 
 #: data/json/techniques.json
 msgid "Not at technique at all"
@@ -65934,6 +65976,7 @@ msgstr[0] "生存者戰術背帶"
 #. ~ Use action holster_msg for {'str': 'survivor harness', 'str_pl':
 #. 'survivor harnesses'}.
 #. ~ Use action holster_msg for {'str': 'MOLLE pack'}.
+#. ~ Use action holster_msg for {'str': 'survivor MOLLE pack'}.
 #: data/json/items/armor/holster.json data/json/items/armor/storage.json
 msgid "You stow your %s"
 msgstr "你收起了你的 %s"
@@ -72679,6 +72722,7 @@ msgid_plural "MOLLE packs"
 msgstr[0] "輕型戰術背包"
 
 #. ~ Use action holster_prompt for {'str': 'MOLLE pack'}.
+#. ~ Use action holster_prompt for {'str': 'survivor MOLLE pack'}.
 #: data/json/items/armor/storage.json
 msgid "Stow gear"
 msgstr "收起装备"
@@ -72849,17 +72893,17 @@ msgid ""
 msgstr "一個厚重的訂製行李袋。耐用且細心的做工讓它盡可能地裝下夠多的東西。"
 
 #: data/json/items/armor/storage.json
-#: data/mods/No_encum_backpacks/override.json
-msgid "survivor backpack"
-msgid_plural "survivor backpacks"
-msgstr[0] "生存者背包"
+msgid "survivor MOLLE pack"
+msgid_plural "survivor MOLLE packs"
+msgstr[0] ""
 
-#. ~ Description for {'str': 'survivor backpack'}
+#. ~ Description for {'str': 'survivor MOLLE pack'}
 #: data/json/items/armor/storage.json
 msgid ""
 "A custom-built backpack.  Durable and carefully crafted to hold as much "
-"stuff as possible."
-msgstr "一個手工製的背包。耐用且細心的做工讓它盡可能地裝下夠多的東西。"
+"stuff as possible, as well as covered with equipment straps for quick access"
+" to weapons."
+msgstr ""
 
 #: data/json/items/armor/storage.json
 #: data/mods/No_encum_backpacks/override.json
@@ -255933,6 +255977,11 @@ msgid ""
 "this is the mod for you."
 msgstr "如果你觉得每次战斗前都要倒腾背包太麻烦，那么这款模组绝对适合你。"
 
+#: data/mods/No_encum_backpacks/override.json
+msgid "survivor backpack"
+msgid_plural "survivor backpacks"
+msgstr[0] "生存者背包"
+
 #: data/mods/Old_Mutations/modinfo.json
 msgid "Old Mutations"
 msgstr "经典突变"
@@ -264211,6 +264260,11 @@ msgstr "你這樣做不會學到更多東西。"
 
 #: src/activity_handlers.cpp
 #, c-format
+msgid "%s (<color_%s>%d</color>)"
+msgstr "%s (<color_%s>%d</color>)"
+
+#: src/activity_handlers.cpp
+#, c-format
 msgid "%s %s\n"
 msgstr "%s %s\n"
 
@@ -264218,6 +264272,16 @@ msgstr "%s %s\n"
 #, c-format
 msgid "Charges: <color_light_blue>%s/%s</color> %s (%s per use)\n"
 msgstr "電量：<color_light_blue>%s/%s</color> %s ( 每次使用 %s )\n"
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid "Materials available: %s\n"
+msgstr "可用材料：%s\n"
+
+#: src/activity_handlers.cpp
+#, c-format
+msgid "Materials needed: <color_light_blue>%d</color>\n"
+msgstr "所需材料：<color_light_blue>%d</color>\n"
 
 #: src/activity_handlers.cpp
 #, c-format
@@ -267345,7 +267409,7 @@ msgstr "你把%s推开了。"
 #: src/avatar_action.cpp
 #, c-format
 msgid "You send %s flying!"
-msgstr ""
+msgstr "你将%s击飞了！"
 
 #: src/avatar_action.cpp
 msgid "shove"
@@ -278745,7 +278809,7 @@ msgstr "游标位置： (%d,%d,%d)"
 
 #: src/game.cpp
 msgid "You don't know that destination."
-msgstr ""
+msgstr "你尚未知晓该目的地。"
 
 #: src/game.cpp
 msgid "You can't travel there."
@@ -280337,6 +280401,15 @@ msgstr "<color_red>无</color>"
 #: src/game_inventory.cpp
 msgid "MATERIALS AVAILABLE"
 msgstr "可用材料"
+
+#: src/game_inventory.cpp
+#, c-format
+msgid "%d"
+msgstr "%d"
+
+#: src/game_inventory.cpp
+msgid "NEED"
+msgstr "需要"
 
 #: src/game_inventory.cpp
 msgid "SUCCESS"
