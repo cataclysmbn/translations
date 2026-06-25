@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-24 17:25+0000\n"
+"POT-Creation-Date: 2026-06-25 18:25+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -27620,13 +27620,13 @@ msgstr "你被视为核心员工，并被要求在设施撤离期间留守。你
 #: data/json/scenarios.json
 msgctxt "scenario_male"
 msgid "The Metro"
-msgstr ""
+msgstr "地铁"
 
 #. ~ Name for scenario 'The Metro' for a female character
 #: data/json/scenarios.json
 msgctxt "scenario_female"
 msgid "The Metro"
-msgstr ""
+msgstr "地铁"
 
 #. ~ Description for scenario 'The Metro' for a male character.
 #: data/json/scenarios.json
@@ -27637,6 +27637,7 @@ msgid ""
 "you find yourself in the dark tunnels of the subway system, and yet you feel"
 " like you're not alone..."
 msgstr ""
+"在大灾变的混乱之中，你决定逃往地铁隧道，希望能找到一处避难所来躲避地表的恐怖。如今，你发现自己置身于幽暗的地铁系统中，然而你感觉自己似乎并不孤单……"
 
 #. ~ Description for scenario 'The Metro' for a female character.
 #: data/json/scenarios.json
@@ -27647,12 +27648,13 @@ msgid ""
 "you find yourself in the dark tunnels of the subway system, and yet you feel"
 " like you're not alone..."
 msgstr ""
+"在大灾变的混乱之中，你决定逃往地铁隧道，希望能找到一处避难所来躲避地表的恐怖。如今，你发现自己置身于幽暗的地铁系统中，然而你感觉自己似乎并不孤单……"
 
 #. ~ Starting location for scenario 'The Metro'.
 #: data/json/scenarios.json
 msgctxt "start_name"
 msgid "Subway Tunnels"
-msgstr ""
+msgstr "地铁隧道"
 
 #. ~ Display string for skill display type 'display_melee'
 #: data/json/skillDisplayType.json
@@ -31162,7 +31164,7 @@ msgstr "跨洋物流货运区"
 
 #: data/json/start_locations.json
 msgid "Subway Tunnels"
-msgstr ""
+msgstr "地铁隧道"
 
 #: data/json/techniques.json
 msgid "Not at technique at all"
@@ -73056,7 +73058,7 @@ msgstr "量身打造的沉重的编织袋，额外缝了很多口袋上去。值
 #: data/json/items/armor/storage.json
 msgid "survivor MOLLE pack"
 msgid_plural "survivor MOLLE packs"
-msgstr[0] ""
+msgstr[0] "幸存者MOLLE战术背包"
 
 #. ~ Description for {'str': 'survivor MOLLE pack'}
 #: data/json/items/armor/storage.json
@@ -73064,7 +73066,7 @@ msgid ""
 "A custom-built backpack.  Durable and carefully crafted to hold as much "
 "stuff as possible, as well as covered with equipment straps for quick access"
 " to weapons."
-msgstr ""
+msgstr "一件自制的背包，经久耐用并且被经过精心制造，使得它能够装下尽可能多的物品，背包表面还布满装备绑带，以便快速取用武器。"
 
 #: data/json/items/armor/storage.json
 #: data/mods/No_encum_backpacks/override.json
@@ -102664,7 +102666,9 @@ msgid ""
 msgstr "截短枪管会降低子弹初速，除了轻微增加噪音和降低准绳度，也能使武器便于携带和手持。"
 
 #: data/json/items/gunmod/barrel.json data/json/items/gunmod/muzzle.json
-#: data/json/obsoletion/items.json data/mods/Arcana_BN/items/gunmods.json
+#: data/json/obsoletion/items.json
+#: data/mods/Aftershock/items/gunmod/barrel.json
+#: data/mods/Arcana_BN/items/gunmods.json
 #: data/mods/exotic_ammo/items/gunmod/barrel.json
 msgid "barrel"
 msgstr "枪管"
@@ -102726,6 +102730,19 @@ msgstr "这个自制的微型火焰喷射器可以装在大部分的枪械上，
 msgid "underbarrel"
 msgstr "枪管下挂件"
 
+#: data/json/items/gunmod/barrel.json
+msgid "barrel takedown kit"
+msgid_plural "barrel takedown kits"
+msgstr[0] ""
+
+#: data/json/items/gunmod/barrel.json
+msgid ""
+"A takedown barrel assembly that allows the barrel to be folded or detached "
+"for compact storage.  Reduces the weapon's volume when stowed but the hinged"
+" mechanism is less rigid than a fixed barrel, impacting handling.  Must be "
+"unfolded before firing."
+msgstr ""
+
 #: data/json/items/gunmod/bionicmods.json
 msgid "Power shot"
 msgid_plural "Power shots"
@@ -102768,21 +102785,25 @@ msgid "ar15"
 msgstr "AR-15"
 
 #: data/json/items/gunmod/conversions.json
+#: data/json/items/gunmod/mechanism.json
 msgctxt "gun_type_type"
 msgid "m4a1"
 msgstr "m4a1"
 
 #: data/json/items/gunmod/conversions.json
+#: data/json/items/gunmod/mechanism.json
 msgctxt "gun_type_type"
 msgid "m16a4"
 msgstr "m16a4"
 
 #: data/json/items/gunmod/conversions.json
+#: data/json/items/gunmod/mechanism.json
 msgctxt "gun_type_type"
 msgid "h&k416a5"
 msgstr "h&k416a5"
 
 #: data/json/items/gunmod/conversions.json
+#: data/json/items/gunmod/mechanism.json
 msgctxt "gun_type_type"
 msgid "m27iar"
 msgstr "m27iar"
@@ -103078,6 +103099,18 @@ msgid ""
 "blasting open obstacles, at the expense of accuracy."
 msgstr "一个非常不舒服的直握把。 设计用于在爆破障碍物时吸收后坐力，但以牺牲精准度为代价。"
 
+#: data/json/items/gunmod/grip.json
+msgid "carbon fiber furniture"
+msgid_plural "carbon fiber furnitures"
+msgstr[0] ""
+
+#: data/json/items/gunmod/grip.json
+msgid ""
+"A set of carbon fiber replacement grips and furniture, 3D-printed for "
+"maximum weight savings.  Significantly lighter than polymer furniture at the"
+" cost of reduced handling and melee effectiveness."
+msgstr ""
+
 #: data/json/items/gunmod/laser_gunmods.json
 msgid "beam scatterer"
 msgid_plural "beam scatterers"
@@ -103170,6 +103203,7 @@ msgid ""
 msgstr "这种精密的配重扳机组件可以提升枪械命中率。"
 
 #: data/json/items/gunmod/mechanism.json data/json/obsoletion/items.json
+#: data/mods/Aftershock/items/gunmod/mechanism.json
 msgid "mechanism"
 msgstr "机械"
 
@@ -103415,6 +103449,23 @@ msgid ""
 "replaces the internal floorplate and catch assembly."
 msgstr ""
 "一个经过修改的弹匣井，允许发射 .30-06 弹药的自制卡宾枪使用勃朗宁自动步枪（BAR）的可拆卸盒式弹匣。该适配器替换了原有的内置弹仓底板和卡榫组件。"
+
+#: data/json/items/gunmod/mechanism.json
+msgid "carbon fiber upper receiver"
+msgid_plural "carbon fiber upper receivers"
+msgstr[0] ""
+
+#: data/json/items/gunmod/mechanism.json
+msgid ""
+"A 3D-printed carbon fiber replacement upper receiver for AR-15 pattern "
+"rifles.  Significantly lighter than the original aluminum receiver with no "
+"impact on accuracy or reliability."
+msgstr ""
+
+#: data/json/items/gunmod/mechanism.json
+msgctxt "gun_type_type"
+msgid "ar_pistol"
+msgstr ""
 
 #: data/json/items/gunmod/muzzle.json
 msgid "ported barrel"
@@ -103982,6 +104033,18 @@ msgid ""
 " but also greatly improves the ease with which the weapon can be carried and"
 " wielded."
 msgstr "移除枪托会显著降低精度和后坐力控制，但也极大地提高了携带和使用武器的便利性。"
+
+#: data/json/items/gunmod/stock.json
+msgid "carbon fiber stock"
+msgid_plural "carbon fiber stocks"
+msgstr[0] ""
+
+#: data/json/items/gunmod/stock.json
+msgid ""
+"A 3D-printed carbon fiber replacement stock.  Lighter than polymer or wood "
+"stocks with a minor handling penalty due to reduced mass in the rear of the "
+"weapon."
+msgstr ""
 
 #: data/json/items/gunmod/underbarrel.json
 msgid "bipod"
@@ -192980,6 +193043,41 @@ msgstr[0] "生化头骨枪"
 #: data/mods/Aftershock/items/gun/projectile.json
 msgid "Bionic one-shot subdermal .40 pistol integrated with your head."
 msgstr "通过生化插件植入你头骨的单发伸缩式手枪。"
+
+#: data/mods/Aftershock/items/gunmod/barrel.json
+msgid "titanium barrel"
+msgid_plural "titanium barrels"
+msgstr[0] ""
+
+#: data/mods/Aftershock/items/gunmod/barrel.json
+msgid ""
+"A precision-machined titanium replacement barrel.  Significantly lighter "
+"than steel with improved heat dissipation, resulting in a more controllable "
+"weapon."
+msgstr ""
+
+#: data/mods/Aftershock/items/gunmod/barrel.json
+msgid "short titanium barrel"
+msgid_plural "short titanium barrels"
+msgstr[0] ""
+
+#: data/mods/Aftershock/items/gunmod/barrel.json
+msgid ""
+"A shortened titanium replacement barrel designed for compact weapons.  "
+"Lighter than standard barrels with improved heat management."
+msgstr ""
+
+#: data/mods/Aftershock/items/gunmod/mechanism.json
+msgid "titanium bolt carrier"
+msgid_plural "titanium bolt carriers"
+msgstr[0] ""
+
+#: data/mods/Aftershock/items/gunmod/mechanism.json
+msgid ""
+"A precision-machined titanium bolt carrier group.  Lighter than the standard"
+" steel unit, reducing reciprocating mass and felt recoil for improved "
+"accuracy."
+msgstr ""
 
 #. ~ Computer name
 #: data/mods/Aftershock/maps/lab_vehicle_track.json
@@ -295024,7 +295122,7 @@ msgstr ""
 "错误：在\"%s\"的\"bash\"字段中发现错误：\"%s\"：\n"
 "%s"
 
-#: src/mapgen.cpp
+#: src/mapgen.cpp src/mapgen_constructor.cpp
 msgid "Wreckage"
 msgstr "残骸"
 
