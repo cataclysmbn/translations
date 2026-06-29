@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-06-28 10:08+0000\n"
+"POT-Creation-Date: 2026-06-29 21:37+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -57633,9 +57633,10 @@ msgstr "どうやらこの装置は電力が必要らしい。"
 msgid ""
 "Internally powered by a maximum of ten plutonium fuel cells, this full-body "
 "suit of sleek black military armor represents the pinnacle of Rivtech's non-"
-"rigid powered armor technology.  Use it to turn it on."
+"rigid powered armor technology.  While inactive it can protect from most "
+"pistol rounds.  When active, its powered ballistic shielding can shrug off "
+"5.56x45mm.  Use it to turn it on."
 msgstr ""
-"RM13コンバットアーマーは、最大10個のプルトニウム燃料電池で駆動するフルボディスーツ。光沢のある黒の柔軟装甲は、リブテック社の非剛性パワーアーマー技術の頂点を示す。使うと起動する。"
 
 #: data/json/items/tool_armor.json
 msgid "RM13 combat armor (on)"
@@ -57654,10 +57655,10 @@ msgstr "RM13コンバットアーマーが停止した。"
 msgid ""
 "Internally powered by a maximum of ten plutonium fuel cells, this full-body "
 "suit of sleek black military armor represents the pinnacle of Rivtech's non-"
-"rigid powered armor technology.  It is turned on, and continually draining "
-"power.  Use it to turn it off."
+"rigid powered armor technology.  It is turned on and continually draining "
+"power, its powered ballistic shielding protecting against anything up to "
+"5.56x45mm.  Use it to turn it off."
 msgstr ""
-"最大10個のプルトニウム燃料電池で駆動するフルボディスーツ。光沢のある黒の非剛性軍用装甲は、リブテック社のパワーアーマー技術の頂点に位置する。現在、電源は入っており、継続的に電力を消費している。使用すると電源を切る。"
 
 #: data/json/items/tool_armor.json
 msgid "5-point anchor"
@@ -59808,9 +59809,9 @@ msgstr[0] ".38 ｽﾍﾟｼｬﾙ"
 #. ~ Description for {'str': '.38 Special'}
 #: data/json/items/ammo/38.json
 msgid ""
-".38 Special ammunition with 130gr FMJ bullets.  The .38 Special round was "
+".38 Special ammunition with 130gr JHP bullets.  The .38 Special round was "
 "extremely common among US police forces during the 20th century."
-msgstr "130grのFMJ弾頭を装填した.38スペシャル弾。20世紀を通じて、アメリカの警察部隊の間で極めて広く普及していた。"
+msgstr ""
 
 #: data/json/items/ammo/38.json
 msgid ".38 FMJ, black powder"
@@ -61643,6 +61644,9 @@ msgstr[0] "マガジン サッチェル"
 #. ~ Use action holster_msg for {'str': 'leg magazine pouch', 'str_pl': 'leg
 #. magazine pouches'}.
 #. ~ Use action holster_msg for {'str': 'leg magazine satchel'}.
+#. ~ Use action holster_msg for {'str': 'tac vest'}.
+#. ~ Use action holster_msg for {'str': 'shoulder magazine pouch', 'str_pl':
+#. 'shoulder magazine pouches'}.
 #. ~ Use action holster_msg for {'str': 'MBR vest (empty)', 'str_pl': 'MBR
 #. vests (empty)'}.
 #. ~ Use action holster_msg for {'str': 'MBR vest (ceramic plates)', 'str_pl':
@@ -61651,22 +61655,20 @@ msgstr[0] "マガジン サッチェル"
 #. 'MBR vests (hard plates)'}.
 #. ~ Use action holster_msg for {'str': 'MBR vest (steel plating)', 'str_pl':
 #. 'MBR vests (steel plating)'}.
-#. ~ Use action holster_msg for {'str': 'tac vest'}.
-#. ~ Use action holster_msg for {'str': 'XL Kevlar vest'}.
-#. ~ Use action holster_msg for {'str': 'shoulder magazine pouch', 'str_pl':
-#. 'shoulder magazine pouches'}.
 #. ~ Use action holster_msg for {'str': 'hand grenade pouch', 'str_pl': 'hand
 #. grenade pouches'}.
 #. ~ Use action holster_msg for {'str': 'power armor magazine carrier'}.
 #. ~ Use action holster_msg for {'str': 'MBR vest (Kevlar plates)', 'str_pl':
 #. 'MBR vests (Kevlar plates)'}.
+#. ~ Use action holster_msg for {'str': 'XL Kevlar vest'}.
 #. ~ Use action holster_msg for {'str': 'HERC rig'}.
 #. ~ Use action holster_msg for {'str': 'MBR vest (titanium)', 'str_pl': 'MBR
 #. vests (titanium)'}.
 #. ~ Use action holster_msg for C.R.I.T. chestrig.
-#: data/json/items/armor/ammo_pouch.json data/json/items/armor/bandolier.json
-#: data/json/items/armor/power_armor.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/armor.json
+#: data/json/items/armor/ammo_pouch.json
+#: data/json/items/armor/ballistic_armor.json
+#: data/json/items/armor/bandolier.json data/json/items/armor/power_armor.json
+#: data/json/obsoletion/items.json data/mods/Aftershock/items/armor.json
 #: data/mods/Aftershock/items/obsolete.json
 #: data/mods/CRT_EXPANSION/items/crt_armor.json
 msgid "You stash your %s."
@@ -61681,6 +61683,9 @@ msgstr "%sを収納した。"
 #. ~ Use action holster_prompt for {'str': 'leg magazine pouch', 'str_pl':
 #. 'leg magazine pouches'}.
 #. ~ Use action holster_prompt for {'str': 'leg magazine satchel'}.
+#. ~ Use action holster_prompt for {'str': 'tac vest'}.
+#. ~ Use action holster_prompt for {'str': 'shoulder magazine pouch',
+#. 'str_pl': 'shoulder magazine pouches'}.
 #. ~ Use action holster_prompt for {'str': 'MBR vest (empty)', 'str_pl': 'MBR
 #. vests (empty)'}.
 #. ~ Use action holster_prompt for {'str': 'MBR vest (ceramic plates)',
@@ -61689,18 +61694,16 @@ msgstr "%sを収納した。"
 #. 'MBR vests (hard plates)'}.
 #. ~ Use action holster_prompt for {'str': 'MBR vest (steel plating)',
 #. 'str_pl': 'MBR vests (steel plating)'}.
-#. ~ Use action holster_prompt for {'str': 'tac vest'}.
-#. ~ Use action holster_prompt for {'str': 'XL Kevlar vest'}.
-#. ~ Use action holster_prompt for {'str': 'shoulder magazine pouch',
-#. 'str_pl': 'shoulder magazine pouches'}.
 #. ~ Use action holster_prompt for {'str': 'power armor magazine carrier'}.
 #. ~ Use action holster_prompt for {'str': 'MBR vest (Kevlar plates)',
 #. 'str_pl': 'MBR vests (Kevlar plates)'}.
+#. ~ Use action holster_prompt for {'str': 'XL Kevlar vest'}.
 #. ~ Use action holster_prompt for {'str': 'HERC rig'}.
 #. ~ Use action holster_prompt for {'str': 'MBR vest (titanium)', 'str_pl':
 #. 'MBR vests (titanium)'}.
 #. ~ Use action holster_prompt for C.R.I.T. chestrig.
 #: data/json/items/armor/ammo_pouch.json
+#: data/json/items/armor/ballistic_armor.json
 #: data/json/items/armor/power_armor.json data/json/obsoletion/items.json
 #: data/mods/Aftershock/items/armor.json
 #: data/mods/Aftershock/items/obsolete.json
@@ -61798,82 +61801,6 @@ msgid ""
 msgstr "脚に固定できる布製の弾薬ポーチ。小型のマガジン1つ、弾帯、またはスピードローダーを収納可能。"
 
 #: data/json/items/armor/ammo_pouch.json
-msgid "MBR vest (empty)"
-msgid_plural "MBR vests (empty)"
-msgstr[0] "モジュール式防弾ベスト[空]"
-
-#. ~ Description for {'str': 'MBR vest (empty)', 'str_pl': 'MBR vests
-#. (empty)'}
-#: data/json/items/armor/ammo_pouch.json
-msgid ""
-"A Modular Bullet Resistant Vest.  It has pouches for extra armor inserts, "
-"but without them provides little more protection over a regular vest.  It "
-"has four pouches capable of carrying magazines."
-msgstr ""
-"モジュール式防弾ベスト。アーマーインサート用のポーチを備えるが、装着しない場合、通常のベストと比べて防御性能はほとんど変わらない。マガジン4つを収納できるポーチを備える。"
-
-#: data/json/items/armor/ammo_pouch.json
-msgid "MBR vest (ceramic plates)"
-msgid_plural "MBR vests (ceramic plates)"
-msgstr[0] "モジュール式防弾ベスト[セラミック]"
-
-#. ~ Description for {'str': 'MBR vest (ceramic plates)', 'str_pl': 'MBR vests
-#. (ceramic plates)'}
-#: data/json/items/armor/ammo_pouch.json
-msgid ""
-"A Modular Bullet Resistant Vest.  Ceramic plates have been inserted to "
-"improve its protection, offering good resistance to bullets at the expense "
-"of being less durable than other plate options.  It has four pouches capable"
-" of carrying magazines."
-msgstr ""
-"モジュール式防弾ベスト。弾道防御性能を高めるためセラミックプレートが装着されており、銃弾に対して高い耐性を持つが、他のプレートに比べて耐久性が低い。マガジン4つを収納できるポーチを備える。"
-
-#: data/json/items/armor/ammo_pouch.json
-msgid "MBR vest (hard plates)"
-msgid_plural "MBR vests (hard plates)"
-msgstr[0] "モジュール式防弾ベスト[硬化鋼板]"
-
-#. ~ Description for {'str': 'MBR vest (hard plates)', 'str_pl': 'MBR vests
-#. (hard plates)'}
-#: data/json/items/armor/ammo_pouch.json
-msgid ""
-"A Modular Bullet Resistant Vest.  Hardened steel plates have been inserted, "
-"greatly increasing its protection at the cost of a great deal of weight and "
-"loss of flexibility.  It has four pouches capable of carrying magazines."
-msgstr ""
-"モジュール式防弾ベスト。硬化鋼板が装着されており、防御性能が大幅に向上するが、重量が大きく増し、柔軟性が大きく低下する。マガジン4つを収納できるポーチを備える。"
-
-#: data/json/items/armor/ammo_pouch.json
-msgid "MBR vest (steel plating)"
-msgid_plural "MBR vests (steel plating)"
-msgstr[0] "モジュール式防弾ベスト[スチール]"
-
-#. ~ Description for {'str': 'MBR vest (steel plating)', 'str_pl': 'MBR vests
-#. (steel plating)'}
-#: data/json/items/armor/ammo_pouch.json
-msgid ""
-"A Modular Bullet Resistant Vest.  Its armor pouches have steel plates in "
-"them; this improves protection, but makes the vest much heavier and "
-"encumbering.  It has four pouches capable of carrying magazines."
-msgstr ""
-"モジュール式防弾ベスト。アーマー用ポーチに鋼板が装着されており、防御性能が向上するが、重量が大きく増し、動作制限が大きく増す。マガジン4つを収納できるポーチを備える。"
-
-#: data/json/items/armor/ammo_pouch.json
-msgid "MBR vest (superalloy)"
-msgid_plural "MBR vests (superalloy)"
-msgstr[0] "モジュール式防弾ベスト[超合金]"
-
-#. ~ Description for {'str': 'MBR vest (superalloy)', 'str_pl': 'MBR vests
-#. (superalloy)'}
-#: data/json/items/armor/ammo_pouch.json
-msgid ""
-"A Modular Bullet Resistant Vest.  Its armor pouches have superalloy plating "
-"in them, giving it extra protection with marginal flexibility loss and "
-"additional weight.  It has four pouches capable of carrying magazines."
-msgstr ""
-"モジュール式防弾ベスト。アーマー用ポーチに超合金板が装着されており、追加の防御性能を発揮するが、柔軟性がわずかに低下し、重量が増す。マガジン4つを収納できるポーチを備える。"
-
-#: data/json/items/armor/ammo_pouch.json
 #: data/mods/MagicalNights/items/armor.json
 msgid "quiver"
 msgid_plural "quivers"
@@ -61966,18 +61893,6 @@ msgid ""
 " pouches."
 msgstr ""
 "軽量なベスト。胴体周辺に装備品と弾薬を快適に収納できる。法執行機関でよく使われるが、ケブラー入りの複合戦術ベストほどは人気がない。着脱が簡単で、複数のポーチにマガジン4つを収納可能。"
-
-#: data/json/items/armor/ammo_pouch.json
-msgid "XL Kevlar vest"
-msgid_plural "XL Kevlar vests"
-msgstr[0] "XLケブラーベスト"
-
-#. ~ Description for {'str': 'XL Kevlar vest'}
-#: data/json/items/armor/ammo_pouch.json
-msgid ""
-"A massive, hand-built Kevlar vest based on the design of existing bullet "
-"resistant vests.  It has four pouches capable of carrying magazines."
-msgstr "既存の防弾ベストの設計を基にした、巨大な手作りのケブラー製ベスト。マガジン4つを収納できるポーチを備える。"
 
 #: data/json/items/armor/ammo_pouch.json
 #: data/mods/exotic_ammo/bandoliers-pouches.json
@@ -62232,6 +62147,19 @@ msgid "Arm guards made from the hardened scales of large reptiles."
 msgstr "大型爬虫類の硬化した鱗で作られたアームガード。"
 
 #: data/json/items/armor/ballistic_armor.json
+msgid "Kevlar vest"
+msgid_plural "Kevlar vests"
+msgstr[0] "ケブラーベスト"
+
+#. ~ Description for {'str': 'Kevlar vest'}
+#: data/json/items/armor/ballistic_armor.json
+msgid ""
+"A lightweight, concealable bullet resistant vest.  It will reliably protect "
+"against anything up to 9x19mm, but will struggle against tougher rounds like"
+" .45 ACP or .357 Magnum."
+msgstr ""
+
+#: data/json/items/armor/ballistic_armor.json
 msgid "dragon skin vest"
 msgid_plural "dragon skin vests"
 msgstr[0] "ドラゴンスキンベスト"
@@ -62239,10 +62167,11 @@ msgstr[0] "ドラゴンスキンベスト"
 #. ~ Description for {'str': 'dragon skin vest'}
 #: data/json/items/armor/ballistic_armor.json
 msgid ""
-"A state-of-the-art, lightweight, flexible, bullet resistant vest.  The "
-"ceramic disks used in its construction make it impossible to repair, only "
-"replace."
-msgstr "最新式の軽量・柔軟防弾ベスト。構造に用いられたセラミックディスクにより修理不可。交換のみ可能。"
+"An improved iteration of a flexible, bullet-resistant vest that originally "
+"suffered from reliability issues.  Reliably protects against 5.56x45mm "
+"rounds while being less cumbersome than normal hard ballistic armor.  "
+"Damaged plates will require it to be disassembled to replace."
+msgstr ""
 
 #: data/json/items/armor/ballistic_armor.json
 msgid "lamellar Kevlar vest"
@@ -62252,9 +62181,86 @@ msgstr[0] "ラメラーケブラーベスト"
 #. ~ Description for {'str': 'lamellar Kevlar vest'}
 #: data/json/items/armor/ballistic_armor.json
 msgid ""
-"A lamellar Kevlar vest, there are intricately cut voids usually filled with "
-"stitched in ceramic disks, you could repair the stitching if needed"
-msgstr "板状に重ねたケブラー製ベスト。複雑に切り抜かれた部分には縫い込まれたセラミックディスクが埋め込まれている。縫い目は必要に応じて修理できる。"
+"A lamellar Kevlar vest, providing modest protection from pistol rounds up to"
+" .40 S&W.  It was designed to slot in multiple small ceramic disks to "
+"improve bullet resistance."
+msgstr ""
+
+#: data/json/items/armor/ballistic_armor.json
+msgid "MBR vest (empty)"
+msgid_plural "MBR vests (empty)"
+msgstr[0] "モジュール式防弾ベスト[空]"
+
+#. ~ Description for {'str': 'MBR vest (empty)', 'str_pl': 'MBR vests
+#. (empty)'}
+#: data/json/items/armor/ballistic_armor.json
+msgid ""
+"A Modular Bullet Resistant Vest.  It has pouches for extra armor inserts, "
+"but even without them it will protect against anything up to .40 S&W.  It "
+"has four pouches capable of carrying magazines."
+msgstr ""
+
+#: data/json/items/armor/ballistic_armor.json
+msgid "MBR vest (ceramic plates)"
+msgid_plural "MBR vests (ceramic plates)"
+msgstr[0] "モジュール式防弾ベスト[セラミック]"
+
+#. ~ Description for {'str': 'MBR vest (ceramic plates)', 'str_pl': 'MBR vests
+#. (ceramic plates)'}
+#: data/json/items/armor/ballistic_armor.json
+msgid ""
+"A Modular Bullet Resistant Vest.  Ceramic plates have been inserted to "
+"improve its protection, protecting against anything up to 7.62x51mm at the "
+"expense of moderate encumbrance, and being less durable than other plate "
+"options.  It has four pouches capable of carrying magazines.  Damaged plates"
+" will require it to be disassembled to replace."
+msgstr ""
+
+#: data/json/items/armor/ballistic_armor.json
+msgid "MBR vest (hard plates)"
+msgid_plural "MBR vests (hard plates)"
+msgstr[0] "モジュール式防弾ベスト[硬化鋼板]"
+
+#. ~ Description for {'str': 'MBR vest (hard plates)', 'str_pl': 'MBR vests
+#. (hard plates)'}
+#: data/json/items/armor/ballistic_armor.json
+msgid ""
+"A Modular Bullet Resistant Vest.  Hardened steel plates have been inserted, "
+"reliably negating anything up to 7.62x51mm at the cost of a great deal of "
+"weight and loss of flexibility.  It has four pouches capable of carrying "
+"magazines.  Damaged plates will require it to be disassembled to replace."
+msgstr ""
+
+#: data/json/items/armor/ballistic_armor.json
+msgid "MBR vest (steel plating)"
+msgid_plural "MBR vests (steel plating)"
+msgstr[0] "モジュール式防弾ベスト[スチール]"
+
+#. ~ Description for {'str': 'MBR vest (steel plating)', 'str_pl': 'MBR vests
+#. (steel plating)'}
+#: data/json/items/armor/ballistic_armor.json
+msgid ""
+"A Modular Bullet Resistant Vest.  Its armor pouches have steel plates in "
+"them, protecting against 5.56x45mm but making the vest much heavier and "
+"encumbering.  It has four pouches capable of carrying magazines.  Damaged "
+"plates will require it to be disassembled to replace."
+msgstr ""
+
+#: data/json/items/armor/ballistic_armor.json
+msgid "MBR vest (superalloy)"
+msgid_plural "MBR vests (superalloy)"
+msgstr[0] "モジュール式防弾ベスト[超合金]"
+
+#. ~ Description for {'str': 'MBR vest (superalloy)', 'str_pl': 'MBR vests
+#. (superalloy)'}
+#: data/json/items/armor/ballistic_armor.json
+msgid ""
+"A Modular Bullet Resistant Vest.  Its armor pouches have superalloy plating "
+"in them, protecting against anything up to 5.56x45mm with marginal "
+"flexibility loss and additional weight.  It has four pouches capable of "
+"carrying magazines.  Damaged plates will require it to be disassembled to "
+"replace."
+msgstr ""
 
 #: data/json/items/armor/ballistic_armor.json
 msgid "makeshift ballistic vest"
@@ -62266,9 +62272,8 @@ msgstr[0] "急造防弾ベスト"
 msgid ""
 "A flotation vest, cut open and tightly packed with sand or earth as "
 "improvised ballistic protection.  Incredibly cumbersome, it won't do much "
-"against rifle rounds but it's better than nothing."
+"but it'll keep your organs inside your torso against anything up to .40 S&W."
 msgstr ""
-"浮揚用ベストを切り開き、急造の防弾対策として砂や土でぎっしりと詰めた。非常に重く扱いづらいが、ライフル弾に対してはほとんど効果がないものの、何も持たないよりはマシ。"
 
 #: data/json/items/armor/ballistic_armor.json
 msgid "hard steel trench armor"
@@ -62279,8 +62284,9 @@ msgstr[0] "硬鋼製トレンチアーマー"
 #: data/json/items/armor/ballistic_armor.json
 msgid ""
 "Cumbersome body armor forged from hardened steel plating.  Very heavy, but "
-"able to take considerable punishment."
-msgstr "硬化鋼板で鍛造された重厚なボディアーマー。非常に重いが、大きなダメージに耐えられる。"
+"able to take considerable punishment, laughing off anything up to .44 "
+"Magnum."
+msgstr ""
 
 #: data/json/items/armor/ballistic_armor.json
 msgid "hard steel trench helmet"
@@ -62291,8 +62297,9 @@ msgstr[0] "硬鋼製レンチヘルメット"
 #: data/json/items/armor/ballistic_armor.json
 msgid ""
 "A cumbersome full-face helm forged from hardened steel plating.  Very heavy,"
-" but able to take considerable punishment."
-msgstr "硬化鋼板で鍛造された重厚なフルフェイスヘルム。非常に重いが、大きなダメージに耐えられる。"
+" but able to take considerable punishment, laughing off anything up to .44 "
+"Magnum."
+msgstr ""
 
 #: data/json/items/armor/bandolier.json
 #: data/mods/exotic_ammo/bandoliers-pouches.json
@@ -65803,9 +65810,10 @@ msgstr[0] "アーミーヘルメット"
 #. ~ Description for {'str': 'army helmet'}
 #: data/json/items/armor/helmets.json
 msgid ""
-"A heavy helmet that provides excellent protection from all sorts of damage."
-"  It is labeled as the advanced combat helmet."
-msgstr "あらゆる種類のダメージから優れた保護を提供する重いヘルメット。ラベルには「先進の戦闘用ヘルメット」と記されている。"
+"A heavy helmet that provides excellent protection from fragmentation and can"
+" resist pistol rounds up to .40 S&W.  It is labeled as the advanced combat "
+"helmet."
+msgstr ""
 
 #: data/json/items/armor/helmets.json
 msgid "steel combat helmet"
@@ -65815,9 +65823,10 @@ msgstr[0] ""
 #. ~ Description for {'str': 'steel combat helmet'}
 #: data/json/items/armor/helmets.json
 msgid ""
-"A heavy helmet made of hardened steel with a chin strap.  Various designs "
-"were once used by armies around the world, modern ballistic helmets have "
-"mostly relegated this to military surplus."
+"A heavy helmet made of hardened steel with a chin strap.  Designed to "
+"protect against shrapnel and impacts, but can handle pistol rounds up to "
+"9x19mm.  Various designs were once used by armies around the world, modern "
+"ballistic helmets have mostly relegated this to military surplus."
 msgstr ""
 
 #: data/json/items/armor/helmets.json
@@ -71672,11 +71681,12 @@ msgstr[0] "サルベージパワーアーマー"
 #. ~ Description for {'str': 'salvaged power armor'}
 #: data/json/items/armor/power_armor.json
 msgid ""
-"This used to be a powered exoskeleton with a set of heavy armor plates, made"
-" wearable by the assist of the servos.  Now it's just the armor plating and "
-"a stripped down chassis: as one might expect, it's a lot harder to wear."
+"This used to be a powered exoskeleton with a set of heavy armor plates, its "
+"chassis stripped down.  More cumbersome and without the bells and whistles "
+"of a proper powered suit, but less encumbering than an unpowered suit.  "
+"Stripping out the chemical bodyglove allows wearing it over other equipment,"
+" at the expense of environmental protection and ballistic resistance."
 msgstr ""
-"かつてはサーボの支援で着用できた、重装甲プレート付きの動力外骨格。今は装甲板と簡素化されたシャーシだけとなり、予想通り着用ははるかに難しくなっている。"
 
 #: data/json/items/armor/power_armor.json
 msgid "salvaged power armor helmet"
@@ -71686,12 +71696,10 @@ msgstr[0] "サルベージパワーヘルメット"
 #. ~ Description for {'str': 'salvaged power armor helmet'}
 #: data/json/items/armor/power_armor.json
 msgid ""
-"This used to be a military-grade full-head helmet with advanced optics and "
-"environmental filters.  It looks like it was decommissioned or otherwise "
-"stripped for parts; now it's a very expensive hat.  It's still quite "
-"durable, but quite hard to see out of."
+"This used to be a military-grade full-head helmet, its advanced optics and "
+"environmental filters having been stripped for parts.  While still quite "
+"durable, it's harder to see out of than an active power helmet."
 msgstr ""
-"かつては先進の光学装置と環境フィルターを備えた軍用フルフェイスヘルメット。分解または部品取りのうえで廃棄されたようで、今ではただの高価な帽子と化している。耐久性はかなり高いが、視認性は非常に悪い。"
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor"
@@ -71717,12 +71725,12 @@ msgid ""
 "These were the second wave of military combat exoskeleton, and got a lot of "
 "media attention, with popular Navy commercials featuring them heavily.  It "
 "consists of a muscle-boosting exoskeleton frame with overlayed segmented "
-"alloy plating.  Despite advancements over the original bulky 'tank suits', "
-"it's still highly cumbersome when inactive.  An integrated chemical "
-"resistant bodyglove precludes wearing other clothing, aside from most "
-"undergarments or handheld equipment like shields."
+"alloy plating, rated to provide complete protection against 7.62x51mm "
+"rounds.  Despite advancements over the original bulky 'tank suits', it's "
+"still highly cumbersome when inactive.  An integrated chemical resistant "
+"bodyglove precludes wearing other clothing, aside from most undergarments or"
+" handheld equipment like shields."
 msgstr ""
-"これは軍用戦闘外骨格の第二世代モデルで、海軍のポピュラーなコマーシャルに頻繁に登場したこともあり、多くのメディアの注目を集めた。筋力増強機能を持つ外骨格フレームに、セグメント式の合金プレートが重ねられている。初代の頑丈すぎる「タンクスーツ」に比べて進化を遂げたものの、非稼働時は依然として非常に扱いにくい。一体化された化学防護用ボディグローブのため、下着類や盾などの手持ち装備を除いて、他の服は着用できない。"
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor (active)"
@@ -71751,13 +71759,13 @@ msgid ""
 "These were the second wave of military combat exoskeleton, and got a lot of "
 "media attention, with popular Navy commercials featuring them heavily.  It "
 "consists of a muscle-boosting exoskeleton frame with overlayed segmented "
-"alloy plating.  Despite advancements over the original bulky 'tank suits', "
-"it's still highly cumbersome when inactive.  An integrated chemical "
-"resistant bodyglove precludes wearing other clothing, aside from most "
-"undergarments or handheld equipment like shields.  It is currently turned "
-"on, activate it to turn it off."
+"alloy plating, rated to provide complete protection against 7.62x51mm "
+"rounds.  Despite advancements over the original bulky 'tank suits', it's "
+"still highly cumbersome when inactive.  An integrated chemical resistant "
+"bodyglove precludes wearing other clothing, aside from most undergarments or"
+" handheld equipment like shields.  It is currently turned on, activate it to"
+" turn it off."
 msgstr ""
-"これは軍用戦闘外骨格の第二世代モデルで、海軍のポピュラーなコマーシャルに頻繁に登場したこともあり、多くのメディア注目を集めた。筋力増強機能を持つ外骨格フレームに、セグメント式の合金プレートが重ねられている。初代の頑丈すぎる「タンクスーツ」に比べて進化を遂げたものの、非稼働時は依然として非常に扱いにくい。一体化された化学防護用ボディグローブのため、下着類や盾などの手持ち装備を除いて、他の服は着用できない。現在は作動中。使うと電源が切れる。"
 
 #: data/json/items/armor/power_armor.json
 msgid "heavy power armor"
@@ -71772,13 +71780,12 @@ msgid ""
 "covered in thick segmented armor plates, were tested in military service a "
 "few years back and determined to be too heavy and expensive for regular use."
 "  Now that it's in your hands, though, you have a massive suit of power "
-"armor capable of resisting almost any small arms fire and most other forms "
-"of attack.  On the other hand, it doubles your effective weight, and it's "
-"almost impossible not to bump into things.  An integrated chemical resistant"
-" bodyglove precludes wearing other clothing, aside from most undergarments "
-"or handheld equipment like shields."
+"armor capable of negating anything up to armor-piercing .30-06 rounds.  On "
+"the other hand, it doubles your effective weight, and it's almost impossible"
+" not to bump into things.  An integrated chemical resistant bodyglove "
+"precludes wearing other clothing, aside from most undergarments or handheld "
+"equipment like shields."
 msgstr ""
-"メディアでは俗に「タンクスーツ」と呼ばれるこの頑丈な外骨格は、厚いセグメント式装甲板で覆われており、数年前に軍での運用試験が行われたが、重さとコストの高さから通常使用には不適とされた。だが今、それが手元にある。ほぼすべての小火器攻撃やその他のほとんどの攻撃を跳ね返せる、巨大なパワーアーマーだ。一方で、実質的な体重が2倍になり、物にぶつからないようにするのはほぼ不可能。一体化された化学防護用ボディグローブのため、下着類や盾などの手持ち装備を除いて、他の服は着用できない。"
 
 #: data/json/items/armor/power_armor.json
 msgid "heavy power armor (active)"
@@ -71793,14 +71800,13 @@ msgid ""
 "covered in thick segmented armor plates, were tested in military service a "
 "few years back and determined to be too heavy and expensive for regular use."
 "  Now that it's in your hands, though, you have a massive suit of power "
-"armor capable of resisting almost any small arms fire and most other forms "
-"of attack.  On the other hand, it doubles your effective weight, and it's "
-"almost impossible not to bump into things.  An integrated chemical resistant"
-" bodyglove precludes wearing other clothing, aside from most undergarments "
-"or handheld equipment like shields.  It is currently turned on, activate it "
-"to turn it off."
+"armor capable of negating anything up to armor-piercing .30-06 rounds.  On "
+"the other hand, it doubles your effective weight, and it's almost impossible"
+" not to bump into things.  An integrated chemical resistant bodyglove "
+"precludes wearing other clothing, aside from most undergarments or handheld "
+"equipment like shields.  It is currently turned on, activate it to turn it "
+"off."
 msgstr ""
-"メディアでは俗に「タンクスーツ」と呼ばれるこの頑丈な外骨格は、厚いセグメント式装甲板で覆われており、数年前に軍での運用試験が行われたが、重さとコストの高さから通常使用には不適とされた。だが今、それが手元にある。ほぼすべての小火器攻撃やその他のほとんどの攻撃を跳ね返せる、巨大なパワーアーマーだ。一方で、実質的な体重が2倍になり、物にぶつからないようにするのはほぼ不可能。一体化された化学防護用ボディグローブのため、下着類や盾などの手持ち装備を除いて、他の服は着用できない。現在は作動中。使うと電源が切れる。"
 
 #: data/json/items/armor/power_armor.json
 msgid "light power armor"
@@ -71814,14 +71820,13 @@ msgid ""
 "The final iteration of military power armor before the fall of civilization,"
 " this type - a powered exoskeleton with high-tech segmented plating - was "
 "designed for actual widespread combat use and was seen on the front lines "
-"during the last days of the cataclysm.  Like the heavier suits, it is "
-"resistant to most modern weaponry, but it is much more light and "
-"maneuverable.  Unfortunately, the world ended before it could roll out in "
+"during the last days of the cataclysm.  Much more light and maneuverable "
+"than the heavier suits, and still reliably protects against anything up to "
+"5.56x45mm.  Unfortunately, the world ended before it could roll out in "
 "significant numbers.  An integrated chemical resistant bodyglove precludes "
 "wearing other clothing, aside from most undergarments or handheld equipment "
 "like shields."
 msgstr ""
-"文明崩壊前の軍用パワーアーマー最終型。高度なセグメント式装甲を備えた動力外骨格で、広範な実戦投入を目的として設計され、大災厄の最末期には最前線でも確認された。より重装なモデル同様、現代のほとんどの兵器に耐性を持つが、はるかに軽量で機動性に優れる。残念ながら、十分な量が配備される前に世界は終わった。一体化された化学防護用ボディグローブのため、下着類や盾などの手持ち装備を除いて、他の服は着用できない。"
 
 #: data/json/items/armor/power_armor.json
 msgid "light power armor (active)"
@@ -71835,14 +71840,13 @@ msgid ""
 "The final iteration of military power armor before the fall of civilization,"
 " this type - a powered exoskeleton with high-tech segmented plating - was "
 "designed for actual widespread combat use and was seen on the front lines "
-"during the last days of the cataclysm.  Like the heavier suits, it is "
-"resistant to most modern weaponry, but it is much more light and "
-"maneuverable.  Unfortunately, the world ended before it could roll out in "
+"during the last days of the cataclysm.  Much more light and maneuverable "
+"than the heavier suits, and still reliably protects against anything up to "
+"5.56x45mm.  Unfortunately, the world ended before it could roll out in "
 "significant numbers.  An integrated chemical resistant bodyglove precludes "
 "wearing other clothing, aside from most undergarments or handheld equipment "
 "like shields.  It is currently turned on, activate it to turn it off."
 msgstr ""
-"文明崩壊前の軍用パワーアーマー最終型。高度なセグメント式装甲を備えた動力外骨格で、広範な実戦投入を目的として設計され、大災厄の最末期には最前線でも確認された。より重装なモデル同様、現代のほとんどの兵器に耐性を持つが、はるかに軽量で機動性に優れる。残念ながら、十分な量が配備される前に世界は終わった。一体化された化学防護用ボディグローブのため、下着類や盾などの手持ち装備を除いて、他の服は着用できない。現在は作動中。使うと電源が切れる。"
 
 #: data/json/items/armor/power_armor.json
 msgid "power armor helmet"
@@ -74403,17 +74407,6 @@ msgid ""
 "Heavy plastic armor for your upper torso.  Normally worn by football "
 "players."
 msgstr "上半身用の重いプラスチック製防具。アメリカンフットボール選手が通常装着する。"
-
-#: data/json/items/armor/torso_armor.json
-msgid "Kevlar vest"
-msgid_plural "Kevlar vests"
-msgstr[0] "ケブラーベスト"
-
-#. ~ Description for {'str': 'Kevlar vest'}
-#: data/json/items/armor/torso_armor.json
-msgid ""
-"A lightweight, bullet resistant vest.  Suitable for wearing under clothing."
-msgstr "軽量な防弾ベスト。衣服の下に着込むのに適している。"
 
 #: data/json/items/armor/torso_armor.json
 msgid "light survivor body armor"
@@ -104000,6 +103993,18 @@ msgid ""
 msgstr "軍隊で広く使用されており、装着した銃器の精度と重量を向上させる。ドットサイトよりも一段進んだ装備。"
 
 #: data/json/items/gunmod/sights.json
+msgid "hybrid holographic sight"
+msgid_plural "hybrid holographic sights"
+msgstr[0] ""
+
+#: data/json/items/gunmod/sights.json
+msgid ""
+"Used extensively by military forces, it increases accuracy and weight.  This"
+" sight combines a holographic sight with a toggleable 3x magnifier, allowing"
+" effective usage at short and medium range."
+msgstr ""
+
+#: data/json/items/gunmod/sights.json
 msgid "iron sights"
 msgid_plural "iron sights"
 msgstr[0] "アイアンサイト"
@@ -132796,11 +132801,10 @@ msgid ""
 "This zombie was once wearing some kind of uniform with heavy, bulletproof "
 "materials sewn in.  At this point it's impossible to tell what kind of "
 "uniform it was: the monster's skin has grown over the fabric, splitting and "
-"tearing it to shreds, turning the remaining Kevlar and other bits of armor "
-"material into part of its hide.  Its hands, similarly, have fused into large"
-" leathery cudgels."
+"tearing it to shreds, turning the remaining mess of Kevlar and ceramic into "
+"part of its hide.  Its hands, similarly, have fused into large leathery "
+"cudgels."
 msgstr ""
-"このゾンビはかつて、重い防弾素材が縫い込まれた何らかの制服を着ていた。だが、今となってはそれがどんな制服だったかは判断できない。怪物の皮膚が生地の上に成長し、それをずたずたに引き裂き、残ったケブラーやその他の装甲の切れ端がその皮の一部と化しているからだ。その手も同様に、大きくて革のような棍棒に融合している。"
 
 #: data/json/monsters/zed_soldiers.json
 msgid "Kevlar hulk"
@@ -132813,10 +132817,9 @@ msgid ""
 "This zombie was once wearing some kind of now long-shredded uniform with "
 "heavy, bulletproof materials sewn in.  It has grown into a hulking, "
 "leatherbacked beast, its mutated skin taking on a strange texture similar to"
-" the Kevlar bits embedded in it.  Its arms have twisted into enormous clubs "
-"of misshapen bone that it drags on the ground behind it."
+" the Kevlar and ceramic bits embedded in it.  Its arms have twisted into "
+"enormous clubs of misshapen bone that it drags on the ground behind it."
 msgstr ""
-"このゾンビはかつて、重い防弾素材が縫い込まれた、今ではずたずたに引き裂かれた制服を着ていた。それが、革の鎧をまとった巨大な獣に成長し、変異した皮膚は埋め込まれたケブラーの切れ端に似た奇妙な質感になっている。腕は歪んだ骨の巨大な棍棒と化し、地面に引きずっている。"
 
 #: data/json/monsters/zed_soldiers.json
 msgid "zombie military pilot"
@@ -171415,6 +171418,18 @@ msgid ""
 "the kick."
 msgstr ""
 "スクラップを溶接して作ったことが一目でわかる、大型で重量のあるリボルバー。見た目はまったく美しくないが、.45弾を装填して強力な一撃を放つことができる。ただし、反動には十分に注意が必要だ。"
+
+#: data/json/obsoletion/items.json
+msgid "XL Kevlar vest"
+msgid_plural "XL Kevlar vests"
+msgstr[0] "XLケブラーベスト"
+
+#. ~ Description for {'str': 'XL Kevlar vest'}
+#: data/json/obsoletion/items.json
+msgid ""
+"A massive, hand-built Kevlar vest based on the design of existing bullet "
+"resistant vests.  It has four pouches capable of carrying magazines."
+msgstr "既存の防弾ベストの設計を基にした、巨大な手作りのケブラー製ベスト。マガジン4つを収納できるポーチを備える。"
 
 #: data/json/obsoletion/missions.json
 msgid "Find a Flu Shot"
