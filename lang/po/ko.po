@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-07-02 02:52+0000\n"
+"POT-Creation-Date: 2026-07-03 20:39+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -17341,7 +17341,7 @@ msgid "Resin"
 msgstr "수지"
 
 #: data/json/materials.json data/mods/Aftershock/items/materials.json
-#: data/mods/MagicalNights/materials.json src/game.cpp src/veh_interact.cpp
+#: data/mods/MagicalNights/materials.json src/vehicle.cpp
 msgid "dented"
 msgstr "찌그러진"
 
@@ -17382,8 +17382,7 @@ msgstr "구부러진"
 msgid "smashed"
 msgstr "거의 박살난"
 
-#: data/json/materials.json src/character.cpp src/game.cpp
-#: src/veh_interact.cpp
+#: data/json/materials.json src/character.cpp src/vehicle.cpp
 msgid "destroyed"
 msgstr "박살난"
 
@@ -29605,7 +29604,7 @@ msgstr "무기"
 #. ~ Description for {'str_sp': 'nearby fire'}
 #. ~ Description for {'str_sp': 'muscle'}
 #. ~ Description for {'str_sp': 'wind'}
-#. ~ Description for {'str_sp': 'sun light'}
+#. ~ Description for {'str_sp': 'sunlight'}
 #. ~ Description for {'str': 'metabolism'}
 #. ~ Description for {'str': 'nonsensoleum'}
 #. ~ Description for {'str': 'a smoking device and a source of flame'}
@@ -55115,8 +55114,8 @@ msgid_plural "wind"
 msgstr[0] "풍력"
 
 #: data/json/items/generic.json
-msgid "sun light"
-msgid_plural "sun light"
+msgid "sunlight"
+msgid_plural "sunlight"
 msgstr[0] "태양광"
 
 #: data/json/items/generic.json
@@ -66386,14 +66385,14 @@ msgid ""
 msgstr "목욕하러 들어갈 때와 나갈 때 알몸을 가리기 위해 걸치는 타월과 비슷한 재질로 된 겉옷. 목욕물이 나왔더라면 좋았을 텐데."
 
 #: data/json/items/armor/coats.json
-msgid "army jacket"
-msgid_plural "army jacket"
-msgstr[0] "전투복 상의"
+msgid "army blouse"
+msgid_plural "army blouse"
+msgstr[0] "전투복 블라우스"
 
-#. ~ Description for {'str_sp': 'army jacket'}
+#. ~ Description for {'str_sp': 'army blouse'}
 #: data/json/items/armor/coats.json
-msgid "A tough jacket with lots of pockets.  Favored by the military."
-msgstr "튼튼하고 주머니가 많은 상의. 군대에서 주로 사용됩니다."
+msgid "A tough blouse with lots of pockets.  Favored by the military."
+msgstr "튼튼하고 주머니가 많은 블라우스. 군대에서 많이 쓰입니다."
 
 #: data/json/items/armor/coats.json
 msgid "chef's jacket"
@@ -102385,7 +102384,7 @@ msgstr[0] "탄소섬유 돌격소총"
 msgid ""
 "This assault rifle was made using a 3D printer with no metal parts except "
 "the barrel, resulting in a very lightweight weapon."
-msgstr "이 돌격소총은 총열을 제외한 모든 부품을 3D 프린터를 이용해 만들어매우 가볍습니다."
+msgstr "이 돌격소총은 총열을 제외한 모든 부품을 3D 프린터를 이용해 만들어 매우 가볍습니다."
 
 #: data/json/items/gun/277.json
 msgid "M7"
@@ -286916,7 +286915,7 @@ msgstr "아주 뛰어남"
 msgid "outstanding"
 msgstr "훌륭함"
 
-#: src/effect.cpp
+#: src/effect.cpp src/vehicle.cpp
 msgid "perfect"
 msgstr "완벽함"
 
@@ -288864,18 +288863,6 @@ msgstr "<+/->우선도"
 #: src/game.cpp
 msgid "<T>ravel to"
 msgstr "[<T>] 다음 장소로 이동"
-
-#: src/game.cpp src/veh_interact.cpp
-msgid "like new"
-msgstr "새 것 같음"
-
-#: src/game.cpp src/veh_interact.cpp
-msgid "battered"
-msgstr "너덜너덜"
-
-#: src/game.cpp src/veh_interact.cpp
-msgid "wrecked"
-msgstr "심하게 망가진"
 
 #: src/game.cpp
 msgid "Vehicles"
@@ -315981,6 +315968,18 @@ msgstr ""
 "약화시킵니다."
 
 #: src/options.cpp
+msgid "New armor damage calculation"
+msgstr "신규 방어구 피해 계산"
+
+#: src/options.cpp
+msgid ""
+"If true, armor will be able to take damage from attacks that don't penetrate"
+" it, but attacks in general damage armor less frequently."
+msgstr ""
+"활성화되면 방어구를 관통하지 못한 공격의 피해가 방어구에 전달될 수 있지만, 일반적인 상황에서 방어구가 공격으로 손상되는 경우가 보다 덜"
+" 자주 발생합니다."
+
+#: src/options.cpp
 msgid "Use legacy pathfinding"
 msgstr "구식 길찾기 설정 사용"
 
@@ -322527,6 +322526,18 @@ msgstr "부릉!!!브르렁!!!브르렁!!!"
 #: src/vehicle.cpp
 msgid "WUMPWUMPWUMP!"
 msgstr "쿵쿵쿵!"
+
+#: src/vehicle.cpp
+msgid "like new"
+msgstr "새 것 같음"
+
+#: src/vehicle.cpp
+msgid "battered"
+msgstr "너덜너덜"
+
+#: src/vehicle.cpp
+msgid "wrecked"
+msgstr "심하게 망가진"
 
 #: src/vehicle.cpp
 msgid "no owner"

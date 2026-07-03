@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-07-02 02:52+0000\n"
+"POT-Creation-Date: 2026-07-03 20:24+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -16878,7 +16878,7 @@ msgid "Resin"
 msgstr "樹脂"
 
 #: data/json/materials.json data/mods/Aftershock/items/materials.json
-#: data/mods/MagicalNights/materials.json src/game.cpp src/veh_interact.cpp
+#: data/mods/MagicalNights/materials.json src/vehicle.cpp
 msgid "dented"
 msgstr "凹んだ"
 
@@ -16919,8 +16919,7 @@ msgstr "曲がった"
 msgid "smashed"
 msgstr "砕けた"
 
-#: data/json/materials.json src/character.cpp src/game.cpp
-#: src/veh_interact.cpp
+#: data/json/materials.json src/character.cpp src/vehicle.cpp
 msgid "destroyed"
 msgstr "損壊した"
 
@@ -28334,7 +28333,7 @@ msgstr "武器"
 #. ~ Description for {'str_sp': 'nearby fire'}
 #. ~ Description for {'str_sp': 'muscle'}
 #. ~ Description for {'str_sp': 'wind'}
-#. ~ Description for {'str_sp': 'sun light'}
+#. ~ Description for {'str_sp': 'sunlight'}
 #. ~ Description for {'str': 'metabolism'}
 #. ~ Description for {'str': 'nonsensoleum'}
 #. ~ Description for {'str': 'a smoking device and a source of flame'}
@@ -53203,9 +53202,9 @@ msgid_plural "wind"
 msgstr[0] "風"
 
 #: data/json/items/generic.json
-msgid "sun light"
-msgid_plural "sun light"
-msgstr[0] "太陽光"
+msgid "sunlight"
+msgid_plural "sunlight"
+msgstr[0] ""
 
 #: data/json/items/generic.json
 msgid "metabolism"
@@ -64110,14 +64109,14 @@ msgid ""
 msgstr "風呂の出入り時に裸を隠すために古くから使われる、吸水性の高いタオル状の外衣。流水が使えたなら、と願わずにはいられない。"
 
 #: data/json/items/armor/coats.json
-msgid "army jacket"
-msgid_plural "army jacket"
-msgstr[0] "アーミージャケット"
+msgid "army blouse"
+msgid_plural "army blouse"
+msgstr[0] ""
 
-#. ~ Description for {'str_sp': 'army jacket'}
+#. ~ Description for {'str_sp': 'army blouse'}
 #: data/json/items/armor/coats.json
-msgid "A tough jacket with lots of pockets.  Favored by the military."
-msgstr "複数のポケットが付いた、軍に好まれる丈夫なジャケット。"
+msgid "A tough blouse with lots of pockets.  Favored by the military."
+msgstr ""
 
 #: data/json/items/armor/coats.json
 msgid "chef's jacket"
@@ -277137,7 +277136,7 @@ msgstr "とても良い"
 msgid "outstanding"
 msgstr "抜群"
 
-#: src/effect.cpp
+#: src/effect.cpp src/vehicle.cpp
 msgid "perfect"
 msgstr "完璧"
 
@@ -278963,18 +278962,6 @@ msgstr "<+/->優先度"
 #: src/game.cpp
 msgid "<T>ravel to"
 msgstr ""
-
-#: src/game.cpp src/veh_interact.cpp
-msgid "like new"
-msgstr "新品同様"
-
-#: src/game.cpp src/veh_interact.cpp
-msgid "battered"
-msgstr "ひどく傷んでいる"
-
-#: src/game.cpp src/veh_interact.cpp
-msgid "wrecked"
-msgstr "壊滅状態"
 
 #: src/game.cpp
 msgid "Vehicles"
@@ -305929,6 +305916,16 @@ msgid ""
 msgstr "有効にすると、銃剣が武器に追加されるのではなく、武器の攻撃を置き換えるようになる。現在開発中の機能であり、現時点では銃剣を大幅に弱体化。"
 
 #: src/options.cpp
+msgid "New armor damage calculation"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"If true, armor will be able to take damage from attacks that don't penetrate"
+" it, but attacks in general damage armor less frequently."
+msgstr ""
+
+#: src/options.cpp
 msgid "Use legacy pathfinding"
 msgstr "旧式の経路探索の設定を使用"
 
@@ -312424,6 +312421,18 @@ msgstr "ブンブンブンブン！"
 #: src/vehicle.cpp
 msgid "WUMPWUMPWUMP!"
 msgstr "ドンドンドン！"
+
+#: src/vehicle.cpp
+msgid "like new"
+msgstr "新品同様"
+
+#: src/vehicle.cpp
+msgid "battered"
+msgstr "ひどく傷んでいる"
+
+#: src/vehicle.cpp
+msgid "wrecked"
+msgstr "壊滅状態"
 
 #: src/vehicle.cpp
 msgid "no owner"
