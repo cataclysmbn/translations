@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-07-03 20:39+0000\n"
+"POT-Creation-Date: 2026-07-04 20:56+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -7912,6 +7912,17 @@ msgid ""
 msgstr "用于识别生物是否正在使用冲刺法术效果的占位标签。如果你看到这个标签残留，说明这是一个Bug。"
 
 #: data/json/effects.json
+msgid "Eyebot Depleted"
+msgstr ""
+
+#. ~ Description of effect 'Eyebot Depleted'.
+#: data/json/effects.json
+msgid ""
+"Marks a non-friendly eyebot as having already summoned reinforcements, "
+"preventing it from doing so again.  This is a bug if you have it."
+msgstr ""
+
+#: data/json/effects.json
 msgid "Disarmed"
 msgstr "缴械"
 
@@ -11897,6 +11908,13 @@ msgid ""
 "This food is <info>raw</info>, and will be <good>more nutritious</good> if "
 "cooked."
 msgstr "这份食物是<info>生的</info>，烹饪后食用会<good>更有营养</good>。"
+
+#. ~ info for JSON flag 'DRONE_CAM'
+#: data/json/flags.json
+msgid ""
+"This item <good>allows you to view</good> the position of enemies "
+"<info>marked by friendly drones</info>."
+msgstr ""
 
 #. ~ info for JSON flag 'GNV_EFFECT'
 #: data/json/flags.json
@@ -52878,7 +52896,7 @@ msgstr[0] "风速"
 #: data/json/items/generic.json
 msgid "sunlight"
 msgid_plural "sunlight"
-msgstr[0] ""
+msgstr[0] "阳光"
 
 #: data/json/items/generic.json
 msgid "metabolism"
@@ -55209,26 +55227,24 @@ msgid ""
 msgstr "一架损坏的\"鹰爪\"型无人车，它的外壳破损，有液体从中流出。可以拆解得到部件。"
 
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "broken tribot"
 msgid_plural "broken tribots"
 msgstr[0] "三足机器人（损坏）"
 
 #. ~ Description for {'str': 'broken tribot'}
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "A broken tribot.  Now that its legs lie broken and immobile, the world seems"
 " a little less threatening.  Could be gutted for parts."
 msgstr "一个损坏的三足机器人。现在它的腿断了一地，世界又多了一份和平。可以拆解得到部件。"
 
-#: data/json/items/generic.json data/mods/Aftershock/items/inactiverobot.json
+#: data/json/items/generic.json
 msgid "broken tank drone"
 msgid_plural "broken tank drones"
 msgstr[0] "坦克无人机（损坏）"
 
 #. ~ Description for {'str': 'broken tank drone'}
-#: data/json/items/generic.json data/mods/Aftershock/items/inactiverobot.json
+#: data/json/items/generic.json
 msgid ""
 "A broken tank drone.  Still looks intimidating despite being permanently "
 "inoperative, possibly due to the sheer size and mass.  Could be gutted for "
@@ -55236,14 +55252,12 @@ msgid ""
 msgstr "一个损坏的坦克无人机。可能因为巨大的体积和质量的缘故，就算已经永久无法继续运作依旧看起来可怕无比。可以拆解得到部件。"
 
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "broken chickenbot"
 msgid_plural "broken chickenbots"
 msgstr[0] "双足机器人（损坏）"
 
 #. ~ Description for {'str': 'broken chickenbot'}
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "A broken chicken walker.  Still looks intimidating despite being permanently"
 " inoperative, possibly due to the sheer size and mass.  Could be gutted for "
@@ -58761,10 +58775,9 @@ msgid ""
 "This device is a head-mounted, UPS-powered, augmented reality scanning tool "
 "that projects a HUD onto a transparent screen that goes over your eye.  This"
 " particular visor has been illegally upgraded to use military GPS satellite "
-"connections, broadening its range."
+"connections, broadening its range and allowing it to receive targeting info "
+"from any nearby friendly drones."
 msgstr ""
-"这是一种头戴式、使用UPS供电的增强现实扫描工具，通过覆盖眼部的透明屏幕投影出HUD。此款护目镜已被非法升级，可连接军用GPS卫星，扩大了其扫描范围。\n"
-"\"就算对方的战斗力超过一亿，这护目镜还承受得住！\""
 
 #: data/json/items/tool_armor.json
 msgid "upgraded scouting visor (NV Mode)"
@@ -63854,12 +63867,12 @@ msgstr "入浴和出浴所穿的服饰，多为毛巾质地的，这样可以更
 #: data/json/items/armor/coats.json
 msgid "army blouse"
 msgid_plural "army blouse"
-msgstr[0] ""
+msgstr[0] "军装夹克"
 
 #. ~ Description for {'str_sp': 'army blouse'}
 #: data/json/items/armor/coats.json
 msgid "A tough blouse with lots of pockets.  Favored by the military."
-msgstr ""
+msgstr "一件结实的夹克外套，外面有许多口袋。深受军人喜爱。"
 
 #: data/json/items/armor/coats.json
 msgid "chef's jacket"
@@ -96759,11 +96772,12 @@ msgstr "眼球无人机不以为然地发出哔哔声，并将相机聚焦在你
 #: data/json/items/corpses/inactive_bots.json
 msgid ""
 "This is an inactive eyebot.  Using this item involves turning it on and "
-"launching the UAV.  If reprogrammed and rewired successfully the eyebot will"
-" then keep watch for intruders.  An inhumanly strong user could also deploy "
-"it remotely by throwing it."
+"launching the UAV.  If programmed successfully the eyebot will then keep "
+"watch for intruders, marking targets that can be tracked if you possess a "
+"control laptop, military scouter, or similar equipment; or have a bionic "
+"infolink installed.  An inhumanly strong user could also deploy it remotely "
+"by throwing it."
 msgstr ""
-"一台未激活的眼球无人机。使用该物品以将它开启并运行无人机，如果重新编程和布线成功，眼球机器人会开始寻找入侵者。一个非常强壮的使用者也可以通过远程投掷来部署它。"
 
 #: data/json/items/corpses/inactive_bots.json
 msgid "inactive cleaner bot"
@@ -97173,20 +97187,17 @@ msgstr ""
 "这是一台可驾驶的搬运型机械外骨骼（LMES），设计用于搬运重型物资，也具备一定的战斗支援能力。虽然没有内建武器系统，但其框架可以支持驾驶员在开放式座舱中使用重型火器。目前处于运输状态下的停用模式。使用它将展开并激活机甲，如果之前已被成功重新编程或由其他操作员解锁，你就可以进行驾驶。"
 
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive tank drone"
 msgid_plural "inactive tank drones"
 msgstr[0] "坦克无人机（关）"
 
 #. ~ Use action friendly_msg for {'str': 'inactive tank drone'}.
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "The tank drone rolls out and begins acquiring targets."
 msgstr "坦克无人机展开并开始寻找目标。"
 
 #. ~ Use action hostile_msg for {'str': 'inactive tank drone'}.
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "The tank drone swivels its turret and aims directly at you.  Don your brown "
 "pants!"
@@ -97194,7 +97205,6 @@ msgstr "坦克无人机旋转炮塔，直接瞄准了你。穿上裤子快跑！
 
 #. ~ Description for {'str': 'inactive tank drone'}
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive Beagle Mini-Tank UGV.  Using this item involves placing "
 "it on the ground, loading the unit with the factory-loaded 5.56 rounds and "
@@ -97208,14 +97218,12 @@ msgstr ""
 "口径榴弹（如果你只想装填部分弹药，请先把不需装填的弹药移出物品栏）。如果重新编程成功，无人车会将你识别为友军，自主行动或跟随你，并攻击所有在其步枪和榴弹发射器攻击范围内的敌人。"
 
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive chicken walker"
 msgid_plural "inactive chicken walkers"
 msgstr[0] "双足机器人（关）"
 
 #. ~ Use action friendly_msg for {'str': 'inactive chicken walker'}.
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "The chicken walker rises to its feet, sways away from you and begins "
 "surveying the area."
@@ -97228,7 +97236,6 @@ msgstr "双足机器人发出呜呜声瞄准了你。快找掩护！"
 
 #. ~ Description for {'str': 'inactive chicken walker'}
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive chicken walker.  Using this item involves placing it on "
 "the ground, loading the unit with the factory-loaded 5.56 rounds and 40mm "
@@ -97242,14 +97249,12 @@ msgstr ""
 "口径榴弹（如果你只想装填部分弹药，请先把不需装填的弹药移出物品栏）。如果重新编程成功，无人车会将你识别为友军，自主行动或跟随你，并攻击所有在其步枪和榴弹发射器攻击范围内的敌人。"
 
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive tripod"
 msgid_plural "inactive tripods"
 msgstr[0] "三足机器人（关）"
 
 #. ~ Use action friendly_msg for {'str': 'inactive tripod'}.
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "The tribot rises to its feet and scans the area for contaminants."
 msgstr "三足机器人开始移动并扫描该地区的污染物。"
 
@@ -97262,7 +97267,6 @@ msgstr "三足机器人锁定了你，开启了它的喷火器，散发出凝固
 
 #. ~ Description for {'str': 'inactive tripod'}
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive Honda Regnal.  Using this item involves placing it on "
 "the ground, wondering how it fuels its flamethrower and turning it on.  If "
@@ -113543,7 +113547,7 @@ msgstr[0] "手机（屏幕光）"
 msgid "You stop lighting up the screen."
 msgstr "你关闭了屏幕。"
 
-#: data/json/items/tool/electronics.json data/mods/Aftershock/items/tools.json
+#: data/json/items/tool/electronics.json
 msgid "control laptop"
 msgid_plural "control laptops"
 msgstr[0] "遥控用笔记本电脑"
@@ -113573,8 +113577,9 @@ msgstr "你带上了耳塞开始听音乐。"
 msgid ""
 "A modified laptop, now capable of transmitting in the ultra-high frequencies"
 " utilized by robots.  Activate it to command robots from afar, or to toggle "
-"charging via UPS."
-msgstr "一台改造的笔记本，现在可以发送超高频信号来与机器人进行通讯。激活它来遥控机器人，或切换通过UPS充电。"
+"charging via UPS.  It will also automatically display any targeting data "
+"provided by friendly drones in the area."
+msgstr ""
 
 #: data/json/items/tool/electronics.json
 msgid "control laptop - lit screen"
@@ -113661,9 +113666,10 @@ msgstr[0] "腕戴式遥控用电脑"
 #: data/json/items/tool/electronics.json
 msgid ""
 "A modified wrist-mounted computer, now capable of transmitting in the ultra-"
-"high frequencies utilized by robots.  Activate it to command robots from "
-"afar or utilize its other features."
-msgstr "一台经过改装的腕戴式电脑，现在能够以机器人使用的超高频进行信号传输。激活它即可从远处指挥机器人，或使用它的其他功能。"
+"high frequencies utilized by robots, including drones which provide "
+"targeting info.  Activate it to command robots from afar or utilize its "
+"other features."
+msgstr ""
 
 #: data/json/items/tool/electronics.json
 msgid "wrist control computer - music"
@@ -168618,16 +168624,12 @@ msgid ""
 msgstr "小型的流浪汉火炉，用金属罐或大小合适的类似容器制成。只能用于解冻和加热，用火绒做燃料。"
 
 #. ~ Use action friendly_msg for {'str': 'broken chickenbot'}.
-#. ~ Use action friendly_msg for {'str': 'inactive chicken walker'}.
 #: data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "The chicken bot rolls out and begins acquiring targets."
 msgstr "双足机器人展开并开始寻找目标。"
 
 #. ~ Use action hostile_msg for {'str': 'broken chickenbot'}.
-#. ~ Use action hostile_msg for {'str': 'inactive chicken walker'}.
 #: data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "The chicken bot swivels its turret and aims directly at you.  Don your brown"
 " pants!"
@@ -191651,32 +191653,6 @@ msgid ""
 msgstr ""
 "一座未激活的脑熔炮塔。使用它以将它开启并放在地面上。此炮塔保证在用它那威力无比的转轮激光炮扫射丧尸时不会误伤自己。电子学和计算机学等级决定了你将其重新编程的成功几率。"
 
-#. ~ Use action hostile_msg for {'str': 'inactive chicken walker'}.
-#: data/mods/Aftershock/items/inactiverobot.json
-msgid "The chicken walker whirrs and aims directly at you.  Take cover!"
-msgstr "双足机器人发出蜂鸣，直接瞄准了你。快找掩护！"
-
-#. ~ Description for {'str': 'inactive chicken walker'}
-#: data/mods/Aftershock/items/inactiverobot.json
-msgid ""
-"This is an inactive chicken walker.  Using this item involves placing it on "
-"the ground, loading the unit with the factory-loaded 5.56 rounds and 40mm "
-"cartridge grenades in your inventory (if you wish to divide your ammunition,"
-" set aside whatever ammunition you do NOT want to give the robot) and "
-"turning it on.  If reprogrammed and rewired successfully the tank drone will"
-" then identify you as a friendly, roam around or follow you, and attack all "
-"enemies with a built-in firearm and grenade launcher."
-msgstr ""
-"一台未激活的双足机器人。使用该物品以将它放置在地上并打开它，并装填你物品栏内的原装 5.56mm 口径子弹和 40mm "
-"口径榴弹（如果你只想装填部分弹药，请先把不需装填的弹药移出物品栏）。如果重新编程成功，双足机器人会将你识别为友军，自主行动或跟随你，并攻击所有在其步枪和榴弹发射器攻击范围内的敌人。"
-
-#. ~ Use action hostile_msg for {'str': 'inactive tripod'}.
-#: data/mods/Aftershock/items/inactiverobot.json
-msgid ""
-"The tribot glowers down at you and ignites its flamethrower.  Turns out you "
-"hate the smell of napalm."
-msgstr "三足机器人锁定了你，点燃的喷火器直接瞄准了你。看来你并不喜欢凝固汽油的味道。"
-
 #: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive sentinel-lx"
 msgid_plural "inactive sentinel-lxs"
@@ -191712,8 +191688,10 @@ msgstr "你没设好猎犬无人机的程序，它变成敌对的了！"
 #: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive bloodhound drone.  If successfully deployed, it will fly"
-" towards enemy targets and highlight them with a powerful spotlight."
-msgstr "这是一部未激活的猎犬无人机。当成功部署时，它会飞向敌对目标并用它的高功率探照灯照射目标。"
+" towards enemy targets and highlight them with a powerful spotlight, along "
+"with marking targets that can be viewed if you possess a control laptop or "
+"similar device."
+msgstr ""
 
 #. ~ Description for {'str': 'inactive laser turret'}
 #: data/mods/Aftershock/items/inactiverobot.json
@@ -192524,13 +192502,6 @@ msgid ""
 "implants.  When applied, it will convert an item to run directly off of "
 "bionic power."
 msgstr "这个设备用一个精心设计的端口取代了电子设备的标准电源连接和电池端口，这个端口可以与生化插件连接。连接后，它可以让物品使用生化能量运行。"
-
-#. ~ Description for {'str': 'control laptop'}
-#: data/mods/Aftershock/items/tools.json
-msgid ""
-"A modified laptop, now capable of transmitting in the ultra-high frequencies"
-" utilized by robots.  Activate it to command robots from afar."
-msgstr "一台改造的笔记本，现在可以发送超高频信号来与机器人进行通讯。激活它来遥控机器人。"
 
 #: data/mods/Aftershock/items/vehicle_items.json
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -227123,9 +227094,9 @@ msgstr[0] "C.R.I.T. 战术面罩"
 msgid ""
 "This is the C.R.I.T. standard issue face mask, lined with Kevlar for extra "
 "protection.  A few filters provide decent environmental safety, but it was "
-"not intended for extended use.  It has a basic integrated HUD."
+"not intended for extended use.  It has a basic integrated HUD and can "
+"receive targeting data from friendly drones."
 msgstr ""
-"C.R.I.T. 标配的面具，内衬了凯夫拉纤维以提供额外保护。只需要消耗少量滤芯就能提供不错的环境保护，但是无法长期使用。它内置了简单的平视显示器。"
 
 #: data/mods/CRT_EXPANSION/items/crt_armor.json
 msgid "pair of C.R.I.T. boots"
@@ -227763,10 +227734,9 @@ msgid ""
 "electronics and lined with Kevlar for extra protection in order to keep "
 "one's head where it should be.  Various filters and other high tech wizardry"
 " allow for enhanced oxygen intake and safety even under bombardment.  It has"
-" an integrated HUD and the option to turn it on for more features."
+" an integrated HUD that can receive targeting data from friendly drones, and"
+" the option to turn it on for more features."
 msgstr ""
-"C.R.I.T. "
-"改进型特种部队防毒面具，配备各种顶级电子设备，内衬凯夫拉材料以提供额外的头部保护。各种过滤器和其他高科技的设备，即使在轰炸下也能提高氧气的摄入量和安全性。它有一个集成的HUD，可以选择打开它以获得更多功能。"
 
 #: data/mods/CRT_EXPANSION/items/crt_toolarmor.json
 msgid "C.R.I.T. gasmask (on)"
@@ -263051,7 +263021,7 @@ msgstr "配色方案管理"
 msgid "Active World Mods"
 msgstr "当前世界已启用模组"
 
-#: data/raw/keybindings/keybindings.json src/handle_action.cpp
+#: data/raw/keybindings/keybindings.json
 msgid "Cycle move mode (run/walk/crouch)"
 msgstr "切换移动模式（跑/走/蹲）"
 
@@ -263066,6 +263036,10 @@ msgstr "切换奔跑"
 #: data/raw/keybindings/keybindings.json
 msgid "Toggle Crouch"
 msgstr "切换蹲伏"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Prone"
+msgstr "切换卧姿"
 
 #: data/raw/keybindings/keybindings.json
 msgid "Movement Mode Menu"
@@ -267865,6 +267839,10 @@ msgstr "你将机甲的腿部电机功率设置为疾行挡。"
 msgid "You nudge your steed into a steady trot."
 msgstr "你轻轻触碰你的马，使它平稳地小跑。"
 
+#: src/avatar.cpp
+msgid "You get up from the ground."
+msgstr "你从地上站起。"
+
 #: src/avatar.cpp src/character.cpp
 msgid "You stand up."
 msgstr "你站了起来。"
@@ -267880,6 +267858,10 @@ msgstr "你将机甲的腿部电机功率设置为最高挡。"
 #: src/avatar.cpp
 msgid "You spur your steed into a gallop."
 msgstr "你策马疾驰。"
+
+#: src/avatar.cpp
+msgid "You get up from the ground and start running."
+msgstr "你从地上站起并开始奔跑。"
 
 #: src/avatar.cpp
 msgid "You stand up and start running."
@@ -267912,6 +267894,34 @@ msgstr "你放慢坐骑速度，开始步行。"
 #: src/avatar.cpp
 msgid "You start crouching."
 msgstr "你开始蹲伏。"
+
+#: src/avatar.cpp
+msgid "You rise from prone to a crouch."
+msgstr "你从卧姿变为蹲姿。"
+
+#: src/avatar.cpp
+msgid "Your mech cannot go prone."
+msgstr "你的机甲无法进入卧姿。"
+
+#: src/avatar.cpp
+msgid "You cannot go prone while mounted."
+msgstr "骑乘时无法进入卧姿。"
+
+#: src/avatar.cpp
+msgid "You cannot go prone while driving."
+msgstr "驾驶时无法进入卧姿。"
+
+#: src/avatar.cpp
+msgid "You go prone from a crouching position."
+msgstr "你从蹲姿变为卧姿。"
+
+#: src/avatar.cpp
+msgid "You drop to the ground."
+msgstr "你卧倒在地。"
+
+#: src/avatar.cpp
+msgid "You are already prone."
+msgstr "你已处于卧姿。"
 
 #. ~ %1$s: weapon name, %2$s: holster name
 #: src/avatar.cpp src/avatar_action.cpp
@@ -282117,6 +282127,14 @@ msgid "Crouch"
 msgstr "蹲伏"
 
 #: src/handle_action.cpp
+msgid "Prone"
+msgstr "卧姿"
+
+#: src/handle_action.cpp
+msgid "Cycle move mode"
+msgstr "切换移动模式"
+
+#: src/handle_action.cpp
 msgid "Pfft, that spell is for COWARDS, and a Brawler like you is no coward!"
 msgstr "呸，这种法术是给胆小鬼用的，而像你这样的格斗家可不是胆小鬼！"
 
@@ -285380,6 +285398,10 @@ msgstr "维生素"
 #: src/init.cpp
 msgid "Activities"
 msgstr "可用操作"
+
+#: src/init.cpp
+msgid "Item Group"
+msgstr ""
 
 #: src/init.cpp
 msgid "Materials"
@@ -298612,6 +298634,11 @@ msgstr "%s 的LED灯闪烁了一下，然后就解除了部署。让执法官先
 
 #: src/monattack.cpp
 #, c-format
+msgid "The %s scans the surrounding area."
+msgstr ""
+
+#: src/monattack.cpp
+#, c-format
 msgid "The %s takes your picture!"
 msgstr "%s 拍下了你的相片！"
 
@@ -298621,16 +298648,16 @@ msgstr "……数据库连接丢失！"
 
 #: src/monattack.cpp
 #, c-format
-msgid "a robotic voice boom, \"Citizen %s!\""
-msgstr "机器人发出低沉的声音，\"市民，%s！\""
+msgid "a robotic boice boom, \"Citizen %s!\""
+msgstr ""
 
 #: src/monattack.cpp
-msgid "\"Drop your gun!  Now!\""
-msgstr "\"把枪放下！马上！\""
+msgid "\"Drop your gun! Now!\""
+msgstr ""
 
 #: src/monattack.cpp
-msgid "\"Drop your weapon!  Now!\""
-msgstr "\"放下武器！马上！\""
+msgid "\"Drop your weapon! Now!\""
+msgstr ""
 
 #: src/monattack.cpp
 #, c-format
@@ -308085,6 +308112,11 @@ msgstr "跑"
 msgctxt "movement-type"
 msgid "C"
 msgstr "伏"
+
+#: src/panels.cpp
+msgctxt "movement-type"
+msgid "P"
+msgstr "P"
 
 #: src/panels.cpp
 msgctxt "movement-type"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-07-03 20:24+0000\n"
+"POT-Creation-Date: 2026-07-04 20:56+0000\n"
 "Last-Translator: Arif Öcal, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -9151,6 +9151,17 @@ msgstr ""
 "bir hatadır."
 
 #: data/json/effects.json
+msgid "Eyebot Depleted"
+msgstr ""
+
+#. ~ Description of effect 'Eyebot Depleted'.
+#: data/json/effects.json
+msgid ""
+"Marks a non-friendly eyebot as having already summoned reinforcements, "
+"preventing it from doing so again.  This is a bug if you have it."
+msgstr ""
+
+#: data/json/effects.json
 msgid "Disarmed"
 msgstr ""
 
@@ -13368,6 +13379,13 @@ msgid ""
 msgstr ""
 "Bu yiyecek <info>çiğ</info> ve pişirildiğinde <good>daha besleyici</good> "
 "olacaktır."
+
+#. ~ info for JSON flag 'DRONE_CAM'
+#: data/json/flags.json
+msgid ""
+"This item <good>allows you to view</good> the position of enemies "
+"<info>marked by friendly drones</info>."
+msgstr ""
 
 #. ~ info for JSON flag 'GNV_EFFECT'
 #: data/json/flags.json
@@ -61960,7 +61978,6 @@ msgstr ""
 "boşaltılabilir."
 
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "broken tribot"
 msgid_plural "broken tribots"
 msgstr[0] "kırık üçlü bot"
@@ -61968,7 +61985,6 @@ msgstr[1] "kırık üçlü botlar"
 
 #. ~ Description for {'str': 'broken tribot'}
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "A broken tribot.  Now that its legs lie broken and immobile, the world seems"
 " a little less threatening.  Could be gutted for parts."
@@ -61976,14 +61992,14 @@ msgstr ""
 "Kırık bir tribot. Şimdi bacakları kırık ve hareketsiz yattığı için dünya "
 "biraz daha az tehdit edici görünüyor. Parçalar için içi boşaltılabilir."
 
-#: data/json/items/generic.json data/mods/Aftershock/items/inactiverobot.json
+#: data/json/items/generic.json
 msgid "broken tank drone"
 msgid_plural "broken tank drones"
 msgstr[0] "kırık tank dronu"
 msgstr[1] "kırık tank dronları"
 
 #. ~ Description for {'str': 'broken tank drone'}
-#: data/json/items/generic.json data/mods/Aftershock/items/inactiverobot.json
+#: data/json/items/generic.json
 msgid ""
 "A broken tank drone.  Still looks intimidating despite being permanently "
 "inoperative, possibly due to the sheer size and mass.  Could be gutted for "
@@ -61994,7 +62010,6 @@ msgstr ""
 " için içi boşaltılabilir."
 
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "broken chickenbot"
 msgid_plural "broken chickenbots"
 msgstr[0] "kırık tavuk botu"
@@ -62002,7 +62017,6 @@ msgstr[1] "kırık tavuk botları"
 
 #. ~ Description for {'str': 'broken chickenbot'}
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "A broken chicken walker.  Still looks intimidating despite being permanently"
 " inoperative, possibly due to the sheer size and mass.  Could be gutted for "
@@ -66190,12 +66204,9 @@ msgid ""
 "This device is a head-mounted, UPS-powered, augmented reality scanning tool "
 "that projects a HUD onto a transparent screen that goes over your eye.  This"
 " particular visor has been illegally upgraded to use military GPS satellite "
-"connections, broadening its range."
+"connections, broadening its range and allowing it to receive targeting info "
+"from any nearby friendly drones."
 msgstr ""
-"Bu cihaz, gözünüzün üzerine gelen şeffaf bir ekrana bir HUD yansıtan, başa "
-"monte edilen, UPS gücüyle çalışan, artırılmış gerçeklik tarama aracıdır. Bu "
-"özel vizör, menzilini genişleten askeri GPS uydu bağlantılarını kullanacak "
-"şekilde yasadışı olarak yükseltilmiştir."
 
 #: data/json/items/tool_armor.json
 msgid "upgraded scouting visor (NV Mode)"
@@ -111427,14 +111438,12 @@ msgstr ""
 #: data/json/items/corpses/inactive_bots.json
 msgid ""
 "This is an inactive eyebot.  Using this item involves turning it on and "
-"launching the UAV.  If reprogrammed and rewired successfully the eyebot will"
-" then keep watch for intruders.  An inhumanly strong user could also deploy "
-"it remotely by throwing it."
+"launching the UAV.  If programmed successfully the eyebot will then keep "
+"watch for intruders, marking targets that can be tracked if you possess a "
+"control laptop, military scouter, or similar equipment; or have a bionic "
+"infolink installed.  An inhumanly strong user could also deploy it remotely "
+"by throwing it."
 msgstr ""
-"Bu, pasif bir gözbotudur. Bu öğeyi kullanmak, onu açmayı ve İHA'yı "
-"fırlatmayı içerir. Başarıyla yeniden programlanıp yeniden bağlanırsa, "
-"gözbotu davetsiz misafirleri izlemeye devam edecektir. İnsanüstü güçlü bir "
-"kullanıcı, onu uzaktan fırlatarak da devreye sokabilir."
 
 #: data/json/items/corpses/inactive_bots.json
 msgid "inactive cleaner bot"
@@ -111936,7 +111945,6 @@ msgstr ""
 "veya kilidi açılmışsa onu kullanmanıza olanak tanır."
 
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive tank drone"
 msgid_plural "inactive tank drones"
 msgstr[0] "etkin olmayan tank dronu"
@@ -111944,13 +111952,11 @@ msgstr[1] "etkin olmayan tank dronları"
 
 #. ~ Use action friendly_msg for {'str': 'inactive tank drone'}.
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "The tank drone rolls out and begins acquiring targets."
 msgstr "Tank drone'u dışarı çıkar ve hedefleri belirlemeye başlar."
 
 #. ~ Use action hostile_msg for {'str': 'inactive tank drone'}.
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "The tank drone swivels its turret and aims directly at you.  Don your brown "
 "pants!"
@@ -111960,7 +111966,6 @@ msgstr ""
 
 #. ~ Description for {'str': 'inactive tank drone'}
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive Beagle Mini-Tank UGV.  Using this item involves placing "
 "it on the ground, loading the unit with the factory-loaded 5.56 rounds and "
@@ -111979,7 +111984,6 @@ msgstr ""
 "silah ve bomba atar ile tüm düşmanlara saldıracaktır."
 
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive chicken walker"
 msgid_plural "inactive chicken walkers"
 msgstr[0] "etkin olmayan tavuk yürüyüşçüsü"
@@ -111987,7 +111991,6 @@ msgstr[1] "etkin olmayan tavuk yürüyüşçüleri"
 
 #. ~ Use action friendly_msg for {'str': 'inactive chicken walker'}.
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "The chicken walker rises to its feet, sways away from you and begins "
 "surveying the area."
@@ -112001,7 +112004,6 @@ msgstr "Tavuk yürüyüşçüsü vızıldar ve doğrudan size nişan alır. Sipe
 
 #. ~ Description for {'str': 'inactive chicken walker'}
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive chicken walker.  Using this item involves placing it on "
 "the ground, loading the unit with the factory-loaded 5.56 rounds and 40mm "
@@ -112020,7 +112022,6 @@ msgstr ""
 "silah ve bomba atar ile tüm düşmanlara saldıracaktır."
 
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive tripod"
 msgid_plural "inactive tripods"
 msgstr[0] "etkin olmayan üçayak"
@@ -112028,7 +112029,6 @@ msgstr[1] "etkin olmayan üçayaklar"
 
 #. ~ Use action friendly_msg for {'str': 'inactive tripod'}.
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "The tribot rises to its feet and scans the area for contaminants."
 msgstr "Tribot ayağa kalkar ve kirleticiler için alanı tarar."
 
@@ -113134,7 +113134,6 @@ msgstr ""
 
 #. ~ Description for {'str': 'inactive tripod'}
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive Honda Regnal.  Using this item involves placing it on "
 "the ground, wondering how it fuels its flamethrower and turning it on.  If "
@@ -132919,7 +132918,7 @@ msgstr[1] "cep telefonları - Ekran ışığı"
 msgid "You stop lighting up the screen."
 msgstr "Ekranı aydınlatmayı bırakıyorsunuz."
 
-#: data/json/items/tool/electronics.json data/mods/Aftershock/items/tools.json
+#: data/json/items/tool/electronics.json
 msgid "control laptop"
 msgid_plural "control laptops"
 msgstr[0] "kontrol dizüstü bilgisayarı"
@@ -132950,11 +132949,9 @@ msgstr "Kulaklıkları taktınız ve müzik dinlemeye başladınız."
 msgid ""
 "A modified laptop, now capable of transmitting in the ultra-high frequencies"
 " utilized by robots.  Activate it to command robots from afar, or to toggle "
-"charging via UPS."
+"charging via UPS.  It will also automatically display any targeting data "
+"provided by friendly drones in the area."
 msgstr ""
-"Robotlar tarafından kullanılan ultra yüksek frekanslarda iletim yapabilen, "
-"modifiye edilmiş bir dizüstü bilgisayar. Robotlara uzaktan komut vermek veya"
-" UPS üzerinden şarjı açıp kapatmak için etkinleştirin."
 
 #: data/json/items/tool/electronics.json
 msgid "control laptop - lit screen"
@@ -133049,8 +133046,9 @@ msgstr[1] "bilek kontrol bilgisayarları"
 #: data/json/items/tool/electronics.json
 msgid ""
 "A modified wrist-mounted computer, now capable of transmitting in the ultra-"
-"high frequencies utilized by robots.  Activate it to command robots from "
-"afar or utilize its other features."
+"high frequencies utilized by robots, including drones which provide "
+"targeting info.  Activate it to command robots from afar or utilize its "
+"other features."
 msgstr ""
 
 #: data/json/items/tool/electronics.json
@@ -197116,16 +197114,12 @@ msgstr ""
 "kullanışlıdır, basit çıra kullanır."
 
 #. ~ Use action friendly_msg for {'str': 'broken chickenbot'}.
-#. ~ Use action friendly_msg for {'str': 'inactive chicken walker'}.
 #: data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "The chicken bot rolls out and begins acquiring targets."
 msgstr "Tavuk botu dışarı çıkar ve hedefleri belirlemeye başlar."
 
 #. ~ Use action hostile_msg for {'str': 'broken chickenbot'}.
-#. ~ Use action hostile_msg for {'str': 'inactive chicken walker'}.
 #: data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "The chicken bot swivels its turret and aims directly at you.  Don your brown"
 " pants!"
@@ -224340,40 +224334,6 @@ msgstr ""
 " sizi dost olarak tanımlayacak ve döner lazer toplarıyla tüm düşmanlara "
 "saldıracaktır."
 
-#. ~ Use action hostile_msg for {'str': 'inactive chicken walker'}.
-#: data/mods/Aftershock/items/inactiverobot.json
-msgid "The chicken walker whirrs and aims directly at you.  Take cover!"
-msgstr ""
-"Tavuk yürüyüşçüsü vızıldıyor ve doğrudan size nişan alıyor. Siper alın!"
-
-#. ~ Description for {'str': 'inactive chicken walker'}
-#: data/mods/Aftershock/items/inactiverobot.json
-msgid ""
-"This is an inactive chicken walker.  Using this item involves placing it on "
-"the ground, loading the unit with the factory-loaded 5.56 rounds and 40mm "
-"cartridge grenades in your inventory (if you wish to divide your ammunition,"
-" set aside whatever ammunition you do NOT want to give the robot) and "
-"turning it on.  If reprogrammed and rewired successfully the tank drone will"
-" then identify you as a friendly, roam around or follow you, and attack all "
-"enemies with a built-in firearm and grenade launcher."
-msgstr ""
-"Bu, etkin olmayan bir tavuk yürüyüşçüsüdür. Bu öğeyi kullanmak, onu yere "
-"yerleştirmeyi, birimi envanterinizdeki fabrika yüklü 5.56 mermileri ve 40mm "
-"kartuş bombaları ile yüklemeyi (cephanenizi bölmek isterseniz, robota vermek"
-" istemediğiniz cephaneyi ayırın) ve açmayı içerir. Başarıyla yeniden "
-"programlanır ve yeniden kablolanırsa, tank drone sizi dost olarak "
-"tanımlayacak, etrafta dolaşacak veya sizi takip edecek ve yerleşik ateşli "
-"silah ve bomba atar ile tüm düşmanlara saldıracaktır."
-
-#. ~ Use action hostile_msg for {'str': 'inactive tripod'}.
-#: data/mods/Aftershock/items/inactiverobot.json
-msgid ""
-"The tribot glowers down at you and ignites its flamethrower.  Turns out you "
-"hate the smell of napalm."
-msgstr ""
-"Tribot size aşağıdan sert bir bakış atıyor ve alev makinesini ateşliyor. "
-"Görünüşe göre napalm kokusundan nefret ediyorsunuz."
-
 #: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive sentinel-lx"
 msgid_plural "inactive sentinel-lxs"
@@ -224412,10 +224372,10 @@ msgstr "Kan tazısı drone'u yanlış programladınız; düşmanca!"
 #: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive bloodhound drone.  If successfully deployed, it will fly"
-" towards enemy targets and highlight them with a powerful spotlight."
+" towards enemy targets and highlight them with a powerful spotlight, along "
+"with marking targets that can be viewed if you possess a control laptop or "
+"similar device."
 msgstr ""
-"Bu, etkisiz bir kan tazısı drone'dur. Başarıyla konuşlandırıldığında, düşman"
-" hedeflere doğru uçar ve onları güçlü bir spot ışığı ile vurgular."
 
 #. ~ Description for {'str': 'inactive laser turret'}
 #: data/mods/Aftershock/items/inactiverobot.json
@@ -225427,16 +225387,6 @@ msgstr ""
 "portlarını, biyonik implantlara bağlanan dikkatlice şekillendirilmiş bir "
 "port ile değiştirir. Uygulandığında, bir öğeyi doğrudan biyonik güçle "
 "çalışacak şekilde dönüştürecektir."
-
-#. ~ Description for {'str': 'control laptop'}
-#: data/mods/Aftershock/items/tools.json
-msgid ""
-"A modified laptop, now capable of transmitting in the ultra-high frequencies"
-" utilized by robots.  Activate it to command robots from afar."
-msgstr ""
-"Robotlar tarafından kullanılan ultra yüksek frekanslarda iletim yapabilen "
-"modifiye edilmiş bir dizüstü bilgisayar. Robotları uzaktan komuta etmek için"
-" etkinleştirin."
 
 #: data/mods/Aftershock/items/vehicle_items.json
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -260155,11 +260105,9 @@ msgstr[1] "C.R.I.T. yüz maskeleri"
 msgid ""
 "This is the C.R.I.T. standard issue face mask, lined with Kevlar for extra "
 "protection.  A few filters provide decent environmental safety, but it was "
-"not intended for extended use.  It has a basic integrated HUD."
+"not intended for extended use.  It has a basic integrated HUD and can "
+"receive targeting data from friendly drones."
 msgstr ""
-"Bu, C.R.I.T. standart yüz maskesidir, ekstra koruma için Kevlar ile "
-"kaplanmıştır. Birkaç filtre çevresel güvenlik sağlar, ancak uzun süreli "
-"kullanım için tasarlanmamıştır. Temel bir entegre HUD'a sahiptir."
 
 #: data/mods/CRT_EXPANSION/items/crt_armor.json
 msgid "pair of C.R.I.T. boots"
@@ -260960,14 +260908,9 @@ msgid ""
 "electronics and lined with Kevlar for extra protection in order to keep "
 "one's head where it should be.  Various filters and other high tech wizardry"
 " allow for enhanced oxygen intake and safety even under bombardment.  It has"
-" an integrated HUD and the option to turn it on for more features."
+" an integrated HUD that can receive targeting data from friendly drones, and"
+" the option to turn it on for more features."
 msgstr ""
-"Bu, C.R.I.T. Özel Harekat modifiye gaz maskesidir, en üst düzey "
-"elektroniklerle donatılmış ve başınızı olması gereken yerde tutmak için "
-"ekstra koruma sağlayan Kevlar ile kaplanmıştır. Çeşitli filtreler ve diğer "
-"yüksek teknoloji büyüleri, bombardıman altında bile artırılmış oksijen alımı"
-" ve güvenlik sağlar. Entegre bir HUD'a sahiptir ve daha fazla özellik için "
-"açma seçeneği sunar."
 
 #: data/mods/CRT_EXPANSION/items/crt_toolarmor.json
 msgid "C.R.I.T. gasmask (on)"
@@ -302194,7 +302137,7 @@ msgstr "Renk yöneticisi"
 msgid "Active World Mods"
 msgstr "Aktif Dünya Modları"
 
-#: data/raw/keybindings/keybindings.json src/handle_action.cpp
+#: data/raw/keybindings/keybindings.json
 msgid "Cycle move mode (run/walk/crouch)"
 msgstr "Hareket modunu döndür (koş/yürü/çömel)"
 
@@ -302209,6 +302152,10 @@ msgstr "Koşmayı Değiştir"
 #: data/raw/keybindings/keybindings.json
 msgid "Toggle Crouch"
 msgstr "Çömelmeyi Değiştir"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Prone"
+msgstr ""
 
 #: data/raw/keybindings/keybindings.json
 msgid "Movement Mode Menu"
@@ -307111,6 +307058,10 @@ msgstr "Mekanın bacak gücünü hızlı bir yürüyüşe ayarlıyorsun."
 msgid "You nudge your steed into a steady trot."
 msgstr "Atını sabit bir tırısla ilerletiyorsun."
 
+#: src/avatar.cpp
+msgid "You get up from the ground."
+msgstr ""
+
 #: src/avatar.cpp src/character.cpp
 msgid "You stand up."
 msgstr "Ayağa kalkıyorsun."
@@ -307126,6 +307077,10 @@ msgstr "Mekanın bacak servo motorlarının gücünü maksimuma ayarlıyorsun."
 #: src/avatar.cpp
 msgid "You spur your steed into a gallop."
 msgstr "Atını dörtnala koşturuyorsun."
+
+#: src/avatar.cpp
+msgid "You get up from the ground and start running."
+msgstr ""
 
 #: src/avatar.cpp
 msgid "You stand up and start running."
@@ -307158,6 +307113,34 @@ msgstr "Binek hayvanını yürüyüşe yavaşlatıyorsun."
 #: src/avatar.cpp
 msgid "You start crouching."
 msgstr "Çömelmeye başlıyorsun."
+
+#: src/avatar.cpp
+msgid "You rise from prone to a crouch."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "Your mech cannot go prone."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "You cannot go prone while mounted."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "You cannot go prone while driving."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "You go prone from a crouching position."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "You drop to the ground."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "You are already prone."
+msgstr ""
 
 #. ~ %1$s: weapon name, %2$s: holster name
 #: src/avatar.cpp src/avatar_action.cpp
@@ -321607,6 +321590,14 @@ msgid "Crouch"
 msgstr "Çömel"
 
 #: src/handle_action.cpp
+msgid "Prone"
+msgstr ""
+
+#: src/handle_action.cpp
+msgid "Cycle move mode"
+msgstr ""
+
+#: src/handle_action.cpp
 msgid "Pfft, that spell is for COWARDS, and a Brawler like you is no coward!"
 msgstr ""
 "Pöh, bu büyü KORKAKLAR için, ve senin gibi bir Dövüşçü korkak değildir!"
@@ -324954,6 +324945,10 @@ msgstr "Vitaminler"
 #: src/init.cpp
 msgid "Activities"
 msgstr "Etkinlikler"
+
+#: src/init.cpp
+msgid "Item Group"
+msgstr ""
 
 #: src/init.cpp
 msgid "Materials"
@@ -338518,6 +338513,11 @@ msgstr "%s, bir LED yanıp söner ve ayrılır. Bunu Feds halletti."
 
 #: src/monattack.cpp
 #, c-format
+msgid "The %s scans the surrounding area."
+msgstr ""
+
+#: src/monattack.cpp
+#, c-format
 msgid "The %s takes your picture!"
 msgstr "%s, sizin fotoğrafınızı çekiyor!"
 
@@ -338527,16 +338527,16 @@ msgstr "…veritabanı bağlantısı kaybedildi!"
 
 #: src/monattack.cpp
 #, c-format
-msgid "a robotic voice boom, \"Citizen %s!\""
-msgstr "robotik bir ses yankılanıyor, \"Vatandaş %s!\""
+msgid "a robotic boice boom, \"Citizen %s!\""
+msgstr ""
 
 #: src/monattack.cpp
-msgid "\"Drop your gun!  Now!\""
-msgstr "\"Silahını bırak! Şimdi!\""
+msgid "\"Drop your gun! Now!\""
+msgstr ""
 
 #: src/monattack.cpp
-msgid "\"Drop your weapon!  Now!\""
-msgstr "\"Silahını bırak! Şimdi!\""
+msgid "\"Drop your weapon! Now!\""
+msgstr ""
 
 #: src/monattack.cpp
 #, c-format
@@ -348456,6 +348456,11 @@ msgstr "R"
 msgctxt "movement-type"
 msgid "C"
 msgstr "C"
+
+#: src/panels.cpp
+msgctxt "movement-type"
+msgid "P"
+msgstr ""
 
 #: src/panels.cpp
 msgctxt "movement-type"

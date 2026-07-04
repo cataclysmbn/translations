@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-07-03 20:24+0000\n"
+"POT-Creation-Date: 2026-07-04 20:56+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -7956,6 +7956,17 @@ msgid ""
 msgstr "ダッシュ呪文エフェクトを生物が現在使用中かを識別するダミータグ。このタグが残り続けている場合、それはバグ。"
 
 #: data/json/effects.json
+msgid "Eyebot Depleted"
+msgstr ""
+
+#. ~ Description of effect 'Eyebot Depleted'.
+#: data/json/effects.json
+msgid ""
+"Marks a non-friendly eyebot as having already summoned reinforcements, "
+"preventing it from doing so again.  This is a bug if you have it."
+msgstr ""
+
+#: data/json/effects.json
 msgid "Disarmed"
 msgstr ""
 
@@ -11942,6 +11953,13 @@ msgid ""
 "This food is <info>raw</info>, and will be <good>more nutritious</good> if "
 "cooked."
 msgstr "この食料は<info>生</info>であり、調理すると<good>栄養価が上昇</good>する。"
+
+#. ~ info for JSON flag 'DRONE_CAM'
+#: data/json/flags.json
+msgid ""
+"This item <good>allows you to view</good> the position of enemies "
+"<info>marked by friendly drones</info>."
+msgstr ""
 
 #. ~ info for JSON flag 'GNV_EFFECT'
 #: data/json/flags.json
@@ -55538,26 +55556,24 @@ msgid ""
 msgstr "壊れたM202A1タロン。外装は破損し、内部の流体は完全に抜かれている。もはや機能しない。解体して部品を回収できる。"
 
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "broken tribot"
 msgid_plural "broken tribots"
 msgstr[0] "壊れた トライボット"
 
 #. ~ Description for {'str': 'broken tribot'}
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "A broken tribot.  Now that its legs lie broken and immobile, the world seems"
 " a little less threatening.  Could be gutted for parts."
 msgstr "壊れたトライボット。脚が折れて動かなくなった今、世界の脅威が少し減ったように見える。部品を取り出すために解体できるかもしれない。"
 
-#: data/json/items/generic.json data/mods/Aftershock/items/inactiverobot.json
+#: data/json/items/generic.json
 msgid "broken tank drone"
 msgid_plural "broken tank drones"
 msgstr[0] "壊れた タンクドローン"
 
 #. ~ Description for {'str': 'broken tank drone'}
-#: data/json/items/generic.json data/mods/Aftershock/items/inactiverobot.json
+#: data/json/items/generic.json
 msgid ""
 "A broken tank drone.  Still looks intimidating despite being permanently "
 "inoperative, possibly due to the sheer size and mass.  Could be gutted for "
@@ -55566,14 +55582,12 @@ msgstr ""
 "壊れたタンクドローン。恒久的に動作不能であるにも関わらず、恐ろしい見た目を保っている。おそらく、その巨大なサイズと質量のせいだ。部品を取り出すために解体できるかもしれない。"
 
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "broken chickenbot"
 msgid_plural "broken chickenbots"
 msgstr[0] "壊れたチキンウォーカー"
 
 #. ~ Description for {'str': 'broken chickenbot'}
 #: data/json/items/generic.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "A broken chicken walker.  Still looks intimidating despite being permanently"
 " inoperative, possibly due to the sheer size and mass.  Could be gutted for "
@@ -59095,9 +59109,9 @@ msgid ""
 "This device is a head-mounted, UPS-powered, augmented reality scanning tool "
 "that projects a HUD onto a transparent screen that goes over your eye.  This"
 " particular visor has been illegally upgraded to use military GPS satellite "
-"connections, broadening its range."
+"connections, broadening its range and allowing it to receive targeting info "
+"from any nearby friendly drones."
 msgstr ""
-"ヘッドマウント型のARスキャンツール。UPS電源式。透明スクリーンにHUDを投影、スクリーンは目の前に配置され、視界を覆う。このバイザーは違法に改造され、軍用GPS衛星への接続が可能。探査範囲が拡大。"
 
 #: data/json/items/tool_armor.json
 msgid "upgraded scouting visor (NV Mode)"
@@ -96826,11 +96840,12 @@ msgstr "アイボットががっかりしたようにピーピーと音を立て
 #: data/json/items/corpses/inactive_bots.json
 msgid ""
 "This is an inactive eyebot.  Using this item involves turning it on and "
-"launching the UAV.  If reprogrammed and rewired successfully the eyebot will"
-" then keep watch for intruders.  An inhumanly strong user could also deploy "
-"it remotely by throwing it."
+"launching the UAV.  If programmed successfully the eyebot will then keep "
+"watch for intruders, marking targets that can be tracked if you possess a "
+"control laptop, military scouter, or similar equipment; or have a bionic "
+"infolink installed.  An inhumanly strong user could also deploy it remotely "
+"by throwing it."
 msgstr ""
-"これは機能を停止したアイボットだ。使用するには、まずアイボットを起動して飛ばす必要がある。適切に再プログラミングし、回路を交換すれば、このアイボットはお前のために侵入者を監視してくれる。非人間的なほど力の強い使用者であれば、力いっぱい遠くへ投げ、その先で作動させることも可能だ。"
 
 #: data/json/items/corpses/inactive_bots.json
 msgid "inactive cleaner bot"
@@ -97248,20 +97263,17 @@ msgstr ""
 "(LMES)である。内蔵武装はないが、重火器を装備すれば、スーツがそれを保持し、オープンコックピットから直接射撃が可能になる。現在は輸送のため非稼働状態となっている。使用するには装備を設置・起動し、適切に再プログラミングされているか、あるいは前任者によってロック解除が済んでいれば、搭乗して操縦することができる。"
 
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive tank drone"
 msgid_plural "inactive tank drones"
 msgstr[0] "タンクドローン [停止中]"
 
 #. ~ Use action friendly_msg for {'str': 'inactive tank drone'}.
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "The tank drone rolls out and begins acquiring targets."
 msgstr "タンクドローンが転がり出て、目標の捕捉を開始した。"
 
 #. ~ Use action hostile_msg for {'str': 'inactive tank drone'}.
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "The tank drone swivels its turret and aims directly at you.  Don your brown "
 "pants!"
@@ -97269,7 +97281,6 @@ msgstr "無人戦車が砲塔を回転させて、あなたに照準を合わせ
 
 #. ~ Description for {'str': 'inactive tank drone'}
 #: data/json/items/corpses/inactive_bots.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive Beagle Mini-Tank UGV.  Using this item involves placing "
 "it on the ground, loading the unit with the factory-loaded 5.56 rounds and "
@@ -97284,14 +97295,12 @@ msgstr ""
 "再配線されれば、タンクドローンはお前を味方だと認識し、徘徊するかお前に従い、内蔵の銃器とグレネードランチャーで全ての敵を攻撃するだろう。"
 
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive chicken walker"
 msgid_plural "inactive chicken walkers"
 msgstr[0] "チキンウォーカー [停止中]"
 
 #. ~ Use action friendly_msg for {'str': 'inactive chicken walker'}.
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "The chicken walker rises to its feet, sways away from you and begins "
 "surveying the area."
@@ -97304,7 +97313,6 @@ msgstr "チキンウォーカーが唸りを上げ、お前に直接 照準を�
 
 #. ~ Description for {'str': 'inactive chicken walker'}
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive chicken walker.  Using this item involves placing it on "
 "the ground, loading the unit with the factory-loaded 5.56 rounds and 40mm "
@@ -97319,14 +97327,12 @@ msgstr ""
 "再配線されれば、チキンウォーカーはお前を味方だと認識し、徘徊するかお前に従い、内蔵の銃器とグレネードランチャーで全ての敵を攻撃するだろう。"
 
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive tripod"
 msgid_plural "inactive tripods"
 msgstr[0] "トライボット [停止中]"
 
 #. ~ Use action friendly_msg for {'str': 'inactive tripod'}.
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "The tribot rises to its feet and scans the area for contaminants."
 msgstr "トライボットが立ち上がり、周囲を汚染物質の有無でスキャンし始めた。"
 
@@ -97339,7 +97345,6 @@ msgstr "トライボットがお前を睨みつけ、火炎放射器に点火し
 
 #. ~ Description for {'str': 'inactive tripod'}
 #: data/json/items/corpses/inactive_bots.json data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive Honda Regnal.  Using this item involves placing it on "
 "the ground, wondering how it fuels its flamethrower and turning it on.  If "
@@ -113659,7 +113664,7 @@ msgstr[0] "携帯電話－[画面点灯中]"
 msgid "You stop lighting up the screen."
 msgstr "携帯電話の画面を消した。"
 
-#: data/json/items/tool/electronics.json data/mods/Aftershock/items/tools.json
+#: data/json/items/tool/electronics.json
 msgid "control laptop"
 msgid_plural "control laptops"
 msgstr[0] "ロボット制御用ノートパソコン"
@@ -113689,8 +113694,9 @@ msgstr "イヤホンを耳に差し込み、音楽を聴き始めた。"
 msgid ""
 "A modified laptop, now capable of transmitting in the ultra-high frequencies"
 " utilized by robots.  Activate it to command robots from afar, or to toggle "
-"charging via UPS."
-msgstr "ロボットが使用する極超短波を送信できるよう改造されたノートパソコン。使用して遠隔のロボットを制御したり、UPSの充電設定を行える。"
+"charging via UPS.  It will also automatically display any targeting data "
+"provided by friendly drones in the area."
+msgstr ""
 
 #: data/json/items/tool/electronics.json
 msgid "control laptop - lit screen"
@@ -113775,8 +113781,9 @@ msgstr[0] "リスト制御コンピューター"
 #: data/json/items/tool/electronics.json
 msgid ""
 "A modified wrist-mounted computer, now capable of transmitting in the ultra-"
-"high frequencies utilized by robots.  Activate it to command robots from "
-"afar or utilize its other features."
+"high frequencies utilized by robots, including drones which provide "
+"targeting info.  Activate it to command robots from afar or utilize its "
+"other features."
 msgstr ""
 
 #: data/json/items/tool/electronics.json
@@ -168890,16 +168897,12 @@ msgid ""
 msgstr "これは、金属缶や類似の適切なサイズの容器から作られた 小型の即席 薪ストーブだ。食べ物の解凍や再加熱に役立つ。単純な着火材を使用する。"
 
 #. ~ Use action friendly_msg for {'str': 'broken chickenbot'}.
-#. ~ Use action friendly_msg for {'str': 'inactive chicken walker'}.
 #: data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid "The chicken bot rolls out and begins acquiring targets."
 msgstr "チキンボットが転がり出て、目標の捕捉を開始した。"
 
 #. ~ Use action hostile_msg for {'str': 'broken chickenbot'}.
-#. ~ Use action hostile_msg for {'str': 'inactive chicken walker'}.
 #: data/json/obsoletion/items.json
-#: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "The chicken bot swivels its turret and aims directly at you.  Don your brown"
 " pants!"
@@ -192146,31 +192149,6 @@ msgid ""
 msgstr ""
 "これは恐ろしい怪物だ。使用すると起動し、地面に置くと自ら付着して固定される。これは味覚以外は人肉食に等しい行為だ。プログラムの書き換えと配線に成功すれば、タレットはあなたを味方と認識し、回転式レーザー砲であらゆる敵を攻撃する。"
 
-#. ~ Use action hostile_msg for {'str': 'inactive chicken walker'}.
-#: data/mods/Aftershock/items/inactiverobot.json
-msgid "The chicken walker whirrs and aims directly at you.  Take cover!"
-msgstr "チキンウォーカーが唸る音を立てて、あなたに照準を合わせた！ 隠れろ！"
-
-#. ~ Description for {'str': 'inactive chicken walker'}
-#: data/mods/Aftershock/items/inactiverobot.json
-msgid ""
-"This is an inactive chicken walker.  Using this item involves placing it on "
-"the ground, loading the unit with the factory-loaded 5.56 rounds and 40mm "
-"cartridge grenades in your inventory (if you wish to divide your ammunition,"
-" set aside whatever ammunition you do NOT want to give the robot) and "
-"turning it on.  If reprogrammed and rewired successfully the tank drone will"
-" then identify you as a friendly, roam around or follow you, and attack all "
-"enemies with a built-in firearm and grenade launcher."
-msgstr ""
-"停止状態のチキンウォーカーだ。使用すると地面に設置し、所持している工場弾薬の5.56mm弾と40mmカートリッジグレネードが装填され、起動する。（弾薬を分ける場合は、ロボットに渡したくない弾薬を一旦地面に置いておけ）。プログラムの書き換えと配線に成功すると、チキンウォーカーはあなたを味方と認識し、追従もしくは周囲の探索を開始。内蔵銃器とグレネードランチャーであらゆる敵を攻撃する。"
-
-#. ~ Use action hostile_msg for {'str': 'inactive tripod'}.
-#: data/mods/Aftershock/items/inactiverobot.json
-msgid ""
-"The tribot glowers down at you and ignites its flamethrower.  Turns out you "
-"hate the smell of napalm."
-msgstr "トライボットがあなたをにらみつけ、火炎放射器に点火した。どうやらあなたはナパームの臭いが大嫌いなようだ。"
-
 #: data/mods/Aftershock/items/inactiverobot.json
 msgid "inactive sentinel-lx"
 msgid_plural "inactive sentinel-lxs"
@@ -192205,8 +192183,10 @@ msgstr "プログラムミスだ。ブラックハウンド・ドローンが敵
 #: data/mods/Aftershock/items/inactiverobot.json
 msgid ""
 "This is an inactive bloodhound drone.  If successfully deployed, it will fly"
-" towards enemy targets and highlight them with a powerful spotlight."
-msgstr "停止中のブラックハウンド・ドローンだ。展開に成功すると敵めがけて飛び立ち、強力なスポットライトで対象を照らしだす。"
+" towards enemy targets and highlight them with a powerful spotlight, along "
+"with marking targets that can be viewed if you possess a control laptop or "
+"similar device."
+msgstr ""
 
 #. ~ Description for {'str': 'inactive laser turret'}
 #: data/mods/Aftershock/items/inactiverobot.json
@@ -193027,13 +193007,6 @@ msgid ""
 "bionic power."
 msgstr ""
 "電子機器の標準的な電源接続やバッテリーポートを、義体に接続するよう精密に成形されたポートに置き換える装置だ。適用すると、そのアイテムは義体電力から直接稼働するように変換される。"
-
-#. ~ Description for {'str': 'control laptop'}
-#: data/mods/Aftershock/items/tools.json
-msgid ""
-"A modified laptop, now capable of transmitting in the ultra-high frequencies"
-" utilized by robots.  Activate it to command robots from afar."
-msgstr "改造されたラップトップだ。ロボットが利用する超高周波帯で通信できるようになっている。これを作動させると、ロボットを遠隔で指揮できる。"
 
 #: data/mods/Aftershock/items/vehicle_items.json
 #: data/mods/Aftershock/vehicles/vehicle_parts.json
@@ -226556,9 +226529,9 @@ msgstr[0] "C.R.I.T.フェイスマスク"
 msgid ""
 "This is the C.R.I.T. standard issue face mask, lined with Kevlar for extra "
 "protection.  A few filters provide decent environmental safety, but it was "
-"not intended for extended use.  It has a basic integrated HUD."
+"not intended for extended use.  It has a basic integrated HUD and can "
+"receive targeting data from friendly drones."
 msgstr ""
-"これはC.R.I.T.標準装備のフェイスマスクで、ケブラーで裏地が施され、追加の保護を提供する。いくつかのフィルターでまずまずの環境安全性は得られるが、長時間の使用は想定されていない。基本的なHUDが内蔵されている。"
 
 #: data/mods/CRT_EXPANSION/items/crt_armor.json
 msgid "pair of C.R.I.T. boots"
@@ -227214,9 +227187,9 @@ msgid ""
 "electronics and lined with Kevlar for extra protection in order to keep "
 "one's head where it should be.  Various filters and other high tech wizardry"
 " allow for enhanced oxygen intake and safety even under bombardment.  It has"
-" an integrated HUD and the option to turn it on for more features."
+" an integrated HUD that can receive targeting data from friendly drones, and"
+" the option to turn it on for more features."
 msgstr ""
-"これはC.R.I.T.特殊部隊が改修したガスマスクで、最先端の電子機器が内蔵されている。頭をあるべき場所に留めるため、追加の保護としてケブラーの裏地が施されている。様々なフィルターと魔法のようなハイテク仕掛けにより、強化された酸素取り込みと爆撃下でも安全性が確保される。統合されたHUDがあり、電源を入れることでさらなる機能を利用できる。"
 
 #: data/mods/CRT_EXPANSION/items/crt_toolarmor.json
 msgid "C.R.I.T. gasmask (on)"
@@ -262721,7 +262694,7 @@ msgstr "色設定"
 msgid "Active World Mods"
 msgstr "MOD確認"
 
-#: data/raw/keybindings/keybindings.json src/handle_action.cpp
+#: data/raw/keybindings/keybindings.json
 msgid "Cycle move mode (run/walk/crouch)"
 msgstr "切替/移動方法(駆足/歩行/屈む)"
 
@@ -262736,6 +262709,10 @@ msgstr "切替/駆足"
 #: data/raw/keybindings/keybindings.json
 msgid "Toggle Crouch"
 msgstr "切替/屈む"
+
+#: data/raw/keybindings/keybindings.json
+msgid "Toggle Prone"
+msgstr ""
 
 #: data/raw/keybindings/keybindings.json
 msgid "Movement Mode Menu"
@@ -267533,6 +267510,10 @@ msgstr "メックの脚部出力を少し上げた。"
 msgid "You nudge your steed into a steady trot."
 msgstr "動物に刺激を与えて少しだけ速度を上げた。 "
 
+#: src/avatar.cpp
+msgid "You get up from the ground."
+msgstr ""
+
 #: src/avatar.cpp src/character.cpp
 msgid "You stand up."
 msgstr "立ち上がった。"
@@ -267548,6 +267529,10 @@ msgstr "メックの脚部サーボの出力を最大にした。"
 #: src/avatar.cpp
 msgid "You spur your steed into a gallop."
 msgstr "動物に刺激を与えて速度を上げた。"
+
+#: src/avatar.cpp
+msgid "You get up from the ground and start running."
+msgstr ""
 
 #: src/avatar.cpp
 msgid "You stand up and start running."
@@ -267580,6 +267565,34 @@ msgstr "動物をなだめて速度を落とした。"
 #: src/avatar.cpp
 msgid "You start crouching."
 msgstr "屈んで歩き始めた。"
+
+#: src/avatar.cpp
+msgid "You rise from prone to a crouch."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "Your mech cannot go prone."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "You cannot go prone while mounted."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "You cannot go prone while driving."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "You go prone from a crouching position."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "You drop to the ground."
+msgstr ""
+
+#: src/avatar.cpp
+msgid "You are already prone."
+msgstr ""
 
 #. ~ %1$s: weapon name, %2$s: holster name
 #: src/avatar.cpp src/avatar_action.cpp
@@ -281671,6 +281684,14 @@ msgid "Crouch"
 msgstr "屈む"
 
 #: src/handle_action.cpp
+msgid "Prone"
+msgstr ""
+
+#: src/handle_action.cpp
+msgid "Cycle move mode"
+msgstr ""
+
+#: src/handle_action.cpp
 msgid "Pfft, that spell is for COWARDS, and a Brawler like you is no coward!"
 msgstr "ちっ、そのスペルは臆病者のためのものだ。お前のような格闘家に臆病者はいない！"
 
@@ -284932,6 +284953,10 @@ msgstr "栄養"
 #: src/init.cpp
 msgid "Activities"
 msgstr "活動"
+
+#: src/init.cpp
+msgid "Item Group"
+msgstr ""
 
 #: src/init.cpp
 msgid "Materials"
@@ -298166,6 +298191,11 @@ msgstr "%sはLEDを照らすと立ち去った。連邦捜査官がこれを確�
 
 #: src/monattack.cpp
 #, c-format
+msgid "The %s scans the surrounding area."
+msgstr ""
+
+#: src/monattack.cpp
+#, c-format
 msgid "The %s takes your picture!"
 msgstr "%sがあなたの写真を撮った！"
 
@@ -298175,16 +298205,16 @@ msgstr "…データベースに接続できません！"
 
 #: src/monattack.cpp
 #, c-format
-msgid "a robotic voice boom, \"Citizen %s!\""
-msgstr "[機械音声]「%s市民！」"
+msgid "a robotic boice boom, \"Citizen %s!\""
+msgstr ""
 
 #: src/monattack.cpp
-msgid "\"Drop your gun!  Now!\""
-msgstr "「即座に銃を捨てろ！」"
+msgid "\"Drop your gun! Now!\""
+msgstr ""
 
 #: src/monattack.cpp
-msgid "\"Drop your weapon!  Now!\""
-msgstr "「即座に武器を捨てろ！」"
+msgid "\"Drop your weapon! Now!\""
+msgstr ""
 
 #: src/monattack.cpp
 #, c-format
@@ -307648,6 +307678,11 @@ msgstr "走る"
 msgctxt "movement-type"
 msgid "C"
 msgstr "座る"
+
+#: src/panels.cpp
+msgctxt "movement-type"
+msgid "P"
+msgstr ""
 
 #: src/panels.cpp
 msgctxt "movement-type"
