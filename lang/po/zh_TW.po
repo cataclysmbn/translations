@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-07-07 01:54+0000\n"
+"POT-Creation-Date: 2026-07-08 16:18+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -3206,8 +3206,8 @@ msgstr "鑽石角膜"
 #: data/json/bionics.json
 msgid ""
 "Your vision is greatly enhanced, giving you a +2 bonus to perception and "
-"fixing any vision problems."
-msgstr "你的视觉被生化插件大幅强化了，感知+2，并修复任何视力问题。"
+"fixing any vision problems short of total blindness."
+msgstr "你的视觉被生化插件大幅强化了，感知+2，并修复除完全失明之外的任何视力问题。"
 
 #: data/json/bionics.json
 msgid "Telescopic Lenses"
@@ -3219,9 +3219,9 @@ msgid ""
 "The lenses in your eyes have been surgically removed and replaced with an "
 "array of high-powered, auto-focusing lenses.  They function as integrated "
 "binoculars, letting you see much farther than before, and any mundane vision"
-" problems you might have had are now gone."
+" problems you might have had are now gone, including blindness."
 msgstr ""
-"你眼球内的大部分组织已经被手术移除，取而代之的是一对高倍率的自动对焦人造眼球。它们就像一副集成在你眼睛上的双筒望远镜，让你比以前看得更远，你以往拥有的视力问题都消失了。"
+"你眼球内的晶状体已通过手术摘除，并被替换为一组高倍率的自动对焦镜片。它们的功能相当于内置的双筒望远镜，让你看得比以前远得多。同时，你之前可能患有的包括失明在内的任何普通视力问题，现在都已不复存在。"
 
 #: data/json/bionics.json
 msgid "Facial Distortion"
@@ -8102,7 +8102,7 @@ msgstr "你所站的地方不太穩固, 站在這邊戰鬥變得更為困難。"
 msgid "You try to keep your balance."
 msgstr "你試著保持平衡。"
 
-#: data/json/effects.json
+#: data/json/effects.json data/json/mutations/mutations.json
 msgid "Blind"
 msgstr "失明"
 
@@ -18162,9 +18162,10 @@ msgstr "你已經點燃了引信, 跑!"
 #. ~ Use action sound_msg for {'str': 'active scrambler grenade'}.
 #. ~ Use action sound_msg for {'str': 'active tear gas payload'}.
 #. ~ Use action sound_msg for {'str': 'active makeshift grenade'}.
+#. ~ Use action sound_msg for armed Kabura-ya antipersonnel device.
 #: data/json/not_really_obsolete.json data/json/items/tool/explosives.json
 #: data/json/items/tool/misc.json data/json/obsoletion/items.json
-#: src/iuse_actor.cpp
+#: data/mods/Aftershock/items/grenades.json src/iuse_actor.cpp
 msgid "Tick."
 msgstr "滴答。"
 
@@ -114268,8 +114269,9 @@ msgstr[0] "閃光彈"
 #. ~ Use action menu_text for {'str': 'scrambler grenade'}.
 #. ~ Use action menu_text for {'str': 'tear gas payload'}.
 #. ~ Use action menu_text for {'str': 'makeshift grenade'}.
+#. ~ Use action menu_text for Kabura-ya antipersonnel device.
 #: data/json/items/tool/explosives.json data/json/items/tool/misc.json
-#: data/json/obsoletion/items.json
+#: data/json/obsoletion/items.json data/mods/Aftershock/items/grenades.json
 msgid "Pull pin"
 msgstr "拉開插銷"
 
@@ -138227,8 +138229,9 @@ msgstr "黏液"
 #: data/json/mutations/mutations.json
 msgid ""
 "Your body is coated with a fine slime.  Protects from long-term effects of "
-"acid, though not short-term ones.  Greatly increases wet benefits."
-msgstr "你的身上粘粘糊糊的，走过的地方都有痕迹。大大增加湿身心情加成。"
+"acid, though not short-term ones. It also protects from other sources of "
+"slime.  Greatly increases wet benefits."
+msgstr "你的身体被一层细腻的粘液包裹。能保护你免受酸液的长期影响，但无法抵御短期影响。它还能防止你沾染其他来源的粘液。大幅增加湿润状态的增益效果。"
 
 #: data/json/mutations/mutations.json
 msgid "Viscous"
@@ -139786,6 +139789,14 @@ msgid ""
 "will select at game start.)"
 msgstr ""
 "你已尽己所能为应对麻烦做好了准备，尽管在世界末日这可能还远远不够。除了你职业初始可能自带的武器外，你开局还会获得一把随机选择的普通手枪和一些备用弹匣。（注意：你在角色创建界面看到的物品，并不代表游戏开始时实际随机抽取的物品。）"
+
+#. ~ Description for {'str': 'Blind'}
+#: data/json/mutations/mutations.json
+msgid ""
+"You're totally blind, requiring you to cautiously feel out your "
+"surroundings.  Prevents crafting and construction aside from simple tasks "
+"that can be done blindfolded, and hinders many other actions as well."
+msgstr "你完全失明了，只能小心翼翼地摸索周围的环境。除了蒙着眼睛也能完成的简单任务外，你将无法进行制造和建造，许多其他行动也会受到阻碍。"
 
 #: data/json/npcs/BG_traits.json
 #: data/mods/Aftershock/npcs/Backgrounds/BG_traits_afs.json
@@ -190352,6 +190363,21 @@ msgstr "动作优化（4）"
 msgid "You move with machine-guided precision."
 msgstr "你的动作有如机器一般精准。"
 
+#: data/mods/Aftershock/effects.json
+msgid "Isohypsa Overwatch"
+msgstr "伊索希普萨监视"
+
+#. ~ Description of effect 'Isohypsa Overwatch'.
+#: data/mods/Aftershock/effects.json
+msgid ""
+"FE09-    A3 65 FF    ATT $#17A\n"
+"FE0B-    4E          JMP $5010\n"
+"FE0D-    A5 24       DEX $#05\n"
+msgstr ""
+"FE09-    A3 65 FF    ATT $#17A\n"
+"FE0B-    4E          JMP $5010\n"
+"FE0D-    A5 24       DEX $#05\n"
+
 #: data/mods/Aftershock/field_type.json
 msgid "foamcrete"
 msgstr "泡沫水泥"
@@ -191356,6 +191382,30 @@ msgid ""
 msgstr "一个损坏的高级机器人，内置了一把EMP发射器。现在安静的散在地上构不成威胁了。可以拆解得到部件。"
 
 #: data/mods/Aftershock/items/corpses.json
+msgid "broken Isohypsa"
+msgid_plural "broken Isohypsa"
+msgstr[0] "伊索希普萨（损坏）"
+
+#. ~ Description for {'str_sp': 'broken Isohypsa'}
+#: data/mods/Aftershock/items/corpses.json
+msgid ""
+"The broken shell of an Isohypsa drone coordinator.  Most of its sensors and "
+"AI units are charred beyond any repair."
+msgstr "一台伊索希普萨协调无人机的破损外壳。它的大部分传感器和AI单元都已烧焦，无法修复。"
+
+#: data/mods/Aftershock/items/corpses.json
+msgid "broken Kabura-ya"
+msgid_plural "broken Kabura-ya"
+msgstr[0] "鸣镝（损坏）"
+
+#. ~ Description for {'str_sp': 'broken Kabura-ya'}
+#: data/mods/Aftershock/items/corpses.json
+msgid ""
+"A broken Kabura-ya drone.  Could be disassembled for a meager amount of "
+"parts."
+msgstr "一台损坏的鸣镝无人机。可以拆解出少量零件。"
+
+#: data/mods/Aftershock/items/corpses.json
 msgid "broken disarmed military bot"
 msgid_plural "broken disarmed military bots"
 msgstr[0] "損毀的解除武裝軍用機器人"
@@ -191388,6 +191438,40 @@ msgid ""
 "This stitched together abomination in human form lies still and waiting for "
 "you to give it the spark of life.  In all likelihood you are the monster."
 msgstr "这个缝合而成可憎人形怪物静止不动，等待着你赋予它生命的火花。十之八九，你才是那个怪物。"
+
+#: data/mods/Aftershock/items/grenades.json
+msgid "Kabura-ya antipersonnel device"
+msgid_plural "Kabura-ya antipersonnel devices"
+msgstr[0] "鸣镝反步兵装置"
+
+#. ~ Use action msg for Kabura-ya antipersonnel device.
+#: data/mods/Aftershock/items/grenades.json
+msgid "You activate the device."
+msgstr "你激活了该装置。"
+
+#. ~ Description for Kabura-ya antipersonnel device
+#: data/mods/Aftershock/items/grenades.json
+msgid ""
+"A tiny plastic explosive meant to be installed in a Kabura-ya drone.  "
+"Explodes 3 turns after activation."
+msgstr "一种本应用于安装在鸣镝无人机内的小型塑胶炸药。激活后 3 回合爆炸。"
+
+#: data/mods/Aftershock/items/grenades.json
+msgid "armed Kabura-ya antipersonnel device"
+msgid_plural "armed Kabura-ya antipersonnel devices"
+msgstr[0] "鸣镝反步兵装置（无保险）"
+
+#. ~ Use action no_deactivate_msg for armed Kabura-ya antipersonnel device.
+#: data/mods/Aftershock/items/grenades.json
+msgid "You've already activated the %s; try throwing it instead."
+msgstr "你已经激活了 %s，试着把它扔出去吧。"
+
+#. ~ Description for armed Kabura-ya antipersonnel device
+#: data/mods/Aftershock/items/grenades.json
+msgid ""
+"A tiny plastic explosive meant to be installed within a Kabura-ya drone.  It"
+" is on the verge of exploding."
+msgstr "一种本应用于安装在鸣镝无人机内的小型塑胶炸药。它即将爆炸。"
 
 #: data/mods/Aftershock/items/grenades.json
 msgid "electroshock grenade"
@@ -191479,6 +191563,31 @@ msgid ""
 "similar device."
 msgstr ""
 "这是一部未激活的猎犬无人机。当成功部署时，它会飞向敌对目标并用它的高功率探照灯照射目标。如果你拥有遥控用笔记本电脑或类似设备，即可查看这些目标。"
+
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid "inactive Kabura-ya drone"
+msgid_plural "inactive Kabura-ya drones"
+msgstr[0] "鸣镝无人机（关）"
+
+#. ~ Use action friendly_msg for {'str': 'inactive Kabura-ya drone'}.
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid "The Kabura-ya emits a short IFF chirp as you throw it."
+msgstr "当你掷出鸣镝无人机时，它发出了一声短促的敌我识别蜂鸣。"
+
+#. ~ Use action hostile_msg for {'str': 'inactive Kabura-ya drone'}.
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid "The Kabura-ya emits a warning whine after your botched throw!"
+msgstr "由于你投掷失误，鸣镝无人机发出了一声刺耳的警告哀鸣！"
+
+#. ~ Description for {'str': 'inactive Kabura-ya drone'}
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid ""
+"An inactive Kabura-ya hunter drone, folded for ease of storage.  If "
+"deployed, it will seek and fly to the closest enemy before detonating.  "
+"Unlike most robots, its activation depends on a successful throw, and not on"
+" your computer skill."
+msgstr ""
+"一台未激活的鸣镝猎杀无人机，已折叠以便于存放。部署后，它会寻找并飞向最近的敌人然后引爆。与大多数机器人不同，它的激活取决于一次成功的投掷，而不是你的电脑技能。"
 
 #. ~ Description for {'str': 'inactive laser turret'}
 #: data/mods/Aftershock/items/inactiverobot.json
@@ -193038,6 +193147,15 @@ msgstr "武器測試射擊場"
 msgid "Armory Entrance"
 msgstr "軍械庫入口"
 
+#: data/mods/Aftershock/maps/overmap_map_extras.json
+msgid "Wraitheon Droneswarm"
+msgstr "幽灵怪无人机群"
+
+#. ~ Description for {'str': 'Wraitheon Droneswarm'}
+#: data/mods/Aftershock/maps/overmap_map_extras.json
+msgid "A group of combat drones."
+msgstr "一群战斗无人机。"
+
 #: data/mods/Aftershock/maps/overmap_terrain.json
 msgid "PrepNet orchard"
 msgstr "生化先驱者苹果园"
@@ -193398,6 +193516,39 @@ msgid ""
 "An advanced robot still functioning due to its internal fusion core.  This "
 "model is furnished with a powerful railgun."
 msgstr "一台使用内置能源核心供电并依旧活跃的高级机器人。这个机器人装备有一把威力强大的轨道炮。"
+
+#: data/mods/Aftershock/mobs/robots.json
+msgid "Wraitheon Isohypsa"
+msgid_plural "Wraitheon Isohypsas"
+msgstr[0] "幽灵怪伊索希普萨"
+
+#. ~ Description for {'str': 'Wraitheon Isohypsa'}
+#: data/mods/Aftershock/mobs/robots.json
+msgid ""
+"A bulky aerial drone with an advanced AI overwatch unit and a bulbous "
+"carapace mostly dedicated to mounting high-resolution sensors.  As an "
+"autonomous drone control platform, the Isohypsa is principally meant to "
+"coordinate and enhance the combat capabilities of simpler Wraitheon robots "
+"in lieu of human operators."
+msgstr ""
+"一种笨重的空中无人机，配备了先进的AI监视单元和球状外壳，主要用于安装高分辨率传感器。作为一个自主无人机控制平台，伊索希普萨主要用于代替人类操作员，协调并增强简单的幽灵怪机器人的战斗能力。"
+
+#. ~ Attack message of monster "{'str': 'Wraitheon Isohypsa'}"'s spell "None"
+#: data/mods/Aftershock/mobs/robots.json
+msgid "The Isohypsa emits a rapid sequence of sibilant tones!"
+msgstr "伊索希普萨发出了一连串急促的嘶嘶声！"
+
+#: data/mods/Aftershock/mobs/robots.json
+msgid "Wraitheon Kabura-ya"
+msgid_plural "Wraitheon Kabura-yas"
+msgstr[0] "幽灵怪鸣镝"
+
+#. ~ Description for {'str': 'Wraitheon Kabura-ya'}
+#: data/mods/Aftershock/mobs/robots.json
+msgid ""
+"A microplane drone designed to seek enemy personnel before detonating at "
+"close range."
+msgstr "一种微型飞机无人机，旨在搜寻敌方人员并在近距离引爆。"
 
 #: data/mods/Aftershock/mobs/robots.json
 msgid "EMP-projecting robot"
@@ -196820,6 +196971,15 @@ msgid ""
 "Allows you to swap places with a previously existing holographic image of "
 "yourself.  If the universe itself can't tell you apart, who could?"
 msgstr "让你能够和已存在自身的全息投影交换位置。如果宇宙本身无法区分你们，谁还能呢？"
+
+#: data/mods/Aftershock/spells/monster_spells.json
+msgid "Isohypsa Coordination"
+msgstr "伊索希普萨协调"
+
+#. ~ Description for {'str': 'Isohypsa Coordination'}
+#: data/mods/Aftershock/spells/monster_spells.json
+msgid "Increases the speed of simpler Wraitheon drones."
+msgstr "提升简单的幽灵怪无人机的速度。"
 
 #: data/mods/Aftershock/spells/spells.json
 msgid "Aftershock Extra Turn"
@@ -274445,6 +274605,15 @@ msgstr "书籍数量："
 msgid "Written in: %s\n"
 msgstr "写于：%s\n"
 
+#: src/crafting_gui.cpp
+msgid "Autolearn when all are met:\n"
+msgstr "当满足以下所有条件时自动学习：\n"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "  Skill %s at level %s\n"
+msgstr "技能 %s 达到 %s 级\n"
+
 #: src/crafting_gui.cpp src/ui.cpp
 msgid "Fast scroll up"
 msgstr "快速向上滚动列表"
@@ -285286,6 +285455,10 @@ msgid "Enchantment Values"
 msgstr "附魔数值"
 
 #: src/init.cpp
+msgid "Enchantment Flags"
+msgstr "附魔标签"
+
+#: src/init.cpp
 msgid "Transformations"
 msgstr "轉換"
 
@@ -286149,12 +286322,6 @@ msgstr "* 当前储存条件 <neutral>部分地</neutral> 保护此物品免受�
 #: src/item.cpp
 msgid "* It seems that deep freezing <good>killed all parasites</good>."
 msgstr "* 看起來深度的冷凍<good>殺死了所有寄生蟲</good>。"
-
-#: src/item.cpp
-msgid ""
-"This food has started to <neutral>rot</neutral>, but <info>your bionic "
-"digestion can tolerate it</info>."
-msgstr "這個食物已經開始<neutral>腐敗</neutral>, 但<info>你的生化消化系統還可以忍受</info>。"
 
 #: src/item.cpp
 msgid ""
@@ -298450,8 +298617,8 @@ msgstr "... 資料庫連線失敗！"
 
 #: src/monattack.cpp
 #, c-format
-msgid "a robotic boice boom, \"Citizen %s!\""
-msgstr "一阵机械的声音轰鸣道：\"市民，%s！\""
+msgid "a robotic voice boom, \"Citizen %s!\""
+msgstr "一個響亮的機械語音：\"公民，%s！\""
 
 #: src/monattack.cpp
 msgid "\"Drop your gun! Now!\""

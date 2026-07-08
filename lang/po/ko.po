@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-07-07 18:42+0000\n"
+"POT-Creation-Date: 2026-07-08 16:18+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -3539,8 +3539,8 @@ msgstr "다이아몬드 각막"
 #: data/json/bionics.json
 msgid ""
 "Your vision is greatly enhanced, giving you a +2 bonus to perception and "
-"fixing any vision problems."
-msgstr "시력이 크게 향상되어, 지각력에 +2 보너스를 받고 기존의 시각 문제가 제거됩니다."
+"fixing any vision problems short of total blindness."
+msgstr "시력이 크게 향상되어, 지각력에 +2 보너스를 받고 완전한 맹인이 아닌 한 모든 시각적 문제가 제거됩니다."
 
 #: data/json/bionics.json
 msgid "Telescopic Lenses"
@@ -3552,10 +3552,10 @@ msgid ""
 "The lenses in your eyes have been surgically removed and replaced with an "
 "array of high-powered, auto-focusing lenses.  They function as integrated "
 "binoculars, letting you see much farther than before, and any mundane vision"
-" problems you might have had are now gone."
+" problems you might have had are now gone, including blindness."
 msgstr ""
 "눈의 각막이 수술적으로 제거되고, 고성능 자동 초점 렌즈로 대체되었습니다. 내장 망원경처럼 작동하여 기존보다 더 먼 곳을 볼 수 있고, "
-"기존에 갖고 있던 평범한 시각적 문제들을 해결해줍니다."
+"기존의 평범한 시각적 문제가 맹인 상태를 포함해 전부 제거됩니다."
 
 #: data/json/bionics.json
 msgid "Facial Distortion"
@@ -8554,7 +8554,7 @@ msgstr "바닥이 불안정해, 이곳에 서서 싸우기 힘들 것 같습니�
 msgid "You try to keep your balance."
 msgstr "균형을 잡으려 노력합니다."
 
-#: data/json/effects.json
+#: data/json/effects.json data/json/mutations/mutations.json
 msgid "Blind"
 msgstr "눈멂"
 
@@ -18711,9 +18711,10 @@ msgstr "이미 뇌관을 작동시켰습니다. 도망쳐요!"
 #. ~ Use action sound_msg for {'str': 'active scrambler grenade'}.
 #. ~ Use action sound_msg for {'str': 'active tear gas payload'}.
 #. ~ Use action sound_msg for {'str': 'active makeshift grenade'}.
+#. ~ Use action sound_msg for armed Kabura-ya antipersonnel device.
 #: data/json/not_really_obsolete.json data/json/items/tool/explosives.json
 #: data/json/items/tool/misc.json data/json/obsoletion/items.json
-#: src/iuse_actor.cpp
+#: data/mods/Aftershock/items/grenades.json src/iuse_actor.cpp
 msgid "Tick."
 msgstr "틱."
 
@@ -118636,8 +118637,9 @@ msgstr[0] "섬광탄"
 #. ~ Use action menu_text for {'str': 'scrambler grenade'}.
 #. ~ Use action menu_text for {'str': 'tear gas payload'}.
 #. ~ Use action menu_text for {'str': 'makeshift grenade'}.
+#. ~ Use action menu_text for Kabura-ya antipersonnel device.
 #: data/json/items/tool/explosives.json data/json/items/tool/misc.json
-#: data/json/obsoletion/items.json
+#: data/json/obsoletion/items.json data/mods/Aftershock/items/grenades.json
 msgid "Pull pin"
 msgstr "핀 뽑기"
 
@@ -118770,7 +118772,7 @@ msgstr[0] "수제 최루탄 (켜짐)"
 #. ~ Use action no_deactivate_msg for {'str': 'active makeshift gas grenade'}.
 #: data/json/items/tool/explosives.json
 msgid "You've already armed the %s, try throwing it instead."
-msgstr "이미 %s은 작동되었습니다. 던져야 한다."
+msgstr "이미 %s은 작동되었습니다. 던져버리세요."
 
 #. ~ Description for {'str': 'active makeshift gas grenade'}
 #: data/json/items/tool/explosives.json
@@ -118778,7 +118780,7 @@ msgid ""
 "This homemade canister of poison gas has been unsealed, and is (or will "
 "shortly be) expelling highly toxic gas.  You should consider getting rid of "
 "it soon."
-msgstr "수제 독가스의 통은 봉인되지 않았으며, 곧 독가스를 배출할 것이다. 이것을 곧 없애는 것을 고려해야 한다."
+msgstr "수제 최루탄의 봉인이 뜯겼으며, 곧 유독성 가스를 뿜어낼 것입니다. 최대한 빨리 처리하세요."
 
 #: data/json/items/tool/explosives.json
 msgid "grenade"
@@ -143701,9 +143703,11 @@ msgstr "끈적함"
 #: data/json/mutations/mutations.json
 msgid ""
 "Your body is coated with a fine slime.  Protects from long-term effects of "
-"acid, though not short-term ones.  Greatly increases wet benefits."
+"acid, though not short-term ones. It also protects from other sources of "
+"slime.  Greatly increases wet benefits."
 msgstr ""
-"전신이 얇은 점액으로 덮여있습니다. 장기적인 강산 피해를 막아주지만, 단기적인 피해는 막아주지 않습니다. 젖음 보너스를 크게 높입니다."
+"전신이 얇은 점액으로 덮여있습니다. 다른 종류의 점액으로부터 보호받고 강산의 장기적 효과를 막아주지만, 강산으로 인한 단기적 효과는 "
+"막아주지 않습니다. 젖음 보너스를 크게 높입니다."
 
 #: data/json/mutations/mutations.json
 msgid "Viscous"
@@ -145342,6 +145346,16 @@ msgstr ""
 "당신은 항상 사건사고에 대비해왔지만, 세상의 종말에도 과연 그 준비가 통할지는 미지수입니다. 직업 선택에 의해 얻는 무기와 더불어, "
 "무작위로 선택된 일반 권총 및 여분 탄창 몇 개를 갖고 시작합니다. (메모: 캐릭터 생성 창에서 보이는 것은 게임 시작 시 받는 것에 "
 "반영되지 않습니다.)"
+
+#. ~ Description for {'str': 'Blind'}
+#: data/json/mutations/mutations.json
+msgid ""
+"You're totally blind, requiring you to cautiously feel out your "
+"surroundings.  Prevents crafting and construction aside from simple tasks "
+"that can be done blindfolded, and hinders many other actions as well."
+msgstr ""
+"당신은 완전히 앞이 보이지 않으며, 주변을 조심스럽게 감지해야 합니다. 앞이 보이지 않는 상태로도 할 수 있는 간단한 내용이 아닌 한 "
+"제작 및 건설이 불가능해지며, 다른 여러 행동에 페널티를 받습니다."
 
 #: data/json/npcs/BG_traits.json
 #: data/mods/Aftershock/npcs/Backgrounds/BG_traits_afs.json
@@ -198664,6 +198678,18 @@ msgstr "이동 최적화 (4)"
 msgid "You move with machine-guided precision."
 msgstr "기계적 보조에 의해 정밀하게 움직입니다."
 
+#: data/mods/Aftershock/effects.json
+msgid "Isohypsa Overwatch"
+msgstr "아이소힙사 감시"
+
+#. ~ Description of effect 'Isohypsa Overwatch'.
+#: data/mods/Aftershock/effects.json
+msgid ""
+"FE09-    A3 65 FF    ATT $#17A\n"
+"FE0B-    4E          JMP $5010\n"
+"FE0D-    A5 24       DEX $#05\n"
+msgstr ""
+
 #: data/mods/Aftershock/field_type.json
 msgid "foamcrete"
 msgstr "발포 콘크리트"
@@ -199714,6 +199740,30 @@ msgid ""
 msgstr "고장난 첨단로봇입니다. 일체형 EMP 발생기로 무장되어 있습니다. 해체하여 부품을 얻을 수 있습니다."
 
 #: data/mods/Aftershock/items/corpses.json
+msgid "broken Isohypsa"
+msgid_plural "broken Isohypsa"
+msgstr[0] "고장난 아이소힙사"
+
+#. ~ Description for {'str_sp': 'broken Isohypsa'}
+#: data/mods/Aftershock/items/corpses.json
+msgid ""
+"The broken shell of an Isohypsa drone coordinator.  Most of its sensors and "
+"AI units are charred beyond any repair."
+msgstr "고장난 아이소힙사 드론 운용기입니다. 대부분의 센서 및 인공지능 유닛이 고칠 수 없을 정도로 숯덩어리가 되었습니다."
+
+#: data/mods/Aftershock/items/corpses.json
+msgid "broken Kabura-ya"
+msgid_plural "broken Kabura-ya"
+msgstr[0] "고장난 카부라-야"
+
+#. ~ Description for {'str_sp': 'broken Kabura-ya'}
+#: data/mods/Aftershock/items/corpses.json
+msgid ""
+"A broken Kabura-ya drone.  Could be disassembled for a meager amount of "
+"parts."
+msgstr "고장난 카부라-야 드론입니다. 분해하여 약간의 부품을 얻을 수 있습니다."
+
+#: data/mods/Aftershock/items/corpses.json
 msgid "broken disarmed military bot"
 msgid_plural "broken disarmed military bots"
 msgstr[0] "고장난 무장 해제된 군용로봇"
@@ -199748,6 +199798,40 @@ msgid ""
 msgstr ""
 "이 조각조각 꿰메진 사람처럼 생긴 흉물은 가만히 누워 당신이 생명의 불씨를 불어 일으키기만을 기다리고 있습니다. 아마 당신이 괴물인 것 "
 "같네요."
+
+#: data/mods/Aftershock/items/grenades.json
+msgid "Kabura-ya antipersonnel device"
+msgid_plural "Kabura-ya antipersonnel devices"
+msgstr[0] "카부라-야 대인 장비"
+
+#. ~ Use action msg for Kabura-ya antipersonnel device.
+#: data/mods/Aftershock/items/grenades.json
+msgid "You activate the device."
+msgstr "장비를 작동시킵니다."
+
+#. ~ Description for Kabura-ya antipersonnel device
+#: data/mods/Aftershock/items/grenades.json
+msgid ""
+"A tiny plastic explosive meant to be installed in a Kabura-ya drone.  "
+"Explodes 3 turns after activation."
+msgstr "카부라-야 드론에 설치되도록 설계된 초소형 플라스틱 폭탄입니다. 작동시키고 3턴 뒤에 폭발합니다."
+
+#: data/mods/Aftershock/items/grenades.json
+msgid "armed Kabura-ya antipersonnel device"
+msgid_plural "armed Kabura-ya antipersonnel devices"
+msgstr[0] "작동중인 카부라-야 대인 장비"
+
+#. ~ Use action no_deactivate_msg for armed Kabura-ya antipersonnel device.
+#: data/mods/Aftershock/items/grenades.json
+msgid "You've already activated the %s; try throwing it instead."
+msgstr "이미 %s(을)를 작동시켰습니다. 빨리 던지세요."
+
+#. ~ Description for armed Kabura-ya antipersonnel device
+#: data/mods/Aftershock/items/grenades.json
+msgid ""
+"A tiny plastic explosive meant to be installed within a Kabura-ya drone.  It"
+" is on the verge of exploding."
+msgstr "카부라-야 드론에 설치되도록 설계된 초소형 플라스틱 폭탄입니다. 곧 폭발할 것입니다."
 
 #: data/mods/Aftershock/items/grenades.json
 msgid "electroshock grenade"
@@ -199843,6 +199927,30 @@ msgid ""
 msgstr ""
 "비활성화된 블러드하운드 드론입니다. 사용하면 날아올라 적대 개체에게 항하여 강력한 조명등으로 적을 비추며, 로봇 조종용 노트북이나 군용 "
 "스카우터, 바이오닉 통신기 등의 장비로 추적할 수 있도록 표적으로 지정합니다."
+
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid "inactive Kabura-ya drone"
+msgid_plural "inactive Kabura-ya drones"
+msgstr[0] "비활성화된 카부라-야 드론"
+
+#. ~ Use action friendly_msg for {'str': 'inactive Kabura-ya drone'}.
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid "The Kabura-ya emits a short IFF chirp as you throw it."
+msgstr "당신이 카부라-야 드론을 던지자 피아식별장치가 활성화되는 삑삑 소리가 들립니다."
+
+#. ~ Use action hostile_msg for {'str': 'inactive Kabura-ya drone'}.
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid "The Kabura-ya emits a warning whine after your botched throw!"
+msgstr "당신이 카부라-야 드론을 잘못 던진 바람에 드론이 당신을 향해 경고음을 내뿜습니다!"
+
+#. ~ Description for {'str': 'inactive Kabura-ya drone'}
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid ""
+"An inactive Kabura-ya hunter drone, folded for ease of storage.  If "
+"deployed, it will seek and fly to the closest enemy before detonating.  "
+"Unlike most robots, its activation depends on a successful throw, and not on"
+" your computer skill."
+msgstr ""
 
 #. ~ Description for {'str': 'inactive laser turret'}
 #: data/mods/Aftershock/items/inactiverobot.json
@@ -201468,6 +201576,15 @@ msgstr "무기 성능 시험장"
 msgid "Armory Entrance"
 msgstr "무기고 입구"
 
+#: data/mods/Aftershock/maps/overmap_map_extras.json
+msgid "Wraitheon Droneswarm"
+msgstr "레이시온 드론 군단"
+
+#. ~ Description for {'str': 'Wraitheon Droneswarm'}
+#: data/mods/Aftershock/maps/overmap_map_extras.json
+msgid "A group of combat drones."
+msgstr "전투 드론 무리입니다."
+
 #: data/mods/Aftershock/maps/overmap_terrain.json
 msgid "PrepNet orchard"
 msgstr "프렙넷 과수원"
@@ -201847,6 +201964,38 @@ msgid ""
 "An advanced robot still functioning due to its internal fusion core.  This "
 "model is furnished with a powerful railgun."
 msgstr "내장 퓨전 코어로 여전히 작동중인 펌단 로봇입니다. 강력한 레일건으로 무장되어 있습니다."
+
+#: data/mods/Aftershock/mobs/robots.json
+msgid "Wraitheon Isohypsa"
+msgid_plural "Wraitheon Isohypsas"
+msgstr[0] "레이시온 아이소힙사"
+
+#. ~ Description for {'str': 'Wraitheon Isohypsa'}
+#: data/mods/Aftershock/mobs/robots.json
+msgid ""
+"A bulky aerial drone with an advanced AI overwatch unit and a bulbous "
+"carapace mostly dedicated to mounting high-resolution sensors.  As an "
+"autonomous drone control platform, the Isohypsa is principally meant to "
+"coordinate and enhance the combat capabilities of simpler Wraitheon robots "
+"in lieu of human operators."
+msgstr ""
+
+#. ~ Attack message of monster "{'str': 'Wraitheon Isohypsa'}"'s spell "None"
+#: data/mods/Aftershock/mobs/robots.json
+msgid "The Isohypsa emits a rapid sequence of sibilant tones!"
+msgstr ""
+
+#: data/mods/Aftershock/mobs/robots.json
+msgid "Wraitheon Kabura-ya"
+msgid_plural "Wraitheon Kabura-yas"
+msgstr[0] "레이시온 카부라-야"
+
+#. ~ Description for {'str': 'Wraitheon Kabura-ya'}
+#: data/mods/Aftershock/mobs/robots.json
+msgid ""
+"A microplane drone designed to seek enemy personnel before detonating at "
+"close range."
+msgstr "적 인원을 탐색해 근거리에서 폭발하도록 만들어진 초소형 비행 드론입니다."
 
 #: data/mods/Aftershock/mobs/robots.json
 msgid "EMP-projecting robot"
@@ -205390,6 +205539,15 @@ msgid ""
 "Allows you to swap places with a previously existing holographic image of "
 "yourself.  If the universe itself can't tell you apart, who could?"
 msgstr "기존에 존재하는 홀로그램 영상과 위치를 바꿀 수 있습니다. 우주조차도 여러분을 구분할 수 없는데, 누구라고 가능할까요?"
+
+#: data/mods/Aftershock/spells/monster_spells.json
+msgid "Isohypsa Coordination"
+msgstr "아이소힙사 조정"
+
+#. ~ Description for {'str': 'Isohypsa Coordination'}
+#: data/mods/Aftershock/spells/monster_spells.json
+msgid "Increases the speed of simpler Wraitheon drones."
+msgstr "보다 단순한 레이시온 드론의 속도를 향상시킵니다."
 
 #: data/mods/Aftershock/spells/spells.json
 msgid "Aftershock Extra Turn"
@@ -284299,6 +284457,15 @@ msgstr "책 수량: "
 msgid "Written in: %s\n"
 msgstr "다음에 적혀 있음: %s\n"
 
+#: src/crafting_gui.cpp
+msgid "Autolearn when all are met:\n"
+msgstr "조건이 만족되면 자동 습득: \n"
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "  Skill %s at level %s\n"
+msgstr ""
+
 #: src/crafting_gui.cpp src/ui.cpp
 msgid "Fast scroll up"
 msgstr "빠르게 위로 스크롤"
@@ -295169,6 +295336,10 @@ msgid "Enchantment Values"
 msgstr "향상값"
 
 #: src/init.cpp
+msgid "Enchantment Flags"
+msgstr "향상 플래그"
+
+#: src/init.cpp
 msgid "Transformations"
 msgstr "변이"
 
@@ -296039,14 +296210,6 @@ msgstr ""
 #: src/item.cpp
 msgid "* It seems that deep freezing <good>killed all parasites</good>."
 msgstr "* 극저온 냉동을 거쳐 <good>기생충이 모두 죽은 것</good> 같습니다."
-
-#: src/item.cpp
-msgid ""
-"This food has started to <neutral>rot</neutral>, but <info>your bionic "
-"digestion can tolerate it</info>."
-msgstr ""
-"이 음식은 <neutral>부패</neutral>하기 시작했지만, <info>바이오닉 소화 시스템이 있어 소화시킬 수 "
-"있습니다</info>."
 
 #: src/item.cpp
 msgid ""
@@ -308366,7 +308529,7 @@ msgstr "...데이터베이스에 연결할 수 없음!"
 
 #: src/monattack.cpp
 #, c-format
-msgid "a robotic boice boom, \"Citizen %s!\""
+msgid "a robotic voice boom, \"Citizen %s!\""
 msgstr "로봇 목소리가 터져나옵니다. \"%s 시민!\""
 
 #: src/monattack.cpp

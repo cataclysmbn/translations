@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-07-07 01:54+0000\n"
+"POT-Creation-Date: 2026-07-08 16:18+0000\n"
 "Language-Team: Indonesian (https://app.transifex.com/bn-team/teams/113585/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2988,7 +2988,7 @@ msgstr ""
 #: data/json/bionics.json
 msgid ""
 "Your vision is greatly enhanced, giving you a +2 bonus to perception and "
-"fixing any vision problems."
+"fixing any vision problems short of total blindness."
 msgstr ""
 
 #: data/json/bionics.json
@@ -3001,7 +3001,7 @@ msgid ""
 "The lenses in your eyes have been surgically removed and replaced with an "
 "array of high-powered, auto-focusing lenses.  They function as integrated "
 "binoculars, letting you see much farther than before, and any mundane vision"
-" problems you might have had are now gone."
+" problems you might have had are now gone, including blindness."
 msgstr ""
 
 #: data/json/bionics.json
@@ -7850,7 +7850,7 @@ msgstr ""
 msgid "You try to keep your balance."
 msgstr ""
 
-#: data/json/effects.json
+#: data/json/effects.json data/json/mutations/mutations.json
 msgid "Blind"
 msgstr ""
 
@@ -17612,9 +17612,10 @@ msgstr ""
 #. ~ Use action sound_msg for {'str': 'active scrambler grenade'}.
 #. ~ Use action sound_msg for {'str': 'active tear gas payload'}.
 #. ~ Use action sound_msg for {'str': 'active makeshift grenade'}.
+#. ~ Use action sound_msg for armed Kabura-ya antipersonnel device.
 #: data/json/not_really_obsolete.json data/json/items/tool/explosives.json
 #: data/json/items/tool/misc.json data/json/obsoletion/items.json
-#: src/iuse_actor.cpp
+#: data/mods/Aftershock/items/grenades.json src/iuse_actor.cpp
 msgid "Tick."
 msgstr ""
 
@@ -112419,8 +112420,9 @@ msgstr[0] ""
 #. ~ Use action menu_text for {'str': 'scrambler grenade'}.
 #. ~ Use action menu_text for {'str': 'tear gas payload'}.
 #. ~ Use action menu_text for {'str': 'makeshift grenade'}.
+#. ~ Use action menu_text for Kabura-ya antipersonnel device.
 #: data/json/items/tool/explosives.json data/json/items/tool/misc.json
-#: data/json/obsoletion/items.json
+#: data/json/obsoletion/items.json data/mods/Aftershock/items/grenades.json
 msgid "Pull pin"
 msgstr ""
 
@@ -136051,7 +136053,8 @@ msgstr ""
 #: data/json/mutations/mutations.json
 msgid ""
 "Your body is coated with a fine slime.  Protects from long-term effects of "
-"acid, though not short-term ones.  Greatly increases wet benefits."
+"acid, though not short-term ones. It also protects from other sources of "
+"slime.  Greatly increases wet benefits."
 msgstr ""
 
 #: data/json/mutations/mutations.json
@@ -137581,6 +137584,14 @@ msgid ""
 " start with, you start with a randomly-selected common pistol and some spare"
 " mags.  (Note: What you see in character creation does not reflect what it "
 "will select at game start.)"
+msgstr ""
+
+#. ~ Description for {'str': 'Blind'}
+#: data/json/mutations/mutations.json
+msgid ""
+"You're totally blind, requiring you to cautiously feel out your "
+"surroundings.  Prevents crafting and construction aside from simple tasks "
+"that can be done blindfolded, and hinders many other actions as well."
 msgstr ""
 
 #: data/json/npcs/BG_traits.json
@@ -186622,6 +186633,18 @@ msgstr ""
 msgid "You move with machine-guided precision."
 msgstr ""
 
+#: data/mods/Aftershock/effects.json
+msgid "Isohypsa Overwatch"
+msgstr ""
+
+#. ~ Description of effect 'Isohypsa Overwatch'.
+#: data/mods/Aftershock/effects.json
+msgid ""
+"FE09-    A3 65 FF    ATT $#17A\n"
+"FE0B-    4E          JMP $5010\n"
+"FE0D-    A5 24       DEX $#05\n"
+msgstr ""
+
 #: data/mods/Aftershock/field_type.json
 msgid "foamcrete"
 msgstr ""
@@ -187610,6 +187633,30 @@ msgid ""
 msgstr ""
 
 #: data/mods/Aftershock/items/corpses.json
+msgid "broken Isohypsa"
+msgid_plural "broken Isohypsa"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'broken Isohypsa'}
+#: data/mods/Aftershock/items/corpses.json
+msgid ""
+"The broken shell of an Isohypsa drone coordinator.  Most of its sensors and "
+"AI units are charred beyond any repair."
+msgstr ""
+
+#: data/mods/Aftershock/items/corpses.json
+msgid "broken Kabura-ya"
+msgid_plural "broken Kabura-ya"
+msgstr[0] ""
+
+#. ~ Description for {'str_sp': 'broken Kabura-ya'}
+#: data/mods/Aftershock/items/corpses.json
+msgid ""
+"A broken Kabura-ya drone.  Could be disassembled for a meager amount of "
+"parts."
+msgstr ""
+
+#: data/mods/Aftershock/items/corpses.json
 msgid "broken disarmed military bot"
 msgid_plural "broken disarmed military bots"
 msgstr[0] ""
@@ -187641,6 +187688,40 @@ msgstr[0] ""
 msgid ""
 "This stitched together abomination in human form lies still and waiting for "
 "you to give it the spark of life.  In all likelihood you are the monster."
+msgstr ""
+
+#: data/mods/Aftershock/items/grenades.json
+msgid "Kabura-ya antipersonnel device"
+msgid_plural "Kabura-ya antipersonnel devices"
+msgstr[0] ""
+
+#. ~ Use action msg for Kabura-ya antipersonnel device.
+#: data/mods/Aftershock/items/grenades.json
+msgid "You activate the device."
+msgstr ""
+
+#. ~ Description for Kabura-ya antipersonnel device
+#: data/mods/Aftershock/items/grenades.json
+msgid ""
+"A tiny plastic explosive meant to be installed in a Kabura-ya drone.  "
+"Explodes 3 turns after activation."
+msgstr ""
+
+#: data/mods/Aftershock/items/grenades.json
+msgid "armed Kabura-ya antipersonnel device"
+msgid_plural "armed Kabura-ya antipersonnel devices"
+msgstr[0] ""
+
+#. ~ Use action no_deactivate_msg for armed Kabura-ya antipersonnel device.
+#: data/mods/Aftershock/items/grenades.json
+msgid "You've already activated the %s; try throwing it instead."
+msgstr ""
+
+#. ~ Description for armed Kabura-ya antipersonnel device
+#: data/mods/Aftershock/items/grenades.json
+msgid ""
+"A tiny plastic explosive meant to be installed within a Kabura-ya drone.  It"
+" is on the verge of exploding."
 msgstr ""
 
 #: data/mods/Aftershock/items/grenades.json
@@ -187728,6 +187809,30 @@ msgid ""
 " towards enemy targets and highlight them with a powerful spotlight, along "
 "with marking targets that can be viewed if you possess a control laptop or "
 "similar device."
+msgstr ""
+
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid "inactive Kabura-ya drone"
+msgid_plural "inactive Kabura-ya drones"
+msgstr[0] ""
+
+#. ~ Use action friendly_msg for {'str': 'inactive Kabura-ya drone'}.
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid "The Kabura-ya emits a short IFF chirp as you throw it."
+msgstr ""
+
+#. ~ Use action hostile_msg for {'str': 'inactive Kabura-ya drone'}.
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid "The Kabura-ya emits a warning whine after your botched throw!"
+msgstr ""
+
+#. ~ Description for {'str': 'inactive Kabura-ya drone'}
+#: data/mods/Aftershock/items/inactiverobot.json
+msgid ""
+"An inactive Kabura-ya hunter drone, folded for ease of storage.  If "
+"deployed, it will seek and fly to the closest enemy before detonating.  "
+"Unlike most robots, its activation depends on a successful throw, and not on"
+" your computer skill."
 msgstr ""
 
 #. ~ Description for {'str': 'inactive laser turret'}
@@ -189260,6 +189365,15 @@ msgstr ""
 msgid "Armory Entrance"
 msgstr ""
 
+#: data/mods/Aftershock/maps/overmap_map_extras.json
+msgid "Wraitheon Droneswarm"
+msgstr ""
+
+#. ~ Description for {'str': 'Wraitheon Droneswarm'}
+#: data/mods/Aftershock/maps/overmap_map_extras.json
+msgid "A group of combat drones."
+msgstr ""
+
 #: data/mods/Aftershock/maps/overmap_terrain.json
 msgid "PrepNet orchard"
 msgstr ""
@@ -189617,6 +189731,38 @@ msgstr[0] ""
 msgid ""
 "An advanced robot still functioning due to its internal fusion core.  This "
 "model is furnished with a powerful railgun."
+msgstr ""
+
+#: data/mods/Aftershock/mobs/robots.json
+msgid "Wraitheon Isohypsa"
+msgid_plural "Wraitheon Isohypsas"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'Wraitheon Isohypsa'}
+#: data/mods/Aftershock/mobs/robots.json
+msgid ""
+"A bulky aerial drone with an advanced AI overwatch unit and a bulbous "
+"carapace mostly dedicated to mounting high-resolution sensors.  As an "
+"autonomous drone control platform, the Isohypsa is principally meant to "
+"coordinate and enhance the combat capabilities of simpler Wraitheon robots "
+"in lieu of human operators."
+msgstr ""
+
+#. ~ Attack message of monster "{'str': 'Wraitheon Isohypsa'}"'s spell "None"
+#: data/mods/Aftershock/mobs/robots.json
+msgid "The Isohypsa emits a rapid sequence of sibilant tones!"
+msgstr ""
+
+#: data/mods/Aftershock/mobs/robots.json
+msgid "Wraitheon Kabura-ya"
+msgid_plural "Wraitheon Kabura-yas"
+msgstr[0] ""
+
+#. ~ Description for {'str': 'Wraitheon Kabura-ya'}
+#: data/mods/Aftershock/mobs/robots.json
+msgid ""
+"A microplane drone designed to seek enemy personnel before detonating at "
+"close range."
 msgstr ""
 
 #: data/mods/Aftershock/mobs/robots.json
@@ -192986,6 +193132,15 @@ msgstr ""
 msgid ""
 "Allows you to swap places with a previously existing holographic image of "
 "yourself.  If the universe itself can't tell you apart, who could?"
+msgstr ""
+
+#: data/mods/Aftershock/spells/monster_spells.json
+msgid "Isohypsa Coordination"
+msgstr ""
+
+#. ~ Description for {'str': 'Isohypsa Coordination'}
+#: data/mods/Aftershock/spells/monster_spells.json
+msgid "Increases the speed of simpler Wraitheon drones."
 msgstr ""
 
 #: data/mods/Aftershock/spells/spells.json
@@ -268620,6 +268775,15 @@ msgstr ""
 msgid "Written in: %s\n"
 msgstr ""
 
+#: src/crafting_gui.cpp
+msgid "Autolearn when all are met:\n"
+msgstr ""
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid "  Skill %s at level %s\n"
+msgstr ""
+
 #: src/crafting_gui.cpp src/ui.cpp
 msgid "Fast scroll up"
 msgstr ""
@@ -279261,6 +279425,10 @@ msgid "Enchantment Values"
 msgstr ""
 
 #: src/init.cpp
+msgid "Enchantment Flags"
+msgstr ""
+
+#: src/init.cpp
 msgid "Transformations"
 msgstr ""
 
@@ -280119,12 +280287,6 @@ msgstr ""
 
 #: src/item.cpp
 msgid "* It seems that deep freezing <good>killed all parasites</good>."
-msgstr ""
-
-#: src/item.cpp
-msgid ""
-"This food has started to <neutral>rot</neutral>, but <info>your bionic "
-"digestion can tolerate it</info>."
 msgstr ""
 
 #: src/item.cpp
@@ -292347,7 +292509,7 @@ msgstr ""
 
 #: src/monattack.cpp
 #, c-format
-msgid "a robotic boice boom, \"Citizen %s!\""
+msgid "a robotic voice boom, \"Citizen %s!\""
 msgstr ""
 
 #: src/monattack.cpp
