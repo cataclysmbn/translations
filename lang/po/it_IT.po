@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-07-16 06:03+0000\n"
+"POT-Creation-Date: 2026-07-17 22:24+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Italian (Italy) (https://app.transifex.com/bn-team/teams/113585/it_IT/)\n"
 "MIME-Version: 1.0\n"
@@ -33121,7 +33121,7 @@ msgstr "taglio d'alberi"
 msgid "bolt turning"
 msgstr ""
 
-#: data/json/tool_qualities.json src/crafting_gui.cpp
+#: data/json/tool_qualities.json
 msgid "fine bolt turning"
 msgstr ""
 
@@ -33157,7 +33157,7 @@ msgstr ""
 msgid "chiseling"
 msgstr ""
 
-#: data/json/tool_qualities.json
+#: data/json/tool_qualities.json src/crafting_gui.cpp
 msgid "sewing"
 msgstr ""
 
@@ -69052,7 +69052,7 @@ msgid ""
 "eyes."
 msgstr ""
 
-#: data/json/items/armor/hats.json
+#: data/json/items/armor/hats.json data/mods/test_lua_conditions/stuff.json
 msgid "tinfoil hat"
 msgid_plural "tinfoil hats"
 msgstr[0] "cappello di carta stagnola"
@@ -69060,7 +69060,7 @@ msgstr[1] "cappelli di carta stagnola"
 msgstr[2] "cappelli di carta stagnola"
 
 #. ~ Description for {'str': 'tinfoil hat'}
-#: data/json/items/armor/hats.json
+#: data/json/items/armor/hats.json data/mods/test_lua_conditions/stuff.json
 msgid ""
 "A sheet of aluminum foil that has been molded into a form-fitting hat.  "
 "Perfect for protecting yourself from the government, Illuminati, aliens, and"
@@ -94502,7 +94502,7 @@ msgid ""
 "seasonings, that has been cooked."
 msgstr ""
 
-#: data/json/items/comestibles/meat_dishes.json
+#: data/json/items/comestibles/meat_dishes.json src/crafting_gui.cpp
 msgid "cracklins"
 msgid_plural "cracklins"
 msgstr[0] "ciccioli"
@@ -123602,7 +123602,7 @@ msgid ""
 "food.  It is usable only once."
 msgstr ""
 
-#: data/json/items/tool/cooking.json
+#: data/json/items/tool/cooking.json src/crafting_gui.cpp
 msgid "hotplate"
 msgid_plural "hotplates"
 msgstr[0] "piastra riscaldante"
@@ -196652,7 +196652,7 @@ msgstr ""
 msgid "0"
 msgstr ""
 
-#: data/json/snippets/snippets.json
+#: data/json/snippets/snippets.json src/crafting_gui.cpp
 msgid "1"
 msgstr ""
 
@@ -276780,6 +276780,15 @@ msgstr ""
 msgid "Add craftable and buildable teleporters."
 msgstr ""
 
+#: data/mods/test_lua_conditions/modinfo.json
+msgid "Test Lua Enhantment Conditions"
+msgstr ""
+
+#. ~ Description for Test Lua Enhantment Conditions
+#: data/mods/test_lua_conditions/modinfo.json
+msgid "Test mod for Lua enchantment conditions"
+msgstr ""
+
 #: data/mods/test_lua_require/modinfo.json
 msgid "Test Lua Require"
 msgstr ""
@@ -289066,7 +289075,7 @@ msgstr "fabbricazione"
 msgid "<color_cyan>any skill</color> required"
 msgstr ""
 
-#: src/construction.cpp
+#: src/construction.cpp src/crafting_gui.cpp
 msgid "mechanics"
 msgstr "meccanica"
 
@@ -289077,7 +289086,7 @@ msgid ""
 "<color_white>Examples:</color>\n"
 msgstr ""
 
-#: src/construction.cpp src/crafting_gui.cpp
+#: src/construction.cpp
 #, c-format
 msgid "  <color_white>%s</color>%.*s    %s\n"
 msgstr ""
@@ -289086,7 +289095,7 @@ msgstr ""
 msgid "<color_cyan>name</color> of construction"
 msgstr ""
 
-#: src/construction.cpp src/crafting_gui.cpp
+#: src/construction.cpp
 #, c-format
 msgid "  <color_yellow>%c</color><color_white>:%s</color>%.*s  %s\n"
 msgstr ""
@@ -290322,40 +290331,11 @@ msgid "Your inventory is empty."
 msgstr "Il tuo inventario è vuoto."
 
 #: src/crafting_gui.cpp
-msgid "<color_cyan>quality</color> of resulting item"
+msgid "<color_cyan>name</color> of resulting item"
 msgstr ""
 
 #: src/crafting_gui.cpp
-msgid "<color_cyan>full description</color> of resulting item (slow)"
-msgstr ""
-
-#. ~ Example result description search term
-#: src/crafting_gui.cpp
-msgid "reach attack"
-msgstr ""
-
-#: src/crafting_gui.cpp
-msgid "<color_cyan>component</color> required to craft"
-msgstr ""
-
-#: src/crafting_gui.cpp
-msgid "<color_cyan>primary skill</color> used to craft"
-msgstr ""
-
-#: src/crafting_gui.cpp
-msgid "tailoring"
-msgstr "cucito"
-
-#: src/crafting_gui.cpp
-msgid "<color_cyan>any skill</color> used to craft"
-msgstr ""
-
-#: src/crafting_gui.cpp
-msgid "cooking"
-msgstr "cucina"
-
-#: src/crafting_gui.cpp
-msgid "<color_cyan>quality</color> required to craft"
+msgid "shirt"
 msgstr ""
 
 #: src/crafting_gui.cpp
@@ -290363,12 +290343,46 @@ msgid "<color_cyan>tool</color> required to craft"
 msgstr ""
 
 #: src/crafting_gui.cpp
-msgid "soldering iron"
-msgstr "saldatore"
+msgid "<color_cyan>component</color> required to craft"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid ""
+"<color_cyan>quality</color> required to craft (<color_cyan>text and/or "
+"numbers</color>)"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "number use example"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "sewing>=3"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid ""
+"<color_cyan>any skill</color> used to craft (<color_cyan>text and/or "
+"numbers</color>)"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid ""
+"<color_cyan>primary skill</color> used to craft (<color_cyan>text and/or "
+"numbers</color>)"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "tailoring"
+msgstr "cucito"
 
 #: src/crafting_gui.cpp
 msgctxt "memorized recipe search term"
 msgid "yes"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "recipes which are <color_cyan>reversible</color> or not"
 msgstr ""
 
 #: src/crafting_gui.cpp
@@ -290377,18 +290391,82 @@ msgstr ""
 
 #: src/crafting_gui.cpp
 msgid ""
-"The default is to search result names.  Some single-character prefixes can be used with a colon <color_red>:</color> to search in other ways.  Additional filters are separated by commas <color_red>,</color>.\n"
-"\n"
-"\n"
-"<color_white>Examples:</color>\n"
+"<color_cyan>quality</color> of resulting item (<color_cyan>text and/or "
+"numbers</color>)"
 msgstr ""
 
 #: src/crafting_gui.cpp
-msgid "shirt"
+msgid "recipe <color_cyan>byproduct</color>"
 msgstr ""
 
 #: src/crafting_gui.cpp
-msgid "<color_cyan>name</color> of resulting item"
+msgid "15"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid ""
+"total <color_cyan>damage</color>; <color_white>db, dc, dp</color> for "
+"bashing, cutting, piercing"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "10"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid ""
+"bashing <color_cyan>protection</color>; <color_white>pc, pbl, pa, pf, "
+"pe</color> for cutting, ballistic, acid, fire, environmental"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "20"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "clothing <color_cyan>warmth</color>"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "<color_cyan>storage</color> in liters"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "clothing <color_cyan>encumbrance</color>"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "<color_cyan>full description</color> of resulting item (slow)"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid "reach attack"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid ""
+"You can search for result names, or use prefixes to search specific properties.\n"
+"To search text, enter it after a colon <color_red>:</color>.\n"
+"To search for values, enter one of operators <color_red>=, >, <, >=, <=</color> followed by a number.\n"
+"You can search for text, numbers, or both, where applicable. To search both, use <color_red>prefix:text>number</color>.\n"
+"You can prefix any filter with a minus <color_red>-</color> to <color_cyan>exclude</color> matching recipes.\n"
+"Additional filters are separated by commas <color_red>,</color>.\n"
+"\n"
+"<color_white>Prefixes:\n"
+"</color>"
+msgstr ""
+
+#: src/crafting_gui.cpp
+#, c-format
+msgid " <color_yellow>%s</color><color_white>%s%s</color>%.*s  %s\n"
+msgstr ""
+
+#: src/crafting_gui.cpp
+msgid ""
+"\n"
+"Filters can be as complex as you'd like. For example,\n"
+"<color_cyan>s:tailoring<6,st>20</color>\n"
+"<color_cyan>p:electronics>=2,s>4,r:yes,-t:soldering iron</color>"
 msgstr ""
 
 #: src/crafting_gui.cpp
@@ -300854,6 +300932,10 @@ msgstr ""
 
 #: src/init.cpp
 msgid "Enchantment Flags"
+msgstr ""
+
+#: src/init.cpp
+msgid "Enchantment Conditions"
 msgstr ""
 
 #: src/init.cpp
