@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-08-26 09:25+0000\n"
+"POT-Creation-Date: 2026-08-28 02:50+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -36014,44 +36014,44 @@ msgstr ""
 #: data/json/artifact/debug_artifacts.json
 msgid "Hexecontahedron of Reaching"
 msgid_plural "Hexecontahedron of Reaching"
-msgstr[0] ""
+msgstr[0] "도달의 육십면체"
 
 #. ~ Description for {'str_sp': 'Hexecontahedron of Reaching'}
 #: data/json/artifact/debug_artifacts.json
 msgid "This is a debug-only item for testing reaching enchantments."
-msgstr ""
+msgstr "도달 인챈트 시험용 디버그 물품입니다."
 
 #: data/json/artifact/debug_artifacts.json
 msgid "Triacontahedron of Weightlessness"
 msgid_plural "Triacontahedron of Weightlessness"
-msgstr[0] ""
+msgstr[0] "무중량의 삼십면체"
 
 #. ~ Description for {'str_sp': 'Triacontahedron of Weightlessness'}
 #: data/json/artifact/debug_artifacts.json
 msgid ""
 "This is a debug-only item for testing weight modification enchantments."
-msgstr ""
+msgstr "중량 인챈트 시험용 디버그 물품입니다."
 
 #: data/json/artifact/debug_artifacts.json
 msgid "Hexecontahedron of Pacifism"
 msgid_plural "Hexecontahedron of Pacifism"
-msgstr[0] ""
+msgstr[0] "평화주의의 육십면체"
 
 #. ~ Description for {'str_sp': 'Hexecontahedron of Pacifism'}
 #: data/json/artifact/debug_artifacts.json
 msgid ""
 "This is a debug-only item for testing melee hit and forcefield enchantments."
-msgstr ""
+msgstr "근접 공격 및 역장 인챈트 시험용 디버그 물품입니다."
 
 #: data/json/artifact/debug_artifacts.json
 msgid "Pyramid of Explosiveness"
 msgid_plural "Pyramid of Explosiveness"
-msgstr[0] ""
+msgstr[0] "폭발의 피라미드"
 
 #. ~ Description for {'str_sp': 'Pyramid of Explosiveness'}
 #: data/json/artifact/debug_artifacts.json
 msgid "This is a debug-only item for testing overkill enchantments."
-msgstr ""
+msgstr "오버킬 인챈트 시험용 디버그 물품입니다."
 
 #: data/json/construction/construct.json
 #: data/json/construction/construct_deco.json
@@ -54973,7 +54973,7 @@ msgstr[0] "이빨과 발톱"
 #: data/json/items/fake.json
 msgid "unarmed"
 msgid_plural "unarmed"
-msgstr[0] ""
+msgstr[0] "비무장"
 
 #: data/json/items/fake.json
 msgid "integrated toolset"
@@ -128893,6 +128893,10 @@ msgid ""
 "It's so dark and scary in there!  You can't force yourself to walk into this"
 " tile.  Switch to running movement mode to move there."
 msgstr "거긴 너무 어둡고 무섭습니다! 도저히 이곳으로 걸어서는 갈 수 없습니다. 꼭 가야겠다면 달리기 모드로 전환하세요."
+
+#: data/json/lua/traits/wool_allergy.lua
+msgid "Can't wear that, it's made of wool!"
+msgstr "그건 못 입습니다. 양모 재질이잖아요!"
 
 #. ~ Sign
 #: data/json/mapgen/Bastion_Fort.json data/json/mapgen/s_gas.json
@@ -215229,8 +215233,9 @@ msgstr[0] "괴물 전격 무기"
 
 #: data/mods/Arcana_BN/items/ranged.json
 msgid ""
-"Used to give the Host of the Archon a specific degree of inaccuracy.  If you"
-" encounter one of these in the wild, it's a bug."
+"Used to give the Host of the Archon a specific degree of inaccuracy, and to "
+"nerf his damage to not be an immediate instakill.  If you encounter one of "
+"these in the wild, it's a bug."
 msgstr ""
 
 #: data/mods/Arcana_BN/items/ranged.json
@@ -229802,7 +229807,7 @@ msgstr ""
 
 #: data/mods/Arcana_BN/npcs/TALK_SCAVENGER_MERC.json
 msgid "I'll ask around.  Thanks though."
-msgstr ""
+msgstr "돌아다니면서 물어볼게. 그래도 고마워."
 
 #: data/mods/Arcana_BN/npcs/TALK_SCAVENGER_MERC.json
 msgid ""
@@ -229812,11 +229817,11 @@ msgstr ""
 
 #: data/mods/Arcana_BN/npcs/TALK_SCAVENGER_MERC.json
 msgid "What's your offer?"
-msgstr ""
+msgstr "제안이 뭐지?"
 
 #: data/mods/Arcana_BN/npcs/TALK_SCAVENGER_MERC.json
 msgid "Nevermind for now, thanks though."
-msgstr ""
+msgstr "당장은 신경쓰지 마. 그래도 고마워."
 
 #: data/mods/Arcana_BN/npcs/TALK_SCAVENGER_MERC.json
 msgid ""
@@ -281643,8 +281648,10 @@ msgid "Putting on a %s would be tricky."
 msgstr "%s(을)를 착용하는건 꽤 까다로워보입니다."
 
 #: src/character.cpp
-msgid "Can't wear that, it's made of wool!"
-msgstr "그건 못 입습니다. 양모 재질이잖아요!"
+msgid ""
+"Wearing that is blocked for an unknown reason. One of your lua mods isn't "
+"returning the hook right."
+msgstr "알 수 없는 이유로 착용할 수 없습니다. Lua 모드 중 하나가 훅을 제대로 반환하지 않고 있습니다."
 
 #: src/character.cpp
 #, c-format
@@ -281810,6 +281817,12 @@ msgstr "해당 물품을 착용하고 있지 않습니다."
 #: src/character.cpp
 msgid "<npcname> is not wearing that item."
 msgstr "<npcname>(은)는 해당 물품을 착용하고 있지 않습니다."
+
+#: src/character.cpp
+msgid ""
+"Taking that off is blocked for an unknown reason. One of your lua mods isn't"
+" returning the hook right."
+msgstr "알 수 없는 이유로 벗을 수 없습니다. Lua 모드 중 하나가 훅을 제대로 반환하지 않고 있습니다."
 
 #: src/character.cpp
 msgid ""
@@ -282549,7 +282562,7 @@ msgstr "<npcname>의 %s(이)가 완전히 파괴되었습니다!"
 
 #: src/character.cpp
 msgid "The incoming attack was deflected"
-msgstr ""
+msgstr "공격을 튕겨냈습니다"
 
 #: src/character.cpp
 #, c-format
@@ -293354,7 +293367,7 @@ msgstr "채광 지점 영역에서 적절한 도구를 이용해 채광합니다
 
 #: src/handle_action.cpp
 msgid "Unarmed Reach Attack"
-msgstr ""
+msgstr "비무장 도달 공격"
 
 #: src/handle_action.cpp
 #, c-format
@@ -293366,7 +293379,7 @@ msgstr "%2$s에서 %1$s (%3$d) "
 #. ~ %1$s: weapon name, %2$s: container name, %3$d: remaining ammo count
 #: src/handle_action.cpp
 msgid "Draw: "
-msgstr ""
+msgstr "뽑기: "
 
 #: src/handle_action.cpp src/item.cpp
 msgid "Fire: "
@@ -293374,7 +293387,7 @@ msgstr "화염 피해:"
 
 #: src/handle_action.cpp
 msgid "Wield: "
-msgstr ""
+msgstr "장비: "
 
 #: src/handle_action.cpp
 msgid "Change to which movement mode?"

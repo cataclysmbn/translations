@@ -11,14 +11,14 @@
 # hiro9888 <hiro9888@gmail.com>, 2026
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
 # GeekDuanLian <dl@pbstu.com>, 2026
-# Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026
 # Schrodinger_Sig, 2026
+# Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-08-26 09:25+0000\n"
-"Last-Translator: Schrodinger_Sig, 2026\n"
+"POT-Creation-Date: 2026-08-28 03:10+0000\n"
+"Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34464,44 +34464,44 @@ msgstr "这是一个调试用的测试附魔变异的物品。拿着它就可以
 #: data/json/artifact/debug_artifacts.json
 msgid "Hexecontahedron of Reaching"
 msgid_plural "Hexecontahedron of Reaching"
-msgstr[0] ""
+msgstr[0] "触及之六十面体"
 
 #. ~ Description for {'str_sp': 'Hexecontahedron of Reaching'}
 #: data/json/artifact/debug_artifacts.json
 msgid "This is a debug-only item for testing reaching enchantments."
-msgstr ""
+msgstr "这是一个仅用于测试触及附魔的调试专用物品。"
 
 #: data/json/artifact/debug_artifacts.json
 msgid "Triacontahedron of Weightlessness"
 msgid_plural "Triacontahedron of Weightlessness"
-msgstr[0] ""
+msgstr[0] "失重之三十面体"
 
 #. ~ Description for {'str_sp': 'Triacontahedron of Weightlessness'}
 #: data/json/artifact/debug_artifacts.json
 msgid ""
 "This is a debug-only item for testing weight modification enchantments."
-msgstr ""
+msgstr "这是一个仅用于测试重量修改附魔的调试专用物品。"
 
 #: data/json/artifact/debug_artifacts.json
 msgid "Hexecontahedron of Pacifism"
 msgid_plural "Hexecontahedron of Pacifism"
-msgstr[0] ""
+msgstr[0] "和平主义之六十面体"
 
 #. ~ Description for {'str_sp': 'Hexecontahedron of Pacifism'}
 #: data/json/artifact/debug_artifacts.json
 msgid ""
 "This is a debug-only item for testing melee hit and forcefield enchantments."
-msgstr ""
+msgstr "这是一个仅用于测试近战命中与力场附魔的调试专用物品。"
 
 #: data/json/artifact/debug_artifacts.json
 msgid "Pyramid of Explosiveness"
 msgid_plural "Pyramid of Explosiveness"
-msgstr[0] ""
+msgstr[0] "爆炸金字塔"
 
 #. ~ Description for {'str_sp': 'Pyramid of Explosiveness'}
 #: data/json/artifact/debug_artifacts.json
 msgid "This is a debug-only item for testing overkill enchantments."
-msgstr ""
+msgstr "这是一个仅用于测试溢出伤害附魔的调试专用物品。"
 
 #: data/json/construction/construct.json
 #: data/json/construction/construct_deco.json
@@ -52727,7 +52727,7 @@ msgstr[0] "牙齿和爪子"
 #: data/json/items/fake.json
 msgid "unarmed"
 msgid_plural "unarmed"
-msgstr[0] ""
+msgstr[0] "徒手格斗"
 
 #: data/json/items/fake.json
 msgid "integrated toolset"
@@ -124485,6 +124485,10 @@ msgid ""
 "It's so dark and scary in there!  You can't force yourself to walk into this"
 " tile.  Switch to running movement mode to move there."
 msgstr "那里太黑太吓人了！你无法强迫自己走进那个方格。请切换到奔跑模式以移动到那里。"
+
+#: data/json/lua/traits/wool_allergy.lua
+msgid "Can't wear that, it's made of wool!"
+msgstr "不能穿这个，它是用羊毛制成的！"
 
 #. ~ Sign
 #: data/json/mapgen/Bastion_Fort.json data/json/mapgen/s_gas.json
@@ -206698,9 +206702,10 @@ msgstr[0] "怪物闪电武器"
 
 #: data/mods/Arcana_BN/items/ranged.json
 msgid ""
-"Used to give the Host of the Archon a specific degree of inaccuracy.  If you"
-" encounter one of these in the wild, it's a bug."
-msgstr "用于使执政官宿主有特定程度的不准确性。如果你在野外遇到这个，说明出bug了。"
+"Used to give the Host of the Archon a specific degree of inaccuracy, and to "
+"nerf his damage to not be an immediate instakill.  If you encounter one of "
+"these in the wild, it's a bug."
+msgstr "用于使执政官宿主具有特定程度的不准确性，并削弱其伤害以防止直接秒杀。如果你在野外遇到这个，说明出现 Bug 了。"
 
 #: data/mods/Arcana_BN/items/ranged.json
 msgid "monster flashbang"
@@ -271912,8 +271917,10 @@ msgid "Putting on a %s would be tricky."
 msgstr "想要穿 %s 是不可能的。"
 
 #: src/character.cpp
-msgid "Can't wear that, it's made of wool!"
-msgstr "不能穿这个，它是用羊毛制成的！"
+msgid ""
+"Wearing that is blocked for an unknown reason. One of your lua mods isn't "
+"returning the hook right."
+msgstr "因未知原因无法穿戴该物品。你的某个 Lua 模组未能正确返回钩子（Hook）。"
 
 #: src/character.cpp
 #, c-format
@@ -272079,6 +272086,12 @@ msgstr "你没有在穿戴那件物品。"
 #: src/character.cpp
 msgid "<npcname> is not wearing that item."
 msgstr "<npcname> 没有穿戴那件物品。"
+
+#: src/character.cpp
+msgid ""
+"Taking that off is blocked for an unknown reason. One of your lua mods isn't"
+" returning the hook right."
+msgstr "因未知原因无法脱下该物品。你的某个 Lua 模组未能正确返回钩子（Hook）。"
 
 #: src/character.cpp
 msgid ""
@@ -272816,7 +272829,7 @@ msgstr "<npcname> 的 %s 完全损坏了！"
 
 #: src/character.cpp
 msgid "The incoming attack was deflected"
-msgstr ""
+msgstr "袭来的攻击被偏斜了"
 
 #: src/character.cpp
 #, c-format
@@ -283577,7 +283590,7 @@ msgstr "去附近的挖掘区挖矿——自动获取工具。"
 
 #: src/handle_action.cpp
 msgid "Unarmed Reach Attack"
-msgstr ""
+msgstr "徒手触及攻击"
 
 #: src/handle_action.cpp
 #, c-format
@@ -283589,7 +283602,7 @@ msgstr "装在 %2$s 中的 %1$s（%3$d）"
 #. ~ %1$s: weapon name, %2$s: container name, %3$d: remaining ammo count
 #: src/handle_action.cpp
 msgid "Draw: "
-msgstr ""
+msgstr "拔出："
 
 #: src/handle_action.cpp src/item.cpp
 msgid "Fire: "
@@ -283597,7 +283610,7 @@ msgstr "防火："
 
 #: src/handle_action.cpp
 msgid "Wield: "
-msgstr ""
+msgstr "手持："
 
 #: src/handle_action.cpp
 msgid "Change to which movement mode?"
