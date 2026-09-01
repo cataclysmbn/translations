@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-08-31 19:15+0000\n"
+"POT-Creation-Date: 2026-09-01 01:27+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -13156,7 +13156,18 @@ msgstr "缓解一些压力"
 msgid "Train skill"
 msgstr "训练技能"
 
-#: data/json/item_actions.json
+#. ~ Use action menu_text for {'str': 'control laptop'}.
+#. ~ Use action menu_text for {'str': 'wrist computer'}.
+#. ~ Use action menu_text for {'str': 'wrist control computer'}.
+#. ~ Use action menu_text for {'str': 'e-ink tablet PC'}.
+#. ~ Use action menu_text for laptop computer.
+#. ~ Use action menu_text for {'str': 'mp3 player (off)', 'str_pl': 'mp3
+#. players (off)'}.
+#. ~ Use action menu_text for {'str': 'smartphone'}.
+#. ~ Use action menu_text for {'str': 'atomic smartphone'}.
+#. ~ Use action menu_text for {'str': "Wraitheon executive's smartphone"}.
+#: data/json/item_actions.json data/json/items/tool/electronics.json
+#: data/mods/Aftershock/items/tools.json data/mods/ebook_lua/items/tools.json
 msgid "Listen to music"
 msgstr "听音乐"
 
@@ -34783,6 +34794,7 @@ msgstr "一个大型笨重的金属装置，用于冷却大面积区域，现在
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
 #: data/json/furniture_and_terrain/furniture-dim-portals.json
+#: data/json/furniture_and_terrain/furniture-emitters.json
 #: data/json/furniture_and_terrain/furniture-fireplaces.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
@@ -34814,6 +34826,7 @@ msgstr "金屬嘎嘎聲!"
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
 #: data/json/furniture_and_terrain/furniture-dim-portals.json
+#: data/json/furniture_and_terrain/furniture-emitters.json
 #: data/json/furniture_and_terrain/furniture-fireplaces.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
@@ -37004,6 +37017,17 @@ msgstr "天然气喷口"
 msgid "A natural gas vent on the lake bed that is currently emitting heat."
 msgstr "湖床上的一处天然气喷口，正在散发热量。"
 
+#: data/json/furniture_and_terrain/furniture-emitters.json
+msgid "running ventilation shutters"
+msgstr "运转中的通风百叶窗"
+
+#. ~ Description for running ventilation shutters
+#: data/json/furniture_and_terrain/furniture-emitters.json
+msgid ""
+"A large panel set into the reinforced metal wall.  Somehow still running "
+"despite the chaos, blasting a wave of bitterly cold air into the facility."
+msgstr "嵌在强化金属墙壁上的一块大型百叶窗面板。尽管周围一片混乱，它不知为何仍在运转，向设施内部喷吐出一阵阵刺骨的寒气。"
+
 #: data/json/furniture_and_terrain/furniture-fakes.json
 msgid "fake workbench hands"
 msgstr "假工作台手"
@@ -37705,6 +37729,23 @@ msgid ""
 "elsewhere."
 msgstr ""
 "一个用于水力发电的巨型涡轮机。其残骸与过去数兆瓦的功率输出相去甚远，但仍然可以连接起来为附近的基地供电。或者，也可以将其拆解，回收可用于其他地方发电的零件。"
+
+#: data/json/furniture_and_terrain/furniture-industrial.json
+msgid "supercomputer"
+msgstr "超级电脑"
+
+#. ~ Description for supercomputer
+#: data/json/furniture_and_terrain/furniture-industrial.json
+msgid ""
+"This massive array of panels and screens used to be the focal point of what "
+"was slated to be the bleeding-edge in quantum computing.  A few display "
+"screens still flit through an endless loop of error messages, but whatever "
+"its original purpose was has long since been completely scrambled by the "
+"Cataclysm.  With more power you could connect to what's left of old server "
+"data to train Computer skill, otherwise it's only good for very valuable "
+"scrap."
+msgstr ""
+"这套由大量面板和屏幕组成的庞大阵列，曾被寄予厚望成为当时量子计算前沿领域的核心枢纽。几块显示屏上仍在无休止地循环闪烁着报错信息，但无论它最初的用途是什么，早已在大灾变中被彻底破坏殆尽。如果有充足的电力，你或许能连接到残留的旧服务器数据来训练计算机技能；否则，它充其量也就是一堆价值不菲的废料。"
 
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/obsoletion/terrain.json
@@ -111380,8 +111421,9 @@ msgstr[0] "複合弓"
 msgid ""
 "A high-power bow with shaped cams and extra cables for high velocity shots "
 "that can be used effectively by fairly strong archers.  Currently set to a "
-"medium weight."
-msgstr "一把威力大的弓，带有偏心滑轮组和额外的弓弦，能够射出高速弓箭，需要较为强壮的人才能够有效的使用它。当前滑轮组设置在中力度水平。"
+"medium weight, activate it to choose between a lower or higher draw weight."
+msgstr ""
+"一把大威力复合弓，配备了异形凸轮和额外的副弦以实现高初速射击，力量较强的弓箭手能有效使用它。当前设定为中等磅数，激活它可以选择更低或更高的拉力磅数。"
 
 #: data/json/items/ranged/archery.json
 msgid "compound bow (high)"
@@ -111392,9 +111434,10 @@ msgstr[0] "複合弓 (高)"
 msgid ""
 "A high-power bow with shaped cams and extra cables for high velocity shots "
 "that can be used effectively by very strong archers.  Currently set to a "
-"high weight, and ready to cause some real damage - if you can draw it."
+"high weight, and ready to cause some real damage - if you can draw it.  "
+"Activate it to adjust it to lower draw weights."
 msgstr ""
-"一把威力大的弓，带有偏心滑轮组和额外的弓弦，能够射出高速弓箭，需要十分强壮的人才能够有效的使用它。当前滑轮组设置在高力度水平，如果你能拉开它，能对敌人造成不错的伤害。"
+"一把大威力复合弓，配备了异形凸轮和额外的副弦以实现高初速射击，极度强壮的弓箭手能有效使用它。当前设定为高磅数，足以造成巨大的杀伤——前提是你能拉得开。激活它可以调节到更低的拉力磅数。"
 
 #: data/json/items/ranged/archery.json
 msgid "compound bow (low)"
@@ -111405,8 +111448,10 @@ msgstr[0] "複合弓 (低)"
 msgid ""
 "A high-power bow with shaped cams and extra cables for high velocity shots "
 "that can be used effectively by average archers.  Currently set to a low "
-"weight, making it much easier to draw."
-msgstr "一把威力大的弓，带有偏心滑轮组和额外的弓弦，能够射出高速弓箭，力量普通的人就能够有效的使用它。当前滑轮组设置在低力度水平，很容易拉开。"
+"weight, making it much easier to draw.  Activate it to adjust it to higher "
+"draw weights."
+msgstr ""
+"一把大威力复合弓，配备了异形凸轮和额外的副弦以实现高初速射击，普通力气的弓箭手也能有效使用。当前设定为低磅数，使得拉弓更加轻松。激活它可以调节到更高的拉力磅数。"
 
 #: data/json/items/ranged/archery.json
 msgid "composite longbow"
@@ -114298,6 +114343,11 @@ msgstr "你打开了手电筒。"
 msgid "The wrist computer's charge is too low."
 msgstr "腕戴式电脑电量过低。"
 
+#. ~ Use action need_charges_msg for {'str': 'wrist computer'}.
+#: data/json/items/tool/electronics.json
+msgid "The wrist computer's batteries need more charge."
+msgstr "腕戴电脑的电池需要充电。"
+
 #. ~ Description for {'str': 'wrist computer'}
 #: data/json/items/tool/electronics.json
 msgid ""
@@ -114351,6 +114401,11 @@ msgstr "你关闭了手电筒。"
 msgid "wrist control computer"
 msgid_plural "wrist control computers"
 msgstr[0] "腕戴式遥控用电脑"
+
+#. ~ Use action need_charges_msg for {'str': 'wrist control computer'}.
+#: data/json/items/tool/electronics.json
+msgid "The wrist control computer's batteries need more charge."
+msgstr "腕戴遥控电脑的电池需要充电。"
 
 #. ~ Description for {'str': 'wrist control computer'}
 #: data/json/items/tool/electronics.json
@@ -114413,6 +114468,11 @@ msgstr ""
 msgid "e-ink tablet PC"
 msgid_plural "e-ink tablet PCs"
 msgstr[0] "平板電腦"
+
+#. ~ Use action need_charges_msg for {'str': 'e-ink tablet PC'}.
+#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
+msgid "The e-ink tablet PC's batteries need more charge."
+msgstr "平板电脑的电池需要充电。"
 
 #. ~ Description for {'str': 'e-ink tablet PC'}
 #: data/json/items/tool/electronics.json
@@ -114514,6 +114574,11 @@ msgstr[0] "筆記型電腦"
 msgid "The laptop's batteries need more charge."
 msgstr "笔记本电脑没电了。"
 
+#. ~ Use action need_charges_msg for laptop computer.
+#: data/json/items/tool/electronics.json
+msgid "The laptop computer's batteries need more charge."
+msgstr "笔记本电脑的电池需要充电。"
+
 #. ~ Description for laptop computer
 #: data/json/items/tool/electronics.json
 msgid ""
@@ -114535,6 +114600,12 @@ msgstr[0] "笔记本电脑（点亮）"
 msgid "mp3 player (off)"
 msgid_plural "mp3 players (off)"
 msgstr[0] "MP3 播放器 (關閉)"
+
+#. ~ Use action need_charges_msg for {'str': 'mp3 player (off)', 'str_pl':
+#. 'mp3 players (off)'}.
+#: data/json/items/tool/electronics.json
+msgid "The mp3 player's batteries need more charge."
+msgstr "MP3播放器的电池需要充电。"
 
 #. ~ Description for {'str': 'mp3 player (off)', 'str_pl': 'mp3 players
 #. (off)'}
@@ -114628,6 +114699,11 @@ msgstr "你啟動了手電筒 app。"
 msgid "The smartphone's charge is too low."
 msgstr "這支智慧型手機的電力不足。"
 
+#. ~ Use action need_charges_msg for {'str': 'smartphone'}.
+#: data/json/items/tool/electronics.json
+msgid "The smart phone's batteries need more charge."
+msgstr "智能手机的电池需要充电。"
+
 #. ~ Description for {'str': 'smartphone'}
 #: data/json/items/tool/electronics.json
 msgid ""
@@ -114665,6 +114741,11 @@ msgstr[0] "智慧型手機 - 手電筒模式"
 msgid "atomic smartphone"
 msgid_plural "atomic smartphones"
 msgstr[0] "原子智慧型手機"
+
+#. ~ Use action need_charges_msg for {'str': 'atomic smartphone'}.
+#: data/json/items/tool/electronics.json
+msgid "The atomic smartphone's batteries need more charge."
+msgstr "原子智能手机的电池需要充电。"
 
 #. ~ Description for {'str': 'atomic smartphone'}
 #: data/json/items/tool/electronics.json
@@ -124289,6 +124370,7 @@ msgstr "空中交通管制台"
 
 #. ~ Computer option
 #: data/json/mapgen/commercial_airport.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
 msgid "Download Map Data"
 msgstr "下載地圖資料"
@@ -125575,6 +125657,8 @@ msgstr "啟動共振梯級"
 
 #. ~ Sign
 #: data/json/mapgen/lab/lab_rooms.json
+#: data/json/mapgen/lab/lab_central/lab_central_core.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid ""
 "Warning!\n"
 "Live Fire Zone\n"
@@ -125600,6 +125684,45 @@ msgstr "請求地鐵列車"
 #: data/json/mapgen/lab/lab_trains.json
 msgid "View Subway Routes"
 msgstr "查看地鐵路線"
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_central/lab_central_surface.json
+msgid ""
+"DANGER: RESTRICTED AREA\n"
+"Minefield and autonomous defenses in use.  Lethal force is authorized."
+msgstr ""
+"危险：禁区\n"
+"雷区与自动防御系统已启用。已授权使用致命武力。"
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_central/lab_central_surface.json
+msgid ""
+"DANGER\n"
+"Minefield and autonomous defenses in use.  Lethal force is authorized."
+msgstr ""
+"危险\n"
+"雷区与自动防御系统已启用。已授权使用致命武力。"
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_central/lab_central_surface.json
+msgid ""
+"RESTRICTED AREA\n"
+"Authorized personnel and registered vehicles only.  Photography prohibited.  Please have your identification ready."
+msgstr ""
+"禁区\n"
+"仅限授权人员及登记车辆通行。禁止拍照。请备好身份证明。"
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
+msgid "Log Console"
+msgstr "記錄主機"
+
+#. ~ Computer option
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
+msgid "View Research Logs"
+msgstr "檢視研究日誌"
 
 #. ~ Sign
 #: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
@@ -125666,16 +125789,6 @@ msgstr "PE065储存室"
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
 msgid "PE070 Storage"
 msgstr "PE070储存室"
-
-#. ~ Computer name
-#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
-msgid "Log Console"
-msgstr "記錄主機"
-
-#. ~ Computer option
-#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
-msgid "View Research Logs"
-msgstr "檢視研究日誌"
 
 #: data/json/mapgen/mi-go/Migoship_multitile.json
 msgid "Mi-go ship"
@@ -172277,6 +172390,11 @@ msgid ""
 msgstr ""
 "这是文明陨落前军用动力装甲的最终迭代版本，这种带有高科技分段式装甲板的动力外骨骼，专为广泛的实战用途而设计，并在大灾变最后几天的前线出现过。它比重型装甲更轻便、更灵活，并且仍能可靠地抵御最高至5.56x45mm口径的子弹。不幸的是，在它能够大规模列装之前，世界就走向了终结。一体化的防化紧身内衬使其无法套在其他衣物外，除了大多数内衣或像盾牌这样的手持装备。它当前已开启，激活该物品以将其关闭。"
 
+#: data/json/obsoletion/lab_central_old.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab"
+msgstr "中心實驗室"
+
 #: data/json/obsoletion/missions.json
 msgid "Find a Flu Shot"
 msgstr "尋找流感疫苗"
@@ -174388,6 +174506,7 @@ msgstr "狩猎小屋地下室"
 #: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "forest"
 msgstr "森林"
@@ -174756,6 +174875,7 @@ msgstr "市立反應爐"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_afs.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "warehouse"
 msgstr "倉庫"
 
@@ -175921,6 +176041,7 @@ msgid "power substation roof"
 msgstr "变电所（屋顶）"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "medical center"
 msgstr "医疗中心"
 
@@ -175992,8 +176113,76 @@ msgid "access shaft"
 msgstr "通道井"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
-msgid "central lab"
-msgstr "中心實驗室"
+msgid "perimeter wall"
+msgstr "外围护墙"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "utilities"
+msgstr "公用设施区"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "security building"
+msgstr "安保大楼"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "helipad"
+msgstr "直升機停機坪"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "loading bay"
+msgstr "装卸区"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "entrance gate"
+msgstr "大门"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "plaza"
+msgstr "广场"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "cafeteria"
+msgstr "食堂"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "dormitories"
+msgstr "宿舍"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "office building"
+msgstr "办公楼"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - core"
+msgstr "中央实验室 - 核心区"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - stairs"
+msgstr "中央实验室 - 楼梯"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - central processing"
+msgstr "中央实验室 - 中央数据处理区"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - Melchior"
+msgstr "中央实验室 - 梅尔基奥尔"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - access bay"
+msgstr "中央实验室 - 进出通道区"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - observation"
+msgstr "中央实验室 - 观测区"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - superportal chamber"
+msgstr "中央实验室 - 超级传送门舱室"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - superportal"
+msgstr "中央实验室 - 超级传送门"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "lab basement"
@@ -193607,6 +193796,12 @@ msgid "Wraitheon executive's smartphone"
 msgid_plural "Wraitheon executive's smartphones"
 msgstr[0] "\"幽灵怪\"公司高管智能手机"
 
+#. ~ Use action need_charges_msg for {'str': "Wraitheon executive's
+#. smartphone"}.
+#: data/mods/Aftershock/items/tools.json
+msgid "The Wraitheon executive's smartphone's batteries need more charge."
+msgstr "鬼神公司高管智能手机的电池需要充电。"
+
 #. ~ Description for {'str': "Wraitheon executive's smartphone"}
 #: data/mods/Aftershock/items/tools.json
 msgid ""
@@ -203666,7 +203861,7 @@ msgstr "古怪的房子"
 
 #: data/mods/Arcana_BN/chargen/start_locations.json
 msgid "Rural Church"
-msgstr ""
+msgstr "乡村教堂"
 
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 msgid "upright weapon"
@@ -207294,6 +207489,11 @@ msgstr "从护颈发出的灿烂光芒穿透了披风，直到你的身体被笼
 msgid "This requires dull essence to invoke."
 msgstr "这需要黯淡精华来调用。"
 
+#. ~ Use action menu_text for {'str': 'jade hauberk'}.
+#: data/mods/Arcana_BN/items/tool_armor.json
+msgid "Heal yourself"
+msgstr "自我治疗"
+
 #. ~ Description for {'str': 'jade hauberk'}
 #: data/mods/Arcana_BN/items/tool_armor.json
 msgid ""
@@ -207677,6 +207877,12 @@ msgstr ""
 msgid "offering chalice"
 msgid_plural "offering chalices"
 msgstr[0] "献祭圣杯"
+
+#. ~ Use action menu_text for {'str': 'offering chalice'}.
+#. ~ Use action menu_text for {'str': 'silver athame'}.
+#: data/mods/Arcana_BN/items/tools.json
+msgid "Convert life force into blood essence"
+msgstr "将生命力转化为鲜血精华"
 
 #. ~ Description for {'str': 'offering chalice'}
 #: data/mods/Arcana_BN/items/tools.json
@@ -208364,6 +208570,11 @@ msgid "lichhook"
 msgid_plural "lichhooks"
 msgstr[0] "尸妖钩镰"
 
+#. ~ Use action menu_text for {'str': 'lichhook'}.
+#: data/mods/Arcana_BN/items/tools.json
+msgid "Immobilize victim"
+msgstr "定身受害者"
+
 #. ~ Description for {'str': 'lichhook'}
 #: data/mods/Arcana_BN/items/tools.json
 msgid ""
@@ -208731,6 +208942,11 @@ msgstr ""
 msgid "restored ritual blade"
 msgid_plural "restored ritual blades"
 msgstr[0] "修复的仪式之刃"
+
+#. ~ Use action menu_text for {'str': 'restored ritual blade'}.
+#: data/mods/Arcana_BN/items/tools.json
+msgid "Offer power to the Beyond"
+msgstr "向彼界奉献力量"
 
 #. ~ Description for {'str': 'restored ritual blade'}
 #: data/mods/Arcana_BN/items/tools.json

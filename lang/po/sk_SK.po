@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-08-31 19:15+0000\n"
+"POT-Creation-Date: 2026-09-01 01:27+0000\n"
 "Last-Translator: Krwak, 2026\n"
 "Language-Team: Slovak (Slovakia) (https://app.transifex.com/bn-team/teams/113585/sk_SK/)\n"
 "MIME-Version: 1.0\n"
@@ -13013,7 +13013,18 @@ msgstr ""
 msgid "Train skill"
 msgstr ""
 
-#: data/json/item_actions.json
+#. ~ Use action menu_text for {'str': 'control laptop'}.
+#. ~ Use action menu_text for {'str': 'wrist computer'}.
+#. ~ Use action menu_text for {'str': 'wrist control computer'}.
+#. ~ Use action menu_text for {'str': 'e-ink tablet PC'}.
+#. ~ Use action menu_text for laptop computer.
+#. ~ Use action menu_text for {'str': 'mp3 player (off)', 'str_pl': 'mp3
+#. players (off)'}.
+#. ~ Use action menu_text for {'str': 'smartphone'}.
+#. ~ Use action menu_text for {'str': 'atomic smartphone'}.
+#. ~ Use action menu_text for {'str': "Wraitheon executive's smartphone"}.
+#: data/json/item_actions.json data/json/items/tool/electronics.json
+#: data/mods/Aftershock/items/tools.json data/mods/ebook_lua/items/tools.json
 msgid "Listen to music"
 msgstr ""
 
@@ -34375,6 +34386,7 @@ msgstr ""
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
 #: data/json/furniture_and_terrain/furniture-dim-portals.json
+#: data/json/furniture_and_terrain/furniture-emitters.json
 #: data/json/furniture_and_terrain/furniture-fireplaces.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
@@ -34406,6 +34418,7 @@ msgstr ""
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
 #: data/json/furniture_and_terrain/furniture-dim-portals.json
+#: data/json/furniture_and_terrain/furniture-emitters.json
 #: data/json/furniture_and_terrain/furniture-fireplaces.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
@@ -36701,6 +36714,17 @@ msgstr ""
 msgid "A natural gas vent on the lake bed that is currently emitting heat."
 msgstr ""
 
+#: data/json/furniture_and_terrain/furniture-emitters.json
+msgid "running ventilation shutters"
+msgstr ""
+
+#. ~ Description for running ventilation shutters
+#: data/json/furniture_and_terrain/furniture-emitters.json
+msgid ""
+"A large panel set into the reinforced metal wall.  Somehow still running "
+"despite the chaos, blasting a wave of bitterly cold air into the facility."
+msgstr ""
+
 #: data/json/furniture_and_terrain/furniture-fakes.json
 msgid "fake workbench hands"
 msgstr ""
@@ -37438,6 +37462,22 @@ msgid ""
 "could still be hooked up to provide power to a nearby base.  Alternatively, "
 "it could be salvaged for parts that could be used for power generation "
 "elsewhere."
+msgstr ""
+
+#: data/json/furniture_and_terrain/furniture-industrial.json
+msgid "supercomputer"
+msgstr ""
+
+#. ~ Description for supercomputer
+#: data/json/furniture_and_terrain/furniture-industrial.json
+msgid ""
+"This massive array of panels and screens used to be the focal point of what "
+"was slated to be the bleeding-edge in quantum computing.  A few display "
+"screens still flit through an endless loop of error messages, but whatever "
+"its original purpose was has long since been completely scrambled by the "
+"Cataclysm.  With more power you could connect to what's left of old server "
+"data to train Computer skill, otherwise it's only good for very valuable "
+"scrap."
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-industrial.json
@@ -125380,7 +125420,7 @@ msgstr[3] ""
 msgid ""
 "A high-power bow with shaped cams and extra cables for high velocity shots "
 "that can be used effectively by fairly strong archers.  Currently set to a "
-"medium weight."
+"medium weight, activate it to choose between a lower or higher draw weight."
 msgstr ""
 
 #: data/json/items/ranged/archery.json
@@ -125395,7 +125435,8 @@ msgstr[3] ""
 msgid ""
 "A high-power bow with shaped cams and extra cables for high velocity shots "
 "that can be used effectively by very strong archers.  Currently set to a "
-"high weight, and ready to cause some real damage - if you can draw it."
+"high weight, and ready to cause some real damage - if you can draw it.  "
+"Activate it to adjust it to lower draw weights."
 msgstr ""
 
 #: data/json/items/ranged/archery.json
@@ -125410,7 +125451,8 @@ msgstr[3] ""
 msgid ""
 "A high-power bow with shaped cams and extra cables for high velocity shots "
 "that can be used effectively by average archers.  Currently set to a low "
-"weight, making it much easier to draw."
+"weight, making it much easier to draw.  Activate it to adjust it to higher "
+"draw weights."
 msgstr ""
 
 #: data/json/items/ranged/archery.json
@@ -128877,6 +128919,11 @@ msgstr ""
 msgid "The wrist computer's charge is too low."
 msgstr ""
 
+#. ~ Use action need_charges_msg for {'str': 'wrist computer'}.
+#: data/json/items/tool/electronics.json
+msgid "The wrist computer's batteries need more charge."
+msgstr ""
+
 #. ~ Description for {'str': 'wrist computer'}
 #: data/json/items/tool/electronics.json
 msgid ""
@@ -128937,6 +128984,11 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+#. ~ Use action need_charges_msg for {'str': 'wrist control computer'}.
+#: data/json/items/tool/electronics.json
+msgid "The wrist control computer's batteries need more charge."
+msgstr ""
 
 #. ~ Description for {'str': 'wrist control computer'}
 #: data/json/items/tool/electronics.json
@@ -129012,6 +129064,11 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+#. ~ Use action need_charges_msg for {'str': 'e-ink tablet PC'}.
+#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
+msgid "The e-ink tablet PC's batteries need more charge."
+msgstr ""
 
 #. ~ Description for {'str': 'e-ink tablet PC'}
 #: data/json/items/tool/electronics.json
@@ -129132,6 +129189,11 @@ msgstr[3] ""
 msgid "The laptop's batteries need more charge."
 msgstr ""
 
+#. ~ Use action need_charges_msg for laptop computer.
+#: data/json/items/tool/electronics.json
+msgid "The laptop computer's batteries need more charge."
+msgstr ""
+
 #. ~ Description for laptop computer
 #: data/json/items/tool/electronics.json
 msgid ""
@@ -129162,6 +129224,12 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+#. ~ Use action need_charges_msg for {'str': 'mp3 player (off)', 'str_pl':
+#. 'mp3 players (off)'}.
+#: data/json/items/tool/electronics.json
+msgid "The mp3 player's batteries need more charge."
+msgstr ""
 
 #. ~ Description for {'str': 'mp3 player (off)', 'str_pl': 'mp3 players
 #. (off)'}
@@ -129266,6 +129334,11 @@ msgstr ""
 msgid "The smartphone's charge is too low."
 msgstr ""
 
+#. ~ Use action need_charges_msg for {'str': 'smartphone'}.
+#: data/json/items/tool/electronics.json
+msgid "The smart phone's batteries need more charge."
+msgstr ""
+
 #. ~ Description for {'str': 'smartphone'}
 #: data/json/items/tool/electronics.json
 msgid ""
@@ -129311,6 +129384,11 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+#. ~ Use action need_charges_msg for {'str': 'atomic smartphone'}.
+#: data/json/items/tool/electronics.json
+msgid "The atomic smartphone's batteries need more charge."
+msgstr ""
 
 #. ~ Description for {'str': 'atomic smartphone'}
 #: data/json/items/tool/electronics.json
@@ -140780,6 +140858,7 @@ msgstr ""
 
 #. ~ Computer option
 #: data/json/mapgen/commercial_airport.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
 msgid "Download Map Data"
 msgstr ""
@@ -142064,6 +142143,8 @@ msgstr ""
 
 #. ~ Sign
 #: data/json/mapgen/lab/lab_rooms.json
+#: data/json/mapgen/lab/lab_central/lab_central_core.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid ""
 "Warning!\n"
 "Live Fire Zone\n"
@@ -142085,6 +142166,39 @@ msgstr ""
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_trains.json
 msgid "View Subway Routes"
+msgstr ""
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_central/lab_central_surface.json
+msgid ""
+"DANGER: RESTRICTED AREA\n"
+"Minefield and autonomous defenses in use.  Lethal force is authorized."
+msgstr ""
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_central/lab_central_surface.json
+msgid ""
+"DANGER\n"
+"Minefield and autonomous defenses in use.  Lethal force is authorized."
+msgstr ""
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_central/lab_central_surface.json
+msgid ""
+"RESTRICTED AREA\n"
+"Authorized personnel and registered vehicles only.  Photography prohibited.  Please have your identification ready."
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
+msgid "Log Console"
+msgstr ""
+
+#. ~ Computer option
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
+msgid "View Research Logs"
 msgstr ""
 
 #. ~ Sign
@@ -142151,16 +142265,6 @@ msgstr ""
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
 msgid "PE070 Storage"
-msgstr ""
-
-#. ~ Computer name
-#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
-msgid "Log Console"
-msgstr ""
-
-#. ~ Computer option
-#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
-msgid "View Research Logs"
 msgstr ""
 
 #: data/json/mapgen/mi-go/Migoship_multitile.json
@@ -190067,6 +190171,11 @@ msgid ""
 "like shields.  It is currently turned on, activate it to turn it off."
 msgstr ""
 
+#: data/json/obsoletion/lab_central_old.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab"
+msgstr ""
+
 #: data/json/obsoletion/missions.json
 msgid "Find a Flu Shot"
 msgstr ""
@@ -192222,6 +192331,7 @@ msgstr ""
 #: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "forest"
 msgstr ""
@@ -192590,6 +192700,7 @@ msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_afs.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "warehouse"
 msgstr ""
 
@@ -193755,6 +193866,7 @@ msgid "power substation roof"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "medical center"
 msgstr ""
 
@@ -193826,7 +193938,75 @@ msgid "access shaft"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
-msgid "central lab"
+msgid "perimeter wall"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "utilities"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "security building"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "helipad"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "loading bay"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "entrance gate"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "plaza"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "cafeteria"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "dormitories"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "office building"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - core"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - stairs"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - central processing"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - Melchior"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - access bay"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - observation"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - superportal chamber"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - superportal"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
@@ -211016,6 +211196,12 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
+#. ~ Use action need_charges_msg for {'str': "Wraitheon executive's
+#. smartphone"}.
+#: data/mods/Aftershock/items/tools.json
+msgid "The Wraitheon executive's smartphone's batteries need more charge."
+msgstr ""
+
 #. ~ Description for {'str': "Wraitheon executive's smartphone"}
 #: data/mods/Aftershock/items/tools.json
 msgid ""
@@ -225355,6 +225541,11 @@ msgstr ""
 msgid "This requires dull essence to invoke."
 msgstr ""
 
+#. ~ Use action menu_text for {'str': 'jade hauberk'}.
+#: data/mods/Arcana_BN/items/tool_armor.json
+msgid "Heal yourself"
+msgstr ""
+
 #. ~ Description for {'str': 'jade hauberk'}
 #: data/mods/Arcana_BN/items/tool_armor.json
 msgid ""
@@ -225782,6 +225973,12 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+#. ~ Use action menu_text for {'str': 'offering chalice'}.
+#. ~ Use action menu_text for {'str': 'silver athame'}.
+#: data/mods/Arcana_BN/items/tools.json
+msgid "Convert life force into blood essence"
+msgstr ""
 
 #. ~ Description for {'str': 'offering chalice'}
 #: data/mods/Arcana_BN/items/tools.json
@@ -226573,6 +226770,11 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
+#. ~ Use action menu_text for {'str': 'lichhook'}.
+#: data/mods/Arcana_BN/items/tools.json
+msgid "Immobilize victim"
+msgstr ""
+
 #. ~ Description for {'str': 'lichhook'}
 #: data/mods/Arcana_BN/items/tools.json
 msgid ""
@@ -226971,6 +227173,11 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
+
+#. ~ Use action menu_text for {'str': 'restored ritual blade'}.
+#: data/mods/Arcana_BN/items/tools.json
+msgid "Offer power to the Beyond"
+msgstr ""
 
 #. ~ Description for {'str': 'restored ritual blade'}
 #: data/mods/Arcana_BN/items/tools.json

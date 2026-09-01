@@ -27,15 +27,15 @@
 # 모랑랑, 2026
 # 김정국 <forforever12@gmail.com>, 2026
 # 김동현, 2026
-# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # JJ J <congstrot@gmail.com>, 2026
 # Fruitybite, 2026
+# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-08-31 19:01+0000\n"
-"Last-Translator: Fruitybite, 2026\n"
+"POT-Creation-Date: 2026-09-01 01:27+0000\n"
+"Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13640,7 +13640,18 @@ msgstr "긴장 풀기"
 msgid "Train skill"
 msgstr "기술 훈련하기"
 
-#: data/json/item_actions.json
+#. ~ Use action menu_text for {'str': 'control laptop'}.
+#. ~ Use action menu_text for {'str': 'wrist computer'}.
+#. ~ Use action menu_text for {'str': 'wrist control computer'}.
+#. ~ Use action menu_text for {'str': 'e-ink tablet PC'}.
+#. ~ Use action menu_text for laptop computer.
+#. ~ Use action menu_text for {'str': 'mp3 player (off)', 'str_pl': 'mp3
+#. players (off)'}.
+#. ~ Use action menu_text for {'str': 'smartphone'}.
+#. ~ Use action menu_text for {'str': 'atomic smartphone'}.
+#. ~ Use action menu_text for {'str': "Wraitheon executive's smartphone"}.
+#: data/json/item_actions.json data/json/items/tool/electronics.json
+#: data/mods/Aftershock/items/tools.json data/mods/ebook_lua/items/tools.json
 msgid "Listen to music"
 msgstr "음악 듣기"
 
@@ -36341,6 +36352,7 @@ msgstr ""
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
 #: data/json/furniture_and_terrain/furniture-dim-portals.json
+#: data/json/furniture_and_terrain/furniture-emitters.json
 #: data/json/furniture_and_terrain/furniture-fireplaces.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
@@ -36372,6 +36384,7 @@ msgstr "끼기기기긱!"
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-decorative.json
 #: data/json/furniture_and_terrain/furniture-dim-portals.json
+#: data/json/furniture_and_terrain/furniture-emitters.json
 #: data/json/furniture_and_terrain/furniture-fireplaces.json
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/furniture_and_terrain/furniture-medical.json
@@ -38607,6 +38620,17 @@ msgstr "천연 가스 배출구"
 msgid "A natural gas vent on the lake bed that is currently emitting heat."
 msgstr "호수 지하에 있는 천연 가스 배출구로, 현재 열기를 내뿜고 있습니다."
 
+#: data/json/furniture_and_terrain/furniture-emitters.json
+msgid "running ventilation shutters"
+msgstr ""
+
+#. ~ Description for running ventilation shutters
+#: data/json/furniture_and_terrain/furniture-emitters.json
+msgid ""
+"A large panel set into the reinforced metal wall.  Somehow still running "
+"despite the chaos, blasting a wave of bitterly cold air into the facility."
+msgstr ""
+
 #: data/json/furniture_and_terrain/furniture-fakes.json
 msgid "fake workbench hands"
 msgstr "가짜 작업대 손"
@@ -39325,6 +39349,22 @@ msgstr ""
 "흐르는 물을 이용해 전력을 생산하는데 쓰이는 거대한 터빈입니다. 과거 수 메가와트에 달하던 발전량이 지금은 비할 수 없을 만큼 "
 "줄어들었지만, 그래도 여전히 근처 기치에 전력을 보내도록 연결할 수는 있습니다. 아니면 분해하여 다른 곳에서 발전시설을 꾸리는데 쓸 수 "
 "있도록 해체하여 부품을 얻을 수도 있습니다."
+
+#: data/json/furniture_and_terrain/furniture-industrial.json
+msgid "supercomputer"
+msgstr ""
+
+#. ~ Description for supercomputer
+#: data/json/furniture_and_terrain/furniture-industrial.json
+msgid ""
+"This massive array of panels and screens used to be the focal point of what "
+"was slated to be the bleeding-edge in quantum computing.  A few display "
+"screens still flit through an endless loop of error messages, but whatever "
+"its original purpose was has long since been completely scrambled by the "
+"Cataclysm.  With more power you could connect to what's left of old server "
+"data to train Computer skill, otherwise it's only good for very valuable "
+"scrap."
+msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-industrial.json
 #: data/json/obsoletion/terrain.json
@@ -115605,10 +115645,8 @@ msgstr[0] "컴파운드 보우"
 msgid ""
 "A high-power bow with shaped cams and extra cables for high velocity shots "
 "that can be used effectively by fairly strong archers.  Currently set to a "
-"medium weight."
+"medium weight, activate it to choose between a lower or higher draw weight."
 msgstr ""
-"특수한 형상의 캠과 여러 케이블을 통해 더 높은 위력의 사격이 가능한, 팔 힘이 강한 궁수들이 효율적으로 사용할 수 있는 고장력 "
-"활입니다. 현재 장력이 보통 수준으로 설정되어있습니다."
 
 #: data/json/items/ranged/archery.json
 msgid "compound bow (high)"
@@ -115619,10 +115657,9 @@ msgstr[0] "컴파운드 보우 (고강도)"
 msgid ""
 "A high-power bow with shaped cams and extra cables for high velocity shots "
 "that can be used effectively by very strong archers.  Currently set to a "
-"high weight, and ready to cause some real damage - if you can draw it."
+"high weight, and ready to cause some real damage - if you can draw it.  "
+"Activate it to adjust it to lower draw weights."
 msgstr ""
-"특수한 형상의 캠과 여러 케이블을 통해 더 높은 위력의 사격이 가능한, 팔 힘이 아주 강한 궁수들이 효율적으로 사용할 수 있는 고장력 "
-"활입니다. 현재 장력이 높은 수준으로 설정되어있어, 정말 치명적인 피해를 가할 수 있습니다 - 현을 당길 수 있다면 말이죠."
 
 #: data/json/items/ranged/archery.json
 msgid "compound bow (low)"
@@ -115633,10 +115670,9 @@ msgstr[0] "컴파운드 보우 (저강도)"
 msgid ""
 "A high-power bow with shaped cams and extra cables for high velocity shots "
 "that can be used effectively by average archers.  Currently set to a low "
-"weight, making it much easier to draw."
+"weight, making it much easier to draw.  Activate it to adjust it to higher "
+"draw weights."
 msgstr ""
-"특수한 형상의 캠과 여러 케이블을 통해 더 높은 위력의 사격이 가능한, 평범한 궁수들이 효율적으로 사용할 수 있는 고장력 활입니다. 현재"
-" 장력이 낮은 수준으로 설정되어있어, 현을 더 쉽게 당길 수 있습니다."
 
 #: data/json/items/ranged/archery.json
 msgid "composite longbow"
@@ -118659,6 +118695,11 @@ msgstr "손전등 기능을 작동시킵니다."
 msgid "The wrist computer's charge is too low."
 msgstr "손목 컴퓨터의 배터리가 부족합니다."
 
+#. ~ Use action need_charges_msg for {'str': 'wrist computer'}.
+#: data/json/items/tool/electronics.json
+msgid "The wrist computer's batteries need more charge."
+msgstr ""
+
 #. ~ Description for {'str': 'wrist computer'}
 #: data/json/items/tool/electronics.json
 msgid ""
@@ -118711,6 +118752,11 @@ msgstr "손전등 기능을 종료시킵니다."
 msgid "wrist control computer"
 msgid_plural "wrist control computers"
 msgstr[0] "제어용 손목 컴퓨터"
+
+#. ~ Use action need_charges_msg for {'str': 'wrist control computer'}.
+#: data/json/items/tool/electronics.json
+msgid "The wrist control computer's batteries need more charge."
+msgstr ""
 
 #. ~ Description for {'str': 'wrist control computer'}
 #: data/json/items/tool/electronics.json
@@ -118775,6 +118821,11 @@ msgstr ""
 msgid "e-ink tablet PC"
 msgid_plural "e-ink tablet PCs"
 msgstr[0] "전자잉크 태블릿 PC"
+
+#. ~ Use action need_charges_msg for {'str': 'e-ink tablet PC'}.
+#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
+msgid "The e-ink tablet PC's batteries need more charge."
+msgstr ""
 
 #. ~ Description for {'str': 'e-ink tablet PC'}
 #: data/json/items/tool/electronics.json
@@ -118885,6 +118936,11 @@ msgstr[0] "노트북 컴퓨터"
 msgid "The laptop's batteries need more charge."
 msgstr "노트북의 배터리가 부족합니다."
 
+#. ~ Use action need_charges_msg for laptop computer.
+#: data/json/items/tool/electronics.json
+msgid "The laptop computer's batteries need more charge."
+msgstr ""
+
 #. ~ Description for laptop computer
 #: data/json/items/tool/electronics.json
 msgid ""
@@ -118906,6 +118962,12 @@ msgstr[0] "노트북 컴퓨터 (켜짐)"
 msgid "mp3 player (off)"
 msgid_plural "mp3 players (off)"
 msgstr[0] "MP3 플레이어 (꺼짐)"
+
+#. ~ Use action need_charges_msg for {'str': 'mp3 player (off)', 'str_pl':
+#. 'mp3 players (off)'}.
+#: data/json/items/tool/electronics.json
+msgid "The mp3 player's batteries need more charge."
+msgstr ""
 
 #. ~ Description for {'str': 'mp3 player (off)', 'str_pl': 'mp3 players
 #. (off)'}
@@ -119003,6 +119065,11 @@ msgstr "손전등 앱을 실행합니다."
 msgid "The smartphone's charge is too low."
 msgstr "스마트폰의 충전량이 너무 낮다."
 
+#. ~ Use action need_charges_msg for {'str': 'smartphone'}.
+#: data/json/items/tool/electronics.json
+msgid "The smart phone's batteries need more charge."
+msgstr ""
+
 #. ~ Description for {'str': 'smartphone'}
 #: data/json/items/tool/electronics.json
 msgid ""
@@ -119042,6 +119109,11 @@ msgstr[0] "스마트폰 (켜짐)"
 msgid "atomic smartphone"
 msgid_plural "atomic smartphones"
 msgstr[0] "원자력 스마트폰"
+
+#. ~ Use action need_charges_msg for {'str': 'atomic smartphone'}.
+#: data/json/items/tool/electronics.json
+msgid "The atomic smartphone's batteries need more charge."
+msgstr ""
 
 #. ~ Description for {'str': 'atomic smartphone'}
 #: data/json/items/tool/electronics.json
@@ -129043,6 +129115,7 @@ msgstr "항공 관제 제어판"
 
 #. ~ Computer option
 #: data/json/mapgen/commercial_airport.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
 msgid "Download Map Data"
 msgstr "지도 자료 내려받기"
@@ -130329,6 +130402,8 @@ msgstr "대공명 활성화"
 
 #. ~ Sign
 #: data/json/mapgen/lab/lab_rooms.json
+#: data/json/mapgen/lab/lab_central/lab_central_core.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid ""
 "Warning!\n"
 "Live Fire Zone\n"
@@ -130354,6 +130429,39 @@ msgstr "지하철 호출"
 #: data/json/mapgen/lab/lab_trains.json
 msgid "View Subway Routes"
 msgstr "지하철 선로 보기"
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_central/lab_central_surface.json
+msgid ""
+"DANGER: RESTRICTED AREA\n"
+"Minefield and autonomous defenses in use.  Lethal force is authorized."
+msgstr ""
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_central/lab_central_surface.json
+msgid ""
+"DANGER\n"
+"Minefield and autonomous defenses in use.  Lethal force is authorized."
+msgstr ""
+
+#. ~ Sign
+#: data/json/mapgen/lab/lab_central/lab_central_surface.json
+msgid ""
+"RESTRICTED AREA\n"
+"Authorized personnel and registered vehicles only.  Photography prohibited.  Please have your identification ready."
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
+msgid "Log Console"
+msgstr "로크 콘솔"
+
+#. ~ Computer option
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
+msgid "View Research Logs"
+msgstr "연구일지 열람"
 
 #. ~ Sign
 #: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
@@ -130420,16 +130528,6 @@ msgstr "PE065 저장고"
 #: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_mutagen.json
 msgid "PE070 Storage"
 msgstr "PE070 저장고"
-
-#. ~ Computer name
-#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
-msgid "Log Console"
-msgstr "로크 콘솔"
-
-#. ~ Computer option
-#: data/json/mapgen/lab/lab_modular/lab_nests_modular/lab_nested_security.json
-msgid "View Research Logs"
-msgstr "연구일지 열람"
 
 #: data/json/mapgen/mi-go/Migoship_multitile.json
 msgid "Mi-go ship"
@@ -179547,6 +179645,11 @@ msgstr ""
 "끝장났습니다. 내장형 내화학성 보호복이 포함되어, 속옷처럼 애초에 의복 안에 입도록 만들어졌거나 방패처럼 손으로 들도록 만들어진 장비 "
 "이외의 다른 의복과 겹쳐입을 수 없습니다. 현재 작동 중이며, 사용하여 전원을 끌 수 있습니다."
 
+#: data/json/obsoletion/lab_central_old.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab"
+msgstr "중앙 연구소"
+
 #: data/json/obsoletion/missions.json
 msgid "Find a Flu Shot"
 msgstr "독감 주사 찾기"
@@ -181720,6 +181823,7 @@ msgstr "사냥 오두막 지하실"
 #: data/json/overmap/overmap_terrain/overmap_terrain_agricultural.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "forest"
 msgstr "숲"
@@ -182088,6 +182192,7 @@ msgstr "시영 반응로"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_afs.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "warehouse"
 msgstr "창고"
 
@@ -183253,6 +183358,7 @@ msgid "power substation roof"
 msgstr "변전소 지붕"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_industrial.json
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "medical center"
 msgstr "의료 센터"
 
@@ -183324,8 +183430,76 @@ msgid "access shaft"
 msgstr "출입구"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
-msgid "central lab"
-msgstr "중앙 연구소"
+msgid "perimeter wall"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "utilities"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "security building"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "helipad"
+msgstr "발착장"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "loading bay"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "entrance gate"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "plaza"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "cafeteria"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "dormitories"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "office building"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - core"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - stairs"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - central processing"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - Melchior"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - access bay"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - observation"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - superportal chamber"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
+msgid "central lab - superportal"
+msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "lab basement"
@@ -202075,6 +202249,12 @@ msgid "Wraitheon executive's smartphone"
 msgid_plural "Wraitheon executive's smartphones"
 msgstr[0] "래이시온 간부 스마트폰"
 
+#. ~ Use action need_charges_msg for {'str': "Wraitheon executive's
+#. smartphone"}.
+#: data/mods/Aftershock/items/tools.json
+msgid "The Wraitheon executive's smartphone's batteries need more charge."
+msgstr ""
+
 #. ~ Description for {'str': "Wraitheon executive's smartphone"}
 #: data/mods/Aftershock/items/tools.json
 msgid ""
@@ -216068,6 +216248,11 @@ msgstr "목장식으로부터 찬란한 광휘가 뻗어나와 외투를 뚫고 
 msgid "This requires dull essence to invoke."
 msgstr "흐릿한 정수가 있어야 작동합니다."
 
+#. ~ Use action menu_text for {'str': 'jade hauberk'}.
+#: data/mods/Arcana_BN/items/tool_armor.json
+msgid "Heal yourself"
+msgstr ""
+
 #. ~ Description for {'str': 'jade hauberk'}
 #: data/mods/Arcana_BN/items/tool_armor.json
 msgid ""
@@ -216459,6 +216644,12 @@ msgstr ""
 msgid "offering chalice"
 msgid_plural "offering chalices"
 msgstr[0] "공물 성배"
+
+#. ~ Use action menu_text for {'str': 'offering chalice'}.
+#. ~ Use action menu_text for {'str': 'silver athame'}.
+#: data/mods/Arcana_BN/items/tools.json
+msgid "Convert life force into blood essence"
+msgstr ""
 
 #. ~ Description for {'str': 'offering chalice'}
 #: data/mods/Arcana_BN/items/tools.json
@@ -217136,6 +217327,11 @@ msgid "lichhook"
 msgid_plural "lichhooks"
 msgstr[0] "리치의 갈고리"
 
+#. ~ Use action menu_text for {'str': 'lichhook'}.
+#: data/mods/Arcana_BN/items/tools.json
+msgid "Immobilize victim"
+msgstr ""
+
 #. ~ Description for {'str': 'lichhook'}
 #: data/mods/Arcana_BN/items/tools.json
 msgid ""
@@ -217483,6 +217679,11 @@ msgstr ""
 msgid "restored ritual blade"
 msgid_plural "restored ritual blades"
 msgstr[0] "정화된 제례의 검"
+
+#. ~ Use action menu_text for {'str': 'restored ritual blade'}.
+#: data/mods/Arcana_BN/items/tools.json
+msgid "Offer power to the Beyond"
+msgstr ""
 
 #. ~ Description for {'str': 'restored ritual blade'}
 #: data/mods/Arcana_BN/items/tools.json
