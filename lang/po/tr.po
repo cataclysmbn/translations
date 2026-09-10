@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-09 19:28+0000\n"
+"POT-Creation-Date: 2026-09-10 20:04+0000\n"
 "Last-Translator: Arif Öcal, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -158855,12 +158855,10 @@ msgstr "Hızlı İyileşen"
 #. ~ Description for {'str': 'Fast Healer'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your wounds heal themselves quicker than usual.  You heal 50% faster whilst "
-"asleep, and 20% faster whilst awake.  Your broken limbs also heal twice as "
-"fast."
+"Your wounds heal themselves quicker than usual.  Sleep and medicine heal you"
+" 50% faster, and you even heal a little while awake.  Your broken limbs also"
+" heal less poorly without splints."
 msgstr ""
-"Yaraların normalden daha hızlı iyileşir. Uyurken %50 daha hızlı, uyanıkken "
-"%20 daha hızlı iyileşirsin. Kırık uzuvların da iki kat daha hızlı iyileşir."
 
 #: data/json/mutations/mutations.json
 msgid "Light Eater"
@@ -159498,11 +159496,9 @@ msgstr "Yavaş İyileşen"
 #. ~ Description for {'str': 'Slow Healer'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your wounds heal a little slower than most.  Your HP whilst asleep heals at "
-"75% of the regular rate."
+"Your wounds heal a little slower than most.  Your HP heals at 75% of the "
+"regular rate."
 msgstr ""
-"Yaralarınız çoğu kişiden biraz daha yavaş iyileşir. Uyurken HP'niz normal "
-"hızın %75'i oranında iyileşir."
 
 #: data/json/mutations/mutations.json
 msgid "Poor Healer"
@@ -159511,11 +159507,9 @@ msgstr "Kötü İyileştirici"
 #. ~ Description for {'str': 'Poor Healer'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your health recovery is severely impaired.  Your HP whilst asleep heals at "
-"33% of the regular rate."
+"Your health recovery is severely impaired.  Your HP heals at 33% of the "
+"regular rate."
 msgstr ""
-"Sağlık toparlanmanız ciddi şekilde zayıflamıştır. Uyurken HP'niz normal "
-"hızın %33'ü oranında iyileşir."
 
 #: data/json/mutations/mutations.json
 msgid "Imperceptive Healer"
@@ -159525,10 +159519,8 @@ msgstr "Algılanamaz İyileştirici"
 #: data/json/mutations/mutations.json
 msgid ""
 "Wounds are incredibly dangerous to you, as they barely heal at all.  Your HP"
-" whilst asleep heals at 10% of the regular rate."
+" heals at 10% of the regular rate."
 msgstr ""
-"Yaralar sizin için son derece tehlikelidir, çünkü neredeyse hiç "
-"iyileşmezler. Uyurken HP'niz normal hızın %10'u oranında iyileşir."
 
 #: data/json/mutations/mutations.json
 msgid "Far-Sighted"
@@ -160300,9 +160292,9 @@ msgstr "Çok Hızlı İyileşme"
 #. ~ Description for {'str': 'Very Fast Healer'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your flesh regenerates slowly, and you will regain HP even when not "
-"sleeping."
-msgstr "Etiniz yavaşça yenilenir ve uyumadığınızda bile HP kazanırsınız."
+"Your flesh regenerates slowly.  You will regain HP at a moderate rate even "
+"when not sleeping, and sleep and medicine will heal you 50% more."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Regeneration"
@@ -160311,13 +160303,10 @@ msgstr "Yenilenme"
 #. ~ Description for {'str': 'Regeneration'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your flesh regenerates from wounds incredibly quickly.  You heal 150% faster"
-" whilst asleep and 200% faster whilst awake.  You do not require splints to "
-"heal broken limbs."
+"Your flesh regenerates from wounds incredibly quickly.  You constantly "
+"regenerate HP at a rapid rate, and sleep and medicine heal you 150% more.  "
+"You do not require splints to heal broken limbs."
 msgstr ""
-"Etiniz yaralardan inanılmaz hızlı bir şekilde yenilenir. Uyurken %150 daha "
-"hızlı, uyanıkken %200 daha hızlı iyileşirsiniz. Kırık uzuvları iyileştirmek "
-"için atel gerektirmezsiniz."
 
 #: data/json/mutations/mutations.json
 msgid "Reptilian Healing"
@@ -163242,11 +163231,9 @@ msgstr "Hızlı Metabolizma"
 #. ~ Description for {'str': 'Rapid Metabolism'}
 #: data/json/mutations/mutations.json
 msgid ""
-"You require more resources than most, but heal more rapidly as well.  "
+"You require more food and sleep than most, but heal more rapidly as well.  "
 "Provides weak regeneration even when not asleep."
 msgstr ""
-"Çoğundan daha fazla kaynağa ihtiyacınız var, ancak daha hızlı iyileşirsiniz."
-" Uykuda olmadığınızda bile zayıf bir yenilenme sağlar."
 
 #: data/json/mutations/mutations.json
 msgid "Very Fast Metabolism"
@@ -342007,6 +341994,23 @@ msgid "It is a creature."
 msgstr "Bu bir yaratık."
 
 #: src/monster.cpp
+msgid "It can act right now."
+msgstr ""
+
+#: src/monster.cpp
+msgid "It is not recovering."
+msgstr ""
+
+#: src/monster.cpp
+msgid "It will be ready next turn."
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It will be ready in %d turns."
+msgstr ""
+
+#: src/monster.cpp
 msgid "Can see to your current location"
 msgstr ""
 
@@ -342017,6 +342021,11 @@ msgstr ""
 #: src/monster.cpp
 msgid " Difficulty "
 msgstr "Zorluk"
+
+#: src/monster.cpp
+#, c-format
+msgid "Moves: %d  Speed: %d"
+msgstr ""
 
 #: src/monster.cpp
 #, c-format
@@ -342271,6 +342280,11 @@ msgstr "Saniye başına ortalama hasar ver: <stat>%.1f</stat>"
 #, c-format
 msgid "Current Speed: %1$d"
 msgstr "Mevcut Hız: %1$d"
+
+#: src/monster.cpp
+#, c-format
+msgid "Current Moves: %1$d"
+msgstr ""
 
 #: src/monster.cpp
 #, c-format

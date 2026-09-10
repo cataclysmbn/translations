@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-09 19:28+0000\n"
+"POT-Creation-Date: 2026-09-10 20:04+0000\n"
 "Last-Translator: Neko Sippo, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -135894,10 +135894,10 @@ msgstr "高速治癒"
 #. ~ Description for {'str': 'Fast Healer'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your wounds heal themselves quicker than usual.  You heal 50% faster whilst "
-"asleep, and 20% faster whilst awake.  Your broken limbs also heal twice as "
-"fast."
-msgstr "傷が通常より早く治る。睡眠中は50%、起きている間は20%回復が速くなる。骨折した手足も2倍の速さで治る。"
+"Your wounds heal themselves quicker than usual.  Sleep and medicine heal you"
+" 50% faster, and you even heal a little while awake.  Your broken limbs also"
+" heal less poorly without splints."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Light Eater"
@@ -136449,9 +136449,9 @@ msgstr "治癒が遅い"
 #. ~ Description for {'str': 'Slow Healer'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your wounds heal a little slower than most.  Your HP whilst asleep heals at "
-"75% of the regular rate."
-msgstr "傷の治りが他の人より少し遅い。睡眠中のHP回復速度が通常の75%になる。"
+"Your wounds heal a little slower than most.  Your HP heals at 75% of the "
+"regular rate."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Poor Healer"
@@ -136460,9 +136460,9 @@ msgstr "治癒力不足"
 #. ~ Description for {'str': 'Poor Healer'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your health recovery is severely impaired.  Your HP whilst asleep heals at "
-"33% of the regular rate."
-msgstr "体力回復能力が著しく損なわれている。睡眠中のHP回復速度が通常の33%になる。"
+"Your health recovery is severely impaired.  Your HP heals at 33% of the "
+"regular rate."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Imperceptive Healer"
@@ -136472,8 +136472,8 @@ msgstr "治癒力欠乏"
 #: data/json/mutations/mutations.json
 msgid ""
 "Wounds are incredibly dangerous to you, as they barely heal at all.  Your HP"
-" whilst asleep heals at 10% of the regular rate."
-msgstr "傷はお前にとって信じられないほど危険だ。ほとんど治癒しないため、睡眠中のHP回復速度が通常の10%になる。"
+" heals at 10% of the regular rate."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Far-Sighted"
@@ -137135,9 +137135,9 @@ msgstr "超高速治癒"
 #. ~ Description for {'str': 'Very Fast Healer'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your flesh regenerates slowly, and you will regain HP even when not "
-"sleeping."
-msgstr "身体が徐々に回復する。睡眠をとっていない間もHPが回復する。"
+"Your flesh regenerates slowly.  You will regain HP at a moderate rate even "
+"when not sleeping, and sleep and medicine will heal you 50% more."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Regeneration"
@@ -137146,10 +137146,10 @@ msgstr "再生力"
 #. ~ Description for {'str': 'Regeneration'}
 #: data/json/mutations/mutations.json
 msgid ""
-"Your flesh regenerates from wounds incredibly quickly.  You heal 150% faster"
-" whilst asleep and 200% faster whilst awake.  You do not require splints to "
-"heal broken limbs."
-msgstr "傷からの回復が驚くほど速い。睡眠中の治癒速度が150%増加し、覚醒中は200%増加する。骨折の治療に副木は不要となる。"
+"Your flesh regenerates from wounds incredibly quickly.  You constantly "
+"regenerate HP at a rapid rate, and sleep and medicine heal you 150% more.  "
+"You do not require splints to heal broken limbs."
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Reptilian Healing"
@@ -139689,9 +139689,9 @@ msgstr "高速新陳代謝"
 #. ~ Description for {'str': 'Rapid Metabolism'}
 #: data/json/mutations/mutations.json
 msgid ""
-"You require more resources than most, but heal more rapidly as well.  "
+"You require more food and sleep than most, but heal more rapidly as well.  "
 "Provides weak regeneration even when not asleep."
-msgstr "ほとんどの人よりも多くの資源を必要とするが、回復も速くなる。眠っていなくてもわずかにHPが再生する。"
+msgstr ""
 
 #: data/json/mutations/mutations.json
 msgid "Very Fast Metabolism"
@@ -301786,6 +301786,23 @@ msgid "It is a creature."
 msgstr "それは生き物だ。"
 
 #: src/monster.cpp
+msgid "It can act right now."
+msgstr ""
+
+#: src/monster.cpp
+msgid "It is not recovering."
+msgstr ""
+
+#: src/monster.cpp
+msgid "It will be ready next turn."
+msgstr ""
+
+#: src/monster.cpp
+#, c-format
+msgid "It will be ready in %d turns."
+msgstr ""
+
+#: src/monster.cpp
 msgid "Can see to your current location"
 msgstr ""
 
@@ -301796,6 +301813,11 @@ msgstr ""
 #: src/monster.cpp
 msgid " Difficulty "
 msgstr "難易度"
+
+#: src/monster.cpp
+#, c-format
+msgid "Moves: %d  Speed: %d"
+msgstr ""
 
 #: src/monster.cpp
 #, c-format
@@ -302050,6 +302072,11 @@ msgstr "平均1秒あたりダメージ量:%.1f"
 #, c-format
 msgid "Current Speed: %1$d"
 msgstr "現在速度:%1$d"
+
+#: src/monster.cpp
+#, c-format
+msgid "Current Moves: %1$d"
+msgstr ""
 
 #: src/monster.cpp
 #, c-format
