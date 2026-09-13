@@ -12,29 +12,29 @@
 # kamo - <xeno95@naver.com>, 2026
 # DelFe, 2026
 # 99ecc9bedd126001a124273d35cfc4be_27e32b0 <edc99dec1fb9a34ce3e45b0fa08e9e04_986631>, 2026
-# Sail Recycle <sailrecycle@gmail.com>, 2026
-# 백도 <tmtm1379@gmail.com>, 2026
-# Cokafold, 2026
 # ARDOR Flag, 2026
 # 이찬기, 2026
 # 47a81cb9738d39622e1b1fde74c42b2a_791bd4f <20fb875a401cb03ba4fd8103e46da6b9_1176784>, 2026
 # k jh <4492kjh@gmail.com>, 2026
-# scarf <greenscarf005@gmail.com>, 2026
 # Sungho Han <Hilldolfr@gmail.com>, 2026
 # David Kim, 2026
-# a, 2026
 # Tae Heon Lim, 2026
 # 김정국 <forforever12@gmail.com>, 2026
-# 김동현, 2026
-# Coolthulhu <Coolthulhu@gmail.com>, 2026
+# 백도 <tmtm1379@gmail.com>, 2026
+# Cokafold, 2026
+# scarf <greenscarf005@gmail.com>, 2026
+# Sail Recycle <sailrecycle@gmail.com>, 2026
 # JJ J <congstrot@gmail.com>, 2026
+# 김동현, 2026
 # 모랑랑, 2026
+# a, 2026
+# Coolthulhu <Coolthulhu@gmail.com>, 2026
 # Fruitybite, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-12 22:27+0000\n"
+"POT-Creation-Date: 2026-09-13 20:58+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -5343,6 +5343,7 @@ msgid "Favorite"
 msgstr "즐겨찾기 등록"
 
 #: data/json/construction_category.json data/raw/keybindings/keybindings.json
+#: src/vehicle/veh_interact.cpp
 msgid "Filter"
 msgstr "필터"
 
@@ -17545,7 +17546,7 @@ msgid "Resin"
 msgstr "수지"
 
 #: data/json/materials.json data/mods/Aftershock/items/materials.json
-#: data/mods/MagicalNights/materials.json
+#: data/mods/MagicalNights/materials.json src/vehicle/vehicle.cpp
 msgid "dented"
 msgstr "찌그러진"
 
@@ -17586,7 +17587,7 @@ msgstr "구부러진"
 msgid "smashed"
 msgstr "거의 박살난"
 
-#: data/json/materials.json src/character.cpp
+#: data/json/materials.json src/character.cpp src/vehicle/vehicle.cpp
 msgid "destroyed"
 msgstr "박살난"
 
@@ -31557,6 +31558,7 @@ msgid "a snapping sound."
 msgstr "뭔가 부러지는 소리."
 
 #: data/json/speech.json src/iexamine.cpp src/iuse_actor.cpp
+#: src/vehicle/vehicle_use.cpp
 msgid "beep!"
 msgstr "삐익!"
 
@@ -32496,15 +32498,15 @@ msgstr "모터가 퍼덕거리며 살아나는 소리!"
 msgid "an engine revving up!"
 msgstr "엔진이 울부짖는 소리!"
 
-#: data/json/speech.json
+#: data/json/speech.json src/vehicle/vehicle.cpp
 msgid "hummm!"
 msgstr "부아아앙!"
 
-#: data/json/speech.json
+#: data/json/speech.json src/vehicle/vehicle.cpp
 msgid "whirrr!"
 msgstr "위잉!"
 
-#: data/json/speech.json
+#: data/json/speech.json src/vehicle/vehicle.cpp
 msgid "vroom!"
 msgstr "부르릉!"
 
@@ -35240,7 +35242,7 @@ msgid "sleep aid"
 msgstr "수면 도움"
 
 #: data/json/traps.json data/json/items/generic.json src/advanced_inv.cpp
-#: src/map_extras.cpp src/recipe.cpp
+#: src/magic/magic.cpp src/map_extras.cpp src/recipe.cpp
 msgid "none"
 msgid_plural "none"
 msgstr[0] "없음"
@@ -37895,6 +37897,7 @@ msgstr "전력망에 연결된 전등 스위치입니다. 현재 꺼져있습니
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 #: data/mods/MagicalNights/furniture.json
 #: data/mods/desert_region/desert_terrain.json src/mapdata.h
+#: src/vehicle/vehicle_move.cpp
 msgid "smash!"
 msgstr "쾅!"
 
@@ -58478,7 +58481,7 @@ msgstr[0] "잭 오 랜턴"
 #. ~ Use action menu_text for {'str': 'candle'}.
 #: data/json/items/items_holiday.json data/json/items/melee/bludgeons.json
 #: data/json/items/tool/lighting.json src/activity_actor.cpp
-#: src/crafting_gui.cpp src/player_activity.cpp
+#: src/crafting_gui.cpp src/player_activity.cpp src/vehicle/veh_interact.cpp
 msgid "Light"
 msgstr "켜기"
 
@@ -74555,7 +74558,9 @@ msgstr[0] "광대 코"
 
 #. ~ Use action noise_message for {'str': 'clown nose'}.
 #. ~ Use action noise_message for {'str': 'bicycle horn'}.
+#. ~ Weak horn sound
 #: data/json/items/armor/misc.json data/json/items/tool/misc.json
+#: src/vehicle/vehicle_use.cpp
 msgid "honk."
 msgstr "빵빵."
 
@@ -104363,6 +104368,12 @@ msgid ""
 "Glock 22 magazines."
 msgstr ".40 S&W 탄약을 사용하는 반자동 소총입니다. 글록 22 탄창과 호환됩니다."
 
+#: data/json/items/gun/40.json data/json/items/gun/45.json
+#: data/json/items/gun/9mm.json
+msgid "H&K UMP"
+msgid_plural "H&K UMPs"
+msgstr[0] "H&K UMP"
+
 #: data/json/items/gun/40.json
 msgid "KRISS Vector .40 S&W"
 msgid_plural "KRISS Vector .40 S&Ws"
@@ -104645,21 +104656,13 @@ msgstr ""
 "탄약을 사용합니다."
 
 #: data/json/items/gun/45.json
-msgid "H&K UMP45"
-msgid_plural "H&K UMP45s"
-msgstr[0] "H&K UMP45"
-
-#: data/json/items/gun/45.json
 msgid ""
 "Developed as a lower-cost successor to H&K's own MP5, the Universal Machine "
 "Pistol is a closed-bolt, simple blowback sub-machine gun constructed of "
-"lightweight polymer.  In order to make it more attractive to American police"
-" departments, it was offered in .40 S&W and .45 ACP as well as the "
-"ubiquitous 9x19mm.  This version is chambered in .45 ACP."
+"lightweight polymer.  Originally designed for .45 ACP, it is also available "
+"in .40 S&W and 9x19mm, and can be converted to fire those calibers with the "
+"proper conversion kit."
 msgstr ""
-"H&K MP5의 저비용 후계기로 개발된 UMP (범용 기관권총) 은 클로즈드 볼트, 단순 직동식으로 만들어진 경량 폴리머 재질의 "
-"기관단총입니다. 미국 경찰이 보다 매력적으로 여기도록 범용적인 9x19mm와 더불어 .40 S&W 및 .45 ACP 탄약용 총열도 함께 "
-"개발되었습니다. 이 총기는 .45 ACP 탄약을 사용합니다."
 
 #: data/json/items/gun/45.json
 msgid "M1911"
@@ -107571,6 +107574,29 @@ msgid "m27iar"
 msgstr "M27 IAR"
 
 #: data/json/items/gunmod/conversions.json
+msgid ".40 S&W UMP conversion kit"
+msgid_plural ".40 S&W UMP conversion kits"
+msgstr[0] ".40 S&W UMP 전환 키트"
+
+#: data/json/items/gunmod/conversions.json
+msgid "A bolt and barrel assembly to convert the UMP to fire .40 S&W."
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
+msgid "9x19mm UMP conversion kit"
+msgid_plural "9x19mm UMP conversion kits"
+msgstr[0] "9x19mm UMP 전환 키트"
+
+#: data/json/items/gunmod/conversions.json
+msgid "A bolt and barrel assembly to convert the UMP to fire 9x19mm."
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
 msgid "40x53mm grenade launcher conversion kit"
 msgid_plural "40x53mm grenade launcher conversion kits"
 msgstr[0] "40x53mm 유탄발사기 전환 키트"
@@ -110413,6 +110439,18 @@ msgid "A 10-round steel box magazine for use with the Hi-Point Model JCP."
 msgstr "하이-포인트 JCP 모델에 사용되는 10발들이 철제 박스 탄창입니다."
 
 #: data/json/items/magazine/40.json
+msgid "UMP40 magazine"
+msgid_plural "UMP40 magazines"
+msgstr[0] "UMP40 탄창"
+
+#. ~ Description for {'str': 'UMP40 magazine'}
+#: data/json/items/magazine/40.json
+msgid ""
+"A straight, double-stack plastic box magazine for the UMP sub-machine gun in"
+" .40 S&W.  Holds 30 rounds."
+msgstr ""
+
+#: data/json/items/magazine/40.json
 msgid "KRISS Vector .40 S&W/.357 SIG magazine"
 msgid_plural "KRISS Vector .40 S&W/.357 SIG magazines"
 msgstr[0] "크리스 벡터 탄창 (.40 S&W/.357 SIG)"
@@ -110940,6 +110978,18 @@ msgid ""
 "A surprisingly compact 50-round helical magazine for use with the Calico "
 "M960 SMG."
 msgstr "칼리코 M960 기관단총용 50발 들이 헬리컬식 탄창. 장탄량에 비해 상당히 소형입니다."
+
+#: data/json/items/magazine/9mm.json
+msgid "UMP9 magazine"
+msgid_plural "UMP9 magazines"
+msgstr[0] "UMP9 탄창"
+
+#. ~ Description for {'str': 'UMP9 magazine'}
+#: data/json/items/magazine/9mm.json
+msgid ""
+"A curved, double-stack plastic box magazine for the UMP sub-machine gun in "
+"9x19mm.  Holds 30 rounds."
+msgstr ""
 
 #: data/json/items/magazine/9mm.json
 msgid "Glock extended magazine"
@@ -141337,7 +141387,7 @@ msgstr "느린 회복"
 msgid ""
 "Your wounds heal a little slower than most.  Your HP heals at 75% of the "
 "regular rate."
-msgstr ""
+msgstr "상처가 회복되는 속도가 다른 이들보다 조금 느립니다. 체력이 회복되는 속도가 75%로 줄어듭니다."
 
 #: data/json/mutations/mutations.json
 msgid "Poor Healer"
@@ -141348,7 +141398,7 @@ msgstr "매우 느린 회복"
 msgid ""
 "Your health recovery is severely impaired.  Your HP heals at 33% of the "
 "regular rate."
-msgstr ""
+msgstr "체력 회복이 심각하게 느립니다. 체력이 회복되는 속도가 33%로 줄어듭니다."
 
 #: data/json/mutations/mutations.json
 msgid "Imperceptive Healer"
@@ -141359,7 +141409,7 @@ msgstr "극히 느린 회복"
 msgid ""
 "Wounds are incredibly dangerous to you, as they barely heal at all.  Your HP"
 " heals at 10% of the regular rate."
-msgstr ""
+msgstr "상처 회복이 극도로 느려진 이상 사소한 부상도 극도로 치명적이게 되었습니다. 체력이 회복되는 속도가 10%로 줄어듭니다."
 
 #: data/json/mutations/mutations.json
 msgid "Far-Sighted"
@@ -147709,7 +147759,8 @@ msgstr "대열을 유지해: 내 주변에 있는 장애물 쪽으로 이동하�
 #: src/avatar_functions.cpp src/character_functions.cpp src/crafting.cpp
 #: src/game.cpp src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp
 #: src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp
-#: src/pickup.cpp src/salvage.cpp
+#: src/pickup.cpp src/salvage.cpp src/vehicle/veh_interact.cpp
+#: src/vehicle/vehicle_use.cpp
 msgid "Never mind."
 msgstr "아무 것도 하지 않습니다."
 
@@ -173834,7 +173885,7 @@ msgstr "쓸모없긴…"
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid "Steal a Dead Man's Mind"
-msgstr ""
+msgstr "죽은 자의 생각 훔치기"
 
 #. ~ Description for mission '{'str': "Steal a Dead Man's Mind"}'
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
@@ -173892,7 +173943,7 @@ msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid "Light Retrieval"
-msgstr ""
+msgstr "빛 회수"
 
 #. ~ Description for mission '{'str': 'Light Retrieval'}'
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
@@ -173962,7 +174013,7 @@ msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid "We await results, mercenary."
-msgstr ""
+msgstr "결과물을 가져오게, 용병."
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid ""
@@ -173973,7 +174024,7 @@ msgstr ""
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid "Have you found the document?"
-msgstr ""
+msgstr "서류는 찾았나?"
 
 #: data/json/npcs/robofac/NPC_ROBOFAC_INTERCOM.json
 msgid ""
@@ -269801,7 +269852,7 @@ msgstr ""
 #: data/mods/exotic_ammo/magazine/46.json
 msgid "H&K 4.6mm compact magazine"
 msgid_plural "H&K 4.6mm compact magazines"
-msgstr[0] ""
+msgstr[0] "H&K 4.6mm 소형 탄창"
 
 #. ~ Description for {'str': 'H&K 4.6mm compact magazine'}
 #: data/mods/exotic_ammo/magazine/46.json
@@ -271318,7 +271369,7 @@ msgstr "특성 분배 (%d개 남음)"
 msgid "Help"
 msgstr "도움말"
 
-#: data/mods/rpg_system/main.lua
+#: data/mods/rpg_system/main.lua src/vehicle/vehicle_use.cpp
 msgid "Close"
 msgstr "닫기"
 
@@ -273082,11 +273133,11 @@ msgstr "주문 선택 취소"
 msgid "Toggle spell favorite"
 msgstr "주문을 즐겨찾기로 설정/해제"
 
-#: data/raw/keybindings/keybindings.json
+#: data/raw/keybindings/keybindings.json src/magic/magic.cpp
 msgid "Toggle casting distractions"
 msgstr "주문 시전 중단 설정 켜기/끄기"
 
-#: data/raw/keybindings/keybindings.json
+#: data/raw/keybindings/keybindings.json src/magic/magic.cpp
 msgid "Assign spell hotkey"
 msgstr "주문 단축키 배정"
 
@@ -273658,11 +273709,11 @@ msgstr "새 캐릭터 창 나가기"
 msgid "Toggle sorting order"
 msgstr "정렬방식 전환"
 
-#: data/raw/keybindings/keybindings.json
+#: data/raw/keybindings/keybindings.json src/magic/magic.cpp
 msgid "Scroll description up"
 msgstr "설명 위로 스크롤"
 
-#: data/raw/keybindings/keybindings.json
+#: data/raw/keybindings/keybindings.json src/magic/magic.cpp
 msgid "Scroll description down"
 msgstr "설명 아래로 스크롤"
 
@@ -274927,15 +274978,15 @@ msgstr "보이는 메시지 클립보드에 복사"
 msgid "Erase message history"
 msgstr "메시지 기록 삭제"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Control multiple electronics"
 msgstr "다중 전자기기 제어"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Control individual engines"
 msgstr "개별 엔진 설정"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Fold vehicle"
 msgstr "차량 접기"
 
@@ -274959,7 +275010,7 @@ msgstr "경보기 전환"
 msgid "Toggle atomic lights"
 msgstr "원자력 야간등 전환"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Control autopilot"
 msgstr "오토파일럿 제어"
 
@@ -274979,7 +275030,7 @@ msgstr "크루즈 모드 전환"
 msgid "Toggle dome lights"
 msgstr "실내등 전환"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Toggle doors"
 msgstr "문 여닫기"
 
@@ -275059,27 +275110,28 @@ msgstr "정수기 전환"
 msgid "Toggle tracking"
 msgstr "추적 전환"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/turret.cpp
+#: src/vehicle/vehicle_use.cpp
 msgid "Set turret firing modes"
 msgstr "터렛의 연사 방식 수정"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Aim manual turrets"
 msgstr "수동 터렛 조준"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Aim automatic turrets"
 msgstr "자동 터렛 조준"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Aim all turrets"
 msgstr "모든 터렛 조준"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Aim individual turret"
 msgstr "개별 터렛 조준"
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Set turret targeting modes"
 msgstr "터렛 자동조준 설정"
 
@@ -275228,7 +275280,7 @@ msgstr "%s (방향키)"
 msgid "You can't reach through that vehicle's wall."
 msgstr "차량 외벽 너머로 손을 뻗을 수 없습니다."
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "SW"
 msgstr "남서"
 
@@ -275236,15 +275288,15 @@ msgstr "남서"
 msgid "South West"
 msgstr "남서쪽"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "S"
 msgstr "남"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "South"
 msgstr "남쪽"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "SE"
 msgstr "남동"
 
@@ -275252,11 +275304,11 @@ msgstr "남동"
 msgid "South East"
 msgstr "남동쪽"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "W"
 msgstr "서"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "West"
 msgstr "서쪽"
 
@@ -275268,15 +275320,15 @@ msgstr "-"
 msgid "Directly below you"
 msgstr "발밑"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "E"
 msgstr "동"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "East"
 msgstr "동쪽"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "NW"
 msgstr "북서"
 
@@ -275284,15 +275336,15 @@ msgstr "북서"
 msgid "North West"
 msgstr "북서쪽"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "N"
 msgstr "북"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "North"
 msgstr "북쪽"
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "NE"
 msgstr "북동"
 
@@ -276065,7 +276117,8 @@ msgstr "숨쉬기가 곤란해졌다가, 멈췄다."
 msgid "You're too tired to continue."
 msgstr "계속하기에는 너무 지쳤다."
 
-#: src/activity_handlers.cpp
+#: src/activity_handlers.cpp src/vehicle/vehicle_move.cpp
+#: src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "The %s doesn't have an engine!"
 msgstr "%s에 엔진이 달려있지 않습니다!"
@@ -276093,7 +276146,7 @@ msgid "The %s's engine fails to start."
 msgid_plural "The %s's engines fail to start."
 msgstr[0] "%s의 엔진에 시동이 걸리지 않습니다."
 
-#: src/activity_handlers.cpp
+#: src/activity_handlers.cpp src/vehicle/vehicle_use.cpp
 msgid "You let go of the controls."
 msgstr "운전대를 놓습니다."
 
@@ -280136,7 +280189,7 @@ msgstr "바람 방향: %s풍."
 msgid "Perform which function:"
 msgstr "사용할 기능 선택:"
 
-#: src/bionics.cpp
+#: src/bionics.cpp src/vehicle/vehicle_use.cpp
 msgid "Control vehicle"
 msgstr "차량 조종"
 
@@ -281193,31 +281246,31 @@ msgstr "유일하게 아무나 트롤을 저질러도 용서가 되는 문장. �
 msgid "Reloaded %1$d lua mods."
 msgstr "루아 모드 %1$d 개를 다시 불러왔습니다."
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Monday"
 msgstr "월요일"
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Sunday"
 msgstr "일요일"
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Tuesday"
 msgstr "화요일"
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Wednesday"
 msgstr "수요일"
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Friday"
 msgstr "금요일"
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Thursday"
 msgstr "목요일"
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Saturday"
 msgstr "토요일"
 
@@ -282560,7 +282613,7 @@ msgstr "효과를 볼 수 있는 사지가 없습니다."
 msgid "You pour %1$s into the %2$s."
 msgstr "%1$s(을)를 %2$s에 부었습니다."
 
-#: src/character.cpp
+#: src/character.cpp src/vehicle/veh_interact.cpp
 msgid "There's some left over!"
 msgstr "아직 뭔가 남아있습니다!"
 
@@ -283477,7 +283530,7 @@ msgstr "[<color_yellow>%s</color>]"
 msgid "Profession Name: "
 msgstr "직업명:"
 
-#: src/character_display.cpp
+#: src/character_display.cpp src/vehicle/veh_interact.cpp
 msgid "Name: "
 msgstr "이름: "
 
@@ -283530,7 +283583,7 @@ msgstr ""
 "영양실조로 몸이 약해졌습니다. 잘 먹고 잘 쉬어야만 회복할 수 있을 것입니다.\n"
 "\n"
 
-#: src/character_display.cpp
+#: src/character_display.cpp src/vehicle/veh_interact.cpp
 msgid "Strength"
 msgstr "근력"
 
@@ -283698,12 +283751,12 @@ msgstr "공격을 피하려 했지만 실패합니다!"
 msgid "%s tries to dodge but fails!"
 msgstr "%s (이)가 공격을 피하려 했지만 실패합니다!"
 
-#: src/character_functions.cpp
+#: src/character_functions.cpp src/vehicle/veh_interact.cpp
 #, c-format
 msgid "Refill %s"
 msgstr "%s 재충전"
 
-#: src/character_functions.cpp
+#: src/character_functions.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "Reload %s"
 msgstr "%s 재장전"
@@ -283727,7 +283780,7 @@ msgctxt "magazine"
 msgid "%1$s with %2$s (%3$d)"
 msgstr "%1$s 과(와) %2$s (%3$d)"
 
-#: src/character_functions.cpp
+#: src/character_functions.cpp src/magic/magic.cpp
 #, c-format
 msgid "%s, %s"
 msgstr "%s,%s"
@@ -283920,7 +283973,7 @@ msgstr "<npcname>(이)가 스스로의 출혈 부위에 압력을 가합니다."
 msgid "Your ground sonar detected a %1$s to the %2$s!"
 msgstr "지상음파탐지기가 %2$s 방향의 %1$s(을)를 탐지했습니다!"
 
-#: src/character_turn.cpp
+#: src/character_turn.cpp src/vehicle/vehicle_move.cpp
 #, c-format
 msgid "You've spotted a %1$s to the %2$s!"
 msgstr "%1$s(을)를 %2$s에서 발견했습니다!"
@@ -283949,7 +284002,7 @@ msgstr "배치 레이아웃 선택"
 msgid "Filter:"
 msgstr "필터:"
 
-#: src/clzones.cpp
+#: src/clzones.cpp src/vehicle/vehicle_use.cpp
 msgid "No seed"
 msgstr "씨앗 없음"
 
@@ -285066,7 +285119,7 @@ msgid ""
 "grave."
 msgstr "안타깝게도 묘비에 글을 새길 날카로운 물건이 없습니다."
 
-#: src/construction.cpp
+#: src/construction.cpp src/vehicle/veh_interact.cpp
 msgid "Enter new vehicle name:"
 msgstr "차량의 새로운 이름을 입력하세요:"
 
@@ -285931,7 +285984,7 @@ msgstr "주요 기술: %s\n"
 msgid "Other skills: %s\n"
 msgstr "보조 기술: %s\n"
 
-#: src/crafting_gui.cpp
+#: src/crafting_gui.cpp src/enchantments/enchanter.cpp
 #, c-format
 msgid "Time to complete: <color_cyan>%s</color>\n"
 msgstr "제작 요구 시간: <color_cyan>%s</color>\n"
@@ -286049,11 +286102,11 @@ msgstr "조건이 만족되면 자동 습득: \n"
 msgid "  Skill %s at level %s\n"
 msgstr "기술 %s %s레벨\n"
 
-#: src/crafting_gui.cpp src/ui.cpp
+#: src/crafting_gui.cpp src/enchantments/enchanter.cpp src/ui.cpp
 msgid "Fast scroll up"
 msgstr "빠르게 위로 스크롤"
 
-#: src/crafting_gui.cpp src/ui.cpp
+#: src/crafting_gui.cpp src/enchantments/enchanter.cpp src/ui.cpp
 msgid "Fast scroll down"
 msgstr "빠르게 아래로 스크롤"
 
@@ -287759,7 +287812,7 @@ msgstr "생성할 차량 선택"
 
 #. ~ Menu entry in vehicle wish menu: 1st string: displayed name, 2nd string:
 #. internal name of vehicle
-#: src/debug_menu.cpp
+#: src/debug_menu.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "%1$s (%2$s)"
 msgstr "%1$s(%2$s)"
@@ -288243,7 +288296,7 @@ msgstr "입력한 내용을 저장할까요?"
 msgid "Interrupts you if you hear a noise."
 msgstr "소음이 들리면 작업을 중단합니다."
 
-#: src/distraction_manager.cpp
+#: src/distraction_manager.cpp src/vehicle/veh_interact.cpp
 msgid "Noise"
 msgstr "소음"
 
@@ -288887,7 +288940,7 @@ msgstr "속도 <color_white>%d</color>;"
 msgid "pain"
 msgstr "고통"
 
-#: src/effect.cpp
+#: src/effect.cpp src/magic/magic.cpp
 msgid "fatigue"
 msgstr "피로"
 
@@ -288975,9 +289028,55 @@ msgstr "아주 뛰어남"
 msgid "outstanding"
 msgstr "훌륭함"
 
-#: src/effect.cpp
+#: src/effect.cpp src/vehicle/vehicle.cpp
 msgid "perfect"
 msgstr "완벽함"
+
+#: src/enchantments/enchanter.cpp
+msgid ""
+"Result Info:\n"
+" "
+msgstr ""
+
+#: src/enchantments/enchanter.cpp
+#, c-format
+msgid "Applications Left: %d"
+msgstr ""
+
+#: src/enchantments/enchanter.cpp
+msgid "Required Skills:\n"
+msgstr ""
+
+#: src/enchantments/enchanter.cpp
+msgid "Enchant What?"
+msgstr ""
+
+#: src/enchantments/enchanter.cpp
+msgid "You dont have a suitable item to enchant here"
+msgstr ""
+
+#: src/enchantments/enchantment.cpp
+msgid "At all times"
+msgstr ""
+
+#: src/enchantments/enchantment.cpp src/npcmove.cpp src/output.h
+msgid " and "
+msgstr ", "
+
+#: src/enchantments/enchantment.cpp
+#, c-format
+msgid "  <color_%s>Gives effect %s</color>"
+msgstr ""
+
+#: src/enchantments/enchantment.cpp
+#, c-format
+msgid "  <color_%s>Provides Immunity To %s</color>"
+msgstr ""
+
+#: src/enchantments/enchantment.cpp
+#, c-format
+msgid "  <color_%s>Gives mutation %s</color>"
+msgstr ""
 
 #. ~ Default format for scores.  %1$s is statistic description; %2$s is value.
 #: src/event_statistics.cpp
@@ -290081,7 +290180,7 @@ msgstr "고삐를 놓습니다."
 msgid "You refuse to take control of this vehicle."
 msgstr "이 차량의 조종간을 잡기를 거부합니다."
 
-#: src/game.cpp
+#: src/game.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "You take control of the %s."
 msgstr "%s의 조종간을 잡습니다."
@@ -291303,7 +291402,7 @@ msgid ""
 "You are not in the mood and the prospect of work stops you before you begin."
 msgstr "기분도 좋지 않고, 앞으로 해야할 일들을 생각하자 작업이 손에 잡히지 않습니다."
 
-#: src/game.cpp src/iuse.cpp
+#: src/game.cpp src/iuse.cpp src/vehicle/veh_interact.cpp
 #, c-format
 msgid "%s helps with this task…"
 msgstr "%s(이)가 이 작업을 도와줍니다…"
@@ -291672,7 +291771,7 @@ msgstr "올라갈 수가 없습니다 - 당신의 무게를 견딜 지형이 존
 msgid "You can't go up here!"
 msgstr "여기서는 위로 올라갈 수 없다!"
 
-#: src/game.cpp
+#: src/game.cpp src/vehicle/vehicle_move.cpp
 msgid "It would be unsafe to try and ascend further."
 msgstr "움직이면서 오르는 것은 위험할 수 있습니다."
 
@@ -291731,6 +291830,10 @@ msgid "You are already underwater and there is no water above you to swim up!"
 msgstr "이미 물 속에 있으며, 위로 더 헤엄칠 곳이 없습니다!"
 
 #: src/game.cpp
+msgid "You are too exhausted to climb."
+msgstr ""
+
+#: src/game.cpp
 #, c-format
 msgid "%s moves out of the way for you."
 msgstr "%s(이)가 당신을 위해 길을 비켜줍니다."
@@ -291751,7 +291854,7 @@ msgid "Failed to save map data: %s"
 msgstr "지도 데이터 저장에 실패했습니다: %s"
 
 #. ~ %s is the name of hostile NPC
-#: src/game.cpp src/gates.cpp
+#: src/game.cpp src/gates.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "%s is in the way!"
 msgstr "%s(이)가 길을 막고 있습니다!"
@@ -293111,7 +293214,7 @@ msgstr ""
 "튜토리얼 중에 저장을 시도합니다 - 튜토리얼 세계는 일반 세계에 비해 특정 기능이 누락되어 있습니다. 이 세계를 불러올 때 기묘한 일들이"
 " 벌어질 수 있습니다. 경고했습니다."
 
-#: src/gates.cpp
+#: src/gates.cpp src/vehicle/vehicle_use.cpp
 msgid "There's some buffoon in the way!"
 msgstr "어떤 멍청이가 거길 막고 있습니다!"
 
@@ -294610,11 +294713,11 @@ msgstr ""
 "안으로 쭉 뚫려 있습니다. 이 구멍은 인간 형태의 모양이지만\n"
 "팔다리가 비정상적으로 길고 뒤틀려 있습니다."
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_use.cpp
 msgid "Select an action"
 msgstr "행동 선택"
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_use.cpp
 msgid "Get items"
 msgstr "물건 줍기"
 
@@ -294788,7 +294891,7 @@ msgstr "%s(이)가 산산조각나 포자가 되어 흩날립니다!"
 msgid "Use which seed?"
 msgstr "어떤 씨앗을 사용합니까?"
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_part.cpp
 msgid "It is too cold to plant anything now."
 msgstr "너무 추워서 어떤 것도 심을 수 없습니다."
 
@@ -295180,7 +295283,7 @@ msgstr "%s(은)는 물이 아닌 액체를 담고 있어 연결할 수 없습니
 msgid "Dispense or dump %s"
 msgstr "%s(을)를 꺼내거나 버리기"
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_use.cpp
 msgid "Have a drink"
 msgstr "마시기"
 
@@ -295221,7 +295324,7 @@ msgstr "%1$s에 %2$s(을)를 담았다."
 msgid "Fluid stored: %1$s/%2$s %3$s."
 msgstr "저장된 액체: %1$s/%2$s %3$s."
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_display.cpp
 msgid "empty"
 msgstr "비어있음"
 
@@ -295527,7 +295630,7 @@ msgstr "%1$s(을)를 %2$s에 얼마나 넣습니까? %3$s"
 msgid "The %1$s contains %2$d %3$s."
 msgstr "%1$s에 %2$d개의 %3$s(이)가 들어 있습니다."
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_use.cpp
 msgid "Which tool do you want to use?"
 msgstr "어느 도구를 사용합니까?"
 
@@ -295543,7 +295646,7 @@ msgstr "닫힌 커튼 사이로 엿보기"
 msgid "Tear down the curtains."
 msgstr "커튼 뜯기"
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_use.cpp
 msgid "You carefully peek through the curtains."
 msgstr "커튼을 살짝 걷고 살펴 봅니다."
 
@@ -297561,7 +297664,7 @@ msgstr "선택 확정"
 msgid "Switch category selection mode"
 msgstr "카테고리 선택 방식 변경"
 
-#: src/inventory_ui.cpp
+#: src/inventory_ui.cpp src/magic/magic.cpp
 msgid "Toggle favorite"
 msgstr "즐겨찾기 설정/해제"
 
@@ -299090,7 +299193,7 @@ msgstr " (%s 턴)"
 msgid " (dirty)"
 msgstr " (더러움)"
 
-#: src/item.cpp
+#: src/item.cpp src/vehicle/veh_interact.cpp
 msgid " (rotten)"
 msgstr " (썩음)"
 
@@ -303544,7 +303647,7 @@ msgstr "탄약 수납"
 msgid "Store ammo in %s"
 msgstr "%s에 탄약 수납"
 
-#: src/iuse_actor.cpp
+#: src/iuse_actor.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "Unload %s"
 msgstr "%s 탄약 제거"
@@ -305777,6 +305880,452 @@ msgstr "들기"
 msgid "inside %s"
 msgstr "%s 내부"
 
+#: src/magic/magic.cpp
+msgid "ERROR: Invalid energy string.  Defaulting to NONE"
+msgstr "오류: 유효하지 않은 에너지 스트링입니다. 기본값 없음을 사용합니다."
+
+#: src/magic/magic.cpp
+msgid ""
+"ERROR: 'None' damage is not not valid and obsoleted for spells!  Please "
+"switch to 'True' instead"
+msgstr "오류: '없음' 피해는 주문에 대해 유효하지 않으며 구식화된 피해 종류입니다. '방어 무시' 피해로 변경해주세요"
+
+#: src/magic/magic.cpp
+msgid "ERROR: Invalid damage type string.  Defaulting to bash"
+msgstr "오류: 유효하지 않은 피해 종류 스트링입니다. 기본값 피해종류 때리기를 사용합니다."
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "%d moves"
+msgstr "%d행동력"
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "You cast %s!"
+msgstr "%s(을)를 시전합니다!"
+
+#: src/magic/magic.cpp
+msgid "an explosion"
+msgstr "폭발!"
+
+#: src/magic/magic.cpp
+msgid "Too Difficult!"
+msgstr "너무 어려움!"
+
+#: src/magic/magic.cpp
+msgid "Failure Chance"
+msgstr "실패율"
+
+#: src/magic/magic.cpp
+msgid "health"
+msgstr "생명력"
+
+#: src/magic/magic.cpp
+msgid "mana"
+msgstr "마나"
+
+#: src/magic/magic.cpp
+msgid "stamina"
+msgstr "지구력"
+
+#: src/magic/magic.cpp
+msgid "bionic power"
+msgstr "바이오닉 전력"
+
+#: src/magic/magic.cpp
+msgid "error: energy_type"
+msgstr "에러: 에너지_종류"
+
+#: src/magic/magic.cpp
+msgid "infinite"
+msgstr "무한"
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "%s and %s"
+msgstr "%s 및 %s"
+
+#: src/magic/magic.cpp
+#, c-format
+msgid ""
+"Learning this spell will make you a\n"
+"\n"
+"%s: %s\n"
+"\n"
+"and lock you out of\n"
+"\n"
+"%s\n"
+"\n"
+"Continue?"
+msgstr ""
+"이 주문을 습득하면 아래 변경사항이 적용되며\n"
+"\n"
+"%s:%s\n"
+"\n"
+"또한 아래 사항을 선택할 수 없게 됩니다.\n"
+"\n"
+"%s\n"
+"\n"
+"계속합니까?"
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "You learned %s!"
+msgstr "%s(을)를 익혔습니다!"
+
+#: src/magic/magic.cpp
+msgid "You can't learn this spell."
+msgstr "이 주문을 익힐 수 없습니다."
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "All knowledge of %s leaves you."
+msgstr "%s에 대한 지식이 당신에게서 떠나갑니다."
+
+#: src/magic/magic.cpp
+msgid "Ignore Distractions"
+msgstr "방해 경고 OFF"
+
+#: src/magic/magic.cpp
+msgid "Popup Distractions"
+msgstr "방해 경고 ON"
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "Assign Hotkey [%s]"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "No spell selected."
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Choose a new hotkey for this spell."
+msgstr "이 주문의 새 단축키를 선택하세요."
+
+#: src/magic/magic.cpp
+msgid "Hotkey already used."
+msgstr "이미 사용중인 단축키입니다."
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "%c set."
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Hotkey removed."
+msgstr "단축키 제거됨."
+
+#: src/magic/magic.cpp
+msgid "requires concentration"
+msgstr "집중 필요"
+
+#: src/magic/magic.cpp
+msgid "verbal"
+msgstr "음성요소"
+
+#: src/magic/magic.cpp
+msgid "somatic"
+msgstr "동작요소"
+
+#: src/magic/magic.cpp
+msgid "impeded by gloves"
+msgstr "장갑에 방해받음"
+
+#: src/magic/magic.cpp
+msgid "does not require hands"
+msgstr "손 필요 없음"
+
+#: src/magic/magic.cpp
+msgid "requires mobility"
+msgstr "이동 필요"
+
+#: src/magic/magic.cpp
+msgid "can be cast through walls"
+msgstr "벽 너머 시전 가능"
+
+#: src/magic/magic.cpp
+msgid "can be used by Brawlers"
+msgstr "막싸움꾼이 사용 가능"
+
+#: src/magic/magic.cpp
+msgid "is a physical technique and can be used by Brawlers"
+msgstr "(은)는 신체 기술이며 막싸움꾼이 사용할 수 있습니다"
+
+#: src/magic/magic.cpp
+msgid "can be augmented by melee weapon damage"
+msgstr "근접무기 피해에 의해 조정될 수 있음"
+
+#: src/magic/magic.cpp
+msgid "divides damage evenly among its targets"
+msgstr "대상 전체에게 피해를 나눠 입힙니다"
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "can be augmented by the following damage types on melee weapons: %s"
+msgstr "근접 무기의 다음 피해 유형으로 강화될 수 있습니다: %s"
+
+#: src/magic/magic.cpp
+msgid "scales off of strength stat"
+msgstr "체력 능력치에 따라 변동"
+
+#: src/magic/magic.cpp
+msgid "scales off of dexterity stat"
+msgstr "민첩성 능력치에 따라 변동"
+
+#: src/magic/magic.cpp
+msgid "scales off of perception stat"
+msgstr "지각력 능력치에 따라 변동"
+
+#: src/magic/magic.cpp
+msgid "scales off of intelligence stat"
+msgstr "지능 능력치에 따라 변동"
+
+#: src/magic/magic.cpp src/newcharacter.cpp
+msgid "Classless"
+msgstr "학파 없음"
+
+#: src/magic/magic.cpp
+#, c-format
+msgctxt "spell selector"
+msgid "Unknown class (%s)"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Blocker mutations"
+msgstr "차단 돌연변이"
+
+#: src/magic/magic.cpp src/martialarts.cpp
+msgid "Skill"
+msgid_plural "Skills"
+msgstr[0] "기술"
+
+#: src/magic/magic.cpp
+msgid "(MAX)"
+msgstr "(최대)"
+
+#: src/magic/magic.cpp
+msgid "Spell Level"
+msgstr "주문 레벨"
+
+#: src/magic/magic.cpp
+msgid "Max Level"
+msgstr "최대 레벨"
+
+#: src/magic/magic.cpp src/mtype.cpp
+msgid "Difficulty"
+msgstr "난이도"
+
+#: src/magic/magic.cpp
+msgid "Current Exp"
+msgstr "현재 경험치"
+
+#: src/magic/magic.cpp
+msgid "to Next Level"
+msgstr "다음 레벨까지"
+
+#: src/magic/magic.cpp
+msgid "Casting Cost"
+msgstr "시전 비용"
+
+#: src/magic/magic.cpp
+msgid "Casting Cost (impeded)"
+msgstr "시전 비용 (방해받음)"
+
+#: src/magic/magic.cpp
+#, c-format
+msgid " (%s current)"
+msgstr "(현재 %s)"
+
+#: src/magic/magic.cpp
+msgid "Not Enough Energy"
+msgstr "에너지 부족"
+
+#: src/magic/magic.cpp
+msgid "Casting Time"
+msgstr "시전 시간"
+
+#: src/magic/magic.cpp
+msgid "Casting Time (impeded)"
+msgstr "시전 시간 (불편함)"
+
+#: src/magic/magic.cpp
+msgid "self"
+msgstr "자신"
+
+#: src/magic/magic.cpp
+msgid "Valid Targets"
+msgstr "유효 대상"
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "Only affects the monsters: %s"
+msgstr "오직 괴물만을 대상으로 함: %s"
+
+#: src/magic/magic.cpp src/vehicle/veh_interact.cpp
+msgid "Damage"
+msgstr "피해량"
+
+#: src/magic/magic.cpp
+msgid "Healing"
+msgstr "회복량"
+
+#: src/magic/magic.cpp
+msgid "Spell Radius"
+msgstr "주문 반경"
+
+#: src/magic/magic.cpp
+msgid "Cone Arc"
+msgstr "원뿔 중심각"
+
+#: src/magic/magic.cpp
+msgid "degrees"
+msgstr "도"
+
+#: src/magic/magic.cpp
+msgid "Line Width"
+msgstr "직선 길이"
+
+#: src/magic/magic.cpp
+msgid "Variance"
+msgstr "변형"
+
+#: src/magic/magic.cpp
+msgid "Spawn"
+msgstr "생성"
+
+#: src/magic/magic.cpp
+msgid "Summon"
+msgstr "소환"
+
+#: src/magic/magic.cpp src/vehicle/veh_interact.cpp
+msgid "Range"
+msgstr "거리"
+
+#: src/magic/magic.cpp
+msgid "Duration"
+msgstr "지속 시간"
+
+#: src/magic/magic.cpp
+msgctxt "spell selector category"
+msgid "All"
+msgstr "전부"
+
+#: src/magic/magic.cpp
+msgctxt "spell selector category"
+msgid "Favorites"
+msgstr "즐겨찾기"
+
+#: src/magic/magic.cpp
+msgctxt "spell selector category"
+msgid "Other"
+msgstr "이외"
+
+#: src/magic/magic.cpp
+msgid "Choose a Spell"
+msgstr "주문 선택"
+
+#: src/magic/magic.cpp
+msgid "AoE"
+msgstr "광역"
+
+#: src/magic/magic.cpp
+msgid "Spawned"
+msgstr "생성됨"
+
+#: src/magic/magic.cpp
+msgid "Recover"
+msgstr "복구"
+
+#: src/magic/magic.cpp
+msgid "Damage Type"
+msgstr "피해 유형"
+
+#. ~ translation should not exceed 10 console cells
+#: src/magic/magic.cpp
+msgid "Stat Gain"
+msgstr "능력치    "
+
+#. ~ translation should not exceed 7 console cells
+#: src/magic/magic.cpp
+msgid "lvl 0"
+msgstr "레벨 0"
+
+#. ~ translation should not exceed 7 console cells
+#: src/magic/magic.cpp
+msgid "per lvl"
+msgstr "레벨 당"
+
+#. ~ translation should not exceed 7 console cells
+#: src/magic/magic.cpp
+msgid "max lvl"
+msgstr "최대치 "
+
+#: src/magic/magic.cpp
+msgid "Cast Cost"
+msgstr "시전 비용"
+
+#: src/magic/magic.cpp
+msgid "Cast Time"
+msgstr "시전 시간"
+
+#: src/magic/magic.cpp
+#, c-format
+msgid ""
+"Your experience and knowledge in creating and manipulating magical energies "
+"to cast %s have opened your eyes to new possibilities, you can now cast %s."
+msgstr ""
+"%s(을)를 외우기 위해 마법 에너지를 창조하고 조작하던 당신의 경험과 지식은 이제 새로운 가능성에 눈을 뜨게 되었습니다. 이제 "
+"%s(을)를 시전할 수 있습니다."
+
+#: src/magic/magic_spell_effect.cpp
+msgid "Your injuries even out."
+msgstr "부상이 말끔하게 낫습니다."
+
+#: src/magic/magic_spell_effect.cpp
+#, c-format
+msgid "%s wounds are closing up!"
+msgstr "%s 상처가 저절로 봉합됩니다!"
+
+#: src/magic/magic_spell_effect.cpp
+msgid "There is already a vehicle there."
+msgstr "그곳에 이미 차량이 존재합니다."
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "Name this gate."
+msgstr "게이트 이름을 정해주세요."
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "No translocator target known."
+msgstr "연결된 전송 관문이 없습니다."
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "Teleport canceled."
+msgstr "공간이동이 취소되었습니다."
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "Failed to teleport.  Teleporter obstructed or destroyed."
+msgstr "공간이동에 실패했습니다. 텔레포터가 차단되었거나 혹은 파괴되었습니다."
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "No valid targets to teleport."
+msgstr "공간이동 가능한 대상이 없습니다."
+
+#: src/magic/magic_teleporter_list.cpp
+#, c-format
+msgid "Distance: %d %s"
+msgstr "거리: %d %s"
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "Choose Translocator Gate"
+msgstr "이동할 전송 관문 선택"
+
+#: src/magic/spell_selector.cpp
+#, c-format
+msgctxt "spell selector category"
+msgid "%1$s (%2$s)"
+msgstr "%1$s(%2$s)"
+
 #: src/main.cpp
 msgid "Really Quit?  All unsaved changes will be lost."
 msgstr "종료합니까? 저장되지 않은 변경사항은 손실될 것입니다."
@@ -306122,7 +306671,7 @@ msgstr ""
 msgid "weight of %1$s"
 msgstr "%1$s의 무게"
 
-#: src/map.cpp
+#: src/map.cpp src/vehicle/vehicle.cpp
 #, c-format
 msgid "A towing cable snaps off of %s."
 msgstr "%s에서 견인 케이블이 튕겨져 나옵니다."
@@ -306132,7 +306681,7 @@ msgstr "%s에서 견인 케이블이 튕겨져 나옵니다."
 msgid "The %1$s's %2$s collides with %3$s's %4$s."
 msgstr "%1$s의 %2$s(이)가 %3$s의 %4$s와 부딪혔다."
 
-#: src/map.cpp src/monster.cpp
+#: src/map.cpp src/monster.cpp src/vehicle/vehicle_display.cpp
 #, c-format
 msgid "the %s"
 msgstr "%s"
@@ -306277,6 +306826,23 @@ msgstr "덫을 해체하는데 실패했습니다!"
 #: src/map.cpp
 msgid "You fail to disarm the trap, and you set it off!"
 msgstr "덫을 해체하는데 실패해서 작동시켜버렸습니다!"
+
+#: src/map/utils/map_functions.cpp
+msgid "The nerve cluster collapses in on itself, and the nearby cages open!"
+msgstr "신경 다발이 저절로 무너지고, 근처의 우리가 열립니다!"
+
+#: src/map/utils/map_functions.cpp
+msgid "The nerve cluster collapses in on itself, to no discernible effect."
+msgstr "신경 다발이 저절로 무너지지만, 눈에 띄는 변화는 없습니다."
+
+#: src/map/utils/map_functions.cpp
+msgid "a loud alien shriek reverberating through the structure!"
+msgstr "이 세상의 것이 아닌 커다란 비명이 구조물을 타고 울려퍼집니다!"
+
+#: src/map/utils/map_functions.cpp
+msgid ""
+"Something stirs and clambers out of the ruined mass of flesh and nerves!"
+msgstr "무언가가 으깨진 살점과 신경 더미를 헤치고 기어나옵니다!"
 
 #: src/map_extras.cpp
 msgid "DANGER!  MINEFIELD!"
@@ -306541,11 +307107,6 @@ msgstr "극단적으로 어렵습니다"
 #, c-format
 msgid "<bold>%s required: </bold>"
 msgstr "<bold>%s 요구: </bold>"
-
-#: src/martialarts.cpp
-msgid "Skill"
-msgid_plural "Skills"
-msgstr[0] "기술"
 
 #: src/martialarts.cpp
 msgid "<bold>Damage type required: </bold>"
@@ -306970,7 +307531,7 @@ msgstr "%1$s(이)가 <npcname>의 %2$s(을)를 물었으나, 방어구를 뚫지
 msgid "The %1$s bites <npcname>'s %2$s!"
 msgstr "%1$s(이)가 <npcname>의 %2$s(을)를 물었습니다!"
 
-#: src/mattack_actors.cpp
+#: src/mattack_actors.cpp src/vehicle/turret.cpp
 #, c-format
 msgid "The %1$s fires its %2$s!"
 msgstr "%1$s(이)가 %2$s(을)를 사격했습니다!"
@@ -310432,7 +310993,7 @@ msgstr "%s(이)가 사라집니다!"
 msgid "A %s appears!"
 msgstr "%s(이)가 나타납니다!"
 
-#: src/monattack.cpp
+#: src/monattack.cpp src/vehicle/turret.cpp
 #, c-format
 msgid "%s points in your direction."
 msgstr "%s(이)가 이쪽을 바라봅니다. "
@@ -311786,7 +312347,7 @@ msgstr "%s에게서 목줄을 풉니다."
 msgid "You tie your %s."
 msgstr "%s(을)를 묶습니다."
 
-#: src/monexamine.cpp
+#: src/monexamine.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "You untie your %s."
 msgstr "%s(을) 묶었던 것을 풉니다."
@@ -312697,10 +313258,6 @@ msgstr "집중 수준 변동 경향:"
 #: src/mtype.cpp
 msgid "indistinct footsteps."
 msgstr "희미한 발자국 소리."
-
-#: src/mtype.cpp
-msgid "Difficulty"
-msgstr "난이도"
 
 #: src/mtype.cpp
 msgid "Origin"
@@ -313682,10 +314239,6 @@ msgid_plural "Upgrading %s by 1 level costs %d points"
 msgstr[0] "%s(을)를 1레벨만큼 올리려면 %d 포인트가 필요합니다."
 
 #: src/newcharacter.cpp
-msgid "Classless"
-msgstr "학파 없음"
-
-#: src/newcharacter.cpp
 msgid "You cannot learn this spell!"
 msgstr "이 주문을 익힐 수 없습니다."
 
@@ -314462,10 +315015,6 @@ msgstr "%1$s(이)가 %2$s와 %3$s(을)를 줍습니다."
 #, c-format
 msgid "%s looks around nervously, as if searching for something."
 msgstr "%s(은)는 무언가를 찾는듯 불안하게 주변을 두리번거립니다."
-
-#: src/npcmove.cpp src/output.h
-msgid " and "
-msgstr ", "
 
 #: src/npcmove.cpp
 #, c-format
@@ -320756,7 +321305,7 @@ msgstr "차량 저장소에서 물건 줍기"
 msgid "Get items from where?"
 msgstr "어디서 물건을 주울까요?"
 
-#: src/pickup.cpp
+#: src/pickup.cpp src/vehicle/vehicle_use.cpp
 msgid "Get items on the ground"
 msgstr "지상에 놓인 물건 줍기"
 
@@ -321719,7 +322268,7 @@ msgstr "기본 조준 방식"
 msgid "Immediate"
 msgstr "즉시 발사"
 
-#: src/ranged.cpp
+#: src/ranged.cpp src/vehicle/vehicle_use.cpp
 msgid " (active)"
 msgstr " (작동중)"
 
@@ -322149,7 +322698,10 @@ msgstr " 또는 "
 msgid "Tools required:"
 msgstr "필요한 도구:"
 
-#: src/requirements.cpp
+#. ~ %1$s represents the internal color name which shouldn't be translated,
+#. %2$s is the word
+#. "NONE"
+#: src/requirements.cpp src/vehicle/veh_interact.cpp
 msgid "NONE"
 msgstr "없음"
 
@@ -323724,6 +324276,2428 @@ msgstr "리터"
 #: src/units_utility.cpp
 msgid "quart"
 msgstr "쿼트"
+
+#: src/vehicle/turret.cpp
+msgid "None of the turrets are ready to fire."
+msgstr "발사 가능한 터렛이 없습니다."
+
+#: src/vehicle/turret.cpp
+msgid "Aim which turret?"
+msgstr "어떤 터렛을 조준합니까?"
+
+#: src/vehicle/turret.cpp
+msgid "Can't aim turrets: all turrets are offline."
+msgstr "터렛을 조준할 수 없습니다: 작동 중인 터렛이 없습니다."
+
+#: src/vehicle/turret.cpp
+msgid ""
+"Can't aim turrets: all turrets are offline or set to automatic targeting "
+"mode."
+msgstr "터렛 조준 불가: 모든 터렛이 꺼져 있거나 자동 조준 모드로 설정되어 있습니다."
+
+#: src/vehicle/turret.cpp
+msgid ""
+"Can't aim turrets: all turrets are offline or set to manual targeting mode."
+msgstr "터렛 조준 불가: 모든 터렛이 꺼져 있거나 수동 조준 모드로 설정되어 있습니다."
+
+#: src/vehicle/turret.cpp
+msgid "Set turret targeting"
+msgstr "터렛 조준 설정"
+
+#: src/vehicle/turret.cpp
+msgid "auto -> manual"
+msgstr "자동 -> 수동"
+
+#: src/vehicle/turret.cpp
+msgid "manual -> auto"
+msgstr "수동 -> 자동"
+
+#: src/vehicle/turret.cpp
+msgid "manual (turret control unit required for auto mode)"
+msgstr "수동 (자동 모드 전환에 터렛 제어 장치 필요)"
+
+#: src/vehicle/turret.cpp
+#, c-format
+msgid "The %s turret"
+msgstr "%s 터렛"
+
+#: src/vehicle/turret.cpp
+msgid "Insufficient power, laser targeting not engaged."
+msgstr "전력이 부족하여 레이저 지시기가 작동하지 않습니다."
+
+#: src/vehicle/turret.cpp
+#, c-format
+msgctxt "vehicle turret"
+msgid "The %s"
+msgstr "%s"
+
+#: src/vehicle/turret.cpp
+#, c-format
+msgid "%s points in your direction and emits an IFF warning beep."
+msgid_plural ""
+"%s points in your direction and emits %d annoyed sounding beeps."
+msgstr[0] "%s(이)가 이쪽으로 %d 시끄러운 비프음을 냅니다."
+
+#: src/vehicle/turret.cpp
+#, c-format
+msgid "You hear a warning beep."
+msgid_plural "You hear %d annoyed sounding beeps."
+msgstr[0] "%d 시끄러운 비프음이 들립니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Select part"
+msgstr "부품 선택"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_white>Time required:</color>\n"
+msgstr "<color_white>소요 시간:</color>\n"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_white>Skills required:</color>\n"
+msgstr "<color_white>필요 기술:</color>\n"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "> %1$s%2$s %3$i</color>\n"
+msgstr "> %1$s%2$s %3$i</color>\n"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You cannot rename this vehicle as it is owned by: %s."
+msgstr "%s 소유 차량의 이름을 변경할 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You cannot assign crew on this vehicle as it is owned by: %s."
+msgstr "%s 소유 차량에 승무원을 배정할 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You cannot relabel this vehicle as it is owned by: %s."
+msgstr "%s 소유 차량의 분류 라벨을 변경할 수 없습니다."
+
+#. ~ %1$s is fuel_type
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Only one %1$s powered engine can be installed."
+msgstr "%1$s(으)로 작동하는 동력 장치 하나만 설치할 수 있습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Funnels need to be installed over a tank."
+msgstr "깔대기는 탱크 위에 설치해야 합니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Can't install turret on another turret."
+msgstr "터렛은 다른 터렛과 중복된 위치에 설치할 수 없습니다."
+
+#. ~ %1$s represents the internal color name which shouldn't be translated,
+#. ~ %2$s is skill name, and %3$i is skill level
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "> %1$s%2$s %3$i</color> to install alongside other engines."
+msgstr "다른 엔진과 중복해 설치하려면 > %1$s%2$s %3$i</color>(이)가 있어야 합니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "> %1$s%2$s %3$i</color> for extra steering axles."
+msgstr "> %1$s%2$s %3$i</color> 조향축 추가 시"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "strength ( assisted ) %d"
+msgstr "근력 ( 보조받음 ) %d"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "strength %d"
+msgstr "근력 %d "
+
+#. ~ %1$s is quality name, %2$d is quality level
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "1 tool with %1$s %2$d"
+msgstr "%1$s %2$d단계 도구 1개"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "> %1$s <color_white>OR</color> %2$s"
+msgstr "> %1$s <color_white>또는</color> %2$s"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_white>Additional requirements:</color>\n"
+msgstr "<color_white>그외 필요 조건:</color>\n"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Cannot install any part here."
+msgstr "이 칸에 부품을 설치할 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Choose new part to install here:"
+msgstr "이곳에 설치할 새 부품을 고르세요:"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "All"
+msgstr "전부"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Cargo"
+msgstr "화물"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Light"
+msgstr "광원"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Util"
+msgstr "다용도"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Hull"
+msgstr "프레임"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Internal"
+msgstr "내장"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Filter"
+msgstr "필터"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Other"
+msgstr "이외"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "A"
+msgstr "전"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "C"
+msgstr "화"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "L"
+msgstr "빛"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "U"
+msgstr "용"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "H"
+msgstr "외"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "I"
+msgstr "내"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "F"
+msgstr "필"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "O"
+msgstr "별"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Search for part"
+msgstr "부품 검색"
+
+#: src/vehicle/veh_interact.cpp
+msgid "It's too hard to reach the vehicle with the other vehicle in the way"
+msgstr "다른 차량을 사이에 낀 채로 이 차량을 건드리는 것은 지나치게 어려운 일입니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Your morale is too low to construct…"
+msgstr "건설하기에는 의욕이 너무 낮습니다…"
+
+#: src/vehicle/veh_interact.cpp
+msgid "It's too dark to see what you are doing…"
+msgstr "너무 어두워서 작업할 수 없습니다…"
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't install parts while driving."
+msgstr "운전 중에는 부품을 설치할 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Installing this part will make the vehicle unfoldable.  Continue?"
+msgstr "이 부품을 설치하면 차량을 접을 수 없게 됩니다. 계속하시겠습니까?"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Choose shape:"
+msgstr "형태 선택:"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Your morale is too low to repair…"
+msgstr "수리하기에는 의욕이 너무 낮습니다…"
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't repair stuff while driving."
+msgstr "운전 중에는 수리할 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "There are no damaged parts on this vehicle."
+msgstr "이 차량에는 손상된 부품이 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Choose a part here to repair:"
+msgstr "수리할 부품을 선택하세요:"
+
+#: src/vehicle/veh_interact.cpp
+msgid "This part cannot be repaired"
+msgstr "이 부품은 수리할 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Your morale is too low to mend…"
+msgstr "고장난 부품을 고치기에는 의욕이 너무 낮습니다…"
+
+#: src/vehicle/veh_interact.cpp
+msgid "No faulty parts require mending."
+msgstr "고장난 부품이 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't mend stuff while driving."
+msgstr "운전 중에는 고장난 부품을 고칠 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Choose a part here to mend:"
+msgstr "보수할 부품을 선택하세요:"
+
+#: src/vehicle/veh_interact.cpp
+msgid ""
+"You can't refill that fuel tank, it's too hard to reach with the other "
+"vehicle in the way"
+msgstr "다른 차량을 사이에 낀 채로 이 연료 탱크를 채우는 것은 지나치게 어려운 일입니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't refill a moving vehicle."
+msgstr "운행 중인 차량에 연료를 주입할 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "No parts can currently be refilled."
+msgstr "연료를 주입할 수 있는 부품이 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Select part to refill:"
+msgstr "충전할 부품:"
+
+#: src/vehicle/veh_interact.cpp
+msgid "You cannot recharge a vehicle battery with handheld batteries"
+msgstr "들고 다니는 배터리로 차량용 배터리를 충전할 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Engines: %sSafe %4d kW</color> %sMax %4d kW</color>"
+msgstr "엔진: %s안전 %4d kW</color> %s최대 %4d kW</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Fuel     Use"
+msgstr "연료     사용중"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Tanks"
+msgstr "연료 탱크"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Contents     Qty"
+msgstr "내용물     수량"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Batteries: %s%+4d W</color>"
+msgstr "배터리: %s%+4d W</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Batteries: %s%+4.1f kW</color>"
+msgstr "배터리: %s%+4.1f kW</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Capacity  Status"
+msgstr "충전량  상태"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Power generators"
+msgstr "발전기"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Power generators: %s%+4d W</color>"
+msgstr "발전기: %s%+4d W</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Power generators: %s%+4.1f kW</color>"
+msgstr "발전기: %s%+4.1f kW</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Output  Status"
+msgstr "출력  상태"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Reactors"
+msgstr "반응로"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Reactors: Up to %s%+4d W</color>"
+msgstr "원자로: 최대 %s%+4d W</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Reactors: Up to %s%+4.1f kW</color>"
+msgstr "원자로: 최대 %s%+4.1f kW</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Turrets"
+msgstr "터렛"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Ammo     Qty"
+msgstr "탄약     수량"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Seats"
+msgstr "좌석"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Who"
+msgstr "승무원"
+
+#. ~ translation should not exceed 3 console cells
+#: src/vehicle/veh_interact.cpp
+msgctxt "vehicle part enabled value"
+msgid "Yes"
+msgstr "예"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "vehicle part enabled value"
+msgid "No"
+msgstr "아니오"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "%+d W     %s"
+msgstr "%+d W     %s"
+
+#: src/vehicle/veh_interact.cpp
+msgid "'{' to scroll up"
+msgstr "'{'로 위로 스크롤"
+
+#: src/vehicle/veh_interact.cpp
+msgid "'}' to scroll down"
+msgstr "'}'로 아래로 스크롤"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"<color_white>Removing the broken %1$s may yield some fragments.</color>\n"
+msgstr "<color_white>부서진 %1$s (을)를 제거하는 과정에서 파편이 생길 수도 있습니다.</color>\n"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"<color_white>Removing the %1$s will yield:</color>\n"
+"> %2$s\n"
+msgstr ""
+"<color_white> %1$s(을)를 제거하면 이하 물품이 나올 것입니다:</color>\n"
+"> %2$s\n"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "> %1$s%2$s</color>"
+msgstr "> %1$s%2$s</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "No parts here."
+msgstr "부품이 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Choose a part here to remove:"
+msgstr "제거할 부품을 선택:"
+
+#: src/vehicle/veh_interact.cpp
+msgid "You cannot remove that part while something is attached to it."
+msgstr "다른 것이 붙어 있는 부품은 제거할 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Better not remove something while driving."
+msgstr "운전 중엔 뭔가 빼내지 않는것이 좋습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid ""
+"It's too hard to siphon from the vehicle with the other vehicle in the way"
+msgstr "다른 차량을 사이에 낀 채로 이 차량에서 내용물을 빼내는 것은 지나치게 어려운 일입니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "The vehicle has no liquid fuel left to siphon."
+msgstr "이 차량에는 빼낼 액체 연료가 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "You need a <color_red>hose</color> to siphon liquid fuel."
+msgstr "<color_red>호스</color>가 있어야 연료를 빼낼 수 있습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't siphon from a moving vehicle."
+msgstr "주행 중인 차량에서 흡인할 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Select part to siphon:"
+msgstr "흡인할 부품 선택:"
+
+#: src/vehicle/veh_interact.cpp
+msgid "You cant unloade with the other vehicle in the way"
+msgstr "다른 차량을 사이에 낀 채로 회수하는 것은 지나치게 어려운 일입니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "The vehicle has no solid fuel left to remove."
+msgstr "차량에 제거할 고체 연료가 남아 있지 않습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't unload from a moving vehicle."
+msgstr "주행 중인 차량에서 연료를 빼낼 수 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid ""
+"No parts here or the part visible from your position does not have different"
+" shapes"
+msgstr "현재 위치에서 보이는 부품 중 다른 형태로 바꿀 수 있는 부품이 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Need at least one seat and an ally to assign crew members."
+msgstr "승무원을 배치하려면 적어도 좌석 하나와 동료 한 명이 필요합니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "Assign crew positions:"
+msgstr "승무원 위치 지정:"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Select crew member"
+msgstr "승무원 선택"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Clear assignment"
+msgstr "배치 초기화"
+
+#: src/vehicle/veh_interact.cpp
+msgid "There are no parts here to label."
+msgstr "이곳에는 라벨을 붙일 부품이 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+msgid "New label:"
+msgstr "새 라벨:"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>disabled</color>"
+msgstr "<color_light_red>고장</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>lack</color>"
+msgstr "<color_light_red>부족</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>unbalanced</color>"
+msgstr "<color_light_red>불안정</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>no steering</color>"
+msgstr "<color_light_red>조향축 없음</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>broken steering</color>"
+msgstr "<color_light_red>조향축 파손</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>poor steering</color>"
+msgstr "<color_light_red>조향축 부족</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_green>enough</color>"
+msgstr "<color_light_green>충분</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>sinks</color>"
+msgstr "<color_light_red>가라앉음</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_blue>floats</color>"
+msgstr "<color_light_blue>물에 뜸</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Wheels/boat: %s/%s"
+msgstr "바퀴/부력: %s/%s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Boat: %s"
+msgstr "부력: %s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Wheels: %s"
+msgstr "바퀴: %s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Air Safe/Top Speed: "
+"<color_light_green>%3d</color>/<color_light_red>%3d</color> %s"
+msgstr ""
+"공중 안전/최고 속도: <color_light_green>%3d</color>/<color_light_red>%3d</color>%s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Air Acceleration: <color_light_blue>%3d</color> %s/s"
+msgstr "공중 가속: <color_light_blue>%3d</color> %s/s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Safe/Top Speed: <color_light_green>%3d</color>/<color_light_red>%3d</color> "
+"%s"
+msgstr ""
+"안전/최고 속도: <color_light_green>%3d</color>/<color_light_red>%3d</color> %s"
+
+#. ~ /t means per turn
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Acceleration: <color_light_blue>%3d</color> %s/s"
+msgstr "가속: <color_light_blue>%3d</color> %s/s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Water Safe/Top Speed: "
+"<color_light_green>%3d</color>/<color_light_red>%3d</color> %s"
+msgstr ""
+"수중 안전/최고 속도: <color_light_green>%3d</color>/<color_light_red>%3d</color> %s"
+
+#. ~ /t means per turn
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Water Acceleration: <color_light_blue>%3d</color> %s/s"
+msgstr "수상 가속: <color_light_blue>%3d</color> %s/s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Mass: <color_light_blue>%5.0f</color> %s"
+msgstr "질량: <color_light_blue>%5.0f</color> %s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Maximum Lift: <color_light_blue>%5.0f</color> %s"
+msgstr "비행 가능한 최대 질량: <color_light_blue>%5.0f</color> %s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Liftoff Speed: <color_light_blue>%3d</color> %s"
+msgstr "이륙 속도: <color_light_blue>%3d</color> %s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Maximum Buoyancy: <color_light_blue>%5.0f</color> %s"
+msgstr "부양 가능한 최대 질량: <color_light_blue>%5.0f</color>%s"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Cargo Volume: <color_light_blue>%s</color> / <color_light_blue>%s</color> %s"
+msgstr "적재량: <color_light_blue>%s</color> / <color_light_blue>%s</color> %s"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Status:"
+msgstr "상태:"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Most damaged:"
+msgstr "최고손상:"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Most damaged (can't repair):"
+msgstr "최고손상 (수리 불가):"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Needs repair:"
+msgstr "수리 필요:"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Air drag:       <color_light_blue>%5.2f</color>"
+msgstr "공기 저항:       <color_light_blue>%5.2f</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Water drag:     <color_light_blue>%5.2f</color>"
+msgstr "물 저항:     <color_light_blue>%5.2f</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Rolling drag:   <color_light_blue>%5.2f</color>"
+msgstr "타이어 저항:   <color_light_blue>%5.2f</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Static drag:    <color_light_blue>%5d</color>"
+msgstr "정지 저항:    <color_light_blue>%5d</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Offroad:        <color_light_blue>%4d</color>%%"
+msgstr "험로주행:        <color_light_blue>%4d</color>%%"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Draft/Clearance:<color_light_blue>%4.2f</color>m/<color_light_blue>%4.2f</color>m"
+msgstr ""
+"흘수선/여유 간격: <color_light_blue>%4.2f</color>m/<color_light_blue>%4.2f</color>m"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Draft/Clearance:<color_light_blue>%4.2f</color>m/<color_light_red>%4.2f</color>m"
+msgstr ""
+"흘수선/여유 간격: <color_light_blue>%4.2f</color>m/<color_light_blue>%4.2f</color>m"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "%s (%s)"
+msgstr "%s(%s)"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgctxt "keybinding"
+msgid "<color_light_gray>%1$s<color_light_green>%2$s</color>%3$s</color>"
+msgstr "<color_light_gray>%1$s<color_light_green>%2$s</color>%3$s</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgctxt "keybinding"
+msgid "<color_dark_gray>%1$s<color_green>%2$s</color>%3$s</color>"
+msgstr "<color_dark_gray>%1$s<color_green>%2$s</color>%3$s</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgctxt "keybinding"
+msgid "<color_light_gray><color_light_green>%1$s</color>-%2$s</color>"
+msgstr "<color_light_gray><color_light_green>%1$s</color>-%2$s</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgctxt "keybinding"
+msgid "<color_dark_gray><color_green>%1$s</color>-%2$s</color>"
+msgstr "<color_dark_gray><color_green>%1$s</color>-%2$s</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "install"
+msgstr "설치"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "repair"
+msgstr "수리"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "mend"
+msgstr "보수"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "refill"
+msgstr "다시 채우기"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "remove"
+msgstr "제거"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "siphon"
+msgstr "흡인"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "unload"
+msgstr "빼내기"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "crew"
+msgstr "승무원"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "rename"
+msgstr "이름 바꾸기"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "label"
+msgstr "라벨"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "shape"
+msgstr "모양"
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "back"
+msgstr "뒤로"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Dur"
+msgstr "내구도"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Durability"
+msgstr "내구도"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Dmg"
+msgstr "피해량"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Weight"
+msgstr "무게"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Wgt"
+msgstr "무게"
+
+#: src/vehicle/veh_interact.cpp
+msgid "FoldVol"
+msgstr "접은 부피"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Folded Volume"
+msgstr "접은 부피"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Cap"
+msgstr "적재용량"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Capacity"
+msgstr "적재용량"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Str"
+msgstr "강도"
+
+#: src/vehicle/veh_interact.cpp
+msgid "NoisRed"
+msgstr "소음감소"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Noise Reduction"
+msgstr "소음감소"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Dia"
+msgstr "직경"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Wheel Diameter"
+msgstr "바퀴 직경"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Wdt"
+msgstr "폭"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Wheel Width"
+msgstr "바퀴 폭"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Electric Power"
+msgstr "전력"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Epwr"
+msgstr "전력"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Charge: <color_light_gray>%s</color>"
+msgstr "전력: <color_light_gray>%s</color>"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Drain: <color_light_gray>%+8d</color>"
+msgstr "연료 소모도: <color_light_gray>%+8d</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "boardable"
+msgstr "적재가능"
+
+#: src/vehicle/veh_interact.cpp
+msgid "opaque"
+msgstr "시야차단"
+
+#: src/vehicle/veh_interact.cpp
+msgid "openable"
+msgstr "개폐가능"
+
+#: src/vehicle/veh_interact.cpp
+msgid "BatCap"
+msgstr "배트캡"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Battery Capacity"
+msgstr "전력량"
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Power: <color_light_gray>%+8d</color>"
+msgstr "엔진 출력: <color_light_gray>%+8d</color>"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Select tank to siphon:"
+msgstr "흡인할 탱크 선택:"
+
+#: src/vehicle/veh_interact.cpp
+msgid "Remove what?"
+msgstr "무엇을 제거합니까?"
+
+#: src/vehicle/veh_interact.cpp
+msgid "The vehicle has no fully charged plutonium cells."
+msgstr "차량에 완전히 충전된 플루토늄 전지가 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You unload %s from the vehicle."
+msgstr "차량에서 %s(을)를 빼냈습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You don't meet the requirements to install the %s."
+msgstr "%s(을)를 설치하는데 필요한 조건이 부족합니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Could not find base part in requirements for %s."
+msgstr "%s(을)를 설치하는데 필요한 기초 부품이 없습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Press space, choose a facing direction for the new %s and confirm with "
+"enter."
+msgstr "스페이스바를 누르고, %s (이)가 향할 방향을 정한 후 엔터를 눌러 결정합니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You install a %1$s into the %2$s."
+msgstr "%1$s(을)를 %2$s에 설치했습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You refill the %1$s's %2$s."
+msgstr "%1$s의 %2$s(을)를 채웠습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You completely refill the %1$s's %2$s."
+msgstr "%1$s의 %2$s(을)를 가득 채웠습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You refuel the %1$s's %2$s."
+msgstr "%1$s의 %2$s(을)를 재충전했습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "The %s has already been removed by someone else."
+msgstr "누군가 이미 %s(을)를 제거했습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You don't meet the requirements to remove the %s."
+msgstr "%s(을)를 제거하는데 필요한 조건이 부족합니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You remove the broken %1$s from the %2$s."
+msgstr "%2$s에서 손상된 %1$s(을)를 떼어냈습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You remove the %1$s from the %2$s."
+msgstr "%1$s(을)를 %2$s에서 떼어냈습니다."
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You completely dismantle the %s."
+msgstr "%s(을)를 완전히 분해했습니다."
+
+#: src/vehicle/veh_type.cpp
+msgid "<color_white>Description</color>\n"
+msgstr "<color_white>설명</color>\n"
+
+#: src/vehicle/veh_type.cpp
+#, c-format
+msgid ""
+"\n"
+"Range: %1$5d     Damage: %2$5.0f"
+msgstr ""
+"\n"
+"사거리: %1$5d     피해량: %2$5.0f"
+
+#: src/vehicle/veh_type.cpp
+#, c-format
+msgid "Has level <color_cyan>%1$d %2$s</color> quality"
+msgstr "<color_cyan>%2$s %1$d단계</color> 기능이 있으며, "
+
+#: src/vehicle/veh_type.cpp
+#, c-format
+msgid " and is rated at <color_cyan>%1$d %2$s</color>"
+msgstr "<color_cyan>%1$d %2$s</color>까지 들 수 있습니다."
+
+#: src/vehicle/veh_utils.cpp
+#, c-format
+msgid "You don't meet the requirements to repair the %s."
+msgstr "%s(을)를 수리하는데 필요한 조건이 부족합니다."
+
+#: src/vehicle/veh_utils.cpp
+#, c-format
+msgid "You replace the %1$s's %2$s. (was %3$s)"
+msgstr "%1$s의 %2$s(을)를 교체했습니다. (이전 %3$s)"
+
+#: src/vehicle/veh_utils.cpp
+#, c-format
+msgid "You repair the %1$s's %2$s. (was %3$s)"
+msgstr "%1$s의 %2$s(을)를 수리했습니다. (이전 %3$s)"
+
+#: src/vehicle/vehicle.cpp
+msgid "The vehicle part you were working on has gone!"
+msgstr "작업 중이던 차량 부품이 사라졌습니다!"
+
+#: src/vehicle/vehicle.cpp
+msgid "The vehicle part you were holding has been destroyed!"
+msgstr "들고 있던 차량 부품이 파괴되었습니다!"
+
+#: src/vehicle/vehicle.cpp
+msgid "Lost connection with the vehicle due to distance!"
+msgstr "거리가 너무 멀어져서 차량과의 연결이 끊어졌습니다!"
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "the %s emitting a beep and saying \"Obstacle detected!\""
+msgstr "%s(이)가 삑삑거리며 \"장애물 탐지됨!\" 이라고 말합니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "%s cannot operate the %s due to injured legs."
+msgstr "%s(은)는 다친 다리로 인해 %s(을)를 조종할 수 없습니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "%s cannot operate the %s due to injured arms."
+msgstr "%s(은)는 다친 팔로 인해 %s(을)를 조종할 수 없습니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s cannot operate without an occupant."
+msgstr "%s(은)는 탑승자 없이 조종할 수 없습니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s shuts down - it cannot operate without an occupant."
+msgstr "탑승자 없이 조종할 수 없어 %s(이)가 꺼집니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "a loud BANG! from the %s"
+msgstr "%s에서 쾅! 하는 소리"
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "Remove the %1$s %2$s first."
+msgstr "%1$s %2$s(을)를 먼저 제거하세요."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "Open the attached %s first."
+msgstr "장착된 %s(을)를 먼저 열어야 합니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "Close the attached %s first."
+msgstr "장착된 %s(을)를 먼저 닫아야 합니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "Remove the attached %s first."
+msgstr "장착된 %s(을)를 먼저 제거해주세요."
+
+#: src/vehicle/vehicle.cpp
+msgid "Remove carried animal first."
+msgstr "운송 중인 동물을 먼저 빼내주세요."
+
+#: src/vehicle/vehicle.cpp
+msgid "Remove all other attached parts first."
+msgstr "장착된 다른 부품들을 먼저 제거해야 합니다."
+
+#: src/vehicle/vehicle.cpp
+msgid "Removing this part would split the vehicle."
+msgstr "이 부분을 제거하면 차량을 분리할 것입니다."
+
+#. ~ %1$s is the vehicle being loaded onto the bicycle rack
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "You load the %1$s on the rack"
+msgstr "바이크 랙에 %1$s(을)를 올렸습니다."
+
+#. ~ %1$s is the vehicle being loaded onto the bicycle rack
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "You can't get the %1$s on the rack"
+msgstr "바이크 랙에 %1$s(을)를 올릴 수 없습니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid ""
+"A part of the vehicle ('%s') has no containing vehicle's name.  It will be "
+"detached from the %s vehicle."
+msgstr "차량의 일부가 ('%s') 차량의 이름을 포함하지 않습니다. %s에서 분리될 것입니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid ""
+"There's not viable mount location on this vehicle: %s. It can't be unloaded "
+"from the rack."
+msgstr "%s 차량에 비어있는 착지 지점이 없습니다. 받침대에서 내릴 수 없습니다."
+
+#. ~ %s is the vehicle being loaded onto the bicycle rack
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "You unload the %s from the bike rack."
+msgstr "자전거 거치대에서 %s(을)를 내렸습니다."
+
+#. ~ %s is the vehicle being loaded onto the bicycle rack
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "You can't unload the %s from the bike rack."
+msgstr "자전거 거치대에서 %s(을)를 내릴 수 없습니다."
+
+#: src/vehicle/vehicle.cpp
+msgid "hmm"
+msgstr "부릉"
+
+#: src/vehicle/vehicle.cpp
+msgid "roarrr!"
+msgstr "부르르르르!"
+
+#: src/vehicle/vehicle.cpp
+msgid "ROARRR!"
+msgstr "부르르르르!"
+
+#: src/vehicle/vehicle.cpp
+msgid "BRRROARRR!"
+msgstr "브르르릉!!"
+
+#: src/vehicle/vehicle.cpp
+msgid "BRUMBRUMBRUMBRUM!"
+msgstr "부릉!!!브르렁!!!브르렁!!!"
+
+#: src/vehicle/vehicle.cpp
+msgid "WUMPWUMPWUMP!"
+msgstr "쿵쿵쿵!"
+
+#: src/vehicle/vehicle.cpp
+msgid "like new"
+msgstr "새 것 같음"
+
+#: src/vehicle/vehicle.cpp
+msgid "battered"
+msgstr "너덜너덜"
+
+#: src/vehicle/vehicle.cpp
+msgid "wrecked"
+msgstr "심하게 망가진"
+
+#: src/vehicle/vehicle.cpp
+msgid "no owner"
+msgstr "소유주 없음"
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid ""
+"This vehicle belongs to: %s, there may be consequences if you are observed "
+"interacting with it, continue?"
+msgstr ""
+"이 차량은 %s에 속해 있습니다. 이 차량을 조작하는 것을 다른 사람이 볼 경우 좋지 않은 결과가 생길 수 있습니다. 진행합니까?"
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s's reactor dies!"
+msgstr "%s의 반응로가 꺼졌다!"
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s's battery dies!"
+msgstr "%s의 배터리가 나갔다!"
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s's engine dies!"
+msgstr "%s의 엔진이 꺼졌다!"
+
+#: src/vehicle/vehicle.cpp
+msgid "Your engine emits a high pitched whine."
+msgstr "엔진이 끼기긱거리는 고음을 냅니다."
+
+#: src/vehicle/vehicle.cpp
+msgid "Your engine emits a loud grinding sound."
+msgstr "엔진이 시끄러운 마찰음을 냅니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s's planter turns off due to low temperature."
+msgstr "%s의 파종기가 낮은 기온 때문에 꺼졌습니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "Your %s winks out of existence."
+msgstr "%s(이)가 온데간데 없이 사라집니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "%1s took %.1f damage from shock."
+msgstr "%1s (이)가 충격으로 %.1f 피해를 받았습니다."
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s's %s breaks into pieces!"
+msgstr "%s의 %s(이)가 산산조각납니다!"
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %1$s's %2$s is torn off!"
+msgstr "%1$s의 %2$s(이)가 뜯겨져나갔습니다!"
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %1$s's %2$s is destroyed!"
+msgstr "%1$s의 %2$s(이)가 부서집니다!"
+
+#: src/vehicle/vehicle.cpp
+msgid "Drop which item?"
+msgstr "어떤 물품을 떨어뜨립니까?"
+
+#: src/vehicle/vehicle.cpp
+msgid "None of the droppers are loaded."
+msgstr "투하기에 내용물이 없습니다."
+
+#: src/vehicle/vehicle.cpp
+msgid "Drop from which dropper?"
+msgstr "어느 투하기에서 떨어뜨립니까?"
+
+#: src/vehicle/vehicle.cpp
+msgid "Minumum Speed in tiles per tick? ( 6 km/hr and 4 mph per )"
+msgstr "틱당 최소 속도 (타일 단위) ( 시속 6km 내지는 4마일 )"
+
+#: src/vehicle/vehicle.cpp
+msgid "Maxumum Speed in tiles per tick? ( 6 km/hr and 4 mph per )"
+msgstr "틱당 최대 속도 (타일 단위) ( 시속 6km 내지는 4마일 )"
+
+#: src/vehicle/vehicle_autodrive.cpp
+msgid "You lose control as the vehicle starts skidding."
+msgstr "차가 미끄러지자 통제력을 잃습니다."
+
+#: src/vehicle/vehicle_autodrive.cpp
+msgid "Can't see a path forward."
+msgstr "나아갈 길을 찾을 수 없습니다."
+
+#: src/vehicle/vehicle_autodrive.cpp
+msgid "You can't see anything in front of your vehicle!"
+msgstr "차량 전방을 볼 수 없습니다!"
+
+#: src/vehicle/vehicle_autodrive.cpp
+msgid "You're about to crash into something!"
+msgstr "이대로는 뭔가에 충돌합니다!"
+
+#: src/vehicle/vehicle_display.cpp
+msgid "^ More parts above…"
+msgstr "^ 상단 추가 부품 목록..."
+
+#: src/vehicle/vehicle_display.cpp
+msgid "v More parts below…"
+msgstr "v 하단 추가 부품 목록..."
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid " (%s/%s charge)"
+msgstr " (%s/%s 충전량)"
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid " (%.1fL %s)"
+msgstr " (%.1fL %s)"
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid " (vol: %s/%s %s)"
+msgstr " (부피: %s/%s %s)"
+
+#. ~ indicates that a vehicle part is inside
+#: src/vehicle/vehicle_display.cpp
+msgid "Interior"
+msgstr "내부"
+
+#. ~ indicates that a vehicle part is outside
+#: src/vehicle/vehicle_display.cpp
+msgid "Exterior"
+msgstr "외부"
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid "Label: %s"
+msgstr "라벨: %s"
+
+#: src/vehicle/vehicle_display.cpp
+msgid "More parts here…"
+msgstr "부품 더 많음…"
+
+#: src/vehicle/vehicle_display.cpp
+msgid "mL"
+msgstr "mL"
+
+#: src/vehicle/vehicle_display.cpp
+msgid "kJ"
+msgstr "kJ"
+
+#: src/vehicle/vehicle_display.cpp
+msgid "full"
+msgstr "가득참"
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid ", %d %s(%4.2f%%)/hour, %s until %s"
+msgstr ", %d %s(%4.2f%%)/시간, %s 까지 %s"
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid ", %3.1f%% / hour, %s until %s"
+msgstr ", %3.1f%% / 시간, %s 까지 %s"
+
+#: src/vehicle/vehicle_functions.cpp
+#, c-format
+msgid "The %1$s's autoloader begins reloading %2$s into %3$s."
+msgstr "%1$s의 자동 재장전기가 %3$s에 %2$s의 재장전을 시작합니다."
+
+#: src/vehicle/vehicle_functions.cpp
+#, c-format
+msgid "The %1$s's autoloader reloaded %2$s into %3$s."
+msgstr "%1$s의 자동 재장전기가 %3$s에 %2$s(을)를 재장전했습니다."
+
+#: src/vehicle/vehicle_group.cpp
+msgid "pile-up"
+msgstr "다중 충돌"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s is too leaky!"
+msgstr "%s(이)가 새어나오고 있습니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s doesn't have enough wheels to move!"
+msgstr "%s에 바퀴가 부족합니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s struggles to pull the %s on this surface!"
+msgstr "%s(이)가 %s(을)를 바닥에 밀어내고 있습니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s is too heavy for its engine(s)!"
+msgstr "%s(은)는 엔진에 비해 너무 무겁습니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s's mechanism is out of reach!"
+msgstr "%s의 페달에 발이 닿지 않습니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s's engine isn't on!"
+msgstr "%s의 엔진이 켜져있지 않습니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s is stuck."
+msgstr "%s(은)는 뭔가에 걸려있습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s's engine emits a sneezing sound."
+msgstr "%s의 엔진에서 재채기 같은 소리가 납니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %s is not fast enough to keep up with the %s"
+msgstr "%s(은)는 %s(을)를 따라갈만큼 빠르지 않습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "%1s collided with %2s!"
+msgstr "%1s (이)가 %2s 에 부딪힙니다! "
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "%1s smashed %2s!"
+msgstr "%1s (이)가 %2s (을)를 후려칩니다!"
+
+#. ~ 1$s - vehicle name, 2$s - part name, 3$s - NPC or monster
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %1$s's %2$s rams into %3$s and stuns it!"
+msgstr "%1$s의 %2$s(이)가 %3$s(을)를 들이받아 기절시킵니다!"
+
+#. ~ 1$s - vehicle name, 2$s - part name, 3$s - NPC or monster
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %1$s's %2$s rams into %3$s!"
+msgstr "%1$s의 %2$s(이)가 %3$s(을)를 들이받습니다!"
+
+#. ~ 1$s - vehicle name, 2$s - part name, 3$s - collision object name, 4$s -
+#. sound
+#. message
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %1$s's %2$s rams into %3$s with a %4$s"
+msgstr "%1$s의 %2$s(이)가 %3$s(을)를 들이받습니다. %4$s!"
+
+#. ~ 1$s - vehicle name, 2$s - part name, 3$s - collision object name
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %1$s's %2$s rams into %3$s."
+msgstr "%1$s의 %2$s(이)가 %3$s(을)를 들이받습니다."
+
+#. ~ %1$s: name of the vehicle; %2$s: name of the related vehicle part; %3$s:
+#. trap name
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %1$s's %2$s runs over %3$s."
+msgstr "%1$s의 %2$s(이)가 %3$s(을)를 달려넘습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %1$s's %2$s runs over something."
+msgstr "%1$s의 %2$s(이)가 뭔가를 달려넘습니다."
+
+#: src/vehicle/vehicle_move.cpp
+msgid "You are already landed!"
+msgstr "이미 착지해있습니다!"
+
+#: src/vehicle/vehicle_move.cpp
+msgid "It would be unsafe to try and land when there are obstacles below you."
+msgstr "아래에 장애물이 있을 때 착지하려는 것은 위험할 수 있습니다."
+
+#: src/vehicle/vehicle_move.cpp
+msgid "It would be unsafe to try and take off from an uneven surface."
+msgstr "평평하지 않은 장소에서 이륙하려는 것은 위험할 수 있습니다."
+
+#: src/vehicle/vehicle_move.cpp
+msgid "ceiling"
+msgstr "천장"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your ascent is blocked by %s directly above you."
+msgstr "머리 위 %s에 가로막혀 상승할 수 없습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your ascent is blocked by %s to your %s."
+msgstr "%s에 가로막혀 %s(이)가 상승할 수 없습니다."
+
+#: src/vehicle/vehicle_move.cpp
+msgid "You cannot steer an animal-drawn vehicle with no animal harnessed."
+msgstr "동물이 끄는 차량을 아무 동물도 묶지 않은 채로 조종할 수는 없습니다."
+
+#: src/vehicle/vehicle_move.cpp
+msgid "This vehicle has no steering system installed, you can't turn it."
+msgstr "조향축이 설치되어 있지 않아서 방향을 돌릴 수 없습니다."
+
+#: src/vehicle/vehicle_move.cpp
+msgid "The steering is completely broken!"
+msgstr "조종 장치가 완전히 망가졌습니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "You fumble with the %s's controls."
+msgstr "%s의 조종 장치를 찾으려 더듬습니다."
+
+#: src/vehicle/vehicle_move.cpp
+msgid "It takes you a very long time to steer that vehicle!"
+msgstr "차량 방향을 돌리는데 시간이 상당히 오래 걸립니다!"
+
+#: src/vehicle/vehicle_move.cpp
+msgid "It takes you a long time to steer that vehicle!"
+msgstr "차량 방향을 돌리는데 시간이 오래 걸립니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "You regain control of the %s."
+msgstr "%s의 조종능력을 되찾았습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s recovers from its skid."
+msgstr "%s(이)가 미끄러짐에서 회복되었습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %s sank."
+msgstr "%s(이)가 물 속으로 사라졌습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %s can't move on this terrain."
+msgstr "이 지형으로 %s(을)를 옮길 수 없습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %s is beached."
+msgstr "%s(을)를 물가로 끌어올렸습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "You take %d damage by the power of the impact!"
+msgstr "충돌로 %d 피해를 입었습니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "<npcname> takes %d damage by the power of the impact!"
+msgstr "<npcname>(이)가 충돌로 %d 피해를 입었습니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "You lose control of the %s."
+msgstr "%s의 통제력을 잃었습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "<npcname> loses control of the %s."
+msgstr "<npcname>(이)가 %s의 통제력을 잃었습니다."
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "You are hurled from the %s's seat by the power of the impact!"
+msgstr "충격으로 %s의 좌석에서 튕겨져나갑니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "<npcname> is hurled from the %s's seat by the power of the impact!"
+msgstr "<npcname>(이)가 충격으로 %s의 좌석에서 튕겨져나갑니다!"
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "%s is hurled from %s's by the power of the impact!"
+msgstr "%s(은)는 %s(이)가 가한 충격에 의해 튕겨져나갑니다!"
+
+#: src/vehicle/vehicle_part.cpp
+#, c-format
+msgid "%2.1fL "
+msgstr "%2.1fL "
+
+#: src/vehicle/vehicle_part.cpp
+#, c-format
+msgid "%s "
+msgstr "%s "
+
+#: src/vehicle/vehicle_part.cpp
+msgid " (faulty)"
+msgstr "(고장)"
+
+#: src/vehicle/vehicle_part.cpp
+#, c-format
+msgid " holding %s"
+msgstr "홀딩 %s"
+
+#: src/vehicle/vehicle_part.cpp
+msgid " (draining)"
+msgstr " (고갈 중)"
+
+#: src/vehicle/vehicle_part.cpp
+#, c-format
+msgid "Insufficient power to enable %s"
+msgstr "%s(을)를 켜기에 전력이 부족합니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Turn off %s"
+msgstr "%s 끄기"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Turn on %s"
+msgstr "%s 켜기"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Turned off %s."
+msgstr "%s(을)를 껐습니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Turned on %s"
+msgstr "%s(을)를 켰습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You pull a handbrake."
+msgstr "핸드 브레이크를 당겼습니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You lose control of %s."
+msgstr "%s의 통제력을 잃었습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Select door to toggle"
+msgstr "여닫을 문을 선택하세요."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Open"
+msgstr "열기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Open all curtains"
+msgstr "모든 커튼 젖히기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Open all curtains and doors"
+msgstr "모든 커튼과 문 열기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Close all doors"
+msgstr "모든 문 닫기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Close all curtains and doors"
+msgstr "모든 커튼과 문 닫기"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "reactor"
+msgstr "반응로"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "door locks"
+msgstr "문 자물쇠"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "headlights"
+msgstr "헤드라이트"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "wide angle headlights"
+msgstr "광각형 헤드라이트"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "directed overhead lights"
+msgstr "유도 경광등"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "overhead lights"
+msgstr "경광등"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "aisle lights"
+msgstr "통로 조명"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "dome lights"
+msgstr "실내등"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "atomic lights"
+msgstr "원자력 조명"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "stereo"
+msgstr "오디오"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "chimes"
+msgstr "차임벨"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "fridge"
+msgstr "냉장고"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "freezer"
+msgstr "냉동고"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "space heater"
+msgstr "난방기"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "cooler"
+msgstr "냉방기"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "recharger"
+msgstr "재충전기"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "plow"
+msgstr "경작기"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "reaper"
+msgstr "수확기"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "planter"
+msgstr "파종기"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "rockwheel"
+msgstr "면삭기"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "roadheader"
+msgstr "로드헤더"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "scoop"
+msgstr "흡입기"
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "converter"
+msgstr "변환기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Turn off camera system"
+msgstr "카메라 시스템 끄기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Turn on camera system"
+msgstr "카메라 시스템 켜기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Camera system disabled"
+msgstr "카메라 시스템 꺼짐"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Camera system enabled"
+msgstr "카메라 시스템 켜짐"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Camera system won't turn on"
+msgstr "카메라 시스템이 켜지지 않습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Turn off the engine"
+msgstr "엔진 끄기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Turn on the engine"
+msgstr "엔진 켜기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Electronics controls"
+msgstr "전자기기 제어"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You turn off the %s's engines to change their configurations."
+msgstr "엔진 설정을 바꾸기 위해 %s의 엔진을 껐습니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You change the %s's engine configuration."
+msgstr "%s의 엔진 설정을 바꿨습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Toggle which?"
+msgstr "엔진 작동 설정:"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You don't find any keys in the %s."
+msgstr "%s에 맞는 열쇠가 없습니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You don't find any keys in the %s. Attempt to hotwire vehicle?"
+msgstr "%s의 열쇠를 찾지 못했습니다. 합선시켜 강제로 시동을 겁니까?"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Hotwire"
+msgstr "합선시켜 시동걸기"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Trigger the %s's Alarm?"
+msgstr "%s의 경보 장치를 작동시킵니까?"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You leave the controls alone."
+msgstr "조종 장치를 놔둡니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You could use a screwdriver to hotwire it."
+msgstr "스크류 드라이버를 사용해 강제로 시동을 걸 수 있습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You destroy the controls…"
+msgstr "조종 장치를 망가뜨렸습니다…"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You damage the controls."
+msgstr "조종 장치를 조금 망가뜨립니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "The alarm keeps going."
+msgstr "경보음이 계속 울립니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "The alarm stops."
+msgstr "경보음이 멈춥니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Forget vehicle position"
+msgstr "차량 위치 삭제"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Remember vehicle position"
+msgstr "차량 위치 기억"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Brake hold: off"
+msgstr "브레이크 유지: 꺼짐"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Brake hold: on"
+msgstr "브레이크 유지: 켜짐"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Choose action for the autopilot"
+msgstr "오토파일럿 행동 지정하기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Patrol…"
+msgstr "순찰하기..."
+
+#: src/vehicle/vehicle_use.cpp
+msgid ""
+"Program the autopilot to patrol a nearby vehicle patrol zone.  If no zones "
+"are nearby, you will be prompted to create one."
+msgstr "오토파일럿이 주변의 차량 순찰 지역을 순찰하도록 설정합니다. 주변에 영역이 없다면 영역 생성을 진행합니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Follow…"
+msgstr "따라가기..."
+
+#: src/vehicle/vehicle_use.cpp
+msgid ""
+"Program the autopilot to follow you.  It might be a good idea to have a "
+"remote control available to tell it to stop, too."
+msgstr "오토파일럿이 당신을 따라가도록 설정합니다. 정지 명령을 내릴 수 있도록 원격 조종기를 가지고 있는 것이 좋을 것입니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Stop…"
+msgstr "중지..."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Stop all autopilot related activities."
+msgstr "오토파일럿 관련 모든 행동 중단하기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "What distance?"
+msgstr "얼마나 멀리 설정합니까?"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You stop keeping track of the vehicle position."
+msgstr "차량 위치 추적을 중단합니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You start keeping track of this vehicle's position."
+msgstr "차량 위치 추적을 시작합니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Brake hold turned off."
+msgstr "브레이크 유지를 비활성화했습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Brake hold turned on."
+msgstr "브레이크 유지를 활성화했습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Really let go of controls while flying?  This will result in a crash."
+msgstr "비행 중에 조작판에서 손을 뗍니까? 추락사고가 일어나게 될 것입니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Stop controlling"
+msgstr "조종 멈추기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You stop controlling the vehicle."
+msgstr "차량 조종을 멈췄습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Let go of controls"
+msgstr "조종 그만두기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "No controls there"
+msgstr "조종 장치가 없습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Stop driving"
+msgstr "작동 중단"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You turn the engine off and let go of the controls."
+msgstr "엔진을 끄고 조종 장치에서 손을 뗐습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "the engine go silent"
+msgstr "엔진이 꺼집니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Honk horn"
+msgstr "경적 울리기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Disable cruise control"
+msgstr "크루즈 모드 해제"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Enable cruise control"
+msgstr "크루즈 모드 사용"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Cruise control turned off"
+msgstr "크루즈 모드 꺼짐"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Cruise control turned on"
+msgstr "크루즈 모드 켜짐"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Adjust vehicle autodrive speed"
+msgstr "차량 자동운전 속도 설정"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Fold %s"
+msgstr "%s 접기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Try to disarm alarm."
+msgstr "경보기 해제"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Trigger alarm"
+msgstr "경보기 작동"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You trigger the alarm"
+msgstr "경보기를 작동시킵니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Activate all item droppers (Drop Everything)"
+msgstr "전체 투하기 작동 (전체 투하)"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Activate one item dropper (Drop Everything)"
+msgstr "단일 투하기 작동 (전체 투하)"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Activate one item dropper (Drop One Thing)"
+msgstr "단일 투하기 작동 (하나 투하)"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Vehicle controls"
+msgstr "차량 조종"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Tried to fold non-folding vehicle %s"
+msgstr "%s(은)는 접을 수 없는 차량입니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid ""
+"As the pitiless metal bars close on your nether regions, you reconsider "
+"trying to fold the %s while riding it."
+msgstr "스스로의 사타구니를 금속 막대로 박살낼게 아니라면, %s(을)를 타고 있는 중에 접는건 다시 생각해봅시다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You can't fold the %s while it's in motion."
+msgstr "%s(이)가 움직이는 동안에는 접을 수 없습니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You painstakingly pack the %s into a portable configuration."
+msgstr "공을 들여 %s(을)를 휴대하기 쉽게 접었습니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You let go of %s as you fold it."
+msgstr "%s(을)를 접고 내버려둡니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "A folded %s."
+msgstr "접힌 %s"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You cannot use %s with a broken arm."
+msgstr "부러진 팔로 %s(을)를 사용할 수 없습니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You cannot use %s with a broken leg."
+msgstr "부러진 다리로 %s(을)를 사용할 수 없습니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Looks like the %1$s is out of %2$s."
+msgstr "%1$s(은)는 %2$s(이)가 떨어진 것 같습니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s making a long beep"
+msgstr "%s(이)가 삐삐를 길게 울리는 소리"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s clicking once"
+msgstr "%s(이)가 찰칵하는 소리"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s rapidly clicking"
+msgstr "%s(이)가 빠르게 딸깍거리는 소리"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s quickly stuttering out."
+msgstr "%s(이)가 빠르게 덜덜거리는 소리"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s clanking and grinding"
+msgstr "%s(이)가 삐걱거리는 소리와 철커덕하는 소리"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s starting"
+msgstr "%s 시동"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You turn the engine off."
+msgstr "엔진을 껐습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You honk the horn!"
+msgstr "경적을 울립니다!"
+
+#. ~ Loud horn sound
+#: src/vehicle/vehicle_use.cpp
+msgid "HOOOOORNK!"
+msgstr "빠아아아앙!"
+
+#. ~ Moderate horn sound
+#: src/vehicle/vehicle_use.cpp
+msgid "BEEEP!"
+msgstr "삐이익!"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You honk the horn, but nothing happens."
+msgstr "경적을 울렸지만, 아무 일도 일어나지 않았습니다."
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Move how many?  [Have %d] (0 to cancel)"
+msgstr "얼마나 많이 옮깁니까? [%d만큼 가지고 있음] (0 눌러 취소)"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "a simple melody blaring from the loudspeakers."
+msgstr "확성기에서 단조로운 멜로디가 울려퍼지고 있다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Clanggggg!"
+msgstr "카가가가가가강!"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Swish"
+msgstr "휙"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Clink"
+msgstr "쨍그랑"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Cugugugugug"
+msgstr "크릉크릉크릉"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Ker-chunk"
+msgstr "철컹"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Whirrrr"
+msgstr "위잉..."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "BEEEThump"
+msgstr "삐유유융"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "BLEEEEEEP"
+msgstr "삐유유유융"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "NEEeu NEEeu NEEeu"
+msgstr "삐융 삐융 삐융"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "WHOOP WHOOP"
+msgstr "빠아앙 빠아앙"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "WREEP"
+msgstr "삐유웅"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "The harness is blocked."
+msgstr "하네스가 가로막혀있습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "There is no creature to harness nearby."
+msgstr "근처에 하네스를 채울 대상이 없습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Where is the creature to harness?"
+msgstr "어느 개체에 하네스를 채울까요?"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "No creature there."
+msgstr "해당 위치에 대상이 없습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "This creature is not friendly!"
+msgstr "이 개체는 우호적이지 않습니다!"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "This creature cannot be harnessed."
+msgstr "이 개체는 하네스를 채울 수 없습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "The harness is not adapted for this creature morphology."
+msgstr "이 개체의 형태는 하네스를 채우기에 적합하지 않습니다."
+
+#. ~ %1$s: monster name, %2$s: vehicle name
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You harness your %1$s to %2$s."
+msgstr "%1$s(을)를 %2$s에 묶었습니다."
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Load a vehicle on the rack"
+msgstr "선반에 차량 싣기"
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Remove the %s from the rack"
+msgstr "선반에서 %s 빼내기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Examine vehicle"
+msgstr "차량 조사"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Pick the lock"
+msgstr "자물쇠 따기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Pull handbrake"
+msgstr "핸드 브레이크 당기기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Sterilize a CBM"
+msgstr "CBM 멸균 처리"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Use autodoc"
+msgstr "오토닥 사용"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Peek through the closed curtains"
+msgstr "닫힌 커튼 사이로 엿보기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Use the hotplate"
+msgstr "핫플레이트 사용"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Fill a container with water"
+msgstr "물 채우기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Use a towel"
+msgstr "수건 사용"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Take a shower"
+msgstr "샤워하기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Use the integrated tools"
+msgstr "내장된 도구 사용"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Purify water in carried container"
+msgstr "휴대 중인 용기의 물 정수"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Capture or release a creature"
+msgstr "동물 포획/해방"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Load or unload a vehicle"
+msgstr "차량을 싣기 / 내리기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Harness an animal"
+msgstr "목줄 채우기"
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Reload seed drill with seeds"
+msgstr "파종기에 씨앗 충전"
+
+#: src/vehicle/wheel_dimensions.cpp
+#, c-format
+msgctxt "wheel dimension"
+msgid "%dcm"
+msgstr "%dcm"
+
+#: src/vehicle/wheel_dimensions.cpp
+#, c-format
+msgctxt "wheel dimension"
+msgid "%.1fcm"
+msgstr "%.1fcm"
+
+#: src/vehicle/wheel_dimensions.cpp
+#, c-format
+msgctxt "wheel dimension"
+msgid "%d\""
+msgstr "%d\""
+
+#: src/weather/weather.cpp
+msgid "You hear a distant rumble of thunder."
+msgstr "멀리서 천둥소리가 들립니다."
+
+#: src/weather/weather.cpp
+msgid "You hear a rumble of thunder from above."
+msgstr "저 위쪽에서 천둥소리가 들립니다."
+
+#: src/weather/weather.cpp
+msgid "A flash of lightning illuminates your surroundings!"
+msgstr "번개의 섬광이 주변을 환히 밝힙니다!"
+
+#: src/weather/weather.cpp
+#, c-format
+msgid "Your %s protects you from the %s."
+msgstr "착용한 %s 덕분에 %s (으)로부터 보호받습니다."
+
+#: src/weather/weather.cpp
+msgid "#####"
+msgstr "#####"
+
+#. ~ %1$s: time of day, %2$s: hour of day, %3$s: city name, %4$s: weather
+#. name, %5$s:
+#. temperature value
+#: src/weather/weather.cpp
+#, c-format
+msgid ""
+"for %1$s:\n"
+"Currently %2$s, %3$s.\n"
+"Later "
+msgstr ""
+"%3$s 시간 정보\n"
+"현재 %1$s, %2$s입니다.\n"
+"이후 "
+
+#: src/weather/weather.cpp
+msgid "today"
+msgstr "금일 주간"
+
+#: src/weather/weather.cpp
+msgid "tonight"
+msgstr "금일 야간"
+
+#. ~ %s is day of week (e.g. Friday Night)
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "Forecast"
+msgid "%s Night"
+msgstr "%s 밤"
+
+#. ~ %1 is day or night of week (e.g. "Monday", or "Friday Night"),
+#. ~ %2 is weather type, %3 and %4 are temperatures.
+#: src/weather/weather.cpp
+#, c-format
+msgid "%1$s, between %3$s and %4$s, %2$s.\n"
+msgstr "%1$s의 날씨는 %3$s이며, 기온은 아침 %4$s, 낮 %2$s입니다.\n"
+
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "temperature in Celsius"
+msgid "%s°C"
+msgstr "섭씨 %s도"
+
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "temperature in Kelvin"
+msgid "%sK"
+msgstr "%sK"
+
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "temperature in Fahrenheit"
+msgid "%sF"
+msgstr "화씨 %s도"
+
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "humidity in percent"
+msgid "%s%%"
+msgstr "%s%%"
+
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "air pressure in kPa"
+msgid "%s kPa"
+msgstr "%s kPa"
+
+#: src/weather/weather.cpp
+msgid "North-East"
+msgstr "북동쪽"
+
+#: src/weather/weather.cpp
+msgid "South-East"
+msgstr "남동쪽"
+
+#: src/weather/weather.cpp
+msgid "South-West"
+msgstr "남서쪽"
+
+#: src/weather/weather.cpp
+msgid "North-West"
+msgstr "북서쪽"
+
+#: src/weather/weather.cpp
+msgid "Calm Air"
+msgstr "고요함"
+
+#: src/weather/weather.cpp
+msgid "Light Air"
+msgstr "실바람"
+
+#: src/weather/weather.cpp
+msgid "Light Breeze"
+msgstr "남실바람"
+
+#: src/weather/weather.cpp
+msgid "Gentle Breeze"
+msgstr "산들바람"
+
+#: src/weather/weather.cpp
+msgid "Moderate Breeze"
+msgstr "건들바람"
+
+#: src/weather/weather.cpp
+msgid "Fresh Breeze"
+msgstr "흔들바람"
+
+#: src/weather/weather.cpp
+msgid "Strong Breeze"
+msgstr "된바람"
+
+#: src/weather/weather.cpp
+msgid "Moderate Gale"
+msgstr "센바람"
+
+#: src/weather/weather.cpp
+msgid "Gale"
+msgstr "큰바람"
+
+#: src/weather/weather.cpp
+msgid "Strong Gale"
+msgstr "큰센바람"
+
+#: src/weather/weather.cpp
+msgid "Whole Gale"
+msgstr "노대바람"
+
+#: src/weather/weather.cpp
+msgid "Violent Storm"
+msgstr "왕바람"
+
+#: src/weather/weather.cpp
+msgid "Hurricane"
+msgstr "싹슬바람"
+
+#: src/weather/weather.cpp
+#, c-format
+msgid "The weather changed to %s!"
+msgstr "날씨가 %s(으)로 바뀌었습니다!"
 
 #: src/wish.cpp
 msgid "Nonvalid"

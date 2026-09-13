@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-12 22:27+0000\n"
+"POT-Creation-Date: 2026-09-13 20:58+0000\n"
 "Last-Translator: Krwak, 2026\n"
 "Language-Team: Slovak (Slovakia) (https://app.transifex.com/bn-team/teams/113585/sk_SK/)\n"
 "MIME-Version: 1.0\n"
@@ -4814,6 +4814,7 @@ msgid "Favorite"
 msgstr ""
 
 #: data/json/construction_category.json data/raw/keybindings/keybindings.json
+#: src/vehicle/veh_interact.cpp
 msgid "Filter"
 msgstr ""
 
@@ -16591,7 +16592,7 @@ msgid "Resin"
 msgstr ""
 
 #: data/json/materials.json data/mods/Aftershock/items/materials.json
-#: data/mods/MagicalNights/materials.json
+#: data/mods/MagicalNights/materials.json src/vehicle/vehicle.cpp
 msgid "dented"
 msgstr ""
 
@@ -16632,7 +16633,7 @@ msgstr ""
 msgid "smashed"
 msgstr ""
 
-#: data/json/materials.json src/character.cpp
+#: data/json/materials.json src/character.cpp src/vehicle/vehicle.cpp
 msgid "destroyed"
 msgstr ""
 
@@ -29548,6 +29549,7 @@ msgid "a snapping sound."
 msgstr ""
 
 #: data/json/speech.json src/iexamine.cpp src/iuse_actor.cpp
+#: src/vehicle/vehicle_use.cpp
 msgid "beep!"
 msgstr ""
 
@@ -30485,15 +30487,15 @@ msgstr ""
 msgid "an engine revving up!"
 msgstr ""
 
-#: data/json/speech.json
+#: data/json/speech.json src/vehicle/vehicle.cpp
 msgid "hummm!"
 msgstr ""
 
-#: data/json/speech.json
+#: data/json/speech.json src/vehicle/vehicle.cpp
 msgid "whirrr!"
 msgstr ""
 
-#: data/json/speech.json
+#: data/json/speech.json src/vehicle/vehicle.cpp
 msgid "vroom!"
 msgstr ""
 
@@ -33235,7 +33237,7 @@ msgid "sleep aid"
 msgstr ""
 
 #: data/json/traps.json data/json/items/generic.json src/advanced_inv.cpp
-#: src/map_extras.cpp src/recipe.cpp
+#: src/magic/magic.cpp src/map_extras.cpp src/recipe.cpp
 msgid "none"
 msgid_plural "none"
 msgstr[0] ""
@@ -35992,6 +35994,7 @@ msgstr ""
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 #: data/mods/MagicalNights/furniture.json
 #: data/mods/desert_region/desert_terrain.json src/mapdata.h
+#: src/vehicle/vehicle_move.cpp
 msgid "smash!"
 msgstr ""
 
@@ -57891,7 +57894,7 @@ msgstr[3] ""
 #. ~ Use action menu_text for {'str': 'candle'}.
 #: data/json/items/items_holiday.json data/json/items/melee/bludgeons.json
 #: data/json/items/tool/lighting.json src/activity_actor.cpp
-#: src/crafting_gui.cpp src/player_activity.cpp
+#: src/crafting_gui.cpp src/player_activity.cpp src/vehicle/veh_interact.cpp
 msgid "Light"
 msgstr ""
 
@@ -77035,7 +77038,9 @@ msgstr[3] ""
 
 #. ~ Use action noise_message for {'str': 'clown nose'}.
 #. ~ Use action noise_message for {'str': 'bicycle horn'}.
+#. ~ Weak horn sound
 #: data/json/items/armor/misc.json data/json/items/tool/misc.json
+#: src/vehicle/vehicle_use.cpp
 msgid "honk."
 msgstr ""
 
@@ -112421,6 +112426,15 @@ msgid ""
 "Glock 22 magazines."
 msgstr ""
 
+#: data/json/items/gun/40.json data/json/items/gun/45.json
+#: data/json/items/gun/9mm.json
+msgid "H&K UMP"
+msgid_plural "H&K UMPs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
 #: data/json/items/gun/40.json
 msgid "KRISS Vector .40 S&W"
 msgid_plural "KRISS Vector .40 S&Ws"
@@ -112728,20 +112742,12 @@ msgid ""
 msgstr ""
 
 #: data/json/items/gun/45.json
-msgid "H&K UMP45"
-msgid_plural "H&K UMP45s"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: data/json/items/gun/45.json
 msgid ""
 "Developed as a lower-cost successor to H&K's own MP5, the Universal Machine "
 "Pistol is a closed-bolt, simple blowback sub-machine gun constructed of "
-"lightweight polymer.  In order to make it more attractive to American police"
-" departments, it was offered in .40 S&W and .45 ACP as well as the "
-"ubiquitous 9x19mm.  This version is chambered in .45 ACP."
+"lightweight polymer.  Originally designed for .45 ACP, it is also available "
+"in .40 S&W and 9x19mm, and can be converted to fire those calibers with the "
+"proper conversion kit."
 msgstr ""
 
 #: data/json/items/gun/45.json
@@ -115938,6 +115944,35 @@ msgstr ""
 #: data/json/items/gunmod/mechanism.json
 msgctxt "gun_type_type"
 msgid "m27iar"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
+msgid ".40 S&W UMP conversion kit"
+msgid_plural ".40 S&W UMP conversion kits"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: data/json/items/gunmod/conversions.json
+msgid "A bolt and barrel assembly to convert the UMP to fire .40 S&W."
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
+msgid "9x19mm UMP conversion kit"
+msgid_plural "9x19mm UMP conversion kits"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: data/json/items/gunmod/conversions.json
+msgid "A bolt and barrel assembly to convert the UMP to fire 9x19mm."
 msgstr ""
 
 #: data/json/items/gunmod/conversions.json
@@ -119313,6 +119348,21 @@ msgid "A 10-round steel box magazine for use with the Hi-Point Model JCP."
 msgstr ""
 
 #: data/json/items/magazine/40.json
+msgid "UMP40 magazine"
+msgid_plural "UMP40 magazines"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'UMP40 magazine'}
+#: data/json/items/magazine/40.json
+msgid ""
+"A straight, double-stack plastic box magazine for the UMP sub-machine gun in"
+" .40 S&W.  Holds 30 rounds."
+msgstr ""
+
+#: data/json/items/magazine/40.json
 msgid "KRISS Vector .40 S&W/.357 SIG magazine"
 msgid_plural "KRISS Vector .40 S&W/.357 SIG magazines"
 msgstr[0] ""
@@ -119974,6 +120024,21 @@ msgstr[3] ""
 msgid ""
 "A surprisingly compact 50-round helical magazine for use with the Calico "
 "M960 SMG."
+msgstr ""
+
+#: data/json/items/magazine/9mm.json
+msgid "UMP9 magazine"
+msgid_plural "UMP9 magazines"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#. ~ Description for {'str': 'UMP9 magazine'}
+#: data/json/items/magazine/9mm.json
+msgid ""
+"A curved, double-stack plastic box magazine for the UMP sub-machine gun in "
+"9x19mm.  Holds 30 rounds."
 msgstr ""
 
 #: data/json/items/magazine/9mm.json
@@ -159940,7 +160005,8 @@ msgstr ""
 #: src/avatar_functions.cpp src/character_functions.cpp src/crafting.cpp
 #: src/game.cpp src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp
 #: src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp
-#: src/pickup.cpp src/salvage.cpp
+#: src/pickup.cpp src/salvage.cpp src/vehicle/veh_interact.cpp
+#: src/vehicle/vehicle_use.cpp
 msgid "Never mind."
 msgstr ""
 
@@ -283839,7 +283905,7 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#: data/mods/rpg_system/main.lua
+#: data/mods/rpg_system/main.lua src/vehicle/vehicle_use.cpp
 msgid "Close"
 msgstr ""
 
@@ -285619,11 +285685,11 @@ msgstr ""
 msgid "Toggle spell favorite"
 msgstr ""
 
-#: data/raw/keybindings/keybindings.json
+#: data/raw/keybindings/keybindings.json src/magic/magic.cpp
 msgid "Toggle casting distractions"
 msgstr ""
 
-#: data/raw/keybindings/keybindings.json
+#: data/raw/keybindings/keybindings.json src/magic/magic.cpp
 msgid "Assign spell hotkey"
 msgstr ""
 
@@ -286195,11 +286261,11 @@ msgstr ""
 msgid "Toggle sorting order"
 msgstr ""
 
-#: data/raw/keybindings/keybindings.json
+#: data/raw/keybindings/keybindings.json src/magic/magic.cpp
 msgid "Scroll description up"
 msgstr ""
 
-#: data/raw/keybindings/keybindings.json
+#: data/raw/keybindings/keybindings.json src/magic/magic.cpp
 msgid "Scroll description down"
 msgstr ""
 
@@ -287464,15 +287530,15 @@ msgstr ""
 msgid "Erase message history"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Control multiple electronics"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Control individual engines"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Fold vehicle"
 msgstr ""
 
@@ -287496,7 +287562,7 @@ msgstr ""
 msgid "Toggle atomic lights"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Control autopilot"
 msgstr ""
 
@@ -287516,7 +287582,7 @@ msgstr ""
 msgid "Toggle dome lights"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Toggle doors"
 msgstr ""
 
@@ -287596,27 +287662,28 @@ msgstr ""
 msgid "Toggle tracking"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/turret.cpp
+#: src/vehicle/vehicle_use.cpp
 msgid "Set turret firing modes"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Aim manual turrets"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Aim automatic turrets"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Aim all turrets"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Aim individual turret"
 msgstr ""
 
-#: data/raw/keybindings/vehicle.json
+#: data/raw/keybindings/vehicle.json src/vehicle/vehicle_use.cpp
 msgid "Set turret targeting modes"
 msgstr ""
 
@@ -287763,7 +287830,7 @@ msgstr ""
 msgid "You can't reach through that vehicle's wall."
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "SW"
 msgstr ""
 
@@ -287771,15 +287838,15 @@ msgstr ""
 msgid "South West"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "S"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "South"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "SE"
 msgstr ""
 
@@ -287787,11 +287854,11 @@ msgstr ""
 msgid "South East"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "W"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "West"
 msgstr ""
 
@@ -287803,15 +287870,15 @@ msgstr ""
 msgid "Directly below you"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "E"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "East"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "NW"
 msgstr ""
 
@@ -287819,15 +287886,15 @@ msgstr ""
 msgid "North West"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "N"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "North"
 msgstr ""
 
-#: src/action.cpp src/advanced_inv.cpp
+#: src/action.cpp src/advanced_inv.cpp src/weather/weather.cpp
 msgid "NE"
 msgstr ""
 
@@ -288593,7 +288660,8 @@ msgstr ""
 msgid "You're too tired to continue."
 msgstr ""
 
-#: src/activity_handlers.cpp
+#: src/activity_handlers.cpp src/vehicle/vehicle_move.cpp
+#: src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "The %s doesn't have an engine!"
 msgstr ""
@@ -288630,7 +288698,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: src/activity_handlers.cpp
+#: src/activity_handlers.cpp src/vehicle/vehicle_use.cpp
 msgid "You let go of the controls."
 msgstr ""
 
@@ -292674,7 +292742,7 @@ msgstr ""
 msgid "Perform which function:"
 msgstr ""
 
-#: src/bionics.cpp
+#: src/bionics.cpp src/vehicle/vehicle_use.cpp
 msgid "Control vehicle"
 msgstr ""
 
@@ -293756,31 +293824,31 @@ msgstr ""
 msgid "Reloaded %1$d lua mods."
 msgstr ""
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Monday"
 msgstr ""
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Sunday"
 msgstr ""
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Tuesday"
 msgstr ""
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Wednesday"
 msgstr ""
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Friday"
 msgstr ""
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Thursday"
 msgstr ""
 
-#: src/catalua_bindings.cpp
+#: src/catalua_bindings.cpp src/weather/weather.cpp
 msgid "Saturday"
 msgstr ""
 
@@ -295120,7 +295188,7 @@ msgstr ""
 msgid "You pour %1$s into the %2$s."
 msgstr ""
 
-#: src/character.cpp
+#: src/character.cpp src/vehicle/veh_interact.cpp
 msgid "There's some left over!"
 msgstr ""
 
@@ -296040,7 +296108,7 @@ msgstr ""
 msgid "Profession Name: "
 msgstr ""
 
-#: src/character_display.cpp
+#: src/character_display.cpp src/vehicle/veh_interact.cpp
 msgid "Name: "
 msgstr ""
 
@@ -296089,7 +296157,7 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/character_display.cpp
+#: src/character_display.cpp src/vehicle/veh_interact.cpp
 msgid "Strength"
 msgstr ""
 
@@ -296251,12 +296319,12 @@ msgstr ""
 msgid "%s tries to dodge but fails!"
 msgstr ""
 
-#: src/character_functions.cpp
+#: src/character_functions.cpp src/vehicle/veh_interact.cpp
 #, c-format
 msgid "Refill %s"
 msgstr ""
 
-#: src/character_functions.cpp
+#: src/character_functions.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "Reload %s"
 msgstr ""
@@ -296280,7 +296348,7 @@ msgctxt "magazine"
 msgid "%1$s with %2$s (%3$d)"
 msgstr ""
 
-#: src/character_functions.cpp
+#: src/character_functions.cpp src/magic/magic.cpp
 #, c-format
 msgid "%s, %s"
 msgstr ""
@@ -296467,7 +296535,7 @@ msgstr ""
 msgid "Your ground sonar detected a %1$s to the %2$s!"
 msgstr ""
 
-#: src/character_turn.cpp
+#: src/character_turn.cpp src/vehicle/vehicle_move.cpp
 #, c-format
 msgid "You've spotted a %1$s to the %2$s!"
 msgstr ""
@@ -296496,7 +296564,7 @@ msgstr ""
 msgid "Filter:"
 msgstr ""
 
-#: src/clzones.cpp
+#: src/clzones.cpp src/vehicle/vehicle_use.cpp
 msgid "No seed"
 msgstr ""
 
@@ -297561,7 +297629,7 @@ msgid ""
 "grave."
 msgstr ""
 
-#: src/construction.cpp
+#: src/construction.cpp src/vehicle/veh_interact.cpp
 msgid "Enter new vehicle name:"
 msgstr ""
 
@@ -298438,7 +298506,7 @@ msgstr ""
 msgid "Other skills: %s\n"
 msgstr ""
 
-#: src/crafting_gui.cpp
+#: src/crafting_gui.cpp src/enchantments/enchanter.cpp
 #, c-format
 msgid "Time to complete: <color_cyan>%s</color>\n"
 msgstr ""
@@ -298554,11 +298622,11 @@ msgstr ""
 msgid "  Skill %s at level %s\n"
 msgstr ""
 
-#: src/crafting_gui.cpp src/ui.cpp
+#: src/crafting_gui.cpp src/enchantments/enchanter.cpp src/ui.cpp
 msgid "Fast scroll up"
 msgstr ""
 
-#: src/crafting_gui.cpp src/ui.cpp
+#: src/crafting_gui.cpp src/enchantments/enchanter.cpp src/ui.cpp
 msgid "Fast scroll down"
 msgstr ""
 
@@ -300235,7 +300303,7 @@ msgstr ""
 
 #. ~ Menu entry in vehicle wish menu: 1st string: displayed name, 2nd string:
 #. internal name of vehicle
-#: src/debug_menu.cpp
+#: src/debug_menu.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "%1$s (%2$s)"
 msgstr ""
@@ -300716,7 +300784,7 @@ msgstr ""
 msgid "Interrupts you if you hear a noise."
 msgstr ""
 
-#: src/distraction_manager.cpp
+#: src/distraction_manager.cpp src/vehicle/veh_interact.cpp
 msgid "Noise"
 msgstr ""
 
@@ -301355,7 +301423,7 @@ msgstr ""
 msgid "pain"
 msgstr ""
 
-#: src/effect.cpp
+#: src/effect.cpp src/magic/magic.cpp
 msgid "fatigue"
 msgstr ""
 
@@ -301443,8 +301511,54 @@ msgstr ""
 msgid "outstanding"
 msgstr ""
 
-#: src/effect.cpp
+#: src/effect.cpp src/vehicle/vehicle.cpp
 msgid "perfect"
+msgstr ""
+
+#: src/enchantments/enchanter.cpp
+msgid ""
+"Result Info:\n"
+" "
+msgstr ""
+
+#: src/enchantments/enchanter.cpp
+#, c-format
+msgid "Applications Left: %d"
+msgstr ""
+
+#: src/enchantments/enchanter.cpp
+msgid "Required Skills:\n"
+msgstr ""
+
+#: src/enchantments/enchanter.cpp
+msgid "Enchant What?"
+msgstr ""
+
+#: src/enchantments/enchanter.cpp
+msgid "You dont have a suitable item to enchant here"
+msgstr ""
+
+#: src/enchantments/enchantment.cpp
+msgid "At all times"
+msgstr ""
+
+#: src/enchantments/enchantment.cpp src/npcmove.cpp src/output.h
+msgid " and "
+msgstr ""
+
+#: src/enchantments/enchantment.cpp
+#, c-format
+msgid "  <color_%s>Gives effect %s</color>"
+msgstr ""
+
+#: src/enchantments/enchantment.cpp
+#, c-format
+msgid "  <color_%s>Provides Immunity To %s</color>"
+msgstr ""
+
+#: src/enchantments/enchantment.cpp
+#, c-format
+msgid "  <color_%s>Gives mutation %s</color>"
 msgstr ""
 
 #. ~ Default format for scores.  %1$s is statistic description; %2$s is value.
@@ -302543,7 +302657,7 @@ msgstr ""
 msgid "You refuse to take control of this vehicle."
 msgstr ""
 
-#: src/game.cpp
+#: src/game.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "You take control of the %s."
 msgstr ""
@@ -303628,7 +303742,7 @@ msgid ""
 "You are not in the mood and the prospect of work stops you before you begin."
 msgstr ""
 
-#: src/game.cpp src/iuse.cpp
+#: src/game.cpp src/iuse.cpp src/vehicle/veh_interact.cpp
 #, c-format
 msgid "%s helps with this task…"
 msgstr ""
@@ -304002,7 +304116,7 @@ msgstr ""
 msgid "You can't go up here!"
 msgstr ""
 
-#: src/game.cpp
+#: src/game.cpp src/vehicle/vehicle_move.cpp
 msgid "It would be unsafe to try and ascend further."
 msgstr ""
 
@@ -304061,6 +304175,10 @@ msgid "You are already underwater and there is no water above you to swim up!"
 msgstr ""
 
 #: src/game.cpp
+msgid "You are too exhausted to climb."
+msgstr ""
+
+#: src/game.cpp
 #, c-format
 msgid "%s moves out of the way for you."
 msgstr ""
@@ -304081,7 +304199,7 @@ msgid "Failed to save map data: %s"
 msgstr ""
 
 #. ~ %s is the name of hostile NPC
-#: src/game.cpp src/gates.cpp
+#: src/game.cpp src/gates.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "%s is in the way!"
 msgstr ""
@@ -305434,7 +305552,7 @@ msgid ""
 " been warned."
 msgstr ""
 
-#: src/gates.cpp
+#: src/gates.cpp src/vehicle/vehicle_use.cpp
 msgid "There's some buffoon in the way!"
 msgstr ""
 
@@ -306933,11 +307051,11 @@ msgid ""
 "shape, but with long, twisted, distended limbs."
 msgstr ""
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_use.cpp
 msgid "Select an action"
 msgstr ""
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_use.cpp
 msgid "Get items"
 msgstr ""
 
@@ -307111,7 +307229,7 @@ msgstr ""
 msgid "Use which seed?"
 msgstr ""
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_part.cpp
 msgid "It is too cold to plant anything now."
 msgstr ""
 
@@ -307509,7 +307627,7 @@ msgstr ""
 msgid "Dispense or dump %s"
 msgstr ""
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_use.cpp
 msgid "Have a drink"
 msgstr ""
 
@@ -307550,7 +307668,7 @@ msgstr ""
 msgid "Fluid stored: %1$s/%2$s %3$s."
 msgstr ""
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_display.cpp
 msgid "empty"
 msgstr ""
 
@@ -307856,7 +307974,7 @@ msgstr ""
 msgid "The %1$s contains %2$d %3$s."
 msgstr ""
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_use.cpp
 msgid "Which tool do you want to use?"
 msgstr ""
 
@@ -307872,7 +307990,7 @@ msgstr ""
 msgid "Tear down the curtains."
 msgstr ""
 
-#: src/iexamine.cpp
+#: src/iexamine.cpp src/vehicle/vehicle_use.cpp
 msgid "You carefully peek through the curtains."
 msgstr ""
 
@@ -309874,7 +309992,7 @@ msgstr ""
 msgid "Switch category selection mode"
 msgstr ""
 
-#: src/inventory_ui.cpp
+#: src/inventory_ui.cpp src/magic/magic.cpp
 msgid "Toggle favorite"
 msgstr ""
 
@@ -311406,7 +311524,7 @@ msgstr ""
 msgid " (dirty)"
 msgstr ""
 
-#: src/item.cpp
+#: src/item.cpp src/vehicle/veh_interact.cpp
 msgid " (rotten)"
 msgstr ""
 
@@ -315868,7 +315986,7 @@ msgstr ""
 msgid "Store ammo in %s"
 msgstr ""
 
-#: src/iuse_actor.cpp
+#: src/iuse_actor.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "Unload %s"
 msgstr ""
@@ -318088,6 +318206,444 @@ msgstr ""
 msgid "inside %s"
 msgstr ""
 
+#: src/magic/magic.cpp
+msgid "ERROR: Invalid energy string.  Defaulting to NONE"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid ""
+"ERROR: 'None' damage is not not valid and obsoleted for spells!  Please "
+"switch to 'True' instead"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "ERROR: Invalid damage type string.  Defaulting to bash"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "%d moves"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "You cast %s!"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "an explosion"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Too Difficult!"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Failure Chance"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "health"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "mana"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "stamina"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "bionic power"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "error: energy_type"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "infinite"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "%s and %s"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid ""
+"Learning this spell will make you a\n"
+"\n"
+"%s: %s\n"
+"\n"
+"and lock you out of\n"
+"\n"
+"%s\n"
+"\n"
+"Continue?"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "You learned %s!"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "You can't learn this spell."
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "All knowledge of %s leaves you."
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Ignore Distractions"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Popup Distractions"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "Assign Hotkey [%s]"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "No spell selected."
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Choose a new hotkey for this spell."
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Hotkey already used."
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "%c set."
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Hotkey removed."
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "requires concentration"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "verbal"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "somatic"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "impeded by gloves"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "does not require hands"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "requires mobility"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "can be cast through walls"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "can be used by Brawlers"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "is a physical technique and can be used by Brawlers"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "can be augmented by melee weapon damage"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "divides damage evenly among its targets"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "can be augmented by the following damage types on melee weapons: %s"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "scales off of strength stat"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "scales off of dexterity stat"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "scales off of perception stat"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "scales off of intelligence stat"
+msgstr ""
+
+#: src/magic/magic.cpp src/newcharacter.cpp
+msgid "Classless"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgctxt "spell selector"
+msgid "Unknown class (%s)"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Blocker mutations"
+msgstr ""
+
+#: src/magic/magic.cpp src/martialarts.cpp
+msgid "Skill"
+msgid_plural "Skills"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: src/magic/magic.cpp
+msgid "(MAX)"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Spell Level"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Max Level"
+msgstr ""
+
+#: src/magic/magic.cpp src/mtype.cpp
+msgid "Difficulty"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Current Exp"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "to Next Level"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Casting Cost"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Casting Cost (impeded)"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid " (%s current)"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Not Enough Energy"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Casting Time"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Casting Time (impeded)"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "self"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Valid Targets"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid "Only affects the monsters: %s"
+msgstr ""
+
+#: src/magic/magic.cpp src/vehicle/veh_interact.cpp
+msgid "Damage"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Healing"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Spell Radius"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Cone Arc"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "degrees"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Line Width"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Variance"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Spawn"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Summon"
+msgstr ""
+
+#: src/magic/magic.cpp src/vehicle/veh_interact.cpp
+msgid "Range"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Duration"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgctxt "spell selector category"
+msgid "All"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgctxt "spell selector category"
+msgid "Favorites"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgctxt "spell selector category"
+msgid "Other"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Choose a Spell"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "AoE"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Spawned"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Recover"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Damage Type"
+msgstr ""
+
+#. ~ translation should not exceed 10 console cells
+#: src/magic/magic.cpp
+msgid "Stat Gain"
+msgstr ""
+
+#. ~ translation should not exceed 7 console cells
+#: src/magic/magic.cpp
+msgid "lvl 0"
+msgstr ""
+
+#. ~ translation should not exceed 7 console cells
+#: src/magic/magic.cpp
+msgid "per lvl"
+msgstr ""
+
+#. ~ translation should not exceed 7 console cells
+#: src/magic/magic.cpp
+msgid "max lvl"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Cast Cost"
+msgstr ""
+
+#: src/magic/magic.cpp
+msgid "Cast Time"
+msgstr ""
+
+#: src/magic/magic.cpp
+#, c-format
+msgid ""
+"Your experience and knowledge in creating and manipulating magical energies "
+"to cast %s have opened your eyes to new possibilities, you can now cast %s."
+msgstr ""
+
+#: src/magic/magic_spell_effect.cpp
+msgid "Your injuries even out."
+msgstr ""
+
+#: src/magic/magic_spell_effect.cpp
+#, c-format
+msgid "%s wounds are closing up!"
+msgstr ""
+
+#: src/magic/magic_spell_effect.cpp
+msgid "There is already a vehicle there."
+msgstr ""
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "Name this gate."
+msgstr ""
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "No translocator target known."
+msgstr ""
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "Teleport canceled."
+msgstr ""
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "Failed to teleport.  Teleporter obstructed or destroyed."
+msgstr ""
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "No valid targets to teleport."
+msgstr ""
+
+#: src/magic/magic_teleporter_list.cpp
+#, c-format
+msgid "Distance: %d %s"
+msgstr ""
+
+#: src/magic/magic_teleporter_list.cpp
+msgid "Choose Translocator Gate"
+msgstr ""
+
+#: src/magic/spell_selector.cpp
+#, c-format
+msgctxt "spell selector category"
+msgid "%1$s (%2$s)"
+msgstr ""
+
 #: src/main.cpp
 msgid "Really Quit?  All unsaved changes will be lost."
 msgstr ""
@@ -318427,7 +318983,7 @@ msgstr ""
 msgid "weight of %1$s"
 msgstr ""
 
-#: src/map.cpp
+#: src/map.cpp src/vehicle/vehicle.cpp
 #, c-format
 msgid "A towing cable snaps off of %s."
 msgstr ""
@@ -318437,7 +318993,7 @@ msgstr ""
 msgid "The %1$s's %2$s collides with %3$s's %4$s."
 msgstr ""
 
-#: src/map.cpp src/monster.cpp
+#: src/map.cpp src/monster.cpp src/vehicle/vehicle_display.cpp
 #, c-format
 msgid "the %s"
 msgstr ""
@@ -318581,6 +319137,23 @@ msgstr ""
 
 #: src/map.cpp
 msgid "You fail to disarm the trap, and you set it off!"
+msgstr ""
+
+#: src/map/utils/map_functions.cpp
+msgid "The nerve cluster collapses in on itself, and the nearby cages open!"
+msgstr ""
+
+#: src/map/utils/map_functions.cpp
+msgid "The nerve cluster collapses in on itself, to no discernible effect."
+msgstr ""
+
+#: src/map/utils/map_functions.cpp
+msgid "a loud alien shriek reverberating through the structure!"
+msgstr ""
+
+#: src/map/utils/map_functions.cpp
+msgid ""
+"Something stirs and clambers out of the ruined mass of flesh and nerves!"
 msgstr ""
 
 #: src/map_extras.cpp
@@ -318842,14 +319415,6 @@ msgstr ""
 #, c-format
 msgid "<bold>%s required: </bold>"
 msgstr ""
-
-#: src/martialarts.cpp
-msgid "Skill"
-msgid_plural "Skills"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
 
 #: src/martialarts.cpp
 msgid "<bold>Damage type required: </bold>"
@@ -319291,7 +319856,7 @@ msgstr ""
 msgid "The %1$s bites <npcname>'s %2$s!"
 msgstr ""
 
-#: src/mattack_actors.cpp
+#: src/mattack_actors.cpp src/vehicle/turret.cpp
 #, c-format
 msgid "The %1$s fires its %2$s!"
 msgstr ""
@@ -322753,7 +323318,7 @@ msgstr ""
 msgid "A %s appears!"
 msgstr ""
 
-#: src/monattack.cpp
+#: src/monattack.cpp src/vehicle/turret.cpp
 #, c-format
 msgid "%s points in your direction."
 msgstr ""
@@ -324103,7 +324668,7 @@ msgstr ""
 msgid "You tie your %s."
 msgstr ""
 
-#: src/monexamine.cpp
+#: src/monexamine.cpp src/vehicle/vehicle_use.cpp
 #, c-format
 msgid "You untie your %s."
 msgstr ""
@@ -325013,10 +325578,6 @@ msgstr ""
 
 #: src/mtype.cpp
 msgid "indistinct footsteps."
-msgstr ""
-
-#: src/mtype.cpp
-msgid "Difficulty"
 msgstr ""
 
 #: src/mtype.cpp
@@ -325987,10 +326548,6 @@ msgstr[2] ""
 msgstr[3] ""
 
 #: src/newcharacter.cpp
-msgid "Classless"
-msgstr ""
-
-#: src/newcharacter.cpp
 msgid "You cannot learn this spell!"
 msgstr ""
 
@@ -326757,10 +327314,6 @@ msgstr ""
 #: src/npcmove.cpp
 #, c-format
 msgid "%s looks around nervously, as if searching for something."
-msgstr ""
-
-#: src/npcmove.cpp src/output.h
-msgid " and "
 msgstr ""
 
 #: src/npcmove.cpp
@@ -332830,7 +333383,7 @@ msgstr ""
 msgid "Get items from where?"
 msgstr ""
 
-#: src/pickup.cpp
+#: src/pickup.cpp src/vehicle/vehicle_use.cpp
 msgid "Get items on the ground"
 msgstr ""
 
@@ -333784,7 +334337,7 @@ msgstr ""
 msgid "Immediate"
 msgstr ""
 
-#: src/ranged.cpp
+#: src/ranged.cpp src/vehicle/vehicle_use.cpp
 msgid " (active)"
 msgstr ""
 
@@ -334241,7 +334794,10 @@ msgstr ""
 msgid "Tools required:"
 msgstr ""
 
-#: src/requirements.cpp
+#. ~ %1$s represents the internal color name which shouldn't be translated,
+#. %2$s is the word
+#. "NONE"
+#: src/requirements.cpp src/vehicle/veh_interact.cpp
 msgid "NONE"
 msgstr ""
 
@@ -335809,6 +336365,2421 @@ msgstr ""
 
 #: src/units_utility.cpp
 msgid "quart"
+msgstr ""
+
+#: src/vehicle/turret.cpp
+msgid "None of the turrets are ready to fire."
+msgstr ""
+
+#: src/vehicle/turret.cpp
+msgid "Aim which turret?"
+msgstr ""
+
+#: src/vehicle/turret.cpp
+msgid "Can't aim turrets: all turrets are offline."
+msgstr ""
+
+#: src/vehicle/turret.cpp
+msgid ""
+"Can't aim turrets: all turrets are offline or set to automatic targeting "
+"mode."
+msgstr ""
+
+#: src/vehicle/turret.cpp
+msgid ""
+"Can't aim turrets: all turrets are offline or set to manual targeting mode."
+msgstr ""
+
+#: src/vehicle/turret.cpp
+msgid "Set turret targeting"
+msgstr ""
+
+#: src/vehicle/turret.cpp
+msgid "auto -> manual"
+msgstr ""
+
+#: src/vehicle/turret.cpp
+msgid "manual -> auto"
+msgstr ""
+
+#: src/vehicle/turret.cpp
+msgid "manual (turret control unit required for auto mode)"
+msgstr ""
+
+#: src/vehicle/turret.cpp
+#, c-format
+msgid "The %s turret"
+msgstr ""
+
+#: src/vehicle/turret.cpp
+msgid "Insufficient power, laser targeting not engaged."
+msgstr ""
+
+#: src/vehicle/turret.cpp
+#, c-format
+msgctxt "vehicle turret"
+msgid "The %s"
+msgstr ""
+
+#: src/vehicle/turret.cpp
+#, c-format
+msgid "%s points in your direction and emits an IFF warning beep."
+msgid_plural ""
+"%s points in your direction and emits %d annoyed sounding beeps."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: src/vehicle/turret.cpp
+#, c-format
+msgid "You hear a warning beep."
+msgid_plural "You hear %d annoyed sounding beeps."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Select part"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_white>Time required:</color>\n"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_white>Skills required:</color>\n"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "> %1$s%2$s %3$i</color>\n"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You cannot rename this vehicle as it is owned by: %s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You cannot assign crew on this vehicle as it is owned by: %s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You cannot relabel this vehicle as it is owned by: %s."
+msgstr ""
+
+#. ~ %1$s is fuel_type
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Only one %1$s powered engine can be installed."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Funnels need to be installed over a tank."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Can't install turret on another turret."
+msgstr ""
+
+#. ~ %1$s represents the internal color name which shouldn't be translated,
+#. ~ %2$s is skill name, and %3$i is skill level
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "> %1$s%2$s %3$i</color> to install alongside other engines."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "> %1$s%2$s %3$i</color> for extra steering axles."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "strength ( assisted ) %d"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "strength %d"
+msgstr ""
+
+#. ~ %1$s is quality name, %2$d is quality level
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "1 tool with %1$s %2$d"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "> %1$s <color_white>OR</color> %2$s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_white>Additional requirements:</color>\n"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Cannot install any part here."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Choose new part to install here:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "All"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Cargo"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Light"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Util"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Hull"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Internal"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Filter"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "Other"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "A"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "C"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "L"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "U"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "H"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "I"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "F"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "Vehicle Parts|"
+msgid "O"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Search for part"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "It's too hard to reach the vehicle with the other vehicle in the way"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Your morale is too low to construct…"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "It's too dark to see what you are doing…"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't install parts while driving."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Installing this part will make the vehicle unfoldable.  Continue?"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Choose shape:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Your morale is too low to repair…"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't repair stuff while driving."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "There are no damaged parts on this vehicle."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Choose a part here to repair:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "This part cannot be repaired"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Your morale is too low to mend…"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "No faulty parts require mending."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't mend stuff while driving."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Choose a part here to mend:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid ""
+"You can't refill that fuel tank, it's too hard to reach with the other "
+"vehicle in the way"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't refill a moving vehicle."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "No parts can currently be refilled."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Select part to refill:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "You cannot recharge a vehicle battery with handheld batteries"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Engines: %sSafe %4d kW</color> %sMax %4d kW</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Fuel     Use"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Tanks"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Contents     Qty"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Batteries: %s%+4d W</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Batteries: %s%+4.1f kW</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Capacity  Status"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Power generators"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Power generators: %s%+4d W</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Power generators: %s%+4.1f kW</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Output  Status"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Reactors"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Reactors: Up to %s%+4d W</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Reactors: Up to %s%+4.1f kW</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Turrets"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Ammo     Qty"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Seats"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Who"
+msgstr ""
+
+#. ~ translation should not exceed 3 console cells
+#: src/vehicle/veh_interact.cpp
+msgctxt "vehicle part enabled value"
+msgid "Yes"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "vehicle part enabled value"
+msgid "No"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "%+d W     %s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "'{' to scroll up"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "'}' to scroll down"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"<color_white>Removing the broken %1$s may yield some fragments.</color>\n"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"<color_white>Removing the %1$s will yield:</color>\n"
+"> %2$s\n"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "> %1$s%2$s</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "No parts here."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Choose a part here to remove:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "You cannot remove that part while something is attached to it."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Better not remove something while driving."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid ""
+"It's too hard to siphon from the vehicle with the other vehicle in the way"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "The vehicle has no liquid fuel left to siphon."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "You need a <color_red>hose</color> to siphon liquid fuel."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't siphon from a moving vehicle."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Select part to siphon:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "You cant unloade with the other vehicle in the way"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "The vehicle has no solid fuel left to remove."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "You can't unload from a moving vehicle."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid ""
+"No parts here or the part visible from your position does not have different"
+" shapes"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Need at least one seat and an ally to assign crew members."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Assign crew positions:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Select crew member"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Clear assignment"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "There are no parts here to label."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "New label:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>disabled</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>lack</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>unbalanced</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>no steering</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>broken steering</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>poor steering</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_green>enough</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_red>sinks</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "<color_light_blue>floats</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Wheels/boat: %s/%s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Boat: %s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Wheels: %s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Air Safe/Top Speed: "
+"<color_light_green>%3d</color>/<color_light_red>%3d</color> %s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Air Acceleration: <color_light_blue>%3d</color> %s/s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Safe/Top Speed: <color_light_green>%3d</color>/<color_light_red>%3d</color> "
+"%s"
+msgstr ""
+
+#. ~ /t means per turn
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Acceleration: <color_light_blue>%3d</color> %s/s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Water Safe/Top Speed: "
+"<color_light_green>%3d</color>/<color_light_red>%3d</color> %s"
+msgstr ""
+
+#. ~ /t means per turn
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Water Acceleration: <color_light_blue>%3d</color> %s/s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Mass: <color_light_blue>%5.0f</color> %s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Maximum Lift: <color_light_blue>%5.0f</color> %s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Liftoff Speed: <color_light_blue>%3d</color> %s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Maximum Buoyancy: <color_light_blue>%5.0f</color> %s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Cargo Volume: <color_light_blue>%s</color> / <color_light_blue>%s</color> %s"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Status:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Most damaged:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Most damaged (can't repair):"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Needs repair:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Air drag:       <color_light_blue>%5.2f</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Water drag:     <color_light_blue>%5.2f</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Rolling drag:   <color_light_blue>%5.2f</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Static drag:    <color_light_blue>%5d</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Offroad:        <color_light_blue>%4d</color>%%"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Draft/Clearance:<color_light_blue>%4.2f</color>m/<color_light_blue>%4.2f</color>m"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Draft/Clearance:<color_light_blue>%4.2f</color>m/<color_light_red>%4.2f</color>m"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "%s (%s)"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgctxt "keybinding"
+msgid "<color_light_gray>%1$s<color_light_green>%2$s</color>%3$s</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgctxt "keybinding"
+msgid "<color_dark_gray>%1$s<color_green>%2$s</color>%3$s</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgctxt "keybinding"
+msgid "<color_light_gray><color_light_green>%1$s</color>-%2$s</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgctxt "keybinding"
+msgid "<color_dark_gray><color_green>%1$s</color>-%2$s</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "install"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "repair"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "mend"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "refill"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "remove"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "siphon"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "unload"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "crew"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "rename"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "label"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "shape"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgctxt "veh_interact"
+msgid "back"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Dur"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Durability"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Dmg"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Weight"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Wgt"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "FoldVol"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Folded Volume"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Cap"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Capacity"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Str"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "NoisRed"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Noise Reduction"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Dia"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Wheel Diameter"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Wdt"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Wheel Width"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Electric Power"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Epwr"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Charge: <color_light_gray>%s</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Drain: <color_light_gray>%+8d</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "boardable"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "opaque"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "openable"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "BatCap"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Battery Capacity"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Power: <color_light_gray>%+8d</color>"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Select tank to siphon:"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "Remove what?"
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+msgid "The vehicle has no fully charged plutonium cells."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You unload %s from the vehicle."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You don't meet the requirements to install the %s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Could not find base part in requirements for %s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid ""
+"Press space, choose a facing direction for the new %s and confirm with "
+"enter."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You install a %1$s into the %2$s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You refill the %1$s's %2$s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You completely refill the %1$s's %2$s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You refuel the %1$s's %2$s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "The %s has already been removed by someone else."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You don't meet the requirements to remove the %s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You remove the broken %1$s from the %2$s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You remove the %1$s from the %2$s."
+msgstr ""
+
+#: src/vehicle/veh_interact.cpp
+#, c-format
+msgid "You completely dismantle the %s."
+msgstr ""
+
+#: src/vehicle/veh_type.cpp
+msgid "<color_white>Description</color>\n"
+msgstr ""
+
+#: src/vehicle/veh_type.cpp
+#, c-format
+msgid ""
+"\n"
+"Range: %1$5d     Damage: %2$5.0f"
+msgstr ""
+
+#: src/vehicle/veh_type.cpp
+#, c-format
+msgid "Has level <color_cyan>%1$d %2$s</color> quality"
+msgstr ""
+
+#: src/vehicle/veh_type.cpp
+#, c-format
+msgid " and is rated at <color_cyan>%1$d %2$s</color>"
+msgstr ""
+
+#: src/vehicle/veh_utils.cpp
+#, c-format
+msgid "You don't meet the requirements to repair the %s."
+msgstr ""
+
+#: src/vehicle/veh_utils.cpp
+#, c-format
+msgid "You replace the %1$s's %2$s. (was %3$s)"
+msgstr ""
+
+#: src/vehicle/veh_utils.cpp
+#, c-format
+msgid "You repair the %1$s's %2$s. (was %3$s)"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "The vehicle part you were working on has gone!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "The vehicle part you were holding has been destroyed!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "Lost connection with the vehicle due to distance!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "the %s emitting a beep and saying \"Obstacle detected!\""
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "%s cannot operate the %s due to injured legs."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "%s cannot operate the %s due to injured arms."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s cannot operate without an occupant."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s shuts down - it cannot operate without an occupant."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "a loud BANG! from the %s"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "Remove the %1$s %2$s first."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "Open the attached %s first."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "Close the attached %s first."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "Remove the attached %s first."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "Remove carried animal first."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "Remove all other attached parts first."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "Removing this part would split the vehicle."
+msgstr ""
+
+#. ~ %1$s is the vehicle being loaded onto the bicycle rack
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "You load the %1$s on the rack"
+msgstr ""
+
+#. ~ %1$s is the vehicle being loaded onto the bicycle rack
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "You can't get the %1$s on the rack"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid ""
+"A part of the vehicle ('%s') has no containing vehicle's name.  It will be "
+"detached from the %s vehicle."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid ""
+"There's not viable mount location on this vehicle: %s. It can't be unloaded "
+"from the rack."
+msgstr ""
+
+#. ~ %s is the vehicle being loaded onto the bicycle rack
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "You unload the %s from the bike rack."
+msgstr ""
+
+#. ~ %s is the vehicle being loaded onto the bicycle rack
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "You can't unload the %s from the bike rack."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "hmm"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "roarrr!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "ROARRR!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "BRRROARRR!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "BRUMBRUMBRUMBRUM!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "WUMPWUMPWUMP!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "like new"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "battered"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "wrecked"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "no owner"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid ""
+"This vehicle belongs to: %s, there may be consequences if you are observed "
+"interacting with it, continue?"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s's reactor dies!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s's battery dies!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s's engine dies!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "Your engine emits a high pitched whine."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "Your engine emits a loud grinding sound."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s's planter turns off due to low temperature."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "Your %s winks out of existence."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "%1s took %.1f damage from shock."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %s's %s breaks into pieces!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %1$s's %2$s is torn off!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+#, c-format
+msgid "The %1$s's %2$s is destroyed!"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "Drop which item?"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "None of the droppers are loaded."
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "Drop from which dropper?"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "Minumum Speed in tiles per tick? ( 6 km/hr and 4 mph per )"
+msgstr ""
+
+#: src/vehicle/vehicle.cpp
+msgid "Maxumum Speed in tiles per tick? ( 6 km/hr and 4 mph per )"
+msgstr ""
+
+#: src/vehicle/vehicle_autodrive.cpp
+msgid "You lose control as the vehicle starts skidding."
+msgstr ""
+
+#: src/vehicle/vehicle_autodrive.cpp
+msgid "Can't see a path forward."
+msgstr ""
+
+#: src/vehicle/vehicle_autodrive.cpp
+msgid "You can't see anything in front of your vehicle!"
+msgstr ""
+
+#: src/vehicle/vehicle_autodrive.cpp
+msgid "You're about to crash into something!"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+msgid "^ More parts above…"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+msgid "v More parts below…"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid " (%s/%s charge)"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid " (%.1fL %s)"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid " (vol: %s/%s %s)"
+msgstr ""
+
+#. ~ indicates that a vehicle part is inside
+#: src/vehicle/vehicle_display.cpp
+msgid "Interior"
+msgstr ""
+
+#. ~ indicates that a vehicle part is outside
+#: src/vehicle/vehicle_display.cpp
+msgid "Exterior"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid "Label: %s"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+msgid "More parts here…"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+msgid "mL"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+msgid "kJ"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+msgid "full"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid ", %d %s(%4.2f%%)/hour, %s until %s"
+msgstr ""
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid ", %3.1f%% / hour, %s until %s"
+msgstr ""
+
+#: src/vehicle/vehicle_functions.cpp
+#, c-format
+msgid "The %1$s's autoloader begins reloading %2$s into %3$s."
+msgstr ""
+
+#: src/vehicle/vehicle_functions.cpp
+#, c-format
+msgid "The %1$s's autoloader reloaded %2$s into %3$s."
+msgstr ""
+
+#: src/vehicle/vehicle_group.cpp
+msgid "pile-up"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s is too leaky!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s doesn't have enough wheels to move!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s struggles to pull the %s on this surface!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s is too heavy for its engine(s)!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s's mechanism is out of reach!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s's engine isn't on!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s is stuck."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s's engine emits a sneezing sound."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %s is not fast enough to keep up with the %s"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "%1s collided with %2s!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "%1s smashed %2s!"
+msgstr ""
+
+#. ~ 1$s - vehicle name, 2$s - part name, 3$s - NPC or monster
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %1$s's %2$s rams into %3$s and stuns it!"
+msgstr ""
+
+#. ~ 1$s - vehicle name, 2$s - part name, 3$s - NPC or monster
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %1$s's %2$s rams into %3$s!"
+msgstr ""
+
+#. ~ 1$s - vehicle name, 2$s - part name, 3$s - collision object name, 4$s -
+#. sound
+#. message
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %1$s's %2$s rams into %3$s with a %4$s"
+msgstr ""
+
+#. ~ 1$s - vehicle name, 2$s - part name, 3$s - collision object name
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %1$s's %2$s rams into %3$s."
+msgstr ""
+
+#. ~ %1$s: name of the vehicle; %2$s: name of the related vehicle part; %3$s:
+#. trap name
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %1$s's %2$s runs over %3$s."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %1$s's %2$s runs over something."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+msgid "You are already landed!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+msgid "It would be unsafe to try and land when there are obstacles below you."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+msgid "It would be unsafe to try and take off from an uneven surface."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+msgid "ceiling"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your ascent is blocked by %s directly above you."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your ascent is blocked by %s to your %s."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+msgid "You cannot steer an animal-drawn vehicle with no animal harnessed."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+msgid "This vehicle has no steering system installed, you can't turn it."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+msgid "The steering is completely broken!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "You fumble with the %s's controls."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+msgid "It takes you a very long time to steer that vehicle!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+msgid "It takes you a long time to steer that vehicle!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "You regain control of the %s."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "The %s recovers from its skid."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %s sank."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %s can't move on this terrain."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "Your %s is beached."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "You take %d damage by the power of the impact!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "<npcname> takes %d damage by the power of the impact!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "You lose control of the %s."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "<npcname> loses control of the %s."
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "You are hurled from the %s's seat by the power of the impact!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "<npcname> is hurled from the %s's seat by the power of the impact!"
+msgstr ""
+
+#: src/vehicle/vehicle_move.cpp
+#, c-format
+msgid "%s is hurled from %s's by the power of the impact!"
+msgstr ""
+
+#: src/vehicle/vehicle_part.cpp
+#, c-format
+msgid "%2.1fL "
+msgstr ""
+
+#: src/vehicle/vehicle_part.cpp
+#, c-format
+msgid "%s "
+msgstr ""
+
+#: src/vehicle/vehicle_part.cpp
+msgid " (faulty)"
+msgstr ""
+
+#: src/vehicle/vehicle_part.cpp
+#, c-format
+msgid " holding %s"
+msgstr ""
+
+#: src/vehicle/vehicle_part.cpp
+msgid " (draining)"
+msgstr ""
+
+#: src/vehicle/vehicle_part.cpp
+#, c-format
+msgid "Insufficient power to enable %s"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Turn off %s"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Turn on %s"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Turned off %s."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Turned on %s"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You pull a handbrake."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You lose control of %s."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Select door to toggle"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Open"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Open all curtains"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Open all curtains and doors"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Close all doors"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Close all curtains and doors"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "reactor"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "door locks"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "headlights"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "wide angle headlights"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "directed overhead lights"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "overhead lights"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "aisle lights"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "dome lights"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "atomic lights"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "stereo"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "chimes"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "fridge"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "freezer"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "space heater"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "cooler"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "recharger"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "plow"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "reaper"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "planter"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "rockwheel"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "roadheader"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "scoop"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgctxt "electronics menu option"
+msgid "converter"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Turn off camera system"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Turn on camera system"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Camera system disabled"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Camera system enabled"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Camera system won't turn on"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Turn off the engine"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Turn on the engine"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Electronics controls"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You turn off the %s's engines to change their configurations."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You change the %s's engine configuration."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Toggle which?"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You don't find any keys in the %s."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You don't find any keys in the %s. Attempt to hotwire vehicle?"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Hotwire"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Trigger the %s's Alarm?"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You leave the controls alone."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You could use a screwdriver to hotwire it."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You destroy the controls…"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You damage the controls."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "The alarm keeps going."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "The alarm stops."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Forget vehicle position"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Remember vehicle position"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Brake hold: off"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Brake hold: on"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Choose action for the autopilot"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Patrol…"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid ""
+"Program the autopilot to patrol a nearby vehicle patrol zone.  If no zones "
+"are nearby, you will be prompted to create one."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Follow…"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid ""
+"Program the autopilot to follow you.  It might be a good idea to have a "
+"remote control available to tell it to stop, too."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Stop…"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Stop all autopilot related activities."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "What distance?"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You stop keeping track of the vehicle position."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You start keeping track of this vehicle's position."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Brake hold turned off."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Brake hold turned on."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Really let go of controls while flying?  This will result in a crash."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Stop controlling"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You stop controlling the vehicle."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Let go of controls"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "No controls there"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Stop driving"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You turn the engine off and let go of the controls."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "the engine go silent"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Honk horn"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Disable cruise control"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Enable cruise control"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Cruise control turned off"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Cruise control turned on"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Adjust vehicle autodrive speed"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Fold %s"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Try to disarm alarm."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Trigger alarm"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You trigger the alarm"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Activate all item droppers (Drop Everything)"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Activate one item dropper (Drop Everything)"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Activate one item dropper (Drop One Thing)"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Vehicle controls"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Tried to fold non-folding vehicle %s"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid ""
+"As the pitiless metal bars close on your nether regions, you reconsider "
+"trying to fold the %s while riding it."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You can't fold the %s while it's in motion."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You painstakingly pack the %s into a portable configuration."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You let go of %s as you fold it."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "A folded %s."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You cannot use %s with a broken arm."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You cannot use %s with a broken leg."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Looks like the %1$s is out of %2$s."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s making a long beep"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s clicking once"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s rapidly clicking"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s quickly stuttering out."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s clanking and grinding"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "the %s starting"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You turn the engine off."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You honk the horn!"
+msgstr ""
+
+#. ~ Loud horn sound
+#: src/vehicle/vehicle_use.cpp
+msgid "HOOOOORNK!"
+msgstr ""
+
+#. ~ Moderate horn sound
+#: src/vehicle/vehicle_use.cpp
+msgid "BEEEP!"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "You honk the horn, but nothing happens."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Move how many?  [Have %d] (0 to cancel)"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "a simple melody blaring from the loudspeakers."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Clanggggg!"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Swish"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Clink"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Cugugugugug"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Ker-chunk"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Whirrrr"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "BEEEThump"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "BLEEEEEEP"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "NEEeu NEEeu NEEeu"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "WHOOP WHOOP"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "WREEP"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "The harness is blocked."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "There is no creature to harness nearby."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Where is the creature to harness?"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "No creature there."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "This creature is not friendly!"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "This creature cannot be harnessed."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "The harness is not adapted for this creature morphology."
+msgstr ""
+
+#. ~ %1$s: monster name, %2$s: vehicle name
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "You harness your %1$s to %2$s."
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Load a vehicle on the rack"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Remove the %s from the rack"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Examine vehicle"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Pick the lock"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Pull handbrake"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Sterilize a CBM"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Use autodoc"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Peek through the closed curtains"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Use the hotplate"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Fill a container with water"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Use a towel"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Take a shower"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Use the integrated tools"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Purify water in carried container"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Capture or release a creature"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Load or unload a vehicle"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Harness an animal"
+msgstr ""
+
+#: src/vehicle/vehicle_use.cpp
+msgid "Reload seed drill with seeds"
+msgstr ""
+
+#: src/vehicle/wheel_dimensions.cpp
+#, c-format
+msgctxt "wheel dimension"
+msgid "%dcm"
+msgstr ""
+
+#: src/vehicle/wheel_dimensions.cpp
+#, c-format
+msgctxt "wheel dimension"
+msgid "%.1fcm"
+msgstr ""
+
+#: src/vehicle/wheel_dimensions.cpp
+#, c-format
+msgctxt "wheel dimension"
+msgid "%d\""
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "You hear a distant rumble of thunder."
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "You hear a rumble of thunder from above."
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "A flash of lightning illuminates your surroundings!"
+msgstr ""
+
+#: src/weather/weather.cpp
+#, c-format
+msgid "Your %s protects you from the %s."
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "#####"
+msgstr ""
+
+#. ~ %1$s: time of day, %2$s: hour of day, %3$s: city name, %4$s: weather
+#. name, %5$s:
+#. temperature value
+#: src/weather/weather.cpp
+#, c-format
+msgid ""
+"for %1$s:\n"
+"Currently %2$s, %3$s.\n"
+"Later "
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "today"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "tonight"
+msgstr ""
+
+#. ~ %s is day of week (e.g. Friday Night)
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "Forecast"
+msgid "%s Night"
+msgstr ""
+
+#. ~ %1 is day or night of week (e.g. "Monday", or "Friday Night"),
+#. ~ %2 is weather type, %3 and %4 are temperatures.
+#: src/weather/weather.cpp
+#, c-format
+msgid "%1$s, between %3$s and %4$s, %2$s.\n"
+msgstr ""
+
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "temperature in Celsius"
+msgid "%s°C"
+msgstr ""
+
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "temperature in Kelvin"
+msgid "%sK"
+msgstr ""
+
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "temperature in Fahrenheit"
+msgid "%sF"
+msgstr ""
+
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "humidity in percent"
+msgid "%s%%"
+msgstr ""
+
+#: src/weather/weather.cpp
+#, c-format
+msgctxt "air pressure in kPa"
+msgid "%s kPa"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "North-East"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "South-East"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "South-West"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "North-West"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Calm Air"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Light Air"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Light Breeze"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Gentle Breeze"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Moderate Breeze"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Fresh Breeze"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Strong Breeze"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Moderate Gale"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Gale"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Strong Gale"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Whole Gale"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Violent Storm"
+msgstr ""
+
+#: src/weather/weather.cpp
+msgid "Hurricane"
+msgstr ""
+
+#: src/weather/weather.cpp
+#, c-format
+msgid "The weather changed to %s!"
 msgstr ""
 
 #: src/wish.cpp
