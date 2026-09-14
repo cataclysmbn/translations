@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-13 20:58+0000\n"
+"POT-Creation-Date: 2026-09-14 23:26+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -5726,6 +5726,10 @@ msgstr "插电冰箱"
 #: data/json/construction_group.json
 msgid "Plug In Glass Refrigerator"
 msgstr "插电玻璃冰箱"
+
+#: data/json/construction_group.json
+msgid "Plug In Incubator"
+msgstr "插电孵化器"
 
 #: data/json/construction_group.json
 msgid "Plug In Plutonium Generator"
@@ -34901,6 +34905,7 @@ msgstr "放置好的落地灯"
 #. ~ Description for abstract air conditioner
 #. ~ Description for abstract space heater
 #. ~ Description for overhead light
+#. ~ Description for abstract incubator
 #. ~ Description for abstract water purifier
 #. ~ Description for abstract electric well pump
 #: data/json/furniture_and_terrain/furniture-appliances.json
@@ -36490,6 +36495,63 @@ msgid ""
 "A genome workstation connected to an electrical grid, drawing power instead "
 "of batteries.  Can scan genetic samples and produce DNA samples for cloning."
 msgstr "一台连接到电网的基因组工作站，直接消耗电网电能而非电池。可以扫描基因样本并生成用于克隆的DNA样本。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "abstract incubator"
+msgstr "虚拟孵化器"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "incubator (off)"
+msgstr "孵化器（关）"
+
+#. ~ Description for incubator (off)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"Put things in here to make them hot. Technically for eggs.  It is switched "
+"off."
+msgstr "把东西放进这里加热。严格来说是给蛋用的。当前处于关闭状态。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Switch on the incubator."
+msgstr "打开孵化器。"
+
+#. ~ Message for furniture 'incubator (off)'
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "You switch on the incubator."
+msgstr "你打开了孵化器。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+#: data/json/items/furniture.json
+msgid "incubator"
+msgid_plural "incubators"
+msgstr[0] "孵化器"
+
+#. ~ Description for incubator
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"Put things in here to make them hot. Technically for eggs.  It has no power."
+msgstr "把东西放进这里加热。严格来说是给蛋用的。它没有通电。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "Switch off the incubator."
+msgstr "关闭孵化器。"
+
+#. ~ Message for furniture 'incubator'
+#. ~ Message for furniture 'incubator (on)'
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "You switch off the incubator."
+msgstr "你关闭了孵化器。"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "incubator (on)"
+msgstr "孵化器（开）"
+
+#. ~ Description for incubator (on)
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"Put things in here to make them hot. Technically for eggs.  It is switched "
+"on."
+msgstr "把东西放进这里加热。严格来说是给蛋用的。当前处于开启状态。"
 
 #: data/json/furniture_and_terrain/furniture-barriers.json
 msgid "road barricade"
@@ -53343,6 +53405,11 @@ msgstr[0] "空调"
 #: data/json/items/furniture.json
 msgid "A household AC unit, designed to be mounted in a window."
 msgstr "一台家用空调，设计安装在窗户上。"
+
+#. ~ Description for incubator
+#: data/json/items/furniture.json
+msgid "A large incubator, with removable racks for storing eggs."
+msgstr "一个大型孵化器，配有用于存放蛋的可拆卸网架。"
 
 #. ~ Description for refrigerator
 #: data/json/items/furniture.json
@@ -90183,7 +90250,7 @@ msgid ""
 "still in its original packaging."
 msgstr "該免疫球蛋白注射器以靜脈注射濃縮的抗體以暫時增強免疫系統。它仍然是原裝的。"
 
-#: data/json/items/comestibles/med.json
+#: data/json/items/comestibles/med.json data/mods/novitamins/modinfo.json
 msgid "multivitamin"
 msgid_plural "multivitamins"
 msgstr[0] "复合维生素"
@@ -90241,7 +90308,7 @@ msgid ""
 " as palatable as the pre-Cataclysm tablets."
 msgstr "一份用骨粉制成的自制钙补充剂。由于添加了甜味剂来抵消原本粉状质地和骨灰味道，它现在几乎和大灾变前的药片一样可口。"
 
-#: data/json/items/comestibles/med.json
+#: data/json/items/comestibles/med.json data/mods/novitamins/modinfo.json
 msgid "gummy vitamin"
 msgid_plural "gummy vitamins"
 msgstr[0] "维他命树脂糖"
@@ -260438,6 +260505,20 @@ msgstr "簡化營養需求"
 msgid "Disables vitamin requirements."
 msgstr "停用維他命需求。"
 
+#. ~ Description for multivitamin
+#: data/mods/novitamins/modinfo.json
+msgid ""
+"Essential dietary nutrients conveniently packaged in pill form.  An option "
+"of last resort when a balanced diet is not possible."
+msgstr ""
+
+#. ~ Description for gummy vitamin
+#: data/mods/novitamins/modinfo.json
+msgid ""
+"Essential dietary nutrients conveniently packaged in a fruit-flavored chewy "
+"candy form.  An option of last resort when a balanced diet is not possible."
+msgstr ""
+
 #: data/mods/nuclear_tear/modinfo.json
 msgid "Closable tear in reality"
 msgstr "可闭合的时空裂缝"
@@ -279029,27 +279110,29 @@ msgid ""
 "Result Info:\n"
 " "
 msgstr ""
+"结果信息：\n"
+" "
 
 #: src/enchantments/enchanter.cpp
 #, c-format
 msgid "Applications Left: %d"
-msgstr ""
+msgstr "剩余使用次数：%d"
 
 #: src/enchantments/enchanter.cpp
 msgid "Required Skills:\n"
-msgstr ""
+msgstr "所需技能：\n"
 
 #: src/enchantments/enchanter.cpp
 msgid "Enchant What?"
-msgstr ""
+msgstr "附魔什么？"
 
 #: src/enchantments/enchanter.cpp
 msgid "You dont have a suitable item to enchant here"
-msgstr ""
+msgstr "你身上没有适合在此附魔的物品"
 
 #: src/enchantments/enchantment.cpp
 msgid "At all times"
-msgstr ""
+msgstr "任何时候"
 
 #: src/enchantments/enchantment.cpp src/npcmove.cpp src/output.h
 msgid " and "
@@ -279058,17 +279141,17 @@ msgstr " 與 "
 #: src/enchantments/enchantment.cpp
 #, c-format
 msgid "  <color_%s>Gives effect %s</color>"
-msgstr ""
+msgstr "<color_%s>赋予效果 %s</color>"
 
 #: src/enchantments/enchantment.cpp
 #, c-format
 msgid "  <color_%s>Provides Immunity To %s</color>"
-msgstr ""
+msgstr "<color_%s>提供对 %s 的免疫</color>"
 
 #: src/enchantments/enchantment.cpp
 #, c-format
 msgid "  <color_%s>Gives mutation %s</color>"
-msgstr ""
+msgstr "<color_%s>赋予变异 %s</color>"
 
 #. ~ Default format for scores.  %1$s is statistic description; %2$s is value.
 #: src/event_statistics.cpp
@@ -281813,7 +281896,7 @@ msgstr "你已经在水下了，上面没有水可以游上来！"
 
 #: src/game.cpp
 msgid "You are too exhausted to climb."
-msgstr ""
+msgstr "你太累了，爬不上去。"
 
 #: src/game.cpp
 #, c-format
@@ -288014,6 +288097,13 @@ msgstr "* 当前储存条件 <good>完全</good> 保护此物品免受腐烂。�
 msgid ""
 "* Current storage conditions <bad>do not</bad> protect this item from rot."
 msgstr "* 当前储存条件 <bad>无法</bad> 保护该物品不腐烂."
+
+#: src/item.cpp
+#, c-format
+msgid ""
+"* Current storage conditions <bad>accelerate</bad> this item's decay. It "
+"will go bad in <info>%s</info>."
+msgstr "* 当前储存环境会<bad>加速</bad>该物品的变质。它将在 <info>%s</info> 后腐烂。"
 
 #: src/item.cpp
 #, c-format
@@ -295937,11 +296027,11 @@ msgstr "提示分散注意力的事物"
 #: src/magic/magic.cpp
 #, c-format
 msgid "Assign Hotkey [%s]"
-msgstr ""
+msgstr "分配快捷键 [%s]"
 
 #: src/magic/magic.cpp
 msgid "No spell selected."
-msgstr ""
+msgstr "未选择法术。"
 
 #: src/magic/magic.cpp
 msgid "Choose a new hotkey for this spell."
@@ -295954,7 +296044,7 @@ msgstr "快捷键已被占用。"
 #: src/magic/magic.cpp
 #, c-format
 msgid "%c set."
-msgstr ""
+msgstr "%c 已设置。"
 
 #: src/magic/magic.cpp
 msgid "Hotkey removed."
@@ -296033,7 +296123,7 @@ msgstr "無派別"
 #, c-format
 msgctxt "spell selector"
 msgid "Unknown class (%s)"
-msgstr ""
+msgstr "未知职业 (%s)"
 
 #: src/magic/magic.cpp
 msgid "Blocker mutations"
