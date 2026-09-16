@@ -17,7 +17,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-15 15:22+0000\n"
+"POT-Creation-Date: 2026-09-16 22:29+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -10663,7 +10663,8 @@ msgstr "全部搞定！"
 #: data/json/field_type.json
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
-#: data/mods/alt_map_key/overmap_terrain.json src/mapdata.cpp src/skill.cpp
+#: data/mods/alt_map_key/overmap_terrain.json src/map/mapdata.cpp
+#: src/skill.cpp
 msgid "nothing"
 msgstr "无"
 
@@ -35543,7 +35544,7 @@ msgstr "一台固定并接线至建筑物电网的便携式水泥搅拌机。内
 #: data/json/obsoletion/terrain.json data/json/obsoletion/uncategorized.json
 #: data/mods/CRT_EXPANSION/constructions/crt_terrain.json
 #: data/mods/MagicalNights/terrain.json data/mods/pride_flags/furniture.json
-#: src/mapdata.cpp
+#: src/map/mapdata.cpp
 msgid "crunch!"
 msgstr "嘎嚓！"
 
@@ -36296,7 +36297,7 @@ msgstr "一个连接电网的灯光开关，这个是关闭的。"
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 #: data/mods/MagicalNights/furniture.json
-#: data/mods/desert_region/desert_terrain.json src/mapdata.h
+#: data/mods/desert_region/desert_terrain.json src/map/mapdata.h
 #: src/vehicle/vehicle_move.cpp
 msgid "smash!"
 msgstr "咔嚓！"
@@ -36979,7 +36980,7 @@ msgid ""
 msgstr "这是一塘污水，偶尔有气泡冒出，释放出微毒的气体。"
 
 #: data/json/furniture_and_terrain/furniture-emitters.json src/ballistics.cpp
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "splash!"
 msgstr "唰啦！"
 
@@ -37065,7 +37066,7 @@ msgstr "一个在室内靠墙砌的生火取暖用的设备。"
 #: data/mods/Aftershock/maps/terrain.json
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 #: data/mods/Arcana_BN/furniture_and_terrain/terrain.json
-#: data/mods/MagicalNights/furniture.json src/map.cpp
+#: data/mods/MagicalNights/furniture.json src/map/map.cpp
 msgid "crash!"
 msgstr "撞击声！"
 
@@ -37543,8 +37544,8 @@ msgstr "一块墓石，标记着某人的安息之处。"
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 #: data/mods/Aftershock/maps/terrain.json
-#: data/mods/Arcana_BN/furniture_and_terrain/furniture.json src/map.cpp
-#: src/mapdata.h
+#: data/mods/Arcana_BN/furniture_and_terrain/furniture.json src/map/map.cpp
+#: src/map/mapdata.h
 msgid "thump!"
 msgstr "嘭！"
 
@@ -42081,7 +42082,8 @@ msgid "A section of wooden railing."
 msgstr "一段木栏杆。"
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
-#: data/json/furniture_and_terrain/terrain-recreational.json src/mapdata.cpp
+#: data/json/furniture_and_terrain/terrain-recreational.json
+#: src/map/mapdata.cpp
 msgid "crack!"
 msgstr "咔嚓！"
 
@@ -265759,7 +265761,8 @@ msgstr "你的能量被吸走了！"
 msgid "You cannot hack this."
 msgstr "你无法入侵它。"
 
-#: src/activity_actor.cpp src/computer_session.cpp src/iuse.cpp src/map.cpp
+#: src/activity_actor.cpp src/computer_session.cpp src/iuse.cpp
+#: src/map/map.cpp
 msgid "an alarm sound!"
 msgstr "一声警报！"
 
@@ -279379,7 +279382,7 @@ msgstr "‘%s’ 已被从角色的自动拾取规则中移除。"
 msgid "force of the explosion"
 msgstr "爆炸的冲击"
 
-#: src/explosion.cpp src/map.cpp
+#: src/explosion.cpp src/map/map.cpp
 #, c-format
 msgid "The %1$s"
 msgstr "%1$s"
@@ -279891,31 +279894,6 @@ msgstr "你还没有记录到任何生物的目击信息。拍照是一个不错
 #, c-format
 msgid "%s returns from their mission"
 msgstr "%s 已被召回"
-
-#: src/field_type.h
-#, c-format
-msgid " in %s"
-msgstr "和%s"
-
-#: src/field_type.h
-#, c-format
-msgid " covered in %s"
-msgstr "和%s"
-
-#: src/field_type.h
-#, c-format
-msgid " covered in a %s"
-msgstr "身上覆盖着%s"
-
-#: src/field_type.h
-#, c-format
-msgid " on %s"
-msgstr "和%s"
-
-#: src/field_type.h
-#, c-format
-msgid " under %s"
-msgstr "和%s"
 
 #: src/fungal_effects.cpp src/iuse.cpp
 #, c-format
@@ -284126,7 +284104,7 @@ msgstr "你需要一个螺旋桨才能起飞！"
 msgid "You can't open things while you're in your shell."
 msgstr "你缩在龟壳里无法打开物品。"
 
-#: src/handle_action.cpp src/map.cpp
+#: src/handle_action.cpp src/map/map.cpp
 msgid "You can't open things while you're riding."
 msgstr "你不能在骑乘的时候打开物品。"
 
@@ -296893,167 +296871,374 @@ msgstr ""
 "编辑mod列表或mod加载顺序可能会导致世界不稳定或完全无法加载。建议在继续之前手动备份世界文件。如果你刚刚开始玩这个世界，可以考虑创建一个新的世界。\n"
 "是否继续?"
 
-#. ~ %1$s: vehicle name
-#: src/map.cpp
+#: src/map/field_type.h
+#, c-format
+msgid " in %s"
+msgstr "和%s"
+
+#: src/map/field_type.h
+#, c-format
+msgid " covered in %s"
+msgstr "和%s"
+
+#: src/map/field_type.h
+#, c-format
+msgid " covered in a %s"
+msgstr "身上覆盖着%s"
+
+#: src/map/field_type.h
+#, c-format
+msgid " on %s"
+msgstr "和%s"
+
+#: src/map/field_type.h
+#, c-format
+msgid " under %s"
+msgstr "和%s"
+
+#: src/map/map.cpp
 #, c-format
 msgid "weight of %1$s"
 msgstr "%1$s 的碾压"
 
-#: src/map.cpp src/vehicle/vehicle.cpp
+#: src/map/map.cpp src/vehicle/vehicle.cpp
 #, c-format
 msgid "A towing cable snaps off of %s."
 msgstr "牵引索从 %s 上绷断。"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s collides with %3$s's %4$s."
 msgstr "%1$s 的 %2$s 与 %3$s 的 %4$s 相撞。"
 
-#: src/map.cpp src/monster.cpp src/vehicle/vehicle_display.cpp
+#: src/map/map.cpp src/monster.cpp src/vehicle/vehicle_display.cpp
 #, c-format
 msgid "the %s"
 msgstr "%s"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "Stuff spills from the %s!"
 msgstr "东西从%s中泼出来！"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s you were grabbing is destroyed!"
 msgstr "你抓着的%s被毁掉了！"
 
-#: src/map.cpp
-#, c-format
-msgid "Falling %s hits you!"
-msgstr "掉落的 %s 击中了你！"
-
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "Falling %s hits <npcname>"
 msgstr "掉落的 %s 击中了 <npcname>！"
 
-#: src/map.cpp
+#: src/map/map.cpp
+#, c-format
+msgid "Falling %s hits you!"
+msgstr "掉落的 %s 击中了你！"
+
+#: src/map/map.cpp
 #, c-format
 msgid "The %s destroys several items!"
 msgstr "%s 摧毁了一些东西！"
 
 #. ~ %1$s: the cause of destruction, %2$s: destroyed item name
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s destroys the %2$s!"
 msgstr "%1$s 摧毁了 %2$s！"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s damages several items."
 msgstr "%s 损伤了一些东西。"
 
 #. ~ %1$s: the cause of damage, %2$s: damaged item name
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s damages the %2$s."
 msgstr "%1$s 损伤了 %2$s。"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "an alarm go off!"
 msgstr "一个警报拉响了！"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You feel the ground beneath you shake from the impact!"
 msgstr "你感觉到脚下的地面因巨大的冲击而震动！"
 
-#: src/map.cpp
-msgid "You lose your balance!"
-msgstr "你失去了平衡！"
-
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "<npcname> loses their balance!"
 msgstr "<npcname> 失去了平衡！"
 
-#: src/map.cpp
+#: src/map/map.cpp
+msgid "You lose your balance!"
+msgstr "你失去了平衡！"
+
+#: src/map/map.cpp
 msgid "glass shattering"
 msgstr "玻璃破碎"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You are crushed by the falling debris!"
 msgstr "你被坠落的残骸击中！"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "<npcname> is crushed by the falling debris!"
 msgstr "<npcname> 被坠落的残骸击中！"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot strikes the %s!"
 msgstr "这一击击中了%s！"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot is stopped by the %s!"
 msgstr "这一击被%s挡住了！"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot hits the %s and punches through!"
 msgstr "子弹击中了%s并穿透了它！"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "laser beam"
 msgstr "激光射线"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "bolt of electricity"
 msgstr "电弧"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "bolt of plasma"
 msgstr "等离子束"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "flying projectile"
 msgstr "流弹"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "The metal bars melt!"
 msgstr "金属棒融化了！"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "swish"
 msgstr "嗖"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s can only be opened from outside."
 msgstr "%1$s的%2$s只能从外面打开。"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s can only be opened from inside."
 msgstr "%1$s的%2$s只能从里面打开。"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s is locked."
 msgstr "%1$s的%2$s已上锁。"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s is taken down."
 msgstr "%s 被拆除。"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You disarm the trap!"
 msgstr "你成功解除了陷阱！"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You fail to disarm the trap."
 msgstr "你拆解陷阱失败。"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You fail to disarm the trap, and you set it off!"
 msgstr "你拆解陷阱失败，而且你把它触发了！"
+
+#: src/map/map_field.cpp
+msgid "The acid burns your body!"
+msgstr "你的身体被酸液灼烧！"
+
+#: src/map/map_field.cpp
+msgid "The acid burns <npcname>s body!"
+msgstr "<npcname> 的身体被酸液灼烧！"
+
+#: src/map/map_field.cpp
+msgid "The acid burns your legs and feet!"
+msgstr "你的腿和脚被酸液灼烧！"
+
+#: src/map/map_field.cpp
+msgid "The acid burns <npcname>s legs and feet!"
+msgstr "<npcname> 的腿和脚被酸液灼烧！ "
+
+#: src/map/map_field.cpp
+msgid "You're lying in a pool of acid"
+msgstr "你正躺在酸液池里。"
+
+#: src/map/map_field.cpp
+msgid "You're standing in a pool of acid"
+msgstr "你正站在酸液池里。"
+
+#: src/map/map_field.cpp
+msgid "The sludge is thick and sticky.  You struggle to pull free."
+msgstr "污泥又粘又稠。你好不容易挣扎了出来。"
+
+#: src/map/map_field.cpp
+msgid "You burn your legs and feet!"
+msgstr "你的腿和脚烧了起来！"
+
+#: src/map/map_field.cpp
+msgid "You're burning up!"
+msgstr "你烧了起来！"
+
+#: src/map/map_field.cpp
+msgid "You're set ablaze!"
+msgstr "你被点着了！"
+
+#: src/map/map_field.cpp
+msgid "Your whole body is burning!"
+msgstr "你的全身都在燃烧！"
+
+#: src/map/map_field.cpp
+msgid "<npcname> burns their legs and feet!"
+msgstr "<npcname> 的腿和脚烧了起来！"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is burning up!"
+msgstr "<npcname> 烧了起来！"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is set ablaze!"
+msgstr "<npcname> 被点着了！"
+
+#: src/map/map_field.cpp
+msgid "<npcname>s whole body is burning!"
+msgstr "<npcname> 的全身都在燃烧！"
+
+#: src/map/map_field.cpp
+msgid "You're standing in a fire!"
+msgstr "你正站在火上面！"
+
+#: src/map/map_field.cpp
+msgid "You're waist-deep in a fire!"
+msgstr "你腰部以下都是火了！"
+
+#: src/map/map_field.cpp
+msgid "You're surrounded by raging fire!"
+msgstr "你被熊熊烈火包围了！"
+
+#: src/map/map_field.cpp
+msgid "You're lying in fire!"
+msgstr "你正躺在火上面！"
+
+#: src/map/map_field.cpp
+msgid "You're torched by flames!"
+msgstr "你被火烧到了！"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is torched by flames!"
+msgstr "<npcname> 被火烧到了！"
+
+#: src/map/map_field.cpp
+msgid "These flames do not burn you."
+msgstr "你没有被火烧到。"
+
+#: src/map/map_field.cpp
+msgid "Those flames do not burn <npcname>."
+msgstr "<npcname> 没有被火烧到。"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is shocked!"
+msgstr "<npcname> 被电击了！"
+
+#: src/map/map_field.cpp
+msgid "You're painfully electrocuted!"
+msgstr "你痛苦地触电了！"
+
+#: src/map/map_field.cpp
+msgid "You're shocked!"
+msgstr "你被电击了！"
+
+#: src/map/map_field.cpp
+msgid "The electric cloud doesn't affect you."
+msgstr "你没有被电云影响。"
+
+#: src/map/map_field.cpp
+msgid "The electric cloud doesn't seem to affect <npcname>."
+msgstr "<npcname> 没有被电云影响。"
+
+#: src/map/map_field.cpp
+msgid "You're violently teleported!"
+msgstr "你猛地被传送走了！"
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The bees sting you in %s!"
+msgstr "%s 中的蜜蜂刺了你一下！"
+
+#: src/map/map_field.cpp
+msgid "The incendiary burns <npcname>!"
+msgstr "<npcname> 被燃烧剂灼烧！"
+
+#: src/map/map_field.cpp
+msgid "The incendiary burns you!"
+msgstr "你被燃烧剂灼烧！"
+
+#: src/map/map_field.cpp
+msgid "The incendiary melts into your skin!"
+msgstr "燃烧剂粘到了你的皮肤上！"
+
+#: src/map/map_field.cpp
+msgid "The incendiary melts into <npcname>s skin!"
+msgstr "燃烧剂粘到了 <npcname> 的皮肤上！"
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The %s burns your skin."
+msgstr "%s 灼伤你的皮肤。"
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The %s makes you feel sick."
+msgstr "%s 让你感到难受。"
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Something has crawled out of the %s plants!"
+msgstr "从 %s 丛里爬出了一些东西！"
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Something has crawled out of the %s!"
+msgstr "从 %s 里爬出了一些东西！"
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Please wait as the map saves [%d/%d]"
+msgstr "请等待地图保存完毕[%d/%d]"
+
+#: src/map/mapdata.cpp
+msgid "\"furn_set\" is set"
+msgstr "“furn_set”已设置"
+
+#: src/map/mapdata.cpp
+msgid "\"ter_set\" is set"
+msgstr "“ter_set”已设置"
+
+#: src/map/mapdata.cpp
+msgid "\"ter_set_bashed_from_above\" is set"
+msgstr "“ter_set_bashed_from_above”已设置"
+
+#: src/map/mapdata.cpp
+#, c-format
+msgid ""
+"Errors for \"bash\" field in \"%s\": \"%s\":\n"
+"%s"
+msgstr ""
+"错误：在\"%s\"的\"bash\"字段中发现错误：\"%s\"：\n"
+"%s"
 
 #: src/map/utils/map_functions.cpp
 msgid "The nerve cluster collapses in on itself, and the nearby cages open!"
@@ -297123,189 +297308,6 @@ msgstr "选择要测试的地图事件列表"
 #: src/map_extras.cpp
 msgid "Result of 32400 selections:"
 msgstr "32400次选择的结果："
-
-#: src/map_field.cpp
-msgid "The acid burns your body!"
-msgstr "你的身体被酸液灼烧！"
-
-#: src/map_field.cpp
-msgid "The acid burns <npcname>s body!"
-msgstr "<npcname> 的身体被酸液灼烧！"
-
-#: src/map_field.cpp
-msgid "The acid burns your legs and feet!"
-msgstr "你的腿和脚被酸液灼烧！"
-
-#: src/map_field.cpp
-msgid "The acid burns <npcname>s legs and feet!"
-msgstr "<npcname> 的腿和脚被酸液灼烧！ "
-
-#: src/map_field.cpp
-msgid "You're lying in a pool of acid"
-msgstr "你正躺在酸液池里。"
-
-#: src/map_field.cpp
-msgid "You're standing in a pool of acid"
-msgstr "你正站在酸液池里。"
-
-#: src/map_field.cpp
-msgid "The sludge is thick and sticky.  You struggle to pull free."
-msgstr "污泥又粘又稠。你好不容易挣扎了出来。"
-
-#: src/map_field.cpp
-msgid "You burn your legs and feet!"
-msgstr "你的腿和脚烧了起来！"
-
-#: src/map_field.cpp
-msgid "You're burning up!"
-msgstr "你烧了起来！"
-
-#: src/map_field.cpp
-msgid "You're set ablaze!"
-msgstr "你被点着了！"
-
-#: src/map_field.cpp
-msgid "Your whole body is burning!"
-msgstr "你的全身都在燃烧！"
-
-#: src/map_field.cpp
-msgid "<npcname> burns their legs and feet!"
-msgstr "<npcname> 的腿和脚烧了起来！"
-
-#: src/map_field.cpp
-msgid "<npcname> is burning up!"
-msgstr "<npcname> 烧了起来！"
-
-#: src/map_field.cpp
-msgid "<npcname> is set ablaze!"
-msgstr "<npcname> 被点着了！"
-
-#: src/map_field.cpp
-msgid "<npcname>s whole body is burning!"
-msgstr "<npcname> 的全身都在燃烧！"
-
-#: src/map_field.cpp
-msgid "You're standing in a fire!"
-msgstr "你正站在火上面！"
-
-#: src/map_field.cpp
-msgid "You're waist-deep in a fire!"
-msgstr "你腰部以下都是火了！"
-
-#: src/map_field.cpp
-msgid "You're surrounded by raging fire!"
-msgstr "你被熊熊烈火包围了！"
-
-#: src/map_field.cpp
-msgid "You're lying in fire!"
-msgstr "你正躺在火上面！"
-
-#: src/map_field.cpp
-msgid "You're torched by flames!"
-msgstr "你被火烧到了！"
-
-#: src/map_field.cpp
-msgid "<npcname> is torched by flames!"
-msgstr "<npcname> 被火烧到了！"
-
-#: src/map_field.cpp
-msgid "These flames do not burn you."
-msgstr "你没有被火烧到。"
-
-#: src/map_field.cpp
-msgid "Those flames do not burn <npcname>."
-msgstr "<npcname> 没有被火烧到。"
-
-#: src/map_field.cpp
-msgid "You're painfully electrocuted!"
-msgstr "你痛苦地触电了！"
-
-#: src/map_field.cpp
-msgid "<npcname> is shocked!"
-msgstr "<npcname> 被电击了！"
-
-#: src/map_field.cpp
-msgid "You're shocked!"
-msgstr "你被电击了！"
-
-#: src/map_field.cpp
-msgid "The electric cloud doesn't affect you."
-msgstr "你没有被电云影响。"
-
-#: src/map_field.cpp
-msgid "The electric cloud doesn't seem to affect <npcname>."
-msgstr "<npcname> 没有被电云影响。"
-
-#: src/map_field.cpp
-msgid "You're violently teleported!"
-msgstr "你猛地被传送走了！"
-
-#: src/map_field.cpp
-#, c-format
-msgid "The bees sting you in %s!"
-msgstr "%s 中的蜜蜂刺了你一下！"
-
-#: src/map_field.cpp
-msgid "The incendiary burns you!"
-msgstr "你被燃烧剂灼烧！"
-
-#: src/map_field.cpp
-msgid "The incendiary burns <npcname>!"
-msgstr "<npcname> 被燃烧剂灼烧！"
-
-#: src/map_field.cpp
-msgid "The incendiary melts into your skin!"
-msgstr "燃烧剂粘到了你的皮肤上！"
-
-#: src/map_field.cpp
-msgid "The incendiary melts into <npcname>s skin!"
-msgstr "燃烧剂粘到了 <npcname> 的皮肤上！"
-
-#: src/map_field.cpp
-#, c-format
-msgid "The %s burns your skin."
-msgstr "%s 灼伤你的皮肤。"
-
-#: src/map_field.cpp
-#, c-format
-msgid "The %s makes you feel sick."
-msgstr "%s 让你感到难受。"
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Something has crawled out of the %s plants!"
-msgstr "从 %s 丛里爬出了一些东西！"
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Something has crawled out of the %s!"
-msgstr "从 %s 里爬出了一些东西！"
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Please wait as the map saves [%d/%d]"
-msgstr "请等待地图保存完毕[%d/%d]"
-
-#: src/mapdata.cpp
-msgid "\"furn_set\" is set"
-msgstr "“furn_set”已设置"
-
-#: src/mapdata.cpp
-msgid "\"ter_set\" is set"
-msgstr "“ter_set”已设置"
-
-#: src/mapdata.cpp
-msgid "\"ter_set_bashed_from_above\" is set"
-msgstr "“ter_set_bashed_from_above”已设置"
-
-#: src/mapdata.cpp
-#, c-format
-msgid ""
-"Errors for \"bash\" field in \"%s\": \"%s\":\n"
-"%s"
-msgstr ""
-"错误：在\"%s\"的\"bash\"字段中发现错误：\"%s\"：\n"
-"%s"
 
 #: src/mapgen.cpp src/mapgen_constructor.cpp
 msgid "Wreckage"

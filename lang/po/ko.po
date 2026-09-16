@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-15 15:19+0000\n"
+"POT-Creation-Date: 2026-09-16 22:29+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -11113,7 +11113,8 @@ msgstr "다 고쳐버리세요!"
 #: data/json/field_type.json
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
-#: data/mods/alt_map_key/overmap_terrain.json src/mapdata.cpp src/skill.cpp
+#: data/mods/alt_map_key/overmap_terrain.json src/map/mapdata.cpp
+#: src/skill.cpp
 msgid "nothing"
 msgstr "없음"
 
@@ -37136,7 +37137,7 @@ msgstr ""
 #: data/json/obsoletion/terrain.json data/json/obsoletion/uncategorized.json
 #: data/mods/CRT_EXPANSION/constructions/crt_terrain.json
 #: data/mods/MagicalNights/terrain.json data/mods/pride_flags/furniture.json
-#: src/mapdata.cpp
+#: src/map/mapdata.cpp
 msgid "crunch!"
 msgstr "우지끈!"
 
@@ -37896,7 +37897,7 @@ msgstr "전력망에 연결된 전등 스위치입니다. 현재 꺼져있습니
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 #: data/mods/MagicalNights/furniture.json
-#: data/mods/desert_region/desert_terrain.json src/mapdata.h
+#: data/mods/desert_region/desert_terrain.json src/map/mapdata.h
 #: src/vehicle/vehicle_move.cpp
 msgid "smash!"
 msgstr "쾅!"
@@ -38602,7 +38603,7 @@ msgid ""
 msgstr "때때로 보글거리며 조금 유독한 가스를 내뿜는 흐린 물 웅덩이입니다."
 
 #: data/json/furniture_and_terrain/furniture-emitters.json src/ballistics.cpp
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "splash!"
 msgstr "철퍽!"
 
@@ -38692,7 +38693,7 @@ msgstr ""
 #: data/mods/Aftershock/maps/terrain.json
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 #: data/mods/Arcana_BN/furniture_and_terrain/terrain.json
-#: data/mods/MagicalNights/furniture.json src/map.cpp
+#: data/mods/MagicalNights/furniture.json src/map/map.cpp
 msgid "crash!"
 msgstr "꽈지직!"
 
@@ -39177,8 +39178,8 @@ msgstr "시체들을 지켜줍니다."
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 #: data/mods/Aftershock/maps/terrain.json
-#: data/mods/Arcana_BN/furniture_and_terrain/furniture.json src/map.cpp
-#: src/mapdata.h
+#: data/mods/Arcana_BN/furniture_and_terrain/furniture.json src/map/map.cpp
+#: src/map/mapdata.h
 msgid "thump!"
 msgstr "쿵!"
 
@@ -43878,7 +43879,8 @@ msgid "A section of wooden railing."
 msgstr "나무 울타리 구획."
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
-#: data/json/furniture_and_terrain/terrain-recreational.json src/mapdata.cpp
+#: data/json/furniture_and_terrain/terrain-recreational.json
+#: src/map/mapdata.cpp
 msgid "crack!"
 msgstr "콰직!"
 
@@ -275449,7 +275451,8 @@ msgstr "바이오닉 전력을 흡수당합니다!"
 msgid "You cannot hack this."
 msgstr "이건 해킹할 수 없습니다."
 
-#: src/activity_actor.cpp src/computer_session.cpp src/iuse.cpp src/map.cpp
+#: src/activity_actor.cpp src/computer_session.cpp src/iuse.cpp
+#: src/map/map.cpp
 msgid "an alarm sound!"
 msgstr "요란한 경보음"
 
@@ -289120,7 +289123,7 @@ msgstr "자동 줍기 목록에서 '%s' 제거됨."
 msgid "force of the explosion"
 msgstr "폭발력"
 
-#: src/explosion.cpp src/map.cpp
+#: src/explosion.cpp src/map/map.cpp
 #, c-format
 msgid "The %1$s"
 msgstr "%1$s"
@@ -289632,31 +289635,6 @@ msgstr "어느 개체에 대해서도 아직 기록해둔 정보가 없습니다
 #, c-format
 msgid "%s returns from their mission"
 msgstr "%s(이)가 임무로부터 복귀합니다"
-
-#: src/field_type.h
-#, c-format
-msgid " in %s"
-msgstr " %s 안에"
-
-#: src/field_type.h
-#, c-format
-msgid " covered in %s"
-msgstr " %s(으)로 뒤덮인"
-
-#: src/field_type.h
-#, c-format
-msgid " covered in a %s"
-msgstr "%s에 덮여있습니다."
-
-#: src/field_type.h
-#, c-format
-msgid " on %s"
-msgstr " %s 위에"
-
-#: src/field_type.h
-#, c-format
-msgid " under %s"
-msgstr " %s 아래에"
 
 #: src/fungal_effects.cpp src/iuse.cpp
 #, c-format
@@ -293886,7 +293864,7 @@ msgstr "이륙하려면 프로펠러가 필요합니다!"
 msgid "You can't open things while you're in your shell."
 msgstr "껍질 안에 있는 동안엔 무언가를 열 수 없습니다."
 
-#: src/handle_action.cpp src/map.cpp
+#: src/handle_action.cpp src/map/map.cpp
 msgid "You can't open things while you're riding."
 msgstr "타고 있는 동안엔 무언가를 열 수 없습니다."
 
@@ -306687,167 +306665,374 @@ msgstr ""
 "모드 목록이나 모드 순서를 변경할 경우 월드맵을 불안정하게 하거나 혹은 아예 사용할 수 없게 만들 수 있습니다. 진행하기 전에 수동으로 월드맵 파일을 백업해둘 것을 권장합니다. 이제 막 시작한 상황이라면, 차라리 새로운 세계를 만드는 것을 권장합니다.\n"
 "계속합니까?"
 
-#. ~ %1$s: vehicle name
-#: src/map.cpp
+#: src/map/field_type.h
+#, c-format
+msgid " in %s"
+msgstr " %s 안에"
+
+#: src/map/field_type.h
+#, c-format
+msgid " covered in %s"
+msgstr " %s(으)로 뒤덮인"
+
+#: src/map/field_type.h
+#, c-format
+msgid " covered in a %s"
+msgstr "%s에 덮여있습니다."
+
+#: src/map/field_type.h
+#, c-format
+msgid " on %s"
+msgstr " %s 위에"
+
+#: src/map/field_type.h
+#, c-format
+msgid " under %s"
+msgstr " %s 아래에"
+
+#: src/map/map.cpp
 #, c-format
 msgid "weight of %1$s"
 msgstr "%1$s의 무게"
 
-#: src/map.cpp src/vehicle/vehicle.cpp
+#: src/map/map.cpp src/vehicle/vehicle.cpp
 #, c-format
 msgid "A towing cable snaps off of %s."
 msgstr "%s에서 견인 케이블이 튕겨져 나옵니다."
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s collides with %3$s's %4$s."
 msgstr "%1$s의 %2$s(이)가 %3$s의 %4$s와 부딪혔다."
 
-#: src/map.cpp src/monster.cpp src/vehicle/vehicle_display.cpp
+#: src/map/map.cpp src/monster.cpp src/vehicle/vehicle_display.cpp
 #, c-format
 msgid "the %s"
 msgstr "%s"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "Stuff spills from the %s!"
 msgstr "%s에서 물건들이 굴러떨어집니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s you were grabbing is destroyed!"
 msgstr "붙잡고 있던 %s(이)가 파괴되었습니다!"
 
-#: src/map.cpp
-#, c-format
-msgid "Falling %s hits you!"
-msgstr "떨어지는 %s에 맞았습니다!"
-
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "Falling %s hits <npcname>"
 msgstr "떨어지는 %s에 <npcname>(이)가 맞았습니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
+#, c-format
+msgid "Falling %s hits you!"
+msgstr "떨어지는 %s에 맞았습니다!"
+
+#: src/map/map.cpp
 #, c-format
 msgid "The %s destroys several items!"
 msgstr "%s(이)가 물품들을 파괴합니다!"
 
 #. ~ %1$s: the cause of destruction, %2$s: destroyed item name
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s destroys the %2$s!"
 msgstr "%1$s(이)가 %2$s(을)를 파괴합니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s damages several items."
 msgstr "%s(이)가 물품들을 손상시킵니다."
 
 #. ~ %1$s: the cause of damage, %2$s: damaged item name
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s damages the %2$s."
 msgstr "%1$s(이)가 %2$s(을)를 손상시킵니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "an alarm go off!"
 msgstr "경보기 소리"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You feel the ground beneath you shake from the impact!"
 msgstr "충돌 탓에 발밑의 땅이 흔들리는 것 같습니다!"
 
-#: src/map.cpp
-msgid "You lose your balance!"
-msgstr "균형을 잃었습니다!"
-
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "<npcname> loses their balance!"
 msgstr "<npcname>(이)가 균형을 잃었습니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
+msgid "You lose your balance!"
+msgstr "균형을 잃었습니다!"
+
+#: src/map/map.cpp
 msgid "glass shattering"
 msgstr "유리 깨지는 소리"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You are crushed by the falling debris!"
 msgstr "떨어지는 잔해에 맞아 짓눌렸습니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "<npcname> is crushed by the falling debris!"
 msgstr "<npcname>(이)가 떨어지는 잔해에 맞아 짓눌렸습니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot strikes the %s!"
 msgstr "사격이 %s에게 적중합니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot is stopped by the %s!"
 msgstr "사격이 %s에 의해 막혔습니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot hits the %s and punches through!"
 msgstr "사격이 %s에 적중하여 밀쳐냅니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "laser beam"
 msgstr "레이저 빔"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "bolt of electricity"
 msgstr "전격"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "bolt of plasma"
 msgstr "플라즈마 광선"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "flying projectile"
 msgstr "발사체"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "The metal bars melt!"
 msgstr "쇠창살이 녹아내립니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "swish"
 msgstr "휙"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s can only be opened from outside."
 msgstr "%1$s의 %2$s(은)는 오직 외부에서만 열 수 있습니다."
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s can only be opened from inside."
 msgstr "%1$s의 %2$s(은)는 오직 내부에서만 열 수 있습니다."
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s is locked."
 msgstr "%1$s의 %2$s(은)는 잠겨있습니다."
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s is taken down."
 msgstr "%s(이)가 넘어졌습니다."
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You disarm the trap!"
 msgstr "덫을 해체했습니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You fail to disarm the trap."
 msgstr "덫을 해체하는데 실패했습니다!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You fail to disarm the trap, and you set it off!"
 msgstr "덫을 해체하는데 실패해서 작동시켜버렸습니다!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns your body!"
+msgstr "산성액에 노출되어 신체에 화상을 입습니다!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns <npcname>s body!"
+msgstr "산성액에 노출되어 <npcname>(이)가 신체에 화상을 입습니다!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns your legs and feet!"
+msgstr "산성액에 노출되어 발과 다리에 화상을 입습니다!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns <npcname>s legs and feet!"
+msgstr "산성액에 노출되어 <npcname>(이)가 발과 다리에 화상을 입습니다!"
+
+#: src/map/map_field.cpp
+msgid "You're lying in a pool of acid"
+msgstr "산성액 웅덩이에 누워있습니다."
+
+#: src/map/map_field.cpp
+msgid "You're standing in a pool of acid"
+msgstr "산성액 웅덩이를 밟고 있습니다."
+
+#: src/map/map_field.cpp
+msgid "The sludge is thick and sticky.  You struggle to pull free."
+msgstr "찌꺼기는 진하고 끈적입니다. 풀려나려고 애씁니다."
+
+#: src/map/map_field.cpp
+msgid "You burn your legs and feet!"
+msgstr "발과 다리가 불타고 있다!"
+
+#: src/map/map_field.cpp
+msgid "You're burning up!"
+msgstr "몸이 불타고 있다!"
+
+#: src/map/map_field.cpp
+msgid "You're set ablaze!"
+msgstr "불길에 휩싸였다!"
+
+#: src/map/map_field.cpp
+msgid "Your whole body is burning!"
+msgstr "전신이 불타고 있다!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> burns their legs and feet!"
+msgstr "<npcname>의 발과 다리가 불타고 있다!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is burning up!"
+msgstr "<npcname>의 몸이 불타고 있다!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is set ablaze!"
+msgstr "<npcname>(이)가 불길에 휩싸였다!"
+
+#: src/map/map_field.cpp
+msgid "<npcname>s whole body is burning!"
+msgstr "<npcname>의 전신이 불타고 있다!"
+
+#: src/map/map_field.cpp
+msgid "You're standing in a fire!"
+msgstr "불 속에 서 있는 중입니다!"
+
+#: src/map/map_field.cpp
+msgid "You're waist-deep in a fire!"
+msgstr "허리까지 불길이 솟아오른다!"
+
+#: src/map/map_field.cpp
+msgid "You're surrounded by raging fire!"
+msgstr "솟구치는 불길에 둘러싸였다!"
+
+#: src/map/map_field.cpp
+msgid "You're lying in fire!"
+msgstr "불 속에 누워 있다!"
+
+#: src/map/map_field.cpp
+msgid "You're torched by flames!"
+msgstr "불길에 닿았다!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is torched by flames!"
+msgstr "<npcname>(이)가 불길에 닿았다!"
+
+#: src/map/map_field.cpp
+msgid "These flames do not burn you."
+msgstr "불길에 불타오르지 않는다."
+
+#: src/map/map_field.cpp
+msgid "Those flames do not burn <npcname>."
+msgstr "<npcname>(이)가 불길에 불타오르지 않는다."
+
+#: src/map/map_field.cpp
+msgid "<npcname> is shocked!"
+msgstr "<npcname>(이)가 전기충격을 받았다!"
+
+#: src/map/map_field.cpp
+msgid "You're painfully electrocuted!"
+msgstr "감전당해 고통스럽습니다!"
+
+#: src/map/map_field.cpp
+msgid "You're shocked!"
+msgstr "전기충격을 받았다!"
+
+#: src/map/map_field.cpp
+msgid "The electric cloud doesn't affect you."
+msgstr "전자기 구름에 영향을 받지 않았다."
+
+#: src/map/map_field.cpp
+msgid "The electric cloud doesn't seem to affect <npcname>."
+msgstr "<npcname>(은)는 전자기 구름에 영향을 받지 않았다."
+
+#: src/map/map_field.cpp
+msgid "You're violently teleported!"
+msgstr "급격하게 공간이동이 되었다!"
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The bees sting you in %s!"
+msgstr "벌들이 당신의 %s(을)를 쏘았습니다!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary burns <npcname>!"
+msgstr "소이제가 불타오르며 <npcname>의 몸을 불태운다!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary burns you!"
+msgstr "소이제가 불타오르며 몸을 불태운다!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary melts into your skin!"
+msgstr "소이제가 불타오르며 피부를 녹인다!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary melts into <npcname>s skin!"
+msgstr "소이제가 불타오르며 <npcname>의 피부를 녹인다!"
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The %s burns your skin."
+msgstr "%s(이)가 피부를 태웠다."
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The %s makes you feel sick."
+msgstr "%s 때문에 메스꺼운 느낌이 난다."
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Something has crawled out of the %s plants!"
+msgstr "%s 식물에서 무언가가 기어나옵니다!"
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Something has crawled out of the %s!"
+msgstr "무언가가 %s에서 기어나옵니다!"
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Please wait as the map saves [%d/%d]"
+msgstr "지도를 저장하는 동안 기다려주세요 [%d/%d]"
+
+#: src/map/mapdata.cpp
+msgid "\"furn_set\" is set"
+msgstr "\"furn_set\" 이 설정되었습니다"
+
+#: src/map/mapdata.cpp
+msgid "\"ter_set\" is set"
+msgstr "\"ter_set\" 이 설정되었습니다"
+
+#: src/map/mapdata.cpp
+msgid "\"ter_set_bashed_from_above\" is set"
+msgstr "\"ter_set_bashed_from_above\" 가 설정되었습니다"
+
+#: src/map/mapdata.cpp
+#, c-format
+msgid ""
+"Errors for \"bash\" field in \"%s\": \"%s\":\n"
+"%s"
+msgstr ""
+"\"bash\" 영역에 오류가 발생했습니다. \"%s\": \"%s\":\n"
+"%s"
 
 #: src/map/utils/map_functions.cpp
 msgid "The nerve cluster collapses in on itself, and the nearby cages open!"
@@ -306917,189 +307102,6 @@ msgstr "어떤 맵 엑스트라 목록을 테스트하시겠습니까?"
 #: src/map_extras.cpp
 msgid "Result of 32400 selections:"
 msgstr "32400번 선택의 결과:"
-
-#: src/map_field.cpp
-msgid "The acid burns your body!"
-msgstr "산성액에 노출되어 신체에 화상을 입습니다!"
-
-#: src/map_field.cpp
-msgid "The acid burns <npcname>s body!"
-msgstr "산성액에 노출되어 <npcname>(이)가 신체에 화상을 입습니다!"
-
-#: src/map_field.cpp
-msgid "The acid burns your legs and feet!"
-msgstr "산성액에 노출되어 발과 다리에 화상을 입습니다!"
-
-#: src/map_field.cpp
-msgid "The acid burns <npcname>s legs and feet!"
-msgstr "산성액에 노출되어 <npcname>(이)가 발과 다리에 화상을 입습니다!"
-
-#: src/map_field.cpp
-msgid "You're lying in a pool of acid"
-msgstr "산성액 웅덩이에 누워있습니다."
-
-#: src/map_field.cpp
-msgid "You're standing in a pool of acid"
-msgstr "산성액 웅덩이를 밟고 있습니다."
-
-#: src/map_field.cpp
-msgid "The sludge is thick and sticky.  You struggle to pull free."
-msgstr "찌꺼기는 진하고 끈적입니다. 풀려나려고 애씁니다."
-
-#: src/map_field.cpp
-msgid "You burn your legs and feet!"
-msgstr "발과 다리가 불타고 있다!"
-
-#: src/map_field.cpp
-msgid "You're burning up!"
-msgstr "몸이 불타고 있다!"
-
-#: src/map_field.cpp
-msgid "You're set ablaze!"
-msgstr "불길에 휩싸였다!"
-
-#: src/map_field.cpp
-msgid "Your whole body is burning!"
-msgstr "전신이 불타고 있다!"
-
-#: src/map_field.cpp
-msgid "<npcname> burns their legs and feet!"
-msgstr "<npcname>의 발과 다리가 불타고 있다!"
-
-#: src/map_field.cpp
-msgid "<npcname> is burning up!"
-msgstr "<npcname>의 몸이 불타고 있다!"
-
-#: src/map_field.cpp
-msgid "<npcname> is set ablaze!"
-msgstr "<npcname>(이)가 불길에 휩싸였다!"
-
-#: src/map_field.cpp
-msgid "<npcname>s whole body is burning!"
-msgstr "<npcname>의 전신이 불타고 있다!"
-
-#: src/map_field.cpp
-msgid "You're standing in a fire!"
-msgstr "불 속에 서 있는 중입니다!"
-
-#: src/map_field.cpp
-msgid "You're waist-deep in a fire!"
-msgstr "허리까지 불길이 솟아오른다!"
-
-#: src/map_field.cpp
-msgid "You're surrounded by raging fire!"
-msgstr "솟구치는 불길에 둘러싸였다!"
-
-#: src/map_field.cpp
-msgid "You're lying in fire!"
-msgstr "불 속에 누워 있다!"
-
-#: src/map_field.cpp
-msgid "You're torched by flames!"
-msgstr "불길에 닿았다!"
-
-#: src/map_field.cpp
-msgid "<npcname> is torched by flames!"
-msgstr "<npcname>(이)가 불길에 닿았다!"
-
-#: src/map_field.cpp
-msgid "These flames do not burn you."
-msgstr "불길에 불타오르지 않는다."
-
-#: src/map_field.cpp
-msgid "Those flames do not burn <npcname>."
-msgstr "<npcname>(이)가 불길에 불타오르지 않는다."
-
-#: src/map_field.cpp
-msgid "You're painfully electrocuted!"
-msgstr "감전당해 고통스럽습니다!"
-
-#: src/map_field.cpp
-msgid "<npcname> is shocked!"
-msgstr "<npcname>(이)가 전기충격을 받았다!"
-
-#: src/map_field.cpp
-msgid "You're shocked!"
-msgstr "전기충격을 받았다!"
-
-#: src/map_field.cpp
-msgid "The electric cloud doesn't affect you."
-msgstr "전자기 구름에 영향을 받지 않았다."
-
-#: src/map_field.cpp
-msgid "The electric cloud doesn't seem to affect <npcname>."
-msgstr "<npcname>(은)는 전자기 구름에 영향을 받지 않았다."
-
-#: src/map_field.cpp
-msgid "You're violently teleported!"
-msgstr "급격하게 공간이동이 되었다!"
-
-#: src/map_field.cpp
-#, c-format
-msgid "The bees sting you in %s!"
-msgstr "벌들이 당신의 %s(을)를 쏘았습니다!"
-
-#: src/map_field.cpp
-msgid "The incendiary burns you!"
-msgstr "소이제가 불타오르며 몸을 불태운다!"
-
-#: src/map_field.cpp
-msgid "The incendiary burns <npcname>!"
-msgstr "소이제가 불타오르며 <npcname>의 몸을 불태운다!"
-
-#: src/map_field.cpp
-msgid "The incendiary melts into your skin!"
-msgstr "소이제가 불타오르며 피부를 녹인다!"
-
-#: src/map_field.cpp
-msgid "The incendiary melts into <npcname>s skin!"
-msgstr "소이제가 불타오르며 <npcname>의 피부를 녹인다!"
-
-#: src/map_field.cpp
-#, c-format
-msgid "The %s burns your skin."
-msgstr "%s(이)가 피부를 태웠다."
-
-#: src/map_field.cpp
-#, c-format
-msgid "The %s makes you feel sick."
-msgstr "%s 때문에 메스꺼운 느낌이 난다."
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Something has crawled out of the %s plants!"
-msgstr "%s 식물에서 무언가가 기어나옵니다!"
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Something has crawled out of the %s!"
-msgstr "무언가가 %s에서 기어나옵니다!"
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Please wait as the map saves [%d/%d]"
-msgstr "지도를 저장하는 동안 기다려주세요 [%d/%d]"
-
-#: src/mapdata.cpp
-msgid "\"furn_set\" is set"
-msgstr "\"furn_set\" 이 설정되었습니다"
-
-#: src/mapdata.cpp
-msgid "\"ter_set\" is set"
-msgstr "\"ter_set\" 이 설정되었습니다"
-
-#: src/mapdata.cpp
-msgid "\"ter_set_bashed_from_above\" is set"
-msgstr "\"ter_set_bashed_from_above\" 가 설정되었습니다"
-
-#: src/mapdata.cpp
-#, c-format
-msgid ""
-"Errors for \"bash\" field in \"%s\": \"%s\":\n"
-"%s"
-msgstr ""
-"\"bash\" 영역에 오류가 발생했습니다. \"%s\": \"%s\":\n"
-"%s"
 
 #: src/mapgen.cpp src/mapgen_constructor.cpp
 msgid "Wreckage"

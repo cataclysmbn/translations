@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-15 07:09+0000\n"
+"POT-Creation-Date: 2026-09-16 17:08+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: German (https://app.transifex.com/bn-team/teams/113585/de/)\n"
 "MIME-Version: 1.0\n"
@@ -10906,7 +10906,8 @@ msgstr ""
 #: data/json/field_type.json
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
-#: data/mods/alt_map_key/overmap_terrain.json src/mapdata.cpp src/skill.cpp
+#: data/mods/alt_map_key/overmap_terrain.json src/map/mapdata.cpp
+#: src/skill.cpp
 msgid "nothing"
 msgstr "nichts"
 
@@ -36411,7 +36412,7 @@ msgstr ""
 #: data/json/obsoletion/terrain.json data/json/obsoletion/uncategorized.json
 #: data/mods/CRT_EXPANSION/constructions/crt_terrain.json
 #: data/mods/MagicalNights/terrain.json data/mods/pride_flags/furniture.json
-#: src/mapdata.cpp
+#: src/map/mapdata.cpp
 msgid "crunch!"
 msgstr "»Knirsch!«."
 
@@ -37179,7 +37180,7 @@ msgstr ""
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 #: data/mods/MagicalNights/furniture.json
-#: data/mods/desert_region/desert_terrain.json src/mapdata.h
+#: data/mods/desert_region/desert_terrain.json src/map/mapdata.h
 #: src/vehicle/vehicle_move.cpp
 msgid "smash!"
 msgstr "»Schepper!«."
@@ -37870,7 +37871,7 @@ msgid ""
 msgstr ""
 
 #: data/json/furniture_and_terrain/furniture-emitters.json src/ballistics.cpp
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "splash!"
 msgstr "»Platsch!«."
 
@@ -37956,7 +37957,7 @@ msgstr ""
 #: data/mods/Aftershock/maps/terrain.json
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 #: data/mods/Arcana_BN/furniture_and_terrain/terrain.json
-#: data/mods/MagicalNights/furniture.json src/map.cpp
+#: data/mods/MagicalNights/furniture.json src/map/map.cpp
 msgid "crash!"
 msgstr "»Krach!«."
 
@@ -38446,8 +38447,8 @@ msgstr "Hält die Körper."
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 #: data/mods/Aftershock/maps/terrain.json
-#: data/mods/Arcana_BN/furniture_and_terrain/furniture.json src/map.cpp
-#: src/mapdata.h
+#: data/mods/Arcana_BN/furniture_and_terrain/furniture.json src/map/map.cpp
+#: src/map/mapdata.h
 msgid "thump!"
 msgstr "»Bums!«"
 
@@ -43190,7 +43191,8 @@ msgid "A section of wooden railing."
 msgstr ""
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
-#: data/json/furniture_and_terrain/terrain-recreational.json src/mapdata.cpp
+#: data/json/furniture_and_terrain/terrain-recreational.json
+#: src/map/mapdata.cpp
 msgid "crack!"
 msgstr "»Knack!«."
 
@@ -282555,7 +282557,8 @@ msgstr "Dein Strom ist erschöpft!"
 msgid "You cannot hack this."
 msgstr ""
 
-#: src/activity_actor.cpp src/computer_session.cpp src/iuse.cpp src/map.cpp
+#: src/activity_actor.cpp src/computer_session.cpp src/iuse.cpp
+#: src/map/map.cpp
 msgid "an alarm sound!"
 msgstr "einen Alarm ertönen!"
 
@@ -296287,7 +296290,7 @@ msgstr "»%s« von den Aufheberegeln entfernt."
 msgid "force of the explosion"
 msgstr ""
 
-#: src/explosion.cpp src/map.cpp
+#: src/explosion.cpp src/map/map.cpp
 #, c-format
 msgid "The %1$s"
 msgstr "Das %1$s"
@@ -296800,31 +296803,6 @@ msgstr ""
 #: src/faction.cpp
 #, c-format
 msgid "%s returns from their mission"
-msgstr ""
-
-#: src/field_type.h
-#, c-format
-msgid " in %s"
-msgstr ""
-
-#: src/field_type.h
-#, c-format
-msgid " covered in %s"
-msgstr ""
-
-#: src/field_type.h
-#, c-format
-msgid " covered in a %s"
-msgstr ""
-
-#: src/field_type.h
-#, c-format
-msgid " on %s"
-msgstr ""
-
-#: src/field_type.h
-#, c-format
-msgid " under %s"
 msgstr ""
 
 #: src/fungal_effects.cpp src/iuse.cpp
@@ -300982,7 +300960,7 @@ msgstr ""
 msgid "You can't open things while you're in your shell."
 msgstr "Du kannst keine Sachen öffnen, während du in deinem Panzer bist."
 
-#: src/handle_action.cpp src/map.cpp
+#: src/handle_action.cpp src/map/map.cpp
 msgid "You can't open things while you're riding."
 msgstr ""
 
@@ -313991,167 +313969,373 @@ msgid ""
 "Proceed?"
 msgstr ""
 
-#. ~ %1$s: vehicle name
-#: src/map.cpp
+#: src/map/field_type.h
+#, c-format
+msgid " in %s"
+msgstr ""
+
+#: src/map/field_type.h
+#, c-format
+msgid " covered in %s"
+msgstr ""
+
+#: src/map/field_type.h
+#, c-format
+msgid " covered in a %s"
+msgstr ""
+
+#: src/map/field_type.h
+#, c-format
+msgid " on %s"
+msgstr ""
+
+#: src/map/field_type.h
+#, c-format
+msgid " under %s"
+msgstr ""
+
+#: src/map/map.cpp
 #, c-format
 msgid "weight of %1$s"
 msgstr ""
 
-#: src/map.cpp src/vehicle/vehicle.cpp
+#: src/map/map.cpp src/vehicle/vehicle.cpp
 #, c-format
 msgid "A towing cable snaps off of %s."
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s collides with %3$s's %4$s."
 msgstr "%2$s von %1$s kollidiert mit %4$s von %3$s."
 
-#: src/map.cpp src/monster.cpp src/vehicle/vehicle_display.cpp
+#: src/map/map.cpp src/monster.cpp src/vehicle/vehicle_display.cpp
 #, c-format
 msgid "the %s"
 msgstr "%s"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "Stuff spills from the %s!"
 msgstr "Es kleckert aus dem %s!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s you were grabbing is destroyed!"
 msgstr "%s, was zu ergriffen hattest, wurde zerstört!"
 
-#: src/map.cpp
-#, c-format
-msgid "Falling %s hits you!"
-msgstr "Fallende %s treffen dich!"
-
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "Falling %s hits <npcname>"
 msgstr "Fallende %s treffen <npcname>!"
 
-#: src/map.cpp
+#: src/map/map.cpp
+#, c-format
+msgid "Falling %s hits you!"
+msgstr "Fallende %s treffen dich!"
+
+#: src/map/map.cpp
 #, c-format
 msgid "The %s destroys several items!"
 msgstr ""
 
 #. ~ %1$s: the cause of destruction, %2$s: destroyed item name
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s destroys the %2$s!"
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s damages several items."
 msgstr ""
 
 #. ~ %1$s: the cause of damage, %2$s: damaged item name
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s damages the %2$s."
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "an alarm go off!"
 msgstr "einen Alarm ertönen!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You feel the ground beneath you shake from the impact!"
 msgstr ""
 
-#: src/map.cpp
-msgid "You lose your balance!"
-msgstr ""
-
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "<npcname> loses their balance!"
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
+msgid "You lose your balance!"
+msgstr ""
+
+#: src/map/map.cpp
 msgid "glass shattering"
 msgstr "Glas scheppern"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You are crushed by the falling debris!"
 msgstr "Du wirst von den fallenden Trümmern getroffen!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "<npcname> is crushed by the falling debris!"
 msgstr "<npcname> wird von den fallenden Trümmern getroffen!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot strikes the %s!"
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot is stopped by the %s!"
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot hits the %s and punches through!"
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "laser beam"
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "bolt of electricity"
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "bolt of plasma"
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "flying projectile"
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "The metal bars melt!"
 msgstr "Die Metallstäbe schmelzen!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "swish"
 msgstr "»Swisch«."
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s can only be opened from outside."
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s can only be opened from inside."
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s is locked."
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s is taken down."
 msgstr ""
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You disarm the trap!"
 msgstr "Du entschärfst die Falle!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You fail to disarm the trap."
 msgstr "Dir misslingt das Entschärfen der Falle."
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You fail to disarm the trap, and you set it off!"
 msgstr "Du versagst beim Entschärfen der Falle und löst sie aus!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns your body!"
+msgstr "Die Säure frisst deinen Körper an!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns <npcname>s body!"
+msgstr "Die Säure frisst den Körper von <npcname> an!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns your legs and feet!"
+msgstr "Die Säure frisst deine Beine und Füße an!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns <npcname>s legs and feet!"
+msgstr "Die Säure frisst die Beine und Füße von <npcname> an!"
+
+#: src/map/map_field.cpp
+msgid "You're lying in a pool of acid"
+msgstr "Du liegst in einem Säurepfuhl"
+
+#: src/map/map_field.cpp
+msgid "You're standing in a pool of acid"
+msgstr "Du stehst in einem Säurepfuhl"
+
+#: src/map/map_field.cpp
+msgid "The sludge is thick and sticky.  You struggle to pull free."
+msgstr ""
+
+#: src/map/map_field.cpp
+msgid "You burn your legs and feet!"
+msgstr "Du verbrennst deine Beine und Füße."
+
+#: src/map/map_field.cpp
+msgid "You're burning up!"
+msgstr "Du verglühst!"
+
+#: src/map/map_field.cpp
+msgid "You're set ablaze!"
+msgstr "Du bist in Brand gesetzt!"
+
+#: src/map/map_field.cpp
+msgid "Your whole body is burning!"
+msgstr "Dein ganzer Körper brennt!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> burns their legs and feet!"
+msgstr "<npcname> verbrennt sich die Füße und Beine."
+
+#: src/map/map_field.cpp
+msgid "<npcname> is burning up!"
+msgstr "<npcname> brennt ab!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is set ablaze!"
+msgstr "<npcname> ist in Brand gesetzt!"
+
+#: src/map/map_field.cpp
+msgid "<npcname>s whole body is burning!"
+msgstr "<npcname>s ganzer Körper brennt!"
+
+#: src/map/map_field.cpp
+msgid "You're standing in a fire!"
+msgstr "Du stehst in einem Feuer!"
+
+#: src/map/map_field.cpp
+msgid "You're waist-deep in a fire!"
+msgstr "Du bist hüfthoch im Feuer!"
+
+#: src/map/map_field.cpp
+msgid "You're surrounded by raging fire!"
+msgstr "Du bist von einem rasendem Feuer umzingelt!"
+
+#: src/map/map_field.cpp
+msgid "You're lying in fire!"
+msgstr "Du liegst im Feuer!"
+
+#: src/map/map_field.cpp
+msgid "You're torched by flames!"
+msgstr "Du wirst von Flammen abgefackelt!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is torched by flames!"
+msgstr "<npcname> wird von Flammen abgefackelt!"
+
+#: src/map/map_field.cpp
+msgid "These flames do not burn you."
+msgstr "Diese Flammen verbrennen dich nicht."
+
+#: src/map/map_field.cpp
+msgid "Those flames do not burn <npcname>."
+msgstr "Diese Flammen verbrennen <npcname> nicht."
+
+#: src/map/map_field.cpp
+msgid "<npcname> is shocked!"
+msgstr "<npcname> ist geschockt!"
+
+#: src/map/map_field.cpp
+msgid "You're painfully electrocuted!"
+msgstr "Du erhältst einen schmerzhaften Stromschlag!"
+
+#: src/map/map_field.cpp
+msgid "You're shocked!"
+msgstr "Du bist geschockt!"
+
+#: src/map/map_field.cpp
+msgid "The electric cloud doesn't affect you."
+msgstr "Die elektrische Wolke hat keine Auswirkungen auf dich."
+
+#: src/map/map_field.cpp
+msgid "The electric cloud doesn't seem to affect <npcname>."
+msgstr ""
+"Die elektrische Wolke scheint keine Auswirkungen auf <npcname> zu haben."
+
+#: src/map/map_field.cpp
+msgid "You're violently teleported!"
+msgstr "Du wirst gewaltsam teleportiert!"
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The bees sting you in %s!"
+msgstr ""
+
+#: src/map/map_field.cpp
+msgid "The incendiary burns <npcname>!"
+msgstr "Die Brandbombe verbrennt <npcname>!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary burns you!"
+msgstr "Die Brandbombe verbrennt dich!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary melts into your skin!"
+msgstr "Die Brandbombe schmelzt sich in deine Haut!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary melts into <npcname>s skin!"
+msgstr "Die Brandbombe schmelzt sich in <npcname>s Haut!"
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The %s burns your skin."
+msgstr "%s verbrennt deine Haut."
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The %s makes you feel sick."
+msgstr "%s gibt dir ein krankes Gefühl."
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Something has crawled out of the %s plants!"
+msgstr "Etwas krabbelte aus der Hose von %s!"
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Something has crawled out of the %s!"
+msgstr "Etwas krabbelte aus %s!"
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Please wait as the map saves [%d/%d]"
+msgstr "Bitte warte, während die Welt gespeichert wird (%d/%d)."
+
+#: src/map/mapdata.cpp
+msgid "\"furn_set\" is set"
+msgstr ""
+
+#: src/map/mapdata.cpp
+msgid "\"ter_set\" is set"
+msgstr ""
+
+#: src/map/mapdata.cpp
+msgid "\"ter_set_bashed_from_above\" is set"
+msgstr ""
+
+#: src/map/mapdata.cpp
+#, c-format
+msgid ""
+"Errors for \"bash\" field in \"%s\": \"%s\":\n"
+"%s"
+msgstr ""
 
 #: src/map/utils/map_functions.cpp
 msgid "The nerve cluster collapses in on itself, and the nearby cages open!"
@@ -314218,188 +314402,6 @@ msgstr ""
 
 #: src/map_extras.cpp
 msgid "Result of 32400 selections:"
-msgstr ""
-
-#: src/map_field.cpp
-msgid "The acid burns your body!"
-msgstr "Die Säure frisst deinen Körper an!"
-
-#: src/map_field.cpp
-msgid "The acid burns <npcname>s body!"
-msgstr "Die Säure frisst den Körper von <npcname> an!"
-
-#: src/map_field.cpp
-msgid "The acid burns your legs and feet!"
-msgstr "Die Säure frisst deine Beine und Füße an!"
-
-#: src/map_field.cpp
-msgid "The acid burns <npcname>s legs and feet!"
-msgstr "Die Säure frisst die Beine und Füße von <npcname> an!"
-
-#: src/map_field.cpp
-msgid "You're lying in a pool of acid"
-msgstr "Du liegst in einem Säurepfuhl"
-
-#: src/map_field.cpp
-msgid "You're standing in a pool of acid"
-msgstr "Du stehst in einem Säurepfuhl"
-
-#: src/map_field.cpp
-msgid "The sludge is thick and sticky.  You struggle to pull free."
-msgstr ""
-
-#: src/map_field.cpp
-msgid "You burn your legs and feet!"
-msgstr "Du verbrennst deine Beine und Füße."
-
-#: src/map_field.cpp
-msgid "You're burning up!"
-msgstr "Du verglühst!"
-
-#: src/map_field.cpp
-msgid "You're set ablaze!"
-msgstr "Du bist in Brand gesetzt!"
-
-#: src/map_field.cpp
-msgid "Your whole body is burning!"
-msgstr "Dein ganzer Körper brennt!"
-
-#: src/map_field.cpp
-msgid "<npcname> burns their legs and feet!"
-msgstr "<npcname> verbrennt sich die Füße und Beine."
-
-#: src/map_field.cpp
-msgid "<npcname> is burning up!"
-msgstr "<npcname> brennt ab!"
-
-#: src/map_field.cpp
-msgid "<npcname> is set ablaze!"
-msgstr "<npcname> ist in Brand gesetzt!"
-
-#: src/map_field.cpp
-msgid "<npcname>s whole body is burning!"
-msgstr "<npcname>s ganzer Körper brennt!"
-
-#: src/map_field.cpp
-msgid "You're standing in a fire!"
-msgstr "Du stehst in einem Feuer!"
-
-#: src/map_field.cpp
-msgid "You're waist-deep in a fire!"
-msgstr "Du bist hüfthoch im Feuer!"
-
-#: src/map_field.cpp
-msgid "You're surrounded by raging fire!"
-msgstr "Du bist von einem rasendem Feuer umzingelt!"
-
-#: src/map_field.cpp
-msgid "You're lying in fire!"
-msgstr "Du liegst im Feuer!"
-
-#: src/map_field.cpp
-msgid "You're torched by flames!"
-msgstr "Du wirst von Flammen abgefackelt!"
-
-#: src/map_field.cpp
-msgid "<npcname> is torched by flames!"
-msgstr "<npcname> wird von Flammen abgefackelt!"
-
-#: src/map_field.cpp
-msgid "These flames do not burn you."
-msgstr "Diese Flammen verbrennen dich nicht."
-
-#: src/map_field.cpp
-msgid "Those flames do not burn <npcname>."
-msgstr "Diese Flammen verbrennen <npcname> nicht."
-
-#: src/map_field.cpp
-msgid "You're painfully electrocuted!"
-msgstr "Du erhältst einen schmerzhaften Stromschlag!"
-
-#: src/map_field.cpp
-msgid "<npcname> is shocked!"
-msgstr "<npcname> ist geschockt!"
-
-#: src/map_field.cpp
-msgid "You're shocked!"
-msgstr "Du bist geschockt!"
-
-#: src/map_field.cpp
-msgid "The electric cloud doesn't affect you."
-msgstr "Die elektrische Wolke hat keine Auswirkungen auf dich."
-
-#: src/map_field.cpp
-msgid "The electric cloud doesn't seem to affect <npcname>."
-msgstr ""
-"Die elektrische Wolke scheint keine Auswirkungen auf <npcname> zu haben."
-
-#: src/map_field.cpp
-msgid "You're violently teleported!"
-msgstr "Du wirst gewaltsam teleportiert!"
-
-#: src/map_field.cpp
-#, c-format
-msgid "The bees sting you in %s!"
-msgstr ""
-
-#: src/map_field.cpp
-msgid "The incendiary burns you!"
-msgstr "Die Brandbombe verbrennt dich!"
-
-#: src/map_field.cpp
-msgid "The incendiary burns <npcname>!"
-msgstr "Die Brandbombe verbrennt <npcname>!"
-
-#: src/map_field.cpp
-msgid "The incendiary melts into your skin!"
-msgstr "Die Brandbombe schmelzt sich in deine Haut!"
-
-#: src/map_field.cpp
-msgid "The incendiary melts into <npcname>s skin!"
-msgstr "Die Brandbombe schmelzt sich in <npcname>s Haut!"
-
-#: src/map_field.cpp
-#, c-format
-msgid "The %s burns your skin."
-msgstr "%s verbrennt deine Haut."
-
-#: src/map_field.cpp
-#, c-format
-msgid "The %s makes you feel sick."
-msgstr "%s gibt dir ein krankes Gefühl."
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Something has crawled out of the %s plants!"
-msgstr "Etwas krabbelte aus der Hose von %s!"
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Something has crawled out of the %s!"
-msgstr "Etwas krabbelte aus %s!"
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Please wait as the map saves [%d/%d]"
-msgstr "Bitte warte, während die Welt gespeichert wird (%d/%d)."
-
-#: src/mapdata.cpp
-msgid "\"furn_set\" is set"
-msgstr ""
-
-#: src/mapdata.cpp
-msgid "\"ter_set\" is set"
-msgstr ""
-
-#: src/mapdata.cpp
-msgid "\"ter_set_bashed_from_above\" is set"
-msgstr ""
-
-#: src/mapdata.cpp
-#, c-format
-msgid ""
-"Errors for \"bash\" field in \"%s\": \"%s\":\n"
-"%s"
 msgstr ""
 
 #: src/mapgen.cpp src/mapgen_constructor.cpp

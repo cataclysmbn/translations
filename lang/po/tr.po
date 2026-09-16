@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-15 15:22+0000\n"
+"POT-Creation-Date: 2026-09-16 22:29+0000\n"
 "Last-Translator: Arif Öcal, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -11918,7 +11918,8 @@ msgstr "Hepsini tamir et!"
 #: data/json/field_type.json
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
-#: data/mods/alt_map_key/overmap_terrain.json src/mapdata.cpp src/skill.cpp
+#: data/mods/alt_map_key/overmap_terrain.json src/map/mapdata.cpp
+#: src/skill.cpp
 msgid "nothing"
 msgstr "hiçbir şey"
 
@@ -38881,7 +38882,7 @@ msgstr ""
 #: data/json/obsoletion/terrain.json data/json/obsoletion/uncategorized.json
 #: data/mods/CRT_EXPANSION/constructions/crt_terrain.json
 #: data/mods/MagicalNights/terrain.json data/mods/pride_flags/furniture.json
-#: src/mapdata.cpp
+#: src/map/mapdata.cpp
 msgid "crunch!"
 msgstr "çıtırtı!"
 
@@ -39694,7 +39695,7 @@ msgstr "Elektrik şebekenize bağlı bir ışık anahtarı, bu kapalı durumda."
 #: data/json/furniture_and_terrain/terrain-floors-indoor.json
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 #: data/mods/MagicalNights/furniture.json
-#: data/mods/desert_region/desert_terrain.json src/mapdata.h
+#: data/mods/desert_region/desert_terrain.json src/map/mapdata.h
 #: src/vehicle/vehicle_move.cpp
 msgid "smash!"
 msgstr "pat!"
@@ -40446,7 +40447,7 @@ msgstr ""
 "bir su birikintisi."
 
 #: data/json/furniture_and_terrain/furniture-emitters.json src/ballistics.cpp
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "splash!"
 msgstr "şlap!"
 
@@ -40538,7 +40539,7 @@ msgstr ""
 #: data/mods/Aftershock/maps/terrain.json
 #: data/mods/Arcana_BN/furniture_and_terrain/furniture.json
 #: data/mods/Arcana_BN/furniture_and_terrain/terrain.json
-#: data/mods/MagicalNights/furniture.json src/map.cpp
+#: data/mods/MagicalNights/furniture.json src/map/map.cpp
 msgid "crash!"
 msgstr "çatırtı!"
 
@@ -41084,8 +41085,8 @@ msgstr "Cesetleri saklar."
 #: data/json/furniture_and_terrain/terrain-floors-outdoors.json
 #: data/json/furniture_and_terrain/terrain-manufactured.json
 #: data/mods/Aftershock/maps/terrain.json
-#: data/mods/Arcana_BN/furniture_and_terrain/furniture.json src/map.cpp
-#: src/mapdata.h
+#: data/mods/Arcana_BN/furniture_and_terrain/furniture.json src/map/map.cpp
+#: src/map/mapdata.h
 msgid "thump!"
 msgstr "güm!"
 
@@ -46229,7 +46230,8 @@ msgid "A section of wooden railing."
 msgstr "Ahşap korkuluk bölümü."
 
 #: data/json/furniture_and_terrain/terrain-fences-gates.json
-#: data/json/furniture_and_terrain/terrain-recreational.json src/mapdata.cpp
+#: data/json/furniture_and_terrain/terrain-recreational.json
+#: src/map/mapdata.cpp
 msgid "crack!"
 msgstr "çat!"
 
@@ -304720,7 +304722,8 @@ msgstr "Gücünüz tükendi!"
 msgid "You cannot hack this."
 msgstr "Bunu hackleyemezsiniz."
 
-#: src/activity_actor.cpp src/computer_session.cpp src/iuse.cpp src/map.cpp
+#: src/activity_actor.cpp src/computer_session.cpp src/iuse.cpp
+#: src/map/map.cpp
 msgid "an alarm sound!"
 msgstr "bir alarm sesi!"
 
@@ -318596,7 +318599,7 @@ msgstr "Karakter alma kurallarından '%s' kaldırıldı."
 msgid "force of the explosion"
 msgstr "patlamanın gücü"
 
-#: src/explosion.cpp src/map.cpp
+#: src/explosion.cpp src/map/map.cpp
 #, c-format
 msgid "The %1$s"
 msgstr "%1$s"
@@ -319112,31 +319115,6 @@ msgstr ""
 #, c-format
 msgid "%s returns from their mission"
 msgstr "%s görevinden geri dönüyor"
-
-#: src/field_type.h
-#, c-format
-msgid " in %s"
-msgstr "%s içinde"
-
-#: src/field_type.h
-#, c-format
-msgid " covered in %s"
-msgstr "%s ile kaplı"
-
-#: src/field_type.h
-#, c-format
-msgid " covered in a %s"
-msgstr ""
-
-#: src/field_type.h
-#, c-format
-msgid " on %s"
-msgstr "%s üzerinde"
-
-#: src/field_type.h
-#, c-format
-msgid " under %s"
-msgstr "%s altında"
 
 #: src/fungal_effects.cpp src/iuse.cpp
 #, c-format
@@ -323420,7 +323398,7 @@ msgstr "Havalanmak için bir pervaneye ihtiyacınız var!"
 msgid "You can't open things while you're in your shell."
 msgstr "Kabuğunuzdayken bir şeyleri açamazsınız."
 
-#: src/handle_action.cpp src/map.cpp
+#: src/handle_action.cpp src/map/map.cpp
 msgid "You can't open things while you're riding."
 msgstr "Binerken bir şeyleri açamazsınız."
 
@@ -336543,167 +336521,372 @@ msgstr ""
 "manuel olarak yedeklemeniz önerilir. Oynamaya yeni başladıysanız, yeni bir "
 "dünya oluşturmayı düşünün."
 
-#. ~ %1$s: vehicle name
-#: src/map.cpp
+#: src/map/field_type.h
+#, c-format
+msgid " in %s"
+msgstr "%s içinde"
+
+#: src/map/field_type.h
+#, c-format
+msgid " covered in %s"
+msgstr "%s ile kaplı"
+
+#: src/map/field_type.h
+#, c-format
+msgid " covered in a %s"
+msgstr ""
+
+#: src/map/field_type.h
+#, c-format
+msgid " on %s"
+msgstr "%s üzerinde"
+
+#: src/map/field_type.h
+#, c-format
+msgid " under %s"
+msgstr "%s altında"
+
+#: src/map/map.cpp
 #, c-format
 msgid "weight of %1$s"
 msgstr "%1$s ağırlığı"
 
-#: src/map.cpp src/vehicle/vehicle.cpp
+#: src/map/map.cpp src/vehicle/vehicle.cpp
 #, c-format
 msgid "A towing cable snaps off of %s."
 msgstr "Bir çekme kablosu %s'dan kopuyor."
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s collides with %3$s's %4$s."
 msgstr "%1$s'ın %2$s, %3$s'ın %4$s ile çarpışıyor."
 
-#: src/map.cpp src/monster.cpp src/vehicle/vehicle_display.cpp
+#: src/map/map.cpp src/monster.cpp src/vehicle/vehicle_display.cpp
 #, c-format
 msgid "the %s"
 msgstr "%s"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "Stuff spills from the %s!"
 msgstr "%s'dan şeyler dökülüyor!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s you were grabbing is destroyed!"
 msgstr "Tuttuğun %s yok oldu!"
 
-#: src/map.cpp
-#, c-format
-msgid "Falling %s hits you!"
-msgstr "Düşen %s sana çarpıyor!"
-
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "Falling %s hits <npcname>"
 msgstr "Düşen %s <npcname> çarpıyor"
 
-#: src/map.cpp
+#: src/map/map.cpp
+#, c-format
+msgid "Falling %s hits you!"
+msgstr "Düşen %s sana çarpıyor!"
+
+#: src/map/map.cpp
 #, c-format
 msgid "The %s destroys several items!"
 msgstr "%s birkaç eşyayı yok ediyor!"
 
 #. ~ %1$s: the cause of destruction, %2$s: destroyed item name
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s destroys the %2$s!"
 msgstr "%1$s %2$s yok ediyor!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s damages several items."
 msgstr "%s birkaç eşyaya zarar veriyor."
 
 #. ~ %1$s: the cause of damage, %2$s: damaged item name
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s damages the %2$s."
 msgstr "%1$s %2$s zarar veriyor."
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "an alarm go off!"
 msgstr "bir alarm çalıyor!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You feel the ground beneath you shake from the impact!"
 msgstr "Çarpmanın etkisiyle altındaki zeminin sallandığını hissediyorsun!"
 
-#: src/map.cpp
-msgid "You lose your balance!"
-msgstr "Dengenizi kaybediyorsunuz!"
-
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "<npcname> loses their balance!"
 msgstr "<npcname> dengesini kaybediyor!"
 
-#: src/map.cpp
+#: src/map/map.cpp
+msgid "You lose your balance!"
+msgstr "Dengenizi kaybediyorsunuz!"
+
+#: src/map/map.cpp
 msgid "glass shattering"
 msgstr "cam kırılması"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You are crushed by the falling debris!"
 msgstr "Düşen enkaz tarafından eziliyorsunuz!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "<npcname> is crushed by the falling debris!"
 msgstr "<npcname> düşen enkaz tarafından eziliyor!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot strikes the %s!"
 msgstr "Atış %s'e isabet ediyor!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot is stopped by the %s!"
 msgstr "Atış %s tarafından durduruluyor!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The shot hits the %s and punches through!"
 msgstr "Atış %s'e isabet ediyor ve delip geçiyor!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "laser beam"
 msgstr "lazer ışını"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "bolt of electricity"
 msgstr "elektrik akımı"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "bolt of plasma"
 msgstr "plazma cıvatası"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "flying projectile"
 msgstr "uçan mermi"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "The metal bars melt!"
 msgstr "Metal çubuklar eriyor!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "swish"
 msgstr "vınlama"
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s can only be opened from outside."
 msgstr "%1$s'ın %2$s sadece dışarıdan açılabilir."
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s can only be opened from inside."
 msgstr "%1$s'ın %2$s sadece içeriden açılabilir."
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %1$s's %2$s is locked."
 msgstr "%1$s'ın %2$s kilitli."
 
-#: src/map.cpp
+#: src/map/map.cpp
 #, c-format
 msgid "The %s is taken down."
 msgstr "%s yere serildi."
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You disarm the trap!"
 msgstr "Tuzak etkisiz hale getirildi!"
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You fail to disarm the trap."
 msgstr "Tuzak etkisiz hale getirilemedi."
 
-#: src/map.cpp
+#: src/map/map.cpp
 msgid "You fail to disarm the trap, and you set it off!"
 msgstr "Tuzak etkisiz hale getirilemedi ve onu tetiklediniz!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns your body!"
+msgstr "Asit vücudunu yakıyor!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns <npcname>s body!"
+msgstr "Asit <npcname>'in vücudunu yakıyor!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns your legs and feet!"
+msgstr "Asit bacaklarını ve ayaklarını yakıyor!"
+
+#: src/map/map_field.cpp
+msgid "The acid burns <npcname>s legs and feet!"
+msgstr "Asit, <npcname>'in bacaklarını ve ayaklarını yakıyor!"
+
+#: src/map/map_field.cpp
+msgid "You're lying in a pool of acid"
+msgstr "Asit birikintisinin içinde yatıyorsun"
+
+#: src/map/map_field.cpp
+msgid "You're standing in a pool of acid"
+msgstr "Asit birikintisinin içinde duruyorsun"
+
+#: src/map/map_field.cpp
+msgid "The sludge is thick and sticky.  You struggle to pull free."
+msgstr "Çamur kalın ve yapışkan. Kurtulmak için mücadele ediyorsun."
+
+#: src/map/map_field.cpp
+msgid "You burn your legs and feet!"
+msgstr "Bacaklarını ve ayaklarını yakıyorsun!"
+
+#: src/map/map_field.cpp
+msgid "You're burning up!"
+msgstr "Yanıyorsun!"
+
+#: src/map/map_field.cpp
+msgid "You're set ablaze!"
+msgstr "Alevler içindesin!"
+
+#: src/map/map_field.cpp
+msgid "Your whole body is burning!"
+msgstr "Bütün vücudun yanıyor!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> burns their legs and feet!"
+msgstr "<npcname>, bacaklarını ve ayaklarını yakıyor!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is burning up!"
+msgstr "<npcname> yanıyor!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is set ablaze!"
+msgstr "<npcname> ateşe verildi!"
+
+#: src/map/map_field.cpp
+msgid "<npcname>s whole body is burning!"
+msgstr "<npcname>'ın tüm vücudu yanıyor!"
+
+#: src/map/map_field.cpp
+msgid "You're standing in a fire!"
+msgstr "Ateşin içinde duruyorsun!"
+
+#: src/map/map_field.cpp
+msgid "You're waist-deep in a fire!"
+msgstr "Beline kadar ateşin içindesin!"
+
+#: src/map/map_field.cpp
+msgid "You're surrounded by raging fire!"
+msgstr "Çılgın alevlerle çevrilisin!"
+
+#: src/map/map_field.cpp
+msgid "You're lying in fire!"
+msgstr "Ateşin içinde yatıyorsun!"
+
+#: src/map/map_field.cpp
+msgid "You're torched by flames!"
+msgstr "Alevler seni yakıyor!"
+
+#: src/map/map_field.cpp
+msgid "<npcname> is torched by flames!"
+msgstr "<npcname> alevler tarafından yakılıyor!"
+
+#: src/map/map_field.cpp
+msgid "These flames do not burn you."
+msgstr "Bu alevler seni yakmıyor."
+
+#: src/map/map_field.cpp
+msgid "Those flames do not burn <npcname>."
+msgstr "Bu alevler <npcname>'ı yakmıyor."
+
+#: src/map/map_field.cpp
+msgid "<npcname> is shocked!"
+msgstr "<npcname> şokta!"
+
+#: src/map/map_field.cpp
+msgid "You're painfully electrocuted!"
+msgstr "Acı verici bir şekilde elektrik çarpıyor!"
+
+#: src/map/map_field.cpp
+msgid "You're shocked!"
+msgstr "Şoktasın!"
+
+#: src/map/map_field.cpp
+msgid "The electric cloud doesn't affect you."
+msgstr "Elektrik bulutu seni etkilemiyor."
+
+#: src/map/map_field.cpp
+msgid "The electric cloud doesn't seem to affect <npcname>."
+msgstr "Elektrik bulutu <npcname>'ı etkilemiyor gibi görünüyor."
+
+#: src/map/map_field.cpp
+msgid "You're violently teleported!"
+msgstr "Şiddetle ışınlanıyorsun!"
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The bees sting you in %s!"
+msgstr "Arılar seni %s'da sokuyor!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary burns <npcname>!"
+msgstr "Yangın bombası <npcname>'ı yakıyor!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary burns you!"
+msgstr "Yangın bombası seni yakıyor!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary melts into your skin!"
+msgstr "Yangın bombası cildine eriyor!"
+
+#: src/map/map_field.cpp
+msgid "The incendiary melts into <npcname>s skin!"
+msgstr "Yangın bombası <npcname>'ın derisine eriyor!"
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The %s burns your skin."
+msgstr "%s cildinizi yakıyor."
+
+#: src/map/map_field.cpp
+#, c-format
+msgid "The %s makes you feel sick."
+msgstr "%s sizi hasta hissettiriyor."
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Something has crawled out of the %s plants!"
+msgstr "%s bitkilerinden bir şey dışarı süründü!"
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Something has crawled out of the %s!"
+msgstr "%s'dan bir şey dışarı süründü!"
+
+#: src/map/mapbuffer.cpp
+#, c-format
+msgid "Please wait as the map saves [%d/%d]"
+msgstr "Harita kaydedilirken lütfen bekleyin [%d/%d]"
+
+#: src/map/mapdata.cpp
+msgid "\"furn_set\" is set"
+msgstr "\"furn_set\" ayarlandı"
+
+#: src/map/mapdata.cpp
+msgid "\"ter_set\" is set"
+msgstr "\"ter_set\" ayarlandı"
+
+#: src/map/mapdata.cpp
+msgid "\"ter_set_bashed_from_above\" is set"
+msgstr "\"ter_set_bashed_from_above\" ayarlandı"
+
+#: src/map/mapdata.cpp
+#, c-format
+msgid ""
+"Errors for \"bash\" field in \"%s\": \"%s\":\n"
+"%s"
+msgstr "\"%s\" içindeki \"bash\" alanı için hatalar: \"%s\":"
 
 #: src/map/utils/map_functions.cpp
 msgid "The nerve cluster collapses in on itself, and the nearby cages open!"
@@ -336775,187 +336958,6 @@ msgstr "Hangi harita ekstra listeyi test ediyor?"
 #: src/map_extras.cpp
 msgid "Result of 32400 selections:"
 msgstr "32400 seçimin sonucu:"
-
-#: src/map_field.cpp
-msgid "The acid burns your body!"
-msgstr "Asit vücudunu yakıyor!"
-
-#: src/map_field.cpp
-msgid "The acid burns <npcname>s body!"
-msgstr "Asit <npcname>'in vücudunu yakıyor!"
-
-#: src/map_field.cpp
-msgid "The acid burns your legs and feet!"
-msgstr "Asit bacaklarını ve ayaklarını yakıyor!"
-
-#: src/map_field.cpp
-msgid "The acid burns <npcname>s legs and feet!"
-msgstr "Asit, <npcname>'in bacaklarını ve ayaklarını yakıyor!"
-
-#: src/map_field.cpp
-msgid "You're lying in a pool of acid"
-msgstr "Asit birikintisinin içinde yatıyorsun"
-
-#: src/map_field.cpp
-msgid "You're standing in a pool of acid"
-msgstr "Asit birikintisinin içinde duruyorsun"
-
-#: src/map_field.cpp
-msgid "The sludge is thick and sticky.  You struggle to pull free."
-msgstr "Çamur kalın ve yapışkan. Kurtulmak için mücadele ediyorsun."
-
-#: src/map_field.cpp
-msgid "You burn your legs and feet!"
-msgstr "Bacaklarını ve ayaklarını yakıyorsun!"
-
-#: src/map_field.cpp
-msgid "You're burning up!"
-msgstr "Yanıyorsun!"
-
-#: src/map_field.cpp
-msgid "You're set ablaze!"
-msgstr "Alevler içindesin!"
-
-#: src/map_field.cpp
-msgid "Your whole body is burning!"
-msgstr "Bütün vücudun yanıyor!"
-
-#: src/map_field.cpp
-msgid "<npcname> burns their legs and feet!"
-msgstr "<npcname>, bacaklarını ve ayaklarını yakıyor!"
-
-#: src/map_field.cpp
-msgid "<npcname> is burning up!"
-msgstr "<npcname> yanıyor!"
-
-#: src/map_field.cpp
-msgid "<npcname> is set ablaze!"
-msgstr "<npcname> ateşe verildi!"
-
-#: src/map_field.cpp
-msgid "<npcname>s whole body is burning!"
-msgstr "<npcname>'ın tüm vücudu yanıyor!"
-
-#: src/map_field.cpp
-msgid "You're standing in a fire!"
-msgstr "Ateşin içinde duruyorsun!"
-
-#: src/map_field.cpp
-msgid "You're waist-deep in a fire!"
-msgstr "Beline kadar ateşin içindesin!"
-
-#: src/map_field.cpp
-msgid "You're surrounded by raging fire!"
-msgstr "Çılgın alevlerle çevrilisin!"
-
-#: src/map_field.cpp
-msgid "You're lying in fire!"
-msgstr "Ateşin içinde yatıyorsun!"
-
-#: src/map_field.cpp
-msgid "You're torched by flames!"
-msgstr "Alevler seni yakıyor!"
-
-#: src/map_field.cpp
-msgid "<npcname> is torched by flames!"
-msgstr "<npcname> alevler tarafından yakılıyor!"
-
-#: src/map_field.cpp
-msgid "These flames do not burn you."
-msgstr "Bu alevler seni yakmıyor."
-
-#: src/map_field.cpp
-msgid "Those flames do not burn <npcname>."
-msgstr "Bu alevler <npcname>'ı yakmıyor."
-
-#: src/map_field.cpp
-msgid "You're painfully electrocuted!"
-msgstr "Acı verici bir şekilde elektrik çarpıyor!"
-
-#: src/map_field.cpp
-msgid "<npcname> is shocked!"
-msgstr "<npcname> şokta!"
-
-#: src/map_field.cpp
-msgid "You're shocked!"
-msgstr "Şoktasın!"
-
-#: src/map_field.cpp
-msgid "The electric cloud doesn't affect you."
-msgstr "Elektrik bulutu seni etkilemiyor."
-
-#: src/map_field.cpp
-msgid "The electric cloud doesn't seem to affect <npcname>."
-msgstr "Elektrik bulutu <npcname>'ı etkilemiyor gibi görünüyor."
-
-#: src/map_field.cpp
-msgid "You're violently teleported!"
-msgstr "Şiddetle ışınlanıyorsun!"
-
-#: src/map_field.cpp
-#, c-format
-msgid "The bees sting you in %s!"
-msgstr "Arılar seni %s'da sokuyor!"
-
-#: src/map_field.cpp
-msgid "The incendiary burns you!"
-msgstr "Yangın bombası seni yakıyor!"
-
-#: src/map_field.cpp
-msgid "The incendiary burns <npcname>!"
-msgstr "Yangın bombası <npcname>'ı yakıyor!"
-
-#: src/map_field.cpp
-msgid "The incendiary melts into your skin!"
-msgstr "Yangın bombası cildine eriyor!"
-
-#: src/map_field.cpp
-msgid "The incendiary melts into <npcname>s skin!"
-msgstr "Yangın bombası <npcname>'ın derisine eriyor!"
-
-#: src/map_field.cpp
-#, c-format
-msgid "The %s burns your skin."
-msgstr "%s cildinizi yakıyor."
-
-#: src/map_field.cpp
-#, c-format
-msgid "The %s makes you feel sick."
-msgstr "%s sizi hasta hissettiriyor."
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Something has crawled out of the %s plants!"
-msgstr "%s bitkilerinden bir şey dışarı süründü!"
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Something has crawled out of the %s!"
-msgstr "%s'dan bir şey dışarı süründü!"
-
-#: src/mapbuffer.cpp
-#, c-format
-msgid "Please wait as the map saves [%d/%d]"
-msgstr "Harita kaydedilirken lütfen bekleyin [%d/%d]"
-
-#: src/mapdata.cpp
-msgid "\"furn_set\" is set"
-msgstr "\"furn_set\" ayarlandı"
-
-#: src/mapdata.cpp
-msgid "\"ter_set\" is set"
-msgstr "\"ter_set\" ayarlandı"
-
-#: src/mapdata.cpp
-msgid "\"ter_set_bashed_from_above\" is set"
-msgstr "\"ter_set_bashed_from_above\" ayarlandı"
-
-#: src/mapdata.cpp
-#, c-format
-msgid ""
-"Errors for \"bash\" field in \"%s\": \"%s\":\n"
-"%s"
-msgstr "\"%s\" içindeki \"bash\" alanı için hatalar: \"%s\":"
 
 #: src/mapgen.cpp src/mapgen_constructor.cpp
 msgid "Wreckage"
