@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-20 16:57+0000\n"
+"POT-Creation-Date: 2026-09-21 17:26+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -4916,6 +4916,10 @@ msgstr "收藏"
 #: src/vehicle/veh_interact.cpp
 msgid "Filter"
 msgstr "篩選"
+
+#: data/json/construction_group.json
+msgid "Place Portable Nanofab"
+msgstr "放置便携式纳米制造机"
 
 #: data/json/construction_group.json
 msgid "Add Mattress to Bed Frame"
@@ -34565,6 +34569,10 @@ msgid "This is a debug-only item for testing overkill enchantments."
 msgstr "这是一个仅用于测试溢出伤害附魔的调试专用物品。"
 
 #: data/json/construction/construct.json
+msgid "Requires a flat, stable area."
+msgstr "需要平整、稳定的区域。"
+
+#: data/json/construction/construct.json
 #: data/json/construction/construct_deco.json
 #: data/json/construction/construct_furn.json
 #: data/mods/pride_flags/construction.json
@@ -34887,6 +34895,18 @@ msgstr "金屬嘎嘎聲!"
 #: data/mods/MagicalNights/furniture.json data/mods/pride_flags/furniture.json
 msgid "clang!"
 msgstr "鐺!"
+
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid "portable nanofabricator unit"
+msgstr "便携式纳米制造机单元"
+
+#. ~ Description for portable nanofabricator unit
+#: data/json/furniture_and_terrain/furniture-appliances.json
+msgid ""
+"An ugly amalgamation, grafted together from a nanofabricator body, its "
+"control panel, and a huge plutonium fuel cell to power it.  Needless to say,"
+" it's significantly more fragile, but more compact and portable.  Somewhat."
+msgstr "一个由纳米制造机机身、控制面板以及为其供电的巨型钚燃料电池拼接而成的丑陋结合体。毋庸置疑，它脆弱得多，但也更为紧凑便携——勉强算是吧。"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 msgid "central air filter"
@@ -53688,6 +53708,43 @@ msgstr[0] "諾梅克斯補丁"
 #: data/json/items/generic.json
 msgid "A small bolt of Nomex fire-resistant fabric."
 msgstr "一小塊諾梅克斯阻燃纖維。"
+
+#: data/json/items/generic.json
+msgid "dismantled nanofabricator control panel"
+msgid_plural "dismantled nanofabricator control panels"
+msgstr[0] "已拆解的纳米制造机控制面板"
+
+#. ~ Description for {'str': 'dismantled nanofabricator control panel'}
+#: data/json/items/generic.json
+msgid ""
+"The control panel from a dismantled nanofabricator.  Must be attached to the"
+" body to make the nanofabricator work again."
+msgstr "从纳米制造机上拆卸下来的控制面板。必须安装回机身才能让纳米制造机重新运转。"
+
+#: data/json/items/generic.json
+msgid "dismantled nanofabricator body"
+msgid_plural "dismantled nanofabricator bodys"
+msgstr[0] "已拆解的纳米制造机机身"
+
+#. ~ Description for {'str': 'dismantled nanofabricator body'}
+#: data/json/items/generic.json
+msgid ""
+"The machinery from a dismantled nanofabricator.  This massive column of "
+"advanced 3D printers and robotic assemblers is useless without its control "
+"panel."
+msgstr "从纳米制造机上拆卸下来的机械结构。这根由先进3D打印机与装配机械臂组成的庞大柱体，在没有控制面板的情况下毫无用处。"
+
+#: data/json/items/generic.json
+msgid "portable nanofabricator"
+msgid_plural "portable nanofabricators"
+msgstr[0] "便携式纳米制造机"
+
+#. ~ Description for {'str': 'portable nanofabricator'}
+#: data/json/items/generic.json
+msgid ""
+"A massive nanofabricator manufacturing column and it's control panel "
+"combined together into a semi-portable unit."
+msgstr "将庞大的纳米制造立柱与其控制面板组合在一起制成的半便携式单元。"
 
 #: data/json/items/generic.json
 msgid "superglue"
@@ -137798,9 +137855,9 @@ msgstr "腳掌厚墊"
 #. ~ Description for {'str': 'Padded Feet'}
 #: data/json/mutations/mutations.json
 msgid ""
-"The bottoms of your feet are strongly padded.  If you're not wearing "
-"footwear, you'll receive a 10% bonus to movement speed."
-msgstr "你的脚底长出了厚厚的肉垫，光着脚行动时不受惩罚，甚至能增加10%移动速度，穿鞋就没效果。"
+"The bottoms of your feet are strongly padded.  If you're not wearing any "
+"shoes, you'll receive a 10% bonus to movement speed."
+msgstr "你的脚底长有厚实的肉垫。如果不穿任何鞋子，你的移动速度将获得 10% 的加成。"
 
 #: data/json/mutations/mutations.json
 msgid "Strong Legs"
@@ -202034,6 +202091,51 @@ msgstr "反应：汲取生命外壳"
 msgid "This exists only to trigger on-self effects from an on-hit action."
 msgstr "这只是为了从命中动作中触发自我效果而存在的。"
 
+#: data/mods/Arcana_BN/obsolete.json
+msgid "Verge Pulse"
+msgstr "权杖脉冲"
+
+#. ~ Description for {'str': 'Verge Pulse'}
+#: data/mods/Arcana_BN/obsolete.json
+msgid "This adds the terrain damage."
+msgstr "这增加了地形伤害。"
+
+#: data/mods/Arcana_BN/obsolete.json
+msgid "Divine Scroll: Destruction Pulse"
+msgstr "神圣卷轴：毁灭脉冲"
+
+#. ~ Description for {'str': 'Divine Scroll: Destruction Pulse'}
+#: data/mods/Arcana_BN/obsolete.json
+msgid "This adds a highly-random pulse effect to the scroll."
+msgstr "这为卷轴增加了一个高度随机的脉冲效果。"
+
+#: data/mods/Arcana_BN/obsolete.json
+msgid "Conjure Flame Bash"
+msgstr "召唤火焰猛击"
+
+#. ~ Description for {'str': 'Conjure Flame Bash'}
+#: data/mods/Arcana_BN/obsolete.json
+msgid "Damages terrain in range."
+msgstr "对范围内的地形造成伤害。"
+
+#: data/mods/Arcana_BN/obsolete.json
+msgid "Sundering Quake Pulse"
+msgstr "碎裂地震脉冲"
+
+#. ~ Description for {'str': 'Sundering Quake Pulse'}
+#: data/mods/Arcana_BN/obsolete.json
+msgid "This adds the pulse effect to the spell."
+msgstr "这为法术增加了脉冲效果。"
+
+#: data/mods/Arcana_BN/obsolete.json
+msgid "Wave of Destruction Pulse"
+msgstr "毁灭波动脉冲"
+
+#. ~ Description for {'str': 'Wave of Destruction Pulse'}
+#: data/mods/Arcana_BN/obsolete.json
+msgid "This adds the actual effect of yeeting terrain in range."
+msgstr "这增加了在范围内掀翻地形的实际效果。"
+
 #: data/mods/Arcana_BN/skills.json data/mods/skills_through_kills/main.lua
 msgid "Arcana"
 msgstr "奥术"
@@ -224369,15 +224471,6 @@ msgid "a splash!"
 msgstr "一声飞溅！"
 
 #: data/mods/Arcana_BN/spells/spells_aftermath.json
-msgid "Conjure Flame Bash"
-msgstr "召唤火焰猛击"
-
-#. ~ Description for {'str': 'Conjure Flame Bash'}
-#: data/mods/Arcana_BN/spells/spells_aftermath.json
-msgid "Damages terrain in range."
-msgstr "对范围内的地形造成伤害。"
-
-#: data/mods/Arcana_BN/spells/spells_aftermath.json
 msgid "Conjure Flame Noise"
 msgstr "召唤火焰噪音"
 
@@ -224927,15 +225020,6 @@ msgid "This exists to add rubble and other changes to Sundering Quake."
 msgstr "存在这个效果是为了给碎裂地震增加碎石和其他变化。"
 
 #: data/mods/Arcana_BN/spells/spells_aftermath.json
-msgid "Sundering Quake Pulse"
-msgstr "碎裂地震脉冲"
-
-#. ~ Description for {'str': 'Sundering Quake Pulse'}
-#: data/mods/Arcana_BN/spells/spells_aftermath.json
-msgid "This adds the pulse effect to the spell."
-msgstr "这为法术增加了脉冲效果。"
-
-#: data/mods/Arcana_BN/spells/spells_aftermath.json
 msgid "Sundering Quake Noise"
 msgstr "碎裂地震噪音"
 
@@ -224963,15 +225047,6 @@ msgid ""
 "This is used so that any spell that grants bonus moves will hint at the "
 "effect's beginning and end."
 msgstr "这用于任何赋予额外行动点的法术，以提示效果的开始和结束。"
-
-#: data/mods/Arcana_BN/spells/spells_aftermath.json
-msgid "Wave of Destruction Pulse"
-msgstr "毁灭波动脉冲"
-
-#. ~ Description for {'str': 'Wave of Destruction Pulse'}
-#: data/mods/Arcana_BN/spells/spells_aftermath.json
-msgid "This adds the actual effect of yeeting terrain in range."
-msgstr "这增加了在范围内掀翻地形的实际效果。"
 
 #: data/mods/Arcana_BN/spells/spells_aftermath.json
 msgid "Wave of Destruction Side Effects"
@@ -226100,15 +226175,6 @@ msgid ""
 msgstr "当你举起权杖时，一股能量击中地面，发出雷鸣般的爆炸声！"
 
 #: data/mods/Arcana_BN/spells/spells_item.json
-msgid "Verge Pulse"
-msgstr "权杖脉冲"
-
-#. ~ Description for {'str': 'Verge Pulse'}
-#: data/mods/Arcana_BN/spells/spells_item.json
-msgid "This adds the terrain damage."
-msgstr "这增加了地形伤害。"
-
-#: data/mods/Arcana_BN/spells/spells_item.json
 msgid "Verge Noise"
 msgstr "权杖噪音"
 
@@ -226603,15 +226669,6 @@ msgstr "神圣卷轴：毁灭寒意"
 #: data/mods/Arcana_BN/spells/spells_item.json
 msgid "This adds a chill to the air, inflicted by scrolls of sundering."
 msgstr "这会在空气中增加一丝寒意，由粉碎卷轴造成。"
-
-#: data/mods/Arcana_BN/spells/spells_item.json
-msgid "Divine Scroll: Destruction Pulse"
-msgstr "神圣卷轴：毁灭脉冲"
-
-#. ~ Description for {'str': 'Divine Scroll: Destruction Pulse'}
-#: data/mods/Arcana_BN/spells/spells_item.json
-msgid "This adds a highly-random pulse effect to the scroll."
-msgstr "这为卷轴增加了一个高度随机的脉冲效果。"
 
 #: data/mods/Arcana_BN/spells/spells_item.json
 msgid "Scroll: Leftovers"
@@ -296102,6 +296159,10 @@ msgstr "可被近战武器伤害增强"
 #: src/magic/magic.cpp
 msgid "divides damage evenly among its targets"
 msgstr "在目标之间平均分摊伤害"
+
+#: src/magic/magic.cpp
+msgid "damages terrain"
+msgstr "破坏地形"
 
 #: src/magic/magic.cpp
 #, c-format
