@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-22 21:53+0000\n"
+"POT-Creation-Date: 2026-09-23 22:15+0000\n"
 "Last-Translator: Arif Öcal, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -166621,10 +166621,10 @@ msgstr "Hattı tutun: Yanımdaki engellere geçmeyin."
 #: data/mods/Arcana_BN/npcs/TALK_ROBOFAC_INTERCOM.json
 #: data/mods/Arcana_BN/npcs/TALK_SCIENCE_REP.json src/action.cpp
 #: src/activity_handlers.cpp src/avatar.cpp src/avatar_action.cpp
-#: src/avatar_functions.cpp src/character_functions.cpp src/crafting.cpp
-#: src/game.cpp src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp
-#: src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp
-#: src/pickup.cpp src/salvage.cpp src/vehicle/veh_interact.cpp
+#: src/avatar_functions.cpp src/crafting.cpp src/game.cpp
+#: src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp src/iuse.cpp
+#: src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp src/pickup.cpp
+#: src/reload/reload_ui.cpp src/salvage.cpp src/vehicle/veh_interact.cpp
 #: src/vehicle/vehicle_use.cpp
 msgid "Never mind."
 msgstr "Boş verin."
@@ -205486,6 +205486,10 @@ msgstr "mantar çiçeği"
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "fungal flowers"
 msgstr "mantar çiçekleri"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_fungal.json
+msgid "fungal buds"
+msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
 msgid "test"
@@ -312252,6 +312256,22 @@ msgid "You refill the %1$s's %2$s with %3$s."
 msgstr "%1$s'in %2$s'ini %3$s ile dolduruyorsunuz."
 
 #: src/character.cpp
+msgid "Resting here is very comfortable."
+msgstr ""
+
+#: src/character.cpp
+msgid "Resting here is comfortable."
+msgstr ""
+
+#: src/character.cpp
+msgid "Resting here is slightly comfortable."
+msgstr ""
+
+#: src/character.cpp
+msgid "Resting here isn't comfortable."
+msgstr ""
+
+#: src/character.cpp
 #, c-format
 msgid "This is you - %s."
 msgstr "Bu sensin - %s."
@@ -313382,70 +313402,6 @@ msgstr "Kaçmaya çalışıyorsun ama başaramıyorsun!"
 #, c-format
 msgid "%s tries to dodge but fails!"
 msgstr "%s kaçmaya çalışıyor ama başaramıyor!"
-
-#: src/character_functions.cpp src/vehicle/veh_interact.cpp
-#, c-format
-msgid "Refill %s"
-msgstr "%s doldur"
-
-#: src/character_functions.cpp src/vehicle/vehicle_use.cpp
-#, c-format
-msgid "Reload %s"
-msgstr "%s yeniden yükle"
-
-#: src/character_functions.cpp
-#, c-format
-msgid "Select ammo for %s"
-msgstr "%s için mühimmat seç"
-
-#. ~ battery storage (charges)
-#: src/character_functions.cpp
-#, c-format
-msgctxt "magazine"
-msgid "%1$s (%2$d)"
-msgstr "%1$s (%2$d)"
-
-#. ~ magazine with ammo (count)
-#: src/character_functions.cpp
-#, c-format
-msgctxt "magazine"
-msgid "%1$s with %2$s (%3$d)"
-msgstr "%1$s ile %2$s (%3$d)"
-
-#: src/character_functions.cpp src/magic/magic.cpp
-#, c-format
-msgid "%s, %s"
-msgstr "%s, %s"
-
-#: src/character_functions.cpp
-msgid "| Location "
-msgstr "| Konum"
-
-#: src/character_functions.cpp
-msgid "| Amount  "
-msgstr "| Miktar"
-
-#: src/character_functions.cpp
-msgid "| Moves   "
-msgstr "| Hareketler"
-
-#: src/character_functions.cpp
-msgid "| Damage   | Pierce   "
-msgstr "| Hasar   | Delme"
-
-#: src/character_functions.cpp
-#, c-format
-msgid "You need a compatible magazine to reload the %s!"
-msgstr "%s yeniden doldurmak için uyumlu bir şarjöre ihtiyacınız var!"
-
-#: src/character_functions.cpp
-msgid "Nothing to reload!"
-msgstr "Yeniden doldurulacak bir şey yok!"
-
-#: src/character_functions.cpp
-#, c-format
-msgid "You don't have any %s to reload your %s!"
-msgstr "%s'inizi yeniden doldurmak için %s'ınız yok!"
 
 #: src/character_functions.cpp
 #, c-format
@@ -325533,31 +325489,31 @@ msgid "Crash through the %s?"
 msgstr ""
 
 #: src/iexamine.cpp
-#, c-format
-msgid "You cannot jump through the %s."
-msgstr ""
-
-#: src/iexamine.cpp
-#, c-format
-msgid "You cannot jump over %s."
-msgstr ""
-
-#: src/iexamine.cpp
-#, c-format
-msgid "You cannot land there - the %s is blocking the way."
-msgstr ""
-
-#: src/iexamine.cpp
-#, c-format
-msgid "You cannot jump over an obstacle - there is %s blocking the way."
-msgstr "Bir engelin üzerinden atlayamazsın - %s yolu kapatıyor."
-
-#: src/iexamine.cpp
 msgid "You are too weak to jump over an obstacle."
 msgstr "Bir engelin üzerinden atlamak için çok zayıfsın."
 
 #: src/iexamine.cpp
 msgid "You're too exhausted to jump over an obstacle."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You need two functional legs to jump."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Your steed cannot jump this far."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You cannot jump from water."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You can't jump in your current state!"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You need to stand up in order to jump!"
 msgstr ""
 
 #: src/iexamine.cpp
@@ -335943,6 +335899,11 @@ msgstr "sonsuz"
 #, c-format
 msgid "%s and %s"
 msgstr "%s ve %s"
+
+#: src/magic/magic.cpp src/reload/reload_ui.cpp
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
 
 #: src/magic/magic.cpp
 #, c-format
@@ -353003,6 +352964,63 @@ msgstr "<color_cyan>none</color>"
 #, c-format
 msgid "%s%% at >%s units"
 msgstr "%s%% >%s birimlerde"
+
+#: src/reload/reload_ui.cpp src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Refill %s"
+msgstr "%s doldur"
+
+#: src/reload/reload_ui.cpp
+#, c-format
+msgid "Select ammo for %s"
+msgstr "%s için mühimmat seç"
+
+#: src/reload/reload_ui.cpp src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Reload %s"
+msgstr "%s yeniden yükle"
+
+#: src/reload/reload_ui.cpp
+#, c-format
+msgctxt "magazine"
+msgid "%1$s (%2$d)"
+msgstr "%1$s (%2$d)"
+
+#: src/reload/reload_ui.cpp
+#, c-format
+msgctxt "magazine"
+msgid "%1$s with %2$s (%3$d)"
+msgstr "%1$s ile %2$s (%3$d)"
+
+#: src/reload/reload_ui.cpp
+msgid "| Location "
+msgstr "| Konum"
+
+#: src/reload/reload_ui.cpp
+msgid "| Amount  "
+msgstr "| Miktar"
+
+#: src/reload/reload_ui.cpp
+msgid "| Moves   "
+msgstr "| Hareketler"
+
+#: src/reload/reload_ui.cpp
+msgid "| Damage   | Pierce   "
+msgstr "| Hasar   | Delme"
+
+#: src/reload/reload_ui.cpp
+#, c-format
+msgid "You need a compatible magazine to reload the %s!"
+msgstr "%s yeniden doldurmak için uyumlu bir şarjöre ihtiyacınız var!"
+
+#: src/reload/reload_ui.cpp
+msgid "Nothing to reload!"
+msgstr "Yeniden doldurulacak bir şey yok!"
+
+#: src/reload/reload_ui.cpp
+#, c-format
+msgid "You don't have any %s to reload your %s!"
+msgstr "%s'inizi yeniden doldurmak için %s'ınız yok!"
 
 #. ~ %1$d: tool count, %2$s: quality requirement name, %3$d: quality level
 #. requirement

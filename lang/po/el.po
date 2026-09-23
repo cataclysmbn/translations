@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-22 21:53+0000\n"
+"POT-Creation-Date: 2026-09-23 20:11+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Greek (https://app.transifex.com/bn-team/teams/113585/el/)\n"
 "MIME-Version: 1.0\n"
@@ -147114,10 +147114,10 @@ msgstr ""
 #: data/mods/Arcana_BN/npcs/TALK_ROBOFAC_INTERCOM.json
 #: data/mods/Arcana_BN/npcs/TALK_SCIENCE_REP.json src/action.cpp
 #: src/activity_handlers.cpp src/avatar.cpp src/avatar_action.cpp
-#: src/avatar_functions.cpp src/character_functions.cpp src/crafting.cpp
-#: src/game.cpp src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp
-#: src/iuse.cpp src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp
-#: src/pickup.cpp src/salvage.cpp src/vehicle/veh_interact.cpp
+#: src/avatar_functions.cpp src/crafting.cpp src/game.cpp
+#: src/handle_action.cpp src/handle_liquid.cpp src/iexamine.cpp src/iuse.cpp
+#: src/iuse_actor.cpp src/monexamine.cpp src/npc.cpp src/pickup.cpp
+#: src/reload/reload_ui.cpp src/salvage.cpp src/vehicle/veh_interact.cpp
 #: src/vehicle/vehicle_use.cpp
 msgid "Never mind."
 msgstr ""
@@ -180378,6 +180378,10 @@ msgstr ""
 #: data/json/overmap/overmap_terrain/overmap_terrain_fungal.json
 #: data/mods/alt_map_key/overmap_terrain.json
 msgid "fungal flowers"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain_fungal.json
+msgid "fungal buds"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
@@ -276943,6 +276947,22 @@ msgid "You refill the %1$s's %2$s with %3$s."
 msgstr ""
 
 #: src/character.cpp
+msgid "Resting here is very comfortable."
+msgstr ""
+
+#: src/character.cpp
+msgid "Resting here is comfortable."
+msgstr ""
+
+#: src/character.cpp
+msgid "Resting here is slightly comfortable."
+msgstr ""
+
+#: src/character.cpp
+msgid "Resting here isn't comfortable."
+msgstr ""
+
+#: src/character.cpp
 #, c-format
 msgid "This is you - %s."
 msgstr ""
@@ -278048,70 +278068,6 @@ msgstr ""
 #: src/character_functions.cpp
 #, c-format
 msgid "%s tries to dodge but fails!"
-msgstr ""
-
-#: src/character_functions.cpp src/vehicle/veh_interact.cpp
-#, c-format
-msgid "Refill %s"
-msgstr ""
-
-#: src/character_functions.cpp src/vehicle/vehicle_use.cpp
-#, c-format
-msgid "Reload %s"
-msgstr ""
-
-#: src/character_functions.cpp
-#, c-format
-msgid "Select ammo for %s"
-msgstr ""
-
-#. ~ battery storage (charges)
-#: src/character_functions.cpp
-#, c-format
-msgctxt "magazine"
-msgid "%1$s (%2$d)"
-msgstr ""
-
-#. ~ magazine with ammo (count)
-#: src/character_functions.cpp
-#, c-format
-msgctxt "magazine"
-msgid "%1$s with %2$s (%3$d)"
-msgstr ""
-
-#: src/character_functions.cpp src/magic/magic.cpp
-#, c-format
-msgid "%s, %s"
-msgstr ""
-
-#: src/character_functions.cpp
-msgid "| Location "
-msgstr ""
-
-#: src/character_functions.cpp
-msgid "| Amount  "
-msgstr ""
-
-#: src/character_functions.cpp
-msgid "| Moves   "
-msgstr ""
-
-#: src/character_functions.cpp
-msgid "| Damage   | Pierce   "
-msgstr ""
-
-#: src/character_functions.cpp
-#, c-format
-msgid "You need a compatible magazine to reload the %s!"
-msgstr ""
-
-#: src/character_functions.cpp
-msgid "Nothing to reload!"
-msgstr ""
-
-#: src/character_functions.cpp
-#, c-format
-msgid "You don't have any %s to reload your %s!"
 msgstr ""
 
 #: src/character_functions.cpp
@@ -289815,31 +289771,31 @@ msgid "Crash through the %s?"
 msgstr ""
 
 #: src/iexamine.cpp
-#, c-format
-msgid "You cannot jump through the %s."
-msgstr ""
-
-#: src/iexamine.cpp
-#, c-format
-msgid "You cannot jump over %s."
-msgstr ""
-
-#: src/iexamine.cpp
-#, c-format
-msgid "You cannot land there - the %s is blocking the way."
-msgstr ""
-
-#: src/iexamine.cpp
-#, c-format
-msgid "You cannot jump over an obstacle - there is %s blocking the way."
-msgstr ""
-
-#: src/iexamine.cpp
 msgid "You are too weak to jump over an obstacle."
 msgstr ""
 
 #: src/iexamine.cpp
 msgid "You're too exhausted to jump over an obstacle."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You need two functional legs to jump."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "Your steed cannot jump this far."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You cannot jump from water."
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You can't jump in your current state!"
+msgstr ""
+
+#: src/iexamine.cpp
+msgid "You need to stand up in order to jump!"
 msgstr ""
 
 #: src/iexamine.cpp
@@ -299883,6 +299839,11 @@ msgstr ""
 #: src/magic/magic.cpp
 #, c-format
 msgid "%s and %s"
+msgstr ""
+
+#: src/magic/magic.cpp src/reload/reload_ui.cpp
+#, c-format
+msgid "%s, %s"
 msgstr ""
 
 #: src/magic/magic.cpp
@@ -316270,6 +316231,63 @@ msgstr ""
 #: src/recipe.cpp
 #, c-format
 msgid "%s%% at >%s units"
+msgstr ""
+
+#: src/reload/reload_ui.cpp src/vehicle/veh_interact.cpp
+#, c-format
+msgid "Refill %s"
+msgstr ""
+
+#: src/reload/reload_ui.cpp
+#, c-format
+msgid "Select ammo for %s"
+msgstr ""
+
+#: src/reload/reload_ui.cpp src/vehicle/vehicle_use.cpp
+#, c-format
+msgid "Reload %s"
+msgstr ""
+
+#: src/reload/reload_ui.cpp
+#, c-format
+msgctxt "magazine"
+msgid "%1$s (%2$d)"
+msgstr ""
+
+#: src/reload/reload_ui.cpp
+#, c-format
+msgctxt "magazine"
+msgid "%1$s with %2$s (%3$d)"
+msgstr ""
+
+#: src/reload/reload_ui.cpp
+msgid "| Location "
+msgstr ""
+
+#: src/reload/reload_ui.cpp
+msgid "| Amount  "
+msgstr ""
+
+#: src/reload/reload_ui.cpp
+msgid "| Moves   "
+msgstr ""
+
+#: src/reload/reload_ui.cpp
+msgid "| Damage   | Pierce   "
+msgstr ""
+
+#: src/reload/reload_ui.cpp
+#, c-format
+msgid "You need a compatible magazine to reload the %s!"
+msgstr ""
+
+#: src/reload/reload_ui.cpp
+msgid "Nothing to reload!"
+msgstr ""
+
+#: src/reload/reload_ui.cpp
+#, c-format
+msgid "You don't have any %s to reload your %s!"
 msgstr ""
 
 #. ~ %1$d: tool count, %2$s: quality requirement name, %3$d: quality level
