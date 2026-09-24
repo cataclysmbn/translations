@@ -17,7 +17,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-23 22:15+0000\n"
+"POT-Creation-Date: 2026-09-24 00:48+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -124810,6 +124810,7 @@ msgstr "财政部统一电子化银行（高安全等级）"
 #: data/json/mapgen/bank.json data/json/mapgen/missile_silo.json
 #: data/json/mapgen/outpost.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/json/mapgen/microlab/microlab_special_tiles.json
 #: data/mods/Arcana_BN/overmap_and_mapgen/mapgen_variants.json
 msgid ""
@@ -126136,6 +126137,7 @@ msgstr "图书馆入口"
 #: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level_ice.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
 #: data/json/mapgen/lab/lab_modular/lab_central_hallway.json
 #: data/json/mapgen/lab/lab_modular/lab_health_clinic.json
@@ -126150,6 +126152,7 @@ msgstr "开启入口"
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_1side.json
 #: data/json/mapgen/lab/lab_floorplans_1side_ice.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/mods/Aftershock/maps/lab_vehicle_track.json
 #: data/mods/Aftershock/maps/lab_weapons_range.json
 msgid "ENTER EMERGENCY OVERRIDE CODE"
@@ -126201,16 +126204,19 @@ msgstr "高危实验体收容"
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid "Sub-prime Contact Console"
 msgstr "次级联系终端"
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid "Toggle Portal"
 msgstr "切换传送门"
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid "Activate Resonance Cascade"
 msgstr "开启串联共振进程"
 
@@ -126270,6 +126276,21 @@ msgid ""
 msgstr ""
 "禁区\n"
 "仅限授权人员及登记车辆通行。禁止拍照。请备好身份证明。"
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+msgid "Bionic Vault"
+msgstr "生化储藏库"
+
+#. ~ Computer option
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+msgid "MANIFEST"
+msgstr "货运清单"
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+msgid "Advanced PE012 Samples"
+msgstr "进阶PE012样本"
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
@@ -176424,7 +176445,7 @@ msgstr "真菌花丛"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_fungal.json
 msgid "fungal buds"
-msgstr ""
+msgstr "真菌幼芽"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_hardcoded.json
 msgid "test"
@@ -176932,7 +176953,7 @@ msgstr "米·戈侦察塔"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_mi-go.json
 msgid "mi-go forward camp"
-msgstr ""
+msgstr "米·戈前哨营地"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_microlab.json
 #: data/mods/DinoMod/overmap/overmap_terrain.json
@@ -177999,7 +178020,7 @@ msgstr "充满生机的原野"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_triffid.json
 msgid "triffid sprout heart"
-msgstr ""
+msgstr "三尖树幼芽之心"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain_urban.json
 msgid "school"
@@ -272916,21 +272937,6 @@ msgstr "你的身体因为睡眠不足而倒下了，之前被你所忽视的疲
 msgid "<npcname> collapses to the ground from exhaustion."
 msgstr "<npcname> 因疲劳倒在了地上。"
 
-#: src/character.cpp
-#, c-format
-msgid "Your %s will be frostnipped in the next few hours."
-msgstr "你的%s在不久就会被冻伤。"
-
-#: src/character.cpp
-#, c-format
-msgid "Your %s will be frostbitten within the hour!"
-msgstr "你的%s在短时间内会被冻伤。"
-
-#: src/character.cpp
-#, c-format
-msgid "Your %s will be frostbitten any minute now!"
-msgstr "你的%s将会随时被冻伤！"
-
 #. ~ %s is bodypart
 #: src/character.cpp
 #, c-format
@@ -272968,14 +272974,6 @@ msgid "You feel your %s getting warm."
 msgstr "你感到你的%s开始升温。"
 
 #: src/character.cpp
-msgid "Your shivering prevents you from sleeping."
-msgstr "你冷到发抖，无法继续睡眠。"
-
-#: src/character.cpp
-msgid "You are too cold.  Your frostbite prevents you from sleeping."
-msgstr "你太冷了。你身体的冻伤使你无法继续睡眠。"
-
-#: src/character.cpp
 #, c-format
 msgid "The wind is making your %s feel quite cold."
 msgstr "你的%s被风吹得冷飕飕的。"
@@ -272992,6 +272990,29 @@ msgstr "风力很强，你应该为你的 %s 穿上点防风的衣物。"
 msgid ""
 "Your clothing is not providing enough protection from the wind for your %s!"
 msgstr "你的衣物无法为你的 %s 提供足够的防风保护！"
+
+#: src/character.cpp
+msgid "Your shivering prevents you from sleeping."
+msgstr "你冷到发抖，无法继续睡眠。"
+
+#: src/character.cpp
+msgid "You are too cold.  Your frostbite prevents you from sleeping."
+msgstr "你太冷了。你身体的冻伤使你无法继续睡眠。"
+
+#: src/character.cpp
+#, c-format
+msgid "Your %s will be frostnipped in the next few hours."
+msgstr "你的%s在不久就会被冻伤。"
+
+#: src/character.cpp
+#, c-format
+msgid "Your %s will be frostbitten within the hour!"
+msgstr "你的%s在短时间内会被冻伤。"
+
+#: src/character.cpp
+#, c-format
+msgid "Your %s will be frostbitten any minute now!"
+msgstr "你的%s将会随时被冻伤！"
 
 #: src/character.cpp
 msgid "It is broken and must heal fully before it becomes functional again."
@@ -273096,19 +273117,19 @@ msgstr "你为 %1$s 的 %2$s 补充了 %3$s。"
 
 #: src/character.cpp
 msgid "Resting here is very comfortable."
-msgstr ""
+msgstr "在这里休息非常舒适。"
 
 #: src/character.cpp
 msgid "Resting here is comfortable."
-msgstr ""
+msgstr "在这里休息很舒适。"
 
 #: src/character.cpp
 msgid "Resting here is slightly comfortable."
-msgstr ""
+msgstr "在这里休息略感舒适。"
 
 #: src/character.cpp
 msgid "Resting here isn't comfortable."
-msgstr ""
+msgstr "在这里休息并不舒适。"
 
 #: src/character.cpp
 #, c-format
@@ -286173,23 +286194,23 @@ msgstr "你精疲力竭，无法跳过障碍物。"
 
 #: src/iexamine.cpp
 msgid "You need two functional legs to jump."
-msgstr ""
+msgstr "你需要双腿功能健全才能起跳。"
 
 #: src/iexamine.cpp
 msgid "Your steed cannot jump this far."
-msgstr ""
+msgstr "你的坐骑跳不了这么远。"
 
 #: src/iexamine.cpp
 msgid "You cannot jump from water."
-msgstr ""
+msgstr "你无法在水中起跳。"
 
 #: src/iexamine.cpp
 msgid "You can't jump in your current state!"
-msgstr ""
+msgstr "你当前的状态无法起跳！"
 
 #: src/iexamine.cpp
 msgid "You need to stand up in order to jump!"
-msgstr ""
+msgstr "你需要站起来才能起跳！"
 
 #: src/iexamine.cpp
 msgid "Do you really want to jump off the vehicle?"

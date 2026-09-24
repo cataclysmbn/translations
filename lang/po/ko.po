@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-23 22:15+0000\n"
+"POT-Creation-Date: 2026-09-24 00:48+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -129211,6 +129211,7 @@ msgstr "고등 보안 통합 전산화 은행"
 #: data/json/mapgen/bank.json data/json/mapgen/missile_silo.json
 #: data/json/mapgen/outpost.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/json/mapgen/microlab/microlab_special_tiles.json
 #: data/mods/Arcana_BN/overmap_and_mapgen/mapgen_variants.json
 msgid ""
@@ -130539,6 +130540,7 @@ msgstr "도서관 입구"
 #: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level_ice.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
 #: data/json/mapgen/lab/lab_modular/lab_central_hallway.json
 #: data/json/mapgen/lab/lab_modular/lab_health_clinic.json
@@ -130553,6 +130555,7 @@ msgstr "출입구 잠금 해제"
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_1side.json
 #: data/json/mapgen/lab/lab_floorplans_1side_ice.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/mods/Aftershock/maps/lab_vehicle_track.json
 #: data/mods/Aftershock/maps/lab_weapons_range.json
 msgid "ENTER EMERGENCY OVERRIDE CODE"
@@ -130604,16 +130607,19 @@ msgstr "고위험 실험체 격리실"
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid "Sub-prime Contact Console"
 msgstr "서브-프라임 연락 콘솔"
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid "Toggle Portal"
 msgstr "포탈 토글"
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid "Activate Resonance Cascade"
 msgstr "대공명 활성화"
 
@@ -130673,6 +130679,21 @@ msgid ""
 msgstr ""
 "제한 구역\n"
 "인가된 인원 및 등록된 차량만 접근 가능. 촬영 금지. 인가 증명서를 준비하시오."
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+msgid "Bionic Vault"
+msgstr ""
+
+#. ~ Computer option
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+msgid "MANIFEST"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+msgid "Advanced PE012 Samples"
+msgstr ""
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
@@ -282623,21 +282644,6 @@ msgstr "수면부족으로 몸이 무너지면서 억누르고 있던 피로가 
 msgid "<npcname> collapses to the ground from exhaustion."
 msgstr "<npcname>(이)가 탈진해서 쓰러집니다."
 
-#: src/character.cpp
-#, c-format
-msgid "Your %s will be frostnipped in the next few hours."
-msgstr "몇 시간 내로 %s(이)가 동상에 걸릴 것입니다."
-
-#: src/character.cpp
-#, c-format
-msgid "Your %s will be frostbitten within the hour!"
-msgstr "한 시간 내로 %s(이)가 심한 동상에 걸릴 것입니다!"
-
-#: src/character.cpp
-#, c-format
-msgid "Your %s will be frostbitten any minute now!"
-msgstr "금방이라도 %s(이)가 심한 동상에 걸릴 것입니다!"
-
 #. ~ %s is bodypart
 #: src/character.cpp
 #, c-format
@@ -282675,14 +282681,6 @@ msgid "You feel your %s getting warm."
 msgstr "%s(이)가 약간 덥습니다."
 
 #: src/character.cpp
-msgid "Your shivering prevents you from sleeping."
-msgstr "온몸이 떨려서 잘 수 없습니다."
-
-#: src/character.cpp
-msgid "You are too cold.  Your frostbite prevents you from sleeping."
-msgstr "너무 춥습니다. 동상 때문에 잘 수 없습니다."
-
-#: src/character.cpp
 #, c-format
 msgid "The wind is making your %s feel quite cold."
 msgstr "바람에 %s(이)가 차갑습니다."
@@ -282699,6 +282697,29 @@ msgstr "바람이 아주 강합니다. %s에 바람을 충분히 막아줄 옷�
 msgid ""
 "Your clothing is not providing enough protection from the wind for your %s!"
 msgstr "지금 입고 있는 옷으로는 %s(이)가 바람에 닿지 않게 제대로 감싸지 못합니다!"
+
+#: src/character.cpp
+msgid "Your shivering prevents you from sleeping."
+msgstr "온몸이 떨려서 잘 수 없습니다."
+
+#: src/character.cpp
+msgid "You are too cold.  Your frostbite prevents you from sleeping."
+msgstr "너무 춥습니다. 동상 때문에 잘 수 없습니다."
+
+#: src/character.cpp
+#, c-format
+msgid "Your %s will be frostnipped in the next few hours."
+msgstr "몇 시간 내로 %s(이)가 동상에 걸릴 것입니다."
+
+#: src/character.cpp
+#, c-format
+msgid "Your %s will be frostbitten within the hour!"
+msgstr "한 시간 내로 %s(이)가 심한 동상에 걸릴 것입니다!"
+
+#: src/character.cpp
+#, c-format
+msgid "Your %s will be frostbitten any minute now!"
+msgstr "금방이라도 %s(이)가 심한 동상에 걸릴 것입니다!"
 
 #: src/character.cpp
 msgid "It is broken and must heal fully before it becomes functional again."

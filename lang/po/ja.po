@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-23 22:15+0000\n"
+"POT-Creation-Date: 2026-09-24 00:48+0000\n"
 "Last-Translator: 匿名小太郎, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -125220,6 +125220,7 @@ msgstr "国庫高セキュリティ統合電子バンク"
 #: data/json/mapgen/bank.json data/json/mapgen/missile_silo.json
 #: data/json/mapgen/outpost.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/json/mapgen/microlab/microlab_special_tiles.json
 #: data/mods/Arcana_BN/overmap_and_mapgen/mapgen_variants.json
 msgid ""
@@ -126546,6 +126547,7 @@ msgstr "図書室入口"
 #: data/json/mapgen/lab/lab_floorplans_1side_ice.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
 #: data/json/mapgen/lab/lab_floorplans_finale1level_ice.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/json/mapgen/lab/lab_modular/lab_1x1_security.json
 #: data/json/mapgen/lab/lab_modular/lab_central_hallway.json
 #: data/json/mapgen/lab/lab_modular/lab_health_clinic.json
@@ -126560,6 +126562,7 @@ msgstr "入口を解錠する"
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_1side.json
 #: data/json/mapgen/lab/lab_floorplans_1side_ice.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 #: data/mods/Aftershock/maps/lab_vehicle_track.json
 #: data/mods/Aftershock/maps/lab_weapons_range.json
 msgid "ENTER EMERGENCY OVERRIDE CODE"
@@ -126611,16 +126614,19 @@ msgstr "高リスク被験体収容"
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid "Sub-prime Contact Console"
 msgstr "劣悪な接触コンソール"
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid "Toggle Portal"
 msgstr "ポータルを起動する"
 
 #. ~ Computer option
 #: data/json/mapgen/lab/lab_floorplans_finale1level.json
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
 msgid "Activate Resonance Cascade"
 msgstr "共鳴カスケードを起動する"
 
@@ -126680,6 +126686,21 @@ msgid ""
 msgstr ""
 "立入禁止区域\n"
 "関係者及び登録車両以外立入禁止。撮影禁止。身分証明書をご用意ください。"
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+msgid "Bionic Vault"
+msgstr ""
+
+#. ~ Computer option
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+msgid "MANIFEST"
+msgstr ""
+
+#. ~ Computer name
+#: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
+msgid "Advanced PE012 Samples"
+msgstr ""
 
 #. ~ Computer name
 #: data/json/mapgen/lab/lab_central/nested_lab_central_core.json
@@ -274529,21 +274550,6 @@ msgstr "睡眠不足が限界を迎え、身体が崩れ落ちた。放置して
 msgid "<npcname> collapses to the ground from exhaustion."
 msgstr "<npcname>は疲弊して地面に倒れ込んだ。"
 
-#: src/character.cpp
-#, c-format
-msgid "Your %s will be frostnipped in the next few hours."
-msgstr "数時間後には、%sに霜焼けができそうだ。"
-
-#: src/character.cpp
-#, c-format
-msgid "Your %s will be frostbitten within the hour!"
-msgstr "このままだと1時間以内に%sが凍傷になる！"
-
-#: src/character.cpp
-#, c-format
-msgid "Your %s will be frostbitten any minute now!"
-msgstr "このままだと数分後に%sが凍傷になる！"
-
 #. ~ %s is bodypart
 #: src/character.cpp
 #, c-format
@@ -274581,14 +274587,6 @@ msgid "You feel your %s getting warm."
 msgstr "%sが少しだけ暑く感じる。"
 
 #: src/character.cpp
-msgid "Your shivering prevents you from sleeping."
-msgstr "震えが止まらず眠れない。"
-
-#: src/character.cpp
-msgid "You are too cold.  Your frostbite prevents you from sleeping."
-msgstr "寒すぎる。凍傷で眠れない。"
-
-#: src/character.cpp
 #, c-format
 msgid "The wind is making your %s feel quite cold."
 msgstr "%sに風が当たって非常に寒く感じる。"
@@ -274605,6 +274603,29 @@ msgstr "強風が吹いている。%sを寒さから守る為に、風を防げ�
 msgid ""
 "Your clothing is not providing enough protection from the wind for your %s!"
 msgstr "着用中の衣類では%sに当たる風を十分に防げない！"
+
+#: src/character.cpp
+msgid "Your shivering prevents you from sleeping."
+msgstr "震えが止まらず眠れない。"
+
+#: src/character.cpp
+msgid "You are too cold.  Your frostbite prevents you from sleeping."
+msgstr "寒すぎる。凍傷で眠れない。"
+
+#: src/character.cpp
+#, c-format
+msgid "Your %s will be frostnipped in the next few hours."
+msgstr "数時間後には、%sに霜焼けができそうだ。"
+
+#: src/character.cpp
+#, c-format
+msgid "Your %s will be frostbitten within the hour!"
+msgstr "このままだと1時間以内に%sが凍傷になる！"
+
+#: src/character.cpp
+#, c-format
+msgid "Your %s will be frostbitten any minute now!"
+msgstr "このままだと数分後に%sが凍傷になる！"
 
 #: src/character.cpp
 msgid "It is broken and must heal fully before it becomes functional again."
