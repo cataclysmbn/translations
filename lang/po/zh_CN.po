@@ -17,7 +17,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-24 00:48+0000\n"
+"POT-Creation-Date: 2026-09-26 09:17+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -159895,7 +159895,7 @@ msgid "You said you were building a house?"
 msgstr "你说你在建房子？"
 
 #: data/json/npcs/refugee_center/beggars/BEGGAR_2_Dino_Dave.json
-#: src/handle_action.cpp src/overmap_ui.cpp
+#: src/handle_action.cpp src/overmap/overmap_ui.cpp
 msgid "No."
 msgstr "否。"
 
@@ -275481,7 +275481,7 @@ msgstr ""
 "使用 <color_red>上/下按键</color> 查看历史记录。"
 
 #: src/construction.cpp src/crafting_gui.cpp src/newcharacter.cpp
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Search:"
 msgstr "搜索："
 
@@ -281348,7 +281348,7 @@ msgstr "移动区域。"
 msgid "< <color_green>Look Around</color> >"
 msgstr "< <color_green>观察四周</color> >"
 
-#: src/game.cpp src/overmap_ui.cpp
+#: src/game.cpp src/overmap/overmap_ui.cpp
 #, c-format
 msgid "%s - %s"
 msgstr "%s - %s"
@@ -283967,7 +283967,7 @@ msgstr "不能在骑乘时睡觉。"
 msgid "<color_white>Are you sure you want to sleep?</color>"
 msgstr "<color_white>真的要睡觉吗？</color>"
 
-#: src/handle_action.cpp src/iuse.cpp src/overmap_ui.cpp
+#: src/handle_action.cpp src/iuse.cpp src/overmap/overmap_ui.cpp
 msgid "Yes."
 msgstr "是。"
 
@@ -293420,7 +293420,8 @@ msgstr "你已经在抽 %s 了！"
 msgid "Ugh, too much %s… you feel nasty."
 msgstr "啊，%s太多了……你感到有点作呕。"
 
-#: src/iuse_actor.cpp src/npctalk.cpp src/options.cpp src/overmap_ui.cpp
+#: src/iuse_actor.cpp src/npctalk.cpp src/options.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "%s"
 msgstr "%s"
@@ -295993,7 +295994,7 @@ msgstr "选择游戏语言"
 msgid "N    "
 msgstr "N    "
 
-#: src/line.cpp src/overmap.cpp
+#: src/line.cpp src/overmap/overmap.cpp
 msgid "north"
 msgstr "北"
 
@@ -296009,7 +296010,7 @@ msgstr "东北"
 msgid "E    "
 msgstr "E    "
 
-#: src/line.cpp src/overmap.cpp
+#: src/line.cpp src/overmap/overmap.cpp
 msgid "east"
 msgstr "东"
 
@@ -296025,7 +296026,7 @@ msgstr "东南"
 msgid "S    "
 msgstr "S    "
 
-#: src/line.cpp src/overmap.cpp
+#: src/line.cpp src/overmap/overmap.cpp
 msgid "south"
 msgstr "南"
 
@@ -296041,7 +296042,7 @@ msgstr "西南"
 msgid "W    "
 msgstr "W    "
 
-#: src/line.cpp src/overmap.cpp
+#: src/line.cpp src/overmap/overmap.cpp
 msgid "west"
 msgstr "西"
 
@@ -308367,10 +308368,8 @@ msgid "Activity Boost"
 msgstr "活动性能提升"
 
 #: src/options.cpp
-msgid ""
-"Skip expensive processing while the player does activities ( slow path only "
-")."
-msgstr "在玩家进行活动时跳过高开销处理（仅限慢速路径）。"
+msgid "Skip expensive processing while the player does activities."
+msgstr "在玩家执行活动期间，跳过高资源开销的计算处理。"
 
 #: src/options.cpp
 msgid "Skip Activity Visibility Calculations"
@@ -308387,24 +308386,25 @@ msgid "Skip Vehicle Movement"
 msgstr "跳过载具移动"
 
 #: src/options.cpp
-msgid "Turns off vehicle movement and autodrive while sleeping"
-msgstr "睡眠时关闭载具移动和自动驾驶功能。"
+msgid ""
+"Turns off vehicle movement and autodrive while sleeping ( slow path only )"
+msgstr "睡眠时关闭车辆移动与自动驾驶（仅限慢速路径）"
 
 #: src/options.cpp
 msgid "Skip Sound Processing On Sleep"
 msgstr "睡眠时跳过声音处理"
 
 #: src/options.cpp
-msgid "Sounds are not processed while sleeping"
-msgstr "睡眠时不进行声音处理。"
+msgid "Sounds are not processed while sleeping ( slow path only )"
+msgstr "睡眠时不处理声音（仅限慢速路径）"
 
 #: src/options.cpp
 msgid "Skip Monster Movement"
 msgstr "跳过怪物移动"
 
 #: src/options.cpp
-msgid "Monsters do not move while the player is sleeping"
-msgstr "玩家睡眠时怪物不会移动。"
+msgid "Monsters do not move while the player is sleeping ( slow path only )"
+msgstr "玩家睡眠时怪物不会移动（仅限慢速路径）"
 
 #: src/options.cpp
 msgid "Skip NPC Movement"
@@ -308414,10 +308414,37 @@ msgstr "跳过 NPC 移动"
 msgid ""
 "NPCs are forced to sleep alongside the player, skipping movement but still "
 "processing rest recovery (fatigue reduction, healing, etc.).  NPCs with non-"
-"interruptible activities (e.g. surgery) are frozen for the turn instead."
+"interruptible activities (e.g. surgery) are frozen for the turn instead. ( "
+"slow path only )"
 msgstr ""
-"强制 NPC 与玩家一同睡眠，跳过移动过程，但仍会处理休息恢复（降低疲劳、治疗等）。正在进行不可中断活动（如外科手术）的 NPC "
-"会在该回合被冻结（暂停行动）。"
+"强制 NPC 与玩家一同入睡，跳过移动，但仍会计算休息恢复（缓解疲劳、伤势愈合等）。正在进行不可中断活动（如手术）的 NPC "
+"则会在该回合被冻结。（仅限慢速路径）"
+
+#: src/options.cpp
+msgid "Skip Activity Sounds Calculations"
+msgstr "活动期间跳过声音计算"
+
+#: src/options.cpp
+msgid "Turns caclculation of sound on or off during activity skip"
+msgstr "开启或关闭活动跳过期间的声音计算。"
+
+#: src/options.cpp
+msgid "Skip Activity Monster Calculations"
+msgstr "活动期间跳过怪物计算"
+
+#: src/options.cpp
+msgid "Turns caclculation of monsters on or off during activity skip"
+msgstr "开启或关闭活动跳过期间的怪物行为计算。"
+
+#: src/options.cpp
+msgid "Skip Activity NPC Calculations"
+msgstr "活动期间跳过 NPC 计算"
+
+#: src/options.cpp
+msgid ""
+"During activity skip disables NPC logic other then doing activities and "
+"processing items"
+msgstr "在活动跳过期间，禁用除执行活动及处理物品之外的所有 NPC 逻辑。"
 
 #: src/options.cpp
 msgid "Monster LOD"
@@ -310298,18 +310325,18 @@ msgstr " > "
 msgid "$%.2f"
 msgstr "$%.2f"
 
-#: src/overmap.cpp src/skill.cpp
+#: src/overmap/overmap.cpp src/skill.cpp
 msgid "invalid"
 msgstr "无效"
 
-#: src/overmap.cpp
+#: src/overmap/overmap.cpp
 #, c-format
 msgid ""
 "This is automated emergency shelter beacon %d%d.  Supplies, amenities and "
 "shelter are stocked."
 msgstr "这是自动应急避难所信标 %d%d。补给，设施，避难所被储存。"
 
-#: src/overmap.cpp
+#: src/overmap/overmap.cpp
 #, c-format
 msgid ""
 "This is FEMA camp %d%d.  Supplies are limited, please bring supplemental "
@@ -310317,60 +310344,58 @@ msgid ""
 "emergency shelter."
 msgstr "这是联邦应急管理局营地 %d%d。供应有限，请自行携带食物、水和床上用品。这是联邦应急管理局营地 %d%d。一个官方的长期应急避难所。"
 
-#: src/overmap.cpp
+#: src/overmap/overmap.cpp
 msgid ""
 "If you can hear this message, the probe to 021XC is functioning correctly."
 msgstr "如果你能听到这条信息，通向021XC的探测器工作正常"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Note preview"
 msgstr "备注预览"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Really delete note?"
 msgstr "真的删除备注？"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Yes, and don't ask again."
 msgstr "是的，不要再次询问。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Mark area as dangerous ( to avoid on automove paths? )"
 msgstr "将区域标记为危险区（避免出现在自动移动路径上？）"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Danger radius in overmap squares? ( 0-20 )"
 msgstr "大地图中的危险区域半径？（0-20）"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Remove dangerous mark?"
 msgstr "移除危险区标记？"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid ""
 "<%s> - center on note, <%s> - edit note, <%s> - mark as dangerous, <%s> - "
 "delete note, <%s> - close window"
 msgstr "<%s>-以备注为中心，<%s>-编辑备注，<%s>-标记危险区，<%s>-删除备注，<%s>-关闭窗口"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgctxt "Sorted by:"
 msgid "name"
 msgstr "名称"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgctxt "Sorted by:"
 msgid "distance"
 msgstr "距离"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgctxt "Sorted by:"
 msgid "symbol"
 msgstr "符号"
 
-#. ~ %1$d is total number of notes, %2$s is hotkey for sorting, %3$s is sort
-#. criterion
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "Map notes (%1$d)     [%2$s] Sorted by: %3$s"
 msgstr "地图标记 (%1$d)     [%2$s] 排序： %3$s"
@@ -310380,12 +310405,12 @@ msgstr "地图标记 (%1$d)     [%2$s] 排序： %3$s"
 #. ~ English uses D for Danger, but it's acceptable to leave it untranslated
 #. ~ or use some special symbol instead (e.g. exclamation mark)
 #. ~ if you're having trouble making it look nice in your language.
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgctxt "danger indicator"
 msgid " D"
 msgstr " D"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid ""
 "<color_red>LEVEL %i, %s</color>: %s (Distance: <color_white>%d %s</color>) "
@@ -310394,100 +310419,100 @@ msgstr ""
 "<color_red>高度 %i, %s</color>: %s (距离：<color_white>%d %s</color>) "
 "<color_red>%s</color>"
 
-#: src/overmap_ui.cpp src/sdltiles.cpp
+#: src/overmap/overmap_ui.cpp src/sdltiles.cpp
 msgid "DANGEROUS AREA!"
 msgstr "危险区域！"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Zone:"
 msgstr "区域："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "# Unexplored"
 msgstr "#未探索"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "# Weather unknown"
 msgstr "#未知天气"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "oter: %s (rot %d)"
 msgstr "大地图地形：%s（旋转 %d）"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "oter_type: %s"
 msgstr "大地图地形类型：%s"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "join %s: %s"
 msgstr "加入 %s：%s"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "args not yet set"
 msgstr "参数尚未设置"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Distance to active mission:"
 msgstr "距离当前任务目标："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "%d tiles"
 msgstr "%d 格"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Above us"
 msgstr "在我们上面"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Below us"
 msgstr "在我们下面"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Use movement keys to pan."
 msgstr "使用方向键平移地图。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Press W to preview route."
 msgstr "按 W 预览路线。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Press again to confirm."
 msgstr "再次按键确认。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "LEVEL %i, %s"
 msgstr "高度 %i, %s"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Color codes: "
 msgstr "颜色代码："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Type <color_white>COLOR;TEXT</color> to set a custom color."
 msgstr "输入 <color_white>颜色;文本</color> 以设置自定义颜色。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Type <color_white>GLYPH:TEXT</color> to set a custom glyph."
 msgstr "输入 <color_white>符号:文本</color> 以设置自定义符号。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Type <color_white>SPRITE:TILE_ID</color> to set a custom sprite."
 msgstr "输入 <color_white>贴图:图块ID</color> 以设置自定义贴图。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Type <color_white>LABEL:TEXT</color> to set a custom label."
 msgstr "输入 <color_white>标签:文本</color> 以设置自定义标签。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Use <color_white>;</color> as a separator to combine elements."
 msgstr "使用 <color_white>;</color> 作为分隔符来组合元素。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid ""
 "Examples: <color_white>$:Bank</color> | <color_white>R;Red</color> | "
 "<color_white>SPRITE:toolbox</color> | <color_white>LABEL:Survivor "
@@ -310496,196 +310521,201 @@ msgstr ""
 "示例：<color_white>$:银行</color> | <color_white>R;红色</color> | "
 "<color_white>SPRITE:toolbox</color> | <color_white>LABEL:幸存者城市</color>"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Note:"
 msgstr "备注："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Search term:"
 msgstr "搜索词："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid ""
 "Multiple entries separated with comma (,). Excludes starting with hyphen "
 "(-)."
 msgstr "使用\",\"以分隔各项，使用\"-\"以排除该项。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "No results found."
 msgstr "未找到结果。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Next result"
 msgstr "下一结果"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Previous result"
 msgstr "上一结果"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Result:"
 msgstr "结果："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Results:"
 msgstr "结果："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Direction:"
 msgstr "方向："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid ""
 "Press [<color_yellow>%s</color>] or [<color_yellow>%s</color>] to cycle "
 "through search results."
 msgstr "按 [<color_yellow>%s</color>] 或 [<color_yellow>%s</color>] 浏览搜索结果。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "Press [<color_yellow>%s</color>] to confirm."
 msgstr "按 [<color_yellow>%s</color>] 确认。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "Press [<color_yellow>%s</color>] to quit."
 msgstr "按 [<color_yellow>%s</color>] 退出。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Select terrain to place:"
 msgstr "选择要放置的地形："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "sym: [ %s %s ], color: [ %s %s], name: [ %s ], id: [ %s ]"
 msgstr "符号：[%s%s]，颜色：[%s%s]，名称：[%s]，id：[%s]"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Select special to place:"
 msgstr "选择要放置的特殊地形："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Place overmap terrain:"
 msgstr "放置地形："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Place overmap special:"
 msgstr "放置特殊地形："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "Rotation: %s %s"
 msgstr "旋转：%s  %s"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "(fixed)"
 msgstr "（固定）"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Areas highlighted in red"
 msgstr "红色高亮区域"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "already have map content"
 msgstr "已有地图内容"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "generated. Their overmap"
 msgstr "。其地图ID会"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "id will change, but not"
 msgstr "重置但是内容"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "their contents."
 msgstr "不会改变。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "[%s] Rotate"
 msgstr "旋转 [%s]"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "[%s] Apply"
 msgstr "使用 [%s]"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "[ESCAPE/Q] Cancel"
 msgstr "取消 [Esc/Q]"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "No overmap special args at this location."
 msgstr "此位置上沒有特殊地点參數。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Overmap special args at this location have already been set."
 msgstr "该位置的特殊地点參數已经设置。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "No overmap special at this location from which to fetch parameters."
 msgstr "该位置没有特殊地点，无法从中获取参数。"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "Select value for mapgen argument %s: "
 msgstr "选择地图生成参数 %s 的值："
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid ""
 "You are overburdened, are you sure you want to travel (it may be painful)?"
 msgstr "你已经超重了，真的要旅行吗（可能造成疼痛）？"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "You are in a vehicle but not driving.  Are you sure you want to walk?"
 msgstr "你已在载具中但未驾驶，确定要走过去吗？"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Drive to this point?"
 msgstr "驾驶到该地点？"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Travel to this point?"
 msgstr "旅行到该地点？"
 
-#: src/overmapbuffer.cpp
+#: src/overmap/overmapbuffer.cpp
 msgid "Please wait..."
 msgstr "请稍等…"
 
 #. ~ First parameter is a terrain name, second parameter is a direction, and
-#. third parameter is a city name.
-#: src/overmapbuffer.cpp
+#. third parameter is a
+#. city name.
+#: src/overmap/overmapbuffer.cpp
 #, c-format
 msgctxt "terrain description"
 msgid "%1$s %2$s from %3$s"
 msgstr "位于 %3$s 城%2$s方的 %1$s"
 
 #. ~ First parameter is a terrain name, second parameter is a direction, and
-#. third parameter is a city name.
-#: src/overmapbuffer.cpp
+#. third
+#. parameter is a city name.
+#: src/overmap/overmapbuffer.cpp
 msgctxt "terrain description"
 msgid "%1$s in central %3$s"
 msgstr "位于 %3$s 城中心的 %1$s"
 
 #. ~ First parameter is a terrain name, second parameter is a direction, and
-#. third parameter is a city name.
-#: src/overmapbuffer.cpp
+#. third
+#. parameter is a city name.
+#: src/overmap/overmapbuffer.cpp
 #, c-format
 msgctxt "terrain description"
 msgid "%1$s in %2$s %3$s"
 msgstr "位于 %3$s 城%2$s的 %1$s"
 
 #. ~ First parameter is a terrain name, second parameter is a direction, and
-#. third parameter is a city name.
-#: src/overmapbuffer.cpp
+#. third
+#. parameter is a city name.
+#: src/overmap/overmapbuffer.cpp
 msgctxt "terrain description"
 msgid "%1$s in %3$s"
 msgstr "位于 %3$s 城的 %1$s"
 
 #. ~ First parameter is a terrain name, second parameter is a direction, and
-#. third parameter is a city name.
-#: src/overmapbuffer.cpp
+#. third
+#. parameter is a city name.
+#: src/overmap/overmapbuffer.cpp
 #, c-format
 msgctxt "terrain description"
 msgid "%1$s on the %2$s outskirts of %3$s"

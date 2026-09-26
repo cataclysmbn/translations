@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-24 00:48+0000\n"
+"POT-Creation-Date: 2026-09-26 09:17+0000\n"
 "Last-Translator: Arif Öcal, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -186288,7 +186288,7 @@ msgid "You said you were building a house?"
 msgstr "Bir ev inşa ettiğini mi söyledin?"
 
 #: data/json/npcs/refugee_center/beggars/BEGGAR_2_Dino_Dave.json
-#: src/handle_action.cpp src/overmap_ui.cpp
+#: src/handle_action.cpp src/overmap/overmap_ui.cpp
 msgid "No."
 msgstr "Hayır."
 
@@ -314660,7 +314660,7 @@ msgstr ""
 "Arama geçmişinizde gezinmek için <color_red>yukarı/aşağı ok</color> kullanın."
 
 #: src/construction.cpp src/crafting_gui.cpp src/newcharacter.cpp
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Search:"
 msgstr "Ara:"
 
@@ -320549,7 +320549,7 @@ msgstr "Bölgeyi taşı."
 msgid "< <color_green>Look Around</color> >"
 msgstr "< <color_green>Etrafına Bak</color> >"
 
-#: src/game.cpp src/overmap_ui.cpp
+#: src/game.cpp src/overmap/overmap_ui.cpp
 #, c-format
 msgid "%s - %s"
 msgstr "%s - %s"
@@ -323241,7 +323241,7 @@ msgstr "Binek üzerindeyken uyuyamazsınız."
 msgid "<color_white>Are you sure you want to sleep?</color>"
 msgstr "<color_white>Uyumak istediğinizden emin misiniz?</color>"
 
-#: src/handle_action.cpp src/iuse.cpp src/overmap_ui.cpp
+#: src/handle_action.cpp src/iuse.cpp src/overmap/overmap_ui.cpp
 msgid "Yes."
 msgstr "Evet."
 
@@ -332987,7 +332987,8 @@ msgstr "Zaten bir %s içiyorsun!"
 msgid "Ugh, too much %s… you feel nasty."
 msgstr "Off, çok fazla %s… kendini kötü hissediyorsun."
 
-#: src/iuse_actor.cpp src/npctalk.cpp src/options.cpp src/overmap_ui.cpp
+#: src/iuse_actor.cpp src/npctalk.cpp src/options.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "%s"
 msgstr "%s"
@@ -335616,7 +335617,7 @@ msgstr "Dil seçin"
 msgid "N    "
 msgstr "K"
 
-#: src/line.cpp src/overmap.cpp
+#: src/line.cpp src/overmap/overmap.cpp
 msgid "north"
 msgstr "kuzey"
 
@@ -335632,7 +335633,7 @@ msgstr "kuzeydoğu"
 msgid "E    "
 msgstr "D"
 
-#: src/line.cpp src/overmap.cpp
+#: src/line.cpp src/overmap/overmap.cpp
 msgid "east"
 msgstr "doğu"
 
@@ -335648,7 +335649,7 @@ msgstr "güneydoğu"
 msgid "S    "
 msgstr "G"
 
-#: src/line.cpp src/overmap.cpp
+#: src/line.cpp src/overmap/overmap.cpp
 msgid "south"
 msgstr "güney"
 
@@ -335664,7 +335665,7 @@ msgstr "güneybatı"
 msgid "W    "
 msgstr "B"
 
-#: src/line.cpp src/overmap.cpp
+#: src/line.cpp src/overmap/overmap.cpp
 msgid "west"
 msgstr "batı"
 
@@ -348372,9 +348373,7 @@ msgid "Activity Boost"
 msgstr ""
 
 #: src/options.cpp
-msgid ""
-"Skip expensive processing while the player does activities ( slow path only "
-")."
+msgid "Skip expensive processing while the player does activities."
 msgstr ""
 
 #: src/options.cpp
@@ -348392,24 +348391,25 @@ msgid "Skip Vehicle Movement"
 msgstr "Araç Hareketini Atla"
 
 #: src/options.cpp
-msgid "Turns off vehicle movement and autodrive while sleeping"
-msgstr "Uyurken araç hareketini ve otomatik sürüşü kapatır"
+msgid ""
+"Turns off vehicle movement and autodrive while sleeping ( slow path only )"
+msgstr ""
 
 #: src/options.cpp
 msgid "Skip Sound Processing On Sleep"
 msgstr "Uyurken Ses İşlemeyi Atla"
 
 #: src/options.cpp
-msgid "Sounds are not processed while sleeping"
-msgstr "Uyurken sesler işlenmez"
+msgid "Sounds are not processed while sleeping ( slow path only )"
+msgstr ""
 
 #: src/options.cpp
 msgid "Skip Monster Movement"
 msgstr "Canavar Hareketini Atla"
 
 #: src/options.cpp
-msgid "Monsters do not move while the player is sleeping"
-msgstr "Oyuncu uyurken canavarlar hareket etmez"
+msgid "Monsters do not move while the player is sleeping ( slow path only )"
+msgstr ""
 
 #: src/options.cpp
 msgid "Skip NPC Movement"
@@ -348419,12 +348419,35 @@ msgstr "NPC Hareketini Atla"
 msgid ""
 "NPCs are forced to sleep alongside the player, skipping movement but still "
 "processing rest recovery (fatigue reduction, healing, etc.).  NPCs with non-"
-"interruptible activities (e.g. surgery) are frozen for the turn instead."
+"interruptible activities (e.g. surgery) are frozen for the turn instead. ( "
+"slow path only )"
 msgstr ""
-"NPC'ler, hareketi atlayarak ancak dinlenme iyileşmesini (yorgunluk azaltma, "
-"iyileşme vb.) işlemeye devam ederek oyuncunun yanında uyumaya zorlanır. "
-"Kesintiye uğramayan aktiviteleri olan NPC'ler (örneğin cerrahi) bunun yerine"
-" tur için dondurulur."
+
+#: src/options.cpp
+msgid "Skip Activity Sounds Calculations"
+msgstr ""
+
+#: src/options.cpp
+msgid "Turns caclculation of sound on or off during activity skip"
+msgstr ""
+
+#: src/options.cpp
+msgid "Skip Activity Monster Calculations"
+msgstr ""
+
+#: src/options.cpp
+msgid "Turns caclculation of monsters on or off during activity skip"
+msgstr ""
+
+#: src/options.cpp
+msgid "Skip Activity NPC Calculations"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"During activity skip disables NPC logic other then doing activities and "
+"processing items"
+msgstr ""
 
 #: src/options.cpp
 msgid "Monster LOD"
@@ -350446,11 +350469,11 @@ msgstr ">"
 msgid "$%.2f"
 msgstr "$%.2f"
 
-#: src/overmap.cpp src/skill.cpp
+#: src/overmap/overmap.cpp src/skill.cpp
 msgid "invalid"
 msgstr "geçersiz"
 
-#: src/overmap.cpp
+#: src/overmap/overmap.cpp
 #, c-format
 msgid ""
 "This is automated emergency shelter beacon %d%d.  Supplies, amenities and "
@@ -350459,7 +350482,7 @@ msgstr ""
 "Bu otomatik acil durum barınağı işaretçisi %d%d.  Malzemeler, olanaklar ve "
 "barınak stoklanmıştır."
 
-#: src/overmap.cpp
+#: src/overmap/overmap.cpp
 #, c-format
 msgid ""
 "This is FEMA camp %d%d.  Supplies are limited, please bring supplemental "
@@ -350470,40 +350493,40 @@ msgstr ""
 "getirin.  Bu FEMA kampı %d%d.  Uzun süreli acil durum barınağı olarak "
 "belirlenmiştir."
 
-#: src/overmap.cpp
+#: src/overmap/overmap.cpp
 msgid ""
 "If you can hear this message, the probe to 021XC is functioning correctly."
 msgstr ""
 "Bu mesajı duyabiliyorsanız, 021XC'ye gönderilen sonda düzgün çalışıyor "
 "demektir."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Note preview"
 msgstr "Not önizlemesi"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Really delete note?"
 msgstr "Notu gerçekten silmek istiyor musunuz?"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Yes, and don't ask again."
 msgstr "Evet, bir daha sorma."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Mark area as dangerous ( to avoid on automove paths? )"
 msgstr ""
 "Alanı tehlikeli olarak işaretle (otomatik hareket yollarında kaçınılacak "
 "mı?)"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Danger radius in overmap squares? ( 0-20 )"
 msgstr "Tehlike yarıçapı harita karelerinde mi? ( 0-20 )"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Remove dangerous mark?"
 msgstr "Tehlikeli işareti kaldır?"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid ""
 "<%s> - center on note, <%s> - edit note, <%s> - mark as dangerous, <%s> - "
@@ -350512,24 +350535,22 @@ msgstr ""
 "<%s> - notun merkezine git, <%s> - notu düzenle, <%s> - tehlikeli olarak "
 "işaretle, <%s> - notu sil, <%s> - pencereyi kapat"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgctxt "Sorted by:"
 msgid "name"
 msgstr "isim"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgctxt "Sorted by:"
 msgid "distance"
 msgstr "mesafe"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgctxt "Sorted by:"
 msgid "symbol"
 msgstr "sembol"
 
-#. ~ %1$d is total number of notes, %2$s is hotkey for sorting, %3$s is sort
-#. criterion
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "Map notes (%1$d)     [%2$s] Sorted by: %3$s"
 msgstr "Harita notları (%1$d)     [%2$s] Sıralama: %3$s"
@@ -350539,12 +350560,12 @@ msgstr "Harita notları (%1$d)     [%2$s] Sıralama: %3$s"
 #. ~ English uses D for Danger, but it's acceptable to leave it untranslated
 #. ~ or use some special symbol instead (e.g. exclamation mark)
 #. ~ if you're having trouble making it look nice in your language.
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgctxt "danger indicator"
 msgid " D"
 msgstr "D"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid ""
 "<color_red>LEVEL %i, %s</color>: %s (Distance: <color_white>%d %s</color>) "
@@ -350553,146 +350574,146 @@ msgstr ""
 "<color_red>SEVİYE %i, %s</color>: %s (Mesafe: <color_white>%d %s</color>) "
 "<color_red>%s</color>"
 
-#: src/overmap_ui.cpp src/sdltiles.cpp
+#: src/overmap/overmap_ui.cpp src/sdltiles.cpp
 msgid "DANGEROUS AREA!"
 msgstr "TEHLİKELİ BÖLGE!"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Zone:"
 msgstr "Bölge:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "# Unexplored"
 msgstr "# Keşfedilmemiş"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "# Weather unknown"
 msgstr "# Hava durumu bilinmiyor"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "oter: %s (rot %d)"
 msgstr "oter: %s (rot %d)"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "oter_type: %s"
 msgstr "oter_tipi: %s"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "join %s: %s"
 msgstr "katıl %s: %s"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "args not yet set"
 msgstr "argümanlar henüz ayarlanmadı"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Distance to active mission:"
 msgstr "Aktif göreve uzaklık:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "%d tiles"
 msgstr "%d kare"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Above us"
 msgstr "Üstümüzde"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Below us"
 msgstr "Altımızda"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Use movement keys to pan."
 msgstr "Kaydırmak için hareket tuşlarını kullanın."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Press W to preview route."
 msgstr "Rotayı önizlemek için W'ye basın."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Press again to confirm."
 msgstr "Onaylamak için tekrar basın."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "LEVEL %i, %s"
 msgstr "SEVİYE %i, %s"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Color codes: "
 msgstr "Renk kodları:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Type <color_white>COLOR;TEXT</color> to set a custom color."
 msgstr ""
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Type <color_white>GLYPH:TEXT</color> to set a custom glyph."
 msgstr ""
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Type <color_white>SPRITE:TILE_ID</color> to set a custom sprite."
 msgstr ""
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Type <color_white>LABEL:TEXT</color> to set a custom label."
 msgstr ""
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Use <color_white>;</color> as a separator to combine elements."
 msgstr ""
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid ""
 "Examples: <color_white>$:Bank</color> | <color_white>R;Red</color> | "
 "<color_white>SPRITE:toolbox</color> | <color_white>LABEL:Survivor "
 "City</color>"
 msgstr ""
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Note:"
 msgstr "Not:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Search term:"
 msgstr "Arama terimi:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid ""
 "Multiple entries separated with comma (,). Excludes starting with hyphen "
 "(-)."
 msgstr ""
 "Virgülle (,) ayrılmış birden fazla giriş. Tire (-) ile başlayanlar hariç."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "No results found."
 msgstr "Sonuç bulunamadı."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Next result"
 msgstr "Sonraki sonuç"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Previous result"
 msgstr "Önceki sonuç"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Result:"
 msgstr "Sonuç:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Results:"
 msgstr "Sonuçlar:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Direction:"
 msgstr "Yön:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid ""
 "Press [<color_yellow>%s</color>] or [<color_yellow>%s</color>] to cycle "
@@ -350701,154 +350722,159 @@ msgstr ""
 "Arama sonuçları arasında gezinmek için [<color_yellow>%s</color>] veya "
 "[<color_yellow>%s</color>] tuşlarına basın."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "Press [<color_yellow>%s</color>] to confirm."
 msgstr "Onaylamak için [<color_yellow>%s</color>] tuşlarına basın."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "Press [<color_yellow>%s</color>] to quit."
 msgstr "Çıkmak için [<color_yellow>%s</color>] tuşlarına basın."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Select terrain to place:"
 msgstr "Yerleştirmek için arazi seçin:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "sym: [ %s %s ], color: [ %s %s], name: [ %s ], id: [ %s ]"
 msgstr "sembol: [ %s %s ], renk: [ %s %s], ad: [ %s ], id: [ %s ]"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Select special to place:"
 msgstr "Yerleştirmek için özel seçin:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Place overmap terrain:"
 msgstr "Üst harita arazisini yerleştir:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Place overmap special:"
 msgstr "Özel üst harita yerleştir:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "Rotation: %s %s"
 msgstr "Dönüş: %s %s"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "(fixed)"
 msgstr "(sabit)"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Areas highlighted in red"
 msgstr "Kırmızı renkle vurgulanan alanlar"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "already have map content"
 msgstr "zaten harita içeriğine sahip"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "generated. Their overmap"
 msgstr "olarak oluşturulmuş. Üst harita"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "id will change, but not"
 msgstr "kimliği değişecek, ancak"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "their contents."
 msgstr "içerikleri değişmeyecek."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "[%s] Rotate"
 msgstr "[%s] Döndür"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "[%s] Apply"
 msgstr "[%s] Uygula"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "[ESCAPE/Q] Cancel"
 msgstr "[ESCAPE/Q] İptal"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "No overmap special args at this location."
 msgstr "Bu konumda özel bir harita argümanı yok."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Overmap special args at this location have already been set."
 msgstr "Bu konumdaki özel harita argümanları zaten ayarlanmış."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "No overmap special at this location from which to fetch parameters."
 msgstr "Parametreleri almak için bu konumda özel bir harita yok."
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 #, c-format
 msgid "Select value for mapgen argument %s: "
 msgstr "Harita oluşturma argümanı için değer seçin %s:"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid ""
 "You are overburdened, are you sure you want to travel (it may be painful)?"
 msgstr ""
 "Aşırı yüklüsünüz, seyahat etmek istediğinizden emin misiniz (acı verici "
 "olabilir)?"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "You are in a vehicle but not driving.  Are you sure you want to walk?"
 msgstr ""
 "Bir araçtasınız ama sürmüyorsunuz. Yürümek istediğinizden emin misiniz?"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Drive to this point?"
 msgstr "Bu noktaya sür?"
 
-#: src/overmap_ui.cpp
+#: src/overmap/overmap_ui.cpp
 msgid "Travel to this point?"
 msgstr "Bu noktaya seyahat et?"
 
-#: src/overmapbuffer.cpp
+#: src/overmap/overmapbuffer.cpp
 msgid "Please wait..."
 msgstr "Lütfen bekleyin..."
 
 #. ~ First parameter is a terrain name, second parameter is a direction, and
-#. third parameter is a city name.
-#: src/overmapbuffer.cpp
+#. third parameter is a
+#. city name.
+#: src/overmap/overmapbuffer.cpp
 #, c-format
 msgctxt "terrain description"
 msgid "%1$s %2$s from %3$s"
 msgstr "%3$s'den %1$s %2$s"
 
 #. ~ First parameter is a terrain name, second parameter is a direction, and
-#. third parameter is a city name.
-#: src/overmapbuffer.cpp
+#. third
+#. parameter is a city name.
+#: src/overmap/overmapbuffer.cpp
 msgctxt "terrain description"
 msgid "%1$s in central %3$s"
 msgstr "merkezi %3$s'de %1$s"
 
 #. ~ First parameter is a terrain name, second parameter is a direction, and
-#. third parameter is a city name.
-#: src/overmapbuffer.cpp
+#. third
+#. parameter is a city name.
+#: src/overmap/overmapbuffer.cpp
 #, c-format
 msgctxt "terrain description"
 msgid "%1$s in %2$s %3$s"
 msgstr "%2$s %3$s'de %1$s"
 
 #. ~ First parameter is a terrain name, second parameter is a direction, and
-#. third parameter is a city name.
-#: src/overmapbuffer.cpp
+#. third
+#. parameter is a city name.
+#: src/overmap/overmapbuffer.cpp
 msgctxt "terrain description"
 msgid "%1$s in %3$s"
 msgstr "%3$s'de %1$s"
 
 #. ~ First parameter is a terrain name, second parameter is a direction, and
-#. third parameter is a city name.
-#: src/overmapbuffer.cpp
+#. third
+#. parameter is a city name.
+#: src/overmap/overmapbuffer.cpp
 #, c-format
 msgctxt "terrain description"
 msgid "%1$s on the %2$s outskirts of %3$s"
