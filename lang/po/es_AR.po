@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-30 18:06+0000\n"
+"POT-Creation-Date: 2026-10-01 05:33+0000\n"
 "Last-Translator: Illusion, 2026\n"
 "Language-Team: Spanish (Argentina) (https://app.transifex.com/bn-team/teams/113585/es_AR/)\n"
 "MIME-Version: 1.0\n"
@@ -10650,6 +10650,17 @@ msgid ""
 msgstr ""
 "Estás bajo los efectos de sustancias analgésicas para aliviar el dolor, pero"
 " te pueden adormecer un poco."
+
+#: data/json/effects.json
+msgid "Lactase Supplement"
+msgstr ""
+
+#. ~ Description of effect 'Lactase Supplement'.
+#: data/json/effects.json
+msgid ""
+"You have taken a lactase supplement and will not suffer the effects of "
+"lactose intolerance."
+msgstr ""
 
 #: data/json/effects.json
 msgid "Happy"
@@ -60667,6 +60678,7 @@ msgstr[2] ""
 #. ~ Description for {'str': 'broken M16A4 TALON'}
 #. ~ Description for {'str': 'broken M202A1 TALON'}
 #. ~ Description for {'str': 'broken M249 TALON'}
+#. ~ Description for {'str': 'broken M2HB TALON'}
 #: data/json/items/generic.json
 msgid ""
 "A broken TALON UGV, with its casing broken and fluid drained.  Could be "
@@ -60737,6 +60749,13 @@ msgstr[2] "M202A1 TALON rotos"
 #: data/json/items/generic.json
 msgid "broken M249 TALON"
 msgid_plural "broken M249 TALONs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: data/json/items/generic.json
+msgid "broken M2HB TALON"
+msgid_plural "broken M2HB TALONs"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -103535,6 +103554,26 @@ msgid ""
 msgstr ""
 
 #: data/json/items/comestibles/med.json
+msgid "Lactaid"
+msgid_plural "Lactaids"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Use action activation_message for {'str': 'Lactaid'}.
+#: data/json/items/comestibles/med.json
+msgid "You take some lactaid."
+msgstr ""
+
+#. ~ Description for {'str': 'Lactaid'}
+#: data/json/items/comestibles/med.json
+msgid ""
+"Capsules containing lactase, an enzyme essential to the digestion of milk "
+"products for those who are lactose intolerant.  Take to temporarily remove "
+"the downsides of lactose intolerance."
+msgstr ""
+
+#: data/json/items/comestibles/med.json
 msgid "pink tab"
 msgid_plural "pink tabs"
 msgstr[0] "cartoncito rosa"
@@ -112587,6 +112626,7 @@ msgstr[2] ""
 #. ~ Use action friendly_msg for {'str': 'inactive M16A4 TALON UGV'}.
 #. ~ Use action friendly_msg for {'str': 'inactive M202A1 TALON UGV'}.
 #. ~ Use action friendly_msg for {'str': 'inactive M249 TALON UGV'}.
+#. ~ Use action friendly_msg for {'str': 'inactive M2HB TALON UGV'}.
 #: data/json/items/corpses/inactive_bots.json
 msgid "The UGV beeps affirmatively and begins scanning for hostiles."
 msgstr ""
@@ -112594,6 +112634,7 @@ msgstr ""
 #. ~ Use action hostile_msg for {'str': 'inactive M16A4 TALON UGV'}.
 #. ~ Use action hostile_msg for {'str': 'inactive M202A1 TALON UGV'}.
 #. ~ Use action hostile_msg for {'str': 'inactive M249 TALON UGV'}.
+#. ~ Use action hostile_msg for {'str': 'inactive M2HB TALON UGV'}.
 #: data/json/items/corpses/inactive_bots.json
 msgid "You misprogram the UGV and it trains its gun on you. RUN!"
 msgstr ""
@@ -112645,6 +112686,25 @@ msgid ""
 "on the ground.  If reprogrammed and rewired successfully the UGV will then "
 "identify you as a friendly, roam around or follow you, and attack all "
 "enemies with its machine gun."
+msgstr ""
+
+#: data/json/items/corpses/inactive_bots.json
+msgid "inactive M2HB TALON UGV"
+msgid_plural "inactive M2HB TALON UGVs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'inactive M2HB TALON UGV'}
+#: data/json/items/corpses/inactive_bots.json
+msgid ""
+"This is an inactive TALON UGV equipped with an M2HB.  Using this item "
+"involves loading the unit with the factory-loaded .50 BMG rounds in your "
+"inventory (if you wish to divide your ammunition, set aside whatever .50 BMG"
+" you do NOT want to give the robot) turning it on, and placing it on the "
+"ground.  If reprogrammed and rewired successfully the UGV will then identify"
+" you as a friendly, roam around or follow you, and attack all enemies with "
+"its heavy machine gun."
 msgstr ""
 
 #: data/json/items/corpses/inactive_bots.json
@@ -147465,6 +147525,20 @@ msgid ""
 "A TALON unmanned ground vehicle equipped with an M249.  It is a small "
 "tracked UGV with an array of motors and sensors covering its weapon mount, "
 "designed to provide high volume, if inaccurate, fire."
+msgstr ""
+
+#: data/json/monsters/defense_bot.json
+msgid "M2HB autonomous TALON UGV"
+msgid_plural "M2HB autonomous TALON UGVs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'M2HB autonomous TALON UGV'}
+#: data/json/monsters/defense_bot.json
+msgid ""
+"A TALON unmanned ground vehicle equipped with an M2HB.  It is a small "
+"tracked UGV with an array of motors and sensors covering its weapon mount."
 msgstr ""
 
 #: data/json/monsters/defense_bot.json
@@ -316061,6 +316135,14 @@ msgstr "Partes del cuerpo"
 #: src/init.cpp
 msgid "Weather types"
 msgstr "Tipos de climas"
+
+#: src/init.cpp
+msgid "Weather patterns"
+msgstr ""
+
+#: src/init.cpp
+msgid "Base weather"
+msgstr ""
 
 #: src/init.cpp
 msgid "World types"

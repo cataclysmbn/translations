@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-30 18:06+0000\n"
+"POT-Creation-Date: 2026-10-01 23:55+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -10083,6 +10083,17 @@ msgid ""
 "You are under the influence of analgesic substances to relieve pain, but "
 "they may numb you a bit."
 msgstr "镇痛剂正在缓解你的疼痛，但也同时也会麻痹你。"
+
+#: data/json/effects.json
+msgid "Lactase Supplement"
+msgstr "乳糖酶补充剂"
+
+#. ~ Description of effect 'Lactase Supplement'.
+#: data/json/effects.json
+msgid ""
+"You have taken a lactase supplement and will not suffer the effects of "
+"lactose intolerance."
+msgstr "你服用了乳糖酶补充剂，将不会受到乳糖不耐症的影响。"
 
 #: data/json/effects.json
 msgid "Happy"
@@ -35856,7 +35867,7 @@ msgstr[0] "混凝土搅拌器（电网）"
 msgid ""
 "A portable concrete mixer wired into a building's electrical grid.  Has a "
 "built-in heater for cold-weather use."
-msgstr ""
+msgstr "一台接入了建筑物电网的便携式混凝土搅拌机。内置加热器，可供寒冷天气下使用。"
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-flora.json
@@ -56210,6 +56221,7 @@ msgstr[0] "M16A4 \"鹰爪\"型无人车（损坏）"
 #. ~ Description for {'str': 'broken M16A4 TALON'}
 #. ~ Description for {'str': 'broken M202A1 TALON'}
 #. ~ Description for {'str': 'broken M249 TALON'}
+#. ~ Description for {'str': 'broken M2HB TALON'}
 #: data/json/items/generic.json
 msgid ""
 "A broken TALON UGV, with its casing broken and fluid drained.  Could be "
@@ -56263,6 +56275,11 @@ msgstr[0] "損毀的 M202A1 TALON"
 msgid "broken M249 TALON"
 msgid_plural "broken M249 TALONs"
 msgstr[0] "M249 \"鹰爪\"型无人车（损坏）"
+
+#: data/json/items/generic.json
+msgid "broken M2HB TALON"
+msgid_plural "broken M2HB TALONs"
+msgstr[0] "M2HB \"鹰爪\"型无人车（损坏）"
 
 #: data/json/items/generic.json
 msgid "fire brick"
@@ -90357,6 +90374,24 @@ msgstr ""
 "\"$m0k3 W33d 3v3ryd@y（每迗磕大痲）——！\""
 
 #: data/json/items/comestibles/med.json
+msgid "Lactaid"
+msgid_plural "Lactaids"
+msgstr[0] "乳糖酶胶囊"
+
+#. ~ Use action activation_message for {'str': 'Lactaid'}.
+#: data/json/items/comestibles/med.json
+msgid "You take some lactaid."
+msgstr "你服用了一些乳糖酶胶囊。"
+
+#. ~ Description for {'str': 'Lactaid'}
+#: data/json/items/comestibles/med.json
+msgid ""
+"Capsules containing lactase, an enzyme essential to the digestion of milk "
+"products for those who are lactose intolerant.  Take to temporarily remove "
+"the downsides of lactose intolerance."
+msgstr "含有乳糖酶的胶囊。乳糖酶是乳糖不耐症人群消化乳制品所必需的酶。服用后可暂时消除乳糖不耐受带来的负面反应。"
+
+#: data/json/items/comestibles/med.json
 msgid "pink tab"
 msgid_plural "pink tabs"
 msgstr[0] "邮票毒品"
@@ -97703,6 +97738,7 @@ msgstr[0] "M16A4 \"鹰爪\"型无人车（关）"
 #. ~ Use action friendly_msg for {'str': 'inactive M16A4 TALON UGV'}.
 #. ~ Use action friendly_msg for {'str': 'inactive M202A1 TALON UGV'}.
 #. ~ Use action friendly_msg for {'str': 'inactive M249 TALON UGV'}.
+#. ~ Use action friendly_msg for {'str': 'inactive M2HB TALON UGV'}.
 #: data/json/items/corpses/inactive_bots.json
 msgid "The UGV beeps affirmatively and begins scanning for hostiles."
 msgstr "无人车发出确认的哔哔声，并开始扫描敌对目标。"
@@ -97710,6 +97746,7 @@ msgstr "无人车发出确认的哔哔声，并开始扫描敌对目标。"
 #. ~ Use action hostile_msg for {'str': 'inactive M16A4 TALON UGV'}.
 #. ~ Use action hostile_msg for {'str': 'inactive M202A1 TALON UGV'}.
 #. ~ Use action hostile_msg for {'str': 'inactive M249 TALON UGV'}.
+#. ~ Use action hostile_msg for {'str': 'inactive M2HB TALON UGV'}.
 #: data/json/items/corpses/inactive_bots.json
 msgid "You misprogram the UGV and it trains its gun on you. RUN!"
 msgstr "你对无人车的编程出现了错误，它把枪口对准了你。快跑！"
@@ -97765,6 +97802,25 @@ msgid ""
 msgstr ""
 "一台未激活的\"鹰爪\"型无人车，配有一把 M16A4 步枪。使用该物品以将它放置在地上并打开它，并装填你物品栏内的原装 5.56x45mm "
 "口径弹药（如果你只想装填部分弹药，请先把不需装填的弹药移出物品栏）。如果重新编程成功，无人车会将你识别为友军，自主行动或跟随你，并攻击所有在其机枪攻击范围内的敌人。"
+
+#: data/json/items/corpses/inactive_bots.json
+msgid "inactive M2HB TALON UGV"
+msgid_plural "inactive M2HB TALON UGVs"
+msgstr[0] "M2HB \"鹰爪\"型无人车（关）"
+
+#. ~ Description for {'str': 'inactive M2HB TALON UGV'}
+#: data/json/items/corpses/inactive_bots.json
+msgid ""
+"This is an inactive TALON UGV equipped with an M2HB.  Using this item "
+"involves loading the unit with the factory-loaded .50 BMG rounds in your "
+"inventory (if you wish to divide your ammunition, set aside whatever .50 BMG"
+" you do NOT want to give the robot) turning it on, and placing it on the "
+"ground.  If reprogrammed and rewired successfully the UGV will then identify"
+" you as a friendly, roam around or follow you, and attack all enemies with "
+"its heavy machine gun."
+msgstr ""
+"一台未激活的\"鹰爪\"型无人车，配有一挺 M2HB 重机枪。使用该物品以将它放置在地上并打开它，并装填你物品栏内的原装 .50 BMG "
+"口径弹药（如果你只想装填部分弹药，请先把不需要装填的弹药移出物品栏）。如果重新编程成功，无人车会将你识别为友军，自主行动或跟随你，并攻击所有在其重机枪攻击范围内的敌人。"
 
 #: data/json/items/corpses/inactive_bots.json
 msgid "inactive nurse bot"
@@ -127058,6 +127114,18 @@ msgid ""
 "tracked UGV with an array of motors and sensors covering its weapon mount, "
 "designed to provide high volume, if inaccurate, fire."
 msgstr "一架\"鹰爪\"型无人车，配有 M249 机枪。这是一种小型履带式无人车，其武器底座上装有一系列的电机和传感器，旨在提供密集但精度欠佳的火力。"
+
+#: data/json/monsters/defense_bot.json
+msgid "M2HB autonomous TALON UGV"
+msgid_plural "M2HB autonomous TALON UGVs"
+msgstr[0] "M2HB \"鹰爪\"型无人车"
+
+#. ~ Description for {'str': 'M2HB autonomous TALON UGV'}
+#: data/json/monsters/defense_bot.json
+msgid ""
+"A TALON unmanned ground vehicle equipped with an M2HB.  It is a small "
+"tracked UGV with an array of motors and sensors covering its weapon mount."
+msgstr "一台\"鹰爪\"型无人车，配有 M2HB 重机枪。这是一种小型履带式无人车，其武器底座上装有一系列的电机和传感器。"
 
 #: data/json/monsters/defense_bot.json
 msgid "skitterbot"
@@ -287430,6 +287498,14 @@ msgstr "身體部位"
 #: src/init.cpp
 msgid "Weather types"
 msgstr "天气类型"
+
+#: src/init.cpp
+msgid "Weather patterns"
+msgstr "天气模式"
+
+#: src/init.cpp
+msgid "Base weather"
+msgstr "基础天气"
 
 #: src/init.cpp
 msgid "World types"

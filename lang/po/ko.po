@@ -18,7 +18,6 @@
 # k jh <4492kjh@gmail.com>, 2026
 # Sungho Han <Hilldolfr@gmail.com>, 2026
 # David Kim, 2026
-# Tae Heon Lim, 2026
 # 김정국 <forforever12@gmail.com>, 2026
 # 백도 <tmtm1379@gmail.com>, 2026
 # Cokafold, 2026
@@ -30,12 +29,13 @@
 # Coolthulhu <Coolthulhu@gmail.com>, 2026
 # 김동현, 2026
 # Fruitybite, 2026
+# Tae Heon Lim, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-09-30 18:06+0000\n"
-"Last-Translator: Fruitybite, 2026\n"
+"POT-Creation-Date: 2026-10-01 06:59+0000\n"
+"Last-Translator: Tae Heon Lim, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -10541,6 +10541,17 @@ msgid ""
 "You are under the influence of analgesic substances to relieve pain, but "
 "they may numb you a bit."
 msgstr "진통제를 복용했고 곧 효과가 나타날 것입니다. 몸이 조금 무감각해집니다."
+
+#: data/json/effects.json
+msgid "Lactase Supplement"
+msgstr "락타아제 보충제"
+
+#. ~ Description of effect 'Lactase Supplement'.
+#: data/json/effects.json
+msgid ""
+"You have taken a lactase supplement and will not suffer the effects of "
+"lactose intolerance."
+msgstr "락타아제 보충제를 복용하여 유당불내증을 겪지 않을 것입니다."
 
 #: data/json/effects.json
 msgid "Happy"
@@ -37431,7 +37442,7 @@ msgstr[0] "망 연결된 콘크리트 믹서"
 msgid ""
 "A portable concrete mixer wired into a building's electrical grid.  Has a "
 "built-in heater for cold-weather use."
-msgstr ""
+msgstr "건물의 전력망에 연결된 휴대용 콘크리트 믹서입니다. 추운 날에도 사용할 수 있도록 내장 히터가 달려있습니다."
 
 #: data/json/furniture_and_terrain/furniture-appliances.json
 #: data/json/furniture_and_terrain/furniture-flora.json
@@ -56336,7 +56347,7 @@ msgstr[0] "순간접착제"
 #. ~ Description for {'str_sp': 'superglue'}
 #: data/json/items/generic.json
 msgid "A strong glue.  Used in many crafting recipes."
-msgstr ""
+msgstr "강력한 접착제입니다. 다양한 물품을 만드는데 쓰입니다."
 
 #: data/json/items/generic.json
 msgid "bone glue"
@@ -58555,6 +58566,7 @@ msgstr[0] "고장난 M16A4 탈론"
 #. ~ Description for {'str': 'broken M16A4 TALON'}
 #. ~ Description for {'str': 'broken M202A1 TALON'}
 #. ~ Description for {'str': 'broken M249 TALON'}
+#. ~ Description for {'str': 'broken M2HB TALON'}
 #: data/json/items/generic.json
 msgid ""
 "A broken TALON UGV, with its casing broken and fluid drained.  Could be "
@@ -58611,6 +58623,11 @@ msgstr[0] "고장난 M202A1 TALON"
 msgid "broken M249 TALON"
 msgid_plural "broken M249 TALONs"
 msgstr[0] "고장난 M249 탈론"
+
+#: data/json/items/generic.json
+msgid "broken M2HB TALON"
+msgid_plural "broken M2HB TALONs"
+msgstr[0] "고장난 M2HB 탈론"
 
 #: data/json/items/generic.json
 msgid "fire brick"
@@ -93815,6 +93832,26 @@ msgstr ""
 "준비되어있습니다."
 
 #: data/json/items/comestibles/med.json
+msgid "Lactaid"
+msgid_plural "Lactaids"
+msgstr[0] "유당 소화제"
+
+#. ~ Use action activation_message for {'str': 'Lactaid'}.
+#: data/json/items/comestibles/med.json
+msgid "You take some lactaid."
+msgstr "유당 소화제를 복용합니다."
+
+#. ~ Description for {'str': 'Lactaid'}
+#: data/json/items/comestibles/med.json
+msgid ""
+"Capsules containing lactase, an enzyme essential to the digestion of milk "
+"products for those who are lactose intolerant.  Take to temporarily remove "
+"the downsides of lactose intolerance."
+msgstr ""
+"유당불내증이 있는 사람이 유제품을 소화하는데 필수적인 효소인 락타아제가 담긴 캡슐입니다. 복용하여 일시적으로 유당불내증으로 인한 문제를 "
+"제거할 수 있습니다."
+
+#: data/json/items/comestibles/med.json
 msgid "pink tab"
 msgid_plural "pink tabs"
 msgstr[0] "분홍 알약"
@@ -101291,6 +101328,7 @@ msgstr[0] "비활성화된 M16A4 탈론 UGV"
 #. ~ Use action friendly_msg for {'str': 'inactive M16A4 TALON UGV'}.
 #. ~ Use action friendly_msg for {'str': 'inactive M202A1 TALON UGV'}.
 #. ~ Use action friendly_msg for {'str': 'inactive M249 TALON UGV'}.
+#. ~ Use action friendly_msg for {'str': 'inactive M2HB TALON UGV'}.
 #: data/json/items/corpses/inactive_bots.json
 msgid "The UGV beeps affirmatively and begins scanning for hostiles."
 msgstr "UGV가 확인했다는듯 삑삑거리며 적대적 개체를 탐색하기 시작합니다."
@@ -101298,6 +101336,7 @@ msgstr "UGV가 확인했다는듯 삑삑거리며 적대적 개체를 탐색하�
 #. ~ Use action hostile_msg for {'str': 'inactive M16A4 TALON UGV'}.
 #. ~ Use action hostile_msg for {'str': 'inactive M202A1 TALON UGV'}.
 #. ~ Use action hostile_msg for {'str': 'inactive M249 TALON UGV'}.
+#. ~ Use action hostile_msg for {'str': 'inactive M2HB TALON UGV'}.
 #: data/json/items/corpses/inactive_bots.json
 msgid "You misprogram the UGV and it trains its gun on you. RUN!"
 msgstr "UGV 프로그래밍을 실수해, UGV가 당신에게 총을 겨눕니다. 도망치세요!"
@@ -101355,6 +101394,23 @@ msgstr ""
 "비활성화된 M249 탑재형 탈론 UGV입니다. 사용하면 공장제 5.56x45mm 탄약을 장전하여 보안로봇을 작동시키고 바닥에 놓습니다. "
 "(탄약을 나눠두고 싶다면, 장전시키고 싶지 *않은* 탄약들을 한쪽에 치워두세요) 적절하게 재프로그래밍하면 이 UGV가 당신을 아군으로 "
 "인지하여, 주변을 돌아다니거나 당신을 따라다니면서 탑재된 소총으로 모든 적을 공격할 것입니다."
+
+#: data/json/items/corpses/inactive_bots.json
+msgid "inactive M2HB TALON UGV"
+msgid_plural "inactive M2HB TALON UGVs"
+msgstr[0] "비활성화된 M2HB 탈론 UGV"
+
+#. ~ Description for {'str': 'inactive M2HB TALON UGV'}
+#: data/json/items/corpses/inactive_bots.json
+msgid ""
+"This is an inactive TALON UGV equipped with an M2HB.  Using this item "
+"involves loading the unit with the factory-loaded .50 BMG rounds in your "
+"inventory (if you wish to divide your ammunition, set aside whatever .50 BMG"
+" you do NOT want to give the robot) turning it on, and placing it on the "
+"ground.  If reprogrammed and rewired successfully the UGV will then identify"
+" you as a friendly, roam around or follow you, and attack all enemies with "
+"its heavy machine gun."
+msgstr ""
 
 #: data/json/items/corpses/inactive_bots.json
 msgid "inactive nurse bot"
@@ -131837,6 +131893,18 @@ msgid ""
 msgstr ""
 "M249가 탑재된 탈론 무인지상차량. 무기 장착부에 모터와 센서가 덮여있고, 작은 궤도도 달려있습니다. 필요한 경우 다소 부정확한 대량의"
 " 사격을 퍼부을 수 있습니다."
+
+#: data/json/monsters/defense_bot.json
+msgid "M2HB autonomous TALON UGV"
+msgid_plural "M2HB autonomous TALON UGVs"
+msgstr[0] "M2HB 자동화 탈론 UGV"
+
+#. ~ Description for {'str': 'M2HB autonomous TALON UGV'}
+#: data/json/monsters/defense_bot.json
+msgid ""
+"A TALON unmanned ground vehicle equipped with an M2HB.  It is a small "
+"tracked UGV with an array of motors and sensors covering its weapon mount."
+msgstr ""
 
 #: data/json/monsters/defense_bot.json
 msgid "skitterbot"
@@ -200750,11 +200818,11 @@ msgstr "암모니아 운송차량"
 
 #: data/json/vehicles/trucks.json
 msgid "Gas Tanker"
-msgstr "유조차"
+msgstr "휘발유 유조차"
 
 #: data/json/vehicles/trucks.json
 msgid "Superglue Tanker"
-msgstr ""
+msgstr "순간접착제 운송차량"
 
 #: data/json/vehicles/trucks.json
 msgid "Water Tanker"
@@ -200790,15 +200858,15 @@ msgstr "과산화수소 운송차량"
 
 #: data/json/vehicles/trucks.json
 msgid "Sewage Tanker"
-msgstr "하수도 운송차량"
+msgstr "하수 운송차량"
 
 #: data/json/vehicles/trucks.json
 msgid "Sulfuric Acid Tanker"
-msgstr "황산 유조차"
+msgstr "황산 운송차량"
 
 #: data/json/vehicles/trucks.json
 msgid "Milk Tanker"
-msgstr "우유 유조차"
+msgstr "우유 운송차량"
 
 #: data/json/vehicles/trucks.json
 msgid "Pickup Truck"
@@ -214614,7 +214682,7 @@ msgstr[0] "오래된 편지"
 #. ~ Description for {'str': 'old letter'}
 #: data/mods/Arcana_BN/items/books.json
 msgid "A weathered old piece of paper."
-msgstr ""
+msgstr "닳고 오래된 종이 조각."
 
 #: data/mods/Arcana_BN/items/books.json
 msgid "folded note"
@@ -214624,7 +214692,7 @@ msgstr[0] "접힌 메모"
 #. ~ Description for {'str': 'folded note'}
 #: data/mods/Arcana_BN/items/books.json
 msgid "A neatly-folded note."
-msgstr ""
+msgstr "가지런히 접힌 쪽지"
 
 #: data/mods/Arcana_BN/items/books.json
 msgid "strange map"
@@ -297465,6 +297533,14 @@ msgid "Weather types"
 msgstr "날씨 종류"
 
 #: src/init.cpp
+msgid "Weather patterns"
+msgstr "날씨 패턴"
+
+#: src/init.cpp
+msgid "Base weather"
+msgstr "기본 날씨"
+
+#: src/init.cpp
 msgid "World types"
 msgstr "세계 종류"
 
@@ -304284,7 +304360,7 @@ msgstr "연습중"
 #: src/iuse_actor.cpp
 #, c-format
 msgid "Repair/Refit %s"
-msgstr ""
+msgstr "%s 수리 및 조정 "
 
 #: src/iuse_actor.cpp
 msgid "The bleeding is stopped."
