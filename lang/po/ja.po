@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-10-11 01:42+0000\n"
+"POT-Creation-Date: 2026-10-12 05:54+0000\n"
 "Last-Translator: 匿名小太郎, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -116652,6 +116652,13 @@ msgid "C-4 explosive"
 msgid_plural "C-4 explosives"
 msgstr[0] "C-4"
 
+#. ~ Use action menu_text for {'str': 'C-4 explosive'}.
+#. ~ Use action menu_text for {'str': 'C-4 breaching charge'}.
+#. ~ Use action menu_text for {'str': 'aerial bomb'}.
+#: data/json/items/tool/explosives.json
+msgid "Arm bomb"
+msgstr "爆弾を武装"
+
 #. ~ Description for {'str': 'C-4 explosive'}
 #: data/json/items/tool/explosives.json
 msgid ""
@@ -116786,11 +116793,6 @@ msgstr[0] "EMP爆弾"
 #: data/json/items/tool/explosives.json
 msgid "Activate bomb"
 msgstr "爆弾を起動する"
-
-#. ~ Use action msg for {'str': 'EMP bomb'}.
-#: data/json/items/tool/explosives.json
-msgid "You activate the EMP bomb."
-msgstr "EMP爆弾を起動した。"
 
 #. ~ Description for {'str': 'EMP bomb'}
 #: data/json/items/tool/explosives.json
@@ -117310,6 +117312,11 @@ msgid "mininuke"
 msgid_plural "mininukes"
 msgstr[0] "小型核"
 
+#. ~ Use action menu_text for {'str': 'mininuke'}.
+#: data/json/items/tool/explosives.json
+msgid "Arm mininuke"
+msgstr ""
+
 #. ~ Description for {'str': 'mininuke'}
 #: data/json/items/tool/explosives.json
 msgid ""
@@ -117566,11 +117573,6 @@ msgstr "甲高い音を立てながら煙と火花を大量に吹き出してい
 msgid "aerial bomb"
 msgid_plural "aerial bombs"
 msgstr[0] "航空爆弾"
-
-#. ~ Use action menu_text for {'str': 'aerial bomb'}.
-#: data/json/items/tool/explosives.json
-msgid "Arm bomb"
-msgstr "爆弾を武装"
 
 #. ~ Use action msg for {'str': 'aerial bomb'}.
 #: data/json/items/tool/explosives.json
@@ -170155,6 +170157,13 @@ msgstr "素晴らしい。追加で何人か人手が欲しいと連絡してお
 msgid "Find 25 Blankets"
 msgstr "ブランケットを25枚探す"
 
+#. ~ Description for mission '{'str': 'Find 25 Blankets'}'
+#: data/json/npcs/tacoma_ranch/NPC_ranch_foreman.json
+msgid ""
+"Obtain 25 blankets, fur blankets, electric blankets etc for the Tacoma "
+"Commune."
+msgstr ""
+
 #: data/json/npcs/tacoma_ranch/NPC_ranch_foreman.json
 msgid ""
 "With the barn entrances enclosed the refugees moving into there should feel "
@@ -170393,6 +170402,11 @@ msgstr "感謝する。"
 msgid "Gather 6 First Aid Kits"
 msgstr "救急箱を6個集める"
 
+#. ~ Description for mission '{'str': 'Gather 6 First Aid Kits'}'
+#: data/json/npcs/tacoma_ranch/NPC_ranch_foreman.json
+msgid "Obtain 6 first aid kits.  Compact kits and IFAKs should work too."
+msgstr ""
+
 #: data/json/npcs/tacoma_ranch/NPC_ranch_foreman.json
 msgid ""
 "We've started planning a medical clinic but we are going to need a lot more "
@@ -170405,8 +170419,10 @@ msgstr ""
 "診療所の計画は始まったが、医療の経験者を難民センターから派遣してもらうには、もっと多くの物資が必要になる。救急箱は貴重だが、俺たちが持っていない基本的な物資が全て揃っている。完全なキットを6個持ってきてくれれば、それを補充することで少しは長持ちさせられるはずだ。"
 
 #: data/json/npcs/tacoma_ranch/NPC_ranch_foreman.json
-msgid "We'll do our best to make them last…"
-msgstr "長持ちするように、最大限に活用するつもりだ…"
+msgid ""
+"If you can only find the basic kits or even military IFAKs, we'll do our "
+"best to make them last…"
+msgstr ""
 
 #: data/json/npcs/tacoma_ranch/NPC_ranch_foreman.json
 msgid "Homes, hospitals, labs, and doctor offices would be where I'd check."
@@ -191789,6 +191805,10 @@ msgstr "バイオケイ化キチン装甲"
 msgid "wooden armor"
 msgstr "木製装甲"
 
+#: data/json/vehicleparts/plating.json
+msgid "carbon fiber plating"
+msgstr ""
+
 #. ~ Description for {'str': 'spiked plating'}
 #: data/json/vehicleparts/plating.json
 msgid ""
@@ -191913,6 +191933,10 @@ msgid "superalloy ram"
 msgstr "超合金製衝角"
 
 #: data/json/vehicleparts/rams.json
+msgid "carbon fiber ram"
+msgstr ""
+
+#: data/json/vehicleparts/rams.json
 msgid "heavy steel ram"
 msgstr "重鋼製衝角"
 
@@ -192022,8 +192046,8 @@ msgstr "カーボンファイバー製屋根"
 
 #. ~ Description for {'str': 'carbon fiber roof'}
 #: data/json/vehicleparts/roofs.json
-msgid "A thick carbon fiber roof."
-msgstr "厚いカーボンファイバー製の屋根だ。"
+msgid "A carbon fiber roof."
+msgstr ""
 
 #: data/json/vehicleparts/roofs.json
 msgid "wooden roof"
@@ -293752,7 +293776,7 @@ msgstr "ハチだー！"
 msgid "\"EEPY!\""
 msgstr "「エピー！」"
 
-#: src/iuse.cpp
+#: src/iuse.cpp src/iuse_actor.cpp
 msgid "Set the timer to (0 to cancel)?"
 msgstr "時限装置をセットする。(0で取消)"
 
@@ -295928,6 +295952,11 @@ msgstr "%1$sを起動する前に装備する必要がある。"
 #: src/iuse_actor.cpp
 msgid "You can't do that while underwater"
 msgstr "水中でそれを行うことはできない"
+
+#: src/iuse_actor.cpp
+#, c-format
+msgid "You set the timer on the %s's to %d."
+msgstr ""
 
 #: src/iuse_actor.cpp
 #, c-format
