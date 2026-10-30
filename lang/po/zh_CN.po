@@ -17,7 +17,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-10-28 23:19+0000\n"
+"POT-Creation-Date: 2026-10-29 23:16+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/bn-team/teams/113585/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -28594,12 +28594,12 @@ msgstr "在大灾变之前，你曾负责防腐和安葬尸体。如今，地狱
 #: data/json/professions.json
 msgctxt "profession_male"
 msgid "Marine CSO"
-msgstr ""
+msgstr "海军陆战队特战干员"
 
 #: data/json/professions.json
 msgctxt "profession_female"
 msgid "Marine CSO"
-msgstr ""
+msgstr "海军陆战队特战干员"
 
 #. ~ Profession (male Marine CSO) description
 #: data/json/professions.json
@@ -28612,6 +28612,7 @@ msgid ""
 "while the rest of your squad forged ahead.  Hours of gunfire and screaming "
 "later, the radio's finally gone silent.  It's up to you now…"
 msgstr ""
+"在与上级长官发生冲突后，你被调回了本土。摆在你面前的未来毫无指望，唯有一份一眼望到头的差事——给某家企业看守放射性废料仓库。然而大灾变爆发之初，你作为首批应急响应部队被派往现场，负责把守外围防线，而你小队的其他成员则向前推进深入。在持续数小时的交火声与惨叫声过后，无线电终于彻底归于死寂。现在，一切只能靠你自己了……"
 
 #. ~ Profession (female Marine CSO) description
 #: data/json/professions.json
@@ -28624,6 +28625,7 @@ msgid ""
 "while the rest of your squad forged ahead.  Hours of gunfire and screaming "
 "later, the radio's finally gone silent.  It's up to you now…"
 msgstr ""
+"在与上级长官发生冲突后，你被调回了本土。摆在你面前的未来毫无指望，唯有一份一眼望到头的差事——给某家企业看守放射性废料仓库。然而大灾变爆发之初，你作为首批应急响应部队被派往现场，负责把守外围防线，而你小队的其他成员则向前推进深入。在持续数小时的交火声与惨叫声过后，无线电终于彻底归于死寂。现在，一切只能靠你自己了……"
 
 #. ~ Name for scenario 'Evacuee' for a male character
 #: data/json/scenarios.json
@@ -65302,6 +65304,22 @@ msgid ""
 msgstr ""
 "由废金属粗糙切割、胶带缠裹并弯曲成多边形防弹插板形状的铁片，边缘包裹着破布以遮盖锐利边缘。当与合适的防弹背心搭配穿戴时，它勉强能抵挡 .223 "
 "雷明顿弹药，但无法抵挡穿甲 5.56×45 毫米弹药或任何威力更大的弹药，不过总比什么都没有强。必须配合防弹插板携行具穿戴。"
+
+#: data/json/items/armor/ballistic_armor.json
+msgid "stab-resistant plates"
+msgid_plural "stab-resistant plates"
+msgstr[0] "防刺插板"
+
+#. ~ Description for {'str_sp': 'stab-resistant plates'}
+#: data/json/items/armor/ballistic_armor.json
+msgid ""
+"A thin composite of aluminum sheets and high-density carbon fiber, designed "
+"to provide protection from knives.  Fairly light and easy to move in, and "
+"provides excellent protection against cutting and stabbing damage, but not "
+"very effective against bullets or blunt impact.  Must be worn in a plate "
+"carrier."
+msgstr ""
+"一种由铝薄板和高密度碳纤维制成的轻薄复合材料，专为抵御刀具伤害而设计。相当轻便且易于活动，对切割和刺穿伤害有极佳的防护效果，但对子弹或钝击效果不佳。必须配合插板携行具穿戴。"
 
 #: data/json/items/armor/ballistic_armor.json
 msgid "Old Guard IOTV suit"
@@ -285017,12 +285035,12 @@ msgid "Can't wear more than one exosuit!"
 msgstr "不能再穿一件外骨骼装！"
 
 #: src/character.cpp
-msgid "Can't wear armor plates without a compatible plate carrier!"
-msgstr "没有兼容的防弹插板携行具，无法穿戴防弹插板！"
+msgid "Can't wear more mounted armor pieces then compatible mount spots!"
+msgstr "穿戴的挂载护甲数量不能超过兼容的挂载位数量！"
 
 #: src/character.cpp
-msgid "Can't wear more armor plates than worn plate carriers!"
-msgstr "穿戴的防弹插板数量不能超过穿戴的携行具数量！"
+msgid "Can't wear mounted armor pieces without a compatible mount!"
+msgstr "没有兼容的挂载具，无法穿戴挂载护甲！"
 
 #: src/character.cpp
 #, c-format
@@ -300963,6 +300981,12 @@ msgid ""
 "* This food is <neutral>perishable</neutral>, and at room temperature has an"
 " estimated nominal shelf life of <info>%s</info>."
 msgstr "* 这份食物 <neutral>会腐坏</neutral>，在室温下保质期大概为 <info>%s</info>。"
+
+#: src/item.cpp
+msgid ""
+"* Spoilage is <good>disabled</good>.  This food will stay fresh "
+"indefinitely."
+msgstr "* 腐烂已<good>禁用</good>。此食物将永久保持新鲜。"
 
 #: src/item.cpp
 msgid ""
@@ -320927,6 +320951,16 @@ msgid ""
 "A scaling factor that determines how often creatures spawn from rotting "
 "material."
 msgstr "设置从腐烂物品中生成食腐生物的密度系数。"
+
+#: src/options.cpp
+msgid "Food spoilage rate scaling factor"
+msgstr "食物腐烂速率缩放系数"
+
+#: src/options.cpp
+msgid ""
+"A scaling factor that determines how fast food and corpses spoil.  A higher "
+"number means faster spoilage.  Set to 0.00 to stop spoilage."
+msgstr "用于决定食物和尸体腐烂速度的缩放系数。数值越高，腐烂越快。设为 0.00 可停止腐烂。"
 
 #: src/options.cpp
 msgid "NPC spawn rate scaling factor"

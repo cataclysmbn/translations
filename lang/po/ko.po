@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-10-28 23:19+0000\n"
+"POT-Creation-Date: 2026-10-29 23:16+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -30027,12 +30027,12 @@ msgstr ""
 #: data/json/professions.json
 msgctxt "profession_male"
 msgid "Marine CSO"
-msgstr ""
+msgstr "해병 특작대원"
 
 #: data/json/professions.json
 msgctxt "profession_female"
 msgid "Marine CSO"
-msgstr ""
+msgstr "해병 특작대원"
 
 #. ~ Profession (male Marine CSO) description
 #: data/json/professions.json
@@ -30045,6 +30045,9 @@ msgid ""
 "while the rest of your squad forged ahead.  Hours of gunfire and screaming "
 "later, the radio's finally gone silent.  It's up to you now…"
 msgstr ""
+"상급자와 논쟁을 벌인 당신은 이내 국내로 전출되어 어느 기업의 방사능 폐기물 저장소를 경비하는 별볼일 없는 신세가 되리라 생각했습니다. "
+"하지만 당신은 대재앙 초기 대응 부대의 일원으로 배치되었으며, 다른 분대원들이 급속 행군하는 동안 주위를 사수하는 임무를 맡았습니다. 수"
+" 시간에 걸친 총성과 비명 끝에, 무전은 완전히 잠잠해져버렸습니다. 이제 모든 일은 당신에게 달렸습니다..."
 
 #. ~ Profession (female Marine CSO) description
 #: data/json/professions.json
@@ -30057,6 +30060,9 @@ msgid ""
 "while the rest of your squad forged ahead.  Hours of gunfire and screaming "
 "later, the radio's finally gone silent.  It's up to you now…"
 msgstr ""
+"상급자와 논쟁을 벌인 당신은 이내 국내로 전출되어 어느 기업의 방사능 폐기물 저장소를 경비하는 별볼일 없는 신세가 되리라 생각했습니다. "
+"하지만 당신은 대재앙 초기 대응 부대의 일원으로 배치되었으며, 다른 분대원들이 급속 행군하는 동안 주위를 사수하는 임무를 맡았습니다. 수"
+" 시간에 걸친 총성과 비명 끝에, 무전은 완전히 잠잠해져버렸습니다. 이제 모든 일은 당신에게 달렸습니다..."
 
 #. ~ Name for scenario 'Evacuee' for a male character
 #: data/json/scenarios.json
@@ -67947,6 +67953,23 @@ msgstr ""
 "고철을 조잡하게 자르고 붙이고 구부려 만든 뒤 날카로운 테두리를 낡은 천으로 감싼 다각형 방탄판입니다. 호환되는 방탄조끼와 함께 착용하면"
 " .223 레밍턴 탄을 간신히 방호할 수 있으며, 5.56x45mm 철갑탄 및 그 이상의 위력을 가진 탄은 방호할 수 없습니다. 그래도 "
 "없는 것보다는 낫습니다. 플레이트 캐리어 내부에 넣어 착용하도록 만들어졌습니다."
+
+#: data/json/items/armor/ballistic_armor.json
+msgid "stab-resistant plates"
+msgid_plural "stab-resistant plates"
+msgstr[0] "방검판"
+
+#. ~ Description for {'str_sp': 'stab-resistant plates'}
+#: data/json/items/armor/ballistic_armor.json
+msgid ""
+"A thin composite of aluminum sheets and high-density carbon fiber, designed "
+"to provide protection from knives.  Fairly light and easy to move in, and "
+"provides excellent protection against cutting and stabbing damage, but not "
+"very effective against bullets or blunt impact.  Must be worn in a plate "
+"carrier."
+msgstr ""
+"알루미늄 판과 고밀도 탄소섬유를 배합해 도검에 대한 방어를 제공하도록 만들어진 얇은 복합물입니다. 절단 및 관통 피해에 대해 우수한 "
+"방어력을 제공하지만, 총탄이나 타격 피해에 대해서는 그다지 효과적이지 않습니다. 플레이트 캐리어 내부에 넣어 착용해야 합니다."
 
 #: data/json/items/armor/ballistic_armor.json
 msgid "Old Guard IOTV suit"
@@ -294819,12 +294842,12 @@ msgid "Can't wear more than one exosuit!"
 msgstr "동시에 하나의 외골격만 착용할 수 있습니다!"
 
 #: src/character.cpp
-msgid "Can't wear armor plates without a compatible plate carrier!"
-msgstr "호환되는 플레이트 캐리어 없이는 장갑판을 착용할 수 없습니다!"
+msgid "Can't wear more mounted armor pieces then compatible mount spots!"
+msgstr "착용 가능한 부위보다 장갑판을 더 많이 착용할 수 없습니다!"
 
 #: src/character.cpp
-msgid "Can't wear more armor plates than worn plate carriers!"
-msgstr "장갑판을 착용한 플레이트 캐리어보다 더 많이 착용할 수 없습니다!"
+msgid "Can't wear mounted armor pieces without a compatible mount!"
+msgstr "호환되는 장비 없이는 장갑판을 착용할 수 없습니다!"
 
 #: src/character.cpp
 #, c-format
@@ -310815,6 +310838,12 @@ msgid ""
 " estimated nominal shelf life of <info>%s</info>."
 msgstr ""
 "* 이 음식은 <neutral>썩을 수 있으며</neutral>, 상온에서 유통기한이 약 <info>%s</info> 정도 될 것입니다."
+
+#: src/item.cpp
+msgid ""
+"* Spoilage is <good>disabled</good>.  This food will stay fresh "
+"indefinitely."
+msgstr "* <good>부패가 비활성화</good>되었습니다. 이 음식은 영원히 신선한 상태로 유지될 것입니다."
 
 #: src/item.cpp
 msgid ""
@@ -330866,6 +330895,18 @@ msgid ""
 "A scaling factor that determines how often creatures spawn from rotting "
 "material."
 msgstr "얼마나 자주 썩은 물건에서 생명체가 생성되는지 설정하는 생성 밀도입니다."
+
+#: src/options.cpp
+msgid "Food spoilage rate scaling factor"
+msgstr "음식 부패 속도 계수"
+
+#: src/options.cpp
+msgid ""
+"A scaling factor that determines how fast food and corpses spoil.  A higher "
+"number means faster spoilage.  Set to 0.00 to stop spoilage."
+msgstr ""
+"음식과 시체가 얼마나 빨리 썩는지 결정하는 계수입니다. 숫자가 높아지면 부패가 더 빨라집니다. 0.00으로 설정하면 부패가 "
+"비활성화됩니다."
 
 #: src/options.cpp
 msgid "NPC spawn rate scaling factor"
