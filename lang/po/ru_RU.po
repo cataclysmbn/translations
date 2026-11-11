@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-09 15:43+0000\n"
+"POT-Creation-Date: 2026-11-10 23:19+0000\n"
 "Last-Translator: midgardormr <donjonn@yandex.ru>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -9983,6 +9983,20 @@ msgid ""
 msgstr ""
 "Пока этот предмет находится у вас в инвентаре, на поверхности он облучает "
 "вас каждые 15 минут!"
+
+#: data/json/effects.json
+msgid "Full protection"
+msgstr ""
+
+#. ~ Description of effect 'Full protection'.
+#: data/json/effects.json
+msgid "This prevents all damage via enchantments!"
+msgstr ""
+
+#. ~ Description of effect 'Feather Fall'.
+#: data/json/effects.json
+msgid "Feather Fall"
+msgstr ""
 
 #: data/json/effects.json
 msgid "Pure Insanity"
@@ -226239,21 +226253,19 @@ msgid ""
 "Controls how clear-air visibility attenuation scales with the reality "
 "bubble.  Perfect scales directly with the current bubble size.  Smart keeps "
 "visibility near the size 6 baseline while still giving small bubbles less "
-"range and large  bubbles more range.  None keeps visibility at the size 6 "
+"range and large bubbles more range.  None keeps visibility at the size 6 "
 "baseline and only uses bubble size as a hard view cap."
 msgstr ""
-"Определяет, как дальность видимости в чистом воздухе зависит от размера "
-"пузыря реальности. «Прямое масштабирование» — прямая зависимость от размера "
-"пузыря. «Умное масштабирование» — сохраняет дальность видимости близкой к "
-"стандартной для размера 6, уменьшая её для маленьких пузырей и увеличивая "
-"для больших. «Без масштабирования» — сохраняет стандартную дальность "
-"видимости для размера 6, используя размер пузыря только как жёсткое "
-"ограничение обзора."
+"Определяет, как размер пузыря реальности влияет на дальность обзора в чистом"
+" воздухе. В режиме Perfect дальность прямо зависит от размера пузыря. Smart "
+"сохраняет её близкой к базовому значению для размера 6, но немного уменьшает"
+" для малых пузырей и увеличивает для больших. None оставляет базовую "
+"дальность для размера 6; пузырь лишь ограничивает максимальный обзор."
 
 #. ~ Value label of option 'VISIBILITY_SCALING'
 #: data/json/options/performance.json
-msgid "Perfect Scaale"
-msgstr "Прямое масштабирование"
+msgid "Perfect Scale"
+msgstr "Точное масштабирование"
 
 #. ~ Value label of option 'VISIBILITY_SCALING'
 #: data/json/options/performance.json
@@ -354418,6 +354430,16 @@ msgid "Your %s shut down to conserve calories."
 msgstr "КБМ «%s» отключается для сохранения калорий."
 
 #: src/bionics.cpp
+#, c-format
+msgid "Your %1$s slow the bleeding on your %2$s"
+msgstr ""
+
+#: src/bionics.cpp
+#, c-format
+msgid "Your %1$s staunch the bleeding on your %2$s"
+msgstr ""
+
+#: src/bionics.cpp
 msgid "You feel your throat open up and air filling your lungs!"
 msgstr ""
 "Вы чувствуете, как ваше горло раскрывается, и воздух наполняет ваши лёгкие!"
@@ -354437,7 +354459,7 @@ msgstr "Вам хватает воды. КБМ «%s» довольно пищи�
 msgid "Your %s quietens to a satisfied thrum."
 msgstr "КБМ «%s» теперь тихо и довольно гудит."
 
-#: src/bionics.cpp
+#: src/bionics.cpp src/iuse.cpp
 #, c-format
 msgid "Your %s doesn't have enough power for the %s"
 msgstr "КБМ «%s» не хватает энергии для сканирования тела (%s)"
@@ -357007,6 +357029,21 @@ msgstr "громкий возглас!"
 #: src/character.cpp
 msgid "yourself shout loudly!"
 msgstr "ваш громкий возглас!"
+
+#: src/character.cpp
+#, c-format
+msgid "You yell \"%s\""
+msgstr ""
+
+#: src/character.cpp
+#, c-format
+msgid "yourself yell \"%s\""
+msgstr ""
+
+#: src/character.cpp
+#, c-format
+msgid "yell \"%s\""
+msgstr ""
 
 #: src/character.cpp
 msgid "The sound of your voice is almost completely muffled!"
@@ -368896,6 +368933,11 @@ msgstr[2] "Сколько внести? Максимум: %d центов. (0 д
 msgstr[3] "Сколько внести? Максимум: %d цента. (0 для отмены) "
 
 #: src/iexamine.cpp
+#, c-format
+msgid "amount: %d"
+msgstr ""
+
+#: src/iexamine.cpp
 msgid "You do not have a cash card to withdraw money!"
 msgstr "Чтобы снять деньги, нужна кредитная карта!"
 
@@ -372631,6 +372673,16 @@ msgid "%s %d <color_magenta>(Can't use!)</color>"
 msgstr "%s %d <color_magenta>(Невозможно использовать!)</color>"
 
 #: src/item.cpp
+#, c-format
+msgid "%s %d <color_red>(Damage/Range 0.5x, Dispersion 2.0x)</color>"
+msgstr ""
+
+#: src/item.cpp
+#, c-format
+msgid "%s %d <color_yellow>(Damage/Range 0.75x)</color>"
+msgstr ""
+
+#: src/item.cpp
 msgid "<bold>Minimum requirements</bold>:"
 msgstr "<bold>Минимальные требования</bold>:"
 
@@ -373014,6 +373066,11 @@ msgstr "Тип: "
 #: src/item.cpp
 msgid "Ammunition: "
 msgstr "Боеприпасы: "
+
+#: src/item.cpp
+#, c-format
+msgid "Uses <stat>%i</stat> ammo per shot"
+msgstr ""
 
 #: src/item.cpp
 #, c-format
@@ -373571,6 +373628,11 @@ msgstr " <num> Дж"
 #: src/item.cpp
 msgid "<bold>Power Capacity</bold>:"
 msgstr "<bold>Энергоёмкость</bold>:"
+
+#: src/item.cpp
+#, c-format
+msgid "* This CBM requires another CBM to also be installed: %s"
+msgstr ""
 
 #: src/item.cpp
 msgid "<bold>Encumbrance</bold>: "
@@ -374441,6 +374503,11 @@ msgstr "Оружие (%s) ржавеет из-за нагара чёрного �
 #, c-format
 msgid "Your %s disappears!"
 msgstr "%s исчезает!"
+
+#: src/item.cpp
+#, c-format
+msgid "Your %s gurgles and splutters."
+msgstr ""
 
 #. ~ %1$s: name of corpse with modifiers;  %2$s: species name
 #: src/item.cpp
@@ -375770,6 +375837,10 @@ msgstr "Вам нужен источник огня!"
 #: src/iuse.cpp
 msgid "You light the arrow!"
 msgstr "Вы поджигаете стрелу!"
+
+#: src/iuse.cpp
+msgid "Really smash it on yourself?"
+msgstr ""
 
 #: src/iuse.cpp
 msgid "You should probably throw it instead."
@@ -390533,6 +390604,11 @@ msgstr "Погоди, хочу размозжить %s."
 
 #: src/npcmove.cpp
 #, c-format
+msgid "%s completed the assigned task."
+msgstr ""
+
+#: src/npcmove.cpp
+#, c-format
 msgid "%1$s throws a %2$s."
 msgstr "%1$s метает предмет (%2$s)."
 
@@ -398854,6 +398930,11 @@ msgid "The entire cavern shakes!"
 msgstr "Вся пещера трясётся!"
 
 #: src/timed_event.cpp
+#, c-format
+msgid "You hear someone whispering \"%s\""
+msgstr ""
+
+#: src/timed_event.cpp
 msgid "The earth rumbles."
 msgstr "Земля грохочет."
 
@@ -400903,6 +400984,11 @@ msgstr "Метка: %s"
 #: src/vehicle/vehicle_display.cpp
 msgid "More parts here…"
 msgstr "Здесь есть ещё детали…"
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid "  Part of a %s carried on a rack.\n"
+msgstr ""
 
 #: src/vehicle/vehicle_display.cpp
 msgid "mL"

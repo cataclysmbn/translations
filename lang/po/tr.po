@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-09 15:34+0000\n"
+"POT-Creation-Date: 2026-11-10 23:19+0000\n"
 "Last-Translator: Arif Öcal, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -9836,6 +9836,20 @@ msgid ""
 msgstr ""
 "Bu, envanterinizde bulunduğu sürece yer üstünde her 15 dakikada bir sizi "
 "radyasyona maruz bırakır!"
+
+#: data/json/effects.json
+msgid "Full protection"
+msgstr ""
+
+#. ~ Description of effect 'Full protection'.
+#: data/json/effects.json
+msgid "This prevents all damage via enchantments!"
+msgstr ""
+
+#. ~ Description of effect 'Feather Fall'.
+#: data/json/effects.json
+msgid "Feather Fall"
+msgstr ""
 
 #: data/json/effects.json
 msgid "Pure Insanity"
@@ -210084,13 +210098,13 @@ msgid ""
 "Controls how clear-air visibility attenuation scales with the reality "
 "bubble.  Perfect scales directly with the current bubble size.  Smart keeps "
 "visibility near the size 6 baseline while still giving small bubbles less "
-"range and large  bubbles more range.  None keeps visibility at the size 6 "
+"range and large bubbles more range.  None keeps visibility at the size 6 "
 "baseline and only uses bubble size as a hard view cap."
 msgstr ""
 
 #. ~ Value label of option 'VISIBILITY_SCALING'
 #: data/json/options/performance.json
-msgid "Perfect Scaale"
+msgid "Perfect Scale"
 msgstr ""
 
 #. ~ Value label of option 'VISIBILITY_SCALING'
@@ -325692,6 +325706,16 @@ msgid "Your %s shut down to conserve calories."
 msgstr "Kalori tasarrufu için %s kapandı."
 
 #: src/bionics.cpp
+#, c-format
+msgid "Your %1$s slow the bleeding on your %2$s"
+msgstr ""
+
+#: src/bionics.cpp
+#, c-format
+msgid "Your %1$s staunch the bleeding on your %2$s"
+msgstr ""
+
+#: src/bionics.cpp
 msgid "You feel your throat open up and air filling your lungs!"
 msgstr ""
 "Boğazınızın açıldığını ve ciğerlerinize hava dolduğunu hissediyorsunuz!"
@@ -325711,7 +325735,7 @@ msgstr "Yeterince su içtiniz. %s mutlu bir şekilde cıvıldıyor."
 msgid "Your %s quietens to a satisfied thrum."
 msgstr "%s, memnun bir uğultuya dönüşüyor."
 
-#: src/bionics.cpp
+#: src/bionics.cpp src/iuse.cpp
 #, c-format
 msgid "Your %s doesn't have enough power for the %s"
 msgstr "%s, %s için yeterli güce sahip değil."
@@ -328231,6 +328255,21 @@ msgstr "yüksek bir bağırış!"
 #: src/character.cpp
 msgid "yourself shout loudly!"
 msgstr "kendin yüksek sesle bağır!"
+
+#: src/character.cpp
+#, c-format
+msgid "You yell \"%s\""
+msgstr ""
+
+#: src/character.cpp
+#, c-format
+msgid "yourself yell \"%s\""
+msgstr ""
+
+#: src/character.cpp
+#, c-format
+msgid "yell \"%s\""
+msgstr ""
 
 #: src/character.cpp
 msgid "The sound of your voice is almost completely muffled!"
@@ -339869,6 +339908,11 @@ msgstr[0] "Ne kadar yatırmak istiyorsunuz? Maks: %d sent. (İptal için 0)"
 msgstr[1] "Ne kadar yatırmak istiyorsunuz? Maks: %d sent. (İptal için 0)"
 
 #: src/iexamine.cpp
+#, c-format
+msgid "amount: %d"
+msgstr ""
+
+#: src/iexamine.cpp
 msgid "You do not have a cash card to withdraw money!"
 msgstr "Para çekmek için bir nakit kartınız yok!"
 
@@ -343558,6 +343602,16 @@ msgid "%s %d <color_magenta>(Can't use!)</color>"
 msgstr "%s %d <color_magenta>(Kullanılamaz!)</color>"
 
 #: src/item.cpp
+#, c-format
+msgid "%s %d <color_red>(Damage/Range 0.5x, Dispersion 2.0x)</color>"
+msgstr ""
+
+#: src/item.cpp
+#, c-format
+msgid "%s %d <color_yellow>(Damage/Range 0.75x)</color>"
+msgstr ""
+
+#: src/item.cpp
 msgid "<bold>Minimum requirements</bold>:"
 msgstr "<bold>Minimum gereksinimler</bold>:"
 
@@ -343937,6 +343991,11 @@ msgstr "Tür:"
 #: src/item.cpp
 msgid "Ammunition: "
 msgstr "Mühimmat:"
+
+#: src/item.cpp
+#, c-format
+msgid "Uses <stat>%i</stat> ammo per shot"
+msgstr ""
 
 #: src/item.cpp
 #, c-format
@@ -344462,6 +344521,11 @@ msgstr "<num> J"
 #: src/item.cpp
 msgid "<bold>Power Capacity</bold>:"
 msgstr "<bold>Güç Kapasitesi</bold>:"
+
+#: src/item.cpp
+#, c-format
+msgid "* This CBM requires another CBM to also be installed: %s"
+msgstr ""
 
 #: src/item.cpp
 msgid "<bold>Encumbrance</bold>: "
@@ -345320,6 +345384,11 @@ msgstr "%s kara barut kalıntıları nedeniyle paslanıyor."
 #, c-format
 msgid "Your %s disappears!"
 msgstr "%s kayboluyor!"
+
+#: src/item.cpp
+#, c-format
+msgid "Your %s gurgles and splutters."
+msgstr ""
 
 #. ~ %1$s: name of corpse with modifiers;  %2$s: species name
 #: src/item.cpp
@@ -346651,6 +346720,10 @@ msgstr "Bir ateş kaynağına ihtiyacınız var!"
 #: src/iuse.cpp
 msgid "You light the arrow!"
 msgstr "Oku yaktın!"
+
+#: src/iuse.cpp
+msgid "Really smash it on yourself?"
+msgstr ""
 
 #: src/iuse.cpp
 msgid "You should probably throw it instead."
@@ -361215,6 +361288,11 @@ msgstr "Bekle, o %s'yı ezmek istiyorum."
 
 #: src/npcmove.cpp
 #, c-format
+msgid "%s completed the assigned task."
+msgstr ""
+
+#: src/npcmove.cpp
+#, c-format
 msgid "%1$s throws a %2$s."
 msgstr "%1$s, bir %2$s fırlatıyor."
 
@@ -369327,6 +369405,11 @@ msgid "The entire cavern shakes!"
 msgstr "Tüm mağara sallanıyor!"
 
 #: src/timed_event.cpp
+#, c-format
+msgid "You hear someone whispering \"%s\""
+msgstr ""
+
+#: src/timed_event.cpp
 msgid "The earth rumbles."
 msgstr "Yeryüzü gürlüyor."
 
@@ -371342,6 +371425,11 @@ msgstr "Etiket: %s"
 #: src/vehicle/vehicle_display.cpp
 msgid "More parts here…"
 msgstr "Burada daha fazla parça var…"
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid "  Part of a %s carried on a rack.\n"
+msgstr ""
 
 #: src/vehicle/vehicle_display.cpp
 msgid "mL"

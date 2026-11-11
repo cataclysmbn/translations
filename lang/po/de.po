@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-09 15:34+0000\n"
+"POT-Creation-Date: 2026-11-10 23:19+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: German (https://app.transifex.com/bn-team/teams/113585/de/)\n"
 "MIME-Version: 1.0\n"
@@ -8851,6 +8851,20 @@ msgstr ""
 msgid ""
 "This irradiates you every 15 minutes while aboveground so long as you have "
 "it in your inventory!"
+msgstr ""
+
+#: data/json/effects.json
+msgid "Full protection"
+msgstr ""
+
+#. ~ Description of effect 'Full protection'.
+#: data/json/effects.json
+msgid "This prevents all damage via enchantments!"
+msgstr ""
+
+#. ~ Description of effect 'Feather Fall'.
+#: data/json/effects.json
+msgid "Feather Fall"
 msgstr ""
 
 #: data/json/effects.json
@@ -196180,13 +196194,13 @@ msgid ""
 "Controls how clear-air visibility attenuation scales with the reality "
 "bubble.  Perfect scales directly with the current bubble size.  Smart keeps "
 "visibility near the size 6 baseline while still giving small bubbles less "
-"range and large  bubbles more range.  None keeps visibility at the size 6 "
+"range and large bubbles more range.  None keeps visibility at the size 6 "
 "baseline and only uses bubble size as a hard view cap."
 msgstr ""
 
 #. ~ Value label of option 'VISIBILITY_SCALING'
 #: data/json/options/performance.json
-msgid "Perfect Scaale"
+msgid "Perfect Scale"
 msgstr ""
 
 #. ~ Value label of option 'VISIBILITY_SCALING'
@@ -303535,6 +303549,16 @@ msgid "Your %s shut down to conserve calories."
 msgstr ""
 
 #: src/bionics.cpp
+#, c-format
+msgid "Your %1$s slow the bleeding on your %2$s"
+msgstr ""
+
+#: src/bionics.cpp
+#, c-format
+msgid "Your %1$s staunch the bleeding on your %2$s"
+msgstr ""
+
+#: src/bionics.cpp
 msgid "You feel your throat open up and air filling your lungs!"
 msgstr ""
 "Du spürst, wie sich deine Kehle öffnet und Luft in deine Lungen strömt!"
@@ -303554,7 +303578,7 @@ msgstr ""
 msgid "Your %s quietens to a satisfied thrum."
 msgstr ""
 
-#: src/bionics.cpp
+#: src/bionics.cpp src/iuse.cpp
 #, c-format
 msgid "Your %s doesn't have enough power for the %s"
 msgstr ""
@@ -306040,6 +306064,21 @@ msgstr "ein lautes Geschrei!"
 #: src/character.cpp
 msgid "yourself shout loudly!"
 msgstr "dich laut schreien!"
+
+#: src/character.cpp
+#, c-format
+msgid "You yell \"%s\""
+msgstr ""
+
+#: src/character.cpp
+#, c-format
+msgid "yourself yell \"%s\""
+msgstr ""
+
+#: src/character.cpp
+#, c-format
+msgid "yell \"%s\""
+msgstr ""
 
 #: src/character.cpp
 msgid "The sound of your voice is almost completely muffled!"
@@ -317482,6 +317521,11 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: src/iexamine.cpp
+#, c-format
+msgid "amount: %d"
+msgstr ""
+
+#: src/iexamine.cpp
 msgid "You do not have a cash card to withdraw money!"
 msgstr "Du hast keine Geldkarte, um Geld abzuheben!"
 
@@ -321135,6 +321179,16 @@ msgid "%s %d <color_magenta>(Can't use!)</color>"
 msgstr ""
 
 #: src/item.cpp
+#, c-format
+msgid "%s %d <color_red>(Damage/Range 0.5x, Dispersion 2.0x)</color>"
+msgstr ""
+
+#: src/item.cpp
+#, c-format
+msgid "%s %d <color_yellow>(Damage/Range 0.75x)</color>"
+msgstr ""
+
+#: src/item.cpp
 msgid "<bold>Minimum requirements</bold>:"
 msgstr ""
 
@@ -321499,6 +321553,11 @@ msgstr "Typ: "
 #: src/item.cpp
 msgid "Ammunition: "
 msgstr "Munition: "
+
+#: src/item.cpp
+#, c-format
+msgid "Uses <stat>%i</stat> ammo per shot"
+msgstr ""
 
 #: src/item.cpp
 #, c-format
@@ -322026,6 +322085,11 @@ msgstr ""
 
 #: src/item.cpp
 msgid "<bold>Power Capacity</bold>:"
+msgstr ""
+
+#: src/item.cpp
+#, c-format
+msgid "* This CBM requires another CBM to also be installed: %s"
 msgstr ""
 
 #: src/item.cpp
@@ -322882,6 +322946,11 @@ msgstr ""
 #: src/item.cpp
 #, c-format
 msgid "Your %s disappears!"
+msgstr ""
+
+#: src/item.cpp
+#, c-format
+msgid "Your %s gurgles and splutters."
 msgstr ""
 
 #. ~ %1$s: name of corpse with modifiers;  %2$s: species name
@@ -324194,6 +324263,10 @@ msgstr "Du brauchst eine Feuerquelle!"
 #: src/iuse.cpp
 msgid "You light the arrow!"
 msgstr "Du entzündest den Pfeil!"
+
+#: src/iuse.cpp
+msgid "Really smash it on yourself?"
+msgstr ""
 
 #: src/iuse.cpp
 msgid "You should probably throw it instead."
@@ -338673,6 +338746,11 @@ msgstr "Warte, ich will %s zermalmen."
 
 #: src/npcmove.cpp
 #, c-format
+msgid "%s completed the assigned task."
+msgstr ""
+
+#: src/npcmove.cpp
+#, c-format
 msgid "%1$s throws a %2$s."
 msgstr "%1$s wirft 1 %2$s."
 
@@ -346638,6 +346716,11 @@ msgid "The entire cavern shakes!"
 msgstr "Die gesamte Höhle wackelt!"
 
 #: src/timed_event.cpp
+#, c-format
+msgid "You hear someone whispering \"%s\""
+msgstr ""
+
+#: src/timed_event.cpp
 msgid "The earth rumbles."
 msgstr "Die Erde rumpelt."
 
@@ -348653,6 +348736,11 @@ msgstr "Beschriftung: »%s«"
 #: src/vehicle/vehicle_display.cpp
 msgid "More parts here…"
 msgstr "Mehr Teile hier…"
+
+#: src/vehicle/vehicle_display.cpp
+#, c-format
+msgid "  Part of a %s carried on a rack.\n"
+msgstr ""
 
 #: src/vehicle/vehicle_display.cpp
 msgid "mL"
