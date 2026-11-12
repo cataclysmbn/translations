@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-10 23:19+0000\n"
+"POT-Creation-Date: 2026-11-11 23:55+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Spanish (Argentina) (https://app.transifex.com/bn-team/teams/113585/es_AR/)\n"
 "MIME-Version: 1.0\n"
@@ -18892,22 +18892,22 @@ msgstr "Alcohol"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
 #: data/mods/My_Sweet_Cataclysm/sweet_materials.json
-#: data/mods/rpg_system/main.lua src/material.cpp
+#: data/mods/rpg_system/main.lua src/item/material.cpp
 msgid "damaged"
 msgstr "dañado/a"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "lightly damaged"
 msgstr "ligeramente dañado/a"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "very damaged"
 msgstr "muy dañado/a"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "thoroughly damaged"
 msgstr "completamente dañado/a"
 
@@ -36207,7 +36207,7 @@ msgstr[2] ""
 msgid "Not at technique at all"
 msgstr "Sin ninguna técnica"
 
-#: data/json/techniques.json src/bonuses.cpp
+#: data/json/techniques.json src/game/bonuses.cpp
 msgid "Block"
 msgstr "Bloquear"
 
@@ -124548,6 +124548,16 @@ msgid "hk_ump45"
 msgstr ""
 
 #: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45_retool_40"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45_retool_9mm"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
 msgid "9x19mm UMP conversion kit"
 msgid_plural "9x19mm UMP conversion kits"
 msgstr[0] ""
@@ -151912,7 +151922,7 @@ msgstr ""
 
 #: data/json/monster_special_attacks/spells.json
 #: data/mods/MagicalNights/Spells/item_only.json src/character_display.cpp
-#: src/distraction_manager.cpp src/memorial_logger.cpp
+#: src/distraction_manager.cpp src/event/memorial_logger.cpp
 msgid "Pain"
 msgstr "Dolor"
 
@@ -155412,20 +155422,6 @@ msgid ""
 msgstr ""
 
 #: data/json/monsters/mammal.json
-msgid "mutant vampire bat"
-msgid_plural "mutant vampire bats"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#. ~ Description for {'str': 'mutant vampire bat'}
-#: data/json/monsters/mammal.json
-msgid ""
-"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
-"This one looks terribly larger and stronger than its other kin."
-msgstr ""
-
-#: data/json/monsters/mammal.json
 msgid "black bear cub"
 msgid_plural "black bear cubs"
 msgstr[0] ""
@@ -157172,6 +157168,20 @@ msgstr[2] ""
 msgid ""
 "Seeing how unnaturally dark this black cat's fur is, you are certain this is"
 " no ordinary cat.  Its fur seems to absorb light from the surroundings."
+msgstr ""
+
+#: data/json/monsters/mutant_animal.json
+msgid "mutant vampire bat"
+msgid_plural "mutant vampire bats"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#. ~ Description for {'str': 'mutant vampire bat'}
+#: data/json/monsters/mutant_animal.json
+msgid ""
+"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
+"This one looks terribly larger and stronger than its other kin."
 msgstr ""
 
 #: data/json/monsters/mutant_animal.json
@@ -305748,7 +305758,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: data/mods/rpg_system/main.lua src/bonuses.cpp
+#: data/mods/rpg_system/main.lua src/game/bonuses.cpp
 msgid "Dodge"
 msgstr "Esquivar"
 
@@ -305776,7 +305786,7 @@ msgstr ""
 msgid "Speech"
 msgstr ""
 
-#: data/mods/rpg_system/main.lua src/diary.cpp src/memorial_logger.cpp
+#: data/mods/rpg_system/main.lua src/diary.cpp src/event/memorial_logger.cpp
 #: src/newcharacter.cpp
 msgid "Skills:"
 msgstr "Habilidades:"
@@ -309661,96 +309671,6 @@ msgstr ""
 msgid "Bomber single tile & bomb"
 msgstr ""
 
-#: src/achievement.cpp
-msgctxt "achievement kill requirement"
-msgid "monster"
-msgid_plural "monsters"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill at least %i %s%s"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Don't kill even a single %s"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill no more than %i %s%s"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill any number of %s"
-msgstr ""
-
-#: src/achievement.cpp
-msgid " (failed)"
-msgstr " (fallido)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Attain skill level of %i in %s (%i/%i)"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Stay at or below skill level of %i in %s (%i/%i)"
-msgstr ""
-
-#: src/achievement.cpp
-msgid "time of cataclysm"
-msgstr ""
-
-#: src/achievement.cpp
-msgid "start of game"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "At least %s from %s (%s remaining)"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Within %s of %s (%s remaining)"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "At least %s from %s (passed)"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Within %s of %s (passed)"
-msgstr ""
-
-#: src/achievement.cpp
-msgid "Triggered by "
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "%s/%s "
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Completed %s"
-msgstr ""
-
-#: src/achievement.cpp
-msgid ""
-"\n"
-"Internal error: achievement lacks watcher."
-msgstr ""
-
 #: src/action.cpp src/input.cpp
 msgid "Press "
 msgstr "Apretá "
@@ -310109,7 +310029,7 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
-#: src/activity_actor.cpp src/bonuses.cpp src/panels.cpp
+#: src/activity_actor.cpp src/game/bonuses.cpp src/panels.cpp
 #: src/player_activity.cpp
 msgid "Speed"
 msgstr "Velocidad"
@@ -312107,7 +312027,7 @@ msgstr "cargas"
 msgid "category"
 msgstr "categoría"
 
-#: src/advanced_inv.cpp src/bonuses.cpp src/effect.cpp
+#: src/advanced_inv.cpp src/effect.cpp src/game/bonuses.cpp
 msgid "damage"
 msgstr "daño"
 
@@ -315624,107 +315544,6 @@ msgid ""
 "To read a description of %s, press '%s'"
 msgstr ""
 
-#: src/bonuses.cpp
-msgid "Accuracy"
-msgstr "Precisión"
-
-#: src/bonuses.cpp
-msgid "Move cost"
-msgstr "Costo de movimiento"
-
-#: src/bonuses.cpp src/panels.cpp
-msgid "Armor"
-msgstr "Armadura"
-
-#: src/bonuses.cpp
-msgid "Armor penetration"
-msgstr ""
-
-#: src/bonuses.cpp
-msgid "Target armor multiplier"
-msgstr "Multiplicador armadura enemigo"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "strength"
-msgstr "fuerza"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "dexterity"
-msgstr "destreza"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "intelligence"
-msgstr "inteligencia"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "perception"
-msgstr "percepción"
-
-#. ~ %1$s: damage type, %2$s: damage-related bonus name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "type of damage"
-msgid "%1$s %2$s"
-msgstr "%1$s %2$s"
-
-#. ~ %1$s: bonus name, %2$d: bonus percentage, %3$s: stat name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$d%%</stat> of %3$s"
-msgstr "* %1$s: <stat>%2$d%%</stat> de %3$s"
-
-#. ~ %1$s: bonus name, %2$d: bonus percentage
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$d%%</stat>"
-msgstr "* %1$s: <stat>%2$d%%</stat>"
-
-#. ~ %1$s: bonus name, %2$+d: bonus percentage, %3$s: stat name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$+d%%</stat> of %3$s"
-msgstr "* %1$s: <stat>%2$+d%%</stat> de %3$s"
-
-#. ~ %1$s: bonus name, %2$+d: bonus value
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$+d</stat>"
-msgstr "* %1$s: <stat>%2$+d</stat>"
-
-#: src/book_scanning.cpp
-msgid "You need a powered reader to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You need physical reading material to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You can't see well enough to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "This copy is already installed on the reader."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You no longer have the reading material or reader.  You stop scanning."
-msgstr ""
-
-#: src/book_scanning.cpp src/item.cpp
-#, c-format
-msgid "digital copy of %s"
-msgstr ""
-
-#: src/book_scanning.cpp
-#, c-format
-msgid "You save a digital copy of %s on your %s."
-msgstr ""
-
 #: src/calendar.cpp
 msgid "forever"
 msgstr "para siempre"
@@ -316982,6 +316801,26 @@ msgstr ""
 #: src/character.cpp
 msgid "Liquid from your inventory has leaked onto the ground."
 msgstr "El líquido de tu inventario se ha chorreado al suelo."
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "strength"
+msgstr "fuerza"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "dexterity"
+msgstr "destreza"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "intelligence"
+msgstr "inteligencia"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "perception"
+msgstr "percepción"
 
 #: src/character.cpp
 #, c-format
@@ -321385,71 +321224,6 @@ msgstr "Es de tamaño %s."
 msgid "You sense a creature here."
 msgstr ""
 
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "true"
-msgstr "verdadero/a"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "biological"
-msgstr "biológico/a"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "bash"
-msgstr "golpeado/a"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "cut"
-msgstr "cortado/a"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "acid"
-msgstr "ácido/a"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "stab"
-msgstr "apuñalado/a"
-
-#: src/damage.cpp
-msgctxt "damage_type"
-msgid "bullet"
-msgstr ""
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "heat"
-msgstr "cálido/a"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "cold"
-msgstr "frío/a"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "dark"
-msgstr "oscuro"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "light"
-msgstr ""
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "psionic"
-msgstr ""
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "electric"
-msgstr "eléctrico"
-
 #: src/debug.cpp
 msgid ""
 "Excessive error repetition detected.  Please file a bug report at "
@@ -322705,25 +322479,6 @@ msgstr ""
 msgid "JSON template written to "
 msgstr ""
 
-#: src/dependency_tree.cpp
-msgid "Missing Dependency(ies): "
-msgstr ""
-
-#: src/dependency_tree.cpp
-msgid "Has conflicting dependencies: "
-msgstr ""
-
-#: src/dependency_tree.cpp
-msgid "Has dependency cycle(s): "
-msgstr ""
-
-#. ~ Single entry in list of conflicting dependencies, both %s are mod ids.
-#. ~ Example of final string: "[aftershock] with [classic-zombies]"
-#: src/dependency_tree.cpp
-#, c-format
-msgid "[%1$s] with [%2$s]"
-msgstr ""
-
 #: src/descriptions.cpp
 #, c-format
 msgid ""
@@ -322849,7 +322604,7 @@ msgstr ""
 msgid "New failed missions:"
 msgstr ""
 
-#: src/diary.cpp src/memorial_logger.cpp src/newcharacter.cpp
+#: src/diary.cpp src/event/memorial_logger.cpp src/newcharacter.cpp
 msgid "Bionics:"
 msgstr "Biónicos:"
 
@@ -322861,7 +322616,7 @@ msgstr ""
 msgid "Lost bionics:"
 msgstr ""
 
-#: src/diary.cpp src/game.cpp src/memorial_logger.cpp
+#: src/diary.cpp src/event/memorial_logger.cpp src/game.cpp
 msgid "Kills:"
 msgstr "Muertes:"
 
@@ -323013,17 +322768,6 @@ msgstr "¿Exportar el diario como .md?"
 #: src/diary_ui.cpp
 msgid "Save entry?"
 msgstr "¿Guardar registro?"
-
-#: src/digital_media.cpp
-msgid ""
-"No music collection is ready to play.  Try another file or wait for its "
-"cooldown."
-msgstr ""
-
-#: src/digital_media.cpp
-#, c-format
-msgid "You recently listened to this collection.  Try again in %s."
-msgstr ""
 
 #: src/distraction_manager.cpp
 msgid "Interrupts you if you hear a noise."
@@ -323828,11 +323572,1313 @@ msgstr ""
 msgid "  <color_%s>Gives mutation %s</color>"
 msgstr ""
 
+#: src/event/achievement.cpp
+msgctxt "achievement kill requirement"
+msgid "monster"
+msgid_plural "monsters"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill at least %i %s%s"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Don't kill even a single %s"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill no more than %i %s%s"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill any number of %s"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid " (failed)"
+msgstr " (fallido)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Attain skill level of %i in %s (%i/%i)"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Stay at or below skill level of %i in %s (%i/%i)"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid "time of cataclysm"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid "start of game"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "At least %s from %s (%s remaining)"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Within %s of %s (%s remaining)"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "At least %s from %s (passed)"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Within %s of %s (passed)"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid "Triggered by "
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "%s/%s "
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Completed %s"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid ""
+"\n"
+"Internal error: achievement lacks watcher."
+msgstr ""
+
 #. ~ Default format for scores.  %1$s is statistic description; %2$s is value.
-#: src/event_statistics.cpp
+#: src/event/event_statistics.cpp
 #, c-format
 msgid "%2$s %1$s"
 msgstr "%2$s %1$s"
+
+#: src/event/kill_tracker.cpp
+msgid "You haven't killed any monsters yet!"
+msgstr "¡No mataste a ningún monstruo!"
+
+#: src/event/kill_tracker.cpp
+#, c-format
+msgid "KILL COUNT: %d"
+msgstr "TOTAL DE MUERTES: %d"
+
+#: src/event/kill_tracker.cpp
+#, c-format
+msgid ""
+"\n"
+"Experience: %d (%d points available)"
+msgstr ""
+
+#: src/event/memorial_logger.cpp src/iuse.cpp
+msgid "He"
+msgstr "Él"
+
+#: src/event/memorial_logger.cpp src/iuse.cpp
+msgid "She"
+msgstr "Ella"
+
+#: src/event/memorial_logger.cpp
+msgid "an unemployed male"
+msgstr "un hombre desempleado"
+
+#: src/event/memorial_logger.cpp
+msgid "an unemployed female"
+msgstr "una mujer desempleada"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "a %s"
+msgstr "un %s"
+
+#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
+#. description
+#. ~ that designates the location relative to its surroundings.
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s was killed in a %2$s."
+msgstr "%1$s fue matado/a en %2$s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Cataclysm: Bright Nights version %s memorial file"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "In memory of: %s"
+msgstr "En memoria de: %s"
+
+#. ~ The "%s" will be replaced by an epitaph as displayed in the memorial
+#. files. Replace the
+#. quotation marks as appropriate for your language.
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "epitaph"
+msgid "\"%s\""
+msgstr "\"%s\""
+
+#. ~ First parameter: Pronoun, second parameter: a profession name (with
+#. article)
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s was %2$s when the apocalypse began."
+msgstr "%1$s era %2$s cuando sucedió el apocalipsis."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s died on %2$s."
+msgstr "%1$s murió el %2$s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Cash on hand: %s"
+msgstr "Plata encima: %s"
+
+#: src/event/memorial_logger.cpp
+msgid "Final HP:"
+msgstr "PV final:"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid " Head: %d/%d"
+msgstr " Cabeza: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Torso: %d/%d"
+msgstr "Torso: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "L Arm: %d/%d"
+msgstr "Brazo Izq: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "R Arm: %d/%d"
+msgstr "Brazo Der: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "L Leg: %d/%d"
+msgstr "Pierna Izq: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "R Leg: %d/%d"
+msgstr "Pierna Der: %d/%d"
+
+#: src/event/memorial_logger.cpp
+msgid "Final Stats:"
+msgstr "Estadísticas finales:"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Str %d"
+msgstr "Fue %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Dex %d"
+msgstr "Des %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Int %d"
+msgstr "Int %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Per %d"
+msgstr "Per %d"
+
+#: src/event/memorial_logger.cpp
+msgid "Base Stats:"
+msgstr "Estadísticas de base:"
+
+#: src/event/memorial_logger.cpp
+msgid "Final Messages:"
+msgstr "Mensajes finales:"
+
+#: src/event/memorial_logger.cpp
+msgid "No monsters were killed."
+msgstr "No mataste ningún monstruo."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Total kills: %d"
+msgstr "Muertes totales: %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%s: %d (%d %%)"
+msgstr "%s: %d (%d %%)"
+
+#: src/event/memorial_logger.cpp src/newcharacter.cpp
+msgid "Traits:"
+msgstr "Peculiaridades: "
+
+#: src/event/memorial_logger.cpp
+msgid "(None)"
+msgstr "(Ninguno)"
+
+#: src/event/memorial_logger.cpp
+msgid "Ongoing Effects:"
+msgstr "Efectos actuales:"
+
+#: src/event/memorial_logger.cpp
+msgid "No bionics were installed."
+msgstr "No hay biónicos instalados"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Bionic Power: %d/%d"
+msgstr ""
+
+#: src/event/memorial_logger.cpp src/panels.cpp
+msgid "Weapon:"
+msgstr "Arma:"
+
+#: src/event/memorial_logger.cpp
+msgid "Equipment:"
+msgstr "Equipo:"
+
+#: src/event/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
+msgid "Inventory:"
+msgstr "Inventario:"
+
+#: src/event/memorial_logger.cpp
+msgid "Lifetime Stats and Scores"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgid "Game History"
+msgstr "Historia del juego"
+
+#. ~ %s is artifact name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Activated the %s."
+msgstr "Activó el %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Activated the %s."
+msgstr "Activó el %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Activated a mininuke."
+msgstr "Activó una minibomba nuclear."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Activated a mininuke."
+msgstr "Activó una minibomba nuclear."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Consumed mutagen."
+msgstr "Consumió mutágeno."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Consumed mutagen."
+msgstr "Consumió mutágeno."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected mutagen."
+msgstr "Mutágeno inyectado."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected mutagen."
+msgstr "Mutágeno inyectado."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Consumed purifier."
+msgstr "Consumió purificante."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Consumed purifier."
+msgstr "Consumió purificante."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected purifier."
+msgstr "Se inyectó purificante."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected purifier."
+msgstr "Se inyectó purificante."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected smart purifier."
+msgstr "Se inyectó purificante inteligente."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected smart purifier."
+msgstr "Se inyectó purificante inteligente."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Angered a group of amigara horrors!"
+msgstr "¡Enojaste a un grupo de horrores amigara!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Angered a group of amigara horrors!"
+msgstr "¡Enojaste a un grupo de horrores amigara!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Awoke a group of dark wyrms!"
+msgstr "¡Despertaste un grupo de wyrms oscuros!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Awoke a group of dark wyrms!"
+msgstr "¡Despertaste un grupo de wyrms oscuros!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Became wanted by the police!"
+msgstr "¡Ahora sos buscado por la policía!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Became wanted by the police!"
+msgstr "¡Ahora sos buscada por la policía!"
+
+#. ~ %s is bodypart
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Broken %s began to mend."
+msgstr "Tu %s roto/a empieza a sanar."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Broken %s began to mend."
+msgstr "Tu %s roto/a empieza a sanar."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "You buried an unknown victim of the Cataclysm."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "You buried an unknown victim of The Cataclysm."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "You buried %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "You buried %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caused a resonance cascade."
+msgstr "Realimentación positiva causada."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caused a resonance cascade."
+msgstr "Realimentación positiva causada."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caught and killed an ape.  Prey doesn't have a name."
+msgstr "Atrapó y mató a un simio. Las presas no tienen nombre."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caught and killed an ape.  Prey doesn't have a name."
+msgstr "Atrapó y mató a un simio. Las presas no tienen nombre."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed a delicious-looking innocent, %s, in cold blood."
+msgstr "Mató a un inocente que se veía delicioso, %s, a sangre fría."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed a delicious-looking innocent, %s, in cold blood."
+msgstr "Mató a un inocente que se veía delicioso, %s, a sangre fría."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed an innocent, %s, in cold blood.  They were weak."
+msgstr "Mató a una persona inocente, %s, a sangre fría. Eran débiles."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed an innocent, %s, in cold blood.  They were weak."
+msgstr "Mató a una persona inocente, %s, a sangre fría. Eran débiles."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed an innocent, %s."
+msgstr "Mató a un inocente, %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed an innocent, %s."
+msgstr "Mató a un inocente, %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid ""
+"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
+msgstr ""
+"Mató a una persona inocente, %s, a sangre fría y se sintió terrible después."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid ""
+"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
+msgstr ""
+"Mató a una persona inocente, %s, a sangre fría y se sintió terrible después."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed a %s."
+msgstr "Mató un %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed a %s."
+msgstr "Mató un %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on bubble wrap."
+msgstr "Pisó plástico de burbuja."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on bubble wrap."
+msgstr "Pisó plástico de burbuja."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on glass."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on glass."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caught by a beartrap."
+msgstr "Agarrado por una trampa para osos."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caught by a beartrap."
+msgstr "Agarrada por una trampa para osos."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a spiked board."
+msgstr "Pisó una tabla con púas."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a spiked board."
+msgstr "Pisó una tabla con púas."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a caltrop."
+msgstr "Pisó unos miguelitos."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a caltrop."
+msgstr "Pisó unos miguelitos."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a glass caltrop."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a glass caltrop."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Tripped on a tripwire."
+msgstr "Tropezó con una cuerda de trampa."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Tripped on a tripwire."
+msgstr "Tropezó con una cuerda de trampa."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a crossbow trap."
+msgstr "Detonó una trampa de ballesta."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a crossbow trap."
+msgstr "Detonó una trampa de ballesta."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shotgun trap."
+msgstr "Detonó una trampa de escopeta."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shotgun trap."
+msgstr "Detonó una trampa de escopeta."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a blade trap."
+msgstr "Detonó una trampa de cuchilla."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a blade trap."
+msgstr "Detonó una trampa de cuchilla."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a light snare."
+msgstr "Detonó una trampa ligera de lazo."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a light snare."
+msgstr "Detonó una trampa ligera de lazo."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a heavy snare."
+msgstr "Detonó una trampa pesada de lazo."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a heavy snare."
+msgstr "Detonó una trampa pesada de lazo."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a land mine."
+msgstr "Pisó una mina."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a land mine."
+msgstr "Pisó una mina."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a booby trap."
+msgstr "Detonó una trampa bomba."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a booby trap."
+msgstr "Detonó una trampa bomba."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a teleport trap."
+msgstr "Detonó una trampa de teletransportación."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a teleport trap."
+msgstr "Detonó una trampa de teletransportación."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into thick goo."
+msgstr "Pisó viscosidad espesa."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into thick goo."
+msgstr "Pisó viscosidad espesa."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into a dissector."
+msgstr "Entró en un disector."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into a dissector."
+msgstr "Entró en un disector."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell in a pit."
+msgstr "Cayó en un pozo."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell in a pit."
+msgstr "Cayó en un pozo."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell into a spiked pit."
+msgstr "Cayó en un pozo con púas."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell into a spiked pit."
+msgstr "Cayó en un pozo con púas."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell into a pit filled with glass shards."
+msgstr "Cayó en un pozo lleno de fragmentos de vidrio."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell into a pit filled with glass shards."
+msgstr "Cayó en un pozo lleno de fragmentos de vidrio."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into lava."
+msgstr "Se metió en la lava."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into lava."
+msgstr "Se metió en la lava."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into a sinkhole."
+msgstr "Se metió en un sumidero."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into a sinkhole."
+msgstr "Se metió en un sumidero."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell down a ledge."
+msgstr "Se cayó de una cornisa."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell down a ledge."
+msgstr "Se cayó de una cornisa."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a flood trap."
+msgstr "Detonó una trampa de inundación."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a flood trap."
+msgstr "Detonó una trampa de inundación."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shadow trap."
+msgstr "Detonó una trampa de sombras."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shadow trap."
+msgstr "Detonó una trampa de sombras."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a life-draining trap."
+msgstr "Detonó una trampa de consumo de vida."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a life-draining trap."
+msgstr "Detonó una trampa de consumo de vida."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shadow snake trap."
+msgstr "Detonó una trampa de serpientes."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shadow snake trap."
+msgstr "Detonó una trampa de serpientes."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Consumed a %s."
+msgstr "Consumió un/a %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Consumed a %s."
+msgstr "Consumió un/a %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened the Marloss Gateway."
+msgstr "Abrió la Puerta Marloss."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened the Marloss Gateway."
+msgstr "Abrió la Puerta Marloss."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Became one with the Mycus."
+msgstr "Se consustanció con el Mycus."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Became one with the Mycus."
+msgstr "Se consustanció con el Mycus."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Dermatik eggs hatched."
+msgstr "Huevos eclosionados de dermatik."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Dermatik eggs hatched."
+msgstr "Huevos eclosionados de dermatik."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected with dermatik eggs."
+msgstr "Inyectado con huevos de dermatik."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected with dermatik eggs."
+msgstr "Inyectada con huevos de dermatik."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Destroyed a triffid grove."
+msgstr "Destruiste una arboleda trífida."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Destroyed a triffid grove."
+msgstr "Destruiste una arboleda trífida."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to an asthma attack."
+msgstr "Sucumbiste a un ataque de asma."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to an asthma attack."
+msgstr "Sucumbiste a un ataque de asma."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of datura overdose."
+msgstr "Murió por sobredosis de datura."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of datura overdose."
+msgstr "Murió por sobredosis de datura."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of a healing stimulant overdose."
+msgstr "Murió por una sobredosis de estimulantes curativos."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of a healing stimulant overdose."
+msgstr "Murió por una sobredosis de estimulantes curativos."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of an alcohol overdose."
+msgstr "Murió por una sobredosis de alcohol"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of an alcohol overdose."
+msgstr "Murió por una sobredosis de alcohol"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of a drug overdose."
+msgstr "Murió por sobredosis de drogas."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of a drug overdose."
+msgstr "Murió por sobredosis de drogas."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to the infection."
+msgstr "Sucumbido a la infección."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to the infection."
+msgstr "Sucumbido a la infección."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of starvation."
+msgstr "Murió de hambre."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of starvation."
+msgstr "Murió de hambre."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of thirst."
+msgstr "Murió de sed."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of thirst."
+msgstr "Murió de sed."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Dug a shaft into lava."
+msgstr "Cavaste un hueco hacia la lava."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Dug a shaft into lava."
+msgstr "Cavaste un hueco hacia la lava."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Disarmed a nuclear missile."
+msgstr "Desactivar misil nuclear."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Disarmed a nuclear missile."
+msgstr "Desactivar misil nuclear."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Ate a sewage sample."
+msgstr "Se comió una muestra de agua cloacal."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Ate a sewage sample."
+msgstr "Se comió una muestra de agua cloacal."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "'%s' mutation turned into '%s'"
+msgstr "La mutación '%s' se convierte en '%s'"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "'%s' mutation turned into '%s'"
+msgstr "La mutación '%s' se convierte en '%s'"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Exhumed a grave."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Exhumed a grave."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Failed install of bionic: %s."
+msgstr "Fracasó instalación de biónico: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Failed install of bionic: %s."
+msgstr "Fracasó instalación de biónico: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Failed to remove bionic: %s."
+msgstr "Fracasó al sacarse un biónico: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Failed to remove bionic: %s."
+msgstr "Fracasó al sacarse un biónico: %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to lack of sleep."
+msgstr "Sucumbió a la falta de descanso."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to lack of sleep."
+msgstr "Sucumbió a la falta de descanso."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "The fuel tank of the %s exploded!"
+msgstr "¡Explotó el tanque de nafta del %s!"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "The fuel tank of the %s exploded!"
+msgstr "¡Explotó el tanque de nafta del %s!"
+
+#. ~ %s is addiction name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Became addicted to %s."
+msgstr "Te volviste adicto al %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Became addicted to %s."
+msgstr "Te volviste adicto al %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Gained the mutation '%s'."
+msgstr "Obtuvo la mutación '%s'."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Gained the mutation '%s'."
+msgstr "Obtuvo la mutación '%s'."
+
+#. ~ %d is skill level %s is skill name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Reached skill level %1$d in %2$s."
+msgstr "Alcanzaste el nivel %1$d en %2$s."
+
+#. ~ %d is skill level %s is skill name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Reached skill level %1$d in %2$s."
+msgstr "Alcanzaste el nivel %1$d en %2$s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s committed suicide."
+msgstr "%s se suicidó."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s committed suicide."
+msgstr "%s se suicidó."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s was killed."
+msgstr "Mataron a %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s was killed."
+msgstr "Mataron a %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Last words: %s"
+msgstr "Últimas palabras: %s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Last words: %s"
+msgstr "Últimas palabras: %s"
+
+#. ~ %s is player name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s began their journey into the Cataclysm."
+msgstr "%s comienza su camino por el Cataclismo."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s began their journey into the Cataclysm."
+msgstr "%s comienza su camino por el Cataclismo."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Installed bionic: %s."
+msgstr "Biónico instalado: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Installed bionic: %s."
+msgstr "Biónico instalado: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Installed bad bionic: %s."
+msgstr "Biónico defectuoso instalado: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Installed bad bionic: %s."
+msgstr "Biónico defectuoso instalado: %s."
+
+#. ~ %s is martial art
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Learned %s."
+msgstr "%s aprendido."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Learned %s."
+msgstr "%s aprendido."
+
+#. ~ %s is addiction name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Overcame addiction to %s."
+msgstr "Superaste tu adicción al %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Overcame addiction to %s."
+msgstr "Superaste tu adicción al %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s became hostile."
+msgstr "%s se volvió hostil."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s became hostile."
+msgstr "%s se volvió hostil"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened a portal."
+msgstr "Portal abierto."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened a portal."
+msgstr "Portal abierto."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened a strange temple."
+msgstr "Abriste un templo extraño."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened a strange temple."
+msgstr "Abriste un templo extraño."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Gained a spell level on %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Gained a spell level on %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Released subspace specimens."
+msgstr "Especímenes de subespacio liberados."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Released subspace specimens."
+msgstr "Especímenes de subespacio liberados."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Removed bionic: %s."
+msgstr "Biónico extraído: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Removed bionic: %s."
+msgstr "Biónico extraído: %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Sealed a Hazardous Material Sarcophagus."
+msgstr "Sarcófago de Material Peligroso Sellado."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Sealed a Hazardous Material Sarcophagus."
+msgstr "Sarcófago de Material Peligroso Sellado."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Telefragged a %s."
+msgstr "Telefragmentado a %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Telefragged a %s."
+msgstr "Telefragmentada a %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Spontaneous teleport."
+msgstr "Teletransportación espontánea."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Spontaneous teleport."
+msgstr "Teletransportación espontánea."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Teleported into a %s."
+msgstr "Teletransportado en %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Teleported into a %s."
+msgstr "Teletransportada en %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Terminated subspace specimens."
+msgstr "Especímenes de supespacio eliminados."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Terminated subspace specimens."
+msgstr "Especímenes de supespacio eliminados."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Threw up."
+msgstr "Vomitás."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Threw up."
+msgstr "Vomitás."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Set off an alarm."
+msgstr "Activar una alarma."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Set off an alarm."
+msgstr "Activar una alarma."
 
 #: src/examine_item_menu.cpp
 msgid "Link this item to which clothing?"
@@ -323908,6 +324954,10 @@ msgstr "la metralla"
 #: src/explosion.cpp
 #, c-format
 msgid "taking %d damage"
+msgstr ""
+
+#: src/explosion.cpp
+msgid "but take no damage"
 msgstr ""
 
 #: src/explosion.cpp
@@ -326851,6 +327901,282 @@ msgstr ""
 msgid "The %s flickers and goes dark — the pocket dimension has collapsed."
 msgstr ""
 
+#: src/game/bonuses.cpp
+msgid "Accuracy"
+msgstr "Precisión"
+
+#: src/game/bonuses.cpp
+msgid "Move cost"
+msgstr "Costo de movimiento"
+
+#: src/game/bonuses.cpp src/panels.cpp
+msgid "Armor"
+msgstr "Armadura"
+
+#: src/game/bonuses.cpp
+msgid "Armor penetration"
+msgstr ""
+
+#: src/game/bonuses.cpp
+msgid "Target armor multiplier"
+msgstr "Multiplicador armadura enemigo"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "type of damage"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$d%%</stat> of %3$s"
+msgstr "* %1$s: <stat>%2$d%%</stat> de %3$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$d%%</stat>"
+msgstr "* %1$s: <stat>%2$d%%</stat>"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$+d%%</stat> of %3$s"
+msgstr "* %1$s: <stat>%2$+d%%</stat> de %3$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$+d</stat>"
+msgstr "* %1$s: <stat>%2$+d</stat>"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "true"
+msgstr "verdadero/a"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "biological"
+msgstr "biológico/a"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "bash"
+msgstr "golpeado/a"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "cut"
+msgstr "cortado/a"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "acid"
+msgstr "ácido/a"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "stab"
+msgstr "apuñalado/a"
+
+#: src/game/damage.cpp
+msgctxt "damage_type"
+msgid "bullet"
+msgstr ""
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "heat"
+msgstr "cálido/a"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "cold"
+msgstr "frío/a"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "dark"
+msgstr "oscuro"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "light"
+msgstr ""
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "psionic"
+msgstr ""
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "electric"
+msgstr "eléctrico"
+
+#: src/game/gamemode.cpp
+msgid "Tutorial"
+msgstr "Tutorial"
+
+#: src/game/gamemode.cpp
+msgid "Defense"
+msgstr "Defensa"
+
+#: src/game/iuse_software.cpp
+msgid "You found kitten!"
+msgstr "¡Encontraste a kitten!"
+
+#: src/game/live_view.cpp
+msgid "< <color_green>Mouse View</color> >"
+msgstr "< <color_green>Vista con ratón</color> >"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "good"
+msgstr "bueno"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "bad"
+msgstr "malo"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "mixed"
+msgstr "mezclado"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "warning"
+msgstr "advertencia"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "info"
+msgstr "información"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "neutral"
+msgstr "neutral"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "debug"
+msgstr "debug"
+
+#: src/game/mod_manager_ui.cpp
+msgid "This mod is marked as obsolete and may contain severe errors."
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "License"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Author"
+msgid_plural "Authors"
+msgstr[0] "Autor"
+msgstr[1] "Autores"
+msgstr[2] "Autores"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Maintainer"
+msgid_plural "Maintainers"
+msgstr[0] "Mantenedor"
+msgstr[1] "Mantenedores"
+msgstr[2] "Mantenedores"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Dependency"
+msgid_plural "Dependencies"
+msgstr[0] "Dependencia"
+msgstr[1] "Dependencias"
+msgstr[2] "Dependencias"
+
+#. ~ Followed by list of mods the current mod conflicts with
+#: src/game/mod_manager_ui.cpp
+msgid "Conflict"
+msgid_plural "Conflicts"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Mod version"
+msgstr "Versión de Mod"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid "%s: API version %s\n"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Needs Lua"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Mod info path"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"  %s [%s]\n"
+"    with %s [%s]\n"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "The mod is already on the list."
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid "Unable to find mod with id \"%s\"."
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Failed to build dependency tree for the mod."
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"The mod has dependency problem(s):\n"
+"\n"
+"%s"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"The mod or some of its dependencies has conflict(s) with active mods:\n"
+"\n"
+"%s"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "skin color"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "eye color"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "hair style"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "hair color"
+msgstr ""
+
+#: src/game/perk.cpp
+msgid "Effects:"
+msgstr ""
+
 #: src/game_inventory.cpp
 msgid "Unload every carried item that can be unloaded"
 msgstr ""
@@ -327501,14 +328827,6 @@ msgstr ""
 #: src/game_inventory.cpp
 msgid "You don't have any devices to sterilize."
 msgstr ""
-
-#: src/gamemode.cpp
-msgid "Tutorial"
-msgstr "Tutorial"
-
-#: src/gamemode.cpp
-msgid "Defense"
-msgstr "Defensa"
 
 #: src/gamemode_defense.cpp
 msgid "A caravan approaches!  Press spacebar…"
@@ -333710,11 +335028,11 @@ msgstr ""
 msgid "<bold>Stat Bonus</bold>: "
 msgstr ""
 
-#: src/item.cpp src/iteminfo_armor.cpp
+#: src/item.cpp src/item/iteminfo_armor.cpp
 msgid "<bold>Weight capacity modifier</bold>: "
 msgstr "<bold>Modificador de capacidad de peso</bold>:"
 
-#: src/item.cpp src/iteminfo_armor.cpp
+#: src/item.cpp src/item/iteminfo_armor.cpp
 msgid "<bold>Weight capacity bonus</bold>: "
 msgstr "<bold>Bonus de capacidad de peso</bold>:"
 
@@ -334571,17 +335889,238 @@ msgctxt "corpse ownership qualifier"
 msgid "%1$s of %2$s, %3$s"
 msgstr ""
 
-#: src/item_action.cpp
+#: src/item.cpp src/item/book_scanning.cpp
+#, c-format
+msgid "digital copy of %s"
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You need a powered reader to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You need physical reading material to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You can't see well enough to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "This copy is already installed on the reader."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You no longer have the reading material or reader.  You stop scanning."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+#, c-format
+msgid "You save a digital copy of %s on your %s."
+msgstr ""
+
+#: src/item/digital_media.cpp
+msgid ""
+"No music collection is ready to play.  Try another file or wait for its "
+"cooldown."
+msgstr ""
+
+#: src/item/digital_media.cpp
+#, c-format
+msgid "You recently listened to this collection.  Try again in %s."
+msgstr ""
+
+#: src/item/item_action.cpp
 msgid "You don't have any items with registered uses!"
 msgstr ""
 
-#: src/item_action.cpp
+#: src/item/item_action.cpp
 msgid "Execute which action?"
 msgstr "¿Qué acción querés realizar?"
 
-#: src/item_action.cpp
+#: src/item/item_action.cpp
 msgid "You do not have an item that can perform this action."
 msgstr "Te falta un objeto que pueda realizar esta acción."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Personal aura</stat>. "
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Close to skin</stat>. "
+msgstr "<stat>Contra la piel</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Strapped</stat>. "
+msgstr "<stat>Atado</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Outer</stat>. "
+msgstr "<stat>Externo</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Waist</stat>. "
+msgstr "<stat>Cintura</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Outer aura</stat>. "
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Normal</stat>. "
+msgstr "<stat>Normal</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(too big)</bad>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(huge!)</bad>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(too small)</bad>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(tiny!)</bad>"
+msgstr " <bad>(diminuto!)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<info>(for all parts)</info>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Coverage</bold>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Encumbrance</bold>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "When Full"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Storage</bold>: "
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Covers</bold>: "
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>head</info>. "
+msgstr "La <info>cabeza</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>eyes</info>. "
+msgstr "Los <info>ojos</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>mouth</info>. "
+msgstr "La <info>boca</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>torso</info>. "
+msgstr "El <info>torso</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>arm</info>. "
+msgstr "Cualquier <info>brazo</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>arms</info>. "
+msgstr "Los <info>brazos</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left arm</info>. "
+msgstr "El <info>brazo izquierdo</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right arm</info>. "
+msgstr "El <info>brazo derecho</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>hand</info>. "
+msgstr "Cualquier <info>mano</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>hands</info>. "
+msgstr "Las <info>manos</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left hand</info>. "
+msgstr "La <info>mano izquierda</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right hand</info>. "
+msgstr "La <info>mano derecha</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>leg</info>. "
+msgstr "Cualquier <info>pierna</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>legs</info>. "
+msgstr "Las <info>piernas</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left leg</info>. "
+msgstr "La <info>pierna izquierda</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right leg</info>. "
+msgstr "La <info>pierna derecha</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>foot</info>. "
+msgstr "Cualquier <info>pie</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>feet</info>. "
+msgstr "Los <info>pies</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left foot</info>. "
+msgstr "El <info>pie izquierdo</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right foot</info>. "
+msgstr "El <info>pie derecho</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<info>Nothing</info>."
+msgstr "<info>Nada</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Layer: "
+msgstr "Nivel: "
+
+#: src/item/iteminfo_armor.cpp
+msgid ""
+"This item <good>won't conflict with</good> other items on the same "
+"<info>layer</info>."
+msgstr ""
+"Este objeto <good>no provocará conflictos</good> con otros objetos en la "
+"misma <info>capa</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Warmth: "
+msgstr "Abrigo: "
+
+#: src/item/iteminfo_armor.cpp
+msgid " <info>(fits)</info>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(poor fit)</bad>"
+msgstr ""
+
+#: src/item/material.cpp
+msgid "damages"
+msgstr "daños"
 
 #: src/item_factory.cpp
 msgid "gunmod"
@@ -334618,182 +336157,6 @@ msgstr ""
 #, c-format
 msgid "%d x %s"
 msgstr "%d x %s"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Personal aura</stat>. "
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Close to skin</stat>. "
-msgstr "<stat>Contra la piel</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Strapped</stat>. "
-msgstr "<stat>Atado</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Outer</stat>. "
-msgstr "<stat>Externo</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Waist</stat>. "
-msgstr "<stat>Cintura</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Outer aura</stat>. "
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Normal</stat>. "
-msgstr "<stat>Normal</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(too big)</bad>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(huge!)</bad>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(too small)</bad>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(tiny!)</bad>"
-msgstr " <bad>(diminuto!)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid "<info>(for all parts)</info>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Coverage</bold>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Encumbrance</bold>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "When Full"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Storage</bold>: "
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Covers</bold>: "
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>head</info>. "
-msgstr "La <info>cabeza</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>eyes</info>. "
-msgstr "Los <info>ojos</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>mouth</info>. "
-msgstr "La <info>boca</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>torso</info>. "
-msgstr "El <info>torso</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>arm</info>. "
-msgstr "Cualquier <info>brazo</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>arms</info>. "
-msgstr "Los <info>brazos</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left arm</info>. "
-msgstr "El <info>brazo izquierdo</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right arm</info>. "
-msgstr "El <info>brazo derecho</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>hand</info>. "
-msgstr "Cualquier <info>mano</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>hands</info>. "
-msgstr "Las <info>manos</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left hand</info>. "
-msgstr "La <info>mano izquierda</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right hand</info>. "
-msgstr "La <info>mano derecha</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>leg</info>. "
-msgstr "Cualquier <info>pierna</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>legs</info>. "
-msgstr "Las <info>piernas</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left leg</info>. "
-msgstr "La <info>pierna izquierda</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right leg</info>. "
-msgstr "La <info>pierna derecha</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>foot</info>. "
-msgstr "Cualquier <info>pie</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>feet</info>. "
-msgstr "Los <info>pies</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left foot</info>. "
-msgstr "El <info>pie izquierdo</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right foot</info>. "
-msgstr "El <info>pie derecho</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<info>Nothing</info>."
-msgstr "<info>Nada</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "Layer: "
-msgstr "Nivel: "
-
-#: src/iteminfo_armor.cpp
-msgid ""
-"This item <good>won't conflict with</good> other items on the same "
-"<info>layer</info>."
-msgstr ""
-"Este objeto <good>no provocará conflictos</good> con otros objetos en la "
-"misma <info>capa</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "Warmth: "
-msgstr "Abrigo: "
-
-#: src/iteminfo_armor.cpp
-msgid " <info>(fits)</info>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(poor fit)</bad>"
-msgstr ""
 
 #: src/itype.h
 msgid "click."
@@ -337027,14 +338390,6 @@ msgstr ""
 #: src/iuse.cpp
 msgid "is standing"
 msgstr ""
-
-#: src/iuse.cpp src/memorial_logger.cpp
-msgid "He"
-msgstr "Él"
-
-#: src/iuse.cpp src/memorial_logger.cpp
-msgid "She"
-msgstr "Ella"
 
 #: src/iuse.cpp
 msgctxt "Pronoun"
@@ -339755,10 +341110,6 @@ msgstr "Tallar"
 msgid "Carved"
 msgstr "Tallado"
 
-#: src/iuse_software.cpp
-msgid "You found kitten!"
-msgstr "¡Encontraste a kitten!"
-
 #: src/iuse_software_kitten.cpp
 msgid "\"I pity the fool who mistakes me for kitten!\", sez Mr. T."
 msgstr "\"¡Me da lástima el idiota que me confunde con kitten!\", dice Mr. T."
@@ -340772,246 +342123,9 @@ msgstr "<-> anterior"
 msgid "<u>ndo move"
 msgstr "<u> deshacer movimiento"
 
-#: src/kill_tracker.cpp
-msgid "You haven't killed any monsters yet!"
-msgstr "¡No mataste a ningún monstruo!"
-
-#: src/kill_tracker.cpp
-#, c-format
-msgid "KILL COUNT: %d"
-msgstr "TOTAL DE MUERTES: %d"
-
-#: src/kill_tracker.cpp
-#, c-format
-msgid ""
-"\n"
-"Experience: %d (%d points available)"
-msgstr ""
-
 #: src/language.cpp
 msgid "Select your language"
 msgstr "Elegí tu idioma"
-
-#. ~ abbreviated direction names and long direction names
-#: src/line.cpp
-msgid "N    "
-msgstr "N    "
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "north"
-msgstr "norte"
-
-#: src/line.cpp
-msgid "NE   "
-msgstr "NE"
-
-#: src/line.cpp
-msgid "northeast"
-msgstr "noreste"
-
-#: src/line.cpp
-msgid "E    "
-msgstr "E"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "east"
-msgstr "este"
-
-#: src/line.cpp
-msgid "SE   "
-msgstr "SE"
-
-#: src/line.cpp
-msgid "southeast"
-msgstr "sureste"
-
-#: src/line.cpp
-msgid "S    "
-msgstr "S"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "south"
-msgstr "sur"
-
-#: src/line.cpp
-msgid "SW   "
-msgstr "SO"
-
-#: src/line.cpp
-msgid "southwest"
-msgstr "suroeste"
-
-#: src/line.cpp
-msgid "W    "
-msgstr "O"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "west"
-msgstr "oeste"
-
-#: src/line.cpp
-msgid "NW   "
-msgstr "NO"
-
-#: src/line.cpp
-msgid "northwest"
-msgstr "noroeste"
-
-#: src/line.cpp
-msgid "UP_N "
-msgstr "ARR_N"
-
-#: src/line.cpp
-msgid "north and above"
-msgstr "norte y arriba"
-
-#: src/line.cpp
-msgid "UP_NE"
-msgstr "ARR_NE"
-
-#: src/line.cpp
-msgid "northeast and above"
-msgstr "noreste y arriba"
-
-#: src/line.cpp
-msgid "UP_E "
-msgstr "ARR_E"
-
-#: src/line.cpp
-msgid "east and above"
-msgstr "este y arriba"
-
-#: src/line.cpp
-msgid "UP_SE"
-msgstr "ARR_SE"
-
-#: src/line.cpp
-msgid "southeast and above"
-msgstr "sureste y arriba"
-
-#: src/line.cpp
-msgid "UP_S "
-msgstr "ARR_S"
-
-#: src/line.cpp
-msgid "south and above"
-msgstr "sur y arriba"
-
-#: src/line.cpp
-msgid "UP_SW"
-msgstr "ARR_SO"
-
-#: src/line.cpp
-msgid "southwest and above"
-msgstr "suroeste y arriba"
-
-#: src/line.cpp
-msgid "UP_W "
-msgstr "ARR_O"
-
-#: src/line.cpp
-msgid "west and above"
-msgstr "oeste y arriba"
-
-#: src/line.cpp
-msgid "UP_NW"
-msgstr "ARR_NW"
-
-#: src/line.cpp
-msgid "northwest and above"
-msgstr "noroeste y arriba"
-
-#: src/line.cpp
-msgid "DN_N "
-msgstr "AB_N"
-
-#: src/line.cpp
-msgid "north and below"
-msgstr "norte y abajo"
-
-#: src/line.cpp
-msgid "DN_NE"
-msgstr "AB_NE"
-
-#: src/line.cpp
-msgid "northeast and below"
-msgstr "noreste y abajo"
-
-#: src/line.cpp
-msgid "DN_E "
-msgstr "AB_E"
-
-#: src/line.cpp
-msgid "east and below"
-msgstr "este y abajo"
-
-#: src/line.cpp
-msgid "DN_SE"
-msgstr "AB_SE"
-
-#: src/line.cpp
-msgid "southeast and below"
-msgstr "sureste y abajo"
-
-#: src/line.cpp
-msgid "DN_S "
-msgstr "AB_S"
-
-#: src/line.cpp
-msgid "south and below"
-msgstr "sur y abajo"
-
-#: src/line.cpp
-msgid "DN_SW"
-msgstr "AB_SO"
-
-#: src/line.cpp
-msgid "southwest and below"
-msgstr "suroeste y abajo"
-
-#: src/line.cpp
-msgid "DN_W "
-msgstr "AB_O"
-
-#: src/line.cpp
-msgid "west and below"
-msgstr "oeste y abajo"
-
-#: src/line.cpp
-msgid "DN_NW"
-msgstr "AB_NO"
-
-#: src/line.cpp
-msgid "northwest and below"
-msgstr "noroeste y abajo"
-
-#: src/line.cpp
-msgid "UP_CE"
-msgstr "ARR_CE"
-
-#: src/line.cpp
-msgid "above"
-msgstr "arriba"
-
-#: src/line.cpp
-msgid "CE   "
-msgstr "CE"
-
-#: src/line.cpp
-msgid "center"
-msgstr "centro"
-
-#: src/line.cpp
-msgid "DN_CE"
-msgstr "AB_CE"
-
-#: src/line.cpp
-msgid "below"
-msgstr "abajo"
-
-#: src/live_view.cpp
-msgid "< <color_green>Mouse View</color> >"
-msgstr "< <color_green>Vista con ratón</color> >"
 
 #: src/loading_ui.cpp
 #, c-format
@@ -342728,9 +343842,221 @@ msgstr ""
 msgid " Style: %s "
 msgstr " Estilo: %s "
 
-#: src/material.cpp
-msgid "damages"
-msgstr "daños"
+#: src/math/line.cpp
+msgid "N    "
+msgstr "N    "
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "north"
+msgstr "norte"
+
+#: src/math/line.cpp
+msgid "NE   "
+msgstr "NE"
+
+#: src/math/line.cpp
+msgid "northeast"
+msgstr "noreste"
+
+#: src/math/line.cpp
+msgid "E    "
+msgstr "E"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "east"
+msgstr "este"
+
+#: src/math/line.cpp
+msgid "SE   "
+msgstr "SE"
+
+#: src/math/line.cpp
+msgid "southeast"
+msgstr "sureste"
+
+#: src/math/line.cpp
+msgid "S    "
+msgstr "S"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "south"
+msgstr "sur"
+
+#: src/math/line.cpp
+msgid "SW   "
+msgstr "SO"
+
+#: src/math/line.cpp
+msgid "southwest"
+msgstr "suroeste"
+
+#: src/math/line.cpp
+msgid "W    "
+msgstr "O"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "west"
+msgstr "oeste"
+
+#: src/math/line.cpp
+msgid "NW   "
+msgstr "NO"
+
+#: src/math/line.cpp
+msgid "northwest"
+msgstr "noroeste"
+
+#: src/math/line.cpp
+msgid "UP_N "
+msgstr "ARR_N"
+
+#: src/math/line.cpp
+msgid "north and above"
+msgstr "norte y arriba"
+
+#: src/math/line.cpp
+msgid "UP_NE"
+msgstr "ARR_NE"
+
+#: src/math/line.cpp
+msgid "northeast and above"
+msgstr "noreste y arriba"
+
+#: src/math/line.cpp
+msgid "UP_E "
+msgstr "ARR_E"
+
+#: src/math/line.cpp
+msgid "east and above"
+msgstr "este y arriba"
+
+#: src/math/line.cpp
+msgid "UP_SE"
+msgstr "ARR_SE"
+
+#: src/math/line.cpp
+msgid "southeast and above"
+msgstr "sureste y arriba"
+
+#: src/math/line.cpp
+msgid "UP_S "
+msgstr "ARR_S"
+
+#: src/math/line.cpp
+msgid "south and above"
+msgstr "sur y arriba"
+
+#: src/math/line.cpp
+msgid "UP_SW"
+msgstr "ARR_SO"
+
+#: src/math/line.cpp
+msgid "southwest and above"
+msgstr "suroeste y arriba"
+
+#: src/math/line.cpp
+msgid "UP_W "
+msgstr "ARR_O"
+
+#: src/math/line.cpp
+msgid "west and above"
+msgstr "oeste y arriba"
+
+#: src/math/line.cpp
+msgid "UP_NW"
+msgstr "ARR_NW"
+
+#: src/math/line.cpp
+msgid "northwest and above"
+msgstr "noroeste y arriba"
+
+#: src/math/line.cpp
+msgid "DN_N "
+msgstr "AB_N"
+
+#: src/math/line.cpp
+msgid "north and below"
+msgstr "norte y abajo"
+
+#: src/math/line.cpp
+msgid "DN_NE"
+msgstr "AB_NE"
+
+#: src/math/line.cpp
+msgid "northeast and below"
+msgstr "noreste y abajo"
+
+#: src/math/line.cpp
+msgid "DN_E "
+msgstr "AB_E"
+
+#: src/math/line.cpp
+msgid "east and below"
+msgstr "este y abajo"
+
+#: src/math/line.cpp
+msgid "DN_SE"
+msgstr "AB_SE"
+
+#: src/math/line.cpp
+msgid "southeast and below"
+msgstr "sureste y abajo"
+
+#: src/math/line.cpp
+msgid "DN_S "
+msgstr "AB_S"
+
+#: src/math/line.cpp
+msgid "south and below"
+msgstr "sur y abajo"
+
+#: src/math/line.cpp
+msgid "DN_SW"
+msgstr "AB_SO"
+
+#: src/math/line.cpp
+msgid "southwest and below"
+msgstr "suroeste y abajo"
+
+#: src/math/line.cpp
+msgid "DN_W "
+msgstr "AB_O"
+
+#: src/math/line.cpp
+msgid "west and below"
+msgstr "oeste y abajo"
+
+#: src/math/line.cpp
+msgid "DN_NW"
+msgstr "AB_NO"
+
+#: src/math/line.cpp
+msgid "northwest and below"
+msgstr "noroeste y abajo"
+
+#: src/math/line.cpp
+msgid "UP_CE"
+msgstr "ARR_CE"
+
+#: src/math/line.cpp
+msgid "above"
+msgstr "arriba"
+
+#: src/math/line.cpp
+msgid "CE   "
+msgstr "CE"
+
+#: src/math/line.cpp
+msgid "center"
+msgstr "centro"
+
+#: src/math/line.cpp
+msgid "DN_CE"
+msgstr "AB_CE"
+
+#: src/math/line.cpp
+msgid "below"
+msgstr "abajo"
 
 #: src/mattack_actors.cpp
 #, c-format
@@ -343680,1229 +345006,6 @@ msgstr "No pudiste robarle %1$s a %2$s, pero no despertaste ninguna sospecha."
 msgid "You failed to steal %1$s from %2$s."
 msgstr "No pudiste robarle %1$s a %2$s."
 
-#: src/memorial_logger.cpp
-msgid "an unemployed male"
-msgstr "un hombre desempleado"
-
-#: src/memorial_logger.cpp
-msgid "an unemployed female"
-msgstr "una mujer desempleada"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "a %s"
-msgstr "un %s"
-
-#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
-#. description
-#. ~ that designates the location relative to its surroundings.
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s was killed in a %2$s."
-msgstr "%1$s fue matado/a en %2$s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Cataclysm: Bright Nights version %s memorial file"
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "In memory of: %s"
-msgstr "En memoria de: %s"
-
-#. ~ The "%s" will be replaced by an epitaph as displayed in the memorial
-#. files. Replace the quotation marks as appropriate for your language.
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "epitaph"
-msgid "\"%s\""
-msgstr "\"%s\""
-
-#. ~ First parameter: Pronoun, second parameter: a profession name (with
-#. article)
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s was %2$s when the apocalypse began."
-msgstr "%1$s era %2$s cuando sucedió el apocalipsis."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s died on %2$s."
-msgstr "%1$s murió el %2$s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Cash on hand: %s"
-msgstr "Plata encima: %s"
-
-#: src/memorial_logger.cpp
-msgid "Final HP:"
-msgstr "PV final:"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid " Head: %d/%d"
-msgstr " Cabeza: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Torso: %d/%d"
-msgstr "Torso: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "L Arm: %d/%d"
-msgstr "Brazo Izq: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "R Arm: %d/%d"
-msgstr "Brazo Der: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "L Leg: %d/%d"
-msgstr "Pierna Izq: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "R Leg: %d/%d"
-msgstr "Pierna Der: %d/%d"
-
-#: src/memorial_logger.cpp
-msgid "Final Stats:"
-msgstr "Estadísticas finales:"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Str %d"
-msgstr "Fue %d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Dex %d"
-msgstr "Des %d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Int %d"
-msgstr "Int %d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Per %d"
-msgstr "Per %d"
-
-#: src/memorial_logger.cpp
-msgid "Base Stats:"
-msgstr "Estadísticas de base:"
-
-#: src/memorial_logger.cpp
-msgid "Final Messages:"
-msgstr "Mensajes finales:"
-
-#: src/memorial_logger.cpp
-msgid "No monsters were killed."
-msgstr "No mataste ningún monstruo."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Total kills: %d"
-msgstr "Muertes totales: %d"
-
-#. ~ 1. skill name, 2. skill level, 3. exercise percentage to next level
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%s: %d (%d %%)"
-msgstr "%s: %d (%d %%)"
-
-#: src/memorial_logger.cpp src/newcharacter.cpp
-msgid "Traits:"
-msgstr "Peculiaridades: "
-
-#: src/memorial_logger.cpp
-msgid "(None)"
-msgstr "(Ninguno)"
-
-#: src/memorial_logger.cpp
-msgid "Ongoing Effects:"
-msgstr "Efectos actuales:"
-
-#: src/memorial_logger.cpp
-msgid "No bionics were installed."
-msgstr "No hay biónicos instalados"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Bionic Power: %d/%d"
-msgstr ""
-
-#: src/memorial_logger.cpp src/panels.cpp
-msgid "Weapon:"
-msgstr "Arma:"
-
-#: src/memorial_logger.cpp
-msgid "Equipment:"
-msgstr "Equipo:"
-
-#: src/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
-msgid "Inventory:"
-msgstr "Inventario:"
-
-#: src/memorial_logger.cpp
-msgid "Lifetime Stats and Scores"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgid "Game History"
-msgstr "Historia del juego"
-
-#. ~ %s is artifact name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Activated the %s."
-msgstr "Activó el %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Activated the %s."
-msgstr "Activó el %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Activated a mininuke."
-msgstr "Activó una minibomba nuclear."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Activated a mininuke."
-msgstr "Activó una minibomba nuclear."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Consumed mutagen."
-msgstr "Consumió mutágeno."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Consumed mutagen."
-msgstr "Consumió mutágeno."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected mutagen."
-msgstr "Mutágeno inyectado."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected mutagen."
-msgstr "Mutágeno inyectado."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Consumed purifier."
-msgstr "Consumió purificante."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Consumed purifier."
-msgstr "Consumió purificante."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected purifier."
-msgstr "Se inyectó purificante."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected purifier."
-msgstr "Se inyectó purificante."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected smart purifier."
-msgstr "Se inyectó purificante inteligente."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected smart purifier."
-msgstr "Se inyectó purificante inteligente."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Angered a group of amigara horrors!"
-msgstr "¡Enojaste a un grupo de horrores amigara!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Angered a group of amigara horrors!"
-msgstr "¡Enojaste a un grupo de horrores amigara!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Awoke a group of dark wyrms!"
-msgstr "¡Despertaste un grupo de wyrms oscuros!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Awoke a group of dark wyrms!"
-msgstr "¡Despertaste un grupo de wyrms oscuros!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Became wanted by the police!"
-msgstr "¡Ahora sos buscado por la policía!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Became wanted by the police!"
-msgstr "¡Ahora sos buscada por la policía!"
-
-#. ~ %s is bodypart
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Broken %s began to mend."
-msgstr "Tu %s roto/a empieza a sanar."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Broken %s began to mend."
-msgstr "Tu %s roto/a empieza a sanar."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "You buried an unknown victim of the Cataclysm."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "You buried an unknown victim of The Cataclysm."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "You buried %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "You buried %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caused a resonance cascade."
-msgstr "Realimentación positiva causada."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caused a resonance cascade."
-msgstr "Realimentación positiva causada."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caught and killed an ape.  Prey doesn't have a name."
-msgstr "Atrapó y mató a un simio. Las presas no tienen nombre."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caught and killed an ape.  Prey doesn't have a name."
-msgstr "Atrapó y mató a un simio. Las presas no tienen nombre."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed a delicious-looking innocent, %s, in cold blood."
-msgstr "Mató a un inocente que se veía delicioso, %s, a sangre fría."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed a delicious-looking innocent, %s, in cold blood."
-msgstr "Mató a un inocente que se veía delicioso, %s, a sangre fría."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed an innocent, %s, in cold blood.  They were weak."
-msgstr "Mató a una persona inocente, %s, a sangre fría. Eran débiles."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed an innocent, %s, in cold blood.  They were weak."
-msgstr "Mató a una persona inocente, %s, a sangre fría. Eran débiles."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed an innocent, %s."
-msgstr "Mató a un inocente, %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed an innocent, %s."
-msgstr "Mató a un inocente, %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid ""
-"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
-msgstr ""
-"Mató a una persona inocente, %s, a sangre fría y se sintió terrible después."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid ""
-"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
-msgstr ""
-"Mató a una persona inocente, %s, a sangre fría y se sintió terrible después."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed a %s."
-msgstr "Mató un %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed a %s."
-msgstr "Mató un %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on bubble wrap."
-msgstr "Pisó plástico de burbuja."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on bubble wrap."
-msgstr "Pisó plástico de burbuja."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on glass."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on glass."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caught by a beartrap."
-msgstr "Agarrado por una trampa para osos."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caught by a beartrap."
-msgstr "Agarrada por una trampa para osos."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a spiked board."
-msgstr "Pisó una tabla con púas."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a spiked board."
-msgstr "Pisó una tabla con púas."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a caltrop."
-msgstr "Pisó unos miguelitos."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a caltrop."
-msgstr "Pisó unos miguelitos."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a glass caltrop."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a glass caltrop."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Tripped on a tripwire."
-msgstr "Tropezó con una cuerda de trampa."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Tripped on a tripwire."
-msgstr "Tropezó con una cuerda de trampa."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a crossbow trap."
-msgstr "Detonó una trampa de ballesta."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a crossbow trap."
-msgstr "Detonó una trampa de ballesta."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shotgun trap."
-msgstr "Detonó una trampa de escopeta."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shotgun trap."
-msgstr "Detonó una trampa de escopeta."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a blade trap."
-msgstr "Detonó una trampa de cuchilla."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a blade trap."
-msgstr "Detonó una trampa de cuchilla."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a light snare."
-msgstr "Detonó una trampa ligera de lazo."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a light snare."
-msgstr "Detonó una trampa ligera de lazo."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a heavy snare."
-msgstr "Detonó una trampa pesada de lazo."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a heavy snare."
-msgstr "Detonó una trampa pesada de lazo."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a land mine."
-msgstr "Pisó una mina."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a land mine."
-msgstr "Pisó una mina."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a booby trap."
-msgstr "Detonó una trampa bomba."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a booby trap."
-msgstr "Detonó una trampa bomba."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a teleport trap."
-msgstr "Detonó una trampa de teletransportación."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a teleport trap."
-msgstr "Detonó una trampa de teletransportación."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into thick goo."
-msgstr "Pisó viscosidad espesa."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into thick goo."
-msgstr "Pisó viscosidad espesa."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into a dissector."
-msgstr "Entró en un disector."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into a dissector."
-msgstr "Entró en un disector."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell in a pit."
-msgstr "Cayó en un pozo."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell in a pit."
-msgstr "Cayó en un pozo."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell into a spiked pit."
-msgstr "Cayó en un pozo con púas."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell into a spiked pit."
-msgstr "Cayó en un pozo con púas."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell into a pit filled with glass shards."
-msgstr "Cayó en un pozo lleno de fragmentos de vidrio."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell into a pit filled with glass shards."
-msgstr "Cayó en un pozo lleno de fragmentos de vidrio."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into lava."
-msgstr "Se metió en la lava."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into lava."
-msgstr "Se metió en la lava."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into a sinkhole."
-msgstr "Se metió en un sumidero."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into a sinkhole."
-msgstr "Se metió en un sumidero."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell down a ledge."
-msgstr "Se cayó de una cornisa."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell down a ledge."
-msgstr "Se cayó de una cornisa."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a flood trap."
-msgstr "Detonó una trampa de inundación."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a flood trap."
-msgstr "Detonó una trampa de inundación."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shadow trap."
-msgstr "Detonó una trampa de sombras."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shadow trap."
-msgstr "Detonó una trampa de sombras."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a life-draining trap."
-msgstr "Detonó una trampa de consumo de vida."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a life-draining trap."
-msgstr "Detonó una trampa de consumo de vida."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shadow snake trap."
-msgstr "Detonó una trampa de serpientes."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shadow snake trap."
-msgstr "Detonó una trampa de serpientes."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Consumed a %s."
-msgstr "Consumió un/a %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Consumed a %s."
-msgstr "Consumió un/a %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened the Marloss Gateway."
-msgstr "Abrió la Puerta Marloss."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened the Marloss Gateway."
-msgstr "Abrió la Puerta Marloss."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Became one with the Mycus."
-msgstr "Se consustanció con el Mycus."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Became one with the Mycus."
-msgstr "Se consustanció con el Mycus."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Dermatik eggs hatched."
-msgstr "Huevos eclosionados de dermatik."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Dermatik eggs hatched."
-msgstr "Huevos eclosionados de dermatik."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected with dermatik eggs."
-msgstr "Inyectado con huevos de dermatik."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected with dermatik eggs."
-msgstr "Inyectada con huevos de dermatik."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Destroyed a triffid grove."
-msgstr "Destruiste una arboleda trífida."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Destroyed a triffid grove."
-msgstr "Destruiste una arboleda trífida."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to an asthma attack."
-msgstr "Sucumbiste a un ataque de asma."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to an asthma attack."
-msgstr "Sucumbiste a un ataque de asma."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of datura overdose."
-msgstr "Murió por sobredosis de datura."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of datura overdose."
-msgstr "Murió por sobredosis de datura."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of a healing stimulant overdose."
-msgstr "Murió por una sobredosis de estimulantes curativos."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of a healing stimulant overdose."
-msgstr "Murió por una sobredosis de estimulantes curativos."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of an alcohol overdose."
-msgstr "Murió por una sobredosis de alcohol"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of an alcohol overdose."
-msgstr "Murió por una sobredosis de alcohol"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of a drug overdose."
-msgstr "Murió por sobredosis de drogas."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of a drug overdose."
-msgstr "Murió por sobredosis de drogas."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to the infection."
-msgstr "Sucumbido a la infección."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to the infection."
-msgstr "Sucumbido a la infección."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of starvation."
-msgstr "Murió de hambre."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of starvation."
-msgstr "Murió de hambre."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of thirst."
-msgstr "Murió de sed."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of thirst."
-msgstr "Murió de sed."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Dug a shaft into lava."
-msgstr "Cavaste un hueco hacia la lava."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Dug a shaft into lava."
-msgstr "Cavaste un hueco hacia la lava."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Disarmed a nuclear missile."
-msgstr "Desactivar misil nuclear."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Disarmed a nuclear missile."
-msgstr "Desactivar misil nuclear."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Ate a sewage sample."
-msgstr "Se comió una muestra de agua cloacal."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Ate a sewage sample."
-msgstr "Se comió una muestra de agua cloacal."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "'%s' mutation turned into '%s'"
-msgstr "La mutación '%s' se convierte en '%s'"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "'%s' mutation turned into '%s'"
-msgstr "La mutación '%s' se convierte en '%s'"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Exhumed a grave."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Exhumed a grave."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Failed install of bionic: %s."
-msgstr "Fracasó instalación de biónico: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Failed install of bionic: %s."
-msgstr "Fracasó instalación de biónico: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Failed to remove bionic: %s."
-msgstr "Fracasó al sacarse un biónico: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Failed to remove bionic: %s."
-msgstr "Fracasó al sacarse un biónico: %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to lack of sleep."
-msgstr "Sucumbió a la falta de descanso."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to lack of sleep."
-msgstr "Sucumbió a la falta de descanso."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "The fuel tank of the %s exploded!"
-msgstr "¡Explotó el tanque de nafta del %s!"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "The fuel tank of the %s exploded!"
-msgstr "¡Explotó el tanque de nafta del %s!"
-
-#. ~ %s is addiction name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Became addicted to %s."
-msgstr "Te volviste adicto al %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Became addicted to %s."
-msgstr "Te volviste adicto al %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Gained the mutation '%s'."
-msgstr "Obtuvo la mutación '%s'."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Gained the mutation '%s'."
-msgstr "Obtuvo la mutación '%s'."
-
-#. ~ %d is skill level %s is skill name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Reached skill level %1$d in %2$s."
-msgstr "Alcanzaste el nivel %1$d en %2$s."
-
-#. ~ %d is skill level %s is skill name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Reached skill level %1$d in %2$s."
-msgstr "Alcanzaste el nivel %1$d en %2$s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s committed suicide."
-msgstr "%s se suicidó."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s committed suicide."
-msgstr "%s se suicidó."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s was killed."
-msgstr "Mataron a %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s was killed."
-msgstr "Mataron a %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Last words: %s"
-msgstr "Últimas palabras: %s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Last words: %s"
-msgstr "Últimas palabras: %s"
-
-#. ~ %s is player name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s began their journey into the Cataclysm."
-msgstr "%s comienza su camino por el Cataclismo."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s began their journey into the Cataclysm."
-msgstr "%s comienza su camino por el Cataclismo."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Installed bionic: %s."
-msgstr "Biónico instalado: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Installed bionic: %s."
-msgstr "Biónico instalado: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Installed bad bionic: %s."
-msgstr "Biónico defectuoso instalado: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Installed bad bionic: %s."
-msgstr "Biónico defectuoso instalado: %s."
-
-#. ~ %s is martial art
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Learned %s."
-msgstr "%s aprendido."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Learned %s."
-msgstr "%s aprendido."
-
-#. ~ %s is addiction name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Overcame addiction to %s."
-msgstr "Superaste tu adicción al %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Overcame addiction to %s."
-msgstr "Superaste tu adicción al %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s became hostile."
-msgstr "%s se volvió hostil."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s became hostile."
-msgstr "%s se volvió hostil"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened a portal."
-msgstr "Portal abierto."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened a portal."
-msgstr "Portal abierto."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened a strange temple."
-msgstr "Abriste un templo extraño."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened a strange temple."
-msgstr "Abriste un templo extraño."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Gained a spell level on %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Gained a spell level on %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Released subspace specimens."
-msgstr "Especímenes de subespacio liberados."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Released subspace specimens."
-msgstr "Especímenes de subespacio liberados."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Removed bionic: %s."
-msgstr "Biónico extraído: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Removed bionic: %s."
-msgstr "Biónico extraído: %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Sealed a Hazardous Material Sarcophagus."
-msgstr "Sarcófago de Material Peligroso Sellado."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Sealed a Hazardous Material Sarcophagus."
-msgstr "Sarcófago de Material Peligroso Sellado."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Telefragged a %s."
-msgstr "Telefragmentado a %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Telefragged a %s."
-msgstr "Telefragmentada a %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Spontaneous teleport."
-msgstr "Teletransportación espontánea."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Spontaneous teleport."
-msgstr "Teletransportación espontánea."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Teleported into a %s."
-msgstr "Teletransportado en %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Teleported into a %s."
-msgstr "Teletransportada en %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Terminated subspace specimens."
-msgstr "Especímenes de supespacio eliminados."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Terminated subspace specimens."
-msgstr "Especímenes de supespacio eliminados."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Threw up."
-msgstr "Vomitás."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Threw up."
-msgstr "Vomitás."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Set off an alarm."
-msgstr "Activar una alarma."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Set off an alarm."
-msgstr "Activar una alarma."
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "good"
-msgstr "bueno"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "bad"
-msgstr "malo"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "mixed"
-msgstr "mezclado"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "warning"
-msgstr "advertencia"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "info"
-msgstr "información"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "neutral"
-msgstr "neutral"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "debug"
-msgstr "debug"
-
 #. ~ Message %s on the message log was repeated %d times, e.g. "You hear a
 #. whack! x 12"
 #: src/messages.cpp
@@ -345167,100 +345270,6 @@ msgstr "lista de mods predeterminados"
 #: src/mod_manager.cpp
 msgid "list of mods"
 msgstr "lista de mods"
-
-#: src/mod_manager_ui.cpp
-msgid "This mod is marked as obsolete and may contain severe errors."
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "License"
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "Author"
-msgid_plural "Authors"
-msgstr[0] "Autor"
-msgstr[1] "Autores"
-msgstr[2] "Autores"
-
-#: src/mod_manager_ui.cpp
-msgid "Maintainer"
-msgid_plural "Maintainers"
-msgstr[0] "Mantenedor"
-msgstr[1] "Mantenedores"
-msgstr[2] "Mantenedores"
-
-#: src/mod_manager_ui.cpp
-msgid "Dependency"
-msgid_plural "Dependencies"
-msgstr[0] "Dependencia"
-msgstr[1] "Dependencias"
-msgstr[2] "Dependencias"
-
-#. ~ Followed by list of mods the current mod conflicts with
-#: src/mod_manager_ui.cpp
-msgid "Conflict"
-msgid_plural "Conflicts"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-
-#: src/mod_manager_ui.cpp
-msgid "Mod version"
-msgstr "Versión de Mod"
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid "%s: API version %s\n"
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "Needs Lua"
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "Mod info path"
-msgstr ""
-
-#. ~ Single entry in the list of which mods conflict with which mods.
-#. ~ Please be mindful of spaces.
-#. ~ "%s [%s]" parts are mod names with internal ids.
-#. ~ The final result reads as "Mod X [id_x] with Mod Y [id_y]"
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"  %s [%s]\n"
-"    with %s [%s]\n"
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "The mod is already on the list."
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid "Unable to find mod with id \"%s\"."
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "Failed to build dependency tree for the mod."
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"The mod has dependency problem(s):\n"
-"\n"
-"%s"
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"The mod or some of its dependencies has conflict(s) with active mods:\n"
-"\n"
-"%s"
-msgstr ""
 
 #: src/monattack.cpp
 #, c-format
@@ -348849,22 +348858,6 @@ msgstr ""
 msgid "First temperature modifier can't be higher than the second"
 msgstr ""
 
-#: src/mutation_type.cpp
-msgid "skin color"
-msgstr ""
-
-#: src/mutation_type.cpp
-msgid "eye color"
-msgstr ""
-
-#: src/mutation_type.cpp
-msgid "hair style"
-msgstr ""
-
-#: src/mutation_type.cpp
-msgid "hair color"
-msgstr ""
-
 #: src/mutation_ui.cpp
 msgid "Reassigning."
 msgstr "Reasignando."
@@ -351588,11 +351581,11 @@ msgstr "Unidad de velocidad"
 msgid "Switch between km/h, mph and tiles/turn."
 msgstr ""
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "km/h"
 msgstr "km/h"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "mph"
 msgstr "mph"
 
@@ -351608,11 +351601,11 @@ msgstr "Unidad de masa"
 msgid "Switch between kg and lbs."
 msgstr "Cambia entre kg y lbs."
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "kg"
 msgstr "kg"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "lbs"
 msgstr "lbs"
 
@@ -355843,10 +355836,6 @@ msgstr ""
 msgid "safe mode"
 msgstr ""
 
-#: src/perk.cpp
-msgid "Effects:"
-msgstr ""
-
 #: src/perk_menu.cpp
 msgid "Scroll Description Up"
 msgstr ""
@@ -359029,40 +359018,57 @@ msgid "Go to last entry"
 msgstr "Ir al ultimo registro"
 
 #. ~ vehicle speed tiles per turn
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "t/t"
 msgstr "e/t"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "m/s"
 msgstr "m/s"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "c"
 msgstr "c"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "L"
 msgstr "L"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "qt"
 msgstr "qt"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "cup"
 msgstr "copa"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "liter"
 msgstr "litros"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "quart"
 msgstr "cuarto"
+
+#: src/utils/dependency_tree.cpp
+msgid "Missing Dependency(ies): "
+msgstr ""
+
+#: src/utils/dependency_tree.cpp
+msgid "Has conflicting dependencies: "
+msgstr ""
+
+#: src/utils/dependency_tree.cpp
+msgid "Has dependency cycle(s): "
+msgstr ""
+
+#: src/utils/dependency_tree.cpp
+#, c-format
+msgid "[%1$s] with [%2$s]"
+msgstr ""
 
 #: src/vehicle/turret.cpp
 msgid "None of the turrets are ready to fire."

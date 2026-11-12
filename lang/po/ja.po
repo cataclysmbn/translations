@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-10 23:19+0000\n"
+"POT-Creation-Date: 2026-11-11 23:55+0000\n"
 "Last-Translator: 匿名小太郎, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -18566,22 +18566,22 @@ msgstr "アルコール"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
 #: data/mods/My_Sweet_Cataclysm/sweet_materials.json
-#: data/mods/rpg_system/main.lua src/material.cpp
+#: data/mods/rpg_system/main.lua src/item/material.cpp
 msgid "damaged"
 msgstr "損傷した"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "lightly damaged"
 msgstr "軽度に損傷した"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "very damaged"
 msgstr "激しく損傷した"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "thoroughly damaged"
 msgstr "完全に損傷した"
 
@@ -35044,7 +35044,7 @@ msgstr[0] ""
 msgid "Not at technique at all"
 msgstr "技術皆無"
 
-#: data/json/techniques.json src/bonuses.cpp
+#: data/json/techniques.json src/game/bonuses.cpp
 msgid "Block"
 msgstr "防御"
 
@@ -109131,6 +109131,16 @@ msgid "hk_ump45"
 msgstr "UMP45"
 
 #: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45_retool_40"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45_retool_9mm"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
 msgid "9x19mm UMP conversion kit"
 msgid_plural "9x19mm UMP conversion kits"
 msgstr[0] "9x19mm UMP 変換キット"
@@ -132221,7 +132231,7 @@ msgstr "スタミナが減少する。ミ＝ゴ・スレイヴァーのビーム
 
 #: data/json/monster_special_attacks/spells.json
 #: data/mods/MagicalNights/Spells/item_only.json src/character_display.cpp
-#: src/distraction_manager.cpp src/memorial_logger.cpp
+#: src/distraction_manager.cpp src/event/memorial_logger.cpp
 msgid "Pain"
 msgstr "苦痛"
 
@@ -135233,18 +135243,6 @@ msgid ""
 msgstr "翼を持つ吸血哺乳類であるチスイコウモリ科の一種。洞窟や他の空洞をねぐらにし、反響定位を使って複雑な地形を素早く空中移動する。"
 
 #: data/json/monsters/mammal.json
-msgid "mutant vampire bat"
-msgid_plural "mutant vampire bats"
-msgstr[0] "変異吸血コウモリ"
-
-#. ~ Description for {'str': 'mutant vampire bat'}
-#: data/json/monsters/mammal.json
-msgid ""
-"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
-"This one looks terribly larger and stronger than its other kin."
-msgstr "翼を持つ吸血哺乳類であるチスイコウモリ科の一種。これは他の同族よりも恐ろしく大きく、強そうだ。"
-
-#: data/json/monsters/mammal.json
 msgid "black bear cub"
 msgid_plural "black bear cubs"
 msgstr[0] "子クロクマ"
@@ -136671,6 +136669,18 @@ msgid ""
 "Seeing how unnaturally dark this black cat's fur is, you are certain this is"
 " no ordinary cat.  Its fur seems to absorb light from the surroundings."
 msgstr "この黒猫の体毛は不自然なほど暗く、ただの猫ではないと確信させられる。その体毛は周囲の光を吸収しているようだ。"
+
+#: data/json/monsters/mutant_animal.json
+msgid "mutant vampire bat"
+msgid_plural "mutant vampire bats"
+msgstr[0] "変異吸血コウモリ"
+
+#. ~ Description for {'str': 'mutant vampire bat'}
+#: data/json/monsters/mutant_animal.json
+msgid ""
+"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
+"This one looks terribly larger and stronger than its other kin."
+msgstr "翼を持つ吸血哺乳類であるチスイコウモリ科の一種。これは他の同族よりも恐ろしく大きく、強そうだ。"
 
 #: data/json/monsters/mutant_animal.json
 msgid "scaled bear"
@@ -279131,7 +279141,7 @@ msgid "  ✦ %d unassigned stat point available!"
 msgid_plural "  ✦ %d unassigned stat points available!"
 msgstr[0] "✦ 未割り当ての能力ポイントが %d 利用可能だ！"
 
-#: data/mods/rpg_system/main.lua src/bonuses.cpp
+#: data/mods/rpg_system/main.lua src/game/bonuses.cpp
 msgid "Dodge"
 msgstr "回避"
 
@@ -279159,7 +279169,7 @@ msgstr "サブマシンガン"
 msgid "Speech"
 msgstr "話術"
 
-#: data/mods/rpg_system/main.lua src/diary.cpp src/memorial_logger.cpp
+#: data/mods/rpg_system/main.lua src/diary.cpp src/event/memorial_logger.cpp
 #: src/newcharacter.cpp
 msgid "Skills:"
 msgstr "スキル: "
@@ -282967,96 +282977,6 @@ msgstr "投下装置：単一タイル・複数爆弾"
 msgid "Bomber single tile & bomb"
 msgstr "投下装置：単一タイル・単体爆弾"
 
-#: src/achievement.cpp
-msgctxt "achievement kill requirement"
-msgid "monster"
-msgid_plural "monsters"
-msgstr[0] ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill at least %i %s%s"
-msgstr "少なくとも%i 体の%s%sを倒す"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Don't kill even a single %s"
-msgstr "%sを一匹たりとも殺さない"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill no more than %i %s%s"
-msgstr "%i 体以下の%s%sを倒す"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill any number of %s"
-msgstr ""
-
-#: src/achievement.cpp
-msgid " (failed)"
-msgstr " (失敗)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Attain skill level of %i in %s (%i/%i)"
-msgstr "%iレベルを%sのスキルで達成する (%i/%i)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Stay at or below skill level of %i in %s (%i/%i)"
-msgstr "%i以下に保つ%sのスキルレベル(%i/%i)"
-
-#: src/achievement.cpp
-msgid "time of cataclysm"
-msgstr "大災厄の時"
-
-#: src/achievement.cpp
-msgid "start of game"
-msgstr "ゲーム開始"
-
-#: src/achievement.cpp
-#, c-format
-msgid "At least %s from %s (%s remaining)"
-msgstr "%s生き残る(%s時点から計測、残り%s)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Within %s of %s (%s remaining)"
-msgstr "%s以内にモンスターを殺害する(%s時点から計測、残り%s)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "At least %s from %s (passed)"
-msgstr "%s生き残る(現在%sから目標時間経過済み)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Within %s of %s (passed)"
-msgstr "%s以内にモンスターを殺害する(現在%sから目標時間経過済み)"
-
-#: src/achievement.cpp
-msgid "Triggered by "
-msgstr "判定タイミング: "
-
-#: src/achievement.cpp
-#, c-format
-msgid "%s/%s "
-msgstr "%s/%s "
-
-#: src/achievement.cpp
-#, c-format
-msgid "Completed %s"
-msgstr "%sに達成"
-
-#: src/achievement.cpp
-msgid ""
-"\n"
-"Internal error: achievement lacks watcher."
-msgstr ""
-"\n"
-"内部エラー: 実績機能の観測システムがありません。"
-
 #: src/action.cpp src/input.cpp
 msgid "Press "
 msgstr "押す"
@@ -283409,7 +283329,7 @@ msgstr "特性\n"
 msgid "Total"
 msgstr "総合"
 
-#: src/activity_actor.cpp src/bonuses.cpp src/panels.cpp
+#: src/activity_actor.cpp src/game/bonuses.cpp src/panels.cpp
 #: src/player_activity.cpp
 msgid "Speed"
 msgstr "速度"
@@ -285308,7 +285228,7 @@ msgstr "充填"
 msgid "category"
 msgstr "分類"
 
-#: src/advanced_inv.cpp src/bonuses.cpp src/effect.cpp
+#: src/advanced_inv.cpp src/effect.cpp src/game/bonuses.cpp
 msgid "damage"
 msgstr "ダメージ"
 
@@ -288806,107 +288726,6 @@ msgstr ""
 "%sを起動できない！\n"
 "%sの説明を表示するには、'%s'を押す"
 
-#: src/bonuses.cpp
-msgid "Accuracy"
-msgstr "命中"
-
-#: src/bonuses.cpp
-msgid "Move cost"
-msgstr "移動コスト"
-
-#: src/bonuses.cpp src/panels.cpp
-msgid "Armor"
-msgstr "着用"
-
-#: src/bonuses.cpp
-msgid "Armor penetration"
-msgstr "装甲貫通"
-
-#: src/bonuses.cpp
-msgid "Target armor multiplier"
-msgstr "目標装甲倍率"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "strength"
-msgstr "筋力"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "dexterity"
-msgstr "器用"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "intelligence"
-msgstr "知力"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "perception"
-msgstr "感覚"
-
-#. ~ %1$s: damage type, %2$s: damage-related bonus name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "type of damage"
-msgid "%1$s %2$s"
-msgstr "%1$s%2$s"
-
-#. ~ %1$s: bonus name, %2$d: bonus percentage, %3$s: stat name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$d%%</stat> of %3$s"
-msgstr "* %1$s: <stat>%2$d%%</stat>x%3$s"
-
-#. ~ %1$s: bonus name, %2$d: bonus percentage
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$d%%</stat>"
-msgstr "* %1$s: <stat>%2$d%%</stat>"
-
-#. ~ %1$s: bonus name, %2$+d: bonus percentage, %3$s: stat name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$+d%%</stat> of %3$s"
-msgstr "* %1$s: <stat>%2$+d%%</stat>x%3$s"
-
-#. ~ %1$s: bonus name, %2$+d: bonus value
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$+d</stat>"
-msgstr "* %1$s:<stat>%2$+d</stat>"
-
-#: src/book_scanning.cpp
-msgid "You need a powered reader to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You need physical reading material to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You can't see well enough to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "This copy is already installed on the reader."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You no longer have the reading material or reader.  You stop scanning."
-msgstr ""
-
-#: src/book_scanning.cpp src/item.cpp
-#, c-format
-msgid "digital copy of %s"
-msgstr ""
-
-#: src/book_scanning.cpp
-#, c-format
-msgid "You save a digital copy of %s on your %s."
-msgstr ""
-
 #: src/calendar.cpp
 msgid "forever"
 msgstr "長時間"
@@ -290131,6 +289950,26 @@ msgstr "反対側に空間がない！"
 #: src/character.cpp
 msgid "Liquid from your inventory has leaked onto the ground."
 msgstr "所持していた液体が地面に流れ落ちた。"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "strength"
+msgstr "筋力"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "dexterity"
+msgstr "器用"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "intelligence"
+msgstr "知力"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "perception"
+msgstr "感覚"
 
 #: src/character.cpp
 #, c-format
@@ -294542,71 +294381,6 @@ msgstr "%s"
 msgid "You sense a creature here."
 msgstr "そこには何かがいるように感じる。"
 
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "true"
-msgstr "通常"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "biological"
-msgstr "生物"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "bash"
-msgstr "打撃"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "cut"
-msgstr "斬撃"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "acid"
-msgstr "酸"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "stab"
-msgstr "刺突"
-
-#: src/damage.cpp
-msgctxt "damage_type"
-msgid "bullet"
-msgstr "銃弾"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "heat"
-msgstr "熱気"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "cold"
-msgstr "冷気"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "dark"
-msgstr "暗い"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "light"
-msgstr "光"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "psionic"
-msgstr "サイオニック"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "electric"
-msgstr "電撃"
-
 #: src/debug.cpp
 msgid ""
 "Excessive error repetition detected.  Please file a bug report at "
@@ -295854,25 +295628,6 @@ msgstr "バッテリー残量を設定(単位:kJ、マイナスで減少)"
 msgid "JSON template written to "
 msgstr "JSONテンプレートの書き込み先: "
 
-#: src/dependency_tree.cpp
-msgid "Missing Dependency(ies): "
-msgstr "不足している依存関係:"
-
-#: src/dependency_tree.cpp
-msgid "Has conflicting dependencies: "
-msgstr "競合する依存関係:"
-
-#: src/dependency_tree.cpp
-msgid "Has dependency cycle(s): "
-msgstr "依存関係の循環参照:"
-
-#. ~ Single entry in list of conflicting dependencies, both %s are mod ids.
-#. ~ Example of final string: "[aftershock] with [classic-zombies]"
-#: src/dependency_tree.cpp
-#, c-format
-msgid "[%1$s] with [%2$s]"
-msgstr "[%1$s] と [%2$s]"
-
 #: src/descriptions.cpp
 #, c-format
 msgid ""
@@ -296000,7 +295755,7 @@ msgstr "最新の完了ミッション: "
 msgid "New failed missions:"
 msgstr "新たに失敗したミッション:"
 
-#: src/diary.cpp src/memorial_logger.cpp src/newcharacter.cpp
+#: src/diary.cpp src/event/memorial_logger.cpp src/newcharacter.cpp
 msgid "Bionics:"
 msgstr "CBM: "
 
@@ -296012,7 +295767,7 @@ msgstr "新たな義体:"
 msgid "Lost bionics:"
 msgstr "失われた義体:"
 
-#: src/diary.cpp src/game.cpp src/memorial_logger.cpp
+#: src/diary.cpp src/event/memorial_logger.cpp src/game.cpp
 msgid "Kills:"
 msgstr "殺害数: "
 
@@ -296162,17 +295917,6 @@ msgstr "日記を .md 形式でエクスポートする？"
 #: src/diary_ui.cpp
 msgid "Save entry?"
 msgstr "ページを保存する？"
-
-#: src/digital_media.cpp
-msgid ""
-"No music collection is ready to play.  Try another file or wait for its "
-"cooldown."
-msgstr ""
-
-#: src/digital_media.cpp
-#, c-format
-msgid "You recently listened to this collection.  Try again in %s."
-msgstr ""
 
 #: src/distraction_manager.cpp
 msgid "Interrupts you if you hear a noise."
@@ -296958,11 +296702,1313 @@ msgstr "  <color_%s>%s への免疫を付与</color>"
 msgid "  <color_%s>Gives mutation %s</color>"
 msgstr "  <color_%s>変異 %s を付与</color>"
 
+#: src/event/achievement.cpp
+msgctxt "achievement kill requirement"
+msgid "monster"
+msgid_plural "monsters"
+msgstr[0] ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill at least %i %s%s"
+msgstr "少なくとも%i 体の%s%sを倒す"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Don't kill even a single %s"
+msgstr "%sを一匹たりとも殺さない"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill no more than %i %s%s"
+msgstr "%i 体以下の%s%sを倒す"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill any number of %s"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid " (failed)"
+msgstr " (失敗)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Attain skill level of %i in %s (%i/%i)"
+msgstr "%iレベルを%sのスキルで達成する (%i/%i)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Stay at or below skill level of %i in %s (%i/%i)"
+msgstr "%i以下に保つ%sのスキルレベル(%i/%i)"
+
+#: src/event/achievement.cpp
+msgid "time of cataclysm"
+msgstr "大災厄の時"
+
+#: src/event/achievement.cpp
+msgid "start of game"
+msgstr "ゲーム開始"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "At least %s from %s (%s remaining)"
+msgstr "%s生き残る(%s時点から計測、残り%s)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Within %s of %s (%s remaining)"
+msgstr "%s以内にモンスターを殺害する(%s時点から計測、残り%s)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "At least %s from %s (passed)"
+msgstr "%s生き残る(現在%sから目標時間経過済み)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Within %s of %s (passed)"
+msgstr "%s以内にモンスターを殺害する(現在%sから目標時間経過済み)"
+
+#: src/event/achievement.cpp
+msgid "Triggered by "
+msgstr "判定タイミング: "
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "%s/%s "
+msgstr "%s/%s "
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Completed %s"
+msgstr "%sに達成"
+
+#: src/event/achievement.cpp
+msgid ""
+"\n"
+"Internal error: achievement lacks watcher."
+msgstr ""
+"\n"
+"内部エラー: 実績機能の観測システムがありません。"
+
 #. ~ Default format for scores.  %1$s is statistic description; %2$s is value.
-#: src/event_statistics.cpp
+#: src/event/event_statistics.cpp
 #, c-format
 msgid "%2$s %1$s"
 msgstr "%2$s%1$s"
+
+#: src/event/kill_tracker.cpp
+msgid "You haven't killed any monsters yet!"
+msgstr "何も殺していない！"
+
+#: src/event/kill_tracker.cpp
+#, c-format
+msgid "KILL COUNT: %d"
+msgstr "殺害数: %d"
+
+#: src/event/kill_tracker.cpp
+#, c-format
+msgid ""
+"\n"
+"Experience: %d (%d points available)"
+msgstr ""
+"\n"
+"経験値: %d (%dポイント利用可能)"
+
+#: src/event/memorial_logger.cpp src/iuse.cpp
+msgid "He"
+msgstr "彼"
+
+#: src/event/memorial_logger.cpp src/iuse.cpp
+msgid "She"
+msgstr "彼女"
+
+#: src/event/memorial_logger.cpp
+msgid "an unemployed male"
+msgstr "無職の男性"
+
+#: src/event/memorial_logger.cpp
+msgid "an unemployed female"
+msgstr "無職の女性"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "a %s"
+msgstr "%s"
+
+#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
+#. description
+#. ~ that designates the location relative to its surroundings.
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s was killed in a %2$s."
+msgstr "%1$sは%2$sで死亡した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Cataclysm: Bright Nights version %s memorial file"
+msgstr "Cataclysm: Bright Nights バージョン%s 追悼ファイル"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "In memory of: %s"
+msgstr "安らかに眠れ:%s"
+
+#. ~ The "%s" will be replaced by an epitaph as displayed in the memorial
+#. files. Replace the
+#. quotation marks as appropriate for your language.
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "epitaph"
+msgid "\"%s\""
+msgstr "\"%s\""
+
+#. ~ First parameter: Pronoun, second parameter: a profession name (with
+#. article)
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s was %2$s when the apocalypse began."
+msgstr "%1$sは大災厄が訪れる前は%2$sだった。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s died on %2$s."
+msgstr "%1$sは%2$sで死亡した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Cash on hand: %s"
+msgstr "所持金:%s"
+
+#: src/event/memorial_logger.cpp
+msgid "Final HP:"
+msgstr "最終HP:"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid " Head: %d/%d"
+msgstr " 頭部:%d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Torso: %d/%d"
+msgstr "胴体: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "L Arm: %d/%d"
+msgstr "左腕:%d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "R Arm: %d/%d"
+msgstr "右腕:%d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "L Leg: %d/%d"
+msgstr "左脚:%d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "R Leg: %d/%d"
+msgstr "右脚:%d/%d"
+
+#: src/event/memorial_logger.cpp
+msgid "Final Stats:"
+msgstr "最終能力値:"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Str %d"
+msgstr "筋:%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Dex %d"
+msgstr "器:%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Int %d"
+msgstr "知:%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Per %d"
+msgstr "感:%d"
+
+#: src/event/memorial_logger.cpp
+msgid "Base Stats:"
+msgstr "基本能力値:"
+
+#: src/event/memorial_logger.cpp
+msgid "Final Messages:"
+msgstr "最終ログ:"
+
+#: src/event/memorial_logger.cpp
+msgid "No monsters were killed."
+msgstr "何も倒していない。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Total kills: %d"
+msgstr "倒した数の合計:%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%s: %d (%d %%)"
+msgstr "%s: %d (%d %%)"
+
+#: src/event/memorial_logger.cpp src/newcharacter.cpp
+msgid "Traits:"
+msgstr "特性:"
+
+#: src/event/memorial_logger.cpp
+msgid "(None)"
+msgstr "(なし)"
+
+#: src/event/memorial_logger.cpp
+msgid "Ongoing Effects:"
+msgstr "適用中の効果:"
+
+#: src/event/memorial_logger.cpp
+msgid "No bionics were installed."
+msgstr "義体を装着していません。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Bionic Power: %d/%d"
+msgstr "電力: %d/%d"
+
+#: src/event/memorial_logger.cpp src/panels.cpp
+msgid "Weapon:"
+msgstr "武器:"
+
+#: src/event/memorial_logger.cpp
+msgid "Equipment:"
+msgstr "装備:"
+
+#: src/event/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
+msgid "Inventory:"
+msgstr "持ち物欄:"
+
+#: src/event/memorial_logger.cpp
+msgid "Lifetime Stats and Scores"
+msgstr "生涯スコアと能力値"
+
+#: src/event/memorial_logger.cpp
+msgid "Game History"
+msgstr "ゲーム履歴"
+
+#. ~ %s is artifact name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Activated the %s."
+msgstr "%sを起動した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Activated the %s."
+msgstr "%sを起動した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Activated a mininuke."
+msgstr "小型核を起動した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Activated a mininuke."
+msgstr "小型核を起動した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Consumed mutagen."
+msgstr "変異源物質を摂取した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Consumed mutagen."
+msgstr "変異源物質を摂取した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected mutagen."
+msgstr "変異原物質を注入した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected mutagen."
+msgstr "変異原物質を注入した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Consumed purifier."
+msgstr "変異治療薬を摂取した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Consumed purifier."
+msgstr "変異治療薬を摂取した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected purifier."
+msgstr "変異治療薬を注入した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected purifier."
+msgstr "変異治療薬を注入した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected smart purifier."
+msgstr "特定変異治療を注入した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected smart purifier."
+msgstr "特定変異治療を注入した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Angered a group of amigara horrors!"
+msgstr "アミガラ恐怖体の群れが怒りを爆発させた！"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Angered a group of amigara horrors!"
+msgstr "アミガラ恐怖体の群れが怒りを爆発させた！"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Awoke a group of dark wyrms!"
+msgstr "ダークウィルムの群れを目覚める！"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Awoke a group of dark wyrms!"
+msgstr "ダークウィルムの群れを目覚める！"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Became wanted by the police!"
+msgstr "警察によって指名手配された！"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Became wanted by the police!"
+msgstr "警察によって指名手配された！"
+
+#. ~ %s is bodypart
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Broken %s began to mend."
+msgstr "壊れた%sが再び繋がり始める。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Broken %s began to mend."
+msgstr "壊れた%sが再び繋がり始める。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "You buried an unknown victim of the Cataclysm."
+msgstr "この大災厄の名もなき犠牲者の一人を埋葬した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "You buried an unknown victim of The Cataclysm."
+msgstr "この大災厄の名もなき犠牲者の一人を埋葬した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "You buried %s."
+msgstr "%sを埋葬した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "You buried %s."
+msgstr "%sを埋葬した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caused a resonance cascade."
+msgstr "大共鳴現象が発生。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caused a resonance cascade."
+msgstr "大共鳴現象が発生。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caught and killed an ape.  Prey doesn't have a name."
+msgstr "類人猿を一匹捕らえて殺した。獲物に名前などいらない。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caught and killed an ape.  Prey doesn't have a name."
+msgstr "類人猿を一匹捕らえて殺した。獲物に名前などいらない。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed a delicious-looking innocent, %s, in cold blood."
+msgstr "美味しそうな、無実の%sを冷酷に殺した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed a delicious-looking innocent, %s, in cold blood."
+msgstr "美味しそうな、無実の%sを冷酷に殺した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed an innocent, %s, in cold blood.  They were weak."
+msgstr "無実の%sを冷酷に殺した。弱者に相応しい最期だった。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed an innocent, %s, in cold blood.  They were weak."
+msgstr "無実の%sを冷酷に殺した。弱者に相応しい最期だった。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed an innocent, %s."
+msgstr "無実の%sを殺した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed an innocent, %s."
+msgstr "無実の%sを殺した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid ""
+"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
+msgstr "無実の%sを冷酷に殺し、その後、恐ろしい罪悪感に悩まされた。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid ""
+"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
+msgstr "無実の%sを冷酷に殺し、その後、恐ろしい罪悪感に悩まされた。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed a %s."
+msgstr "%sを殺した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed a %s."
+msgstr "%sを殺した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on bubble wrap."
+msgstr "ビニールクラッカーを踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on bubble wrap."
+msgstr "ビニールクラッカーを踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on glass."
+msgstr "ガラスを踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on glass."
+msgstr "ガラスを踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caught by a beartrap."
+msgstr "トラバサミに挟まれた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caught by a beartrap."
+msgstr "トラバサミに挟まれた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a spiked board."
+msgstr "棘が付いた板を踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a spiked board."
+msgstr "棘が付いた板を踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a caltrop."
+msgstr "鉄菱を踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a caltrop."
+msgstr "鉄菱を踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a glass caltrop."
+msgstr "ガラス棘を踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a glass caltrop."
+msgstr "ガラス棘を踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Tripped on a tripwire."
+msgstr "トリップワイヤーに躓いた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Tripped on a tripwire."
+msgstr "トリップワイヤーに躓いた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a crossbow trap."
+msgstr "クロスボウの罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a crossbow trap."
+msgstr "クロスボウの罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shotgun trap."
+msgstr "ショットガンの罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shotgun trap."
+msgstr "ショットガンの罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a blade trap."
+msgstr "刃の罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a blade trap."
+msgstr "刃の罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a light snare."
+msgstr "くくり罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a light snare."
+msgstr "くくり罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a heavy snare."
+msgstr "強化くくり罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a heavy snare."
+msgstr "強化くくり罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a land mine."
+msgstr "地雷を踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a land mine."
+msgstr "地雷を踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a booby trap."
+msgstr "ブービートラップに引っ掛かった。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a booby trap."
+msgstr "ブービートラップに引っ掛かった。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a teleport trap."
+msgstr "瞬間移動の罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a teleport trap."
+msgstr "瞬間移動の罠を作動させた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into thick goo."
+msgstr "どろどろの汚泥の穴に入った。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into thick goo."
+msgstr "どろどろの汚泥の穴に入った。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into a dissector."
+msgstr "レーザー分解装置を踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into a dissector."
+msgstr "レーザー分解装置を踏んだ。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell in a pit."
+msgstr "穴に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell in a pit."
+msgstr "穴に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell into a spiked pit."
+msgstr "トゲの穴に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell into a spiked pit."
+msgstr "トゲの穴に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell into a pit filled with glass shards."
+msgstr "ガラスの破片が詰まった穴に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell into a pit filled with glass shards."
+msgstr "ガラスの破片が詰まった穴に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into lava."
+msgstr "溶岩に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into lava."
+msgstr "溶岩に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into a sinkhole."
+msgstr "陥没穴に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into a sinkhole."
+msgstr "陥没穴に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell down a ledge."
+msgstr "下の階層に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell down a ledge."
+msgstr "下の階層に落ちた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a flood trap."
+msgstr "浸水トラップを発動した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a flood trap."
+msgstr "浸水トラップを発動した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shadow trap."
+msgstr "影の罠を発動した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shadow trap."
+msgstr "影の罠を発動した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a life-draining trap."
+msgstr "生命力吸収トラップを発動した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a life-draining trap."
+msgstr "生命力吸収トラップを発動した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shadow snake trap."
+msgstr "影の蛇の罠を発動した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shadow snake trap."
+msgstr "影の蛇の罠を発動した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Consumed a %s."
+msgstr "%sを摂取した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Consumed a %s."
+msgstr "%sを摂取した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened the Marloss Gateway."
+msgstr "マーロスの関門を開いた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened the Marloss Gateway."
+msgstr "マーロスの関門を開いた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Became one with the Mycus."
+msgstr "マイカスと一体化した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Became one with the Mycus."
+msgstr "マイカスと一体化した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Dermatik eggs hatched."
+msgstr "寄生バチの卵が孵化した"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Dermatik eggs hatched."
+msgstr "寄生バチの卵が孵化した"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected with dermatik eggs."
+msgstr "寄生バチの卵を産み付けられた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected with dermatik eggs."
+msgstr "寄生バチの卵を産み付けられた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Destroyed a triffid grove."
+msgstr "トリフィドの森を破壊した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Destroyed a triffid grove."
+msgstr "トリフィドの森を破壊した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to an asthma attack."
+msgstr "喘息の発作により倒れた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to an asthma attack."
+msgstr "喘息の発作により倒れた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of datura overdose."
+msgstr "ダチュラの過剰摂取で死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of datura overdose."
+msgstr "ダチュラの過剰摂取で死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of a healing stimulant overdose."
+msgstr "覚醒剤の過剰摂取で死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of a healing stimulant overdose."
+msgstr "覚醒剤の過剰摂取で死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of an alcohol overdose."
+msgstr "アルコールの過剰摂取で死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of an alcohol overdose."
+msgstr "アルコールの過剰摂取で死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of a drug overdose."
+msgstr "薬物の過剰摂取で死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of a drug overdose."
+msgstr "薬物の過剰摂取で死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to the infection."
+msgstr "感染が悪化し、倒れた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to the infection."
+msgstr "感染が悪化し、倒れた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of starvation."
+msgstr "餓死した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of starvation."
+msgstr "餓死した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of thirst."
+msgstr "脱水で死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of thirst."
+msgstr "脱水で死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Dug a shaft into lava."
+msgstr "溶岩へ続く穴を掘った。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Dug a shaft into lava."
+msgstr "溶岩へ続く穴を掘った。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Disarmed a nuclear missile."
+msgstr "核ミサイルを無効化した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Disarmed a nuclear missile."
+msgstr "核ミサイルを無効化した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Ate a sewage sample."
+msgstr "下水のサンプルを食べた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Ate a sewage sample."
+msgstr "下水のサンプルを食べた。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "'%s' mutation turned into '%s'"
+msgstr "'%s'の変異が'%s'に変化した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "'%s' mutation turned into '%s'"
+msgstr "'%s'の変異が'%s'に変化した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Exhumed a grave."
+msgstr "墓を掘り起こした。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Exhumed a grave."
+msgstr "墓を掘り起こした。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Failed install of bionic: %s."
+msgstr "%sの義体装着に失敗した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Failed install of bionic: %s."
+msgstr "%sの義体装着に失敗した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Failed to remove bionic: %s."
+msgstr "義体の除去失敗:%s。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Failed to remove bionic: %s."
+msgstr "義体の除去失敗:%s。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to lack of sleep."
+msgstr "睡眠不足で倒れた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to lack of sleep."
+msgstr "睡眠不足で倒れた。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "The fuel tank of the %s exploded!"
+msgstr "%sの燃料タンクが爆発した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "The fuel tank of the %s exploded!"
+msgstr "%sの燃料タンクが爆発した。"
+
+#. ~ %s is addiction name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Became addicted to %s."
+msgstr "%sに中毒状態になった。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Became addicted to %s."
+msgstr "%sに中毒状態になった。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Gained the mutation '%s'."
+msgstr "'%s'の変異が発生した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Gained the mutation '%s'."
+msgstr "'%s'の変異が発生した。"
+
+#. ~ %d is skill level %s is skill name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Reached skill level %1$d in %2$s."
+msgstr "%2$sスキルが%1$dに上昇した。"
+
+#. ~ %d is skill level %s is skill name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Reached skill level %1$d in %2$s."
+msgstr "%2$sスキルが%1$dに上昇した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s committed suicide."
+msgstr "%sが自殺した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s committed suicide."
+msgstr "%sが自殺した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s was killed."
+msgstr "%sが殺害された。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s was killed."
+msgstr "%sが殺害された。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Last words: %s"
+msgstr "遺言:%s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Last words: %s"
+msgstr "遺言:%s"
+
+#. ~ %s is player name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s began their journey into the Cataclysm."
+msgstr "%sはカタクリズムへの旅を始めた。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s began their journey into the Cataclysm."
+msgstr "%sはカタクリズムへの旅を始めた。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Installed bionic: %s."
+msgstr "装着済み義体:%s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Installed bionic: %s."
+msgstr "装着済み義体:%s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Installed bad bionic: %s."
+msgstr "誤って装着された義体:%s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Installed bad bionic: %s."
+msgstr "誤って装着された義体:%s"
+
+#. ~ %s is martial art
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Learned %s."
+msgstr "%sを習得した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Learned %s."
+msgstr "%sを習得した。"
+
+#. ~ %s is addiction name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Overcame addiction to %s."
+msgstr "%s中毒を克服した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Overcame addiction to %s."
+msgstr "%s中毒を克服した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s became hostile."
+msgstr "%sが敵対的になった。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s became hostile."
+msgstr "%sが敵対的になった。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened a portal."
+msgstr "ポータルを開いた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened a portal."
+msgstr "ポータルを開いた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened a strange temple."
+msgstr "奇妙な神殿の扉を開いた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened a strange temple."
+msgstr "奇妙な神殿の扉を開いた。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Gained a spell level on %s."
+msgstr "%sの呪文レベルを1上げた。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Gained a spell level on %s."
+msgstr "%sの呪文レベルを1上げた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Released subspace specimens."
+msgstr "地下実験体を解放した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Released subspace specimens."
+msgstr "地下実験体を解放した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Removed bionic: %s."
+msgstr "義体除去:%s。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Removed bionic: %s."
+msgstr "義体除去:%s。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Sealed a Hazardous Material Sarcophagus."
+msgstr "有害物質封鎖石棺を封印した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Sealed a Hazardous Material Sarcophagus."
+msgstr "有害物質封鎖石棺を封印した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Telefragged a %s."
+msgstr "%sがテレポート中に死亡した。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Telefragged a %s."
+msgstr "%sがテレポート中に死亡した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Spontaneous teleport."
+msgstr "自発的なテレポート。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Spontaneous teleport."
+msgstr "自発的なテレポート。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Teleported into a %s."
+msgstr "%sへテレポートした。"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Teleported into a %s."
+msgstr "%sへテレポートした。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Terminated subspace specimens."
+msgstr "地下実験体を排除した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Terminated subspace specimens."
+msgstr "地下実験体を排除した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Threw up."
+msgstr "吐いた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Threw up."
+msgstr "吐いた。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Set off an alarm."
+msgstr "警報を発令した。"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Set off an alarm."
+msgstr "警報を発令した。"
 
 #: src/examine_item_menu.cpp
 msgid "Link this item to which clothing?"
@@ -297039,6 +298085,10 @@ msgstr "破片"
 #, c-format
 msgid "taking %d damage"
 msgstr "%d のダメージを受けた"
+
+#: src/explosion.cpp
+msgid "but take no damage"
+msgstr ""
 
 #: src/explosion.cpp
 msgid "but takes no damage"
@@ -300027,6 +301077,282 @@ msgstr "現在の状態ではこの地形を登れない。"
 msgid "The %s flickers and goes dark — the pocket dimension has collapsed."
 msgstr "%sがちらついて消えた——ポケット次元が崩壊した。"
 
+#: src/game/bonuses.cpp
+msgid "Accuracy"
+msgstr "命中"
+
+#: src/game/bonuses.cpp
+msgid "Move cost"
+msgstr "移動コスト"
+
+#: src/game/bonuses.cpp src/panels.cpp
+msgid "Armor"
+msgstr "着用"
+
+#: src/game/bonuses.cpp
+msgid "Armor penetration"
+msgstr "装甲貫通"
+
+#: src/game/bonuses.cpp
+msgid "Target armor multiplier"
+msgstr "目標装甲倍率"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "type of damage"
+msgid "%1$s %2$s"
+msgstr "%1$s%2$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$d%%</stat> of %3$s"
+msgstr "* %1$s: <stat>%2$d%%</stat>x%3$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$d%%</stat>"
+msgstr "* %1$s: <stat>%2$d%%</stat>"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$+d%%</stat> of %3$s"
+msgstr "* %1$s: <stat>%2$+d%%</stat>x%3$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$+d</stat>"
+msgstr "* %1$s:<stat>%2$+d</stat>"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "true"
+msgstr "通常"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "biological"
+msgstr "生物"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "bash"
+msgstr "打撃"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "cut"
+msgstr "斬撃"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "acid"
+msgstr "酸"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "stab"
+msgstr "刺突"
+
+#: src/game/damage.cpp
+msgctxt "damage_type"
+msgid "bullet"
+msgstr "銃弾"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "heat"
+msgstr "熱気"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "cold"
+msgstr "冷気"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "dark"
+msgstr "暗い"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "light"
+msgstr "光"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "psionic"
+msgstr "サイオニック"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "electric"
+msgstr "電撃"
+
+#: src/game/gamemode.cpp
+msgid "Tutorial"
+msgstr "チュートリアル"
+
+#: src/game/gamemode.cpp
+msgid "Defense"
+msgstr "防衛"
+
+#: src/game/iuse_software.cpp
+msgid "You found kitten!"
+msgstr "子猫を発見しました！"
+
+#: src/game/live_view.cpp
+msgid "< <color_green>Mouse View</color> >"
+msgstr "< <color_green>マウス視点操作</color> >"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "good"
+msgstr "良い"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "bad"
+msgstr "否定的"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "mixed"
+msgstr "複合的"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "warning"
+msgstr "警告"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "info"
+msgstr "情報"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "neutral"
+msgstr "一般"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "debug"
+msgstr "デバッグ"
+
+#: src/game/mod_manager_ui.cpp
+msgid "This mod is marked as obsolete and may contain severe errors."
+msgstr "このModは旧式であり、重大なエラーを含んでいる可能性がある。"
+
+#: src/game/mod_manager_ui.cpp
+msgid "License"
+msgstr "ライセンス"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Author"
+msgid_plural "Authors"
+msgstr[0] "作者"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Maintainer"
+msgid_plural "Maintainers"
+msgstr[0] "管理者"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Dependency"
+msgid_plural "Dependencies"
+msgstr[0] "必要Mod"
+
+#. ~ Followed by list of mods the current mod conflicts with
+#: src/game/mod_manager_ui.cpp
+msgid "Conflict"
+msgid_plural "Conflicts"
+msgstr[0] "コンフリクト"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Mod version"
+msgstr "Modバージョン"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid "%s: API version %s\n"
+msgstr "%s: APIバージョン%s\n"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Needs Lua"
+msgstr "Luaが必要"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Mod info path"
+msgstr "Mod情報パス"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"  %s [%s]\n"
+"    with %s [%s]\n"
+msgstr ""
+"  %s [%s]\n"
+"    と %s [%s]\n"
+
+#: src/game/mod_manager_ui.cpp
+msgid "The mod is already on the list."
+msgstr "Modはすでにリストに存在する。"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid "Unable to find mod with id \"%s\"."
+msgstr "ID「%s」のModが見つからない。"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Failed to build dependency tree for the mod."
+msgstr "Modの依存関係の構造を作成できなかった。"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"The mod has dependency problem(s):\n"
+"\n"
+"%s"
+msgstr ""
+"Modは以下の依存関係の問題を抱えている:\n"
+"\n"
+"%s"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"The mod or some of its dependencies has conflict(s) with active mods:\n"
+"\n"
+"%s"
+msgstr ""
+"Mod、またはその依存Modの一部が、有効化されたModと衝突している:\n"
+"\n"
+"%s"
+
+#: src/game/mutation_type.cpp
+msgid "skin color"
+msgstr "肌の色"
+
+#: src/game/mutation_type.cpp
+msgid "eye color"
+msgstr "瞳の色"
+
+#: src/game/mutation_type.cpp
+msgid "hair style"
+msgstr "髪型"
+
+#: src/game/mutation_type.cpp
+msgid "hair color"
+msgstr "髪の色"
+
+#: src/game/perk.cpp
+msgid "Effects:"
+msgstr "効果:"
+
 #: src/game_inventory.cpp
 msgid "Unload every carried item that can be unloaded"
 msgstr "所持しているアイテムのうち、抜き取り可能なものをすべて抜き取る。"
@@ -300673,14 +301999,6 @@ msgstr "<color_yellow>滅菌する機器を選択:</color>"
 #: src/game_inventory.cpp
 msgid "You don't have any devices to sterilize."
 msgstr "滅菌できる機器を持っていない。"
-
-#: src/gamemode.cpp
-msgid "Tutorial"
-msgstr "チュートリアル"
-
-#: src/gamemode.cpp
-msgid "Defense"
-msgstr "防衛"
 
 #: src/gamemode_defense.cpp
 msgid "A caravan approaches!  Press spacebar…"
@@ -306765,11 +308083,11 @@ msgstr "<bold>銃弾耐性</bold>:"
 msgid "<bold>Stat Bonus</bold>: "
 msgstr "<bold>能力値ボーナス</bold>: "
 
-#: src/item.cpp src/iteminfo_armor.cpp
+#: src/item.cpp src/item/iteminfo_armor.cpp
 msgid "<bold>Weight capacity modifier</bold>: "
 msgstr "<bold>所持重量変更</bold>: "
 
-#: src/item.cpp src/iteminfo_armor.cpp
+#: src/item.cpp src/item/iteminfo_armor.cpp
 msgid "<bold>Weight capacity bonus</bold>: "
 msgstr "<bold>所持重量ボーナス</bold>: "
 
@@ -307586,17 +308904,236 @@ msgctxt "corpse ownership qualifier"
 msgid "%1$s of %2$s, %3$s"
 msgstr "%2$s(%3$s)の%1$s"
 
-#: src/item_action.cpp
+#: src/item.cpp src/item/book_scanning.cpp
+#, c-format
+msgid "digital copy of %s"
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You need a powered reader to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You need physical reading material to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You can't see well enough to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "This copy is already installed on the reader."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You no longer have the reading material or reader.  You stop scanning."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+#, c-format
+msgid "You save a digital copy of %s on your %s."
+msgstr ""
+
+#: src/item/digital_media.cpp
+msgid ""
+"No music collection is ready to play.  Try another file or wait for its "
+"cooldown."
+msgstr ""
+
+#: src/item/digital_media.cpp
+#, c-format
+msgid "You recently listened to this collection.  Try again in %s."
+msgstr ""
+
+#: src/item/item_action.cpp
 msgid "You don't have any items with registered uses!"
 msgstr "登録済みの用途を持つ アイテムは持ってない！"
 
-#: src/item_action.cpp
+#: src/item/item_action.cpp
 msgid "Execute which action?"
 msgstr "どの動作を実行する？"
 
-#: src/item_action.cpp
+#: src/item/item_action.cpp
 msgid "You do not have an item that can perform this action."
 msgstr "その作業が可能なアイテムを所持してない。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Personal aura</stat>. "
+msgstr "<stat>オーラ(内)</stat>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Close to skin</stat>. "
+msgstr "<stat>肌着</stat>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Strapped</stat>. "
+msgstr "<stat>帯</stat>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Outer</stat>. "
+msgstr "<stat>上着</stat>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Waist</stat>. "
+msgstr "<stat>腰</stat>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Outer aura</stat>. "
+msgstr "<stat>オーラ(外)</stat>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Normal</stat>. "
+msgstr "<stat>通常</stat>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(too big)</bad>"
+msgstr " <bad>(大きすぎる)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(huge!)</bad>"
+msgstr " <bad>(巨大だ！)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(too small)</bad>"
+msgstr " <bad>(小さすぎる)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(tiny!)</bad>"
+msgstr " <bad>(極小だ！)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<info>(for all parts)</info>"
+msgstr "<info>(部位に対して)</info>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Coverage</bold>"
+msgstr "<bold>被覆率</bold>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Encumbrance</bold>"
+msgstr "<bold>動作制限</bold>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "When Full"
+msgstr "満載時"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Storage</bold>: "
+msgstr "<bold>収納</bold>: "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Covers</bold>: "
+msgstr "<bold>被覆部位</bold>: "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>head</info>. "
+msgstr "<info>頭</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>eyes</info>. "
+msgstr "<info>目</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>mouth</info>. "
+msgstr "<info>口</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>torso</info>. "
+msgstr "<info>胴</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>arm</info>. "
+msgstr "<info>片腕</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>arms</info>. "
+msgstr "<info>両腕</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left arm</info>. "
+msgstr "<info>左腕</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right arm</info>. "
+msgstr "<info>右腕</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>hand</info>. "
+msgstr "<info>片手</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>hands</info>. "
+msgstr "<info>両手</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left hand</info>. "
+msgstr "<info>左手</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right hand</info>. "
+msgstr "<info>右手</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>leg</info>. "
+msgstr "<info>片脚</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>legs</info>. "
+msgstr "<info>両脚</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left leg</info>. "
+msgstr "<info>左脚</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right leg</info>. "
+msgstr "<info>右足</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>foot</info>. "
+msgstr "<info>片足</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>feet</info>. "
+msgstr "<info>両足</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left foot</info>. "
+msgstr "<info>左足</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right foot</info>. "
+msgstr "<info>右足</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<info>Nothing</info>."
+msgstr "<info>なし</info>。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "Layer: "
+msgstr "積層: "
+
+#: src/item/iteminfo_armor.cpp
+msgid ""
+"This item <good>won't conflict with</good> other items on the same "
+"<info>layer</info>."
+msgstr "このアイテムは、同じ<info>レイヤー</info>にある他のアイテムと<good>競合しない</good>だろう。"
+
+#: src/item/iteminfo_armor.cpp
+msgid "Warmth: "
+msgstr "暖かさ: "
+
+#: src/item/iteminfo_armor.cpp
+msgid " <info>(fits)</info>"
+msgstr " <info>(フィットする)</info>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(poor fit)</bad>"
+msgstr " <bad>(フィットが悪い)</bad>"
+
+#: src/item/material.cpp
+msgid "damages"
+msgstr "傷んだ"
 
 #: src/item_factory.cpp
 msgid "gunmod"
@@ -307630,180 +309167,6 @@ msgstr "%zu スポーンの結果:"
 #, c-format
 msgid "%d x %s"
 msgstr "%dx%s"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Personal aura</stat>. "
-msgstr "<stat>オーラ(内)</stat>"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Close to skin</stat>. "
-msgstr "<stat>肌着</stat>。"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Strapped</stat>. "
-msgstr "<stat>帯</stat>。"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Outer</stat>. "
-msgstr "<stat>上着</stat>。"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Waist</stat>. "
-msgstr "<stat>腰</stat>。"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Outer aura</stat>. "
-msgstr "<stat>オーラ(外)</stat>"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Normal</stat>. "
-msgstr "<stat>通常</stat>。"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(too big)</bad>"
-msgstr " <bad>(大きすぎる)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(huge!)</bad>"
-msgstr " <bad>(巨大だ！)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(too small)</bad>"
-msgstr " <bad>(小さすぎる)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(tiny!)</bad>"
-msgstr " <bad>(極小だ！)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid "<info>(for all parts)</info>"
-msgstr "<info>(部位に対して)</info>"
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Coverage</bold>"
-msgstr "<bold>被覆率</bold>"
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Encumbrance</bold>"
-msgstr "<bold>動作制限</bold>"
-
-#: src/iteminfo_armor.cpp
-msgid "When Full"
-msgstr "満載時"
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Storage</bold>: "
-msgstr "<bold>収納</bold>: "
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Covers</bold>: "
-msgstr "<bold>被覆部位</bold>: "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>head</info>. "
-msgstr "<info>頭</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>eyes</info>. "
-msgstr "<info>目</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>mouth</info>. "
-msgstr "<info>口</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>torso</info>. "
-msgstr "<info>胴</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>arm</info>. "
-msgstr "<info>片腕</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>arms</info>. "
-msgstr "<info>両腕</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left arm</info>. "
-msgstr "<info>左腕</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right arm</info>. "
-msgstr "<info>右腕</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>hand</info>. "
-msgstr "<info>片手</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>hands</info>. "
-msgstr "<info>両手</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left hand</info>. "
-msgstr "<info>左手</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right hand</info>. "
-msgstr "<info>右手</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>leg</info>. "
-msgstr "<info>片脚</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>legs</info>. "
-msgstr "<info>両脚</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left leg</info>. "
-msgstr "<info>左脚</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right leg</info>. "
-msgstr "<info>右足</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>foot</info>. "
-msgstr "<info>片足</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>feet</info>. "
-msgstr "<info>両足</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left foot</info>. "
-msgstr "<info>左足</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right foot</info>. "
-msgstr "<info>右足</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "<info>Nothing</info>."
-msgstr "<info>なし</info>。"
-
-#: src/iteminfo_armor.cpp
-msgid "Layer: "
-msgstr "積層: "
-
-#: src/iteminfo_armor.cpp
-msgid ""
-"This item <good>won't conflict with</good> other items on the same "
-"<info>layer</info>."
-msgstr "このアイテムは、同じ<info>レイヤー</info>にある他のアイテムと<good>競合しない</good>だろう。"
-
-#: src/iteminfo_armor.cpp
-msgid "Warmth: "
-msgstr "暖かさ: "
-
-#: src/iteminfo_armor.cpp
-msgid " <info>(fits)</info>"
-msgstr " <info>(フィットする)</info>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(poor fit)</bad>"
-msgstr " <bad>(フィットが悪い)</bad>"
 
 #: src/itype.h
 msgid "click."
@@ -309995,14 +311358,6 @@ msgstr "座っている"
 #: src/iuse.cpp
 msgid "is standing"
 msgstr "立っている"
-
-#: src/iuse.cpp src/memorial_logger.cpp
-msgid "He"
-msgstr "彼"
-
-#: src/iuse.cpp src/memorial_logger.cpp
-msgid "She"
-msgstr "彼女"
 
 #: src/iuse.cpp
 msgctxt "Pronoun"
@@ -312704,10 +314059,6 @@ msgstr "記入"
 msgid "Carved"
 msgstr "書込み"
 
-#: src/iuse_software.cpp
-msgid "You found kitten!"
-msgstr "子猫を発見しました！"
-
 #: src/iuse_software_kitten.cpp
 msgid "\"I pity the fool who mistakes me for kitten!\", sez Mr. T."
 msgstr "「子猫につられて私を取り逃がしたおばかさん、かわいそ！」 Mr.T"
@@ -313701,248 +315052,9 @@ msgstr "<-> 前"
 msgid "<u>ndo move"
 msgstr "<u>一手戻す"
 
-#: src/kill_tracker.cpp
-msgid "You haven't killed any monsters yet!"
-msgstr "何も殺していない！"
-
-#: src/kill_tracker.cpp
-#, c-format
-msgid "KILL COUNT: %d"
-msgstr "殺害数: %d"
-
-#: src/kill_tracker.cpp
-#, c-format
-msgid ""
-"\n"
-"Experience: %d (%d points available)"
-msgstr ""
-"\n"
-"経験値: %d (%dポイント利用可能)"
-
 #: src/language.cpp
 msgid "Select your language"
 msgstr "言語設定"
-
-#. ~ abbreviated direction names and long direction names
-#: src/line.cpp
-msgid "N    "
-msgstr "N    "
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "north"
-msgstr "北"
-
-#: src/line.cpp
-msgid "NE   "
-msgstr "NE   "
-
-#: src/line.cpp
-msgid "northeast"
-msgstr "北東"
-
-#: src/line.cpp
-msgid "E    "
-msgstr "E    "
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "east"
-msgstr "東"
-
-#: src/line.cpp
-msgid "SE   "
-msgstr "SE   "
-
-#: src/line.cpp
-msgid "southeast"
-msgstr "南東"
-
-#: src/line.cpp
-msgid "S    "
-msgstr "S    "
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "south"
-msgstr "南"
-
-#: src/line.cpp
-msgid "SW   "
-msgstr "SW   "
-
-#: src/line.cpp
-msgid "southwest"
-msgstr "南西"
-
-#: src/line.cpp
-msgid "W    "
-msgstr "W    "
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "west"
-msgstr "西"
-
-#: src/line.cpp
-msgid "NW   "
-msgstr "NW   "
-
-#: src/line.cpp
-msgid "northwest"
-msgstr "北西"
-
-#: src/line.cpp
-msgid "UP_N "
-msgstr "上_北 "
-
-#: src/line.cpp
-msgid "north and above"
-msgstr "北の上層"
-
-#: src/line.cpp
-msgid "UP_NE"
-msgstr "UP_NE"
-
-#: src/line.cpp
-msgid "northeast and above"
-msgstr "北東の上層"
-
-#: src/line.cpp
-msgid "UP_E "
-msgstr "UP_E "
-
-#: src/line.cpp
-msgid "east and above"
-msgstr "東の上層"
-
-#: src/line.cpp
-msgid "UP_SE"
-msgstr "UP_SE"
-
-#: src/line.cpp
-msgid "southeast and above"
-msgstr "南東の上層"
-
-#: src/line.cpp
-msgid "UP_S "
-msgstr "UP_S "
-
-#: src/line.cpp
-msgid "south and above"
-msgstr "南の上層"
-
-#: src/line.cpp
-msgid "UP_SW"
-msgstr "UP_SW"
-
-#: src/line.cpp
-msgid "southwest and above"
-msgstr "南西の上層"
-
-#: src/line.cpp
-msgid "UP_W "
-msgstr "UP_W "
-
-#: src/line.cpp
-msgid "west and above"
-msgstr "西の上層"
-
-#: src/line.cpp
-msgid "UP_NW"
-msgstr "UP_NW"
-
-#: src/line.cpp
-msgid "northwest and above"
-msgstr "北西の上層"
-
-#: src/line.cpp
-msgid "DN_N "
-msgstr "DN_N "
-
-#: src/line.cpp
-msgid "north and below"
-msgstr "北の下層"
-
-#: src/line.cpp
-msgid "DN_NE"
-msgstr "DN_NE"
-
-#: src/line.cpp
-msgid "northeast and below"
-msgstr "北東の下層"
-
-#: src/line.cpp
-msgid "DN_E "
-msgstr "DN_E "
-
-#: src/line.cpp
-msgid "east and below"
-msgstr "東の下層"
-
-#: src/line.cpp
-msgid "DN_SE"
-msgstr "DN_SE"
-
-#: src/line.cpp
-msgid "southeast and below"
-msgstr "南東の下層"
-
-#: src/line.cpp
-msgid "DN_S "
-msgstr "DN_S "
-
-#: src/line.cpp
-msgid "south and below"
-msgstr "南の下層"
-
-#: src/line.cpp
-msgid "DN_SW"
-msgstr "DN_SW"
-
-#: src/line.cpp
-msgid "southwest and below"
-msgstr "南西の下層"
-
-#: src/line.cpp
-msgid "DN_W "
-msgstr "DN_W "
-
-#: src/line.cpp
-msgid "west and below"
-msgstr "西の下層"
-
-#: src/line.cpp
-msgid "DN_NW"
-msgstr "DN_NW"
-
-#: src/line.cpp
-msgid "northwest and below"
-msgstr "北西の下層"
-
-#: src/line.cpp
-msgid "UP_CE"
-msgstr "UP_CE"
-
-#: src/line.cpp
-msgid "above"
-msgstr "上"
-
-#: src/line.cpp
-msgid "CE   "
-msgstr "CE   "
-
-#: src/line.cpp
-msgid "center"
-msgstr "中央"
-
-#: src/line.cpp
-msgid "DN_CE"
-msgstr "DN_CE"
-
-#: src/line.cpp
-msgid "below"
-msgstr "下"
-
-#: src/live_view.cpp
-msgid "< <color_green>Mouse View</color> >"
-msgstr "< <color_green>マウス視点操作</color> >"
 
 #: src/loading_ui.cpp
 #, c-format
@@ -315631,9 +316743,221 @@ msgstr " [所持]"
 msgid " Style: %s "
 msgstr " スタイル: %s "
 
-#: src/material.cpp
-msgid "damages"
-msgstr "傷んだ"
+#: src/math/line.cpp
+msgid "N    "
+msgstr "N    "
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "north"
+msgstr "北"
+
+#: src/math/line.cpp
+msgid "NE   "
+msgstr "NE   "
+
+#: src/math/line.cpp
+msgid "northeast"
+msgstr "北東"
+
+#: src/math/line.cpp
+msgid "E    "
+msgstr "E    "
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "east"
+msgstr "東"
+
+#: src/math/line.cpp
+msgid "SE   "
+msgstr "SE   "
+
+#: src/math/line.cpp
+msgid "southeast"
+msgstr "南東"
+
+#: src/math/line.cpp
+msgid "S    "
+msgstr "S    "
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "south"
+msgstr "南"
+
+#: src/math/line.cpp
+msgid "SW   "
+msgstr "SW   "
+
+#: src/math/line.cpp
+msgid "southwest"
+msgstr "南西"
+
+#: src/math/line.cpp
+msgid "W    "
+msgstr "W    "
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "west"
+msgstr "西"
+
+#: src/math/line.cpp
+msgid "NW   "
+msgstr "NW   "
+
+#: src/math/line.cpp
+msgid "northwest"
+msgstr "北西"
+
+#: src/math/line.cpp
+msgid "UP_N "
+msgstr "上_北 "
+
+#: src/math/line.cpp
+msgid "north and above"
+msgstr "北の上層"
+
+#: src/math/line.cpp
+msgid "UP_NE"
+msgstr "UP_NE"
+
+#: src/math/line.cpp
+msgid "northeast and above"
+msgstr "北東の上層"
+
+#: src/math/line.cpp
+msgid "UP_E "
+msgstr "UP_E "
+
+#: src/math/line.cpp
+msgid "east and above"
+msgstr "東の上層"
+
+#: src/math/line.cpp
+msgid "UP_SE"
+msgstr "UP_SE"
+
+#: src/math/line.cpp
+msgid "southeast and above"
+msgstr "南東の上層"
+
+#: src/math/line.cpp
+msgid "UP_S "
+msgstr "UP_S "
+
+#: src/math/line.cpp
+msgid "south and above"
+msgstr "南の上層"
+
+#: src/math/line.cpp
+msgid "UP_SW"
+msgstr "UP_SW"
+
+#: src/math/line.cpp
+msgid "southwest and above"
+msgstr "南西の上層"
+
+#: src/math/line.cpp
+msgid "UP_W "
+msgstr "UP_W "
+
+#: src/math/line.cpp
+msgid "west and above"
+msgstr "西の上層"
+
+#: src/math/line.cpp
+msgid "UP_NW"
+msgstr "UP_NW"
+
+#: src/math/line.cpp
+msgid "northwest and above"
+msgstr "北西の上層"
+
+#: src/math/line.cpp
+msgid "DN_N "
+msgstr "DN_N "
+
+#: src/math/line.cpp
+msgid "north and below"
+msgstr "北の下層"
+
+#: src/math/line.cpp
+msgid "DN_NE"
+msgstr "DN_NE"
+
+#: src/math/line.cpp
+msgid "northeast and below"
+msgstr "北東の下層"
+
+#: src/math/line.cpp
+msgid "DN_E "
+msgstr "DN_E "
+
+#: src/math/line.cpp
+msgid "east and below"
+msgstr "東の下層"
+
+#: src/math/line.cpp
+msgid "DN_SE"
+msgstr "DN_SE"
+
+#: src/math/line.cpp
+msgid "southeast and below"
+msgstr "南東の下層"
+
+#: src/math/line.cpp
+msgid "DN_S "
+msgstr "DN_S "
+
+#: src/math/line.cpp
+msgid "south and below"
+msgstr "南の下層"
+
+#: src/math/line.cpp
+msgid "DN_SW"
+msgstr "DN_SW"
+
+#: src/math/line.cpp
+msgid "southwest and below"
+msgstr "南西の下層"
+
+#: src/math/line.cpp
+msgid "DN_W "
+msgstr "DN_W "
+
+#: src/math/line.cpp
+msgid "west and below"
+msgstr "西の下層"
+
+#: src/math/line.cpp
+msgid "DN_NW"
+msgstr "DN_NW"
+
+#: src/math/line.cpp
+msgid "northwest and below"
+msgstr "北西の下層"
+
+#: src/math/line.cpp
+msgid "UP_CE"
+msgstr "UP_CE"
+
+#: src/math/line.cpp
+msgid "above"
+msgstr "上"
+
+#: src/math/line.cpp
+msgid "CE   "
+msgstr "CE   "
+
+#: src/math/line.cpp
+msgid "center"
+msgstr "中央"
+
+#: src/math/line.cpp
+msgid "DN_CE"
+msgstr "DN_CE"
+
+#: src/math/line.cpp
+msgid "below"
+msgstr "下"
 
 #: src/mattack_actors.cpp
 #, c-format
@@ -316577,1227 +317901,6 @@ msgstr "%2$sから%1$sを盗もうとしたが失敗、しかし気づかれは�
 msgid "You failed to steal %1$s from %2$s."
 msgstr "%2$sから%1$sを盗もうとしたが失敗した。"
 
-#: src/memorial_logger.cpp
-msgid "an unemployed male"
-msgstr "無職の男性"
-
-#: src/memorial_logger.cpp
-msgid "an unemployed female"
-msgstr "無職の女性"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "a %s"
-msgstr "%s"
-
-#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
-#. description
-#. ~ that designates the location relative to its surroundings.
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s was killed in a %2$s."
-msgstr "%1$sは%2$sで死亡した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Cataclysm: Bright Nights version %s memorial file"
-msgstr "Cataclysm: Bright Nights バージョン%s 追悼ファイル"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "In memory of: %s"
-msgstr "安らかに眠れ:%s"
-
-#. ~ The "%s" will be replaced by an epitaph as displayed in the memorial
-#. files. Replace the quotation marks as appropriate for your language.
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "epitaph"
-msgid "\"%s\""
-msgstr "\"%s\""
-
-#. ~ First parameter: Pronoun, second parameter: a profession name (with
-#. article)
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s was %2$s when the apocalypse began."
-msgstr "%1$sは大災厄が訪れる前は%2$sだった。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s died on %2$s."
-msgstr "%1$sは%2$sで死亡した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Cash on hand: %s"
-msgstr "所持金:%s"
-
-#: src/memorial_logger.cpp
-msgid "Final HP:"
-msgstr "最終HP:"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid " Head: %d/%d"
-msgstr " 頭部:%d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Torso: %d/%d"
-msgstr "胴体: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "L Arm: %d/%d"
-msgstr "左腕:%d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "R Arm: %d/%d"
-msgstr "右腕:%d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "L Leg: %d/%d"
-msgstr "左脚:%d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "R Leg: %d/%d"
-msgstr "右脚:%d/%d"
-
-#: src/memorial_logger.cpp
-msgid "Final Stats:"
-msgstr "最終能力値:"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Str %d"
-msgstr "筋:%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Dex %d"
-msgstr "器:%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Int %d"
-msgstr "知:%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Per %d"
-msgstr "感:%d"
-
-#: src/memorial_logger.cpp
-msgid "Base Stats:"
-msgstr "基本能力値:"
-
-#: src/memorial_logger.cpp
-msgid "Final Messages:"
-msgstr "最終ログ:"
-
-#: src/memorial_logger.cpp
-msgid "No monsters were killed."
-msgstr "何も倒していない。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Total kills: %d"
-msgstr "倒した数の合計:%d"
-
-#. ~ 1. skill name, 2. skill level, 3. exercise percentage to next level
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%s: %d (%d %%)"
-msgstr "%s: %d (%d %%)"
-
-#: src/memorial_logger.cpp src/newcharacter.cpp
-msgid "Traits:"
-msgstr "特性:"
-
-#: src/memorial_logger.cpp
-msgid "(None)"
-msgstr "(なし)"
-
-#: src/memorial_logger.cpp
-msgid "Ongoing Effects:"
-msgstr "適用中の効果:"
-
-#: src/memorial_logger.cpp
-msgid "No bionics were installed."
-msgstr "義体を装着していません。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Bionic Power: %d/%d"
-msgstr "電力: %d/%d"
-
-#: src/memorial_logger.cpp src/panels.cpp
-msgid "Weapon:"
-msgstr "武器:"
-
-#: src/memorial_logger.cpp
-msgid "Equipment:"
-msgstr "装備:"
-
-#: src/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
-msgid "Inventory:"
-msgstr "持ち物欄:"
-
-#: src/memorial_logger.cpp
-msgid "Lifetime Stats and Scores"
-msgstr "生涯スコアと能力値"
-
-#: src/memorial_logger.cpp
-msgid "Game History"
-msgstr "ゲーム履歴"
-
-#. ~ %s is artifact name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Activated the %s."
-msgstr "%sを起動した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Activated the %s."
-msgstr "%sを起動した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Activated a mininuke."
-msgstr "小型核を起動した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Activated a mininuke."
-msgstr "小型核を起動した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Consumed mutagen."
-msgstr "変異源物質を摂取した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Consumed mutagen."
-msgstr "変異源物質を摂取した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected mutagen."
-msgstr "変異原物質を注入した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected mutagen."
-msgstr "変異原物質を注入した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Consumed purifier."
-msgstr "変異治療薬を摂取した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Consumed purifier."
-msgstr "変異治療薬を摂取した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected purifier."
-msgstr "変異治療薬を注入した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected purifier."
-msgstr "変異治療薬を注入した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected smart purifier."
-msgstr "特定変異治療を注入した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected smart purifier."
-msgstr "特定変異治療を注入した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Angered a group of amigara horrors!"
-msgstr "アミガラ恐怖体の群れが怒りを爆発させた！"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Angered a group of amigara horrors!"
-msgstr "アミガラ恐怖体の群れが怒りを爆発させた！"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Awoke a group of dark wyrms!"
-msgstr "ダークウィルムの群れを目覚める！"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Awoke a group of dark wyrms!"
-msgstr "ダークウィルムの群れを目覚める！"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Became wanted by the police!"
-msgstr "警察によって指名手配された！"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Became wanted by the police!"
-msgstr "警察によって指名手配された！"
-
-#. ~ %s is bodypart
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Broken %s began to mend."
-msgstr "壊れた%sが再び繋がり始める。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Broken %s began to mend."
-msgstr "壊れた%sが再び繋がり始める。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "You buried an unknown victim of the Cataclysm."
-msgstr "この大災厄の名もなき犠牲者の一人を埋葬した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "You buried an unknown victim of The Cataclysm."
-msgstr "この大災厄の名もなき犠牲者の一人を埋葬した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "You buried %s."
-msgstr "%sを埋葬した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "You buried %s."
-msgstr "%sを埋葬した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caused a resonance cascade."
-msgstr "大共鳴現象が発生。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caused a resonance cascade."
-msgstr "大共鳴現象が発生。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caught and killed an ape.  Prey doesn't have a name."
-msgstr "類人猿を一匹捕らえて殺した。獲物に名前などいらない。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caught and killed an ape.  Prey doesn't have a name."
-msgstr "類人猿を一匹捕らえて殺した。獲物に名前などいらない。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed a delicious-looking innocent, %s, in cold blood."
-msgstr "美味しそうな、無実の%sを冷酷に殺した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed a delicious-looking innocent, %s, in cold blood."
-msgstr "美味しそうな、無実の%sを冷酷に殺した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed an innocent, %s, in cold blood.  They were weak."
-msgstr "無実の%sを冷酷に殺した。弱者に相応しい最期だった。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed an innocent, %s, in cold blood.  They were weak."
-msgstr "無実の%sを冷酷に殺した。弱者に相応しい最期だった。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed an innocent, %s."
-msgstr "無実の%sを殺した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed an innocent, %s."
-msgstr "無実の%sを殺した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid ""
-"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
-msgstr "無実の%sを冷酷に殺し、その後、恐ろしい罪悪感に悩まされた。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid ""
-"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
-msgstr "無実の%sを冷酷に殺し、その後、恐ろしい罪悪感に悩まされた。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed a %s."
-msgstr "%sを殺した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed a %s."
-msgstr "%sを殺した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on bubble wrap."
-msgstr "ビニールクラッカーを踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on bubble wrap."
-msgstr "ビニールクラッカーを踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on glass."
-msgstr "ガラスを踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on glass."
-msgstr "ガラスを踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caught by a beartrap."
-msgstr "トラバサミに挟まれた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caught by a beartrap."
-msgstr "トラバサミに挟まれた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a spiked board."
-msgstr "棘が付いた板を踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a spiked board."
-msgstr "棘が付いた板を踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a caltrop."
-msgstr "鉄菱を踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a caltrop."
-msgstr "鉄菱を踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a glass caltrop."
-msgstr "ガラス棘を踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a glass caltrop."
-msgstr "ガラス棘を踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Tripped on a tripwire."
-msgstr "トリップワイヤーに躓いた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Tripped on a tripwire."
-msgstr "トリップワイヤーに躓いた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a crossbow trap."
-msgstr "クロスボウの罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a crossbow trap."
-msgstr "クロスボウの罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shotgun trap."
-msgstr "ショットガンの罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shotgun trap."
-msgstr "ショットガンの罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a blade trap."
-msgstr "刃の罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a blade trap."
-msgstr "刃の罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a light snare."
-msgstr "くくり罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a light snare."
-msgstr "くくり罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a heavy snare."
-msgstr "強化くくり罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a heavy snare."
-msgstr "強化くくり罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a land mine."
-msgstr "地雷を踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a land mine."
-msgstr "地雷を踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a booby trap."
-msgstr "ブービートラップに引っ掛かった。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a booby trap."
-msgstr "ブービートラップに引っ掛かった。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a teleport trap."
-msgstr "瞬間移動の罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a teleport trap."
-msgstr "瞬間移動の罠を作動させた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into thick goo."
-msgstr "どろどろの汚泥の穴に入った。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into thick goo."
-msgstr "どろどろの汚泥の穴に入った。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into a dissector."
-msgstr "レーザー分解装置を踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into a dissector."
-msgstr "レーザー分解装置を踏んだ。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell in a pit."
-msgstr "穴に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell in a pit."
-msgstr "穴に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell into a spiked pit."
-msgstr "トゲの穴に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell into a spiked pit."
-msgstr "トゲの穴に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell into a pit filled with glass shards."
-msgstr "ガラスの破片が詰まった穴に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell into a pit filled with glass shards."
-msgstr "ガラスの破片が詰まった穴に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into lava."
-msgstr "溶岩に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into lava."
-msgstr "溶岩に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into a sinkhole."
-msgstr "陥没穴に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into a sinkhole."
-msgstr "陥没穴に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell down a ledge."
-msgstr "下の階層に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell down a ledge."
-msgstr "下の階層に落ちた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a flood trap."
-msgstr "浸水トラップを発動した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a flood trap."
-msgstr "浸水トラップを発動した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shadow trap."
-msgstr "影の罠を発動した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shadow trap."
-msgstr "影の罠を発動した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a life-draining trap."
-msgstr "生命力吸収トラップを発動した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a life-draining trap."
-msgstr "生命力吸収トラップを発動した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shadow snake trap."
-msgstr "影の蛇の罠を発動した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shadow snake trap."
-msgstr "影の蛇の罠を発動した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Consumed a %s."
-msgstr "%sを摂取した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Consumed a %s."
-msgstr "%sを摂取した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened the Marloss Gateway."
-msgstr "マーロスの関門を開いた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened the Marloss Gateway."
-msgstr "マーロスの関門を開いた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Became one with the Mycus."
-msgstr "マイカスと一体化した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Became one with the Mycus."
-msgstr "マイカスと一体化した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Dermatik eggs hatched."
-msgstr "寄生バチの卵が孵化した"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Dermatik eggs hatched."
-msgstr "寄生バチの卵が孵化した"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected with dermatik eggs."
-msgstr "寄生バチの卵を産み付けられた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected with dermatik eggs."
-msgstr "寄生バチの卵を産み付けられた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Destroyed a triffid grove."
-msgstr "トリフィドの森を破壊した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Destroyed a triffid grove."
-msgstr "トリフィドの森を破壊した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to an asthma attack."
-msgstr "喘息の発作により倒れた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to an asthma attack."
-msgstr "喘息の発作により倒れた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of datura overdose."
-msgstr "ダチュラの過剰摂取で死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of datura overdose."
-msgstr "ダチュラの過剰摂取で死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of a healing stimulant overdose."
-msgstr "覚醒剤の過剰摂取で死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of a healing stimulant overdose."
-msgstr "覚醒剤の過剰摂取で死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of an alcohol overdose."
-msgstr "アルコールの過剰摂取で死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of an alcohol overdose."
-msgstr "アルコールの過剰摂取で死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of a drug overdose."
-msgstr "薬物の過剰摂取で死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of a drug overdose."
-msgstr "薬物の過剰摂取で死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to the infection."
-msgstr "感染が悪化し、倒れた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to the infection."
-msgstr "感染が悪化し、倒れた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of starvation."
-msgstr "餓死した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of starvation."
-msgstr "餓死した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of thirst."
-msgstr "脱水で死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of thirst."
-msgstr "脱水で死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Dug a shaft into lava."
-msgstr "溶岩へ続く穴を掘った。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Dug a shaft into lava."
-msgstr "溶岩へ続く穴を掘った。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Disarmed a nuclear missile."
-msgstr "核ミサイルを無効化した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Disarmed a nuclear missile."
-msgstr "核ミサイルを無効化した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Ate a sewage sample."
-msgstr "下水のサンプルを食べた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Ate a sewage sample."
-msgstr "下水のサンプルを食べた。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "'%s' mutation turned into '%s'"
-msgstr "'%s'の変異が'%s'に変化した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "'%s' mutation turned into '%s'"
-msgstr "'%s'の変異が'%s'に変化した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Exhumed a grave."
-msgstr "墓を掘り起こした。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Exhumed a grave."
-msgstr "墓を掘り起こした。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Failed install of bionic: %s."
-msgstr "%sの義体装着に失敗した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Failed install of bionic: %s."
-msgstr "%sの義体装着に失敗した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Failed to remove bionic: %s."
-msgstr "義体の除去失敗:%s。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Failed to remove bionic: %s."
-msgstr "義体の除去失敗:%s。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to lack of sleep."
-msgstr "睡眠不足で倒れた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to lack of sleep."
-msgstr "睡眠不足で倒れた。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "The fuel tank of the %s exploded!"
-msgstr "%sの燃料タンクが爆発した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "The fuel tank of the %s exploded!"
-msgstr "%sの燃料タンクが爆発した。"
-
-#. ~ %s is addiction name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Became addicted to %s."
-msgstr "%sに中毒状態になった。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Became addicted to %s."
-msgstr "%sに中毒状態になった。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Gained the mutation '%s'."
-msgstr "'%s'の変異が発生した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Gained the mutation '%s'."
-msgstr "'%s'の変異が発生した。"
-
-#. ~ %d is skill level %s is skill name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Reached skill level %1$d in %2$s."
-msgstr "%2$sスキルが%1$dに上昇した。"
-
-#. ~ %d is skill level %s is skill name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Reached skill level %1$d in %2$s."
-msgstr "%2$sスキルが%1$dに上昇した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s committed suicide."
-msgstr "%sが自殺した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s committed suicide."
-msgstr "%sが自殺した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s was killed."
-msgstr "%sが殺害された。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s was killed."
-msgstr "%sが殺害された。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Last words: %s"
-msgstr "遺言:%s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Last words: %s"
-msgstr "遺言:%s"
-
-#. ~ %s is player name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s began their journey into the Cataclysm."
-msgstr "%sはカタクリズムへの旅を始めた。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s began their journey into the Cataclysm."
-msgstr "%sはカタクリズムへの旅を始めた。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Installed bionic: %s."
-msgstr "装着済み義体:%s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Installed bionic: %s."
-msgstr "装着済み義体:%s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Installed bad bionic: %s."
-msgstr "誤って装着された義体:%s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Installed bad bionic: %s."
-msgstr "誤って装着された義体:%s"
-
-#. ~ %s is martial art
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Learned %s."
-msgstr "%sを習得した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Learned %s."
-msgstr "%sを習得した。"
-
-#. ~ %s is addiction name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Overcame addiction to %s."
-msgstr "%s中毒を克服した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Overcame addiction to %s."
-msgstr "%s中毒を克服した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s became hostile."
-msgstr "%sが敵対的になった。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s became hostile."
-msgstr "%sが敵対的になった。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened a portal."
-msgstr "ポータルを開いた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened a portal."
-msgstr "ポータルを開いた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened a strange temple."
-msgstr "奇妙な神殿の扉を開いた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened a strange temple."
-msgstr "奇妙な神殿の扉を開いた。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Gained a spell level on %s."
-msgstr "%sの呪文レベルを1上げた。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Gained a spell level on %s."
-msgstr "%sの呪文レベルを1上げた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Released subspace specimens."
-msgstr "地下実験体を解放した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Released subspace specimens."
-msgstr "地下実験体を解放した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Removed bionic: %s."
-msgstr "義体除去:%s。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Removed bionic: %s."
-msgstr "義体除去:%s。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Sealed a Hazardous Material Sarcophagus."
-msgstr "有害物質封鎖石棺を封印した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Sealed a Hazardous Material Sarcophagus."
-msgstr "有害物質封鎖石棺を封印した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Telefragged a %s."
-msgstr "%sがテレポート中に死亡した。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Telefragged a %s."
-msgstr "%sがテレポート中に死亡した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Spontaneous teleport."
-msgstr "自発的なテレポート。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Spontaneous teleport."
-msgstr "自発的なテレポート。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Teleported into a %s."
-msgstr "%sへテレポートした。"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Teleported into a %s."
-msgstr "%sへテレポートした。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Terminated subspace specimens."
-msgstr "地下実験体を排除した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Terminated subspace specimens."
-msgstr "地下実験体を排除した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Threw up."
-msgstr "吐いた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Threw up."
-msgstr "吐いた。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Set off an alarm."
-msgstr "警報を発令した。"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Set off an alarm."
-msgstr "警報を発令した。"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "good"
-msgstr "良い"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "bad"
-msgstr "否定的"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "mixed"
-msgstr "複合的"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "warning"
-msgstr "警告"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "info"
-msgstr "情報"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "neutral"
-msgstr "一般"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "debug"
-msgstr "デバッグ"
-
 #. ~ Message %s on the message log was repeated %d times, e.g. "You hear a
 #. whack! x 12"
 #: src/messages.cpp
@@ -318068,100 +318171,6 @@ msgstr "基本Mod一覧"
 #: src/mod_manager.cpp
 msgid "list of mods"
 msgstr "Mod一覧"
-
-#: src/mod_manager_ui.cpp
-msgid "This mod is marked as obsolete and may contain severe errors."
-msgstr "このModは旧式であり、重大なエラーを含んでいる可能性がある。"
-
-#: src/mod_manager_ui.cpp
-msgid "License"
-msgstr "ライセンス"
-
-#: src/mod_manager_ui.cpp
-msgid "Author"
-msgid_plural "Authors"
-msgstr[0] "作者"
-
-#: src/mod_manager_ui.cpp
-msgid "Maintainer"
-msgid_plural "Maintainers"
-msgstr[0] "管理者"
-
-#: src/mod_manager_ui.cpp
-msgid "Dependency"
-msgid_plural "Dependencies"
-msgstr[0] "必要Mod"
-
-#. ~ Followed by list of mods the current mod conflicts with
-#: src/mod_manager_ui.cpp
-msgid "Conflict"
-msgid_plural "Conflicts"
-msgstr[0] "コンフリクト"
-
-#: src/mod_manager_ui.cpp
-msgid "Mod version"
-msgstr "Modバージョン"
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid "%s: API version %s\n"
-msgstr "%s: APIバージョン%s\n"
-
-#: src/mod_manager_ui.cpp
-msgid "Needs Lua"
-msgstr "Luaが必要"
-
-#: src/mod_manager_ui.cpp
-msgid "Mod info path"
-msgstr "Mod情報パス"
-
-#. ~ Single entry in the list of which mods conflict with which mods.
-#. ~ Please be mindful of spaces.
-#. ~ "%s [%s]" parts are mod names with internal ids.
-#. ~ The final result reads as "Mod X [id_x] with Mod Y [id_y]"
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"  %s [%s]\n"
-"    with %s [%s]\n"
-msgstr ""
-"  %s [%s]\n"
-"    と %s [%s]\n"
-
-#: src/mod_manager_ui.cpp
-msgid "The mod is already on the list."
-msgstr "Modはすでにリストに存在する。"
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid "Unable to find mod with id \"%s\"."
-msgstr "ID「%s」のModが見つからない。"
-
-#: src/mod_manager_ui.cpp
-msgid "Failed to build dependency tree for the mod."
-msgstr "Modの依存関係の構造を作成できなかった。"
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"The mod has dependency problem(s):\n"
-"\n"
-"%s"
-msgstr ""
-"Modは以下の依存関係の問題を抱えている:\n"
-"\n"
-"%s"
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"The mod or some of its dependencies has conflict(s) with active mods:\n"
-"\n"
-"%s"
-msgstr ""
-"Mod、またはその依存Modの一部が、有効化されたModと衝突している:\n"
-"\n"
-"%s"
 
 #: src/monattack.cpp
 #, c-format
@@ -321687,22 +321696,6 @@ msgstr "おお！すごいですね！"
 msgid "First temperature modifier can't be higher than the second"
 msgstr "最初の気温補正値は、二番目のものより高くならない。"
 
-#: src/mutation_type.cpp
-msgid "skin color"
-msgstr "肌の色"
-
-#: src/mutation_type.cpp
-msgid "eye color"
-msgstr "瞳の色"
-
-#: src/mutation_type.cpp
-msgid "hair style"
-msgstr "髪型"
-
-#: src/mutation_type.cpp
-msgid "hair color"
-msgstr "髪の色"
-
 #: src/mutation_ui.cpp
 msgid "Reassigning."
 msgstr "再指定。"
@@ -324436,11 +324429,11 @@ msgstr "速度単位"
 msgid "Switch between km/h, mph and tiles/turn."
 msgstr "キロメートル、マイル、ターンあたりのタイル数の単位から選択する。"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "km/h"
 msgstr "km/h"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "mph"
 msgstr "mph"
 
@@ -324456,11 +324449,11 @@ msgstr "重量単位"
 msgid "Switch between kg and lbs."
 msgstr "kgはlbsに、lbsはkgに変換する。"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "kg"
 msgstr "kg"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "lbs"
 msgstr "lbs"
 
@@ -328497,10 +328490,6 @@ msgstr "最後の世界"
 msgid "safe mode"
 msgstr "セーフモード"
 
-#: src/perk.cpp
-msgid "Effects:"
-msgstr "効果:"
-
 #: src/perk_menu.cpp
 msgid "Scroll Description Up"
 msgstr "説明を上にスクロール"
@@ -331649,40 +331638,57 @@ msgid "Go to last entry"
 msgstr "最後の項目へ"
 
 #. ~ vehicle speed tiles per turn
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "t/t"
 msgstr "t/t"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "m/s"
 msgstr "m/s"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "c"
 msgstr "c"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "L"
 msgstr "L"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "qt"
 msgstr "qt"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "cup"
 msgstr "カップ"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "liter"
 msgstr "リットル"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "quart"
 msgstr "クォート"
+
+#: src/utils/dependency_tree.cpp
+msgid "Missing Dependency(ies): "
+msgstr "不足している依存関係:"
+
+#: src/utils/dependency_tree.cpp
+msgid "Has conflicting dependencies: "
+msgstr "競合する依存関係:"
+
+#: src/utils/dependency_tree.cpp
+msgid "Has dependency cycle(s): "
+msgstr "依存関係の循環参照:"
+
+#: src/utils/dependency_tree.cpp
+#, c-format
+msgid "[%1$s] with [%2$s]"
+msgstr "[%1$s] と [%2$s]"
 
 #: src/vehicle/turret.cpp
 msgid "None of the turrets are ready to fire."

@@ -34,7 +34,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-10 23:19+0000\n"
+"POT-Creation-Date: 2026-11-11 23:55+0000\n"
 "Last-Translator: Fruitybite, 2026\n"
 "Language-Team: Korean (https://app.transifex.com/bn-team/teams/113585/ko/)\n"
 "MIME-Version: 1.0\n"
@@ -6907,7 +6907,7 @@ msgstr "룰렛 테이블 설치"
 
 #: data/json/construction_group.json
 msgid "Put Up Big Mouth Billy Bass"
-msgstr ""
+msgstr "큰 입 빌리 베이스 놓기"
 
 #: data/json/debug_spells.json
 msgid "Template Spell"
@@ -19030,22 +19030,22 @@ msgstr "알코올"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
 #: data/mods/My_Sweet_Cataclysm/sweet_materials.json
-#: data/mods/rpg_system/main.lua src/material.cpp
+#: data/mods/rpg_system/main.lua src/item/material.cpp
 msgid "damaged"
 msgstr "손상된"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "lightly damaged"
 msgstr "약간 손상된"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "very damaged"
 msgstr "많이 손상된"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "thoroughly damaged"
 msgstr "완전히 손상된"
 
@@ -19505,16 +19505,16 @@ msgstr "%1$s(이)가 당신의 %2$s(을)를 꿰뚫습니다!"
 
 #: data/json/monster_attacks.json
 msgid "The %1$s impales <npcname>!"
-msgstr ""
+msgstr "%1$s(이)가 <npcname>(을)를 꿰뚫습니다!"
 
 #: data/json/monster_attacks.json
 msgid "The %1$s tries to impale your %2$s, but fails to penetrate your armor."
-msgstr ""
+msgstr "%1$s(이)가 당신의 %2$s(을)를 꿰뚫으려 했으나, 방어구를 뚫지 못했습니다."
 
 #: data/json/monster_attacks.json
 msgid ""
 "The %1$s tries to impale <npcname>, but fails to penetrate their armor."
-msgstr ""
+msgstr "%1$s(이)가 <npcname>(을)를 꿰뚫으려 했으나, 방어구를 뚫지 못했습니다."
 
 #: data/json/monster_attacks.json
 msgid "The %1$s tries to impale your %2$s, but you dodge!"
@@ -36300,7 +36300,7 @@ msgstr[0] "비무장전투 기술 향상."
 msgid "Not at technique at all"
 msgstr "기술이 아니다"
 
-#: data/json/techniques.json src/bonuses.cpp
+#: data/json/techniques.json src/game/bonuses.cpp
 msgid "Block"
 msgstr "막기"
 
@@ -41750,7 +41750,7 @@ msgstr "겨울 명절에 사용되는 장식용 나무입니다."
 #: data/json/items/furniture.json
 msgid "big mouth billy bass"
 msgid_plural "big mouth billy basss"
-msgstr[0] ""
+msgstr[0] "큰 입 빌리 베이스"
 
 #. ~ Description for big mouth billy bass
 #: data/json/furniture_and_terrain/furniture-decorative.json
@@ -59461,7 +59461,7 @@ msgstr[0] "없음"
 #: data/json/items/fake.json
 msgid "fake billybass"
 msgid_plural "fake billybasss"
-msgstr[0] ""
+msgstr[0] "가짜 빌리 베이스"
 
 #. ~ Use action no_charges_message for {'str': 'fake billybass'}.
 #: data/json/items/fake.json
@@ -112493,6 +112493,16 @@ msgid "hk_ump45"
 msgstr ""
 
 #: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45_retool_40"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45_retool_9mm"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
 msgid "9x19mm UMP conversion kit"
 msgid_plural "9x19mm UMP conversion kits"
 msgstr[0] "9x19mm UMP 전환 키트"
@@ -136291,7 +136301,7 @@ msgstr "스태미너가 감소합니다. 미고 노예상 광선에 쓰입니다
 
 #: data/json/monster_special_attacks/spells.json
 #: data/mods/MagicalNights/Spells/item_only.json src/character_display.cpp
-#: src/distraction_manager.cpp src/memorial_logger.cpp
+#: src/distraction_manager.cpp src/event/memorial_logger.cpp
 msgid "Pain"
 msgstr "고통"
 
@@ -139440,19 +139450,6 @@ msgstr ""
 "포유류인 흡혈박쥐의 일종. 동굴이나 다른 공동에서 살며, 반향정위 능력을 활용해 장애물이 많은 지형을 재빠르게 이동할 수 있습니다."
 
 #: data/json/monsters/mammal.json
-msgid "mutant vampire bat"
-msgid_plural "mutant vampire bats"
-msgstr[0] "돌연변이 흡혈귀 박쥐"
-
-#. ~ Description for {'str': 'mutant vampire bat'}
-#: data/json/monsters/mammal.json
-msgid ""
-"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
-"This one looks terribly larger and stronger than its other kin."
-msgstr ""
-"날개가 달렸으며 피를 먹고 사는 포유류인 흡혈박쥐의 일종. 이 녀석은 자신의 동족들보다 기괴할 정도로 더 크고 강력해 보입니다."
-
-#: data/json/monsters/mammal.json
 msgid "black bear cub"
 msgid_plural "black bear cubs"
 msgstr[0] "새끼 검은 곰"
@@ -140945,6 +140942,19 @@ msgid ""
 msgstr ""
 "이 검은 고양이의 털이 너무나도 부자연스럽게 어두운 덕분에, 절대 평범한 고양이가 아니라는건 확실히 알 수 있습니다. 그 털은 주변의 "
 "빛을 빨아들이는 것 같습니다."
+
+#: data/json/monsters/mutant_animal.json
+msgid "mutant vampire bat"
+msgid_plural "mutant vampire bats"
+msgstr[0] "돌연변이 흡혈귀 박쥐"
+
+#. ~ Description for {'str': 'mutant vampire bat'}
+#: data/json/monsters/mutant_animal.json
+msgid ""
+"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
+"This one looks terribly larger and stronger than its other kin."
+msgstr ""
+"날개가 달렸으며 피를 먹고 사는 포유류인 흡혈박쥐의 일종. 이 녀석은 자신의 동족들보다 기괴할 정도로 더 크고 강력해 보입니다."
 
 #: data/json/monsters/mutant_animal.json
 msgid "scaled bear"
@@ -188179,7 +188189,7 @@ msgstr "현실 거품 크기"
 msgid ""
 "Submap radius of the reality bubble.  REQUIRES A GAME RESTART to take "
 "effect."
-msgstr ""
+msgstr "현실 거품의 서브맵 반경입니다. 게임을 재시작해야 적용됩니다."
 
 #. ~ Menu text of option 'VISIBILITY_SCALING'
 #: data/json/options/performance.json
@@ -188226,6 +188236,7 @@ msgid ""
 "Keep a border of submaps loaded around the reality bubble.  Uses more memory"
 " but reduces stalls when the map scrolls."
 msgstr ""
+"현실 거품 주변에 불러온 서브맵 경계를 유지합니다. 메모리 사용량이 증가하지만 맵 스크롤 과정에서 발생하는 렉을 감소시킵니다."
 
 #. ~ Menu text of option 'REALITY_BUBBLE_TICK_INTERVAL'
 #: data/json/options/performance.json
@@ -188235,7 +188246,7 @@ msgstr "세계 틱 간격"
 #. ~ Tooltip of option 'REALITY_BUBBLE_TICK_INTERVAL'
 #: data/json/options/performance.json
 msgid "How many turns elapse between out-of-bubble world ticks."
-msgstr ""
+msgstr "현실 거품 바깥의 세계 틱당 턴 간격입니다."
 
 #. ~ Menu text of option 'ACTIVITY_MOBILE_BUBBLE_SIZE'
 #: data/json/options/performance.json
@@ -189349,7 +189360,7 @@ msgstr "난파선"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "river barge"
-msgstr ""
+msgstr "강 바지선"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "wasp-infested radio tower"
@@ -192420,7 +192431,7 @@ msgstr "샌드위치"
 #. ~ Name for nested category 'sandwiches'
 #: data/json/recipes/nested_categories.json
 msgid "Assorted sandwiches."
-msgstr ""
+msgstr "모듬 샌드위치 모듬입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192430,7 +192441,7 @@ msgstr "수프 및 잡탕요리"
 #. ~ Name for nested category 'soups and chowders'
 #: data/json/recipes/nested_categories.json
 msgid "Common soup pots and chowders."
-msgstr ""
+msgstr "수프와 잡탕요리입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192440,7 +192451,7 @@ msgstr "소세지"
 #. ~ Name for nested category 'sausages'
 #: data/json/recipes/nested_categories.json
 msgid "Stuffed links, blood sausages, and veggie variants."
-msgstr ""
+msgstr "줄줄이 소세지, 순대, 채식 소세지 등입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192450,7 +192461,7 @@ msgstr "피자"
 #. ~ Name for nested category 'pizzas'
 #: data/json/recipes/nested_categories.json
 msgid "Pizza bases and topped variants."
-msgstr ""
+msgstr "피자 도우와 여러 버전의 토핑 피자입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192460,7 +192471,7 @@ msgstr "뜨거운 음료"
 #. ~ Name for nested category 'hot drinks'
 #: data/json/recipes/nested_categories.json
 msgid "Warm beverages for cold days."
-msgstr ""
+msgstr "추운 날에 마시기 좋은 따뜻한 음료입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192470,7 +192481,7 @@ msgstr "살충제"
 #. ~ Name for nested category 'cleaners and pest control'
 #: data/json/recipes/nested_categories.json
 msgid "Household basics for cleaning and keeping vermin down."
-msgstr ""
+msgstr "집을 청소하고 해충을 죽여버리는데 필요한 가정 내 필수품입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192480,7 +192491,7 @@ msgstr "알코올 연료"
 #. ~ Name for nested category 'alcohol fuels'
 #: data/json/recipes/nested_categories.json
 msgid "Distilled burners and biodiesel feedstock."
-msgstr ""
+msgstr "정제 연료 및 바이오디젤 원료입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192490,7 +192501,7 @@ msgstr "활 및 쇠뇌"
 #. ~ Name for nested category 'bows and crossbows'
 #: data/json/recipes/nested_categories.json
 msgid "Wooden bows, composites, and their crossbow cousins."
-msgstr ""
+msgstr "나무 활, 합성궁, 그리고 그 친척뻘 되는 쇠뇌입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192500,7 +192511,7 @@ msgstr "투척무기"
 #. ~ Name for nested category 'throwables'
 #: data/json/recipes/nested_categories.json
 msgid "Weapons that can be thrown effectively."
-msgstr ""
+msgstr "던질 때 더 효과적인 무기 모음입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192510,12 +192521,12 @@ msgstr "투척기"
 #. ~ Name for nested category 'throwers'
 #: data/json/recipes/nested_categories.json
 msgid "Throwing tools."
-msgstr ""
+msgstr "뭔가를 던지는데 쓰는 도구입니다."
 
 #. ~ Name for nested category 'arrows'
 #: data/json/recipes/nested_categories.json
 msgid "Wooden, metal, and specialty arrows."
-msgstr ""
+msgstr "나무, 금속, 혹은 특수 재질 화살입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192525,7 +192536,7 @@ msgstr "수리도구"
 #. ~ Name for nested category 'repair kits'
 #: data/json/recipes/nested_categories.json
 msgid "General repair packs and their upgrades."
-msgstr ""
+msgstr "범용 수리 도구 및 그 향상된 버전들입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192555,7 +192566,7 @@ msgstr "핵심 뮤타젠"
 #. ~ Name for nested category 'core mutagens'
 #: data/json/recipes/nested_categories.json
 msgid "Base mutagen batches and the starter IV."
-msgstr ""
+msgstr "기본 뮤타젠 및 주사용 뮤타젠입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192567,7 +192578,7 @@ msgstr "변종 뮤타젠"
 #: data/json/recipes/nested_categories.json
 #: data/mods/Monster_Girls/nested.json
 msgid "Animal and specialty strains with their IV versions."
-msgstr ""
+msgstr "동물 또는 특수 뮤타젠과 그 주사용 형태입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192577,7 +192588,7 @@ msgstr "내장 요리"
 #. ~ Name for nested category 'offal dishes'
 #: data/json/recipes/nested_categories.json
 msgid "Simple preparations for organ meats."
-msgstr ""
+msgstr "내장 부위 고기입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192587,7 +192598,7 @@ msgstr "케이크 및 브라우니"
 #. ~ Name for nested category 'cakes and brownies'
 #: data/json/recipes/nested_categories.json
 msgid "Sweet baked treats to share or stash."
-msgstr ""
+msgstr "남에게 나눠주거나 쌓아둘 수 있는 달콤한 간식입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192597,7 +192608,7 @@ msgstr "소음기"
 #. ~ Name for nested category 'suppressors'
 #: data/json/recipes/nested_categories.json
 msgid "Crafted muzzle devices to quiet firearms."
-msgstr ""
+msgstr "총기 소음을 줄이기 위해 만들어진 총구 장비입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192607,7 +192618,7 @@ msgstr "휴대용 조명"
 #. ~ Name for nested category 'portable lights'
 #: data/json/recipes/nested_categories.json
 msgid "Handheld and packable lights for camp and field use."
-msgstr ""
+msgstr "캠핑이나 야외에서 사용하기 위한 휴대용 조명입니다."
 
 #. ~ Nested crafting category name
 #: data/json/recipes/nested_categories.json
@@ -192617,7 +192628,7 @@ msgstr "차량용 조명"
 #. ~ Name for nested category 'vehicle lights'
 #: data/json/recipes/nested_categories.json
 msgid "Lighting fixtures meant for rigs and bases."
-msgstr ""
+msgstr "차량이나 기지에서 사용하기 위한 고정형 조명입니다."
 
 #. ~ Crafting recipes category name
 #: data/json/recipes/recipes.json
@@ -198518,7 +198529,7 @@ msgstr "스윙"
 #: data/json/snippets/music.json
 msgctxt "music genre"
 msgid "rock"
-msgstr ""
+msgstr "록"
 
 #: data/json/snippets/music.json
 msgctxt "music genre"
@@ -287331,7 +287342,7 @@ msgid "  ✦ %d unassigned stat point available!"
 msgid_plural "  ✦ %d unassigned stat points available!"
 msgstr[0] " ✦ 미배정된 능력치 점수 %d점 남음!"
 
-#: data/mods/rpg_system/main.lua src/bonuses.cpp
+#: data/mods/rpg_system/main.lua src/game/bonuses.cpp
 msgid "Dodge"
 msgstr "회피"
 
@@ -287359,7 +287370,7 @@ msgstr "기관단총"
 msgid "Speech"
 msgstr "대화"
 
-#: data/mods/rpg_system/main.lua src/diary.cpp src/memorial_logger.cpp
+#: data/mods/rpg_system/main.lua src/diary.cpp src/event/memorial_logger.cpp
 #: src/newcharacter.cpp
 msgid "Skills:"
 msgstr "기술:"
@@ -288641,7 +288652,7 @@ msgstr ""
 #. ~ Description of enchantment condition 'RAINING'
 #: data/mods/test_lua_conditions/stuff.json
 msgid "While raining"
-msgstr ""
+msgstr "우천 중"
 
 #: data/mods/test_lua_require/modinfo.json
 msgid "Test Lua Require"
@@ -291191,96 +291202,6 @@ msgstr "단일 타일에 폭탄 다수 폭격"
 msgid "Bomber single tile & bomb"
 msgstr "단일 타일에 폭탄 하나 폭격"
 
-#: src/achievement.cpp
-msgctxt "achievement kill requirement"
-msgid "monster"
-msgid_plural "monsters"
-msgstr[0] "괴물"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill at least %i %s%s"
-msgstr "%i 개체 이상의 %s%s (을)를 처치"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Don't kill even a single %s"
-msgstr "%s 의 처치 금지"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill no more than %i %s%s"
-msgstr "%i 개체 이하의 %s%s (을)를 처치"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill any number of %s"
-msgstr "아무 숫자의 %s 처치"
-
-#: src/achievement.cpp
-msgid " (failed)"
-msgstr " (실패)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Attain skill level of %i in %s (%i/%i)"
-msgstr "%i 등급 %s 달성하기 (%i/%i)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Stay at or below skill level of %i in %s (%i/%i)"
-msgstr "%i 등급 %s 유지하기 (%i/%i)"
-
-#: src/achievement.cpp
-msgid "time of cataclysm"
-msgstr "대재앙 발생 시점"
-
-#: src/achievement.cpp
-msgid "start of game"
-msgstr "게임 시작"
-
-#: src/achievement.cpp
-#, c-format
-msgid "At least %s from %s (%s remaining)"
-msgstr "최소 %s, %s 기준 (잔여량 %s)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Within %s of %s (%s remaining)"
-msgstr "%s 이내, %s 기준 (잔여량 %s)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "At least %s from %s (passed)"
-msgstr "최소 %s, %s 기준 (통과)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Within %s of %s (passed)"
-msgstr "%s 이내, %s 기준 (통과)"
-
-#: src/achievement.cpp
-msgid "Triggered by "
-msgstr "조건: "
-
-#: src/achievement.cpp
-#, c-format
-msgid "%s/%s "
-msgstr "%s/%s"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Completed %s"
-msgstr "%s 완료"
-
-#: src/achievement.cpp
-msgid ""
-"\n"
-"Internal error: achievement lacks watcher."
-msgstr ""
-"\n"
-"내부 오류: 업적에 감시자가 부재합니다."
-
 #: src/action.cpp src/input.cpp
 msgid "Press "
 msgstr "입력 "
@@ -291636,7 +291557,7 @@ msgstr "제작 속도 변동치:\n"
 msgid "Total"
 msgstr "총합"
 
-#: src/activity_actor.cpp src/bonuses.cpp src/panels.cpp
+#: src/activity_actor.cpp src/game/bonuses.cpp src/panels.cpp
 #: src/player_activity.cpp
 msgid "Speed"
 msgstr "속도"
@@ -293536,7 +293457,7 @@ msgstr "충전량"
 msgid "category"
 msgstr "종류"
 
-#: src/advanced_inv.cpp src/bonuses.cpp src/effect.cpp
+#: src/advanced_inv.cpp src/effect.cpp src/game/bonuses.cpp
 msgid "damage"
 msgstr "피해"
 
@@ -297037,107 +296958,6 @@ msgstr ""
 "%s(을)를 작동시킬 수 없습니다!\n"
 "%s의 설명을 읽으려면 %s 키를 누르세요."
 
-#: src/bonuses.cpp
-msgid "Accuracy"
-msgstr "명중률"
-
-#: src/bonuses.cpp
-msgid "Move cost"
-msgstr "이동 포인트"
-
-#: src/bonuses.cpp src/panels.cpp
-msgid "Armor"
-msgstr "보호구"
-
-#: src/bonuses.cpp
-msgid "Armor penetration"
-msgstr "방어 관통"
-
-#: src/bonuses.cpp
-msgid "Target armor multiplier"
-msgstr "대상 방어 배수"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "strength"
-msgstr "근력"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "dexterity"
-msgstr "민첩성"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "intelligence"
-msgstr "지능"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "perception"
-msgstr "지각력"
-
-#. ~ %1$s: damage type, %2$s: damage-related bonus name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "type of damage"
-msgid "%1$s %2$s"
-msgstr "%1$s %2$s"
-
-#. ~ %1$s: bonus name, %2$d: bonus percentage, %3$s: stat name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$d%%</stat> of %3$s"
-msgstr "* %1$s: %3$s <stat>%2$d%%</stat>"
-
-#. ~ %1$s: bonus name, %2$d: bonus percentage
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$d%%</stat>"
-msgstr "* %1$s: <stat>%2$d%%</stat>"
-
-#. ~ %1$s: bonus name, %2$+d: bonus percentage, %3$s: stat name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$+d%%</stat> of %3$s"
-msgstr "* %1$s: %3$s <stat>%2$+d%%</stat>"
-
-#. ~ %1$s: bonus name, %2$+d: bonus value
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$+d</stat>"
-msgstr "* %1$s: <stat>%2$+d</stat>"
-
-#: src/book_scanning.cpp
-msgid "You need a powered reader to scan."
-msgstr "전력이 공급되는 리더기가 있어야 스캔할 수 있습니다."
-
-#: src/book_scanning.cpp
-msgid "You need physical reading material to scan."
-msgstr "물리 형태의 읽을거리가 있어야 스캔할 수 있습니다."
-
-#: src/book_scanning.cpp
-msgid "You can't see well enough to scan."
-msgstr "너무 어두워서 스캔할 수 없습니다."
-
-#: src/book_scanning.cpp
-msgid "This copy is already installed on the reader."
-msgstr "이 판본은 이미 리더기에 포함되어 있습니다."
-
-#: src/book_scanning.cpp
-msgid "You no longer have the reading material or reader.  You stop scanning."
-msgstr "읽을거리 또는 리더기가 없습니다. 스캔을 중단합니다."
-
-#: src/book_scanning.cpp src/item.cpp
-#, c-format
-msgid "digital copy of %s"
-msgstr "%s (디지털 복사본)"
-
-#: src/book_scanning.cpp
-#, c-format
-msgid "You save a digital copy of %s on your %s."
-msgstr "%s의 디지털 복사본을 %s에 저장합니다."
-
 #: src/calendar.cpp
 msgid "forever"
 msgstr "영구적"
@@ -298364,6 +298184,26 @@ msgstr "반대편 부위에 빈 공간이 없습니다!"
 #: src/character.cpp
 msgid "Liquid from your inventory has leaked onto the ground."
 msgstr "소지품에 있는 액체가 새고 있습니다."
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "strength"
+msgstr "근력"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "dexterity"
+msgstr "민첩성"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "intelligence"
+msgstr "지능"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "perception"
+msgstr "지각력"
 
 #: src/character.cpp
 #, c-format
@@ -302794,71 +302634,6 @@ msgstr "%s 크기입니다."
 msgid "You sense a creature here."
 msgstr "무언가 있는게 느껴집니다."
 
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "true"
-msgstr "고정"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "biological"
-msgstr "생물학적"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "bash"
-msgstr "타격"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "cut"
-msgstr "절단"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "acid"
-msgstr "강산"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "stab"
-msgstr "관통"
-
-#: src/damage.cpp
-msgctxt "damage_type"
-msgid "bullet"
-msgstr "총탄"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "heat"
-msgstr "열기"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "cold"
-msgstr "냉기"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "dark"
-msgstr "암흑"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "light"
-msgstr "광휘"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "psionic"
-msgstr "초능"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "electric"
-msgstr "전기"
-
 #: src/debug.cpp
 msgid ""
 "Excessive error repetition detected.  Please file a bug report at "
@@ -304106,25 +303881,6 @@ msgstr "얼마만큼 추가할지 kJ 단위로 입력해주세요. (음수의 �
 msgid "JSON template written to "
 msgstr "다음 항목에 기록되는 JSON 템플릿: "
 
-#: src/dependency_tree.cpp
-msgid "Missing Dependency(ies): "
-msgstr "의존성 상실: "
-
-#: src/dependency_tree.cpp
-msgid "Has conflicting dependencies: "
-msgstr "의존성 충돌: "
-
-#: src/dependency_tree.cpp
-msgid "Has dependency cycle(s): "
-msgstr "의존성 순환: "
-
-#. ~ Single entry in list of conflicting dependencies, both %s are mod ids.
-#. ~ Example of final string: "[aftershock] with [classic-zombies]"
-#: src/dependency_tree.cpp
-#, c-format
-msgid "[%1$s] with [%2$s]"
-msgstr "[ %1$s ] 및 [ %2$s ]"
-
 #: src/descriptions.cpp
 #, c-format
 msgid ""
@@ -304252,7 +304008,7 @@ msgstr "새로 완수한 임무: "
 msgid "New failed missions:"
 msgstr "새로 실패한 임무: "
 
-#: src/diary.cpp src/memorial_logger.cpp src/newcharacter.cpp
+#: src/diary.cpp src/event/memorial_logger.cpp src/newcharacter.cpp
 msgid "Bionics:"
 msgstr "바이오닉:"
 
@@ -304264,7 +304020,7 @@ msgstr "획득한 바이오닉: "
 msgid "Lost bionics:"
 msgstr "사라진 바이오닉: "
 
-#: src/diary.cpp src/game.cpp src/memorial_logger.cpp
+#: src/diary.cpp src/event/memorial_logger.cpp src/game.cpp
 msgid "Kills:"
 msgstr "죽인 수:"
 
@@ -304414,17 +304170,6 @@ msgstr "일기를 .md 파일로 내보낼까요?"
 #: src/diary_ui.cpp
 msgid "Save entry?"
 msgstr "입력한 내용을 저장할까요?"
-
-#: src/digital_media.cpp
-msgid ""
-"No music collection is ready to play.  Try another file or wait for its "
-"cooldown."
-msgstr "준비된 음악 모음집이 없습니다. 다른 파일을 시도하거나, 잠시 기다리세요."
-
-#: src/digital_media.cpp
-#, c-format
-msgid "You recently listened to this collection.  Try again in %s."
-msgstr "이 모음집을 최근에 들었습니다. %s 뒤에 다시 시도하세요."
 
 #: src/distraction_manager.cpp
 msgid "Interrupts you if you hear a noise."
@@ -305208,11 +304953,1313 @@ msgstr "<color_%s>%s 면역 부여</color>"
 msgid "  <color_%s>Gives mutation %s</color>"
 msgstr "<color_%s>%s 돌연변이 부여</color>"
 
+#: src/event/achievement.cpp
+msgctxt "achievement kill requirement"
+msgid "monster"
+msgid_plural "monsters"
+msgstr[0] "괴물"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill at least %i %s%s"
+msgstr "%i 개체 이상의 %s%s (을)를 처치"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Don't kill even a single %s"
+msgstr "%s 의 처치 금지"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill no more than %i %s%s"
+msgstr "%i 개체 이하의 %s%s (을)를 처치"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill any number of %s"
+msgstr "아무 숫자의 %s 처치"
+
+#: src/event/achievement.cpp
+msgid " (failed)"
+msgstr " (실패)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Attain skill level of %i in %s (%i/%i)"
+msgstr "%i 등급 %s 달성하기 (%i/%i)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Stay at or below skill level of %i in %s (%i/%i)"
+msgstr "%i 등급 %s 유지하기 (%i/%i)"
+
+#: src/event/achievement.cpp
+msgid "time of cataclysm"
+msgstr "대재앙 발생 시점"
+
+#: src/event/achievement.cpp
+msgid "start of game"
+msgstr "게임 시작"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "At least %s from %s (%s remaining)"
+msgstr "최소 %s, %s 기준 (잔여량 %s)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Within %s of %s (%s remaining)"
+msgstr "%s 이내, %s 기준 (잔여량 %s)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "At least %s from %s (passed)"
+msgstr "최소 %s, %s 기준 (통과)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Within %s of %s (passed)"
+msgstr "%s 이내, %s 기준 (통과)"
+
+#: src/event/achievement.cpp
+msgid "Triggered by "
+msgstr "조건: "
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "%s/%s "
+msgstr "%s/%s"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Completed %s"
+msgstr "%s 완료"
+
+#: src/event/achievement.cpp
+msgid ""
+"\n"
+"Internal error: achievement lacks watcher."
+msgstr ""
+"\n"
+"내부 오류: 업적에 감시자가 부재합니다."
+
 #. ~ Default format for scores.  %1$s is statistic description; %2$s is value.
-#: src/event_statistics.cpp
+#: src/event/event_statistics.cpp
 #, c-format
 msgid "%2$s %1$s"
 msgstr "%2$s %1$s"
+
+#: src/event/kill_tracker.cpp
+msgid "You haven't killed any monsters yet!"
+msgstr "아직 아무것도 죽이지 않았습니다!"
+
+#: src/event/kill_tracker.cpp
+#, c-format
+msgid "KILL COUNT: %d"
+msgstr "죽인 목록: %d"
+
+#: src/event/kill_tracker.cpp
+#, c-format
+msgid ""
+"\n"
+"Experience: %d (%d points available)"
+msgstr ""
+"\n"
+"경험치: %d (%d 포인트 사용 가능)"
+
+#: src/event/memorial_logger.cpp src/iuse.cpp
+msgid "He"
+msgstr "그는"
+
+#: src/event/memorial_logger.cpp src/iuse.cpp
+msgid "She"
+msgstr "그녀는"
+
+#: src/event/memorial_logger.cpp
+msgid "an unemployed male"
+msgstr "무직 남성"
+
+#: src/event/memorial_logger.cpp
+msgid "an unemployed female"
+msgstr "무직 여성"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "a %s"
+msgstr "%s"
+
+#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
+#. description
+#. ~ that designates the location relative to its surroundings.
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s was killed in a %2$s."
+msgstr "%1$s(이)가 %2$s에서 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Cataclysm: Bright Nights version %s memorial file"
+msgstr "카타클리즘: 밝은 밤 버전 %s 메모리얼 파일"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "In memory of: %s"
+msgstr "명복을 빌며: %s"
+
+#. ~ The "%s" will be replaced by an epitaph as displayed in the memorial
+#. files. Replace the
+#. quotation marks as appropriate for your language.
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "epitaph"
+msgid "\"%s\""
+msgstr "\"%s\""
+
+#. ~ First parameter: Pronoun, second parameter: a profession name (with
+#. article)
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s was %2$s when the apocalypse began."
+msgstr "%1$s(은)는 대재앙이 닥치기 전에 %2$s이었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s died on %2$s."
+msgstr "%1$s %2$s에서 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Cash on hand: %s"
+msgstr "보유 현금: %s"
+
+#: src/event/memorial_logger.cpp
+msgid "Final HP:"
+msgstr "최종 HP:"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid " Head: %d/%d"
+msgstr " 머리: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Torso: %d/%d"
+msgstr "상체: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "L Arm: %d/%d"
+msgstr "왼팔: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "R Arm: %d/%d"
+msgstr "오른팔: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "L Leg: %d/%d"
+msgstr "왼 다리: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "R Leg: %d/%d"
+msgstr "오른 다리: %d/%d"
+
+#: src/event/memorial_logger.cpp
+msgid "Final Stats:"
+msgstr "최종 능력치:"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Str %d"
+msgstr "근력%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Dex %d"
+msgstr "민첩%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Int %d"
+msgstr "지능%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Per %d"
+msgstr "지각%d"
+
+#: src/event/memorial_logger.cpp
+msgid "Base Stats:"
+msgstr "기본 능력치:"
+
+#: src/event/memorial_logger.cpp
+msgid "Final Messages:"
+msgstr "마지막 로그:"
+
+#: src/event/memorial_logger.cpp
+msgid "No monsters were killed."
+msgstr "아무것도 죽이지 않았습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Total kills: %d"
+msgstr "죽인 수 총합: %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%s: %d (%d %%)"
+msgstr "%s: %d (%d %%)"
+
+#: src/event/memorial_logger.cpp src/newcharacter.cpp
+msgid "Traits:"
+msgstr "특성:"
+
+#: src/event/memorial_logger.cpp
+msgid "(None)"
+msgstr "(없음)"
+
+#: src/event/memorial_logger.cpp
+msgid "Ongoing Effects:"
+msgstr "적용 중인 효과:"
+
+#: src/event/memorial_logger.cpp
+msgid "No bionics were installed."
+msgstr "바이오닉을 설치하지 않았습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Bionic Power: %d/%d"
+msgstr "바이오닉 전력: %d/%d"
+
+#: src/event/memorial_logger.cpp src/panels.cpp
+msgid "Weapon:"
+msgstr "무기:"
+
+#: src/event/memorial_logger.cpp
+msgid "Equipment:"
+msgstr "장비:"
+
+#: src/event/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
+msgid "Inventory:"
+msgstr "소지품창:"
+
+#: src/event/memorial_logger.cpp
+msgid "Lifetime Stats and Scores"
+msgstr "생애 점수와 능력치"
+
+#: src/event/memorial_logger.cpp
+msgid "Game History"
+msgstr "게임 내역"
+
+#. ~ %s is artifact name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Activated the %s."
+msgstr "%s(을)를 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Activated the %s."
+msgstr "%s(을)를 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Activated a mininuke."
+msgstr "소형핵을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Activated a mininuke."
+msgstr "소형핵을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Consumed mutagen."
+msgstr "뮤타젠을 복용했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Consumed mutagen."
+msgstr "뮤타젠을 복용했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected mutagen."
+msgstr "뮤타젠을 주입했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected mutagen."
+msgstr "뮤타젠을 주입했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Consumed purifier."
+msgstr "정화제를 복용했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Consumed purifier."
+msgstr "정화제를 복용했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected purifier."
+msgstr "정화제를 주입했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected purifier."
+msgstr "정화제를 주입했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected smart purifier."
+msgstr "표적 정화제를 주입했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected smart purifier."
+msgstr "표적 정화제를 주입했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Angered a group of amigara horrors!"
+msgstr "아미가라 공포체 무리가 분노했습니다!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Angered a group of amigara horrors!"
+msgstr "아미가라 공포체 무리가 분노했습니다!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Awoke a group of dark wyrms!"
+msgstr "검은 비룡 무리를 깨웠습니다!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Awoke a group of dark wyrms!"
+msgstr "검은 비룡 무리를 깨웠습니다!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Became wanted by the police!"
+msgstr "경찰에 의해 지명수배되었습니다!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Became wanted by the police!"
+msgstr "경찰에 의해 지명수배당했습니다!"
+
+#. ~ %s is bodypart
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Broken %s began to mend."
+msgstr "부서진 %s(이)가 다시 붙기 시작합니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Broken %s began to mend."
+msgstr "부서진 %s(이)가 다시 붙기 시작합니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "You buried an unknown victim of the Cataclysm."
+msgstr "이 대재앙의 이름없는 희생자 하나를 묻었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "You buried an unknown victim of The Cataclysm."
+msgstr "이 대재앙의 이름없는 희생자 하나를 묻었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "You buried %s."
+msgstr "%s(을)를 묻었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "You buried %s."
+msgstr "%s(을)를 묻었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caused a resonance cascade."
+msgstr "대공명 현상을 일으켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caused a resonance cascade."
+msgstr "대공명 현상을 일으켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caught and killed an ape.  Prey doesn't have a name."
+msgstr "유인원 하나를 잡아죽였습니다. 사냥감은 이름이 없는 법입니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caught and killed an ape.  Prey doesn't have a name."
+msgstr "유인원 하나를 잡아죽였습니다. 사냥감은 이름이 없는 법입니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed a delicious-looking innocent, %s, in cold blood."
+msgstr "맛있어보이는, 무고한 %s(을)를 냉혹하게 죽였습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed a delicious-looking innocent, %s, in cold blood."
+msgstr "맛있어보이는, 무고한 %s(을)를 냉혹하게 죽였습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed an innocent, %s, in cold blood.  They were weak."
+msgstr "무고한 %s(을)를 냉혹하게 죽였습니다. 약자에게 어울리는 결말이었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed an innocent, %s, in cold blood.  They were weak."
+msgstr "무고한 %s(을)를 냉혹하게 죽였습니다. 약자에게 어울리는 결말이었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed an innocent, %s."
+msgstr "무고한 %s(을)를 죽였습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed an innocent, %s."
+msgstr "무고한 %s(을)를 죽였습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid ""
+"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
+msgstr "무고한 %s(을)를 냉혹하게 죽인 뒤 끔찍한 죄책감에 시달렸습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid ""
+"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
+msgstr "무고한 %s(을)를 냉혹하게 죽인 뒤 끔찍한 죄책감에 시달렸습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed a %s."
+msgstr "%s(을)를 죽였습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed a %s."
+msgstr "%s(을)를 죽였습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on bubble wrap."
+msgstr "뽁뽁이 포장지를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on bubble wrap."
+msgstr "뽁뽁이 포장지를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on glass."
+msgstr "유리를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on glass."
+msgstr "유리를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caught by a beartrap."
+msgstr "곰 덫에 물렸습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caught by a beartrap."
+msgstr "곰 덫에 물렸습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a spiked board."
+msgstr "못 박힌 판자를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a spiked board."
+msgstr "못 박힌 판자를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a caltrop."
+msgstr "마름쇠를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a caltrop."
+msgstr "마름쇠를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a glass caltrop."
+msgstr "유리 마름쇠를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a glass caltrop."
+msgstr "유리 마름쇠를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Tripped on a tripwire."
+msgstr "인계철선에 걸렸습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Tripped on a tripwire."
+msgstr "인계철선에 걸렸습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a crossbow trap."
+msgstr "쇠뇌 덫을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a crossbow trap."
+msgstr "쇠뇌 덫을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shotgun trap."
+msgstr "산탄총 덫을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shotgun trap."
+msgstr "산탄총 덫을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a blade trap."
+msgstr "칼날 덫을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a blade trap."
+msgstr "칼날 덫을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a light snare."
+msgstr "가는 올가미를 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a light snare."
+msgstr "가는 올가미를 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a heavy snare."
+msgstr "굵은 올가미를 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a heavy snare."
+msgstr "굵은 올가미를 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a land mine."
+msgstr "지뢰를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a land mine."
+msgstr "지뢰를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a booby trap."
+msgstr "부비트랩을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a booby trap."
+msgstr "부비트랩을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a teleport trap."
+msgstr "공간이동 함정을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a teleport trap."
+msgstr "공간이동 함정을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into thick goo."
+msgstr "걸쭉한 오물 구덩이에 들어갔습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into thick goo."
+msgstr "걸쭉한 오물 구덩이에 들어갔습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into a dissector."
+msgstr "광선 분해기를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into a dissector."
+msgstr "광선 분해기를 밟았습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell in a pit."
+msgstr "구덩이에 떨어졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell in a pit."
+msgstr "구덩이에 떨어졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell into a spiked pit."
+msgstr "가시 구덩이에 떨어졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell into a spiked pit."
+msgstr "가시 구덩이에 떨어졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell into a pit filled with glass shards."
+msgstr "유리 파편이 가득한 구덩이에 빠졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell into a pit filled with glass shards."
+msgstr "유리 파편이 가득한 구덩이에 빠졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into lava."
+msgstr "용암에 빠졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into lava."
+msgstr "용암에 빠졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into a sinkhole."
+msgstr "싱크홀에 빠졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into a sinkhole."
+msgstr "싱크홀에 빠졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell down a ledge."
+msgstr "아래층으로 떨어졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell down a ledge."
+msgstr "아래층으로 떨어졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a flood trap."
+msgstr "침수 함정을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a flood trap."
+msgstr "침수 함정을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shadow trap."
+msgstr "그림자 덫을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shadow trap."
+msgstr "그림자 덫을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a life-draining trap."
+msgstr "생명력 흡수 함정을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a life-draining trap."
+msgstr "생명력 흡수 함정을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shadow snake trap."
+msgstr "그림자 뱀 덫을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shadow snake trap."
+msgstr "그림자 뱀 덫을 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Consumed a %s."
+msgstr "%s(을)를 섭취했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Consumed a %s."
+msgstr "%s(을)를 섭취했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened the Marloss Gateway."
+msgstr "말로스 관문을 열었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened the Marloss Gateway."
+msgstr "말로스 관문을 열었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Became one with the Mycus."
+msgstr "마이커스와 하나가 되었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Became one with the Mycus."
+msgstr "마이커스와 하나가 되었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Dermatik eggs hatched."
+msgstr "더마틱 알이 부화했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Dermatik eggs hatched."
+msgstr "더마틱 알이 부화했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected with dermatik eggs."
+msgstr "더마틱 알이 주입되었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected with dermatik eggs."
+msgstr "더마틱 알이 주입되었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Destroyed a triffid grove."
+msgstr "트리피드 숲을 파괴했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Destroyed a triffid grove."
+msgstr "트리피드 숲을 파괴했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to an asthma attack."
+msgstr "천식 발작으로 인해 쓰러졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to an asthma attack."
+msgstr "천식 발작으로 인해 쓰러졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of datura overdose."
+msgstr "흰독말풀 과용으로 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of datura overdose."
+msgstr "흰독말풀 과용으로 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of a healing stimulant overdose."
+msgstr "각성제 과다복용으로 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of a healing stimulant overdose."
+msgstr "각성제 과다복용으로 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of an alcohol overdose."
+msgstr "알코올 과용으로 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of an alcohol overdose."
+msgstr "알코올 과용으로 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of a drug overdose."
+msgstr "약물 과다복용으로 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of a drug overdose."
+msgstr "약물 과다복용으로 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to the infection."
+msgstr "감염이 악화되는 바람에 쓰러졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to the infection."
+msgstr "감염이 악화되는 바람에 쓰러졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of starvation."
+msgstr "굶어죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of starvation."
+msgstr "굶어죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of thirst."
+msgstr "목말라 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of thirst."
+msgstr "목말라 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Dug a shaft into lava."
+msgstr "용암으로 향하는 구덩이를 팠습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Dug a shaft into lava."
+msgstr "용암으로 향하는 구덩이를 팠습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Disarmed a nuclear missile."
+msgstr "핵 미사일을 비활성화시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Disarmed a nuclear missile."
+msgstr "핵 미사일을 비활성화시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Ate a sewage sample."
+msgstr "하수 샘플을 먹었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Ate a sewage sample."
+msgstr "하수 샘플을 먹었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "'%s' mutation turned into '%s'"
+msgstr "'%s' 변이가 '%s'(으)로 바뀌었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "'%s' mutation turned into '%s'"
+msgstr "'%s' 변이가 '%s'(으)로 바뀌었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Exhumed a grave."
+msgstr "무덤을 파냈습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Exhumed a grave."
+msgstr "무덤을 파냈습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Failed install of bionic: %s."
+msgstr "%s 바이오닉 설치에 실패했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Failed install of bionic: %s."
+msgstr "%s 바이오닉 설치에 실패했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Failed to remove bionic: %s."
+msgstr "바이오닉 제거 실패: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Failed to remove bionic: %s."
+msgstr "바이오닉 제거 실패: %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to lack of sleep."
+msgstr "수면부족으로 쓰러졌습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to lack of sleep."
+msgstr "수면부족으로 쓰러졌습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "The fuel tank of the %s exploded!"
+msgstr "%s의 연료 탱크가 폭발했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "The fuel tank of the %s exploded!"
+msgstr "%s의 연료 탱크가 폭발했습니다."
+
+#. ~ %s is addiction name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Became addicted to %s."
+msgstr "%s에 중독되었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Became addicted to %s."
+msgstr "%s에 중독되었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Gained the mutation '%s'."
+msgstr "'%s' 변이가 생겼습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Gained the mutation '%s'."
+msgstr "'%s' 변이가 생겼습니다."
+
+#. ~ %d is skill level %s is skill name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Reached skill level %1$d in %2$s."
+msgstr "%2$s 기술이 %1$d로 올랐습니다."
+
+#. ~ %d is skill level %s is skill name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Reached skill level %1$d in %2$s."
+msgstr "%2$s 기술이 %1$d로 올랐습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s committed suicide."
+msgstr "%s(이)가 자살했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s committed suicide."
+msgstr "%s(이)가 자살했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s was killed."
+msgstr "%s(이)가 살해당했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s was killed."
+msgstr "%s(이)가 살해당했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Last words: %s"
+msgstr "유언: %s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Last words: %s"
+msgstr "유언: %s"
+
+#. ~ %s is player name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s began their journey into the Cataclysm."
+msgstr "%s(은)는 카타클리즘으로의 여행을 시작했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s began their journey into the Cataclysm."
+msgstr "%s(은)는 카타클리즘으로의 여행을 시작했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Installed bionic: %s."
+msgstr "설치된 바이오닉: %s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Installed bionic: %s."
+msgstr "설치된 바이오닉: %s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Installed bad bionic: %s."
+msgstr "잘못 설치된 바이오닉: %s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Installed bad bionic: %s."
+msgstr "잘못 설치된 바이오닉: %s"
+
+#. ~ %s is martial art
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Learned %s."
+msgstr "%s(을)를 배웠습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Learned %s."
+msgstr "%s(을)를 배웠습니다."
+
+#. ~ %s is addiction name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Overcame addiction to %s."
+msgstr "%s 중독을 극복했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Overcame addiction to %s."
+msgstr "%s 중독을 극복했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s became hostile."
+msgstr "%s(이)가 적대적으로 변했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s became hostile."
+msgstr "%s(이)가 적대적으로 변했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened a portal."
+msgstr "포탈을 열었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened a portal."
+msgstr "포탈을 열었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened a strange temple."
+msgstr "이상한 사원의 문을 열었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened a strange temple."
+msgstr "이상한 사원의 문을 열었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Gained a spell level on %s."
+msgstr "%s 주문 레벨을 1 높였습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Gained a spell level on %s."
+msgstr "%s 주문 레벨을 1 높였습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Released subspace specimens."
+msgstr "지하 실험체를 해방시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Released subspace specimens."
+msgstr "지하 실험체를 해방시켰습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Removed bionic: %s."
+msgstr "%s 바이오닉을 제거했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Removed bionic: %s."
+msgstr "%s 바이오닉을 제거했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Sealed a Hazardous Material Sarcophagus."
+msgstr "유해 물질 봉쇄 석관을 봉인했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Sealed a Hazardous Material Sarcophagus."
+msgstr "유해 물질 봉쇄 석관을 봉인했습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Telefragged a %s."
+msgstr "%s(이)가 텔레포트 도중에 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Telefragged a %s."
+msgstr "%s(이)가 텔레포트 도중에 죽었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Spontaneous teleport."
+msgstr "자연스러운 공간이동."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Spontaneous teleport."
+msgstr "자연스러운 공간이동."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Teleported into a %s."
+msgstr "%s(으)로 공간이동되었습니다."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Teleported into a %s."
+msgstr "%s(으)로 공간이동되었습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Terminated subspace specimens."
+msgstr "지하 실험체를 제거했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Terminated subspace specimens."
+msgstr "지하 실험체를 제거했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Threw up."
+msgstr "토했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Threw up."
+msgstr "토했습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Set off an alarm."
+msgstr "경보를 작동시켰습니다."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Set off an alarm."
+msgstr "경보를 작동시켰습니다."
 
 #: src/examine_item_menu.cpp
 msgid "Link this item to which clothing?"
@@ -305289,6 +306336,10 @@ msgstr "파편"
 #, c-format
 msgid "taking %d damage"
 msgstr "%d 피해를 받습니다."
+
+#: src/explosion.cpp
+msgid "but take no damage"
+msgstr "피해를 받지 않습니다."
 
 #: src/explosion.cpp
 msgid "but takes no damage"
@@ -308290,6 +309341,282 @@ msgstr "현재 자세로는 기어오를 수 없습니다."
 msgid "The %s flickers and goes dark — the pocket dimension has collapsed."
 msgstr "%s(이)가 깜빡거리다가 검게 변합니다. 주머니 차원이 붕괴되었습니다."
 
+#: src/game/bonuses.cpp
+msgid "Accuracy"
+msgstr "명중률"
+
+#: src/game/bonuses.cpp
+msgid "Move cost"
+msgstr "이동 포인트"
+
+#: src/game/bonuses.cpp src/panels.cpp
+msgid "Armor"
+msgstr "보호구"
+
+#: src/game/bonuses.cpp
+msgid "Armor penetration"
+msgstr "방어 관통"
+
+#: src/game/bonuses.cpp
+msgid "Target armor multiplier"
+msgstr "대상 방어 배수"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "type of damage"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$d%%</stat> of %3$s"
+msgstr "* %1$s: %3$s <stat>%2$d%%</stat>"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$d%%</stat>"
+msgstr "* %1$s: <stat>%2$d%%</stat>"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$+d%%</stat> of %3$s"
+msgstr "* %1$s: %3$s <stat>%2$+d%%</stat>"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$+d</stat>"
+msgstr "* %1$s: <stat>%2$+d</stat>"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "true"
+msgstr "고정"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "biological"
+msgstr "생물학적"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "bash"
+msgstr "타격"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "cut"
+msgstr "절단"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "acid"
+msgstr "강산"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "stab"
+msgstr "관통"
+
+#: src/game/damage.cpp
+msgctxt "damage_type"
+msgid "bullet"
+msgstr "총탄"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "heat"
+msgstr "열기"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "cold"
+msgstr "냉기"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "dark"
+msgstr "암흑"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "light"
+msgstr "광휘"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "psionic"
+msgstr "초능"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "electric"
+msgstr "전기"
+
+#: src/game/gamemode.cpp
+msgid "Tutorial"
+msgstr "튜토리얼"
+
+#: src/game/gamemode.cpp
+msgid "Defense"
+msgstr "디펜스"
+
+#: src/game/iuse_software.cpp
+msgid "You found kitten!"
+msgstr "새끼 고양이를 찾았습니다!"
+
+#: src/game/live_view.cpp
+msgid "< <color_green>Mouse View</color> >"
+msgstr "< <color_green>마우스 보기</color> >"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "good"
+msgstr "긍정적"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "bad"
+msgstr "부정적"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "mixed"
+msgstr "복합적"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "warning"
+msgstr "경고"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "info"
+msgstr "정보"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "neutral"
+msgstr "일반"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "debug"
+msgstr "debug"
+
+#: src/game/mod_manager_ui.cpp
+msgid "This mod is marked as obsolete and may contain severe errors."
+msgstr "이 모드는 구식이며, 심각한 오류를 포함할 수 있습니다."
+
+#: src/game/mod_manager_ui.cpp
+msgid "License"
+msgstr "라이센스"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Author"
+msgid_plural "Authors"
+msgstr[0] "원작자"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Maintainer"
+msgid_plural "Maintainers"
+msgstr[0] "관리자"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Dependency"
+msgid_plural "Dependencies"
+msgstr[0] "선행모드"
+
+#. ~ Followed by list of mods the current mod conflicts with
+#: src/game/mod_manager_ui.cpp
+msgid "Conflict"
+msgid_plural "Conflicts"
+msgstr[0] "충돌"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Mod version"
+msgstr "모드 버전"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid "%s: API version %s\n"
+msgstr "%s: API 버전 %s\n"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Needs Lua"
+msgstr "Lua 필요"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Mod info path"
+msgstr "모드 정보 경로"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"  %s [%s]\n"
+"    with %s [%s]\n"
+msgstr ""
+"  %s [%s]\n"
+"    와(과) %s [%s]\n"
+
+#: src/game/mod_manager_ui.cpp
+msgid "The mod is already on the list."
+msgstr "모드가 이미 목록에 존재합니다."
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid "Unable to find mod with id \"%s\"."
+msgstr "ID \"%s\"에 해당하는 모드를 찾을 수 없습니다."
+
+#: src/game/mod_manager_ui.cpp
+msgid "Failed to build dependency tree for the mod."
+msgstr "모드의 의존성 구조를 생성하는데 실패했습니다."
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"The mod has dependency problem(s):\n"
+"\n"
+"%s"
+msgstr ""
+"모드가 이하의 의존성 문제를 갖고 있습니다:\n"
+"\n"
+"%s"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"The mod or some of its dependencies has conflict(s) with active mods:\n"
+"\n"
+"%s"
+msgstr ""
+"모드 또는 그 의존성 중 일부가 활성화된 모드와 충돌합니다:\n"
+"\n"
+"%s"
+
+#: src/game/mutation_type.cpp
+msgid "skin color"
+msgstr "피부색"
+
+#: src/game/mutation_type.cpp
+msgid "eye color"
+msgstr "눈 색"
+
+#: src/game/mutation_type.cpp
+msgid "hair style"
+msgstr "머리 모양"
+
+#: src/game/mutation_type.cpp
+msgid "hair color"
+msgstr "머리색"
+
+#: src/game/perk.cpp
+msgid "Effects:"
+msgstr "효과: "
+
 #: src/game_inventory.cpp
 msgid "Unload every carried item that can be unloaded"
 msgstr "소지품 중 가능한 모든 물품의 내용물을 제거합니다."
@@ -308935,14 +310262,6 @@ msgstr "<color_yellow>멸균 처리할 장치를 선택하세요:</color>"
 #: src/game_inventory.cpp
 msgid "You don't have any devices to sterilize."
 msgstr "멸균 처리할 장치가 없습니다."
-
-#: src/gamemode.cpp
-msgid "Tutorial"
-msgstr "튜토리얼"
-
-#: src/gamemode.cpp
-msgid "Defense"
-msgstr "디펜스"
 
 #: src/gamemode_defense.cpp
 msgid "A caravan approaches!  Press spacebar…"
@@ -315038,11 +316357,11 @@ msgstr "<bold>투사체 저항</bold>:"
 msgid "<bold>Stat Bonus</bold>: "
 msgstr "<bold>능력치 보너스</bold>: "
 
-#: src/item.cpp src/iteminfo_armor.cpp
+#: src/item.cpp src/item/iteminfo_armor.cpp
 msgid "<bold>Weight capacity modifier</bold>: "
 msgstr "<bold>운반 가능 중량 배수</bold>: "
 
-#: src/item.cpp src/iteminfo_armor.cpp
+#: src/item.cpp src/item/iteminfo_armor.cpp
 msgid "<bold>Weight capacity bonus</bold>: "
 msgstr "<bold>운반 가능 중량 보너스</bold>: "
 
@@ -315861,17 +317180,236 @@ msgctxt "corpse ownership qualifier"
 msgid "%1$s of %2$s, %3$s"
 msgstr "%2$s의 %1$s(%3$s)"
 
-#: src/item_action.cpp
+#: src/item.cpp src/item/book_scanning.cpp
+#, c-format
+msgid "digital copy of %s"
+msgstr "%s (디지털 복사본)"
+
+#: src/item/book_scanning.cpp
+msgid "You need a powered reader to scan."
+msgstr "전력이 공급되는 리더기가 있어야 스캔할 수 있습니다."
+
+#: src/item/book_scanning.cpp
+msgid "You need physical reading material to scan."
+msgstr "물리 형태의 읽을거리가 있어야 스캔할 수 있습니다."
+
+#: src/item/book_scanning.cpp
+msgid "You can't see well enough to scan."
+msgstr "너무 어두워서 스캔할 수 없습니다."
+
+#: src/item/book_scanning.cpp
+msgid "This copy is already installed on the reader."
+msgstr "이 판본은 이미 리더기에 포함되어 있습니다."
+
+#: src/item/book_scanning.cpp
+msgid "You no longer have the reading material or reader.  You stop scanning."
+msgstr "읽을거리 또는 리더기가 없습니다. 스캔을 중단합니다."
+
+#: src/item/book_scanning.cpp
+#, c-format
+msgid "You save a digital copy of %s on your %s."
+msgstr "%s의 디지털 복사본을 %s에 저장합니다."
+
+#: src/item/digital_media.cpp
+msgid ""
+"No music collection is ready to play.  Try another file or wait for its "
+"cooldown."
+msgstr "준비된 음악 모음집이 없습니다. 다른 파일을 시도하거나, 잠시 기다리세요."
+
+#: src/item/digital_media.cpp
+#, c-format
+msgid "You recently listened to this collection.  Try again in %s."
+msgstr "이 모음집을 최근에 들었습니다. %s 뒤에 다시 시도하세요."
+
+#: src/item/item_action.cpp
 msgid "You don't have any items with registered uses!"
 msgstr "등록된 사용법이 있는 물품이 없습니다!"
 
-#: src/item_action.cpp
+#: src/item/item_action.cpp
 msgid "Execute which action?"
 msgstr "어떤 행동을 수행합니까?"
 
-#: src/item_action.cpp
+#: src/item/item_action.cpp
 msgid "You do not have an item that can perform this action."
 msgstr "그 행동을 하는데 필요한 물품이 없습니다."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Personal aura</stat>. "
+msgstr "<stat>개인 오라</stat>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Close to skin</stat>. "
+msgstr "<stat>피부에 밀착됨</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Strapped</stat>. "
+msgstr "<stat>끈으로 맴</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Outer</stat>. "
+msgstr "<stat>겉</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Waist</stat>. "
+msgstr "<stat>허리</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Outer aura</stat>. "
+msgstr "<stat>외부 오라</stat>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Normal</stat>. "
+msgstr "<stat>일반</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(too big)</bad>"
+msgstr "<bad>(너무 큼)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(huge!)</bad>"
+msgstr "<bad>(거대함!)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(too small)</bad>"
+msgstr "<bad>(너무 작음)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(tiny!)</bad>"
+msgstr "<bad>(쥐꼬리만함!)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<info>(for all parts)</info>"
+msgstr "<info>(모든 부위)</info>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Coverage</bold>"
+msgstr "<bold>보호율</bold>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Encumbrance</bold>"
+msgstr "<bold>방해도</bold>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "When Full"
+msgstr "꽉 찼을 때"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Storage</bold>: "
+msgstr "<bold>저장량</bold>: "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Covers</bold>: "
+msgstr "<bold>부위</bold>: "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>head</info>. "
+msgstr "<info>머리</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>eyes</info>. "
+msgstr "<info>눈</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>mouth</info>. "
+msgstr "<info>입</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>torso</info>. "
+msgstr "<info>상체</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>arm</info>. "
+msgstr "<info>한 팔</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>arms</info>. "
+msgstr "<info>양팔</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left arm</info>. "
+msgstr "<info>왼팔</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right arm</info>. "
+msgstr "<info>오른팔</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>hand</info>. "
+msgstr "<info>한 손</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>hands</info>. "
+msgstr "<info>양손</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left hand</info>. "
+msgstr "<info>왼손</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right hand</info>. "
+msgstr "<info>오른손</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>leg</info>. "
+msgstr "<info>한 다리</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>legs</info>. "
+msgstr "<info>다리</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left leg</info>. "
+msgstr "<info>왼 다리</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right leg</info>. "
+msgstr "<info>오른 다리</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>foot</info>. "
+msgstr "<info>한 발</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>feet</info>. "
+msgstr "<info>발</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left foot</info>. "
+msgstr "<info>왼 발</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right foot</info>. "
+msgstr "<info>오른 발</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<info>Nothing</info>."
+msgstr "<info>없음</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Layer: "
+msgstr "착용 방식:"
+
+#: src/item/iteminfo_armor.cpp
+msgid ""
+"This item <good>won't conflict with</good> other items on the same "
+"<info>layer</info>."
+msgstr "이 물품은 <info>같은 계층</info>에 위치한 다른 물품과 <good>겹쳐입을</good> 수 있습니다."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Warmth: "
+msgstr "보온력:"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <info>(fits)</info>"
+msgstr "<info>(치수 맞음)</info>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(poor fit)</bad>"
+msgstr "<bad>(불편함)</bad>"
+
+#: src/item/material.cpp
+msgid "damages"
+msgstr "손상"
 
 #: src/item_factory.cpp
 msgid "gunmod"
@@ -315907,180 +317445,6 @@ msgstr "%zu회 생성시 결과: "
 #, c-format
 msgid "%d x %s"
 msgstr "%d x %s"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Personal aura</stat>. "
-msgstr "<stat>개인 오라</stat>."
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Close to skin</stat>. "
-msgstr "<stat>피부에 밀착됨</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Strapped</stat>. "
-msgstr "<stat>끈으로 맴</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Outer</stat>. "
-msgstr "<stat>겉</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Waist</stat>. "
-msgstr "<stat>허리</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Outer aura</stat>. "
-msgstr "<stat>외부 오라</stat>."
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Normal</stat>. "
-msgstr "<stat>일반</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(too big)</bad>"
-msgstr "<bad>(너무 큼)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(huge!)</bad>"
-msgstr "<bad>(거대함!)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(too small)</bad>"
-msgstr "<bad>(너무 작음)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(tiny!)</bad>"
-msgstr "<bad>(쥐꼬리만함!)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid "<info>(for all parts)</info>"
-msgstr "<info>(모든 부위)</info>"
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Coverage</bold>"
-msgstr "<bold>보호율</bold>"
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Encumbrance</bold>"
-msgstr "<bold>방해도</bold>"
-
-#: src/iteminfo_armor.cpp
-msgid "When Full"
-msgstr "꽉 찼을 때"
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Storage</bold>: "
-msgstr "<bold>저장량</bold>: "
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Covers</bold>: "
-msgstr "<bold>부위</bold>: "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>head</info>. "
-msgstr "<info>머리</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>eyes</info>. "
-msgstr "<info>눈</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>mouth</info>. "
-msgstr "<info>입</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>torso</info>. "
-msgstr "<info>상체</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>arm</info>. "
-msgstr "<info>한 팔</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>arms</info>. "
-msgstr "<info>양팔</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left arm</info>. "
-msgstr "<info>왼팔</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right arm</info>. "
-msgstr "<info>오른팔</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>hand</info>. "
-msgstr "<info>한 손</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>hands</info>. "
-msgstr "<info>양손</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left hand</info>. "
-msgstr "<info>왼손</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right hand</info>. "
-msgstr "<info>오른손</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>leg</info>. "
-msgstr "<info>한 다리</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>legs</info>. "
-msgstr "<info>다리</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left leg</info>. "
-msgstr "<info>왼 다리</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right leg</info>. "
-msgstr "<info>오른 다리</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>foot</info>. "
-msgstr "<info>한 발</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>feet</info>. "
-msgstr "<info>발</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left foot</info>. "
-msgstr "<info>왼 발</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right foot</info>. "
-msgstr "<info>오른 발</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<info>Nothing</info>."
-msgstr "<info>없음</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "Layer: "
-msgstr "착용 방식:"
-
-#: src/iteminfo_armor.cpp
-msgid ""
-"This item <good>won't conflict with</good> other items on the same "
-"<info>layer</info>."
-msgstr "이 물품은 <info>같은 계층</info>에 위치한 다른 물품과 <good>겹쳐입을</good> 수 있습니다."
-
-#: src/iteminfo_armor.cpp
-msgid "Warmth: "
-msgstr "보온력:"
-
-#: src/iteminfo_armor.cpp
-msgid " <info>(fits)</info>"
-msgstr "<info>(치수 맞음)</info>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(poor fit)</bad>"
-msgstr "<bad>(불편함)</bad>"
 
 #: src/itype.h
 msgid "click."
@@ -318273,14 +319637,6 @@ msgstr "다음 장소에 앉아있습니다: "
 #: src/iuse.cpp
 msgid "is standing"
 msgstr "다음 장소에 서있습니다: "
-
-#: src/iuse.cpp src/memorial_logger.cpp
-msgid "He"
-msgstr "그는"
-
-#: src/iuse.cpp src/memorial_logger.cpp
-msgid "She"
-msgstr "그녀는"
 
 #: src/iuse.cpp
 msgctxt "Pronoun"
@@ -320982,10 +322338,6 @@ msgstr "조각하기"
 msgid "Carved"
 msgstr "새겨져 있음"
 
-#: src/iuse_software.cpp
-msgid "You found kitten!"
-msgstr "새끼 고양이를 찾았습니다!"
-
 #: src/iuse_software_kitten.cpp
 msgid "\"I pity the fool who mistakes me for kitten!\", sez Mr. T."
 msgstr "\"불쌍한 멍청이, 날 새끼 고양이로 착각하다니!\",라고 Mr. T가 말했습니다."
@@ -321982,248 +323334,9 @@ msgstr "<-> 이전단계"
 msgid "<u>ndo move"
 msgstr "<u>이동 전으로"
 
-#: src/kill_tracker.cpp
-msgid "You haven't killed any monsters yet!"
-msgstr "아직 아무것도 죽이지 않았습니다!"
-
-#: src/kill_tracker.cpp
-#, c-format
-msgid "KILL COUNT: %d"
-msgstr "죽인 목록: %d"
-
-#: src/kill_tracker.cpp
-#, c-format
-msgid ""
-"\n"
-"Experience: %d (%d points available)"
-msgstr ""
-"\n"
-"경험치: %d (%d 포인트 사용 가능)"
-
 #: src/language.cpp
 msgid "Select your language"
 msgstr "언어 선택"
-
-#. ~ abbreviated direction names and long direction names
-#: src/line.cpp
-msgid "N    "
-msgstr "N    "
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "north"
-msgstr "북쪽"
-
-#: src/line.cpp
-msgid "NE   "
-msgstr "NE   "
-
-#: src/line.cpp
-msgid "northeast"
-msgstr "북동쪽"
-
-#: src/line.cpp
-msgid "E    "
-msgstr "E    "
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "east"
-msgstr "동쪽"
-
-#: src/line.cpp
-msgid "SE   "
-msgstr "SE   "
-
-#: src/line.cpp
-msgid "southeast"
-msgstr "남동쪽"
-
-#: src/line.cpp
-msgid "S    "
-msgstr "S    "
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "south"
-msgstr "남쪽"
-
-#: src/line.cpp
-msgid "SW   "
-msgstr "SW   "
-
-#: src/line.cpp
-msgid "southwest"
-msgstr "남서쪽"
-
-#: src/line.cpp
-msgid "W    "
-msgstr "W    "
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "west"
-msgstr "서쪽"
-
-#: src/line.cpp
-msgid "NW   "
-msgstr "NW   "
-
-#: src/line.cpp
-msgid "northwest"
-msgstr "북서쪽"
-
-#: src/line.cpp
-msgid "UP_N "
-msgstr "UP_N "
-
-#: src/line.cpp
-msgid "north and above"
-msgstr "위층 북쪽"
-
-#: src/line.cpp
-msgid "UP_NE"
-msgstr "UP_NE"
-
-#: src/line.cpp
-msgid "northeast and above"
-msgstr "위층 북동쪽"
-
-#: src/line.cpp
-msgid "UP_E "
-msgstr "UP_E "
-
-#: src/line.cpp
-msgid "east and above"
-msgstr "위층 북동쪽"
-
-#: src/line.cpp
-msgid "UP_SE"
-msgstr "UP_SE"
-
-#: src/line.cpp
-msgid "southeast and above"
-msgstr "위층 남동쪽"
-
-#: src/line.cpp
-msgid "UP_S "
-msgstr "UP_S "
-
-#: src/line.cpp
-msgid "south and above"
-msgstr "위층 남쪽"
-
-#: src/line.cpp
-msgid "UP_SW"
-msgstr "UP_SW"
-
-#: src/line.cpp
-msgid "southwest and above"
-msgstr "위층 남서쪽"
-
-#: src/line.cpp
-msgid "UP_W "
-msgstr "UP_W "
-
-#: src/line.cpp
-msgid "west and above"
-msgstr "위층_서쪽"
-
-#: src/line.cpp
-msgid "UP_NW"
-msgstr "UP_NW"
-
-#: src/line.cpp
-msgid "northwest and above"
-msgstr "위층 북서쪽"
-
-#: src/line.cpp
-msgid "DN_N "
-msgstr "DN_N "
-
-#: src/line.cpp
-msgid "north and below"
-msgstr "아래층 북쪽"
-
-#: src/line.cpp
-msgid "DN_NE"
-msgstr "DN_NE"
-
-#: src/line.cpp
-msgid "northeast and below"
-msgstr "아래층 북동쪽"
-
-#: src/line.cpp
-msgid "DN_E "
-msgstr "DN_E "
-
-#: src/line.cpp
-msgid "east and below"
-msgstr "아래층 동쪽"
-
-#: src/line.cpp
-msgid "DN_SE"
-msgstr "DN_SE"
-
-#: src/line.cpp
-msgid "southeast and below"
-msgstr "아래층 남동쪽"
-
-#: src/line.cpp
-msgid "DN_S "
-msgstr "DN_S "
-
-#: src/line.cpp
-msgid "south and below"
-msgstr "아래층 남쪽"
-
-#: src/line.cpp
-msgid "DN_SW"
-msgstr "DN_SW"
-
-#: src/line.cpp
-msgid "southwest and below"
-msgstr "아래층 남서쪽"
-
-#: src/line.cpp
-msgid "DN_W "
-msgstr "DN_W "
-
-#: src/line.cpp
-msgid "west and below"
-msgstr "아래층 서쪽"
-
-#: src/line.cpp
-msgid "DN_NW"
-msgstr "DN_NW"
-
-#: src/line.cpp
-msgid "northwest and below"
-msgstr "아래층 북서쪽"
-
-#: src/line.cpp
-msgid "UP_CE"
-msgstr "UP_CE"
-
-#: src/line.cpp
-msgid "above"
-msgstr "위"
-
-#: src/line.cpp
-msgid "CE   "
-msgstr "CE   "
-
-#: src/line.cpp
-msgid "center"
-msgstr "가운데"
-
-#: src/line.cpp
-msgid "DN_CE"
-msgstr "DN_CE"
-
-#: src/line.cpp
-msgid "below"
-msgstr "아래 "
-
-#: src/live_view.cpp
-msgid "< <color_green>Mouse View</color> >"
-msgstr "< <color_green>마우스 보기</color> >"
 
 #: src/loading_ui.cpp
 #, c-format
@@ -323917,9 +325030,221 @@ msgstr " [획득]"
 msgid " Style: %s "
 msgstr "스타일:%s"
 
-#: src/material.cpp
-msgid "damages"
-msgstr "손상"
+#: src/math/line.cpp
+msgid "N    "
+msgstr "N    "
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "north"
+msgstr "북쪽"
+
+#: src/math/line.cpp
+msgid "NE   "
+msgstr "NE   "
+
+#: src/math/line.cpp
+msgid "northeast"
+msgstr "북동쪽"
+
+#: src/math/line.cpp
+msgid "E    "
+msgstr "E    "
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "east"
+msgstr "동쪽"
+
+#: src/math/line.cpp
+msgid "SE   "
+msgstr "SE   "
+
+#: src/math/line.cpp
+msgid "southeast"
+msgstr "남동쪽"
+
+#: src/math/line.cpp
+msgid "S    "
+msgstr "S    "
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "south"
+msgstr "남쪽"
+
+#: src/math/line.cpp
+msgid "SW   "
+msgstr "SW   "
+
+#: src/math/line.cpp
+msgid "southwest"
+msgstr "남서쪽"
+
+#: src/math/line.cpp
+msgid "W    "
+msgstr "W    "
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "west"
+msgstr "서쪽"
+
+#: src/math/line.cpp
+msgid "NW   "
+msgstr "NW   "
+
+#: src/math/line.cpp
+msgid "northwest"
+msgstr "북서쪽"
+
+#: src/math/line.cpp
+msgid "UP_N "
+msgstr "UP_N "
+
+#: src/math/line.cpp
+msgid "north and above"
+msgstr "위층 북쪽"
+
+#: src/math/line.cpp
+msgid "UP_NE"
+msgstr "UP_NE"
+
+#: src/math/line.cpp
+msgid "northeast and above"
+msgstr "위층 북동쪽"
+
+#: src/math/line.cpp
+msgid "UP_E "
+msgstr "UP_E "
+
+#: src/math/line.cpp
+msgid "east and above"
+msgstr "위층 북동쪽"
+
+#: src/math/line.cpp
+msgid "UP_SE"
+msgstr "UP_SE"
+
+#: src/math/line.cpp
+msgid "southeast and above"
+msgstr "위층 남동쪽"
+
+#: src/math/line.cpp
+msgid "UP_S "
+msgstr "UP_S "
+
+#: src/math/line.cpp
+msgid "south and above"
+msgstr "위층 남쪽"
+
+#: src/math/line.cpp
+msgid "UP_SW"
+msgstr "UP_SW"
+
+#: src/math/line.cpp
+msgid "southwest and above"
+msgstr "위층 남서쪽"
+
+#: src/math/line.cpp
+msgid "UP_W "
+msgstr "UP_W "
+
+#: src/math/line.cpp
+msgid "west and above"
+msgstr "위층_서쪽"
+
+#: src/math/line.cpp
+msgid "UP_NW"
+msgstr "UP_NW"
+
+#: src/math/line.cpp
+msgid "northwest and above"
+msgstr "위층 북서쪽"
+
+#: src/math/line.cpp
+msgid "DN_N "
+msgstr "DN_N "
+
+#: src/math/line.cpp
+msgid "north and below"
+msgstr "아래층 북쪽"
+
+#: src/math/line.cpp
+msgid "DN_NE"
+msgstr "DN_NE"
+
+#: src/math/line.cpp
+msgid "northeast and below"
+msgstr "아래층 북동쪽"
+
+#: src/math/line.cpp
+msgid "DN_E "
+msgstr "DN_E "
+
+#: src/math/line.cpp
+msgid "east and below"
+msgstr "아래층 동쪽"
+
+#: src/math/line.cpp
+msgid "DN_SE"
+msgstr "DN_SE"
+
+#: src/math/line.cpp
+msgid "southeast and below"
+msgstr "아래층 남동쪽"
+
+#: src/math/line.cpp
+msgid "DN_S "
+msgstr "DN_S "
+
+#: src/math/line.cpp
+msgid "south and below"
+msgstr "아래층 남쪽"
+
+#: src/math/line.cpp
+msgid "DN_SW"
+msgstr "DN_SW"
+
+#: src/math/line.cpp
+msgid "southwest and below"
+msgstr "아래층 남서쪽"
+
+#: src/math/line.cpp
+msgid "DN_W "
+msgstr "DN_W "
+
+#: src/math/line.cpp
+msgid "west and below"
+msgstr "아래층 서쪽"
+
+#: src/math/line.cpp
+msgid "DN_NW"
+msgstr "DN_NW"
+
+#: src/math/line.cpp
+msgid "northwest and below"
+msgstr "아래층 북서쪽"
+
+#: src/math/line.cpp
+msgid "UP_CE"
+msgstr "UP_CE"
+
+#: src/math/line.cpp
+msgid "above"
+msgstr "위"
+
+#: src/math/line.cpp
+msgid "CE   "
+msgstr "CE   "
+
+#: src/math/line.cpp
+msgid "center"
+msgstr "가운데"
+
+#: src/math/line.cpp
+msgid "DN_CE"
+msgstr "DN_CE"
+
+#: src/math/line.cpp
+msgid "below"
+msgstr "아래 "
 
 #: src/mattack_actors.cpp
 #, c-format
@@ -324863,1227 +326188,6 @@ msgstr "%2$s에게서 %1$s(을)를 훔치는데 실패했지만, 들키지는 �
 msgid "You failed to steal %1$s from %2$s."
 msgstr "%2$s에게서 %1$s(을)를 훔치는데 실패했습니다."
 
-#: src/memorial_logger.cpp
-msgid "an unemployed male"
-msgstr "무직 남성"
-
-#: src/memorial_logger.cpp
-msgid "an unemployed female"
-msgstr "무직 여성"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "a %s"
-msgstr "%s"
-
-#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
-#. description
-#. ~ that designates the location relative to its surroundings.
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s was killed in a %2$s."
-msgstr "%1$s(이)가 %2$s에서 죽었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Cataclysm: Bright Nights version %s memorial file"
-msgstr "카타클리즘: 밝은 밤 버전 %s 메모리얼 파일"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "In memory of: %s"
-msgstr "명복을 빌며: %s"
-
-#. ~ The "%s" will be replaced by an epitaph as displayed in the memorial
-#. files. Replace the quotation marks as appropriate for your language.
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "epitaph"
-msgid "\"%s\""
-msgstr "\"%s\""
-
-#. ~ First parameter: Pronoun, second parameter: a profession name (with
-#. article)
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s was %2$s when the apocalypse began."
-msgstr "%1$s(은)는 대재앙이 닥치기 전에 %2$s이었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s died on %2$s."
-msgstr "%1$s %2$s에서 죽었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Cash on hand: %s"
-msgstr "보유 현금: %s"
-
-#: src/memorial_logger.cpp
-msgid "Final HP:"
-msgstr "최종 HP:"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid " Head: %d/%d"
-msgstr " 머리: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Torso: %d/%d"
-msgstr "상체: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "L Arm: %d/%d"
-msgstr "왼팔: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "R Arm: %d/%d"
-msgstr "오른팔: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "L Leg: %d/%d"
-msgstr "왼 다리: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "R Leg: %d/%d"
-msgstr "오른 다리: %d/%d"
-
-#: src/memorial_logger.cpp
-msgid "Final Stats:"
-msgstr "최종 능력치:"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Str %d"
-msgstr "근력%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Dex %d"
-msgstr "민첩%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Int %d"
-msgstr "지능%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Per %d"
-msgstr "지각%d"
-
-#: src/memorial_logger.cpp
-msgid "Base Stats:"
-msgstr "기본 능력치:"
-
-#: src/memorial_logger.cpp
-msgid "Final Messages:"
-msgstr "마지막 로그:"
-
-#: src/memorial_logger.cpp
-msgid "No monsters were killed."
-msgstr "아무것도 죽이지 않았습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Total kills: %d"
-msgstr "죽인 수 총합: %d"
-
-#. ~ 1. skill name, 2. skill level, 3. exercise percentage to next level
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%s: %d (%d %%)"
-msgstr "%s: %d (%d %%)"
-
-#: src/memorial_logger.cpp src/newcharacter.cpp
-msgid "Traits:"
-msgstr "특성:"
-
-#: src/memorial_logger.cpp
-msgid "(None)"
-msgstr "(없음)"
-
-#: src/memorial_logger.cpp
-msgid "Ongoing Effects:"
-msgstr "적용 중인 효과:"
-
-#: src/memorial_logger.cpp
-msgid "No bionics were installed."
-msgstr "바이오닉을 설치하지 않았습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Bionic Power: %d/%d"
-msgstr "바이오닉 전력: %d/%d"
-
-#: src/memorial_logger.cpp src/panels.cpp
-msgid "Weapon:"
-msgstr "무기:"
-
-#: src/memorial_logger.cpp
-msgid "Equipment:"
-msgstr "장비:"
-
-#: src/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
-msgid "Inventory:"
-msgstr "소지품창:"
-
-#: src/memorial_logger.cpp
-msgid "Lifetime Stats and Scores"
-msgstr "생애 점수와 능력치"
-
-#: src/memorial_logger.cpp
-msgid "Game History"
-msgstr "게임 내역"
-
-#. ~ %s is artifact name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Activated the %s."
-msgstr "%s(을)를 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Activated the %s."
-msgstr "%s(을)를 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Activated a mininuke."
-msgstr "소형핵을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Activated a mininuke."
-msgstr "소형핵을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Consumed mutagen."
-msgstr "뮤타젠을 복용했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Consumed mutagen."
-msgstr "뮤타젠을 복용했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected mutagen."
-msgstr "뮤타젠을 주입했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected mutagen."
-msgstr "뮤타젠을 주입했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Consumed purifier."
-msgstr "정화제를 복용했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Consumed purifier."
-msgstr "정화제를 복용했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected purifier."
-msgstr "정화제를 주입했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected purifier."
-msgstr "정화제를 주입했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected smart purifier."
-msgstr "표적 정화제를 주입했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected smart purifier."
-msgstr "표적 정화제를 주입했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Angered a group of amigara horrors!"
-msgstr "아미가라 공포체 무리가 분노했습니다!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Angered a group of amigara horrors!"
-msgstr "아미가라 공포체 무리가 분노했습니다!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Awoke a group of dark wyrms!"
-msgstr "검은 비룡 무리를 깨웠습니다!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Awoke a group of dark wyrms!"
-msgstr "검은 비룡 무리를 깨웠습니다!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Became wanted by the police!"
-msgstr "경찰에 의해 지명수배되었습니다!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Became wanted by the police!"
-msgstr "경찰에 의해 지명수배당했습니다!"
-
-#. ~ %s is bodypart
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Broken %s began to mend."
-msgstr "부서진 %s(이)가 다시 붙기 시작합니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Broken %s began to mend."
-msgstr "부서진 %s(이)가 다시 붙기 시작합니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "You buried an unknown victim of the Cataclysm."
-msgstr "이 대재앙의 이름없는 희생자 하나를 묻었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "You buried an unknown victim of The Cataclysm."
-msgstr "이 대재앙의 이름없는 희생자 하나를 묻었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "You buried %s."
-msgstr "%s(을)를 묻었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "You buried %s."
-msgstr "%s(을)를 묻었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caused a resonance cascade."
-msgstr "대공명 현상을 일으켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caused a resonance cascade."
-msgstr "대공명 현상을 일으켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caught and killed an ape.  Prey doesn't have a name."
-msgstr "유인원 하나를 잡아죽였습니다. 사냥감은 이름이 없는 법입니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caught and killed an ape.  Prey doesn't have a name."
-msgstr "유인원 하나를 잡아죽였습니다. 사냥감은 이름이 없는 법입니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed a delicious-looking innocent, %s, in cold blood."
-msgstr "맛있어보이는, 무고한 %s(을)를 냉혹하게 죽였습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed a delicious-looking innocent, %s, in cold blood."
-msgstr "맛있어보이는, 무고한 %s(을)를 냉혹하게 죽였습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed an innocent, %s, in cold blood.  They were weak."
-msgstr "무고한 %s(을)를 냉혹하게 죽였습니다. 약자에게 어울리는 결말이었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed an innocent, %s, in cold blood.  They were weak."
-msgstr "무고한 %s(을)를 냉혹하게 죽였습니다. 약자에게 어울리는 결말이었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed an innocent, %s."
-msgstr "무고한 %s(을)를 죽였습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed an innocent, %s."
-msgstr "무고한 %s(을)를 죽였습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid ""
-"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
-msgstr "무고한 %s(을)를 냉혹하게 죽인 뒤 끔찍한 죄책감에 시달렸습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid ""
-"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
-msgstr "무고한 %s(을)를 냉혹하게 죽인 뒤 끔찍한 죄책감에 시달렸습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed a %s."
-msgstr "%s(을)를 죽였습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed a %s."
-msgstr "%s(을)를 죽였습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on bubble wrap."
-msgstr "뽁뽁이 포장지를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on bubble wrap."
-msgstr "뽁뽁이 포장지를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on glass."
-msgstr "유리를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on glass."
-msgstr "유리를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caught by a beartrap."
-msgstr "곰 덫에 물렸습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caught by a beartrap."
-msgstr "곰 덫에 물렸습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a spiked board."
-msgstr "못 박힌 판자를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a spiked board."
-msgstr "못 박힌 판자를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a caltrop."
-msgstr "마름쇠를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a caltrop."
-msgstr "마름쇠를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a glass caltrop."
-msgstr "유리 마름쇠를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a glass caltrop."
-msgstr "유리 마름쇠를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Tripped on a tripwire."
-msgstr "인계철선에 걸렸습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Tripped on a tripwire."
-msgstr "인계철선에 걸렸습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a crossbow trap."
-msgstr "쇠뇌 덫을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a crossbow trap."
-msgstr "쇠뇌 덫을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shotgun trap."
-msgstr "산탄총 덫을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shotgun trap."
-msgstr "산탄총 덫을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a blade trap."
-msgstr "칼날 덫을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a blade trap."
-msgstr "칼날 덫을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a light snare."
-msgstr "가는 올가미를 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a light snare."
-msgstr "가는 올가미를 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a heavy snare."
-msgstr "굵은 올가미를 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a heavy snare."
-msgstr "굵은 올가미를 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a land mine."
-msgstr "지뢰를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a land mine."
-msgstr "지뢰를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a booby trap."
-msgstr "부비트랩을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a booby trap."
-msgstr "부비트랩을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a teleport trap."
-msgstr "공간이동 함정을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a teleport trap."
-msgstr "공간이동 함정을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into thick goo."
-msgstr "걸쭉한 오물 구덩이에 들어갔습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into thick goo."
-msgstr "걸쭉한 오물 구덩이에 들어갔습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into a dissector."
-msgstr "광선 분해기를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into a dissector."
-msgstr "광선 분해기를 밟았습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell in a pit."
-msgstr "구덩이에 떨어졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell in a pit."
-msgstr "구덩이에 떨어졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell into a spiked pit."
-msgstr "가시 구덩이에 떨어졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell into a spiked pit."
-msgstr "가시 구덩이에 떨어졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell into a pit filled with glass shards."
-msgstr "유리 파편이 가득한 구덩이에 빠졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell into a pit filled with glass shards."
-msgstr "유리 파편이 가득한 구덩이에 빠졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into lava."
-msgstr "용암에 빠졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into lava."
-msgstr "용암에 빠졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into a sinkhole."
-msgstr "싱크홀에 빠졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into a sinkhole."
-msgstr "싱크홀에 빠졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell down a ledge."
-msgstr "아래층으로 떨어졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell down a ledge."
-msgstr "아래층으로 떨어졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a flood trap."
-msgstr "침수 함정을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a flood trap."
-msgstr "침수 함정을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shadow trap."
-msgstr "그림자 덫을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shadow trap."
-msgstr "그림자 덫을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a life-draining trap."
-msgstr "생명력 흡수 함정을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a life-draining trap."
-msgstr "생명력 흡수 함정을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shadow snake trap."
-msgstr "그림자 뱀 덫을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shadow snake trap."
-msgstr "그림자 뱀 덫을 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Consumed a %s."
-msgstr "%s(을)를 섭취했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Consumed a %s."
-msgstr "%s(을)를 섭취했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened the Marloss Gateway."
-msgstr "말로스 관문을 열었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened the Marloss Gateway."
-msgstr "말로스 관문을 열었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Became one with the Mycus."
-msgstr "마이커스와 하나가 되었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Became one with the Mycus."
-msgstr "마이커스와 하나가 되었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Dermatik eggs hatched."
-msgstr "더마틱 알이 부화했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Dermatik eggs hatched."
-msgstr "더마틱 알이 부화했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected with dermatik eggs."
-msgstr "더마틱 알이 주입되었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected with dermatik eggs."
-msgstr "더마틱 알이 주입되었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Destroyed a triffid grove."
-msgstr "트리피드 숲을 파괴했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Destroyed a triffid grove."
-msgstr "트리피드 숲을 파괴했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to an asthma attack."
-msgstr "천식 발작으로 인해 쓰러졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to an asthma attack."
-msgstr "천식 발작으로 인해 쓰러졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of datura overdose."
-msgstr "흰독말풀 과용으로 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of datura overdose."
-msgstr "흰독말풀 과용으로 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of a healing stimulant overdose."
-msgstr "각성제 과다복용으로 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of a healing stimulant overdose."
-msgstr "각성제 과다복용으로 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of an alcohol overdose."
-msgstr "알코올 과용으로 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of an alcohol overdose."
-msgstr "알코올 과용으로 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of a drug overdose."
-msgstr "약물 과다복용으로 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of a drug overdose."
-msgstr "약물 과다복용으로 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to the infection."
-msgstr "감염이 악화되는 바람에 쓰러졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to the infection."
-msgstr "감염이 악화되는 바람에 쓰러졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of starvation."
-msgstr "굶어죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of starvation."
-msgstr "굶어죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of thirst."
-msgstr "목말라 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of thirst."
-msgstr "목말라 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Dug a shaft into lava."
-msgstr "용암으로 향하는 구덩이를 팠습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Dug a shaft into lava."
-msgstr "용암으로 향하는 구덩이를 팠습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Disarmed a nuclear missile."
-msgstr "핵 미사일을 비활성화시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Disarmed a nuclear missile."
-msgstr "핵 미사일을 비활성화시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Ate a sewage sample."
-msgstr "하수 샘플을 먹었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Ate a sewage sample."
-msgstr "하수 샘플을 먹었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "'%s' mutation turned into '%s'"
-msgstr "'%s' 변이가 '%s'(으)로 바뀌었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "'%s' mutation turned into '%s'"
-msgstr "'%s' 변이가 '%s'(으)로 바뀌었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Exhumed a grave."
-msgstr "무덤을 파냈습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Exhumed a grave."
-msgstr "무덤을 파냈습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Failed install of bionic: %s."
-msgstr "%s 바이오닉 설치에 실패했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Failed install of bionic: %s."
-msgstr "%s 바이오닉 설치에 실패했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Failed to remove bionic: %s."
-msgstr "바이오닉 제거 실패: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Failed to remove bionic: %s."
-msgstr "바이오닉 제거 실패: %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to lack of sleep."
-msgstr "수면부족으로 쓰러졌습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to lack of sleep."
-msgstr "수면부족으로 쓰러졌습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "The fuel tank of the %s exploded!"
-msgstr "%s의 연료 탱크가 폭발했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "The fuel tank of the %s exploded!"
-msgstr "%s의 연료 탱크가 폭발했습니다."
-
-#. ~ %s is addiction name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Became addicted to %s."
-msgstr "%s에 중독되었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Became addicted to %s."
-msgstr "%s에 중독되었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Gained the mutation '%s'."
-msgstr "'%s' 변이가 생겼습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Gained the mutation '%s'."
-msgstr "'%s' 변이가 생겼습니다."
-
-#. ~ %d is skill level %s is skill name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Reached skill level %1$d in %2$s."
-msgstr "%2$s 기술이 %1$d로 올랐습니다."
-
-#. ~ %d is skill level %s is skill name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Reached skill level %1$d in %2$s."
-msgstr "%2$s 기술이 %1$d로 올랐습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s committed suicide."
-msgstr "%s(이)가 자살했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s committed suicide."
-msgstr "%s(이)가 자살했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s was killed."
-msgstr "%s(이)가 살해당했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s was killed."
-msgstr "%s(이)가 살해당했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Last words: %s"
-msgstr "유언: %s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Last words: %s"
-msgstr "유언: %s"
-
-#. ~ %s is player name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s began their journey into the Cataclysm."
-msgstr "%s(은)는 카타클리즘으로의 여행을 시작했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s began their journey into the Cataclysm."
-msgstr "%s(은)는 카타클리즘으로의 여행을 시작했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Installed bionic: %s."
-msgstr "설치된 바이오닉: %s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Installed bionic: %s."
-msgstr "설치된 바이오닉: %s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Installed bad bionic: %s."
-msgstr "잘못 설치된 바이오닉: %s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Installed bad bionic: %s."
-msgstr "잘못 설치된 바이오닉: %s"
-
-#. ~ %s is martial art
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Learned %s."
-msgstr "%s(을)를 배웠습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Learned %s."
-msgstr "%s(을)를 배웠습니다."
-
-#. ~ %s is addiction name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Overcame addiction to %s."
-msgstr "%s 중독을 극복했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Overcame addiction to %s."
-msgstr "%s 중독을 극복했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s became hostile."
-msgstr "%s(이)가 적대적으로 변했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s became hostile."
-msgstr "%s(이)가 적대적으로 변했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened a portal."
-msgstr "포탈을 열었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened a portal."
-msgstr "포탈을 열었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened a strange temple."
-msgstr "이상한 사원의 문을 열었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened a strange temple."
-msgstr "이상한 사원의 문을 열었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Gained a spell level on %s."
-msgstr "%s 주문 레벨을 1 높였습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Gained a spell level on %s."
-msgstr "%s 주문 레벨을 1 높였습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Released subspace specimens."
-msgstr "지하 실험체를 해방시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Released subspace specimens."
-msgstr "지하 실험체를 해방시켰습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Removed bionic: %s."
-msgstr "%s 바이오닉을 제거했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Removed bionic: %s."
-msgstr "%s 바이오닉을 제거했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Sealed a Hazardous Material Sarcophagus."
-msgstr "유해 물질 봉쇄 석관을 봉인했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Sealed a Hazardous Material Sarcophagus."
-msgstr "유해 물질 봉쇄 석관을 봉인했습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Telefragged a %s."
-msgstr "%s(이)가 텔레포트 도중에 죽었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Telefragged a %s."
-msgstr "%s(이)가 텔레포트 도중에 죽었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Spontaneous teleport."
-msgstr "자연스러운 공간이동."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Spontaneous teleport."
-msgstr "자연스러운 공간이동."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Teleported into a %s."
-msgstr "%s(으)로 공간이동되었습니다."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Teleported into a %s."
-msgstr "%s(으)로 공간이동되었습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Terminated subspace specimens."
-msgstr "지하 실험체를 제거했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Terminated subspace specimens."
-msgstr "지하 실험체를 제거했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Threw up."
-msgstr "토했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Threw up."
-msgstr "토했습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Set off an alarm."
-msgstr "경보를 작동시켰습니다."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Set off an alarm."
-msgstr "경보를 작동시켰습니다."
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "good"
-msgstr "긍정적"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "bad"
-msgstr "부정적"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "mixed"
-msgstr "복합적"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "warning"
-msgstr "경고"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "info"
-msgstr "정보"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "neutral"
-msgstr "일반"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "debug"
-msgstr "debug"
-
 #. ~ Message %s on the message log was repeated %d times, e.g. "You hear a
 #. whack! x 12"
 #: src/messages.cpp
@@ -326354,100 +326458,6 @@ msgstr "기본 모드 목록"
 #: src/mod_manager.cpp
 msgid "list of mods"
 msgstr "모드 목록"
-
-#: src/mod_manager_ui.cpp
-msgid "This mod is marked as obsolete and may contain severe errors."
-msgstr "이 모드는 구식이며, 심각한 오류를 포함할 수 있습니다."
-
-#: src/mod_manager_ui.cpp
-msgid "License"
-msgstr "라이센스"
-
-#: src/mod_manager_ui.cpp
-msgid "Author"
-msgid_plural "Authors"
-msgstr[0] "원작자"
-
-#: src/mod_manager_ui.cpp
-msgid "Maintainer"
-msgid_plural "Maintainers"
-msgstr[0] "관리자"
-
-#: src/mod_manager_ui.cpp
-msgid "Dependency"
-msgid_plural "Dependencies"
-msgstr[0] "선행모드"
-
-#. ~ Followed by list of mods the current mod conflicts with
-#: src/mod_manager_ui.cpp
-msgid "Conflict"
-msgid_plural "Conflicts"
-msgstr[0] "충돌"
-
-#: src/mod_manager_ui.cpp
-msgid "Mod version"
-msgstr "모드 버전"
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid "%s: API version %s\n"
-msgstr "%s: API 버전 %s\n"
-
-#: src/mod_manager_ui.cpp
-msgid "Needs Lua"
-msgstr "Lua 필요"
-
-#: src/mod_manager_ui.cpp
-msgid "Mod info path"
-msgstr "모드 정보 경로"
-
-#. ~ Single entry in the list of which mods conflict with which mods.
-#. ~ Please be mindful of spaces.
-#. ~ "%s [%s]" parts are mod names with internal ids.
-#. ~ The final result reads as "Mod X [id_x] with Mod Y [id_y]"
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"  %s [%s]\n"
-"    with %s [%s]\n"
-msgstr ""
-"  %s [%s]\n"
-"    와(과) %s [%s]\n"
-
-#: src/mod_manager_ui.cpp
-msgid "The mod is already on the list."
-msgstr "모드가 이미 목록에 존재합니다."
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid "Unable to find mod with id \"%s\"."
-msgstr "ID \"%s\"에 해당하는 모드를 찾을 수 없습니다."
-
-#: src/mod_manager_ui.cpp
-msgid "Failed to build dependency tree for the mod."
-msgstr "모드의 의존성 구조를 생성하는데 실패했습니다."
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"The mod has dependency problem(s):\n"
-"\n"
-"%s"
-msgstr ""
-"모드가 이하의 의존성 문제를 갖고 있습니다:\n"
-"\n"
-"%s"
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"The mod or some of its dependencies has conflict(s) with active mods:\n"
-"\n"
-"%s"
-msgstr ""
-"모드 또는 그 의존성 중 일부가 활성화된 모드와 충돌합니다:\n"
-"\n"
-"%s"
 
 #: src/monattack.cpp
 #, c-format
@@ -329977,22 +329987,6 @@ msgstr "오우야! 쩌네요!"
 msgid "First temperature modifier can't be higher than the second"
 msgstr "첫 기온 수정치가 두 번째 것보다 높을 수 없습니다"
 
-#: src/mutation_type.cpp
-msgid "skin color"
-msgstr "피부색"
-
-#: src/mutation_type.cpp
-msgid "eye color"
-msgstr "눈 색"
-
-#: src/mutation_type.cpp
-msgid "hair style"
-msgstr "머리 모양"
-
-#: src/mutation_type.cpp
-msgid "hair color"
-msgstr "머리색"
-
 #: src/mutation_ui.cpp
 msgid "Reassigning."
 msgstr "재지정"
@@ -332731,11 +332725,11 @@ msgstr "속도 단위"
 msgid "Switch between km/h, mph and tiles/turn."
 msgstr "킬로미터, 마일, 턴당 타일 단위 중에서 선택합니다."
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "km/h"
 msgstr "km/h"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "mph"
 msgstr "mph"
 
@@ -332751,11 +332745,11 @@ msgstr "무게 단위"
 msgid "Switch between kg and lbs."
 msgstr "kg은 lbs로, lbs는 kg로 바꿉니다."
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "kg"
 msgstr "kg"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "lbs"
 msgstr "lbs"
 
@@ -334445,7 +334439,8 @@ msgid ""
 "A scaling factor that determines the time between monster upgrades.  A "
 "higher number means slower evolution.  Set to 0.00 to turn off monster "
 "upgrades."
-msgstr "괴물 업그레이드 시간 간격 계수 설정. 높은 수로 설정하면 진화가 느려집니다. 0.00으로 업그레이드를 끕니다."
+msgstr ""
+"괴물이 진화하는데 걸리는 시간 간격을 결정하는 계수입니다. 높은 수로 설정하면 진화가 느려집니다. 0.00으로 업그레이드를 끕니다."
 
 #: src/options.cpp
 msgid "Maximum Evolution Half Lives"
@@ -334551,6 +334546,8 @@ msgid ""
 "A scaling factor that determines density of item spawns. A higher number "
 "means more items. Affects both map generation and monster death drops."
 msgstr ""
+"물품 생성 밀도를 결정하는 계수입니다. 숫자가 클수록 물품도 많아집니다. 지도상 생성 및 괴물 사망으로 인한 생성 양쪽 모두에 "
+"적용됩니다."
 
 #: src/options.cpp
 msgid "Spawn rate for items from AMMO category."
@@ -336543,7 +336540,7 @@ msgstr "발:"
 
 #: src/panels.cpp
 msgid "fuel: "
-msgstr ""
+msgstr "연료: "
 
 #: src/panels.cpp
 #, c-format
@@ -336851,10 +336848,6 @@ msgstr "마지막 월드"
 #: src/path_display.cpp
 msgid "safe mode"
 msgstr "안전 모드"
-
-#: src/perk.cpp
-msgid "Effects:"
-msgstr "효과: "
 
 #: src/perk_menu.cpp
 msgid "Scroll Description Up"
@@ -340006,40 +339999,57 @@ msgid "Go to last entry"
 msgstr "마지막 항목으로 이동"
 
 #. ~ vehicle speed tiles per turn
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "t/t"
 msgstr "타일/턴"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "m/s"
 msgstr "m/s"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "c"
 msgstr "c"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "L"
 msgstr "L"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "qt"
 msgstr "qt"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "cup"
 msgstr "컵"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "liter"
 msgstr "리터"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "quart"
 msgstr "쿼트"
+
+#: src/utils/dependency_tree.cpp
+msgid "Missing Dependency(ies): "
+msgstr "의존성 상실: "
+
+#: src/utils/dependency_tree.cpp
+msgid "Has conflicting dependencies: "
+msgstr "의존성 충돌: "
+
+#: src/utils/dependency_tree.cpp
+msgid "Has dependency cycle(s): "
+msgstr "의존성 순환: "
+
+#: src/utils/dependency_tree.cpp
+#, c-format
+msgid "[%1$s] with [%2$s]"
+msgstr "[ %1$s ] 및 [ %2$s ]"
 
 #: src/vehicle/turret.cpp
 msgid "None of the turrets are ready to fire."

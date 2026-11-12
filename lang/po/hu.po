@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-10 23:19+0000\n"
+"POT-Creation-Date: 2026-11-11 23:55+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Hungarian (https://app.transifex.com/bn-team/teams/113585/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -18468,22 +18468,22 @@ msgstr "Alkohol"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
 #: data/mods/My_Sweet_Cataclysm/sweet_materials.json
-#: data/mods/rpg_system/main.lua src/material.cpp
+#: data/mods/rpg_system/main.lua src/item/material.cpp
 msgid "damaged"
 msgstr "sérült"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "lightly damaged"
 msgstr "alig sérült"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "very damaged"
 msgstr "nagyon sérült"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "thoroughly damaged"
 msgstr "alaposan sérült"
 
@@ -35449,7 +35449,7 @@ msgstr[1] ""
 msgid "Not at technique at all"
 msgstr "Semmilyen technika."
 
-#: data/json/techniques.json src/bonuses.cpp
+#: data/json/techniques.json src/game/bonuses.cpp
 msgid "Block"
 msgstr "Blokkolás"
 
@@ -116301,6 +116301,16 @@ msgid "hk_ump45"
 msgstr ""
 
 #: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45_retool_40"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45_retool_9mm"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
 msgid "9x19mm UMP conversion kit"
 msgid_plural "9x19mm UMP conversion kits"
 msgstr[0] ""
@@ -141954,7 +141964,7 @@ msgstr ""
 
 #: data/json/monster_special_attacks/spells.json
 #: data/mods/MagicalNights/Spells/item_only.json src/character_display.cpp
-#: src/distraction_manager.cpp src/memorial_logger.cpp
+#: src/distraction_manager.cpp src/event/memorial_logger.cpp
 msgid "Pain"
 msgstr ""
 
@@ -145248,19 +145258,6 @@ msgid ""
 msgstr ""
 
 #: data/json/monsters/mammal.json
-msgid "mutant vampire bat"
-msgid_plural "mutant vampire bats"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'mutant vampire bat'}
-#: data/json/monsters/mammal.json
-msgid ""
-"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
-"This one looks terribly larger and stronger than its other kin."
-msgstr ""
-
-#: data/json/monsters/mammal.json
 msgid "black bear cub"
 msgid_plural "black bear cubs"
 msgstr[0] "feketemedve bocs"
@@ -146905,6 +146902,19 @@ msgstr[1] ""
 msgid ""
 "Seeing how unnaturally dark this black cat's fur is, you are certain this is"
 " no ordinary cat.  Its fur seems to absorb light from the surroundings."
+msgstr ""
+
+#: data/json/monsters/mutant_animal.json
+msgid "mutant vampire bat"
+msgid_plural "mutant vampire bats"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'mutant vampire bat'}
+#: data/json/monsters/mutant_animal.json
+msgid ""
+"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
+"This one looks terribly larger and stronger than its other kin."
 msgstr ""
 
 #: data/json/monsters/mutant_animal.json
@@ -289976,7 +289986,7 @@ msgid_plural "  ✦ %d unassigned stat points available!"
 msgstr[0] ""
 msgstr[1] ""
 
-#: data/mods/rpg_system/main.lua src/bonuses.cpp
+#: data/mods/rpg_system/main.lua src/game/bonuses.cpp
 msgid "Dodge"
 msgstr "Kitérés"
 
@@ -290004,7 +290014,7 @@ msgstr ""
 msgid "Speech"
 msgstr ""
 
-#: data/mods/rpg_system/main.lua src/diary.cpp src/memorial_logger.cpp
+#: data/mods/rpg_system/main.lua src/diary.cpp src/event/memorial_logger.cpp
 #: src/newcharacter.cpp
 msgid "Skills:"
 msgstr "Készségek:"
@@ -293875,95 +293885,6 @@ msgstr ""
 msgid "Bomber single tile & bomb"
 msgstr ""
 
-#: src/achievement.cpp
-msgctxt "achievement kill requirement"
-msgid "monster"
-msgid_plural "monsters"
-msgstr[0] ""
-msgstr[1] ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill at least %i %s%s"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Don't kill even a single %s"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill no more than %i %s%s"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill any number of %s"
-msgstr ""
-
-#: src/achievement.cpp
-msgid " (failed)"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Attain skill level of %i in %s (%i/%i)"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Stay at or below skill level of %i in %s (%i/%i)"
-msgstr ""
-
-#: src/achievement.cpp
-msgid "time of cataclysm"
-msgstr ""
-
-#: src/achievement.cpp
-msgid "start of game"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "At least %s from %s (%s remaining)"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Within %s of %s (%s remaining)"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "At least %s from %s (passed)"
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Within %s of %s (passed)"
-msgstr ""
-
-#: src/achievement.cpp
-msgid "Triggered by "
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "%s/%s "
-msgstr ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Completed %s"
-msgstr ""
-
-#: src/achievement.cpp
-msgid ""
-"\n"
-"Internal error: achievement lacks watcher."
-msgstr ""
-
 #: src/action.cpp src/input.cpp
 msgid "Press "
 msgstr "Nyomd meg a "
@@ -294322,7 +294243,7 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
-#: src/activity_actor.cpp src/bonuses.cpp src/panels.cpp
+#: src/activity_actor.cpp src/game/bonuses.cpp src/panels.cpp
 #: src/player_activity.cpp
 msgid "Speed"
 msgstr "Sebesség"
@@ -296284,7 +296205,7 @@ msgstr "töltet"
 msgid "category"
 msgstr "kategória"
 
-#: src/advanced_inv.cpp src/bonuses.cpp src/effect.cpp
+#: src/advanced_inv.cpp src/effect.cpp src/game/bonuses.cpp
 msgid "damage"
 msgstr "sebzés"
 
@@ -299803,107 +299724,6 @@ msgid ""
 "To read a description of %s, press '%s'"
 msgstr ""
 
-#: src/bonuses.cpp
-msgid "Accuracy"
-msgstr "Pontosság"
-
-#: src/bonuses.cpp
-msgid "Move cost"
-msgstr "Mozgási ktsg:"
-
-#: src/bonuses.cpp src/panels.cpp
-msgid "Armor"
-msgstr "Páncél"
-
-#: src/bonuses.cpp
-msgid "Armor penetration"
-msgstr "Páncéltörés"
-
-#: src/bonuses.cpp
-msgid "Target armor multiplier"
-msgstr "Célpont páncél szorzó"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "strength"
-msgstr "erő"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "dexterity"
-msgstr "ügyesség"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "intelligence"
-msgstr "intelligencia"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "perception"
-msgstr "figyelem"
-
-#. ~ %1$s: damage type, %2$s: damage-related bonus name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "type of damage"
-msgid "%1$s %2$s"
-msgstr "%1$s %2$s"
-
-#. ~ %1$s: bonus name, %2$d: bonus percentage, %3$s: stat name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$d%%</stat> of %3$s"
-msgstr "* %1$s: <stat>%2$d%%</stat>  %3$s"
-
-#. ~ %1$s: bonus name, %2$d: bonus percentage
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$d%%</stat>"
-msgstr "* %1$s: <stat>%2$d%%</stat>"
-
-#. ~ %1$s: bonus name, %2$+d: bonus percentage, %3$s: stat name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$+d%%</stat> of %3$s"
-msgstr "* %1$s: <stat>%2$+d%%</stat>  %3$s"
-
-#. ~ %1$s: bonus name, %2$+d: bonus value
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$+d</stat>"
-msgstr "* %1$s: <stat>%2$+d</stat>"
-
-#: src/book_scanning.cpp
-msgid "You need a powered reader to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You need physical reading material to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You can't see well enough to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "This copy is already installed on the reader."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You no longer have the reading material or reader.  You stop scanning."
-msgstr ""
-
-#: src/book_scanning.cpp src/item.cpp
-#, c-format
-msgid "digital copy of %s"
-msgstr ""
-
-#: src/book_scanning.cpp
-#, c-format
-msgid "You save a digital copy of %s on your %s."
-msgstr ""
-
 #: src/calendar.cpp
 msgid "forever"
 msgstr "örökké"
@@ -301147,6 +300967,26 @@ msgstr ""
 #: src/character.cpp
 msgid "Liquid from your inventory has leaked onto the ground."
 msgstr "A leltáradból folyadék szivárgott a talajra."
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "strength"
+msgstr "erő"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "dexterity"
+msgstr "ügyesség"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "intelligence"
+msgstr "intelligencia"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "perception"
+msgstr "figyelem"
 
 #: src/character.cpp
 #, c-format
@@ -305592,71 +305432,6 @@ msgstr ""
 msgid "You sense a creature here."
 msgstr ""
 
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "true"
-msgstr "igen"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "biological"
-msgstr "biológiai"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "bash"
-msgstr "zúzás"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "cut"
-msgstr "szétvágott"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "acid"
-msgstr "sav"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "stab"
-msgstr "szúrás"
-
-#: src/damage.cpp
-msgctxt "damage_type"
-msgid "bullet"
-msgstr ""
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "heat"
-msgstr "meleg"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "cold"
-msgstr "hideg"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "dark"
-msgstr "sötét"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "light"
-msgstr ""
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "psionic"
-msgstr ""
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "electric"
-msgstr "elektromos"
-
 #: src/debug.cpp
 msgid ""
 "Excessive error repetition detected.  Please file a bug report at "
@@ -306898,25 +306673,6 @@ msgstr ""
 msgid "JSON template written to "
 msgstr ""
 
-#: src/dependency_tree.cpp
-msgid "Missing Dependency(ies): "
-msgstr ""
-
-#: src/dependency_tree.cpp
-msgid "Has conflicting dependencies: "
-msgstr ""
-
-#: src/dependency_tree.cpp
-msgid "Has dependency cycle(s): "
-msgstr ""
-
-#. ~ Single entry in list of conflicting dependencies, both %s are mod ids.
-#. ~ Example of final string: "[aftershock] with [classic-zombies]"
-#: src/dependency_tree.cpp
-#, c-format
-msgid "[%1$s] with [%2$s]"
-msgstr ""
-
 #: src/descriptions.cpp
 #, c-format
 msgid ""
@@ -307042,7 +306798,7 @@ msgstr ""
 msgid "New failed missions:"
 msgstr ""
 
-#: src/diary.cpp src/memorial_logger.cpp src/newcharacter.cpp
+#: src/diary.cpp src/event/memorial_logger.cpp src/newcharacter.cpp
 msgid "Bionics:"
 msgstr ""
 
@@ -307054,7 +306810,7 @@ msgstr ""
 msgid "Lost bionics:"
 msgstr ""
 
-#: src/diary.cpp src/game.cpp src/memorial_logger.cpp
+#: src/diary.cpp src/event/memorial_logger.cpp src/game.cpp
 msgid "Kills:"
 msgstr "Áldozatai:"
 
@@ -307204,17 +306960,6 @@ msgstr ""
 
 #: src/diary_ui.cpp
 msgid "Save entry?"
-msgstr ""
-
-#: src/digital_media.cpp
-msgid ""
-"No music collection is ready to play.  Try another file or wait for its "
-"cooldown."
-msgstr ""
-
-#: src/digital_media.cpp
-#, c-format
-msgid "You recently listened to this collection.  Try again in %s."
 msgstr ""
 
 #: src/distraction_manager.cpp
@@ -308010,11 +307755,1310 @@ msgstr ""
 msgid "  <color_%s>Gives mutation %s</color>"
 msgstr ""
 
+#: src/event/achievement.cpp
+msgctxt "achievement kill requirement"
+msgid "monster"
+msgid_plural "monsters"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill at least %i %s%s"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Don't kill even a single %s"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill no more than %i %s%s"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill any number of %s"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid " (failed)"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Attain skill level of %i in %s (%i/%i)"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Stay at or below skill level of %i in %s (%i/%i)"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid "time of cataclysm"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid "start of game"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "At least %s from %s (%s remaining)"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Within %s of %s (%s remaining)"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "At least %s from %s (passed)"
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Within %s of %s (passed)"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid "Triggered by "
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "%s/%s "
+msgstr ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Completed %s"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid ""
+"\n"
+"Internal error: achievement lacks watcher."
+msgstr ""
+
 #. ~ Default format for scores.  %1$s is statistic description; %2$s is value.
-#: src/event_statistics.cpp
+#: src/event/event_statistics.cpp
 #, c-format
 msgid "%2$s %1$s"
 msgstr "%2$s %1$s"
+
+#: src/event/kill_tracker.cpp
+msgid "You haven't killed any monsters yet!"
+msgstr "Még egy szörnyet sem öltél meg!"
+
+#: src/event/kill_tracker.cpp
+#, c-format
+msgid "KILL COUNT: %d"
+msgstr "ÁLDOZATOK: %d"
+
+#: src/event/kill_tracker.cpp
+#, c-format
+msgid ""
+"\n"
+"Experience: %d (%d points available)"
+msgstr ""
+
+#: src/event/memorial_logger.cpp src/iuse.cpp
+msgid "He"
+msgstr "Ez a férfi"
+
+#: src/event/memorial_logger.cpp src/iuse.cpp
+msgid "She"
+msgstr "Ez a nő"
+
+#: src/event/memorial_logger.cpp
+msgid "an unemployed male"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgid "an unemployed female"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "a %s"
+msgstr ""
+
+#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
+#. description
+#. ~ that designates the location relative to its surroundings.
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s was killed in a %2$s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Cataclysm: Bright Nights version %s memorial file"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "In memory of: %s"
+msgstr "Emlékezzünk rá: %s"
+
+#. ~ The "%s" will be replaced by an epitaph as displayed in the memorial
+#. files. Replace the
+#. quotation marks as appropriate for your language.
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "epitaph"
+msgid "\"%s\""
+msgstr "\"%s\""
+
+#. ~ First parameter: Pronoun, second parameter: a profession name (with
+#. article)
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s was %2$s when the apocalypse began."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s died on %2$s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Cash on hand: %s"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgid "Final HP:"
+msgstr "Végső HP:"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid " Head: %d/%d"
+msgstr " Fej: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Torso: %d/%d"
+msgstr "Törzs: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "L Arm: %d/%d"
+msgstr "B kar: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "R Arm: %d/%d"
+msgstr "J kar: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "L Leg: %d/%d"
+msgstr "B láb: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "R Leg: %d/%d"
+msgstr "J láb: %d/%d"
+
+#: src/event/memorial_logger.cpp
+msgid "Final Stats:"
+msgstr "Végső statisztikák:"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Str %d"
+msgstr "Erő %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Dex %d"
+msgstr "Ügy %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Int %d"
+msgstr "Int %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Per %d"
+msgstr "Érz %d"
+
+#: src/event/memorial_logger.cpp
+msgid "Base Stats:"
+msgstr "Alap statisztikák:"
+
+#: src/event/memorial_logger.cpp
+msgid "Final Messages:"
+msgstr "Végső üzenetek:"
+
+#: src/event/memorial_logger.cpp
+msgid "No monsters were killed."
+msgstr "Egy szörnyet sem ölt meg."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Total kills: %d"
+msgstr "Összáldozat: %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%s: %d (%d %%)"
+msgstr "%s: %d (%d %%)"
+
+#: src/event/memorial_logger.cpp src/newcharacter.cpp
+msgid "Traits:"
+msgstr "Vonások:"
+
+#: src/event/memorial_logger.cpp
+msgid "(None)"
+msgstr "(Nincs)"
+
+#: src/event/memorial_logger.cpp
+msgid "Ongoing Effects:"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgid "No bionics were installed."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Bionic Power: %d/%d"
+msgstr ""
+
+#: src/event/memorial_logger.cpp src/panels.cpp
+msgid "Weapon:"
+msgstr "Fegyver:"
+
+#: src/event/memorial_logger.cpp
+msgid "Equipment:"
+msgstr ""
+
+#: src/event/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
+msgid "Inventory:"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgid "Lifetime Stats and Scores"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgid "Game History"
+msgstr ""
+
+#. ~ %s is artifact name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Activated the %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Activated the %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Activated a mininuke."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Activated a mininuke."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Consumed mutagen."
+msgstr "Mutagént fogyasztott."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Consumed mutagen."
+msgstr "Mutagént fogyasztott."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected mutagen."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected mutagen."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Consumed purifier."
+msgstr "Tisztítót vett be."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Consumed purifier."
+msgstr "Tisztítót vett be."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected purifier."
+msgstr "Tisztítót fecskendezett be."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected purifier."
+msgstr "Tisztítót fecskendezett be."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected smart purifier."
+msgstr "Okos tisztító szérumot fecskendezett be."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected smart purifier."
+msgstr "Okos tisztító szérumot fecskendezett be."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Angered a group of amigara horrors!"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Angered a group of amigara horrors!"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Awoke a group of dark wyrms!"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Awoke a group of dark wyrms!"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Became wanted by the police!"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Became wanted by the police!"
+msgstr ""
+
+#. ~ %s is bodypart
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Broken %s began to mend."
+msgstr "Az eltört %s elkezdett begyógyulni."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Broken %s began to mend."
+msgstr "Az eltört %s elkezdett begyógyulni."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "You buried an unknown victim of the Cataclysm."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "You buried an unknown victim of The Cataclysm."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "You buried %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "You buried %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caused a resonance cascade."
+msgstr "Rezonancia kaszkádot okozott."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caused a resonance cascade."
+msgstr "Rezonancia kaszkádot okozott."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caught and killed an ape.  Prey doesn't have a name."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caught and killed an ape.  Prey doesn't have a name."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed a delicious-looking innocent, %s, in cold blood."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed a delicious-looking innocent, %s, in cold blood."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed an innocent, %s, in cold blood.  They were weak."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed an innocent, %s, in cold blood.  They were weak."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed an innocent, %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed an innocent, %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid ""
+"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid ""
+"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed a %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed a %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on bubble wrap."
+msgstr "Buborékos fóliára lépett"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on bubble wrap."
+msgstr "Buborékos fóliára lépett"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on glass."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on glass."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caught by a beartrap."
+msgstr "Elkapta egy medvecsapda."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caught by a beartrap."
+msgstr "Elkapta egy medvecsapda."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a spiked board."
+msgstr "Rálépett egy tüskés falapra."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a spiked board."
+msgstr "Rálépett egy tüskés falapra."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a caltrop."
+msgstr "Rálépett egy lábtövisre."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a caltrop."
+msgstr "Rálépett egy lábtövisre."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a glass caltrop."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a glass caltrop."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Tripped on a tripwire."
+msgstr "Megbotlott egy csapdadrótban."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Tripped on a tripwire."
+msgstr "Megbotlott egy csapdadrótban."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a crossbow trap."
+msgstr "Beindított egy számszeríj csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a crossbow trap."
+msgstr "Beindított egy számszeríj csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shotgun trap."
+msgstr "Beindított egy sörétes puska csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shotgun trap."
+msgstr "Beindított egy sörétes puska csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a blade trap."
+msgstr "Beindított egy penge csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a blade trap."
+msgstr "Beindított egy penge csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a light snare."
+msgstr "Beindított egy könnyű csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a light snare."
+msgstr "Beindított egy könnyű csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a heavy snare."
+msgstr "Beindított egy nehéz csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a heavy snare."
+msgstr "Beindított egy nehéz csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a land mine."
+msgstr "Rálépett egy gyalogsági aknára."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a land mine."
+msgstr "Rálépett egy gyalogsági aknára."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a booby trap."
+msgstr "Beindított egy álcázott csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a booby trap."
+msgstr "Beindított egy álcázott csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a teleport trap."
+msgstr "Beindított egy teleportáló csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a teleport trap."
+msgstr "Beindított egy teleportáló csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into thick goo."
+msgstr "Belelépett egy tócsa sűrű ragacsba."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into thick goo."
+msgstr "Belelépett egy tócsa sűrű ragacsba."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into a dissector."
+msgstr "Belelépett a boncolóba."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into a dissector."
+msgstr "Belelépett a boncolóba."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell in a pit."
+msgstr "Beleesett egy gödörbe."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell in a pit."
+msgstr "Beleesett egy gödörbe."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell into a spiked pit."
+msgstr "Beleesett egy karókkal kibélelt gödörbe."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell into a spiked pit."
+msgstr "Beleesett egy karókkal kibélelt gödörbe."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell into a pit filled with glass shards."
+msgstr "Beleesett egy üvegszilánkos gödörbe."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell into a pit filled with glass shards."
+msgstr "Beleesett egy üvegszilánkos gödörbe."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into lava."
+msgstr "Lávába lépett."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into lava."
+msgstr "Lávába lépett."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into a sinkhole."
+msgstr "Belelépett egy víznyelőbe."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into a sinkhole."
+msgstr "Belelépett egy víznyelőbe."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell down a ledge."
+msgstr "Leesett egy párkányra."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell down a ledge."
+msgstr "Leesett egy párkányra."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a flood trap."
+msgstr "Beindított egy árvizes csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a flood trap."
+msgstr "Beindított egy árvizes csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shadow trap."
+msgstr "Beindított egy árnyékos csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shadow trap."
+msgstr "Beindított egy árnyékos csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a life-draining trap."
+msgstr "Beindított egy életelszívó csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a life-draining trap."
+msgstr "Beindított egy életelszívó csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shadow snake trap."
+msgstr "Beindított egy árnyékos kígyó csapdát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shadow snake trap."
+msgstr "Beindított egy árnyékos kígyó csapdát."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Consumed a %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Consumed a %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened the Marloss Gateway."
+msgstr "Megnyitotta a Marloss átjárót"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened the Marloss Gateway."
+msgstr "Megnyitotta a Marloss átjárót"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Became one with the Mycus."
+msgstr "Eggyé vált a mycusszal."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Became one with the Mycus."
+msgstr "Eggyé vált a mycusszal."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Dermatik eggs hatched."
+msgstr "Kikeltek a dermatik tojások."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Dermatik eggs hatched."
+msgstr "Kikeltek a dermatik tojások."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected with dermatik eggs."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected with dermatik eggs."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Destroyed a triffid grove."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Destroyed a triffid grove."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to an asthma attack."
+msgstr "Asztmás rohamtól halt meg."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to an asthma attack."
+msgstr "Asztmás rohamtól halt meg."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of datura overdose."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of datura overdose."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of a healing stimulant overdose."
+msgstr "Gyógyító ajzószer túladagolásban halt meg."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of a healing stimulant overdose."
+msgstr "Gyógyító ajzószer túladagolásban halt meg."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of an alcohol overdose."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of an alcohol overdose."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of a drug overdose."
+msgstr "Kábítószer túladagolásban halt meg."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of a drug overdose."
+msgstr "Kábítószer túladagolásban halt meg."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to the infection."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to the infection."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of starvation."
+msgstr "Éhenhalt."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of starvation."
+msgstr "Éhenhalt."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of thirst."
+msgstr "Szomjanhalt."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of thirst."
+msgstr "Szomjanhalt."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Dug a shaft into lava."
+msgstr "Lávába vágott járatot."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Dug a shaft into lava."
+msgstr "Lávába vágott járatot."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Disarmed a nuclear missile."
+msgstr "Hatástalanított egy nukleáris rakétát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Disarmed a nuclear missile."
+msgstr "Hatástalanított egy nukleáris rakétát."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Ate a sewage sample."
+msgstr "Szennyvízmintát ivott."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Ate a sewage sample."
+msgstr "Szennyvízmintát ivott."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "'%s' mutation turned into '%s'"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "'%s' mutation turned into '%s'"
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Exhumed a grave."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Exhumed a grave."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Failed install of bionic: %s."
+msgstr "Sikertelen bionika beültetés: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Failed install of bionic: %s."
+msgstr "Sikertelen bionika beültetés: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Failed to remove bionic: %s."
+msgstr "Nem sikerült eltávolítani ezt a bionikát: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Failed to remove bionic: %s."
+msgstr "Nem sikerült eltávolítani ezt a bionikát: %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to lack of sleep."
+msgstr "Alváshiánytól halt meg."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to lack of sleep."
+msgstr "Alváshiánytól halt meg."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "The fuel tank of the %s exploded!"
+msgstr "A(z) %s üzemanyagtartálya felrobbant!"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "The fuel tank of the %s exploded!"
+msgstr "A(z) %s üzemanyagtartálya felrobbant!"
+
+#. ~ %s is addiction name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Became addicted to %s."
+msgstr "%s függővé vált."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Became addicted to %s."
+msgstr "%s függővé vált."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Gained the mutation '%s'."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Gained the mutation '%s'."
+msgstr ""
+
+#. ~ %d is skill level %s is skill name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Reached skill level %1$d in %2$s."
+msgstr "Elérted a(z) %1$d. szintet a(z) %2$s készségnél."
+
+#. ~ %d is skill level %s is skill name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Reached skill level %1$d in %2$s."
+msgstr "Elérted a(z) %1$d. szintet a(z) %2$s készségnél."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s committed suicide."
+msgstr "%s öngyilkosságot követett el."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s committed suicide."
+msgstr "%s öngyilkosságot követett el."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s was killed."
+msgstr "%s meghalt."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s was killed."
+msgstr "%s meghalt."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Last words: %s"
+msgstr "Utolsó szavak: %s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Last words: %s"
+msgstr "Utolsó szavak: %s"
+
+#. ~ %s is player name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s began their journey into the Cataclysm."
+msgstr "%s nekivágott a Kataklizmának."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s began their journey into the Cataclysm."
+msgstr "%s nekivágott a Kataklizmának."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Installed bionic: %s."
+msgstr "A(z) %s modul beépítésre került. "
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Installed bionic: %s."
+msgstr "A(z) %s modul beépítésre került. "
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Installed bad bionic: %s."
+msgstr "A(z) %shibás modul került beépítésre. "
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Installed bad bionic: %s."
+msgstr "A(z) %shibás modul került beépítésre. "
+
+#. ~ %s is martial art
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Learned %s."
+msgstr "Tanultál a(z) %s készségből."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Learned %s."
+msgstr "Tanultál a(z) %s készségből."
+
+#. ~ %s is addiction name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Overcame addiction to %s."
+msgstr "Legyőzte a(z) %s-függőséget."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Overcame addiction to %s."
+msgstr "Legyőzte a(z) %s-függőséget."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s became hostile."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s became hostile."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened a portal."
+msgstr "Portál megnyitva."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened a portal."
+msgstr "Portál megnyitva."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened a strange temple."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened a strange temple."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Gained a spell level on %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Gained a spell level on %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Released subspace specimens."
+msgstr "Szubtéri alanyok kiengedve."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Released subspace specimens."
+msgstr "Szubtéri alanyok kiengedve."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Removed bionic: %s."
+msgstr "Eltávolított bionika: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Removed bionic: %s."
+msgstr "Eltávolított bionika: %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Sealed a Hazardous Material Sarcophagus."
+msgstr "Lezártál egy veszélyes anyag szarkofágot"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Sealed a Hazardous Material Sarcophagus."
+msgstr "Lezártál egy veszélyes anyag szarkofágot"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Telefragged a %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Telefragged a %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Spontaneous teleport."
+msgstr "Spontán teleportálás."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Spontaneous teleport."
+msgstr "Spontán teleportálás."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Teleported into a %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Teleported into a %s."
+msgstr ""
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Terminated subspace specimens."
+msgstr "Szubtéri alanyok kivégezve."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Terminated subspace specimens."
+msgstr "Szubtéri alanyok kivégezve."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Threw up."
+msgstr "Hányt."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Threw up."
+msgstr "Hányt."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Set off an alarm."
+msgstr "Bekapcsol egy riasztó."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Set off an alarm."
+msgstr "Bekapcsol egy riasztó."
 
 #: src/examine_item_menu.cpp
 msgid "Link this item to which clothing?"
@@ -308090,6 +309134,10 @@ msgstr ""
 #: src/explosion.cpp
 #, c-format
 msgid "taking %d damage"
+msgstr ""
+
+#: src/explosion.cpp
+msgid "but take no damage"
 msgstr ""
 
 #: src/explosion.cpp
@@ -311002,6 +312050,278 @@ msgstr ""
 msgid "The %s flickers and goes dark — the pocket dimension has collapsed."
 msgstr ""
 
+#: src/game/bonuses.cpp
+msgid "Accuracy"
+msgstr "Pontosság"
+
+#: src/game/bonuses.cpp
+msgid "Move cost"
+msgstr "Mozgási ktsg:"
+
+#: src/game/bonuses.cpp src/panels.cpp
+msgid "Armor"
+msgstr "Páncél"
+
+#: src/game/bonuses.cpp
+msgid "Armor penetration"
+msgstr "Páncéltörés"
+
+#: src/game/bonuses.cpp
+msgid "Target armor multiplier"
+msgstr "Célpont páncél szorzó"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "type of damage"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$d%%</stat> of %3$s"
+msgstr "* %1$s: <stat>%2$d%%</stat>  %3$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$d%%</stat>"
+msgstr "* %1$s: <stat>%2$d%%</stat>"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$+d%%</stat> of %3$s"
+msgstr "* %1$s: <stat>%2$+d%%</stat>  %3$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$+d</stat>"
+msgstr "* %1$s: <stat>%2$+d</stat>"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "true"
+msgstr "igen"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "biological"
+msgstr "biológiai"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "bash"
+msgstr "zúzás"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "cut"
+msgstr "szétvágott"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "acid"
+msgstr "sav"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "stab"
+msgstr "szúrás"
+
+#: src/game/damage.cpp
+msgctxt "damage_type"
+msgid "bullet"
+msgstr ""
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "heat"
+msgstr "meleg"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "cold"
+msgstr "hideg"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "dark"
+msgstr "sötét"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "light"
+msgstr ""
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "psionic"
+msgstr ""
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "electric"
+msgstr "elektromos"
+
+#: src/game/gamemode.cpp
+msgid "Tutorial"
+msgstr "Oktató"
+
+#: src/game/gamemode.cpp
+msgid "Defense"
+msgstr "Védelem"
+
+#: src/game/iuse_software.cpp
+msgid "You found kitten!"
+msgstr ""
+
+#: src/game/live_view.cpp
+msgid "< <color_green>Mouse View</color> >"
+msgstr ""
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "good"
+msgstr "jó"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "bad"
+msgstr ""
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "mixed"
+msgstr ""
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "warning"
+msgstr ""
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "info"
+msgstr ""
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "neutral"
+msgstr ""
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "debug"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "This mod is marked as obsolete and may contain severe errors."
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "License"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Author"
+msgid_plural "Authors"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Maintainer"
+msgid_plural "Maintainers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Dependency"
+msgid_plural "Dependencies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Followed by list of mods the current mod conflicts with
+#: src/game/mod_manager_ui.cpp
+msgid "Conflict"
+msgid_plural "Conflicts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Mod version"
+msgstr "Modverzió"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid "%s: API version %s\n"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Needs Lua"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Mod info path"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"  %s [%s]\n"
+"    with %s [%s]\n"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "The mod is already on the list."
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid "Unable to find mod with id \"%s\"."
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+msgid "Failed to build dependency tree for the mod."
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"The mod has dependency problem(s):\n"
+"\n"
+"%s"
+msgstr ""
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"The mod or some of its dependencies has conflict(s) with active mods:\n"
+"\n"
+"%s"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "skin color"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "eye color"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "hair style"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "hair color"
+msgstr ""
+
+#: src/game/perk.cpp
+msgid "Effects:"
+msgstr ""
+
 #: src/game_inventory.cpp
 msgid "Unload every carried item that can be unloaded"
 msgstr ""
@@ -311652,14 +312972,6 @@ msgstr ""
 #: src/game_inventory.cpp
 msgid "You don't have any devices to sterilize."
 msgstr ""
-
-#: src/gamemode.cpp
-msgid "Tutorial"
-msgstr "Oktató"
-
-#: src/gamemode.cpp
-msgid "Defense"
-msgstr "Védelem"
 
 #: src/gamemode_defense.cpp
 msgid "A caravan approaches!  Press spacebar…"
@@ -317812,11 +319124,11 @@ msgstr ""
 msgid "<bold>Stat Bonus</bold>: "
 msgstr ""
 
-#: src/item.cpp src/iteminfo_armor.cpp
+#: src/item.cpp src/item/iteminfo_armor.cpp
 msgid "<bold>Weight capacity modifier</bold>: "
 msgstr "<bold>Súly kapacitás módosító</bold>: "
 
-#: src/item.cpp src/iteminfo_armor.cpp
+#: src/item.cpp src/item/iteminfo_armor.cpp
 msgid "<bold>Weight capacity bonus</bold>: "
 msgstr "<bold>Súly kapacitás bónusz</bold>: "
 
@@ -318655,16 +319967,235 @@ msgctxt "corpse ownership qualifier"
 msgid "%1$s of %2$s, %3$s"
 msgstr ""
 
-#: src/item_action.cpp
+#: src/item.cpp src/item/book_scanning.cpp
+#, c-format
+msgid "digital copy of %s"
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You need a powered reader to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You need physical reading material to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You can't see well enough to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "This copy is already installed on the reader."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You no longer have the reading material or reader.  You stop scanning."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+#, c-format
+msgid "You save a digital copy of %s on your %s."
+msgstr ""
+
+#: src/item/digital_media.cpp
+msgid ""
+"No music collection is ready to play.  Try another file or wait for its "
+"cooldown."
+msgstr ""
+
+#: src/item/digital_media.cpp
+#, c-format
+msgid "You recently listened to this collection.  Try again in %s."
+msgstr ""
+
+#: src/item/item_action.cpp
 msgid "You don't have any items with registered uses!"
 msgstr ""
 
-#: src/item_action.cpp
+#: src/item/item_action.cpp
 msgid "Execute which action?"
 msgstr ""
 
-#: src/item_action.cpp
+#: src/item/item_action.cpp
 msgid "You do not have an item that can perform this action."
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Personal aura</stat>. "
+msgstr "<stat>Személyes aura</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Close to skin</stat>. "
+msgstr "<stat>Bőrhöz közel</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Strapped</stat>. "
+msgstr "<stat>Pántos</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Outer</stat>. "
+msgstr "<stat>Külső</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Waist</stat>. "
+msgstr "<stat>Derék</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Outer aura</stat>. "
+msgstr "</stat>Külső aura</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Normal</stat>. "
+msgstr "<stat>Normális</stat>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(too big)</bad>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(huge!)</bad>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(too small)</bad>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(tiny!)</bad>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<info>(for all parts)</info>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Coverage</bold>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Encumbrance</bold>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "When Full"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Storage</bold>: "
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Covers</bold>: "
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>head</info>. "
+msgstr "A <info>fejet</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>eyes</info>. "
+msgstr "A <info>szemeket</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>mouth</info>. "
+msgstr "A <info>szájat</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>torso</info>. "
+msgstr "A <info>törzset</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>arm</info>. "
+msgstr "Bármelyik <info>kart</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>arms</info>. "
+msgstr "A <info>karokat</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left arm</info>. "
+msgstr "A <info>bal kart</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right arm</info>. "
+msgstr "A <info>jobb kart</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>hand</info>. "
+msgstr "Bármelyik <info>kezet</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>hands</info>. "
+msgstr "A <info>kezeket</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left hand</info>. "
+msgstr "A <info>bal kezet</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right hand</info>. "
+msgstr "A <info>jobb kezet</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>leg</info>. "
+msgstr "Bármelyik <info>lábat</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>legs</info>. "
+msgstr "A <info>lábakat</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left leg</info>. "
+msgstr "A <info>bal lábat</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right leg</info>. "
+msgstr "A <info>jobb lábat</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>foot</info>. "
+msgstr "Bármelyik <info>lábfejet</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>feet</info>. "
+msgstr "A <info>lábfejeket</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left foot</info>. "
+msgstr "A <info>bal lábfejet</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right foot</info>. "
+msgstr "A <info>jobb lábfejet</info>. "
+
+#: src/item/iteminfo_armor.cpp
+msgid "<info>Nothing</info>."
+msgstr "<info>Semmit</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Layer: "
+msgstr "Réteg: "
+
+#: src/item/iteminfo_armor.cpp
+msgid ""
+"This item <good>won't conflict with</good> other items on the same "
+"<info>layer</info>."
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid "Warmth: "
+msgstr "Melegség: "
+
+#: src/item/iteminfo_armor.cpp
+msgid " <info>(fits)</info>"
+msgstr ""
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(poor fit)</bad>"
+msgstr ""
+
+#: src/item/material.cpp
+msgid "damages"
 msgstr ""
 
 #: src/item_factory.cpp
@@ -318699,180 +320230,6 @@ msgstr ""
 #, c-format
 msgid "%d x %s"
 msgstr "%d x %s"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Personal aura</stat>. "
-msgstr "<stat>Személyes aura</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Close to skin</stat>. "
-msgstr "<stat>Bőrhöz közel</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Strapped</stat>. "
-msgstr "<stat>Pántos</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Outer</stat>. "
-msgstr "<stat>Külső</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Waist</stat>. "
-msgstr "<stat>Derék</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Outer aura</stat>. "
-msgstr "</stat>Külső aura</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Normal</stat>. "
-msgstr "<stat>Normális</stat>. "
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(too big)</bad>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(huge!)</bad>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(too small)</bad>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(tiny!)</bad>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<info>(for all parts)</info>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Coverage</bold>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Encumbrance</bold>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "When Full"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Storage</bold>: "
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Covers</bold>: "
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>head</info>. "
-msgstr "A <info>fejet</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>eyes</info>. "
-msgstr "A <info>szemeket</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>mouth</info>. "
-msgstr "A <info>szájat</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>torso</info>. "
-msgstr "A <info>törzset</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>arm</info>. "
-msgstr "Bármelyik <info>kart</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>arms</info>. "
-msgstr "A <info>karokat</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left arm</info>. "
-msgstr "A <info>bal kart</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right arm</info>. "
-msgstr "A <info>jobb kart</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>hand</info>. "
-msgstr "Bármelyik <info>kezet</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>hands</info>. "
-msgstr "A <info>kezeket</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left hand</info>. "
-msgstr "A <info>bal kezet</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right hand</info>. "
-msgstr "A <info>jobb kezet</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>leg</info>. "
-msgstr "Bármelyik <info>lábat</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>legs</info>. "
-msgstr "A <info>lábakat</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left leg</info>. "
-msgstr "A <info>bal lábat</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right leg</info>. "
-msgstr "A <info>jobb lábat</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>foot</info>. "
-msgstr "Bármelyik <info>lábfejet</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>feet</info>. "
-msgstr "A <info>lábfejeket</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left foot</info>. "
-msgstr "A <info>bal lábfejet</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right foot</info>. "
-msgstr "A <info>jobb lábfejet</info>. "
-
-#: src/iteminfo_armor.cpp
-msgid "<info>Nothing</info>."
-msgstr "<info>Semmit</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "Layer: "
-msgstr "Réteg: "
-
-#: src/iteminfo_armor.cpp
-msgid ""
-"This item <good>won't conflict with</good> other items on the same "
-"<info>layer</info>."
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid "Warmth: "
-msgstr "Melegség: "
-
-#: src/iteminfo_armor.cpp
-msgid " <info>(fits)</info>"
-msgstr ""
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(poor fit)</bad>"
-msgstr ""
 
 #: src/itype.h
 msgid "click."
@@ -321076,14 +322433,6 @@ msgstr ""
 #: src/iuse.cpp
 msgid "is standing"
 msgstr ""
-
-#: src/iuse.cpp src/memorial_logger.cpp
-msgid "He"
-msgstr "Ez a férfi"
-
-#: src/iuse.cpp src/memorial_logger.cpp
-msgid "She"
-msgstr "Ez a nő"
 
 #: src/iuse.cpp
 msgctxt "Pronoun"
@@ -323774,10 +325123,6 @@ msgstr ""
 msgid "Carved"
 msgstr ""
 
-#: src/iuse_software.cpp
-msgid "You found kitten!"
-msgstr ""
-
 #: src/iuse_software_kitten.cpp
 msgid "\"I pity the fool who mistakes me for kitten!\", sez Mr. T."
 msgstr ""
@@ -324769,246 +326114,9 @@ msgstr ""
 msgid "<u>ndo move"
 msgstr ""
 
-#: src/kill_tracker.cpp
-msgid "You haven't killed any monsters yet!"
-msgstr "Még egy szörnyet sem öltél meg!"
-
-#: src/kill_tracker.cpp
-#, c-format
-msgid "KILL COUNT: %d"
-msgstr "ÁLDOZATOK: %d"
-
-#: src/kill_tracker.cpp
-#, c-format
-msgid ""
-"\n"
-"Experience: %d (%d points available)"
-msgstr ""
-
 #: src/language.cpp
 msgid "Select your language"
 msgstr "Válassz nyelvet"
-
-#. ~ abbreviated direction names and long direction names
-#: src/line.cpp
-msgid "N    "
-msgstr "É"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "north"
-msgstr "észak"
-
-#: src/line.cpp
-msgid "NE   "
-msgstr "ÉK"
-
-#: src/line.cpp
-msgid "northeast"
-msgstr "északkelet"
-
-#: src/line.cpp
-msgid "E    "
-msgstr "K"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "east"
-msgstr "kelet"
-
-#: src/line.cpp
-msgid "SE   "
-msgstr "DK"
-
-#: src/line.cpp
-msgid "southeast"
-msgstr "délkelet"
-
-#: src/line.cpp
-msgid "S    "
-msgstr "D"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "south"
-msgstr "dél"
-
-#: src/line.cpp
-msgid "SW   "
-msgstr "DNy"
-
-#: src/line.cpp
-msgid "southwest"
-msgstr "délnyugat"
-
-#: src/line.cpp
-msgid "W    "
-msgstr "Ny"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "west"
-msgstr "nyugat"
-
-#: src/line.cpp
-msgid "NW   "
-msgstr "ÉN"
-
-#: src/line.cpp
-msgid "northwest"
-msgstr "északnyugat"
-
-#: src/line.cpp
-msgid "UP_N "
-msgstr "F_É"
-
-#: src/line.cpp
-msgid "north and above"
-msgstr "északon és fenn"
-
-#: src/line.cpp
-msgid "UP_NE"
-msgstr "F_ÉK"
-
-#: src/line.cpp
-msgid "northeast and above"
-msgstr "északkelet és fenn"
-
-#: src/line.cpp
-msgid "UP_E "
-msgstr "F_K"
-
-#: src/line.cpp
-msgid "east and above"
-msgstr "kelet és fenn"
-
-#: src/line.cpp
-msgid "UP_SE"
-msgstr "F_DK"
-
-#: src/line.cpp
-msgid "southeast and above"
-msgstr "délkelet és fenn"
-
-#: src/line.cpp
-msgid "UP_S "
-msgstr "F_D"
-
-#: src/line.cpp
-msgid "south and above"
-msgstr "dél és fenn"
-
-#: src/line.cpp
-msgid "UP_SW"
-msgstr "F_DNy"
-
-#: src/line.cpp
-msgid "southwest and above"
-msgstr "délnyugat és fenn"
-
-#: src/line.cpp
-msgid "UP_W "
-msgstr "F_Ny"
-
-#: src/line.cpp
-msgid "west and above"
-msgstr "nyugat és fenn"
-
-#: src/line.cpp
-msgid "UP_NW"
-msgstr "F_ÉNy"
-
-#: src/line.cpp
-msgid "northwest and above"
-msgstr "északnyugat és fenn"
-
-#: src/line.cpp
-msgid "DN_N "
-msgstr "L_É"
-
-#: src/line.cpp
-msgid "north and below"
-msgstr "észak és lent"
-
-#: src/line.cpp
-msgid "DN_NE"
-msgstr "L_ÉK"
-
-#: src/line.cpp
-msgid "northeast and below"
-msgstr "északkelet és lent"
-
-#: src/line.cpp
-msgid "DN_E "
-msgstr "L_K"
-
-#: src/line.cpp
-msgid "east and below"
-msgstr "kelet és lent"
-
-#: src/line.cpp
-msgid "DN_SE"
-msgstr "L_DK"
-
-#: src/line.cpp
-msgid "southeast and below"
-msgstr "délkelet és lent"
-
-#: src/line.cpp
-msgid "DN_S "
-msgstr "L_D"
-
-#: src/line.cpp
-msgid "south and below"
-msgstr "dél és lent"
-
-#: src/line.cpp
-msgid "DN_SW"
-msgstr "L_DNy"
-
-#: src/line.cpp
-msgid "southwest and below"
-msgstr "délnyugat és lent"
-
-#: src/line.cpp
-msgid "DN_W "
-msgstr "L_Ny"
-
-#: src/line.cpp
-msgid "west and below"
-msgstr "nyugat és lent"
-
-#: src/line.cpp
-msgid "DN_NW"
-msgstr "L_ÉNy"
-
-#: src/line.cpp
-msgid "northwest and below"
-msgstr "északnyugat és lent"
-
-#: src/line.cpp
-msgid "UP_CE"
-msgstr "F_KZ"
-
-#: src/line.cpp
-msgid "above"
-msgstr "fent"
-
-#: src/line.cpp
-msgid "CE   "
-msgstr "KZ   "
-
-#: src/line.cpp
-msgid "center"
-msgstr "közép"
-
-#: src/line.cpp
-msgid "DN_CE"
-msgstr "L_KZ"
-
-#: src/line.cpp
-msgid "below"
-msgstr "lent"
-
-#: src/live_view.cpp
-msgid "< <color_green>Mouse View</color> >"
-msgstr ""
 
 #: src/loading_ui.cpp
 #, c-format
@@ -326687,9 +327795,221 @@ msgstr ""
 msgid " Style: %s "
 msgstr ""
 
-#: src/material.cpp
-msgid "damages"
-msgstr ""
+#: src/math/line.cpp
+msgid "N    "
+msgstr "É"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "north"
+msgstr "észak"
+
+#: src/math/line.cpp
+msgid "NE   "
+msgstr "ÉK"
+
+#: src/math/line.cpp
+msgid "northeast"
+msgstr "északkelet"
+
+#: src/math/line.cpp
+msgid "E    "
+msgstr "K"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "east"
+msgstr "kelet"
+
+#: src/math/line.cpp
+msgid "SE   "
+msgstr "DK"
+
+#: src/math/line.cpp
+msgid "southeast"
+msgstr "délkelet"
+
+#: src/math/line.cpp
+msgid "S    "
+msgstr "D"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "south"
+msgstr "dél"
+
+#: src/math/line.cpp
+msgid "SW   "
+msgstr "DNy"
+
+#: src/math/line.cpp
+msgid "southwest"
+msgstr "délnyugat"
+
+#: src/math/line.cpp
+msgid "W    "
+msgstr "Ny"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "west"
+msgstr "nyugat"
+
+#: src/math/line.cpp
+msgid "NW   "
+msgstr "ÉN"
+
+#: src/math/line.cpp
+msgid "northwest"
+msgstr "északnyugat"
+
+#: src/math/line.cpp
+msgid "UP_N "
+msgstr "F_É"
+
+#: src/math/line.cpp
+msgid "north and above"
+msgstr "északon és fenn"
+
+#: src/math/line.cpp
+msgid "UP_NE"
+msgstr "F_ÉK"
+
+#: src/math/line.cpp
+msgid "northeast and above"
+msgstr "északkelet és fenn"
+
+#: src/math/line.cpp
+msgid "UP_E "
+msgstr "F_K"
+
+#: src/math/line.cpp
+msgid "east and above"
+msgstr "kelet és fenn"
+
+#: src/math/line.cpp
+msgid "UP_SE"
+msgstr "F_DK"
+
+#: src/math/line.cpp
+msgid "southeast and above"
+msgstr "délkelet és fenn"
+
+#: src/math/line.cpp
+msgid "UP_S "
+msgstr "F_D"
+
+#: src/math/line.cpp
+msgid "south and above"
+msgstr "dél és fenn"
+
+#: src/math/line.cpp
+msgid "UP_SW"
+msgstr "F_DNy"
+
+#: src/math/line.cpp
+msgid "southwest and above"
+msgstr "délnyugat és fenn"
+
+#: src/math/line.cpp
+msgid "UP_W "
+msgstr "F_Ny"
+
+#: src/math/line.cpp
+msgid "west and above"
+msgstr "nyugat és fenn"
+
+#: src/math/line.cpp
+msgid "UP_NW"
+msgstr "F_ÉNy"
+
+#: src/math/line.cpp
+msgid "northwest and above"
+msgstr "északnyugat és fenn"
+
+#: src/math/line.cpp
+msgid "DN_N "
+msgstr "L_É"
+
+#: src/math/line.cpp
+msgid "north and below"
+msgstr "észak és lent"
+
+#: src/math/line.cpp
+msgid "DN_NE"
+msgstr "L_ÉK"
+
+#: src/math/line.cpp
+msgid "northeast and below"
+msgstr "északkelet és lent"
+
+#: src/math/line.cpp
+msgid "DN_E "
+msgstr "L_K"
+
+#: src/math/line.cpp
+msgid "east and below"
+msgstr "kelet és lent"
+
+#: src/math/line.cpp
+msgid "DN_SE"
+msgstr "L_DK"
+
+#: src/math/line.cpp
+msgid "southeast and below"
+msgstr "délkelet és lent"
+
+#: src/math/line.cpp
+msgid "DN_S "
+msgstr "L_D"
+
+#: src/math/line.cpp
+msgid "south and below"
+msgstr "dél és lent"
+
+#: src/math/line.cpp
+msgid "DN_SW"
+msgstr "L_DNy"
+
+#: src/math/line.cpp
+msgid "southwest and below"
+msgstr "délnyugat és lent"
+
+#: src/math/line.cpp
+msgid "DN_W "
+msgstr "L_Ny"
+
+#: src/math/line.cpp
+msgid "west and below"
+msgstr "nyugat és lent"
+
+#: src/math/line.cpp
+msgid "DN_NW"
+msgstr "L_ÉNy"
+
+#: src/math/line.cpp
+msgid "northwest and below"
+msgstr "északnyugat és lent"
+
+#: src/math/line.cpp
+msgid "UP_CE"
+msgstr "F_KZ"
+
+#: src/math/line.cpp
+msgid "above"
+msgstr "fent"
+
+#: src/math/line.cpp
+msgid "CE   "
+msgstr "KZ   "
+
+#: src/math/line.cpp
+msgid "center"
+msgstr "közép"
+
+#: src/math/line.cpp
+msgid "DN_CE"
+msgstr "L_KZ"
+
+#: src/math/line.cpp
+msgid "below"
+msgstr "lent"
 
 #: src/mattack_actors.cpp
 #, c-format
@@ -327634,1227 +328954,6 @@ msgstr ""
 msgid "You failed to steal %1$s from %2$s."
 msgstr "Nem sikerült ellopnod ezt: %1$s tőle: %2$s."
 
-#: src/memorial_logger.cpp
-msgid "an unemployed male"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgid "an unemployed female"
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "a %s"
-msgstr ""
-
-#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
-#. description
-#. ~ that designates the location relative to its surroundings.
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s was killed in a %2$s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Cataclysm: Bright Nights version %s memorial file"
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "In memory of: %s"
-msgstr "Emlékezzünk rá: %s"
-
-#. ~ The "%s" will be replaced by an epitaph as displayed in the memorial
-#. files. Replace the quotation marks as appropriate for your language.
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "epitaph"
-msgid "\"%s\""
-msgstr "\"%s\""
-
-#. ~ First parameter: Pronoun, second parameter: a profession name (with
-#. article)
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s was %2$s when the apocalypse began."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s died on %2$s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Cash on hand: %s"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgid "Final HP:"
-msgstr "Végső HP:"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid " Head: %d/%d"
-msgstr " Fej: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Torso: %d/%d"
-msgstr "Törzs: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "L Arm: %d/%d"
-msgstr "B kar: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "R Arm: %d/%d"
-msgstr "J kar: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "L Leg: %d/%d"
-msgstr "B láb: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "R Leg: %d/%d"
-msgstr "J láb: %d/%d"
-
-#: src/memorial_logger.cpp
-msgid "Final Stats:"
-msgstr "Végső statisztikák:"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Str %d"
-msgstr "Erő %d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Dex %d"
-msgstr "Ügy %d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Int %d"
-msgstr "Int %d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Per %d"
-msgstr "Érz %d"
-
-#: src/memorial_logger.cpp
-msgid "Base Stats:"
-msgstr "Alap statisztikák:"
-
-#: src/memorial_logger.cpp
-msgid "Final Messages:"
-msgstr "Végső üzenetek:"
-
-#: src/memorial_logger.cpp
-msgid "No monsters were killed."
-msgstr "Egy szörnyet sem ölt meg."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Total kills: %d"
-msgstr "Összáldozat: %d"
-
-#. ~ 1. skill name, 2. skill level, 3. exercise percentage to next level
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%s: %d (%d %%)"
-msgstr "%s: %d (%d %%)"
-
-#: src/memorial_logger.cpp src/newcharacter.cpp
-msgid "Traits:"
-msgstr "Vonások:"
-
-#: src/memorial_logger.cpp
-msgid "(None)"
-msgstr "(Nincs)"
-
-#: src/memorial_logger.cpp
-msgid "Ongoing Effects:"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgid "No bionics were installed."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Bionic Power: %d/%d"
-msgstr ""
-
-#: src/memorial_logger.cpp src/panels.cpp
-msgid "Weapon:"
-msgstr "Fegyver:"
-
-#: src/memorial_logger.cpp
-msgid "Equipment:"
-msgstr ""
-
-#: src/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
-msgid "Inventory:"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgid "Lifetime Stats and Scores"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgid "Game History"
-msgstr ""
-
-#. ~ %s is artifact name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Activated the %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Activated the %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Activated a mininuke."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Activated a mininuke."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Consumed mutagen."
-msgstr "Mutagént fogyasztott."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Consumed mutagen."
-msgstr "Mutagént fogyasztott."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected mutagen."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected mutagen."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Consumed purifier."
-msgstr "Tisztítót vett be."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Consumed purifier."
-msgstr "Tisztítót vett be."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected purifier."
-msgstr "Tisztítót fecskendezett be."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected purifier."
-msgstr "Tisztítót fecskendezett be."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected smart purifier."
-msgstr "Okos tisztító szérumot fecskendezett be."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected smart purifier."
-msgstr "Okos tisztító szérumot fecskendezett be."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Angered a group of amigara horrors!"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Angered a group of amigara horrors!"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Awoke a group of dark wyrms!"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Awoke a group of dark wyrms!"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Became wanted by the police!"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Became wanted by the police!"
-msgstr ""
-
-#. ~ %s is bodypart
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Broken %s began to mend."
-msgstr "Az eltört %s elkezdett begyógyulni."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Broken %s began to mend."
-msgstr "Az eltört %s elkezdett begyógyulni."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "You buried an unknown victim of the Cataclysm."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "You buried an unknown victim of The Cataclysm."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "You buried %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "You buried %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caused a resonance cascade."
-msgstr "Rezonancia kaszkádot okozott."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caused a resonance cascade."
-msgstr "Rezonancia kaszkádot okozott."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caught and killed an ape.  Prey doesn't have a name."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caught and killed an ape.  Prey doesn't have a name."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed a delicious-looking innocent, %s, in cold blood."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed a delicious-looking innocent, %s, in cold blood."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed an innocent, %s, in cold blood.  They were weak."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed an innocent, %s, in cold blood.  They were weak."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed an innocent, %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed an innocent, %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid ""
-"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid ""
-"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed a %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed a %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on bubble wrap."
-msgstr "Buborékos fóliára lépett"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on bubble wrap."
-msgstr "Buborékos fóliára lépett"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on glass."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on glass."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caught by a beartrap."
-msgstr "Elkapta egy medvecsapda."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caught by a beartrap."
-msgstr "Elkapta egy medvecsapda."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a spiked board."
-msgstr "Rálépett egy tüskés falapra."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a spiked board."
-msgstr "Rálépett egy tüskés falapra."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a caltrop."
-msgstr "Rálépett egy lábtövisre."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a caltrop."
-msgstr "Rálépett egy lábtövisre."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a glass caltrop."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a glass caltrop."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Tripped on a tripwire."
-msgstr "Megbotlott egy csapdadrótban."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Tripped on a tripwire."
-msgstr "Megbotlott egy csapdadrótban."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a crossbow trap."
-msgstr "Beindított egy számszeríj csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a crossbow trap."
-msgstr "Beindított egy számszeríj csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shotgun trap."
-msgstr "Beindított egy sörétes puska csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shotgun trap."
-msgstr "Beindított egy sörétes puska csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a blade trap."
-msgstr "Beindított egy penge csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a blade trap."
-msgstr "Beindított egy penge csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a light snare."
-msgstr "Beindított egy könnyű csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a light snare."
-msgstr "Beindított egy könnyű csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a heavy snare."
-msgstr "Beindított egy nehéz csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a heavy snare."
-msgstr "Beindított egy nehéz csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a land mine."
-msgstr "Rálépett egy gyalogsági aknára."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a land mine."
-msgstr "Rálépett egy gyalogsági aknára."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a booby trap."
-msgstr "Beindított egy álcázott csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a booby trap."
-msgstr "Beindított egy álcázott csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a teleport trap."
-msgstr "Beindított egy teleportáló csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a teleport trap."
-msgstr "Beindított egy teleportáló csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into thick goo."
-msgstr "Belelépett egy tócsa sűrű ragacsba."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into thick goo."
-msgstr "Belelépett egy tócsa sűrű ragacsba."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into a dissector."
-msgstr "Belelépett a boncolóba."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into a dissector."
-msgstr "Belelépett a boncolóba."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell in a pit."
-msgstr "Beleesett egy gödörbe."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell in a pit."
-msgstr "Beleesett egy gödörbe."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell into a spiked pit."
-msgstr "Beleesett egy karókkal kibélelt gödörbe."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell into a spiked pit."
-msgstr "Beleesett egy karókkal kibélelt gödörbe."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell into a pit filled with glass shards."
-msgstr "Beleesett egy üvegszilánkos gödörbe."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell into a pit filled with glass shards."
-msgstr "Beleesett egy üvegszilánkos gödörbe."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into lava."
-msgstr "Lávába lépett."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into lava."
-msgstr "Lávába lépett."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into a sinkhole."
-msgstr "Belelépett egy víznyelőbe."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into a sinkhole."
-msgstr "Belelépett egy víznyelőbe."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell down a ledge."
-msgstr "Leesett egy párkányra."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell down a ledge."
-msgstr "Leesett egy párkányra."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a flood trap."
-msgstr "Beindított egy árvizes csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a flood trap."
-msgstr "Beindított egy árvizes csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shadow trap."
-msgstr "Beindított egy árnyékos csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shadow trap."
-msgstr "Beindított egy árnyékos csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a life-draining trap."
-msgstr "Beindított egy életelszívó csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a life-draining trap."
-msgstr "Beindított egy életelszívó csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shadow snake trap."
-msgstr "Beindított egy árnyékos kígyó csapdát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shadow snake trap."
-msgstr "Beindított egy árnyékos kígyó csapdát."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Consumed a %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Consumed a %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened the Marloss Gateway."
-msgstr "Megnyitotta a Marloss átjárót"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened the Marloss Gateway."
-msgstr "Megnyitotta a Marloss átjárót"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Became one with the Mycus."
-msgstr "Eggyé vált a mycusszal."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Became one with the Mycus."
-msgstr "Eggyé vált a mycusszal."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Dermatik eggs hatched."
-msgstr "Kikeltek a dermatik tojások."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Dermatik eggs hatched."
-msgstr "Kikeltek a dermatik tojások."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected with dermatik eggs."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected with dermatik eggs."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Destroyed a triffid grove."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Destroyed a triffid grove."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to an asthma attack."
-msgstr "Asztmás rohamtól halt meg."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to an asthma attack."
-msgstr "Asztmás rohamtól halt meg."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of datura overdose."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of datura overdose."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of a healing stimulant overdose."
-msgstr "Gyógyító ajzószer túladagolásban halt meg."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of a healing stimulant overdose."
-msgstr "Gyógyító ajzószer túladagolásban halt meg."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of an alcohol overdose."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of an alcohol overdose."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of a drug overdose."
-msgstr "Kábítószer túladagolásban halt meg."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of a drug overdose."
-msgstr "Kábítószer túladagolásban halt meg."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to the infection."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to the infection."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of starvation."
-msgstr "Éhenhalt."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of starvation."
-msgstr "Éhenhalt."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of thirst."
-msgstr "Szomjanhalt."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of thirst."
-msgstr "Szomjanhalt."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Dug a shaft into lava."
-msgstr "Lávába vágott járatot."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Dug a shaft into lava."
-msgstr "Lávába vágott járatot."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Disarmed a nuclear missile."
-msgstr "Hatástalanított egy nukleáris rakétát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Disarmed a nuclear missile."
-msgstr "Hatástalanított egy nukleáris rakétát."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Ate a sewage sample."
-msgstr "Szennyvízmintát ivott."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Ate a sewage sample."
-msgstr "Szennyvízmintát ivott."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "'%s' mutation turned into '%s'"
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "'%s' mutation turned into '%s'"
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Exhumed a grave."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Exhumed a grave."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Failed install of bionic: %s."
-msgstr "Sikertelen bionika beültetés: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Failed install of bionic: %s."
-msgstr "Sikertelen bionika beültetés: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Failed to remove bionic: %s."
-msgstr "Nem sikerült eltávolítani ezt a bionikát: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Failed to remove bionic: %s."
-msgstr "Nem sikerült eltávolítani ezt a bionikát: %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to lack of sleep."
-msgstr "Alváshiánytól halt meg."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to lack of sleep."
-msgstr "Alváshiánytól halt meg."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "The fuel tank of the %s exploded!"
-msgstr "A(z) %s üzemanyagtartálya felrobbant!"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "The fuel tank of the %s exploded!"
-msgstr "A(z) %s üzemanyagtartálya felrobbant!"
-
-#. ~ %s is addiction name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Became addicted to %s."
-msgstr "%s függővé vált."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Became addicted to %s."
-msgstr "%s függővé vált."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Gained the mutation '%s'."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Gained the mutation '%s'."
-msgstr ""
-
-#. ~ %d is skill level %s is skill name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Reached skill level %1$d in %2$s."
-msgstr "Elérted a(z) %1$d. szintet a(z) %2$s készségnél."
-
-#. ~ %d is skill level %s is skill name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Reached skill level %1$d in %2$s."
-msgstr "Elérted a(z) %1$d. szintet a(z) %2$s készségnél."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s committed suicide."
-msgstr "%s öngyilkosságot követett el."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s committed suicide."
-msgstr "%s öngyilkosságot követett el."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s was killed."
-msgstr "%s meghalt."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s was killed."
-msgstr "%s meghalt."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Last words: %s"
-msgstr "Utolsó szavak: %s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Last words: %s"
-msgstr "Utolsó szavak: %s"
-
-#. ~ %s is player name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s began their journey into the Cataclysm."
-msgstr "%s nekivágott a Kataklizmának."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s began their journey into the Cataclysm."
-msgstr "%s nekivágott a Kataklizmának."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Installed bionic: %s."
-msgstr "A(z) %s modul beépítésre került. "
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Installed bionic: %s."
-msgstr "A(z) %s modul beépítésre került. "
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Installed bad bionic: %s."
-msgstr "A(z) %shibás modul került beépítésre. "
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Installed bad bionic: %s."
-msgstr "A(z) %shibás modul került beépítésre. "
-
-#. ~ %s is martial art
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Learned %s."
-msgstr "Tanultál a(z) %s készségből."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Learned %s."
-msgstr "Tanultál a(z) %s készségből."
-
-#. ~ %s is addiction name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Overcame addiction to %s."
-msgstr "Legyőzte a(z) %s-függőséget."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Overcame addiction to %s."
-msgstr "Legyőzte a(z) %s-függőséget."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s became hostile."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s became hostile."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened a portal."
-msgstr "Portál megnyitva."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened a portal."
-msgstr "Portál megnyitva."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened a strange temple."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened a strange temple."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Gained a spell level on %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Gained a spell level on %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Released subspace specimens."
-msgstr "Szubtéri alanyok kiengedve."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Released subspace specimens."
-msgstr "Szubtéri alanyok kiengedve."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Removed bionic: %s."
-msgstr "Eltávolított bionika: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Removed bionic: %s."
-msgstr "Eltávolított bionika: %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Sealed a Hazardous Material Sarcophagus."
-msgstr "Lezártál egy veszélyes anyag szarkofágot"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Sealed a Hazardous Material Sarcophagus."
-msgstr "Lezártál egy veszélyes anyag szarkofágot"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Telefragged a %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Telefragged a %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Spontaneous teleport."
-msgstr "Spontán teleportálás."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Spontaneous teleport."
-msgstr "Spontán teleportálás."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Teleported into a %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Teleported into a %s."
-msgstr ""
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Terminated subspace specimens."
-msgstr "Szubtéri alanyok kivégezve."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Terminated subspace specimens."
-msgstr "Szubtéri alanyok kivégezve."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Threw up."
-msgstr "Hányt."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Threw up."
-msgstr "Hányt."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Set off an alarm."
-msgstr "Bekapcsol egy riasztó."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Set off an alarm."
-msgstr "Bekapcsol egy riasztó."
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "good"
-msgstr "jó"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "bad"
-msgstr ""
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "mixed"
-msgstr ""
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "warning"
-msgstr ""
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "info"
-msgstr ""
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "neutral"
-msgstr ""
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "debug"
-msgstr ""
-
 #. ~ Message %s on the message log was repeated %d times, e.g. "You hear a
 #. whack! x 12"
 #: src/messages.cpp
@@ -329117,96 +329216,6 @@ msgstr "alap modok listája"
 #: src/mod_manager.cpp
 msgid "list of mods"
 msgstr "modok listája"
-
-#: src/mod_manager_ui.cpp
-msgid "This mod is marked as obsolete and may contain severe errors."
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "License"
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "Author"
-msgid_plural "Authors"
-msgstr[0] ""
-msgstr[1] ""
-
-#: src/mod_manager_ui.cpp
-msgid "Maintainer"
-msgid_plural "Maintainers"
-msgstr[0] ""
-msgstr[1] ""
-
-#: src/mod_manager_ui.cpp
-msgid "Dependency"
-msgid_plural "Dependencies"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Followed by list of mods the current mod conflicts with
-#: src/mod_manager_ui.cpp
-msgid "Conflict"
-msgid_plural "Conflicts"
-msgstr[0] ""
-msgstr[1] ""
-
-#: src/mod_manager_ui.cpp
-msgid "Mod version"
-msgstr "Modverzió"
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid "%s: API version %s\n"
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "Needs Lua"
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "Mod info path"
-msgstr ""
-
-#. ~ Single entry in the list of which mods conflict with which mods.
-#. ~ Please be mindful of spaces.
-#. ~ "%s [%s]" parts are mod names with internal ids.
-#. ~ The final result reads as "Mod X [id_x] with Mod Y [id_y]"
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"  %s [%s]\n"
-"    with %s [%s]\n"
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "The mod is already on the list."
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid "Unable to find mod with id \"%s\"."
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-msgid "Failed to build dependency tree for the mod."
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"The mod has dependency problem(s):\n"
-"\n"
-"%s"
-msgstr ""
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"The mod or some of its dependencies has conflict(s) with active mods:\n"
-"\n"
-"%s"
-msgstr ""
 
 #: src/monattack.cpp
 #, c-format
@@ -332740,22 +332749,6 @@ msgstr ""
 msgid "First temperature modifier can't be higher than the second"
 msgstr ""
 
-#: src/mutation_type.cpp
-msgid "skin color"
-msgstr ""
-
-#: src/mutation_type.cpp
-msgid "eye color"
-msgstr ""
-
-#: src/mutation_type.cpp
-msgid "hair style"
-msgstr ""
-
-#: src/mutation_type.cpp
-msgid "hair color"
-msgstr ""
-
 #: src/mutation_ui.cpp
 msgid "Reassigning."
 msgstr ""
@@ -335471,11 +335464,11 @@ msgstr "Sebesség mértékegysége"
 msgid "Switch between km/h, mph and tiles/turn."
 msgstr ""
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "km/h"
 msgstr "km/h"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "mph"
 msgstr "mph"
 
@@ -335491,11 +335484,11 @@ msgstr "Tömeg mértékegysége"
 msgid "Switch between kg and lbs."
 msgstr "Kg és font (lbs) között vált."
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "kg"
 msgstr "kg"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "lbs"
 msgstr "lbs"
 
@@ -339618,10 +339611,6 @@ msgstr ""
 msgid "safe mode"
 msgstr ""
 
-#: src/perk.cpp
-msgid "Effects:"
-msgstr ""
-
 #: src/perk_menu.cpp
 msgid "Scroll Description Up"
 msgstr ""
@@ -342763,40 +342752,57 @@ msgid "Go to last entry"
 msgstr ""
 
 #. ~ vehicle speed tiles per turn
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "t/t"
 msgstr "mz/kör"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "m/s"
 msgstr "m/s"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "c"
 msgstr "c"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "L"
 msgstr "L"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "qt"
 msgstr "qt"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "cup"
 msgstr "bögre"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "liter"
 msgstr "liter"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "quart"
 msgstr "quart"
+
+#: src/utils/dependency_tree.cpp
+msgid "Missing Dependency(ies): "
+msgstr ""
+
+#: src/utils/dependency_tree.cpp
+msgid "Has conflicting dependencies: "
+msgstr ""
+
+#: src/utils/dependency_tree.cpp
+msgid "Has dependency cycle(s): "
+msgstr ""
+
+#: src/utils/dependency_tree.cpp
+#, c-format
+msgid "[%1$s] with [%2$s]"
+msgstr ""
 
 #: src/vehicle/turret.cpp
 msgid "None of the turrets are ready to fire."

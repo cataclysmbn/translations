@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-10 23:19+0000\n"
+"POT-Creation-Date: 2026-11-11 23:55+0000\n"
 "Last-Translator: Arif Öcal, 2026\n"
 "Language-Team: Turkish (https://app.transifex.com/bn-team/teams/113585/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -19892,22 +19892,22 @@ msgstr "Alkol"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
 #: data/mods/My_Sweet_Cataclysm/sweet_materials.json
-#: data/mods/rpg_system/main.lua src/material.cpp
+#: data/mods/rpg_system/main.lua src/item/material.cpp
 msgid "damaged"
 msgstr "hasar aldı"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "lightly damaged"
 msgstr "hafif hasar aldı"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "very damaged"
 msgstr "çok hasarlı"
 
 #: data/json/materials.json data/mods/Arcana_BN/materials.json
-#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/material.cpp
+#: data/mods/My_Sweet_Cataclysm/sweet_materials.json src/item/material.cpp
 msgid "thoroughly damaged"
 msgstr "tamamen hasarlı"
 
@@ -37869,7 +37869,7 @@ msgstr[1] ""
 msgid "Not at technique at all"
 msgstr "Hiçbir teknikle ilgili değil"
 
-#: data/json/techniques.json src/bonuses.cpp
+#: data/json/techniques.json src/game/bonuses.cpp
 msgid "Block"
 msgstr "Blok"
 
@@ -125710,6 +125710,16 @@ msgid "hk_ump45"
 msgstr ""
 
 #: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45_retool_40"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
+msgctxt "gun_type_type"
+msgid "hk_ump45_retool_9mm"
+msgstr ""
+
+#: data/json/items/gunmod/conversions.json
 msgid "9x19mm UMP conversion kit"
 msgid_plural "9x19mm UMP conversion kits"
 msgstr[0] ""
@@ -152909,7 +152919,7 @@ msgstr "dayanıklılığı azaltır. Mi-go köle ışını için tasarlanmışt�
 
 #: data/json/monster_special_attacks/spells.json
 #: data/mods/MagicalNights/Spells/item_only.json src/character_display.cpp
-#: src/distraction_manager.cpp src/memorial_logger.cpp
+#: src/distraction_manager.cpp src/event/memorial_logger.cpp
 msgid "Pain"
 msgstr "Ağrı"
 
@@ -156462,22 +156472,6 @@ msgstr ""
 "arazilerde hızlı bir şekilde gezinmek için bir tür ekolokasyon kullanır."
 
 #: data/json/monsters/mammal.json
-msgid "mutant vampire bat"
-msgid_plural "mutant vampire bats"
-msgstr[0] "mutant vampir yarasa"
-msgstr[1] "mutant vampir yarasalar"
-
-#. ~ Description for {'str': 'mutant vampire bat'}
-#: data/json/monsters/mammal.json
-msgid ""
-"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
-"This one looks terribly larger and stronger than its other kin."
-msgstr ""
-"Kanatlı kan yiyen memeliler ailesinden bir yarasa türü olan Desmodontinae "
-"yarasalarından biri. Bu, diğer akrabalarına göre oldukça büyük ve güçlü "
-"görünüyor."
-
-#: data/json/monsters/mammal.json
 msgid "black bear cub"
 msgid_plural "black bear cubs"
 msgstr[0] "kara ayı yavrusu"
@@ -158276,6 +158270,22 @@ msgstr ""
 "Bu siyah kedinin kürkünün ne kadar doğaüstü karanlık olduğunu görünce, bunun"
 " sıradan bir kedi olmadığından eminsiniz. Kürkü çevresindeki ışıktan emiyor "
 "gibi görünüyor."
+
+#: data/json/monsters/mutant_animal.json
+msgid "mutant vampire bat"
+msgid_plural "mutant vampire bats"
+msgstr[0] "mutant vampir yarasa"
+msgstr[1] "mutant vampir yarasalar"
+
+#. ~ Description for {'str': 'mutant vampire bat'}
+#: data/json/monsters/mutant_animal.json
+msgid ""
+"One of the Desmodontinae bats, a family of winged blood-eating mammals.  "
+"This one looks terribly larger and stronger than its other kin."
+msgstr ""
+"Kanatlı kan yiyen memeliler ailesinden bir yarasa türü olan Desmodontinae "
+"yarasalarından biri. Bu, diğer akrabalarına göre oldukça büyük ve güçlü "
+"görünüyor."
 
 #: data/json/monsters/mutant_animal.json
 msgid "scaled bear"
@@ -316272,7 +316282,7 @@ msgid_plural "  ✦ %d unassigned stat points available!"
 msgstr[0] "✦ %d atanmamış istatistik puanı mevcut!"
 msgstr[1] "✦ %d atanmamış istatistik puanları mevcut!"
 
-#: data/mods/rpg_system/main.lua src/bonuses.cpp
+#: data/mods/rpg_system/main.lua src/game/bonuses.cpp
 msgid "Dodge"
 msgstr "Kaçınma"
 
@@ -316300,7 +316310,7 @@ msgstr "SMG'ler"
 msgid "Speech"
 msgstr "Konuşma"
 
-#: data/mods/rpg_system/main.lua src/diary.cpp src/memorial_logger.cpp
+#: data/mods/rpg_system/main.lua src/diary.cpp src/event/memorial_logger.cpp
 #: src/newcharacter.cpp
 msgid "Skills:"
 msgstr "Beceriler:"
@@ -320314,97 +320324,6 @@ msgstr "Bombacı tek karo çoklu bomba"
 msgid "Bomber single tile & bomb"
 msgstr "Bombacı tek karo ve bomba"
 
-#: src/achievement.cpp
-msgctxt "achievement kill requirement"
-msgid "monster"
-msgid_plural "monsters"
-msgstr[0] ""
-msgstr[1] ""
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill at least %i %s%s"
-msgstr "En az %i %s%s öldür"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Don't kill even a single %s"
-msgstr "Tek bir %s bile öldürme"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill no more than %i %s%s"
-msgstr "En fazla %i %s%s öldür"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Kill any number of %s"
-msgstr ""
-
-#: src/achievement.cpp
-msgid " (failed)"
-msgstr "(başarısız)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Attain skill level of %i in %s (%i/%i)"
-msgstr "%s alanında %i beceri seviyesine ulaş (%i/%i)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Stay at or below skill level of %i in %s (%i/%i)"
-msgstr "%s alanında %i beceri seviyesinde veya altında kal (%i/%i)"
-
-#: src/achievement.cpp
-msgid "time of cataclysm"
-msgstr "felaket zamanı"
-
-#: src/achievement.cpp
-msgid "start of game"
-msgstr "oyun başlangıcı"
-
-#: src/achievement.cpp
-#, c-format
-msgid "At least %s from %s (%s remaining)"
-msgstr "En az %s %s'den (%s kaldı)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Within %s of %s (%s remaining)"
-msgstr "%s'in %s içinde (%s kaldı)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "At least %s from %s (passed)"
-msgstr "En az %s %s'den (geçti)"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Within %s of %s (passed)"
-msgstr "%s'in %s içinde (geçti)"
-
-#: src/achievement.cpp
-msgid "Triggered by "
-msgstr "Tarafından tetiklendi"
-
-#: src/achievement.cpp
-#, c-format
-msgid "%s/%s "
-msgstr "%s/%s"
-
-#: src/achievement.cpp
-#, c-format
-msgid "Completed %s"
-msgstr "Tamamlandı %s"
-
-#: src/achievement.cpp
-msgid ""
-"\n"
-"Internal error: achievement lacks watcher."
-msgstr ""
-"\n"
-"Dahili hata: başarı izleyici eksik."
-
 #: src/action.cpp src/input.cpp
 msgid "Press "
 msgstr "Bas"
@@ -320764,7 +320683,7 @@ msgstr "Üretim hızı çarpanları:\n"
 msgid "Total"
 msgstr "Toplam"
 
-#: src/activity_actor.cpp src/bonuses.cpp src/panels.cpp
+#: src/activity_actor.cpp src/game/bonuses.cpp src/panels.cpp
 #: src/player_activity.cpp
 msgid "Speed"
 msgstr "Hız"
@@ -322745,7 +322664,7 @@ msgstr "şarjlar"
 msgid "category"
 msgstr "kategori"
 
-#: src/advanced_inv.cpp src/bonuses.cpp src/effect.cpp
+#: src/advanced_inv.cpp src/effect.cpp src/game/bonuses.cpp
 msgid "damage"
 msgstr "hasar"
 
@@ -326302,107 +326221,6 @@ msgid ""
 "To read a description of %s, press '%s'"
 msgstr "%s etkinleştirilemez!"
 
-#: src/bonuses.cpp
-msgid "Accuracy"
-msgstr "Doğruluk"
-
-#: src/bonuses.cpp
-msgid "Move cost"
-msgstr "Hareket maliyeti"
-
-#: src/bonuses.cpp src/panels.cpp
-msgid "Armor"
-msgstr "Zırh"
-
-#: src/bonuses.cpp
-msgid "Armor penetration"
-msgstr "Zırh delme"
-
-#: src/bonuses.cpp
-msgid "Target armor multiplier"
-msgstr "Hedef zırh çarpanı"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "strength"
-msgstr "güç"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "dexterity"
-msgstr "çeviklik"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "intelligence"
-msgstr "zeka"
-
-#: src/bonuses.cpp src/character.cpp src/character_display.cpp src/item.cpp
-msgid "perception"
-msgstr "algı"
-
-#. ~ %1$s: damage type, %2$s: damage-related bonus name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "type of damage"
-msgid "%1$s %2$s"
-msgstr "%1$s %2$s"
-
-#. ~ %1$s: bonus name, %2$d: bonus percentage, %3$s: stat name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$d%%</stat> of %3$s"
-msgstr "* %1$s: <stat>%2$d%%</stat> %3$s'ün"
-
-#. ~ %1$s: bonus name, %2$d: bonus percentage
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$d%%</stat>"
-msgstr "* %1$s: <stat>%2$d%%</stat>"
-
-#. ~ %1$s: bonus name, %2$+d: bonus percentage, %3$s: stat name
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$+d%%</stat> of %3$s"
-msgstr "* %1$s: <stat>%2$+d%%</stat> %3$s'ün"
-
-#. ~ %1$s: bonus name, %2$+d: bonus value
-#: src/bonuses.cpp
-#, c-format
-msgctxt "martial art bonus"
-msgid "* %1$s: <stat>%2$+d</stat>"
-msgstr "* %1$s: <stat>%2$+d</stat>"
-
-#: src/book_scanning.cpp
-msgid "You need a powered reader to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You need physical reading material to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You can't see well enough to scan."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "This copy is already installed on the reader."
-msgstr ""
-
-#: src/book_scanning.cpp
-msgid "You no longer have the reading material or reader.  You stop scanning."
-msgstr ""
-
-#: src/book_scanning.cpp src/item.cpp
-#, c-format
-msgid "digital copy of %s"
-msgstr ""
-
-#: src/book_scanning.cpp
-#, c-format
-msgid "You save a digital copy of %s on your %s."
-msgstr ""
-
 #: src/calendar.cpp
 msgid "forever"
 msgstr "sonsuz"
@@ -327654,6 +327472,26 @@ msgstr "Karşı tarafta yer yok!"
 #: src/character.cpp
 msgid "Liquid from your inventory has leaked onto the ground."
 msgstr "Envanterinden sıvı yere sızdı."
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "strength"
+msgstr "güç"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "dexterity"
+msgstr "çeviklik"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "intelligence"
+msgstr "zeka"
+
+#: src/character.cpp src/character_display.cpp src/game/bonuses.cpp
+#: src/item.cpp
+msgid "perception"
+msgstr "algı"
 
 #: src/character.cpp
 #, c-format
@@ -332113,71 +331951,6 @@ msgstr "Boyutu %s."
 msgid "You sense a creature here."
 msgstr "Burada bir yaratık hissediyorsunuz."
 
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "true"
-msgstr "doğru"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "biological"
-msgstr "biyolojik"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "bash"
-msgstr "vurmak"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "cut"
-msgstr "kesmek"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "acid"
-msgstr "asit"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "stab"
-msgstr "bıçaklamak"
-
-#: src/damage.cpp
-msgctxt "damage_type"
-msgid "bullet"
-msgstr "kurşun"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "heat"
-msgstr "ısı"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "cold"
-msgstr "soğuk"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "dark"
-msgstr "karanlık"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "light"
-msgstr "ışık"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "psionic"
-msgstr "psionik"
-
-#: src/damage.cpp
-msgctxt "damage type"
-msgid "electric"
-msgstr "elektrik"
-
 #: src/debug.cpp
 msgid ""
 "Excessive error repetition detected.  Please file a bug report at "
@@ -333426,25 +333199,6 @@ msgstr "Ne kadar?  (kJ cinsinden, boşaltmak için negatif)"
 msgid "JSON template written to "
 msgstr ""
 
-#: src/dependency_tree.cpp
-msgid "Missing Dependency(ies): "
-msgstr "Eksik Bağımlılık(lar):"
-
-#: src/dependency_tree.cpp
-msgid "Has conflicting dependencies: "
-msgstr "Çelişen bağımlılıkları var:"
-
-#: src/dependency_tree.cpp
-msgid "Has dependency cycle(s): "
-msgstr "Bağımlılık döngüsü(leri) var:"
-
-#. ~ Single entry in list of conflicting dependencies, both %s are mod ids.
-#. ~ Example of final string: "[aftershock] with [classic-zombies]"
-#: src/dependency_tree.cpp
-#, c-format
-msgid "[%1$s] with [%2$s]"
-msgstr "[%1$s] ile [%2$s]"
-
 #: src/descriptions.cpp
 #, c-format
 msgid ""
@@ -333568,7 +333322,7 @@ msgstr "Yeni tamamlanan görevler:"
 msgid "New failed missions:"
 msgstr "Yeni başarısız görevler:"
 
-#: src/diary.cpp src/memorial_logger.cpp src/newcharacter.cpp
+#: src/diary.cpp src/event/memorial_logger.cpp src/newcharacter.cpp
 msgid "Bionics:"
 msgstr "Biyonikler:"
 
@@ -333580,7 +333334,7 @@ msgstr "Yeni biyonikler:"
 msgid "Lost bionics:"
 msgstr "Kaybedilen biyonikler:"
 
-#: src/diary.cpp src/game.cpp src/memorial_logger.cpp
+#: src/diary.cpp src/event/memorial_logger.cpp src/game.cpp
 msgid "Kills:"
 msgstr "Öldürmeler:"
 
@@ -333731,17 +333485,6 @@ msgstr "Günlüğü .md olarak dışa aktar?"
 #: src/diary_ui.cpp
 msgid "Save entry?"
 msgstr "Girişi kaydet?"
-
-#: src/digital_media.cpp
-msgid ""
-"No music collection is ready to play.  Try another file or wait for its "
-"cooldown."
-msgstr ""
-
-#: src/digital_media.cpp
-#, c-format
-msgid "You recently listened to this collection.  Try again in %s."
-msgstr ""
 
 #: src/distraction_manager.cpp
 msgid "Interrupts you if you hear a noise."
@@ -334536,11 +334279,1318 @@ msgstr ""
 msgid "  <color_%s>Gives mutation %s</color>"
 msgstr ""
 
+#: src/event/achievement.cpp
+msgctxt "achievement kill requirement"
+msgid "monster"
+msgid_plural "monsters"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill at least %i %s%s"
+msgstr "En az %i %s%s öldür"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Don't kill even a single %s"
+msgstr "Tek bir %s bile öldürme"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill no more than %i %s%s"
+msgstr "En fazla %i %s%s öldür"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Kill any number of %s"
+msgstr ""
+
+#: src/event/achievement.cpp
+msgid " (failed)"
+msgstr "(başarısız)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Attain skill level of %i in %s (%i/%i)"
+msgstr "%s alanında %i beceri seviyesine ulaş (%i/%i)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Stay at or below skill level of %i in %s (%i/%i)"
+msgstr "%s alanında %i beceri seviyesinde veya altında kal (%i/%i)"
+
+#: src/event/achievement.cpp
+msgid "time of cataclysm"
+msgstr "felaket zamanı"
+
+#: src/event/achievement.cpp
+msgid "start of game"
+msgstr "oyun başlangıcı"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "At least %s from %s (%s remaining)"
+msgstr "En az %s %s'den (%s kaldı)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Within %s of %s (%s remaining)"
+msgstr "%s'in %s içinde (%s kaldı)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "At least %s from %s (passed)"
+msgstr "En az %s %s'den (geçti)"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Within %s of %s (passed)"
+msgstr "%s'in %s içinde (geçti)"
+
+#: src/event/achievement.cpp
+msgid "Triggered by "
+msgstr "Tarafından tetiklendi"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "%s/%s "
+msgstr "%s/%s"
+
+#: src/event/achievement.cpp
+#, c-format
+msgid "Completed %s"
+msgstr "Tamamlandı %s"
+
+#: src/event/achievement.cpp
+msgid ""
+"\n"
+"Internal error: achievement lacks watcher."
+msgstr ""
+"\n"
+"Dahili hata: başarı izleyici eksik."
+
 #. ~ Default format for scores.  %1$s is statistic description; %2$s is value.
-#: src/event_statistics.cpp
+#: src/event/event_statistics.cpp
 #, c-format
 msgid "%2$s %1$s"
 msgstr "%2$s %1$s"
+
+#: src/event/kill_tracker.cpp
+msgid "You haven't killed any monsters yet!"
+msgstr "Henüz hiç canavar öldürmediniz!"
+
+#: src/event/kill_tracker.cpp
+#, c-format
+msgid "KILL COUNT: %d"
+msgstr "ÖLDÜRME SAYISI: %d"
+
+#: src/event/kill_tracker.cpp
+#, c-format
+msgid ""
+"\n"
+"Experience: %d (%d points available)"
+msgstr ""
+"\n"
+"Deneyim: %d (%d puan mevcut)"
+
+#: src/event/memorial_logger.cpp src/iuse.cpp
+msgid "He"
+msgstr "O"
+
+#: src/event/memorial_logger.cpp src/iuse.cpp
+msgid "She"
+msgstr "O"
+
+#: src/event/memorial_logger.cpp
+msgid "an unemployed male"
+msgstr "işsiz bir erkek"
+
+#: src/event/memorial_logger.cpp
+msgid "an unemployed female"
+msgstr "işsiz bir kadın"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "a %s"
+msgstr "bir %s"
+
+#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
+#. description
+#. ~ that designates the location relative to its surroundings.
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s was killed in a %2$s."
+msgstr "%1$s, bir %2$s sırasında öldü."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Cataclysm: Bright Nights version %s memorial file"
+msgstr "Cataclysm: Bright Nights sürüm %s anı dosyası"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "In memory of: %s"
+msgstr "Anısına: %s"
+
+#. ~ The "%s" will be replaced by an epitaph as displayed in the memorial
+#. files. Replace the
+#. quotation marks as appropriate for your language.
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "epitaph"
+msgid "\"%s\""
+msgstr "\"%s\""
+
+#. ~ First parameter: Pronoun, second parameter: a profession name (with
+#. article)
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s was %2$s when the apocalypse began."
+msgstr "Kıyamet başladığında %1$s, %2$s idi."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%1$s died on %2$s."
+msgstr "%1$s, %2$s tarihinde öldü."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Cash on hand: %s"
+msgstr "Eldeki nakit: %s"
+
+#: src/event/memorial_logger.cpp
+msgid "Final HP:"
+msgstr "Son HP:"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid " Head: %d/%d"
+msgstr "Baş: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Torso: %d/%d"
+msgstr "Gövde: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "L Arm: %d/%d"
+msgstr "Sol Kol: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "R Arm: %d/%d"
+msgstr "Sağ Kol: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "L Leg: %d/%d"
+msgstr "Sol Bacak: %d/%d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "R Leg: %d/%d"
+msgstr "Sağ Bacak: %d/%d"
+
+#: src/event/memorial_logger.cpp
+msgid "Final Stats:"
+msgstr "Son İstatistikler:"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Str %d"
+msgstr "Güç %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Dex %d"
+msgstr "Çeviklik %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Int %d"
+msgstr "Zeka %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Per %d"
+msgstr "Algı %d"
+
+#: src/event/memorial_logger.cpp
+msgid "Base Stats:"
+msgstr "Temel İstatistikler:"
+
+#: src/event/memorial_logger.cpp
+msgid "Final Messages:"
+msgstr "Son Mesajlar:"
+
+#: src/event/memorial_logger.cpp
+msgid "No monsters were killed."
+msgstr "Hiç canavar öldürülmedi."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Total kills: %d"
+msgstr "Toplam öldürme: %d"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "%s: %d (%d %%)"
+msgstr "%s: %d (%d %%)"
+
+#: src/event/memorial_logger.cpp src/newcharacter.cpp
+msgid "Traits:"
+msgstr "Özellikler:"
+
+#: src/event/memorial_logger.cpp
+msgid "(None)"
+msgstr "(Yok)"
+
+#: src/event/memorial_logger.cpp
+msgid "Ongoing Effects:"
+msgstr "Devam Eden Etkiler:"
+
+#: src/event/memorial_logger.cpp
+msgid "No bionics were installed."
+msgstr "Hiç biyonik takılmadı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgid "Bionic Power: %d/%d"
+msgstr "Biyonik Güç: %d/%d"
+
+#: src/event/memorial_logger.cpp src/panels.cpp
+msgid "Weapon:"
+msgstr "Silah:"
+
+#: src/event/memorial_logger.cpp
+msgid "Equipment:"
+msgstr "Ekipman:"
+
+#: src/event/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
+msgid "Inventory:"
+msgstr "Envanter:"
+
+#: src/event/memorial_logger.cpp
+msgid "Lifetime Stats and Scores"
+msgstr "Ömür Boyu İstatistikler ve Skorlar"
+
+#: src/event/memorial_logger.cpp
+msgid "Game History"
+msgstr "Oyun Geçmişi"
+
+#. ~ %s is artifact name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Activated the %s."
+msgstr "%s etkinleştirildi."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Activated the %s."
+msgstr "%s etkinleştirildi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Activated a mininuke."
+msgstr "Bir mini nükleer bomba etkinleştirildi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Activated a mininuke."
+msgstr "Bir mini nükleer bomba etkinleştirildi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Consumed mutagen."
+msgstr "Mutajen tüketildi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Consumed mutagen."
+msgstr "Mutajen tüketildi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected mutagen."
+msgstr "Enjekte edilmiş mutajen."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected mutagen."
+msgstr "Enjekte edilmiş mutajen."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Consumed purifier."
+msgstr "Tüketilmiş arıtıcı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Consumed purifier."
+msgstr "Tüketilmiş arıtıcı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected purifier."
+msgstr "Enjekte edilmiş arıtıcı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected purifier."
+msgstr "Enjekte edilmiş arıtıcı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected smart purifier."
+msgstr "Enjekte edilmiş akıllı arıtıcı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected smart purifier."
+msgstr "Enjekte edilmiş akıllı arıtıcı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Angered a group of amigara horrors!"
+msgstr "Bir grup amigara dehşetini kızdırdı!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Angered a group of amigara horrors!"
+msgstr "Bir grup amigara dehşetini kızdırdı!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Awoke a group of dark wyrms!"
+msgstr "Bir grup karanlık ejderhayı uyandırdın!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Awoke a group of dark wyrms!"
+msgstr "Bir grup karanlık ejderhayı uyandırdın!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Became wanted by the police!"
+msgstr "Polis tarafından aranan biri oldun!"
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Became wanted by the police!"
+msgstr "Polis tarafından aranan biri oldun!"
+
+#. ~ %s is bodypart
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Broken %s began to mend."
+msgstr "Kırık %s onarılmaya başladı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Broken %s began to mend."
+msgstr "Kırık %s onarılmaya başladı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "You buried an unknown victim of the Cataclysm."
+msgstr "Kıyamet'in bilinmeyen bir kurbanını gömdün."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "You buried an unknown victim of The Cataclysm."
+msgstr "Kıyamet'in bilinmeyen bir kurbanını gömdün."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "You buried %s."
+msgstr "%s'yı gömdün."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "You buried %s."
+msgstr "%s'yı gömdün."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caused a resonance cascade."
+msgstr "Bir rezonans zincirleme reaksiyonuna neden oldu."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caused a resonance cascade."
+msgstr "Bir rezonans zincirleme reaksiyonuna neden oldu."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caught and killed an ape.  Prey doesn't have a name."
+msgstr "Bir maymun yakalayıp öldürdü. Avın bir adı yok."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caught and killed an ape.  Prey doesn't have a name."
+msgstr "Bir maymun yakalayıp öldürdü. Avın bir adı yok."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed a delicious-looking innocent, %s, in cold blood."
+msgstr "Soğukkanlılıkla lezzetli görünen masum, %s'i öldürdü."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed a delicious-looking innocent, %s, in cold blood."
+msgstr "Soğukkanlılıkla lezzetli görünen masum, %s'i öldürdü."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed an innocent, %s, in cold blood.  They were weak."
+msgstr "Soğukkanlılıkla masum, %s'i öldürdü. Onlar zayıftı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed an innocent, %s, in cold blood.  They were weak."
+msgstr "Soğukkanlılıkla masum, %s'i öldürdü. Onlar zayıftı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed an innocent, %s."
+msgstr "Masum, %s'i öldürdü."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed an innocent, %s."
+msgstr "Masum, %s'i öldürdü."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid ""
+"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
+msgstr ""
+"Masum bir kişiyi, %s, soğukkanlılıkla öldürdü ve sonrasında kendini çok kötü"
+" hissetti."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid ""
+"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
+msgstr ""
+"Masum bir kişiyi, %s, soğukkanlılıkla öldürdü ve sonrasında kendini çok kötü"
+" hissetti."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Killed a %s."
+msgstr "Bir %s öldürdü."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Killed a %s."
+msgstr "Bir %s öldürdü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on bubble wrap."
+msgstr "Balonlu naylonun üzerine bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on bubble wrap."
+msgstr "Balonlu naylonun üzerine bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on glass."
+msgstr "Camın üzerine bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on glass."
+msgstr "Camın üzerine bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Caught by a beartrap."
+msgstr "Ayı kapanına yakalandı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Caught by a beartrap."
+msgstr "Ayı kapanına yakalandı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a spiked board."
+msgstr "Çivili bir tahtaya bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a spiked board."
+msgstr "Çivili bir tahtaya bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a caltrop."
+msgstr "Kirpi tuzağına bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a caltrop."
+msgstr "Kirpi tuzağına bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a glass caltrop."
+msgstr "Cam kirpi tuzağına bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a glass caltrop."
+msgstr "Cam kirpi tuzağına bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Tripped on a tripwire."
+msgstr "Tuzak telinde tökezledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Tripped on a tripwire."
+msgstr "Tuzak telinde tökezledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a crossbow trap."
+msgstr "Bir arbalet tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a crossbow trap."
+msgstr "Bir arbalet tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shotgun trap."
+msgstr "Bir av tüfeği tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shotgun trap."
+msgstr "Bir av tüfeği tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a blade trap."
+msgstr "Bir bıçak tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a blade trap."
+msgstr "Bir bıçak tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a light snare."
+msgstr "Hafif bir kapanı tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a light snare."
+msgstr "Hafif bir kapanı tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a heavy snare."
+msgstr "Ağır bir kapanı tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a heavy snare."
+msgstr "Ağır bir kapanı tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped on a land mine."
+msgstr "Bir mayına bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped on a land mine."
+msgstr "Bir mayına bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a booby trap."
+msgstr "Bir tuzağı tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a booby trap."
+msgstr "Bir tuzağı tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a teleport trap."
+msgstr "Bir teleport tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a teleport trap."
+msgstr "Bir teleport tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into thick goo."
+msgstr "Kalın bir yapışkana bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into thick goo."
+msgstr "Kalın bir yapışkana bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into a dissector."
+msgstr "Bir dissektöre bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into a dissector."
+msgstr "Bir dissektöre bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell in a pit."
+msgstr "Bir çukura düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell in a pit."
+msgstr "Bir çukura düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell into a spiked pit."
+msgstr "Dikenli bir çukura düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell into a spiked pit."
+msgstr "Dikenli bir çukura düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell into a pit filled with glass shards."
+msgstr "Cam kırıklarıyla dolu bir çukura düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell into a pit filled with glass shards."
+msgstr "Cam kırıklarıyla dolu bir çukura düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into lava."
+msgstr "Lavların içine bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into lava."
+msgstr "Lavların içine bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Stepped into a sinkhole."
+msgstr "Bir obruğa bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Stepped into a sinkhole."
+msgstr "Bir obruğa bastı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Fell down a ledge."
+msgstr "Bir çıkıntıdan aşağı düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Fell down a ledge."
+msgstr "Bir çıkıntıdan aşağı düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a flood trap."
+msgstr "Bir su baskını tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a flood trap."
+msgstr "Bir su baskını tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shadow trap."
+msgstr "Bir gölge tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shadow trap."
+msgstr "Bir gölge tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a life-draining trap."
+msgstr "Bir yaşam emici tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a life-draining trap."
+msgstr "Bir yaşam emici tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Triggered a shadow snake trap."
+msgstr "Bir gölge yılanı tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Triggered a shadow snake trap."
+msgstr "Bir gölge yılanı tuzağını tetikledi."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Consumed a %s."
+msgstr "Bir %s tüketti."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Consumed a %s."
+msgstr "Bir %s tüketti."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened the Marloss Gateway."
+msgstr "Marloss Geçidi'ni açtı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened the Marloss Gateway."
+msgstr "Marloss Geçidi'ni açtı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Became one with the Mycus."
+msgstr "Mycus ile bir oldu."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Became one with the Mycus."
+msgstr "Mycus ile bir oldu."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Dermatik eggs hatched."
+msgstr "Dermatik yumurtaları çatladı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Dermatik eggs hatched."
+msgstr "Dermatik yumurtaları çatladı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Injected with dermatik eggs."
+msgstr "Dermatik yumurtaları enjekte edildi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Injected with dermatik eggs."
+msgstr "Dermatik yumurtaları enjekte edildi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Destroyed a triffid grove."
+msgstr "Bir triffid korusunu yok etti."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Destroyed a triffid grove."
+msgstr "Bir triffid korusunu yok etti."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to an asthma attack."
+msgstr "Astım krizi sonucu hayatını kaybetti."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to an asthma attack."
+msgstr "Astım krizi sonucu hayatını kaybetti."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of datura overdose."
+msgstr "Datura aşırı dozundan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of datura overdose."
+msgstr "Datura aşırı dozundan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of a healing stimulant overdose."
+msgstr "İyileştirici bir uyarıcı aşırı dozundan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of a healing stimulant overdose."
+msgstr "İyileştirici bir uyarıcı aşırı dozundan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of an alcohol overdose."
+msgstr "Alkol aşırı dozundan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of an alcohol overdose."
+msgstr "Alkol aşırı dozundan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of a drug overdose."
+msgstr "Uyuşturucu aşırı dozundan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of a drug overdose."
+msgstr "Uyuşturucu aşırı dozundan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to the infection."
+msgstr "Enfeksiyona yenik düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to the infection."
+msgstr "Enfeksiyona yenik düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of starvation."
+msgstr "Açlıktan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of starvation."
+msgstr "Açlıktan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Died of thirst."
+msgstr "Susuzluktan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Died of thirst."
+msgstr "Susuzluktan öldü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Dug a shaft into lava."
+msgstr "Lava bir kuyu kazdı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Dug a shaft into lava."
+msgstr "Lava bir kuyu kazdı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Disarmed a nuclear missile."
+msgstr "Nükleer füzeyi etkisiz hale getirdi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Disarmed a nuclear missile."
+msgstr "Nükleer füzeyi etkisiz hale getirdi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Ate a sewage sample."
+msgstr "Kanalizasyon örneği yedi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Ate a sewage sample."
+msgstr "Kanalizasyon örneği yedi."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "'%s' mutation turned into '%s'"
+msgstr "'%s' mutasyonu '%s' olarak değişti."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "'%s' mutation turned into '%s'"
+msgstr "'%s' mutasyonu '%s' olarak değişti."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Exhumed a grave."
+msgstr "Bir mezar açtı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Exhumed a grave."
+msgstr "Bir mezar açtı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Failed install of bionic: %s."
+msgstr "Biyonik kurulumunda başarısız oldu: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Failed install of bionic: %s."
+msgstr "Biyonik kurulumunda başarısız oldu: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Failed to remove bionic: %s."
+msgstr "Biyonik kaldırmada başarısız oldu: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Failed to remove bionic: %s."
+msgstr "Biyonik kaldırmada başarısız oldu: %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Succumbed to lack of sleep."
+msgstr "Uykusuzluğa yenik düştü."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Succumbed to lack of sleep."
+msgstr "Uykusuzluğa yenik düştü."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "The fuel tank of the %s exploded!"
+msgstr "%s'in yakıt tankı patladı!"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "The fuel tank of the %s exploded!"
+msgstr "%s'in yakıt tankı patladı!"
+
+#. ~ %s is addiction name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Became addicted to %s."
+msgstr "%s bağımlısı oldu."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Became addicted to %s."
+msgstr "%s bağımlısı oldu."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Gained the mutation '%s'."
+msgstr "'%s' mutasyonunu kazandı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Gained the mutation '%s'."
+msgstr "'%s' mutasyonunu kazandı."
+
+#. ~ %d is skill level %s is skill name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Reached skill level %1$d in %2$s."
+msgstr "%2$s becerisinde %1$d seviyesine ulaştı."
+
+#. ~ %d is skill level %s is skill name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Reached skill level %1$d in %2$s."
+msgstr "%2$s becerisinde %1$d seviyesine ulaştı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s committed suicide."
+msgstr "%s intihar etti."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s committed suicide."
+msgstr "%s intihar etti."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s was killed."
+msgstr "%s öldürüldü."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s was killed."
+msgstr "%s öldürüldü."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Last words: %s"
+msgstr "Son sözler: %s"
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Last words: %s"
+msgstr "Son sözler: %s"
+
+#. ~ %s is player name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s began their journey into the Cataclysm."
+msgstr "%s, Felaket'e yolculuğuna başladı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s began their journey into the Cataclysm."
+msgstr "%s, Felaket'e yolculuğuna başladı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Installed bionic: %s."
+msgstr "Kurulan biyonik: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Installed bionic: %s."
+msgstr "Kurulan biyonik: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Installed bad bionic: %s."
+msgstr "Kötü biyonik kuruldu: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Installed bad bionic: %s."
+msgstr "Kötü biyonik kuruldu: %s."
+
+#. ~ %s is martial art
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Learned %s."
+msgstr "%s öğrenildi."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Learned %s."
+msgstr "%s öğrenildi."
+
+#. ~ %s is addiction name
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Overcame addiction to %s."
+msgstr "%s bağımlılığı aşıldı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Overcame addiction to %s."
+msgstr "%s bağımlılığı aşıldı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "%s became hostile."
+msgstr "%s düşmanca hale geldi."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "%s became hostile."
+msgstr "%s düşmanca hale geldi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened a portal."
+msgstr "Bir portal açıldı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened a portal."
+msgstr "Bir portal açıldı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Opened a strange temple."
+msgstr "Garip bir tapınak açıldı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Opened a strange temple."
+msgstr "Garip bir tapınak açıldı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Gained a spell level on %s."
+msgstr "%s üzerinde bir büyü seviyesi kazandı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Gained a spell level on %s."
+msgstr "%s üzerinde bir büyü seviyesi kazandı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Released subspace specimens."
+msgstr "Alt uzay örnekleri serbest bırakıldı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Released subspace specimens."
+msgstr "Alt uzay örnekleri serbest bırakıldı."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Removed bionic: %s."
+msgstr "Biyonik çıkarıldı: %s."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Removed bionic: %s."
+msgstr "Biyonik çıkarıldı: %s."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Sealed a Hazardous Material Sarcophagus."
+msgstr "Tehlikeli Malzeme Lahdi mühürlendi."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Sealed a Hazardous Material Sarcophagus."
+msgstr "Tehlikeli Malzeme Lahdi mühürlendi."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Telefragged a %s."
+msgstr "Bir %s telefrag etti."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Telefragged a %s."
+msgstr "Bir %s telefrag etti."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Spontaneous teleport."
+msgstr "Kendiliğinden teleport."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Spontaneous teleport."
+msgstr "Kendiliğinden teleport."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_male"
+msgid "Teleported into a %s."
+msgstr "Bir %s içine teleport oldu."
+
+#: src/event/memorial_logger.cpp
+#, c-format
+msgctxt "memorial_female"
+msgid "Teleported into a %s."
+msgstr "Bir %s içine teleport oldu."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Terminated subspace specimens."
+msgstr "Alt uzay örneklerini sonlandırdı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Terminated subspace specimens."
+msgstr "Alt uzay örneklerini sonlandırdı."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Threw up."
+msgstr "Kustu."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Threw up."
+msgstr "Kustu."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_male"
+msgid "Set off an alarm."
+msgstr "Bir alarmı çalıştır."
+
+#: src/event/memorial_logger.cpp
+msgctxt "memorial_female"
+msgid "Set off an alarm."
+msgstr "Bir alarmı çalıştır."
 
 #: src/examine_item_menu.cpp
 msgid "Link this item to which clothing?"
@@ -334617,6 +335667,10 @@ msgstr "şarapnel"
 #, c-format
 msgid "taking %d damage"
 msgstr "%d hasarı alıyor"
+
+#: src/explosion.cpp
+msgid "but take no damage"
+msgstr ""
 
 #: src/explosion.cpp
 msgid "but takes no damage"
@@ -337651,6 +338705,280 @@ msgstr "Mevcut durumunuzda tırmanmak imkansız."
 msgid "The %s flickers and goes dark — the pocket dimension has collapsed."
 msgstr ""
 
+#: src/game/bonuses.cpp
+msgid "Accuracy"
+msgstr "Doğruluk"
+
+#: src/game/bonuses.cpp
+msgid "Move cost"
+msgstr "Hareket maliyeti"
+
+#: src/game/bonuses.cpp src/panels.cpp
+msgid "Armor"
+msgstr "Zırh"
+
+#: src/game/bonuses.cpp
+msgid "Armor penetration"
+msgstr "Zırh delme"
+
+#: src/game/bonuses.cpp
+msgid "Target armor multiplier"
+msgstr "Hedef zırh çarpanı"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "type of damage"
+msgid "%1$s %2$s"
+msgstr "%1$s %2$s"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$d%%</stat> of %3$s"
+msgstr "* %1$s: <stat>%2$d%%</stat> %3$s'ün"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$d%%</stat>"
+msgstr "* %1$s: <stat>%2$d%%</stat>"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$+d%%</stat> of %3$s"
+msgstr "* %1$s: <stat>%2$+d%%</stat> %3$s'ün"
+
+#: src/game/bonuses.cpp
+#, c-format
+msgctxt "martial art bonus"
+msgid "* %1$s: <stat>%2$+d</stat>"
+msgstr "* %1$s: <stat>%2$+d</stat>"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "true"
+msgstr "doğru"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "biological"
+msgstr "biyolojik"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "bash"
+msgstr "vurmak"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "cut"
+msgstr "kesmek"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "acid"
+msgstr "asit"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "stab"
+msgstr "bıçaklamak"
+
+#: src/game/damage.cpp
+msgctxt "damage_type"
+msgid "bullet"
+msgstr "kurşun"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "heat"
+msgstr "ısı"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "cold"
+msgstr "soğuk"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "dark"
+msgstr "karanlık"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "light"
+msgstr "ışık"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "psionic"
+msgstr "psionik"
+
+#: src/game/damage.cpp
+msgctxt "damage type"
+msgid "electric"
+msgstr "elektrik"
+
+#: src/game/gamemode.cpp
+msgid "Tutorial"
+msgstr "Eğitim"
+
+#: src/game/gamemode.cpp
+msgid "Defense"
+msgstr "Savunma"
+
+#: src/game/iuse_software.cpp
+msgid "You found kitten!"
+msgstr "Kediyi buldun!"
+
+#: src/game/live_view.cpp
+msgid "< <color_green>Mouse View</color> >"
+msgstr "< <color_green>Fare Görünümü</color> >"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "good"
+msgstr "iyi"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "bad"
+msgstr "kötü"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "mixed"
+msgstr "karışık"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "warning"
+msgstr "uyarı"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "info"
+msgstr "bilgi"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "neutral"
+msgstr "tarafsız"
+
+#: src/game/message_types.cpp
+msgctxt "message type"
+msgid "debug"
+msgstr "hata ayıklama"
+
+#: src/game/mod_manager_ui.cpp
+msgid "This mod is marked as obsolete and may contain severe errors."
+msgstr "Bu mod eski olarak işaretlenmiştir ve ciddi hatalar içerebilir."
+
+#: src/game/mod_manager_ui.cpp
+msgid "License"
+msgstr "Lisans"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Author"
+msgid_plural "Authors"
+msgstr[0] "Yazar"
+msgstr[1] "Yazarlar"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Maintainer"
+msgid_plural "Maintainers"
+msgstr[0] "Sorumlu"
+msgstr[1] "Sorumlular"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Dependency"
+msgid_plural "Dependencies"
+msgstr[0] "Bağımlılık"
+msgstr[1] "Bağımlılıklar"
+
+#. ~ Followed by list of mods the current mod conflicts with
+#: src/game/mod_manager_ui.cpp
+msgid "Conflict"
+msgid_plural "Conflicts"
+msgstr[0] "Çatışma"
+msgstr[1] "Çatışmalar"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Mod version"
+msgstr "Mod sürümü"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid "%s: API version %s\n"
+msgstr "%s: API sürümü %s\n"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Needs Lua"
+msgstr "Lua gerekiyor"
+
+#: src/game/mod_manager_ui.cpp
+msgid "Mod info path"
+msgstr "Mod bilgi yolu"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"  %s [%s]\n"
+"    with %s [%s]\n"
+msgstr ""
+"  %s [%s]\n"
+"    beraber %s [%s]\n"
+
+#: src/game/mod_manager_ui.cpp
+msgid "The mod is already on the list."
+msgstr "Mod zaten listede."
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid "Unable to find mod with id \"%s\"."
+msgstr "Kimliği \"%s\" olan mod bulunamadı."
+
+#: src/game/mod_manager_ui.cpp
+msgid "Failed to build dependency tree for the mod."
+msgstr "Mod için bağımlılık ağacı oluşturulamadı."
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"The mod has dependency problem(s):\n"
+"\n"
+"%s"
+msgstr "Modun bağımlılık sorunu var:"
+
+#: src/game/mod_manager_ui.cpp
+#, c-format
+msgid ""
+"The mod or some of its dependencies has conflict(s) with active mods:\n"
+"\n"
+"%s"
+msgstr "Mod veya bazı bağımlılıkları aktif modlarla çakışıyor:"
+
+#: src/game/mutation_type.cpp
+msgid "skin color"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "eye color"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "hair style"
+msgstr ""
+
+#: src/game/mutation_type.cpp
+msgid "hair color"
+msgstr ""
+
+#: src/game/perk.cpp
+msgid "Effects:"
+msgstr ""
+
 #: src/game_inventory.cpp
 msgid "Unload every carried item that can be unloaded"
 msgstr ""
@@ -338307,14 +339635,6 @@ msgstr "<color_yellow>Sterilize edilecek bir cihaz seçin:</color>"
 #: src/game_inventory.cpp
 msgid "You don't have any devices to sterilize."
 msgstr "Sterilize edilecek cihazınız yok."
-
-#: src/gamemode.cpp
-msgid "Tutorial"
-msgstr "Eğitim"
-
-#: src/gamemode.cpp
-msgid "Defense"
-msgstr "Savunma"
 
 #: src/gamemode_defense.cpp
 msgid "A caravan approaches!  Press spacebar…"
@@ -344555,11 +345875,11 @@ msgstr "<bold>Balistik Koruma</bold>:"
 msgid "<bold>Stat Bonus</bold>: "
 msgstr "<bold>İstatistik Bonusu</bold>:"
 
-#: src/item.cpp src/iteminfo_armor.cpp
+#: src/item.cpp src/item/iteminfo_armor.cpp
 msgid "<bold>Weight capacity modifier</bold>: "
 msgstr "<bold>Ağırlık kapasitesi değiştiricisi</bold>:"
 
-#: src/item.cpp src/iteminfo_armor.cpp
+#: src/item.cpp src/item/iteminfo_armor.cpp
 msgid "<bold>Weight capacity bonus</bold>: "
 msgstr "<bold>Ağırlık kapasitesi bonusu</bold>:"
 
@@ -345405,17 +346725,238 @@ msgctxt "corpse ownership qualifier"
 msgid "%1$s of %2$s, %3$s"
 msgstr "%2$s'in %1$s'i, %3$s"
 
-#: src/item_action.cpp
+#: src/item.cpp src/item/book_scanning.cpp
+#, c-format
+msgid "digital copy of %s"
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You need a powered reader to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You need physical reading material to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You can't see well enough to scan."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "This copy is already installed on the reader."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+msgid "You no longer have the reading material or reader.  You stop scanning."
+msgstr ""
+
+#: src/item/book_scanning.cpp
+#, c-format
+msgid "You save a digital copy of %s on your %s."
+msgstr ""
+
+#: src/item/digital_media.cpp
+msgid ""
+"No music collection is ready to play.  Try another file or wait for its "
+"cooldown."
+msgstr ""
+
+#: src/item/digital_media.cpp
+#, c-format
+msgid "You recently listened to this collection.  Try again in %s."
+msgstr ""
+
+#: src/item/item_action.cpp
 msgid "You don't have any items with registered uses!"
 msgstr "Kayıtlı kullanımları olan herhangi bir eşyanız yok!"
 
-#: src/item_action.cpp
+#: src/item/item_action.cpp
 msgid "Execute which action?"
 msgstr "Hangi eylemi gerçekleştireceksiniz?"
 
-#: src/item_action.cpp
+#: src/item/item_action.cpp
 msgid "You do not have an item that can perform this action."
 msgstr "Bu eylemi gerçekleştirebilecek bir eşyanız yok."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Personal aura</stat>. "
+msgstr "<stat>Kişisel aura</stat>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Close to skin</stat>. "
+msgstr "<stat>Cilde yakın</stat>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Strapped</stat>. "
+msgstr "<stat>Bağlı</stat>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Outer</stat>. "
+msgstr "<stat>Dış</stat>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Waist</stat>. "
+msgstr "<stat>Bel</stat>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Outer aura</stat>. "
+msgstr "<stat>Dış aura</stat>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<stat>Normal</stat>. "
+msgstr "<stat>Normal</stat>."
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(too big)</bad>"
+msgstr "<bad>(çok büyük)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(huge!)</bad>"
+msgstr "<bad>(kocaman!)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(too small)</bad>"
+msgstr "<bad>(çok küçük)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(tiny!)</bad>"
+msgstr "<bad>(minik!)</bad>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<info>(for all parts)</info>"
+msgstr "<info>(tüm parçalar için)</info>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Coverage</bold>"
+msgstr "<bold>Kapsama</bold>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Encumbrance</bold>"
+msgstr "<bold>Yük</bold>"
+
+#: src/item/iteminfo_armor.cpp
+msgid "When Full"
+msgstr "Tam Dolu Olduğunda"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Storage</bold>: "
+msgstr "<bold>Depolama</bold>:"
+
+#: src/item/iteminfo_armor.cpp
+msgid "<bold>Covers</bold>: "
+msgstr "<bold>Kaplamalar</bold>:"
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>head</info>. "
+msgstr "<info>Baş</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>eyes</info>. "
+msgstr "<info>Gözler</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>mouth</info>. "
+msgstr "<info>Ağız</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>torso</info>. "
+msgstr "<info>Gövde</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>arm</info>. "
+msgstr "Her iki <info>kol</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>arms</info>. "
+msgstr "<info>Kollar</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left arm</info>. "
+msgstr "<info>Sol kol</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right arm</info>. "
+msgstr "<info>Sağ kol</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>hand</info>. "
+msgstr "Her iki <info>el</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>hands</info>. "
+msgstr "<info>eller</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left hand</info>. "
+msgstr "<info>sol el</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right hand</info>. "
+msgstr "<info>sağ el</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>leg</info>. "
+msgstr "Her iki <info>bacak</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>legs</info>. "
+msgstr "<info>bacaklar</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left leg</info>. "
+msgstr "<info>sol bacak</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right leg</info>. "
+msgstr "<info>sağ bacak</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Either <info>foot</info>. "
+msgstr "Her iki <info>ayak</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>feet</info>. "
+msgstr "<info>ayaklar</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>left foot</info>. "
+msgstr "<info>sol ayak</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "The <info>right foot</info>. "
+msgstr "<info>sağ ayak</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "<info>Nothing</info>."
+msgstr "<info>Hiçbir şey</info>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Layer: "
+msgstr "Katman:"
+
+#: src/item/iteminfo_armor.cpp
+msgid ""
+"This item <good>won't conflict with</good> other items on the same "
+"<info>layer</info>."
+msgstr ""
+"Bu öğe, aynı <info>katmandaki</info> diğer öğelerle "
+"<good>çakışmayacak</good>."
+
+#: src/item/iteminfo_armor.cpp
+msgid "Warmth: "
+msgstr "Sıcaklık:"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <info>(fits)</info>"
+msgstr "<info>(uyar)</info>"
+
+#: src/item/iteminfo_armor.cpp
+msgid " <bad>(poor fit)</bad>"
+msgstr "<bad>(kötü uyum)</bad>"
+
+#: src/item/material.cpp
+msgid "damages"
+msgstr "hasarlar"
 
 #: src/item_factory.cpp
 msgid "gunmod"
@@ -345452,182 +346993,6 @@ msgstr "%zu doğumlarının sonuçları:"
 #, c-format
 msgid "%d x %s"
 msgstr "%d x %s"
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Personal aura</stat>. "
-msgstr "<stat>Kişisel aura</stat>."
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Close to skin</stat>. "
-msgstr "<stat>Cilde yakın</stat>."
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Strapped</stat>. "
-msgstr "<stat>Bağlı</stat>."
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Outer</stat>. "
-msgstr "<stat>Dış</stat>."
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Waist</stat>. "
-msgstr "<stat>Bel</stat>."
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Outer aura</stat>. "
-msgstr "<stat>Dış aura</stat>."
-
-#: src/iteminfo_armor.cpp
-msgid "<stat>Normal</stat>. "
-msgstr "<stat>Normal</stat>."
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(too big)</bad>"
-msgstr "<bad>(çok büyük)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(huge!)</bad>"
-msgstr "<bad>(kocaman!)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(too small)</bad>"
-msgstr "<bad>(çok küçük)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(tiny!)</bad>"
-msgstr "<bad>(minik!)</bad>"
-
-#: src/iteminfo_armor.cpp
-msgid "<info>(for all parts)</info>"
-msgstr "<info>(tüm parçalar için)</info>"
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Coverage</bold>"
-msgstr "<bold>Kapsama</bold>"
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Encumbrance</bold>"
-msgstr "<bold>Yük</bold>"
-
-#: src/iteminfo_armor.cpp
-msgid "When Full"
-msgstr "Tam Dolu Olduğunda"
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Storage</bold>: "
-msgstr "<bold>Depolama</bold>:"
-
-#: src/iteminfo_armor.cpp
-msgid "<bold>Covers</bold>: "
-msgstr "<bold>Kaplamalar</bold>:"
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>head</info>. "
-msgstr "<info>Baş</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>eyes</info>. "
-msgstr "<info>Gözler</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>mouth</info>. "
-msgstr "<info>Ağız</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>torso</info>. "
-msgstr "<info>Gövde</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>arm</info>. "
-msgstr "Her iki <info>kol</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>arms</info>. "
-msgstr "<info>Kollar</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left arm</info>. "
-msgstr "<info>Sol kol</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right arm</info>. "
-msgstr "<info>Sağ kol</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>hand</info>. "
-msgstr "Her iki <info>el</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>hands</info>. "
-msgstr "<info>eller</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left hand</info>. "
-msgstr "<info>sol el</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right hand</info>. "
-msgstr "<info>sağ el</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>leg</info>. "
-msgstr "Her iki <info>bacak</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>legs</info>. "
-msgstr "<info>bacaklar</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left leg</info>. "
-msgstr "<info>sol bacak</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right leg</info>. "
-msgstr "<info>sağ bacak</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "Either <info>foot</info>. "
-msgstr "Her iki <info>ayak</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>feet</info>. "
-msgstr "<info>ayaklar</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>left foot</info>. "
-msgstr "<info>sol ayak</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "The <info>right foot</info>. "
-msgstr "<info>sağ ayak</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "<info>Nothing</info>."
-msgstr "<info>Hiçbir şey</info>."
-
-#: src/iteminfo_armor.cpp
-msgid "Layer: "
-msgstr "Katman:"
-
-#: src/iteminfo_armor.cpp
-msgid ""
-"This item <good>won't conflict with</good> other items on the same "
-"<info>layer</info>."
-msgstr ""
-"Bu öğe, aynı <info>katmandaki</info> diğer öğelerle "
-"<good>çakışmayacak</good>."
-
-#: src/iteminfo_armor.cpp
-msgid "Warmth: "
-msgstr "Sıcaklık:"
-
-#: src/iteminfo_armor.cpp
-msgid " <info>(fits)</info>"
-msgstr "<info>(uyar)</info>"
-
-#: src/iteminfo_armor.cpp
-msgid " <bad>(poor fit)</bad>"
-msgstr "<bad>(kötü uyum)</bad>"
 
 #: src/itype.h
 msgid "click."
@@ -347885,14 +349250,6 @@ msgstr ""
 #: src/iuse.cpp
 msgid "is standing"
 msgstr ""
-
-#: src/iuse.cpp src/memorial_logger.cpp
-msgid "He"
-msgstr "O"
-
-#: src/iuse.cpp src/memorial_logger.cpp
-msgid "She"
-msgstr "O"
 
 #: src/iuse.cpp
 msgctxt "Pronoun"
@@ -350635,10 +351992,6 @@ msgstr "Oymak"
 msgid "Carved"
 msgstr "Oyulmuş"
 
-#: src/iuse_software.cpp
-msgid "You found kitten!"
-msgstr "Kediyi buldun!"
-
 #: src/iuse_software_kitten.cpp
 msgid "\"I pity the fool who mistakes me for kitten!\", sez Mr. T."
 msgstr "\"Beni kedi sanan aptala acırım!\", diyor Bay T."
@@ -351664,248 +353017,9 @@ msgstr "<-> önceki"
 msgid "<u>ndo move"
 msgstr "<u> geri al hareketi"
 
-#: src/kill_tracker.cpp
-msgid "You haven't killed any monsters yet!"
-msgstr "Henüz hiç canavar öldürmediniz!"
-
-#: src/kill_tracker.cpp
-#, c-format
-msgid "KILL COUNT: %d"
-msgstr "ÖLDÜRME SAYISI: %d"
-
-#: src/kill_tracker.cpp
-#, c-format
-msgid ""
-"\n"
-"Experience: %d (%d points available)"
-msgstr ""
-"\n"
-"Deneyim: %d (%d puan mevcut)"
-
 #: src/language.cpp
 msgid "Select your language"
 msgstr "Dil seçin"
-
-#. ~ abbreviated direction names and long direction names
-#: src/line.cpp
-msgid "N    "
-msgstr "K"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "north"
-msgstr "kuzey"
-
-#: src/line.cpp
-msgid "NE   "
-msgstr "KD"
-
-#: src/line.cpp
-msgid "northeast"
-msgstr "kuzeydoğu"
-
-#: src/line.cpp
-msgid "E    "
-msgstr "D"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "east"
-msgstr "doğu"
-
-#: src/line.cpp
-msgid "SE   "
-msgstr "GD"
-
-#: src/line.cpp
-msgid "southeast"
-msgstr "güneydoğu"
-
-#: src/line.cpp
-msgid "S    "
-msgstr "G"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "south"
-msgstr "güney"
-
-#: src/line.cpp
-msgid "SW   "
-msgstr "GB"
-
-#: src/line.cpp
-msgid "southwest"
-msgstr "güneybatı"
-
-#: src/line.cpp
-msgid "W    "
-msgstr "B"
-
-#: src/line.cpp src/overmap/overmap.cpp
-msgid "west"
-msgstr "batı"
-
-#: src/line.cpp
-msgid "NW   "
-msgstr "KB"
-
-#: src/line.cpp
-msgid "northwest"
-msgstr "kuzeybatı"
-
-#: src/line.cpp
-msgid "UP_N "
-msgstr "YUKARI_K"
-
-#: src/line.cpp
-msgid "north and above"
-msgstr "kuzey ve yukarısı"
-
-#: src/line.cpp
-msgid "UP_NE"
-msgstr "YUKARI_KD"
-
-#: src/line.cpp
-msgid "northeast and above"
-msgstr "kuzeydoğu ve yukarısı"
-
-#: src/line.cpp
-msgid "UP_E "
-msgstr "YUKARI_D"
-
-#: src/line.cpp
-msgid "east and above"
-msgstr "doğu ve yukarısı"
-
-#: src/line.cpp
-msgid "UP_SE"
-msgstr "YUKARI_GD"
-
-#: src/line.cpp
-msgid "southeast and above"
-msgstr "güneydoğu ve yukarısı"
-
-#: src/line.cpp
-msgid "UP_S "
-msgstr "UP_S"
-
-#: src/line.cpp
-msgid "south and above"
-msgstr "güney ve yukarısı"
-
-#: src/line.cpp
-msgid "UP_SW"
-msgstr "UP_SW"
-
-#: src/line.cpp
-msgid "southwest and above"
-msgstr "güneybatı ve yukarısı"
-
-#: src/line.cpp
-msgid "UP_W "
-msgstr "UP_W"
-
-#: src/line.cpp
-msgid "west and above"
-msgstr "batı ve yukarısı"
-
-#: src/line.cpp
-msgid "UP_NW"
-msgstr "UP_NW"
-
-#: src/line.cpp
-msgid "northwest and above"
-msgstr "kuzeybatı ve yukarısı"
-
-#: src/line.cpp
-msgid "DN_N "
-msgstr "DN_N"
-
-#: src/line.cpp
-msgid "north and below"
-msgstr "kuzey ve aşağısı"
-
-#: src/line.cpp
-msgid "DN_NE"
-msgstr "DN_NE"
-
-#: src/line.cpp
-msgid "northeast and below"
-msgstr "kuzeydoğu ve aşağısı"
-
-#: src/line.cpp
-msgid "DN_E "
-msgstr "DN_E"
-
-#: src/line.cpp
-msgid "east and below"
-msgstr "doğu ve aşağısı"
-
-#: src/line.cpp
-msgid "DN_SE"
-msgstr "DN_SE"
-
-#: src/line.cpp
-msgid "southeast and below"
-msgstr "güneydoğu ve aşağısı"
-
-#: src/line.cpp
-msgid "DN_S "
-msgstr "DN_S"
-
-#: src/line.cpp
-msgid "south and below"
-msgstr "güney ve aşağısı"
-
-#: src/line.cpp
-msgid "DN_SW"
-msgstr "DN_SW"
-
-#: src/line.cpp
-msgid "southwest and below"
-msgstr "güneybatı ve aşağısı"
-
-#: src/line.cpp
-msgid "DN_W "
-msgstr "DN_W"
-
-#: src/line.cpp
-msgid "west and below"
-msgstr "batı ve aşağısı"
-
-#: src/line.cpp
-msgid "DN_NW"
-msgstr "DN_NW"
-
-#: src/line.cpp
-msgid "northwest and below"
-msgstr "kuzeybatı ve aşağısı"
-
-#: src/line.cpp
-msgid "UP_CE"
-msgstr "UP_CE"
-
-#: src/line.cpp
-msgid "above"
-msgstr "yukarıda"
-
-#: src/line.cpp
-msgid "CE   "
-msgstr "CE"
-
-#: src/line.cpp
-msgid "center"
-msgstr "merkez"
-
-#: src/line.cpp
-msgid "DN_CE"
-msgstr "DN_CE"
-
-#: src/line.cpp
-msgid "below"
-msgstr "aşağıda"
-
-#: src/live_view.cpp
-msgid "< <color_green>Mouse View</color> >"
-msgstr "< <color_green>Fare Görünümü</color> >"
 
 #: src/loading_ui.cpp
 #, c-format
@@ -353639,9 +354753,221 @@ msgstr "[var]"
 msgid " Style: %s "
 msgstr "Tarz: %s"
 
-#: src/material.cpp
-msgid "damages"
-msgstr "hasarlar"
+#: src/math/line.cpp
+msgid "N    "
+msgstr "K"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "north"
+msgstr "kuzey"
+
+#: src/math/line.cpp
+msgid "NE   "
+msgstr "KD"
+
+#: src/math/line.cpp
+msgid "northeast"
+msgstr "kuzeydoğu"
+
+#: src/math/line.cpp
+msgid "E    "
+msgstr "D"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "east"
+msgstr "doğu"
+
+#: src/math/line.cpp
+msgid "SE   "
+msgstr "GD"
+
+#: src/math/line.cpp
+msgid "southeast"
+msgstr "güneydoğu"
+
+#: src/math/line.cpp
+msgid "S    "
+msgstr "G"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "south"
+msgstr "güney"
+
+#: src/math/line.cpp
+msgid "SW   "
+msgstr "GB"
+
+#: src/math/line.cpp
+msgid "southwest"
+msgstr "güneybatı"
+
+#: src/math/line.cpp
+msgid "W    "
+msgstr "B"
+
+#: src/math/line.cpp src/overmap/overmap.cpp
+msgid "west"
+msgstr "batı"
+
+#: src/math/line.cpp
+msgid "NW   "
+msgstr "KB"
+
+#: src/math/line.cpp
+msgid "northwest"
+msgstr "kuzeybatı"
+
+#: src/math/line.cpp
+msgid "UP_N "
+msgstr "YUKARI_K"
+
+#: src/math/line.cpp
+msgid "north and above"
+msgstr "kuzey ve yukarısı"
+
+#: src/math/line.cpp
+msgid "UP_NE"
+msgstr "YUKARI_KD"
+
+#: src/math/line.cpp
+msgid "northeast and above"
+msgstr "kuzeydoğu ve yukarısı"
+
+#: src/math/line.cpp
+msgid "UP_E "
+msgstr "YUKARI_D"
+
+#: src/math/line.cpp
+msgid "east and above"
+msgstr "doğu ve yukarısı"
+
+#: src/math/line.cpp
+msgid "UP_SE"
+msgstr "YUKARI_GD"
+
+#: src/math/line.cpp
+msgid "southeast and above"
+msgstr "güneydoğu ve yukarısı"
+
+#: src/math/line.cpp
+msgid "UP_S "
+msgstr "UP_S"
+
+#: src/math/line.cpp
+msgid "south and above"
+msgstr "güney ve yukarısı"
+
+#: src/math/line.cpp
+msgid "UP_SW"
+msgstr "UP_SW"
+
+#: src/math/line.cpp
+msgid "southwest and above"
+msgstr "güneybatı ve yukarısı"
+
+#: src/math/line.cpp
+msgid "UP_W "
+msgstr "UP_W"
+
+#: src/math/line.cpp
+msgid "west and above"
+msgstr "batı ve yukarısı"
+
+#: src/math/line.cpp
+msgid "UP_NW"
+msgstr "UP_NW"
+
+#: src/math/line.cpp
+msgid "northwest and above"
+msgstr "kuzeybatı ve yukarısı"
+
+#: src/math/line.cpp
+msgid "DN_N "
+msgstr "DN_N"
+
+#: src/math/line.cpp
+msgid "north and below"
+msgstr "kuzey ve aşağısı"
+
+#: src/math/line.cpp
+msgid "DN_NE"
+msgstr "DN_NE"
+
+#: src/math/line.cpp
+msgid "northeast and below"
+msgstr "kuzeydoğu ve aşağısı"
+
+#: src/math/line.cpp
+msgid "DN_E "
+msgstr "DN_E"
+
+#: src/math/line.cpp
+msgid "east and below"
+msgstr "doğu ve aşağısı"
+
+#: src/math/line.cpp
+msgid "DN_SE"
+msgstr "DN_SE"
+
+#: src/math/line.cpp
+msgid "southeast and below"
+msgstr "güneydoğu ve aşağısı"
+
+#: src/math/line.cpp
+msgid "DN_S "
+msgstr "DN_S"
+
+#: src/math/line.cpp
+msgid "south and below"
+msgstr "güney ve aşağısı"
+
+#: src/math/line.cpp
+msgid "DN_SW"
+msgstr "DN_SW"
+
+#: src/math/line.cpp
+msgid "southwest and below"
+msgstr "güneybatı ve aşağısı"
+
+#: src/math/line.cpp
+msgid "DN_W "
+msgstr "DN_W"
+
+#: src/math/line.cpp
+msgid "west and below"
+msgstr "batı ve aşağısı"
+
+#: src/math/line.cpp
+msgid "DN_NW"
+msgstr "DN_NW"
+
+#: src/math/line.cpp
+msgid "northwest and below"
+msgstr "kuzeybatı ve aşağısı"
+
+#: src/math/line.cpp
+msgid "UP_CE"
+msgstr "UP_CE"
+
+#: src/math/line.cpp
+msgid "above"
+msgstr "yukarıda"
+
+#: src/math/line.cpp
+msgid "CE   "
+msgstr "CE"
+
+#: src/math/line.cpp
+msgid "center"
+msgstr "merkez"
+
+#: src/math/line.cpp
+msgid "DN_CE"
+msgstr "DN_CE"
+
+#: src/math/line.cpp
+msgid "below"
+msgstr "aşağıda"
 
 #: src/mattack_actors.cpp
 #, c-format
@@ -354585,1231 +355911,6 @@ msgstr "%2$s'den %1$s çalmayı başaramadınız, ama dikkat çekmediniz."
 msgid "You failed to steal %1$s from %2$s."
 msgstr "%2$s'den %1$s çalmayı başaramadınız."
 
-#: src/memorial_logger.cpp
-msgid "an unemployed male"
-msgstr "işsiz bir erkek"
-
-#: src/memorial_logger.cpp
-msgid "an unemployed female"
-msgstr "işsiz bir kadın"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "a %s"
-msgstr "bir %s"
-
-#. ~ First parameter is a pronoun ("He"/"She"), second parameter is a
-#. description
-#. ~ that designates the location relative to its surroundings.
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s was killed in a %2$s."
-msgstr "%1$s, bir %2$s sırasında öldü."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Cataclysm: Bright Nights version %s memorial file"
-msgstr "Cataclysm: Bright Nights sürüm %s anı dosyası"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "In memory of: %s"
-msgstr "Anısına: %s"
-
-#. ~ The "%s" will be replaced by an epitaph as displayed in the memorial
-#. files. Replace the quotation marks as appropriate for your language.
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "epitaph"
-msgid "\"%s\""
-msgstr "\"%s\""
-
-#. ~ First parameter: Pronoun, second parameter: a profession name (with
-#. article)
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s was %2$s when the apocalypse began."
-msgstr "Kıyamet başladığında %1$s, %2$s idi."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%1$s died on %2$s."
-msgstr "%1$s, %2$s tarihinde öldü."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Cash on hand: %s"
-msgstr "Eldeki nakit: %s"
-
-#: src/memorial_logger.cpp
-msgid "Final HP:"
-msgstr "Son HP:"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid " Head: %d/%d"
-msgstr "Baş: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Torso: %d/%d"
-msgstr "Gövde: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "L Arm: %d/%d"
-msgstr "Sol Kol: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "R Arm: %d/%d"
-msgstr "Sağ Kol: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "L Leg: %d/%d"
-msgstr "Sol Bacak: %d/%d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "R Leg: %d/%d"
-msgstr "Sağ Bacak: %d/%d"
-
-#: src/memorial_logger.cpp
-msgid "Final Stats:"
-msgstr "Son İstatistikler:"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Str %d"
-msgstr "Güç %d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Dex %d"
-msgstr "Çeviklik %d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Int %d"
-msgstr "Zeka %d"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Per %d"
-msgstr "Algı %d"
-
-#: src/memorial_logger.cpp
-msgid "Base Stats:"
-msgstr "Temel İstatistikler:"
-
-#: src/memorial_logger.cpp
-msgid "Final Messages:"
-msgstr "Son Mesajlar:"
-
-#: src/memorial_logger.cpp
-msgid "No monsters were killed."
-msgstr "Hiç canavar öldürülmedi."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Total kills: %d"
-msgstr "Toplam öldürme: %d"
-
-#. ~ 1. skill name, 2. skill level, 3. exercise percentage to next level
-#: src/memorial_logger.cpp
-#, c-format
-msgid "%s: %d (%d %%)"
-msgstr "%s: %d (%d %%)"
-
-#: src/memorial_logger.cpp src/newcharacter.cpp
-msgid "Traits:"
-msgstr "Özellikler:"
-
-#: src/memorial_logger.cpp
-msgid "(None)"
-msgstr "(Yok)"
-
-#: src/memorial_logger.cpp
-msgid "Ongoing Effects:"
-msgstr "Devam Eden Etkiler:"
-
-#: src/memorial_logger.cpp
-msgid "No bionics were installed."
-msgstr "Hiç biyonik takılmadı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgid "Bionic Power: %d/%d"
-msgstr "Biyonik Güç: %d/%d"
-
-#: src/memorial_logger.cpp src/panels.cpp
-msgid "Weapon:"
-msgstr "Silah:"
-
-#: src/memorial_logger.cpp
-msgid "Equipment:"
-msgstr "Ekipman:"
-
-#: src/memorial_logger.cpp src/newcharacter.cpp src/trade_win.cpp
-msgid "Inventory:"
-msgstr "Envanter:"
-
-#: src/memorial_logger.cpp
-msgid "Lifetime Stats and Scores"
-msgstr "Ömür Boyu İstatistikler ve Skorlar"
-
-#: src/memorial_logger.cpp
-msgid "Game History"
-msgstr "Oyun Geçmişi"
-
-#. ~ %s is artifact name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Activated the %s."
-msgstr "%s etkinleştirildi."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Activated the %s."
-msgstr "%s etkinleştirildi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Activated a mininuke."
-msgstr "Bir mini nükleer bomba etkinleştirildi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Activated a mininuke."
-msgstr "Bir mini nükleer bomba etkinleştirildi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Consumed mutagen."
-msgstr "Mutajen tüketildi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Consumed mutagen."
-msgstr "Mutajen tüketildi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected mutagen."
-msgstr "Enjekte edilmiş mutajen."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected mutagen."
-msgstr "Enjekte edilmiş mutajen."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Consumed purifier."
-msgstr "Tüketilmiş arıtıcı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Consumed purifier."
-msgstr "Tüketilmiş arıtıcı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected purifier."
-msgstr "Enjekte edilmiş arıtıcı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected purifier."
-msgstr "Enjekte edilmiş arıtıcı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected smart purifier."
-msgstr "Enjekte edilmiş akıllı arıtıcı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected smart purifier."
-msgstr "Enjekte edilmiş akıllı arıtıcı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Angered a group of amigara horrors!"
-msgstr "Bir grup amigara dehşetini kızdırdı!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Angered a group of amigara horrors!"
-msgstr "Bir grup amigara dehşetini kızdırdı!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Awoke a group of dark wyrms!"
-msgstr "Bir grup karanlık ejderhayı uyandırdın!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Awoke a group of dark wyrms!"
-msgstr "Bir grup karanlık ejderhayı uyandırdın!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Became wanted by the police!"
-msgstr "Polis tarafından aranan biri oldun!"
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Became wanted by the police!"
-msgstr "Polis tarafından aranan biri oldun!"
-
-#. ~ %s is bodypart
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Broken %s began to mend."
-msgstr "Kırık %s onarılmaya başladı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Broken %s began to mend."
-msgstr "Kırık %s onarılmaya başladı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "You buried an unknown victim of the Cataclysm."
-msgstr "Kıyamet'in bilinmeyen bir kurbanını gömdün."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "You buried an unknown victim of The Cataclysm."
-msgstr "Kıyamet'in bilinmeyen bir kurbanını gömdün."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "You buried %s."
-msgstr "%s'yı gömdün."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "You buried %s."
-msgstr "%s'yı gömdün."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caused a resonance cascade."
-msgstr "Bir rezonans zincirleme reaksiyonuna neden oldu."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caused a resonance cascade."
-msgstr "Bir rezonans zincirleme reaksiyonuna neden oldu."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caught and killed an ape.  Prey doesn't have a name."
-msgstr "Bir maymun yakalayıp öldürdü. Avın bir adı yok."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caught and killed an ape.  Prey doesn't have a name."
-msgstr "Bir maymun yakalayıp öldürdü. Avın bir adı yok."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed a delicious-looking innocent, %s, in cold blood."
-msgstr "Soğukkanlılıkla lezzetli görünen masum, %s'i öldürdü."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed a delicious-looking innocent, %s, in cold blood."
-msgstr "Soğukkanlılıkla lezzetli görünen masum, %s'i öldürdü."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed an innocent, %s, in cold blood.  They were weak."
-msgstr "Soğukkanlılıkla masum, %s'i öldürdü. Onlar zayıftı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed an innocent, %s, in cold blood.  They were weak."
-msgstr "Soğukkanlılıkla masum, %s'i öldürdü. Onlar zayıftı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed an innocent, %s."
-msgstr "Masum, %s'i öldürdü."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed an innocent, %s."
-msgstr "Masum, %s'i öldürdü."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid ""
-"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
-msgstr ""
-"Masum bir kişiyi, %s, soğukkanlılıkla öldürdü ve sonrasında kendini çok kötü"
-" hissetti."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid ""
-"Killed an innocent person, %s, in cold blood and felt terrible afterwards."
-msgstr ""
-"Masum bir kişiyi, %s, soğukkanlılıkla öldürdü ve sonrasında kendini çok kötü"
-" hissetti."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Killed a %s."
-msgstr "Bir %s öldürdü."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Killed a %s."
-msgstr "Bir %s öldürdü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on bubble wrap."
-msgstr "Balonlu naylonun üzerine bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on bubble wrap."
-msgstr "Balonlu naylonun üzerine bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on glass."
-msgstr "Camın üzerine bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on glass."
-msgstr "Camın üzerine bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Caught by a beartrap."
-msgstr "Ayı kapanına yakalandı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Caught by a beartrap."
-msgstr "Ayı kapanına yakalandı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a spiked board."
-msgstr "Çivili bir tahtaya bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a spiked board."
-msgstr "Çivili bir tahtaya bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a caltrop."
-msgstr "Kirpi tuzağına bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a caltrop."
-msgstr "Kirpi tuzağına bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a glass caltrop."
-msgstr "Cam kirpi tuzağına bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a glass caltrop."
-msgstr "Cam kirpi tuzağına bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Tripped on a tripwire."
-msgstr "Tuzak telinde tökezledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Tripped on a tripwire."
-msgstr "Tuzak telinde tökezledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a crossbow trap."
-msgstr "Bir arbalet tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a crossbow trap."
-msgstr "Bir arbalet tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shotgun trap."
-msgstr "Bir av tüfeği tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shotgun trap."
-msgstr "Bir av tüfeği tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a blade trap."
-msgstr "Bir bıçak tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a blade trap."
-msgstr "Bir bıçak tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a light snare."
-msgstr "Hafif bir kapanı tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a light snare."
-msgstr "Hafif bir kapanı tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a heavy snare."
-msgstr "Ağır bir kapanı tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a heavy snare."
-msgstr "Ağır bir kapanı tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped on a land mine."
-msgstr "Bir mayına bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped on a land mine."
-msgstr "Bir mayına bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a booby trap."
-msgstr "Bir tuzağı tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a booby trap."
-msgstr "Bir tuzağı tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a teleport trap."
-msgstr "Bir teleport tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a teleport trap."
-msgstr "Bir teleport tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into thick goo."
-msgstr "Kalın bir yapışkana bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into thick goo."
-msgstr "Kalın bir yapışkana bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into a dissector."
-msgstr "Bir dissektöre bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into a dissector."
-msgstr "Bir dissektöre bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell in a pit."
-msgstr "Bir çukura düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell in a pit."
-msgstr "Bir çukura düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell into a spiked pit."
-msgstr "Dikenli bir çukura düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell into a spiked pit."
-msgstr "Dikenli bir çukura düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell into a pit filled with glass shards."
-msgstr "Cam kırıklarıyla dolu bir çukura düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell into a pit filled with glass shards."
-msgstr "Cam kırıklarıyla dolu bir çukura düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into lava."
-msgstr "Lavların içine bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into lava."
-msgstr "Lavların içine bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Stepped into a sinkhole."
-msgstr "Bir obruğa bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Stepped into a sinkhole."
-msgstr "Bir obruğa bastı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Fell down a ledge."
-msgstr "Bir çıkıntıdan aşağı düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Fell down a ledge."
-msgstr "Bir çıkıntıdan aşağı düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a flood trap."
-msgstr "Bir su baskını tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a flood trap."
-msgstr "Bir su baskını tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shadow trap."
-msgstr "Bir gölge tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shadow trap."
-msgstr "Bir gölge tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a life-draining trap."
-msgstr "Bir yaşam emici tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a life-draining trap."
-msgstr "Bir yaşam emici tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Triggered a shadow snake trap."
-msgstr "Bir gölge yılanı tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Triggered a shadow snake trap."
-msgstr "Bir gölge yılanı tuzağını tetikledi."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Consumed a %s."
-msgstr "Bir %s tüketti."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Consumed a %s."
-msgstr "Bir %s tüketti."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened the Marloss Gateway."
-msgstr "Marloss Geçidi'ni açtı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened the Marloss Gateway."
-msgstr "Marloss Geçidi'ni açtı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Became one with the Mycus."
-msgstr "Mycus ile bir oldu."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Became one with the Mycus."
-msgstr "Mycus ile bir oldu."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Dermatik eggs hatched."
-msgstr "Dermatik yumurtaları çatladı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Dermatik eggs hatched."
-msgstr "Dermatik yumurtaları çatladı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Injected with dermatik eggs."
-msgstr "Dermatik yumurtaları enjekte edildi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Injected with dermatik eggs."
-msgstr "Dermatik yumurtaları enjekte edildi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Destroyed a triffid grove."
-msgstr "Bir triffid korusunu yok etti."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Destroyed a triffid grove."
-msgstr "Bir triffid korusunu yok etti."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to an asthma attack."
-msgstr "Astım krizi sonucu hayatını kaybetti."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to an asthma attack."
-msgstr "Astım krizi sonucu hayatını kaybetti."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of datura overdose."
-msgstr "Datura aşırı dozundan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of datura overdose."
-msgstr "Datura aşırı dozundan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of a healing stimulant overdose."
-msgstr "İyileştirici bir uyarıcı aşırı dozundan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of a healing stimulant overdose."
-msgstr "İyileştirici bir uyarıcı aşırı dozundan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of an alcohol overdose."
-msgstr "Alkol aşırı dozundan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of an alcohol overdose."
-msgstr "Alkol aşırı dozundan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of a drug overdose."
-msgstr "Uyuşturucu aşırı dozundan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of a drug overdose."
-msgstr "Uyuşturucu aşırı dozundan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to the infection."
-msgstr "Enfeksiyona yenik düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to the infection."
-msgstr "Enfeksiyona yenik düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of starvation."
-msgstr "Açlıktan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of starvation."
-msgstr "Açlıktan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Died of thirst."
-msgstr "Susuzluktan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Died of thirst."
-msgstr "Susuzluktan öldü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Dug a shaft into lava."
-msgstr "Lava bir kuyu kazdı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Dug a shaft into lava."
-msgstr "Lava bir kuyu kazdı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Disarmed a nuclear missile."
-msgstr "Nükleer füzeyi etkisiz hale getirdi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Disarmed a nuclear missile."
-msgstr "Nükleer füzeyi etkisiz hale getirdi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Ate a sewage sample."
-msgstr "Kanalizasyon örneği yedi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Ate a sewage sample."
-msgstr "Kanalizasyon örneği yedi."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "'%s' mutation turned into '%s'"
-msgstr "'%s' mutasyonu '%s' olarak değişti."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "'%s' mutation turned into '%s'"
-msgstr "'%s' mutasyonu '%s' olarak değişti."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Exhumed a grave."
-msgstr "Bir mezar açtı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Exhumed a grave."
-msgstr "Bir mezar açtı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Failed install of bionic: %s."
-msgstr "Biyonik kurulumunda başarısız oldu: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Failed install of bionic: %s."
-msgstr "Biyonik kurulumunda başarısız oldu: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Failed to remove bionic: %s."
-msgstr "Biyonik kaldırmada başarısız oldu: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Failed to remove bionic: %s."
-msgstr "Biyonik kaldırmada başarısız oldu: %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Succumbed to lack of sleep."
-msgstr "Uykusuzluğa yenik düştü."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Succumbed to lack of sleep."
-msgstr "Uykusuzluğa yenik düştü."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "The fuel tank of the %s exploded!"
-msgstr "%s'in yakıt tankı patladı!"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "The fuel tank of the %s exploded!"
-msgstr "%s'in yakıt tankı patladı!"
-
-#. ~ %s is addiction name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Became addicted to %s."
-msgstr "%s bağımlısı oldu."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Became addicted to %s."
-msgstr "%s bağımlısı oldu."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Gained the mutation '%s'."
-msgstr "'%s' mutasyonunu kazandı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Gained the mutation '%s'."
-msgstr "'%s' mutasyonunu kazandı."
-
-#. ~ %d is skill level %s is skill name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Reached skill level %1$d in %2$s."
-msgstr "%2$s becerisinde %1$d seviyesine ulaştı."
-
-#. ~ %d is skill level %s is skill name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Reached skill level %1$d in %2$s."
-msgstr "%2$s becerisinde %1$d seviyesine ulaştı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s committed suicide."
-msgstr "%s intihar etti."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s committed suicide."
-msgstr "%s intihar etti."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s was killed."
-msgstr "%s öldürüldü."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s was killed."
-msgstr "%s öldürüldü."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Last words: %s"
-msgstr "Son sözler: %s"
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Last words: %s"
-msgstr "Son sözler: %s"
-
-#. ~ %s is player name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s began their journey into the Cataclysm."
-msgstr "%s, Felaket'e yolculuğuna başladı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s began their journey into the Cataclysm."
-msgstr "%s, Felaket'e yolculuğuna başladı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Installed bionic: %s."
-msgstr "Kurulan biyonik: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Installed bionic: %s."
-msgstr "Kurulan biyonik: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Installed bad bionic: %s."
-msgstr "Kötü biyonik kuruldu: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Installed bad bionic: %s."
-msgstr "Kötü biyonik kuruldu: %s."
-
-#. ~ %s is martial art
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Learned %s."
-msgstr "%s öğrenildi."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Learned %s."
-msgstr "%s öğrenildi."
-
-#. ~ %s is addiction name
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Overcame addiction to %s."
-msgstr "%s bağımlılığı aşıldı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Overcame addiction to %s."
-msgstr "%s bağımlılığı aşıldı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "%s became hostile."
-msgstr "%s düşmanca hale geldi."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "%s became hostile."
-msgstr "%s düşmanca hale geldi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened a portal."
-msgstr "Bir portal açıldı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened a portal."
-msgstr "Bir portal açıldı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Opened a strange temple."
-msgstr "Garip bir tapınak açıldı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Opened a strange temple."
-msgstr "Garip bir tapınak açıldı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Gained a spell level on %s."
-msgstr "%s üzerinde bir büyü seviyesi kazandı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Gained a spell level on %s."
-msgstr "%s üzerinde bir büyü seviyesi kazandı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Released subspace specimens."
-msgstr "Alt uzay örnekleri serbest bırakıldı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Released subspace specimens."
-msgstr "Alt uzay örnekleri serbest bırakıldı."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Removed bionic: %s."
-msgstr "Biyonik çıkarıldı: %s."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Removed bionic: %s."
-msgstr "Biyonik çıkarıldı: %s."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Sealed a Hazardous Material Sarcophagus."
-msgstr "Tehlikeli Malzeme Lahdi mühürlendi."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Sealed a Hazardous Material Sarcophagus."
-msgstr "Tehlikeli Malzeme Lahdi mühürlendi."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Telefragged a %s."
-msgstr "Bir %s telefrag etti."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Telefragged a %s."
-msgstr "Bir %s telefrag etti."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Spontaneous teleport."
-msgstr "Kendiliğinden teleport."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Spontaneous teleport."
-msgstr "Kendiliğinden teleport."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_male"
-msgid "Teleported into a %s."
-msgstr "Bir %s içine teleport oldu."
-
-#: src/memorial_logger.cpp
-#, c-format
-msgctxt "memorial_female"
-msgid "Teleported into a %s."
-msgstr "Bir %s içine teleport oldu."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Terminated subspace specimens."
-msgstr "Alt uzay örneklerini sonlandırdı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Terminated subspace specimens."
-msgstr "Alt uzay örneklerini sonlandırdı."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Threw up."
-msgstr "Kustu."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Threw up."
-msgstr "Kustu."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_male"
-msgid "Set off an alarm."
-msgstr "Bir alarmı çalıştır."
-
-#: src/memorial_logger.cpp
-msgctxt "memorial_female"
-msgid "Set off an alarm."
-msgstr "Bir alarmı çalıştır."
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "good"
-msgstr "iyi"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "bad"
-msgstr "kötü"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "mixed"
-msgstr "karışık"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "warning"
-msgstr "uyarı"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "info"
-msgstr "bilgi"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "neutral"
-msgstr "tarafsız"
-
-#: src/message_types.cpp
-msgctxt "message type"
-msgid "debug"
-msgstr "hata ayıklama"
-
 #. ~ Message %s on the message log was repeated %d times, e.g. "You hear a
 #. whack! x 12"
 #: src/messages.cpp
@@ -356082,98 +356183,6 @@ msgstr "varsayılan modlar listesi"
 #: src/mod_manager.cpp
 msgid "list of mods"
 msgstr "modlar listesi"
-
-#: src/mod_manager_ui.cpp
-msgid "This mod is marked as obsolete and may contain severe errors."
-msgstr "Bu mod eski olarak işaretlenmiştir ve ciddi hatalar içerebilir."
-
-#: src/mod_manager_ui.cpp
-msgid "License"
-msgstr "Lisans"
-
-#: src/mod_manager_ui.cpp
-msgid "Author"
-msgid_plural "Authors"
-msgstr[0] "Yazar"
-msgstr[1] "Yazarlar"
-
-#: src/mod_manager_ui.cpp
-msgid "Maintainer"
-msgid_plural "Maintainers"
-msgstr[0] "Sorumlu"
-msgstr[1] "Sorumlular"
-
-#: src/mod_manager_ui.cpp
-msgid "Dependency"
-msgid_plural "Dependencies"
-msgstr[0] "Bağımlılık"
-msgstr[1] "Bağımlılıklar"
-
-#. ~ Followed by list of mods the current mod conflicts with
-#: src/mod_manager_ui.cpp
-msgid "Conflict"
-msgid_plural "Conflicts"
-msgstr[0] "Çatışma"
-msgstr[1] "Çatışmalar"
-
-#: src/mod_manager_ui.cpp
-msgid "Mod version"
-msgstr "Mod sürümü"
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid "%s: API version %s\n"
-msgstr "%s: API sürümü %s\n"
-
-#: src/mod_manager_ui.cpp
-msgid "Needs Lua"
-msgstr "Lua gerekiyor"
-
-#: src/mod_manager_ui.cpp
-msgid "Mod info path"
-msgstr "Mod bilgi yolu"
-
-#. ~ Single entry in the list of which mods conflict with which mods.
-#. ~ Please be mindful of spaces.
-#. ~ "%s [%s]" parts are mod names with internal ids.
-#. ~ The final result reads as "Mod X [id_x] with Mod Y [id_y]"
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"  %s [%s]\n"
-"    with %s [%s]\n"
-msgstr ""
-"  %s [%s]\n"
-"    beraber %s [%s]\n"
-
-#: src/mod_manager_ui.cpp
-msgid "The mod is already on the list."
-msgstr "Mod zaten listede."
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid "Unable to find mod with id \"%s\"."
-msgstr "Kimliği \"%s\" olan mod bulunamadı."
-
-#: src/mod_manager_ui.cpp
-msgid "Failed to build dependency tree for the mod."
-msgstr "Mod için bağımlılık ağacı oluşturulamadı."
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"The mod has dependency problem(s):\n"
-"\n"
-"%s"
-msgstr "Modun bağımlılık sorunu var:"
-
-#: src/mod_manager_ui.cpp
-#, c-format
-msgid ""
-"The mod or some of its dependencies has conflict(s) with active mods:\n"
-"\n"
-"%s"
-msgstr "Mod veya bazı bağımlılıkları aktif modlarla çakışıyor:"
 
 #: src/monattack.cpp
 #, c-format
@@ -359773,22 +359782,6 @@ msgstr "Oh, evet! İşte bu!"
 msgid "First temperature modifier can't be higher than the second"
 msgstr "İlk sıcaklık değiştiricisi ikinci olandan yüksek olamaz"
 
-#: src/mutation_type.cpp
-msgid "skin color"
-msgstr ""
-
-#: src/mutation_type.cpp
-msgid "eye color"
-msgstr ""
-
-#: src/mutation_type.cpp
-msgid "hair style"
-msgstr ""
-
-#: src/mutation_type.cpp
-msgid "hair color"
-msgstr ""
-
 #: src/mutation_ui.cpp
 msgid "Reassigning."
 msgstr "Yeniden atama yapılıyor."
@@ -362566,11 +362559,11 @@ msgstr "Hız birimleri"
 msgid "Switch between km/h, mph and tiles/turn."
 msgstr "km/h, mph ve tiles/turn arasında geçiş yapın."
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "km/h"
 msgstr "km/h"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "mph"
 msgstr "mph"
 
@@ -362586,11 +362579,11 @@ msgstr "Kütle birimleri"
 msgid "Switch between kg and lbs."
 msgstr "kg ve lbs arasında geçiş yapın."
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "kg"
 msgstr "kg"
 
-#: src/options.cpp src/units_utility.cpp
+#: src/options.cpp src/units/units_utility.cpp
 msgid "lbs"
 msgstr "lbs"
 
@@ -366860,10 +366853,6 @@ msgstr "son dünya"
 msgid "safe mode"
 msgstr "güvenli mod"
 
-#: src/perk.cpp
-msgid "Effects:"
-msgstr ""
-
 #: src/perk_menu.cpp
 msgid "Scroll Description Up"
 msgstr ""
@@ -370064,40 +370053,57 @@ msgid "Go to last entry"
 msgstr "Son girdiye git"
 
 #. ~ vehicle speed tiles per turn
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "t/t"
 msgstr "t/t"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "m/s"
 msgstr "m/s"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "c"
 msgstr "bardak"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "L"
 msgstr "L"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgctxt "Volume unit"
 msgid "qt"
 msgstr "qt"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "cup"
 msgstr "bardak"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "liter"
 msgstr "litre"
 
-#: src/units_utility.cpp
+#: src/units/units_utility.cpp
 msgid "quart"
 msgstr "kırt"
+
+#: src/utils/dependency_tree.cpp
+msgid "Missing Dependency(ies): "
+msgstr "Eksik Bağımlılık(lar):"
+
+#: src/utils/dependency_tree.cpp
+msgid "Has conflicting dependencies: "
+msgstr "Çelişen bağımlılıkları var:"
+
+#: src/utils/dependency_tree.cpp
+msgid "Has dependency cycle(s): "
+msgstr "Bağımlılık döngüsü(leri) var:"
+
+#: src/utils/dependency_tree.cpp
+#, c-format
+msgid "[%1$s] with [%2$s]"
+msgstr "[%1$s] ile [%2$s]"
 
 #: src/vehicle/turret.cpp
 msgid "None of the turrets are ready to fire."
