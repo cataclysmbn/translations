@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-13 23:59+0000\n"
+"POT-Creation-Date: 2026-11-14 20:48+0000\n"
 "Last-Translator: Coolthulhu <Coolthulhu@gmail.com>, 2026\n"
 "Language-Team: Dutch (https://app.transifex.com/bn-team/teams/113585/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -13987,7 +13987,6 @@ msgstr ""
 #. ~ Use action menu_text for {'str': 'control laptop'}.
 #. ~ Use action menu_text for {'str': 'wrist computer'}.
 #. ~ Use action menu_text for {'str': 'wrist control computer'}.
-#. ~ Use action menu_text for {'str': 'e-ink tablet PC'}.
 #. ~ Use action menu_text for laptop computer.
 #. ~ Use action menu_text for {'str': 'mp3 player (off)', 'str_pl': 'mp3
 #. players (off)'}.
@@ -13995,7 +13994,7 @@ msgstr ""
 #. ~ Use action menu_text for {'str': 'atomic smartphone'}.
 #. ~ Use action menu_text for {'str': "Wraitheon executive's smartphone"}.
 #: data/json/item_actions.json data/json/items/tool/electronics.json
-#: data/mods/Aftershock/items/tools.json data/mods/ebook_lua/items/tools.json
+#: data/mods/Aftershock/items/tools.json
 msgid "Listen to music"
 msgstr ""
 
@@ -30274,7 +30273,7 @@ msgid ""
 msgstr ""
 
 #: data/json/skills.json data/mods/rpg_system/main.lua
-#: data/mods/skills_through_kills/main.lua src/monster.cpp
+#: data/mods/skills_through_kills/main.lua
 msgid "Survival"
 msgstr ""
 
@@ -56006,6 +56005,7 @@ msgid ""
 msgstr ""
 
 #: data/json/items/digital_media.json data/mods/DinoMod/items/items.json
+#: src/iuse.cpp
 msgid "genome sample"
 msgid_plural "genome samples"
 msgstr[0] ""
@@ -122978,7 +122978,6 @@ msgstr ""
 #. ~ Use action msg for {'str': 'control laptop'}.
 #. ~ Use action msg for {'str': 'wrist computer'}.
 #. ~ Use action msg for {'str': 'wrist control computer'}.
-#. ~ Use action msg for {'str': 'e-ink tablet PC'}.
 #. ~ Use action msg for laptop computer.
 #. ~ Use action msg for {'str': 'mp3 player (off)', 'str_pl': 'mp3 players
 #. (off)'}.
@@ -122986,7 +122985,6 @@ msgstr ""
 #. ~ Use action msg for {'str': 'atomic smartphone'}.
 #. ~ Use action msg for {'str': "Wraitheon executive's smartphone"}.
 #: data/json/items/tool/electronics.json data/mods/Aftershock/items/tools.json
-#: data/mods/ebook_lua/items/tools.json
 msgid "You put in the earbuds and start listening to music."
 msgstr ""
 
@@ -123166,37 +123164,18 @@ msgid ""
 "However, since the only police likely to respond are undead, you may have a long wait ahead, unless you get creative…"
 msgstr ""
 
-#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
-msgid "e-ink tablet PC"
-msgid_plural "e-ink tablet PCs"
+#: data/json/items/tool/electronics.json
+msgid "e-ink tablet"
+msgid_plural "e-ink tablets"
 msgstr[0] ""
 msgstr[1] ""
 
-#. ~ Use action need_charges_msg for {'str': 'e-ink tablet PC'}.
-#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
-msgid "The e-ink tablet PC's batteries need more charge."
-msgstr ""
-
-#. ~ Description for {'str': 'e-ink tablet PC'}
+#. ~ Description for {'str': 'e-ink tablet'}
 #: data/json/items/tool/electronics.json
 msgid ""
 "A tablet PC using an efficient color e-ink display, with a recharging "
 "battery that can be switched to draw from a UPS.  Before the Cataclysm, "
 "these were nifty gadgets; now, it's an almost priceless resource."
-msgstr ""
-
-#: data/json/items/tool/electronics.json
-msgid "e-ink tablet PC - music"
-msgid_plural "e-ink tablet PCs - music"
-msgstr[0] ""
-msgstr[1] ""
-
-#. ~ Description for {'str': 'e-ink tablet PC - music', 'str_pl': 'e-ink
-#. tablet PCs - music'}
-#: data/json/items/tool/electronics.json
-msgid ""
-"This e-ink tablet PC is playing music, steadily raising your morale.  You "
-"can't hear anything else while you're listening."
 msgstr ""
 
 #: data/json/items/tool/electronics.json
@@ -182444,6 +182423,19 @@ msgid ""
 "in the wild, update your mods."
 msgstr ""
 
+#: data/json/obsoletion/items.json
+msgid "e-ink tablet PC"
+msgid_plural "e-ink tablet PCs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description for {'str': 'e-ink tablet PC'}
+#: data/json/obsoletion/items.json
+msgid ""
+"A tablet PC using an efficient color e-ink display.  It stores books and "
+"saved text for reading."
+msgstr ""
+
 #: data/json/obsoletion/lab_central_old.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "central lab"
@@ -185905,6 +185897,10 @@ msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "natural spring"
+msgstr ""
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "survivor forest camp"
 msgstr ""
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
@@ -311217,6 +311213,11 @@ msgid "The %s does not trust your kind."
 msgstr ""
 
 #: src/iuse.cpp
+#, c-format
+msgid "You are not skilled enough to tame the %s (requires %s %d)."
+msgstr ""
+
+#: src/iuse.cpp
 msgid "You want to feed it the pet food, but it bites your fingers!"
 msgstr ""
 
@@ -312608,6 +312609,25 @@ msgid "You delete %s from the storage device."
 msgstr ""
 
 #: src/iuse.cpp
+msgid "Select storage media to wipe"
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "Wipe %s?  All files and encrypted data on it will be deleted."
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "You wipe the %s."
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "Wipe %s?  All files and saved data on it will be deleted."
+msgstr ""
+
+#: src/iuse.cpp
 msgid "Files on device:"
 msgstr ""
 
@@ -312667,6 +312687,47 @@ msgid "Recipes in file:"
 msgstr ""
 
 #: src/iuse.cpp
+msgid "Books and saved text on the tablet:"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "Load books and saved text from SD card"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "The tablet has no books or saved text."
+msgstr ""
+
+#: src/iuse.cpp
+msgid "Select SD card"
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "You load %d book or saved text file onto the tablet."
+msgid_plural "You load %d books or saved text files onto the tablet."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/iuse.cpp
+msgid "That SD card has no new books or saved text."
+msgstr ""
+
+#: src/iuse.cpp
+msgid "Read book"
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "Delete %s from the tablet?"
+msgstr ""
+
+#: src/iuse.cpp
+#, c-format
+msgid "You delete %s from the tablet."
+msgstr ""
+
+#: src/iuse.cpp
 msgid "Tablet's batteries are dead."
 msgstr ""
 
@@ -312708,6 +312769,14 @@ msgstr ""
 
 #: src/iuse.cpp
 msgid "Delete files from storage media"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "Wipe storage media"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "Wipe this device's storage"
 msgstr ""
 
 #: src/iuse.cpp
@@ -313146,6 +313215,10 @@ msgstr ""
 
 #: src/iuse.cpp
 msgid "Upload photos to memory card"
+msgstr ""
+
+#: src/iuse.cpp
+msgid "Wipe this camera's storage"
 msgstr ""
 
 #: src/iuse.cpp
@@ -321684,7 +321757,7 @@ msgstr ""
 
 #: src/monexamine.cpp
 #, c-format
-msgid "Train %s (requires survival %d)"
+msgid "Train %s (requires %s %d)"
 msgstr ""
 
 #: src/monexamine.cpp
@@ -322409,7 +322482,11 @@ msgid "It cannot be tamed."
 msgstr ""
 
 #: src/monster.cpp
-msgid "Taming it requires:"
+msgid "<color_yellow>Taming</color> it requires:"
+msgstr ""
+
+#: src/monster.cpp
+msgid "<color_yellow>Training</color> it requires:"
 msgstr ""
 
 #: src/monster.cpp

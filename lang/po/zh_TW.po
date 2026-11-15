@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-13 23:59+0000\n"
+"POT-Creation-Date: 2026-11-14 20:48+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -14272,7 +14272,6 @@ msgstr "训练技能"
 #. ~ Use action menu_text for {'str': 'control laptop'}.
 #. ~ Use action menu_text for {'str': 'wrist computer'}.
 #. ~ Use action menu_text for {'str': 'wrist control computer'}.
-#. ~ Use action menu_text for {'str': 'e-ink tablet PC'}.
 #. ~ Use action menu_text for laptop computer.
 #. ~ Use action menu_text for {'str': 'mp3 player (off)', 'str_pl': 'mp3
 #. players (off)'}.
@@ -14280,7 +14279,7 @@ msgstr "训练技能"
 #. ~ Use action menu_text for {'str': 'atomic smartphone'}.
 #. ~ Use action menu_text for {'str': "Wraitheon executive's smartphone"}.
 #: data/json/item_actions.json data/json/items/tool/electronics.json
-#: data/mods/Aftershock/items/tools.json data/mods/ebook_lua/items/tools.json
+#: data/mods/Aftershock/items/tools.json
 msgid "Listen to music"
 msgstr "听音乐"
 
@@ -31164,7 +31163,7 @@ msgid ""
 msgstr "你製作及修理衣物、包包、毯子以及其他編織物的能力。影響了編織, 縫紉、和涉及針和線的任何工作。"
 
 #: data/json/skills.json data/mods/rpg_system/main.lua
-#: data/mods/skills_through_kills/main.lua src/monster.cpp
+#: data/mods/skills_through_kills/main.lua
 msgid "Survival"
 msgstr "生存"
 
@@ -56454,6 +56453,7 @@ msgid ""
 msgstr "一名跆拳道教练带领练习架势、腿法和步法。慢速示范与反复操练着重强调了身体的平衡与控制。"
 
 #: data/json/items/digital_media.json data/mods/DinoMod/items/items.json
+#: src/iuse.cpp
 msgid "genome sample"
 msgid_plural "genome samples"
 msgstr[0] "基因组样本"
@@ -119419,7 +119419,6 @@ msgstr "遥控用笔记本电脑电量不足。"
 #. ~ Use action msg for {'str': 'control laptop'}.
 #. ~ Use action msg for {'str': 'wrist computer'}.
 #. ~ Use action msg for {'str': 'wrist control computer'}.
-#. ~ Use action msg for {'str': 'e-ink tablet PC'}.
 #. ~ Use action msg for laptop computer.
 #. ~ Use action msg for {'str': 'mp3 player (off)', 'str_pl': 'mp3 players
 #. (off)'}.
@@ -119427,7 +119426,6 @@ msgstr "遥控用笔记本电脑电量不足。"
 #. ~ Use action msg for {'str': 'atomic smartphone'}.
 #. ~ Use action msg for {'str': "Wraitheon executive's smartphone"}.
 #: data/json/items/tool/electronics.json data/mods/Aftershock/items/tools.json
-#: data/mods/ebook_lua/items/tools.json
 msgid "You put in the earbuds and start listening to music."
 msgstr "你戴上了耳機並且開始聽音樂。"
 
@@ -119602,36 +119600,18 @@ msgstr ""
 "一副电子手铐，警察和机器人用来限制嫌疑人行动的常用工具。它会持续的发出警报并且不停的呼叫警官过来将犯人带回警局关押。如果试图挣脱或者逃跑，手铐将主动电击疑犯。\n"
 "\"鉴于目前的治安情况，请在被电击和被吃掉脑子之间选择一个吧，亲。\""
 
-#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
-msgid "e-ink tablet PC"
-msgid_plural "e-ink tablet PCs"
-msgstr[0] "平板電腦"
+#: data/json/items/tool/electronics.json
+msgid "e-ink tablet"
+msgid_plural "e-ink tablets"
+msgstr[0] "平板电脑"
 
-#. ~ Use action need_charges_msg for {'str': 'e-ink tablet PC'}.
-#: data/json/items/tool/electronics.json data/mods/ebook_lua/items/tools.json
-msgid "The e-ink tablet PC's batteries need more charge."
-msgstr "平板电脑的电池需要充电。"
-
-#. ~ Description for {'str': 'e-ink tablet PC'}
+#. ~ Description for {'str': 'e-ink tablet'}
 #: data/json/items/tool/electronics.json
 msgid ""
 "A tablet PC using an efficient color e-ink display, with a recharging "
 "battery that can be switched to draw from a UPS.  Before the Cataclysm, "
 "these were nifty gadgets; now, it's an almost priceless resource."
 msgstr "一台拥有高清彩色电子墨水屏的平板电脑，带有可充电电池，可以切换为从UPS供电。大灾变前的俏玩意，现如今的无价宝。"
-
-#: data/json/items/tool/electronics.json
-msgid "e-ink tablet PC - music"
-msgid_plural "e-ink tablet PCs - music"
-msgstr[0] "平板电脑（音乐）"
-
-#. ~ Description for {'str': 'e-ink tablet PC - music', 'str_pl': 'e-ink
-#. tablet PCs - music'}
-#: data/json/items/tool/electronics.json
-msgid ""
-"This e-ink tablet PC is playing music, steadily raising your morale.  You "
-"can't hear anything else while you're listening."
-msgstr "这台平板电脑正在播放音乐，能稳定地提升你的士气。收听时你将听不见任何其他声音。"
 
 #: data/json/items/tool/electronics.json
 msgid "electrohack"
@@ -178605,6 +178585,18 @@ msgid ""
 "in the wild, update your mods."
 msgstr "该生化插件在代码中的效果已被替换为\"记忆协处理器\"，因此不再会自然刷新。如果你仍能在野外搜刮到它，请更新你的MOD。"
 
+#: data/json/obsoletion/items.json
+msgid "e-ink tablet PC"
+msgid_plural "e-ink tablet PCs"
+msgstr[0] "平板電腦"
+
+#. ~ Description for {'str': 'e-ink tablet PC'}
+#: data/json/obsoletion/items.json
+msgid ""
+"A tablet PC using an efficient color e-ink display.  It stores books and "
+"saved text for reading."
+msgstr "一台拥有高效彩色电子墨水屏的平板电脑。它可存储书籍和已保存的文本以供阅读。"
+
 #: data/json/obsoletion/lab_central_old.json
 #: data/json/overmap/overmap_terrain/overmap_terrain_lab.json
 msgid "central lab"
@@ -182089,6 +182081,10 @@ msgstr "沼澤"
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 msgid "natural spring"
 msgstr "天然泉水"
+
+#: data/json/overmap/overmap_terrain/overmap_terrain.json
+msgid "survivor forest camp"
+msgstr "森林幸存者营地"
 
 #: data/json/overmap/overmap_terrain/overmap_terrain.json
 #: data/mods/alt_map_key/overmap_terrain.json
@@ -307950,6 +307946,11 @@ msgid "The %s does not trust your kind."
 msgstr "%s不信任你这样的人。"
 
 #: src/iuse.cpp
+#, c-format
+msgid "You are not skilled enough to tame the %s (requires %s %d)."
+msgstr ""
+
+#: src/iuse.cpp
 msgid "You want to feed it the pet food, but it bites your fingers!"
 msgstr "你想用宠物食品喂它，但它咬了你的手指头！"
 
@@ -309339,6 +309340,25 @@ msgid "You delete %s from the storage device."
 msgstr "你从存储设备中删除了 %s。"
 
 #: src/iuse.cpp
+msgid "Select storage media to wipe"
+msgstr "选择要擦除的存储介质"
+
+#: src/iuse.cpp
+#, c-format
+msgid "Wipe %s?  All files and encrypted data on it will be deleted."
+msgstr "要擦除%s吗？上面的所有文件和加密数据都将被删除。"
+
+#: src/iuse.cpp
+#, c-format
+msgid "You wipe the %s."
+msgstr "你擦除了%s。"
+
+#: src/iuse.cpp
+#, c-format
+msgid "Wipe %s?  All files and saved data on it will be deleted."
+msgstr "要擦除%s吗？上面的所有文件和已保存数据都将被删除。"
+
+#: src/iuse.cpp
 msgid "Files on device:"
 msgstr "设备中的文件："
 
@@ -309398,6 +309418,46 @@ msgid "Recipes in file:"
 msgstr "文件中的配方："
 
 #: src/iuse.cpp
+msgid "Books and saved text on the tablet:"
+msgstr "平板电脑上的书籍和已保存文本："
+
+#: src/iuse.cpp
+msgid "Load books and saved text from SD card"
+msgstr "从 SD 卡加载书籍和已保存文本"
+
+#: src/iuse.cpp
+msgid "The tablet has no books or saved text."
+msgstr "该平板电脑上没有书籍或已保存文本。"
+
+#: src/iuse.cpp
+msgid "Select SD card"
+msgstr "选择 SD 卡"
+
+#: src/iuse.cpp
+#, c-format
+msgid "You load %d book or saved text file onto the tablet."
+msgid_plural "You load %d books or saved text files onto the tablet."
+msgstr[0] "你将 %d 份书籍或已保存的文本文件加载到了平板电脑上。"
+
+#: src/iuse.cpp
+msgid "That SD card has no new books or saved text."
+msgstr "该 SD 卡上没有新的书籍或已保存文本。"
+
+#: src/iuse.cpp
+msgid "Read book"
+msgstr "阅读书籍"
+
+#: src/iuse.cpp
+#, c-format
+msgid "Delete %s from the tablet?"
+msgstr "要从平板电脑中删除%s吗？"
+
+#: src/iuse.cpp
+#, c-format
+msgid "You delete %s from the tablet."
+msgstr "你从平板电脑中删除了%s。"
+
+#: src/iuse.cpp
 msgid "Tablet's batteries are dead."
 msgstr "平板電腦沒電了。"
 
@@ -309440,6 +309500,14 @@ msgstr "复制文件到存储介质"
 #: src/iuse.cpp
 msgid "Delete files from storage media"
 msgstr "从存储介质中删除文件"
+
+#: src/iuse.cpp
+msgid "Wipe storage media"
+msgstr "擦除存储介质"
+
+#: src/iuse.cpp
+msgid "Wipe this device's storage"
+msgstr "擦除此设备的存储"
 
 #: src/iuse.cpp
 msgid "Encrypt storage media"
@@ -309885,6 +309953,10 @@ msgstr "照片列表"
 #: src/iuse.cpp
 msgid "Upload photos to memory card"
 msgstr "上傳照片到記憶卡"
+
+#: src/iuse.cpp
+msgid "Wipe this camera's storage"
+msgstr "擦除此相机的存储"
 
 #: src/iuse.cpp
 msgid "You have the wrong camera focus."
@@ -318460,8 +318532,8 @@ msgstr "训练 %s（等级 %d/%d - 训练已满）"
 
 #: src/monexamine.cpp
 #, c-format
-msgid "Train %s (requires survival %d)"
-msgstr "训练 %s（需要生存 %d）"
+msgid "Train %s (requires %s %d)"
+msgstr ""
 
 #: src/monexamine.cpp
 #, c-format
@@ -319188,8 +319260,12 @@ msgid "It cannot be tamed."
 msgstr "它无法被驯服。"
 
 #: src/monster.cpp
-msgid "Taming it requires:"
-msgstr "驯服它需要："
+msgid "<color_yellow>Taming</color> it requires:"
+msgstr ""
+
+#: src/monster.cpp
+msgid "<color_yellow>Training</color> it requires:"
+msgstr ""
 
 #: src/monster.cpp
 #, c-format
