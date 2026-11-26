@@ -33,7 +33,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-24 19:38+0000\n"
+"POT-Creation-Date: 2026-11-26 01:46+0000\n"
 "Last-Translator: midgardormr <donjonn@yandex.ru>, 2026\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/bn-team/teams/113585/ru_RU/)\n"
 "MIME-Version: 1.0\n"
@@ -197834,11 +197834,11 @@ msgstr "Похоже, там начинается какая-то жесть."
 
 #: data/json/npcs/talk_tags.json
 msgid "I hear something moving - sounded like"
-msgstr "Там что-то движется. Слышно:"
+msgstr "Там что-то движется. Слышно"
 
 #: data/json/npcs/talk_tags.json
 msgid "What's that sound?  I heard"
-msgstr "Что за звук? Слышно:"
+msgstr "Что за звук? Мне послышалось"
 
 #: data/json/npcs/talk_tags.json
 msgid "What's there?  I heard"
@@ -197846,11 +197846,11 @@ msgstr "Что там такое? Оттуда доносится:"
 
 #: data/json/npcs/talk_tags.json
 msgid "Did you hear that?  Sounded like"
-msgstr "Слышишь? Похоже, это:"
+msgstr "Слышишь? Похоже, это"
 
 #: data/json/npcs/talk_tags.json
 msgid "What is making that sound?  I can hear the"
-msgstr "Что там шумит? Слышно:"
+msgstr "Что там шумит? Слышно"
 
 #: data/json/npcs/talk_tags.json
 msgid "I could swear I heard"
@@ -197858,11 +197858,11 @@ msgstr "Оттуда точно доносится:"
 
 #: data/json/npcs/talk_tags.json
 msgid "I could have sworn I just heard"
-msgstr "Только что оттуда донеслось:"
+msgstr "Могу поклясться, это"
 
 #: data/json/npcs/talk_tags.json
 msgid "I got movement, sounds like"
-msgstr "Там кто-то движется! Судя по звуку, это:"
+msgstr "У меня тут движение, звучит как"
 
 #: data/json/npcs/talk_tags.json
 msgid "Check the area, I heard"
@@ -197870,7 +197870,7 @@ msgstr "Осмотрись. Оттуда доносится:"
 
 #: data/json/npcs/talk_tags.json
 msgid "I can hear"
-msgstr "Слышно:"
+msgstr "Я слышу"
 
 #: data/json/npcs/talk_tags.json
 msgid "Got it!"
@@ -226772,6 +226772,18 @@ msgstr ""
 "пропуске времени в ходе длительных действий. Увеличение значения значительно"
 " повышает производительность в местах с большим количеством НПС, но "
 "состояние обновляется реже. По умолчанию — 60 секунд (1 минута)"
+
+#. ~ Menu text of option 'ACTIVITY_REDRAW_INTERVAL_MS'
+#: data/json/options/performance.json
+msgid "Activity Redraw Interval"
+msgstr ""
+
+#. ~ Tooltip of option 'ACTIVITY_REDRAW_INTERVAL_MS'
+#: data/json/options/performance.json
+msgid ""
+"Minimum real time in milliseconds between the map redraws of a long wait or "
+"activity.  0 redraws every 5 game minutes."
+msgstr ""
 
 #. ~ Title of option group 'lod_monster'
 #: data/json/options/performance.json
@@ -390851,20 +390863,6 @@ msgid "You already picked a conflicting trait!"
 msgstr "Вы уже выбрали противоположную черту!"
 
 #: src/newcharacter.cpp
-msgid "The scenario you picked prevents you from taking this trait!"
-msgstr "Выбранный вами сценарий не позволяет взять эту черту!"
-
-#: src/newcharacter.cpp
-#, c-format
-msgid "Your profession of %s prevents you from taking this trait."
-msgstr "Профессия «%s» не позволяет выбрать эту черту."
-
-#: src/newcharacter.cpp
-#, c-format
-msgid "The following bionics prevent you from taking this trait: %s."
-msgstr "Выбрать эту черту мешают КБМ: %s."
-
-#: src/newcharacter.cpp
 #, c-format
 msgid "Sorry, but you can only take %d point of advantages."
 msgid_plural "Sorry, but you can only take %d points of advantages."
@@ -390881,6 +390879,20 @@ msgstr[0] "Извините, недостатки можно набрать ма
 msgstr[1] "Извините, недостатки можно набрать максимум на %d очка."
 msgstr[2] "Извините, недостатки можно набрать максимум на %d очков."
 msgstr[3] "Извините, недостатки можно набрать максимум на %d очка."
+
+#: src/newcharacter.cpp
+msgid "The scenario you picked prevents you from taking this trait!"
+msgstr "Выбранный вами сценарий не позволяет взять эту черту!"
+
+#: src/newcharacter.cpp
+#, c-format
+msgid "Your profession of %s prevents you from taking this trait."
+msgstr "Профессия «%s» не позволяет выбрать эту черту."
+
+#: src/newcharacter.cpp
+#, c-format
+msgid "The following bionics prevent you from taking this trait: %s."
+msgstr "Выбрать эту черту мешают КБМ: %s."
 
 #: src/newcharacter.cpp
 #, c-format
@@ -395717,6 +395729,17 @@ msgstr ""
 "делает строительство мгновенным."
 
 #: src/options.cpp
+msgid "Vehicle work speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Sets the time of vehicle part installation, repair, and removal in percents."
+"  '50' is two times faster than default, '200' is two times longer.  '0' "
+"makes vehicle work instant."
+msgstr ""
+
+#: src/options.cpp
 msgid "Crafting speed percentage"
 msgstr "Скорость изготовления предметов в процентах"
 
@@ -399645,7 +399668,7 @@ msgstr "Что-то издаёт шум."
 #: src/sounds.cpp
 #, c-format
 msgid "Heard %s!"
-msgstr "Слышно: %s"
+msgstr "Слышно %s!"
 
 #: src/sounds.cpp
 #, c-format

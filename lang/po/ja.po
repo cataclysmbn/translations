@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-24 01:24+0000\n"
+"POT-Creation-Date: 2026-11-25 16:39+0000\n"
 "Last-Translator: 匿名小太郎, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/bn-team/teams/113585/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -182261,6 +182261,18 @@ msgid ""
 msgstr ""
 "活動スキップ中にステータスを再更新するまでの秒数。値を大きくすると、NPCが多い場所でのパフォーマンスが大きく向上する。ステータスの更新はわずかに遅くなる。初期値は60(1分)。"
 
+#. ~ Menu text of option 'ACTIVITY_REDRAW_INTERVAL_MS'
+#: data/json/options/performance.json
+msgid "Activity Redraw Interval"
+msgstr ""
+
+#. ~ Tooltip of option 'ACTIVITY_REDRAW_INTERVAL_MS'
+#: data/json/options/performance.json
+msgid ""
+"Minimum real time in milliseconds between the map redraws of a long wait or "
+"activity.  0 redraws every 5 game minutes."
+msgstr ""
+
 #. ~ Title of option group 'lod_monster'
 #: data/json/options/performance.json
 msgid "Monster LOD"
@@ -323484,6 +323496,18 @@ msgid "You already picked a conflicting trait!"
 msgstr "すでにその特性は選択済み！"
 
 #: src/newcharacter.cpp
+#, c-format
+msgid "Sorry, but you can only take %d point of advantages."
+msgid_plural "Sorry, but you can only take %d points of advantages."
+msgstr[0] "長所は最大 %d ポイントまで選択できない。"
+
+#: src/newcharacter.cpp
+#, c-format
+msgid "Sorry, but you can only take %d point of disadvantages."
+msgid_plural "Sorry, but you can only take %d points of disadvantages."
+msgstr[0] "短所は最大 %d ポイントまで選択できない。"
+
+#: src/newcharacter.cpp
 msgid "The scenario you picked prevents you from taking this trait!"
 msgstr "選択したシナリオのため、この特性を選択できない！"
 
@@ -323496,18 +323520,6 @@ msgstr "%s 職業のため、この特性を選択できない。"
 #, c-format
 msgid "The following bionics prevent you from taking this trait: %s."
 msgstr "%s 義体のため、この特性を選択できない。"
-
-#: src/newcharacter.cpp
-#, c-format
-msgid "Sorry, but you can only take %d point of advantages."
-msgid_plural "Sorry, but you can only take %d points of advantages."
-msgstr[0] "長所は最大 %d ポイントまで選択できない。"
-
-#: src/newcharacter.cpp
-#, c-format
-msgid "Sorry, but you can only take %d point of disadvantages."
-msgid_plural "Sorry, but you can only take %d points of disadvantages."
-msgstr[0] "短所は最大 %d ポイントまで選択できない。"
 
 #: src/newcharacter.cpp
 #, c-format
@@ -328032,6 +328044,17 @@ msgid ""
 "Sets the time of construction in percents.  '50' is two times faster than "
 "default, '200' is two times longer.  '0' makes construction instant."
 msgstr "建設にかかる時間をパーセントで設定する。「50」はデフォルトの2倍速く、「200」は2倍長くなる。「0」は建設を即座に完了させる。"
+
+#: src/options.cpp
+msgid "Vehicle work speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Sets the time of vehicle part installation, repair, and removal in percents."
+"  '50' is two times faster than default, '200' is two times longer.  '0' "
+"makes vehicle work instant."
+msgstr ""
 
 #: src/options.cpp
 msgid "Crafting speed percentage"

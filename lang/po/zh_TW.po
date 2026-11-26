@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cataclysm-bn\n"
-"POT-Creation-Date: 2026-11-24 02:10+0000\n"
+"POT-Creation-Date: 2026-11-25 16:39+0000\n"
 "Last-Translator: Jeremy Wu <jeremy7986111@yahoo.com.tw>, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/bn-team/teams/113585/zh_TW/)\n"
 "MIME-Version: 1.0\n"
@@ -181299,6 +181299,18 @@ msgid ""
 msgstr ""
 "在跳过活动期间重新更新状态属性所需的秒数。增加此数值可大幅提升NPC密集区域的游戏性能，但会导致属性更新略微变慢。默认值为 60（1分钟）。"
 
+#. ~ Menu text of option 'ACTIVITY_REDRAW_INTERVAL_MS'
+#: data/json/options/performance.json
+msgid "Activity Redraw Interval"
+msgstr "活动重绘间隔"
+
+#. ~ Tooltip of option 'ACTIVITY_REDRAW_INTERVAL_MS'
+#: data/json/options/performance.json
+msgid ""
+"Minimum real time in milliseconds between the map redraws of a long wait or "
+"activity.  0 redraws every 5 game minutes."
+msgstr "在长时间等待或活动期间，两次地图重绘之间的最短现实时间（单位：毫秒）。设为 0 则每 5 分钟游戏时间重绘一次。"
+
 #. ~ Title of option group 'lod_monster'
 #: data/json/options/performance.json
 msgid "Monster LOD"
@@ -321583,6 +321595,18 @@ msgid "You already picked a conflicting trait!"
 msgstr "你已經選擇了一個相互衝突的特質!"
 
 #: src/newcharacter.cpp
+#, c-format
+msgid "Sorry, but you can only take %d point of advantages."
+msgid_plural "Sorry, but you can only take %d points of advantages."
+msgstr[0] "抱歉, 你只能選取 %d 點優勢。"
+
+#: src/newcharacter.cpp
+#, c-format
+msgid "Sorry, but you can only take %d point of disadvantages."
+msgid_plural "Sorry, but you can only take %d points of disadvantages."
+msgstr[0] "抱歉, 你只能選取 %d 點劣勢。"
+
+#: src/newcharacter.cpp
 msgid "The scenario you picked prevents you from taking this trait!"
 msgstr "你選擇的劇情不允許你選擇這個特質!"
 
@@ -321595,18 +321619,6 @@ msgstr "你选择的职业 %s 不允许你得到该特性。"
 #, c-format
 msgid "The following bionics prevent you from taking this trait: %s."
 msgstr "以下生化插件阻止你得到该特性：%s。"
-
-#: src/newcharacter.cpp
-#, c-format
-msgid "Sorry, but you can only take %d point of advantages."
-msgid_plural "Sorry, but you can only take %d points of advantages."
-msgstr[0] "抱歉, 你只能選取 %d 點優勢。"
-
-#: src/newcharacter.cpp
-#, c-format
-msgid "Sorry, but you can only take %d point of disadvantages."
-msgid_plural "Sorry, but you can only take %d points of disadvantages."
-msgstr[0] "抱歉, 你只能選取 %d 點劣勢。"
 
 #: src/newcharacter.cpp
 #, c-format
@@ -326110,6 +326122,17 @@ msgid ""
 "Sets the time of construction in percents.  '50' is two times faster than "
 "default, '200' is two times longer.  '0' makes construction instant."
 msgstr "建造建筑速度的倍率。'50' 代表比默认的快两倍，'200' 代表比默认慢两倍，“0”则代表瞬间完成建筑。"
+
+#: src/options.cpp
+msgid "Vehicle work speed percentage"
+msgstr ""
+
+#: src/options.cpp
+msgid ""
+"Sets the time of vehicle part installation, repair, and removal in percents."
+"  '50' is two times faster than default, '200' is two times longer.  '0' "
+"makes vehicle work instant."
+msgstr ""
 
 #: src/options.cpp
 msgid "Crafting speed percentage"
